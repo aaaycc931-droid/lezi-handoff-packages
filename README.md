@@ -1,31 +1,20 @@
-# 乐子象棋｜跨账号完整交接包
+# 乐子象棋｜跨账号UI交接
 
-当前交接：2026-10-11 v2，独立UI设计工作线（UI-DESIGN-001）。
+当前交接：2026-10-13，NEXT-UI-B2-20261013，从B2字体修订继续。
 
-- [下载完整UI交接包 v2 ZIP](https://raw.githubusercontent.com/aaaycc931-droid/lezi-handoff-packages/main/packages/lezi-ui-design-github-handoff-2026-10-11-v2.zip)
-- [直接读取同一组文档和原图](https://github.com/aaaycc931-droid/lezi-handoff-packages/tree/main/handoffs/ui/2026-10-11-v2)
-- [协作文档全文 v1.8.0](https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/handoffs/ui/2026-10-11-v2/reference/X_Collaboration_System.md)
 - [新对话启动指令](START_UI.txt)
-- [当前包索引](CURRENT_HANDOFF.json)
+- [本轮文档与实际原图](https://github.com/aaaycc931-droid/lezi-handoff-packages/tree/main/handoffs/ui/2026-10-13-v1)
+- [当前交接索引](CURRENT_HANDOFF.json)
+- [UI实际图稿](https://github.com/aaaycc931-droid/lezi-handoff-packages/tree/main/handoffs/ui/2026-10-13-v1/ui-return/images)
+- [协作文档全文v1.8.0](https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/handoffs/ui/2026-10-13-v1/reference/X_Collaboration_System.md)
+- [下载交接仓库ZIP](https://github.com/aaaycc931-droid/lezi-handoff-packages/archive/refs/heads/main.zip)
+- [完整原包分段清单](packages/lezi-ui-dispatch-2026-10-13.parts/PARTS.json)
+- [原包自动还原脚本](packages/lezi-ui-dispatch-2026-10-13.parts/restore_ui_package.py)
 
-本次用户重新提供并明确要求加入协作文档全文，让新UI对话读取。全文保留上传原件字节、内部版本与元数据；本次公开授权另记在COLLABORATION_PUBLICATION_AUTHORIZATION.json。v2替换旧短版协作约定，v1包及展开目录保留不变。
+优先直接读展开文档与原图；不需要用户手动上传或拼接。上传接口单次请求受大小限制，完整原ZIP以3段保存，按顺序还原后与主线原交付包字节一致。展开目录仅省略内嵌ZIP和17MB被否定字库本体的重复存放；它们全部保留在原包分段中。展开内容按PUBLISHED_FILES.json验证，原MANIFEST.json对应还原后的原ZIP。
 
-获取ZIP并核验摘要，先读00_READ_FIRST.md与NEW_UI_CHAT_PROMPT.txt，实际分段读取reference/X_Collaboration_System.md全文，再取得全部必要文档、JSON和两张批准原图。无法下载ZIP时读取对应展开目录；两者内容一致。接收者报告实际读取范围和缺项，不能把入口说明当作读完全文。
+原ZIP：27028763字节；SHA-256：`20fe5b43b79de69ec50afaa0af0b7152fdea3174bb4ee84f0d3911c7a66b28fe`。
 
-个人协作系统历史状态与本项目最新状态分开解释，当前UI授权、批准基线和任务以CURRENT_STATE.json、UI_CURRENT_OVERRIDES.md和UI_NEXT_TASKS.json为准。项目规则、模式差分、现行UI约束、任务、批准参考图、固定源码索引及回传模板均保留。
+UI-001已完成。首页/V4、S1-v2.1、B1-v1沿用；B2-v1布局/内容/状态通过、字体待修订；B2-v2未批准、B2-v3被否定。先实际看图，从B2局部修订继续，一次一图，修改后重新审批。静态批准不等于动效、运行或双机蓝牙验收。
 
-源码及正式分层资产仍由aaaycc931-droid/jieqi-engine维护，提交与路径见SOURCE_INDEX.json。本次只补充交接资料，未开展新UI设计或运行验收，未修改游戏仓库。正式评分继续冻结，UI工作线授权不恢复APK、实机、部署或main合并。
-
-## 完整性
-
-ZIP大小：3593252字节。展开文件数：27。
-
-SHA-256：`a5c7a582cac666d50524d97949df580547a960ac3367e6e6496ce13b9ea67efb`。
-
-协作文档SHA-256：`492faf5d509e32f41fd68191873b0ec83d4ffc5803295ae3c97cbf1dc39ecd9b`，与上传原件一致。
-
-各文件摘要见包内PACKAGE_MANIFEST.json，包摘要见SHA256SUMS。
-
-## 后续交接
-
-版本更新保留旧包。阶段完成、共享依赖或跨线冲突时汇总回传，不要求每条回复打包。确认、实现、运行检查、视觉与实机验收分别记录。
+本次仅上传用户要求的UI交接资料；未发布两条支线私有运行归档，未修改游戏源码、批准新图稿、生成APK、合并或部署。协作文档字节保持不变，本次公开范围见PUBLICATION_SCOPE.json。旧版本保留。

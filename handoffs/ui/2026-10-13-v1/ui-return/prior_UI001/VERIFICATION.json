@@ -1,0 +1,114 @@
+{
+  "schema": "lezi.ui_stage_verification.v1",
+  "date": "2026-10-11",
+  "base_commit": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+  "checks": [
+    {
+      "id": "handoff_integrity",
+      "method": "actual bytes and SHA-256",
+      "result": "26/26 pass",
+      "evidence": "READING_RECEIPT.json"
+    },
+    {
+      "id": "source_index",
+      "method": "SHA-256 of 15 repo paths",
+      "result": "15/15 pass",
+      "evidence": "READING_RECEIPT.json"
+    },
+    {
+      "id": "approved_images",
+      "method": "actual image viewing",
+      "result": "both viewed; original hashes retained"
+    },
+    {
+      "id": "web_build",
+      "method": "npm run build:web; Node v24.19.0",
+      "result": "passed on baseline; no product source changes afterwards",
+      "scope": "build only; not visual or Bluetooth validation"
+    },
+    {
+      "id": "public_fixtures",
+      "method": "current createInitialGame -> public projection; strict keys / text / occupancy checks",
+      "result": "pass: 3 modes, each 32 occupied positions; 30 dark labels for jieqi/half_chaos; xiangqi 5兵+5卒; no hidden identity/color/id"
+    },
+    {
+      "id": "prototype_static",
+      "method": "node --check extracted script; unresolved placeholder, network call and product storage-key checks",
+      "result": "pass; no browser execution"
+    },
+    {
+      "id": "json_parse",
+      "method": "parse every generated JSON",
+      "result": "pass"
+    },
+    {
+      "id": "pdf",
+      "method": "ReportLab static drawing -> Poppler PNG -> actual visual inspection; pypdf text extraction",
+      "result": "one page; Chinese readable; unsupported dropdown glyph replaced with path; missing/cut drawing issues repaired",
+      "scope": "static PDF only; no HTML screenshot"
+    },
+    {
+      "id": "source_diff",
+      "method": "git diff base --name-only and source tree match",
+      "result": "only7 review source files; source tree matches GitHub-created tree; no web/src changes"
+    }
+  ],
+  "failed_then_repaired": [
+    {
+      "id": "S1-FIXTURE-001",
+      "stage": "draft before review",
+      "error": "pawn incorrectly mapped as soldier; xiangqi ten兵/卒 cells missing label",
+      "classification": "implementation_mapping_error",
+      "containment": "stopped using draft fixture; no product/engine changes; no approved result or score affected",
+      "trusted_baseline": "src/types.ts / src/setup.ts and web/app.ts:84-86",
+      "repair": "generator maps pawn and fails on missing glyph; regenerated fixtures and HTML",
+      "pollution_scope": [
+        "draft settings-public-fixtures.json",
+        "draft embedded HTML public board"
+      ],
+      "recovery": "checked all32 labels,5兵+5卒, public projection whitelist; passed",
+      "independent_validation": false
+    }
+  ],
+  "not_run": [
+    "baseline or prototype runtime screenshots",
+    "browser interactions/focus/200% typography/scroll safe-area combinations",
+    "Android dp, native Bluetooth, system back, keyboard",
+    "paired player hidden-information checks",
+    "UI-003 overflow and dimensions",
+    "UI-004 full hero/mode state mapping"
+  ],
+  "environment_blocker": {
+    "browser": "Playwright installed; executable absent",
+    "download": "official Chromium installer returned invalid archive; aborted",
+    "claim_boundary": "No runtime screenshots or device acceptance this stage"
+  },
+  "typography": {
+    "review_font": "NotoSansSC variable -> weight400 subset embedded",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+    "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "license": "OFL.txt",
+    "approved_game_lettering": false
+  },
+  "rules_delta": 0,
+  "verification_level": "V2_source_checked + V1_self_checked; not independent",
+  "new_designs_approved": 0,
+  "product_code_changed": false,
+  "source_repository_record": {
+    "base_commit": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+    "end_commit": "1f6c1635ad756eefc871f2075883bf26b82176ea",
+    "branch": "codex/ui-design-20261011",
+    "tree_sha": "becaf01e056f0885c309a3db4084b79e4a49eac6",
+    "new_source_files": [
+      "review/ui-design/2026-10-11/.gitignore",
+      "review/ui-design/2026-10-11/OFL.txt",
+      "review/ui-design/2026-10-11/README.md",
+      "review/ui-design/2026-10-11/build_public_fixtures.mjs",
+      "review/ui-design/2026-10-11/build_settings_review.py",
+      "review/ui-design/2026-10-11/settings-public-fixtures.json",
+      "review/ui-design/2026-10-11/settings-template.html"
+    ],
+    "product_code_changed": false,
+    "public_personal_document_republication": false
+  }
+}

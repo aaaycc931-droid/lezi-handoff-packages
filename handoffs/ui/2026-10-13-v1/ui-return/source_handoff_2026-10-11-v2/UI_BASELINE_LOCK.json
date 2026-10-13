@@ -1,0 +1,62 @@
+{
+  "schema": "lezi.ui_baseline_lock.v1",
+  "authority_order": [
+    "当前明确用户指令/更正",
+    "UI_CURRENT_OVERRIDES.md解释及范围",
+    "reference/04_CURRENT_UI_AND_FLOW.md中未被更新的确认项",
+    "相符批准原图",
+    "现行源码实现",
+    "历史图片/过程稿"
+  ],
+  "assets": [
+    {
+      "path": "assets/approved-home-original.png",
+      "original_name": "国风象棋主菜单按钮下移.png",
+      "library_source_id": "libfile_3755e27aa7208191b9fba924a41f3101",
+      "sha256": "5c0dae37bb4dd84054d566c5ae5da98545ca73f23544ded5090ec80f1fbe211e",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "approval_scope": "首页原图视觉，真实控件接入与扩宣纸带例外；设置入口另加",
+      "original_bytes_preserved": true,
+      "current_repo_asset_byte_equal": true
+    },
+    {
+      "path": "assets/approved-v4-reference.png",
+      "original_name": "lezi-xiangqi-v4-ui-clean-review-2026-09-15.png",
+      "library_source_id": "libfile_a2040a7fdda48191a5d876aba15a9071",
+      "sha256": "63671bd146ce72a3c61f40dac457f83f882d7ada78c5f5f98efb7bb3ba5eac26",
+      "dimensions": [
+        852,
+        1846
+      ],
+      "approval_scope": "V4棋盘构图、棋子透明组件对照；外围旧字段不覆盖现行交互",
+      "original_bytes_preserved": true
+    }
+  ],
+  "preserve": [
+    "水墨/宣纸/颜体与克制红蓝点缀",
+    "批准首页原像素/比例与棋盘交点/触控区",
+    "分层透明素材及棋子中心透明",
+    "墨圈既有15%再整体7%参数；小型棋子不套用7%",
+    "主触控目标>=48dp与安全区",
+    "正式棋盘页不整体纵向滚动"
+  ],
+  "not_final_approved": [
+    "web/assets/menu-v1/候选组件",
+    "web/assets/rps-v1/候选组件",
+    "当前未验收非棋盘页面",
+    "正式英雄美术与宿命动画"
+  ],
+  "missing_in_package": [
+    "Git仓库中已有的完整透明组件源层（通过SOURCE_INDEX定位获取）",
+    "三屏响应式菜单旧参考图（不是唯一批准母版，未附，不影响以批准原图先盘点）"
+  ],
+  "must_not": [
+    "全图重绘冒充原样拆分",
+    "二次抠最终图作为正式组件",
+    "仅凭图中文案恢复旧交互",
+    "代码存在即宣称最终批准"
+  ]
+}

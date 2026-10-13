@@ -1,0 +1,71 @@
+{
+  "schema": "lezi.ui_workline_start.v1",
+  "date": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "primary_reader": "AI",
+  "task_id": "UI-DESIGN-001",
+  "status": "authorized_to_start_design",
+  "authorization_source": "当前对话用户：新对话负责UI设计；要求开启指令及交接包",
+  "worklines": {
+    "main": "主线协调、共享引擎、原揭棋评分研究",
+    "standard": "普通象棋独立评分适配",
+    "half_chaos": "半混乱揭棋独立评分适配",
+    "ui": "界面、组件、交互、状态反馈与视觉素材设计"
+  },
+  "repository": "aaaycc931-droid/jieqi-engine",
+  "verified_branch_heads": {
+    "codex/ui-android-apk-20261001": "a3704459e8dbb08e1bb6fb9bcb1b169319a6d1bc",
+    "codex/score-mechanism-20261010": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+    "codex/score-policy-adapter-20261011": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+    "main": "c25749d4f21d394c3d94486cfba1d786864083b6"
+  },
+  "main_P0_stage": {
+    "pr": 5,
+    "draft": true,
+    "source_commit": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+    "tests": 554,
+    "test_failures": 0,
+    "web_build": "passed",
+    "scope": "原揭棋P0局部流程及隐私/时序证据",
+    "full_match_qualified": false,
+    "P1_qualified": false,
+    "not_ui_acceptance": true
+  },
+  "ui_approved_baselines": [
+    "首页原图局部现行外观及首页接入例外",
+    "V4棋盘与透明组件",
+    "reference/04_CURRENT_UI_AND_FLOW.md现行确认交互"
+  ],
+  "ui_not_final": [
+    "其余非棋盘页面",
+    "玩家状态栏具体高度/按钮几何",
+    "正式英雄头像与技能图标",
+    "宿命专属动画",
+    "统一已消灭记录溢出适配"
+  ],
+  "paused_not_resumed": [
+    "APK构建/安装/交付",
+    "实体蓝牙双机与Android WebView验收",
+    "联网探针/生产部署",
+    "main合并",
+    "正式发布"
+  ],
+  "formal_scoring_status": "frozen",
+  "q": null,
+  "H": null,
+  "I": null,
+  "B": null,
+  "J": null,
+  "system_next_action": "UI-001盘点现行界面、状态、批准/候选素材与差分；随后推进未完成非棋盘页面。",
+  "ui_runtime_tests_run_this_handoff": 0,
+  "new_ui_design_approved_this_handoff": false,
+  "repository_modified_this_handoff": false,
+  "limitation_audit_status": "partial",
+  "limitation_verification_status": "V2_source_checked：源文档及批准原图摘要核对；无独立复核或新UI效果验证",
+  "limitation_residual_risk": [
+    "旧UI正文存在需要覆盖解释的历史字段",
+    "实体设备视觉与秘密信息呈现未重新验收",
+    "新模式完整资格未完成"
+  ],
+  "limitation_next_validation_action": "UI线逐屏源图对照、权限对照及后续运行原型验证。"
+}

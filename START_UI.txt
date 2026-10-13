@@ -1,12 +1,16 @@
-继续《乐子象棋》独立UI设计工作线，使用v2完整交接包。
-仓库：https://github.com/aaaycc931-droid/lezi-handoff-packages
-完整包：https://raw.githubusercontent.com/aaaycc931-droid/lezi-handoff-packages/main/packages/lezi-ui-design-github-handoff-2026-10-11-v2.zip
-SHA-256：a5c7a582cac666d50524d97949df580547a960ac3367e6e6496ce13b9ea67efb
-协作文档全文：https://raw.githubusercontent.com/aaaycc931-droid/lezi-handoff-packages/main/handoffs/ui/2026-10-11-v2/reference/X_Collaboration_System.md
+继续《乐子象棋》独立UI设计工作线，执行NEXT-UI-B2-20261013。
+交接仓库：https://github.com/aaaycc931-droid/lezi-handoff-packages
+本轮展开资料：https://github.com/aaaycc931-droid/lezi-handoff-packages/tree/main/handoffs/ui/2026-10-13-v1
+任务指令：https://raw.githubusercontent.com/aaaycc931-droid/lezi-handoff-packages/main/handoffs/ui/2026-10-13-v1/START.txt
+读取入口：https://raw.githubusercontent.com/aaaycc931-droid/lezi-handoff-packages/main/handoffs/ui/2026-10-13-v1/00_READ_FIRST.md
+协作文档全文：https://raw.githubusercontent.com/aaaycc931-droid/lezi-handoff-packages/main/handoffs/ui/2026-10-13-v1/reference/X_Collaboration_System.md
 
-下载并解压ZIP，先读取00_READ_FIRST.md与NEW_UI_CHAT_PROMPT.txt，再按入口实际读取文档、JSON和两张批准原图。
-若工具无法下载ZIP，直接读取仓库handoffs/ui/2026-10-11-v2/目录中的同一组文件，依照PACKAGE_MANIFEST.json核对必要内容完整取得；只读到入口或搜索摘要不算完整交接。
-必须实际分段读取reference/X_Collaboration_System.md全文，依原文AI_READ_ORDER优先读取YAML、MANDATORY_PRECHECK、PART-6_CURRENT_STATE和本任务相关模块。报告实际文件名、内部版本1.8.0、读取范围及适用门禁；不能把入口说明当作读完全文。
-协作文档已按本次用户指令完整加入，字节未改；个人系统历史状态与本项目最新CURRENT_STATE.json、UI_CURRENT_OVERRIDES.md、UI_NEXT_TASKS.json分开解释。本次公开授权见COLLABORATION_PUBLICATION_AUTHORIZATION.json，不推定未来资料也获公开授权。
-按包内授权从UI-001推进，继承已有批准基线，不从零重做，不修改规则，不覆盖其他工作线。
-阶段完成、共享依赖或跨线冲突时汇总回传，不要求每条回复打包。正式评分继续冻结。
+优先直接读取展开目录的文档与JSON，无需用户上传ZIP。原回传已展开到ui-return/，必须实际查看ui-return/images/内S1-v2.1、B1-v1、B2-v1/v2/v3图稿，以及ui-return/source_handoff_2026-10-11-v2/assets/的首页/V4批准图。核对PUBLISHED_FILES.json与任务所需原图，不能以审批JSON代替看图。
+
+先读00_READ_FIRST.md、START.txt、DISPATCH_STATE.json、SOURCE_PRIORITY.md与UI审批；正式完整协作文档接续须分段实际阅读全文v1.8.0，按AI_READ_ORDER优先读入口/门禁/当前状态和任务模块，报告自身实际来源与范围，不复用旧AI收据。
+
+完整原ZIP因上传接口大小限制按原字节顺序保存为3段，未改动或删减原包。需要原ZIP时，接续AI读取packages/lezi-ui-dispatch-2026-10-13.parts/PARTS.json，按顺序下载3段、拼接并核对SHA-256；自动还原脚本为https://raw.githubusercontent.com/aaaycc931-droid/lezi-handoff-packages/main/packages/lezi-ui-dispatch-2026-10-13.parts/restore_ui_package.py。完整原ZIP内包括被否定字体源文件；展开目录不重复发布17MB字库本体，其他文档/原图保留。MANIFEST.json用于还原后的原ZIP，展开目录用PUBLISHED_FILES.json，不能声称两份文件树完全同构。用户无需手动拼文件。
+
+UI-001已完成，不重复。首页/V4、S1-v2.1、B1-v1沿用；B2-v1布局/内容/状态通过，字体未定；B2-v2未批准，B2-v3被否定。先实际看图，从B2字体审美定位和局部修订继续，一次一图，修改版等待用户明确审批；保留未指定背景/边框/布局，不自动统一其他批准页面字体。
+
+静态批准、动效、运行和实机验收分开；产品代码未接入新批准图稿。正式评分冻结；APK/部署/main合并/NET/微信上线不自动恢复。规则/权限/接口或跨线冲突回传主线。阶段完成、共享依赖或用户收束时按RETURN_CONTRACT.json回传，不要求每条回复打包。
