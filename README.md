@@ -16,4 +16,4 @@
 
 通用协作规则可独立复用：[公开固定启动入口](START_COLLABORATION.md) · [当前正文](collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md)。该入口用于任意项目；个人画像、成长和饮食资料保持私有。具体范围见[公开说明](collaboration/PUBLICATION_SCOPE.md)。
 
-当前通用协作工作稿2026-10-15.v0.9已写明同账号／跨账号各对话的仓库接续与交接方式（GITHUB_HANDOFF_WORKFLOW）。日常更新固定资料，阶段保存成果和接续记录；默认不重打累计ZIP，实体包按实际用途生成。
+当前通用协作工作稿2026-10-15.v0.10已写明同账号／跨账号各对话的仓库接续、交接与保守清理方式（GITHUB_HANDOFF_WORKFLOW）。日常更新固定资料，阶段保存成果和接续记录；默认不重打累计ZIP，实体包按实际用途生成。
