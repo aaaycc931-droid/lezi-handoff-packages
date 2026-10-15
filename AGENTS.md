@@ -16,3 +16,5 @@ This repository manages Lezi handoffs and UI assets. Game implementation lives i
 - Receipts identify the immutable source commit and actual read/adopted scope. Keep history by ordinary commits; restore selected files rather than resetting the shared branch.
 
 - General collaboration can start at START_COLLABORATION.md without starting a game workline. Only the indexed collaboration body is authorized for public reuse; its historical P3 metadata is superseded for this body by the user's 2026-10-15 authorization. Do not copy referenced private project files or audit archives. Maintain the public file as a hash-linked mirror of the single authoring source, not a competing source.
+
+- The current collaboration body v0.9 defines GITHUB_HANDOFF_WORKFLOW for all dialogues, including same-account continuity. Reuse this generic mechanism; project-specific paths and return records below remain authoritative for this project. Its public classification is aligned with the user-authorized body-only scope; referenced private sources stay excluded.
