@@ -13,3 +13,5 @@
 旧日期目录及累计ZIP从main当前文件树归档到Git历史索引，原提交仍可访问，没有重写历史。完整clone的历史体积不会因此自动缩小；当前目录和按任务下载范围已经缩小。
 
 本轮只整理交接仓库和UI工作方式，图稿/游戏规则/游戏源码未改；B5已批准，B6尚未创建，评分冻结、NET暂停。接收对话是否已读/采用仍待其回执。
+
+通用协作规则可独立复用：[公开固定启动入口](START_COLLABORATION.md) · [当前正文](collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md)。该入口用于任意项目；个人画像、成长和饮食资料保持私有。具体范围见[公开说明](collaboration/PUBLICATION_SCOPE.md)。
