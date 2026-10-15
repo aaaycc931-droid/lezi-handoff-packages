@@ -1,12 +1,16 @@
 ---
-document_type: project_scoped_public_excerpt
+document_type: historical_project_scoped_public_excerpt
+current_collaboration_entry: ../../../START_COLLABORATION.md
+current_collaboration_index: ../../../collaboration/CURRENT.json
 working_revision: "2026-10-14.v0.8"
 formal_baseline_system_version: "1.8.0"
 scope: lezi_project_work_only
 full_personal_document_included: false
 ---
 
-# 乐子象棋项目适用协作摘录
+# 乐子象棋项目适用协作摘录（v0.8历史来源）
+
+当前通用规则请从[../../../START_COLLABORATION.md](../../../START_COLLABORATION.md)及当前索引读取；本文件保留旧摘录的来源正文和版本身份，不是另一份当前协作主文件。以下入口和流程按v0.8历史语境核对，不能覆盖较新的当前通用规则。
 
 本文件从主线实际使用的v0.8工作稿提取项目执行所需原节正文；不是完整个人协作文件，不覆盖正式主文件、不新增规则或发布新正式版本。画像、成长、个人系统维护状态及历史账本不在本次公开交接范围。本文中的未附个人模块/维护章节仅保留原引用，不要求为本游戏任务读取无关个人资料。任务路由按本项目实际范围调用；有依赖缺口就声明，不借此声称全部个人系统已加载。
 

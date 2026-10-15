@@ -6,12 +6,14 @@
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
   "status": "github_remote_handoff_prepared",
   "user_instruction": "现在开始进行分发工作",
-  "authorization": "Prepare this dispatch and instruct the receiving workline to resume scoped design after the user supplies its package and startup instruction; no pending rule approval inferred.",
+  "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
-    "working_revision": "2026-10-14.v0.8",
-    "formal_baseline": "1.8.0",
-    "source": "collaboration/PROJECT_COLLABORATION_20261015.md",
-    "reading_scope": "project_scoped_excerpt_not_full_personal_system"
+    "entry": "../../START_COLLABORATION.md",
+    "current_index": "../../collaboration/CURRENT.json",
+    "current_body_source": "resolve body and working_revision from current_index at read time",
+    "historical_project_excerpt": "collaboration/PROJECT_COLLABORATION_20261015.md",
+    "historical_excerpt_revision": "2026-10-14.v0.8",
+    "receiver_reading_and_adoption_verified": false
   },
   "source_preparation": "Sources are expanded at sources/standard; no user ZIP upload is needed. python3 prepare_sources.py checks current required paths and optionally restores historical source parts.",
   "source_root": "sources/standard",
@@ -28,7 +30,9 @@
     "sent_by_message_tool": false,
     "user_transfer_confirmed": false,
     "recipient_reading_verified": false,
-    "recipient_adoption_verified": false
+    "recipient_adoption_verified": false,
+    "transport": "GitHub connector",
+    "routine_user_package_relay_required": false
   },
   "prior_main_receipt": {
     "received": true,
@@ -60,7 +64,9 @@
     "RETURN_CONTRACT.json",
     "PENDING_DECISION.json",
     "rules/shared/02_CURRENT_HEROES.md",
-    "LARGE_SOURCE_PARTS.json"
+    "LARGE_SOURCE_PARTS.json",
+    "../../START_COLLABORATION.md",
+    "../../collaboration/CURRENT.json"
   ],
   "account_routing": {
     "this_account": [
