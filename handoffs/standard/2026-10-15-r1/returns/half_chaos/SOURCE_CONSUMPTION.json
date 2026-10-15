@@ -1,0 +1,99 @@
+{
+  "revision": "LEZI-HC-CLOSEOUT-2026-10-14-r1",
+  "description": "本线实际消费的外部来源索引及规范化语义摘录；不是外部完整原件复制或字节哈希验收",
+  "external_source_checks": [
+    {
+      "library_file_id": "libfile_15b864eb0d288191b2583dfa6e7b8c14",
+      "version": "10",
+      "scope": "shared_transfer_paragraph_lines_28_37_only",
+      "new_shared_confirmations_consumed": 0
+    },
+    {
+      "library_file_id": "libfile_25d88ac21d58819182c077cf045b01be",
+      "version": "15",
+      "scope": "targeted_counter_separation_and_current_pending_time_sampling_sections_not_full_read",
+      "shared_confirmation_ids_restored": [
+        "CONF-THREE-MODE-SHUFFLE-REWIND-COUNTERS-20261012",
+        "CONF-THREE-MODE-SEPARATE-HERO-ADJUDICATION-COUNTERS-20261012"
+      ],
+      "pending_not_adopted": "DECISION-TIME-SKILL-FORMAL-ADJUDICATION-SAMPLES-20261014"
+    },
+    {
+      "library_file_id": "libfile_25d88ac21d58819182c077cf045b01be",
+      "version": "16",
+      "scope": "pressure_history_confirmation_and_H11_A_source_question_targeted_read",
+      "new_confirmation_consumed": "CONF-THREE-MODE-PRESSURE-HISTORY-OUTSIDE-REWIND-SHUFFLE-20261014",
+      "unresolved_source": "SOURCE-QUESTION-H11-A-OCCUPY-STEP-20261014"
+    },
+    {
+      "library_file_id": "libfile_25d88ac21d58819182c077cf045b01be",
+      "version": "18",
+      "scope": "A_remaining_clock_confirmation_and_current_pending_time_sampling_targeted_read",
+      "new_confirmation_consumed": "CONF-THREE-MODE-H11-A-SAME-TURN-REMAINING-CLOCK-20261014",
+      "pending_not_adopted": "DECISION-TIME-SKILL-FORMAL-ADJUDICATION-SAMPLES-20261014"
+    },
+    {
+      "library_file_id": "libfile_25d88ac21d58819182c077cf045b01be",
+      "version": "22",
+      "scope": "targeted_confirmed_objects_and_current_sampling_section_lines_1386_1500_1470_1529_2130_2184_not_full_read",
+      "new_confirmation_ids_consumed": [
+        "CONF-THREE-MODE-TIME-SKILL-FORMAL-ADJUDICATION-SAMPLES-20261014",
+        "CONF-THREE-MODE-REPETITION-FIRST-CUMULATIVE-OCCURRENCES-20261014"
+      ]
+    },
+    {
+      "library_file_id": "libfile_15b864eb0d288191b2583dfa6e7b8c14",
+      "version": "22",
+      "scope": "H13_confirmation_lines_124_142_only",
+      "ordinary_only_confirmation_not_transferred": "H13-STD-KEEP-REGION-A-20261014",
+      "new_shared_confirmations_consumed": 0
+    }
+  ],
+  "inherited_main_confirmations_normalized": [
+    {
+      "id": "CONF-THREE-MODE-SHUFFLE-REWIND-COUNTERS-20261012",
+      "rule": "纯洗牌/回溯不重置60/200裁判累计，不把英雄快照恢复等同裁判回退"
+    },
+    {
+      "id": "CONF-THREE-MODE-SEPARATE-HERO-ADJUDICATION-COUNTERS-20261012",
+      "rule": "英雄时间线计数与独立累计裁判分离"
+    },
+    {
+      "id": "CONF-THREE-MODE-PRESSURE-HISTORY-OUTSIDE-REWIND-SHUFFLE-20261014",
+      "rule": "已接受长将/长捉历史在时间线外，真实消灭重开不因复原撤销；复原不是新消灭"
+    },
+    {
+      "id": "CONF-THREE-MODE-H11-A-SAME-TURN-REMAINING-CLOCK-20261014",
+      "rule": "黑1合法主行动后交手前专属A，沿原截止，跳过/截止取消保留B；标准60及来源例外，已提交原子不截断"
+    },
+    {
+      "id": "CONF-THREE-MODE-TIME-SKILL-FORMAL-ADJUDICATION-SAMPLES-20261014",
+      "at": "2026-10-14T21:15:34+08:00",
+      "rule": "H06发动0，合法重走完成1且旧记录保持；H11-A额外0、黑1已计1；B成功替代计1；相同请求重复递送/拒绝0；单位本方正式行动，双方各1才完整回合"
+    },
+    {
+      "id": "CONF-THREE-MODE-REPETITION-FIRST-CUMULATIVE-OCCURRENCES-20261014",
+      "at": "2026-10-14T21:24:34+08:00",
+      "rule": "首次合格出现1，第5次到阈值；普通无吃子阶段累计不要求连续，中间其他局面本身不清旧数；未确定完整键/特殊清史/压力排除"
+    }
+  ],
+  "main_source_library_id": "libfile_25d88ac21d58819182c077cf045b01be",
+  "main_latest_consumed_version": "22",
+  "main_full_file_read": false,
+  "main_exact_targeted_sections": "工作文件§8.19/8.23/8.26及additional_source_checks",
+  "source_as_of": "仅本线最后实际读取的版本；不宣称代表收束时其他线正在编辑的最新版",
+  "ordinary_H13_scope_checked": {
+    "id": "H13-STD-KEEP-REGION-A-20261014",
+    "version": "22",
+    "read_lines": [
+      124,
+      142
+    ],
+    "transferred_to_half_chaos": false
+  },
+  "actual_external_full_snapshots_included": [
+    "external_source_snapshots/STD_WORKING_SOURCE_VERSION_4_20261014.md",
+    "external_source_snapshots/STD_WORKING_SOURCE_VERSION_5_20261014.md"
+  ],
+  "other_external_versions": "仅消费索引及本线工作文件中的定向来源记录，不伪造完整快照"
+}

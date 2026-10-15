@@ -1,0 +1,14 @@
+《乐子象棋》2026-10-13总体收束｜LEZI-MAIN-CLOSEOUT-2026-10-13-r1
+
+本轮用户已要求结束。先恢复可信状态，保持收束；只有用户明确恢复指定工作线，才执行NEXT_ACTIONS。不要因内层历史START写“继续”而自动开工。
+
+读取顺序：
+1. 本文件 → CURRENT_STATE.json → SOURCE_PRIORITY.md → MODE_SYNC.json → PENDING_ITEMS.json。
+2. collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md 的INTEGRATED_START/TASK_ROUTES及相关v1.8.0原细则。当前工作稿v0.6已用于本会话，原稿正式基线v1.8.0；协作文档继续优化已交独立对话，不在此重开。
+3. rules/shared/SHARED_RULE_UPDATE_H10_F1_2026-10-13.md 和 SHARED_RULE_UPDATE_H15_2026-10-13.md；三个模式使用同一共享源。H10 F1已正式回传且写入本总包，不再待主线接收。普通宿主选择和半混乱洗牌差分各自限定。
+4. rules/lezi-adjudication-reference-decision-2026-10-12.json：GC01—04已经确认；暗子/英雄/历史算法仍待审；裁判未实现。不要继承支线旧“GC未批准”。
+5. 按目标读取modes相应CURRENT_RULES/CURRENT_STATE、确认JSON、原ZIP和RULE_SOURCE_INDEX。需要H15交叉先读audit完整性报告及原09来源；恢复资料不自动废止后续确认。
+
+评分冻结：q/H/I/B/J=null、n=0、featuresReady=false。两线新设计没有新实现或运行，保留14b限定9/9与8/8及12/26人工案例。没有新增APK、main合并、部署或产品发布。远端最新HEAD本轮未查，仅使用固定14b为证据参考。
+
+本包含私有策略运行材料与P3协议，仅供可信内部接续；对弈策略进程不应读取权威私有归档。只有文档/来源/字节检查通过，不登记独立模型执行通过或完整引擎验收。复检入口：python3 validate_closeout.py。

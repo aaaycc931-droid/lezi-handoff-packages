@@ -1,0 +1,56 @@
+{
+  "schema": "lezi.ui_handoff_state.v3",
+  "package_version": "2026-10-14-v1",
+  "workline_id": "UI-DESIGN-001",
+  "mode_id": "cross_mode_UI_visual_only",
+  "primary_reader": "AI",
+  "at": "2026-10-14T22:15:58+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": "handoff_ready",
+  "user_statement": "审批通过，下一步生成交接包",
+  "actors": {
+    "user": "图稿最终审批者；本包交付者",
+    "ui_workline_AI": "仅候选设计、视觉证据、审批记录和本包整理",
+    "main_workline_AI": "产品规则、共享接口、主线状态的协调者；本包未自动发送",
+    "successor_UI_AI": "必须实际读取本包、查图和核对来源，继承批准差分；不能借本AI收据当作自己已读"
+  },
+  "approved_versions": [
+    "B1-v2",
+    "B2-v4",
+    "S1-v3.2",
+    "B3-v1",
+    "B4-v1",
+    "B5-v1"
+  ],
+  "exceptions": [
+    "home",
+    "V4"
+  ],
+  "withdrawn": [
+    "H1-v1",
+    "V4-T1-v1"
+  ],
+  "current_candidate": null,
+  "pending_candidate_count": 0,
+  "next_action": "用户明确恢复后，从蓝牙连接中状态开始，拟编号B6-v1（未创建）；先核对当前状态/源层，再一次展示一张实际稿审批。",
+  "no_automatic_resume": true,
+  "original_home_and_V4_unchanged": true,
+  "runtime": "not_run",
+  "motion": "not_run",
+  "bluetooth_two_devices": "not_run",
+  "device_font_touch": "not_run",
+  "product_code_changed": false,
+  "new_git_commit": null,
+  "current_mainline_repo_head_checked": false,
+  "game_rules_delta": 0,
+  "scoring_frozen": true,
+  "APK_generated": false,
+  "main_merged": false,
+  "deployed": false,
+  "NET": "paused",
+  "wechat_release": "not_authorized",
+  "global_medium_large_font": "Long Cang except approved home/V4 originals",
+  "font_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+  "ui_fidelity_rule": "rules/ui-fidelity-editing-policy.md",
+  "current_package_overrides_old_snapshot": true
+}

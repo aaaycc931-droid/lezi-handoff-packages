@@ -1,0 +1,82 @@
+{
+  "audit_trigger": "用户要求主线错误审查；长期规则事实源完整性异常",
+  "risk_level": "high",
+  "review_status": "partial",
+  "known_facts": [
+    "原09专项已保存且10月5日随包",
+    "最早核实的r4-clean H15摘要遗漏",
+    "r4→r7 H15段完全相同",
+    "14b当前02与10月13日分发相同",
+    "10月13日主线打包只核字节无逐机制语义覆盖"
+  ],
+  "user_statements": [
+    {
+      "quote": "本轮H15一局一次训练与自由启动属于三个模式共用的核心规则修改，不得只写入半混乱模式。",
+      "source": "current_main_dialogue"
+    }
+  ],
+  "claim_register": [
+    {
+      "claim": "历史H15×M07存在保存和正式移交",
+      "type": "document_fact",
+      "source": "H15:ORIGINAL-20261005及OCT5:SOURCE_REGISTER.json",
+      "verification": "V2_source_checked"
+    },
+    {
+      "claim": "净化归并省略条款并被后续包传播",
+      "type": "document_fact",
+      "source": "R4:02_CURRENT_HEROES.md→REPO移交02→DISPATCH02",
+      "verification": "V2_source_checked"
+    },
+    {
+      "claim": "模型内部因为追求简短导致遗漏",
+      "type": "hypothesis",
+      "source": "没有原始生成日志，只能依据净化稿定位方法风险",
+      "verification": "V0_unverified"
+    },
+    {
+      "claim": "HC再次请求旧确认",
+      "type": "document_fact",
+      "source": "HC:ESCALATION；未取得支线原始工具日志",
+      "verification": "V2_report_checked_not_independent_execution_replay"
+    },
+    {
+      "claim": "历史摘要遗漏导致所有既有代码偏差",
+      "type": "hypothesis",
+      "source": "只读源码发现不一致，但没有完整生成因果链或运行实测",
+      "verification": "V0_causal_unverified"
+    }
+  ],
+  "ai_interpretations": "源归并、索引退役、打包验证不足与执行失败组合；不是单一支线阅读能力问题",
+  "assumptions": [
+    "已取回原稿记录准确反映当时确认",
+    "没有未取回的后续确认明确废止H15基础M07事实或H20空放前提"
+  ],
+  "unknowns": [
+    "未归档/删除聊天",
+    "生成摘要内部过程",
+    "后续完整权限修改",
+    "代码实际运行影响"
+  ],
+  "competing_explanations": [
+    "如果存在明确后续用户废止记录，部分遗漏应改判为已批准修改而非归并失败；当前未找到",
+    "仅模型读取失败解释不能说明原文件和索引并未随包"
+  ],
+  "falsification_conditions": [
+    "找到后续明确批准读取M07秘密阵营或改变对象可见性的原文",
+    "找到原分发实际包含原09且有有效机制入口的证据",
+    "找到H20允许无效果空放的后续正式确认"
+  ],
+  "verification_status": "V2文件与源码读取；V1过程解释；没有本轮V3/V4实测",
+  "action_boundary": "仅恢复可证实来源、文档合并已批准H15核心差分、生成索引和报告；不改未决规则/运行时/远端",
+  "failure_conditions": [
+    "源哈希或来源链不匹配",
+    "全模式核心变成半混乱专属",
+    "把未知写成批准",
+    "旧成本/返还/专项交互整体复活"
+  ],
+  "residual_risk": "完整源不能强制模型执行；当前检查不能穷尽所有历史确认",
+  "next_validation_action": "接收方依据索引恢复M07而不重问；随后逐项核对未决覆盖和实际运行",
+  "unknown_unknown_resilience": "保留原快照，增量修复并保持代码/评分不变；若还有未知确认，可按机制替换而不覆盖全项目",
+  "protocol_upgrade": "不改X协作文档，只补项目交接过程"
+}

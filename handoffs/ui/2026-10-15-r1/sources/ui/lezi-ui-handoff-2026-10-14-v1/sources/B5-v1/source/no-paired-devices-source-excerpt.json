@@ -1,0 +1,7 @@
+{
+  "content": "function refreshBluetoothDevices(): void {\n  const bridge = nativeBluetooth();\n  if (!bridge) return showToast(\"蓝牙双机模式只能在 Android 安装包内使用。\");\n  try {\n    const devices = JSON.parse(bridge.pairedDevices()) as Array<{ name?: string; address: string }>;\n    const select = element<HTMLSelectElement>(\"bluetooth-device\");\n    select.replaceChildren(...devices.map((device) => {\n      const option = document.createElement(\"option\");\n      option.value = device.address;\n      option.dataset.name = device.name || \"未命名设备\";\n      option.textContent = `${device.name || \"未命名设备\"} · ${device.address}`;\n      return option;\n    }));\n    if (devices.length === 0) {\n      const option = document.createElement(\"option\");\n      option.value = \"\";\n      option.textContent = \"没有已配对设备\";\n      select.append(option);\n    }\n    element<HTMLButtonElement>(\"bluetooth-join-button\").disabled = devices.length === 0;\n    setBluetoothStatus(devices.length === 0\n      ? \"没有找到已配对设备。请先在系统蓝牙设置中完成配对，再重新检测。\"\n      : `已读取 ${devices.length} 台已配对设备。`);\n  } catch {\n    element<HTMLButtonElement>(\"bluetooth-join-button\").disabled = true;\n    showToast(\"读取已配对设备失败，请检查蓝牙权限。\");\n  }\n}\n\nfunction resetMatch(): void {\n  localMessages = [];\n  resetMessageUi(true);",
+  "encoding": "utf-8",
+  "sha": "9bb69d7e10d0ca0401a8aed88dae63b36beb079a",
+  "display_url": "https://github.com/aaaycc931-droid/jieqi-engine/blob/codex/ui-design-20261011/web/app.ts",
+  "display_title": "app.ts"
+}

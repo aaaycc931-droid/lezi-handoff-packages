@@ -1,0 +1,91 @@
+{
+  "schema": "lezi.confirmed_half_b_and_branch_replay.v0.3",
+  "date_local": "2026-10-12",
+  "source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+  "source_tree": "9edf808eb68efcb272fe06422835c15afcf7c484",
+  "base_commit": "f1c01585ade8b4e17618399901d7283f37271459",
+  "interface_version": "mode_scoped_P0_v0.3",
+  "branch": "codex/half-chaos-h11-b-clock-20261012",
+  "draft_pr": {
+    "number": 7,
+    "url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/7",
+    "base_pr": 6,
+    "draft": true,
+    "merged": false
+  },
+  "received_actual_returns": [
+    {
+      "name": "lezi-standard-NEXT-STD-01-2026-10-12-partial-return.zip",
+      "sha256": "80d81d46fea3fd69ddd1cd72182d6b29b3ddc9654c6668483b1a8326eacea836"
+    },
+    {
+      "name": "lezi-half-chaos-NEXT-HC-01-return-2026-10-12.zip",
+      "sha256": "e00cb2cd9453161273dbb4ab0591939644423245a0a96dee6d2486754d93e408"
+    }
+  ],
+  "user_confirmation": {
+    "id": "CONF-HC-H11-B-20261012",
+    "user_quote": "同意",
+    "source": "source/tests/fixtures/scoring/CONFIRMATION_HC_H11_B_COUNT_CLOCK.json",
+    "at_local": "2026-10-12T13:27:09+08:00",
+    "mode": "half_chaos",
+    "counter": "black 1->2, ordinary callbacks all0",
+    "decision_timer": "starts upon B entry; skip inherits remainder; success starts red next clock; existing timeout rule"
+  },
+  "rule_delta": {
+    "half_B_counter": "mode-local applicability confirmed; existing implementation unchanged",
+    "half_B_clock": "confirmed modification implemented",
+    "other_modes_and_A": "unchanged"
+  },
+  "main_new_runtime_evidence": {
+    "scoped_checks_passed": 22,
+    "related_regression_passed": 111,
+    "standard_extra_entry_passed": 9,
+    "half_extra_entry_passed": 8,
+    "V3_independent": false,
+    "full_573_rerun": false,
+    "web_build_rerun": false,
+    "snapshot_source_files_exact": 76,
+    "snapshot_kind": "exact_dependency_subset_not_full_git_checkout"
+  },
+  "branch_reexecution_on_new_commit": {
+    "standard": "pending_actual_return",
+    "half": "pending_actual_return"
+  },
+  "half_HC_F04": {
+    "count_and_clock": "confirmed_and_scoped_runtime_passed_in_main",
+    "whole_all_fields_and_interactions_qualified": false,
+    "historical_v02_partial_preserved": true
+  },
+  "half_HC_F05_ground": "not_run",
+  "remaining_blockers": [
+    "H03 candidate",
+    "M07",
+    "H11 x H15",
+    "pre-refresh special secret read",
+    "other unqualified interactions",
+    "repetition/adjudication",
+    "P1/full match/population sampling"
+  ],
+  "q": null,
+  "H": null,
+  "I": null,
+  "B": null,
+  "J": null,
+  "independent_empirical_n": 0,
+  "formal_scoring_status": "frozen",
+  "product_featuresReady": {
+    "xiangqi": false,
+    "half_chaos": false
+  },
+  "UI": {
+    "branch": "codex/ui-design-20261011",
+    "commit": "1f6c1635ad756eefc871f2075883bf26b82176ea",
+    "source_read_previous_turn": true,
+    "S1": "candidate_pending_user_approval",
+    "user_approval_process": "one_image_at_a_time",
+    "not_approved_by_this_review": true
+  },
+  "dispatch_delivery": "prepared_only; no messages sent to other conversations",
+  "source_subset_does_not_claim_clean_git_checkout": true
+}

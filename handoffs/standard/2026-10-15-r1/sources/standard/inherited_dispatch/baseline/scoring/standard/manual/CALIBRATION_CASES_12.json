@@ -1,0 +1,214 @@
+{
+  "schema": "lezi.standard.scoring.synthetic_calibration.v1",
+  "mode_id": "standard_xiangqi",
+  "model_version": "0.1-standard-draft",
+  "status": "synthetic_invariant_tests_only",
+  "unit": "illustrative u, not PU/points/win rate",
+  "cases": [
+    {
+      "id": "T01",
+      "kind": "zero",
+      "inputs": {
+        "benefit_u": 0,
+        "cost_u": 0
+      },
+      "expected_u": 0,
+      "expected_invariant": "zero effect yields zero new value"
+    },
+    {
+      "id": "T02",
+      "kind": "opportunity_cost_monotonic",
+      "inputs": {
+        "identical_gross_u": 0.6,
+        "no_occupation_cost_u": 0,
+        "occupation_cost_u": 0.25
+      },
+      "expected": {
+        "no_occupation_net_u": 0.6,
+        "occupation_net_u": 0.35
+      },
+      "expected_invariant": "occupation net <= no-occupation net"
+    },
+    {
+      "id": "T03",
+      "kind": "nonnegative_probability_monotonic",
+      "inputs": {
+        "positive_payoff_u": 0.8,
+        "p_low": 0.2,
+        "p_high": 0.65
+      },
+      "expected": {
+        "low_u": 0.16,
+        "high_u": 0.52
+      },
+      "expected_invariant": "higher trigger probability cannot reduce value if benefit nonnegative"
+    },
+    {
+      "id": "T04",
+      "kind": "information_evsi_zero",
+      "inputs": {
+        "priors": [
+          0.5,
+          0.5
+        ],
+        "payoff_matrix": {
+          "X": [
+            3,
+            2
+          ],
+          "Y": [
+            2,
+            1
+          ]
+        }
+      },
+      "expected": {
+        "uninformed_max_u": 2.5,
+        "informed_max_u": 2.5,
+        "evsi_u": 0
+      },
+      "expected_invariant": "secret entropy decrease does not itself generate value"
+    },
+    {
+      "id": "T05",
+      "kind": "material_single_event",
+      "inputs": {
+        "unique_capture_gain_u": 1.2,
+        "incremental_tempo_residual_u": 0
+      },
+      "expected": {
+        "primary_material_u": 1.2,
+        "tempo_residual_u": 0,
+        "total_u": 1.2
+      },
+      "expected_invariant": "capture only counted once"
+    },
+    {
+      "id": "T06",
+      "kind": "king_rescue_single_event",
+      "inputs": {
+        "terminal_rescue_gain_u": 0.9,
+        "additional_material_residual_u": 0,
+        "additional_tempo_residual_u": 0
+      },
+      "expected": {
+        "terminal_u": 0.9,
+        "total_u": 0.9
+      },
+      "expected_invariant": "king rescue only counted once"
+    },
+    {
+      "id": "T07",
+      "kind": "terminal_stops_future",
+      "inputs": {
+        "now_gain_u": 0.8,
+        "hypothetical_later_gain_u": 0.5,
+        "terminal_now": true
+      },
+      "expected": {
+        "total_u": 0.8
+      },
+      "expected_invariant": "future branch is removed after terminal"
+    },
+    {
+      "id": "T08",
+      "kind": "mutually_exclusive_adversary",
+      "inputs": {
+        "leaf_probs": [
+          0.25,
+          0.6,
+          0.15
+        ],
+        "leaf_gains_u": [
+          2,
+          1,
+          0
+        ]
+      },
+      "expected": {
+        "sum_prob": 1,
+        "expected_u": 1.1
+      },
+      "expected_invariant": "direct success and avoidance cannot co-occur on same leaf"
+    },
+    {
+      "id": "T09",
+      "kind": "mutually_exclusive_h11_windows",
+      "inputs": {
+        "p_use_A": 0.4,
+        "p_use_B_given_no_A": 0.5
+      },
+      "expected": {
+        "p_any_use": 0.7,
+        "max_actual_uses": 1
+      },
+      "expected_invariant": "second window reachable only if first not used"
+    },
+    {
+      "id": "T10",
+      "kind": "signed_negative",
+      "inputs": {
+        "leaf_probs": [
+          0.75,
+          0.25
+        ],
+        "leaf_gains_u": [
+          0.5,
+          -2
+        ]
+      },
+      "expected": {
+        "net_u": -0.125
+      },
+      "expected_invariant": "preserve negative before common normalization"
+    },
+    {
+      "id": "T11",
+      "kind": "unused_extra_action",
+      "inputs": {
+        "optional_extra_action": true,
+        "max_incremental_gain_u": 0
+      },
+      "expected": {
+        "net_new_value_u": 0
+      },
+      "expected_invariant": "available extra opportunity need not have positive marginal value"
+    },
+    {
+      "id": "T12",
+      "kind": "legality_guard",
+      "inputs": {
+        "advisor_can_leave_palace": false,
+        "elephant_can_cross_river": false,
+        "override_confirmed": false
+      },
+      "expected": {
+        "legal_for_crossing": false,
+        "pending_source_override": "blocked_pending_rule"
+      },
+      "expected_invariant": "do not invent spatial rule override"
+    }
+  ],
+  "sensitivity": {
+    "artificial_horizon": [
+      {
+        "full_both_side_rounds": 25,
+        "earliest_opportunity_own_turn": 16,
+        "max_nominal_opportunities": 10
+      },
+      {
+        "full_both_side_rounds": 30,
+        "earliest_opportunity_own_turn": 16,
+        "max_nominal_opportunities": 15
+      },
+      {
+        "full_both_side_rounds": 35,
+        "earliest_opportunity_own_turn": 16,
+        "max_nominal_opportunities": 20
+      }
+    ],
+    "observed_average_rounds": null,
+    "true_scenario_weights": null
+  },
+  "real_hero_or_mutation_scores": []
+}

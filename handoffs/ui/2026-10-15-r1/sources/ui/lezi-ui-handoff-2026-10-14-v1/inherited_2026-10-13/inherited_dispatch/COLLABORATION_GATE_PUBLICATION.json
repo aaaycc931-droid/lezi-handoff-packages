@@ -1,0 +1,46 @@
+{
+  "version": "1.8.0",
+  "gate": "L3_LIMITATION",
+  "risk_level": "medium",
+  "audit_trigger": "外部公开交接且包内含原P3协作文档；确认仓库、当前授权范围、公开内容与完整性",
+  "known_facts": [
+    "目标仓库和既有公开交接方式已核对",
+    "相同协作文档全文已在该仓库公开",
+    "本轮UI包不含策略私有运行归档",
+    "当前用户明确要求上传UI交接包"
+  ],
+  "claim_register": [
+    {
+      "claim": "原仓库公开且可写",
+      "type": "external_fact",
+      "source": "GitHub repository metadata and clone",
+      "verification": "V2_source_checked"
+    },
+    {
+      "claim": "本次上传授权",
+      "type": "user_statement",
+      "source": "当前用户指令",
+      "verification": "V2_source_checked"
+    }
+  ],
+  "assumptions": [
+    "用户本轮要求指向刚生成的完整UI分发包；沿用原公开交接方式"
+  ],
+  "unknowns": [
+    "另一个账号是否能实际读取全部原图与文件"
+  ],
+  "competing_explanations": [
+    "仅确认知晓而暂不执行；结合持续要求与漏上传纠正解释为补齐本次上传"
+  ],
+  "action_boundary": "仅交接仓库新增版本、更新交接入口；不动游戏源码、不发送第三方消息、不变更规则/审批/评分",
+  "failure_conditions": [
+    "远端HEAD变化导致推送拒绝",
+    "文件字节校验失败",
+    "发现额外未授权私有归档"
+  ],
+  "residual_risk": "源核对与同AI检查不是独立玩法或视觉验收；外部读取能力仍待接收方确认",
+  "next_validation_action": "核对远端提交与根入口，保留旧版本",
+  "verification_status": "V2_source_checked + local_byte_validation",
+  "game_rule_delta": 0,
+  "game_code_delta": 0
+}

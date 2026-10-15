@@ -1,0 +1,189 @@
+{
+  "revision": "LEZI-MAIN-CLOSEOUT-2026-10-13-r1",
+  "scope": "standard_xiangqi_only_except_explicit_shared_F1_pointer",
+  "source_artifact": "inputs/lezi-standard-design-closeout-2026-10-13.zip",
+  "source_member": "WORKING_DECISIONS_20261013.json",
+  "decisions": [
+    {
+      "id": "H03-ordinary-defense",
+      "status": "user_confirmed_design_not_implemented_or_verified",
+      "proposal": "B",
+      "delta": "Replace first successful ordinary move/attack leaving own palace with first successful ordinary move/attack crossing from own half to enemy half.",
+      "retain": [
+        "max three distinct friendly revealed non-general pieces",
+        "once per piece per match",
+        "three complete enemy formal turns",
+        "one intercept",
+        "pre-existing bypass, rebound, suffocation semantics"
+      ],
+      "scope": "standard_xiangqi_only",
+      "implementation": "not_authorized_or_verified",
+      "open_edges": [
+        "whether newly acquired defense slot consumed if piece dies in same action atom; source event ordering must be verified"
+      ]
+    },
+    {
+      "id": "H03-general-armor",
+      "status": "user_confirmed_design_not_implemented_or_verified",
+      "delta": "Remove general/marshal anti-betrayal armor and its armor-only forced extra check-response from H03 in standard_xiangqi; no substitute or compensation ability.",
+      "scope": "standard_xiangqi_only",
+      "confirmation": "2026-10-13 current conversation: 我同意（同意在普通象棋H03移除将帅铁甲及相关应将、不设置替代能力）",
+      "retain_in_other_modes": "original_jieqi unchanged; half_chaos independently designed",
+      "not_authorized": "No generic immunity to check, checkmate, assassination or any other king death event; M07 interactions cannot automatically reinstate the armor.",
+      "implementation": "not_authorized_or_verified"
+    },
+    {
+      "id": "H04-rainy-night",
+      "status": "user_confirmed_design_no_delta_not_runtime_verified",
+      "delta": "none; retain 15 full paired turns to unlock, 15 percent independent own formal turn start roll, current turn only; legal check during active turn ends game via rainy-night outcome",
+      "confirmation": "2026-10-13 current conversation: 我同意雨夜保留规则"
+    },
+    {
+      "id": "H05-twisted-timeline",
+      "status": "history_A_target_KA_strict_return_RA_failure_charge_FA_confirmed_pending_runtime",
+      "open_edges": [
+        "Implementation-only: precheck and commit atomics, hidden-information non-leakage, event-specific stop return codes; no new user-level failure-charge rule required unless new conflict discovered."
+      ],
+      "candidate_A": "confirmed",
+      "source_gap": "H05 hero source says eligible historical action but does not enumerate levels; general conditional I-level rule does not settle this",
+      "review_file": "design/H05_TIMELINE_ADAPTATION_REVIEW_20261013.md",
+      "confirmation": "2026-10-13用户回复：a（确认H05合格历史候选A）",
+      "confirmed_history_scope": "Only actual level-I ordinary main move/attack from immediately previous enemy formal turn; exclude level-II/III, skill-derived or extra/forced subsidiary actions, placements, occupied-turn abilities; never skip to older formal turn.",
+      "scope": "standard_xiangqi_only",
+      "implementation": "not_authorized_or_verified",
+      "confirmed_general_target": {
+        "proposal": "K-A",
+        "scope": "standard_xiangqi_only",
+        "decision_source": "2026-10-13 current conversation direct user reply 同意 to K-A",
+        "rule": "Opponent general/marshal may be the same surviving historic target piece if its immediately previous formal turn action qualifies under approved history scope A; king/palace/facing/general safety remain constrained; temporary control does not change owner."
+      },
+      "confirmed_strict_return": {
+        "proposal": "R-A",
+        "decision_source": "2026-10-13 current conversation user reply 我同意a to the R-A return-legality question",
+        "scope": "standard_xiangqi_only",
+        "rule": "Historical-square placement must be legal at the return stage; forbidden illegal general self-check/facing cannot be temporarily tolerated for subsequent H05 control to repair. Ordinary legal checking states must not be blanket-prohibited.",
+        "unconfirmed": "Failure charge resolved by F-A subsequent user confirmation; low-level per-event execution and authorization checks remain to implement/test."
+      },
+      "confirmed_failure_charge": {
+        "proposal": "F-A",
+        "scope": "standard_xiangqi_only",
+        "decision_source": "2026-10-13 current conversation user replied 同意 to no-charge preactivation precheck failures vs spent after legal activation and later failure",
+        "preactivation": "If no eligible prior-turn history, dead target, occupied start or illegal return, reject before activation: do not consume once-per-match skill, do not consume main action.",
+        "postactivation": "Once legal precheck has passed and H05 use is committed, spend its sole charge and its occupied main action; triggering trap death, later loss of legal follow-up, or other stop does not refund.",
+        "information_isolation": "Precheck cannot reveal hidden trap/secret effects; effects unknown to player run after committed activation. Guard against precheck-submit races.",
+        "design_status": "user_confirmed_not_implemented_or_tested",
+        "source_caveat": "Original common H05 reference lacked precise use-charge failure cases. Do not propagate confirmation to other modes."
+      }
+    },
+    {
+      "id": "H06-rewind-original-piece-qualification",
+      "status": "S_A_user_confirmed_design_not_implemented_or_tested",
+      "proposal": "S-A",
+      "scope": "standard_xiangqi_only",
+      "confirmation": "2026-10-13 current conversation: 用户回复「同意」，确认H06上一己方正式回合无唯一可重新操作的原棋时禁止发动回溯",
+      "rule": "Immediately preceding own formal turn must identify one unique historical original piece body to re-act after rewind. A no-piece-only occupied-step turn, ambiguous distinct piece actors, or no legal non-attack non-check move from snapshot renders H06 ineligible. Cannot substitute any other piece.",
+      "inherited_not_changed": [
+        "per-game single use",
+        "opening 10 seconds",
+        "no activating while in check",
+        "full authoritative snapshot",
+        "re-acting same original piece",
+        "no attack/no check",
+        "min(historical remaining,10 seconds)"
+      ],
+      "classification": "clarification_of_original_same_piece_requirement_with_standard_mode_eligibility_detail",
+      "open_implementation_boundary": "Precheck eligibility without leaking hidden information; no engine or UI validation yet",
+      "main_blockers": [
+        "cross-rewind repetition and pressure history",
+        "post-rewind red/black paired turn adjudication and terminal timing"
+      ],
+      "no_auto_propagation_to_other_modes": true,
+      "implementation": "not_authorized_or_verified"
+    },
+    {
+      "id": "H07-time-steal-keep",
+      "status": "user_confirmed_design_no_delta_not_implemented_or_tested",
+      "proposal": "H07-STD-KEEP",
+      "scope": "standard_xiangqi_only",
+      "confirmation": "2026-10-13 current conversation user reply 同意 to keeping original H07 rules in ordinary xiangqi",
+      "delta": "none",
+      "inherited_rules": [
+        "one-sided H07: H07 side 75 seconds each formal turn, opponent 45 seconds",
+        "both H07: 60 seconds per side per formal turn, net steal zero",
+        "neither H07: general 60 seconds per formal turn",
+        "other special timing and network timeout sources retain original boundaries"
+      ],
+      "no_auto_propagation": "cross-mode H07 source remains unchanged; standard mode confirmation does not approve special clock configurations",
+      "implementation": "not_authorized_or_verified",
+      "scoring": "frozen"
+    },
+    {
+      "id": "H08-wuyou-keep",
+      "status": "user_confirmed_design_no_delta_not_runtime_verified",
+      "proposal": "H08-STD-KEEP",
+      "scope": "standard_xiangqi_only",
+      "confirmation": "2026-10-13用户在H08原样继承提议后直接回复「同意」",
+      "delta": "none",
+      "retained": "First nine paired full turns: enemy normal legal movement through protected own half, no attack from/landing in protected half, no valid check from within half; legal long-range check from outside half still applies. Protected side active attack that actually destroys target or causes legal effective check suspends until next own formal turn if still within protected period; protection expires permanently from tenth full paired turn.",
+      "implementation": "not_authorized_or_verified",
+      "review_file": "design/H08_WUYOU_ADAPTATION_REVIEW_20261013.md",
+      "scoring": "frozen"
+    },
+    {
+      "id": "H09-destruction-keep",
+      "status": "user_confirmed_design_no_delta_not_runtime_verified",
+      "proposal": "H09-STD-KEEP",
+      "scope": "standard_xiangqi_only",
+      "confirmation": "2026-10-13 current conversation direct user reply 同意 to H09 original intact including second batch self-destruction in check",
+      "delta": "none",
+      "retained": "Once per match as occupied main action; all surviving non-generals on both sides independently 50% destroyed in first simultaneous batch; if H09 owner general in check on activation, second batch simultaneously destroys all own remaining revealed non-generals, not hidden survivors; terminal checks after source atom closure",
+      "standard_consequence": "At all-revealed standard opening, in-check activation normally eliminates every own remaining non-general piece; not added as a new universal kill-all effect.",
+      "review_file": "design/H09_DESTRUCTION_ADAPTATION_REVIEW_20261013.md",
+      "implementation": "not_authorized_or_verified",
+      "scoring": "frozen",
+      "tests": "7_unexecuted_specs",
+      "other_modes": "unchanged_not_automatically_reviewed"
+    },
+    {
+      "id": "H10-standard-current-20261013",
+      "status": "confirmed_design_mode_edges_pending_main_bundle_shared_F1_synced",
+      "scope": "standard_xiangqi host selection/overlap; cross-mode F1 first-cast restriction",
+      "confirmation_evidence": [
+        "用户提出开局发现三选一并标记同名棋位置",
+        "用户提出第二次随机抽取一枚己方存活棋进行交换",
+        "用户同意二次与旧宿主重叠时身份转移且旧宿主不死",
+        "用户同意二次随机池排除旧宿主及公开影武者",
+        "用户要求同混乱版发动时点保持统一",
+        "用户同意F1三个模式首次影仅第一个己方正式回合"
+      ],
+      "current_design": [
+        "开局系统随机三枚合法棋子实体，用户三选一预选第一次寄宿目标（不立即发动）",
+        "第一次仅使用者第一个己方正式回合普通主行动前主动发动，可放弃；错过不能再首次发动（F1）",
+        "成功首次发动后T1-T7冷却，T8才可第二次，二次发动时等概率随机一枚当时合格存活己棋，排除现任真帅宿主和公开影武者",
+        "旧寄宿仍存续时二次成功：唯一真帅身份转至新宿主，原宿主恢复为普通本体、不死亡，旧公开影武者保留一枚，转移不触发流",
+        "第二次成功发动后不能使用流·舞（原版共享约束），流保留"
+      ],
+      "change_classification": "standard_xiangqi carrier selection/overlap modification; shared F1 modification; no numeric balancing verdict",
+      "cross_mode_F1_delivery_status": "received_by_main_in_this_closeout",
+      "shared_rule_merge": "written_to_this_total_closeout_not_engine_or_external_dialogues",
+      "open_edges": [
+        "preselected first host lost before first own formal turn",
+        "second cast candidate pool empty",
+        "same-type marker lifecycle and secrecy",
+        "F1 irreversibility across H11 and H06",
+        "second cast if first Shadow ended"
+      ],
+      "implementation": "not_authorized_or_verified",
+      "scoring": "frozen",
+      "review_file": "design/H10_WIND_ADAPTATION_REVIEW_20261013.md",
+      "sync_notice": "H10_F1_MAINLINE_SYNC_NOTICE_20261013.md",
+      "shared_F1_source": "../../rules/shared/SHARED_RULE_UPDATE_H10_F1_2026-10-13.md"
+    }
+  ],
+  "inherited_confirmations": "INHERITED_CONFIRMED_H01_H02_H11.md",
+  "H15_shared_core": "../../rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
+  "superseded_H10_S1": "historical_only_in_received_zip_not_current",
+  "new_engine_tests": 0,
+  "new_engine_changes": 0,
+  "formal_scoring": "frozen"
+}

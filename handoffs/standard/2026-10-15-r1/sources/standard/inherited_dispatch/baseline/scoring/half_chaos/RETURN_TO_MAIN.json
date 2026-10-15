@@ -1,0 +1,141 @@
+{
+  "schema": "lezi.mode_scoring_parallel_return.v1",
+  "task_id": "NEXT-HC-01",
+  "workline_id": "half_chaos_jieqi",
+  "mode_id": "half_chaos_jieqi",
+  "engine_mode_id": "half_chaos",
+  "date": "2026-10-12",
+  "version": "0.5-next-hc-01-v03-local-branch-rerun",
+  "status": "confirmed_hc_h11_b_count_clock_and_scoped_branch_rerun_passed",
+  "source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+  "source_tree": "9edf808eb68efcb272fe06422835c15afcf7c484",
+  "base_commit": "f1c01585ade8b4e17618399901d7283f37271459",
+  "interface_version": "mode_scoped_P0_v0.3",
+  "source_snapshot_kind": "exact_dependency_subset_not_full_git_checkout",
+  "source_files_verified_to_bundled_manifest": 76,
+  "full_clean_git_checkout": false,
+  "remote_git_commit_and_selected_files_verified": true,
+  "latest_workline_confirmations": [
+    {
+      "id": "CONF-HC-H11-01",
+      "state": "inherited_confirmed_unchanged"
+    },
+    {
+      "id": "CONF-HC-H11-M07-01",
+      "state": "inherited_design_only_M07_runtime_not_qualified"
+    },
+    {
+      "id": "CONF-HC-H11-B-20261012",
+      "state": "confirmed_in_main_scoped_to_half_chaos_B_count_and_clock"
+    }
+  ],
+  "changes": [
+    {
+      "id": "NEXT-HC-01-V03-S1",
+      "type": "new_mode_local_rule_source",
+      "rule_delta": 1,
+      "detail": "confirmed half H11 B clock new, formal counter applicability confirmed with existing code unchanged"
+    },
+    {
+      "id": "NEXT-HC-01-V03-S2",
+      "type": "scoped_branch_runtime",
+      "rule_delta": 0,
+      "detail": "8/8 new actual engine scope cases at pinned v0.3; local packaged 76-file exact-source subset with Node24"
+    },
+    {
+      "id": "NEXT-HC-01-V03-S3",
+      "type": "artifact_integrity",
+      "rule_delta": 0,
+      "detail": "14 manifests and 56 private content files hash/bytes/JSONL events checked"
+    },
+    {
+      "id": "NEXT-HC-01-V03-S4",
+      "type": "field_delta_addendum",
+      "rule_delta": 0,
+      "detail": "old 41-field provenance retained, scoped new field evidence adjacent; untested values remain null"
+    }
+  ],
+  "verification_records": [
+    {
+      "kind": "actual_scoped_engine_runtime",
+      "status": "passed",
+      "command": "python run.py --mode half --output /mnt/data/lezi_hc_v03_private_run",
+      "exit_code": 0,
+      "node": "v24.19.0",
+      "actual_result": "8/8 passed",
+      "source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "evidence_reference": "PUBLIC_ACCEPTANCE_SUMMARY.json; evidence/PRIVATE_RUNTIME_ARCHIVES_AUTHORITY_ONLY.zip; evidence/REEXECUTION.log"
+    },
+    {
+      "kind": "archive_integrity",
+      "status": "passed",
+      "actual_result": "14 archives,56 content files, all content hashes/byte counts/nonempty event rows matched manifests",
+      "evidence_reference": "evidence/PRIVATE_RUNTIME_ARCHIVE_INTEGRITY.json"
+    }
+  ],
+  "legally_scoped_study_cards": [
+    {
+      "id": "HC-F01/F02",
+      "status": "scoped_branch_runtime_passed"
+    },
+    {
+      "id": "HC-NI",
+      "status": "scoped_branch_runtime_passed"
+    },
+    {
+      "id": "HC-F03",
+      "status": "scoped_branch_runtime_passed"
+    },
+    {
+      "id": "HC-F04_count_clock",
+      "status": "mode_confirmed_scoped_branch_runtime_passed"
+    },
+    {
+      "id": "HC-F04_whole",
+      "status": "not_qualified_other_fields_interactions"
+    },
+    {
+      "id": "HC-F05_dual_death",
+      "status": "scoped_branch_runtime_passed"
+    },
+    {
+      "id": "HC-F05_ground",
+      "status": "not_run"
+    },
+    {
+      "id": "M07_H11xH15_pre_refresh_secret",
+      "status": "blocked_not_run"
+    }
+  ],
+  "field_delta_file": "HC_H11_B_V03_41_FIELD_DELTA.json",
+  "previous_41_oracle_unchanged": true,
+  "matches_run": 0,
+  "independent_clusters": 0,
+  "new_artificial_cases": 0,
+  "independent_empirical_n": 0,
+  "V3_independent": false,
+  "repository_modified": false,
+  "repository_changed_files": [],
+  "rule_delta_scope": "1 approved mainline scoped clock change already in supplied commit; no new branch changes",
+  "formal_scoring_status": "frozen",
+  "q": null,
+  "H": null,
+  "I": null,
+  "B": null,
+  "J": null,
+  "remaining_blockers": [
+    "HC-F05 ground",
+    "M07",
+    "H11 x H15",
+    "pre-refresh secret read",
+    "H03 candidate",
+    "P1/full matches",
+    "population sampling",
+    "unconfirmed repetition/draw adjudication"
+  ],
+  "shared_impacts_for_main_review": [
+    "Main local user confirmation and v0.3 source now supported by branch actual execution of the eight allowed cases",
+    "Do not elevate to V3 or unlock other interactions; keep baseline v0.2 historical partial"
+  ],
+  "next_independent_task": "Continue qualifying only already confirmed additional paths as separately authorized; no rule modifications and no scoring samples."
+}

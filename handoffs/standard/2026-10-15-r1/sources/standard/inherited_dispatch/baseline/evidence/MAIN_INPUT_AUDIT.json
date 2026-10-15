@@ -1,0 +1,107 @@
+{
+  "schema": "lezi.total_closeout_input_audit.v1",
+  "audit_type": "artifact_integrity_and_return_comparison_not_new_engine_execution",
+  "worklines": {
+    "ui": {
+      "root": "/workspace/scratch/4ab6d5d55010/closeout-inputs-20261013/ui/extracted/lezi-ui-stage-return-2026-10-12",
+      "errors": [],
+      "package_manifest_files_checked": 58,
+      "unlisted_files": [
+        "source_handoff_2026-10-11-v2/PACKAGE_MANIFEST.json"
+      ],
+      "approval_image_checks": [
+        {
+          "version": "S1-v2.1",
+          "status": "user_approved",
+          "bytes_and_sha256_match": true
+        },
+        {
+          "version": "B1-v1",
+          "status": "user_approved",
+          "bytes_and_sha256_match": true
+        },
+        {
+          "version": "B2-v1",
+          "status": "user_approved_with_typography_revision_requested",
+          "bytes_and_sha256_match": true
+        }
+      ],
+      "B2_v3_rejected_hash_match": true,
+      "all_checked_entries_match": true
+    },
+    "standard": {
+      "root": "/workspace/scratch/4ab6d5d55010/closeout-inputs-20261013/standard/extracted/lezi-standard-NEXT-STD-01-v03-actual-return-2026-10-12",
+      "errors": [],
+      "session_manifests": 16,
+      "private_content_files": 64,
+      "private_content_bytes": 12543942,
+      "zero_event_files": 16,
+      "access_labels_match": true,
+      "source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "checks_passed": 9,
+      "checks_total": 9,
+      "public_cases_match_main_preflight": true,
+      "mode_selection": "standard",
+      "independent_V3": false,
+      "all_checked_entries_match": true
+    },
+    "half": {
+      "root": "/workspace/scratch/4ab6d5d55010/closeout-inputs-20261013/half/extracted",
+      "errors": [],
+      "package_manifest_files_checked": 9,
+      "unlisted_files": [],
+      "session_manifests": 14,
+      "private_content_files": 56,
+      "private_content_bytes": 5401826,
+      "zero_event_files": 9,
+      "access_labels_match": true,
+      "source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "checks_passed": 8,
+      "checks_total": 8,
+      "public_cases_match_main_preflight": true,
+      "mode_selection": "half",
+      "independent_V3": false,
+      "all_checked_entries_match": true
+    }
+  },
+  "warnings": [
+    {
+      "workline": "ui",
+      "unlisted_files": [
+        "source_handoff_2026-10-11-v2/PACKAGE_MANIFEST.json"
+      ]
+    }
+  ],
+  "half_41_field_delta": {
+    "row_count": 41,
+    "statuses": {
+      "confirmed_mode_metadata": 2,
+      "not_directly_verified_in_new_scoped_cases": 16,
+      "scoped_runtime": 9,
+      "scoped_runtime_subcase_only": 1,
+      "blocked_M07_not_run": 1,
+      "blocked_ground_not_run": 1,
+      "run_metadata_only": 2,
+      "confirmed_and_scoped_runtime": 6,
+      "not_applicable_no_callback": 2,
+      "clock_semantics_confirmed_runtime_input_only": 1
+    },
+    "old_null_values_not_overwritten": true
+  },
+  "runtime_source_manifest_keys": [
+    "commit",
+    "full_repository_tree",
+    "snapshot_kind",
+    "files"
+  ],
+  "all_checked_entries_match": true,
+  "runtime_source_blob_audit": {
+    "files": 76,
+    "mismatches": []
+  },
+  "ui_nested_manifest_audit": {
+    "files": 26,
+    "mismatches": [],
+    "outer_unlisted_nested_manifest_is_historical_self_excluded_manifest": true
+  }
+}

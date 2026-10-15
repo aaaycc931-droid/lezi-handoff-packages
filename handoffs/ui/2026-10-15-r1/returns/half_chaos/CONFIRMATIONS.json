@@ -1,0 +1,90 @@
+{
+  "schema": "lezi.hc_confirmation_handoff.v1",
+  "revision": "LEZI-HC-CLOSEOUT-2026-10-14-r1",
+  "new_user_rule_confirmations": 5,
+  "local_confirmations": [
+    {
+      "id": "CONF-HC-H03-DEPARTURE-THEN-DEATH-20261014",
+      "at": "2026-10-14T13:49:58+08:00",
+      "scope": [
+        "half_chaos"
+      ]
+    },
+    {
+      "id": "CONF-HC-H11-COVERED-ASSASSINATION-CONTINUE-20261014",
+      "at": "2026-10-14T14:54:58+08:00",
+      "scope": [
+        "half_chaos"
+      ],
+      "sources": [
+        "H02",
+        "M03_reuses_H02"
+      ]
+    },
+    {
+      "id": "CONF-HC-H10-OLD-HOST-M07-RELEASE-A-20261014",
+      "at": "2026-10-14T19:15:06+08:00",
+      "scope": [
+        "half_chaos"
+      ],
+      "chosen": "A",
+      "status": "confirmed_design_engine_unrun"
+    }
+  ],
+  "direct_shared_confirmations": [
+    {
+      "id": "CONF-SHARED-H05-M07-CURRENT-ENEMY-TARGET-20261014",
+      "at": "2026-10-14T20:15:42+08:00",
+      "scope": "all_modes_where_H05_and_M07_are_available",
+      "user_scope_quote": "本游戏混乱畸变下该英雄共同的机制",
+      "mode_pool_changes_authorized": false,
+      "local_consumption": "half_chaos_consumed",
+      "other_worklines_consumed_verified": false
+    },
+    {
+      "id": "CONF-THREE-MODE-H06-NO-LEGAL-REPLAY-PREFLIGHT-20261014",
+      "at": "2026-10-14T21:03:01+08:00",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "chosen": "A",
+      "local_consumption": "half_chaos_consumed",
+      "other_worklines_consumed_verified": false,
+      "engine_status": "unrun"
+    }
+  ],
+  "user_clarifications_not_counted_as_new_rules": [
+    {
+      "id": "CLAR-HC-H10-TRUE-OWN-CONTROL-ANCHOR-20261014",
+      "at": "2026-10-14T16:23:37+08:00",
+      "kind": "existing_design_restoration_and_explicit_user_clarification",
+      "recorded_in_workline": "half_chaos",
+      "shared_adoption_verified": false,
+      "eligibility": "current_true_side_own_and_current_control_own",
+      "active_host_M07_control_flip": false,
+      "explicit_followup_agreement_at": "2026-10-14T18:51:04+08:00",
+      "status": "explicitly_confirmed_restoration"
+    }
+  ],
+  "withdrawn_proposals": [
+    "PROPOSAL-HC-H10-COVERED-POOL-ORIGINAL-SIDE-20261014"
+  ],
+  "inherited_shared_H10_confirmations": {
+    "count": 5,
+    "source_library_id": "libfile_15b864eb0d288191b2583dfa6e7b8c14",
+    "source_version": "5",
+    "ids": [
+      "CONF-THREE-MODE-H10-PREPARATION-20261014",
+      "CONF-THREE-MODE-H10-REDESIGN-SCOPE-20261014",
+      "CONF-THREE-MODE-H10-PREP-COOLDOWN-20261014",
+      "CONF-THREE-MODE-H10-SECOND-EMPTY-20261014",
+      "CONF-THREE-MODE-H10-LOCATOR-20261014"
+    ],
+    "source_copy": "external_source_snapshots/STD_WORKING_SOURCE_VERSION_5_20261014.md"
+  },
+  "confirmation_details_and_context": "HC_NEXT_HC_DESIGN_03_2026-10-14.md sections 8.6,8.10,8.13,8.15,8.18,8.20",
+  "scope_note": "共用确认不自动改变模式英雄/畸变池；H10资格澄清为既有设计恢复，跨线共同采用未验证；主线另行批准的计数来源属于继承，不重复计入本对话5项。",
+  "implementation_status": "design_only_engine_unrun"
+}

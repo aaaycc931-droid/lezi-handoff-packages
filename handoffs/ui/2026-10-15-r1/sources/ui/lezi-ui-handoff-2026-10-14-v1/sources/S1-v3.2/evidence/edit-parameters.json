@@ -1,0 +1,259 @@
+{
+  "schema": "lezi.toggle_same_outer_size.v1",
+  "version": "S1-v3.2",
+  "source_version": "S1-v3.1",
+  "source_sha256": "ebba7e68642fb9fb7c7e59b1b8891830f61749bcbe8faaa990e62a8a22a8365c",
+  "output_sha256": "24c9440dfe1f5129bdf3ac0d631f5c517758fb537daa8cc6b1655d5b51684506",
+  "width": 1496,
+  "height": 1051,
+  "user_statement": "开启与关闭图案墨圈保持同样大小，因为机制是墨圈填满，所以空白墨圈跟全黑墨圈保持同样外圈大小",
+  "intent": "Keep the reduced size from the preceding request; ON and OFF have a shared outer diameter, only interior ink fill changes in the intended mechanism",
+  "common_visible_outer_diameter_px": 28,
+  "measurement_luminance_threshold": 160,
+  "scale_method": "original raster, uniform geometric scaling; no stretching or redrawing",
+  "all_six_outer_diameters_equal": true,
+  "controls": [
+    {
+      "id": "regular_sound_on_ink",
+      "cx": 355,
+      "cy": 345,
+      "x": 325,
+      "y": 315,
+      "width": 61,
+      "height": 61,
+      "source_layer": "layers/regular_sound_on_ink-original.png",
+      "scaled_layer": "layers/regular_sound_on_ink-matched-outer.png",
+      "scale": 0.85,
+      "hidden_background_estimated": true,
+      "estimated_pixel_count": 937,
+      "geometric_center_shift": [
+        0,
+        0
+      ],
+      "original_ink_footprint_bounds": {
+        "x": 338,
+        "y": 326,
+        "width": 35,
+        "height": 35
+      },
+      "state": "on",
+      "old_scale": 0.85,
+      "actual_ink_bounds": {
+        "width": 27,
+        "height": 28,
+        "outer_diameter_px": 28
+      }
+    },
+    {
+      "id": "regular_haptic_on_ink",
+      "cx": 355,
+      "cy": 415,
+      "x": 325,
+      "y": 385,
+      "width": 61,
+      "height": 61,
+      "source_layer": "layers/regular_haptic_on_ink-original.png",
+      "scaled_layer": "layers/regular_haptic_on_ink-matched-outer.png",
+      "scale": 0.851,
+      "hidden_background_estimated": true,
+      "estimated_pixel_count": 942,
+      "geometric_center_shift": [
+        0,
+        0
+      ],
+      "original_ink_footprint_bounds": {
+        "x": 338,
+        "y": 396,
+        "width": 35,
+        "height": 35
+      },
+      "state": "on",
+      "old_scale": 0.85,
+      "actual_ink_bounds": {
+        "width": 27,
+        "height": 28,
+        "outer_diameter_px": 28
+      }
+    },
+    {
+      "id": "short_sound_on_ink",
+      "cx": 733,
+      "cy": 322,
+      "x": 703,
+      "y": 292,
+      "width": 61,
+      "height": 61,
+      "source_layer": "layers/short_sound_on_ink-original.png",
+      "scaled_layer": "layers/short_sound_on_ink-matched-outer.png",
+      "scale": 0.85,
+      "hidden_background_estimated": true,
+      "estimated_pixel_count": 931,
+      "geometric_center_shift": [
+        0,
+        0
+      ],
+      "original_ink_footprint_bounds": {
+        "x": 715,
+        "y": 302,
+        "width": 34,
+        "height": 36
+      },
+      "state": "on",
+      "old_scale": 0.85,
+      "actual_ink_bounds": {
+        "width": 27,
+        "height": 28,
+        "outer_diameter_px": 28
+      }
+    },
+    {
+      "id": "short_haptic_on_ink",
+      "cx": 733,
+      "cy": 391,
+      "x": 703,
+      "y": 361,
+      "width": 61,
+      "height": 61,
+      "source_layer": "layers/short_haptic_on_ink-original.png",
+      "scaled_layer": "layers/short_haptic_on_ink-matched-outer.png",
+      "scale": 0.85,
+      "hidden_background_estimated": true,
+      "estimated_pixel_count": 928,
+      "geometric_center_shift": [
+        0,
+        0
+      ],
+      "original_ink_footprint_bounds": {
+        "x": 715,
+        "y": 372,
+        "width": 34,
+        "height": 35
+      },
+      "state": "on",
+      "old_scale": 0.85,
+      "actual_ink_bounds": {
+        "width": 27,
+        "height": 28,
+        "outer_diameter_px": 28
+      }
+    },
+    {
+      "id": "regular_reduce_off_ink",
+      "cx": 355,
+      "cy": 485,
+      "x": 325,
+      "y": 455,
+      "width": 61,
+      "height": 61,
+      "state": "off",
+      "source_layer": "layers/regular_reduce_off_ink-original.png",
+      "scale": 0.819,
+      "old_scale": 1,
+      "hidden_background_estimated": true,
+      "estimated_pixel_count": 685,
+      "original_ink_footprint_bounds": {
+        "x": 336,
+        "y": 467,
+        "width": 37,
+        "height": 35
+      },
+      "actual_ink_bounds": {
+        "width": 28,
+        "height": 27,
+        "outer_diameter_px": 28
+      },
+      "scaled_layer": "layers/regular_reduce_off_ink-matched-outer.png",
+      "geometric_center_shift": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "short_reduce_off_ink",
+      "cx": 733,
+      "cy": 461,
+      "x": 703,
+      "y": 431,
+      "width": 61,
+      "height": 61,
+      "state": "off",
+      "source_layer": "layers/short_reduce_off_ink-original.png",
+      "scale": 0.82,
+      "old_scale": 1,
+      "hidden_background_estimated": true,
+      "estimated_pixel_count": 684,
+      "original_ink_footprint_bounds": {
+        "x": 712,
+        "y": 443,
+        "width": 37,
+        "height": 36
+      },
+      "actual_ink_bounds": {
+        "width": 28,
+        "height": 27,
+        "outer_diameter_px": 28
+      },
+      "scaled_layer": "layers/short_reduce_off_ink-matched-outer.png",
+      "geometric_center_shift": [
+        0,
+        0
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "regular_sound_on_ink",
+      "x": 336,
+      "y": 324,
+      "width": 39,
+      "height": 39
+    },
+    {
+      "id": "regular_haptic_on_ink",
+      "x": 336,
+      "y": 394,
+      "width": 39,
+      "height": 39
+    },
+    {
+      "id": "short_sound_on_ink",
+      "x": 713,
+      "y": 300,
+      "width": 38,
+      "height": 40
+    },
+    {
+      "id": "short_haptic_on_ink",
+      "x": 713,
+      "y": 370,
+      "width": 38,
+      "height": 39
+    },
+    {
+      "id": "regular_reduce_off_ink",
+      "x": 334,
+      "y": 465,
+      "width": 41,
+      "height": 39
+    },
+    {
+      "id": "short_reduce_off_ink",
+      "x": 710,
+      "y": 441,
+      "width": 41,
+      "height": 40
+    }
+  ],
+  "changed_pixels": 2011,
+  "changed_pixels_outside_authorized_mask": 0,
+  "source_unchanged": true,
+  "source_layers_reconstruct_original_exactly": true,
+  "header_unchanged": true,
+  "text_unchanged": true,
+  "background_layer": "background-layers/s1-v3-all-controls-removed-estimated.png",
+  "background_restoration": "The archived ON-state base is reused unchanged. OFF-state stroke-hidden paper is locally estimated once; paper visible in the hollow center is preserved unless the resized ring covers it.",
+  "allowed_mask": "evidence/allowed-control-footprints.png",
+  "current_candidate": "preview/lezi-settings-S1-v3_2.png",
+  "approval": "pending_user_review",
+  "runtime_acceptance": "not_run"
+}

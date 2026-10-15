@@ -1,0 +1,112 @@
+{
+  "schema": "lezi.standard.next_std_01.actual_runtime_return.v0.3",
+  "date_local": "2026-10-12",
+  "workline": "STANDARD_XIANGQI",
+  "task": "NEXT-STD-01",
+  "gate": {
+    "collaboration_system": "X_Collaboration_System.md",
+    "version": "1.8.0",
+    "level": "L3_LIMITATION",
+    "source_truth": "package bundled v1.8.0; no re-decision of existing approvals"
+  },
+  "source": {
+    "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "full_tree": "9edf808eb68efcb272fe06422835c15afcf7c484",
+    "parent_baseline": "f1c01585ade8b4e17618399901d7283f37271459",
+    "interface": "mode_scoped_P0_v0.3",
+    "snapshot_kind": "exact_dependency_subset_not_full_git_checkout",
+    "exact_source_blob_count": 76,
+    "package_file_count": 106,
+    "git_worktree_status": "not_applicable_no_git_checkout",
+    "github_readonly_confirmation": "commit and tree metadata verified via GitHub connector, changed paths checked against GitHub compare; not a Git checkout"
+  },
+  "execution": {
+    "command": "python3 run.py --mode standard --output /mnt/data/lezi_std_v03_private_run",
+    "cwd": "/mnt/data/standard_offline_review/lezi-scoped-replay",
+    "exit_code": 0,
+    "python": "3.13.5",
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64",
+    "result": "9/9 passed",
+    "public_summary_sha256": "2a7bc39c7334aa77f8b44b8eea52103e5dcfb40cb95cf6d2918997088da5abe8",
+    "independent_branch_run": true,
+    "independent_V3": false,
+    "main_preflight_not_counted_as_new_execution": true,
+    "full_573_rerun": false,
+    "web_build_rerun": false
+  },
+  "checks": {
+    "total": 9,
+    "passed": 9,
+    "failed": 0,
+    "observed_runtime_matches_main_V2": 9,
+    "formal_scoring_status": "frozen"
+  },
+  "archive_integrity": {
+    "session_manifests": 16,
+    "private_files": 64,
+    "all_hash_bytes_rows_match": true,
+    "private_trace_access_separation": true,
+    "full_trace_in_return": "private/ restricted to trusted main review only"
+  },
+  "evidence_grade": "this_branch_actual_engine_runtime_scoped_subset_P0_not_empirical_P1_or_independent_V3",
+  "inherited_not_rerun": [
+    "12 manual cases T01-T12",
+    "STD-N01 offline results",
+    "main V2 9/9 same submit SHA",
+    "main 111/111 related regression",
+    "old 573/573 full suite and web build on older revision"
+  ],
+  "design_invariants_unchanged": {
+    "H01": "12 enemy formal turns; expires at end of enemy formal turn 12",
+    "H02": "activation turn excluded; 2 subsequent own formal windows; no general assassination",
+    "H11": "A/B restores same fixed original 32 known pieces, no new identities; B increments black formal turns 1 to 2 with ordinary black begin/main/end callbacks zero"
+  },
+  "remain_blocked": [
+    "H03_candidate",
+    "H11_x_H15",
+    "M07_and_pre_refresh_secret_read",
+    "unconfirmed_repetition_draw_rules",
+    "P1",
+    "full_match_qualification",
+    "population_sampling",
+    "STD-FX-04/07/08/11/12/13/14 unexecuted paths; STD-FX14 not inferred passed",
+    "full Git checkout npm run check and web build unexecuted",
+    "other heroic sources/combinations unqualified",
+    "repetition, perpetual check, perpetual chase and draw not confirmed"
+  ],
+  "source_subset_changes_from_v02": {
+    "changed_existing_paths": [
+      "scripts/scoring/MODE_BRIDGE_README.md",
+      "scripts/scoring/mode-qualification-cases.ts",
+      "scripts/scoring/policy-session.ts",
+      "src/hero-actions.ts",
+      "src/mechanism-observer.ts"
+    ],
+    "new_paths": [
+      "docs/HALF_CHAOS_H11_B_COUNT_CLOCK_2026-10-12.md",
+      "tests/bluetooth-host-room.test.ts",
+      "tests/fixtures/scoring/CONFIRMATION_HC_H11_B_COUNT_CLOCK.json",
+      "tests/helpers.ts",
+      "tests/hero-forms.test.ts",
+      "tests/remote-room.test.ts",
+      "tests/scoring-mechanism.test.ts",
+      "tests/scoring-policy-adapter.test.ts"
+    ],
+    "removed_paths": [],
+    "notes": "v0.3 adds half-chaos clock confirmation and code. Existing standard cases unchanged; shared observer and hero-actions are altered and covered by scoped re-execution, not exhaustive cross-mode coverage."
+  },
+  "product_features_ready": {
+    "xiangqi": false,
+    "half_chaos": false
+  },
+  "q": null,
+  "H": null,
+  "I": null,
+  "B": null,
+  "J": null,
+  "empirical_n": 0,
+  "repository_modified_by_branch": false,
+  "handoff": "Main may ingest this as actual branch v0.3 P0 scoped re-execution, not as independent V3, P1, full-mode or empirical score qualification."
+}

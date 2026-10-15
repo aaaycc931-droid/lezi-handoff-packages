@@ -1,0 +1,76 @@
+{
+  "schema": "lezi.workline_dispatch.v1",
+  "batch_id": "LEZI-DISPATCH-2026-10-15-r1",
+  "workline": "standard",
+  "prepared_at_local": "2026-10-15T11:23:21+08:00",
+  "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
+  "status": "github_remote_handoff_prepared",
+  "user_instruction": "现在开始进行分发工作",
+  "authorization": "Prepare this dispatch and instruct the receiving workline to resume scoped design after the user supplies its package and startup instruction; no pending rule approval inferred.",
+  "collaboration": {
+    "working_revision": "2026-10-14.v0.8",
+    "formal_baseline": "1.8.0",
+    "source": "collaboration/PROJECT_COLLABORATION_20261015.md",
+    "reading_scope": "project_scoped_excerpt_not_full_personal_system"
+  },
+  "source_preparation": "Sources are expanded at sources/standard; no user ZIP upload is needed. python3 prepare_sources.py checks current required paths and optionally restores historical source parts.",
+  "source_root": "sources/standard",
+  "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+  "current_adjudication_version": "1.49",
+  "next_task": {
+    "id": "NEXT-STD-DESIGN-04",
+    "subject": "M04 战车待定主体",
+    "action": "先完整恢复工作稿中“当前待决策｜M04 战车普通地面车继承”的现成方案与未运行规格，用简明具体情形呈现给用户决定；当前分发不是同意M04。确认后才继续M05、M06、M07、M08、D01。",
+    "pending_is_not_approved": true
+  },
+  "external_delivery": {
+    "prepared_here": true,
+    "sent_by_message_tool": false,
+    "user_transfer_confirmed": false,
+    "recipient_reading_verified": false,
+    "recipient_adoption_verified": false
+  },
+  "prior_main_receipt": {
+    "received": true,
+    "document_integrated": true,
+    "new_rule_approval_by_dispatch": false
+  },
+  "prior_line_source_statuses": "Historical closed/not-received fields remain unchanged in original snapshots; current root takes precedence for dispatch and main document receipt.",
+  "new_game_code_changes": 0,
+  "new_game_engine_tests": 0,
+  "scoring": {
+    "frozen": true,
+    "q": null,
+    "H": null,
+    "I": null,
+    "B": null,
+    "J": null,
+    "n": 0,
+    "featuresReady": false
+  },
+  "NET": "paused",
+  "scope": "design/source/line documents only",
+  "code_or_deploy_authorized": false,
+  "limitation_audit_status": "partial",
+  "verification_level": "V2_source_checked; packaging checks only; no independent recipient execution",
+  "required_files": [
+    "collaboration/PROJECT_COLLABORATION_20261015.md",
+    "SYNC_NOTICE.md",
+    "SOURCE_MAP.json",
+    "RETURN_CONTRACT.json",
+    "PENDING_DECISION.json",
+    "rules/shared/02_CURRENT_HEROES.md",
+    "LARGE_SOURCE_PARTS.json"
+  ],
+  "account_routing": {
+    "this_account": [
+      "main",
+      "half_chaos"
+    ],
+    "other_account": [
+      "UI",
+      "standard"
+    ]
+  },
+  "publication_scope": "PUBLICATION_SCOPE.json"
+}

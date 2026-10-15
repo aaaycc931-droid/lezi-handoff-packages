@@ -1,0 +1,86 @@
+{
+  "schema": "lezi.total_closeout_next_actions.v2",
+  "no_tasks_auto_started": true,
+  "tasks": [
+    {
+      "id": "NEXT-MAIN-ADJUDICATION",
+      "owner": "main",
+      "status": "paused_waiting_user_resume",
+      "first_action": "审查GC-01～GC-04四项普通明子判定，保持未确认，不重复已确认数值",
+      "later": [
+        "暗子及私有信息隔离",
+        "英雄与畸变有效威胁/保护",
+        "互将互捉/将捉交替/多目标",
+        "重复局面键与历史边界",
+        "全无替代合法行动的结果",
+        "复活及同批事件撤销",
+        "回溯重做与双方回合配对算法",
+        "仅按已确认范围实现独立裁判并测试"
+      ]
+    },
+    {
+      "id": "NEXT-UI-B2",
+      "owner": "UI",
+      "status": "paused_waiting_user_resume",
+      "first_action": "从B2-v3被否定后的字体审美定位和局部修订继续；先实际查看包内批准与未批准图",
+      "preserve": [
+        "首页/V4",
+        "S1-v2.1",
+        "B1-v1",
+        "B2-v1非字体部分"
+      ],
+      "review": "一次一张实际图，修改版重新审批；不重复UI-001，不自动改已批准页面字体",
+      "not_done": [
+        "字体定稿",
+        "墨圈旋转填墨消散实播",
+        "浏览器Android运行交互",
+        "蓝牙真双机和尺寸实测"
+      ]
+    },
+    {
+      "id": "NEXT-STD-02",
+      "owner": "standard_branch",
+      "status": "paused_waiting_new_scoped_authorization",
+      "first_action": "继承14b提交9/9实际支线结果及12项人工案例；无需重复相同回传",
+      "blocked": [
+        "STD-FX04/07/08/11/12/13/14",
+        "H03候选",
+        "M07及刷新前读取",
+        "H11×H15",
+        "其他未验收来源",
+        "新裁判未实现",
+        "完整仓库全量check与web build",
+        "P1完整对局总体样本"
+      ]
+    },
+    {
+      "id": "NEXT-HC-02",
+      "owner": "half_chaos_branch",
+      "status": "paused_waiting_new_scoped_authorization",
+      "first_action": "继承8/8及H11-B计数/时钟确认；不再以缺确认或Node22作为旧阻断",
+      "blocked": [
+        "HC-F04其他字段联动",
+        "HC-F05地面",
+        "M07及刷新前读取",
+        "H11×H15",
+        "H03候选及其他未验收来源",
+        "新裁判未实现",
+        "P1完整对局总体样本"
+      ]
+    },
+    {
+      "id": "NEXT-NET-001",
+      "owner": "main",
+      "status": "paused_not_resumed",
+      "first_action": "用户指定恢复NET后核对已有Cloudflare探针和鉴权配置，再做大陆双机记录；沿用50元目标与香港备选",
+      "no_production_deploy_authorized_by_closeout": true
+    },
+    {
+      "id": "NEXT-GITHUB-SNAPSHOT",
+      "owner": "main",
+      "status": "when_resuming_code_work",
+      "first_action": "只读核对远端最新HEAD/PR及其他线新增差分；使用隔离分支，不直接改写或合并批准基线",
+      "private_package_publication": "本总包含P3协作文档和私有策略归档，不自动公开发布"
+    }
+  ]
+}

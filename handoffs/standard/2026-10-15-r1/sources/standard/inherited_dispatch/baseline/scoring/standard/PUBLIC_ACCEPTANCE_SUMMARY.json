@@ -1,0 +1,212 @@
+{
+  "schema": "lezi.mode_bridge_qualification.v0.3",
+  "interface_version": "mode_scoped_P0_v0.3",
+  "rule_delta": 1,
+  "confirmation": "CONF-HC-H11-B-20261012",
+  "qualification_environment": "trusted_room_bound_source_allowlist_not_product_release",
+  "product_featuresReady": {
+    "xiangqi": false,
+    "half_chaos": false
+  },
+  "formal_scoring_status": "frozen",
+  "q": null,
+  "H": null,
+  "I": null,
+  "B": null,
+  "J": null,
+  "independent_empirical_n": 0,
+  "blocked": [
+    "H03_candidate",
+    "H11_x_H15",
+    "M07_and_pre_refresh_secret_read",
+    "unconfirmed_repetition_draw_rules",
+    "P1",
+    "full_match_qualification",
+    "population_sampling"
+  ],
+  "scope": {
+    "xiangqi": [
+      "baseline",
+      "H01",
+      "H02",
+      "H11_A",
+      "H11_B"
+    ],
+    "half_chaos": [
+      "baseline",
+      "H11_A",
+      "H11_B_scoped_count_and_clock"
+    ]
+  },
+  "source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+  "source_tree": "9edf808eb68efcb272fe06422835c15afcf7c484",
+  "source_snapshot_kind": "exact_dependency_subset_not_full_git_checkout",
+  "git_worktree_status": "not_applicable_no_git_checkout",
+  "entrypoint": "additional_trusted_driver_source_cases_unmodified",
+  "mode_selection": "standard",
+  "node": "v24.19.0",
+  "platform": "linux",
+  "arch": "x64",
+  "cases": [
+    {
+      "id": "STD-FX-01-fixed-opening",
+      "check": "passed",
+      "observed_runtime": {
+        "pieces": 32,
+        "face_down": 0,
+        "random_draws": 0,
+        "initialization": "room_selection_RPS_intro_clock",
+        "mode": "xiangqi"
+      }
+    },
+    {
+      "id": "STD-FX-02-eight-plies-and-isolated-probes",
+      "check": "passed",
+      "observed_runtime": {
+        "plies": 8,
+        "probes": [
+          {
+            "id": "STD-FX-02-ADV-OUTSIDE",
+            "accepted": false,
+            "actual_code": "ILLEGAL_MOVEMENT"
+          },
+          {
+            "id": "STD-FX-02-ADV-VALID",
+            "accepted": true,
+            "actual_code": null
+          },
+          {
+            "id": "STD-FX-02-ELE-CROSS",
+            "accepted": false,
+            "actual_code": "ILLEGAL_MOVEMENT"
+          },
+          {
+            "id": "STD-FX-02-ELE-VALID",
+            "accepted": true,
+            "actual_code": null
+          },
+          {
+            "id": "STD-FX-02-TURN-NEG",
+            "accepted": false,
+            "actual_code": "WRONG_TURN"
+          }
+        ],
+        "snapshot_isolation": "independent_full_lifecycle_replays",
+        "counts": {
+          "red": 4,
+          "black": 4
+        }
+      }
+    },
+    {
+      "id": "STD-NI-01-private-traps-process-noninterference",
+      "check": "passed",
+      "observed_runtime": {
+        "initial": {
+          "player_input_hash": "754b98819c94a5fe8ecab65fb833e06f80ff3bc6b27bd604b3f6a734145b52bb",
+          "command_catalog_hash": "4d9ee331f8ae6e5ce502f2d643ea1b3f736891416587c76b37c93dfa582eaba8",
+          "policy_output_hash": "f470dd6146a684b32c574565dbcb1f69230c16736bff37077758d54a9cc8d51f",
+          "delivery_count": 8,
+          "decision_usage": {
+            "catalog_entries": 44,
+            "random_bytes": 4,
+            "profile": "P0",
+            "strength_qualified": false
+          }
+        },
+        "before_entry": {
+          "player_input_hash": "03d18a55263342464d13d317844b4c45769569febac30e2f5baa751307faf355",
+          "command_catalog_hash": "df8807ca9d200018a5555e7a3c37607e63d753a85c7ff10565ed91a1e8e52995",
+          "policy_output_hash": "f470dd6146a684b32c574565dbcb1f69230c16736bff37077758d54a9cc8d51f",
+          "delivery_count": 11,
+          "decision_usage": {
+            "catalog_entries": 44,
+            "random_bytes": 4,
+            "profile": "P0",
+            "strength_qualified": false
+          }
+        },
+        "divergence_only_after_authorized_trigger": true
+      }
+    },
+    {
+      "id": "STD-FX-03-H01-one-layer-canonical-death",
+      "check": "passed",
+      "observed_runtime": {
+        "death_cause": "trap_ambush",
+        "remaining_layers": 1,
+        "victim_id": "covered-27",
+        "owner_private": true
+      }
+    },
+    {
+      "id": "STD-FX-05-H01-twelfth-enemy-turn-expiry",
+      "check": "passed",
+      "observed_runtime": {
+        "covered_enemy_formal_turns": 12,
+        "expiry": "after_red_12_end"
+      }
+    },
+    {
+      "id": "STD-FX-06-H02-activation-delayed-strike",
+      "check": "passed",
+      "observed_runtime": {
+        "source_once_spent": true,
+        "activation_not_enhanced": true,
+        "general_target_rejected": true,
+        "eligible_window": "red_formal_2",
+        "strike_committed": true
+      }
+    },
+    {
+      "id": "STD-H02-two-future-formal-windows",
+      "check": "passed",
+      "observed_runtime": {
+        "activation_turn_excluded": true,
+        "expiry": "red_formal_3_end"
+      }
+    },
+    {
+      "id": "STD-FX-09-H11-A-restores-both-captures",
+      "check": "passed",
+      "observed_runtime": {
+        "restored_count": 32,
+        "restored_initial_deaths": 2,
+        "random_draw_delta": 0,
+        "time_rewound": false,
+        "counts": {
+          "red": 1,
+          "black": 1
+        },
+        "mapping_epoch": 1
+      }
+    },
+    {
+      "id": "STD-FX-10-H11-B-count-and-callback-separation",
+      "check": "passed",
+      "observed_runtime": {
+        "formal_before": {
+          "red": 2,
+          "black": 1
+        },
+        "formal_after": {
+          "red": 2,
+          "black": 2
+        },
+        "black_2_callbacks": {
+          "formal_turn_begin": 0,
+          "formal_main_action": 0,
+          "formal_turn_end": 0
+        },
+        "receipt_clock_delta": 2,
+        "exact_retry_no_effect": true
+      }
+    }
+  ],
+  "checks_passed": 9,
+  "checks_total": 9,
+  "independent_V3": false,
+  "half_H11_B_count_and_clock_scoped_qualified": false,
+  "whole_HC_F04_all_interactions_qualified": false,
+  "full_regression_run": false
+}

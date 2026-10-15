@@ -1,0 +1,1154 @@
+{
+  "schema": "lezi.ui_approval_register.v1",
+  "workline_id": "UI-DESIGN-001",
+  "primary_reader": "project_main_dialogue_AI",
+  "updated_at": "2026-10-14T13:31:24+08:00",
+  "actors": {
+    "user": "图稿最终审批者",
+    "ui_workline": "候选设计、版本与证据记录者",
+    "main_workline": "规则、共享接口及跨线协调者"
+  },
+  "design_approvals": [
+    {
+      "item_id": "UI002-SETTINGS-S1",
+      "version": "S1-v2.1",
+      "status": "user_approved",
+      "approved_at": "2026-10-12T14:49:50+08:00",
+      "user_statement": "本ui审批通过",
+      "file_name": "lezi-settings-S1-v2_1.png",
+      "library_file_id": "libfile_2f9389d96f948191b7f428f0a4acbb4c",
+      "sha256": "6b3c46c32337fc8013757da3dd9439b282e56a98c893b7ebee76a4fa1a42dc46",
+      "approval_scope": [
+        "静态设置页图稿：背景、毛笔字感、线条、布局与控件外观",
+        "六个墨圈相对S1-v2缩至85%的展示大小",
+        "同一图内常规屏/短屏示意"
+      ],
+      "approval_does_not_include": [
+        "旋转/填墨/消散动效实播验收",
+        "浏览器与Android运行交互验收",
+        "字体放大及设备触控dp实测",
+        "产品源码接入、APK、部署或主线合并"
+      ],
+      "image_internal_title": "S1-v2（仅缩小墨圈时依用户要求保留原图内文字）",
+      "production_source_status": "candidate_mockup_not_implemented",
+      "runtime_acceptance": "not_run",
+      "motion_appearance_acceptance": "not_run",
+      "approved_baseline_preservation": "之后仅修改用户明确指定区域；任何修改后的版本必须重新审批，不覆盖已批准原图。"
+    },
+    {
+      "item_id": "UI002-BLUETOOTH-B1",
+      "version": "B1-v1",
+      "status": "user_approved",
+      "approved_at": "2026-10-12T17:41:00+08:00",
+      "user_statement": "通过该ui",
+      "file_name": "lezi-bluetooth-B1-v1.png",
+      "library_file_id": "libfile_b2e28713d284819185a7b8412643ec90",
+      "sha256": "bce5413e4a0c484457124e642ce815a1494f09ba1109d6096c2a0fa499b91806",
+      "depicted_state": "蓝牙已开启且权限就绪；未创建房间、未建立连接的初始页",
+      "approval_scope": [
+        "初始蓝牙大厅静态图稿",
+        "背景、标题、毛笔字、创建/加入按钮及其布局",
+        "配对与自动进入英雄选择说明的视觉呈现"
+      ],
+      "approval_does_not_include": [
+        "蓝牙关闭/权限/等待/失败/再战等未展示状态的图稿",
+        "浏览器或Android实际蓝牙、点击、返回与状态切换验收",
+        "产品源码接入、APK、部署或主线合并"
+      ],
+      "production_source_status": "candidate_mockup_not_implemented",
+      "runtime_acceptance": "not_run",
+      "approved_baseline_preservation": "后续同页状态继承批准背景、标题、字体及笔触，仅按状态变化替换对应内容；不覆盖批准原图。"
+    },
+    {
+      "item_id": "UI002-BLUETOOTH-B2",
+      "version": "B2-v1",
+      "status": "user_approved_with_typography_revision_requested",
+      "approved_at": "2026-10-12T19:23:08+08:00",
+      "user_statement": "这个ui我通过，但我觉得现在的字体，太过浓厚圆滑，就是缺少书法字体的感觉，按理说正常书法写字，不应该能得到这种字体吧，现在的中大型字体太过电子化了，不好看",
+      "file_name": "lezi-bluetooth-B2-v1.png",
+      "library_file_id": "libfile_4bed93dea42881919448d45b02812e8c",
+      "sha256": "e501e1c965fe37a54176f912c2d3641a55206e9105ff40d9b47aa24f805fc112",
+      "approval_scope": [
+        "蓝牙关闭状态的布局、内容与操作呈现",
+        "背景、返回、按钮边框等非字形部分保留为后续修订基线"
+      ],
+      "qualification": "同一条批准消息同时提出字体不满意；不将其解释为中大型字形最终批准。",
+      "typography_revision": "B2-v2只修订本页中大型字形，修改后重新审批；不自动改写已批准S1/B1原图。",
+      "runtime_acceptance": "not_run",
+      "font_source_acceptance": "not_finalized"
+    },
+    {
+      "item_id": "UI002-BLUETOOTH-B2",
+      "version": "B2-v4",
+      "status": "user_approved",
+      "approved_at": "2026-10-13T15:25:07+08:00",
+      "user_statement": "很好，这个字体好极了，我所有的大字体都要按这个生成",
+      "subsequent_clarification": "是所有的中大型字体",
+      "file_name": "lezi-bluetooth-B2-v4.png",
+      "library_file_id": "libfile_dfe51e43534c8191a35cd71ec345e4d0",
+      "sha256": "0e15403ce826c21d1c3a5f3e73329a06fc9138ad20e2a5be1c0effd5f662fd08",
+      "approval_scope": [
+        "B2-v4静态字体修订图",
+        "Long Cang原始字形作为全部中大型文字的字体选择"
+      ],
+      "runtime_acceptance": "not_run",
+      "production_source_status": "not_implemented"
+    },
+    {
+      "item_id": "UI002-BLUETOOTH-B1",
+      "version": "B1-v2",
+      "status": "user_approved",
+      "approved_at": "2026-10-13T15:35:59+08:00",
+      "user_statement": "可以，就这么做，只要是中大型文字都这么做，非常的好，我很喜欢， 对了，这个字体不触犯什么版权问题吧",
+      "file_name": "lezi-bluetooth-B1-v2.png",
+      "library_file_id": "libfile_0d8ebe2cf4f08191bc7c662a3c834e03",
+      "sha256": "aa9a2a80781b5dfeef3ff5245d59143db421c23e1fa303427c954b6fa60ea7f5",
+      "approval_scope": [
+        "B1-v2静态图稿中大型字体修订",
+        "再次确认全项目中大型文字使用Long Cang原始字形"
+      ],
+      "runtime_acceptance": "not_run",
+      "production_source_status": "not_implemented"
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "S1-v1",
+      "status": "not_approved",
+      "reason": "现代字体、空白背景、矩形开关与规整直线被用户否定。"
+    },
+    {
+      "version": "S1-v2",
+      "status": "not_approved_superseded",
+      "reason": "用户随后要求仅缩小墨圈15%；没有单独批准本版本。"
+    },
+    {
+      "version": "S1-v2.1",
+      "status": "user_approved",
+      "method": "仅局部像素缩放墨圈；六个控制区域外变化像素0，源S1-v2不变。"
+    },
+    {
+      "version": "B1-v1",
+      "status": "user_approved",
+      "user_statement": "通过该ui",
+      "approved_at": "2026-10-12T17:41:00+08:00"
+    },
+    {
+      "version": "B2-v1",
+      "status": "user_approved_with_typography_followup",
+      "approved_at": "2026-10-12T19:23:08+08:00",
+      "scope": "UI布局与状态通过；字体修订待复审"
+    },
+    {
+      "version": "B2-v2",
+      "status": "not_approved_superseded",
+      "reason": "用户同意改用真实字形来源；未明确批准该图稿。"
+    },
+    {
+      "version": "B2-v3",
+      "status": "not_approved_user_rejected",
+      "file_name": "lezi-bluetooth-B2-v3.png",
+      "sha256": "22a5cf2ece6d69e894fdce7a8e62e882d0069ad3c5f3cb6c5d9b47bdd861efee",
+      "source_version": "B2-v2",
+      "font_source": {
+        "family": "AR PL UKai CN",
+        "face_index": 0,
+        "package_version": "0.2.20080216.2-5",
+        "package_url": "https://deb.debian.org/debian/pool/main/f/fonts-arphic-ukai/fonts-arphic-ukai_0.2.20080216.2-5_all.deb",
+        "package_sha256": "b9db73184895b067f7911f9adbf3b137df99c2d4ec5425b4ad779a9834b7110b",
+        "font_sha256": "cfc758e69386a21bade8cb3b373fda20d7f2fac6e8904ced2ded98588b63e274",
+        "license": "Arphic Public License",
+        "license_url": "https://metadata.ftp-master.debian.org/changelogs/main/f/fonts-arphic-ukai/fonts-arphic-ukai_0.2.20080216.2-5_copyright",
+        "font_file_modified": false,
+        "current_page_missing_glyphs": 0,
+        "current_page_distinct_glyphs": 19,
+        "coverage_scope": "仅核对本页文字，不代表全项目字形覆盖已经验收",
+        "source_classification": "真实楷体字库；不宣称真人为本项目手写或特定书家原迹"
+      },
+      "change_scope": [
+        {
+          "id": "eyebrow",
+          "x": 290,
+          "y": 207,
+          "width": 271,
+          "height": 75
+        },
+        {
+          "id": "title",
+          "x": 202,
+          "y": 278,
+          "width": 448,
+          "height": 164
+        },
+        {
+          "id": "status",
+          "x": 193,
+          "y": 477,
+          "width": 468,
+          "height": 118
+        },
+        {
+          "id": "primary_label",
+          "x": 204,
+          "y": 730,
+          "width": 450,
+          "height": 132
+        }
+      ],
+      "changed_pixels_outside_text_regions": 0,
+      "hidden_background_note": "Pixels hidden by prior text estimated locally only within old glyph footprints; visible background outside four text regions is unchanged.",
+      "approval_scope_requested": "本页中大型文字字形、字重与展示大小",
+      "runtime_acceptance": "not_run",
+      "production_implementation_status": "candidate_mockup_not_implemented",
+      "user_feedback": {
+        "at": "2026-10-12T20:40:50+08:00",
+        "statement": "好丑，但我说不清楚怎么丑",
+        "interpretation": "用户否定本候选视觉效果；具体原因尚未由用户确认。"
+      }
+    },
+    {
+      "version": "B2-v4",
+      "status": "user_approved",
+      "font_family": "Long Cang",
+      "source_version": "B2-v1",
+      "evidence": {
+        "version": "B2-v4",
+        "source_version": "B2-v1",
+        "source_sha256": "e501e1c965fe37a54176f912c2d3641a55206e9105ff40d9b47aa24f805fc112",
+        "output_sha256": "0e15403ce826c21d1c3a5f3e73329a06fc9138ad20e2a5be1c0effd5f662fd08",
+        "width": 852,
+        "height": 1846,
+        "regions": [
+          {
+            "id": "eyebrow",
+            "x": 290,
+            "y": 207,
+            "width": 271,
+            "height": 75
+          },
+          {
+            "id": "title",
+            "x": 202,
+            "y": 278,
+            "width": 448,
+            "height": 164
+          },
+          {
+            "id": "status",
+            "x": 193,
+            "y": 477,
+            "width": 468,
+            "height": 118
+          },
+          {
+            "id": "primary_label",
+            "x": 204,
+            "y": 730,
+            "width": 450,
+            "height": 132
+          }
+        ],
+        "lines": [
+          {
+            "id": "eyebrow",
+            "text": "面对面对局",
+            "cx": 426,
+            "cy": 248,
+            "maxWidth": 227,
+            "maxHeight": 48,
+            "fill": "#12120f",
+            "actualInkBounds": {
+              "width": 226.99999999999997,
+              "height": 38.63972616230529
+            },
+            "font_size_px": 48.35342734205256
+          },
+          {
+            "id": "title",
+            "text": "蓝牙对局",
+            "cx": 426,
+            "cy": 360,
+            "maxWidth": 405,
+            "maxHeight": 139,
+            "fill": "#10110e",
+            "actualInkBounds": {
+              "width": 405,
+              "height": 91.70954977857963
+            },
+            "font_size_px": 107.94243070362474
+          },
+          {
+            "id": "status_1",
+            "text": "蓝牙当前处于关闭状态，",
+            "cx": 426,
+            "cy": 514,
+            "maxWidth": 447,
+            "maxHeight": 44,
+            "fill": "#12120f",
+            "actualInkBounds": {
+              "width": 447,
+              "height": 37.91985658544865
+            },
+            "font_size_px": 42.71596545044252
+          },
+          {
+            "id": "status_2",
+            "text": "请先开启蓝牙。",
+            "cx": 426,
+            "cy": 569,
+            "maxWidth": 286,
+            "maxHeight": 44,
+            "fill": "#12120f",
+            "actualInkBounds": {
+              "width": 286,
+              "height": 40.28337874659401
+            },
+            "font_size_px": 44.9591280653951
+          },
+          {
+            "id": "primary_label",
+            "text": "开启蓝牙",
+            "cx": 426,
+            "cy": 793,
+            "maxWidth": 365,
+            "maxHeight": 108,
+            "fill": "#123754",
+            "actualInkBounds": {
+              "width": 365,
+              "height": 87.40402537277537
+            },
+            "font_size_px": 98.75541125541125
+          }
+        ],
+        "changed_pixels": 81735,
+        "changed_pixels_outside_text_regions": 0,
+        "source_unchanged": true,
+        "restoreCounts": [
+          {
+            "id": "eyebrow",
+            "estimatedHiddenBackgroundPixels": 7362
+          },
+          {
+            "id": "title",
+            "estimatedHiddenBackgroundPixels": 31404
+          },
+          {
+            "id": "status",
+            "estimatedHiddenBackgroundPixels": 19934
+          },
+          {
+            "id": "primary_label",
+            "estimatedHiddenBackgroundPixels": 20515
+          }
+        ],
+        "font_family": "Long Cang",
+        "font_face_index": 0,
+        "font_file_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+        "glyph_source": "Original font outlines; no generative glyphs, synthetic weight, stretched glyphs, or added stroke ornament.",
+        "hidden_background_note": "Pixels hidden by prior text estimated locally only within old glyph footprints; visible background outside four text regions is unchanged.",
+        "artwork_approval": "user_approved",
+        "runtime_acceptance": "not_run",
+        "font_file_modified": false
+      }
+    },
+    {
+      "version": "B1-v2",
+      "status": "user_approved",
+      "font_family": "Long Cang",
+      "evidence": {
+        "version": "B1-v2",
+        "source_version": "B1-v1",
+        "source_sha256": "bce5413e4a0c484457124e642ce815a1494f09ba1109d6096c2a0fa499b91806",
+        "output_sha256": "aa9a2a80781b5dfeef3ff5245d59143db421c23e1fa303427c954b6fa60ea7f5",
+        "width": 852,
+        "height": 1846,
+        "regions": [
+          {
+            "id": "eyebrow",
+            "x": 290,
+            "y": 207,
+            "width": 271,
+            "height": 75
+          },
+          {
+            "id": "title",
+            "x": 202,
+            "y": 278,
+            "width": 448,
+            "height": 164
+          },
+          {
+            "id": "status",
+            "x": 170,
+            "y": 477,
+            "width": 525,
+            "height": 68
+          },
+          {
+            "id": "primary_label",
+            "x": 204,
+            "y": 730,
+            "width": 450,
+            "height": 132
+          },
+          {
+            "id": "secondary_label",
+            "x": 190,
+            "y": 1030,
+            "width": 470,
+            "height": 132
+          }
+        ],
+        "lines": [
+          {
+            "id": "eyebrow",
+            "text": "面对面对局",
+            "cx": 426,
+            "cy": 248,
+            "maxWidth": 227,
+            "maxHeight": 48,
+            "fill": "#12120f",
+            "actualInkBounds": {
+              "width": 226.99999999999997,
+              "height": 38.63972616230529
+            },
+            "font_size_px": 48.35342734205256
+          },
+          {
+            "id": "title",
+            "text": "蓝牙对局",
+            "cx": 426,
+            "cy": 360,
+            "maxWidth": 405,
+            "maxHeight": 139,
+            "fill": "#10110e",
+            "actualInkBounds": {
+              "width": 405,
+              "height": 91.70954977857963
+            },
+            "font_size_px": 107.94243070362474
+          },
+          {
+            "id": "status",
+            "text": "请选择创建对局或加入对局。",
+            "cx": 426,
+            "cy": 514,
+            "maxWidth": 495,
+            "maxHeight": 44,
+            "fill": "#12120f",
+            "actualInkBounds": {
+              "width": 495.00000000000006,
+              "height": 39.51475029662388
+            },
+            "font_size_px": 40.04422392406429
+          },
+          {
+            "id": "primary_label",
+            "text": "创建对局",
+            "cx": 426,
+            "cy": 793,
+            "maxWidth": 365,
+            "maxHeight": 108,
+            "fill": "#123754",
+            "actualInkBounds": {
+              "width": 365,
+              "height": 85.62569939033746
+            },
+            "font_size_px": 95.62233108904667
+          },
+          {
+            "id": "secondary_label",
+            "text": "加入对局",
+            "cx": 426,
+            "cy": 1093,
+            "maxWidth": 365,
+            "maxHeight": 108,
+            "fill": "#8b2019",
+            "actualInkBounds": {
+              "width": 365,
+              "height": 76.70417404086473
+            },
+            "font_size_px": 95.98695629306265
+          }
+        ],
+        "changed_pixels": 96791,
+        "changed_pixels_outside_text_regions": 0,
+        "source_unchanged": true,
+        "restoreCounts": [
+          {
+            "id": "eyebrow",
+            "estimatedHiddenBackgroundPixels": 7362
+          },
+          {
+            "id": "title",
+            "estimatedHiddenBackgroundPixels": 31404
+          },
+          {
+            "id": "status",
+            "estimatedHiddenBackgroundPixels": 14741
+          },
+          {
+            "id": "primary_label",
+            "estimatedHiddenBackgroundPixels": 21904
+          },
+          {
+            "id": "secondary_label",
+            "estimatedHiddenBackgroundPixels": 18464
+          }
+        ],
+        "font_family": "Long Cang",
+        "font_face_index": 0,
+        "font_file_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+        "glyph_source": "Original font outlines; no generative glyphs, synthetic weight, stretched glyphs, or added stroke ornament.",
+        "hidden_background_note": "Pixels hidden by prior text estimated locally only within old glyph footprints; visible background outside four text regions is unchanged.",
+        "artwork_approval": "user_approved",
+        "runtime_acceptance": "not_run",
+        "font_file_modified": false
+      }
+    },
+    {
+      "version": "S1-v3",
+      "status": "superseded_by_user_requested_local_revision",
+      "file_name": "lezi-settings-S1-v3.png",
+      "sha256": "f7d84d5ee2b86b2b958343f1a1456a24936b45747ab44ae0f38ff4bf65bb8e6a",
+      "source_version": "S1-v2.1",
+      "font_family": "Long Cang",
+      "scope": "常规屏/短屏21处中大型UI文字；审阅标题更新为S1-v3；小字/背景/墨圈/线条/布局保留",
+      "changed_pixels_outside_authorized_regions": 0,
+      "runtime_acceptance": "not_run",
+      "superseded_by": "S1-v3.1",
+      "user_requested_delta": "仅四个开启状态的实心墨圈再缩小15%，不代表S1-v3图稿已通过或字体被否定"
+    },
+    {
+      "version": "S1-v3.1",
+      "status": "superseded_after_toggle_geometry_clarification",
+      "file_name": "lezi-settings-S1-v3_1.png",
+      "sha256": "ebba7e68642fb9fb7c7e59b1b8891830f61749bcbe8faaa990e62a8a22a8365c",
+      "source_version": "S1-v3",
+      "source_sha256": "f7d84d5ee2b86b2b958343f1a1456a24936b45747ab44ae0f38ff4bf65bb8e6a",
+      "requested_at": "2026-10-14T13:03:34+08:00",
+      "user_statement": "开启按钮后的墨圈体积需要缩小15%",
+      "scope": "仅常规屏/短屏音效和触感反馈对应的四个开启状态实心墨圈；等比缩至当前85%，关闭空心墨圈及文字、布局、背景其他区域保持",
+      "linear_scale": 0.85,
+      "changed_pixels": 3476,
+      "changed_pixels_outside_authorized_regions": 0,
+      "source_unchanged": true,
+      "background_restoration": "旧圈遮住的纸纹一次局部估计；底层和原样提取墨圈独立保存，后续复用",
+      "visual_inspection": "实际查看整图；实心圈缩小，笔触保留，未见明显白边或残圈",
+      "runtime_acceptance": "not_run",
+      "source_package": "lezi-settings-S1-v3_1-review-source.zip",
+      "superseded_by": "S1-v3.2",
+      "reason": "用户澄清既定填墨机制：空心与实心外圈大小相同；先前候选仅缩实心圈，未满足状态同外径。"
+    },
+    {
+      "version": "S1-v3.2",
+      "status": "pending_user_review",
+      "file_name": "lezi-settings-S1-v3_2.png",
+      "sha256": "24c9440dfe1f5129bdf3ac0d631f5c517758fb537daa8cc6b1655d5b51684506",
+      "source_version": "S1-v3.1",
+      "source_sha256": "ebba7e68642fb9fb7c7e59b1b8891830f61749bcbe8faaa990e62a8a22a8365c",
+      "requested_at": "2026-10-14T13:24:20+08:00",
+      "user_statement": "开启与关闭图案墨圈保持同样大小，因为机制是墨圈填满，所以空白墨圈跟全黑墨圈保持同样外圈大小",
+      "scope": "沿用上一轮缩小尺寸，统一开启实心与关闭空心墨圈外径；保持原笔触，文字、布局及保护区域不变",
+      "common_visible_outer_diameter_px": 28,
+      "measurement_luminance_threshold": 160,
+      "changed_pixels": 2011,
+      "changed_pixels_outside_authorized_regions": 0,
+      "source_unchanged": true,
+      "runtime_acceptance": "not_run",
+      "source_package": "lezi-settings-S1-v3_2-review-source.zip",
+      "visual_inspection": "实际查看全尺寸成图；空心与实心圈视觉同外径，未见明显残圈和白边。"
+    }
+  ],
+  "motion_requirement": {
+    "source": "用户2026-10-12的明确修改指令",
+    "enable": "中空墨圈旋转，墨水向内填满成黑点",
+    "disable": "圈内墨水逐渐消散，恢复中空墨圈",
+    "reduce_motion": "减少动画启用时保留状态信息，直接切到最终状态",
+    "actual_playback_review": "not_run",
+    "outer_size": "开启与关闭使用同一外圈大小；状态变化仅填墨/消散，外圈不随状态缩放。旋转机制继续沿用。"
+  },
+  "other_approved_baselines": "首页批准原图与V4棋盘继续沿用；本记录未修改其范围或像素。",
+  "next_authorized_item": "UI002-SETTINGS-S1-v3.2：墨圈两态同外径修订稿待审批",
+  "rules_delta": 0,
+  "formal_scoring_status": "frozen",
+  "product_code_changed_by_this_approval": false,
+  "APK_generated": false,
+  "main_merged": false,
+  "deployed": false,
+  "typography_revision_request": {
+    "source": "用户2026-10-12T19:23:08+08:00明确反馈",
+    "problem": [
+      "浓厚圆滑",
+      "中大型字电子化",
+      "缺少书法书写感"
+    ],
+    "current_item": "B2-v4",
+    "candidate_direction": "直接使用真实楷体轮廓，保留原字体提按、粗细及收笔；不合成笔画或添加飞白。",
+    "preserve": [
+      "背景",
+      "返回",
+      "按钮边框",
+      "布局",
+      "文字内容",
+      "底部小字"
+    ],
+    "production_font_source": "Long Cang原始字形，用户已批准字体选择；产品尚未接入",
+    "review_status": "B2_v4_approved_global_medium_large_font_authorized",
+    "ai_diagnosis_candidate": {
+      "status": "AI_hypothesis_not_user_confirmed",
+      "observations": [
+        "楷体字形与等距排版较规整，书写节奏不足",
+        "干净字边与粗糙墨框的笔触处理不协调",
+        "标题和按钮文字大小接近，视觉层级弱"
+      ],
+      "source": "对实际B2-v3图稿的视觉检查；不能当作用户已经明确表达的偏好",
+      "proposed_scope": "先诊断本页字体与文字排法；不自动修改已批准背景、按钮框或布局"
+    },
+    "historical_previous_current_item": "B2-v3"
+  },
+  "method_authorizations": [
+    {
+      "user_statement": "我同意",
+      "preceding_proposal": "使用有明确来源的真实字库或书法字形，只替换中大型文字来降低AI感",
+      "scope": "本页B2-v3文字来源修订；不代表B2-v2或B2-v3图稿已批准",
+      "authorization_status": "authorized"
+    }
+  ],
+  "candidate_evidence": {
+    "version": "B2-v3",
+    "source_version": "B2-v2",
+    "source_sha256": "a73dda18558510cf1022a4816df0949faf113b4a15a19490a9264cdee2ead344",
+    "output_sha256": "22a5cf2ece6d69e894fdce7a8e62e882d0069ad3c5f3cb6c5d9b47bdd861efee",
+    "width": 852,
+    "height": 1846,
+    "regions": [
+      {
+        "id": "eyebrow",
+        "x": 290,
+        "y": 207,
+        "width": 271,
+        "height": 75
+      },
+      {
+        "id": "title",
+        "x": 202,
+        "y": 278,
+        "width": 448,
+        "height": 164
+      },
+      {
+        "id": "status",
+        "x": 193,
+        "y": 477,
+        "width": 468,
+        "height": 118
+      },
+      {
+        "id": "primary_label",
+        "x": 204,
+        "y": 730,
+        "width": 450,
+        "height": 132
+      }
+    ],
+    "lines": [
+      {
+        "id": "eyebrow",
+        "text": "面对面对局",
+        "cx": 426,
+        "cy": 248,
+        "maxWidth": 227,
+        "maxHeight": 48,
+        "fill": "#12120f",
+        "actualInkBounds": {
+          "width": 227,
+          "height": 40.05353563654488
+        },
+        "font_size_px": 47.66435791217895
+      },
+      {
+        "id": "title",
+        "text": "蓝牙对局",
+        "cx": 426,
+        "cy": 360,
+        "maxWidth": 405,
+        "maxHeight": 139,
+        "fill": "#10110e",
+        "actualInkBounds": {
+          "width": 405,
+          "height": 94.83244412922875
+        },
+        "font_size_px": 107.51552766017741
+      },
+      {
+        "id": "status_1",
+        "text": "蓝牙当前处于关闭状态，",
+        "cx": 426,
+        "cy": 514,
+        "maxWidth": 447,
+        "maxHeight": 44,
+        "fill": "#12120f",
+        "actualInkBounds": {
+          "width": 447,
+          "height": 38.73668265114732
+        },
+        "font_size_px": 42.78199188614329
+      },
+      {
+        "id": "status_2",
+        "text": "请先开启蓝牙。",
+        "cx": 426,
+        "cy": 569,
+        "maxWidth": 286,
+        "maxHeight": 44,
+        "fill": "#12120f",
+        "actualInkBounds": {
+          "width": 286,
+          "height": 38.73298142002247
+        },
+        "font_size_px": 43.367984599437285
+      },
+      {
+        "id": "primary_label",
+        "text": "开启蓝牙",
+        "cx": 426,
+        "cy": 793,
+        "maxWidth": 405,
+        "maxHeight": 118,
+        "fill": "#123754",
+        "actualInkBounds": {
+          "width": 405,
+          "height": 93.9025897110329
+        },
+        "font_size_px": 106.02220726209853
+      }
+    ],
+    "changed_pixels": 80242,
+    "changed_pixels_outside_text_regions": 0,
+    "source_unchanged": true,
+    "restoreCounts": [
+      {
+        "id": "eyebrow",
+        "estimatedHiddenBackgroundPixels": 7385
+      },
+      {
+        "id": "title",
+        "estimatedHiddenBackgroundPixels": 27519
+      },
+      {
+        "id": "status",
+        "estimatedHiddenBackgroundPixels": 19892
+      },
+      {
+        "id": "primary_label",
+        "estimatedHiddenBackgroundPixels": 20465
+      }
+    ],
+    "font_family": "AR PL UKai CN",
+    "font_face_index": 0,
+    "font_file_sha256": "cfc758e69386a21bade8cb3b373fda20d7f2fac6e8904ced2ded98588b63e274",
+    "glyph_source": "Original font outlines; no generative glyphs, synthetic weight, stretched glyphs, or added stroke ornament.",
+    "hidden_background_note": "Pixels hidden by prior text estimated locally only within old glyph footprints; visible background outside four text regions is unchanged.",
+    "artwork_approval": "not_approved_user_rejected",
+    "runtime_acceptance": "not_run",
+    "font_file_modified": false
+  },
+  "session_closure": {
+    "status": "paused_by_user",
+    "closed_at": "2026-10-12T23:18:55+08:00",
+    "user_statement": "先收束本轮工作吧，明天再做",
+    "pause_scope": "停止本轮UI设计、重绘与新候选生成；只整理并保存接续记录。",
+    "next_session_date": "2026-10-13",
+    "automatic_resume_scheduled": false,
+    "current_item": "UI002-BLUETOOTH-B2",
+    "last_candidate": "B2-v3",
+    "last_candidate_status": "not_approved_user_rejected",
+    "resume_point": "继续同一项字体审美定位和局部修订；先恢复批准/未批准边界，不能重复UI-001或当作字体定稿。",
+    "user_confirmed_typography_constraints": [
+      "水墨与毛笔书写感",
+      "反对现代字体、浓厚圆滑和电子化中大型字",
+      "同意使用有明确来源的真实字体或字形的方法；并未因此批准具体字库"
+    ],
+    "ai_diagnosis_status": "hypothesis_not_user_confirmed",
+    "next_review_protocol": "每次展示一张实际待审图；简述用途、相对基线变化和待定事项，等待用户明确审批；修改版重新审批。",
+    "main_dialogue_return_status": "package_prepared_for_user_relay; no_cross_chat_send_available",
+    "historical_closure": true
+  },
+  "global_typography_authorization": {
+    "at": "2026-10-13T15:25:23+08:00",
+    "user_statements": [
+      "很好，这个字体好极了，我所有的大字体都要按这个生成",
+      "是所有的中大型字体"
+    ],
+    "scope": "全项目所有中大型文字，包括已有批准页面与后续页面",
+    "family": "Long Cang",
+    "font_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+    "method": "原始字形轮廓、等比缩放；不合成笔画、不拉伸、不人工加飞白",
+    "preserve": [
+      "背景",
+      "边框",
+      "布局",
+      "文字内容",
+      "小字"
+    ],
+    "page_revision_protocol": "一次一张实际待审图；字体选择已确认，各页面修改版仍逐图审批",
+    "historical_no_auto_propagation_rule": "被本次用户明确跨页面字体修改授权覆盖；无关区域基线保护继续有效",
+    "implementation_authorized": false
+  },
+  "current_session": {
+    "status": "active_awaiting_user_review",
+    "B2_v4": "approved",
+    "current_candidate": "S1-v3.2",
+    "candidate_approval": "pending",
+    "next": "展示S1-v3.2：开启与关闭墨圈同外径的局部修改图；等待明确审批。通过后继续首页中大型字体局部修订。",
+    "runtime": "not_run",
+    "B1_v2": "approved",
+    "automatic_resume_scheduled": false,
+    "previous_closed_at": "2026-10-13T21:36:46+08:00",
+    "previous_closeout_user_statement": "现在收束本轮工作，把这份规则加入到交接包中吧",
+    "resumed_at": "2026-10-14T13:08:47+08:00",
+    "latest_user_statement": "开启与关闭图案墨圈保持同样大小，因为机制是墨圈填满，所以空白墨圈跟全黑墨圈保持同样外圈大小"
+  },
+  "font_license_review": {
+    "date": "2026-10-13",
+    "family": "Long Cang",
+    "copyright": "Copyright 2018 The Long Cang Project Authors",
+    "license": "SIL Open Font License 1.1",
+    "source": "https://github.com/google/fonts/blob/main/ofl/longcang/OFL.txt",
+    "local_license": "LongCang-OFL.txt",
+    "commercial_game_use": "permitted_under_license",
+    "font_bundling_requirements": [
+      "保留版权声明和OFL全文",
+      "字体及其衍生版本继续按OFL分发",
+      "不得单独售卖字体",
+      "修改字库时核对保留名称条款"
+    ],
+    "artwork_output": "许可不要求使用字体生成的游戏图稿采用OFL；产品代码不因此必须开源",
+    "runtime_font_packaging": "not_implemented; license inclusion required when implemented"
+  },
+  "global_typography_rollout": {
+    "B2-v4": "approved",
+    "B1-v2": "approved",
+    "S1-v3": "superseded_by_S1-v3.1_pending",
+    "home": "not_revised",
+    "V4": "not_revised",
+    "other_UI_assets": "not_revised; enumerate and review after existing approved pages",
+    "product_implementation": "not_implemented",
+    "S1-v3.1": "superseded_by_S1-v3.2_pending",
+    "S1-v3.2": "pending"
+  },
+  "long_term_ui_editing_rule": {
+    "id": "UI-FIDELITY-001",
+    "version": "1.0.0",
+    "status": "user_authorized_written",
+    "at": "2026-10-13T19:55:54+08:00",
+    "user_statement": "这个生成规则，需要进行长久的保存，我以后ui生成都要沿用这个规则",
+    "scope": "用户以后所有UI制作中的批准资产保留、修改、字体替换和拆层；新设计首次探索允许生成",
+    "skill": "ui-fidelity-editing",
+    "portable_file": "ui-fidelity-editing-policy.md",
+    "portable_sha256": "2c15af071987509d82e39467df75b78a717555d21880f52e8576cab75d6587f3",
+    "requirements": [
+      "固定批准母版，不覆盖原版",
+      "保留全部已批准图层与参数差分，独立合成",
+      "禁止无授权整图重绘与逐轮扁平图再生成",
+      "只改指定区域，保护区像素核对及视觉检查",
+      "保持分辨率比例及色彩，无损保存",
+      "旧字遮挡底色只能局部估计，不宣称精确恢复；只做一次并留存底层",
+      "文字框内深色纹理也受保护，按需使用精确蒙版",
+      "保留来源、源层、候选、证据与逐图审批状态"
+    ],
+    "font_scope": "Long Cang选择属于乐子象棋全项目中大型文字，未扩大为所有未来项目的固定字库",
+    "current_UI_approval_unchanged": "B2-v4和B1-v2已批准；S1-v3待审",
+    "cross_chat_sent": false,
+    "handoff_rule_path": "rules/ui-fidelity-editing-policy.md",
+    "handoff_verifier_path": "scripts/verify_pixel_diff.py",
+    "rule_library_file_id": "libfile_65d63fd87ca8819182e3dd3c7ad9a9ce"
+  },
+  "session_closures": [
+    {
+      "at": "2026-10-13T21:36:46+08:00",
+      "status": "paused_by_user",
+      "user_statement": "现在收束本轮工作，把这份规则加入到交接包中吧",
+      "scope": "停止新增设计和图稿候选；整理保存累计交接与保真规则",
+      "resume_item": "UI002-SETTINGS-S1-v3",
+      "approval": "pending"
+    }
+  ],
+  "current_candidate_evidence": {
+    "schema": "lezi.toggle_same_outer_size.v1",
+    "version": "S1-v3.2",
+    "source_version": "S1-v3.1",
+    "source_sha256": "ebba7e68642fb9fb7c7e59b1b8891830f61749bcbe8faaa990e62a8a22a8365c",
+    "output_sha256": "24c9440dfe1f5129bdf3ac0d631f5c517758fb537daa8cc6b1655d5b51684506",
+    "width": 1496,
+    "height": 1051,
+    "user_statement": "开启与关闭图案墨圈保持同样大小，因为机制是墨圈填满，所以空白墨圈跟全黑墨圈保持同样外圈大小",
+    "intent": "Keep the reduced size from the preceding request; ON and OFF have a shared outer diameter, only interior ink fill changes in the intended mechanism",
+    "common_visible_outer_diameter_px": 28,
+    "measurement_luminance_threshold": 160,
+    "scale_method": "original raster, uniform geometric scaling; no stretching or redrawing",
+    "all_six_outer_diameters_equal": true,
+    "controls": [
+      {
+        "id": "regular_sound_on_ink",
+        "cx": 355,
+        "cy": 345,
+        "x": 325,
+        "y": 315,
+        "width": 61,
+        "height": 61,
+        "source_layer": "layers/regular_sound_on_ink-original.png",
+        "scaled_layer": "layers/regular_sound_on_ink-matched-outer.png",
+        "scale": 0.85,
+        "hidden_background_estimated": true,
+        "estimated_pixel_count": 937,
+        "geometric_center_shift": [
+          0,
+          0
+        ],
+        "original_ink_footprint_bounds": {
+          "x": 338,
+          "y": 326,
+          "width": 35,
+          "height": 35
+        },
+        "state": "on",
+        "old_scale": 0.85,
+        "actual_ink_bounds": {
+          "width": 27,
+          "height": 28,
+          "outer_diameter_px": 28
+        }
+      },
+      {
+        "id": "regular_haptic_on_ink",
+        "cx": 355,
+        "cy": 415,
+        "x": 325,
+        "y": 385,
+        "width": 61,
+        "height": 61,
+        "source_layer": "layers/regular_haptic_on_ink-original.png",
+        "scaled_layer": "layers/regular_haptic_on_ink-matched-outer.png",
+        "scale": 0.851,
+        "hidden_background_estimated": true,
+        "estimated_pixel_count": 942,
+        "geometric_center_shift": [
+          0,
+          0
+        ],
+        "original_ink_footprint_bounds": {
+          "x": 338,
+          "y": 396,
+          "width": 35,
+          "height": 35
+        },
+        "state": "on",
+        "old_scale": 0.85,
+        "actual_ink_bounds": {
+          "width": 27,
+          "height": 28,
+          "outer_diameter_px": 28
+        }
+      },
+      {
+        "id": "short_sound_on_ink",
+        "cx": 733,
+        "cy": 322,
+        "x": 703,
+        "y": 292,
+        "width": 61,
+        "height": 61,
+        "source_layer": "layers/short_sound_on_ink-original.png",
+        "scaled_layer": "layers/short_sound_on_ink-matched-outer.png",
+        "scale": 0.85,
+        "hidden_background_estimated": true,
+        "estimated_pixel_count": 931,
+        "geometric_center_shift": [
+          0,
+          0
+        ],
+        "original_ink_footprint_bounds": {
+          "x": 715,
+          "y": 302,
+          "width": 34,
+          "height": 36
+        },
+        "state": "on",
+        "old_scale": 0.85,
+        "actual_ink_bounds": {
+          "width": 27,
+          "height": 28,
+          "outer_diameter_px": 28
+        }
+      },
+      {
+        "id": "short_haptic_on_ink",
+        "cx": 733,
+        "cy": 391,
+        "x": 703,
+        "y": 361,
+        "width": 61,
+        "height": 61,
+        "source_layer": "layers/short_haptic_on_ink-original.png",
+        "scaled_layer": "layers/short_haptic_on_ink-matched-outer.png",
+        "scale": 0.85,
+        "hidden_background_estimated": true,
+        "estimated_pixel_count": 928,
+        "geometric_center_shift": [
+          0,
+          0
+        ],
+        "original_ink_footprint_bounds": {
+          "x": 715,
+          "y": 372,
+          "width": 34,
+          "height": 35
+        },
+        "state": "on",
+        "old_scale": 0.85,
+        "actual_ink_bounds": {
+          "width": 27,
+          "height": 28,
+          "outer_diameter_px": 28
+        }
+      },
+      {
+        "id": "regular_reduce_off_ink",
+        "cx": 355,
+        "cy": 485,
+        "x": 325,
+        "y": 455,
+        "width": 61,
+        "height": 61,
+        "state": "off",
+        "source_layer": "layers/regular_reduce_off_ink-original.png",
+        "scale": 0.819,
+        "old_scale": 1,
+        "hidden_background_estimated": true,
+        "estimated_pixel_count": 685,
+        "original_ink_footprint_bounds": {
+          "x": 336,
+          "y": 467,
+          "width": 37,
+          "height": 35
+        },
+        "actual_ink_bounds": {
+          "width": 28,
+          "height": 27,
+          "outer_diameter_px": 28
+        },
+        "scaled_layer": "layers/regular_reduce_off_ink-matched-outer.png",
+        "geometric_center_shift": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "short_reduce_off_ink",
+        "cx": 733,
+        "cy": 461,
+        "x": 703,
+        "y": 431,
+        "width": 61,
+        "height": 61,
+        "state": "off",
+        "source_layer": "layers/short_reduce_off_ink-original.png",
+        "scale": 0.82,
+        "old_scale": 1,
+        "hidden_background_estimated": true,
+        "estimated_pixel_count": 684,
+        "original_ink_footprint_bounds": {
+          "x": 712,
+          "y": 443,
+          "width": 37,
+          "height": 36
+        },
+        "actual_ink_bounds": {
+          "width": 28,
+          "height": 27,
+          "outer_diameter_px": 28
+        },
+        "scaled_layer": "layers/short_reduce_off_ink-matched-outer.png",
+        "geometric_center_shift": [
+          0,
+          0
+        ]
+      }
+    ],
+    "regions": [
+      {
+        "id": "regular_sound_on_ink",
+        "x": 336,
+        "y": 324,
+        "width": 39,
+        "height": 39
+      },
+      {
+        "id": "regular_haptic_on_ink",
+        "x": 336,
+        "y": 394,
+        "width": 39,
+        "height": 39
+      },
+      {
+        "id": "short_sound_on_ink",
+        "x": 713,
+        "y": 300,
+        "width": 38,
+        "height": 40
+      },
+      {
+        "id": "short_haptic_on_ink",
+        "x": 713,
+        "y": 370,
+        "width": 38,
+        "height": 39
+      },
+      {
+        "id": "regular_reduce_off_ink",
+        "x": 334,
+        "y": 465,
+        "width": 41,
+        "height": 39
+      },
+      {
+        "id": "short_reduce_off_ink",
+        "x": 710,
+        "y": 441,
+        "width": 41,
+        "height": 40
+      }
+    ],
+    "changed_pixels": 2011,
+    "changed_pixels_outside_authorized_mask": 0,
+    "source_unchanged": true,
+    "source_layers_reconstruct_original_exactly": true,
+    "header_unchanged": true,
+    "text_unchanged": true,
+    "background_layer": "background-layers/s1-v3-all-controls-removed-estimated.png",
+    "background_restoration": "The archived ON-state base is reused unchanged. OFF-state stroke-hidden paper is locally estimated once; paper visible in the hollow center is preserved unless the resized ring covers it.",
+    "allowed_mask": "evidence/allowed-control-footprints.png",
+    "current_candidate": "preview/lezi-settings-S1-v3_2.png",
+    "approval": "pending_user_review",
+    "runtime_acceptance": "not_run"
+  },
+  "toggle_geometry_requirement": {
+    "status": "user_confirmed_requirement",
+    "at": "2026-10-14T13:24:20+08:00",
+    "user_statement": "开启与关闭图案墨圈保持同样大小，因为机制是墨圈填满，所以空白墨圈跟全黑墨圈保持同样外圈大小",
+    "classification": "clarification_of_existing_fill_mechanism",
+    "same_outer_size_across_states": true,
+    "state_dependent_scale": false,
+    "scope": "设置页墨圈开关",
+    "candidate_geometry": {
+      "version": "S1-v3.2",
+      "visible_outer_diameter_px": 28,
+      "measurement_luminance_threshold": 160,
+      "artwork_approval": "pending_user_review"
+    },
+    "production_requirement": "同一控件两态共用外圈几何，只改变内填墨与既定旋转/消散；尚未实现或实播验收"
+  }
+}
+

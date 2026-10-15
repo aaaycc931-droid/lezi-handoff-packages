@@ -1,0 +1,479 @@
+{
+  "schema": "lezi.hc.next_hc_01.h11_b_field_delta.v0.3",
+  "source_confirmation": "CONF-HC-H11-B-20261012",
+  "source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+  "interface_version": "mode_scoped_P0_v0.3",
+  "old_source_commit": "f1c01585ade8b4e17618399901d7283f37271459",
+  "old_provenance_rows_preserved_unchanged": true,
+  "old_41_field_oracle_observed_runtime_not_backfilled": true,
+  "runtime_evidence_is_scoped_new_case_not_identical_original_N02_fixture": true,
+  "v03_rows": [
+    {
+      "field": "mode_id",
+      "old_expected_design": "half_chaos_jieqi",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "confirmed_mode_metadata",
+      "v03_scoped_runtime_observation": "half_chaos_jieqi",
+      "v03_case_or_rule_proof": "public_summary.mode_selection=half; authority player projection",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "engine_mode_id",
+      "old_expected_design": "half_chaos",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "confirmed_mode_metadata",
+      "v03_scoped_runtime_observation": "half_chaos",
+      "v03_case_or_rule_proof": "source confirmation.engine_mode_id",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "actor_id_stable",
+      "old_expected_design": true,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "pre_swap_actor_to_side",
+      "old_expected_design": {
+        "P1": "red",
+        "P2": "black"
+      },
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "H11_owner_id",
+      "old_expected_design": "P1",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "post_swap_actor_to_side",
+      "old_expected_design": {
+        "P1": "black",
+        "P2": "red"
+      },
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "opening_general_exposed",
+      "old_expected_design": {
+        "black": [
+          4,
+          0
+        ],
+        "red": [
+          4,
+          9
+        ]
+      },
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "initial_hidden_per_original_side",
+      "old_expected_design": 15,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": 15,
+      "v03_case_or_rule_proof": "HC-F03-H11-A-per-side-redeal.covered_each_original_side; not all B-original fixture fields",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "first_red_ordinary_move",
+      "old_expected_design": "covered-25:[0,6]->[0,5]",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "first_black_ordinary_move",
+      "old_expected_design": "covered-10:[0,3]->[0,4]",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "first_black_turn_all_ordinary_hooks_finished_before_A",
+      "old_expected_design": true,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "black_first_action_finishes_before_window_A",
+      "old_expected_design": true,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "no_terminal_before_window",
+      "old_expected_design": true,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_resurrect_all_initial_covered_pieces",
+      "old_expected_design": 30,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime_subcase_only",
+      "v03_scoped_runtime_observation": 32,
+      "v03_case_or_rule_proof": "HC-F05-dual-death-restoration-subcheck-and-retry.restored_count; includes generals, not replacement of authored 30 covered",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_return_to_slots",
+      "old_expected_design": "15_original_black+15_original_red",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_shuffle_boundary",
+      "old_expected_design": "within_original_side_only",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": "within_original_side_only",
+      "v03_case_or_rule_proof": "HC-F03-H11-A-per-side-redeal.side_pools_preserved; HC-F04 B sidePool assertion; scoped",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_mapping_epoch_delta",
+      "old_expected_design": 1,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": 1,
+      "v03_case_or_rule_proof": "HC-F04-H11-B-confirmed-count-and-clock: input(A).mapping_epoch=1 assertion; HC-F03 public mapping_epoch=1",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_refresh_epoch_delta",
+      "old_expected_design": 0,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "blocked_M07_not_run",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": "M07/pre-refresh secrets outside scope",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_move_attack_landing_events",
+      "old_expected_design": 0,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_skill_use_and_resources_rollback",
+      "old_expected_design": false,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_ground_effect_position_delta",
+      "old_expected_design": "none_due_to_wash",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "blocked_ground_not_run",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": "HC-F05 ground not in v0.3 scope",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_next_actor_side",
+      "old_expected_design": "red",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": "red",
+      "v03_case_or_rule_proof": "HC-F04-H11-B-confirmed-count-and-clock asserts turn=red",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "on_wash_previous_mapping_reliable",
+      "old_expected_design": false,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "observed_runtime_source_commit",
+      "old_expected_design": null,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "run_metadata_only",
+      "v03_scoped_runtime_observation": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "v03_case_or_rule_proof": "PUBLIC_ACCEPTANCE_SUMMARY.json source_commit; only this new run",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "observed_runtime_interface_version",
+      "old_expected_design": null,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "run_metadata_only",
+      "v03_scoped_runtime_observation": "mode_scoped_P0_v0.3",
+      "v03_case_or_rule_proof": "PUBLIC_ACCEPTANCE_SUMMARY.json interface_version; only this new run",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "run_in_product_feature_guard_bypassed",
+      "old_expected_design": false,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "A_window_result",
+      "old_expected_design": "declined",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": "declined",
+      "v03_case_or_rule_proof": "HC-F04-B: wash(s,true) before B; this path only",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "second_red_ordinary_move",
+      "old_expected_design": "covered-26:[2,6]->[2,5]",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_directly_verified_in_new_scoped_cases",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": null,
+      "old_history_overwritten": false
+    },
+    {
+      "field": "eligible_black_ordinal",
+      "old_expected_design": 2,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": 2,
+      "v03_case_or_rule_proof": "HC-F04-B asserts black first count=1 and black second window B pre-begin",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "B_window_position",
+      "old_expected_design": "before_black_second_ordinary_begin_settlement",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": "before_black_second_ordinary_begin_settlement",
+      "v03_case_or_rule_proof": "HC-F04-B black_2_callbacks all zero when window starts",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "B_invocation_result",
+      "old_expected_design": "wash_success",
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": "wash_success",
+      "v03_case_or_rule_proof": "HC-F04-B wash(s,false) outcome=committed",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "ordinary_begin_delta_for_black_B",
+      "old_expected_design": 0,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "confirmed_and_scoped_runtime",
+      "v03_scoped_runtime_observation": 0,
+      "v03_case_or_rule_proof": "confirmation ordinary_black_begin_main_end_on_success[0]; HC-F04-B callbackCounts",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "ordinary_main_delta_for_black_B",
+      "old_expected_design": 0,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "confirmed_and_scoped_runtime",
+      "v03_scoped_runtime_observation": 0,
+      "v03_case_or_rule_proof": "confirmation ordinary_black_begin_main_end_on_success[1]; HC-F04-B callbackCounts",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "ordinary_end_delta_for_black_B",
+      "old_expected_design": 0,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "confirmed_and_scoped_runtime",
+      "v03_scoped_runtime_observation": 0,
+      "v03_case_or_rule_proof": "confirmation ordinary_black_begin_main_end_on_success[2]; HC-F04-B callbackCounts",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "formal_counter_value_before_B",
+      "old_expected_design": null,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "confirmed_and_scoped_runtime",
+      "v03_scoped_runtime_observation": 1,
+      "v03_case_or_rule_proof": "CONF-HC-H11-B-20261012; HC-F04 B before.black=1",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "formal_counter_value_after_B",
+      "old_expected_design": null,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "confirmed_and_scoped_runtime",
+      "v03_scoped_runtime_observation": 2,
+      "v03_case_or_rule_proof": "CONF-HC-H11-B-20261012; HC-F04 B after.black=2",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "formal_counter_delta_during_B",
+      "old_expected_design": null,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "confirmed_and_scoped_runtime",
+      "v03_scoped_runtime_observation": 1,
+      "v03_case_or_rule_proof": "CONF-HC-H11-B-20261012; HC-F04 B delta=1",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "ordinary_begin_timestamp_B",
+      "old_expected_design": null,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_applicable_no_callback",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": "HC-F04-B begin count=0; no ordinary begin timestamp exists; do not substitute 0",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "ordinary_end_timestamp_B",
+      "old_expected_design": null,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "not_applicable_no_callback",
+      "v03_scoped_runtime_observation": null,
+      "v03_case_or_rule_proof": "HC-F04-B end count=0; no ordinary end timestamp exists; do not substitute 0",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "real_time_clock_delta_B",
+      "old_expected_design": null,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "clock_semantics_confirmed_runtime_input_only",
+      "v03_scoped_runtime_observation": 1700,
+      "v03_case_or_rule_proof": "confirmation: elapsed authority timestamp is input, not fixed delta; HC-F04 fixture uses +1700ms",
+      "old_history_overwritten": false
+    },
+    {
+      "field": "B_window_remaining_after_success",
+      "old_expected_design": false,
+      "old_observed_runtime": null,
+      "v03_evidence_status": "scoped_runtime",
+      "v03_scoped_runtime_observation": false,
+      "v03_case_or_rule_proof": "HC-F04 B committed then next ordinary red clock; pending B cannot remain active",
+      "old_history_overwritten": false
+    }
+  ],
+  "v03_extra_clock_cases": [
+    {
+      "field": "B_window_clock_start_ms",
+      "run_observation": 1013,
+      "rule": "B t0 on authority window entry",
+      "source": "HC-F04 B"
+    },
+    {
+      "field": "B_window_deadline_ms",
+      "run_observation": 61013,
+      "rule": "existing mode clock duration",
+      "source": "HC-F04 B"
+    },
+    {
+      "field": "B_success_red_clock_start_ms",
+      "run_observation": 2713,
+      "rule": "fresh red clock starts at accepted B receipt time",
+      "source": "HC-F04 B"
+    },
+    {
+      "field": "B_success_red_deadline_ms",
+      "run_observation": 62713,
+      "rule": "existing mode clock duration",
+      "source": "HC-F04 B"
+    },
+    {
+      "field": "B_receipt_elapsed_ms",
+      "run_observation": 1700,
+      "rule": "fixture elapsed time only, not norm constant",
+      "source": "HC-F04 B"
+    },
+    {
+      "field": "B_skip_uses_existing_deadline_ms",
+      "run_observation": 61013,
+      "rule": "skip inherits t0/deadline",
+      "source": "HC-F04 skip"
+    },
+    {
+      "field": "B_skip_elapsed_ms",
+      "run_observation": 3500,
+      "rule": "fixture elapsed time only",
+      "source": "HC-F04 skip"
+    },
+    {
+      "field": "B_skip_remaining_ms",
+      "run_observation": 56500,
+      "rule": "original deadline minus submission time",
+      "source": "HC-F04 skip"
+    },
+    {
+      "field": "B_deadline_exclusive_for_action",
+      "run_observation": true,
+      "rule": "at deadline is too late",
+      "source": "HC-F04 timeout"
+    },
+    {
+      "field": "B_timeout_wash_not_committed",
+      "run_observation": true,
+      "rule": "timeout adjudication, no wash",
+      "source": "HC-F04 timeout"
+    },
+    {
+      "field": "B_stale_rejection_no_clock_refresh",
+      "run_observation": true,
+      "rule": "rejected input never refreshes clock",
+      "source": "HC-F04 retry"
+    },
+    {
+      "field": "B_exact_retry_no_counter_or_clock_refresh",
+      "run_observation": true,
+      "rule": "exact ID replay is idempotent",
+      "source": "HC-F04 retry"
+    }
+  ],
+  "explicitly_out_of_scope": [
+    "HC-F05-ground",
+    "M07",
+    "H11xH15",
+    "pre-refresh secret read",
+    "P1",
+    "full_match",
+    "formal_scoring"
+  ]
+}

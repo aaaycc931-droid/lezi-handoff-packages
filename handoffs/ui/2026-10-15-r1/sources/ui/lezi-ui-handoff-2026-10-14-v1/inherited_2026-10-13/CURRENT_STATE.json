@@ -1,0 +1,79 @@
+{
+  "schema": "lezi.ui_round_closure.v2",
+  "package_version": "2026-10-13-v1",
+  "primary_reader": "AI",
+  "workline_id": "UI-DESIGN-001",
+  "mode_id": "cross_mode_UI_visual_only",
+  "task_id": "NEXT-UI-B2-20261013",
+  "status": "paused_by_user",
+  "closed_at": "2026-10-13T21:36:46+08:00",
+  "timezone": "Asia/Shanghai",
+  "user_statement": "现在收束本轮工作，把这份规则加入到交接包中吧",
+  "completed": [
+    "B2-v4原始字形局部修订并批准",
+    "B1-v2中大型文字修订并批准",
+    "Long Cang全项目中大型字体选择获明确确认",
+    "UI-FIDELITY-001长期保存并加入本回传",
+    "S1-v3候选生成与限定像素核对（未批准）"
+  ],
+  "current_approvals": {
+    "B2-v4": "user_approved",
+    "B1-v2": "user_approved",
+    "S1-v3": "pending_user_review",
+    "S1-v2.1": "inherited_approved_non_text_baseline",
+    "home": "inherited_approved_not_revised",
+    "V4": "inherited_approved_not_revised",
+    "B2-v2": "not_approved",
+    "B2-v3": "rejected"
+  },
+  "typography": {
+    "family": "Long Cang",
+    "scope": "乐子象棋全项目所有中大型文字；小字保留",
+    "choice_approved": true,
+    "all_UI_images_revised": false,
+    "pending": [
+      "S1-v3审批",
+      "首页",
+      "V4",
+      "其余UI素材逐项盘点和修订"
+    ],
+    "per_image_explicit_approval": true,
+    "font_path": "fonts/LongCang-Regular.ttf",
+    "license_path": "licenses/LongCang-OFL.txt",
+    "font_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc"
+  },
+  "long_term_rule": {
+    "id": "UI-FIDELITY-001",
+    "version": "1.0.0",
+    "path": "rules/ui-fidelity-editing-policy.md",
+    "skill": "ui-fidelity-editing",
+    "saved_commit": "ede677d04c03005ef41efc1865ce6b740edb1e12",
+    "scope": "未来UI批准资产保真修改；首次探索可生成"
+  },
+  "next_action": "用户恢复后先实际展示images/lezi-settings-S1-v3.png，等待明确审批；不要将此次收束视为批准，不生成新候选替代当前图",
+  "after_S1_approval": "继续首页中大型字体局部修订，再V4和其他UI；一次一图",
+  "automatic_resume_scheduled": false,
+  "runtime_acceptance": "not_run",
+  "motion_acceptance": "not_run",
+  "device_touch_font_acceptance": "not_run",
+  "bluetooth_two_device_acceptance": "not_run",
+  "production_code_changed": false,
+  "game_rules_delta": 0,
+  "scoring": {
+    "frozen": true,
+    "q": null,
+    "H": null,
+    "I": null,
+    "B": null,
+    "J": null,
+    "empirical_n": 0
+  },
+  "APK_generated": false,
+  "main_merged": false,
+  "deployed": false,
+  "NET": "paused",
+  "new_repository_check": "not_run; inherited commit states only",
+  "cross_chat_sent": false,
+  "publication": "not_uploaded_to_handoff_GitHub; package for user relay",
+  "state_scope": "仅更新本UI线到当前收束；inherited_dispatch全项目状态是10月13日00:17:59历史快照，不代表主线晚间最新状态"
+}

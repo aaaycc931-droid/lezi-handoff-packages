@@ -1,0 +1,149 @@
+{
+  "schema": "lezi.total_closeout.v3",
+  "project": "乐子象棋",
+  "revision": "LEZI-MAIN-CLOSEOUT-2026-10-13-r1",
+  "date_local": "2026-10-13",
+  "closed_at_local": "2026-10-13T22:11:53+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": "round_closed_by_user",
+  "closure_is_not_project_completion": true,
+  "no_tasks_auto_started": true,
+  "no_messages_sent_to_other_dialogues": true,
+  "authorization": "用户要求接收两线2026-10-13收束包、总体收束，并明确H10 F1共享三模式纳入规则",
+  "repository": {
+    "url": "https://github.com/aaaycc931-droid/jieqi-engine",
+    "last_verified_main_work_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "tree": "9edf808eb68efcb272fe06422835c15afcf7c484",
+    "branch": "codex/half-chaos-h11-b-clock-20261012",
+    "interface_version": "mode_scoped_P0_v0.3",
+    "draft_PR7": "https://github.com/aaaycc931-droid/jieqi-engine/pull/7",
+    "stacked_over_PR6": "https://github.com/aaaycc931-droid/jieqi-engine/pull/6",
+    "merge_state_recorded_in_round": "draft_unmerged",
+    "remote_latest_rechecked_during_closeout": false,
+    "new_closeout_published_to_GitHub": false,
+    "closeout_code_delta": 0
+  },
+  "shared_design_revision": "LEZI-SHARED-DESIGN-2026-10-13-r1",
+  "mode_sync": "MODE_SYNC.json",
+  "adjudication": {
+    "source": "rules/lezi-adjudication-reference-decision-2026-10-12.json",
+    "record_version": "1.22",
+    "rule_stage": "S1.15",
+    "GC01_through_GC04": "user_confirmed_normal_revealed",
+    "next_dark_decision": "pending",
+    "engine_implemented": false
+  },
+  "worklines": {
+    "main": {
+      "status": "closed",
+      "integrity": "document_recovery_preserved_runtime_and_full_history_open",
+      "new_shared_F1": "received_and_document_merged_three_mode_consumers",
+      "shared_H15": "already_confirmed_and_document_merged_three_mode_consumers",
+      "pending": "PENDING_ITEMS.json",
+      "new_engine_tests": 0
+    },
+    "standard": {
+      "status": "closed_return_received",
+      "current": "modes/standard/CURRENT_STATE.json",
+      "confirmed_design": "H01/H02/H11 inherited; H03—H10 current approved details; shared H15 core",
+      "remaining": "H10 edges and H12—H21/M01—M08/D01",
+      "inherited_scoped_checks": {
+        "passed": 9,
+        "total": 9,
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "rerun_this_round": false
+      },
+      "inherited_manual_cases": 12,
+      "full_mode_qualified": false
+    },
+    "half_chaos": {
+      "status": "closed_return_received",
+      "current": "modes/half_chaos/CURRENT_STATE.json",
+      "confirmed_design": "H11/M07/H10 inherited; H15 shared core and H11×H15 B/stable binding/progress",
+      "inherited_scoped_checks": {
+        "passed": 8,
+        "total": 8,
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "rerun_this_round": false
+      },
+      "inherited_manual_cases": 26,
+      "full_mode_qualified": false
+    },
+    "UI": {
+      "status": "paused_by_user",
+      "source_return": "inputs/lezi-ui-stage-return-2026-10-12.zip",
+      "approval_record": "ui/APPROVAL_REGISTER.json",
+      "completed": "UI-001源码/状态/素材盘点",
+      "static_approvals": {
+        "home_and_V4": "inherited_approved_unchanged",
+        "S1_v2_1": "user_approved",
+        "B1_v1": "user_approved",
+        "B2_v1": "layout_content_state_approved_typography_revision_required",
+        "B2_v2": "not_approved_superseded",
+        "B2_v3": "rejected"
+      },
+      "runtime_acceptance": "not_run",
+      "motion_acceptance": "not_run",
+      "APK_generated": false,
+      "production_code_changed": false,
+      "resume_item": "B2字体审美定位与局部修订",
+      "font_source_AR_PL_UKai_CN": "rejected_candidate_not_approved_production_font",
+      "AI_font_diagnosis": "hypothesis_not_user_confirmed",
+      "per_image_explicit_approval": true,
+      "approval_images_actual_bytes_preserved_in_original_zip": true,
+      "new_return_received_this_closeout": false,
+      "handoff_publication": "see UI_PUBLIC_HANDOFF_STATUS.json"
+    },
+    "NET": {
+      "status": "paused_not_resumed",
+      "source": "NET_PAUSED_STATE.json",
+      "new_probe_or_deployment": false
+    }
+  },
+  "scoring": {
+    "formal_status": "frozen",
+    "q": null,
+    "H": null,
+    "I": null,
+    "B": null,
+    "J": null,
+    "independent_empirical_n": 0,
+    "P1_qualified": false,
+    "complete_match_qualification": false,
+    "population_sampling_qualified": false,
+    "product_featuresReady": {
+      "xiangqi": false,
+      "half_chaos": false
+    }
+  },
+  "inherited_full_check": {
+    "source_commit": "f1c01585ade8b4e17618399901d7283f37271459",
+    "tests_passed": 573,
+    "web_build": "passed_on_old_commit",
+    "source": "evidence/old_f1c/FULL_CHECK_EVIDENCE.json",
+    "not_current_14b_full_rerun": true
+  },
+  "inherited_main_runtime": {
+    "related_regression_passed": 111,
+    "scoped_checks_within_regression": 22,
+    "source": "evidence/MAIN_REVIEW_V03_INHERITED.json",
+    "full_check_on_14b": false
+  },
+  "verification_this_closeout": {
+    "scope": "document_semantics_for_affected_deltas_source_access_and_package_bytes",
+    "new_engine_reexecution": false,
+    "independent_V3": false,
+    "external_dialogue_adoption_verified": false,
+    "report": "VERIFICATION_RESULTS.json"
+  },
+  "pending": "PENDING_ITEMS.json",
+  "next_actions": "NEXT_ACTIONS.json",
+  "no_new_APK_merge_deploy_or_release": true,
+  "collaboration": {
+    "current_working_copy": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
+    "working_revision": "2026-10-13.v0.6",
+    "formal_baseline": "1.8.0",
+    "document_optimization_transferred_to_separate_dialogue": true,
+    "not_resumed_here": true
+  }
+}

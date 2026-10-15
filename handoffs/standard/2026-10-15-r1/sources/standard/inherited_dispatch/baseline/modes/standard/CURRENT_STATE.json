@@ -1,0 +1,88 @@
+{
+  "schema": "lezi.standard_design_closeout.v1",
+  "project": "乐子象棋",
+  "branch_task": "NEXT-STD-DESIGN-02",
+  "mode": "standard_xiangqi",
+  "engine_mode_id": "xiangqi",
+  "date_local": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "collaboration": "X_Collaboration_System v1.8.0 / L2_DESIGN",
+  "stage": "closed_received_and_normalized_by_main",
+  "return_condition": "user_requested_closeout",
+  "source_priority": [
+    "../../SOURCE_PRIORITY.md",
+    "CURRENT_RULES.md",
+    "CONFIRMED_DECISIONS.json",
+    "INHERITED_CONFIRMED_H01_H02_H11.md",
+    "ADAPTATION_MATRIX.json",
+    "original_received_zip_for_trace_only"
+  ],
+  "inherited_untouched": [
+    "H01,H02,H11 standard initial design",
+    "12 manual cases",
+    "9/9 scoped runtime checks on 14b baseline (inherited, not rerun)"
+  ],
+  "decisions_confirmed": {
+    "H03": "ordinary defense B first legal ordinary cross-river; remove general armor and armor-only forced extra reply; no compensation; std only",
+    "H04": "original rainy night kept",
+    "H05": "A only immediately previous enemy level-I ordinary move/attack; K-A general eligible; R-A legal return at return stage; F-A no charge for precheck fail, charge after legal activation stops; std only",
+    "H06": "S-A previous own formal turn must have unique original piece and legal non-attack non-check replay; adjudication independent counters inherited",
+    "H07": "original time 75/45 or mutual cancellation 60/60 kept",
+    "H08": "original Wuyou kept",
+    "H09": "original destruction including extra revealed-own-piece batch on activation while in check kept",
+    "H10_std": "first opening Discover 3 candidate entities preselect, second random valid living candidate excluding old host/public shadow warrior, overlap stable single king, second no Flow Dance",
+    "H10_F1_cross_mode": "first Shadow cast only on first own formal turn before normal main action, optional; if window missed cannot first cast later. User approved for all three modes."
+  },
+  "delivery_status": {
+    "received_by_main": true,
+    "shared_F1_written_to_main_bundle": true,
+    "H15_shared_core_included": true,
+    "other_external_dialogues_received": false,
+    "github_changed_this_closeout": false
+  },
+  "unresolved": [
+    {
+      "id": "H10-F1-PRESELECT-LOST",
+      "priority": "next",
+      "issue": "preselected host dies/becomes invalid before first own formal turn, re-discover or fail?"
+    },
+    {
+      "id": "H10-F1-HISTORY",
+      "priority": "mainline",
+      "issue": "H11/H06 must not re-open first cast opportunity; need shared invariant"
+    },
+    {
+      "id": "H10-SECOND-EMPTY",
+      "priority": "std design",
+      "issue": "second random valid pool empty behavior"
+    },
+    {
+      "id": "H10-MARKER",
+      "priority": "std design",
+      "issue": "same-kind locator visibility and lifespan; no secret leaks"
+    },
+    {
+      "id": "H06-ADJUDICATION",
+      "priority": "mainline",
+      "issue": "repetition/pressure history and pairing after rewind"
+    },
+    {
+      "id": "M07-STANDARD",
+      "priority": "std design",
+      "issue": "all revealed opening makes original chaos mutation potentially empty"
+    }
+  ],
+  "other_pending": "H12-H21/M01-M08/D01 standard detailed adaptation; H15 shared core confirmed and merged to this main bundle, standard-specific remaining edges not complete",
+  "new_code_files": 0,
+  "new_tests_executed": 0,
+  "new_formal_scores": 0,
+  "inherited_scoped_tests": "9/9 (14b; not independently repeated this round; not full acceptance)",
+  "scoring": "frozen; q/H/I/B/J null; n=0; featuresReady=false",
+  "next_action": "When user resumes: preserve confirmed rules; address H10 early host failure and other remaining edges; continue H12–H21/M01–M08/D01; no duplicate 9/9 runs or scoring unfreeze",
+  "revision": "LEZI-MAIN-CLOSEOUT-2026-10-13-r1",
+  "adjudication": {
+    "GC01_through_GC04": "user_confirmed_normal_revealed_only",
+    "engine_implemented": false,
+    "source": "../../rules/lezi-adjudication-reference-decision-2026-10-12.json"
+  }
+}

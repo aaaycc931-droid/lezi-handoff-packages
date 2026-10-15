@@ -1,0 +1,124 @@
+{
+  "event_id": "LEZI-HANDOFF-INTEGRITY-20261013-01",
+  "status": "document_recovery_verified_runtime_and_full_history_remain_open",
+  "collaboration_version": "1.8.0",
+  "gate_level": "L3_LIMITATION",
+  "risk": "high_for_long_term_rule_source; actions_reversible",
+  "trigger": "user_supplied_HC_integrity_escalation",
+  "primary_reader": "AI",
+  "failure_categories": [
+    "persistence_failure",
+    "baseline_failure",
+    "source_failure",
+    "execution_failure"
+  ],
+  "first_verified_loss": "2026-10-06-r4-clean H15 compacted section; earlier exact intermediate missing, not proof of internal cause",
+  "source_saved": true,
+  "original09_saved_and_embedded_on_Oct5": true,
+  "original09_equals_standalone_sha256": "dd0405e911bf822b6f99af06ad967a338c63ebfe17068934378ff258b4c2676e",
+  "original09_in_Oct13_dispatch_top_or_nested": false,
+  "pinned_repo_register_no_original09_entry": true,
+  "source_claim": "current compacted 02 treated as sufficient H15 baseline without mechanism coverage check",
+  "derived_conclusions": "HC repeated approval of existing M07 interactions; original-rule facts at risk of recategorization",
+  "persistent_artifacts": [
+    {
+      "item": "Oct6 r4-clean / Oct7 r7-clean / 14b current02",
+      "status": "suspect_partial_H15_and_H20_semantic_coverage"
+    },
+    {
+      "item": "Oct13 standard and half_chaos dispatch",
+      "status": "suspect_inherited_source_gap"
+    },
+    {
+      "item": "UI published source snapshot",
+      "status": "suspect_reference_only; UI approvals not rolled_back"
+    },
+    {
+      "item": "HC draft v5",
+      "status": "historical_M07_pending_already_corrected; training_info_privacy_conflict_still_open"
+    }
+  ],
+  "external_actions": {
+    "UI_publication_preexisting": true,
+    "published_repo": "aaaycc931-droid/lezi-handoff-packages",
+    "commit": "2183e9d6be066499ee895eff5975722c3041f209",
+    "audit_published_to_GitHub": false,
+    "messages_sent_to_other_dialogues": false
+  },
+  "repair_actions": [
+    "embedded_original09_and_history",
+    "separate_shared_H15_delta_from_HC_H11_specifics",
+    "current02_H15_document_repair",
+    "30_mechanism_plus5form_source_index",
+    "mandatory_source_access_and_semantic_claim_validation",
+    "mark_other_history_conflicts_suspect_not_new_rules"
+  ],
+  "repository_or_runtime_modified": false,
+  "runtime_tests_run": false,
+  "formal_scoring": "frozen",
+  "empirical_n": 0,
+  "engine_static_findings": [
+    {
+      "id": "STATIC-H15-OWNER-EXPOSURE",
+      "source": "REPO:src/hero-actions.ts",
+      "lines": [
+        297,
+        298
+      ],
+      "downstream_source": "REPO:src/remote-room.ts",
+      "downstream_line": 1487,
+      "finding": "training pieceId cloned into owner view conflicts with original neither-player-knows rule",
+      "status": "static_source_mismatch_runtime_not_reproduced"
+    },
+    {
+      "id": "STATIC-H20-EMPTY-CAST",
+      "source": "REPO:src/hero-actions.ts",
+      "lines": [
+        161,
+        173
+      ],
+      "finding": "no visible minimum_resource_or_hit_check; consumes_use_with_empty_targets; compare historical eligibility",
+      "status": "static_source_mismatch_runtime_not_reproduced"
+    },
+    {
+      "id": "STATIC-H15-POOL-IDENTITY",
+      "sources": [
+        "REPO:src/hero-progress.ts",
+        "REPO:src/settlement.ts"
+      ],
+      "finding": "selectTraining uses effectiveIdentity, M07 overwrites same secret identity color; original faction identity retention and reselect paths need review",
+      "status": "static_causal_path_risk_not_run"
+    },
+    {
+      "id": "STATIC-H15-H11-REBIND",
+      "source": "REPO:src/hero-shuffle.ts",
+      "finding": "secret mapping rebuilt with old training object retained; original same-breed_rebind and new_HC_stable_binding must be separately reconciled",
+      "status": "static_risk_not_engine_acceptance"
+    }
+  ],
+  "authority": {
+    "historical": "H15:ORIGINAL-20261005",
+    "current_shared_H15_delta": "H15:DELTA-20261013 plus current user explicit all-mode instruction",
+    "mode_specific": "HC:DRAFT-20261013; MODE:HALF_CHAOS_HANDOFF.md",
+    "recovered_shared_source": "current/02_CURRENT_HEROES.md plus current/SHARED_RULE_UPDATE_H15_2026-10-13.md"
+  },
+  "unresolved": [
+    "H15 progress_visibility conflicting source: original public_allowed vs branch_private; no approval for privacy_change located",
+    "H15 first_tick/start_action_cost/no_candidate_consumes_use",
+    "H15 original_jieqi_H11 rebind vs HC stable_binding; other_modes_specifics",
+    "H15 takeoff and old cross-interaction supersession",
+    "H20 old nonempty_cast_rule no explicit_repeal found",
+    "all historical conversations not available",
+    "repository runtime repair not performed or authorized_by_design_audit"
+  ],
+  "recovery_conditions": [
+    "HC can recover confirmed_M07_basic_rules from embedded original without asking_user_again",
+    "all three modes must consume same H15_core_delta; no_claim_auto_delivered",
+    "H15&H20 suspect code paths stay_unaccepted_until_source_reconciliation_and_actual_test",
+    "unrelated valid_results preserved"
+  ],
+  "protocol_upgrade": "no_change_to_X_Collaboration_System; project_source_packaging_fix_only",
+  "overgeneralization_warning": "No assertion that every hero lost rules or every compact summary is invalid. Thirty primary entries inspected for source access; only demonstrated semantic gaps are called gaps.",
+  "verification_level": "V2 actual_source_checks + V1 causal_inferences; no_new_runtime_or_independent_agent_verification",
+  "residual_risk": "source presence and assertions cannot prove future model execution or restore unarchived chats; report separates observed artifacts from inferred process causes"
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "lezi.hc_design_stage_closeout.v1",
+  "closed_at_local": "2026-10-13",
+  "workline": "half_chaos_jieqi",
+  "engine_mode": "half_chaos",
+  "previous_task_id": "NEXT-HC-DESIGN-02",
+  "next_task_id": "NEXT-HC-DESIGN-03",
+  "phase": "closed_received_and_normalized_by_main",
+  "collaboration_system_version": "1.8.0",
+  "engine_reference_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+  "inherited": {
+    "manual_cases": 26,
+    "scoped_run_count": "8/8",
+    "scoped_run_status": "inherited_not_rerun_this_stage",
+    "H11_B_count_clock": "confirmed_and_inherited",
+    "H11_M07": "confirmed",
+    "H11_H10": "confirmed"
+  },
+  "confirmed_this_stage": [
+    {
+      "id": "H15_ALL_MODES_CORE",
+      "applies_to": [
+        "jieqi",
+        "half_chaos",
+        "xiangqi"
+      ],
+      "summary": "start_training_at_game_start_or_after_any_own_formal_turn_begin_settlement; max_one_activation_per_game; trainee_dies_before_graduation_consumes_only_chance; no_recruit; already_graduated_flight_death_no_retrain"
+    },
+    {
+      "id": "HC_H11_H15_COMPLETED",
+      "applies_to": [
+        "half_chaos"
+      ],
+      "summary": "B:shuffle_removes_flight_of_graduated_survivor_returns_to_ground_hidden_initial_piece; no_training_reset; A1_rejected"
+    },
+    {
+      "id": "HC_H11_H15_INCOMPLETE",
+      "applies_to": [
+        "half_chaos"
+      ],
+      "summary": "shuffle_preserves_stable_trainee_identity_and_accumulated_progress_when_training_incomplete; no_extra_tick; no_recruit"
+    }
+  ],
+  "inherited_historical_confirmation": [
+    "H15_M07_recruit_uses_original_true_side",
+    "H15_M07_control_changes_do_not_break_training",
+    "H15_M07_enemy_control_graduation_allowed",
+    "H11_M07_unlocks_secret_side_no_refresh_during_shuffle"
+  ],
+  "pending_source_checks": [
+    "H15_first_training_tick_if_activated_after_turn_start_settlement",
+    "H15_action_cost_and_no_eligible_candidate_if_not_explicit_in_authoritative_rule",
+    "H15_progress_visibility_original_public_allowed_vs_unapproved_private_wording",
+    "H20_historical_cast_prerequisites_coverage"
+  ],
+  "pending_technical_validation": [
+    "HC_H11_H15_M07_timing_and_information_barriers",
+    "HC_F04_remaining_fields",
+    "HC_F05_ground",
+    "H03_mode_specific_interaction",
+    "H01_to_H21_and_M01_to_M08_full_adaptation",
+    "P1_and_full_match"
+  ],
+  "runtime_this_stage": {
+    "new_tests_run": 0,
+    "new_tests_passed": null,
+    "new_code_changes": 0,
+    "engine_implemented": false,
+    "full_mode_qualified": false
+  },
+  "scoring": {
+    "frozen": true,
+    "q": null,
+    "H": null,
+    "I": null,
+    "B": null,
+    "J": null,
+    "empirical_n": 0,
+    "featuresReady": false
+  },
+  "limits": {
+    "github_updated_by_this_branch": false,
+    "merge_deploy_authorized": false,
+    "GC01_GC04": "confirmed_normal_revealed_baseline_special_adaptation_pending_engine_unimplemented"
+  },
+  "next_action": "When user resumes: read current shared F1/H15 and integrity source first; prepare H11×H15×M07 timeline/secrecy/legal fixtures; preserve approved binding/progress and no-retrain; do not re-ask known confirmations",
+  "revision": "LEZI-MAIN-CLOSEOUT-2026-10-13-r1",
+  "shared_rule_consumption": {
+    "H10_F1": "CONF-THREE-MODE-H10-F1-20261013",
+    "H15": "H15:DELTA-20261013",
+    "source": "../../rules/shared/02_CURRENT_HEROES.md",
+    "source_written_to_main_bundle": true,
+    "external_dialogue_adoption_verified": false
+  }
+}

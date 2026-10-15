@@ -1,0 +1,153 @@
+{
+  "schema": "lezi.bluetooth_no_paired_devices_static_candidate.v1",
+  "item_id": "UI002-BLUETOOTH-B5",
+  "version": "B5-v1",
+  "source_version": "B4-v1",
+  "source_sha256": "7c11e53aaa7c76b04e77ca60b59780ca4b61dfc251e541fea9df21a3ce38f72c",
+  "output_sha256": "f01b1307f68d20e9c8d5f99c8fb913f9dbef01ec913dd42810000dea73c1a712",
+  "width": 852,
+  "height": 1846,
+  "regions": [
+    {
+      "id": "empty_device_state",
+      "x": 193,
+      "y": 477,
+      "width": 472,
+      "height": 178
+    },
+    {
+      "id": "connect_disabled_label",
+      "x": 204,
+      "y": 730,
+      "width": 450,
+      "height": 132
+    }
+  ],
+  "lines": [
+    {
+      "id": "empty_devices",
+      "text": "没有已配对设备",
+      "cx": 426,
+      "cy": 511,
+      "maxWidth": 430,
+      "maxHeight": 44,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 396.6069271043093,
+        "height": 44
+      },
+      "font_size_px": 57.59162303664921
+    },
+    {
+      "id": "pairing_instruction_1",
+      "text": "请先在系统蓝牙设置中",
+      "cx": 426,
+      "cy": 573,
+      "maxWidth": 438,
+      "maxHeight": 34,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 373.30201569264074,
+        "height": 34
+      },
+      "font_size_px": 37.94642857142857
+    },
+    {
+      "id": "pairing_instruction_2",
+      "text": "完成配对，再重新检测。",
+      "cx": 426,
+      "cy": 635,
+      "maxWidth": 438,
+      "maxHeight": 30,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 333.0086909871245,
+        "height": 30.000000000000004
+      },
+      "font_size_px": 32.34978540772533
+    }
+  ],
+  "disabled_connect": {
+    "text": "连接设备",
+    "source": "Unchanged original B4 connect SVG paths and transform; only fill #123754 -> #77776f",
+    "font_geometry_unchanged": true,
+    "enabled": false
+  },
+  "font_family": "Long Cang",
+  "font_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+  "font_modified": false,
+  "baseline_recomposition_pixel_differences": 0,
+  "source_unchanged": true,
+  "new_background_estimation": false,
+  "whole_page_regenerated": false,
+  "background_note": "Uses archived B4 base only under removed glyph/selection-path alpha. Historical B2 hidden-text estimates retained; no new restoration or smoothing.",
+  "fixture": {
+    "paired_device_count": 0,
+    "no_real_devices_scanned": true
+  },
+  "removed": [
+    "example device name",
+    "dummy address",
+    "dropdown chevron",
+    "device selector underline"
+  ],
+  "preserved": [
+    "header/title/back arrow",
+    "blue primary ink frame",
+    "paper/landscape/footer",
+    "refresh/settings/return exact B4 text and underlines"
+  ],
+  "actions": {
+    "connect": "Disabled because no paired device can be selected",
+    "refresh": "Read paired list again after pairing",
+    "system_settings": "Open system Bluetooth settings to pair first",
+    "return": "Back to B1 initial lobby"
+  },
+  "unshown_states": [
+    "pairing/refresh updates",
+    "permission/error conditions",
+    "connecting/failed/success"
+  ],
+  "artwork_approval": "pending",
+  "runtime_acceptance": "not_run",
+  "bluetooth_device_acceptance": "not_run",
+  "product_code_changed": false,
+  "game_rules_delta": 0,
+  "pixel_verification": {
+    "source_sha256": "7c11e53aaa7c76b04e77ca60b59780ca4b61dfc251e541fea9df21a3ce38f72c",
+    "candidate_sha256": "f01b1307f68d20e9c8d5f99c8fb913f9dbef01ec913dd42810000dea73c1a712",
+    "width": 852,
+    "height": 1846,
+    "regions": [
+      {
+        "id": "empty_device_state",
+        "x": 193,
+        "y": 477,
+        "width": 472,
+        "height": 178
+      },
+      {
+        "id": "connect_disabled_label",
+        "x": 204,
+        "y": 730,
+        "width": 450,
+        "height": 132
+      }
+    ],
+    "changed_pixels": 26797,
+    "changed_pixels_outside_authorized_regions": 0,
+    "first_outside_pixel": null,
+    "source_file_unchanged_during_check": true,
+    "candidate_file_unchanged_during_check": true,
+    "recorded_source_digest_checked": true,
+    "mask_used": true,
+    "comparison_precision": "decoded 8-bit RGBA; not original encoded bytes",
+    "color_profile_unchanged": true,
+    "pixel_preservation": "passed",
+    "visual_quality": "not_assessed_by_this_script",
+    "verification_passed": true
+  },
+  "actual_visual_inspected": true,
+  "visual_inspection": "Full candidate and empty-state/disabled-label details reviewed; no obvious prior device text, selector residue or newly reconstructed patches. Protected pixels verified unchanged; user aesthetic approval pending.",
+  "created_at": "2026-10-14T22:13:20+08:00"
+}

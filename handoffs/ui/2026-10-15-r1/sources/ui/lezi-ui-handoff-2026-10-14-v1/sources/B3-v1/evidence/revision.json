@@ -1,0 +1,134 @@
+{
+  "schema": "lezi.bluetooth_waiting_static_candidate.v1",
+  "version": "B3-v1",
+  "item_id": "UI002-BLUETOOTH-B3",
+  "depicted_state": "Host listening before first connection; waiting for a paired guest to join",
+  "source_version": "B2-v4",
+  "source_sha256": "0e15403ce826c21d1c3a5f3e73329a06fc9138ad20e2a5be1c0effd5f662fd08",
+  "output_sha256": "55e002f57295135d29ead04db62f4fb3fec475035a3a54e24c186c4f20efa2c5",
+  "width": 852,
+  "height": 1846,
+  "regions": [
+    {
+      "id": "waiting_and_device",
+      "x": 193,
+      "y": 477,
+      "width": 468,
+      "height": 118
+    },
+    {
+      "id": "cancel_waiting",
+      "x": 204,
+      "y": 730,
+      "width": 450,
+      "height": 132
+    }
+  ],
+  "lines": [
+    {
+      "id": "waiting_status",
+      "text": "等待对方加入",
+      "cx": 426,
+      "cy": 514,
+      "maxWidth": 385,
+      "maxHeight": 46,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 329.37343500939784,
+        "height": 46
+      },
+      "font_size_px": 56.240135746941625
+    },
+    {
+      "id": "device_name",
+      "text": "本机设备：我的手机",
+      "cx": 426,
+      "cy": 569,
+      "maxWidth": 400,
+      "maxHeight": 38,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 366.56175972927247,
+        "height": 38
+      },
+      "font_size_px": 40.91678203353331
+    },
+    {
+      "id": "cancel_waiting",
+      "text": "取消等待",
+      "cx": 426,
+      "cy": 793,
+      "maxWidth": 365,
+      "maxHeight": 108,
+      "fill": "#123754",
+      "actual_ink_bounds": {
+        "width": 365,
+        "height": 82.15791880493877
+      },
+      "font_size_px": 92.7290279965449
+    }
+  ],
+  "font_family": "Long Cang",
+  "font_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+  "font_modified": false,
+  "source_unchanged": true,
+  "baseline_recomposition_pixel_differences": 0,
+  "new_background_estimation": false,
+  "background_provenance": "Reuses archived approved B2-v4 base solely under old text alpha; original hidden pixels were historically estimated. No repeated erase/inpaint/smoothing or whole-page regeneration.",
+  "protected_parts": [
+    "paper and landscape",
+    "back arrow",
+    "eyebrow and title",
+    "original blue ink frame",
+    "original footer pairing/autonavigation explanation"
+  ],
+  "device_name": "我的手机 is example fixture, not actual device name",
+  "interaction_spec": {
+    "cancel": "Cancel host waiting and return to B1 initial lobby",
+    "back": "Leave this waiting state and return through existing lobby flow; no forfeiture before first connection",
+    "connection_success": "Brief success then automatic hero selection; no ready button",
+    "countdown": "No hero timer before initial connection"
+  },
+  "artwork_approval": "pending",
+  "runtime_acceptance": "not_run",
+  "bluetooth_device_acceptance": "not_run",
+  "product_code_changed": false,
+  "whole_page_regenerated": false,
+  "pixel_verification": {
+    "source_sha256": "0e15403ce826c21d1c3a5f3e73329a06fc9138ad20e2a5be1c0effd5f662fd08",
+    "candidate_sha256": "55e002f57295135d29ead04db62f4fb3fec475035a3a54e24c186c4f20efa2c5",
+    "width": 852,
+    "height": 1846,
+    "regions": [
+      {
+        "id": "waiting_and_device",
+        "x": 193,
+        "y": 477,
+        "width": 468,
+        "height": 118
+      },
+      {
+        "id": "cancel_waiting",
+        "x": 204,
+        "y": 730,
+        "width": 450,
+        "height": 132
+      }
+    ],
+    "changed_pixels": 21805,
+    "changed_pixels_outside_authorized_regions": 0,
+    "first_outside_pixel": null,
+    "source_file_unchanged_during_check": true,
+    "candidate_file_unchanged_during_check": true,
+    "recorded_source_digest_checked": true,
+    "mask_used": true,
+    "comparison_precision": "decoded 8-bit RGBA; not original encoded bytes",
+    "color_profile_unchanged": true,
+    "pixel_preservation": "passed",
+    "visual_quality": "not_assessed_by_this_script",
+    "verification_passed": true
+  },
+  "actual_visual_inspected": true,
+  "visual_inspection": "Full image plus fixed local base/new-text detail reviewed. No obvious old glyph residue or newly reconstructed patches. Protected background and frames are pixel identical. Aesthetic approval remains pending.",
+  "created_at": "2026-10-14T21:13:58+08:00"
+}

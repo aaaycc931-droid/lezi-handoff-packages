@@ -1,0 +1,480 @@
+{
+  "schema": "lezi.scoring.half_chaos.synthetic_cases.v0.1",
+  "task_id": "MODE-SCORE-MODEL-001",
+  "mode_id": "half_chaos_jieqi",
+  "status": "synthetic_invariants_only",
+  "not_engine_or_real_game_tests": true,
+  "cases": [
+    {
+      "id": "HC-T01",
+      "title": "零效应",
+      "class": "counterfactual",
+      "inputs": {
+        "with_U": 7,
+        "without_U": 7
+      },
+      "expected": {
+        "delta_U": 0
+      },
+      "status": "artificial_validation_only",
+      "note": "same legal optimal result implies zero"
+    },
+    {
+      "id": "HC-T02",
+      "title": "占步净效用和唯一扣减",
+      "class": "action",
+      "inputs": {
+        "best_ordinary_U": 7,
+        "skill_action_U": 9,
+        "gross_skill_benefit_u": 5,
+        "sacrificed_other_u": 3
+      },
+      "expected": {
+        "net_u": 2,
+        "decomposition_u": 2
+      },
+      "status": "artificial_validation_only",
+      "note": "do not subtract opportunity cost again from full counterfactual"
+    },
+    {
+      "id": "HC-T03",
+      "title": "非负单次收益概率单调",
+      "class": "probability",
+      "inputs": {
+        "conditional_gain_u": 4,
+        "rates": [
+          0.2,
+          0.5,
+          0.8
+        ]
+      },
+      "expected": {
+        "expected_u": [
+          0.8,
+          2.0,
+          3.2
+        ]
+      },
+      "status": "artificial_validation_only",
+      "note": "not hero rates; test monotonicity only"
+    },
+    {
+      "id": "HC-T04",
+      "title": "不改变行动选择的信息",
+      "class": "information",
+      "inputs": {
+        "state_probability": [
+          0.5,
+          0.5
+        ],
+        "action_matrix": [
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "cost_u": 0
+      },
+      "expected": {
+        "net_u": 0
+      },
+      "status": "artificial_validation_only",
+      "note": "information can reveal bits with no actionable value"
+    },
+    {
+      "id": "HC-T05",
+      "title": "能改变行动选择的信息",
+      "class": "information",
+      "inputs": {
+        "state_probability": [
+          0.5,
+          0.5
+        ],
+        "action_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        "cost_u": 0
+      },
+      "expected": {
+        "net_u": 4
+      },
+      "status": "artificial_validation_only",
+      "note": "toy demonstration of expected value of perfect signal"
+    },
+    {
+      "id": "HC-T06",
+      "title": "本侧候选池初始概率",
+      "class": "pool",
+      "inputs": {
+        "known_red": []
+      },
+      "expected": {
+        "rook": 0.13333333333333333,
+        "pawn": 0.3333333333333333,
+        "total": 1
+      },
+      "status": "artificial_validation_only",
+      "note": "per-side identity counts 2 2 2 2 2 5"
+    },
+    {
+      "id": "HC-T07",
+      "title": "已确认一枚车后的后验",
+      "class": "pool",
+      "inputs": {
+        "known_red": [
+          "rook"
+        ]
+      },
+      "expected": {
+        "rook": 0.07142857142857142,
+        "pawn": 0.35714285714285715,
+        "total": 1
+      },
+      "status": "artificial_validation_only",
+      "note": "only current mapping known slots subtract"
+    },
+    {
+      "id": "HC-T08",
+      "title": "再确认一兵（含死亡揭示）",
+      "class": "pool",
+      "inputs": {
+        "known_red": [
+          "rook",
+          "pawn"
+        ]
+      },
+      "expected": {
+        "rook": 0.07692307692307693,
+        "pawn": 0.3076923076923077,
+        "total": 1
+      },
+      "status": "artificial_validation_only",
+      "note": "death reveal also reduces unseen identity pool"
+    },
+    {
+      "id": "HC-T09",
+      "title": "红侧揭示不改变黑侧真实池",
+      "class": "pool",
+      "inputs": {
+        "known_red": [
+          "rook"
+        ],
+        "known_black": []
+      },
+      "expected": {
+        "black_rook": 0.13333333333333333,
+        "black_pawn": 0.3333333333333333
+      },
+      "status": "artificial_validation_only",
+      "note": "red and black original side remain separate"
+    },
+    {
+      "id": "HC-T10",
+      "title": "洗牌重建槽位候选池",
+      "class": "wash",
+      "inputs": {
+        "prewash_known_red": [
+          "rook",
+          "pawn"
+        ],
+        "new_persistent_constraints": []
+      },
+      "expected": {
+        "postwash_rook": 0.13333333333333333,
+        "postwash_pawn": 0.3333333333333333
+      },
+      "status": "artificial_validation_only",
+      "note": "prior current-slot intelligence invalid; not a guarantee if persistent crosswash information exists"
+    },
+    {
+      "id": "HC-T11",
+      "title": "M07逐棋独立刷新",
+      "class": "M07",
+      "inputs": {
+        "pieces": 2,
+        "per_color_probability": 0.5
+      },
+      "expected": {
+        "RR": 0.25,
+        "RB": 0.25,
+        "BR": 0.25,
+        "BB": 0.25,
+        "total": 1
+      },
+      "status": "artificial_validation_only",
+      "note": "not forced flipping; 2 random secret affiliations independent"
+    },
+    {
+      "id": "HC-T12",
+      "title": "M07非必翻",
+      "class": "M07",
+      "inputs": {
+        "previous_secret_side": "red",
+        "next_refresh_red": 0.5,
+        "next_refresh_black": 0.5
+      },
+      "expected": {
+        "p_same": 0.5,
+        "p_flip": 0.5
+      },
+      "status": "artificial_validation_only",
+      "note": "independent draw"
+    },
+    {
+      "id": "HC-T13",
+      "title": "无M07固定基础阵营",
+      "class": "M07",
+      "inputs": {
+        "original_side": "red",
+        "M07_selected": false
+      },
+      "expected": {
+        "base_secret_randomization_applies": false,
+        "normal_reveal_side": "red"
+      },
+      "status": "artificial_validation_only",
+      "note": "does not import original global Jieqi defection"
+    },
+    {
+      "id": "HC-T14",
+      "title": "M07正常揭示锁定",
+      "class": "M07",
+      "inputs": {
+        "pre_reveal_side": "black",
+        "normal_reveal": true,
+        "subsequent_normal_turns": 3,
+        "H11_wash": false
+      },
+      "expected": {
+        "public_locked_side": "black",
+        "remaining_refreshes_on_piece": 0
+      },
+      "status": "artificial_validation_only",
+      "note": "normal reveal lock continues absent H11 wash"
+    },
+    {
+      "id": "HC-T15",
+      "title": "洗牌本身不刷新M07",
+      "class": "wash",
+      "inputs": {
+        "H11_wash": true,
+        "M07": true,
+        "next_normal_start": false
+      },
+      "expected": {
+        "secret_state": "pending_next_normal_turn_refresh",
+        "refresh_events": 0
+      },
+      "status": "artificial_validation_only",
+      "note": "do not synthesize a randomization inside wash atom"
+    },
+    {
+      "id": "HC-T16",
+      "title": "洗牌后下一正常开始刷新",
+      "class": "wash",
+      "inputs": {
+        "H11_wash": true,
+        "M07": true,
+        "next_normal_start": true
+      },
+      "expected": {
+        "red": 0.5,
+        "black": 0.5,
+        "refresh_events": 1
+      },
+      "status": "artificial_validation_only",
+      "note": "new random affiliation independent on start"
+    },
+    {
+      "id": "HC-T17",
+      "title": "局长截断情景",
+      "class": "horizon",
+      "inputs": {
+        "unlock_own_formal_turn": 16,
+        "rounds": [
+          25,
+          30,
+          35
+        ]
+      },
+      "expected": {
+        "opportunities": [
+          10,
+          15,
+          20
+        ]
+      },
+      "status": "artificial_validation_only",
+      "note": "pure artificial ability, not observed hero rate"
+    },
+    {
+      "id": "HC-T18",
+      "title": "提前终局截断未来机会",
+      "class": "horizon",
+      "inputs": {
+        "unlock_own_formal_turn": 16,
+        "game_ends_at_round": 10
+      },
+      "expected": {
+        "future_opportunities": 0
+      },
+      "status": "artificial_validation_only",
+      "note": "end prevents phantom skill activations"
+    },
+    {
+      "id": "HC-T19",
+      "title": "H11两个窗口互斥",
+      "class": "branch",
+      "inputs": {
+        "artificial_window_probabilities": {
+          "A": 0.25,
+          "B": 0.35,
+          "neither": 0.4
+        }
+      },
+      "expected": {
+        "sum": 1,
+        "A_and_B_combined": false
+      },
+      "status": "artificial_validation_only",
+      "note": "artificial probabilities for tree integrity, not a prediction"
+    },
+    {
+      "id": "HC-T20",
+      "title": "直接兑现与规避互斥",
+      "class": "branch",
+      "inputs": {
+        "terminal_leaves": [
+          {
+            "id": "direct",
+            "p": 0.3,
+            "u": 5
+          },
+          {
+            "id": "avoid",
+            "p": 0.5,
+            "u": 1
+          },
+          {
+            "id": "fail",
+            "p": 0.2,
+            "u": 0
+          }
+        ]
+      },
+      "expected": {
+        "sum": 1,
+        "expected_u": 2
+      },
+      "status": "artificial_validation_only",
+      "note": "do not add 5 and 1 unconditionally"
+    },
+    {
+      "id": "HC-T21",
+      "title": "同一消灭事件唯一主要归属",
+      "class": "ledger",
+      "inputs": {
+        "event_id": "death_1",
+        "possible_claims": [
+          "material",
+          "action",
+          "information"
+        ]
+      },
+      "expected": {
+        "primary": [
+          "material"
+        ],
+        "duplicated_count": 0
+      },
+      "status": "artificial_validation_only",
+      "note": "other dimensions only independent residual, not same death"
+    },
+    {
+      "id": "HC-T22",
+      "title": "H10流仅一枚实际消灭",
+      "class": "ledger",
+      "inputs": {
+        "public_shadow_ends": true,
+        "host_dies": true
+      },
+      "expected": {
+        "actual_killed_piece_count": 1,
+        "actual_killed_piece": "host"
+      },
+      "status": "artificial_validation_only",
+      "note": "public shadow termination not second kill"
+    },
+    {
+      "id": "HC-T23",
+      "title": "负效用不能取绝对或截零",
+      "class": "counterfactual",
+      "inputs": {
+        "with_U": -2,
+        "without_U": 3
+      },
+      "expected": {
+        "delta_U": -5
+      },
+      "status": "artificial_validation_only",
+      "note": "signed value preserved until common display decision"
+    },
+    {
+      "id": "HC-T24",
+      "title": "H11×H15未确认",
+      "class": "blocker",
+      "inputs": {
+        "source": "H11×H15",
+        "proposal": "A:preserve_flight"
+      },
+      "expected": {
+        "status": "blocked_pending_rule",
+        "center": null
+      },
+      "status": "artificial_validation_only",
+      "note": "cannot infer flight survives on basis of scoring model"
+    },
+    {
+      "id": "HC-T25",
+      "title": "旧洞察失效但H10宿主绑定保留",
+      "class": "wash",
+      "inputs": {
+        "insight_pre_wash_on_slot": true,
+        "H10_shadow_active": true
+      },
+      "expected": {
+        "old_slot_info_valid": false,
+        "H10_host_binding_valid": true
+      },
+      "status": "artificial_validation_only",
+      "note": "do not wipe all hidden state regardless of source"
+    },
+    {
+      "id": "HC-T26",
+      "title": "冻结/上限/空分数",
+      "class": "status",
+      "inputs": {
+        "mode_id": "half_chaos_jieqi"
+      },
+      "expected": {
+        "score_status": "frozen",
+        "candidate_dimension_sum": 80,
+        "actual_hero_scores": [],
+        "actual_mutation_scores": []
+      },
+      "status": "artificial_validation_only",
+      "note": "common candidate weights preserved, no formal scores"
+    }
+  ]
+}
