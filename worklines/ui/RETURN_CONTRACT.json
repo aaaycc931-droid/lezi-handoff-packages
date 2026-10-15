@@ -1,0 +1,21 @@
+{
+  "default": "incremental",
+  "when": [
+    "阶段完成",
+    "共享阻断",
+    "用户收束"
+  ],
+  "required": [
+    "base_commit",
+    "current_state_and_approval_delta",
+    "user_confirmation_quote_time_scope",
+    "new_art_and_editable_layers_parameters",
+    "changed_file_identities",
+    "reused_asset_references",
+    "actual_validation_and_unrun_scope",
+    "exact_next_action"
+  ],
+  "unchanged_asset_bytes_included": false,
+  "full_archive": "explicit backup/recovery only",
+  "receiver_adoption": "requires actual receipt"
+}

@@ -1,39 +1,14 @@
 {
-  "schema": "lezi.handoff_repository_index.v4",
-  "date": "2026-10-15",
-  "account_routing": "ACCOUNT_ROUTING.json",
-  "worklines": [
-    {
-      "workline": "standard",
-      "root": "handoffs/standard/2026-10-15-r1",
-      "next": {
-        "id": "NEXT-STD-DESIGN-04",
-        "subject": "M04 战车待定主体",
-        "action": "先完整恢复工作稿中“当前待决策｜M04 战车普通地面车继承”的现成方案与未运行规格，用简明具体情形呈现给用户决定；当前分发不是同意M04。确认后才继续M05、M06、M07、M08、D01。",
-        "pending_is_not_approved": true
-      },
-      "files": 288
-    },
-    {
-      "workline": "UI",
-      "root": "handoffs/ui/2026-10-15-r1",
-      "next": {
-        "id": "UI002-BLUETOOTH-B6",
-        "subject": "B6-v1 蓝牙连接中：设备名与取消",
-        "action": "先实际看当前批准蓝牙图及其对应全部源层、参数和字体许可，再创建B6-v1“连接中，设备名＋取消”静态候选，每次只展示一张实际图供用户审批。当前B6未创建，更未批准。",
-        "pending_is_not_approved": true,
-        "candidate_created": false,
-        "candidate_approved": false
-      },
-      "files": 421
-    }
-  ],
-  "entries": {
-    "UI": "START_UI.txt",
-    "standard": "START_STANDARD.txt"
+  "schema": "lezi.current_work_index.v1",
+  "updated_at_local": "2026-10-15T14:34:22+08:00",
+  "worklines": {
+    "UI": "worklines/ui/START_HERE.txt",
+    "standard": "worklines/standard/START_HERE.txt"
   },
-  "recipient_reading_verified": false,
-  "old_versions_preserved": true,
-  "scope": "Remote handoff files and pointers only; no game source changes",
-  "private_full_new_collaboration_published": false
+  "assets": "assets/ui/INDEX.json",
+  "history": "archive/INDEX.json",
+  "workflow": "docs/WORKFLOW.md",
+  "main_and_half_chaos": "maintained in main account; not new public worklines",
+  "recipient_reading_and_adoption_verified": false,
+  "previous_complete_snapshot": "52002b3762bd948a134c67cfbc99427035790eba"
 }

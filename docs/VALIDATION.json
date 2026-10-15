@@ -1,0 +1,62 @@
+{
+  "scope": "repository organization, asset identity, B6 dependency restoration and B4/B5 source recomposition; prepublication validation",
+  "created_at": "2026-10-15T06:37:54.322529+00:00",
+  "baseline_commit": "52002b3762bd948a134c67cfbc99427035790eba",
+  "task_dependency_closure": "passed for all indexed tasks",
+  "canonical_asset_blob_identity": {
+    "passed": true,
+    "unique_assets": 136,
+    "asset_bytes": 45218112,
+    "existing_art_binary_upload_bytes": 0
+  },
+  "approved_originals": {
+    "passed": true,
+    "count": 8,
+    "method": "original published SHA-256 to source alias and existing Git blob identity; no reencoding"
+  },
+  "B6_restore": {
+    "passed": true,
+    "file_aliases": 105,
+    "unique_assets": 75,
+    "initial_network_asset_bytes": 21425633,
+    "repeat_network_asset_bytes": 0,
+    "all_105_file_SHA256_checks": "passed"
+  },
+  "missing_dependency_refusal": {
+    "passed": true,
+    "exit_code": 1,
+    "expected_error": "Missing or changed dependency"
+  },
+  "pixel_recomposition": [
+    {
+      "version": "B4-v1",
+      "width": 852,
+      "height": 1846,
+      "changed_rgba_pixels": 0,
+      "pass": true
+    },
+    {
+      "version": "B5-v1",
+      "width": 852,
+      "height": 1846,
+      "changed_rgba_pixels": 0,
+      "pass": true
+    }
+  ],
+  "standard_line": {
+    "tree_sha_before": "ed70f614ede039e751c99f8d93f1cea2e724977b",
+    "tree_sha_reused": "ed70f614ede039e751c99f8d93f1cea2e724977b",
+    "all_relative_paths_preserved": true,
+    "prepare_and_verify_scripts": "inspected: paths relative to their own directory"
+  },
+  "history": {
+    "retained_in_parent_commit": true,
+    "rewritten": false
+  },
+  "not_performed": [
+    "new B6 artwork",
+    "new aesthetic approval",
+    "game engine or device runtime tests",
+    "recipient reading or adoption"
+  ]
+}

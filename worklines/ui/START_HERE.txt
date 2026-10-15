@@ -1,0 +1,9 @@
+《乐子象棋》UI固定工作入口
+
+1. 读取CURRENT_STATE.json、UI_WORK_AGREEMENT.md、UI_FIDELITY_POLICY.md和当前审批/状态覆盖；按任务实际读../../docs/PROJECT_COLLABORATION.md相关门禁/基线细则，报告真实阅读范围。
+2. 唯一已知下一断点仍是B6“连接中，设备名与取消”，尚未创建。B5已批准，首页/V4原字形例外和撤回记录保留。接收对话如已有未回传成果，先保留核对，不回退它。
+3. 按TASKS.B6恢复B4/B5完整来源、层、参数、字体和许可，再实际看图。运行python3 restore_task.py --task B6 --target ui-workbench；资产按身份取一次并缓存，baseline不覆盖，候选另存work/。只能浏览时，按../../assets/ui/INDEX.json的任务URL查具体原文件；取不到源层不得冒称已保真编辑。
+4. B6静态布局不要求先读全英雄、裁判和其他线回传；涉及产品规则/保密字段/模式时，到PRODUCT_RULE_REFS读取对应完整当前来源并核对主线更新。
+5. 一次一图，按具体候选审批；局部改动检其本体和直接依赖，证据有效就复用。阶段结束/共享阻断/用户收束时增量回传。不要下载整个仓库ZIP或重新上传累计历史来继续任务。
+
+根目录START_UI.txt是永久链接；日常更新此固定工作目录。历史从../../archive/INDEX.json按需查固定提交。优化不批准新图，评分冻结，NET暂停。

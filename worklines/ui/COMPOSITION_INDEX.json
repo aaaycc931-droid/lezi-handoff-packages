@@ -1,0 +1,105 @@
+{
+  "schema": "lezi.approved_recomposition.v2",
+  "root_relative_paths": true,
+  "entries": [
+    {
+      "version": "B1-v2",
+      "kind": "sharp_svg",
+      "background": "sources/B1-v2/background.png",
+      "svg": "sources/B1-v2/text.svg",
+      "approved_image": "images/lezi-bluetooth-B1-v2.png"
+    },
+    {
+      "version": "B2-v4",
+      "kind": "sharp_svg",
+      "background": "sources/B2-v4/background.png",
+      "svg": "sources/B2-v4/text.svg",
+      "approved_image": "images/lezi-bluetooth-B2-v4.png"
+    },
+    {
+      "version": "S1-v3.2",
+      "kind": "manual_patches",
+      "background": "sources/S1-v3.2/background-layers/s1-v3-all-controls-removed-estimated.png",
+      "patches": [
+        {
+          "file": "sources/S1-v3.2/layers/regular_sound_on_ink-matched-outer.png",
+          "x": 325,
+          "y": 315,
+          "width": 61,
+          "height": 61
+        },
+        {
+          "file": "sources/S1-v3.2/layers/regular_haptic_on_ink-matched-outer.png",
+          "x": 325,
+          "y": 385,
+          "width": 61,
+          "height": 61
+        },
+        {
+          "file": "sources/S1-v3.2/layers/short_sound_on_ink-matched-outer.png",
+          "x": 703,
+          "y": 292,
+          "width": 61,
+          "height": 61
+        },
+        {
+          "file": "sources/S1-v3.2/layers/short_haptic_on_ink-matched-outer.png",
+          "x": 703,
+          "y": 361,
+          "width": 61,
+          "height": 61
+        },
+        {
+          "file": "sources/S1-v3.2/layers/regular_reduce_off_ink-matched-outer.png",
+          "x": 325,
+          "y": 455,
+          "width": 61,
+          "height": 61
+        },
+        {
+          "file": "sources/S1-v3.2/layers/short_reduce_off_ink-matched-outer.png",
+          "x": 703,
+          "y": 431,
+          "width": 61,
+          "height": 61
+        }
+      ],
+      "approved_image": "images/lezi-settings-S1-v3_2.png"
+    },
+    {
+      "version": "B3-v1",
+      "kind": "manual_layers",
+      "background": "sources/B3-v1/background-layers/b3-fixed-local-base.png",
+      "layers": [
+        "sources/B3-v1/layers/b3-real-text-layer.png"
+      ],
+      "approved_image": "images/lezi-bluetooth-B3-v1.png"
+    },
+    {
+      "version": "B4-v1",
+      "kind": "manual_layers",
+      "background": "sources/B4-v1/background-layers/b4-fixed-local-base.png",
+      "layers": [
+        "sources/B4-v1/layers/selection-and-links.png",
+        "sources/B4-v1/layers/b4-real-text-layer.png"
+      ],
+      "approved_image": "images/lezi-bluetooth-B4-v1.png"
+    },
+    {
+      "version": "B5-v1",
+      "kind": "manual_layers",
+      "background": "sources/B5-v1/background-layers/b5-fixed-local-base.png",
+      "layers": [
+        "sources/B5-v1/layers/b5-empty-text-layer.png",
+        "sources/B5-v1/layers/connect-disabled.png"
+      ],
+      "approved_image": "images/lezi-bluetooth-B5-v1.png"
+    }
+  ],
+  "status_authority": "APPROVAL_REGISTER.json",
+  "background_classification": "historical estimates under old glyph/control footprints, reused without new restoration",
+  "flat_originals": [
+    "images/approved-home-original.png",
+    "images/approved-v4-reference.png"
+  ]
+}

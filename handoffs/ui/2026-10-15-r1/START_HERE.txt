@@ -1,22 +1,3 @@
-《乐子象棋》UI工作线分发｜LEZI-DISPATCH-2026-10-15-r1
-任务：UI002-BLUETOOTH-B6｜下一项：B6-v1 蓝牙连接中：设备名与取消
-
-用户指令：“现在开始进行分发工作”。本包交给对应对话并附执行指令后，继续本线限定设计；不把分发、继续、旧收束当作同意任何待定规则。主线留在原主对话，不在本线重做总收束。
-
-读取/执行顺序：
-1. 本文件 → CURRENT_STATE.json → SOURCE_PRIORITY.json → PROJECT_WORK_AGREEMENT.md。
-2. 实际读collaboration/PROJECT_COLLABORATION_20261015.md的INTEGRATED_START、TASK_ROUTES、MANDATORY_PRECHECK及本任务相关细则。工作稿2026-10-14.v0.8，正式基线1.8.0；实际读取后给简短协作门禁回执，不借旧收据。
-3. SYNC_NOTICE.md、MODE_SYNC.json、rules/shared/02_CURRENT_HEROES.md相关完整条目、rules/confirmed/RETURNED_SHARED_CONFIRMATIONS_20261014.json及裁判记录1.49；查PENDING_ITEMS与PENDING_DECISION。共享正文和原确认控制语义，摘要不补规则。
-4. 运行python3 prepare_sources.py，完整源根为sources/ui/lezi-ui-handoff-2026-10-14-v1/；本公开版本已展开源树，无须用户上传ZIP；脚本只核对路径并可还原少量大历史源归档，不运行引擎。解压后读取源根00_READ_FIRST.md、CURRENT_STATE、APPROVAL_REGISTER、UI_NEXT_TASKS、SOURCE_PRIORITY、SOURCE_STATUS_OVERRIDES及UI-FIDELITY-001全文；实际查看images/APPROVED_INDEX中的相关批准图，并读取layers/COMPOSITION_INDEX和对应全部sources、参数、真实字体/许可，再制作候选。根协作工作稿v0.8是当前使用版本；原UI reference正式v1.8.0保留为历史基础，不覆盖当前稿。不要只读ui/current_metadata摘要就声称完整资产已看。
-5. NEXT_ACTIONS.json与RETURN_CONTRACT.json；开始下述任务，不停在报“已读取”或重做已完成设计。
-
-本线第一步：先实际看当前批准蓝牙图及其对应全部源层、参数和字体许可，再创建B6-v1“连接中，设备名＋取消”静态候选，每次只展示一张实际图供用户审批。当前B6未创建，更未批准。
-保护：继承B1-v2、B2-v4、S1-v3.2、B3-v1、B4-v1、B5-v1批准状态；不重开B5审批。首页/V4保留原图与原字形例外，H1-v1/V4-T1-v1撤回不复活。固定批准母版＋全部批准差分＋独立源层＋真实字体＋局部合成；不做逐轮整图重绘或补底。UI-001盘点已完成，不重做。
-
-原始资料和旧副本中的已收束、未回传及旧下一步均属于其生成时历史；当前主线已接收四线回传并在文档层归并。接手者仍须自己读取并给真实采用回执。各模式专属确认不向外扩张，新的共享冲突回主线；其余可独立工作继续。
-
-评分q/H/I/B/J=null、n=0、featuresReady=false，冻结；NET暂停。旧9/9、8/8、111及12/26人工证据只保持原条件，不称本轮重跑。设计/文档/代码/运行/发送/接收/采用分别记录。未授权代码实现、GitHub写入、APK、合并、部署或公开发布。
-
-包检查：python3 verify_dispatch.py。原件内历史MANIFEST/校验脚本仍描述私有原档；本公开派生树使用根PUBLISHED_FILES.json，不把原清单当本树清单。只证明分发文件/原归档/状态完整，不是游戏运行、UI审美或接收模型执行验收。发现缺源只阻断受影响部分。
-
-远程交接：本账号维护主线/半混乱；本工作线在另一个账号。用户授权把UI和普通模式项目交接上传现有GitHub交接仓库；不授权改游戏源码或自动给其他对话发消息。完整个人协作文件由项目适用摘录替代，原始项目规则/当前批准图/源层/字体均保留原字节。接手者报告实际阅读的摘录范围，不宣称读过完整个人系统。
+旧启动链接兼容入口：UI当前资料已整理到固定工作目录。请读取并执行：
+https://raw.githubusercontent.com/aaaycc931-droid/lezi-handoff-packages/main/worklines/ui/START_HERE.txt
+本旧目录不再存放累计包；完整原快照见提交52002b3762bd948a134c67cfbc99427035790eba的同名路径。
