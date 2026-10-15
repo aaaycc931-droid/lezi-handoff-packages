@@ -10,3 +10,7 @@ This repository manages Lezi handoffs and UI assets. Game implementation lives i
 - Keep historical recovery via archive/INDEX.json and immutable commits. Do not rewrite Git history or purge old objects without a separate explicit task.
 - UI method and verification cadence are in worklines/ui/UI_WORK_AGREEMENT.md. Do not turn file checks into product/runtime acceptance.
 - No game rule changes, scoring thaw, NET resume, APK, game merge, deployment, or automatic messages are authorized by a handoff/cleanup task.
+
+- GitHub connector is the default two-way handoff channel for all four worklines. Update fixed workline files and a phase return record; do not ask the user to relay ordinary packages.
+- Follow docs/WORKFLOW.md for RETURN_TO_MAIN.json and receiver-owned READ_RECEIPTS.json. Never fabricate another account's capabilities, reading, or adoption. Unpublished main/half_chaos sources remain unpublished until their actual content is committed.
+- Receipts identify the immutable source commit and actual read/adopted scope. Keep history by ordinary commits; restore selected files rather than resetting the shared branch.

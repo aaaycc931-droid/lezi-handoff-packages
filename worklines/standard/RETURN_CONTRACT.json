@@ -19,7 +19,7 @@
     "涉及共享事项的来源和协调问题",
     "文件清单/字节/sha256；UI附批准图/源层/字体许可和撤回历史"
   ],
-  "receipt": "接手者简报实际读取版本、章节、当前断点和已消费的共享更新；不借原AI收据声称已读。由用户转交阶段包给主线；不得仅凭制作文件就写成已发送或主线已采用。",
+  "receipt": "接手者简报实际读取版本、章节、当前断点和已消费的共享更新；不借原AI收据声称已读。直接通过GitHub连接器回传本线实际工作资料及RETURN_TO_MAIN.json，主线实际读取后自行提交回执；不得仅凭制作或发布文件就写成主线已读或已采用。",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -30,5 +30,25 @@
     "n": 0,
     "featuresReady": false
   },
-  "NET": "paused"
+  "NET": "paused",
+  "delivery": {
+    "default": "GitHub connector",
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "workline_directory": "worklines/standard",
+    "phase_return_file": "worklines/standard/RETURN_TO_MAIN.json",
+    "source_material": "publish actual changed bodies and new dependencies; reuse unchanged assets by identity",
+    "routine_user_file_relay_required": false
+  },
+  "receipt_transport": {
+    "receiver_records_own_actual_reading": true,
+    "path_pattern": "worklines/<receiver_line>/READ_RECEIPTS.json",
+    "include": [
+      "source_commit",
+      "actual_read_files_and_sections",
+      "received_scope",
+      "adopted_scope",
+      "remaining_items_and_reasons"
+    ],
+    "unverified_status": "unknown"
+  }
 }

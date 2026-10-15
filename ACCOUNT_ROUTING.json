@@ -1,21 +1,31 @@
 {
-  "schema": "lezi.account_workline_routing.v1",
-  "date_local": "2026-10-15T11:34:35+08:00",
+  "schema": "lezi.account_workline_routing.v2",
+  "date_local": "2026-10-15",
   "current_account": {
     "worklines": [
       "main",
       "half_chaos"
     ],
-    "delivery": "same-account attachment"
+    "delivery": "GitHub connector: read and write fixed workline files; incremental phase handoff; no routine user file relay"
   },
   "other_account": {
     "worklines": [
       "UI",
       "standard"
     ],
-    "delivery": "GitHub remote expanded directories; no user ZIP upload needed"
+    "delivery": "GitHub connector: read and write fixed workline files; incremental phase handoff; no routine user file relay"
   },
   "main_is_current_dialogue": true,
   "recipient_reading_verified": false,
-  "other_account_ids_not_required": true
+  "other_account_ids_not_required": true,
+  "default_handoff_transport": "GitHub connector",
+  "repository": "aaaycc931-droid/lezi-handoff-packages",
+  "capability_verification": {
+    "current_account_read": true,
+    "current_account_write": true,
+    "other_account_read": null,
+    "other_account_write": null
+  },
+  "history": "Git commit history; restore selected files with a new commit",
+  "workflow": "docs/WORKFLOW.md"
 }

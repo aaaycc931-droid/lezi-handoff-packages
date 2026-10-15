@@ -1,6 +1,6 @@
 {
   "schema": "lezi.current_work_index.v1",
-  "updated_at_local": "2026-10-15T14:34:22+08:00",
+  "updated_at_local": "2026-10-15T15:18:11+08:00",
   "worklines": {
     "UI": "worklines/ui/START_HERE.txt",
     "standard": "worklines/standard/START_HERE.txt"
@@ -8,7 +8,14 @@
   "assets": "assets/ui/INDEX.json",
   "history": "archive/INDEX.json",
   "workflow": "docs/WORKFLOW.md",
-  "main_and_half_chaos": "maintained in main account; not new public worklines",
+  "main_and_half_chaos": "maintained in main account; GitHub handoff is now the default; complete remote source worklines are not yet published",
   "recipient_reading_and_adoption_verified": false,
-  "previous_complete_snapshot": "52002b3762bd948a134c67cfbc99427035790eba"
+  "previous_complete_snapshot": "52002b3762bd948a134c67cfbc99427035790eba",
+  "default_handoff_transport": "GitHub connector",
+  "return_file_pattern": "worklines/<line>/RETURN_TO_MAIN.json",
+  "receiver_receipt_file_pattern": "worklines/<receiver_line>/READ_RECEIPTS.json",
+  "not_yet_published_full_worklines": [
+    "main",
+    "half_chaos"
+  ]
 }
