@@ -74,30 +74,46 @@
       "next": true
     },
     {
-      "id": "STD-M04",
+      "id": "STD-M05",
+      "decision_id": "STD-M05-EXPEDITION-KEEP",
       "status": "pending_user_decision",
-      "scope": "standard",
-      "source": "returns/standard/PENDING_ITEMS.json",
-      "not_approved_by_closeout": true,
-      "active_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "decision_id": "STD-M04-WAR-CHARIOT-GROUND-KEEP",
-      "restored_at_local": "2026-10-16T12:44:26+08:00",
-      "new_confirmation": false,
+      "scope": "standard_public_general_body_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M05 亲征普通模式原机制继承",
+      "not_approved_by_M04_confirmation": true,
       "unrun_spec_ids": [
-        "WC01",
-        "WC02",
-        "WC03",
-        "WC04",
-        "WC05",
-        "WC06",
-        "WC07",
-        "WC08",
-        "WC09",
-        "WC10",
-        "WC11"
+        "EX01",
+        "EX02",
+        "EX03",
+        "EX04",
+        "EX05",
+        "EX06",
+        "EX07",
+        "EX08",
+        "EX09",
+        "EX10",
+        "EX11"
+      ]
+    },
+    {
+      "id": "STD-M04-CROSSES",
+      "status": "source_review_and_runtime_pending",
+      "scope": "standard",
+      "details": [
+        "H15 flying-rook geometry/attack permission",
+        "assassination effective geometry",
+        "path/endpoint multi-defense order",
+        "H10 atomic identity/return and general death"
       ],
-      "static_implementation_alignment": "Pinned historical rules.ts has direct-general-target exception and stale non-stealth wording; current source takes precedence; no live-code audit or change.",
-      "blocking_scope": "User decision gates M05; special cross dependencies do not block presenting ground-body proposal."
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
+      "M04_body_confirmation_does_not_resolve_these": true
+    },
+    {
+      "id": "STD-M05-H10-DANCE-REGION",
+      "status": "shared_source_priority_review_pending",
+      "scope": "H10 x M05 ordinary source interface",
+      "detail": "M05 releases palace for normal royal action; H10 dance remains one orthogonal step and mentions normal palace limits. Exact outside-palace return/dance-region priority and complete legal prefix not newly decided.",
+      "blocks_M05_body_presentation": false,
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M05 亲征普通模式原机制继承"
     },
     {
       "id": "H13-LAYER-SOURCE",
@@ -146,5 +162,37 @@
     "commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
     "path": "../main/SHARED_COORDINATION.json",
     "status": "actually_read; repetition-history strategy still pending; no new shared business rule adopted"
-  }
+  },
+  "resolved_items": [
+    {
+      "id": "STD-M04",
+      "status": "confirmed_design_not_implemented_or_tested",
+      "scope": "standard_ground_rook_body_only",
+      "source": "returns/standard/PENDING_ITEMS.json",
+      "not_approved_by_closeout": true,
+      "active_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+      "decision_id": "STD-M04-WAR-CHARIOT-GROUND-KEEP",
+      "restored_at_local": "2026-10-16T12:44:26+08:00",
+      "new_confirmation": true,
+      "unrun_spec_ids": [
+        "WC01",
+        "WC02",
+        "WC03",
+        "WC04",
+        "WC05",
+        "WC06",
+        "WC07",
+        "WC08",
+        "WC09",
+        "WC10",
+        "WC11"
+      ],
+      "static_implementation_alignment": "Pinned historical rules.ts has direct-general-target exception and stale non-stealth wording; current source takes precedence; no live-code audit or change.",
+      "blocking_scope": "User decision gates M05; special cross dependencies do not block presenting ground-body proposal.",
+      "confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+      "confirmed_at_local": "2026-10-16T13:00:03+08:00",
+      "user_quote": "同意方案",
+      "resolution_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承"
+    }
+  ]
 }

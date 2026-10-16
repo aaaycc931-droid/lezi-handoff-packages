@@ -2,42 +2,66 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T12:44:26+08:00",
-  "source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
-  "base_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
-  "phase": "M04_source_recovery_and_reviewable_cases_prepared",
+  "prepared_at_local": "2026-10-16T13:05:54+08:00",
+  "source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+  "base_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+  "phase": "M04_body_confirmed_M05_proposal_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "M04 existing ground-body proposal awaiting standard user decision",
-  "confirmed_delta": [],
-  "new_user_rule_confirmations": 0,
+  "current_breakpoint": "用户明确决定M05普通公开将帅亲征主体；未确认前不推进M06为已确认。确认后按原序M06、M07、M08、D01。",
+  "confirmed_delta": [
+    {
+      "number": 22,
+      "id": "M04",
+      "confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+      "review_id": "STD-M04-WAR-CHARIOT-GROUND-KEEP",
+      "status": "confirmed_design_not_runtime_verified",
+      "scope": "standard_ground_rook_body_only",
+      "confirmed_at_local": "2026-10-16T13:00:03+08:00",
+      "user_quote": "同意方案",
+      "review_context": "Immediately preceding assistant presented the complete ordinary ground-rook M04 proposal and explicitly asked whether to adopt it; no M05 approval inferred.",
+      "presented_source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+      "summary": "普通真实地面车立即适用；零路径正常行动，恰一地面路径棋仅冲向实际合法目标并尝试碾碎；友军/地面无形路径计入；终点拦截不撤路径死亡；有效将军与完整原子双真帅终局按原规则。",
+      "full_source": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜M04 战车普通地面车继承"
+      },
+      "authority": "Current conversation explicit scoped user confirmation; not code/runtime approval.",
+      "shared_rule_delta": 0,
+      "not_confirmed": [
+        "M05",
+        "flying-rook",
+        "assassination effective geometry",
+        "path/endpoint multi-defense order",
+        "H10 full atomic identity crossings",
+        "implementation or engine acceptance"
+      ]
+    }
+  ],
+  "new_user_rule_confirmations": 1,
   "preserved_confirmations": {
-    "standard_source_round_count": 21,
-    "earlier_scoped_decisions": "retained, original sources unchanged",
-    "index": "CONFIRMATION_REGISTER.json"
+    "inherited_source_round_count": 21,
+    "current_index_count": 22,
+    "earlier_valid_decisions_retained": true
   },
   "pending_decision": {
-    "id": "STD-M04-WAR-CHARIOT-GROUND-KEEP",
+    "id": "STD-M05-EXPEDITION-KEEP",
     "status": "proposal_pending_user_confirmation",
-    "next_after_explicit_confirmation": [
-      "M05",
-      "M06",
-      "M07",
-      "M08",
-      "D01"
-    ]
+    "M04_approval_does_not_include_this": true
   },
   "changes": [
-    "Restore complete existing M04 and keep original M04 body/WC01-WC11 unchanged.",
-    "Prepare concrete illustrative cases and clarify normal empty-square movement, one ground-path charge, target permissions, defense return and general-threat boundaries.",
-    "Record actual receiver reading/adoption, latest concurrent coordination, unchanged confirmations and next breakpoint."
+    "Write actual M04 user approval with exact scope, quote/time and prior presentation source.",
+    "Prepare independent M05 inherited-body proposal and11 unrun specifications.",
+    "Update current mode pointers, confirmation index, next action, receipt and stage return."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
     "worklines/standard/CURRENT_STATE.json",
     "worklines/standard/NEXT_ACTIONS.json",
     "worklines/standard/PENDING_ITEMS.json",
+    "worklines/standard/CONFIRMATION_REGISTER.json",
     "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "worklines/standard/modes/standard/CURRENT_STATE.json",
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
     "worklines/standard/PUBLISHED_FILES.json"
@@ -45,51 +69,57 @@
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 4620,
-      "sha256": "ee7adbfac35bbc2f9337b9f40e1f0bcfa12c1b2bf89d6a6c21a930b818d0324c"
+      "size": 4730,
+      "sha256": "5b5508117eb633b925aca1fc2f71f83a8ef15a4ac9a4aab0a2285ba866bed493"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 5093,
-      "sha256": "b7ff8022bf6e7bcf99eb29d6d889ca3840084d1ff1602752f8c616b5846f8a36"
+      "size": 5762,
+      "sha256": "37ab43278b95a94a3caf0bc3fbd94303922184aab3e40c6a69a75de3ce807160"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1004,
-      "sha256": "394a79fd6d7ef2a64b6ddda8af41851ffe7fb9d33a9e960b6cfc6eaf7aea48e8"
+      "size": 1216,
+      "sha256": "3ec69c1783b6a2ccf517e3b3353554e8a5c3ee319310c78c09f994a4e4097223"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 7878,
-      "sha256": "7aa583ee366ad312cd22ef8de242906e8c9efb5aef8e413fb075952c2ad69616"
+      "size": 9859,
+      "sha256": "dcaccbced2bfc79348cb17b9f6bf4ebeb68a633e1a4b109c59158932554723f3"
+    },
+    {
+      "path": "CONFIRMATION_REGISTER.json",
+      "size": 25131,
+      "sha256": "554849c70612f4332278f0a0687d793957e35e724eee5c5b2a862ad8c776976d"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 114120,
-      "sha256": "14b3432cd5285da6b497d9f7ccf1288997257678d25c2e1d06d3856f550b8840"
+      "size": 121950,
+      "sha256": "755fa591f316de72d0900fdbb25d579c3eeb8bb246fd081f18d7eb13e9c326b2"
+    },
+    {
+      "path": "modes/standard/CURRENT_STATE.json",
+      "size": 1555,
+      "sha256": "3fb77a8cebf2374e020b656ef3cd5fdc884079ab001ae10c7975f1d5d0717207"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 13538,
-      "sha256": "b3c8b729817d7db2ae075ebd51bbce5d4ffdd1e872abbb5aff13e0814e78bc79"
+      "size": 16484,
+      "sha256": "e20ebacd934bb72c23036446301f137fa3c0de0499fa910c667ed1ecb9a20c9e"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
-  "manifest_note": "Manifest covers this return and payload; excludes itself to avoid a self-hash cycle. Result commit is resolved from Git history, not prefilled.",
-  "source_and_confirmation_scope": "READ_RECEIPTS.json plus unchanged CONFIRMATION_REGISTER.json and original working source.",
+  "manifest_note": "Manifest includes return and payload, excludes self; resulting commit identified from Git history.",
   "actual_validation": {
-    "prepare_sources": "sources_ready; game_engine_run=false",
-    "initial_verify_dispatch": {
-      "status": "passed",
-      "files": 288,
-      "game_engine_tests": 0,
-      "scope": "published_project_file_integrity"
-    },
-    "source_restoration_git_objects_checked": 296,
-    "source_restoration_mismatches": 0,
-    "original_M04_proposal_and_unrun_specs_unchanged": true,
+    "approval_context_source_checked": true,
+    "M04_original_11_unrun_specs_preserved": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
+    "previous_integrity_result": {
+      "files": 290,
+      "status": "passed",
+      "scope": "published_project_file_integrity_only"
+    },
     "updated_verify_dispatch": {
       "status": "passed",
       "files": 290,
@@ -99,27 +129,30 @@
   },
   "unrun": [
     "WC01-WC11",
-    "legal reachable-prefix fixtures and full M04 engine acceptance",
-    "flying-rook/assassination/multiple-defense/H10 atomic crossings",
+    "EX01-EX11",
+    "natural reachable-prefix/runtime/full mode validation",
     "NET"
   ],
   "shared_coordination": [
     {
-      "id": "STD-M04-CODE-TARGET-ALIGNMENT",
-      "kind": "historical_static_implementation_alignment_not_new_rule",
-      "detail": "Pinned rules.ts general-target branch permits war_chariot direct enemy general; current source/proposal does not. Old non-stealth comment also conflicts with ground-invisible counting. No live-code audit/change; current source controls.",
-      "source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
-      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/rules.ts",
-      "blocks_ground_proposal_presentation": false
+      "id": "STD-M05-H10-DANCE-REGION",
+      "status": "pending_shared_source_priority_review",
+      "detail": "Normal M05 palace release vs H10 dance one-step/palace source; exact outside-palace return/dance-region priority not newly decided. No extra dance distance/palace permission.",
+      "blocks_independent_M05_body_presentation": false
     },
     {
-      "id": "existing_shared_dependencies",
-      "source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
-      "source": "worklines/main/SHARED_COORDINATION.json",
-      "status": "retained pending in original scopes; no shared decision invented"
+      "id": "STD-M04-CROSSES",
+      "status": "retained_pending",
+      "detail": "M04 body approved; flying-rook/assassination/multi-defense/H10 full atomic crossings remain separate."
+    },
+    {
+      "id": "STD-M04-CODE-TARGET-ALIGNMENT",
+      "status": "historical_static_implementation_alignment_pending",
+      "source": "Prior phase return at f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+      "detail": "Current text still controls over old pinned direct-general-target/non-stealth wording; no live audit or code change."
     }
   ],
-  "implementation_status": "design/source/line documents only",
+  "implementation_status": "confirmed_design_and_pending_proposal_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -131,12 +164,80 @@
     "featuresReady": false
   },
   "NET": "paused",
+  "limitation_audit": {
+    "audit_trigger": "Explicit rule-adoption status write to continuing project source and next independent design review.",
+    "risk_level": "high_project_source; reversible_scoped_document_action",
+    "known_facts": [
+      "User explicitly accepted immediately preceding M04 proposal.",
+      "M05 current source releases palace, permits crossing, requires clear ground path and final safety.",
+      "Current ordinary H03 excludes generals from barrier awards and removes armor."
+    ],
+    "user_statements": [
+      {
+        "quote": "同意方案",
+        "at_local": "2026-10-16T13:00:03+08:00",
+        "scope": "M04 immediately preceding proposal"
+      }
+    ],
+    "claim_register": [
+      {
+        "claim": "M04 body approval",
+        "type": "user_statement",
+        "source": "Current message and previous response at source commit f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+        "verification": "V2"
+      },
+      {
+        "claim": "M05 inherited base mechanics",
+        "type": "document_fact",
+        "source": "rules/shared/03_CURRENT_MUTATIONS.md#M05 and scoped direct sources in READ_RECEIPTS.json",
+        "verification": "V2"
+      },
+      {
+        "claim": "Illustrative M05 cases and residual dance-region priority",
+        "type": "ai_inference",
+        "verification": "V1; unrun; region priority unresolved"
+      }
+    ],
+    "ai_interpretations": [
+      "This approval addresses M04 only; M05 is the authorized next review, not automatically approved."
+    ],
+    "assumptions": [
+      "M05 examples have stated clear paths/ordinary safety and no unstated special effects.",
+      "Exactly one mutation per game; no M04+M05 or M02+M05 combination."
+    ],
+    "unknowns": [
+      "Full legal runtime prefixes and current live engine alignment.",
+      "M05/H10 dance palace-priority and outside-palace return interactions."
+    ],
+    "competing_explanations": [
+      "An overbroad reading of 同意方案 could approve next items; immediate review context identifies only M04 and excludes this interpretation.",
+      "Historical M05 says invisible pieces do not block and armor remains; current shared/ordinary sources supersede those expressions."
+    ],
+    "falsification_conditions": [
+      "A later explicit user instruction changes this approval scope.",
+      "A current authoritative source resolves the declared crossing priority differently."
+    ],
+    "verification_status": "partial",
+    "action_boundary": "Confirm documented M04 body and prepare M05 proposal; project documents only, no implementation/engine/scoring/NET action.",
+    "failure_conditions": [
+      "Record M05 or deferred crosses as confirmed.",
+      "Reintroduce historical no-block invisibility or ordinary armor.",
+      "Mark examples or11 M04/11 M05 specs as runtime PASS."
+    ],
+    "residual_risk": "Source agreement and same-AI checks do not validate complete game behavior.",
+    "next_validation_action": "Obtain explicit M05 body decision; reconcile special crossing sources before any authorized implementation.",
+    "action_resilience": {
+      "maximum_exposure": "Only ten scoped line documents; no game or external-message mutation.",
+      "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
+      "recovery": "Restore affected line files from f95d50e4e50b83042a8b7ae52a01a2d12deba2b3 through a normal scoped commit, preserving later concurrent work.",
+      "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
+    }
+  },
   "delivery": {
     "transport": "GitHub connector",
-    "result_commit": "resolve containing commit from Git history after publication",
+    "result_commit": "Resolve containing commit through Git history after publication.",
     "recipient_reading_verified": null,
     "recipient_adoption_verified": null,
     "automatic_message_sent": false
-  },
-  "limits": "Static/file checks and same-assistant examples are not game acceptance or independent verification. Main must record its own actual read/adoption."
+  }
 }

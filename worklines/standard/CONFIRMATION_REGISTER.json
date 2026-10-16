@@ -5,10 +5,10 @@
     "half_chaos_local": 3,
     "half_chaos_direct_shared": 2
   },
-  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions.",
+  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained.",
   "main_confirmations_source": "lezi-adjudication-current-2026-10-14.json#project_specific_confirmations",
   "standard_confirmations": {
-    "count": 21,
+    "count": 22,
     "decisions": [
       {
         "number": 1,
@@ -261,6 +261,33 @@
           "heading": "已确认｜M03 暗影之舞普通模式继承"
         },
         "authority": "工作记录中对应用户明确确认；本索引不替代完整规则正文"
+      },
+      {
+        "number": 22,
+        "id": "M04",
+        "confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+        "review_id": "STD-M04-WAR-CHARIOT-GROUND-KEEP",
+        "status": "confirmed_design_not_runtime_verified",
+        "scope": "standard_ground_rook_body_only",
+        "confirmed_at_local": "2026-10-16T13:00:03+08:00",
+        "user_quote": "同意方案",
+        "review_context": "Immediately preceding assistant presented the complete ordinary ground-rook M04 proposal and explicitly asked whether to adopt it; no M05 approval inferred.",
+        "presented_source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+        "summary": "普通真实地面车立即适用；零路径正常行动，恰一地面路径棋仅冲向实际合法目标并尝试碾碎；友军/地面无形路径计入；终点拦截不撤路径死亡；有效将军与完整原子双真帅终局按原规则。",
+        "full_source": {
+          "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "已确认｜M04 战车普通地面车继承"
+        },
+        "authority": "Current conversation explicit scoped user confirmation; not code/runtime approval.",
+        "shared_rule_delta": 0,
+        "not_confirmed": [
+          "M05",
+          "flying-rook",
+          "assassination effective geometry",
+          "path/endpoint multi-defense order",
+          "H10 full atomic identity crossings",
+          "implementation or engine acceptance"
+        ]
       }
     ]
   },
@@ -471,5 +498,13 @@
     }
   ],
   "UI_approval_source": "ui/current_metadata/APPROVAL_REGISTER.json",
-  "new_rules_approved_by_this_merge": 0
+  "new_rules_approved_by_this_merge": 0,
+  "latest_standard_update": {
+    "at_local": "2026-10-16T13:05:54+08:00",
+    "new_confirmation_count": 1,
+    "confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+    "scope": "standard_ground_rook_body_only",
+    "source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+    "original_merge_new_rule_count_unchanged": true
+  }
 }

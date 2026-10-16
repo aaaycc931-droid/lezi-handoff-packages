@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "M04_restored_prepared_for_user_decision",
+  "status": "M04_confirmed_M05_prepared_for_user_decision",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -16,18 +16,20 @@
     "receiver_reading_and_adoption_verified": true,
     "actually_read_working_revision": "2026-10-15.v0.10",
     "formal_baseline": "1.8.0",
-    "gate": "L2",
-    "adoption_scope": "This standard conversation: relevant continuity, authorization, source, baseline and handoff workflow only; detailed sections in READ_RECEIPTS.json. No other receiver/effectiveness claim."
+    "gate": "L3",
+    "adoption_scope": "This standard conversation: relevant continuity, authorization, source, baseline and handoff workflow only; detailed sections in READ_RECEIPTS.json. No other receiver/effectiveness claim.",
+    "latest_actual_modules": "AUTHORIZATION_AND_ADOPTION; BASELINE_DELTA_CHECK; MANDATORY_PRECHECK; AI_LIMITATION_CONTROL full; project work agreement; prior same-version workflow reused"
   },
   "source_preparation": "Sources are expanded at sources/standard; no user ZIP upload is needed. python3 prepare_sources.py checks current required paths and optionally restores historical source parts.",
   "source_root": "sources/standard",
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.49",
   "next_task": {
-    "id": "NEXT-STD-DESIGN-04",
-    "subject": "M04 战车待定主体",
-    "action": "用户明确决定已恢复的M04普通地面车原方案；未确认前不推进M05为已确认。确认后按原序M05、M06、M07、M08、D01。",
-    "pending_is_not_approved": true
+    "id": "NEXT-STD-DESIGN-05",
+    "subject": "M05 亲征待定主体",
+    "action": "用户明确决定M05普通公开将帅亲征主体；未确认前不推进M06为已确认。确认后按原序M06、M07、M08、D01。",
+    "pending_is_not_approved": true,
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M05 亲征普通模式原机制继承"
   },
   "external_delivery": {
     "prepared_here": true,
@@ -37,7 +39,7 @@
     "recipient_adoption_verified": true,
     "transport": "GitHub connector",
     "routine_user_package_relay_required": false,
-    "verification_scope": "This standard receiver actually read the pinned scoped sources and adopted confirmed design boundaries. M04 remains pending; main receipt of this new phase return is unknown."
+    "verification_scope": "This standard receiver actually read pinned scoped sources and adopted confirmed boundaries; M04 ground-body now explicitly confirmed by current user; M05 remains pending; main receipt/adoption of this latest return unknown."
   },
   "prior_main_receipt": {
     "received": true,
@@ -61,7 +63,7 @@
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
   "limitation_audit_status": "partial",
-  "verification_level": "V2 scoped source/file identity checked; V1 same-assistant illustrative cases; no independent review, game code or engine execution.",
+  "verification_level": "V2 original user approval and scoped sources checked; V1 same-assistant M05 cases; no independent review or game engine execution.",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -84,13 +86,13 @@
     ]
   },
   "publication_scope": "PUBLICATION_SCOPE.json",
-  "updated_at_local": "2026-10-16T12:44:26+08:00",
-  "source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
-  "publication_parent_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
-  "phase": "M04_source_recovery_and_reviewable_cases_prepared",
-  "new_rule_confirmations_this_round": 0,
+  "updated_at_local": "2026-10-16T13:05:54+08:00",
+  "source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+  "publication_parent_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+  "phase": "M04_confirmation_written_M05_source_review_and_proposal_prepared",
+  "new_rule_confirmations_this_round": 1,
   "retained_source_round_confirmations": 21,
-  "M04_status": "proposal_pending_user_confirmation",
+  "M04_status": "confirmed_design_not_implemented_or_tested",
   "phase_return": "RETURN_TO_MAIN.json",
   "read_receipts": "READ_RECEIPTS.json",
   "receiver_protection": {
@@ -105,8 +107,17 @@
   "this_round_main_received_verified": null,
   "this_round_main_adopted_verified": null,
   "source_gaps": [
-    "No full original chat export or audit of current live jieqi-engine HEAD/PR.",
-    "Full historical/private archives are not all remotely migrated; no missing dependency blocks this M04 ground-body presentation.",
-    "H15 flying-rook, assassination geometry, multi-defense and H10 atomic identity crossings remain unresolved/unrun."
-  ]
+    "No current live game HEAD/PR audit or runtime execution.",
+    "M04 deferred crossings remain unresolved/unrun.",
+    "M05 H10 flow-dance region/outside-palace return and time-history full crossings remain separate pending work."
+  ],
+  "current_confirmation_index_count": 22,
+  "M04_confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+  "M05_status": "proposal_pending_user_confirmation",
+  "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
+  "latest_user_instruction": {
+    "quote": "同意方案",
+    "at_local": "2026-10-16T13:00:03+08:00",
+    "scope": "M04 ordinary ground-rook body only"
+  }
 }
