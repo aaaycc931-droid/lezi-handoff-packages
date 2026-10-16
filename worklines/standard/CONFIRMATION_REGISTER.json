@@ -5,10 +5,10 @@
     "half_chaos_local": 3,
     "half_chaos_direct_shared": 2
   },
-  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21. On2026-10-16 M07 adds one ordinary pool-policy approval; current index25=source-round21+M04+M05+M06+M07. Historical source_round_counts remains21. On2026-10-16 M08 adds one ordinary ground-pawn body adoption; current index26=source-round21+M04+M05+M06+M07+M08. Historical source_round_counts remains21. Main1.50 repetition-history confirmation is one adopted shared confirmation, not another local standard decision; current standard index remains26.",
+  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21. On2026-10-16 M07 adds one ordinary pool-policy approval; current index25=source-round21+M04+M05+M06+M07. Historical source_round_counts remains21. On2026-10-16 M08 adds one ordinary ground-pawn body adoption; current index26=source-round21+M04+M05+M06+M07+M08. Historical source_round_counts remains21. Main1.50 repetition-history confirmation is one adopted shared confirmation, not another local standard decision; current standard index remains26. On2026-10-16 D01 adds one ordinary public-start/body adaptation; current index27=original source-round21+M04+M05+M06+M07+M08+D01. Main1.51 adoption is separate, not another local confirmation.",
   "main_confirmations_source": "lezi-adjudication-current-2026-10-14.json#project_specific_confirmations",
   "standard_confirmations": {
-    "count": 26,
+    "count": 27,
     "decisions": [
       {
         "number": 1,
@@ -388,6 +388,32 @@
           "M08 special control/history/space/special-action crossings",
           "implementation/runtime/scoring thaw/NET resume"
         ]
+      },
+      {
+        "number": 27,
+        "id": "D01",
+        "confirmation_id": "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016",
+        "review_id": "STD-D01-PUBLIC-START-AND-ANCHORS",
+        "status": "confirmed_design_not_runtime_verified",
+        "scope": "standard_D01_public_start_fixed_public_anchors_and_source_body",
+        "confirmed_at_local": "2026-10-16T15:59:25+08:00",
+        "user_quote": "我同意",
+        "review_context": "Immediately preceding assistant presented ordinary D01 all-public startup, five already-appeared warriors/dragons, fixed public anchors and source hourglass/bomb body; explicitly retained all-failed activation and in-check preflight for separate review.",
+        "presented_source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+        "summary": "普通D01原五勇士/无限龙开局已现身；勇士锚点为原标准初始格并公开对应；无限龙各1弹、首己回合可投，原资源/射程/净化/装填/崩坏与替换/首回合75秒主体继承；未触发D01普通英雄基线不变。",
+        "full_source": {
+          "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "已确认｜D01 时光之末普通全明启动与主体继承"
+        },
+        "authority": "Explicit user confirmation of ordinary adaptation/body; no implementation/runtime acceptance.",
+        "shared_mechanic_rule_delta": 0,
+        "ordinary_startup_mapping": "Explicitly confirmed appeared/initial-ammo/fixed-public-anchor mode adaptation.",
+        "not_confirmed": [
+          "all-failed/zero-return hourglass submission/use-count boundary",
+          "in-check preflight and exact begin/deadline/recording interfaces",
+          "same-turn repeated hourglass use",
+          "game implementation/runtime/scoring thaw/NET resume"
+        ]
       }
     ]
   },
@@ -625,15 +651,43 @@
         "all-source event ordering/initial opening repetition segment implementation",
         "engine implementation or runtime acceptance"
       ]
+    },
+    {
+      "confirmation_id": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+      "status": "confirmed_shared_design_adopted_into_standard_documents",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": {
+        "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+        "path": "worklines/main/ADJUDICATION.json",
+        "record_version": "1.51",
+        "git_blob_sha": "aa2fe2fc76b911ed2c4a9d821dd5ce64fe056074",
+        "read_scope": "complete new repetition_public_body_equivalence and matching project_specific_confirmation; prior unchanged1.50 policy retained, not full-document re-audit"
+      },
+      "source_summary": "内部棋子编号本身不区分重复局面。按来源应计入的共同公开有效属性、资格和公开绑定关系都相同，只是相同棋子的内部编号互换，仍算同一局面；公开防御、飞行、可用资格或公开绑定关系不同，仍须区分。秘密寄宿、秘密受训对象和单方洞察不因此进入键。",
+      "confirmed_at_local": "2026-10-16T15:35:18+08:00",
+      "source_user_quote": "同意",
+      "new_confirmation_from_this_transfer": false,
+      "new_local_standard_confirmation": false,
+      "implementation": false,
+      "not_approved": [
+        "Complete key schema/hash/canonical graph algorithm.",
+        "H15 optional public progress representation.",
+        "Any new publicity of bindings, current secret faction, or H14 historical observations.",
+        "Pressure eligibility/exclusions, all-source ordering or engine implementation."
+      ]
     }
   ],
   "UI_approval_source": "ui/current_metadata/APPROVAL_REGISTER.json",
   "new_rules_approved_by_this_merge": 0,
   "latest_standard_update": {
-    "at_local": "2026-10-16T15:35:11+08:00",
+    "at_local": "2026-10-16T16:05:40+08:00",
     "new_confirmation_count": 1,
-    "confirmation_id": "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
-    "scope": "standard_normal_ground_pawn_body",
-    "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687"
+    "confirmation_id": "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016",
+    "scope": "standard_D01_public_start_fixed_public_anchors_and_source_body",
+    "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c"
   }
 }
