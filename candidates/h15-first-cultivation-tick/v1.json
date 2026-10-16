@@ -1,0 +1,100 @@
+{
+  "schema": "lezi.design.candidate.v1",
+  "id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+  "status": "pending_user_confirmation_not_implemented",
+  "title": "H15首次培养计数点：启动后实际到达的首个己方正常正式回合开始",
+  "mode_ids": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "origin": "Concrete review of the already-pending next-own-begin direction in branch H15 delta section6; not a new approval or resurrection of an obsolete mechanism.",
+  "source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+  "sources": [
+    {
+      "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+      "path": "worklines/standard/rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
+      "read_scope": "full; three-mode freedom/once-only/death failure and retained unresolved first tick/cost/empty pool",
+      "git_blob_sha": "591aa217fe85e624a49bc491407141e8bdd7d9bc"
+    },
+    {
+      "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
+      "read_scope": "core1, half-chaos training binding/time paragraph and section6 remaining first-count candidate; private-progress wording remains superseded by current shared source",
+      "git_blob_sha": "1207f415a2681aafcd20df7dd9b35d03a0276a61"
+    },
+    {
+      "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "read_scope": "H15 opening/later start and unresolved first tick"
+    },
+    {
+      "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+      "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+      "read_scope": "normal formal-turn phases and child counters; current-control/public covered identity; section8 complete public/private exception contract",
+      "git_blob_sha": "e6daf86145453a0ff8ad20d68facc39d07c46778"
+    }
+  ],
+  "scope": "First cultivation increment after a successful initial training start only; preserves existing later normal-begin progression.",
+  "proposal": [
+    "开局成功启动训练：第一次培养+1发生在实际到达的首个己方正常正式回合开始培养结算；开局启动本身不额外送一次进度。",
+    "在第T个己方正常正式回合开始结算后成功启动：该次已闭合的开始结算不追补培养，启动时进度0；第一次+1发生在后续实际到达的下一个己方正常正式回合开始培养结算。",
+    "其后沿用既有规则：每个合格己方正常正式回合开始累计1；达到当前有效兵种成本时按既有合法来源处理毕业。",
+    "额外、强迫、技能子行动、洗牌动作及重复递送本身不另加培养；已经失败或终局后不虚造新的培养机会。"
+  ],
+  "examples": [
+    {
+      "case": "兵成本2；开局成功启动，受训棋一直存活且后续培养结算合法",
+      "timeline": [
+        "首个己方正常正式回合开始1/2",
+        "第二个己方正常正式回合开始2/2，进入既有毕业处理"
+      ]
+    },
+    {
+      "case": "兵成本2；在己方T5开始结算后成功启动，受训棋一直存活且后续培养结算合法",
+      "timeline": [
+        "T5启动0/2",
+        "T6开始1/2",
+        "T7开始2/2，进入既有毕业处理"
+      ]
+    },
+    {
+      "case": "同一begin重复请求或追加子行动",
+      "timeline": [
+        "不额外增加培养"
+      ]
+    }
+  ],
+  "why_proposed": "Start is authorized after begin settlement. Counting from the next genuine own begin gives one consistent boundary and avoids retroactively reopening a closed begin. This is design reasoning, not an inferred prior approval.",
+  "alternative_considered": "启动当回合立刻+1会追补已闭合begin，需另作规则；未采用。开局与中途一律再空等一个完整己方begin会改变既有开局培养节奏，未推荐。",
+  "preserved": [
+    "one successful start per game and no refund by H06/H11/revival",
+    "no retraining after trainee death",
+    "current costs兵2/士2/象3/马5/炮6/车6",
+    "hidden trainee/original-faction recruitment and current-controller graduation",
+    "confirmed half-chaos H11 binding/progress preservation",
+    "all approved adjudication sample/count/terminal rules"
+  ],
+  "not_decided": [
+    "training start action cost",
+    "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
+    "H15 progress mandatory publicity or forced privacy, status/failure output",
+    "H15 first tick versus M07 same-begin ordering",
+    "H06 progress/body/status restoration beyond existing exception",
+    "other modes H11 space semantics",
+    "complete repetition key, pressure, implementation/runtime/scoring/NET"
+  ],
+  "approval": {
+    "approved": false,
+    "user_quote": null,
+    "continue_is_approval": false,
+    "question": "是否同意这个首次培养计数点用于三个模式？"
+  },
+  "verification": {
+    "source_status": "V2 existing unresolved direction; V1 timeline reasoning",
+    "examples": "abstract design timelines, not reachable engine fixtures",
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "independent_review": false
+  }
+}
