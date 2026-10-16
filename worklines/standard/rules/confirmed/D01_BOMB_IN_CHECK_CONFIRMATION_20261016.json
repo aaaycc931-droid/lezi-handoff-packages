@@ -1,0 +1,72 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+  "confirmed_at_local": "2026-10-16T20:01:29+08:00",
+  "user_quote": "同意",
+  "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_bomb_gate_question",
+  "origin_workline": "standard",
+  "review_id": "D01-BOMB-IN-CHECK-GATE",
+  "reviewed_candidate": {
+    "commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜D01 无限龙投弹的受将门槛"
+  },
+  "immediately_preceding_question": "是否同意这项三模式D01投弹门槛？",
+  "presented_clauses": [
+    "己方被将军时不能先投弹再靠普通行动解将。",
+    "拒绝不扣弹药或全军名额；先合法应将，普通主行动后不补开投弹窗口。"
+  ],
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only where D01 is legally available and within original source window; all original caster/control/appeared/range/target/remaining quota and other legality conditions remain.",
+  "policy": {
+    "currently_in_ordinary_legal_check_blocks_dragon_bomb": true,
+    "later_main_action_promise_allows_bomb_before_evading_check": false,
+    "rejected_bomb_consumes_ammo": false,
+    "rejected_bomb_consumes_army_turn_quota": false,
+    "rejected_bomb_applies_pollution_or_collapse": false,
+    "rejected_bomb_resets_or_extends_clock": false,
+    "rejected_request_is_successful_bomb_refund": false,
+    "ordinary_main_action_reopens_bomb_window": false,
+    "not_in_check_automatically_passes_all_other_legality": false,
+    "source_caster_range_target_ammo_and_army_one_per_turn_preserved": true,
+    "valid_bomb_retains_normal_main_action": true,
+    "pollution_becomes_path_blocker_cannon_screen_or_royal_shield": false,
+    "collapse_is_immediate_death_on_bomb_hit": false,
+    "hourglass_own_full_atom_check_relief_permission_preserved": true,
+    "own_main_action_collapse_deadline": "not_decided_by_this_confirmation"
+  },
+  "preserved": [
+    "All three preceding direct shared D01 hourglass confirmations and ordinary initialization.",
+    "Full-army maximum1 bomb per own formal turn, ammo cap1 and source target restrictions.",
+    "Hidden identities/anchors/privacy, formal terminal/source-order boundaries and unchanged collapse text."
+  ],
+  "not_confirmed": [
+    "own-main-action collapse deadline interpretation or exact begin/end event order",
+    "complete checkmate response-space/clock algorithm or independent terminal-source interfaces",
+    "D01 mode pool availability/complete adaptation, other hero skill changes or full repetition key/fieldmap",
+    "game code/runtime/privacy acceptance, scoring thaw or NET resume"
+  ],
+  "predecessor_shared_confirmations": [
+    "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+    "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
+    "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016"
+  ],
+  "delta_classification": "One new shared bomb gate; ordinary29 not recounted.",
+  "verification": {
+    "source_confirmation": "V2 direct user statement and complete immediately preceding candidate",
+    "conditional_reasoning": "V1 same-assistant source cases",
+    "BG_S01_BG01_BG08": "unrun",
+    "new_game_code_changes": 0,
+    "new_engine_tests": 0
+  },
+  "handoff": {
+    "canonical_main_receipt_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_publication_commit": "Resolve from Git history; not prefilled as a future self commit."
+  }
+}

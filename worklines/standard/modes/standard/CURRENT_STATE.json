@@ -1,5 +1,5 @@
 {
-  "status": "shared_D01_hourglass_check_safety_confirmed_bomb_gate_pending",
+  "status": "shared_D01_bomb_gate_confirmed_own_action_deadline_pending",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "用户决定：当前受将时不允许先投弹，拒绝不扣弹/全军名额；先合法应将，普通主行动后不回开投弹窗口。本共享D01投弹门槛尚未批准。",
+  "next_action": "用户决定：己方正常主行动/其落位原子内首次获得崩坏，截止设下一己方正式回合末，排除当前回合末；对手回合获得/连续污染不续期/合法解除等保持。本项未批准。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,9 +29,9 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+    "id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
     "user_quote": "同意",
-    "at_local": "2026-10-16T19:44:08+08:00",
+    "at_local": "2026-10-16T20:01:29+08:00",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
@@ -69,5 +69,7 @@
   "D01_zero_appeared_source": "rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
   "D01_check_safety_preflight_confirmed": true,
   "D01_check_safety_source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
-  "D01_bomb_in_check_gate_confirmed": false
+  "D01_bomb_in_check_gate_confirmed": true,
+  "D01_bomb_in_check_source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+  "D01_own_action_collapse_deadline_confirmed": false
 }

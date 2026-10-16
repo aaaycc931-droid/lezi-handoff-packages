@@ -2,26 +2,26 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T19:48:07+08:00",
-  "source_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
-  "base_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
-  "approval_context_source_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
-  "phase": "hourglass_safety_confirmed_bomb_in_check_gate_prepared",
+  "prepared_at_local": "2026-10-16T20:05:34+08:00",
+  "source_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+  "base_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+  "approval_context_source_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+  "phase": "bomb_gate_confirmed_own_action_collapse_deadline_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定：当前受将时不允许先投弹，拒绝不扣弹/全军名额；先合法应将，普通主行动后不回开投弹窗口。本共享D01投弹门槛尚未批准。",
+  "current_breakpoint": "用户决定：己方正常主行动/其落位原子内首次获得崩坏，截止设下一己方正式回合末，排除当前回合末；对手回合获得/连续污染不续期/合法解除等保持。本项未批准。",
   "confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
-      "kind": "new_direct_shared_hourglass_safety_confirmation",
+      "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+      "kind": "new_direct_shared_bomb_gate_confirmation",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
-      "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+      "source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
       "new_local_standard_confirmation": false,
-      "confirmed_at_local": "2026-10-16T19:44:08+08:00",
+      "confirmed_at_local": "2026-10-16T20:01:29+08:00",
       "user_quote": "同意"
     }
   ],
@@ -31,7 +31,7 @@
     "current_index_count": 29,
     "all29_local_records_unchanged": true,
     "existing_shared_records_unchanged": true,
-    "shared_confirmations_originated_here_total": 3,
+    "shared_confirmations_originated_here_total": 4,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
@@ -68,15 +68,15 @@
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
   "pending_decision": {
-    "id": "D01-BOMB-IN-CHECK-GATE",
+    "id": "D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE",
     "status": "proposal_pending_user_confirmation",
-    "hourglass_confirmation_does_not_approve_bomb_gate": true
+    "bomb_confirmation_does_not_approve_own_action_deadline": true
   },
   "changes": [
-    "Record one shared hourglass check-safety confirmation; ordinary29 unchanged.",
-    "Update current12A.3 with original source, preserve six-step order and prior originals.",
-    "Prepare separate bomb in-check gate, BG-S01/BG01-BG08 unrun; no automatic extension.",
-    "Preserve all earlier unresolved receiver receipt scopes and append current confirmation."
+    "Record explicit shared bomb in-check gate, ordinary29 unchanged.",
+    "Update current12A.5/reference while preserving prior originals and current12A.7 deadline text.",
+    "Prepare own-normal-main-action collapse deadline choice with TC-S01/8 unrun specs; all other source edges retained.",
+    "Preserve all prior pending receiver scopes and append new shared confirmation."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -91,86 +91,87 @@
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
     "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-    "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+    "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
     "worklines/standard/PUBLISHED_FILES.json"
   ],
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 5277,
-      "sha256": "36f5f57a5c7ebd233d754878a368240a11267e998baa341555cee75a8b435623"
+      "size": 5288,
+      "sha256": "b853233e02eb3dae1dcd15dc7f4f92f5d2516e65878bfaac3c7d5841727b4a88"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 12229,
-      "sha256": "24a38e9fd2e3e073e9870908ab16e8c3e7e374c9dddb663a843ed1dcc1fdad2f"
+      "size": 12587,
+      "sha256": "ffcb8564282c9b2140af3400dd6e01cdb623b97fc76be932ed403b1196f24d7b"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1355,
-      "sha256": "548ee4801713aa8e29ac86ae369651c0059f7488988b11d2e6e2a48eed9613d9"
+      "size": 1466,
+      "sha256": "cdf7c6ebb21425d24cdaa39090b2d5b0b856c1e235b190f6ebdd0cfa61f8fdb7"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 31377,
-      "sha256": "788bada662e9553d4eef78c7e047dfb48d60f939677702844de8e8bf3f423377"
+      "size": 32478,
+      "sha256": "b912bc5abd285f0f742e3c587f64e9f1fbc00d950d9341900e7e6c48fa2a7b84"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 2661,
-      "sha256": "6e29119390fcce0fdb1c1dc4a1b27588d371cc9844aea3819c94d43b5a9a8a3c"
+      "size": 2632,
+      "sha256": "f5aba205c6ac0e2b5fa5b585791a9efbb0f3fbe4c7e39f87714a1976312e492b"
     },
     {
       "path": "SOURCE_PRIORITY.json",
-      "size": 1946,
-      "sha256": "887e0f285c3787587b916f6323ac6efb0c174480fa2d42c8d622e053e876ce74"
+      "size": 2289,
+      "sha256": "65095ec0f0ec01b1ee847524e87b38774edee8a2e030d260c5571a569bca2ae6"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 45811,
-      "sha256": "c90ba5750ebbd1f00c25c0de742ca1f5e91b3e13bc1e4248b36d9693c03bf3c3"
+      "size": 46983,
+      "sha256": "01d4275008e14a2541cd3878fc0c812d48a7e2c6d85940a0b6aceb7784cc7984"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 184563,
-      "sha256": "b62403eaf015731e848bf3346eea1f3c31178314278bac5bac9e4008586e00a2"
+      "size": 190232,
+      "sha256": "8169e72ce04f485ce5180f490b8f66da524dbc30e7a7191e939e21774cd12238"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 3225,
-      "sha256": "fb58abfb10a6a1821182a32f2d2551dacad498ef2c7a3a673a6681ed68f9450a"
+      "size": 3407,
+      "sha256": "ed6f561a288a7e02de4deee27f697ade175b1135d563525cdccfe8bdac87bc9a"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 25535,
-      "sha256": "40ecc200535689da7ff0bbe8c8568f13c3505740fa22e3cfe3843ff3822471f6"
+      "size": 26225,
+      "sha256": "2a3e535681ea54366c5519a351b41431a32e1feaacb223605cda7a57133b5a30"
     },
     {
       "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-      "size": 21072,
-      "sha256": "00d080b2b6090b2f3b8d455a83e790cfa27b95536fe2a146d932c1bf85834665"
+      "size": 22100,
+      "sha256": "bd483dcd1497acbd131ab3d9db9efc41d42c2ab5bae2f3f36f9a6e6627c716ff"
     },
     {
-      "path": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
-      "size": 4312,
-      "sha256": "c3af07c48977a345d5900f6d8745940e4fdf3ae6151a368612f3155c92bfdac4"
+      "path": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+      "size": 3683,
+      "sha256": "d44c4e338061faa407164a55c09ffdf95932f4be67998bb4c7b6a779940bdad5"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
-    "explicit_hourglass_safety_context_checked": true,
-    "original_CK10_specs_preserved": true,
+    "explicit_bomb_gate_context_checked": true,
+    "original_BG8_specs_preserved": true,
     "all29_ordinary_confirmation_records_unchanged": true,
     "prior_original_shared_confirmations_unchanged": true,
     "current_mutation_outside_labeled_update_unchanged": true,
+    "collapse_deadline_current_body_unchanged": true,
     "original_source_archives_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "maintenance_validation_script_changes": 0,
     "updated_verify_dispatch": {
       "status": "passed",
-      "files": 293,
+      "files": 294,
       "game_engine_tests": 0,
       "scope": "published_project_file_integrity"
     }
@@ -189,7 +190,8 @@
     "SC01-SC08",
     "ZA01-ZA08",
     "CK-S01/CK-S02/CK01-CK10",
-    "BG-S01/BG01-BG08"
+    "BG-S01/BG01-BG08",
+    "TC-S01/TC01-TC08"
   ],
   "shared_coordination": [
     {
@@ -226,8 +228,8 @@
     },
     {
       "id": "STD-D01-EDGES",
-      "status": "hourglass_safety_confirmed_bomb_gate_and_order_pending",
-      "detail": "Hourglass reviewed safety branch confirmed. Bomb in-check gate, independent terminal/full response-space-clock/exact source order and mapping remain separate."
+      "status": "bomb_gate_confirmed_own_action_deadline_and_order_pending",
+      "detail": "Bomb in-check gate confirmed; own-normal-main-action collapse deadline proposed, exact events/full terminal-search-clock/mapping remain separate."
     },
     {
       "id": "HC-MAIN-H16-ACTION-TIER",
@@ -261,17 +263,24 @@
       "owner": "main/standard",
       "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
       "detail": "Full current hourglass atom must independently leave own royal safe in reviewed branch; no later repair. Main/other receiver adoption unverified."
+    },
+    {
+      "id": "D01-BOMB-IN-CHECK-GATE",
+      "status": "explicit_shared_bomb_gate_confirmed_pending_main_receipt",
+      "owner": "main/standard",
+      "source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+      "detail": "Current ordinary check blocks bomb; refusal no ammo/quota/status changes, no post-main reopening. Receiver adoption unknown."
     }
   ],
   "remote_reconciliation": {
-    "parent": "fbc5e1f89874239573cdd784338104d163821ae4",
-    "approval_context_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+    "parent": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+    "approval_context_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
     "remote_head_unchanged_since_prior_publication": true,
     "ordinary_target_paths_changed_before_local_edit": false,
     "unreturned_local_changes_found": 0,
     "earlier_concurrent_commits_preserved_in_parent_history": true
   },
-  "implementation_status": "confirmed_shared_hourglass_safety_and_pending_bomb_gate_documents_only",
+  "implementation_status": "confirmed_shared_bomb_gate_and_pending_deadline_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -284,17 +293,17 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "Shared hourglass check-safety confirmation and separate bomb in-check gate.",
+    "audit_trigger": "Shared bomb-gate confirmation and own-main-action collapse deadline ambiguity review.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User directly approves prior explicit shared hourglass check-safety question.",
-      "D01 pollution is not path blocker; time collapse is delayed to source deadline.",
-      "Ordinary29 and two earlier direct shared originals remain unchanged."
+      "User directly approves preceding bomb-gate question.",
+      "D01 source retains next-own-formal-turn-end wording; general timing defaults count acquisition turn unless explicit exception.",
+      "Current collapse deadline body remains unchanged pending precise decision."
     ],
     "user_statements": [
       {
         "quote": "同意",
-        "at_local": "2026-10-16T19:44:08+08:00",
+        "at_local": "2026-10-16T20:01:29+08:00",
         "scope": [
           "original_jieqi",
           "standard_xiangqi",
@@ -304,65 +313,65 @@
     ],
     "claim_register": [
       {
-        "claim": "hourglass full-atom safety gate confirmed",
+        "claim": "bomb in-check gate confirmed",
         "type": "user_statement",
-        "source": "Current user and full candidate at fbc5e1f89874239573cdd784338104d163821ae4",
+        "source": "Current user and complete prior candidate at e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
         "verification": "V2"
       },
       {
-        "claim": "bomb range/whole-army limit, pollution non-blocking and delayed collapse",
+        "claim": "source next-own-turn wording, no continuous-contamination renewal, generic same-turn default",
         "type": "document_fact",
-        "source": "Full D0112A.4-7",
+        "source": "D0112A.7/14.3 and full formal timing modules",
         "verification": "V2"
       },
       {
-        "claim": "prohibit bomb when currently in check",
+        "claim": "own normal main action acquisition excludes current turn end",
         "type": "proposal",
-        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 无限龙投弹的受将门槛",
+        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 己方主行动中获得时间崩坏的截止点",
         "verification": "V0 unapproved"
       },
       {
-        "claim": "BG-S01 direct rook check remains after prospective pollution",
+        "claim": "TC-S01 timing outcomes",
         "type": "ai_inference",
-        "source": "same-assistant conditional case",
+        "source": "same-assistant conditional source case",
         "verification": "V1 unrun"
       }
     ],
     "ai_interpretations": [
-      "Approval is hourglass safety only; bomb requires separate decision.",
-      "Delayed collapse cannot be treated as checker immediately destroyed."
+      "Bomb approval does not settle collapse deadline.",
+      "Current source wording and generic default require explicit own-action subcase clarification; no full historical authority claim."
     ],
     "assumptions": [
-      "BG-S01 is a conditional board with no independent terminal; all listed source prerequisites are explicit."
+      "TC-S01 is conditional source-legal normal main action with no independent terminal."
     ],
     "unknowns": [
-      "User choice on bomb in-check gate.",
-      "Complete natural prefix/runtime and full checkmate skill/clock search.",
-      "Independent terminal-source and exact begin/deadline ordering interfaces."
+      "User choice on own-main-action deadline.",
+      "Any later explicit historical own-action deadline example not located here.",
+      "End-phase acquisition/skip/cancel/history interfaces and runtime."
     ],
     "competing_explanations": [
-      "Current check blocks bomb; recommended.",
-      "Permit bomb before main response while still in check; not confirmed."
+      "Exclude current own turn: deadline next own formal turn end; recommended.",
+      "Use nearest following own-turn-end event, including current own turn; not chosen or approved."
     ],
     "falsification_conditions": [
-      "Higher-priority explicit bomb check clause found.",
-      "Complete state adds source effect or legal restriction absent from conditional example.",
-      "User chooses other pending gate."
+      "Higher-priority explicit own-action deadline clause found.",
+      "Full state invalidates assumed legal action or adds independent terminal.",
+      "User chooses pending deadline alternative."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write confirmed hourglass safety and prepare unapproved bomb gate within this workline only; no receiver adoption/runtime claims.",
+    "action_boundary": "Write confirmed bomb gate; leave current collapse deadline untouched while preparing explicit scoped choice.",
     "failure_conditions": [
-      "Count shared as ordinary30.",
-      "Treat hourglass approval as bomb prohibition already approved.",
-      "Treat pollution as path blocker or delayed collapse as instant death.",
-      "Fabricate other receiver adoption or game test success."
+      "Count shared confirmation as ordinary30.",
+      "Silently select one deadline reading as already confirmed.",
+      "Reset continuous pollution deadline on A-to-B move.",
+      "Claim game/runtime or receiver adoption without evidence."
     ],
-    "residual_risk": "Bounded sources and same-assistant conditions do not prove all history, full legal reachability or runtime privacy.",
-    "next_validation_action": "Main consumes all three exact shared originals; user separately decides bomb gate; source-order/full search interfaces remain pending.",
+    "residual_risk": "Limited sources and conditional reasoning do not prove all history or event ordering/runtime.",
+    "next_validation_action": "Main consumes four exact shared confirmations; user decides own-action deadline separately; precise events remain pending.",
     "action_resilience": {
       "maximum_exposure": "Fourteen ordinary-line document/source files; no game/runtime or messages.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected ordinary files from fbc5e1f89874239573cdd784338104d163821ae4 via normal commit preserving later unrelated work.",
+      "recovery": "Restore selected ordinary files from e08e84593954a1e2c0bb1f966b8122cb5000ed9c by normal commit preserving later unrelated work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },
@@ -375,8 +384,8 @@
   },
   "shared_coordination_consumed": {
     "new_direct_shared_gameplay_confirmations": 1,
-    "hourglass_check_safety_approved": true,
-    "bomb_in_check_gate_approved": false,
+    "bomb_in_check_gate_approved": true,
+    "own_action_collapse_deadline_approved": false,
     "main_H15_candidate_approved": false
   },
   "collaboration_adopted": {
@@ -398,40 +407,36 @@
   },
   "shared_confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
-      "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+      "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+      "source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
-      "confirmed_at_local": "2026-10-16T19:44:08+08:00",
+      "confirmed_at_local": "2026-10-16T20:01:29+08:00",
       "user_quote": "同意",
       "policy": {
-        "branch_guard": "Own-royal safety branch where both royals survive the closed hourglass atom and no independent terminal source applies; those other sources remain separately governed.",
-        "ordinary_check_before_official_terminal_can_enter_hourglass_preflight": true,
-        "full_six_steps_and_committed_landing_aftermath_simulated_before_submission": true,
-        "intermediate_board_safety_alone_decides_legality": false,
-        "closed_atom_must_leave_own_royal_free_of_all_legal_check": true,
-        "initially_safe_but_closed_atom_exposes_own_royal_submission_allowed": false,
-        "later_hourglass_or_main_action_can_repair_current_unsafe_submission": false,
-        "each_sequential_use_independently_passes_safety": true,
-        "definitely_unsafe_preflight_submits_or_consumes_uses": false,
-        "rejected_preflight_changes_board_revival_cleanse_or_ammunition": false,
-        "rejected_preflight_resets_or_extends_deadline": false,
-        "rejection_is_zero_benefit_refund": false,
-        "valid_submission_consumes_uses": 1,
-        "valid_nonterminal_submission_retains_normal_main_action": true,
-        "unknown_or_incomplete_branch_proves_safe_or_no_legal_response": false,
-        "hidden_identity_probe_permission_added": false,
-        "official_terminal_can_be_reversed": false,
-        "bomb_in_check_gate": "not_decided_by_this_confirmation",
-        "complete_checkmate_skill_search_clock_and_exact_begin_order": "not_decided_by_this_confirmation"
+        "currently_in_ordinary_legal_check_blocks_dragon_bomb": true,
+        "later_main_action_promise_allows_bomb_before_evading_check": false,
+        "rejected_bomb_consumes_ammo": false,
+        "rejected_bomb_consumes_army_turn_quota": false,
+        "rejected_bomb_applies_pollution_or_collapse": false,
+        "rejected_bomb_resets_or_extends_clock": false,
+        "rejected_request_is_successful_bomb_refund": false,
+        "ordinary_main_action_reopens_bomb_window": false,
+        "not_in_check_automatically_passes_all_other_legality": false,
+        "source_caster_range_target_ammo_and_army_one_per_turn_preserved": true,
+        "valid_bomb_retains_normal_main_action": true,
+        "pollution_becomes_path_blocker_cannon_screen_or_royal_shield": false,
+        "collapse_is_immediate_death_on_bomb_hit": false,
+        "hourglass_own_full_atom_check_relief_permission_preserved": true,
+        "own_main_action_collapse_deadline": "not_decided_by_this_confirmation"
       },
       "reviewed_candidate": {
-        "commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+        "commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "当前待决策｜D01 沙漏受将与王安全预检"
+        "heading": "当前待决策｜D01 无限龙投弹的受将门槛"
       }
     }
   ],
@@ -479,6 +484,21 @@
       "body": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 沙漏受将与王安全预检"
+      },
+      "received_verified": null,
+      "adopted_verified": null
+    },
+    {
+      "id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜D01 无限龙投弹的受将门槛"
       },
       "received_verified": null,
       "adopted_verified": null

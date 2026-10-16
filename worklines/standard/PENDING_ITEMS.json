@@ -1,24 +1,24 @@
 {
   "items": [
     {
-      "id": "D01-BOMB-IN-CHECK-GATE",
+      "id": "D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE",
       "status": "pending_user_decision",
-      "scope": "all_modes_where_D01_legally_available_bomb_in_check_gate_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 无限龙投弹的受将门槛",
+      "scope": "all_modes_where_D01_legally_available_own_normal_main_action_collapse_deadline_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 己方主行动中获得时间崩坏的截止点",
       "confirmed": false,
-      "not_approved_by_hourglass_confirmation": true,
+      "not_approved_by_bomb_gate_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "BG01",
-        "BG02",
-        "BG03",
-        "BG04",
-        "BG05",
-        "BG06",
-        "BG07",
-        "BG08"
+        "TC01",
+        "TC02",
+        "TC03",
+        "TC04",
+        "TC05",
+        "TC06",
+        "TC07",
+        "TC08"
       ],
       "conditional_unrun_case_ids": [
-        "BG-S01"
+        "TC-S01"
       ]
     },
     {
@@ -46,9 +46,9 @@
       "status": "source_alignment_pending",
       "scope": "D01 source/interface edges",
       "details": [
-        "bomb in-check gate: current shared candidate",
-        "independent terminal source interfaces and complete checkmate skill/clock search",
-        "exact begin/deadline and self-anchor event classification",
+        "own-normal-main-action collapse deadline: current shared candidate",
+        "exact begin/end events and self-anchor event classification",
+        "independent terminal source and complete checkmate skill/clock search",
         "remaining public field/source/pressure interfaces"
       ],
       "blocks_core_proposal_presentation": false,
@@ -56,7 +56,8 @@
       "same_turn_resolved_ordinary_only": true,
       "shared_hourglass_core_scope_confirmed": true,
       "zero_appeared_eligibility_confirmed": true,
-      "hourglass_check_safety_confirmed": true
+      "hourglass_check_safety_confirmed": true,
+      "bomb_in_check_gate_confirmed": true
     },
     {
       "id": "STD-M08-CROSSES",
@@ -680,6 +681,34 @@
       "prior_proposal_source": {
         "commit": "fbc5e1f89874239573cdd784338104d163821ae4",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 沙漏受将与王安全预检"
+      }
+    },
+    {
+      "id": "D01-BOMB-IN-CHECK-GATE",
+      "status": "confirmed_shared_bomb_gate_written_not_implemented_or_tested",
+      "scope": "all_modes_where_D01_legally_available_bomb_in_check_gate_only",
+      "source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+      "confirmed": true,
+      "not_approved_by_hourglass_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "BG01",
+        "BG02",
+        "BG03",
+        "BG04",
+        "BG05",
+        "BG06",
+        "BG07",
+        "BG08"
+      ],
+      "conditional_unrun_case_ids": [
+        "BG-S01"
+      ],
+      "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+      "confirmed_at_local": "2026-10-16T20:01:29+08:00",
+      "user_quote": "同意",
+      "prior_proposal_source": {
+        "commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 无限龙投弹的受将门槛"
       }
     }
   ]
