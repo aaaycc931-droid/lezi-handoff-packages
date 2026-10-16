@@ -3,7 +3,7 @@
   "receiver_workline": "half_chaos",
   "latest_by_source": {
     "main": {
-      "source_commit": "26736f643754ae22731a7540874835ddf4e21409",
+      "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
       "actual_reading": [
         {
           "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -94,6 +94,42 @@
           "commit": "26736f643754ae22731a7540874835ddf4e21409",
           "path": "worklines/main/PENDING_DECISION.json",
           "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+          "path": "START_HERE.md",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+          "path": "CURRENT_HANDOFF.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+          "path": "collaboration/CURRENT.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+          "path": "worklines/main/CURRENT_STATE.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+          "path": "worklines/main/READ_RECEIPTS.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+          "path": "worklines/main/SHARED_COORDINATION.json",
+          "read_scope": "full"
         }
       ],
       "received": "shared synchronization and current workflow scope above",
@@ -120,5 +156,21 @@
       "does_not_assert_other_receiver_reading": true,
       "prior_snapshot_source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e"
     }
+  },
+  "own_line_continuation": {
+    "source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+    "read": [
+      "worklines/half_chaos/CURRENT_STATE.json",
+      "worklines/half_chaos/NEXT_ACTIONS.json",
+      "WORKING.md current entry and relevant8.3/8.4, prior time/hidden-information contracts"
+    ],
+    "adopted": "H16 current breakpoint and inherited boundaries; no new rule approval"
+  },
+  "main_receipt_recheck": {
+    "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+    "actual_read_path": "worklines/main/READ_RECEIPTS.json",
+    "scope": "full",
+    "result": "at current remote head no main receipt for H14 commit66d4ed6; current main state/shared coordination still expose prior snapshot, no unpublished approval inferred",
+    "no_foreign_receipt_written": true
   }
 }
