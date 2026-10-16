@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "github_remote_handoff_prepared",
+  "status": "M04_restored_prepared_for_user_decision",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -13,7 +13,11 @@
     "current_body_source": "resolve body and working_revision from current_index at read time",
     "historical_project_excerpt": "collaboration/PROJECT_COLLABORATION_20261015.md",
     "historical_excerpt_revision": "2026-10-14.v0.8",
-    "receiver_reading_and_adoption_verified": false
+    "receiver_reading_and_adoption_verified": true,
+    "actually_read_working_revision": "2026-10-15.v0.10",
+    "formal_baseline": "1.8.0",
+    "gate": "L2",
+    "adoption_scope": "This standard conversation: relevant continuity, authorization, source, baseline and handoff workflow only; detailed sections in READ_RECEIPTS.json. No other receiver/effectiveness claim."
   },
   "source_preparation": "Sources are expanded at sources/standard; no user ZIP upload is needed. python3 prepare_sources.py checks current required paths and optionally restores historical source parts.",
   "source_root": "sources/standard",
@@ -22,17 +26,18 @@
   "next_task": {
     "id": "NEXT-STD-DESIGN-04",
     "subject": "M04 战车待定主体",
-    "action": "先完整恢复工作稿中“当前待决策｜M04 战车普通地面车继承”的现成方案与未运行规格，用简明具体情形呈现给用户决定；当前分发不是同意M04。确认后才继续M05、M06、M07、M08、D01。",
+    "action": "用户明确决定已恢复的M04普通地面车原方案；未确认前不推进M05为已确认。确认后按原序M05、M06、M07、M08、D01。",
     "pending_is_not_approved": true
   },
   "external_delivery": {
     "prepared_here": true,
     "sent_by_message_tool": false,
     "user_transfer_confirmed": false,
-    "recipient_reading_verified": false,
-    "recipient_adoption_verified": false,
+    "recipient_reading_verified": true,
+    "recipient_adoption_verified": true,
     "transport": "GitHub connector",
-    "routine_user_package_relay_required": false
+    "routine_user_package_relay_required": false,
+    "verification_scope": "This standard receiver actually read the pinned scoped sources and adopted confirmed design boundaries. M04 remains pending; main receipt of this new phase return is unknown."
   },
   "prior_main_receipt": {
     "received": true,
@@ -56,7 +61,7 @@
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
   "limitation_audit_status": "partial",
-  "verification_level": "V2_source_checked; packaging checks only; no independent recipient execution",
+  "verification_level": "V2 scoped source/file identity checked; V1 same-assistant illustrative cases; no independent review, game code or engine execution.",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -78,5 +83,30 @@
       "standard"
     ]
   },
-  "publication_scope": "PUBLICATION_SCOPE.json"
+  "publication_scope": "PUBLICATION_SCOPE.json",
+  "updated_at_local": "2026-10-16T12:44:26+08:00",
+  "source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+  "publication_parent_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+  "phase": "M04_source_recovery_and_reviewable_cases_prepared",
+  "new_rule_confirmations_this_round": 0,
+  "retained_source_round_confirmations": 21,
+  "M04_status": "proposal_pending_user_confirmation",
+  "phase_return": "RETURN_TO_MAIN.json",
+  "read_receipts": "READ_RECEIPTS.json",
+  "receiver_protection": {
+    "visible_initial_local_unreturned_files_found": 0,
+    "other_dialogue_unreturned_work": "unknown; not overwritten",
+    "original_sources_and_prior_returns_unchanged": true,
+    "concurrent_main_and_half_chaos_commits_preserved": [
+      "26736f643754ae22731a7540874835ddf4e21409",
+      "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7"
+    ]
+  },
+  "this_round_main_received_verified": null,
+  "this_round_main_adopted_verified": null,
+  "source_gaps": [
+    "No full original chat export or audit of current live jieqi-engine HEAD/PR.",
+    "Full historical/private archives are not all remotely migrated; no missing dependency blocks this M04 ground-body presentation.",
+    "H15 flying-rook, assassination geometry, multi-defense and H10 atomic identity crossings remain unresolved/unrun."
+  ]
 }

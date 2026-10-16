@@ -1,0 +1,142 @@
+{
+  "schema": "lezi.workline_return.v1",
+  "from_workline": "standard",
+  "to_workline": "main",
+  "prepared_at_local": "2026-10-16T12:44:26+08:00",
+  "source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+  "base_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+  "phase": "M04_source_recovery_and_reviewable_cases_prepared",
+  "entry": "worklines/standard/START_HERE.txt",
+  "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+  "current_breakpoint": "M04 existing ground-body proposal awaiting standard user decision",
+  "confirmed_delta": [],
+  "new_user_rule_confirmations": 0,
+  "preserved_confirmations": {
+    "standard_source_round_count": 21,
+    "earlier_scoped_decisions": "retained, original sources unchanged",
+    "index": "CONFIRMATION_REGISTER.json"
+  },
+  "pending_decision": {
+    "id": "STD-M04-WAR-CHARIOT-GROUND-KEEP",
+    "status": "proposal_pending_user_confirmation",
+    "next_after_explicit_confirmation": [
+      "M05",
+      "M06",
+      "M07",
+      "M08",
+      "D01"
+    ]
+  },
+  "changes": [
+    "Restore complete existing M04 and keep original M04 body/WC01-WC11 unchanged.",
+    "Prepare concrete illustrative cases and clarify normal empty-square movement, one ground-path charge, target permissions, defense return and general-threat boundaries.",
+    "Record actual receiver reading/adoption, latest concurrent coordination, unchanged confirmations and next breakpoint."
+  ],
+  "changed_paths": [
+    "worklines/standard/START_HERE.txt",
+    "worklines/standard/CURRENT_STATE.json",
+    "worklines/standard/NEXT_ACTIONS.json",
+    "worklines/standard/PENDING_ITEMS.json",
+    "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "worklines/standard/READ_RECEIPTS.json",
+    "worklines/standard/RETURN_TO_MAIN.json",
+    "worklines/standard/PUBLISHED_FILES.json"
+  ],
+  "file_identities": [
+    {
+      "path": "START_HERE.txt",
+      "size": 4620,
+      "sha256": "ee7adbfac35bbc2f9337b9f40e1f0bcfa12c1b2bf89d6a6c21a930b818d0324c"
+    },
+    {
+      "path": "CURRENT_STATE.json",
+      "size": 5093,
+      "sha256": "b7ff8022bf6e7bcf99eb29d6d889ca3840084d1ff1602752f8c616b5846f8a36"
+    },
+    {
+      "path": "NEXT_ACTIONS.json",
+      "size": 1004,
+      "sha256": "394a79fd6d7ef2a64b6ddda8af41851ffe7fb9d33a9e960b6cfc6eaf7aea48e8"
+    },
+    {
+      "path": "PENDING_ITEMS.json",
+      "size": 7878,
+      "sha256": "7aa583ee366ad312cd22ef8de242906e8c9efb5aef8e413fb075952c2ad69616"
+    },
+    {
+      "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+      "size": 114120,
+      "sha256": "14b3432cd5285da6b497d9f7ccf1288997257678d25c2e1d06d3856f550b8840"
+    },
+    {
+      "path": "READ_RECEIPTS.json",
+      "size": 13538,
+      "sha256": "b3c8b729817d7db2ae075ebd51bbce5d4ffdd1e872abbb5aff13e0814e78bc79"
+    }
+  ],
+  "manifest": "worklines/standard/PUBLISHED_FILES.json",
+  "manifest_note": "Manifest covers this return and payload; excludes itself to avoid a self-hash cycle. Result commit is resolved from Git history, not prefilled.",
+  "source_and_confirmation_scope": "READ_RECEIPTS.json plus unchanged CONFIRMATION_REGISTER.json and original working source.",
+  "actual_validation": {
+    "prepare_sources": "sources_ready; game_engine_run=false",
+    "initial_verify_dispatch": {
+      "status": "passed",
+      "files": 288,
+      "game_engine_tests": 0,
+      "scope": "published_project_file_integrity"
+    },
+    "source_restoration_git_objects_checked": 296,
+    "source_restoration_mismatches": 0,
+    "original_M04_proposal_and_unrun_specs_unchanged": true,
+    "new_game_code_changes": 0,
+    "new_engine_tests": 0,
+    "updated_verify_dispatch": {
+      "status": "passed",
+      "files": 290,
+      "game_engine_tests": 0,
+      "scope": "published_project_file_integrity"
+    }
+  },
+  "unrun": [
+    "WC01-WC11",
+    "legal reachable-prefix fixtures and full M04 engine acceptance",
+    "flying-rook/assassination/multiple-defense/H10 atomic crossings",
+    "NET"
+  ],
+  "shared_coordination": [
+    {
+      "id": "STD-M04-CODE-TARGET-ALIGNMENT",
+      "kind": "historical_static_implementation_alignment_not_new_rule",
+      "detail": "Pinned rules.ts general-target branch permits war_chariot direct enemy general; current source/proposal does not. Old non-stealth comment also conflicts with ground-invisible counting. No live-code audit/change; current source controls.",
+      "source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/rules.ts",
+      "blocks_ground_proposal_presentation": false
+    },
+    {
+      "id": "existing_shared_dependencies",
+      "source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+      "source": "worklines/main/SHARED_COORDINATION.json",
+      "status": "retained pending in original scopes; no shared decision invented"
+    }
+  ],
+  "implementation_status": "design/source/line documents only",
+  "scoring": {
+    "frozen": true,
+    "q": null,
+    "H": null,
+    "I": null,
+    "B": null,
+    "J": null,
+    "n": 0,
+    "featuresReady": false
+  },
+  "NET": "paused",
+  "delivery": {
+    "transport": "GitHub connector",
+    "result_commit": "resolve containing commit from Git history after publication",
+    "recipient_reading_verified": null,
+    "recipient_adoption_verified": null,
+    "automatic_message_sent": false
+  },
+  "limits": "Static/file checks and same-assistant examples are not game acceptance or independent verification. Main must record its own actual read/adoption."
+}

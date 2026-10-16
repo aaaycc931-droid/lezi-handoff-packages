@@ -78,7 +78,26 @@
       "status": "pending_user_decision",
       "scope": "standard",
       "source": "returns/standard/PENDING_ITEMS.json",
-      "not_approved_by_closeout": true
+      "not_approved_by_closeout": true,
+      "active_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+      "decision_id": "STD-M04-WAR-CHARIOT-GROUND-KEEP",
+      "restored_at_local": "2026-10-16T12:44:26+08:00",
+      "new_confirmation": false,
+      "unrun_spec_ids": [
+        "WC01",
+        "WC02",
+        "WC03",
+        "WC04",
+        "WC05",
+        "WC06",
+        "WC07",
+        "WC08",
+        "WC09",
+        "WC10",
+        "WC11"
+      ],
+      "static_implementation_alignment": "Pinned historical rules.ts has direct-general-target exception and stale non-stealth wording; current source takes precedence; no live-code audit or change.",
+      "blocking_scope": "User decision gates M05; special cross dependencies do not block presenting ground-body proposal."
     },
     {
       "id": "H13-LAYER-SOURCE",
@@ -122,5 +141,10 @@
     "returns/standard/PENDING_ITEMS.json",
     "returns/half_chaos/CURRENT_STATE.json#pending_main/pending_local"
   ],
-  "no_pending_silently_adopted": true
+  "no_pending_silently_adopted": true,
+  "shared_coordination_current_source": {
+    "commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+    "path": "../main/SHARED_COORDINATION.json",
+    "status": "actually_read; repetition-history strategy still pending; no new shared business rule adopted"
+  }
 }
