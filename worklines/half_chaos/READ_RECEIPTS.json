@@ -3,7 +3,7 @@
   "receiver_workline": "half_chaos",
   "latest_by_source": {
     "main": {
-      "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
       "actual_reading": [
         {
           "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -130,20 +130,72 @@
           "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
           "path": "worklines/main/SHARED_COORDINATION.json",
           "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "START_HERE.md",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "CURRENT_HANDOFF.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "collaboration/CURRENT.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "worklines/main/START_HERE.txt",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "worklines/main/CURRENT_STATE.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "worklines/main/READ_RECEIPTS.json",
+          "read_scope": "latest_by_source.half_chaos complete; prior-source rows retained as provenance"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "worklines/main/SHARED_COORDINATION.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "worklines/main/PENDING_DECISION.json",
+          "read_scope": "full"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+          "path": "worklines/main/ADJUDICATION.json",
+          "read_scope": "record_version; unified_adjudication_core.repetition_history_segments full; repetition_public_effective_state full; matching final project_specific_confirmations record full; not full historical record"
         }
       ],
-      "received": "shared synchronization and current workflow scope above",
+      "received": "main1.50 explicit shared repetition-history confirmation and current main scoped stage receipts",
       "adopted": [
         "previous_half_chaos_confirmations_and_H10_restoration_already_in_main_documents",
         "H14_current_plus6_and_information_permissions",
         "GitHub_fixed_workline_incremental_handoff",
-        "latest main recovery and current shared unresolved scope; preserve repetition pending"
+        "latest main recovery and current shared unresolved scope; preserve repetition pending",
+        "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016 consumed only for half_chaos as existing shared confirmed design",
+        "main actual H14/H16 stage receipt within declared excerpts/metadata scope"
       ],
       "not_adopted": [
-        {
-          "item": "repetition_segment_policy",
-          "reason": "pending specific user decision"
-        },
         {
           "item": "standard_H14_exclusion_and_standard_H03/H13_specific_rules",
           "reason": "scope is standard only"
@@ -151,26 +203,36 @@
         {
           "item": "full_adjudication_record",
           "reason": "only listed fields targeted; full body not claimed read"
+        },
+        {
+          "item": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+          "reason": "new concrete main candidate still pending; previous shared confirmation does not approve it"
         }
       ],
       "does_not_assert_other_receiver_reading": true,
-      "prior_snapshot_source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e"
+      "prior_snapshot_source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+      "prior_not_adopted_history": [
+        {
+          "item": "repetition_segment_policy",
+          "reason": "pending specific user decision"
+        }
+      ]
     }
   },
   "own_line_continuation": {
-    "source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+    "source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
     "read": [
-      "worklines/half_chaos/CURRENT_STATE.json",
-      "worklines/half_chaos/NEXT_ACTIONS.json",
-      "WORKING.md current entry and relevant8.3/8.4, prior time/hidden-information contracts"
+      "CURRENT_STATE.json",
+      "NEXT_ACTIONS.json",
+      "WORKING.md relevant8.4 plus inherited time/space/permissions"
     ],
-    "adopted": "H16 current breakpoint and inherited boundaries; no new rule approval"
+    "adopted": "H17/H18 breakpoint and effective prior boundaries; user continuation not new rule approval"
   },
   "main_receipt_recheck": {
-    "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+    "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
     "actual_read_path": "worklines/main/READ_RECEIPTS.json",
-    "scope": "full",
-    "result": "at current remote head no main receipt for H14 commit66d4ed6; current main state/shared coordination still expose prior snapshot, no unpublished approval inferred",
+    "scope": "latest_by_source.half_chaos complete; other old source rows remain prior provenance",
+    "result": "H14/H16 stage metadata and stated excerpts received/adopted; not whole-body/runtime verification; r18 unknown",
     "no_foreign_receipt_written": true
   }
 }

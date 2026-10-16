@@ -1,6 +1,6 @@
 {
   "schema": "lezi.hc_confirmation_current.v2",
-  "revision": "HC-DESIGN-03-20261016-r16",
+  "revision": "HC-DESIGN-03-20261016-r18",
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": [],
   "inherited_local_confirmations": [
@@ -102,5 +102,46 @@
   "previous_round_main_document_adoption": "verified_by_current_receiver_from_main_sync_notice_and_confirmation_registry_at_base_commit",
   "this_round_main_reading_or_adoption": null,
   "H14": "existing_rules_consumed_no_new_design_change",
-  "engine_status": "unrun"
+  "engine_status": "unrun",
+  "main_confirmations_consumed_this_round": [
+    {
+      "id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+      "source_repository": "aaaycc931-droid/lezi-handoff-packages",
+      "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "source_path": "worklines/main/ADJUDICATION.json",
+      "source_pointer": "project_specific_confirmations final matching record; unified_adjudication_core.repetition_history_segments",
+      "confirmed_at_local": "2026-10-16T12:47:23+08:00",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "local_consumption": "half_chaos",
+      "confirmed": {
+        "accepted_actual_capture_or_skill_destruction_starts_new_repetition_segment": true,
+        "old_segment_occurrences_excluded_from_future_current_segment_count": true,
+        "old_audit_events_deleted": false,
+        "pure_rewind_or_shuffle_clears_current_segment": false,
+        "pure_rewind_restores_segment_or_counts_from_board_snapshot": false,
+        "later_restoration_undoes_accepted_destruction_segment_restart": false,
+        "restoration_itself_restarts_segment": false,
+        "rejected_or_blocked_attack_restarts_segment": false,
+        "first_subsequent_eligible_sample_of_a_key_in_new_segment": 1,
+        "no_extra_sample_at_destruction_or_restoration_instant": true
+      },
+      "not_inferred": [
+        "complete equality fieldmap/hash/body identity/public optional progress",
+        "check/chase/response repetition eligibility exclusions",
+        "special pressure attribution and arbitrary bilateral-round pairing",
+        "all-source event ordering/initial opening repetition segment implementation",
+        "engine implementation or runtime acceptance"
+      ],
+      "engine_status": "unrun",
+      "new_local_user_rule_approval": false
+    }
+  ],
+  "previous_H14_H16_main_stage_receipt": {
+    "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "scope": "metadata and stated excerpts only; not full working body or runtime"
+  }
 }

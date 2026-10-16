@@ -1871,14 +1871,18 @@
   ],
   "latest_main_coordination": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
-    "commit": "26736f643754ae22731a7540874835ddf4e21409",
+    "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
     "paths": [
+      "START_HERE.md",
+      "CURRENT_HANDOFF.json",
+      "collaboration/CURRENT.json",
       "worklines/main/START_HERE.txt",
       "worklines/main/CURRENT_STATE.json",
+      "worklines/main/READ_RECEIPTS.json",
       "worklines/main/SHARED_COORDINATION.json",
       "worklines/main/PENDING_DECISION.json"
     ],
-    "read_scope": "full"
+    "read_scope": "full listed entry/state/coordination files; main receipt complete half_chaos row plus inherited source rows"
   },
   "h16_review": {
     "current_hero_source": {
@@ -1965,5 +1969,95 @@
       "read_scope": "full",
       "new_H14_receiver_receipt_found": false
     }
+  },
+  "h17_h18_review": {
+    "current_source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "heroes_path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+    "hero_git_blob_sha": "f7b50073ee02297322d3b223d40d0cb0b03d2727",
+    "read_scope": "H17/H18 full; H06,H11,H12 relevant complete source; 01 river/移置/space/death; M07/M08",
+    "exact_existing_sources_read": [
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/HERO_DESIGN_STAGE_CLOSE.md",
+        "git_blob_sha": "f60bd0f49124de1e3757dd78aa6877a6e8fb937b",
+        "read_scope": "6.2—6.9 and7 full; adjacent1/old inner pending explicitly superseded"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/transferred/2026-10-07-r7-clean/WORK_MODE_IMPLEMENTATION_HANDOFF_2026-10-07.md",
+        "git_blob_sha": "f8f4cd77e445fc762f274771c660b18f04e8ee49",
+        "read_scope": "H17 arbitrary-distance override full; nearby sections not a full file claim"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/transferred/2026-10-07-r7-clean/02_CURRENT_HEROES.md",
+        "git_blob_sha": "b21717cf55ff676fbfe2c5d7577e6e6f15631c1f",
+        "read_scope": "H17/H18 complete"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/handoff/current/22_HERO_TRANSFER_2026-10-07.md",
+        "git_blob_sha": "a8c78215e57e25b2a664a0f46aca04a85a3e242e",
+        "read_scope": "H17/H18 current transfer entries"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/hero-river.ts",
+        "git_blob_sha": "9954e51d12f7d2c218e70cc42a18988a787ffa2c",
+        "read_scope": "full"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/spaces.ts",
+        "git_blob_sha": "cc4db990fe5683a44b6a95ba50620370a242f49d",
+        "read_scope": "full"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/hero-progress.ts",
+        "git_blob_sha": "5edea5f9c620b1eb35127ff7b146b1f84662f6dc",
+        "read_scope": "qualifyRiverArrival full"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/settlement.ts",
+        "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+        "read_scope": "placementAllowed; enterRiverSpace/leaveRiverSpace; river expiry in finishFormalTurn; relevant begin board-space exclusion"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/hero-actions.ts",
+        "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+        "read_scope": "river dispatch and inner_wave end/child eligibility"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/hero-children.ts",
+        "git_blob_sha": "2c5ef5b0afdf7975f3a71d1c94ba2035ed912416",
+        "read_scope": "inner_wave optional same-body move and child closure"
+      }
+    ],
+    "new_natural_prefix_families": 6,
+    "reused_B_prefixes": 2,
+    "unrun_specifications": 24,
+    "code_authority": "historical static evidence only, not current live implementation or rule approval"
+  },
+  "main1_50_confirmation_consumption": {
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "path": "worklines/main/ADJUDICATION.json",
+    "git_blob_sha": "e3b4842090b664dcfc8d3a2a4ba1ef0d7eccf130",
+    "read_scope": "repetition_history_segments complete; matching final confirmation complete; public-effective-state principle complete; no full adjudication audit claim",
+    "confirmation_id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016"
   }
 }
