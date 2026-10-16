@@ -1,24 +1,24 @@
 {
   "items": [
     {
-      "id": "H03-ORDINARY-ATOM",
+      "id": "SHARED-H10-M05-DANCE-PALACE",
       "status": "pending_user_decision",
-      "scope": "standard_successful_ordinary_crossing_then_same_atom_landing_death_quota_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通H03 成功越河后同原子死亡的名额",
+      "scope": "all_modes_where_H10_and_M05_legally_effective_dance_palace_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H10与M05的流舞九宫边界",
       "confirmed": false,
-      "not_approved_by_D01_confirmation": true,
+      "not_approved_by_H03_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "QA01",
-        "QA02",
-        "QA03",
-        "QA04",
-        "QA05",
-        "QA06",
-        "QA07",
-        "QA08"
+        "DW01",
+        "DW02",
+        "DW03",
+        "DW04",
+        "DW05",
+        "DW06",
+        "DW07",
+        "DW08"
       ],
       "conditional_unrun_case_ids": [
-        "QA-S01"
+        "DW-S01"
       ]
     },
     {
@@ -80,21 +80,26 @@
       "status": "source_review_and_runtime_pending",
       "scope": "standard",
       "details": [
-        "H15 flying-rook geometry/attack permission",
         "assassination effective geometry",
         "path/endpoint multi-defense order",
         "H10 atomic identity/return and general death"
       ],
       "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
-      "M04_body_confirmation_does_not_resolve_these": true
+      "M04_body_confirmation_does_not_resolve_these": true,
+      "source_aligned_subscope": {
+        "H15_flying_rook": "No attack/sky charge permission added; current sky geometry/blockers and separate landing retained; unrun",
+        "rule_delta": 0,
+        "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce"
+      }
     },
     {
       "id": "STD-M05-H10-DANCE-REGION",
-      "status": "shared_source_priority_review_pending",
+      "status": "current_shared_candidate_prepared",
       "scope": "H10 x M05 ordinary source interface",
-      "detail": "M05 releases palace for normal royal action; H10 dance remains one orthogonal step and mentions normal palace limits. Exact outside-palace return/dance-region priority and complete legal prefix not newly decided.",
+      "detail": "Original ordinary source-priority edge now presented explicitly as shared H10/M05 legal-combination palace candidate; no approval.",
       "blocks_M05_body_presentation": false,
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M05 亲征普通模式原机制继承"
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M05 亲征普通模式原机制继承",
+      "candidate_id": "SHARED-H10-M05-DANCE-PALACE"
     },
     {
       "id": "H13-LAYER-SOURCE",
@@ -731,6 +736,34 @@
       "full_body_read_here": true,
       "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
       "local_received_source": "rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json"
+    },
+    {
+      "id": "H03-ORDINARY-ATOM",
+      "status": "confirmed_ordinary_quota_written_not_implemented_or_tested",
+      "scope": "standard_successful_ordinary_crossing_then_same_atom_landing_death_quota_only",
+      "source": "rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
+      "confirmed": true,
+      "not_approved_by_D01_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "QA01",
+        "QA02",
+        "QA03",
+        "QA04",
+        "QA05",
+        "QA06",
+        "QA07",
+        "QA08"
+      ],
+      "conditional_unrun_case_ids": [
+        "QA-S01"
+      ],
+      "confirmation_id": "CONF-STD-H03-CROSSING-THEN-DEATH-QUOTA-20261016",
+      "confirmed_at_local": "2026-10-16T20:47:48+08:00",
+      "user_quote": "同意方案",
+      "prior_proposal_source": {
+        "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通H03 成功越河后同原子死亡的名额"
+      }
     }
   ]
 }

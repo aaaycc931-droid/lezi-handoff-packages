@@ -2,36 +2,32 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T20:44:17+08:00",
-  "source_commit": "911cc7218a726bc3f3a15678b08713616971d419",
-  "base_commit": "911cc7218a726bc3f3a15678b08713616971d419",
-  "approval_context_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
-  "phase": "D01_deadline_confirmed_1_52_consumed_H03_atom_prepared",
+  "prepared_at_local": "2026-10-16T20:53:20+08:00",
+  "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+  "base_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+  "approval_context_source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+  "phase": "ordinary_H03_quota_confirmed_shared_dance_palace_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定普通H03已合法成功越河授防御后，若同原子落位死亡是否仍消耗名额；建议授予即记账、不退还，失败尝试不算。仅普通，当前未批准。",
+  "current_breakpoint": "用户决定三个模式H10与M05均合法生效时，流舞是否也解除九宫限制；建议可宫外但仍一格正交/最多两步/原触发与最终安全。本共享空间边界尚未批准。",
   "confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
-      "kind": "new_direct_shared_collapse_deadline_confirmation",
-      "scope": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
-      "new_local_standard_confirmation": false,
-      "confirmed_at_local": "2026-10-16T20:33:48+08:00",
-      "user_quote": "同意"
+      "confirmation_id": "CONF-STD-H03-CROSSING-THEN-DEATH-QUOTA-20261016",
+      "kind": "new_ordinary_quota_confirmation",
+      "scope": "standard_only",
+      "source": "rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
+      "new_local_standard_confirmation": true,
+      "confirmed_at_local": "2026-10-16T20:47:48+08:00",
+      "user_quote": "同意方案"
     }
   ],
   "new_user_rule_confirmations": 1,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
-    "current_index_count": 29,
-    "all29_local_records_unchanged": true,
-    "existing_shared_gameplay_scopes_preserved": true,
-    "prior_receiver_metadata_refreshed_from_actual_receipts": true,
+    "previous_index_count": 29,
+    "current_index_count": 30,
+    "all29_previous_ordinary_records_unchanged": true,
+    "existing_shared_records_unchanged": true,
     "shared_confirmations_originated_here_total": 5,
     "earlier_valid_decisions_retained": true
   },
@@ -55,6 +51,18 @@
         "heading": "已确认｜D01 普通同回合逐次使用沙漏"
       },
       "scope_note": "Original ordinary-specific full reread not newly asserted; same policy now covered by actually adopted shared hourglass core."
+    },
+    {
+      "id": "CONF-STD-H03-CROSSING-THEN-DEATH-QUOTA-20261016",
+      "scope": "standard_post_crossing_same_atom_death_quota_only",
+      "presented_source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+      "source": "rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜普通H03 成功越河后同原子死亡的名额"
+      },
+      "received_verified": null,
+      "adopted_verified": null
     }
   ],
   "main_prior_adoption_observed": {
@@ -71,17 +79,16 @@
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
   "pending_decision": {
-    "id": "H03-ORDINARY-ATOM",
+    "id": "SHARED-H10-M05-DANCE-PALACE",
     "status": "proposal_pending_user_confirmation",
-    "scope": "ordinary_only",
-    "D01_confirmation_does_not_approve_H03_quota": true
+    "scope": "shared_H10_M05_legal_combination_palace_only",
+    "H03_confirmation_does_not_approve_dance_palace": true
   },
   "changes": [
-    "Record fifth direct shared D01 deadline clarification; ordinary29 unchanged.",
-    "Preserve concurrent main/half commits; recognize actual first-four-D01 shared source receipt/adoption.",
-    "Adopt main1.52 original H15 first tick and update two current H15 bodies; cost/empty pool/progress permissions not changed.",
-    "Restore existing ordinaryH03 atom quota question as concrete unapproved candidate with8 unrun specs.",
-    "Adopt actual newly read collaboration0.12 affected full modules; preserve concurrent UI update and use latest same-head tree/parent."
+    "Record ordinaryH03 quota as item30 with exact original scope/source; earlier29 and shared records unchanged.",
+    "Current ordinary body includes quota and limited M04/H15 no-sky-attack source alignment; shared bodies unchanged.",
+    "Prepare explicit shared H10/M05 dance-palace choice from retained ordinary source-priority edge,8 unrun specs.",
+    "Preserve latest D01 deadline pending receiver scope and first-four actual main/half receipts."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -95,113 +102,91 @@
     "worklines/standard/modes/standard/CURRENT_STATE.json",
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
-    "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-    "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
-    "worklines/standard/rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json",
-    "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-    "worklines/standard/rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
+    "worklines/standard/modes/standard/CURRENT_RULES.md",
+    "worklines/standard/rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
     "worklines/standard/PUBLISHED_FILES.json"
   ],
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 5593,
-      "sha256": "03d6f7b3007de2e81a0dac77f5c65006e41ffd4353c40686f99d9ad8d807880a"
+      "size": 5358,
+      "sha256": "e802536cdb3100889b8ea0794475cece3ea778ba0e309bed5417282ab0d3cafb"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 15407,
-      "sha256": "870b94f38248a2057ddc6e62268614d67336e9dc8cba10b95cd16ce831d87198"
+      "size": 15409,
+      "sha256": "0ed89f2d6a35adbdacddd5b45390ba33e591e4829365a5d218a0b81ca2a6baf0"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1501,
-      "sha256": "ff3ada82bd3a507ea58c1124d80f418547491c3c68ada227a815a7f37b512b95"
+      "size": 1347,
+      "sha256": "4c4f880755a31cfa9a0cf8b0ca0100addc67223956f1b628571966c626525971"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 33550,
-      "sha256": "bcda42b4859d750f08a3bf66cd0c427b9ccad8b56d56e79d279fb3b6894b1cf9"
+      "size": 34737,
+      "sha256": "8bbc6c22b897a9ba8b6f6e0e148bb7d79fea1065f7faac16bad8af5ba4c90b3c"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 2519,
-      "sha256": "3e21000074eda0331630dc9b56b4065c49602fe12bdceafc07bac67bdb9e8266"
+      "size": 2557,
+      "sha256": "a5da6e544b4a7e93a03912fa1f020a28cab4c430f851730d6fa7fb4da4cb06ab"
     },
     {
       "path": "SOURCE_PRIORITY.json",
-      "size": 2995,
-      "sha256": "3eec2cafa07af4914b204f6dac69fc3ca50a682283beea32b40330305fbb82ce"
+      "size": 3369,
+      "sha256": "e60f525f2bf0de91cbd07201409579bdebd7e33b96399d6b234df611db12ad4a"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 51127,
-      "sha256": "8e063f39da4cdf01f807dd1af4e6c355acb8060de609069079d9fe674ceaf7f5"
+      "size": 52565,
+      "sha256": "feb3fd0ef0195576a09891e6610b87dff15fa8da836914993984b2d6244e66c1"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 196242,
-      "sha256": "aac3dc007b099252af582e1a2aac69cff7c4286d6904cbc1855fba0feb7bd8c3"
+      "size": 201211,
+      "sha256": "52ccba54e83a8c8bab477dc77bf5150c293071ada4be3ab3f5e5b880020975d8"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 3654,
-      "sha256": "706038bf3b25cee9e38e310e003f766184350298336e67c09c20f9479e823231"
+      "size": 3805,
+      "sha256": "590b80e51adaf894d11233aef8704b399d1f54f872b5e04f6495163f040b3a59"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 42001,
-      "sha256": "90b3bc3a4c2cf104c0922be00fde1dd1557406d69ec1cba8361bbf1eae65f74d"
+      "size": 39606,
+      "sha256": "f9942851060051469aaaf18168fed400205333d83f15a595bb776aa5baef2078"
     },
     {
-      "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-      "size": 23286,
-      "sha256": "21098560cd1734341382af0c7414e2d47a7bc5c85fcfefdaf1ce2fe9e1f40239"
+      "path": "modes/standard/CURRENT_RULES.md",
+      "size": 1688,
+      "sha256": "39d1df9dce7934f4c3ce0a40f0450b617113acc73d1e8b69612c07a9fe13aa12"
     },
     {
-      "path": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
-      "size": 4014,
-      "sha256": "0bd97bf9bb22e5c1f77edfeeb93d491494f00d4b8c8eaafc9607cc8da4d45a03"
-    },
-    {
-      "path": "rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json",
-      "size": 5656,
-      "sha256": "acc140fd450ccb4590a9efd9fbf5c47fb23beeaecf9747dab970b0bb8f0c5488"
-    },
-    {
-      "path": "rules/shared/02_CURRENT_HEROES.md",
-      "size": 44630,
-      "sha256": "66fb460493f0b9fe7d091a41dcbd33c3487351d054466e885184a5810b8d5cf0"
-    },
-    {
-      "path": "rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
-      "size": 2518,
-      "sha256": "9cbf023764602227b4199349790a6580ff2d87b0756d6f138f0d58360827d97d"
+      "path": "rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
+      "size": 2637,
+      "sha256": "bc46a0474dac7dc734435674611ab6e2e2592948641c001cc4d6a73cd8c6d522"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
-    "explicit_deadline_context_checked": true,
-    "original_TC8_specs_preserved": true,
-    "all29_ordinary_confirmation_records_unchanged": true,
-    "prior_original_shared_confirmation_files_unchanged": true,
-    "current_mutation_outside_labeled_deadline_update_unchanged": true,
-    "main_1_51_unified_core_identical_at_1_52": true,
-    "complete_H15_first_tick_policy_and_original_read": true,
-    "actual_first_four_D01_receipts_verified": true,
+    "explicit_ordinary_H03_context_checked": true,
+    "original_QA8_specs_preserved": true,
+    "all29_prior_ordinary_confirmation_records_unchanged": true,
+    "all_prior_shared_records_and_originals_unchanged": true,
+    "shared_rule_bodies_unchanged": true,
+    "M04_H15_source_alignment_only_no_new_permission": true,
     "original_source_archives_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "maintenance_validation_script_changes": 0,
     "updated_verify_dispatch": {
       "status": "passed",
-      "files": 296,
+      "files": 297,
       "game_engine_tests": 0,
       "scope": "published_project_file_integrity"
-    },
-    "collaboration_0_12_exact_raw_source_hash_and_blob_verified": true,
-    "collaboration_0_12_affected_full_modules_actually_read": true
+    }
   },
   "unrun": [
     "WC01-WC11",
@@ -219,19 +204,21 @@
     "CK-S01/CK-S02/CK01-CK10",
     "BG-S01/BG01-BG08",
     "TC-S01/TC01-TC08",
-    "QA-S01/QA01-QA08"
+    "QA-S01/QA01-QA08",
+    "DW-S01/DW01-DW08"
   ],
   "shared_coordination": [
     {
       "id": "STD-M05-H10-DANCE-REGION",
-      "status": "pending_shared_source_priority_review",
-      "detail": "Normal M05 palace release vs H10 dance one-step/palace source; exact outside-palace return/dance-region priority not newly decided. No extra dance distance/palace permission.",
-      "blocks_independent_M05_body_presentation": false
+      "status": "explicit_shared_candidate_prepared_pending_user",
+      "detail": "M05 removes palace, H10 dance still names palace. Shared legal-combination proposal: remove palace only, retain one orthogonal step/trigger/final safety. Not approved.",
+      "blocks_independent_M05_body_presentation": false,
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H10与M05的流舞九宫边界"
     },
     {
       "id": "STD-M04-CROSSES",
-      "status": "retained_pending",
-      "detail": "M04 body approved; flying-rook/assassination/multi-defense/H10 full atomic crossings remain separate."
+      "status": "flying_no_attack_source_aligned_other_crosses_pending",
+      "detail": "H15 prohibits flying attacks; no M04 sky charge permission added. Assassination/multi-defense/H10 atom and tier/history remain pending, no runtime."
     },
     {
       "id": "STD-M04-CODE-TARGET-ALIGNMENT",
@@ -312,20 +299,14 @@
     }
   ],
   "remote_reconciliation": {
-    "parent": "911cc7218a726bc3f3a15678b08713616971d419",
-    "approval_context_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
-    "preserved_concurrent_commits": [
-      "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
-      "ff3365addf3eb98a8efe89ac777481d485a9917e",
-      "911cc7218a726bc3f3a15678b08713616971d419"
-    ],
+    "parent": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "approval_context_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "remote_head_unchanged_since_prior_publication": true,
     "ordinary_target_paths_changed_before_local_edit": false,
     "unreturned_local_changes_found": 0,
-    "same_observed_head_tree_and_parent_required": true,
-    "latest_added_concurrent_commit": "911cc7218a726bc3f3a15678b08713616971d419",
-    "latest_added_changed_scopes": "collaboration0.12 and UI controls; no ordinary path change"
+    "earlier_concurrent_commits_preserved_in_parent_history": true
   },
-  "implementation_status": "confirmed_shared_deadline_and_existing_H15_source_adoption_ordinary_H03_pending_docs_only",
+  "implementation_status": "ordinary_quota_confirmed_source_alignment_and_shared_dance_candidate_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -338,86 +319,81 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "D01 deadline confirmation, concurrent1.52/H15 and actual receipts, restore ordinary H03 pending quota.",
+    "audit_trigger": "OrdinaryH03 approval, limited M04/H15 source alignment and shared H10/M05 palace choice.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User explicitly approves prior three-mode own-action deadline candidate.",
-      "Main/half actual receipts adopt first four D01 originals; fifth is newly written.",
-      "Main1.52 H15 first tick explicitly confirmed and full relevant source read.",
-      "Ordinary H03 source expressly left same-atom death quota open."
+      "User approves immediately preceding ordinary-only quota proposal.",
+      "H15 explicitly prohibits flying attacks and defines sky-layer movement; M04 adds no flight attack permission.",
+      "M05 removes palace but preserves one-step dance, while H10 dance explicitly names palace; retained priority edge needs decision."
     ],
     "user_statements": [
       {
-        "quote": "同意",
-        "at_local": "2026-10-16T20:33:48+08:00",
-        "scope": [
-          "original_jieqi",
-          "standard_xiangqi",
-          "half_chaos"
-        ]
+        "quote": "同意方案",
+        "at_local": "2026-10-16T20:47:48+08:00",
+        "scope": "standard_only"
       }
     ],
     "claim_register": [
       {
-        "claim": "D01 own-action deadline confirmed",
+        "claim": "ordinaryH03 same-atom death quota confirmed",
         "type": "user_statement",
-        "source": "b07e444f80bddd3dc22e05a08ad7d24f2178214a complete prior proposal",
+        "source": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce complete preceding candidate",
         "verification": "V2"
       },
       {
-        "claim": "first-four-D01 receiver adoption and H15 first tick",
-        "type": "document_fact",
-        "source": "ff3365addf3eb98a8efe89ac777481d485a9917e actual scoped receipt/policy/original",
-        "verification": "V2"
+        "claim": "M04/H15 no new sky attack entitlement",
+        "type": "source_alignment",
+        "source": "complete current M04/H15",
+        "verification": "V2 source clauses plus V1 composition, unrun"
       },
       {
-        "claim": "ordinaryH03 success-then-death consumes quota",
+        "claim": "M05 removes dance palace boundary",
         "type": "proposal",
-        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通H03 成功越河后同原子死亡的名额",
+        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H10与M05的流舞九宫边界",
         "verification": "V0 unapproved"
       },
       {
-        "claim": "QA-S01 shield then trap death and proposed quota",
+        "claim": "DW-S01 conditional two-step result",
         "type": "ai_inference",
-        "source": "same-assistant conditional case",
+        "source": "same-assistant conditional example; no trigger prefix",
         "verification": "V1 unrun"
       }
     ],
     "ai_interpretations": [
-      "Incoming H15 adoption is not new direct user approval here.",
-      "H03 source open edge cannot be silently filled by half-chaos or old leaving-palace code."
+      "Current approval is ordinaryH03 only.",
+      "No new flight attack entitlement is a limited source alignment, not independent user approval."
     ],
     "assumptions": [
-      "QA-S01 other mode/geometry/king-safety and trap-lifetime conditions pass, not full natural prefix proof."
+      "DW-S01 has already lawfully obtained first dance and successful outside-palace flow; other target/space rules pass."
     ],
     "unknowns": [
-      "User choice on ordinaryH03 quota boundary.",
-      "Exact D01 end/history/full terminal-search-clock and other crossed interfaces.",
-      "Full source-map/engine/privacy behavior."
+      "User choice on H10/M05 dance-palace priority.",
+      "Complete lawful adjudication/flow prefix and ordinary escape search in conditional DW example.",
+      "Other M04 complex crosses, source ordering and runtime."
     ],
     "competing_explanations": [
-      "Charge quota when legal successful crossing grants shield, later same-atom death no refund; recommended.",
-      "Require survival at atom end before charging quota; not approved."
+      "M05 removes palace also for dance; retain one-step geometry, recommended.",
+      "H10 dance palace sentence remains special limitation even under M05, not selected or approved."
     ],
     "falsification_conditions": [
-      "Higher-priority ordinary quota confirmation found.",
-      "Conditional trap case fails other source legality.",
-      "Receiver evidence is revised or user chooses another quota boundary."
+      "Higher-priority explicit H10/M05 dance palace clause found.",
+      "Full trigger state fails existing adjudication/flow qualification.",
+      "User chooses another pending space boundary."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write direct deadline confirmation and adopt exact existing main1.52 H15 source, preserve concurrent/archives; prepare ordinary H03 without approving it.",
+    "action_boundary": "Write confirmed ordinary quota and source-only no-new-flight-permission alignment; prepare shared dance proposal without adopting it.",
     "failure_conditions": [
-      "Recount shared/adopted H15 as ordinary30.",
-      "Fabricate fifth-D01 receipt or complete ordinary29 original reread.",
-      "Copy other-mode H03 without explicit ordinary decision.",
-      "Claim runtime or erase precise interface backlog."
+      "Count ordinary approval as shared or overwrite earlier ordinary records.",
+      "Automatically grant dance on ordinary check or second shadow.",
+      "Turn dance into two rook-length actions or remove final safety.",
+      "Claim complete prefix/runtime or new fifth-D01/H03 receipt without evidence."
     ],
-    "residual_risk": "Conditional source reasoning and scoped adoption do not prove full natural reachability/runtime or entire source-map.",
-    "next_validation_action": "Main reads new fifth D01 source; user decides restored ordinaryH03 quota; shared precise interfaces remain queued.",
+    "residual_risk": "Conditional cases and bounded source composition do not establish full trigger search/complete legal histories or runtime privacy.",
+    "next_validation_action": "Main reads ordinaryH03 source; user decides shared dance-palace boundary; other crosses remain separately pending.",
     "action_resilience": {
-      "maximum_exposure": "Seventeen ordinary-line document/source files; no game/runtime or messages.",
+      "maximum_exposure": "Fourteen ordinary-line document/source files; shared source bodies unchanged, no game/runtime/messages.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected ordinary files from ff3365addf3eb98a8efe89ac777481d485a9917e by normal commit preserving later unrelated work.",
+      "recovery": "Restore selected ordinary files from b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce via normal commit preserving later unrelated work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },
@@ -429,10 +405,11 @@
     "automatic_message_sent": false
   },
   "shared_coordination_consumed": {
-    "new_direct_shared_gameplay_confirmations": 1,
-    "existing_main_shared_confirmations_adopted": 1,
-    "actual_main_and_half_first_four_D01_receipts_observed": true,
-    "ordinary_H03_atom_approved": false
+    "new_direct_shared_gameplay_confirmations": 0,
+    "new_ordinary_confirmations": 1,
+    "existing_main_shared_confirmations_newly_adopted": 0,
+    "M04_H15_source_alignment_rule_delta": 0,
+    "shared_dance_palace_candidate_approved": false
   },
   "collaboration_adopted": {
     "working_revision": "2026-10-16.v0.12",
@@ -455,41 +432,9 @@
     "adopted_scope": "Ordinary-line current generic handoff/session-loss recovery; no collaboration-author edits, UI method changes, background monitor or independent effectiveness claim.",
     "independent_effectiveness_verified": false
   },
-  "shared_confirmed_delta": [
-    {
-      "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
-      "source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
-      "scope": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "confirmed_at_local": "2026-10-16T20:33:48+08:00",
-      "user_quote": "同意",
-      "policy": {
-        "guard": "First acquisition during Nozdormu-side normal main action or its landing atom, before entering formal-turn-end settlement; only where D01 legally available.",
-        "acquisition_on_own_formal_turn_N_deadline_own_turn": "N+1 formal-turn end",
-        "acquisition_turn_N_end_is_deadline": false,
-        "acquisition_during_opponent_turn_deadline": "end of the immediately upcoming Nozdormu-side formal turn, unchanged",
-        "effect_active_on_acquisition": true,
-        "continuous_pollution_A_to_B_resets_deadline": false,
-        "extra_forced_child_action_advances_formal_turn_counter": false,
-        "legal_exit_to_nonpolluted_or_cleanup_clears_collapse": true,
-        "genuine_new_acquisition_after_cleared_uses_new_source_deadline": true,
-        "next_turn_escape_or_hourglass_guaranteed_legal": false,
-        "new_ordinary_move_permission_to_empty_pollution": false,
-        "other_death_or_formal_terminal_reversed": false,
-        "end_settlement_new_acquisition_skipped_cancelled_turn_or_full_timeline_interfaces": "not_decided_by_this_confirmation"
-      },
-      "reviewed_candidate": {
-        "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
-        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "当前待决策｜D01 己方主行动中获得时间崩坏的截止点"
-      }
-    }
-  ],
-  "new_local_standard_confirmations": 0,
-  "new_shared_user_rule_confirmations": 1,
+  "shared_confirmed_delta": [],
+  "new_local_standard_confirmations": 1,
+  "new_shared_user_rule_confirmations": 0,
   "pending_main_shared_receipt_scope": [
     {
       "id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
@@ -585,7 +530,7 @@
       }
     }
   ],
-  "existing_shared_confirmation_adopted": {
+  "preserved_shared_source_adoption": {
     "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
     "source": {
       "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",

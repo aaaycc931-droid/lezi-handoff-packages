@@ -1,5 +1,5 @@
 {
-  "status": "D01_body_shared_boundaries_confirmed_H03_atom_pending",
+  "status": "ordinary_H03_atom_confirmed_dance_palace_candidate_pending",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "用户决定普通H03已合法成功越河授防御后，若同原子落位死亡是否仍消耗名额；建议授予即记账、不退还，失败尝试不算。仅普通，当前未批准。",
+  "next_action": "用户决定三个模式H10与M05均合法生效时，流舞是否也解除九宫限制；建议可宫外但仍一格正交/最多两步/原触发与最终安全。本共享空间边界尚未批准。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,19 +29,15 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
-    "user_quote": "同意",
-    "at_local": "2026-10-16T20:33:48+08:00",
-    "scope": [
-      "original_jieqi",
-      "standard_xiangqi",
-      "half_chaos"
-    ],
-    "new_ordinary_confirmation": false
+    "id": "CONF-STD-H03-CROSSING-THEN-DEATH-QUOTA-20261016",
+    "user_quote": "同意方案",
+    "at_local": "2026-10-16T20:47:48+08:00",
+    "scope": "standard_only",
+    "new_ordinary_confirmation": true
   },
   "main_document_adopted_scope": "Prior scoped confirmations through D01 startup/body observed at 50ad0d433f866fff41693cc495ec5d69c7724580; current zero-return receipt unknown.",
   "latest_confirmation_main_adopted": null,
-  "current_confirmation_index_count": 29,
+  "current_confirmation_index_count": 30,
   "M07_pool_exclusion_confirmed": true,
   "M08_approved": true,
   "D01_approved": true,
@@ -74,5 +70,8 @@
   "D01_own_action_collapse_deadline_confirmed": true,
   "D01_own_action_collapse_source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
   "H15_first_tick_confirmed": true,
-  "H15_first_tick_source": "rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json"
+  "H15_first_tick_source": "rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json",
+  "H03_same_atom_quota_confirmed": true,
+  "H03_same_atom_source": "rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
+  "M04_flying_source_alignment": "no_new_attack_permission_unrun"
 }

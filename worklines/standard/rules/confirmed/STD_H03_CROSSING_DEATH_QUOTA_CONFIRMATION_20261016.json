@@ -1,0 +1,54 @@
+{
+  "schema": "lezi.standard_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-STD-H03-CROSSING-THEN-DEATH-QUOTA-20261016",
+  "confirmed_at_local": "2026-10-16T20:47:48+08:00",
+  "user_quote": "同意方案",
+  "origin_workline": "standard",
+  "review_id": "H03-ORDINARY-ATOM",
+  "reviewed_candidate": {
+    "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜普通H03 成功越河后同原子死亡的名额"
+  },
+  "immediately_preceding_question": "是否同意这项普通模式方案？",
+  "presented_clauses": [
+    "成功越河取得普通防御后，同次落位马上死亡，仍占一枚名额，不退还。",
+    "陷阱照常消灭；未提交或未成功越河的尝试不算。"
+  ],
+  "scope": "standard_xiangqi_only",
+  "policy": {
+    "scope_guard": "standard_xiangqi H03 already legally submitted and successfully completed first ordinary crossing from own half to enemy half and acquired ordinary barrier, followed by landing death in same atom",
+    "grant_records_once_per_piece_and_charges_distinct_piece_quota": true,
+    "same_atom_post_grant_death_refunds_or_transfers_quota": false,
+    "dead_piece_retains_usable_barrier": false,
+    "unsubmitted_illegal_or_unsuccessful_crossing_attempt_charges_quota": false,
+    "ordinary_barrier_blocks_hunter_trap": false,
+    "max_distinct_nonroyal_revealed_friendly_pieces": 3,
+    "same_piece_new_grant_limit_per_match": 1,
+    "ordinary_royal_armor_or_armor_only_extra_response_restored": false,
+    "other_mode_trigger_changed": false,
+    "full_rebound_priority_revival_rewind_marker_or_sampling_interfaces": "not_decided_by_this_confirmation"
+  },
+  "preserved": [
+    "Existing ordinary H03 crossing B, no royal armor/no compensation.",
+    "Original trap trigger/lifetime/consumption/bypass and whole-atom closure.",
+    "All prior ordinary/shared confirmations and other mode isolation."
+  ],
+  "not_confirmed": [
+    "H10/M05 dance palace candidate or other unresolved crosses",
+    "complete rebound/defense order, revival/rewind marker restoration or adjudication sampling implementation",
+    "any game code/runtime, scoring thaw or NET resume"
+  ],
+  "verification": {
+    "user_and_full_proposal_context": "V2",
+    "QA_S01_QA01_QA08": "unrun_same_assistant_conditional_cases",
+    "game_code_changes": 0,
+    "engine_tests": 0
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "main_adopted_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  }
+}
