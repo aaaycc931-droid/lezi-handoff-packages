@@ -1,5 +1,5 @@
 {
-  "status": "D01_confirmed_hourglass_zero_return_pending",
+  "status": "D01_zero_return_confirmed_same_turn_repeat_pending",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "用户决定零实际回归也可合法发动、完整扣1次并净化/装填且无收益不退款的建议；本项未批准，受将/同回合连用/时序等另核。",
+  "next_action": "用户决定同己正式回合主行动前可逐次主动使用、每次实扣并完整结算/重检的建议；当前未批准，受将/精确时序等另核。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,14 +29,14 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016",
+    "id": "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
     "user_quote": "我同意",
-    "at_local": "2026-10-16T15:59:25+08:00",
-    "scope": "standard_D01_public_start_fixed_public_anchors_and_source_body"
+    "at_local": "2026-10-16T17:27:56+08:00",
+    "scope": "ordinary_D01_zero_return_hourglass_submission_and_use_count"
   },
-  "main_document_adopted_scope": "Prior closeout plus M04-M08 scoped bodies as observed at d22aa12f588ba4aa7a4023a80a518a0e8851dd7f; current D01 receipt unknown.",
+  "main_document_adopted_scope": "Prior scoped confirmations through D01 startup/body observed at 50ad0d433f866fff41693cc495ec5d69c7724580; current zero-return receipt unknown.",
   "latest_confirmation_main_adopted": null,
-  "current_confirmation_index_count": 27,
+  "current_confirmation_index_count": 28,
   "M07_pool_exclusion_confirmed": true,
   "M08_approved": true,
   "D01_approved": true,
@@ -45,7 +45,8 @@
     "CONF-STD-M05-EXPEDITION-KEEP-20261016",
     "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
     "CONF-STD-M07-POOL-EXCLUSION-20261016",
-    "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016"
+    "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
+    "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016"
   ],
   "adjudication_version": "1.51",
   "adjudication_source": {
@@ -55,5 +56,6 @@
     "git_blob_sha": "aa2fe2fc76b911ed2c4a9d821dd5ce64fe056074",
     "read_scope": "complete new repetition_public_body_equivalence and matching project_specific_confirmation; prior unchanged1.50 policy retained, not full-document re-audit"
   },
-  "D01_zero_return_policy_approved": false
+  "D01_zero_return_policy_approved": true,
+  "D01_same_turn_repeat_policy_approved": false
 }

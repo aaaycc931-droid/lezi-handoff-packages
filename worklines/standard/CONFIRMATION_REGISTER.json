@@ -5,10 +5,10 @@
     "half_chaos_local": 3,
     "half_chaos_direct_shared": 2
   },
-  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21. On2026-10-16 M07 adds one ordinary pool-policy approval; current index25=source-round21+M04+M05+M06+M07. Historical source_round_counts remains21. On2026-10-16 M08 adds one ordinary ground-pawn body adoption; current index26=source-round21+M04+M05+M06+M07+M08. Historical source_round_counts remains21. Main1.50 repetition-history confirmation is one adopted shared confirmation, not another local standard decision; current standard index remains26. On2026-10-16 D01 adds one ordinary public-start/body adaptation; current index27=original source-round21+M04+M05+M06+M07+M08+D01. Main1.51 adoption is separate, not another local confirmation.",
+  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21. On2026-10-16 M07 adds one ordinary pool-policy approval; current index25=source-round21+M04+M05+M06+M07. Historical source_round_counts remains21. On2026-10-16 M08 adds one ordinary ground-pawn body adoption; current index26=source-round21+M04+M05+M06+M07+M08. Historical source_round_counts remains21. Main1.50 repetition-history confirmation is one adopted shared confirmation, not another local standard decision; current standard index remains26. On2026-10-16 D01 adds one ordinary public-start/body adaptation; current index27=original source-round21+M04+M05+M06+M07+M08+D01. Main1.51 adoption is separate, not another local confirmation. On2026-10-16 ordinary D01 zero-return/full-cost boundary adds one local confirmation; current index28=source-round21+M04+M05+M06+M07+M08+D01 startup/body+zero-return. No new shared confirmation this phase.",
   "main_confirmations_source": "lezi-adjudication-current-2026-10-14.json#project_specific_confirmations",
   "standard_confirmations": {
-    "count": 27,
+    "count": 28,
     "decisions": [
       {
         "number": 1,
@@ -414,6 +414,32 @@
           "same-turn repeated hourglass use",
           "game implementation/runtime/scoring thaw/NET resume"
         ]
+      },
+      {
+        "number": 28,
+        "id": "D01-HG-ZERO-RETURN",
+        "confirmation_id": "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
+        "review_id": "STD-D01-HOURGLASS-ZERO-RETURN",
+        "status": "confirmed_design_not_runtime_verified",
+        "scope": "ordinary_D01_zero_return_hourglass_submission_and_use_count",
+        "confirmed_at_local": "2026-10-16T17:27:56+08:00",
+        "user_quote": "我同意",
+        "review_context": "Immediately preceding assistant explicitly asked ordinary hourglass zero-return/full-cost policy, showing cleanse-only, partial return and no-benefit cases; same-turn and in-check edges expressly separate.",
+        "presented_source_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+        "summary": "普通D01在其他原合法条件通过时，零实际回归仍可发动，实扣1次并完整净化/装填；完全无收益不退款，第五次同样完整结算，无第六次。",
+        "full_source": {
+          "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "已确认｜D01 沙漏零回归发动与次数"
+        },
+        "authority": "Explicit current user confirmation of ordinary boundary only; no runtime acceptance.",
+        "ordinary_rule_delta": "Explicit zero-return submission/full-use-count policy adopted.",
+        "shared_rule_delta": 0,
+        "not_confirmed": [
+          "same-turn repeated hourglass use",
+          "in-check preflight and exact begin/deadline/source-order interfaces",
+          "dark-mode unseen candidate pool or other-mode zero-return policy",
+          "game implementation/runtime/scoring thaw/NET resume"
+        ]
       }
     ]
   },
@@ -684,10 +710,10 @@
   "UI_approval_source": "ui/current_metadata/APPROVAL_REGISTER.json",
   "new_rules_approved_by_this_merge": 0,
   "latest_standard_update": {
-    "at_local": "2026-10-16T16:05:40+08:00",
+    "at_local": "2026-10-16T17:34:02+08:00",
     "new_confirmation_count": 1,
-    "confirmation_id": "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016",
-    "scope": "standard_D01_public_start_fixed_public_anchors_and_source_body",
-    "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c"
+    "confirmation_id": "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
+    "scope": "ordinary_D01_zero_return_hourglass_submission_and_use_count",
+    "source_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b"
   }
 }

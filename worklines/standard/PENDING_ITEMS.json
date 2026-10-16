@@ -1,31 +1,41 @@
 {
   "items": [
     {
-      "id": "STD-D01-HOURGLASS-ZERO-RETURN",
+      "id": "STD-D01-HOURGLASS-SAME-TURN-REPEAT",
       "status": "pending_user_decision",
-      "scope": "ordinary_D01_zero_return_hourglass_submission_and_use_count",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 沙漏零回归发动与次数",
+      "scope": "ordinary_D01_same_turn_sequential_hourglass_window",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 同回合逐次使用沙漏",
       "confirmed": false,
-      "not_approved_by_D01_body_confirmation": true,
+      "not_approved_by_zero_return_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "HG01",
-        "HG02",
-        "HG03",
-        "HG04",
-        "HG05",
-        "HG06",
-        "HG07",
-        "HG08",
-        "HG09",
-        "HG10"
+        "HR01",
+        "HR02",
+        "HR03",
+        "HR04",
+        "HR05",
+        "HR06",
+        "HR07",
+        "HR08",
+        "HR09",
+        "HR10"
       ]
     },
     {
+      "id": "MAIN-H15-FIRST-TICK-CANDIDATE",
+      "status": "pending_main_user_decision",
+      "source": {
+        "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
+        "path": "candidates/h15-first-cultivation-tick/v1.json"
+      },
+      "scope": "First cultivation increment after a successful initial training start only; preserves existing later normal-begin progression.",
+      "full_body_read_here": false
+    },
+    {
       "id": "MAIN-REPETITION-PUBLIC-FIELDMAP",
-      "status": "source_review_in_progress_not_new_user_candidate",
+      "status": "source_map_v0_2_partial_not_full_review_here",
       "scope": "shared public resources/rights/relations and remaining pressure/source-order mapping",
       "source": {
-        "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+        "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
         "path": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json"
       },
       "full_body_read_here": false
@@ -35,13 +45,14 @@
       "status": "source_alignment_pending",
       "scope": "D01 source/interface edges",
       "details": [
-        "all-failed/no-return hourglass activation and use count",
-        "in-check skill preflight and ordinary legal response",
-        "begin/deadline exact prefixes and same-batch effects",
-        "self-anchor occupancy event classification without duplication",
-        "shared repetition/pressure history interfaces"
+        "same-turn repeated hourglass source window: current pending candidate",
+        "in-check preflight/ordinary legal response",
+        "begin/deadline exact prefixes",
+        "self-anchor occupancy event classification",
+        "shared repetition/pressure/source interfaces"
       ],
-      "blocks_core_proposal_presentation": false
+      "blocks_core_proposal_presentation": false,
+      "zero_return_resolved_ordinary_only": true
     },
     {
       "id": "STD-M08-CROSSES",
@@ -107,7 +118,13 @@
       "id": "H15-REMAINING",
       "status": "pending_design_or_source_review",
       "scope": "shared",
-      "detail": "First progress point, startup cost/empty pool and normal-begin graduation/M07 ordering; body/progress survival confirmations do not decide these."
+      "detail": "First progress point, startup cost/empty pool and normal-begin graduation/M07 ordering; body/progress survival confirmations do not decide these.",
+      "latest_main_candidate": {
+        "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
+        "path": "candidates/h15-first-cultivation-tick/v1.json",
+        "status": "pending",
+        "full_body_read_here": false
+      }
     },
     {
       "id": "H03-ORDINARY-ATOM",
@@ -146,9 +163,9 @@
   ],
   "no_pending_silently_adopted": true,
   "shared_coordination_current_source": {
-    "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+    "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
     "path": "../main/SHARED_COORDINATION.json",
-    "status": "scoped1.51 confirmation and ordinary M08 receipt actually read; no active main user candidate; full field map not adopted"
+    "status": "scoped D01 receiver adoption and H15 pending-candidate metadata read; no new shared rule adopted"
   },
   "resolved_items": [
     {
@@ -511,6 +528,33 @@
       "prior_proposal_source": {
         "commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 时光之末普通全明启动与主体继承"
+      }
+    },
+    {
+      "id": "STD-D01-HOURGLASS-ZERO-RETURN",
+      "status": "confirmed_ordinary_policy_not_implemented_or_tested",
+      "scope": "ordinary_D01_zero_return_hourglass_submission_and_use_count",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜D01 沙漏零回归发动与次数",
+      "confirmed": true,
+      "not_approved_by_D01_body_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "HG01",
+        "HG02",
+        "HG03",
+        "HG04",
+        "HG05",
+        "HG06",
+        "HG07",
+        "HG08",
+        "HG09",
+        "HG10"
+      ],
+      "confirmation_id": "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
+      "confirmed_at_local": "2026-10-16T17:27:56+08:00",
+      "user_quote": "我同意",
+      "prior_proposal_source": {
+        "commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 沙漏零回归发动与次数"
       }
     }
   ]
