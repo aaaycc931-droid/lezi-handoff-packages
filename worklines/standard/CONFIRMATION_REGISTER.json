@@ -5,10 +5,10 @@
     "half_chaos_local": 3,
     "half_chaos_direct_shared": 2
   },
-  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical.",
+  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21.",
   "main_confirmations_source": "lezi-adjudication-current-2026-10-14.json#project_specific_confirmations",
   "standard_confirmations": {
-    "count": 23,
+    "count": 24,
     "decisions": [
       {
         "number": 1,
@@ -313,6 +313,32 @@
           "other deferred crossings",
           "implementation/runtime acceptance"
         ]
+      },
+      {
+        "number": 24,
+        "id": "M06",
+        "confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+        "review_id": "STD-M06-CAVALRY-INITIAL-HORSES",
+        "status": "confirmed_design_not_runtime_verified",
+        "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
+        "confirmed_at_local": "2026-10-16T13:36:46+08:00",
+        "user_quote": "我同意",
+        "review_context": "Immediately preceding assistant explicitly asked approval of ordinary cavalry body and immediate initial upgrade; special crossings and M07 excluded.",
+        "presented_source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+        "summary": "普通开局原始两匹明马立即获得骑兵；每次行动选正常马步或合法一格短步。己半场仅前一格、敌半场前/左/右一格，无后退一格；完整普通向后马步及蹩腿保留，按当前起点半场，无免费第二步。",
+        "full_source": {
+          "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "已确认｜M06 骑兵普通开局两明马适配"
+        },
+        "authority": "Current explicit user confirmation; no game implementation/runtime acceptance.",
+        "shared_geometry_rule_delta": 0,
+        "ordinary_startup_adaptation": "Confirmed immediate applicability for initially public original two horses; does not advance dark-mode unrevealed horse activation.",
+        "not_confirmed": [
+          "M07 or pool exclusion",
+          "new generated horses",
+          "flying/history/temporary-control/special-action crossings",
+          "implementation/runtime/scoring thaw/NET resume"
+        ]
       }
     ]
   },
@@ -525,11 +551,10 @@
   "UI_approval_source": "ui/current_metadata/APPROVAL_REGISTER.json",
   "new_rules_approved_by_this_merge": 0,
   "latest_standard_update": {
-    "at_local": "2026-10-16T13:29:08+08:00",
+    "at_local": "2026-10-16T13:43:32+08:00",
     "new_confirmation_count": 1,
-    "confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
-    "scope": "standard_public_ground_general_body_only",
-    "source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-    "original_merge_new_rule_count_unchanged": true
+    "confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+    "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
+    "source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6"
   }
 }

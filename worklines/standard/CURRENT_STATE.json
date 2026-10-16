@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "M04_M05_confirmed_M06_prepared_for_user_decision",
+  "status": "M04_M05_M06_confirmed_M07_pool_direction_prepared",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -25,11 +25,11 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.49",
   "next_task": {
-    "id": "NEXT-STD-DESIGN-06",
-    "subject": "M06 骑兵普通开局两明马待定适配",
-    "action": "用户明确决定M06普通开局两匹原始明马立即升级及每次行动选马步/合法短步方案；M06未确认，确认后再继续M07、M08、D01。",
+    "id": "NEXT-STD-DESIGN-07",
+    "subject": "M07 混乱普通畸变池取舍",
+    "action": "用户决定M07普通暂不入池建议；若确认则继续M08、D01，若选择普通专属重设计则先准备具体M07机制。当前M07排除和新机制都未批准。",
     "pending_is_not_approved": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M06 骑兵普通开局两明马适配"
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M07 混乱普通畸变池取舍"
   },
   "external_delivery": {
     "prepared_here": true,
@@ -39,7 +39,7 @@
     "recipient_adoption_verified": true,
     "transport": "GitHub connector",
     "routine_user_package_relay_required": false,
-    "verification_scope": "This standard receiver has actual scoped source reading and M04/M05 explicit body confirmations. M06 pending. Main receipt/adoption of latest M04/M05 handoff unknown."
+    "verification_scope": "This standard receiver actually read scoped sources; M04/M05/M06 have explicit scoped confirmations. M07 pool direction pending, not excluded yet. Main latest receipt/adoption unknown."
   },
   "prior_main_receipt": {
     "received": true,
@@ -63,7 +63,7 @@
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
   "limitation_audit_status": "partial",
-  "verification_level": "V2 original user approval and scoped sources checked; V1 same-assistant M05 cases; no independent review or game engine execution.",
+  "verification_level": "V2 explicit user approval and scoped M07/H16 sources checked; V1 same-assistant conditional M07 reasoning; no independent review or game engine execution.",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -86,10 +86,10 @@
     ]
   },
   "publication_scope": "PUBLICATION_SCOPE.json",
-  "updated_at_local": "2026-10-16T13:29:08+08:00",
-  "source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-  "publication_parent_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-  "phase": "M05_confirmation_written_M06_source_review_and_proposal_prepared",
+  "updated_at_local": "2026-10-16T13:43:32+08:00",
+  "source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+  "publication_parent_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+  "phase": "M06_confirmation_written_M07_pool_direction_prepared",
   "new_rule_confirmations_this_round": 1,
   "retained_source_round_confirmations": 21,
   "M04_status": "confirmed_design_not_implemented_or_tested",
@@ -107,20 +107,23 @@
   "this_round_main_received_verified": null,
   "this_round_main_adopted_verified": null,
   "source_gaps": [
-    "M04 and M05 deferred crossings remain pending.",
-    "M06 new generated horses/history/flying horse/temporary-control direction and special-action crossings require scoped sources.",
-    "No live game HEAD/PR audit, independent review or engine execution."
+    "M04/M05/M06 special crossings retained pending.",
+    "Ordinary M07 pool policy and H16 branch mapping await explicit mode decision; no invented dark-source/public-faction rules.",
+    "No live game repository HEAD/PR audit, independent review or engine execution."
   ],
-  "current_confirmation_index_count": 23,
+  "current_confirmation_index_count": 24,
   "M04_confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
   "M05_status": "confirmed_design_not_implemented_or_tested",
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
   "latest_user_instruction": {
-    "quote": "同意",
-    "at_local": "2026-10-16T13:23:41+08:00",
-    "scope": "standard_public_ground_general_body_only"
+    "quote": "我同意",
+    "at_local": "2026-10-16T13:36:46+08:00",
+    "scope": "standard_original_two_public_ground_horses_body_and_initial_startup"
   },
-  "new_rule_confirmations_since_dispatch": 2,
+  "new_rule_confirmations_since_dispatch": 3,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
-  "M06_status": "proposal_pending_user_confirmation"
+  "M06_status": "confirmed_design_not_implemented_or_tested",
+  "M06_confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+  "M07_status": "proposal_pending_user_confirmation",
+  "M07_pool_exclusion_confirmed": false
 }

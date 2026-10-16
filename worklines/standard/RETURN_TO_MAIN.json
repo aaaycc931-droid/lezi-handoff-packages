@@ -2,45 +2,46 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T13:29:08+08:00",
-  "source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-  "base_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-  "phase": "M05_body_confirmed_M06_proposal_prepared",
+  "prepared_at_local": "2026-10-16T13:43:32+08:00",
+  "source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+  "base_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+  "phase": "M06_confirmed_M07_pool_direction_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户明确决定M06普通开局两匹原始明马立即升级及每次行动选马步/合法短步方案；M06未确认，确认后再继续M07、M08、D01。",
+  "current_breakpoint": "用户决定M07普通暂不入池建议；若确认则继续M08、D01，若选择普通专属重设计则先准备具体M07机制。当前M07排除和新机制都未批准。",
   "confirmed_delta": [
     {
-      "number": 23,
-      "id": "M05",
-      "confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
-      "review_id": "STD-M05-EXPEDITION-KEEP",
+      "number": 24,
+      "id": "M06",
+      "confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+      "review_id": "STD-M06-CAVALRY-INITIAL-HORSES",
       "status": "confirmed_design_not_runtime_verified",
-      "scope": "standard_public_ground_general_body_only",
-      "confirmed_at_local": "2026-10-16T13:23:41+08:00",
-      "user_quote": "同意",
-      "review_context": "Immediately preceding assistant explicitly asked whether ordinary mode inherits the M05 expedition body; deferred crosses and M06 excluded.",
-      "presented_source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-      "summary": "公开将帅车式横竖行动、离宫跨河、路径畅通且最终安全；地面无形挡路、普通目标限制/陷阱/防御照常，普通H03不授将帅防御且不恢复铁甲；H10公开角色按源承接，舞不改车式两步。",
+      "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
+      "confirmed_at_local": "2026-10-16T13:36:46+08:00",
+      "user_quote": "我同意",
+      "review_context": "Immediately preceding assistant explicitly asked approval of ordinary cavalry body and immediate initial upgrade; special crossings and M07 excluded.",
+      "presented_source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+      "summary": "普通开局原始两匹明马立即获得骑兵；每次行动选正常马步或合法一格短步。己半场仅前一格、敌半场前/左/右一格，无后退一格；完整普通向后马步及蹩腿保留，按当前起点半场，无免费第二步。",
       "full_source": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜M05 亲征普通模式原机制继承"
+        "heading": "已确认｜M06 骑兵普通开局两明马适配"
       },
-      "authority": "Current conversation explicit user confirmation of reviewed body; no implementation/runtime approval.",
-      "shared_rule_delta": 0,
+      "authority": "Current explicit user confirmation; no game implementation/runtime acceptance.",
+      "shared_geometry_rule_delta": 0,
+      "ordinary_startup_adaptation": "Confirmed immediate applicability for initially public original two horses; does not advance dark-mode unrevealed horse activation.",
       "not_confirmed": [
-        "M06",
-        "H10 dance palace/outside-palace return priority",
-        "other deferred crossings",
-        "implementation/runtime acceptance"
+        "M07 or pool exclusion",
+        "new generated horses",
+        "flying/history/temporary-control/special-action crossings",
+        "implementation/runtime/scoring thaw/NET resume"
       ]
     }
   ],
   "new_user_rule_confirmations": 1,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
-    "current_index_count": 23,
-    "M04_confirmation_retained": true,
+    "current_index_count": 24,
+    "M04_M05_unchanged": true,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
@@ -61,17 +62,27 @@
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜M05 亲征普通模式原机制继承"
       }
+    },
+    {
+      "id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+      "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
+      "presented_source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜M06 骑兵普通开局两明马适配"
+      }
     }
   ],
   "pending_decision": {
-    "id": "STD-M06-CAVALRY-INITIAL-HORSES",
+    "id": "STD-M07-POOL-EXCLUDE-PENDING-ADAPTATION",
     "status": "proposal_pending_user_confirmation",
-    "M05_approval_does_not_include_this": true
+    "pool_exclusion_confirmed": false,
+    "M06_approval_does_not_include_this": true
   },
   "changes": [
-    "Record scoped M05 user approval and preserve EX01-EX11 as unrun.",
-    "Prepare M06 initial-public-horse startup and alternative one-square geometry proposal with11 unrun specs.",
-    "Keep unreceived M04/M05 confirmation references, direct pending source interfaces and current line pointers."
+    "Record M06 explicit body/ordinary startup adoption and preserve all11 CA specs as unrun.",
+    "Prepare ordinary M07 temporary pool exclusion recommendation with redesign alternative and eight conditional specs.",
+    "Document H16 brawl entry dependency; keep M04/M05/M06 pending main receipt references and fixed current pointers."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -88,50 +99,50 @@
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 4696,
-      "sha256": "688eeb787d2f5e15aadc09cc2966e1888917c7ad6a75aedd4a9de152098be047"
+      "size": 4740,
+      "sha256": "c7327ef259a70311c2b3b19f68787cbc36e998274c5a1b6d93f17146274ae291"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 5955,
-      "sha256": "a4c06b6c3d710884d35dd15d53a54603e4d4fff478d90cb4b6c54c557dc37276"
+      "size": 6197,
+      "sha256": "510f578ec1e3cd9336758954e28cc653561c98ddce05cf8e1e0e1ac1c6858858"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1174,
-      "sha256": "24b8cad20e2d2cf0438a23d20c14254803e960cd7865aa5f0280f0030a4318d1"
+      "size": 1298,
+      "sha256": "c62acc7a64a9f8563dc61ba6ffdd83de75910971ad81a89d79511120850963ec"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 11564,
-      "sha256": "6d0770fbaaeb1cd76b0db3959e603e65c25c83eef4e133a03760fbbec623c1f6"
+      "size": 13383,
+      "sha256": "ec35a894697fd90f5b768ed55323862e37c041377d93eddf6025b6596881762a"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 26696,
-      "sha256": "27eca01ba282e9b29f8ae507b1fdeda7e1585756084b3ae493f0484c1a729c9e"
+      "size": 28519,
+      "sha256": "b48d20dba2ebb64147a1d45c1c1c49e38562d2fb0f9fbba24944d952385256fe"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 128018,
-      "sha256": "f4d0c4591a151e0c2a75a9a5adc2a60278b1a6f53dee9d27433ca060202a34c0"
+      "size": 134419,
+      "sha256": "1c302be28bc3ac82d89598de01fe237b6e4c65a54b76bd1d87a4317981517139"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 1592,
-      "sha256": "11e4ce36bd170be56ed788abfa4bf64c96507e8397e9a36539a62f2d96f59cf1"
+      "size": 1651,
+      "sha256": "c62c33d72c661d32d380cf0a06200ec68fb814f642eb512c48275814a9689ba1"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 17073,
-      "sha256": "bba6c0c1f3df271c9c9c7fd922e37137f2110430cc5d635515d9026044474f00"
+      "size": 17595,
+      "sha256": "bf903ccd8fda62a26920049b09b3da066b286997bf6786bf3c1660fad05d124c"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
-  "manifest_note": "Covers return and payload, excludes self; result commit resolved from actual Git history.",
+  "manifest_note": "Includes return and payload, excludes self; result commit resolved from Git history.",
   "actual_validation": {
     "approval_context_source_checked": true,
-    "M05_original_11_unrun_specs_preserved": true,
+    "M06_original_11_unrun_specs_preserved": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "previous_integrity_result": {
@@ -150,6 +161,7 @@
     "WC01-WC11",
     "EX01-EX11",
     "CA01-CA11",
+    "conditional CH01-CH08",
     "full legal-prefix/engine/mode/privacy/NET validation"
   ],
   "shared_coordination": [
@@ -174,9 +186,14 @@
       "id": "STD-M06-CROSSES",
       "status": "source_review_pending",
       "detail": "New generated horse qualification vs original two; flying, history and temporary-control direction/half; independent core proposal can proceed."
+    },
+    {
+      "id": "STD-M07-H16-INTERFACE",
+      "status": "pending_mode_direction_not_new_shared_rule",
+      "detail": "All-public ordinary board has no initial refresh targets; retaining M07 label would also invoke H16 brawl replacement with own-covered first-target requirement. No new target/charge fallback or pool decision invented."
     }
   ],
-  "implementation_status": "confirmed_design_and_pending_proposal_documents_only",
+  "implementation_status": "confirmed_design_and_pending_pool_proposal_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -189,74 +206,81 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "M05 explicit adoption status write and M06 startup adaptation review.",
+    "audit_trigger": "M06 explicit approval write plus ordinary M07 pool/function-gap and H16 interface review.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User explicitly accepted immediately preceding M05 body.",
-      "Current M06 applies original two true horses after public reveal and retains full normal horse geometry.",
-      "Ordinary mode starts fully public; initial cavalry timing was explicitly pending in adaptation matrix."
+      "User explicitly accepted M06 body and initial startup.",
+      "Ordinary mode starts with32 public pieces; M07 source refreshes only still-unrevealed covered pieces.",
+      "H16 chaos brawl first target must be own currently controlled covered piece; ordinary non-M07 charge already separately confirmed."
     ],
     "user_statements": [
       {
-        "quote": "同意",
-        "at_local": "2026-10-16T13:23:41+08:00",
-        "scope": "standard_public_ground_general_body_only"
+        "quote": "我同意",
+        "at_local": "2026-10-16T13:36:46+08:00",
+        "scope": "standard_original_two_public_ground_horses_body_and_initial_startup"
       }
     ],
     "claim_register": [
       {
-        "claim": "M05 body approval",
+        "claim": "M06 confirmation",
         "type": "user_statement",
-        "source": "Current message + previous M05 review at fae3095bacd267e57ad82a7c6abe828b153c9069",
+        "source": "Current message and previous explicit M06 question at e340f9e296dc2efe24caefbb93d412706d7665a6",
         "verification": "V2"
       },
       {
-        "claim": "cavalry original-horse/full horse/one-square geometry",
+        "claim": "M07/H16 source semantics",
         "type": "document_fact",
-        "source": "Current M06 and original2026-09-20/22 sources",
+        "source": "Current M07/H16, original brawl entry and ordinary H11/H14/H16 sources",
         "verification": "V2"
       },
       {
-        "claim": "ordinary initial immediate upgrade and per-action alternatives",
+        "claim": "Initial zero refresh target and ordinary brawl-entry gap",
         "type": "ai_inference",
-        "source": "Explicitly pending ordinary adaptation; current source plus static historical geometry comparison",
-        "verification": "V1/source-supported proposal; not approved or engine run"
+        "source": "Mode32-public and source target constraints",
+        "verification": "V1 conditional source reasoning, unrun"
+      },
+      {
+        "claim": "Temporary ordinary M07 pool exclusion",
+        "type": "hypothesis",
+        "source": "Pending recommendation, not approved",
+        "verification": "V0 policy candidate"
       }
     ],
     "ai_interpretations": [
-      "Approval addresses M05 only.",
-      "Extra geometry offers an alternative destination, not a second free action."
+      "Approval addresses M06 only.",
+      "Zero direct M07 refresh does not imply zero hero-interface effects."
     ],
     "assumptions": [
-      "Examples concern original ordinary own public ground horses without unlisted source effects.",
-      "Current half, not a permanent once-crossed flag, controls normal short-step choice."
+      "Only currently confirmed ordinary sources are available; secret attachments/invisibility are not covered status.",
+      "Illustrative brawl gap assumes sufficient resources but no eligible covered first target; not a proven runtime prefix."
     ],
     "unknowns": [
-      "M06 new-horse, flight, time-history and temporary-control source priorities.",
-      "Full reachable prefixes and current engine/runtime behavior."
+      "User preferred ordinary M07 pool policy.",
+      "Details of any future ordinary-specific chaos redesign.",
+      "Full runtime/reachable prefix/privacy behavior."
     ],
     "competing_explanations": [
-      "Literal reveal-event-only could delay ordinary cavalry despite full public setup; propose explicit immediate startup, not claim old ordinary approval.",
-      "Extra one-square could be misread as free post-move action; primary geometry and old static branch support alternative moves, not action creation."
+      "Keep source unchanged in ordinary as empty refresh; hero substitution means not automatically a harmless empty mutation.",
+      "Create a new ordinary chaos rule; this needs explicit new mechanics rather than pretending inheritance."
     ],
     "falsification_conditions": [
-      "Later user changes approval scope.",
-      "Current complete source specifies another ordinary startup or resolves a declared crossing."
+      "A later valid ordinary source already creates eligible covered pieces and resolves H16 branch consequences.",
+      "User chooses another scoped direction."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write M05 confirmed body and M06 pending proposal, line documents only.",
+    "action_boundary": "Confirm M06 body/startup; prepare M07 policy recommendation without adopting it; line documents only.",
     "failure_conditions": [
-      "Mark M06 confirmed from M05 agreement.",
-      "Restore fixed-pawn cavalry or prohibit normal horse backward moves.",
-      "Add a free second action or reopen frozen scoring.",
-      "Claim specs ran."
+      "Mark M07 excluded from M06 agreement.",
+      "Change all public factions or create hidden bodies without confirmation.",
+      "Call M07 globally effectless or silently rewrite H16 brawl/charge.",
+      "Spread ordinary pool exclusion to other modes or reopen scoring."
     ],
-    "residual_risk": "Same-AI source and geometry checks do not prove complete game behavior.",
-    "next_validation_action": "Obtain explicit M06 body/startup decision; resolve named source interfaces before any authorized implementation.",
+    "residual_risk": "Source-based conditional reasoning and same-AI review do not validate all game interactions.",
+    "next_validation_action": "User chooses M07 pool direction; only after explicit policy adoption proceed to dependent mode documentation or detailed redesign.",
     "action_resilience": {
       "maximum_exposure": "Only ten scoped line documents; no game or external-message mutation.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected affected line files from fae3095bacd267e57ad82a7c6abe828b153c9069 through a new normal commit, retaining concurrent changes.",
+      "recovery": "Restore selected line files from e340f9e296dc2efe24caefbb93d412706d7665a6 using a normal commit preserving concurrent work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },

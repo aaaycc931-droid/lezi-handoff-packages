@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-16T13:29:08+08:00",
+  "recorded_at_local": "2026-10-16T13:43:32+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
@@ -265,60 +265,68 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
-    "at_local": "2026-10-16T13:23:41+08:00",
-    "user_quote": "同意",
-    "presented_source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-    "scope": "standard_public_ground_general_body_only",
-    "M06_approved": false
+    "confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+    "at_local": "2026-10-16T13:36:46+08:00",
+    "user_quote": "我同意",
+    "presented_source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+    "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
+    "M07_approved": false
   },
   "current_task_reading": {
-    "source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-    "actual_modules": "AUTHORIZATION_AND_ADOPTION and MANDATORY_PRECHECK re-read; prior same-version full L3 limitation, baseline and handoff modules reused with current audit.",
+    "source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+    "actual_modules": "AUTHORIZATION_AND_ADOPTION re-read; unchanged full L3 limitation, baseline, gate and handoff modules reused from verified same-version prior task.",
     "files": [
       {
         "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "full M06 and immediate M07 opening only"
+        "read_scope": "full M07"
       },
       {
         "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/ADAPTATION_MATRIX.json",
-        "read_scope": "full M06"
+        "read_scope": "full M07"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-20.md",
-        "read_scope": "full section3 cavalry"
+        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+        "read_scope": "full H16 and H11; standard H11 current override read separately"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
-        "read_scope": "12.1-12.3; cavalry complete"
+        "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+        "read_scope": "full4.3/4.4; previous same-version invisibility/space source reused"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/rules.ts",
-        "read_scope": "movementGeometryLegal cavalry and normal horse branches; historical static only"
+        "path": "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
+        "read_scope": "current full mode/ordinary M07 boundaries; old F1 index overridden by current H10 source"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/INHERITED_CONFIRMED_H01_H02_H11.md",
+        "read_scope": "full including ordinary H11; old F1 note remains historical"
       },
       {
         "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
-        "read_scope": "old section12 cavalry and accidentally included12A/12B historical excerpts; not adopted; fixed-pawn cavalry superseded"
+        "read_scope": "full12B M07; historical scores ignored"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/BALANCE_AND_RULE_UPDATES_2026-09-28.md",
-        "read_scope": "H10 9.4 body-bound cavalry/state excerpt only, old selection permissions not adopted"
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
+        "read_scope": "full4.2 chaos death disclosure"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_BRAWL_ENTRY.md",
+        "read_scope": "full original paid brawl entry confirmation"
       },
       {
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "complete currently pending M05 proposal and previous review context; M04 prior reading retained"
+        "read_scope": "full current M06 proposal/context, ordinary H14 pre-review/exclusion and H16 non-M07 confirmation sections"
       }
     ],
     "adopted_scope": [
-      "M05 scoped user approval; M04 preserved",
-      "Current cavalry source used to prepare pending ordinary startup adaptation"
+      "M06 actual body/startup confirmation; original23 confirmations preserved",
+      "M07 source and H16 dependency used for pending recommendation, no pool decision adopted"
     ],
     "not_adopted": [
-      "M06 before explicit decision",
-      "fixed-pawn old cavalry",
-      "normal horse backward ban or a free post-horse step",
-      "historic score/rarity reopening",
-      "all newly generated horses/flight/control/history crossings"
+      "M07 ordinary pool exclusion or inclusion before decision",
+      "automatic empty-effect classification",
+      "new covered pieces/public faction rerolls",
+      "own-public brawl first target or automatic charge fallback under M07",
+      "cross-mode scope expansion"
     ],
     "new_engine_tests": 0
   },
@@ -334,6 +342,12 @@
       "at_local": "2026-10-16T13:23:41+08:00",
       "scope": "standard_public_ground_general_body_only",
       "user_quote": "同意"
+    },
+    {
+      "id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+      "at_local": "2026-10-16T13:36:46+08:00",
+      "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
+      "user_quote": "我同意"
     }
   ]
 }
