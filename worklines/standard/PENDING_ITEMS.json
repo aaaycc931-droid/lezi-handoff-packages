@@ -1,23 +1,34 @@
 {
   "items": [
     {
-      "id": "STD-D01-HOURGLASS-SAME-TURN-REPEAT",
-      "status": "pending_user_decision",
-      "scope": "ordinary_D01_same_turn_sequential_hourglass_window",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 同回合逐次使用沙漏",
-      "confirmed": false,
-      "not_approved_by_zero_return_confirmation": true,
+      "id": "STD-D01-HOURGLASS-CORE-THREE-MODE-SCOPE",
+      "status": "pending_user_scope_confirmation",
+      "scope": "three_modes_where_D01_legally_available_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 两条沙漏规则的三模式共用范围",
+      "ordinary_confirmed_rule_ids": [
+        "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
+        "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016"
+      ],
+      "shared_confirmed": false,
+      "proposed_modes": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "not_included": [
+        "mode pool availability/initialization adoption",
+        "dark zero-appeared eligibility or information disclosure",
+        "all-skill repeat use/in-check/order/runtime"
+      ],
       "conditional_unrun_spec_ids": [
-        "HR01",
-        "HR02",
-        "HR03",
-        "HR04",
-        "HR05",
-        "HR06",
-        "HR07",
-        "HR08",
-        "HR09",
-        "HR10"
+        "SC01",
+        "SC02",
+        "SC03",
+        "SC04",
+        "SC05",
+        "SC06",
+        "SC07",
+        "SC08"
       ]
     },
     {
@@ -45,14 +56,15 @@
       "status": "source_alignment_pending",
       "scope": "D01 source/interface edges",
       "details": [
-        "same-turn repeated hourglass source window: current pending candidate",
-        "in-check preflight/ordinary legal response",
-        "begin/deadline exact prefixes",
-        "self-anchor occupancy event classification",
-        "shared repetition/pressure/source interfaces"
+        "shared-core scope of ordinary-confirmed zero-return and same-turn policies: current pending scope candidate",
+        "in-check skill preflight",
+        "zero appeared candidate qualification in dark modes",
+        "exact begin/deadline and self-anchor event classification",
+        "remaining public field/source/pressure interfaces"
       ],
       "blocks_core_proposal_presentation": false,
-      "zero_return_resolved_ordinary_only": true
+      "zero_return_resolved_ordinary_only": true,
+      "same_turn_resolved_ordinary_only": true
     },
     {
       "id": "STD-M08-CROSSES",
@@ -555,6 +567,33 @@
       "prior_proposal_source": {
         "commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 沙漏零回归发动与次数"
+      }
+    },
+    {
+      "id": "STD-D01-HOURGLASS-SAME-TURN-REPEAT",
+      "status": "confirmed_ordinary_policy_not_implemented_or_tested",
+      "scope": "ordinary_D01_same_turn_sequential_hourglass_window",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜D01 普通同回合逐次使用沙漏",
+      "confirmed": true,
+      "not_approved_by_zero_return_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "HR01",
+        "HR02",
+        "HR03",
+        "HR04",
+        "HR05",
+        "HR06",
+        "HR07",
+        "HR08",
+        "HR09",
+        "HR10"
+      ],
+      "confirmation_id": "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016",
+      "confirmed_at_local": "2026-10-16T17:50:53+08:00",
+      "user_quote": "同意该方案，这是通用核心机制的确定吗",
+      "prior_proposal_source": {
+        "commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 同回合逐次使用沙漏"
       }
     }
   ]

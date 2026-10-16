@@ -2,47 +2,49 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T17:34:02+08:00",
-  "source_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
-  "base_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
-  "approval_context_source_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
-  "phase": "zero_return_confirmed_same_turn_repeat_candidate_prepared",
+  "prepared_at_local": "2026-10-16T17:59:43+08:00",
+  "source_commit": "d28bbb2d51e478c0f08f3a9a15124360aa92e3b4",
+  "base_commit": "d28bbb2d51e478c0f08f3a9a15124360aa92e3b4",
+  "approval_context_source_commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
+  "phase": "ordinary_repeat_confirmed_shared_core_scope_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定同己正式回合主行动前可逐次主动使用、每次实扣并完整结算/重检的建议；当前未批准，受将/精确时序等另核。",
+  "current_breakpoint": "用户明确是否把普通已确认的零回归完整消费与同回合逐次使用提升为D01三模式合法可用时的共同核心；模式现身/候选/锚点权限与可用性保持，共享扩围当前未批准。",
   "confirmed_delta": [
     {
-      "number": 28,
-      "id": "D01-HG-ZERO-RETURN",
-      "confirmation_id": "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
-      "review_id": "STD-D01-HOURGLASS-ZERO-RETURN",
+      "number": 29,
+      "id": "D01-HG-SAME-TURN-REPEAT",
+      "confirmation_id": "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016",
+      "review_id": "STD-D01-HOURGLASS-SAME-TURN-REPEAT",
       "status": "confirmed_design_not_runtime_verified",
-      "scope": "ordinary_D01_zero_return_hourglass_submission_and_use_count",
-      "confirmed_at_local": "2026-10-16T17:27:56+08:00",
-      "user_quote": "我同意",
-      "review_context": "Immediately preceding assistant explicitly asked ordinary hourglass zero-return/full-cost policy, showing cleanse-only, partial return and no-benefit cases; same-turn and in-check edges expressly separate.",
-      "presented_source_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
-      "summary": "普通D01在其他原合法条件通过时，零实际回归仍可发动，实扣1次并完整净化/装填；完全无收益不退款，第五次同样完整结算，无第六次。",
+      "scope": "ordinary_D01_same_turn_sequential_hourglass_window",
+      "confirmed_at_local": "2026-10-16T17:50:53+08:00",
+      "user_quote": "同意该方案，这是通用核心机制的确定吗",
+      "approval_clause": "同意该方案",
+      "scope_question": "这是通用核心机制的确定吗",
+      "review_context": "Immediately preceding assistant explicitly requested ordinary D01 same-turn sequential use. Approval applies to that presented scope; user simultaneously asks whether this is shared core, so three-mode extension remains a separate prepared scope decision.",
+      "presented_source_commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
+      "summary": "普通D01同己正式回合主行动前可主动逐次使用多次沙漏；每次独立校验、扣1次、完整结算再重检，可先净化后另花一次复活；不自动连发、不增正式回合/刷新时钟，主行动后/终局/无次数停止。",
       "full_source": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜D01 沙漏零回归发动与次数"
+        "heading": "已确认｜D01 普通同回合逐次使用沙漏"
       },
-      "authority": "Explicit current user confirmation of ordinary boundary only; no runtime acceptance.",
-      "ordinary_rule_delta": "Explicit zero-return submission/full-use-count policy adopted.",
+      "authority": "Current explicit approval of presented ordinary scheme; scope question is not an explicit cross-mode confirmation.",
+      "ordinary_rule_delta": "Explicit sequential same-turn source-window consumption adopted.",
       "shared_rule_delta": 0,
       "not_confirmed": [
-        "same-turn repeated hourglass use",
-        "in-check preflight and exact begin/deadline/source-order interfaces",
-        "dark-mode unseen candidate pool or other-mode zero-return policy",
-        "game implementation/runtime/scoring thaw/NET resume"
+        "three-mode shared-core extension of this or prior zero-return policy",
+        "in-check preflight/zero appeared pool/full source order",
+        "other skill repeat-use permissions or mode pool/initialization changes",
+        "implementation/runtime/scoring thaw/NET resume"
       ]
     }
   ],
   "new_user_rule_confirmations": 1,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
-    "current_index_count": 28,
-    "previous27_records_unchanged": true,
+    "current_index_count": 29,
+    "previous28_records_unchanged": true,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
@@ -53,6 +55,15 @@
       "body": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 沙漏零回归发动与次数"
+      }
+    },
+    {
+      "id": "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016",
+      "scope": "ordinary_D01_same_turn_sequential_hourglass_window",
+      "presented_source_commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜D01 普通同回合逐次使用沙漏"
       }
     }
   ],
@@ -70,15 +81,41 @@
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
   "pending_decision": {
-    "id": "STD-D01-HOURGLASS-SAME-TURN-REPEAT",
-    "status": "proposal_pending_user_confirmation",
-    "zero_return_approval_does_not_include_this": true,
-    "same_turn_repeat_confirmed": false
+    "id": "STD-D01-HOURGLASS-CORE-THREE-MODE-SCOPE",
+    "status": "pending_user_scope_confirmation",
+    "scope": "three_modes_where_D01_legally_available_only",
+    "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 两条沙漏规则的三模式共用范围",
+    "ordinary_confirmed_rule_ids": [
+      "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
+      "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016"
+    ],
+    "shared_confirmed": false,
+    "proposed_modes": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "not_included": [
+      "mode pool availability/initialization adoption",
+      "dark zero-appeared eligibility or information disclosure",
+      "all-skill repeat use/in-check/order/runtime"
+    ],
+    "conditional_unrun_spec_ids": [
+      "SC01",
+      "SC02",
+      "SC03",
+      "SC04",
+      "SC05",
+      "SC06",
+      "SC07",
+      "SC08"
+    ]
   },
   "changes": [
-    "Record explicit ordinary zero-return/full-cost policy and preserve10 original HG specs as unrun.",
-    "Prepare same-turn sequential-hourglass window candidate with HR-P01 manual prefix and10 unrun specs; in-check and timing remain separate.",
-    "Recognize actual main D01 receipt, retain H15 first-tick candidate as pending metadata and update verifier to inspect source-state structure instead of a fixed main status name."
+    "Record explicit ordinary same-turn sequential hourglass policy; preserve10 HR specs unrun.",
+    "Answer user scope question: mechanism nature can be shared, prior approval scope ordinary; prepare explicit three-mode extension of both hourglass boundaries without adopting it.",
+    "Retain ordinary28 and29 pending main receipt, mode-specific initialization/privacy/pool gates and remaining source edges.",
+    "Preserve concurrent collaboration0.11/UI publication; actually read revised generic modules and record scoped ordinary-line adoption without gameplay or UI scope expansion."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -91,77 +128,71 @@
     "worklines/standard/modes/standard/CURRENT_STATE.json",
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
-    "worklines/standard/verify_dispatch.py",
     "worklines/standard/PUBLISHED_FILES.json"
   ],
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 4933,
-      "sha256": "90d85109aeb0c0f89ef97ee1da9d93a484b4e6b44f22c1902c90ca0dc5969193"
+      "size": 5301,
+      "sha256": "85562bdc3d09925d9f4cc8ce01d68a68a9a529d27cd8852aafc64e38d33cdff8"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 10511,
-      "sha256": "0af624dc367cbe77e31430344d61efef555a9bb76541f930e43b66078c5dd4a0"
+      "size": 11214,
+      "sha256": "e38adfab7dabc84077283e9f313625898d5a737509e26630962e7bcdef3a7980"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1278,
-      "sha256": "fae8b89d0d77c503191cd254045a5e98801c011635e0075864fc6bf7b41c48f2"
+      "size": 1338,
+      "sha256": "6ff57fb8022d07641b1938863f3209a612bf3af46c54fadab08d0b83ccc03e22"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 26691,
-      "sha256": "bbf440801c6c109a1cb757044505e322a959fb59b76e8d9eb43d1cb53c26d835"
+      "size": 28259,
+      "sha256": "1a84c6653bc367c7b7fca044583d3b23d534a61908a2ba02309c6c128a6accd7"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 2614,
-      "sha256": "706ce934426bc33f71dc50f3f77497e9a464a2327596b469cf243c388a345210"
+      "size": 2626,
+      "sha256": "4f2a69b813a39db61f75190b39e593023dc1fa21c0d32a265c1846acd9ba5888"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 39251,
-      "sha256": "5ba8cd8bf4e91534fe428e2bb9747e04eb505a31661e14f6b4add9188b3e05f6"
+      "size": 41480,
+      "sha256": "cb7eb495282d3076a4b884e2360e6b8c396b793e95b732f6eb249347a88455ae"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 162592,
-      "sha256": "9de5c76b227c9bad35da995596f72932eec7ab76d96023ce075d32678282ccd3"
+      "size": 168260,
+      "sha256": "dbb9b9b714b106314086be47fc1503f11e2665b231a5553a670f075afbdd34b1"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 2635,
-      "sha256": "298f29c9ea8fa7c0ceadc1a55ed020be37a50cac0d0fb35d64c106deeed67213"
+      "size": 2784,
+      "sha256": "1c0b38cb351fbf6939f91fcb354b032d13709a87c819202e4a4726a4c8f07552"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 24126,
-      "sha256": "11571f232309d9bb615644eb811ba4572ec1e3d284bbe5a6114330d1f29c8273"
-    },
-    {
-      "path": "verify_dispatch.py",
-      "size": 917,
-      "sha256": "f5e6906ea011c387bd17a20922e07c64deddfc12c4d95e571eb23175ae1e9fde"
+      "size": 25579,
+      "sha256": "907180b0166f1e64bbb67c4505b03209a4c29c79c46d770b51d25c40570a2e83"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
     "approval_context_source_checked": true,
-    "original_HG10_specs_preserved": true,
-    "previous27_confirmation_records_unchanged": true,
-    "ordinary_concurrent_target_paths_changed": false,
+    "original_HR10_specs_preserved": true,
+    "previous28_confirmation_records_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
-    "maintenance_validation_script_changes": 1,
+    "maintenance_validation_script_changes": 0,
     "updated_verify_dispatch": {
       "status": "passed",
       "files": 290,
       "game_engine_tests": 0,
       "scope": "published_project_file_integrity"
-    }
+    },
+    "new_collaboration_body_hash_and_blob_verified": true
   },
   "unrun": [
     "WC01-WC11",
@@ -173,7 +204,8 @@
     "HG-P01/HG01-HG10",
     "inherited RH01-RH06/BI01-BI06 abstract specs",
     "full legal-prefix/engine/privacy/NET validation",
-    "HR-P01/HR01-HR10"
+    "HR-P01/HR01-HR10",
+    "SC01-SC08"
   ],
   "shared_coordination": [
     {
@@ -210,8 +242,8 @@
     },
     {
       "id": "STD-D01-EDGES",
-      "status": "zero_return_confirmed_ordinary_only_same_turn_and_other_edges_pending",
-      "detail": "Ordinary zero-return/full-cost now explicitly confirmed; same-turn sequential window is new pending candidate. In-check preflight, exact begin/deadline prefixes, occupation classification and remaining adjudication/source interfaces still separate."
+      "status": "ordinary_zero_return_repeat_confirmed_shared_scope_and_other_edges_pending",
+      "detail": "Ordinary zero-return/full-cost and sequential same-turn use now confirmed; user asks whether core is shared. Explicit three-mode extension candidate pending; in-check/zero-unseen/source-order and mapping still separate."
     },
     {
       "id": "HC-MAIN-H16-ACTION-TIER",
@@ -224,16 +256,23 @@
         "path": "worklines/half_chaos/WORKING.md",
         "read_scope": "8.30 resource contract, BC02 and concluding source-alignment excerpts"
       }
+    },
+    {
+      "id": "STD-D01-HOURGLASS-CORE-THREE-MODE-SCOPE",
+      "status": "pending_user_scope_confirmation",
+      "owner": "main/standard",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 两条沙漏规则的三模式共用范围",
+      "detail": "Proposed three-mode D01 shared core consists of two already ordinary-confirmed hourglass policies; mode eligibility/init/privacy gates preserved, no cross-mode confirmation yet."
     }
   ],
   "remote_reconciliation": {
-    "parent": "50ad0d433f866fff41693cc495ec5d69c7724580",
-    "preserved_commits": [
-      "50ad0d433f866fff41693cc495ec5d69c7724580"
-    ],
-    "ordinary_target_paths_changed": false
+    "parent": "d28bbb2d51e478c0f08f3a9a15124360aa92e3b4",
+    "approval_context_commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
+    "preserved_concurrent_commit": "d28bbb2d51e478c0f08f3a9a15124360aa92e3b4",
+    "ordinary_target_paths_changed": false,
+    "changed_scopes": "collaboration0.11 and UI workflow; no shared game-rule change"
   },
-  "implementation_status": "confirmed_zero_return_policy_and_pending_repeat_window_documents_only",
+  "implementation_status": "ordinary_repeat_confirmed_shared_scope_proposal_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -246,82 +285,76 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "Explicit ordinary zero-return confirmation; same-turn source-window comparison and repeated-use proposal.",
+    "audit_trigger": "Explicit ordinary repeat approval plus user question about common-core scope.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User approved ordinary zero-return/full-cost policy with same-turn/in-check edges separate.",
-      "Hourglass source has5 total uses and a start-before-moving window; bomb separately has explicit once-per-turn cap.",
-      "Main D01 body and actual1.51 receiver adoption are source-receipted."
+      "Previous review question explicitly specified ordinary D01.",
+      "User approves the scheme and asks whether it determines shared core; no explicit three-mode extension wording.",
+      "Source D01 hourglass mechanisms can be described independently of ordinary public-start initialization; mode eligibility/privacy remain distinct.",
+      "Concurrent0.11 execution controls actually read and body identity verified; no game-rule or ordinary target change."
     ],
     "user_statements": [
       {
-        "quote": "我同意",
-        "at_local": "2026-10-16T17:27:56+08:00",
-        "scope": "ordinary_D01_zero_return_hourglass_submission_and_use_count"
+        "quote": "同意该方案，这是通用核心机制的确定吗",
+        "at_local": "2026-10-16T17:50:53+08:00",
+        "scope": "ordinary_scheme_approval_plus_scope_question"
       }
     ],
     "claim_register": [
       {
-        "claim": "ordinary zero-return confirmation",
+        "claim": "ordinary sequential-use approval",
         "type": "user_statement",
-        "source": "Current user and previous explicit question at c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+        "source": "Current user and prior explicit ordinary question at 1893640c4d0088435e7dea6f088fc01b02063b7d",
         "verification": "V2"
       },
       {
-        "claim": "bounded original/current cap-window wording",
+        "claim": "mode/adaptation and privacy boundaries",
         "type": "document_fact",
-        "source": "12A.3/12A.5 and unchanged later order",
+        "source": "Full09 mode/independent-adaptation and01 section八; previously full D01 source reused",
         "verification": "V2"
       },
       {
-        "claim": "same-turn source-window and sequential use",
+        "claim": "extend two hourglass boundaries as shared D01 core",
         "type": "hypothesis",
-        "source": "New ordinary policy candidate",
-        "verification": "V0 unapproved"
-      },
-      {
-        "claim": "HR-P01 and conditional cases",
-        "type": "ai_inference",
-        "source": "Same-assistant manual source reasoning",
-        "verification": "V1 unrun"
+        "source": "Prepared scope candidate, not user-confirmed",
+        "verification": "V1 recommendation, unapproved"
       }
     ],
     "ai_interpretations": [
-      "No explicit once-per-turn clause located in read hourglass sections does not itself prove prior user approval.",
-      "Hourglass source displacement versus ordinary action window needs explicit scoped consumption."
+      "Approve the presented ordinary scheme; preserve scope question as a question.",
+      "Mechanism nature can be shared core without claiming shared adoption status."
     ],
     "assumptions": [
-      "HR-P01 uses specified two heroes and D01 only, without unlisted legality blockers.",
-      "Each skill independently must satisfy source legality; in-check preflight unresolved."
+      "The user wants precise shared-versus-mode scope clarified before further edge decisions.",
+      "Cross-mode application remains conditional on each mode D01 availability and existing legal/identity permissions."
     ],
     "unknowns": [
-      "User choice on ordinary same-turn repeated use.",
-      "Possible unlocated original chat per-turn restriction.",
-      "In-check, exact begin/deadline/source-order and full field-map/runtime behavior."
+      "Whether user wants both hourglass boundaries explicitly common to three modes.",
+      "Dark zero-appeared eligibility, in-check and exact source-order implementations."
     ],
     "competing_explanations": [
-      "Per-turn max1 would delay the next attempt to later own turn; another possible explicit policy.",
-      "Automatic batch-use or free post-cleanse return would skip independent uses; not proposed."
+      "The question may seek factual scope explanation only.",
+      "The user may intend common-core adoption, but scope must be made explicit before propagation."
     ],
     "falsification_conditions": [
-      "Higher-priority explicit confirmation imposes a different per-turn window/limit.",
-      "User declines or revises proposed ordinary window."
+      "User clarifies different requested scope.",
+      "Higher-priority already-confirmed shared source resolves these boundaries differently."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write approved zero-return ordinary policy; prepare repeated-use candidate without adopting it; source/line maintenance only.",
+    "action_boundary": "Write ordinary approval; prepare clear shared-core scope candidate, do not expand other modes.",
     "failure_conditions": [
-      "Treat zero-return approval as same-turn permission.",
-      "Return polluted-anchor warrior free during first use.",
-      "Reuse old candidate checks, auto-spend multiple uses, refresh clock or add formal turns.",
-      "Continue after official terminal or spend a sixth use.",
-      "Adopt main H15 from this user confirmation."
+      "Treat interrogative as explicit shared confirmation.",
+      "Copy ordinary public-start initialization to dark modes.",
+      "Expand hourglass repeat to all skills or change bomb cap.",
+      "Drop pending ordinary28 receipt when handing off29.",
+      "Claim full other-mode adaptation/runtime as complete."
     ],
-    "residual_risk": "Source comparison and same-assistant manual prefix do not prove complete original authority or runtime.",
-    "next_validation_action": "User chooses repeat-window policy; continue in-check/timing source review and old crossings.",
+    "residual_risk": "Source-compatible recommendation does not establish cross-mode user approval or complete legal-prefix/runtime correctness.",
+    "next_validation_action": "User explicitly decides shared scope of the two D01 hourglass boundaries before propagation.",
     "action_resilience": {
-      "maximum_exposure": "Twelve scoped ordinary-line files including document-integrity verifier; no game/runtime or message action.",
+      "maximum_exposure": "Eleven scoped ordinary-line documents; no game/runtime or message action.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore scoped ordinary files from 50ad0d433f866fff41693cc495ec5d69c7724580 through normal commit preserving concurrent main work.",
+      "recovery": "Restore selected ordinary files from d28bbb2d51e478c0f08f3a9a15124360aa92e3b4 by normal commit preserving new collaboration/UI work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },
@@ -334,7 +367,25 @@
   },
   "shared_coordination_consumed": {
     "new_shared_gameplay_confirmations": 0,
-    "main_H15_candidate_approved": false,
-    "full_fieldmap_reviewed_here": false
+    "shared_extension_candidate": "STD-D01-HOURGLASS-CORE-THREE-MODE-SCOPE",
+    "shared_extension_approved": false,
+    "main_H15_candidate_approved": false
+  },
+  "collaboration_adopted": {
+    "working_revision": "2026-10-16.v0.11",
+    "formal_baseline": "1.8.0",
+    "source_commit": "d28bbb2d51e478c0f08f3a9a15124360aa92e3b4",
+    "source_authoring_commit": "dba9384fe2dfd8434943a79ab6f136871014c876",
+    "body_git_blob_sha": "d74c93b1947f1044dfb8a8676ab468ef5e3328e3",
+    "body_sha256": "242e3a5a16cf9e427d010fe5c9f5bd0c33ed488be5229e0a696557448d155ebf",
+    "actual_sections": [
+      "INTEGRATED_START full",
+      "TASK_ROUTES full",
+      "GITHUB_HANDOFF_WORKFLOW full including CI-15 controls",
+      "MANDATORY_PRECHECK full including SOURCE_ACTIVATION and GATE_RECEIPT"
+    ],
+    "hash_and_blob_verified": true,
+    "adopted_scope": "This ordinary-line bounded source/output/write/checkpoint controls only",
+    "independent_effectiveness_verified": false
   }
 }
