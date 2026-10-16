@@ -1,6 +1,6 @@
 {
   "schema": "lezi.hc_confirmation_current.v2",
-  "revision": "HC-DESIGN-03-20261016-r18",
+  "revision": "HC-DESIGN-03-20261016-r19",
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": [],
   "inherited_local_confirmations": [
@@ -103,7 +103,11 @@
   "this_round_main_reading_or_adoption": null,
   "H14": "existing_rules_consumed_no_new_design_change",
   "engine_status": "unrun",
-  "main_confirmations_consumed_this_round": [
+  "previous_H14_H16_main_stage_receipt": {
+    "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "scope": "metadata and stated excerpts only; not full working body or runtime"
+  },
+  "previous_main_confirmations_consumed": [
     {
       "id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
       "source_repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -140,8 +144,44 @@
       "new_local_user_rule_approval": false
     }
   ],
-  "previous_H14_H16_main_stage_receipt": {
-    "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
-    "scope": "metadata and stated excerpts only; not full working body or runtime"
+  "main_confirmations_consumed_this_round": [
+    {
+      "id": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+      "source_repository": "aaaycc931-droid/lezi-handoff-packages",
+      "source_commit": "813395aa496b09426a0e5113c4145c0952ba32ca",
+      "source_path": "worklines/main/ADJUDICATION.json",
+      "source_pointer": "project_specific_confirmations final matching record; unified_adjudication_core.repetition_public_body_equivalence",
+      "confirmed_at_local": "2026-10-16T15:35:18+08:00",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "local_consumption": "half_chaos",
+      "confirmed": {
+        "raw_internal_piece_id_alone_distinguishes_key": false,
+        "consistent_renaming_preserving_all_included_public_attributes_and_relations_is_equal": true,
+        "public_relevant_effects_and_current_or_source_defined_future_rights_preserved": true,
+        "public_binding_relations_preserved_not_blindly_dropped_with_ids": true,
+        "secret_identity_binding_or_one_sided_knowledge_adds_fields": false,
+        "unknown_field_mapping_proves_equivalence": false
+      },
+      "not_inferred": [
+        "Complete key schema/hash/canonical graph algorithm.",
+        "H15 optional public progress representation.",
+        "Any new publicity of bindings, current secret faction, or H14 historical observations.",
+        "Pressure eligibility/exclusions, all-source ordering or engine implementation."
+      ],
+      "engine_status": "unrun",
+      "new_local_user_rule_approval": false
+    }
+  ],
+  "previous_H17_H18_main_stage_receipt": {
+    "source_commit": "813395aa496b09426a0e5113c4145c0952ba32ca",
+    "source_return_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+    "scope": [
+      "H17/H18 stage metadata and new cross-owner bank-qualification source question; no new local/shared rule approval.",
+      "H19/H20 next;24 specs remain unrun; real1.50 receipt recognized."
+    ]
   }
 }
