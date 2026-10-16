@@ -4657,11 +4657,11 @@
   },
   "current_external_return_adoption": {
     "date_local": "2026-10-16",
-    "observed_at_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+    "observed_at_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
     "standard": {
-      "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
       "previous_source_confirmation_count": 21,
-      "current_source_confirmation_count": 25,
+      "current_source_confirmation_count": 26,
       "newly_received_scoped_confirmations": [
         {
           "number": 22,
@@ -4765,27 +4765,77 @@
             "ordinary chaos redesign/public faction rerolls/new covered generation",
             "game implementation/runtime/scoring thaw/NET resume"
           ]
+        },
+        {
+          "number": 26,
+          "id": "M08",
+          "confirmation_id": "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
+          "review_id": "STD-M08-JIAN-XIE-GROUND-KEEP",
+          "status": "confirmed_design_not_runtime_verified",
+          "scope": "standard_normal_ground_pawn_body",
+          "confirmed_at_local": "2026-10-16T14:01:45+08:00",
+          "user_quote": "我同意",
+          "review_context": "Immediately preceding assistant displayed M08 normal ground-pawn scenarios including bottom-rank immobility/no promotion/no auto-destruction, asking body approval with special crossings separate.",
+          "presented_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+          "summary": "普通地面兵卒尖斜主体继承：过河前含跨河步保持基础前一格，过河后前/左前/右前各一格且取消横向，不后退；移动/进攻共几何，底线停留不晋升/不自动消灭，目标/防御/己将安全保留。",
+          "full_source": {
+            "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+            "heading": "已确认｜M08 尖斜普通地面兵卒继承"
+          },
+          "authority": "Explicit current user body confirmation; no game implementation/runtime acceptance.",
+          "shared_mechanic_rule_delta": 0,
+          "not_confirmed": [
+            "D01 ordinary startup, pool adoption or other D01 adaptation",
+            "M08 special control/history/space/special-action crossings",
+            "implementation/runtime/scoring thaw/NET resume"
+          ]
         }
       ],
-      "full_bodies_read": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md complete M04/M05/M06/M07 confirmed sections",
+      "full_bodies_read": "M04-M07 complete confirmed sections at previous ee020 source; M08 complete confirmed section at ce00 source. D01 metadata only.",
       "source_register": "worklines/standard/CONFIRMATION_REGISTER.json entries22-25",
       "adoption": "ordinary-scoped design documents only; no shared mechanism expansion or runtime acceptance",
-      "next": "M08 candidate pending"
+      "next": "D01 public-start/ammo/anchor adaptation candidate pending",
+      "additional_record_source": "RETURN_TO_MAIN.json confirmed_delta M08; not a claim to reread full26-item register"
     },
     "half_chaos": {
-      "source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
-      "revision": "HC-DESIGN-03-20261016-r17",
-      "received": "H14/H16 stage metadata plus8.28 knowledge and8.30 resource/tier alignment excerpts",
+      "source_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+      "revision": "HC-DESIGN-03-20261016-r18",
+      "received": "H17/H18 stage metadata plus selected working-source prefix/next-action excerpts; not full24-spec review",
       "new_rule_confirmations": 0,
       "specs_unrun": {
         "H14": 16,
-        "H16": 20
+        "H16": 20,
+        "H17_H18": 24
       },
-      "next": "H17/H18"
+      "next": "H19/H20"
     },
     "new_main_user_confirmation_count": 1,
     "new_shared_rule_from_mode_approval_count": 0,
     "new_engine_tests": 0,
-    "source_limits": "Full new working drafts and all specifications were not semantically reread; the four ordinary confirmed sections were read in full. Main implementation remains unaudited."
+    "source_limits": "Full new working drafts and all specifications were not semantically reread; the four ordinary confirmed sections were read in full. Main implementation remains unaudited.",
+    "main1_50_actual_receiver_receipts": {
+      "standard": {
+        "receipt_file_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+        "acknowledged_main_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+        "adopted_scope": [
+          "Previously confirmed ordinary and shared designs remain.",
+          "Main1.50 accepted actual-destruction repetition segmentation and pure-time nonrollback policy consumed for ordinary mode.",
+          "Actual observed main M04-M07 scoped document receipt/adoption recorded; new M08 not falsely received.",
+          "Latest public-body equality candidate and shared H16 action-tier question retained pending, not adopted as new policy."
+        ]
+      },
+      "half_chaos": {
+        "receipt_file_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+        "acknowledged_main_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+        "adopted_scope": [
+          "previous_half_chaos_confirmations_and_H10_restoration_already_in_main_documents",
+          "H14_current_plus6_and_information_permissions",
+          "GitHub_fixed_workline_incremental_handoff",
+          "latest main recovery and current shared unresolved scope; preserve repetition pending",
+          "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016 consumed only for half_chaos as existing shared confirmed design",
+          "main actual H14/H16 stage receipt within declared excerpts/metadata scope"
+        ]
+      }
+    }
   }
 }

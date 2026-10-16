@@ -262,21 +262,23 @@
     }
   ],
   "latest_standard_mode_confirmations": {
-    "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+    "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
     "index": "worklines/standard/CONFIRMATION_REGISTER.json entries22-25",
-    "bodies": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md complete M04-M07 confirmed sections",
+    "bodies": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md complete M04-M07 confirmed sections; M08 full confirmed section at ce00",
     "ids": [
       "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
       "CONF-STD-M05-EXPEDITION-KEEP-20261016",
       "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
-      "CONF-STD-M07-POOL-EXCLUSION-20261016"
+      "CONF-STD-M07-POOL-EXCLUSION-20261016",
+      "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016"
     ],
-    "scope": "ordinary only, no runtime acceptance"
+    "scope": "ordinary only, no runtime acceptance",
+    "additional_record_source": "M08 original return confirmed_delta, not full26-index reread"
   },
   "latest_half_chaos_read_scope": {
-    "source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
-    "read_scope": "8.30 H16 resource/source introduction, BC02 tier question, closing shared alignment excerpts only; H14 permissions/M07 snapshot and source-alignment excerpts read earlier at66d4ed6",
-    "next": "H17/H18"
+    "source_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+    "read_scope": "r18 return/1.50 receipt metadata; selected RV/current-next-action excerpts only",
+    "next": "H19/H20"
   },
   "latest_fieldmap_sources": [
     {
@@ -306,18 +308,5 @@
     }
   ],
   "publication_parent_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
-  "unread_concurrent_returns": [
-    {
-      "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
-      "blob_sha": "50464b376ec0b60e82b8a4f8f0f444777b9930ee",
-      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
-      "status": "detected_unread_preserved_for_next_coordination"
-    },
-    {
-      "path": "worklines/standard/RETURN_TO_MAIN.json",
-      "blob_sha": "d433a7144b6cfd57dc727f38cae86dca20f3b189",
-      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
-      "status": "detected_unread_preserved_for_next_coordination"
-    }
-  ]
+  "unread_concurrent_returns": []
 }

@@ -59,15 +59,17 @@
     "new_rule_confirmation": false
   },
   "receiver_receipts_observed_by_main": {
-    "half_chaos": {
-      "source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
-      "path": "worklines/half_chaos/READ_RECEIPTS.json",
-      "scope": "older source-confirmed rules/workflow and stage metadata only; new1.50 not yet adopted"
-    },
     "standard": {
-      "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
       "path": "worklines/standard/READ_RECEIPTS.json",
-      "scope": "older source-confirmed rules/workflow and stage metadata only; new1.50 not yet adopted"
+      "acknowledged_main_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "scope": "actual1.50 local adoption;1.51 not yet received"
+    },
+    "half_chaos": {
+      "source_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+      "path": "worklines/half_chaos/READ_RECEIPTS.json",
+      "acknowledged_main_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "scope": "actual1.50 local adoption;1.51 not yet received"
     }
   }
 }

@@ -185,17 +185,40 @@
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "read_scope": "complete confirmed M05 section and returned shared question"
       }
+    },
+    {
+      "id": "HC-MAIN-RIVER-QUALIFY-CONTROL",
+      "owner": "main",
+      "status": "reported_source_question_original_authority_pending",
+      "kind": "no_new_river_control_rule",
+      "scope": "Mirror Jiang He+M07: a red action arrives on bank then reveals black. Red cannot select; whether black hero gains bank eligibility before its own ordinary arrival is not resolved. Do not grant cross-owner eligibility from old implementation or metadata alone.",
+      "source": {
+        "commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+        "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+        "read_scope": "shared qualification report; selected working summary/prefix excerpts, not original-authority resolution"
+      }
+    },
+    {
+      "id": "STD-D01-EDGES",
+      "owner": "main/standard",
+      "status": "reported_source_alignment_pending",
+      "scope": "D01 failed submissions/use count, in-check preflight, begin/deadline/occupation and shared-adjudication interfaces; main read return metadata only; D01 startup proposal remains ordinary pending.",
+      "source": {
+        "commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+        "path": "worklines/standard/RETURN_TO_MAIN.json",
+        "read_scope": "shared_coordination.STD-D01-EDGES only"
+      }
     }
   ],
   "independent_worklines": {
-    "standard": "Ordinary M04/M05/M06/M07 scoped confirmations received; M08 pending, D01 not approved.",
-    "half_chaos": "H14/H16 source/spec stages received; H17/H18 next; all new specs remain unrun.",
+    "standard": "M08 ordinary ground-pawn body confirmed; D01 public-start/ammo/anchor candidate remains pending.",
+    "half_chaos": "H17/H18 source/spec stage received;24 specs unrun; next H19/H20.",
     "ui": "B6 connecting/device name/cancel; metadata says not created; preserve any newer unreturned work; one image at a time"
   },
   "delivery_vs_adoption": {
     "published_by_main": "document coordination only",
     "recipient_receipts_required": true,
-    "other_lines_current_adoption": "Published sender receipts previously read remain valid only for their original scopes. This new1.51 confirmation has no receiver adoption evidence yet; UI unknown.",
+    "other_lines_current_adoption": "Both actual receiver-owned receipts consume main1.50 history segmentation in original local scopes. No1.51 receiver receipt yet; UI unknown.",
     "messages_sent": false
   },
   "scoring_frozen": true,
@@ -204,40 +227,43 @@
   "new_engine_tests": 0,
   "receiver_receipts_observed": {
     "half_chaos": {
-      "receipt_source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
-      "sender_read_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "receipt_source_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+      "sender_read_source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
       "adopted_scope_reported": [
         "previous_half_chaos_confirmations_and_H10_restoration_already_in_main_documents",
         "H14_current_plus6_and_information_permissions",
         "GitHub_fixed_workline_incremental_handoff",
-        "latest main recovery and current shared unresolved scope; preserve repetition pending"
+        "latest main recovery and current shared unresolved scope; preserve repetition pending",
+        "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016 consumed only for half_chaos as existing shared confirmed design",
+        "main actual H14/H16 stage receipt within declared excerpts/metadata scope"
       ],
-      "new_1_50_confirmation_adopted": null,
+      "new_1_50_confirmation_adopted": true,
       "new_1_51_confirmation_adopted": null
     },
     "standard": {
-      "receipt_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
-      "sender_read_source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+      "receipt_source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+      "sender_read_source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
       "adopted_scope_reported": [
-        "Existing21 standard source-round confirmations and earlier scoped decisions retained.",
-        "Current H10 preparation/transfer/cooldown/empty-pool/locator and shared H05/H06 source-confirmed boundaries consumed; old F1 superseded.",
-        "1.49 already-confirmed stable sampling/terminal boundaries retained; repetition-history candidate remains pending.",
-        "Current collaboration and GitHub handoff process used by this standard conversation."
+        "Previously confirmed ordinary and shared designs remain.",
+        "Main1.50 accepted actual-destruction repetition segmentation and pure-time nonrollback policy consumed for ordinary mode.",
+        "Actual observed main M04-M07 scoped document receipt/adoption recorded; new M08 not falsely received.",
+        "Latest public-body equality candidate and shared H16 action-tier question retained pending, not adopted as new policy."
       ],
-      "new_1_50_confirmation_adopted": null,
+      "new_1_50_confirmation_adopted": true,
       "new_1_51_confirmation_adopted": null
     }
   },
   "ordinary_mode_adoption": {
-    "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+    "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
     "new_scoped_confirmation_ids": [
       "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
       "CONF-STD-M05-EXPEDITION-KEEP-20261016",
       "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
-      "CONF-STD-M07-POOL-EXCLUSION-20261016"
+      "CONF-STD-M07-POOL-EXCLUSION-20261016",
+      "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016"
     ],
-    "total_source_confirmation_count": 25,
-    "scope_guard": "M04 ground-rook body; M05 public ground-general body; M06 original two public horses immediate startup; M07 ordinary pool exclusion only. No transfer to original/half-chaos; no M08 or D01 approval."
+    "total_source_confirmation_count": 26,
+    "scope_guard": "M04 ground-rook body; M05 public ground-general body; M06 original two public horses immediate startup; M07 ordinary pool exclusion only. No transfer to original/half-chaos; no M08 or D01 approval. M08 normal ground-pawn body also confirmed ordinary-only; D01 and special crossings remain unapproved."
   },
   "H15_public_progress_source_review": {
     "status": "source_permission_restored_canonical_representation_pending",
@@ -245,18 +271,5 @@
     "not_new_rule_confirmation": true
   },
   "publication_parent_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
-  "unread_concurrent_returns": [
-    {
-      "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
-      "blob_sha": "50464b376ec0b60e82b8a4f8f0f444777b9930ee",
-      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
-      "status": "detected_unread_preserved_for_next_coordination"
-    },
-    {
-      "path": "worklines/standard/RETURN_TO_MAIN.json",
-      "blob_sha": "d433a7144b6cfd57dc727f38cae86dca20f3b189",
-      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
-      "status": "detected_unread_preserved_for_next_coordination"
-    }
-  ]
+  "unread_concurrent_returns": []
 }
