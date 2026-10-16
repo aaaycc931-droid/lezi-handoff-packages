@@ -1,25 +1,25 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "selected_public_fieldmap_source_review_h15_first_tick_candidate_pending",
+  "status": "H15_first_tick_confirmed_D01_shared_boundaries_received",
   "resume_date_local": "2026-10-16",
   "timezone": "Asia/Shanghai",
-  "base_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "base_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
   "user_authorization": "Continue main, restore four-line coordination, protect unreturned work, recover necessary sources from existing account files, maintain this line and stage handoff. Continue is not candidate approval.",
   "current_adjudication_record": "ADJUDICATION.json",
-  "adjudication_version": "1.51",
+  "adjudication_version": "1.52",
   "design_stage": "S1.36",
-  "pending_decision": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+  "pending_decision": null,
   "pending_decision_approved": false,
   "shared_coordination": "SHARED_COORDINATION.json",
   "source_map": "SOURCE_MAP.json",
   "project_work_agreement": "PROJECT_WORK_AGREEMENT.md",
   "collaboration": {
     "current_index": "../../collaboration/CURRENT.json",
-    "actually_read_revision": "2026-10-15.v0.10",
+    "actually_read_revision": "2026-10-16.v0.11",
     "formal_baseline": "1.8.0",
-    "gate": "L3_scoped_source_contract_and_pending_candidate_write",
-    "actual_modules": "SOURCE_MAP.json sources collaboration read_scope"
+    "gate": "L3_scoped_authoritative_confirmation_write",
+    "actual_modules": "SOURCE_MAP.json current_collaboration_read"
   },
   "protection": {
     "original_current_record_git_blob": "1c73a43d04dd83b607534c85f4ca64d2b15ae1f7",
@@ -27,25 +27,26 @@
     "other_dialogue_unreturned_work": "unknown; must not overwrite",
     "historical_1_48_did_not_overwrite_current_1_49": true,
     "original_1_49_preserved_at_commit": "26736f643754ae22731a7540874835ddf4e21409",
-    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Historical1.51 fact; this phase ADJUDICATION bytes unchanged.",
-    "original_1_50_preserved_at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654"
+    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Only explicit H15 timing addition and source-confirmed D01 boundaries/metadata; all preexisting confirmed core and prior confirmations preserved.",
+    "original_1_50_preserved_at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "original_1_51_preserved_at_commit": "50ad0d433f866fff41693cc495ec5d69c7724580"
   },
   "worklines": {
     "main": {
-      "next": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
-      "status": "source_contract_map_v0_2_partial_single_tick_choice_pending"
+      "next": "REVIEW-REPETITION-PUBLIC-FIELDMAP-20261016",
+      "status": "source_review_no_active_new_candidate"
     },
     "standard": {
-      "next": "普通D01沙漏零实际回归发动/扣次候选",
-      "source_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+      "next": "D01己方正常主行动内首次获得崩坏的期限候选",
+      "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
       "new_return_or_receiver_receipt_found": true,
-      "actual_live_dialogue_progress": "D01 ordinary public-start/fixed-public-anchor/source body confirmed; cumulative27; zero-return candidate pending; ET14+HG10 unrun."
+      "actual_live_dialogue_progress": "Four explicit shared D01 confirmations received; newest own-action collapse-deadline candidate pending. Ordinary29 reported preserved; specs unrun."
     },
     "half_chaos": {
-      "next": "H21",
-      "source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+      "next": "M01—M08与D01覆盖缺口审查",
+      "source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
       "new_current_return_found": true,
-      "actual_live_dialogue_progress": "r19 H19/H20 stage/selected contract received;28 unrun specs; actual1.51 adoption receipt; H21 next."
+      "actual_live_dialogue_progress": "r20 H21 five-form stage metadata received;36 specs unrun; next mutation coverage audit. Full8.35/8.36 not read by main; no new local rule confirmation."
     },
     "ui": {
       "next": "B6 连接中：设备名与取消",
@@ -63,20 +64,21 @@
     "other_lines_not_modified": true,
     "root_index_updated": true,
     "half_chaos_scope_note": "Current complete working body/state/source map published; deep private/historical archives not fully migrated.",
-    "concurrent_standard_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b"
+    "concurrent_standard_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+    "concurrent_half_chaos_commit_preserved": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d"
   },
   "verification": {
     "record_and_candidate_source_equivalence_checked": true,
     "document_and_pointer_checks": "VALIDATION.json",
-    "new_rule_confirmations": 0,
+    "new_rule_confirmations": 1,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "runtime_acceptance": false,
     "implementation": false,
     "old_evidence": "inherited original scope only; not rerun",
-    "received_other_line_confirmed_designs": 1,
-    "shared_rule_confirmation_from_mode_returns": 0,
-    "current_phase_candidate_count": 1,
+    "received_other_line_confirmed_designs": 4,
+    "shared_rule_confirmation_from_mode_returns": 4,
+    "current_phase_candidate_count": 0,
     "current_phase_engine_runs": 0
   },
   "scoring": {
@@ -90,24 +92,25 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "Present the single H15 first-tick candidate; keep optional public progress/status, start cost/empty pool and broader key sources separate.",
+  "next_action": "Continue remaining public field/source-transition mapping; H15 first tick resolved, start cost/empty pool/progress lifecycle remain separate. D01 own-action collapse deadline stays pending in standard.",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": "partial; VALIDATION.json limitation_audit; source and document checks only, no independent/runtime verification",
-  "last_confirmed_decision": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-  "confirmed_at_local": "2026-10-16T15:35:18+08:00",
+  "last_confirmed_decision": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+  "confirmed_at_local": "2026-10-16T20:23:07+08:00",
   "resume_after_quota_at_local": "2026-10-16T15:23:28+08:00",
   "resume_after_quota_is_new_candidate_approval": false,
   "decision_index": "PENDING_DECISION.json",
   "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
-  "publication_parent_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "publication_parent_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
   "unread_concurrent_returns": [],
-  "latest_return_observation_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "latest_return_observation_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
   "current_phase": {
-    "user_instruction": "进行下一步",
-    "approval_implied": false,
+    "user_instruction": "同意方案",
+    "explicit_confirmation": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
     "source_fieldmap_schema": "lezi.repetition.public_fieldmap.v0.2",
-    "confirmed_rules_changed": false,
-    "gameplay_record_version_unchanged": "1.51",
-    "new_scoped_ordinary_confirmation_received": "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016"
+    "main_direct_new_confirmations": 1,
+    "external_shared_received": 4,
+    "game_code_changes": 0,
+    "engine_runs": 0
   }
 }

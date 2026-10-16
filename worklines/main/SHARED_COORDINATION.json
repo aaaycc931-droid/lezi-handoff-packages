@@ -1,6 +1,6 @@
 {
   "schema": "lezi.main.shared_coordination.v1",
-  "base_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "base_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
   "status": "public_body_equivalence_confirmed_public_fieldmap_source_review",
   "shared_confirmations": {
     "already_document_adopted": 7,
@@ -18,16 +18,47 @@
       "H11-A same black1 remaining deadline and independent formal sampling are confirmed; remaining work is implementation/alignment, not reopening the resolved timing question."
     ],
     "latest_main_confirmation": {
-      "id": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-      "at_local": "2026-10-16T15:35:18+08:00",
-      "source": "ADJUDICATION.json#/unified_adjudication_core/repetition_public_body_equivalence",
+      "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+      "at_local": "2026-10-16T20:23:07+08:00",
+      "source": "ADJUDICATION.json#/shared_hero_timing_updates/H15_first_cultivation_tick",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
       "implementation": false
-    }
+    },
+    "new_this_phase": {
+      "main_direct": 1,
+      "source_workline_shared_received": 4,
+      "not_additional_ordinary_index_rows": true
+    },
+    "received_D01_shared_sources": [
+      {
+        "commit": "1b98d245beac601737207f286815152c83450318",
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
+        "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+      },
+      {
+        "commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+        "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
+        "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+      },
+      {
+        "commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+      },
+      {
+        "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+        "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+        "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+        "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+      }
+    ]
   },
   "items": [
     {
@@ -69,15 +100,11 @@
     {
       "id": "HC-MAIN-TICK",
       "owner": "main",
-      "status": "first_tick_candidate_pending_cost_and_empty_pool_separate",
-      "scope": "Single existing first-tick direction is now a concrete three-mode candidate; action cost and empty pool remain separately pending.",
-      "source": {
-        "repository": "aaaycc931-droid/lezi-handoff-packages",
-        "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
-        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "H15"
-      },
-      "candidate": "candidates/h15-first-cultivation-tick/v1.json"
+      "status": "first_tick_confirmed_cost_and_empty_pool_still_pending",
+      "scope": "H15 opening first own normal begin; post-begin late start first counts at next own normal begin. Start cost, empty pool and public progress remain separately unresolved.",
+      "source": "ADJUDICATION.json#/shared_hero_timing_updates/H15_first_cultivation_tick",
+      "candidate": "candidates/h15-first-cultivation-tick/v1.json",
+      "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016"
     },
     {
       "id": "HC-MAIN-BEGIN-ORDER",
@@ -201,24 +228,48 @@
     {
       "id": "STD-D01-EDGES",
       "owner": "main/standard",
-      "status": "ordinary_body_confirmed_zero_return_candidate_and_residual_edges_pending",
-      "scope": "Ordinary full-public startup, initial ammunition and fixed public anchors/body now explicitly confirmed. Zero-return/full-cost hourglass candidate, in-check, same-turn repeated use, begin/deadline/occupation and shared-adjudication interfaces remain separate. Main read complete confirmed section; HG body/specs not fully read.",
+      "status": "four_shared_boundaries_confirmed_own_action_deadline_and_full_interfaces_pending",
+      "scope": "Source-confirmed: zero-return full-cost/sequential uses; zero-appeared eligibility; hourglass closed-atom safety in reviewed branch; current-check bomb ban. Own-action collapse deadline, complete search/clock/ordering and other unreviewed interfaces remain pending.",
       "source": {
-        "commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
-        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "complete confirmed D01 section lines719-758 only; next zero-return body and ten new specs not fully read"
+        "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+        "path": "worklines/standard/RETURN_TO_MAIN.json",
+        "read_scope": "latest stage metadata plus four complete separate confirmation source files; current deadline candidate body not fully read"
+      }
+    },
+    {
+      "id": "MAIN-D01-SHARED-BOUNDARIES",
+      "owner": "main/standard",
+      "status": "four_original_shared_confirmations_received_design_only",
+      "confirmation_ids": [
+        "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+        "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
+        "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+        "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016"
+      ],
+      "source": "ADJUDICATION.json#/shared_mutation_design_updates/D01",
+      "scope": "Original per-mode D01 availability/hidden publicity retained; no acceptance of the newer collapse-deadline candidate."
+    },
+    {
+      "id": "HC-MAIN-H21-REVEAL-CONTROL",
+      "owner": "main",
+      "status": "reported_source_question_original_authority_pending",
+      "scope": "GK-C01: selected own-controlled dark pawn reveals enemy during true descent; nightmare relocation/invincible buff/reselection eligibility needs original-source review. No entitlement or new exception granted. Main read r20 return metadata only, not8.35/8.36 full body or original source.",
+      "source": {
+        "commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+        "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+        "read_scope": "shared_coordination HC-MAIN-H21-REVEAL-CONTROL complete reported question"
       }
     }
   ],
   "independent_worklines": {
-    "standard": "D01 public-start/fixed-anchor/source body confirmed ordinary-only;27 confirmation index; next zero-return/full-cost hourglass candidate pending.",
-    "half_chaos": "H19/H20 r19 stage/selected contract received;28 specs unrun; next H21. Existing H20 source question remains.",
+    "standard": "D01 four explicit shared boundary confirmations received; next own-normal-main-action collapse deadline pending; reported ordinary index29 retained, not fresh whole-index reread.",
+    "half_chaos": "r20 H21 stage metadata received;36 specs unrun; next M01-M08/D01 coverage gap audit. New reveal/control source question received as metadata only.",
     "ui": "B6 connecting/device name/cancel; metadata says not created; preserve any newer unreturned work; one image at a time"
   },
   "delivery_vs_adoption": {
     "published_by_main": "document coordination only",
     "recipient_receipts_required": true,
-    "other_lines_current_adoption": "Both actual receiver-owned receipts now consume main1.51 public-body equivalence within their own scopes. UI unknown; new fieldmap/first-tick candidate not yet received by any other dialogue.",
+    "other_lines_current_adoption": "Both historical actual1.51 local receipts retained. Standard additionally read main50ad fieldmap/pending metadata. New1.52 H15/D01 publication adoption unknown for all other receivers.",
     "messages_sent": false
   },
   "scoring_frozen": true,
@@ -227,8 +278,8 @@
   "new_engine_tests": 0,
   "receiver_receipts_observed": {
     "half_chaos": {
-      "receipt_source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
-      "sender_read_source_commit": "813395aa496b09426a0e5113c4145c0952ba32ca",
+      "receipt_source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+      "sender_read_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
       "adopted_scope_reported": [
         "previous_half_chaos_confirmations_and_H10_restoration_already_in_main_documents",
         "H14_current_plus6_and_information_permissions",
@@ -238,21 +289,36 @@
         "main actual H14/H16 stage receipt within declared excerpts/metadata scope",
         "H20 prerequisite remains pending; r18 stage scope verified from actual receipt; no r19 reading inferred",
         "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016 consumed for half_chaos as confirmed design, not runtime",
-        "main actual scoped r18 river stage receipt and1.50 local consumption recognition"
+        "main actual scoped r18 river stage receipt and1.50 local consumption recognition",
+        "current main source/receipt metadata rechecked; H20 and river qualification remain pending; no new rule adopted this round",
+        "main actual r19 selected-contract/source-question and own1.51-consumption receipt only, not all prefixes/runtime"
       ],
       "new_1_50_confirmation_adopted": true,
-      "new_1_51_confirmation_adopted": true
+      "new_1_51_confirmation_adopted": true,
+      "main1_52_adoption": null,
+      "D01_original_shared_adopted": {
+        "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+        "adopted_scope": [
+          "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+          "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
+          "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+          "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016"
+        ],
+        "scope_guard": "only half_chaos where D01 already legally available; no ordinary initialization or pool approval; no runtime"
+      }
     },
     "standard": {
-      "receipt_source_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
-      "sender_read_source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+      "receipt_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+      "sender_read_source_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
       "adopted_scope_reported": [
-        "Prior1.50 repetition segmentation/nonrollback preserved.",
-        "New1.51 internal-ID-only equivalence principle with public attributes/rights/relations retained; no secret disclosure or complete field-map claim.",
-        "Real main scoped M04-M08 receipt/document adoption observed; new D01 receipt unknown."
+        "Prior1.50/1.51 source-confirmed policies retained; unchanged ADJUDICATION body not reread.",
+        "Actual main D01 ordinary startup/body receipt observed.",
+        "H15 candidate and expanded partial field-map status preserved as pending/incomplete; no new shared policy adopted."
       ],
       "new_1_50_confirmation_adopted": true,
-      "new_1_51_confirmation_adopted": true
+      "new_1_51_confirmation_adopted": true,
+      "latest_stage_read": true,
+      "main1_52_adoption": null
     }
   },
   "ordinary_mode_adoption": {
@@ -266,16 +332,20 @@
       "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016"
     ],
     "total_source_confirmation_count": 27,
-    "scope_guard": "M04-M08 and D01 public-start/fixed-anchor/body retain their original ordinary-only scopes; zero-return and unapproved crosses remain pending. No mode initialization transfers."
+    "scope_guard": "M04-M08 and D01 public-start/fixed-anchor/body retain their original ordinary-only scopes; zero-return and unapproved crosses remain pending. No mode initialization transfers.",
+    "reported_current_index_count": 29,
+    "count_scope_note": "No fresh whole29-index review; predecessor ordinary zero-return/same-turn rules are covered by later explicit shared-core source, not recounted."
   },
   "H15_public_progress_source_review": {
-    "status": "public_permission_preserved_first_tick_candidate_pending_lifecycle_unresolved",
+    "status": "first_tick_confirmed_public_permission_preserved_lifecycle_unresolved",
     "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
     "not_new_rule_confirmation": true,
-    "first_tick_candidate": "candidates/h15-first-cultivation-tick/v1.json"
+    "first_tick_candidate": "candidates/h15-first-cultivation-tick/v1.json",
+    "first_tick_confirmation": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016"
   },
-  "publication_parent_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "publication_parent_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
   "unread_concurrent_returns": [],
-  "current_phase_new_confirmations": 0,
-  "current_phase_ordinary_confirmation_received": "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016"
+  "current_phase_new_confirmations": 1,
+  "current_phase_ordinary_confirmation_received": "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016",
+  "current_phase_external_shared_confirmations_received": 4
 }

@@ -1,132 +1,130 @@
 {
-  "schema": "lezi.main.document_validation.v3",
-  "base_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "schema": "lezi.main.document_validation.v4",
+  "base_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
   "checks": {
-    "new_main_confirmation_count": 0,
-    "pending_candidate": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
-    "candidate_approved": false,
-    "complete_key": false,
-    "source_contract_groups": 8,
+    "new_main_confirmation_count": 1,
+    "external_original_shared_confirmations_received": 4,
+    "current_user_candidate": null,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
-    "independent_review": false,
+    "complete_key": false,
+    "prior_confirmations_unchanged": true,
+    "prior_unified_core_unchanged": true,
+    "H15_proposal_bytes_semantics_unchanged": true,
     "other_workline_files_modified": false,
-    "actual_half_chaos_1_51_receipt_read": true,
-    "all28_H19_H20_specs_unrun": true,
-    "ADJUDICATION_1_51_bytes_unchanged": true,
-    "all_staged_json_parse": true,
-    "changed_paths": 13,
-    "new_ordinary_scoped_confirmation_received": 1,
-    "actual_standard_1_51_receipt_read": true,
-    "concurrent_standard12_paths_preserved": true
+    "concurrent_HC10_paths_preserved": true,
+    "H21_36_specs_unrun_stage_only": true
   },
   "limitation_audit": {
-    "audit_trigger": "Persistent shared source-contract mapping, conflicting public/private source wording and pending three-mode first-tick candidate.",
-    "risk_level": "high_project_source; reversible documentation only; L3 conservative scoped review",
+    "audit_trigger": "Explicit three-mode H15 timing confirmation and original-source shared D01 adoption into authoritative main text.",
+    "risk_level": "high_project_rule_source; L3 scoped reversible documentation only",
     "known_facts": [
-      "Confirmed public effective equality and identity rules remain unchanged in1.51.",
-      "H14 explicitly exposes activation/fees even for secret insight; H10 explicitly hides use/cooldown/host.",
-      "Current H15 shared and original branch list first count as unresolved; branch suggests next own begin.",
-      "Actual half_chaos receiver-owned receipt consumes main1.51 within its declared local scope.",
-      "Concurrent ordinary D01 explicit approval27 and complete confirmed body read; actual ordinary1.51 receipt verified. Zero-return/full-cost remains its independent pending proposal."
+      "Current user directly approves the single immediately preceding H15 first-tick question.",
+      "Four D01 files contain separate explicit three-mode user confirmations, guards and reviewed branches.",
+      "Current collaboration index is v0.11/formal1.8.0.",
+      "All old main files except root current index match the latest pinned remote blob identities.",
+      "Concurrent r20 H21 stage and true D01 local adoption receipt read as metadata; underlying36 specs/full body unreviewed."
     ],
     "user_statements": [
       {
-        "quote": "进行下一步",
-        "scope": "continue previously described source review and phase maintenance; not candidate approval"
+        "quote": "同意方案",
+        "at_local": "2026-10-16T20:23:07+08:00",
+        "scope": "three-mode H15 first tick only"
       }
     ],
     "claim_register": [
       {
-        "claim": "Source-specific public/private and resource rules",
-        "type": "document_fact",
-        "source": [
-          "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-          "worklines/standard/rules/shared/01_CURRENT_RULES.md",
-          "worklines/standard/rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md"
-        ],
-        "verification": "V2 scoped current-source reads"
+        "claim": "H15 first tick confirmed",
+        "type": "user_statement",
+        "source": {
+          "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
+          "path": "candidates/h15-first-cultivation-tick/v1.json",
+          "git_blob_sha": "6128a28739b8e98aa40b9dfb7a40a3bdcbfda115"
+        },
+        "verification": "V2 exact presented candidate and direct current approval"
       },
       {
-        "claim": "First tick remains pending and next-own-begin is existing candidate direction",
+        "claim": "D01 four shared boundaries previously explicitly confirmed",
         "type": "document_fact",
         "source": [
-          "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md#6",
-          "worklines/standard/rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md#未决及禁止推断"
+          {
+            "commit": "1b98d245beac601737207f286815152c83450318",
+            "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+            "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
+            "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+          },
+          {
+            "commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+            "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+            "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
+            "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+          },
+          {
+            "commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+            "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+            "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+            "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+          },
+          {
+            "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+            "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+            "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+            "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+          }
         ],
-        "verification": "V2 original/current source"
+        "verification": "V2 complete original source JSON and actual sending commits; not direct observation of other chat"
       },
       {
-        "claim": "Seven resource contracts apply confirmed equality; exact encoding not final",
+        "claim": "Current phase maintains all safety/privacy/mode guards without implementation",
         "type": "ai_inference",
-        "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
-        "verification": "V1 same-assistant mapping under V2 sources"
-      },
-      {
-        "claim": "Death-linked public training status could identify hidden trainee",
-        "type": "hypothesis",
-        "source": "Hidden binding plus death-failure rule in current H15; no live client reproduced",
-        "verification": "V1 information-flow risk, not observed leak"
-      },
-      {
-        "claim": "H20 original prerequisite versus omitted later summary",
-        "type": "document_fact",
-        "source": "half_chaos r19 selected8.33 source report",
-        "verification": "V2 report checked only; original full chain not independently checked"
-      },
-      {
-        "claim": "Ordinary D01 startup/anchor/body confirmed, remaining zero-return boundaries pending",
-        "type": "document_fact",
-        "source": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b ordinary RETURN_TO_MAIN and complete working confirmed section",
-        "verification": "V2 exact original scoped confirmation plus complete confirmed body; no mode transfer/runtime"
+        "source": "scoped document diff",
+        "verification": "V1 same-assistant integration, no V3/V4"
       }
     ],
     "ai_interpretations": [
-      "Effective fee counts must not be dropped under the raw turn-index exclusion.",
-      "Public progress permission does not uniquely specify status/failure output.",
-      "Next-begin first tick is coherent with already closed begin; business content remains pending."
+      "H15 consent does not choose action cost, empty pool, public lifecycle or H06/M07 order.",
+      "D01 original earlier not-decided fields are resolved only by matching later confirmations; current collapse deadline remains pending."
     ],
     "assumptions": [
-      "Rows apply only where source mode enables hero/shape/mutation.",
-      "Examples assume successful start, living trainee and legally reached subsequent normal begins."
+      "Existing mode availability and source phase gates continue.",
+      "Abstract H15 timelines assume legal successful start, living trainee and actual later normal begins."
     ],
     "unknowns": [
       "complete remaining hero/mutation public effects, resource and relation map",
-      "user decision on the existing H15 first-tick direction now concretely presented at candidates/h15-first-cultivation-tick/v1.json",
       "H15 optional public progress/status lifecycle, start cost/empty pool and source-specific history interactions",
       "all special-space public readers and eligible source-phase mappings",
       "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
       "canonical equality/serialization/hash algorithm",
       "pressure eligibility/exclusions and all-source ordering",
-      "concrete legal fixtures and runtime/privacy validation"
+      "concrete legal fixtures and runtime/privacy validation",
+      "D01 current own-action collapse deadline and exact source-order/search/clock interfaces"
     ],
     "competing_explanations": [
-      "A source-visible future right can be encoded in equivalent representations; these field names are not the uniquely approved schema.",
-      "H15 immediate start tick is an alternative business choice; current post-begin wording alone is not treated as explicit approval.",
-      "Permission to show progress is compatible with multiple lifecycle policies; none is silently selected."
+      "H15 current consent could be overread as approving nearby mechanics; the explicit preceding question confines it to first count.",
+      "Hourglass safety might be overgeneralized to all independent terminals or bombs; original branch guard forbids that extension."
     ],
     "falsification_conditions": [
-      "Later explicit H15 first-tick authority would supersede pending-candidate premise.",
-      "A source-private value entering a public comparison or a public fee/right erased by normalization invalidates that row.",
-      "New source changes on a touched path require reread/reconciliation before publication."
+      "Candidate content differs from the one presented to the user.",
+      "Any old confirmed core/earlier confirmation changes outside documented additions.",
+      "A source-specific guard is lost or current pending deadline becomes adopted."
     ],
-    "verification_status": "partial: V2 scoped source matching plus V1 mapping/timelines; no V3 independent review or V4 engine/client validation",
-    "action_boundary": "Normal nonforce commit based on latest c109 tree. Main/root texts and one pending H15 candidate only; all confirmed ADJUDICATION bytes and all12 concurrent ordinary paths preserved.",
+    "verification_status": "partial: V2 sources/current approval plus V1 integration; no independent V3 or engine/client V4",
+    "action_boundary": "Main/root documentation and exact candidate status only; normal nonforce commit on same observed head/tree; no other workline/source mutations.",
     "failure_conditions": [
-      "record continuation as rule approval",
-      "invent mandatory H15 progress/status disclosure or hiding",
-      "universal cap/modulo erases meaningful fee/resource state",
-      "call specs runtime-passed",
-      "overwrite another workline or receipt"
+      "mark implementation/runtime passed",
+      "reapprove hidden disclosure/cost/empty pool by H15 consent",
+      "drop hourglass both-royals-survive/independent-terminal guard",
+      "treat bomb gate as hourglass gate or adopt newer deadline",
+      "overwrite concurrent files or fabricate receiving receipts"
     ],
-    "residual_risk": "Unreviewed sources and complete privacy/phase/restore mapping remain. Public projection is not implemented or exercised.",
-    "next_validation_action": "Review the concrete first-tick candidate; continue independent source field coverage while separate H15 visibility/history/timing choices remain pending.",
+    "residual_risk": "Complete source-field/order/privacy mapping and legal fixtures still unverified; source records are scoped evidence, not reality acceptance.",
+    "next_validation_action": "Verify exact published text/blob identities and continue remaining public resource/rights/lifecycle source map; receivers record real adoption themselves.",
     "action_resilience": {
-      "maximum_exposure": "Scoped reversible text commit; no product/runtime/NET/scoring change.",
-      "stop_conditions": "Conflicting later source/target-path update, incorrect approval status, secret information unexpectedly added.",
-      "recovery": "Restore only affected main/root/candidate files through a normal commit, preserve concurrent work.",
-      "unknown_unknown_boundary": "Incomplete source map cannot support implementation or full-key acceptance."
+      "maximum_exposure": "One reversible text commit, no game code/NET/scoring or deployment.",
+      "stop_conditions": "Touched-path concurrency, conflicting approval source or guard mismatch.",
+      "recovery": "Normal scoped restore of affected files from base commit, retain all other subsequent work.",
+      "unknown_unknown_boundary": "Incomplete mapping cannot justify implementation or complete mode/key acceptance."
     }
   },
-  "remote_verification": "On successful publication: compare every staged blob/size, preserve all untouched paths and reread actual entry/state/candidate. File checks are not engine acceptance."
+  "remote_verification": "After successful branch update: verify each staged blob/size and every untouched path, reread entry/state/candidate/current authoritative H15/D01 fields. File verification is not runtime acceptance."
 }

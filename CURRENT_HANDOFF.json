@@ -34,16 +34,17 @@
     "entry": "worklines/main/START_HERE.txt",
     "state": "worklines/main/CURRENT_STATE.json",
     "shared_coordination": "worklines/main/SHARED_COORDINATION.json",
-    "base_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+    "base_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
     "necessary_body_publication": "present in this commit",
     "full_history_migration": false,
     "pending_repetition_history_approved": true,
-    "current_adjudication_version": "1.51",
-    "latest_confirmation": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-    "current_pending_candidate": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+    "current_adjudication_version": "1.52",
+    "latest_confirmation": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "current_pending_candidate": null,
     "next_source_review": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
     "public_body_equivalence_approved": true,
-    "public_fieldmap_schema": "lezi.repetition.public_fieldmap.v0.2"
+    "public_fieldmap_schema": "lezi.repetition.public_fieldmap.v0.2",
+    "H15_first_tick_confirmed": true
   },
   "historical_archive_migration_incomplete": [
     "main",
@@ -61,16 +62,16 @@
   },
   "receiver_receipts_observed_by_main": {
     "standard": {
-      "source_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+      "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
       "path": "worklines/standard/READ_RECEIPTS.json",
-      "acknowledged_main_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
-      "scope": "actual1.51 local public-body equivalence adoption; no complete key/runtime acceptance"
+      "acknowledged_main_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
+      "scope": "actual main50ad fieldmap/pending metadata receipt plus prior1.51 adoption; new1.52 adoption unknown"
     },
     "half_chaos": {
-      "source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+      "source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
       "path": "worklines/half_chaos/READ_RECEIPTS.json",
-      "acknowledged_main_commit": "813395aa496b09426a0e5113c4145c0952ba32ca",
-      "scope": "actual1.51 public-body-equivalence local adoption; no runtime/full-key acceptance"
+      "acknowledged_main_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+      "scope": "actual prior1.51/main r19 metadata consumption and original D01 shared adoption; new1.52 uptake unknown"
     }
   }
 }

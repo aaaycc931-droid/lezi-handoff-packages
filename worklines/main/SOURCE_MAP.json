@@ -212,39 +212,40 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.51",
-  "latest_maintenance_base_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "current_record_version": "1.52",
+  "latest_maintenance_base_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
   "latest_confirmation_source": {
-    "id": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-    "confirmed_at_local": "2026-10-16T15:35:18+08:00",
-    "user_quote": "同意",
-    "source_type": "direct_user_confirmation_of_immediately_preceding_three_mode_identity_equivalence_question",
+    "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "confirmed_at_local": "2026-10-16T20:23:07+08:00",
+    "user_quote": "同意方案",
+    "source_type": "direct_user_confirmation_of_immediately_preceding_three_mode_H15_first_tick_question",
+    "candidate_id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+    "reviewed_candidate": {
+      "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
+      "path": "candidates/h15-first-cultivation-tick/v1.json",
+      "git_blob_sha": "6128a28739b8e98aa40b9dfb7a40a3bdcbfda115"
+    },
+    "immediately_preceding_question": "是否同意这一首次计数方案用于三个模式？",
+    "presented_clauses": [
+      "开局启动：首个己方正常正式回合开始时培养+1。",
+      "中途在开始结算后启动：当回合不补进度，从下个己方正常正式回合开始+1。",
+      "兵成本2：T5开始结算后启动0/2，T6为1/2，T7为2/2并按既有合法来源处理毕业。"
+    ],
     "mode_ids": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
-    "candidate_id": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-    "reviewed_candidate": {
-      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
-      "path": "candidates/repetition-public-body-equivalence/v1.json"
-    },
-    "immediately_preceding_question": "是否同意这一身份区分口径用于三个模式？",
-    "presented_conditions": "行棋方、阶段等其他条件相同；公开状态、资格和绑定关系完全相同，仅后台编号不同，算相同局面；防御、飞行、可用资格或公开绑定关系不同仍须区分。秘密宿主和单方洞察沿用已确认信息边界。",
-    "scope": "three-mode repetition equality: raw internal piece identity versus source-authorized shared public effective identity/relations only",
-    "confirmed": {
-      "raw_internal_piece_id_alone_distinguishes_key": false,
-      "consistent_renaming_preserving_all_included_public_attributes_and_relations_is_equal": true,
-      "public_relevant_effects_and_current_or_source_defined_future_rights_preserved": true,
-      "public_binding_relations_preserved_not_blindly_dropped_with_ids": true,
-      "secret_identity_binding_or_one_sided_knowledge_adds_fields": false,
-      "unknown_field_mapping_proves_equivalence": false
-    },
+    "scope": "First cultivation increment after a successful initial training start only; preserves existing later normal-begin progression.",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_timing_updates/H15_first_cultivation_tick",
     "not_inferred": [
-      "Complete key schema/hash/canonical graph algorithm.",
-      "H15 optional public progress representation.",
-      "Any new publicity of bindings, current secret faction, or H14 historical observations.",
-      "Pressure eligibility/exclusions, all-source ordering or engine implementation."
+      "training start action cost",
+      "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
+      "H15 progress mandatory publicity or forced privacy, status/failure output",
+      "H15 first tick versus M07 same-begin ordering",
+      "H06 progress/body/status restoration beyond existing exception",
+      "other modes H11 space semantics",
+      "complete repetition key, pressure, implementation/runtime/scoring/NET"
     ],
     "implementation_status": "confirmed_design_not_implemented",
     "new_engine_tests": 0
@@ -283,10 +284,9 @@
     }
   },
   "latest_half_chaos_read_scope": {
-    "source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
-    "read_scope": "8.33 introduction, source-contract table and source-question/limitations; 8.34 full; 8.28 resource/privacy and8.30 resource-contract excerpts only. Not all seven prefixes/28 specs.",
-    "next": "H21",
-    "actual_receipt": "main1.51 acknowledged at813395 in receiver-owned half_chaos/READ_RECEIPTS.json"
+    "source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+    "read_scope": "r20 complete return/actual receiver metadata only; no full8.35/8.36 or36-spec review",
+    "next": "M01-M08/D01 coverage gap audit"
   },
   "latest_fieldmap_sources": [
     {
@@ -320,19 +320,52 @@
       "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b"
     }
   ],
-  "publication_parent_commit": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "publication_parent_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
   "unread_concurrent_returns": [],
   "current_phase_candidate_source": {
     "id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
     "path": "candidates/h15-first-cultivation-tick/v1.json",
-    "approved": false,
-    "original_pending_direction": {
-      "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
-      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
-      "read_scope": "core1, half-chaos training binding/time paragraph and section6 remaining first-count candidate; private-progress wording remains superseded by current shared source",
-      "git_blob_sha": "1207f415a2681aafcd20df7dd9b35d03a0276a61"
-    }
+    "approved": true,
+    "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "presented_commit": "50ad0d433f866fff41693cc495ec5d69c7724580"
   },
-  "confirmed_record_maintenance_note": "ADJUDICATION1.51 bytes preserve shared confirmed rules and prior external-return snapshot; newer scoped ordinary D01 receipt/adoption is in current READ_RECEIPTS/SHARED_COORDINATION. This does not create a new shared confirmation.",
-  "concurrent_source_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b"
+  "confirmed_record_maintenance_note": "ADJUDICATION1.52 adds one direct H15 confirmation and four independently source-confirmed D01 shared boundaries; old1.51 core and all previous confirmations preserved.",
+  "concurrent_source_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
+  "latest_standard_shared_confirmation_sources": [
+    {
+      "commit": "1b98d245beac601737207f286815152c83450318",
+      "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+      "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
+      "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+    },
+    {
+      "commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+      "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+      "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
+      "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+    },
+    {
+      "commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+      "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+      "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+      "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+    },
+    {
+      "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+      "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+      "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+      "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+    }
+  ],
+  "latest_standard_read_scope": {
+    "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+    "scope": "latest return/receipt metadata plus four complete original shared confirmation JSON; current collapse candidate body not read fully"
+  },
+  "current_collaboration_read": {
+    "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+    "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
+    "working_revision": "2026-10-16.v0.11",
+    "git_blob_sha": "d74c93b1947f1044dfb8a8676ab468ef5e3328e3",
+    "read_scope": "INTEGRATED_START/TASK_ROUTES; AUTHORIZATION_AND_ADOPTION; BASELINE_DELTA_CHECK/APPROVED_BASELINE_PRESERVATION; MANDATORY_PRECHECK/SOURCE_ACTIVATION; GITHUB_HANDOFF_WORKFLOW new output/object/concurrency/failure controls; AI_LIMITATION_CONTROL relevant full risk/audit/verification/resilience paragraphs; unchanged earlier-read project/temporal/maintenance modules reused after scoped diff check. Not full-document audit."
+  }
 }
