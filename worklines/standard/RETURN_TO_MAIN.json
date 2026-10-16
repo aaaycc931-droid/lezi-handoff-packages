@@ -2,26 +2,26 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T20:05:34+08:00",
-  "source_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
-  "base_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
-  "approval_context_source_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
-  "phase": "bomb_gate_confirmed_own_action_collapse_deadline_prepared",
+  "prepared_at_local": "2026-10-16T20:44:17+08:00",
+  "source_commit": "911cc7218a726bc3f3a15678b08713616971d419",
+  "base_commit": "911cc7218a726bc3f3a15678b08713616971d419",
+  "approval_context_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+  "phase": "D01_deadline_confirmed_1_52_consumed_H03_atom_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定：己方正常主行动/其落位原子内首次获得崩坏，截止设下一己方正式回合末，排除当前回合末；对手回合获得/连续污染不续期/合法解除等保持。本项未批准。",
+  "current_breakpoint": "用户决定普通H03已合法成功越河授防御后，若同原子落位死亡是否仍消耗名额；建议授予即记账、不退还，失败尝试不算。仅普通，当前未批准。",
   "confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
-      "kind": "new_direct_shared_bomb_gate_confirmation",
+      "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+      "kind": "new_direct_shared_collapse_deadline_confirmation",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
-      "source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+      "source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
       "new_local_standard_confirmation": false,
-      "confirmed_at_local": "2026-10-16T20:01:29+08:00",
+      "confirmed_at_local": "2026-10-16T20:33:48+08:00",
       "user_quote": "同意"
     }
   ],
@@ -30,8 +30,9 @@
     "inherited_source_round_count": 21,
     "current_index_count": 29,
     "all29_local_records_unchanged": true,
-    "existing_shared_records_unchanged": true,
-    "shared_confirmations_originated_here_total": 4,
+    "existing_shared_gameplay_scopes_preserved": true,
+    "prior_receiver_metadata_refreshed_from_actual_receipts": true,
+    "shared_confirmations_originated_here_total": 5,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
@@ -42,7 +43,8 @@
       "body": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 沙漏零回归发动与次数"
-      }
+      },
+      "scope_note": "Original ordinary-specific full reread not newly asserted; same policy now covered by actually adopted shared hourglass core."
     },
     {
       "id": "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016",
@@ -51,7 +53,8 @@
       "body": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 普通同回合逐次使用沙漏"
-      }
+      },
+      "scope_note": "Original ordinary-specific full reread not newly asserted; same policy now covered by actually adopted shared hourglass core."
     }
   ],
   "main_prior_adoption_observed": {
@@ -68,15 +71,17 @@
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
   "pending_decision": {
-    "id": "D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE",
+    "id": "H03-ORDINARY-ATOM",
     "status": "proposal_pending_user_confirmation",
-    "bomb_confirmation_does_not_approve_own_action_deadline": true
+    "scope": "ordinary_only",
+    "D01_confirmation_does_not_approve_H03_quota": true
   },
   "changes": [
-    "Record explicit shared bomb in-check gate, ordinary29 unchanged.",
-    "Update current12A.5/reference while preserving prior originals and current12A.7 deadline text.",
-    "Prepare own-normal-main-action collapse deadline choice with TC-S01/8 unrun specs; all other source edges retained.",
-    "Preserve all prior pending receiver scopes and append new shared confirmation."
+    "Record fifth direct shared D01 deadline clarification; ordinary29 unchanged.",
+    "Preserve concurrent main/half commits; recognize actual first-four-D01 shared source receipt/adoption.",
+    "Adopt main1.52 original H15 first tick and update two current H15 bodies; cost/empty pool/progress permissions not changed.",
+    "Restore existing ordinaryH03 atom quota question as concrete unapproved candidate with8 unrun specs.",
+    "Adopt actual newly read collaboration0.12 affected full modules; preserve concurrent UI update and use latest same-head tree/parent."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -91,90 +96,112 @@
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
     "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-    "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+    "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+    "worklines/standard/rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json",
+    "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+    "worklines/standard/rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
     "worklines/standard/PUBLISHED_FILES.json"
   ],
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 5288,
-      "sha256": "b853233e02eb3dae1dcd15dc7f4f92f5d2516e65878bfaac3c7d5841727b4a88"
+      "size": 5593,
+      "sha256": "03d6f7b3007de2e81a0dac77f5c65006e41ffd4353c40686f99d9ad8d807880a"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 12587,
-      "sha256": "ffcb8564282c9b2140af3400dd6e01cdb623b97fc76be932ed403b1196f24d7b"
+      "size": 15407,
+      "sha256": "870b94f38248a2057ddc6e62268614d67336e9dc8cba10b95cd16ce831d87198"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1466,
-      "sha256": "cdf7c6ebb21425d24cdaa39090b2d5b0b856c1e235b190f6ebdd0cfa61f8fdb7"
+      "size": 1501,
+      "sha256": "ff3ada82bd3a507ea58c1124d80f418547491c3c68ada227a815a7f37b512b95"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 32478,
-      "sha256": "b912bc5abd285f0f742e3c587f64e9f1fbc00d950d9341900e7e6c48fa2a7b84"
+      "size": 33550,
+      "sha256": "bcda42b4859d750f08a3bf66cd0c427b9ccad8b56d56e79d279fb3b6894b1cf9"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 2632,
-      "sha256": "f5aba205c6ac0e2b5fa5b585791a9efbb0f3fbe4c7e39f87714a1976312e492b"
+      "size": 2519,
+      "sha256": "3e21000074eda0331630dc9b56b4065c49602fe12bdceafc07bac67bdb9e8266"
     },
     {
       "path": "SOURCE_PRIORITY.json",
-      "size": 2289,
-      "sha256": "65095ec0f0ec01b1ee847524e87b38774edee8a2e030d260c5571a569bca2ae6"
+      "size": 2995,
+      "sha256": "3eec2cafa07af4914b204f6dac69fc3ca50a682283beea32b40330305fbb82ce"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 46983,
-      "sha256": "01d4275008e14a2541cd3878fc0c812d48a7e2c6d85940a0b6aceb7784cc7984"
+      "size": 51127,
+      "sha256": "8e063f39da4cdf01f807dd1af4e6c355acb8060de609069079d9fe674ceaf7f5"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 190232,
-      "sha256": "8169e72ce04f485ce5180f490b8f66da524dbc30e7a7191e939e21774cd12238"
+      "size": 196242,
+      "sha256": "aac3dc007b099252af582e1a2aac69cff7c4286d6904cbc1855fba0feb7bd8c3"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 3407,
-      "sha256": "ed6f561a288a7e02de4deee27f697ade175b1135d563525cdccfe8bdac87bc9a"
+      "size": 3654,
+      "sha256": "706038bf3b25cee9e38e310e003f766184350298336e67c09c20f9479e823231"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 26225,
-      "sha256": "2a3e535681ea54366c5519a351b41431a32e1feaacb223605cda7a57133b5a30"
+      "size": 42001,
+      "sha256": "90b3bc3a4c2cf104c0922be00fde1dd1557406d69ec1cba8361bbf1eae65f74d"
     },
     {
       "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-      "size": 22100,
-      "sha256": "bd483dcd1497acbd131ab3d9db9efc41d42c2ab5bae2f3f36f9a6e6627c716ff"
+      "size": 23286,
+      "sha256": "21098560cd1734341382af0c7414e2d47a7bc5c85fcfefdaf1ce2fe9e1f40239"
     },
     {
-      "path": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
-      "size": 3683,
-      "sha256": "d44c4e338061faa407164a55c09ffdf95932f4be67998bb4c7b6a779940bdad5"
+      "path": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+      "size": 4014,
+      "sha256": "0bd97bf9bb22e5c1f77edfeeb93d491494f00d4b8c8eaafc9607cc8da4d45a03"
+    },
+    {
+      "path": "rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json",
+      "size": 5656,
+      "sha256": "acc140fd450ccb4590a9efd9fbf5c47fb23beeaecf9747dab970b0bb8f0c5488"
+    },
+    {
+      "path": "rules/shared/02_CURRENT_HEROES.md",
+      "size": 44630,
+      "sha256": "66fb460493f0b9fe7d091a41dcbd33c3487351d054466e885184a5810b8d5cf0"
+    },
+    {
+      "path": "rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
+      "size": 2518,
+      "sha256": "9cbf023764602227b4199349790a6580ff2d87b0756d6f138f0d58360827d97d"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
-    "explicit_bomb_gate_context_checked": true,
-    "original_BG8_specs_preserved": true,
+    "explicit_deadline_context_checked": true,
+    "original_TC8_specs_preserved": true,
     "all29_ordinary_confirmation_records_unchanged": true,
-    "prior_original_shared_confirmations_unchanged": true,
-    "current_mutation_outside_labeled_update_unchanged": true,
-    "collapse_deadline_current_body_unchanged": true,
+    "prior_original_shared_confirmation_files_unchanged": true,
+    "current_mutation_outside_labeled_deadline_update_unchanged": true,
+    "main_1_51_unified_core_identical_at_1_52": true,
+    "complete_H15_first_tick_policy_and_original_read": true,
+    "actual_first_four_D01_receipts_verified": true,
     "original_source_archives_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "maintenance_validation_script_changes": 0,
     "updated_verify_dispatch": {
       "status": "passed",
-      "files": 294,
+      "files": 296,
       "game_engine_tests": 0,
       "scope": "published_project_file_integrity"
-    }
+    },
+    "collaboration_0_12_exact_raw_source_hash_and_blob_verified": true,
+    "collaboration_0_12_affected_full_modules_actually_read": true
   },
   "unrun": [
     "WC01-WC11",
@@ -191,7 +218,8 @@
     "ZA01-ZA08",
     "CK-S01/CK-S02/CK01-CK10",
     "BG-S01/BG01-BG08",
-    "TC-S01/TC01-TC08"
+    "TC-S01/TC01-TC08",
+    "QA-S01/QA01-QA08"
   ],
   "shared_coordination": [
     {
@@ -228,8 +256,8 @@
     },
     {
       "id": "STD-D01-EDGES",
-      "status": "bomb_gate_confirmed_own_action_deadline_and_order_pending",
-      "detail": "Bomb in-check gate confirmed; own-normal-main-action collapse deadline proposed, exact events/full terminal-search-clock/mapping remain separate."
+      "status": "five_boundaries_confirmed_precise_interfaces_pending",
+      "detail": "Own-main-action deadline confirmed. Exact end/skip/cancel/history/source order/full search-clock/mapping remain separate; first four shared source receipts observed."
     },
     {
       "id": "HC-MAIN-H16-ACTION-TIER",
@@ -245,42 +273,59 @@
     },
     {
       "id": "STD-D01-HOURGLASS-CORE-THREE-MODE-SCOPE",
-      "status": "explicit_shared_core_confirmed_pending_main_receipt",
+      "status": "shared_design_actual_main_and_half_receipts_observed",
       "owner": "main/standard",
       "source": "rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
-      "detail": "Both hourglass boundaries are now explicitly three-mode D01 shared core with original mode gates preserved. Main/other receiver adoption unverified."
+      "detail": "Both hourglass boundaries are now explicitly three-mode D01 shared core with original mode gates preserved. Main/other receiver adoption unverified.",
+      "receipt_commit": "ff3365addf3eb98a8efe89ac777481d485a9917e"
     },
     {
       "id": "D01-HOURGLASS-ZERO-APPEARED-ELIGIBILITY",
-      "status": "explicit_shared_qualification_confirmed_pending_main_receipt",
+      "status": "shared_design_actual_main_and_half_receipts_observed",
       "owner": "main/standard",
       "source": "rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
-      "detail": "Empty appeared-warrior set no longer blocks otherwise legal hourglass; hidden identities untouched. Main/other receivers adoption unverified."
+      "detail": "Empty appeared-warrior set no longer blocks otherwise legal hourglass; hidden identities untouched. Main/other receivers adoption unverified.",
+      "receipt_commit": "ff3365addf3eb98a8efe89ac777481d485a9917e"
     },
     {
       "id": "D01-HOURGLASS-CHECK-SAFETY-PREFLIGHT",
-      "status": "explicit_shared_hourglass_safety_confirmed_pending_main_receipt",
+      "status": "shared_design_actual_main_and_half_receipts_observed",
       "owner": "main/standard",
       "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
-      "detail": "Full current hourglass atom must independently leave own royal safe in reviewed branch; no later repair. Main/other receiver adoption unverified."
+      "detail": "Full current hourglass atom must independently leave own royal safe in reviewed branch; no later repair. Main/other receiver adoption unverified.",
+      "receipt_commit": "ff3365addf3eb98a8efe89ac777481d485a9917e"
     },
     {
       "id": "D01-BOMB-IN-CHECK-GATE",
-      "status": "explicit_shared_bomb_gate_confirmed_pending_main_receipt",
+      "status": "shared_design_actual_main_and_half_receipts_observed",
       "owner": "main/standard",
       "source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
-      "detail": "Current ordinary check blocks bomb; refusal no ammo/quota/status changes, no post-main reopening. Receiver adoption unknown."
+      "detail": "Current ordinary check blocks bomb; refusal no ammo/quota/status changes, no post-main reopening. Receiver adoption unknown.",
+      "receipt_commit": "ff3365addf3eb98a8efe89ac777481d485a9917e"
+    },
+    {
+      "id": "D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE",
+      "status": "shared_deadline_confirmed_pending_main_receipt",
+      "owner": "main/standard",
+      "source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+      "detail": "New own-normal-main-action acquisition deadline confirmed; prior four received, latest source not yet received."
     }
   ],
   "remote_reconciliation": {
-    "parent": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
-    "approval_context_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
-    "remote_head_unchanged_since_prior_publication": true,
+    "parent": "911cc7218a726bc3f3a15678b08713616971d419",
+    "approval_context_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+    "preserved_concurrent_commits": [
+      "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+      "ff3365addf3eb98a8efe89ac777481d485a9917e",
+      "911cc7218a726bc3f3a15678b08713616971d419"
+    ],
     "ordinary_target_paths_changed_before_local_edit": false,
     "unreturned_local_changes_found": 0,
-    "earlier_concurrent_commits_preserved_in_parent_history": true
+    "same_observed_head_tree_and_parent_required": true,
+    "latest_added_concurrent_commit": "911cc7218a726bc3f3a15678b08713616971d419",
+    "latest_added_changed_scopes": "collaboration0.12 and UI controls; no ordinary path change"
   },
-  "implementation_status": "confirmed_shared_bomb_gate_and_pending_deadline_documents_only",
+  "implementation_status": "confirmed_shared_deadline_and_existing_H15_source_adoption_ordinary_H03_pending_docs_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -293,17 +338,18 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "Shared bomb-gate confirmation and own-main-action collapse deadline ambiguity review.",
+    "audit_trigger": "D01 deadline confirmation, concurrent1.52/H15 and actual receipts, restore ordinary H03 pending quota.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User directly approves preceding bomb-gate question.",
-      "D01 source retains next-own-formal-turn-end wording; general timing defaults count acquisition turn unless explicit exception.",
-      "Current collapse deadline body remains unchanged pending precise decision."
+      "User explicitly approves prior three-mode own-action deadline candidate.",
+      "Main/half actual receipts adopt first four D01 originals; fifth is newly written.",
+      "Main1.52 H15 first tick explicitly confirmed and full relevant source read.",
+      "Ordinary H03 source expressly left same-atom death quota open."
     ],
     "user_statements": [
       {
         "quote": "同意",
-        "at_local": "2026-10-16T20:01:29+08:00",
+        "at_local": "2026-10-16T20:33:48+08:00",
         "scope": [
           "original_jieqi",
           "standard_xiangqi",
@@ -313,65 +359,65 @@
     ],
     "claim_register": [
       {
-        "claim": "bomb in-check gate confirmed",
+        "claim": "D01 own-action deadline confirmed",
         "type": "user_statement",
-        "source": "Current user and complete prior candidate at e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+        "source": "b07e444f80bddd3dc22e05a08ad7d24f2178214a complete prior proposal",
         "verification": "V2"
       },
       {
-        "claim": "source next-own-turn wording, no continuous-contamination renewal, generic same-turn default",
+        "claim": "first-four-D01 receiver adoption and H15 first tick",
         "type": "document_fact",
-        "source": "D0112A.7/14.3 and full formal timing modules",
+        "source": "ff3365addf3eb98a8efe89ac777481d485a9917e actual scoped receipt/policy/original",
         "verification": "V2"
       },
       {
-        "claim": "own normal main action acquisition excludes current turn end",
+        "claim": "ordinaryH03 success-then-death consumes quota",
         "type": "proposal",
-        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 己方主行动中获得时间崩坏的截止点",
+        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通H03 成功越河后同原子死亡的名额",
         "verification": "V0 unapproved"
       },
       {
-        "claim": "TC-S01 timing outcomes",
+        "claim": "QA-S01 shield then trap death and proposed quota",
         "type": "ai_inference",
-        "source": "same-assistant conditional source case",
+        "source": "same-assistant conditional case",
         "verification": "V1 unrun"
       }
     ],
     "ai_interpretations": [
-      "Bomb approval does not settle collapse deadline.",
-      "Current source wording and generic default require explicit own-action subcase clarification; no full historical authority claim."
+      "Incoming H15 adoption is not new direct user approval here.",
+      "H03 source open edge cannot be silently filled by half-chaos or old leaving-palace code."
     ],
     "assumptions": [
-      "TC-S01 is conditional source-legal normal main action with no independent terminal."
+      "QA-S01 other mode/geometry/king-safety and trap-lifetime conditions pass, not full natural prefix proof."
     ],
     "unknowns": [
-      "User choice on own-main-action deadline.",
-      "Any later explicit historical own-action deadline example not located here.",
-      "End-phase acquisition/skip/cancel/history interfaces and runtime."
+      "User choice on ordinaryH03 quota boundary.",
+      "Exact D01 end/history/full terminal-search-clock and other crossed interfaces.",
+      "Full source-map/engine/privacy behavior."
     ],
     "competing_explanations": [
-      "Exclude current own turn: deadline next own formal turn end; recommended.",
-      "Use nearest following own-turn-end event, including current own turn; not chosen or approved."
+      "Charge quota when legal successful crossing grants shield, later same-atom death no refund; recommended.",
+      "Require survival at atom end before charging quota; not approved."
     ],
     "falsification_conditions": [
-      "Higher-priority explicit own-action deadline clause found.",
-      "Full state invalidates assumed legal action or adds independent terminal.",
-      "User chooses pending deadline alternative."
+      "Higher-priority ordinary quota confirmation found.",
+      "Conditional trap case fails other source legality.",
+      "Receiver evidence is revised or user chooses another quota boundary."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write confirmed bomb gate; leave current collapse deadline untouched while preparing explicit scoped choice.",
+    "action_boundary": "Write direct deadline confirmation and adopt exact existing main1.52 H15 source, preserve concurrent/archives; prepare ordinary H03 without approving it.",
     "failure_conditions": [
-      "Count shared confirmation as ordinary30.",
-      "Silently select one deadline reading as already confirmed.",
-      "Reset continuous pollution deadline on A-to-B move.",
-      "Claim game/runtime or receiver adoption without evidence."
+      "Recount shared/adopted H15 as ordinary30.",
+      "Fabricate fifth-D01 receipt or complete ordinary29 original reread.",
+      "Copy other-mode H03 without explicit ordinary decision.",
+      "Claim runtime or erase precise interface backlog."
     ],
-    "residual_risk": "Limited sources and conditional reasoning do not prove all history or event ordering/runtime.",
-    "next_validation_action": "Main consumes four exact shared confirmations; user decides own-action deadline separately; precise events remain pending.",
+    "residual_risk": "Conditional source reasoning and scoped adoption do not prove full natural reachability/runtime or entire source-map.",
+    "next_validation_action": "Main reads new fifth D01 source; user decides restored ordinaryH03 quota; shared precise interfaces remain queued.",
     "action_resilience": {
-      "maximum_exposure": "Fourteen ordinary-line document/source files; no game/runtime or messages.",
+      "maximum_exposure": "Seventeen ordinary-line document/source files; no game/runtime or messages.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected ordinary files from e08e84593954a1e2c0bb1f966b8122cb5000ed9c by normal commit preserving later unrelated work.",
+      "recovery": "Restore selected ordinary files from ff3365addf3eb98a8efe89ac777481d485a9917e by normal commit preserving later unrelated work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },
@@ -384,65 +430,84 @@
   },
   "shared_coordination_consumed": {
     "new_direct_shared_gameplay_confirmations": 1,
-    "bomb_in_check_gate_approved": true,
-    "own_action_collapse_deadline_approved": false,
-    "main_H15_candidate_approved": false
+    "existing_main_shared_confirmations_adopted": 1,
+    "actual_main_and_half_first_four_D01_receipts_observed": true,
+    "ordinary_H03_atom_approved": false
   },
   "collaboration_adopted": {
-    "working_revision": "2026-10-16.v0.11",
+    "working_revision": "2026-10-16.v0.12",
     "formal_baseline": "1.8.0",
-    "source_commit": "d28bbb2d51e478c0f08f3a9a15124360aa92e3b4",
-    "source_authoring_commit": "dba9384fe2dfd8434943a79ab6f136871014c876",
-    "body_git_blob_sha": "d74c93b1947f1044dfb8a8676ab468ef5e3328e3",
-    "body_sha256": "242e3a5a16cf9e427d010fe5c9f5bd0c33ed488be5229e0a696557448d155ebf",
+    "source_commit": "911cc7218a726bc3f3a15678b08713616971d419",
+    "source_authoring_commit": "8a994a5bd6edf07fe720cbd29e67485774f63b73",
+    "body_git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
+    "body_sha256": "f66c64a95b143afca89c42fa0b9764458123af6aa5c15cf336972639100297fc",
     "actual_sections": [
       "INTEGRATED_START full",
       "TASK_ROUTES full",
-      "GITHUB_HANDOFF_WORKFLOW full including CI-15 controls",
-      "MANDATORY_PRECHECK full including SOURCE_ACTIVATION and GATE_RECEIPT"
+      "GITHUB_HANDOFF_WORKFLOW full including CI-16 session-loss recovery",
+      "MANDATORY_PRECHECK full",
+      "PART-6_CURRENT_STATE full",
+      "PART-7_MAINTENANCE full",
+      "PART-9_VERSION_HISTORY full",
+      "metadata/positioning prefix full"
     ],
     "hash_and_blob_verified": true,
-    "adopted_scope": "This ordinary-line bounded source/output/write/checkpoint controls only",
+    "adopted_scope": "Ordinary-line current generic handoff/session-loss recovery; no collaboration-author edits, UI method changes, background monitor or independent effectiveness claim.",
     "independent_effectiveness_verified": false
   },
   "shared_confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
-      "source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+      "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+      "source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
-      "confirmed_at_local": "2026-10-16T20:01:29+08:00",
+      "confirmed_at_local": "2026-10-16T20:33:48+08:00",
       "user_quote": "同意",
       "policy": {
-        "currently_in_ordinary_legal_check_blocks_dragon_bomb": true,
-        "later_main_action_promise_allows_bomb_before_evading_check": false,
-        "rejected_bomb_consumes_ammo": false,
-        "rejected_bomb_consumes_army_turn_quota": false,
-        "rejected_bomb_applies_pollution_or_collapse": false,
-        "rejected_bomb_resets_or_extends_clock": false,
-        "rejected_request_is_successful_bomb_refund": false,
-        "ordinary_main_action_reopens_bomb_window": false,
-        "not_in_check_automatically_passes_all_other_legality": false,
-        "source_caster_range_target_ammo_and_army_one_per_turn_preserved": true,
-        "valid_bomb_retains_normal_main_action": true,
-        "pollution_becomes_path_blocker_cannon_screen_or_royal_shield": false,
-        "collapse_is_immediate_death_on_bomb_hit": false,
-        "hourglass_own_full_atom_check_relief_permission_preserved": true,
-        "own_main_action_collapse_deadline": "not_decided_by_this_confirmation"
+        "guard": "First acquisition during Nozdormu-side normal main action or its landing atom, before entering formal-turn-end settlement; only where D01 legally available.",
+        "acquisition_on_own_formal_turn_N_deadline_own_turn": "N+1 formal-turn end",
+        "acquisition_turn_N_end_is_deadline": false,
+        "acquisition_during_opponent_turn_deadline": "end of the immediately upcoming Nozdormu-side formal turn, unchanged",
+        "effect_active_on_acquisition": true,
+        "continuous_pollution_A_to_B_resets_deadline": false,
+        "extra_forced_child_action_advances_formal_turn_counter": false,
+        "legal_exit_to_nonpolluted_or_cleanup_clears_collapse": true,
+        "genuine_new_acquisition_after_cleared_uses_new_source_deadline": true,
+        "next_turn_escape_or_hourglass_guaranteed_legal": false,
+        "new_ordinary_move_permission_to_empty_pollution": false,
+        "other_death_or_formal_terminal_reversed": false,
+        "end_settlement_new_acquisition_skipped_cancelled_turn_or_full_timeline_interfaces": "not_decided_by_this_confirmation"
       },
       "reviewed_candidate": {
-        "commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
+        "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "当前待决策｜D01 无限龙投弹的受将门槛"
+        "heading": "当前待决策｜D01 己方主行动中获得时间崩坏的截止点"
       }
     }
   ],
   "new_local_standard_confirmations": 0,
   "new_shared_user_rule_confirmations": 1,
   "pending_main_shared_receipt_scope": [
+    {
+      "id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜D01 己方主行动中获得时间崩坏的截止点"
+      },
+      "received_verified": null,
+      "adopted_verified": null
+    }
+  ],
+  "acknowledged_main_shared_receipt_scope": [
     {
       "id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
       "scope": [
@@ -455,8 +520,12 @@
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 两条沙漏规则的三模式共用核心"
       },
-      "received_verified": null,
-      "adopted_verified": null
+      "received_verified": true,
+      "adopted_verified": true,
+      "evidence": {
+        "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard"
+      }
     },
     {
       "id": "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
@@ -470,8 +539,12 @@
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 零已现身勇士时的发动资格"
       },
-      "received_verified": null,
-      "adopted_verified": null
+      "received_verified": true,
+      "adopted_verified": true,
+      "evidence": {
+        "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard"
+      }
     },
     {
       "id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
@@ -485,8 +558,12 @@
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 沙漏受将与王安全预检"
       },
-      "received_verified": null,
-      "adopted_verified": null
+      "received_verified": true,
+      "adopted_verified": true,
+      "evidence": {
+        "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard"
+      }
     },
     {
       "id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
@@ -500,8 +577,24 @@
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 无限龙投弹的受将门槛"
       },
-      "received_verified": null,
-      "adopted_verified": null
+      "received_verified": true,
+      "adopted_verified": true,
+      "evidence": {
+        "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard"
+      }
     }
-  ]
+  ],
+  "existing_shared_confirmation_adopted": {
+    "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "source": {
+      "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+      "path": "worklines/main/ADJUDICATION.json",
+      "record_version": "1.52",
+      "git_blob_sha": "fdc333c5e264463ffee9eb3345e628aa63d10c22",
+      "read_scope": "complete shared_hero_timing_updates.H15_first_cultivation_tick and matching original project_specific_confirmation; unchanged1.51 unified core verified identical, not full historical audit"
+    },
+    "local_source": "rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json",
+    "new_local_user_confirmation": false
+  }
 }

@@ -1,27 +1,28 @@
 {
   "first": {
-    "id": "NEXT-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE",
-    "subject": "D01己方主行动中获得时间崩坏的截止点",
-    "action": "用户决定：己方正常主行动/其落位原子内首次获得崩坏，截止设下一己方正式回合末，排除当前回合末；对手回合获得/连续污染不续期/合法解除等保持。本项未批准。",
+    "id": "NEXT-STD-H03-ATOM",
+    "subject": "普通H03成功越河后同原子死亡的名额",
+    "action": "用户决定普通H03已合法成功越河授防御后，若同原子落位死亡是否仍消耗名额；建议授予即记账、不退还，失败尝试不算。仅普通，当前未批准。",
     "pending_is_not_approved": true,
-    "is_shared_core_candidate": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 己方主行动中获得时间崩坏的截止点",
-    "decision_id": "D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE",
-    "phase": "source_checked_own_main_action_collapse_deadline_prepared"
+    "is_shared_core_candidate": false,
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通H03 成功越河后同原子死亡的名额",
+    "decision_id": "H03-ORDINARY-ATOM",
+    "phase": "restored_ordinary_H03_quota_candidate_prepared"
   },
-  "preserve": "普通29完整保持；本轮共享新增1项，本线直接共享累计4项。投弹受将已确认，己方主行动获得崩坏截止未批，现行截止正文不改；评分冻结、NET暂停。",
-  "main_owned_pending": "Receive ordinary28/29 and four shared D01 confirmations; H15/full field-source-pressure map unchanged.",
+  "preserve": "普通29项完整保持；D01主体及5项直接共享边界确认，精确接口不销账。主线1.52 H15首次计数已消费，成本/空池/权限仍未决；评分冻结、NET暂停。",
+  "main_owned_pending": "Receive new D01 deadline confirmation; exact shared source-order/full field-source-pressure/search-clock interfaces remain. Prior four D01 actual receipts recognized.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "D01-BOMB-IN-CHECK-GATE",
-    "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+    "id": "D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE",
+    "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
     "new_shared_confirmations": 1,
-    "new_ordinary_confirmations": 0
+    "new_ordinary_confirmations": 0,
+    "existing_main_shared_adoptions": 1
   }
 }

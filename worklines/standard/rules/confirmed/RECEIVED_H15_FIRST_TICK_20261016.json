@@ -1,0 +1,108 @@
+{
+  "schema": "lezi.received_shared_confirmation.v1",
+  "source": {
+    "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+    "path": "worklines/main/ADJUDICATION.json",
+    "record_version": "1.52",
+    "git_blob_sha": "fdc333c5e264463ffee9eb3345e628aa63d10c22",
+    "read_scope": "complete shared_hero_timing_updates.H15_first_cultivation_tick and matching original project_specific_confirmation; unchanged1.51 unified core verified identical, not full historical audit"
+  },
+  "received_at_local": "2026-10-16T20:41:40+08:00",
+  "original_confirmation": {
+    "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "confirmed_at_local": "2026-10-16T20:23:07+08:00",
+    "user_quote": "同意方案",
+    "source_type": "direct_user_confirmation_of_immediately_preceding_three_mode_H15_first_tick_question",
+    "candidate_id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+    "reviewed_candidate": {
+      "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
+      "path": "candidates/h15-first-cultivation-tick/v1.json",
+      "git_blob_sha": "6128a28739b8e98aa40b9dfb7a40a3bdcbfda115"
+    },
+    "immediately_preceding_question": "是否同意这一首次计数方案用于三个模式？",
+    "presented_clauses": [
+      "开局启动：首个己方正常正式回合开始时培养+1。",
+      "中途在开始结算后启动：当回合不补进度，从下个己方正常正式回合开始+1。",
+      "兵成本2：T5开始结算后启动0/2，T6为1/2，T7为2/2并按既有合法来源处理毕业。"
+    ],
+    "mode_ids": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "scope": "First cultivation increment after a successful initial training start only; preserves existing later normal-begin progression.",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_timing_updates/H15_first_cultivation_tick",
+    "not_inferred": [
+      "training start action cost",
+      "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
+      "H15 progress mandatory publicity or forced privacy, status/failure output",
+      "H15 first tick versus M07 same-begin ordering",
+      "H06 progress/body/status restoration beyond existing exception",
+      "other modes H11 space semantics",
+      "complete repetition key, pressure, implementation/runtime/scoring/NET"
+    ],
+    "implementation_status": "confirmed_design_not_implemented",
+    "new_engine_tests": 0
+  },
+  "confirmed_policy": {
+    "status": "user_confirmed_design_not_implemented",
+    "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "scope": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "opening_successful_start_first_increment": "first actually reached own normal formal-begin cultivation settlement",
+    "opening_start_itself_adds_progress": false,
+    "late_start_after_own_begin_closed_progress_at_start": 0,
+    "late_start_first_increment": "next actually reached own normal formal-begin cultivation settlement",
+    "retroactive_increment_at_already_closed_begin": false,
+    "preserved_increment_per_later_eligible_own_normal_begin": 1,
+    "extra_forced_child_shuffle_action_or_duplicate_delivery_itself_adds_progress": false,
+    "failed_training_or_terminal_creates_new_cultivation_opportunity": false,
+    "confirmed_text": [
+      "开局成功启动训练：第一次培养+1发生在实际到达的首个己方正常正式回合开始培养结算；开局启动本身不额外送一次进度。",
+      "在第T个己方正常正式回合开始结算后成功启动：该次已闭合的开始结算不追补培养，启动时进度0；第一次+1发生在后续实际到达的下一个己方正常正式回合开始培养结算。",
+      "其后沿用既有规则：每个合格己方正常正式回合开始累计1；达到当前有效兵种成本时按既有合法来源处理毕业。",
+      "额外、强迫、技能子行动、洗牌动作及重复递送本身不另加培养；已经失败或终局后不虚造新的培养机会。"
+    ],
+    "example_timelines": [
+      {
+        "case": "兵成本2；开局成功启动，受训棋一直存活且后续培养结算合法",
+        "timeline": [
+          "首个己方正常正式回合开始1/2",
+          "第二个己方正常正式回合开始2/2，进入既有毕业处理"
+        ]
+      },
+      {
+        "case": "兵成本2；在己方T5开始结算后成功启动，受训棋一直存活且后续培养结算合法",
+        "timeline": [
+          "T5启动0/2",
+          "T6开始1/2",
+          "T7开始2/2，进入既有毕业处理"
+        ]
+      },
+      {
+        "case": "同一begin重复请求或追加子行动",
+        "timeline": [
+          "不额外增加培养"
+        ]
+      }
+    ],
+    "remaining_separate": [
+      "training start action cost",
+      "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
+      "H15 progress mandatory publicity or forced privacy, status/failure output",
+      "H15 first tick versus M07 same-begin ordering",
+      "H06 progress/body/status restoration beyond existing exception",
+      "other modes H11 space semantics",
+      "complete repetition key, pressure, implementation/runtime/scoring/NET"
+    ],
+    "verification": "confirmed design; abstract timelines unrun, engine0"
+  },
+  "adopted_scope": "ordinary mode where H15 legally available; only first cultivation tick after successful start",
+  "new_local_user_confirmation": false,
+  "new_ordinary_index_row": false,
+  "implementation": false,
+  "engine_runs": 0
+}

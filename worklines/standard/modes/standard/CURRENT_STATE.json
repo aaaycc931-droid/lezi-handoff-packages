@@ -1,5 +1,5 @@
 {
-  "status": "shared_D01_bomb_gate_confirmed_own_action_deadline_pending",
+  "status": "D01_body_shared_boundaries_confirmed_H03_atom_pending",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "用户决定：己方正常主行动/其落位原子内首次获得崩坏，截止设下一己方正式回合末，排除当前回合末；对手回合获得/连续污染不续期/合法解除等保持。本项未批准。",
+  "next_action": "用户决定普通H03已合法成功越河授防御后，若同原子落位死亡是否仍消耗名额；建议授予即记账、不退还，失败尝试不算。仅普通，当前未批准。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,9 +29,9 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+    "id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
     "user_quote": "同意",
-    "at_local": "2026-10-16T20:01:29+08:00",
+    "at_local": "2026-10-16T20:33:48+08:00",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
@@ -53,13 +53,13 @@
     "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
     "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016"
   ],
-  "adjudication_version": "1.51",
+  "adjudication_version": "1.52",
   "adjudication_source": {
-    "commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+    "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
     "path": "worklines/main/ADJUDICATION.json",
-    "record_version": "1.51",
-    "git_blob_sha": "aa2fe2fc76b911ed2c4a9d821dd5ce64fe056074",
-    "read_scope": "complete new repetition_public_body_equivalence and matching project_specific_confirmation; prior unchanged1.50 policy retained, not full-document re-audit"
+    "record_version": "1.52",
+    "git_blob_sha": "fdc333c5e264463ffee9eb3345e628aa63d10c22",
+    "read_scope": "complete shared_hero_timing_updates.H15_first_cultivation_tick and matching original project_specific_confirmation; unchanged1.51 unified core verified identical, not full historical audit"
   },
   "D01_zero_return_policy_approved": true,
   "D01_same_turn_repeat_policy_approved": true,
@@ -71,5 +71,8 @@
   "D01_check_safety_source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
   "D01_bomb_in_check_gate_confirmed": true,
   "D01_bomb_in_check_source": "rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
-  "D01_own_action_collapse_deadline_confirmed": false
+  "D01_own_action_collapse_deadline_confirmed": true,
+  "D01_own_action_collapse_source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+  "H15_first_tick_confirmed": true,
+  "H15_first_tick_source": "rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json"
 }

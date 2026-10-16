@@ -1,19 +1,19 @@
 《乐子象棋》普通象棋工作线分发｜LEZI-DISPATCH-2026-10-15-r1
-任务：NEXT-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE｜下一项：D01己方主行动中获得崩坏的截止点
+任务：NEXT-STD-H03-ATOM｜下一项：普通H03成功越河后同原子死亡的名额
 
 用户指令：“现在开始进行分发工作”。本包交给对应对话并附执行指令后，继续本线限定设计；不把分发、继续、旧收束当作同意任何待定规则。主线留在原主对话，不在本线重做总收束。
 
 读取/执行顺序：
 1. 本文件 → CURRENT_STATE.json → SOURCE_PRIORITY.json → PROJECT_WORK_AGREEMENT.md。
 2. 先读../../START_COLLABORATION.md和../../collaboration/CURRENT.json，由当前索引定位通用正文，实际读INTEGRATED_START、TASK_ROUTES、GITHUB_HANDOFF_WORKFLOW、MANDATORY_PRECHECK及本任务相关完整细则。按实际版本给简短协作门禁回执，不借旧收据；collaboration/PROJECT_COLLABORATION_20261015.md保留v0.8历史项目摘录身份，按来源需要读取，不替代当前通用正文。
-3. SYNC_NOTICE.md、MODE_SYNC.json、rules/shared/02_CURRENT_HEROES.md相关完整条目、rules/confirmed/RETURNED_SHARED_CONFIRMATIONS_20261014.json及裁判现行1.51（CURRENT_STATE.current_adjudication_source指向主线原正文，旧1.49文件保留历史身份）；查PENDING_ITEMS与PENDING_DECISION。共享正文和原确认控制语义，摘要不补规则。
+3. SYNC_NOTICE.md、MODE_SYNC.json、rules/shared/02_CURRENT_HEROES.md相关完整条目、rules/confirmed/RETURNED_SHARED_CONFIRMATIONS_20261014.json及裁判现行1.52（CURRENT_STATE.current_adjudication_source指向主线原正文，旧1.49文件保留历史身份）；查PENDING_ITEMS与PENDING_DECISION。共享正文和原确认控制语义，摘要不补规则。
 4. 运行python3 prepare_sources.py，完整源根为sources/standard/；本公开版本已展开源树，无须用户上传ZIP；脚本只核对路径并可还原少量大历史源归档，不运行引擎。解压后读取源根START_HERE和CURRENT_STATE以恢复原记录，再以本包根入口覆盖其中旧暂停/未回传字段；完整读取本包active_working_document、确认索引和相关原始专项。涉及原基线/旧代码时从SOURCE_MAP指向的完整源树定位，不只看摘要。work/以原返回正文为初始基线；2026-10-16接续增量已维护在该固定工作稿，原返回及sources/归档不改。
 5. NEXT_ACTIONS.json与RETURN_CONTRACT.json；开始下述任务，不停在报“已读取”或重做已完成设计。
 
-当前断点（2026-10-16 20:01）：用户“同意”确认三模式合法D01投弹受将门槛；CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016，原始来源rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json，当前12A.5已同步。当前受将不能先投弹，拒绝不扣弹/全军名额、不加污染/崩坏；先合法应将，普通主行动后不回开投弹窗口。
-本轮共享新增1项，本线直接共享累计4项，普通新增0、索引仍29；原sources/原返回及前三份原始共享确认字节保持。BG-S01/BG01—BG08未运行；普通28/29及四项共享仍待主线实际回执。
-下一项读取“当前待决策｜D01 己方主行动中获得时间崩坏的截止点”：建议己方正常主行动内首次获得崩坏→下一己方正式回合末到期，不在当回合末消灭。本项未批准，当前12A.7截止句不改；TC-S01/TC01—TC08未运行。对手回合获得与原解除/不续期边界保持。
-结束阶段新获得/精确源序、独立终局/完整将死搜索计时、旧交叉和主线H15候选另核；普通初始化/暗模式权限保持。协作v0.11／正式1.8.0适用来源未变；评分冻结、NET暂停，无游戏实现/运行/部署。
+当前断点（2026-10-16 20:33）：用户“同意”确认D01己方正常主行动/落位获得崩坏的截止为下一己方正式回合末，确认CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016，原始rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json，当前12A.7补充已同步；对手回合获得/不续期/合法解除边界保持。TC-S01/TC01—TC08未运行。
+普通新增0、索引29；本线直接共享累计5项。D01主体及这5项边界确认，不代表精确事件/全组合或运行通过。真实主线/半混乱回执已覆盖前4项，第5项尚待回执；普通28/29政策由已接收共享核心覆盖，未伪造专项原文新全读。
+并发半混乱c3f74e4、主线ff3365a、协作/UI更新911cc72完整保留；主线1.52已明确确认H15首次培养计数，本线完整消费原确认及政策，rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json和当前H15两正文已同步。开局首个实际己begin+1；已闭合begin后启动0，下个实际己begin+1。成本/空池/进度权限/源序仍待核；主线当前无新用户候选。
+下一项读取“当前待决策｜普通H03 成功越河后同原子死亡的名额”：建议成功越河授予后即使同原子落位死亡也占一枚名额、不退款；失败尝试不算。仅普通，尚未批准；QA-S01/QA01—QA08未运行。共享精确源序/终局搜索等与旧交叉保留协调。协作v0.12／正式1.8.0已按新源实际激活；评分冻结、NET暂停，无游戏实现/运行/部署。
 
 原始资料和旧副本中的已收束、未回传及旧下一步均属于其生成时历史；当前主线已接收四线回传并在文档层归并。接手者仍须自己读取并给真实采用回执。各模式专属确认不向外扩张，新的共享冲突回主线；其余可独立工作继续。
 

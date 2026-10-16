@@ -1,0 +1,71 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+  "confirmed_at_local": "2026-10-16T20:33:48+08:00",
+  "user_quote": "同意",
+  "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_own_main_action_collapse_deadline_question",
+  "origin_workline": "standard",
+  "review_id": "D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE",
+  "reviewed_candidate": {
+    "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜D01 己方主行动中获得时间崩坏的截止点"
+  },
+  "immediately_preceding_question": "是否同意这项三模式D01截止细化？",
+  "presented_clauses": [
+    "己方正常主行动中首次获得时间崩坏，截止为自己的下一正式回合末，不在当前行动回合末消灭。",
+    "对手回合被炸的既有截止、连续污染不续期、合法离开/净化解除规则保持；自救仍须合法。"
+  ],
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only D01 legally available in the mode, and the own-normal-main-action/landing pre-end branch. No pool or initialization approval.",
+  "policy": {
+    "guard": "First acquisition during Nozdormu-side normal main action or its landing atom, before entering formal-turn-end settlement; only where D01 legally available.",
+    "acquisition_on_own_formal_turn_N_deadline_own_turn": "N+1 formal-turn end",
+    "acquisition_turn_N_end_is_deadline": false,
+    "acquisition_during_opponent_turn_deadline": "end of the immediately upcoming Nozdormu-side formal turn, unchanged",
+    "effect_active_on_acquisition": true,
+    "continuous_pollution_A_to_B_resets_deadline": false,
+    "extra_forced_child_action_advances_formal_turn_counter": false,
+    "legal_exit_to_nonpolluted_or_cleanup_clears_collapse": true,
+    "genuine_new_acquisition_after_cleared_uses_new_source_deadline": true,
+    "next_turn_escape_or_hourglass_guaranteed_legal": false,
+    "new_ordinary_move_permission_to_empty_pollution": false,
+    "other_death_or_formal_terminal_reversed": false,
+    "end_settlement_new_acquisition_skipped_cancelled_turn_or_full_timeline_interfaces": "not_decided_by_this_confirmation"
+  },
+  "preserved": [
+    "All four earlier direct shared D01 confirmations.",
+    "Pollution geometry, normal source landing/check legality and full atom terminal boundaries.",
+    "Ordinary public initialization and dark-mode identity/anchor privacy."
+  ],
+  "not_confirmed": [
+    "new acquisition inside turn-end settlement, skipped/cancelled turn or full time-line interfaces",
+    "full checkmate skill-search/clock algorithm, independent terminal-source interfaces or exact source order",
+    "mode pool availability, entire adaptation, full repetition key/fieldmap or other pending ordinary decisions",
+    "game code/runtime/privacy acceptance, scoring thaw or NET resume"
+  ],
+  "predecessor_shared_confirmations": [
+    "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+    "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
+    "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+    "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016"
+  ],
+  "delta_classification": "Fifth direct shared confirmation here; ordinary29 unchanged. H15 received confirmation is separate adoption, not another local user approval.",
+  "verification": {
+    "source_confirmation": "V2 direct user statement and complete reviewed candidate",
+    "conditional_reasoning": "V1 same-assistant conditional cases",
+    "TC_S01_TC01_TC08": "unrun",
+    "new_game_code_changes": 0,
+    "new_engine_tests": 0
+  },
+  "handoff": {
+    "canonical_main_receipt_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_publication_commit": "Resolve from Git history; not prefilled as a future self commit."
+  }
+}
