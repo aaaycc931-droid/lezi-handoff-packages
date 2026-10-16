@@ -1,6 +1,6 @@
 {
   "record_type": "adjudication_reference_selection",
-  "record_version": "1.49",
+  "record_version": "1.50",
   "project": "乐子象棋",
   "decision_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
@@ -62,7 +62,7 @@
     "empirical_n": 0,
     "ui_approval": "per_image_explicit_approval"
   },
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "tencent_screenshot_evidence": {
     "source_type": "user_supplied_in_game_rule_screenshots",
     "received_at": "2026-10-12T17:04:05+08:00",
@@ -1575,6 +1575,48 @@
         "new engine transactions or test acceptance"
       ],
       "implementation_status": "confirmed_design_not_implemented"
+    },
+    {
+      "id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+      "confirmed_at_local": "2026-10-16T12:47:23+08:00",
+      "user_quote": "同意",
+      "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_repetition_history_question",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "reviewed_candidate": {
+        "commit": "26736f643754ae22731a7540874835ddf4e21409",
+        "path": "worklines/main/PENDING_DECISION.json",
+        "read_scope": "complete original pending proposal"
+      },
+      "candidate_id": "DECISION-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261014",
+      "immediately_preceding_question": "是否确认作为三个模式的共同规则？",
+      "presented_proposal": "真实吃子或技能实际消灭后，另开重复统计段，旧段保留审计但不再累计。纯回溯、洗牌不清空或回滚当前统计；复原也不能撤销此前已经发生的换段。",
+      "presented_examples": "P已出现3次，纯回溯后下一合格同局面为P4；中间发生真实消灭，再复原后下一合格同局面为新段P1。",
+      "scope": "三模式重复统计段在真实消灭及纯时间操作下的保留/重开策略；不包含完整键、压力排除或全来源实现",
+      "confirmed": {
+        "accepted_actual_capture_or_skill_destruction_starts_new_repetition_segment": true,
+        "old_segment_occurrences_excluded_from_future_current_segment_count": true,
+        "old_audit_events_deleted": false,
+        "pure_rewind_or_shuffle_clears_current_segment": false,
+        "pure_rewind_restores_segment_or_counts_from_board_snapshot": false,
+        "later_restoration_undoes_accepted_destruction_segment_restart": false,
+        "restoration_itself_restarts_segment": false,
+        "rejected_or_blocked_attack_restarts_segment": false,
+        "first_subsequent_eligible_sample_of_a_key_in_new_segment": 1,
+        "no_extra_sample_at_destruction_or_restoration_instant": true
+      },
+      "not_inferred": [
+        "complete equality fieldmap/hash/body identity/public optional progress",
+        "check/chase/response repetition eligibility exclusions",
+        "special pressure attribution and arbitrary bilateral-round pairing",
+        "all-source event ordering/initial opening repetition segment implementation",
+        "engine implementation or runtime acceptance"
+      ],
+      "implementation_status": "confirmed_design_not_implemented",
+      "new_engine_tests": 0
     }
   ],
   "three_mode_plan_status": {
@@ -1686,71 +1728,13 @@
     "return_package": "lezi-three-mode-adjudication-review-S1-2026-10-12.zip",
     "preserved_confirmation": "CONF-HC-TOTAL-ROUND-LIMIT-20261012",
     "next_decision": {
-      "id": "DECISION-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261014",
+      "id": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
       "status": "pending",
-      "proposal": "三模式重复局面统计在被接受的真实吃子或技能消灭事件后重开一个统计段：旧段保留审计记录但不参与新段累计。单纯回溯或洗牌不清除、不回滚当前统计段及其重复次数；已发生的真实消灭重开统计段的结果，后续复原不能撤销，复原本身不再重开。首个后续合格稳定采样为新段该局面第1次；其他计数和正式终局规则保持现有确认。",
-      "scope": "三模式重复统计段在真实消灭及纯时间操作下的保留/重开策略；不包含完整键、压力排除或全来源实现",
-      "rule_delta": "new business policy: pressure-history nonrollback and no-capture/total separation do not themselves approve repetition-history resets",
-      "policy": {
-        "accepted_actual_capture_or_skill_destruction_starts_new_repetition_segment": true,
-        "old_segment_occurrences_excluded_from_future_current_segment_count": true,
-        "old_audit_events_deleted": false,
-        "pure_rewind_or_shuffle_clears_current_segment": false,
-        "pure_rewind_restores_segment_or_counts_from_board_snapshot": false,
-        "later_restoration_undoes_accepted_destruction_segment_restart": false,
-        "restoration_itself_restarts_segment": false,
-        "rejected_or_blocked_attack_restarts_segment": false,
-        "first_subsequent_eligible_sample_of_a_key_in_new_segment": 1,
-        "no_extra_sample_at_destruction_or_restoration_instant": true
-      },
-      "preserved": [
-        "approved stable formal repetition sampling and first-included cumulative threshold5",
-        "public effective equality within same eligible current ledger scope",
-        "ordinary intervening other position alone does not clear counts",
-        "existing total200 and no-capture reset policy",
-        "pressure history and actual-destruction pressure reset already confirmed",
-        "source terminal precludes subsequent sampling; no invented nextbegin"
-      ],
-      "not_approved": [
-        "complete equality fieldmap/hash/body identity/public optional progress",
-        "check/chase/response repetition eligibility exclusions",
-        "special pressure attribution and arbitrary bilateral-round pairing",
-        "all-source event ordering/initial opening repetition segment implementation",
-        "engine implementation or runtime acceptance"
-      ],
-      "case_specs": [
-        {
-          "id": "RH01",
-          "conditions": "same eligible keyP counted3 in current segment; pure rewind restoresP; replay not complete",
-          "expected_if_approved": "retain P3; restoration adds0"
-        },
-        {
-          "id": "RH02",
-          "conditions": "RH01 followed by accepted complete replay and source-allowed stable next point equalP; no actual destruction",
-          "expected_if_approved": "P4, if all other equality/eligibility conditions hold"
-        },
-        {
-          "id": "RH03",
-          "conditions": "P3 before accepted actual destruction, followed by restoration and later eligible stableP",
-          "expected_if_approved": "new current segment countsP1; neither P4 nor restoring old P3"
-        },
-        {
-          "id": "RH04",
-          "conditions": "pure shuffle changes board and source hero history but no new accepted actual destruction",
-          "expected_if_approved": "retain current repetition ledger; resulting eligible key counts from retained key-specific total"
-        },
-        {
-          "id": "RH05",
-          "conditions": "rejected or blocked attack or repeated delivery of same accepted event",
-          "expected_if_approved": "no additional segment restart or occurrence"
-        },
-        {
-          "id": "RH06",
-          "conditions": "actual destruction formally ends game before next stable action window",
-          "expected_if_approved": "retain established terminal; no artificial repetition snapshot or nextbegin"
-        }
-      ],
-      "verification": "unrun_abstract_specs_not_engine_or_reachable_fixture_verification"
+      "proposal": "内部棋子编号本身不区分重复局面。按来源应计入的共同公开有效属性、资格和公开绑定关系都相同，只是相同棋子的内部编号互换，仍算同一局面；公开防御、飞行、可用资格或公开绑定关系不同，仍须区分。秘密寄宿、秘密受训对象和单方洞察不因此进入键。",
+      "scope": "three-mode repetition equality: raw internal piece identity versus source-authorized shared public effective identity/relations only",
+      "candidate_file": "candidates/repetition-public-body-equivalence/v1.json",
+      "prior_decision_confirmed": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+      "not_approval_of_this_candidate": true
     },
     "no_blanket_approval_inferred": true,
     "engine_modified": false,
@@ -2431,6 +2415,73 @@
         }
       ],
       "verification": "confirmed_design; abstract_specs_unrun; no_new_engine_tests"
+    },
+    "repetition_history_segments": {
+      "status": "user_confirmed_design_not_implemented",
+      "proposal": "三模式重复局面统计在被接受的真实吃子或技能消灭事件后重开一个统计段：旧段保留审计记录但不参与新段累计。单纯回溯或洗牌不清除、不回滚当前统计段及其重复次数；已发生的真实消灭重开统计段的结果，后续复原不能撤销，复原本身不再重开。首个后续合格稳定采样为新段该局面第1次；其他计数和正式终局规则保持现有确认。",
+      "scope": "三模式重复统计段在真实消灭及纯时间操作下的保留/重开策略；不包含完整键、压力排除或全来源实现",
+      "policy": {
+        "accepted_actual_capture_or_skill_destruction_starts_new_repetition_segment": true,
+        "old_segment_occurrences_excluded_from_future_current_segment_count": true,
+        "old_audit_events_deleted": false,
+        "pure_rewind_or_shuffle_clears_current_segment": false,
+        "pure_rewind_restores_segment_or_counts_from_board_snapshot": false,
+        "later_restoration_undoes_accepted_destruction_segment_restart": false,
+        "restoration_itself_restarts_segment": false,
+        "rejected_or_blocked_attack_restarts_segment": false,
+        "first_subsequent_eligible_sample_of_a_key_in_new_segment": 1,
+        "no_extra_sample_at_destruction_or_restoration_instant": true
+      },
+      "preserved": [
+        "approved stable formal repetition sampling and first-included cumulative threshold5",
+        "public effective equality within same eligible current ledger scope",
+        "ordinary intervening other position alone does not clear counts",
+        "existing total200 and no-capture reset policy",
+        "pressure history and actual-destruction pressure reset already confirmed",
+        "source terminal precludes subsequent sampling; no invented nextbegin"
+      ],
+      "not_approved": [
+        "complete equality fieldmap/hash/body identity/public optional progress",
+        "check/chase/response repetition eligibility exclusions",
+        "special pressure attribution and arbitrary bilateral-round pairing",
+        "all-source event ordering/initial opening repetition segment implementation",
+        "engine implementation or runtime acceptance"
+      ],
+      "case_specs": [
+        {
+          "id": "RH01",
+          "conditions": "same eligible keyP counted3 in current segment; pure rewind restoresP; replay not complete",
+          "expected_design": "retain P3; restoration adds0"
+        },
+        {
+          "id": "RH02",
+          "conditions": "RH01 followed by accepted complete replay and source-allowed stable next point equalP; no actual destruction",
+          "expected_design": "P4, if all other equality/eligibility conditions hold"
+        },
+        {
+          "id": "RH03",
+          "conditions": "P3 before accepted actual destruction, followed by restoration and later eligible stableP",
+          "expected_design": "new current segment countsP1; neither P4 nor restoring old P3"
+        },
+        {
+          "id": "RH04",
+          "conditions": "pure shuffle changes board and source hero history but no new accepted actual destruction",
+          "expected_design": "retain current repetition ledger; resulting eligible key counts from retained key-specific total"
+        },
+        {
+          "id": "RH05",
+          "conditions": "rejected or blocked attack or repeated delivery of same accepted event",
+          "expected_design": "no additional segment restart or occurrence"
+        },
+        {
+          "id": "RH06",
+          "conditions": "actual destruction formally ends game before next stable action window",
+          "expected_design": "retain established terminal; no artificial repetition snapshot or nextbegin"
+        }
+      ],
+      "verification": "confirmed design; RH01-RH06 remain abstract unrun specifications, no reachable fixture or engine acceptance",
+      "confirmation_id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+      "confirmed_at_local": "2026-10-16T12:47:23+08:00"
     }
   },
   "formal_chase_reference_comparison": {
@@ -2560,9 +2611,9 @@
   },
   "current_main_work": {
     "primary_reader": "AI",
-    "phase": "closed_after_four_workline_document_integration",
+    "phase": "repetition_history_confirmed_public_body_equivalence_pending",
     "current_rules": "this record plus inherited LEZI-SHARED-DESIGN-2026-10-13-r1",
-    "rule_delta": "Returned confirmed H10/H05/H06 shared design adopted; no new business approval from package transfer; pending repetition-history unchanged",
+    "rule_delta": "User confirmed three-mode repetition-history segmentation/nonrollback; public body-equivalence candidate remains unapproved.",
     "completed": [
       "H15 current information baseline source recheck",
       "two design dispatches prepared and byte checked",
@@ -2599,10 +2650,10 @@
       "21:36 public effective repetition equality and secret-state equivalence tradeoff confirmed",
       "stable source decision repetition sampling review prepared",
       "21:46 initial stable position and once-per-completed formal opportunity repetition sampling confirmed",
-      "2026-10-15 received/reviewed three external returns;7 shared confirmation records adopted into current main documents; mode differences and UI approved assets preserved"
+      "2026-10-15 received/reviewed three external returns;7 shared confirmation records adopted into current main documents; mode differences and UI approved assets preserved",
+      "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016"
     ],
     "pending": [
-      "repetition ledger reset/retention after actual destruction, rewind and shuffle: awaiting scoped user decision",
       "complete repetition public equality field map, stable body identity and optional public progress representation",
       "repetition pressure eligibility/exclusions and source-specific special pressure attribution",
       "full formal-round pairing, complete legal-path enumeration and all-source phase coverage",
@@ -2626,71 +2677,13 @@
     "new_engine_tests": 0,
     "runtime_acceptance": false,
     "next_action": {
-      "id": "DECISION-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261014",
+      "id": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
       "status": "pending",
-      "proposal": "三模式重复局面统计在被接受的真实吃子或技能消灭事件后重开一个统计段：旧段保留审计记录但不参与新段累计。单纯回溯或洗牌不清除、不回滚当前统计段及其重复次数；已发生的真实消灭重开统计段的结果，后续复原不能撤销，复原本身不再重开。首个后续合格稳定采样为新段该局面第1次；其他计数和正式终局规则保持现有确认。",
-      "scope": "三模式重复统计段在真实消灭及纯时间操作下的保留/重开策略；不包含完整键、压力排除或全来源实现",
-      "rule_delta": "new business policy: pressure-history nonrollback and no-capture/total separation do not themselves approve repetition-history resets",
-      "policy": {
-        "accepted_actual_capture_or_skill_destruction_starts_new_repetition_segment": true,
-        "old_segment_occurrences_excluded_from_future_current_segment_count": true,
-        "old_audit_events_deleted": false,
-        "pure_rewind_or_shuffle_clears_current_segment": false,
-        "pure_rewind_restores_segment_or_counts_from_board_snapshot": false,
-        "later_restoration_undoes_accepted_destruction_segment_restart": false,
-        "restoration_itself_restarts_segment": false,
-        "rejected_or_blocked_attack_restarts_segment": false,
-        "first_subsequent_eligible_sample_of_a_key_in_new_segment": 1,
-        "no_extra_sample_at_destruction_or_restoration_instant": true
-      },
-      "preserved": [
-        "approved stable formal repetition sampling and first-included cumulative threshold5",
-        "public effective equality within same eligible current ledger scope",
-        "ordinary intervening other position alone does not clear counts",
-        "existing total200 and no-capture reset policy",
-        "pressure history and actual-destruction pressure reset already confirmed",
-        "source terminal precludes subsequent sampling; no invented nextbegin"
-      ],
-      "not_approved": [
-        "complete equality fieldmap/hash/body identity/public optional progress",
-        "check/chase/response repetition eligibility exclusions",
-        "special pressure attribution and arbitrary bilateral-round pairing",
-        "all-source event ordering/initial opening repetition segment implementation",
-        "engine implementation or runtime acceptance"
-      ],
-      "case_specs": [
-        {
-          "id": "RH01",
-          "conditions": "same eligible keyP counted3 in current segment; pure rewind restoresP; replay not complete",
-          "expected_if_approved": "retain P3; restoration adds0"
-        },
-        {
-          "id": "RH02",
-          "conditions": "RH01 followed by accepted complete replay and source-allowed stable next point equalP; no actual destruction",
-          "expected_if_approved": "P4, if all other equality/eligibility conditions hold"
-        },
-        {
-          "id": "RH03",
-          "conditions": "P3 before accepted actual destruction, followed by restoration and later eligible stableP",
-          "expected_if_approved": "new current segment countsP1; neither P4 nor restoring old P3"
-        },
-        {
-          "id": "RH04",
-          "conditions": "pure shuffle changes board and source hero history but no new accepted actual destruction",
-          "expected_if_approved": "retain current repetition ledger; resulting eligible key counts from retained key-specific total"
-        },
-        {
-          "id": "RH05",
-          "conditions": "rejected or blocked attack or repeated delivery of same accepted event",
-          "expected_if_approved": "no additional segment restart or occurrence"
-        },
-        {
-          "id": "RH06",
-          "conditions": "actual destruction formally ends game before next stable action window",
-          "expected_if_approved": "retain established terminal; no artificial repetition snapshot or nextbegin"
-        }
-      ],
-      "verification": "unrun_abstract_specs_not_engine_or_reachable_fixture_verification"
+      "proposal": "内部棋子编号本身不区分重复局面。按来源应计入的共同公开有效属性、资格和公开绑定关系都相同，只是相同棋子的内部编号互换，仍算同一局面；公开防御、飞行、可用资格或公开绑定关系不同，仍须区分。秘密寄宿、秘密受训对象和单方洞察不因此进入键。",
+      "scope": "three-mode repetition equality: raw internal piece identity versus source-authorized shared public effective identity/relations only",
+      "candidate_file": "candidates/repetition-public-body-equivalence/v1.json",
+      "prior_decision_confirmed": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+      "not_approval_of_this_candidate": true
     },
     "limitation_audit_status": "partial",
     "audit": {
@@ -3691,6 +3684,75 @@
         "verification": "unrun_abstract_specs_not_engine_or_legal_fixture_verification",
         "confirmation_id": "CONF-THREE-MODE-REPETITION-STABLE-FORMAL-SAMPLING-20261014",
         "confirmed_at_local": "2026-10-14T21:46:14+08:00"
+      },
+      {
+        "id": "DECISION-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261014",
+        "status": "user_confirmed_design_not_implemented",
+        "proposal": "三模式重复局面统计在被接受的真实吃子或技能消灭事件后重开一个统计段：旧段保留审计记录但不参与新段累计。单纯回溯或洗牌不清除、不回滚当前统计段及其重复次数；已发生的真实消灭重开统计段的结果，后续复原不能撤销，复原本身不再重开。首个后续合格稳定采样为新段该局面第1次；其他计数和正式终局规则保持现有确认。",
+        "scope": "三模式重复统计段在真实消灭及纯时间操作下的保留/重开策略；不包含完整键、压力排除或全来源实现",
+        "rule_delta": "new business policy: pressure-history nonrollback and no-capture/total separation do not themselves approve repetition-history resets",
+        "policy": {
+          "accepted_actual_capture_or_skill_destruction_starts_new_repetition_segment": true,
+          "old_segment_occurrences_excluded_from_future_current_segment_count": true,
+          "old_audit_events_deleted": false,
+          "pure_rewind_or_shuffle_clears_current_segment": false,
+          "pure_rewind_restores_segment_or_counts_from_board_snapshot": false,
+          "later_restoration_undoes_accepted_destruction_segment_restart": false,
+          "restoration_itself_restarts_segment": false,
+          "rejected_or_blocked_attack_restarts_segment": false,
+          "first_subsequent_eligible_sample_of_a_key_in_new_segment": 1,
+          "no_extra_sample_at_destruction_or_restoration_instant": true
+        },
+        "preserved": [
+          "approved stable formal repetition sampling and first-included cumulative threshold5",
+          "public effective equality within same eligible current ledger scope",
+          "ordinary intervening other position alone does not clear counts",
+          "existing total200 and no-capture reset policy",
+          "pressure history and actual-destruction pressure reset already confirmed",
+          "source terminal precludes subsequent sampling; no invented nextbegin"
+        ],
+        "not_approved": [
+          "complete equality fieldmap/hash/body identity/public optional progress",
+          "check/chase/response repetition eligibility exclusions",
+          "special pressure attribution and arbitrary bilateral-round pairing",
+          "all-source event ordering/initial opening repetition segment implementation",
+          "engine implementation or runtime acceptance"
+        ],
+        "case_specs": [
+          {
+            "id": "RH01",
+            "conditions": "same eligible keyP counted3 in current segment; pure rewind restoresP; replay not complete",
+            "expected_design": "retain P3; restoration adds0"
+          },
+          {
+            "id": "RH02",
+            "conditions": "RH01 followed by accepted complete replay and source-allowed stable next point equalP; no actual destruction",
+            "expected_design": "P4, if all other equality/eligibility conditions hold"
+          },
+          {
+            "id": "RH03",
+            "conditions": "P3 before accepted actual destruction, followed by restoration and later eligible stableP",
+            "expected_design": "new current segment countsP1; neither P4 nor restoring old P3"
+          },
+          {
+            "id": "RH04",
+            "conditions": "pure shuffle changes board and source hero history but no new accepted actual destruction",
+            "expected_design": "retain current repetition ledger; resulting eligible key counts from retained key-specific total"
+          },
+          {
+            "id": "RH05",
+            "conditions": "rejected or blocked attack or repeated delivery of same accepted event",
+            "expected_design": "no additional segment restart or occurrence"
+          },
+          {
+            "id": "RH06",
+            "conditions": "actual destruction formally ends game before next stable action window",
+            "expected_design": "retain established terminal; no artificial repetition snapshot or nextbegin"
+          }
+        ],
+        "verification": "confirmed design; RH01-RH06 remain abstract unrun specifications, no reachable fixture or engine acceptance",
+        "confirmation_id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+        "confirmed_at_local": "2026-10-16T12:47:23+08:00"
       }
     ],
     "pressure_timeline_history_review": {
@@ -4042,7 +4104,8 @@
       "automatic_resume_scheduled": false,
       "messages_sent_to_other_dialogues": false,
       "implementation_and_runtime_acceptance": false
-    }
+    },
+    "latest_design_confirmation": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016"
   },
   "ordinary_hidden_chase_classification_contract": {
     "status": "six_source_confirmations_consolidated_design_not_runtime",
@@ -4389,5 +4452,138 @@
     "scoring_frozen": true,
     "pending_repetition_history_preserved": true,
     "no_other_dialogue_messages": true
+  },
+  "current_external_return_adoption": {
+    "date_local": "2026-10-16",
+    "observed_at_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+    "standard": {
+      "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "previous_source_confirmation_count": 21,
+      "current_source_confirmation_count": 25,
+      "newly_received_scoped_confirmations": [
+        {
+          "number": 22,
+          "id": "M04",
+          "confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+          "review_id": "STD-M04-WAR-CHARIOT-GROUND-KEEP",
+          "status": "confirmed_design_not_runtime_verified",
+          "scope": "standard_ground_rook_body_only",
+          "confirmed_at_local": "2026-10-16T13:00:03+08:00",
+          "user_quote": "同意方案",
+          "review_context": "Immediately preceding assistant presented the complete ordinary ground-rook M04 proposal and explicitly asked whether to adopt it; no M05 approval inferred.",
+          "presented_source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+          "summary": "普通真实地面车立即适用；零路径正常行动，恰一地面路径棋仅冲向实际合法目标并尝试碾碎；友军/地面无形路径计入；终点拦截不撤路径死亡；有效将军与完整原子双真帅终局按原规则。",
+          "full_source": {
+            "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+            "heading": "已确认｜M04 战车普通地面车继承"
+          },
+          "authority": "Current conversation explicit scoped user confirmation; not code/runtime approval.",
+          "shared_rule_delta": 0,
+          "not_confirmed": [
+            "M05",
+            "flying-rook",
+            "assassination effective geometry",
+            "path/endpoint multi-defense order",
+            "H10 full atomic identity crossings",
+            "implementation or engine acceptance"
+          ]
+        },
+        {
+          "number": 23,
+          "id": "M05",
+          "confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
+          "review_id": "STD-M05-EXPEDITION-KEEP",
+          "status": "confirmed_design_not_runtime_verified",
+          "scope": "standard_public_ground_general_body_only",
+          "confirmed_at_local": "2026-10-16T13:23:41+08:00",
+          "user_quote": "同意",
+          "review_context": "Immediately preceding assistant explicitly asked whether ordinary mode inherits the M05 expedition body; deferred crosses and M06 excluded.",
+          "presented_source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
+          "summary": "公开将帅车式横竖行动、离宫跨河、路径畅通且最终安全；地面无形挡路、普通目标限制/陷阱/防御照常，普通H03不授将帅防御且不恢复铁甲；H10公开角色按源承接，舞不改车式两步。",
+          "full_source": {
+            "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+            "heading": "已确认｜M05 亲征普通模式原机制继承"
+          },
+          "authority": "Current conversation explicit user confirmation of reviewed body; no implementation/runtime approval.",
+          "shared_rule_delta": 0,
+          "not_confirmed": [
+            "M06",
+            "H10 dance palace/outside-palace return priority",
+            "other deferred crossings",
+            "implementation/runtime acceptance"
+          ]
+        },
+        {
+          "number": 24,
+          "id": "M06",
+          "confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+          "review_id": "STD-M06-CAVALRY-INITIAL-HORSES",
+          "status": "confirmed_design_not_runtime_verified",
+          "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
+          "confirmed_at_local": "2026-10-16T13:36:46+08:00",
+          "user_quote": "我同意",
+          "review_context": "Immediately preceding assistant explicitly asked approval of ordinary cavalry body and immediate initial upgrade; special crossings and M07 excluded.",
+          "presented_source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
+          "summary": "普通开局原始两匹明马立即获得骑兵；每次行动选正常马步或合法一格短步。己半场仅前一格、敌半场前/左/右一格，无后退一格；完整普通向后马步及蹩腿保留，按当前起点半场，无免费第二步。",
+          "full_source": {
+            "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+            "heading": "已确认｜M06 骑兵普通开局两明马适配"
+          },
+          "authority": "Current explicit user confirmation; no game implementation/runtime acceptance.",
+          "shared_geometry_rule_delta": 0,
+          "ordinary_startup_adaptation": "Confirmed immediate applicability for initially public original two horses; does not advance dark-mode unrevealed horse activation.",
+          "not_confirmed": [
+            "M07 or pool exclusion",
+            "new generated horses",
+            "flying/history/temporary-control/special-action crossings",
+            "implementation/runtime/scoring thaw/NET resume"
+          ]
+        },
+        {
+          "number": 25,
+          "id": "M07",
+          "confirmation_id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
+          "review_id": "STD-M07-POOL-EXCLUDE-PENDING-ADAPTATION",
+          "status": "confirmed_design_not_runtime_verified",
+          "scope": "standard_mutation_pool_only",
+          "confirmed_at_local": "2026-10-16T13:51:13+08:00",
+          "user_quote": "同意",
+          "review_context": "Immediately preceding assistant explicitly asked whether M07 should temporarily stay outside ordinary mutation pool, with full-public and H16 brawl consequences shown.",
+          "presented_source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+          "summary": "M07暂不进入普通畸变池，保留设计条目；完成具体普通适配并再次明确确认后才恢复入池。原揭棋/半混乱机制和普通H16常态保持。",
+          "full_source": {
+            "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+            "heading": "已确认｜M07 混乱普通暂不入池"
+          },
+          "authority": "Explicit current user confirmation; design documents only.",
+          "ordinary_pool_rule_delta": "modification: temporarily exclude M07",
+          "shared_mechanic_rule_delta": 0,
+          "not_confirmed": [
+            "M08 or D01",
+            "ordinary chaos redesign/public faction rerolls/new covered generation",
+            "game implementation/runtime/scoring thaw/NET resume"
+          ]
+        }
+      ],
+      "full_bodies_read": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md complete M04/M05/M06/M07 confirmed sections",
+      "source_register": "worklines/standard/CONFIRMATION_REGISTER.json entries22-25",
+      "adoption": "ordinary-scoped design documents only; no shared mechanism expansion or runtime acceptance",
+      "next": "M08 candidate pending"
+    },
+    "half_chaos": {
+      "source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+      "revision": "HC-DESIGN-03-20261016-r17",
+      "received": "H14/H16 stage metadata plus8.28 knowledge and8.30 resource/tier alignment excerpts",
+      "new_rule_confirmations": 0,
+      "specs_unrun": {
+        "H14": 16,
+        "H16": 20
+      },
+      "next": "H17/H18"
+    },
+    "new_main_user_confirmation_count": 1,
+    "new_shared_rule_from_mode_approval_count": 0,
+    "new_engine_tests": 0,
+    "source_limits": "Full new working drafts and all specifications were not semantically reread; the four ordinary confirmed sections were read in full. Main implementation remains unaudited."
   }
 }

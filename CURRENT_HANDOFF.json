@@ -34,10 +34,13 @@
     "entry": "worklines/main/START_HERE.txt",
     "state": "worklines/main/CURRENT_STATE.json",
     "shared_coordination": "worklines/main/SHARED_COORDINATION.json",
-    "base_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+    "base_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
     "necessary_body_publication": "present in this commit",
     "full_history_migration": false,
-    "pending_repetition_history_approved": false
+    "pending_repetition_history_approved": true,
+    "current_adjudication_version": "1.50",
+    "latest_confirmation": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+    "current_pending_candidate": "candidates/repetition-public-body-equivalence/v1.json"
   },
   "historical_archive_migration_incomplete": [
     "main",
@@ -52,5 +55,17 @@
     "concurrent_main_source_commit": "26736f643754ae22731a7540874835ddf4e21409",
     "full_history_migration": false,
     "new_rule_confirmation": false
+  },
+  "receiver_receipts_observed_by_main": {
+    "half_chaos": {
+      "source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+      "path": "worklines/half_chaos/READ_RECEIPTS.json",
+      "scope": "older source-confirmed rules/workflow and stage metadata only; new1.50 not yet adopted"
+    },
+    "standard": {
+      "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "path": "worklines/standard/READ_RECEIPTS.json",
+      "scope": "older source-confirmed rules/workflow and stage metadata only; new1.50 not yet adopted"
+    }
   }
 }

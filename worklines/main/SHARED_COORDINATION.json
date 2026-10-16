@@ -1,10 +1,10 @@
 {
   "schema": "lezi.main.shared_coordination.v1",
-  "base_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
-  "status": "restored_existing_design_coordination_no_new_rule_confirmation",
+  "base_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+  "status": "repetition_history_confirmed_new_returns_scoped_received_next_equality_candidate_pending",
   "shared_confirmations": {
     "already_document_adopted": 7,
-    "new_this_session": 0,
+    "new_this_session": 1,
     "register": {
       "repository": "aaaycc931-droid/lezi-handoff-packages",
       "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
@@ -16,22 +16,36 @@
       "H05 M07 current-enemy eligibility applies where the combination is available; does not approve a new mode pool.",
       "H06 no legal same-body nonattack/noncheck replay: preflight rejection, no restoration/use/main-action consumption or clock refresh.",
       "H11-A same black1 remaining deadline and independent formal sampling are confirmed; remaining work is implementation/alignment, not reopening the resolved timing question."
-    ]
+    ],
+    "latest_main_confirmation": {
+      "id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+      "at_local": "2026-10-16T12:47:23+08:00",
+      "source": "ADJUDICATION.json#/project_specific_confirmations",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "implementation": false
+    }
   },
   "items": [
     {
       "id": "DECISION-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261014",
       "owner": "main",
-      "status": "pending_user_decision",
-      "source": "PENDING_DECISION.json",
-      "dependency": "Only repetition-segment history policy; no confirmation inferred from resume."
+      "status": "user_confirmed_design_not_implemented",
+      "source": "ADJUDICATION.json#/unified_adjudication_core/repetition_history_segments",
+      "dependency": "Confirmed by explicit main user decision; complete key, pressure eligibility and implementation remain separate.",
+      "confirmation_id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016"
     },
     {
       "id": "MAIN-REPETITION-PUBLIC-KEY",
       "owner": "main",
       "status": "pending_fieldmap",
       "scope": "public effective equality fields, stable body equivalence, public optional progress; preserve approved privacy principle",
-      "source": "ADJUDICATION.json#/unified_adjudication_core/repetition_public_effective_state"
+      "source": "ADJUDICATION.json#/unified_adjudication_core/repetition_public_effective_state",
+      "next_candidate": "candidates/repetition-public-body-equivalence/v1.json",
+      "candidate_status": "pending"
     },
     {
       "id": "MAIN-PRESSURE-SPECIAL-PATHS",
@@ -123,21 +137,104 @@
         "path": "worklines/standard/rules/confirmed/RETURNED_SHARED_CONFIRMATIONS_20261014.json",
         "read_scope": "half_chaos_local.H03"
       }
+    },
+    {
+      "id": "HC-MAIN-H14-KNOWLEDGE-VIEW",
+      "owner": "main",
+      "status": "source_implementation_alignment_pending",
+      "kind": "not_new_game_rule",
+      "scope": "H14 observes a one-time identity/faction snapshot. Do not project it as live M07 or post-shuffle identity; stable body/epoch and player projection require alignment. No reproduced client leak or new marker-lifetime rule is asserted.",
+      "source": {
+        "commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+        "path": "worklines/half_chaos/WORKING.md",
+        "read_scope": "8.28 permission and implementation-alignment excerpts"
+      }
+    },
+    {
+      "id": "STD-M04-CODE-TARGET-ALIGNMENT",
+      "owner": "main",
+      "status": "current_ordinary_body_source_read_old_code_alignment_still_pending",
+      "kind": "historical_static_source_alignment_not_M04_approval",
+      "scope": "Ordinary M04 body is confirmed and read in full. Main has not independently reread the pinned target branch or current live code; historical mismatch remains implementation alignment, not a new rule.",
+      "source": {
+        "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "read_scope": "complete confirmed M04 section"
+      }
+    },
+    {
+      "id": "HC-MAIN-H16-ACTION-TIER",
+      "owner": "main",
+      "status": "source_implementation_alignment_pending",
+      "kind": "not_new_rule_confirmation",
+      "scope": "M01/M04 special-path action tier versus H16 tier1 gate and H05 eligible history. Read BC02 conditional comparison: two actual enemy deaths yield5 resources, but resource sufficiency does not establish a charge window. Old code/default W0=0 is not new design approval.",
+      "source": {
+        "commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+        "path": "worklines/half_chaos/WORKING.md",
+        "read_scope": "8.30 resource contract, BC02 and concluding source-alignment excerpts"
+      }
+    },
+    {
+      "id": "STD-M05-H10-DANCE-REGION",
+      "owner": "main",
+      "status": "pending_shared_source_priority_review",
+      "kind": "not_approved_by_ordinary_M05_body",
+      "scope": "M05 normal palace release versus H10 dance one-step/palace restrictions and outside-palace flow return. Ordinary M05 body approval gives no new long-range dance or outside-palace dance entitlement.",
+      "source": {
+        "commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "read_scope": "complete confirmed M05 section and returned shared question"
+      }
     }
   ],
   "independent_worklines": {
-    "standard": "M04 candidate; no automatic approval; then existing sequence",
-    "half_chaos": "H14 夜; retain prior H12/H13 work; ordinary H14 exclusion is not transferred",
+    "standard": "Ordinary M04/M05/M06/M07 scoped confirmations received; M08 pending, D01 not approved.",
+    "half_chaos": "H14/H16 source/spec stages received; H17/H18 next; all new specs remain unrun.",
     "ui": "B6 connecting/device name/cancel; metadata says not created; preserve any newer unreturned work; one image at a time"
   },
   "delivery_vs_adoption": {
     "published_by_main": "document coordination only",
     "recipient_receipts_required": true,
-    "other_lines_current_adoption": "unknown; no new receiver receipts in inspected remote tree",
+    "other_lines_current_adoption": "Actual half_chaos/standard receipts for older source-confirmed boundaries/workflow were read. This new1.50 confirmation has not yet been received/adopted by those dialogues; UI remains unknown.",
     "messages_sent": false
   },
   "scoring_frozen": true,
   "NET": "paused",
   "new_game_code_changes": 0,
-  "new_engine_tests": 0
+  "new_engine_tests": 0,
+  "receiver_receipts_observed": {
+    "half_chaos": {
+      "receipt_source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+      "sender_read_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "adopted_scope_reported": [
+        "previous_half_chaos_confirmations_and_H10_restoration_already_in_main_documents",
+        "H14_current_plus6_and_information_permissions",
+        "GitHub_fixed_workline_incremental_handoff",
+        "latest main recovery and current shared unresolved scope; preserve repetition pending"
+      ],
+      "new_1_50_confirmation_adopted": null
+    },
+    "standard": {
+      "receipt_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "sender_read_source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+      "adopted_scope_reported": [
+        "Existing21 standard source-round confirmations and earlier scoped decisions retained.",
+        "Current H10 preparation/transfer/cooldown/empty-pool/locator and shared H05/H06 source-confirmed boundaries consumed; old F1 superseded.",
+        "1.49 already-confirmed stable sampling/terminal boundaries retained; repetition-history candidate remains pending.",
+        "Current collaboration and GitHub handoff process used by this standard conversation."
+      ],
+      "new_1_50_confirmation_adopted": null
+    }
+  },
+  "ordinary_mode_adoption": {
+    "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+    "new_scoped_confirmation_ids": [
+      "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+      "CONF-STD-M05-EXPEDITION-KEEP-20261016",
+      "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+      "CONF-STD-M07-POOL-EXCLUSION-20261016"
+    ],
+    "total_source_confirmation_count": 25,
+    "scope_guard": "M04 ground-rook body; M05 public ground-general body; M06 original two public horses immediate startup; M07 ordinary pool exclusion only. No transfer to original/half-chaos; no M08 or D01 approval."
+  }
 }

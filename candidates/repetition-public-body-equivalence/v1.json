@@ -1,0 +1,89 @@
+{
+  "id": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+  "status": "pending",
+  "scope": "three-mode repetition equality: raw internal piece identity versus source-authorized shared public effective identity/relations only",
+  "proposal": "内部棋子编号本身不区分重复局面。按来源应计入的共同公开有效属性、资格和公开绑定关系都相同，只是相同棋子的内部编号互换，仍算同一局面；公开防御、飞行、可用资格或公开绑定关系不同，仍须区分。秘密寄宿、秘密受训对象和单方洞察不因此进入键。",
+  "policy": {
+    "raw_internal_piece_id_alone_distinguishes_key": false,
+    "consistent_renaming_preserving_all_included_public_attributes_and_relations_is_equal": true,
+    "public_relevant_effects_and_current_or_source_defined_future_rights_preserved": true,
+    "public_binding_relations_preserved_not_blindly_dropped_with_ids": true,
+    "secret_identity_binding_or_one_sided_knowledge_adds_fields": false,
+    "unknown_field_mapping_proves_equivalence": false
+  },
+  "preserved": [
+    "Approved same mode/side/eligible phase and public effective state principle.",
+    "Approved initial/stable sampling and cumulative5.",
+    "Newly confirmed destruction segmentation and nonrollback.",
+    "Adjudication count self-reference remains excluded.",
+    "Only source-authorized shared public state is used; no new disclosure."
+  ],
+  "sources": [
+    {
+      "commit": "26736f643754ae22731a7540874835ddf4e21409",
+      "path": "worklines/main/ADJUDICATION.json",
+      "read_scope": "unified_adjudication_core.repetition_public_effective_state; original not-inferred stable body/field-map boundary"
+    },
+    {
+      "commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+      "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+      "read_scope": "public identity and private-information boundary, previously source-read"
+    },
+    {
+      "commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+      "path": "worklines/half_chaos/WORKING.md",
+      "read_scope": "8.28 permission/M07 snapshot and shared alignment excerpts only"
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "public_effective_equivalence",
+      "recommended": true,
+      "tradeoff": "Needs correct public rights/relation mapping; a simple visual-board comparison is insufficient."
+    },
+    {
+      "id": "always_include_raw_body_id",
+      "recommended": false,
+      "tradeoff": "Internally renamed or swapped identical public pieces could evade repetition even with no public effective difference; not approved."
+    }
+  ],
+  "not_approved": [
+    "Complete key schema/hash/canonical graph algorithm.",
+    "H15 optional public progress representation.",
+    "Any new publicity of bindings, current secret faction, or H14 historical observations.",
+    "Pressure eligibility/exclusions, all-source ordering or engine implementation."
+  ],
+  "case_specs": [
+    {
+      "id": "BI01",
+      "conditions": "Same eligible mode/side/phase, two same-type public rooks have the same included public effects/rights/relations; only internal IDs are consistently exchanged.",
+      "expected_if_approved": "same repetition key; abstract comparison only, no legal natural prefix constructed"
+    },
+    {
+      "id": "BI02",
+      "conditions": "Otherwise same board but source-relevant public defense/flight is attached at a different location.",
+      "expected_if_approved": "different public effective state"
+    },
+    {
+      "id": "BI03",
+      "conditions": "Same visible pieces but a source-defined publicly knowable future action right differs.",
+      "expected_if_approved": "different if that public right is confirmed relevant; no new hero rule invented"
+    },
+    {
+      "id": "BI04",
+      "conditions": "Same included public state; only secret host/training binding or one-sided past insight differs.",
+      "expected_if_approved": "not different solely from those private facts, preserving already confirmed privacy tradeoff"
+    },
+    {
+      "id": "BI05",
+      "conditions": "Same individual attributes but a source-authorized relevant public binding relationship differs.",
+      "expected_if_approved": "preserve that public relation; blindly deleting all IDs is insufficient"
+    },
+    {
+      "id": "BI06",
+      "conditions": "Any required public field or relation mapping remains unknown.",
+      "expected_if_approved": "do not claim complete field-map/equality implementation verification"
+    }
+  ],
+  "verification": "V2 source principle plus V1 design analysis; all BI specs abstract/unrun; no fixture/runtime acceptance"
+}

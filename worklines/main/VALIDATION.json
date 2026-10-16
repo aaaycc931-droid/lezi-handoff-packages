@@ -1,16 +1,88 @@
 {
-  "schema": "lezi.main.document_validation.v1",
-  "base_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+  "schema": "lezi.main.document_validation.v2",
+  "base_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
   "checks": {
-    "source1_49_byte_preserved": true,
-    "pending_matches_original": true,
-    "candidate_still_pending": true,
-    "all_six_original_conditional_specs_preserved": true,
+    "old_confirmations_unchanged": true,
+    "old_unified_core_fields_unchanged": true,
+    "confirmed_policy_exact_original_candidate": true,
+    "new_confirmation_count": 1,
+    "next_candidate_status": "pending",
+    "original_RH_specs_unrun": 6,
+    "next_BI_specs_unrun": 6,
+    "new_game_code_changes": 0,
+    "new_engine_tests": 0,
     "other_workline_files_modified": false,
-    "no_private_project_or_archive_in_upload": true,
-    "engine_tests_run": 0,
-    "new_rule_confirmations": 0
+    "received_other_line_scoped_confirmations": 4
   },
-  "scope": "source identity, candidate status, paths, JSON and publication payload; no game/runtime acceptance",
-  "remote_publication_check": "Performed after commit through actual entry read and exact tree paths/blob SHA/byte sizes; see actual commit and session result, not a prefilled self commit ID."
+  "limitation_audit": {
+    "audit_trigger": "Authoritative shared game-rule confirmation and source synchronization; no implementation.",
+    "risk_level": "medium; reversible text change relied on across worklines; L3 checks applied conservatively",
+    "known_facts": [
+      "Explicit user 同意 follows a single concrete three-mode history question.",
+      "Current1.49 and original pending candidate matched latest remote objects.",
+      "Latest ordinary register contains four new ordinary-only confirmations; the relevant four full bodies were read. Half-chaos has no new rule confirmation."
+    ],
+    "user_statements": [
+      {
+        "quote": "同意",
+        "at_local": "2026-10-16T12:47:23+08:00",
+        "scope": "三模式重复统计段在真实消灭及纯时间操作下的保留/重开策略；不包含完整键、压力排除或全来源实现"
+      }
+    ],
+    "claim_register": [
+      {
+        "claim": "History segmentation/nonrollback is now confirmed design",
+        "type": "user_statement",
+        "source": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+        "verification": "V2 direct visible conversation plus original candidate source"
+      },
+      {
+        "claim": "Two lines published progress/older-source adoption",
+        "type": "document_fact",
+        "source": "READ_RECEIPTS.json latest_by_source",
+        "verification": "pinned metadata and original receipt reads, not sender runtime verification"
+      },
+      {
+        "claim": "Excluding bare internal IDs is the recommended next equality choice",
+        "type": "ai_inference",
+        "source": "candidates/repetition-public-body-equivalence/v1.json",
+        "verification": "V1 proposal under prior V2 public-effective principle; pending"
+      },
+      {
+        "claim": "Ordinary M04-M07 confirmed only in documented local scopes",
+        "type": "document_fact",
+        "source": "ee020aa5b368c9fb06b86b9ed377c665c7a09687 complete four working sections and index22-25",
+        "verification": "V2 source checked, no runtime verification"
+      }
+    ],
+    "ai_interpretations": [
+      "Consent applies to prior history proposal only, not next equality candidate or M04."
+    ],
+    "assumptions": [
+      "No extra game implementation is authorized.",
+      "Published return metadata describes declared progress; it is not independent engine evidence."
+    ],
+    "unknowns": [
+      "Complete equality field map, source pressure eligibility, all-source phase ordering and concrete fixtures.",
+      "New1.50 recipient adoption and current live game HEAD/runtime."
+    ],
+    "competing_explanations": [
+      "Same-type visible pieces may still differ in source-defined publicly knowable future rights; comparing current icons alone would be insufficient."
+    ],
+    "falsification_conditions": [
+      "Discovery of different scoped user wording or candidate source would require rechecking this confirmation.",
+      "A claimed same public state with changed public entitlement/relation falsifies a naive board-only equivalence implementation."
+    ],
+    "verification_status": "partial: V2 source confirmation and document consistency; no independent V3 or runtime V4.",
+    "action_boundary": "Normal nonforce Git commit, main/root docs only; next candidate remains pending; no code/test/NET/scoring changes. Quota resume is continuation only; preserve all concurrent latest line files.",
+    "failure_conditions": [
+      "Approve new candidate through prior consent",
+      "Overwrite concurrent worklines",
+      "Conflate file check with runtime pass",
+      "Use private identity/knowledge to distinguish equality"
+    ],
+    "residual_risk": "Implementation and full field-map correctness remain unverified.",
+    "next_validation_action": "Obtain scoped next equality decision and later verify public fields/relations and legal fixtures under a separately authorized implementation scope."
+  },
+  "remote_verification": "After commit: reread actual entry/state and compare every changed path blob/size; preserve all other source-tree paths."
 }

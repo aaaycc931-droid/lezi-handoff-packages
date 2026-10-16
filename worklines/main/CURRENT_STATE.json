@@ -1,13 +1,13 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "resumed_design_coordination_pending_repetition_history_decision",
+  "status": "repetition_history_confirmed_public_body_equivalence_pending",
   "resume_date_local": "2026-10-16",
   "timezone": "Asia/Shanghai",
-  "base_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+  "base_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
   "user_authorization": "Continue main, restore four-line coordination, protect unreturned work, recover necessary sources from existing account files, maintain this line and stage handoff. Continue is not candidate approval.",
   "current_adjudication_record": "ADJUDICATION.json",
-  "adjudication_version": "1.49",
+  "adjudication_version": "1.50",
   "design_stage": "S1.36",
   "pending_decision": "PENDING_DECISION.json",
   "pending_decision_approved": false,
@@ -18,32 +18,33 @@
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-15.v0.10",
     "formal_baseline": "1.8.0",
-    "gate": "L2",
+    "gate": "L3_scoped_authoritative_rule_write",
     "actual_modules": "SOURCE_MAP.json sources collaboration read_scope"
   },
   "protection": {
-    "original_current_record_preserved_byte_for_byte": true,
     "original_current_record_git_blob": "1c73a43d04dd83b607534c85f4ca64d2b15ae1f7",
     "visible_prior_local_project_files_found": 0,
     "other_dialogue_unreturned_work": "unknown; must not overwrite",
-    "historical_1_48_did_not_overwrite_current_1_49": true
+    "historical_1_48_did_not_overwrite_current_1_49": true,
+    "original_1_49_preserved_at_commit": "26736f643754ae22731a7540874835ddf4e21409",
+    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": true
   },
   "worklines": {
     "main": {
-      "next": "DECISION-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261014",
-      "status": "candidate_prepared_wait_scoped_decision"
+      "next": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+      "status": "new_concrete_candidate_pending_scoped_decision"
     },
     "standard": {
-      "next": "M04 战车待定主体",
-      "source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
-      "new_return_or_receiver_receipt_found": false,
-      "actual_live_dialogue_progress": "unknown"
+      "next": "M08 尖斜普通地面兵卒继承候选",
+      "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "new_return_or_receiver_receipt_found": true,
+      "actual_live_dialogue_progress": "Published M04-M07 confirmed locally; cumulative25 source confirmations; M08 pending and D01 not approved."
     },
     "half_chaos": {
-      "next": "H14 夜",
-      "source": "recovered2026-10-15 dispatch plus pinned returned draft",
-      "new_current_return_found": false,
-      "actual_live_dialogue_progress": "unknown"
+      "next": "H17/H18",
+      "source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+      "new_current_return_found": true,
+      "actual_live_dialogue_progress": "Published H14/H16 source/spec stages; H14 sixteen and H16 twenty specs remain unrun; H17/H18 next."
     },
     "ui": {
       "next": "B6 连接中：设备名与取消",
@@ -56,19 +57,22 @@
   "publication": {
     "necessary_main_bodies_and_state_published_on_success": true,
     "full_main_historical_tree_published": false,
-    "full_half_chaos_workline_published": false,
+    "full_half_chaos_workline_published": true,
     "other_lines_not_modified": true,
-    "root_index_updated": true
+    "root_index_updated": true,
+    "half_chaos_scope_note": "Current complete working body/state/source map published; deep private/historical archives not fully migrated."
   },
   "verification": {
     "record_and_candidate_source_equivalence_checked": true,
     "document_and_pointer_checks": "VALIDATION.json",
-    "new_rule_confirmations": 0,
+    "new_rule_confirmations": 1,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "runtime_acceptance": false,
     "implementation": false,
-    "old_evidence": "inherited original scope only; not rerun"
+    "old_evidence": "inherited original scope only; not rerun",
+    "received_other_line_confirmed_designs": 4,
+    "shared_rule_confirmation_from_mode_returns": 0
   },
   "scoring": {
     "frozen": true,
@@ -81,7 +85,11 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "Present exact existing three-mode repetition-history proposal, give conditional P3/P4/P1 examples, wait for an explicit scoped design decision; independent coordination may continue.",
+  "next_action": "Present concrete public-body-equivalence candidate; keep full public fieldmap/pressure/special-path dependencies pending. Receivers must consume1.50 from main before claiming adoption.",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
-  "limitation_audit_status": "partial; scoped recovery and source/implementation separation only"
+  "limitation_audit_status": "partial; VALIDATION.json limitation_audit; source and document checks only, no independent/runtime verification",
+  "last_confirmed_decision": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+  "confirmed_at_local": "2026-10-16T12:47:23+08:00",
+  "resume_after_quota_at_local": "2026-10-16T15:23:28+08:00",
+  "resume_after_quota_is_new_candidate_approval": false
 }
