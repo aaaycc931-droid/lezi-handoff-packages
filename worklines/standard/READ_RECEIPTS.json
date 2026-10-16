@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-16T13:05:54+08:00",
+  "recorded_at_local": "2026-10-16T13:29:08+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
@@ -265,60 +265,75 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
-    "at_local": "2026-10-16T13:00:03+08:00",
-    "user_quote": "同意方案",
-    "presented_source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
-    "scope": "M04 standard ground-rook body only",
-    "M05_approved": false
+    "confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
+    "at_local": "2026-10-16T13:23:41+08:00",
+    "user_quote": "同意",
+    "presented_source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
+    "scope": "standard_public_ground_general_body_only",
+    "M06_approved": false
   },
   "current_task_reading": {
-    "source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
-    "actual_modules": "AUTHORIZATION_AND_ADOPTION; BASELINE_DELTA_CHECK; MANDATORY_PRECHECK; AI_LIMITATION_CONTROL full; PROJECT_WORK_AGREEMENT; same-version other workflow modules reused from prior verified reading.",
+    "source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
+    "actual_modules": "AUTHORIZATION_AND_ADOPTION and MANDATORY_PRECHECK re-read; prior same-version full L3 limitation, baseline and handoff modules reused with current audit.",
     "files": [
       {
         "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "full M05"
-      },
-      {
-        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "full H01/H03/H10; H02 adjacent full; ordinary H03 later override from original decision source"
-      },
-      {
-        "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
-        "read_scope": "base/setup/five phases/action tiers and full5.1; prior same-version target/atomic rules reused"
-      },
-      {
-        "path": "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
-        "read_scope": "full with old F1 phrase overridden by current H10 source; not re-adopted"
+        "read_scope": "full M06 and immediate M07 opening only"
       },
       {
         "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/ADAPTATION_MATRIX.json",
-        "read_scope": "full M05 and H03 entries"
+        "read_scope": "full M06"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/CONFIRMED_DECISIONS.json",
-        "read_scope": "full H03-ordinary-defense and H03-general-armor entries"
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-20.md",
+        "read_scope": "full section3 cavalry"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
+        "read_scope": "12.1-12.3; cavalry complete"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/rules.ts",
+        "read_scope": "movementGeometryLegal cavalry and normal horse branches; historical static only"
       },
       {
         "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
-        "read_scope": "full M05 section11 only; historical non-stealth/armor text superseded"
+        "read_scope": "old section12 cavalry and accidentally included12A/12B historical excerpts; not adopted; fixed-pawn cavalry superseded"
       },
       {
         "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/BALANCE_AND_RULE_UPDATES_2026-09-28.md",
-        "read_scope": "H10 9.7 and9.8; nearby context; old H10 identity permissions overridden by current source"
+        "read_scope": "H10 9.4 body-bound cavalry/state excerpt only, old selection permissions not adopted"
+      },
+      {
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "read_scope": "complete currently pending M05 proposal and previous review context; M04 prior reading retained"
       }
     ],
     "adopted_scope": [
-      "M04 explicit user adoption, body only",
-      "Current M05 source used to prepare separate pending proposal",
-      "Ordinary H03 non-general and armor removal constraints preserved"
+      "M05 scoped user approval; M04 preserved",
+      "Current cavalry source used to prepare pending ordinary startup adaptation"
     ],
     "not_adopted": [
-      "M05 proposal before explicit user decision",
-      "M05/H10 dance region-priority invention",
-      "Historical invisible-does-not-block and ordinary armor restoration"
+      "M06 before explicit decision",
+      "fixed-pawn old cavalry",
+      "normal horse backward ban or a free post-horse step",
+      "historic score/rarity reopening",
+      "all newly generated horses/flight/control/history crossings"
     ],
     "new_engine_tests": 0
-  }
+  },
+  "local_confirmations_since_dispatch": [
+    {
+      "id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+      "at_local": "2026-10-16T13:00:03+08:00",
+      "scope": "standard_ground_rook_body_only",
+      "user_quote": "同意方案"
+    },
+    {
+      "id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
+      "at_local": "2026-10-16T13:23:41+08:00",
+      "scope": "standard_public_ground_general_body_only",
+      "user_quote": "同意"
+    }
+  ]
 }

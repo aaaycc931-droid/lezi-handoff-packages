@@ -74,25 +74,38 @@
       "next": true
     },
     {
-      "id": "STD-M05",
-      "decision_id": "STD-M05-EXPEDITION-KEEP",
+      "id": "STD-M06",
+      "decision_id": "STD-M06-CAVALRY-INITIAL-HORSES",
       "status": "pending_user_decision",
-      "scope": "standard_public_general_body_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M05 亲征普通模式原机制继承",
-      "not_approved_by_M04_confirmation": true,
+      "scope": "standard_original_two_public_ground_horses_body_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M06 骑兵普通开局两明马适配",
+      "not_approved_by_M05_confirmation": true,
       "unrun_spec_ids": [
-        "EX01",
-        "EX02",
-        "EX03",
-        "EX04",
-        "EX05",
-        "EX06",
-        "EX07",
-        "EX08",
-        "EX09",
-        "EX10",
-        "EX11"
+        "CA01",
+        "CA02",
+        "CA03",
+        "CA04",
+        "CA05",
+        "CA06",
+        "CA07",
+        "CA08",
+        "CA09",
+        "CA10",
+        "CA11"
       ]
+    },
+    {
+      "id": "STD-M06-CROSSES",
+      "status": "source_review_pending",
+      "scope": "standard M06 conditional crossings",
+      "details": [
+        "newly generated horse eligibility versus original two bodies",
+        "revival/H11/H06 lifecycle",
+        "H15 flying-horse short steps/attack prohibition",
+        "H05 temporary control forward/half attribution",
+        "special assassination/forced-action geometry"
+      ],
+      "blocks_core_proposal_presentation": false
     },
     {
       "id": "STD-M04-CROSSES",
@@ -188,11 +201,41 @@
         "WC11"
       ],
       "static_implementation_alignment": "Pinned historical rules.ts has direct-general-target exception and stale non-stealth wording; current source takes precedence; no live-code audit or change.",
-      "blocking_scope": "User decision gates M05; special cross dependencies do not block presenting ground-body proposal.",
       "confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
       "confirmed_at_local": "2026-10-16T13:00:03+08:00",
       "user_quote": "同意方案",
-      "resolution_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承"
+      "resolution_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
+      "previous_blocking_scope": "User decision gates M05; special cross dependencies do not block presenting ground-body proposal.",
+      "blocking_scope": "Ground-body decision resolved; only separately listed crossings remain pending."
+    },
+    {
+      "id": "STD-M05",
+      "decision_id": "STD-M05-EXPEDITION-KEEP",
+      "status": "confirmed_design_not_implemented_or_tested",
+      "scope": "standard_public_general_body_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M05 亲征普通模式原机制继承",
+      "not_approved_by_M04_confirmation": true,
+      "unrun_spec_ids": [
+        "EX01",
+        "EX02",
+        "EX03",
+        "EX04",
+        "EX05",
+        "EX06",
+        "EX07",
+        "EX08",
+        "EX09",
+        "EX10",
+        "EX11"
+      ],
+      "confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
+      "confirmed_at_local": "2026-10-16T13:23:41+08:00",
+      "user_quote": "同意",
+      "resolution_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M05 亲征普通模式原机制继承",
+      "prior_proposal_source": {
+        "commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M05 亲征普通模式原机制继承"
+      }
     }
   ]
 }
