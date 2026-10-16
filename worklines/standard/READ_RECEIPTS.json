@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-16T20:53:20+08:00",
+  "recorded_at_local": "2026-10-16T21:39:28+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
@@ -432,48 +432,57 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "confirmation_id": "CONF-STD-H03-CROSSING-THEN-DEATH-QUOTA-20261016",
-    "at_local": "2026-10-16T20:47:48+08:00",
-    "user_quote": "同意方案",
-    "presented_source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-    "scope": "standard_only",
-    "new_local_standard_confirmation": true,
-    "dance_palace_candidate_approved": false
+    "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+    "at_local": "2026-10-16T21:33:47+08:00",
+    "user_quote": "我同意",
+    "presented_source_commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+    "scope": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "new_local_standard_confirmation": false,
+    "new_horse_candidate_approved": false
   },
   "current_task_reading": {
-    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-    "publication_parent_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-    "actual_modules": "v0.12 current index/body identity unchanged; prior complete applicable L3/source/handoff/limitation modules reused in continuous task.",
+    "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "approval_context_commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+    "publication_parent_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "actual_modules": "Currentv0.12 index/blob unchanged; previously complete applicable L3/source/handoff/limitation modules reused.",
     "files": [
       {
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "complete ordinaryH03 candidate and original QA-S01/8 specs"
-      },
-      {
-        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "complete M04/M05"
+        "read_scope": "complete dance candidate/DW8 specs; complete prior confirmed ordinaryM06 scope including deferred new-horse clause"
       },
       {
         "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "complete H10/H15; unchanged previously full H01/H03 reused for approval context"
+        "read_scope": "complete H10 and H21邪火 subsection; previously read H15 unchanged"
       },
       {
-        "path": "worklines/standard/modes/standard/CURRENT_RULES.md",
-        "read_scope": "complete pre-edit pointer body"
+        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+        "read_scope": "complete M05 and M06; M08 title-only lookup not registered as full read"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/CONFIRMED_DECISIONS.json",
-        "read_scope": "unchanged prior fully read H03 defense/armor records reused"
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
+        "read_scope": "complete12.3 cavalry"
+      },
+      {
+        "path": "worklines/half_chaos/READ_RECEIPTS.json",
+        "read_scope": "complete latest_by_source.standard_shared_D01_deadline only"
+      },
+      {
+        "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+        "read_scope": "complete resolved_D01_deadline and current stage/next-action metadata, not full mutation coverage working body"
       }
     ],
     "adopted_scope": [
-      "Direct ordinaryH03 post-success crossing then death quota",
-      "Limited current-source alignment: no H15 flying attack/M04 sky charge permission"
+      "Direct shared legal H10/M05 dance palace override",
+      "Actual half fifthD01 deadline receipt only"
     ],
     "not_adopted": [
-      "shared H10/M05 dance palace candidate",
-      "M04 other complex crosses/full field map/source-order/search-clock",
-      "game/runtime/scoring/NET"
+      "new M06-generated-horse qualification",
+      "full half coverage audit or code/runtime",
+      "exact search/clock/source ordering and other pending rules"
     ],
     "new_engine_tests": 0
   },
@@ -610,6 +619,17 @@
         "half_chaos"
       ],
       "source": "rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json"
+    },
+    {
+      "id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "confirmed_at_local": "2026-10-16T21:33:47+08:00",
+      "user_quote": "我同意",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json"
     }
   ],
   "main_1_52_adoption": {
@@ -798,5 +818,44 @@
       "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016"
     ],
     "zero_return_received_verified": null
+  },
+  "half_D01_deadline_receipt_observed": {
+    "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "path": "worklines/half_chaos/READ_RECEIPTS.json#latest_by_source.standard_shared_D01_deadline",
+    "complete_receipt": {
+      "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+      "actual_reading": [
+        {
+          "path": "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+          "scope": "full original confirmation",
+          "git_blob_sha": "de5c2fc7b47553f39a0d8b3508264df8cc81f61e"
+        },
+        {
+          "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+          "scope": "entire new own-main deadline semantic section; older full source unchanged outside exact insertion"
+        },
+        {
+          "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+          "scope": "entire H15 first-tick synchronization insertion and corrected pending sentence; other source contracts unchanged"
+        },
+        {
+          "path": "worklines/standard/CURRENT_STATE.json",
+          "scope": "full current next_task object, rest metadata stored but not full new-state semantic audit"
+        }
+      ],
+      "received": [
+        "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016"
+      ],
+      "adopted": [
+        "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016 only legal D01 own normal-main/landing before-end branch; ET04-C R4 gain/R5 end"
+      ],
+      "not_adopted": [
+        "ordinary H03 newly confirmed at214a but standard only; not imported",
+        "end-phase new acquisition/skipped/cancelled/full-time interfaces",
+        "pool/initialization/runtime changes"
+      ],
+      "main_receipt_of_new_standard_confirmation": "unknown"
+    },
+    "main_adoption_verified": null
   }
 }

@@ -2,33 +2,37 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T20:53:20+08:00",
-  "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-  "base_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-  "approval_context_source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-  "phase": "ordinary_H03_quota_confirmed_shared_dance_palace_prepared",
+  "prepared_at_local": "2026-10-16T21:39:28+08:00",
+  "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+  "base_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+  "approval_context_source_commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+  "phase": "shared_dance_palace_confirmed_M06_new_horse_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定三个模式H10与M05均合法生效时，流舞是否也解除九宫限制；建议可宫外但仍一格正交/最多两步/原触发与最终安全。本共享空间边界尚未批准。",
+  "current_breakpoint": "用户决定合法M06三模式共同资格是否只绑本局开局原两枚真实马，邪火等后生新马不自动升级/不替补死马；建议如此，当前未批准。",
   "confirmed_delta": [
     {
-      "confirmation_id": "CONF-STD-H03-CROSSING-THEN-DEATH-QUOTA-20261016",
-      "kind": "new_ordinary_quota_confirmation",
-      "scope": "standard_only",
-      "source": "rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
-      "new_local_standard_confirmation": true,
-      "confirmed_at_local": "2026-10-16T20:47:48+08:00",
-      "user_quote": "同意方案"
+      "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "kind": "new_direct_shared_dance_palace_confirmation",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+      "new_local_standard_confirmation": false,
+      "confirmed_at_local": "2026-10-16T21:33:47+08:00",
+      "user_quote": "我同意"
     }
   ],
   "new_user_rule_confirmations": 1,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
-    "previous_index_count": 29,
     "current_index_count": 30,
-    "all29_previous_ordinary_records_unchanged": true,
-    "existing_shared_records_unchanged": true,
-    "shared_confirmations_originated_here_total": 5,
+    "all30_ordinary_records_unchanged": true,
+    "existing_shared_gameplay_records_preserved": true,
+    "half_deadline_receipt_metadata_refreshed": true,
+    "shared_confirmations_originated_here_total": 6,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
@@ -79,16 +83,16 @@
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
   "pending_decision": {
-    "id": "SHARED-H10-M05-DANCE-PALACE",
+    "id": "SHARED-M06-NEW-HORSE-ELIGIBILITY",
     "status": "proposal_pending_user_confirmation",
-    "scope": "shared_H10_M05_legal_combination_palace_only",
-    "H03_confirmation_does_not_approve_dance_palace": true
+    "scope": "shared_M06_legal_mode_new_horse_qualification_only",
+    "dance_confirmation_does_not_approve_new_horse": true
   },
   "changes": [
-    "Record ordinaryH03 quota as item30 with exact original scope/source; earlier29 and shared records unchanged.",
-    "Current ordinary body includes quota and limited M04/H15 no-sky-attack source alignment; shared bodies unchanged.",
-    "Prepare explicit shared H10/M05 dance-palace choice from retained ordinary source-priority edge,8 unrun specs.",
-    "Preserve latest D01 deadline pending receiver scope and first-four actual main/half receipts."
+    "Record one explicit shared H10/M05 dance palace override; ordinary30 unchanged.",
+    "Update current H10/M05 with labeled source reference, preserve original one-step/trigger/safety/secret boundaries.",
+    "Recognize actual half-only fifthD01 deadline receipt and preserve concurrent return.",
+    "Prepare explicit shared M06 new-generated-horse eligibility choice with8 unrun specs; original-body historical interfaces remain separate."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -102,88 +106,94 @@
     "worklines/standard/modes/standard/CURRENT_STATE.json",
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
-    "worklines/standard/modes/standard/CURRENT_RULES.md",
-    "worklines/standard/rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
+    "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+    "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+    "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
     "worklines/standard/PUBLISHED_FILES.json"
   ],
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 5358,
-      "sha256": "e802536cdb3100889b8ea0794475cece3ea778ba0e309bed5417282ab0d3cafb"
+      "size": 5309,
+      "sha256": "b57a7a8a2d2012c05906006cd141f307338a00eddc8ad86ecc5a482733a505b6"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 15409,
-      "sha256": "0ed89f2d6a35adbdacddd5b45390ba33e591e4829365a5d218a0b81ca2a6baf0"
+      "size": 16397,
+      "sha256": "a55ead82407131f98eccf781536ac2330d68bc7821376d24bfb316311b8f8205"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1347,
-      "sha256": "4c4f880755a31cfa9a0cf8b0ca0100addc67223956f1b628571966c626525971"
+      "size": 1432,
+      "sha256": "4598f47370676d16588b9cae133ef57673c0022877f334a04f9884c653564be6"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 34737,
-      "sha256": "8bbc6c22b897a9ba8b6f6e0e148bb7d79fea1065f7faac16bad8af5ba4c90b3c"
+      "size": 36243,
+      "sha256": "1e746ce383b459d46ed0e6843c51722b68f2a4fcee755f8ab19ad8791056a569"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 2557,
-      "sha256": "a5da6e544b4a7e93a03912fa1f020a28cab4c430f851730d6fa7fb4da4cb06ab"
+      "size": 2558,
+      "sha256": "0464b245eac734b42a766cbc2198d86a8a60a083bf0a0600f2a2c92167906e80"
     },
     {
       "path": "SOURCE_PRIORITY.json",
-      "size": 3369,
-      "sha256": "e60f525f2bf0de91cbd07201409579bdebd7e33b96399d6b234df611db12ad4a"
+      "size": 3829,
+      "sha256": "2b7247fee6aa5c13a311032723c39917ec615cb9f44c728b467f9c8ea62726b4"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 52565,
-      "sha256": "feb3fd0ef0195576a09891e6610b87dff15fa8da836914993984b2d6244e66c1"
+      "size": 54049,
+      "sha256": "f2aee50763f602433991509ee531f2562ef89ac00c9bf6bcaf8a5c23c6451914"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 201211,
-      "sha256": "52ccba54e83a8c8bab477dc77bf5150c293071ada4be3ab3f5e5b880020975d8"
+      "size": 205956,
+      "sha256": "ca99759afcea81798bdce0c0fb978c7dad2d8c8ae21503e61d7d1033f423b578"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 3805,
-      "sha256": "590b80e51adaf894d11233aef8704b399d1f54f872b5e04f6495163f040b3a59"
+      "size": 4020,
+      "sha256": "40678ec508e888f0e14c68ad5c718db755e3ca900d652f109c15857f37fd1b3f"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 39606,
-      "sha256": "f9942851060051469aaaf18168fed400205333d83f15a595bb776aa5baef2078"
+      "size": 42203,
+      "sha256": "3c9af977b2c7fe341d8b45f754ca4cc32d9d8dc2f3798fc4cdd2b0e520b38b05"
     },
     {
-      "path": "modes/standard/CURRENT_RULES.md",
-      "size": 1688,
-      "sha256": "39d1df9dce7934f4c3ce0a40f0450b617113acc73d1e8b69612c07a9fe13aa12"
+      "path": "rules/shared/02_CURRENT_HEROES.md",
+      "size": 45408,
+      "sha256": "12d2721766aaf8be026e5f9245348596338c606ef908909a2556b6e341444c40"
     },
     {
-      "path": "rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
-      "size": 2637,
-      "sha256": "bc46a0474dac7dc734435674611ab6e2e2592948641c001cc4d6a73cd8c6d522"
+      "path": "rules/shared/03_CURRENT_MUTATIONS.md",
+      "size": 23677,
+      "sha256": "94d9a466e36bccc83e7327600ca20d3849f00f1f82a864359e6d9d1c94cd4eb9"
+    },
+    {
+      "path": "rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+      "size": 3251,
+      "sha256": "eed643d70ecf7982af02284298e81d7e5487e70e7a34080572c696d3b6bb321f"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
-    "explicit_ordinary_H03_context_checked": true,
-    "original_QA8_specs_preserved": true,
-    "all29_prior_ordinary_confirmation_records_unchanged": true,
-    "all_prior_shared_records_and_originals_unchanged": true,
-    "shared_rule_bodies_unchanged": true,
-    "M04_H15_source_alignment_only_no_new_permission": true,
+    "explicit_shared_dance_context_checked": true,
+    "original_DW8_specs_preserved": true,
+    "all30_ordinary_records_unchanged": true,
+    "prior_original_confirmation_files_unchanged": true,
+    "current_H10_M05_outside_labeled_insertion_unchanged": true,
+    "half_fifth_D01_receipt_actual_scoped": true,
     "original_source_archives_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "maintenance_validation_script_changes": 0,
     "updated_verify_dispatch": {
       "status": "passed",
-      "files": 297,
+      "files": 298,
       "game_engine_tests": 0,
       "scope": "published_project_file_integrity"
     }
@@ -205,15 +215,16 @@
     "BG-S01/BG01-BG08",
     "TC-S01/TC01-TC08",
     "QA-S01/QA01-QA08",
-    "DW-S01/DW01-DW08"
+    "DW-S01/DW01-DW08",
+    "NH-S01/NH01-NH08"
   ],
   "shared_coordination": [
     {
       "id": "STD-M05-H10-DANCE-REGION",
-      "status": "explicit_shared_candidate_prepared_pending_user",
-      "detail": "M05 removes palace, H10 dance still names palace. Shared legal-combination proposal: remove palace only, retain one orthogonal step/trigger/final safety. Not approved.",
+      "status": "explicit_shared_dance_palace_confirmed_pending_main_receipt",
+      "detail": "Shared legal H10/M05 dance palace exemption confirmed; one-step/first-shadow trigger/final safety remain, full search not accepted.",
       "blocks_independent_M05_body_presentation": false,
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H10与M05的流舞九宫边界"
+      "source": "rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json"
     },
     {
       "id": "STD-M04-CROSSES",
@@ -228,8 +239,8 @@
     },
     {
       "id": "STD-M06-CROSSES",
-      "status": "source_review_pending",
-      "detail": "New generated horse qualification vs original two; flying, history and temporary-control direction/half; independent core proposal can proceed."
+      "status": "new_horse_shared_candidate_prepared_other_crosses_pending",
+      "detail": "Original two real horse source versus genuinely generated horse eligibility now explicit shared candidate; revival/flying/control/history and special geometry remain pending."
     },
     {
       "id": "STD-M07-H16-INTERFACE",
@@ -299,14 +310,14 @@
     }
   ],
   "remote_reconciliation": {
-    "parent": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-    "approval_context_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-    "remote_head_unchanged_since_prior_publication": true,
+    "parent": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "approval_context_commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+    "preserved_concurrent_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "ordinary_target_paths_changed_before_local_edit": false,
     "unreturned_local_changes_found": 0,
-    "earlier_concurrent_commits_preserved_in_parent_history": true
+    "same_observed_head_tree_and_parent_required": true
   },
-  "implementation_status": "ordinary_quota_confirmed_source_alignment_and_shared_dance_candidate_documents_only",
+  "implementation_status": "shared_dance_palace_confirmed_M06_candidate_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -319,81 +330,86 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "OrdinaryH03 approval, limited M04/H15 source alignment and shared H10/M05 palace choice.",
+    "audit_trigger": "Shared H10/M05 confirmation, half fifth-D01 receipt and M06 generation eligibility source review.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User approves immediately preceding ordinary-only quota proposal.",
-      "H15 explicitly prohibits flying attacks and defines sky-layer movement; M04 adds no flight attack permission.",
-      "M05 removes palace but preserves one-step dance, while H10 dance explicitly names palace; retained priority edge needs decision."
+      "User approves explicit three-mode legal H10/M05 palace question.",
+      "Current M06 source says two real horses; ordinary startup confirmation explicitly defers new generated horses.",
+      "H21邪火 generates genuinely new public objects and may produce horses.",
+      "Half actual scoped fifthD01 deadline adoption exists, main adoption unknown."
     ],
     "user_statements": [
       {
-        "quote": "同意方案",
-        "at_local": "2026-10-16T20:47:48+08:00",
-        "scope": "standard_only"
+        "quote": "我同意",
+        "at_local": "2026-10-16T21:33:47+08:00",
+        "scope": [
+          "original_jieqi",
+          "standard_xiangqi",
+          "half_chaos"
+        ]
       }
     ],
     "claim_register": [
       {
-        "claim": "ordinaryH03 same-atom death quota confirmed",
+        "claim": "shared H10/M05 palace exception confirmed",
         "type": "user_statement",
-        "source": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce complete preceding candidate",
+        "source": "214a08f6af61f2383a369983b4b99dda9c17a6c9 complete candidate",
         "verification": "V2"
       },
       {
-        "claim": "M04/H15 no new sky attack entitlement",
-        "type": "source_alignment",
-        "source": "complete current M04/H15",
-        "verification": "V2 source clauses plus V1 composition, unrun"
+        "claim": "M06 two horse source and H21 new-body generation",
+        "type": "document_fact",
+        "source": "full M06/12.3 and H21邪火",
+        "verification": "V2"
       },
       {
-        "claim": "M05 removes dance palace boundary",
+        "claim": "new horses excluded from cavalry original-two membership",
         "type": "proposal",
-        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H10与M05的流舞九宫边界",
+        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M06对新生成马的骑兵资格",
         "verification": "V0 unapproved"
       },
       {
-        "claim": "DW-S01 conditional two-step result",
+        "claim": "NH-S01 new-horse short-step denied if proposal adopted",
         "type": "ai_inference",
-        "source": "same-assistant conditional example; no trigger prefix",
+        "source": "same-assistant conditional case",
         "verification": "V1 unrun"
       }
     ],
     "ai_interpretations": [
-      "Current approval is ordinaryH03 only.",
-      "No new flight attack entitlement is a limited source alignment, not independent user approval."
+      "Current approval does not settle generated-horse eligibility.",
+      "Two-original-horse wording needs explicit generation boundary, not extrapolation from ordinary startup alone."
     ],
     "assumptions": [
-      "DW-S01 has already lawfully obtained first dance and successful outside-palace flow; other target/space rules pass."
+      "NH-S01邪火 legally triggered/generated/placed horse and other action conditions pass; no full natural prefix proved."
     ],
     "unknowns": [
-      "User choice on H10/M05 dance-palace priority.",
-      "Complete lawful adjudication/flow prefix and ordinary escape search in conditional DW example.",
-      "Other M04 complex crosses, source ordering and runtime."
+      "User choice on generated-horse qualification.",
+      "Complete identity/state restoration across revival/H11/H06/control/flying and special geometry.",
+      "Current main receipt of fifthD01/ordinaryH03/shared dance and full search/runtime."
     ],
     "competing_explanations": [
-      "M05 removes palace also for dance; retain one-step geometry, recommended.",
-      "H10 dance palace sentence remains special limitation even under M05, not selected or approved."
+      "Bind initial source two horse bodies; no new-horse upgrade/replacement, recommended.",
+      "Auto-upgrade all later generated real horses, requiring explicit generation-time rules; not approved."
     ],
     "falsification_conditions": [
-      "Higher-priority explicit H10/M05 dance palace clause found.",
-      "Full trigger state fails existing adjudication/flow qualification.",
-      "User chooses another pending space boundary."
+      "Higher-priority explicit generated-horse rule found.",
+      "Generation case violates existing source legality.",
+      "User chooses broader pending eligibility."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write confirmed ordinary quota and source-only no-new-flight-permission alignment; prepare shared dance proposal without adopting it.",
+    "action_boundary": "Write confirmed shared palace exception and actual half receipt; leave new-horse candidate unapproved and preserve original sources.",
     "failure_conditions": [
-      "Count ordinary approval as shared or overwrite earlier ordinary records.",
-      "Automatically grant dance on ordinary check or second shadow.",
-      "Turn dance into two rook-length actions or remove final safety.",
-      "Claim complete prefix/runtime or new fifth-D01/H03 receipt without evidence."
+      "Recount shared rule as ordinary31.",
+      "Grant second-shadow dance or rook-length steps.",
+      "Silently auto-upgrade generated horses or expose dark originals.",
+      "Fabricate main receipt/runtime or full half-audit reading."
     ],
-    "residual_risk": "Conditional cases and bounded source composition do not establish full trigger search/complete legal histories or runtime privacy.",
-    "next_validation_action": "Main reads ordinaryH03 source; user decides shared dance-palace boundary; other crosses remain separately pending.",
+    "residual_risk": "Scoped source cases do not prove full trigger histories, mode adaptation or runtime/privacy.",
+    "next_validation_action": "Main reads new dance source; user decides M06 generated-horse qualification; other source crossings stay pending.",
     "action_resilience": {
-      "maximum_exposure": "Fourteen ordinary-line document/source files; shared source bodies unchanged, no game/runtime/messages.",
+      "maximum_exposure": "Fifteen ordinary-line document/source files; no game/runtime/messages.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected ordinary files from b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce via normal commit preserving later unrelated work.",
+      "recovery": "Restore selected ordinary files from 3f686030bf7ab18b442d72d4cb5e6afa0c46da02 via normal commit preserving later unrelated work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },
@@ -405,11 +421,11 @@
     "automatic_message_sent": false
   },
   "shared_coordination_consumed": {
-    "new_direct_shared_gameplay_confirmations": 0,
-    "new_ordinary_confirmations": 1,
+    "new_direct_shared_gameplay_confirmations": 1,
+    "new_ordinary_confirmations": 0,
     "existing_main_shared_confirmations_newly_adopted": 0,
-    "M04_H15_source_alignment_rule_delta": 0,
-    "shared_dance_palace_candidate_approved": false
+    "half_fifth_D01_actual_receipt": true,
+    "M06_new_horse_candidate_approved": false
   },
   "collaboration_adopted": {
     "working_revision": "2026-10-16.v0.12",
@@ -432,9 +448,43 @@
     "adopted_scope": "Ordinary-line current generic handoff/session-loss recovery; no collaboration-author edits, UI method changes, background monitor or independent effectiveness claim.",
     "independent_effectiveness_verified": false
   },
-  "shared_confirmed_delta": [],
-  "new_local_standard_confirmations": 1,
-  "new_shared_user_rule_confirmations": 0,
+  "shared_confirmed_delta": [
+    {
+      "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "source": "rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "confirmed_at_local": "2026-10-16T21:33:47+08:00",
+      "user_quote": "我同意",
+      "policy": {
+        "H10_and_M05_legally_effective_required": true,
+        "M05_removes_palace_limit_for_flow_dance": true,
+        "M05_absent_original_H10_palace_limit_preserved": true,
+        "each_dance_step": "exactly one orthogonal square within board",
+        "max_dance_steps": 2,
+        "rook_length_or_diagonal_dance_step_allowed": false,
+        "original_first_shadow_adjudication_successful_flow_requirement_preserved": true,
+        "ordinary_check_or_outside_palace_alone_grants_dance": false,
+        "second_shadow_gets_dance": false,
+        "first_step_temporary_attack_exception_and_early_safe_stop_preserved": true,
+        "final_required_safety_and_failed_escape_original_adjudication_preserved": true,
+        "source_occupancy_suffocation_blockade_landing_or_terminal_waived": false,
+        "new_return_position_or_push_out_occupant_granted": false,
+        "hidden_host_cooldown_count_disclosure_changed": false,
+        "mode_pool_availability_full_checkmate_search_clock_or_repetition_fieldmap_approved": false
+      },
+      "reviewed_candidate": {
+        "commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜H10与M05的流舞九宫边界"
+      }
+    }
+  ],
+  "new_local_standard_confirmations": 0,
+  "new_shared_user_rule_confirmations": 1,
   "pending_main_shared_receipt_scope": [
     {
       "id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
@@ -447,6 +497,26 @@
       "body": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 己方主行动中获得时间崩坏的截止点"
+      },
+      "received_verified": null,
+      "adopted_verified": null,
+      "half_chaos_received_and_adopted_verified": true,
+      "half_chaos_receipt_evidence": {
+        "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+        "path": "worklines/half_chaos/READ_RECEIPTS.json#latest_by_source.standard_shared_D01_deadline"
+      }
+    },
+    {
+      "id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜H10与M05的流舞九宫边界"
       },
       "received_verified": null,
       "adopted_verified": null
@@ -541,5 +611,13 @@
     },
     "local_source": "rules/confirmed/RECEIVED_H15_FIRST_TICK_20261016.json",
     "new_local_user_confirmation": false
+  },
+  "half_deadline_receipt_observed": {
+    "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+    "scope": [
+      "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016 only legal D01 own normal-main/landing before-end branch; ET04-C R4 gain/R5 end"
+    ],
+    "main_receipt_verified": null
   }
 }

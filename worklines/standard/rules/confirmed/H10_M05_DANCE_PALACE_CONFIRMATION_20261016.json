@@ -1,0 +1,65 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+  "confirmed_at_local": "2026-10-16T21:33:47+08:00",
+  "user_quote": "我同意",
+  "origin_workline": "standard",
+  "review_id": "SHARED-H10-M05-DANCE-PALACE",
+  "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_H10_M05_palace_question",
+  "reviewed_candidate": {
+    "commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜H10与M05的流舞九宫边界"
+  },
+  "immediately_preceding_question": "是否同意此方案作为三个模式中该合法组合的共用规则？",
+  "presented_clauses": [
+    "H10与M05均合法生效时，流舞也解除九宫限制。",
+    "每步仍横竖一格、最多两步；原触发资格与最终安全要求保持。"
+  ],
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only modes where H10 and M05 are both legally effective. No pool/init approval, no dance qualification granted merely by being outside palace.",
+  "policy": {
+    "H10_and_M05_legally_effective_required": true,
+    "M05_removes_palace_limit_for_flow_dance": true,
+    "M05_absent_original_H10_palace_limit_preserved": true,
+    "each_dance_step": "exactly one orthogonal square within board",
+    "max_dance_steps": 2,
+    "rook_length_or_diagonal_dance_step_allowed": false,
+    "original_first_shadow_adjudication_successful_flow_requirement_preserved": true,
+    "ordinary_check_or_outside_palace_alone_grants_dance": false,
+    "second_shadow_gets_dance": false,
+    "first_step_temporary_attack_exception_and_early_safe_stop_preserved": true,
+    "final_required_safety_and_failed_escape_original_adjudication_preserved": true,
+    "source_occupancy_suffocation_blockade_landing_or_terminal_waived": false,
+    "new_return_position_or_push_out_occupant_granted": false,
+    "hidden_host_cooldown_count_disclosure_changed": false,
+    "mode_pool_availability_full_checkmate_search_clock_or_repetition_fieldmap_approved": false
+  },
+  "preserved": [
+    "Existing H10 first/second-shadow, flow and private-information rules.",
+    "Original M05 public-role/host distinction, ordinary rook-style action and one-step dance distinction.",
+    "All existing ordinary/shared confirmations and pause/implementation boundaries."
+  ],
+  "not_confirmed": [
+    "new M06-generated-horse qualification or other pending crosses",
+    "full dance/adjudication trigger search, source-order/clock or independent terminal interfaces",
+    "mode pool or entire adaptation, extra secrecy/publicity or full repetition key/fieldmap",
+    "game code/runtime, scoring thaw or NET resume"
+  ],
+  "verification": {
+    "source_confirmation": "V2 explicit user statement and complete prior candidate",
+    "DW_S01_DW01_DW08": "unrun conditional same-assistant cases",
+    "game_code_changes": 0,
+    "engine_tests": 0
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  }
+}
