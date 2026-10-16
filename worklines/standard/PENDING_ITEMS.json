@@ -74,32 +74,38 @@
       "next": true
     },
     {
-      "id": "STD-M07",
-      "decision_id": "STD-M07-POOL-EXCLUDE-PENDING-ADAPTATION",
+      "id": "STD-M08",
+      "decision_id": "STD-M08-JIAN-XIE-GROUND-KEEP",
       "status": "pending_user_decision",
-      "scope": "standard_mutation_pool_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M07 混乱普通畸变池取舍",
-      "recommended_candidate": "temporarily_exclude_ordinary_M07_until_explicit_adaptation_and_reentry_confirmation",
-      "alternative_direction": "prepare_ordinary_specific_redesign_no_new_mechanic_approved",
-      "pool_exclusion_confirmed": false,
-      "not_approved_by_M06_confirmation": true,
-      "conditional_unrun_spec_ids": [
-        "CH01",
-        "CH02",
-        "CH03",
-        "CH04",
-        "CH05",
-        "CH06",
-        "CH07",
-        "CH08"
+      "scope": "standard_normal_ground_pawn_body",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M08 尖斜普通地面兵卒继承",
+      "not_approved_by_M07_confirmation": true,
+      "unrun_spec_ids": [
+        "JX01",
+        "JX02",
+        "JX03",
+        "JX04",
+        "JX05",
+        "JX06",
+        "JX07",
+        "JX08",
+        "JX09",
+        "JX10",
+        "JX11"
       ]
     },
     {
-      "id": "STD-M07-H16-INTERFACE",
-      "status": "pending_mode_pool_direction_and_branch_mapping",
-      "scope": "standard M07 x H16",
-      "detail": "M07 normal source replaces charge with brawl requiring own controlled covered first target; initial all-public board has no target. Do not silently replace own-dark with own-public, restore charge under M07, or call entire mutation no-effect.",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M07 混乱普通畸变池取舍"
+      "id": "STD-M08-CROSSES",
+      "status": "source_review_pending",
+      "scope": "standard M08 conditional crossings",
+      "details": [
+        "H05 temporary-control forward/half attribution",
+        "H18 river entry/exit and special displacement of crossed pawn back to own half",
+        "revival/H11/H06 history semantics",
+        "H15 flying and landing",
+        "special assassination geometry and effective check"
+      ],
+      "blocks_core_proposal_presentation": false
     },
     {
       "id": "STD-M06-CROSSES",
@@ -248,7 +254,7 @@
       "id": "STD-M06",
       "decision_id": "STD-M06-CAVALRY-INITIAL-HORSES",
       "status": "confirmed_design_not_implemented_or_tested",
-      "scope": "standard_original_two_public_ground_horses_body_only",
+      "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
       "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M06 骑兵普通开局两明马适配",
       "not_approved_by_M05_confirmation": true,
       "unrun_spec_ids": [
@@ -272,6 +278,42 @@
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M06 骑兵普通开局两明马适配"
       },
       "resolution_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M06 骑兵普通开局两明马适配"
+    },
+    {
+      "id": "STD-M07",
+      "decision_id": "STD-M07-POOL-EXCLUDE-PENDING-ADAPTATION",
+      "status": "confirmed_ordinary_pool_exclusion_not_implemented_or_tested",
+      "scope": "standard_mutation_pool_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M07 混乱普通暂不入池",
+      "pool_exclusion_confirmed": true,
+      "not_approved_by_M06_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "CH01",
+        "CH02",
+        "CH03",
+        "CH04",
+        "CH05",
+        "CH06",
+        "CH07",
+        "CH08"
+      ],
+      "confirmation_id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
+      "confirmed_at_local": "2026-10-16T13:51:13+08:00",
+      "user_quote": "同意",
+      "prior_proposal_source": {
+        "commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M07 混乱普通畸变池取舍"
+      },
+      "resolution_source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M07 混乱普通暂不入池",
+      "historical_recommended_candidate": "temporarily_exclude_ordinary_M07_until_explicit_adaptation_and_reentry_confirmation",
+      "unchosen_direction": "prepare_ordinary_specific_redesign_no_new_mechanic_approved"
+    },
+    {
+      "id": "STD-M07-H16-INTERFACE",
+      "status": "not_applicable_while_ordinary_M07_excluded_reentry_review_required",
+      "scope": "standard M07 x H16",
+      "detail": "M07 ordinary pool exclusion explicitly confirmed; non-M07 ordinary charge remains. Shared brawl rule unchanged; future ordinary M07 reentry requires full branch review.",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M07 混乱普通暂不入池"
     }
   ]
 }

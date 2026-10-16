@@ -2,46 +2,45 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T13:43:32+08:00",
-  "source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
-  "base_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
-  "phase": "M06_confirmed_M07_pool_direction_prepared",
+  "prepared_at_local": "2026-10-16T13:55:42+08:00",
+  "source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+  "base_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+  "phase": "M07_pool_exclusion_confirmed_M08_body_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定M07普通暂不入池建议；若确认则继续M08、D01，若选择普通专属重设计则先准备具体M07机制。当前M07排除和新机制都未批准。",
+  "current_breakpoint": "用户决定M08普通地面兵卒主体继承候选；确认后继续D01时光之末。M08特殊交叉及D01均未自动批准。",
   "confirmed_delta": [
     {
-      "number": 24,
-      "id": "M06",
-      "confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
-      "review_id": "STD-M06-CAVALRY-INITIAL-HORSES",
+      "number": 25,
+      "id": "M07",
+      "confirmation_id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
+      "review_id": "STD-M07-POOL-EXCLUDE-PENDING-ADAPTATION",
       "status": "confirmed_design_not_runtime_verified",
-      "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
-      "confirmed_at_local": "2026-10-16T13:36:46+08:00",
-      "user_quote": "我同意",
-      "review_context": "Immediately preceding assistant explicitly asked approval of ordinary cavalry body and immediate initial upgrade; special crossings and M07 excluded.",
-      "presented_source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
-      "summary": "普通开局原始两匹明马立即获得骑兵；每次行动选正常马步或合法一格短步。己半场仅前一格、敌半场前/左/右一格，无后退一格；完整普通向后马步及蹩腿保留，按当前起点半场，无免费第二步。",
+      "scope": "standard_mutation_pool_only",
+      "confirmed_at_local": "2026-10-16T13:51:13+08:00",
+      "user_quote": "同意",
+      "review_context": "Immediately preceding assistant explicitly asked whether M07 should temporarily stay outside ordinary mutation pool, with full-public and H16 brawl consequences shown.",
+      "presented_source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+      "summary": "M07暂不进入普通畸变池，保留设计条目；完成具体普通适配并再次明确确认后才恢复入池。原揭棋/半混乱机制和普通H16常态保持。",
       "full_source": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜M06 骑兵普通开局两明马适配"
+        "heading": "已确认｜M07 混乱普通暂不入池"
       },
-      "authority": "Current explicit user confirmation; no game implementation/runtime acceptance.",
-      "shared_geometry_rule_delta": 0,
-      "ordinary_startup_adaptation": "Confirmed immediate applicability for initially public original two horses; does not advance dark-mode unrevealed horse activation.",
+      "authority": "Explicit current user confirmation; design documents only.",
+      "ordinary_pool_rule_delta": "modification: temporarily exclude M07",
+      "shared_mechanic_rule_delta": 0,
       "not_confirmed": [
-        "M07 or pool exclusion",
-        "new generated horses",
-        "flying/history/temporary-control/special-action crossings",
-        "implementation/runtime/scoring thaw/NET resume"
+        "M08 or D01",
+        "ordinary chaos redesign/public faction rerolls/new covered generation",
+        "game implementation/runtime/scoring thaw/NET resume"
       ]
     }
   ],
   "new_user_rule_confirmations": 1,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
-    "current_index_count": 24,
-    "M04_M05_unchanged": true,
+    "current_index_count": 25,
+    "previous24_records_unchanged": true,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
@@ -71,18 +70,27 @@
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜M06 骑兵普通开局两明马适配"
       }
+    },
+    {
+      "id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
+      "scope": "standard_mutation_pool_only",
+      "presented_source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜M07 混乱普通暂不入池"
+      }
     }
   ],
   "pending_decision": {
-    "id": "STD-M07-POOL-EXCLUDE-PENDING-ADAPTATION",
+    "id": "STD-M08-JIAN-XIE-GROUND-KEEP",
     "status": "proposal_pending_user_confirmation",
-    "pool_exclusion_confirmed": false,
-    "M06_approval_does_not_include_this": true
+    "M07_approval_does_not_include_this": true
   },
   "changes": [
-    "Record M06 explicit body/ordinary startup adoption and preserve all11 CA specs as unrun.",
-    "Prepare ordinary M07 temporary pool exclusion recommendation with redesign alternative and eight conditional specs.",
-    "Document H16 brawl entry dependency; keep M04/M05/M06 pending main receipt references and fixed current pointers."
+    "Record explicit ordinary M07 pool exclusion, retain original/half-chaos rules and ordinary H16 charge; future reentry needs confirmed adaptation.",
+    "Prepare pending M08 normal ground-pawn body with concrete coordinate examples and JX01-JX11 unrun specs.",
+    "Update fixed current pointers, local receipt and pending main receipt references for all four later confirmations.",
+    "Align retained M06 pending-ledger scope with already-confirmed body and startup; no new rule confirmation."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -99,57 +107,53 @@
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 4740,
-      "sha256": "c7327ef259a70311c2b3b19f68787cbc36e998274c5a1b6d93f17146274ae291"
+      "size": 4735,
+      "sha256": "e388ce1edc6f9e73cd62dcfd030322d938f611852b68d386a2e36dfc8993e247"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 6197,
-      "sha256": "510f578ec1e3cd9336758954e28cc653561c98ddce05cf8e1e0e1ac1c6858858"
+      "size": 6354,
+      "sha256": "d3abb5740e2638c77c5f38083a591548cca8d3ae1d2a35d4b2026ee8793cd559"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1298,
-      "sha256": "c62acc7a64a9f8563dc61ba6ffdd83de75910971ad81a89d79511120850963ec"
+      "size": 1154,
+      "sha256": "fb08a5c25edc987168fcb69e6a9592d09f0f607c2ad5f2f68efbca20d2e44f77"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 13383,
-      "sha256": "ec35a894697fd90f5b768ed55323862e37c041377d93eddf6025b6596881762a"
+      "size": 14911,
+      "sha256": "b3b6ecba29c94816782a2bd9afbf988adfc00dba93b81fc8e3968a219003ffec"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 28519,
-      "sha256": "b48d20dba2ebb64147a1d45c1c1c49e38562d2fb0f9fbba24944d952385256fe"
+      "size": 30052,
+      "sha256": "ba7376132a8bddfa5d7148cb6bdf2e38aac3fc7a420e7921de39867165c2ab4a"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 134419,
-      "sha256": "1c302be28bc3ac82d89598de01fe237b6e4c65a54b76bd1d87a4317981517139"
+      "size": 136979,
+      "sha256": "4c2e4c446042146ea02b809adaa5f65f2da3516f38ef977b25bb64beabbf6f1d"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 1651,
-      "sha256": "c62c33d72c661d32d380cf0a06200ec68fb814f642eb512c48275814a9689ba1"
+      "size": 1591,
+      "sha256": "44a2e941bd677a0a6a392e6f7a4a2b99effd54f414c1b9d8403c4bb02143da72"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 17595,
-      "sha256": "bf903ccd8fda62a26920049b09b3da066b286997bf6786bf3c1660fad05d124c"
+      "size": 17796,
+      "sha256": "0ff485d209a0f5b4ccb8b488aeb0b40b4e492004d918ae534acc718322aeaa6e"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
-  "manifest_note": "Includes return and payload, excludes self; result commit resolved from Git history.",
+  "manifest_note": "Includes return and payload, excludes self; resolve result commit from Git history.",
   "actual_validation": {
     "approval_context_source_checked": true,
-    "M06_original_11_unrun_specs_preserved": true,
+    "M07_original_8_unrun_specs_preserved": true,
+    "previous24_confirmation_records_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
-    "previous_integrity_result": {
-      "status": "passed",
-      "files": 290,
-      "scope": "published_project_file_integrity_only"
-    },
     "updated_verify_dispatch": {
       "status": "passed",
       "files": 290,
@@ -161,7 +165,8 @@
     "WC01-WC11",
     "EX01-EX11",
     "CA01-CA11",
-    "conditional CH01-CH08",
+    "CH01-CH08",
+    "JX01-JX11",
     "full legal-prefix/engine/mode/privacy/NET validation"
   ],
   "shared_coordination": [
@@ -189,11 +194,16 @@
     },
     {
       "id": "STD-M07-H16-INTERFACE",
-      "status": "pending_mode_direction_not_new_shared_rule",
-      "detail": "All-public ordinary board has no initial refresh targets; retaining M07 label would also invoke H16 brawl replacement with own-covered first-target requirement. No new target/charge fallback or pool decision invented."
+      "status": "ordinary_branch_not_applicable_while_M07_excluded_future_reentry_review",
+      "detail": "M07 ordinary exclusion explicitly approved; common H16 unchanged. Future ordinary reentry needs branch review."
+    },
+    {
+      "id": "STD-M08-CROSSES",
+      "status": "source_review_pending",
+      "detail": "Temporary-control direction/half, special return across river, history, flying/river and special-action geometry; no new cross-policy adopted."
     }
   ],
-  "implementation_status": "confirmed_design_and_pending_pool_proposal_documents_only",
+  "implementation_status": "confirmed_pool_policy_and_pending_body_proposal_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -206,81 +216,82 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "M06 explicit approval write plus ordinary M07 pool/function-gap and H16 interface review.",
+    "audit_trigger": "M07 explicit ordinary pool-policy approval plus M08 ground-pawn source review.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User explicitly accepted M06 body and initial startup.",
-      "Ordinary mode starts with32 public pieces; M07 source refreshes only still-unrevealed covered pieces.",
-      "H16 chaos brawl first target must be own currently controlled covered piece; ordinary non-M07 charge already separately confirmed."
+      "User explicitly approved temporary ordinary M07 exclusion, retention and future confirmed reentry.",
+      "Current and original M08 sources keep pre-river base rules and replace post-river horizontal moves with forward diagonals.",
+      "Bottom rank leaves all three forward targets out of bounds; source expressly has no promotion or auto-destruction."
     ],
     "user_statements": [
       {
-        "quote": "我同意",
-        "at_local": "2026-10-16T13:36:46+08:00",
-        "scope": "standard_original_two_public_ground_horses_body_and_initial_startup"
+        "quote": "同意",
+        "at_local": "2026-10-16T13:51:13+08:00",
+        "scope": "standard_mutation_pool_only"
       }
     ],
     "claim_register": [
       {
-        "claim": "M06 confirmation",
+        "claim": "M07 pool exclusion confirmed",
         "type": "user_statement",
-        "source": "Current message and previous explicit M06 question at e340f9e296dc2efe24caefbb93d412706d7665a6",
+        "source": "Current message and prior explicit question at 2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
         "verification": "V2"
       },
       {
-        "claim": "M07/H16 source semantics",
+        "claim": "M08 source mechanics",
         "type": "document_fact",
-        "source": "Current M07/H16, original brawl entry and ordinary H11/H14/H16 sources",
+        "source": "Current M08, original September28 section七, matrix M08 and basic rules",
         "verification": "V2"
       },
       {
-        "claim": "Initial zero refresh target and ordinary brawl-entry gap",
+        "claim": "M08 normal coordinate cases",
         "type": "ai_inference",
-        "source": "Mode32-public and source target constraints",
-        "verification": "V1 conditional source reasoning, unrun"
+        "source": "Conditional geometry examples",
+        "verification": "V1 unrun same-assistant reasoning"
       },
       {
-        "claim": "Temporary ordinary M07 pool exclusion",
+        "claim": "Ordinary M08 body adoption",
         "type": "hypothesis",
-        "source": "Pending recommendation, not approved",
+        "source": "Pending user-facing proposal",
         "verification": "V0 policy candidate"
       }
     ],
     "ai_interpretations": [
-      "Approval addresses M06 only.",
-      "Zero direct M07 refresh does not imply zero hero-interface effects."
+      "Current approval addresses ordinary M07 pool policy only.",
+      "M08 normal ground-pawn body can be proposed unchanged while distinct history/control/space interfaces remain pending."
     ],
     "assumptions": [
-      "Only currently confirmed ordinary sources are available; secret attachments/invisibility are not covered status.",
-      "Illustrative brawl gap assumes sufficient resources but no eligible covered first target; not a proven runtime prefix."
+      "Ordinary ground-pawn normal actions with no unlisted target/safety obstacle.",
+      "Coordinate cases use red bottom1 and black bottom10; not runtime reachable-prefix fixtures."
     ],
     "unknowns": [
-      "User preferred ordinary M07 pool policy.",
-      "Details of any future ordinary-specific chaos redesign.",
-      "Full runtime/reachable prefix/privacy behavior."
+      "User decision on ordinary M08 body.",
+      "Temporary control, special displacement back across river, history, flying/river and special-action full crossings.",
+      "Live engine implementation and full legal prefixes."
     ],
     "competing_explanations": [
-      "Keep source unchanged in ordinary as empty refresh; hero substitution means not automatically a harmless empty mutation.",
-      "Create a new ordinary chaos rule; this needs explicit new mechanics rather than pretending inheritance."
+      "Adding diagonals while retaining sideways moves changes current M08 and is not proposed.",
+      "Promotion or auto-destruction at bottom would change explicit source and is not proposed."
     ],
     "falsification_conditions": [
-      "A later valid ordinary source already creates eligible covered pieces and resolves H16 branch consequences.",
-      "User chooses another scoped direction."
+      "A higher-priority scoped source changes ordinary M08 geometry.",
+      "User rejects or changes specific pending M08 body."
     ],
     "verification_status": "partial",
-    "action_boundary": "Confirm M06 body/startup; prepare M07 policy recommendation without adopting it; line documents only.",
+    "action_boundary": "Write approved M07 ordinary pool policy and prepare pending M08 design; scoped documents only.",
     "failure_conditions": [
-      "Mark M07 excluded from M06 agreement.",
-      "Change all public factions or create hidden bodies without confirmation.",
-      "Call M07 globally effectless or silently rewrite H16 brawl/charge.",
-      "Spread ordinary pool exclusion to other modes or reopen scoring."
+      "Interpret M07 approval as M08/D01 or unknown redesign approval.",
+      "Remove M07 from original or half-chaos pools.",
+      "Retain post-river sideways moves or invent bottom-rank promotion.",
+      "Invent special-control or return-across-river policy from simple ordinary progression.",
+      "Claim file checks as game execution or receiver adoption."
     ],
-    "residual_risk": "Source-based conditional reasoning and same-AI review do not validate all game interactions.",
-    "next_validation_action": "User chooses M07 pool direction; only after explicit policy adoption proceed to dependent mode documentation or detailed redesign.",
+    "residual_risk": "Same-assistant conditional source reasoning is not independent review or full interaction/runtime validation.",
+    "next_validation_action": "User decides M08 normal body; only then continue D01 design, retaining unresolved crossings.",
     "action_resilience": {
       "maximum_exposure": "Only ten scoped line documents; no game or external-message mutation.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected line files from e340f9e296dc2efe24caefbb93d412706d7665a6 using a normal commit preserving concurrent work.",
+      "recovery": "Restore selected scoped files from 2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6 via normal commit preserving concurrent work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },

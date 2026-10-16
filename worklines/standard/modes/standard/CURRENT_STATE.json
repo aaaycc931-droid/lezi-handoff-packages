@@ -1,5 +1,5 @@
 {
-  "status": "M04_M05_M06_confirmed_M07_pool_direction_pending",
+  "status": "M04_M05_M06_M07_confirmed_M08_pending",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "用户决定M07普通暂不入池建议；若确认则继续M08、D01，若选择普通专属重设计则先准备具体M07机制。当前M07排除和新机制都未批准。",
+  "next_action": "用户决定M08普通地面兵卒主体继承候选；确认后继续D01时光之末。M08特殊交叉及D01均未自动批准。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,12 +29,14 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
-    "user_quote": "我同意",
-    "at_local": "2026-10-16T13:36:46+08:00",
-    "scope": "standard_original_two_public_ground_horses_body_and_initial_startup"
+    "id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
+    "user_quote": "同意",
+    "at_local": "2026-10-16T13:51:13+08:00",
+    "scope": "standard_mutation_pool_only"
   },
-  "main_document_adopted_scope": "Prior closeout document integration only; M04/M05/M06 subsequent approvals main adoption unknown.",
+  "main_document_adopted_scope": "Prior closeout only; M04/M05/M06/M07 later confirmations main adoption unknown.",
   "latest_confirmation_main_adopted": null,
-  "current_confirmation_index_count": 24
+  "current_confirmation_index_count": 25,
+  "M07_pool_exclusion_confirmed": true,
+  "M08_approved": false
 }

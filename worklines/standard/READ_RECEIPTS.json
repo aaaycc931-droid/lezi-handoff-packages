@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-16T13:43:32+08:00",
+  "recorded_at_local": "2026-10-16T13:55:42+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
@@ -265,68 +265,79 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
-    "at_local": "2026-10-16T13:36:46+08:00",
-    "user_quote": "我同意",
-    "presented_source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
-    "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
-    "M07_approved": false
+    "confirmation_id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
+    "at_local": "2026-10-16T13:51:13+08:00",
+    "user_quote": "同意",
+    "presented_source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+    "scope": "standard_mutation_pool_only",
+    "M08_approved": false
   },
   "current_task_reading": {
-    "source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
-    "actual_modules": "AUTHORIZATION_AND_ADOPTION re-read; unchanged full L3 limitation, baseline, gate and handoff modules reused from verified same-version prior task.",
+    "source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+    "actual_modules": "AUTHORIZATION_AND_ADOPTION and BASELINE_DELTA_CHECK including preservation re-read; same unchanged full L3 limitation and workflow/gate modules retained from prior verified version.",
     "files": [
       {
-        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "full M07"
+        "path": "START_STANDARD.txt",
+        "read_scope": "full latest fixed entry; old M04 pointer superseded by current line state"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/ADAPTATION_MATRIX.json",
-        "read_scope": "full M07"
+        "path": "AGENTS.md",
+        "read_scope": "full latest"
       },
       {
-        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "full H16 and H11; standard H11 current override read separately"
+        "path": "CURRENT_HANDOFF.json",
+        "read_scope": "full latest"
       },
       {
-        "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
-        "read_scope": "full4.3/4.4; previous same-version invisibility/space source reused"
+        "path": "collaboration/CURRENT.json",
+        "read_scope": "full latest; unchanged v0.10 identity"
       },
       {
-        "path": "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
-        "read_scope": "current full mode/ordinary M07 boundaries; old F1 index overridden by current H10 source"
+        "path": "docs/WORKFLOW.md",
+        "read_scope": "full unchanged current"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/INHERITED_CONFIRMED_H01_H02_H11.md",
-        "read_scope": "full including ordinary H11; old F1 note remains historical"
-      },
-      {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
-        "read_scope": "full12B M07; historical scores ignored"
-      },
-      {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
-        "read_scope": "full4.2 chaos death disclosure"
-      },
-      {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_BRAWL_ENTRY.md",
-        "read_scope": "full original paid brawl entry confirmation"
+        "path": "worklines/standard/CURRENT_STATE.json",
+        "read_scope": "full latest"
       },
       {
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "full current M06 proposal/context, ordinary H14 pre-review/exclusion and H16 non-M07 confirmation sections"
+        "read_scope": "full current M07 approval context and top state; prior unchanged confirmed sections retained"
+      },
+      {
+        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+        "read_scope": "full M08 and common one-mutation/weight boundaries"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/ADAPTATION_MATRIX.json",
+        "read_scope": "full M08; old pending rows not current confirmation authority"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/BALANCE_AND_RULE_UPDATES_2026-09-28.md",
+        "read_scope": "full section七 M08; historical scoring ignored"
+      },
+      {
+        "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+        "read_scope": "full basic mode/five phases/action layers, sections1,2,5,6 and second section2 movement/attack"
+      },
+      {
+        "path": "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
+        "read_scope": "full current; ordinary M07 pending paragraph now superseded only by current scoped approval"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/CURRENT_RULES.md",
+        "read_scope": "full historical ordinary baseline; old H10 F1 and pending lists superseded by newer confirmations"
       }
     ],
     "adopted_scope": [
-      "M06 actual body/startup confirmation; original23 confirmations preserved",
-      "M07 source and H16 dependency used for pending recommendation, no pool decision adopted"
+      "M07 explicitly approved ordinary pool exclusion only",
+      "M08 source used to prepare pending normal ground-pawn inheritance candidate"
     ],
     "not_adopted": [
-      "M07 ordinary pool exclusion or inclusion before decision",
-      "automatic empty-effect classification",
-      "new covered pieces/public faction rerolls",
-      "own-public brawl first target or automatic charge fallback under M07",
-      "cross-mode scope expansion"
+      "M08 or D01 without decision",
+      "ordinary M07 automatic reentry or redesign",
+      "cross-mode pool changes",
+      "special pawn control/history/space crossings without source review"
     ],
     "new_engine_tests": 0
   },
@@ -348,6 +359,12 @@
       "at_local": "2026-10-16T13:36:46+08:00",
       "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
       "user_quote": "我同意"
+    },
+    {
+      "id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
+      "at_local": "2026-10-16T13:51:13+08:00",
+      "scope": "standard_mutation_pool_only",
+      "user_quote": "同意"
     }
   ]
 }
