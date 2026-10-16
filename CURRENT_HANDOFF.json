@@ -3,20 +3,20 @@
   "worklines": {
     "UI": "worklines/ui/START_HERE.txt",
     "standard": "worklines/standard/START_HERE.txt",
-    "main": "worklines/main/START_HERE.txt"
+    "main": "worklines/main/START_HERE.txt",
+    "half_chaos": "worklines/half_chaos/START_HERE.txt"
   },
   "assets": "assets/ui/INDEX.json",
   "history": "archive/INDEX.json",
   "workflow": "docs/WORKFLOW.md",
-  "main_and_half_chaos": "Main necessary continuation bodies/state/sources are published at worklines/main; full main historical tree and full half_chaos workline are still not published. No new receiver adoption is inferred.",
+  "main_and_half_chaos": "Main necessary continuation bodies/state/sources are published at worklines/main; half_chaos current full working body/state/confirmations and source map are published at worklines/half_chaos. Both full historical archives remain outside this scoped continuation publication. No receiver adoption is inferred.",
   "recipient_reading_and_adoption_verified": false,
   "previous_complete_snapshot": "52002b3762bd948a134c67cfbc99427035790eba",
   "default_handoff_transport": "GitHub connector",
   "return_file_pattern": "worklines/<line>/RETURN_TO_MAIN.json",
   "receiver_receipt_file_pattern": "worklines/<receiver_line>/READ_RECEIPTS.json",
   "not_yet_published_full_worklines": [
-    "main",
-    "half_chaos"
+    "main"
   ],
   "shared_collaboration": {
     "entry": "START_COLLABORATION.md",
@@ -38,5 +38,19 @@
     "necessary_body_publication": "present in this commit",
     "full_history_migration": false,
     "pending_repetition_history_approved": false
+  },
+  "historical_archive_migration_incomplete": [
+    "main",
+    "half_chaos"
+  ],
+  "half_chaos_publication_scope": "current complete working document and required sources; not every private historical/runtime archive",
+  "half_chaos_recovery": {
+    "entry": "worklines/half_chaos/START_HERE.txt",
+    "state": "worklines/half_chaos/CURRENT_STATE.json",
+    "return": "worklines/half_chaos/RETURN_TO_MAIN.json",
+    "prior_source_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+    "concurrent_main_source_commit": "26736f643754ae22731a7540874835ddf4e21409",
+    "full_history_migration": false,
+    "new_rule_confirmation": false
   }
 }
