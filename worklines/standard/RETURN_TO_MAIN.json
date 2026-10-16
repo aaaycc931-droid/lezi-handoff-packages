@@ -2,26 +2,26 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T19:37:39+08:00",
-  "source_commit": "1b98d245beac601737207f286815152c83450318",
-  "base_commit": "1b98d245beac601737207f286815152c83450318",
-  "approval_context_source_commit": "1b98d245beac601737207f286815152c83450318",
-  "phase": "shared_zero_appeared_confirmed_check_safety_prepared",
+  "prepared_at_local": "2026-10-16T19:48:07+08:00",
+  "source_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+  "base_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+  "approval_context_source_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+  "phase": "hourglass_safety_confirmed_bomb_in_check_gate_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定：沙漏可用自身完整结算解将，但最终仍受将或新暴露己方将帅则不提交不扣次；不可借下一沙漏或随后主行动补救。仅共享D01沙漏，尚未批准。",
+  "current_breakpoint": "用户决定：当前受将时不允许先投弹，拒绝不扣弹/全军名额；先合法应将，普通主行动后不回开投弹窗口。本共享D01投弹门槛尚未批准。",
   "confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
-      "kind": "new_direct_shared_qualification_confirmation",
+      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+      "kind": "new_direct_shared_hourglass_safety_confirmation",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
-      "source": "rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+      "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
       "new_local_standard_confirmation": false,
-      "confirmed_at_local": "2026-10-16T19:29:50+08:00",
+      "confirmed_at_local": "2026-10-16T19:44:08+08:00",
       "user_quote": "同意"
     }
   ],
@@ -31,7 +31,7 @@
     "current_index_count": 29,
     "all29_local_records_unchanged": true,
     "existing_shared_records_unchanged": true,
-    "shared_confirmations_originated_here_total": 2,
+    "shared_confirmations_originated_here_total": 3,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
@@ -68,15 +68,15 @@
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
   "pending_decision": {
-    "id": "D01-HOURGLASS-CHECK-SAFETY-PREFLIGHT",
+    "id": "D01-BOMB-IN-CHECK-GATE",
     "status": "proposal_pending_user_confirmation",
-    "zero_appeared_confirmation_does_not_approve_check_safety": true
+    "hourglass_confirmation_does_not_approve_bomb_gate": true
   },
   "changes": [
-    "Record one shared empty-appeared-candidate activation qualification; ordinary29 unchanged.",
-    "Update current D0112A.3 with exact new original confirmation; preserve first shared original, six-step order and source archives.",
-    "Prepare hourglass check-safety proposal with two conditional cases and10 unrun specs; other hero and bomb rules not transferred.",
-    "Preserve main pending receipts for ordinary28/29 and first shared core; append current shared qualification."
+    "Record one shared hourglass check-safety confirmation; ordinary29 unchanged.",
+    "Update current12A.3 with original source, preserve six-step order and prior originals.",
+    "Prepare separate bomb in-check gate, BG-S01/BG01-BG08 unrun; no automatic extension.",
+    "Preserve all earlier unresolved receiver receipt scopes and append current confirmation."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -91,86 +91,86 @@
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
     "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-    "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+    "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
     "worklines/standard/PUBLISHED_FILES.json"
   ],
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 5244,
-      "sha256": "51d0006cfb509bd70117db68f85f2f7ea8e76c39aa757a99501493d6fec40fa8"
+      "size": 5277,
+      "sha256": "36f5f57a5c7ebd233d754878a368240a11267e998baa341555cee75a8b435623"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 11935,
-      "sha256": "c2c4844f8d9b9b69be644d6e6fa60d76c5fb9e8db102952711f30cee01387701"
+      "size": 12229,
+      "sha256": "24a38e9fd2e3e073e9870908ab16e8c3e7e374c9dddb663a843ed1dcc1fdad2f"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1472,
-      "sha256": "5389e9538f38beece5a98526b42c3ff39e24778b86bbf282d5657bb9ac4b081c"
+      "size": 1355,
+      "sha256": "548ee4801713aa8e29ac86ae369651c0059f7488988b11d2e6e2a48eed9613d9"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 30294,
-      "sha256": "f53b20519dd1f21aecf48a1d754682e10e4284ab24cb6337474fb470e81e1d38"
+      "size": 31377,
+      "sha256": "788bada662e9553d4eef78c7e047dfb48d60f939677702844de8e8bf3f423377"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 2660,
-      "sha256": "a9b7730ecca01407b4004aa90541b096a52aa980096fcae6e7b32c8a2999ac9e"
+      "size": 2661,
+      "sha256": "6e29119390fcce0fdb1c1dc4a1b27588d371cc9844aea3819c94d43b5a9a8a3c"
     },
     {
       "path": "SOURCE_PRIORITY.json",
-      "size": 1586,
-      "sha256": "4a042bf78f1cb9b8c368660e26204dff6c0c68b247f530dd9df230da2503503a"
+      "size": 1946,
+      "sha256": "887e0f285c3787587b916f6323ac6efb0c174480fa2d42c8d622e053e876ce74"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 44571,
-      "sha256": "60650538eac3c7b940f66ab4a431fd6fdeca8a52226e8a4028aa6fcaeb2cb90c"
+      "size": 45811,
+      "sha256": "c90ba5750ebbd1f00c25c0de742ca1f5e91b3e13bc1e4248b36d9693c03bf3c3"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 179551,
-      "sha256": "d8feb68aede670eb7282dbe06856d3543bdada6ac9ea9b3804e8773c8ae2c774"
+      "size": 184563,
+      "sha256": "b62403eaf015731e848bf3346eea1f3c31178314278bac5bac9e4008586e00a2"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 3097,
-      "sha256": "22f4bceb3a024c97c949fee307fc2980417a481b3ea48c7d654b0fcca17f8a66"
+      "size": 3225,
+      "sha256": "fb58abfb10a6a1821182a32f2d2551dacad498ef2c7a3a673a6681ed68f9450a"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 25506,
-      "sha256": "78061e3ea2d5d94469af65ea8b663f2757ca6ca4179316c56c9a56e96fcde825"
+      "size": 25535,
+      "sha256": "40ecc200535689da7ff0bbe8c8568f13c3505740fa22e3cfe3843ff3822471f6"
     },
     {
       "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-      "size": 19724,
-      "sha256": "3773fd3d186ac2f470c53de700edc899c605fad8ab09cd8b96fa22e9d1e59533"
+      "size": 21072,
+      "sha256": "00d080b2b6090b2f3b8d455a83e790cfa27b95536fe2a146d932c1bf85834665"
     },
     {
-      "path": "rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
-      "size": 4087,
-      "sha256": "fe49f5fe3d426512928e5e5d045acbfbf57ac1f22e9cdb6d7dd71f67663283ab"
+      "path": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+      "size": 4312,
+      "sha256": "c3af07c48977a345d5900f6d8745940e4fdf3ae6151a368612f3155c92bfdac4"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
-    "explicit_zero_appeared_scope_context_checked": true,
-    "original_ZA8_specs_preserved": true,
+    "explicit_hourglass_safety_context_checked": true,
+    "original_CK10_specs_preserved": true,
     "all29_ordinary_confirmation_records_unchanged": true,
-    "first_original_shared_confirmation_unchanged": true,
-    "current_mutation_body_outside_labeled_update_unchanged": true,
+    "prior_original_shared_confirmations_unchanged": true,
+    "current_mutation_outside_labeled_update_unchanged": true,
     "original_source_archives_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "maintenance_validation_script_changes": 0,
     "updated_verify_dispatch": {
       "status": "passed",
-      "files": 292,
+      "files": 293,
       "game_engine_tests": 0,
       "scope": "published_project_file_integrity"
     }
@@ -188,7 +188,8 @@
     "HR-P01/HR01-HR10",
     "SC01-SC08",
     "ZA01-ZA08",
-    "CK-S01/CK-S02/CK01-CK10"
+    "CK-S01/CK-S02/CK01-CK10",
+    "BG-S01/BG01-BG08"
   ],
   "shared_coordination": [
     {
@@ -225,8 +226,8 @@
     },
     {
       "id": "STD-D01-EDGES",
-      "status": "zero_appeared_confirmed_check_safety_order_pending",
-      "detail": "Both shared hourglass core and zero-appeared eligibility confirmed. Hourglass check-safety proposal pending; bomb preflight, exact source order and mapping remain separate."
+      "status": "hourglass_safety_confirmed_bomb_gate_and_order_pending",
+      "detail": "Hourglass reviewed safety branch confirmed. Bomb in-check gate, independent terminal/full response-space-clock/exact source order and mapping remain separate."
     },
     {
       "id": "HC-MAIN-H16-ACTION-TIER",
@@ -253,17 +254,24 @@
       "owner": "main/standard",
       "source": "rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
       "detail": "Empty appeared-warrior set no longer blocks otherwise legal hourglass; hidden identities untouched. Main/other receivers adoption unverified."
+    },
+    {
+      "id": "D01-HOURGLASS-CHECK-SAFETY-PREFLIGHT",
+      "status": "explicit_shared_hourglass_safety_confirmed_pending_main_receipt",
+      "owner": "main/standard",
+      "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+      "detail": "Full current hourglass atom must independently leave own royal safe in reviewed branch; no later repair. Main/other receiver adoption unverified."
     }
   ],
   "remote_reconciliation": {
-    "parent": "1b98d245beac601737207f286815152c83450318",
-    "approval_context_commit": "1b98d245beac601737207f286815152c83450318",
+    "parent": "fbc5e1f89874239573cdd784338104d163821ae4",
+    "approval_context_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
     "remote_head_unchanged_since_prior_publication": true,
     "ordinary_target_paths_changed_before_local_edit": false,
     "unreturned_local_changes_found": 0,
     "earlier_concurrent_commits_preserved_in_parent_history": true
   },
-  "implementation_status": "confirmed_shared_qualification_sources_and_pending_check_safety_documents_only",
+  "implementation_status": "confirmed_shared_hourglass_safety_and_pending_bomb_gate_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -276,17 +284,17 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "Shared empty-appeared qualification confirmation and separate hourglass check-safety source review.",
+    "audit_trigger": "Shared hourglass check-safety confirmation and separate bomb in-check gate.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User approves the immediately preceding explicit empty-appeared eligibility question.",
-      "D01 strict full atom and main opportunity are source-confirmed; H06 no-check ban belongs to replaced ordinary skill.",
-      "Ordinary29 and first original shared confirmation remain unchanged."
+      "User directly approves prior explicit shared hourglass check-safety question.",
+      "D01 pollution is not path blocker; time collapse is delayed to source deadline.",
+      "Ordinary29 and two earlier direct shared originals remain unchanged."
     ],
     "user_statements": [
       {
         "quote": "同意",
-        "at_local": "2026-10-16T19:29:50+08:00",
+        "at_local": "2026-10-16T19:44:08+08:00",
         "scope": [
           "original_jieqi",
           "standard_xiangqi",
@@ -296,67 +304,65 @@
     ],
     "claim_register": [
       {
-        "claim": "empty appeared-warrior set does not block otherwise legal D01 hourglass",
+        "claim": "hourglass full-atom safety gate confirmed",
         "type": "user_statement",
-        "source": "Current user and preceding complete candidate at 1b98d245beac601737207f286815152c83450318",
+        "source": "Current user and full candidate at fbc5e1f89874239573cdd784338104d163821ae4",
         "verification": "V2"
       },
       {
-        "claim": "full source atom and differing source-specific check clauses",
+        "claim": "bomb range/whole-army limit, pollution non-blocking and delayed collapse",
         "type": "document_fact",
-        "source": "D0112A.2/3,14.4;01formal phases/§2;02H05/H06/H09/H21",
+        "source": "Full D0112A.4-7",
         "verification": "V2"
       },
       {
-        "claim": "hourglass may resolve check only if its own closed atom leaves own royal safe",
+        "claim": "prohibit bomb when currently in check",
         "type": "proposal",
-        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 沙漏受将与王安全预检",
+        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 无限龙投弹的受将门槛",
         "verification": "V0 unapproved"
       },
       {
-        "claim": "CK-S01/02 conditional board outcomes",
+        "claim": "BG-S01 direct rook check remains after prospective pollution",
         "type": "ai_inference",
-        "source": "same-assistant source reasoning",
+        "source": "same-assistant conditional case",
         "verification": "V1 unrun"
       }
     ],
     "ai_interpretations": [
-      "This approval confirms only the shared empty-appeared qualification.",
-      "Neither H06 prohibition nor H21 automatic-start exception determines D01 hourglass safety."
+      "Approval is hourglass safety only; bomb requires separate decision.",
+      "Delayed collapse cannot be treated as checker immediately destroyed."
     ],
     "assumptions": [
-      "Conditional CK states satisfy all other source conditions; no complete natural legal prefix established.",
-      "CK safety examples keep both royals alive and exclude independent terminal sources."
+      "BG-S01 is a conditional board with no independent terminal; all listed source prerequisites are explicit."
     ],
     "unknowns": [
-      "User choice on proposed complete-atom safety threshold.",
-      "Unlocated higher-priority historical check-specific hourglass clause, if any.",
-      "Complete adjudication skill search/clock algorithm, exact begin order and runtime/private feedback."
+      "User choice on bomb in-check gate.",
+      "Complete natural prefix/runtime and full checkmate skill/clock search.",
+      "Independent terminal-source and exact begin/deadline ordering interfaces."
     ],
     "competing_explanations": [
-      "Prohibit all in-check hourglass uses, including direct revival blocks.",
-      "Require each complete hourglass to leave own royal safe; recommended candidate.",
-      "Allow remaining check until a later hourglass or main response; not selected or confirmed."
+      "Current check blocks bomb; recommended.",
+      "Permit bomb before main response while still in check; not confirmed."
     ],
     "falsification_conditions": [
-      "Higher-priority explicit source gives a different hourglass safety gate.",
-      "Complete atom case contains unmodeled independent terminal or legal obstruction.",
-      "User chooses another pending safety boundary."
+      "Higher-priority explicit bomb check clause found.",
+      "Complete state adds source effect or legal restriction absent from conditional example.",
+      "User chooses other pending gate."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write confirmed shared empty-pool qualification and prepare unapproved check-safety proposal in this workline only; preserve actual receiver unknowns.",
+    "action_boundary": "Write confirmed hourglass safety and prepare unapproved bomb gate within this workline only; no receiver adoption/runtime claims.",
     "failure_conditions": [
-      "Recount shared qualification as ordinary30.",
-      "Pretend main/other mode adoption or runtime success.",
-      "Treat empty-pool eligibility as permission while in check.",
-      "Use H06/H09/H21 exception as D01 authority or silently extend to bombs."
+      "Count shared as ordinary30.",
+      "Treat hourglass approval as bomb prohibition already approved.",
+      "Treat pollution as path blocker or delayed collapse as instant death.",
+      "Fabricate other receiver adoption or game test success."
     ],
-    "residual_risk": "Bounded sources and conditional same-assistant reasoning do not prove full history, reachable prefixes, terminal search, or runtime privacy.",
-    "next_validation_action": "Main consumes both exact shared originals; user separately decides hourglass check-safety; bomb and exact ordering edges remain pending.",
+    "residual_risk": "Bounded sources and same-assistant conditions do not prove all history, full legal reachability or runtime privacy.",
+    "next_validation_action": "Main consumes all three exact shared originals; user separately decides bomb gate; source-order/full search interfaces remain pending.",
     "action_resilience": {
       "maximum_exposure": "Fourteen ordinary-line document/source files; no game/runtime or messages.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected ordinary files from 1b98d245beac601737207f286815152c83450318 via normal commit preserving later unrelated work.",
+      "recovery": "Restore selected ordinary files from fbc5e1f89874239573cdd784338104d163821ae4 via normal commit preserving later unrelated work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },
@@ -369,9 +375,8 @@
   },
   "shared_coordination_consumed": {
     "new_direct_shared_gameplay_confirmations": 1,
-    "zero_appeared_eligibility_approved": true,
-    "check_safety_candidate_approved": false,
-    "bomb_in_check_permission_approved": false,
+    "hourglass_check_safety_approved": true,
+    "bomb_in_check_gate_approved": false,
     "main_H15_candidate_approved": false
   },
   "collaboration_adopted": {
@@ -393,39 +398,40 @@
   },
   "shared_confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
-      "source": "rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+      "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
-      "confirmed_at_local": "2026-10-16T19:29:50+08:00",
+      "confirmed_at_local": "2026-10-16T19:44:08+08:00",
       "user_quote": "同意",
       "policy": {
-        "empty_appeared_warrior_candidate_set_blocks_activation": false,
-        "other_source_activation_conditions_must_pass": true,
-        "remaining_uses_required": true,
-        "officially_terminated_game_can_activate": false,
-        "empty_candidate_set_successful_submission_consumes_uses": 1,
-        "return_candidate_set_remains_empty": true,
-        "hidden_true_identity_pool_used_to_fill_candidates": false,
-        "unappeared_warriors_revealed_returned_or_revived": false,
-        "cleanse_all_distortions_and_related_unsettled_time_collapse": true,
-        "reload_living_appeared_dragons_to_ammo": 1,
-        "unappeared_dragons_revealed_or_treated_as_appeared": false,
-        "dead_dragons_revived_or_reloaded": false,
-        "zero_benefit_refunds_use": false,
-        "appeared_history_survives_death": true,
-        "each_same_window_use_independently_validated": true,
-        "new_formal_turn_or_deadline_refresh": false,
-        "max_total_hourglass_uses": 5,
-        "in_check_and_other_safety_preflight": "not_decided_by_this_confirmation"
+        "branch_guard": "Own-royal safety branch where both royals survive the closed hourglass atom and no independent terminal source applies; those other sources remain separately governed.",
+        "ordinary_check_before_official_terminal_can_enter_hourglass_preflight": true,
+        "full_six_steps_and_committed_landing_aftermath_simulated_before_submission": true,
+        "intermediate_board_safety_alone_decides_legality": false,
+        "closed_atom_must_leave_own_royal_free_of_all_legal_check": true,
+        "initially_safe_but_closed_atom_exposes_own_royal_submission_allowed": false,
+        "later_hourglass_or_main_action_can_repair_current_unsafe_submission": false,
+        "each_sequential_use_independently_passes_safety": true,
+        "definitely_unsafe_preflight_submits_or_consumes_uses": false,
+        "rejected_preflight_changes_board_revival_cleanse_or_ammunition": false,
+        "rejected_preflight_resets_or_extends_deadline": false,
+        "rejection_is_zero_benefit_refund": false,
+        "valid_submission_consumes_uses": 1,
+        "valid_nonterminal_submission_retains_normal_main_action": true,
+        "unknown_or_incomplete_branch_proves_safe_or_no_legal_response": false,
+        "hidden_identity_probe_permission_added": false,
+        "official_terminal_can_be_reversed": false,
+        "bomb_in_check_gate": "not_decided_by_this_confirmation",
+        "complete_checkmate_skill_search_clock_and_exact_begin_order": "not_decided_by_this_confirmation"
       },
       "reviewed_candidate": {
-        "commit": "1b98d245beac601737207f286815152c83450318",
+        "commit": "fbc5e1f89874239573cdd784338104d163821ae4",
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "当前待决策｜D01 零已现身勇士时的发动资格"
+        "heading": "当前待决策｜D01 沙漏受将与王安全预检"
       }
     }
   ],
@@ -458,6 +464,21 @@
       "body": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜D01 零已现身勇士时的发动资格"
+      },
+      "received_verified": null,
+      "adopted_verified": null
+    },
+    {
+      "id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜D01 沙漏受将与王安全预检"
       },
       "received_verified": null,
       "adopted_verified": null

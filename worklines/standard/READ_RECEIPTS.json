@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-16T19:37:39+08:00",
+  "recorded_at_local": "2026-10-16T19:48:07+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
@@ -377,57 +377,49 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
-    "at_local": "2026-10-16T19:29:50+08:00",
+    "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+    "at_local": "2026-10-16T19:44:08+08:00",
     "user_quote": "同意",
-    "presented_source_commit": "1b98d245beac601737207f286815152c83450318",
+    "presented_source_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
-    "zero_appeared_eligibility_approved": true,
+    "check_safety_preflight_approved": true,
     "new_local_standard_confirmation": false,
-    "check_safety_preflight_approved": false
+    "bomb_in_check_gate_approved": false
   },
   "current_task_reading": {
-    "source_commit": "1b98d245beac601737207f286815152c83450318",
-    "publication_parent_commit": "1b98d245beac601737207f286815152c83450318",
-    "actual_modules": "Current0.11 index/blob unchanged and checked; previously fully read applicable gate/handoff/source/L3 authorization/baseline/limitation modules reused in this continuous task.",
+    "source_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+    "publication_parent_commit": "fbc5e1f89874239573cdd784338104d163821ae4",
+    "actual_modules": "Current0.11 index/blob unchanged and checked; applicable previously fully read gate/handoff/source/L3 authorization/baseline/limitation controls reused in continuous task.",
     "files": [
       {
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "complete zero-appeared candidate and original8 ZA specs, latest working header"
-      },
-      {
-        "path": "worklines/standard/SOURCE_PRIORITY.json",
-        "read_scope": "complete"
+        "read_scope": "complete hourglass check-safety candidate and original CK-S01/02,10 CK specs"
       },
       {
         "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "complete12A.2-12A.8; unchanged12A.1 previously read and reused"
-      },
-      {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
-        "read_scope": "complete14.4"
+        "read_scope": "complete12A.1 and12A.4-8 reread; prior unchanged full12A.2/3 reused"
       },
       {
         "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
-        "read_scope": "complete mode basics, formal-turn five stages, action-tier orthogonality and§2.1-2.4"
+        "read_scope": "previously full formal phases/§2.1-2.4 unchanged and reused"
       },
       {
         "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "completeH05/H06,H09,H21 for explicit comparison, no exception transfer"
+        "read_scope": "previously fullH05/H06,H09,H21 unchanged comparison reused; no exception transferred"
       }
     ],
     "adopted_scope": [
-      "Direct shared zero-appeared eligibility confirmation",
-      "Current local shared body/reference updated; no claim of other receiver adoption"
+      "Direct explicit shared hourglass check-safety within reviewed branch",
+      "Current local shared body/source updated; no other receiver adoption claim"
     ],
     "not_adopted": [
-      "new check-safety preflight proposal",
-      "bomb in-check/exact source ordering/whole-mode pool adoption",
-      "main H15 candidate, runtime/scoring/NET"
+      "bomb in-check gate",
+      "independent terminal/full checkmate search-clock/exact source ordering or mode-pool adaptation",
+      "main H15 candidate/runtime/scoring/NET"
     ],
     "new_engine_tests": 0
   },
@@ -516,6 +508,17 @@
         "half_chaos"
       ],
       "source": "rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json"
+    },
+    {
+      "id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+      "confirmed_at_local": "2026-10-16T19:44:08+08:00",
+      "user_quote": "同意",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json"
     }
   ]
 }
