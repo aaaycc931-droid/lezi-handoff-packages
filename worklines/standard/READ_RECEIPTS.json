@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-16T21:39:28+08:00",
+  "recorded_at_local": "2026-10-16T21:49:12+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
@@ -432,57 +432,62 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
-    "at_local": "2026-10-16T21:33:47+08:00",
+    "confirmation_id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+    "at_local": "2026-10-16T21:42:40+08:00",
     "user_quote": "我同意",
-    "presented_source_commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+    "presented_source_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
     "new_local_standard_confirmation": false,
-    "new_horse_candidate_approved": false
+    "returned_pawn_half_approved": false
   },
   "current_task_reading": {
-    "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
-    "approval_context_commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
-    "publication_parent_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "source_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+    "publication_parent_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
     "actual_modules": "Currentv0.12 index/blob unchanged; previously complete applicable L3/source/handoff/limitation modules reused.",
     "files": [
       {
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "complete dance candidate/DW8 specs; complete prior confirmed ordinaryM06 scope including deferred new-horse clause"
-      },
-      {
-        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "complete H10 and H21邪火 subsection; previously read H15 unchanged"
+        "read_scope": "complete new-horse candidate/NH8 specs; ordinaryM08 confirmation paragraphs explicitly retaining special-return/history edges"
       },
       {
         "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "complete M05 and M06; M08 title-only lookup not registered as full read"
+        "read_scope": "full actual M08七 body, not merely the empty M08 label; prior complete M06 unchanged reused"
       },
       {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
-        "read_scope": "complete12.3 cavalry"
+        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+        "read_scope": "complete H05; complete H15 flying/landing subsection; prior H21邪火 unchanged reused"
+      },
+      {
+        "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+        "read_scope": "complete4.3 current-controller/secrecy and§7 temporary操控"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/BALANCE_AND_RULE_UPDATES_2026-09-28.md",
+        "read_scope": "complete§七尖斜"
       },
       {
         "path": "worklines/half_chaos/READ_RECEIPTS.json",
-        "read_scope": "complete latest_by_source.standard_shared_D01_deadline only"
+        "source_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
+        "read_scope": "complete latest_by_source.standard_shared_H10_M05_palace only"
       },
       {
         "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
-        "read_scope": "complete resolved_D01_deadline and current stage/next-action metadata, not full mutation coverage working body"
+        "source_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
+        "read_scope": "r22 revision/phase/new-confirmations/current shared-coordination and next metadata only; underlying D01 natural prefixes/specs not fully read or adopted"
       }
     ],
     "adopted_scope": [
-      "Direct shared legal H10/M05 dance palace override",
-      "Actual half fifthD01 deadline receipt only"
+      "Direct shared M06 generated-horse qualification",
+      "Limited qualified-original-horse normal-control flying movement source alignment, no new attack entitlement"
     ],
     "not_adopted": [
-      "new M06-generated-horse qualification",
-      "full half coverage audit or code/runtime",
-      "exact search/clock/source ordering and other pending rules"
+      "M08 return-half candidate",
+      "H05 direction/half or full river/flying/history/control interfaces",
+      "game/runtime/scoring/NET"
     ],
     "new_engine_tests": 0
   },
@@ -630,6 +635,17 @@
         "half_chaos"
       ],
       "source": "rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json"
+    },
+    {
+      "id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+      "confirmed_at_local": "2026-10-16T21:42:40+08:00",
+      "user_quote": "我同意",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json"
     }
   ],
   "main_1_52_adoption": {
@@ -855,6 +871,46 @@
         "pool/initialization/runtime changes"
       ],
       "main_receipt_of_new_standard_confirmation": "unknown"
+    },
+    "main_adoption_verified": null
+  },
+  "half_H10_M05_palace_receipt_observed": {
+    "commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
+    "path": "worklines/half_chaos/READ_RECEIPTS.json#latest_by_source.standard_shared_H10_M05_palace",
+    "complete_receipt": {
+      "source_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+      "actual_reading": [
+        {
+          "path": "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+          "scope": "full original confirmation JSON",
+          "git_blob_sha": "e24713bec82868e50c36087cb088cb61723a1db1"
+        },
+        {
+          "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+          "scope": "complete new H10/M05 palace insertion and unchanged surrounding source compared",
+          "git_blob_sha": "bc082f90b404d4e5c93d0e29fb0d9be4aa5d5c80"
+        },
+        {
+          "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+          "scope": "complete new M05 palace insertion; D01 exact unchanged",
+          "git_blob_sha": "22f2a474e682625baaee09de364ec23217cf23ff"
+        },
+        {
+          "path": "worklines/standard/CURRENT_STATE.json",
+          "scope": "current next_task metadata complete; full M06 candidate not read"
+        }
+      ],
+      "received": [
+        "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016"
+      ],
+      "adopted": [
+        "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016 only legal H10+M05 in half_chaos; no new long dance geometry or original qualification change"
+      ],
+      "not_adopted": [
+        "M06 generated horse candidate",
+        "pool/init/complete search/runtime/extra hidden-publicity changes"
+      ],
+      "main_receipt_of_new_confirmation": "unknown"
     },
     "main_adoption_verified": null
   }

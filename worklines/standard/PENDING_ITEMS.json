@@ -1,24 +1,24 @@
 {
   "items": [
     {
-      "id": "SHARED-M06-NEW-HORSE-ELIGIBILITY",
+      "id": "SHARED-M08-RETURNED-PAWN-HALF",
       "status": "pending_user_decision",
-      "scope": "all_modes_where_M06_legally_effective_truly_new_generated_horse_qualification_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M06对新生成马的骑兵资格",
+      "scope": "all_legal_M08_public_ground_pawn_normal_control_after_lawful_return_to_own_half_next_normal_action_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M08明兵卒回到己半场后的走法",
       "confirmed": false,
-      "not_approved_by_dance_confirmation": true,
+      "not_approved_by_M06_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "NH01",
-        "NH02",
-        "NH03",
-        "NH04",
-        "NH05",
-        "NH06",
-        "NH07",
-        "NH08"
+        "RP01",
+        "RP02",
+        "RP03",
+        "RP04",
+        "RP05",
+        "RP06",
+        "RP07",
+        "RP08"
       ],
       "conditional_unrun_case_ids": [
-        "NH-S01"
+        "RP-S01"
       ]
     },
     {
@@ -60,21 +60,21 @@
         "H15 flying and landing",
         "special assassination geometry and effective check"
       ],
-      "blocks_core_proposal_presentation": false
+      "blocks_core_proposal_presentation": false,
+      "returned_pawn_half_candidate": "SHARED-M08-RETURNED-PAWN-HALF"
     },
     {
       "id": "STD-M06-CROSSES",
       "status": "source_review_pending",
       "scope": "standard M06 conditional crossings",
       "details": [
-        "newly generated horse qualification: current shared candidate",
         "revival/H11/H06 lifecycle",
-        "H15 flying-horse short steps/attack prohibition",
         "H05 temporary control forward/half attribution",
         "special assassination/forced-action geometry"
       ],
       "blocks_core_proposal_presentation": false,
-      "new_horse_qualification_candidate": "SHARED-M06-NEW-HORSE-ELIGIBILITY"
+      "new_horse_qualification_confirmed": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+      "flying_source_aligned_subscope": "Already qualified original horse, normal control unchanged: current movement geometry retained, sky readers, no attacks/new action; unrun."
     },
     {
       "id": "STD-M04-CROSSES",
@@ -800,6 +800,34 @@
       "prior_proposal_source": {
         "commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H10与M05的流舞九宫边界"
+      }
+    },
+    {
+      "id": "SHARED-M06-NEW-HORSE-ELIGIBILITY",
+      "status": "confirmed_shared_generated_horse_scope_written_not_implemented_or_tested",
+      "scope": "all_modes_where_M06_legally_effective_truly_new_generated_horse_qualification_only",
+      "source": "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+      "confirmed": true,
+      "not_approved_by_dance_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "NH01",
+        "NH02",
+        "NH03",
+        "NH04",
+        "NH05",
+        "NH06",
+        "NH07",
+        "NH08"
+      ],
+      "conditional_unrun_case_ids": [
+        "NH-S01"
+      ],
+      "confirmation_id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+      "confirmed_at_local": "2026-10-16T21:42:40+08:00",
+      "user_quote": "我同意",
+      "prior_proposal_source": {
+        "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M06对新生成马的骑兵资格"
       }
     }
   ]

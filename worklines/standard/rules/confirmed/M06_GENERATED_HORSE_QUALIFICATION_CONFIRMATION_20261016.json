@@ -1,0 +1,59 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+  "confirmed_at_local": "2026-10-16T21:42:40+08:00",
+  "user_quote": "我同意",
+  "origin_workline": "standard",
+  "review_id": "SHARED-M06-NEW-HORSE-ELIGIBILITY",
+  "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_M06_generated_horse_question",
+  "reviewed_candidate": {
+    "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜M06对新生成马的骑兵资格"
+  },
+  "immediately_preceding_question": "是否同意作为三个模式中合法M06的共用规则？",
+  "presented_clauses": [
+    "骑兵资格只绑定本局开局原两枚真实马。",
+    "邪火后来真正生成的新马不自动骑兵，也不替补死去原马；普通合法马步保持。"
+  ],
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only modes where M06 legally effective, actual source-defined opening horse bodies and reveal/normal control rules retained. No pool/init permission.",
+  "policy": {
+    "mode_M06_legally_effective_required": true,
+    "cavalry_membership": "the two real horse bodies defined by this match opening source",
+    "genuinely_new_generated_horse_automatically_cavalry": false,
+    "dead_original_horse_replaced_by_new_generated_horse": false,
+    "new_horse_normal_horse_geometry_and_own_source_states_preserved": true,
+    "original_two_reveal_gates_and_ordinary_public_startup_preserved": true,
+    "normal_movement_reveal_or_consistent_internal_rename_creates_new_body": false,
+    "dark_original_horse_identity_or_mapping_disclosure_added": false,
+    "full_revival_shuffle_rewind_control_flight_identity_state_interfaces": "not_decided_by_this_confirmation"
+  },
+  "preserved": [
+    "All prior ordinary30/shared rules and ordinary original-two public startup.",
+    "M06 ordinary horse steps/leg and cavalry short-step geometry; no extra action created.",
+    "H21邪火 original sampling/placement/new-object semantics and dark-mode privacy."
+  ],
+  "not_confirmed": [
+    "M08 returned-pawn half candidate or other deferred mutation crosses",
+    "full revival/H11/H06/flying/control and identity-state restoration interfaces",
+    "mode pools/whole adaptation/full adjudication field/search-clock and source ordering",
+    "game code/runtime, scoring thaw or NET resume"
+  ],
+  "verification": {
+    "source_confirmation": "V2 explicit user statement and complete reviewed candidate",
+    "NH_S01_NH01_NH08": "unrun same-assistant conditional cases",
+    "game_code_changes": 0,
+    "engine_tests": 0
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  }
+}
