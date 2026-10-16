@@ -1,21 +1,27 @@
 {
   "items": [
     {
-      "id": "D01-HOURGLASS-ZERO-APPEARED-ELIGIBILITY",
+      "id": "D01-HOURGLASS-CHECK-SAFETY-PREFLIGHT",
       "status": "pending_user_decision",
-      "scope": "all_modes_where_D01_legally_available_zero_appeared_activation_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 零已现身勇士时的发动资格",
+      "scope": "all_modes_where_D01_legally_available_hourglass_check_safety_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 沙漏受将与王安全预检",
       "confirmed": false,
-      "not_approved_by_shared_two_policy_confirmation": true,
+      "not_approved_by_zero_appeared_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "ZA01",
-        "ZA02",
-        "ZA03",
-        "ZA04",
-        "ZA05",
-        "ZA06",
-        "ZA07",
-        "ZA08"
+        "CK01",
+        "CK02",
+        "CK03",
+        "CK04",
+        "CK05",
+        "CK06",
+        "CK07",
+        "CK08",
+        "CK09",
+        "CK10"
+      ],
+      "conditional_unrun_case_ids": [
+        "CK-S01",
+        "CK-S02"
       ]
     },
     {
@@ -43,15 +49,16 @@
       "status": "source_alignment_pending",
       "scope": "D01 source/interface edges",
       "details": [
-        "zero appeared candidate eligibility: current shared candidate",
-        "in-check skill preflight",
+        "hourglass check-safety preflight: current shared candidate",
+        "bomb in-check preflight remains separate",
         "exact begin/deadline and self-anchor event classification",
         "remaining public field/source/pressure interfaces"
       ],
       "blocks_core_proposal_presentation": false,
       "zero_return_resolved_ordinary_only": true,
       "same_turn_resolved_ordinary_only": true,
-      "shared_hourglass_core_scope_confirmed": true
+      "shared_hourglass_core_scope_confirmed": true,
+      "zero_appeared_eligibility_confirmed": true
     },
     {
       "id": "STD-M08-CROSSES",
@@ -619,6 +626,31 @@
       "prior_proposal_source": {
         "commit": "8b84409d9a136c839e8ecb4e01f6928bbbd511f9",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 两条沙漏规则的三模式共用范围"
+      }
+    },
+    {
+      "id": "D01-HOURGLASS-ZERO-APPEARED-ELIGIBILITY",
+      "status": "confirmed_shared_qualification_written_not_implemented_or_tested",
+      "scope": "all_modes_where_D01_legally_available_zero_appeared_activation_only",
+      "source": "rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+      "confirmed": true,
+      "not_approved_by_shared_two_policy_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "ZA01",
+        "ZA02",
+        "ZA03",
+        "ZA04",
+        "ZA05",
+        "ZA06",
+        "ZA07",
+        "ZA08"
+      ],
+      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
+      "confirmed_at_local": "2026-10-16T19:29:50+08:00",
+      "user_quote": "同意",
+      "prior_proposal_source": {
+        "commit": "1b98d245beac601737207f286815152c83450318",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 零已现身勇士时的发动资格"
       }
     }
   ]

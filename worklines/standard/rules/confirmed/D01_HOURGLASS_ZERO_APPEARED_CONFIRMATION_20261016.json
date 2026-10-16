@@ -1,0 +1,74 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
+  "confirmed_at_local": "2026-10-16T19:29:50+08:00",
+  "user_quote": "同意",
+  "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_shared_zero_appeared_eligibility_question",
+  "origin_workline": "standard",
+  "review_id": "D01-HOURGLASS-ZERO-APPEARED-ELIGIBILITY",
+  "reviewed_candidate": {
+    "commit": "1b98d245beac601737207f286815152c83450318",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜D01 零已现身勇士时的发动资格"
+  },
+  "immediately_preceding_question": "是否同意这项空候选发动资格？",
+  "presented_clauses": [
+    "D01合法可用且其他条件合法时，即使完全没有勇士现身，仍可完整花1次沙漏净化并给存活且已现身的无限龙装填。",
+    "未现身勇士不揭示、不召回、不复活；空候选与零成功回归分开，已现身后死亡不算未现身。"
+  ],
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only where D01 is legally available. Removes only a minimum-appeared-warrior gate; preserves other source activation, mode availability, identities/control/anchors/privacy and ordinary initialization.",
+  "policy": {
+    "empty_appeared_warrior_candidate_set_blocks_activation": false,
+    "other_source_activation_conditions_must_pass": true,
+    "remaining_uses_required": true,
+    "officially_terminated_game_can_activate": false,
+    "empty_candidate_set_successful_submission_consumes_uses": 1,
+    "return_candidate_set_remains_empty": true,
+    "hidden_true_identity_pool_used_to_fill_candidates": false,
+    "unappeared_warriors_revealed_returned_or_revived": false,
+    "cleanse_all_distortions_and_related_unsettled_time_collapse": true,
+    "reload_living_appeared_dragons_to_ammo": 1,
+    "unappeared_dragons_revealed_or_treated_as_appeared": false,
+    "dead_dragons_revived_or_reloaded": false,
+    "zero_benefit_refunds_use": false,
+    "appeared_history_survives_death": true,
+    "each_same_window_use_independently_validated": true,
+    "new_formal_turn_or_deadline_refresh": false,
+    "max_total_hourglass_uses": 5,
+    "in_check_and_other_safety_preflight": "not_decided_by_this_confirmation"
+  },
+  "preserved": [
+    "Confirmed two-policy shared hourglass core and strict six-step atom remain unchanged.",
+    "Ordinary five public warriors and fixed public anchors remain ordinary initialization only.",
+    "Appeared identity history persists after death; such dead warriors remain real candidates.",
+    "Unappeared identities and anchor mappings cannot be probed by legality/button/log feedback.",
+    "Dragon ammo cap1, whole-army bomb maximum1 per own formal turn, no other-skill repeat permission."
+  ],
+  "not_confirmed": [
+    "in-check or self-check safety/preflight and exact begin/deadline/source-order interfaces",
+    "D01 mode pool availability or complete adaptation of any mode",
+    "new hidden identity/anchor disclosure, target/control privileges or dark-mode full-public startup",
+    "complete repetition key/fieldmap/pressure algorithm or other hero pending candidate",
+    "game code/runtime/privacy acceptance, scoring thaw or NET resume"
+  ],
+  "predecessor_shared_confirmation": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+  "delta_classification": "One new shared qualification confirmation; zero new ordinary-index rows; ordinary29 preserved.",
+  "verification": {
+    "source_confirmation": "V2 direct user statement and complete immediately preceding proposal",
+    "conditional_reasoning": "V1 same-assistant cases",
+    "ZA01_ZA08": "unrun",
+    "new_game_code_changes": 0,
+    "new_engine_tests": 0
+  },
+  "handoff": {
+    "canonical_main_receipt_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_publication_commit": "Resolve from Git history; not prefilled as a future self commit."
+  }
+}
