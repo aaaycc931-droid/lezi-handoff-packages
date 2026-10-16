@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "M04_M05_M06_M07_confirmed_M08_prepared",
+  "status": "M04_M05_M06_M07_M08_confirmed_D01_prepared",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -23,13 +23,13 @@
   "source_preparation": "Sources are expanded at sources/standard; no user ZIP upload is needed. python3 prepare_sources.py checks current required paths and optionally restores historical source parts.",
   "source_root": "sources/standard",
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_adjudication_version": "1.49",
+  "current_adjudication_version": "1.50",
   "next_task": {
-    "id": "NEXT-STD-DESIGN-08",
-    "subject": "M08 尖斜普通地面兵卒继承",
-    "action": "用户决定M08普通地面兵卒主体继承候选；确认后继续D01时光之末。M08特殊交叉及D01均未自动批准。",
+    "id": "NEXT-STD-DESIGN-D01",
+    "subject": "D01 时光之末普通全明启动与主体继承",
+    "action": "用户决定D01普通开局已现身/初始弹药/固定公开锚点适配及原主体继承候选；细列边界另核。确认后处理D01剩余边界和普通线未决交叉，不自动实现或运行。",
     "pending_is_not_approved": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M08 尖斜普通地面兵卒继承"
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 时光之末普通全明启动与主体继承"
   },
   "external_delivery": {
     "prepared_here": true,
@@ -39,12 +39,23 @@
     "recipient_adoption_verified": true,
     "transport": "GitHub connector",
     "routine_user_package_relay_required": false,
-    "verification_scope": "This standard receiver actually read scoped sources; M04/M05/M06 body/startup and M07 ordinary pool exclusion explicitly confirmed. M08 pending. Main later receipt/adoption unknown."
+    "verification_scope": "This standard receiver adopted main1.50 confirmed repetition-segment policy from full scoped source. Main receipt at latest parent verifies M04-M07 scoped document adoption only; M08 receipt unknown and D01 pending."
   },
   "prior_main_receipt": {
     "received": true,
     "document_integrated": true,
-    "new_rule_approval_by_dispatch": false
+    "new_rule_approval_by_dispatch": false,
+    "latest_observed_at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "source_receipt": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+    "source_standard_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+    "confirmed_ids_received_and_document_adopted": [
+      "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+      "CONF-STD-M05-EXPEDITION-KEEP-20261016",
+      "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+      "CONF-STD-M07-POOL-EXCLUSION-20261016"
+    ],
+    "new_M08_receipt_verified": null,
+    "scope": "M04-M07 confirmed sections/register entries22-25 only; no runtime acceptance, no M08/D01 approval."
   },
   "prior_line_source_statuses": "Historical closed/not-received fields remain unchanged in original snapshots; current root takes precedence for dispatch and main document receipt.",
   "new_game_code_changes": 0,
@@ -63,7 +74,7 @@
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
   "limitation_audit_status": "partial",
-  "verification_level": "V2 explicit M07 approval and M08 current/original sources checked; V1 same-assistant conditional M08 reasoning; no independent review or engine execution.",
+  "verification_level": "V2 explicit M08 body approval and current/original D01 with later deltas read; V1 ordinary D01 startup and conditional cases; no independent review or engine execution.",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -86,10 +97,10 @@
     ]
   },
   "publication_scope": "PUBLICATION_SCOPE.json",
-  "updated_at_local": "2026-10-16T13:55:42+08:00",
-  "source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
-  "publication_parent_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
-  "phase": "M07_pool_exclusion_confirmation_written_M08_proposal_prepared",
+  "updated_at_local": "2026-10-16T15:39:16+08:00",
+  "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+  "publication_parent_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+  "phase": "M08_confirmation_written_D01_public_start_proposal_prepared",
   "new_rule_confirmations_this_round": 1,
   "retained_source_round_confirmations": 21,
   "M04_status": "confirmed_design_not_implemented_or_tested",
@@ -101,32 +112,66 @@
     "original_sources_and_prior_returns_unchanged": true,
     "concurrent_main_and_half_chaos_commits_preserved": [
       "26736f643754ae22731a7540874835ddf4e21409",
-      "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7"
-    ]
+      "66d4ed6abaad94d2a34c1cc979fe1cad98ce34e7",
+      "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+      "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736"
+    ],
+    "latest_reconciliation": {
+      "parent": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+      "ordinary_target_paths_changed": false,
+      "M08_pending_local_payload_preserved": true,
+      "additional_half_chaos_update": "H17/H18 stage metadata only; no ordinary/shared/collaboration source paths modified; full new working body not read or adopted"
+    }
   },
   "this_round_main_received_verified": null,
   "this_round_main_adopted_verified": null,
   "source_gaps": [
-    "M04/M05/M06 special crossings retained pending.",
-    "M08 normal ground-body proposal pending; temporary control/history/river/flying/special-action crossings remain separate.",
-    "M07 ordinary reentry requires explicit future adaptation and H16 branch review; no redesign approved.",
+    "M04/M05/M06/M08 special crossings retained pending.",
+    "D01 ordinary full-public startup/initial-ammo/fixed-anchor and body adoption await explicit decision.",
+    "D01 all-failed hourglass submission, in-check preflight, exact begin/deadline prefixes, occupation records and remaining public equality/field map and source ordering interfaces require alignment; repetition-segment policy itself confirmed1.50.",
     "No live game repo HEAD/PR audit, independent review or engine execution."
   ],
-  "current_confirmation_index_count": 25,
+  "current_confirmation_index_count": 26,
   "M04_confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
   "M05_status": "confirmed_design_not_implemented_or_tested",
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
   "latest_user_instruction": {
-    "quote": "同意",
-    "at_local": "2026-10-16T13:51:13+08:00",
-    "scope": "standard_mutation_pool_only"
+    "quote": "我同意",
+    "at_local": "2026-10-16T14:01:45+08:00",
+    "scope": "standard_normal_ground_pawn_body"
   },
-  "new_rule_confirmations_since_dispatch": 4,
+  "new_rule_confirmations_since_dispatch": 5,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
   "M06_status": "confirmed_design_not_implemented_or_tested",
   "M06_confirmation_id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
   "M07_status": "confirmed_ordinary_pool_exclusion_not_implemented_or_tested",
   "M07_pool_exclusion_confirmed": true,
   "M07_confirmation_id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
-  "M08_status": "proposal_pending_user_confirmation"
+  "M08_status": "confirmed_design_not_implemented_or_tested",
+  "M08_confirmation_id": "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
+  "D01_status": "proposal_pending_user_confirmation",
+  "D01_ordinary_startup_confirmed": false,
+  "current_adjudication_source": {
+    "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "path": "worklines/main/ADJUDICATION.json",
+    "record_version": "1.50",
+    "git_blob_sha": "e3b4842090b664dcfc8d3a2a4ba1ef0d7eccf130",
+    "read_scope": "complete newly confirmed repetition_history_segments and corresponding original project_specific_confirmation; remaining prior sections reused where unchanged, not a fresh full-document audit"
+  },
+  "approval_context_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+  "new_shared_confirmations_adopted_this_round": 1,
+  "shared_1_50_adoption": {
+    "confirmation_id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+    "source": {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "worklines/main/ADJUDICATION.json",
+      "record_version": "1.50",
+      "git_blob_sha": "e3b4842090b664dcfc8d3a2a4ba1ef0d7eccf130",
+      "read_scope": "complete newly confirmed repetition_history_segments and corresponding original project_specific_confirmation; remaining prior sections reused where unchanged, not a fresh full-document audit"
+    },
+    "applied_scope": "ordinary mode confirmed repetition-segment/nonrollback policy only",
+    "next_public_body_equivalence_candidate_approved": false,
+    "implementation": false
+  }
 }

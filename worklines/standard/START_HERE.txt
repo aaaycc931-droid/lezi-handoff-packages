@@ -1,17 +1,18 @@
 《乐子象棋》普通象棋工作线分发｜LEZI-DISPATCH-2026-10-15-r1
-任务：NEXT-STD-DESIGN-08｜下一项：M08 尖斜普通地面兵卒继承
+任务：NEXT-STD-DESIGN-D01｜下一项：D01 时光之末普通全明启动与主体继承
 
 用户指令：“现在开始进行分发工作”。本包交给对应对话并附执行指令后，继续本线限定设计；不把分发、继续、旧收束当作同意任何待定规则。主线留在原主对话，不在本线重做总收束。
 
 读取/执行顺序：
 1. 本文件 → CURRENT_STATE.json → SOURCE_PRIORITY.json → PROJECT_WORK_AGREEMENT.md。
 2. 先读../../START_COLLABORATION.md和../../collaboration/CURRENT.json，由当前索引定位通用正文，实际读INTEGRATED_START、TASK_ROUTES、GITHUB_HANDOFF_WORKFLOW、MANDATORY_PRECHECK及本任务相关完整细则。按实际版本给简短协作门禁回执，不借旧收据；collaboration/PROJECT_COLLABORATION_20261015.md保留v0.8历史项目摘录身份，按来源需要读取，不替代当前通用正文。
-3. SYNC_NOTICE.md、MODE_SYNC.json、rules/shared/02_CURRENT_HEROES.md相关完整条目、rules/confirmed/RETURNED_SHARED_CONFIRMATIONS_20261014.json及裁判记录1.49；查PENDING_ITEMS与PENDING_DECISION。共享正文和原确认控制语义，摘要不补规则。
+3. SYNC_NOTICE.md、MODE_SYNC.json、rules/shared/02_CURRENT_HEROES.md相关完整条目、rules/confirmed/RETURNED_SHARED_CONFIRMATIONS_20261014.json及裁判现行1.50（CURRENT_STATE.current_adjudication_source指向主线原正文，旧1.49文件保留历史身份）；查PENDING_ITEMS与PENDING_DECISION。共享正文和原确认控制语义，摘要不补规则。
 4. 运行python3 prepare_sources.py，完整源根为sources/standard/；本公开版本已展开源树，无须用户上传ZIP；脚本只核对路径并可还原少量大历史源归档，不运行引擎。解压后读取源根START_HERE和CURRENT_STATE以恢复原记录，再以本包根入口覆盖其中旧暂停/未回传字段；完整读取本包active_working_document、确认索引和相关原始专项。涉及原基线/旧代码时从SOURCE_MAP指向的完整源树定位，不只看摘要。work/以原返回正文为初始基线；2026-10-16接续增量已维护在该固定工作稿，原返回及sources/归档不改。
 5. NEXT_ACTIONS.json与RETURN_CONTRACT.json；开始下述任务，不停在报“已读取”或重做已完成设计。
 
-当前断点（2026-10-16 13:51）：M04/M05/M06主体及M07普通暂不入池分别获确认，当前索引25项。用户“同意”仅确认上一条M07池建议，不含M08或重设计。M07条目保留，原揭棋/半混乱机制不变，普通H16常态保持；未来普通重入池须具体适配并明确确认。现在读取work/工作稿“当前待决策｜M08 尖斜普通地面兵卒继承”，用具体情形交用户决定，确认后再继续D01。JX01—JX11未运行，特殊交叉另列。
-保护：保留来源轮21项、更早有效确认和M04/M05/M06/M07四项后续确认（当前索引25项）；H14和M07普通暂不入池、普通H03越河/移除铁甲等差分仅在普通作用域。H03同原子死亡名额不照搬半混乱。已确认主体不重做，M08/D01不自动批准。
+当前断点（2026-10-16 14:01）：M04/M05/M06/M08主体和M07普通暂不入池已分别确认，当前索引26项。用户“我同意”确认上一条M08主体（包含底线停留、不晋升/不自动消灭），特殊交叉仍待核；不包含D01。现在读取work/工作稿“当前待决策｜D01 时光之末普通全明启动与主体继承”，提出普通两方原五兵开局已现身、无限龙各1弹且首回合可投、固定公开锚点及原宿命主体候选。D01仍待决定，ET01—ET14全未运行，细列边界另核。
+保护：来源轮21项、更早有效确认及M04—M08五项后续确认保留（当前索引26项）；M07/H14普通暂不入池，原揭棋/半混乱机制不受普通差分影响；不重问已确认主体，不自动批准D01。评分冻结、NET暂停。
+共享更新：主线1.50的真实消灭重复换段/纯时间不回滚已读取并限定采用；下一公开本体等价候选仍待决定。主线已实际接收并文档采用M04—M07；M08本轮接收采用未知。
 
 原始资料和旧副本中的已收束、未回传及旧下一步均属于其生成时历史；当前主线已接收四线回传并在文档层归并。接手者仍须自己读取并给真实采用回执。各模式专属确认不向外扩张，新的共享冲突回主线；其余可独立工作继续。
 

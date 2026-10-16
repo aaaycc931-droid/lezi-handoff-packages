@@ -5,10 +5,10 @@
     "half_chaos_local": 3,
     "half_chaos_direct_shared": 2
   },
-  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21. On2026-10-16 M07 adds one ordinary pool-policy approval; current index25=source-round21+M04+M05+M06+M07. Historical source_round_counts remains21.",
+  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21. On2026-10-16 M07 adds one ordinary pool-policy approval; current index25=source-round21+M04+M05+M06+M07. Historical source_round_counts remains21. On2026-10-16 M08 adds one ordinary ground-pawn body adoption; current index26=source-round21+M04+M05+M06+M07+M08. Historical source_round_counts remains21. Main1.50 repetition-history confirmation is one adopted shared confirmation, not another local standard decision; current standard index remains26.",
   "main_confirmations_source": "lezi-adjudication-current-2026-10-14.json#project_specific_confirmations",
   "standard_confirmations": {
-    "count": 25,
+    "count": 26,
     "decisions": [
       {
         "number": 1,
@@ -364,6 +364,30 @@
           "ordinary chaos redesign/public faction rerolls/new covered generation",
           "game implementation/runtime/scoring thaw/NET resume"
         ]
+      },
+      {
+        "number": 26,
+        "id": "M08",
+        "confirmation_id": "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
+        "review_id": "STD-M08-JIAN-XIE-GROUND-KEEP",
+        "status": "confirmed_design_not_runtime_verified",
+        "scope": "standard_normal_ground_pawn_body",
+        "confirmed_at_local": "2026-10-16T14:01:45+08:00",
+        "user_quote": "我同意",
+        "review_context": "Immediately preceding assistant displayed M08 normal ground-pawn scenarios including bottom-rank immobility/no promotion/no auto-destruction, asking body approval with special crossings separate.",
+        "presented_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+        "summary": "普通地面兵卒尖斜主体继承：过河前含跨河步保持基础前一格，过河后前/左前/右前各一格且取消横向，不后退；移动/进攻共几何，底线停留不晋升/不自动消灭，目标/防御/己将安全保留。",
+        "full_source": {
+          "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "已确认｜M08 尖斜普通地面兵卒继承"
+        },
+        "authority": "Explicit current user body confirmation; no game implementation/runtime acceptance.",
+        "shared_mechanic_rule_delta": 0,
+        "not_confirmed": [
+          "D01 ordinary startup, pool adoption or other D01 adaptation",
+          "M08 special control/history/space/special-action crossings",
+          "implementation/runtime/scoring thaw/NET resume"
+        ]
       }
     ]
   },
@@ -571,15 +595,45 @@
       "source_heading": "8.20",
       "new_confirmation_from_this_transfer": false,
       "implementation": false
+    },
+    {
+      "confirmation_id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+      "status": "confirmed_shared_design_adopted_into_standard_documents",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": {
+        "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+        "path": "worklines/main/ADJUDICATION.json",
+        "record_version": "1.50",
+        "git_blob_sha": "e3b4842090b664dcfc8d3a2a4ba1ef0d7eccf130",
+        "read_scope": "complete newly confirmed repetition_history_segments and corresponding original project_specific_confirmation; remaining prior sections reused where unchanged, not a fresh full-document audit"
+      },
+      "source_heading": "unified_adjudication_core.repetition_history_segments and matching project_specific_confirmations record",
+      "confirmed_at_local": "2026-10-16T12:47:23+08:00",
+      "source_user_quote": "同意",
+      "source_summary": "Accepted actual capture/destruction starts new repetition segment; pure rewind/shuffle and restoration neither erase nor roll back current segment/history. First later eligible sample is1; no extra sample at destruction/restoration instant.",
+      "new_confirmation_from_this_transfer": false,
+      "new_local_standard_confirmation": false,
+      "implementation": false,
+      "not_approved": [
+        "complete equality fieldmap/hash/body identity/public optional progress",
+        "check/chase/response repetition eligibility exclusions",
+        "special pressure attribution and arbitrary bilateral-round pairing",
+        "all-source event ordering/initial opening repetition segment implementation",
+        "engine implementation or runtime acceptance"
+      ]
     }
   ],
   "UI_approval_source": "ui/current_metadata/APPROVAL_REGISTER.json",
   "new_rules_approved_by_this_merge": 0,
   "latest_standard_update": {
-    "at_local": "2026-10-16T13:55:42+08:00",
+    "at_local": "2026-10-16T15:35:11+08:00",
     "new_confirmation_count": 1,
-    "confirmation_id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
-    "scope": "standard_mutation_pool_only",
-    "source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6"
+    "confirmation_id": "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
+    "scope": "standard_normal_ground_pawn_body",
+    "source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687"
   }
 }

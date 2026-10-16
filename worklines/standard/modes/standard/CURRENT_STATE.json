@@ -1,5 +1,5 @@
 {
-  "status": "M04_M05_M06_M07_confirmed_M08_pending",
+  "status": "M04_M05_M06_M07_M08_confirmed_D01_pending",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "用户决定M08普通地面兵卒主体继承候选；确认后继续D01时光之末。M08特殊交叉及D01均未自动批准。",
+  "next_action": "用户决定D01普通开局已现身/初始弹药/固定公开锚点适配及原主体继承候选；细列边界另核。确认后处理D01剩余边界和普通线未决交叉，不自动实现或运行。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,14 +29,29 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
-    "user_quote": "同意",
-    "at_local": "2026-10-16T13:51:13+08:00",
-    "scope": "standard_mutation_pool_only"
+    "id": "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
+    "user_quote": "我同意",
+    "at_local": "2026-10-16T14:01:45+08:00",
+    "scope": "standard_normal_ground_pawn_body"
   },
-  "main_document_adopted_scope": "Prior closeout only; M04/M05/M06/M07 later confirmations main adoption unknown.",
+  "main_document_adopted_scope": "Prior closeout plus M04-M07 scoped design bodies at main source dd467a1ccce63c9ce8136422d3b0fa06038b2654; M08 receipt/adoption still unknown.",
   "latest_confirmation_main_adopted": null,
-  "current_confirmation_index_count": 25,
+  "current_confirmation_index_count": 26,
   "M07_pool_exclusion_confirmed": true,
-  "M08_approved": false
+  "M08_approved": true,
+  "D01_approved": false,
+  "main_received_confirmations": [
+    "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+    "CONF-STD-M05-EXPEDITION-KEEP-20261016",
+    "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+    "CONF-STD-M07-POOL-EXCLUSION-20261016"
+  ],
+  "adjudication_version": "1.50",
+  "adjudication_source": {
+    "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "path": "worklines/main/ADJUDICATION.json",
+    "record_version": "1.50",
+    "git_blob_sha": "e3b4842090b664dcfc8d3a2a4ba1ef0d7eccf130",
+    "read_scope": "complete newly confirmed repetition_history_segments and corresponding original project_specific_confirmation; remaining prior sections reused where unchanged, not a fresh full-document audit"
+  }
 }

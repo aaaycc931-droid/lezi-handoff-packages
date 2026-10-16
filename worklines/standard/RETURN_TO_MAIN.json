@@ -2,156 +2,135 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T13:55:42+08:00",
-  "source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
-  "base_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
-  "phase": "M07_pool_exclusion_confirmed_M08_body_prepared",
+  "prepared_at_local": "2026-10-16T15:39:16+08:00",
+  "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+  "base_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+  "phase": "M08_confirmed_D01_public_start_and_body_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定M08普通地面兵卒主体继承候选；确认后继续D01时光之末。M08特殊交叉及D01均未自动批准。",
+  "current_breakpoint": "用户决定D01普通开局已现身/初始弹药/固定公开锚点适配及原主体继承候选；细列边界另核。确认后处理D01剩余边界和普通线未决交叉，不自动实现或运行。",
   "confirmed_delta": [
     {
-      "number": 25,
-      "id": "M07",
-      "confirmation_id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
-      "review_id": "STD-M07-POOL-EXCLUDE-PENDING-ADAPTATION",
+      "number": 26,
+      "id": "M08",
+      "confirmation_id": "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
+      "review_id": "STD-M08-JIAN-XIE-GROUND-KEEP",
       "status": "confirmed_design_not_runtime_verified",
-      "scope": "standard_mutation_pool_only",
-      "confirmed_at_local": "2026-10-16T13:51:13+08:00",
-      "user_quote": "同意",
-      "review_context": "Immediately preceding assistant explicitly asked whether M07 should temporarily stay outside ordinary mutation pool, with full-public and H16 brawl consequences shown.",
-      "presented_source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
-      "summary": "M07暂不进入普通畸变池，保留设计条目；完成具体普通适配并再次明确确认后才恢复入池。原揭棋/半混乱机制和普通H16常态保持。",
+      "scope": "standard_normal_ground_pawn_body",
+      "confirmed_at_local": "2026-10-16T14:01:45+08:00",
+      "user_quote": "我同意",
+      "review_context": "Immediately preceding assistant displayed M08 normal ground-pawn scenarios including bottom-rank immobility/no promotion/no auto-destruction, asking body approval with special crossings separate.",
+      "presented_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+      "summary": "普通地面兵卒尖斜主体继承：过河前含跨河步保持基础前一格，过河后前/左前/右前各一格且取消横向，不后退；移动/进攻共几何，底线停留不晋升/不自动消灭，目标/防御/己将安全保留。",
       "full_source": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜M07 混乱普通暂不入池"
+        "heading": "已确认｜M08 尖斜普通地面兵卒继承"
       },
-      "authority": "Explicit current user confirmation; design documents only.",
-      "ordinary_pool_rule_delta": "modification: temporarily exclude M07",
+      "authority": "Explicit current user body confirmation; no game implementation/runtime acceptance.",
       "shared_mechanic_rule_delta": 0,
       "not_confirmed": [
-        "M08 or D01",
-        "ordinary chaos redesign/public faction rerolls/new covered generation",
-        "game implementation/runtime/scoring thaw/NET resume"
+        "D01 ordinary startup, pool adoption or other D01 adaptation",
+        "M08 special control/history/space/special-action crossings",
+        "implementation/runtime/scoring thaw/NET resume"
       ]
     }
   ],
   "new_user_rule_confirmations": 1,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
-    "current_index_count": 25,
-    "previous24_records_unchanged": true,
+    "current_index_count": 26,
+    "previous25_records_unchanged": true,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
     {
-      "id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
-      "scope": "standard_ground_rook_body_only",
-      "presented_source_commit": "f95d50e4e50b83042a8b7ae52a01a2d12deba2b3",
+      "id": "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
+      "scope": "standard_normal_ground_pawn_body",
+      "presented_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
       "body": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜M04 战车普通地面车继承"
-      }
-    },
-    {
-      "id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
-      "scope": "standard_public_ground_general_body_only",
-      "presented_source_commit": "fae3095bacd267e57ad82a7c6abe828b153c9069",
-      "body": {
-        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜M05 亲征普通模式原机制继承"
-      }
-    },
-    {
-      "id": "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
-      "scope": "standard_original_two_public_ground_horses_body_and_initial_startup",
-      "presented_source_commit": "e340f9e296dc2efe24caefbb93d412706d7665a6",
-      "body": {
-        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜M06 骑兵普通开局两明马适配"
-      }
-    },
-    {
-      "id": "CONF-STD-M07-POOL-EXCLUSION-20261016",
-      "scope": "standard_mutation_pool_only",
-      "presented_source_commit": "2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
-      "body": {
-        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜M07 混乱普通暂不入池"
+        "heading": "已确认｜M08 尖斜普通地面兵卒继承"
       }
     }
   ],
   "pending_decision": {
-    "id": "STD-M08-JIAN-XIE-GROUND-KEEP",
+    "id": "STD-D01-PUBLIC-START-AND-ANCHORS",
     "status": "proposal_pending_user_confirmation",
-    "M07_approval_does_not_include_this": true
+    "ordinary_startup_confirmed": false,
+    "M08_approval_does_not_include_this": true
   },
   "changes": [
-    "Record explicit ordinary M07 pool exclusion, retain original/half-chaos rules and ordinary H16 charge; future reentry needs confirmed adaptation.",
-    "Prepare pending M08 normal ground-pawn body with concrete coordinate examples and JX01-JX11 unrun specs.",
-    "Update fixed current pointers, local receipt and pending main receipt references for all four later confirmations.",
-    "Align retained M06 pending-ledger scope with already-confirmed body and startup; no new rule confirmation."
+    "Record explicit M08 normal ground-pawn body and preserve11 original JX specs as unrun.",
+    "Restore complete D01 current/original mechanics and later deltas; prepare pending ordinary all-public appeared/ammo/fixed-anchor adaptation with14 unrun ET specs.",
+    "Preserve M04-M08 pending main receipt scope and separate D01 residual interfaces; current fixed pointers updated.",
+    "Adopt source-confirmed shared1.50 repetition segmentation, replace stale pending pointer, and record observed main M04-M07 receipt without fabricating new M08 receipt."
   ],
   "changed_paths": [
+    "worklines/standard/RETURN_TO_MAIN.json",
     "worklines/standard/START_HERE.txt",
-    "worklines/standard/CURRENT_STATE.json",
-    "worklines/standard/NEXT_ACTIONS.json",
     "worklines/standard/PENDING_ITEMS.json",
+    "worklines/standard/NEXT_ACTIONS.json",
+    "worklines/standard/CURRENT_STATE.json",
+    "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/CONFIRMATION_REGISTER.json",
+    "worklines/standard/PUBLISHED_FILES.json",
     "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
     "worklines/standard/modes/standard/CURRENT_STATE.json",
-    "worklines/standard/READ_RECEIPTS.json",
-    "worklines/standard/RETURN_TO_MAIN.json",
-    "worklines/standard/PUBLISHED_FILES.json"
+    "worklines/standard/PENDING_DECISION.json"
   ],
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 4735,
-      "sha256": "e388ce1edc6f9e73cd62dcfd030322d938f611852b68d386a2e36dfc8993e247"
-    },
-    {
-      "path": "CURRENT_STATE.json",
-      "size": 6354,
-      "sha256": "d3abb5740e2638c77c5f38083a591548cca8d3ae1d2a35d4b2026ee8793cd559"
-    },
-    {
-      "path": "NEXT_ACTIONS.json",
-      "size": 1154,
-      "sha256": "fb08a5c25edc987168fcb69e6a9592d09f0f607c2ad5f2f68efbca20d2e44f77"
+      "size": 5080,
+      "sha256": "744c3e18a54d47041bc217594a423dae17893beda202fcdee3ee17264ab4dac2"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 14911,
-      "sha256": "b3b6ecba29c94816782a2bd9afbf988adfc00dba93b81fc8e3968a219003ffec"
+      "size": 19390,
+      "sha256": "88602b638401bd8dfb292d0e8addd57d7a412f391abb8059b0d5de4d5d4a1760"
     },
     {
-      "path": "CONFIRMATION_REGISTER.json",
-      "size": 30052,
-      "sha256": "ba7376132a8bddfa5d7148cb6bdf2e38aac3fc7a420e7921de39867165c2ab4a"
+      "path": "NEXT_ACTIONS.json",
+      "size": 1387,
+      "sha256": "6bad0359470a227771d73478a688a0fb99986ca0af5bd8254c2b187b3a201334"
     },
     {
-      "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 136979,
-      "sha256": "4c2e4c446042146ea02b809adaa5f65f2da3516f38ef977b25bb64beabbf6f1d"
-    },
-    {
-      "path": "modes/standard/CURRENT_STATE.json",
-      "size": 1591,
-      "sha256": "44a2e941bd677a0a6a392e6f7a4a2b99effd54f414c1b9d8403c4bb02143da72"
+      "path": "CURRENT_STATE.json",
+      "size": 9338,
+      "sha256": "5445962da104889b940d0a06939ac2f74925541d4f203b807bdef261b2321660"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 17796,
-      "sha256": "0ff485d209a0f5b4ccb8b488aeb0b40b4e492004d918ae534acc718322aeaa6e"
+      "size": 23270,
+      "sha256": "e01f54e4831f612e290c43e8293effe6265a8a5acd5bff337656e66d02f34c89"
+    },
+    {
+      "path": "CONFIRMATION_REGISTER.json",
+      "size": 33680,
+      "sha256": "3e8125bba419b55c862b9e364dee15dc66d947b2e75daf5d7ed8a09eb3f3b42b"
+    },
+    {
+      "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+      "size": 149238,
+      "sha256": "f3b0ae8ada7b130ef5fe12caa9d12f22522353cc683ffdedcb432fcdc6be8938"
+    },
+    {
+      "path": "modes/standard/CURRENT_STATE.json",
+      "size": 2483,
+      "sha256": "f5fc0cc822806b914cbccc583eb8297f99335169339e2ae0a8e28b43356fe413"
+    },
+    {
+      "path": "PENDING_DECISION.json",
+      "size": 1271,
+      "sha256": "e49149561d40f5bbc33fc3a10d1d114b93cac0dcbca0f59034a904faed68a9cc"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
-  "manifest_note": "Includes return and payload, excludes self; resolve result commit from Git history.",
+  "manifest_note": "Includes return and payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
     "approval_context_source_checked": true,
-    "M07_original_8_unrun_specs_preserved": true,
-    "previous24_confirmation_records_unchanged": true,
+    "M08_original_11_unrun_specs_preserved": true,
+    "previous25_confirmation_records_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "updated_verify_dispatch": {
@@ -159,7 +138,9 @@
       "files": 290,
       "game_engine_tests": 0,
       "scope": "published_project_file_integrity"
-    }
+    },
+    "main1_50_full_scoped_confirmation_read": true,
+    "no_ordinary_concurrent_target_changes": true
   },
   "unrun": [
     "WC01-WC11",
@@ -167,7 +148,9 @@
     "CA01-CA11",
     "CH01-CH08",
     "JX01-JX11",
-    "full legal-prefix/engine/mode/privacy/NET validation"
+    "ET01-ET14",
+    "full legal-prefix/engine/mode/privacy/NET validation",
+    "RH01-RH06 inherited main1.50 abstract specs"
   ],
   "shared_coordination": [
     {
@@ -201,9 +184,26 @@
       "id": "STD-M08-CROSSES",
       "status": "source_review_pending",
       "detail": "Temporary-control direction/half, special return across river, history, flying/river and special-action geometry; no new cross-policy adopted."
+    },
+    {
+      "id": "STD-D01-EDGES",
+      "status": "source_alignment_pending",
+      "detail": "All-failed hourglass submission/use count, in-check preflight, begin/deadline prefixes, occupation classification and shared adjudication interfaces; no new policies adopted."
+    },
+    {
+      "id": "HC-MAIN-H16-ACTION-TIER",
+      "owner": "main",
+      "status": "source_implementation_alignment_pending",
+      "kind": "not_new_rule_confirmation",
+      "scope": "M01/M04 special-path action tier versus H16 tier1 gate and H05 eligible history. Read BC02 conditional comparison: two actual enemy deaths yield5 resources, but resource sufficiency does not establish a charge window. Old code/default W0=0 is not new design approval.",
+      "source": {
+        "commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+        "path": "worklines/half_chaos/WORKING.md",
+        "read_scope": "8.30 resource contract, BC02 and concluding source-alignment excerpts"
+      }
     }
   ],
-  "implementation_status": "confirmed_pool_policy_and_pending_body_proposal_documents_only",
+  "implementation_status": "confirmed_body_and_pending_D01_adaptation_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -216,82 +216,90 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "M07 explicit ordinary pool-policy approval plus M08 ground-pawn source review.",
+    "audit_trigger": "M08 explicit approval plus D01 ordinary full-public initialization/anchor and complete-source review.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User explicitly approved temporary ordinary M07 exclusion, retention and future confirmed reentry.",
-      "Current and original M08 sources keep pre-river base rules and replace post-river horizontal moves with forward diagonals.",
-      "Bottom rank leaves all three forward targets out of bounds; source expressly has no promotion or auto-destruction."
+      "User accepted M08 ground-pawn body with special crossings separate.",
+      "Ordinary opening has32 public pieces; D01 source appeared identities gate hourglass/dragon action.",
+      "D01 detailed source replaces both ordinary time skills; fixed5 hourglasses and one-ammo dragon cap.",
+      "Concurrent main1.50 explicitly confirms repetition-history policy for all three modes.",
+      "Actual main receipt confirms M04-M07 scoped document adoption; M08 is not yet returned."
     ],
     "user_statements": [
       {
-        "quote": "同意",
-        "at_local": "2026-10-16T13:51:13+08:00",
-        "scope": "standard_mutation_pool_only"
+        "quote": "我同意",
+        "at_local": "2026-10-16T14:01:45+08:00",
+        "scope": "standard_normal_ground_pawn_body"
       }
     ],
     "claim_register": [
       {
-        "claim": "M07 pool exclusion confirmed",
+        "claim": "M08 body confirmed",
         "type": "user_statement",
-        "source": "Current message and prior explicit question at 2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6",
+        "source": "Current message and prior explicit M08 question at ee020aa5b368c9fb06b86b9ed377c665c7a09687",
         "verification": "V2"
       },
       {
-        "claim": "M08 source mechanics",
+        "claim": "D01 source mechanics and later corrections",
         "type": "document_fact",
-        "source": "Current M08, original September28 section七, matrix M08 and basic rules",
+        "source": "Current full D01, original12A and14.3/14.4",
         "verification": "V2"
       },
       {
-        "claim": "M08 normal coordinate cases",
-        "type": "ai_inference",
-        "source": "Conditional geometry examples",
-        "verification": "V1 unrun same-assistant reasoning"
+        "claim": "Ordinary public-start/initial ammo/fixed visible anchor mapping",
+        "type": "hypothesis",
+        "source": "Pending ordinary-specific candidate",
+        "verification": "V1 same-assistant mode adaptation, unapproved"
       },
       {
-        "claim": "Ordinary M08 body adoption",
-        "type": "hypothesis",
-        "source": "Pending user-facing proposal",
-        "verification": "V0 policy candidate"
+        "claim": "D01 conditional cases",
+        "type": "ai_inference",
+        "source": "Source-based coordinate/order scenarios",
+        "verification": "V1 unrun"
+      },
+      {
+        "claim": "Main1.50 scoped adoption and M04-M07 receipt",
+        "type": "document_fact",
+        "source": "dd467a1ccce63c9ce8136422d3b0fa06038b2654 main ADJUDICATION/READ_RECEIPTS scoped complete records",
+        "verification": "V2 scoped original source checked"
       }
     ],
     "ai_interpretations": [
-      "Current approval addresses ordinary M07 pool policy only.",
-      "M08 normal ground-pawn body can be proposed unchanged while distinct history/control/space interfaces remain pending."
+      "M08 agreement does not approve D01.",
+      "Ordinary full-public initialization advances resource readiness relative to progressive hidden revelation, so explicit mode adoption is required."
     ],
     "assumptions": [
-      "Ordinary ground-pawn normal actions with no unlisted target/safety obstacle.",
-      "Coordinate cases use red bottom1 and black bottom10; not runtime reachable-prefix fixtures."
+      "Only specified hero pair and one D01 mutation active; no invented third-hero crossings.",
+      "Hourglass examples presuppose activation itself is legal; empty/all-failed activation remains source-alignment work."
     ],
     "unknowns": [
-      "User decision on ordinary M08 body.",
-      "Temporary control, special displacement back across river, history, flying/river and special-action full crossings.",
-      "Live engine implementation and full legal prefixes."
+      "User decision on D01 ordinary adaptation.",
+      "All-failed activation, in-check preflight, exact begin/deadline prefixes and remaining public equality/source-order/pressure interfaces after confirmed1.50 history adoption.",
+      "Full reachable prefixes and runtime balance."
     ],
     "competing_explanations": [
-      "Adding diagonals while retaining sideways moves changes current M08 and is not proposed.",
-      "Promotion or auto-destruction at bottom would change explicit source and is not proposed."
+      "Waiting for a new reveal event in all-public mode may strand original resources; not silently adopted.",
+      "Delay ammo, add cooldown or change resource counts would add new balance rules; not proposed."
     ],
     "falsification_conditions": [
-      "A higher-priority scoped source changes ordinary M08 geometry.",
-      "User rejects or changes specific pending M08 body."
+      "Higher-priority source already confirms an incompatible ordinary D01 initialization.",
+      "User declines or changes the pending ordinary mapping."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write approved M07 ordinary pool policy and prepare pending M08 design; scoped documents only.",
+    "action_boundary": "Write approved M08 body and prepare pending D01 ordinary startup/body candidate; scoped documents only.",
     "failure_conditions": [
-      "Interpret M07 approval as M08/D01 or unknown redesign approval.",
-      "Remove M07 from original or half-chaos pools.",
-      "Retain post-river sideways moves or invent bottom-rank promotion.",
-      "Invent special-control or return-across-river policy from simple ordinary progression.",
-      "Claim file checks as game execution or receiver adoption."
+      "Record D01 approved from M08 agreement.",
+      "Leak dark-mode identity/anchors by spreading ordinary initialization.",
+      "Resurrect dead dragons or turn hourglass into full rewind.",
+      "Claim bomb kills instantly or pollutionA-toB resets deadline.",
+      "Treat source/file checks as runtime or balance validation."
     ],
-    "residual_risk": "Same-assistant conditional source reasoning is not independent review or full interaction/runtime validation.",
-    "next_validation_action": "User decides M08 normal body; only then continue D01 design, retaining unresolved crossings.",
+    "residual_risk": "Complete source recovery and conditional same-assistant reasoning do not validate every legal prefix or implementation.",
+    "next_validation_action": "User decides D01 ordinary startup/body candidate; retain separately listed source edges and prior mode crossings.",
     "action_resilience": {
-      "maximum_exposure": "Only ten scoped line documents; no game or external-message mutation.",
+      "maximum_exposure": "Eleven scoped ordinary-line documents; no game code or external messages.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected scoped files from 2cd1c8715bf3315c37e8611d74b5f46b1f8d01e6 via normal commit preserving concurrent work.",
+      "recovery": "Restore selected ordinary-line files from dd467a1ccce63c9ce8136422d3b0fa06038b2654 by normal commit preserving concurrent work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },
@@ -301,5 +309,52 @@
     "recipient_reading_verified": null,
     "recipient_adoption_verified": null,
     "automatic_message_sent": false
+  },
+  "approval_context_source_commit": "ee020aa5b368c9fb06b86b9ed377c665c7a09687",
+  "main_prior_adoption_observed": {
+    "at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+    "source": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+    "confirmed_ids": [
+      "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
+      "CONF-STD-M05-EXPEDITION-KEEP-20261016",
+      "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
+      "CONF-STD-M07-POOL-EXCLUSION-20261016"
+    ],
+    "scope": "scoped design documents, not runtime"
+  },
+  "shared_adopted_delta": {
+    "confirmation_id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+    "source": {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "worklines/main/ADJUDICATION.json",
+      "record_version": "1.50",
+      "git_blob_sha": "e3b4842090b664dcfc8d3a2a4ba1ef0d7eccf130",
+      "read_scope": "complete newly confirmed repetition_history_segments and corresponding original project_specific_confirmation; remaining prior sections reused where unchanged, not a fresh full-document audit"
+    },
+    "new_local_standard_confirmation": false,
+    "new_shared_adoption_count": 1,
+    "policy": {
+      "accepted_actual_capture_or_skill_destruction_starts_new_repetition_segment": true,
+      "old_segment_occurrences_excluded_from_future_current_segment_count": true,
+      "old_audit_events_deleted": false,
+      "pure_rewind_or_shuffle_clears_current_segment": false,
+      "pure_rewind_restores_segment_or_counts_from_board_snapshot": false,
+      "later_restoration_undoes_accepted_destruction_segment_restart": false,
+      "restoration_itself_restarts_segment": false,
+      "rejected_or_blocked_attack_restarts_segment": false,
+      "first_subsequent_eligible_sample_of_a_key_in_new_segment": 1,
+      "no_extra_sample_at_destruction_or_restoration_instant": true
+    },
+    "next_candidate_still_pending": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016"
+  },
+  "remote_reconciliation": {
+    "parent": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
+    "preserved_commits": [
+      "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+      "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736"
+    ],
+    "ordinary_target_paths_changed": false,
+    "additional_half_chaos_scope": "H17/H18 stage; only changed-path/commit metadata read, no new ordinary/shared rule adopted"
   }
 }
