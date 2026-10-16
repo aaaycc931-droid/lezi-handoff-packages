@@ -2,26 +2,26 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-16T21:49:12+08:00",
-  "source_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
-  "base_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
-  "approval_context_source_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
-  "phase": "M06_generated_horse_confirmed_M08_return_half_prepared",
+  "prepared_at_local": "2026-10-16T22:02:51+08:00",
+  "source_commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+  "base_commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+  "approval_context_source_commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+  "phase": "M08_return_half_confirmed_H05_reference_aligned_H15_cost_prepared",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "用户决定合法M08已明地面正常控制分支，经合法闭合来源回到己半场后，下一正常行动是否按当前起点恢复基础前一步、无永久曾过河斜步；建议如此，尚未批准。",
+  "current_breakpoint": "用户决定合法H15成功启动是否不占正常主行动；建议不占步、照耗唯一启动机会、不追补进度，仅成功成本，原窗口/受将/空池失败等不扩围。当前未批准。",
   "confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
-      "kind": "new_direct_shared_M06_generated_horse_confirmation",
+      "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+      "kind": "new_direct_shared_M08_return_half_confirmation",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
-      "source": "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+      "source": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
       "new_local_standard_confirmation": false,
-      "confirmed_at_local": "2026-10-16T21:42:40+08:00",
+      "confirmed_at_local": "2026-10-16T21:55:03+08:00",
       "user_quote": "我同意"
     }
   ],
@@ -31,7 +31,7 @@
     "current_index_count": 30,
     "all30_ordinary_records_unchanged": true,
     "existing_shared_records_unchanged": true,
-    "shared_confirmations_originated_here_total": 7,
+    "shared_confirmations_originated_here_total": 8,
     "earlier_valid_decisions_retained": true
   },
   "pending_main_receipt_scope": [
@@ -82,17 +82,16 @@
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
   "pending_decision": {
-    "id": "SHARED-M08-RETURNED-PAWN-HALF",
+    "id": "SHARED-H15-TRAINING-START-ACTION-COST",
     "status": "proposal_pending_user_confirmation",
-    "scope": "shared_M08_normal_control_public_ground_after_legal_return_to_own_half_only",
-    "M06_confirmation_does_not_approve_M08_return_half": true
+    "scope": "shared_legal_H15_successful_start_main_action_cost_only",
+    "M08_confirmation_does_not_approve_H15_cost": true
   },
   "changes": [
-    "Record shared M06 original-two/no-generated-replacement confirmation; ordinary30 unchanged.",
-    "Current M06 includes exact source reference; prior original records/archives unchanged.",
-    "Qualified original-horse normal-control H15 flight movement source-aligned only, no attack/extra action.",
-    "Prepare M08 returned-half next-normal-action candidate with8 unrun specs; no source return permission or hidden readers added.",
-    "Preserve concurrent half-chaos r22; recognize actual H10/M05 palace adoption, main unknown; no full natural-prefix/runtime claim."
+    "Record scoped shared M08 returned-half geometry; ordinary30 unchanged.",
+    "Current fullM08七 includes exact source; prior originals/archive bytes unchanged.",
+    "Align H05 public-ground geometric reference from full original opponent-side source; no new approval or export of ordinary-specific return/failure rules.",
+    "Prepare H15 successful training-start main-action cost only;8 unrun specs, failed/empty/window/check interfaces separate, first tick not reasked."
   ],
   "changed_paths": [
     "worklines/standard/START_HERE.txt",
@@ -107,97 +106,96 @@
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
     "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-    "worklines/standard/modes/standard/CURRENT_RULES.md",
-    "worklines/standard/rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+    "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+    "worklines/standard/rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
     "worklines/standard/PUBLISHED_FILES.json"
   ],
   "file_identities": [
     {
       "path": "START_HERE.txt",
-      "size": 5707,
-      "sha256": "dddcb2d98e39c81e583da92d721bf6476d6735f9b2b136e3b4d6d4033b70c20b"
+      "size": 5426,
+      "sha256": "12d6f21a5bafb28faf03fe158f38f3f4fe0673dbf5d91a9b8fba7cde9628517d"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 17544,
-      "sha256": "e38561e7e7c3875d2f37d07c64b345f58991647b84fb646b538c5de6c24f59bb"
+      "size": 17841,
+      "sha256": "b4e06b5a631c087e290458e1f889efffe2746c6b5c5b56e50e34da305adcdae2"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 1479,
-      "sha256": "0c63d4ae5cea78723666f05447001d45dc205dd818d61b1ade896f0091096e7b"
+      "size": 1564,
+      "sha256": "25222e5d0084a88a3737db356d2861a9732ab2e3ebbba90eec30345e30b4dc30"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 37491,
-      "sha256": "8fc036c1d5121cc9ae3c112c1347206814c9ed719755957abe343c7ae59e9a15"
+      "size": 38864,
+      "sha256": "25466f099a949f166d7d26c2728c81032c79976b8594a4231a6a4b3a440c9a34"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 2581,
-      "sha256": "2273b1a248c3cd272c766daad7216bcf0c5885e8ae47bd9501bfab166b919bfc"
+      "size": 2574,
+      "sha256": "82015e3e06c76571993dce2f585490a2cf76be3fd85012bd92b1a772c12a5d1f"
     },
     {
       "path": "SOURCE_PRIORITY.json",
-      "size": 4267,
-      "sha256": "7ffe8edf851f53d6b0c5131f36ba6ddb1b19b3b4175413e74d1e514228a0b6f9"
+      "size": 5157,
+      "sha256": "9936a93779a43df14f3e0a0248da5e14747e8d0641a9673b3cf43cb4e0915b0a"
     },
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 55593,
-      "sha256": "2e7931d8647e9a006925366372084b0ca21c69816265a4ea8dc80aeffc3fded3"
+      "size": 56578,
+      "sha256": "5f16e1b73a3b1813825bb3e823d0f2da8ac642110344b5f8f4ac87baf9a0a7a8"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 211945,
-      "sha256": "a827e3058e75d7dd5bd0afd133ad1d10d03541251e885dc79bd7609d09e52ce8"
+      "size": 217892,
+      "sha256": "73e8c09765b16d28d58748b6698bff575b40495449b5f95800308f43ebb95a7b"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 4244,
-      "sha256": "7ee3bb517ebf71e419609e311521f7eda67eaaae57d23d70ab4f2e0ad6eaa052"
+      "size": 4366,
+      "sha256": "55604600533612d54774e8b05cdfc0e3134d96187998e22f975f50be109d7142"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 44754,
-      "sha256": "7128295f6caf8fdd3afced8dfa64644efcd971684148dc927667153936d1fa3d"
+      "size": 44688,
+      "sha256": "e6f29dc3326a02d360510fdfced0f4e3886ef41beb8ca08957478b0e74a7911d"
     },
     {
       "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-      "size": 24348,
-      "sha256": "37f91d4ded9ed20f624c12a4590f517adf84d1e7667f013aa5f5bcff1dd08fd0"
+      "size": 25034,
+      "sha256": "cbd6e32bc909f369eb7fb2d2a0adcc57ec3ae5ce3e0eea9f7c6c2ef00daf1e9a"
     },
     {
-      "path": "modes/standard/CURRENT_RULES.md",
-      "size": 2296,
-      "sha256": "36ebc7824598827e5bd8b7b8349837d2db809aa5c84729670a5c6087ed64bc62"
+      "path": "rules/shared/02_CURRENT_HEROES.md",
+      "size": 46073,
+      "sha256": "b337fa7183d1229b8cddf4ce9a337731d107ba2547f7300b1cbe5487fd7023e4"
     },
     {
-      "path": "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
-      "size": 2998,
-      "sha256": "37eed16f1a336af3d217f64d902858980c0a28f38b70a9aeaa82be71ac1b9a5d"
+      "path": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+      "size": 3254,
+      "sha256": "8deaaec67f87e9f0d08bafedc2c938018b6eac997a5faa06d55af8efba39f299"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
-    "explicit_shared_M06_context_checked": true,
-    "original_NH8_specs_preserved": true,
+    "explicit_shared_M08_context_checked": true,
+    "original_RP8_specs_preserved": true,
     "all30_ordinary_records_unchanged": true,
     "all_prior_shared_records_and_originals_unchanged": true,
-    "current_mutation_outside_labeled_M06_insert_unchanged": true,
-    "M06_H15_flying_alignment_no_new_attack_permission": true,
+    "current_mutation_outside_labeled_M08_insert_unchanged": true,
+    "H05_reference_from_complete_original_source_no_new_rule": true,
     "original_source_archives_unchanged": true,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "maintenance_validation_script_changes": 0,
     "updated_verify_dispatch": {
       "status": "passed",
-      "files": 299,
+      "files": 300,
       "game_engine_tests": 0,
       "scope": "published_project_file_integrity"
-    },
-    "half_actual_H10_M05_palace_receipt_observed": true
+    }
   },
   "unrun": [
     "WC01-WC11",
@@ -218,7 +216,8 @@
     "QA-S01/QA01-QA08",
     "DW-S01/DW01-DW08",
     "NH-S01/NH01-NH08",
-    "RP-S01/RP01-RP08"
+    "RP-S01/RP01-RP08",
+    "TS-S01/TS01-TS08"
   ],
   "shared_coordination": [
     {
@@ -244,7 +243,8 @@
       "id": "STD-M06-CROSSES",
       "status": "generated_horse_confirmed_normal_control_flight_aligned_others_pending",
       "detail": "Opening source horse bodies only; genuinely generated horses no auto cavalry/replacement confirmed. Qualified original normal-control H15 movement aligned; history/temp-control/special geometry pending.",
-      "source": "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json"
+      "source": "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+      "H05_reference_side_source_aligned": true
     },
     {
       "id": "STD-M07-H16-INTERFACE",
@@ -253,8 +253,9 @@
     },
     {
       "id": "STD-M08-CROSSES",
-      "status": "returned_half_shared_candidate_prepared_other_crosses_pending",
-      "detail": "Normal-control public ground pawn after legally closed return to own half now explicit shared candidate; temporary control, river/flying/history/special attack remain separate."
+      "status": "normal_public_ground_return_half_confirmed_other_interfaces_pending",
+      "detail": "M08 current-half after legal closed return confirmed only public-ground normal-control branch. H05 opponent-side reference source-aligned; full river/flight/history/special return pipeline remain pending.",
+      "source": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json"
     },
     {
       "id": "STD-D01-EDGES",
@@ -317,17 +318,24 @@
       "status": "shared_M06_generated_horse_confirmed_pending_main_receipt",
       "source": "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
       "detail": "Current original-two qualification source ready; no claim of receiver adoption/runtime."
+    },
+    {
+      "id": "H15-START-ACTION-COST",
+      "status": "explicit_shared_success_only_candidate_prepared",
+      "owner": "main/standard",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H15成功启动训练是否占用正常行动",
+      "detail": "Successful-start main-action cost only; first tick already1.52 confirmed, empty/failed handling and window/check gates separate. Not approved."
     }
   ],
   "remote_reconciliation": {
-    "parent": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
-    "approval_context_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
-    "preserved_concurrent_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
+    "parent": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+    "approval_context_commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+    "remote_head_unchanged_since_prior_publication": true,
     "ordinary_target_paths_changed_before_local_edit": false,
     "unreturned_local_changes_found": 0,
-    "same_observed_head_tree_and_parent_required": true
+    "earlier_concurrent_commits_preserved_in_parent_history": true
   },
-  "implementation_status": "shared_M06_scope_confirmed_limited_source_alignment_M08_candidate_documents_only",
+  "implementation_status": "shared_M08_confirmed_source_alignment_H15_cost_candidate_documents_only",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -340,18 +348,17 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "M06 new-horse approval, limited flight source alignment and M08 returned-half edge.",
+    "audit_trigger": "M08 returned-half confirmation, original H05 reference consumed and H15 start-cost candidate.",
     "risk_level": "high_project_source; reversible_scoped_document_action",
     "known_facts": [
-      "User explicitly approves preceding shared M06 question.",
-      "H15 retains effective movement geometry but prohibits attacks and uses flight-layer readers.",
-      "M08 current/old full尖斜 body lacks returned-own-half example; ordinary confirmation expressly deferred it.",
-      "Generic current-controller terminology does not rewrite all source己方 terms."
+      "User approves preceding scoped shared M08 returned-half proposal.",
+      "Full original H05 action explicitly uses opponent normal-side rules; ordinary record confirms no owner change.",
+      "H15 full source and branch§6 explicitly keep successful-start action cost unresolved; first tick later resolved1.52."
     ],
     "user_statements": [
       {
         "quote": "我同意",
-        "at_local": "2026-10-16T21:42:40+08:00",
+        "at_local": "2026-10-16T21:55:03+08:00",
         "scope": [
           "original_jieqi",
           "standard_xiangqi",
@@ -361,65 +368,65 @@
     ],
     "claim_register": [
       {
-        "claim": "shared M06 opening-two/no-new-replacement confirmed",
+        "claim": "M08 limited returned-half branch confirmed",
         "type": "user_statement",
-        "source": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61 complete preceding proposal",
+        "source": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085 complete prior candidate",
         "verification": "V2"
       },
       {
-        "claim": "qualified normal-control flying horse retains effective move geometry, no attacks",
-        "type": "source_alignment",
-        "source": "M06/H15 complete clauses",
-        "verification": "V2 clauses plus V1 composition, unrun"
+        "claim": "H05 opponent-normal-side geometric reference",
+        "type": "document_fact",
+        "source": "full6B.2/ordinary H05 owner guard",
+        "verification": "V2 source, limited same-assistant alignment unrun"
       },
       {
-        "claim": "M08 returned-half geometry follows current origin half without permanent crossed flag",
+        "claim": "H15 successful training start does not occupy main action",
         "type": "proposal",
-        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M08明兵卒回到己半场后的走法",
+        "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H15成功启动训练是否占用正常行动",
         "verification": "V0 unapproved"
       },
       {
-        "claim": "RP-S01 possible next-step outcomes",
+        "claim": "TS-S01 main action and existing progress timeline",
         "type": "ai_inference",
-        "source": "same-assistant conditional state, no return prefix",
+        "source": "same-assistant abstract timeline",
         "verification": "V1 unrun"
       }
     ],
     "ai_interpretations": [
-      "M06 approval does not settle M08 returned-half geometry.",
-      "Temporary control source wording prevents silently normalizing all directions to current decision maker."
+      "Do not ask for new approval of an explicit original H05 geometric reference.",
+      "Free choice of training start time does not itself settle its action cost."
     ],
     "assumptions": [
-      "RP-S01 return is already legal/closed, public ground pawn normally controlled with unambiguous direction; not proof any specific hero can perform return."
+      "TS-S01 lawful successful start in allowed window, currently not checked, legal candidate and remaining main action; no natural board fixture."
     ],
     "unknowns": [
-      "User choice on M08 returned-half branch.",
-      "Complete return/restoration source, temporary control and river/flight interfaces.",
-      "Latest receiver adoption and runtime/full source-order/search-clock."
+      "User choice on H15 successful-start action cost.",
+      "H15 failed/empty request charge, exact window/check and feedback boundaries.",
+      "Special-source control/restoration, full search-clock/fieldmap and runtime."
     ],
     "competing_explanations": [
-      "Use current starting half; returned own-half pawn gets basic forward only, recommended.",
-      "Keep permanent crossed flag and diagonal steps after return, not approved."
+      "Successful training start keeps existing normal main action; recommended.",
+      "Midturn training start occupies/ends normal action, not approved."
     ],
     "falsification_conditions": [
-      "Higher-priority returned-pawn rule found.",
-      "Assumed closed return/state/control invalid under full source.",
-      "User chooses other pending geometry."
+      "Higher-priority action-cost rule found.",
+      "Scenario violates existing startup gate or legal candidate rules.",
+      "User chooses pending cost alternative."
     ],
     "verification_status": "partial",
-    "action_boundary": "Write shared M06 qualification, limited source-only flight alignment and unapproved M08 next-normal-action branch; preserve originals/pauses.",
+    "action_boundary": "Write scoped M08 confirmation and source-only H05 reference; prepare H15 success-cost choice without deciding empty/failed/window/check gates.",
     "failure_conditions": [
-      "Recount shared as ordinary31.",
-      "Give new horses cavalry before approval or strip original horse steps.",
-      "Grant return ability, temporary-direction override or hidden identity access from M08 proposal.",
-      "Claim complete natural prefix/runtime/receiver adoption."
+      "Count shared approval as ordinary31.",
+      "Treat temporary操控 as permanent side change or export ordinary H05 F-A.",
+      "Treat freedom to start as already-approved no-cost or grant free failure probing.",
+      "Claim engine/runtime/new receiver adoption or full interface closure."
     ],
-    "residual_risk": "Conditional source states and same-assistant composition do not establish complete histories, whole-mode semantics or runtime/privacy.",
-    "next_validation_action": "Main reads new M06 source; user decides M08 returned-half branch; source interfaces remain queued.",
+    "residual_risk": "Scoped clauses and abstract timeline do not prove full source histories, private feedback or runtime.",
+    "next_validation_action": "Main consumes new M08 source; user decides H15 success-cost; first tick preserved and other source interfaces queued.",
     "action_resilience": {
       "maximum_exposure": "Fifteen ordinary-line document/source files; no game/runtime/messages.",
       "stop_conditions": "Unexpected source change or ambiguous approval scope; preserve local user confirmation.",
-      "recovery": "Restore selected ordinary files from 8f1663adf5d80e17ad666c6f6c3f0f7047f26d61 via normal commit preserving later unrelated work.",
+      "recovery": "Restore selected ordinary files from e407b119cf21a65d8f1ce6c8b6f2cac5364b9085 via normal commit preserving later unrelated work.",
       "unknown_unknown_boundary": "No irreversible product action; unknown interaction does not license automatic rule completion."
     }
   },
@@ -433,8 +440,8 @@
   "shared_coordination_consumed": {
     "new_direct_shared_gameplay_confirmations": 1,
     "new_ordinary_confirmations": 0,
-    "M06_H15_flying_alignment_rule_delta": 0,
-    "M08_return_half_candidate_approved": false
+    "H05_geometry_reference_alignment_rule_delta": 0,
+    "H15_start_action_cost_candidate_approved": false
   },
   "collaboration_adopted": {
     "working_revision": "2026-10-16.v0.12",
@@ -459,30 +466,31 @@
   },
   "shared_confirmed_delta": [
     {
-      "confirmation_id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
-      "source": "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+      "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+      "source": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
         "half_chaos"
       ],
-      "confirmed_at_local": "2026-10-16T21:42:40+08:00",
+      "confirmed_at_local": "2026-10-16T21:55:03+08:00",
       "user_quote": "我同意",
       "policy": {
-        "mode_M06_legally_effective_required": true,
-        "cavalry_membership": "the two real horse bodies defined by this match opening source",
-        "genuinely_new_generated_horse_automatically_cavalry": false,
-        "dead_original_horse_replaced_by_new_generated_horse": false,
-        "new_horse_normal_horse_geometry_and_own_source_states_preserved": true,
-        "original_two_reveal_gates_and_ordinary_public_startup_preserved": true,
-        "normal_movement_reveal_or_consistent_internal_rename_creates_new_body": false,
-        "dark_original_horse_identity_or_mapping_disclosure_added": false,
-        "full_revival_shuffle_rewind_control_flight_identity_state_interfaces": "not_decided_by_this_confirmation"
+        "guard": "Legal M08, public ground pawn with unambiguous normal control/direction, after a lawful closed source returned it to own half; next normal action only.",
+        "geometry_uses_current_action_origin_half": true,
+        "ever_crossed_permanently_retains_diagonal_steps_in_own_half": false,
+        "returned_own_half_geometry": "base one step forward only",
+        "crossing_action_from_own_half_allows_premature_diagonal": false,
+        "later_enemy_half_origin_geometry": "one forward/forward-left/forward-right, no horizontal or backward",
+        "existing_normal_side_direction_red_black_mirror_preserved": true,
+        "new_return_ability_extra_action_or_blanket_state_reset_granted": false,
+        "normal_targets_occupancy_defense_royal_safety_terminal_and_hidden_identity_boundaries_preserved": true,
+        "temporary_H05_river_flight_or_full_history_restoration_interfaces": "not_decided_by_this_confirmation"
       },
       "reviewed_candidate": {
-        "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+        "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "当前待决策｜M06对新生成马的骑兵资格"
+        "heading": "当前待决策｜M08明兵卒回到己半场后的走法"
       }
     }
   ],
@@ -540,6 +548,21 @@
       "body": {
         "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "已确认｜M06对新生成马的骑兵资格"
+      },
+      "received_verified": null,
+      "adopted_verified": null
+    },
+    {
+      "id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+      "body": {
+        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "已确认｜M08明兵卒回到己半场后的走法"
       },
       "received_verified": null,
       "adopted_verified": null

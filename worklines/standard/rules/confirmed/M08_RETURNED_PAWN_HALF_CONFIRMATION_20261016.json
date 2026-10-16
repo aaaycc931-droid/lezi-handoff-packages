@@ -1,0 +1,60 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+  "confirmed_at_local": "2026-10-16T21:55:03+08:00",
+  "user_quote": "我同意",
+  "origin_workline": "standard",
+  "review_id": "SHARED-M08-RETURNED-PAWN-HALF",
+  "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_M08_returned_half_question",
+  "reviewed_candidate": {
+    "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜M08明兵卒回到己半场后的走法"
+  },
+  "immediately_preceding_question": "是否同意这项限定分支作为三模式合法M08的共用规则？",
+  "presented_clauses": [
+    "已明、地面、正常控制兵卒经合法来源回己半场，按当前起点恢复基础前一步，不永久保留曾过河斜步。",
+    "跨河当步仍前一步，再从敌半场起点行动才用尖斜；不新增移回能力或其他控制/空间权限。"
+  ],
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only legal M08 and the reviewed public-ground/normal-control/closed-return branch; no pool or missing return-source approval.",
+  "policy": {
+    "guard": "Legal M08, public ground pawn with unambiguous normal control/direction, after a lawful closed source returned it to own half; next normal action only.",
+    "geometry_uses_current_action_origin_half": true,
+    "ever_crossed_permanently_retains_diagonal_steps_in_own_half": false,
+    "returned_own_half_geometry": "base one step forward only",
+    "crossing_action_from_own_half_allows_premature_diagonal": false,
+    "later_enemy_half_origin_geometry": "one forward/forward-left/forward-right, no horizontal or backward",
+    "existing_normal_side_direction_red_black_mirror_preserved": true,
+    "new_return_ability_extra_action_or_blanket_state_reset_granted": false,
+    "normal_targets_occupancy_defense_royal_safety_terminal_and_hidden_identity_boundaries_preserved": true,
+    "temporary_H05_river_flight_or_full_history_restoration_interfaces": "not_decided_by_this_confirmation"
+  },
+  "preserved": [
+    "All prior ordinary30/shared confirmations.",
+    "M08 existing forward geometry and no horizontal/backward, red-black mirror.",
+    "Actual source return legality/identity/space/restoration must be resolved before applying this branch."
+  ],
+  "not_confirmed": [
+    "H15 successful-start action cost candidate or other pending crosses",
+    "temporary control, river/flying layers or complete history/restoration/source ordering",
+    "mode pool/entire adaptation/full adjudication field-search-clock or privacy runtime",
+    "game code, scoring thaw or NET resume"
+  ],
+  "verification": {
+    "source_confirmation": "V2 direct user statement and full reviewed candidate",
+    "RP_S01_RP01_RP08": "unrun same-assistant conditional case",
+    "game_code_changes": 0,
+    "engine_tests": 0
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  }
+}

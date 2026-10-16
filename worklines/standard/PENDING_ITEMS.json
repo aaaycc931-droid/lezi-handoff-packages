@@ -1,24 +1,24 @@
 {
   "items": [
     {
-      "id": "SHARED-M08-RETURNED-PAWN-HALF",
+      "id": "SHARED-H15-TRAINING-START-ACTION-COST",
       "status": "pending_user_decision",
-      "scope": "all_legal_M08_public_ground_pawn_normal_control_after_lawful_return_to_own_half_next_normal_action_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M08明兵卒回到己半场后的走法",
+      "scope": "all_legal_H15_successful_training_start_main_action_cost_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H15成功启动训练是否占用正常行动",
       "confirmed": false,
-      "not_approved_by_M06_confirmation": true,
+      "not_approved_by_M08_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "RP01",
-        "RP02",
-        "RP03",
-        "RP04",
-        "RP05",
-        "RP06",
-        "RP07",
-        "RP08"
+        "TS01",
+        "TS02",
+        "TS03",
+        "TS04",
+        "TS05",
+        "TS06",
+        "TS07",
+        "TS08"
       ],
       "conditional_unrun_case_ids": [
-        "RP-S01"
+        "TS-S01"
       ]
     },
     {
@@ -54,14 +54,14 @@
       "status": "source_review_pending",
       "scope": "standard M08 conditional crossings",
       "details": [
-        "H05 temporary-control forward/half attribution",
-        "H18 river entry/exit and special displacement of crossed pawn back to own half",
+        "H05 public-ground reference side source-aligned; special-return/other source legality still exact",
+        "H18 river entry/exit and interfaces outside confirmed normal-control public-ground returned-half branch",
         "revival/H11/H06 history semantics",
         "H15 flying and landing",
         "special assassination geometry and effective check"
       ],
       "blocks_core_proposal_presentation": false,
-      "returned_pawn_half_candidate": "SHARED-M08-RETURNED-PAWN-HALF"
+      "returned_pawn_normal_branch_confirmed": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016"
     },
     {
       "id": "STD-M06-CROSSES",
@@ -69,12 +69,13 @@
       "scope": "standard M06 conditional crossings",
       "details": [
         "revival/H11/H06 lifecycle",
-        "H05 temporary control forward/half attribution",
+        "H05 opponent-side geometric reference source-aligned; history and other preflight interfaces retained",
         "special assassination/forced-action geometry"
       ],
       "blocks_core_proposal_presentation": false,
       "new_horse_qualification_confirmed": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
-      "flying_source_aligned_subscope": "Already qualified original horse, normal control unchanged: current movement geometry retained, sky readers, no attacks/new action; unrun."
+      "flying_source_aligned_subscope": "Already qualified original horse, normal control unchanged: current movement geometry retained, sky readers, no attacks/new action; unrun.",
+      "H05_geometric_reference_source_aligned": true
     },
     {
       "id": "STD-M04-CROSSES",
@@ -110,7 +111,8 @@
       "id": "H15-REMAINING",
       "status": "pending_design_or_source_review",
       "scope": "shared",
-      "detail": "First tick confirmed/adopted from main1.52; startup cost/empty pool, optional public progress and normal-begin graduation/M07 ordering remain separate."
+      "detail": "First tick confirmed/adopted1.52; successful-start action cost now explicit shared candidate. Empty/failed candidate charge, optional public progress and M07/source-history interfaces remain pending.",
+      "start_action_cost_candidate": "SHARED-H15-TRAINING-START-ACTION-COST"
     },
     {
       "id": "UI-COORDINATION",
@@ -828,6 +830,34 @@
       "prior_proposal_source": {
         "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M06对新生成马的骑兵资格"
+      }
+    },
+    {
+      "id": "SHARED-M08-RETURNED-PAWN-HALF",
+      "status": "confirmed_shared_return_half_written_not_implemented_or_tested",
+      "scope": "all_legal_M08_public_ground_pawn_normal_control_after_lawful_return_to_own_half_next_normal_action_only",
+      "source": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+      "confirmed": true,
+      "not_approved_by_M06_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "RP01",
+        "RP02",
+        "RP03",
+        "RP04",
+        "RP05",
+        "RP06",
+        "RP07",
+        "RP08"
+      ],
+      "conditional_unrun_case_ids": [
+        "RP-S01"
+      ],
+      "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+      "confirmed_at_local": "2026-10-16T21:55:03+08:00",
+      "user_quote": "我同意",
+      "prior_proposal_source": {
+        "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M08明兵卒回到己半场后的走法"
       }
     }
   ]
