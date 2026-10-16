@@ -1,34 +1,21 @@
 {
   "items": [
     {
-      "id": "STD-D01-HOURGLASS-CORE-THREE-MODE-SCOPE",
-      "status": "pending_user_scope_confirmation",
-      "scope": "three_modes_where_D01_legally_available_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 两条沙漏规则的三模式共用范围",
-      "ordinary_confirmed_rule_ids": [
-        "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
-        "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016"
-      ],
-      "shared_confirmed": false,
-      "proposed_modes": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "not_included": [
-        "mode pool availability/initialization adoption",
-        "dark zero-appeared eligibility or information disclosure",
-        "all-skill repeat use/in-check/order/runtime"
-      ],
+      "id": "D01-HOURGLASS-ZERO-APPEARED-ELIGIBILITY",
+      "status": "pending_user_decision",
+      "scope": "all_modes_where_D01_legally_available_zero_appeared_activation_only",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 零已现身勇士时的发动资格",
+      "confirmed": false,
+      "not_approved_by_shared_two_policy_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "SC01",
-        "SC02",
-        "SC03",
-        "SC04",
-        "SC05",
-        "SC06",
-        "SC07",
-        "SC08"
+        "ZA01",
+        "ZA02",
+        "ZA03",
+        "ZA04",
+        "ZA05",
+        "ZA06",
+        "ZA07",
+        "ZA08"
       ]
     },
     {
@@ -56,15 +43,15 @@
       "status": "source_alignment_pending",
       "scope": "D01 source/interface edges",
       "details": [
-        "shared-core scope of ordinary-confirmed zero-return and same-turn policies: current pending scope candidate",
+        "zero appeared candidate eligibility: current shared candidate",
         "in-check skill preflight",
-        "zero appeared candidate qualification in dark modes",
         "exact begin/deadline and self-anchor event classification",
         "remaining public field/source/pressure interfaces"
       ],
       "blocks_core_proposal_presentation": false,
       "zero_return_resolved_ordinary_only": true,
-      "same_turn_resolved_ordinary_only": true
+      "same_turn_resolved_ordinary_only": true,
+      "shared_hourglass_core_scope_confirmed": true
     },
     {
       "id": "STD-M08-CROSSES",
@@ -594,6 +581,44 @@
       "prior_proposal_source": {
         "commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 同回合逐次使用沙漏"
+      }
+    },
+    {
+      "id": "STD-D01-HOURGLASS-CORE-THREE-MODE-SCOPE",
+      "status": "confirmed_shared_core_written_not_implemented_or_tested",
+      "scope": "three_modes_where_D01_legally_available_only",
+      "source": "rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+      "ordinary_confirmed_rule_ids": [
+        "CONF-STD-D01-HOURGLASS-ZERO-RETURN-20261016",
+        "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016"
+      ],
+      "shared_confirmed": true,
+      "proposed_modes": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "not_included": [
+        "mode pool availability/initialization adoption",
+        "dark zero-appeared eligibility or information disclosure",
+        "all-skill repeat use/in-check/order/runtime"
+      ],
+      "conditional_unrun_spec_ids": [
+        "SC01",
+        "SC02",
+        "SC03",
+        "SC04",
+        "SC05",
+        "SC06",
+        "SC07",
+        "SC08"
+      ],
+      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+      "confirmed_at_local": "2026-10-16T18:25:54+08:00",
+      "user_quote": "我同意",
+      "prior_proposal_source": {
+        "commit": "8b84409d9a136c839e8ecb4e01f6928bbbd511f9",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜D01 两条沙漏规则的三模式共用范围"
       }
     }
   ]

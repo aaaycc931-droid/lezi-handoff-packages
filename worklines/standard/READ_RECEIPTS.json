@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-16T17:59:43+08:00",
+  "recorded_at_local": "2026-10-16T18:33:01+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
@@ -377,61 +377,51 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "confirmation_id": "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016",
-    "at_local": "2026-10-16T17:50:53+08:00",
-    "user_quote": "同意该方案，这是通用核心机制的确定吗",
-    "presented_source_commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
-    "scope": "ordinary_D01_same_turn_sequential_hourglass_window",
-    "shared_core_scope_confirmed": false
+    "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+    "at_local": "2026-10-16T18:25:54+08:00",
+    "user_quote": "我同意",
+    "presented_source_commit": "8b84409d9a136c839e8ecb4e01f6928bbbd511f9",
+    "scope": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "shared_core_scope_confirmed": true,
+    "new_local_standard_confirmation": false,
+    "zero_appeared_eligibility_approved": false
   },
   "current_task_reading": {
-    "source_commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
-    "publication_parent_commit": "d28bbb2d51e478c0f08f3a9a15124360aa92e3b4",
-    "actual_modules": "New0.11 full entry/routes/handoff/precheck including SOURCE_ACTIVATION and GATE_RECEIPT; unchanged prior L3 modules reused.",
+    "source_commit": "8b84409d9a136c839e8ecb4e01f6928bbbd511f9",
+    "publication_parent_commit": "8b84409d9a136c839e8ecb4e01f6928bbbd511f9",
+    "actual_modules": "Current0.11 index/blob unchanged; prior full gate/handoff/source controls and unchanged L3 authorization/baseline/limitation modules reused within continuous task.",
     "files": [
       {
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "complete immediately preceding same-turn proposal/context and10 original HR specs; previous zero-return approval/body retained"
+        "read_scope": "complete preceding shared-core scope proposal and original8 SC specs"
       },
       {
-        "path": "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
-        "read_scope": "full base mode/independent adaptation boundaries; stale M07/H10/version snapshots superseded only by current confirmations"
-      },
-      {
-        "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
-        "read_scope": "full section八 general secrecy/public/private boundary; no new secret label assigned to D01"
+        "path": "worklines/standard/SOURCE_PRIORITY.json",
+        "read_scope": "full current root-vs-archive priority, repair stale fixed adjudication version pointer only"
       },
       {
         "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "unchanged previously fully read D01 source and caps reused, current indexed source identity unchanged"
+        "read_scope": "complete12A.2/12A.3 before inserting explicit confirmed shared update; other D01 source unchanged from prior full read"
+      },
+      {
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
+        "read_scope": "complete14.4; appeared history and lock/order retained"
       }
     ],
-    "latest_identity_reuse": "Approval context remains1893640; write-time source advanced only collaboration/UI. Gameplay and main receipt sources unchanged; game-source sections reused from actual prior reads.",
     "adopted_scope": [
-      "Explicit ordinary sequential-use approval only; core nature recognized as design classification"
+      "Direct explicit three-mode D01 two-hourglass-core confirmation",
+      "Current local shared body/reference updated; no claim of other receivers adoption"
     ],
     "not_adopted": [
-      "User scope question as automatic three-mode confirmation",
-      "ordinary full-public initialization or pool adoption in dark modes",
-      "zero unseen candidate eligibility or all-skill repeat permission",
-      "main H15 candidate or runtime/scoring/NET"
+      "zero appeared candidate qualification",
+      "in-check/exact ordering/whole-mode pool adoption",
+      "main H15 candidate, runtime/scoring/NET"
     ],
-    "new_engine_tests": 0,
-    "collaboration_delta": {
-      "source_commit": "d28bbb2d51e478c0f08f3a9a15124360aa92e3b4",
-      "index": "collaboration/CURRENT.json",
-      "entry": "START_COLLABORATION.md",
-      "body": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
-      "actual_full_sections": [
-        "INTEGRATED_START full",
-        "TASK_ROUTES full",
-        "GITHUB_HANDOFF_WORKFLOW full including CI-15 controls",
-        "MANDATORY_PRECHECK full including SOURCE_ACTIVATION and GATE_RECEIPT"
-      ],
-      "git_blob_and_sha256_independently_checked": true,
-      "adopted": "bounded outputs, actual full semantic source reads, authorized scoped writes, same-head tree/parent and success checkpoints/failure convergence",
-      "not_adopted": "new UI-specific order; unreferenced private sources; platform-root-cause or long-term performance claims"
-    }
+    "new_engine_tests": 0
   },
   "local_confirmations_since_dispatch": [
     {
@@ -495,5 +485,18 @@
       "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016"
     ],
     "zero_return_received_verified": null
-  }
+  },
+  "shared_confirmations_originated_here": [
+    {
+      "id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+      "confirmed_at_local": "2026-10-16T18:25:54+08:00",
+      "user_quote": "我同意",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json"
+    }
+  ]
 }

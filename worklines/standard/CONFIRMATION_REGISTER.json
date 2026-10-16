@@ -5,7 +5,7 @@
     "half_chaos_local": 3,
     "half_chaos_direct_shared": 2
   },
-  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21. On2026-10-16 M07 adds one ordinary pool-policy approval; current index25=source-round21+M04+M05+M06+M07. Historical source_round_counts remains21. On2026-10-16 M08 adds one ordinary ground-pawn body adoption; current index26=source-round21+M04+M05+M06+M07+M08. Historical source_round_counts remains21. Main1.50 repetition-history confirmation is one adopted shared confirmation, not another local standard decision; current standard index remains26. On2026-10-16 D01 adds one ordinary public-start/body adaptation; current index27=original source-round21+M04+M05+M06+M07+M08+D01. Main1.51 adoption is separate, not another local confirmation. On2026-10-16 ordinary D01 zero-return/full-cost boundary adds one local confirmation; current index28=source-round21+M04+M05+M06+M07+M08+D01 startup/body+zero-return. No new shared confirmation this phase. On2026-10-16 ordinary same-turn sequential hourglass use adds one local confirmation; current index29=source-round21+8 subsequent ordinary decisions. Three-mode extension is pending, not another shared confirmation.",
+  "counting_note": "Counts retain source-line conventions, not scoring observations. Shared H10 inherited by half-chaos is not another5 new confirmations. UI approvals are separate visual decisions. Current standard confirmation index now includes the 2026-10-16 M04 adoption (22=21 inherited source-round +1). source_round_counts remains the original round counts; earlier valid decisions are retained. On2026-10-16 M05 adds one scoped adoption; current index23=original source-round21+M04+M05. source_round_counts remains historical. On2026-10-16 M06 adds one scoped body/startup approval; current index24=source-round21+M04+M05+M06. Historical source_round_counts remains21. On2026-10-16 M07 adds one ordinary pool-policy approval; current index25=source-round21+M04+M05+M06+M07. Historical source_round_counts remains21. On2026-10-16 M08 adds one ordinary ground-pawn body adoption; current index26=source-round21+M04+M05+M06+M07+M08. Historical source_round_counts remains21. Main1.50 repetition-history confirmation is one adopted shared confirmation, not another local standard decision; current standard index remains26. On2026-10-16 D01 adds one ordinary public-start/body adaptation; current index27=original source-round21+M04+M05+M06+M07+M08+D01. Main1.51 adoption is separate, not another local confirmation. On2026-10-16 ordinary D01 zero-return/full-cost boundary adds one local confirmation; current index28=source-round21+M04+M05+M06+M07+M08+D01 startup/body+zero-return. No new shared confirmation this phase. On2026-10-16 ordinary same-turn sequential hourglass use adds one local confirmation; current index29=source-round21+8 subsequent ordinary decisions. Three-mode extension is pending, not another shared confirmation. On2026-10-16 explicit three-mode D01 hourglass scope is one new shared confirmation, preserving ordinary29 without recounting prior ordinary28/29.",
   "main_confirmations_source": "lezi-adjudication-current-2026-10-14.json#project_specific_confirmations",
   "standard_confirmations": {
     "count": 29,
@@ -733,6 +733,30 @@
         "Any new publicity of bindings, current secret faction, or H14 historical observations.",
         "Pressure eligibility/exclusions, all-source ordering or engine implementation."
       ]
+    },
+    {
+      "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+      "status": "user_confirmed_shared_design_written_to_standard_current_sources",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+      "origin_workline": "standard",
+      "confirmed_at_local": "2026-10-16T18:25:54+08:00",
+      "user_quote": "我同意",
+      "reviewed_candidate": {
+        "commit": "8b84409d9a136c839e8ecb4e01f6928bbbd511f9",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜D01 两条沙漏规则的三模式共用范围"
+      },
+      "source_summary": "D01三模式合法可用时共同采用零实际回归完整消费及同回合逐次使用；原现身/候选/锚点权限及模式可用性保持。",
+      "new_direct_shared_confirmation_this_dialogue": true,
+      "new_local_standard_confirmation": false,
+      "main_receipt_verified": null,
+      "other_mode_adoption_verified": null,
+      "implementation": false
     }
   ],
   "UI_approval_source": "ui/current_metadata/APPROVAL_REGISTER.json",
@@ -743,5 +767,18 @@
     "confirmation_id": "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016",
     "scope": "ordinary_D01_same_turn_sequential_hourglass_window",
     "source_commit": "1893640c4d0088435e7dea6f088fc01b02063b7d"
+  },
+  "latest_shared_update": {
+    "at_local": "2026-10-16T18:33:01+08:00",
+    "new_shared_confirmation_count": 1,
+    "new_local_standard_confirmation_count": 0,
+    "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+    "source": "rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+    "scope": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "approval_context_commit": "8b84409d9a136c839e8ecb4e01f6928bbbd511f9"
   }
 }
