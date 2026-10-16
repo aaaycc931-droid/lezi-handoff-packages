@@ -1,18 +1,18 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-WORKFLOW-CI15-20261016",
-  "source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
+  "record_id": "UI-WORKFLOW-CI16-20261016",
+  "source_commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
   "from_workline": "ui_workflow_maintenance",
   "to_workline": "main",
-  "updated_at_local": "2026-10-16T16:10:36+08:00",
-  "scope": "authorized collaboration execution controls and UI workflow agreement; no artwork changes",
-  "user_authorization": "2026-10-16 user agreed to the generic/UI workflow plan and instructed implementation",
+  "updated_at_local": "2026-10-16T20:09:10+08:00",
+  "scope": "authorized session-loss recovery controls and UI agreement reference; no artwork changes",
+  "user_authorization": "2026-10-16 20:00:08 +08:00 user explicitly agreed to update the described recovery gap",
   "changes": [
-    "UI_WORK_AGREEMENT references generic controls and defines scoped candidate/view/return order",
-    "CURRENT_STATE records workflow update without replacing existing approval snapshot",
-    "public collaboration body/index updated from the single authoring source"
+    "Generic session-loss recovery integrated in the existing failure-recovery section",
+    "UI agreement references the generic mechanism without maintaining a second definition",
+    "Version, source bindings and scoped recovery metadata synchronized"
   ],
-  "confirmed_delta": "workflow optimization only; B6 artwork remains pending review",
+  "confirmed_delta": "workflow only; existing artwork approval pointers unchanged; later specific approvals must be reconciled before UI continuation",
   "protected": [
     "B1/B2/S1/B3/B4/B5 approvals",
     "home/V4 typography exceptions",
@@ -21,16 +21,17 @@
     "scoring frozen",
     "NET paused"
   ],
-  "validation": "document structure and scoped preservation checks; publication/readback recorded after actual results",
+  "validation": "targeted document, source-preservation and publication/readback checks; not runtime recovery validation",
   "runtime": "not_run",
   "new_artwork_files": 0,
   "new_game_code_files": 0,
-  "publication_status": "prepared_for_branch_update; final publication/readback recorded in author-source CI-15 receipt",
+  "publication_status": "actual publication evidence belongs to author-source CI-16 receipt after successful calls",
   "shared_blockers": [
-    "B6 image/source publication remains outside this workflow update; existing recovery checkpoint must be reconciled when UI resumes"
+    "B6 original artwork/source recovery and approval-pointer reconciliation remain outside this workflow-only update"
   ],
-  "next_action": "maintain UI pause; on explicit UI resume reconcile protected B6 recovery and show exact pending candidate",
+  "next_action": "when UI work resumes, restore the exact protected B6 artwork/source and reconcile the existing specific approval before continuing",
   "no_receiver_adoption_claim": true,
-  "publication_base_commit": "1893640c4d0088435e7dea6f088fc01b02063b7d",
-  "status_recorded_at_stage": "before_publication"
+  "publication_base_commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+  "status_recorded_at_stage": "prepared; actual publication/readback recorded in author-source CI-16 receipt",
+  "previous_record_id": "UI-WORKFLOW-CI15-20261016"
 }
