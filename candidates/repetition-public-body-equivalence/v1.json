@@ -1,6 +1,6 @@
 {
   "id": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-  "status": "pending",
+  "status": "user_confirmed_design_not_implemented",
   "scope": "three-mode repetition equality: raw internal piece identity versus source-authorized shared public effective identity/relations only",
   "proposal": "内部棋子编号本身不区分重复局面。按来源应计入的共同公开有效属性、资格和公开绑定关系都相同，只是相同棋子的内部编号互换，仍算同一局面；公开防御、飞行、可用资格或公开绑定关系不同，仍须区分。秘密寄宿、秘密受训对象和单方洞察不因此进入键。",
   "policy": {
@@ -57,33 +57,35 @@
     {
       "id": "BI01",
       "conditions": "Same eligible mode/side/phase, two same-type public rooks have the same included public effects/rights/relations; only internal IDs are consistently exchanged.",
-      "expected_if_approved": "same repetition key; abstract comparison only, no legal natural prefix constructed"
+      "expected_design": "same repetition key; abstract comparison only, no legal natural prefix constructed"
     },
     {
       "id": "BI02",
       "conditions": "Otherwise same board but source-relevant public defense/flight is attached at a different location.",
-      "expected_if_approved": "different public effective state"
+      "expected_design": "different public effective state"
     },
     {
       "id": "BI03",
       "conditions": "Same visible pieces but a source-defined publicly knowable future action right differs.",
-      "expected_if_approved": "different if that public right is confirmed relevant; no new hero rule invented"
+      "expected_design": "different if that public right is confirmed relevant; no new hero rule invented"
     },
     {
       "id": "BI04",
       "conditions": "Same included public state; only secret host/training binding or one-sided past insight differs.",
-      "expected_if_approved": "not different solely from those private facts, preserving already confirmed privacy tradeoff"
+      "expected_design": "not different solely from those private facts, preserving already confirmed privacy tradeoff"
     },
     {
       "id": "BI05",
       "conditions": "Same individual attributes but a source-authorized relevant public binding relationship differs.",
-      "expected_if_approved": "preserve that public relation; blindly deleting all IDs is insufficient"
+      "expected_design": "preserve that public relation; blindly deleting all IDs is insufficient"
     },
     {
       "id": "BI06",
       "conditions": "Any required public field or relation mapping remains unknown.",
-      "expected_if_approved": "do not claim complete field-map/equality implementation verification"
+      "expected_design": "do not claim complete field-map/equality implementation verification"
     }
   ],
-  "verification": "V2 source principle plus V1 design analysis; all BI specs abstract/unrun; no fixture/runtime acceptance"
+  "verification": "Confirmed design; BI01-BI06 abstract specifications remain unrun; no fixture or engine acceptance.",
+  "confirmation_id": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+  "confirmed_at_local": "2026-10-16T15:35:18+08:00"
 }

@@ -1,0 +1,121 @@
+{
+  "schema": "lezi.repetition.public_fieldmap.v0.1",
+  "status": "partial_source_mapping_not_complete_key_or_implementation",
+  "source_confirmation_ids": [
+    "CONF-THREE-MODE-REPETITION-PUBLIC-EFFECTIVE-STATE-PRINCIPLE-20261014",
+    "CONF-THREE-MODE-REPETITION-STABLE-FORMAL-SAMPLING-20261014",
+    "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
+    "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016"
+  ],
+  "scope": "Contract-level mapping of already-confirmed categories; source-specific concrete representation is unfinished.",
+  "field_contracts": [
+    {
+      "id": "F01",
+      "category": "mode",
+      "include": "same mode identifier",
+      "status": "confirmed_category_no_serialization_claim"
+    },
+    {
+      "id": "F02",
+      "category": "decision_actor",
+      "include": "same side to act",
+      "status": "confirmed_category_no_serialization_claim"
+    },
+    {
+      "id": "F03",
+      "category": "decision_phase",
+      "include": "same source-eligible stable decision phase; special phases not faked as normal begin",
+      "status": "confirmed_category_all_source_phase_map_pending"
+    },
+    {
+      "id": "F04",
+      "category": "public_placement_and_type",
+      "include": "public coordinates, face/covered state, authorized public type reader",
+      "reader": "covered ordinary pieces use public position identity; normally revealed pieces use public revealed type. Undefined special-space reader is unresolved, not secret fallback.",
+      "status": "confirmed_general_reader_special_sources_pending"
+    },
+    {
+      "id": "F05",
+      "category": "public_control",
+      "include": "current public controller; not secret original/current M07 faction",
+      "status": "confirmed_category"
+    },
+    {
+      "id": "F06",
+      "category": "public_spatial_state",
+      "include": "public ground/air/river and relevant public spatial occupancy/structure",
+      "status": "confirmed_category_source_field_encoding_pending"
+    },
+    {
+      "id": "F07",
+      "category": "public_effects",
+      "include": "source-authorized relevant public board and piece effects, such as public defense/flight",
+      "restriction": "not every authoritative effect is public; hidden traps and hidden attachments remain excluded",
+      "status": "confirmed_category_exhaustive_source_map_pending"
+    },
+    {
+      "id": "F08",
+      "category": "public_resources_and_rights",
+      "include": "source-relevant jointly public resources, effective current/future rights, unlock/periodic state",
+      "restriction": "no raw ever-increasing hero counter as substitute; normalize effective public state by actual source, not an invented all-hero clock rule",
+      "status": "source_specific_mapping_pending"
+    },
+    {
+      "id": "F09",
+      "category": "public_relations_and_identity",
+      "include": "preserve all included public attributes/rights/relations under consistent internal-ID renaming",
+      "restriction": "do not erase public relationships by blindly dropping IDs; raw internal ID alone does not distinguish equality",
+      "status": "confirmed_policy_concrete_relation_representation_pending"
+    },
+    {
+      "id": "F10",
+      "category": "H15_public_selection",
+      "include": "selected training piece type is public",
+      "restriction": "trained body/location remains hidden to both sides; progress representation remains separately unresolved",
+      "status": "source_checked_partial_H15_mapping"
+    }
+  ],
+  "excluded": [
+    "unrevealed true piece type or secret faction",
+    "private skill use/remaining/cooldown/target, secret host/training-body binding and hidden traps",
+    "one-sided insight or historical private observations",
+    "transport request/revision/wall-clock metadata",
+    "adjudication total/no-capture/repetition/pressure counters as equality self-reference",
+    "raw internal piece ID as independent distinction"
+  ],
+  "H15_source_review": {
+    "historical_source": {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+      "read_scope": "visibility/progress matching paragraphs, especially original lines49-55 only; not full historical design adoption"
+    },
+    "historical_wording": "培养进度/剩余培养回合可以公开",
+    "current_source": {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "read_scope": "complete H15 current entry previously read; visibility/training and pending count-point paragraphs reread"
+    },
+    "finding": "Current shared source preserves permission to disclose progress and forbids treating unconfirmed progress-private wording as a replacement. It does not settle a single mandatory progress field/UI policy or all secrecy-sensitive failure/timing lifecycle outputs.",
+    "not_changed": [
+      "No mandatory always-public progress UI introduced.",
+      "No forced-private progress rule introduced.",
+      "No disclosure of hidden trainee/failure/host introduced.",
+      "No restoration of obsolete automatic-start, retrain, old costs, or old mode-binding rules from the historical source."
+    ]
+  },
+  "remaining": [
+    "full per-hero/mutation public field and relation list",
+    "H15 progress/remaining public representation and unresolved first tick/action cost/empty pool dependencies",
+    "all special-space public type readers and all source phase mappings",
+    "canonical equality/serialization/hash algorithm",
+    "pressure eligibility/exclusions and all-source ordering",
+    "concrete legal fixtures and runtime/privacy validation"
+  ],
+  "verification": {
+    "source_level": "V2 scoped source reads; V1 category organization",
+    "complete": false,
+    "new_game_code_changes": 0,
+    "engine_runs": 0,
+    "independent_review": false
+  }
+}

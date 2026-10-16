@@ -7,31 +7,32 @@
     "standard",
     "ui"
   ],
-  "base_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
-  "phase": "explicit_repetition_history_confirmation_and_scoped_new_returns",
-  "current_breakpoint": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-  "status": "history_confirmed_next_public_body_candidate_pending",
+  "base_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+  "phase": "public_body_equivalence_confirmation_and_partial_fieldmap",
+  "current_breakpoint": "REVIEW-REPETITION-PUBLIC-FIELDMAP-20261016",
+  "status": "public_body_policy_confirmed_no_active_new_candidate",
   "confirmed_delta_this_session": [
-    "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016"
+    "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016"
   ],
   "pending_delta": [
-    "candidates/repetition-public-body-equivalence/v1.json pending; not covered by approval",
-    "SHARED_COORDINATION.json remaining source/implementation dependencies"
+    "REPETITION_PUBLIC_FIELDMAP.json partial source mapping",
+    "H15 canonical public progress representation and existing shared dependencies"
   ],
   "files": [
-    "START_HERE.txt",
-    "CURRENT_STATE.json",
+    "../../candidates/repetition-public-body-equivalence/v1.json",
     "ADJUDICATION.json",
+    "CURRENT_STATE.json",
     "PENDING_DECISION.json",
-    "SOURCE_MAP.json",
     "PROJECT_WORK_AGREEMENT.md",
-    "SHARED_COORDINATION.json",
     "READ_RECEIPTS.json",
     "RECOVERY_REPORT.md",
-    "VALIDATION.json",
-    "../../candidates/repetition-public-body-equivalence/v1.json"
+    "REPETITION_PUBLIC_FIELDMAP.json",
+    "SHARED_COORDINATION.json",
+    "SOURCE_MAP.json",
+    "START_HERE.txt",
+    "VALIDATION.json"
   ],
-  "approval_sources": "ADJUDICATION.json confirmation at2026-10-16T12:47:23+08:00 user quote 同意, explicit immediately preceding three-mode history question",
+  "approval_sources": "ADJUDICATION.json CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016 user quote 同意 at2026-10-16T15:35:18+08:00; original candidate atdd467a1ccce63c9ce8136422d3b0fa06038b2654",
   "verification": "Document/source and remote publication checks only; no engine run",
   "unrun": [
     "concrete RH01-RH06 reachable fixtures",
@@ -41,7 +42,7 @@
     "ordinary WC/EX/CA/CH/JX specs; source design approval is not runtime acceptance"
   ],
   "shared_blocks": "SHARED_COORDINATION.json",
-  "next": "Main presents pending public-body-equivalence candidate; ordinary M04-M07 confirmed and M08 pending; half_chaos H17/H18 next. Receivers must read1.50 before claiming its new confirmation adopted.",
+  "next": "Receivers consume1.51 in their own scope and write actual receipts. Main continues source-specific public field/resource/rights mapping; no new candidate has been approved.",
   "messages_sent": false,
   "other_lines_adoption_verified": false,
   "scoring_frozen": true,
@@ -50,11 +51,27 @@
     "half_chaos": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
     "standard": "ee020aa5b368c9fb06b86b9ed377c665c7a09687"
   },
-  "scope_of_unknown_adoption": "This new1.50 confirmation only; older sender receipts were actually read and preserved.",
+  "scope_of_unknown_adoption": "This new1.51 confirmation only; preserve prior sender receipts for their original versions.",
   "ordinary_scoped_confirmations_received": [
     "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
     "CONF-STD-M05-EXPEDITION-KEEP-20261016",
     "CONF-STD-M06-CAVALRY-INITIAL-HORSES-20261016",
     "CONF-STD-M07-POOL-EXCLUSION-20261016"
+  ],
+  "ordinary_scoped_confirmations_received_this_phase": [],
+  "publication_parent_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+  "unread_concurrent_returns": [
+    {
+      "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+      "blob_sha": "50464b376ec0b60e82b8a4f8f0f444777b9930ee",
+      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+      "status": "detected_unread_preserved_for_next_coordination"
+    },
+    {
+      "path": "worklines/standard/RETURN_TO_MAIN.json",
+      "blob_sha": "d433a7144b6cfd57dc727f38cae86dca20f3b189",
+      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+      "status": "detected_unread_preserved_for_next_coordination"
+    }
   ]
 }

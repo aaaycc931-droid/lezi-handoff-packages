@@ -1,15 +1,15 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "repetition_history_confirmed_public_body_equivalence_pending",
+  "status": "public_body_equivalence_confirmed_fieldmap_source_review",
   "resume_date_local": "2026-10-16",
   "timezone": "Asia/Shanghai",
-  "base_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+  "base_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
   "user_authorization": "Continue main, restore four-line coordination, protect unreturned work, recover necessary sources from existing account files, maintain this line and stage handoff. Continue is not candidate approval.",
   "current_adjudication_record": "ADJUDICATION.json",
-  "adjudication_version": "1.50",
+  "adjudication_version": "1.51",
   "design_stage": "S1.36",
-  "pending_decision": "PENDING_DECISION.json",
+  "pending_decision": null,
   "pending_decision_approved": false,
   "shared_coordination": "SHARED_COORDINATION.json",
   "source_map": "SOURCE_MAP.json",
@@ -27,12 +27,13 @@
     "other_dialogue_unreturned_work": "unknown; must not overwrite",
     "historical_1_48_did_not_overwrite_current_1_49": true,
     "original_1_49_preserved_at_commit": "26736f643754ae22731a7540874835ddf4e21409",
-    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": true
+    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": true,
+    "original_1_50_preserved_at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654"
   },
   "worklines": {
     "main": {
-      "next": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-      "status": "new_concrete_candidate_pending_scoped_decision"
+      "next": "REVIEW-REPETITION-PUBLIC-FIELDMAP-20261016",
+      "status": "source_review_no_new_candidate_approved"
     },
     "standard": {
       "next": "M08 尖斜普通地面兵卒继承候选",
@@ -71,7 +72,7 @@
     "runtime_acceptance": false,
     "implementation": false,
     "old_evidence": "inherited original scope only; not rerun",
-    "received_other_line_confirmed_designs": 4,
+    "received_other_line_confirmed_designs": 0,
     "shared_rule_confirmation_from_mode_returns": 0
   },
   "scoring": {
@@ -85,11 +86,28 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "Present concrete public-body-equivalence candidate; keep full public fieldmap/pressure/special-path dependencies pending. Receivers must consume1.50 from main before claiming adoption.",
+  "next_action": "Map already-confirmed public repetition categories and identity equivalence; resolve source-specific public progress/rights representation before defining full key.",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": "partial; VALIDATION.json limitation_audit; source and document checks only, no independent/runtime verification",
-  "last_confirmed_decision": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
-  "confirmed_at_local": "2026-10-16T12:47:23+08:00",
+  "last_confirmed_decision": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+  "confirmed_at_local": "2026-10-16T15:35:18+08:00",
   "resume_after_quota_at_local": "2026-10-16T15:23:28+08:00",
-  "resume_after_quota_is_new_candidate_approval": false
+  "resume_after_quota_is_new_candidate_approval": false,
+  "decision_index": "PENDING_DECISION.json",
+  "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
+  "publication_parent_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+  "unread_concurrent_returns": [
+    {
+      "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+      "blob_sha": "50464b376ec0b60e82b8a4f8f0f444777b9930ee",
+      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+      "status": "detected_unread_preserved_for_next_coordination"
+    },
+    {
+      "path": "worklines/standard/RETURN_TO_MAIN.json",
+      "blob_sha": "d433a7144b6cfd57dc727f38cae86dca20f3b189",
+      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+      "status": "detected_unread_preserved_for_next_coordination"
+    }
+  ]
 }

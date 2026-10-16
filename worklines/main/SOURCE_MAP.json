@@ -10,7 +10,7 @@
     "git_blob_sha": "1c73a43d04dd83b607534c85f4ca64d2b15ae1f7",
     "matches_preexisting_remote_path": "worklines/standard/lezi-adjudication-current-2026-10-14.json",
     "bytes_preserved": true,
-    "identity_role": "Inherited original1.49 source only; active ADJUDICATION now1.50 after explicit confirmation."
+    "identity_role": "Inherited original1.49 source only; current ADJUDICATION now1.51 after explicit confirmations."
   },
   "precedence": [
     "current explicit user instructions and actual later scoped confirmations",
@@ -212,46 +212,39 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.50",
-  "latest_maintenance_base_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
+  "current_record_version": "1.51",
+  "latest_maintenance_base_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
   "latest_confirmation_source": {
-    "id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
-    "confirmed_at_local": "2026-10-16T12:47:23+08:00",
+    "id": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+    "confirmed_at_local": "2026-10-16T15:35:18+08:00",
     "user_quote": "同意",
-    "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_repetition_history_question",
+    "source_type": "direct_user_confirmation_of_immediately_preceding_three_mode_identity_equivalence_question",
     "mode_ids": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
+    "candidate_id": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
     "reviewed_candidate": {
-      "commit": "26736f643754ae22731a7540874835ddf4e21409",
-      "path": "worklines/main/PENDING_DECISION.json",
-      "read_scope": "complete original pending proposal"
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "candidates/repetition-public-body-equivalence/v1.json"
     },
-    "candidate_id": "DECISION-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261014",
-    "immediately_preceding_question": "是否确认作为三个模式的共同规则？",
-    "presented_proposal": "真实吃子或技能实际消灭后，另开重复统计段，旧段保留审计但不再累计。纯回溯、洗牌不清空或回滚当前统计；复原也不能撤销此前已经发生的换段。",
-    "presented_examples": "P已出现3次，纯回溯后下一合格同局面为P4；中间发生真实消灭，再复原后下一合格同局面为新段P1。",
-    "scope": "三模式重复统计段在真实消灭及纯时间操作下的保留/重开策略；不包含完整键、压力排除或全来源实现",
+    "immediately_preceding_question": "是否同意这一身份区分口径用于三个模式？",
+    "presented_conditions": "行棋方、阶段等其他条件相同；公开状态、资格和绑定关系完全相同，仅后台编号不同，算相同局面；防御、飞行、可用资格或公开绑定关系不同仍须区分。秘密宿主和单方洞察沿用已确认信息边界。",
+    "scope": "three-mode repetition equality: raw internal piece identity versus source-authorized shared public effective identity/relations only",
     "confirmed": {
-      "accepted_actual_capture_or_skill_destruction_starts_new_repetition_segment": true,
-      "old_segment_occurrences_excluded_from_future_current_segment_count": true,
-      "old_audit_events_deleted": false,
-      "pure_rewind_or_shuffle_clears_current_segment": false,
-      "pure_rewind_restores_segment_or_counts_from_board_snapshot": false,
-      "later_restoration_undoes_accepted_destruction_segment_restart": false,
-      "restoration_itself_restarts_segment": false,
-      "rejected_or_blocked_attack_restarts_segment": false,
-      "first_subsequent_eligible_sample_of_a_key_in_new_segment": 1,
-      "no_extra_sample_at_destruction_or_restoration_instant": true
+      "raw_internal_piece_id_alone_distinguishes_key": false,
+      "consistent_renaming_preserving_all_included_public_attributes_and_relations_is_equal": true,
+      "public_relevant_effects_and_current_or_source_defined_future_rights_preserved": true,
+      "public_binding_relations_preserved_not_blindly_dropped_with_ids": true,
+      "secret_identity_binding_or_one_sided_knowledge_adds_fields": false,
+      "unknown_field_mapping_proves_equivalence": false
     },
     "not_inferred": [
-      "complete equality fieldmap/hash/body identity/public optional progress",
-      "check/chase/response repetition eligibility exclusions",
-      "special pressure attribution and arbitrary bilateral-round pairing",
-      "all-source event ordering/initial opening repetition segment implementation",
-      "engine implementation or runtime acceptance"
+      "Complete key schema/hash/canonical graph algorithm.",
+      "H15 optional public progress representation.",
+      "Any new publicity of bindings, current secret faction, or H14 historical observations.",
+      "Pressure eligibility/exclusions, all-source ordering or engine implementation."
     ],
     "implementation_status": "confirmed_design_not_implemented",
     "new_engine_tests": 0
@@ -284,5 +277,47 @@
     "source_commit": "6ed12b3fed848f0c38fd334a4ba58901ab0d0a06",
     "read_scope": "8.30 H16 resource/source introduction, BC02 tier question, closing shared alignment excerpts only; H14 permissions/M07 snapshot and source-alignment excerpts read earlier at66d4ed6",
     "next": "H17/H18"
-  }
+  },
+  "latest_fieldmap_sources": [
+    {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "worklines/main/ADJUDICATION.json",
+      "read_scope": "public effective-state principle and sampling/history rules"
+    },
+    {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "candidates/repetition-public-body-equivalence/v1.json",
+      "read_scope": "complete reviewed candidate before confirmation"
+    },
+    {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+      "read_scope": "current-controller/covered-identity and private-information boundary paragraphs reread"
+    },
+    {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "read_scope": "H15 current visibility/training and pending boundary paragraphs reread"
+    },
+    {
+      "commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+      "read_scope": "public visibility/progress matching paragraphs only"
+    }
+  ],
+  "publication_parent_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+  "unread_concurrent_returns": [
+    {
+      "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+      "blob_sha": "50464b376ec0b60e82b8a4f8f0f444777b9930ee",
+      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+      "status": "detected_unread_preserved_for_next_coordination"
+    },
+    {
+      "path": "worklines/standard/RETURN_TO_MAIN.json",
+      "blob_sha": "d433a7144b6cfd57dc727f38cae86dca20f3b189",
+      "source_commit": "ce00aeb455f6ea91a67bc0725c474306b571fa5c",
+      "status": "detected_unread_preserved_for_next_coordination"
+    }
+  ]
 }

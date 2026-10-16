@@ -1,9 +1,21 @@
 {
-  "id": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
-  "status": "pending",
-  "proposal": "内部棋子编号本身不区分重复局面。按来源应计入的共同公开有效属性、资格和公开绑定关系都相同，只是相同棋子的内部编号互换，仍算同一局面；公开防御、飞行、可用资格或公开绑定关系不同，仍须区分。秘密寄宿、秘密受训对象和单方洞察不因此进入键。",
-  "scope": "three-mode repetition equality: raw internal piece identity versus source-authorized shared public effective identity/relations only",
-  "candidate_file": "candidates/repetition-public-body-equivalence/v1.json",
-  "prior_decision_confirmed": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
-  "not_approval_of_this_candidate": true
+  "schema": "lezi.main.decision_index.v2",
+  "status": "no_active_user_candidate_source_review",
+  "last_confirmed": {
+    "id": "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+    "candidate_id": "DECISION-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016",
+    "source": "ADJUDICATION.json#/project_specific_confirmations"
+  },
+  "next_work_item": {
+    "id": "REVIEW-REPETITION-PUBLIC-FIELDMAP-20261016",
+    "status": "source_fieldmap_review_in_progress",
+    "task": "Map already-confirmed public repetition categories and identity equivalence; resolve source-specific public progress/rights representation before defining full key.",
+    "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
+    "is_new_user_candidate": false
+  },
+  "unresolved_questions": [
+    "source-specific public resource/progress/rights field representation",
+    "pressure eligibility/exclusions and all-source ordering"
+  ],
+  "new_candidate_presented_or_approved": false
 }
