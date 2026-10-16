@@ -1,14 +1,14 @@
 {
   "schema": "lezi.current_work_index.v1",
-  "updated_at_local": "2026-10-15T15:18:11+08:00",
   "worklines": {
     "UI": "worklines/ui/START_HERE.txt",
-    "standard": "worklines/standard/START_HERE.txt"
+    "standard": "worklines/standard/START_HERE.txt",
+    "main": "worklines/main/START_HERE.txt"
   },
   "assets": "assets/ui/INDEX.json",
   "history": "archive/INDEX.json",
   "workflow": "docs/WORKFLOW.md",
-  "main_and_half_chaos": "maintained in main account; GitHub handoff is now the default; complete remote source worklines are not yet published",
+  "main_and_half_chaos": "Main necessary continuation bodies/state/sources are published at worklines/main; full main historical tree and full half_chaos workline are still not published. No new receiver adoption is inferred.",
   "recipient_reading_and_adoption_verified": false,
   "previous_complete_snapshot": "52002b3762bd948a134c67cfbc99427035790eba",
   "default_handoff_transport": "GitHub connector",
@@ -26,5 +26,17 @@
     "sha256": "e5192a9a962bb49c8dc8bc3c465dd56a136b851ae3caf353ac54b5c043089fcc",
     "scope": "user-authorized collaboration body only; personal project source documents remain private",
     "workflow_section": "GITHUB_HANDOFF_WORKFLOW"
+  },
+  "previous_index_updated_at_local": "2026-10-15T15:18:11+08:00",
+  "updated_on_local": "2026-10-16",
+  "main_recovery": {
+    "date_local": "2026-10-16",
+    "entry": "worklines/main/START_HERE.txt",
+    "state": "worklines/main/CURRENT_STATE.json",
+    "shared_coordination": "worklines/main/SHARED_COORDINATION.json",
+    "base_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
+    "necessary_body_publication": "present in this commit",
+    "full_history_migration": false,
+    "pending_repetition_history_approved": false
   }
 }
