@@ -1,6 +1,6 @@
 {
   "schema": "lezi.hc_confirmation_current.v2",
-  "revision": "HC-DESIGN-03-20261016-r21",
+  "revision": "HC-DESIGN-03-20261016-r22",
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": [],
   "inherited_local_confirmations": [
@@ -103,7 +103,7 @@
   "this_round_main_reading_or_adoption": {
     "received": null,
     "adopted": null,
-    "reason": "receiver-owned actual r21 receipt not yet observed"
+    "reason": "actual receiver record remains r20 metadata only; r21/r22 unknown"
   },
   "H14": "existing_rules_consumed_no_new_design_change",
   "engine_status": "unrun",
@@ -186,113 +186,7 @@
       "H19/H20 next;24 specs remain unrun; real1.50 receipt recognized."
     ]
   },
-  "main_confirmations_consumed_this_round": [
-    {
-      "repository": "aaaycc931-droid/lezi-handoff-packages",
-      "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-      "path": "worklines/main/ADJUDICATION.json",
-      "git_blob_sha": "fdc333c5e264463ffee9eb3345e628aa63d10c22",
-      "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
-      "source_workline": "main",
-      "read_scope": "complete H15_first_cultivation_tick policy and matching original confirmation; not full adjudication semantic audit",
-      "local_scope": "half_chaos",
-      "new_local_user_approval": false,
-      "implementation": false,
-      "confirmed_at_local": "2026-10-16T20:23:07+08:00",
-      "policy": {
-        "status": "user_confirmed_design_not_implemented",
-        "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
-        "scope": [
-          "original_jieqi",
-          "standard_xiangqi",
-          "half_chaos"
-        ],
-        "opening_successful_start_first_increment": "first actually reached own normal formal-begin cultivation settlement",
-        "opening_start_itself_adds_progress": false,
-        "late_start_after_own_begin_closed_progress_at_start": 0,
-        "late_start_first_increment": "next actually reached own normal formal-begin cultivation settlement",
-        "retroactive_increment_at_already_closed_begin": false,
-        "preserved_increment_per_later_eligible_own_normal_begin": 1,
-        "extra_forced_child_shuffle_action_or_duplicate_delivery_itself_adds_progress": false,
-        "failed_training_or_terminal_creates_new_cultivation_opportunity": false,
-        "confirmed_text": [
-          "开局成功启动训练：第一次培养+1发生在实际到达的首个己方正常正式回合开始培养结算；开局启动本身不额外送一次进度。",
-          "在第T个己方正常正式回合开始结算后成功启动：该次已闭合的开始结算不追补培养，启动时进度0；第一次+1发生在后续实际到达的下一个己方正常正式回合开始培养结算。",
-          "其后沿用既有规则：每个合格己方正常正式回合开始累计1；达到当前有效兵种成本时按既有合法来源处理毕业。",
-          "额外、强迫、技能子行动、洗牌动作及重复递送本身不另加培养；已经失败或终局后不虚造新的培养机会。"
-        ],
-        "example_timelines": [
-          {
-            "case": "兵成本2；开局成功启动，受训棋一直存活且后续培养结算合法",
-            "timeline": [
-              "首个己方正常正式回合开始1/2",
-              "第二个己方正常正式回合开始2/2，进入既有毕业处理"
-            ]
-          },
-          {
-            "case": "兵成本2；在己方T5开始结算后成功启动，受训棋一直存活且后续培养结算合法",
-            "timeline": [
-              "T5启动0/2",
-              "T6开始1/2",
-              "T7开始2/2，进入既有毕业处理"
-            ]
-          },
-          {
-            "case": "同一begin重复请求或追加子行动",
-            "timeline": [
-              "不额外增加培养"
-            ]
-          }
-        ],
-        "remaining_separate": [
-          "training start action cost",
-          "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
-          "H15 progress mandatory publicity or forced privacy, status/failure output",
-          "H15 first tick versus M07 same-begin ordering",
-          "H06 progress/body/status restoration beyond existing exception",
-          "other modes H11 space semantics",
-          "complete repetition key, pressure, implementation/runtime/scoring/NET"
-        ],
-        "verification": "confirmed design; abstract timelines unrun, engine0"
-      },
-      "original_confirmation": {
-        "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
-        "confirmed_at_local": "2026-10-16T20:23:07+08:00",
-        "user_quote": "同意方案",
-        "source_type": "direct_user_confirmation_of_immediately_preceding_three_mode_H15_first_tick_question",
-        "candidate_id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
-        "reviewed_candidate": {
-          "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
-          "path": "candidates/h15-first-cultivation-tick/v1.json",
-          "git_blob_sha": "6128a28739b8e98aa40b9dfb7a40a3bdcbfda115"
-        },
-        "immediately_preceding_question": "是否同意这一首次计数方案用于三个模式？",
-        "presented_clauses": [
-          "开局启动：首个己方正常正式回合开始时培养+1。",
-          "中途在开始结算后启动：当回合不补进度，从下个己方正常正式回合开始+1。",
-          "兵成本2：T5开始结算后启动0/2，T6为1/2，T7为2/2并按既有合法来源处理毕业。"
-        ],
-        "mode_ids": [
-          "original_jieqi",
-          "standard_xiangqi",
-          "half_chaos"
-        ],
-        "scope": "First cultivation increment after a successful initial training start only; preserves existing later normal-begin progression.",
-        "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_timing_updates/H15_first_cultivation_tick",
-        "not_inferred": [
-          "training start action cost",
-          "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
-          "H15 progress mandatory publicity or forced privacy, status/failure output",
-          "H15 first tick versus M07 same-begin ordering",
-          "H06 progress/body/status restoration beyond existing exception",
-          "other modes H11 space semantics",
-          "complete repetition key, pressure, implementation/runtime/scoring/NET"
-        ],
-        "implementation_status": "confirmed_design_not_implemented",
-        "new_engine_tests": 0
-      }
-    }
-  ],
+  "main_confirmations_consumed_this_round": [],
   "previous_H19_H20_main_stage_receipt": {
     "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
     "source_return_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f",
@@ -483,6 +377,171 @@
   ],
   "shared_confirmations_consumed_this_round": [
     {
+      "id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "source_workline": "standard",
+      "source_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+      "source_path": "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+      "git_blob_sha": "e24713bec82868e50c36087cb088cb61723a1db1",
+      "read_scope": "full original confirmation; complete new shared02 and03 insertion; D01 text exact unchanged",
+      "local_scope": "half_chaos only where H10 and M05 both legally effective",
+      "new_local_user_approval": false,
+      "implementation": false,
+      "original_confirmation": {
+        "schema": "lezi.shared_gameplay_confirmation.v1",
+        "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+        "confirmed_at_local": "2026-10-16T21:33:47+08:00",
+        "user_quote": "我同意",
+        "origin_workline": "standard",
+        "review_id": "SHARED-H10-M05-DANCE-PALACE",
+        "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_H10_M05_palace_question",
+        "reviewed_candidate": {
+          "commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+          "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "当前待决策｜H10与M05的流舞九宫边界"
+        },
+        "immediately_preceding_question": "是否同意此方案作为三个模式中该合法组合的共用规则？",
+        "presented_clauses": [
+          "H10与M05均合法生效时，流舞也解除九宫限制。",
+          "每步仍横竖一格、最多两步；原触发资格与最终安全要求保持。"
+        ],
+        "scope": [
+          "original_jieqi",
+          "standard_xiangqi",
+          "half_chaos"
+        ],
+        "availability_guard": "Only modes where H10 and M05 are both legally effective. No pool/init approval, no dance qualification granted merely by being outside palace.",
+        "policy": {
+          "H10_and_M05_legally_effective_required": true,
+          "M05_removes_palace_limit_for_flow_dance": true,
+          "M05_absent_original_H10_palace_limit_preserved": true,
+          "each_dance_step": "exactly one orthogonal square within board",
+          "max_dance_steps": 2,
+          "rook_length_or_diagonal_dance_step_allowed": false,
+          "original_first_shadow_adjudication_successful_flow_requirement_preserved": true,
+          "ordinary_check_or_outside_palace_alone_grants_dance": false,
+          "second_shadow_gets_dance": false,
+          "first_step_temporary_attack_exception_and_early_safe_stop_preserved": true,
+          "final_required_safety_and_failed_escape_original_adjudication_preserved": true,
+          "source_occupancy_suffocation_blockade_landing_or_terminal_waived": false,
+          "new_return_position_or_push_out_occupant_granted": false,
+          "hidden_host_cooldown_count_disclosure_changed": false,
+          "mode_pool_availability_full_checkmate_search_clock_or_repetition_fieldmap_approved": false
+        },
+        "preserved": [
+          "Existing H10 first/second-shadow, flow and private-information rules.",
+          "Original M05 public-role/host distinction, ordinary rook-style action and one-step dance distinction.",
+          "All existing ordinary/shared confirmations and pause/implementation boundaries."
+        ],
+        "not_confirmed": [
+          "new M06-generated-horse qualification or other pending crosses",
+          "full dance/adjudication trigger search, source-order/clock or independent terminal interfaces",
+          "mode pool or entire adaptation, extra secrecy/publicity or full repetition key/fieldmap",
+          "game code/runtime, scoring thaw or NET resume"
+        ],
+        "verification": {
+          "source_confirmation": "V2 explicit user statement and complete prior candidate",
+          "DW_S01_DW01_DW08": "unrun conditional same-assistant cases",
+          "game_code_changes": 0,
+          "engine_tests": 0
+        },
+        "handoff": {
+          "main_received_verified": null,
+          "other_mode_adoption_verified": null,
+          "automatic_messages_sent": false,
+          "containing_commit": "Resolve from Git history after publication."
+        }
+      }
+    }
+  ],
+  "previous_H21_main_stage_receipt": {
+    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "receipt": {
+      "source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+      "observed_at_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+      "actual_read_files_and_sections": [
+        {
+          "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+          "scope": "full current r20 return metadata/confirmed-delta kinds/shared questions; no underlying full H21 body/spec read"
+        },
+        {
+          "path": "worklines/half_chaos/READ_RECEIPTS.json",
+          "scope": "latest_by_source.main and standard_shared_D01 complete receipt fields; not reread of their historic underlying sources"
+        }
+      ],
+      "received_scope": "r20 H21 stage metadata, new reveal/control source question, actual D01 four-confirmation consumption and prior main receipt scopes",
+      "adopted_scope": [
+        "Record declared36 unrun H21 specs and next mutation coverage audit.",
+        "Queue new HC-MAIN-H21-REVEAL-CONTROL as original-authority pending; no new rule approval.",
+        "Recognize actual half_chaos consumption of four original shared D01 confirmations within legal mode scope."
+      ],
+      "not_adopted": [
+        "full8.35/8.36 prefix/spec source verification",
+        "new reveal-after-control entitlement or reselection policy",
+        "H21 specs as runtime acceptance",
+        "current main1.52 uptake"
+      ],
+      "sender_prior_adoption": {
+        "main_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+        "main_adopted": [
+          "previous_half_chaos_confirmations_and_H10_restoration_already_in_main_documents",
+          "H14_current_plus6_and_information_permissions",
+          "GitHub_fixed_workline_incremental_handoff",
+          "latest main recovery and current shared unresolved scope; preserve repetition pending",
+          "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016 consumed only for half_chaos as existing shared confirmed design",
+          "main actual H14/H16 stage receipt within declared excerpts/metadata scope",
+          "H20 prerequisite remains pending; r18 stage scope verified from actual receipt; no r19 reading inferred",
+          "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016 consumed for half_chaos as confirmed design, not runtime",
+          "main actual scoped r18 river stage receipt and1.50 local consumption recognition",
+          "current main source/receipt metadata rechecked; H20 and river qualification remain pending; no new rule adopted this round",
+          "main actual r19 selected-contract/source-question and own1.51-consumption receipt only, not all prefixes/runtime"
+        ],
+        "main_not_adopted": [
+          {
+            "item": "standard_H14_exclusion_and_standard_H03/H13_specific_rules",
+            "reason": "scope is standard only"
+          },
+          {
+            "item": "full_adjudication_record",
+            "reason": "only listed fields targeted; full body not claimed read"
+          },
+          {
+            "item": "full_repetition_fieldmap_and_runtime",
+            "reason": "1.51 only confirms identity equivalence; representation/pressure/implementation remain pending"
+          },
+          {
+            "item": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+            "reason": "explicit main candidate still pending; current continuation not approval"
+          }
+        ],
+        "standard_D01_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+        "standard_D01_adopted": [
+          "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
+          "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
+          "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+          "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016"
+        ],
+        "standard_D01_guard": "only half_chaos where D01 already legally available; no ordinary initialization or pool approval; no runtime"
+      },
+      "previous_stage_source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f"
+    }
+  },
+  "H15_first_tick": {
+    "status": "CONFIRMED_DESIGN_ENGINE_UNRUN",
+    "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "local_consumption": true,
+    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "not_new_local_user_approval": true
+  },
+  "D01_own_action_deadline": {
+    "status": "CONFIRMED_DESIGN_ENGINE_UNRUN",
+    "id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "original_source": "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+    "local_adoption": true,
+    "new_local_user_rule_confirmation": false
+  },
+  "previous_r21_shared_confirmations_consumed": [
+    {
       "repository": "aaaycc931-droid/lezi-handoff-packages",
       "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
       "path": "worklines/main/ADJUDICATION.json",
@@ -671,91 +730,215 @@
       }
     }
   ],
-  "previous_H21_main_stage_receipt": {
-    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-    "receipt": {
-      "source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
-      "observed_at_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
-      "actual_read_files_and_sections": [
-        {
-          "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
-          "scope": "full current r20 return metadata/confirmed-delta kinds/shared questions; no underlying full H21 body/spec read"
-        },
-        {
-          "path": "worklines/half_chaos/READ_RECEIPTS.json",
-          "scope": "latest_by_source.main and standard_shared_D01 complete receipt fields; not reread of their historic underlying sources"
-        }
-      ],
-      "received_scope": "r20 H21 stage metadata, new reveal/control source question, actual D01 four-confirmation consumption and prior main receipt scopes",
-      "adopted_scope": [
-        "Record declared36 unrun H21 specs and next mutation coverage audit.",
-        "Queue new HC-MAIN-H21-REVEAL-CONTROL as original-authority pending; no new rule approval.",
-        "Recognize actual half_chaos consumption of four original shared D01 confirmations within legal mode scope."
-      ],
-      "not_adopted": [
-        "full8.35/8.36 prefix/spec source verification",
-        "new reveal-after-control entitlement or reselection policy",
-        "H21 specs as runtime acceptance",
-        "current main1.52 uptake"
-      ],
-      "sender_prior_adoption": {
-        "main_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
-        "main_adopted": [
-          "previous_half_chaos_confirmations_and_H10_restoration_already_in_main_documents",
-          "H14_current_plus6_and_information_permissions",
-          "GitHub_fixed_workline_incremental_handoff",
-          "latest main recovery and current shared unresolved scope; preserve repetition pending",
-          "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016 consumed only for half_chaos as existing shared confirmed design",
-          "main actual H14/H16 stage receipt within declared excerpts/metadata scope",
-          "H20 prerequisite remains pending; r18 stage scope verified from actual receipt; no r19 reading inferred",
-          "CONF-THREE-MODE-REPETITION-PUBLIC-BODY-EQUIVALENCE-20261016 consumed for half_chaos as confirmed design, not runtime",
-          "main actual scoped r18 river stage receipt and1.50 local consumption recognition",
-          "current main source/receipt metadata rechecked; H20 and river qualification remain pending; no new rule adopted this round",
-          "main actual r19 selected-contract/source-question and own1.51-consumption receipt only, not all prefixes/runtime"
+  "previous_r21_main_confirmations_consumed": [
+    {
+      "repository": "aaaycc931-droid/lezi-handoff-packages",
+      "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+      "path": "worklines/main/ADJUDICATION.json",
+      "git_blob_sha": "fdc333c5e264463ffee9eb3345e628aa63d10c22",
+      "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+      "source_workline": "main",
+      "read_scope": "complete H15_first_cultivation_tick policy and matching original confirmation; not full adjudication semantic audit",
+      "local_scope": "half_chaos",
+      "new_local_user_approval": false,
+      "implementation": false,
+      "confirmed_at_local": "2026-10-16T20:23:07+08:00",
+      "policy": {
+        "status": "user_confirmed_design_not_implemented",
+        "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+        "scope": [
+          "original_jieqi",
+          "standard_xiangqi",
+          "half_chaos"
         ],
-        "main_not_adopted": [
+        "opening_successful_start_first_increment": "first actually reached own normal formal-begin cultivation settlement",
+        "opening_start_itself_adds_progress": false,
+        "late_start_after_own_begin_closed_progress_at_start": 0,
+        "late_start_first_increment": "next actually reached own normal formal-begin cultivation settlement",
+        "retroactive_increment_at_already_closed_begin": false,
+        "preserved_increment_per_later_eligible_own_normal_begin": 1,
+        "extra_forced_child_shuffle_action_or_duplicate_delivery_itself_adds_progress": false,
+        "failed_training_or_terminal_creates_new_cultivation_opportunity": false,
+        "confirmed_text": [
+          "开局成功启动训练：第一次培养+1发生在实际到达的首个己方正常正式回合开始培养结算；开局启动本身不额外送一次进度。",
+          "在第T个己方正常正式回合开始结算后成功启动：该次已闭合的开始结算不追补培养，启动时进度0；第一次+1发生在后续实际到达的下一个己方正常正式回合开始培养结算。",
+          "其后沿用既有规则：每个合格己方正常正式回合开始累计1；达到当前有效兵种成本时按既有合法来源处理毕业。",
+          "额外、强迫、技能子行动、洗牌动作及重复递送本身不另加培养；已经失败或终局后不虚造新的培养机会。"
+        ],
+        "example_timelines": [
           {
-            "item": "standard_H14_exclusion_and_standard_H03/H13_specific_rules",
-            "reason": "scope is standard only"
+            "case": "兵成本2；开局成功启动，受训棋一直存活且后续培养结算合法",
+            "timeline": [
+              "首个己方正常正式回合开始1/2",
+              "第二个己方正常正式回合开始2/2，进入既有毕业处理"
+            ]
           },
           {
-            "item": "full_adjudication_record",
-            "reason": "only listed fields targeted; full body not claimed read"
+            "case": "兵成本2；在己方T5开始结算后成功启动，受训棋一直存活且后续培养结算合法",
+            "timeline": [
+              "T5启动0/2",
+              "T6开始1/2",
+              "T7开始2/2，进入既有毕业处理"
+            ]
           },
           {
-            "item": "full_repetition_fieldmap_and_runtime",
-            "reason": "1.51 only confirms identity equivalence; representation/pressure/implementation remain pending"
-          },
-          {
-            "item": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
-            "reason": "explicit main candidate still pending; current continuation not approval"
+            "case": "同一begin重复请求或追加子行动",
+            "timeline": [
+              "不额外增加培养"
+            ]
           }
         ],
-        "standard_D01_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
-        "standard_D01_adopted": [
-          "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
-          "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
-          "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
-          "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016"
+        "remaining_separate": [
+          "training start action cost",
+          "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
+          "H15 progress mandatory publicity or forced privacy, status/failure output",
+          "H15 first tick versus M07 same-begin ordering",
+          "H06 progress/body/status restoration beyond existing exception",
+          "other modes H11 space semantics",
+          "complete repetition key, pressure, implementation/runtime/scoring/NET"
         ],
-        "standard_D01_guard": "only half_chaos where D01 already legally available; no ordinary initialization or pool approval; no runtime"
+        "verification": "confirmed design; abstract timelines unrun, engine0"
       },
-      "previous_stage_source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f"
+      "original_confirmation": {
+        "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+        "confirmed_at_local": "2026-10-16T20:23:07+08:00",
+        "user_quote": "同意方案",
+        "source_type": "direct_user_confirmation_of_immediately_preceding_three_mode_H15_first_tick_question",
+        "candidate_id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+        "reviewed_candidate": {
+          "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
+          "path": "candidates/h15-first-cultivation-tick/v1.json",
+          "git_blob_sha": "6128a28739b8e98aa40b9dfb7a40a3bdcbfda115"
+        },
+        "immediately_preceding_question": "是否同意这一首次计数方案用于三个模式？",
+        "presented_clauses": [
+          "开局启动：首个己方正常正式回合开始时培养+1。",
+          "中途在开始结算后启动：当回合不补进度，从下个己方正常正式回合开始+1。",
+          "兵成本2：T5开始结算后启动0/2，T6为1/2，T7为2/2并按既有合法来源处理毕业。"
+        ],
+        "mode_ids": [
+          "original_jieqi",
+          "standard_xiangqi",
+          "half_chaos"
+        ],
+        "scope": "First cultivation increment after a successful initial training start only; preserves existing later normal-begin progression.",
+        "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_timing_updates/H15_first_cultivation_tick",
+        "not_inferred": [
+          "training start action cost",
+          "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
+          "H15 progress mandatory publicity or forced privacy, status/failure output",
+          "H15 first tick versus M07 same-begin ordering",
+          "H06 progress/body/status restoration beyond existing exception",
+          "other modes H11 space semantics",
+          "complete repetition key, pressure, implementation/runtime/scoring/NET"
+        ],
+        "implementation_status": "confirmed_design_not_implemented",
+        "new_engine_tests": 0
+      }
     }
+  ],
+  "D01_safety_prefix_phase": {
+    "new_rules": 0,
+    "existing_confirmations_reused": [
+      "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+      "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016"
+    ],
+    "original_sources_reread": [
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+        "read_scope": "full original confirmation JSON; existing shared design reused, not a new confirmation"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+        "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+        "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+        "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+        "read_scope": "full original confirmation JSON; existing shared design reused, not a new confirmation"
+      }
+    ],
+    "all_five_existing_D01_confirmations_preserved": true,
+    "spec_count": 28,
+    "spec_status": "UNRUN"
   },
-  "H15_first_tick": {
-    "status": "CONFIRMED_DESIGN_ENGINE_UNRUN",
-    "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
-    "local_consumption": true,
-    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-    "not_new_local_user_approval": true
-  },
-  "D01_own_action_deadline": {
-    "status": "CONFIRMED_DESIGN_ENGINE_UNRUN",
-    "id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
-    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-    "original_source": "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
-    "local_adoption": true,
-    "new_local_user_rule_confirmation": false
+  "H10_M05_palace_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+    "source_workline": "standard",
+    "source_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+    "source_path": "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+    "git_blob_sha": "e24713bec82868e50c36087cb088cb61723a1db1",
+    "read_scope": "full original confirmation; complete new shared02 and03 insertion; D01 text exact unchanged",
+    "local_scope": "half_chaos only where H10 and M05 both legally effective",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "original_confirmation": {
+      "schema": "lezi.shared_gameplay_confirmation.v1",
+      "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "confirmed_at_local": "2026-10-16T21:33:47+08:00",
+      "user_quote": "我同意",
+      "origin_workline": "standard",
+      "review_id": "SHARED-H10-M05-DANCE-PALACE",
+      "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_H10_M05_palace_question",
+      "reviewed_candidate": {
+        "commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜H10与M05的流舞九宫边界"
+      },
+      "immediately_preceding_question": "是否同意此方案作为三个模式中该合法组合的共用规则？",
+      "presented_clauses": [
+        "H10与M05均合法生效时，流舞也解除九宫限制。",
+        "每步仍横竖一格、最多两步；原触发资格与最终安全要求保持。"
+      ],
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only modes where H10 and M05 are both legally effective. No pool/init approval, no dance qualification granted merely by being outside palace.",
+      "policy": {
+        "H10_and_M05_legally_effective_required": true,
+        "M05_removes_palace_limit_for_flow_dance": true,
+        "M05_absent_original_H10_palace_limit_preserved": true,
+        "each_dance_step": "exactly one orthogonal square within board",
+        "max_dance_steps": 2,
+        "rook_length_or_diagonal_dance_step_allowed": false,
+        "original_first_shadow_adjudication_successful_flow_requirement_preserved": true,
+        "ordinary_check_or_outside_palace_alone_grants_dance": false,
+        "second_shadow_gets_dance": false,
+        "first_step_temporary_attack_exception_and_early_safe_stop_preserved": true,
+        "final_required_safety_and_failed_escape_original_adjudication_preserved": true,
+        "source_occupancy_suffocation_blockade_landing_or_terminal_waived": false,
+        "new_return_position_or_push_out_occupant_granted": false,
+        "hidden_host_cooldown_count_disclosure_changed": false,
+        "mode_pool_availability_full_checkmate_search_clock_or_repetition_fieldmap_approved": false
+      },
+      "preserved": [
+        "Existing H10 first/second-shadow, flow and private-information rules.",
+        "Original M05 public-role/host distinction, ordinary rook-style action and one-step dance distinction.",
+        "All existing ordinary/shared confirmations and pause/implementation boundaries."
+      ],
+      "not_confirmed": [
+        "new M06-generated-horse qualification or other pending crosses",
+        "full dance/adjudication trigger search, source-order/clock or independent terminal interfaces",
+        "mode pool or entire adaptation, extra secrecy/publicity or full repetition key/fieldmap",
+        "game code/runtime, scoring thaw or NET resume"
+      ],
+      "verification": {
+        "source_confirmation": "V2 explicit user statement and complete prior candidate",
+        "DW_S01_DW01_DW08": "unrun conditional same-assistant cases",
+        "game_code_changes": 0,
+        "engine_tests": 0
+      },
+      "handoff": {
+        "main_received_verified": null,
+        "other_mode_adoption_verified": null,
+        "automatic_messages_sent": false,
+        "containing_commit": "Resolve from Git history after publication."
+      }
+    }
   }
 }

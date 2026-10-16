@@ -3,36 +3,19 @@
   "receiver_workline": "half_chaos",
   "latest_by_source": {
     "main": {
-      "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+      "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
       "actual_reading": [
         {
-          "path": "worklines/main/ADJUDICATION.json",
-          "scope": "full shared_hero_timing_updates.H15_first_cultivation_tick and matching project_specific_confirmations original record; not full adjudication audit"
+          "path": "worklines/main/CURRENT_STATE.json",
+          "scope": "current status/version/next/authorization/collaboration fields, not a full new underlying authority audit"
         },
         {
           "path": "worklines/main/READ_RECEIPTS.json",
           "scope": "complete latest_by_source.half_chaos row"
-        },
-        {
-          "path": "worklines/main/SHARED_COORDINATION.json",
-          "scope": "complete affected H15/tier/M05/D01/river/H21 and independent half_chaos items; not all underlying authority sources"
-        },
-        {
-          "path": "worklines/main/CURRENT_STATE.json",
-          "scope": "full"
-        },
-        {
-          "path": "worklines/main/PENDING_DECISION.json",
-          "scope": "full"
-        },
-        {
-          "path": "worklines/main/START_HERE.txt",
-          "scope": "full"
         }
       ],
       "received": [
-        "main1.52 H15 first tick original confirmation and policy",
-        "actual main r20 metadata-only receipt; full H21 body not reviewed"
+        "main1.52 unchanged status and actual r20 metadata receipt"
       ],
       "adopted": [
         "previous_half_chaos_confirmations_and_H10_restoration_already_in_main_documents",
@@ -71,7 +54,7 @@
         }
       ],
       "does_not_assert_other_receiver_reading": true,
-      "prior_snapshot_source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+      "prior_snapshot_source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
       "prior_not_adopted_history": [
         {
           "item": "repetition_segment_policy",
@@ -186,7 +169,8 @@
           "implementation_status": "confirmed_design_not_implemented",
           "new_engine_tests": 0
         }
-      }
+      },
+      "current_phase_new_adoption": []
     },
     "standard_shared_D01": {
       "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
@@ -270,19 +254,88 @@
         "pool/initialization/runtime changes"
       ],
       "main_receipt_of_new_standard_confirmation": "unknown"
+    },
+    "standard_D01_safety_originals": {
+      "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+      "actual_reading": [
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+          "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+          "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+          "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+          "read_scope": "full original confirmation JSON; existing shared design reused, not a new confirmation"
+        },
+        {
+          "repository": "aaaycc931-droid/lezi-handoff-packages",
+          "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+          "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+          "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+          "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+          "read_scope": "full original confirmation JSON; existing shared design reused, not a new confirmation"
+        }
+      ],
+      "received": [
+        "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+        "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016"
+      ],
+      "adopted": "already adopted common rules retained; now natural-prefix application only, no new rule consumption",
+      "not_adopted": [
+        "mode pool/ordinary initialization transfer",
+        "full skill-search/terminal/clock/source-order completion",
+        "runtime/privacy/engine acceptance"
+      ]
+    },
+    "standard_shared_H10_M05_palace": {
+      "source_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+      "actual_reading": [
+        {
+          "path": "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+          "scope": "full original confirmation JSON",
+          "git_blob_sha": "e24713bec82868e50c36087cb088cb61723a1db1"
+        },
+        {
+          "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+          "scope": "complete new H10/M05 palace insertion and unchanged surrounding source compared",
+          "git_blob_sha": "bc082f90b404d4e5c93d0e29fb0d9be4aa5d5c80"
+        },
+        {
+          "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+          "scope": "complete new M05 palace insertion; D01 exact unchanged",
+          "git_blob_sha": "22f2a474e682625baaee09de364ec23217cf23ff"
+        },
+        {
+          "path": "worklines/standard/CURRENT_STATE.json",
+          "scope": "current next_task metadata complete; full M06 candidate not read"
+        }
+      ],
+      "received": [
+        "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016"
+      ],
+      "adopted": [
+        "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016 only legal H10+M05 in half_chaos; no new long dance geometry or original qualification change"
+      ],
+      "not_adopted": [
+        "M06 generated horse candidate",
+        "pool/init/complete search/runtime/extra hidden-publicity changes"
+      ],
+      "main_receipt_of_new_confirmation": "unknown"
     }
   },
   "own_line_continuation": {
-    "source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+    "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "revision": "HC-DESIGN-03-20261016-r21",
     "read": [
-      "current entry/state/next/project agreement",
-      "WORKING full r20 reused exact blob; mutation/combination/time/identity sections actually reread",
-      "CONFIRMATIONS/SOURCE_INDEX/receipts prior valid scope reused"
+      "entry/current state/next/project agreement",
+      "WORKING mutation audit ET families and safety fixture gaps",
+      "CONFIRMATIONS/SOURCE_INDEX prior exact sources",
+      "success evidence of previous publication"
     ],
-    "adopted": "mutation audit breakpoint and all valid confirmations; continuation not new rule approval"
+    "adopted": "D01 safety-prefix next action and all existing confirmed rules; continuation does not approve any new candidate"
   },
   "main_receipt_recheck": {
-    "observed_at_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "observed_at_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "git_blob_sha": "2b67cf18ef016bbbf861761a44d829e7bfe041f1",
     "actual_receiver_record": {
       "source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
       "observed_at_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
@@ -352,7 +405,8 @@
       },
       "previous_stage_source_commit": "d22aa12f588ba4aa7a4023a80a518a0e8851dd7f"
     },
-    "scope": "r20 stage metadata only; not full8.35/8.36 or runtime; r21 not inferred"
+    "r21_received": null,
+    "r22_received": null
   },
   "h21_source_review": {
     "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
@@ -365,7 +419,7 @@
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-16.v0.12",
     "formal_baseline": "1.8.0",
-    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "body_git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
     "body_sha256": "f66c64a95b143afca89c42fa0b9764458123af6aa5c15cf336972639100297fc",
     "version_scope": "observed_at_source_commit_not_a_new_global_version",
@@ -389,7 +443,11 @@
     "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
     "actual_read": "INTEGRATED_START/TASK_ROUTES/GITHUB_HANDOFF_WORKFLOW/MANDATORY_PRECHECK/PART-6_CURRENT_STATE complete",
     "unchanged_comparison": "seven named modules exact equal to previously fully read v0.10 and inherited v0.11",
-    "effectiveness_verified": false
+    "effectiveness_verified": false,
+    "r22_actual_reread": [
+      "MANDATORY_PRECHECK",
+      "TEMPORAL_OPPORTUNITY_CHECK"
+    ]
   },
   "mutation_audit_source_review": {
     "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
@@ -421,5 +479,97 @@
       "unapproved M05 palace candidate"
     ],
     "rules_sources_02_03_and_main_collab_half_chaos_targets": "unchanged from b6eb verified by tree"
+  },
+  "D01_safety_source_review": {
+    "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "families": [
+      "DS01",
+      "DS02",
+      "DS03",
+      "DS04",
+      "DS05"
+    ],
+    "new_manual_prefix_families": 5,
+    "continuation_family": "DS02 continues actual DS01; no independent new opening claimed",
+    "new_spec_ids": [
+      "DS-S01",
+      "DS-S02",
+      "DS-S03",
+      "DS-S04",
+      "DS-S05",
+      "DS-S06",
+      "DS-S07",
+      "DS-S08",
+      "DS-S09",
+      "DS-S10",
+      "DS-S11",
+      "DS-S12",
+      "DS-S13",
+      "DS-S14",
+      "DS-S15",
+      "DS-S16",
+      "DS-S17",
+      "DS-S18",
+      "DS-S19",
+      "DS-S20",
+      "DS-S21",
+      "DS-S22",
+      "DS-S23",
+      "DS-S24",
+      "DS-S25",
+      "DS-S26",
+      "DS-S27",
+      "DS-S28"
+    ],
+    "unrun_spec_count": 28,
+    "all_spec_status": "UNRUN",
+    "working_section": "8.40",
+    "mode": "half_chaos",
+    "hero_pair": [
+      "H06",
+      "H05"
+    ],
+    "mutation": "D01 only where legally available; ordinary hero skills replaced",
+    "coverage": [
+      "live-warrior return relieves check",
+      "dead-warrior revival relieves check",
+      "still in check rejects entire glass without partial board/cleanse/reload/cost",
+      "initially safe but return exposes king rejects",
+      "in-check bomb rejects, ordinary evasion closes current window, new legal next turn can bomb"
+    ],
+    "old_fixture_gap_mapping": [
+      "ET-S15 -> DS01/DS02/DS03/DS05",
+      "ET-S16 -> DS04"
+    ],
+    "runtime": false,
+    "independent_review": false,
+    "verification": "V2 sources plus V1 same-assistant manual geometric inference",
+    "unproved": [
+      "same-window first safe/second unsafe glass natural case",
+      "multiple attack geometry and no-response full search",
+      "independent terminal branches/end-phase new acquisition/full ordering",
+      "actual privacy/clock/dedup/canonical body/pressure/key implementation"
+    ],
+    "original_confirmation_full_rereads": [
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+        "read_scope": "full original confirmation JSON; existing shared design reused, not a new confirmation"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+        "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+        "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+        "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+        "read_scope": "full original confirmation JSON; existing shared design reused, not a new confirmation"
+      }
+    ],
+    "current03": "complete D01 reread from locally restored exact5187c200 remote object; all five original confirmation identities checked",
+    "current01": "relocation/revival/rewind complete sections reread; other unchanged actions/geometry/dark-identity contracts reused",
+    "collaboration": "v0.12 unchanged; mandatory and temporal modules full actual reread, prior full modules reused"
   }
 }

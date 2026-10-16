@@ -3,10 +3,10 @@
   "base_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
   "current_shared_heroes": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
-    "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
     "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-    "git_blob_sha": "5733606a56746e9ad6b5b94d0f586f0bc3d24adc",
-    "read_scope": "H15 full and complete concurrent insertion/correction; other earlier same-object contracts unchanged"
+    "git_blob_sha": "bc082f90b404d4e5c93d0e29fb0d9be4aa5d5c80",
+    "read_scope": "prior complete source contracts reused; complete new H10 M05 insertion read"
   },
   "current_shared_confirmation_registry": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -16,10 +16,10 @@
   },
   "current_mutations": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
-    "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
     "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-    "git_blob_sha": "5187c20027a27ddb9492ef241f91947b0c2131dd",
-    "read_scope": "full initial body plus complete exact concurrent insertion, full semantic coverage"
+    "git_blob_sha": "22f2a474e682625baaee09de364ec23217cf23ff",
+    "read_scope": "previous full body plus complete new M05 insertion; D01 exact unchanged and reread this phase"
   },
   "previous_complete_working_body": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -2147,9 +2147,10 @@
   },
   "latest_main_receipt_check": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
-    "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "path": "worklines/main/READ_RECEIPTS.json",
-    "read_scope": "complete half_chaos row, main r20 metadata receipt only"
+    "git_blob_sha": "2b67cf18ef016bbbf861761a44d829e7bfe041f1",
+    "read_scope": "complete half_chaos row; still r20 metadata, no r21 receipt"
   },
   "main1_51_confirmation_consumption": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -2308,7 +2309,7 @@
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-16.v0.12",
     "formal_baseline": "1.8.0",
-    "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "body_git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
     "body_sha256": "f66c64a95b143afca89c42fa0b9764458123af6aa5c15cf336972639100297fc",
     "version_scope": "observed_at_source_commit_not_a_new_global_version",
@@ -2329,7 +2330,11 @@
       "FILE_OUTPUT_POLICY"
     ],
     "gate": "L3",
-    "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md"
+    "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
+    "r22_actual_reread": [
+      "MANDATORY_PRECHECK",
+      "TEMPORAL_OPPORTUNITY_CHECK"
+    ]
   },
   "mutation_coverage_audit": {
     "objects": [
@@ -2652,5 +2657,198 @@
         "containing_publication_commit": "Resolve from Git history; not prefilled as a future self commit."
       }
     }
+  },
+  "D01_safety_prefix_review": {
+    "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+    "families": [
+      "DS01",
+      "DS02",
+      "DS03",
+      "DS04",
+      "DS05"
+    ],
+    "new_manual_prefix_families": 5,
+    "continuation_family": "DS02 continues actual DS01; no independent new opening claimed",
+    "new_spec_ids": [
+      "DS-S01",
+      "DS-S02",
+      "DS-S03",
+      "DS-S04",
+      "DS-S05",
+      "DS-S06",
+      "DS-S07",
+      "DS-S08",
+      "DS-S09",
+      "DS-S10",
+      "DS-S11",
+      "DS-S12",
+      "DS-S13",
+      "DS-S14",
+      "DS-S15",
+      "DS-S16",
+      "DS-S17",
+      "DS-S18",
+      "DS-S19",
+      "DS-S20",
+      "DS-S21",
+      "DS-S22",
+      "DS-S23",
+      "DS-S24",
+      "DS-S25",
+      "DS-S26",
+      "DS-S27",
+      "DS-S28"
+    ],
+    "unrun_spec_count": 28,
+    "all_spec_status": "UNRUN",
+    "working_section": "8.40",
+    "mode": "half_chaos",
+    "hero_pair": [
+      "H06",
+      "H05"
+    ],
+    "mutation": "D01 only where legally available; ordinary hero skills replaced",
+    "coverage": [
+      "live-warrior return relieves check",
+      "dead-warrior revival relieves check",
+      "still in check rejects entire glass without partial board/cleanse/reload/cost",
+      "initially safe but return exposes king rejects",
+      "in-check bomb rejects, ordinary evasion closes current window, new legal next turn can bomb"
+    ],
+    "old_fixture_gap_mapping": [
+      "ET-S15 -> DS01/DS02/DS03/DS05",
+      "ET-S16 -> DS04"
+    ],
+    "runtime": false,
+    "independent_review": false,
+    "verification": "V2 sources plus V1 same-assistant manual geometric inference",
+    "unproved": [
+      "same-window first safe/second unsafe glass natural case",
+      "multiple attack geometry and no-response full search",
+      "independent terminal branches/end-phase new acquisition/full ordering",
+      "actual privacy/clock/dedup/canonical body/pressure/key implementation"
+    ],
+    "original_confirmation_rereads": [
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+        "read_scope": "full original confirmation JSON; existing shared design reused, not a new confirmation"
+      },
+      {
+        "repository": "aaaycc931-droid/lezi-handoff-packages",
+        "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+        "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+        "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+        "confirmation_id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+        "read_scope": "full original confirmation JSON; existing shared design reused, not a new confirmation"
+      }
+    ],
+    "current_rules": {
+      "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+      "git_blob_sha": "5187c20027a27ddb9492ef241f91947b0c2131dd",
+      "read_scope": "complete D01; remaining mutation audit inherited"
+    },
+    "base_rules": {
+      "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+      "git_blob_sha": "e6daf86145453a0ff8ad20d68facc39d07c46778",
+      "read_scope": "complete relocation/revival/rewind distinction reread; prior exact action/dark-identity/geometry source reused"
+    }
+  },
+  "H10_M05_palace_confirmation_consumption": {
+    "id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+    "source_workline": "standard",
+    "source_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+    "source_path": "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+    "git_blob_sha": "e24713bec82868e50c36087cb088cb61723a1db1",
+    "read_scope": "full original confirmation; complete new shared02 and03 insertion; D01 text exact unchanged",
+    "local_scope": "half_chaos only where H10 and M05 both legally effective",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "original_confirmation": {
+      "schema": "lezi.shared_gameplay_confirmation.v1",
+      "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "confirmed_at_local": "2026-10-16T21:33:47+08:00",
+      "user_quote": "我同意",
+      "origin_workline": "standard",
+      "review_id": "SHARED-H10-M05-DANCE-PALACE",
+      "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_H10_M05_palace_question",
+      "reviewed_candidate": {
+        "commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜H10与M05的流舞九宫边界"
+      },
+      "immediately_preceding_question": "是否同意此方案作为三个模式中该合法组合的共用规则？",
+      "presented_clauses": [
+        "H10与M05均合法生效时，流舞也解除九宫限制。",
+        "每步仍横竖一格、最多两步；原触发资格与最终安全要求保持。"
+      ],
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only modes where H10 and M05 are both legally effective. No pool/init approval, no dance qualification granted merely by being outside palace.",
+      "policy": {
+        "H10_and_M05_legally_effective_required": true,
+        "M05_removes_palace_limit_for_flow_dance": true,
+        "M05_absent_original_H10_palace_limit_preserved": true,
+        "each_dance_step": "exactly one orthogonal square within board",
+        "max_dance_steps": 2,
+        "rook_length_or_diagonal_dance_step_allowed": false,
+        "original_first_shadow_adjudication_successful_flow_requirement_preserved": true,
+        "ordinary_check_or_outside_palace_alone_grants_dance": false,
+        "second_shadow_gets_dance": false,
+        "first_step_temporary_attack_exception_and_early_safe_stop_preserved": true,
+        "final_required_safety_and_failed_escape_original_adjudication_preserved": true,
+        "source_occupancy_suffocation_blockade_landing_or_terminal_waived": false,
+        "new_return_position_or_push_out_occupant_granted": false,
+        "hidden_host_cooldown_count_disclosure_changed": false,
+        "mode_pool_availability_full_checkmate_search_clock_or_repetition_fieldmap_approved": false
+      },
+      "preserved": [
+        "Existing H10 first/second-shadow, flow and private-information rules.",
+        "Original M05 public-role/host distinction, ordinary rook-style action and one-step dance distinction.",
+        "All existing ordinary/shared confirmations and pause/implementation boundaries."
+      ],
+      "not_confirmed": [
+        "new M06-generated-horse qualification or other pending crosses",
+        "full dance/adjudication trigger search, source-order/clock or independent terminal interfaces",
+        "mode pool or entire adaptation, extra secrecy/publicity or full repetition key/fieldmap",
+        "game code/runtime, scoring thaw or NET resume"
+      ],
+      "verification": {
+        "source_confirmation": "V2 explicit user statement and complete prior candidate",
+        "DW_S01_DW01_DW08": "unrun conditional same-assistant cases",
+        "game_code_changes": 0,
+        "engine_tests": 0
+      },
+      "handoff": {
+        "main_received_verified": null,
+        "other_mode_adoption_verified": null,
+        "automatic_messages_sent": false,
+        "containing_commit": "Resolve from Git history after publication."
+      }
+    }
+  },
+  "previous_r21_current_mutations": {
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+    "git_blob_sha": "5187c20027a27ddb9492ef241f91947b0c2131dd",
+    "read_scope": "full initial body plus complete exact concurrent insertion, full semantic coverage"
+  },
+  "previous_r21_current_shared_heroes": {
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+    "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+    "git_blob_sha": "5733606a56746e9ad6b5b94d0f586f0bc3d24adc",
+    "read_scope": "H15 full and complete concurrent insertion/correction; other earlier same-object contracts unchanged"
+  },
+  "current_source_status_overrides": {
+    "STD-M05-H10-DANCE-REGION": "resolved by CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+    "MU-S15": "source-confirmed palace removal only; specification remains UNRUN"
   }
 }
