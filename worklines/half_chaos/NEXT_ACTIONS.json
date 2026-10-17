@@ -1,5 +1,5 @@
 {
-  "revision": "HC-DESIGN-03-20261017-r25",
+  "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
   "next_independent_task": {
     "id": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
     "action": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
@@ -9,7 +9,8 @@
       "28 bounded Fisher-Yates initial draws per plan plus slot/source identity references",
       "DS01/DS02 share one actual replay world; PD05/06 paired worlds differ only allowed secret swap",
       "data integrity not relabeled engine pass; mode gate and shared source issues remain"
-    ]
+    ],
+    "status": "NOT_STARTED"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -438,5 +439,33 @@
       "owner": "main shared M01 geometry/source implementation alignment",
       "runtime_reproduced": false
     }
-  ]
+  ],
+  "session_closeout": {
+    "scope": "this_conversation_only",
+    "last_completed_design_revision": "HC-DESIGN-03-20261017-r25",
+    "next_task_status": "NOT_STARTED",
+    "other_worklines_continue": true,
+    "resume": {
+      "entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_HERE.md",
+      "workline_entry": "worklines/half_chaos/START_HERE.txt",
+      "next_task": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+      "next_task_status": "NOT_STARTED",
+      "action": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
+      "instruction": "继续《乐子象棋》半混乱揭棋工作线。从固定项目入口核对最新HEAD和本线收束，继承有效确认，接续NEXT-HC-INITIALIZATION-WITNESS-DATA。共享冲突回主线，独立工作继续；评分冻结、NET暂停，不把未运行规格标为通过。",
+      "read_order": [
+        "root START_HERE/CURRENT_HANDOFF and current own state",
+        "collaboration/CURRENT.json actual current body per task and PROJECT_WORK_AGREEMENT",
+        "own WORKING current0/8.46 and relevant full8.40/8.42/8.44/8.45",
+        "CONFIRMATIONS/SOURCE_INDEX and ACCEPTANCE_SCOPE/ENGINE_SOURCE_INVENTORY",
+        "actual main/standard current deltas, raw confirmations by scope and receiver-owned receipts",
+        "NEXT_ACTIONS and RETURN_TO_MAIN"
+      ],
+      "guards": [
+        "read newest repository state before reusing this closeout; later actual confirmations override earlier pending in historical records",
+        "protect any unreturned work in receiving conversation before using older snapshot",
+        "business source14b is r25 fixed inspection evidence, recheck actual branch/PR before future use",
+        "no business code/runtime/mode admission inferred from continue or closeout"
+      ]
+    }
+  }
 }

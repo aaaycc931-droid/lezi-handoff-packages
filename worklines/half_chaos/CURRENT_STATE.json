@@ -1,19 +1,19 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-DESIGN-03-20261017-r25",
+  "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
   "workline": "half_chaos",
   "date_local": "2026-10-17",
   "timezone": "Asia/Shanghai",
-  "status": "actual_engine_source_inventory_partial_12_replays_mode_blocked_64_specs_unrun",
+  "status": "session_closed_only_resume_checkpoint_available",
   "baseline_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
-  "authorization": "2026-10-17 user 进行下一步的推进 continues previously stated read-only actual engine source inventory and own-line documentation/writeback; no game code/run or new gameplay approval",
+  "authorization": "2026-10-17 10:40:16 user 现在进行本轮的收束 authorizes this-conversation closeout and existing fixed handoff writeback only; other worklines continue",
   "collaboration": {
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-16.v0.12",
     "formal_baseline": "1.8.0",
-    "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+    "source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
     "body_git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
     "body_sha256": "f66c64a95b143afca89c42fa0b9764458123af6aa5c15cf336972639100297fc",
     "version_scope": "observed_at_source_commit_not_a_new_global_version",
@@ -54,6 +54,11 @@
     "r25_actual_reread": [
       "MANDATORY_PRECHECK",
       "AI_LIMITATION_CONTROL"
+    ],
+    "closeout_actual_reread": [
+      "MANDATORY_PRECHECK",
+      "COMPLETION_STATUS",
+      "GITHUB_HANDOFF_WORKFLOW daily writeback/phase handoff section"
     ]
   },
   "recovery": {
@@ -69,11 +74,9 @@
     "full_chat_export_recovered": false
   },
   "completed_this_round": [
-    "actual engine branches/default/source head/open PRs and f1..14b compare checked",
-    "23 source files retrieved and exact Git-blob cache matched; semantic read scope explicitly limited",
-    "seven acceptance prerequisite source groups mapped",
-    "seven static source/implementation findings reported; all12 replay plans mode blocked",
-    "ordinary-only H15 public-empty original record read and excluded from half_chaos adoption"
+    "verify prior r25 remote/local12 fixed-file blobs and success evidence",
+    "preserve all prior valid source bodies/confirmations and UNRUN statuses",
+    "record conversation-only closeout, unstarted next task and receiver-unknown scope"
   ],
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": [],
@@ -152,8 +155,8 @@
   "source_index": "SOURCE_INDEX.json",
   "return_record": "RETURN_TO_MAIN.json",
   "read_receipts": "READ_RECEIPTS.json",
-  "publication_parent_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-  "latest_main_source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+  "publication_parent_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+  "latest_main_source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
   "concurrent_main_reading": "current status/next metadata and complete half_chaos actual receiver row; r22 metadata only",
   "previous_source_baseline_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
   "completed_since_resume": [
@@ -216,7 +219,7 @@
     "shared_source_alignment": "HC-MAIN-H16-ACTION-TIER"
   },
   "main_receipt_recheck": {
-    "at_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+    "at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
     "git_blob_sha": "b1933b9c69709b4b9c351301816420d3893a1216",
     "actual_receiver_record": {
       "source_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
@@ -350,15 +353,16 @@
         }
       }
     },
-    "scope": "r22 stage metadata/source records, full newer prefixes and r25 unknown"
+    "scope": "r22 metadata/scoped sources only; no later/full-prefix reception inferred"
   },
   "quota_resume_instruction": "2026-10-16 额度已恢复，继续推进: finish preserved H21 publication; no candidate approval",
   "remote_reconciliation": {
-    "source_head": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-    "actual_base_tree_sha": "2a3c4d0eb004ae5c16743adc8599f75bb2c50534",
-    "all_eleven_r24_blobs_match": true,
-    "publication_method": "same verified HEAD tree/parent, expected_sha force=false",
-    "other_worklines": "preserve unrelated paths"
+    "source_head": "93127575c60469d08069a3a6743f3c2a34493deb",
+    "actual_base_tree_sha": "202aa5bebd0f26380a8f7b8c879edec5fdd72fab",
+    "all12_r25_blobs_match": true,
+    "publication_scope": "own closure documents only; confirmations/acceptance/inventory immutable unchanged objects reused",
+    "method": "same HEAD real tree and parent, expected_sha force=false",
+    "other_worklines": "continue; every unrelated path preserved"
   },
   "H17_H18": {
     "source_status": "reviewed",
@@ -429,7 +433,7 @@
       "postbatch new-object interactions"
     ]
   },
-  "latest_main_receipt_observation_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+  "latest_main_receipt_observation_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
   "H21": {
     "source_status": "reviewed_with_M07_reveal_control_source_question",
     "new_local_rule_confirmation": 0,
@@ -1461,5 +1465,61 @@
     "all_UNRUN": true,
     "game_runs": 0,
     "next": "NEXT-HC-INITIALIZATION-WITNESS-DATA"
-  }
+  },
+  "last_completed_design_revision": "HC-DESIGN-03-20261017-r25",
+  "last_completed_design_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+  "session_closeout": {
+    "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
+    "requested_at_local": "2026-10-17T10:40:16+08:00",
+    "request_quote": "现在进行本轮的收束",
+    "scope": "this_conversation_only",
+    "session_status": "closed_after_scoped_writeback",
+    "last_completed_design_revision": "HC-DESIGN-03-20261017-r25",
+    "last_completed_design_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+    "project_or_other_worklines_stopped": false,
+    "other_worklines": "continue independently; no global closeout or stop instruction issued",
+    "next": {
+      "entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_HERE.md",
+      "workline_entry": "worklines/half_chaos/START_HERE.txt",
+      "next_task": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+      "next_task_status": "NOT_STARTED",
+      "action": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
+      "instruction": "继续《乐子象棋》半混乱揭棋工作线。从固定项目入口核对最新HEAD和本线收束，继承有效确认，接续NEXT-HC-INITIALIZATION-WITNESS-DATA。共享冲突回主线，独立工作继续；评分冻结、NET暂停，不把未运行规格标为通过。",
+      "read_order": [
+        "root START_HERE/CURRENT_HANDOFF and current own state",
+        "collaboration/CURRENT.json actual current body per task and PROJECT_WORK_AGREEMENT",
+        "own WORKING current0/8.46 and relevant full8.40/8.42/8.44/8.45",
+        "CONFIRMATIONS/SOURCE_INDEX and ACCEPTANCE_SCOPE/ENGINE_SOURCE_INVENTORY",
+        "actual main/standard current deltas, raw confirmations by scope and receiver-owned receipts",
+        "NEXT_ACTIONS and RETURN_TO_MAIN"
+      ],
+      "guards": [
+        "read newest repository state before reusing this closeout; later actual confirmations override earlier pending in historical records",
+        "protect any unreturned work in receiving conversation before using older snapshot",
+        "business source14b is r25 fixed inspection evidence, recheck actual branch/PR before future use",
+        "no business code/runtime/mode admission inferred from continue or closeout"
+      ]
+    },
+    "new_gameplay_rule_approval": 0,
+    "new_shared_confirmation_consumption": 0,
+    "new_game_specifications": 0,
+    "new_game_code_changes": 0,
+    "new_game_engine_tests": 0,
+    "client_runs": 0,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "main_receipt_verified_scope": "r22 stage metadata and limited source-consumption records only; r23/r24/r25/this closeout reading/adoption unknown",
+    "all_existing_game_specs": "UNRUN",
+    "runtime_evidence_added": false,
+    "remaining": [
+      "all12 planned replays outside current half-chaos mode/research gate;64 old PD/DS specs UNRUN",
+      "EI01—07 static source/implementation questions sent by own RETURN, no runtime reproduction",
+      "12 new initial identity/original-side dictionaries and28-draw witnesses NOT_STARTED",
+      "return-space/extra landing/same-window second unsafe glass natural cases missing",
+      "shared H16/H05 tiers/full legal-response/terminal/source order/pressure/repetition key unresolved",
+      "deep private/historical archives not fully migrated; original protected materials and existing references retained"
+    ],
+    "publication_scope": "own fixed handoff documents only; no ZIP/full archive duplication, other receiver receipt prefill, business repo changes or auto-message"
+  },
+  "next_action_status": "NOT_STARTED_RESUME_FROM_LATEST_ENTRY"
 }
