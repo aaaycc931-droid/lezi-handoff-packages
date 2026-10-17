@@ -2520,7 +2520,8 @@
         "field existence does not establish current source semantics or stable-body/full history correctness",
         "revival removes captured entry; captured list alone cannot prove nonrollback actual-death adjudication history",
         "no runtime snapshots"
-      ]
+      ],
+      "r28_mapping_reference": "OBSERVATION_FIELD_MAPPING.json; static readers/timing gaps only, not adapter or runtime verification"
     },
     {
       "id": "G-VIEW",
@@ -2530,7 +2531,8 @@
         "PD05/06 both-player paired views not run",
         "do not extend old masks/white-lists merely to hide missing or leaked observations",
         "no full privacy/client/server audit"
-      ]
+      ],
+      "r28_mapping_reference": "OBSERVATION_FIELD_MAPPING.json; static readers/timing gaps only, not adapter or runtime verification"
     },
     {
       "id": "G-PHASE",
@@ -2540,7 +2542,8 @@
         "fresh rejected request vs processed delivery retry not executed",
         "direct game function call does not establish room clock behavior",
         "all-source formal sampling/pressure/key unresolved; tier2 code is not new source approval"
-      ]
+      ],
+      "r28_mapping_reference": "OBSERVATION_FIELD_MAPPING.json; static readers/timing gaps only, not adapter or runtime verification"
     },
     {
       "id": "G-EVIDENCE",
@@ -2550,7 +2553,8 @@
         "observer event kinds do not prove every internal path or six-step stage observed",
         "old runner cannot stand in for PD/D01 adapter",
         "no execution command/log/state/player-view evidence generated"
-      ]
+      ],
+      "r28_mapping_reference": "OBSERVATION_FIELD_MAPPING.json; static readers/timing gaps only, not adapter or runtime verification"
     }
   ],
   "deferred_source_obligations": [
@@ -2625,9 +2629,9 @@
     "runtime": false
   },
   "next_task": {
-    "id": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
+    "id": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX",
     "status": "NOT_STARTED",
-    "action": "Read-only map the declared semantic observation checkpoints to existing authority/player-view/phase/deadline/dedup source fields and source gaps; no new protocol fields, business edits, engine runs or mode admission."
+    "action": "For each of the64 existing PD/DS obligations, connect relevant declared checkpoints and existing field groups, separating source-supported data readiness, exact-boundary/implementation blockers and missing natural positives; prepare a finite minimal acceptance readiness summary, no business edits or engine run."
   },
   "publication_protocol": {
     "source_commit": "aaa834161fcd2bd9c8c0604d54ec96f5da2fb28f",
@@ -2676,5 +2680,24 @@
     "engine_runs": 0,
     "protocol_or_executable_adapter": false,
     "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+  },
+  "observation_field_mapping": {
+    "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+    "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
+    "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
+    "status": "STATIC_FIELD_BOUNDARY_MAP_PREPARED_RUNTIME_BLOCKED_UNRUN",
+    "task_completed": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
+    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "working_section": "8.49",
+    "field_groups": 22,
+    "checkpoint_bindings": 210,
+    "request_correspondences": 110,
+    "observation_gaps": 7,
+    "source_files_retrieved_exact": 17,
+    "semantic_whole_file_audit": false,
+    "runtime_observation_count": 0,
+    "all_game_specs": "UNRUN",
+    "next": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX"
   }
 }

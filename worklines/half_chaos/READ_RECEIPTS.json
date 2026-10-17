@@ -40,7 +40,16 @@
       "current_phase_new_gameplay_adoption": 0,
       "does_not_assert_other_receiver_reading": true,
       "newer_original_confirmation_source": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
-      "previous_pending_status_note": "failed-training candidate atbf36 source was pending; superseded by newly read exact1.57 original confirmation, not by continue"
+      "previous_pending_status_note": "failed-training candidate atbf36 source was pending; superseded by newly read exact1.57 original confirmation, not by continue",
+      "r28_recheck": {
+        "source_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
+        "version": "1.58",
+        "actual_reading": "current main status/next, pending index limited metadata and complete latest_by_source.half_chaos row; root entry full",
+        "prior_receiver_source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+        "received_scope": "r27 report metadata/actual guarded1.57 failure receipt only",
+        "r28_receiving_or_adoption": null,
+        "new_local_rule_adoption": 0
+      }
     },
     "standard_shared_D01": {
       "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
@@ -699,7 +708,7 @@
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-17.v0.13",
     "formal_baseline": "1.8.0",
-    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
     "body_git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
     "body_sha256": "863c7d6f752e6cdcd4a900b4b1e52ff3f56119efe217dcf1002898a5f101ff98",
     "version_scope": "observed_at_source_commit_not_a_new_global_version",
@@ -767,7 +776,13 @@
       "AI_LIMITATION_CONTROL risk/claims/verification/action boundaries",
       "PROJECT_WORK_AGREEMENT"
     ],
-    "r27_reused_modules": "unchanged v0.13 object and previously read task modules reused; not a fresh full-document audit"
+    "r27_reused_modules": "unchanged v0.13 object and previously read task modules reused; not a fresh full-document audit",
+    "r28_actual_reread": [
+      "MANDATORY_PRECHECK",
+      "AI_LIMITATION_CONTROL claim/risk/verification scope",
+      "PROJECT_WORK_AGREEMENT"
+    ],
+    "r28_reuse": "current v0.13 body unchanged; previous authorization/handoff/completion and other applicable modules reused"
   },
   "mutation_audit_source_review": {
     "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
@@ -1441,5 +1456,34 @@
     "source_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
     "effect_on_action_data": "none: PD isH04/H03 and DS isD01 replacement, noH15 or ordinaryH06",
     "other_lines_preserved": true
+  },
+  "r28_source_mapping_read": {
+    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+    "engine_source": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "actual_branch_head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "PR": {
+        "state": "open",
+        "draft": true,
+        "head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "base": "f1c01585ade8b4e17618399901d7283f37271459"
+      },
+      "role": "read-only source inspection, not approved merge or execution baseline"
+    },
+    "engine_read_scopes": "OBSERVATION_FIELD_MAPPING.json#/source_files",
+    "scope": "static fields/readers/boundary order only; no whole-file audit for large modules or engine run"
+  },
+  "r28_concurrent_main_reconciliation": {
+    "source_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
+    "main_version": "1.58",
+    "own_targets_unchanged": true,
+    "new_gameplay_confirmations": 0,
+    "new_prestart_candidate": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "candidate_approved": false,
+    "candidate_read_scope": "status/limited index metadata only; no full original-source or candidate semantic review",
+    "actual_receiver_scope": "main read r27 stage report metadata and actual1.57 failure-consumption receipt only; no raw action data/complete source audit",
+    "action_or_mapping_data_changed": false,
+    "other_workline_changes_preserved": true
   }
 }

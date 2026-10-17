@@ -1,9 +1,9 @@
 {
-  "revision": "HC-DESIGN-03-20261017-r27",
+  "revision": "HC-DESIGN-03-20261017-r28",
   "next_independent_task": {
-    "id": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
+    "id": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX",
     "status": "NOT_STARTED",
-    "action": "Read-only map the declared semantic observation checkpoints to existing authority/player-view/phase/deadline/dedup source fields and source gaps; no new protocol fields, business edits, engine runs or mode admission."
+    "action": "For each of the64 existing PD/DS obligations, connect relevant declared checkpoints and existing field groups, separating source-supported data readiness, exact-boundary/implementation blockers and missing natural positives; prepare a finite minimal acceptance readiness summary, no business edits or engine run."
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -27,7 +27,7 @@
   "runtime_scope": "design_only_engine_unrun",
   "scoring_frozen": true,
   "NET": "paused",
-  "previous_completed_task": "NEXT-HC-REPLAY-ACTION-DATA",
+  "previous_completed_task": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
   "shared_pending_references": [
     "STD-D01-EDGES remaining end-phase/search/order/clock interfaces"
   ],
@@ -511,10 +511,10 @@
     "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
   },
   "current_main_next_metadata": {
-    "source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
-    "next": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
-    "is_new_candidate": false,
-    "failed_training_confirmation_consumed": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
+    "source_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
+    "candidate": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "approved": false,
+    "adopted": false
   },
   "current_standard_next_metadata": {
     "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
@@ -530,5 +530,45 @@
     "source_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
     "effect_on_action_data": "none: PD isH04/H03 and DS isD01 replacement, noH15 or ordinaryH06",
     "other_lines_preserved": true
+  },
+  "completed_observation_field_mapping": {
+    "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+    "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
+    "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
+    "status": "STATIC_FIELD_BOUNDARY_MAP_PREPARED_RUNTIME_BLOCKED_UNRUN",
+    "task_completed": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
+    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "working_section": "8.49",
+    "field_groups": 22,
+    "checkpoint_bindings": 210,
+    "request_correspondences": 110,
+    "observation_gaps": 7,
+    "source_files_retrieved_exact": 17,
+    "semantic_whole_file_audit": false,
+    "runtime_observation_count": 0,
+    "all_game_specs": "UNRUN",
+    "next": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX"
+  },
+  "new_observation_gaps_to_main": [
+    "OG01",
+    "OG02",
+    "OG03",
+    "OG04",
+    "OG05",
+    "OG06",
+    "OG07"
+  ],
+  "r28_concurrent_main_reconciliation": {
+    "source_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
+    "main_version": "1.58",
+    "own_targets_unchanged": true,
+    "new_gameplay_confirmations": 0,
+    "new_prestart_candidate": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "candidate_approved": false,
+    "candidate_read_scope": "status/limited index metadata only; no full original-source or candidate semantic review",
+    "actual_receiver_scope": "main read r27 stage report metadata and actual1.57 failure-consumption receipt only; no raw action data/complete source audit",
+    "action_or_mapping_data_changed": false,
+    "other_workline_changes_preserved": true
   }
 }

@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261017-r27
+revision: HC-DESIGN-03-20261017-r28
 date_local: 2026-10-17
 timezone: Asia/Shanghai
 primary_reader: AI
-status: replay_action_data_checked_engine_blocked_unrun
+status: observation_field_map_prepared_runtime_blocked_unrun
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -19,15 +19,15 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 
 ## 0. 当前入口与接续
 
-r27完成NEXT-HC-REPLAY-ACTION-DATA，固定读源bf36f79303455bc154c697a20a9cb5ecdfda3560；详§8.48和REPLAY_ACTION_DATA.json。12回放声明100条普通主行动、10条主行动前技能请求（设计预期6成功/4拒绝）及210个语义观察点，绑定原r26开局身份/置换数据；没有运行这些请求或观察点。
+r28完成NEXT-HC-OBSERVATION-FIELD-MAPPING，固定交接源7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7，业务源14b分支/PR7已重新核对。详§8.49及OBSERVATION_FIELD_MAPPING.json：22现有源码字段组、210观察点绑定、110请求字段对应和7项观察边界/证据缺口。所有记录只为静态定位，不是可执行适配器或运行通过。
 
-64旧规格和12回放仍全部UNRUN；不改业务代码、不导入/运行引擎、不注入中盘或绕过门禁。评分冻结、NET暂停。r26初始化数据和全部原有效确认保持；接续不批准候选。
+原r26开局表、r27的100主行动/10技能/210观察点及64旧规格逐字保留。模式门禁不变、全部游戏规格UNRUN，业务代码修改/引擎导入/运行0，评分冻结、NET暂停。原确认全部保持；本轮无新增用户玩法批准/共有确认消费。
 
-主线原1.56实际已接收r26报告元数据和H15展示消费回执，未独立核原始数据/完整前缀/运行；本轮r27接收采用未知。提交前主线1.57已有H15×H06训练死亡失败不被回溯撤销的原确认，本线已限定接收（§8.48.5）；普通M04路径龙鳞候选仍未采用。本批无H15/无龙鳞，数据不改。新确认以之后实际原始来源为准，不让旧pending撤销后续确认。
+现有formal_turn_end事件早于护盾衰减/崩坏等结束效果，formal_main_action早于主行动路径处理；返回状态可能已进入下一回合。这些观察时点不能改名充作完整语义边界，详OG01/OG02/OG07。共享缺口回主线，不加回调、时钟tick或中盘注入绕过。
 
-### 下一只读数据断点（未启动）
+### 下一有限数据断点（未启动）
 
-NEXT-HC-OBSERVATION-FIELD-MAPPING：把本轮语义观察点映射到已有权威状态/玩家原始视图/正式机会/原截止/去重源码字段和缺口。只读定位，不新增协议字段或产品披露，不写业务代码、不运行引擎、不放开模式。EI01—07及返回空间/额外落位/同窗口第二次不安全沙漏等共享或自然来源缺口保留，独立工作继续。
+NEXT-HC-ASSERTION-EVIDENCE-MATRIX：对原64条PD/DS义务逐项关联已声明观察点、现有字段组、精确边界/实现阻断及缺自然正例，形成最小验收准备度汇总。只维护数据/文档，不写业务代码、不运行引擎、不开放模式。提交前主线已到1.58，新启动前快照候选仅元数据观察/未批准；主线已有限接收r27报告和实际1.57消费回执，本轮r28接收采用未知。
 
 ## 1. 确认恢复与保护
 
@@ -2319,6 +2319,56 @@ DS02的第二个拒绝明确是相同未变化不安全状态下的一次**新�
 +限定三模式原合法H06/H15组合、H06原合法窗口/预检及同棋合法重走等条件均通过，训练在目标早期活跃快照后已经因毕业前受训棋实际死亡而失败：H06可恢复棋子和未受例外影响的棋盘快照，但不撤销该次失败、不重新激活旧绑定/进度；唯一机会仍已用，不重新征募/启动。同一持续活跃且未失败未毕业的训练原快照对象/进度恢复保留；启动前快照、毕业奖励、其他失败/时间技能及完整历史接口未外推，现有不显示实际进度/即时失败的口径保持。
 +
 +本批PD为H04/H03，DS为H06/H05已替换普通能力的D01，无H15/普通H06回溯，故开局表/100主行动/10技能/210观察点/64旧规格全部不变。此前bf36的候选待决只为当时来源，不撤销新确认。当前主线下一项为H15×H06启动前快照来源复核，尚非新候选。本次用该HEAD真实tree16e781add08e66d0ffb0cbb6bd65aaee741412c8与同一parent做非强制增量提交，保留全部主线/普通并发成果，不代填它们接收r27的回执。
++
++### 8.49 观察点到现有源码字段与边界的只读映射（r28）
+
+完成NEXT-HC-OBSERVATION-FIELD-MAPPING。用户“进行下一步”只续该只读任务。固定HEAD为7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7，14份本线本地文件与远端对象一致，无未回传差分，保存r27基准。业务分支仍codex/half-chaos-h11-b-clock-20261012→14b306fe1cf9f459ef54e22d9ffa4ce2e83db510；PR7仍open/draft、base f1c01585ade8b4e17618399901d7283f37271459。旧其他工作区源码缓存已不可见，直接用连接器恢复17份所需源，全部Git blob一致；未要求用户上传、未把缓存缺失当已读来源存在。
+
+新增OBSERVATION_FIELD_MAPPING.json，记录逐文件实际阅读范围、现有符号/字段/精确锚点和Git身份；大型game/settlement/hero-actions/remote-room按相关完整函数/声明读取，未宣称全文件语义审计。room.ts/errors.ts是本轮补取的两份必要边界源，其余源沿原盘点集合恢复；不整份复制业务源码到交接仓库。来源V2，观察边界和跨字段解释为同一AI V1，无独立或运行证据。
+
+#### 8.49.1 字段组与请求对应
+
+22组FM01—22覆盖棋盘/明暗与秘密身份、开局原始阵营/本体、公开控制/暗置身份、实际死亡来源、历史死亡与当前死者区别、路径/终点/弹回、护盾持续/历史名额、D01真实成员/现身/锚点、沙漏次数、污染/崩坏期限、弹药/全军名额、正式阶段/机会、原截止、现有请求字段、去重/错误、两方原始视图、消息/回执、被动观察事件、旧研究日志、王安全/终局标志、模式门禁与完整D01非主行动返回边界。
+
+原110个请求都有静态对应：100普通主行动定位submitRemoteMove→applyRoomMove→applyAuthoritativeMove及MoveCommand已有from/to/expectedRevision/actionId/可选pieceId；10技能定位submitRemoteHeroAbility→applyHeroAbility及既有HeroAbilityCommand。数据语义dragon_bomb只映射已存在ability="bomb"，沙漏为hourglass；不生成/发送命令，不借后台真身份/锚点填公开请求，不新增网络字段或API。
+
+所有210个语义观察点均有字段/缺口映射记录，但**有映射行不等于每条断言已实现、精确时点可取或实际通过**。200个主行动闭合/正式结束点精确边界仍部分缺失；6个设计预期成功非占步技能定位到返回候选边界，运行受阻；4个设计预期拒绝受EI02/EI03实现缺口阻断。原64规格完整义务仍由ACCEPTANCE_SCOPE负责，本轮未把210行当210个新测试。
+
+#### 8.49.2 七项观察边界/证据缺口
+
+| 项 | 实际源码与限定结论 | 保留处理 |
+|---|---|---|
+| OG01 | finishFormalTurn先phase→turn_end、正式计数+1并发formal_turn_end事件，之后才扣护盾持续/结算崩坏等 | 此事件不是“结束效果全部完成后”；100个对应点不据名称判通过 |
+| OG02 | formal_main_action在recordAction时、路径死/终点处理前发；closeMainActionAtom只推进阶段无通用事件 | 普通返回可能已结束当前回合并开始下一回合；不能把早事件或新回合快照改名为精确after-main-before-end，更不能调用deferTurnEnd改变普通流程凑边界 |
+| OG03 | 现MechanismEvent联合类型没有沙漏/投弹/拒绝或六步逐段事件 | 只能在合法可接入时比较请求前后/返回/抛错；完整内部来源顺序未因此实测，EI02/EI03保持 |
+| OG04 | hourglass复活从captured移除本体；新动作重置automaticEvents | 当前死者表不等于不可回退实际死亡历史；DS05须保留操作级死亡证据，主线完整历史/重复键未由此实现 |
+| OG05 | processedActions/duplicate/RuleError可定位，但旧PolicySession的actor/payload注册和冲突错误属研究层 | 同状态新请求不同于已处理命令重传；产品完整载荷冲突/错误封装未核，不把研究保障外推 |
+| OG06 | raw playerRoomView/publicRemoteRoom可定位，旧P0白名单限定旧来源并拒PD/D01 | 玩家实际按钮/提示/消息/传输错误及归一未验，不扩掩码删字段来遮缺口或声称完整隐私 |
+| OG07 | PolicySession.submit后显式tick；FixtureRunner也有显式advanceRemoteRoomTime | 时钟tick是状态行动，不是被动观察；必须分开提交返回、日志快照和之后时钟推进，不能让记录证据自行增begin/刷新截止 |
+
+上述7项是本任务新增的静态观察/证据缺口，非7项已复现游戏失败，也不替代原EI01—07。formal_turn_end较晚可以包含已完成主行动的部分棋盘结果，但其phase/正式计数已变化且结束副作用尚未闭合，不能当精确完整同义时点。真正请求后返回可观察当前权威状态，但普通主行动返回可能又有对手begin；若利用特定组合的后续不变性作字段级解释，仍需按受影响断言逐项证明，不整体宣称边界已补齐。
+
+#### 8.49.3 身份、视图、时钟与拒绝
+
+字段只读严格区分state.pieces公开形状、secret.identities暗真种、secret.destinyIdentities锚点/现身和原初始化表。原始阵营没有被本轮虚构成通用originalSide属性；covered-ID只用于固定开局映射，不证明H11/H06全生命周期本体接口。弹回看实际source坐标/faceDown与lastMove.landed=false，不能把lastMove.to请求终点当实际落位。普通防御耗尽看barrier删除，持续衰减另看enemyTurnsRemaining与真实正式结束，名额看warrior.barrierPieceIds。
+
+D01次数/污染/崩坏/弹药/全军名额的实际字段均已定位，但字段存在不等于沙漏王安全/受将禁投已实现。3次沙漏拒绝声明仍依EI02、1次投弹拒绝依EI03；mode接入仍依EI01/EI04。拒绝不能先改状态后退款；时钟比较原turnDeadlineAt/formalClock/正式机会，墙钟自然流逝不当副作用。Room层expiredFormalAction/advanceRemoteRoomTime和startFormalClock不可由直接游戏函数代替验收。
+
+双方原始playerRoomView应分别留存，权威secret/后台日志独立；old policyProjection是有意限定的旧研究输入，不是PD/D01完整玩家视图。现有函数名或类型声明不证明按钮、错误、实际网络包及客户端已满足权限；本轮不声称复现泄漏，不改生产投影或新增玩家字段。
+
+#### 8.49.4 核对、剩余与下一项
+
+静态检查17份源字节/65处精确锚点，210观察点与110请求引用唯一且齐全，FM/OG引用有效；另核源码顺序formal_turn_end在护盾扣减/崩坏前，closeMainActionAtom无事件发出。只解析文字/JSON，不导入业务模块、调用引擎或测试；没有新增游戏规格、用户玩法批准或共有确认消费。原确认/原盘点/初始化/动作数据、64旧规格和12回放行保持。所有游戏状态UNRUN，评分冻结、NET暂停。
+
+共享观察缺口按RETURN_TO_MAIN回主线；不自行添hook/字段/时钟tick、改研究白名单或开放模式。现主线仍1.57，实际接收回执只到r26有限报告，r27/r28正文/映射阅读采用未知。原主线下一启动前快照来源复核及普通路径龙鳞候选按各自作用域保留，本轮不扩展。
+
+下一项NEXT-HC-ASSERTION-EVIDENCE-MATRIX尚未启动：逐一把64条原PD/DS义务连接到声明观察点、字段和精确边界/实现/自然前缀缺口，形成有限的最小验收准备度汇总；不重造规格、不把无映射义务隐藏掉、不运行引擎。完成该汇总后再据实际阻断形成具体实施/运行范围，不从“继续”自行扩大授权。
+
+#### 8.49.5 提交前并发：主线1.58与真实r27回执
++
++发布前HEAD推进至f54249b2bc495265e13831afdaf2caf895afc91c。实际重读最新根入口、主线1.58状态/下一项、PENDING_DECISION有限索引元数据及完整half_chaos回执行。主线已接收r27阶段报告/动作数据统计及本线真实1.57失败例外消费回执，未读原始动作数据/完整正文或独立验证合法性；本轮r28接收采用未知。先前“只到r26”仅是本任务初读时状态，本段覆盖当前接收观察。
++
++主线新增DECISION-H15-H06-PRESTART-SNAPSHOT-20261017候选尚未批准：目标快照早于训练启动的有限处理仍待具体确认。本线只读候选状态/有限元数据，未读完整新候选/底层复核源、未采用；1.57已确认失败例外仍有效。普通M04路径龙鳞候选状态未变。本批无H15/普通H06/龙鳞，210观察点和22字段组不改。发布基于该HEAD真实树和同一parent，仅覆盖本线十个固定差分，保留主线全部新候选/索引/回执，不代填它接收本轮的记录。
 +
 +## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 

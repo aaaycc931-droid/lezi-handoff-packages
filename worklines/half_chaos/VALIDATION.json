@@ -1,241 +1,121 @@
 {
-  "revision": "HC-DESIGN-03-20261017-r27",
-  "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
-  "publication_parent_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
-  "scope": "declarative data source/order/identity consistency only",
-  "replays": 12,
-  "normal_main_requests": 100,
-  "skill_requests": 10,
-  "expected_accepted_skills": 6,
-  "expected_rejected_skills": 4,
-  "observation_checkpoints": 210,
-  "per_replay": [
-    {
-      "replay_id": "MA-PD01",
-      "normal_main_requests": 5,
-      "declared_death_events": 1,
-      "final_dead_count": 1,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-PD02",
-      "normal_main_requests": 9,
-      "declared_death_events": 2,
-      "final_dead_count": 2,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-PD03",
-      "normal_main_requests": 13,
-      "declared_death_events": 3,
-      "final_dead_count": 3,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-PD04",
-      "normal_main_requests": 10,
-      "declared_death_events": 4,
-      "final_dead_count": 4,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-PD05-A",
-      "normal_main_requests": 7,
-      "declared_death_events": 2,
-      "final_dead_count": 2,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-PD05-B",
-      "normal_main_requests": 7,
-      "declared_death_events": 2,
-      "final_dead_count": 2,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-PD06-A",
-      "normal_main_requests": 7,
-      "declared_death_events": 1,
-      "final_dead_count": 1,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-PD06-B",
-      "normal_main_requests": 7,
-      "declared_death_events": 1,
-      "final_dead_count": 1,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-DS01-02",
-      "normal_main_requests": 7,
-      "declared_death_events": 3,
-      "final_dead_count": 3,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-DS03",
-      "normal_main_requests": 7,
-      "declared_death_events": 1,
-      "final_dead_count": 1,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-DS04",
-      "normal_main_requests": 8,
-      "declared_death_events": 2,
-      "final_dead_count": 2,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    },
-    {
-      "replay_id": "MA-DS05",
-      "normal_main_requests": 13,
-      "declared_death_events": 4,
-      "final_dead_count": 3,
-      "data_reference_check": "consistent",
-      "gameplay_status": "UNRUN"
-    }
-  ],
-  "checks": [
-    "all12 opening-world references",
-    "turn alternation and consecutive formal labels",
-    "100 main/10 skill request source identity continuity",
-    "no rejected-request declared body changes",
-    "D01 living return vs dead same-body revival",
-    "death history kept separately from terminal alive/dead inventory",
-    "two required PD03 evasions andPD04 B5",
-    "paired public requests identical",
-    "all64 old specifications/checkpoints UNRUN and evidence empty"
-  ],
-  "source_geometry_royal_safety_or_rule_execution_checked": false,
+  "revision": "HC-DESIGN-03-20261017-r28",
+  "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+  "publication_parent_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
+  "scope": "static existing-source field/boundary mapping only",
+  "mapped_checkpoints": 210,
+  "request_correspondences": 110,
+  "field_groups": 22,
+  "observation_gaps": 7,
+  "source_files_exact": 17,
+  "source_anchors_checked": 65,
+  "boundary_status_counts": {
+    "SOURCE_FIELDS_LOCATED_EXACT_BOUNDARY_PARTIAL": 200,
+    "NON_MAIN_RETURN_SOURCE_LOCATED_RUNTIME_BLOCKED": 6,
+    "REQUIRED_SOURCE_REFUSAL_NOT_IMPLEMENTED_IN_REVIEWED_PATH": 4
+  },
+  "new_game_specs": 0,
   "engine_imports": 0,
   "engine_runs": 0,
   "client_runs": 0,
-  "new_game_specs": 0,
-  "independent_review": false,
-  "all_game_specs": "UNRUN",
-  "data_sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
-  "data_file": {
-    "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
-    "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
-    "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
-    "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
-    "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
-    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
-    "working_section": "8.48",
-    "planned_replays": 12,
-    "normal_main_request_declarations": 100,
-    "skill_request_declarations": 10,
-    "expected_accepted_skills": 6,
-    "expected_rejected_skills": 4,
-    "semantic_observation_checkpoints": 210,
-    "new_game_specifications": 0,
-    "old_game_specifications": 64,
+  "all64_specs": "UNRUN",
+  "data_sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
+  "verification": "V2 exact fixed source and anchors; V1 semantic boundary inference; not independent or runtime",
+  "mapping_file": {
+    "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+    "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
+    "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
+    "status": "STATIC_FIELD_BOUNDARY_MAP_PREPARED_RUNTIME_BLOCKED_UNRUN",
+    "task_completed": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
+    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "working_section": "8.49",
+    "field_groups": 22,
+    "checkpoint_bindings": 210,
+    "request_correspondences": 110,
+    "observation_gaps": 7,
+    "source_files_retrieved_exact": 17,
+    "semantic_whole_file_audit": false,
+    "runtime_observation_count": 0,
     "all_game_specs": "UNRUN",
-    "engine_runs": 0,
-    "protocol_or_executable_adapter": false,
-    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+    "next": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX"
   },
-  "all_old_specs": "UNRUN",
-  "replay_plans": 12,
   "executed_replays": 0,
+  "runtime_verified": false,
   "business_code_changes": 0,
   "business_repo_writes": 0,
-  "runtime_verified": false,
+  "new_observer_hooks": 0,
+  "new_public_fields": 0,
+  "new_shared_confirmation_consumption": 0,
   "mode_gate_unchanged": true,
   "scoring_frozen": true,
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "declarative expected timelines become future replay inputs; secret/public and source-phase boundaries",
+    "audit_trigger": "semantic checkpoint vs source capture timing can invalidate future evidence; authority/public source boundaries",
     "risk_level": "medium_reversible",
     "known_facts": [
-      "original source prefixes and init mapping retained",
-      "mode blocks remain and all64 specs UNRUN"
+      "exact fixed source17objects and65anchors",
+      "end event precedes shield/collapse end effects",
+      "all sources remain mode-blocked/unrun"
     ],
     "user_statements": [
-      "continue specified data task, keep existing constraints"
+      "continue read-only mapping; preserve pauses and no business execution"
     ],
     "claim_register": [
       {
-        "claim": "requests and expected body references are internally continuous and source-linked",
+        "claim": "fields are located but requested exact event boundaries are partial",
         "type": "ai_inference",
-        "source": "WORKING8.40/8.42/8.44 and original initialization data",
-        "verification": "V2 source correspondence plus V1 static bookkeeping; not geometry/safety/runtime"
+        "source": "fixed14b functions/types/observer and r27 checkpoints",
+        "verification": "V2 exact source plus V1 semantic timing inference, no independent/runtime"
       }
     ],
     "ai_interpretations": [
-      "210 points describe semantic observation requirements, not callbacks or new tests"
+      "200 main/end points cannot be globally reclassified as exactly observed via current event names"
     ],
     "assumptions": [
-      "future adapter maps real source fields and rejects unsupported cases without injected states"
+      "later permitted adapter preserves lawful source flow and handles field-level conditional stability explicitly"
     ],
     "unknowns": [
-      "actual wire/API and fields",
-      "full legality/king safety/source order/terminal/key",
-      "runtime raw views/clocks/dedup"
+      "actual210point output/complete legality",
+      "client/wire errors and observation privacy",
+      "complete history/key/source-order"
     ],
     "competing_explanations": [
-      "reference-consistent expected data can still be rejected by actual legal admission or incomplete implementation"
+      "some individual board assertions may still be evidenced from a later unchanged state; this does not prove full earlier phase/count snapshot"
     ],
     "falsification_conditions": [
-      "missing/misbound source body",
-      "source prefix differs",
-      "invalid future request or missed source branch"
+      "new engine source changes event timing/fields",
+      "missing cited source anchor",
+      "future actual capture contradicts mapping"
     ],
-    "verification_status": "partial; same-assistant source/data checks, no independent or engine validation",
-    "action_boundary": "data/own fixed documentation only; source mapping next read-only",
+    "verification_status": "partial; source-location complete in declared scope, runtime and exact-boundary gaps retained",
+    "action_boundary": "publish own static map and documents only; no hook/field/gate/business changes",
     "failure_conditions": [
-      "treat declarations as executed evidence",
-      "leak backend identity into player payload",
-      "override concurrent line files"
+      "event-name treated as postcondition",
+      "passive observation adds tick or callback",
+      "secret IDs leak to player views"
     ],
-    "residual_risk": "source transcription and expected bookkeeping can share same-assistant errors; complete legality/observations unverified",
-    "next_validation_action": "Read-only map the declared semantic observation checkpoints to existing authority/player-view/phase/deadline/dedup source fields and source gaps; no new protocol fields, business edits, engine runs or mode admission."
+    "residual_risk": "same-assistant interpretation shares source assumptions; full functions outside recorded scope and real execution not validated",
+    "next_validation_action": "For each of the64 existing PD/DS obligations, connect relevant declared checkpoints and existing field groups, separating source-supported data readiness, exact-boundary/implementation blockers and missing natural positives; prepare a finite minimal acceptance readiness summary, no business edits or engine run."
   },
   "prepublication_checks": {
-    "all_changed_JSON_parse": true,
-    "all_prior_WORKING_sections1_through8_47_exact": true,
-    "all64_spec_rows_and12_plan_rows_exact": true,
-    "prior_confirmation_init_inventory_exact_blob_reuse": false,
-    "only10_own_fixed_paths_changed": false,
-    "no_repository_code_file_changes": true,
-    "prior_confirmation_members_preserved_plus_one_scoped_source": true,
-    "initialization_and_engine_inventory_exact_blob_reuse": true,
-    "only11_own_fixed_paths_changed": true
+    "JSON_parse": true,
+    "all_prior_working_sections1_to8_48_exact": true,
+    "all64_spec_and12replay_rows_exact": true,
+    "confirmation_inventory_init_action_exact_blob_reuse": true,
+    "only10_own_fixed_document_paths_changed": true,
+    "business_code_changes": 0
   },
-  "r27_concurrent_main_reconciliation": {
-    "head": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
-    "tree": "16e781add08e66d0ffb0cbb6bd65aaee741412c8",
+  "r28_concurrent_main_reconciliation": {
+    "source_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
+    "main_version": "1.58",
     "own_targets_unchanged": true,
-    "main_version": "1.57",
-    "source_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "effect_on_action_data": "none: PD isH04/H03 and DS isD01 replacement, noH15 or ordinaryH06",
-    "other_lines_preserved": true
-  },
-  "new_shared_confirmation_consumption": 1,
-  "r27_H15_H06_failure_confirmation_consumed": {
-    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "source_workline": "main",
-    "source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
-    "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
-    "source_blob": "676bc4bc14f745825a715653f95a1d41d2182e0a",
-    "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
-    "policy_blob": "3bf18590e03fe9feb0de1f1c3c7264e07bb2adcb",
-    "read_scope": "full original confirmation, complete original reviewed candidate and complete confirmed policy; latest1.57 current status/next metadata",
-    "local_scope": "half_chaos only within original legal H06+H15 pregraduation-death-failure snapshot guard",
-    "new_local_user_approval": false,
-    "implementation": false,
-    "full_original_in_own_record": "CONFIRMATIONS.json#/r27_H15_H06_failure_confirmation_consumed"
+    "new_gameplay_confirmations": 0,
+    "new_prestart_candidate": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "candidate_approved": false,
+    "candidate_read_scope": "status/limited index metadata only; no full original-source or candidate semantic review",
+    "actual_receiver_scope": "main read r27 stage report metadata and actual1.57 failure-consumption receipt only; no raw action data/complete source audit",
+    "action_or_mapping_data_changed": false,
+    "other_workline_changes_preserved": true
   }
 }
