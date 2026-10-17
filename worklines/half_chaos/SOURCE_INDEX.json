@@ -3660,5 +3660,100 @@
     "new_local_user_approval": false,
     "implementation": false,
     "full_original_in_own_record": "CONFIRMATIONS.json#/r26_H15_display_confirmation_consumed"
+  },
+  "replay_action_data": {
+    "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+    "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+    "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+    "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
+    "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
+    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "working_section": "8.48",
+    "planned_replays": 12,
+    "normal_main_request_declarations": 100,
+    "skill_request_declarations": 10,
+    "expected_accepted_skills": 6,
+    "expected_rejected_skills": 4,
+    "semantic_observation_checkpoints": 210,
+    "new_game_specifications": 0,
+    "old_game_specifications": 64,
+    "all_game_specs": "UNRUN",
+    "engine_runs": 0,
+    "protocol_or_executable_adapter": false,
+    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+  },
+  "r27_action_source_review": {
+    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "prior_own_source_commit": "115350d1f8264143a1381aae61e9837492067a04",
+    "actual_full_working_sections": [
+      "8.40.1—8.40.6",
+      "8.42.1—8.42.8",
+      "8.44.1—8.44.2"
+    ],
+    "same_blob_confirmations_reused": "all previous effective confirmations unchanged; no new approval inferred from continue",
+    "main_receipt": {
+      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "actual_reading": [
+        {
+          "path": "worklines/main/CURRENT_STATE.json",
+          "git_blob_sha": "d1a39c808c3551b7ecf0394ebc96796a51d0cfc9",
+          "scope": "current1.56 version/status/next/current-phase metadata only"
+        },
+        {
+          "path": "worklines/main/PENDING_DECISION.json",
+          "git_blob_sha": "17c4372f642d8898ce1c0bc94e11badfe78946fe",
+          "scope": "current H15-H06 failed-training candidate status, limited scope and next question only; no full candidate/source review"
+        },
+        {
+          "path": "worklines/main/READ_RECEIPTS.json",
+          "git_blob_sha": "03ed2b3ee70f61631b4e8458eef25fca2a6bf45f",
+          "scope": "complete latest_by_source.half_chaos row and r26 stage_report"
+        }
+      ],
+      "received": [
+        "r26 return metadata and actual H15 display-consumption receipt acknowledged by main",
+        "main1.56 pending H15-H06 candidate metadata"
+      ],
+      "adopted": [
+        "update prior r26 delivery observation only; no new gameplay adoption"
+      ],
+      "not_adopted": [
+        "pending H15-H06 failed-training restoration candidate",
+        "ordinary pending M04 path dragon-scale continuation",
+        "whole source/fieldmap/engine/privacy/clock acceptance"
+      ],
+      "previous_valid_adoptions_reference": {
+        "commit": "115350d1f8264143a1381aae61e9837492067a04",
+        "path": "worklines/half_chaos/READ_RECEIPTS.json#/latest_by_source/main"
+      },
+      "current_phase_new_gameplay_adoption": 0,
+      "does_not_assert_other_receiver_reading": true
+    },
+    "standard_scope": "current pending dragon-scale candidate metadata only; no full candidate adoption; prepared PD/DS have no dragon-scale source",
+    "data_contract": "100main/10pre-main declarations and210 semantic checkpoint records only; wire payload mapping unresolved"
+  },
+  "r27_authorization": "existing fixed-workline maintenance and user continuation, data-only; no business source/engine write/run",
+  "r27_concurrent_main_reconciliation": {
+    "head": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+    "tree": "16e781add08e66d0ffb0cbb6bd65aaee741412c8",
+    "own_targets_unchanged": true,
+    "main_version": "1.57",
+    "source_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "effect_on_action_data": "none: PD isH04/H03 and DS isD01 replacement, noH15 or ordinaryH06",
+    "other_lines_preserved": true
+  },
+  "r27_H15_H06_failure_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "source_workline": "main",
+    "source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+    "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+    "source_blob": "676bc4bc14f745825a715653f95a1d41d2182e0a",
+    "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+    "policy_blob": "3bf18590e03fe9feb0de1f1c3c7264e07bb2adcb",
+    "read_scope": "full original confirmation, complete original reviewed candidate and complete confirmed policy; latest1.57 current status/next metadata",
+    "local_scope": "half_chaos only within original legal H06+H15 pregraduation-death-failure snapshot guard",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "full_original_in_own_record": "CONFIRMATIONS.json#/r27_H15_H06_failure_confirmation_consumed"
   }
 }

@@ -2,46 +2,48 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-  "revision": "HC-DESIGN-03-20261017-r26",
-  "phase": "initialization_witness_data_preparation_completed",
+  "base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+  "revision": "HC-DESIGN-03-20261017-r27",
+  "phase": "declarative_replay_action_data_preparation_completed",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "Prepare declarative source-linked action/request order and semantic observation checkpoints for12 existing replay plans; no engine imports/runs, business changes or gate bypass.",
+  "current_breakpoint": "Read-only map the declared semantic observation checkpoints to existing authority/player-view/phase/deadline/dedup source fields and source gaps; no new protocol fields, business edits, engine runs or mode admission.",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
   "changes": {
     "working_sections": [
       "0",
-      "8.47"
+      "8.48"
     ],
     "new_data": {
-      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
-      "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
-      "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
-      "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
-      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+      "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
+      "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
+      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "working_section": "8.48",
       "planned_replays": 12,
-      "unique_initial_worlds": 10,
-      "nonroyals_per_plan": 30,
-      "draws_per_plan": 28,
-      "logical_draws_checked": 336,
-      "stored_unique_draws": 280,
-      "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "engine_initialization_applied": false,
+      "normal_main_request_declarations": 100,
+      "skill_request_declarations": 10,
+      "expected_accepted_skills": 6,
+      "expected_rejected_skills": 4,
+      "semantic_observation_checkpoints": 210,
+      "new_game_specifications": 0,
+      "old_game_specifications": 64,
       "all_game_specs": "UNRUN",
-      "game_runs": 0,
-      "next": "NEXT-HC-REPLAY-ACTION-DATA"
+      "engine_runs": 0,
+      "protocol_or_executable_adapter": false,
+      "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
     },
-    "scope": "synthetic opening identity/permutation data only",
     "preserved_unchanged_objects": [
+      "INITIALIZATION_WITNESS_DATA.json",
       "ENGINE_SOURCE_INVENTORY.json"
     ],
     "gameplay_delta": 0,
-    "preserved_prior_confirmation_members": true,
-    "new_existing_shared_confirmation_consumption": 2
+    "prior_confirmation_members_preserved": true,
+    "new_shared_original_confirmation_consumption": 1
   },
   "source_and_confirmation_scope": {
     "source_inventory": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
@@ -59,129 +61,130 @@
     "H02_M04_shared_candidate": "metadata only, not adopted"
   },
   "actual_validation": {
-    "result": "OFFLINE_INITIALIZATION_DATA_CHECKED_GAME_SPECS_UNRUN",
-    "plans_checked": 12,
-    "unique_worlds_checked": 10,
-    "nonroyals_per_plan": 30,
-    "draws_per_plan": 28,
-    "logical_draws_checked": 336,
-    "stored_unique_draws": 280,
-    "per_plan": [
+    "scope": "declarative data source/order/identity consistency only",
+    "replays": 12,
+    "normal_main_requests": 100,
+    "skill_requests": 10,
+    "expected_accepted_skills": 6,
+    "expected_rejected_skills": 4,
+    "observation_checkpoints": 210,
+    "per_replay": [
       {
         "replay_id": "MA-PD01",
-        "world_id": "IW-0eaace9ad2c1699d",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 5,
+        "declared_death_events": 1,
+        "final_dead_count": 1,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-PD02",
-        "world_id": "IW-b069ebc9db68ef3e",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 9,
+        "declared_death_events": 2,
+        "final_dead_count": 2,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-PD03",
-        "world_id": "IW-b069ebc9db68ef3e",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 13,
+        "declared_death_events": 3,
+        "final_dead_count": 3,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-PD04",
-        "world_id": "IW-4fb3ac123360c7d4",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 10,
+        "declared_death_events": 4,
+        "final_dead_count": 4,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-PD05-A",
-        "world_id": "IW-b069ebc9db68ef3e",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 7,
+        "declared_death_events": 2,
+        "final_dead_count": 2,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-PD05-B",
-        "world_id": "IW-40b431632b89dc78",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 7,
+        "declared_death_events": 2,
+        "final_dead_count": 2,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-PD06-A",
-        "world_id": "IW-168cb617da30889f",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 7,
+        "declared_death_events": 1,
+        "final_dead_count": 1,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-PD06-B",
-        "world_id": "IW-d158bccabffc5f23",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 7,
+        "declared_death_events": 1,
+        "final_dead_count": 1,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-DS01-02",
-        "world_id": "IW-b66071aa72ba8a72",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 7,
+        "declared_death_events": 3,
+        "final_dead_count": 3,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-DS03",
-        "world_id": "IW-bdcfe63226360aaa",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 7,
+        "declared_death_events": 1,
+        "final_dead_count": 1,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-DS04",
-        "world_id": "IW-61790bfc01eccf12",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 8,
+        "declared_death_events": 2,
+        "final_dead_count": 2,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       },
       {
         "replay_id": "MA-DS05",
-        "world_id": "IW-95b0bb66f0ced10a",
-        "identity_rows": 30,
-        "draws": 28,
-        "offline_data_check": "PASS",
+        "normal_main_requests": 13,
+        "declared_death_events": 4,
+        "final_dead_count": 3,
+        "data_reference_check": "consistent",
         "gameplay_status": "UNRUN"
       }
     ],
     "checks": [
-      "fixed source slot order/covered-ID mapping",
-      "each side fifteen and2/2/2/2/2/5 inventory",
-      "exact original replay swaps",
-      "28 bounded integer draws per plan",
-      "forward Fisher-Yates reconstruction and reverse undo",
-      "paired secret changes exactly2 bodies each",
-      "D01 five true-pawn bodies/anchors per side and aliases",
-      "DS01-02 single replay continuity",
-      "all old replay statuses unchanged"
+      "all12 opening-world references",
+      "turn alternation and consecutive formal labels",
+      "100 main/10 skill request source identity continuity",
+      "no rejected-request declared body changes",
+      "D01 living return vs dead same-body revival",
+      "death history kept separately from terminal alive/dead inventory",
+      "two required PD03 evasions andPD04 B5",
+      "paired public requests identical",
+      "all64 old specifications/checkpoints UNRUN and evidence empty"
     ],
-    "dataset_sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
-    "game_engine_imports": 0,
+    "source_geometry_royal_safety_or_rule_execution_checked": false,
+    "engine_imports": 0,
     "engine_runs": 0,
-    "business_code_changes": 0,
+    "client_runs": 0,
     "new_game_specs": 0,
     "independent_review": false,
-    "verification": "V2 source transcription plus V1 same-assistant data consistency; no V3 or V4/game acceptance"
+    "all_game_specs": "UNRUN",
+    "data_sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68"
   },
   "unrun": [
     "all12 planned replays and64 existing specs",
@@ -242,10 +245,10 @@
       ]
     }
   ],
-  "next_independent_task": "NEXT-HC-REPLAY-ACTION-DATA",
+  "next_independent_task": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
   "scoring_frozen": true,
   "NET": "paused",
-  "implementation_status": "offline_data_prepared_only_engine_unrun_mode_gate_blocked",
+  "implementation_status": "declarative_data_only_no_wire_or_executable_adapter_engine_unrun",
   "delivery": {
     "transport": "GitHub connector fixed workline files",
     "other_worklines_continue": true,
@@ -255,11 +258,12 @@
   },
   "publication_limits": "private full protocols/raw archives remain excluded; current design bodies and exact existing public sources available; no claim of full historical/runtime migration",
   "source_baseline_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-  "concurrent_main_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+  "concurrent_main_source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
   "current_stage_changes": [
-    "12 replay bindings,10 canonical opening identity worlds,30 nonroyals and28 bounded draws per replay",
-    "offline data permutation/inventory/source/alias checks completed; source tables are expected authority-only inputs, no engine initialization applied",
-    "main1.54 actual prior r25 metadata/seven-finding and closeout receipt observed; no new current-stage receiver receipt inferred"
+    "12 replay action declarations bound to existing opening worlds;100 normal mains/10 skills/210 semantic checkpoints",
+    "DS01→DS02 continuous accepted history, PD03 B5/B6 and PD04 B5 retained, both secret pairs identical public requests",
+    "data referential bookkeeping checked; no geometry/royal-safety/source-rule/engine execution",
+    "main1.56 actual r26 metadata receipt observed; current r27 receiver adoption unknown"
   ],
   "prior_H14_stage_return": "main dd467a1 actual scoped stage/excerpt receipt covers H14/H16; body/spec/runtime adoption not inferred",
   "remote_reconciliation": {
@@ -486,7 +490,7 @@
       }
     }
   },
-  "publication_parent_commit": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
+  "publication_parent_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
   "previous_r21_return": {
     "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "phase": "M01_M08_D01_coverage_audit",
@@ -747,9 +751,9 @@
     "new_shared_rule_consumption_from_main_recheck": 0
   },
   "actual_receiver_status": {
-    "observed_at_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-    "receiver_source": "93127575c60469d08069a3a6743f3c2a34493deb",
-    "scope": "r23-r25 selected metadata/seven reported static findings and fef0e8e conversation closeout; no full prefixes or runtime adoption"
+    "observed_at_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "receiver_source_commit": "115350d1f8264143a1381aae61e9837492067a04",
+    "scope": "r26 data preparation metadata and actual H15 display receipt; main raw dataset independently_verified=false"
   },
   "concurrent_standard_retry_r23": {
     "publication_head": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
@@ -1085,7 +1089,7 @@
       "runtime_reproduced": false
     }
   ],
-  "last_completed_design_revision": "HC-DESIGN-03-20261017-r26",
+  "last_completed_design_revision": "HC-DESIGN-03-20261017-r27",
   "last_completed_design_commit": null,
   "session_closeout": {
     "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
@@ -1162,7 +1166,7 @@
     "game_runs": 0,
     "next": "NEXT-HC-REPLAY-ACTION-DATA"
   },
-  "new_shared_confirmation_consumption": 2,
+  "new_shared_confirmation_consumption": 1,
   "concurrent_H02_M04_confirmation": {
     "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
     "source_workline": "standard",
@@ -1201,5 +1205,57 @@
     "new_local_user_approval": false,
     "implementation": false,
     "full_original_in_own_record": "CONFIRMATIONS.json#/r26_H15_display_confirmation_consumed"
+  },
+  "replay_action_data": {
+    "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+    "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+    "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+    "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
+    "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
+    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "working_section": "8.48",
+    "planned_replays": 12,
+    "normal_main_request_declarations": 100,
+    "skill_request_declarations": 10,
+    "expected_accepted_skills": 6,
+    "expected_rejected_skills": 4,
+    "semantic_observation_checkpoints": 210,
+    "new_game_specifications": 0,
+    "old_game_specifications": 64,
+    "all_game_specs": "UNRUN",
+    "engine_runs": 0,
+    "protocol_or_executable_adapter": false,
+    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+  },
+  "prior_r26_shared_confirmations_reference": {
+    "commit": "115350d1f8264143a1381aae61e9837492067a04",
+    "ids": [
+      "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+      "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017"
+    ],
+    "note": "prior consumption preserved, not counted again"
+  },
+  "r27_concurrent_main_reconciliation": {
+    "head": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+    "tree": "16e781add08e66d0ffb0cbb6bd65aaee741412c8",
+    "own_targets_unchanged": true,
+    "main_version": "1.57",
+    "source_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "effect_on_action_data": "none: PD isH04/H03 and DS isD01 replacement, noH15 or ordinaryH06",
+    "other_lines_preserved": true
+  },
+  "r27_H15_H06_failure_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "source_workline": "main",
+    "source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+    "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+    "source_blob": "676bc4bc14f745825a715653f95a1d41d2182e0a",
+    "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+    "policy_blob": "3bf18590e03fe9feb0de1f1c3c7264e07bb2adcb",
+    "read_scope": "full original confirmation, complete original reviewed candidate and complete confirmed policy; latest1.57 current status/next metadata",
+    "local_scope": "half_chaos only within original legal H06+H15 pregraduation-death-failure snapshot guard",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "full_original_in_own_record": "CONFIRMATIONS.json#/r27_H15_H06_failure_confirmation_consumed"
   }
 }

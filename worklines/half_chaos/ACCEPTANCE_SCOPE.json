@@ -2493,12 +2493,13 @@
     },
     {
       "id": "G-INIT",
-      "current_status": "SOURCE_LOCATED_WORLD_DATA_NOT_PREPARED",
+      "current_status": "INITIALIZATION_DATA_PREPARED_ENGINE_INITIALIZATION_UNRUN",
       "source_inventory_group": "G-INIT",
       "remaining": [
-        "complete12 replay initial-world identity/original-side dictionaries and28 draw witnesses not materialized",
-        "no actual initialization run or adapter verification"
-      ]
+        "no actual engine initialization or adapter verification",
+        "fixed14b opening data retained; future changed source must revalidate initialization identity mapping"
+      ],
+      "prepared_data_reference": "INITIALIZATION_WITNESS_DATA.json"
     },
     {
       "id": "G-ACTION",
@@ -2508,7 +2509,8 @@
         "lawful future restricted source admission/implementation scope must be defined; do not bypass gate",
         "D01 safe-glass and bomb-in-check source gaps EI02/EI03",
         "no executable12 replay adapter"
-      ]
+      ],
+      "prepared_data_reference": "REPLAY_ACTION_DATA.json; source-linked declarations only, all mode/adapter blockers preserved"
     },
     {
       "id": "G-STATE",
@@ -2623,17 +2625,9 @@
     "runtime": false
   },
   "next_task": {
-    "id": "NEXT-HC-REPLAY-ACTION-DATA",
+    "id": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
     "status": "NOT_STARTED",
-    "action": "Prepare declarative source-linked action/request order and semantic observation checkpoints for12 existing replay plans; no engine imports/runs, business changes or gate bypass.",
-    "scope": "data only within existing maintenance authorization",
-    "acceptance_criteria": [
-      "Every step linked to original complete PD/DS source and prepared opening world",
-      "DS01-02 remains one continuous replay; PD03/PD04 real evasions retained",
-      "PD05/06 paired public request sequences agree, aliases are offline expected source bindings",
-      "Requests/rejections/main actions/formal boundaries separated without inventing protocol fields or total source order",
-      "No fabricated engine result; unresolved observer/clock/privacy/gate dependencies remain blocked"
-    ]
+    "action": "Read-only map the declared semantic observation checkpoints to existing authority/player-view/phase/deadline/dedup source fields and source gaps; no new protocol fields, business edits, engine runs or mode admission."
   },
   "publication_protocol": {
     "source_commit": "aaa834161fcd2bd9c8c0604d54ec96f5da2fb28f",
@@ -2661,5 +2655,26 @@
     "all_game_specs": "UNRUN",
     "game_runs": 0,
     "next": "NEXT-HC-REPLAY-ACTION-DATA"
+  },
+  "replay_action_data": {
+    "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+    "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+    "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+    "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
+    "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
+    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "working_section": "8.48",
+    "planned_replays": 12,
+    "normal_main_request_declarations": 100,
+    "skill_request_declarations": 10,
+    "expected_accepted_skills": 6,
+    "expected_rejected_skills": 4,
+    "semantic_observation_checkpoints": 210,
+    "new_game_specifications": 0,
+    "old_game_specifications": 64,
+    "all_game_specs": "UNRUN",
+    "engine_runs": 0,
+    "protocol_or_executable_adapter": false,
+    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
   }
 }

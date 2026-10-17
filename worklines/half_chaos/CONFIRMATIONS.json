@@ -1589,5 +1589,105 @@
       "source_permission_note": "Historical optional progress-publicity permission retained as provenance; current-version explicit choice does not display authoritative progress. No retroactive private-progress confirmation invented.",
       "verification": "V2 current-user confirmation and scoped source correspondence; V1 abstract pair only, no engine/client or independent privacy validation"
     }
-  }
+  },
+  "r27_concurrent_main_reconciliation": {
+    "head": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+    "tree": "16e781add08e66d0ffb0cbb6bd65aaee741412c8",
+    "own_targets_unchanged": true,
+    "main_version": "1.57",
+    "source_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "effect_on_action_data": "none: PD isH04/H03 and DS isD01 replacement, noH15 or ordinaryH06",
+    "other_lines_preserved": true
+  },
+  "r27_H15_H06_failure_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "source_workline": "main",
+    "source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+    "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+    "source_blob": "676bc4bc14f745825a715653f95a1d41d2182e0a",
+    "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+    "policy_blob": "3bf18590e03fe9feb0de1f1c3c7264e07bb2adcb",
+    "read_scope": "full original confirmation, complete original reviewed candidate and complete confirmed policy; latest1.57 current status/next metadata",
+    "local_scope": "half_chaos only within original legal H06+H15 pregraduation-death-failure snapshot guard",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "original_confirmation": {
+      "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+      "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+      "confirmed_at_local": "2026-10-17T15:30:17+08:00",
+      "user_quote": "我同意",
+      "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
+      "reconfirmation_quote": "我同意",
+      "counted_as_one_rule_confirmation": true,
+      "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_failed_training_H06_question",
+      "reviewed_candidate": {
+        "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+        "path": "candidates/h15-h06-failed-training-restore/v1.json",
+        "git_blob_sha": "456669cc763a582d970eb0bee43734c8593a2e8d"
+      },
+      "immediately_preceding_question": "是否同意这一限定方案适用于三个模式？",
+      "presented_clauses": [
+        "同一次训练未失败、未毕业时，合法回溯按原来源恢复原受训棋及快照进度，不重新随机，已用机会不返还。",
+        "已因毕业前受训棋死亡而失败的训练：合法回溯可恢复棋子，但不恢复这次已失败训练。",
+        "例：快照炮3/6、后来死亡失败，回溯后炮可存活但不继续培养；启动前快照、已毕业奖励等其他交叉另核。"
+      ],
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
+      "scope": "Only pre-graduation trainee-death failure crossed by an otherwise legal H06 restore to its earlier active-training snapshot; no expansion to prestart, graduation, other failures or other time skills.",
+      "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+      "not_confirmed": [
+        "snapshot before original training start",
+        "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
+        "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
+        "M07 same-begin or other-mode H11 spatial rules",
+        "full phase/key/terminal/clock implementation or runtime/scoring/NET"
+      ],
+      "implementation_status": "confirmed_design_not_implemented",
+      "engine_runs": 0
+    },
+    "confirmed_policy": {
+      "status": "user_confirmed_design_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
+      "policy": {
+        "board_and_unaffected_snapshot_state_restore_under_existing_H06": true,
+        "actual_pregraduation_trainee_death_failure_remains_failed_in_this_H06_branch": true,
+        "earlier_snapshot_active_training_binding_reactivated": false,
+        "old_progress_becomes_active_training_again": false,
+        "new_random_trainee_recruitment_or_second_start": false,
+        "unique_training_opportunity_remains_used": true,
+        "restored_trainee_survival_itself_restarts_cultivation_or_graduation": false,
+        "same_continuous_live_ungraduated_training_original_snapshot_contract_preserved": true,
+        "existing_H15_display_without_actual_progress_or_immediate_failure_feedback_preserved": true,
+        "H06_original_window_preflight_same_body_replay_clock_and_other_restoration_guards_preserved": true,
+        "new_product_storage_layout_chosen": false
+      },
+      "confirmed_text": [
+        "仅此分支：H15该次训练已经因受训棋毕业前实际消灭而失败，之后合法H06回到更早仍在培养的快照。",
+        "棋盘上的棋子及其他未受本例外影响的快照状态仍按H06恢复；但这次已经发生的训练失败不撤销，不恢复快照中的活跃训练关系，不让旧培养进度重新成为可推进的训练。",
+        "不重新随机受训棋、不换棋、不第二次启动；H15唯一训练机会仍已用。后来该棋存活也不因本分支再次自动培养或毕业。",
+        "未经历失败或毕业、快照和当前均为同一持续训练的简单分支仍按原9.14恢复原受训对象及快照进度；不将该候选扩成所有训练进度都不回溯。",
+        "当前H15公开显示照main1.55，不新增失败提示或真实进度反馈；H06原窗口、预检、同棋合法重走、时限及其他棋盘恢复规则保持。"
+      ],
+      "not_confirmed": [
+        "snapshot before original training start",
+        "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
+        "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
+        "M07 same-begin or other-mode H11 spatial rules",
+        "full phase/key/terminal/clock implementation or runtime/scoring/NET"
+      ],
+      "rule_delta": "Explicit source-specific H15 pre-graduation death-failure persistence exception to H06 snapshot restoration; prior continuous-live snapshot rule and other policy remain.",
+      "verification": "V2 direct current-user confirmation and approved candidate correspondence; V1 abstract timeline, no engine/client/independent acceptance"
+    }
+  },
+  "r27_new_local_user_confirmations": 0
 }

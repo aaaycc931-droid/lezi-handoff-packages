@@ -1,17 +1,9 @@
 {
-  "revision": "HC-DESIGN-03-20261017-r26",
+  "revision": "HC-DESIGN-03-20261017-r27",
   "next_independent_task": {
-    "id": "NEXT-HC-REPLAY-ACTION-DATA",
+    "id": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
     "status": "NOT_STARTED",
-    "action": "Prepare declarative source-linked action/request order and semantic observation checkpoints for12 existing replay plans; no engine imports/runs, business changes or gate bypass.",
-    "scope": "data only within existing maintenance authorization",
-    "acceptance_criteria": [
-      "Every step linked to original complete PD/DS source and prepared opening world",
-      "DS01-02 remains one continuous replay; PD03/PD04 real evasions retained",
-      "PD05/06 paired public request sequences agree, aliases are offline expected source bindings",
-      "Requests/rejections/main actions/formal boundaries separated without inventing protocol fields or total source order",
-      "No fabricated engine result; unresolved observer/clock/privacy/gate dependencies remain blocked"
-    ]
+    "action": "Read-only map the declared semantic observation checkpoints to existing authority/player-view/phase/deadline/dedup source fields and source gaps; no new protocol fields, business edits, engine runs or mode admission."
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -35,7 +27,7 @@
   "runtime_scope": "design_only_engine_unrun",
   "scoring_frozen": true,
   "NET": "paused",
-  "previous_completed_task": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+  "previous_completed_task": "NEXT-HC-REPLAY-ACTION-DATA",
   "shared_pending_references": [
     "STD-D01-EDGES remaining end-phase/search/order/clock interfaces"
   ],
@@ -496,5 +488,47 @@
     "other_line_changes_preserved": true
   },
   "r26_H15_display_confirmation_consumed": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-  "current_main_next": "REVIEW-H15-H06-TRAINING-LIFECYCLE-SOURCE-20261017; source review, no new candidate approval"
+  "current_main_next": "REVIEW-H15-H06-TRAINING-LIFECYCLE-SOURCE-20261017; source review, no new candidate approval",
+  "completed_replay_action_data": {
+    "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+    "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+    "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+    "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
+    "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
+    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "working_section": "8.48",
+    "planned_replays": 12,
+    "normal_main_request_declarations": 100,
+    "skill_request_declarations": 10,
+    "expected_accepted_skills": 6,
+    "expected_rejected_skills": 4,
+    "semantic_observation_checkpoints": 210,
+    "new_game_specifications": 0,
+    "old_game_specifications": 64,
+    "all_game_specs": "UNRUN",
+    "engine_runs": 0,
+    "protocol_or_executable_adapter": false,
+    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+  },
+  "current_main_next_metadata": {
+    "source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+    "next": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
+    "is_new_candidate": false,
+    "failed_training_confirmation_consumed": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
+  },
+  "current_standard_next_metadata": {
+    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "candidate": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "approved_at_observation": false,
+    "adopted": false
+  },
+  "r27_concurrent_main_reconciliation": {
+    "head": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+    "tree": "16e781add08e66d0ffb0cbb6bd65aaee741412c8",
+    "own_targets_unchanged": true,
+    "main_version": "1.57",
+    "source_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "effect_on_action_data": "none: PD isH04/H03 and DS isD01 replacement, noH15 or ordinaryH06",
+    "other_lines_preserved": true
+  }
 }
