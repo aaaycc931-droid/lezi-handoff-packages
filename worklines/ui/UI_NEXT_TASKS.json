@@ -12,12 +12,12 @@
     },
     {
       "id": "UI-002",
-      "status": "in_progress_pending_user_review",
+      "status": "in_progress_B8_approved",
       "work": "优先未完成非棋盘页面：设置页、蓝牙大厅，再英雄选择/猜拳",
       "deliverable": "逐屏可审阅方案或原型，含实际状态、返回与适配",
       "acceptance": "已有候选实现先对照；功能/文案保留，新增方案待用户审阅",
-      "current_item": "B8-v1 candidate; B7-v1 approved",
-      "resume_point": "展示本张实际图，由用户具体审批／修改；不自动批准或生成下一张。",
+      "current_item": "B8-v1 approved; B9 not_created",
+      "resume_point": "核对永久拒绝及系统设置入口来源，从批准源层制作一张静态候选；当前尚未创建。",
       "accepted_static_versions": [
         "B1-v2",
         "B2-v4",
@@ -26,9 +26,10 @@
         "B4-v1",
         "B5-v1",
         "B6-v1",
-        "B7-v1"
+        "B7-v1",
+        "B8-v1"
       ],
-      "qualified_static_version": "B1/B2/S1/B3/B4/B5/B6/B7通过；首页/V4原版例外保留。",
+      "qualified_static_version": "B1/B2/S1/B3/B4/B5/B6/B7/B8通过；首页/V4原版例外保留。",
       "runtime_acceptance": "not_run",
       "global_typography_rollout_remaining": [
         "其余未展示蓝牙状态",
@@ -69,7 +70,7 @@
   "planned_tasks_are_not_completed_designs": true,
   "snapshot_date": "2026-10-17",
   "paused_by_user": false,
-  "resume_item": "UI002-BLUETOOTH-B8 pending_user_review",
+  "resume_item": "UI002-BLUETOOTH-B9 not_created",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
   "handoff_requested": false,
@@ -88,11 +89,16 @@
     {
       "item": "B8-v1",
       "state": "蓝牙权限未允许（可再次授权）",
-      "status": "pending_user_review"
+      "status": "user_approved"
+    },
+    {
+      "item": "B9 planned",
+      "state": "蓝牙权限永久拒绝，前往系统设置",
+      "status": "not_created"
     },
     {
       "item": "future Bluetooth states",
-      "state": "权限永久拒绝/连接成功短暂提示/再战；设备列表展开及多设备/长名",
+      "state": "连接成功短暂提示/再战；设备列表展开及多设备/长名",
       "status": "not_designed_or_not_approved"
     },
     {

@@ -2,7 +2,7 @@
   "schema": "lezi.ui_approval_register.v1",
   "workline_id": "UI-DESIGN-001",
   "primary_reader": "project_main_dialogue_AI",
-  "updated_at": "2026-10-17T20:59:03.877+08:00",
+  "updated_at": "2026-10-17T21:44:49+08:00",
   "actors": {
     "user": "图稿最终审批者",
     "ui_workline": "候选设计、版本与证据记录者",
@@ -272,6 +272,38 @@
         "reviewed_version": "B7-v1",
         "reviewed_sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
         "displayed_source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c"
+      }
+    },
+    {
+      "item_id": "UI002-BLUETOOTH-B8",
+      "version": "B8-v1",
+      "status": "user_approved",
+      "approved_at": "2026-10-17T21:44:49+08:00",
+      "user_statement": "审批通过",
+      "file_name": "lezi-bluetooth-B8-v1.png",
+      "repository_path": "candidates/B8/v1/lezi-bluetooth-B8-v1.png",
+      "source_folder": "candidates/B8/v1",
+      "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+      "git_blob_sha": "d123c1d74ba4b281b3b2468d80ce168faf18bb9d",
+      "approval_scope": [
+        "蓝牙权限未允许、可再次授权状态的静态图",
+        "权限解释及允许蓝牙权限按钮的静态表现",
+        "继承原尺寸、批准字体和固定底层；顶部返回入口保留"
+      ],
+      "approval_does_not_include": [
+        "真实系统权限弹窗、授权结果处理和蓝牙双机交互",
+        "永久拒绝状态、设备适配与运行验收",
+        "产品代码接入、APK、部署或主线合并"
+      ],
+      "runtime_acceptance": "not_run",
+      "production_source_status": "not_implemented",
+      "approval_evidence": {
+        "source": "current_conversation_direct_user_statement",
+        "quote": "审批通过",
+        "time": "2026-10-17T21:44:49+08:00",
+        "reviewed_version": "B8-v1",
+        "reviewed_sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+        "displayed_source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51"
       }
     }
   ],
@@ -840,7 +872,7 @@
     "outer_size": "开启与关闭使用同一外圈大小；状态变化仅填墨/消散，外圈不随状态缩放。旋转机制继续沿用。"
   },
   "other_approved_baselines": "首页批准原图与V4棋盘继续沿用；本记录未修改其范围或像素。",
-  "next_authorized_item": "B8-v1 static candidate review; no automatic approval",
+  "next_authorized_item": "B9 planned static candidate: Bluetooth permission permanently denied, system settings entry; not created",
   "rules_delta": 0,
   "formal_scoring_status": "frozen",
   "product_code_changed_by_this_approval": false,
@@ -1087,11 +1119,11 @@
     ]
   },
   "current_session": {
-    "status": "awaiting_B8_user_review",
+    "status": "B8_approved_next_static_item_not_created",
     "B2_v4": "approved",
-    "current_candidate": "B8-v1",
-    "candidate_approval": "pending_user_review",
-    "next": "展示B8-v1蓝牙权限未允许（可再次授权）静态候选，由用户具体审批。",
+    "current_candidate": null,
+    "candidate_approval": null,
+    "next": "下一静态项B9：蓝牙权限永久拒绝，前往系统设置；尚未创建。",
     "runtime": "not_run",
     "B1_v2": "approved",
     "automatic_resume_scheduled": false,
@@ -1100,16 +1132,17 @@
     "resumed_at": "2026-10-14T22:07:03+08:00",
     "latest_user_statement": "审批通过",
     "S1_v3_2": "approved",
-    "latest_approval_at": "2026-10-17T19:05:29+08:00",
-    "last_update_at": "2026-10-17T20:59:03.877+08:00",
+    "latest_approval_at": "2026-10-17T21:44:49+08:00",
+    "last_update_at": "2026-10-17T21:44:49+08:00",
     "home": "approved_original_typography_exception",
     "V4": "approved_original_typography_exception",
     "B3_v1": "approved",
-    "last_approved_candidate": "B7-v1",
+    "last_approved_candidate": "B8-v1",
     "B4_v1": "approved",
     "B5_v1": "approved",
     "B6_v1": "approved",
-    "B7_v1": "approved"
+    "B7_v1": "approved",
+    "B8_v1": "approved"
   },
   "font_license_review": {
     "date": "2026-10-13",
@@ -2827,10 +2860,44 @@
     "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
     "git_blob_sha": "d123c1d74ba4b281b3b2468d80ce168faf18bb9d",
     "source_folder": "candidates/B8/v1",
-    "status": "pending_user_review",
+    "status": "user_approved",
     "runtime": "not_run",
     "changed_pixels_from_B7": 35352,
     "protected_pixels_changed": 0,
-    "state_scope": "Retryable permission denial, no active connection session"
+    "state_scope": "Retryable permission denial, no active connection session",
+    "approved_at": "2026-10-17T21:44:49+08:00",
+    "user_statement": "审批通过"
+  },
+  "current_approved_bluetooth_permission_retry": {
+    "item_id": "UI002-BLUETOOTH-B8",
+    "version": "B8-v1",
+    "status": "user_approved",
+    "approved_at": "2026-10-17T21:44:49+08:00",
+    "user_statement": "审批通过",
+    "file_name": "lezi-bluetooth-B8-v1.png",
+    "repository_path": "candidates/B8/v1/lezi-bluetooth-B8-v1.png",
+    "source_folder": "candidates/B8/v1",
+    "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+    "git_blob_sha": "d123c1d74ba4b281b3b2468d80ce168faf18bb9d",
+    "approval_scope": [
+      "蓝牙权限未允许、可再次授权状态的静态图",
+      "权限解释及允许蓝牙权限按钮的静态表现",
+      "继承原尺寸、批准字体和固定底层；顶部返回入口保留"
+    ],
+    "approval_does_not_include": [
+      "真实系统权限弹窗、授权结果处理和蓝牙双机交互",
+      "永久拒绝状态、设备适配与运行验收",
+      "产品代码接入、APK、部署或主线合并"
+    ],
+    "runtime_acceptance": "not_run",
+    "production_source_status": "not_implemented",
+    "approval_evidence": {
+      "source": "current_conversation_direct_user_statement",
+      "quote": "审批通过",
+      "time": "2026-10-17T21:44:49+08:00",
+      "reviewed_version": "B8-v1",
+      "reviewed_sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+      "displayed_source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51"
+    }
   }
 }
