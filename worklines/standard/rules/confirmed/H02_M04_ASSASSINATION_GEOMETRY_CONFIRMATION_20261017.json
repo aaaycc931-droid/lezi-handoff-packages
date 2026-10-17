@@ -1,0 +1,76 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+  "confirmed_at_local": "2026-10-17T11:01:27+08:00",
+  "user_quote": "我同意",
+  "origin_workline": "standard",
+  "review_id": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+  "source_type": "direct_current_conversation_user_confirmation_of_immediately_preceding_explicit_three_mode_geometry_question",
+  "reviewed_candidate": {
+    "commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜H02刺杀机会与M04战车冲锋几何"
+  },
+  "immediately_preceding_question": "你是否同意这一限定方案，作为三个模式中合法 H02＋M04 组合的共同规则？",
+  "presented_clauses": [
+    "后续刺杀机会可使用该车当前合法有效进攻几何，包括M04原本合法的一地面路径棋冲锋；路径按M04，终点按H02。",
+    "零地面路径棋保持正常车线；两枚及以上地面路径棋拒绝；冲锋终点必须是实际合法敌方非将帅目标，空格及将帅不开放。",
+    "地面无形计数，飞行/河道不计地面路径；路径来源独立，不获得H02额外致死/绕防御/清状态绕碾碎免疫。",
+    "H02原终点指定无形和绕战士普通防御权限保留，龙鳞等明确拦截仍按源；仍只一手进攻，无额外行动或时限刷新。",
+    "原两个后续己方正式回合窗口及机会终止条件保持；失败扣次、回弹顺序及未决复杂交叉不在此补定。"
+  ],
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only originally legal H02+M04 combinations; a normally controlled revealed real ground rook with a previously legally acquired, still-valid later assassination opportunity. Not the activation turn; no second mutation, new pool or activation permission.",
+  "policy": {
+    "effective_geometry_reader": "current_legal_effective_rook_attack_geometry_including_originally_legal_M04_one_ground_path_charge",
+    "activation_turn_uses_special_assassination": false,
+    "normal_control_revealed_true_ground_rook_only": true,
+    "ground_path_count_zero": "normal_rook_line_preserved",
+    "ground_path_count_one": "original_M04_complete_route_legality_required",
+    "ground_path_count_two_or_more": "charge_not_permitted",
+    "ground_intangible_counts": true,
+    "sky_or_river_bodies_count_as_ground_path": false,
+    "empty_endpoint_charge_permitted": false,
+    "royal_assassination_endpoint_permitted": false,
+    "path_resolution": "independent_M04_crush_source_before_endpoint; immunity/source_constraints_preserved",
+    "H02_special_permissions_extend_to_path": false,
+    "endpoint_resolution": "existing_H02_source_specific_target_and_lethal_permissions; ordinary_warrior_defense_bypassed; explicit_dragon_scale_interception_preserved",
+    "extra_action_or_deadline_refresh": false,
+    "original_H02_lifetime_and_use_termination_preserved": true,
+    "failure_consumption_or_bounce_order": "not_decided_by_this_confirmation",
+    "all_other_legality_and_royal_safety_guards_preserved": true
+  },
+  "preserved": [
+    "ordinary31 and previous direct shared9",
+    "original H02 activation-turn rule and two later own-formal-turn windows",
+    "M04 body and independent path/endpoint cause distinction",
+    "mode availability, source immunties, royal safety, final atomic termination, frozen scoring and paused NET"
+  ],
+  "not_confirmed": [
+    "new activation-turn permission or mode-pool entry",
+    "flying/river/temporary control/reveal-defection and path immunity completion",
+    "multiple defense/dragon-scale priority, return-space/trap conflicts",
+    "H10 damage substitution/flow-dance and full same-atom true-royal search",
+    "history restoration, complete fieldmap/search-clock interfaces",
+    "main H15 public-display candidate or hidden failure feedback",
+    "implementation, engine PASS or independent acceptance"
+  ],
+  "verification": {
+    "source_confirmation": "V2 current user statement, actual reviewed candidate and related current source chapters",
+    "AG_S01_AG01_AG08": "unrun; conditional same-assistant specifications without complete natural prefix",
+    "game_code_changes": 0,
+    "engine_tests": 0,
+    "independent_review": false
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "main_adopted_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  }
+}

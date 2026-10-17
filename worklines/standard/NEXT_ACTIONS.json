@@ -1,25 +1,29 @@
 {
   "first": {
-    "id": "NEXT-SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
-    "subject": "H02后续刺杀机会是否读取M04合法冲锋几何",
-    "action": "用户决定合法H02＋M04后续刺杀机会能否沿原本合法一地面路径冲锋；建议当前有效几何保持，路径按M04、终点按H02，其他合法性/多源顺序不扩围。当前未批准。",
+    "id": "NEXT-STD-M04-PATH-IMMUNITY-SOURCE-REVIEW",
+    "subject": "M04路径碾碎受免疫或明确拦截时的路线完成边界",
+    "action": "先回读当前碾碎/免疫/龙鳞及M04完整来源，区分已有明文与真正未决；只在缺少明确来源时形成具体候选交用户决定。不从本次几何批准推定免疫后的路线完成、落位或返位结果。",
+    "status": "source_review_pending_no_new_candidate_approved",
     "pending_is_not_approved": true,
-    "is_shared_core_candidate": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H02刺杀机会与M04战车冲锋几何",
-    "execution_status": "paused_with_this_conversation_resume_from_existing_candidate"
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#接续动作｜M04路径免疫来源复核"
   },
-  "preserve": "普通31、直接共享9及全部原确认保持；本次收束新增规则0。H02＋M04完整候选及AG未运行规格保留未批准状态。评分冻结、NET暂停。",
+  "preserve": "普通31、此前直接共享9及原确认保持；新增H02/M04限定几何共享1，累计10。AG未运行；评分冻结、NET暂停。",
   "main_owned_pending": "Main1.54 has actual H15 successful-cost and ordinary-only public-empty receipts. New closeout receipt unknown; H15 display/hidden failures and all deferred interfaces still separate.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "STD-H15-PUBLIC-EMPTY-POOL",
-    "confirmation_id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
-    "scope": "standard_only_publicly_determinable_legal_empty_recruitment_pool_request",
-    "new_shared_confirmations": 0,
-    "new_ordinary_confirmations": 1
+    "id": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "scope": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "new_shared_confirmations": 1,
+    "new_ordinary_confirmations": 0,
+    "source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
   },
-  "status": "current_conversation_closed_pending_candidate_preserved",
+  "status": "active_shared_geometry_confirmed_next_source_review",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261017-r1",
     "status": "closed_current_conversation",

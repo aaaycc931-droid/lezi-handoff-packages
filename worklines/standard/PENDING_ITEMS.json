@@ -1,31 +1,11 @@
 {
   "items": [
     {
-      "id": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
-      "status": "pending_user_decision",
-      "scope": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "availability_guard": "Only legally available H02+M04 and effective later assassination opportunity of public ground normally controlled rook; no whole-adaptation approval.",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H02刺杀机会与M04战车冲锋几何",
-      "confirmed": false,
-      "not_approved_by_public_empty_confirmation": true,
-      "conditional_unrun_spec_ids": [
-        "AG01",
-        "AG02",
-        "AG03",
-        "AG04",
-        "AG05",
-        "AG06",
-        "AG07",
-        "AG08"
-      ],
-      "conditional_unrun_case_ids": [
-        "AG-S01"
-      ],
-      "execution_status": "paused_current_conversation_existing_candidate_pending_user_decision"
+      "id": "STD-M04-PATH-IMMUNITY",
+      "status": "source_review_pending",
+      "scope": "M04 path immunity completion only; no new candidate approval",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#接续动作｜M04路径免疫来源复核",
+      "confirmed": false
     },
     {
       "id": "MAIN-H15-PUBLIC-TRAINING-DISPLAY",
@@ -103,7 +83,7 @@
       "status": "source_review_and_runtime_pending",
       "scope": "standard",
       "details": [
-        "assassination effective geometry: explicit current shared candidate",
+        "H02 legal later ground opportunity geometry confirmed by CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
         "path-immunity/endpoint multi-defense order",
         "H10 atomic identity/return and general death"
       ],
@@ -115,7 +95,7 @@
         "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
         "H02_activation_turn_single_defense": "Already completed path death persists; ordinary endpoint defense prevents H02 activation and source remains unused, no extra main action; conditional unrun"
       },
-      "assassination_geometry_candidate": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY"
+      "assassination_geometry_confirmed": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017"
     },
     {
       "id": "H13-LAYER-SOURCE",
@@ -938,6 +918,41 @@
       "prior_proposal_source": {
         "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通象棋H15公开可判空池的启动请求"
+      }
+    },
+    {
+      "id": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+      "status": "confirmed_shared_geometry_not_implemented_or_tested",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only legally available H02+M04 and effective later assassination opportunity of public ground normally controlled rook; no whole-adaptation approval.",
+      "source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+      "confirmed": true,
+      "not_approved_by_public_empty_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "AG01",
+        "AG02",
+        "AG03",
+        "AG04",
+        "AG05",
+        "AG06",
+        "AG07",
+        "AG08"
+      ],
+      "conditional_unrun_case_ids": [
+        "AG-S01"
+      ],
+      "execution_status": "confirmed_design_unrun",
+      "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+      "confirmed_at_local": "2026-10-17T11:01:27+08:00",
+      "user_quote": "我同意",
+      "prior_proposal_source": {
+        "commit": "76a4279586ca40db88198e40d371de32c3766b11",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜H02刺杀机会与M04战车冲锋几何"
       }
     }
   ],
