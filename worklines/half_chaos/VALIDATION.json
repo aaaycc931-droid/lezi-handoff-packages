@@ -1,8 +1,8 @@
 {
-  "revision": "HC-DESIGN-03-20261017-r29",
-  "source_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
-  "publication_parent_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
-  "scope": "finite64 obligation evidence matrix / external scoped confirmation; documentation-only",
+  "revision": "HC-DESIGN-03-20261017-r30",
+  "source_commit": "2c66fb06eb15f03e63e0e6c9cbf955cccc71a799",
+  "publication_parent_commit": "2c66fb06eb15f03e63e0e6c9cbf955cccc71a799",
+  "scope": "r30 document proposal publication and current-round closeout; earlier matrix checks retained under original scope",
   "matrix_file": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
   "data_sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
   "summary": {
@@ -233,5 +233,35 @@
     "limitation_audit_status": "not_required_for_new_rule_semantics; closeout scope only, prior r29 partial audit retained",
     "read_boundary": "main1.60 metadata and actual r29 report only; candidate/source semantics unreviewed",
     "prepublication_checks": "completed: seven immutable data/confirmation files exact unchanged; WORKING1—8.50 and9 exact preserved; eight changed files parse/reference scopes checked"
+  },
+  "r30_document_proposal_and_closeout": {
+    "revision": "HC-DESIGN-03-20261017-r30",
+    "design_commit": "2c66fb06eb15f03e63e0e6c9cbf955cccc71a799",
+    "checks": {
+      "64_original_spec_ids_unique_and_routes_resolve": true,
+      "12_original_replays_partitioned_as3_proposed_pilot_plus9": true,
+      "six_input_object_identities_match_remote": true,
+      "11_engine_source_reference_blobs_exact": true,
+      "proposal_summaries_sha256_git_blob_agree": true,
+      "published9_paths_match_expected": true,
+      "changed_paths_only_half_chaos": true
+    },
+    "boundary": "Only offline JSON/source/reference and Git identity checks; no gameplay assertion evaluated. Eleven sources retrieved, selective semantic scope only.",
+    "game_code_changes": 0,
+    "engine_imports": 0,
+    "engine_runs": 0,
+    "client_runs": 0,
+    "independent_review": false,
+    "all64": "UNRUN",
+    "new_local_user_rule_approvals": 0,
+    "external_shared_confirmation_consumption": 1,
+    "main_adoption": "unknown",
+    "closeout": "current round only; next document-only contract refinement not started"
+  },
+  "previous_r29_validation_identity": {
+    "revision": "HC-DESIGN-03-20261017-r29",
+    "source_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
+    "publication_parent_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
+    "scope": "finite64 obligation evidence matrix / external scoped confirmation; documentation-only"
   }
 }
