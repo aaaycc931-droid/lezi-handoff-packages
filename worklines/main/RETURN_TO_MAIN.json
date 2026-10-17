@@ -7,49 +7,15 @@
     "standard",
     "ui"
   ],
-  "base_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
-  "phase": "H15_display_confirmed_public_field_contract_updated",
-  "current_breakpoint": "REVIEW-H15-H06-TRAINING-LIFECYCLE-SOURCE-20261017",
-  "status": "confirmed_design_source_review_next_no_runtime",
-  "confirmed_delta_this_session": [
-    {
-      "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-      "confirmed_at_local": "2026-10-17T11:02:28+08:00",
-      "user_quote": "我同意你的方案",
-      "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
-      "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-      "reviewed_candidate": {
-        "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
-        "path": "candidates/h15-public-training-display/v1.json",
-        "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
-      },
-      "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
-      "presented_clauses": [
-        "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
-        "真实培养照常结算，毕业时公开实际棋盘变化。",
-        "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
-      ],
-      "mode_ids": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
-      "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
-      "not_inferred": [
-        "empty/failed candidate consumption, retry/feedback or new start/check permission",
-        "H06 actual body/progress/failure/reward restore semantics",
-        "M07 same-begin order or other modes H11 space details",
-        "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
-        "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
-      ],
-      "implementation_status": "confirmed_design_not_implemented",
-      "new_engine_tests": 0
-    }
-  ],
+  "base_commit": "115350d1f8264143a1381aae61e9837492067a04",
+  "phase": "H15_H06_source_review_one_failed_training_candidate_prepared",
+  "current_breakpoint": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+  "status": "existing_source_slice_checked_candidate_pending_no_new_approval",
+  "confirmed_delta_this_session": [],
   "pending_delta": [
+    "H15 already-failed training crossed by H06: current explicit candidate pending",
+    "H15 pre-start target snapshots and graduation/flight/reward history crossings remain separate",
     "complete remaining hero/mutation public effects, resource and relation map",
-    "H15 actual training/history lifecycle beyond confirmed display, hidden/illegal/other failed requests and source-specific history interactions; successful-start cost confirmed independently, ordinary public-empty scope received only",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
     "canonical equality/serialization/hash algorithm",
@@ -71,49 +37,10 @@
     "SHARED_COORDINATION.json",
     "SOURCE_MAP.json",
     "START_HERE.txt",
-    "VALIDATION.json"
+    "VALIDATION.json",
+    "../../candidates/h15-h06-failed-training-restore/v1.json"
   ],
-  "approval_sources": [
-    {
-      "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-      "confirmed_at_local": "2026-10-17T11:02:28+08:00",
-      "user_quote": "我同意你的方案",
-      "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
-      "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-      "reviewed_candidate": {
-        "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
-        "path": "candidates/h15-public-training-display/v1.json",
-        "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
-      },
-      "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
-      "presented_clauses": [
-        "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
-        "真实培养照常结算，毕业时公开实际棋盘变化。",
-        "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
-      ],
-      "mode_ids": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
-      "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
-      "not_inferred": [
-        "empty/failed candidate consumption, retry/feedback or new start/check permission",
-        "H06 actual body/progress/failure/reward restore semantics",
-        "M07 same-begin order or other modes H11 space details",
-        "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
-        "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
-      ],
-      "implementation_status": "confirmed_design_not_implemented",
-      "new_engine_tests": 0
-    },
-    {
-      "commit": "7d456190d5683cfca56a2707730f428a4a33c279",
-      "path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
-      "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0"
-    }
-  ],
+  "approval_sources": [],
   "verification": "Document/source and remote publication checks only; no engine run",
   "unrun": [
     "concrete RH01-RH06 reachable fixtures",
@@ -133,16 +60,16 @@
     "r23-r25 twelve replay plans covering64 old PD/DS specs are allUNRUN per source report; main did not read full prefixes or run engine"
   ],
   "shared_blocks": "SHARED_COORDINATION.json",
-  "next": "核对H15×H06训练本体、实际进度及失败状态的现有来源和覆盖关系；分开已确认不返还唯一机会与仍待核的其他恢复语义，再补公开字段来源表。",
+  "next": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？",
   "messages_sent": false,
   "other_lines_adoption_verified": "Earlier exact source scopes only; current1.55 unknown",
   "scoring_frozen": true,
   "NET": "paused",
   "source_return_commits": {
     "standard": "7d456190d5683cfca56a2707730f428a4a33c279",
-    "half_chaos": "fef0e8e764d240a63353a11f451db3b56dd08c91"
+    "half_chaos": "115350d1f8264143a1381aae61e9837492067a04"
   },
-  "scope_of_unknown_adoption": "All other lines current1.55 reading/adoption unverified; receiver-owned receipts required.",
+  "scope_of_unknown_adoption": "Half1.55 display consumption known; new1.56 review/candidate uptake unknown; no candidate approval or messages.",
   "ordinary_scoped_confirmations_received": [
     "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
     "CONF-STD-M05-EXPEDITION-KEEP-20261016",
@@ -150,18 +77,16 @@
     "CONF-STD-M07-POOL-EXCLUSION-20261016"
   ],
   "ordinary_scoped_confirmations_received_this_phase": [],
-  "publication_parent_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+  "publication_parent_commit": "115350d1f8264143a1381aae61e9837492067a04",
   "unread_concurrent_returns": [],
-  "new_rule_confirmations_this_phase": 1,
+  "new_rule_confirmations_this_phase": 0,
   "current_phase_changes": [
-    "Explicit current-user confirmation of three-mode H15 current-version display recorded.",
-    "Affected H15 public-field source contract updated; no fake progress or public planned clock; full hash/key remains unresolved.",
-    "Current v0.13 evidence-coverage control read; standard own-session closeout received, H02/M04 stays pending.",
-    "Preserve concurrent standard geometry commit; exact original confirmation and complete guarded section read/adopted, excluded crosses untouched."
+    "Read original H15§9.14 and complete later core delta/current H06/H15 chapters; explicit source-priority matrix saved.",
+    "Narrow continuous alive/ungraduated source slice retains same snapshot body/progress; do not request reapproval of old baseline.",
+    "Prepare one explicit pre-graduation death-failed training crossing candidate; pre-start/graduation and other history remain separate.",
+    "Read r26 data-stage metadata and actual half1.55 display receipt, not raw dataset/engine acceptance."
   ],
-  "external_shared_confirmations_received_this_phase": [
-    "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017"
-  ],
+  "external_shared_confirmations_received_this_phase": [],
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
     "previous_main_commit": "d414c021cfc584094021bbebd5194688b465e89d",
@@ -223,38 +148,6 @@
       "read_scope": "complete session_closeout object from RETURN and CURRENT_STATE plus actual closeout observation receipt; not full working8.46 or historical corpus"
     }
   },
-  "new_confirmation": {
-    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-    "confirmed_at_local": "2026-10-17T11:02:28+08:00",
-    "user_quote": "我同意你的方案",
-    "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
-    "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-    "reviewed_candidate": {
-      "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
-      "path": "candidates/h15-public-training-display/v1.json",
-      "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
-    },
-    "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
-    "presented_clauses": [
-      "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
-      "真实培养照常结算，毕业时公开实际棋盘变化。",
-      "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
-    ],
-    "mode_ids": [
-      "original_jieqi",
-      "standard_xiangqi",
-      "half_chaos"
-    ],
-    "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
-    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
-    "not_inferred": [
-      "empty/failed candidate consumption, retry/feedback or new start/check permission",
-      "H06 actual body/progress/failure/reward restore semantics",
-      "M07 same-begin order or other modes H11 space details",
-      "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
-      "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
-    ],
-    "implementation_status": "confirmed_design_not_implemented",
-    "new_engine_tests": 0
-  }
+  "new_confirmation": null,
+  "source_review_pointer": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review"
 }

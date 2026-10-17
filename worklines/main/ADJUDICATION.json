@@ -1,6 +1,6 @@
 {
   "record_type": "adjudication_reference_selection",
-  "record_version": "1.55",
+  "record_version": "1.56",
   "project": "乐子象棋",
   "decision_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
@@ -2160,7 +2160,7 @@
     }
   ],
   "three_mode_adjudication_draft": {
-    "stage": "S1.37",
+    "stage": "S1.38",
     "status": "core_thresholds_confirmed_remaining_adaptation_draft",
     "authorization": {
       "user_quote": "我同意",
@@ -2218,11 +2218,11 @@
     ],
     "session_status": "main_round_closed_pending_handoff",
     "next_work_item": {
-      "id": "REVIEW-H15-H06-TRAINING-LIFECYCLE-SOURCE-20261017",
-      "status": "source_review_next_not_new_rule_candidate",
-      "task": "核对H15×H06训练本体、实际进度及失败状态的现有来源和覆盖关系；分开已确认不返还唯一机会与仍待核的其他恢复语义，再补公开字段来源表。",
-      "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
-      "is_new_user_candidate": false
+      "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+      "status": "pending_user_confirmation",
+      "task": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？",
+      "source": "candidates/h15-h06-failed-training-restore/v1.json",
+      "is_new_user_candidate": true
     }
   },
   "unified_adjudication_core": {
@@ -3134,9 +3134,9 @@
   },
   "current_main_work": {
     "primary_reader": "AI",
-    "phase": "H15_display_confirmed_public_field_contract_applied_H06_source_review_next",
+    "phase": "H15_H06_source_baseline_review_failed_training_candidate_pending",
     "current_rules": "this record plus inherited LEZI-SHARED-DESIGN-2026-10-13-r1",
-    "rule_delta": "New current-user three-mode H15 display selection only; authority training/failure/first-tick/start-cost unchanged. Public-field source contract applied; complete key and runtime not verified. Independently confirmed H02/M04 limited later-assassination geometry source received; all exclusions preserved.",
+    "rule_delta": "No confirmed gameplay-rule delta. Original9.14 continuous-live-training snapshot contract source checked; only already-failed-training crossing has one unapproved proposed exception.",
     "completed": [
       "H15 current information baseline source recheck",
       "two design dispatches prepared and byte checked",
@@ -3211,11 +3211,11 @@
     "new_engine_tests": 0,
     "runtime_acceptance": false,
     "next_action": {
-      "id": "REVIEW-H15-H06-TRAINING-LIFECYCLE-SOURCE-20261017",
-      "status": "source_review_next_not_new_rule_candidate",
-      "task": "核对H15×H06训练本体、实际进度及失败状态的现有来源和覆盖关系；分开已确认不返还唯一机会与仍待核的其他恢复语义，再补公开字段来源表。",
-      "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
-      "is_new_user_candidate": false
+      "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+      "status": "pending_user_confirmation",
+      "task": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？",
+      "source": "candidates/h15-h06-failed-training-restore/v1.json",
+      "is_new_user_candidate": true
     },
     "limitation_audit_status": "partial",
     "audit": {
@@ -4729,7 +4729,15 @@
       "implementation_and_runtime_acceptance": false
     },
     "latest_design_confirmation": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-    "audit_current_phase_reference": "VALIDATION.json#/limitation_audit"
+    "audit_current_phase_reference": "VALIDATION.json#/limitation_audit",
+    "H15_H06_source_review": {
+      "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+      "status": "partial_source_review_no_new_rule_approval",
+      "existing_source_slice": "same continuous live ungraduated trainee restores snapshot original body/progress; no new randomization; used opportunity remains used",
+      "pending_candidate": "candidates/h15-h06-failed-training-restore/v1.json",
+      "unrelated_histories_unresolved": true,
+      "new_rule_confirmations": 0
+    }
   },
   "ordinary_hidden_chase_classification_contract": {
     "status": "six_source_confirmations_consolidated_design_not_runtime",

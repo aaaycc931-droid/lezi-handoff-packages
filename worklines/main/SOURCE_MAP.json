@@ -203,6 +203,36 @@
       "commit": "7d456190d5683cfca56a2707730f428a4a33c279",
       "path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
       "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+      "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
+      "read_scope": "complete sections0,1,2.1-2.3,3.2,4/4.1/4.2,5/5.1-5.3,9.14,9.17,9.18,11,13; not whole historical audit"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
+      "git_blob_sha": "1207f415a2681aafcd20df7dd9b35d03a0276a61",
+      "read_scope": "complete seven sections; old first-tick/cost/private-progress statuses superseded by later specific confirmations"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/standard/rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
+      "git_blob_sha": "3f61cf1a516195dba89bdbd5c5607d2a840df5c9",
+      "read_scope": "full; stale visibility pending is superseded by main1.55, not current authority"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "git_blob_sha": "9d035ebf9eb0a7e168c44bd32e878f8dadb42afc",
+      "read_scope": "complete H06 and H15 entries only; H15 display source wording not yet synchronized, main1.55 controls"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/main/ADJUDICATION.json",
+      "git_blob_sha": "6418ee7bb0b9aa844dd8018869f6c26feedc1c51",
+      "read_scope": "current H15 timing/start-cost/display policies and existing H06 no-legal-replay source; not full historical audit"
     }
   ],
   "local_original_archive_recovered": {
@@ -257,8 +287,8 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.55",
-  "latest_maintenance_base_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+  "current_record_version": "1.56",
+  "latest_maintenance_base_commit": "115350d1f8264143a1381aae61e9837492067a04",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "confirmed_at_local": "2026-10-17T11:02:28+08:00",
@@ -322,35 +352,31 @@
     }
   },
   "latest_half_chaos_read_scope": {
-    "source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
-    "read_scope": [
-      {
-        "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
-        "scope": "r25 return selected phase/change/breakpoint/validation/source-question metadata; inventory seven finding observations and example; actual H15 receipt and main adopted/nonadopted fields. No full WORKING/prefix/acceptance/code audit."
-      },
-      {
-        "path": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
-        "scope": "seven reported finding observations, conditional impact and EI07 example; source-entrypoint metadata only, not entire inventory or engine source"
-      },
-      {
-        "path": "worklines/half_chaos/READ_RECEIPTS.json",
-        "scope": "main actual adopted/nonadopted/status fields; standard_H15_successful_start_cost actual_reading/adopted/not_adopted and original-confirmation equality; current_scope_exclusions"
-      }
-    ],
-    "next": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
-    "concurrent_closeout": {
-      "source_commit": "fef0e8e764d240a63353a11f451db3b56dd08c91",
-      "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
-      "scope": "this_conversation_only",
-      "project_or_other_worklines_stopped": false,
-      "last_completed_design_revision": "HC-DESIGN-03-20261017-r25",
-      "last_completed_design_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
-      "next_task": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
-      "next_task_status": "NOT_STARTED",
-      "new_rule_confirmations": 0,
+    "source_commit": "115350d1f8264143a1381aae61e9837492067a04",
+    "revision": "HC-DESIGN-03-20261017-r26",
+    "read_scope": "return current phase/change/data/validation metadata and complete selected main receiver row only; no full WORKING8.47 or dataset audit",
+    "reported_data": {
+      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+      "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
+      "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+      "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+      "planned_replays": 12,
+      "unique_initial_worlds": 10,
+      "nonroyals_per_plan": 30,
+      "draws_per_plan": 28,
+      "logical_draws_checked": 336,
+      "stored_unique_draws": 280,
+      "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "engine_initialization_applied": false,
+      "all_game_specs": "UNRUN",
       "game_runs": 0,
-      "read_scope": "complete session_closeout object from RETURN and CURRENT_STATE plus actual closeout observation receipt; not full working8.46 or historical corpus"
-    }
+      "next": "NEXT-HC-REPLAY-ACTION-DATA"
+    },
+    "game_runs": 0,
+    "main_dataset_independently_verified": false,
+    "next": "NEXT-HC-REPLAY-ACTION-DATA"
   },
   "latest_fieldmap_sources": [
     {
@@ -384,30 +410,15 @@
       "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b"
     }
   ],
-  "publication_parent_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+  "publication_parent_commit": "115350d1f8264143a1381aae61e9837492067a04",
   "unread_concurrent_returns": [],
   "current_phase_candidate_source": {
-    "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-    "path": "candidates/h15-public-training-display/v1.json",
-    "approved": true,
-    "source_baseline": {
-      "commit": "e588078339fc256a9737e08a0db8d83322262171",
-      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-      "git_blob_sha": "6320011a324b556b8522044d9cddd4a86ddad9dd",
-      "read_scope": "complete H15 entry only; updated first tick and remaining public progression/hidden-body/lifecycle clauses"
-    },
-    "historical_visibility_blob": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
-    "existing_H15_first_tick_unchanged": true,
-    "independent_cost_source": {
-      "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
-      "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
-      "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
-      "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
-    },
-    "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-    "confirmation_scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only"
+    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+    "path": "candidates/h15-h06-failed-training-restore/v1.json",
+    "approved": false,
+    "source_baseline": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review"
   },
-  "confirmed_record_maintenance_note": "1.55 adds direct11:02 current-user H15 display selection and its source-field mapping; complete prior1.54 core/50 confirmations/timing/start-cost unchanged. Implementation/runtime separate. Also receives separately approved11:01 H02/M04 guarded geometry, not derived from H15 consent.",
+  "confirmed_record_maintenance_note": "1.56 is source-review/candidate documentation only, not new approved gameplay. Exact1.55 confirmed policies and52 original confirmations preserved; historical9.14 continuous-live slice recognized, death-failure crossing pending.",
   "concurrent_source_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
   "latest_standard_shared_confirmation_sources": [
     {

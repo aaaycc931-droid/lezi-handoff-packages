@@ -1,0 +1,95 @@
+{
+  "schema": "lezi.design.candidate.v1",
+  "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+  "status": "pending_user_confirmation_not_implemented",
+  "title": "H15训练已因毕业前死亡失败后，H06恢复棋盘不重新激活该次训练",
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "source_base_commit": "115350d1f8264143a1381aae61e9837492067a04",
+  "availability_guard": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
+  "source_review": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+  "sources": [
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+      "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
+      "read_scope": "complete sections0,1,2.1-2.3,3.2,4/4.1/4.2,5/5.1-5.3,9.14,9.17,9.18,11,13; not whole historical audit"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
+      "git_blob_sha": "1207f415a2681aafcd20df7dd9b35d03a0276a61",
+      "read_scope": "complete seven sections; old first-tick/cost/private-progress statuses superseded by later specific confirmations"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/standard/rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
+      "git_blob_sha": "3f61cf1a516195dba89bdbd5c5607d2a840df5c9",
+      "read_scope": "full; stale visibility pending is superseded by main1.55, not current authority"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "git_blob_sha": "9d035ebf9eb0a7e168c44bd32e878f8dadb42afc",
+      "read_scope": "complete H06 and H15 entries only; H15 display source wording not yet synchronized, main1.55 controls"
+    },
+    {
+      "commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "path": "worklines/main/ADJUDICATION.json",
+      "git_blob_sha": "6418ee7bb0b9aa844dd8018869f6c26feedc1c51",
+      "read_scope": "current H15 timing/start-cost/display policies and existing H06 no-legal-replay source; not full historical audit"
+    }
+  ],
+  "source_baseline": {
+    "exact_snapshot_original_body_progress_exists": true,
+    "unique_start_use_never_refunded_confirmed": true,
+    "ordinary_revival_does_not_reactivate_failed_training_confirmed": true,
+    "H06_crossing_failed_training_priority_not_explicitly_selected": true,
+    "current_main_display_confirmed_not_reopened": true
+  },
+  "proposal": [
+    "仅此分支：H15该次训练已经因受训棋毕业前实际消灭而失败，之后合法H06回到更早仍在培养的快照。",
+    "棋盘上的棋子及其他未受本例外影响的快照状态仍按H06恢复；但这次已经发生的训练失败不撤销，不恢复快照中的活跃训练关系，不让旧培养进度重新成为可推进的训练。",
+    "不重新随机受训棋、不换棋、不第二次启动；H15唯一训练机会仍已用。后来该棋存活也不因本分支再次自动培养或毕业。",
+    "未经历失败或毕业、快照和当前均为同一持续训练的简单分支仍按原9.14恢复原受训对象及快照进度；不将该候选扩成所有训练进度都不回溯。",
+    "当前H15公开显示照main1.55，不新增失败提示或真实进度反馈；H06原窗口、预检、同棋合法重走、时限及其他棋盘恢复规则保持。"
+  ],
+  "why_recommended": "优先维持新核心中死亡失败的终止性，避免回溯恢复活棋后暗中续回已经失败的培养。代价是H06能恢复该棋存活，却不能救回这次已失败训练。",
+  "alternative": {
+    "option": "允许H06撤销这次死亡失败，恢复快照中同一旧训练，而非重新征募",
+    "tradeoff": "更接近完整时间回溯；可区分继续同一训练与第二次启动，但必须明确H15死亡失败在H06下可逆，并继续处理后续毕业/奖励边界。当前未批准。",
+    "not_rejected_or_confirmed_as_old_rule": true
+  },
+  "abstract_case": {
+    "status": "conditional_authority_timeline_not_complete_legal_prefix_UNRUN",
+    "snapshot": "S为H06方上一正式回合自己行动前的合法快照；同一受训炮A存活、仍在培养、实际3/6。",
+    "later": "A在毕业前实际被消灭，H15训练失败；之后H06在原合法窗口及预检通过条件下回到S。",
+    "proposed": "A可按棋盘快照恢复存活；该次训练仍失败，机会已用，不恢复3/6活跃培养，不重新抽人。",
+    "surviving_source_comparison": "若中间从未失败或毕业且仍是同一活跃训练，则恢复S中A和3/6，不重新随机。",
+    "privacy": "只描述权威状态；双方客户端仍不显示真实绑定/进度/即时失败。合法公开棋盘推断不保证阻止。"
+  },
+  "not_decided": [
+    "snapshot before original training start",
+    "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
+    "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
+    "M07 same-begin or other-mode H11 spatial rules",
+    "full phase/key/terminal/clock implementation or runtime/scoring/NET"
+  ],
+  "approval": {
+    "approved": false,
+    "user_quote": null,
+    "question": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？"
+  },
+  "verification": {
+    "source": "V2 scoped source correspondence",
+    "proposal": "V0 pending",
+    "example": "V1 abstract same-assistant UNRUN timeline",
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "independent_review": false
+  },
+  "proposed_rule_delta": "If approved: explicit H15 pre-graduation death-failure persistence exception to H06 snapshot restoration. This is a new scoped selection, not a claim that the old snapshot source already selected it."
+}

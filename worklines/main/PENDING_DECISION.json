@@ -1,21 +1,22 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "H15_display_confirmed_source_review_next_no_active_candidate",
+  "status": "single_H15_H06_failed_training_candidate_pending",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "REVIEW-H15-H06-TRAINING-LIFECYCLE-SOURCE-20261017",
-    "status": "source_review_next_not_new_rule_candidate",
-    "task": "核对H15×H06训练本体、实际进度及失败状态的现有来源和覆盖关系；分开已确认不返还唯一机会与仍待核的其他恢复语义，再补公开字段来源表。",
-    "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
-    "is_new_user_candidate": false
+    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+    "status": "pending_user_confirmation",
+    "task": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？",
+    "source": "candidates/h15-h06-failed-training-restore/v1.json",
+    "is_new_user_candidate": true
   },
   "unresolved_questions": [
+    "H15 already-failed training crossed by H06: current explicit candidate pending",
+    "H15 pre-start target snapshots and graduation/flight/reward history crossings remain separate",
     "complete remaining hero/mutation public effects, resource and relation map",
-    "H15 actual training/history lifecycle beyond confirmed display, hidden/illegal/other failed requests and source-specific history interactions; successful-start cost confirmed independently, ordinary public-empty scope received only",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
     "canonical equality/serialization/hash algorithm",
@@ -23,11 +24,17 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": null,
-  "candidate_prepared_for_presentation": false,
-  "approval_scope_guard": "Current display after legal success only. Cost/ordinary empty retain original scopes; no H02/M04, hidden failed requests, new windows/check/history, complete key or runtime approval. H02/M04 geometry now has a separately read11:01 original confirmation; display consent is not its authority.",
-  "new_candidate_approved": true,
-  "candidate_presentation": "Existing display approved by explicit current user statement; no other candidate selected.",
+  "current_candidate": {
+    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+    "path": "candidates/h15-h06-failed-training-restore/v1.json",
+    "approved": false,
+    "scope": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
+    "question": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？"
+  },
+  "candidate_prepared_for_presentation": true,
+  "approval_scope_guard": "Pending candidate only pre-graduation death-failed training crossed by H06. Does not reopen approved H15 display or first tick/cost, and does not approve pre-start/graduation/other history semantics.",
+  "new_candidate_approved": false,
+  "candidate_presentation": "One explicit failure-crossing proposal; current continue instruction approves none.",
   "resolved_candidate": {
     "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "path": "candidates/h15-public-training-display/v1.json",
