@@ -1,16 +1,17 @@
 {
-  "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
+  "revision": "HC-DESIGN-03-20261017-r26",
   "next_independent_task": {
-    "id": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
-    "action": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
-    "scope": "initial fixture data/witness only, no engine code/run",
+    "id": "NEXT-HC-REPLAY-ACTION-DATA",
+    "status": "NOT_STARTED",
+    "action": "Prepare declarative source-linked action/request order and semantic observation checkpoints for12 existing replay plans; no engine imports/runs, business changes or gate bypass.",
+    "scope": "data only within existing maintenance authorization",
     "acceptance_criteria": [
-      "12 planned replay initial-world mappings with exactly15 original-side nonroyals per side and correct true-kind inventory",
-      "28 bounded Fisher-Yates initial draws per plan plus slot/source identity references",
-      "DS01/DS02 share one actual replay world; PD05/06 paired worlds differ only allowed secret swap",
-      "data integrity not relabeled engine pass; mode gate and shared source issues remain"
-    ],
-    "status": "NOT_STARTED"
+      "Every step linked to original complete PD/DS source and prepared opening world",
+      "DS01-02 remains one continuous replay; PD03/PD04 real evasions retained",
+      "PD05/06 paired public request sequences agree, aliases are offline expected source bindings",
+      "Requests/rejections/main actions/formal boundaries separated without inventing protocol fields or total source order",
+      "No fabricated engine result; unresolved observer/clock/privacy/gate dependencies remain blocked"
+    ]
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -34,18 +35,7 @@
   "runtime_scope": "design_only_engine_unrun",
   "scoring_frozen": true,
   "NET": "paused",
-  "previous_completed_task": {
-    "id": "NEXT-HC-ENGINE-SOURCE-INVENTORY",
-    "scope": "read-only actual business engine source inventory",
-    "action": "read_only_inventory_actual_jieqi_engine_commit_and_existing_fixture_action_state_projection_clock_and_dedup_entrypoints_without_code_or_runtime",
-    "repository": "aaaycc931-droid/jieqi-engine",
-    "acceptance_criteria": [
-      "verify actual branch/head/PR and relevant source objects rather than assuming inherited14b current",
-      "map seven prerequisite groups to real existing entrypoints or missing/undecided fields",
-      "record fixed immutable code source and source gaps; no implementation/runtime",
-      "keep source tier/terminal/key decisions with main"
-    ]
-  },
+  "previous_completed_task": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
   "shared_pending_references": [
     "STD-D01-EDGES remaining end-phase/search/order/clock interfaces"
   ],
@@ -466,6 +456,45 @@
         "business source14b is r25 fixed inspection evidence, recheck actual branch/PR before future use",
         "no business code/runtime/mode admission inferred from continue or closeout"
       ]
-    }
-  }
+    },
+    "historical_only_current_session_resumed": true
+  },
+  "completed_initialization_witness_data": {
+    "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+    "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
+    "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+    "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+    "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+    "planned_replays": 12,
+    "unique_initial_worlds": 10,
+    "nonroyals_per_plan": 30,
+    "draws_per_plan": 28,
+    "logical_draws_checked": 336,
+    "stored_unique_draws": 280,
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_initialization_applied": false,
+    "all_game_specs": "UNRUN",
+    "game_runs": 0,
+    "next": "NEXT-HC-REPLAY-ACTION-DATA"
+  },
+  "r26_shared_confirmation_consumed": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+  "current_standard_next": "NEXT-STD-M04-PATH-IMMUNITY-SOURCE-REVIEW source review only, no additional candidate adopted",
+  "concurrent_publication_reconciliation_r26": {
+    "head": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "base_tree_sha": "090b03f07a6ccb6be36f5dfe999b0d731103a4e0",
+    "own_targets_unchanged": true,
+    "source_confirmation_read": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "effect_on_initial_data": "none: PD pair H04/H03 and D01 replacement do not include H02; no new hero/permission injected",
+    "other_line_changes_preserved": true
+  },
+  "r26_main1_55_reconciliation": {
+    "head": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
+    "base_tree_sha": "e06c5d8fabb2314f7f486595d6a4427098e71d24",
+    "own_targets_unchanged": true,
+    "scope": "new H15 public-display original confirmation consumed; no H15 hero in prepared12 worlds, data unchanged",
+    "other_line_changes_preserved": true
+  },
+  "r26_H15_display_confirmation_consumed": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+  "current_main_next": "REVIEW-H15-H06-TRAINING-LIFECYCLE-SOURCE-20261017; source review, no new candidate approval"
 }

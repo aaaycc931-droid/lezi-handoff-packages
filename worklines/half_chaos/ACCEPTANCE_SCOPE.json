@@ -2623,9 +2623,17 @@
     "runtime": false
   },
   "next_task": {
-    "id": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
-    "action": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
-    "scope": "legal initial-world and Fisher-Yates witness data only; no engine run"
+    "id": "NEXT-HC-REPLAY-ACTION-DATA",
+    "status": "NOT_STARTED",
+    "action": "Prepare declarative source-linked action/request order and semantic observation checkpoints for12 existing replay plans; no engine imports/runs, business changes or gate bypass.",
+    "scope": "data only within existing maintenance authorization",
+    "acceptance_criteria": [
+      "Every step linked to original complete PD/DS source and prepared opening world",
+      "DS01-02 remains one continuous replay; PD03/PD04 real evasions retained",
+      "PD05/06 paired public request sequences agree, aliases are offline expected source bindings",
+      "Requests/rejections/main actions/formal boundaries separated without inventing protocol fields or total source order",
+      "No fabricated engine result; unresolved observer/clock/privacy/gate dependencies remain blocked"
+    ]
   },
   "publication_protocol": {
     "source_commit": "aaa834161fcd2bd9c8c0604d54ec96f5da2fb28f",
@@ -2634,5 +2642,24 @@
     "adoption": "reuse prior confirmed same-scope authorization across dialogues; visible write scope before GitHub increment; no added data disclosure, plugin permission, runtime or gameplay approval"
   },
   "engine_commit_role": "read-only inspection source, not approved implementation/run target",
-  "engine_inventory_reference": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json"
+  "engine_inventory_reference": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
+  "initialization_witness_data": {
+    "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+    "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
+    "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+    "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+    "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+    "planned_replays": 12,
+    "unique_initial_worlds": 10,
+    "nonroyals_per_plan": 30,
+    "draws_per_plan": 28,
+    "logical_draws_checked": 336,
+    "stored_unique_draws": 280,
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_initialization_applied": false,
+    "all_game_specs": "UNRUN",
+    "game_runs": 0,
+    "next": "NEXT-HC-REPLAY-ACTION-DATA"
+  }
 }

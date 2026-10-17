@@ -2,27 +2,46 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
-  "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
-  "phase": "conversation_only_closeout",
+  "base_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+  "revision": "HC-DESIGN-03-20261017-r26",
+  "phase": "initialization_witness_data_preparation_completed",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
+  "current_breakpoint": "Prepare declarative source-linked action/request order and semantic observation checkpoints for12 existing replay plans; no engine imports/runs, business changes or gate bypass.",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
   "changes": {
     "working_sections": [
       "0",
-      "8.46"
+      "8.47"
     ],
-    "scope": "session-only closure state and resume checkpoint; no new design/data/code/runtime",
+    "new_data": {
+      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+      "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
+      "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+      "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+      "planned_replays": 12,
+      "unique_initial_worlds": 10,
+      "nonroyals_per_plan": 30,
+      "draws_per_plan": 28,
+      "logical_draws_checked": 336,
+      "stored_unique_draws": 280,
+      "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "engine_initialization_applied": false,
+      "all_game_specs": "UNRUN",
+      "game_runs": 0,
+      "next": "NEXT-HC-REPLAY-ACTION-DATA"
+    },
+    "scope": "synthetic opening identity/permutation data only",
     "preserved_unchanged_objects": [
-      "CONFIRMATIONS.json",
-      "ACCEPTANCE_SCOPE.json",
       "ENGINE_SOURCE_INVENTORY.json"
     ],
-    "next_initialization_data": "NOT_STARTED"
+    "gameplay_delta": 0,
+    "preserved_prior_confirmation_members": true,
+    "new_existing_shared_confirmation_consumption": 2
   },
   "source_and_confirmation_scope": {
     "source_inventory": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
@@ -40,13 +59,129 @@
     "H02_M04_shared_candidate": "metadata only, not adopted"
   },
   "actual_validation": {
-    "sources": "fresh handoff entry/state/next and indexed mandatory/completion/handoff modules; actual main current metadata and full half_chaos receiver row",
-    "file_scope": "12 r25 local publication files and remote blob identities match prior success",
-    "semantics": "same-assistant closeout scope/state check, no independent source-code review repeated",
-    "game_engine_tests": 0,
-    "game_code_changes": 0,
-    "client_runs": 0,
-    "business_repo_writes": 0
+    "result": "OFFLINE_INITIALIZATION_DATA_CHECKED_GAME_SPECS_UNRUN",
+    "plans_checked": 12,
+    "unique_worlds_checked": 10,
+    "nonroyals_per_plan": 30,
+    "draws_per_plan": 28,
+    "logical_draws_checked": 336,
+    "stored_unique_draws": 280,
+    "per_plan": [
+      {
+        "replay_id": "MA-PD01",
+        "world_id": "IW-0eaace9ad2c1699d",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-PD02",
+        "world_id": "IW-b069ebc9db68ef3e",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-PD03",
+        "world_id": "IW-b069ebc9db68ef3e",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-PD04",
+        "world_id": "IW-4fb3ac123360c7d4",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-PD05-A",
+        "world_id": "IW-b069ebc9db68ef3e",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-PD05-B",
+        "world_id": "IW-40b431632b89dc78",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-PD06-A",
+        "world_id": "IW-168cb617da30889f",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-PD06-B",
+        "world_id": "IW-d158bccabffc5f23",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-DS01-02",
+        "world_id": "IW-b66071aa72ba8a72",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-DS03",
+        "world_id": "IW-bdcfe63226360aaa",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-DS04",
+        "world_id": "IW-61790bfc01eccf12",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      },
+      {
+        "replay_id": "MA-DS05",
+        "world_id": "IW-95b0bb66f0ced10a",
+        "identity_rows": 30,
+        "draws": 28,
+        "offline_data_check": "PASS",
+        "gameplay_status": "UNRUN"
+      }
+    ],
+    "checks": [
+      "fixed source slot order/covered-ID mapping",
+      "each side fifteen and2/2/2/2/2/5 inventory",
+      "exact original replay swaps",
+      "28 bounded integer draws per plan",
+      "forward Fisher-Yates reconstruction and reverse undo",
+      "paired secret changes exactly2 bodies each",
+      "D01 five true-pawn bodies/anchors per side and aliases",
+      "DS01-02 single replay continuity",
+      "all old replay statuses unchanged"
+    ],
+    "dataset_sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+    "game_engine_imports": 0,
+    "engine_runs": 0,
+    "business_code_changes": 0,
+    "new_game_specs": 0,
+    "independent_review": false,
+    "verification": "V2 source transcription plus V1 same-assistant data consistency; no V3 or V4/game acceptance"
   },
   "unrun": [
     "all12 planned replays and64 existing specs",
@@ -107,13 +242,12 @@
       ]
     }
   ],
-  "next_independent_task": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+  "next_independent_task": "NEXT-HC-REPLAY-ACTION-DATA",
   "scoring_frozen": true,
   "NET": "paused",
-  "implementation_status": "design_and_specification_only",
+  "implementation_status": "offline_data_prepared_only_engine_unrun_mode_gate_blocked",
   "delivery": {
-    "transport": "GitHub connector fixed entry and files",
-    "session_only": true,
+    "transport": "GitHub connector fixed workline files",
     "other_worklines_continue": true,
     "recipient_reading_verified": null,
     "recipient_adoption_verified": null,
@@ -121,12 +255,11 @@
   },
   "publication_limits": "private full protocols/raw archives remain excluded; current design bodies and exact existing public sources available; no claim of full historical/runtime migration",
   "source_baseline_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-  "concurrent_main_source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+  "concurrent_main_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
   "current_stage_changes": [
-    "conversation closed only; other worklines continue",
-    "last completed r25 preserved",
-    "unstarted legal initialization witness-data next task preserved",
-    "all12 replay plans/64 old specs remainUNRUN and mode-blocked; no new runtime evidence"
+    "12 replay bindings,10 canonical opening identity worlds,30 nonroyals and28 bounded draws per replay",
+    "offline data permutation/inventory/source/alias checks completed; source tables are expected authority-only inputs, no engine initialization applied",
+    "main1.54 actual prior r25 metadata/seven-finding and closeout receipt observed; no new current-stage receiver receipt inferred"
   ],
   "prior_H14_stage_return": "main dd467a1 actual scoped stage/excerpt receipt covers H14/H16; body/spec/runtime adoption not inferred",
   "remote_reconciliation": {
@@ -151,10 +284,7 @@
     ]
   },
   "previous_r18_return": "main current receipt recognizes r18 stage/selected-prefix and local1.50 consumption only; not full-body/runtime",
-  "new_confirmations_this_round": {
-    "local_user_rule_approvals": 0,
-    "existing_shared_confirmations_newly_consumed": 0
-  },
+  "new_confirmations_this_round": 0,
   "confirmed_delta_scope_note": "no new gameplay approval/shared consumption; static code does not revise valid source decisions",
   "prior_r18_stage_receipt": {
     "source_commit": "813395aa496b09426a0e5113c4145c0952ba32ca",
@@ -356,7 +486,7 @@
       }
     }
   },
-  "publication_parent_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+  "publication_parent_commit": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
   "previous_r21_return": {
     "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "phase": "M01_M08_D01_coverage_audit",
@@ -617,9 +747,9 @@
     "new_shared_rule_consumption_from_main_recheck": 0
   },
   "actual_receiver_status": {
-    "observed_at": "93127575c60469d08069a3a6743f3c2a34493deb",
-    "r22_metadata_received": true,
-    "r23_r24_r25_closeout_received": null
+    "observed_at_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "receiver_source": "93127575c60469d08069a3a6743f3c2a34493deb",
+    "scope": "r23-r25 selected metadata/seven reported static findings and fef0e8e conversation closeout; no full prefixes or runtime adoption"
   },
   "concurrent_standard_retry_r23": {
     "publication_head": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
@@ -955,8 +1085,8 @@
       "runtime_reproduced": false
     }
   ],
-  "last_completed_design_revision": "HC-DESIGN-03-20261017-r25",
-  "last_completed_design_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+  "last_completed_design_revision": "HC-DESIGN-03-20261017-r26",
+  "last_completed_design_commit": null,
   "session_closeout": {
     "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
     "requested_at_local": "2026-10-17T10:40:16+08:00",
@@ -1008,7 +1138,68 @@
       "shared H16/H05 tiers/full legal-response/terminal/source order/pressure/repetition key unresolved",
       "deep private/historical archives not fully migrated; original protected materials and existing references retained"
     ],
-    "publication_scope": "own fixed handoff documents only; no ZIP/full archive duplication, other receiver receipt prefill, business repo changes or auto-message"
+    "publication_scope": "own fixed handoff documents only; no ZIP/full archive duplication, other receiver receipt prefill, business repo changes or auto-message",
+    "historical_only_current_session_resumed": true
   },
-  "next_task_status": "NOT_STARTED"
+  "next_task_status": "NOT_STARTED",
+  "last_completed_design_commit_note": "Resolve from Git history after publication.",
+  "initialization_witness_data": {
+    "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+    "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
+    "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+    "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+    "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+    "planned_replays": 12,
+    "unique_initial_worlds": 10,
+    "nonroyals_per_plan": 30,
+    "draws_per_plan": 28,
+    "logical_draws_checked": 336,
+    "stored_unique_draws": 280,
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_initialization_applied": false,
+    "all_game_specs": "UNRUN",
+    "game_runs": 0,
+    "next": "NEXT-HC-REPLAY-ACTION-DATA"
+  },
+  "new_shared_confirmation_consumption": 2,
+  "concurrent_H02_M04_confirmation": {
+    "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "source_workline": "standard",
+    "source_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "source_path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+    "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0",
+    "read_scope": "full original confirmation, full reviewed candidate at76a427, current complete H02/M04 sections",
+    "local_scope": "half_chaos originally legal H02+M04 revealed ground normally controlled rook with acquired valid later assassination only",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "full_original_in_own_record": "CONFIRMATIONS.json#/r26_shared_confirmation_consumed/original_confirmation"
+  },
+  "concurrent_publication_reconciliation_r26": {
+    "head": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "base_tree_sha": "090b03f07a6ccb6be36f5dfe999b0d731103a4e0",
+    "own_targets_unchanged": true,
+    "source_confirmation_read": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "effect_on_initial_data": "none: PD pair H04/H03 and D01 replacement do not include H02; no new hero/permission injected",
+    "other_line_changes_preserved": true
+  },
+  "r26_main1_55_reconciliation": {
+    "head": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
+    "base_tree_sha": "e06c5d8fabb2314f7f486595d6a4427098e71d24",
+    "own_targets_unchanged": true,
+    "scope": "new H15 public-display original confirmation consumed; no H15 hero in prepared12 worlds, data unchanged",
+    "other_line_changes_preserved": true
+  },
+  "concurrent_H15_display_confirmation": {
+    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "source_workline": "main",
+    "source_commit": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
+    "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+    "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
+    "read_scope": "full original confirmation, full original reviewed candidate and full confirmed policy; current1.55 status/next metadata and actual receiver source",
+    "local_scope": "half_chaos current-version display after legally successful H15 start only",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "full_original_in_own_record": "CONFIRMATIONS.json#/r26_H15_display_confirmation_consumed"
+  }
 }

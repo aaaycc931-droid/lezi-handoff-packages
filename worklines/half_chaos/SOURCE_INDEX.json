@@ -2306,12 +2306,13 @@
     }
   ],
   "current_collaboration_consumption": {
+    "index": "collaboration/CURRENT.json",
+    "source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
     "current_index": "../../collaboration/CURRENT.json",
-    "actually_read_revision": "2026-10-16.v0.12",
+    "actually_read_revision": "2026-10-17.v0.13",
     "formal_baseline": "1.8.0",
-    "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-    "body_git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
-    "body_sha256": "f66c64a95b143afca89c42fa0b9764458123af6aa5c15cf336972639100297fc",
+    "body_git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
+    "body_sha256": "863c7d6f752e6cdcd4a900b4b1e52ff3f56119efe217dcf1002898a5f101ff98",
     "version_scope": "observed_at_source_commit_not_a_new_global_version",
     "changed_modules_read": [
       "INTEGRATED_START",
@@ -2330,15 +2331,15 @@
       "FILE_OUTPUT_POLICY"
     ],
     "gate": "L3",
-    "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
     "r22_actual_reread": [
-      "MANDATORY_PRECHECK",
-      "TEMPORAL_OPPORTUNITY_CHECK"
+      "MANDATORY_PRECHECK full",
+      "TEMPORAL_OPPORTUNITY_CHECK full"
     ],
+    "other_modules": "unchanged prior fully read modules reused; same59d587 body object",
     "r23_actual_reread": [
-      "MANDATORY_PRECHECK",
-      "TEMPORAL_OPPORTUNITY_CHECK",
-      "AI_LIMITATION_CONTROL"
+      "MANDATORY_PRECHECK full",
+      "TEMPORAL_OPPORTUNITY_CHECK full",
+      "AI_LIMITATION_CONTROL full"
     ],
     "r24_actual_reread": [
       "MANDATORY_PRECHECK",
@@ -2350,7 +2351,27 @@
     "r25_actual_reread": [
       "MANDATORY_PRECHECK",
       "AI_LIMITATION_CONTROL"
-    ]
+    ],
+    "closeout_actual_reread": [
+      "MANDATORY_PRECHECK",
+      "COMPLETION_STATUS",
+      "GITHUB_HANDOFF_WORKFLOW daily writeback/phase handoff section"
+    ],
+    "r26_actual_read": [
+      "INTEGRATED_START",
+      "TASK_ROUTES",
+      "PROJECT_WORK_AGREEMENT",
+      "GITHUB_HANDOFF_WORKFLOW except trailing source citation",
+      "AUTHORIZATION_AND_ADOPTION",
+      "BASELINE_DELTA_CHECK",
+      "MANDATORY_PRECHECK",
+      "TEMPORAL_OPPORTUNITY_CHECK",
+      "AI_LIMITATION_CONTROL through LIMITATION_REVIEW",
+      "FILE_OUTPUT_POLICY",
+      "PART-6_CURRENT_STATE/CONTINUITY_ACCEPTANCE/COMPLETION_STATUS",
+      "MAINTENANCE_LOOP/CONFLICT_RESOLUTION/VERSION_POLICY/RELEASE_CHECK"
+    ],
+    "activation_scope": "Task-specific modules; no full document semantic audit or independent effectiveness claim"
   },
   "mutation_coverage_audit": {
     "objects": [
@@ -3539,5 +3560,105 @@
     "source_archive_scope": "unchanged original/private archives retained; previous230/216 checks inherited not rerun",
     "business_source_scope": "r25 inspection refs retained, not re-read/revalidated as latest code this closure",
     "next_data_generated": false
+  },
+  "initialization_witness_data": {
+    "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+    "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
+    "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+    "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+    "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+    "planned_replays": 12,
+    "unique_initial_worlds": 10,
+    "nonroyals_per_plan": 30,
+    "draws_per_plan": 28,
+    "logical_draws_checked": 336,
+    "stored_unique_draws": 280,
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_initialization_applied": false,
+    "all_game_specs": "UNRUN",
+    "game_runs": 0,
+    "next": "NEXT-HC-REPLAY-ACTION-DATA"
+  },
+  "r26_source_read_scope": {
+    "source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "full_working_sections": [
+      "0",
+      "8.40",
+      "8.42",
+      "8.44",
+      "8.45",
+      "8.46"
+    ],
+    "shared_rules_read": [
+      "09 full",
+      "02 H03/H04 full",
+      "03 M01/M04/D01 full",
+      "five D01 original confirmation JSONs full"
+    ],
+    "unchanged_source_objects_verified": [
+      "src/setup.ts",
+      "src/slots.ts",
+      "scripts/scoring/mode-fixture-loader.ts"
+    ],
+    "inherited_confirmations": "All existing confirmation objects preserved; this phase adds0 new local/shared rules; no fresh whole historical corpus read claimed.",
+    "main_read": [
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "git_blob_sha": "d8871e9067308d5254e5f0c2da313575fd08968a",
+        "scope": "current1.54 status/version/next and full increment_since_1_53; not full adjudication"
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "git_blob_sha": "e46d5864f88dc8e6c32fa29a2627d7d6be34fc90",
+        "scope": "complete latest_by_source.half_chaos row including r25 source findings and closeout scope"
+      },
+      {
+        "path": "worklines/main/SHARED_COORDINATION.json",
+        "git_blob_sha": "cceee63320b20f1ff29dde233dacace13742c442",
+        "scope": "retrieved/indexed only; not a fresh full semantic review"
+      }
+    ],
+    "standard_read": "current pending metadata only, shared relevant full sources as above; no pending H02/M04 adoption",
+    "prior_local_protection": "Original prior-session archives/cache/publication evidence untouched; source snapshot in this workspace read-only baseline; current workspace initially contained no project manuscript."
+  },
+  "r26_shared_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "source_workline": "standard",
+    "source_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "source_path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+    "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0",
+    "read_scope": "full original confirmation, full reviewed candidate at76a427, current complete H02/M04 sections",
+    "local_scope": "half_chaos originally legal H02+M04 revealed ground normally controlled rook with acquired valid later assassination only",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "full_original_in_own_record": "CONFIRMATIONS.json#/r26_shared_confirmation_consumed/original_confirmation"
+  },
+  "concurrent_publication_reconciliation_r26": {
+    "head": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "base_tree_sha": "090b03f07a6ccb6be36f5dfe999b0d731103a4e0",
+    "own_targets_unchanged": true,
+    "source_confirmation_read": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "effect_on_initial_data": "none: PD pair H04/H03 and D01 replacement do not include H02; no new hero/permission injected",
+    "other_line_changes_preserved": true
+  },
+  "r26_main1_55_reconciliation": {
+    "head": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
+    "base_tree_sha": "e06c5d8fabb2314f7f486595d6a4427098e71d24",
+    "own_targets_unchanged": true,
+    "scope": "new H15 public-display original confirmation consumed; no H15 hero in prepared12 worlds, data unchanged",
+    "other_line_changes_preserved": true
+  },
+  "r26_H15_display_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "source_workline": "main",
+    "source_commit": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
+    "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+    "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
+    "read_scope": "full original confirmation, full original reviewed candidate and full confirmed policy; current1.55 status/next metadata and actual receiver source",
+    "local_scope": "half_chaos current-version display after legally successful H15 start only",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "full_original_in_own_record": "CONFIRMATIONS.json#/r26_H15_display_confirmation_consumed"
   }
 }

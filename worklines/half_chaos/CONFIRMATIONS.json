@@ -1394,5 +1394,200 @@
       "adopted_in_half_chaos": false
     },
     "H02_M04_candidate": "metadata only, not adopted"
+  },
+  "r26_shared_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "source_workline": "standard",
+    "source_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "source_path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+    "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0",
+    "read_scope": "full original confirmation, full reviewed candidate at76a427, current complete H02/M04 sections",
+    "local_scope": "half_chaos originally legal H02+M04 revealed ground normally controlled rook with acquired valid later assassination only",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "original_confirmation": {
+      "schema": "lezi.shared_gameplay_confirmation.v1",
+      "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+      "confirmed_at_local": "2026-10-17T11:01:27+08:00",
+      "user_quote": "我同意",
+      "origin_workline": "standard",
+      "review_id": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+      "source_type": "direct_current_conversation_user_confirmation_of_immediately_preceding_explicit_three_mode_geometry_question",
+      "reviewed_candidate": {
+        "commit": "76a4279586ca40db88198e40d371de32c3766b11",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜H02刺杀机会与M04战车冲锋几何"
+      },
+      "immediately_preceding_question": "你是否同意这一限定方案，作为三个模式中合法 H02＋M04 组合的共同规则？",
+      "presented_clauses": [
+        "后续刺杀机会可使用该车当前合法有效进攻几何，包括M04原本合法的一地面路径棋冲锋；路径按M04，终点按H02。",
+        "零地面路径棋保持正常车线；两枚及以上地面路径棋拒绝；冲锋终点必须是实际合法敌方非将帅目标，空格及将帅不开放。",
+        "地面无形计数，飞行/河道不计地面路径；路径来源独立，不获得H02额外致死/绕防御/清状态绕碾碎免疫。",
+        "H02原终点指定无形和绕战士普通防御权限保留，龙鳞等明确拦截仍按源；仍只一手进攻，无额外行动或时限刷新。",
+        "原两个后续己方正式回合窗口及机会终止条件保持；失败扣次、回弹顺序及未决复杂交叉不在此补定。"
+      ],
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only originally legal H02+M04 combinations; a normally controlled revealed real ground rook with a previously legally acquired, still-valid later assassination opportunity. Not the activation turn; no second mutation, new pool or activation permission.",
+      "policy": {
+        "effective_geometry_reader": "current_legal_effective_rook_attack_geometry_including_originally_legal_M04_one_ground_path_charge",
+        "activation_turn_uses_special_assassination": false,
+        "normal_control_revealed_true_ground_rook_only": true,
+        "ground_path_count_zero": "normal_rook_line_preserved",
+        "ground_path_count_one": "original_M04_complete_route_legality_required",
+        "ground_path_count_two_or_more": "charge_not_permitted",
+        "ground_intangible_counts": true,
+        "sky_or_river_bodies_count_as_ground_path": false,
+        "empty_endpoint_charge_permitted": false,
+        "royal_assassination_endpoint_permitted": false,
+        "path_resolution": "independent_M04_crush_source_before_endpoint; immunity/source_constraints_preserved",
+        "H02_special_permissions_extend_to_path": false,
+        "endpoint_resolution": "existing_H02_source_specific_target_and_lethal_permissions; ordinary_warrior_defense_bypassed; explicit_dragon_scale_interception_preserved",
+        "extra_action_or_deadline_refresh": false,
+        "original_H02_lifetime_and_use_termination_preserved": true,
+        "failure_consumption_or_bounce_order": "not_decided_by_this_confirmation",
+        "all_other_legality_and_royal_safety_guards_preserved": true
+      },
+      "preserved": [
+        "ordinary31 and previous direct shared9",
+        "original H02 activation-turn rule and two later own-formal-turn windows",
+        "M04 body and independent path/endpoint cause distinction",
+        "mode availability, source immunties, royal safety, final atomic termination, frozen scoring and paused NET"
+      ],
+      "not_confirmed": [
+        "new activation-turn permission or mode-pool entry",
+        "flying/river/temporary control/reveal-defection and path immunity completion",
+        "multiple defense/dragon-scale priority, return-space/trap conflicts",
+        "H10 damage substitution/flow-dance and full same-atom true-royal search",
+        "history restoration, complete fieldmap/search-clock interfaces",
+        "main H15 public-display candidate or hidden failure feedback",
+        "implementation, engine PASS or independent acceptance"
+      ],
+      "verification": {
+        "source_confirmation": "V2 current user statement, actual reviewed candidate and related current source chapters",
+        "AG_S01_AG01_AG08": "unrun; conditional same-assistant specifications without complete natural prefix",
+        "game_code_changes": 0,
+        "engine_tests": 0,
+        "independent_review": false
+      },
+      "handoff": {
+        "main_received_verified": null,
+        "main_adopted_verified": null,
+        "other_mode_adoption_verified": null,
+        "automatic_messages_sent": false,
+        "containing_commit": "Resolve from Git history after publication."
+      }
+    }
+  },
+  "r26_new_local_rule_confirmations": 0,
+  "concurrent_publication_reconciliation_r26": {
+    "head": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "base_tree_sha": "090b03f07a6ccb6be36f5dfe999b0d731103a4e0",
+    "own_targets_unchanged": true,
+    "source_confirmation_read": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "effect_on_initial_data": "none: PD pair H04/H03 and D01 replacement do not include H02; no new hero/permission injected",
+    "other_line_changes_preserved": true
+  },
+  "r26_main1_55_reconciliation": {
+    "head": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
+    "base_tree_sha": "e06c5d8fabb2314f7f486595d6a4427098e71d24",
+    "own_targets_unchanged": true,
+    "scope": "new H15 public-display original confirmation consumed; no H15 hero in prepared12 worlds, data unchanged",
+    "other_line_changes_preserved": true
+  },
+  "r26_H15_display_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "source_workline": "main",
+    "source_commit": "f37b85d7d2fc989eacfa8d8cfaa1bccef618f2c5",
+    "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+    "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
+    "read_scope": "full original confirmation, full original reviewed candidate and full confirmed policy; current1.55 status/next metadata and actual receiver source",
+    "local_scope": "half_chaos current-version display after legally successful H15 start only",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "original_confirmation": {
+      "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "confirmed_at_local": "2026-10-17T11:02:28+08:00",
+      "user_quote": "我同意你的方案",
+      "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
+      "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "reviewed_candidate": {
+        "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
+        "path": "candidates/h15-public-training-display/v1.json",
+        "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
+      },
+      "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
+      "presented_clauses": [
+        "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
+        "真实培养照常结算，毕业时公开实际棋盘变化。",
+        "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
+      ],
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
+      "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
+      "not_inferred": [
+        "empty/failed candidate consumption, retry/feedback or new start/check permission",
+        "H06 actual body/progress/failure/reward restore semantics",
+        "M07 same-begin order or other modes H11 space details",
+        "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
+        "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
+      ],
+      "implementation_status": "confirmed_design_not_implemented",
+      "new_engine_tests": 0
+    },
+    "confirmed_policy": {
+      "status": "user_confirmed_design_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only H15 already legally available, after a legally successful training start. No start-cost/empty-pool/window/check or restoration policy is selected.",
+      "common_display": {
+        "selected_type_public": true,
+        "unique_opportunity_used_public_after_shared_success": true,
+        "shared_success_event_preserved": true,
+        "actual_progress_or_remaining_turns_shown_to_either_player": false,
+        "live_training_or_failure_status_shown_to_either_player": false,
+        "death_linked_popup_progress_stop_reset_or_button_feedback_revealing_binding": false
+      },
+      "authority_and_graduation": {
+        "actual_binding_progress_and_lifecycle_settled_by_existing_authority": true,
+        "fake_progress_or_new_public_planned_clock_added": false,
+        "death_failure_unique_use_first_tick_and_start_cost_unchanged": true,
+        "existing_legal_graduation_flight_board_changes_public": true,
+        "legal_public_inference_not_guaranteed_prevented": true
+      },
+      "repetition_boundary": {
+        "reads_only_lawful_common_public_effective_state": true,
+        "hidden_binding_actual_progress_or_actual_failure_automatically_included": false,
+        "post_graduation_public_flight_lifetime_and_landing_rights_follow_existing_sources": true,
+        "complete_key_or_hash_selected": false
+      },
+      "confirmed_text": [
+        "本版三个模式在合法成功启动训练后，双方公开信息只列已选兵种及本局训练机会已用；保留已经共同知道的成功启动事实。",
+        "训练期间不向任一玩家显示本次训练的实际已累计培养进度/实际剩余培养回合，不显示仍在训练或已经失败的实时状态，不在受训棋死亡时额外弹出失败提示、停止/归零进度条或改变按钮来指出隐藏绑定。",
+        "真实受训绑定、实际培养进度、存活/失败/毕业等仍由权威系统依既有来源准确结算；不伪造进度，也不改变死亡失败、一次机会及培养首次计数。",
+        "达到既有合法毕业/升空等公开效果时，照原来源公开真实发生的棋盘变化。玩家仍可按公开启动、兵种成本及正式回合自己估算预计时间；本方案不保证无法从合法公开对局推断结果。",
+        "按本次已确认显示方案，重复判定只读该方案依法共同公开的有效状态；隐藏的实际进度/失败/绑定不因存在于服务器就进入公开键。毕业后的公开飞行及寿命/降落权利仍按既有规则区分。"
+      ],
+      "not_decided": [
+        "empty/failed candidate consumption, retry/feedback or new start/check permission",
+        "H06 actual body/progress/failure/reward restore semantics",
+        "M07 same-begin order or other modes H11 space details",
+        "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
+        "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
+      ],
+      "source_permission_note": "Historical optional progress-publicity permission retained as provenance; current-version explicit choice does not display authoritative progress. No retroactive private-progress confirmation invented.",
+      "verification": "V2 current-user confirmation and scoped source correspondence; V1 abstract pair only, no engine/client or independent privacy validation"
+    }
   }
 }
