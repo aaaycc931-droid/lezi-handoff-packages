@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.current_work.v1",
-  "revision": "UI-B7-APPROVED-20261017",
-  "updated_at_local": "2026-10-17T19:05:29+08:00",
+  "revision": "UI-B8-PENDING-20261017",
+  "updated_at_local": "2026-10-17T20:59:03.877+08:00",
   "known_UI_source": "2026-10-14-v1",
   "source_commit": "52002b3762bd948a134c67cfbc99427035790eba",
   "approved_versions": [
@@ -25,14 +25,18 @@
   "next_task": {
     "id": "B8",
     "subject": "蓝牙权限未允许（可再次授权）",
-    "candidate_created": false,
+    "version": "B8-v1",
+    "candidate_created": true,
     "candidate_approved": false,
-    "next_action": "核对对应权限状态与操作来源，从批准源层制作一张静态候选；当前尚未创建。"
+    "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+    "image": "candidates/B8/v1/lezi-bluetooth-B8-v1.png",
+    "source_folder": "candidates/B8/v1",
+    "next_action": "展示本张实际图，由用户具体审批／修改；不自动批准或生成下一张。"
   },
   "current_approval_authority": "APPROVAL_REGISTER.json",
   "asset_library": "../../assets/ui/INDEX.json",
   "unreceived_newer_UI_work": "B6 exact recovery and preserved approval reconciled; no further unreceived artwork known",
-  "artwork_changes": 0,
+  "artwork_changes": 1,
   "game_code_changes": 0,
   "engine_tests": 0,
   "scoring_frozen": true,
@@ -51,7 +55,7 @@
     "scope": "workflow controls only; no candidate artwork or approval changes",
     "return_record": "RETURN_TO_MAIN.json",
     "recovered_B6_notice": "B6 original and all source files recovered. Specific existing approval is reconciled in the fixed register; historical candidate snapshots remain unchanged.",
-    "next_action": "核对对应权限状态与操作来源，从批准源层制作一张静态候选；当前尚未创建。"
+    "next_action": "展示本张实际图，由用户具体审批／修改；不自动批准或生成下一张。"
   },
   "workflow_session_loss_recovery": {
     "record_id": "CI-16",
@@ -63,7 +67,7 @@
     "return_record": "RETURN_TO_MAIN.json",
     "resolved_at_local": "2026-10-17T17:43:23.181+08:00"
   },
-  "publication_base_commit": "c53a6a727b797b128d7aa5651eafc7fc51f1c667",
+  "publication_base_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
   "recovered_approved_artwork": 1,
   "protected_pixels_changed": 0,
   "runtime": "not_run",
@@ -89,5 +93,5 @@
     "approved_at": "2026-10-17T19:05:29+08:00",
     "user_statement": "审批通过"
   },
-  "approval_changes": 1
+  "approval_changes": 0
 }

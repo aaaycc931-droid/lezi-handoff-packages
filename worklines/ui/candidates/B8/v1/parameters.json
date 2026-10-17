@@ -1,0 +1,100 @@
+{
+  "schema": "lezi.ui.static_layout.v1",
+  "version": "B8-v1",
+  "canvas": {
+    "width": 852,
+    "height": 1846
+  },
+  "font": {
+    "family": "Long Cang",
+    "sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+    "modified": false
+  },
+  "source_version": "B4-v1",
+  "method": "permission-denied, retry available; frozen approved B7 background/components and original Long Cang glyph paths",
+  "lines": [
+    {
+      "id": "permission_status",
+      "text": "蓝牙权限未允许",
+      "cx": 426,
+      "cy": 514,
+      "maxWidth": 480,
+      "maxHeight": 46,
+      "fill": "#12120f"
+    },
+    {
+      "id": "permission_reason_1",
+      "text": "蓝牙对局需要附近设备权限，",
+      "cx": 426,
+      "cy": 577,
+      "maxWidth": 550,
+      "maxHeight": 34,
+      "fill": "#12120f"
+    },
+    {
+      "id": "permission_reason_2",
+      "text": "用于连接已配对的另一台手机。",
+      "cx": 426,
+      "cy": 627,
+      "maxWidth": 560,
+      "maxHeight": 34,
+      "fill": "#12120f"
+    },
+    {
+      "id": "request_permission",
+      "text": "允许蓝牙权限",
+      "cx": 426,
+      "cy": 793,
+      "maxWidth": 460,
+      "maxHeight": 108,
+      "fill": "#123754"
+    }
+  ],
+  "fixture": {
+    "platform": "Android native bridge",
+    "bluetooth_available": true,
+    "bluetooth_enabled": true,
+    "permission_granted": false,
+    "permanently_denied": false,
+    "session": null,
+    "device_names_displayed": false,
+    "state": "permission-denied; requestPermission may be retried; no match or selected target"
+  },
+  "regions": [
+    {
+      "id": "permission_status_and_reason",
+      "x": 135,
+      "y": 477,
+      "width": 582,
+      "height": 185
+    },
+    {
+      "id": "permission_action_label",
+      "x": 160,
+      "y": 730,
+      "width": 532,
+      "height": 132
+    },
+    {
+      "id": "remove_session_return",
+      "x": 305,
+      "y": 995,
+      "width": 245,
+      "height": 90
+    }
+  ],
+  "mask_rule": "union of approved B7 text alpha and new B8 text alpha, intersected with listed rectangles; all other pixels protected",
+  "actions": {
+    "request_permission": "nativeBluetooth()?.requestPermission(); system permission result handled by permission-granted/permission-denied events",
+    "top_back": "existing bluetooth-back-button invokes leaveBluetoothLobby; without an active match, return to main menu",
+    "permission_granted": "renderBluetoothAvailability reveals create/join when availability and permission allow; no automatic connection",
+    "state_scope": "retryable denial only; permanent denial/system settings is a separate candidate; hide initial actions, join/device panel and session panel"
+  },
+  "approval": "pending_user_review",
+  "runtime": "not_run",
+  "bluetooth_device_acceptance": "not_run",
+  "production_code_changed": false,
+  "scoring_frozen": true,
+  "NET": "paused",
+  "approved_comparison_version": "B7-v1"
+}

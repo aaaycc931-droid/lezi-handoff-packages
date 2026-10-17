@@ -13,7 +13,7 @@ def safe(root,name):
  return p
 def main():
  root=Path(__file__).resolve().parent;ap=argparse.ArgumentParser()
- ap.add_argument('--task',default='B7');ap.add_argument('--target',type=Path,default=Path('ui-workbench'));ap.add_argument('--cache',type=Path);ap.add_argument('--check-only',action='store_true');ap.add_argument('--prefer-archive',action='store_true')
+ ap.add_argument('--task',default='B8');ap.add_argument('--target',type=Path,default=Path('ui-workbench'));ap.add_argument('--cache',type=Path);ap.add_argument('--check-only',action='store_true');ap.add_argument('--prefer-archive',action='store_true')
  a=ap.parse_args();task=json.loads((root/'TASKS.json').read_text())['tasks'][a.task]
  candidate_index=root/'CANDIDATE_RESTORE.json'
  candidates=json.loads(candidate_index.read_text()).get('tasks',{}) if candidate_index.is_file() else {}

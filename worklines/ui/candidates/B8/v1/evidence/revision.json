@@ -1,0 +1,110 @@
+{
+  "schema": "lezi.bluetooth_permission_retry_static_candidate.v1",
+  "version": "B8-v1",
+  "source_version": "B4-v1",
+  "source_sha256": "7c11e53aaa7c76b04e77ca60b59780ca4b61dfc251e541fea9df21a3ce38f72c",
+  "output_sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+  "width": 852,
+  "height": 1846,
+  "font_family": "Long Cang",
+  "font_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+  "font_modified": false,
+  "lines": [
+    {
+      "id": "permission_status",
+      "text": "蓝牙权限未允许",
+      "cx": 426,
+      "cy": 514,
+      "maxWidth": 480,
+      "maxHeight": 46,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 355.3070785070785,
+        "height": 46
+      },
+      "font_size_px": 51.8018018018018
+    },
+    {
+      "id": "permission_reason_1",
+      "text": "蓝牙对局需要附近设备权限，",
+      "cx": 426,
+      "cy": 577,
+      "maxWidth": 550,
+      "maxHeight": 34,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 498.80456056392677,
+        "height": 34
+      },
+      "font_size_px": 40.0181077410593
+    },
+    {
+      "id": "permission_reason_2",
+      "text": "用于连接已配对的另一台手机。",
+      "cx": 426,
+      "cy": 627,
+      "maxWidth": 560,
+      "maxHeight": 34,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 530.8990297021313,
+        "height": 34
+      },
+      "font_size_px": 40.337273844328635
+    },
+    {
+      "id": "request_permission",
+      "text": "允许蓝牙权限",
+      "cx": 426,
+      "cy": 793,
+      "maxWidth": 460,
+      "maxHeight": 108,
+      "fill": "#123754",
+      "actual_ink_bounds": {
+        "width": 459.99999999999994,
+        "height": 69.63462053625788
+      },
+      "font_size_px": 78.41736546875889
+    }
+  ],
+  "approved_source_recomposition": {
+    "B4-v1": 0,
+    "B5-v1": 0
+  },
+  "source_unchanged": true,
+  "background": {
+    "reused_sha256": "13a513a067abb972ab8e0c898faeba92eb17952a1ecc955248e418c73b429a8f",
+    "new_estimation": false,
+    "historical_estimation": "Inherited B2 text-footprint estimates retained; not original hidden paper pixels"
+  },
+  "whole_page_regenerated": false,
+  "resampling": false,
+  "approved_comparison_version": "B7-v1",
+  "approved_comparison_sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+  "changed_pixels": 35352,
+  "changed_pixels_vs_B4": 44646,
+  "mask_rule": "union of approved B7 text alpha and new B8 text alpha, intersected with listed rectangles; all other pixels protected",
+  "fixture": {
+    "platform": "Android native bridge",
+    "bluetooth_available": true,
+    "bluetooth_enabled": true,
+    "permission_granted": false,
+    "permanently_denied": false,
+    "session": null,
+    "device_names_displayed": false,
+    "state": "permission-denied; requestPermission may be retried; no match or selected target"
+  },
+  "actions": {
+    "request_permission": "nativeBluetooth()?.requestPermission(); system permission result handled by permission-granted/permission-denied events",
+    "top_back": "existing bluetooth-back-button invokes leaveBluetoothLobby; without an active match, return to main menu",
+    "permission_granted": "renderBluetoothAvailability reveals create/join when availability and permission allow; no automatic connection",
+    "state_scope": "retryable denial only; permanent denial/system settings is a separate candidate; hide initial actions, join/device panel and session panel"
+  },
+  "artwork_approval": "pending_user_review",
+  "runtime_acceptance": "not_run",
+  "bluetooth_device_acceptance": "not_run",
+  "production_code_changed": false,
+  "game_rules_delta": 0,
+  "scoring_frozen": true,
+  "NET": "paused"
+}

@@ -2,7 +2,7 @@
   "schema": "lezi.ui_approval_register.v1",
   "workline_id": "UI-DESIGN-001",
   "primary_reader": "project_main_dialogue_AI",
-  "updated_at": "2026-10-17T19:05:29+08:00",
+  "updated_at": "2026-10-17T20:59:03.877+08:00",
   "actors": {
     "user": "图稿最终审批者",
     "ui_workline": "候选设计、版本与证据记录者",
@@ -840,7 +840,7 @@
     "outer_size": "开启与关闭使用同一外圈大小；状态变化仅填墨/消散，外圈不随状态缩放。旋转机制继续沿用。"
   },
   "other_approved_baselines": "首页批准原图与V4棋盘继续沿用；本记录未修改其范围或像素。",
-  "next_authorized_item": "B8 planned static candidate: Bluetooth permission denied, retry authorization available; not created",
+  "next_authorized_item": "B8-v1 static candidate review; no automatic approval",
   "rules_delta": 0,
   "formal_scoring_status": "frozen",
   "product_code_changed_by_this_approval": false,
@@ -1087,11 +1087,11 @@
     ]
   },
   "current_session": {
-    "status": "B7_approved_next_static_item_not_created",
+    "status": "awaiting_B8_user_review",
     "B2_v4": "approved",
-    "current_candidate": null,
-    "candidate_approval": null,
-    "next": "下一静态项为B8：蓝牙权限未允许（可再次授权）；尚未创建。",
+    "current_candidate": "B8-v1",
+    "candidate_approval": "pending_user_review",
+    "next": "展示B8-v1蓝牙权限未允许（可再次授权）静态候选，由用户具体审批。",
     "runtime": "not_run",
     "B1_v2": "approved",
     "automatic_resume_scheduled": false,
@@ -1101,7 +1101,7 @@
     "latest_user_statement": "审批通过",
     "S1_v3_2": "approved",
     "latest_approval_at": "2026-10-17T19:05:29+08:00",
-    "last_update_at": "2026-10-17T19:05:29+08:00",
+    "last_update_at": "2026-10-17T20:59:03.877+08:00",
     "home": "approved_original_typography_exception",
     "V4": "approved_original_typography_exception",
     "B3_v1": "approved",
@@ -2821,5 +2821,16 @@
       "reviewed_sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
       "displayed_source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c"
     }
+  },
+  "bluetooth_permission_retry_candidate": {
+    "version": "B8-v1",
+    "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+    "git_blob_sha": "d123c1d74ba4b281b3b2468d80ce168faf18bb9d",
+    "source_folder": "candidates/B8/v1",
+    "status": "pending_user_review",
+    "runtime": "not_run",
+    "changed_pixels_from_B7": 35352,
+    "protected_pixels_changed": 0,
+    "state_scope": "Retryable permission denial, no active connection session"
   }
 }
