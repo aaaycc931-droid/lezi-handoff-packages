@@ -1,5 +1,5 @@
 {
-  "status": "shared_H15_success_cost_confirmed_public_empty_pool_pending",
+  "status": "ordinary_H15_public_empty_confirmed_M04_assassination_geometry_pending",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "用户决定普通象棋双方公开可确认合法候选为0的限定分支：建议启动前拒绝、不扣唯一训练机会和正常行动，原合法窗口仍开时可改选再请求；暗棋/非法失败/主线展示不外推。当前未批准。",
+  "next_action": "用户决定合法H02＋M04后续刺杀机会能否沿原本合法一地面路径冲锋；建议当前有效几何保持，路径按M04、终点按H02，其他合法性/多源顺序不扩围。当前未批准。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,19 +29,15 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+    "id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
     "user_quote": "我同意",
-    "at_local": "2026-10-17T09:56:36+08:00",
-    "scope": [
-      "original_jieqi",
-      "standard_xiangqi",
-      "half_chaos"
-    ],
-    "new_ordinary_confirmation": false
+    "at_local": "2026-10-17T10:10:47+08:00",
+    "scope": "standard_only_publicly_determinable_legal_empty_recruitment_pool_request",
+    "new_ordinary_confirmation": true
   },
   "main_document_adopted_scope": "Prior scoped confirmations through D01 startup/body observed at 50ad0d433f866fff41693cc495ec5d69c7724580; current zero-return receipt unknown.",
   "latest_confirmation_main_adopted": null,
-  "current_confirmation_index_count": 30,
+  "current_confirmation_index_count": 31,
   "M07_pool_exclusion_confirmed": true,
   "M08_approved": true,
   "D01_approved": true,
@@ -53,13 +49,13 @@
     "CONF-STD-M08-JIAN-XIE-GROUND-KEEP-20261016",
     "CONF-STD-D01-PUBLIC-START-AND-ANCHORS-20261016"
   ],
-  "adjudication_version": "1.52",
+  "adjudication_version": "1.53",
   "adjudication_source": {
-    "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+    "commit": "d414c021cfc584094021bbebd5194688b465e89d",
     "path": "worklines/main/ADJUDICATION.json",
-    "record_version": "1.52",
-    "git_blob_sha": "fdc333c5e264463ffee9eb3345e628aa63d10c22",
-    "read_scope": "complete shared_hero_timing_updates.H15_first_cultivation_tick and matching original project_specific_confirmation; unchanged1.51 unified core verified identical, not full historical audit"
+    "record_version": "1.53",
+    "git_blob_sha": "24d08a32e821240ebbeb35ed603fc9d296589319",
+    "read_scope": "four complete newly adopted policy modules and matching original confirmation entries/actual receipt; prior1.52 unified core and H15 timing checked equal, not full historical audit"
   },
   "D01_zero_return_policy_approved": true,
   "D01_same_turn_repeat_policy_approved": true,
@@ -85,5 +81,8 @@
   "M08_returned_pawn_half_confirmed": true,
   "M08_returned_pawn_source": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
   "H15_training_start_action_cost_confirmed": true,
-  "H15_training_start_action_cost_source": "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json"
+  "H15_training_start_action_cost_source": "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+  "H15_public_empty_pool_request_confirmed": true,
+  "H15_public_empty_pool_source": "rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+  "M04_H02_activation_defense_alignment": "rule_delta0_limited_unrun"
 }

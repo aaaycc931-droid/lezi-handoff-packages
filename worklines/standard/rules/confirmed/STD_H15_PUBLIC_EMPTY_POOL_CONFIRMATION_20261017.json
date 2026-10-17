@@ -1,0 +1,62 @@
+{
+  "schema": "lezi.standard_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+  "confirmed_at_local": "2026-10-17T10:10:47+08:00",
+  "user_quote": "我同意",
+  "origin_workline": "standard",
+  "review_id": "STD-H15-PUBLIC-EMPTY-POOL",
+  "source_type": "direct_user_confirmation_of_immediately_preceding_ordinary_public_empty_pool_question",
+  "reviewed_candidate": {
+    "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜普通象棋H15公开可判空池的启动请求"
+  },
+  "immediately_preceding_question": "是否同意这个限定分支？",
+  "presented_clauses": [
+    "只先处理普通象棋公开空池，例如双方都知道己方炮全部死亡且无其他合法炮候选。",
+    "选炮请求被拒绝，不扣训练机会和正常行动；原合法窗口仍开时可改选兵再请求，成功后才耗机会。",
+    "暗棋空池反馈、训练进度展示仍另审。"
+  ],
+  "scope": "standard_only_publicly_determinable_legal_empty_recruitment_pool_request",
+  "availability_guard": "Standard only; H15 already legal and unused, original allowed window open, all legal candidate identity/original-faction/survival/eligibility jointly publicly determined and exact pool empty. Unknown or incomplete enumeration does not establish empty.",
+  "policy": {
+    "guard": "Standard only; H15 already legal and unused, original allowed window open, all legal candidate identity/original-faction/survival/eligibility jointly publicly determined and exact pool empty. Unknown or incomplete enumeration does not establish empty.",
+    "empty_request_rejected_before_successful_start": true,
+    "empty_request_consumes_unique_training_opportunity": false,
+    "empty_request_consumes_normal_main_action": false,
+    "empty_request_creates_binding_training_or_progress": false,
+    "empty_object_successful_start": false,
+    "can_reselect_and_request_again": "Only while the same original allowed window remains open and other source legality conditions pass; no guaranteed successful retry.",
+    "successful_reselection_consumes_unique_opportunity_under_existing_rules": true,
+    "clock_refreshed_or_extended": false,
+    "closed_window_reopened_or_new_window_granted": false,
+    "spent_main_action_refunded": false,
+    "hidden_candidate_identity_list_count_or_original_faction_disclosure_added": false,
+    "dark_mode_illegal_concurrent_or_other_failed_requests": "not_decided_by_this_confirmation",
+    "death_after_success_refunds_opportunity_or_retrains": false,
+    "main_training_public_display_candidate": "not_approved_by_this_confirmation"
+  },
+  "preserved": [
+    "All prior30 ordinary and9 direct shared confirmations, source-round21 retained.",
+    "H15 legal successful start main-action cost, first tick and once-per-game/death lifecycle unchanged."
+  ],
+  "not_confirmed": [
+    "original_jieqi/half_chaos hidden-pool failure charge or feedback",
+    "nonempty illegal requests, concurrency, source-window/check permission or full history semantics",
+    "main H15 public display candidate",
+    "M04 assassination geometry candidate, full fieldmap/search-clock/runtime/scoring/NET"
+  ],
+  "verification": {
+    "source_confirmation": "V2 direct user statement and full preceding candidate",
+    "EP_S01_EP01_EP08": "unrun same-assistant conditional timeline/specifications",
+    "game_code_changes": 0,
+    "engine_tests": 0,
+    "independent_review": false
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  }
+}

@@ -1,24 +1,29 @@
 {
   "items": [
     {
-      "id": "STD-H15-PUBLIC-EMPTY-POOL",
+      "id": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
       "status": "pending_user_decision",
-      "scope": "standard_only_publicly_determinable_legal_empty_recruitment_pool_request",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通象棋H15公开可判空池的启动请求",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only legally available H02+M04 and effective later assassination opportunity of public ground normally controlled rook; no whole-adaptation approval.",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H02刺杀机会与M04战车冲锋几何",
       "confirmed": false,
-      "not_approved_by_H15_success_cost_confirmation": true,
+      "not_approved_by_public_empty_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "EP01",
-        "EP02",
-        "EP03",
-        "EP04",
-        "EP05",
-        "EP06",
-        "EP07",
-        "EP08"
+        "AG01",
+        "AG02",
+        "AG03",
+        "AG04",
+        "AG05",
+        "AG06",
+        "AG07",
+        "AG08"
       ],
       "conditional_unrun_case_ids": [
-        "EP-S01"
+        "AG-S01"
       ]
     },
     {
@@ -97,8 +102,8 @@
       "status": "source_review_and_runtime_pending",
       "scope": "standard",
       "details": [
-        "assassination effective geometry",
-        "path/endpoint multi-defense order",
+        "assassination effective geometry: explicit current shared candidate",
+        "path-immunity/endpoint multi-defense order",
         "H10 atomic identity/return and general death"
       ],
       "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
@@ -106,8 +111,10 @@
       "source_aligned_subscope": {
         "H15_flying_rook": "No attack/sky charge permission added; current sky geometry/blockers and separate landing retained; unrun",
         "rule_delta": 0,
-        "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce"
-      }
+        "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+        "H02_activation_turn_single_defense": "Already completed path death persists; ordinary endpoint defense prevents H02 activation and source remains unused, no extra main action; conditional unrun"
+      },
+      "assassination_geometry_candidate": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY"
     },
     {
       "id": "H13-LAYER-SOURCE",
@@ -126,8 +133,9 @@
       "id": "H15-REMAINING",
       "status": "pending_design_or_source_review",
       "scope": "shared",
-      "detail": "First tick1.52 and successful-start main-action cost confirmed. Local ordinary public-empty request candidate pending; main display candidate and dark/illegal/failed quota/feedback/source-history separate.",
-      "start_action_cost_confirmation": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017"
+      "detail": "First tick/success-cost shared confirmed; public-determinable empty rejection confirmed ordinary only. Dark/illegal/failed charge/feedback, main public display and source-history separate.",
+      "start_action_cost_confirmation": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+      "public_empty_ordinary_confirmation": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017"
     },
     {
       "id": "UI-COORDINATION",
@@ -901,6 +909,34 @@
       "prior_proposal_source": {
         "commit": "e588078339fc256a9737e08a0db8d83322262171",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H15成功启动训练是否占用正常行动"
+      }
+    },
+    {
+      "id": "STD-H15-PUBLIC-EMPTY-POOL",
+      "status": "confirmed_ordinary_public_empty_not_implemented_or_tested",
+      "scope": "standard_only_publicly_determinable_legal_empty_recruitment_pool_request",
+      "source": "rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+      "confirmed": true,
+      "not_approved_by_H15_success_cost_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "EP01",
+        "EP02",
+        "EP03",
+        "EP04",
+        "EP05",
+        "EP06",
+        "EP07",
+        "EP08"
+      ],
+      "conditional_unrun_case_ids": [
+        "EP-S01"
+      ],
+      "confirmation_id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+      "confirmed_at_local": "2026-10-17T10:10:47+08:00",
+      "user_quote": "我同意",
+      "prior_proposal_source": {
+        "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通象棋H15公开可判空池的启动请求"
       }
     }
   ]

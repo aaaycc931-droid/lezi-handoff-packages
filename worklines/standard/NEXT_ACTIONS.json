@@ -1,27 +1,23 @@
 {
   "first": {
-    "id": "NEXT-STD-H15-PUBLIC-EMPTY-POOL",
-    "subject": "普通象棋H15公开可判空池的启动请求",
-    "action": "用户决定普通象棋双方公开可确认合法候选为0的限定分支：建议启动前拒绝、不扣唯一训练机会和正常行动，原合法窗口仍开时可改选再请求；暗棋/非法失败/主线展示不外推。当前未批准。",
+    "id": "NEXT-SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+    "subject": "H02后续刺杀机会是否读取M04合法冲锋几何",
+    "action": "用户决定合法H02＋M04后续刺杀机会能否沿原本合法一地面路径冲锋；建议当前有效几何保持，路径按M04、终点按H02，其他合法性/多源顺序不扩围。当前未批准。",
     "pending_is_not_approved": true,
-    "is_shared_core_candidate": false,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通象棋H15公开可判空池的启动请求",
-    "decision_id": "STD-H15-PUBLIC-EMPTY-POOL",
-    "phase": "ordinary_public_empty_pool_scoped_candidate_prepared"
+    "is_shared_core_candidate": true,
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H02刺杀机会与M04战车冲锋几何",
+    "decision_id": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+    "phase": "source_checked_M04_assassination_geometry_candidate_prepared"
   },
-  "preserve": "普通30保持，本轮共享新增1、普通新增0；本线直接共享累计9。H15合法成功不占步已确认，空池失败/展示未随此批准；评分冻结、NET暂停。",
-  "main_owned_pending": "Main1.53 actual first-eight shared adoption recognized; receive new H15 cost source. Main owns pending public display/dark failure feedback and remaining source interfaces.",
+  "preserve": "普通31、本轮普通1共享0，直接共享累计9。H15公开空池只普通限定；主线展示/暗棋失败反馈未批。M04发动回合防御弹回路径结果为Δ0来源对齐，不重批。评分冻结、NET暂停。",
+  "main_owned_pending": "Receive ordinary H15 public-empty source and prior H15 successful cost; decide main public-display separately. Current M04 shared geometry candidate is explicit and pending; no full interface approval.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "SHARED-H15-TRAINING-START-ACTION-COST",
-    "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
-    "scope": [
-      "original_jieqi",
-      "standard_xiangqi",
-      "half_chaos"
-    ],
-    "new_shared_confirmations": 1,
-    "new_ordinary_confirmations": 0
+    "id": "STD-H15-PUBLIC-EMPTY-POOL",
+    "confirmation_id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+    "scope": "standard_only_publicly_determinable_legal_empty_recruitment_pool_request",
+    "new_shared_confirmations": 0,
+    "new_ordinary_confirmations": 1
   }
 }
