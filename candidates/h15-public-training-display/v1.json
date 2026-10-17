@@ -1,0 +1,97 @@
+{
+  "schema": "lezi.design.candidate.v1",
+  "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+  "status": "pending_user_confirmation_not_implemented",
+  "title": "H15本版共同公开展示：公开选种/机会已用，不显示实际进度和即时训练失败",
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only H15 already legally available, after a legally successful training start. No start-cost/empty-pool/window/check or restoration policy is selected.",
+  "source_base_commit": "e588078339fc256a9737e08a0db8d83322262171",
+  "sources": [
+    {
+      "commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "git_blob_sha": "6320011a324b556b8522044d9cddd4a86ddad9dd",
+      "read_scope": "complete H15 entry only; updated first tick and remaining public progression/hidden-body/lifecycle clauses"
+    },
+    {
+      "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+      "path": "worklines/main/ADJUDICATION.json",
+      "read_scope": "confirmed H15 first tick and existing public/private repetition principle; unchanged current blob reused, not whole historical audit"
+    },
+    {
+      "commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+      "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
+      "read_scope": "earlier actual2.2 visibility/progress permission and death/lifetime scoped reads reused after same blob check; obsolete retraining not restored"
+    }
+  ],
+  "source_baseline": {
+    "selected_type_public": true,
+    "trainee_body_location_hidden_from_both_players": true,
+    "progress_publication_permitted_but_not_mandatory_by_existing_text": true,
+    "current_display_lifecycle_not_yet_selected": true,
+    "first_tick_already_confirmed_not_reopened": true
+  },
+  "proposal": [
+    "本版三个模式在合法成功启动训练后，双方公开信息只列已选兵种及本局训练机会已用；保留已经共同知道的成功启动事实。",
+    "训练期间不向任一玩家显示本次训练的实际已累计培养进度/实际剩余培养回合，不显示仍在训练或已经失败的实时状态，不在受训棋死亡时额外弹出失败提示、停止/归零进度条或改变按钮来指出隐藏绑定。",
+    "真实受训绑定、实际培养进度、存活/失败/毕业等仍由权威系统依既有来源准确结算；不伪造进度，也不改变死亡失败、一次机会及培养首次计数。",
+    "达到既有合法毕业/升空等公开效果时，照原来源公开真实发生的棋盘变化。玩家仍可按公开启动、兵种成本及正式回合自己估算预计时间；本方案不保证无法从合法公开对局推断结果。",
+    "若本显示方案获确认，重复判定只读该方案依法共同公开的有效状态；隐藏的实际进度/失败/绑定不因存在于服务器就进入公开键。毕业后的公开飞行及寿命/降落权利仍按既有规则区分。"
+  ],
+  "permission_note": "历史“培养进度可以公开”不是“过去已经确认进度私有”。本候选是在该可选权限下明确选择本版不展示权威实际进度，尚未批准；不倒改旧原件或伪造历史隐私确认。",
+  "why_recommended": "避免把隐藏训练是否仍有效通过死亡时的状态变化反馈给双方；不增加一条假进度/公开计划时钟及其H06/H11回退语义。代价是没有系统实时进度提示。",
+  "abstract_information_pair": {
+    "premise": "成功征募时至少有两枚合法同种候选；例选炮，成本6。世界A训练炮A、世界B训练炮B。随后公开炮B被消灭，其余公共棋盘/选种/已用机会相同。",
+    "private_difference": "A中炮A仍活且实际进度例如3/6；B中隐藏受训炮B死亡，训练失败。",
+    "failure_channel_to_avoid": "公开即时失败、归零或停止的进度条会区分秘密绑定；这只是V1信息流推演，未构建完整合法前缀或复现客户端泄漏。",
+    "proposed_shared_output": "两个世界此时都只显示炮、机会已用；以后的真实公开毕业/棋盘效果依实际来源展示，不掩造结果。"
+  },
+  "alternatives_considered": [
+    {
+      "option": "公开权威实际进度",
+      "tradeoff": "保留直观进度，但需先明确秘密死亡/失败时怎样反馈而不暴露绑定；现有来源没有完整生命周期口径，本轮不推荐直接补齐。"
+    },
+    {
+      "option": "公开预计培养时间而非实际进度",
+      "tradeoff": "可帮助数回合，但需要额外区分计划时钟与实际结算并定义历史恢复语义；不在本候选中顺带新增。"
+    }
+  ],
+  "not_decided": [
+    "H15 successful-start action cost candidate owned by standard",
+    "empty/failed candidate consumption, retry/feedback or new start/check permission",
+    "H06 actual body/progress/failure/reward restore semantics",
+    "M07 same-begin order or other modes H11 space details",
+    "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
+    "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
+  ],
+  "coordination": {
+    "successful_start_cost_owner": "standard",
+    "cost_candidate_source": {
+      "commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+      "git_blob_sha": "dc1672094be1b65eed58787e509dc9701fa089df",
+      "read_scope": "complete current pending H15 successful-start action-cost section; not whole working draft"
+    },
+    "cost_candidate_approved": false,
+    "cost_confirmation_would_approve_this_display": false,
+    "main_continuation_approves_this_display": false
+  },
+  "approval": {
+    "approved": false,
+    "user_quote": null,
+    "question": "是否同意三个模式本版采用这一公开展示口径：训练期间只公开所选兵种和机会已用，不显示实际培养进度或即时失败状态？"
+  },
+  "verification": {
+    "source": "V2 scoped source baseline",
+    "proposal": "V0 pending",
+    "privacy_reasoning": "V1 same-assistant abstract information-pair reasoning; no reproduced leak",
+    "engine_runs": 0,
+    "game_code_changes": 0,
+    "independent_review": false
+  }
+}

@@ -1,6 +1,6 @@
 {
   "record_type": "adjudication_reference_selection",
-  "record_version": "1.52",
+  "record_version": "1.53",
   "project": "乐子象棋",
   "decision_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
@@ -62,7 +62,7 @@
     "empirical_n": 0,
     "ui_approval": "per_image_explicit_approval"
   },
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-17",
   "tencent_screenshot_evidence": {
     "source_type": "user_supplied_in_game_rule_screenshots",
     "received_at": "2026-10-12T17:04:05+08:00",
@@ -1820,6 +1820,138 @@
       ],
       "implementation_status": "confirmed_design_not_implemented",
       "new_engine_tests": 0
+    },
+    {
+      "id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+      "confirmed_at_local": "2026-10-16T20:33:48+08:00",
+      "user_quote": "同意",
+      "source_type": "source_workline_direct_three_mode_user_confirmation_received_by_main",
+      "origin_workline": "standard",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "original_source": {
+        "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+        "path": "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "de5c2fc7b47553f39a0d8b3508264df8cc81f61e",
+        "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
+      },
+      "reviewed_candidate": {
+        "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜D01 己方主行动中获得时间崩坏的截止点"
+      },
+      "immediately_preceding_question": "是否同意这项三模式D01截止细化？",
+      "presented_clauses": [
+        "己方正常主行动中首次获得时间崩坏，截止为自己的下一正式回合末，不在当前行动回合末消灭。",
+        "对手回合被炸的既有截止、连续污染不续期、合法离开/净化解除规则保持；自救仍须合法。"
+      ],
+      "availability_guard": "Only D01 legally available in the mode, and the own-normal-main-action/landing pre-end branch. No pool or initialization approval.",
+      "scope_note": "Independent original approval; current main continuation is not this approval or approval of any H15 candidate.",
+      "policy_source": "ADJUDICATION.json#/shared_mutation_design_updates",
+      "implementation_status": "confirmed_design_not_implemented",
+      "new_engine_tests": 0
+    },
+    {
+      "id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "confirmed_at_local": "2026-10-16T21:33:47+08:00",
+      "user_quote": "我同意",
+      "source_type": "source_workline_direct_three_mode_user_confirmation_received_by_main",
+      "origin_workline": "standard",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "original_source": {
+        "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+        "path": "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "e24713bec82868e50c36087cb088cb61723a1db1",
+        "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
+      },
+      "reviewed_candidate": {
+        "commit": "214a08f6af61f2383a369983b4b99dda9c17a6c9",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜H10与M05的流舞九宫边界"
+      },
+      "immediately_preceding_question": "是否同意此方案作为三个模式中该合法组合的共用规则？",
+      "presented_clauses": [
+        "H10与M05均合法生效时，流舞也解除九宫限制。",
+        "每步仍横竖一格、最多两步；原触发资格与最终安全要求保持。"
+      ],
+      "availability_guard": "Only modes where H10 and M05 are both legally effective. No pool/init approval, no dance qualification granted merely by being outside palace.",
+      "scope_note": "Independent original approval; current main continuation is not this approval or approval of any H15 candidate.",
+      "policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H10_M05_flow_dance_palace",
+      "implementation_status": "confirmed_design_not_implemented",
+      "new_engine_tests": 0
+    },
+    {
+      "id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+      "confirmed_at_local": "2026-10-16T21:42:40+08:00",
+      "user_quote": "我同意",
+      "source_type": "source_workline_direct_three_mode_user_confirmation_received_by_main",
+      "origin_workline": "standard",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "original_source": {
+        "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+        "path": "worklines/standard/rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+        "git_blob_sha": "dffd00ba319a11a34c1fe3205023b1380932eadf",
+        "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
+      },
+      "reviewed_candidate": {
+        "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜M06对新生成马的骑兵资格"
+      },
+      "immediately_preceding_question": "是否同意作为三个模式中合法M06的共用规则？",
+      "presented_clauses": [
+        "骑兵资格只绑定本局开局原两枚真实马。",
+        "邪火后来真正生成的新马不自动骑兵，也不替补死去原马；普通合法马步保持。"
+      ],
+      "availability_guard": "Only modes where M06 legally effective, actual source-defined opening horse bodies and reveal/normal control rules retained. No pool/init permission.",
+      "scope_note": "Independent original approval; current main continuation is not this approval or approval of any H15 candidate.",
+      "policy_source": "ADJUDICATION.json#/shared_mutation_design_updates",
+      "implementation_status": "confirmed_design_not_implemented",
+      "new_engine_tests": 0
+    },
+    {
+      "id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+      "confirmed_at_local": "2026-10-16T21:55:03+08:00",
+      "user_quote": "我同意",
+      "source_type": "source_workline_direct_three_mode_user_confirmation_received_by_main",
+      "origin_workline": "standard",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "original_source": {
+        "commit": "e588078339fc256a9737e08a0db8d83322262171",
+        "path": "worklines/standard/rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+        "git_blob_sha": "c9ce2edf38c81a3b9ccf73665a00438ac865760b",
+        "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
+      },
+      "reviewed_candidate": {
+        "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜M08明兵卒回到己半场后的走法"
+      },
+      "immediately_preceding_question": "是否同意这项限定分支作为三模式合法M08的共用规则？",
+      "presented_clauses": [
+        "已明、地面、正常控制兵卒经合法来源回己半场，按当前起点恢复基础前一步，不永久保留曾过河斜步。",
+        "跨河当步仍前一步，再从敌半场起点行动才用尖斜；不新增移回能力或其他控制/空间权限。"
+      ],
+      "availability_guard": "Only legal M08 and the reviewed public-ground/normal-control/closed-return branch; no pool or missing return-source approval.",
+      "scope_note": "Independent original approval; current main continuation is not this approval or approval of any H15 candidate.",
+      "policy_source": "ADJUDICATION.json#/shared_mutation_design_updates",
+      "implementation_status": "confirmed_design_not_implemented",
+      "new_engine_tests": 0
     }
   ],
   "three_mode_plan_status": {
@@ -2891,9 +3023,9 @@
   },
   "current_main_work": {
     "primary_reader": "AI",
-    "phase": "H15_first_tick_confirmed_and_D01_shared_returns_received",
+    "phase": "H15_public_display_candidate_prepared_four_shared_sources_received",
     "current_rules": "this record plus inherited LEZI-SHARED-DESIGN-2026-10-13-r1",
-    "rule_delta": "H15 first cultivation tick explicitly confirmed in this dialogue; four independent D01 shared confirmations received from original standard sources. Existing repetition/pressure rules unchanged.",
+    "rule_delta": "Four independent source-workline shared confirmations adopted; no new main user confirmation. H15 display candidate remains pending; previously confirmed first tick unchanged.",
     "completed": [
       "H15 current information baseline source recheck",
       "two design dispatches prepared and byte checked",
@@ -2937,7 +3069,11 @@
       "CONF-THREE-MODE-D01-HOURGLASS-ZERO-APPEARED-20261016",
       "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
       "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
-      "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016"
+      "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+      "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+      "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+      "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016"
     ],
     "pending": [
       "complete public repetition field map and concrete identity-relation representation, including optional public progress policy",
@@ -2963,11 +3099,11 @@
     "new_engine_tests": 0,
     "runtime_acceptance": false,
     "next_action": {
-      "id": "REVIEW-REPETITION-PUBLIC-FIELDMAP-20261016",
-      "status": "source_fieldmap_review_in_progress_no_active_user_candidate",
-      "task": "Continue remaining public field/source-transition mapping; H15 first tick resolved, start cost/empty pool/progress lifecycle remain separate. D01 own-action collapse deadline stays pending in standard.",
-      "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
-      "is_new_user_candidate": false
+      "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "status": "pending_user_confirmation",
+      "task": "是否同意三个模式本版采用这一公开展示口径：训练期间只公开所选兵种和机会已用，不显示实际培养进度或即时失败状态？",
+      "source": "candidates/h15-public-training-display/v1.json",
+      "is_new_user_candidate": true
     },
     "limitation_audit_status": "partial",
     "audit": {
@@ -4480,7 +4616,7 @@
       "messages_sent_to_other_dialogues": false,
       "implementation_and_runtime_acceptance": false
     },
-    "latest_design_confirmation": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "latest_design_confirmation": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
     "audit_current_phase_reference": "VALIDATION.json#/limitation_audit"
   },
   "ordinary_hidden_chase_classification_contract": {
@@ -4850,6 +4986,47 @@
       "H03": "qualifying successful departure awards barrier and charges quota before same-atom landing death; death does not refund quota",
       "H11_H02_M03": "still-valid old assassination chance may continue after shuffle while covered, using current public covered-position geometry, normal reveal/control after landing; no duration refresh, no new covered activation",
       "H10_retired_host": "second-transfer old still-covered host re-enters general M07 random at next normal begin of either side, no extra random/reveal during transfer; face-up stays revealed-locked; new active host remains anchored"
+    },
+    "H10_M05_flow_dance_palace": {
+      "status": "source_confirmed_design_received_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only modes where H10 and M05 are both legally effective. No pool/init approval, no dance qualification granted merely by being outside palace.",
+      "source": {
+        "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+        "path": "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "e24713bec82868e50c36087cb088cb61723a1db1",
+        "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
+      },
+      "policy": {
+        "H10_and_M05_legally_effective_required": true,
+        "M05_removes_palace_limit_for_flow_dance": true,
+        "M05_absent_original_H10_palace_limit_preserved": true,
+        "each_dance_step": "exactly one orthogonal square within board",
+        "max_dance_steps": 2,
+        "rook_length_or_diagonal_dance_step_allowed": false,
+        "original_first_shadow_adjudication_successful_flow_requirement_preserved": true,
+        "ordinary_check_or_outside_palace_alone_grants_dance": false,
+        "second_shadow_gets_dance": false,
+        "first_step_temporary_attack_exception_and_early_safe_stop_preserved": true,
+        "final_required_safety_and_failed_escape_original_adjudication_preserved": true,
+        "source_occupancy_suffocation_blockade_landing_or_terminal_waived": false,
+        "new_return_position_or_push_out_occupant_granted": false,
+        "hidden_host_cooldown_count_disclosure_changed": false,
+        "mode_pool_availability_full_checkmate_search_clock_or_repetition_fieldmap_approved": false
+      },
+      "remaining": [
+        "new M06-generated-horse qualification or other pending crosses",
+        "full dance/adjudication trigger search, source-order/clock or independent terminal interfaces",
+        "mode pool or entire adaptation, extra secrecy/publicity or full repetition key/fieldmap",
+        "game code/runtime, scoring thaw or NET resume"
+      ],
+      "implementation": false,
+      "engine_runs": 0
     }
   },
   "external_returns_adoption": {
@@ -5192,6 +5369,44 @@
             "collapse_is_immediate_death_on_bomb_hit": false,
             "hourglass_own_full_atom_check_relief_permission_preserved": true
           }
+        },
+        "own_main_action_collapse_deadline": {
+          "status": "source_confirmed_design_received_not_implemented",
+          "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+          "mode_ids": [
+            "original_jieqi",
+            "standard_xiangqi",
+            "half_chaos"
+          ],
+          "availability_guard": "Only D01 legally available in the mode, and the own-normal-main-action/landing pre-end branch. No pool or initialization approval.",
+          "source": {
+            "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+            "path": "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+            "git_blob_sha": "de5c2fc7b47553f39a0d8b3508264df8cc81f61e",
+            "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
+          },
+          "policy": {
+            "guard": "First acquisition during Nozdormu-side normal main action or its landing atom, before entering formal-turn-end settlement; only where D01 legally available.",
+            "acquisition_on_own_formal_turn_N_deadline_own_turn": "N+1 formal-turn end",
+            "acquisition_turn_N_end_is_deadline": false,
+            "acquisition_during_opponent_turn_deadline": "end of the immediately upcoming Nozdormu-side formal turn, unchanged",
+            "effect_active_on_acquisition": true,
+            "continuous_pollution_A_to_B_resets_deadline": false,
+            "extra_forced_child_action_advances_formal_turn_counter": false,
+            "legal_exit_to_nonpolluted_or_cleanup_clears_collapse": true,
+            "genuine_new_acquisition_after_cleared_uses_new_source_deadline": true,
+            "next_turn_escape_or_hourglass_guaranteed_legal": false,
+            "new_ordinary_move_permission_to_empty_pollution": false,
+            "other_death_or_formal_terminal_reversed": false
+          },
+          "remaining": [
+            "new acquisition inside turn-end settlement, skipped/cancelled turn or full time-line interfaces",
+            "full checkmate skill-search/clock algorithm, independent terminal-source interfaces or exact source order",
+            "mode pool availability, entire adaptation, full repetition key/fieldmap or other pending ordinary decisions",
+            "game code/runtime/privacy acceptance, scoring thaw or NET resume"
+          ],
+          "implementation": false,
+          "engine_runs": 0
         }
       },
       "current_scope_resolution": {
@@ -5199,13 +5414,82 @@
         "zero_appeared_candidates": "confirmed eligible if remaining source gates pass; hidden candidates untouched",
         "hourglass_safety": "confirmed only in both-royals-survive closed-atom safety branch without independent terminal; no later repair",
         "bomb_current_ordinary_check": "blocks activation; no ammo/quota/status/deadline change and no post-main reopening",
-        "own_main_action_collapse_deadline": "pending in standard; not adopted"
+        "own_main_action_collapse_deadline": "Confirmed: first acquisition in own normal main-action/landing atom before end settlement -> own N+1 formal-turn end; opposite-turn existing deadline unchanged."
       },
       "remaining": [
-        "own-main-action collapse deadline candidate",
+        "new acquisition inside end settlement, skipped/cancelled turn or complete history/timeline interfaces",
         "exact begin/end/deadline/occupation logging and source ordering",
         "complete checkmate response search/clock and independent terminal-source interfaces",
         "complete public fieldmap/repetition key and all runtime/privacy validation"
+      ],
+      "implementation": false,
+      "engine_runs": 0
+    },
+    "M06_original_body_membership": {
+      "status": "source_confirmed_design_received_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only modes where M06 legally effective, actual source-defined opening horse bodies and reveal/normal control rules retained. No pool/init permission.",
+      "source": {
+        "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+        "path": "worklines/standard/rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+        "git_blob_sha": "dffd00ba319a11a34c1fe3205023b1380932eadf",
+        "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
+      },
+      "policy": {
+        "mode_M06_legally_effective_required": true,
+        "cavalry_membership": "the two real horse bodies defined by this match opening source",
+        "genuinely_new_generated_horse_automatically_cavalry": false,
+        "dead_original_horse_replaced_by_new_generated_horse": false,
+        "new_horse_normal_horse_geometry_and_own_source_states_preserved": true,
+        "original_two_reveal_gates_and_ordinary_public_startup_preserved": true,
+        "normal_movement_reveal_or_consistent_internal_rename_creates_new_body": false,
+        "dark_original_horse_identity_or_mapping_disclosure_added": false
+      },
+      "remaining": [
+        "M08 returned-pawn half candidate or other deferred mutation crosses",
+        "full revival/H11/H06/flying/control and identity-state restoration interfaces",
+        "mode pools/whole adaptation/full adjudication field/search-clock and source ordering",
+        "game code/runtime, scoring thaw or NET resume"
+      ],
+      "implementation": false,
+      "engine_runs": 0
+    },
+    "M08_returned_ground_pawn_half": {
+      "status": "source_confirmed_design_received_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only legal M08 and the reviewed public-ground/normal-control/closed-return branch; no pool or missing return-source approval.",
+      "source": {
+        "commit": "e588078339fc256a9737e08a0db8d83322262171",
+        "path": "worklines/standard/rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+        "git_blob_sha": "c9ce2edf38c81a3b9ccf73665a00438ac865760b",
+        "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
+      },
+      "policy": {
+        "guard": "Legal M08, public ground pawn with unambiguous normal control/direction, after a lawful closed source returned it to own half; next normal action only.",
+        "geometry_uses_current_action_origin_half": true,
+        "ever_crossed_permanently_retains_diagonal_steps_in_own_half": false,
+        "returned_own_half_geometry": "base one step forward only",
+        "crossing_action_from_own_half_allows_premature_diagonal": false,
+        "later_enemy_half_origin_geometry": "one forward/forward-left/forward-right, no horizontal or backward",
+        "existing_normal_side_direction_red_black_mirror_preserved": true,
+        "new_return_ability_extra_action_or_blanket_state_reset_granted": false,
+        "normal_targets_occupancy_defense_royal_safety_terminal_and_hidden_identity_boundaries_preserved": true
+      },
+      "remaining": [
+        "H15 successful-start action cost candidate or other pending crosses",
+        "temporary control, river/flying layers or complete history/restoration/source ordering",
+        "mode pool/entire adaptation/full adjudication field-search-clock or privacy runtime",
+        "game code, scoring thaw or NET resume"
       ],
       "implementation": false,
       "engine_runs": 0

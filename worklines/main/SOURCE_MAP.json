@@ -212,8 +212,8 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.52",
-  "latest_maintenance_base_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+  "current_record_version": "1.53",
+  "latest_maintenance_base_commit": "e588078339fc256a9737e08a0db8d83322262171",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
     "confirmed_at_local": "2026-10-16T20:23:07+08:00",
@@ -284,9 +284,9 @@
     }
   },
   "latest_half_chaos_read_scope": {
-    "source_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
-    "read_scope": "r20 complete return/actual receiver metadata only; no full8.35/8.36 or36-spec review",
-    "next": "M01-M08/D01 coverage gap audit"
+    "source_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
+    "read_scope": "r22 return/actual receipts metadata only, no full working/prefix/spec review",
+    "next": "NEXT-HC-PATH-DEFENSE-PREFIXES"
   },
   "latest_fieldmap_sources": [
     {
@@ -320,52 +320,58 @@
       "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b"
     }
   ],
-  "publication_parent_commit": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
+  "publication_parent_commit": "e588078339fc256a9737e08a0db8d83322262171",
   "unread_concurrent_returns": [],
   "current_phase_candidate_source": {
-    "id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
-    "path": "candidates/h15-first-cultivation-tick/v1.json",
-    "approved": true,
-    "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
-    "presented_commit": "50ad0d433f866fff41693cc495ec5d69c7724580"
+    "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "path": "candidates/h15-public-training-display/v1.json",
+    "approved": false,
+    "source_baseline": {
+      "commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "git_blob_sha": "6320011a324b556b8522044d9cddd4a86ddad9dd",
+      "read_scope": "complete H15 entry only; updated first tick and remaining public progression/hidden-body/lifecycle clauses"
+    },
+    "historical_visibility_blob": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
+    "existing_H15_first_tick_unchanged": true
   },
-  "confirmed_record_maintenance_note": "ADJUDICATION1.52 adds one direct H15 confirmation and four independently source-confirmed D01 shared boundaries; old1.51 core and all previous confirmations preserved.",
+  "confirmed_record_maintenance_note": "1.53 adds four original separately confirmed shared source boundaries. Prior1.52 core, H15 first tick and prior confirmations preserved; new H15 display/cost both pending.",
   "concurrent_source_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
   "latest_standard_shared_confirmation_sources": [
     {
-      "commit": "1b98d245beac601737207f286815152c83450318",
-      "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
-      "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
-      "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+      "commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
+      "path": "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+      "git_blob_sha": "de5c2fc7b47553f39a0d8b3508264df8cc81f61e",
+      "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
     },
     {
-      "commit": "fbc5e1f89874239573cdd784338104d163821ae4",
-      "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
-      "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
-      "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+      "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+      "path": "worklines/standard/rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
+      "git_blob_sha": "e24713bec82868e50c36087cb088cb61723a1db1",
+      "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
     },
     {
-      "commit": "e08e84593954a1e2c0bb1f966b8122cb5000ed9c",
-      "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
-      "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
-      "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+      "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+      "path": "worklines/standard/rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+      "git_blob_sha": "dffd00ba319a11a34c1fe3205023b1380932eadf",
+      "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
     },
     {
-      "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
-      "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
-      "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
-      "observed_at_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a"
+      "commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "path": "worklines/standard/rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+      "git_blob_sha": "c9ce2edf38c81a3b9ccf73665a00438ac865760b",
+      "observed_at_commit": "e588078339fc256a9737e08a0db8d83322262171"
     }
   ],
   "latest_standard_read_scope": {
-    "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
-    "scope": "latest return/receipt metadata plus four complete original shared confirmation JSON; current collapse candidate body not read fully"
+    "source_commit": "e588078339fc256a9737e08a0db8d83322262171",
+    "scope": "complete current H15 and current pending cost section, four original shared confirmation JSON, latest return/receipt metadata only"
   },
   "current_collaboration_read": {
-    "commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
+    "commit": "e588078339fc256a9737e08a0db8d83322262171",
     "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
-    "working_revision": "2026-10-16.v0.11",
-    "git_blob_sha": "d74c93b1947f1044dfb8a8676ab468ef5e3328e3",
-    "read_scope": "INTEGRATED_START/TASK_ROUTES; AUTHORIZATION_AND_ADOPTION; BASELINE_DELTA_CHECK/APPROVED_BASELINE_PRESERVATION; MANDATORY_PRECHECK/SOURCE_ACTIVATION; GITHUB_HANDOFF_WORKFLOW new output/object/concurrency/failure controls; AI_LIMITATION_CONTROL relevant full risk/audit/verification/resilience paragraphs; unchanged earlier-read project/temporal/maintenance modules reused after scoped diff check. Not full-document audit."
+    "working_revision": "2026-10-16.v0.12",
+    "git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
+    "read_scope": "Current MANDATORY_PRECHECK/SOURCE_ACTIVATION/GATE_RECEIPT and GITHUB_HANDOFF_WORKFLOW concurrent/failure/session-loss block actually read. INTEGRATED_START/TASK_ROUTES, PROJECT_WORK_AGREEMENT, AUTHORIZATION_AND_ADOPTION, BASELINE_DELTA_CHECK, TEMPORAL_OPPORTUNITY_CHECK and AI_LIMITATION_CONTROL reused after exact section equality against previously fully source-read v0.11; maintenance diff only revision label. Not full v0.12 audit."
   }
 }

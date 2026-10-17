@@ -1,19 +1,20 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "no_active_user_candidate_source_review",
+  "status": "pending_single_H15_public_display_candidate",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
     "candidate_id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "REVIEW-REPETITION-PUBLIC-FIELDMAP-20261016",
-    "status": "source_fieldmap_review_in_progress_no_active_user_candidate",
-    "task": "Continue remaining public field/source-transition mapping; H15 first tick resolved, start cost/empty pool/progress lifecycle remain separate. D01 own-action collapse deadline stays pending in standard.",
-    "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
-    "is_new_user_candidate": false
+    "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "status": "pending_user_confirmation",
+    "task": "是否同意三个模式本版采用这一公开展示口径：训练期间只公开所选兵种和机会已用，不显示实际培养进度或即时失败状态？",
+    "source": "candidates/h15-public-training-display/v1.json",
+    "is_new_user_candidate": true
   },
   "unresolved_questions": [
+    "user decision on H15 public training display candidate; exact current display is not yet selected",
     "complete remaining hero/mutation public effects, resource and relation map",
     "H15 optional public progress/status lifecycle, start cost/empty pool and source-specific history interactions",
     "all special-space public readers and eligible source-phase mappings",
@@ -21,13 +22,19 @@
     "canonical equality/serialization/hash algorithm",
     "pressure eligibility/exclusions and all-source ordering",
     "concrete legal fixtures and runtime/privacy validation",
-    "D01 current own-action collapse deadline and exact source-order/search/clock interfaces"
+    "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": null,
-  "candidate_prepared_for_presentation": false,
-  "approval_scope_guard": "Current approval applies only to H15 first tick. D01 confirmations have their own original scoped approvals. Remaining H15 and D01 candidates are not approved by this message.",
+  "current_candidate": {
+    "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "path": "candidates/h15-public-training-display/v1.json",
+    "approved": false,
+    "scope": "H15 common public display and resulting existing public/private equality boundary only",
+    "question": "是否同意三个模式本版采用这一公开展示口径：训练期间只公开所选兵种和机会已用，不显示实际培养进度或即时失败状态？"
+  },
+  "candidate_prepared_for_presentation": true,
+  "approval_scope_guard": "Main display and standard successful-start action-cost are separate pending candidates. Neither continuation nor consent to one approves the other, empty-pool handling or history/phase rules.",
   "new_candidate_approved": false,
-  "candidate_presentation": "The previous single H15 candidate was explicitly approved; no new main candidate presented this phase.",
+  "candidate_presentation": "Prepared for explicit final review; no confirmation implied by current continuation.",
   "resolved_candidate": {
     "id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
     "path": "candidates/h15-first-cultivation-tick/v1.json",
