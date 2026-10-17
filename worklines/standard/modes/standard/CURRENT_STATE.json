@@ -1,5 +1,5 @@
 {
-  "status": "M04_wording_adopted_endpoint_source_alignment_complete",
+  "status": "M04_three_line_wording_scope_recorded_H10_limited_source_alignment_complete",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "只核原已合法M04地面路线中路径棋与H10秘密真帅承载棋、终点公开影武者的承伤/归位/真帅死亡关系；完整读取相关源，先区分已定规则和真正缺口，不自动批准完整H10历史或终局接口。",
+  "next_action": "读取现行H02后续刺杀、M04及原路径龙鳞限定确认，先核组合合法性和已有来源；普通M04的A不直接外推为H02特殊进攻。只有仍缺明确来源时才恢复一个具体候选交用户决定。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -42,7 +42,7 @@
     "new_ordinary_confirmation": false
   },
   "main_document_adopted_scope": "Prior scoped confirmations through D01 startup/body observed at 50ad0d433f866fff41693cc495ec5d69c7724580; current zero-return receipt unknown.",
-  "latest_confirmation_main_adopted": null,
+  "latest_confirmation_main_adopted": true,
   "current_confirmation_index_count": 31,
   "M07_pool_exclusion_confirmed": true,
   "M08_approved": true,
@@ -132,7 +132,7 @@
     "new_automatic_messages_sent": false,
     "publication_commit": "Resolve containing commit from Git history after publication."
   },
-  "latest_confirmation_main_adopted_scope": "New path dragon-scale A main receipt unknown; previous H02/M04 receipt retained historically.",
+  "latest_confirmation_main_adopted_scope": "Exact original normal M04 path-scale A only; all exclusions retained; no new local gameplay confirmation.",
   "H02_M04_geometry_confirmed": true,
   "H02_M04_geometry_source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
   "H15_public_display_source_adopted": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
@@ -153,5 +153,37 @@
     "rule_delta": 0,
     "body": "modes/standard/CURRENT_RULES.md#2026-10-17限定来源组合｜战车终点单防护与龙爪",
     "verification": "V2 source clauses and V1 conditional final-result inference; unrun"
+  },
+  "current_M04_wording_scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "current_M04_wording_source": "rules/confirmed/M04_SHARED_WORDING_20261017.json",
+  "M04_H10_source_alignment": {
+    "id": "STD-M04-H10-ATOMIC-DAMAGE-SOURCE-ALIGNMENT",
+    "rule_delta": 0,
+    "body": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
+    "verification": "V2 source clauses / V1 guarded composition only; WD01-WD08 unrun"
+  },
+  "updated_at_local": "2026-10-17T20:59:07+08:00",
+  "M04_path_scale_main_receipt": {
+    "commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "source": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard.current_M04_confirmation",
+    "policy_source": "worklines/main/ADJUDICATION.json#shared_mutation_design_updates.M04_path_dragon_scale_continuation",
+    "source_standard_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+    "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+    "read_scope": "Complete scoped receiver row, matching current M04 policy, original own confirmation; unrelated H15/full adjudication not adopted.",
+    "received": true,
+    "adopted": true,
+    "comparison": {
+      "source_blob_matches": true,
+      "policy": true,
+      "guard": true,
+      "modes": true,
+      "preserved": true,
+      "exclusions": true
+    },
+    "scope": "Exact original normal M04 path-scale A only; all exclusions retained; no new local gameplay confirmation."
   }
 }

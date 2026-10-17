@@ -1,21 +1,20 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "single_H15_H06_failed_training_candidate_pending",
+  "status": "no_active_user_candidate_local_H02_path_scale_source_review",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "status": "pending_user_confirmation",
-    "task": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？",
-    "source": "candidates/h15-h06-failed-training-restore/v1.json",
-    "is_new_user_candidate": true
+    "id": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
+    "status": "source_review_next_no_new_rule_candidate",
+    "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+    "is_new_user_candidate": false
   },
   "unresolved_questions": [
-    "H15 already-failed training crossed by H06: current explicit candidate pending",
-    "H15 pre-start target snapshots and graduation/flight/reward history crossings remain separate",
+    "Latest main1.61 H15/H06 graduation source review next; no active user candidate reported. Newer H15 sources not fully read/adopted here.",
     "complete remaining hero/mutation public effects, resource and relation map",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
@@ -24,15 +23,9 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": {
-    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "path": "candidates/h15-h06-failed-training-restore/v1.json",
-    "approved": false,
-    "scope": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
-    "question": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？"
-  },
-  "candidate_prepared_for_presentation": true,
-  "approval_scope_guard": "Pending candidate only pre-graduation death-failed training crossed by H06. Does not reopen approved H15 display or first tick/cost, and does not approve pre-start/graduation/other history semantics.",
+  "current_candidate": null,
+  "candidate_prepared_for_presentation": false,
+  "approval_scope_guard": "No active local or current main user candidate. Local next only H02/M04 source review, no prepared or approved candidate. Prior M04 normal path-scale approval retained; newer main H15 policy not adopted from metadata.",
   "new_candidate_approved": false,
   "candidate_presentation": "One explicit failure-crossing proposal; current continue instruction approves none.",
   "resolved_candidate": {
@@ -154,8 +147,23 @@
     "new_engine_tests": 0
   },
   "source": {
-    "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
-    "path": "worklines/main/PENDING_DECISION.json"
+    "commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+    "path": "worklines/main/PENDING_DECISION.json",
+    "read_scope": "Current no-active-candidate/next metadata only; newer H15 confirmations not adopted."
   },
-  "local_handling": "Main H15 public display independently confirmed and received; H15/H06 failed-training restoration still main-owned pending. Local current candidate is SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION; no new rule approval from next-step instruction."
+  "local_handling": "Shared M04 wording scope and bounded H10 review completed. Main1.61 reports no active candidate and graduation source review next; no duplicate or local adoption of unread H15 policies.",
+  "previous_main_candidate_reference": {
+    "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+    "approved": false
+  },
+  "local_next": {
+    "id": "NEXT-STD-H02-M04-PATH-DRAGON-SCALE-SOURCE-REVIEW",
+    "subject": "H02后续刺杀与M04路径龙鳞存活的完成边界",
+    "action": "读取现行H02后续刺杀、M04及原路径龙鳞限定确认，先核组合合法性和已有来源；普通M04的A不直接外推为H02特殊进攻。只有仍缺明确来源时才恢复一个具体候选交用户决定。",
+    "status": "source_review_pending_no_candidate_approval",
+    "pending_is_not_approved": true
+  },
+  "main_latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+  "last_confirmed_scope_note": "Existing last_confirmed/confirmation fields retain previously fully adopted H15 display source, not a claim that newer reported confirmation is adopted."
 }

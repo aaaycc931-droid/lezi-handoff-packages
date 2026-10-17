@@ -63,7 +63,7 @@
       "details": [
         "H02 legal later ground opportunity geometry confirmed by CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
         "Normal exact path-dragon-scale A confirmed; other immunity and endpoint multiple-defense order remain pending",
-        "H10 atomic identity/return and general death"
+        "H10 bounded host/decoy path source composition recorded; full defense/flow/source-order/space/history/runtime remains pending"
       ],
       "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
       "M04_body_confirmation_does_not_resolve_these": true,
@@ -71,7 +71,13 @@
         "H15_flying_rook": "No attack/sky charge permission added; current sky geometry/blockers and separate landing retained; unrun",
         "rule_delta": 0,
         "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
-        "H02_activation_turn_single_defense": "Already completed path death persists; ordinary endpoint defense prevents H02 activation and source remains unused, no extra main action; conditional unrun"
+        "H02_activation_turn_single_defense": "Already completed path death persists; ordinary endpoint defense prevents H02 activation and source remains unused, no extra main action; conditional unrun",
+        "H10": {
+          "id": "STD-M04-H10-ATOMIC-DAMAGE-SOURCE-ALIGNMENT",
+          "source": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
+          "status": "V2 sources plus V1 guarded final-result inference; all WD unrun",
+          "full_H10_crossing_accepted": false
+        }
       },
       "assassination_geometry_confirmed": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
       "path_dragon_scale_A_confirmed": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
@@ -125,13 +131,25 @@
     },
     {
       "id": "MAIN-H15-H06-FAILED-TRAINING-RESTORE",
-      "status": "main_candidate_pending_no_local_duplicate",
+      "status": "historical_failed_training_candidate_reference_not_current_main_decision",
       "source": {
         "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
         "path": "candidates/h15-h06-failed-training-restore/v1.json"
       },
       "confirmed": false,
-      "read_scope": "Current main decision pointer/scope only, not full proposed restoration candidate or underlying history audit."
+      "read_scope": "Latest main1.61 current no-active-candidate/next metadata only; older failed-training proposal not current; newer H15 original policies not adopted.",
+      "current_main_decision": null,
+      "current_source": {
+        "commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+        "path": "worklines/main/PENDING_DECISION.json"
+      },
+      "current_main_next": {
+        "id": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
+        "status": "source_review_next_no_new_rule_candidate",
+        "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+        "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+        "is_new_user_candidate": false
+      }
     }
   ],
   "additional_mode_details": [
@@ -1013,5 +1031,15 @@
     "candidate_approved": false,
     "all_unresolved_items_preserved": true,
     "continuation_required_before_more_design": true
+  },
+  "main_current_metadata_observed": {
+    "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+    "path": "worklines/main/CURRENT_STATE.json",
+    "adjudication_version": "1.61",
+    "pending_decision": null,
+    "next_action": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+    "latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "read_scope": "Current-state and pending ID/status/next metadata only; no new H15 rule-policy/original-source adoption.",
+    "newer_H15_confirmation_adopted_here": false
   }
 }
