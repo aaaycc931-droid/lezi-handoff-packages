@@ -2,7 +2,7 @@
   "schema": "lezi.ui_approval_register.v1",
   "workline_id": "UI-DESIGN-001",
   "primary_reader": "project_main_dialogue_AI",
-  "updated_at": "2026-10-17T21:44:49+08:00",
+  "updated_at": "2026-10-17T23:28:59+08:00",
   "actors": {
     "user": "图稿最终审批者",
     "ui_workline": "候选设计、版本与证据记录者",
@@ -872,7 +872,7 @@
     "outer_size": "开启与关闭使用同一外圈大小；状态变化仅填墨/消散，外圈不随状态缩放。旋转机制继续沿用。"
   },
   "other_approved_baselines": "首页批准原图与V4棋盘继续沿用；本记录未修改其范围或像素。",
-  "next_authorized_item": "B9 planned static candidate: Bluetooth permission permanently denied, system settings entry; not created",
+  "next_authorized_item": "After explicit UI resume only: B9 planned static candidate, not created",
   "rules_delta": 0,
   "formal_scoring_status": "frozen",
   "product_code_changed_by_this_approval": false,
@@ -1058,25 +1058,57 @@
     "font_file_modified": false
   },
   "session_closure": {
-    "status": "paused_by_user",
-    "closed_at": "2026-10-12T23:18:55+08:00",
-    "user_statement": "先收束本轮工作吧，明天再做",
-    "pause_scope": "停止本轮UI设计、重绘与新候选生成；只整理并保存接续记录。",
-    "next_session_date": "2026-10-13",
-    "automatic_resume_scheduled": false,
-    "current_item": "UI002-BLUETOOTH-B2",
-    "last_candidate": "B2-v3",
-    "last_candidate_status": "not_approved_user_rejected",
-    "resume_point": "继续同一项字体审美定位和局部修订；先恢复批准/未批准边界，不能重复UI-001或当作字体定稿。",
-    "user_confirmed_typography_constraints": [
-      "水墨与毛笔书写感",
-      "反对现代字体、浓厚圆滑和电子化中大型字",
-      "同意使用有明确来源的真实字体或字形的方法；并未因此批准具体字库"
+    "status": "closed_by_user",
+    "closed_at": "2026-10-17T23:28:59+08:00",
+    "user_statement": "收束本轮对话",
+    "scope": "current_UI_conversation_only",
+    "project_and_other_conversations_stopped": false,
+    "pause_scope": "停止本对话新增设计／候选／产品实现，仅保存收束与接续状态",
+    "last_approved_candidate": "B8-v1",
+    "approved_in_scope": [
+      {
+        "version": "B6-v1",
+        "status": "user_approved",
+        "sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
+        "approved_at": "2026-10-16T18:26:17+08:00",
+        "user_statement": "通过",
+        "source_folder": "candidates/B6/v1"
+      },
+      {
+        "version": "B7-v1",
+        "status": "user_approved",
+        "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+        "approved_at": "2026-10-17T19:05:29+08:00",
+        "user_statement": "审批通过",
+        "source_folder": "candidates/B7/v1"
+      },
+      {
+        "version": "B8-v1",
+        "status": "user_approved",
+        "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+        "approved_at": "2026-10-17T21:44:49+08:00",
+        "user_statement": "审批通过",
+        "source_folder": "candidates/B8/v1"
+      }
     ],
-    "ai_diagnosis_status": "hypothesis_not_user_confirmed",
-    "next_review_protocol": "每次展示一张实际待审图；简述用途、相对基线变化和待定事项，等待用户明确审批；修改版重新审批。",
-    "main_dialogue_return_status": "package_prepared_for_user_relay; no_cross_chat_send_available",
-    "historical_closure": true
+    "art_and_source_files_verified": 44,
+    "next_item": {
+      "id": "B9",
+      "subject": "蓝牙权限永久拒绝，前往系统设置",
+      "candidate_created": false,
+      "approved": false
+    },
+    "resume_point": "用户明确恢复UI工作后，从B9「蓝牙权限永久拒绝，前往系统设置」继续；先读取固定入口与最新HEAD，恢复批准源层，一次展示一张实际候选。",
+    "unrun_scope": [
+      "真实系统权限弹窗与授权结果处理",
+      "蓝牙双机、重试、取消与返回交互",
+      "设备／屏幕适配与长名称场景",
+      "产品源码接入、APK、部署与主线合并"
+    ],
+    "automatic_resume_scheduled": false,
+    "default_handoff": "fixed GitHub entry plus published bodies/sources/state; existing assets reused by identity",
+    "formal_scoring_status": "frozen",
+    "NET": "paused"
   },
   "global_typography_authorization": {
     "at": "2026-10-13T15:25:23+08:00",
@@ -1119,21 +1151,21 @@
     ]
   },
   "current_session": {
-    "status": "B8_approved_next_static_item_not_created",
+    "status": "closed_by_user",
     "B2_v4": "approved",
     "current_candidate": null,
     "candidate_approval": null,
-    "next": "下一静态项B9：蓝牙权限永久拒绝，前往系统设置；尚未创建。",
+    "next": "用户明确恢复UI工作后，从B9「蓝牙权限永久拒绝，前往系统设置」继续；先读取固定入口与最新HEAD，恢复批准源层，一次展示一张实际候选。",
     "runtime": "not_run",
     "B1_v2": "approved",
     "automatic_resume_scheduled": false,
     "previous_closed_at": "2026-10-13T21:36:46+08:00",
     "previous_closeout_user_statement": "现在收束本轮工作，把这份规则加入到交接包中吧",
     "resumed_at": "2026-10-14T22:07:03+08:00",
-    "latest_user_statement": "审批通过",
+    "latest_user_statement": "收束本轮对话",
     "S1_v3_2": "approved",
     "latest_approval_at": "2026-10-17T21:44:49+08:00",
-    "last_update_at": "2026-10-17T21:44:49+08:00",
+    "last_update_at": "2026-10-17T23:28:59+08:00",
     "home": "approved_original_typography_exception",
     "V4": "approved_original_typography_exception",
     "B3_v1": "approved",
@@ -1142,7 +1174,9 @@
     "B5_v1": "approved",
     "B6_v1": "approved",
     "B7_v1": "approved",
-    "B8_v1": "approved"
+    "B8_v1": "approved",
+    "closed_at": "2026-10-17T23:28:59+08:00",
+    "closeout_user_statement": "收束本轮对话"
   },
   "font_license_review": {
     "date": "2026-10-13",
@@ -1221,6 +1255,81 @@
       "scope": "本轮停止新增设计，生成累计交接；不把此消息解释为新增图稿、生产接入或未来自动运行授权",
       "next": "明确恢复后从蓝牙连接中状态继续，一次一图",
       "automatic_resume_scheduled": false
+    },
+    {
+      "status": "paused_by_user",
+      "closed_at": "2026-10-12T23:18:55+08:00",
+      "user_statement": "先收束本轮工作吧，明天再做",
+      "pause_scope": "停止本轮UI设计、重绘与新候选生成；只整理并保存接续记录。",
+      "next_session_date": "2026-10-13",
+      "automatic_resume_scheduled": false,
+      "current_item": "UI002-BLUETOOTH-B2",
+      "last_candidate": "B2-v3",
+      "last_candidate_status": "not_approved_user_rejected",
+      "resume_point": "继续同一项字体审美定位和局部修订；先恢复批准/未批准边界，不能重复UI-001或当作字体定稿。",
+      "user_confirmed_typography_constraints": [
+        "水墨与毛笔书写感",
+        "反对现代字体、浓厚圆滑和电子化中大型字",
+        "同意使用有明确来源的真实字体或字形的方法；并未因此批准具体字库"
+      ],
+      "ai_diagnosis_status": "hypothesis_not_user_confirmed",
+      "next_review_protocol": "每次展示一张实际待审图；简述用途、相对基线变化和待定事项，等待用户明确审批；修改版重新审批。",
+      "main_dialogue_return_status": "package_prepared_for_user_relay; no_cross_chat_send_available",
+      "historical_closure": true
+    },
+    {
+      "at": "2026-10-17T23:28:59+08:00",
+      "status": "closed_by_user",
+      "closed_at": "2026-10-17T23:28:59+08:00",
+      "user_statement": "收束本轮对话",
+      "scope": "current_UI_conversation_only",
+      "project_and_other_conversations_stopped": false,
+      "pause_scope": "停止本对话新增设计／候选／产品实现，仅保存收束与接续状态",
+      "last_approved_candidate": "B8-v1",
+      "approved_in_scope": [
+        {
+          "version": "B6-v1",
+          "status": "user_approved",
+          "sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
+          "approved_at": "2026-10-16T18:26:17+08:00",
+          "user_statement": "通过",
+          "source_folder": "candidates/B6/v1"
+        },
+        {
+          "version": "B7-v1",
+          "status": "user_approved",
+          "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+          "approved_at": "2026-10-17T19:05:29+08:00",
+          "user_statement": "审批通过",
+          "source_folder": "candidates/B7/v1"
+        },
+        {
+          "version": "B8-v1",
+          "status": "user_approved",
+          "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+          "approved_at": "2026-10-17T21:44:49+08:00",
+          "user_statement": "审批通过",
+          "source_folder": "candidates/B8/v1"
+        }
+      ],
+      "art_and_source_files_verified": 44,
+      "next_item": {
+        "id": "B9",
+        "subject": "蓝牙权限永久拒绝，前往系统设置",
+        "candidate_created": false,
+        "approved": false
+      },
+      "resume_point": "用户明确恢复UI工作后，从B9「蓝牙权限永久拒绝，前往系统设置」继续；先读取固定入口与最新HEAD，恢复批准源层，一次展示一张实际候选。",
+      "unrun_scope": [
+        "真实系统权限弹窗与授权结果处理",
+        "蓝牙双机、重试、取消与返回交互",
+        "设备／屏幕适配与长名称场景",
+        "产品源码接入、APK、部署与主线合并"
+      ],
+      "automatic_resume_scheduled": false,
+      "default_handoff": "fixed GitHub entry plus published bodies/sources/state; existing assets reused by identity",
+      "formal_scoring_status": "frozen",
+      "NET": "paused"
     }
   ],
   "current_candidate_evidence": {

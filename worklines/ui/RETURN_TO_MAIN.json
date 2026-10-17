@@ -1,48 +1,118 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-B8-APPROVAL-20261017",
-  "previous_record_id": "UI-B8-CANDIDATE-20261017",
-  "base_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+  "record_id": "UI-SESSION-CLOSEOUT-20261017",
+  "previous_record_id": "UI-B8-APPROVAL-20261017",
+  "base_commit": "05501db57425ee406983468ba81f1efdfc73057f",
   "from_workline": "ui",
   "to_workline": "main",
-  "updated_at_local": "2026-10-17T21:44:49+08:00",
-  "scope": "B8-v1 static artwork approval only; image/source files unchanged",
-  "current_state_and_approval_delta": {
-    "B8": {
-      "status": "user_approved",
-      "user_confirmation_quote": "审批通过",
-      "user_confirmation_time": "2026-10-17T21:44:49+08:00",
-      "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
-      "git_blob_sha": "d123c1d74ba4b281b3b2468d80ce168faf18bb9d",
-      "source_folder": "candidates/B8/v1",
-      "evidence": "Direct user approval in current conversation after display of this exact candidate"
-    }
+  "updated_at_local": "2026-10-17T23:28:59+08:00",
+  "scope": "Close this UI conversation only; preserve cumulative approved work and exact continuation materials",
+  "user_confirmation_quote_time_scope": {
+    "quote": "收束本轮对话",
+    "time": "2026-10-17T23:28:59+08:00",
+    "scope": "Stop new work in this dialogue and save current results; not a new design approval"
   },
+  "current_state_and_approval_delta": {
+    "last_approved": "B8-v1",
+    "preserved_approvals": [
+      {
+        "version": "B6-v1",
+        "status": "user_approved",
+        "sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
+        "approved_at": "2026-10-16T18:26:17+08:00",
+        "user_statement": "通过",
+        "source_folder": "candidates/B6/v1"
+      },
+      {
+        "version": "B7-v1",
+        "status": "user_approved",
+        "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+        "approved_at": "2026-10-17T19:05:29+08:00",
+        "user_statement": "审批通过",
+        "source_folder": "candidates/B7/v1"
+      },
+      {
+        "version": "B8-v1",
+        "status": "user_approved",
+        "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+        "approved_at": "2026-10-17T21:44:49+08:00",
+        "user_statement": "审批通过",
+        "source_folder": "candidates/B8/v1"
+      }
+    ],
+    "new_approvals_this_closeout": 0,
+    "B9": "not_created",
+    "session": "closed_by_user",
+    "other_worklines_stopped": false
+  },
+  "completed_this_conversation": [
+    "恢复B6原图、14项源文件及既有具体批准，未重新审批或重画",
+    "完成并保存B7首次连接失败／重试静态稿，用户19:05:29批准",
+    "完成并保存B8可再次授权的权限未允许静态稿，用户21:44:49批准",
+    "按固定入口增量回传，保留其他工作线并发成果"
+  ],
+  "published_milestones": [
+    {
+      "commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+      "scope": "B6恢复与既有批准回传、B7候选及源层"
+    },
+    {
+      "commit": "904faf67feea90913139d2c38c7c83dfb6fd3dbe",
+      "scope": "B7用户批准"
+    },
+    {
+      "commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
+      "scope": "B8候选及源层"
+    },
+    {
+      "commit": "c0744c657a674a885a04cbbcda0c0b8f2bd32d65",
+      "scope": "B8用户批准"
+    }
+  ],
   "new_art_and_editable_layers_parameters": [],
-  "changed_file_identities": "Git tree and exact metadata readback; artwork identities remain CANDIDATE_RESTORE.json and assets/ui/INDEX.json",
-  "reused_asset_references": "All B8 image/source/evidence files and prior baseline assets unchanged",
+  "preserved_art_and_sources": [
+    "candidates/B6/v1 (14 files)",
+    "candidates/B7/v1 (15 files)",
+    "candidates/B8/v1 (15 files)"
+  ],
+  "changed_file_identities": "Only current entry/state/closure metadata changed; Git tree and exact remote metadata readback identify changes",
+  "reused_asset_references": "44 B6/B7/B8 file identities verified against current remote Git tree; 105 baseline dependencies and 117 unique restore assets retain their published identities through TASKS.B8 / CANDIDATE_RESTORE.B8 / assets/ui/INDEX.json",
   "actual_validation": {
-    "exact_B8_image_git_blob_checked": true,
-    "existing_pixel_and_visual_evidence_reused": true,
-    "new_artwork_files": 0,
+    "candidate_source_file_identities_verified": 44,
+    "B6_B7_B8_approval_pointer_consistency": true,
+    "B7_B8_prior_pixel_and_visual_evidence_reused": true,
+    "B7_B8_protected_pixels_changed": 0,
+    "B8_restore_and_exact_recomposition_previously_verified": true,
+    "artwork_or_asset_bytes_changed_this_closeout": 0,
     "new_game_code_files": 0
   },
-  "protected": [
-    "previous approvals and original source layers",
-    "home/V4 exceptions",
-    "withdrawn candidates",
-    "scoring frozen",
-    "NET paused",
-    "other worklines/history"
-  ],
   "unrun_scope": [
-    "system permission dialogs",
-    "Bluetooth runtime/devices",
-    "responsive acceptance",
-    "production implementation/APK/deployment"
+    "真实系统权限弹窗与授权结果处理",
+    "蓝牙双机、重试、取消与返回交互",
+    "设备／屏幕适配与长名称场景",
+    "产品源码接入、APK、部署与主线合并"
+  ],
+  "known_limits": [
+    "Historical UI branch code was read for static behavior mapping; current production runtime was not accepted",
+    "Inherited B2 hidden-paper estimates remain historical; no new whole-image regeneration or background estimation",
+    "B6 specific approval is preserved from recovered project reception evidence; direct original shared transcript was unavailable in recovery",
+    "This GitHub publication does not prove another conversation has read or adopted it"
+  ],
+  "protected": [
+    "all prior approvals, home/V4 typography exceptions and withdrawn items",
+    "approved originals, source layers, original Long Cang font and license",
+    "scoring frozen, NET paused",
+    "other worklines and Git history"
   ],
   "shared_blockers": [],
-  "next_action": "核对永久拒绝及系统设置入口来源，从批准源层制作一张静态候选；当前尚未创建。",
-  "publication_status": "Approval delivered by the commit containing this record; exact commit resolved through Git history. Receiver adoption unknown.",
+  "next_action": "用户明确恢复UI工作后，从B9「蓝牙权限永久拒绝，前往系统设置」继续；先读取固定入口与最新HEAD，恢复批准源层，一次展示一张实际候选。",
+  "acceptance_for_next_step": "B9 source behavior checked, one actual faithful static candidate shown, user-specific approval required",
+  "session_closeout": {
+    "status": "closed_by_user",
+    "scope": "this_conversation_only",
+    "automatic_resume_scheduled": false,
+    "project_terminated": false
+  },
+  "publication_status": "Closeout delivered by the commit containing this record; resolve exact commit through Git history. Receiver adoption unknown.",
   "receiver_adoption": "unknown"
 }
