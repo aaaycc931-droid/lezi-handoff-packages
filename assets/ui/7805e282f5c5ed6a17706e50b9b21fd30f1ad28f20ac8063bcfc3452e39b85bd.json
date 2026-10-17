@@ -1,0 +1,33 @@
+{
+  "schema": "lezi.ui.static_layout.v1",
+  "version": "B6-v1",
+  "canvas": {"width": 852, "height": 1846},
+  "font": {"family": "Long Cang", "sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc", "modified": false},
+  "source_version": "B4-v1",
+  "method": "new connecting state from frozen approved layers; B3 session typography placements reused",
+  "lines": [
+    {"id":"connecting_status","text":"正在连接","cx":426,"cy":514,"maxWidth":385,"maxHeight":46,"fill":"#12120f"},
+    {"id":"target_device","text":"对方设备：朋友的手机","cx":426,"cy":569,"maxWidth":430,"maxHeight":38,"fill":"#12120f"},
+    {"id":"cancel_connecting","text":"取消连接","cx":426,"cy":793,"maxWidth":365,"maxHeight":108,"fill":"#123754"}
+  ],
+  "fixture": {"device_name": "朋友的手机", "device_name_is_example": true, "state": "first connection attempt; not yet connected"},
+  "regions": [
+    {"id":"connecting_state_and_target","x":193,"y":477,"width":472,"height":178},
+    {"id":"cancel_connecting_label","x":204,"y":730,"width":450,"height":132},
+    {"id":"remove_refresh_action","x":305,"y":995,"width":245,"height":78},
+    {"id":"remove_settings_action","x":218,"y":1132,"width":418,"height":75},
+    {"id":"remove_return_action","x":346,"y":1260,"width":161,"height":75}
+  ],
+  "mask_rule": "union of B4 state glyph/control alpha and the new B6 text alpha, intersected with these rectangles; no history mask reuse",
+  "actions": {
+    "cancel_connecting": "Cancel pending connection and return to initial Bluetooth lobby; no match result before first connection",
+    "top_back": "Cancel pending connection then return to main menu; existing arrow retained",
+    "status": "Non-interactive static status; no animation or native operation verified"
+  },
+  "approval": "pending_user_review",
+  "runtime": "not_run",
+  "bluetooth_device_acceptance": "not_run",
+  "production_code_changed": false,
+  "scoring_frozen": true,
+  "NET": "paused"
+}

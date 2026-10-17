@@ -1,0 +1,31 @@
+{
+  "schema": "lezi.ui.source_behavior_excerpts.v1",
+  "repository": "aaaycc931-droid/jieqi-engine",
+  "path": "web/app.ts",
+  "source_commit": "1f6c1635ad756eefc871f2075883bf26b82176ea",
+  "git_blob_sha": "9bb69d7e10d0ca0401a8aed88dae63b36beb079a",
+  "scope": "historical UI branch; static mapping only; no current production acceptance",
+  "fixture": "Guest first-connection ERROR; everConnected=false; target name is example",
+  "functions": {
+    "showBluetoothSessionState": "function showBluetoothSessionState(options: {\n  kicker: string;\n  title: string;\n  detail: string;\n  deviceName?: string;\n  retry?: boolean;\n  cancel?: boolean;\n  back?: boolean;\n}",
+    "cancelBluetoothSetup": "function cancelBluetoothSetup(): void {\n  nativeBluetooth()?.disconnect();\n  bluetooth = undefined;\n  resetBluetoothLobbyPanels();\n  renderBluetoothAvailability();\n}",
+    "leaveBluetoothLobby": "function leaveBluetoothLobby(): void {\n  if (bluetooth?.everConnected) {\n    showDialog(\n      \"断开蓝牙对局\",\n      \"确定要断开当前蓝牙对局并返回主菜单吗？\",\n      \"确认断开\",\n      () => {\n        nativeBluetooth()?.disconnect();\n        bluetooth = undefined;\n        showMainMenu();\n      },\n    );\n    return;\n  }\n  nativeBluetooth()?.disconnect();\n  bluetooth = undefined;\n  showMainMenu();\n}",
+    "beginBluetoothGuest": "function beginBluetoothGuest(address: string, targetName: string): void {\n  const bridge = nativeBluetooth();\n  if (!bridge) return showToast(\"蓝牙双机模式只能在 Android 安装包内使用。\");\n  bluetooth = {\n    role: \"guest\",\n    nativeState: \"CONNECTING\",\n    pendingAction: false,\n    trapDraft: [],\n    targetAddress: address,\n    targetName,\n  };\n  showBluetoothSessionState({\n    kicker: \"加入对局\",\n    title: \"正在连接\",\n    deviceName: targetName,\n    detail: \"正在连接房主设备，请稍候。\",\n    cancel: true,\n  });\n  setBluetoothStatus(\"正在连接房主设备，请稍候。\");\n  bridge.join(address);\n}",
+    "retryBluetoothConnection": "function retryBluetoothConnection(): void {\n  if (!bluetooth) return showBluetoothLobby();\n  if (bluetooth.role === \"host\") {\n    beginBluetoothHost();\n    return;\n  }\n  if (bluetooth.targetAddress) {\n    const { targetAddress, targetName = \"房主设备\" } = bluetooth;\n    beginBluetoothGuest(targetAddress, targetName);\n    return;\n  }\n  showBluetoothLobby();\n}"
+  },
+  "event_excerpt": {
+    "start_line": 3690,
+    "end_line": 3706,
+    "code": "    } else if ((detail.state === \"DISCONNECTED\" || detail.state === \"ERROR\") && !wasEstablished) {\n      const failure = detail.detail || (detail.state === \"ERROR\" ? \"蓝牙连接失败，请重试。\" : \"已停止蓝牙连接。\");\n      bluetooth.lastFailure = failure;\n      setBluetoothStatus(failure);\n      showBluetoothSessionState({\n        kicker: bluetooth.role === \"host\" ? \"创建对局\" : \"加入对局\",\n        title: detail.state === \"ERROR\" ? \"连接失败\" : \"连接已停止\",\n        deviceName: bluetooth.role === \"host\" ? bluetooth.localDeviceName : bluetooth.targetName,\n        detail: failure,\n        retry: detail.state === \"ERROR\",\n        cancel: false,\n        back: true,\n      });\n    }\n  } else if ((detail.event === \"message\" || detail.type === \"message\") && detail.message) {\n    handleIncomingBluetoothMessage(typeof detail.message === \"string\" ? detail.message : JSON.stringify(detail.message));\n  } else if (detail.type === \"permission-granted\") {"
+  },
+  "transport_error_excerpt": {
+    "start_line": 3715,
+    "end_line": 3735,
+    "code": "      : \"蓝牙权限未允许；可以再次尝试授权。\");\n  } else if (detail.type === \"transport-error\") {\n    const message = detail.detail ?? \"无法使用蓝牙，请检查系统权限。\";\n    if (bluetooth && !bluetooth.everConnected) {\n      bluetooth.lastFailure = message;\n      setBluetoothStatus(message);\n      showBluetoothSessionState({\n        kicker: bluetooth.role === \"host\" ? \"创建对局\" : \"加入对局\",\n        title: \"连接失败\",\n        deviceName: bluetooth.role === \"host\" ? bluetooth.localDeviceName : bluetooth.targetName,\n        detail: message,\n        retry: true,\n        cancel: false,\n        back: true,\n      });\n    } else {\n      showToast(message);\n    }\n  }\n}) as EventListener);\n"
+  },
+  "event_binding_excerpt": {
+    "start_line": 3318,
+    "end_line": 3328,
+    "code": "element<HTMLButtonElement>(\"bluetooth-open-settings-button\").addEventListener(\"click\", () => nativeBluetooth()?.openBluetoothSettings());\nelement<HTMLButtonElement>(\"bluetooth-join-cancel-button\").addEventListener(\"click\", () => {\n  resetBluetoothLobbyPanels();\n  renderBluetoothAvailability();\n});\nbluetoothRetryButton.addEventListener(\"click\", retryBluetoothConnection);\nbluetoothRematchRequestButton.addEventListener(\"click\", requestBluetoothRematch);\nbluetoothRematchAcceptButton.addEventListener(\"click\", () => respondBluetoothRematch(true));\nbluetoothRematchDeclineButton.addEventListener(\"click\", () => respondBluetoothRematch(false));\nbluetoothCancelButton.addEventListener(\"click\", cancelBluetoothSetup);\nbluetoothReturnButton.addEventListener(\"click\", cancelBluetoothSetup);"
+  }
+}

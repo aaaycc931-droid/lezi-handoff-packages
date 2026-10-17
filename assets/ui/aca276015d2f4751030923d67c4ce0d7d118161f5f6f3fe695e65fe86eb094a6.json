@@ -1,0 +1,34 @@
+{
+  "schema": "lezi.ui.readonly_behavior_reference.v1",
+  "repository": "aaaycc931-droid/jieqi-engine",
+  "path": "web/app.ts",
+  "ref_read": "codex/ui-design-20261011",
+  "git_blob_sha": "9bb69d7e10d0ca0401a8aed88dae63b36beb079a",
+  "scope": "connecting/cancel/back historical candidate implementation, read-only; current production acceptance not established",
+  "excerpts": [
+    {
+      "function": "resetBluetoothLobbyPanels",
+      "content": "function resetBluetoothLobbyPanels(): void {\n  bluetoothInitialActions.hidden = false;\n  bluetoothJoinPanel.hidden = true;\n  bluetoothSessionPanel.hidden = true;\n  bluetoothRetryButton.hidden = true;\n  bluetoothRematchTimer.hidden = true;\n  bluetoothRematchRequestButton.hidden = true;\n  bluetoothRematchAcceptButton.hidden = true;\n  bluetoothRematchDeclineButton.hidden = true;\n  bluetoothCancelButton.hidden = false;\n  bluetoothReturnButton.hidden = true;\n  bluetoothSessionDevice.hidden = true;\n  bluetoothSessionDevice.textContent = \"\";\n  bluetoothSessionDetail.textContent = \"\";\n}"
+    },
+    {
+      "function": "showBluetoothSessionState",
+      "content": "function showBluetoothSessionState(options: {\n  kicker: string;\n  title: string;\n  detail: string;\n  deviceName?: string;\n  retry?: boolean;\n  cancel?: boolean;\n  back?: boolean;\n}): void {\n  bluetoothInitialActions.hidden = true;\n  bluetoothJoinPanel.hidden = true;\n  bluetoothStateActions.hidden = true;\n  bluetoothSessionPanel.hidden = false;\n  bluetoothSessionKicker.textContent = options.kicker;\n  bluetoothSessionTitle.textContent = options.title;\n  bluetoothSessionDetail.textContent = options.detail;\n  bluetoothSessionDevice.textContent = options.deviceName ?? \"\";\n  bluetoothSessionDevice.hidden = !options.deviceName;\n  bluetoothRetryButton.hidden = !options.retry;\n  bluetoothRematchTimer.hidden = true;\n  bluetoothRematchRequestButton.hidden = true;\n  bluetoothRematchAcceptButton.hidden = true;\n  bluetoothRematchDeclineButton.hidden = true;\n  bluetoothCancelButton.hidden = options.cancel === false;\n  bluetoothReturnButton.hidden = !options.back;\n}"
+    },
+    {
+      "function": "cancelBluetoothSetup",
+      "content": "function cancelBluetoothSetup(): void {\n  nativeBluetooth()?.disconnect();\n  bluetooth = undefined;\n  resetBluetoothLobbyPanels();\n  renderBluetoothAvailability();\n}"
+    },
+    {
+      "function": "leaveBluetoothLobby",
+      "content": "function leaveBluetoothLobby(): void {\n  if (bluetooth?.everConnected) {\n    showDialog(\n      \"断开蓝牙对局\",\n      \"确定要断开当前蓝牙对局并返回主菜单吗？\",\n      \"确认断开\",\n      () => {\n        nativeBluetooth()?.disconnect();\n        bluetooth = undefined;\n        showMainMenu();\n      },\n    );\n    return;\n  }\n  nativeBluetooth()?.disconnect();\n  bluetooth = undefined;\n  showMainMenu();\n}"
+    },
+    {
+      "function": "beginBluetoothGuest",
+      "content": "function beginBluetoothGuest(address: string, targetName: string): void {\n  const bridge = nativeBluetooth();\n  if (!bridge) return showToast(\"蓝牙双机模式只能在 Android 安装包内使用。\");\n  bluetooth = {\n    role: \"guest\",\n    nativeState: \"CONNECTING\",\n    pendingAction: false,\n    trapDraft: [],\n    targetAddress: address,\n    targetName,\n  };\n  showBluetoothSessionState({\n    kicker: \"加入对局\",\n    title: \"正在连接\",\n    deviceName: targetName,\n    detail: \"正在连接房主设备，请稍候。\",\n    cancel: true,\n  });\n  setBluetoothStatus(\"正在连接房主设备，请稍候。\");\n  bridge.join(address);\n}"
+    },
+    {
+      "function": "cancel_event_bindings",
+      "content": "bluetoothCancelButton.addEventListener(\"click\", cancelBluetoothSetup);\nbluetoothReturnButton.addEventListener(\"click\", cancelBluetoothSetup);"
+    }
+  ]
+}

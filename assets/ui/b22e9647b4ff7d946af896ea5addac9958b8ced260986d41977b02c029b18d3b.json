@@ -1,0 +1,91 @@
+{
+  "schema": "lezi.bluetooth_connecting_static_candidate.v1",
+  "version": "B6-v1",
+  "source_version": "B4-v1",
+  "source_sha256": "7c11e53aaa7c76b04e77ca60b59780ca4b61dfc251e541fea9df21a3ce38f72c",
+  "output_sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
+  "width": 852,
+  "height": 1846,
+  "font_family": "Long Cang",
+  "font_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+  "font_modified": false,
+  "lines": [
+    {
+      "id": "connecting_status",
+      "text": "正在连接",
+      "cx": 426,
+      "cy": 514,
+      "maxWidth": 385,
+      "maxHeight": 46,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 210.3804368913204,
+        "height": 46
+      },
+      "font_size_px": 53.544406937492724
+    },
+    {
+      "id": "target_device",
+      "text": "对方设备：朋友的手机",
+      "cx": 426,
+      "cy": 569,
+      "maxWidth": 430,
+      "maxHeight": 38,
+      "fill": "#12120f",
+      "actual_ink_bounds": {
+        "width": 430.00000000000006,
+        "height": 34.210101305890824
+      },
+      "font_size_px": 43.194787924593285
+    },
+    {
+      "id": "cancel_connecting",
+      "text": "取消连接",
+      "cx": 426,
+      "cy": 793,
+      "maxWidth": 365,
+      "maxHeight": 108,
+      "fill": "#123754",
+      "actual_ink_bounds": {
+        "width": 365,
+        "height": 82.56730822422033
+      },
+      "font_size_px": 93.19109280386041
+    }
+  ],
+  "approved_source_recomposition": {
+    "B4-v1": 0,
+    "B5-v1": 0
+  },
+  "source_unchanged": true,
+  "background": {
+    "reused_sha256": "13a513a067abb972ab8e0c898faeba92eb17952a1ecc955248e418c73b429a8f",
+    "new_estimation": false,
+    "historical_estimation": "Inherited B2 text-footprint estimates retained; not original hidden paper pixels"
+  },
+  "whole_page_regenerated": false,
+  "resampling": false,
+  "changed_pixels": 37576,
+  "mask_rule": "union of B4 state glyph/control alpha and the new B6 text alpha, intersected with these rectangles; no history mask reuse",
+  "fixture": {
+    "device_name": "朋友的手机",
+    "device_name_is_example": true,
+    "state": "first connection attempt; not yet connected"
+  },
+  "actions": {
+    "cancel_connecting": "Cancel pending connection and return to initial Bluetooth lobby; no match result before first connection",
+    "top_back": "Cancel pending connection then return to main menu; existing arrow retained",
+    "status": "Non-interactive static status; no animation or native operation verified"
+  },
+  "artwork_approval": "pending_user_review",
+  "runtime_acceptance": "not_run",
+  "bluetooth_device_acceptance": "not_run",
+  "production_code_changed": false,
+  "game_rules_delta": 0,
+  "scoring_frozen": true,
+  "NET": "paused",
+  "actual_visual_inspected": true,
+  "visual_inspection": "Full 852x1846 candidate and full-resolution state/button detail inspected. Text reads 正在连接 / 对方设备：朋友的手机 / 取消连接. No obvious residual device-selector glyphs, links, new white patches or frame damage. Historical paper estimates remain disclosed.",
+  "pixel_verification": "evidence/pixel-check.json",
+  "verification_implementation_note": "Initial mask PNG export was RGB and was rejected by verifier; exporter corrected to binary L PNG and verification rerun successfully. Candidate pixels and hash unchanged."
+}

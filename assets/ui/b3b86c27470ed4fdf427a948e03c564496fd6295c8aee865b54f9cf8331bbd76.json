@@ -1,0 +1,104 @@
+{
+  "schema": "lezi.ui.static_layout.v1",
+  "version": "B7-v1",
+  "canvas": {
+    "width": 852,
+    "height": 1846
+  },
+  "font": {
+    "family": "Long Cang",
+    "sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+    "modified": false
+  },
+  "source_version": "B4-v1",
+  "method": "new failed/retry state from the same frozen source layers as approved B6; original Long Cang glyph paths",
+  "lines": [
+    {
+      "id": "failure_status",
+      "text": "连接失败",
+      "cx": 426,
+      "cy": 514,
+      "maxWidth": 385,
+      "maxHeight": 46,
+      "fill": "#12120f"
+    },
+    {
+      "id": "target_device",
+      "text": "对方设备：朋友的手机",
+      "cx": 426,
+      "cy": 569,
+      "maxWidth": 430,
+      "maxHeight": 38,
+      "fill": "#12120f"
+    },
+    {
+      "id": "failure_detail",
+      "text": "蓝牙连接失败，请重试。",
+      "cx": 426,
+      "cy": 627,
+      "maxWidth": 470,
+      "maxHeight": 32,
+      "fill": "#12120f"
+    },
+    {
+      "id": "retry_connection",
+      "text": "重新连接",
+      "cx": 426,
+      "cy": 793,
+      "maxWidth": 365,
+      "maxHeight": 108,
+      "fill": "#123754"
+    },
+    {
+      "id": "return_to_lobby",
+      "text": "返回",
+      "cx": 426,
+      "cy": 1035,
+      "maxWidth": 220,
+      "maxHeight": 65,
+      "fill": "#12120f"
+    }
+  ],
+  "fixture": {
+    "device_name": "朋友的手机",
+    "device_name_is_example": true,
+    "state": "guest first-connection ERROR; everConnected=false; target retained; generic fallback detail"
+  },
+  "regions": [
+    {
+      "id": "failure_state_target_detail",
+      "x": 182,
+      "y": 477,
+      "width": 490,
+      "height": 185
+    },
+    {
+      "id": "retry_label",
+      "x": 204,
+      "y": 730,
+      "width": 450,
+      "height": 132
+    },
+    {
+      "id": "return_action",
+      "x": 305,
+      "y": 995,
+      "width": 245,
+      "height": 90
+    }
+  ],
+  "mask_rule": "union of approved B6 text alpha and new B7 text alpha, intersected with listed rectangles; no history mask reuse",
+  "actions": {
+    "retry_connection": "retryBluetoothConnection: guest retries retained targetAddress/name via beginBluetoothGuest; no new target invented",
+    "return_to_lobby": "cancelBluetoothSetup: disconnect, clear setup, reset to initial Bluetooth lobby",
+    "top_back": "leaveBluetoothLobby before first connection: disconnect and return to main menu",
+    "state_scope": "first-connection failure only; not an established match reconnect or scoring state"
+  },
+  "approval": "pending_user_review",
+  "runtime": "not_run",
+  "bluetooth_device_acceptance": "not_run",
+  "production_code_changed": false,
+  "scoring_frozen": true,
+  "NET": "paused",
+  "approved_comparison_version": "B6-v1"
+}

@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.current_work.v1",
-  "revision": "UI-WORKFLOW-20261015-r3",
-  "updated_at_local": "2026-10-15T18:38:43.592+08:00",
+  "revision": "UI-B6-RECOVERED-B7-PENDING-20261017",
+  "updated_at_local": "2026-10-17T17:43:23.181+08:00",
   "known_UI_source": "2026-10-14-v1",
   "source_commit": "52002b3762bd948a134c67cfbc99427035790eba",
   "approved_versions": [
@@ -10,7 +10,8 @@
     "S1-v3.2",
     "B3-v1",
     "B4-v1",
-    "B5-v1"
+    "B5-v1",
+    "B6-v1"
   ],
   "typography_exceptions": [
     "home",
@@ -21,15 +22,20 @@
     "V4-T1-v1"
   ],
   "next_task": {
-    "id": "B6",
-    "subject": "连接中，设备名与取消",
-    "candidate_created": false,
-    "candidate_approved": false
+    "id": "B7",
+    "subject": "首次连接失败／重试",
+    "version": "B7-v1",
+    "candidate_created": true,
+    "candidate_approved": false,
+    "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+    "image": "candidates/B7/v1/lezi-bluetooth-B7-v1.png",
+    "source_folder": "candidates/B7/v1",
+    "next_action": "展示本图并等待用户具体审批／修改"
   },
   "current_approval_authority": "APPROVAL_REGISTER.json",
   "asset_library": "../../assets/ui/INDEX.json",
-  "unreceived_newer_UI_work": "unknown; preserve and reconcile any unreturned receiver work",
-  "artwork_changes": 0,
+  "unreceived_newer_UI_work": "B6 exact recovery and preserved approval reconciled; no further unreceived artwork known",
+  "artwork_changes": 1,
   "game_code_changes": 0,
   "engine_tests": 0,
   "scoring_frozen": true,
@@ -39,7 +45,7 @@
   "collaboration_entry": "../../START_COLLABORATION.md",
   "collaboration_current_index": "../../collaboration/CURRENT.json",
   "project_excerpt_revision": "2026-10-14.v0.8",
-  "collaboration_adoption_status": "receiver_reading_and_adoption_not_yet_verified",
+  "collaboration_adoption_status": "current dialogue actually read and adopted scoped required v0.13 modules; other dialogues unknown",
   "workflow_optimization": {
     "record_id": "CI-15",
     "updated_at_local": "2026-10-16T16:10:36+08:00",
@@ -47,8 +53,8 @@
     "generic_rules": "../../collaboration/CURRENT.json",
     "scope": "workflow controls only; no candidate artwork or approval changes",
     "return_record": "RETURN_TO_MAIN.json",
-    "recovered_B6_notice": "A protected B6-v1 recovery candidate is known; existing next_task describes the last published UI snapshot. Reconcile recovery before resuming; do not regenerate from stale candidate_created=false.",
-    "next_action": "after workflow publication, keep UI paused until user resumes the artwork task; preserve B6 pending review"
+    "recovered_B6_notice": "B6 original and all source files recovered. Specific existing approval is reconciled in the fixed register; historical candidate snapshots remain unchanged.",
+    "next_action": "B7-v1 actual candidate awaits user review"
   },
   "workflow_session_loss_recovery": {
     "record_id": "CI-16",
@@ -57,6 +63,27 @@
     "generic_rules": "../../collaboration/CURRENT.json",
     "scope": "workflow only; existing artwork and approval pointers preserved",
     "approval_reconciliation": "Later specific approval evidence must be preserved and checked against the exact artwork; the older published pending snapshot does not revoke it.",
-    "return_record": "RETURN_TO_MAIN.json"
-  }
+    "return_record": "RETURN_TO_MAIN.json",
+    "resolved_at_local": "2026-10-17T17:43:23.181+08:00"
+  },
+  "publication_base_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+  "recovered_approved_artwork": 1,
+  "protected_pixels_changed": 0,
+  "runtime": "not_run",
+  "recovery": {
+    "B6_original_sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
+    "B6_existing_approval_preserved": true,
+    "B6_exact_recomposition_verified": true,
+    "baseline_files_verified": 105,
+    "baseline_unique_assets": 75,
+    "new_background_estimation": false,
+    "whole_page_regenerated": false
+  },
+  "limitation_audit_status": "partial",
+  "unverified": [
+    "actual Bluetooth devices",
+    "runtime interaction",
+    "responsive and long-name cases",
+    "other-dialogue reading/adoption"
+  ]
 }

@@ -12,21 +12,22 @@
     },
     {
       "id": "UI-002",
-      "status": "in_progress_handoff_ready",
+      "status": "in_progress_pending_user_review",
       "work": "优先未完成非棋盘页面：设置页、蓝牙大厅，再英雄选择/猜拳",
       "deliverable": "逐屏可审阅方案或原型，含实际状态、返回与适配",
       "acceptance": "已有候选实现先对照；功能/文案保留，新增方案待用户审阅",
-      "current_item": "B5-v1 approved",
-      "resume_point": "用户明确恢复后，从蓝牙连接中状态开始，拟编号B6-v1（未创建）；先核对当前状态/源层，再一次展示一张实际稿审批。",
+      "current_item": "B7-v1 candidate; B6-v1 approved",
+      "resume_point": "B7-v1已保存实际图与源层；下一动作只展示本图并由用户具体审批。",
       "accepted_static_versions": [
         "B1-v2",
         "B2-v4",
         "S1-v3.2",
         "B3-v1",
         "B4-v1",
-        "B5-v1"
+        "B5-v1",
+        "B6-v1"
       ],
-      "qualified_static_version": "首页/V4原版例外继续保留；B1/B2/S1/B3/B4/B5逐项通过",
+      "qualified_static_version": "B1/B2/S1/B3/B4/B5/B6通过；首页/V4原版例外保留；B7待批",
       "runtime_acceptance": "not_run",
       "global_typography_rollout_remaining": [
         "其余未展示蓝牙状态",
@@ -65,22 +66,27 @@
   "first_task": "UI-002",
   "independent_work_can_continue_when_shared_interface_blocked": true,
   "planned_tasks_are_not_completed_designs": true,
-  "snapshot_date": "2026-10-14",
+  "snapshot_date": "2026-10-17",
   "paused_by_user": false,
-  "resume_item": "UI002-BLUETOOTH-B6 not_created",
+  "resume_item": "UI002-BLUETOOTH-B7 pending_user_review",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
-  "handoff_requested": true,
+  "handoff_requested": false,
   "automatic_resume_scheduled": false,
   "next_queue": [
     {
       "item": "B6-v1",
       "state": "连接中，设备名与取消",
-      "status": "not_created"
+      "status": "user_approved_recovered"
+    },
+    {
+      "item": "B7-v1",
+      "state": "首次连接失败／重试",
+      "status": "pending_user_review"
     },
     {
       "item": "future Bluetooth states",
-      "state": "失败/重试/权限拒绝与永久拒绝/连接成功短暂提示/再战；设备列表展开及多设备/长名",
+      "state": "权限拒绝与永久拒绝/连接成功短暂提示/再战；设备列表展开及多设备/长名",
       "status": "not_designed_or_not_approved"
     },
     {
