@@ -1,84 +1,91 @@
 {
-  "scope": "r22 D01 source/manual-prefix/spec/document checks only",
+  "scope": "r23 path/defense source/manual-prefix/document checks only",
   "result": "DOCUMENT_CHECKS_COMPLETE_GAME_SPECS_UNRUN",
-  "D01_safety": {
-    "source_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
+  "path_defense": {
+    "source_commit": "e588078339fc256a9737e08a0db8d83322262171",
     "families": [
-      "DS01",
-      "DS02",
-      "DS03",
-      "DS04",
-      "DS05"
+      "PD01",
+      "PD02",
+      "PD03",
+      "PD04",
+      "PD05",
+      "PD06"
     ],
-    "new_manual_prefix_families": 5,
-    "continuation_family": "DS02 continues actual DS01; no independent new opening claimed",
+    "new_manual_prefix_families": 6,
     "new_spec_ids": [
-      "DS-S01",
-      "DS-S02",
-      "DS-S03",
-      "DS-S04",
-      "DS-S05",
-      "DS-S06",
-      "DS-S07",
-      "DS-S08",
-      "DS-S09",
-      "DS-S10",
-      "DS-S11",
-      "DS-S12",
-      "DS-S13",
-      "DS-S14",
-      "DS-S15",
-      "DS-S16",
-      "DS-S17",
-      "DS-S18",
-      "DS-S19",
-      "DS-S20",
-      "DS-S21",
-      "DS-S22",
-      "DS-S23",
-      "DS-S24",
-      "DS-S25",
-      "DS-S26",
-      "DS-S27",
-      "DS-S28"
+      "PD-S01",
+      "PD-S02",
+      "PD-S03",
+      "PD-S04",
+      "PD-S05",
+      "PD-S06",
+      "PD-S07",
+      "PD-S08",
+      "PD-S09",
+      "PD-S10",
+      "PD-S11",
+      "PD-S12",
+      "PD-S13",
+      "PD-S14",
+      "PD-S15",
+      "PD-S16",
+      "PD-S17",
+      "PD-S18",
+      "PD-S19",
+      "PD-S20",
+      "PD-S21",
+      "PD-S22",
+      "PD-S23",
+      "PD-S24",
+      "PD-S25",
+      "PD-S26",
+      "PD-S27",
+      "PD-S28",
+      "PD-S29",
+      "PD-S30",
+      "PD-S31",
+      "PD-S32",
+      "PD-S33",
+      "PD-S34",
+      "PD-S35",
+      "PD-S36"
     ],
-    "unrun_spec_count": 28,
+    "unrun_spec_count": 36,
     "all_spec_status": "UNRUN",
-    "working_section": "8.40",
+    "working_section": "8.42",
     "mode": "half_chaos",
-    "hero_pair": [
-      "H06",
-      "H05"
-    ],
-    "mutation": "D01 only where legally available; ordinary hero skills replaced",
-    "coverage": [
-      "live-warrior return relieves check",
-      "dead-warrior revival relieves check",
-      "still in check rejects entire glass without partial board/cleanse/reload/cost",
-      "initially safe but return exposes king rejects",
-      "in-check bomb rejects, ordinary evasion closes current window, new legal next turn can bomb"
-    ],
-    "old_fixture_gap_mapping": [
-      "ET-S15 -> DS01/DS02/DS03/DS05",
-      "ET-S16 -> DS04"
-    ],
+    "hero_pair": {
+      "red": "H04",
+      "black": "H03"
+    },
+    "mutations_by_family": {
+      "PD01": "M04",
+      "PD02": "M01",
+      "PD03": "M01",
+      "PD04": "M04",
+      "PD05": "M04",
+      "PD06": "M01"
+    },
     "runtime": false,
     "independent_review": false,
-    "verification": "V2 sources plus V1 same-assistant manual geometric inference",
+    "verification": "V2 source contracts; V1 same-assistant manual geometric inference",
+    "coverage": [
+      "completed path deaths retained after final ordinary-defense rebound",
+      "ordinary defense exhausts on interception; enemy formal-end duration separate",
+      "shielded path victim crushed rather than triggering endpoint rebound",
+      "dark rook/horse source stays dark after rebound; path death reveals independently",
+      "concrete legal check evasions and defensive lifetime",
+      "empty source return with normal landing semantics"
+    ],
     "unproved": [
-      "same-window first safe/second unsafe glass natural case",
-      "multiple attack geometry and no-response full search",
-      "independent terminal branches/end-phase new acquisition/full ordering",
-      "actual privacy/clock/dedup/canonical body/pressure/key implementation"
+      "natural positive return-space-conflict or source-specific landing death fixture",
+      "complete source ordering/full legal-response or terminal search",
+      "actual clock/privacy/view/dedup/canonical body/engine implementation",
+      "H16/H05 shared action-tier interface"
     ]
   },
-  "new_spec_count": 28,
+  "new_spec_count": 36,
   "all_new_spec_status": "UNRUN",
-  "old_mutation_specs": {
-    "count": 40,
-    "status": "UNRUN",
-    "ET_S15_S16_fixture_gap_now": "manual source prefixes supplied; no engine pass"
-  },
   "inherited_stage_specs": {
     "H14": 16,
     "H16": 20,
@@ -86,39 +93,43 @@
     "H19_H20": 28,
     "H21": 36,
     "M01_M08_D01": 40,
-    "status": "original scopes/statuses retained, not rerun"
+    "D01_safety": 28,
+    "status": "all original scopes and UNRUN statuses retained, not rerun"
   },
   "new_local_user_rule_confirmations": 0,
-  "new_shared_confirmation_consumption": 1,
-  "existing_D01_confirmations_preserved": 5,
+  "new_shared_confirmation_consumption": 3,
+  "new_shared_ids": [
+    "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+    "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+    "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017"
+  ],
   "game_engine_tests_run": 0,
   "game_code_changes": 0,
   "client_runs": 0,
   "independent_review": false,
   "runtime_verified": false,
   "full_hero_mode_adaptation_verified": false,
-  "working_sections1_through8_39_exact_preserved": true,
+  "working_sections1_through8_41_exact_preserved": true,
   "historical_section9_preserved": true,
-  "previous_r21_target_blobs_match_base": true,
+  "previous_r22_target_blobs_match_base": true,
   "current_collaboration_revision": "2026-10-16.v0.12",
-  "publication_parent_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
-  "main_actual_receiver_source": "c3f74e4d82f0189e20e8cff2b8d24a51fdd9d09d",
-  "r21_or_r22_receiver_reading": null,
+  "publication_parent_commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+  "main_actual_receiver_source": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
+  "r21_r22_r23_receiver_reading": {
+    "r22_stage_metadata_received": true,
+    "full_r21_r22_prefixes_verified": false,
+    "current_r23_received": null
+  },
   "document_checks": {
     "JSON_parse": "checked by preparation",
-    "ordered_unique_DS_ids": 28,
-    "DS_family_sections": 5,
+    "ordered_unique_PD_ids": 36,
+    "PD_family_sections": 6,
     "all_fixed_workline_paths": true,
-    "prior_confirmations_preserved": "checked by preservation verification"
-  },
-  "previous_validation_source": {
-    "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
-    "path": "worklines/half_chaos/VALIDATION.json"
+    "prior_confirmation_arrays_preserved": "checked below"
   },
   "scoring_frozen": true,
   "NET": "paused",
-  "shared_confirmation_id": "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
-  "D01_source_unchanged_after_concurrent_M05_update": true,
-  "old_MU_S15_palace_source_resolved_spec_UNRUN": true,
-  "concurrent_standard_paths_preserved_on_publication": "verify against latest tree"
+  "concurrent_main1_53_preserved": true,
+  "concurrent_standard_H15_confirm_preserved": true,
+  "branch_update_first_attempt": "UNKNOWN; readback showed concurrent standard head, not applied; reconcile before new lease"
 }
