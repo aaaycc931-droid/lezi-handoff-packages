@@ -2,14 +2,14 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-17T20:59:07+08:00",
-  "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
-  "base_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+  "prepared_at_local": "2026-10-17T21:49:00+08:00",
+  "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+  "base_commit": "c0744c657a674a885a04cbbcda0c0b8f2bd32d65",
   "approval_context_source_commit": "c53a6a727b797b128d7aa5651eafc7fc51f1c667",
-  "phase": "shared_wording_scope_and_bounded_H10_source_alignment_no_new_rule",
+  "phase": "bounded_source_review_complete_narrow_candidate_pending_user_decision",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "M04共同文案作用域已记录，M04×H10限定来源复核完成；下一项H02后续刺杀与路径龙鳞边界只做来源复核。",
+  "current_breakpoint": "H02＋M04后续刺杀的路径龙鳞来源复核完成；唯一限定A候选已准备，等待用户明确决定，不自动批准。",
   "confirmed_delta": [],
   "new_user_rule_confirmations": 0,
   "preserved_confirmations": {
@@ -36,116 +36,87 @@
     ],
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
-  "pending_decision": null,
+  "pending_decision": {
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "status": "pending_user_confirmation",
+    "approved": false,
+    "scope": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。",
+    "question": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？"
+  },
   "changes": [
-    "Record original-jieqi/standard/half-chaos joint wording scope with exact original selection and current clarification; no mechanism/keyword delta.",
-    "Complete bounded ordinary M04/H10 source review: public target gate, independent host path death, decoy path victim substitution, original-source cause and atomic close; no global order or action permission.",
-    "Observe actual main adoption of exact prior M04 path-scale A via matching scoped policy and real receiver receipt; unrelated newer H15 policies not adopted.",
-    "Update stale local main pending-decision pointer to latest main1.61 no-active-candidate/next-source-review metadata only; no unseen H15 policy adoption.",
-    "Preserve all 31 ordinary and 11 direct shared gameplay records, H16, original sources, other worklines and all unrun/frozen/paused states."
+    "Complete bounded current H02/M04/H21 and exact original exclusion review; existing approvals do not auto-cover this branch.",
+    "Prepare one three-mode exact H02 later-assassination path-scale A candidate with legal-availability guard and enemy-path H21 example; awaiting user decision.",
+    "Preserve all existing approved rule/wording records, 31 ordinary and11 direct shared confirmations, source archives, other lines, frozen scores and paused NET.",
+    "AP-S01/AP01-AP08 and all earlier game specifications unrun; no implementation/runtime/independent review or automatic messages."
   ],
   "changed_paths": [
-    "rules/confirmed/M04_SHARED_WORDING_20261017.json",
-    "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
-    "rules/shared/03_CURRENT_MUTATIONS.md",
+    "candidates/h02-m04-path-dragon-scale/v1.json",
     "CURRENT_STATE.json",
     "modes/standard/CURRENT_STATE.json",
-    "CONFIRMATION_REGISTER.json",
-    "READ_RECEIPTS.json",
-    "SOURCE_PRIORITY.json",
-    "PENDING_ITEMS.json",
     "NEXT_ACTIONS.json",
-    "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-    "modes/standard/CURRENT_RULES.md",
-    "START_HERE.txt",
+    "PENDING_ITEMS.json",
     "PENDING_DECISION.json",
+    "READ_RECEIPTS.json",
+    "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "START_HERE.txt",
     "RETURN_TO_MAIN.json",
     "PUBLISHED_FILES.json"
   ],
   "file_identities": [
     {
-      "path": "rules/confirmed/M04_SHARED_WORDING_20261017.json",
-      "size": 1536,
-      "sha256": "4013233c5b50a6c19f59eb6ca043f03d7653139307ef4f93fa66c9e745598e7a",
-      "git_blob_sha": "19c1c932353c404c9635cef9ca3974ab1de0c07c"
-    },
-    {
-      "path": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
-      "size": 4517,
-      "sha256": "a4a0027786e7a3abaac2d34c337f38bdfca877714ff6b117a45040cdafe99288",
-      "git_blob_sha": "56b1a3d0b6081d3457f37d16fa5bb3194f456f07"
-    },
-    {
-      "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-      "size": 27398,
-      "sha256": "a0f2f92eeff29295c0651e8a7b835530a69c665cd53340b8b86767f32eb8d1c5",
-      "git_blob_sha": "a0d21deaa3764d757a87c05148f10da5cfe6f03b"
-    },
-    {
       "path": "CURRENT_STATE.json",
-      "size": 29958,
-      "sha256": "be47ffaae1c1d4fed4932dd4d7d59ae1c99347fb63ac7f0d3fe02ba2e992d66d",
-      "git_blob_sha": "c1efd84da273b8779378d2c2f21fbcbf7e023798"
-    },
-    {
-      "path": "modes/standard/CURRENT_STATE.json",
-      "size": 10196,
-      "sha256": "1a447f354b92d5f01e42294d92f9790a288e4c86458267cbc94c24f9d701cdb6",
-      "git_blob_sha": "ea5caf066c24ed93cf4d74bed54772f6c4f81285"
-    },
-    {
-      "path": "CONFIRMATION_REGISTER.json",
-      "size": 68882,
-      "sha256": "415798d6fae1552575459d5c3a1d6979b4889c8233aefed48aa30b3feb0c99b1",
-      "git_blob_sha": "8a24a3b8cdde5eecdd1108c9c157cecee96c54aa"
-    },
-    {
-      "path": "READ_RECEIPTS.json",
-      "size": 70857,
-      "sha256": "88da6f43dc9e5a66abbc344742d63aad225d8d44aadec3fb2fd6303f92bc86bc",
-      "git_blob_sha": "86d7ee9dfba79067e3e332de9eb11e3826be4b2b"
-    },
-    {
-      "path": "SOURCE_PRIORITY.json",
-      "size": 8436,
-      "sha256": "10ad14ea8156d76504ef5a4085e7fcf8d831eaebadd4e8670bbad05b069bbd52",
-      "git_blob_sha": "6eb8654216c1bfb0011fd267eb0da0662f049e03"
-    },
-    {
-      "path": "PENDING_ITEMS.json",
-      "size": 48064,
-      "sha256": "a3434237f0497f886a5319f5e8a1a9fbdf25be262ff4e3ce84df389c4fb6fa15",
-      "git_blob_sha": "31809bb3e33c35c17ea3212b3fc80154b33a647a"
+      "size": 30470,
+      "sha256": "b8128362ce4ab87d91535a51e70d2e6451531a91320903e11c58315af43495fc",
+      "git_blob_sha": "29ccfdb8401863457b6e23861dd9ada5c2af2608"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 3915,
-      "sha256": "d2f507b60eac41857c4c1a520660a8748a2e8c8d04092f9bc22b93b06d364ab4",
-      "git_blob_sha": "42c49290101604c9b14dc6e0fe8ee4b0ff2abaa0"
-    },
-    {
-      "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 247833,
-      "sha256": "618faf6805b2ac6149ea73d81457a6e2cee8a9e3761d4b2392d53ada547c1475",
-      "git_blob_sha": "6e8d7484e5a4104c5510e3fad582e82449a5c127"
-    },
-    {
-      "path": "modes/standard/CURRENT_RULES.md",
-      "size": 9589,
-      "sha256": "12ccc79144baa769db7882a72e7eee71158b4d392e83f1021a3e47dfb1837cf1",
-      "git_blob_sha": "e66abffcc83df7be81ed73f9827147feb9858468"
-    },
-    {
-      "path": "START_HERE.txt",
-      "size": 10465,
-      "sha256": "c9a19b8f8b524ac14658f69b7ffc59afb8274495a87f7f5241dead089d69f278",
-      "git_blob_sha": "ef171e57dcfdba90c1756fd0e7f8711d358a9b46"
+      "size": 4012,
+      "sha256": "19b9921ee42891366f75d360f6bf49d54a905583eafd008824c92d07879530f6",
+      "git_blob_sha": "acad1a53afc7bf235bad6244913091e0a0e6ec12"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 9802,
-      "sha256": "a30bbf4d8885f802d63661184a59e35976826151829f119b06b796382465f331",
-      "git_blob_sha": "2b930a7fa34729b7863a1c9b6d10d356d1f86efc"
+      "size": 11402,
+      "sha256": "431621a5a634aba31298849c7bd51ba6e914acb2fa5a435a6d71beafb339c119",
+      "git_blob_sha": "5a110c80a4457049681552998ef5d57fc877472d"
+    },
+    {
+      "path": "PENDING_ITEMS.json",
+      "size": 49113,
+      "sha256": "7e43b8d0f860233ee66f05662194779c6a9c0f7714de92d5958577dc40b3c629",
+      "git_blob_sha": "811fcaaaf1ec9296abc838debd96e8a1528c88b6"
+    },
+    {
+      "path": "READ_RECEIPTS.json",
+      "size": 74778,
+      "sha256": "8acd7b38c334dba28406c56e89351ade3a9e64a705fc12abbb6af29299b9d0d6",
+      "git_blob_sha": "d59df13a8e908d75c8b7bd335281e4809e6b6dcd"
+    },
+    {
+      "path": "START_HERE.txt",
+      "size": 10949,
+      "sha256": "f7f6165df0ee8b5013534a630cbead717661ae8dfaeb2a0e4819f3ee52ff141d",
+      "git_blob_sha": "ebf5b8f2869accda42ff55319d0bd85510d32e58"
+    },
+    {
+      "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+      "size": 7327,
+      "sha256": "7086f59f60fb77d617bf5e159f30f56226a439a3e901fc07b7f952df64c39aa1",
+      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
+    },
+    {
+      "path": "modes/standard/CURRENT_STATE.json",
+      "size": 10313,
+      "sha256": "3f0715a8a230c4158a29d647838e32821a77e5ac49cfe41f3094681a65821596",
+      "git_blob_sha": "379263397867355dfe4cf8e988f5994da8dd9920"
+    },
+    {
+      "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+      "size": 251395,
+      "sha256": "7db8f8b19368691936a9720f45c496adfa29ee5ff032b32c954227b5f37801cd",
+      "git_blob_sha": "9d5cc9a1ee5866c54697b9abe5c3b94dcfac380e"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
@@ -155,29 +126,25 @@
     "new_gameplay_user_confirmations": 0,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
-    "full_package_verify_dispatch": "not rerun; only hydrated targeted payload/source/protected-scope checks",
+    "full_package_verify_dispatch": "not rerun; source clauses and targeted changed payload/protected-scope checks only",
     "checks": {
-      "ordinary31_exact": true,
-      "all11_direct_shared_records_exact": true,
-      "historical_closeout_exact": true,
-      "existing_work_document_tail_exact": true,
-      "shared_mutation_only_wording_scope_changed": true,
-      "H16_and_core_terminology_untouched": true,
-      "immutable_sources_confirmations_candidates_untouched": true,
-      "three_mode_wording_explicit": true,
-      "no_new_gameplay_approval": true,
-      "next_is_source_review_not_candidate": true,
-      "WD_and_prior_specs_unrun": true,
-      "scoring_NET_unchanged": true,
-      "actual_main_M04_receipt_and_policy_exact": true,
-      "only_standard_directory": true,
+      "candidate_unapproved": true,
+      "one_exact_H02_later_enemy_path_branch": true,
+      "existing_confirmations_and_three_line_wording_unchanged": true,
+      "counts_31_and_11_retained": true,
+      "work_approved_and_historical_tail_exact": true,
+      "all_current_shared_rule_bodies_original_confirmations_and_existing_candidates_untouched": true,
+      "frozen_scoring_NET_unchanged": true,
+      "AP_and_prior_specs_unrun": true,
+      "no_new_gameplay_confirmations": true,
+      "no_implementation_runtime_or_independent_claims": true,
+      "only_standard_paths": true,
       "JSON_parse": true,
-      "concurrent_paths_no_overlap": true,
-      "latest_main_pointer_metadata_only": true
+      "concurrent_changes_no_overlap_and_sources_unchanged": true
     },
     "game_engine_runs": 0,
     "independent_review": false,
-    "payloads_checked": 14
+    "payloads_checked": 9
   },
   "unrun": [
     "WC01-WC11",
@@ -205,7 +172,8 @@
     "AG-S01/AG01-AG08",
     "PS-S01/PS01-PS08",
     "EI-S01-EI-S04/EI01-EI08",
-    "WD01-WD08"
+    "WD01-WD08",
+    "AP-S01/AP01-AP08"
   ],
   "shared_coordination": [
     {
@@ -373,87 +341,39 @@
         "half_chaos"
       ],
       "mechanic_delta": 0
+    },
+    {
+      "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "status": "candidate_prepared_pending_user_decision_not_approved",
+      "source": "candidates/h02-m04-path-dragon-scale/v1.json",
+      "scope": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。",
+      "question": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？",
+      "approved": false
     }
   ],
   "remote_reconciliation": {
-    "parent": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
-    "base_tree": "2170df9c9d524630a49725dc8cd8db593fe17163",
-    "read_source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
-    "concurrent_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
-    "concurrent_message": "ui: add B8 retryable permission-denial candidate and editable layers",
-    "changed_blob_paths": [
+    "parent": "c0744c657a674a885a04cbbcda0c0b8f2bd32d65",
+    "base_tree": "c8bcce2137c3800982932f254a5af0d24c80aec5",
+    "read_source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+    "concurrent_message": "ui: record user approval of B8 retryable permission-denial artwork",
+    "concurrent_changed_blob_paths": [
       "START_UI.txt",
-      "assets/ui/INDEX.json",
       "worklines/ui/APPROVAL_REGISTER.json",
       "worklines/ui/APPROVED_INDEX.json",
       "worklines/ui/CANDIDATE_RESTORE.json",
       "worklines/ui/CURRENT_STATE.json",
       "worklines/ui/RETURN_TO_MAIN.json",
+      "worklines/ui/SOURCE_STATUS_OVERRIDES.json",
       "worklines/ui/START_HERE.txt",
-      "worklines/ui/TASKS.json",
-      "worklines/ui/UI_NEXT_TASKS.json",
-      "worklines/ui/restore_task.py",
-      "assets/ui/28f261bc39168b157c9dc1e1ca14dba2fe1f5a47d992d8fb1094a4b1ec3a404c.json",
-      "assets/ui/2f0c0fac6a3dfe64c4d610286214df291c34f6b4d03dced432399718d388227f.png",
-      "assets/ui/546624c85d0b0502294134c9678a4465def245b155a8f226b335c50f04c24337.md",
-      "assets/ui/56ab835dc291ac74394b0e09625a626264311de8a0d9361b97f58f7d31ab87de.png",
-      "assets/ui/62e09ae967c2e1299791e9804c83d2f324e586b53f0c38a3b866517dcdf62412.json",
-      "assets/ui/647f981f84db280c8ebad2bae332341dc2ac72ad7dde6868b96791f058a23363.json",
-      "assets/ui/7bcfb19eec75a7e2d116bd96a5a162d7217f3b0496c426c30167b4eb8b251b5c.json",
-      "assets/ui/86027d9d88638d75deb04595fd34db8bf4e58c24fabe573ce4ee0a84202f9e1c.svg",
-      "assets/ui/b8ef9c24778ab13b5db24cb8384af531a12a15ffafa0986e50028e85ad90e935.json",
-      "assets/ui/e6552717d22654f8610d968c378be3230f50cbba0cfefca1a40e382e3d88a4bd.json",
-      "assets/ui/e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4.png",
-      "assets/ui/ead10f6d540f8d755e0343121945503bcbef845e54257f58c90297f4500819e4.json",
-      "assets/ui/ead332fa7c5c5b4beaf34f75b25c104cbb0447f43d728afaa4b1f3c2abc4960f.json",
-      "assets/ui/eb54b3533b41adb78745a566cc42fa99ae8497635637672fe536f41c06ee21ec.cjs",
-      "worklines/ui/candidates/B8/v1/README.md",
-      "worklines/ui/candidates/B8/v1/SOURCE_DEPENDENCIES.json",
-      "worklines/ui/candidates/B8/v1/compose.cjs",
-      "worklines/ui/candidates/B8/v1/evidence/allowed-mask.png",
-      "worklines/ui/candidates/B8/v1/evidence/pixel-check.json",
-      "worklines/ui/candidates/B8/v1/evidence/regions.json",
-      "worklines/ui/candidates/B8/v1/evidence/revision.json",
-      "worklines/ui/candidates/B8/v1/evidence/visual-review.json",
-      "worklines/ui/candidates/B8/v1/export-glyphs.py",
-      "worklines/ui/candidates/B8/v1/layers/b8-real-text-layer.png",
-      "worklines/ui/candidates/B8/v1/layers/b8-real-text-layer.svg",
-      "worklines/ui/candidates/B8/v1/layers/real-glyphs.json",
-      "worklines/ui/candidates/B8/v1/lezi-bluetooth-B8-v1.png",
-      "worklines/ui/candidates/B8/v1/parameters.json",
-      "worklines/ui/candidates/B8/v1/source-behavior-excerpts.json"
+      "worklines/ui/UI_NEXT_TASKS.json"
     ],
     "overlapping_payload_paths": [],
-    "new_UI_body_read_or_adopted": false,
+    "relevant_sources_changed": false,
+    "other_line_source_adoption_claimed": false,
     "other_lines_preserved_in_base_tree": true,
-    "original_confirmations_archives_unchanged": true,
-    "core_terms_H16_unchanged": true,
-    "second_concurrent_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
-    "second_concurrent_message": "docs(main): confirm guarded H15 H06 prestart unused restoration; preserve scoped closeout and B8 metadata",
-    "second_concurrent_changed_blob_paths": [
-      "CURRENT_HANDOFF.json",
-      "START_HERE.md",
-      "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-      "worklines/main/ADJUDICATION.json",
-      "worklines/main/CURRENT_STATE.json",
-      "worklines/main/PENDING_DECISION.json",
-      "worklines/main/READ_RECEIPTS.json",
-      "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
-      "worklines/main/RETURN_TO_MAIN.json",
-      "worklines/main/SHARED_COORDINATION.json",
-      "worklines/main/SOURCE_MAP.json",
-      "worklines/main/START_HERE.txt",
-      "worklines/main/VALIDATION.json"
-    ],
-    "new_main_H15_source_policy_read_or_adopted": false,
-    "failed_update": {
-      "candidate_commit": "e9edd59179f1734e13f17879060809c4c92b9920",
-      "response": "GitHubGraphQLAPIError UNKNOWN",
-      "actual_head_after_read": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
-      "publication_of_failed_attempt_claimed": false
-    }
+    "current_shared_rules_and_original_confirmations_unchanged": true
   },
-  "implementation_status": "shared_wording_scope_and_bounded_H10_source_review_only_no_game_code_or_engine",
+  "implementation_status": "bounded_source_review_and_pending_candidate_only_no_game_code_or_engine",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -466,97 +386,86 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "Three-line wording scope clarification and next bounded M04/H10 source review",
+    "audit_trigger": "Next-step H02/M04 path-scale source review, prepare concrete undecided branch",
     "risk_level": "high_project_rule_source; reversible_document_action",
     "known_facts": [
       {
-        "id": "WD-F1",
-        "source": "rules/shared/03_CURRENT_MUTATIONS.md#M04; work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
-        "claim": "Exactly one ground path body is subject to M04 independent crush; ordinary endpoint permissions are not expanded, including public generals."
+        "id": "AP-F1",
+        "source": "rules/shared/02_CURRENT_HEROES.md#H02; rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+        "claim": "后续刺杀可读取原合法M04一地面路径几何，路径独立按M04、终点按H02；该几何确认明确排除路径免疫后的路线完成。"
       },
       {
-        "id": "WD-F2",
-        "source": "rules/shared/02_CURRENT_HEROES.md#H10影",
-        "claim": "Secret host uses its public body permissions; no target protection or permission leak. Independent actual destruction kills its resident true general."
+        "id": "AP-F2",
+        "source": "rules/shared/03_CURRENT_MUTATIONS.md#M04; rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+        "claim": "普通M04唯一路径龙鳞存活后完成原进攻的A已确认，但原guard及排除项明确不包含H02发动/后续刺杀。"
       },
       {
-        "id": "WD-F3",
-        "source": "rules/shared/02_CURRENT_HEROES.md#H10流; sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-09_WIND_FLOW_CASUALTY.md",
-        "claim": "Surface-lethal decoy substitutes one actual host victim if host has not independently died in same atom; true general detaches first; original lethal source retained."
+        "id": "AP-F3",
+        "source": "rules/shared/02_CURRENT_HEROES.md#H21无敌; sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+        "claim": "龙鳞能阻止一次路径碾碎；终点龙鳞仍能拦截刺杀并使地面进攻者返回，不是刺杀通用无视盾。"
       },
       {
-        "id": "WD-F4",
-        "source": "rules/shared/02_CURRENT_HEROES.md#H10流舞; sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-04_WIND_RETURN.md",
-        "claim": "Ordinary path crush does not grant dance. Ground occupancy causes suffocation without pushing occupier; executor return is specific to judgment, not universal."
-      },
-      {
-        "id": "WD-F5",
-        "source": "rules/shared/01_CURRENT_RULES.md#2.4-2.5",
-        "claim": "Complete already committed atom before final terminal judgment; both actual true generals dead at close means mutual_destruction."
+        "id": "AP-F4",
+        "source": "rules/shared/01_CURRENT_RULES.md#1.1A",
+        "claim": "路径碾碎与进攻本体终点击杀分记来源，不能把路径棋因一次碾碎存活改成又受一次刺杀。"
       }
     ],
     "user_statements": [
       {
-        "quote": "这个文案统一是三线共同修改，现在进行下一步",
-        "at_local": "2026-10-17T20:53:29+08:00",
-        "scope": "Clarifies shared wording across three game worklines; authorizes next bounded source review, not new gameplay approval."
+        "quote": "进行下一步",
+        "at_local": "2026-10-17T21:45:41+08:00",
+        "scope": "Continue bounded source review and prepare concrete candidate if needed; not gameplay approval."
       }
     ],
     "claim_register": [
       {
-        "claim": "Current M04 description jointly applies to three modes",
-        "type": "explicit_user_scope_clarification",
+        "claim": "Existing normal M04 A and H02 geometry explicitly exclude this combined path-scale completion",
+        "type": "source_fact",
         "verification": "V2"
       },
       {
-        "claim": "Guarded H10 host/decoy M04 final results",
-        "type": "same_assistant_conditional_source_composition",
-        "verification": "V1 from V2 sources, not joint runtime proof"
-      },
-      {
-        "claim": "Main actually adopted exact prior path-scale A",
-        "type": "actual_receiver_record_and_policy_correspondence",
-        "verification": "V2 scoped receipt/policy/original comparison"
+        "claim": "Proposed extension continues route and uses H02 only at endpoint",
+        "type": "pending_design_recommendation",
+        "verification": "V1, not approved"
       }
     ],
     "ai_interpretations": [
-      "Existing clauses suffice for these guarded cases; no new gameplay choice or all-mode mechanic acceptance."
+      "Use separate minimal scope decision because both original approval boundaries exclude it; don't reopen their approved bodies."
     ],
     "assumptions": [
-      "An originally legal standard normal M04 attack; revealed true normal-control ground rook; one revealed ground nonroyal path body that is the enemy H10 secret host; legal unprotected revealed enemy nonroyal endpoint; no other source intervention. Full natural prefix and engine not proven.",
-      "An originally legal standard normal M04 attack; one revealed ground public H10 decoy on path; its host alive off path and endpoint and not independently destroyed in same atom; revealed legal enemy nonroyal unprotected endpoint; all public permissions, final own-royal safety and landing gates hold; no immunity/other direct triggers.",
-      "Public decoy proposed as ordinary normal-M04 direct endpoint."
+      "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。"
     ],
     "unknowns": [
-      "No full legal natural prefix, engine, independent review or privacy-channel validation.",
-      "No new permission for ordinary M04 to target public decoy/general endpoint.",
-      "No H02 activation/assassination, protection/immunity versus flow priority, multi-source occupation/return/trap or H06/H11 history resolution.",
-      "No all-mode mechanics acceptance; three-mode scope clarification applies only to wording.",
-      "No reliance on old code/tests as current rule approval or current runtime proof."
+      "H02发动当回合及发动成功/失败窗口、失败扣次或回弹顺序",
+      "终点龙鳞/普通防御叠加/龙爪完整顺序；终点无形或特殊直接指定联合分支",
+      "其他或永久碾碎免疫、不同盾、己方/暗置/隐藏阵营路径棋",
+      "将帅/影武者/H10宿主与真帅承伤、特殊空间/临时操控/揭示倒戈",
+      "返回占格/陷阱/历史恢复、完整王安全终局搜索/字段/计时接口",
+      "新英雄/畸变入池、第二畸变、额外行动或时限刷新",
+      "游戏代码、引擎通过、独立复核、评分恢复或NET启动"
     ],
     "competing_explanations": [
-      "Secret host public body permissions differ from decoy public-general permissions; they must not be merged into one target case.",
-      "Old code/general-target example may appear to permit decoy endpoint but current explicit ordinary target restriction controls."
+      "A keeps the current path-effect/endpoint-source split consistent with ordinary M04; requires new scoped user choice.",
+      "A cannot be treated as already approved merely because normal M04 A and H02 geometry are each confirmed; rejection leaves the branch pending."
     ],
     "falsification_conditions": [
-      "Any later explicit current source contradicts the guarded composition.",
-      "An excluded source changes permission, immunity, actual victim or final royal safety."
+      "A later explicit source already decides this exact branch",
+      "Any original mode/hero/target/safety availability guard fails"
     ],
-    "verification_status": "partial",
-    "action_boundary": "Ordinary fixed documents/review/shared wording origin and return only; no immutable original, other receiver draft or engine modifications.",
+    "verification_status": "partial_pending_user_choice",
+    "action_boundary": "Standard-line pending candidate/source receipts/working and state documents only; current confirmed shared rule bodies and original confirmations untouched.",
     "failure_conditions": [
-      "Treat continuation as gameplay approval",
-      "Use old code direct-general endpoint exception as current permission",
-      "Count decoy and host as two victims or host substitution as a second remote attack",
-      "Grant path-crush flow dance or universal executor return",
-      "Claim full natural prefix/independent/runtime/privacy acceptance"
+      "Treat next-step request as approval",
+      "Apply H02 bypass to path, hit path twice, or log a false path death",
+      "Sneak in endpoint multiple-defense or attack/activation failure policy",
+      "Claim full natural prefix or engine/independent proof"
     ],
-    "residual_risk": "Guarded composition remains unrun; multi-source ordering/protection/history unresolved.",
-    "next_validation_action": "读取现行H02后续刺杀、M04及原路径龙鳞限定确认，先核组合合法性和已有来源；普通M04的A不直接外推为H02特殊进攻。只有仍缺明确来源时才恢复一个具体候选交用户决定。",
+    "residual_risk": "Conditional example, no complete legal prefix; original route and hero availability remain required.",
+    "next_validation_action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
     "action_resilience": {
-      "maximum_exposure": "Reversible scoped standard documentation commit",
-      "stop_conditions": "Overlapping concurrent edit or later explicit source",
-      "recovery": "Normal scoped follow-up/revert preserving other line changes; no force reset."
+      "maximum_exposure": "Reversible bounded project-document commit",
+      "stop_conditions": "Overlapping remote edit or new explicit current source",
+      "recovery": "Normal scoped follow-up/revert preserving concurrent line changes; no force reset."
     }
   },
   "delivery": {
@@ -569,12 +478,9 @@
   "shared_coordination_consumed": {
     "new_direct_shared_gameplay_confirmations": 0,
     "new_ordinary_confirmations": 0,
-    "main1_54_existing_source_receipts_verified": true,
-    "H02_M04_geometry_candidate_approved": false,
-    "main_display_candidate_approved": false,
+    "new_rule_candidate": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
     "other_worklines_stopped": false,
-    "current_M04_exact_main_receipt_verified": true,
-    "current_main_H15_metadata_only": true
+    "current_main_new_policy_adopted": false
   },
   "collaboration_adopted": {
     "working_revision": "2026-10-17.v0.13",
@@ -1179,7 +1085,7 @@
     }
   ],
   "session_scope_note": "Current conversation approval only; previous session increments remain preserved with original confirmation sources and in previous_session_*; historical session_closeout object unchanged.",
-  "publication_parent_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+  "publication_parent_commit": "c0744c657a674a885a04cbbcda0c0b8f2bd32d65",
   "received_shared_delta": [],
   "observed_main_H02_M04_receipt": {
     "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
@@ -1223,11 +1129,13 @@
     }
   },
   "next_task": {
-    "id": "NEXT-STD-H02-M04-PATH-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "H02后续刺杀与M04路径龙鳞存活的完成边界",
-    "action": "读取现行H02后续刺杀、M04及原路径龙鳞限定确认，先核组合合法性和已有来源；普通M04的A不直接外推为H02特殊进攻。只有仍缺明确来源时才恢复一个具体候选交用户决定。",
-    "status": "source_review_pending_no_candidate_approval",
-    "pending_is_not_approved": true
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
+    "action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false
   },
   "terminology": {
     "M04_charge_word": "Existing descriptive wording in prior M04 text; not a new global keyword",
@@ -1374,34 +1282,16 @@
     "scope": "Exact original normal M04 path-scale A only; all exclusions retained; no new local gameplay confirmation."
   },
   "current_main_metadata_observed": {
-    "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+    "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
     "path": "worklines/main/CURRENT_STATE.json",
     "adjudication_version": "1.61",
     "pending_decision": null,
     "next_action": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
     "latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "read_scope": "Current-state and pending ID/status/next metadata only; no new H15 rule-policy/original-source adoption.",
+    "read_scope": "Current main1.61 status/pending/next metadata unchanged from previous scoped observation; newer H15 full sources not adopted.",
     "newer_H15_confirmation_adopted_here": false
   },
-  "shared_wording_delta": {
-    "id": "WORDING-THREE-MODE-M04-DESCRIPTION-20261017",
-    "source": "rules/confirmed/M04_SHARED_WORDING_20261017.json",
-    "current_text": "战车隔一枚地面棋的【进攻】",
-    "modes": [
-      "original_jieqi",
-      "standard_xiangqi",
-      "half_chaos"
-    ],
-    "mechanic_delta": 0,
-    "new_gameplay_confirmations": 0,
-    "source_instruction": {
-      "quote": "这个文案统一是三线共同修改，现在进行下一步",
-      "at_local": "2026-10-17T20:53:29+08:00",
-      "scope": "Clarifies shared wording across three game worklines; authorizes next bounded source review, not new gameplay approval."
-    },
-    "recipient_reading_verified": null,
-    "recipient_adoption_verified": null
-  },
+  "shared_wording_delta": null,
   "pending_shared_wording_receipt_scope": [
     {
       "id": "WORDING-THREE-MODE-M04-DESCRIPTION-20261017",
@@ -1499,5 +1389,69 @@
       "EI07 no extra action/refund/deadline refresh/false death duplication",
       "EI08 conditional final-state reading only; no full source-order or engine proof"
     ]
+  },
+  "source_review": {
+    "id": "STD-H02-M04-PATH-SCALE-SOURCE-REVIEW",
+    "status": "complete_gap_narrowed_pending_choice",
+    "facts": [
+      {
+        "id": "AP-F1",
+        "source": "rules/shared/02_CURRENT_HEROES.md#H02; rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+        "claim": "后续刺杀可读取原合法M04一地面路径几何，路径独立按M04、终点按H02；该几何确认明确排除路径免疫后的路线完成。"
+      },
+      {
+        "id": "AP-F2",
+        "source": "rules/shared/03_CURRENT_MUTATIONS.md#M04; rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+        "claim": "普通M04唯一路径龙鳞存活后完成原进攻的A已确认，但原guard及排除项明确不包含H02发动/后续刺杀。"
+      },
+      {
+        "id": "AP-F3",
+        "source": "rules/shared/02_CURRENT_HEROES.md#H21无敌; sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+        "claim": "龙鳞能阻止一次路径碾碎；终点龙鳞仍能拦截刺杀并使地面进攻者返回，不是刺杀通用无视盾。"
+      },
+      {
+        "id": "AP-F4",
+        "source": "rules/shared/01_CURRENT_RULES.md#1.1A",
+        "claim": "路径碾碎与进攻本体终点击杀分记来源，不能把路径棋因一次碾碎存活改成又受一次刺杀。"
+      }
+    ],
+    "gap": {
+      "question": "普通M04已确认的路径龙鳞存活后继续处理终点，是否延用于本次H02有效后续刺杀？",
+      "existing_approvals_combined_do_not_approve_this_scope": true,
+      "reason": "两个原确认均明确把此交叉留待核；不能以继续或源组合推演当批准。",
+      "prior_normal_M04_A_unchanged": true
+    },
+    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "rule_delta_approved": 0,
+    "new_user_confirmation": false,
+    "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+    "verification": {
+      "source_clauses": "V2 current full related rule sections and exact original confirmations",
+      "proposal_and_example": "V1 same-assistant conditional design, pending user choice",
+      "full_natural_prefix": false,
+      "independent_review": false,
+      "game_code_changes": 0,
+      "engine_runs": 0,
+      "AP_S01_AP01_AP08": "all unrun"
+    }
+  },
+  "previous_shared_wording_delta": {
+    "id": "WORDING-THREE-MODE-M04-DESCRIPTION-20261017",
+    "source": "rules/confirmed/M04_SHARED_WORDING_20261017.json",
+    "current_text": "战车隔一枚地面棋的【进攻】",
+    "modes": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "mechanic_delta": 0,
+    "new_gameplay_confirmations": 0,
+    "source_instruction": {
+      "quote": "这个文案统一是三线共同修改，现在进行下一步",
+      "at_local": "2026-10-17T20:53:29+08:00",
+      "scope": "Clarifies shared wording across three game worklines; authorizes next bounded source review, not new gameplay approval."
+    },
+    "recipient_reading_verified": null,
+    "recipient_adoption_verified": null
   }
 }

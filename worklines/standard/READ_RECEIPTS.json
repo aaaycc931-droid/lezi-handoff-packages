@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-17T20:59:07+08:00",
+  "recorded_at_local": "2026-10-17T21:49:00+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -451,7 +451,18 @@
       "PART-9_VERSION_HISTORY full"
     ],
     "adoption_scope": "Current ordinary-line source activation, scope inheritance, approved baseline, pending versus approval, source-bound incremental handoff and verification controls only.",
-    "effectiveness_verified": false
+    "effectiveness_verified": false,
+    "latest_identity_recheck": {
+      "commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+      "working_revision": "2026-10-17.v0.13",
+      "formal_baseline": "1.8.0",
+      "body_blob": "54e800ebd02a83ded24a4c076c759c8193767fd5",
+      "index_and_tree_identity_match_prior_actually_read_body": true,
+      "prior_full_applicable_module_reading_reused": true,
+      "project_work_agreement_reread_full": true,
+      "workflow_blob_unchanged": "4fdcafda6115de120467628d9837064910c1f36b",
+      "new_complete_body_reread_claimed": false
+    }
   },
   "transport_integrity_only": {
     "restored_standard_files": 289,
@@ -480,90 +491,62 @@
     "selected_option": "A"
   },
   "current_task_reading": {
-    "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
     "user_instruction": {
-      "quote": "这个文案统一是三线共同修改，现在进行下一步",
-      "at_local": "2026-10-17T20:53:29+08:00",
-      "scope": "Clarifies shared wording across three game worklines; authorizes next bounded source review, not new gameplay approval."
+      "quote": "进行下一步",
+      "at_local": "2026-10-17T21:45:41+08:00",
+      "scope": "Continue bounded source review and prepare concrete candidate if needed; not gameplay approval."
     },
     "files": [
       {
-        "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "Full current M04"
+        "path": "rules/shared/02_CURRENT_HEROES.md",
+        "read_scope": "Complete current H02 and H21 (including invincible) sections"
       },
       {
-        "path": "rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "Full H10 shadow/flow/dance"
+        "path": "rules/shared/03_CURRENT_MUTATIONS.md",
+        "read_scope": "Complete M04 including exact normal path-scale/H02 exclusions and common wording"
       },
       {
         "path": "rules/shared/01_CURRENT_RULES.md",
-        "read_scope": "Full related target permissions,1.1A,2.4-2.5 and actual-destroyed record clauses"
+        "read_scope": "Full1.1A related attack endpoint/path source boundary"
       },
       {
-        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "Full ordinary confirmed M04 body; current top progress, not full all-history reread"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-04_WIND_RETURN.md",
-        "read_scope": "Full original confirmed update"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-09_WIND_FLOW_CASUALTY.md",
-        "read_scope": "Full original confirmed update"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/handoff/current/23_HERO_CROSS_SETTLEMENT_2026-10-08.md",
-        "read_scope": "Full historical report, not current runtime"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/game.ts",
-        "read_scope": "Complete normal move validation/path/endpoint/landing/death window380-530 and automatic execution745-817; static only"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/settlement.ts",
-        "read_scope": "Related full closeDirectDeaths and resolveWindReturn208-280; static only"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/rules.ts",
-        "read_scope": "Complete targetEligible196-216; static discrepancy not adopted"
-      },
-      {
-        "path": "../main/READ_RECEIPTS.json",
-        "read_scope": "Complete latest_by_source.standard and current_M04_confirmation; no claims for other receiver lines"
-      },
-      {
-        "path": "../main/ADJUDICATION.json",
-        "read_scope": "Complete current M04 path-scale policy and matching external-adoption record only"
+        "path": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+        "read_scope": "Full original confirmation/guard/policy/exclusions"
       },
       {
         "path": "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
-        "read_scope": "Full original exact comparison against main scoped policy"
+        "read_scope": "Full original confirmation/guard/policy/exclusions"
       },
       {
-        "path": "../main/PENDING_DECISION.json",
-        "read_scope": "Current candidate ID/path/status, next task only; no unseen H15 confirmation adoption"
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+        "read_scope": "Full original confirmed update"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
+        "read_scope": "Full2.1/2.2, related historical H02 5.1-5.3 and M04 10.1-10.3; obsolete strong-strike/stealth/path-clearing rules not adopted"
+      },
+      {
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "read_scope": "Full confirmed H21 common/invincible and exact H02 geometry/normal M04 path-scale sections; current progress; not full historical corpus reread"
       },
       {
         "path": "../main/CURRENT_STATE.json",
-        "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
-        "read_scope": "Latest1.61 current status/pending/next only"
-      },
-      {
-        "path": "../main/PENDING_DECISION.json",
-        "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
-        "read_scope": "Latest no-active-candidate and next work item only; no new H15 policy/original adoption"
+        "read_scope": "Current1.61 status/pending/next metadata only; unchanged from previous observation"
       }
     ],
     "adopted_scope": [
-      "Three-mode common M04 description only, mechanic delta0",
-      "Existing H10 host/decoy source facts and three bounded ordinary M04 conditional outcomes"
+      "Existing approved source clauses and exact original exclusions retained",
+      "Current task produces pending proposal only, not an approved rule"
     ],
     "not_adopted": [
-      "No full legal natural prefix, engine, independent review or privacy-channel validation.",
-      "No new permission for ordinary M04 to target public decoy/general endpoint.",
-      "No H02 activation/assassination, protection/immunity versus flow priority, multi-source occupation/return/trap or H06/H11 history resolution.",
-      "No all-mode mechanics acceptance; three-mode scope clarification applies only to wording.",
-      "No reliance on old code/tests as current rule approval or current runtime proof."
+      "H02发动当回合及发动成功/失败窗口、失败扣次或回弹顺序",
+      "终点龙鳞/普通防御叠加/龙爪完整顺序；终点无形或特殊直接指定联合分支",
+      "其他或永久碾碎免疫、不同盾、己方/暗置/隐藏阵营路径棋",
+      "将帅/影武者/H10宿主与真帅承伤、特殊空间/临时操控/揭示倒戈",
+      "返回占格/陷阱/历史恢复、完整王安全终局搜索/字段/计时接口",
+      "新英雄/畸变入池、第二畸变、额外行动或时限刷新",
+      "游戏代码、引擎通过、独立复核、评分恢复或NET启动"
     ],
     "new_gameplay_user_confirmations": 0,
     "game_engine_runs": 0
@@ -1427,5 +1410,101 @@
     "latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "read_scope": "Current-state and pending ID/status/next metadata only; no new H15 rule-policy/original-source adoption.",
     "newer_H15_confirmation_adopted_here": false
+  },
+  "previous_source_review_reading": {
+    "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "user_instruction": {
+      "quote": "这个文案统一是三线共同修改，现在进行下一步",
+      "at_local": "2026-10-17T20:53:29+08:00",
+      "scope": "Clarifies shared wording across three game worklines; authorizes next bounded source review, not new gameplay approval."
+    },
+    "files": [
+      {
+        "path": "rules/shared/03_CURRENT_MUTATIONS.md",
+        "read_scope": "Full current M04"
+      },
+      {
+        "path": "rules/shared/02_CURRENT_HEROES.md",
+        "read_scope": "Full H10 shadow/flow/dance"
+      },
+      {
+        "path": "rules/shared/01_CURRENT_RULES.md",
+        "read_scope": "Full related target permissions,1.1A,2.4-2.5 and actual-destroyed record clauses"
+      },
+      {
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "read_scope": "Full ordinary confirmed M04 body; current top progress, not full all-history reread"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-04_WIND_RETURN.md",
+        "read_scope": "Full original confirmed update"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-09_WIND_FLOW_CASUALTY.md",
+        "read_scope": "Full original confirmed update"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/handoff/current/23_HERO_CROSS_SETTLEMENT_2026-10-08.md",
+        "read_scope": "Full historical report, not current runtime"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/game.ts",
+        "read_scope": "Complete normal move validation/path/endpoint/landing/death window380-530 and automatic execution745-817; static only"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/settlement.ts",
+        "read_scope": "Related full closeDirectDeaths and resolveWindReturn208-280; static only"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/rules.ts",
+        "read_scope": "Complete targetEligible196-216; static discrepancy not adopted"
+      },
+      {
+        "path": "../main/READ_RECEIPTS.json",
+        "read_scope": "Complete latest_by_source.standard and current_M04_confirmation; no claims for other receiver lines"
+      },
+      {
+        "path": "../main/ADJUDICATION.json",
+        "read_scope": "Complete current M04 path-scale policy and matching external-adoption record only"
+      },
+      {
+        "path": "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+        "read_scope": "Full original exact comparison against main scoped policy"
+      },
+      {
+        "path": "../main/PENDING_DECISION.json",
+        "read_scope": "Current candidate ID/path/status, next task only; no unseen H15 confirmation adoption"
+      },
+      {
+        "path": "../main/CURRENT_STATE.json",
+        "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+        "read_scope": "Latest1.61 current status/pending/next only"
+      },
+      {
+        "path": "../main/PENDING_DECISION.json",
+        "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+        "read_scope": "Latest no-active-candidate and next work item only; no new H15 policy/original adoption"
+      }
+    ],
+    "adopted_scope": [
+      "Three-mode common M04 description only, mechanic delta0",
+      "Existing H10 host/decoy source facts and three bounded ordinary M04 conditional outcomes"
+    ],
+    "not_adopted": [
+      "No full legal natural prefix, engine, independent review or privacy-channel validation.",
+      "No new permission for ordinary M04 to target public decoy/general endpoint.",
+      "No H02 activation/assassination, protection/immunity versus flow priority, multi-source occupation/return/trap or H06/H11 history resolution.",
+      "No all-mode mechanics acceptance; three-mode scope clarification applies only to wording.",
+      "No reliance on old code/tests as current rule approval or current runtime proof."
+    ],
+    "new_gameplay_user_confirmations": 0,
+    "game_engine_runs": 0
+  },
+  "latest_source_review": {
+    "id": "STD-H02-M04-PATH-SCALE-SOURCE-REVIEW",
+    "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+    "status": "complete_gap_narrowed_pending_user_choice",
+    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "new_gameplay_confirmation": false
   }
 }

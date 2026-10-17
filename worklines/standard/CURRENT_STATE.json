@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "M04_three_line_wording_scope_recorded_H10_limited_source_alignment_complete",
+  "status": "H02_M04_path_scale_source_review_complete_specific_A_pending",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -35,11 +35,13 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-H02-M04-PATH-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "H02后续刺杀与M04路径龙鳞存活的完成边界",
-    "action": "读取现行H02后续刺杀、M04及原路径龙鳞限定确认，先核组合合法性和已有来源；普通M04的A不直接外推为H02特殊进攻。只有仍缺明确来源时才恢复一个具体候选交用户决定。",
-    "status": "source_review_pending_no_candidate_approval",
-    "pending_is_not_approved": true
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
+    "action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false
   },
   "external_delivery": {
     "prepared_here": true,
@@ -87,8 +89,8 @@
   "NET": "paused",
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
-  "limitation_audit_status": "partial",
-  "verification_level": "V2 relevant current and original clauses; V1 guarded H10 final-result composition; no full natural prefix, independent review or engine proof",
+  "limitation_audit_status": "partial_candidate_pending",
+  "verification_level": "V2 exact related source clauses/approved exclusions; V1 conditional proposal/example only; AP-S01/AP01-AP08 unrun",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -116,7 +118,8 @@
     "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
     "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
     "rules/confirmed/M04_SHARED_WORDING_20261017.json",
-    "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md"
+    "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
+    "candidates/h02-m04-path-dragon-scale/v1.json"
   ],
   "account_routing": {
     "this_account": [
@@ -129,10 +132,10 @@
     ]
   },
   "publication_scope": "PUBLICATION_SCOPE.json",
-  "updated_at_local": "2026-10-17T20:59:07+08:00",
-  "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
-  "publication_parent_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
-  "phase": "shared_wording_scope_and_bounded_H10_source_alignment_no_new_rule",
+  "updated_at_local": "2026-10-17T21:49:00+08:00",
+  "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+  "publication_parent_commit": "c0744c657a674a885a04cbbcda0c0b8f2bd32d65",
+  "phase": "bounded_source_review_complete_narrow_candidate_pending_user_decision",
   "new_rule_confirmations_this_round": 0,
   "retained_source_round_confirmations": 21,
   "M04_status": "confirmed_design_not_implemented_or_tested",
@@ -187,9 +190,9 @@
   "M05_status": "confirmed_design_not_implemented_or_tested",
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
   "latest_user_instruction": {
-    "quote": "这个文案统一是三线共同修改，现在进行下一步",
-    "at_local": "2026-10-17T20:53:29+08:00",
-    "scope": "Clarifies shared wording across three game worklines; authorizes next bounded source review, not new gameplay approval."
+    "quote": "进行下一步",
+    "at_local": "2026-10-17T21:45:41+08:00",
+    "scope": "Continue bounded source review and prepare concrete candidate if needed; not gameplay approval."
   },
   "new_rule_confirmations_since_dispatch": 10,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
@@ -483,13 +486,13 @@
     "verification": "V2 source clauses / V1 guarded composition only; WD01-WD08 unrun"
   },
   "current_main_metadata_observed": {
-    "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+    "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
     "path": "worklines/main/CURRENT_STATE.json",
     "adjudication_version": "1.61",
     "pending_decision": null,
     "next_action": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
     "latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "read_scope": "Current-state and pending ID/status/next metadata only; no new H15 rule-policy/original-source adoption.",
+    "read_scope": "Current main1.61 status/pending/next metadata unchanged from previous scoped observation; newer H15 full sources not adopted.",
     "newer_H15_confirmation_adopted_here": false
   },
   "observed_main_M04_path_scale_receipt": {
@@ -519,5 +522,18 @@
     "pending_decision": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "read_scope": "Current-state metadata only; no new H15 policy or full adjudication adoption.",
     "pending_approved": false
+  },
+  "pending_candidate": {
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "approved": false,
+    "status": "pending_user_confirmation"
+  },
+  "latest_source_review": {
+    "id": "STD-H02-M04-PATH-SCALE-SOURCE-REVIEW",
+    "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+    "status": "complete_gap_narrowed_pending_user_choice",
+    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "new_gameplay_confirmation": false
   }
 }

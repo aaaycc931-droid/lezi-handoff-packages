@@ -1,23 +1,26 @@
 {
   "first": {
-    "id": "NEXT-STD-H02-M04-PATH-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "H02后续刺杀与M04路径龙鳞存活的完成边界",
-    "action": "读取现行H02后续刺杀、M04及原路径龙鳞限定确认，先核组合合法性和已有来源；普通M04的A不直接外推为H02特殊进攻。只有仍缺明确来源时才恢复一个具体候选交用户决定。",
-    "status": "source_review_pending_no_candidate_approval",
-    "pending_is_not_approved": true
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
+    "action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false
   },
-  "preserve": "普通31/本线直接共享11和原确认保持；M04描述为三线共同文案修改、Δ机制0。WD/EI/PS/AG及其他游戏规格全部未运行；评分冻结、NET暂停。",
+  "preserve": "普通31/本线直接共享11及全部原确认保持；三线共同M04文案不变。本次继续不批准候选A；AP与WD/EI/PS/AG及其他游戏规格全部未运行，评分冻结、NET暂停。",
   "main_owned_pending": "Latest main1.61 metadata: no active user candidate; H15/H06 graduation-crossing source review next. Newer H15 confirmations require their own full scoped source read before local adoption.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "STD-M04-H10-ATOMIC-DAMAGE-SOURCE-ALIGNMENT",
-    "rule_delta": 0,
+    "id": "STD-H02-M04-PATH-SCALE-SOURCE-REVIEW",
+    "status": "source_review_complete_candidate_pending_user_choice",
+    "source": "541345ac568a39ea2bf71364e507997e27c0893c",
     "new_shared_confirmations": 0,
     "new_ordinary_confirmations": 0,
-    "verification": "V2 source/V1 guarded conditional outcomes; WD01-WD08 unrun"
+    "verification": "V2 sources; V1 proposal only; AP all unrun"
   },
-  "status": "H10_bounded_source_alignment_complete_H02_path_scale_review_next",
+  "status": "H02_M04_path_scale_specific_A_candidate_pending",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261017-r1",
     "status": "closed_current_conversation",
@@ -60,10 +63,10 @@
     "publication_commit": "Resolve containing commit from Git history after publication."
   },
   "completed_previous": {
-    "id": "STD-M04-ENDPOINT-INTERCEPTION-SOURCE-ALIGNMENT",
+    "id": "STD-M04-H10-ATOMIC-DAMAGE-SOURCE-ALIGNMENT",
     "rule_delta": 0,
     "new_shared_confirmations": 0,
     "new_ordinary_confirmations": 0,
-    "verification": "V2 source plus V1 conditional combination; no runtime"
+    "verification": "V2 source/V1 guarded conditional outcomes; WD01-WD08 unrun"
   }
 }

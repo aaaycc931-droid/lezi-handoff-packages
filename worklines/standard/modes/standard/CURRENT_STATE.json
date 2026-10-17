@@ -1,5 +1,5 @@
 {
-  "status": "M04_three_line_wording_scope_recorded_H10_limited_source_alignment_complete",
+  "status": "H02_M04_path_scale_source_review_complete_specific_A_pending",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "读取现行H02后续刺杀、M04及原路径龙鳞限定确认，先核组合合法性和已有来源；普通M04的A不直接外推为H02特殊进攻。只有仍缺明确来源时才恢复一个具体候选交用户决定。",
+  "next_action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -166,7 +166,7 @@
     "body": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
     "verification": "V2 source clauses / V1 guarded composition only; WD01-WD08 unrun"
   },
-  "updated_at_local": "2026-10-17T20:59:07+08:00",
+  "updated_at_local": "2026-10-17T21:49:00+08:00",
   "M04_path_scale_main_receipt": {
     "commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
     "source": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard.current_M04_confirmation",
@@ -185,5 +185,11 @@
       "exclusions": true
     },
     "scope": "Exact original normal M04 path-scale A only; all exclusions retained; no new local gameplay confirmation."
+  },
+  "pending_candidate": {
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "approved": false,
+    "status": "pending_user_confirmation"
   }
 }

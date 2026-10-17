@@ -1,17 +1,19 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "no_active_user_candidate_local_H02_path_scale_source_review",
+  "status": "single_local_H02_M04_path_scale_A_candidate_pending",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
-    "status": "source_review_next_no_new_rule_candidate",
-    "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
-    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-    "is_new_user_candidate": false
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
+    "action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false
   },
   "unresolved_questions": [
     "Latest main1.61 H15/H06 graduation source review next; no active user candidate reported. Newer H15 sources not fully read/adopted here.",
@@ -23,11 +25,22 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": null,
-  "candidate_prepared_for_presentation": false,
-  "approval_scope_guard": "No active local or current main user candidate. Local next only H02/M04 source review, no prepared or approved candidate. Prior M04 normal path-scale approval retained; newer main H15 policy not adopted from metadata.",
+  "current_candidate": {
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "approved": false,
+    "scope": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。",
+    "question": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？"
+  },
+  "candidate_prepared_for_presentation": true,
+  "approval_scope_guard": "This new candidate only H02 later-assassination exact path-scale guarded branch; prior ordinary M04 A and prior H02 geometry stay approved, their excluded crossings not auto-approved. Current next-step request is not approval.",
   "new_candidate_approved": false,
-  "candidate_presentation": "One explicit failure-crossing proposal; current continue instruction approves none.",
+  "candidate_presentation": {
+    "source": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "example": "AP-S01",
+    "question": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？",
+    "selected_option": null
+  },
   "resolved_candidate": {
     "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "path": "candidates/h15-public-training-display/v1.json",
@@ -147,23 +160,33 @@
     "new_engine_tests": 0
   },
   "source": {
-    "commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
-    "path": "worklines/main/PENDING_DECISION.json",
-    "read_scope": "Current no-active-candidate/next metadata only; newer H15 confirmations not adopted."
+    "prepared_from_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+    "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+    "containing_commit": "Resolve containing commit from Git history after publication.",
+    "kind": "new_pending_local_candidate_not_an_approved_rule"
   },
-  "local_handling": "Shared M04 wording scope and bounded H10 review completed. Main1.61 reports no active candidate and graduation source review next; no duplicate or local adoption of unread H15 policies.",
+  "local_handling": "Bounded source review complete, specific A presented for explicit user decision; no new gameplay confirmation.",
   "previous_main_candidate_reference": {
     "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
     "approved": false
   },
   "local_next": {
-    "id": "NEXT-STD-H02-M04-PATH-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "H02后续刺杀与M04路径龙鳞存活的完成边界",
-    "action": "读取现行H02后续刺杀、M04及原路径龙鳞限定确认，先核组合合法性和已有来源；普通M04的A不直接外推为H02特殊进攻。只有仍缺明确来源时才恢复一个具体候选交用户决定。",
-    "status": "source_review_pending_no_candidate_approval",
-    "pending_is_not_approved": true
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
+    "action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false
   },
   "main_latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-  "last_confirmed_scope_note": "Existing last_confirmed/confirmation fields retain previously fully adopted H15 display source, not a claim that newer reported confirmation is adopted."
+  "last_confirmed_scope_note": "Existing last_confirmed/confirmation fields retain previously fully adopted H15 display source, not a claim that newer reported confirmation is adopted.",
+  "main_next_metadata": {
+    "id": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
+    "status": "source_review_next_no_new_rule_candidate",
+    "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+    "is_new_user_candidate": false
+  }
 }
