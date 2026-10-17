@@ -149,11 +149,11 @@
     "Historical unreceived/closed language is preserved as provenance, not treated as latest session status."
   ],
   "new_shared_confirmations": {
-    "direct_main": 0,
+    "direct_main": 1,
     "external_original_shared_received": 0
   },
   "other_workline_receipts_written": false,
-  "latest_coordination_base_commit": "115350d1f8264143a1381aae61e9837492067a04",
+  "latest_coordination_base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
   "latest_by_source": {
     "half_chaos": {
       "source_commit": "115350d1f8264143a1381aae61e9837492067a04",
@@ -206,7 +206,7 @@
       }
     },
     "standard": {
-      "source_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
       "observed_at_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
       "actual_read_files_and_sections": [
         {
@@ -299,34 +299,104 @@
         "candidate_approved": false,
         "read_scope": "complete session_closeout object in standard current state and return; no whole working-draft reread"
       },
-      "previous_source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e"
+      "previous_source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+      "latest_actual_scoped_update": {
+        "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+        "phase": "source_review_complete_narrow_candidate_pending",
+        "current_breakpoint": "M04路径龙鳞来源复核完成，单一普通冲锋候选待用户决定；主线1.56/H15展示及H02实际回执已核。",
+        "pending_decision": {
+          "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+          "path": "candidates/m04-path-dragon-scale/v1.json",
+          "status": "pending_user_confirmation",
+          "approved": false,
+          "scope": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold."
+        },
+        "actual_latest_scoped_main_receipt": {
+          "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+          "record_version": "1.56",
+          "actual_read_files_and_sections": [
+            {
+              "path": "worklines/main/ADJUDICATION.json",
+              "git_blob_sha": "7659a6d4d2063e4cbbe18ad595c63d4c0f1c89da",
+              "read_scope": "Complete H15 public-display and H02/M04 geometry policies, matching original H15 display confirmation; prior1.54 core/mutation/hero values compared equal, not entire history"
+            },
+            {
+              "path": "worklines/main/READ_RECEIPTS.json",
+              "read_scope": "Complete latest_by_source.standard only"
+            },
+            {
+              "path": "worklines/main/PENDING_DECISION.json",
+              "read_scope": "Current candidate/next/scope/status and source pointer only"
+            }
+          ],
+          "adopted_scope": [
+            "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017 exact current public-display scope",
+            "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017 actual main receipt/adoption recognized; policy exactly equals own original"
+          ],
+          "not_adopted": [
+            "H15/H06 failed-training restoration candidate",
+            "full fieldmap/history/half-chaos runtime or other corpus"
+          ],
+          "comparison": {
+            "unified_core_same": true,
+            "old_mutation_policies_same": true,
+            "prior_hero_policies_equal": true
+          }
+        },
+        "scope": "return current phase/changes/candidate guards and actual READ_RECEIPTS latest_scoped_update only; not full candidate/workdraft or runtime",
+        "new_main_candidate_approval": false
+      },
+      "actual_read_scope_this_phase": "return selected metadata and READ by_source_workline.main.latest_scoped_update only; original older source reads preserved"
     },
     "ui": {
-      "source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+      "source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+      "observed_at_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
       "actual_read_files_and_sections": [
         {
+          "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
           "path": "worklines/ui/CURRENT_STATE.json",
-          "scope": "full"
+          "scope": "full metadata"
         },
         {
+          "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
           "path": "worklines/ui/RETURN_TO_MAIN.json",
-          "scope": "CI16 full"
+          "scope": "full metadata; none of the linked image/evidence body"
         }
       ],
-      "received_scope": "workflow-only recovery notice and existing B6 source/approval reconciliation blocker",
+      "received_scope": "B6 recovery/existing approval provenance and B7 publication/pending-review metadata",
       "adopted_scope": [
-        "main coordination preserves protected B6 recovery and requires artifact-specific approval reconciliation"
+        "main coordination state only; preserve reported B6 existing approval and B7 pending"
       ],
       "not_adopted": [
-        "new artwork approval",
-        "inference that old false snapshot cancels later approval",
-        "UI live-dialogue progress or runtime"
-      ]
+        "new B7 approval",
+        "main visual/recomposition/font/source-byte audit",
+        "Bluetooth/runtime/product acceptance"
+      ],
+      "report": {
+        "source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+        "observed_at_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+        "read_scope": "complete UI CURRENT_STATE and RETURN_TO_MAIN metadata only; no images, editable layers or visual evidence inspected by main",
+        "B6": {
+          "status": "user_approved",
+          "user_confirmation_quote": "通过",
+          "user_confirmation_time": "2026-10-16T18:26:17+08:00",
+          "sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
+          "evidence": "Preserved project reception record CI-16; exact image and 14 source identities recovered; direct shared transcript not retrieved in this round"
+        },
+        "B7": {
+          "status": "pending_user_review",
+          "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+          "source_folder": "candidates/B7/v1"
+        },
+        "main_visual_acceptance": false,
+        "runtime": "not_run",
+        "new_main_UI_approval": false
+      }
     }
   },
-  "this_session_user_confirmation": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+  "this_session_user_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
   "new_other_line_scoped_confirmations_received": 0,
-  "latest_main_confirmation": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+  "latest_main_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
   "current_main_source_read": {
     "source_commit": "115350d1f8264143a1381aae61e9837492067a04",
     "read_scope": "H15 historical9.14 and listed affected complete source sections; current1.55 policies and dependent fieldmap",
@@ -335,73 +405,73 @@
   "new_received_confirmation_ids": [],
   "current_phase_source_reads": [
     {
-      "commit": "115350d1f8264143a1381aae61e9837492067a04",
-      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
-      "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
-      "read_scope": "complete sections0,1,2.1-2.3,3.2,4/4.1/4.2,5/5.1-5.3,9.14,9.17,9.18,11,13; not whole historical audit"
+      "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "path": "candidates/h15-h06-failed-training-restore/v1.json",
+      "scope": "full exact candidate including guards/proposal/exclusions;1.56 source-review baseline reused, no underlying rule source changes in intervening diff"
     },
     {
-      "commit": "115350d1f8264143a1381aae61e9837492067a04",
-      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
-      "git_blob_sha": "1207f415a2681aafcd20df7dd9b35d03a0276a61",
-      "read_scope": "complete seven sections; old first-tick/cost/private-progress statuses superseded by later specific confirmations"
+      "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "path": "worklines/standard/RETURN_TO_MAIN.json",
+      "scope": "current phase/changes/pending candidate guard/main1.56 scoped adoption only"
     },
     {
-      "commit": "115350d1f8264143a1381aae61e9837492067a04",
-      "path": "worklines/standard/rules/shared/SHARED_RULE_UPDATE_H15_2026-10-13.md",
-      "git_blob_sha": "3f61cf1a516195dba89bdbd5c5607d2a840df5c9",
-      "read_scope": "full; stale visibility pending is superseded by main1.55, not current authority"
+      "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "path": "worklines/standard/READ_RECEIPTS.json",
+      "scope": "complete latest_scoped_update under by_source_workline.main; older top-level receipt retained as historical, no blanket latest pointer inference"
     },
     {
-      "commit": "115350d1f8264143a1381aae61e9837492067a04",
-      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-      "git_blob_sha": "9d035ebf9eb0a7e168c44bd32e878f8dadb42afc",
-      "read_scope": "complete H06 and H15 entries only; H15 display source wording not yet synchronized, main1.55 controls"
+      "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "path": "worklines/ui/CURRENT_STATE.json",
+      "scope": "full metadata"
     },
     {
-      "commit": "115350d1f8264143a1381aae61e9837492067a04",
-      "path": "worklines/main/ADJUDICATION.json",
-      "git_blob_sha": "6418ee7bb0b9aa844dd8018869f6c26feedc1c51",
-      "read_scope": "current H15 timing/start-cost/display policies and existing H06 no-legal-replay source; not full historical audit"
+      "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "path": "worklines/ui/RETURN_TO_MAIN.json",
+      "scope": "full metadata; none of the linked image/evidence body"
     }
   ],
-  "current_phase_new_confirmations": 0,
+  "current_phase_new_confirmations": 1,
   "current_phase_candidate": {
     "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "approved": false
+    "approved": true,
+    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
   },
   "current_confirmation_source": {
-    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-    "confirmed_at_local": "2026-10-17T11:02:28+08:00",
-    "user_quote": "我同意你的方案",
-    "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
-    "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+    "confirmed_at_local": "2026-10-17T15:30:17+08:00",
+    "user_quote": "我同意",
+    "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
+    "reconfirmation_quote": "我同意",
+    "counted_as_one_rule_confirmation": true,
+    "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_failed_training_H06_question",
     "reviewed_candidate": {
-      "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
-      "path": "candidates/h15-public-training-display/v1.json",
-      "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
+      "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+      "path": "candidates/h15-h06-failed-training-restore/v1.json",
+      "git_blob_sha": "456669cc763a582d970eb0bee43734c8593a2e8d"
     },
-    "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
+    "immediately_preceding_question": "是否同意这一限定方案适用于三个模式？",
     "presented_clauses": [
-      "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
-      "真实培养照常结算，毕业时公开实际棋盘变化。",
-      "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
+      "同一次训练未失败、未毕业时，合法回溯按原来源恢复原受训棋及快照进度，不重新随机，已用机会不返还。",
+      "已因毕业前受训棋死亡而失败的训练：合法回溯可恢复棋子，但不恢复这次已失败训练。",
+      "例：快照炮3/6、后来死亡失败，回溯后炮可存活但不继续培养；启动前快照、已毕业奖励等其他交叉另核。"
     ],
     "mode_ids": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
-    "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
-    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
-    "not_inferred": [
-      "empty/failed candidate consumption, retry/feedback or new start/check permission",
-      "H06 actual body/progress/failure/reward restore semantics",
-      "M07 same-begin order or other modes H11 space details",
-      "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
-      "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
+    "availability_guard": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
+    "scope": "Only pre-graduation trainee-death failure crossed by an otherwise legal H06 restore to its earlier active-training snapshot; no expansion to prestart, graduation, other failures or other time skills.",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+    "not_confirmed": [
+      "snapshot before original training start",
+      "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
+      "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
+      "M07 same-begin or other-mode H11 spatial rules",
+      "full phase/key/terminal/clock implementation or runtime/scoring/NET"
     ],
     "implementation_status": "confirmed_design_not_implemented",
-    "new_engine_tests": 0
+    "engine_runs": 0
   }
 }

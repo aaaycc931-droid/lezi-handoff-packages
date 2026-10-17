@@ -1,7 +1,7 @@
 {
   "schema": "lezi.design.candidate.v1",
   "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-  "status": "pending_user_confirmation_not_implemented",
+  "status": "user_confirmed_design_not_implemented",
   "title": "H15训练已因毕业前死亡失败后，H06恢复棋盘不重新激活该次训练",
   "scope": [
     "original_jieqi",
@@ -61,7 +61,8 @@
   "alternative": {
     "option": "允许H06撤销这次死亡失败，恢复快照中同一旧训练，而非重新征募",
     "tradeoff": "更接近完整时间回溯；可区分继续同一训练与第二次启动，但必须明确H15死亡失败在H06下可逆，并继续处理后续毕业/奖励边界。当前未批准。",
-    "not_rejected_or_confirmed_as_old_rule": true
+    "not_rejected_or_confirmed_as_old_rule": true,
+    "status": "not_selected_by_this_confirmation"
   },
   "abstract_case": {
     "status": "conditional_authority_timeline_not_complete_legal_prefix_UNRUN",
@@ -79,17 +80,25 @@
     "full phase/key/terminal/clock implementation or runtime/scoring/NET"
   ],
   "approval": {
-    "approved": false,
-    "user_quote": null,
-    "question": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？"
+    "approved": true,
+    "user_quote": "我同意",
+    "question": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？",
+    "confirmed_at_local": "2026-10-17T15:30:17+08:00",
+    "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
+    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "actual_question": "是否同意这一限定方案适用于三个模式？"
   },
   "verification": {
     "source": "V2 scoped source correspondence",
-    "proposal": "V0 pending",
+    "proposal": "V2 direct current-user approval; examples remain UNRUN",
     "example": "V1 abstract same-assistant UNRUN timeline",
     "game_code_changes": 0,
     "engine_runs": 0,
     "independent_review": false
   },
-  "proposed_rule_delta": "If approved: explicit H15 pre-graduation death-failure persistence exception to H06 snapshot restoration. This is a new scoped selection, not a claim that the old snapshot source already selected it."
+  "proposed_rule_delta": "If approved: explicit H15 pre-graduation death-failure persistence exception to H06 snapshot restoration. This is a new scoped selection, not a claim that the old snapshot source already selected it.",
+  "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+  "original_proposal_wording_preserved": true,
+  "source_baseline_as_of": "Preconfirmation historical baseline; current approval/policy supersede the previously unresolved failure-priority flag.",
+  "confirmed_rule_delta": "Explicit source-specific H15 pre-graduation death-failure persistence exception to H06 snapshot restoration; prior continuous-live snapshot rule and other policy remain."
 }

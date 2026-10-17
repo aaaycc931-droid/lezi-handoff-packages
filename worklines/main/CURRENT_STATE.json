@@ -1,15 +1,15 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "H15_H06_source_checked_single_failure_candidate_pending",
+  "status": "H15_H06_death_failure_exception_confirmed_prestart_review_next",
   "resume_date_local": "2026-10-17",
   "timezone": "Asia/Shanghai",
-  "base_commit": "115350d1f8264143a1381aae61e9837492067a04",
+  "base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
   "user_authorization": "Current user requests main/four-line continuation, latest increments since1.53 and existing account recovery; continued quota recovery is not candidate approval. Same-scope main maintenance and GitHub incremental handoff inherited.",
   "current_adjudication_record": "ADJUDICATION.json",
-  "adjudication_version": "1.56",
-  "design_stage": "S1.38",
-  "pending_decision": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+  "adjudication_version": "1.57",
+  "design_stage": "S1.39",
+  "pending_decision": null,
   "pending_decision_approved": false,
   "shared_coordination": "SHARED_COORDINATION.json",
   "source_map": "SOURCE_MAP.json",
@@ -27,21 +27,22 @@
     "other_dialogue_unreturned_work": "unknown; must not overwrite",
     "historical_1_48_did_not_overwrite_current_1_49": true,
     "original_1_49_preserved_at_commit": "26736f643754ae22731a7540874835ddf4e21409",
-    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "All1.55 confirmed policy and52 confirmation records preserved. Source-priority analysis and one explicit unapproved failed-training H06 candidate only.",
+    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Prior52 confirmations and all earlier policies preserved. Add one exact approved H15/H06 death-failure exception; no second approval from repeat assent, no UI/B7 or M04 path-scale candidate approval.",
     "original_1_50_preserved_at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
     "original_1_51_preserved_at_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
-    "original_1_54_preserved_at_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e"
+    "original_1_54_preserved_at_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
+    "original_1_56_preserved_at_commit": "338acdf7c359b18e8a246a92354712b899e0f996"
   },
   "worklines": {
     "main": {
-      "next": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-      "status": "existing9_14_slice_source_checked_new_failure_candidate_pending"
+      "next": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
+      "status": "failure_exception_confirmed_no_active_candidate"
     },
     "standard": {
-      "next": "M04路径免疫来源复核",
-      "source_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+      "next": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
       "new_return_or_receiver_receipt_found": true,
-      "actual_live_dialogue_progress": "New independently confirmed H02/M04 later-assassination geometry source received; next M04 path-immunity source review. Prior own-session closeout historical, no whole-mode/runtime acceptance.",
+      "actual_live_dialogue_progress": "Source review complete; one guarded M04 path dragon-scale continuation candidate pending. Actual nested latest main1.56 receipt adopts H15 display only and recognizes H02/M04 prior receipt; no new gameplay approval.",
       "session_closeout": {
         "commit": "47d90c098924b0c2ac980e91afa31e6127fe0ddd",
         "observed_at_commit": "76a4279586ca40db88198e40d371de32c3766b11",
@@ -61,12 +62,13 @@
       "next_task_status": "source_reports_ready_for_next_data_preparation"
     },
     "ui": {
-      "next": "先恢复并核对受保护B6原图/来源及较新具体批准，再接续设备名与取消",
-      "source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
-      "published_candidate_created": "stale snapshot false; protected recovery candidate reported; current approved artifact identity unresolved",
-      "new_return_or_receiver_receipt_found": false,
-      "actual_live_dialogue_progress": "unknown; current state and CI16 workflow return read, no new artwork read or created",
-      "latest_metadata_observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+      "next": "B7-v1 首次连接失败／重试图，等待具体审批",
+      "source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+      "published_candidate_created": true,
+      "new_return_or_receiver_receipt_found": true,
+      "actual_live_dialogue_progress": "UI metadata reports exact B6 recovery/existing approval preserved and B7-v1 pending. Main has not viewed or accepted artwork; runtime unrun.",
+      "latest_metadata_observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+      "candidate_approved": false
     }
   },
   "publication": {
@@ -82,7 +84,7 @@
   "verification": {
     "record_and_candidate_source_equivalence_checked": true,
     "document_and_pointer_checks": "VALIDATION.json",
-    "new_rule_confirmations": 0,
+    "new_rule_confirmations": 1,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "runtime_acceptance": false,
@@ -90,7 +92,7 @@
     "old_evidence": "inherited original scope only; not rerun",
     "received_other_line_confirmed_designs": 0,
     "shared_rule_confirmation_from_mode_returns": 0,
-    "current_phase_candidate_count": 1,
+    "current_phase_candidate_count": 0,
     "current_phase_engine_runs": 0
   },
   "scoring": {
@@ -104,27 +106,29 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "是否同意三个模式采用这一限定处理：训练一旦因毕业前受训棋死亡而失败，H06可以恢复棋子，但不恢复这次已失败的训练？",
+  "next_action": "核对H06目标快照早于H15唯一训练启动时，快照状态与已用机会例外的覆盖关系；不自动选择保留或取消后来的训练。",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": "partial; VALIDATION.json limitation_audit; source and document checks only, no independent/runtime verification",
-  "last_confirmed_decision": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-  "confirmed_at_local": "2026-10-17T11:02:28+08:00",
+  "last_confirmed_decision": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+  "confirmed_at_local": "2026-10-17T15:30:17+08:00",
   "resume_after_quota_at_local": "2026-10-16T15:23:28+08:00",
   "resume_after_quota_is_new_candidate_approval": false,
   "decision_index": "PENDING_DECISION.json",
   "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
-  "publication_parent_commit": "115350d1f8264143a1381aae61e9837492067a04",
+  "publication_parent_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
   "current_phase": {
-    "user_instruction": "可以，开始下一步吧",
-    "at_local": "2026-10-17T11:12:29+08:00",
-    "candidate_approved": false,
-    "new_candidate": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "main_direct_new_confirmations": 0,
+    "user_instruction": "我同意（15:30）；我同意（17:57重申）",
+    "at_local": "2026-10-17T17:57:09+08:00",
+    "confirmed_at_local": "2026-10-17T15:30:17+08:00",
+    "candidate_approved": true,
+    "confirmed_candidate": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "confirmation_count": 1,
+    "main_direct_new_confirmations": 1,
     "external_shared_received": 0,
     "ordinary_scoped_received": 0,
-    "existing_H15_H06_source_slice_checked": true,
     "game_code_changes": 0,
     "engine_runs": 0
   },
@@ -189,5 +193,11 @@
       "game_runs": 0,
       "read_scope": "complete session_closeout object from RETURN and CURRENT_STATE plus actual closeout observation receipt; not full working8.46 or historical corpus"
     }
-  }
+  },
+  "resolved_decision": {
+    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+    "approved": true,
+    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
+  },
+  "reconfirmed_at_local": "2026-10-17T17:57:09+08:00"
 }

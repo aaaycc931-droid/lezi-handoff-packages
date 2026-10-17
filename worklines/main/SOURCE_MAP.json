@@ -287,41 +287,45 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.56",
-  "latest_maintenance_base_commit": "115350d1f8264143a1381aae61e9837492067a04",
+  "current_record_version": "1.57",
+  "latest_maintenance_base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
   "latest_confirmation_source": {
-    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-    "confirmed_at_local": "2026-10-17T11:02:28+08:00",
-    "user_quote": "我同意你的方案",
-    "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
-    "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+    "confirmed_at_local": "2026-10-17T15:30:17+08:00",
+    "user_quote": "我同意",
+    "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
+    "reconfirmation_quote": "我同意",
+    "counted_as_one_rule_confirmation": true,
+    "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_failed_training_H06_question",
     "reviewed_candidate": {
-      "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
-      "path": "candidates/h15-public-training-display/v1.json",
-      "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
+      "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+      "path": "candidates/h15-h06-failed-training-restore/v1.json",
+      "git_blob_sha": "456669cc763a582d970eb0bee43734c8593a2e8d"
     },
-    "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
+    "immediately_preceding_question": "是否同意这一限定方案适用于三个模式？",
     "presented_clauses": [
-      "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
-      "真实培养照常结算，毕业时公开实际棋盘变化。",
-      "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
+      "同一次训练未失败、未毕业时，合法回溯按原来源恢复原受训棋及快照进度，不重新随机，已用机会不返还。",
+      "已因毕业前受训棋死亡而失败的训练：合法回溯可恢复棋子，但不恢复这次已失败训练。",
+      "例：快照炮3/6、后来死亡失败，回溯后炮可存活但不继续培养；启动前快照、已毕业奖励等其他交叉另核。"
     ],
     "mode_ids": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
-    "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
-    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
-    "not_inferred": [
-      "empty/failed candidate consumption, retry/feedback or new start/check permission",
-      "H06 actual body/progress/failure/reward restore semantics",
-      "M07 same-begin order or other modes H11 space details",
-      "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
-      "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
+    "availability_guard": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
+    "scope": "Only pre-graduation trainee-death failure crossed by an otherwise legal H06 restore to its earlier active-training snapshot; no expansion to prestart, graduation, other failures or other time skills.",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+    "not_confirmed": [
+      "snapshot before original training start",
+      "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
+      "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
+      "M07 same-begin or other-mode H11 spatial rules",
+      "full phase/key/terminal/clock implementation or runtime/scoring/NET"
     ],
     "implementation_status": "confirmed_design_not_implemented",
-    "new_engine_tests": 0
+    "engine_runs": 0
   },
   "latest_received_sources": [
     {
@@ -410,15 +414,17 @@
       "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b"
     }
   ],
-  "publication_parent_commit": "115350d1f8264143a1381aae61e9837492067a04",
+  "publication_parent_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
   "unread_concurrent_returns": [],
   "current_phase_candidate_source": {
     "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
     "path": "candidates/h15-h06-failed-training-restore/v1.json",
-    "approved": false,
-    "source_baseline": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review"
+    "approved": true,
+    "source_baseline": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure"
   },
-  "confirmed_record_maintenance_note": "1.56 is source-review/candidate documentation only, not new approved gameplay. Exact1.55 confirmed policies and52 original confirmations preserved; historical9.14 continuous-live slice recognized, death-failure crossing pending.",
+  "confirmed_record_maintenance_note": "1.57 records the user's15:30 exact three-mode H15/H06 failure-exception approval, reaffirmed17:57, counted once. All prior52 confirmations/core/timing/display/cost policies untouched; other histories pending.",
   "concurrent_source_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
   "latest_standard_shared_confirmation_sources": [
     {
@@ -428,41 +434,50 @@
     }
   ],
   "latest_standard_read_scope": {
-    "source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
-    "scope": [
-      {
-        "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
-        "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
-        "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
-        "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
-      },
-      {
-        "commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-        "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
-        "git_blob_sha": "14830add463c04cd9c14e5265d829d390216624b",
-        "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
-      },
-      {
-        "commit": "93127575c60469d08069a3a6743f3c2a34493deb",
-        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "git_blob_sha": "779e518e1f5b6259d939e5767591051700ba3870",
-        "read_scope": "complete confirmed H15 successful-start cost section, complete confirmed ordinary public-empty section and complete pending H02/M04 geometry section only; not entire working draft"
-      },
-      {
-        "commit": "93127575c60469d08069a3a6743f3c2a34493deb",
-        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "git_blob_sha": "cd560fe083541821fdb4a6485f9994080c8423d4",
-        "read_scope": "complete H15 entry only"
-      },
-      {
-        "path": "worklines/standard/READ_RECEIPTS.json",
-        "scope": "by_source_workline.main actual adopted/nonadopted and main1.53 receipt source metadata; not full historical receipt corpus"
-      },
-      {
-        "path": "worklines/standard/RETURN_TO_MAIN.json",
-        "scope": "latest phase/confirmed delta, pending-main scope, next/cost shared-source metadata; not all historical evidence"
+    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "phase": "source_review_complete_narrow_candidate_pending",
+    "current_breakpoint": "M04路径龙鳞来源复核完成，单一普通冲锋候选待用户决定；主线1.56/H15展示及H02实际回执已核。",
+    "pending_decision": {
+      "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "path": "candidates/m04-path-dragon-scale/v1.json",
+      "status": "pending_user_confirmation",
+      "approved": false,
+      "scope": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold."
+    },
+    "actual_latest_scoped_main_receipt": {
+      "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+      "record_version": "1.56",
+      "actual_read_files_and_sections": [
+        {
+          "path": "worklines/main/ADJUDICATION.json",
+          "git_blob_sha": "7659a6d4d2063e4cbbe18ad595c63d4c0f1c89da",
+          "read_scope": "Complete H15 public-display and H02/M04 geometry policies, matching original H15 display confirmation; prior1.54 core/mutation/hero values compared equal, not entire history"
+        },
+        {
+          "path": "worklines/main/READ_RECEIPTS.json",
+          "read_scope": "Complete latest_by_source.standard only"
+        },
+        {
+          "path": "worklines/main/PENDING_DECISION.json",
+          "read_scope": "Current candidate/next/scope/status and source pointer only"
+        }
+      ],
+      "adopted_scope": [
+        "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017 exact current public-display scope",
+        "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017 actual main receipt/adoption recognized; policy exactly equals own original"
+      ],
+      "not_adopted": [
+        "H15/H06 failed-training restoration candidate",
+        "full fieldmap/history/half-chaos runtime or other corpus"
+      ],
+      "comparison": {
+        "unified_core_same": true,
+        "old_mutation_policies_same": true,
+        "prior_hero_policies_equal": true
       }
-    ]
+    },
+    "scope": "return current phase/changes/candidate guards and actual READ_RECEIPTS latest_scoped_update only; not full candidate/workdraft or runtime",
+    "new_main_candidate_approval": false
   },
   "current_collaboration_read": {
     "commit": "76a4279586ca40db88198e40d371de32c3766b11",
@@ -470,5 +485,25 @@
     "working_revision": "2026-10-17.v0.13",
     "git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
     "read_scope": "complete v0.13 MANDATORY_PRECHECK and AI_LIMITATION_CONTROL; full v0.12-to-v0.13 diff; unchanged authorization/handoff/maintenance modules reused"
+  },
+  "latest_ui_metadata_read": {
+    "source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+    "observed_at_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+    "read_scope": "complete UI CURRENT_STATE and RETURN_TO_MAIN metadata only; no images, editable layers or visual evidence inspected by main",
+    "B6": {
+      "status": "user_approved",
+      "user_confirmation_quote": "通过",
+      "user_confirmation_time": "2026-10-16T18:26:17+08:00",
+      "sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
+      "evidence": "Preserved project reception record CI-16; exact image and 14 source identities recovered; direct shared transcript not retrieved in this round"
+    },
+    "B7": {
+      "status": "pending_user_review",
+      "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+      "source_folder": "candidates/B7/v1"
+    },
+    "main_visual_acceptance": false,
+    "runtime": "not_run",
+    "new_main_UI_approval": false
   }
 }
