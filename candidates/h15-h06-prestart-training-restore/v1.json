@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.design_candidate.v1",
   "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
-  "status": "pending_explicit_user_confirmation",
+  "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
   "approved": false,
   "prepared_date_local": "2026-10-17",
   "source_baseline_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
@@ -118,5 +118,85 @@
     "implementation": false
   },
   "scoring_frozen": true,
-  "NET": "paused"
+  "NET": "paused",
+  "still_presented_for_approval": false,
+  "assistant_recommendation": "withdrawn",
+  "proposal_historical_only": true,
+  "source_scope_correction": {
+    "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
+    "status": "source_scope_disputed_prior_recommendation_withdrawn_no_new_rule",
+    "user_exchange": [
+      {
+        "at_local": "2026-10-17T19:18:57+08:00",
+        "quote": "这怎么回事我？你的意思是那个英雄技能的回溯可以直接吞掉他的技能吗",
+        "scope": "questions practical consequence of pending candidate"
+      },
+      {
+        "at_local": "2026-10-17T19:20:16+08:00",
+        "quote": "恢复快照的时候，技能不是还没有使用的状态吗？你在说什么呢",
+        "scope": "challenges retaining use consumption when snapshot predates first start"
+      },
+      {
+        "at_local": "2026-10-17T19:22:19+08:00",
+        "quote": "是的",
+        "scope": "agrees to recheck source scope, not approval of cancellation, preserved later training or new refund policy"
+      }
+    ],
+    "source_findings": [
+      {
+        "kind": "source_document_wording",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
+        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+        "blob": "1207f415a2681aafcd20df7dd9b35d03a0276a61",
+        "read_scope": "complete seven sections",
+        "finding": "§1.5 broadly records no used-opportunity refund through rewind, but provides no quoted prestart-snapshot-specific proposal/approval. Its scope cannot be presented as primary proof of approval of the proposed cancellation-plus-spent-use consequence."
+      },
+      {
+        "kind": "historical_source_document",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+        "blob": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
+        "read_scope": "complete §9.14",
+        "finding": "Explicit full authoritative H15 snapshot restoration; no express prestart-cancellation/consumed-use exception in this section."
+      },
+      {
+        "kind": "current_source_document",
+        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+        "blob": "32d32f478ba2f368c1c81efe09ffcc5114bc6269",
+        "read_scope": "complete H06/H15 entries",
+        "finding": "H06 general full-resource snapshot and H15 broadly nonrefund wording coexist; summaries do not supply the missing original approval context."
+      },
+      {
+        "kind": "personal_context_targeted_retrieval_not_full_transcript",
+        "searches": 2,
+        "original_user_time_local": "2026-10-13T13:07:02+08:00",
+        "retrieved_user_quote": "修改天空上将的机制，天空上将在对局开始时以及每个己方回合开始后，都可以选择进行训练，但训练每局只能进行一次",
+        "retrieved_followup": {
+          "user_at_local": "2026-10-13T13:33:47+08:00",
+          "user_quote": "是的",
+          "retrieved_scope": "pre-graduation trainee death loses the unique opportunity; summary of adjacent proposal, not a complete transcript"
+        },
+        "finding": "Targeted searches did not retrieve user text or an explicitly approved proposal deciding prestart-snapshot used-opportunity persistence. This is an evidence gap, not proof that such confirmation never existed."
+      }
+    ],
+    "established_snapshot_fact": "A target snapshot preceding first successful training start contains no training relation and the then-unused opportunity. A later consumed-use flag can persist only under a justified nonrollback exception; it is not the snapshot's original value.",
+    "assistant_correction": "Previous candidate combined two source summaries and introduced the practical consequence that H06 removes all training while keeping use spent. This consequence was insufficiently explained and its prestart-specific authorization was not established. Withdraw the assistant recommendation and presentation question.",
+    "effect_on_candidate": {
+      "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+      "path": "candidates/h15-h06-prestart-training-restore/v1.json",
+      "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
+      "approved": false,
+      "still_presented_for_approval": false
+    },
+    "boundaries": [
+      "No current assent approves cancellation plus consumed opportunity.",
+      "No current assent approves preserving future active training or blanket refund/second recruitment.",
+      "All53 prior explicit confirmation records and canonical confirmed modules are retained unchanged, including exact1.57 death-failure branch.",
+      "Disputed scope is only extension of broad nonrefund wording to target snapshots before first training start; do not silently promote or delete historical source text.",
+      "Record this dispute on current main source maps and pause dependent prestart implementation; no game code or engine runs."
+    ],
+    "next": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。"
+  },
+  "presentation_question_status": "withdrawn_not_a_current_question"
 }

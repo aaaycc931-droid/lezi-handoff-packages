@@ -154,7 +154,7 @@
     "received_external_shared_confirmations": 4,
     "source_contract_groups": 10
   },
-  "maintenance_base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+  "maintenance_base_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
   "mapping_authority": {
     "confirmed_business_policy": "Existing source_confirmation_ids plus current source rules only.",
     "mapping_judgment": "V1 same-assistant application of V2 scoped sources; proposed identifiers below are explanatory, not implementation fields.",
@@ -441,9 +441,10 @@
       "prestart_H06_candidate": {
         "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
         "path": "candidates/h15-h06-prestart-training-restore/v1.json",
-        "approved": false,
-        "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review"
-      }
+        "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
+        "approved": false
+      },
+      "prestart_nonrefund_scope_dispute": "For target snapshots before first start, spent-use persistence is under source/authorization scope review. Existing public field summary does not settle this branch or approve a resource refund."
     },
     {
       "id": "R06",
@@ -657,14 +658,15 @@
     "applied_boundary": "Chosen type/shared used opportunity public; actual hidden binding/progress/failure excluded; real graduation/flight rights follow source. No new public clock or complete key."
   },
   "H15_H06_source_review": {
-    "status": "partial_prestart_candidate_pending_failure_exception_confirmed",
+    "status": "prestart_source_scope_disputed_candidate_recommendation_withdrawn",
     "base_commit": "115350d1f8264143a1381aae61e9837492067a04",
     "source_priority": [
       "2026-10-05 original9.14 is explicit H15 snapshot coverage; unchanged valid parts survive later summaries.",
       "2026-10-13 three-mode core overrides automatic start/recruitment after death and makes unique start-use nonrollback.",
       "Current full H06/H15 preserve known nonrefund and report remaining restoration interfaces; do not flatten all sources into a universal restore or universal irreversible-training rule.",
       "Main1.55 current-version display supersedes old optional/pending/private wording in source copies; no other line is silently edited.",
-      "Current explicit2026-10-17 user selection: pre-graduation death-failed training persists under guarded H06 restore; exact policy above older9.14 for this branch only."
+      "Current explicit2026-10-17 user selection: pre-graduation death-failed training persists under guarded H06 restore; exact policy above older9.14 for this branch only.",
+      "Current2026-10-17 user objection triggers source-scope reconciliation for first-prestart snapshots only; broad historical nonrefund summaries are not sufficient proof of approval of cancellation-plus-spent-use here."
     ],
     "exact_original_9_14": "完整权威快照恢复天空上将相关状态，包括：当前秘密受训对象、培养进度、是否培养完成、飞行/地面层、剩余飞行寿命、当时控制状态及其他权威字段；回到秘密培养阶段恢复快照中的原受训对象，不重新随机。",
     "surviving_bounded_contract": {
@@ -689,10 +691,10 @@
         "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
       },
       {
-        "branch": "snapshot before unique training start; later training still alive ongoing ungraduated",
-        "status": "source_reviewed_explicit_candidate_pending",
-        "candidate_id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
-        "reason": "Propose snapshot has no training while used opportunity persists; not approved. Failure/graduation/unresolved transformations excluded."
+        "branch": "snapshot before first unique successful training start",
+        "status": "source_scope_disputed_no_active_candidate",
+        "reason": "Snapshot itself is unused/no-training; original approval for extending nonrefund to this branch not retrieved. Prior cancellation-plus-spent-use recommendation withdrawn; no replacement rule approved.",
+        "source_correction": "H15_H06_source_review/prestart_scope_correction"
       },
       {
         "branch": "graduation/flight obtained after target snapshot, or completed reward restored after destruction",
@@ -765,7 +767,7 @@
     },
     "prestart_review": {
       "id": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
-      "status": "source_review_completed_candidate_pending",
+      "status": "superseded_by_source_scope_correction",
       "sources": [
         {
           "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
@@ -802,7 +804,9 @@
       "candidate": {
         "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
         "path": "candidates/h15-h06-prestart-training-restore/v1.json",
-        "approved": false
+        "approved": false,
+        "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
+        "still_presented_for_approval": false
       },
       "guard": "Only an originally legal H06/H15 match and target snapshot, original10-second/current-not-in-check/preflight/same-body nonattack noncheck replay and existing barriers satisfied. Target S predates the unique successful H15 start; at S no training ever started. Since S this start succeeded, same trainee is still alive/actively training/ungraduated at restore. No intervening death/failure/graduation, H11 barrier or unresolved binding/control transformation.",
       "timeline": [
@@ -844,6 +848,82 @@
         "engine_runs": 0,
         "implementation": false
       }
+    },
+    "prestart_scope_correction": {
+      "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
+      "status": "source_scope_disputed_prior_recommendation_withdrawn_no_new_rule",
+      "user_exchange": [
+        {
+          "at_local": "2026-10-17T19:18:57+08:00",
+          "quote": "这怎么回事我？你的意思是那个英雄技能的回溯可以直接吞掉他的技能吗",
+          "scope": "questions practical consequence of pending candidate"
+        },
+        {
+          "at_local": "2026-10-17T19:20:16+08:00",
+          "quote": "恢复快照的时候，技能不是还没有使用的状态吗？你在说什么呢",
+          "scope": "challenges retaining use consumption when snapshot predates first start"
+        },
+        {
+          "at_local": "2026-10-17T19:22:19+08:00",
+          "quote": "是的",
+          "scope": "agrees to recheck source scope, not approval of cancellation, preserved later training or new refund policy"
+        }
+      ],
+      "source_findings": [
+        {
+          "kind": "source_document_wording",
+          "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
+          "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+          "blob": "1207f415a2681aafcd20df7dd9b35d03a0276a61",
+          "read_scope": "complete seven sections",
+          "finding": "§1.5 broadly records no used-opportunity refund through rewind, but provides no quoted prestart-snapshot-specific proposal/approval. Its scope cannot be presented as primary proof of approval of the proposed cancellation-plus-spent-use consequence."
+        },
+        {
+          "kind": "historical_source_document",
+          "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+          "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+          "blob": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
+          "read_scope": "complete §9.14",
+          "finding": "Explicit full authoritative H15 snapshot restoration; no express prestart-cancellation/consumed-use exception in this section."
+        },
+        {
+          "kind": "current_source_document",
+          "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+          "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+          "blob": "32d32f478ba2f368c1c81efe09ffcc5114bc6269",
+          "read_scope": "complete H06/H15 entries",
+          "finding": "H06 general full-resource snapshot and H15 broadly nonrefund wording coexist; summaries do not supply the missing original approval context."
+        },
+        {
+          "kind": "personal_context_targeted_retrieval_not_full_transcript",
+          "searches": 2,
+          "original_user_time_local": "2026-10-13T13:07:02+08:00",
+          "retrieved_user_quote": "修改天空上将的机制，天空上将在对局开始时以及每个己方回合开始后，都可以选择进行训练，但训练每局只能进行一次",
+          "retrieved_followup": {
+            "user_at_local": "2026-10-13T13:33:47+08:00",
+            "user_quote": "是的",
+            "retrieved_scope": "pre-graduation trainee death loses the unique opportunity; summary of adjacent proposal, not a complete transcript"
+          },
+          "finding": "Targeted searches did not retrieve user text or an explicitly approved proposal deciding prestart-snapshot used-opportunity persistence. This is an evidence gap, not proof that such confirmation never existed."
+        }
+      ],
+      "established_snapshot_fact": "A target snapshot preceding first successful training start contains no training relation and the then-unused opportunity. A later consumed-use flag can persist only under a justified nonrollback exception; it is not the snapshot's original value.",
+      "assistant_correction": "Previous candidate combined two source summaries and introduced the practical consequence that H06 removes all training while keeping use spent. This consequence was insufficiently explained and its prestart-specific authorization was not established. Withdraw the assistant recommendation and presentation question.",
+      "effect_on_candidate": {
+        "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+        "path": "candidates/h15-h06-prestart-training-restore/v1.json",
+        "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
+        "approved": false,
+        "still_presented_for_approval": false
+      },
+      "boundaries": [
+        "No current assent approves cancellation plus consumed opportunity.",
+        "No current assent approves preserving future active training or blanket refund/second recruitment.",
+        "All53 prior explicit confirmation records and canonical confirmed modules are retained unchanged, including exact1.57 death-failure branch.",
+        "Disputed scope is only extension of broad nonrefund wording to target snapshots before first training start; do not silently promote or delete historical source text.",
+        "Record this dispute on current main source maps and pause dependent prestart implementation; no game code or engine runs."
+      ],
+      "next": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。"
     }
   }
 }

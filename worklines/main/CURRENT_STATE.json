@@ -1,15 +1,15 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "H15_H06_prestart_source_review_complete_candidate_pending",
+  "status": "source_scope_disputed_prior_recommendation_withdrawn_no_new_rule",
   "resume_date_local": "2026-10-17",
   "timezone": "Asia/Shanghai",
-  "base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+  "base_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
   "user_authorization": "Current user requests main/four-line continuation, latest increments since1.53 and existing account recovery; continued quota recovery is not candidate approval. Same-scope main maintenance and GitHub incremental handoff inherited.",
   "current_adjudication_record": "ADJUDICATION.json",
-  "adjudication_version": "1.58",
-  "design_stage": "S1.40",
-  "pending_decision": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+  "adjudication_version": "1.59",
+  "design_stage": "S1.41",
+  "pending_decision": null,
   "pending_decision_approved": false,
   "shared_coordination": "SHARED_COORDINATION.json",
   "source_map": "SOURCE_MAP.json",
@@ -27,7 +27,7 @@
     "other_dialogue_unreturned_work": "unknown; must not overwrite",
     "historical_1_48_did_not_overwrite_current_1_49": true,
     "original_1_49_preserved_at_commit": "26736f643754ae22731a7540874835ddf4e21409",
-    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Prior53 confirmations and all confirmed rules preserved. Prestart source review and one pending candidate only; no fresh approval inferred.",
+    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Prior53 confirmation records and all confirmed policy modules unchanged; pending candidate recommendation withdrawn and source scope dispute recorded. No gameplay change from 是的.",
     "original_1_50_preserved_at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
     "original_1_51_preserved_at_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
     "original_1_54_preserved_at_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -35,14 +35,14 @@
   },
   "worklines": {
     "main": {
-      "next": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
-      "status": "candidate_pending"
+      "next": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
+      "status": "source_scope_reconciliation_no_active_candidate"
     },
     "standard": {
-      "next": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
-      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "next": "review new exact M04 confirmation/candidate correspondence; standard continues own endpoint source task",
+      "source_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
       "new_return_or_receiver_receipt_found": true,
-      "actual_live_dialogue_progress": "Source review complete; one guarded M04 path dragon-scale continuation candidate pending. Actual nested latest main1.56 receipt adopts H15 display only and recognizes H02/M04 prior receipt; no new gameplay approval.",
+      "actual_live_dialogue_progress": "New guarded three-mode M04 path dragon-scale confirmation published; full confirmation read, exact candidate correspondence/canonical main adoption queued. No longer a pending standard candidate.",
       "session_closeout": {
         "commit": "47d90c098924b0c2ac980e91afa31e6127fe0ddd",
         "observed_at_commit": "76a4279586ca40db88198e40d371de32c3766b11",
@@ -54,21 +54,28 @@
       }
     },
     "half_chaos": {
-      "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
-      "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+      "next": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX",
+      "source_commit": "c53a6a727b797b128d7aa5651eafc7fc51f1c667",
       "new_current_return_found": true,
-      "actual_live_dialogue_progress": "r27 reports12 replay action declarations,100 normal main/10 skill requests/210 semantic observation checkpoints. Data bookkeeping checked per report; main metadata-only. All64 game specsUNRUN; next source-field mapping. Actual1.57 guarded failure adoption received.",
-      "session_scope": "r26 resumed after old conversation-only closeout",
-      "next_task_status": "declarative_data_prepared_runtime_unrun"
+      "actual_live_dialogue_progress": "r28 field/observation boundary mapping prepared per report;7 gaps remain. Main metadata only, all64 game specsUNRUN.",
+      "session_scope": "r28 ongoing independent work",
+      "next_task_status": "readiness_matrix_next_runtime_unrun"
     },
     "ui": {
-      "next": "B7-v1 首次连接失败／重试图，等待具体审批",
-      "source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
-      "published_candidate_created": true,
+      "next": "B8 蓝牙权限未允许（可再次授权），尚未创建",
+      "source_commit": "904faf67feea90913139d2c38c7c83dfb6fd3dbe",
+      "published_candidate_created": false,
       "new_return_or_receiver_receipt_found": true,
-      "actual_live_dialogue_progress": "UI metadata reports exact B6 recovery/existing approval preserved and B7-v1 pending. Main has not viewed or accepted artwork; runtime unrun.",
-      "latest_metadata_observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
-      "candidate_approved": false
+      "actual_live_dialogue_progress": "Actual UI metadata records exact B7-v1 static artwork approved by 审批通过 at19:05:29. Main recognizes report only, no visual/runtime acceptance.",
+      "latest_metadata_observed_at_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+      "candidate_approved": false,
+      "last_approved_artwork": {
+        "version": "B7-v1",
+        "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+        "approved_at": "2026-10-17T19:05:29+08:00",
+        "user_statement": "审批通过"
+      },
+      "current_candidate_scope": "B8 not created; B7 prior published candidate is now approved per exact UI record"
     }
   },
   "publication": {
@@ -92,7 +99,7 @@
     "old_evidence": "inherited original scope only; not rerun",
     "received_other_line_confirmed_designs": 0,
     "shared_rule_confirmation_from_mode_returns": 0,
-    "current_phase_candidate_count": 1,
+    "current_phase_candidate_count": 0,
     "current_phase_engine_runs": 0
   },
   "scoring": {
@@ -106,7 +113,7 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "是否同意这条限定方案适用于三个模式：合法回溯到训练启动前，就撤销这次训练，但唯一机会仍已用、不能重开？",
+  "next_action": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": "partial; VALIDATION.json limitation_audit; source and document checks only, no independent/runtime verification",
   "last_confirmed_decision": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -115,16 +122,15 @@
   "resume_after_quota_is_new_candidate_approval": false,
   "decision_index": "PENDING_DECISION.json",
   "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
-  "publication_parent_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+  "publication_parent_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
   "unread_concurrent_returns": [],
-  "latest_return_observation_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+  "latest_return_observation_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
   "current_phase": {
-    "user_instruction": "我同意",
-    "at_local": "2026-10-17T18:49:06+08:00",
-    "interpretation": "continue previously announced prestart source review",
+    "user_instruction": "是的",
+    "at_local": "2026-10-17T19:22:19+08:00",
+    "interpretation": "Recheck prestart source scope after user objection; no new gameplay approval.",
     "candidate_approved": false,
     "main_direct_new_confirmations": 0,
-    "external_shared_received": 0,
     "game_code_changes": 0,
     "engine_runs": 0
   },
@@ -195,5 +201,138 @@
     "approved": true,
     "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
   },
-  "reconfirmed_at_local": "2026-10-17T17:57:09+08:00"
+  "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
+  "source_scope_correction": {
+    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "path": "candidates/h15-h06-prestart-training-restore/v1.json",
+    "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
+    "approved": false,
+    "still_presented_for_approval": false
+  },
+  "concurrent_line_observation": {
+    "observed_at_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+    "half_chaos": {
+      "source_commit": "c53a6a727b797b128d7aa5651eafc7fc51f1c667",
+      "revision": "HC-DESIGN-03-20261017-r28",
+      "read_scope": "Selected RETURN current phase/change/breakpoint, complete observation_field_mapping and seven observation_gaps_to_main metadata; actual r28 receipt/reconciliation rows. No raw field map or source-file audit.",
+      "reported_mapping": {
+        "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+        "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
+        "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
+        "status": "STATIC_FIELD_BOUNDARY_MAP_PREPARED_RUNTIME_BLOCKED_UNRUN",
+        "task_completed": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
+        "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+        "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "working_section": "8.49",
+        "field_groups": 22,
+        "checkpoint_bindings": 210,
+        "request_correspondences": 110,
+        "observation_gaps": 7,
+        "source_files_retrieved_exact": 17,
+        "semantic_whole_file_audit": false,
+        "runtime_observation_count": 0,
+        "all_game_specs": "UNRUN",
+        "next": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX"
+      },
+      "reported_gaps": [
+        {
+          "id": "OG01",
+          "title": "formal_turn_end is pre-end-effects, not requested post-end closure",
+          "source_reference": "OBSERVATION_FIELD_MAPPING.json#/observation_gaps",
+          "disposition": "keep exact post-end timing unresolved; final room snapshot can include next begin, no event rename or callback insertion",
+          "runtime_reproduced": false,
+          "requires_new_gameplay_approval": false
+        },
+        {
+          "id": "OG02",
+          "title": "no generic exact after-main-atom before-normal-end capture",
+          "source_reference": "OBSERVATION_FIELD_MAPPING.json#/observation_gaps",
+          "disposition": "formal_main_action is pre-resolution; end event has already advanced phase/count. It can locate some board fields but cannot be relabeled exact full checkpoint. Do not invoke deferTurnEnd to change ordinary source flow.",
+          "runtime_reproduced": false,
+          "requires_new_gameplay_approval": false
+        },
+        {
+          "id": "OG03",
+          "title": "no per-six-step D01 or rejection mechanism event",
+          "source_reference": "OBSERVATION_FIELD_MAPPING.json#/observation_gaps",
+          "disposition": "use before/returned or thrown authority comparison only where lawful; internal stage obligations remain source-reviewed/UNRUN, EI02/EI03 retained",
+          "runtime_reproduced": false,
+          "requires_new_gameplay_approval": false
+        },
+        {
+          "id": "OG04",
+          "title": "current captured inventory is not irreversible death history",
+          "source_reference": "OBSERVATION_FIELD_MAPPING.json#/observation_gaps",
+          "disposition": "source-specific captured records/snapshots may preserve evidence externally; full actual-death adjudication history/key not located or implemented by this map",
+          "runtime_reproduced": false,
+          "requires_new_gameplay_approval": false
+        },
+        {
+          "id": "OG05",
+          "title": "production retry/error envelope and request-payload binding incomplete",
+          "source_reference": "OBSERVATION_FIELD_MAPPING.json#/observation_gaps",
+          "disposition": "existing processedActions/duplicate/RuleError mapped; old research #commands registry and its conflict codes are not product guarantees. No transport-level pass or new protocol policy.",
+          "runtime_reproduced": false,
+          "requires_new_gameplay_approval": false
+        },
+        {
+          "id": "OG06",
+          "title": "player output comparison lacks supported raw-view/client channel binding",
+          "source_reference": "OBSERVATION_FIELD_MAPPING.json#/observation_gaps",
+          "disposition": "raw room views located, but actual clients/buttons/hints/error serialization and semantic normalization未核; old P0 projection blocks/omits these sources, do not mask them away",
+          "runtime_reproduced": false,
+          "requires_new_gameplay_approval": false
+        },
+        {
+          "id": "OG07",
+          "title": "research receipt snapshots may include an explicit state-changing clock tick",
+          "source_reference": "OBSERVATION_FIELD_MAPPING.json#/observation_gaps",
+          "disposition": "distinguish authority submit return from later explicit tick/journal delivery. Passive observer never adds tick or uses it to manufacture exact boundary. Existing wrapper not admitted toPD/D01.",
+          "runtime_reproduced": false,
+          "requires_new_gameplay_approval": false
+        }
+      ],
+      "next": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX",
+      "engine_runs": 0,
+      "main_independent_validation": false
+    },
+    "ui": {
+      "source_commit": "904faf67feea90913139d2c38c7c83dfb6fd3dbe",
+      "read_scope": "CURRENT_STATE small scalar metadata, complete last_approval and next_task; RETURN current delta/validation/next metadata only. No image bytes/visual QA.",
+      "last_approval": {
+        "version": "B7-v1",
+        "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+        "approved_at": "2026-10-17T19:05:29+08:00",
+        "user_statement": "审批通过"
+      },
+      "approval_report": {
+        "B7": {
+          "status": "user_approved",
+          "user_confirmation_quote": "审批通过",
+          "user_confirmation_time": "2026-10-17T19:05:29+08:00",
+          "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+          "git_blob_sha": "eeb8e0bb5d1098ce4530f823c2c3a202832e3ef6",
+          "source_folder": "candidates/B7/v1",
+          "evidence": "Direct user approval in current conversation after display of this exact candidate"
+        }
+      },
+      "next": {
+        "id": "B8",
+        "subject": "蓝牙权限未允许（可再次授权）",
+        "candidate_created": false,
+        "candidate_approved": false,
+        "next_action": "核对对应权限状态与操作来源，从批准源层制作一张静态候选；当前尚未创建。"
+      },
+      "main_visual_acceptance": false
+    },
+    "standard": {
+      "source_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+      "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+      "source_path": "worklines/standard/rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+      "source_blob": "a6dd8730c418cfc804e23a11662ef96cb1b5832b",
+      "read_scope": "Full original confirmation record plus selected return phase/breakpoint metadata; exact previously presented candidate not reviewed this phase.",
+      "status": "new_shared_confirmation_report_received_exact_candidate_correspondence_and_canonical_main_adoption_queued",
+      "main_canonical_adopted_this_phase": false
+    }
+  }
 }
