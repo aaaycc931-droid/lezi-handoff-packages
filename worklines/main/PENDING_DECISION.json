@@ -1,22 +1,21 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "pending_single_H15_public_display_candidate",
+  "status": "H15_display_confirmed_source_review_next_no_active_candidate",
   "last_confirmed": {
-    "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
-    "candidate_id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
-    "status": "pending_user_confirmation",
-    "task": "是否同意三个模式本版采用这一公开展示口径：训练期间只公开所选兵种和机会已用，不显示实际培养进度或即时失败状态？",
-    "source": "candidates/h15-public-training-display/v1.json",
-    "is_new_user_candidate": true
+    "id": "REVIEW-H15-H06-TRAINING-LIFECYCLE-SOURCE-20261017",
+    "status": "source_review_next_not_new_rule_candidate",
+    "task": "核对H15×H06训练本体、实际进度及失败状态的现有来源和覆盖关系；分开已确认不返还唯一机会与仍待核的其他恢复语义，再补公开字段来源表。",
+    "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
+    "is_new_user_candidate": false
   },
   "unresolved_questions": [
-    "user decision on H15 public training display candidate; exact current display is not yet selected",
     "complete remaining hero/mutation public effects, resource and relation map",
-    "H15 optional public progress/status lifecycle, hidden/illegal/other failed requests and source-specific history interactions; successful-start cost confirmed independently, ordinary public-empty scope received only",
+    "H15 actual training/history lifecycle beyond confirmed display, hidden/illegal/other failed requests and source-specific history interactions; successful-start cost confirmed independently, ordinary public-empty scope received only",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
     "canonical equality/serialization/hash algorithm",
@@ -24,23 +23,17 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": {
+  "current_candidate": null,
+  "candidate_prepared_for_presentation": false,
+  "approval_scope_guard": "Current display after legal success only. Cost/ordinary empty retain original scopes; no H02/M04, hidden failed requests, new windows/check/history, complete key or runtime approval. H02/M04 geometry now has a separately read11:01 original confirmation; display consent is not its authority.",
+  "new_candidate_approved": true,
+  "candidate_presentation": "Existing display approved by explicit current user statement; no other candidate selected.",
+  "resolved_candidate": {
     "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "path": "candidates/h15-public-training-display/v1.json",
-    "approved": false,
-    "scope": "H15 common public display and resulting existing public/private equality boundary only",
-    "question": "是否同意三个模式本版采用这一公开展示口径：训练期间只公开所选兵种和机会已用，不显示实际培养进度或即时失败状态？"
-  },
-  "candidate_prepared_for_presentation": true,
-  "approval_scope_guard": "Main display remains pending. Standard successful-start cost has its own explicit three-mode original confirmation; ordinary public-empty request has its own ordinary-only original confirmation. None approves display, hidden feedback, other failures, new windows or history.",
-  "new_candidate_approved": false,
-  "candidate_presentation": "Prepared for explicit final review; no confirmation implied by current continuation.",
-  "resolved_candidate": {
-    "id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
-    "path": "candidates/h15-first-cultivation-tick/v1.json",
-    "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "approved": true,
-    "confirmed_at_local": "2026-10-16T20:23:07+08:00"
+    "confirmed_at_local": "2026-10-17T11:02:28+08:00"
   },
   "source_updates": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -102,5 +95,55 @@
       "game_runs": 0,
       "read_scope": "complete session_closeout object from RETURN and CURRENT_STATE plus actual closeout observation receipt; not full working8.46 or historical corpus"
     }
+  },
+  "resolved_history": [
+    {
+      "id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+      "path": "candidates/h15-first-cultivation-tick/v1.json",
+      "confirmation_id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+      "approved": true,
+      "confirmed_at_local": "2026-10-16T20:23:07+08:00"
+    },
+    {
+      "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "path": "candidates/h15-public-training-display/v1.json",
+      "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "approved": true,
+      "confirmed_at_local": "2026-10-17T11:02:28+08:00"
+    }
+  ],
+  "confirmation": {
+    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "confirmed_at_local": "2026-10-17T11:02:28+08:00",
+    "user_quote": "我同意你的方案",
+    "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
+    "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "reviewed_candidate": {
+      "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
+      "path": "candidates/h15-public-training-display/v1.json",
+      "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
+    },
+    "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
+    "presented_clauses": [
+      "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
+      "真实培养照常结算，毕业时公开实际棋盘变化。",
+      "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
+    ],
+    "mode_ids": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
+    "not_inferred": [
+      "empty/failed candidate consumption, retry/feedback or new start/check permission",
+      "H06 actual body/progress/failure/reward restore semantics",
+      "M07 same-begin order or other modes H11 space details",
+      "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
+      "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
+    ],
+    "implementation_status": "confirmed_design_not_implemented",
+    "new_engine_tests": 0
   }
 }

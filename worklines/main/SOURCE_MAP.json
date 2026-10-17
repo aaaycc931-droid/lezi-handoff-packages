@@ -1,6 +1,6 @@
 {
   "schema": "lezi.main.source_map.v1",
-  "base_commit": "fef0e8e764d240a63353a11f451db3b56dd08c91",
+  "base_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
   "current_adjudication": "ADJUDICATION.json",
   "source_record_version": "1.49",
   "source_record_identity": {
@@ -182,6 +182,27 @@
       "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
       "git_blob_sha": "cd560fe083541821fdb4a6485f9994080c8423d4",
       "read_scope": "complete H15 entry only"
+    },
+    {
+      "commit": "76a4279586ca40db88198e40d371de32c3766b11",
+      "path": "candidates/h15-public-training-display/v1.json",
+      "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1",
+      "read_scope": "complete approval object and proposal; original preapproval wording retained"
+    },
+    {
+      "commit": "47d90c098924b0c2ac980e91afa31e6127fe0ddd",
+      "observed_at_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+      "scope": "this_conversation_only",
+      "project_or_other_worklines_stopped": false,
+      "next_task": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+      "candidate_approved": false,
+      "read_scope": "complete session_closeout object in standard current state and return; no whole working-draft reread",
+      "path": "worklines/standard/RETURN_TO_MAIN.json"
+    },
+    {
+      "commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+      "path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+      "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0"
     }
   ],
   "local_original_archive_recovered": {
@@ -236,56 +257,47 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.54",
-  "latest_maintenance_base_commit": "fef0e8e764d240a63353a11f451db3b56dd08c91",
+  "current_record_version": "1.55",
+  "latest_maintenance_base_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
   "latest_confirmation_source": {
-    "id": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
-    "confirmed_at_local": "2026-10-16T20:23:07+08:00",
-    "user_quote": "同意方案",
-    "source_type": "direct_user_confirmation_of_immediately_preceding_three_mode_H15_first_tick_question",
-    "candidate_id": "DECISION-H15-FIRST-CULTIVATION-TICK-20261016",
+    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "confirmed_at_local": "2026-10-17T11:02:28+08:00",
+    "user_quote": "我同意你的方案",
+    "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
+    "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "reviewed_candidate": {
-      "commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
-      "path": "candidates/h15-first-cultivation-tick/v1.json",
-      "git_blob_sha": "6128a28739b8e98aa40b9dfb7a40a3bdcbfda115"
+      "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
+      "path": "candidates/h15-public-training-display/v1.json",
+      "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
     },
-    "immediately_preceding_question": "是否同意这一首次计数方案用于三个模式？",
+    "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
     "presented_clauses": [
-      "开局启动：首个己方正常正式回合开始时培养+1。",
-      "中途在开始结算后启动：当回合不补进度，从下个己方正常正式回合开始+1。",
-      "兵成本2：T5开始结算后启动0/2，T6为1/2，T7为2/2并按既有合法来源处理毕业。"
+      "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
+      "真实培养照常结算，毕业时公开实际棋盘变化。",
+      "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
     ],
     "mode_ids": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
-    "scope": "First cultivation increment after a successful initial training start only; preserves existing later normal-begin progression.",
-    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_timing_updates/H15_first_cultivation_tick",
+    "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
     "not_inferred": [
-      "training start action cost",
-      "empty/illegal candidate handling or whether an unsuccessful request consumes opportunity",
-      "H15 progress mandatory publicity or forced privacy, status/failure output",
-      "H15 first tick versus M07 same-begin ordering",
-      "H06 progress/body/status restoration beyond existing exception",
-      "other modes H11 space semantics",
-      "complete repetition key, pressure, implementation/runtime/scoring/NET"
+      "empty/failed candidate consumption, retry/feedback or new start/check permission",
+      "H06 actual body/progress/failure/reward restore semantics",
+      "M07 same-begin order or other modes H11 space details",
+      "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
+      "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
     ],
     "implementation_status": "confirmed_design_not_implemented",
     "new_engine_tests": 0
   },
   "latest_received_sources": [
     {
-      "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
-      "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
-      "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
-      "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
-    },
-    {
-      "commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-      "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
-      "git_blob_sha": "14830add463c04cd9c14e5265d829d390216624b",
-      "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+      "commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+      "path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+      "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0"
     }
   ],
   "latest_standard_mode_confirmations": {
@@ -372,12 +384,12 @@
       "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b"
     }
   ],
-  "publication_parent_commit": "fef0e8e764d240a63353a11f451db3b56dd08c91",
+  "publication_parent_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
   "unread_concurrent_returns": [],
   "current_phase_candidate_source": {
     "id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "path": "candidates/h15-public-training-display/v1.json",
-    "approved": false,
+    "approved": true,
     "source_baseline": {
       "commit": "e588078339fc256a9737e08a0db8d83322262171",
       "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
@@ -391,16 +403,17 @@
       "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
       "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
       "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
-    }
+    },
+    "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "confirmation_scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only"
   },
-  "confirmed_record_maintenance_note": "1.54 adds exact separately confirmed H15 successful-start cost; original1.53 core/earlier49 confirmation records/first tick unchanged; ordinary empty only scoped coordination. Display not approved.",
+  "confirmed_record_maintenance_note": "1.55 adds direct11:02 current-user H15 display selection and its source-field mapping; complete prior1.54 core/50 confirmations/timing/start-cost unchanged. Implementation/runtime separate. Also receives separately approved11:01 H02/M04 guarded geometry, not derived from H15 consent.",
   "concurrent_source_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
   "latest_standard_shared_confirmation_sources": [
     {
-      "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
-      "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
-      "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
-      "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+      "commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+      "path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+      "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0"
     }
   ],
   "latest_standard_read_scope": {
@@ -441,10 +454,10 @@
     ]
   },
   "current_collaboration_read": {
-    "commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+    "commit": "76a4279586ca40db88198e40d371de32c3766b11",
     "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
-    "working_revision": "2026-10-16.v0.12",
-    "git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
-    "read_scope": "INTEGRATED_START/TASK_ROUTES/GITHUB_HANDOFF_WORKFLOW/AUTHORIZATION_AND_ADOPTION/BASELINE_DELTA_CHECK/MANDATORY_PRECHECK/TEMPORAL_OPPORTUNITY_CHECK/AI_LIMITATION_CONTROL/PART6/PART7; scoped, not entire body"
+    "working_revision": "2026-10-17.v0.13",
+    "git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
+    "read_scope": "complete v0.13 MANDATORY_PRECHECK and AI_LIMITATION_CONTROL; full v0.12-to-v0.13 diff; unchanged authorization/handoff/maintenance modules reused"
   }
 }
