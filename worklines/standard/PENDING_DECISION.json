@@ -1,6 +1,6 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "single_local_H02_M04_path_scale_A_candidate_pending",
+  "status": "session_closed_H02_M04_path_scale_A_still_pending",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
@@ -9,11 +9,12 @@
   "next_work_item": {
     "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
     "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
-    "action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
+    "action": "用户明确继续本工作线后，恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的完整限定A与AP-S01具体情形，交用户明确决定；本次收束及以后继续均不当作批准。",
     "status": "candidate_prepared_pending_user_decision_not_approved",
     "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
     "pending_is_not_approved": true,
-    "approved": false
+    "approved": false,
+    "requires_continuation_before_work": true
   },
   "unresolved_questions": [
     "Latest main1.61 H15/H06 graduation source review next; no active user candidate reported. Newer H15 sources not fully read/adopted here.",
@@ -165,7 +166,7 @@
     "containing_commit": "Resolve containing commit from Git history after publication.",
     "kind": "new_pending_local_candidate_not_an_approved_rule"
   },
-  "local_handling": "Bounded source review complete, specific A presented for explicit user decision; no new gameplay confirmation.",
+  "local_handling": "Current conversation closed only; exact AP candidate remains unapproved. Restore complete proposal/example after explicit continuation; closeout is not approval.",
   "previous_main_candidate_reference": {
     "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
@@ -174,11 +175,12 @@
   "local_next": {
     "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
     "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
-    "action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
+    "action": "用户明确继续本工作线后，恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的完整限定A与AP-S01具体情形，交用户明确决定；本次收束及以后继续均不当作批准。",
     "status": "candidate_prepared_pending_user_decision_not_approved",
     "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
     "pending_is_not_approved": true,
-    "approved": false
+    "approved": false,
+    "requires_continuation_before_work": true
   },
   "main_latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
   "last_confirmed_scope_note": "Existing last_confirmed/confirmation fields retain previously fully adopted H15 display source, not a claim that newer reported confirmation is adopted.",
@@ -188,5 +190,12 @@
     "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
     "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
     "is_new_user_candidate": false
+  },
+  "session_closeout": {
+    "revision": "STD-SESSION-CLOSEOUT-20261017-r2",
+    "requested_at_local": "2026-10-17T23:28:48+08:00",
+    "scope": "this_conversation_only",
+    "candidate_approved": false,
+    "continuation_required_before_more_design": true
   }
 }

@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "H02_M04_path_scale_source_review_complete_specific_A_pending",
+  "status": "closed_current_conversation_H02_M04_path_scale_candidate_unapproved",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -37,11 +37,12 @@
   "next_task": {
     "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
     "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
-    "action": "恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的限定A与AP-S01具体情形，等待用户明确决定；不把继续当批准。",
+    "action": "用户明确继续本工作线后，恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的完整限定A与AP-S01具体情形，交用户明确决定；本次收束及以后继续均不当作批准。",
     "status": "candidate_prepared_pending_user_decision_not_approved",
     "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
     "pending_is_not_approved": true,
-    "approved": false
+    "approved": false,
+    "requires_continuation_before_work": true
   },
   "external_delivery": {
     "prepared_here": true,
@@ -90,7 +91,7 @@
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
   "limitation_audit_status": "partial_candidate_pending",
-  "verification_level": "V2 exact related source clauses/approved exclusions; V1 conditional proposal/example only; AP-S01/AP01-AP08 unrun",
+  "verification_level": "Session closeout and payload integrity only; prior V2 sources/V1 conditional designs retained, AP and all game specs unrun.",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -132,10 +133,10 @@
     ]
   },
   "publication_scope": "PUBLICATION_SCOPE.json",
-  "updated_at_local": "2026-10-17T21:49:00+08:00",
-  "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
-  "publication_parent_commit": "c0744c657a674a885a04cbbcda0c0b8f2bd32d65",
-  "phase": "bounded_source_review_complete_narrow_candidate_pending_user_decision",
+  "updated_at_local": "2026-10-17T23:32:00+08:00",
+  "source_commit": "05501db57425ee406983468ba81f1efdfc73057f",
+  "publication_parent_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+  "phase": "session_closeout_no_new_rule_approval",
   "new_rule_confirmations_this_round": 0,
   "retained_source_round_confirmations": 21,
   "M04_status": "confirmed_design_not_implemented_or_tested",
@@ -190,9 +191,9 @@
   "M05_status": "confirmed_design_not_implemented_or_tested",
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
   "latest_user_instruction": {
-    "quote": "进行下一步",
-    "at_local": "2026-10-17T21:45:41+08:00",
-    "scope": "Continue bounded source review and prepare concrete candidate if needed; not gameplay approval."
+    "quote": "收束本轮对话",
+    "at_local": "2026-10-17T23:28:48+08:00",
+    "scope": "Close this conversation only, preserve all work and pending candidate; no new approval."
   },
   "new_rule_confirmations_since_dispatch": 10,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
@@ -368,41 +369,56 @@
     "scope": "Approve prior specific A outcome via 可以完成进攻; naming authorship inquiry separate"
   },
   "session_closeout": {
-    "revision": "STD-SESSION-CLOSEOUT-20261017-r1",
+    "revision": "STD-SESSION-CLOSEOUT-20261017-r2",
     "status": "closed_current_conversation",
-    "requested_at_local": "2026-10-17T10:46:29+08:00",
-    "user_quote": "那就收束本轮对话吧",
+    "requested_at_local": "2026-10-17T23:28:48+08:00",
+    "user_quote": "收束本轮对话",
     "scope": "this_conversation_only",
     "project_or_other_worklines_stopped": false,
     "standard_mode_fully_completed": false,
     "new_rule_confirmation_by_closeout": false,
     "new_rule_confirmations_this_closeout": 0,
     "ordinary_confirmation_count": 31,
-    "ordinary_confirmations_since_source_round": 10,
     "retained_source_round_confirmations": 21,
-    "direct_shared_confirmations_originated_here": 9,
-    "last_completed_design_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-    "next_task": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+    "ordinary_confirmations_since_source_round": 10,
+    "direct_shared_confirmations_originated_here": 11,
+    "this_conversation_gameplay_confirmations": {
+      "ordinary": 0,
+      "direct_shared": 2,
+      "ids": [
+        "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+        "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017"
+      ]
+    },
+    "last_completed_design_commit": "05501db57425ee406983468ba81f1efdfc73057f",
+    "next_task": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
     "next_task_status": "candidate_prepared_pending_user_decision_not_approved",
     "pending_candidate_source": {
-      "commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
-      "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "heading": "当前待决策｜H02刺杀机会与M04战车冲锋几何"
+      "commit": "05501db57425ee406983468ba81f1efdfc73057f",
+      "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
     },
     "candidate_approved": false,
     "candidate_text_preserved_exact": true,
     "unrun_current_specs": [
-      "AG-S01",
-      "AG01-AG08"
+      "AP-S01",
+      "AP01-AP08"
     ],
     "all_unrun_specs_remain_unrun": true,
     "new_game_code_changes": 0,
     "game_engine_runs": 0,
+    "independent_review": false,
     "scoring_frozen": true,
     "NET": "paused",
     "ZIP_generated": false,
     "handoff_method": "fixed GitHub entry plus actual current bodies/state/RETURN_TO_MAIN and short resume text",
-    "resume_text": "继续《乐子象棋》普通象棋工作线，读取并执行最新固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt 。先保护未回传成果，从H02＋M04后续刺杀机会与战车冲锋几何的现成待定方案继续；恢复完整方案和具体情形后交我决定，不把继续当作批准。继承已确认设计，评分冻结、NET暂停；阶段完成或共享阻断时增量写回本线资料及回传记录。",
+    "resume_text": "继续《乐子象棋》普通象棋工作线，读取并执行最新固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt 。从H02＋M04后续刺杀的路径龙鳞现成待定方案接续，恢复完整限定方案和具体情形后交我决定，不把继续当作批准。继承已确认设计及三线共同文案，评分冻结、NET暂停；阶段完成或共享阻断时增量写回本线资料及回传记录。",
+    "protection": {
+      "previous_stage": "05501db57425ee406983468ba81f1efdfc73057f",
+      "payloads_compared": 11,
+      "all_exact": true,
+      "unreturned_deltas_in_compared_stage": 0
+    },
     "recipient_reading_of_this_closeout_verified": null,
     "recipient_adoption_of_this_closeout_verified": null,
     "new_automatic_messages_sent": false,
@@ -535,5 +551,10 @@
     "status": "complete_gap_narrowed_pending_user_choice",
     "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
     "new_gameplay_confirmation": false
+  },
+  "previous_session_closeout_source": {
+    "commit": "05501db57425ee406983468ba81f1efdfc73057f",
+    "path": "CURRENT_STATE.json#session_closeout",
+    "revision": "STD-SESSION-CLOSEOUT-20261017-r1"
   }
 }
