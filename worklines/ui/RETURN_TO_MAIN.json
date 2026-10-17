@@ -1,71 +1,49 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-B6-RECOVERY-B7-CANDIDATE-20261017",
-  "previous_record_id": "UI-WORKFLOW-CI16-20261016",
-  "base_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+  "record_id": "UI-B7-APPROVAL-20261017",
+  "previous_record_id": "UI-B6-RECOVERY-B7-CANDIDATE-20261017",
+  "base_commit": "c53a6a727b797b128d7aa5651eafc7fc51f1c667",
   "from_workline": "ui",
   "to_workline": "main",
-  "updated_at_local": "2026-10-17T17:43:23.181+08:00",
-  "scope": "Exact B6 recovery and preservation of existing approval; one new first-connection-failure/retry static candidate B7-v1",
-  "authorization": "User requested continued UI work and reusable GitHub collaboration; existing scoped project-artwork publication/maintenance authorization reused",
+  "updated_at_local": "2026-10-17T19:05:29+08:00",
+  "scope": "B7-v1 static artwork approval only; immutable art/source files unchanged",
   "current_state_and_approval_delta": {
-    "B6": {
-      "status": "user_approved",
-      "user_confirmation_quote": "通过",
-      "user_confirmation_time": "2026-10-16T18:26:17+08:00",
-      "sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
-      "evidence": "Preserved project reception record CI-16; exact image and 14 source identities recovered; direct shared transcript not retrieved in this round"
-    },
     "B7": {
-      "status": "pending_user_review",
+      "status": "user_approved",
+      "user_confirmation_quote": "审批通过",
+      "user_confirmation_time": "2026-10-17T19:05:29+08:00",
       "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
-      "source_folder": "candidates/B7/v1"
+      "git_blob_sha": "eeb8e0bb5d1098ce4530f823c2c3a202832e3ef6",
+      "source_folder": "candidates/B7/v1",
+      "evidence": "Direct user approval in current conversation after display of this exact candidate"
     }
   },
-  "new_art_and_editable_layers_parameters": [
-    "candidates/B6/v1 (14 exact recovered files)",
-    "candidates/B7/v1 (15 candidate/source/evidence files)"
-  ],
-  "changed_file_identities": "CANDIDATE_RESTORE.json plus assets/ui/INDEX.json",
-  "reused_asset_references": "105 baseline dependencies / 75 existing unique assets, unchanged; original TASKS.B6 entries retained",
+  "changed_file_identities": "Git tree and exact published metadata readback; candidate file identities remain CANDIDATE_RESTORE.json and assets/ui/INDEX.json",
+  "new_art_and_editable_layers_parameters": [],
+  "reused_asset_references": "All 15 B7 files and 14 B6 files preserved byte-for-byte; baseline dependencies unchanged",
   "actual_validation": {
-    "B6_preview_exact_recomposition": true,
-    "B4_B5_recomposition_changed_pixels": 0,
-    "B7_changed_pixels_from_B6": 17145,
-    "B7_protected_pixels_changed": 0,
-    "original_dimensions": [
-      852,
-      1846
-    ],
-    "font_modified": false,
-    "actual_B7_image_viewed": true,
-    "restore_pipeline": {
-      "baseline_files": 105,
-      "work_files": 29,
-      "unique_assets": 103,
-      "network_asset_bytes": 0,
-      "B6_exact_output": true,
-      "B7_exact_output": true
-    }
+    "exact_B7_image_git_blob_checked": true,
+    "previous_valid_pixel_and_visual_evidence_reused": true,
+    "new_artwork_files": 0,
+    "new_game_code_files": 0
   },
   "protected": [
-    "all previous approvals and home/V4 exceptions",
+    "all approved artwork and source layers",
+    "home/V4 exceptions",
     "withdrawn candidates",
-    "B6 original bytes",
     "scoring frozen",
     "NET paused",
     "other worklines and Git history"
   ],
   "unrun_scope": [
     "Bluetooth devices",
-    "runtime behavior",
-    "responsive and long-name cases",
+    "runtime interaction",
+    "responsive and long-name acceptance",
     "production implementation",
     "APK/deployment"
   ],
   "shared_blockers": [],
-  "next_action": "Display exact B7-v1 image for user-specific review; do not design another image or infer approval from continue",
-  "receiver_adoption": "unknown",
-  "publication_parent_checked": "338acdf7c359b18e8a246a92354712b899e0f996",
-  "publication_status": "Artifacts are delivered by the commit containing this record; resolve the exact commit through Git history. This does not claim receiver reading/adoption."
+  "next_action": "核对对应权限状态与操作来源，从批准源层制作一张静态候选；当前尚未创建。",
+  "publication_status": "Approval is delivered by the commit containing this record; resolve exact commit through Git history. Receiver reading/adoption remains unknown.",
+  "receiver_adoption": "unknown"
 }
