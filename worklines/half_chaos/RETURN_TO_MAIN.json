@@ -2,59 +2,70 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
-  "revision": "HC-DESIGN-03-20261017-r24",
-  "phase": "minimal_future_acceptance_scope_and_fixture_contracts",
+  "base_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+  "revision": "HC-DESIGN-03-20261017-r25",
+  "phase": "read_only_actual_engine_source_inventory",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "read_only_inventory_actual_jieqi_engine_commit_and_existing_fixture_action_state_projection_clock_and_dedup_entrypoints_without_code_or_runtime",
+  "current_breakpoint": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
   "changes": {
     "working_sections": [
       "0",
-      "8.44"
+      "8.45"
     ],
-    "new_fixed_file": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
-    "minimal_acceptance_scope": {
-      "path": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
-      "status": "PLANNED_UNRUN_NOT_EXECUTABLE",
-      "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
-      "working_section": "8.44",
-      "planned_replays": 12,
-      "existing_spec_rows": 64,
-      "new_game_specs": 0,
-      "executed_replays": 0,
-      "all_game_specs": "UNRUN",
-      "engine_commit": null,
-      "adapter_verified": false,
-      "shared_questions": "main retains source tier/terminal/key/order dependencies",
-      "next": "NEXT-HC-ENGINE-SOURCE-INVENTORY"
+    "new_fixed_file": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
+    "updated_acceptance_scope": "source entrypoints and blockers only,12 plans/64 old specs allUNRUN",
+    "engine_source_inventory": {
+      "path": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
+      "status": "STATIC_SOURCE_REVIEW_PARTIAL_ALL_12_REPLAYS_BLOCKED_UNRUN",
+      "handoff_source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+      "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "inspection_branch": "codex/half-chaos-h11-b-clock-20261012",
+      "source_files_retrieved": 23,
+      "full_file_audit": false,
+      "gate_groups_mapped": 7,
+      "static_findings": 7,
+      "planned_replays_blocked": 12,
+      "old_specs": 64,
+      "all_UNRUN": true,
+      "game_runs": 0,
+      "next": "NEXT-HC-INITIALIZATION-WITNESS-DATA"
     },
-    "new_game_specs": 0,
-    "existing64_status": "UNRUN"
+    "new_game_specs": 0
   },
   "source_and_confirmation_scope": {
-    "prior_source": "r23 immutable CONFIRMATIONS at 2f663252f0d1b5ab8eea7f780502f287bb7dd595",
-    "prior_valid_confirmations_preserved": true,
-    "new_rule_or_shared_consumption": 0,
-    "future_runtime_authorization": "not established by scope preparation"
+    "source_inventory": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
+    "actual_engine_inspection_source": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "code_is_not_new_gameplay_authority": true,
+    "prior_confirmations_preserved": true,
+    "ordinary_H15_empty_not_adopted": {
+      "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+      "sha": "14830add463c04cd9c14e5265d829d390216624b",
+      "id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+      "scope": "standard only public-determinable empty pool",
+      "full_original_read": true,
+      "adopted_in_half_chaos": false
+    },
+    "H02_M04_shared_candidate": "metadata only, not adopted"
   },
   "actual_validation": {
-    "sources": "current entry/state/project agreement, selected collaboration modules, full WORKING8.40/8.42; all unchanged exact source objects reused",
-    "document_checks": "12 replay IDs;64 distinct old spec rows and references; two valid pairs; DS02 continuity; JSON/link/path preservation checks",
-    "manual_inference": "V1 same assistant; source contracts V2",
+    "source": "actual remote branches/open PRs/compare/commit/tree and selected complete functions/definitions",
+    "byte_scope": "23 cached source objects exact remote Git blobs; own11 r24 fixed files match handoff base",
+    "manual_inference": "cross-source implementation gaps V1 same-assistant; actual object/function text V2",
+    "document_checks": "JSON/source references,7 gate and7 finding IDs,12 blockers and64 UNRUN, prior body preservation",
     "independent_review": false,
     "game_engine_tests": 0,
     "game_code_changes": 0,
-    "client_runs": 0
+    "client_runs": 0,
+    "business_repo_writes": 0
   },
   "unrun": [
-    "all64 existing PD/DS game specs",
+    "all12 planned replays and64 existing specs",
     "all inherited other game specs",
-    "all12 planned natural replays and public pair comparisons",
-    "engine/client/clock/dedup/privacy/full-search/source-order/key acceptance"
+    "all static-source issues, privacy/clock/dedup and full search/order/key/runtime acceptance"
   ],
   "shared_coordination": [
     {
@@ -110,7 +121,7 @@
       ]
     }
   ],
-  "next_independent_task": "NEXT-HC-ENGINE-SOURCE-INVENTORY",
+  "next_independent_task": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
   "scoring_frozen": true,
   "NET": "paused",
   "implementation_status": "design_and_specification_only",
@@ -122,23 +133,21 @@
     "no_other_receiver_receipt_prefilled": true
   },
   "publication_limits": "private full protocols/raw archives remain excluded; current design bodies and exact existing public sources available; no claim of full historical/runtime migration",
-  "source_baseline_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
-  "concurrent_main_source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+  "source_baseline_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+  "concurrent_main_source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
   "current_stage_changes": [
-    "12 planned replays with no executable adapter or engine commit",
-    "64 old spec obligation mappings; partial/excluded source obligations explicit",
-    "fixture/authority/both-player-view/phase/evidence contracts",
-    "seven future prerequisites all unestablished; no new permission requested"
+    "actual current half-chaos source branch14b/PR7 checked, not assumed latest from old handoff",
+    "23 source files exact identities with scoped semantic reading",
+    "7 source groups and7 static findings, mode blocks all12 replay plans",
+    "no code changes/gate expansion/runtime; independent legal initialization witness data next"
   ],
   "prior_H14_stage_return": "main dd467a1 actual scoped stage/excerpt receipt covers H14/H16; body/spec/runtime adoption not inferred",
   "remote_reconciliation": {
-    "source_head": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
-    "actual_base_tree_sha": "0e63e587d4beef40ed942835ecc99c8b18875613",
-    "target_scope": "ten own fixed files plus new ACCEPTANCE_SCOPE.json",
+    "source_head": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+    "actual_base_tree_sha": "2a3c4d0eb004ae5c16743adc8599f75bb2c50534",
+    "target_scope": "eleven own fixed files plus new ENGINE_SOURCE_INVENTORY.json",
     "publication_method": "same verified HEAD tree/parent, expected_sha force=false",
-    "other_lines": "preserve unrelated blobs; no receiver receipt prefill",
-    "publication_head": "aaa834161fcd2bd9c8c0604d54ec96f5da2fb28f",
-    "actual_publication_base_tree_sha": "ed185bfbf5e0f39a0e72b2db579f1a0c797c26e1"
+    "other_lines": "preserve other workline changes; do not prefill main receipt"
   },
   "prior_stage_receipt": {
     "source_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
@@ -159,7 +168,7 @@
     "local_user_rule_approvals": 0,
     "existing_shared_confirmations_newly_consumed": 0
   },
-  "confirmed_delta_scope_note": "zero new local gameplay approvals and zero new shared confirmation consumption; three r23 sources plus all prior valid rules retained",
+  "confirmed_delta_scope_note": "no new gameplay approval/shared consumption; static code does not revise valid source decisions",
   "prior_r18_stage_receipt": {
     "source_commit": "813395aa496b09426a0e5113c4145c0952ba32ca",
     "return_commit": "d9879b0bcd9ecdc93f6acfcc47df31ddc08d5736",
@@ -360,7 +369,7 @@
       }
     }
   },
-  "publication_parent_commit": "aaa834161fcd2bd9c8c0604d54ec96f5da2fb28f",
+  "publication_parent_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
   "previous_r21_return": {
     "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "phase": "M01_M08_D01_coverage_audit",
@@ -621,11 +630,9 @@
     "new_shared_rule_consumption_from_main_recheck": 0
   },
   "actual_receiver_status": {
-    "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
-    "r22_stage_metadata_received": true,
-    "r21_r22_full_prefixes_verified": false,
-    "r23_received": null,
-    "r24_received": null
+    "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+    "r22_metadata_received": true,
+    "r23_r24_r25_received": null
   },
   "concurrent_standard_retry_r23": {
     "publication_head": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
@@ -739,5 +746,226 @@
       "START_COLLABORATION.md full"
     ],
     "adopted_scope": "reuse prior confirmed same-scope authorization across dialogues; visible write scope before GitHub increment; no added data disclosure, plugin permission, runtime or gameplay approval"
-  }
+  },
+  "shared_source_implementation_questions": [
+    {
+      "id": "EI01",
+      "title": "half_chaos source admission blocks all12 planned replays",
+      "affected_specs": [
+        "PD-S01",
+        "PD-S02",
+        "PD-S03",
+        "PD-S04",
+        "PD-S05",
+        "PD-S06",
+        "PD-S07",
+        "PD-S08",
+        "PD-S09",
+        "PD-S10",
+        "PD-S11",
+        "PD-S12",
+        "PD-S13",
+        "PD-S14",
+        "PD-S15",
+        "PD-S16",
+        "PD-S17",
+        "PD-S18",
+        "PD-S19",
+        "PD-S20",
+        "PD-S21",
+        "PD-S22",
+        "PD-S23",
+        "PD-S24",
+        "PD-S25",
+        "PD-S26",
+        "PD-S27",
+        "PD-S28",
+        "PD-S29",
+        "PD-S30",
+        "PD-S31",
+        "PD-S32",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36",
+        "DS-S01",
+        "DS-S02",
+        "DS-S03",
+        "DS-S04",
+        "DS-S05",
+        "DS-S06",
+        "DS-S07",
+        "DS-S08",
+        "DS-S09",
+        "DS-S10",
+        "DS-S11",
+        "DS-S12",
+        "DS-S13",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16",
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22",
+        "DS-S23",
+        "DS-S24",
+        "DS-S25",
+        "DS-S26",
+        "DS-S27",
+        "DS-S28"
+      ],
+      "source_reference": "ENGINE_SOURCE_INVENTORY.json#/findings/0",
+      "owner": "main scoped mode-source admission; keep existing gates",
+      "new_gameplay_candidate": false,
+      "runtime_reproduced": false
+    },
+    {
+      "id": "EI02",
+      "title": "hourglass closed-result own-royal safety preflight not present in inspected path",
+      "affected_specs": [
+        "DS-S07",
+        "DS-S08",
+        "DS-S09",
+        "DS-S10",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16"
+      ],
+      "source_reference": "ENGINE_SOURCE_INVENTORY.json#/findings/1",
+      "owner": "main/current shared D01 implementation alignment",
+      "new_gameplay_candidate": false,
+      "runtime_reproduced": false
+    },
+    {
+      "id": "EI03",
+      "title": "current-in-check bomb refusal gate not present in inspected path",
+      "affected_specs": [
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22"
+      ],
+      "source_reference": "ENGINE_SOURCE_INVENTORY.json#/findings/2",
+      "owner": "main/current shared D01 implementation alignment",
+      "new_gameplay_candidate": false,
+      "runtime_reproduced": false
+    },
+    {
+      "id": "EI04",
+      "title": "existing research runner/projection are not a generic PD/DS adapter",
+      "affected_specs": [
+        "PD-S01",
+        "PD-S02",
+        "PD-S03",
+        "PD-S04",
+        "PD-S05",
+        "PD-S06",
+        "PD-S07",
+        "PD-S08",
+        "PD-S09",
+        "PD-S10",
+        "PD-S11",
+        "PD-S12",
+        "PD-S13",
+        "PD-S14",
+        "PD-S15",
+        "PD-S16",
+        "PD-S17",
+        "PD-S18",
+        "PD-S19",
+        "PD-S20",
+        "PD-S21",
+        "PD-S22",
+        "PD-S23",
+        "PD-S24",
+        "PD-S25",
+        "PD-S26",
+        "PD-S27",
+        "PD-S28",
+        "PD-S29",
+        "PD-S30",
+        "PD-S31",
+        "PD-S32",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36",
+        "DS-S01",
+        "DS-S02",
+        "DS-S03",
+        "DS-S04",
+        "DS-S05",
+        "DS-S06",
+        "DS-S07",
+        "DS-S08",
+        "DS-S09",
+        "DS-S10",
+        "DS-S11",
+        "DS-S12",
+        "DS-S13",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16",
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22",
+        "DS-S23",
+        "DS-S24",
+        "DS-S25",
+        "DS-S26",
+        "DS-S27",
+        "DS-S28"
+      ],
+      "source_reference": "ENGINE_SOURCE_INVENTORY.json#/findings/3",
+      "owner": "future scoped fixture/source adapter work",
+      "new_gameplay_candidate": false,
+      "runtime_reproduced": false
+    },
+    {
+      "id": "EI05",
+      "title": "public ordinary self-check simulation is not full path/rebound atomic result",
+      "affected_specs": [
+        "PD-S05",
+        "PD-S15",
+        "PD-S20",
+        "PD-S36"
+      ],
+      "source_reference": "ENGINE_SOURCE_INVENTORY.json#/findings/4",
+      "owner": "main source/implementation atomic safety alignment",
+      "new_gameplay_candidate": false,
+      "runtime_reproduced": false
+    },
+    {
+      "id": "EI06",
+      "title": "special path currently encoded tier2, source approval remains unresolved",
+      "affected_specs": [
+        "PD-S34"
+      ],
+      "source_reference": "ENGINE_SOURCE_INVENTORY.json#/findings/5",
+      "owner": "main HC-MAIN-H16-ACTION-TIER",
+      "new_gameplay_candidate": false,
+      "runtime_reproduced": false
+    },
+    {
+      "id": "EI07",
+      "title": "M01 king-on-leg endpoint enumeration differs from the completing knight route",
+      "affected_specs": [
+        "PD-S12",
+        "PD-S15",
+        "PD-S36"
+      ],
+      "source_reference": "ENGINE_SOURCE_INVENTORY.json#/findings/6",
+      "owner": "main shared M01 geometry/source implementation alignment",
+      "new_gameplay_candidate": false,
+      "runtime_reproduced": false
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "schema": "lezi.half_chaos.minimum_acceptance_scope.v1",
-  "revision": "HC-DESIGN-03-20261017-r24",
+  "revision": "HC-DESIGN-03-20261017-r25",
   "workline": "half_chaos",
-  "status": "PLANNED_UNRUN_NOT_EXECUTABLE",
+  "status": "STATIC_SOURCE_LOCATED_ALL_12_MODE_BLOCKED_UNRUN",
   "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
   "working_sections": [
     "8.40",
@@ -24,9 +24,9 @@
   "game_code_changes": 0,
   "client_runs": 0,
   "engine_repository": "aaaycc931-droid/jieqi-engine",
-  "engine_branch": null,
-  "engine_commit": null,
-  "engine_source_inspected_this_phase": false,
+  "engine_branch": "codex/half-chaos-h11-b-clock-20261012",
+  "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+  "engine_source_inspected_this_phase": true,
   "adapter_entrypoints_verified": false,
   "runtime_authorization_established": false,
   "all_game_spec_status": "UNRUN",
@@ -147,6 +147,15 @@
         "G-STATE",
         "G-PHASE",
         "G-EVIDENCE"
+      ],
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI05",
+        "EI06"
       ]
     },
     {
@@ -207,6 +216,15 @@
         "G-STATE",
         "G-PHASE",
         "G-EVIDENCE"
+      ],
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI05",
+        "EI06"
       ]
     },
     {
@@ -271,6 +289,16 @@
         "G-STATE",
         "G-PHASE",
         "G-EVIDENCE"
+      ],
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI05",
+        "EI06",
+        "EI07"
       ]
     },
     {
@@ -348,6 +376,15 @@
         "G-STATE",
         "G-PHASE",
         "G-EVIDENCE"
+      ],
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI05",
+        "EI06"
       ]
     },
     {
@@ -407,7 +444,16 @@
       ],
       "paired_comparison": "PAIR-PD05",
       "secret_source_kind": "rook",
-      "additional_gate": "G-VIEW"
+      "additional_gate": "G-VIEW",
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI05",
+        "EI06"
+      ]
     },
     {
       "id": "MA-PD05-B",
@@ -479,7 +525,16 @@
       ],
       "paired_comparison": "PAIR-PD05",
       "secret_source_kind": "horse",
-      "additional_gate": "G-VIEW"
+      "additional_gate": "G-VIEW",
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI05",
+        "EI06"
+      ]
     },
     {
       "id": "MA-PD06-A",
@@ -538,7 +593,16 @@
       ],
       "paired_comparison": "PAIR-PD06",
       "secret_source_kind": "horse",
-      "additional_gate": "G-VIEW"
+      "additional_gate": "G-VIEW",
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI05",
+        "EI06"
+      ]
     },
     {
       "id": "MA-PD06-B",
@@ -610,7 +674,16 @@
       ],
       "paired_comparison": "PAIR-PD06",
       "secret_source_kind": "pawn",
-      "additional_gate": "G-VIEW"
+      "additional_gate": "G-VIEW",
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI05",
+        "EI06"
+      ]
     },
     {
       "id": "MA-DS01-02",
@@ -690,7 +763,15 @@
         "G-EVIDENCE"
       ],
       "history_continuity": "DS02 must continue actual accepted DS01 sequence; no separate opening/recreated midpoint",
-      "availability_guard": "only originally legal D01 H06/H05 replacement; no normal H05/H06 time skills or extra mutation"
+      "availability_guard": "only originally legal D01 H06/H05 replacement; no normal H05/H06 time skills or extra mutation",
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI02"
+      ]
     },
     {
       "id": "MA-DS03",
@@ -764,7 +845,15 @@
         "G-PHASE",
         "G-EVIDENCE"
       ],
-      "availability_guard": "same legally available D01 branch; no M05 or third hero"
+      "availability_guard": "same legally available D01 branch; no M05 or third hero",
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI02"
+      ]
     },
     {
       "id": "MA-DS04",
@@ -838,7 +927,15 @@
         "G-PHASE",
         "G-EVIDENCE"
       ],
-      "availability_guard": "D01 only; hourglass safety permission not copied to bomb"
+      "availability_guard": "D01 only; hourglass safety permission not copied to bomb",
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": [
+        "EI03"
+      ]
     },
     {
       "id": "MA-DS05",
@@ -933,7 +1030,13 @@
         "G-PHASE",
         "G-EVIDENCE"
       ],
-      "availability_guard": "D01 only; no full H06 snapshot/history restore"
+      "availability_guard": "D01 only; no full H06 snapshot/history restore",
+      "execution_blockers": [
+        "EI01",
+        "EI04"
+      ],
+      "engine_inspection_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "conditional_static_findings": []
     }
   ],
   "paired_comparisons": [
@@ -977,7 +1080,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S02",
@@ -997,7 +1101,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S03",
@@ -1017,7 +1122,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S04",
@@ -1037,7 +1143,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S05",
@@ -1057,7 +1164,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S06",
@@ -1077,7 +1185,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S07",
@@ -1097,7 +1206,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S08",
@@ -1117,7 +1227,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S09",
@@ -1137,7 +1248,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S10",
@@ -1157,7 +1269,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S11",
@@ -1177,7 +1290,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S12",
@@ -1199,7 +1313,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S13",
@@ -1219,7 +1334,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S14",
@@ -1239,7 +1355,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S15",
@@ -1259,7 +1376,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S16",
@@ -1283,7 +1401,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S17",
@@ -1303,7 +1422,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S18",
@@ -1323,7 +1443,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S19",
@@ -1343,7 +1464,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S20",
@@ -1363,7 +1485,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S21",
@@ -1383,7 +1506,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S22",
@@ -1406,7 +1530,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S23",
@@ -1426,7 +1551,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S24",
@@ -1446,7 +1572,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S25",
@@ -1466,7 +1593,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S26",
@@ -1486,7 +1614,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S27",
@@ -1508,7 +1637,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "DS-S28",
@@ -1533,7 +1663,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S01",
@@ -1553,7 +1684,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S02",
@@ -1573,7 +1705,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S03",
@@ -1593,7 +1726,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S04",
@@ -1613,7 +1747,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S05",
@@ -1633,7 +1768,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S06",
@@ -1653,7 +1789,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S07",
@@ -1673,7 +1810,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S08",
@@ -1693,7 +1831,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S09",
@@ -1713,7 +1852,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S10",
@@ -1733,7 +1873,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S11",
@@ -1753,7 +1894,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S12",
@@ -1773,7 +1915,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S13",
@@ -1793,7 +1936,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S14",
@@ -1813,7 +1957,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S15",
@@ -1833,7 +1978,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S16",
@@ -1853,7 +1999,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S17",
@@ -1873,7 +2020,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S18",
@@ -1893,7 +2041,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S19",
@@ -1913,7 +2062,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S20",
@@ -1933,7 +2083,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S21",
@@ -1954,7 +2105,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S22",
@@ -1975,7 +2127,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S23",
@@ -1996,7 +2149,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S24",
@@ -2019,7 +2173,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S25",
@@ -2042,7 +2197,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S26",
@@ -2063,7 +2219,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S27",
@@ -2084,7 +2241,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S28",
@@ -2105,7 +2263,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S29",
@@ -2128,7 +2287,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S30",
@@ -2149,7 +2309,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S31",
@@ -2176,7 +2337,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S32",
@@ -2196,7 +2358,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S33",
@@ -2223,7 +2386,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S34",
@@ -2252,7 +2416,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S35",
@@ -2281,7 +2446,8 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     },
     {
       "id": "PD-S36",
@@ -2310,51 +2476,79 @@
       "all_execution_prerequisites_unverified": true,
       "executable_fixture_available": false,
       "execution_status": "UNRUN",
-      "observed_evidence": []
+      "observed_evidence": [],
+      "source_inventory_status": "static locations found, source gate blocks actual replay; runtime obligation remains UNRUN"
     }
   ],
   "execution_gates": [
     {
       "id": "G-CODE",
-      "current_status": "NOT_ESTABLISHED",
-      "missing": "actual business-repository branch/commit/PR/local diffs and scoped runtime authorization not established",
-      "completion_contract": "source inventory then concrete future task authorization; this document is not engine-run authorization"
+      "current_status": "REMOTE_SOURCE_FIXED_EXECUTION_SCOPE_NOT_STARTED",
+      "source_inventory_group": "G-CODE",
+      "remaining": [
+        "actual business execution worktree/clean diff not established",
+        "specific future implementation/run scope not started",
+        "no CI/runs revalidated"
+      ]
     },
     {
       "id": "G-INIT",
-      "current_status": "NOT_ESTABLISHED",
-      "missing": "legal initial same-side15 pool arrangement/source body anchors and deterministic random-result selection unmapped",
-      "completion_contract": "reuse legal initialization route; no midpoint state injection or production probability edits"
+      "current_status": "SOURCE_LOCATED_WORLD_DATA_NOT_PREPARED",
+      "source_inventory_group": "G-INIT",
+      "remaining": [
+        "complete12 replay initial-world identity/original-side dictionaries and28 draw witnesses not materialized",
+        "no actual initialization run or adapter verification"
+      ]
     },
     {
       "id": "G-ACTION",
-      "current_status": "NOT_ESTABLISHED",
-      "missing": "actual action/window command API and candidate legality unreviewed",
-      "completion_contract": "preserve normal main, legal skill windows, rejected preflight and two-hero/single-mutation boundaries"
+      "current_status": "SOURCE_LOCATED_ALL_12_MODE_BLOCKED",
+      "source_inventory_group": "G-ACTION",
+      "remaining": [
+        "lawful future restricted source admission/implementation scope must be defined; do not bypass gate",
+        "D01 safe-glass and bomb-in-check source gaps EI02/EI03",
+        "no executable12 replay adapter"
+      ]
     },
     {
       "id": "G-STATE",
-      "current_status": "NOT_ESTABLISHED",
-      "missing": "authoritative source-body identity/state and resource observers unmapped",
-      "completion_contract": "map semantics without inventing required field names or public outputs"
+      "current_status": "SOURCE_FIELDS_LOCATED_SEMANTICS_PARTIAL",
+      "source_inventory_group": "G-STATE",
+      "remaining": [
+        "field existence does not establish current source semantics or stable-body/full history correctness",
+        "revival removes captured entry; captured list alone cannot prove nonrollback actual-death adjudication history",
+        "no runtime snapshots"
+      ]
     },
     {
       "id": "G-VIEW",
-      "current_status": "NOT_ESTABLISHED",
-      "missing": "red/black projection and legal-action/error/event presentation unmapped",
-      "completion_contract": "use source-approved public normalization; retain observable differences, never hide a leak with an invented mask"
+      "current_status": "PLAYER_VIEW_LOCATED_OLD_POLICY_SCOPE_BLOCKED",
+      "source_inventory_group": "G-VIEW",
+      "remaining": [
+        "PD05/06 both-player paired views not run",
+        "do not extend old masks/white-lists merely to hide missing or leaked observations",
+        "no full privacy/client/server audit"
+      ]
     },
     {
       "id": "G-PHASE",
-      "current_status": "NOT_ESTABLISHED",
-      "missing": "atomic closure, actual cutoff, accepted formal opportunity and retry identity unmapped",
-      "completion_contract": "clock may elapse; do not reset deadline or add callbacks; do not approve complete adjudication sampling"
+      "current_status": "SOURCE_ENTRYPOINTS_LOCATED_RETRY_CLOCK_UNRUN",
+      "source_inventory_group": "G-PHASE",
+      "remaining": [
+        "fresh rejected request vs processed delivery retry not executed",
+        "direct game function call does not establish room clock behavior",
+        "all-source formal sampling/pressure/key unresolved; tier2 code is not new source approval"
+      ]
     },
     {
       "id": "G-EVIDENCE",
-      "current_status": "NOT_ESTABLISHED",
-      "missing": "no execution logs/state snapshots/player projections or actual commands exist",
-      "completion_contract": "retain per-assertion raw evidence linked to fixed code/source and exact replay"
+      "current_status": "OBSERVER_SOURCE_LOCATED_NO_RUNTIME_EVIDENCE",
+      "source_inventory_group": "G-EVIDENCE",
+      "remaining": [
+        "observer event kinds do not prove every internal path or six-step stage observed",
+        "old runner cannot stand in for PD/D01 adapter",
+        "no execution command/log/state/player-view evidence generated"
+      ]
     }
   ],
   "deferred_source_obligations": [
@@ -2429,14 +2623,16 @@
     "runtime": false
   },
   "next_task": {
-    "id": "NEXT-HC-ENGINE-SOURCE-INVENTORY",
-    "action": "read_only_inventory_actual_jieqi_engine_commit_and_existing_fixture_action_state_projection_clock_and_dedup_entrypoints_without_code_or_runtime",
-    "scope": "read-only business-source inventory only; no implementation, execution, merge or deployment"
+    "id": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+    "action": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
+    "scope": "legal initial-world and Fisher-Yates witness data only; no engine run"
   },
   "publication_protocol": {
     "source_commit": "aaa834161fcd2bd9c8c0604d54ec96f5da2fb28f",
     "workflow_git_blob_sha": "4fdcafda6115de120467628d9837064910c1f36b",
     "actual_reading": "full current WORKFLOW and general entry; underlying collaboration body unchanged",
     "adoption": "reuse prior confirmed same-scope authorization across dialogues; visible write scope before GitHub increment; no added data disclosure, plugin permission, runtime or gameplay approval"
-  }
+  },
+  "engine_commit_role": "read-only inspection source, not approved implementation/run target",
+  "engine_inventory_reference": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json"
 }

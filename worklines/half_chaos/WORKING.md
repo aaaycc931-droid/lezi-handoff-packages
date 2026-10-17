@@ -3,7 +3,7 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261017-r24
+revision: HC-DESIGN-03-20261017-r25
 date_local: 2026-10-17
 timezone: Asia/Shanghai
 primary_reader: AI
@@ -19,17 +19,17 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 
 ## 0. 当前入口与接续
 
-本线当前r24，完成§8.44未来最小引擎验收范围与夹具/证据合同，新增固定文件ACCEPTANCE_SCOPE.json：12条回放计划、64条旧规格义务映射。11个家族标签不是11个独立开局，DS02须延续DS01，PD05/06分别保留两种秘密身份对照。只准备计划，没有可执行适配器，未选定/核对引擎提交，执行次数0。
+本线当前r25，完成§8.45实际引擎源码盘点，新增固定ENGINE_SOURCE_INVENTORY.json。实查业务分支/开放PR与compare后，选半混乱分支当前head 14b306fe1cf9f459ef54e22d9ffa4ce2e83db510为只读盘点源，非实现/合并批准。取回23文件并逐项匹配源blob，按实际完整函数/定义定向阅读；七组入口已定位，七项静态问题回主线。
 
-本轮“进行下一步的推进”授权上一阶段已提出的范围/合同准备；新用户玩法批准0、新共有确认消费0、新游戏规格0，r23三项及全部有效前序确认保留。评分冻结、NET暂停，游戏代码/引擎/客户端运行0；原PD36/DS28及其他全部UNRUN规格未变。
+当前半混乱完整模式门禁仍关闭，研究仅洗牌/无畸变，现有12条PD/DS回放均不能直接合法接入；原64项规格全部UNRUN。沙漏闭合王安全与受将禁投弹等确认/实现静态差距如§8.45，不是运行失败复现。本轮新用户玩法批准0、新共有确认消费0、新游戏规格0，业务代码修改/仓库写入/引擎/客户端/测试运行0；评分冻结、NET暂停。
 
-固定源提交2f663252f0d1b5ab8eea7f780502f287bb7dd595，实际tree 0e63e587d4beef40ed942835ecc99c8b18875613，十个r23本地文件逐项匹配远端；当前协作工作稿v0.12/正式1.8.0，分级门禁/局限/时序/授权/GitHub流程实际回读，其余未变已读模块复用。当前§0及§8.44覆盖旧状态，§1—8.43全部原文保留；私有原档与旧230/216核验限定继承，不上传整档、不重跑。
+固定交接源9bb47d5ce4100147eaf57fb653ef1c83d39b416e，实际tree 2a3c4d0eb004ae5c16743adc8599f75bb2c50534；本地r24十一文件逐项匹配远端。协作v0.12/正式1.8.0，实际回读分级/局限，未变授权/GitHub/时序模块沿上阶段已核对象复用，写前列明既有授权和固定路径。§1—8.44原文与全部有效确认保留，旧§9仅历史；原私有档案和230/216旧核验限定继承，不上传整档。
 
 ### 当前下一动作
 
-NEXT-HC-ENGINE-SOURCE-INVENTORY：只读核对jieqi-engine实际分支/提交/PR及差分，定位现有初始化、本体、动作、H03/M01/M04/D01、投影、时钟/正式机会/去重入口；不写代码、不运行引擎、不合并/部署。
+NEXT-HC-INITIALIZATION-WITNESS-DATA：依据已定位的初始暗位和合法置换合同，为12回放制作完整30本体初始真种/原始阵营表与28抽样见证；只准备数据，不启动引擎、不注入中盘、不开放门禁。EI01—07与H16/H05层级/完整终局源序裁判键继续回主线。
 
-本批返回冲突自然正例、额外返回落位触发、同窗口第二次沙漏不安全、H16/H05动作层级与完整终局/源序/重复键仍未补齐。已有自然前缀也要完成实际适配器映射才具备运行条件。主线1.53仍只登记r22阶段元数据/限定来源采用，r23/r24接收采用未知；主线H15展示和普通公开空池候选不采用，成功启动不占主行动原确认继续有效。
+普通H15公开空池已在普通专属原记录确认，本轮全文核对后明确不外推半混乱；主线H15展示仍待决，H02×M04共享候选仅next_task元数据已读、未采用。主线1.53实际回执仍只到r22元数据/限定来源记录；r23/r24/r25接收未知。不把读到函数记为适配器完成，也不把盘点源当作已核可执行干净工作树。
 
 ## 1. 确认恢复与保护
 
@@ -2141,7 +2141,64 @@ M04在此按公开暗车位资格，不读取源真车／真马决定按钮或�
 
 提交前HEAD推进至`aaa834161fcd2bd9c8c0604d54ec96f5da2fb28f`，只改通用协作入口和docs/WORKFLOW；当前全文已读。新增段明确跨对话继承已有同范围长期授权、写前列明来源/固定仓库/路径/真实差分；不增加公开范围、插件权限或新业务授权。本线原工作约定与用户当前接续授权足够完成本轮资料维护和阶段写回，不因该新增说明重复请求。玩法/引擎运行及所有暂停边界保持。相关规则、主线与十个本线r23对象均未变；发布以该HEAD真实tree `ed185bfbf5e0f39a0e72b2db579f1a0c797c26e1`为base、同一HEAD为parent，expected_sha且force=false，保护流程差分。
 
-## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.44与根状态）
+### 8.45 实际业务源码入口盘点与验收阻断（r25）
+
+完成`NEXT-HC-ENGINE-SOURCE-INVENTORY`。本轮用户“进行下一步的推进”续上一阶段明确的**只读源码盘点**；业务仓库写入0、游戏代码修改0、引擎/客户端/测试运行0。评分冻结、NET暂停。新增固定`ENGINE_SOURCE_INVENTORY.json`记录实际源、入口、读取范围和缺口；`ACCEPTANCE_SCOPE.json`只更新源码定位/阻断信息，12回放和64旧规格继续UNRUN，不因读到函数变成已实现或验收通过。
+
+#### 8.45.1 实际分支与来源范围
+
+交接固定源`9bb47d5ce4100147eaf57fb653ef1c83d39b416e`，tree `2a3c4d0eb004ae5c16743adc8599f75bb2c50534`。本地r24十一文件逐项匹配当前远端；新增普通专属H15公开空池原确认全文已读，明确不适用于半混乱，未消费为共有规则。当前H02×M04后续刺杀几何只是共享候选，本轮只读next_task元数据，不批准或用于PD组合。主线1.53仍只登记r22元数据/限定来源记录，r23/r24/r25接收未知。
+
+业务仓库`aaaycc931-droid/jieqi-engine`实际分支/开放PR集合已读取；不是从旧交接里直接猜14b仍最新。本轮选择半混乱现有分支作**盘点源**，不设为已获批准的实现/合并目标：
+
+| 位置 | 本次实际观察 | 含义 |
+|---|---|---|
+| 默认main | `c25749d4f21d394c3d94486cfba1d786864083b6` | 与功能草稿分支分开，不冒充已合入 |
+| 原UI/功能分支 | `codex/ui-android-apk-20261001` → `a3704459e8dbb08e1bb6fb9bcb1b169319a6d1bc` | 仍为开放草稿PR2；未合并 |
+| 模式接入分支 | `codex/score-mode-bridge-20261011` → `f1c01585ade8b4e17618399901d7283f37271459` | 开放草稿PR6 |
+| 本轮源码盘点 | `codex/half-chaos-h11-b-clock-20261012` → `14b306fe1cf9f459ef54e22d9ffa4ce2e83db510`，tree `9edf808eb68efcb272fe06422835c15afcf7c484` | 开放草稿PR7，以模式接入分支为base；实查ahead1/behind0，本次差分7文件 |
+
+实际取回23个源码/脚本/声明文件并核对缓存Git blob全部一致；**取回不等于全文审查**。完整读取setup/modes/slots/research-source-context/turns/spaces/observer/初始化见证生成器等小模块；game/rules/settlement/hero-actions/remote-room及研究脚本按所需完整函数/定义定向读取，逐文件范围见新清单。`src/index.ts`与旧MODE_BRIDGE_README只取回，未记语义审查。没有业务Git工作树，不声称核过可执行检出的干净差分、所有PR正文/CI或整库代码。所选tree未发现AGENTS.md；交接仓库AGENTS及本线约定继续适用。
+
+#### 8.45.2 七组前置条件的实际入口
+
+| 组 | 已定位的源码 | 本轮可确认的静态事实 | 仍阻断部分 |
+|---|---|---|---|
+| G-CODE | 实际branches/open PRs、compare与git commit/tree | 当前盘点源14b确实仍是该分支头，PR7草稿、非main | 执行工作树/具体未来代码与运行范围未建立；盘点源不是上线基线 |
+| G-INIT | `setup.createInitialGame/shuffleIdentities`、`slots.COVERED_SLOTS`、`mode-fixture-loader.halfChaosFixtureRandom` | 半混乱按黑/红各15池洗牌；初始covered-ID和公开暗位可映射；已有合法Fisher-Yates见证生成入口 | 12回放的30本体身份表/28次抽样见证尚未制作和实际接入，不注入中盘 |
+| G-ACTION | `game.initializeFeatureGameState/applyAuthoritativeMove`、`hero-actions.applyHeroAbility`、`remote-room`普通/技能提交 | 普通动作、技能请求与版本/去重入口可定位 | `modes`仍featuresReady=false；研究半混乱只允许shuffler，且不允许畸变；本12回放全被现有合法接入范围阻断 |
+| G-STATE | `types.GameState/SecretState`、game/settlement | 已有pieces/captured/effects/warrior、正式阶段/时钟、沙漏/污染、secret身份/宿命锚/已现身/processedActions等真实字段 | 字段存在不代表现规则完整实现；本体历史、复活后不可回退裁判历史不能仅看captured列表 |
+| G-VIEW | `publicRemoteRoom/playerRoomView`、`publicStateSnapshot`、`policyProjection/attemptCatalog` | 两方原始玩家视图入口存在；宿命锚在SecretState，不由publicStateSnapshot直接复制secret | 现P0投影/候选目录限定旧来源，不支持PD/D01，不能删字段或硬改白名单掩盖缺口；配对视图未运行 |
+| G-PHASE | `turns`、`begin/finishFormalTurn`、`startFormalClock`、房间截止检查、processedActions | 能定位主行动/原子/正式结束、原截止、同actionId去重；普通护盾拦截删除barrier，敌正式结束另扣持续 | 需绑定实际检查点；直接函数与房间时限层不能混用；命令重传和新同状态请求未运行；全裁判采样仍未定全 |
+| G-EVIDENCE | `captureMechanismEvents`、FixtureRunner/PolicySession的前后快照/attempt日志 | 同步观察钩子与旧研究日志结构可读 | 观察事件种类并非覆盖所有路径/六步内部阶段；当前执行证据0，旧固定night/shuffler夹具不能直接当12回放适配器 |
+
+所有组只记源码定位或部分静态核对；适配器未验收，没有一组因文件/函数存在就记为运行通过。没有修改模式门禁、研究白名单、生产池、策略掩码或产品公开字段。
+
+#### 8.45.3 关键源码对应与差距
+
+**已有对应结构，尚未运行。**`game.applyAuthoritativeMove`先在克隆状态上处理路径死者，终点普通护盾分支删除barrier，`lastMove.pathCrushed`保留、`landed:false`，源仍原格并排队`warrior_return`，不进入成功揭示分支；H03授盾函数记录3个本体名额，`settlement.finishFormalTurn`敌正式结束减持续。这些结构适合未来观察PD来源，但不是证明六族已通过。D01初始化按开局真实兵本体在secret保存anchor/shown/identity，提供DS别名绑定入口；复活会从captured列表移除对应本体，因此该列表不能单独作为“历史实际死亡从未回退”的裁判账本证据。
+
+| 清单问题 | 实际源码与有限结论 | 影响与处理 |
+|---|---|---|
+| EI01 模式门禁 | `modes.ts`及`research-source-context.ts`完整读取：半混乱完整组合未开放，研究仅shuffler、无畸变 | 12回放当前均不可合法直接启动；保留门禁，向主线报告，不擅自绕过 |
+| EI02 沙漏王安全 | `hero-actions`完整hourglass分支226—250先在克隆s扣次并回归/净化/装填；共同非占步尾仅closeDirectDeaths，没有确认所需的完整闭合己王安全拒绝检查 | 若未来合法接入此分支，DS02/03整次拒绝义务缺少对应预检；这是静态差距，非已复现失败，原共有确认不改 |
+| EI03 受将禁投 | `getBombers`、bomb分支252—266、共同入口/尾均已读；检查身份/弹药/目标/全军次数，没有当前受将门槛 | 若未来合法接入，DS04拒投义务未见对应实现；需按既有明确确认限定修正，当前不写代码 |
+| EI04 旧适配器范围 | FixtureRunner固定原揭棋night/shuffler/尖斜且断言无捕获；PolicySession、投影/候选目录按旧限定来源工作 | 不能只改模式参数/英雄名字就称已支持PD/DS；现脚本源码不是本批运行证据 |
+| EI05 王安全预演 | `rules.simulatePublicMove/validatePublicMove`仅移动来源并去终点，不在该公开预演中模拟路径碾碎与普通盾反弹；实际路径处理在game后段 | 普通预演不是现确认要求的完整原子结果安全证明；不据此宣称本PD自然例已失败或全部实现错误；交主线限定源码对齐 |
+| EI06 行动层级 | `turns.movementClassification`对specialPath编码tier2、mutation/main | 仅记录当前实现选择；不把代码当作H16/H05共享Ⅰ/Ⅱ级新批准，原主线问题保留 |
+| EI07 M01将帅马腿枚举 | `rules.canRevealedPieceAttack`的水平腿分支把端点写成x+dx,y±2，垂直腿写x±2,y+dy | 与该腿方向应完成的日字端点不一致，需源/实现对齐；例如(3,1)经腿(4,1)应到(5,0)/(5,2)，代码枚举(4,-1)/(4,3)。PD03当前布局可能两者都返回真，不能冒充本例失败复现 |
+
+以上源码文本/实际对象为V2；跨规则影响和静态差距比较为同一AI V1推理，无独立审查、测试或运行复现。EI02/EI03属于已有共有确认的实现缺口，不要求用户再批准相同玩法；EI06等未决规则仍由主线具体对齐。实际改动业务代码、扩大研究来源或运行应以之后明确任务范围为准，本次一般继续不自行扩大。
+
+显式返回空间冲突/额外落位、同窗口第二次沙漏不安全、完整技能应将/源序/终局/压力/重复键仍保留原缺口；本轮未制造新规则或用人工中盘状态补正例。实际截止入口在房间层，不能用直接调用游戏函数替代完整计时验收；PolicySession的研究payload冲突检查也不能当作产品已具备同等协议保证。
+
+#### 8.45.4 阶段结果与独立下一项
+
+本轮完成实际业务分支/PR/commit/tree核对、23取回文件的逐项身份及定向阅读记录、七组入口映射、七项静态问题与12回放阻断登记。新增`ENGINE_SOURCE_INVENTORY.json`只存必要引用/范围/结论，不整份回传业务源码。原12计划/64规格全UNRUN、新游戏规格0，新本地规则批准0、新共有确认消费0，前序正文/确认均保留；主线接收本轮仍未知。
+
+下一独立项`NEXT-HC-INITIALIZATION-WITNESS-DATA`：依据已定位的COVERED_SLOTS与合法Fisher-Yates置换合同，为12回放制作30个非将帅本体的完整初始真种表/原始阵营表、同池计数与28次初始抽样见证；只生成/核对夹具数据，不启动引擎、不注入中盘、不开放模式。EI01—07回主线，源未决只阻断依赖范围，独立数据准备继续。
+
+## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.45与根状态）
 
 | ID | 责任 | 需要协调的精确问题 | 本线已做 |
 |---|---|---|---|
@@ -2512,3 +2569,5 @@ verification_status=partial，文件来源V2＋同一AI语义推演V1；未做�
 - r23提交前第三项共有确认：H15成功启动费用按原记录限定消费；普通线新公开空池候选与主线展示候选未采用。三项共有消费／36项UNRUN，实际发布以Git历史与远端回读凭据为准。
 
 - r24最小验收准备：2f663252f0d1b5ab8eea7f780502f287bb7dd595固定源，§8.40/8.42完整读源，12回放计划/64旧规格义务映射，执行0、旧规格全UNRUN，无新规则批准或共有确认消费。
+
+- r25源码盘点：交接源9bb47d5ce4100147eaf57fb653ef1c83d39b416e；业务实际head 14b306fe1cf9f459ef54e22d9ffa4ce2e83db510只读，23取回文件、定向完整函数/定义范围见ENGINE_SOURCE_INVENTORY，七组映射/七静态问题/12计划模式阻断；64规格UNRUN，游戏运行0。

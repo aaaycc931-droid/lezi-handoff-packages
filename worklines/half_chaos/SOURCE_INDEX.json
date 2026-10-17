@@ -2147,10 +2147,10 @@
   },
   "latest_main_receipt_check": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
-    "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+    "commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
     "path": "worklines/main/READ_RECEIPTS.json",
     "git_blob_sha": "b1933b9c69709b4b9c351301816420d3893a1216",
-    "read_scope": "complete half_chaos row, r22 metadata only"
+    "read_scope": "complete half_chaos receiver row, r22 metadata only"
   },
   "main1_51_confirmation_consumption": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -2309,7 +2309,7 @@
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-16.v0.12",
     "formal_baseline": "1.8.0",
-    "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+    "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
     "body_git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
     "body_sha256": "f66c64a95b143afca89c42fa0b9764458123af6aa5c15cf336972639100297fc",
     "version_scope": "observed_at_source_commit_not_a_new_global_version",
@@ -2346,6 +2346,10 @@
       "AI_LIMITATION_CONTROL",
       "AUTHORIZATION_AND_ADOPTION",
       "GITHUB_HANDOFF_WORKFLOW"
+    ],
+    "r25_actual_reread": [
+      "MANDATORY_PRECHECK",
+      "AI_LIMITATION_CONTROL"
     ]
   },
   "mutation_coverage_audit": {
@@ -3428,5 +3432,39 @@
       "START_COLLABORATION.md full"
     ],
     "adopted_scope": "reuse prior confirmed same-scope authorization across dialogues; visible write scope before GitHub increment; no added data disclosure, plugin permission, runtime or gameplay approval"
+  },
+  "engine_source_inventory": {
+    "path": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
+    "status": "STATIC_SOURCE_REVIEW_PARTIAL_ALL_12_REPLAYS_BLOCKED_UNRUN",
+    "handoff_source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "inspection_branch": "codex/half-chaos-h11-b-clock-20261012",
+    "source_files_retrieved": 23,
+    "full_file_audit": false,
+    "gate_groups_mapped": 7,
+    "static_findings": 7,
+    "planned_replays_blocked": 12,
+    "old_specs": 64,
+    "all_UNRUN": true,
+    "game_runs": 0,
+    "next": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+    "reference": "ENGINE_SOURCE_INVENTORY.json full exact source object/read-scope list",
+    "no_bulk_business_source_publication": true,
+    "ordinary_original_exclusion": {
+      "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+      "sha": "14830add463c04cd9c14e5265d829d390216624b",
+      "id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+      "scope": "standard only public-determinable empty pool",
+      "full_original_read": true,
+      "adopted_in_half_chaos": false
+    },
+    "shared_candidate_metadata_only": {
+      "id": "NEXT-SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+      "subject": "H02后续刺杀机会是否读取M04合法冲锋几何",
+      "action": "用户决定合法H02＋M04后续刺杀机会能否沿原本合法一地面路径冲锋；建议当前有效几何保持，路径按M04、终点按H02，其他合法性/多源顺序不扩围。当前未批准。",
+      "pending_is_not_approved": true,
+      "is_shared_core_candidate": true,
+      "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H02刺杀机会与M04战车冲锋几何"
+    }
   }
 }

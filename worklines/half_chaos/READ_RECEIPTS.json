@@ -3,16 +3,16 @@
   "receiver_workline": "half_chaos",
   "latest_by_source": {
     "main": {
-      "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+      "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
       "actual_reading": [
         {
           "path": "worklines/main/CURRENT_STATE.json",
-          "scope": "current status/version/next metadata"
+          "scope": "current status/next/version metadata"
         },
         {
           "path": "worklines/main/READ_RECEIPTS.json",
           "git_blob_sha": "b1933b9c69709b4b9c351301816420d3893a1216",
-          "scope": "complete half_chaos row; r22 metadata only"
+          "scope": "complete half_chaos row, still r22 metadata"
         }
       ],
       "received": [
@@ -597,20 +597,60 @@
         "ordinary public-empty-pool candidate",
         "complete identity/state/source-order/runtime acceptance"
       ]
+    },
+    "business_engine_source_inventory": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "branch": "codex/half-chaos-h11-b-clock-20261012",
+      "PR": 7,
+      "read_scope_file": "ENGINE_SOURCE_INVENTORY.json#/source_files",
+      "retrieved": 23,
+      "full_file_audit": false,
+      "adopted": "code location and limited static evidence only; no gameplay authority or runtime acceptance",
+      "not_adopted": [
+        "code tier2 as H16 shared rule confirmation",
+        "old researcher source admission as support for PD/DS",
+        "all PRs merged or default main equivalent",
+        "test/CI/runtime state from filenames"
+      ]
+    },
+    "standard_current_scope_exclusions": {
+      "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+      "full_original_read": {
+        "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+        "sha": "14830add463c04cd9c14e5265d829d390216624b",
+        "id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+        "scope": "standard only public-determinable empty pool",
+        "full_original_read": true,
+        "adopted_in_half_chaos": false
+      },
+      "H02_M04": {
+        "metadata": {
+          "id": "NEXT-SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+          "subject": "H02后续刺杀机会是否读取M04合法冲锋几何",
+          "action": "用户决定合法H02＋M04后续刺杀机会能否沿原本合法一地面路径冲锋；建议当前有效几何保持，路径按M04、终点按H02，其他合法性/多源顺序不扩围。当前未批准。",
+          "pending_is_not_approved": true,
+          "is_shared_core_candidate": true,
+          "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H02刺杀机会与M04战车冲锋几何"
+        },
+        "body_read": false,
+        "adopted": false
+      },
+      "adopted_in_half_chaos": []
     }
   },
   "own_line_continuation": {
-    "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
-    "revision": "HC-DESIGN-03-20261017-r23",
+    "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+    "revision": "HC-DESIGN-03-20261017-r24",
     "actual_read": [
-      "root entry/current index/AGENTS and own entry/state/next/project agreement",
-      "WORKING full8.40 DS and full8.42 PD; previous8.43 explicit original confirmation sources reused unchanged",
-      "collaboration indexed current mandatory/temporal/limitation/authorization/GitHub modules"
+      "root entry/index and own state/next",
+      "ACCEPTANCE_SCOPE full plan, working8.44 source contracts reused unchanged",
+      "collaboration mandatory/limitation actual read; unchanged authorization/workflow/temporal modules reused"
     ],
-    "adopted": "minimum acceptance scope next task and all existing confirmed guards; no new gameplay approval"
+    "adopted": "read-only source inventory task, all current confirmations and runtime boundaries retained"
   },
   "main_receipt_recheck": {
-    "observed_at_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+    "observed_at_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
     "git_blob_sha": "b1933b9c69709b4b9c351301816420d3893a1216",
     "actual_receiver_record": {
       "source_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
@@ -744,8 +784,7 @@
         }
       }
     },
-    "r23_received": null,
-    "r24_received": null
+    "r23_r24_r25_received": null
   },
   "h21_source_review": {
     "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
@@ -758,7 +797,7 @@
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-16.v0.12",
     "formal_baseline": "1.8.0",
-    "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+    "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
     "body_git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596",
     "body_sha256": "f66c64a95b143afca89c42fa0b9764458123af6aa5c15cf336972639100297fc",
     "version_scope": "observed_at_source_commit_not_a_new_global_version",
@@ -792,7 +831,11 @@
       "TEMPORAL_OPPORTUNITY_CHECK",
       "AI_LIMITATION_CONTROL"
     ],
-    "r24_actual_reread": "collaboration indexed current mandatory/temporal/limitation/authorization/GitHub modules"
+    "r24_actual_reread": "collaboration indexed current mandatory/temporal/limitation/authorization/GitHub modules",
+    "r25_actual_reread": [
+      "MANDATORY_PRECHECK",
+      "AI_LIMITATION_CONTROL"
+    ]
   },
   "mutation_audit_source_review": {
     "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",

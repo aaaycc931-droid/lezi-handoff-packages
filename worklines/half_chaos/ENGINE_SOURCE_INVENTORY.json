@@ -1,0 +1,1120 @@
+{
+  "schema": "lezi.half_chaos.engine_source_inventory.v1",
+  "revision": "HC-DESIGN-03-20261017-r25",
+  "status": "STATIC_SOURCE_REVIEW_PARTIAL_ALL_12_REPLAYS_BLOCKED_UNRUN",
+  "handoff_source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+  "engine_source": {
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_inspection_branch": "codex/half-chaos-h11-b-clock-20261012",
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_tree_sha": "9edf808eb68efcb272fe06422835c15afcf7c484",
+    "engine_default_branch": "main",
+    "engine_default_head": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "ui_branch_head": "a3704459e8dbb08e1bb6fb9bcb1b169319a6d1bc",
+    "open_prs": [
+      {
+        "number": 7,
+        "title": "半混乱 H11-B：选择窗口倒计时与正式计数验收",
+        "head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "head_ref": "codex/half-chaos-h11-b-clock-20261012",
+        "base_ref": "codex/score-mode-bridge-20261011",
+        "draft": true
+      },
+      {
+        "number": 6,
+        "title": "普通象棋与半混乱揭棋限定接入及独立模式验收",
+        "head": "f1c01585ade8b4e17618399901d7283f37271459",
+        "head_ref": "codex/score-mode-bridge-20261011",
+        "base_ref": "codex/score-policy-adapter-20261011",
+        "draft": true
+      },
+      {
+        "number": 5,
+        "title": "原揭棋 P0 策略适配器与隐私流程验收",
+        "head": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+        "head_ref": "codex/score-policy-adapter-20261011",
+        "base_ref": "codex/score-mechanism-20261010",
+        "draft": true
+      },
+      {
+        "number": 4,
+        "title": "修正洗牌B正式计数并接入评分机制验收",
+        "head": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+        "head_ref": "codex/score-mechanism-20261010",
+        "base_ref": "codex/ui-android-apk-20261001",
+        "draft": true
+      },
+      {
+        "number": 3,
+        "title": "NET-001: verify existing state and prepare Cloudflare / HK network probes",
+        "head": "60b70046ebff1feb46c4a0cff74058146bd8284d",
+        "head_ref": "codex/net-001-validation-20261009",
+        "base_ref": "codex/ui-android-apk-20261001",
+        "draft": true
+      },
+      {
+        "number": 2,
+        "title": "Implement r5 hero packages and four confirmed rule gaps",
+        "head": "a3704459e8dbb08e1bb6fb9bcb1b169319a6d1bc",
+        "head_ref": "codex/ui-android-apk-20261001",
+        "base_ref": "main",
+        "draft": true
+      },
+      {
+        "number": 1,
+        "title": "chore: build approved V4 UI Android test APK",
+        "head": "de4eb73bcaea678e1f183ec2f0181369fe1cebce",
+        "head_ref": "codex/ui-v4-apk-test-20260915",
+        "base_ref": "main",
+        "draft": true
+      }
+    ],
+    "inspection_compare": {
+      "base": "f1c01585ade8b4e17618399901d7283f37271459",
+      "head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "ahead": 1,
+      "behind": 0,
+      "files": [
+        "docs/HALF_CHAOS_H11_B_COUNT_CLOCK_2026-10-12.md",
+        "scripts/scoring/MODE_BRIDGE_README.md",
+        "scripts/scoring/mode-qualification-cases.ts",
+        "scripts/scoring/policy-session.ts",
+        "src/hero-actions.ts",
+        "src/mechanism-observer.ts",
+        "tests/fixtures/scoring/CONFIRMATION_HC_H11_B_COUNT_CLOCK.json"
+      ]
+    },
+    "agent_instruction_paths": [],
+    "local_engine_worktree": "not established; only read-only source cache, no business checkout or clean-worktree verification"
+  },
+  "inspection_target_only_not_implementation_or_merge_approval": true,
+  "source_files": [
+    {
+      "path": "package.json",
+      "sha": "34b26233ab157051caeae779771ddc0fceb24465",
+      "lines": 19,
+      "bytes": 644,
+      "read_scope": "full scripts and runtime-engine declaration; no scripts executed"
+    },
+    {
+      "path": "src/setup.ts",
+      "sha": "15df513e8204d48464c097453c7bf9b83748c9f5",
+      "lines": 118,
+      "bytes": 3614,
+      "read_scope": "full file: createIdentityPool/shuffleIdentities/createInitialGame"
+    },
+    {
+      "path": "src/modes.ts",
+      "sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+      "lines": 31,
+      "bytes": 1791,
+      "read_scope": "full file: mode feature gate"
+    },
+    {
+      "path": "src/types.ts",
+      "sha": "a837ca049d3d0a7fd8cc38c3b0a9552f7d24105e",
+      "lines": 388,
+      "bytes": 13922,
+      "read_scope": "selected GameState/SecretState/command/lifecycle definitions, not full type file audit"
+    },
+    {
+      "path": "src/game.ts",
+      "sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+      "lines": 970,
+      "bytes": 44628,
+      "read_scope": "initializeFeatureGameState; pathPiecesForSpecialMove; awardWarriorBarrier; finishAfterPlayerAction; full applyAuthoritativeMove; publicStateSnapshot. Other hero/action branches not audited"
+    },
+    {
+      "path": "src/rules.ts",
+      "sha": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+      "lines": 490,
+      "bytes": 20254,
+      "read_scope": "path/geometry/target validation; canRevealedPieceAttack; simulatePublicMove/validatePublicMove/getLegalMoves; hasAnyLegalMove/checkmate/stalemate. Assassination/other contracts not full audit"
+    },
+    {
+      "path": "src/mutations.ts",
+      "sha": "a433d6f562686a3e654dd9d003db562a4e30a424",
+      "lines": 167,
+      "bytes": 7720,
+      "read_scope": "isDestinyUnlocked/legendaryMutationCandidates/drawRuntimeMutation; definition catalog not full reviewed"
+    },
+    {
+      "path": "src/settlement.ts",
+      "sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+      "lines": 503,
+      "bytes": 30579,
+      "read_scope": "initial identity/destiny setup; reveal/destruction/placement/landing/closeDirectDeaths; begin/advance/finishFormalTurn. Other river/flying/wind full interfaces not audited"
+    },
+    {
+      "path": "src/hero-actions.ts",
+      "sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+      "lines": 300,
+      "bytes": 23032,
+      "read_scope": "getBombers/formal clocks; applyHeroAbility entry/classification; full hourglass/bomb cases and common post-switch tail; other hero cases not full audited"
+    },
+    {
+      "path": "src/turns.ts",
+      "sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612",
+      "lines": 64,
+      "bytes": 3950,
+      "read_scope": "full file"
+    },
+    {
+      "path": "src/spaces.ts",
+      "sha": "cc4db990fe5683a44b6a95ba50620370a242f49d",
+      "lines": 21,
+      "bytes": 1521,
+      "read_scope": "full file"
+    },
+    {
+      "path": "src/index.ts",
+      "sha": "0da17345288bc7f398044c40c2fc2fc7f874f166",
+      "lines": 32,
+      "bytes": 823,
+      "read_scope": "fetched only; semantic read not required"
+    },
+    {
+      "path": "src/mechanism-observer.ts",
+      "sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81",
+      "lines": 40,
+      "bytes": 1648,
+      "read_scope": "full file, synchronous capture only"
+    },
+    {
+      "path": "src/remote-room.ts",
+      "sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+      "lines": 1531,
+      "bytes": 58791,
+      "read_scope": "createGameAfterSetup/createRemoteRoom; main clock timeout path; expiredFormalAction/submitRemoteMove; publicRemoteRoom/playerRoomView; submitRemoteHeroAbility. Entire networking/server room lifecycle not audited"
+    },
+    {
+      "path": "scripts/scoring/fixture-runner.ts",
+      "sha": "d0d5be6dbe7b702bc2221cf17dc7e75f201c145f",
+      "lines": 189,
+      "bytes": 13849,
+      "read_scope": "FixtureRunner constructor/commandFor/submit/execute/run; old fixed source restriction, not all oracle definitions"
+    },
+    {
+      "path": "scripts/scoring/mode-fixture-loader.ts",
+      "sha": "f6dfb963bfbae035740003955f094824f661aea8",
+      "lines": 31,
+      "bytes": 1774,
+      "read_scope": "full halfChaosFixtureRandom"
+    },
+    {
+      "path": "scripts/scoring/semantic-rng.ts",
+      "sha": "7ae485b581010620453317a3812dfdc8a0157114",
+      "lines": 28,
+      "bytes": 1530,
+      "read_scope": "full file, no RNG executed"
+    },
+    {
+      "path": "scripts/scoring/policy-observation.ts",
+      "sha": "63cedb68e1e28c0ce120f048d106371a8fd0113d",
+      "lines": 121,
+      "bytes": 9928,
+      "read_scope": "policyProjection/attemptCatalog, no whole policy/broker audit"
+    },
+    {
+      "path": "scripts/scoring/policy-session.ts",
+      "sha": "3aa254a0a442bdb12cf3f8a9d26fde039d7c646d",
+      "lines": 213,
+      "bytes": 16217,
+      "read_scope": "constructor/setup/capture/tick and submit incl research action-id guard; no policy execution or result-file verification"
+    },
+    {
+      "path": "scripts/scoring/MODE_BRIDGE_README.md",
+      "sha": "b1304a286db94306bf9a1ff78dc6c44c8388f0e5",
+      "lines": 67,
+      "bytes": 5997,
+      "read_scope": "fetched only; historical evidence not reverified"
+    },
+    {
+      "path": "src/research-source-context.ts",
+      "sha": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+      "lines": 59,
+      "bytes": 3679,
+      "read_scope": "full file modeResearchPermits/withResearchSources/researchSources"
+    },
+    {
+      "path": "src/slots.ts",
+      "sha": "84971b8e5f52f6ea1e20ee4ddbe2e4c8b736f911",
+      "lines": 160,
+      "bytes": 4276,
+      "read_scope": "full file covered slot/identity/controller geometry"
+    },
+    {
+      "path": "tests/helpers.ts",
+      "sha": "deeca7beb40a0a60b098a5b8899ca125fca72915",
+      "lines": 81,
+      "bytes": 1920,
+      "read_scope": "full file; artificial gameState helper distinguished from legal initial replay"
+    }
+  ],
+  "source_file_count": 23,
+  "exact_cache_git_blob_matches": 23,
+  "full_semantic_file_audit": false,
+  "retrieved_only_not_semantically_reviewed": [
+    "src/index.ts",
+    "scripts/scoring/MODE_BRIDGE_README.md"
+  ],
+  "gates": [
+    {
+      "id": "G-CODE",
+      "current_status": "REMOTE_SOURCE_FIXED_EXECUTION_SCOPE_NOT_STARTED",
+      "sources": [
+        {
+          "branch": "codex/half-chaos-h11-b-clock-20261012",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "tree": "9edf808eb68efcb272fe06422835c15afcf7c484",
+          "PR": 7,
+          "draft": true
+        }
+      ],
+      "observed": "actual branch head/default head/open PRs/immutable compare read; source selection is inspection only",
+      "remaining": [
+        "actual business execution worktree/clean diff not established",
+        "specific future implementation/run scope not started",
+        "no CI/runs revalidated"
+      ]
+    },
+    {
+      "id": "G-INIT",
+      "current_status": "SOURCE_LOCATED_WORLD_DATA_NOT_PREPARED",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/setup.ts",
+          "git_blob_sha": "15df513e8204d48464c097453c7bf9b83748c9f5",
+          "symbols": "createIdentityPool/shuffleIdentities/createInitialGame",
+          "lines": [
+            24,
+            104
+          ],
+          "read_scope": "full file: createIdentityPool/shuffleIdentities/createInitialGame"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/slots.ts",
+          "git_blob_sha": "84971b8e5f52f6ea1e20ee4ddbe2e4c8b736f911",
+          "symbols": "COVERED_SLOTS/getCoveredSlot/getDarkIdentity/getController",
+          "lines": [
+            24,
+            122
+          ],
+          "read_scope": "full file covered slot/identity/controller geometry"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "scripts/scoring/mode-fixture-loader.ts",
+          "git_blob_sha": "f6dfb963bfbae035740003955f094824f661aea8",
+          "symbols": "halfChaosFixtureRandom",
+          "lines": [
+            1,
+            30
+          ],
+          "read_scope": "full halfChaosFixtureRandom"
+        }
+      ],
+      "observed": "legal independent black/red15 shuffle and existing Fisher-Yates draw witness helper; initial covered IDs map to slots",
+      "remaining": [
+        "complete12 replay initial-world identity/original-side dictionaries and28 draw witnesses not materialized",
+        "no actual initialization run or adapter verification"
+      ]
+    },
+    {
+      "id": "G-ACTION",
+      "current_status": "SOURCE_LOCATED_ALL_12_MODE_BLOCKED",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/modes.ts",
+          "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+          "symbols": "requireModeFeatureAdaptation/requireModeAdaptationReady",
+          "lines": [
+            5,
+            30
+          ],
+          "read_scope": "full file: mode feature gate"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/research-source-context.ts",
+          "git_blob_sha": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+          "symbols": "MODE_RESEARCH_SOURCES/modeResearchPermits/withResearchSources",
+          "lines": [
+            4,
+            47
+          ],
+          "read_scope": "full file modeResearchPermits/withResearchSources/researchSources"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/game.ts",
+          "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+          "symbols": "initializeFeatureGameState/applyAuthoritativeMove",
+          "lines": [
+            52,
+            80,
+            380,
+            535
+          ],
+          "read_scope": "initializeFeatureGameState; pathPiecesForSpecialMove; awardWarriorBarrier; finishAfterPlayerAction; full applyAuthoritativeMove; publicStateSnapshot. Other hero/action branches not audited"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/hero-actions.ts",
+          "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+          "symbols": "applyHeroAbility",
+          "lines": [
+            69,
+            98,
+            226,
+            294
+          ],
+          "read_scope": "getBombers/formal clocks; applyHeroAbility entry/classification; full hourglass/bomb cases and common post-switch tail; other hero cases not full audited"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/remote-room.ts",
+          "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+          "symbols": "createGameAfterSetup/submitRemoteMove/submitRemoteHeroAbility",
+          "lines": [
+            643,
+            681,
+            1222,
+            1275,
+            1501,
+            1521
+          ],
+          "read_scope": "createGameAfterSetup/createRemoteRoom; main clock timeout path; expiredFormalAction/submitRemoteMove; publicRemoteRoom/playerRoomView; submitRemoteHeroAbility. Entire networking/server room lifecycle not audited"
+        }
+      ],
+      "observed": "half_chaos featuresReady=false; research only shuffler and rejects mutation; all PD/DS hero/mutation combinations outside current gate",
+      "remaining": [
+        "lawful future restricted source admission/implementation scope must be defined; do not bypass gate",
+        "D01 safe-glass and bomb-in-check source gaps EI02/EI03",
+        "no executable12 replay adapter"
+      ]
+    },
+    {
+      "id": "G-STATE",
+      "current_status": "SOURCE_FIELDS_LOCATED_SEMANTICS_PARTIAL",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/types.ts",
+          "git_blob_sha": "a837ca049d3d0a7fd8cc38c3b0a9552f7d24105e",
+          "symbols": "GameState/SecretState/MoveCommand/HeroAbilityCommand",
+          "lines": [
+            264,
+            358
+          ],
+          "read_scope": "selected GameState/SecretState/command/lifecycle definitions, not full type file audit"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/game.ts",
+          "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+          "symbols": "awardWarriorBarrier and ordinary rebound",
+          "lines": [
+            167,
+            186,
+            431,
+            472
+          ],
+          "read_scope": "initializeFeatureGameState; pathPiecesForSpecialMove; awardWarriorBarrier; finishAfterPlayerAction; full applyAuthoritativeMove; publicStateSnapshot. Other hero/action branches not audited"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/settlement.ts",
+          "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+          "symbols": "initializeFeatureSecret/markRevealed/destroyPiece/settleLandings",
+          "lines": [
+            57,
+            135,
+            170,
+            206
+          ],
+          "read_scope": "initial identity/destiny setup; reveal/destruction/placement/landing/closeDirectDeaths; begin/advance/finishFormalTurn. Other river/flying/wind full interfaces not audited"
+        }
+      ],
+      "observed": "actual piece IDs, hidden identities/destiny anchors, effects/defense membership/hourglass/warps/ammo/formal state fields found",
+      "remaining": [
+        "field existence does not establish current source semantics or stable-body/full history correctness",
+        "revival removes captured entry; captured list alone cannot prove nonrollback actual-death adjudication history",
+        "no runtime snapshots"
+      ]
+    },
+    {
+      "id": "G-VIEW",
+      "current_status": "PLAYER_VIEW_LOCATED_OLD_POLICY_SCOPE_BLOCKED",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/remote-room.ts",
+          "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+          "symbols": "publicRemoteRoom/playerRoomView",
+          "lines": [
+            1432,
+            1490
+          ],
+          "read_scope": "createGameAfterSetup/createRemoteRoom; main clock timeout path; expiredFormalAction/submitRemoteMove; publicRemoteRoom/playerRoomView; submitRemoteHeroAbility. Entire networking/server room lifecycle not audited"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/game.ts",
+          "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+          "symbols": "publicStateSnapshot",
+          "lines": [
+            944,
+            950
+          ],
+          "read_scope": "initializeFeatureGameState; pathPiecesForSpecialMove; awardWarriorBarrier; finishAfterPlayerAction; full applyAuthoritativeMove; publicStateSnapshot. Other hero/action branches not audited"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "scripts/scoring/policy-observation.ts",
+          "git_blob_sha": "63cedb68e1e28c0ce120f048d106371a8fd0113d",
+          "symbols": "policyProjection/attemptCatalog",
+          "lines": [
+            20,
+            90
+          ],
+          "read_scope": "policyProjection/attemptCatalog, no whole policy/broker audit"
+        }
+      ],
+      "observed": "raw player views exist, separate SecretState not passed to publicStateSnapshot; old policy projection/catalog rejects new source/mutation combinations",
+      "remaining": [
+        "PD05/06 both-player paired views not run",
+        "do not extend old masks/white-lists merely to hide missing or leaked observations",
+        "no full privacy/client/server audit"
+      ]
+    },
+    {
+      "id": "G-PHASE",
+      "current_status": "SOURCE_ENTRYPOINTS_LOCATED_RETRY_CLOCK_UNRUN",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/turns.ts",
+          "git_blob_sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612",
+          "symbols": "recordAction/closeMainActionAtom/movementClassification",
+          "lines": [
+            16,
+            66
+          ],
+          "read_scope": "full file"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/settlement.ts",
+          "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+          "symbols": "beginFormalTurn/advanceToFormalTurn/finishFormalTurn",
+          "lines": [
+            302,
+            427
+          ],
+          "read_scope": "initial identity/destiny setup; reveal/destruction/placement/landing/closeDirectDeaths; begin/advance/finishFormalTurn. Other river/flying/wind full interfaces not audited"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/hero-actions.ts",
+          "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+          "symbols": "formalTurnDurationMs/startFormalClock/ability dedup",
+          "lines": [
+            32,
+            52,
+            69,
+            98
+          ],
+          "read_scope": "getBombers/formal clocks; applyHeroAbility entry/classification; full hourglass/bomb cases and common post-switch tail; other hero cases not full audited"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/remote-room.ts",
+          "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+          "symbols": "advanceRemoteRoomTime/expiredFormalAction/submitRemoteHeroAbility",
+          "lines": [
+            1031,
+            1044,
+            1207,
+            1220,
+            1501,
+            1521
+          ],
+          "read_scope": "createGameAfterSetup/createRemoteRoom; main clock timeout path; expiredFormalAction/submitRemoteMove; publicRemoteRoom/playerRoomView; submitRemoteHeroAbility. Entire networking/server room lifecycle not audited"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "scripts/scoring/policy-session.ts",
+          "git_blob_sha": "3aa254a0a442bdb12cf3f8a9d26fde039d7c646d",
+          "symbols": "submit research payload guard and explicit receipt tick",
+          "lines": [
+            127,
+            178
+          ],
+          "read_scope": "constructor/setup/capture/tick and submit incl research action-id guard; no policy execution or result-file verification"
+        }
+      ],
+      "observed": "actual deadline/formal phase/actionId/expectedRevision/processedActions locations found; room layer enforces cutoff; research payload guard distinct from product command semantics",
+      "remaining": [
+        "fresh rejected request vs processed delivery retry not executed",
+        "direct game function call does not establish room clock behavior",
+        "all-source formal sampling/pressure/key unresolved; tier2 code is not new source approval"
+      ]
+    },
+    {
+      "id": "G-EVIDENCE",
+      "current_status": "OBSERVER_SOURCE_LOCATED_NO_RUNTIME_EVIDENCE",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/mechanism-observer.ts",
+          "git_blob_sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81",
+          "symbols": "captureMechanismEvents/emitMechanismEvent",
+          "lines": [
+            1,
+            35
+          ],
+          "read_scope": "full file, synchronous capture only"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "scripts/scoring/fixture-runner.ts",
+          "git_blob_sha": "d0d5be6dbe7b702bc2221cf17dc7e75f201c145f",
+          "symbols": "FixtureRunner constructor/submit/execute/run",
+          "lines": [
+            53,
+            164
+          ],
+          "read_scope": "FixtureRunner constructor/commandFor/submit/execute/run; old fixed source restriction, not all oracle definitions"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "scripts/scoring/policy-session.ts",
+          "git_blob_sha": "3aa254a0a442bdb12cf3f8a9d26fde039d7c646d",
+          "symbols": "constructor/capture/tick/submit",
+          "lines": [
+            33,
+            178
+          ],
+          "read_scope": "constructor/setup/capture/tick and submit incl research action-id guard; no policy execution or result-file verification"
+        }
+      ],
+      "observed": "synchronous capture and before/after attempts/logging structures exist; old FixtureRunner is fixed jieqi night/shuffler/jian_xie and no captures",
+      "remaining": [
+        "observer event kinds do not prove every internal path or six-step stage observed",
+        "old runner cannot stand in for PD/D01 adapter",
+        "no execution command/log/state/player-view evidence generated"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "EI01",
+      "title": "half_chaos source admission blocks all12 planned replays",
+      "kind": "document_fact_from_actual_code",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/modes.ts",
+          "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+          "symbols": "featuresReady/requireModeFeatureAdaptation",
+          "lines": [
+            5,
+            30
+          ],
+          "read_scope": "full file: mode feature gate"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/research-source-context.ts",
+          "git_blob_sha": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+          "symbols": "mode allow-list and no-mutation gate",
+          "lines": [
+            10,
+            35
+          ],
+          "read_scope": "full file modeResearchPermits/withResearchSources/researchSources"
+        }
+      ],
+      "observed": "current product readiness false and trusted research half_chaos permits only shuffler/no mutation",
+      "design_impact": "all12 plans cannot legally start through current source admission",
+      "affected_specs": [
+        "PD-S01",
+        "PD-S02",
+        "PD-S03",
+        "PD-S04",
+        "PD-S05",
+        "PD-S06",
+        "PD-S07",
+        "PD-S08",
+        "PD-S09",
+        "PD-S10",
+        "PD-S11",
+        "PD-S12",
+        "PD-S13",
+        "PD-S14",
+        "PD-S15",
+        "PD-S16",
+        "PD-S17",
+        "PD-S18",
+        "PD-S19",
+        "PD-S20",
+        "PD-S21",
+        "PD-S22",
+        "PD-S23",
+        "PD-S24",
+        "PD-S25",
+        "PD-S26",
+        "PD-S27",
+        "PD-S28",
+        "PD-S29",
+        "PD-S30",
+        "PD-S31",
+        "PD-S32",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36",
+        "DS-S01",
+        "DS-S02",
+        "DS-S03",
+        "DS-S04",
+        "DS-S05",
+        "DS-S06",
+        "DS-S07",
+        "DS-S08",
+        "DS-S09",
+        "DS-S10",
+        "DS-S11",
+        "DS-S12",
+        "DS-S13",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16",
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22",
+        "DS-S23",
+        "DS-S24",
+        "DS-S25",
+        "DS-S26",
+        "DS-S27",
+        "DS-S28"
+      ],
+      "runtime_reproduced": false,
+      "owner": "main scoped mode-source admission; keep existing gates",
+      "next": "report exact blocker; no whitelist/product gate edits in this phase"
+    },
+    {
+      "id": "EI02",
+      "title": "hourglass closed-result own-royal safety preflight not present in inspected path",
+      "kind": "V2_code_text_plus_V1_source_comparison",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/hero-actions.ts",
+          "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+          "symbols": "applyHeroAbility entry/hourglass/common tail",
+          "lines": [
+            69,
+            98,
+            226,
+            250,
+            280,
+            294
+          ],
+          "read_scope": "getBombers/formal clocks; applyHeroAbility entry/classification; full hourglass/bomb cases and common post-switch tail; other hero cases not full audited"
+        }
+      ],
+      "observed": "cloned s spends charge and applies returns/cleanup/reload; non-main tail closes deaths without current confirmed safe-result rejection check",
+      "conditional_impact": "if this path is lawfully enabled later, unsafe DS02/DS03 needs existing confirmed all-or-nothing rejection; not a runtime failure reproduction",
+      "affected_specs": [
+        "DS-S07",
+        "DS-S08",
+        "DS-S09",
+        "DS-S10",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16"
+      ],
+      "runtime_reproduced": false,
+      "owner": "main/current shared D01 implementation alignment",
+      "next": "bounded correction scope from existing D01 safety confirmation, not a new gameplay candidate"
+    },
+    {
+      "id": "EI03",
+      "title": "current-in-check bomb refusal gate not present in inspected path",
+      "kind": "V2_code_text_plus_V1_source_comparison",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/hero-actions.ts",
+          "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+          "symbols": "getBombers/bomb/entry and common tail",
+          "lines": [
+            27,
+            31,
+            69,
+            98,
+            252,
+            266,
+            280,
+            294
+          ],
+          "read_scope": "getBombers/formal clocks; applyHeroAbility entry/classification; full hourglass/bomb cases and common post-switch tail; other hero cases not full audited"
+        }
+      ],
+      "observed": "caster/ammo/target/team-per-turn checked; no current isGeneralInCheck gate in branch or common entry/tail",
+      "conditional_impact": "if lawfully enabled later, DS04 refusal must be aligned to existing confirmed bomb-in-check rule; mode gate currently prevents the scenario",
+      "affected_specs": [
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22"
+      ],
+      "runtime_reproduced": false,
+      "owner": "main/current shared D01 implementation alignment",
+      "next": "bounded original-confirmation alignment; no code in this phase"
+    },
+    {
+      "id": "EI04",
+      "title": "existing research runner/projection are not a generic PD/DS adapter",
+      "kind": "document_fact_from_actual_code",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "scripts/scoring/fixture-runner.ts",
+          "git_blob_sha": "d0d5be6dbe7b702bc2221cf17dc7e75f201c145f",
+          "symbols": "fixed constructor/execute",
+          "lines": [
+            53,
+            95,
+            131,
+            164
+          ],
+          "read_scope": "FixtureRunner constructor/commandFor/submit/execute/run; old fixed source restriction, not all oracle definitions"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "scripts/scoring/policy-session.ts",
+          "git_blob_sha": "3aa254a0a442bdb12cf3f8a9d26fde039d7c646d",
+          "symbols": "constructor/research submit source limits",
+          "lines": [
+            53,
+            118,
+            127,
+            178
+          ],
+          "read_scope": "constructor/setup/capture/tick and submit incl research action-id guard; no policy execution or result-file verification"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "scripts/scoring/policy-observation.ts",
+          "git_blob_sha": "63cedb68e1e28c0ce120f048d106371a8fd0113d",
+          "symbols": "policyProjection/attemptCatalog",
+          "lines": [
+            20,
+            90
+          ],
+          "read_scope": "policyProjection/attemptCatalog, no whole policy/broker audit"
+        }
+      ],
+      "observed": "fixed old sources/background, no-capture assumptions and mode catalog admission prevent direct reuse for new heroes/mutations",
+      "design_impact": "do not rename old fixtures and claim new12 runs; require mapped source-specific adapter within future scope",
+      "affected_specs": [
+        "PD-S01",
+        "PD-S02",
+        "PD-S03",
+        "PD-S04",
+        "PD-S05",
+        "PD-S06",
+        "PD-S07",
+        "PD-S08",
+        "PD-S09",
+        "PD-S10",
+        "PD-S11",
+        "PD-S12",
+        "PD-S13",
+        "PD-S14",
+        "PD-S15",
+        "PD-S16",
+        "PD-S17",
+        "PD-S18",
+        "PD-S19",
+        "PD-S20",
+        "PD-S21",
+        "PD-S22",
+        "PD-S23",
+        "PD-S24",
+        "PD-S25",
+        "PD-S26",
+        "PD-S27",
+        "PD-S28",
+        "PD-S29",
+        "PD-S30",
+        "PD-S31",
+        "PD-S32",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36",
+        "DS-S01",
+        "DS-S02",
+        "DS-S03",
+        "DS-S04",
+        "DS-S05",
+        "DS-S06",
+        "DS-S07",
+        "DS-S08",
+        "DS-S09",
+        "DS-S10",
+        "DS-S11",
+        "DS-S12",
+        "DS-S13",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16",
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22",
+        "DS-S23",
+        "DS-S24",
+        "DS-S25",
+        "DS-S26",
+        "DS-S27",
+        "DS-S28"
+      ],
+      "runtime_reproduced": false,
+      "owner": "future scoped fixture/source adapter work",
+      "next": "preserve old scope; use original data contracts, no fabricated midgame states"
+    },
+    {
+      "id": "EI05",
+      "title": "public ordinary self-check simulation is not full path/rebound atomic result",
+      "kind": "V2_code_text_plus_V1_scope_comparison",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/rules.ts",
+          "git_blob_sha": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+          "symbols": "simulatePublicMove/validatePublicMove",
+          "lines": [
+            311,
+            407
+          ],
+          "read_scope": "path/geometry/target validation; canRevealedPieceAttack; simulatePublicMove/validatePublicMove/getLegalMoves; hasAnyLegalMove/checkmate/stalemate. Assassination/other contracts not full audit"
+        },
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/game.ts",
+          "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+          "symbols": "applyAuthoritativeMove path and endpoint rebound",
+          "lines": [
+            408,
+            472
+          ],
+          "read_scope": "initializeFeatureGameState; pathPiecesForSpecialMove; awardWarriorBarrier; finishAfterPlayerAction; full applyAuthoritativeMove; publicStateSnapshot. Other hero/action branches not audited"
+        }
+      ],
+      "observed": "public simulation moves source and removes endpoint; path crush/ordinary barrier rebound are performed later by authoritative game path",
+      "conditional_impact": "full actual-result royal-safety obligation cannot be certified by that simplified preflight alone; no assertion that shown PD fixtures fail",
+      "affected_specs": [
+        "PD-S05",
+        "PD-S15",
+        "PD-S20",
+        "PD-S36"
+      ],
+      "runtime_reproduced": false,
+      "owner": "main source/implementation atomic safety alignment",
+      "next": "review bounded true-result validation; do not disable safety to replay"
+    },
+    {
+      "id": "EI06",
+      "title": "special path currently encoded tier2, source approval remains unresolved",
+      "kind": "document_fact_code_choice_not_rule_authority",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/turns.ts",
+          "git_blob_sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612",
+          "symbols": "movementClassification",
+          "lines": [
+            58,
+            66
+          ],
+          "read_scope": "full file"
+        }
+      ],
+      "observed": "specialPath true maps to mutation/main tier2 while attack label is independently set",
+      "design_impact": "do not treat code as new shared I/II gameplay confirmation for H16/H05",
+      "affected_specs": [
+        "PD-S34"
+      ],
+      "runtime_reproduced": false,
+      "owner": "main HC-MAIN-H16-ACTION-TIER",
+      "next": "preserve existing pending shared question; no new rule adopted"
+    },
+    {
+      "id": "EI07",
+      "title": "M01 king-on-leg endpoint enumeration differs from the completing knight route",
+      "kind": "V2_code_text_plus_V1_geometry_comparison",
+      "sources": [
+        {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "path": "src/rules.ts",
+          "git_blob_sha": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+          "symbols": "canRevealedPieceAttack iron_steed leg branch",
+          "lines": [
+            259,
+            275
+          ],
+          "read_scope": "path/geometry/target validation; canRevealedPieceAttack; simulatePublicMove/validatePublicMove/getLegalMoves; hasAnyLegalMove/checkmate/stalemate. Assassination/other contracts not full audit"
+        }
+      ],
+      "observed": "horizontal leg uses x+dx,y±2; vertical leg uses x±2,y+dy",
+      "example": {
+        "horse": [
+          3,
+          1
+        ],
+        "leg": [
+          4,
+          1
+        ],
+        "completing_legal_knight_endpoints": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "inspected_code_enumerates": [
+          [
+            4,
+            -1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      },
+      "conditional_impact": "shared legal-route threat contract needs source alignment; PD03 can coincidentally yield true under both lists, so not a PD03 failure reproduction",
+      "affected_specs": [
+        "PD-S12",
+        "PD-S15",
+        "PD-S36"
+      ],
+      "runtime_reproduced": false,
+      "owner": "main shared M01 geometry/source implementation alignment",
+      "next": "record exact formula and limited example; future minimal counterexample/review only under a scoped task"
+    }
+  ],
+  "source_to_state_observers": {
+    "identity": "src/setup.ts createInitialGame covered-ID plus SecretState.identities; source getDarkIdentity/getController never needs true-kind fallback for normal covered board slots",
+    "defense": "GameState.warrior[side].barrierPieceIds and effectsByPieceId[id].barrier.enemyTurnsRemaining; exhausted means barrier removed, history membership remains",
+    "path_rebound": "lastMove.pathCrushed/bouncedAgainstPieceId/landed and pieces/captured; source side effects remain separate",
+    "D01": "SecretState.destinyIdentities[id].anchor/shown/identity and GameState.hourglasses/warps/effectsByPieceId.ammunition/timeCollapse; do not expose secret anchor mapping",
+    "phase_clock_retry": "turnLifecycle/formalTurns/formalClock/turnStartedAt/turnDeadlineAt/actionRecords and SecretState.processedActions; actual command fields actionId/expectedRevision exist",
+    "views": "publicRemoteRoom/playerRoomView raw views; policyProjection currently out of PD/DS scope",
+    "history_limit": "captured is current captured display list; revive removes W entry; cannot use that list alone as nonrollback actual-death ledger evidence"
+  },
+  "planned_replay_count": 12,
+  "existing_spec_count": 64,
+  "executed_replays": 0,
+  "all_game_specs": "UNRUN",
+  "adapter_verified": false,
+  "runtime_scope_started": false,
+  "game_code_changes": 0,
+  "engine_tests_run": 0,
+  "client_runs": 0,
+  "business_repository_writes": 0,
+  "new_local_rule_approvals": 0,
+  "new_shared_confirmation_consumption": 0,
+  "source_scope_exclusions": {
+    "ordinary_H15_public_empty": {
+      "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+      "sha": "14830add463c04cd9c14e5265d829d390216624b",
+      "id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+      "scope": "standard only public-determinable empty pool",
+      "full_original_read": true,
+      "adopted_in_half_chaos": false
+    },
+    "H02_M04_shared_candidate": {
+      "metadata": {
+        "id": "NEXT-SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
+        "subject": "H02后续刺杀机会是否读取M04合法冲锋几何",
+        "action": "用户决定合法H02＋M04后续刺杀机会能否沿原本合法一地面路径冲锋；建议当前有效几何保持，路径按M04、终点按H02，其他合法性/多源顺序不扩围。当前未批准。",
+        "pending_is_not_approved": true,
+        "is_shared_core_candidate": true,
+        "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H02刺杀机会与M04战车冲锋几何"
+      },
+      "candidate_body_read": false,
+      "adopted": false
+    },
+    "full_royal_search_order_key": "not completed; old pending retained"
+  },
+  "main_receiver_scope": {
+    "source_commit": "efbbc5ccf1eb2fec8315c68668560baba9403e74",
+    "received": "r22 stage metadata/scoped source receipts only",
+    "r23_r24_r25": null
+  },
+  "runtime_evidence": [],
+  "verification": {
+    "actual_code_objects_and_relevant_functions": "V2 source checked",
+    "cross-source impact_geometry": "V1 same assistant, not independent",
+    "runtime": false
+  },
+  "next_task": {
+    "id": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+    "action": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode",
+    "scope": "generate legal initialization witness data only; no engine/runtime/mode admission"
+  }
+}

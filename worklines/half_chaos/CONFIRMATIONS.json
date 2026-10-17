@@ -1,6 +1,6 @@
 {
   "schema": "lezi.hc_confirmation_current.v2",
-  "revision": "HC-DESIGN-03-20261017-r24",
+  "revision": "HC-DESIGN-03-20261017-r25",
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": [],
   "inherited_local_confirmations": [
@@ -101,11 +101,11 @@
   ],
   "previous_round_main_document_adoption": "verified_by_current_receiver_from_main_sync_notice_and_confirmation_registry_at_base_commit",
   "this_round_main_reading_or_adoption": {
-    "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+    "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
     "received": null,
     "adopted": null,
     "r22_stage_metadata_received": true,
-    "r23_r24_unknown": true
+    "r23_r24_r25_unknown": true
   },
   "H14": "existing_rules_consumed_no_new_design_change",
   "engine_status": "unrun",
@@ -1377,5 +1377,22 @@
     "planned_replay_count": 12,
     "executed": 0,
     "future_runtime_not_authorized_by_this_plan": true
+  },
+  "engine_inventory_phase": {
+    "source_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+    "gameplay_rule_delta": 0,
+    "new_local_rule_approval": 0,
+    "new_shared_consumption": 0,
+    "all_prior_valid_preserved": true,
+    "code_findings_not_new_rule_authority": true,
+    "ordinary_H15_empty_exclusion": {
+      "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+      "sha": "14830add463c04cd9c14e5265d829d390216624b",
+      "id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+      "scope": "standard only public-determinable empty pool",
+      "full_original_read": true,
+      "adopted_in_half_chaos": false
+    },
+    "H02_M04_candidate": "metadata only, not adopted"
   }
 }
