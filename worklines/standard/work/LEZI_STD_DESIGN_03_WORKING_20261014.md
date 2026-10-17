@@ -1,17 +1,17 @@
 ---
 project: 乐子象棋
 workline: standard_xiangqi
-task: NEXT-STD-M04-ENDPOINT-INTERCEPTION-SOURCE-REVIEW
+task: NEXT-STD-M04-H10-ATOMIC-DAMAGE-SOURCE-REVIEW
 date_local: 2026-10-17
 timezone: Asia/Shanghai
-status: path_dragon_scale_A_confirmed_design_next_source_review
+status: M04_wording_updated_endpoint_limited_source_alignment_complete
 collaboration: 2026-10-17.v0.13 / formal_baseline_1.8.0 / L3
 rule_baseline: LEZI-SHARED-DESIGN-2026-10-13-r1
 primary_reader: AI
 inherited_source_round_rule_confirmations: 21
-new_rule_confirmations: 1
+new_rule_confirmations: 0
 new_local_standard_confirmations: 0
-new_shared_core_confirmations: 1
+new_shared_core_confirmations: 0
 current_confirmation_index_count: 31
 new_code_changes: 0
 new_engine_tests: 0
@@ -19,6 +19,26 @@ scoring: frozen; q/H/I/B/J=null; n=0; featuresReady=false
 ---
 
 # 普通象棋设计工作线｜增量记录与收束
+
+## 2026-10-17 当前进度｜M04用词已采用，终点单防护限定来源对齐
+
+用户于2026-10-17T19:15:31+08:00要求“这个文案就用战车隔一枚地面起的进攻吧，不用什么冲锋了，然后进行下一步吧，下一步是什么”。将口述“地面起”按上下文校为“地面棋”，当前规则/说明统一写“战车隔一枚地面棋的【进攻】”。此为文案采用，Δ机制0/新玩法确认0；H16狂战原技能名不改。既有审批原标题/实际原话、确认ID和sources/原返回保留为历史来源，不把旧记录的出现视为当前继续采用旧文案。此前路径龙鳞A与H02几何批准保持，普通31/本线直接共享11不变。
+
+本步已核对当前完整M04、H03普通防御、H21龙爪/龙鳞、普通H21原确认、10月8日龙鳞原确认与固定代码相关分支；23/24/30号记录实际读为历史实现说明，其运行数字不当本轮。限定单防护处理可沿既有源；只在无其他来源介入、完整原行动/王安全合法的分支记录条件结果，不新增总优先级。
+
+### 本次限定结果与反例边界
+
+- 终点只有普通防御：原普通终点击杀被挡，防御耗尽、目标留位，车按源返回；已合法完成的路径死亡不复活。
+- 终点只有龙鳞：原一次拦截留位/耗鳞/返回规则保持；返位不是回溯，不撤销此前独立路径死亡。
+- 进攻方H21无敌合法授予车龙爪，对方H03终点只有普通防御且无其他拦截：普通防御挡普通击杀并要求返位，龙爪独立碾碎该终点；此限定目标消灭、车仍回原位置。两英雄分属双方，M04仍为唯一畸变；未证明完整自然前缀，不能凭推演称可运行。
+- 普通终点击杀＋龙爪明确同一致死结果遇单龙鳞，一次鳞挡整次结果；不拆成先耗鳞再用同一次龙爪杀。
+
+上述属于已有来源的限定组合（Δ规则0），不请求重复批准，也不把同一AI推演升为独立/运行证据。普通防御与龙鳞同棋是否可自然形成、被其他来源观察的内部先后、H02/H10、揭示/控制/返位冲突和历史仍未定；代码字段并存不足以证明合法组合。正式完整条件/依据与分支见modes/standard/CURRENT_RULES同题章节及RETURN_TO_MAIN.source_alignment。
+
+EI-S01—EI-S04及EI01—EI08全部未运行：EI01完整原合法普通明地面一路径分支；EI02普通防御终点；EI03单龙鳞终点；EI04合法双方H21/H03龙爪+普通防御的无其他介入最终结果；EI05同一致死单鳞；EI06不假定同目标双防护可达；EI07不返行动/增行动/刷新时限/重复计死；EI08仅条件式最终局面，无完整时序/引擎证明。原PS/AG等仍全部未运行。下一项仅来源复核H10承伤与原子闭合，不自动创建或批准新候选。
+
+评分冻结、NET暂停，无游戏代码、引擎新增运行、独立复核或部署。
+
 
 ## 2026-10-17 当前确认｜路径龙鳞保住棋后，战车完成原【进攻】
 
