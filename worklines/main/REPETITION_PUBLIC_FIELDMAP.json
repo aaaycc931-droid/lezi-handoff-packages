@@ -148,7 +148,7 @@
     "received_external_shared_confirmations": 4,
     "source_contract_groups": 10
   },
-  "maintenance_base_commit": "e588078339fc256a9737e08a0db8d83322262171",
+  "maintenance_base_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
   "mapping_authority": {
     "confirmed_business_policy": "Existing source_confirmation_ids plus current source rules only.",
     "mapping_judgment": "V1 same-assistant application of V2 scoped sources; proposed identifiers below are explanatory, not implementation fields.",
@@ -356,12 +356,34 @@
           "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
           "git_blob_sha": "6320011a324b556b8522044d9cddd4a86ddad9dd",
           "read_scope": "complete H15 entry only; updated first tick and remaining public progression/hidden-body/lifecycle clauses"
+        },
+        {
+          "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+          "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+          "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
+          "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+        },
+        {
+          "commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+          "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+          "git_blob_sha": "cd560fe083541821fdb4a6485f9994080c8423d4",
+          "read_scope": "complete H15 entry only"
         }
       ],
       "status": "first_tick_confirmed_public_display_candidate_pending",
       "first_tick_confirmation": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
       "first_tick_status": "confirmed_design_not_runtime_verified",
-      "display_candidate": "candidates/h15-public-training-display/v1.json"
+      "display_candidate": "candidates/h15-public-training-display/v1.json",
+      "successful_start_cost_confirmation": {
+        "id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+        "source": {
+          "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+          "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+          "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
+          "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+        },
+        "scope": "cost only; does not select public training display or complete repetition encoding"
+      }
     },
     {
       "id": "R06",
@@ -568,6 +590,8 @@
     "approved": false,
     "source_finding": "Current H15 preserves optional progress publicity and hidden trainee; exact real-progress/death/failure public lifecycle is not specified. First tick resolved independently.",
     "risk_reasoning": "V1 abstract two-world death/status feedback, not observed client leak",
-    "if_candidate_approved_only": "Actual private progress/failure excluded from public projection/key; public chosen type and known used opportunity remain; no public planned clock introduced."
+    "if_candidate_approved_only": "Actual private progress/failure excluded from public projection/key; public chosen type and known used opportunity remain; no public planned clock introduced.",
+    "independent_start_cost_received": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+    "ordinary_public_empty_scope_received": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017"
   }
 }

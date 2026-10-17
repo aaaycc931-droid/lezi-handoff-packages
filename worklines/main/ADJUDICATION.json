@@ -1,6 +1,6 @@
 {
   "record_type": "adjudication_reference_selection",
-  "record_version": "1.53",
+  "record_version": "1.54",
   "project": "乐子象棋",
   "decision_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
@@ -1952,6 +1952,40 @@
       "policy_source": "ADJUDICATION.json#/shared_mutation_design_updates",
       "implementation_status": "confirmed_design_not_implemented",
       "new_engine_tests": 0
+    },
+    {
+      "id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+      "confirmed_at_local": "2026-10-17T09:56:36+08:00",
+      "user_quote": "我同意",
+      "source_type": "source_workline_direct_three_mode_user_confirmation_received_by_main",
+      "origin_workline": "standard",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "original_source": {
+        "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+        "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+        "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
+        "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+      },
+      "reviewed_candidate": {
+        "commit": "e588078339fc256a9737e08a0db8d83322262171",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜H15成功启动训练是否占用正常行动"
+      },
+      "immediately_preceding_question": "是否同意作为三模式H15成功启动的共用规则？",
+      "presented_clauses": [
+        "H15合法成功启动训练不占正常行动，但用掉整局唯一启动机会，不补当回合培养进度。",
+        "例如T5开始结算后成功启动兵训练，进度0/2，仍可正常走一步，T6开始才首次+1。",
+        "空池或失败请求如何扣次仍另审。"
+      ],
+      "availability_guard": "Only a legally successful H15 training start in an already permitted original window, in modes where H15 is legally available; this confirmation selects main-action cost only.",
+      "scope_note": "Successful-start action cost only. Source is independent earlier approval; current main continuation and quota recovery approve no candidate.",
+      "policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_successful_training_start_action_cost",
+      "implementation_status": "confirmed_design_not_implemented",
+      "new_engine_tests": 0
     }
   ],
   "three_mode_plan_status": {
@@ -3023,9 +3057,9 @@
   },
   "current_main_work": {
     "primary_reader": "AI",
-    "phase": "H15_public_display_candidate_prepared_four_shared_sources_received",
+    "phase": "H15_public_display_pending_success_cost_original_source_received",
     "current_rules": "this record plus inherited LEZI-SHARED-DESIGN-2026-10-13-r1",
-    "rule_delta": "Four independent source-workline shared confirmations adopted; no new main user confirmation. H15 display candidate remains pending; previously confirmed first tick unchanged.",
+    "rule_delta": "One separately approved shared H15 successful-start cost source received; ordinary public-empty branch received in original scope. No new main user confirmation or display approval.",
     "completed": [
       "H15 current information baseline source recheck",
       "two design dispatches prepared and byte checked",
@@ -3080,7 +3114,7 @@
       "repetition pressure eligibility/exclusions and source-specific special pressure attribution",
       "full formal-round pairing, complete legal-path enumeration and all-source phase coverage",
       "H11-A original-deadline preservation/expiry implementation and source-aware adjudication sampling",
-      "H15 start action cost/empty candidate and public progress lifecycle, H10 history eligibility and H20 source coverage",
+      "H15 hidden/illegal/other failed requests and public progress lifecycle, H10 history eligibility and H20 source coverage; successful-start cost separately confirmed, ordinary public-empty branch scoped only",
       "implementation and runtime verification remain separate future work",
       "H13 current text versus fixed14b ground-only child gate: source/implementation alignment unresolved",
       "H10 dark-pool feedback, preparation edge cases and timeline metadata still require main coordination"
@@ -4616,7 +4650,7 @@
       "messages_sent_to_other_dialogues": false,
       "implementation_and_runtime_acceptance": false
     },
-    "latest_design_confirmation": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+    "latest_design_confirmation": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
     "audit_current_phase_reference": "VALIDATION.json#/limitation_audit"
   },
   "ordinary_hidden_chase_classification_contract": {
@@ -5027,6 +5061,48 @@
       ],
       "implementation": false,
       "engine_runs": 0
+    },
+    "H15_successful_training_start_action_cost": {
+      "status": "source_workline_confirmed_design_received_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "original_source": {
+        "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+        "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+        "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
+        "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+      },
+      "policy": {
+        "guard": "Only a legally successful H15 training start in an already permitted original window, in modes where H15 is legally available; this confirmation selects main-action cost only.",
+        "successful_start_consumes_normal_main_action": false,
+        "successful_start_itself_ends_formal_turn": false,
+        "opening_start_deducts_first_normal_main_action": false,
+        "successful_start_consumes_unique_per_game_start_opportunity": true,
+        "existing_unused_normal_main_action_retained": true,
+        "previously_spent_main_action_refunded": false,
+        "new_main_action_extra_turn_or_deadline_refresh_granted": false,
+        "start_itself_grants_progress_or_catches_up_closed_begin": false,
+        "first_tick_confirmation_preserved": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+        "secret_recruitment_selected_type_publicity_and_prior_lifecycle_rules_preserved": true,
+        "new_or_reopened_start_window_or_in_check_permission_granted": false,
+        "empty_illegal_failed_request_consumption_retry_feedback": "not_decided_by_this_confirmation"
+      },
+      "not_confirmed": [
+        "new start windows, reopening a closed window, in-check permission or missing original legality",
+        "empty/illegal/failed request consumption, refund, retry or public/private feedback",
+        "main DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017 candidate",
+        "M07 same-begin source order, complete H06/H11 state restoration, full fieldmap/search-clock or engine acceptance"
+      ],
+      "confirmed_text": [
+        "H15合法成功启动训练不占正常行动，但用掉整局唯一启动机会，不补当回合培养进度。",
+        "例如T5开始结算后成功启动兵训练，进度0/2，仍可正常走一步，T6开始才首次+1。",
+        "空池或失败请求如何扣次仍另审。"
+      ],
+      "verification": "V2 exact source correspondence; no implementation/runtime; source timelines UNRUN"
     }
   },
   "external_returns_adoption": {
@@ -5242,6 +5318,82 @@
           "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016 consumed only for half_chaos as existing shared confirmed design",
           "main actual H14/H16 stage receipt within declared excerpts/metadata scope"
         ]
+      }
+    },
+    "latest_incremental_adoption_20261017": {
+      "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+      "previous_main_commit": "d414c021cfc584094021bbebd5194688b465e89d",
+      "previous_record_version": "1.53",
+      "intervening_commits": 6,
+      "new_main_user_confirmations": 0,
+      "new_shared_original_confirmations_received": [
+        "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017"
+      ],
+      "new_standard_only_confirmations_received": [
+        "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017"
+      ],
+      "sources": [
+        {
+          "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+          "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+          "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
+          "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+        },
+        {
+          "commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+          "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+          "git_blob_sha": "14830add463c04cd9c14e5265d829d390216624b",
+          "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+        }
+      ],
+      "current_continuation_is_not_approval": true,
+      "game_code_changes": 0,
+      "engine_runs": 0,
+      "continuation_wording_reconciliation": "Startup wording described action cost as pending at last main verification. New separately approved source exists at09:56:36; receive that exact original confirmation, never derive approval from continuation or enlarge display/failure scopes.",
+      "standard_next": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY remains pending in standard; no duplicate main proposal",
+      "half_chaos": {
+        "source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+        "revision": "HC-DESIGN-03-20261017-r25",
+        "read_scope": "r25 return selected phase/change/breakpoint/validation/source-question metadata; inventory seven finding observations and example; actual H15 receipt and main adopted/nonadopted fields. No full WORKING/prefix/acceptance/code audit.",
+        "plans": 12,
+        "reported_unrun_specs": 64,
+        "game_runs": 0,
+        "next": "prepare_legal_30_nonroyal_initial_identity_worlds_and_28_draw_Fisher_Yates_witness_data_for_12_replay_plans_without_running_engine_or_opening_mode"
+      },
+      "ui": {
+        "source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+        "read_scope": "current state and CI16 return only",
+        "status": "B6 protected recovery source and later specific approval must be reconciled; stale candidate_created=false is not authority to regenerate",
+        "new_artwork_observed": false,
+        "live_dialogue_progress": "unknown"
+      },
+      "standard_only_policy": {
+        "confirmation_id": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017",
+        "scope": "standard_only_publicly_determinable_legal_empty_recruitment_pool_request",
+        "original_source": {
+          "commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+          "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+          "git_blob_sha": "14830add463c04cd9c14e5265d829d390216624b",
+          "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+        },
+        "policy": {
+          "guard": "Standard only; H15 already legal and unused, original allowed window open, all legal candidate identity/original-faction/survival/eligibility jointly publicly determined and exact pool empty. Unknown or incomplete enumeration does not establish empty.",
+          "empty_request_rejected_before_successful_start": true,
+          "empty_request_consumes_unique_training_opportunity": false,
+          "empty_request_consumes_normal_main_action": false,
+          "empty_request_creates_binding_training_or_progress": false,
+          "empty_object_successful_start": false,
+          "can_reselect_and_request_again": "Only while the same original allowed window remains open and other source legality conditions pass; no guaranteed successful retry.",
+          "successful_reselection_consumes_unique_opportunity_under_existing_rules": true,
+          "clock_refreshed_or_extended": false,
+          "closed_window_reopened_or_new_window_granted": false,
+          "spent_main_action_refunded": false,
+          "hidden_candidate_identity_list_count_or_original_faction_disclosure_added": false,
+          "dark_mode_illegal_concurrent_or_other_failed_requests": "not_decided_by_this_confirmation",
+          "death_after_success_refunds_opportunity_or_retrains": false,
+          "main_training_public_display_candidate": "not_approved_by_this_confirmation"
+        },
+        "adoption": "ordinary design coordination only; no original/half-chaos empty-pool feedback rule"
       }
     }
   },

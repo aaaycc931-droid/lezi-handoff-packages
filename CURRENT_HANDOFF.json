@@ -34,18 +34,32 @@
     "entry": "worklines/main/START_HERE.txt",
     "state": "worklines/main/CURRENT_STATE.json",
     "shared_coordination": "worklines/main/SHARED_COORDINATION.json",
-    "base_commit": "e588078339fc256a9737e08a0db8d83322262171",
+    "base_commit": "fef0e8e764d240a63353a11f451db3b56dd08c91",
     "necessary_body_publication": "present in this commit",
     "full_history_migration": false,
     "pending_repetition_history_approved": true,
-    "current_adjudication_version": "1.53",
-    "latest_confirmation": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+    "current_adjudication_version": "1.54",
+    "latest_confirmation": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
     "current_pending_candidate": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "next_source_review": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
     "public_body_equivalence_approved": true,
     "public_fieldmap_schema": "lezi.repetition.public_fieldmap.v0.3",
     "H15_first_tick_confirmed": true,
-    "latest_main_direct_confirmation": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016"
+    "latest_main_direct_confirmation": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "H15_successful_start_cost_confirmed_from_original_source": true,
+    "concurrent_half_chaos_session_closeout": {
+      "source_commit": "fef0e8e764d240a63353a11f451db3b56dd08c91",
+      "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
+      "scope": "this_conversation_only",
+      "project_or_other_worklines_stopped": false,
+      "last_completed_design_revision": "HC-DESIGN-03-20261017-r25",
+      "last_completed_design_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+      "next_task": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
+      "next_task_status": "NOT_STARTED",
+      "new_rule_confirmations": 0,
+      "game_runs": 0,
+      "read_scope": "complete session_closeout object from RETURN and CURRENT_STATE plus actual closeout observation receipt; not full working8.46 or historical corpus"
+    }
   },
   "historical_archive_migration_incomplete": [
     "main",
@@ -63,16 +77,16 @@
   },
   "receiver_receipts_observed_by_main": {
     "standard": {
-      "source_commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "source_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
       "path": "worklines/standard/READ_RECEIPTS.json",
-      "acknowledged_main_commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
-      "scope": "actual H15 first-tick mode-local adoption at1.52; new1.53/public-display candidate uptake unknown"
+      "acknowledged_main_commit": "d414c021cfc584094021bbebd5194688b465e89d",
+      "scope": "actual scoped main1.53 receipt recognition; display not adopted; new1.54 adoption unknown"
     },
     "half_chaos": {
-      "source_commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "source_commit": "fef0e8e764d240a63353a11f451db3b56dd08c91",
       "path": "worklines/half_chaos/READ_RECEIPTS.json",
-      "acknowledged_main_commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
-      "scope": "actual H15 first-tick mode-local adoption at1.52; new1.53/public-display candidate uptake unknown"
+      "acknowledged_main_commit": "d414c021cfc584094021bbebd5194688b465e89d",
+      "scope": "actual main1.53 status/r22 receipt recognition only; separate original H15 cost adopted; ordinary public-empty excluded; new1.54 adoption unknown"
     }
   }
 }

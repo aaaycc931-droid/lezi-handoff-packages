@@ -62,7 +62,6 @@
     }
   ],
   "not_decided": [
-    "H15 successful-start action cost candidate owned by standard",
     "empty/failed candidate consumption, retry/feedback or new start/check permission",
     "H06 actual body/progress/failure/reward restore semantics",
     "M07 same-begin order or other modes H11 space details",
@@ -72,14 +71,15 @@
   "coordination": {
     "successful_start_cost_owner": "standard",
     "cost_candidate_source": {
-      "commit": "e588078339fc256a9737e08a0db8d83322262171",
-      "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "git_blob_sha": "dc1672094be1b65eed58787e509dc9701fa089df",
-      "read_scope": "complete current pending H15 successful-start action-cost section; not whole working draft"
+      "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+      "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+      "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
+      "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
     },
-    "cost_candidate_approved": false,
+    "cost_candidate_approved": true,
     "cost_confirmation_would_approve_this_display": false,
-    "main_continuation_approves_this_display": false
+    "main_continuation_approves_this_display": false,
+    "cost_status": "separately_confirmed_original_source_not_approval_of_this_display"
   },
   "approval": {
     "approved": false,
@@ -93,5 +93,21 @@
     "engine_runs": 0,
     "game_code_changes": 0,
     "independent_review": false
+  },
+  "subsequent_source_updates": {
+    "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
+    "successful_start": {
+      "commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+      "path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+      "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
+      "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+    },
+    "ordinary_public_empty": {
+      "commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+      "path": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+      "git_blob_sha": "14830add463c04cd9c14e5265d829d390216624b",
+      "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb"
+    },
+    "scope_guard": "Cost and ordinary empty sources preserve this display candidate's proposal and unapproved state."
   }
 }
