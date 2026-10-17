@@ -1,18 +1,15 @@
 {
-  "revision": "HC-DESIGN-03-20261017-r23",
+  "revision": "HC-DESIGN-03-20261017-r24",
   "next_independent_task": {
-    "id": "NEXT-HC-MINIMAL-ACCEPTANCE-SCOPE",
-    "scope": "future minimum acceptance planning for PD path/defense and DS D01 safety fixtures",
-    "action": "prepare_minimal_future_engine_acceptance_scope_fixture_contracts_and_source_gaps_for_PD_and_DS_without_running_code",
-    "sources": [
-      "WORKING §8.42 PD01—06 and §8.40 DS01—05",
-      "current explicit rule/confirmation guards and preserved shared dependencies"
-    ],
+    "id": "NEXT-HC-ENGINE-SOURCE-INVENTORY",
+    "scope": "read-only actual business engine source inventory",
+    "action": "read_only_inventory_actual_jieqi_engine_commit_and_existing_fixture_action_state_projection_clock_and_dedup_entrypoints_without_code_or_runtime",
+    "repository": "aaaycc931-droid/jieqi-engine",
     "acceptance_criteria": [
-      "separate runnable fixture prerequisites from missing natural-source cases",
-      "define minimal observation and acceptance contracts without inventing implementation fields",
-      "all game specs remain UNRUN; no code/interface or engine execution",
-      "keep shared unresolved tiers and source interfaces with main"
+      "verify actual branch/head/PR and relevant source objects rather than assuming inherited14b current",
+      "map seven prerequisite groups to real existing entrypoints or missing/undecided fields",
+      "record fixed immutable code source and source gaps; no implementation/runtime",
+      "keep source tier/terminal/key decisions with main"
     ]
   },
   "subsequent_tasks": [
@@ -38,26 +35,25 @@
   "scoring_frozen": true,
   "NET": "paused",
   "previous_completed_task": {
-    "id": "NEXT-HC-PATH-DEFENSE-PREFIXES",
-    "scope": "half_chaos M01/M04 path source plus H03 ordinary defense",
-    "action": "construct_M01_M04_natural_prefixes_for_completed_path_destruction_then_H03_ordinary_defense_rebound_and_return_landings",
+    "id": "NEXT-HC-MINIMAL-ACCEPTANCE-SCOPE",
+    "scope": "future minimum acceptance planning for PD path/defense and DS D01 safety fixtures",
+    "action": "prepare_minimal_future_engine_acceptance_scope_fixture_contracts_and_source_gaps_for_PD_and_DS_without_running_code",
     "sources": [
-      "current shared01 actions/attack endpoint/crush/defense/return/batch",
-      "current shared02 H03 and shared03 M01/M04",
-      "existing HC H03 departure grant/death and mutation coverage matrix"
+      "WORKING §8.42 PD01—06 and §8.40 DS01—05",
+      "current explicit rule/confirmation guards and preserved shared dependencies"
     ],
     "acceptance_criteria": [
-      "two-hero/one-mutation legal natural prefixes",
-      "path death retained if final ordinary defense rebounds source",
-      "source-specific return landing/king-safety and original scopes preserved",
-      "action tier remains separate main alignment; all specs UNRUN"
+      "separate runnable fixture prerequisites from missing natural-source cases",
+      "define minimal observation and acceptance contracts without inventing implementation fields",
+      "all game specs remain UNRUN; no code/interface or engine execution",
+      "keep shared unresolved tiers and source interfaces with main"
     ]
   },
   "shared_pending_references": [
     "STD-D01-EDGES remaining end-phase/search/order/clock interfaces"
   ],
   "main_coordination_status_overrides": {
-    "HC-MAIN-TICK": "first_tick_resolved_only_cost_empty_pool_and_output_remaining"
+    "HC-MAIN-TICK": "first_tick and successful-start main-action cost confirmed only; empty/failed/output remain scoped pending"
   },
   "resolved_shared_deadline": {
     "confirmation_id": "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
@@ -367,5 +363,20 @@
     },
     "standard_next_adopted": false,
     "scope": "successful-start action cost only, no window/check/empty/failed/public-display expansion; prefixes unchanged"
+  },
+  "completed_minimal_acceptance_scope": {
+    "path": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
+    "status": "PLANNED_UNRUN_NOT_EXECUTABLE",
+    "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+    "working_section": "8.44",
+    "planned_replays": 12,
+    "existing_spec_rows": 64,
+    "new_game_specs": 0,
+    "executed_replays": 0,
+    "all_game_specs": "UNRUN",
+    "engine_commit": null,
+    "adapter_verified": false,
+    "shared_questions": "main retains source tier/terminal/key/order dependencies",
+    "next": "NEXT-HC-ENGINE-SOURCE-INVENTORY"
   }
 }

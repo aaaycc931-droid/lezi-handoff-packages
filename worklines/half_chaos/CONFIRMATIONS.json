@@ -1,6 +1,6 @@
 {
   "schema": "lezi.hc_confirmation_current.v2",
-  "revision": "HC-DESIGN-03-20261017-r23",
+  "revision": "HC-DESIGN-03-20261017-r24",
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": [],
   "inherited_local_confirmations": [
@@ -101,13 +101,11 @@
   ],
   "previous_round_main_document_adoption": "verified_by_current_receiver_from_main_sync_notice_and_confirmation_registry_at_base_commit",
   "this_round_main_reading_or_adoption": {
-    "source_commit": "d414c021cfc584094021bbebd5194688b465e89d",
+    "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
     "received": null,
     "adopted": null,
-    "previous_r22_stage_metadata_received": true,
-    "full_r21_r22_prefixes_verified_by_main": false,
-    "current_r23_receiver_unknown": true,
-    "reason": "actual main receiver row now r22 metadata/source records; current r23 not prefilled"
+    "r22_stage_metadata_received": true,
+    "r23_r24_unknown": true
   },
   "H14": "existing_rules_consumed_no_new_design_change",
   "engine_status": "unrun",
@@ -379,224 +377,7 @@
       "engine_status": "unrun"
     }
   ],
-  "shared_confirmations_consumed_this_round": [
-    {
-      "id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
-      "source_workline": "standard",
-      "source_commit": "e588078339fc256a9737e08a0db8d83322262171",
-      "source_path": "worklines/standard/rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
-      "git_blob_sha": "dffd00ba319a11a34c1fe3205023b1380932eadf",
-      "read_scope": "full original confirmation JSON and complete corresponding current shared03 section",
-      "local_scope": "half_chaos only within original availability/branch guard",
-      "new_local_user_approval": false,
-      "implementation": false,
-      "original_confirmation": {
-        "schema": "lezi.shared_gameplay_confirmation.v1",
-        "confirmation_id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
-        "confirmed_at_local": "2026-10-16T21:42:40+08:00",
-        "user_quote": "我同意",
-        "origin_workline": "standard",
-        "review_id": "SHARED-M06-NEW-HORSE-ELIGIBILITY",
-        "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_M06_generated_horse_question",
-        "reviewed_candidate": {
-          "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
-          "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-          "heading": "当前待决策｜M06对新生成马的骑兵资格"
-        },
-        "immediately_preceding_question": "是否同意作为三个模式中合法M06的共用规则？",
-        "presented_clauses": [
-          "骑兵资格只绑定本局开局原两枚真实马。",
-          "邪火后来真正生成的新马不自动骑兵，也不替补死去原马；普通合法马步保持。"
-        ],
-        "scope": [
-          "original_jieqi",
-          "standard_xiangqi",
-          "half_chaos"
-        ],
-        "availability_guard": "Only modes where M06 legally effective, actual source-defined opening horse bodies and reveal/normal control rules retained. No pool/init permission.",
-        "policy": {
-          "mode_M06_legally_effective_required": true,
-          "cavalry_membership": "the two real horse bodies defined by this match opening source",
-          "genuinely_new_generated_horse_automatically_cavalry": false,
-          "dead_original_horse_replaced_by_new_generated_horse": false,
-          "new_horse_normal_horse_geometry_and_own_source_states_preserved": true,
-          "original_two_reveal_gates_and_ordinary_public_startup_preserved": true,
-          "normal_movement_reveal_or_consistent_internal_rename_creates_new_body": false,
-          "dark_original_horse_identity_or_mapping_disclosure_added": false,
-          "full_revival_shuffle_rewind_control_flight_identity_state_interfaces": "not_decided_by_this_confirmation"
-        },
-        "preserved": [
-          "All prior ordinary30/shared rules and ordinary original-two public startup.",
-          "M06 ordinary horse steps/leg and cavalry short-step geometry; no extra action created.",
-          "H21邪火 original sampling/placement/new-object semantics and dark-mode privacy."
-        ],
-        "not_confirmed": [
-          "M08 returned-pawn half candidate or other deferred mutation crosses",
-          "full revival/H11/H06/flying/control and identity-state restoration interfaces",
-          "mode pools/whole adaptation/full adjudication field/search-clock and source ordering",
-          "game code/runtime, scoring thaw or NET resume"
-        ],
-        "verification": {
-          "source_confirmation": "V2 explicit user statement and complete reviewed candidate",
-          "NH_S01_NH01_NH08": "unrun same-assistant conditional cases",
-          "game_code_changes": 0,
-          "engine_tests": 0
-        },
-        "handoff": {
-          "main_received_verified": null,
-          "other_mode_adoption_verified": null,
-          "automatic_messages_sent": false,
-          "containing_commit": "Resolve from Git history after publication."
-        }
-      }
-    },
-    {
-      "id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
-      "source_workline": "standard",
-      "source_commit": "e588078339fc256a9737e08a0db8d83322262171",
-      "source_path": "worklines/standard/rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
-      "git_blob_sha": "c9ce2edf38c81a3b9ccf73665a00438ac865760b",
-      "read_scope": "full original confirmation JSON and complete corresponding current shared03 section",
-      "local_scope": "half_chaos only within original availability/branch guard",
-      "new_local_user_approval": false,
-      "implementation": false,
-      "original_confirmation": {
-        "schema": "lezi.shared_gameplay_confirmation.v1",
-        "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
-        "confirmed_at_local": "2026-10-16T21:55:03+08:00",
-        "user_quote": "我同意",
-        "origin_workline": "standard",
-        "review_id": "SHARED-M08-RETURNED-PAWN-HALF",
-        "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_M08_returned_half_question",
-        "reviewed_candidate": {
-          "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
-          "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-          "heading": "当前待决策｜M08明兵卒回到己半场后的走法"
-        },
-        "immediately_preceding_question": "是否同意这项限定分支作为三模式合法M08的共用规则？",
-        "presented_clauses": [
-          "已明、地面、正常控制兵卒经合法来源回己半场，按当前起点恢复基础前一步，不永久保留曾过河斜步。",
-          "跨河当步仍前一步，再从敌半场起点行动才用尖斜；不新增移回能力或其他控制/空间权限。"
-        ],
-        "scope": [
-          "original_jieqi",
-          "standard_xiangqi",
-          "half_chaos"
-        ],
-        "availability_guard": "Only legal M08 and the reviewed public-ground/normal-control/closed-return branch; no pool or missing return-source approval.",
-        "policy": {
-          "guard": "Legal M08, public ground pawn with unambiguous normal control/direction, after a lawful closed source returned it to own half; next normal action only.",
-          "geometry_uses_current_action_origin_half": true,
-          "ever_crossed_permanently_retains_diagonal_steps_in_own_half": false,
-          "returned_own_half_geometry": "base one step forward only",
-          "crossing_action_from_own_half_allows_premature_diagonal": false,
-          "later_enemy_half_origin_geometry": "one forward/forward-left/forward-right, no horizontal or backward",
-          "existing_normal_side_direction_red_black_mirror_preserved": true,
-          "new_return_ability_extra_action_or_blanket_state_reset_granted": false,
-          "normal_targets_occupancy_defense_royal_safety_terminal_and_hidden_identity_boundaries_preserved": true,
-          "temporary_H05_river_flight_or_full_history_restoration_interfaces": "not_decided_by_this_confirmation"
-        },
-        "preserved": [
-          "All prior ordinary30/shared confirmations.",
-          "M08 existing forward geometry and no horizontal/backward, red-black mirror.",
-          "Actual source return legality/identity/space/restoration must be resolved before applying this branch."
-        ],
-        "not_confirmed": [
-          "H15 successful-start action cost candidate or other pending crosses",
-          "temporary control, river/flying layers or complete history/restoration/source ordering",
-          "mode pool/entire adaptation/full adjudication field-search-clock or privacy runtime",
-          "game code, scoring thaw or NET resume"
-        ],
-        "verification": {
-          "source_confirmation": "V2 direct user statement and full reviewed candidate",
-          "RP_S01_RP01_RP08": "unrun same-assistant conditional case",
-          "game_code_changes": 0,
-          "engine_tests": 0
-        },
-        "handoff": {
-          "main_received_verified": null,
-          "other_mode_adoption_verified": null,
-          "automatic_messages_sent": false,
-          "containing_commit": "Resolve from Git history after publication."
-        }
-      }
-    },
-    {
-      "id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
-      "source_workline": "standard",
-      "source_commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
-      "source_path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
-      "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
-      "read_scope": "full original confirmation JSON and complete current shared02 H15 section",
-      "local_scope": "half_chaos legal successful H15 startup in existing allowed window only",
-      "new_local_user_approval": false,
-      "implementation": false,
-      "original_confirmation": {
-        "schema": "lezi.shared_gameplay_confirmation.v1",
-        "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
-        "confirmed_at_local": "2026-10-17T09:56:36+08:00",
-        "user_quote": "我同意",
-        "origin_workline": "standard",
-        "review_id": "SHARED-H15-TRAINING-START-ACTION-COST",
-        "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_H15_successful_start_action_cost_question",
-        "reviewed_candidate": {
-          "commit": "e588078339fc256a9737e08a0db8d83322262171",
-          "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-          "heading": "当前待决策｜H15成功启动训练是否占用正常行动"
-        },
-        "immediately_preceding_question": "是否同意作为三模式H15成功启动的共用规则？",
-        "presented_clauses": [
-          "H15合法成功启动训练不占正常行动，但用掉整局唯一启动机会，不补当回合培养进度。",
-          "例如T5开始结算后成功启动兵训练，进度0/2，仍可正常走一步，T6开始才首次+1。",
-          "空池或失败请求如何扣次仍另审。"
-        ],
-        "scope": [
-          "original_jieqi",
-          "standard_xiangqi",
-          "half_chaos"
-        ],
-        "availability_guard": "Only a legally successful H15 training start in an already permitted original window, in modes where H15 is legally available; this confirmation selects main-action cost only.",
-        "policy": {
-          "guard": "Only a legally successful H15 training start in an already permitted original window, in modes where H15 is legally available; this confirmation selects main-action cost only.",
-          "successful_start_consumes_normal_main_action": false,
-          "successful_start_itself_ends_formal_turn": false,
-          "opening_start_deducts_first_normal_main_action": false,
-          "successful_start_consumes_unique_per_game_start_opportunity": true,
-          "existing_unused_normal_main_action_retained": true,
-          "previously_spent_main_action_refunded": false,
-          "new_main_action_extra_turn_or_deadline_refresh_granted": false,
-          "start_itself_grants_progress_or_catches_up_closed_begin": false,
-          "first_tick_confirmation_preserved": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
-          "secret_recruitment_selected_type_publicity_and_prior_lifecycle_rules_preserved": true,
-          "new_or_reopened_start_window_or_in_check_permission_granted": false,
-          "empty_illegal_failed_request_consumption_retry_feedback": "not_decided_by_this_confirmation"
-        },
-        "preserved": [
-          "ordinary30 and all prior shared confirmations",
-          "existing recruitment/secret trainee/type publicity, first tick, once-per-game and death/history exception source rules"
-        ],
-        "not_confirmed": [
-          "new start windows, reopening a closed window, in-check permission or missing original legality",
-          "empty/illegal/failed request consumption, refund, retry or public/private feedback",
-          "main DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017 candidate",
-          "M07 same-begin source order, complete H06/H11 state restoration, full fieldmap/search-clock or engine acceptance"
-        ],
-        "verification": {
-          "source_confirmation": "V2 direct user statement and full reviewed candidate",
-          "TS_S01_TS01_TS08": "unrun same-assistant conditional timeline/specifications",
-          "game_code_changes": 0,
-          "engine_tests": 0,
-          "independent_review": false
-        },
-        "handoff": {
-          "main_received_verified": null,
-          "other_mode_adoption_verified": null,
-          "automatic_messages_sent": false,
-          "containing_commit": "Resolve from Git history after publication."
-        }
-      }
-    }
-  ],
+  "shared_confirmations_consumed_this_round": [],
   "previous_H21_main_stage_receipt": {
     "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
     "receipt": {
@@ -1369,5 +1150,232 @@
     },
     "standard_next_adopted": false,
     "scope": "successful-start action cost only, no window/check/empty/failed/public-display expansion; prefixes unchanged"
+  },
+  "previous_r23_shared_confirmations_consumed": [
+    {
+      "id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+      "source_workline": "standard",
+      "source_commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "source_path": "worklines/standard/rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
+      "git_blob_sha": "dffd00ba319a11a34c1fe3205023b1380932eadf",
+      "read_scope": "full original confirmation JSON and complete corresponding current shared03 section",
+      "local_scope": "half_chaos only within original availability/branch guard",
+      "new_local_user_approval": false,
+      "implementation": false,
+      "original_confirmation": {
+        "schema": "lezi.shared_gameplay_confirmation.v1",
+        "confirmation_id": "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+        "confirmed_at_local": "2026-10-16T21:42:40+08:00",
+        "user_quote": "我同意",
+        "origin_workline": "standard",
+        "review_id": "SHARED-M06-NEW-HORSE-ELIGIBILITY",
+        "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_M06_generated_horse_question",
+        "reviewed_candidate": {
+          "commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
+          "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "当前待决策｜M06对新生成马的骑兵资格"
+        },
+        "immediately_preceding_question": "是否同意作为三个模式中合法M06的共用规则？",
+        "presented_clauses": [
+          "骑兵资格只绑定本局开局原两枚真实马。",
+          "邪火后来真正生成的新马不自动骑兵，也不替补死去原马；普通合法马步保持。"
+        ],
+        "scope": [
+          "original_jieqi",
+          "standard_xiangqi",
+          "half_chaos"
+        ],
+        "availability_guard": "Only modes where M06 legally effective, actual source-defined opening horse bodies and reveal/normal control rules retained. No pool/init permission.",
+        "policy": {
+          "mode_M06_legally_effective_required": true,
+          "cavalry_membership": "the two real horse bodies defined by this match opening source",
+          "genuinely_new_generated_horse_automatically_cavalry": false,
+          "dead_original_horse_replaced_by_new_generated_horse": false,
+          "new_horse_normal_horse_geometry_and_own_source_states_preserved": true,
+          "original_two_reveal_gates_and_ordinary_public_startup_preserved": true,
+          "normal_movement_reveal_or_consistent_internal_rename_creates_new_body": false,
+          "dark_original_horse_identity_or_mapping_disclosure_added": false,
+          "full_revival_shuffle_rewind_control_flight_identity_state_interfaces": "not_decided_by_this_confirmation"
+        },
+        "preserved": [
+          "All prior ordinary30/shared rules and ordinary original-two public startup.",
+          "M06 ordinary horse steps/leg and cavalry short-step geometry; no extra action created.",
+          "H21邪火 original sampling/placement/new-object semantics and dark-mode privacy."
+        ],
+        "not_confirmed": [
+          "M08 returned-pawn half candidate or other deferred mutation crosses",
+          "full revival/H11/H06/flying/control and identity-state restoration interfaces",
+          "mode pools/whole adaptation/full adjudication field/search-clock and source ordering",
+          "game code/runtime, scoring thaw or NET resume"
+        ],
+        "verification": {
+          "source_confirmation": "V2 explicit user statement and complete reviewed candidate",
+          "NH_S01_NH01_NH08": "unrun same-assistant conditional cases",
+          "game_code_changes": 0,
+          "engine_tests": 0
+        },
+        "handoff": {
+          "main_received_verified": null,
+          "other_mode_adoption_verified": null,
+          "automatic_messages_sent": false,
+          "containing_commit": "Resolve from Git history after publication."
+        }
+      }
+    },
+    {
+      "id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+      "source_workline": "standard",
+      "source_commit": "e588078339fc256a9737e08a0db8d83322262171",
+      "source_path": "worklines/standard/rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+      "git_blob_sha": "c9ce2edf38c81a3b9ccf73665a00438ac865760b",
+      "read_scope": "full original confirmation JSON and complete corresponding current shared03 section",
+      "local_scope": "half_chaos only within original availability/branch guard",
+      "new_local_user_approval": false,
+      "implementation": false,
+      "original_confirmation": {
+        "schema": "lezi.shared_gameplay_confirmation.v1",
+        "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+        "confirmed_at_local": "2026-10-16T21:55:03+08:00",
+        "user_quote": "我同意",
+        "origin_workline": "standard",
+        "review_id": "SHARED-M08-RETURNED-PAWN-HALF",
+        "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_M08_returned_half_question",
+        "reviewed_candidate": {
+          "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+          "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "当前待决策｜M08明兵卒回到己半场后的走法"
+        },
+        "immediately_preceding_question": "是否同意这项限定分支作为三模式合法M08的共用规则？",
+        "presented_clauses": [
+          "已明、地面、正常控制兵卒经合法来源回己半场，按当前起点恢复基础前一步，不永久保留曾过河斜步。",
+          "跨河当步仍前一步，再从敌半场起点行动才用尖斜；不新增移回能力或其他控制/空间权限。"
+        ],
+        "scope": [
+          "original_jieqi",
+          "standard_xiangqi",
+          "half_chaos"
+        ],
+        "availability_guard": "Only legal M08 and the reviewed public-ground/normal-control/closed-return branch; no pool or missing return-source approval.",
+        "policy": {
+          "guard": "Legal M08, public ground pawn with unambiguous normal control/direction, after a lawful closed source returned it to own half; next normal action only.",
+          "geometry_uses_current_action_origin_half": true,
+          "ever_crossed_permanently_retains_diagonal_steps_in_own_half": false,
+          "returned_own_half_geometry": "base one step forward only",
+          "crossing_action_from_own_half_allows_premature_diagonal": false,
+          "later_enemy_half_origin_geometry": "one forward/forward-left/forward-right, no horizontal or backward",
+          "existing_normal_side_direction_red_black_mirror_preserved": true,
+          "new_return_ability_extra_action_or_blanket_state_reset_granted": false,
+          "normal_targets_occupancy_defense_royal_safety_terminal_and_hidden_identity_boundaries_preserved": true,
+          "temporary_H05_river_flight_or_full_history_restoration_interfaces": "not_decided_by_this_confirmation"
+        },
+        "preserved": [
+          "All prior ordinary30/shared confirmations.",
+          "M08 existing forward geometry and no horizontal/backward, red-black mirror.",
+          "Actual source return legality/identity/space/restoration must be resolved before applying this branch."
+        ],
+        "not_confirmed": [
+          "H15 successful-start action cost candidate or other pending crosses",
+          "temporary control, river/flying layers or complete history/restoration/source ordering",
+          "mode pool/entire adaptation/full adjudication field-search-clock or privacy runtime",
+          "game code, scoring thaw or NET resume"
+        ],
+        "verification": {
+          "source_confirmation": "V2 direct user statement and full reviewed candidate",
+          "RP_S01_RP01_RP08": "unrun same-assistant conditional case",
+          "game_code_changes": 0,
+          "engine_tests": 0
+        },
+        "handoff": {
+          "main_received_verified": null,
+          "other_mode_adoption_verified": null,
+          "automatic_messages_sent": false,
+          "containing_commit": "Resolve from Git history after publication."
+        }
+      }
+    },
+    {
+      "id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+      "source_workline": "standard",
+      "source_commit": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
+      "source_path": "worklines/standard/rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+      "git_blob_sha": "086ceed8e80d487426e1ce1b1d97cc8622835640",
+      "read_scope": "full original confirmation JSON and complete current shared02 H15 section",
+      "local_scope": "half_chaos legal successful H15 startup in existing allowed window only",
+      "new_local_user_approval": false,
+      "implementation": false,
+      "original_confirmation": {
+        "schema": "lezi.shared_gameplay_confirmation.v1",
+        "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+        "confirmed_at_local": "2026-10-17T09:56:36+08:00",
+        "user_quote": "我同意",
+        "origin_workline": "standard",
+        "review_id": "SHARED-H15-TRAINING-START-ACTION-COST",
+        "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_H15_successful_start_action_cost_question",
+        "reviewed_candidate": {
+          "commit": "e588078339fc256a9737e08a0db8d83322262171",
+          "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+          "heading": "当前待决策｜H15成功启动训练是否占用正常行动"
+        },
+        "immediately_preceding_question": "是否同意作为三模式H15成功启动的共用规则？",
+        "presented_clauses": [
+          "H15合法成功启动训练不占正常行动，但用掉整局唯一启动机会，不补当回合培养进度。",
+          "例如T5开始结算后成功启动兵训练，进度0/2，仍可正常走一步，T6开始才首次+1。",
+          "空池或失败请求如何扣次仍另审。"
+        ],
+        "scope": [
+          "original_jieqi",
+          "standard_xiangqi",
+          "half_chaos"
+        ],
+        "availability_guard": "Only a legally successful H15 training start in an already permitted original window, in modes where H15 is legally available; this confirmation selects main-action cost only.",
+        "policy": {
+          "guard": "Only a legally successful H15 training start in an already permitted original window, in modes where H15 is legally available; this confirmation selects main-action cost only.",
+          "successful_start_consumes_normal_main_action": false,
+          "successful_start_itself_ends_formal_turn": false,
+          "opening_start_deducts_first_normal_main_action": false,
+          "successful_start_consumes_unique_per_game_start_opportunity": true,
+          "existing_unused_normal_main_action_retained": true,
+          "previously_spent_main_action_refunded": false,
+          "new_main_action_extra_turn_or_deadline_refresh_granted": false,
+          "start_itself_grants_progress_or_catches_up_closed_begin": false,
+          "first_tick_confirmation_preserved": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+          "secret_recruitment_selected_type_publicity_and_prior_lifecycle_rules_preserved": true,
+          "new_or_reopened_start_window_or_in_check_permission_granted": false,
+          "empty_illegal_failed_request_consumption_retry_feedback": "not_decided_by_this_confirmation"
+        },
+        "preserved": [
+          "ordinary30 and all prior shared confirmations",
+          "existing recruitment/secret trainee/type publicity, first tick, once-per-game and death/history exception source rules"
+        ],
+        "not_confirmed": [
+          "new start windows, reopening a closed window, in-check permission or missing original legality",
+          "empty/illegal/failed request consumption, refund, retry or public/private feedback",
+          "main DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017 candidate",
+          "M07 same-begin source order, complete H06/H11 state restoration, full fieldmap/search-clock or engine acceptance"
+        ],
+        "verification": {
+          "source_confirmation": "V2 direct user statement and full reviewed candidate",
+          "TS_S01_TS01_TS08": "unrun same-assistant conditional timeline/specifications",
+          "game_code_changes": 0,
+          "engine_tests": 0,
+          "independent_review": false
+        },
+        "handoff": {
+          "main_received_verified": null,
+          "other_mode_adoption_verified": null,
+          "automatic_messages_sent": false,
+          "containing_commit": "Resolve from Git history after publication."
+        }
+      }
+    }
+  ],
+  "minimum_acceptance_phase": {
+    "scope_file": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
+    "new_rule_delta": 0,
+    "new_shared_consumption": 0,
+    "existing64_game_specs": "UNRUN",
+    "planned_replay_count": 12,
+    "executed": 0,
+    "future_runtime_not_authorized_by_this_plan": true
   }
 }

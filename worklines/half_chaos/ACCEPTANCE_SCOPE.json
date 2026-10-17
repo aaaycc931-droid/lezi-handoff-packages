@@ -1,0 +1,2442 @@
+{
+  "schema": "lezi.half_chaos.minimum_acceptance_scope.v1",
+  "revision": "HC-DESIGN-03-20261017-r24",
+  "workline": "half_chaos",
+  "status": "PLANNED_UNRUN_NOT_EXECUTABLE",
+  "source_commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+  "working_sections": [
+    "8.40",
+    "8.42",
+    "8.43",
+    "8.44"
+  ],
+  "scope_document": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
+  "task_completed": "NEXT-HC-MINIMAL-ACCEPTANCE-SCOPE",
+  "new_game_rule_approval": 0,
+  "new_shared_confirmation_consumption": 0,
+  "new_game_specifications": 0,
+  "existing_specification_count": 64,
+  "planned_replay_count": 12,
+  "family_label_count": 11,
+  "distinct_natural_opening_family_count": 10,
+  "additional_secret_pair_variants": 2,
+  "actual_execution_count": 0,
+  "game_code_changes": 0,
+  "client_runs": 0,
+  "engine_repository": "aaaycc931-droid/jieqi-engine",
+  "engine_branch": null,
+  "engine_commit": null,
+  "engine_source_inspected_this_phase": false,
+  "adapter_entrypoints_verified": false,
+  "runtime_authorization_established": false,
+  "all_game_spec_status": "UNRUN",
+  "scoring_frozen": true,
+  "NET": "paused",
+  "gate_semantics": "prerequisite observations for a future concrete scope, not a new approval process; existing authorizations remain reusable",
+  "source_contracts": [
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "72385b880eab3a1a703c86f7fff7e0a23b20cc7d"
+    },
+    {
+      "path": "collaboration/CURRENT.json",
+      "git_blob_sha": "63298d1c6695eda21e3c63b0fb3b2e6e78fd77dd"
+    },
+    {
+      "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
+      "git_blob_sha": "59d58721b44e59bd2bc62b831095ce1c71846596"
+    },
+    {
+      "path": "docs/WORKFLOW.md",
+      "git_blob_sha": "0124d1182035edd66fbde365a244a0acc7048325"
+    },
+    {
+      "path": "worklines/half_chaos/PROJECT_WORK_AGREEMENT.md",
+      "git_blob_sha": "1173d84434e40dd803ab33617b6f3d26372012e7"
+    },
+    {
+      "path": "worklines/half_chaos/WORKING.md",
+      "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+    },
+    {
+      "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+      "git_blob_sha": "e6daf86145453a0ff8ad20d68facc39d07c46778"
+    },
+    {
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "git_blob_sha": "cd560fe083541821fdb4a6485f9994080c8423d4"
+    },
+    {
+      "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+      "git_blob_sha": "5152b9291f40921a1cfc366853887b8103b8d681"
+    },
+    {
+      "path": "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
+      "git_blob_sha": "7ad5ae36eead9e412abee64054fbcee7cca8e2a3"
+    }
+  ],
+  "replays": [
+    {
+      "id": "MA-PD01",
+      "families": [
+        "PD01"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.2",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "initial_true_kind_swaps": [
+        {
+          "side": "red",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "B1 closed",
+          "expect": "black true rook at4,1 revealed but no defense inside palace"
+        },
+        {
+          "at": "B2 closed",
+          "expect": "black rook1,1 defense3 and consumed lifetime membership1"
+        },
+        {
+          "at": "R3 closed",
+          "expect": "path cannon1,2 dead; target rook1,1 alive defense exhausted; red source rook returns1,6; main spent, no rollback"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ]
+    },
+    {
+      "id": "MA-PD02",
+      "families": [
+        "PD02"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.3",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M01",
+      "initial_true_kind_swaps": [
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "R2 closed",
+          "expect": "own dark pawn2,6 crushed, horse3,5; accepted history retained"
+        },
+        {
+          "at": "B4 closed",
+          "expect": "black rook2,1 defense3; red horse4,2 not checking black king4,0"
+        },
+        {
+          "at": "R5 closed",
+          "expect": "black cannon3,2 crushed; target rook2,1 alive defense exhausted; horse returns4,2; earlier pawn remains dead"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ]
+    },
+    {
+      "id": "MA-PD03",
+      "families": [
+        "PD03"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.4",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M01",
+      "initial_true_kind_swaps": [
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "B4 closed",
+          "expect": "rook2,1 defense3"
+        },
+        {
+          "at": "R5 end/B5 main",
+          "expect": "pawn4,3 crushed; defense2; king4,0 evades to4,1"
+        },
+        {
+          "at": "R6 end/B6 main",
+          "expect": "defense1; king4,1 is valid leg threat of completable route and evades4,0"
+        },
+        {
+          "at": "R7 closed",
+          "expect": "shielded path rook2,1 crushed; no rebound at empty1,2; defense membership not refunded; cannon3,2 survives"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ]
+    },
+    {
+      "id": "MA-PD04",
+      "families": [
+        "PD04"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.5",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "initial_true_kind_swaps": [
+        {
+          "side": "red",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "R1/R2 closed",
+          "expect": "first dark-cannon action normal; row0 retains two blockers2,0/3,0 so no early M04 check"
+        },
+        {
+          "at": "B3/R4 end",
+          "expect": "black rook2,1 defense3 then2"
+        },
+        {
+          "at": "B4 closed",
+          "expect": "black advisor4,1 revealed inside palace, no defense"
+        },
+        {
+          "at": "R5 closed/B5 main",
+          "expect": "path shielded rook dies by crush and endpoint advisor dies by normal attack; red rook4,1 checks king4,0; black evades to empty5,0"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ]
+    },
+    {
+      "id": "MA-PD05-A",
+      "families": [
+        "PD05"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.6",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "initial_true_kind_swaps": [
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "R3 closed",
+          "expect": "red revealed pawn0,3 has actual forward/capture source; black rook0,1 defense2 at subsequent R4"
+        },
+        {
+          "at": "R4 closed",
+          "expect": "own path pawn0,3 dead; endpoint defense exhausted and rook0,1 alive; dark source returns0,9 still covered; no free main"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ],
+      "paired_comparison": "PAIR-PD05",
+      "secret_source_kind": "rook",
+      "additional_gate": "G-VIEW"
+    },
+    {
+      "id": "MA-PD05-B",
+      "families": [
+        "PD05"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.6",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "initial_true_kind_swaps": [
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "side": "red",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              9
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "R3 closed",
+          "expect": "red revealed pawn0,3 has actual forward/capture source; black rook0,1 defense2 at subsequent R4"
+        },
+        {
+          "at": "R4 closed",
+          "expect": "own path pawn0,3 dead; endpoint defense exhausted and rook0,1 alive; dark source returns0,9 still covered; no free main"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ],
+      "paired_comparison": "PAIR-PD05",
+      "secret_source_kind": "horse",
+      "additional_gate": "G-VIEW"
+    },
+    {
+      "id": "MA-PD06-A",
+      "families": [
+        "PD06"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M01",
+      "initial_true_kind_swaps": [
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "B3 closed",
+          "expect": "rook3,8 first leaves palace through empty file, defense3; does not check red king4,9"
+        },
+        {
+          "at": "R4 closed",
+          "expect": "own covered elephant leg2,9 dies and death reveals; black rook3,8 alive defense exhausted; dark horse-slot source returns1,9 still covered"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ],
+      "paired_comparison": "PAIR-PD06",
+      "secret_source_kind": "horse",
+      "additional_gate": "G-VIEW"
+    },
+    {
+      "id": "MA-PD06-B",
+      "families": [
+        "PD06"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M01",
+      "initial_true_kind_swaps": [
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        },
+        {
+          "side": "red",
+          "initial_true_kind_swap_positions": [
+            [
+              1,
+              9
+            ],
+            [
+              8,
+              6
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "B3 closed",
+          "expect": "rook3,8 first leaves palace through empty file, defense3; does not check red king4,9"
+        },
+        {
+          "at": "R4 closed",
+          "expect": "own covered elephant leg2,9 dies and death reveals; black rook3,8 alive defense exhausted; dark horse-slot source returns1,9 still covered"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ],
+      "paired_comparison": "PAIR-PD06",
+      "secret_source_kind": "pawn",
+      "additional_gate": "G-VIEW"
+    },
+    {
+      "id": "MA-DS01-02",
+      "families": [
+        "DS01",
+        "DS02"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.2—8.40.3",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "initial_true_kind_swaps": [
+        {
+          "side": "red",
+          "initial_true_kind_swap_positions": [
+            [
+              8,
+              6
+            ],
+            [
+              3,
+              9
+            ]
+          ]
+        },
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "R3 before main",
+          "expect": "live appeared W4,8 returns to own initial anchor3,9 and blocks check; hourglass5→4; pollution0,5 removed; live appeared D ammo0→1; red main available"
+        },
+        {
+          "at": "R3 main/B3 before-main and main",
+          "expect": "U0,5 now appeared; D bombs0,5 again ammo1→0; rook moves1,9→3,9 and actually kills W"
+        },
+        {
+          "at": "R4 unsafe-glass refusal",
+          "expect": "hourglass4 unchanged; W dead anchor occupied by rook3,9; U0,5 and pollution/collapse R4-end deadline unchanged; D remains0; no simulated writeback"
+        },
+        {
+          "at": "R4 main/end",
+          "expect": "king4,9→4,8 legal evasion; U remains polluted and dies at existing opponent-acquisition R4-end deadline"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ],
+      "history_continuity": "DS02 must continue actual accepted DS01 sequence; no separate opening/recreated midpoint",
+      "availability_guard": "only originally legal D01 H06/H05 replacement; no normal H05/H06 time skills or extra mutation"
+    },
+    {
+      "id": "MA-DS03",
+      "families": [
+        "DS03"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.4",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "initial_true_kind_swaps": [
+        {
+          "side": "red",
+          "initial_true_kind_swap_positions": [
+            [
+              8,
+              6
+            ],
+            [
+              7,
+              7
+            ]
+          ]
+        },
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "R4 before request",
+          "expect": "red king4,7 safe behind W3,7, black rook1,7; W anchor7,7 empty"
+        },
+        {
+          "at": "unsafe-glass refusal",
+          "expect": "return would expose check so entire request rejected; W stays3,7; hourglass5 unchanged, no partial cleanup"
+        },
+        {
+          "at": "R4 main",
+          "expect": "pawn0,6→0,5 legal with original screen retained"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ],
+      "availability_guard": "same legally available D01 branch; no M05 or third hero"
+    },
+    {
+      "id": "MA-DS04",
+      "families": [
+        "DS04"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.5",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "initial_true_kind_swaps": [
+        {
+          "side": "red",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              8,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "B3 pre-main refusal",
+          "expect": "appeared D4,1 alive current black control ammo1, target4,2 otherwise valid; current check blocks bomb; ammo1/teamquota0/pollution unchanged"
+        },
+        {
+          "at": "B3 main and after",
+          "expect": "dark rook0,0 captures checking red rook1,0; main completed; bomb pre-main window not reopened"
+        },
+        {
+          "at": "B4 real new pre-main/main",
+          "expect": "no current check and other gates satisfied; bomb4,2 succeeds ammo1→0/teamquota1; normal rook1,0→2,0 remains"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ],
+      "availability_guard": "D01 only; hourglass safety permission not copied to bomb"
+    },
+    {
+      "id": "MA-DS05",
+      "families": [
+        "DS05"
+      ],
+      "action_source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.6",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "initial_true_kind_swaps": [
+        {
+          "side": "red",
+          "initial_true_kind_swap_positions": [
+            [
+              8,
+              6
+            ],
+            [
+              3,
+              9
+            ]
+          ]
+        },
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "side": "black",
+          "initial_true_kind_swap_positions": [
+            [
+              8,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ]
+        }
+      ],
+      "initialization_contract": "standard true-kind reference layout except listed same-side swaps within original fifteen nonroyals; all nonroyals start covered; legally selected original initialization only",
+      "checkpoints": [
+        {
+          "at": "B2 closed",
+          "expect": "D4,2 attacks own covered pawn4,3 lawfully; actual dead dragon not live/reloaded"
+        },
+        {
+          "at": "B5/R6 main/end",
+          "expect": "bomb reaches W4,8 distance3; red elephant0,7→2,9 legally screens check; W actually dies at R6 end"
+        },
+        {
+          "at": "B6 closed",
+          "expect": "rook1,9→2,9 kills screen elephant and checks red king through empty3,9"
+        },
+        {
+          "at": "R7 glass closed",
+          "expect": "dead W revives revealed at empty original3,9; live U0/U2/U6 return0,6/2,6/6,6; hourglass5→4; clear4,8 and live D reload1; dead black dragon, red horse and elephant remain dead; unrevealed central red pawn excluded"
+        },
+        {
+          "at": "R7 main",
+          "expect": "U0 moves0,6→0,5 normally; W keeps screen; death history not undone"
+        }
+      ],
+      "execution_status": "UNRUN",
+      "execution_count": 0,
+      "executable_fixture_available": false,
+      "source_legality_verification": "V1 same-assistant manual prefix; authority contracts V2; no independent/runtime check",
+      "adapter_requirements": [
+        "G-CODE",
+        "G-INIT",
+        "G-ACTION",
+        "G-STATE",
+        "G-PHASE",
+        "G-EVIDENCE"
+      ],
+      "availability_guard": "D01 only; no full H06 snapshot/history restore"
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "id": "PAIR-PD05",
+      "members": [
+        "MA-PD05-A",
+        "MA-PD05-B"
+      ],
+      "fixed": "same public initial covered slots/action sequence; only legal secret source-kind swap differs",
+      "observe": "both player legal visible actions, messages/errors/events and final player state; internal identities/timing may be normalized only via actual existing source contract",
+      "status": "UNRUN"
+    },
+    {
+      "id": "PAIR-PD06",
+      "members": [
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "fixed": "same public dark horse slot and action sequence; true horse/pawn alternate via same-side pool-preserving swap",
+      "observe": "death of dark elephant leg reveals normally; unlanded source remains covered for both secret kinds; no differing public probe",
+      "status": "UNRUN"
+    }
+  ],
+  "spec_coverage": [
+    {
+      "id": "DS-S01",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS01两方真种交换仍合法本方15池，暗士位真兵的锚为(3,9)，准备期不向玩家揭映射",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S02",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS01 B2暗炮先按炮位隔红(1,7)一架吃马，成功才揭黑车；底线两个阻挡已由普通动作清空，形成公开车将",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S03",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS01 R3在普通受将且未正式终局可进沙漏预检；W回(3,9)而非回公开兵位/死亡位置，完整闭合解将",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S04",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS01合法提交只花1、5→4，完成净化(0,5)及D弹0→1，不减少正常主行动机会",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S05",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS01红R3随后兵到已净化(0,5)不获崩坏；回归/投弹/预检不增正式回合、begin/end或刷新截止",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S06",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS01沙漏不复原黑车位置/红马损失，不当作H06快照；普通红暗车本可捕获将军车，不能仅因技能搜索未实现就宣称将死",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S07",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS02 W已现身死亡仍入锁集，A被黑车占则该候选失败；U空锚可回但完整局面仍受将，整次拒绝",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S08",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS02拒绝红余4不变、W死/U仍(0,5)/黑车仍(3,9)，不能把模拟的成功候选先写入实局",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S09",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS02拒绝不净化(0,5)、不解除U崩坏或重设R4末期限、D仍0弹；不得先结算净化/装填再退款",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S10",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS02拒绝保留红本回合正常应将与原截止，不以“等第二沙漏/普通主行动解将”接受当前不安全使用",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S11",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS02普通帅(4,9)→(4,8)应将合法；U继续留污染到R4末实际死亡，对手回合取得不被误延到R5末",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S12",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS02相同未变化状态重试/重复递送不修改任何棋盘/资源/窗口；精确去重及错误载荷仍须实际接口验证",
+      "planned_replays": [
+        "MA-DS01-02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "fresh identical-state request vs same-command retransmission needs actual protocol/identity/error and dedup entrypoint mapping"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S13",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS03真兵由暗炮位普通平移揭示，真帅仅九宫内两次普通步，无亲征/第三英雄；当前(3,7)确是王前屏障",
+      "planned_replays": [
+        "MA-DS03"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S14",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS03锚点合法不等于沙漏合法；回(7,7)完整终盘暴露明车(1,7)到帅(4,7)，原本安全也必须拒绝",
+      "planned_replays": [
+        "MA-DS03"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S15",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS03拒绝余5/W位置/王安全不变，不能提交后指望补挡；正常兵步仍可用，不误判全军无路",
+      "planned_replays": [
+        "MA-DS03"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S16",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS01/02/03分别检查全六步及承诺后续闭合，不能只按当前安全/单个回归候选/中间局面决定；同窗口每次独立安全，后者新的自然反例未构",
+      "planned_replays": [
+        "MA-DS01-02",
+        "MA-DS03",
+        "MA-DS05"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "same-window first-safe second-unsafe natural fixture missing; full source closure beyond shown branches not covered"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S17",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS04黑暗士位揭真兵D、已现身且有1弹；当前敌明车普通将军，不能使用被替换的普通H05技能规避",
+      "planned_replays": [
+        "MA-DS04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S18",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS04目标(4,2)距D1且非自身/非污染，其他条件通过，单独因当前受将拒绝，不错归射程/弹药失败",
+      "planned_replays": [
+        "MA-DS04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S19",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS04 B3拒绝D弹仍1、全军名额仍0、不生污染/崩坏、不改原截止；不是实际投弹后的退款",
+      "planned_replays": [
+        "MA-DS04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S20",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS04黑暗车普通捕获将军车能合法应将，完成主行动后不能因名额未用而重开投弹窗口",
+      "planned_replays": [
+        "MA-DS04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S21",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS04 B4真实新正式回合未受将且条件通过才可投，弹1→0/全军用1，随后正常车步保持；拒绝不产生延期额外窗口",
+      "planned_replays": [
+        "MA-DS04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S22",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "沙漏可完整解将的许可不外推投弹；未受将亦不自动放行非法施放者/目标/范围/弹药/名额；现有ET源合同保持",
+      "planned_replays": [
+        "MA-DS01-02",
+        "MA-DS04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "all invalid caster/target/range/ammo/teamquota negative branches not supplied by these positive-other-gates fixtures"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S23",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS05黑D攻击己暗中央兵为基础合法主行动，死真兵死亡现身但不存活/不装填，真种计数不重复或增添本体",
+      "planned_replays": [
+        "MA-DS05"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S24",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS05 B5距3命中W，R6普通象步先合法挡将，再到R6末崩坏死亡；既有对手回合期限不按己主行动新取得算",
+      "planned_replays": [
+        "MA-DS05"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S25",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS05 B6捕获挡象后公开车将，R7空锚(3,9)复活死W能挡线，其余活勇士同时回各自空锚；完整终盘安全",
+      "planned_replays": [
+        "MA-DS05"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S26",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS05合法沙漏5→4、W明地面且无旧崩坏/旧状态；清污染/给活D补1，死黑龙/红马/红象仍死，无整局快照恢复",
+      "planned_replays": [
+        "MA-DS05"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S27",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS05只已现身集合：未现身中央红兵(4,6)不被召回/揭示，视图不输出暗池/锚点映射或内部稳定本体身份",
+      "planned_replays": [
+        "MA-DS05"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "two player projections and comparison normalization require actual source mapping; no mask approved by this plan"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "DS-S28",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.40.7",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "DS01—05均两英雄单D01/截止内、无已正式终局翻案；文件/手推不等于完整应将搜索、运行隐私或裁判采样通过",
+      "planned_replays": [
+        "MA-DS01-02",
+        "MA-DS03",
+        "MA-DS04",
+        "MA-DS05"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "full royal-response/terminal/clock/privacy/adjudication sampling and whole-mode acceptance not established"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S01",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD01 B1/B2 | 宫内揭示不授盾，首次成功离宫才授3层／占名额1",
+      "planned_replays": [
+        "MA-PD01"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S02",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD01 R3路线 | 实际敌终点＋恰一地面路径炮；不得当普通受阻车或空位冲锋",
+      "planned_replays": [
+        "MA-PD01"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S03",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD01 R3炮死亡 | 先碾碎并正常死亡揭示，终点反弹不恢复炮",
+      "planned_replays": [
+        "MA-PD01"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S04",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD01 R3终点 | 防御耗尽、黑车活且原地、红车回空原位，无额外主行动",
+      "planned_replays": [
+        "MA-PD01"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S05",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD01原子／王安全 | 路径与终点同原子；中兵在位，依据实际结果结束回合",
+      "planned_replays": [
+        "MA-PD01"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S06",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD02 R2 | 强制碾碎己暗兵后至空终点，整体进攻，不可选择略过腿",
+      "planned_replays": [
+        "MA-PD02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S07",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD02 R4/B4 | 马(4,2)不将军(4,0)，黑车合法离宫授盾",
+      "planned_replays": [
+        "MA-PD02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S08",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD02 R5腿 | 明炮(3,2)真实死亡；与R2己兵死亡分别记账",
+      "planned_replays": [
+        "MA-PD02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S09",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD02 R5终点 | 终点盾耗尽、黑车不死、马返回(4,2)，路径炮不回滚",
+      "planned_replays": [
+        "MA-PD02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S10",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD02结束／名额 | 一次敌正式结束，无子回调扣层；护盾耗尽不退款",
+      "planned_replays": [
+        "MA-PD02"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S11",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD03 R5/B5 | 中兵碾碎后马确实将军，具体将(4,0)→(4,1)合法应将",
+      "planned_replays": [
+        "MA-PD03"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S12",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD03 R6/B6 | 以可完成合法马步的将帅马腿形成威胁，黑将具体回(4,0)应将",
+      "planned_replays": [
+        "MA-PD03"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S13",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD03寿命 | 盾B4起3、R5末2、R6末1，R7命中时仍有效，不漏算正式结束",
+      "planned_replays": [
+        "MA-PD03"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S14",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD03 R7路径盾 | 盾不拦独立碾碎，车死名额保留；空终点马成功落位，无弹回",
+      "planned_replays": [
+        "MA-PD03"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S15",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD03合法性 | 黑中兵死但红中兵留；两次王移动安全，不能用无关闲着替代应将",
+      "planned_replays": [
+        "MA-PD03"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S16",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD04 R1 | 暗炮位先按正常炮越唯一炮架吃子，成功才揭示真车",
+      "planned_replays": [
+        "MA-PD04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S17",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD04 R1/R2 | 第0行两阻挡，M04不能提前虚造对将冲锋",
+      "planned_replays": [
+        "MA-PD04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S18",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD04 B3/B4 | 真车离宫盾3；另一真士宫内揭示无盾，R4末车盾2",
+      "planned_replays": [
+        "MA-PD04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S19",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD04 R5 | 盾路径车先碾碎、终点士后普通击杀，两个来源各记一次实际死者",
+      "planned_replays": [
+        "MA-PD04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S20",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD04 R5/B5 | 红车成功落(4,1)并将军，可由将至空(5,0)应将；不自动宣布将死",
+      "planned_replays": [
+        "MA-PD04"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S21",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD05前缀 | 红兵正常前进并吃黑暗兵，唯一冲锋路径己兵有真实来源",
+      "planned_replays": [
+        "MA-PD05-A",
+        "MA-PD05-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S22",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD05 R4己路径 | 己明兵被强制碾碎，终点盾不阻止、不能整份回滚复活",
+      "planned_replays": [
+        "MA-PD05-A",
+        "MA-PD05-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S23",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD05终点／返回 | 黑车活、盾耗尽、源回空(0,9)，主行动已经承诺使用",
+      "planned_replays": [
+        "MA-PD05-A",
+        "MA-PD05-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S24",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD05秘密成对夹具 | 真车／真马同暗车位可行动作与公开结果一致，暗源不因返回翻明",
+      "planned_replays": [
+        "MA-PD05-A",
+        "MA-PD05-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "two player projections and comparison normalization require actual source mapping; no mask approved by this plan"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S25",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD05字段边界 | 不借测试固化未定内部首次使用／身份映射字段，不产生免费重走",
+      "planned_replays": [
+        "MA-PD05-A",
+        "MA-PD05-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "internal first-use/body field representation not chosen by this source"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S26",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD06 B1—B3 | 宫内不授盾，B3真实空纵路离宫获盾3，黑车不斜向将军红帅",
+      "planned_replays": [
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S27",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD06 R4腿 | 己暗象被独立碾碎且死亡揭示，不先清状态绕过来源",
+      "planned_replays": [
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S28",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD06 R4终点 | 盾耗尽、黑车活、暗马位返回仍暗；路径死与终点防御各自完成",
+      "planned_replays": [
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S29",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD06秘密成对夹具 | 真马／真兵均用暗马位几何；不向玩家提供差异按钮／结果探针",
+      "planned_replays": [
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "two player projections and comparison normalization require actual source mapping; no mask approved by this plan"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S30",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "PD06王安全／返回 | 中兵挡照面，原位空可容纳，不虚报窒息或额外落位死",
+      "planned_replays": [
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S31",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "四个弹回族 | 返回移置按正常落位来源处理，但不新增普通main/begin/end／时钟机会",
+      "planned_replays": [
+        "MA-PD01",
+        "MA-PD02",
+        "MA-PD05-A",
+        "MA-PD05-B",
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "natural return-specific extra landing effect not covered by these empty source returns"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S32",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "抽象返回冲突来源 | 真正不可容纳时依原来源窒息；本节自然冲突夹具未构造，不能记正例通过",
+      "planned_replays": [],
+      "included_scope": "original abstract contract retained; no positive natural replay included",
+      "natural_prefix_readiness": "missing",
+      "remaining_obligations": [
+        "no natural positive source-space-conflict fixture; no executable source/observation mapping"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S33",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "全部组合约束 | 两英雄一畸变；不偷加H01/M07/飞行或预授盾制造来源",
+      "planned_replays": [
+        "MA-PD01",
+        "MA-PD02",
+        "MA-PD03",
+        "MA-PD04",
+        "MA-PD05-A",
+        "MA-PD05-B",
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S34",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "动作分类依赖 | 整体进攻是已确认标签，Ⅰ/Ⅱ级沿主线待对齐，不私自批准H16/H05联动",
+      "planned_replays": [
+        "MA-PD01",
+        "MA-PD02",
+        "MA-PD03",
+        "MA-PD04",
+        "MA-PD05-A",
+        "MA-PD05-B",
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "HC-MAIN-H16-ACTION-TIER and H05 related tier interpretation remains with main; do not infer I/II from attack tag"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S35",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "信息／本体／去重 | 路径死亡揭示与暗源未揭示分别处理；实际视图、稳定本体、去重均未验收",
+      "planned_replays": [
+        "MA-PD01",
+        "MA-PD02",
+        "MA-PD03",
+        "MA-PD04",
+        "MA-PD05-A",
+        "MA-PD05-B",
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "actual stable-body/player-view/dedup entrypoints not inspected"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    },
+    {
+      "id": "PD-S36",
+      "source": {
+        "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+        "path": "worklines/half_chaos/WORKING.md",
+        "section": "8.42.9",
+        "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+      },
+      "existing_design_obligation": "原子终局与范围 | 结算完整原子再判来源允许的结果；不声称全应将搜索、全模式完成、评分或NET启用",
+      "planned_replays": [
+        "MA-PD01",
+        "MA-PD02",
+        "MA-PD03",
+        "MA-PD04",
+        "MA-PD05-A",
+        "MA-PD05-B",
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "included_scope": "source-linked observations inside the cited natural prefix only",
+      "natural_prefix_readiness": "V1_documented_manual_only",
+      "remaining_obligations": [
+        "complete royal-response/terminal search and full-mode implementation are outside this minimum"
+      ],
+      "all_execution_prerequisites_unverified": true,
+      "executable_fixture_available": false,
+      "execution_status": "UNRUN",
+      "observed_evidence": []
+    }
+  ],
+  "execution_gates": [
+    {
+      "id": "G-CODE",
+      "current_status": "NOT_ESTABLISHED",
+      "missing": "actual business-repository branch/commit/PR/local diffs and scoped runtime authorization not established",
+      "completion_contract": "source inventory then concrete future task authorization; this document is not engine-run authorization"
+    },
+    {
+      "id": "G-INIT",
+      "current_status": "NOT_ESTABLISHED",
+      "missing": "legal initial same-side15 pool arrangement/source body anchors and deterministic random-result selection unmapped",
+      "completion_contract": "reuse legal initialization route; no midpoint state injection or production probability edits"
+    },
+    {
+      "id": "G-ACTION",
+      "current_status": "NOT_ESTABLISHED",
+      "missing": "actual action/window command API and candidate legality unreviewed",
+      "completion_contract": "preserve normal main, legal skill windows, rejected preflight and two-hero/single-mutation boundaries"
+    },
+    {
+      "id": "G-STATE",
+      "current_status": "NOT_ESTABLISHED",
+      "missing": "authoritative source-body identity/state and resource observers unmapped",
+      "completion_contract": "map semantics without inventing required field names or public outputs"
+    },
+    {
+      "id": "G-VIEW",
+      "current_status": "NOT_ESTABLISHED",
+      "missing": "red/black projection and legal-action/error/event presentation unmapped",
+      "completion_contract": "use source-approved public normalization; retain observable differences, never hide a leak with an invented mask"
+    },
+    {
+      "id": "G-PHASE",
+      "current_status": "NOT_ESTABLISHED",
+      "missing": "atomic closure, actual cutoff, accepted formal opportunity and retry identity unmapped",
+      "completion_contract": "clock may elapse; do not reset deadline or add callbacks; do not approve complete adjudication sampling"
+    },
+    {
+      "id": "G-EVIDENCE",
+      "current_status": "NOT_ESTABLISHED",
+      "missing": "no execution logs/state snapshots/player projections or actual commands exist",
+      "completion_contract": "retain per-assertion raw evidence linked to fixed code/source and exact replay"
+    }
+  ],
+  "deferred_source_obligations": [
+    {
+      "id": "DEF-RETURN-CONFLICT",
+      "specs": [
+        "PD-S32"
+      ],
+      "status": "NATURAL_FIXTURE_MISSING",
+      "owner": "half_chaos source review, shared ambiguity back to main"
+    },
+    {
+      "id": "DEF-RETURN-LANDING",
+      "specs": [
+        "PD-S31"
+      ],
+      "status": "EXTRA_LANDING_NATURAL_FIXTURE_MISSING",
+      "owner": "source-specific review under two heroes/one mutation"
+    },
+    {
+      "id": "DEF-SECOND-GLASS",
+      "specs": [
+        "DS-S16"
+      ],
+      "status": "NATURAL_FIXTURE_MISSING",
+      "owner": "half_chaos"
+    },
+    {
+      "id": "DEF-TIER",
+      "specs": [
+        "PD-S34"
+      ],
+      "status": "SHARED_RULE_DEPENDENCY",
+      "owner": "main HC-MAIN-H16-ACTION-TIER"
+    },
+    {
+      "id": "DEF-FULL-SEARCH-ORDER",
+      "specs": [
+        "PD-S36",
+        "DS-S16",
+        "DS-S28"
+      ],
+      "status": "OUTSIDE_MINIMUM_SCOPE_UNRESOLVED",
+      "owner": "main full source ordering/terminal/pressure/key with mode evidence"
+    }
+  ],
+  "evidence_contract": {
+    "actual_records": [],
+    "required_future_records": [
+      "actual business code branch/commit/diff and execution scope",
+      "adapter mapping for initial body/anchor and each source observer",
+      "exact legal initialization permutation and random outcomes",
+      "ordered original actions/requests and actual per-step results",
+      "authority snapshots before refusal/after committed closure and actual normal-end",
+      "both lawful player projections and exposed action/error/event comparisons",
+      "source events/deadline/formal-opportunity and repeated-request evidence",
+      "actual command/environment with missing observations and failures preserved"
+    ],
+    "prohibitions": [
+      "no invented bodyId/first-use/request/error interface fields",
+      "no editor-set midgame shields/warriors/pollution/ammo/deaths",
+      "no third hero or second mutation",
+      "no source-history rollback or early terminal bypass to make fixture run",
+      "no document/hash checks relabeled runtime",
+      "no broad PASS from a family label or unobserved assertion"
+    ]
+  },
+  "verification": {
+    "sources": "V2 prior exact unchanged rule/confirmation objects plus current entry/modules and full relevant working chapters",
+    "manual_fixture_and_plan": "V1 same assistant",
+    "independent_review": false,
+    "runtime": false
+  },
+  "next_task": {
+    "id": "NEXT-HC-ENGINE-SOURCE-INVENTORY",
+    "action": "read_only_inventory_actual_jieqi_engine_commit_and_existing_fixture_action_state_projection_clock_and_dedup_entrypoints_without_code_or_runtime",
+    "scope": "read-only business-source inventory only; no implementation, execution, merge or deployment"
+  },
+  "publication_protocol": {
+    "source_commit": "aaa834161fcd2bd9c8c0604d54ec96f5da2fb28f",
+    "workflow_git_blob_sha": "4fdcafda6115de120467628d9837064910c1f36b",
+    "actual_reading": "full current WORKFLOW and general entry; underlying collaboration body unchanged",
+    "adoption": "reuse prior confirmed same-scope authorization across dialogues; visible write scope before GitHub increment; no added data disclosure, plugin permission, runtime or gameplay approval"
+  }
+}
