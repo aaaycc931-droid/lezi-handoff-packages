@@ -1,6 +1,6 @@
 {
   "schema": "lezi.main.source_map.v1",
-  "base_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+  "base_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
   "current_adjudication": "ADJUDICATION.json",
   "source_record_version": "1.49",
   "source_record_identity": {
@@ -287,8 +287,8 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.59",
-  "latest_maintenance_base_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+  "current_record_version": "1.60",
+  "latest_maintenance_base_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
     "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
@@ -356,33 +356,39 @@
     }
   },
   "latest_half_chaos_read_scope": {
-    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
-    "revision": "HC-DESIGN-03-20261017-r27",
-    "read_scope": "Complete selected r27 phase/current-breakpoint/current-stage-changes/next-task/actual-validation/replay-action-data/main1.57-consumption metadata; complete actual latest_by_source.main_H15_H06_failure receiver object and r27 source/reconciliation rows. No full WORKING8.48 or raw action-data audit.",
+    "source_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+    "revision": "HC-DESIGN-03-20261017-r29",
+    "read_scope": "Selected current phase/change/breakpoint/next, complete assertion_evidence_matrix/r29_shared_blockers/r29_concurrent_main159_reconciliation metadata; complete actual latest_by_source.standard_M04_path_scale receipt and r29 main-reconciliation object. No raw assertion matrix/WORKING8.50/source audit.",
     "reported_data": {
-      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
-      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
-      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
-      "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
-      "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
-      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
-      "working_section": "8.48",
-      "planned_replays": 12,
-      "normal_main_request_declarations": 100,
-      "skill_request_declarations": 10,
-      "expected_accepted_skills": 6,
-      "expected_rejected_skills": 4,
-      "semantic_observation_checkpoints": 210,
-      "new_game_specifications": 0,
-      "old_game_specifications": 64,
+      "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+      "sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
+      "status": "FINITE_MATRIX_PREPARED_ALL64_UNRUN_RUNTIME_BLOCKED",
+      "task_completed": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX",
+      "source_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
+      "working_section": "8.50",
+      "existing_specifications": 64,
+      "direct_checkpoint_rows": 63,
+      "abstract_only_rows": 1,
+      "unique_direct_checkpoints": 210,
+      "new_game_specs": 0,
+      "runtime_ready_replays": 0,
       "all_game_specs": "UNRUN",
-      "engine_runs": 0,
-      "protocol_or_executable_adapter": false,
-      "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+      "next": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL"
+    },
+    "shared_blockers": {
+      "prior_static_findings": "EI01—07 retained; no reproduced failure count",
+      "prior_observation_gaps": "OG01—07 retained",
+      "new_gameplay_rule_candidates": 0,
+      "new_data_stimulus_limits": "matrix readiness_summary.additional_stimulus_limits; do not confuse missing stimulus with rejected rule"
+    },
+    "next": {
+      "id": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL",
+      "status": "NOT_STARTED_DOCUMENT_ONLY",
+      "action": "Prepare a concrete source-linked implementation/observation and later-run scope proposal from this finite matrix, including lawful admission dependencies, exact-boundary evidence options, affected PD/DS obligations, excluded missing positives and stop conditions. Documentation only; do not edit business code, run engine or bypass gates. Shared rules remain main-owned."
     },
     "game_runs": 0,
-    "main_dataset_independently_verified": false,
-    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+    "main_independently_validated": false
   },
   "latest_fieldmap_sources": [
     {
@@ -416,15 +422,16 @@
       "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b"
     }
   ],
-  "publication_parent_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
+  "publication_parent_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
   "unread_concurrent_returns": [],
   "current_phase_candidate_source": {
-    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
-    "path": "candidates/h15-h06-prestart-training-restore/v1.json",
-    "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
-    "approved": false
+    "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+    "approved": false,
+    "source_baseline": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_scope_correction",
+    "source_priority_note": "Historical9.14 full authority snapshot and user's snapshot-unused objection motivate this exact candidate. Later broad no-refund summary stays in history; if approved this becomes an explicit bounded prestart exception to that wording. Existing1.57 death-failure confirmation is not changed."
   },
-  "confirmed_record_maintenance_note": "No new confirmed policy. Historical broad no-refund record preserved as source wording; first-prestart approval scope disputed, assistant recommendation withdrawn. Prior53 confirmations/all canonical confirmed modules unchanged.",
+  "confirmed_record_maintenance_note": "Preserve prior53 records; add one exact original independently confirmed M04 shared design. H15 old candidate withdrawn, new complete corrected candidate pending; no current-user rule approval.",
   "concurrent_source_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
   "latest_standard_shared_confirmation_sources": [
     {
@@ -707,5 +714,19 @@
       "status": "new_shared_confirmation_report_received_exact_candidate_correspondence_and_canonical_main_adoption_queued",
       "main_canonical_adopted_this_phase": false
     }
+  },
+  "latest_M04_shared_confirmation": {
+    "source": {
+      "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+      "path": "worklines/standard/rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+      "git_blob_sha": "a6dd8730c418cfc804e23a11662ef96cb1b5832b",
+      "observed_at_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82"
+    },
+    "original_presented_candidate": {
+      "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "path": "worklines/standard/candidates/m04-path-dragon-scale/v1.json",
+      "git_blob_sha": "cb16411c92d664f734a0374c39262326caaef7fa"
+    },
+    "exact_correspondence": true
   }
 }

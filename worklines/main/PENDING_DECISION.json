@@ -1,20 +1,23 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "source_scope_disputed_prior_recommendation_withdrawn_no_new_rule",
+  "status": "H15_prestart_consistent_snapshot_restore_candidate_pending",
   "last_confirmed": {
-    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "source": "ADJUDICATION.json#/project_specific_confirmations"
+    "id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+    "source": "ADJUDICATION.json#/project_specific_confirmations",
+    "origin_workline": "standard",
+    "scope": "independently approved guarded M04 branch, not current H15 candidate"
   },
   "next_work_item": {
-    "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
-    "status": "source_scope_reconciliation_no_active_candidate",
-    "task": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。",
-    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_scope_correction",
-    "is_new_user_candidate": false
+    "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "status": "pending_explicit_user_confirmation",
+    "candidate": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+    "task": "H06回到H15首次启动前：训练与使用状态一同恢复",
+    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_consistent_snapshot_candidate",
+    "is_new_user_candidate": true,
+    "approved": false
   },
   "unresolved_questions": [
-    "首次启动前快照：核对资源恢复与一次性约束的原确认范围；已撤下取消训练仍扣次推荐，尚无替代新规则",
+    "H15首次启动前：当前完整候选恢复无训练与未使用，允许原窗口后续启动；待明确确认。毕业/失败等其他交叉独立。",
     "complete remaining hero/mutation public effects, resource and relation map",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
@@ -23,11 +26,15 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": null,
-  "candidate_prepared_for_presentation": false,
-  "approval_scope_guard": "No active candidate. Previous prestart recommendation withdrawn; original scope disputes are not resolved by current 是的.",
+  "current_candidate": {
+    "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+    "approved": false
+  },
+  "candidate_prepared_for_presentation": true,
+  "approval_scope_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
   "new_candidate_approved": false,
-  "candidate_presentation": null,
+  "candidate_presentation": "是否确认三个模式采用这一限定处理：回溯到首次启动前，训练与次数一起恢复为未启动/未使用；之后可在原有合法窗口重新启动？",
   "resolved_candidate": {
     "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
     "path": "candidates/h15-h06-failed-training-restore/v1.json",
@@ -160,9 +167,9 @@
     "engine_runs": 0
   },
   "latest_continuation": {
-    "quote": "我同意",
-    "at_local": "2026-10-17T18:49:06+08:00",
-    "interpretation": "authorizes previously announced prestart source review; no prestart rule approval inferred"
+    "quote": "可以，就这样，进行下一步",
+    "at_local": "2026-10-17T19:58:34+08:00",
+    "interpretation": "Continue source-scope correction and next work; not approval of this newly prepared exact candidate."
   },
   "withdrawn_prestart_candidate": {
     "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",

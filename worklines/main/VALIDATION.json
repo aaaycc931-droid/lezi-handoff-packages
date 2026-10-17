@@ -1,155 +1,116 @@
 {
   "schema": "lezi.main.validation.v1",
-  "base_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+  "base_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
   "checks": {
-    "prior53_confirmation_records_unchanged": true,
+    "prior53_confirmations_unchanged": true,
+    "exactly_one_external_confirmation": true,
     "unified_core_unchanged": true,
-    "confirmed_hero_modules_unchanged": true,
-    "confirmed_mutation_modules_unchanged": true,
-    "confirmed_timing_modules_unchanged": true,
-    "new_confirmed_rules": 0,
-    "no_active_candidate": true,
-    "prestart_candidate_never_approved": true,
-    "recommendation_withdrawn": true,
-    "no_new_refund_or_future_training_policy": true,
-    "other_line_paths_modified": false,
-    "protocol_index_untouched": true,
-    "game_code_changes": 0,
+    "all_H15_and_other_hero_policies_unchanged": true,
+    "old_mutation_policies_unchanged": true,
+    "timing_policies_unchanged": true,
+    "M04_policy_exact": true,
+    "M04_original_candidate_blob_verified": true,
+    "new_H15_candidate_pending": true,
+    "old_training_loss_candidate_not_modified": true,
+    "root_and_main_entry_version_match": true,
+    "other_workline_files_modified": false,
+    "new_main_direct_user_confirmations": 0,
+    "external_original_confirmations_received": 1,
+    "new_game_code_changes": 0,
     "engine_runs": 0,
+    "complete_public_key": false,
     "scoring_frozen": true,
     "NET": "paused"
   },
   "limitation_audit": {
-    "audit_trigger": "User challenges concrete prestart snapshot cancellation-plus-spent-use consequence and original confirmation scope",
-    "risk_level": "high_project_rule_source; reversible_document_correction",
-    "user_statements": [
-      {
-        "at_local": "2026-10-17T19:18:57+08:00",
-        "quote": "这怎么回事我？你的意思是那个英雄技能的回溯可以直接吞掉他的技能吗",
-        "scope": "questions practical consequence of pending candidate"
-      },
-      {
-        "at_local": "2026-10-17T19:20:16+08:00",
-        "quote": "恢复快照的时候，技能不是还没有使用的状态吗？你在说什么呢",
-        "scope": "challenges retaining use consumption when snapshot predates first start"
-      },
-      {
-        "at_local": "2026-10-17T19:22:19+08:00",
-        "quote": "是的",
-        "scope": "agrees to recheck source scope, not approval of cancellation, preserved later training or new refund policy"
-      }
+    "audit_trigger": "Continue source-scope correction, explicitly expose actual consequences, receive separately approved M04 original exact scope",
+    "risk_level": "high_project_rule_source; reversible_document_only",
+    "known_facts": [
+      "Current user authorizes continuation; no exact new H15 proposal approval.",
+      "1.59 original prestart source-scope gap stays preserved; old training-loss recommendation remains withdrawn.",
+      "Original M04 presented candidate blob, guard, policy, scope and excluded set match original independently confirmed record.",
+      "r29 finite matrix metadata reports all64 specsUNRUN,0 runtime-ready replays; main no raw matrix/source audit."
     ],
-    "source_findings": [
-      {
-        "kind": "source_document_wording",
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
-        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
-        "blob": "1207f415a2681aafcd20df7dd9b35d03a0276a61",
-        "read_scope": "complete seven sections",
-        "finding": "§1.5 broadly records no used-opportunity refund through rewind, but provides no quoted prestart-snapshot-specific proposal/approval. Its scope cannot be presented as primary proof of approval of the proposed cancellation-plus-spent-use consequence."
-      },
-      {
-        "kind": "historical_source_document",
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
-        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
-        "blob": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
-        "read_scope": "complete §9.14",
-        "finding": "Explicit full authoritative H15 snapshot restoration; no express prestart-cancellation/consumed-use exception in this section."
-      },
-      {
-        "kind": "current_source_document",
-        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
-        "blob": "32d32f478ba2f368c1c81efe09ffcc5114bc6269",
-        "read_scope": "complete H06/H15 entries",
-        "finding": "H06 general full-resource snapshot and H15 broadly nonrefund wording coexist; summaries do not supply the missing original approval context."
-      },
-      {
-        "kind": "personal_context_targeted_retrieval_not_full_transcript",
-        "searches": 2,
-        "original_user_time_local": "2026-10-13T13:07:02+08:00",
-        "retrieved_user_quote": "修改天空上将的机制，天空上将在对局开始时以及每个己方回合开始后，都可以选择进行训练，但训练每局只能进行一次",
-        "retrieved_followup": {
-          "user_at_local": "2026-10-13T13:33:47+08:00",
-          "user_quote": "是的",
-          "retrieved_scope": "pre-graduation trainee death loses the unique opportunity; summary of adjacent proposal, not a complete transcript"
-        },
-        "finding": "Targeted searches did not retrieve user text or an explicitly approved proposal deciding prestart-snapshot used-opportunity persistence. This is an evidence gap, not proof that such confirmation never existed."
-      }
-    ],
+    "user_instruction": {
+      "quote": "可以，就这样，进行下一步",
+      "at_local": "2026-10-17T19:58:34+08:00",
+      "interpretation": "Continue source-scope correction and next work; not approval of this newly prepared exact candidate."
+    },
     "claim_register": [
       {
-        "claim": "Original target snapshot has no training and then-unused opportunity",
-        "type": "snapshot_definition",
-        "verification": "H06 plus historical9.14 source correspondence"
+        "claim": "New H15 prestart-unused restoration is a proposed explicit bounded exception",
+        "kind": "AI_candidate",
+        "verification": "V1 pending user choice; not primary past confirmation"
       },
       {
-        "claim": "Broad no-refund wording exists in later source record",
-        "type": "document_fact",
-        "verification": "Full later delta read"
+        "claim": "Future legal restart can change selected type/secret random draw",
+        "kind": "explicit_candidate_consequence",
+        "verification": "Included in full proposal for review, not runtime result"
       },
       {
-        "claim": "Explicit approval of nonrefund before first training start not retrieved",
-        "type": "evidence_gap",
-        "verification": "Two targeted personal-context retrievals; not complete original transcript"
+        "claim": "Guarded M04 path-scale completion independently confirmed",
+        "kind": "external_user_confirmation_source",
+        "verification": "V2 full original confirmation plus immutable presented candidate correspondence"
       },
       {
-        "claim": "Prior candidate is a withdrawn assistant recommendation, never user-approved",
-        "type": "current_document_and_conversation_fact",
-        "verification": "Source objection, preceding candidate approved=false, current no-active-candidate state"
+        "claim": "Half-chaos r29 read/adopts main1.59 withdrawal coordination",
+        "kind": "receiver_owned_evidence",
+        "verification": "Complete scoped r29 reconciliation object; not full main-body audit"
       }
     ],
     "assumptions": [
-      "No change to earlier exact53 confirmation records or explicitly scoped1.57 death-failure rule."
+      "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain."
     ],
     "unknowns": [
-      "Full original13Oct transcript and prestart-specific exception authorization",
-      "Final prestart branch treatment and dependent display/public-key/clock/runtime interfaces"
+      "This exact prestart-unused restoration candidate remains pending.",
+      "Blanket refund for failed/graduated training, H11 or other time skills.",
+      "New start windows/in-check permissions/empty-pool request feedback.",
+      "M07 same-begin ordering, full repetition-key/phase/clock/implementation/runtime."
     ],
     "competing_explanations": [
-      "Broad no-refund record might reflect an explicit wider approval not yet retrieved.",
-      "Broad no-refund record might be an AI expansion of once-only/death-failure intent; current retrieval supports no claim of such wider explicit approval."
+      "Historical broad nonrefund summary may have had wider original approval not retrieved; new candidate therefore remains explicit pending.",
+      "Keep future training or cancel-plus-spent-use are different policies; neither is silently accepted here."
     ],
     "falsification_conditions": [
-      "Original exact approved proposal establishes this branch.",
-      "User gives a precise replacement or scope correction."
+      "User corrects scope or rejects restore-unused/future-recruit consequences.",
+      "A newer exact original confirmation resolves prestart differently.",
+      "New dependency changes H06/H15 source or exact M04 confirmed branch."
     ],
-    "verification_status": "partial_source_correspondence_and_targeted_prior_context_not_independent_runtime",
-    "action_boundary": "13 reversible main/candidate/root document paths only",
+    "verification_status": "partial_V2_exact_source_correspondence_V1_design_proposal_no_independent_runtime",
+    "action_boundary": "13 main/candidate/root document paths only, no other-line workdrafts/receipts modified.",
     "failure_conditions": [
-      "Mark current 是的 as any new game rule approval.",
-      "Infer no original approval ever occurred merely from retrieval absence.",
-      "Publish blanket use refunds or preserve future training as approved.",
-      "Treat independent source metadata as engine/visual acceptance."
+      "Count continuation as H15 candidate approval.",
+      "Restore H15 use in death-failure/graduated/cross-shuffle branches via this candidate.",
+      "Hide future-recruit/rerandomization or current public-unused implications.",
+      "Treat metadata/source correspondence as legal natural-prefix or engine PASS."
     ],
-    "next_validation_action": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。",
     "evidence_coverage": {
       "actual": [
-        "Full current H06/H15",
-        "Full original9.14 section",
-        "Complete later core delta",
-        "Two scoped original-dialogue retrievals",
-        "Selected newer workline report and receipt metadata"
+        "Original M04 reviewed candidate atbf36 immutable blob",
+        "Complete current M04 candidate and original confirmation",
+        "Prior pinned1.59 source-priority/correction evidence reused; latest diff only half-chaos",
+        "Selected r29 report and complete actual scoped receipt/reconciliation objects"
       ],
       "not_covered": [
-        "complete original chat transcript",
-        "raw r28 field-mapping/source dataset",
-        "new M04 reviewed candidate semantic correspondence",
-        "UI visual inspection",
-        "gameplay execution"
+        "raw assertion matrix/WORKING8.50",
+        "new H15 full natural legal prefix",
+        "UI artwork view",
+        "engine/client/privacy/runtime"
       ]
     },
+    "next_validation_action": "Present the complete bounded H15 prestart-unused restoration candidate for user decision; implementation and runtime remain separate.",
     "action_resilience": {
-      "maximum_exposure": "13 reversible project documents",
-      "recovery": "Create a scoped restoring commit preserving other-line changes; no history reset"
+      "maximum_exposure": "13 reversible project-document paths",
+      "stop_conditions": "Conflicting target/source changes or publication failure",
+      "recovery": "New scoped commit preserving unrelated later work; no history reset"
     }
   },
   "remote_verification": {
-    "status": "required_after_publication_not_preclaimed",
-    "checks_required": [
-      "13 remote tree blobs equal prepared bytes",
-      "Changed paths exactly match write set",
-      "Immutable root/state/pending/candidate/fieldmap readback exact"
+    "status": "required_after_publication_not_claimed_in_advance",
+    "required": [
+      "13 tree blobs equal prepared bytes",
+      "Diff contains exactly own13 paths",
+      "Immutable root/main entries, state, pending, candidate and fieldmap readback exact"
     ]
   }
 }

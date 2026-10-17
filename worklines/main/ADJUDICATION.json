@@ -1,6 +1,6 @@
 {
   "record_type": "adjudication_reference_selection",
-  "record_version": "1.59",
+  "record_version": "1.60",
   "project": "乐子象棋",
   "decision_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
@@ -2101,6 +2101,43 @@
       ],
       "implementation_status": "confirmed_design_not_implemented",
       "engine_runs": 0
+    },
+    {
+      "id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+      "confirmed_at_local": "2026-10-17T19:06:19+08:00",
+      "user_quote": "这个冲锋是我定义的叫法吗，我没有印象，可以完成进攻",
+      "approval_clause_quote": "可以完成进攻",
+      "source_type": "source_workline_direct_three_mode_confirmation_received_by_main",
+      "origin_workline": "standard",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "original_source": {
+        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+        "path": "worklines/standard/rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+        "git_blob_sha": "a6dd8730c418cfc804e23a11662ef96cb1b5832b",
+        "observed_at_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82"
+      },
+      "reviewed_candidate": {
+        "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+        "path": "worklines/standard/candidates/m04-path-dragon-scale/v1.json",
+        "git_blob_sha": "cb16411c92d664f734a0374c39262326caaef7fa"
+      },
+      "immediately_preceding_question": "是否同意 A，作为三个模式中上述合法普通 M04 冲锋的共同规则？",
+      "intervening_clarification": "M04冲锋是描述用语，正式动作是【进攻】、路径为独立【碾碎】；与H16狂战【冲锋】区分。A方案在澄清时仍未批准。",
+      "availability_guard": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold.",
+      "policy_source": "ADJUDICATION.json#/shared_mutation_design_updates/M04_path_dragon_scale_continuation",
+      "not_confirmed": [
+        "H02 special attack/activation, endpoint multiple defenses/dragon claw ordering",
+        "permanent or other immunity survival and different shields",
+        "hidden/reveal-defection/temporary control/H10/royal path or terminal branches",
+        "return-space/trap/history restoration/source clocks and full search",
+        "implementation, engine PASS, independent review, scores or NET"
+      ],
+      "implementation_status": "confirmed_design_not_implemented",
+      "engine_runs": 0
     }
   ],
   "three_mode_plan_status": {
@@ -2198,7 +2235,7 @@
     }
   ],
   "three_mode_adjudication_draft": {
-    "stage": "S1.41",
+    "stage": "S1.42",
     "status": "core_thresholds_confirmed_remaining_adaptation_draft",
     "authorization": {
       "user_quote": "我同意",
@@ -2256,11 +2293,13 @@
     ],
     "session_status": "main_round_closed_pending_handoff",
     "next_work_item": {
-      "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
-      "status": "source_scope_reconciliation_no_active_candidate",
-      "task": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。",
-      "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_scope_correction",
-      "is_new_user_candidate": false
+      "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "status": "pending_explicit_user_confirmation",
+      "candidate": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+      "task": "H06回到H15首次启动前：训练与使用状态一同恢复",
+      "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_consistent_snapshot_candidate",
+      "is_new_user_candidate": true,
+      "approved": false
     }
   },
   "unified_adjudication_core": {
@@ -3172,9 +3211,9 @@
   },
   "current_main_work": {
     "primary_reader": "AI",
-    "phase": "source_scope_disputed_prior_recommendation_withdrawn_no_new_rule",
+    "phase": "H15_prestart_consistent_restore_candidate_pending_M04_scoped_confirmation_received",
     "current_rules": "this record plus inherited LEZI-SHARED-DESIGN-2026-10-13-r1",
-    "rule_delta": "No new confirmed rule. Prior53 confirmations and all confirmed modules preserved. Withdraw assistant's prestart cancellation-plus-spent-use recommendation and record original approval scope gap.",
+    "rule_delta": "Receive one separately user-confirmed guarded three-mode M04 path-scale continuation from standard. No new current-main user approval; H15 prestart-unused restoration is a complete pending candidate, old training-loss recommendation stays withdrawn.",
     "completed": [
       "H15 current information baseline source recheck",
       "two design dispatches prepared and byte checked",
@@ -3225,7 +3264,8 @@
       "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
       "H15 current-version common display explicitly confirmed2026-10-17; corresponding public/private source-field contract applied; no implementation/runtime.",
       "H15/H06 prestart target source review completed; bounded pending candidate prepared; half-chaos r27 scoped data/actual receipt metadata received.",
-      "Rechecked current H06/H15, historical9.14, complete later core delta and two targeted prior-dialogue retrievals; withdrew unapproved prestart cancellation-plus-spent-use recommendation."
+      "Rechecked current H06/H15, historical9.14, complete later core delta and two targeted prior-dialogue retrievals; withdrew unapproved prestart cancellation-plus-spent-use recommendation.",
+      "Exact original M04 path-scale candidate and confirmed policy/guard/scope/exclusions correspond; receive independent19:06 confirmation. Prepare complete pending prestart-snapshot unused restoration candidate, including future lawful restart/random binding and public-history distinction."
     ],
     "pending": [
       "complete public repetition field map and concrete identity-relation representation, H15 display choice confirmed, complete encoding still pending",
@@ -3251,11 +3291,13 @@
     "new_engine_tests": 0,
     "runtime_acceptance": false,
     "next_action": {
-      "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
-      "status": "source_scope_reconciliation_no_active_candidate",
-      "task": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。",
-      "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_scope_correction",
-      "is_new_user_candidate": false
+      "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "status": "pending_explicit_user_confirmation",
+      "candidate": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+      "task": "H06回到H15首次启动前：训练与使用状态一同恢复",
+      "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_consistent_snapshot_candidate",
+      "is_new_user_candidate": true,
+      "approved": false
     },
     "limitation_audit_status": "partial",
     "audit": {
@@ -4772,16 +4814,19 @@
     "audit_current_phase_reference": "VALIDATION.json#/limitation_audit",
     "H15_H06_source_review": {
       "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-      "status": "source_scope_disputed_prior_recommendation_withdrawn_no_new_rule",
+      "status": "source_scope_gap_retained_corrected_prestart_candidate_pending",
       "existing_source_slice": "same continuous live ungraduated trainee restores snapshot original body/progress; no new randomization; used opportunity remains used",
       "pending_candidate": null,
       "unrelated_histories_unresolved": true,
       "new_rule_confirmations": 0,
       "confirmed_failure_exception": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
       "prestart_candidate": {
-        "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
-        "path": "candidates/h15-h06-prestart-training-restore/v1.json",
-        "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
+        "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+        "status": "pending_explicit_user_confirmation",
+        "candidate": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+        "task": "H06回到H15首次启动前：训练与使用状态一同恢复",
+        "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_consistent_snapshot_candidate",
+        "is_new_user_candidate": true,
         "approved": false
       }
     },
@@ -5683,6 +5728,18 @@
       "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
       "full_confirmed_section_read": true,
       "scope": "original guarded geometry only; no runtime or unresolved-cross approval"
+    },
+    "latest_M04_path_dragon_scale": {
+      "source": {
+        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+        "path": "worklines/standard/rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+        "git_blob_sha": "a6dd8730c418cfc804e23a11662ef96cb1b5832b",
+        "observed_at_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82"
+      },
+      "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+      "full_confirmed_section_and_original_candidate_read": true,
+      "exact_guard_policy_scope_exclusions_correspondence": true,
+      "scope": "Only exact normal M04 path-scale branch; no H02/runtime or naming-authorship inference"
     }
   },
   "shared_mutation_design_updates": {
@@ -5931,6 +5988,67 @@
         "mode pool/entire adaptation/full adjudication field-search-clock or privacy runtime",
         "game code, scoring thaw or NET resume"
       ],
+      "implementation": false,
+      "engine_runs": 0
+    },
+    "M04_path_dragon_scale_continuation": {
+      "status": "source_confirmed_design_received_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold.",
+      "source": {
+        "commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+        "path": "worklines/standard/rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+        "git_blob_sha": "a6dd8730c418cfc804e23a11662ef96cb1b5832b",
+        "observed_at_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82"
+      },
+      "reviewed_candidate": {
+        "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+        "path": "worklines/standard/candidates/m04-path-dragon-scale/v1.json",
+        "git_blob_sha": "cb16411c92d664f734a0374c39262326caaef7fa"
+      },
+      "policy": {
+        "id": "A",
+        "text": "Consume the path body's dragon scale and retain it alive at the original ground square; continue original M04 route and process the original endpoint. In this guarded branch the unprotected endpoint is destroyed and the rook lands there.",
+        "path_death": false,
+        "path_dragon_scale_consumed": 1,
+        "path_body_location": "unchanged",
+        "path_body_retreated_or_displaced": false,
+        "require_successful_path_kill_before_continuing": false,
+        "repeat_crush_after_scale_consumption": false,
+        "endpoint_source": "original normal attack",
+        "new_target_or_action_granted": false,
+        "normal_main_action_consumed": true,
+        "deadline_refreshed": false
+      },
+      "preserved": [
+        "No two-or-more path crossing; empty/royal endpoint permissions not expanded",
+        "Endpoint dragon-scale return remains the old rule, not reapproved by this candidate",
+        "Path ordinary defense does not become a crush shield",
+        "No imaginary extra ground immuneCrush source derived from implementation field; air/river not ground path",
+        "No new H02 source lifetime/failure or full interaction policy"
+      ],
+      "remaining": [
+        "H02 special attack/activation, endpoint multiple defenses/dragon claw ordering",
+        "permanent or other immunity survival and different shields",
+        "hidden/reveal-defection/temporary control/H10/royal path or terminal branches",
+        "return-space/trap/history restoration/source clocks and full search",
+        "implementation, engine PASS, independent review, scores or NET"
+      ],
+      "terminology": {
+        "M04_charge_word": "Existing descriptive wording in prior M04 text; not a new global keyword",
+        "formal_action": "进攻",
+        "independent_path_effect": "碾碎",
+        "H16_skill_unchanged": true,
+        "user_personally_coined_M04_charge_name": "unverified; no direct naming record found",
+        "earliest_authorship": "unknown",
+        "approval_does_not_establish_naming_authorship": true,
+        "current_explanatory_wording": "战车隔一枚地面棋的【进攻】"
+      },
       "implementation": false,
       "engine_runs": 0
     }

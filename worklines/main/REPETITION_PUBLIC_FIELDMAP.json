@@ -154,7 +154,7 @@
     "received_external_shared_confirmations": 4,
     "source_contract_groups": 10
   },
-  "maintenance_base_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+  "maintenance_base_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
   "mapping_authority": {
     "confirmed_business_policy": "Existing source_confirmation_ids plus current source rules only.",
     "mapping_judgment": "V1 same-assistant application of V2 scoped sources; proposed identifiers below are explanatory, not implementation fields.",
@@ -439,12 +439,12 @@
         "source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure"
       },
       "prestart_H06_candidate": {
-        "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
-        "path": "candidates/h15-h06-prestart-training-restore/v1.json",
-        "status": "withdrawn_by_assistant_pending_source_scope_reconciliation",
-        "approved": false
+        "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+        "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+        "approved": false,
+        "status": "pending_explicit_user_confirmation"
       },
-      "prestart_nonrefund_scope_dispute": "For target snapshots before first start, spent-use persistence is under source/authorization scope review. Existing public field summary does not settle this branch or approve a resource refund."
+      "prestart_nonrefund_scope_dispute": "Historical broad no-refund extension to prestart remains disputed. New explicit candidate proposes snapshot-unused restoration and lawful future start, including public current-state projection; no approved policy update yet."
     },
     {
       "id": "R06",
@@ -658,7 +658,7 @@
     "applied_boundary": "Chosen type/shared used opportunity public; actual hidden binding/progress/failure excluded; real graduation/flight rights follow source. No new public clock or complete key."
   },
   "H15_H06_source_review": {
-    "status": "prestart_source_scope_disputed_candidate_recommendation_withdrawn",
+    "status": "prestart_scope_gap_retained_consistent_snapshot_candidate_pending",
     "base_commit": "115350d1f8264143a1381aae61e9837492067a04",
     "source_priority": [
       "2026-10-05 original9.14 is explicit H15 snapshot coverage; unchanged valid parts survive later summaries.",
@@ -691,10 +691,10 @@
         "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
       },
       {
-        "branch": "snapshot before first unique successful training start",
-        "status": "source_scope_disputed_no_active_candidate",
-        "reason": "Snapshot itself is unused/no-training; original approval for extending nonrefund to this branch not retrieved. Prior cancellation-plus-spent-use recommendation withdrawn; no replacement rule approved.",
-        "source_correction": "H15_H06_source_review/prestart_scope_correction"
+        "branch": "snapshot before first successful start; current same trainee alive ongoing ungraduated",
+        "status": "complete_consistent_snapshot_restore_candidate_pending",
+        "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+        "reason": "Propose no training and unused opportunity together, future start only in existing windows; old cancel-plus-spent-use withdrawn. Not yet approved."
       },
       {
         "branch": "graduation/flight obtained after target snapshot, or completed reward restored after destruction",
@@ -924,6 +924,52 @@
         "Record this dispute on current main source maps and pause dependent prestart implementation; no game code or engine runs."
       ],
       "next": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。"
+    },
+    "prestart_consistent_snapshot_candidate": {
+      "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+      "approved": false,
+      "guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+      "proposed_clauses": [
+        "合法H06回到首次启动前快照S时，训练状态及使用状态一起恢复：没有受训绑定、没有已启动训练的培养进度，H15训练机会为未使用。",
+        "S之后那次成功启动及其秘密绑定不作为当前训练保留；本条不把受训棋判为死亡、失败或毕业，也不把其后的培养进度保留到S。",
+        "之后H15可在原有合法启动窗口重新选择兵种，依当时合法候选和原随机征募规则启动；该成功启动耗掉恢复后的唯一机会。被回溯撤销的启动记录不封锁此分支的后续合法启动；可能绑定相同或不同合法棋，不预留原时间线秘密对象。",
+        "回溯/重走本身不自动启动、不给培养进度、不补begin、不刷新时限或额外开放启动窗口；成功启动的行动成本与首次培养结算点仍按已有独立确认。",
+        "玩家记忆及已共同知道的旧启动事实保留为历史信息，不能用旧事实把当前机会显示为已用或把旧选种显示成当前活跃训练。若展示当前训练机会状态，本分支为未使用；不新增秘密受训对象、实际进度或实时失败提示。"
+      ],
+      "state_table": [
+        {
+          "time": "目标快照S，首次启动前",
+          "training": "无",
+          "opportunity": "未使用",
+          "binding": "无"
+        },
+        {
+          "time": "后来合法成功启动",
+          "training": "进行中，仍存活未毕业",
+          "opportunity": "已使用",
+          "binding": "按原规则秘密绑定"
+        },
+        {
+          "time": "按本候选合法回溯到S",
+          "training": "无",
+          "opportunity": "未使用",
+          "binding": "原时间线绑定不保留"
+        },
+        {
+          "time": "以后原有窗口再次合法启动",
+          "training": "新一次当前有效训练，从0开始",
+          "opportunity": "已使用",
+          "binding": "按当时原征募规则秘密选择"
+        }
+      ],
+      "source_priority_note": "Historical9.14 full authority snapshot and user's snapshot-unused objection motivate this exact candidate. Later broad no-refund summary stays in history; if approved this becomes an explicit bounded prestart exception to that wording. Existing1.57 death-failure confirmation is not changed.",
+      "source_correction_preserved": true
     }
+  },
+  "new_shared_M04_confirmation": {
+    "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+    "source": "ADJUDICATION.json#/shared_mutation_design_updates/M04_path_dragon_scale_continuation",
+    "scope": "Exact guarded design received only; does not supply complete M04 public field/key or runtime proof."
   }
 }

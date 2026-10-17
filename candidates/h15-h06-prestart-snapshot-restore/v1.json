@@ -1,0 +1,101 @@
+{
+  "schema": "lezi.main.design_candidate.v1",
+  "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+  "status": "pending_explicit_user_confirmation",
+  "approved": false,
+  "prepared_date_local": "2026-10-17",
+  "source_baseline_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+  "mode_ids": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "title": "H06回到H15首次启动前：训练与使用状态一同恢复",
+  "guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+  "preceding_user_instruction": {
+    "quote": "可以，就这样，进行下一步",
+    "at_local": "2026-10-17T19:58:34+08:00",
+    "interpretation": "Continue source-scope correction and next work; not approval of this newly prepared exact candidate."
+  },
+  "source_pointer": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_scope_correction",
+  "source_priority_note": "Historical9.14 full authority snapshot and user's snapshot-unused objection motivate this exact candidate. Later broad no-refund summary stays in history; if approved this becomes an explicit bounded prestart exception to that wording. Existing1.57 death-failure confirmation is not changed.",
+  "proposed_clauses": [
+    "合法H06回到首次启动前快照S时，训练状态及使用状态一起恢复：没有受训绑定、没有已启动训练的培养进度，H15训练机会为未使用。",
+    "S之后那次成功启动及其秘密绑定不作为当前训练保留；本条不把受训棋判为死亡、失败或毕业，也不把其后的培养进度保留到S。",
+    "之后H15可在原有合法启动窗口重新选择兵种，依当时合法候选和原随机征募规则启动；该成功启动耗掉恢复后的唯一机会。被回溯撤销的启动记录不封锁此分支的后续合法启动；可能绑定相同或不同合法棋，不预留原时间线秘密对象。",
+    "回溯/重走本身不自动启动、不给培养进度、不补begin、不刷新时限或额外开放启动窗口；成功启动的行动成本与首次培养结算点仍按已有独立确认。",
+    "玩家记忆及已共同知道的旧启动事实保留为历史信息，不能用旧事实把当前机会显示为已用或把旧选种显示成当前活跃训练。若展示当前训练机会状态，本分支为未使用；不新增秘密受训对象、实际进度或实时失败提示。"
+  ],
+  "state_table": [
+    {
+      "time": "目标快照S，首次启动前",
+      "training": "无",
+      "opportunity": "未使用",
+      "binding": "无"
+    },
+    {
+      "time": "后来合法成功启动",
+      "training": "进行中，仍存活未毕业",
+      "opportunity": "已使用",
+      "binding": "按原规则秘密绑定"
+    },
+    {
+      "time": "按本候选合法回溯到S",
+      "training": "无",
+      "opportunity": "未使用",
+      "binding": "原时间线绑定不保留"
+    },
+    {
+      "time": "以后原有窗口再次合法启动",
+      "training": "新一次当前有效训练，从0开始",
+      "opportunity": "已使用",
+      "binding": "按当时原征募规则秘密选择"
+    }
+  ],
+  "abstract_timeline": "S为H06上一己方正式回合行动前；H06正常行动后，H15在其后正常己方begin闭合后合法启动炮训练0/6并正常行动；H06下一己方正式回合合法回溯S且通过预检。候选结果为炮按S正常恢复、无训练、机会未用；将来的H15原有合法窗口可启动。仅条件时间例，未证明完整自然前缀或运行。",
+  "practical_consequences": [
+    "对方合法回溯可以撤销这次尚未完成的启动，但不会让H15同时失去训练关系和使用机会。",
+    "后续合法启动可重新选种及按原规则随机受训棋，因此可能改变原时间线的秘密抽选结果；这是恢复为未启动的明确后果，不能同时沿用原绑定。",
+    "不把所有回溯都当作返还机会：目标快照本来已有持续训练时，仍恢复快照原绑定/进度且机会已用。"
+  ],
+  "unchanged_cases": [
+    {
+      "case": "S和当前都含同一次持续存活未毕业训练",
+      "result": "按原9.14有限条款恢复S原棋及S进度，机会已用；无重抽。"
+    },
+    {
+      "case": "毕业前实际死亡失败，S含此前活跃训练",
+      "result": "按1.57明确确认：棋可恢复，失败训练不重开，机会仍已用。"
+    },
+    {
+      "case": "H06预检不提交",
+      "result": "维持当前原状态，不发生任何回溯恢复或次数返还。"
+    },
+    {
+      "case": "已毕业、其他失败、跨洗牌屏障或未决控制变换",
+      "result": "排除本候选，不由此推定生命周期或奖励结果。"
+    }
+  ],
+  "not_approved": [
+    "This exact prestart-unused restoration candidate remains pending.",
+    "Blanket refund for failed/graduated training, H11 or other time skills.",
+    "New start windows/in-check permissions/empty-pool request feedback.",
+    "M07 same-begin ordering, full repetition-key/phase/clock/implementation/runtime."
+  ],
+  "withdrawn_old_candidate": {
+    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "path": "candidates/h15-h06-prestart-training-restore/v1.json",
+    "status": "withdrawn recommendation; never approved; retained unchanged",
+    "proposal_is_not_revived": true
+  },
+  "decision_question": "是否确认三个模式采用这一限定处理：回溯到首次启动前，训练与次数一起恢复为未启动/未使用；之后可在原有合法窗口重新启动？",
+  "verification": {
+    "source": "Prior1.59 pinned-source review and current exact user objection retained; source-specific candidate reasoning",
+    "combination": "V1 same-assistant proposal, not primary proof of past approval",
+    "engine_runs": 0,
+    "implementation": false,
+    "independent": false
+  },
+  "scoring_frozen": true,
+  "NET": "paused"
+}
