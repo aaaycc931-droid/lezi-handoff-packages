@@ -1,8 +1,8 @@
 {
   "schema": "lezi.hc_confirmation_current.v2",
-  "revision": "HC-DESIGN-03-20261017-r29",
+  "revision": "HC-DESIGN-03-20261017-r30",
   "new_user_rule_confirmations_this_round": 0,
-  "new_rule_candidates_adopted_this_round": [],
+  "new_rule_candidates_adopted_this_round": 0,
   "inherited_local_confirmations": [
     {
       "id": "CONF-HC-H03-DEPARTURE-THEN-DEATH-20261014",
@@ -1800,5 +1800,135 @@
     "scope": "extension of broad no-refund wording to snapshot before first successful H15 training start; underlying historical text preserved, dependent implementation paused",
     "coordination_adopted": "prior prestart candidate withdrawn, no active replacement or new rule approval; source scope disputed. Do not infer cancel-plus-spent-use or blanket refund from current assent. Exact1.57 death-failure branch remains unchanged.",
     "full_original_historical_review": false
-  }
+  },
+  "r30_H15_H06_prestart_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "source_workline": "main",
+    "source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+    "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+    "source_blob": "3a82d15be9516ffc4b80458234bd2d18d13ef403",
+    "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
+    "policy_blob": "5416db2754724cca10ee30c9560a771204d09a8c",
+    "reviewed_candidate": {
+      "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+      "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+      "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
+    },
+    "current_candidate_blob": "5f1da661971c8403e3b256080ef5f24aac686bc7",
+    "read_scope": "full original confirmation, full original reviewed candidate at f644, full updated candidate and complete confirmed1.61 policy; main entry and limited prior r29 receipt metadata; not whole adjudication",
+    "adopted_scope": "half_chaos only under exact original lawful H06/H15 first-prestart snapshot and still-alive-active-ungraduated original trainee guard",
+    "new_local_user_approval": false,
+    "implementation": false,
+    "effect_on_original12": "none: no H15 or ordinaryH06; all original data unchanged",
+    "original_confirmation": {
+      "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "confirmed_at_local": "2026-10-17T20:56:40+08:00",
+      "user_quote": "我同意",
+      "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_prestart_unused_restore_question",
+      "reviewed_candidate": {
+        "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+        "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+        "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
+      },
+      "immediately_preceding_question": "是否确认三个模式采用这条限定处理？",
+      "presented_clauses": [
+        "合法回溯到首次训练启动前，训练和次数一起恢复为未启动、未使用。",
+        "之后可在原有合法窗口重新选种、按原规则随机征募；旧绑定和进度不保留，玩家记忆保留。",
+        "仅限回溯前训练仍存活、未失败未毕业的分支；已有训练快照及已确认的死亡失败例外保持独立。"
+      ],
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+      "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
+      "not_confirmed": [
+        "death-failed/graduated or other failure branches beyond their exact existing confirmations",
+        "new H06/H15 availability/windows/check permission, empty/invalid-request feedback or other time skills",
+        "H11 mode-specific space barriers and M07 unresolved control/begin interactions",
+        "graduation/reward-history restoration, complete public-field/key/phase/clock algorithms",
+        "physical storage layout, implementation, runtime/privacy/independent acceptance, scoring or NET"
+      ],
+      "implementation_status": "confirmed_design_not_implemented",
+      "engine_runs": 0
+    },
+    "confirmed_policy": {
+      "status": "user_confirmed_design_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+      "confirmed_text": [
+        "合法H06回到首次启动前快照S时，训练状态及使用状态一起恢复：没有受训绑定、没有已启动训练的培养进度，H15训练机会为未使用。",
+        "S之后那次成功启动及其秘密绑定不作为当前训练保留；本条不把受训棋判为死亡、失败或毕业，也不把其后的培养进度保留到S。",
+        "之后H15可在原有合法启动窗口重新选择兵种，依当时合法候选和原随机征募规则启动；该成功启动耗掉恢复后的唯一机会。被回溯撤销的启动记录不封锁此分支的后续合法启动；可能绑定相同或不同合法棋，不预留原时间线秘密对象。",
+        "回溯/重走本身不自动启动、不给培养进度、不补begin、不刷新时限或额外开放启动窗口；成功启动的行动成本与首次培养结算点仍按已有独立确认。",
+        "玩家记忆及已共同知道的旧启动事实保留为历史信息，不能用旧事实把当前机会显示为已用或把旧选种显示成当前活跃训练。若展示当前训练机会状态，本分支为未使用；不新增秘密受训对象、实际进度或实时失败提示。"
+      ],
+      "restoration": {
+        "snapshot_predates_first_successful_start_required": true,
+        "snapshot_training_relation": "none",
+        "snapshot_training_opportunity": "unused",
+        "current_trainee_guard": "same original trainee alive actively training ungraduated; no intervening death/failure/graduation/barrier/unresolved transformation",
+        "later_binding_retained": false,
+        "later_cultivation_progress_retained": false,
+        "opportunity_after_restore": "unused",
+        "training_after_restore": "not_started",
+        "trainee_counted_as_death_or_failure_by_restore": false
+      },
+      "future_start": {
+        "only_original_lawful_windows": true,
+        "choose_type_again_under_original_rules": true,
+        "secret_binding_uses_current_original_recruitment_rules": true,
+        "prior_timeline_binding_reserved": false,
+        "same_or_different_legal_body_possible": true,
+        "valid_success_spends_restored_unique_opportunity": true,
+        "rewind_or_replay_automatically_starts_or_adds_progress": false,
+        "closed_begin_catchup": false,
+        "additional_window_or_deadline_refresh": false,
+        "prior_successful_start_cost_and_first_tick_preserved": true
+      },
+      "display_and_history": {
+        "player_memory_and_shared_old_start_event": "retained as history",
+        "old_selected_type_as_current_training": false,
+        "current_opportunity_if_displayed": "unused",
+        "hidden_binding_actual_progress_or_live_failure_added": false,
+        "full_public_repetition_key_selected": false
+      },
+      "source_priority": "This exact newly approved minimal prestart branch supersedes broad historical no-refund summaries for this branch. It does not assert that the same exception had already been explicitly approved in13Oct. Preserve1.59 provenance/dispute and withdrawn old candidate.",
+      "unchanged_cases": [
+        {
+          "case": "S和当前都含同一次持续存活未毕业训练",
+          "result": "按原9.14有限条款恢复S原棋及S进度，机会已用；无重抽。"
+        },
+        {
+          "case": "毕业前实际死亡失败，S含此前活跃训练",
+          "result": "按1.57明确确认：棋可恢复，失败训练不重开，机会仍已用。"
+        },
+        {
+          "case": "H06预检不提交",
+          "result": "维持当前原状态，不发生任何回溯恢复或次数返还。"
+        },
+        {
+          "case": "已毕业、其他失败、跨洗牌屏障或未决控制变换",
+          "result": "排除本候选，不由此推定生命周期或奖励结果。"
+        }
+      ],
+      "remaining": [
+        "death-failed/graduated or other failure branches beyond their exact existing confirmations",
+        "new H06/H15 availability/windows/check permission, empty/invalid-request feedback or other time skills",
+        "H11 mode-specific space barriers and M07 unresolved control/begin interactions",
+        "graduation/reward-history restoration, complete public-field/key/phase/clock algorithms",
+        "physical storage layout, implementation, runtime/privacy/independent acceptance, scoring or NET"
+      ],
+      "implementation": false,
+      "engine_runs": 0
+    }
+  },
+  "r30_new_shared_confirmation_consumption": 1
 }

@@ -625,19 +625,45 @@
       "effect_on_12_replays": "none: all PD H04/H03 and DS D01, no H21. Do not add third hero or scale to existing data.",
       "implementation": false,
       "new_local_user_approval": false
+    },
+    "main_r30_metadata": {
+      "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+      "main_read_scope": "current status/pending/next metadata; complete latest_by_source.half_chaos.r29_stage_report and actual adoption metadata, not raw main adjudication/candidate",
+      "main_pending_candidate_adopted": false,
+      "actual_main_prior_receipt": "limited r29 report only; no raw matrix or independent validation"
+    },
+    "main_H15_H06_prestart": {
+      "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "source_workline": "main",
+      "source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+      "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+      "source_blob": "3a82d15be9516ffc4b80458234bd2d18d13ef403",
+      "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
+      "policy_blob": "5416db2754724cca10ee30c9560a771204d09a8c",
+      "reviewed_candidate": {
+        "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+        "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+        "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
+      },
+      "current_candidate_blob": "5f1da661971c8403e3b256080ef5f24aac686bc7",
+      "read_scope": "full original confirmation, full original reviewed candidate at f644, full updated candidate and complete confirmed1.61 policy; main entry and limited prior r29 receipt metadata; not whole adjudication",
+      "adopted_scope": "half_chaos only under exact original lawful H06/H15 first-prestart snapshot and still-alive-active-ungraduated original trainee guard",
+      "new_local_user_approval": false,
+      "implementation": false,
+      "effect_on_original12": "none: no H15 or ordinaryH06; all original data unchanged"
     }
   },
   "own_line_continuation": {
-    "source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-    "previous_revision": "HC-SESSION-CLOSEOUT-20261017-r1",
-    "last_design": "HC-DESIGN-03-20261017-r25",
+    "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "previous_revision": "HC-DESIGN-03-20261017-r29",
     "actual_working_sections": [
       "0",
-      "8.40",
-      "8.42",
-      "8.44",
-      "8.45",
-      "8.46"
+      "complete8.40",
+      "complete8.42",
+      "complete8.44",
+      "complete8.49",
+      "complete8.50",
+      "8.51 closeout/next"
     ],
     "prior_protected_materials_retained": true,
     "not_full_historical_migration": true
@@ -1674,5 +1700,42 @@
       "main_independently_validated": false
     },
     "current_closeout_receiver_status": null
+  },
+  "r30_scope_proposal_source_review": {
+    "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "revision": "HC-DESIGN-03-20261017-r30",
+    "own_working_sections": [
+      "0",
+      "complete8.40",
+      "complete8.42",
+      "complete8.44",
+      "complete8.49",
+      "complete8.50",
+      "8.51 closeout/next"
+    ],
+    "machine_read_scope": "full files retrieved; matrix obligations/summary/packages and relevant source fields/limits inspected; programmatic64 routes/identities checked, not every action ledger semantically re-audited",
+    "original_confirmations_read": [
+      "full D01 hourglass safety original JSON",
+      "full D01 bomb-in-check original JSON"
+    ],
+    "current_shared_sections_read": [
+      "fullH03/H04",
+      "fullM01/M04/D01",
+      "01 attack endpoint/atom closure/reveal-control/dark-identity/current destroyed records/displacement/revival/rewind/suffocation"
+    ],
+    "engine_sources": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/source_anchors",
+    "engine_branch_unchanged": true,
+    "main_read_scope": "current status/pending/next metadata; complete latest_by_source.half_chaos.r29_stage_report and actual adoption metadata, not raw main adjudication/candidate",
+    "main_pending_candidate_adopted": false,
+    "actual_main_prior_receipt": "limited r29 report only; no raw matrix or independent validation",
+    "new_gameplay_confirmation_adopted": false
+  },
+  "r30_concurrent_main161_reconciliation": {
+    "source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+    "own_targets_unchanged": true,
+    "new_shared_confirmation_consumption": 1,
+    "candidate_and_policy_read_scope": "full original confirmation, full original reviewed candidate at f644, full updated candidate and complete confirmed1.61 policy; main entry and limited prior r29 receipt metadata; not whole adjudication",
+    "other_worklines": "preserved latest tree, not edited or audited",
+    "main_prior_receiver_scope": "limited r29 report; r30 unknown"
   }
 }
