@@ -1,20 +1,20 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "prestart_unused_restore_confirmed_no_active_candidate_source_review_next",
+  "status": "round_closed_no_active_main_candidate_graduation_policy_gap",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
-    "status": "source_review_next_no_new_rule_candidate",
-    "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
-    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+    "id": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+    "status": "not_started_after_round_closeout_no_candidate_selected",
+    "task": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
+    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/graduation_crossing_review",
     "is_new_user_candidate": false
   },
   "unresolved_questions": [
-    "H15毕业/飞行/奖励历史及其他未决恢复分支待来源核对；首次启动前的存活未失败未毕业分支已明确确认",
+    "毕业跨越来源已核对；最小存活5/6→6/6后回溯的同次训练再达阈值与奖励撤销处理仍待明确，复工先形成准确提案。",
     "complete remaining hero/mutation public effects, resource and relation map",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
@@ -25,9 +25,9 @@
   ],
   "current_candidate": null,
   "candidate_prepared_for_presentation": false,
-  "approval_scope_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
-  "new_candidate_approved": true,
-  "candidate_presentation": "Exact minimal prestart-unused restoration candidate approved; no active replacement.",
+  "approval_scope_guard": "No new main policy approved by continuation/closeout. Prior exact1.61 prestart and1.57 failure branches preserved.",
+  "new_candidate_approved": false,
+  "candidate_presentation": null,
   "resolved_candidate": {
     "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
@@ -248,5 +248,52 @@
       "Record this dispute on current main source maps and pause dependent prestart implementation; no game code or engine runs."
     ],
     "next": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。"
-  }
+  },
+  "external_pending_candidates": [
+    {
+      "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf",
+      "status": "pending_user_confirmation",
+      "approved": false,
+      "guard": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。",
+      "owner": "standard",
+      "next": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？"
+    }
+  ],
+  "round_closeout": "LEZI-PROJECT-ROUND-CLOSEOUT-20261017",
+  "last_user_instruction": {
+    "quote": "额度已恢复，继续推进本轮工作，之后收束项目",
+    "at_local": "2026-10-17T23:33:59+08:00",
+    "scope": "bounded work then round closeout, no candidate approval"
+  },
+  "shared_source_contract_review_queue": [
+    {
+      "id": "HC-SCOPE-WP01",
+      "owner": "main",
+      "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
+      "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
+      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+      "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+    },
+    {
+      "id": "HC-SCOPE-WP02",
+      "owner": "main",
+      "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
+      "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
+      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+    },
+    {
+      "id": "HC-SCOPE-WP03",
+      "owner": "main",
+      "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
+      "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
+      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+    }
+  ]
 }

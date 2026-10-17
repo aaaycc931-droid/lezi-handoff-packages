@@ -34,14 +34,14 @@
     "entry": "worklines/main/START_HERE.txt",
     "state": "worklines/main/CURRENT_STATE.json",
     "shared_coordination": "worklines/main/SHARED_COORDINATION.json",
-    "base_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "base_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
     "necessary_body_publication": "present in this commit",
     "full_history_migration": false,
     "pending_repetition_history_approved": true,
-    "current_adjudication_version": "1.61",
+    "current_adjudication_version": "1.62",
     "latest_confirmation": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "current_pending_candidate": null,
-    "next_source_review": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
+    "next_source_review": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
     "public_body_equivalence_approved": true,
     "public_fieldmap_schema": "lezi.repetition.public_fieldmap.v0.3",
     "H15_first_tick_confirmed": true,
@@ -68,7 +68,8 @@
     "prestart_source_scope_disputed": false,
     "withdrawn_prestart_candidate_note": "Old cancel-training-plus-spent-use proposal remains withdrawn; corrected minimal restore-unused proposal now explicitly confirmed.",
     "H15_H06_prestart_unused_restore_confirmed": true,
-    "historical_prestart_original_approval_scope_gap_preserved": true
+    "historical_prestart_original_approval_scope_gap_preserved": true,
+    "round_closeout_summary": "worklines/main/ROUND_CLOSEOUT.md"
   },
   "historical_archive_migration_incomplete": [
     "main",
@@ -89,7 +90,55 @@
       "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
       "path": "worklines/standard/READ_RECEIPTS.json#/by_source_workline/main/latest_scoped_update",
       "acknowledged_main_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
-      "scope": "actual scoped H15 display adoption and prior H02/M04 receipt recognition only; no failed-training candidate or full history/runtime adoption; new1.57 unknown"
+      "scope": "actual scoped H15 display adoption and prior H02/M04 receipt recognition only; no failed-training candidate or full history/runtime adoption; new1.57 unknown",
+      "latest_main161_metadata_only": {
+        "source_commit": "05501db57425ee406983468ba81f1efdfc73057f",
+        "observed_at_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+        "actual_latest_full_scoped_adoption": {
+          "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+          "record_version": "1.56",
+          "actual_read_files_and_sections": [
+            {
+              "path": "worklines/main/ADJUDICATION.json",
+              "git_blob_sha": "7659a6d4d2063e4cbbe18ad595c63d4c0f1c89da",
+              "read_scope": "Complete H15 public-display and H02/M04 geometry policies, matching original H15 display confirmation; prior1.54 core/mutation/hero values compared equal, not entire history"
+            },
+            {
+              "path": "worklines/main/READ_RECEIPTS.json",
+              "read_scope": "Complete latest_by_source.standard only"
+            },
+            {
+              "path": "worklines/main/PENDING_DECISION.json",
+              "read_scope": "Current candidate/next/scope/status and source pointer only"
+            }
+          ],
+          "adopted_scope": [
+            "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017 exact current public-display scope",
+            "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017 actual main receipt/adoption recognized; policy exactly equals own original"
+          ],
+          "not_adopted": [
+            "H15/H06 failed-training restoration candidate",
+            "full fieldmap/history/half-chaos runtime or other corpus"
+          ],
+          "comparison": {
+            "unified_core_same": true,
+            "old_mutation_policies_same": true,
+            "prior_hero_policies_equal": true
+          }
+        },
+        "current_main_metadata_only": {
+          "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+          "path": "worklines/main/CURRENT_STATE.json",
+          "adjudication_version": "1.61",
+          "pending_decision": null,
+          "next_action": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+          "latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+          "read_scope": "Current-state and pending ID/status/next metadata only; no new H15 rule-policy/original-source adoption.",
+          "newer_H15_confirmation_adopted_here": false
+        },
+        "new_H15_161_full_policy_adopted": false,
+        "scope": "Actual latest scoped body adoption is1.56; later1.61 metadata recognition is not policy adoption."
+      }
     },
     "half_chaos": {
       "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
@@ -111,14 +160,69 @@
         "main_candidate_full_body_read": false,
         "main_candidate_adopted": false,
         "adoption": "1.60 status/routing and actual limited r29 receipt recognition only; new1.61 confirmation reception unknown"
+      },
+      "latest_main1_61_prestart_adoption": {
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "path": "worklines/half_chaos/READ_RECEIPTS.json#/latest_by_source/main_H15_H06_prestart",
+        "acknowledged_main_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+        "scope": "actual scoped1.61 prestart-unused policy consumption only; not whole adjudication/runtime"
       }
     }
   },
   "latest_scoped_increment_observation": {
-    "observed_at_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
-    "half_chaos": "Conversation-only closeout after r29; next document proposal NOT_STARTED; allUNRUN",
-    "standard": "No new commit since exact scoped M04 received",
-    "ui": "Concurrent B8-v1 candidate published pending review; B7 approval preserved, main metadata only",
-    "ui_source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51"
+    "observed_at_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+    "main": "Graduation sources reviewed, policy unresolved;55 confirmed rules unchanged",
+    "standard": "Own conversation closed preserving pending H02/M04 candidate; wording-only update adopted",
+    "ui": "B8 approved, own session closed, B9 not created; metadata only",
+    "half_chaos": "Final r30 document proposal and own round closeout received; next WP01 contract refinement documents only, all64UNRUN"
+  },
+  "current_project_round_closeout": {
+    "revision": "LEZI-PROJECT-ROUND-CLOSEOUT-20261017",
+    "summary": "worklines/main/ROUND_CLOSEOUT.md",
+    "source_baseline_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+    "confirmed_gameplay_records": 55,
+    "project_permanently_terminated": false,
+    "scope": "Main-led closeout of this project work round against latest published four-line state; preserves any independently active or unpublished dialogue work and receiver-owned session records.",
+    "next_by_workline": {
+      "main": {
+        "id": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+        "status": "not_started_after_round_closeout_no_candidate_selected",
+        "task": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
+        "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/graduation_crossing_review",
+        "is_new_user_candidate": false
+      },
+      "standard": {
+        "published_source_commit": "bce9469df00d0645757ca3fb6ea979d74e2acf88",
+        "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+        "status": "pending_user_confirmation",
+        "candidate": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+        "approved": false,
+        "scope_owner": "standard; main received source candidate only",
+        "session_status": "own_conversation_closed_pending_candidate_preserved"
+      },
+      "half_chaos": {
+        "published_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "last_completed": "HC-DESIGN-03-20261017-r30",
+        "id": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
+        "status": "NOT_STARTED_DOCUMENT_ONLY",
+        "unreturned_other_dialogue_progress": "unknown outside latest scoped closeout; protect",
+        "engine_runs": 0,
+        "all64_specs": "UNRUN"
+      },
+      "ui": {
+        "published_source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+        "last_approved": "B8-v1",
+        "approved_image_sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+        "next": "B9 蓝牙权限永久拒绝，前往系统设置",
+        "candidate_created": false,
+        "session_status": "closed_by_UI_user",
+        "runtime": "not_run"
+      }
+    },
+    "latest_published_scoped_closeouts_observed": [
+      "standard r2",
+      "half_chaos r3 afterr30",
+      "UI afterB8"
+    ]
   }
 }

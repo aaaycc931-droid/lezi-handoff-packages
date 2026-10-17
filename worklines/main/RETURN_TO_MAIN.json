@@ -7,10 +7,10 @@
     "standard",
     "ui"
   ],
-  "base_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
-  "phase": "H15_H06_prestart_unused_restore_confirmed_graduation_source_review_next",
-  "current_breakpoint": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
-  "status": "prestart_unused_restore_confirmed_not_implemented",
+  "base_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+  "phase": "project_round_closeout_after_graduation_source_review",
+  "current_breakpoint": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+  "status": "round_closed_no_new_gameplay_approval",
   "confirmed_delta_this_session": [
     {
       "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -52,7 +52,7 @@
     }
   ],
   "pending_delta": [
-    "H15毕业/飞行/奖励历史及其他未决恢复分支待来源核对；首次启动前的存活未失败未毕业分支已明确确认",
+    "毕业跨越来源已核对；最小存活5/6→6/6后回溯的同次训练再达阈值与奖励撤销处理仍待明确，复工先形成准确提案。",
     "complete remaining hero/mutation public effects, resource and relation map",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
@@ -78,7 +78,8 @@
     "VALIDATION.json",
     "../../candidates/h15-h06-failed-training-restore/v1.json",
     "../../candidates/h15-h06-prestart-training-restore/v1.json",
-    "../../candidates/h15-h06-prestart-snapshot-restore/v1.json"
+    "../../candidates/h15-h06-prestart-snapshot-restore/v1.json",
+    "ROUND_CLOSEOUT.md"
   ],
   "approval_sources": [
     {
@@ -139,7 +140,7 @@
     "r23-r25 twelve replay plans covering64 old PD/DS specs are allUNRUN per source report; main did not read full prefixes or run engine"
   ],
   "shared_blocks": "SHARED_COORDINATION.json",
-  "next": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+  "next": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
   "messages_sent": false,
   "other_lines_adoption_verified": "Earlier exact scopes only, no new1.57 receipts.",
   "scoring_frozen": true,
@@ -156,14 +157,15 @@
     "CONF-STD-M07-POOL-EXCLUSION-20261016"
   ],
   "ordinary_scoped_confirmations_received_this_phase": [],
-  "publication_parent_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
+  "publication_parent_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
   "unread_concurrent_returns": [],
-  "new_rule_confirmations_this_phase": 1,
+  "new_rule_confirmations_this_phase": 0,
   "current_phase_changes": [
-    "Exact three-mode minimal H15/H06 prestart restore-unused rule confirmed20:56; no active main candidate.",
-    "Canonical guarded policy, original candidate approval, public current-state/history distinction, source precedence and pointers updated; previous54 confirmations and policies preserved.",
-    "Receive half-chaos conversation-only closeout after r29, next NOT_STARTED documentation-only; project/other worklines continue and all64 specsUNRUN.",
-    "Concurrent UI B8 candidate/approved B7 metadata received only; preserve all exact assets/layers and leave B8 unapproved."
+    "Graduation sources/conditional local board/context retrieval reviewed; precise policy unresolved and no candidate selected.",
+    "Three-mode M04 wording-only adopted; all55 gameplay confirmations/canonical policies preserved.",
+    "Full new ordinary H02/M04 pending candidate received; exact UI B8 approval and own closeout received as metadata.",
+    "Main-led round closeout saved; latest published half-chaos r29 respected and resumed/unreturned work unknown/protected.",
+    "Final concurrent ordinary conversation closeout and half-chaos r30 scope proposal/scoped1.61 receipt/own round closeout reconciled. Current next is WP01 document refinement; no business/run/gate approval."
   ],
   "external_shared_confirmations_received_this_phase": 0,
   "increment_since_1_53": {
@@ -263,168 +265,280 @@
   },
   "source_review_pointer": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
   "latest_ui_stage_received": {
-    "source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
-    "read_scope": "CURRENT_STATE revision/complete next_task/last_approval/runtime metadata and RETURN record/current_state_and_approval_delta/validation/next metadata only. Main has not viewed image, source layers or evidence bodies.",
-    "revision": "UI-B8-PENDING-20261017",
-    "record_id": "UI-B8-CANDIDATE-20261017",
-    "candidate": {
-      "id": "B8",
-      "subject": "蓝牙权限未允许（可再次授权）",
+    "source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+    "approval_source_commit": "c0744c657a674a885a04cbbcda0c0b8f2bd32d65",
+    "read_scope": "Complete current UI metadata, last_approval/next_task and matching scoped UI session-closeout/current-state delta objects only. No images/layers or QA evidence body read.",
+    "last_approval": {
       "version": "B8-v1",
-      "candidate_created": true,
-      "candidate_approved": false,
       "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
-      "image": "candidates/B8/v1/lezi-bluetooth-B8-v1.png",
-      "source_folder": "candidates/B8/v1",
-      "next_action": "展示本张实际图，由用户具体审批／修改；不自动批准或生成下一张。"
-    },
-    "last_approved": {
-      "version": "B7-v1",
-      "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
-      "approved_at": "2026-10-17T19:05:29+08:00",
+      "approved_at": "2026-10-17T21:44:49+08:00",
       "user_statement": "审批通过"
     },
-    "source_workline_reported_validation": {
-      "baseline_files_verified": 105,
-      "existing_work_files_verified": 29,
-      "restore_baseline_files": 105,
-      "restore_work_files": 44,
-      "restore_unique_assets": 117,
-      "restore_network_asset_bytes": 0,
-      "restored_B8_exact_recomposition": true,
-      "B4_B5_recomposition_changed_pixels": 0,
-      "B8_changed_pixels_from_B7": 35352,
-      "B8_protected_pixels_changed": 0,
-      "dimensions": [
-        852,
-        1846
-      ],
-      "font_modified": false,
-      "actual_B8_image_viewed": true,
-      "new_background_estimation": false,
-      "whole_page_regenerated": false
+    "next": {
+      "id": "B9",
+      "subject": "蓝牙权限永久拒绝，前往系统设置",
+      "candidate_created": false,
+      "candidate_approved": false,
+      "next_action": "用户明确恢复UI工作后，从B9「蓝牙权限永久拒绝，前往系统设置」继续；先读取固定入口与最新HEAD，恢复批准源层，一次展示一张实际候选。"
     },
-    "main_visual_or_source_recomposition_acceptance": false,
-    "runtime": "not_run",
-    "approved": false
-  },
-  "latest_standard_stage_received": {
-    "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
-    "phase": "source_review_complete_narrow_candidate_pending",
-    "current_breakpoint": "M04路径龙鳞来源复核完成，单一普通冲锋候选待用户决定；主线1.56/H15展示及H02实际回执已核。",
-    "pending_decision": {
-      "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
-      "path": "candidates/m04-path-dragon-scale/v1.json",
-      "status": "pending_user_confirmation",
-      "approved": false,
-      "scope": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold."
-    },
-    "actual_latest_scoped_main_receipt": {
-      "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
-      "record_version": "1.56",
-      "actual_read_files_and_sections": [
+    "session_closeout": {
+      "status": "closed_by_user",
+      "closed_at": "2026-10-17T23:28:59+08:00",
+      "user_statement": "收束本轮对话",
+      "scope": "current_UI_conversation_only",
+      "project_and_other_conversations_stopped": false,
+      "pause_scope": "停止本对话新增设计／候选／产品实现，仅保存收束与接续状态",
+      "last_approved_candidate": "B8-v1",
+      "approved_in_scope": [
         {
-          "path": "worklines/main/ADJUDICATION.json",
-          "git_blob_sha": "7659a6d4d2063e4cbbe18ad595c63d4c0f1c89da",
-          "read_scope": "Complete H15 public-display and H02/M04 geometry policies, matching original H15 display confirmation; prior1.54 core/mutation/hero values compared equal, not entire history"
+          "version": "B6-v1",
+          "status": "user_approved",
+          "sha256": "7659f9b0e3d33184d9d4a2cdcac7aa8c3ebedce9c5058fd28191135bc1e0d945",
+          "approved_at": "2026-10-16T18:26:17+08:00",
+          "user_statement": "通过",
+          "source_folder": "candidates/B6/v1"
         },
         {
-          "path": "worklines/main/READ_RECEIPTS.json",
-          "read_scope": "Complete latest_by_source.standard only"
+          "version": "B7-v1",
+          "status": "user_approved",
+          "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+          "approved_at": "2026-10-17T19:05:29+08:00",
+          "user_statement": "审批通过",
+          "source_folder": "candidates/B7/v1"
         },
         {
-          "path": "worklines/main/PENDING_DECISION.json",
-          "read_scope": "Current candidate/next/scope/status and source pointer only"
+          "version": "B8-v1",
+          "status": "user_approved",
+          "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+          "approved_at": "2026-10-17T21:44:49+08:00",
+          "user_statement": "审批通过",
+          "source_folder": "candidates/B8/v1"
         }
       ],
-      "adopted_scope": [
-        "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017 exact current public-display scope",
-        "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017 actual main receipt/adoption recognized; policy exactly equals own original"
+      "art_and_source_files_verified": 44,
+      "next_item": {
+        "id": "B9",
+        "subject": "蓝牙权限永久拒绝，前往系统设置",
+        "candidate_created": false,
+        "approved": false
+      },
+      "resume_point": "用户明确恢复UI工作后，从B9「蓝牙权限永久拒绝，前往系统设置」继续；先读取固定入口与最新HEAD，恢复批准源层，一次展示一张实际候选。",
+      "unrun_scope": [
+        "真实系统权限弹窗与授权结果处理",
+        "蓝牙双机、重试、取消与返回交互",
+        "设备／屏幕适配与长名称场景",
+        "产品源码接入、APK、部署与主线合并"
       ],
-      "not_adopted": [
-        "H15/H06 failed-training restoration candidate",
-        "full fieldmap/history/half-chaos runtime or other corpus"
-      ],
-      "comparison": {
-        "unified_core_same": true,
-        "old_mutation_policies_same": true,
-        "prior_hero_policies_equal": true
-      }
+      "automatic_resume_scheduled": false,
+      "default_handoff": "fixed GitHub entry plus published bodies/sources/state; existing assets reused by identity",
+      "formal_scoring_status": "frozen",
+      "NET": "paused"
     },
-    "scope": "return current phase/changes/candidate guards and actual READ_RECEIPTS latest_scoped_update only; not full candidate/workdraft or runtime",
-    "new_main_candidate_approval": false
+    "source_reported_art_source_file_count": 44,
+    "main_visual_or_recomposition_acceptance": false,
+    "engine_runs": 0,
+    "runtime": "not_run"
+  },
+  "latest_standard_stage_received": {
+    "source_commit": "bce9469df00d0645757ca3fb6ea979d74e2acf88",
+    "observed_at_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+    "read_scope": "Complete new pending candidate and exact PENDING current candidate/next metadata; complete selected current source-review facts/gap, latest actual main1.56 scoped adoption and1.61 metadata-only receipt rows. Full bounded M04-H10 review document read; underlying source bodies/code not independently audited this phase. Complete matching session_closeout objects from CURRENT_STATE/RETURN and own READ_RECEIPTS session_closeout; candidate bytes unchanged from055.",
+    "pending": {
+      "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf",
+      "status": "pending_user_confirmation",
+      "approved": false,
+      "guard": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。",
+      "owner": "standard",
+      "next": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？"
+    },
+    "source_review": {
+      "path": "worklines/standard/reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
+      "git_blob_sha": "56b1a3d0b6081d3457f37d16fa5bb3194f456f07",
+      "adoption": "received as source-workline V2-claimed/V1 composed conditional analysis; not a new shared gameplay approval or independent raw-source/runtime acceptance"
+    },
+    "engine_runs": 0,
+    "last_candidate_design_commit": "05501db57425ee406983468ba81f1efdfc73057f",
+    "session_closeout": {
+      "revision": "STD-SESSION-CLOSEOUT-20261017-r2",
+      "status": "closed_current_conversation",
+      "requested_at_local": "2026-10-17T23:28:48+08:00",
+      "user_quote": "收束本轮对话",
+      "scope": "this_conversation_only",
+      "project_or_other_worklines_stopped": false,
+      "standard_mode_fully_completed": false,
+      "new_rule_confirmation_by_closeout": false,
+      "new_rule_confirmations_this_closeout": 0,
+      "ordinary_confirmation_count": 31,
+      "retained_source_round_confirmations": 21,
+      "ordinary_confirmations_since_source_round": 10,
+      "direct_shared_confirmations_originated_here": 11,
+      "this_conversation_gameplay_confirmations": {
+        "ordinary": 0,
+        "direct_shared": 2,
+        "ids": [
+          "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+          "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017"
+        ]
+      },
+      "last_completed_design_commit": "05501db57425ee406983468ba81f1efdfc73057f",
+      "next_task": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "next_task_status": "candidate_prepared_pending_user_decision_not_approved",
+      "pending_candidate_source": {
+        "commit": "05501db57425ee406983468ba81f1efdfc73057f",
+        "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+        "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
+      },
+      "candidate_approved": false,
+      "candidate_text_preserved_exact": true,
+      "unrun_current_specs": [
+        "AP-S01",
+        "AP01-AP08"
+      ],
+      "all_unrun_specs_remain_unrun": true,
+      "new_game_code_changes": 0,
+      "game_engine_runs": 0,
+      "independent_review": false,
+      "scoring_frozen": true,
+      "NET": "paused",
+      "ZIP_generated": false,
+      "handoff_method": "fixed GitHub entry plus actual current bodies/state/RETURN_TO_MAIN and short resume text",
+      "resume_text": "继续《乐子象棋》普通象棋工作线，读取并执行最新固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt 。从H02＋M04后续刺杀的路径龙鳞现成待定方案接续，恢复完整限定方案和具体情形后交我决定，不把继续当作批准。继承已确认设计及三线共同文案，评分冻结、NET暂停；阶段完成或共享阻断时增量写回本线资料及回传记录。",
+      "protection": {
+        "previous_stage": "05501db57425ee406983468ba81f1efdfc73057f",
+        "payloads_compared": 11,
+        "all_exact": true,
+        "unreturned_deltas_in_compared_stage": 0
+      },
+      "recipient_reading_of_this_closeout_verified": null,
+      "recipient_adoption_of_this_closeout_verified": null,
+      "new_automatic_messages_sent": false,
+      "publication_commit": "Resolve containing commit from Git history after publication."
+    }
   },
   "current_pending_candidate": null,
   "latest_half_chaos_stage_received": {
-    "source_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
-    "revision": "HC-DESIGN-03-20261017-r29",
-    "read_scope": "Selected current phase/change/breakpoint/next, complete assertion_evidence_matrix/r29_shared_blockers/r29_concurrent_main159_reconciliation metadata; complete actual latest_by_source.standard_M04_path_scale receipt and r29 main-reconciliation object. No raw assertion matrix/WORKING8.50/source audit.",
-    "reported_data": {
-      "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
-      "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
-      "sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
-      "status": "FINITE_MATRIX_PREPARED_ALL64_UNRUN_RUNTIME_BLOCKED",
-      "task_completed": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX",
-      "source_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
-      "working_section": "8.50",
-      "existing_specifications": 64,
-      "direct_checkpoint_rows": 63,
-      "abstract_only_rows": 1,
-      "unique_direct_checkpoints": 210,
-      "new_game_specs": 0,
-      "runtime_ready_replays": 0,
-      "all_game_specs": "UNRUN",
-      "next": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL"
-    },
-    "shared_blockers": {
-      "prior_static_findings": "EI01—07 retained; no reproduced failure count",
-      "prior_observation_gaps": "OG01—07 retained",
-      "new_gameplay_rule_candidates": 0,
-      "new_data_stimulus_limits": "matrix readiness_summary.additional_stimulus_limits; do not confuse missing stimulus with rejected rule"
-    },
+    "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+    "observed_at_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+    "read_scope": "Full authorization; fullWP01/02/03 objects; WP04/05 IDs/titles only; complete exact_boundary_options/later_run_proposal/exclusions/stop_conditions/verification/next. No obligation_routes/full original input/source-code audit. Complete r30 closeout and actual main_H15_H06_prestart/r30_concurrent_main161_reconciliation receipt objects. Not whole WORKING8.52/8.53 or original matrix/source code.",
+    "latest_published_revision": "HC-DESIGN-03-20261017-r30",
+    "last_completed_design_revision": "HC-DESIGN-03-20261017-r30",
     "next": {
-      "id": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL",
+      "id": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
       "status": "NOT_STARTED_DOCUMENT_ONLY",
-      "action": "Prepare a concrete source-linked implementation/observation and later-run scope proposal from this finite matrix, including lawful admission dependencies, exact-boundary evidence options, affected PD/DS obligations, excluded missing positives and stop conditions. Documentation only; do not edit business code, run engine or bypass gates. Shared rules remain main-owned."
+      "action": "On latest main replies and this concrete proposal, refine WP01 exact tuple/room/source admission and adapter call-chain contract; identify shared owner decisions and unchanged gate rejection cases. Documents/source reads only until explicit code/run scope exists."
     },
-    "game_runs": 0,
-    "main_independently_validated": false
-  },
-  "new_confirmation_this_phase": {
-    "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "confirmed_at_local": "2026-10-17T20:56:40+08:00",
-    "user_quote": "我同意",
-    "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_prestart_unused_restore_question",
-    "reviewed_candidate": {
-      "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
-      "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-      "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
+    "all_game_specs": "UNRUN",
+    "engine_runs": 0,
+    "live_or_unreturned_other_dialogue_progress": "unknown outside this latest published r30 scoped closeout; preserve any additional work",
+    "session_scope": "current_half_chaos_round_only_closed_after_r30",
+    "newer_main161_adoption": "Actual scoped receipt consumes exact1.61 prestart-unused confirmation within half-chaos, no runtime/new main rule.",
+    "completed_design_commit": "2c66fb06eb15f03e63e0e6c9cbf955cccc71a799",
+    "session_closeout": {
+      "revision": "HC-SESSION-CLOSEOUT-20261017-r3",
+      "request_at_local": "2026-10-17T23:33:24+08:00",
+      "request_quote": "额度已恢复，继续推进本轮工作，之后收束项目",
+      "scope": "current_half_chaos_round_only",
+      "session_status": "closed_after_r30_scoped_writeback",
+      "project_or_other_worklines_stopped": false,
+      "last_completed_design_revision": "HC-DESIGN-03-20261017-r30",
+      "last_completed_design_commit": "2c66fb06eb15f03e63e0e6c9cbf955cccc71a799",
+      "actual_publication": {
+        "commit": "2c66fb06eb15f03e63e0e6c9cbf955cccc71a799",
+        "tree": "2c271a04d1292d83aa043c261e1930c839420ba8",
+        "parent": "bce9469df00d0645757ca3fb6ea979d74e2acf88",
+        "update_ref_success": true,
+        "entry_reread": true,
+        "all9_written_blobs_matched": true,
+        "all6_original_inputs_unchanged": true,
+        "changed_paths_only_half_chaos": true
+      },
+      "completed": "five source-linked document proposal packages;64 old obligation routes; conditional3-pilot then original12 future scope; main1.61 exact H15/H06 prestart confirmation consumed",
+      "not_done": [
+        "business edits or engine imports/runs",
+        "legal admission/hook/adapter implementation",
+        "64 gameplay assertions or privacy/transport/independent validation",
+        "other receiver adoption ofr30"
+      ],
+      "all64": "UNRUN",
+      "scoring_frozen": true,
+      "NET": "paused",
+      "next": {
+        "id": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
+        "status": "NOT_STARTED_DOCUMENT_ONLY",
+        "action": "On latest main replies and this concrete proposal, refine WP01 exact tuple/room/source admission and adapter call-chain contract; identify shared owner decisions and unchanged gate rejection cases. Documents/source reads only until explicit code/run scope exists."
+      },
+      "main_receiving_r30": "unknown; no receiver receipt written by this line",
+      "containing_closeout_commit": "Resolve from Git history after actual publication; no future self SHA."
     },
-    "immediately_preceding_question": "是否确认三个模式采用这条限定处理？",
-    "presented_clauses": [
-      "合法回溯到首次训练启动前，训练和次数一起恢复为未启动、未使用。",
-      "之后可在原有合法窗口重新选种、按原规则随机征募；旧绑定和进度不保留，玩家记忆保留。",
-      "仅限回溯前训练仍存活、未失败未毕业的分支；已有训练快照及已确认的死亡失败例外保持独立。"
+    "proposal_metadata": {
+      "path": "worklines/half_chaos/IMPLEMENTATION_SCOPE_PROPOSAL.json",
+      "git_blob_sha": "e198b5953a66053562f8419275d0fceb5f78d37c",
+      "sha256": "88335ea4fb07cd90826af419c7153a4877da5a94fd0fc7c048b03ac00444b1c9",
+      "status": "DOCUMENT_PROPOSAL_PREPARED_NOT_IMPLEMENTATION_OR_RUN_AUTHORIZATION",
+      "task_completed": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL",
+      "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+      "working_section": "8.52",
+      "work_packages": 5,
+      "existing_spec_routes": 64,
+      "later_proposed_pilot_count": 3,
+      "later_original_total_replays": 12,
+      "ready_replays": 0,
+      "engine_runs": 0,
+      "all_game_specs": "UNRUN",
+      "approved_for_implementation": false,
+      "next": {
+        "id": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
+        "status": "NOT_STARTED_DOCUMENT_ONLY",
+        "action": "On latest main replies and this concrete proposal, refine WP01 exact tuple/room/source admission and adapter call-chain contract; identify shared owner decisions and unchanged gate rejection cases. Documents/source reads only until explicit code/run scope exists."
+      },
+      "new_shared_confirmation_consumption": 1
+    },
+    "shared_scope_requests": [
+      {
+        "id": "HC-SCOPE-WP01",
+        "owner": "main",
+        "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0"
+      },
+      {
+        "id": "HC-SCOPE-WP02",
+        "owner": "main",
+        "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1"
+      },
+      {
+        "id": "HC-SCOPE-WP03",
+        "owner": "main",
+        "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2"
+      }
     ],
-    "mode_ids": [
-      "original_jieqi",
-      "standard_xiangqi",
-      "half_chaos"
-    ],
-    "availability_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
-    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
-    "not_confirmed": [
-      "death-failed/graduated or other failure branches beyond their exact existing confirmations",
-      "new H06/H15 availability/windows/check permission, empty/invalid-request feedback or other time skills",
-      "H11 mode-specific space barriers and M07 unresolved control/begin interactions",
-      "graduation/reward-history restoration, complete public-field/key/phase/clock algorithms",
-      "physical storage layout, implementation, runtime/privacy/independent acceptance, scoring or NET"
-    ],
-    "implementation_status": "confirmed_design_not_implemented",
-    "engine_runs": 0
+    "main_161_prestart_adopted_receipt": {
+      "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "source_workline": "main",
+      "source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+      "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+      "source_blob": "3a82d15be9516ffc4b80458234bd2d18d13ef403",
+      "policy_source": "worklines/main/ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
+      "policy_blob": "5416db2754724cca10ee30c9560a771204d09a8c",
+      "reviewed_candidate": {
+        "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+        "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+        "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
+      },
+      "current_candidate_blob": "5f1da661971c8403e3b256080ef5f24aac686bc7",
+      "read_scope": "full original confirmation, full original reviewed candidate at f644, full updated candidate and complete confirmed1.61 policy; main entry and limited prior r29 receipt metadata; not whole adjudication",
+      "adopted_scope": "half_chaos only under exact original lawful H06/H15 first-prestart snapshot and still-alive-active-ungraduated original trainee guard",
+      "new_local_user_approval": false,
+      "implementation": false,
+      "effect_on_original12": "none: no H15 or ordinaryH06; all original data unchanged"
+    },
+    "proposal_or_implementation_approved_by_main": false
   },
-  "new_confirmation_scope_note": "Current1.61 exact prestart-unused restore confirmation; previous1.57 failed-training confirmation remains preserved and separate.",
+  "new_confirmation_this_phase": null,
+  "new_confirmation_scope_note": "new_confirmation retains exact earlier1.61 approval; this round-closeout phase adds0 gameplay approvals.",
   "confirmed_delta_this_session_scope_note": "Inherited prior confirmation history only; current1.58 source-review phase confirms no new rule. See new_rule_confirmations_this_phase=0.",
   "source_scope_correction": {
     "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
@@ -699,5 +813,211 @@
     "engine_runs": 0,
     "all_existing_game_specs": "UNRUN",
     "actual_read_scope": "Complete matching session_closeout objects from RETURN/CURRENT_STATE and complete actual session_closeout_r2_observation receipt only; no WORKING8.51/full-source or raw matrix audit."
-  }
+  },
+  "shared_wording_received_this_phase": {
+    "schema": "lezi.shared_wording_adoption.v1",
+    "id": "WORDING-THREE-MODE-M04-DESCRIPTION-20261017",
+    "kind": "wording_only_not_gameplay_confirmation",
+    "original_selection": {
+      "user_quote": "这个文案就用战车隔一枚地面起的进攻吧，不用什么冲锋了，然后进行下一步吧，下一步是什么",
+      "at_local": "2026-10-17T19:15:31+08:00"
+    },
+    "scope_clarification": {
+      "quote": "这个文案统一是三线共同修改，现在进行下一步",
+      "at_local": "2026-10-17T20:53:29+08:00",
+      "scope": "Clarifies shared wording across three game worklines; authorizes next bounded source review, not new gameplay approval."
+    },
+    "normalized_text": "战车隔一枚地面棋的【进攻】",
+    "modes": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "normalization_note": "用户口述中的地面起按上下文校为地面棋；只规范文案，不改变机制。",
+    "mechanic_delta": 0,
+    "core_keyword_delta": 0,
+    "new_gameplay_confirmations": 0,
+    "formal_action": "进攻",
+    "independent_path_effect": "碾碎",
+    "H16_skill_name_unchanged": true,
+    "old_quotes_ids_approval_records_and_original_archives_preserved": true,
+    "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "delivery": {
+      "to": [
+        "main",
+        "half_chaos"
+      ],
+      "scope": "Shared wording source for recipient adoption; not permission to edit their unreturned working drafts.",
+      "recipient_reading_verified": null,
+      "recipient_adoption_verified": null
+    },
+    "received_source": {
+      "commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+      "path": "worklines/standard/rules/confirmed/M04_SHARED_WORDING_20261017.json",
+      "git_blob_sha": "19c1c932353c404c9635cef9ca3974ab1de0c07c",
+      "read_scope": "Full exact wording-only original selection and three-workline scope clarification."
+    },
+    "main_adopted_scope": "Use 战车隔一枚地面棋的【进攻】 for current explanatory wording across three game modes. Preserve original quotes/IDs/archive and H16 name. Gameplay count unchanged.",
+    "main_mechanic_delta": 0
+  },
+  "external_pending_candidates": [
+    {
+      "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf",
+      "status": "pending_user_confirmation",
+      "approved": false,
+      "guard": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。",
+      "owner": "standard",
+      "next": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？"
+    }
+  ],
+  "round_closeout": {
+    "revision": "LEZI-PROJECT-ROUND-CLOSEOUT-20261017",
+    "status": "round_closed_after_authorized_source_review_and_latest_published_coordination",
+    "requested_at_local": "2026-10-17T23:33:59+08:00",
+    "user_quote": "额度已恢复，继续推进本轮工作，之后收束项目",
+    "timezone": "Asia/Shanghai",
+    "scope": "Main-led closeout of this project work round against latest published four-line state; preserves any independently active or unpublished dialogue work and receiver-owned session records.",
+    "permanent_project_termination": false,
+    "source_baseline_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+    "main_document_version": "1.62",
+    "confirmed_gameplay_records": 55,
+    "new_gameplay_approvals_this_phase": 0,
+    "new_wording_only_source_received": "WORDING-THREE-MODE-M04-DESCRIPTION-20261017",
+    "completed_this_phase": [
+      "H15/H06 graduation-crossing current/historical source review and targeted original-context retrieval; conditional turn sequence/local ordinary board recorded, no policy selection or runtime claim.",
+      "Received exact three-mode M04 wording-only source and adopted current wording without altering historical confirmation quotes, mechanic rules or H16 name.",
+      "Received full ordinary H02/M04 path-scale pending candidate and bounded review document; preserved pending approval, no inferred shared adoption.",
+      "Received exact UI B8 approval and conversation closeout metadata, B9 not created; no image/layer/runtime acceptance.",
+      "Receive final concurrent half-chaos r30 five-package scope proposal/selected WP01—03 and three shared scope requests; actual guarded1.61 consumption and own r30 closeout verified as records. No implementation/observation/admission/run approval.",
+      "Receive ordinary line own conversation closeout with exact pending candidate preserved. All three other published scoped closeout records now observed."
+    ],
+    "next_by_workline": {
+      "main": {
+        "id": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+        "status": "not_started_after_round_closeout_no_candidate_selected",
+        "task": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
+        "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/graduation_crossing_review",
+        "is_new_user_candidate": false
+      },
+      "standard": {
+        "published_source_commit": "bce9469df00d0645757ca3fb6ea979d74e2acf88",
+        "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+        "status": "pending_user_confirmation",
+        "candidate": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+        "approved": false,
+        "scope_owner": "standard; main received source candidate only",
+        "session_status": "own_conversation_closed_pending_candidate_preserved"
+      },
+      "half_chaos": {
+        "published_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "last_completed": "HC-DESIGN-03-20261017-r30",
+        "id": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
+        "status": "NOT_STARTED_DOCUMENT_ONLY",
+        "unreturned_other_dialogue_progress": "unknown outside latest scoped closeout; protect",
+        "engine_runs": 0,
+        "all64_specs": "UNRUN"
+      },
+      "ui": {
+        "published_source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+        "last_approved": "B8-v1",
+        "approved_image_sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+        "next": "B9 蓝牙权限永久拒绝，前往系统设置",
+        "candidate_created": false,
+        "session_status": "closed_by_UI_user",
+        "runtime": "not_run"
+      }
+    },
+    "source_limits": [
+      "Exact H06 graduation lifecycle/reward treatment remains unresolved; cannot use generic nonrefund summary to silently erase training/flight.",
+      "Main partial fieldmap is not complete canonical key/phase/search/clock algorithm.",
+      "No full natural gameplay prefix or independent source/engine/privacy/visual verification this phase.",
+      "Full deep private/historical main and half-chaos archives not all migrated; use preserved immutable source references."
+    ],
+    "safeguards": {
+      "scoring": "frozen",
+      "NET": "paused",
+      "game_code_changes": 0,
+      "engine_runs": 0,
+      "client_runs": 0,
+      "APK_or_deploy": false,
+      "automatic_messages_sent": false,
+      "automatic_resume_scheduled": false,
+      "other_workline_files_modified": false,
+      "other_receiver_adoption_fabricated": false
+    },
+    "publication": {
+      "transport": "GitHub connector incremental fixed paths",
+      "root_entry": "../../START_HERE.md",
+      "summary": "ROUND_CLOSEOUT.md",
+      "status": "closure_record_to_be_verified_after_publication",
+      "future_reading_or_adoption": "unknown until actual receiver-owned receipts",
+      "final_read_parent": "5320a273afb6d549b0517cff8c19bfebebb1efdd"
+    },
+    "initial_source_read_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
+    "main_shared_scope_request_queue": [
+      {
+        "id": "HC-SCOPE-WP01",
+        "owner": "main",
+        "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      },
+      {
+        "id": "HC-SCOPE-WP02",
+        "owner": "main",
+        "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      {
+        "id": "HC-SCOPE-WP03",
+        "owner": "main",
+        "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      }
+    ],
+    "latest_published_scoped_closeouts_observed": [
+      "standard r2",
+      "half_chaos r3 afterr30",
+      "UI afterB8"
+    ]
+  },
+  "current_shared_scope_request_queue": [
+    {
+      "id": "HC-SCOPE-WP01",
+      "owner": "main",
+      "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
+      "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
+      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+      "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+    },
+    {
+      "id": "HC-SCOPE-WP02",
+      "owner": "main",
+      "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
+      "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
+      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+    },
+    {
+      "id": "HC-SCOPE-WP03",
+      "owner": "main",
+      "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
+      "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
+      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+    }
+  ]
 }
