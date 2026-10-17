@@ -1,25 +1,10 @@
 {
   "items": [
     {
-      "id": "STD-M04-PATH-IMMUNITY",
-      "status": "source_review_complete_specific_dragon_scale_candidate_pending",
-      "scope": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold.",
-      "source": "candidates/m04-path-dragon-scale/v1.json",
-      "confirmed": false,
-      "candidate_id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
-      "conditional_unrun_spec_ids": [
-        "PS01",
-        "PS02",
-        "PS03",
-        "PS04",
-        "PS05",
-        "PS06",
-        "PS07",
-        "PS08"
-      ],
-      "conditional_unrun_case_ids": [
-        "PS-S01"
-      ]
+      "id": "STD-M04-ENDPOINT-INTERCEPTION",
+      "status": "source_review_pending_no_candidate_approved",
+      "scope": "Original legal combinations only; first verify availability/source mapping",
+      "confirmed": false
     },
     {
       "id": "MAIN-REPETITION-PUBLIC-FIELDMAP",
@@ -83,7 +68,7 @@
       "scope": "standard",
       "details": [
         "H02 legal later ground opportunity geometry confirmed by CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
-        "path-immunity/endpoint multi-defense order",
+        "Normal exact path-dragon-scale A confirmed; other immunity and endpoint multiple-defense order remain pending",
         "H10 atomic identity/return and general death"
       ],
       "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
@@ -94,7 +79,8 @@
         "source_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
         "H02_activation_turn_single_defense": "Already completed path death persists; ordinary endpoint defense prevents H02 activation and source remains unused, no extra main action; conditional unrun"
       },
-      "assassination_geometry_confirmed": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017"
+      "assassination_geometry_confirmed": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+      "path_dragon_scale_A_confirmed": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017"
     },
     {
       "id": "H13-LAYER-SOURCE",
@@ -977,6 +963,36 @@
       "full_candidate_read_here": true,
       "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
       "new_local_user_confirmation": false
+    },
+    {
+      "id": "STD-M04-PATH-IMMUNITY",
+      "status": "normal_M04_exact_path_dragon_scale_A_confirmed",
+      "scope": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold.",
+      "source": "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+      "confirmed": true,
+      "candidate_id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "conditional_unrun_spec_ids": [
+        "PS01",
+        "PS02",
+        "PS03",
+        "PS04",
+        "PS05",
+        "PS06",
+        "PS07",
+        "PS08"
+      ],
+      "conditional_unrun_case_ids": [
+        "PS-S01"
+      ],
+      "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+      "selected_option": "A",
+      "confirmed_at_local": "2026-10-17T19:06:19+08:00",
+      "user_quote": "这个冲锋是我定义的叫法吗，我没有印象，可以完成进攻",
+      "prior_proposal_source": {
+        "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+        "path": "worklines/standard/candidates/m04-path-dragon-scale/v1.json",
+        "git_blob_sha": "cb16411c92d664f734a0374c39262326caaef7fa"
+      }
     }
   ],
   "session_closeout": {

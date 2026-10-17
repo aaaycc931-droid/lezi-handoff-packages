@@ -1,5 +1,5 @@
 {
-  "status": "M04_path_dragon_scale_candidate_pending_user_decision",
+  "status": "M04_path_dragon_scale_A_confirmed_next_source_review",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "是否同意三个模式中上述合法普通M04冲锋：路径棋消耗龙鳞并存活留位，车继续处理原终点；龙鳞不因位于路径而额外阻止整次冲锋？",
+  "next_action": "回读现行普通防御、龙鳞、龙爪与M04终点来源，先核组合合法性，再区分已有明文和真正未决；不凭代码同时存在多个效果字段就推定该组合可达。需要新取舍时再给单一具体候选。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,19 +29,20 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
-    "user_quote": "我同意",
-    "at_local": "2026-10-17T11:01:27+08:00",
+    "id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+    "user_quote": "这个冲锋是我定义的叫法吗，我没有印象，可以完成进攻",
+    "approval_clause_quote": "可以完成进攻",
+    "at_local": "2026-10-17T19:06:19+08:00",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
-    "new_ordinary_confirmation": false,
-    "new_shared_confirmation": true
+    "new_shared_confirmation": true,
+    "new_ordinary_confirmation": false
   },
   "main_document_adopted_scope": "Prior scoped confirmations through D01 startup/body observed at 50ad0d433f866fff41693cc495ec5d69c7724580; current zero-return receipt unknown.",
-  "latest_confirmation_main_adopted": true,
+  "latest_confirmation_main_adopted": null,
   "current_confirmation_index_count": 31,
   "M07_pool_exclusion_confirmed": true,
   "M08_approved": true,
@@ -131,11 +132,11 @@
     "new_automatic_messages_sent": false,
     "publication_commit": "Resolve containing commit from Git history after publication."
   },
-  "latest_confirmation_main_adopted_scope": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017 exact original scope only",
+  "latest_confirmation_main_adopted_scope": "New path dragon-scale A main receipt unknown; previous H02/M04 receipt retained historically.",
   "H02_M04_geometry_confirmed": true,
   "H02_M04_geometry_source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
   "H15_public_display_source_adopted": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
-  "latest_confirmation_main_receipt": {
+  "previous_confirmation_main_receipt": {
     "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
     "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
     "source_standard_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
@@ -144,9 +145,6 @@
     "adopted": true,
     "scope": "Exact previously approved normal-control revealed ground rook later-assassination geometry only; excluded crosses remain pending."
   },
-  "current_candidate": {
-    "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "path": "candidates/m04-path-dragon-scale/v1.json",
-    "approved": false
-  }
+  "M04_path_dragon_scale_confirmed": true,
+  "M04_path_dragon_scale_source": "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json"
 }

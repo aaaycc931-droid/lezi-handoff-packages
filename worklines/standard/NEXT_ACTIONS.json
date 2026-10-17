@@ -1,31 +1,29 @@
 {
   "first": {
-    "id": "REVIEW-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "subject": "M04唯一路径棋被龙鳞救活后是否继续冲锋",
-    "action": "是否同意三个模式中上述合法普通M04冲锋：路径棋消耗龙鳞并存活留位，车继续处理原终点；龙鳞不因位于路径而额外阻止整次冲锋？",
-    "status": "pending_user_decision",
-    "candidate_id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "candidate_path": "candidates/m04-path-dragon-scale/v1.json",
-    "pending_is_not_approved": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M04唯一路径棋被龙鳞救活后是否继续冲锋"
+    "id": "NEXT-STD-M04-ENDPOINT-INTERCEPTION-SOURCE-REVIEW",
+    "subject": "M04终点防护及来源优先的限定复核",
+    "action": "回读现行普通防御、龙鳞、龙爪与M04终点来源，先核组合合法性，再区分已有明文和真正未决；不凭代码同时存在多个效果字段就推定该组合可达。需要新取舍时再给单一具体候选。",
+    "status": "source_review_pending_no_new_candidate_approval",
+    "pending_is_not_approved": true
   },
-  "preserve": "普通31/本线直接共享10和全部原确认保持；H15展示是主线既有确认的限定采用，不计本地新用户确认。PS及全部既有未运行规格仍未运行。评分冻结、NET暂停。",
+  "preserve": "普通31、本线此前直接共享10保持；本次路径龙鳞A共享1，累计11。命名归属未证不另计玩法确认。PS及所有历史未运行规格继续未运行，评分冻结、NET暂停。",
   "main_owned_pending": "Main1.56 actually adopted H02/M04 prior scope and confirmed H15 public display; main H15/H06 failure-restoration candidate remains unapproved.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY",
-    "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+    "source": "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
+    "selected_option": "A",
     "new_shared_confirmations": 1,
-    "new_ordinary_confirmations": 0,
-    "source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
+    "new_ordinary_confirmations": 0
   },
-  "status": "specific_path_dragon_scale_candidate_pending",
+  "status": "path_dragon_scale_A_confirmed_next_source_review",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261017-r1",
     "status": "closed_current_conversation",

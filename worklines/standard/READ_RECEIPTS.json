@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-17T17:41:04+08:00",
+  "recorded_at_local": "2026-10-17T19:06:19+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -465,10 +465,11 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
-    "at_local": "2026-10-17T11:01:27+08:00",
-    "user_quote": "我同意",
-    "presented_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+    "at_local": "2026-10-17T19:06:19+08:00",
+    "user_quote": "这个冲锋是我定义的叫法吗，我没有印象，可以完成进攻",
+    "approval_clause_quote": "可以完成进攻",
+    "presented_source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
@@ -476,65 +477,48 @@
     ],
     "new_local_standard_confirmation": false,
     "new_shared_confirmation": true,
-    "main_H15_display_approved": false,
-    "M04_assassination_geometry_approved": true
+    "selected_option": "A"
   },
   "current_task_reading": {
-    "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
-    "user_instruction": {
-      "quote": "进行下一步",
-      "at_local": "2026-10-17T17:37:47+08:00",
-      "approval": false
+    "source_commit": "c53a6a727b797b128d7aa5651eafc7fc51f1c667",
+    "user_statement": {
+      "quote": "这个冲锋是我定义的叫法吗，我没有印象，可以完成进攻",
+      "at_local": "2026-10-17T19:06:19+08:00"
     },
     "files": [
       {
-        "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-        "section": "M04 full and M01-M03 context",
-        "sha": "02c09d77d6c499e6a26cfc8f625a5927f6cf9323"
+        "path": "worklines/standard/candidates/m04-path-dragon-scale/v1.json",
+        "git_blob_sha": "cb16411c92d664f734a0374c39262326caaef7fa",
+        "read_scope": "Full guard, recommended A/alternative B, exclusions, specifications and question"
       },
       {
-        "path": "rules/shared/02_CURRENT_HEROES.md",
-        "section": "H21 full including 无敌/龙鳞; H08 full; H15 full; relevant H02",
-        "sha": "9d035ebf9eb0a7e168c44bd32e878f8dadb42afc"
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "read_scope": "Full current PS candidate plus current phase and H02 retained approvals"
       },
       {
-        "path": "rules/shared/01_CURRENT_RULES.md",
-        "section": "1.1A/3.2/21-22 complete relevant sections",
-        "sha": "e6daf86145453a0ff8ad20d68facc39d07c46778"
+        "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+        "read_scope": "Complete1.2 current classified terms; charge absent; same source body as prior source check"
       },
       {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
-        "section": "full original confirmation",
-        "sha": "4809a839fd4209683c95c3c5c3a3f08212581fe5"
+        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+        "read_scope": "Complete H16 skill and H21 source clauses already activated; no change to H16"
       },
       {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/game.ts",
-        "read_scope": "Normal branch validation/pathVictims/endpoint interception full slice395-519 and skill path/endpoint slice620-708; static reference only"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/settlement.ts",
-        "read_scope": "destroyPiece/consumeDragonScale complete functions94-145"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/rules.ts",
-        "read_scope": "Complete current static rook geometry case105-140 plus matched source labels; not live repo audit"
-      },
-      {
-        "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
-        "read_scope": "v0.13 current identity and complete MANDATORY_PRECHECK reread; previously full same-body applicable authorization/baseline/limitation/handoff modules reused"
+        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+        "read_scope": "Full current M04 at latest checked head; user term authorship not established"
       }
     ],
     "adopted_scope": [
-      "Existing ordinary31/shared10 unchanged",
-      "Exact main H15 public display source adoption",
-      "Existing H02/M04 actual main receipt recognized"
+      "Actual current 可以完成进攻 clause approves only prior normal M04 specific A",
+      "Terminology attribution remains unknown; no new global keyword/skill"
     ],
-    "new_candidate": {
-      "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
-      "path": "candidates/m04-path-dragon-scale/v1.json",
-      "approved": false
-    },
-    "source_gap": "No sufficiently explicit current rule found selecting the normal M04 route-completion result when its sole path body survives dragon-scale interception. Generic immunity wording and old code are insufficient to silently mark the result confirmed.",
+    "not_adopted": [
+      "H02 special attack/activation, endpoint multiple defenses/dragon claw ordering",
+      "permanent or other immunity survival and different shields",
+      "hidden/reveal-defection/temporary control/H10/royal path or terminal branches",
+      "return-space/trap/history restoration/source clocks and full search",
+      "implementation, engine PASS, independent review, scores or NET"
+    ],
     "new_engine_tests": 0
   },
   "local_confirmations_since_dispatch": [
@@ -725,6 +709,17 @@
         "half_chaos"
       ],
       "source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
+    },
+    {
+      "id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+      "confirmed_at_local": "2026-10-17T19:06:19+08:00",
+      "user_quote": "这个冲锋是我定义的叫法吗，我没有印象，可以完成进攻",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json"
     }
   ],
   "main_1_52_adoption": {
@@ -1262,5 +1257,10 @@
     "received": true,
     "adopted": true,
     "scope": "Exact previously approved normal-control revealed ground rook later-assassination geometry only; excluded crosses remain pending."
+  },
+  "M04_term_authorship_status": {
+    "result": "unknown; no direct user-origin naming statement found",
+    "scope": "Naming attribution only; no personal context transcript exported",
+    "formal_terms_unchanged": true
   }
 }
