@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "active_H02_M04_geometry_confirmed_next_source_review",
+  "status": "M04_path_dragon_scale_candidate_pending_user_decision",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -19,7 +19,7 @@
     "gate": "L3",
     "adoption_scope": "Current ordinary-line source activation, scope inheritance, approved baseline, pending versus approval, source-bound incremental handoff and verification controls only.",
     "latest_actual_modules": "Current full entry/routes/project agreement/handoff/authorization/precheck/baseline/temporal/limitation/output/continuity/maintenance/source modules as actually read; no private sources or full historic corpus.",
-    "source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
     "body_git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
     "body_sha256": "863c7d6f752e6cdcd4a900b4b1e52ff3f56119efe217dcf1002898a5f101ff98",
     "latest_project_workflow_source": {
@@ -33,14 +33,16 @@
   "source_preparation": "Sources are expanded at sources/standard; no user ZIP upload is needed. python3 prepare_sources.py checks current required paths and optionally restores historical source parts.",
   "source_root": "sources/standard",
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_adjudication_version": "1.54",
+  "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-M04-PATH-IMMUNITY-SOURCE-REVIEW",
-    "subject": "M04路径碾碎受免疫或明确拦截时的路线完成边界",
-    "action": "先回读当前碾碎/免疫/龙鳞及M04完整来源，区分已有明文与真正未决；只在缺少明确来源时形成具体候选交用户决定。不从本次几何批准推定免疫后的路线完成、落位或返位结果。",
-    "status": "source_review_pending_no_new_candidate_approved",
+    "id": "REVIEW-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "subject": "M04唯一路径棋被龙鳞救活后是否继续冲锋",
+    "action": "是否同意三个模式中上述合法普通M04冲锋：路径棋消耗龙鳞并存活留位，车继续处理原终点；龙鳞不因位于路径而额外阻止整次冲锋？",
+    "status": "pending_user_decision",
+    "candidate_id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "candidate_path": "candidates/m04-path-dragon-scale/v1.json",
     "pending_is_not_approved": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#接续动作｜M04路径免疫来源复核"
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M04唯一路径棋被龙鳞救活后是否继续冲锋"
   },
   "external_delivery": {
     "prepared_here": true,
@@ -89,7 +91,7 @@
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
   "limitation_audit_status": "partial",
-  "verification_level": "V2 source/user confirmation correspondence; V1 same-assistant conditional geometry review, no engine or independent acceptance",
+  "verification_level": "V2 scoped current/original rule and main receipt checks; V1 conditional candidate, PS/AG and all game specs unrun",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -112,7 +114,9 @@
     "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
     "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
     "rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
-    "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
+    "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+    "candidates/m04-path-dragon-scale/v1.json",
+    "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json"
   ],
   "account_routing": {
     "this_account": [
@@ -125,11 +129,11 @@
     ]
   },
   "publication_scope": "PUBLICATION_SCOPE.json",
-  "updated_at_local": "2026-10-17T11:01:27+08:00",
-  "source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-  "publication_parent_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-  "phase": "scoped_shared_geometry_confirmed_pending_external_receipt",
-  "new_rule_confirmations_this_round": 1,
+  "updated_at_local": "2026-10-17T17:41:04+08:00",
+  "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+  "publication_parent_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+  "phase": "source_review_complete_narrow_candidate_pending",
+  "new_rule_confirmations_this_round": 0,
   "retained_source_round_confirmations": 21,
   "M04_status": "confirmed_design_not_implemented_or_tested",
   "phase_return": "RETURN_TO_MAIN.json",
@@ -163,29 +167,33 @@
       "eaf6ad333a5519dc94dd233eeaae746609e5896e"
     ],
     "latest_reconciliation": {
-      "parent": "76a4279586ca40db88198e40d371de32c3766b11",
-      "ordinary_target_paths_changed_before_edit": false,
-      "incoming_concurrent_updates_preserved": true,
-      "initial_visible_local_unreturned_files": 0,
-      "original_source_archives_unchanged": true
+      "parent": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+      "original_source_archives_unchanged": true,
+      "previous16_staged_files_match_remote": true,
+      "previous_unreturned_changes_found": 0,
+      "other_lines_preserved": true,
+      "source_read_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+      "concurrent_UI_update_preserved": true,
+      "concurrent_target_overlap": false
     }
   },
   "this_round_main_received_verified": null,
   "this_round_main_adopted_verified": null,
   "source_gaps": [
     "H02/M04 later ground geometry confirmed; path-immunity completion/defense/H10/history remain separate, no runtime.",
-    "H15 dark/illegal/failed feedback and main display candidate pending; ordinary public-empty confirmation only.",
+    "H15 dark/illegal/failed feedback and main H15/H06 restoration candidate pending; ordinary public-empty confirmation only.",
     "H15 exact window/check, source history and all deferred mutation interfaces remain pending.",
-    "Complete fieldmap/search-clock/source ordering/runtime not verified."
+    "Complete fieldmap/search-clock/source ordering/runtime not verified.",
+    "Current path dragon-scale continuation candidate pending; no general immunity/H02 special/H10/terminal interface approval."
   ],
   "current_confirmation_index_count": 31,
   "M04_confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
   "M05_status": "confirmed_design_not_implemented_or_tested",
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
   "latest_user_instruction": {
-    "quote": "我同意",
-    "at_local": "2026-10-17T11:01:27+08:00",
-    "scope": "explicit_three_mode_H02_M04_later_assassination_geometry_only"
+    "quote": "进行下一步",
+    "at_local": "2026-10-17T17:37:47+08:00",
+    "scope": "prepare_next_source_review_and_candidate_not_approval"
   },
   "new_rule_confirmations_since_dispatch": 10,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
@@ -199,11 +207,11 @@
   "D01_status": "confirmed_ordinary_adaptation_and_body_not_implemented_or_tested",
   "D01_ordinary_startup_confirmed": true,
   "current_adjudication_source": {
-    "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
+    "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
     "path": "worklines/main/ADJUDICATION.json",
-    "record_version": "1.54",
-    "git_blob_sha": "e320d0545896b85cb5fd7053399d9b3e633d43a4",
-    "read_scope": "complete new H15 successful-training-start-cost module and matching original project confirmation; prior1.53 core/H15 timing/mutations verified value equal, no full historical audit"
+    "record_version": "1.56",
+    "git_blob_sha": "7659a6d4d2063e4cbbe18ad595c63d4c0f1c89da",
+    "read_scope": "Complete new H15 public-display policy/original confirmation and H02/M04 adopted policy/receiver row; old unified core/mutation/hero policies compared equal to1.54, no full historical audit."
   },
   "approval_context_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
   "new_shared_confirmations_adopted_this_round": 1,
@@ -239,9 +247,9 @@
   "D01_same_turn_repeat_policy_confirmed": true,
   "D01_same_turn_repeat_confirmation_id": "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016",
   "D01_shared_hourglass_core_confirmed": true,
-  "pending_shared_core_candidate_id": null,
+  "pending_shared_core_candidate_id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
   "new_local_standard_confirmations_this_round": 0,
-  "new_shared_user_confirmations_this_round": 1,
+  "new_shared_user_confirmations_this_round": 0,
   "new_shared_user_confirmations_since_dispatch": 10,
   "new_rule_confirmations_since_dispatch_scope": "ordinary_local_confirmations_only",
   "D01_shared_hourglass_core_confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
@@ -416,5 +424,20 @@
   },
   "H02_M04_geometry_confirmed": true,
   "H02_M04_geometry_confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
-  "H02_M04_geometry_source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
+  "H02_M04_geometry_source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+  "new_rule_confirmations_this_conversation": 1,
+  "H15_public_display_source_adopted": {
+    "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "source": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
+    "new_local_user_confirmation": false
+  },
+  "observed_main_H02_M04_receipt": {
+    "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+    "source_standard_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "received": true,
+    "adopted": true,
+    "scope": "Exact previously approved normal-control revealed ground rook later-assassination geometry only; excluded crosses remain pending."
+  }
 }

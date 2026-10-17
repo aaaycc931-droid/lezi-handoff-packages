@@ -2,25 +2,24 @@
   "items": [
     {
       "id": "STD-M04-PATH-IMMUNITY",
-      "status": "source_review_pending",
-      "scope": "M04 path immunity completion only; no new candidate approval",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#接续动作｜M04路径免疫来源复核",
-      "confirmed": false
-    },
-    {
-      "id": "MAIN-H15-PUBLIC-TRAINING-DISPLAY",
-      "status": "main_candidate_pending_no_local_duplicate",
-      "scope": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "source": {
-        "commit": "d414c021cfc584094021bbebd5194688b465e89d",
-        "path": "candidates/h15-public-training-display/v1.json"
-      },
+      "status": "source_review_complete_specific_dragon_scale_candidate_pending",
+      "scope": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold.",
+      "source": "candidates/m04-path-dragon-scale/v1.json",
       "confirmed": false,
-      "full_candidate_read_here": true
+      "candidate_id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "conditional_unrun_spec_ids": [
+        "PS01",
+        "PS02",
+        "PS03",
+        "PS04",
+        "PS05",
+        "PS06",
+        "PS07",
+        "PS08"
+      ],
+      "conditional_unrun_case_ids": [
+        "PS-S01"
+      ]
     },
     {
       "id": "MAIN-REPETITION-PUBLIC-FIELDMAP",
@@ -114,7 +113,7 @@
       "id": "H15-REMAINING",
       "status": "pending_design_or_source_review",
       "scope": "shared",
-      "detail": "First tick/success-cost shared confirmed; public-determinable empty rejection confirmed ordinary only. Dark/illegal/failed charge/feedback, main public display and source-history separate.",
+      "detail": "First tick/success-cost and current public display confirmed independently; ordinary public-empty only standard. Dark/illegal/failed feedback, main H15/H06 restoration and other source-history remain pending.",
       "start_action_cost_confirmation": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
       "public_empty_ordinary_confirmation": "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017"
     },
@@ -141,6 +140,16 @@
       "detail": "M01/M04 special-path action tier versus H16 tier1 gate and H05 eligible history. Read BC02 conditional comparison: two actual enemy deaths yield5 resources, but resource sufficiency does not establish a charge window. Old code/default W0=0 is not new design approval.",
       "underlying_new_half_chaos_8_30_body_read_here": false,
       "new_rule_approved": false
+    },
+    {
+      "id": "MAIN-H15-H06-FAILED-TRAINING-RESTORE",
+      "status": "main_candidate_pending_no_local_duplicate",
+      "source": {
+        "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+        "path": "candidates/h15-h06-failed-training-restore/v1.json"
+      },
+      "confirmed": false,
+      "read_scope": "Current main decision pointer/scope only, not full proposed restoration candidate or underlying history audit."
     }
   ],
   "additional_mode_details": [
@@ -954,6 +963,20 @@
         "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
         "heading": "当前待决策｜H02刺杀机会与M04战车冲锋几何"
       }
+    },
+    {
+      "id": "MAIN-H15-PUBLIC-TRAINING-DISPLAY",
+      "status": "existing_shared_main_confirmation_received",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
+      "confirmed": true,
+      "full_candidate_read_here": true,
+      "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "new_local_user_confirmation": false
     }
   ],
   "session_closeout": {

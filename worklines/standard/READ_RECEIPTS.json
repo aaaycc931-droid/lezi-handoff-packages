@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-17T11:01:27+08:00",
+  "recorded_at_local": "2026-10-17T17:41:04+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -391,13 +391,45 @@
           "path": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json",
           "read_scope": "schema/status and H15 first-tick reference only, not full map"
         }
-      ]
+      ],
+      "latest_scoped_update": {
+        "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+        "record_version": "1.56",
+        "actual_read_files_and_sections": [
+          {
+            "path": "worklines/main/ADJUDICATION.json",
+            "git_blob_sha": "7659a6d4d2063e4cbbe18ad595c63d4c0f1c89da",
+            "read_scope": "Complete H15 public-display and H02/M04 geometry policies, matching original H15 display confirmation; prior1.54 core/mutation/hero values compared equal, not entire history"
+          },
+          {
+            "path": "worklines/main/READ_RECEIPTS.json",
+            "read_scope": "Complete latest_by_source.standard only"
+          },
+          {
+            "path": "worklines/main/PENDING_DECISION.json",
+            "read_scope": "Current candidate/next/scope/status and source pointer only"
+          }
+        ],
+        "adopted_scope": [
+          "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017 exact current public-display scope",
+          "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017 actual main receipt/adoption recognized; policy exactly equals own original"
+        ],
+        "not_adopted": [
+          "H15/H06 failed-training restoration candidate",
+          "full fieldmap/history/half-chaos runtime or other corpus"
+        ],
+        "comparison": {
+          "unified_core_same": true,
+          "old_mutation_policies_same": true,
+          "prior_hero_policies_equal": true
+        }
+      }
     }
   },
   "collaboration": {
     "working_revision": "2026-10-17.v0.13",
     "formal_baseline": "1.8.0",
-    "source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
     "body_git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
     "body_sha256": "863c7d6f752e6cdcd4a900b4b1e52ff3f56119efe217dcf1002898a5f101ff98",
     "gate": "L3",
@@ -448,88 +480,61 @@
     "M04_assassination_geometry_approved": true
   },
   "current_task_reading": {
-    "source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-    "user_confirmation": {
-      "quote": "我同意",
-      "at_local": "2026-10-17T11:01:27+08:00",
-      "immediately_preceding_question": "你是否同意这一限定方案，作为三个模式中合法 H02＋M04 组合的共同规则？"
+    "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "user_instruction": {
+      "quote": "进行下一步",
+      "at_local": "2026-10-17T17:37:47+08:00",
+      "approval": false
     },
     "files": [
       {
-        "path": "START_STANDARD.txt",
-        "read_scope": "full entry via fixed pointer"
+        "path": "rules/shared/03_CURRENT_MUTATIONS.md",
+        "section": "M04 full and M01-M03 context",
+        "sha": "02c09d77d6c499e6a26cfc8f625a5927f6cf9323"
       },
       {
-        "path": "worklines/standard/START_HERE.txt",
-        "read_scope": "full current ordinary entry"
+        "path": "rules/shared/02_CURRENT_HEROES.md",
+        "section": "H21 full including 无敌/龙鳞; H08 full; H15 full; relevant H02",
+        "sha": "9d035ebf9eb0a7e168c44bd32e878f8dadb42afc"
       },
       {
-        "path": "worklines/standard/CURRENT_STATE.json",
-        "read_scope": "current actual state and scoped source/approval boundaries"
+        "path": "rules/shared/01_CURRENT_RULES.md",
+        "section": "1.1A/3.2/21-22 complete relevant sections",
+        "sha": "e6daf86145453a0ff8ad20d68facc39d07c46778"
       },
       {
-        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "full current closeout/phase summary, complete approved M04 body, H02 activation-defense alignment, current H02/M04 candidate and AG specifications; no full historic working-document audit"
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+        "section": "full original confirmation",
+        "sha": "4809a839fd4209683c95c3c5c3a3f08212581fe5"
       },
       {
-        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "complete H02/H03, entry and directly related source clauses"
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/game.ts",
+        "read_scope": "Normal branch validation/pathVictims/endpoint interception full slice395-519 and skill path/endpoint slice620-708; static reference only"
       },
       {
-        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "complete preamble and M01-M05, especially M04"
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/settlement.ts",
+        "read_scope": "destroyPiece/consumeDragonScale complete functions94-145"
       },
       {
-        "path": "worklines/standard/rules/shared/01_CURRENT_RULES.md",
-        "read_scope": "complete turn/action-tier,1.1/1.1A,2-3,5,21-22 relevant sections"
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/src/rules.ts",
+        "read_scope": "Complete current static rook geometry case105-140 plus matched source labels; not live repo audit"
       },
       {
-        "path": "worklines/standard/CONFIRMATION_REGISTER.json",
-        "read_scope": "original M04 complete confirmation and latest/count/shared source rows"
-      },
-      {
-        "path": "worklines/standard/sources/standard/START_HERE.txt",
-        "read_scope": "full historical root"
-      },
-      {
-        "path": "worklines/standard/sources/standard/CURRENT_STATE.json",
-        "read_scope": "full historical state; later root overrides"
-      },
-      {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/INHERITED_CONFIRMED_H01_H02_H11.md",
-        "read_scope": "full inherited ordinary record"
-      },
-      {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/standard/ADAPTATION_MATRIX.json",
-        "read_scope": "complete H02/M04 related rows; old M04 pending does not override later approval"
-      },
-      {
-        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
-        "read_scope": "complete10 M04/13 crush template; obsolete invisibility/strong-hit/clear-state claims not adopted"
-      },
-      {
-        "path": "worklines/main/ADJUDICATION.json",
-        "read_scope": "record version1.54, boundaries/preserved state and targeted shared-module/confirmation search; no full historical main audit"
-      },
-      {
-        "path": "docs/WORKFLOW.md",
-        "read_scope": "full current workflow including existing scope inheritance"
+        "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
+        "read_scope": "v0.13 current identity and complete MANDATORY_PRECHECK reread; previously full same-body applicable authorization/baseline/limitation/handoff modules reused"
       }
     ],
     "adopted_scope": [
-      "Existing ordinary31/shared9 retained",
-      "Current conversation explicit narrow H02/M04 three-mode geometry confirmation; shared total10",
-      "v0.13 current ordinary handoff/source controls"
+      "Existing ordinary31/shared10 unchanged",
+      "Exact main H15 public display source adoption",
+      "Existing H02/M04 actual main receipt recognized"
     ],
-    "not_adopted": [
-      "new activation-turn permission or mode-pool entry",
-      "flying/river/temporary control/reveal-defection and path immunity completion",
-      "multiple defense/dragon-scale priority, return-space/trap conflicts",
-      "H10 damage substitution/flow-dance and full same-atom true-royal search",
-      "history restoration, complete fieldmap/search-clock interfaces",
-      "main H15 public-display candidate or hidden failure feedback",
-      "implementation, engine PASS or independent acceptance"
-    ],
+    "new_candidate": {
+      "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "path": "candidates/m04-path-dragon-scale/v1.json",
+      "approved": false
+    },
+    "source_gap": "No sufficiently explicit current rule found selecting the normal M04 route-completion result when its sole path body survives dragon-scale interception. Generic immunity wording and old code are insufficient to silently mark the result confirmed.",
     "new_engine_tests": 0
   },
   "local_confirmations_since_dispatch": [
@@ -1248,5 +1253,14 @@
       "shared_hero_timing_updates": true,
       "shared_mutation_design_updates": true
     }
+  },
+  "main_H02_M04_receipt_observed": {
+    "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+    "source_standard_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "received": true,
+    "adopted": true,
+    "scope": "Exact previously approved normal-control revealed ground rook later-assassination geometry only; excluded crosses remain pending."
   }
 }

@@ -2,16 +2,16 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-17T11:01:27+08:00",
-  "source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-  "base_commit": "76a4279586ca40db88198e40d371de32c3766b11",
+  "prepared_at_local": "2026-10-17T17:41:04+08:00",
+  "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+  "base_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
   "approval_context_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-  "phase": "scoped_shared_geometry_confirmed_pending_external_receipt",
+  "phase": "source_review_complete_narrow_candidate_pending",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "H02/M04合法后续明地面刺杀几何已确认并写入本线；下一项M04路径免疫来源复核。",
+  "current_breakpoint": "M04路径龙鳞来源复核完成，单一普通冲锋候选待用户决定；主线1.56/H15展示及H02实际回执已核。",
   "confirmed_delta": [],
-  "new_user_rule_confirmations": 1,
+  "new_user_rule_confirmations": 0,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
     "current_index_count": 31,
@@ -22,9 +22,7 @@
     "prior_direct_shared_count": 9,
     "previous_ordinary31_and_shared9_unchanged": true
   },
-  "pending_main_receipt_scope": [
-    "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017"
-  ],
+  "pending_main_receipt_scope": [],
   "main_prior_adoption_observed": {
     "at_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
     "source": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
@@ -39,26 +37,23 @@
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
   "pending_decision": {
-    "id": "NEXT-STD-M04-PATH-IMMUNITY-SOURCE-REVIEW",
-    "subject": "M04路径碾碎受免疫或明确拦截时的路线完成边界",
-    "action": "先回读当前碾碎/免疫/龙鳞及M04完整来源，区分已有明文与真正未决；只在缺少明确来源时形成具体候选交用户决定。不从本次几何批准推定免疫后的路线完成、落位或返位结果。",
-    "status": "source_review_pending_no_new_candidate_approved",
-    "pending_is_not_approved": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#接续动作｜M04路径免疫来源复核",
-    "approved": false
+    "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "path": "candidates/m04-path-dragon-scale/v1.json",
+    "status": "pending_user_confirmation",
+    "approved": false,
+    "scope": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold."
   },
   "changes": [
-    "Record this conversation's explicit H02/M04 scoped three-mode geometry approval and original wording/time/context.",
-    "Update ordinary current copies of H02/M04, source index, confirmation register, state and pending pointers; ordinary31/shared10.",
-    "Preserve all prior approvals, immutable originals, unrun specifications, frozen scoring and paused NET.",
-    "Queue actual original/source bodies for main receipt; no receiver reading/adoption fabricated."
+    "Narrow path-immunity review to explicit M04 one-ground-path dragon-scale survival result; save conditional A/B candidate, not approved.",
+    "Recognize actual main1.56 H02/M04 source receipt and exact policy, no scope expansion.",
+    "Adopt existing main H15 public-display module and original confirmation; replace stale display-pending pointers with actual main H15/H06 pending pointer.",
+    "Keep ordinary31/direct shared10, all original sources and all game specifications unrun."
   ],
   "changed_paths": [
-    "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+    "worklines/standard/candidates/m04-path-dragon-scale/v1.json",
+    "worklines/standard/rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
     "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
     "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-    "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
-    "worklines/standard/modes/standard/CURRENT_RULES.md",
     "worklines/standard/CURRENT_STATE.json",
     "worklines/standard/modes/standard/CURRENT_STATE.json",
     "worklines/standard/PENDING_ITEMS.json",
@@ -74,121 +69,112 @@
   "file_identities": [
     {
       "path": "CONFIRMATION_REGISTER.json",
-      "size": 63603,
-      "sha256": "6d3124af01b8ee278516fee7e68e93c4af4659cc6c037ce6d2a9e9c2d0f1cdde",
-      "git_blob_sha": "ea34f5087055da5346fa229d40a75ab35292dbd6"
+      "size": 65104,
+      "sha256": "68c94e531d1c8269a30f2e446a86539d8491edce4ede1502b589c2e1c1c47052",
+      "git_blob_sha": "c8867267a123c5a3fe1c8acdaf1561705b6035b6"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 23580,
-      "sha256": "7255ee0c47bb4154b8c213108fdf271a8fe5584713d0ede3b2c7d74f36301939",
-      "git_blob_sha": "f8e3c380d50c22d34da110506e4c229fcfb0e1de"
+      "size": 24876,
+      "sha256": "3bc3f6ea72f800417db33f73a87bbf0203c7338a9ceb804e3fee395c582982fe",
+      "git_blob_sha": "b1aa8141de1cbfcc51a4bfe4ab37390ee924af7c"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 3894,
-      "sha256": "cef9dc8c1901ddc86816144a4a1f01315906409ea45344b5267a4bd1f7f654c9",
-      "git_blob_sha": "cad0e3916a68ccbe68e0672bc29dc2c5b4c4c112"
+      "size": 3985,
+      "sha256": "a35ee89343ff0aab5f0a43f38e3f8f81aa77867cfe951caa2ae469cca5656d3d",
+      "git_blob_sha": "e74e46a8bec50b10b7cf61952a5cf4700bd8d80a"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 6737,
-      "sha256": "1382382ebfd6f04c136baf36d354a0ad71fe751470778bad205536fdec3fff08",
-      "git_blob_sha": "e4c35ab1ac92cdae5c1af1c2ddf03544c722ee99"
+      "size": 9440,
+      "sha256": "1ec6db40ec01fefc6f0a34d41dce0a760e80287a85d8ed2e332f499dc369134c",
+      "git_blob_sha": "a6c6b8c1f01ffd04e64935ea2508f5654897a0a8"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 43157,
-      "sha256": "14e9ca5c6940b98ae80f55bd1a6ecf19dfe2645eef856d15e802674062521fdb",
-      "git_blob_sha": "d956fed9c45609c6874675b1876abdf63fa7c91e"
+      "size": 44335,
+      "sha256": "329676aa5734611faba413421d7b77835a1fbbae1af24c16e842358bcbc5d12a",
+      "git_blob_sha": "f2e6c0b36df0b51db8b438a077c795b999a7fdcd"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 60996,
-      "sha256": "0742ab931d7c365ec7e8ea1f4fd311a790c7e1f8d543bb200885393b5df46e80",
-      "git_blob_sha": "5b327605f328aebb01080e714b070ff72e30fd71"
+      "size": 61895,
+      "sha256": "3943bd5221629df0107fee16fcf7156f6f4b92e4f6f3dd38ca918529b3947d36",
+      "git_blob_sha": "c3eab2e6ca5afffd26d9df979c7a7b50e03e8254"
     },
     {
       "path": "SOURCE_PRIORITY.json",
-      "size": 6910,
-      "sha256": "5ff59f1637e552894e36232654051142a91fda9f5cefe29916b1ee74a9c94015",
-      "git_blob_sha": "86c33480b2be742c5e7ce683c8ca75e078519140"
+      "size": 7306,
+      "sha256": "6af6fb7cbe2045c1ce0feac7033b7756e5625c25a557b238cc770220dc97d423",
+      "git_blob_sha": "e00ee6319919f333c616536a757cf8f3fd7967a2"
     },
     {
       "path": "START_HERE.txt",
-      "size": 6732,
-      "sha256": "d490c01ecb6d3b5412737b16f3463b858ac43704d91981fd0716f794f57407eb",
-      "git_blob_sha": "b5aa2ac3875bbe83dbe2ee4ecfd609304069debb"
+      "size": 7586,
+      "sha256": "bcc9704083daf57a4adeeca9cb6050045747fefee1ac057fbdf231e629ef8c95",
+      "git_blob_sha": "69567c48dce3f82e4561d9c8bce6edf47d2a4655"
     },
     {
-      "path": "modes/standard/CURRENT_RULES.md",
-      "size": 6280,
-      "sha256": "6f1d5ec8f13fccb1ee159d492b8a721a93865a64fa2f4993f78381f469726737",
-      "git_blob_sha": "0d105503deac19e69fbd9ae124ae7c6d6783ef9f"
+      "path": "candidates/m04-path-dragon-scale/v1.json",
+      "size": 6922,
+      "sha256": "a9df2c54eabe785d84bf38ca61399c8852add483f8b673330365a2cc8239af9d",
+      "git_blob_sha": "cb16411c92d664f734a0374c39262326caaef7fa"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 7381,
-      "sha256": "e7b9c0e42bc000a48a8a8967c8c9cf1de63da19ccc3f3ea0b3b4910b5568bc5e",
-      "git_blob_sha": "292effb256baf03b8636f0fe4977baec1572a73f"
+      "size": 8125,
+      "sha256": "c06c686ec029a4abfc28b316b087762fbda0bdaa630663b06b1fbeb502d1d87f",
+      "git_blob_sha": "25153d31f785feec98687677e57060a2f3452561"
     },
     {
-      "path": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
-      "size": 4661,
-      "sha256": "365368bf1d6204e83fcdce8939fbee9048f85bf4a1f4a7340d23985c866ece67",
-      "git_blob_sha": "59d5268e1dff3b79747cabb72b6b444ce481b0c0"
+      "path": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
+      "size": 6501,
+      "sha256": "923d6b66aec467b7bd54cd085f9a0c3201c068a7c6e406fd76350fb38367a78a",
+      "git_blob_sha": "9df76929dd40044724d8f9ef9170262ee7ce055f"
     },
     {
       "path": "rules/shared/02_CURRENT_HEROES.md",
-      "size": 48617,
-      "sha256": "c4fb5bb75c72447280deb8af9f3a4759fcf8ed1976340ffd9a5dcd1e1b7d14c9",
-      "git_blob_sha": "9d035ebf9eb0a7e168c44bd32e878f8dadb42afc"
-    },
-    {
-      "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-      "size": 25541,
-      "sha256": "0cce7debf9f03883f4a4965a87898488590a9e8a75b632372409362e19f11a40",
-      "git_blob_sha": "02c09d77d6c499e6a26cfc8f625a5927f6cf9323"
+      "size": 50109,
+      "sha256": "fba6ba058757258d3e51964fff6b28a3d351e1518047d5479be21b84ce1f8946",
+      "git_blob_sha": "5651e16752410f7ae7869f0ff9a15601f9de72dc"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 235306,
-      "sha256": "e5be4a528d5596bfcc5a776128e86a813e8aeec97cab91b4e48dd586a133ccf8",
-      "git_blob_sha": "f6b8f6f1d0f106d3b7bd9857c2bc2680b590c930"
+      "size": 240312,
+      "sha256": "2b14f18c1eaefa3503279931bc478b98e0b07a4fe5d1a5df42bb9a17b0d47459",
+      "git_blob_sha": "97fe0e166582c0172117881b5e34f91f26dacd2a"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
     "status": "passed_targeted_scope_only",
-    "new_rule_confirmations": 1,
-    "new_local_standard_confirmations": 0,
-    "new_shared_user_confirmations": 1,
+    "new_rule_confirmations": 0,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "independent_review": false,
-    "verify_dispatch": {
-      "status": "not_run_this_round",
-      "reason": "No full historical local tree hydration; changed-payload checks and immutable remote-tree difference used, not a new full-package PASS."
-    },
+    "full_package_verify_dispatch": "not_rerun; source subset accessed directly and change-scope identities checked",
     "checks": {
-      "ordinary31_exact_preserved": true,
-      "prior_shared_rows_exact_preserved": true,
-      "new_scoped_shared_confirmation_only": true,
-      "shared_total10": true,
-      "main_H15_display_unapproved": true,
-      "receiver_adoption_unknown": true,
-      "historical_closeout_objects_exact_preserved": true,
-      "AG_still_unrun": true,
-      "frozen_scoring_NET_preserved": true,
+      "ordinary31_exact": true,
+      "direct_shared10_unchanged": true,
+      "main_existing_source_adoption_only": true,
+      "candidate_and_main_H06_pending": true,
+      "original_H02_main_receipt_recognized": true,
+      "historical_closeout_exact": true,
+      "all_game_specs_unrun": true,
+      "scoring_NET_preserved": true,
       "JSON_parse": true
     },
-    "changed_payload_files_checked": 14,
-    "unchanged_repository_blobs": "Will verify by comparing published tree against current base; untouched original/other-line objects reused.",
-    "prepare_sources": {
-      "status": "not_run_this_round",
-      "reason": "Existing expanded remote source root and required current original sections accessed directly; no archive extraction needed."
-    }
+    "changed_payload_files_checked": 13,
+    "unchanged_main_policies": {
+      "unified_core_same": true,
+      "old_mutation_policies_same": true,
+      "prior_hero_policies_equal": true
+    },
+    "previous_staged16_files_equal_remote": true,
+    "game_engine_runs": 0,
+    "verify_dispatch": "not_rerun_this_round; not claiming a new full-package PASS"
   },
   "unrun": [
     "WC01-WC11",
@@ -213,7 +199,8 @@
     "TS-S01/TS01-TS08",
     "EP-S01/EP01-EP08",
     "AF-S01/AF01-AF06",
-    "AG-S01/AG01-AG08"
+    "AG-S01/AG01-AG08",
+    "PS-S01/PS01-PS08"
   ],
   "shared_coordination": [
     {
@@ -331,21 +318,40 @@
     },
     {
       "id": "M04-ASSASSINATION-GEOMETRY",
-      "status": "explicit_shared_geometry_confirmed_pending_actual_main_receipt",
+      "status": "exact_source_confirmed_and_actual_main_receipt_verified",
       "owner": "standard/main",
       "source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
-      "detail": "Only originally legal H02+M04 combinations; a normally controlled revealed real ground rook with a previously legally acquired, still-valid later assassination opportunity. Not the activation turn; no second mutation, new pool or activation permission. Path-immunity completion/defense/H10/history remain separate; no runtime."
+      "detail": "Main1.56 adopted exact H02/M04 geometry only; all originally excluded crosses remain pending.",
+      "evidence": {
+        "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+        "source_standard_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+        "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+        "received": true,
+        "adopted": true,
+        "scope": "Exact previously approved normal-control revealed ground rook later-assassination geometry only; excluded crosses remain pending."
+      }
+    },
+    {
+      "id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "status": "specific_dragon_scale_normal_charge_candidate_pending",
+      "source": "candidates/m04-path-dragon-scale/v1.json",
+      "detail": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold."
     }
   ],
   "remote_reconciliation": {
-    "parent": "76a4279586ca40db88198e40d371de32c3766b11",
-    "source_tree": "0f48910d6e789c4de272742d31338dab5dd2dfa5",
-    "incoming_concurrent_updates_preserved": true,
-    "ordinary_target_paths_changed_before_local_edit": false,
-    "initial_visible_unreturned_local_files_found": 0,
-    "original_archives_and_returns_unchanged": true
+    "parent": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+    "base_tree": "fa6233dd867ccfa2de68bc409c9447cabbd829f3",
+    "previous_staged16_files_equal_remote": true,
+    "previous_local_unreturned_changes_found": 0,
+    "original_sources_assets_and_other_lines_preserved": true,
+    "source_read_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "concurrent_UI_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+    "concurrent_paths_count": 70,
+    "concurrent_changed_payload_overlap": 0,
+    "concurrent_read_scope": "Commit and tree path/object metadata only; no adoption of UI image/source content."
   },
-  "implementation_status": "confirmed_shared_design_documentation_only_no_game_code_or_engine_runs",
+  "implementation_status": "source_review_and_pending_candidate_only_no_game_code_or_engine_run",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -358,66 +364,116 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "New explicit scoped three-mode geometry approval, cross-conversation resumption and project-source write",
-    "risk_level": "high_project_rule_source; reversible_scoped_document_action",
+    "audit_trigger": "User next-step source review and new shared-rule candidate",
+    "risk_level": "high_project_rule_source; reversible_document_action",
     "known_facts": [
-      "Actual source candidate and current H02/M04 chapters available and read",
-      "User explicitly approved preceding narrow three-mode question",
-      "Ordinary31 and prior direct shared9 remain valid"
+      {
+        "id": "F1",
+        "claim": "Current M04 selects actual legal endpoint with exactly one intervening ground body; path resolves before endpoint.",
+        "source": "rules/shared/03_CURRENT_MUTATIONS.md#M04",
+        "verification": "V2"
+      },
+      {
+        "id": "F2",
+        "claim": "H21 dragon scale blocks one attack-endpoint lethal or crush lethal result; no state-clear bypass.",
+        "source": "rules/shared/02_CURRENT_HEROES.md#无敌; sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+        "verification": "V2"
+      },
+      {
+        "id": "F3",
+        "claim": "Current 01 distinguishes independent path crush from attack endpoint lethal; immunity applies only to specified effect.",
+        "source": "rules/shared/01_CURRENT_RULES.md#1.1A/3.2/21",
+        "verification": "V2"
+      },
+      {
+        "id": "F4",
+        "claim": "Endpoint scale interception returns ground attacker; flight landing obstruction suffocation is an already explicit separate source branch.",
+        "source": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+        "verification": "V2"
+      },
+      {
+        "id": "F5",
+        "claim": "Pinned game.ts attempts path destruction then processes endpoint without checking path-body destruction success; settlement.ts consumes scale and returns no death record.",
+        "source": "pinned14b src/game.ts pathVictims and src/settlement.ts destroyPiece/consumeDragonScale; normal game branch and skill branch excerpts actually read",
+        "verification": "V2 static code observation only; not confirmed gameplay or runtime"
+      }
     ],
     "user_statements": [
       {
-        "quote": "我同意",
-        "at_local": "2026-10-17T11:01:27+08:00",
-        "scope": "immediately preceding explicit H02/M04 question"
+        "quote": "进行下一步",
+        "at_local": "2026-10-17T17:37:47+08:00",
+        "approval": false
       }
     ],
     "claim_register": [
       {
-        "claim": "Scoped H02/M04 later ground geometry approved",
-        "type": "user_statement",
-        "source": "current visible conversation and reviewed immutable candidate",
-        "verification": "V2"
+        "claim": "Path dragon scale prevents one crush death; route continuation lacks sufficiently explicit current selection",
+        "type": "document_fact_and_source_gap",
+        "source": [
+          {
+            "path": "rules/shared/03_CURRENT_MUTATIONS.md",
+            "section": "M04 full and M01-M03 context",
+            "sha": "02c09d77d6c499e6a26cfc8f625a5927f6cf9323"
+          },
+          {
+            "path": "rules/shared/02_CURRENT_HEROES.md",
+            "section": "H21 full including 无敌/龙鳞; H08 full; H15 full; relevant H02",
+            "sha": "9d035ebf9eb0a7e168c44bd32e878f8dadb42afc"
+          },
+          {
+            "path": "rules/shared/01_CURRENT_RULES.md",
+            "section": "1.1A/3.2/21-22 complete relevant sections",
+            "sha": "e6daf86145453a0ff8ad20d68facc39d07c46778"
+          },
+          {
+            "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+            "section": "full original confirmation",
+            "sha": "4809a839fd4209683c95c3c5c3a3f08212581fe5"
+          }
+        ],
+        "verification": "V2 scoped source review only"
       },
       {
-        "claim": "AG example is conditional and unrun",
-        "type": "document_fact",
-        "source": "current full candidate",
-        "verification": "V2; scenario reasoning V1"
+        "claim": "OptionA preserves path lethal interception and original M04 route independently",
+        "type": "ai_inference",
+        "verification": "V1 candidate, pending user"
       }
     ],
     "ai_interpretations": [
-      "The user approved the recommended geometry option within stated guards; no approval of excluded interfaces"
+      "Do not turn old code or generic immunity into current approval"
     ],
     "assumptions": [
-      "Example requires original complete route legality, no unlisted immunity/return/royal conflicts"
+      "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold."
     ],
     "unknowns": [
-      "Main/other-mode new receipt/adoption",
-      "Path-immunity completion, multiple defenses, H10, history and full runtime"
+      "H02 special attack/activation, endpoint multiple defenses/dragon claw ordering",
+      "permanent or other immunity survival and different shields",
+      "hidden/reveal-defection/temporary control/H10/royal path or terminal branches",
+      "return-space/trap/history restoration/source clocks and full search",
+      "implementation, engine PASS, independent review, scores or NET"
     ],
     "competing_explanations": [
-      "Recommended effective M04 geometry selected by explicit approval",
-      "Base-rook-only alternative was presented but not selected; no earlier continuation approval inferred"
+      "Consume the path body's dragon scale and retain it alive at the original ground square; continue original M04 route and process the original endpoint. In this guarded branch the unprotected endpoint is destroyed and the rook lands there.",
+      "Consume path dragon scale, stop the charge, retain path body and endpoint, and retain/return rook at the start; the normal main action is spent. This additionally lets path interception prevent route completion; not selected."
     ],
     "falsification_conditions": [
-      "Contradictory newer explicit source or overlapping remote edits",
-      "Scope would require expansion to an excluded interface"
+      "Find a later explicit source already deciding this branch",
+      "Any current confirmation or mode guard conflicts with candidate"
     ],
     "verification_status": "partial",
-    "action_boundary": "Only ordinary workline current rule copies/confirmation/state/return; no main adjudication edits, product code, engine, scoring or NET",
+    "action_boundary": "Prepare one narrow candidate and source adoption/receipt in ordinary documents only; no gameplay approval, engine, scores or NET",
     "failure_conditions": [
-      "Grant H02 endpoint permissions to path source",
-      "Treat geometry approval as path immunity/multiple defense/H10 acceptance",
-      "Claim receiver adoption or engine PASS without evidence"
+      "Mark next-step as approval",
+      "Add second path or change endpoint/royal permissions",
+      "Infer all immunity/H02/H10 crosses or source histories",
+      "Claim independent/engine/legal-prefix verification"
     ],
-    "residual_risk": "V2 source consistency and V1 same-assistant scenario reasoning do not establish legal-prefix/runtime or full interaction correctness",
-    "next_validation_action": "先回读当前碾碎/免疫/龙鳞及M04完整来源，区分已有明文与真正未决；只在缺少明确来源时形成具体候选交用户决定。不从本次几何批准推定免疫后的路线完成、落位或返位结果。",
+    "residual_risk": "No complete natural prefix/runtime and no independent review; candidate is conditional only.",
+    "next_validation_action": "是否同意三个模式中上述合法普通M04冲锋：路径棋消耗龙鳞并存活留位，车继续处理原终点；龙鳞不因位于路径而额外阻止整次冲锋？",
     "action_resilience": {
-      "maximum_exposure": "Scoped ordinary-line reversible document changes; original sources/assets/other lines untouched",
-      "stop_conditions": "Overlapping remote edit or ambiguous source meaning",
-      "recovery": "Normal scoped revert from 76a4279586ca40db88198e40d371de32c3766b11 preserving other lines",
-      "unknown_unknown_boundary": "No irreversible product action; unresolved interaction blocks only dependent branch"
+      "maximum_exposure": "Reversible ordinary-line document changes; immutable originals and other lines reused",
+      "stop_conditions": "Overlapping remote changes or newer explicit source",
+      "recovery": "Normal scoped revert from 338acdf7c359b18e8a246a92354712b899e0f996 preserving concurrent lines"
     }
   },
   "delivery": {
@@ -462,46 +518,10 @@
     "adoption_scope": "Current ordinary-line source activation, scope inheritance, approved baseline, pending versus approval, source-bound incremental handoff and verification controls only.",
     "effectiveness_verified": false
   },
-  "shared_confirmed_delta": [
-    {
-      "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
-      "scope": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
-      "body": {
-        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜H02刺杀机会与M04战车冲锋几何"
-      },
-      "confirmed_at_local": "2026-10-17T11:01:27+08:00",
-      "user_quote": "我同意",
-      "received_verified": null,
-      "adopted_verified": null
-    }
-  ],
+  "shared_confirmed_delta": [],
   "new_local_standard_confirmations": 0,
-  "new_shared_user_rule_confirmations": 1,
-  "pending_main_shared_receipt_scope": [
-    {
-      "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
-      "scope": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
-      "body": {
-        "file": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "heading": "已确认｜H02刺杀机会与M04战车冲锋几何"
-      },
-      "confirmed_at_local": "2026-10-17T11:01:27+08:00",
-      "user_quote": "我同意",
-      "received_verified": null,
-      "adopted_verified": null
-    }
-  ],
+  "new_shared_user_rule_confirmations": 0,
+  "pending_main_shared_receipt_scope": [],
   "acknowledged_main_shared_receipt_scope": [
     {
       "id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
@@ -698,6 +718,20 @@
         "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
         "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
         "read_scope": "complete latest_by_source.standard; H15 successful-cost module and original confirmation read; ordinary public-empty receiver adoption only its explicit standard-only guard"
+      }
+    },
+    {
+      "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+      "received_verified": true,
+      "adopted_verified": true,
+      "evidence": {
+        "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+        "source_standard_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+        "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+        "received": true,
+        "adopted": true,
+        "scope": "Exact previously approved normal-control revealed ground rook later-assassination geometry only; excluded crosses remain pending."
       }
     }
   ],
@@ -1018,5 +1052,54 @@
       "source": "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json"
     }
   ],
-  "session_scope_note": "Current conversation approval only; previous session increments remain preserved with original confirmation sources and in previous_session_*; historical session_closeout object unchanged."
+  "session_scope_note": "Current conversation approval only; previous session increments remain preserved with original confirmation sources and in previous_session_*; historical session_closeout object unchanged.",
+  "publication_parent_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
+  "received_shared_delta": [
+    {
+      "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "source": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
+      "new_local_user_confirmation": false
+    }
+  ],
+  "observed_main_H02_M04_receipt": {
+    "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+    "source_standard_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "received": true,
+    "adopted": true,
+    "scope": "Exact previously approved normal-control revealed ground rook later-assassination geometry only; excluded crosses remain pending."
+  },
+  "main_1_56_scoped_adoption": {
+    "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "record_version": "1.56",
+    "actual_read_files_and_sections": [
+      {
+        "path": "worklines/main/ADJUDICATION.json",
+        "git_blob_sha": "7659a6d4d2063e4cbbe18ad595c63d4c0f1c89da",
+        "read_scope": "Complete H15 public-display and H02/M04 geometry policies, matching original H15 display confirmation; prior1.54 core/mutation/hero values compared equal, not entire history"
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "read_scope": "Complete latest_by_source.standard only"
+      },
+      {
+        "path": "worklines/main/PENDING_DECISION.json",
+        "read_scope": "Current candidate/next/scope/status and source pointer only"
+      }
+    ],
+    "adopted_scope": [
+      "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017 exact current public-display scope",
+      "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017 actual main receipt/adoption recognized; policy exactly equals own original"
+    ],
+    "not_adopted": [
+      "H15/H06 failed-training restoration candidate",
+      "full fieldmap/history/half-chaos runtime or other corpus"
+    ],
+    "comparison": {
+      "unified_core_same": true,
+      "old_mutation_policies_same": true,
+      "prior_hero_policies_equal": true
+    }
+  }
 }

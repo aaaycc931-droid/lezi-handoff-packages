@@ -1,0 +1,130 @@
+{
+  "schema": "lezi.shared_rule_candidate.v1",
+  "candidate_id": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
+  "version": 1,
+  "status": "pending_user_confirmation",
+  "approved": false,
+  "prepared_at_local": "2026-10-17T17:41:04+08:00",
+  "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only M04 already legally available, normal-control revealed true ground rook using a normal M04 charge (not H02 activation/assassination). Exactly one revealed nonroyal non-shadow ground path body with one valid H21 dragon scale, no other interception/immunity; actual legal enemy revealed ground nonroyal non-shadow endpoint has no interception/immunity. All original route/control/royal-safety/landing restrictions must hold.",
+  "question": "是否同意三个模式中上述合法普通M04冲锋：路径棋消耗龙鳞并存活留位，车继续处理原终点；龙鳞不因位于路径而额外阻止整次冲锋？",
+  "source_facts": [
+    {
+      "id": "F1",
+      "claim": "Current M04 selects actual legal endpoint with exactly one intervening ground body; path resolves before endpoint.",
+      "source": "rules/shared/03_CURRENT_MUTATIONS.md#M04",
+      "verification": "V2"
+    },
+    {
+      "id": "F2",
+      "claim": "H21 dragon scale blocks one attack-endpoint lethal or crush lethal result; no state-clear bypass.",
+      "source": "rules/shared/02_CURRENT_HEROES.md#无敌; sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+      "verification": "V2"
+    },
+    {
+      "id": "F3",
+      "claim": "Current 01 distinguishes independent path crush from attack endpoint lethal; immunity applies only to specified effect.",
+      "source": "rules/shared/01_CURRENT_RULES.md#1.1A/3.2/21",
+      "verification": "V2"
+    },
+    {
+      "id": "F4",
+      "claim": "Endpoint scale interception returns ground attacker; flight landing obstruction suffocation is an already explicit separate source branch.",
+      "source": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+      "verification": "V2"
+    },
+    {
+      "id": "F5",
+      "claim": "Pinned game.ts attempts path destruction then processes endpoint without checking path-body destruction success; settlement.ts consumes scale and returns no death record.",
+      "source": "pinned14b src/game.ts pathVictims and src/settlement.ts destroyPiece/consumeDragonScale; normal game branch and skill branch excerpts actually read",
+      "verification": "V2 static code observation only; not confirmed gameplay or runtime"
+    }
+  ],
+  "source_gap": "No sufficiently explicit current rule found selecting the normal M04 route-completion result when its sole path body survives dragon-scale interception. Generic immunity wording and old code are insufficient to silently mark the result confirmed.",
+  "recommended_option": {
+    "id": "A",
+    "text": "Consume the path body's dragon scale and retain it alive at the original ground square; continue original M04 route and process the original endpoint. In this guarded branch the unprotected endpoint is destroyed and the rook lands there.",
+    "path_death": false,
+    "path_dragon_scale_consumed": 1,
+    "path_body_location": "unchanged",
+    "path_body_retreated_or_displaced": false,
+    "require_successful_path_kill_before_continuing": false,
+    "repeat_crush_after_scale_consumption": false,
+    "endpoint_source": "original normal attack",
+    "new_target_or_action_granted": false,
+    "normal_main_action_consumed": true,
+    "deadline_refreshed": false
+  },
+  "alternative_option": {
+    "id": "B",
+    "text": "Consume path dragon scale, stop the charge, retain path body and endpoint, and retain/return rook at the start; the normal main action is spent. This additionally lets path interception prevent route completion; not selected."
+  },
+  "example": {
+    "id": "PS-S01",
+    "status": "conditional_unrun_no_complete_natural_prefix",
+    "description": "Rook, middle pawn, and enemy cannon on one line; exactly the middle pawn has one valid dragon scale. Original M04 route and royal safety hold; no other interception or landing effect.",
+    "recommended_result": "Pawn survives at original square and loses its scale; cannon is actually destroyed and rook lands at cannon square. No path destruction/death record is fabricated."
+  },
+  "unchanged_controls": [
+    "No two-or-more path crossing; empty/royal endpoint permissions not expanded",
+    "Endpoint dragon-scale return remains the old rule, not reapproved by this candidate",
+    "Path ordinary defense does not become a crush shield",
+    "No imaginary extra ground immuneCrush source derived from implementation field; air/river not ground path",
+    "No new H02 source lifetime/failure or full interaction policy"
+  ],
+  "not_decided": [
+    "H02 special attack/activation, endpoint multiple defenses/dragon claw ordering",
+    "permanent or other immunity survival and different shields",
+    "hidden/reveal-defection/temporary control/H10/royal path or terminal branches",
+    "return-space/trap/history restoration/source clocks and full search",
+    "implementation, engine PASS, independent review, scores or NET"
+  ],
+  "specifications": [
+    {
+      "id": "PS01",
+      "expected_if_A": "Only full guarded legal normal-control revealed ground true-rook normal M04 branch."
+    },
+    {
+      "id": "PS02",
+      "expected_if_A": "Exactly one ground path body; scale survival does not stop route."
+    },
+    {
+      "id": "PS03",
+      "expected_if_A": "Consume exactly one path scale; path body lives at same square; no fake path death."
+    },
+    {
+      "id": "PS04",
+      "expected_if_A": "Do not clear all states or crush the same path body again in this action."
+    },
+    {
+      "id": "PS05",
+      "expected_if_A": "Unprotected original endpoint processed normally and rook lands there."
+    },
+    {
+      "id": "PS06",
+      "expected_if_A": "One normal action spent; no extra move/action or timer refresh."
+    },
+    {
+      "id": "PS07",
+      "expected_if_A": "Endpoint scale/ordinary defense and other unresolved source branches not inferred."
+    },
+    {
+      "id": "PS08",
+      "expected_if_A": "PS-S01 conditional comparison only; no reachable-prefix or engine claim."
+    }
+  ],
+  "verification": {
+    "rule_sources": "V2 scoped current/original sources",
+    "candidate_reasoning": "V1 same-assistant; not an existing user confirmation",
+    "all_PS_specs": "unrun",
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "independent_review": false
+  },
+  "approval_guard": "Current user said only proceed to next step; new option remains pending. Ordinary31 and direct shared10 unchanged."
+}

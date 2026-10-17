@@ -1,0 +1,98 @@
+{
+  "schema": "lezi.shared_source_adoption.v1",
+  "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+  "origin_workline": "main",
+  "source": {
+    "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "path": "worklines/main/ADJUDICATION.json",
+    "record_version": "1.56",
+    "git_blob_sha": "7659a6d4d2063e4cbbe18ad595c63d4c0f1c89da",
+    "read_scope": "Complete H15_public_training_display policy and matching original confirmation; existing core/mutation/previous hero policies compared equal to1.54; not full historical audit"
+  },
+  "original_confirmation": {
+    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "confirmed_at_local": "2026-10-17T11:02:28+08:00",
+    "user_quote": "我同意你的方案",
+    "source_type": "direct_current_user_confirmation_of_immediately_preceding_three_mode_display_question",
+    "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "reviewed_candidate": {
+      "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
+      "path": "candidates/h15-public-training-display/v1.json",
+      "git_blob_sha": "6313d59aa880b5360706d6ed7447c408b1ae1ea1"
+    },
+    "immediately_preceding_question": "是否同意这项显示方案用于三个模式？",
+    "presented_clauses": [
+      "三个模式训练期间只显示所选兵种和机会已用，不显示实际培养进度或即时失败。",
+      "真实培养照常结算，毕业时公开实际棋盘变化。",
+      "取舍：避免通过死亡提示直接区分秘密绑定，代价为无实时进度；不保证阻止合法公开推断。"
+    ],
+    "mode_ids": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "scope": "Current-version common public display after legally successful H15 start, and corresponding public/private repetition-field boundary only",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
+    "not_inferred": [
+      "empty/failed candidate consumption, retry/feedback or new start/check permission",
+      "H06 actual body/progress/failure/reward restore semantics",
+      "M07 same-begin order or other modes H11 space details",
+      "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
+      "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
+    ],
+    "implementation_status": "confirmed_design_not_implemented",
+    "new_engine_tests": 0
+  },
+  "policy": {
+    "status": "user_confirmed_design_not_implemented",
+    "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "scope": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "availability_guard": "Only H15 already legally available, after a legally successful training start. No start-cost/empty-pool/window/check or restoration policy is selected.",
+    "common_display": {
+      "selected_type_public": true,
+      "unique_opportunity_used_public_after_shared_success": true,
+      "shared_success_event_preserved": true,
+      "actual_progress_or_remaining_turns_shown_to_either_player": false,
+      "live_training_or_failure_status_shown_to_either_player": false,
+      "death_linked_popup_progress_stop_reset_or_button_feedback_revealing_binding": false
+    },
+    "authority_and_graduation": {
+      "actual_binding_progress_and_lifecycle_settled_by_existing_authority": true,
+      "fake_progress_or_new_public_planned_clock_added": false,
+      "death_failure_unique_use_first_tick_and_start_cost_unchanged": true,
+      "existing_legal_graduation_flight_board_changes_public": true,
+      "legal_public_inference_not_guaranteed_prevented": true
+    },
+    "repetition_boundary": {
+      "reads_only_lawful_common_public_effective_state": true,
+      "hidden_binding_actual_progress_or_actual_failure_automatically_included": false,
+      "post_graduation_public_flight_lifetime_and_landing_rights_follow_existing_sources": true,
+      "complete_key_or_hash_selected": false
+    },
+    "confirmed_text": [
+      "本版三个模式在合法成功启动训练后，双方公开信息只列已选兵种及本局训练机会已用；保留已经共同知道的成功启动事实。",
+      "训练期间不向任一玩家显示本次训练的实际已累计培养进度/实际剩余培养回合，不显示仍在训练或已经失败的实时状态，不在受训棋死亡时额外弹出失败提示、停止/归零进度条或改变按钮来指出隐藏绑定。",
+      "真实受训绑定、实际培养进度、存活/失败/毕业等仍由权威系统依既有来源准确结算；不伪造进度，也不改变死亡失败、一次机会及培养首次计数。",
+      "达到既有合法毕业/升空等公开效果时，照原来源公开真实发生的棋盘变化。玩家仍可按公开启动、兵种成本及正式回合自己估算预计时间；本方案不保证无法从合法公开对局推断结果。",
+      "按本次已确认显示方案，重复判定只读该方案依法共同公开的有效状态；隐藏的实际进度/失败/绑定不因存在于服务器就进入公开键。毕业后的公开飞行及寿命/降落权利仍按既有规则区分。"
+    ],
+    "not_decided": [
+      "empty/failed candidate consumption, retry/feedback or new start/check permission",
+      "H06 actual body/progress/failure/reward restore semantics",
+      "M07 same-begin order or other modes H11 space details",
+      "a new public planned clock, mandatory graduation success or guaranteed secrecy against all public inference",
+      "complete repetition fieldmap/hash/source-order/pressure algorithm, implementation/runtime/scoring/NET"
+    ],
+    "source_permission_note": "Historical optional progress-publicity permission retained as provenance; current-version explicit choice does not display authoritative progress. No retroactive private-progress confirmation invented.",
+    "verification": "V2 current-user confirmation and scoped source correspondence; V1 abstract pair only, no engine/client or independent privacy validation"
+  },
+  "adopted_scope": "Ordinary consumption of already-confirmed common current-version display after legal H15 successful start; no new local/direct shared user confirmation.",
+  "new_local_user_confirmation": false,
+  "implementation": false,
+  "engine_runs": 0,
+  "main_H15_H06_failed_training_candidate_approved": false
+}

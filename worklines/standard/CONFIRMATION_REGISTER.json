@@ -1126,9 +1126,33 @@
       },
       "new_direct_shared_confirmation_this_dialogue": true,
       "new_local_standard_confirmation": false,
-      "main_receipt_verified": null,
-      "main_adoption_verified": null,
+      "main_receipt_verified": true,
+      "main_adoption_verified": true,
       "other_mode_adoption_verified": null,
+      "implementation": false,
+      "main_receipt_evidence": {
+        "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+        "source_standard_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+        "confirmation_id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+        "received": true,
+        "adopted": true,
+        "scope": "Exact previously approved normal-control revealed ground rook later-assassination geometry only; excluded crosses remain pending."
+      }
+    },
+    {
+      "confirmation_id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+      "status": "existing_main_shared_confirmation_adopted_to_standard_sources",
+      "origin_workline": "main",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
+      "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+      "new_direct_shared_confirmation_this_dialogue": false,
+      "new_local_standard_confirmation": false,
       "implementation": false
     }
   ],
@@ -1177,5 +1201,11 @@
     "ordinary_count": 31,
     "direct_shared_count": 9,
     "new_confirmation_by_closeout": false
+  },
+  "latest_received_shared_source": {
+    "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
+    "source": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
+    "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "read_scope": "Complete current module and matching original confirmation; no local new user approval"
   }
 }
