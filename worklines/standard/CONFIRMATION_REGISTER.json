@@ -1091,7 +1091,7 @@
       },
       "new_direct_shared_confirmation_this_dialogue": true,
       "new_local_standard_confirmation": false,
-      "main_receipt_verified": null,
+      "main_receipt_verified": true,
       "other_mode_adoption_verified": null,
       "implementation": false,
       "half_chaos_receipt_verified": true,
@@ -1099,6 +1099,12 @@
       "half_chaos_receipt_evidence": {
         "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
         "path": "worklines/half_chaos/READ_RECEIPTS.json"
+      },
+      "main_adoption_verified": true,
+      "main_receipt_evidence": {
+        "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+        "read_scope": "complete latest_by_source.standard; H15 successful-cost module and original confirmation read; ordinary public-empty receiver adoption only its explicit standard-only guard"
       }
     }
   ],
@@ -1125,5 +1131,27 @@
     "new_local_standard_confirmation_count": 0,
     "shared_confirmations_originated_here_total": 9,
     "approval_context_commit": "e588078339fc256a9737e08a0db8d83322262171"
+  },
+  "latest_receipt_observation": {
+    "at_local": "2026-10-17T10:49:51+08:00",
+    "source": {
+      "commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
+      "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+      "read_scope": "complete latest_by_source.standard; H15 successful-cost module and original confirmation read; ordinary public-empty receiver adoption only its explicit standard-only guard"
+    },
+    "confirmation_ids": [
+      "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+      "CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017"
+    ],
+    "new_user_confirmations": 0,
+    "ordinary_public_empty_adoption_scope": "standard_only",
+    "pending_H02_M04_candidate_adopted": false
+  },
+  "session_closeout": {
+    "revision": "STD-SESSION-CLOSEOUT-20261017-r1",
+    "requested_at_local": "2026-10-17T10:46:29+08:00",
+    "ordinary_count": 31,
+    "direct_shared_count": 9,
+    "new_confirmation_by_closeout": false
   }
 }

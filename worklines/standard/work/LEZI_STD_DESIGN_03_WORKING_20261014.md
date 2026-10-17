@@ -4,13 +4,13 @@ workline: standard_xiangqi
 task: NEXT-SHARED-H02-M04-ASSASSINATION-CHARGE-GEOMETRY
 date_local: 2026-10-17
 timezone: Asia/Shanghai
-status: ordinary_public_empty_confirmed_M04_assassination_geometry_pending
+status: session_closed_resume_at_pending_H02_M04_assassination_geometry
 collaboration: 2026-10-16.v0.12 / formal_baseline_1.8.0 / L3
 rule_baseline: LEZI-SHARED-DESIGN-2026-10-13-r1
 primary_reader: AI
 inherited_source_round_rule_confirmations: 21
-new_rule_confirmations: 1
-new_local_standard_confirmations: 1
+new_rule_confirmations: 0
+new_local_standard_confirmations: 0
 new_shared_core_confirmations: 0
 current_confirmation_index_count: 31
 new_code_changes: 0
@@ -20,7 +20,25 @@ scoring: frozen; q/H/I/B/J=null; n=0; featuresReady=false
 
 # 普通象棋设计工作线｜增量记录与收束
 
-## 2026-10-17 当前进度｜普通公开空池已确认，M04刺杀几何待决定
+## 2026-10-17 当前收束｜本对话关闭，H02＋M04方案待决定
+
+用户于2026-10-17T10:46:29+08:00明确“那就收束本轮对话吧”。仅关闭本对话，不停止项目或其他工作线、不批准任何待定方案、不启动下一设计/实现。收束修订STD-SESSION-CLOSEOUT-20261017-r1；阶段实际最后完成设计提交9bb47d5ce4100147eaf57fb653ef1c83d39b416e。当前确认总量：普通31（保留源轮21＋本对话后续10），本线直接共享9；本次收束新增确认0，评分冻结、NET暂停。
+
+本对话已写回的普通10项：M04地面车主体、M05亲征、M06开局原双马、M07普通不入池、M08地面尖斜主体、D01普通启动/锚点、D01零实际回归全耗费、同回合逐次沙漏、普通H03成功越河后同原子死亡名额、H15公开可判空池启动前拒绝。完整作用域/确认时间/来源均在CONFIRMATION_REGISTER的22—31及对应原确认，不能把简表扩大为全部交叉通过。
+
+本线直接共享9项：D01沙漏核心、零已现身候选资格、沙漏自身王安全、受将时投弹门禁、己方主行动中首次崩坏截止、H10×M05流舞九宫、M06新生成马不替补骑兵、M08正常控制已明地面兵返己半场几何、H15合法成功启动主行动成本。各项原模式可用性和限制继续控制；不重新计入普通31。另有主线1.50/1.51/1.52已采用共享来源及限定Δ0来源对齐，保持原证据层级，不重复计新用户确认。
+
+完整保留本轮及此前已写回成果/原确认/sources/原返回，没有只取最后一次增量；开始收束时前轮14项本地与已发布载荷完全相等、未回传改动0，已保存全本线保护点。最新并发主线eaf6ad333a5519dc94dd233eeaae746609e5896e实际接收H15成功成本和仅普通公开空池，裁判1.54；完整相关新政策/原确认/接收方回执已读，原1.53核心/H15时点/畸变政策值相等核对。只认其明确采用范围，不声称完整历史或运行验收；本次收束自身的接收采用仍未知。半混乱与主线其他并发成果按最新基树保留，半混乱新前缀/验收/源清单正文不作已读采用声明。
+
+接续断点：下方唯一“当前待决策｜H02刺杀机会与M04战车冲锋几何”完整候选、AG-S01与AG01—AG08精确保留，状态未批准。用户此前10:40询问收束方式、10:45询问对话丢失接续、10:46要求收束，都不是对该候选的同意。待用户明确继续后恢复方案并给具体情形决定；未决的路径免疫/多防御/H10/历史/王安全/完整字段与搜索计时、H15暗棋失败与主线展示等不因收束解决。AF/AG/EP及此前所有标为未运行的规格仍未运行，无游戏代码/引擎新增运行、独立复核、APK或部署。
+
+交接方式：固定GitHub入口＋真实当前正文/状态/RETURN_TO_MAIN＋本段接续文字，不另打ZIP；若以后明确要求离线/导入/备份包，再按实际用途生成完整所需材料。协作L3，当前正文v0.12／正式基线1.8.0，当前索引未变，既有完整适用细则及范围内文档维护授权继续有效。
+
+可直接用于新对话的接续文字：
+
+> 继续《乐子象棋》普通象棋工作线，读取并执行最新固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt 。先保护未回传成果，从H02＋M04后续刺杀机会与战车冲锋几何的现成待定方案继续；恢复完整方案和具体情形后交我决定，不把继续当作批准。继承已确认设计，评分冻结、NET暂停；阶段完成或共享阻断时增量写回本线资料及回传记录。
+
+## 2026-10-17 收束前进度｜普通公开空池已确认，M04刺杀几何待决定
 
 用户于2026-10-17T10:10:47+08:00答“我同意”，确认CONF-STD-H15-PUBLIC-EMPTY-POOL-20261017：只普通象棋双方公开信息足以确认合法征募候选0的分支，启动前拒绝不扣唯一机会/正常行动，原合法窗口仍开可改选再请求；不重开窗口/刷新时限/退旧行动、不授权暗棋秘密反馈。原始确认与普通当前正文已同步，EP-S01/EP01—EP08未运行。当前普通索引31=源轮21＋后续10，直接共享累计9；本轮普通1、共享0。
 
