@@ -1,8 +1,8 @@
 {
   "schema": "lezi.main.design_candidate.v1",
   "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-  "status": "pending_explicit_user_confirmation",
-  "approved": false,
+  "status": "user_confirmed_design_not_implemented",
+  "approved": true,
   "prepared_date_local": "2026-10-17",
   "source_baseline_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
   "mode_ids": [
@@ -77,7 +77,6 @@
     }
   ],
   "not_approved": [
-    "This exact prestart-unused restoration candidate remains pending.",
     "Blanket refund for failed/graduated training, H11 or other time skills.",
     "New start windows/in-check permissions/empty-pool request feedback.",
     "M07 same-begin ordering, full repetition-key/phase/clock/implementation/runtime."
@@ -94,8 +93,50 @@
     "combination": "V1 same-assistant proposal, not primary proof of past approval",
     "engine_runs": 0,
     "implementation": false,
-    "independent": false
+    "independent": false,
+    "confirmation": "V2 current-user exact scoped approval; no implementation/runtime"
   },
   "scoring_frozen": true,
-  "NET": "paused"
+  "NET": "paused",
+  "confirmation": {
+    "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "confirmed_at_local": "2026-10-17T20:56:40+08:00",
+    "user_quote": "我同意",
+    "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_prestart_unused_restore_question",
+    "reviewed_candidate": {
+      "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+      "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+      "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
+    },
+    "immediately_preceding_question": "是否确认三个模式采用这条限定处理？",
+    "presented_clauses": [
+      "合法回溯到首次训练启动前，训练和次数一起恢复为未启动、未使用。",
+      "之后可在原有合法窗口重新选种、按原规则随机征募；旧绑定和进度不保留，玩家记忆保留。",
+      "仅限回溯前训练仍存活、未失败未毕业的分支；已有训练快照及已确认的死亡失败例外保持独立。"
+    ],
+    "mode_ids": [
+      "original_jieqi",
+      "standard_xiangqi",
+      "half_chaos"
+    ],
+    "availability_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
+    "not_confirmed": [
+      "death-failed/graduated or other failure branches beyond their exact existing confirmations",
+      "new H06/H15 availability/windows/check permission, empty/invalid-request feedback or other time skills",
+      "H11 mode-specific space barriers and M07 unresolved control/begin interactions",
+      "graduation/reward-history restoration, complete public-field/key/phase/clock algorithms",
+      "physical storage layout, implementation, runtime/privacy/independent acceptance, scoring or NET"
+    ],
+    "implementation_status": "confirmed_design_not_implemented",
+    "engine_runs": 0
+  },
+  "source_priority_note_status": "Original proposal wording retained as presentation provenance; new exact confirmation now controls this minimal branch.",
+  "not_approved_at_presentation": [
+    "This exact prestart-unused restoration candidate remains pending.",
+    "Blanket refund for failed/graduated training, H11 or other time skills.",
+    "New start windows/in-check permissions/empty-pool request feedback.",
+    "M07 same-begin ordering, full repetition-key/phase/clock/implementation/runtime."
+  ]
 }

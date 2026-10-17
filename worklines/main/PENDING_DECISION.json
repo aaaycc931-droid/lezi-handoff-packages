@@ -1,23 +1,20 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "H15_prestart_consistent_snapshot_restore_candidate_pending",
+  "status": "prestart_unused_restore_confirmed_no_active_candidate_source_review_next",
   "last_confirmed": {
-    "id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
-    "source": "ADJUDICATION.json#/project_specific_confirmations",
-    "origin_workline": "standard",
-    "scope": "independently approved guarded M04 branch, not current H15 candidate"
+    "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "status": "pending_explicit_user_confirmation",
-    "candidate": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-    "task": "H06回到H15首次启动前：训练与使用状态一同恢复",
-    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_consistent_snapshot_candidate",
-    "is_new_user_candidate": true,
-    "approved": false
+    "id": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
+    "status": "source_review_next_no_new_rule_candidate",
+    "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+    "is_new_user_candidate": false
   },
   "unresolved_questions": [
-    "H15首次启动前：当前完整候选恢复无训练与未使用，允许原窗口后续启动；待明确确认。毕业/失败等其他交叉独立。",
+    "H15毕业/飞行/奖励历史及其他未决恢复分支待来源核对；首次启动前的存活未失败未毕业分支已明确确认",
     "complete remaining hero/mutation public effects, resource and relation map",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
@@ -26,22 +23,17 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": {
+  "current_candidate": null,
+  "candidate_prepared_for_presentation": false,
+  "approval_scope_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+  "new_candidate_approved": true,
+  "candidate_presentation": "Exact minimal prestart-unused restoration candidate approved; no active replacement.",
+  "resolved_candidate": {
     "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-    "approved": false
-  },
-  "candidate_prepared_for_presentation": true,
-  "approval_scope_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
-  "new_candidate_approved": false,
-  "candidate_presentation": "是否确认三个模式采用这一限定处理：回溯到首次启动前，训练与次数一起恢复为未启动/未使用；之后可在原有合法窗口重新启动？",
-  "resolved_candidate": {
-    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "path": "candidates/h15-h06-failed-training-restore/v1.json",
-    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
     "approved": true,
-    "confirmed_at_local": "2026-10-17T15:30:17+08:00",
-    "reconfirmed_at_local": "2026-10-17T17:57:09+08:00"
+    "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "confirmed_at_local": "2026-10-17T20:56:40+08:00"
   },
   "source_updates": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -126,42 +118,45 @@
       "approved": true,
       "confirmed_at_local": "2026-10-17T15:30:17+08:00",
       "reconfirmed_at_local": "2026-10-17T17:57:09+08:00"
+    },
+    {
+      "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+      "approved": true,
+      "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "confirmed_at_local": "2026-10-17T20:56:40+08:00"
     }
   ],
   "confirmation": {
-    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "confirmed_at_local": "2026-10-17T15:30:17+08:00",
+    "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "confirmed_at_local": "2026-10-17T20:56:40+08:00",
     "user_quote": "我同意",
-    "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
-    "reconfirmation_quote": "我同意",
-    "counted_as_one_rule_confirmation": true,
-    "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_failed_training_H06_question",
+    "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_prestart_unused_restore_question",
     "reviewed_candidate": {
-      "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
-      "path": "candidates/h15-h06-failed-training-restore/v1.json",
-      "git_blob_sha": "456669cc763a582d970eb0bee43734c8593a2e8d"
+      "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+      "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+      "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
     },
-    "immediately_preceding_question": "是否同意这一限定方案适用于三个模式？",
+    "immediately_preceding_question": "是否确认三个模式采用这条限定处理？",
     "presented_clauses": [
-      "同一次训练未失败、未毕业时，合法回溯按原来源恢复原受训棋及快照进度，不重新随机，已用机会不返还。",
-      "已因毕业前受训棋死亡而失败的训练：合法回溯可恢复棋子，但不恢复这次已失败训练。",
-      "例：快照炮3/6、后来死亡失败，回溯后炮可存活但不继续培养；启动前快照、已毕业奖励等其他交叉另核。"
+      "合法回溯到首次训练启动前，训练和次数一起恢复为未启动、未使用。",
+      "之后可在原有合法窗口重新选种、按原规则随机征募；旧绑定和进度不保留，玩家记忆保留。",
+      "仅限回溯前训练仍存活、未失败未毕业的分支；已有训练快照及已确认的死亡失败例外保持独立。"
     ],
     "mode_ids": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
-    "availability_guard": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
-    "scope": "Only pre-graduation trainee-death failure crossed by an otherwise legal H06 restore to its earlier active-training snapshot; no expansion to prestart, graduation, other failures or other time skills.",
-    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+    "availability_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
     "not_confirmed": [
-      "snapshot before original training start",
-      "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
-      "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
-      "M07 same-begin or other-mode H11 spatial rules",
-      "full phase/key/terminal/clock implementation or runtime/scoring/NET"
+      "death-failed/graduated or other failure branches beyond their exact existing confirmations",
+      "new H06/H15 availability/windows/check permission, empty/invalid-request feedback or other time skills",
+      "H11 mode-specific space barriers and M07 unresolved control/begin interactions",
+      "graduation/reward-history restoration, complete public-field/key/phase/clock algorithms",
+      "physical storage layout, implementation, runtime/privacy/independent acceptance, scoring or NET"
     ],
     "implementation_status": "confirmed_design_not_implemented",
     "engine_runs": 0

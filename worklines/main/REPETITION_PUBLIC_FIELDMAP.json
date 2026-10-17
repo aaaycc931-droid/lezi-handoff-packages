@@ -73,9 +73,10 @@
     {
       "id": "F10",
       "category": "H15_public_selection",
-      "include": "After shared lawful successful start: selected piece type and known opportunity used; real graduation/flight effects follow existing source.",
+      "include": "After lawful successful start, selected type and currently used opportunity are public under source. Under exact approved H06 prestart restoration, current opportunity returns unused and old start/type remain history, not current training.",
       "restriction": "No actual progress/remaining turns or live training/failure status shown to either player. Hidden binding/lifecycle are not automatic public repetition fields; post-graduation public rights follow source.",
-      "status": "display_choice_confirmed_source_contract_not_complete_encoding"
+      "status": "display_choice_confirmed_source_contract_not_complete_encoding",
+      "source_exception": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017"
     }
   ],
   "excluded": [
@@ -154,7 +155,7 @@
     "received_external_shared_confirmations": 4,
     "source_contract_groups": 10
   },
-  "maintenance_base_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+  "maintenance_base_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
   "mapping_authority": {
     "confirmed_business_policy": "Existing source_confirmation_ids plus current source rules only.",
     "mapping_judgment": "V1 same-assistant application of V2 scoped sources; proposed identifiers below are explanatory, not implementation fields.",
@@ -313,11 +314,11 @@
       "id": "R05",
       "source": "H15 confirmed chosen-type/used-opportunity display; actual training state hidden",
       "public_effective_components": [
-        "source-authorized public chosen type",
-        "unique opportunity already spent where determinable from the shared public successful-start event; rewind cannot refund it"
+        "source-authorized current public chosen type after lawful successful start; old chosen type remains only remembered history if its start is undone by exact approved prestart restore",
+        "current opportunity used after a common successful-start event; exact approved H06 prestart branch restores unused, while continuous-training and exact death-failure branches remain spent"
       ],
       "unresolved_components": [
-        "H06 pre-start snapshot and graduation/reward history crossings remain separate",
+        "H06 graduation/reward and other unresolved history crossings remain separate; minimal prestart branch now exactly confirmed",
         "M07 same-begin and other-mode H11 interfaces",
         "canonical public flight/lifetime/landing rights encoding"
       ],
@@ -400,7 +401,7 @@
           "read_scope": "complete H06 and H15 entries only; H15 display source wording not yet synchronized, main1.55 controls"
         }
       ],
-      "status": "display_timing_cost_and_H06_death_failure_confirmed_other_history_encoding_pending",
+      "status": "display_timing_cost_and_guarded_H06_prestart_failure_confirmed_other_histories_encoding_pending",
       "first_tick_confirmation": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
       "first_tick_status": "confirmed_design_not_runtime_verified",
       "display_candidate": "candidates/h15-public-training-display/v1.json",
@@ -441,10 +442,15 @@
       "prestart_H06_candidate": {
         "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
         "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-        "approved": false,
-        "status": "pending_explicit_user_confirmation"
+        "approved": true,
+        "status": "user_confirmed_design_not_implemented",
+        "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017"
       },
-      "prestart_nonrefund_scope_dispute": "Historical broad no-refund extension to prestart remains disputed. New explicit candidate proposes snapshot-unused restoration and lawful future start, including public current-state projection; no approved policy update yet."
+      "prestart_nonrefund_scope_dispute": "Historical dispute retained in source correction provenance; this exact minimal branch now resolved by explicit20:56 confirmation, not inferred from old summaries.",
+      "prestart_H06_confirmation": {
+        "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+        "source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore"
+      }
     },
     {
       "id": "R06",
@@ -658,7 +664,7 @@
     "applied_boundary": "Chosen type/shared used opportunity public; actual hidden binding/progress/failure excluded; real graduation/flight rights follow source. No new public clock or complete key."
   },
   "H15_H06_source_review": {
-    "status": "prestart_scope_gap_retained_consistent_snapshot_candidate_pending",
+    "status": "partial_prestart_and_death_failure_confirmed_graduation_pending",
     "base_commit": "115350d1f8264143a1381aae61e9837492067a04",
     "source_priority": [
       "2026-10-05 original9.14 is explicit H15 snapshot coverage; unchanged valid parts survive later summaries.",
@@ -666,7 +672,8 @@
       "Current full H06/H15 preserve known nonrefund and report remaining restoration interfaces; do not flatten all sources into a universal restore or universal irreversible-training rule.",
       "Main1.55 current-version display supersedes old optional/pending/private wording in source copies; no other line is silently edited.",
       "Current explicit2026-10-17 user selection: pre-graduation death-failed training persists under guarded H06 restore; exact policy above older9.14 for this branch only.",
-      "Current2026-10-17 user objection triggers source-scope reconciliation for first-prestart snapshots only; broad historical nonrefund summaries are not sufficient proof of approval of cancellation-plus-spent-use here."
+      "Current2026-10-17 user objection triggers source-scope reconciliation for first-prestart snapshots only; broad historical nonrefund summaries are not sufficient proof of approval of cancellation-plus-spent-use here.",
+      "Current20:56 explicit three-mode confirmation controls the exact minimal first-prestart branch above older broad nonrefund summaries. Other failure/graduation/history scopes remain separate."
     ],
     "exact_original_9_14": "完整权威快照恢复天空上将相关状态，包括：当前秘密受训对象、培养进度、是否培养完成、飞行/地面层、剩余飞行寿命、当时控制状态及其他权威字段；回到秘密培养阶段恢复快照中的原受训对象，不重新随机。",
     "surviving_bounded_contract": {
@@ -692,9 +699,9 @@
       },
       {
         "branch": "snapshot before first successful start; current same trainee alive ongoing ungraduated",
-        "status": "complete_consistent_snapshot_restore_candidate_pending",
-        "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-        "reason": "Propose no training and unused opportunity together, future start only in existing windows; old cancel-plus-spent-use withdrawn. Not yet approved."
+        "status": "explicit_user_confirmed_restore_unused_and_no_training",
+        "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+        "reason": "Restore no training and unused opportunity together; later original-window start/selection/random recruitment allowed. No old binding/progress retained."
       },
       {
         "branch": "graduation/flight obtained after target snapshot, or completed reward restored after destruction",
@@ -928,7 +935,7 @@
     "prestart_consistent_snapshot_candidate": {
       "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
       "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-      "approved": false,
+      "approved": true,
       "guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
       "proposed_clauses": [
         "合法H06回到首次启动前快照S时，训练状态及使用状态一起恢复：没有受训绑定、没有已启动训练的培养进度，H15训练机会为未使用。",
@@ -964,12 +971,29 @@
         }
       ],
       "source_priority_note": "Historical9.14 full authority snapshot and user's snapshot-unused objection motivate this exact candidate. Later broad no-refund summary stays in history; if approved this becomes an explicit bounded prestart exception to that wording. Existing1.57 death-failure confirmation is not changed.",
-      "source_correction_preserved": true
-    }
+      "source_correction_preserved": true,
+      "status": "user_confirmed_design_not_implemented",
+      "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore"
+    },
+    "prestart_confirmation": {
+      "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
+      "guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+      "confirmed_at_local": "2026-10-17T20:56:40+08:00"
+    },
+    "prestart_nonrefund_scope_resolution": "New exact current-user approval resolves this minimal prestart branch prospectively: no training plus unused opportunity, later legal original-window start/recruitment allowed. Historical scope gap/provenance retained; no claim13Oct had expressly approved it."
   },
   "new_shared_M04_confirmation": {
     "confirmation_id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
     "source": "ADJUDICATION.json#/shared_mutation_design_updates/M04_path_dragon_scale_continuation",
     "scope": "Exact guarded design received only; does not supply complete M04 public field/key or runtime proof."
+  },
+  "current_H15_H06_next_source_review": {
+    "id": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
+    "status": "source_review_next_no_new_rule_candidate",
+    "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+    "is_new_user_candidate": false
   }
 }

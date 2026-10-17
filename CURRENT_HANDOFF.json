@@ -34,18 +34,18 @@
     "entry": "worklines/main/START_HERE.txt",
     "state": "worklines/main/CURRENT_STATE.json",
     "shared_coordination": "worklines/main/SHARED_COORDINATION.json",
-    "base_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+    "base_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
     "necessary_body_publication": "present in this commit",
     "full_history_migration": false,
     "pending_repetition_history_approved": true,
-    "current_adjudication_version": "1.60",
-    "latest_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "current_pending_candidate": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "next_source_review": "source scope reviewed; explicit consistent-snapshot candidate pending",
+    "current_adjudication_version": "1.61",
+    "latest_confirmation": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "current_pending_candidate": null,
+    "next_source_review": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
     "public_body_equivalence_approved": true,
     "public_fieldmap_schema": "lezi.repetition.public_fieldmap.v0.3",
     "H15_first_tick_confirmed": true,
-    "latest_main_direct_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+    "latest_main_direct_confirmation": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "H15_successful_start_cost_confirmed_from_original_source": true,
     "concurrent_half_chaos_session_closeout": {
       "source_commit": "fef0e8e764d240a63353a11f451db3b56dd08c91",
@@ -65,8 +65,10 @@
     "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
     "H15_H06_death_failure_exception_confirmed": true,
     "prestart_candidate_recommendation_withdrawn": true,
-    "prestart_source_scope_disputed": true,
-    "withdrawn_prestart_candidate_note": "Applies to old cancel-training-plus-spent-use proposal only; new consistent-snapshot restoration candidate is separately pending."
+    "prestart_source_scope_disputed": false,
+    "withdrawn_prestart_candidate_note": "Old cancel-training-plus-spent-use proposal remains withdrawn; corrected minimal restore-unused proposal now explicitly confirmed.",
+    "H15_H06_prestart_unused_restore_confirmed": true,
+    "historical_prestart_original_approval_scope_gap_preserved": true
   },
   "historical_archive_migration_incomplete": [
     "main",
@@ -100,13 +102,23 @@
         "received_main_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
         "actual_adopted_coordination_scope": "prior prestart candidate withdrawn, no active replacement or new rule approval; source scope disputed. Do not infer cancel-plus-spent-use or blanket refund from current assent. Exact1.57 death-failure branch remains unchanged.",
         "scope": "Actual withdrawn-candidate/source-dispute coordination recognized, not whole main1.59 rules/runtime"
+      },
+      "latest_main1_60_closeout_observation": {
+        "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+        "receiver_owned_path": "worklines/half_chaos/READ_RECEIPTS.json#/session_closeout_r2_observation",
+        "main_source_commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+        "actual_reading": "root entry plus main current status/version/pending/next metadata; full r29_stage_report object only; no full1.60 candidate or source review",
+        "main_candidate_full_body_read": false,
+        "main_candidate_adopted": false,
+        "adoption": "1.60 status/routing and actual limited r29 receipt recognition only; new1.61 confirmation reception unknown"
       }
     }
   },
   "latest_scoped_increment_observation": {
-    "observed_at_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
-    "ui": "B7 exact static approval report preserved; B8 not created at last read",
-    "half_chaos": "r29 finite64-obligation matrix metadata received; allUNRUN",
-    "standard": "exact independently approved M04 path-scale design now received into main canonical record"
+    "observed_at_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "half_chaos": "Conversation-only closeout after r29; next document proposal NOT_STARTED; allUNRUN",
+    "standard": "No new commit since exact scoped M04 received",
+    "ui": "Concurrent B8-v1 candidate published pending review; B7 approval preserved, main metadata only",
+    "ui_source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.shared_coordination.v1",
-  "base_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
-  "status": "H15_prestart_consistent_restore_candidate_pending_M04_scoped_confirmation_received",
+  "base_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+  "status": "H15_H06_prestart_unused_restore_confirmed_graduation_source_review_next",
   "shared_confirmations": {
     "already_document_adopted": 7,
     "new_this_session": 1,
@@ -458,15 +458,16 @@
     {
       "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
       "owner": "main",
-      "status": "pending_explicit_user_confirmation",
-      "source": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-      "withdrawn_prior_proposal_unchanged": true
+      "status": "explicit_user_confirmed_design_not_implemented",
+      "source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
+      "withdrawn_prior_proposal_unchanged": true,
+      "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017"
     }
   ],
   "independent_worklines": {
     "standard": "Exact independently confirmed guarded M04 path-scale branch now received into main canonical design; no H02/endpoint complex/runtime/name-authorship expansion.",
-    "half_chaos": "r29 finite64-obligation matrix prepared per report; allUNRUN, no runtime-ready replay. Next concrete implementation/observation scope proposal is documents only.",
-    "ui": "Exact B7 approval reported; B8 permission artwork next, no current B8 candidate or runtime validation."
+    "half_chaos": "Only r29 dialogue closed; next source-linked implementation/observation scope proposal is NOT_STARTED and documentation-only. No project/global stop; all64 game specsUNRUN.",
+    "ui": "B8-v1 exact candidate published pending specific user review; B7 approval preserved. Main only selected metadata, no image/layer/runtime acceptance."
   },
   "delivery_vs_adoption": {
     "published_by_main": "document coordination only",
@@ -659,6 +660,15 @@
         "effect_on_12_replays": "none: all PD H04/H03 and DS D01, no H21. Do not add third hero or scale to existing data.",
         "implementation": false,
         "new_local_user_approval": false
+      },
+      "latest_main1_60_closeout_observation": {
+        "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+        "receiver_owned_path": "worklines/half_chaos/READ_RECEIPTS.json#/session_closeout_r2_observation",
+        "main_source_commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+        "actual_reading": "root entry plus main current status/version/pending/next metadata; full r29_stage_report object only; no full1.60 candidate or source review",
+        "main_candidate_full_body_read": false,
+        "main_candidate_adopted": false,
+        "adoption": "1.60 status/routing and actual limited r29 receipt recognition only; new1.61 confirmation reception unknown"
       }
     },
     "standard": {
@@ -720,11 +730,11 @@
     "policy": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
     "implementation": false
   },
-  "publication_parent_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+  "publication_parent_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
   "unread_concurrent_returns": [],
-  "current_phase_new_confirmations": 0,
+  "current_phase_new_confirmations": 1,
   "current_phase_ordinary_confirmation_received": null,
-  "current_phase_external_shared_confirmations_received": 1,
+  "current_phase_external_shared_confirmations_received": 0,
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
     "previous_main_commit": "d414c021cfc584094021bbebd5194688b465e89d",
@@ -787,51 +797,45 @@
     }
   },
   "current_confirmation": {
-    "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "confirmed_at_local": "2026-10-17T15:30:17+08:00",
+    "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "confirmed_at_local": "2026-10-17T20:56:40+08:00",
     "user_quote": "我同意",
-    "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
-    "reconfirmation_quote": "我同意",
-    "counted_as_one_rule_confirmation": true,
-    "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_failed_training_H06_question",
+    "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_prestart_unused_restore_question",
     "reviewed_candidate": {
-      "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
-      "path": "candidates/h15-h06-failed-training-restore/v1.json",
-      "git_blob_sha": "456669cc763a582d970eb0bee43734c8593a2e8d"
+      "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+      "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+      "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
     },
-    "immediately_preceding_question": "是否同意这一限定方案适用于三个模式？",
+    "immediately_preceding_question": "是否确认三个模式采用这条限定处理？",
     "presented_clauses": [
-      "同一次训练未失败、未毕业时，合法回溯按原来源恢复原受训棋及快照进度，不重新随机，已用机会不返还。",
-      "已因毕业前受训棋死亡而失败的训练：合法回溯可恢复棋子，但不恢复这次已失败训练。",
-      "例：快照炮3/6、后来死亡失败，回溯后炮可存活但不继续培养；启动前快照、已毕业奖励等其他交叉另核。"
+      "合法回溯到首次训练启动前，训练和次数一起恢复为未启动、未使用。",
+      "之后可在原有合法窗口重新选种、按原规则随机征募；旧绑定和进度不保留，玩家记忆保留。",
+      "仅限回溯前训练仍存活、未失败未毕业的分支；已有训练快照及已确认的死亡失败例外保持独立。"
     ],
     "mode_ids": [
       "original_jieqi",
       "standard_xiangqi",
       "half_chaos"
     ],
-    "availability_guard": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
-    "scope": "Only pre-graduation trainee-death failure crossed by an otherwise legal H06 restore to its earlier active-training snapshot; no expansion to prestart, graduation, other failures or other time skills.",
-    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
+    "availability_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
     "not_confirmed": [
-      "snapshot before original training start",
-      "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
-      "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
-      "M07 same-begin or other-mode H11 spatial rules",
-      "full phase/key/terminal/clock implementation or runtime/scoring/NET"
+      "death-failed/graduated or other failure branches beyond their exact existing confirmations",
+      "new H06/H15 availability/windows/check permission, empty/invalid-request feedback or other time skills",
+      "H11 mode-specific space barriers and M07 unresolved control/begin interactions",
+      "graduation/reward-history restoration, complete public-field/key/phase/clock algorithms",
+      "physical storage layout, implementation, runtime/privacy/independent acceptance, scoring or NET"
     ],
     "implementation_status": "confirmed_design_not_implemented",
     "engine_runs": 0
   },
   "next_source_review": {
-    "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "status": "pending_explicit_user_confirmation",
-    "candidate": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-    "task": "H06回到H15首次启动前：训练与使用状态一同恢复",
-    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_consistent_snapshot_candidate",
-    "is_new_user_candidate": true,
-    "approved": false
+    "id": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
+    "status": "source_review_next_no_new_rule_candidate",
+    "task": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
+    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+    "is_new_user_candidate": false
   },
   "standard_session_closeout_received": {
     "commit": "47d90c098924b0c2ac980e91afa31e6127fe0ddd",
@@ -849,21 +853,14 @@
   },
   "H15_H06_source_review": {
     "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-    "new_rule_confirmations": 0,
+    "new_rule_confirmations": 1,
     "continuous_live_slice_source_checked": true,
     "failed_crossing_pending": null,
     "confirmed_failure_exception": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
     "prestart_graduation_and_other_histories_pending": true,
-    "prestart_candidate": {
-      "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-      "status": "pending_explicit_user_confirmation",
-      "candidate": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-      "task": "H06回到H15首次启动前：训练与使用状态一同恢复",
-      "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_consistent_snapshot_candidate",
-      "is_new_user_candidate": true,
-      "approved": false
-    },
-    "status": "corrected_prestart_candidate_pending"
+    "prestart_candidate": null,
+    "status": "prestart_unused_and_failure_confirmed_other_history_pending",
+    "confirmed_prestart_exception": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017"
   },
   "latest_half_chaos_stage": {
     "source_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
@@ -901,33 +898,50 @@
     "main_independently_validated": false
   },
   "ui_stage_received": {
-    "source_commit": "904faf67feea90913139d2c38c7c83dfb6fd3dbe",
-    "read_scope": "CURRENT_STATE small scalar metadata, complete last_approval and next_task; RETURN current delta/validation/next metadata only. No image bytes/visual QA.",
-    "last_approval": {
+    "source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
+    "read_scope": "CURRENT_STATE revision/complete next_task/last_approval/runtime metadata and RETURN record/current_state_and_approval_delta/validation/next metadata only. Main has not viewed image, source layers or evidence bodies.",
+    "revision": "UI-B8-PENDING-20261017",
+    "record_id": "UI-B8-CANDIDATE-20261017",
+    "candidate": {
+      "id": "B8",
+      "subject": "蓝牙权限未允许（可再次授权）",
+      "version": "B8-v1",
+      "candidate_created": true,
+      "candidate_approved": false,
+      "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+      "image": "candidates/B8/v1/lezi-bluetooth-B8-v1.png",
+      "source_folder": "candidates/B8/v1",
+      "next_action": "展示本张实际图，由用户具体审批／修改；不自动批准或生成下一张。"
+    },
+    "last_approved": {
       "version": "B7-v1",
       "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
       "approved_at": "2026-10-17T19:05:29+08:00",
       "user_statement": "审批通过"
     },
-    "approval_report": {
-      "B7": {
-        "status": "user_approved",
-        "user_confirmation_quote": "审批通过",
-        "user_confirmation_time": "2026-10-17T19:05:29+08:00",
-        "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
-        "git_blob_sha": "eeb8e0bb5d1098ce4530f823c2c3a202832e3ef6",
-        "source_folder": "candidates/B7/v1",
-        "evidence": "Direct user approval in current conversation after display of this exact candidate"
-      }
+    "source_workline_reported_validation": {
+      "baseline_files_verified": 105,
+      "existing_work_files_verified": 29,
+      "restore_baseline_files": 105,
+      "restore_work_files": 44,
+      "restore_unique_assets": 117,
+      "restore_network_asset_bytes": 0,
+      "restored_B8_exact_recomposition": true,
+      "B4_B5_recomposition_changed_pixels": 0,
+      "B8_changed_pixels_from_B7": 35352,
+      "B8_protected_pixels_changed": 0,
+      "dimensions": [
+        852,
+        1846
+      ],
+      "font_modified": false,
+      "actual_B8_image_viewed": true,
+      "new_background_estimation": false,
+      "whole_page_regenerated": false
     },
-    "next": {
-      "id": "B8",
-      "subject": "蓝牙权限未允许（可再次授权）",
-      "candidate_created": false,
-      "candidate_approved": false,
-      "next_action": "核对对应权限状态与操作来源，从批准源层制作一张静态候选；当前尚未创建。"
-    },
-    "main_visual_acceptance": false
+    "main_visual_or_source_recomposition_acceptance": false,
+    "runtime": "not_run",
+    "approved": false
   },
   "standard_stage_received": {
     "source_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
@@ -938,15 +952,7 @@
     "status": "new_shared_confirmation_report_received_exact_candidate_correspondence_and_canonical_main_adoption_queued",
     "main_canonical_adopted_this_phase": false
   },
-  "current_candidate": {
-    "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "status": "pending_explicit_user_confirmation",
-    "candidate": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
-    "task": "H06回到H15首次启动前：训练与使用状态一同恢复",
-    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_consistent_snapshot_candidate",
-    "is_new_user_candidate": true,
-    "approved": false
-  },
+  "current_candidate": null,
   "prestart_scope_correction": {
     "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
     "status": "source_scope_disputed_prior_recommendation_withdrawn_no_new_rule",
@@ -1194,5 +1200,77 @@
       "engine_runs": 0
     },
     "policy_source": "ADJUDICATION.json#/shared_mutation_design_updates/M04_path_dragon_scale_continuation"
+  },
+  "H15_H06_prestart_confirmation": {
+    "confirmation": {
+      "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "confirmed_at_local": "2026-10-17T20:56:40+08:00",
+      "user_quote": "我同意",
+      "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_prestart_unused_restore_question",
+      "reviewed_candidate": {
+        "commit": "f644e0cba1cff305e36bb686652a9b03444c0f4e",
+        "path": "candidates/h15-h06-prestart-snapshot-restore/v1.json",
+        "git_blob_sha": "1b9e652ba23590c2db8a2a9007741f6de14c64d9"
+      },
+      "immediately_preceding_question": "是否确认三个模式采用这条限定处理？",
+      "presented_clauses": [
+        "合法回溯到首次训练启动前，训练和次数一起恢复为未启动、未使用。",
+        "之后可在原有合法窗口重新选种、按原规则随机征募；旧绑定和进度不保留，玩家记忆保留。",
+        "仅限回溯前训练仍存活、未失败未毕业的分支；已有训练快照及已确认的死亡失败例外保持独立。"
+      ],
+      "mode_ids": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "availability_guard": "Only an originally legal H06/H15 match and legal target snapshot S before H15's first successful start. At S there was no training and the opportunity was unused. Later one legal start occurred and its original trainee remains alive, ongoing and ungraduated at restore; no intervening death/failure/graduation, shuffle barrier or unresolved binding/control transformation. Original H0610-second/current-not-in-check/preflight/same-body nonattack noncheck replay and all source gates remain.",
+      "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore",
+      "not_confirmed": [
+        "death-failed/graduated or other failure branches beyond their exact existing confirmations",
+        "new H06/H15 availability/windows/check permission, empty/invalid-request feedback or other time skills",
+        "H11 mode-specific space barriers and M07 unresolved control/begin interactions",
+        "graduation/reward-history restoration, complete public-field/key/phase/clock algorithms",
+        "physical storage layout, implementation, runtime/privacy/independent acceptance, scoring or NET"
+      ],
+      "implementation_status": "confirmed_design_not_implemented",
+      "engine_runs": 0
+    },
+    "policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore"
+  },
+  "latest_half_chaos_session_closeout": {
+    "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+    "revision": "HC-SESSION-CLOSEOUT-20261017-r2",
+    "scope": "this_conversation_only",
+    "session_status": "closed_after_scoped_writeback",
+    "project_or_other_worklines_stopped": false,
+    "last_completed_design_revision": "HC-DESIGN-03-20261017-r29",
+    "last_completed_design_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+    "next": {
+      "entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_HERE.md",
+      "workline_entry": "worklines/half_chaos/START_HERE.txt",
+      "next_task": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL",
+      "next_task_status": "NOT_STARTED_DOCUMENT_ONLY",
+      "action": "Prepare a concrete source-linked implementation/observation and later-run scope proposal from this finite matrix, including lawful admission dependencies, exact-boundary evidence options, affected PD/DS obligations, excluded missing positives and stop conditions. Documentation only; do not edit business code, run engine or bypass gates. Shared rules remain main-owned.",
+      "read_order": [
+        "protect receiving conversation unreturned work first",
+        "newest root entry/CURRENT_HANDOFF and own CURRENT_STATE",
+        "current collaboration index/applicable body and PROJECT_WORK_AGREEMENT",
+        "WORKING0/8.51 and relevant full8.40/8.42/8.44/8.49/8.50; CONFIRMATIONS/SOURCE_INDEX",
+        "ASSERTION_EVIDENCE_MATRIX and unchanged initialization/action/observation/acceptance/source inventory data",
+        "latest main/standard actual differences and receiver-owned READ_RECEIPTS; original confirmations by scope",
+        "NEXT_ACTIONS and RETURN_TO_MAIN"
+      ],
+      "guards": [
+        "prefer actual newest repository state over this closeout snapshot; do not repeat completed tasks",
+        "future concrete implementation/observation and later-run proposal is document-only; no business edits/import/run/admission bypass",
+        "continue is not candidate approval; withdrawn proposals stay withdrawn; new pending is not confirmed",
+        "shared conflicts to main, independent work may continue; never write other receivers receipts"
+      ]
+    },
+    "new_gameplay_rule_approvals": 0,
+    "engine_runs": 0,
+    "all_existing_game_specs": "UNRUN",
+    "actual_read_scope": "Complete matching session_closeout objects from RETURN/CURRENT_STATE and complete actual session_closeout_r2_observation receipt only; no WORKING8.51/full-source or raw matrix audit."
   }
 }

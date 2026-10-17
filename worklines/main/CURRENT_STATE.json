@@ -1,15 +1,15 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "H15_prestart_consistent_restore_candidate_pending_M04_scoped_confirmation_received",
+  "status": "H15_H06_prestart_unused_restore_confirmed_graduation_source_review_next",
   "resume_date_local": "2026-10-17",
   "timezone": "Asia/Shanghai",
-  "base_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+  "base_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
   "user_authorization": "Current user requests main/four-line continuation, latest increments since1.53 and existing account recovery; continued quota recovery is not candidate approval. Same-scope main maintenance and GitHub incremental handoff inherited.",
   "current_adjudication_record": "ADJUDICATION.json",
-  "adjudication_version": "1.60",
-  "design_stage": "S1.42",
-  "pending_decision": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+  "adjudication_version": "1.61",
+  "design_stage": "S1.43",
+  "pending_decision": null,
   "pending_decision_approved": false,
   "shared_coordination": "SHARED_COORDINATION.json",
   "source_map": "SOURCE_MAP.json",
@@ -27,7 +27,7 @@
     "other_dialogue_unreturned_work": "unknown; must not overwrite",
     "historical_1_48_did_not_overwrite_current_1_49": true,
     "original_1_49_preserved_at_commit": "26736f643754ae22731a7540874835ddf4e21409",
-    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Preserve prior53 confirmations and all previous policies; add exact independent M04 shared approval as54th. H15 old proposal remains withdrawn; new consistent-snapshot candidate pending, no current assent approval inferred.",
+    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Prior54 confirmations and all older confirmed policy modules unchanged; one exact approved prestart-unused restore exception. Original training-loss proposal stays withdrawn. No implementation/runtime or other-rule expansion.",
     "original_1_50_preserved_at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
     "original_1_51_preserved_at_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
     "original_1_54_preserved_at_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -35,8 +35,8 @@
   },
   "worklines": {
     "main": {
-      "next": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-      "status": "one_complete_candidate_pending"
+      "next": "REVIEW-H15-H06-GRADUATION-CROSSING-SOURCE-20261017",
+      "status": "prestart_rule_confirmed_source_review_next_no_active_candidate"
     },
     "standard": {
       "next": "H10 atomic damage source review in standard",
@@ -55,19 +55,54 @@
     },
     "half_chaos": {
       "next": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL",
-      "source_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+      "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
       "new_current_return_found": true,
-      "actual_live_dialogue_progress": "r29 reports64 evidence obligations,63 direct checkpoint rows and1 abstract-only; all64 specsUNRUN, runtime-ready replays0; next documentation-only implementation/observation scope proposal. Actual1.59 withdrawal coordination and guarded M04 adoption receipts observed.",
-      "session_scope": "r28 ongoing independent work",
-      "next_task_status": "document_only_scope_proposal_not_started"
+      "actual_live_dialogue_progress": "Only prior conversation closed after r29; next documentation-only implementation/observation scope proposal NOT_STARTED. All64 specsUNRUN, project/other worklines not stopped.",
+      "session_scope": "this_conversation_only_closeout_r2",
+      "next_task_status": "NOT_STARTED_DOCUMENT_ONLY",
+      "session_closeout": {
+        "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
+        "revision": "HC-SESSION-CLOSEOUT-20261017-r2",
+        "scope": "this_conversation_only",
+        "session_status": "closed_after_scoped_writeback",
+        "project_or_other_worklines_stopped": false,
+        "last_completed_design_revision": "HC-DESIGN-03-20261017-r29",
+        "last_completed_design_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+        "next": {
+          "entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_HERE.md",
+          "workline_entry": "worklines/half_chaos/START_HERE.txt",
+          "next_task": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL",
+          "next_task_status": "NOT_STARTED_DOCUMENT_ONLY",
+          "action": "Prepare a concrete source-linked implementation/observation and later-run scope proposal from this finite matrix, including lawful admission dependencies, exact-boundary evidence options, affected PD/DS obligations, excluded missing positives and stop conditions. Documentation only; do not edit business code, run engine or bypass gates. Shared rules remain main-owned.",
+          "read_order": [
+            "protect receiving conversation unreturned work first",
+            "newest root entry/CURRENT_HANDOFF and own CURRENT_STATE",
+            "current collaboration index/applicable body and PROJECT_WORK_AGREEMENT",
+            "WORKING0/8.51 and relevant full8.40/8.42/8.44/8.49/8.50; CONFIRMATIONS/SOURCE_INDEX",
+            "ASSERTION_EVIDENCE_MATRIX and unchanged initialization/action/observation/acceptance/source inventory data",
+            "latest main/standard actual differences and receiver-owned READ_RECEIPTS; original confirmations by scope",
+            "NEXT_ACTIONS and RETURN_TO_MAIN"
+          ],
+          "guards": [
+            "prefer actual newest repository state over this closeout snapshot; do not repeat completed tasks",
+            "future concrete implementation/observation and later-run proposal is document-only; no business edits/import/run/admission bypass",
+            "continue is not candidate approval; withdrawn proposals stay withdrawn; new pending is not confirmed",
+            "shared conflicts to main, independent work may continue; never write other receivers receipts"
+          ]
+        },
+        "new_gameplay_rule_approvals": 0,
+        "engine_runs": 0,
+        "all_existing_game_specs": "UNRUN",
+        "actual_read_scope": "Complete matching session_closeout objects from RETURN/CURRENT_STATE and complete actual session_closeout_r2_observation receipt only; no WORKING8.51/full-source or raw matrix audit."
+      }
     },
     "ui": {
-      "next": "B8 蓝牙权限未允许（可再次授权），尚未创建",
-      "source_commit": "904faf67feea90913139d2c38c7c83dfb6fd3dbe",
-      "published_candidate_created": false,
+      "next": "B8-v1 蓝牙权限未允许（可再次授权），已发布待具体审批",
+      "source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
+      "published_candidate_created": true,
       "new_return_or_receiver_receipt_found": true,
-      "actual_live_dialogue_progress": "Actual UI metadata records exact B7-v1 static artwork approved by 审批通过 at19:05:29. Main recognizes report only, no visual/runtime acceptance.",
-      "latest_metadata_observed_at_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+      "actual_live_dialogue_progress": "UI published exact B8-v1 candidate and editable layers, pending specific review. Main metadata only; B7 prior approval preserved, no visual/runtime acceptance.",
+      "latest_metadata_observed_at_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
       "candidate_approved": false,
       "last_approved_artwork": {
         "version": "B7-v1",
@@ -91,15 +126,15 @@
   "verification": {
     "record_and_candidate_source_equivalence_checked": true,
     "document_and_pointer_checks": "VALIDATION.json",
-    "new_rule_confirmations": 0,
+    "new_rule_confirmations": 1,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "runtime_acceptance": false,
     "implementation": false,
     "old_evidence": "inherited original scope only; not rerun",
-    "received_other_line_confirmed_designs": 1,
-    "shared_rule_confirmation_from_mode_returns": 1,
-    "current_phase_candidate_count": 1,
+    "received_other_line_confirmed_designs": 0,
+    "shared_rule_confirmation_from_mode_returns": 0,
+    "current_phase_candidate_count": 0,
     "current_phase_engine_runs": 0
   },
   "scoring": {
@@ -113,25 +148,26 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "是否确认三个模式采用这一限定处理：回溯到首次启动前，训练与次数一起恢复为未启动/未使用；之后可在原有合法窗口重新启动？",
+  "next_action": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": "partial; VALIDATION.json limitation_audit; source and document checks only, no independent/runtime verification",
-  "last_confirmed_decision": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-  "confirmed_at_local": "2026-10-17T15:30:17+08:00",
+  "last_confirmed_decision": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+  "confirmed_at_local": "2026-10-17T20:56:40+08:00",
   "resume_after_quota_at_local": "2026-10-16T15:23:28+08:00",
   "resume_after_quota_is_new_candidate_approval": false,
   "decision_index": "PENDING_DECISION.json",
   "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
-  "publication_parent_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+  "publication_parent_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
   "unread_concurrent_returns": [],
-  "latest_return_observation_commit": "a917ae40958cd986a24dad3b490188a10fcb6c82",
+  "latest_return_observation_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
   "current_phase": {
-    "user_instruction": "可以，就这样，进行下一步",
-    "at_local": "2026-10-17T19:58:34+08:00",
-    "interpretation": "Continue source-scope correction and next work; not approval of this newly prepared exact candidate.",
-    "candidate_approved": false,
-    "main_direct_new_confirmations": 0,
-    "external_shared_received": 1,
+    "user_instruction": "我同意",
+    "at_local": "2026-10-17T20:56:40+08:00",
+    "candidate_approved": true,
+    "confirmed_candidate": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+    "main_direct_new_confirmations": 1,
+    "external_shared_received": 0,
     "game_code_changes": 0,
     "engine_runs": 0
   },
@@ -198,11 +234,10 @@
     }
   },
   "resolved_decision": {
-    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
+    "id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "approved": true,
-    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
+    "confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017"
   },
-  "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
   "source_scope_correction": {
     "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
     "path": "candidates/h15-h06-prestart-training-restore/v1.json",
@@ -335,5 +370,51 @@
       "status": "new_shared_confirmation_report_received_exact_candidate_correspondence_and_canonical_main_adoption_queued",
       "main_canonical_adopted_this_phase": false
     }
+  },
+  "latest_concurrent_ui_metadata": {
+    "source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51",
+    "read_scope": "CURRENT_STATE revision/complete next_task/last_approval/runtime metadata and RETURN record/current_state_and_approval_delta/validation/next metadata only. Main has not viewed image, source layers or evidence bodies.",
+    "revision": "UI-B8-PENDING-20261017",
+    "record_id": "UI-B8-CANDIDATE-20261017",
+    "candidate": {
+      "id": "B8",
+      "subject": "蓝牙权限未允许（可再次授权）",
+      "version": "B8-v1",
+      "candidate_created": true,
+      "candidate_approved": false,
+      "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
+      "image": "candidates/B8/v1/lezi-bluetooth-B8-v1.png",
+      "source_folder": "candidates/B8/v1",
+      "next_action": "展示本张实际图，由用户具体审批／修改；不自动批准或生成下一张。"
+    },
+    "last_approved": {
+      "version": "B7-v1",
+      "sha256": "1ab53dbaec7936e720835425ec117e431a2bbf5385410ced7d898d222a03f74a",
+      "approved_at": "2026-10-17T19:05:29+08:00",
+      "user_statement": "审批通过"
+    },
+    "source_workline_reported_validation": {
+      "baseline_files_verified": 105,
+      "existing_work_files_verified": 29,
+      "restore_baseline_files": 105,
+      "restore_work_files": 44,
+      "restore_unique_assets": 117,
+      "restore_network_asset_bytes": 0,
+      "restored_B8_exact_recomposition": true,
+      "B4_B5_recomposition_changed_pixels": 0,
+      "B8_changed_pixels_from_B7": 35352,
+      "B8_protected_pixels_changed": 0,
+      "dimensions": [
+        852,
+        1846
+      ],
+      "font_modified": false,
+      "actual_B8_image_viewed": true,
+      "new_background_estimation": false,
+      "whole_page_regenerated": false
+    },
+    "main_visual_or_source_recomposition_acceptance": false,
+    "runtime": "not_run",
+    "approved": false
   }
 }
