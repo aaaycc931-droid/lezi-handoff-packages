@@ -7,10 +7,10 @@
     "standard",
     "ui"
   ],
-  "base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
-  "phase": "H15_H06_death_failure_exception_confirmed",
-  "current_breakpoint": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
-  "status": "confirmed_design_not_implemented_prestart_source_review_next",
+  "base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+  "phase": "H15_H06_prestart_source_review_complete_candidate_pending",
+  "current_breakpoint": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+  "status": "source_review_and_candidate_prepared_not_confirmed_not_implemented",
   "confirmed_delta_this_session": [
     {
       "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -52,7 +52,7 @@
     }
   ],
   "pending_delta": [
-    "H15 pre-start target snapshots and graduation/flight/reward history crossings remain separate",
+    "H15 prestart minimal ongoing branch has an explicit pending candidate; graduation/flight/reward and other crossings remain separate",
     "complete remaining hero/mutation public effects, resource and relation map",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
@@ -76,7 +76,8 @@
     "SOURCE_MAP.json",
     "START_HERE.txt",
     "VALIDATION.json",
-    "../../candidates/h15-h06-failed-training-restore/v1.json"
+    "../../candidates/h15-h06-failed-training-restore/v1.json",
+    "../../candidates/h15-h06-prestart-training-restore/v1.json"
   ],
   "approval_sources": [
     {
@@ -137,7 +138,7 @@
     "r23-r25 twelve replay plans covering64 old PD/DS specs are allUNRUN per source report; main did not read full prefixes or run engine"
   ],
   "shared_blocks": "SHARED_COORDINATION.json",
-  "next": "核对H06目标快照早于H15唯一训练启动时，快照状态与已用机会例外的覆盖关系；不自动选择保留或取消后来的训练。",
+  "next": "是否同意这条限定方案适用于三个模式：合法回溯到训练启动前，就撤销这次训练，但唯一机会仍已用、不能重开？",
   "messages_sent": false,
   "other_lines_adoption_verified": "Earlier exact scopes only, no new1.57 receipts.",
   "scoring_frozen": true,
@@ -154,13 +155,13 @@
     "CONF-STD-M07-POOL-EXCLUSION-20261016"
   ],
   "ordinary_scoped_confirmations_received_this_phase": [],
-  "publication_parent_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+  "publication_parent_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "unread_concurrent_returns": [],
-  "new_rule_confirmations_this_phase": 1,
+  "new_rule_confirmations_this_phase": 0,
   "current_phase_changes": [
-    "Exact shared H15/H06 pre-graduation death-failure exception confirmed; repeated current assent counted once.",
-    "Candidate, canonical policy, public-field source matrix, state and pointers synchronized; existing continuous-live snapshot clause preserved.",
-    "Receive UI B6 recovery/B7 pending metadata only and ordinary path-scale candidate/actual latest scoped1.56 receipt; no approval or visual/runtime adoption."
+    "Prestart source review completed; minimal active/live/ungraduated branch has one explicit pending three-mode candidate.",
+    "Prior53 confirmation records and all confirmed policy modules retained unchanged.",
+    "Received half-chaos r27 declaration/observation metadata and actual scoped1.57 failure adoption; no dataset/gameplay/runtime acceptance."
   ],
   "external_shared_confirmations_received_this_phase": [],
   "increment_since_1_53": {
@@ -262,7 +263,7 @@
     "implementation_status": "confirmed_design_not_implemented",
     "engine_runs": 0
   },
-  "source_review_pointer": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
+  "source_review_pointer": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
   "latest_ui_stage_received": {
     "source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
     "observed_at_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
@@ -328,5 +329,46 @@
     },
     "scope": "return current phase/changes/candidate guards and actual READ_RECEIPTS latest_scoped_update only; not full candidate/workdraft or runtime",
     "new_main_candidate_approval": false
-  }
+  },
+  "current_pending_candidate": {
+    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "status": "pending_explicit_user_confirmation",
+    "candidate": "candidates/h15-h06-prestart-training-restore/v1.json",
+    "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+    "task": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+    "is_new_user_candidate": true,
+    "approved": false
+  },
+  "latest_half_chaos_stage_received": {
+    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+    "revision": "HC-DESIGN-03-20261017-r27",
+    "read_scope": "Complete selected r27 phase/current-breakpoint/current-stage-changes/next-task/actual-validation/replay-action-data/main1.57-consumption metadata; complete actual latest_by_source.main_H15_H06_failure receiver object and r27 source/reconciliation rows. No full WORKING8.48 or raw action-data audit.",
+    "reported_data": {
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+      "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
+      "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
+      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "working_section": "8.48",
+      "planned_replays": 12,
+      "normal_main_request_declarations": 100,
+      "skill_request_declarations": 10,
+      "expected_accepted_skills": 6,
+      "expected_rejected_skills": 4,
+      "semantic_observation_checkpoints": 210,
+      "new_game_specifications": 0,
+      "old_game_specifications": 64,
+      "all_game_specs": "UNRUN",
+      "engine_runs": 0,
+      "protocol_or_executable_adapter": false,
+      "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+    },
+    "game_runs": 0,
+    "main_dataset_independently_verified": false,
+    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
+  },
+  "new_confirmation_this_phase": null,
+  "new_confirmation_scope_note": "new_confirmation field preserves previous1.57 original confirmation; this phase adds0.",
+  "confirmed_delta_this_session_scope_note": "Inherited prior confirmation history only; current1.58 source-review phase confirms no new rule. See new_rule_confirmations_this_phase=0."
 }

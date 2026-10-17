@@ -1,17 +1,16 @@
 {
-  "schema": "lezi.main.document_validation.v9",
-  "base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+  "schema": "lezi.main.validation.v1",
+  "base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "checks": {
-    "original52_confirmation_records_unchanged": true,
-    "exactly_one_new_confirmation": true,
+    "prior53_confirmation_records_unchanged": true,
     "earlier_unified_core_unchanged": true,
-    "earlier_hero_policies_unchanged": true,
-    "earlier_mutation_policies_unchanged": true,
-    "all_H15_H11_timing_unchanged": true,
-    "exact_candidate_proposal_unchanged": true,
-    "exact_approved_scope_and_exclusions_preserved": true,
-    "candidate_explicitly_approved": true,
-    "no_active_main_candidate": true,
+    "all_confirmed_hero_policies_unchanged": true,
+    "all_mutation_policies_unchanged": true,
+    "all_timing_policies_unchanged": true,
+    "previous_failure_candidate_not_modified": true,
+    "candidate_approved": false,
+    "prestart_candidate_pending": true,
+    "new_rule_confirmations": 0,
     "ordinary_path_scale_candidate_pending": true,
     "UI_B7_stays_pending": true,
     "protocol_index_untouched": true,
@@ -21,100 +20,99 @@
     "complete_key": false
   },
   "limitation_audit": {
-    "audit_trigger": "Explicit current-user three-mode H15/H06 death-failure exception approval, repeated assent and independent UI/standard candidate updates",
+    "audit_trigger": "H15/H06 prestart source-priority interaction, previous continuation assent and actual r27 receiver evidence",
     "risk_level": "high_project_rule_source; reversible_document_only",
     "known_facts": [
-      "Two visible current-user agreement statements follow the same concrete three-mode failure-crossing question; no intervening different approval object.",
-      "Confirmed exception preserves actual pre-graduation death-failed training through guarded H06 restore; other histories remain separate.",
-      "UI reports B6 exact recovery/existing approval and B7 pending; main read metadata only.",
-      "Standard actual nested latest_scoped_update adopts prior H15 display and recognizes prior H02/M04 source receipt; path dragon-scale candidate is pending."
+      "Historical §9.14 explicitly restores snapshot trainee/progress/lifecycle authority state; snapshot without training has no earlier trainee or cultivation to restore.",
+      "Later three-mode core explicitly prevents already-used training opportunity becoming unused through H06.",
+      "No later retrieved source explicitly makes a newly started active training relation persist when target snapshot predates its start.",
+      "Current1.57 approval only covers actual pregraduation death-failure with earlier active-training snapshot; does not approve this branch."
     ],
     "user_statements": [
       {
         "quote": "我同意",
-        "at_local": "2026-10-17T15:30:17+08:00",
-        "scope": "exact preceding three-mode H15/H06 failure-crossing proposal"
-      },
-      {
-        "quote": "我同意",
-        "at_local": "2026-10-17T17:57:09+08:00",
-        "scope": "same scope reaffirmation, counted once"
+        "at_local": "2026-10-17T18:49:06+08:00",
+        "interpretation": "authorizes previously announced prestart source review; no prestart rule approval inferred"
       }
     ],
     "claim_register": [
       {
-        "claim": "failure persistence exception approved",
-        "type": "user_statement",
-        "source": "current visible statements and candidate at338acdf7c359b18e8a246a92354712b899e0f996",
-        "verification": "V2"
+        "claim": "Snapshot state and unique-use nonrefund are both explicit sources",
+        "type": "source_fact",
+        "verification": "V2 scoped source correspondence"
       },
       {
-        "claim": "previous52 confirmations and related policies untouched",
-        "type": "document_fact",
-        "source": "before/after scoped object comparison",
-        "verification": "source correspondence plus same-assistant checks"
+        "claim": "Restore no training while leaving opportunity spent is the recommended minimal composition",
+        "type": "ai_interpretation_candidate",
+        "verification": "V1 same-assistant reasoning; pending user confirmation"
       },
       {
-        "claim": "UI recovery/verification succeeded",
-        "type": "source_workline_report",
-        "source": "UI CURRENT_STATE/RETURN_TO_MAIN metadata only",
-        "verification": "report checked, not independent visual/source-byte verification"
+        "claim": "r27 reports prepared declarations and adopts guarded1.57 failure exception",
+        "type": "source_workline_report_and_actual_receiver_record",
+        "verification": "Selected return metadata and complete actual scoped receiver object; no raw data/runtime verification"
       }
     ],
     "ai_interpretations": [
-      "Both agreement messages target the same pending question; they do not authorize other candidates or two distinct rule changes.",
-      "This is one specific logical H15 failure exception; no universal irreversible-training rule or physical storage layout is chosen."
+      "推荐按快照恢复训练关系，仅保留已有明确非回溯例外（机会已用）；避免另增一个将未来训练带回过去的例外。此为组合判断及具体候选，不冒充新增原始用户确认。"
     ],
     "assumptions": [
-      "Original H06/H15 legality, window, target snapshot, replay and barrier guards hold; actual pre-graduation trainee death caused this failure."
+      "Only an originally legal H06/H15 match and target snapshot, original10-second/current-not-in-check/preflight/same-body nonattack noncheck replay and existing barriers satisfied. Target S predates the unique successful H15 start; at S no training ever started. Since S this start succeeded, same trainee is still alive/actively training/ungraduated at restore. No intervening death/failure/graduation, H11 barrier or unresolved binding/control transformation."
     ],
     "unknowns": [
-      "H06 snapshots before original start and graduation/reward restoration.",
-      "Other failure kinds, source-specific history and complete phase/key/search-clock semantics.",
-      "Actual runtime/privacy behavior and recipient adoption of current1.57."
+      "graduation/completed flight/reward history crossings",
+      "other failure kinds or time skills",
+      "new hero pool, start window, in-check permission, invalid/empty-pool request costs/feedback",
+      "M07 same-begin, other-mode H11 space rules",
+      "physical storage/complete public key/phase/clock/implementation/runtime"
     ],
     "competing_explanations": [
-      "A later consent might target a different proposal if such a proposal intervened; none is visible in this thread.",
-      "Old full snapshot restoration could otherwise restart same training, but the user now specifically chose this guarded exception."
+      {
+        "status": "not_selected_not_approved",
+        "description": "保留启动后持续有效的训练关系与当下培养进度，虽S早于启动。",
+        "tradeoff": "需要再定义训练关系/进度不随快照恢复的额外例外；不能由唯一机会不返还自动推出，也不能混用持续训练的原9.14条款。"
+      }
     ],
     "falsification_conditions": [
-      "User corrects confirmation scope or selects a different treatment.",
-      "New policy changes continuous-live restore, other histories or H06 eligibility.",
-      "A dependency/source check reveals a conflicting newer explicit confirmation."
+      "A newer explicit original source settles this prestart branch differently.",
+      "A target/dependency change introduces death, graduation, shuffle or another unresolved source transformation.",
+      "User selects preservation or corrects proposal/assent scope."
     ],
-    "verification_status": "partial_V2_explicit_confirmation_and_sources_V1_document_checks_no_runtime",
-    "action_boundary": "13 current main/candidate/root project-document paths; no other-line drafts/receipts, asset bytes, game code, runtime, deploy or messages.",
+    "verification_status": "partial_V2_sources_V1_document_correspondence_no_independent_runtime",
+    "action_boundary": "Main-owned documents, one new pending candidate and root entry pointers only.",
     "failure_conditions": [
-      "Count repeated assent as multiple distinct confirmations.",
-      "Apply failure exception to all progress or graduation/prestart branches.",
-      "Approve ordinary path-scale or UI B7 from this consent.",
-      "Treat metadata, offline fixtures or source checks as runtime acceptance."
+      "Treat continuation assent as prestart rule approval.",
+      "Cancel existing continuous training when S already contains it.",
+      "Extend prestart candidate to graduation/reward/failure or other time skills.",
+      "Claim raw r27 dataset validation, gameplay legality or engine acceptance from metadata."
     ],
-    "residual_risk": "Document correspondence is not independent game/visual/privacy verification; remaining source histories unresolved.",
-    "next_validation_action": "Read pre-start target-snapshot sources without automatically deciding preservation or cancellation of later training.",
+    "residual_risk": "Concrete runtime/legal replay fixtures and complete lifecycle/phase/public-key interfaces remain unverified.",
+    "next_validation_action": "Await user's selection on this exact bounded three-mode prestart candidate, then record design confirmation separately from implementation and runtime.",
     "evidence_coverage": {
       "actual_categories": [
-        "full current candidate",
-        "current user approvals",
-        "unchanged prior H15/H06 source review per source diff",
-        "current state and confirmed module scope",
-        "full UI current/return metadata",
-        "standard selected return and actual latest nested receiver scope"
+        "complete current H06/H15 entries",
+        "historical §9.14",
+        "complete seven-section later core delta",
+        "existing1.57 exact policy correspondence",
+        "r27 selected return and actual scoped receiver objects"
       ],
-      "source_date": "2026-10-17",
       "not_covered": [
-        "new legal fixture/runtime run",
-        "raw UI assets/recomposition",
-        "full standard candidate/workdraft"
-      ],
-      "impact": "Record the exact rule only; preserve independent candidate decisions and unverified runtime."
+        "raw REPLAY_ACTION_DATA",
+        "full half-chaos WORKING8.48",
+        "engine/client/visual execution"
+      ]
     },
     "action_resilience": {
       "maximum_exposure": "13 reversible project-document paths",
-      "stop_conditions": "New target-path change, conflicting approval or publication failure",
-      "recovery": "Ordinary scoped restore from parentbf36f79303455bc154c697a20a9cb5ecdfda3560 preserving later unrelated updates",
-      "unknown_unknown_boundary": "No game execution or irreversible product change"
+      "stop_conditions": "Conflicting target/source changes or publication failure",
+      "recovery": "Scoped new commit from parent preserving unrelated concurrent changes"
     }
   },
-  "remote_verification": "Requires successful tree/commit/nonforced expected-head update and immutable content readback; this file alone is not publication or runtime evidence."
+  "remote_verification": {
+    "required_after_publication": [
+      "all13 immutable tree blobs equal prepared local Git hashes",
+      "compare paths exactly match own write set",
+      "read back root/main entries, current state, pending candidate and fieldmap bytes"
+    ],
+    "status": "required_post_publication_not_claimed_in_advance"
+  }
 }

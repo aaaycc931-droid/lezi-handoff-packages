@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.shared_coordination.v1",
-  "base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
-  "status": "H15_H06_death_failure_exception_confirmed",
+  "base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+  "status": "H15_H06_prestart_source_review_complete_candidate_pending",
   "shared_confirmations": {
     "already_document_adopted": 7,
     "new_this_session": 1,
@@ -443,7 +443,7 @@
   ],
   "independent_worklines": {
     "standard": "Guarded M04 path dragon-scale continuation candidate remains unapproved; original-source review and H15 display reception reported. No full candidate or runtime acceptance by main.",
-    "half_chaos": "r26 reports opening identities/shuffle witnesses prepared and offline checked; all game specsUNRUN; next declarative replay actions/request order/observation checkpoints. Main metadata read only, no raw-data acceptance.",
+    "half_chaos": "r27 action declarations/checkpoints prepared and offline bookkeeping checked per report. All game specsUNRUN. Actual1.57 guarded H15/H06 failure exception adopted only within half-chaos. Main no raw-data/runtime acceptance.",
     "ui": "B6 exact recovery and existing approval reported restored; B7-v1 actual published image awaits its own user review. Main received metadata only."
   },
   "delivery_vs_adoption": {
@@ -586,6 +586,26 @@
         "actual_adopted_scope": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017 within half_chaos legal successful-start display only",
         "full_main_adjudication_read": false,
         "history_restore_or_runtime_adopted": false
+      },
+      "latest_main1_57_failure_adoption": {
+        "receipt_source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+        "path": "worklines/half_chaos/READ_RECEIPTS.json#/latest_by_source/main_H15_H06_failure",
+        "main_source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+        "actual_receipt": {
+          "source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
+          "actual_reading": "full original confirmation, complete original reviewed candidate and complete confirmed policy; latest1.57 current status/next metadata",
+          "source_path": "worklines/main/PENDING_DECISION.json#/confirmation",
+          "adopted": "half_chaos only within original legal H06+H15 pregraduation-death-failure snapshot guard",
+          "not_adopted": [
+            "snapshot before original training start",
+            "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
+            "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
+            "M07 same-begin or other-mode H11 spatial rules",
+            "full phase/key/terminal/clock implementation or runtime/scoring/NET"
+          ],
+          "implementation": false
+        },
+        "scope": "Actual half-chaos-only adoption of exact1.57 pregraduation-death-failure exception; not full1.57 or other histories/runtime"
       }
     },
     "standard": {
@@ -647,9 +667,9 @@
     "policy": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
     "implementation": false
   },
-  "publication_parent_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+  "publication_parent_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "unread_concurrent_returns": [],
-  "current_phase_new_confirmations": 1,
+  "current_phase_new_confirmations": 0,
   "current_phase_ordinary_confirmation_received": null,
   "current_phase_external_shared_confirmations_received": 0,
   "increment_since_1_53": {
@@ -752,11 +772,13 @@
     "engine_runs": 0
   },
   "next_source_review": {
-    "id": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
-    "status": "source_review_next_not_new_rule_candidate",
-    "task": "核对H06目标快照早于H15唯一训练启动时，快照状态与已用机会例外的覆盖关系；不自动选择保留或取消后来的训练。",
-    "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-    "is_new_user_candidate": false
+    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "status": "pending_explicit_user_confirmation",
+    "candidate": "candidates/h15-h06-prestart-training-restore/v1.json",
+    "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+    "task": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+    "is_new_user_candidate": true,
+    "approved": false
   },
   "standard_session_closeout_received": {
     "commit": "47d90c098924b0c2ac980e91afa31e6127fe0ddd",
@@ -774,38 +796,49 @@
   },
   "H15_H06_source_review": {
     "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-    "new_rule_confirmations": 1,
+    "new_rule_confirmations": 0,
     "continuous_live_slice_source_checked": true,
     "failed_crossing_pending": null,
     "confirmed_failure_exception": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "prestart_graduation_and_other_histories_pending": true
+    "prestart_graduation_and_other_histories_pending": true,
+    "prestart_candidate": {
+      "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+      "status": "pending_explicit_user_confirmation",
+      "candidate": "candidates/h15-h06-prestart-training-restore/v1.json",
+      "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+      "task": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+      "is_new_user_candidate": true,
+      "approved": false
+    }
   },
   "latest_half_chaos_stage": {
-    "source_commit": "115350d1f8264143a1381aae61e9837492067a04",
-    "revision": "HC-DESIGN-03-20261017-r26",
-    "read_scope": "return current phase/change/data/validation metadata and complete selected main receiver row only; no full WORKING8.47 or dataset audit",
+    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+    "revision": "HC-DESIGN-03-20261017-r27",
+    "read_scope": "Complete selected r27 phase/current-breakpoint/current-stage-changes/next-task/actual-validation/replay-action-data/main1.57-consumption metadata; complete actual latest_by_source.main_H15_H06_failure receiver object and r27 source/reconciliation rows. No full WORKING8.48 or raw action-data audit.",
     "reported_data": {
-      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
-      "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
-      "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
-      "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
-      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+      "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
+      "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
+      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "working_section": "8.48",
       "planned_replays": 12,
-      "unique_initial_worlds": 10,
-      "nonroyals_per_plan": 30,
-      "draws_per_plan": 28,
-      "logical_draws_checked": 336,
-      "stored_unique_draws": 280,
-      "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "engine_initialization_applied": false,
+      "normal_main_request_declarations": 100,
+      "skill_request_declarations": 10,
+      "expected_accepted_skills": 6,
+      "expected_rejected_skills": 4,
+      "semantic_observation_checkpoints": 210,
+      "new_game_specifications": 0,
+      "old_game_specifications": 64,
       "all_game_specs": "UNRUN",
-      "game_runs": 0,
-      "next": "NEXT-HC-REPLAY-ACTION-DATA"
+      "engine_runs": 0,
+      "protocol_or_executable_adapter": false,
+      "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
     },
     "game_runs": 0,
     "main_dataset_independently_verified": false,
-    "next": "NEXT-HC-REPLAY-ACTION-DATA"
+    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
   },
   "ui_stage_received": {
     "source_commit": "9b91d71bfb2f3ca4401abab28384e27b10e4d72c",
@@ -872,5 +905,14 @@
     },
     "scope": "return current phase/changes/candidate guards and actual READ_RECEIPTS latest_scoped_update only; not full candidate/workdraft or runtime",
     "new_main_candidate_approval": false
+  },
+  "current_candidate": {
+    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "status": "pending_explicit_user_confirmation",
+    "candidate": "candidates/h15-h06-prestart-training-restore/v1.json",
+    "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+    "task": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+    "is_new_user_candidate": true,
+    "approved": false
   }
 }

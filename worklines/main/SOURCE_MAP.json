@@ -1,6 +1,6 @@
 {
   "schema": "lezi.main.source_map.v1",
-  "base_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+  "base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "current_adjudication": "ADJUDICATION.json",
   "source_record_version": "1.49",
   "source_record_identity": {
@@ -287,8 +287,8 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.57",
-  "latest_maintenance_base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+  "current_record_version": "1.58",
+  "latest_maintenance_base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
     "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
@@ -356,31 +356,33 @@
     }
   },
   "latest_half_chaos_read_scope": {
-    "source_commit": "115350d1f8264143a1381aae61e9837492067a04",
-    "revision": "HC-DESIGN-03-20261017-r26",
-    "read_scope": "return current phase/change/data/validation metadata and complete selected main receiver row only; no full WORKING8.47 or dataset audit",
+    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+    "revision": "HC-DESIGN-03-20261017-r27",
+    "read_scope": "Complete selected r27 phase/current-breakpoint/current-stage-changes/next-task/actual-validation/replay-action-data/main1.57-consumption metadata; complete actual latest_by_source.main_H15_H06_failure receiver object and r27 source/reconciliation rows. No full WORKING8.48 or raw action-data audit.",
     "reported_data": {
-      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
-      "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
-      "task_completed": "NEXT-HC-INITIALIZATION-WITNESS-DATA",
-      "handoff_source_commit": "76a4279586ca40db88198e40d371de32c3766b11",
-      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
-      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+      "status": "DECLARATIVE_DATA_PREPARED_OFFLINE_CHECKED_ENGINE_UNRUN",
+      "task_completed": "NEXT-HC-REPLAY-ACTION-DATA",
+      "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "working_section": "8.48",
       "planned_replays": 12,
-      "unique_initial_worlds": 10,
-      "nonroyals_per_plan": 30,
-      "draws_per_plan": 28,
-      "logical_draws_checked": 336,
-      "stored_unique_draws": 280,
-      "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "engine_initialization_applied": false,
+      "normal_main_request_declarations": 100,
+      "skill_request_declarations": 10,
+      "expected_accepted_skills": 6,
+      "expected_rejected_skills": 4,
+      "semantic_observation_checkpoints": 210,
+      "new_game_specifications": 0,
+      "old_game_specifications": 64,
       "all_game_specs": "UNRUN",
-      "game_runs": 0,
-      "next": "NEXT-HC-REPLAY-ACTION-DATA"
+      "engine_runs": 0,
+      "protocol_or_executable_adapter": false,
+      "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
     },
     "game_runs": 0,
     "main_dataset_independently_verified": false,
-    "next": "NEXT-HC-REPLAY-ACTION-DATA"
+    "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING"
   },
   "latest_fieldmap_sources": [
     {
@@ -414,17 +416,41 @@
       "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b"
     }
   ],
-  "publication_parent_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+  "publication_parent_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "unread_concurrent_returns": [],
   "current_phase_candidate_source": {
-    "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "path": "candidates/h15-h06-failed-training-restore/v1.json",
-    "approved": true,
-    "source_baseline": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure"
+    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "path": "candidates/h15-h06-prestart-training-restore/v1.json",
+    "approved": false,
+    "source_baseline": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+    "sources": [
+      {
+        "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+        "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
+        "read_scope": "complete §9.14 only"
+      },
+      {
+        "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+        "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
+        "git_blob_sha": "1207f415a2681aafcd20df7dd9b35d03a0276a61",
+        "read_scope": "complete seven sections; later timing/cost/display supersessions preserved"
+      },
+      {
+        "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+        "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+        "git_blob_sha": "5651e16752410f7ae7869f0ff9a15601f9de72dc",
+        "read_scope": "complete H06 and H15 entries only"
+      },
+      {
+        "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+        "path": "worklines/main/ADJUDICATION.json",
+        "git_blob_sha": "3bf18590e03fe9feb0de1f1c3c7264e07bb2adcb",
+        "read_scope": "current H15 display, successful-start cost and exact1.57 pregraduation-death-failure policy; prior confirmations retained"
+      }
+    ]
   },
-  "confirmed_record_maintenance_note": "1.57 records the user's15:30 exact three-mode H15/H06 failure-exception approval, reaffirmed17:57, counted once. All prior52 confirmations/core/timing/display/cost policies untouched; other histories pending.",
+  "confirmed_record_maintenance_note": "1.58 adds source review/pending candidate and scoped r27 receipt, no new confirmation; prior53 records/all confirmed policies preserved.",
   "concurrent_source_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
   "latest_standard_shared_confirmation_sources": [
     {

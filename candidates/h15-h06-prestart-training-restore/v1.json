@@ -1,0 +1,122 @@
+{
+  "schema": "lezi.main.design_candidate.v1",
+  "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+  "status": "pending_explicit_user_confirmation",
+  "approved": false,
+  "prepared_date_local": "2026-10-17",
+  "source_baseline_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+  "mode_ids": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "title": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+  "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+  "availability_guard": "Only an originally legal H06/H15 match and target snapshot, original10-second/current-not-in-check/preflight/same-body nonattack noncheck replay and existing barriers satisfied. Target S predates the unique successful H15 start; at S no training ever started. Since S this start succeeded, same trainee is still alive/actively training/ungraduated at restore. No intervening death/failure/graduation, H11 barrier or unresolved binding/control transformation.",
+  "source_facts": [
+    "Historical §9.14 explicitly restores snapshot trainee/progress/lifecycle authority state; snapshot without training has no earlier trainee or cultivation to restore.",
+    "Later three-mode core explicitly prevents already-used training opportunity becoming unused through H06.",
+    "No later retrieved source explicitly makes a newly started active training relation persist when target snapshot predates its start.",
+    "Current1.57 approval only covers actual pregraduation death-failure with earlier active-training snapshot; does not approve this branch."
+  ],
+  "proposal": [
+    "合法H06回到启动前快照S时，H15训练关系随快照恢复为尚无训练：不保留后来秘密绑定、培养进度或后续培养资格；棋子依S正常恢复，本条不将它视为死亡。",
+    "本局唯一训练机会仍为已用；不能再次选种、随机征募或启动，不因重走原先回合而返还机会。",
+    "已共同知道的成功启动事实、选定兵种和机会已用仍依已确认展示及记忆规则保留；不新增实时有效/失败状态或实际进度提示。",
+    "回溯及重走本身不触发H15培养；无训练关系时，未来己方正常begin也不继续这次已被回溯撤销的训练。"
+  ],
+  "rationale": "推荐按快照恢复训练关系，仅保留已有明确非回溯例外（机会已用）；避免另增一个将未来训练带回过去的例外。此为组合判断及具体候选，不冒充新增原始用户确认。",
+  "alternative": {
+    "status": "not_selected_not_approved",
+    "description": "保留启动后持续有效的训练关系与当下培养进度，虽S早于启动。",
+    "tradeoff": "需要再定义训练关系/进度不随快照恢复的额外例外；不能由唯一机会不返还自动推出，也不能混用持续训练的原9.14条款。"
+  },
+  "abstract_timeline": [
+    {
+      "step": "S：H06上一己方正式回合行动前",
+      "H15": "尚未启动，无受训绑定；训练机会当时未用"
+    },
+    {
+      "step": "H06行动后，下个H15正常回合开始结算后",
+      "H15": "合法成功启动炮训练，绑定秘密棋C，进度0/6，机会已用；之后正常行动"
+    },
+    {
+      "step": "H06当前正式回合",
+      "guard": "前10秒、未受将，且原预检/同棋非进攻不将军重走等全部条件满足"
+    },
+    {
+      "step": "候选恢复S结果",
+      "H15": "C按S的普通棋状态恢复；无训练绑定/培养，不重抽，机会仍已用。双方记忆不抹除。"
+    }
+  ],
+  "counterexample_boundaries": [
+    {
+      "case": "S与当前都含同一次持续存活未毕业训练",
+      "result": "不是本候选；原9.14有限有效条款仍恢复S同棋与S进度。"
+    },
+    {
+      "case": "受训棋毕业前实际死亡失败，S含其此前活跃训练",
+      "result": "不是本候选；已确认1.57失败例外继续有效。"
+    },
+    {
+      "case": "从未成功启动过，当前与S都无训练",
+      "result": "不凭回溯制造一次已用；启动资格按原来源处理。"
+    },
+    {
+      "case": "H06预检确无合法重走而不提交",
+      "result": "不改变原棋盘/训练/资源；不是已成功恢复S的分支。"
+    },
+    {
+      "case": "S后已毕业、飞行消失、已死亡或跨H11等",
+      "result": "不适用此最小候选，仍按各自确认/待核分支，不套用本候选。"
+    }
+  ],
+  "not_confirmed": [
+    "graduation/completed flight/reward history crossings",
+    "other failure kinds or time skills",
+    "new hero pool, start window, in-check permission, invalid/empty-pool request costs/feedback",
+    "M07 same-begin, other-mode H11 space rules",
+    "physical storage/complete public key/phase/clock/implementation/runtime"
+  ],
+  "preceding_user_instruction": {
+    "quote": "我同意",
+    "at_local": "2026-10-17T18:49:06+08:00",
+    "interpretation": "authorizes previously announced prestart source review; no prestart rule approval inferred"
+  },
+  "presentation_question": "是否同意这条限定方案适用于三个模式：合法回溯到训练启动前，就撤销这次训练，但唯一机会仍已用、不能重开？",
+  "sources": [
+    {
+      "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md",
+      "git_blob_sha": "6a448b95d992e9e3903bb9aa3b9e201a65be043b",
+      "read_scope": "complete §9.14 only"
+    },
+    {
+      "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/branch/H15_TRAINING_RULE_DELTA_2026-10-13.md",
+      "git_blob_sha": "1207f415a2681aafcd20df7dd9b35d03a0276a61",
+      "read_scope": "complete seven sections; later timing/cost/display supersessions preserved"
+    },
+    {
+      "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+      "path": "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "git_blob_sha": "5651e16752410f7ae7869f0ff9a15601f9de72dc",
+      "read_scope": "complete H06 and H15 entries only"
+    },
+    {
+      "commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
+      "path": "worklines/main/ADJUDICATION.json",
+      "git_blob_sha": "3bf18590e03fe9feb0de1f1c3c7264e07bb2adcb",
+      "read_scope": "current H15 display, successful-start cost and exact1.57 pregraduation-death-failure policy; prior confirmations retained"
+    }
+  ],
+  "verification": {
+    "source": "V2 scoped source correspondence",
+    "proposal": "V1 same-assistant reasoning; pending user selection",
+    "independent": false,
+    "engine_runs": 0,
+    "implementation": false
+  },
+  "scoring_frozen": true,
+  "NET": "paused"
+}

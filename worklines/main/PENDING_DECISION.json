@@ -1,20 +1,22 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "H15_H06_failure_exception_confirmed_source_review_next_no_active_candidate",
+  "status": "H15_H06_prestart_candidate_pending",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
     "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
-    "status": "source_review_next_not_new_rule_candidate",
-    "task": "核对H06目标快照早于H15唯一训练启动时，快照状态与已用机会例外的覆盖关系；不自动选择保留或取消后来的训练。",
-    "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-    "is_new_user_candidate": false
+    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "status": "pending_explicit_user_confirmation",
+    "candidate": "candidates/h15-h06-prestart-training-restore/v1.json",
+    "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+    "task": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+    "is_new_user_candidate": true,
+    "approved": false
   },
   "unresolved_questions": [
-    "H15 pre-start target snapshots and graduation/flight/reward history crossings remain separate",
+    "H15 prestart minimal ongoing branch has an explicit pending candidate; graduation/flight/reward and other crossings remain separate",
     "complete remaining hero/mutation public effects, resource and relation map",
     "all special-space public readers and eligible source-phase mappings",
     "source-specific H04/H14 clocks and H16 special-path tier; no universal counter normalization",
@@ -23,11 +25,15 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": null,
-  "candidate_prepared_for_presentation": false,
-  "approval_scope_guard": "Only guarded H15 pre-graduation trainee-death failure under H06. Prestart/graduation/other failures/history and ordinary path-scale/UI B7 remain independent.",
-  "new_candidate_approved": true,
-  "candidate_presentation": "Exact failure-crossing proposal approved; repeated user assent counted once.",
+  "current_candidate": {
+    "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+    "path": "candidates/h15-h06-prestart-training-restore/v1.json",
+    "approved": false
+  },
+  "candidate_prepared_for_presentation": true,
+  "approval_scope_guard": "Only an originally legal H06/H15 match and target snapshot, original10-second/current-not-in-check/preflight/same-body nonattack noncheck replay and existing barriers satisfied. Target S predates the unique successful H15 start; at S no training ever started. Since S this start succeeded, same trainee is still alive/actively training/ungraduated at restore. No intervening death/failure/graduation, H11 barrier or unresolved binding/control transformation.",
+  "new_candidate_approved": false,
+  "candidate_presentation": "是否同意这条限定方案适用于三个模式：合法回溯到训练启动前，就撤销这次训练，但唯一机会仍已用、不能重开？",
   "resolved_candidate": {
     "id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
     "path": "candidates/h15-h06-failed-training-restore/v1.json",
@@ -158,5 +164,10 @@
     ],
     "implementation_status": "confirmed_design_not_implemented",
     "engine_runs": 0
+  },
+  "latest_continuation": {
+    "quote": "我同意",
+    "at_local": "2026-10-17T18:49:06+08:00",
+    "interpretation": "authorizes previously announced prestart source review; no prestart rule approval inferred"
   }
 }

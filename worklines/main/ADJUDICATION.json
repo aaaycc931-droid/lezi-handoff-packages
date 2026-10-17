@@ -1,6 +1,6 @@
 {
   "record_type": "adjudication_reference_selection",
-  "record_version": "1.57",
+  "record_version": "1.58",
   "project": "乐子象棋",
   "decision_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
@@ -2198,7 +2198,7 @@
     }
   ],
   "three_mode_adjudication_draft": {
-    "stage": "S1.39",
+    "stage": "S1.40",
     "status": "core_thresholds_confirmed_remaining_adaptation_draft",
     "authorization": {
       "user_quote": "我同意",
@@ -2256,11 +2256,13 @@
     ],
     "session_status": "main_round_closed_pending_handoff",
     "next_work_item": {
-      "id": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
-      "status": "source_review_next_not_new_rule_candidate",
-      "task": "核对H06目标快照早于H15唯一训练启动时，快照状态与已用机会例外的覆盖关系；不自动选择保留或取消后来的训练。",
-      "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-      "is_new_user_candidate": false
+      "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+      "status": "pending_explicit_user_confirmation",
+      "candidate": "candidates/h15-h06-prestart-training-restore/v1.json",
+      "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+      "task": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+      "is_new_user_candidate": true,
+      "approved": false
     }
   },
   "unified_adjudication_core": {
@@ -3172,9 +3174,9 @@
   },
   "current_main_work": {
     "primary_reader": "AI",
-    "phase": "H15_H06_death_failure_exception_confirmed_prestart_source_review_next",
+    "phase": "H15_H06_prestart_source_review_complete_candidate_pending",
     "current_rules": "this record plus inherited LEZI-SHARED-DESIGN-2026-10-13-r1",
-    "rule_delta": "One current-user shared H15/H06 pre-graduation death-failure persistence exception; prior52 confirmation records/continuous-live restore/display/timing/start-cost unchanged.",
+    "rule_delta": "No new confirmed rule. Prior53 confirmations and all confirmed policies unchanged; prepare one bounded prestart snapshot candidate.",
     "completed": [
       "H15 current information baseline source recheck",
       "two design dispatches prepared and byte checked",
@@ -3223,7 +3225,8 @@
       "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
       "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
       "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
-      "H15 current-version common display explicitly confirmed2026-10-17; corresponding public/private source-field contract applied; no implementation/runtime."
+      "H15 current-version common display explicitly confirmed2026-10-17; corresponding public/private source-field contract applied; no implementation/runtime.",
+      "H15/H06 prestart target source review completed; bounded pending candidate prepared; half-chaos r27 scoped data/actual receipt metadata received."
     ],
     "pending": [
       "complete public repetition field map and concrete identity-relation representation, H15 display choice confirmed, complete encoding still pending",
@@ -3249,11 +3252,13 @@
     "new_engine_tests": 0,
     "runtime_acceptance": false,
     "next_action": {
-      "id": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
-      "status": "source_review_next_not_new_rule_candidate",
-      "task": "核对H06目标快照早于H15唯一训练启动时，快照状态与已用机会例外的覆盖关系；不自动选择保留或取消后来的训练。",
-      "source": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-      "is_new_user_candidate": false
+      "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+      "status": "pending_explicit_user_confirmation",
+      "candidate": "candidates/h15-h06-prestart-training-restore/v1.json",
+      "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+      "task": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+      "is_new_user_candidate": true,
+      "approved": false
     },
     "limitation_audit_status": "partial",
     "audit": {
@@ -4770,12 +4775,21 @@
     "audit_current_phase_reference": "VALIDATION.json#/limitation_audit",
     "H15_H06_source_review": {
       "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review",
-      "status": "failure_crossing_confirmed_other_interfaces_pending",
+      "status": "prestart_source_review_complete_candidate_pending",
       "existing_source_slice": "same continuous live ungraduated trainee restores snapshot original body/progress; no new randomization; used opportunity remains used",
       "pending_candidate": null,
       "unrelated_histories_unresolved": true,
-      "new_rule_confirmations": 1,
-      "confirmed_failure_exception": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017"
+      "new_rule_confirmations": 0,
+      "confirmed_failure_exception": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+      "prestart_candidate": {
+        "id": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+        "status": "pending_explicit_user_confirmation",
+        "candidate": "candidates/h15-h06-prestart-training-restore/v1.json",
+        "source_review": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_review",
+        "task": "H06回到H15唯一训练启动前：恢复无训练状态，已用机会不返还",
+        "is_new_user_candidate": true,
+        "approved": false
+      }
     }
   },
   "ordinary_hidden_chase_classification_contract": {

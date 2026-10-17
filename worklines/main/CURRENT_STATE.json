@@ -1,15 +1,15 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "H15_H06_death_failure_exception_confirmed_prestart_review_next",
+  "status": "H15_H06_prestart_source_review_complete_candidate_pending",
   "resume_date_local": "2026-10-17",
   "timezone": "Asia/Shanghai",
-  "base_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+  "base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "user_authorization": "Current user requests main/four-line continuation, latest increments since1.53 and existing account recovery; continued quota recovery is not candidate approval. Same-scope main maintenance and GitHub incremental handoff inherited.",
   "current_adjudication_record": "ADJUDICATION.json",
-  "adjudication_version": "1.57",
-  "design_stage": "S1.39",
-  "pending_decision": null,
+  "adjudication_version": "1.58",
+  "design_stage": "S1.40",
+  "pending_decision": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
   "pending_decision_approved": false,
   "shared_coordination": "SHARED_COORDINATION.json",
   "source_map": "SOURCE_MAP.json",
@@ -27,7 +27,7 @@
     "other_dialogue_unreturned_work": "unknown; must not overwrite",
     "historical_1_48_did_not_overwrite_current_1_49": true,
     "original_1_49_preserved_at_commit": "26736f643754ae22731a7540874835ddf4e21409",
-    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Prior52 confirmations and all earlier policies preserved. Add one exact approved H15/H06 death-failure exception; no second approval from repeat assent, no UI/B7 or M04 path-scale candidate approval.",
+    "active_record_changed_only_for_authorized_confirmation_and_next_candidate": "Prior53 confirmations and all confirmed rules preserved. Prestart source review and one pending candidate only; no fresh approval inferred.",
     "original_1_50_preserved_at_commit": "dd467a1ccce63c9ce8136422d3b0fa06038b2654",
     "original_1_51_preserved_at_commit": "50ad0d433f866fff41693cc495ec5d69c7724580",
     "original_1_54_preserved_at_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -35,8 +35,8 @@
   },
   "worklines": {
     "main": {
-      "next": "REVIEW-H15-H06-PRESTART-SNAPSHOT-SOURCE-20261017",
-      "status": "failure_exception_confirmed_no_active_candidate"
+      "next": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
+      "status": "candidate_pending"
     },
     "standard": {
       "next": "SHARED-M04-PATH-DRAGON-SCALE-CONTINUATION",
@@ -54,12 +54,12 @@
       }
     },
     "half_chaos": {
-      "next": "NEXT-HC-REPLAY-ACTION-DATA",
-      "source_commit": "115350d1f8264143a1381aae61e9837492067a04",
+      "next": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
+      "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
       "new_current_return_found": true,
-      "actual_live_dialogue_progress": "r26 selected metadata: initial identity/shuffle witness data prepared and offline checked per report; main has not audited raw dataset. All game specs UNRUN, next declarative actions/request order/observation checkpoints.",
+      "actual_live_dialogue_progress": "r27 reports12 replay action declarations,100 normal main/10 skill requests/210 semantic observation checkpoints. Data bookkeeping checked per report; main metadata-only. All64 game specsUNRUN; next source-field mapping. Actual1.57 guarded failure adoption received.",
       "session_scope": "r26 resumed after old conversation-only closeout",
-      "next_task_status": "source_reports_ready_for_next_data_preparation"
+      "next_task_status": "declarative_data_prepared_runtime_unrun"
     },
     "ui": {
       "next": "B7-v1 首次连接失败／重试图，等待具体审批",
@@ -84,7 +84,7 @@
   "verification": {
     "record_and_candidate_source_equivalence_checked": true,
     "document_and_pointer_checks": "VALIDATION.json",
-    "new_rule_confirmations": 1,
+    "new_rule_confirmations": 0,
     "new_game_code_changes": 0,
     "new_engine_tests": 0,
     "runtime_acceptance": false,
@@ -92,7 +92,7 @@
     "old_evidence": "inherited original scope only; not rerun",
     "received_other_line_confirmed_designs": 0,
     "shared_rule_confirmation_from_mode_returns": 0,
-    "current_phase_candidate_count": 0,
+    "current_phase_candidate_count": 1,
     "current_phase_engine_runs": 0
   },
   "scoring": {
@@ -106,7 +106,7 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "核对H06目标快照早于H15唯一训练启动时，快照状态与已用机会例外的覆盖关系；不自动选择保留或取消后来的训练。",
+  "next_action": "是否同意这条限定方案适用于三个模式：合法回溯到训练启动前，就撤销这次训练，但唯一机会仍已用、不能重开？",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": "partial; VALIDATION.json limitation_audit; source and document checks only, no independent/runtime verification",
   "last_confirmed_decision": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -115,20 +115,16 @@
   "resume_after_quota_is_new_candidate_approval": false,
   "decision_index": "PENDING_DECISION.json",
   "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
-  "publication_parent_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+  "publication_parent_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "unread_concurrent_returns": [],
-  "latest_return_observation_commit": "7d456190d5683cfca56a2707730f428a4a33c279",
+  "latest_return_observation_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
   "current_phase": {
-    "user_instruction": "我同意（15:30）；我同意（17:57重申）",
-    "at_local": "2026-10-17T17:57:09+08:00",
-    "confirmed_at_local": "2026-10-17T15:30:17+08:00",
-    "candidate_approved": true,
-    "confirmed_candidate": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-    "confirmation_id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-    "confirmation_count": 1,
-    "main_direct_new_confirmations": 1,
+    "user_instruction": "我同意",
+    "at_local": "2026-10-17T18:49:06+08:00",
+    "interpretation": "continue previously announced prestart source review",
+    "candidate_approved": false,
+    "main_direct_new_confirmations": 0,
     "external_shared_received": 0,
-    "ordinary_scoped_received": 0,
     "game_code_changes": 0,
     "engine_runs": 0
   },
