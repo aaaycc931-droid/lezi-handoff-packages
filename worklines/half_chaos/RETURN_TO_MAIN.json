@@ -2,48 +2,22 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
-  "revision": "HC-DESIGN-03-20261017-r28",
-  "phase": "read_only_observation_field_boundary_mapping_completed",
+  "base_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
+  "revision": "HC-DESIGN-03-20261017-r29",
+  "phase": "finite_assertion_evidence_matrix_prepared_all64_unrun",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "For each of the64 existing PD/DS obligations, connect relevant declared checkpoints and existing field groups, separating source-supported data readiness, exact-boundary/implementation blockers and missing natural positives; prepare a finite minimal acceptance readiness summary, no business edits or engine run.",
-  "confirmed_delta": [],
+  "current_breakpoint": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL",
+  "confirmed_delta": [
+    "existing external original M04 path-scale A consumed within half_chaos guard only; not a new local approval"
+  ],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
-  "changes": {
-    "working_sections": [
-      "0",
-      "8.49"
-    ],
-    "new_mapping": {
-      "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
-      "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
-      "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
-      "status": "STATIC_FIELD_BOUNDARY_MAP_PREPARED_RUNTIME_BLOCKED_UNRUN",
-      "task_completed": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
-      "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
-      "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "working_section": "8.49",
-      "field_groups": 22,
-      "checkpoint_bindings": 210,
-      "request_correspondences": 110,
-      "observation_gaps": 7,
-      "source_files_retrieved_exact": 17,
-      "semantic_whole_file_audit": false,
-      "runtime_observation_count": 0,
-      "all_game_specs": "UNRUN",
-      "next": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX"
-    },
-    "scope": "static observation fields, source locations and timing/evidence gaps only",
-    "preserved_unchanged_objects": [
-      "CONFIRMATIONS.json",
-      "ENGINE_SOURCE_INVENTORY.json",
-      "INITIALIZATION_WITNESS_DATA.json",
-      "REPLAY_ACTION_DATA.json"
-    ],
-    "gameplay_delta": 0
-  },
+  "changes": [
+    "ASSERTION_EVIDENCE_MATRIX.json64 existing obligations /63 direct checkpoint rows /1 abstract-only; no new specs",
+    "explicit missing natural/negative/protocol stimuli and source/boundary blockers",
+    "one actual shared M04 path-scale guarded confirmation consumed; no H21 in existing12 plans"
+  ],
   "source_and_confirmation_scope": {
     "source_inventory": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
     "actual_engine_inspection_source": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
@@ -60,24 +34,10 @@
     "H02_M04_shared_candidate": "metadata only, not adopted"
   },
   "actual_validation": {
-    "mapped_checkpoints": 210,
-    "request_correspondences": 110,
-    "field_groups": 22,
-    "observation_gaps": 7,
-    "source_files_exact": 17,
-    "source_anchors_checked": 65,
-    "boundary_status_counts": {
-      "SOURCE_FIELDS_LOCATED_EXACT_BOUNDARY_PARTIAL": 200,
-      "NON_MAIN_RETURN_SOURCE_LOCATED_RUNTIME_BLOCKED": 6,
-      "REQUIRED_SOURCE_REFUSAL_NOT_IMPLEMENTED_IN_REVIEWED_PATH": 4
-    },
-    "new_game_specs": 0,
-    "engine_imports": 0,
-    "engine_runs": 0,
-    "client_runs": 0,
-    "all64_specs": "UNRUN",
-    "data_sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
-    "verification": "V2 exact fixed source and anchors; V1 semantic boundary inference; not independent or runtime"
+    "matrix": "offline structural/reference and source correspondence checks; see VALIDATION",
+    "game_engine_runs": 0,
+    "game_specs": "all64 UNRUN",
+    "new_specs": 0
   },
   "unrun": [
     "all12 planned replays and64 existing specs",
@@ -138,25 +98,27 @@
       ]
     }
   ],
-  "next_independent_task": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX",
+  "next_independent_task": {
+    "id": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL",
+    "status": "NOT_STARTED_DOCUMENT_ONLY",
+    "action": "Prepare a concrete source-linked implementation/observation and later-run scope proposal from this finite matrix, including lawful admission dependencies, exact-boundary evidence options, affected PD/DS obligations, excluded missing positives and stop conditions. Documentation only; do not edit business code, run engine or bypass gates. Shared rules remain main-owned."
+  },
   "scoring_frozen": true,
   "NET": "paused",
-  "implementation_status": "static_source_field_mapping_only_no_adapter_or_runtime",
+  "implementation_status": "business edits/imports/runs0; admission unchanged; matrix is not executable adapter",
   "delivery": {
-    "transport": "GitHub connector fixed files",
-    "recipient_reading_verified": null,
-    "recipient_adoption_verified": null,
-    "no_other_receiver_receipt_prefilled": true,
-    "other_worklines_continue": true
+    "transport": "GitHub connector incremental stage writeback",
+    "containing_commit": null,
+    "receiver_read_or_adopted": null,
+    "note": "Resolve actual publication commit from Git history after successful write/readback; no future SHA prefilled"
   },
   "publication_limits": "private full protocols/raw archives remain excluded; current design bodies and exact existing public sources available; no claim of full historical/runtime migration",
-  "source_baseline_commit": "9bb47d5ce4100147eaf57fb653ef1c83d39b416e",
+  "source_baseline_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
   "concurrent_main_source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
   "current_stage_changes": [
-    "22 existing-source field groups bind all210 declared checkpoints and110 requests",
-    "17 exact source files recovered/read within recorded scope; no business imports or calls",
-    "7 observation gaps: pre-effect end event, absent generic exact atom-close, no D01 internal events, nonpersistent current death inventory, retry/error envelope, raw client pair scope and explicit journal clock tick",
-    "EI01—07 and64 old spec/12 replay rows unchanged; no mode admission or runtime evidence"
+    "ASSERTION_EVIDENCE_MATRIX.json64 existing obligations /63 direct checkpoint rows /1 abstract-only; no new specs",
+    "explicit missing natural/negative/protocol stimuli and source/boundary blockers",
+    "one actual shared M04 path-scale guarded confirmation consumed; no H21 in existing12 plans"
   ],
   "prior_H14_stage_return": "main dd467a1 actual scoped stage/excerpt receipt covers H14/H16; body/spec/runtime adoption not inferred",
   "remote_reconciliation": {
@@ -383,7 +345,7 @@
       }
     }
   },
-  "publication_parent_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
+  "publication_parent_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
   "previous_r21_return": {
     "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "phase": "M01_M08_D01_coverage_audit",
@@ -643,12 +605,7 @@
     "main_pending_approved": false,
     "new_shared_rule_consumption_from_main_recheck": 0
   },
-  "actual_receiver_status": {
-    "observed_at_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
-    "receiver_source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
-    "scope": "r27 stage metadata and actual guarded1.57 failure-consumption receipt; no raw dataset/legality/independent runtime acceptance",
-    "current_stage_r28_reading_or_adoption": null
-  },
+  "actual_receiver_status": "main now has actual r28 limited stage/field-map/OG report receipt; no raw map or independent source/runtime audit; r29 unknown",
   "concurrent_standard_retry_r23": {
     "publication_head": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
     "actual_base_tree_sha": "0e5ceb0ee0379328be25dd3d9ab54ab73e8b8cbe",
@@ -983,7 +940,7 @@
       "runtime_reproduced": false
     }
   ],
-  "last_completed_design_revision": "HC-DESIGN-03-20261017-r28",
+  "last_completed_design_revision": "HC-DESIGN-03-20261017-r29",
   "last_completed_design_commit": null,
   "session_closeout": {
     "revision": "HC-SESSION-CLOSEOUT-20261017-r1",
@@ -1039,7 +996,7 @@
     "publication_scope": "own fixed handoff documents only; no ZIP/full archive duplication, other receiver receipt prefill, business repo changes or auto-message",
     "historical_only_current_session_resumed": true
   },
-  "next_task_status": "NOT_STARTED",
+  "next_task_status": "NOT_STARTED_DOCUMENT_ONLY",
   "last_completed_design_commit_note": "Resolve from Git history after publication.",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
@@ -1060,7 +1017,7 @@
     "game_runs": 0,
     "next": "NEXT-HC-REPLAY-ACTION-DATA"
   },
-  "new_shared_confirmation_consumption": 0,
+  "new_shared_confirmation_consumption": 1,
   "concurrent_H02_M04_confirmation": {
     "id": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
     "source_workline": "standard",
@@ -1240,5 +1197,102 @@
     "actual_receiver_scope": "main read r27 stage report metadata and actual1.57 failure-consumption receipt only; no raw action data/complete source audit",
     "action_or_mapping_data_changed": false,
     "other_workline_changes_preserved": true
+  },
+  "assertion_evidence_matrix": {
+    "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+    "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+    "sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
+    "status": "FINITE_MATRIX_PREPARED_ALL64_UNRUN_RUNTIME_BLOCKED",
+    "task_completed": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX",
+    "source_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
+    "working_section": "8.50",
+    "existing_specifications": 64,
+    "direct_checkpoint_rows": 63,
+    "abstract_only_rows": 1,
+    "unique_direct_checkpoints": 210,
+    "new_game_specs": 0,
+    "runtime_ready_replays": 0,
+    "all_game_specs": "UNRUN",
+    "next": "NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL"
+  },
+  "r29_M04_path_scale_confirmation_consumed": {
+    "id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
+    "source_workline": "standard",
+    "source_commit": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7",
+    "source_path": "worklines/standard/rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+    "source_blob": "a6dd8730c418cfc804e23a11662ef96cb1b5832b",
+    "reviewed_candidate": {
+      "commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
+      "path": "worklines/standard/candidates/m04-path-dragon-scale/v1.json",
+      "git_blob_sha": "cb16411c92d664f734a0374c39262326caaef7fa"
+    },
+    "read_scope": "full original confirmation, full original reviewed candidate at bf36, full latest candidate; complete current M04 and H21 clauses only, not full heroes/mutations or H10 latest review",
+    "adopted_scope": "half_chaos only under exact original normal M04 revealed true ground rook / one revealed path body with one H21 scale / unprotected lawful endpoint guard; path lives in place after consuming scale and original attack completes",
+    "not_adopted": [
+      "H02 special attack/activation, endpoint multiple defenses/dragon claw ordering",
+      "permanent or other immunity survival and different shields",
+      "hidden/reveal-defection/temporary control/H10/royal path or terminal branches",
+      "return-space/trap/history restoration/source clocks and full search",
+      "implementation, engine PASS, independent review, scores or NET"
+    ],
+    "effect_on_12_replays": "none: all PD H04/H03 and DS D01, no H21. Do not add third hero or scale to existing data.",
+    "implementation": false,
+    "new_local_user_approval": false
+  },
+  "r29_shared_blockers": {
+    "prior_static_findings": "EI01—07 retained; no reproduced failure count",
+    "prior_observation_gaps": "OG01—07 retained",
+    "new_gameplay_rule_candidates": 0,
+    "new_data_stimulus_limits": "matrix readiness_summary.additional_stimulus_limits; do not confuse missing stimulus with rejected rule"
+  },
+  "r29_concurrent_main159_reconciliation": {
+    "source_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
+    "main_version": "1.59",
+    "own_targets_unchanged": true,
+    "actual_reading": [
+      "root START_HERE/CURRENT_HANDOFF current source routing",
+      "CURRENT_STATE current status/version/next/current_phase only",
+      "PENDING_DECISION current candidate/next/withdrawn and complete source_scope_correction object",
+      "candidate current status/approved flags and complete same source_scope_correction object; original proposal not newly audited",
+      "READ_RECEIPTS complete latest_by_source.half_chaos row including r28_stage_report; not whole main receipts",
+      "ADJUDICATION top-level and shared_hero_design_updates key inventory only; no full adjudication read"
+    ],
+    "adopted_coordination_scope": "prior prestart candidate withdrawn, no active replacement or new rule approval; source scope disputed. Do not infer cancel-plus-spent-use or blanket refund from current assent. Exact1.57 death-failure branch remains unchanged.",
+    "disputed_scope": "extension of broad no-refund wording to snapshot before first successful H15 training start; underlying historical text preserved, dependent implementation paused",
+    "source_correction_path": "worklines/main/PENDING_DECISION.json#/source_scope_correction",
+    "source_correction_original_user_exchange": [
+      {
+        "at_local": "2026-10-17T19:18:57+08:00",
+        "quote": "这怎么回事我？你的意思是那个英雄技能的回溯可以直接吞掉他的技能吗",
+        "scope": "questions practical consequence of pending candidate"
+      },
+      {
+        "at_local": "2026-10-17T19:20:16+08:00",
+        "quote": "恢复快照的时候，技能不是还没有使用的状态吗？你在说什么呢",
+        "scope": "challenges retaining use consumption when snapshot predates first start"
+      },
+      {
+        "at_local": "2026-10-17T19:22:19+08:00",
+        "quote": "是的",
+        "scope": "agrees to recheck source scope, not approval of cancellation, preserved later training or new refund policy"
+      }
+    ],
+    "underlying_historical_source_audit": "not performed in this workline this stage; main report read, no false independent source confirmation",
+    "main_next": {
+      "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
+      "status": "source_scope_reconciliation_no_active_candidate",
+      "task": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。",
+      "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_scope_correction",
+      "is_new_user_candidate": false
+    },
+    "actual_main_r28_receipt": {
+      "source_commit": "c53a6a727b797b128d7aa5651eafc7fc51f1c667",
+      "scope": "selected stage/field-map/OG metadata and actual reconciliation receipts; no raw map/source audit; independent_validation false"
+    },
+    "new_gameplay_confirmations": 0,
+    "matrix_or_replay_data_changed": false,
+    "matrix_scope_reason": "no H15 or ordinary H06 in these12 plans",
+    "other_workline_changes_preserved": true,
+    "publication_tree": "6ddca9e37c25edddc3f7c5df41faef9a2e071b80"
   }
 }

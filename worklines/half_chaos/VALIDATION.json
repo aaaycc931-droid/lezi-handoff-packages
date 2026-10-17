@@ -1,121 +1,222 @@
 {
-  "revision": "HC-DESIGN-03-20261017-r28",
-  "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
-  "publication_parent_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
-  "scope": "static existing-source field/boundary mapping only",
-  "mapped_checkpoints": 210,
-  "request_correspondences": 110,
-  "field_groups": 22,
-  "observation_gaps": 7,
-  "source_files_exact": 17,
-  "source_anchors_checked": 65,
-  "boundary_status_counts": {
-    "SOURCE_FIELDS_LOCATED_EXACT_BOUNDARY_PARTIAL": 200,
-    "NON_MAIN_RETURN_SOURCE_LOCATED_RUNTIME_BLOCKED": 6,
-    "REQUIRED_SOURCE_REFUSAL_NOT_IMPLEMENTED_IN_REVIEWED_PATH": 4
+  "revision": "HC-DESIGN-03-20261017-r29",
+  "source_commit": "18c5ba391e9e9fa40f3136b036d7866b144272c3",
+  "publication_parent_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
+  "scope": "finite64 obligation evidence matrix / external scoped confirmation; documentation-only",
+  "matrix_file": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+  "data_sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
+  "summary": {
+    "existing_specifications": 64,
+    "PD": 36,
+    "DS": 28,
+    "rows_with_declared_direct_checkpoints": 63,
+    "rows_without_natural_positive": [
+      "PD-S32"
+    ],
+    "rows_with_original_explicit_natural_or_negative_set_gaps": [
+      "PD-S31",
+      "PD-S32",
+      "DS-S16",
+      "DS-S22"
+    ],
+    "additional_stimulus_limits": {
+      "PD-S02": [
+        "No separate empty-target/two-path negative command; existing positive geometry alone does not execute those branches."
+      ],
+      "PD-S12": [
+        "Royal-leg threat is source reasoning, not a declared alternate horse request."
+      ],
+      "PD-S17": [
+        "Forbidden premature royal-threat query/command is not a declared negative stimulus."
+      ],
+      "PD-S35": [
+        "No explicit duplicate transport or conflicting actor/payload stimulus."
+      ],
+      "DS-S01": [
+        "No preparation-time player-view checkpoint before first move."
+      ],
+      "DS-S06": [
+        "Alternate ordinary rook evasion is source reasoning; main actually chosen is different."
+      ],
+      "DS-S12": [
+        "No same-command transport retransmission or actor/payload conflict stimulus."
+      ],
+      "DS-S20": [
+        "No post-main bomb resubmission stimulus to exercise refusal after window closure."
+      ]
+    },
+    "unique_direct_checkpoints": 210,
+    "existing_checkpoint_count": 210,
+    "source_field_groups": 22,
+    "observation_gaps": 7,
+    "static_findings": 7,
+    "rows_by_observation_gap": {
+      "OG02": 57,
+      "OG06": 7,
+      "OG03": 24,
+      "OG07": 24,
+      "OG01": 19,
+      "OG04": 4,
+      "OG05": 2
+    },
+    "rows_by_static_finding": {
+      "EI01": 64,
+      "EI04": 64,
+      "EI02": 17,
+      "EI03": 11,
+      "EI05": 10,
+      "EI07": 1,
+      "EI06": 1
+    },
+    "all12_replays": "BLOCKED_UNRUN",
+    "runtime_ready_replays": 0,
+    "executed_replays": 0,
+    "runtime_passed_specs": 0,
+    "all_game_specs": "UNRUN"
   },
-  "new_game_specs": 0,
+  "business_code_changes": 0,
+  "business_repo_writes": 0,
   "engine_imports": 0,
   "engine_runs": 0,
   "client_runs": 0,
+  "new_game_specs": 0,
+  "new_user_gameplay_approvals": 0,
+  "new_shared_confirmation_consumption": 1,
   "all64_specs": "UNRUN",
-  "data_sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
-  "verification": "V2 exact fixed source and anchors; V1 semantic boundary inference; not independent or runtime",
-  "mapping_file": {
-    "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
-    "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
-    "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
-    "status": "STATIC_FIELD_BOUNDARY_MAP_PREPARED_RUNTIME_BLOCKED_UNRUN",
-    "task_completed": "NEXT-HC-OBSERVATION-FIELD-MAPPING",
-    "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
-    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-    "working_section": "8.49",
-    "field_groups": 22,
-    "checkpoint_bindings": 210,
-    "request_correspondences": 110,
-    "observation_gaps": 7,
-    "source_files_retrieved_exact": 17,
-    "semantic_whole_file_audit": false,
-    "runtime_observation_count": 0,
-    "all_game_specs": "UNRUN",
-    "next": "NEXT-HC-ASSERTION-EVIDENCE-MATRIX"
-  },
   "executed_replays": 0,
-  "runtime_verified": false,
-  "business_code_changes": 0,
-  "business_repo_writes": 0,
-  "new_observer_hooks": 0,
-  "new_public_fields": 0,
-  "new_shared_confirmation_consumption": 0,
   "mode_gate_unchanged": true,
   "scoring_frozen": true,
   "NET": "paused",
+  "verification": "V2 actual source correspondence plus V1 same-assistant semantic/reference review; no independent or runtime evidence",
   "limitation_audit": {
-    "audit_trigger": "semantic checkpoint vs source capture timing can invalidate future evidence; authority/public source boundaries",
-    "risk_level": "medium_reversible",
+    "audit_trigger": "finite source/data evidence matrix and scoped shared confirmation maintenance",
+    "risk_level": "high",
+    "risk_basis": "may become downstream implementation/acceptance fact source; reversible document-only change",
     "known_facts": [
-      "exact fixed source17objects and65anchors",
-      "end event precedes shield/collapse end effects",
-      "all sources remain mode-blocked/unrun"
+      "r28 own files match immutable source; original12 plans and64 obligations retained",
+      "210 declarations mapped to22 source groups, exact boundary and implementation gaps still exist",
+      "standard new direct M04 scale confirmation applies to half_chaos under explicit guard"
     ],
     "user_statements": [
-      "continue read-only mapping; preserve pauses and no business execution"
+      "continue next data/document step; no business edits/engine runs/gate bypass",
+      "original scale source quotes 可以完成进攻 within specific three-mode A question; naming authorship remains unknown"
     ],
     "claim_register": [
       {
-        "claim": "fields are located but requested exact event boundaries are partial",
-        "type": "ai_inference",
-        "source": "fixed14b functions/types/observer and r27 checkpoints",
-        "verification": "V2 exact source plus V1 semantic timing inference, no independent/runtime"
+        "claim": "64 rows linked, 63 have direct declared checkpoints, PD-S32 lacks natural positive",
+        "type": "document_fact",
+        "source": "ACCEPTANCE_SCOPE + REPLAY_ACTION_DATA + OBSERVATION_FIELD_MAPPING",
+        "verification": "V2 exact source obligations/references; V1 row selections, referential checks only"
+      },
+      {
+        "claim": "M04 path scale completion design consumed in half_chaos guard",
+        "type": "user_statement",
+        "source": "71ea39e1f8b8664f423ed66ccbfe3f90920e75a7:worklines/standard/rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+        "verification": "V2 original approval and original candidate; no implementation/runtime"
       }
     ],
     "ai_interpretations": [
-      "200 main/end points cannot be globally reclassified as exactly observed via current event names"
+      "mapping all rows is not full assertion coverage",
+      "additional absent stimuli narrow future evidence claims, not new game rules or reproduced failures"
     ],
     "assumptions": [
-      "later permitted adapter preserves lawful source flow and handles field-level conditional stability explicitly"
+      "original unchanged declarations retain prior V1 natural-prefix reasoning; not independently re-proven here"
     ],
     "unknowns": [
-      "actual210point output/complete legality",
-      "client/wire errors and observation privacy",
-      "complete history/key/source-order"
+      "lawful runtime admission/adapter",
+      "exact main/end capture",
+      "production retry/error/view channels",
+      "remaining natural positives and full shared search/tier/order/key"
     ],
     "competing_explanations": [
-      "some individual board assertions may still be evidenced from a later unchanged state; this does not prove full earlier phase/count snapshot"
+      "some returned field values may persist through later end/begin and could support narrower future invariance proof; this stage does not assume it",
+      "missing trace means unobserved, not demonstrated wrong game result"
     ],
     "falsification_conditions": [
-      "new engine source changes event timing/fields",
-      "missing cited source anchor",
-      "future actual capture contradicts mapping"
+      "row refers to wrong turn/field or broadens original source",
+      "old obligation lost or UNRUN upgraded",
+      "shared confirmation guard not satisfied"
     ],
-    "verification_status": "partial; source-location complete in declared scope, runtime and exact-boundary gaps retained",
-    "action_boundary": "publish own static map and documents only; no hook/field/gate/business changes",
+    "verification_status": "partial: V2 source correspondence plus V1 same-assistant semantics and offline JSON references; no independent review/runtime",
+    "action_boundary": "own fixed handoff documents only; GitHub non-force incremental write; no business repo writes, engine imports/runs or new public fields",
     "failure_conditions": [
-      "event-name treated as postcondition",
-      "passive observation adds tick or callback",
-      "secret IDs leak to player views"
+      "treat field/event names as exact closure or pass",
+      "overwrite concurrent line or fabricate receiver receipt",
+      "use clock tick/defer turn end/midgame injection to collect evidence"
     ],
-    "residual_risk": "same-assistant interpretation shares source assumptions; full functions outside recorded scope and real execution not validated",
-    "next_validation_action": "For each of the64 existing PD/DS obligations, connect relevant declared checkpoints and existing field groups, separating source-supported data readiness, exact-boundary/implementation blockers and missing natural positives; prepare a finite minimal acceptance readiness summary, no business edits or engine run."
+    "residual_risk": "same assistant chose mappings; source-level evidence cannot establish actual behavior or complete privacy/search",
+    "next_validation_action": "Prepare a concrete source-linked implementation/observation and later-run scope proposal from this finite matrix, including lawful admission dependencies, exact-boundary evidence options, affected PD/DS obligations, excluded missing positives and stop conditions. Documentation only; do not edit business code, run engine or bypass gates. Shared rules remain main-owned.",
+    "recovery": "restore selected own paths from prior immutable commit in new commit; preserve later other-line changes"
   },
-  "prepublication_checks": {
-    "JSON_parse": true,
-    "all_prior_working_sections1_to8_48_exact": true,
-    "all64_spec_and12replay_rows_exact": true,
-    "confirmation_inventory_init_action_exact_blob_reuse": true,
-    "only10_own_fixed_document_paths_changed": true,
-    "business_code_changes": 0
+  "offline_checks": {
+    "status": "OFFLINE_DOCUMENT_REFERENCE_CHECKS_COMPLETED",
+    "existing_obligations_checked": 64,
+    "declared_direct_checkpoint_rows": 63,
+    "abstract_only_row": "PD-S32",
+    "existing_checkpoint_ids_checked": 210,
+    "original_replay_and_spec_rows_unchanged": true,
+    "old_WORKING_sections1_through8_49_and9_unchanged": true,
+    "all_prior_confirmation_objects_preserved": true,
+    "unchanged_input_files": [
+      "INITIALIZATION_WITNESS_DATA.json",
+      "REPLAY_ACTION_DATA.json",
+      "OBSERVATION_FIELD_MAPPING.json",
+      "ENGINE_SOURCE_INVENTORY.json",
+      "PROJECT_WORK_AGREEMENT.md"
+    ],
+    "r29_new_original_confirmation_equal_source": true,
+    "runtime_claims": "all64 UNRUN, passed0, engine0",
+    "new_game_specs": 0,
+    "semantic_review": "V1 same-assistant; not independent coverage/legality proof"
   },
-  "r28_concurrent_main_reconciliation": {
-    "source_commit": "f54249b2bc495265e13831afdaf2caf895afc91c",
-    "main_version": "1.58",
+  "r29_concurrent_main159_reconciliation": {
+    "source_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
+    "main_version": "1.59",
     "own_targets_unchanged": true,
+    "actual_reading": [
+      "root START_HERE/CURRENT_HANDOFF current source routing",
+      "CURRENT_STATE current status/version/next/current_phase only",
+      "PENDING_DECISION current candidate/next/withdrawn and complete source_scope_correction object",
+      "candidate current status/approved flags and complete same source_scope_correction object; original proposal not newly audited",
+      "READ_RECEIPTS complete latest_by_source.half_chaos row including r28_stage_report; not whole main receipts",
+      "ADJUDICATION top-level and shared_hero_design_updates key inventory only; no full adjudication read"
+    ],
+    "adopted_coordination_scope": "prior prestart candidate withdrawn, no active replacement or new rule approval; source scope disputed. Do not infer cancel-plus-spent-use or blanket refund from current assent. Exact1.57 death-failure branch remains unchanged.",
+    "disputed_scope": "extension of broad no-refund wording to snapshot before first successful H15 training start; underlying historical text preserved, dependent implementation paused",
+    "source_correction_path": "worklines/main/PENDING_DECISION.json#/source_scope_correction",
+    "source_correction_original_user_exchange": [
+      {
+        "at_local": "2026-10-17T19:18:57+08:00",
+        "quote": "这怎么回事我？你的意思是那个英雄技能的回溯可以直接吞掉他的技能吗",
+        "scope": "questions practical consequence of pending candidate"
+      },
+      {
+        "at_local": "2026-10-17T19:20:16+08:00",
+        "quote": "恢复快照的时候，技能不是还没有使用的状态吗？你在说什么呢",
+        "scope": "challenges retaining use consumption when snapshot predates first start"
+      },
+      {
+        "at_local": "2026-10-17T19:22:19+08:00",
+        "quote": "是的",
+        "scope": "agrees to recheck source scope, not approval of cancellation, preserved later training or new refund policy"
+      }
+    ],
+    "underlying_historical_source_audit": "not performed in this workline this stage; main report read, no false independent source confirmation",
+    "main_next": {
+      "id": "REVIEW-H15-H06-PRESTART-AUTHORIZATION-SCOPE-20261017",
+      "status": "source_scope_reconciliation_no_active_candidate",
+      "task": "先厘清首次启动前快照的资源恢复与原一次性约束；如需改动明确确认的条款，单列准确差分。当前不再呈交已撤下的吞技能候选。",
+      "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/prestart_scope_correction",
+      "is_new_user_candidate": false
+    },
+    "actual_main_r28_receipt": {
+      "source_commit": "c53a6a727b797b128d7aa5651eafc7fc51f1c667",
+      "scope": "selected stage/field-map/OG metadata and actual reconciliation receipts; no raw map/source audit; independent_validation false"
+    },
     "new_gameplay_confirmations": 0,
-    "new_prestart_candidate": "DECISION-H15-H06-PRESTART-SNAPSHOT-20261017",
-    "candidate_approved": false,
-    "candidate_read_scope": "status/limited index metadata only; no full original-source or candidate semantic review",
-    "actual_receiver_scope": "main read r27 stage report metadata and actual1.57 failure-consumption receipt only; no raw action data/complete source audit",
-    "action_or_mapping_data_changed": false,
-    "other_workline_changes_preserved": true
+    "matrix_or_replay_data_changed": false,
+    "matrix_scope_reason": "no H15 or ordinary H06 in these12 plans",
+    "other_workline_changes_preserved": true,
+    "publication_tree": "6ddca9e37c25edddc3f7c5df41faef9a2e071b80"
   }
 }
