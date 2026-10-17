@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "shared_M08_return_half_confirmed_H15_start_cost_prepared",
+  "status": "shared_H15_start_cost_confirmed_standard_public_empty_pool_prepared",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -26,14 +26,14 @@
   "source_preparation": "Sources are expanded at sources/standard; no user ZIP upload is needed. python3 prepare_sources.py checks current required paths and optionally restores historical source parts.",
   "source_root": "sources/standard",
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_adjudication_version": "1.52",
+  "current_adjudication_version": "1.53",
   "next_task": {
-    "id": "NEXT-SHARED-H15-TRAINING-START-ACTION-COST",
-    "subject": "H15成功启动训练是否占用正常行动",
-    "action": "用户决定合法H15成功启动是否不占正常主行动；建议不占步、照耗唯一启动机会、不追补进度，仅成功成本，原窗口/受将/空池失败等不扩围。当前未批准。",
+    "id": "NEXT-STD-H15-PUBLIC-EMPTY-POOL",
+    "subject": "普通象棋H15公开可判空池的启动请求",
+    "action": "用户决定普通象棋双方公开可确认合法候选为0的限定分支：建议启动前拒绝、不扣唯一训练机会和正常行动，原合法窗口仍开时可改选再请求；暗棋/非法失败/主线展示不外推。当前未批准。",
     "pending_is_not_approved": true,
-    "is_shared_core_candidate": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H15成功启动训练是否占用正常行动"
+    "is_shared_core_candidate": false,
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通象棋H15公开可判空池的启动请求"
   },
   "external_delivery": {
     "prepared_here": true,
@@ -43,7 +43,7 @@
     "recipient_adoption_verified": true,
     "transport": "GitHub connector",
     "routine_user_package_relay_required": false,
-    "verification_scope": "First four D01 actual main/half receipts retained. Fifth deadline now actual half-only adoption observed, main unknown. New ordinaryH03 and current shared dance main adoption not inferred."
+    "verification_scope": "Main actual first eight shared confirmations received/adopted within original scopes; new ninth H15 action-cost receipt unknown. Existing half receipt scopes retained, no fresh other-mode assumption."
   },
   "prior_main_receipt": {
     "received": true,
@@ -82,7 +82,7 @@
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
   "limitation_audit_status": "partial",
-  "verification_level": "V2 direct M08 confirmation/H05 original source facts; V1 training-cost abstract cases and limited alignment, no engine/independent review.",
+  "verification_level": "V2 explicit shared H15 success-cost confirmation and main1.53 original/receipt equality; V1 unrun timelines, no runtime/independent review",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -102,7 +102,8 @@
     "rules/confirmed/STD_H03_CROSSING_DEATH_QUOTA_CONFIRMATION_20261016.json",
     "rules/confirmed/H10_M05_DANCE_PALACE_CONFIRMATION_20261016.json",
     "rules/confirmed/M06_GENERATED_HORSE_QUALIFICATION_CONFIRMATION_20261016.json",
-    "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json"
+    "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+    "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json"
   ],
   "account_routing": {
     "this_account": [
@@ -115,10 +116,10 @@
     ]
   },
   "publication_scope": "PUBLICATION_SCOPE.json",
-  "updated_at_local": "2026-10-16T22:02:51+08:00",
-  "source_commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
-  "publication_parent_commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
-  "phase": "shared_M08_return_half_written_H05_reference_aligned_H15_cost_prepared",
+  "updated_at_local": "2026-10-17T10:02:20+08:00",
+  "source_commit": "d414c021cfc584094021bbebd5194688b465e89d",
+  "publication_parent_commit": "d414c021cfc584094021bbebd5194688b465e89d",
+  "phase": "H15_success_cost_confirmed_main153_receipts_consumed_public_empty_pool_prepared",
   "new_rule_confirmations_this_round": 1,
   "retained_source_round_confirmations": 21,
   "M04_status": "confirmed_design_not_implemented_or_tested",
@@ -143,21 +144,24 @@
       "ff3365addf3eb98a8efe89ac777481d485a9917e",
       "911cc7218a726bc3f3a15678b08713616971d419",
       "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
-      "efbbc5ccf1eb2fec8315c68668560baba9403e74"
+      "efbbc5ccf1eb2fec8315c68668560baba9403e74",
+      "d414c021cfc584094021bbebd5194688b465e89d"
     ],
     "latest_reconciliation": {
-      "parent": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
-      "remote_head_unchanged_since_prior_publication": true,
+      "parent": "d414c021cfc584094021bbebd5194688b465e89d",
+      "remote_head_unchanged_since_prior_publication": false,
+      "only_main_and_root_metadata_changed": true,
+      "ordinary_target_paths_changed_before_edit": false,
       "original_source_archives_unchanged": true
     }
   },
   "this_round_main_received_verified": null,
   "this_round_main_adopted_verified": null,
   "source_gaps": [
-    "H15 successful training-start main-action cost is current shared candidate; empty/failed request handling, exact window/check eligibility separate.",
-    "H05 opponent-side geometric reference source-aligned; special return state/full eligibility/king-safety/history still exact source interfaces.",
-    "M08 confirmed only public-ground normal-control returned branch; river/flight/temporary/source history not whole-mode accepted.",
-    "Latest receiver adoption, full fieldmap/search-clock/source ordering/runtime remain pending."
+    "Ordinary public-confirmed-empty H15 request is local pending candidate; dark/illegal/failed request quota/retry/feedback still separate.",
+    "Main H15 public training display candidate pending; prior optional progress publicity unchanged.",
+    "H15 exact window/check eligibility, M07 same-begin order, full H06/H11 and mutation source/history interfaces pending.",
+    "Full fieldmap/search-clock/source ordering/runtime not verified."
   ],
   "current_confirmation_index_count": 30,
   "M04_confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
@@ -165,8 +169,8 @@
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
   "latest_user_instruction": {
     "quote": "我同意",
-    "at_local": "2026-10-16T21:55:03+08:00",
-    "scope": "explicit_three_mode_legal_M08_public_ground_normal_control_return_half"
+    "at_local": "2026-10-17T09:56:36+08:00",
+    "scope": "explicit_three_mode_legal_H15_successful_start_main_action_cost_only"
   },
   "new_rule_confirmations_since_dispatch": 9,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
@@ -180,13 +184,13 @@
   "D01_status": "confirmed_ordinary_adaptation_and_body_not_implemented_or_tested",
   "D01_ordinary_startup_confirmed": true,
   "current_adjudication_source": {
-    "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+    "commit": "d414c021cfc584094021bbebd5194688b465e89d",
     "path": "worklines/main/ADJUDICATION.json",
-    "record_version": "1.52",
-    "git_blob_sha": "fdc333c5e264463ffee9eb3345e628aa63d10c22",
-    "read_scope": "complete shared_hero_timing_updates.H15_first_cultivation_tick and matching original project_specific_confirmation; unchanged1.51 unified core verified identical, not full historical audit"
+    "record_version": "1.53",
+    "git_blob_sha": "24d08a32e821240ebbeb35ed603fc9d296589319",
+    "read_scope": "four complete newly adopted policy modules and matching original confirmation entries/actual receipt; prior1.52 unified core and H15 timing checked equal, not full historical audit"
   },
-  "approval_context_source_commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
+  "approval_context_source_commit": "e588078339fc256a9737e08a0db8d83322262171",
   "new_shared_confirmations_adopted_this_round": 0,
   "shared_1_50_adoption": {
     "confirmation_id": "CONF-THREE-MODE-REPETITION-HISTORY-ACTUAL-DESTRUCTION-AND-TIME-PERSISTENCE-20261016",
@@ -220,10 +224,10 @@
   "D01_same_turn_repeat_policy_confirmed": true,
   "D01_same_turn_repeat_confirmation_id": "CONF-STD-D01-HOURGLASS-SAME-TURN-REPEAT-20261016",
   "D01_shared_hourglass_core_confirmed": true,
-  "pending_shared_core_candidate_id": "SHARED-H15-TRAINING-START-ACTION-COST",
+  "pending_shared_core_candidate_id": null,
   "new_local_standard_confirmations_this_round": 0,
   "new_shared_user_confirmations_this_round": 1,
-  "new_shared_user_confirmations_since_dispatch": 8,
+  "new_shared_user_confirmations_since_dispatch": 9,
   "new_rule_confirmations_since_dispatch_scope": "ordinary_local_confirmations_only",
   "D01_shared_hourglass_core_confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
   "D01_shared_hourglass_core_source": "rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
@@ -309,5 +313,18 @@
   "M08_returned_pawn_confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
   "M08_returned_pawn_source": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
   "H05_direction_reference_alignment": "opponent_normal_side_source6B2_4_public_ground_branch_rule_delta0_unrun",
-  "H15_training_start_action_cost_confirmed": false
+  "H15_training_start_action_cost_confirmed": true,
+  "H15_training_start_action_cost_confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+  "H15_training_start_action_cost_source": "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+  "observed_main_1_53_receipt": {
+    "commit": "d414c021cfc584094021bbebd5194688b465e89d",
+    "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard",
+    "received_and_adopted_ids": [
+      "CONF-THREE-MODE-D01-COLLAPSE-OWN-MAIN-ACTION-DEADLINE-20261016",
+      "CONF-THREE-MODE-H10-M05-DANCE-PALACE-20261016",
+      "CONF-THREE-MODE-M06-ORIGINAL-HORSES-NO-GENERATED-REPLACEMENT-20261016",
+      "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016"
+    ],
+    "new_TS_receipt_verified": null
+  }
 }

@@ -912,7 +912,7 @@
       },
       "new_direct_shared_confirmation_this_dialogue": true,
       "new_local_standard_confirmation": false,
-      "main_receipt_verified": null,
+      "main_receipt_verified": true,
       "other_mode_adoption_verified": null,
       "implementation": false,
       "half_chaos_receipt_verified": true,
@@ -921,6 +921,11 @@
         "path": "worklines/half_chaos/READ_RECEIPTS.json#latest_by_source.standard_shared_D01_deadline",
         "source_standard_commit": "b6eb58fa5bf599c39ba60b607f9b8eb5cbd830ce",
         "scope": "legal D01 own normal-main/landing pre-end branch only; main receipt unknown"
+      },
+      "main_adoption_verified": true,
+      "main_receipt_evidence": {
+        "commit": "d414c021cfc584094021bbebd5194688b465e89d",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard"
       }
     },
     {
@@ -958,7 +963,7 @@
       },
       "new_direct_shared_confirmation_this_dialogue": true,
       "new_local_standard_confirmation": false,
-      "main_receipt_verified": null,
+      "main_receipt_verified": true,
       "other_mode_adoption_verified": null,
       "implementation": false,
       "half_chaos_receipt_verified": true,
@@ -967,6 +972,11 @@
         "path": "worklines/half_chaos/READ_RECEIPTS.json#latest_by_source.standard_shared_H10_M05_palace",
         "source_standard_commit": "8f1663adf5d80e17ad666c6f6c3f0f7047f26d61",
         "scope": "legal half_chaos H10+M05 palace override only; main unknown"
+      },
+      "main_adoption_verified": true,
+      "main_receipt_evidence": {
+        "commit": "d414c021cfc584094021bbebd5194688b465e89d",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard"
       }
     },
     {
@@ -988,9 +998,14 @@
       },
       "new_direct_shared_confirmation_this_dialogue": true,
       "new_local_standard_confirmation": false,
-      "main_receipt_verified": null,
+      "main_receipt_verified": true,
       "other_mode_adoption_verified": null,
-      "implementation": false
+      "implementation": false,
+      "main_adoption_verified": true,
+      "main_receipt_evidence": {
+        "commit": "d414c021cfc584094021bbebd5194688b465e89d",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard"
+      }
     },
     {
       "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
@@ -1011,6 +1026,34 @@
       },
       "new_direct_shared_confirmation_this_dialogue": true,
       "new_local_standard_confirmation": false,
+      "main_receipt_verified": true,
+      "other_mode_adoption_verified": null,
+      "implementation": false,
+      "main_adoption_verified": true,
+      "main_receipt_evidence": {
+        "commit": "d414c021cfc584094021bbebd5194688b465e89d",
+        "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard"
+      }
+    },
+    {
+      "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+      "status": "user_confirmed_shared_design_written_to_standard_current_sources",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+      "origin_workline": "standard",
+      "confirmed_at_local": "2026-10-17T09:56:36+08:00",
+      "user_quote": "我同意",
+      "reviewed_candidate": {
+        "commit": "e588078339fc256a9737e08a0db8d83322262171",
+        "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "heading": "当前待决策｜H15成功启动训练是否占用正常行动"
+      },
+      "new_direct_shared_confirmation_this_dialogue": true,
+      "new_local_standard_confirmation": false,
       "main_receipt_verified": null,
       "other_mode_adoption_verified": null,
       "implementation": false
@@ -1027,9 +1070,9 @@
     "count": 30
   },
   "latest_shared_update": {
-    "at_local": "2026-10-16T22:02:51+08:00",
-    "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
-    "source": "rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json",
+    "at_local": "2026-10-17T10:02:20+08:00",
+    "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+    "source": "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
@@ -1037,7 +1080,7 @@
     ],
     "new_shared_confirmation_count": 1,
     "new_local_standard_confirmation_count": 0,
-    "shared_confirmations_originated_here_total": 8,
-    "approval_context_commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085"
+    "shared_confirmations_originated_here_total": 9,
+    "approval_context_commit": "e588078339fc256a9737e08a0db8d83322262171"
   }
 }

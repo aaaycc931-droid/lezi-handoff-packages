@@ -1,0 +1,64 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+  "confirmed_at_local": "2026-10-17T09:56:36+08:00",
+  "user_quote": "我同意",
+  "origin_workline": "standard",
+  "review_id": "SHARED-H15-TRAINING-START-ACTION-COST",
+  "source_type": "direct_user_confirmation_of_immediately_preceding_explicit_three_mode_H15_successful_start_action_cost_question",
+  "reviewed_candidate": {
+    "commit": "e588078339fc256a9737e08a0db8d83322262171",
+    "path": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+    "heading": "当前待决策｜H15成功启动训练是否占用正常行动"
+  },
+  "immediately_preceding_question": "是否同意作为三模式H15成功启动的共用规则？",
+  "presented_clauses": [
+    "H15合法成功启动训练不占正常行动，但用掉整局唯一启动机会，不补当回合培养进度。",
+    "例如T5开始结算后成功启动兵训练，进度0/2，仍可正常走一步，T6开始才首次+1。",
+    "空池或失败请求如何扣次仍另审。"
+  ],
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "Only a legally successful H15 training start in an already permitted original window, in modes where H15 is legally available; this confirmation selects main-action cost only.",
+  "policy": {
+    "guard": "Only a legally successful H15 training start in an already permitted original window, in modes where H15 is legally available; this confirmation selects main-action cost only.",
+    "successful_start_consumes_normal_main_action": false,
+    "successful_start_itself_ends_formal_turn": false,
+    "opening_start_deducts_first_normal_main_action": false,
+    "successful_start_consumes_unique_per_game_start_opportunity": true,
+    "existing_unused_normal_main_action_retained": true,
+    "previously_spent_main_action_refunded": false,
+    "new_main_action_extra_turn_or_deadline_refresh_granted": false,
+    "start_itself_grants_progress_or_catches_up_closed_begin": false,
+    "first_tick_confirmation_preserved": "CONF-THREE-MODE-H15-FIRST-CULTIVATION-TICK-20261016",
+    "secret_recruitment_selected_type_publicity_and_prior_lifecycle_rules_preserved": true,
+    "new_or_reopened_start_window_or_in_check_permission_granted": false,
+    "empty_illegal_failed_request_consumption_retry_feedback": "not_decided_by_this_confirmation"
+  },
+  "preserved": [
+    "ordinary30 and all prior shared confirmations",
+    "existing recruitment/secret trainee/type publicity, first tick, once-per-game and death/history exception source rules"
+  ],
+  "not_confirmed": [
+    "new start windows, reopening a closed window, in-check permission or missing original legality",
+    "empty/illegal/failed request consumption, refund, retry or public/private feedback",
+    "main DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017 candidate",
+    "M07 same-begin source order, complete H06/H11 state restoration, full fieldmap/search-clock or engine acceptance"
+  ],
+  "verification": {
+    "source_confirmation": "V2 direct user statement and full reviewed candidate",
+    "TS_S01_TS01_TS08": "unrun same-assistant conditional timeline/specifications",
+    "game_code_changes": 0,
+    "engine_tests": 0,
+    "independent_review": false
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  }
+}

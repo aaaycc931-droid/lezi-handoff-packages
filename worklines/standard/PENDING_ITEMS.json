@@ -1,32 +1,47 @@
 {
   "items": [
     {
-      "id": "SHARED-H15-TRAINING-START-ACTION-COST",
+      "id": "STD-H15-PUBLIC-EMPTY-POOL",
       "status": "pending_user_decision",
-      "scope": "all_legal_H15_successful_training_start_main_action_cost_only",
-      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H15成功启动训练是否占用正常行动",
+      "scope": "standard_only_publicly_determinable_legal_empty_recruitment_pool_request",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通象棋H15公开可判空池的启动请求",
       "confirmed": false,
-      "not_approved_by_M08_confirmation": true,
+      "not_approved_by_H15_success_cost_confirmation": true,
       "conditional_unrun_spec_ids": [
-        "TS01",
-        "TS02",
-        "TS03",
-        "TS04",
-        "TS05",
-        "TS06",
-        "TS07",
-        "TS08"
+        "EP01",
+        "EP02",
+        "EP03",
+        "EP04",
+        "EP05",
+        "EP06",
+        "EP07",
+        "EP08"
       ],
       "conditional_unrun_case_ids": [
-        "TS-S01"
+        "EP-S01"
       ]
     },
     {
+      "id": "MAIN-H15-PUBLIC-TRAINING-DISPLAY",
+      "status": "main_candidate_pending_no_local_duplicate",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": {
+        "commit": "d414c021cfc584094021bbebd5194688b465e89d",
+        "path": "candidates/h15-public-training-display/v1.json"
+      },
+      "confirmed": false,
+      "full_candidate_read_here": true
+    },
+    {
       "id": "MAIN-REPETITION-PUBLIC-FIELDMAP",
-      "status": "source_map_v0_2_partial_H15_reference_only_not_full_review_here",
+      "status": "source_map_v0_3_H15_candidate_metadata_only_not_full_review_here",
       "scope": "shared public resources/rights/relations and remaining pressure/source-order mapping",
       "source": {
-        "commit": "ff3365addf3eb98a8efe89ac777481d485a9917e",
+        "commit": "d414c021cfc584094021bbebd5194688b465e89d",
         "path": "worklines/main/REPETITION_PUBLIC_FIELDMAP.json"
       },
       "full_body_read_here": false
@@ -111,8 +126,8 @@
       "id": "H15-REMAINING",
       "status": "pending_design_or_source_review",
       "scope": "shared",
-      "detail": "First tick confirmed/adopted1.52; successful-start action cost now explicit shared candidate. Empty/failed candidate charge, optional public progress and M07/source-history interfaces remain pending.",
-      "start_action_cost_candidate": "SHARED-H15-TRAINING-START-ACTION-COST"
+      "detail": "First tick1.52 and successful-start main-action cost confirmed. Local ordinary public-empty request candidate pending; main display candidate and dark/illegal/failed quota/feedback/source-history separate.",
+      "start_action_cost_confirmation": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017"
     },
     {
       "id": "UI-COORDINATION",
@@ -858,6 +873,34 @@
       "prior_proposal_source": {
         "commit": "e407b119cf21a65d8f1ce6c8b6f2cac5364b9085",
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜M08明兵卒回到己半场后的走法"
+      }
+    },
+    {
+      "id": "SHARED-H15-TRAINING-START-ACTION-COST",
+      "status": "confirmed_shared_success_cost_not_implemented_or_tested",
+      "scope": "all_legal_H15_successful_training_start_main_action_cost_only",
+      "source": "rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json",
+      "confirmed": true,
+      "not_approved_by_M08_confirmation": true,
+      "conditional_unrun_spec_ids": [
+        "TS01",
+        "TS02",
+        "TS03",
+        "TS04",
+        "TS05",
+        "TS06",
+        "TS07",
+        "TS08"
+      ],
+      "conditional_unrun_case_ids": [
+        "TS-S01"
+      ],
+      "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
+      "confirmed_at_local": "2026-10-17T09:56:36+08:00",
+      "user_quote": "我同意",
+      "prior_proposal_source": {
+        "commit": "e588078339fc256a9737e08a0db8d83322262171",
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H15成功启动训练是否占用正常行动"
       }
     }
   ]

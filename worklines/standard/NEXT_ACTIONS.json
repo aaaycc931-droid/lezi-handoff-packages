@@ -1,21 +1,21 @@
 {
   "first": {
-    "id": "NEXT-SHARED-H15-TRAINING-START-ACTION-COST",
-    "subject": "H15成功启动训练是否占用正常行动",
-    "action": "用户决定合法H15成功启动是否不占正常主行动；建议不占步、照耗唯一启动机会、不追补进度，仅成功成本，原窗口/受将/空池失败等不扩围。当前未批准。",
+    "id": "NEXT-STD-H15-PUBLIC-EMPTY-POOL",
+    "subject": "普通象棋H15公开可判空池的启动请求",
+    "action": "用户决定普通象棋双方公开可确认合法候选为0的限定分支：建议启动前拒绝、不扣唯一训练机会和正常行动，原合法窗口仍开时可改选再请求；暗棋/非法失败/主线展示不外推。当前未批准。",
     "pending_is_not_approved": true,
-    "is_shared_core_candidate": true,
-    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜H15成功启动训练是否占用正常行动",
-    "decision_id": "SHARED-H15-TRAINING-START-ACTION-COST",
-    "phase": "source_checked_successful_training_start_cost_candidate_prepared"
+    "is_shared_core_candidate": false,
+    "working_section": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#当前待决策｜普通象棋H15公开可判空池的启动请求",
+    "decision_id": "STD-H15-PUBLIC-EMPTY-POOL",
+    "phase": "ordinary_public_empty_pool_scoped_candidate_prepared"
   },
-  "preserve": "普通30保持，本轮共享新增1、普通新增0；本线直接共享累计8。M08限定分支已确认，H05参照为原来源对齐，H15成功启动成本未批；主线1.52首次计数不重问。评分冻结、NET暂停。",
-  "main_owned_pending": "Receive latest M08 source and prior unacknowledged sources; current H15 action-cost candidate coordinated, empty/permission/source-order/full field/search-clock still pending.",
+  "preserve": "普通30保持，本轮共享新增1、普通新增0；本线直接共享累计9。H15合法成功不占步已确认，空池失败/展示未随此批准；评分冻结、NET暂停。",
+  "main_owned_pending": "Main1.53 actual first-eight shared adoption recognized; receive new H15 cost source. Main owns pending public display/dark failure feedback and remaining source interfaces.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "SHARED-M08-RETURNED-PAWN-HALF",
-    "confirmation_id": "CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016",
+    "id": "SHARED-H15-TRAINING-START-ACTION-COST",
+    "confirmation_id": "CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",

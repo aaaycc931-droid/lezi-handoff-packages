@@ -1,19 +1,19 @@
 《乐子象棋》普通象棋工作线分发｜LEZI-DISPATCH-2026-10-15-r1
-任务：NEXT-SHARED-H15-TRAINING-START-ACTION-COST｜下一项：H15成功启动是否占正常行动
+任务：NEXT-STD-H15-PUBLIC-EMPTY-POOL｜下一项：普通H15公开可判空池请求
 
 用户指令：“现在开始进行分发工作”。本包交给对应对话并附执行指令后，继续本线限定设计；不把分发、继续、旧收束当作同意任何待定规则。主线留在原主对话，不在本线重做总收束。
 
 读取/执行顺序：
 1. 本文件 → CURRENT_STATE.json → SOURCE_PRIORITY.json → PROJECT_WORK_AGREEMENT.md。
 2. 先读../../START_COLLABORATION.md和../../collaboration/CURRENT.json，由当前索引定位通用正文，实际读INTEGRATED_START、TASK_ROUTES、GITHUB_HANDOFF_WORKFLOW、MANDATORY_PRECHECK及本任务相关完整细则。按实际版本给简短协作门禁回执，不借旧收据；collaboration/PROJECT_COLLABORATION_20261015.md保留v0.8历史项目摘录身份，按来源需要读取，不替代当前通用正文。
-3. SYNC_NOTICE.md、MODE_SYNC.json、rules/shared/02_CURRENT_HEROES.md相关完整条目、rules/confirmed/RETURNED_SHARED_CONFIRMATIONS_20261014.json及裁判现行1.52（CURRENT_STATE.current_adjudication_source指向主线原正文，旧1.49文件保留历史身份）；查PENDING_ITEMS与PENDING_DECISION。共享正文和原确认控制语义，摘要不补规则。
+3. SYNC_NOTICE.md、MODE_SYNC.json、rules/shared/02_CURRENT_HEROES.md相关完整条目、rules/confirmed/RETURNED_SHARED_CONFIRMATIONS_20261014.json及裁判现行1.53（CURRENT_STATE.current_adjudication_source指向主线原正文，旧1.49文件保留历史身份）；查PENDING_ITEMS与PENDING_DECISION。共享正文和原确认控制语义，摘要不补规则。
 4. 运行python3 prepare_sources.py，完整源根为sources/standard/；本公开版本已展开源树，无须用户上传ZIP；脚本只核对路径并可还原少量大历史源归档，不运行引擎。解压后读取源根START_HERE和CURRENT_STATE以恢复原记录，再以本包根入口覆盖其中旧暂停/未回传字段；完整读取本包active_working_document、确认索引和相关原始专项。涉及原基线/旧代码时从SOURCE_MAP指向的完整源树定位，不只看摘要。work/以原返回正文为初始基线；2026-10-16接续增量已维护在该固定工作稿，原返回及sources/归档不改。
 5. NEXT_ACTIONS.json与RETURN_CONTRACT.json；开始下述任务，不停在报“已读取”或重做已完成设计。
 
-当前断点（2026-10-16 21:55）：用户“我同意”确认合法M08已明地面正常控制返己半场分支：按当前起点判几何，己半场只前一步/跨河当步不斜跨，再从敌半场起点行动才用斜前，无永久曾过河斜步。CONF-THREE-MODE-M08-RETURNED-PAWN-CURRENT-HALF-20261016，原始rules/confirmed/M08_RETURNED_PAWN_HALF_CONFIRMATION_20261016.json，当前M08完整七条目已同步；未新增移回能力。RP-S01/RP01—RP08未运行。
-本轮共享新增1、普通新增0，本线直接共享累计8、普通30保持；原确认/sources/原返回字节保持，最新接收采用不预填。H05原6B.2明确对手一侧正常规则，已明地面方向/半场参照作Δ0来源对齐，不再审批；普通R-A/F-A不外推，特殊回位/历史接口仍另核。
-下一项读取“当前待决策｜H15成功启动训练是否占用正常行动”：建议合法成功启动不占正常主行动、照耗唯一启动机会、不补已闭合begin进度；只成功成本，不新增窗口/受将许可，不决定空池失败扣次。当前未批准，TS-S01/TS01—TS08未运行；主线1.52首次计数已确认不重问。
-其他河道/飞行/历史/源序及完整裁判搜索计时/字段图继续保留；协作v0.12／正式1.8.0、主线1.52适用源未变；评分冻结、NET暂停，无游戏实现/运行/部署。
+当前断点（2026-10-17 09:56）：用户“我同意”确认三模式H15合法成功启动不占正常主行动、不自行结束正式回合，开局不扣首个行动；照耗唯一启动机会、不送/追补培养，不新增窗口/受将许可。CONF-THREE-MODE-H15-TRAINING-START-ACTION-COST-20261017，原始rules/confirmed/H15_TRAINING_START_ACTION_COST_CONFIRMATION_20261017.json及当前H15/共享增量同步，TS-S01/TS01—TS08未运行。普通30保持，本线直接共享累计9、本轮新增1；失败空池与展示未随此批准。
+已保护前轮发布/全部本线成果，本地未回传改动0；并发主线d414c021cfc584094021bbebd5194688b465e89d只改其本线及根索引，已实际接收采用本线此前四项共享（D01截止/H10M05/M06/M08），裁判1.53。完整相关新增政策及原确认/回执已读，1.52统一核心/H15时点相等保持，不称完整历史审查。当前新H15成功成本接收未知。
+下一项读取“当前待决策｜普通象棋H15公开可判空池的启动请求”：仅普通象棋双方公开信息足以确认合法候选为0，建议启动前拒绝，不扣唯一机会/正常行动，原合法窗口仍开时可改选另请求。当前未批准，EP-S01/EP01—EP08未运行；不外推暗棋秘密池、非法/并发失败或新窗口，训练成功后死亡仍耗机会不重征。
+主线单独的H15训练进度/失败公开展示候选已完整读，仍未批准，本线不另开竞争共享展示方案。本次同意仅成功成本。协作v0.12／正式1.8.0适用源未变，其他源序/历史/完整裁判搜索时限/字段图仍待核；评分冻结、NET暂停，无游戏实现/引擎运行/部署。
 
 原始资料和旧副本中的已收束、未回传及旧下一步均属于其生成时历史；当前主线已接收四线回传并在文档层归并。接手者仍须自己读取并给真实采用回执。各模式专属确认不向外扩张，新的共享冲突回主线；其余可独立工作继续。
 
