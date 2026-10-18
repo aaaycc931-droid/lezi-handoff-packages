@@ -1,5 +1,5 @@
 {
-  "status": "closed_current_conversation_H02_M04_path_scale_candidate_unapproved",
+  "status": "closed_current_conversation_H02_M04_path_scale_A_confirmed",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "用户明确继续本工作线后，恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的完整限定A与AP-S01具体情形，交用户明确决定；本次收束及以后继续均不当作批准。",
+  "next_action": "用户明确继续普通象棋线后，先恢复本次已确认A及原H02/M04/H21相关完整来源，限定复核后续刺杀遇终点单龙鳞时，既有路径结果保留、返位落位与机会消耗的来源覆盖；已有明确条款直接沿用，不重复审批A。缺口才形成一个具体候选，继续不算新批准，不改代码或运行引擎。",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -29,20 +29,16 @@
   },
   "path_base": "worklines/standard",
   "latest_local_confirmation": {
-    "id": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
-    "user_quote": "这个冲锋是我定义的叫法吗，我没有印象，可以完成进攻",
-    "approval_clause_quote": "可以完成进攻",
-    "at_local": "2026-10-17T19:06:19+08:00",
-    "scope": [
-      "original_jieqi",
-      "standard_xiangqi",
-      "half_chaos"
-    ],
+    "id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+    "user_quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
+    "approval_clause_quote": "我同意沿用这个方案",
+    "at_local": "2026-10-18T23:29:42+08:00",
+    "scope": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。",
     "new_shared_confirmation": true,
     "new_ordinary_confirmation": false
   },
   "main_document_adopted_scope": "Prior scoped confirmations through D01 startup/body observed at 50ad0d433f866fff41693cc495ec5d69c7724580; current zero-return receipt unknown.",
-  "latest_confirmation_main_adopted": true,
+  "latest_confirmation_main_adopted": null,
   "current_confirmation_index_count": 31,
   "M07_pool_exclusion_confirmed": true,
   "M08_approved": true,
@@ -92,37 +88,36 @@
   "H15_public_empty_pool_source": "rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
   "M04_H02_activation_defense_alignment": "rule_delta0_limited_unrun",
   "session_closeout": {
-    "revision": "STD-SESSION-CLOSEOUT-20261017-r2",
+    "revision": "STD-SESSION-CLOSEOUT-20261018-r1",
     "status": "closed_current_conversation",
-    "requested_at_local": "2026-10-17T23:28:48+08:00",
-    "user_quote": "收束本轮对话",
+    "requested_at_local": "2026-10-18T23:29:42+08:00",
+    "user_quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
+    "closed_at_local": "2026-10-18T23:35:49+08:00",
     "scope": "this_conversation_only",
     "project_or_other_worklines_stopped": false,
     "standard_mode_fully_completed": false,
     "new_rule_confirmation_by_closeout": false,
     "new_rule_confirmations_this_closeout": 0,
+    "new_rule_confirmations_this_conversation": 1,
     "ordinary_confirmation_count": 31,
     "retained_source_round_confirmations": 21,
     "ordinary_confirmations_since_source_round": 10,
-    "direct_shared_confirmations_originated_here": 11,
+    "direct_shared_confirmations_originated_here": 12,
     "this_conversation_gameplay_confirmations": {
       "ordinary": 0,
-      "direct_shared": 2,
+      "direct_shared": 1,
       "ids": [
-        "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
-        "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017"
+        "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018"
       ]
     },
-    "last_completed_design_commit": "05501db57425ee406983468ba81f1efdfc73057f",
-    "next_task": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "next_task_status": "candidate_prepared_pending_user_decision_not_approved",
-    "pending_candidate_source": {
-      "commit": "05501db57425ee406983468ba81f1efdfc73057f",
-      "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
-      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
-    },
-    "candidate_approved": false,
-    "candidate_text_preserved_exact": true,
+    "confirmed_record_path": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "selected_option": "A",
+    "candidate_approved": true,
+    "historical_candidate_text_preserved_exact": true,
+    "active_user_candidate": null,
+    "next_task": "NEXT-STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-REVIEW",
+    "next_task_status": "deferred_until_user_continuation_source_review_not_started",
+    "next_stage_started": false,
     "unrun_current_specs": [
       "AP-S01",
       "AP01-AP08"
@@ -134,20 +129,24 @@
     "scoring_frozen": true,
     "NET": "paused",
     "ZIP_generated": false,
-    "handoff_method": "fixed GitHub entry plus actual current bodies/state/RETURN_TO_MAIN and short resume text",
-    "resume_text": "继续《乐子象棋》普通象棋工作线，读取并执行最新固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt 。从H02＋M04后续刺杀的路径龙鳞现成待定方案接续，恢复完整限定方案和具体情形后交我决定，不把继续当作批准。继承已确认设计及三线共同文案，评分冻结、NET暂停；阶段完成或共享阻断时增量写回本线资料及回传记录。",
+    "handoff_method": "fixed GitHub entry plus published current bodies, original confirmation, return and resume text",
+    "resume_text": "继续《乐子象棋》普通象棋工作线，读取最新固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt 。继承2026-10-18已确认的H02＋M04后续刺杀路径龙鳞限定A，不重复审批。接续终点单龙鳞的路径结果、返回与机会消耗来源复核；有明确来源直接沿用，缺口再给具体候选，不把继续当批准。评分冻结、NET暂停，全部未运行规格保持UNRUN；按已有授权阶段增量写回，保护并发成果，不代填接收回执。",
     "protection": {
-      "previous_stage": "05501db57425ee406983468ba81f1efdfc73057f",
-      "payloads_compared": 11,
-      "all_exact": true,
-      "unreturned_deltas_in_compared_stage": 0
+      "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
+      "previous_own_publication": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
+      "previous_8_payloads_match_own_publication": true,
+      "visible_local_unreturned_deltas_in_previous_payloads": 0,
+      "concurrent_half_chaos_commit_preserved": "fa781b5538f1760b0f408e02b64183261c239063",
+      "concurrent_latest_half_chaos_commit_preserved": "c87afd94384322663dbf6cb9a0f4823ed5992e98",
+      "concurrent_changes_nonoverlapping": true
     },
-    "recipient_reading_of_this_closeout_verified": null,
-    "recipient_adoption_of_this_closeout_verified": null,
+    "recipient_reading_of_this_increment_verified": null,
+    "recipient_adoption_of_this_increment_verified": null,
     "new_automatic_messages_sent": false,
-    "publication_commit": "Resolve containing commit from Git history after publication."
+    "publication_commit": "Resolve containing commit from Git history after publication.",
+    "publication_parent_commit": "c87afd94384322663dbf6cb9a0f4823ed5992e98"
   },
-  "latest_confirmation_main_adopted_scope": "Exact original normal M04 path-scale A only; all exclusions retained; no new local gameplay confirmation.",
+  "latest_confirmation_main_adopted_scope": "This new AP confirmation main receipt/adoption unknown; prior normal M04/geometry receipt evidence remains historical and scoped.",
   "H02_M04_geometry_confirmed": true,
   "H02_M04_geometry_source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
   "H15_public_display_source_adopted": "rules/confirmed/RECEIVED_H15_PUBLIC_DISPLAY_20261017.json",
@@ -181,7 +180,7 @@
     "body": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
     "verification": "V2 source clauses / V1 guarded composition only; WD01-WD08 unrun"
   },
-  "updated_at_local": "2026-10-17T23:32:00+08:00",
+  "updated_at_local": "2026-10-18T23:35:49+08:00",
   "M04_path_scale_main_receipt": {
     "commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
     "source": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard.current_M04_confirmation",
@@ -201,15 +200,24 @@
     },
     "scope": "Exact original normal M04 path-scale A only; all exclusions retained; no new local gameplay confirmation."
   },
-  "pending_candidate": {
-    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "path": "candidates/h02-m04-path-dragon-scale/v1.json",
-    "approved": false,
-    "status": "pending_user_confirmation"
-  },
+  "pending_candidate": null,
   "previous_session_closeout_source": {
     "commit": "05501db57425ee406983468ba81f1efdfc73057f",
     "path": "CURRENT_STATE.json#session_closeout",
     "revision": "STD-SESSION-CLOSEOUT-20261017-r1"
-  }
+  },
+  "resolved_candidate": {
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+    "confirmation_source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "approved": true,
+    "selected_option": "A",
+    "confirmed_at_local": "2026-10-18T23:29:42+08:00",
+    "historical_candidate_file_unchanged": true,
+    "historical_candidate_pending_fields_are_preapproval_snapshot": true
+  },
+  "H02_M04_path_dragon_scale_confirmed": true,
+  "H02_M04_path_dragon_scale_source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+  "direct_shared_confirmations_originated_here": 12
 }

@@ -1,0 +1,115 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+  "confirmed_at_local": "2026-10-18T23:29:42+08:00",
+  "user_quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
+  "approval_clause_quote": "我同意沿用这个方案",
+  "selected_option": "A",
+  "origin_workline": "standard",
+  "review_id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+  "source_type": "direct_current_conversation_user_approval_of_immediately_preceding_explicit_three_mode_A_question",
+  "reviewed_candidate": {
+    "commit": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
+    "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
+    "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf",
+    "original_prepared_design_commit": "05501db57425ee406983468ba81f1efdfc73057f"
+  },
+  "immediately_preceding_question": "是否同意A，作为现有揭棋、普通象棋、半混乱揭棋中上述原本合法组合的共同规则？",
+  "presented_context": "This conversation restored and actually presented the exact guarded A and AP-S01 example before the current explicit approval; current continue/closeout are not a second approval.",
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。",
+  "policy": {
+    "id": "A",
+    "text": "唯一路径棋消耗一次龙鳞，存活并留在原格；该次路径碾碎到此结束。车继续原本合法的战车隔一枚地面棋的【进攻】，在原终点使用H02后续刺杀。此限定无防护终点实际消灭，车落在终点。",
+    "path_source": "independent_M04_crush_not_H02_assassination",
+    "path_dragon_scale_consumed": 1,
+    "path_actual_destruction": false,
+    "path_body_location": "unchanged",
+    "repeat_path_crush": false,
+    "extend_H02_bypass_to_path": false,
+    "endpoint_source": "original_H02_later_assassination_attack",
+    "endpoint_actual_destruction": true,
+    "rook_lands_at": "original_endpoint",
+    "H02_opportunity_and_source_intangibility": "Successful use ends/consumes according to existing H02; no extension or replenishment.",
+    "normal_main_action_consumed": true,
+    "extra_action_or_refund": false,
+    "deadline_refreshed": false,
+    "requires_actual_path_kill_to_continue": false
+  },
+  "preserved": [
+    "Previous H02/M04 geometry and normal M04 path-scale confirmations remain in their original scopes.",
+    "Path crush remains independent of endpoint assassination; no repeat crush, fictitious path death, or H02 bypass extended to the path.",
+    "Existing endpoint dragon-scale interception and return remain unchanged, without approval of full combined source ordering.",
+    "All original control/window/route/royal-safety/landing/mode-availability restrictions, one normal action, no refund/extra action/deadline refresh."
+  ],
+  "not_confirmed": [
+    "H02发动当回合及发动成功/失败窗口、失败扣次或回弹顺序",
+    "终点龙鳞/普通防御叠加/龙爪完整顺序；终点无形或特殊直接指定联合分支",
+    "其他或永久碾碎免疫、不同盾、己方/暗置/隐藏阵营路径棋",
+    "将帅/影武者/H10宿主与真帅承伤、特殊空间/临时操控/揭示倒戈",
+    "返回占格/陷阱/历史恢复、完整王安全终局搜索/字段/计时接口",
+    "新英雄/畸变入池、第二畸变、额外行动或时限刷新",
+    "游戏代码、引擎通过、独立复核、评分恢复或NET启动"
+  ],
+  "conditional_example": {
+    "id": "AP-S01",
+    "status": "unrun_conditional_not_full_natural_prefix",
+    "acting_side_hero": "H02",
+    "defending_side_hero": "H21_invincible",
+    "mutation": "M04_only",
+    "description": "同一直线上，车到敌马之间恰一枚带一次龙鳞的敌兵；车有仍有效且本次选择使用的后续刺杀机会，敌马无防护，其余guard成立。",
+    "illustrative_positions": {
+      "rook": {
+        "x": 0,
+        "y": 7
+      },
+      "path_pawn": {
+        "x": 0,
+        "y": 6
+      },
+      "endpoint_horse": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    "positions_are_not_complete_legal_position_or_fixture": true,
+    "proposed_A_result": "敌兵耗一鳞并留原格，敌马由H02终点刺杀实际消灭，车落到原马格；路径无死亡，不重碾。",
+    "one_hero_per_side_respected": true,
+    "full_natural_prefix_proven": false
+  },
+  "source_unrun_specs": [
+    "AP01 全部guard成立才进入本候选；有效后续刺杀非发动回合",
+    "AP02 一条直线恰一敌方明地面非将帅/非影武者路径棋；H02方对H21无敌方，不虚构三英雄同局",
+    "AP03 路径一次鳞阻止碾碎并耗鳞、存活同格；不制造路径死亡/揭示事件",
+    "AP04 若A获准，路径存活不阻原合法路线完成；不重碾、不把刺杀绕防护扩到路径",
+    "AP05 若A获准，原无防护合法敌非将帅终点按H02刺杀消灭、车落终点",
+    "AP06 成功使用机会/来源无形按原H02终止，只耗原一手、不退款、不加行动或刷新时限",
+    "AP07 两路径/空终点/将帅终点仍非法；终点龙鳞返回明文不因A被改写",
+    "AP08 多防护/H10/控制/历史/空间及完整可达前缀/隐私/运行未证明"
+  ],
+  "verification": {
+    "source_and_user_confirmation": "V2 exact candidate, unchanged original scopes and current explicit user statement",
+    "conditional_example": "V1 conditional illustration; not a complete legal position or natural prefix",
+    "AP_S01_AP01_AP08": "UNRUN; approval changes design status only",
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "independent_review": false,
+    "full_natural_prefix_proven": false
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "main_adopted_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  },
+  "closeout_instruction": {
+    "quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
+    "at_local": "2026-10-18T23:29:42+08:00",
+    "scope": "Finish this scoped approval/document stage and close this conversation; no new design or implementation stage is started."
+  }
+}

@@ -64,7 +64,7 @@
         "H02 legal later ground opportunity geometry confirmed by CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
         "Normal exact path-dragon-scale A confirmed; other immunity and endpoint multiple-defense order remain pending",
         "H10 bounded host/decoy path source composition recorded; full defense/flow/source-order/space/history/runtime remains pending",
-        "H02后续刺杀的唯一路径敌棋由一次龙鳞存活：源明确排除项已核，限定A候选待用户决定，未自动沿用普通M04 A。"
+        "Exact H02 later-assassination one-enemy-path dragon-scale A explicitly confirmed by CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018; all original exclusions remain pending."
       ],
       "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
       "M04_body_confirmation_does_not_resolve_these": true,
@@ -84,13 +84,19 @@
       "path_dragon_scale_A_confirmed": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
       "limited_endpoint_source_alignment": "STD-M04-ENDPOINT-INTERCEPTION-SOURCE-ALIGNMENT",
       "endpoint_full_multi_source_priority_still_pending": true,
-      "pending_candidate": {
+      "pending_candidate": null,
+      "resolved_candidate": {
         "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
         "path": "candidates/h02-m04-path-dragon-scale/v1.json",
-        "status": "pending_user_confirmation",
-        "approved": false,
-        "scope": "仅三个模式原已合法可用的H02英雄＋M04畸变组合；正常控制、明置真实地面车已合法取得并仍持有有效后续刺杀机会，且本次选择使用该机会；不是发动当回合。敌方H21无敌已依法赋予唯一路径敌棋一次有效龙鳞。起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无其他参与本次结算的免疫/拦截；终点为原已合法的敌方明置地面非将帅/非影武者，无防护或额外承伤/落位介入。完整几何、目标、来源窗口、王安全与落位条件仍须满足；不新增任何模式入池或第二畸变。"
-      }
+        "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+        "confirmation_source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+        "approved": true,
+        "selected_option": "A",
+        "confirmed_at_local": "2026-10-18T23:29:42+08:00",
+        "historical_candidate_file_unchanged": true,
+        "historical_candidate_pending_fields_are_preapproval_snapshot": true
+      },
+      "H02_path_dragon_scale_A_confirmed": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018"
     },
     {
       "id": "H13-LAYER-SOURCE",
@@ -1031,16 +1037,89 @@
         "No H02 special-action, H10 secret host, control/reveal-defection, return-space/trap/history or all-mode integration acceptance",
         "No timing equivalence claim if another source observes internal order"
       ]
+    },
+    {
+      "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+      "status": "explicit_scoped_A_confirmed_design_only",
+      "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+      "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "ordinary_count_delta": 0,
+      "direct_shared_count_delta": 1,
+      "retained_unresolved": [
+        "H02发动当回合及发动成功/失败窗口、失败扣次或回弹顺序",
+        "终点龙鳞/普通防御叠加/龙爪完整顺序；终点无形或特殊直接指定联合分支",
+        "其他或永久碾碎免疫、不同盾、己方/暗置/隐藏阵营路径棋",
+        "将帅/影武者/H10宿主与真帅承伤、特殊空间/临时操控/揭示倒戈",
+        "返回占格/陷阱/历史恢复、完整王安全终局搜索/字段/计时接口",
+        "新英雄/畸变入池、第二畸变、额外行动或时限刷新",
+        "游戏代码、引擎通过、独立复核、评分恢复或NET启动"
+      ],
+      "unrun": "AP-S01/AP01-AP08 and all prior specs"
     }
   ],
   "session_closeout": {
-    "revision": "STD-SESSION-CLOSEOUT-20261017-r2",
+    "revision": "STD-SESSION-CLOSEOUT-20261018-r1",
     "status": "closed_current_conversation",
+    "requested_at_local": "2026-10-18T23:29:42+08:00",
+    "user_quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
+    "closed_at_local": "2026-10-18T23:35:49+08:00",
     "scope": "this_conversation_only",
-    "current_candidate": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "candidate_approved": false,
-    "all_unresolved_items_preserved": true,
-    "continuation_required_before_more_design": true
+    "project_or_other_worklines_stopped": false,
+    "standard_mode_fully_completed": false,
+    "new_rule_confirmation_by_closeout": false,
+    "new_rule_confirmations_this_closeout": 0,
+    "new_rule_confirmations_this_conversation": 1,
+    "ordinary_confirmation_count": 31,
+    "retained_source_round_confirmations": 21,
+    "ordinary_confirmations_since_source_round": 10,
+    "direct_shared_confirmations_originated_here": 12,
+    "this_conversation_gameplay_confirmations": {
+      "ordinary": 0,
+      "direct_shared": 1,
+      "ids": [
+        "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018"
+      ]
+    },
+    "confirmed_record_path": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "selected_option": "A",
+    "candidate_approved": true,
+    "historical_candidate_text_preserved_exact": true,
+    "active_user_candidate": null,
+    "next_task": "NEXT-STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-REVIEW",
+    "next_task_status": "deferred_until_user_continuation_source_review_not_started",
+    "next_stage_started": false,
+    "unrun_current_specs": [
+      "AP-S01",
+      "AP01-AP08"
+    ],
+    "all_unrun_specs_remain_unrun": true,
+    "new_game_code_changes": 0,
+    "game_engine_runs": 0,
+    "independent_review": false,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "ZIP_generated": false,
+    "handoff_method": "fixed GitHub entry plus published current bodies, original confirmation, return and resume text",
+    "resume_text": "继续《乐子象棋》普通象棋工作线，读取最新固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt 。继承2026-10-18已确认的H02＋M04后续刺杀路径龙鳞限定A，不重复审批。接续终点单龙鳞的路径结果、返回与机会消耗来源复核；有明确来源直接沿用，缺口再给具体候选，不把继续当批准。评分冻结、NET暂停，全部未运行规格保持UNRUN；按已有授权阶段增量写回，保护并发成果，不代填接收回执。",
+    "protection": {
+      "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
+      "previous_own_publication": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
+      "previous_8_payloads_match_own_publication": true,
+      "visible_local_unreturned_deltas_in_previous_payloads": 0,
+      "concurrent_half_chaos_commit_preserved": "fa781b5538f1760b0f408e02b64183261c239063",
+      "concurrent_latest_half_chaos_commit_preserved": "c87afd94384322663dbf6cb9a0f4823ed5992e98",
+      "concurrent_changes_nonoverlapping": true
+    },
+    "recipient_reading_of_this_increment_verified": null,
+    "recipient_adoption_of_this_increment_verified": null,
+    "new_automatic_messages_sent": false,
+    "publication_commit": "Resolve containing commit from Git history after publication.",
+    "publication_parent_commit": "c87afd94384322663dbf6cb9a0f4823ed5992e98"
   },
   "main_current_metadata_observed": {
     "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
