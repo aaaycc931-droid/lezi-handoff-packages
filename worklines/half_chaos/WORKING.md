@@ -7,7 +7,7 @@ revision: HC-DESIGN-03-20261018-r31
 date_local: 2026-10-18
 timezone: Asia/Shanghai
 primary_reader: AI
-status: admission_contract_document_prepared_shared_review_pending_unrun
+status: session_closed_after_scope_confirmation_unrun
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -18,6 +18,8 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 # 半混乱揭棋：时序、权限、合法前缀与剩余适配
 
 ## 0. 当前入口与接续
+
+本对话已于2026-10-18T23:28:46+08:00按用户要求收束（HC-SESSION-CLOSEOUT-20261018-r4）。用户明确同意刚澄清的三组组合/原12条后续验证范围方案，确认见CONFIRMATIONS.r31_validation_scope_plan_confirmation及§8.55；只确认本批范围，不批准代码/运行/门禁或整份技术合同。r31已真实发布于fa781b5538f1760b0f408e02b64183261c239063。下一WP02文档任务尚未启动，待用户继续后接续；其他线不停止。
 
 当前HC-DESIGN-03-20261018-r31；完成WP01限定准入/适配文档合同，见§8.54与ADMISSION_CONTRACT_PROPOSAL.json。实际基准3a38dec64327dcff63d596809debe7a8810ae616，接续已发布r30，不重复旧r29任务；本轮只文档及本线阶段写回。
 
@@ -2502,6 +2504,18 @@ PD-S32仍无自然冲突正例，PD-S31额外落位、DS-S16同窗先安全后�
 本轮原D01五项确认与H03/H04相关完整正文、H03原确认已回读，新增玩法批准0、共有确认新消费0。M04原选择及三线作用域澄清全文已读，文案沿“战车隔一枚地面棋的【进攻】”，不新设关键词。12份业务源仅按记录函数/段落读取，分支14b及PR7草稿未变；开放PR仅核头/基分支/草稿元数据，未审全差分/CI。文件/引用/源身份检查与真实Git发布分开；同一AI合同V1、相关原确认/源码V2，独立审查未做。业务写入、引擎导入/运行、命令生成/发送均0；全部64项UNRUN，可运行0，评分冻结、NET暂停。
 
 共享准入具体问题HC-ADM-Q01—03随本线RETURN回主线；WP02/03原请求不另造已批准接口。下一独立项NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT只准备精确被动观察合同文档；主线准入未决不阻止该无依赖资料准备，不把接续转成实施。
+
+### 8.55 本批范围确认与本对话收束（r4）
+
+用户在询问“这个建议限定是什么”并得到三组组合/原12回放范围说明后，于2026-10-18T23:28:46+08:00明确：“我同意这个方案。然后收束本轮对话吧”。本次确认ID为CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018，完整原话、前置说明与作用域保存在CONFIRMATIONS.r31_validation_scope_plan_confirmation。
+
+已确认：本批未来验证先限红秦龙H04/黑战士H03＋铁马M01，红H04/黑H03＋战车M04，红诺兹多姆H06/黑姆诺兹多H05且实际合法触发D01；复用现有12条案例，不临时加入第三英雄或第二畸变凑结果。不限制整个游戏只许这三组，不修改已确认玩法。本次为1项验证范围方案确认，玩法规则差分0，不计新增游戏规则确认。
+
+同意没有扩大为业务代码/引擎导入或运行/门禁修改授权，也未选择具体可信准入API、随机候选见证、观察hook或安全修复。r31详细技术契约其余部分继续主线待核，12回放可运行0、64项全UNRUN；评分冻结、NET暂停。旧确认/原6份输入保持；本次不启动WP02，只收束当前对话，不停其他线、不代填主线回执。
+
+先保护本地r31并核远端，当前HEAD为fa781b5538f1760b0f408e02b64183261c239063，9个本线文件对象与已发布清单逐一匹配，无比较范围内未回传差分。r31入口/契约实际复读，完整记录与历史源仍可从固定路径访问；发布和接收采用分开。本次收束提交在成功后从Git历史解析，不预填未来SHA。
+
+下一仍为NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT，NOT_STARTED_DOCUMENT_ONLY：新对话先保护未回传成果、读取最新固定入口与主线真实回复，准备WP02主行动/结束/D01闭合、早退与被动证据文档。继承本次12条范围确认，不要求用户重批；不据此转入代码/运行或越过共享门禁。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 

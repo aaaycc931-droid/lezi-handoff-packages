@@ -1930,5 +1930,83 @@
       "engine_runs": 0
     }
   },
-  "r30_new_shared_confirmation_consumption": 1
+  "r30_new_shared_confirmation_consumption": 1,
+  "r31_validation_scope_plan_confirmation": {
+    "id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
+    "kind": "validation_scope_plan_confirmation_not_gameplay_rule",
+    "confirmed_at_local": "2026-10-18T23:28:46+08:00",
+    "user_quote": "我同意这个方案。然后收束本轮对话吧",
+    "immediately_preceding_user_question": "这个建议限定是什么",
+    "immediately_preceding_assistant_explanation": {
+      "scope_sentence": "将来验证这批已有案例时，先只检查下面三种组合。",
+      "table": [
+        {
+          "red": "秦龙",
+          "red_id": "H04",
+          "black": "战士",
+          "black_id": "H03",
+          "mutation": "铁马",
+          "mutation_id": "M01"
+        },
+        {
+          "red": "秦龙",
+          "red_id": "H04",
+          "black": "战士",
+          "black_id": "H03",
+          "mutation": "战车",
+          "mutation_id": "M04"
+        },
+        {
+          "red": "诺兹多姆",
+          "red_id": "H06",
+          "black": "姆诺兹多",
+          "black_id": "H05",
+          "mutation": "时光之末，须合法触发",
+          "mutation_id": "D01"
+        }
+      ],
+      "explained_boundary": "现有12条回放案例围绕这些组合准备；验证时不能临时加入第三个英雄或第二项畸变凑结果；不限制整个游戏、不改变已确认玩法；目前仍准备文档，没有改代码或运行测试。"
+    },
+    "confirmed_scope": {
+      "workline": "half_chaos",
+      "existing_replay_count": 12,
+      "tuple_ids": [
+        "HC-ADM-PD-M01",
+        "HC-ADM-PD-M04",
+        "HC-ADM-DS-D01"
+      ],
+      "selection": "this finite batch future validation scope only",
+      "D01_requires_lawful_actual_trigger": true,
+      "no_third_hero_or_second_mutation_to_fill_cases": true
+    },
+    "reference": {
+      "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
+      "path": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
+      "git_blob_sha": "e4e5e954c6e8610dd1ce85c3cc63582789ecfd94",
+      "sections": [
+        "exact_tuple_candidates",
+        "replay_bindings"
+      ]
+    },
+    "not_approved_by_this_assent": [
+      "business code implementation or engine import/run",
+      "mode/product/research gate change or new trusted capability issuance",
+      "detailed room API/hook/safety repair or mutation random witness selection",
+      "new game rule, mode pool or final probabilities",
+      "complete mode/runtime/privacy/search acceptance",
+      "other workline receiving or adopting this confirmation"
+    ],
+    "gameplay_rule_delta": 0,
+    "new_gameplay_rule_confirmation": false,
+    "scope_plan_confirmations": 1,
+    "implementation_approved": false,
+    "engine_run_authorized": false,
+    "new_game_specs": 0,
+    "all64": "UNRUN",
+    "adopted_here": "Only this existing12 scope-plan confirmation recorded; shared interface/implementation decisions stay main-owned.",
+    "containing_commit": null,
+    "containing_commit_note": "Resolve actual closeout commit from Git history after publication; no future self SHA."
+  },
+  "r31_new_scope_plan_confirmations": 1,
+  "r31_new_gameplay_rule_confirmations": 0
 }

@@ -2,9 +2,9 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+  "base_commit": "fa781b5538f1760b0f408e02b64183261c239063",
   "revision": "HC-DESIGN-03-20261018-r31",
-  "phase": "document_only_admission_contract_refinement_complete",
+  "phase": "conversation_closeout_after_r31_scope_plan_confirmation",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
   "current_breakpoint": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT completed as document proposal",
@@ -92,19 +92,19 @@
   "NET": "paused",
   "implementation_status": "PROPOSED_NOT_IMPLEMENTED_NOT_ADMITTED_NOT_AUTHORIZED_FOR_RUN",
   "delivery": {
-    "transport": "GitHub connector incremental stage writeback",
+    "transport": "GitHub connector incremental closeout",
     "containing_commit": null,
+    "prior_design_commit": "fa781b5538f1760b0f408e02b64183261c239063",
     "receiver_read_or_adopted": null,
-    "prior_design_commit": "2c66fb06eb15f03e63e0e6c9cbf955cccc71a799",
-    "note": "Resolve r31 actual result from Git history; no receiver-owned receipt prefilled."
+    "note": "Resolve this closeout commit from Git history; no future self SHA."
   },
   "publication_limits": "private full protocols/raw archives remain excluded; current design bodies and exact existing public sources available; no claim of full historical/runtime migration",
   "source_baseline_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
   "concurrent_main_source_commit": "addc6fb14c32c8d874cb9d5ab75484de779b27c8",
   "current_stage_changes": [
-    "r31 contract documents only; no all-mode availability or candidate approval",
-    "all6 original source data and64UNRUN retained",
-    "next independent WP02 observation-contract documentation prepared as route only"
+    "clarified three-tuple/existing12 scope plan explicitly confirmed; no gameplay/code/run/gate approval",
+    "close this dialogue only; WP02 documentation remains not started",
+    "preserve priorr31 and original inputs/confirmations/other lines"
   ],
   "prior_H14_stage_return": "main dd467a1 actual scoped stage/excerpt receipt covers H14/H16; body/spec/runtime adoption not inferred",
   "remote_reconciliation": {
@@ -331,7 +331,7 @@
       }
     }
   },
-  "publication_parent_commit": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
+  "publication_parent_commit": "fa781b5538f1760b0f408e02b64183261c239063",
   "previous_r21_return": {
     "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "phase": "M01_M08_D01_coverage_audit",
@@ -591,7 +591,7 @@
     "main_pending_approved": false,
     "new_shared_rule_consumption_from_main_recheck": 0
   },
-  "actual_receiver_status": "main actual scoped r30 receipt recognized at baseline; r31 reception/adoption unknown",
+  "actual_receiver_status": "r31 and this closeout main reception/adoption unknown; prior actual scopedr30 reception retained",
   "concurrent_standard_retry_r23": {
     "publication_head": "bb770e6f16773c8f46d35daa6d678f90d6a5e656",
     "actual_base_tree_sha": "0e5ceb0ee0379328be25dd3d9ab54ab73e8b8cbe",
@@ -927,7 +927,7 @@
     }
   ],
   "last_completed_design_revision": "HC-DESIGN-03-20261018-r31",
-  "last_completed_design_commit": null,
+  "last_completed_design_commit": "fa781b5538f1760b0f408e02b64183261c239063",
   "next_task_status": "NOT_STARTED_DOCUMENT_ONLY",
   "last_completed_design_commit_note": "Resolve containing r31 commit from Git history after actual publication; no future self SHA.",
   "initialization_witness_data": {
@@ -1425,7 +1425,7 @@
   },
   "admission_contract_proposal": {
     "path": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
-    "status": "DOCUMENT_PROPOSAL_PREPARED_SHARED_CONTRACT_PENDING",
+    "status": "DOCUMENT_VALIDATION_SCOPE_PLAN_CONFIRMED_SHARED_INTERFACE_PENDING_NOT_IMPLEMENTED",
     "task_completed": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
     "working_section": "8.54",
     "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
@@ -1437,9 +1437,10 @@
     "approved_for_implementation": false,
     "ready_replays": 0,
     "all64": "UNRUN",
-    "sha256": "2190217a42230fb520dc66e7aafcfb282f007533d9627f216152e6cb527eb2ce",
-    "git_blob_sha": "e4e5e954c6e8610dd1ce85c3cc63582789ecfd94",
-    "size_bytes": 38975
+    "sha256": "7f35aa95ca2b8ff60811db6d85868098a2a92564d69075babc985443501d759f",
+    "git_blob_sha": "a29a20e303d3fd255ee338feaa9b60ae129e0c0a",
+    "size_bytes": 40193,
+    "chars": 33193
   },
   "r31_main_response_recognition": {
     "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
@@ -1480,5 +1481,64 @@
     "actual_reading": "standard latest entry and pending status/key metadata only",
     "observation": "standard resumed pending H02/M04 path-scale candidate, no new approval; no semantic adoption; present12 have no H02/H21",
     "other_workline_objects_preserved": true
-  }
+  },
+  "session_closeout": {
+    "revision": "HC-SESSION-CLOSEOUT-20261018-r4",
+    "requested_at_local": "2026-10-18T23:28:46+08:00",
+    "request_quote": "我同意这个方案。然后收束本轮对话吧",
+    "scope": "this_half_chaos_conversation_only",
+    "session_status": "closed_after_scope_confirmation",
+    "project_or_other_worklines_stopped": false,
+    "last_completed_design_revision": "HC-DESIGN-03-20261018-r31",
+    "last_completed_design_commit": "fa781b5538f1760b0f408e02b64183261c239063",
+    "completed": [
+      "r31 WP01 admission/adapter document with3 exact tuples/12 bindings/10 chain rows/12 proposed rejection boundaries",
+      "user confirmed clarified existing12 future validation scope; recorded original wording and exclusions",
+      "all original6 inputs and valid prior gameplay confirmations protected"
+    ],
+    "new_scope_plan_confirmations": 1,
+    "scope_confirmation_id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
+    "new_gameplay_rule_confirmations": 0,
+    "new_shared_gameplay_confirmation_consumption": 0,
+    "business_code_changes": 0,
+    "business_repo_writes": 0,
+    "engine_imports": 0,
+    "engine_runs": 0,
+    "client_runs": 0,
+    "executed_replays": 0,
+    "all64": "UNRUN",
+    "ready_replays": 0,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "next": {
+      "id": "NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT",
+      "status": "NOT_STARTED_DOCUMENT_ONLY",
+      "action": "结合主线真实WP02回复，按原64项相关义务细化主行动闭合/正式结束闭合/D01请求边界与被动证据合同；列实际可读字段、早退与停止条件。只读源码和准备文档，不加hook、不运行；WP01共享准入继续待主线核定。"
+    },
+    "resume": "User says continue and receiving dialogue reads latest root/workline fixed entry; resume WP02 document-only against actual newest state. Do not ask again for this confirmed12 scope; do not infer code/run/gate authorization.",
+    "next_task_started_this_closeout": false,
+    "shared_pending": "main retains HC-ADM-Q01—03 and WP02/WP03 interface/hook/safety decisions; scope confirmation alone does not resolve these",
+    "main_receiving_r31_or_this_closeout": "unknown; no other receiver receipt written",
+    "prior_r31_publication_check": {
+      "commit": "fa781b5538f1760b0f408e02b64183261c239063",
+      "entry_and_contract_read_this_closeout": true,
+      "all9_local_stage_blobs_match_latest_remote_tree": true,
+      "unreturned_changes_in_comparison_scope": 0
+    },
+    "containing_commit": null,
+    "containing_commit_note": "Resolve actual result from Git history after publication; no future self SHA."
+  },
+  "validation_scope_plan_confirmation": {
+    "path": "worklines/half_chaos/CONFIRMATIONS.json",
+    "section": "r31_validation_scope_plan_confirmation",
+    "id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
+    "git_blob_sha": "760386e6735dcd90f1f244ee1e2ffbe6ca620e60",
+    "sha256": "3279350089538ed12e5fd52f074f8aff211881bb93f07ab92749f6a53e11ed8e",
+    "size_bytes": 116790,
+    "chars": 108568
+  },
+  "new_scope_plan_confirmations": 1,
+  "confirmed_scope_delta": [
+    "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018"
+  ]
 }

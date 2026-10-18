@@ -643,7 +643,7 @@
     "path": "worklines/half_chaos/NEXT_ACTIONS.json#/session_closeout",
     "scope": "historical previous conversation closeout, superseded by current closeout record only"
   },
-  "publication_parent_commit": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
+  "publication_parent_commit": "fa781b5538f1760b0f408e02b64183261c239063",
   "previous_session_closeout": {
     "revision": "HC-SESSION-CLOSEOUT-20261017-r2",
     "requested_at_local": "2026-10-17T20:03:17+08:00",
@@ -759,7 +759,7 @@
     "adopted_new_standard_rules": false,
     "read_scope": "commit path/message and standard entry metadata only; no original candidate/confirmation semantic adoption"
   },
-  "last_completed_design_commit": null,
+  "last_completed_design_commit": "fa781b5538f1760b0f408e02b64183261c239063",
   "last_completed_design_commit_note": "Resolve containing r31 commit from Git history after actual publication; no future self SHA.",
   "previous_session_closeout_r3": {
     "revision": "HC-SESSION-CLOSEOUT-20261017-r3",
@@ -800,7 +800,7 @@
   },
   "completed_admission_contract_proposal": {
     "path": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
-    "status": "DOCUMENT_PROPOSAL_PREPARED_SHARED_CONTRACT_PENDING",
+    "status": "DOCUMENT_VALIDATION_SCOPE_PLAN_CONFIRMED_SHARED_INTERFACE_PENDING_NOT_IMPLEMENTED",
     "task_completed": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
     "working_section": "8.54",
     "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
@@ -812,9 +812,10 @@
     "approved_for_implementation": false,
     "ready_replays": 0,
     "all64": "UNRUN",
-    "sha256": "2190217a42230fb520dc66e7aafcfb282f007533d9627f216152e6cb527eb2ce",
-    "git_blob_sha": "e4e5e954c6e8610dd1ce85c3cc63582789ecfd94",
-    "size_bytes": 38975
+    "sha256": "7f35aa95ca2b8ff60811db6d85868098a2a92564d69075babc985443501d759f",
+    "git_blob_sha": "a29a20e303d3fd255ee338feaa9b60ae129e0c0a",
+    "size_bytes": 40193,
+    "chars": 33193
   },
   "main_actual_r30_response": {
     "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
@@ -890,5 +891,61 @@
     "actual_reading": "standard latest entry and pending status/key metadata only",
     "observation": "standard resumed pending H02/M04 path-scale candidate, no new approval; no semantic adoption; present12 have no H02/H21",
     "other_workline_objects_preserved": true
+  },
+  "session_closeout": {
+    "revision": "HC-SESSION-CLOSEOUT-20261018-r4",
+    "requested_at_local": "2026-10-18T23:28:46+08:00",
+    "request_quote": "我同意这个方案。然后收束本轮对话吧",
+    "scope": "this_half_chaos_conversation_only",
+    "session_status": "closed_after_scope_confirmation",
+    "project_or_other_worklines_stopped": false,
+    "last_completed_design_revision": "HC-DESIGN-03-20261018-r31",
+    "last_completed_design_commit": "fa781b5538f1760b0f408e02b64183261c239063",
+    "completed": [
+      "r31 WP01 admission/adapter document with3 exact tuples/12 bindings/10 chain rows/12 proposed rejection boundaries",
+      "user confirmed clarified existing12 future validation scope; recorded original wording and exclusions",
+      "all original6 inputs and valid prior gameplay confirmations protected"
+    ],
+    "new_scope_plan_confirmations": 1,
+    "scope_confirmation_id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
+    "new_gameplay_rule_confirmations": 0,
+    "new_shared_gameplay_confirmation_consumption": 0,
+    "business_code_changes": 0,
+    "business_repo_writes": 0,
+    "engine_imports": 0,
+    "engine_runs": 0,
+    "client_runs": 0,
+    "executed_replays": 0,
+    "all64": "UNRUN",
+    "ready_replays": 0,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "next": {
+      "id": "NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT",
+      "status": "NOT_STARTED_DOCUMENT_ONLY",
+      "action": "结合主线真实WP02回复，按原64项相关义务细化主行动闭合/正式结束闭合/D01请求边界与被动证据合同；列实际可读字段、早退与停止条件。只读源码和准备文档，不加hook、不运行；WP01共享准入继续待主线核定。"
+    },
+    "resume": "User says continue and receiving dialogue reads latest root/workline fixed entry; resume WP02 document-only against actual newest state. Do not ask again for this confirmed12 scope; do not infer code/run/gate authorization.",
+    "next_task_started_this_closeout": false,
+    "shared_pending": "main retains HC-ADM-Q01—03 and WP02/WP03 interface/hook/safety decisions; scope confirmation alone does not resolve these",
+    "main_receiving_r31_or_this_closeout": "unknown; no other receiver receipt written",
+    "prior_r31_publication_check": {
+      "commit": "fa781b5538f1760b0f408e02b64183261c239063",
+      "entry_and_contract_read_this_closeout": true,
+      "all9_local_stage_blobs_match_latest_remote_tree": true,
+      "unreturned_changes_in_comparison_scope": 0
+    },
+    "containing_commit": null,
+    "containing_commit_note": "Resolve actual result from Git history after publication; no future self SHA."
+  },
+  "resume_requirement": "User explicitly continues; next WP02 remains NOT_STARTED_DOCUMENT_ONLY.",
+  "validation_scope_plan_confirmation": {
+    "path": "worklines/half_chaos/CONFIRMATIONS.json",
+    "section": "r31_validation_scope_plan_confirmation",
+    "id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
+    "git_blob_sha": "760386e6735dcd90f1f244ee1e2ffbe6ca620e60",
+    "sha256": "3279350089538ed12e5fd52f074f8aff211881bb93f07ab92749f6a53e11ed8e",
+    "size_bytes": 116790,
+    "chars": 108568
   }
 }

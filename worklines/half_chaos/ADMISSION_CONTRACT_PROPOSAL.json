@@ -3,7 +3,7 @@
   "revision": "HC-DESIGN-03-20261018-r31",
   "task_completed": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
   "date_local": "2026-10-18",
-  "status": "DOCUMENT_PROPOSAL_PREPARED_SHARED_CONTRACT_PENDING",
+  "status": "DOCUMENT_VALIDATION_SCOPE_PLAN_CONFIRMED_SHARED_INTERFACE_PENDING_NOT_IMPLEMENTED",
   "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
   "work_package": "WP01",
   "parent_proposal": {
@@ -18,7 +18,9 @@
     "engine_import_or_run": false,
     "gate_changes": false,
     "implementation_approved": false,
-    "gameplay_candidate_approved": false
+    "gameplay_candidate_approved": false,
+    "future_validation_scope_plan_confirmed": true,
+    "detailed_contract_approved": false
   },
   "interpretation": "下列为未来可信准入与适配合同的具体建议，非现有API/实际能力/产品字段/新增游戏规格。three tuples只是本批限制，不撤销其他组合的既有设计或决定全模式可用池。",
   "current_source": {
@@ -254,7 +256,9 @@
         "variant": null,
         "both_enabled": true
       },
-      "status": "PROPOSED_NOT_ADMITTED"
+      "status": "PROPOSED_NOT_ADMITTED",
+      "validation_scope_status": "CONFIRMED_SCOPE_PLAN_ONLY_NOT_ADMITTED",
+      "scope_confirmation_id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018"
     },
     {
       "id": "HC-ADM-PD-M04",
@@ -281,7 +285,9 @@
         "variant": null,
         "both_enabled": true
       },
-      "status": "PROPOSED_NOT_ADMITTED"
+      "status": "PROPOSED_NOT_ADMITTED",
+      "validation_scope_status": "CONFIRMED_SCOPE_PLAN_ONLY_NOT_ADMITTED",
+      "scope_confirmation_id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018"
     },
     {
       "id": "HC-ADM-DS-D01",
@@ -308,7 +314,9 @@
         "variant": null,
         "both_enabled": true
       },
-      "status": "PROPOSED_NOT_ADMITTED"
+      "status": "PROPOSED_NOT_ADMITTED",
+      "validation_scope_status": "CONFIRMED_SCOPE_PLAN_ONLY_NOT_ADMITTED",
+      "scope_confirmation_id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018"
     }
   ],
   "replay_bindings": [
@@ -716,7 +724,8 @@
       "all64_UNRUN_and_no_game_execution": true,
       "all_changed_paths_half_chaos_only": true,
       "independent_review": false
-    }
+    },
+    "scope_plan_confirmations_after_clarification": 1
   },
   "access_gaps": [
     "完整深层历史与私有原档未全迁移；本任务现有相关正文/原确认可访问，未借此宣称独立复核全档",
@@ -788,5 +797,17 @@
     "id": "NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT",
     "status": "NOT_STARTED_DOCUMENT_ONLY",
     "action": "结合主线真实WP02回复，按原64项相关义务细化主行动闭合/正式结束闭合/D01请求边界与被动证据合同；列实际可读字段、早退与停止条件。只读源码和准备文档，不加hook、不运行；WP01共享准入继续待主线核定。"
+  },
+  "validation_scope_plan_confirmation": {
+    "path": "worklines/half_chaos/CONFIRMATIONS.json",
+    "section": "r31_validation_scope_plan_confirmation",
+    "id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
+    "git_blob_sha": "760386e6735dcd90f1f244ee1e2ffbe6ca620e60",
+    "sha256": "3279350089538ed12e5fd52f074f8aff211881bb93f07ab92749f6a53e11ed8e",
+    "size_bytes": 116790,
+    "chars": 108568,
+    "approved_scope": "three tuples and existing12 future validation range only",
+    "detailed_contract_approved": false,
+    "code_or_run_authorized": false
   }
 }
