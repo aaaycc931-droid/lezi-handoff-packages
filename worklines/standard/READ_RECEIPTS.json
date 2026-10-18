@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-17T23:32:00+08:00",
+  "recorded_at_local": "2026-10-18T10:41:22+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -429,39 +429,37 @@
   "collaboration": {
     "working_revision": "2026-10-17.v0.13",
     "formal_baseline": "1.8.0",
-    "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
+    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
     "body_git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
     "body_sha256": "863c7d6f752e6cdcd4a900b4b1e52ff3f56119efe217dcf1002898a5f101ff98",
     "gate": "L3",
     "actual_new_sections": [
-      "INTEGRATED_START full",
-      "TASK_ROUTES full",
-      "PROJECT_WORK_AGREEMENT full",
-      "GITHUB_HANDOFF_WORKFLOW full",
-      "AUTHORIZATION_AND_ADOPTION full",
-      "BASELINE_DELTA_CHECK full",
-      "MANDATORY_PRECHECK full including CI-17",
-      "DIRECTION_CHECK full",
-      "TEMPORAL_OPPORTUNITY_CHECK full",
-      "AI_LIMITATION_CONTROL full",
-      "FILE_OUTPUT_POLICY full",
-      "PART-6_CURRENT_STATE continuity/completion full; integration-state status not fully audited",
-      "PART-7_MAINTENANCE full",
-      "PART-8_SOURCES source principles",
-      "PART-9_VERSION_HISTORY full"
+      "INTEGRATED_START",
+      "TASK_ROUTES",
+      "PROJECT_WORK_AGREEMENT",
+      "GITHUB_HANDOFF_WORKFLOW",
+      "AUTHORIZATION_AND_ADOPTION",
+      "PROACTIVE_DISCOVERY_AND_GUIDANCE",
+      "BASELINE_DELTA_CHECK including APPROVED_BASELINE_PRESERVATION",
+      "MANDATORY_PRECHECK including SOURCE_ACTIVATION/GATE_RECEIPT",
+      "DIRECTION_CHECK",
+      "TEMPORAL_OPPORTUNITY_CHECK",
+      "AI_LIMITATION_CONTROL",
+      "FILE_OUTPUT_POLICY",
+      "PART-6_CURRENT_STATE through COMPLETION_STATUS (not INTEGRATION_STATE)",
+      "PART-7_MAINTENANCE",
+      "PART-8_SOURCES source principles only"
     ],
     "adoption_scope": "Current ordinary-line source activation, scope inheritance, approved baseline, pending versus approval, source-bound incremental handoff and verification controls only.",
     "effectiveness_verified": false,
     "latest_identity_recheck": {
-      "commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+      "commit": "3a38dec64327dcff63d596809debe7a8810ae616",
       "working_revision": "2026-10-17.v0.13",
       "formal_baseline": "1.8.0",
       "body_blob": "54e800ebd02a83ded24a4c076c759c8193767fd5",
-      "index_and_tree_identity_match_prior_actually_read_body": true,
-      "prior_full_applicable_module_reading_reused": true,
-      "project_work_agreement_reread_full": true,
-      "workflow_blob_unchanged": "4fdcafda6115de120467628d9837064910c1f36b",
-      "new_complete_body_reread_claimed": false
+      "full_applicable_modules_actually_reread": true,
+      "new_complete_body_reread_claimed": false,
+      "private_sources_read": false
     }
   },
   "transport_integrity_only": {
@@ -491,53 +489,130 @@
     "selected_option": "A"
   },
   "current_task_reading": {
-    "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
     "user_instruction": {
-      "quote": "进行下一步",
-      "at_local": "2026-10-17T21:45:41+08:00",
-      "scope": "Continue bounded source review and prepare concrete candidate if needed; not gameplay approval."
+      "quote": "继续乐子象棋普通象棋模式工作线",
+      "at_local": "2026-10-18T10:38:45+08:00",
+      "scope": "Resume the standard workline and restore the existing exact candidate; not gameplay approval or implementation authorization."
     },
     "files": [
       {
+        "path": "START_STANDARD.txt",
+        "read_scope": "Complete fixed root entry"
+      },
+      {
+        "path": "START_HERE.txt",
+        "read_scope": "Complete current standard entry"
+      },
+      {
+        "path": "CURRENT_STATE.json",
+        "read_scope": "Current task, scope, counters, freeze, collaboration/source pointers, latest instruction and complete latest closeout; unrelated historical receipt fields not fully audited"
+      },
+      {
+        "path": "SOURCE_PRIORITY.json",
+        "read_scope": "Current source order, exact H02/M04/wording pointers; unrelated past updates not newly adopted"
+      },
+      {
+        "path": "PROJECT_WORK_AGREEMENT.md",
+        "read_scope": "Complete current agreement including inherited GitHub maintenance authorization"
+      },
+      {
+        "path": "NEXT_ACTIONS.json",
+        "read_scope": "Complete"
+      },
+      {
+        "path": "PENDING_DECISION.json",
+        "read_scope": "Complete current candidate, presentation, guard and next fields"
+      },
+      {
+        "path": "RETURN_CONTRACT.json",
+        "read_scope": "Complete"
+      },
+      {
+        "path": "SYNC_NOTICE.md",
+        "read_scope": "Complete dated notice, superseded pending status remains historical"
+      },
+      {
+        "path": "MODE_SYNC.json",
+        "read_scope": "Complete dated index; current confirmations control later changes"
+      },
+      {
+        "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+        "read_scope": "Complete original candidate, guard, policy, AP-S01, exclusions and unrun specifications"
+      },
+      {
         "path": "rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "Complete current H02 and H21 (including invincible) sections"
+        "read_scope": "Complete H02 and current geometry confirmation; H21 common invocation/omen process and complete invincible subsection; other H21 forms not newly audited"
       },
       {
         "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "Complete M04 including exact normal path-scale/H02 exclusions and common wording"
+        "read_scope": "Complete M04 body, geometry, exact normal-path-scale confirmation and wording paragraphs"
       },
       {
         "path": "rules/shared/01_CURRENT_RULES.md",
-        "read_scope": "Full1.1A related attack endpoint/path source boundary"
+        "read_scope": "Complete1.1/1.1A,3.1/3.2,5.1, action movement/attack classification and immunity subsection"
       },
       {
         "path": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
-        "read_scope": "Full original confirmation/guard/policy/exclusions"
+        "read_scope": "Complete exact original confirmation"
       },
       {
         "path": "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
-        "read_scope": "Full original confirmation/guard/policy/exclusions"
+        "read_scope": "Complete exact original confirmation"
+      },
+      {
+        "path": "rules/confirmed/M04_SHARED_WORDING_20261017.json",
+        "read_scope": "Complete exact original wording selection and three-mode clarification"
+      },
+      {
+        "path": "sources/standard/START_HERE.txt",
+        "read_scope": "Complete historical source entry; current root overrides dated pending/delivery status"
+      },
+      {
+        "path": "sources/standard/CURRENT_STATE.json",
+        "read_scope": "Complete historical source state"
       },
       {
         "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
-        "read_scope": "Full original confirmed update"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
-        "read_scope": "Full2.1/2.2, related historical H02 5.1-5.3 and M04 10.1-10.3; obsolete strong-strike/stealth/path-clearing rules not adopted"
+        "read_scope": "Complete original update"
       },
       {
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "Full confirmed H21 common/invincible and exact H02 geometry/normal M04 path-scale sections; current progress; not full historical corpus reread"
+        "read_scope": "Complete latest closeout/AP pending sections and current progress; complete confirmed H21 invincible/M04/geometry/path-scale and H02 activation-turn source alignment sections; not complete historical draft"
+      },
+      {
+        "path": "modes/standard/CURRENT_RULES.md",
+        "read_scope": "Complete current mode entry; existing unrelated policies retained, no new approval"
+      },
+      {
+        "path": "../main/ADJUDICATION.json",
+        "read_scope": "Complete exact shared H02/M04 geometry and normal M04 path-scale policy rows and standard current-closeout candidate pointer only"
+      },
+      {
+        "path": "../main/READ_RECEIPTS.json",
+        "read_scope": "Complete current_stage row, current_M04_confirmation row and M04_current_wording row only; historical receipt corpus not fully audited."
       },
       {
         "path": "../main/CURRENT_STATE.json",
-        "read_scope": "Current1.61 status/pending/next metadata only; unchanged from previous observation"
+        "read_scope": "Current status/version/next/pending metadata only; newer H15/H06 policy and sources not adopted."
+      },
+      {
+        "path": "../../CURRENT_HANDOFF.json",
+        "read_scope": "Workline routing, current standard closeout/candidate metadata only"
+      },
+      {
+        "path": "prepare_sources.py",
+        "read_scope": "Complete; run only source-directory/empty archive-parts check"
+      },
+      {
+        "path": "verify_dispatch.py",
+        "read_scope": "Complete script; full309-file check not run because local source retrieval is task-scoped"
       }
     ],
     "adopted_scope": [
-      "Existing approved source clauses and exact original exclusions retained",
-      "Current task produces pending proposal only, not an approved rule"
+      "Inherited exact previously confirmed H02/M04 geometry and normal-M04 path-scale rules with all exclusions preserved",
+      "Exact pending AP candidate restored without approval",
+      "Main actual receipt of AP candidate and adoption of common M04 wording recognized"
     ],
     "not_adopted": [
       "H02发动当回合及发动成功/失败窗口、失败扣次或回弹顺序",
@@ -1417,13 +1492,13 @@
     "scope": "Exact original normal M04 path-scale A only; all exclusions retained; no new local gameplay confirmation."
   },
   "current_main_metadata_observed": {
-    "source_commit": "a63dcbfe6f147d629a1d1a94204a61711fbd1815",
+    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
     "path": "worklines/main/CURRENT_STATE.json",
-    "adjudication_version": "1.61",
+    "adjudication_version": "1.62",
+    "status": "round_closed_graduation_source_review_complete_policy_unresolved",
     "pending_decision": null,
-    "next_action": "核对H06目标快照早于H15毕业时，旧快照恢复与不得再次取得毕业收益的来源覆盖关系；先查是否存在合法可达分支，不自动选择回退训练、保留奖励或再次毕业。",
-    "latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
-    "read_scope": "Current-state and pending ID/status/next metadata only; no new H15 rule-policy/original-source adoption.",
+    "next_action": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
+    "read_scope": "Current status/version/next/pending metadata only; newer H15/H06 policy and sources not adopted.",
     "newer_H15_confirmation_adopted_here": false
   },
   "previous_source_review_reading": {
@@ -1547,5 +1622,107 @@
     "new_game_engine_runs": 0,
     "new_other_line_adoption_claimed": false,
     "other_receiver_receipts_written": false
+  },
+  "previous_task_reading": {
+    "source_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
+    "user_instruction": {
+      "quote": "进行下一步",
+      "at_local": "2026-10-17T21:45:41+08:00",
+      "scope": "Continue bounded source review and prepare concrete candidate if needed; not gameplay approval."
+    },
+    "files": [
+      {
+        "path": "rules/shared/02_CURRENT_HEROES.md",
+        "read_scope": "Complete current H02 and H21 (including invincible) sections"
+      },
+      {
+        "path": "rules/shared/03_CURRENT_MUTATIONS.md",
+        "read_scope": "Complete M04 including exact normal path-scale/H02 exclusions and common wording"
+      },
+      {
+        "path": "rules/shared/01_CURRENT_RULES.md",
+        "read_scope": "Full1.1A related attack endpoint/path source boundary"
+      },
+      {
+        "path": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+        "read_scope": "Full original confirmation/guard/policy/exclusions"
+      },
+      {
+        "path": "rules/confirmed/M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261017.json",
+        "read_scope": "Full original confirmation/guard/policy/exclusions"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+        "read_scope": "Full original confirmed update"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
+        "read_scope": "Full2.1/2.2, related historical H02 5.1-5.3 and M04 10.1-10.3; obsolete strong-strike/stealth/path-clearing rules not adopted"
+      },
+      {
+        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+        "read_scope": "Full confirmed H21 common/invincible and exact H02 geometry/normal M04 path-scale sections; current progress; not full historical corpus reread"
+      },
+      {
+        "path": "../main/CURRENT_STATE.json",
+        "read_scope": "Current1.61 status/pending/next metadata only; unchanged from previous observation"
+      }
+    ],
+    "adopted_scope": [
+      "Existing approved source clauses and exact original exclusions retained",
+      "Current task produces pending proposal only, not an approved rule"
+    ],
+    "not_adopted": [
+      "H02发动当回合及发动成功/失败窗口、失败扣次或回弹顺序",
+      "终点龙鳞/普通防御叠加/龙爪完整顺序；终点无形或特殊直接指定联合分支",
+      "其他或永久碾碎免疫、不同盾、己方/暗置/隐藏阵营路径棋",
+      "将帅/影武者/H10宿主与真帅承伤、特殊空间/临时操控/揭示倒戈",
+      "返回占格/陷阱/历史恢复、完整王安全终局搜索/字段/计时接口",
+      "新英雄/畸变入池、第二畸变、额外行动或时限刷新",
+      "游戏代码、引擎通过、独立复核、评分恢复或NET启动"
+    ],
+    "new_gameplay_user_confirmations": 0,
+    "game_engine_runs": 0
+  },
+  "observed_main_AP_candidate_receipt": {
+    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+    "path": "worklines/main/READ_RECEIPTS.json#latest_by_source.standard.current_stage",
+    "source_standard_commit": "bce9469df00d0645757ca3fb6ea979d74e2acf88",
+    "candidate_id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "candidate_blob": "284d0b724e48ad79f4ef51b307a9a7bb977917cf",
+    "candidate_received": true,
+    "candidate_approved": false,
+    "read_scope": "Complete current_stage row, current_M04_confirmation row and M04_current_wording row only; historical receipt corpus not fully audited.",
+    "new_this_phase_receipt_for_resume_verified": null
+  },
+  "session_resume": {
+    "id": "STD-SESSION-RESUME-20261018-r1",
+    "at_local": "2026-10-18T10:41:22+08:00",
+    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+    "user_instruction": {
+      "quote": "继续乐子象棋普通象棋模式工作线",
+      "at_local": "2026-10-18T10:38:45+08:00",
+      "scope": "Resume the standard workline and restore the existing exact candidate; not gameplay approval or implementation authorization."
+    },
+    "status": "active_candidate_restored_pending_user_decision",
+    "previous_session_closeout": "STD-SESSION-CLOSEOUT-20261017-r2",
+    "candidate_source": {
+      "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
+    },
+    "candidate_approved": false,
+    "candidate_bytes_unchanged": true,
+    "new_gameplay_confirmations": 0,
+    "ordinary_confirmation_count": 31,
+    "direct_shared_confirmations": 11,
+    "new_game_code_changes": 0,
+    "game_engine_runs": 0,
+    "unrun_specs": [
+      "AP-S01",
+      "AP01-AP08",
+      "all prior unrun specifications"
+    ],
+    "other_dialogue_unreturned_work": "unknown; no other workline or original source modified",
+    "initial_visible_local_unreturned_files_found": 0
   }
 }

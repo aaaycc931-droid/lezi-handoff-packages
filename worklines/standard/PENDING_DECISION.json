@@ -1,6 +1,6 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "session_closed_H02_M04_path_scale_A_still_pending",
+  "status": "active_H02_M04_path_scale_A_pending_user_decision",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
@@ -9,12 +9,12 @@
   "next_work_item": {
     "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
     "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
-    "action": "用户明确继续本工作线后，恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的完整限定A与AP-S01具体情形，交用户明确决定；本次收束及以后继续均不当作批准。",
-    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "action": "已恢复原候选与AP-S01具体情形；在本对话呈现限定A，等待用户明确决定。继续不是批准；未获决定前不把A写为共同规则。",
+    "status": "candidate_restored_ready_for_user_decision_not_approved",
     "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
     "pending_is_not_approved": true,
     "approved": false,
-    "requires_continuation_before_work": true
+    "requires_continuation_before_work": false
   },
   "unresolved_questions": [
     "Latest main1.61 H15/H06 graduation source review next; no active user candidate reported. Newer H15 sources not fully read/adopted here.",
@@ -175,12 +175,12 @@
   "local_next": {
     "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
     "subject": "H02＋M04后续刺杀的路径龙鳞延伸方案",
-    "action": "用户明确继续本工作线后，恢复并呈现candidates/h02-m04-path-dragon-scale/v1.json的完整限定A与AP-S01具体情形，交用户明确决定；本次收束及以后继续均不当作批准。",
-    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "action": "已恢复原候选与AP-S01具体情形；在本对话呈现限定A，等待用户明确决定。继续不是批准；未获决定前不把A写为共同规则。",
+    "status": "candidate_restored_ready_for_user_decision_not_approved",
     "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
     "pending_is_not_approved": true,
     "approved": false,
-    "requires_continuation_before_work": true
+    "requires_continuation_before_work": false
   },
   "main_latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
   "last_confirmed_scope_note": "Existing last_confirmed/confirmation fields retain previously fully adopted H15 display source, not a claim that newer reported confirmation is adopted.",
@@ -197,5 +197,35 @@
     "scope": "this_conversation_only",
     "candidate_approved": false,
     "continuation_required_before_more_design": true
+  },
+  "session_resume": {
+    "id": "STD-SESSION-RESUME-20261018-r1",
+    "at_local": "2026-10-18T10:41:22+08:00",
+    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+    "user_instruction": {
+      "quote": "继续乐子象棋普通象棋模式工作线",
+      "at_local": "2026-10-18T10:38:45+08:00",
+      "scope": "Resume the standard workline and restore the existing exact candidate; not gameplay approval or implementation authorization."
+    },
+    "status": "active_candidate_restored_pending_user_decision",
+    "previous_session_closeout": "STD-SESSION-CLOSEOUT-20261017-r2",
+    "candidate_source": {
+      "path": "candidates/h02-m04-path-dragon-scale/v1.json",
+      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
+    },
+    "candidate_approved": false,
+    "candidate_bytes_unchanged": true,
+    "new_gameplay_confirmations": 0,
+    "ordinary_confirmation_count": 31,
+    "direct_shared_confirmations": 11,
+    "new_game_code_changes": 0,
+    "game_engine_runs": 0,
+    "unrun_specs": [
+      "AP-S01",
+      "AP01-AP08",
+      "all prior unrun specifications"
+    ],
+    "other_dialogue_unreturned_work": "unknown; no other workline or original source modified",
+    "initial_visible_local_unreturned_files_found": 0
   }
 }
