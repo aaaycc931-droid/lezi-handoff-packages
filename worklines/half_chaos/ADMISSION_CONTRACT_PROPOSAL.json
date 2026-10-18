@@ -1,0 +1,792 @@
+{
+  "schema": "lezi.hc_admission_contract_proposal.v1",
+  "revision": "HC-DESIGN-03-20261018-r31",
+  "task_completed": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
+  "date_local": "2026-10-18",
+  "status": "DOCUMENT_PROPOSAL_PREPARED_SHARED_CONTRACT_PENDING",
+  "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+  "work_package": "WP01",
+  "parent_proposal": {
+    "path": "worklines/half_chaos/IMPLEMENTATION_SCOPE_PROPOSAL.json",
+    "git_blob_sha": "e198b5953a66053562f8419275d0fceb5f78d37c",
+    "section": "work_packages/0"
+  },
+  "authorization": {
+    "document_preparation": true,
+    "own_fixed_stage_writeback": true,
+    "code": false,
+    "engine_import_or_run": false,
+    "gate_changes": false,
+    "implementation_approved": false,
+    "gameplay_candidate_approved": false
+  },
+  "interpretation": "下列为未来可信准入与适配合同的具体建议，非现有API/实际能力/产品字段/新增游戏规格。three tuples只是本批限制，不撤销其他组合的既有设计或决定全模式可用池。",
+  "current_source": {
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "branch": "codex/half-chaos-h11-b-clock-20261012",
+    "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "branch_head_reread": true,
+    "open_prs": [
+      {
+        "number": 7,
+        "head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "base": "codex/score-mode-bridge-20261011",
+        "draft": true
+      },
+      {
+        "number": 6,
+        "head": "f1c01585ade8b4e17618399901d7283f37271459",
+        "base": "codex/score-policy-adapter-20261011",
+        "draft": true
+      },
+      {
+        "number": 5,
+        "head": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+        "base": "codex/score-mechanism-20261010",
+        "draft": true
+      },
+      {
+        "number": 4,
+        "head": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+        "base": "codex/ui-android-apk-20261001",
+        "draft": true
+      },
+      {
+        "number": 3,
+        "head": "60b70046ebff1feb46c4a0cff74058146bd8284d",
+        "base": "codex/ui-android-apk-20261001",
+        "draft": true
+      },
+      {
+        "number": 2,
+        "head": "a3704459e8dbb08e1bb6fb9bcb1b169319a6d1bc",
+        "base": "main",
+        "draft": true
+      },
+      {
+        "number": 1,
+        "head": "de4eb73bcaea678e1f183ec2f0181369fe1cebce",
+        "base": "main",
+        "draft": true
+      }
+    ],
+    "pr_review_scope": "number/head/base/draft metadata only; no diff/CI audit, no implementation worktree established"
+  },
+  "main_actual_response": {
+    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+    "source_path": "worklines/main/SHARED_COORDINATION.json#/current_shared_scope_request_queue",
+    "source_blob": "029c63b7a4c7331e1ec80c1b852a4ad37836e630",
+    "requests": [
+      {
+        "id": "HC-SCOPE-WP01",
+        "owner": "main",
+        "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      },
+      {
+        "id": "HC-SCOPE-WP02",
+        "owner": "main",
+        "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      {
+        "id": "HC-SCOPE-WP03",
+        "owner": "main",
+        "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      }
+    ],
+    "actual_r30_receipt_path": "worklines/main/READ_RECEIPTS.json#/latest_by_source/half_chaos/latest_r30_stage",
+    "actual_r30_read_scope": "Full authorization; fullWP01/02/03 objects; WP04/05 IDs/titles only; complete exact_boundary_options/later_run_proposal/exclusions/stop_conditions/verification/next. No obligation_routes/full original input/source-code audit. Complete r30 closeout and actual main_H15_H06_prestart/r30_concurrent_main161_reconciliation receipt objects. Not whole WORKING8.52/8.53 or original matrix/source code.",
+    "proposal_or_implementation_approved_by_main": false,
+    "adoption_here": "routing and exact deferred scope only; does not adopt unseen full main1.62 adjudication or graduation policy"
+  },
+  "immutable_inputs": [
+    {
+      "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+      "sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b"
+    },
+    {
+      "path": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
+      "git_blob_sha": "322e5aef2fcee3d2614fa4dd515c159c794e428b",
+      "sha256": "62a8a8980da8fdf47d196173fd59a5b23d1b345d9d77501f41c79c6b8dabe99b"
+    },
+    {
+      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836"
+    },
+    {
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68"
+    },
+    {
+      "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+      "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
+      "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda"
+    },
+    {
+      "path": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
+      "git_blob_sha": "0a7cd559ba0feb1b6c788fa389384eb174eec599",
+      "sha256": "dcb15a75f8a535860a565aabf92c0223acc9c6cd11ce9f6dd67e8d2d3856822d"
+    }
+  ],
+  "engine_sources": [
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/modes.ts",
+      "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+      "actual_read_scope": "complete file"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/research-source-context.ts",
+      "git_blob_sha": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+      "actual_read_scope": "complete file"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/remote-room.ts",
+      "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+      "actual_read_scope": "complete normalizeModeConfig/createGameAfterSetup/createRemoteRoom/joinRemoteRoom/submitRemoteRps/submitRemoteHeroSelection/completeRemoteHeroIntro/beginHeroPreparation/expiredFormalAction/submitRemoteMove/submitRemoteHeroAbility; not whole room/network lifecycle"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/game.ts",
+      "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+      "actual_read_scope": "complete initializeFeatureGameState only; no renewed full game semantic audit"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/room.ts",
+      "git_blob_sha": "093a1732eed4ee48a6d3487ce938d3c1d17a58c2",
+      "actual_read_scope": "complete RoomGame/sideForPlayer/applyRoomMove"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/setup.ts",
+      "git_blob_sha": "15df513e8204d48464c097453c7bf9b83748c9f5",
+      "actual_read_scope": "createIdentityPool/shuffleIdentities/createInitialGame complete"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/mutations.ts",
+      "git_blob_sha": "a433d6f562686a3e654dd9d003db562a4e30a424",
+      "actual_read_scope": "MUTATION_IDS and relevant rarity definitions; complete destiny definitions/isDestinyUnlocked/legendaryMutationCandidates/drawRuntimeMutation"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/hero-forms.ts",
+      "git_blob_sha": "e42cb0854bd71dfaf4004268ec79e11c115c692d",
+      "actual_read_scope": "complete package/selection/validation/locking/selectedHeroId functions"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/heroes.ts",
+      "git_blob_sha": "0958d1e16103de4b808a96d4fb825bf446a45e59",
+      "actual_read_scope": "HERO_IDS and H03/H04/H05/H06 catalog entries only"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "scripts/scoring/mode-fixture-loader.ts",
+      "git_blob_sha": "f6dfb963bfbae035740003955f094824f661aea8",
+      "actual_read_scope": "complete file"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "scripts/scoring/fixture-runner.ts",
+      "git_blob_sha": "d0d5be6dbe7b702bc2221cf17dc7e75f201c145f",
+      "actual_read_scope": "constructor/commandFor only this stage; old run/zero-capture restriction reused from unchanged r30 source inventory"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "scripts/scoring/policy-session.ts",
+      "git_blob_sha": "3aa254a0a442bdb12cf3f8a9d26fde039d7c646d",
+      "actual_read_scope": "constructor through initial setup; complete prepare/capture/tick/submit/deliver; not broker/client/policy semantic audit"
+    }
+  ],
+  "exact_tuple_candidates": [
+    {
+      "id": "HC-ADM-PD-M01",
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "engine_heroes": {
+        "red": "qin_long",
+        "black": "warrior"
+      },
+      "mutation": "M01",
+      "engine_mutation": "iron_steed",
+      "replay_ids": [
+        "MA-PD02",
+        "MA-PD03",
+        "MA-PD06-A",
+        "MA-PD06-B"
+      ],
+      "selection": {
+        "red_form": "front",
+        "black_form": "front",
+        "variant": null,
+        "both_enabled": true
+      },
+      "status": "PROPOSED_NOT_ADMITTED"
+    },
+    {
+      "id": "HC-ADM-PD-M04",
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "engine_heroes": {
+        "red": "qin_long",
+        "black": "warrior"
+      },
+      "mutation": "M04",
+      "engine_mutation": "war_chariot",
+      "replay_ids": [
+        "MA-PD01",
+        "MA-PD04",
+        "MA-PD05-A",
+        "MA-PD05-B"
+      ],
+      "selection": {
+        "red_form": "front",
+        "black_form": "front",
+        "variant": null,
+        "both_enabled": true
+      },
+      "status": "PROPOSED_NOT_ADMITTED"
+    },
+    {
+      "id": "HC-ADM-DS-D01",
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "engine_heroes": {
+        "red": "nozdormu",
+        "black": "murozond"
+      },
+      "mutation": "D01",
+      "engine_mutation": "end_time",
+      "replay_ids": [
+        "MA-DS01-02",
+        "MA-DS03",
+        "MA-DS04",
+        "MA-DS05"
+      ],
+      "selection": {
+        "red_form": "front",
+        "black_form": "front",
+        "variant": null,
+        "both_enabled": true
+      },
+      "status": "PROPOSED_NOT_ADMITTED"
+    }
+  ],
+  "replay_bindings": [
+    {
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "tuple_id": "HC-ADM-PD-M04",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/0",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/0",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "tuple_id": "HC-ADM-PD-M01",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/1",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/1",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "tuple_id": "HC-ADM-PD-M01",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/2",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/2",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "tuple_id": "HC-ADM-PD-M04",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/3",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/3",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "tuple_id": "HC-ADM-PD-M04",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/4",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/4",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "tuple_id": "HC-ADM-PD-M04",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/5",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/5",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "tuple_id": "HC-ADM-PD-M01",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/6",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/6",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "tuple_id": "HC-ADM-PD-M01",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/7",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/7",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "tuple_id": "HC-ADM-DS-D01",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/8",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/8",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "tuple_id": "HC-ADM-DS-D01",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/9",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/9",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "tuple_id": "HC-ADM-DS-D01",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/10",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/10",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    },
+    {
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "tuple_id": "HC-ADM-DS-D01",
+      "initialization_ref": "INITIALIZATION_WITNESS_DATA.json#/replay_bindings/11",
+      "action_ref": "REPLAY_ACTION_DATA.json#/replays/11",
+      "scope": "same original planned prefix; full legal setup required; UNRUN"
+    }
+  ],
+  "trusted_capability_proposal": {
+    "issuer": "由主线核定的可信研究调用方内部构造；当前未定接口/未实现；本JSON不能作为权限令牌。",
+    "required_binding": [
+      "一个固定业务源码基准与单一精确tuple_id；绑定本批回放/world/action数据身份，源变更先停并复核",
+      "真实唯一房间与双方不同且稳定playerId；创建时绑定房主席，加入时核客席；不得仅比较英雄值集合",
+      "RPS真实完成后锁定game.players红黑映射及对应英雄全包；本批红黑反转不自动准入，即使D01全局设计允许两阵营顺序",
+      "half_chaos、heroesEnabled=true、mutationsEnabled=true；只允许本tuple完整表形态包，无variant/disabled-mask/第三英雄/第二畸变",
+      "创建至调用的房间权威实例/可信句柄关联，不只相信客户端拷来的roomId；具体关联方式交主线决定",
+      "能力只对当前同步操作生效，异常finally清理；保留现有不可嵌套、不可异步返回边界，不跨await/回调借出或序列化给玩家"
+    ],
+    "lifecycle": "文档建议分阶段验证：建房时只允许进入受限准备流程；座位/选择/RPS/抽取/完整feature锁逐关核对后才可作为本回放初始化依据。缺事实不以undefined跳过最终核验。",
+    "no_global_opening": "featuresReady保持false；旧MODE_RESEARCH_SOURCES与P0限定语义不因本建议开放；缺可信能力的产品请求继续现有拒绝。",
+    "gate_owner_decision": "当前requireModeFeatureAdaptation没有roomId参数，modeResearchPermits(rules)也只对英雄值集合检查；如何在初始化与后续请求核对真实房间/阵营/全包由主线定契约，本线不虚构已可用签名。"
+  },
+  "call_chain_contract": [
+    {
+      "id": "AC-CREATE",
+      "entry": "createRemoteRoom→normalizeModeConfig→requireModeAdaptationReady/researchSources",
+      "source": "src/remote-room.ts; src/modes.ts; src/research-source-context.ts",
+      "required": "能力可信发行/同房间/模式/本次host匹配；仅授权后续有限setup资格，不能当完整组合已通过。旧门禁当前仍拒现批。"
+    },
+    {
+      "id": "AC-JOIN",
+      "entry": "joinRemoteRoom",
+      "source": "src/remote-room.ts",
+      "required": "保留invite/不同双方ID/原phase/房间已满拒绝；加入的真实guest必须等于预绑定第二玩家，不从room JSON自动授能。"
+    },
+    {
+      "id": "AC-SELECT",
+      "entry": "submitRemoteHeroSelection→getHeroPackage/effectiveResearchHero",
+      "source": "src/remote-room.ts; src/hero-forms.ts",
+      "required": "按稳定actor匹配其唯一完整表包；保留锁定/截止/确认。不能借对方英雄或从同一允许值集合交叉组新局。"
+    },
+    {
+      "id": "AC-ASSIGN",
+      "entry": "submitRemoteRps→assignments→heroes/packages按真实红黑映射",
+      "source": "src/remote-room.ts",
+      "required": "正常提交猜拳、双方确认与截止；核最终side映射正好等于本tuple，再进入新局创建。无H11，不能照旧runner单洗牌交换阵营。"
+    },
+    {
+      "id": "AC-DRAW",
+      "entry": "createGameAfterSetup→createInitialGame→drawRuntimeMutation",
+      "source": "src/remote-room.ts; src/setup.ts; src/mutations.ts",
+      "required": "本方15独立混洗后沿现有合法抽取，真实结果匹配单一mutation/D01羁绊；本地候选见证不能替换room.features/state或池/概率。"
+    },
+    {
+      "id": "AC-LOCK",
+      "entry": "initializeFeatureGameState→createHeroSelections→requireModeFeatureAdaptation→initializeHeroForms；initializeFeatureSecret",
+      "source": "src/game.ts; src/hero-forms.ts; r28初始化秘密映射源",
+      "required": "新局revision0/无旧feature锁/无行动与正式回合；完整tuple/包/模式与预绑定房间一致后初始化一次。核实际身份/本体/锚，严禁重初始化中盘清资源。initializeFeatureSecret本轮沿未变r28映射，不冒充重新全文审计。"
+    },
+    {
+      "id": "AC-READY",
+      "entry": "completeRemoteHeroIntro→beginHeroPreparation；原advanceRemoteRoomTime",
+      "source": "src/remote-room.ts",
+      "required": "本三组无猎人/偏锋/天空上将准备步骤，按原真实phase转换；正式起钟为明确状态动作，记录原deadline/first75/正常机会，不借观察器启动或额外begin。"
+    },
+    {
+      "id": "AC-MOVE",
+      "entry": "submitRemoteMove→expiredFormalAction→applyRoomMove→applyAuthoritativeMove→原房间后续",
+      "source": "src/remote-room.ts; src/room.ts",
+      "required": "来源特定适配器调用原房间入口；每次先复核可信能力绑定与实际tuple；保留成员/轮次/actionId/revision/超时/终局及完整后续；不直调game函数替代房间计时。"
+    },
+    {
+      "id": "AC-ABILITY",
+      "entry": "submitRemoteHeroAbility→expiredFormalAction→sideForPlayer→applyHeroAbility→原房间后续",
+      "source": "src/remote-room.ts",
+      "required": "D01只映射原hourglass/bomb；H06/H05普通能力不混入；前置/安全/费用与拒绝照原确认。适配不替代EI02/EI03修复，未实现安全则保持阻断。"
+    },
+    {
+      "id": "AC-EVIDENCE",
+      "entry": "请求前/同步返回或抛错；WP02所需精确闭合点仍待定",
+      "source": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
+      "required": "同步被动读authority/secret只留受控证据，红黑raw view分别；未到精确闭合边界不合成快照；后tick独立记录，不用deferTurnEnd。"
+    }
+  ],
+  "random_binding_proposal": {
+    "identity": "沿原10世界/12绑定、black后red各15池/14抽取，共28个身份见证；必须核每次bound/value/顺序/消费完毕及实际secret映射。现有halfChaosFixtureRandom只有身份流，不能承担随后的mutation抽取。",
+    "pd_candidates": [
+      {
+        "tuple_id": "HC-ADM-PD-M01",
+        "source_derived_candidate_draws": [
+          {
+            "max_exclusive": 8,
+            "value": 0,
+            "result": "iron_steed"
+          }
+        ]
+      },
+      {
+        "tuple_id": "HC-ADM-PD-M04",
+        "source_derived_candidate_draws": [
+          {
+            "max_exclusive": 8,
+            "value": 3,
+            "result": "war_chariot"
+          }
+        ]
+      }
+    ],
+    "d01_candidate": {
+      "tuple_id": "HC-ADM-DS-D01",
+      "source_derived_candidate_draws": [
+        {
+          "max_exclusive": 8,
+          "value": 3,
+          "meaning": "兼容外层war_chariot传说入口"
+        },
+        {
+          "max_exclusive": 3,
+          "value": 2,
+          "meaning": "传说内部[war_chariot,chaos,destiny:end_time]选宿命"
+        }
+      ],
+      "guard": "真实heroes恰nozdormu/murozond且正常候选函数；实际返回end_time；本轮只从不可变列表静态推导，未调用函数/发随机数。"
+    },
+    "approval_status": "PROPOSED_WITNESSES_NOT_APPLIED_NOT_SHARED_ADMISSION_APPROVAL",
+    "preserved": "精确外层权重未定；上述只是14b兼容抽取的一条合法结果建议，不是最终概率确认、修改生产抽样或固定为必出宿命。主线尚未核定此研究绑定，D01继续BLOCKED_UNRUN。",
+    "mismatch": "源列表/候选/计数/多余抽取或实际结果不符即停；不得修改概率、替换mutation/身份、盲重试直到成功或跨局挪用锚点。"
+  },
+  "adapter_contract": {
+    "driver": "未来另做PD/DS来源特定有限适配，先独立于旧固定jieqi/night/shuffler/jian_xie runner及旧P0投影；不删除旧零捕获保护，不拓掩码以掩盖缺口。",
+    "scope": "仅原110请求（100主行动＋10技能）与210声明观察点，本轮不生成发送命令，不追加刺激/游戏规格；DS01→DS02一局连续，秘密配对为独立房间、同公开序列。",
+    "moves": "semantic_from/to→原MoveCommand.from/to；actual revision→expectedRevision，实际actor映射→playerId，actionId由已获准driver生成；可选pieceId仅原公开允许，不从真种/锚点别名填给玩家。",
+    "skills": "hourglass→既有ability=hourglass；dragon_bomb→既有ability=bomb，to为原目标格，pieceId由当时公开已现身施放者映射。无需新网络字段，不能使用普通rewind/time技能代替。",
+    "order": "每回合pre_main_requests按声明先后，再normal_main，再原正式结算；不按数据文件中对象排列误先走main。意外拒绝/到期/终局停止，不能快进至目标检查点。",
+    "clock": "同一声明now区分提交/返回与之后显式tick，比较原deadline/正式机会而非墙钟剩余毫秒恒等；到期入口保留合法超时结算，不将其当准入拒绝副作用。",
+    "delivery": "相同状态新请求/原样重传/同ID异actor或payload分开；现原样重传与冲突刺激未列入110请求，本轮只保留缺口。旧RESEARCH_ACTION_ID_CONFLICT不是产品协议保证。",
+    "privacy": "后台身份/世界/锚/证据与真实玩家输出分离；不增产品公开字段；raw view不等于客户端提示/按钮/错误通道验收。"
+  },
+  "negative_boundary_proposals": [
+    {
+      "id": "AC-N01",
+      "condition": "无能力/客户端JSON伪造能力/产品入口",
+      "expected_scope": "保持现有产品拒绝，本建议不发新能力",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N02",
+      "condition": "roomId相同但非同一获准权威关联，或不同房间",
+      "expected_scope": "未来能力不得复用；具体可信关联交主线，不声称现接口已拒全部克隆",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N03",
+      "condition": "未绑定第三玩家、双方同ID、actor换英雄",
+      "expected_scope": "不因值在集合内就准入；原成员/席位条件保持",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N04",
+      "condition": "红黑反转、缺一英雄、任一disabled、里包/variant",
+      "expected_scope": "本批有限合同不自动准入；不否定其他已确认玩法",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N05",
+      "condition": "第二畸变/未列组合/普通H06H05未触发D01",
+      "expected_scope": "不拼配或借D01替换范围授权普通能力",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N06",
+      "condition": "mutation抽取不符/羁绊不成立/随机多消费",
+      "expected_scope": "停止初始化见证，不能注入或改概率重试",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N07",
+      "condition": "特征已锁/已有行动的中盘重新初始化",
+      "expected_scope": "原HERO_FORM_LOCKED保护；不能清盾/次数/死亡史凑前缀",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N08",
+      "condition": "嵌套scope/返回Promise/作用域退出后借用",
+      "expected_scope": "保留同步与finally清理；未来不得残留准入",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N09",
+      "condition": "业务源/数据身份变化而沿用旧能力",
+      "expected_scope": "停止依赖源核对；不把固定14b方案自动移植新源",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N10",
+      "condition": "过期/错误轮次/已正式终局请求",
+      "expected_scope": "保留原房间流程及真实结果；不关安全/刷新时限",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N11",
+      "condition": "观察耗随机/读墙钟推进状态/secret进玩家通道",
+      "expected_scope": "停止并保留可信基线；观察开关等价仍未验证",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    },
+    {
+      "id": "AC-N12",
+      "condition": "旧P0来源回归或非本批模式",
+      "expected_scope": "保持旧限定，不以本文件扩白名单或产品featuresReady",
+      "status": "PROPOSED_UNRUN_CONTRACT_CHECK_NOT_NEW_GAME_SPEC"
+    }
+  ],
+  "observation_scope": {
+    "retained": "r30 WP02精确主行动闭合、结束效果闭合、D01返回/抛错及可选阶段证据；本阶段不选择/增加hook。",
+    "references": [
+      "OBSERVATION_FIELD_MAPPING.json#/field_groups",
+      "OBSERVATION_FIELD_MAPPING.json#/observation_gaps",
+      "ASSERTION_EVIDENCE_MATRIX.json#/rows",
+      "IMPLEMENTATION_SCOPE_PROPOSAL.json#/exact_boundary_options"
+    ],
+    "missing": "PD-S32无自然正例；PD-S31/DS-S16/DS-S22及既有未声明刺激保留。63有观察点不等于64完整覆盖。完整搜索/终局/层级/采样/压力/重复键仍主线。",
+    "readiness": "three tuples/12 binding documents refined; admitted0, executable0, all64 UNRUN"
+  },
+  "shared_owner_questions": [
+    {
+      "id": "HC-ADM-Q01",
+      "owner": "main",
+      "decision_needed": "核定可信发行方、同步scope生命周期及实际权威房间/双方ID/side/full package绑定在建房、初始化和每次请求的共同检查入口；当前feature gate无roomId，不能只扩英雄枚举。",
+      "reference": "trusted_capability_proposal; call_chain_contract",
+      "status": "DOCUMENT_CANDIDATE_PENDING_MAIN"
+    },
+    {
+      "id": "HC-ADM-Q02",
+      "owner": "main",
+      "decision_needed": "核定三种单一完整tuple及合法抽取研究见证边界；是否采用本文14b兼容候选流另定，不改最终外层权重/生产池。",
+      "reference": "exact_tuple_candidates; random_binding_proposal",
+      "status": "DOCUMENT_CANDIDATE_PENDING_MAIN"
+    },
+    {
+      "id": "HC-ADM-Q03",
+      "owner": "main",
+      "decision_needed": "确定未来来源适配与产品/旧P0隔离方式、源变更停止与上下文结束策略；保留嵌套/异步拒绝及所有旧门禁。",
+      "reference": "adapter_contract; negative_boundary_proposals",
+      "status": "DOCUMENT_CANDIDATE_PENDING_MAIN"
+    },
+    {
+      "id": "HC-SCOPE-WP02",
+      "owner": "main",
+      "decision_needed": "精确被动观察/终局早退仍按原请求核定；本轮仅继续准备独立文档，不选择实现hook。",
+      "status": "ORIGINAL_DEFERRED_REQUEST_RETAINED"
+    },
+    {
+      "id": "HC-SCOPE-WP03",
+      "owner": "main",
+      "decision_needed": "沙漏安全/投弹受将/实际原子王安全与M01威胁修复仍未批准实现；准入合同不解决这些阻断。",
+      "status": "ORIGINAL_DEFERRED_REQUEST_RETAINED"
+    }
+  ],
+  "confirmation_scope": {
+    "new_gameplay_confirmations": 0,
+    "new_shared_confirmation_consumption": 0,
+    "retained": "D01五原确认按原合法可用guard继承；H03半混乱离宫/铁甲及本线同原子确认保持；H04未到15完整回合不触发。r30已消费的主线1.61 H15/H06启动前恢复保持精确guard，旧吞机会推荐撤下。",
+    "original_confirmation_references": [
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
+        "read_scope": "full original confirmation object"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+        "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
+        "read_scope": "full original confirmation object"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "read_scope": "full original confirmation object"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+        "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+        "read_scope": "full original confirmation object"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_COLLAPSE_OWN_ACTION_DEADLINE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "de5c2fc7b47553f39a0d8b3508264df8cc81f61e",
+        "read_scope": "full original confirmation object"
+      }
+    ],
+    "wording": "已读M04_SHARED_WORDING_20261017原选择与三线澄清；沿用“战车隔一枚地面棋的【进攻】”，仅文案，不重计玩法确认。"
+  },
+  "verification": {
+    "business_code_changes": 0,
+    "business_repo_writes": 0,
+    "engine_imports": 0,
+    "engine_runs": 0,
+    "client_runs": 0,
+    "commands_created_or_sent": 0,
+    "all64": "UNRUN",
+    "ready_replays": 0,
+    "executed_replays": 0,
+    "new_game_specs": 0,
+    "independent_review": false,
+    "source_read_scope": "selected full functions/sections; no all-engine/all-history audit",
+    "document_checks": "OFFLINE_JSON_REFERENCE_AND_SOURCE_TEXT_CHECKS_COMPLETED_NOT_GAMEPLAY_TESTS",
+    "document_check_summary": {
+      "three_exact_tuples_twelve_original_bindings_match": true,
+      "ten_chain_rows_and_twelve_negative_boundaries_unique": true,
+      "six_original_input_git_blobs_match": true,
+      "original_worlds_10_specs_64_checkpoints_210_retained": true,
+      "random_candidates_checked_by_source_text_only": true,
+      "old_WORKING_sections_1_to_8_53_and_9_plus_preserved": true,
+      "all64_UNRUN_and_no_game_execution": true,
+      "all_changed_paths_half_chaos_only": true,
+      "independent_review": false
+    }
+  },
+  "access_gaps": [
+    "完整深层历史与私有原档未全迁移；本任务现有相关正文/原确认可访问，未借此宣称独立复核全档",
+    "可信准入/被动观察/安全修复/完整客户端递送及运行环境尚未建立"
+  ],
+  "limitation_audit": {
+    "audit_trigger": "未来共享准入及观察实现可能依赖此长期文档",
+    "risk_level": "high_document_fact_source_reversible_only",
+    "known_facts": [
+      "当前14b分支与7个开放PR头/基分支/草稿元数据已重新核对；PR7仍draft",
+      "当前研究入口仅接受旧半混乱shuffler，mutation拒绝；12条现批不能由其合法运行",
+      "主线已限定接收r30并允许WP01文档细化，未批准准入/实现/运行"
+    ],
+    "user_statements": [
+      "2026-10-18本轮仅准备实现与观察范围；不改业务、不运行引擎、不绕门禁；继承阶段GitHub写回"
+    ],
+    "claim_register": [
+      {
+        "claim": "现有门禁不承载本批三组完整组合",
+        "type": "document_fact",
+        "source": "src/modes.ts及research-source-context.ts完整正文、remote-room创建链",
+        "verification": "V2源码对应；未调用门禁"
+      },
+      {
+        "claim": "完整组合必须在真实房间与RPS后阵营核定，不应从单英雄列表拼配",
+        "type": "ai_inference",
+        "source": "r30 WP01及实际创建/选择/分配调用链",
+        "verification": "V1文档建议；无接口或批准"
+      },
+      {
+        "claim": "D01当前兼容抽取可沿合法候选得到end_time，28次身份见证尚不含此抽取",
+        "type": "document_fact",
+        "source": "setup.ts/remote-room.ts/mutations.ts与初始化数据",
+        "verification": "V2静态列表/函数阅读；非概率批准或运行"
+      }
+    ],
+    "ai_interpretations": [
+      "分阶段核验能把建房阶段尚无完整英雄/畸变事实与开局完整组合检查分开",
+      "另做来源特定适配器可保持旧P0用途；不直接扩展旧掩码"
+    ],
+    "assumptions": [
+      "主线未来能够选择合法的可信能力发行和房间绑定方式；本轮不保证它已存在"
+    ],
+    "unknowns": [
+      "主线实际准入API/可信发行方/房间权威对象绑定及源提交漂移策略",
+      "主线对兼容抽样研究见证的准入选择；外层最终权重仍未定",
+      "WP02闭合捕获/WP03安全修复/产品递送和客户端证据仍未实现或验收"
+    ],
+    "competing_explanations": [
+      "未来固定源码可能已补接口，应重新核对而非照14b盲改",
+      "可仅准备非执行映射等待主线契约；这不会提高可运行数量"
+    ],
+    "falsification_conditions": [
+      "后确认或固定源码与组合/调用链映射相反",
+      "把本文件JSON当实际可信能力从客户端加载",
+      "把建房能力匹配当作开局完整组合已合法"
+    ],
+    "verification_status": "partial_V2_sources_V1_contract_no_independent_or_runtime_verification",
+    "action_boundary": "仅半混乱交接文档；无业务仓库写入/引擎导入/调用/测试/模式修改",
+    "failure_conditions": [
+      "候选建议被写成已批准新准入",
+      "拒绝/到期/早终局后跳步或注入中盘",
+      "能力跨房间/玩家/组合/异步逃逸；观察耗随机/改时钟/泄密"
+    ],
+    "residual_risk": "同一AI读取与选取来源，静态映射不能证明接口执行、隐私或完整合法性",
+    "next_validation_action": "主线核定本文件shared_owner_questions；独立继续WP02文档，不推进代码/运行"
+  },
+  "next_task": {
+    "id": "NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT",
+    "status": "NOT_STARTED_DOCUMENT_ONLY",
+    "action": "结合主线真实WP02回复，按原64项相关义务细化主行动闭合/正式结束闭合/D01请求边界与被动证据合同；列实际可读字段、早退与停止条件。只读源码和准备文档，不加hook、不运行；WP01共享准入继续待主线核定。"
+  }
+}

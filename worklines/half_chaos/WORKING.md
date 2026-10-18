@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261017-r29
-date_local: 2026-10-17
+revision: HC-DESIGN-03-20261018-r31
+date_local: 2026-10-18
 timezone: Asia/Shanghai
 primary_reader: AI
-status: assertion_evidence_matrix_prepared_runtime_blocked_unrun
+status: admission_contract_document_prepared_shared_review_pending_unrun
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -19,13 +19,13 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 
 ## 0. 当前入口与接续
 
-**本轮已按23:33:24用户要求完成后收束，HC-SESSION-CLOSEOUT-20261017-r3。**r30真实结果提交2c66fb06eb15f03e63e0e6c9cbf955cccc71a799已复读核验：9个本线对象匹配、6份原始输入不变，仅文档差分。下一文档断点未启动，其他线状态按各自记录，不发全项目停工指令。
+当前HC-DESIGN-03-20261018-r31；完成WP01限定准入/适配文档合同，见§8.54与ADMISSION_CONTRACT_PROPOSAL.json。实际基准3a38dec64327dcff63d596809debe7a8810ae616，接续已发布r30，不重复旧r29任务；本轮只文档及本线阶段写回。
 
-r30完成NEXT-HC-IMPLEMENTATION-SCOPE-PROPOSAL（文档建议），固定恢复40dd3fe3b508a122e054ef402ddcbf83edfb3bc5；详§8.52及IMPLEMENTATION_SCOPE_PROPOSAL.json。原r29矩阵/64规格、12回放、210观察点与初始化/行动/字段数据保持。新增五个具体建议包、64原义务到包引用及未来3条小样→原12条的有条件范围建议；不是实施/运行批准。当前可运行0、游戏通过0，全部UNRUN，评分冻结、NET暂停。
+原三种候选完整组合/12绑定、10环调用链、12类拒绝边界已具体化，均未批准实施或启用。主线已实际限定接收r30且准许文档细化，其接口/修复/观察选择仍待核。r31接收采用未知，不代填回执。前次r3收束是历史会话记录，不停其他线。
 
-已保护当前环境：未发现未回传项目成果；恢复r29及上轮会话r2收束，其他工作线持续。主线1.61新H15启动前一致恢复原确认已按精确guard消费，旧吞机会推荐保持撤下；主线仅有限接收r29报告，r30接收未知。当前批无H15/普通H06/H21，无数据差分。仅本线文档阶段增量写回，不改对方正文/回执。
+原6输入、64规格、110请求、210观察声明及全部有效确认保持；全部UNRUN、可运行0、业务修改/引擎导入运行0，评分冻结、NET暂停。旧吞机会推荐保持撤下；M04沿三线原文案，不新增玩法确认。
 
-下一有限断点NEXT-HC-ADMISSION-CONTRACT-REFINEMENT：结合主线真实回复细化WP01合法限定准入/适配调用链文档合同；未启动，不写业务、不导入运行引擎、不绕过任何门禁。相关完整依据为§8.40/8.42/8.44/8.49/8.50/8.52；有效原确认继续以CONFIRMATIONS和对应原来源为准。历史会话收束见§8.51，不是当前任务停工。
+下一NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT：细化WP02精确闭合/早退/被动证据的文档合同，仍不加hook、不运行、不绕门禁。读取顺序及实际范围见本线START_HERE、READ_RECEIPTS和SOURCE_INDEX。
 
 ## 1. 确认恢复与保护
 
@@ -2482,6 +2482,26 @@ PD-S32仍无自然冲突正例，PD-S31额外落位、DS-S16同窗先安全后�
 仅收束本轮半混乱工作；不替其他线停止任务或填接收回执。主线1.61的启动前一致恢复精确确认已限定继承，原候选/原确认/政策来源与作用域保存；不是本对话批准新玩法。r30主线接收采用仍未知，保持真实边界。
 
 下一NEXT-HC-ADMISSION-CONTRACT-REFINEMENT，NOT_STARTED_DOCUMENT_ONLY：新对话先保护其未回传成果、读取最新固定入口/主线实际回复、本线完整建议与原来源，细化WP01精确组合/房间/能力及适配调用链合同；当前仍不写业务、不运行引擎、不绕门禁。若远端有更后成果按实际接续，不重复r30。可从根START_HERE进入本线，无需用户搬运ZIP。收束自身提交从Git历史确定，不预填未来SHA。
+
+### 8.54 WP01限定准入与适配调用链文档合同（r31）
+
+本阶段完成NEXT-HC-ADMISSION-CONTRACT-REFINEMENT，基准3a38dec64327dcff63d596809debe7a8810ae616；实际最新为r30及r3收束，未重复r29任务。当前工作区无待回传项目成果；已发布原图、原数据/确认及其他线对象保留。协作工作稿2026-10-17.v0.13、正式基线1.8.0按L3读取相关完整模块；未声称完整私有历史迁移。用户2026-10-18仅授权具体建议及本线阶段写回，不批准代码、引擎或门禁修改。
+
+**主线真实回复。**主线1.62实际回执已接收r30的WP01—03等限定正文和收束记录；没有全读原矩阵/源代码，未作独立验收。SHARED_COORDINATION.current_shared_scope_request_queue明确允许WP01文档细化，WP01—03接口与实现继续待核；由本线记录真实阅读范围，不代填主线接收r31。主线H15毕业新处理未在本轮采用；原1.61启动前一致恢复及1.57死亡失败限定仍保留，旧吞机会推荐撤下。原12无H15/普通H06/H21，不扩数据。
+
+**单一详细建议源。**ADMISSION_CONTRACT_PROPOSAL.json承载本阶段合同，r30总建议与原矩阵各保留其职责。三个候选完整组合各绑定原4条回放：红H04/黑H03＋M01，红H04/黑H03＋M04，红H06/黑H05且实际合法D01。完整表包、无variant、双方启用；只限定本批，不撤销其他组合既有设计，也不批准模式池。不能把独立英雄白名单作笛卡尔积；D01设计允许两阵营顺序不等于本批反向回放也获准。
+
+**可信绑定与十环调用链。**未来能力必须由主线核定的内部可信发行方绑定固定源、真实房间权威关联、双方稳定玩家、RPS后红黑阵营、完整英雄包与单一畸变/回放数据身份；不能把本JSON或客户端字段当令牌。当前feature gate无roomId，如何补足创建/初始化/后续请求的共同绑定交主线定接口，本轮未虚构签名。分开建房资格、加入、选英雄、真实RPS分配、身份与畸变抽取、完整feature锁、入场/起钟、普通请求、D01请求、受控证据十环；建房时尚缺完整事实不等于最终组合免验。上下文继续同步、不可嵌套、finally清理，无跨await或客户端序列化。
+
+**随机与适配。**28次见证只覆盖黑/红各15池身份混洗，现有halfChaosFixtureRandom不含畸变抽取。按14b静态源给出候选：M01外层(8,0)，M04(8,3)；D01在合法羁绊下可由外层(8,3)进入传说后，内部三候选索引2取宿命。此为源导出的未应用建议，未调用随机函数，不批准最终概率/强制宿命或修改池；主线未核定研究绑定，仍不能运行。真实初始身份、本体/锚与额外抽取不符即停止，不注入状态或盲重试。
+
+未来另做来源特定PD/DS适配，保持旧jieqi/night/shuffler/jian_xie runner与P0投影/零捕获保护。按原110请求中每回合先pre_main_requests再normal_main，不按对象字段排列误先走main；DS01→DS02同局连续，配对世界独立房间同公开动作。走submitRemoteMove/submitRemoteHeroAbility原房间入口，dragon_bomb仅转原bomb；actor/revision/actionId及公开合法施放者从真实请求环境映射，不借后台真身份加玩家字段。提交返回/抛错与后tick分开，保留原到期结算和终局，不用deferTurnEnd。
+
+**拒绝与观察边界。**十二类文档检查含伪造能力、错房间/权威关联、错玩家、反向/缺包/禁用、额外组合、抽取不符、中盘重初始化、异步嵌套、源漂移、到期终局、观察副作用及旧门禁回归；全为PROPOSED_UNRUN，不新增64游戏规格或称已实现拒绝。精确主行动/正式结束/D01闭合仍沿r30 WP02待主线；WP03安全修复、共享层级/完整搜索/终局/采样/键和缺自然例继续保留。准入文档不能代替安全修复或隐私/客户端证据。
+
+本轮原D01五项确认与H03/H04相关完整正文、H03原确认已回读，新增玩法批准0、共有确认新消费0。M04原选择及三线作用域澄清全文已读，文案沿“战车隔一枚地面棋的【进攻】”，不新设关键词。12份业务源仅按记录函数/段落读取，分支14b及PR7草稿未变；开放PR仅核头/基分支/草稿元数据，未审全差分/CI。文件/引用/源身份检查与真实Git发布分开；同一AI合同V1、相关原确认/源码V2，独立审查未做。业务写入、引擎导入/运行、命令生成/发送均0；全部64项UNRUN，可运行0，评分冻结、NET暂停。
+
+共享准入具体问题HC-ADM-Q01—03随本线RETURN回主线；WP02/03原请求不另造已批准接口。下一独立项NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT只准备精确被动观察合同文档；主线准入未决不阻止该无依赖资料准备，不把接续转成实施。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
