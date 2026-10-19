@@ -1,20 +1,18 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "active_H02_M04_activation_endpoint_scale_A_pending",
+  "status": "active_no_user_candidate_activation_scale_A_confirmed",
   "last_confirmed": {
-    "id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-    "candidate_id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json"
+    "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "candidate_id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json"
   },
   "next_work_item": {
-    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
-    "subject": "H02发动当回合被M04终点单龙鳞拦截时的来源费用",
-    "action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。",
-    "status": "candidate_prepared_pending_user_decision_not_approved",
-    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-    "pending_is_not_approved": true,
-    "approved": false,
-    "requires_continuation_before_work": false
+    "id": "NEXT-STD-H02-M04-RETURN-SOURCE-EXIT-ORDER-REVIEW",
+    "subject": "返位与H02来源退出顺序的来源覆盖及可达性复核",
+    "action": "先核对后续刺杀返位与来源无形退出先后是否存在合法可达的观察者/触发分支；守一畸变与双方英雄限制，不叠第三英雄或第二畸变。再按现行原来源覆盖确定结果，有明确来源直接沿用；缺口才准备具体候选，真正共享冲突回主线，不改业务代码或运行引擎。",
+    "status": "ready_for_bounded_source_review_not_started",
+    "requires_continuation_before_work": false,
+    "implementation_authorized": false
   },
   "unresolved_questions": [
     "Latest main1.61 H15/H06 graduation source review next; no active user candidate reported. Newer H15 sources not fully read/adopted here.",
@@ -26,30 +24,25 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": {
-    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
-    "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-    "approved": false,
-    "scope": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
-    "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？"
-  },
-  "candidate_prepared_for_presentation": true,
-  "approval_scope_guard": "New candidate covers only the unused H02 hero activation source after this guarded ordinary attack returns; existing later assassination consumption and approved AP A unchanged. Continue does not approve.",
-  "new_candidate_approved": false,
+  "current_candidate": null,
+  "candidate_prepared_for_presentation": false,
+  "approval_scope_guard": "Only exact guarded H02 hero activation/M04 endpoint-scale A is approved; original reviewed candidate remains an immutable preapproval snapshot. No later-assassination refund or broader failure policy.",
+  "new_candidate_approved": true,
   "candidate_presentation": {
     "source": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
     "example": "AS-S01",
     "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？",
-    "selected_option": null
+    "selected_option": "A",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019"
   },
   "resolved_candidate": {
-    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "path": "candidates/h02-m04-path-dragon-scale/v1.json",
-    "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-    "confirmation_source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "confirmation_source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
     "approved": true,
     "selected_option": "A",
-    "confirmed_at_local": "2026-10-18T23:29:42+08:00",
+    "confirmed_at_local": "2026-10-19T22:40:23+08:00",
     "historical_candidate_file_unchanged": true,
     "historical_candidate_pending_fields_are_preapproval_snapshot": true
   },
@@ -139,13 +132,24 @@
       "confirmed_at_local": "2026-10-18T23:29:42+08:00",
       "historical_candidate_file_unchanged": true,
       "historical_candidate_pending_fields_are_preapproval_snapshot": true
+    },
+    {
+      "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+      "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+      "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+      "confirmation_source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "approved": true,
+      "selected_option": "A",
+      "confirmed_at_local": "2026-10-19T22:40:23+08:00",
+      "historical_candidate_file_unchanged": true,
+      "historical_candidate_pending_fields_are_preapproval_snapshot": true
     }
   ],
   "confirmation": {
-    "id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-    "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-    "user_quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
-    "at_local": "2026-10-18T23:29:42+08:00"
+    "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+    "user_quote": "我同意",
+    "at_local": "2026-10-19T22:40:23+08:00"
   },
   "source": {
     "prepared_from_commit": "541345ac568a39ea2bf71364e507997e27c0893c",
@@ -160,14 +164,12 @@
     "approved": false
   },
   "local_next": {
-    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
-    "subject": "H02发动当回合被M04终点单龙鳞拦截时的来源费用",
-    "action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。",
-    "status": "candidate_prepared_pending_user_decision_not_approved",
-    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-    "pending_is_not_approved": true,
-    "approved": false,
-    "requires_continuation_before_work": false
+    "id": "NEXT-STD-H02-M04-RETURN-SOURCE-EXIT-ORDER-REVIEW",
+    "subject": "返位与H02来源退出顺序的来源覆盖及可达性复核",
+    "action": "先核对后续刺杀返位与来源无形退出先后是否存在合法可达的观察者/触发分支；守一畸变与双方英雄限制，不叠第三英雄或第二畸变。再按现行原来源覆盖确定结果，有明确来源直接沿用；缺口才准备具体候选，真正共享冲突回主线，不改业务代码或运行引擎。",
+    "status": "ready_for_bounded_source_review_not_started",
+    "requires_continuation_before_work": false,
+    "implementation_authorized": false
   },
   "main_latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
   "last_confirmed_scope_note": "Existing last_confirmed/confirmation fields retain previously fully adopted H15 display source, not a claim that newer reported confirmation is adopted.",
@@ -261,5 +263,21 @@
     "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "candidate_id": "DECISION-H15-PUBLIC-TRAINING-DISPLAY-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
+  },
+  "latest_confirmation_phase": {
+    "id": "STD-ACTIVATION-SCALE-A-CONFIRMED-20261019",
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "at_local": "2026-10-19T22:44:09+08:00",
+    "user_quote": "我同意",
+    "confirmed_at_local": "2026-10-19T22:40:23+08:00",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+    "status": "exact_A_confirmed_design_written_not_implemented",
+    "new_shared_confirmations": 1,
+    "new_ordinary_confirmations": 0,
+    "ordinary": 31,
+    "direct_shared": 13,
+    "same_conversation_new_shared_confirmations": 2,
+    "engine_runs": 0
   }
 }

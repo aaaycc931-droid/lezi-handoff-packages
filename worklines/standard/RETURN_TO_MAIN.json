@@ -2,25 +2,25 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-19T08:42:00+08:00",
-  "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
-  "base_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
-  "approval_context_source_commit": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
-  "phase": "source_alignment_complete_new_activation_candidate_pending",
+  "prepared_at_local": "2026-10-19T22:44:09+08:00",
+  "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+  "base_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+  "approval_context_source_commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
+  "phase": "activation_endpoint_scale_A_confirmed_design_only",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "Same conversation active; bounded later-assassination endpoint single-scale review completed without new rule. New activation-turn H02 source-cost A prepared, not approved.",
+  "current_breakpoint": "Exact activation-endpoint-single-scale A approved and written; conversation active, no current user candidate. Next return/source-exit reachability review not started.",
   "confirmed_delta": [],
-  "new_user_rule_confirmations": 0,
+  "new_user_rule_confirmations": 1,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
     "current_index_count": 31,
-    "prior_direct_shared_count": 11,
-    "shared_confirmations_originated_here_total": 12,
+    "prior_direct_shared_count": 12,
+    "shared_confirmations_originated_here_total": 13,
     "all_prior_confirmations_and_original_sources_preserved": true,
     "new_confirmations_this_conversation": {
       "ordinary": 0,
-      "direct_shared": 1
+      "direct_shared": 2
     }
   },
   "pending_main_receipt_scope": [],
@@ -37,28 +37,26 @@
     ],
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
-  "pending_decision": {
-    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
-    "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-    "approved": false,
-    "scope": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
-    "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？"
-  },
+  "pending_decision": null,
   "changes": [
-    "Current endpoint single-scale sources reviewed and guarded existing final result recorded without new rule or engine claim.",
-    "Exact next activation-turn failure source-cost gap recovered from existing records; one concrete A candidate prepared, not approved.",
-    "Same conversation reactivated; current task, pending/source/working/own reading/return and manifest updated; prior approvals and whole work tail protected."
+    "Current explicit 我同意 recorded against exact previously presented three-mode A with candidate commit/blob, unchanged guard/policy/exclusions.",
+    "Scoped H02/M04 current bodies, ordinary adoption, confirmation/source/state/pending indices and actual own receipt synchronized.",
+    "Original candidate and original confirmations/whole work tail retained; existing later assassination opportunity is not refunded.",
+    "Next bounded source-order reachability review queued without a new gameplay choice; all specifications UNRUN, no code or engine."
   ],
   "changed_paths": [
-    "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-    "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+    "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
     "CURRENT_STATE.json",
     "NEXT_ACTIONS.json",
     "PENDING_DECISION.json",
+    "CONFIRMATION_REGISTER.json",
     "PENDING_ITEMS.json",
     "SOURCE_PRIORITY.json",
+    "rules/shared/02_CURRENT_HEROES.md",
+    "rules/shared/03_CURRENT_MUTATIONS.md",
     "modes/standard/CURRENT_STATE.json",
     "modes/standard/CURRENT_RULES.md",
+    "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
     "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
     "START_HERE.txt",
     "READ_RECEIPTS.json",
@@ -67,95 +65,116 @@
   ],
   "file_identities": [
     {
-      "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-      "size": 8009,
-      "sha256": "45e42843ccb5735ab578617e2b83f6187a2e71d3d94071da5f2aa89d35eb0891",
-      "git_blob_sha": "c97f41c188f1e99b31e55ae1b80f4e9391ff7e46"
-    },
-    {
-      "path": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
-      "size": 7262,
-      "sha256": "046fcf98711a9da063cd7c28adb3b3527ae3c600ed7fa326d06b112caee9e32f",
-      "git_blob_sha": "12b684e447c8450ff44d8bb3d01e976f3b6d5655"
+      "path": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "size": 6500,
+      "sha256": "5e930601062a770771bd6eb6d196f2faabaf57c3f7aef9357f45b08584480230",
+      "git_blob_sha": "376361b461387f5e9fdf62657575e210e53eabf4"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 36940,
-      "sha256": "a59fffbf210f8456642f9b764aedf53dd097378a8522a4d72d223fe9e8d30d7a",
-      "git_blob_sha": "b2349092253af56d8857921ec53974b65f83dd0d"
+      "size": 36957,
+      "sha256": "99834e6dbd0619638623736372cc8b493a20fcf9cf17b2dba70df052ac216f30",
+      "git_blob_sha": "f86c9d9bee405d859e39334b717287700dbf9d29"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 6311,
-      "sha256": "cce639ae658203a72a09fb5645e6739ed0f5f37146688610f95eda256d141972",
-      "git_blob_sha": "639adcf1ba6869a7336edbf3d16ced33d028dd47"
+      "size": 7216,
+      "sha256": "94a5aac39b1dc666f4d3a68f27e4b0f9ab4b4fd260ad7122bb445d93d3a34f5b",
+      "git_blob_sha": "e273faab8f8f3bec16ad0eef6df74204775ae7f2"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 15572,
-      "sha256": "07725568920592267c81b59e2bb77e695d047437b2668e01ada321abe7b11037",
-      "git_blob_sha": "d04a626fb2d6eccf5692bb6598f768cc80d8424d"
+      "size": 15934,
+      "sha256": "fbb400a6bb38167fd17538c935133f7fc8483b7b975331951f809403acad0297",
+      "git_blob_sha": "5918c2c03cf68dff0694e2fdee8d9561746de432"
+    },
+    {
+      "path": "CONFIRMATION_REGISTER.json",
+      "size": 75652,
+      "sha256": "7c65c3e9630383ff28fe03742e6535e925c23632095889a76a602bb40a3227ef",
+      "git_blob_sha": "26394742bb2d43a779d9cc5d0761710e6e493252"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 57041,
-      "sha256": "5dcc191d52c63fafcb9a5b5df2264a175dd0c5da5f2fa29ecf94724cc541e42d",
-      "git_blob_sha": "330d8646e53c07861b7cc9292350868e7b75701a"
+      "size": 57939,
+      "sha256": "7ebdb235447136505c08988c12f49beaa892bcfe6182087891988a5ad08d415b",
+      "git_blob_sha": "bf7bdb037832afb9e2c620bcdf533184277dbb96"
     },
     {
       "path": "SOURCE_PRIORITY.json",
-      "size": 9667,
-      "sha256": "6d7d610aa2e8e80e2a23defa08874bc5bc295a8d986f56cef48f78f59f72eff5",
-      "git_blob_sha": "14444a569e9bc67fb53a811824d0b8698651b526"
+      "size": 10175,
+      "sha256": "e6e6dc1d33fd07f746984e9dc428fffa22400753376598ae7e7dc706f1f89bdf",
+      "git_blob_sha": "7631722c7bf80d1265fc624bd692ab0a0ef2c10d"
+    },
+    {
+      "path": "rules/shared/02_CURRENT_HEROES.md",
+      "size": 55428,
+      "sha256": "207a29f3198907989101dc107d26169c6646ebd68b5870c6b20d4fee0a126f74",
+      "git_blob_sha": "fad0dcf16e35014cb64ca14ee14d30a8616049a3"
+    },
+    {
+      "path": "rules/shared/03_CURRENT_MUTATIONS.md",
+      "size": 29278,
+      "sha256": "2a214aed640a1d6c3fe91f835447f38d5bd7f933783ab24632a7763def9c99fa",
+      "git_blob_sha": "f1355ee129febb3a39caec4fefca73c9687bae9b"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 15466,
-      "sha256": "0bb4b5303c759b81e4ad4f508324b32d11266190ca9a034a2048d09370cb282f",
-      "git_blob_sha": "b899b3d72523d309714689643266c650f9a8dd70"
+      "size": 15475,
+      "sha256": "47c24cbd90d7293e2ac5d08a50f0ad963d433b1bf4144a38656ec757565cd2c0",
+      "git_blob_sha": "79217e49090d7e316d06564dd611c9a9e663f40e"
     },
     {
       "path": "modes/standard/CURRENT_RULES.md",
-      "size": 11557,
-      "sha256": "150feb372f71c26efda21d39a6757140971c3b773fd2f0c93d832c84c028905e",
-      "git_blob_sha": "54161208d555ff6bcab45bfb4fb56b8fc6ac8f1c"
+      "size": 12422,
+      "sha256": "2949d3d4bf17379160d425bf1cd90a8f439dec1cffece8005cc39b98d7ad8b9a",
+      "git_blob_sha": "2fb4c49ab815443e1dac9ed801f5f7a425dc505a"
+    },
+    {
+      "path": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+      "size": 7682,
+      "sha256": "3364e5d70a4631a95e8428a9aeccf6f9296a354e587116e28fb0143f363a4e52",
+      "git_blob_sha": "6b3efffef65ece9aaa4f6028989d9cbbc4691053"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 270136,
-      "sha256": "89cedce000b1689365f2a0e78f9748aefdeb4d0e7705f475fddaa7ad306ddfa1",
-      "git_blob_sha": "ec30d2f5ab0763e9620fa58f3b9ca56847cf0dab"
+      "size": 273772,
+      "sha256": "46a67464b1ebb62dbf8b9e6cc3c1cda8666ba79711c3caa1d188db84a6ac30ed",
+      "git_blob_sha": "8d163fc3386188ada43c2590311850c149a45029"
     },
     {
       "path": "START_HERE.txt",
-      "size": 13587,
-      "sha256": "1212f24a4182b1a20263ccf7350a5af0012fd6ee0c325afe5ec80838cbf57461",
-      "git_blob_sha": "359e2b25d1e224afc81651226fe00c4669948e87"
+      "size": 14191,
+      "sha256": "d29afab475cfed33b3b4bdb72aa8e3818c3a2f951ed5aeef7b71a160a3d91b50",
+      "git_blob_sha": "e2aca9606fbe3b95ca5534a130f75bdce2e2b27b"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 80368,
-      "sha256": "e85a579b4bbe35de5354fbd2e5ba71db84a72ac1fd8f437c74b49543a7605363",
-      "git_blob_sha": "199c0614293d828d8ca3cc310d05e73e7af3b44d"
+      "size": 81282,
+      "sha256": "d93bcd0163a3bce397d48718236f4a1ef948193006c1ba1fbb5c5c11ecd88e02",
+      "git_blob_sha": "126d513d3e963d21ad27d13d3585626a560af36f"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
     "status": "passed_targeted_scope_only",
-    "new_gameplay_user_confirmations": 0,
+    "new_gameplay_user_confirmations": 1,
     "new_game_code_changes": 0,
+    "new_engine_tests": 0,
     "game_engine_runs": 0,
     "independent_review": false,
-    "full_package_verify_dispatch": "Not rerun; scoped document/source/candidate/count/freeze/protected-tail/manifest checks only.",
+    "full_package_verify_dispatch": "Not rerun; targeted exact approval/scope/counter/UNRUN/protected-tail/changed-identity/manifest checks only.",
     "checks": {
-      "new_candidate_approved_false": true,
-      "ordinary31_shared12_unchanged": true,
-      "prior_AP_confirmation_exact": true,
-      "original_work_tail_exact": true,
-      "same_conversation_prior_confirmation_count_preserved": true,
-      "all_prior_unrun_specs_retained": true,
-      "no_shared_confirmed_body_or_other_line_write": true,
+      "approved_policy_guard_exclusions_exact": true,
+      "ordinary31_shared13": true,
+      "same_conversation_shared2": true,
+      "original_candidate_and_old_confirmations_unchanged": true,
+      "original_work_and_review_tail_exact": true,
+      "all_prior_specs_UNRUN": true,
+      "no_code_assets_or_other_line_write": true,
+      "no_active_user_candidate": true,
+      "next_review_not_started": true,
       "scoring_NET_exact": true
     }
   },
@@ -369,22 +388,19 @@
     },
     {
       "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
-      "status": "candidate_prepared_pending_user_decision_not_approved",
-      "source": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+      "status": "exact_A_confirmed_design_pending_actual_main_receipt",
+      "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
       "scope": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
       "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？",
-      "approved": false
+      "approved": true,
+      "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019"
     }
   ],
   "remote_reconciliation": {
-    "source_read_head": "fa781b5538f1760b0f408e02b64183261c239063",
-    "actual_publish_parent": "c87afd94384322663dbf6cb9a0f4823ed5992e98",
-    "concurrent_commits_preserved": [
-      "fa781b5538f1760b0f408e02b64183261c239063",
-      "c87afd94384322663dbf6cb9a0f4823ed5992e98"
-    ],
-    "comparison": "Both intervening commits modify only worklines/half_chaos; no standard/source/collaboration target overlap",
-    "same_head_tree_and_parent": true,
+    "source_read_head": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "actual_publish_parent": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "previous_own_publication": "cfa8fe8759d4893349a61142d6442e5539f76c58",
+    "intervening_changes": "Only worklines/half_chaos; no current source/target overlap. Base tree and parent from same fresh HEAD.",
     "force": false,
     "other_workline_adoption_inferred": false
   },
@@ -401,61 +417,61 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "Scoped source composition and new activation-source policy candidate",
-    "risk_level": "medium; reversible documents, pending gameplay choice",
+    "audit_trigger": "Explicit scoped gameplay design approval",
+    "risk_level": "medium; reversible project documents, no implementation",
     "known_facts": [
-      "Original endpoint scale return/normal source consumption is explicit",
-      "Warrior activation failure rule is source-specific",
-      "Prior M03 text leaves dragon-scale activation source cost pending",
-      "Prior AP A excludes activation turn"
+      "Current user explicitly approves exact presented A",
+      "Candidate guard/policy/exclusions unchanged",
+      "Ordinary31/shared13; existing later assassination consumption retained"
     ],
     "user_statements": [
       {
-        "quote": "继续普通象棋工作线吧，不更换对话了",
-        "at_local": "2026-10-19T08:36:14+08:00"
+        "quote": "我同意",
+        "at_local": "2026-10-19T22:40:23+08:00",
+        "context": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？"
       }
     ],
     "claim_register": [
       {
-        "claim": "Existing bounded later assassination result follows cited clauses",
-        "type": "ai_inference",
-        "source": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
-        "verification": "V2 clauses / V1 conditional composition"
+        "claim": "Exact activation-step A is approved within its guard only",
+        "type": "user_statement",
+        "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+        "verification": "V2"
       },
       {
-        "claim": "New activation-cost A is not yet approved",
+        "claim": "AS/ES and all previous specifications remain UNRUN",
         "type": "document_fact",
-        "source": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-        "verification": "V2 current instruction and original approval exclusions"
+        "source": "Original specs and no engine commands",
+        "verification": "V2 source/command record"
       }
     ],
     "ai_interpretations": [
-      "Recommend treating this guarded activation as not established while preserving the ordinary attack results"
+      "Only the previously presented policy is selected; no broader activation/failure/order or implementation authorization"
     ],
     "assumptions": [
-      "All original action/control/route/window/royal-safety/return guards hold in the example"
+      "All original guarded control/route/window/royal-safety/return conditions hold in the example"
     ],
     "unknowns": [
-      "User choice on activation source policy",
-      "Full natural prefix and internal timing/engine/privacy validation"
+      "Complete natural reachability/internal source order/runtime/privacy validation",
+      "Actual main/other-mode receipt and adoption"
     ],
     "competing_explanations": [
-      "Ordinary attack completion could instead be interpreted to establish H02 despite endpoint survival; current sources do not decide this"
+      "Other activation success/failure consumption policies were not chosen; the exact A resolves only this guarded branch"
     ],
     "falsification_conditions": [
-      "Locate a current original confirmation that explicitly covers this activation branch",
-      "Any example guard fails"
+      "An applied branch fails the exact guard",
+      "An external observer requires an as-yet unresolved internal ordering"
     ],
-    "verification_status": "partial; V2 sources / V1 composition and pending proposal; no independent/runtime acceptance",
-    "action_boundary": "Only scoped ordinary design/source documents and own receipt; no candidate approval, code or engine",
+    "verification_status": "partial_design; V2 approval/sources, V1 conditional example; no independent/runtime acceptance",
+    "action_boundary": "Standard design documents and own receipt only; no game code/engine/other workline write",
     "failure_conditions": [
-      "Transfer warrior exception to all failures without approval",
-      "Refund an already-used later assassination chance",
-      "Resurrect old strong-strike or treat old runtime numbers as current PASS",
-      "Overwrite other line"
+      "Refund a used later assassination opportunity",
+      "Generalize to M03, other failure/space/history or arbitrary shields",
+      "Mark UNRUN as PASS",
+      "Overwrite concurrent work"
     ],
-    "residual_risk": "A is a policy choice with tactical benefits, not proof of complete legality or source ordering.",
-    "next_validation_action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。"
+    "residual_risk": "Scoped design choice is not complete legal-prefix or implementation proof. Receivers record their own actual reading/adoption.",
+    "next_validation_action": "先核对后续刺杀返位与来源无形退出先后是否存在合法可达的观察者/触发分支；守一畸变与双方英雄限制，不叠第三英雄或第二畸变。再按现行原来源覆盖确定结果，有明确来源直接沿用；缺口才准备具体候选，真正共享冲突回主线，不改业务代码或运行引擎。"
   },
   "delivery": {
     "transport": "GitHub connector",
@@ -498,13 +514,39 @@
     "adoption_scope": "Current ordinary-line source activation, scope inheritance, approved baseline, pending versus approval, source-bound incremental handoff and verification controls only.",
     "effectiveness_verified": false
   },
-  "shared_confirmed_delta": [],
+  "shared_confirmed_delta": [
+    {
+      "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+      "status": "user_confirmed_shared_design_written_to_standard_current_sources",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "origin_workline": "standard",
+      "confirmed_at_local": "2026-10-19T22:40:23+08:00",
+      "user_quote": "我同意",
+      "reviewed_candidate": {
+        "commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
+        "path": "worklines/standard/candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+        "git_blob_sha": "c97f41c188f1e99b31e55ae1b80f4e9391ff7e46"
+      },
+      "selected_option": "A",
+      "new_direct_shared_confirmation_this_dialogue": true,
+      "new_local_standard_confirmation": false,
+      "main_receipt_verified": null,
+      "main_adoption_verified": null,
+      "other_mode_adoption_verified": null,
+      "implementation": false
+    }
+  ],
   "new_local_standard_confirmations": 0,
-  "new_shared_user_rule_confirmations": 0,
+  "new_shared_user_rule_confirmations": 1,
   "pending_main_shared_receipt_scope": [
     {
-      "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-      "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+      "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+      "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
       "scope": [
         "original_jieqi",
         "standard_xiangqi",
@@ -892,6 +934,31 @@
       "main_adoption_verified": null,
       "other_mode_adoption_verified": null,
       "implementation": false
+    },
+    {
+      "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+      "status": "user_confirmed_shared_design_written_to_standard_current_sources",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ],
+      "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "origin_workline": "standard",
+      "confirmed_at_local": "2026-10-19T22:40:23+08:00",
+      "user_quote": "我同意",
+      "reviewed_candidate": {
+        "commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
+        "path": "worklines/standard/candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+        "git_blob_sha": "c97f41c188f1e99b31e55ae1b80f4e9391ff7e46"
+      },
+      "selected_option": "A",
+      "new_direct_shared_confirmation_this_dialogue": true,
+      "new_local_standard_confirmation": false,
+      "main_receipt_verified": null,
+      "main_adoption_verified": null,
+      "other_mode_adoption_verified": null,
+      "implementation": false
     }
   ],
   "acknowledged_main_receipt_scope": [
@@ -1049,8 +1116,8 @@
       "adopted_verified": null
     }
   ],
-  "session_scope_note": "Same conversation resumed on2026-10-19. Its earlier one shared AP approval remains; current source-review/candidate stage adds0, ordinary31/shared12 unchanged.",
-  "publication_parent_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+  "session_scope_note": "Same conversation remains active: previous AP shared approval plus current activation-scale A =2 new shared confirmations in this conversation; current phase adds1, ordinary31/shared13.",
+  "publication_parent_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
   "received_shared_delta": [],
   "observed_main_H02_M04_receipt": {
     "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
@@ -1094,14 +1161,12 @@
     }
   },
   "next_task": {
-    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
-    "subject": "H02发动当回合被M04终点单龙鳞拦截时的来源费用",
-    "action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。",
-    "status": "candidate_prepared_pending_user_decision_not_approved",
-    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-    "pending_is_not_approved": true,
-    "approved": false,
-    "requires_continuation_before_work": false
+    "id": "NEXT-STD-H02-M04-RETURN-SOURCE-EXIT-ORDER-REVIEW",
+    "subject": "返位与H02来源退出顺序的来源覆盖及可达性复核",
+    "action": "先核对后续刺杀返位与来源无形退出先后是否存在合法可达的观察者/触发分支；守一畸变与双方英雄限制，不叠第三英雄或第二畸变。再按现行原来源覆盖确定结果，有明确来源直接沿用；缺口才准备具体候选，真正共享冲突回主线，不改业务代码或运行引擎。",
+    "status": "ready_for_bounded_source_review_not_started",
+    "requires_continuation_before_work": false,
+    "implementation_authorized": false
   },
   "terminology": {
     "M04_charge_word": "Existing descriptive wording in prior M04 text; not a new global keyword",
@@ -1273,11 +1338,14 @@
     ]
   },
   "source_review": {
-    "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
-    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
-    "status": "completed_source_alignment_gap_narrowed_candidate_pending",
-    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-    "new_gameplay_confirmation": false
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "status": "exact_A_explicitly_confirmed_design_only",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+    "original_candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "new_gameplay_confirmation": true,
+    "unrun": "AS-S01/AS01-AS08 and all previous specs"
   },
   "previous_shared_wording_delta": {
     "id": "WORDING-THREE-MODE-M04-DESCRIPTION-20261017",
@@ -1388,5 +1456,21 @@
       "engine_runs": 0,
       "AP_S01_AP01_AP08": "all unrun"
     }
+  },
+  "latest_confirmation_phase": {
+    "id": "STD-ACTIVATION-SCALE-A-CONFIRMED-20261019",
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "at_local": "2026-10-19T22:44:09+08:00",
+    "user_quote": "我同意",
+    "confirmed_at_local": "2026-10-19T22:40:23+08:00",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+    "status": "exact_A_confirmed_design_written_not_implemented",
+    "new_shared_confirmations": 1,
+    "new_ordinary_confirmations": 0,
+    "ordinary": 31,
+    "direct_shared": 13,
+    "same_conversation_new_shared_confirmations": 2,
+    "engine_runs": 0
   }
 }

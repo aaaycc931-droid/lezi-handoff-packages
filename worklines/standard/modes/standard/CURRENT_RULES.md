@@ -75,3 +75,10 @@ M04描述已由用户明确为三线共同文案修改，原选择和共同作�
 来源事实V2，限定组合V1、Δ规则0。完整条件/来源/排除见`../../reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md`；ES-S01/ES01—ES08全部UNRUN，不改昨晚AP确认。
 
 发动当回合被终点龙鳞拦截时H02是否不成立且来源未用，现有记录仍待核；唯一候选`../../candidates/h02-m04-activation-endpoint-dragon-scale/v1.json`尚未批准，不属于本节已确认规则。AS-S01/AS01—AS08亦UNRUN。
+
+
+## 2026-10-19共享确认消费｜H02发动步终点单龙鳞A
+
+本普通工作线消费`../../rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json`（CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019）精确限定A，完整条件/效果/排除见../../rules/shared/02_CURRENT_HEROES对应新增章节。仅未用H02英雄来源的合法M04发动普通进攻被终点单鳞拦截并存活受控合法返回：本次H02不成立、未建来源无形/后续机会、来源未用；已发生路径消灭/耗鳞/返位/主行动消耗保持。不是补回已用后续刺杀机会，不扩大到M03或任意失败。
+
+本次共同新增1（累计13），普通31保持。AS-S01/AS01—AS08及全部旧规格UNRUN；原候选保留审批前字节，现以本确认及当前正文为准，无代码/引擎/独立验收。

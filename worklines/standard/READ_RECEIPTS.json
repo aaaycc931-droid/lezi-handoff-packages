@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-19T08:42:00+08:00",
+  "recorded_at_local": "2026-10-19T22:44:09+08:00",
   "by_source_workline": {
     "main": {
       "source_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -474,10 +474,10 @@
   ],
   "other_receiver_receipts_fabricated": false,
   "latest_local_confirmation": {
-    "id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-    "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-    "at_local": "2026-10-18T23:29:42+08:00",
-    "user_quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
+    "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+    "at_local": "2026-10-19T22:40:23+08:00",
+    "user_quote": "我同意",
     "scope": [
       "original_jieqi",
       "standard_xiangqi",
@@ -485,63 +485,35 @@
     ]
   },
   "current_task_reading": {
-    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
     "user_instruction": {
-      "quote": "继续普通象棋工作线吧，不更换对话了",
-      "at_local": "2026-10-19T08:36:14+08:00"
+      "quote": "我同意",
+      "at_local": "2026-10-19T22:40:23+08:00"
     },
     "files": [
       {
-        "path": "rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "Complete current H02 and H21 invincible subsections; prior full invocation/omen read reused"
+        "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+        "read_scope": "Complete exact current candidate guard/policy/exclusions/question, unchanged reviewed commit/blob verified"
       },
       {
-        "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "Complete M04 and current exact AP confirmation paragraphs"
+        "path": "rules/shared/02_CURRENT_HEROES.md and rules/shared/03_CURRENT_MUTATIONS.md",
+        "read_scope": "Current H02/M04 identities unchanged from same-conversation actual source reading; existing original failure boundaries reused"
       },
       {
-        "path": "rules/shared/01_CURRENT_RULES.md",
-        "read_scope": "1.1A source boundary and action classification; prior same-conversation full related reads reused"
+        "path": "CURRENT_STATE.json/NEXT_ACTIONS.json/PENDING_DECISION.json/CONFIRMATION_REGISTER.json",
+        "read_scope": "Current pending object, counters, last actual approval and task; source identity/protection checks"
       },
       {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
-        "read_scope": "Complete original confirmation"
+        "path": "../../collaboration/CURRENT.json",
+        "read_scope": "Current index read; unchanged v0.13/formal1.8.0 and previously actually read applicable modules reused"
       },
       {
-        "path": "sources/standard/inherited_dispatch/baseline/modes/standard/INHERITED_CONFIRMED_H01_H02_H11.md",
-        "read_scope": "Complete inherited document including H02"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-06_GLOBAL_RULE_SYNC.md",
-        "read_scope": "Complete global source, no new H02 cost decision found there"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
-        "read_scope": "Complete9/9A only; superseded activation/strong-strike/royal-target restrictions not adopted"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
-        "read_scope": "Complete5.1-5.5 and source supersession warnings; obsolete source not adopted as current rules"
-      },
-      {
-        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/handoff/current/30_RULE_GAP_RUNTIME_2026-10-08.md",
-        "read_scope": "Complete historical report only; old runtime evidence not rerun or upgraded"
-      },
-      {
-        "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "Complete current confirmed M03 failure boundaries plus latest AP/ordinary source sections read earlier in same conversation; current historical tail exact identity verified"
-      },
-      {
-        "path": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-        "read_scope": "Exact full current confirmation/guard/policy/exclusions restored; approved scope retained"
-      },
-      {
-        "path": "CURRENT_STATE.json/NEXT_ACTIONS.json/PENDING_DECISION.json/SOURCE_PRIORITY.json/PROJECT_WORK_AGREEMENT.md",
-        "read_scope": "Current task, guard, approval/source priority and inherited authorization; same unchanged agreement reused"
+        "path": "PROJECT_WORK_AGREEMENT.md",
+        "read_scope": "Current content identity checked; existing same-scope document/GitHub authorization reused"
       }
     ],
     "adopted_scope": [
-      "Existing scoped later-assassination endpoint-scale clauses; no new gameplay approval"
+      "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019 exact A only"
     ],
     "not_adopted": [
       "任何已持有后续刺杀机会的使用和其龙鳞拦截，不按本候选退款或补回机会",
@@ -551,7 +523,8 @@
       "完整原子内部返位与来源状态退出先后、完整自然前缀/王安全搜索/字段/计时接口",
       "游戏实现、引擎通过、独立验收、评分恢复或NET启动"
     ],
-    "new_gameplay_user_confirmations": 0,
+    "new_gameplay_user_confirmations": 1,
+    "new_ordinary_confirmations": 0,
     "game_engine_runs": 0
   },
   "local_confirmations_since_dispatch": [
@@ -764,6 +737,17 @@
         "half_chaos"
       ],
       "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json"
+    },
+    {
+      "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+      "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "confirmed_at_local": "2026-10-19T22:40:23+08:00",
+      "user_quote": "我同意",
+      "scope": [
+        "original_jieqi",
+        "standard_xiangqi",
+        "half_chaos"
+      ]
     }
   ],
   "main_1_52_adoption": {
@@ -1490,11 +1474,14 @@
     "game_engine_runs": 0
   },
   "latest_source_review": {
-    "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
-    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
-    "status": "completed_source_alignment_gap_narrowed_candidate_pending",
-    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
-    "new_gameplay_confirmation": false
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "status": "exact_A_explicitly_confirmed_design_only",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+    "original_candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "new_gameplay_confirmation": true,
+    "unrun": "AS-S01/AS01-AS08 and all previous specs"
   },
   "previous_session_closeout_source": {
     "commit": "05501db57425ee406983468ba81f1efdfc73057f",
@@ -1516,59 +1503,73 @@
     "other_receiver_receipts_written": false
   },
   "previous_task_reading": {
-    "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
     "user_instruction": {
-      "quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
-      "at_local": "2026-10-18T23:29:42+08:00"
+      "quote": "继续普通象棋工作线吧，不更换对话了",
+      "at_local": "2026-10-19T08:36:14+08:00"
     },
     "files": [
       {
-        "path": "candidates/h02-m04-path-dragon-scale/v1.json",
-        "read_scope": "Complete exact candidate, guard/policy/source facts/AP example/exclusions and UNRUN specs; exact original bytes verified"
-      },
-      {
         "path": "rules/shared/02_CURRENT_HEROES.md",
-        "read_scope": "Current complete H02 including previous exact-geometry boundary; unchanged full H21 invincible source from this conversation actual reading reused"
+        "read_scope": "Complete current H02 and H21 invincible subsections; prior full invocation/omen read reused"
       },
       {
         "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-        "read_scope": "Complete current M04 including exact normal path-scale exclusion/wording"
+        "read_scope": "Complete M04 and current exact AP confirmation paragraphs"
       },
       {
-        "path": "CURRENT_STATE.json / NEXT_ACTIONS.json / PENDING_DECISION.json",
-        "read_scope": "Complete current task/candidate/approval guards, inherited counts/freeze and closeout fields"
+        "path": "rules/shared/01_CURRENT_RULES.md",
+        "read_scope": "1.1A source boundary and action classification; prior same-conversation full related reads reused"
       },
       {
-        "path": "CONFIRMATION_REGISTER.json",
-        "read_scope": "Current ordinary count/decisions identity, latest shared update and last shared source row; no full historical re-audit"
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+        "read_scope": "Complete original confirmation"
       },
       {
-        "path": "PENDING_ITEMS.json",
-        "read_scope": "Complete M04-cross pending row and related exact AP guard; other unresolved entries preserved"
+        "path": "sources/standard/inherited_dispatch/baseline/modes/standard/INHERITED_CONFIRMED_H01_H02_H11.md",
+        "read_scope": "Complete inherited document including H02"
       },
       {
-        "path": "../../collaboration/CURRENT.json / ../../START_COLLABORATION.md / ../../docs/WORKFLOW.md / PROJECT_WORK_AGREEMENT.md",
-        "read_scope": "Current content identity compared with prior actual reads in this conversation; full applicable modules and same-scope authorization reused"
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-06_GLOBAL_RULE_SYNC.md",
+        "read_scope": "Complete global source, no new H02 cost decision found there"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/CURRENT_RULE_DELTAS_2026-09-22.md",
+        "read_scope": "Complete9/9A only; superseded activation/strong-strike/royal-target restrictions not adopted"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/HERO-MUTATION-SPEC.md",
+        "read_scope": "Complete5.1-5.5 and source supersession warnings; obsolete source not adopted as current rules"
+      },
+      {
+        "path": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/handoff/current/30_RULE_GAP_RUNTIME_2026-10-08.md",
+        "read_scope": "Complete historical report only; old runtime evidence not rerun or upgraded"
       },
       {
         "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-        "read_scope": "Latest restored AP A and exact original tail identities verified against own previous publication; earlier relevant full source readings reused"
+        "read_scope": "Complete current confirmed M03 failure boundaries plus latest AP/ordinary source sections read earlier in same conversation; current historical tail exact identity verified"
+      },
+      {
+        "path": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+        "read_scope": "Exact full current confirmation/guard/policy/exclusions restored; approved scope retained"
+      },
+      {
+        "path": "CURRENT_STATE.json/NEXT_ACTIONS.json/PENDING_DECISION.json/SOURCE_PRIORITY.json/PROJECT_WORK_AGREEMENT.md",
+        "read_scope": "Current task, guard, approval/source priority and inherited authorization; same unchanged agreement reused"
       }
     ],
     "adopted_scope": [
-      "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018 exact A only"
+      "Existing scoped later-assassination endpoint-scale clauses; no new gameplay approval"
     ],
     "not_adopted": [
-      "H02发动当回合及发动成功/失败窗口、失败扣次或回弹顺序",
-      "终点龙鳞/普通防御叠加/龙爪完整顺序；终点无形或特殊直接指定联合分支",
-      "其他或永久碾碎免疫、不同盾、己方/暗置/隐藏阵营路径棋",
-      "将帅/影武者/H10宿主与真帅承伤、特殊空间/临时操控/揭示倒戈",
-      "返回占格/陷阱/历史恢复、完整王安全终局搜索/字段/计时接口",
-      "新英雄/畸变入池、第二畸变、额外行动或时限刷新",
-      "游戏代码、引擎通过、独立复核、评分恢复或NET启动"
+      "任何已持有后续刺杀机会的使用和其龙鳞拦截，不按本候选退款或补回机会",
+      "非M04组合、M03畸变来源或同时叠加其他畸变、新模式入池或新发动窗口",
+      "路径龙鳞/其他免疫或路径存活、终点多防护/龙爪顺序、将帅或影武者/H10承伤",
+      "暗置/揭示倒戈、临时操控/失控/死亡、飞行/河道、返回占格/陷阱或历史恢复",
+      "完整原子内部返位与来源状态退出先后、完整自然前缀/王安全搜索/字段/计时接口",
+      "游戏实现、引擎通过、独立验收、评分恢复或NET启动"
     ],
-    "new_gameplay_user_confirmations": 1,
-    "new_ordinary_confirmations": 0,
+    "new_gameplay_user_confirmations": 0,
     "game_engine_runs": 0
   },
   "observed_main_AP_candidate_receipt": {
@@ -1609,5 +1610,28 @@
     "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
     "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
     "new_gameplay_confirmation": true
+  },
+  "previous_activation_source_review": {
+    "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "status": "completed_source_alignment_gap_narrowed_candidate_pending",
+    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "new_gameplay_confirmation": false
+  },
+  "latest_confirmation_phase": {
+    "id": "STD-ACTIVATION-SCALE-A-CONFIRMED-20261019",
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "at_local": "2026-10-19T22:44:09+08:00",
+    "user_quote": "我同意",
+    "confirmed_at_local": "2026-10-19T22:40:23+08:00",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+    "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+    "status": "exact_A_confirmed_design_written_not_implemented",
+    "new_shared_confirmations": 1,
+    "new_ordinary_confirmations": 0,
+    "ordinary": 31,
+    "direct_shared": 13,
+    "same_conversation_new_shared_confirmations": 2,
+    "engine_runs": 0
   }
 }

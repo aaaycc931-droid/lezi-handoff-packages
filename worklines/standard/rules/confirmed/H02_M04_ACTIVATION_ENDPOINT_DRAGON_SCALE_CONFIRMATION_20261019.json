@@ -1,0 +1,90 @@
+{
+  "schema": "lezi.shared_gameplay_confirmation.v1",
+  "confirmation_id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
+  "confirmed_at_local": "2026-10-19T22:40:23+08:00",
+  "user_quote": "我同意",
+  "origin_workline": "standard",
+  "review_id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+  "selected_option": "A",
+  "source_type": "direct_current_conversation_user_approval_of_immediately_preceding_explicit_three_mode_A_question",
+  "reviewed_candidate": {
+    "commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
+    "path": "worklines/standard/candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "git_blob_sha": "c97f41c188f1e99b31e55ae1b80f4e9391ff7e46"
+  },
+  "immediately_preceding_question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？",
+  "presented_context": "The immediately preceding final response presented the exact guarded activation-turn A and concrete rook/pawn/scaled-horse example; current 我同意 selects that proposal only.",
+  "scope": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "availability_guard": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
+  "policy": {
+    "id": "A",
+    "text": "在完整限定条件下，本次H02发动不成立，不建立本来源无形或后续刺杀机会；英雄的这一次H02来源仍未用。已完成的M04路径消灭、终点耗鳞留位、车返回原位及本手正常行动消耗全部保留。之后仅在原本仍合法的发动时机、满足全部原条件时可再次请求，不返还本手、不增加行动、不延长或重开窗口、不刷新时限。",
+    "H02_activation_succeeds": false,
+    "H02_hero_source_used_after": false,
+    "new_H02_source_intangibility_created": false,
+    "later_assassination_opportunity_created": false,
+    "completed_path_destruction_reverted": false,
+    "endpoint_scale_consumption_preserved": true,
+    "endpoint_alive_same_square": true,
+    "rook_returns_original_start": true,
+    "normal_main_action_consumed": true,
+    "refund_extra_action_or_deadline_refresh": false,
+    "retry_condition": "Only at an originally allowed later activation opportunity with all original conditions; no free immediate second action.",
+    "applies_to_existing_later_assassination": false
+  },
+  "preserved": [
+    "Normal attack/path death/endpoint scale consumption/rook return/main-action cost remain as already established.",
+    "An already-used later assassination opportunity is not refunded or restored by this activation-turn exception.",
+    "Prior exact AP path-scale continuation A and existing geometry remain in their own original scopes.",
+    "All original mode availability, one-mutation/two-hero legality, normal control, route/window/target/royal-safety/return guards remain."
+  ],
+  "not_confirmed": [
+    "任何已持有后续刺杀机会的使用和其龙鳞拦截，不按本候选退款或补回机会",
+    "非M04组合、M03畸变来源或同时叠加其他畸变、新模式入池或新发动窗口",
+    "路径龙鳞/其他免疫或路径存活、终点多防护/龙爪顺序、将帅或影武者/H10承伤",
+    "暗置/揭示倒戈、临时操控/失控/死亡、飞行/河道、返回占格/陷阱或历史恢复",
+    "完整原子内部返位与来源状态退出先后、完整自然前缀/王安全搜索/字段/计时接口",
+    "游戏实现、引擎通过、独立验收、评分恢复或NET启动"
+  ],
+  "conditional_example": {
+    "id": "AS-S01",
+    "status": "UNRUN_conditional_not_full_natural_prefix",
+    "description": "尝试发动H02，用明地面车隔一枚无防护敌兵普通进攻带一次龙鳞的敌马。兵实际被M04碾碎，敌马耗鳞存活留位，车返原位且仍存活受控，其余guard成立。",
+    "proposed_A_result": "本次没有进入H02来源无形，也没有获得后续刺杀机会；英雄H02来源仍未用。已经消灭的兵不复活，马的鳞不返还，本手主行动已花掉。",
+    "heroes": [
+      "H02",
+      "H21_invincible"
+    ],
+    "mutation": "M04_only",
+    "full_natural_prefix_proven": false
+  },
+  "source_unrun_specs": [
+    "AS01 仅完整guard成立的原合法H02＋M04、未用英雄来源、无活跃刺杀来源、明地面正常控制车",
+    "AS02 这是发动当回合普通进攻，不是后续刺杀，不授刺杀绕防护或无形指定权限",
+    "AS03 唯一路径敌棋无拦截且实际消灭；终点仅一次有效龙鳞，双方英雄分别H02/H21",
+    "AS04 已完成路径消灭保持；终点耗鳞留位、车返原位，本手主行动照耗",
+    "AS05 若A获准，H02发动不成立、不建本源无形/后续机会、英雄来源仍未用",
+    "AS06 只允许原合法后续发动时机重试，不退本手/增行动/重开或延长窗口/刷新期限",
+    "AS07 既有后续刺杀被龙鳞拦截依原来源消耗，不套本候选保留来源；昨晚路径鳞A保持",
+    "AS08 其他失败/来源/控制/历史/空间/顺序及完整自然前缀和运行未证明"
+  ],
+  "verification": {
+    "user_and_exact_source": "V2 explicit current user approval and exact reviewed candidate",
+    "conditional_example": "V1; no full legal natural prefix",
+    "AS_S01_AS01_AS08": "UNRUN; design approval only",
+    "engine_runs": 0,
+    "game_code_changes": 0,
+    "independent_review": false
+  },
+  "handoff": {
+    "main_received_verified": null,
+    "main_adopted_verified": null,
+    "other_mode_adoption_verified": null,
+    "automatic_messages_sent": false,
+    "containing_commit": "Resolve from Git history after publication."
+  }
+}
