@@ -1,0 +1,125 @@
+{
+  "schema": "lezi.scoped_rule_candidate.v1",
+  "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+  "version": 1,
+  "status": "pending_user_confirmation",
+  "approved": false,
+  "prepared_at_local": "2026-10-19T08:42:00+08:00",
+  "origin_workline": "standard",
+  "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+  "source_instruction": {
+    "quote": "继续普通象棋工作线吧，不更换对话了",
+    "at_local": "2026-10-19T08:36:14+08:00",
+    "scope": "Continue same conversation and source review; not approval of this new candidate."
+  },
+  "modes": [
+    "original_jieqi",
+    "standard_xiangqi",
+    "half_chaos"
+  ],
+  "current_wording": "战车隔一枚地面棋的【进攻】",
+  "availability_guard": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
+  "source_review": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+  "source_facts": [
+    {
+      "id": "ES-F1",
+      "source": "rules/shared/02_CURRENT_HEROES.md#H02",
+      "claim": "发动步只有普通行动权限；战士普通防御拦截导致发动不成立且来源未用有明确条款；没有因此概括所有龙鳞返回。"
+    },
+    {
+      "id": "ES-F2",
+      "source": "sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-08_DRAGON_SCALE.md",
+      "claim": "刺杀不能绕过龙鳞；终点留位耗鳞，地面攻击者返回，按原刺杀来源正常消耗机会，不返主行动。"
+    },
+    {
+      "id": "ES-F3",
+      "source": "rules/shared/03_CURRENT_MUTATIONS.md#M04; rules/shared/01_CURRENT_RULES.md#1.1A",
+      "claim": "路径独立碾碎先处理，返回不是历史回滚；已实际完成路径消灭与终点击杀分记。"
+    },
+    {
+      "id": "ES-F4",
+      "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M03 暗影之舞普通模式继承",
+      "claim": "该段明确把龙鳞阻止发动步是否保留来源列为待核；仅作为共享H02生命周期缺口的已有记录，不把M03与M04叠加。"
+    },
+    {
+      "id": "ES-F5",
+      "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+      "claim": "昨晚已批准A仅限有效后续刺杀、路径单鳞和无防护终点；明确排除发动步/失败成本/复杂返位顺序，不覆盖当前新候选。"
+    }
+  ],
+  "gap": {
+    "question": "发动当回合普通M04进攻的终点单鳞返位后，H02是否不成立且仍保留未用来源？",
+    "existing_later_assassination_scale_rule_does_not_decide_activation_source_cost": true,
+    "warrior_defense_failure_exception_not_auto_generalized": true
+  },
+  "proposed_policy": {
+    "id": "A",
+    "text": "在完整限定条件下，本次H02发动不成立，不建立本来源无形或后续刺杀机会；英雄的这一次H02来源仍未用。已完成的M04路径消灭、终点耗鳞留位、车返回原位及本手正常行动消耗全部保留。之后仅在原本仍合法的发动时机、满足全部原条件时可再次请求，不返还本手、不增加行动、不延长或重开窗口、不刷新时限。",
+    "H02_activation_succeeds": false,
+    "H02_hero_source_used_after": false,
+    "new_H02_source_intangibility_created": false,
+    "later_assassination_opportunity_created": false,
+    "completed_path_destruction_reverted": false,
+    "endpoint_scale_consumption_preserved": true,
+    "endpoint_alive_same_square": true,
+    "rook_returns_original_start": true,
+    "normal_main_action_consumed": true,
+    "refund_extra_action_or_deadline_refresh": false,
+    "retry_condition": "Only at an originally allowed later activation opportunity with all original conditions; no free immediate second action.",
+    "applies_to_existing_later_assassination": false
+  },
+  "conditional_example": {
+    "id": "AS-S01",
+    "status": "UNRUN_conditional_not_full_natural_prefix",
+    "description": "尝试发动H02，用明地面车隔一枚无防护敌兵普通进攻带一次龙鳞的敌马。兵实际被M04碾碎，敌马耗鳞存活留位，车返原位且仍存活受控，其余guard成立。",
+    "proposed_A_result": "本次没有进入H02来源无形，也没有获得后续刺杀机会；英雄H02来源仍未用。已经消灭的兵不复活，马的鳞不返还，本手主行动已花掉。",
+    "heroes": [
+      "H02",
+      "H21_invincible"
+    ],
+    "mutation": "M04_only",
+    "full_natural_prefix_proven": false
+  },
+  "tradeoff": "A与现有战士普通防御弹回的发动失败口径一致；允许该普通进攻完成路径杀伤/耗掉敌鳞后，仍保留以后合法发动H02的可能，但本手主行动已实际付出。",
+  "alternatives_status": "Only A proposed. Rejecting A does not silently choose activation success, consuming source without a benefit, or any other failure policy.",
+  "decision_question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？",
+  "not_confirmed": [
+    "任何已持有后续刺杀机会的使用和其龙鳞拦截，不按本候选退款或补回机会",
+    "非M04组合、M03畸变来源或同时叠加其他畸变、新模式入池或新发动窗口",
+    "路径龙鳞/其他免疫或路径存活、终点多防护/龙爪顺序、将帅或影武者/H10承伤",
+    "暗置/揭示倒戈、临时操控/失控/死亡、飞行/河道、返回占格/陷阱或历史恢复",
+    "完整原子内部返位与来源状态退出先后、完整自然前缀/王安全搜索/字段/计时接口",
+    "游戏实现、引擎通过、独立验收、评分恢复或NET启动"
+  ],
+  "unrun_specs": [
+    "AS01 仅完整guard成立的原合法H02＋M04、未用英雄来源、无活跃刺杀来源、明地面正常控制车",
+    "AS02 这是发动当回合普通进攻，不是后续刺杀，不授刺杀绕防护或无形指定权限",
+    "AS03 唯一路径敌棋无拦截且实际消灭；终点仅一次有效龙鳞，双方英雄分别H02/H21",
+    "AS04 已完成路径消灭保持；终点耗鳞留位、车返原位，本手主行动照耗",
+    "AS05 若A获准，H02发动不成立、不建本源无形/后续机会、英雄来源仍未用",
+    "AS06 只允许原合法后续发动时机重试，不退本手/增行动/重开或延长窗口/刷新期限",
+    "AS07 既有后续刺杀被龙鳞拦截依原来源消耗，不套本候选保留来源；昨晚路径鳞A保持",
+    "AS08 其他失败/来源/控制/历史/空间/顺序及完整自然前缀和运行未证明"
+  ],
+  "verification": {
+    "source_clauses": "V2 scoped actual current/original sources",
+    "proposal_and_example": "V1 conditional design; pending user decision",
+    "full_natural_prefix": false,
+    "independent_review": false,
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "AS_S01_AS01_AS08": "all UNRUN"
+  },
+  "counts": {
+    "new_gameplay_confirmations": 0,
+    "ordinary": 31,
+    "direct_shared": 12
+  },
+  "scoring": "frozen",
+  "NET": "paused",
+  "handoff": {
+    "recipient_reading_verified": null,
+    "recipient_adoption_verified": null,
+    "automatic_message_sent": false
+  }
+}

@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "closed_current_conversation_H02_M04_path_scale_A_confirmed",
+  "status": "active_endpoint_scale_source_review_complete_activation_candidate_pending",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -30,12 +30,13 @@
       "existing_authorization_reused": true
     },
     "latest_reading_reuse": {
-      "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
+      "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
       "working_revision": "2026-10-17.v0.13",
       "formal_baseline": "1.8.0",
-      "body_index_and_workflow_identities_unchanged_from_this_conversation_actual_reads": true,
-      "previous_full_applicable_module_reading_reused": true,
-      "current_task_sources_read": "Exact AP candidate, current H02/M04 confirmation boundary, own current state/indices; no full historical re-audit."
+      "current_index_blob": "56bcfc5417aa328c60eb27bbc2452ed32618b84c",
+      "prior_full_applicable_modules_reused_same_conversation": true,
+      "new_related_rule_sections_actually_read": true,
+      "new_complete_collaboration_body_reread_claimed": false
     }
   },
   "source_preparation": "Sources are expanded at sources/standard; no user ZIP upload is needed. python3 prepare_sources.py checks current required paths and optionally restores historical source parts.",
@@ -43,12 +44,14 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "后续刺杀终点单龙鳞的路径结果、返回与机会消耗来源复核",
-    "action": "用户明确继续普通象棋线后，先恢复本次已确认A及原H02/M04/H21相关完整来源，限定复核后续刺杀遇终点单龙鳞时，既有路径结果保留、返位落位与机会消耗的来源覆盖；已有明确条款直接沿用，不重复审批A。缺口才形成一个具体候选，继续不算新批准，不改代码或运行引擎。",
-    "status": "deferred_until_user_continuation_source_review_not_started",
-    "requires_continuation_before_work": true,
-    "implementation_authorized": false
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "subject": "H02发动当回合被M04终点单龙鳞拦截时的来源费用",
+    "action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false,
+    "requires_continuation_before_work": false
   },
   "external_delivery": {
     "prepared_here": true,
@@ -96,8 +99,8 @@
   "NET": "paused",
   "scope": "design/source/line documents only",
   "code_or_deploy_authorized": false,
-  "limitation_audit_status": "partial_design_confirmed_runtime_unverified_session_closed",
-  "verification_level": "V2 explicit scoped design confirmation and source identity; targeted document checks only. AP and all prior specs UNRUN; no engine or independent acceptance.",
+  "limitation_audit_status": "partial_new_activation_candidate_pending_no_runtime_or_independent_acceptance",
+  "verification_level": "V2 current scoped sources and prior explicit approvals; V1 conditional composition/candidate only, all ES/AS and prior specs UNRUN",
   "required_files": [
     "collaboration/PROJECT_COLLABORATION_20261015.md",
     "SYNC_NOTICE.md",
@@ -127,7 +130,9 @@
     "rules/confirmed/M04_SHARED_WORDING_20261017.json",
     "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
     "candidates/h02-m04-path-dragon-scale/v1.json",
-    "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json"
+    "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+    "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json"
   ],
   "account_routing": {
     "this_account": [
@@ -140,11 +145,11 @@
     ]
   },
   "publication_scope": "PUBLICATION_SCOPE.json",
-  "updated_at_local": "2026-10-18T23:35:49+08:00",
-  "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
-  "publication_parent_commit": "c87afd94384322663dbf6cb9a0f4823ed5992e98",
-  "phase": "shared_AP_A_confirmed_and_current_conversation_closed",
-  "new_rule_confirmations_this_round": 1,
+  "updated_at_local": "2026-10-19T08:42:00+08:00",
+  "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+  "publication_parent_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+  "phase": "source_alignment_complete_new_activation_candidate_pending",
+  "new_rule_confirmations_this_round": 0,
   "retained_source_round_confirmations": 21,
   "M04_status": "confirmed_design_not_implemented_or_tested",
   "phase_return": "RETURN_TO_MAIN.json",
@@ -198,9 +203,9 @@
   "M05_status": "confirmed_design_not_implemented_or_tested",
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
   "latest_user_instruction": {
-    "quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
-    "at_local": "2026-10-18T23:29:42+08:00",
-    "scope": "Confirm exact AP A, finish scoped documents, then close this conversation."
+    "quote": "继续普通象棋工作线吧，不更换对话了",
+    "at_local": "2026-10-19T08:36:14+08:00",
+    "scope": "Resume this same conversation and bounded source/design work; no new approval."
   },
   "new_rule_confirmations_since_dispatch": 10,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
@@ -256,7 +261,7 @@
   "D01_shared_hourglass_core_confirmed": true,
   "pending_shared_core_candidate_id": null,
   "new_local_standard_confirmations_this_round": 0,
-  "new_shared_user_confirmations_this_round": 1,
+  "new_shared_user_confirmations_this_round": 0,
   "new_shared_user_confirmations_since_dispatch": 12,
   "new_rule_confirmations_since_dispatch_scope": "ordinary_local_confirmations_only",
   "D01_shared_hourglass_core_confirmation_id": "CONF-THREE-MODE-D01-HOURGLASS-CORE-20261016",
@@ -511,10 +516,18 @@
     }
   },
   "last_completed_source_alignment": {
-    "id": "STD-M04-H10-ATOMIC-DAMAGE-SOURCE-ALIGNMENT",
+    "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "body": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+    "scope": "ordinary legal later H02/M04 assassination into a single endpoint scale; exact conditional guard only",
     "rule_delta": 0,
-    "body": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
-    "verification": "V2 source clauses / V1 guarded composition only; WD01-WD08 unrun"
+    "new_user_confirmation": false,
+    "verification": "V2 source clauses / V1 guarded final-result composition; ES-S01/ES01-ES08 UNRUN",
+    "not_decided": [
+      "activation-turn H02 success/source cost",
+      "full internal return/source-intangibility ordering",
+      "other defense/H10/space/control/history/runtime"
+    ]
   },
   "current_main_metadata_observed": {
     "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
@@ -554,14 +567,19 @@
     "read_scope": "Current-state metadata only; no new H15 policy or full adjudication adoption.",
     "pending_approved": false
   },
-  "pending_candidate": null,
+  "pending_candidate": {
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "approved": false,
+    "scope": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
+    "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？"
+  },
   "latest_source_review": {
-    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
-    "status": "exact_scoped_A_confirmed_by_current_user",
-    "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-    "candidate": "candidates/h02-m04-path-dragon-scale/v1.json",
-    "new_gameplay_confirmation": true
+    "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "status": "completed_source_alignment_gap_narrowed_candidate_pending",
+    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "new_gameplay_confirmation": false
   },
   "previous_session_closeout_source": {
     "commit": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
@@ -569,34 +587,24 @@
     "revision": "STD-SESSION-CLOSEOUT-20261017-r2"
   },
   "session_resume": {
-    "id": "STD-SESSION-RESUME-20261018-r1",
-    "at_local": "2026-10-18T10:41:22+08:00",
-    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+    "id": "STD-SAME-CONVERSATION-RESUME-20261019-r1",
+    "at_local": "2026-10-19T08:42:00+08:00",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
     "user_instruction": {
-      "quote": "继续乐子象棋普通象棋模式工作线",
-      "at_local": "2026-10-18T10:38:45+08:00",
-      "scope": "Resume the standard workline and restore the existing exact candidate; not gameplay approval or implementation authorization."
+      "quote": "继续普通象棋工作线吧，不更换对话了",
+      "at_local": "2026-10-19T08:36:14+08:00"
     },
-    "status": "active_candidate_restored_pending_user_decision",
-    "previous_session_closeout": "STD-SESSION-CLOSEOUT-20261017-r2",
-    "candidate_source": {
-      "path": "candidates/h02-m04-path-dragon-scale/v1.json",
-      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
-    },
-    "candidate_approved": false,
-    "candidate_bytes_unchanged": true,
-    "new_gameplay_confirmations": 0,
-    "ordinary_confirmation_count": 31,
-    "direct_shared_confirmations": 11,
+    "same_conversation": true,
+    "previous_closeout_retained_as_history": true,
+    "status": "active_source_review_complete_new_activation_candidate_pending",
+    "new_gameplay_confirmations_this_stage": 0,
+    "current_conversation_prior_shared_confirmation_count": 1,
+    "ordinary": 31,
+    "direct_shared": 12,
     "new_game_code_changes": 0,
     "game_engine_runs": 0,
-    "unrun_specs": [
-      "AP-S01",
-      "AP01-AP08",
-      "all prior unrun specifications"
-    ],
-    "other_dialogue_unreturned_work": "unknown; no other workline or original source modified",
-    "initial_visible_local_unreturned_files_found": 0
+    "initial_previous16_payloads_exact": true,
+    "visible_local_unreturned_deltas": 0
   },
   "observed_main_AP_candidate_receipt": {
     "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",

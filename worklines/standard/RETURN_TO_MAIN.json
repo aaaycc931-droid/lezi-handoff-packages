@@ -2,16 +2,16 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "standard",
   "to_workline": "main",
-  "prepared_at_local": "2026-10-18T23:35:49+08:00",
-  "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
-  "base_commit": "c87afd94384322663dbf6cb9a0f4823ed5992e98",
+  "prepared_at_local": "2026-10-19T08:42:00+08:00",
+  "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+  "base_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
   "approval_context_source_commit": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
-  "phase": "shared_AP_A_confirmed_and_current_conversation_closed",
+  "phase": "source_alignment_complete_new_activation_candidate_pending",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "Exact AP A explicitly confirmed and written to standard current sources; current conversation closed. No active user candidate; next endpoint-scale source review deferred until explicit continuation.",
+  "current_breakpoint": "Same conversation active; bounded later-assassination endpoint single-scale review completed without new rule. New activation-turn H02 source-cost A prepared, not approved.",
   "confirmed_delta": [],
-  "new_user_rule_confirmations": 1,
+  "new_user_rule_confirmations": 0,
   "preserved_confirmations": {
     "inherited_source_round_count": 21,
     "current_index_count": 31,
@@ -37,23 +37,26 @@
     ],
     "scope": "through D01 startup/body scoped documents, no runtime"
   },
-  "pending_decision": null,
+  "pending_decision": {
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "approved": false,
+    "scope": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
+    "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？"
+  },
   "changes": [
-    "Explicit current user approval of exact previously presented AP A recorded with original quote, time, candidate commit/blob, full guard/policy/exclusions.",
-    "Current scoped H02/M04/H21 text, ordinary consumption, confirmation/source indices and AP pending resolution updated; ordinary31/shared12.",
-    "Current conversation closed after this stage; next bounded source review deferred; all old candidate/original source bytes and prior work tail preserved.",
-    "Actual own source/closeout receipt and manifest updated; no engine/code, no other receiver receipt or automatic message."
+    "Current endpoint single-scale sources reviewed and guarded existing final result recorded without new rule or engine claim.",
+    "Exact next activation-turn failure source-cost gap recovered from existing records; one concrete A candidate prepared, not approved.",
+    "Same conversation reactivated; current task, pending/source/working/own reading/return and manifest updated; prior approvals and whole work tail protected."
   ],
   "changed_paths": [
-    "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
     "CURRENT_STATE.json",
     "NEXT_ACTIONS.json",
     "PENDING_DECISION.json",
-    "CONFIRMATION_REGISTER.json",
-    "SOURCE_PRIORITY.json",
     "PENDING_ITEMS.json",
-    "rules/shared/02_CURRENT_HEROES.md",
-    "rules/shared/03_CURRENT_MUTATIONS.md",
+    "SOURCE_PRIORITY.json",
     "modes/standard/CURRENT_STATE.json",
     "modes/standard/CURRENT_RULES.md",
     "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
@@ -64,120 +67,96 @@
   ],
   "file_identities": [
     {
-      "path": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-      "size": 6980,
-      "sha256": "e783a91e14c6c281df255a532f474c369258004858f5b257b8ca536edea999c8",
-      "git_blob_sha": "2d8a3094005f17a87f26d38a16a3bde73e0c9495"
+      "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+      "size": 8009,
+      "sha256": "45e42843ccb5735ab578617e2b83f6187a2e71d3d94071da5f2aa89d35eb0891",
+      "git_blob_sha": "c97f41c188f1e99b31e55ae1b80f4e9391ff7e46"
+    },
+    {
+      "path": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+      "size": 7262,
+      "sha256": "046fcf98711a9da063cd7c28adb3b3527ae3c600ed7fa326d06b112caee9e32f",
+      "git_blob_sha": "12b684e447c8450ff44d8bb3d01e976f3b6d5655"
     },
     {
       "path": "CURRENT_STATE.json",
-      "size": 35868,
-      "sha256": "d889deaf660e44d40d0cad987352a3d3dd3e2fb910583e21201231fea037e882",
-      "git_blob_sha": "57bac5309c92d870758b5672ba8628b3ef572ea9"
+      "size": 36940,
+      "sha256": "a59fffbf210f8456642f9b764aedf53dd097378a8522a4d72d223fe9e8d30d7a",
+      "git_blob_sha": "b2349092253af56d8857921ec53974b65f83dd0d"
     },
     {
       "path": "NEXT_ACTIONS.json",
-      "size": 6850,
-      "sha256": "64ce533cdaf3d8a23f9832a0968ce219e6642c2e1fa6a8a779d259d16b667551",
-      "git_blob_sha": "f73298bea0b81fa644eaa5733d0b42c8e883bf86"
+      "size": 6311,
+      "sha256": "cce639ae658203a72a09fb5645e6739ed0f5f37146688610f95eda256d141972",
+      "git_blob_sha": "639adcf1ba6869a7336edbf3d16ced33d028dd47"
     },
     {
       "path": "PENDING_DECISION.json",
-      "size": 15132,
-      "sha256": "20d41748ef0ba66e175bc84cff8380bb5c71a2778720e464eb1e0121ce0afea9",
-      "git_blob_sha": "8d04b14d2abca77d857cffac0eb03f3e2c2d29c0"
-    },
-    {
-      "path": "CONFIRMATION_REGISTER.json",
-      "size": 73636,
-      "sha256": "2bfcb8c464438935dc9d2ca68e70f13af16f464e0481390ec561e8d259693f26",
-      "git_blob_sha": "83d4ea3b5efa89edad8d3c400a26c70c82a5db5d"
-    },
-    {
-      "path": "SOURCE_PRIORITY.json",
-      "size": 8952,
-      "sha256": "cd8d70dd8477b5d7ef86c6371914e4eb80309844a12c652c916913aba7e50d6d",
-      "git_blob_sha": "0e42baa4c458505450dd37089f25df8e7269f192"
+      "size": 15572,
+      "sha256": "07725568920592267c81b59e2bb77e695d047437b2668e01ada321abe7b11037",
+      "git_blob_sha": "d04a626fb2d6eccf5692bb6598f768cc80d8424d"
     },
     {
       "path": "PENDING_ITEMS.json",
-      "size": 53478,
-      "sha256": "39ddb479350d1284ef590ba99bc7fabafc70509d61aeb8cf4865e85434821b3e",
-      "git_blob_sha": "198566f547a890020f1c15c12090d7113b04d651"
+      "size": 57041,
+      "sha256": "5dcc191d52c63fafcb9a5b5df2264a175dd0c5da5f2fa29ecf94724cc541e42d",
+      "git_blob_sha": "330d8646e53c07861b7cc9292350868e7b75701a"
     },
     {
-      "path": "rules/shared/02_CURRENT_HEROES.md",
-      "size": 53066,
-      "sha256": "9d44ac8a581d53d90e58381f8c78d7b0eefefddff4d31ed8bab97b271ce8619c",
-      "git_blob_sha": "b7a9c6108bd0276e7a45b5691f611b8a9f01109b"
-    },
-    {
-      "path": "rules/shared/03_CURRENT_MUTATIONS.md",
-      "size": 28466,
-      "sha256": "e4b9aed93dc9db0c53f4746e8514954a43e97cd1f6ea9847e74fc70c891bdc7e",
-      "git_blob_sha": "ae5e1b0ef17c57b71fac4c73a634a89ce57b34b3"
+      "path": "SOURCE_PRIORITY.json",
+      "size": 9667,
+      "sha256": "6d7d610aa2e8e80e2a23defa08874bc5bc295a8d986f56cef48f78f59f72eff5",
+      "git_blob_sha": "14444a569e9bc67fb53a811824d0b8698651b526"
     },
     {
       "path": "modes/standard/CURRENT_STATE.json",
-      "size": 12929,
-      "sha256": "7b60c22042a1cd0cb5e520f6758fa17aaa608cf43bdca51abf83b9fe1545f8e7",
-      "git_blob_sha": "93cdd1061bfc65f10eb088c7097a20b0153cac86"
+      "size": 15466,
+      "sha256": "0bb4b5303c759b81e4ad4f508324b32d11266190ca9a034a2048d09370cb282f",
+      "git_blob_sha": "b899b3d72523d309714689643266c650f9a8dd70"
     },
     {
       "path": "modes/standard/CURRENT_RULES.md",
-      "size": 10482,
-      "sha256": "c4070d839ebfab335f55be12f8fa8bdd63bba511539ecced7ed147158d372411",
-      "git_blob_sha": "1769918f16ec70984db67529c0c5fcf72ae7ba49"
+      "size": 11557,
+      "sha256": "150feb372f71c26efda21d39a6757140971c3b773fd2f0c93d832c84c028905e",
+      "git_blob_sha": "54161208d555ff6bcab45bfb4fb56b8fc6ac8f1c"
     },
     {
       "path": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-      "size": 265538,
-      "sha256": "454253aea2655a90a738eca2a614b56d808b0689e5495636bfc795111b84c586",
-      "git_blob_sha": "d4b7e904fdfb99f612ef9cadb721ac8285f5812f"
+      "size": 270136,
+      "sha256": "89cedce000b1689365f2a0e78f9748aefdeb4d0e7705f475fddaa7ad306ddfa1",
+      "git_blob_sha": "ec30d2f5ab0763e9620fa58f3b9ca56847cf0dab"
     },
     {
       "path": "START_HERE.txt",
-      "size": 12960,
-      "sha256": "89ca061a2f2eaf7bdfdb73057defaea5c5dcfbb7bed66192b173df5840ee5d66",
-      "git_blob_sha": "6b6ecad9dc2759f2788905f2e6e8d29f10c5a96d"
+      "size": 13587,
+      "sha256": "1212f24a4182b1a20263ccf7350a5af0012fd6ee0c325afe5ec80838cbf57461",
+      "git_blob_sha": "359e2b25d1e224afc81651226fe00c4669948e87"
     },
     {
       "path": "READ_RECEIPTS.json",
-      "size": 85402,
-      "sha256": "3b34d6dcca66917c81c82797677daa5bceace73171a34e4d8565f0540f5dddef",
-      "git_blob_sha": "8f7bacde2721d3f378241f465300c8e980118bf6"
+      "size": 80368,
+      "sha256": "e85a579b4bbe35de5354fbd2e5ba71db84a72ac1fd8f437c74b49543a7605363",
+      "git_blob_sha": "199c0614293d828d8ca3cc310d05e73e7af3b44d"
     }
   ],
   "manifest": "worklines/standard/PUBLISHED_FILES.json",
   "manifest_note": "Includes return/payload, excludes self; containing commit resolved from Git history.",
   "actual_validation": {
     "status": "passed_targeted_scope_only",
-    "new_gameplay_user_confirmations": 1,
+    "new_gameplay_user_confirmations": 0,
     "new_game_code_changes": 0,
-    "new_engine_tests": 0,
     "game_engine_runs": 0,
     "independent_review": false,
-    "full_package_verify_dispatch": "Not rerun; task-scoped local sources. Targeted changed document, original candidate, original work tail, counter/scope/UNRUN and manifest checks only.",
-    "previous_completed_stage_protection": {
-      "previous_stage": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
-      "payloads_compared": 8,
-      "all_exact": true,
-      "unreturned_deltas_in_compared_stage": 0
-    },
+    "full_package_verify_dispatch": "Not rerun; scoped document/source/candidate/count/freeze/protected-tail/manifest checks only.",
     "checks": {
-      "exact_original_candidate_guard_policy_exclusions": true,
-      "original_candidate_bytes_preserved": true,
-      "ordinary31_shared12": true,
-      "one_new_shared_confirmation_only": true,
-      "prior_work_tail_and_prior_entry_bytes_exact": true,
-      "no_other_line_source_or_asset_write": true,
-      "no_active_AP_candidate": true,
-      "all_prior_unrun_specs_preserved": true,
-      "scoring_NET_exact": true,
-      "next_stage_not_started": true,
-      "JSON_parse": true,
-      "changed_file_identities_manifest": true,
-      "concurrent_changes_preserved_no_relevant_source_or_target_overlap": true
+      "new_candidate_approved_false": true,
+      "ordinary31_shared12_unchanged": true,
+      "prior_AP_confirmation_exact": true,
+      "original_work_tail_exact": true,
+      "same_conversation_prior_confirmation_count_preserved": true,
+      "all_prior_unrun_specs_retained": true,
+      "no_shared_confirmed_body_or_other_line_write": true,
+      "scoring_NET_exact": true
     }
   },
   "unrun": [
@@ -207,7 +186,9 @@
     "PS-S01/PS01-PS08",
     "EI-S01-EI-S04/EI01-EI08",
     "WD01-WD08",
-    "AP-S01/AP01-AP08"
+    "AP-S01/AP01-AP08",
+    "ES-S01/ES01-ES08",
+    "AS-S01/AS01-AS08"
   ],
   "shared_coordination": [
     {
@@ -385,6 +366,14 @@
       "question": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？",
       "approved": true,
       "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018"
+    },
+    {
+      "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+      "status": "candidate_prepared_pending_user_decision_not_approved",
+      "source": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+      "scope": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
+      "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？",
+      "approved": false
     }
   ],
   "remote_reconciliation": {
@@ -412,65 +401,61 @@
   },
   "NET": "paused",
   "limitation_audit": {
-    "audit_trigger": "Explicit shared AP design approval followed by current conversation closeout",
-    "risk_level": "medium; reversible scoped project documents, no implementation",
+    "audit_trigger": "Scoped source composition and new activation-source policy candidate",
+    "risk_level": "medium; reversible documents, pending gameplay choice",
     "known_facts": [
-      "Exact source candidate unchanged from actual presentation",
-      "Current user explicitly selects A",
-      "Ordinary31 remains, direct shared becomes12"
+      "Original endpoint scale return/normal source consumption is explicit",
+      "Warrior activation failure rule is source-specific",
+      "Prior M03 text leaves dragon-scale activation source cost pending",
+      "Prior AP A excludes activation turn"
     ],
     "user_statements": [
       {
-        "quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
-        "at_local": "2026-10-18T23:29:42+08:00"
+        "quote": "继续普通象棋工作线吧，不更换对话了",
+        "at_local": "2026-10-19T08:36:14+08:00"
       }
     ],
     "claim_register": [
       {
-        "claim": "Exact AP A is now approved within its original guard only",
-        "type": "user_statement",
-        "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-        "verification": "V2"
+        "claim": "Existing bounded later assassination result follows cited clauses",
+        "type": "ai_inference",
+        "source": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+        "verification": "V2 clauses / V1 conditional composition"
       },
       {
-        "claim": "AP and all previous runtime specs remain UNRUN",
+        "claim": "New activation-cost A is not yet approved",
         "type": "document_fact",
-        "source": "Original specifications and zero engine commands this conversation",
-        "verification": "V2 source/command record"
+        "source": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+        "verification": "V2 current instruction and original approval exclusions"
       }
     ],
     "ai_interpretations": [
-      "The request authorizes completing this documentation stage and closing this conversation; no further gameplay candidate is approved."
+      "Recommend treating this guarded activation as not established while preserving the ordinary attack results"
     ],
     "assumptions": [
-      "Illustrative example is conditional on all original guard conditions; no full natural prefix is claimed."
+      "All original action/control/route/window/royal-safety/return guards hold in the example"
     ],
     "unknowns": [
-      "Full legal-prefix/runtime/privacy/source-order implementation acceptance",
-      "Main and other mode actual reading/adoption of this new confirmation"
+      "User choice on activation source policy",
+      "Full natural prefix and internal timing/engine/privacy validation"
     ],
     "competing_explanations": [
-      "A path-survival stop/return policy would be a different rule and was not selected; only A is approved."
+      "Ordinary attack completion could instead be interpreted to establish H02 despite endpoint survival; current sources do not decide this"
     ],
     "falsification_conditions": [
-      "Any applied branch fails exact original guard",
-      "Another source changes endpoint/path ordering beyond the reviewed scope"
+      "Locate a current original confirmation that explicitly covers this activation branch",
+      "Any example guard fails"
     ],
-    "verification_status": "partial_design; V2 confirmation/source, V1 conditional illustration; no independent/runtime acceptance",
-    "action_boundary": "Only standard current design documents, original confirmation, own real receipt and closeout; no other line or code writes",
+    "verification_status": "partial; V2 sources / V1 composition and pending proposal; no independent/runtime acceptance",
+    "action_boundary": "Only scoped ordinary design/source documents and own receipt; no candidate approval, code or engine",
     "failure_conditions": [
-      "Broaden A to another shield, activation turn, endpoint protection or hidden/control/space/history branch",
-      "Count this shared decision as a new ordinary decision",
-      "Mark UNRUN as engine PASS",
-      "Overwrite concurrent work"
+      "Transfer warrior exception to all failures without approval",
+      "Refund an already-used later assassination chance",
+      "Resurrect old strong-strike or treat old runtime numbers as current PASS",
+      "Overwrite other line"
     ],
-    "residual_risk": "Approval chooses the scoped design, not complete reachability or implementation. Receivers must read the exact guard and record their own adoption.",
-    "next_validation_action": "用户明确继续普通象棋线后，先恢复本次已确认A及原H02/M04/H21相关完整来源，限定复核后续刺杀遇终点单龙鳞时，既有路径结果保留、返位落位与机会消耗的来源覆盖；已有明确条款直接沿用，不重复审批A。缺口才形成一个具体候选，继续不算新批准，不改代码或运行引擎。",
-    "action_resilience": {
-      "maximum_exposure": "One reversible scoped documentation commit",
-      "stop_conditions": "Overlapping remote target/source changes or conflicting user instruction",
-      "recovery": "Ordinary scoped follow-up commit preserving unrelated work; no force reset."
-    }
+    "residual_risk": "A is a policy choice with tactical benefits, not proof of complete legality or source ordering.",
+    "next_validation_action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。"
   },
   "delivery": {
     "transport": "GitHub connector",
@@ -513,37 +498,9 @@
     "adoption_scope": "Current ordinary-line source activation, scope inheritance, approved baseline, pending versus approval, source-bound incremental handoff and verification controls only.",
     "effectiveness_verified": false
   },
-  "shared_confirmed_delta": [
-    {
-      "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-      "status": "user_confirmed_shared_design_written_to_standard_current_sources",
-      "scope": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-      "origin_workline": "standard",
-      "confirmed_at_local": "2026-10-18T23:29:42+08:00",
-      "user_quote": "我同意沿用这个方案，进行这一轮的工作，然后就收束对话。",
-      "approval_clause_quote": "我同意沿用这个方案",
-      "reviewed_candidate": {
-        "commit": "1b6f027885f6615ae5829e76dbbd3993ba440aac",
-        "path": "worklines/standard/candidates/h02-m04-path-dragon-scale/v1.json",
-        "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf",
-        "original_prepared_design_commit": "05501db57425ee406983468ba81f1efdfc73057f"
-      },
-      "selected_option": "A",
-      "new_direct_shared_confirmation_this_dialogue": true,
-      "new_local_standard_confirmation": false,
-      "main_receipt_verified": null,
-      "main_adoption_verified": null,
-      "other_mode_adoption_verified": null,
-      "implementation": false
-    }
-  ],
+  "shared_confirmed_delta": [],
   "new_local_standard_confirmations": 0,
-  "new_shared_user_rule_confirmations": 1,
+  "new_shared_user_rule_confirmations": 0,
   "pending_main_shared_receipt_scope": [
     {
       "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
@@ -1092,8 +1049,8 @@
       "adopted_verified": null
     }
   ],
-  "session_scope_note": "This conversation newly confirms only exact AP A (one shared, zero ordinary); closeout itself adds0. Ordinary31/shared12; all original scope exclusions remain.",
-  "publication_parent_commit": "c87afd94384322663dbf6cb9a0f4823ed5992e98",
+  "session_scope_note": "Same conversation resumed on2026-10-19. Its earlier one shared AP approval remains; current source-review/candidate stage adds0, ordinary31/shared12 unchanged.",
+  "publication_parent_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
   "received_shared_delta": [],
   "observed_main_H02_M04_receipt": {
     "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
@@ -1137,12 +1094,14 @@
     }
   },
   "next_task": {
-    "id": "NEXT-STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "后续刺杀终点单龙鳞的路径结果、返回与机会消耗来源复核",
-    "action": "用户明确继续普通象棋线后，先恢复本次已确认A及原H02/M04/H21相关完整来源，限定复核后续刺杀遇终点单龙鳞时，既有路径结果保留、返位落位与机会消耗的来源覆盖；已有明确条款直接沿用，不重复审批A。缺口才形成一个具体候选，继续不算新批准，不改代码或运行引擎。",
-    "status": "deferred_until_user_continuation_source_review_not_started",
-    "requires_continuation_before_work": true,
-    "implementation_authorized": false
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "subject": "H02发动当回合被M04终点单龙鳞拦截时的来源费用",
+    "action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false,
+    "requires_continuation_before_work": false
   },
   "terminology": {
     "M04_charge_word": "Existing descriptive wording in prior M04 text; not a new global keyword",
@@ -1188,85 +1147,17 @@
     "receiver_reading_and_adoption": "Unknown for this new three-line scope clarification; receivers maintain their own receipts."
   },
   "source_alignment": {
-    "id": "STD-M04-H10-ATOMIC-DAMAGE-SOURCE-ALIGNMENT",
-    "status": "limited_source_alignment_complete_runtime_unrun",
+    "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "body": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+    "scope": "ordinary legal later H02/M04 assassination into a single endpoint scale; exact conditional guard only",
     "rule_delta": 0,
     "new_user_confirmation": false,
-    "scope": "Ordinary mode bounded existing-source final-result composition only; public target gate first, no new action permission or global H10 ordering.",
-    "source_commit": "40dd3fe3b508a122e054ef402ddcbf83edfb3bc5",
-    "body": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
-    "facts": [
-      {
-        "id": "WD-F1",
-        "source": "rules/shared/03_CURRENT_MUTATIONS.md#M04; work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
-        "claim": "Exactly one ground path body is subject to M04 independent crush; ordinary endpoint permissions are not expanded, including public generals."
-      },
-      {
-        "id": "WD-F2",
-        "source": "rules/shared/02_CURRENT_HEROES.md#H10影",
-        "claim": "Secret host uses its public body permissions; no target protection or permission leak. Independent actual destruction kills its resident true general."
-      },
-      {
-        "id": "WD-F3",
-        "source": "rules/shared/02_CURRENT_HEROES.md#H10流; sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-09_WIND_FLOW_CASUALTY.md",
-        "claim": "Surface-lethal decoy substitutes one actual host victim if host has not independently died in same atom; true general detaches first; original lethal source retained."
-      },
-      {
-        "id": "WD-F4",
-        "source": "rules/shared/02_CURRENT_HEROES.md#H10流舞; sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/rules/confirmed/RULE_UPDATE_2026-10-04_WIND_RETURN.md",
-        "claim": "Ordinary path crush does not grant dance. Ground occupancy causes suffocation without pushing occupier; executor return is specific to judgment, not universal."
-      },
-      {
-        "id": "WD-F5",
-        "source": "rules/shared/01_CURRENT_RULES.md#2.4-2.5",
-        "claim": "Complete already committed atom before final terminal judgment; both actual true generals dead at close means mutual_destruction."
-      }
-    ],
-    "conditional_final_results": [
-      {
-        "id": "WD-S01",
-        "conditions": "An originally legal standard normal M04 attack; revealed true normal-control ground rook; one revealed ground nonroyal path body that is the enemy H10 secret host; legal unprotected revealed enemy nonroyal endpoint; no other source intervention. Full natural prefix and engine not proven.",
-        "result": "If path crush actually destroys host, its true general dies; decoy remaining on board cannot rescue it. Complete already committed endpoint/landing/death steps before final outcome. No target-permission difference based on secret host identity."
-      },
-      {
-        "id": "WD-S02",
-        "conditions": "An originally legal standard normal M04 attack; one revealed ground public H10 decoy on path; its host alive off path and endpoint and not independently destroyed in same atom; revealed legal enemy nonroyal unprotected endpoint; all public permissions, final own-royal safety and landing gates hold; no immunity/other direct triggers.",
-        "result": "Path crush makes decoy surface-lethal; host is the one actual crush victim, not an additional attack kill. Decoy form ends; true general returns to path square, old host square empties. Rook continues its already legal endpoint resolution and lands at endpoint in this guarded final-state composition. No second path crush, no two-victim count and no flow dance. Process actual resulting check/response; no presumed safety for returned general."
-      },
-      {
-        "id": "WD-S03",
-        "conditions": "Public decoy proposed as ordinary normal-M04 direct endpoint.",
-        "result": "Reject this case as an ordinary command before damage composition: public general endpoint permissions still control. H10 victim substitution cannot create target permission or make a second remote attack on host."
-      }
-    ],
-    "not_selected_or_proven": [
-      "No full legal natural prefix, engine, independent review or privacy-channel validation.",
-      "No new permission for ordinary M04 to target public decoy/general endpoint.",
-      "No H02 activation/assassination, protection/immunity versus flow priority, multi-source occupation/return/trap or H06/H11 history resolution.",
-      "No all-mode mechanics acceptance; three-mode scope clarification applies only to wording.",
-      "No reliance on old code/tests as current rule approval or current runtime proof."
-    ],
-    "evidence": {
-      "source_facts": "V2 related current full clauses and original Oct4/Oct9 confirmed updates",
-      "conditional_combination": "V1 same-assistant bounded inference; not independently verified",
-      "static_discrepancies": [
-        "Pinned rules.ts general-target M04 exception conflicts with current ordinary endpoint permissions.",
-        "Pinned settlement.ts resolveWindReturn transforms host into returned general and records old decoy death; it does not prove Oct9 single-actual-host-victim semantics."
-      ],
-      "game_code_changes": 0,
-      "engine_runs": 0,
-      "independent_review": false,
-      "full_natural_prefix": false
-    },
-    "unrun_specs": [
-      "WD01 public-general endpoint permission gate",
-      "WD02 secret host independent path death does not flow-rescue",
-      "WD03 decoy path surface-lethal substitutes single actual host crush casualty",
-      "WD04 returned general on path versus rook endpoint, no re-crush or extra remote attack",
-      "WD05 first/second shadow path crush no dance",
-      "WD06 mandatory atomic closure and true-royal terminal state",
-      "WD07 ground occupation suffocation and judgment-only executor return retained by source, no ordinary endpoint example legalized",
-      "WD08 record/privacy/history/defense/source-order and full legal-prefix/runtime remain unverified"
+    "verification": "V2 source clauses / V1 guarded final-result composition; ES-S01/ES01-ES08 UNRUN",
+    "not_decided": [
+      "activation-turn H02 success/source cost",
+      "full internal return/source-intangibility ordering",
+      "other defense/H10/space/control/history/runtime"
     ]
   },
   "observed_main_M04_path_scale_receipt": {
@@ -1382,15 +1273,11 @@
     ]
   },
   "source_review": {
-    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "source_commit": "fa781b5538f1760b0f408e02b64183261c239063",
-    "status": "exact_A_explicitly_confirmed_design_only",
-    "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-    "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-    "rule_delta_approved": 1,
-    "new_user_confirmation": true,
-    "previous_exclusions_preserved_outside_exact_new_guard": true,
-    "verification": "V2 exact user/source confirmation; V1 conditional example; AP/all old specs UNRUN"
+    "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "status": "completed_source_alignment_gap_narrowed_candidate_pending",
+    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "new_gameplay_confirmation": false
   },
   "previous_shared_wording_delta": {
     "id": "WORDING-THREE-MODE-M04-DESCRIPTION-20261017",
@@ -1428,34 +1315,24 @@
     "new_this_phase_receipt_for_resume_verified": null
   },
   "session_resume": {
-    "id": "STD-SESSION-RESUME-20261018-r1",
-    "at_local": "2026-10-18T10:41:22+08:00",
-    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+    "id": "STD-SAME-CONVERSATION-RESUME-20261019-r1",
+    "at_local": "2026-10-19T08:42:00+08:00",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
     "user_instruction": {
-      "quote": "继续乐子象棋普通象棋模式工作线",
-      "at_local": "2026-10-18T10:38:45+08:00",
-      "scope": "Resume the standard workline and restore the existing exact candidate; not gameplay approval or implementation authorization."
+      "quote": "继续普通象棋工作线吧，不更换对话了",
+      "at_local": "2026-10-19T08:36:14+08:00"
     },
-    "status": "active_candidate_restored_pending_user_decision",
-    "previous_session_closeout": "STD-SESSION-CLOSEOUT-20261017-r2",
-    "candidate_source": {
-      "path": "candidates/h02-m04-path-dragon-scale/v1.json",
-      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
-    },
-    "candidate_approved": false,
-    "candidate_bytes_unchanged": true,
-    "new_gameplay_confirmations": 0,
-    "ordinary_confirmation_count": 31,
-    "direct_shared_confirmations": 11,
+    "same_conversation": true,
+    "previous_closeout_retained_as_history": true,
+    "status": "active_source_review_complete_new_activation_candidate_pending",
+    "new_gameplay_confirmations_this_stage": 0,
+    "current_conversation_prior_shared_confirmation_count": 1,
+    "ordinary": 31,
+    "direct_shared": 12,
     "new_game_code_changes": 0,
     "game_engine_runs": 0,
-    "unrun_specs": [
-      "AP-S01",
-      "AP01-AP08",
-      "all prior unrun specifications"
-    ],
-    "other_dialogue_unreturned_work": "unknown; no other workline or original source modified",
-    "initial_visible_local_unreturned_files_found": 0
+    "initial_previous16_payloads_exact": true,
+    "visible_local_unreturned_deltas": 0
   },
   "previous_preserved_confirmations": {
     "inherited_source_round_count": 21,

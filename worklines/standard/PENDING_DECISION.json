@@ -1,18 +1,20 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "session_closed_AP_A_confirmed_no_active_user_candidate",
+  "status": "active_H02_M04_activation_endpoint_scale_A_pending",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
     "candidate_id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
     "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json"
   },
   "next_work_item": {
-    "id": "NEXT-STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "后续刺杀终点单龙鳞的路径结果、返回与机会消耗来源复核",
-    "action": "用户明确继续普通象棋线后，先恢复本次已确认A及原H02/M04/H21相关完整来源，限定复核后续刺杀遇终点单龙鳞时，既有路径结果保留、返位落位与机会消耗的来源覆盖；已有明确条款直接沿用，不重复审批A。缺口才形成一个具体候选，继续不算新批准，不改代码或运行引擎。",
-    "status": "deferred_until_user_continuation_source_review_not_started",
-    "requires_continuation_before_work": true,
-    "implementation_authorized": false
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "subject": "H02发动当回合被M04终点单龙鳞拦截时的来源费用",
+    "action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false,
+    "requires_continuation_before_work": false
   },
   "unresolved_questions": [
     "Latest main1.61 H15/H06 graduation source review next; no active user candidate reported. Newer H15 sources not fully read/adopted here.",
@@ -24,16 +26,21 @@
     "concrete legal fixtures and runtime/privacy validation",
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
-  "current_candidate": null,
-  "candidate_prepared_for_presentation": false,
-  "approval_scope_guard": "Current explicit approval covers exact reviewed AP A only; original candidate snapshot is immutable and its preapproval pending fields are superseded solely within the new confirmation scope.",
-  "new_candidate_approved": true,
+  "current_candidate": {
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "approved": false,
+    "scope": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
+    "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？"
+  },
+  "candidate_prepared_for_presentation": true,
+  "approval_scope_guard": "New candidate covers only the unused H02 hero activation source after this guarded ordinary attack returns; existing later assassination consumption and approved AP A unchanged. Continue does not approve.",
+  "new_candidate_approved": false,
   "candidate_presentation": {
-    "source": "candidates/h02-m04-path-dragon-scale/v1.json",
-    "example": "AP-S01",
-    "question": "是否同意A，作为三个模式中上述原已合法H02＋M04后续刺杀情形的共同规则？",
-    "selected_option": "A",
-    "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018"
+    "source": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "example": "AS-S01",
+    "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？",
+    "selected_option": null
   },
   "resolved_candidate": {
     "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
@@ -153,12 +160,14 @@
     "approved": false
   },
   "local_next": {
-    "id": "NEXT-STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "后续刺杀终点单龙鳞的路径结果、返回与机会消耗来源复核",
-    "action": "用户明确继续普通象棋线后，先恢复本次已确认A及原H02/M04/H21相关完整来源，限定复核后续刺杀遇终点单龙鳞时，既有路径结果保留、返位落位与机会消耗的来源覆盖；已有明确条款直接沿用，不重复审批A。缺口才形成一个具体候选，继续不算新批准，不改代码或运行引擎。",
-    "status": "deferred_until_user_continuation_source_review_not_started",
-    "requires_continuation_before_work": true,
-    "implementation_authorized": false
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "subject": "H02发动当回合被M04终点单龙鳞拦截时的来源费用",
+    "action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false,
+    "requires_continuation_before_work": false
   },
   "main_latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
   "last_confirmed_scope_note": "Existing last_confirmed/confirmation fields retain previously fully adopted H15 display source, not a claim that newer reported confirmation is adopted.",
@@ -229,34 +238,24 @@
     "publication_parent_commit": "c87afd94384322663dbf6cb9a0f4823ed5992e98"
   },
   "session_resume": {
-    "id": "STD-SESSION-RESUME-20261018-r1",
-    "at_local": "2026-10-18T10:41:22+08:00",
-    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+    "id": "STD-SAME-CONVERSATION-RESUME-20261019-r1",
+    "at_local": "2026-10-19T08:42:00+08:00",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
     "user_instruction": {
-      "quote": "继续乐子象棋普通象棋模式工作线",
-      "at_local": "2026-10-18T10:38:45+08:00",
-      "scope": "Resume the standard workline and restore the existing exact candidate; not gameplay approval or implementation authorization."
+      "quote": "继续普通象棋工作线吧，不更换对话了",
+      "at_local": "2026-10-19T08:36:14+08:00"
     },
-    "status": "active_candidate_restored_pending_user_decision",
-    "previous_session_closeout": "STD-SESSION-CLOSEOUT-20261017-r2",
-    "candidate_source": {
-      "path": "candidates/h02-m04-path-dragon-scale/v1.json",
-      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
-    },
-    "candidate_approved": false,
-    "candidate_bytes_unchanged": true,
-    "new_gameplay_confirmations": 0,
-    "ordinary_confirmation_count": 31,
-    "direct_shared_confirmations": 11,
+    "same_conversation": true,
+    "previous_closeout_retained_as_history": true,
+    "status": "active_source_review_complete_new_activation_candidate_pending",
+    "new_gameplay_confirmations_this_stage": 0,
+    "current_conversation_prior_shared_confirmation_count": 1,
+    "ordinary": 31,
+    "direct_shared": 12,
     "new_game_code_changes": 0,
     "game_engine_runs": 0,
-    "unrun_specs": [
-      "AP-S01",
-      "AP01-AP08",
-      "all prior unrun specifications"
-    ],
-    "other_dialogue_unreturned_work": "unknown; no other workline or original source modified",
-    "initial_visible_local_unreturned_files_found": 0
+    "initial_previous16_payloads_exact": true,
+    "visible_local_unreturned_deltas": 0
   },
   "previous_last_confirmed_source": {
     "id": "CONF-THREE-MODE-H15-PUBLIC-TRAINING-DISPLAY-20261017",

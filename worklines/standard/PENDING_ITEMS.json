@@ -64,7 +64,8 @@
         "H02 legal later ground opportunity geometry confirmed by CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
         "Normal exact path-dragon-scale A confirmed; other immunity and endpoint multiple-defense order remain pending",
         "H10 bounded host/decoy path source composition recorded; full defense/flow/source-order/space/history/runtime remains pending",
-        "Exact H02 later-assassination one-enemy-path dragon-scale A explicitly confirmed by CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018; all original exclusions remain pending."
+        "Exact H02 later-assassination one-enemy-path dragon-scale A explicitly confirmed by CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018; all original exclusions remain pending.",
+        "Later H02/M04 endpoint-single-scale bounded final result source-aligned (no new rule); activation-turn source cost still pending in candidates/h02-m04-activation-endpoint-dragon-scale/v1.json"
       ],
       "source": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md#已确认｜M04 战车普通地面车继承",
       "M04_body_confirmation_does_not_resolve_these": true,
@@ -78,13 +79,33 @@
           "source": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
           "status": "V2 sources plus V1 guarded final-result inference; all WD unrun",
           "full_H10_crossing_accepted": false
+        },
+        "H02_later_endpoint_single_scale": {
+          "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
+          "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+          "body": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+          "scope": "ordinary legal later H02/M04 assassination into a single endpoint scale; exact conditional guard only",
+          "rule_delta": 0,
+          "new_user_confirmation": false,
+          "verification": "V2 source clauses / V1 guarded final-result composition; ES-S01/ES01-ES08 UNRUN",
+          "not_decided": [
+            "activation-turn H02 success/source cost",
+            "full internal return/source-intangibility ordering",
+            "other defense/H10/space/control/history/runtime"
+          ]
         }
       },
       "assassination_geometry_confirmed": "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
       "path_dragon_scale_A_confirmed": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
       "limited_endpoint_source_alignment": "STD-M04-ENDPOINT-INTERCEPTION-SOURCE-ALIGNMENT",
       "endpoint_full_multi_source_priority_still_pending": true,
-      "pending_candidate": null,
+      "pending_candidate": {
+        "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+        "path": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+        "approved": false,
+        "scope": "仅三个模式原已合法可用的H02英雄＋唯一畸变M04组合；H02英雄来源尚未用、无其他活跃刺杀潜行来源且处于原已允许发动时机。本次为尝试发动H02当回合的一次普通【进攻】，不是已持有后续刺杀机会的进攻。行动者为正常控制的明置真实地面车；起终点间恰一枚敌方明置地面非将帅/非影武者路径棋，无防护/碾碎免疫且已实际被独立M04碾碎。终点为原合法敌方明置地面非将帅/非影武者棋，仅有敌方H21无敌合法赋予的一次有效龙鳞；无其他拦截、特殊承伤/空间/控制/历史或落位介入。龙鳞按原来源拦截后车合法返回原起点，仍存活且由原方正常控制；原路线/发动窗口/目标权限/完整己将安全与落位条件全部成立。不新增模式池、第二畸变或第三英雄。",
+        "question": "是否同意这个“发动当回合被终点龙鳞拦截”的限定A，作为三个模式原已合法H02＋M04组合的共同规则？"
+      },
       "resolved_candidate": {
         "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
         "path": "candidates/h02-m04-path-dragon-scale/v1.json",
@@ -1060,6 +1081,18 @@
         "游戏代码、引擎通过、独立复核、评分恢复或NET启动"
       ],
       "unrun": "AP-S01/AP01-AP08 and all prior specs"
+    },
+    {
+      "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
+      "status": "limited_existing_source_composition_complete_not_full_order_or_runtime",
+      "source": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+      "rule_delta": 0,
+      "new_user_confirmation": false,
+      "retained_unresolved": [
+        "activation-turn H02 success/source cost",
+        "full internal return/source-intangibility ordering",
+        "other defense/H10/space/control/history/runtime"
+      ]
     }
   ],
   "session_closeout": {
@@ -1135,5 +1168,25 @@
     "commit": "05501db57425ee406983468ba81f1efdfc73057f",
     "path": "CURRENT_STATE.json#session_closeout",
     "revision": "STD-SESSION-CLOSEOUT-20261017-r1"
+  },
+  "session_resume": {
+    "id": "STD-SAME-CONVERSATION-RESUME-20261019-r1",
+    "at_local": "2026-10-19T08:42:00+08:00",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "user_instruction": {
+      "quote": "继续普通象棋工作线吧，不更换对话了",
+      "at_local": "2026-10-19T08:36:14+08:00"
+    },
+    "same_conversation": true,
+    "previous_closeout_retained_as_history": true,
+    "status": "active_source_review_complete_new_activation_candidate_pending",
+    "new_gameplay_confirmations_this_stage": 0,
+    "current_conversation_prior_shared_confirmation_count": 1,
+    "ordinary": 31,
+    "direct_shared": 12,
+    "new_game_code_changes": 0,
+    "game_engine_runs": 0,
+    "initial_previous16_payloads_exact": true,
+    "visible_local_unreturned_deltas": 0
   }
 }

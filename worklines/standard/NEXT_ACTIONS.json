@@ -1,26 +1,27 @@
 {
   "first": {
-    "id": "NEXT-STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-REVIEW",
-    "subject": "后续刺杀终点单龙鳞的路径结果、返回与机会消耗来源复核",
-    "action": "用户明确继续普通象棋线后，先恢复本次已确认A及原H02/M04/H21相关完整来源，限定复核后续刺杀遇终点单龙鳞时，既有路径结果保留、返位落位与机会消耗的来源覆盖；已有明确条款直接沿用，不重复审批A。缺口才形成一个具体候选，继续不算新批准，不改代码或运行引擎。",
-    "status": "deferred_until_user_continuation_source_review_not_started",
-    "requires_continuation_before_work": true,
-    "implementation_authorized": false
+    "id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
+    "subject": "H02发动当回合被M04终点单龙鳞拦截时的来源费用",
+    "action": "呈现原来源已确定结果与AS-S01限定A，等待用户明确决定H02本次不成立且保留未用来源；不是重复审批已确认AP A。",
+    "status": "candidate_prepared_pending_user_decision_not_approved",
+    "candidate": "candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+    "pending_is_not_approved": true,
+    "approved": false,
+    "requires_continuation_before_work": false
   },
-  "preserve": "本轮已明确批准AP限定A，普通31/本线直接共享12；原确认、三线共同文案和其他既有有效确认保留。当前对话收束，下一来源复核尚未启动，待用户明确继续；评分冻结、NET暂停，全部旧规格保持UNRUN。",
+  "preserve": "同一对话已明确恢复，不重复审批昨晚AP A。普通31/直接共享12保持，当前发动步终点鳞候选未批准；评分冻结、NET暂停，全部未运行规格UNRUN。",
   "main_owned_pending": "Latest main1.62 metadata only: no active user candidate; H15/H06 graduation-source review complete with policy unresolved; no new H15 policy adopted here.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
-    "status": "user_confirmed_A_design_written_not_implemented",
-    "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
-    "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-    "new_shared_confirmations": 1,
+    "id": "STD-H02-M04-ENDPOINT-DRAGON-SCALE-SOURCE-ALIGNMENT",
+    "status": "bounded_source_alignment_complete_activation_candidate_pending",
+    "source": "reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+    "new_shared_confirmations": 0,
     "new_ordinary_confirmations": 0,
-    "verification": "V2 user confirmation; AP/all prior specs UNRUN"
+    "verification": "V2 sources / V1 composition; ES/AS all UNRUN"
   },
-  "status": "session_closed_AP_A_confirmed_no_active_candidate",
+  "status": "active_candidate_prepared_pending_user_decision",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261018-r1",
     "status": "closed_current_conversation",
@@ -81,11 +82,13 @@
     "publication_parent_commit": "c87afd94384322663dbf6cb9a0f4823ed5992e98"
   },
   "completed_previous": {
-    "id": "STD-M04-H10-ATOMIC-DAMAGE-SOURCE-ALIGNMENT",
-    "rule_delta": 0,
-    "new_shared_confirmations": 0,
+    "id": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
+    "status": "user_confirmed_A_design_written_not_implemented",
+    "confirmation_id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+    "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "new_shared_confirmations": 1,
     "new_ordinary_confirmations": 0,
-    "verification": "V2 source/V1 guarded conditional outcomes; WD01-WD08 unrun"
+    "verification": "V2 user confirmation; AP/all prior specs UNRUN"
   },
   "previous_session_closeout_source": {
     "commit": "05501db57425ee406983468ba81f1efdfc73057f",
@@ -93,33 +96,23 @@
     "revision": "STD-SESSION-CLOSEOUT-20261017-r1"
   },
   "session_resume": {
-    "id": "STD-SESSION-RESUME-20261018-r1",
-    "at_local": "2026-10-18T10:41:22+08:00",
-    "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
+    "id": "STD-SAME-CONVERSATION-RESUME-20261019-r1",
+    "at_local": "2026-10-19T08:42:00+08:00",
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
     "user_instruction": {
-      "quote": "继续乐子象棋普通象棋模式工作线",
-      "at_local": "2026-10-18T10:38:45+08:00",
-      "scope": "Resume the standard workline and restore the existing exact candidate; not gameplay approval or implementation authorization."
+      "quote": "继续普通象棋工作线吧，不更换对话了",
+      "at_local": "2026-10-19T08:36:14+08:00"
     },
-    "status": "active_candidate_restored_pending_user_decision",
-    "previous_session_closeout": "STD-SESSION-CLOSEOUT-20261017-r2",
-    "candidate_source": {
-      "path": "candidates/h02-m04-path-dragon-scale/v1.json",
-      "git_blob_sha": "284d0b724e48ad79f4ef51b307a9a7bb977917cf"
-    },
-    "candidate_approved": false,
-    "candidate_bytes_unchanged": true,
-    "new_gameplay_confirmations": 0,
-    "ordinary_confirmation_count": 31,
-    "direct_shared_confirmations": 11,
+    "same_conversation": true,
+    "previous_closeout_retained_as_history": true,
+    "status": "active_source_review_complete_new_activation_candidate_pending",
+    "new_gameplay_confirmations_this_stage": 0,
+    "current_conversation_prior_shared_confirmation_count": 1,
+    "ordinary": 31,
+    "direct_shared": 12,
     "new_game_code_changes": 0,
     "game_engine_runs": 0,
-    "unrun_specs": [
-      "AP-S01",
-      "AP01-AP08",
-      "all prior unrun specifications"
-    ],
-    "other_dialogue_unreturned_work": "unknown; no other workline or original source modified",
-    "initial_visible_local_unreturned_files_found": 0
+    "initial_previous16_payloads_exact": true,
+    "visible_local_unreturned_deltas": 0
   }
 }
