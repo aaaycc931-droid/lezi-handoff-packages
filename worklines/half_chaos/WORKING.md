@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261019-r33
+revision: HC-SESSION-CLOSEOUT-20261019-r5
 date_local: 2026-10-19
 timezone: Asia/Shanghai
 primary_reader: AI
-status: safety_repair_contract_document_prepared_unrun
+status: conversation_closed_after_r33_documents_unrun
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -19,13 +19,13 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 
 ## 0. 当前入口与接续
 
-当前HC-DESIGN-03-20261019-r33。用户2026-10-19T22:39:53+08:00“同意进行下一步”，只接续已明确WP03文档细化/本线阶段写回；当前对话继续，r4收束为历史。完成有限安全修复契约建议，详§8.57及SAFETY_REPAIR_CONTRACT_PROPOSAL.json。来源基准4eb9c9b224c400b7d3aee3e6b345ebe6c061a109，mainWP03仍待共享复核，没有实现/运行/门禁批准。
+用户2026-10-19T22:55:43+08:00明确“收束本轮对话”，当前HC-SESSION-CLOSEOUT-20261019-r5，仅关闭本半混乱对话；不停止项目或其他工作线。最后完成设计为HC-DESIGN-03-20261019-r33，实际提交8b13766fa4fa38eea70d9adbfdeb5e699fa75385。完整设计正文仍见§8.56/8.57及PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json、SAFETY_REPAIR_CONTRACT_PROPOSAL.json；本次收束见§8.58与CURRENT_STATE.session_closeout。
 
-四项合同对应EI02沙漏完整安全、EI03受将拒投、EI05实际路径/防御闭合王安全、EI07铁马合法马腿路线。新文档提出真实消灭批次上下文证明、隔离副作用/一次提交、七类拒绝不变量；关联原34义务、10技能声明和5安全场景，全是原预期，未运行。克隆state不能证明原WeakMap批次已闭合，铁马公式差异不等于PD03已复现失败。
+已核最新HEAD 251f43507337747d0f7b21a0b19ca7909ca7baf7：r33全部9项与已发布身份一致，检查范围未回传差分0；原6数据、CONFIRMATIONS、WP01/WP02/WP03均不变。当前HEAD是普通线自身收束，只记录其最新入口元数据并保留全部11项并发载荷，不代表由本线停止其他线。
 
-原三组/12后续验证范围确认无需重批；原6数据、CONFIRMATIONS、WP01/WP02字节保持。全部64UNRUN，可运行0，代码/引擎导入运行/hook/门禁改动0，评分冻结、NET暂停。主线r31/r32/r33接收采用未知，不代填回执。
+原三种tuple/12后续验证范围确认与全部有效原确认继续保留，无需重批。WP01准入、WP02精确观察、WP03安全修复均是有限文档合同，共享具体接口/实现仍待主线；本次新增玩法/范围/技术批准0。64项全部UNRUN，可运行/已运行0，评分冻结、NET暂停，没有业务改动、引擎导入运行、hook或门禁变更。
 
-下一NEXT-HC-DELIVERY-EVIDENCE-CONTRACT-REFINEMENT，仅WP04死亡/玩家输出/递送证据文档，不添加新刺激。共享冲突交主线，其余独立文档继续，不把本阶段完成或继续当作技术候选批准。
+下一NEXT-HC-DELIVERY-EVIDENCE-CONTRACT-REFINEMENT，WP04证据文档细化，NOT_STARTED_DOCUMENT_ONLY。用户在本对话或新对话明确继续后，先保护未回传成果、读最新固定入口/HEAD与相关完整正文，再按实际最新断点接续。不把继续或收束当作技术候选批准，不代填主线/其他线接收回执。
 
 ## 1. 确认恢复与保护
 
@@ -2555,6 +2555,20 @@ HC-SAFE-Q01—05在RETURN_TO_MAIN中交主线核共用闭合、批次/RNG、有�
 提交前并发：普通线bc7e4239935a760b12c75d5f8e910086bfc34e19新增H02发动步终点单龙鳞限定A原确认；本线只读其入口/原确认ID结构与shared03完整新增段差分，未读shared02完整guard及原确认policy，不作规则消费。shared03既有M01/M04普通路径安全与D01相关正文逐字未变；原12无H02/H21，文档范围不扩。以该实际新HEAD树和同parent写本线，保留其17项并发载荷，不改共享文件。
 
 本轮仅离线JSON身份/引用/源码函数顺序核对，V2有限来源事实＋V1同一AI契约建议，无独立审计或运行。全部64UNRUN，可运行0；评分冻结、NET暂停。下一WP04实际死亡/复活前证据、真实红黑输出与重传/冲突证据文档，未开始；不添加命令、不改业务/导入运行、不绕门禁。
+
+### 8.58 当前对话收束与接续入口（r5）
+
+本次用户原话“收束本轮对话”（2026-10-19T22:55:43+08:00）只关闭本线当前会话，不批准新方案，不停止项目/其他线，不开始WP04。r4之后同一对话已恢复并完成r32 WP02、r33 WP03，本次按该实际最新进度保存，不退回旧r29/r30/r31断点。
+
+已完成：r31 WP01限定准入契约和原3tuple/12验证范围确认保持；r32完成4类被动边界、210原声明点及64原义务文档；r33完成EI02/03/05/07四项安全合同、七类拒绝不变量、34原义务/10原技能声明/5原场景及HC-SAFE-Q01—05。r33真实提交8b13766fa4fa38eea70d9adbfdeb5e699fa75385，已成功发布且当时复读核对；本次又核九项身份与最新树一致，检查范围内无未回传差分。全部三合同与原6数据/CONFIRMATIONS原字节保持。
+
+未完成：main仍只接收待复核WP01/02/03，无共享接口、hook、安全修复实现/运行批准；本线r31/r32/r33及本收束的main接收采用仍未知。自然缺例、未声明刺激、客户端/传输输出、完整搜索/终局/层级/时序与重复键等原缺口不变。铁马静态公式差异不等于已复现PD03失败，state克隆不能证明原WeakMap批次闭合；旧H15吞机会方案不恢复，未读H02完整政策不消费。
+
+本次基准251f43507337747d0f7b21a0b19ca7909ca7baf7为普通线最新收束提交，11项并发载荷全部保留。本线仅更新8份现有状态/交接文本，不改共享根入口或其他线回执。当前协作实际读取v0.13、正式基线1.8.0，按既有同范围授权非强制提交与复读；身份/JSON检查不是游戏运行或独立验收。
+
+下一步固定为NEXT-HC-DELIVERY-EVIDENCE-CONTRACT-REFINEMENT（WP04），NOT_STARTED_DOCUMENT_ONLY：原死亡/复活前历史、真实红黑玩家输出、同状态新请求/原样重传/同ID冲突的证据文档，保留缺刺激与客户端/传输未核边界，不添加命令、不写业务、不导入运行、不绕门禁。用户明确继续后读实际最新入口再做，无需重批原12范围。
+
+收束新增玩法/范围/技术确认0；原64全部UNRUN，可运行/已运行0，评分冻结、NET暂停。完整状态及原话在CURRENT_STATE.session_closeout；本次局限审查在VALIDATION.closeout_r5_limitation_audit，V2有限源与身份核对、同一AI维护，无独立游戏运行或未来接续效果证明。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
