@@ -1,8 +1,8 @@
 {
-  "revision": "HC-DESIGN-03-20261018-r31",
-  "source_commit": "3a38dec64327dcff63d596809debe7a8810ae616",
-  "publication_parent_commit": "fa781b5538f1760b0f408e02b64183261c239063",
-  "scope": "r31 scope-plan confirmation and this dialogue closeout; prior source/document checks retained under original scope",
+  "revision": "HC-DESIGN-03-20261019-r32",
+  "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+  "publication_parent_commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
+  "scope": "r32 passive-observation contract/reference and unchanged input identities; no gameplay assertion",
   "matrix_file": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
   "data_sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
   "summary": {
@@ -204,7 +204,7 @@
     "publication_parent_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
     "scope": "finite64 obligation evidence matrix / external scoped confirmation; documentation-only"
   },
-  "limitation_audit_reference": "ADMISSION_CONTRACT_PROPOSAL.json#/limitation_audit",
+  "limitation_audit_reference": "PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json#/limitation_audit",
   "previous_matrix_limitation_audit": {
     "audit_trigger": "finite source/data evidence matrix and scoped shared confirmation maintenance",
     "risk_level": "high",
@@ -344,7 +344,7 @@
     "observation": "standard resumed pending H02/M04 path-scale candidate, no new approval; no semantic adoption; present12 have no H02/H21",
     "other_workline_objects_preserved": true
   },
-  "new_user_scope_plan_confirmations": 1,
+  "new_user_scope_plan_confirmations": 0,
   "closeout_r4_checks": {
     "scope_confirmation_id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
     "confirmed_existing12_scope_only": true,
@@ -356,5 +356,67 @@
     "all64": "UNRUN",
     "independent_review": false,
     "validation": "JSON/source identity and confirmation boundary checks only; no gameplay assertions evaluated"
+  },
+  "r32_observation_contract_checks": {
+    "status": "OFFLINE_DOCUMENT_CHECKS_COMPLETED",
+    "proposal": {
+      "path": "worklines/half_chaos/PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json",
+      "task_completed": "NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT",
+      "status": "DOCUMENT_PROPOSAL_PREPARED_NOT_IMPLEMENTED_OR_APPROVED",
+      "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+      "working_section": "8.56",
+      "git_blob_sha": "28fcbb8aa53f9b99779429730fe399945fac82da",
+      "sha256": "9b3b2515b27374b5c4bd6400b0e9c4d249ad816839b619f9b77248c47f71257b",
+      "size_bytes": 83623,
+      "chars": 74929
+    },
+    "checks": {
+      "210_original_checkpoint_ids_partitioned_100_100_6_4": true,
+      "64_original_spec_ids_and_boundary_routes_valid": true,
+      "PD_S32_kept_without_natural_checkpoint": true,
+      "original6_data_and_scope_confirmation_wp01_unchanged": true,
+      "no_game_assertion_evaluated": true,
+      "all64_UNRUN": true
+    },
+    "engine_source_files": 9,
+    "engine_runs": 0,
+    "business_repo_writes": 0,
+    "commands_created_or_sent": 0,
+    "hook_changes": 0,
+    "all64": "UNRUN",
+    "independent_review": false
+  },
+  "r32_standard_concurrent_increment": {
+    "commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "path": "worklines/standard/rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "git_blob_sha": "2d8a3094005f17a87f26d38a16a3bde73e0c9495",
+    "id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+    "read_scope": "original record ID/keys metadata only; full policy not adopted here",
+    "effect_on_12": "no H02/H21 in these unchanged12; no new game rule adoption this stage"
+  },
+  "r32_prepublication_concurrent_standard": {
+    "source_baseline": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "publication_parent": "cfa8fe8759d4893349a61142d6442e5539f76c58",
+    "changed_paths": [
+      "worklines/standard/CURRENT_STATE.json",
+      "worklines/standard/NEXT_ACTIONS.json",
+      "worklines/standard/PENDING_DECISION.json",
+      "worklines/standard/PENDING_ITEMS.json",
+      "worklines/standard/PUBLISHED_FILES.json",
+      "worklines/standard/READ_RECEIPTS.json",
+      "worklines/standard/RETURN_TO_MAIN.json",
+      "worklines/standard/SOURCE_PRIORITY.json",
+      "worklines/standard/START_HERE.txt",
+      "worklines/standard/candidates/h02-m04-activation-endpoint-dragon-scale/v1.json",
+      "worklines/standard/modes/standard/CURRENT_RULES.md",
+      "worklines/standard/modes/standard/CURRENT_STATE.json",
+      "worklines/standard/reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+      "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md"
+    ],
+    "own_targets_unchanged": true,
+    "shared_body_and_main_reply_unchanged": true,
+    "actual_reading": "standard current entry header only; latest endpoint candidate metadata pending, no full candidate/review/source adoption",
+    "effect_on_original12": "none: no H02/H21; no new shared gameplay adoption",
+    "other_line_blobs_preserved": true
   }
 }

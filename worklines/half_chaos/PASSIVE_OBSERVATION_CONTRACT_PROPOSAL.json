@@ -1,0 +1,2755 @@
+{
+  "schema": "lezi.hc_passive_observation_contract_proposal.v1",
+  "revision": "HC-DESIGN-03-20261019-r32",
+  "task_completed": "NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT",
+  "date_local": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "status": "DOCUMENT_PROPOSAL_PREPARED_NOT_IMPLEMENTED_OR_APPROVED",
+  "work_package": "WP02",
+  "handoff_source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+  "authorization": {
+    "document_preparation": true,
+    "own_fixed_stage_writeback": true,
+    "business_code": false,
+    "engine_import_or_run": false,
+    "mode_gate_changes": false,
+    "new_hook_selection_or_implementation": false,
+    "gameplay_rule_changes": false
+  },
+  "scope_confirmation": {
+    "path": "worklines/half_chaos/CONFIRMATIONS.json",
+    "section": "r31_validation_scope_plan_confirmation",
+    "id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
+    "git_blob_sha": "760386e6735dcd90f1f244ee1e2ffbe6ca620e60",
+    "scope": "inherit the explicitly confirmed original three tuples/existing12 only; not entire technical contract or implementation"
+  },
+  "engine_source": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "branch": "codex/half-chaos-h11-b-clock-20261012",
+    "pr7": {
+      "draft": true,
+      "head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "base": "codex/score-mode-bridge-20261011"
+    },
+    "read_scope": "9 source texts retrieved; selected complete functions/declarations; no code execution, full repo/PR diff/CI or independent audit"
+  },
+  "source_files": [
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "src/mechanism-observer.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81",
+      "actual_read_scope": "complete file, synchronous return/throw/finally and cloning/freezing"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "src/turns.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612",
+      "actual_read_scope": "complete file; main event/phase/closure and classifications"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "src/settlement.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+      "actual_read_scope": "complete settleLandings/closeDirectDeaths/beginFormalTurn/advanceToFormalTurn/finishFormalTurn/rememberAction; no full unrelated hero/river helpers audit"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "src/game.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+      "actual_read_scope": "complete finishDirectDeaths/awardWarriorBarrier/finishAfterPlayerAction/applyAuthoritativeMove/applyAutomaticExecution; not full other hero/flow interfaces"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "src/hero-actions.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+      "actual_read_scope": "complete formalTurnDurationMs/startFormalClock; applyHeroAbility entry, full hourglass/bomb and common tail; other switch branches not audited"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "src/remote-room.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+      "actual_read_scope": "complete withActionHistory/gameWithPrivateTraps/roomWithResolvedTraps/expiredFormalAction/submitRemoteMove/submitRemoteHeroAbility/publicRemoteRoom/playerRoomView; playing-time section of advanceRemoteRoomTime only"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "src/room.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "093a1732eed4ee48a6d3487ce938d3c1d17a58c2",
+      "actual_read_scope": "declarations and sideForPlayer/applyRoomMove reused unchanged prior scoped read; retrieved identity checked, not renewed whole-file audit"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "src/types.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "a837ca049d3d0a7fd8cc38c3b0a9552f7d24105e",
+      "actual_read_scope": "complete GameState/SecretState/MoveCommand/HeroAbilityCommand declarations; not entire type file"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "path": "scripts/scoring/policy-session.ts",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "git_blob_sha": "3aa254a0a442bdb12cf3f8a9d26fde039d7c646d",
+      "actual_read_scope": "complete deliver/capture/prepare/tick/submit; old constructor/source scope reused unchanged, no policy/broker/client audit"
+    }
+  ],
+  "immutable_inputs": [
+    {
+      "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+      "sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
+      "size_bytes": 238908,
+      "chars": 234774
+    },
+    {
+      "path": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
+      "git_blob_sha": "322e5aef2fcee3d2614fa4dd515c159c794e428b",
+      "sha256": "62a8a8980da8fdf47d196173fd59a5b23d1b345d9d77501f41c79c6b8dabe99b",
+      "size_bytes": 106044,
+      "chars": 101884
+    },
+    {
+      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+      "size_bytes": 86249,
+      "chars": 86247
+    },
+    {
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+      "size_bytes": 292775,
+      "chars": 292707
+    },
+    {
+      "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+      "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
+      "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
+      "size_bytes": 265062,
+      "chars": 264580
+    },
+    {
+      "path": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
+      "git_blob_sha": "0a7cd559ba0feb1b6c788fa389384eb174eec599",
+      "sha256": "dcb15a75f8a535860a565aabf92c0223acc9c6cd11ce9f6dd67e8d2d3856822d",
+      "size_bytes": 43479,
+      "chars": 43137
+    }
+  ],
+  "inherited_wp01": {
+    "path": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
+    "git_blob_sha": "a29a20e303d3fd255ee338feaa9b60ae129e0c0a",
+    "sha256": "7f35aa95ca2b8ff60811db6d85868098a2a92564d69075babc985443501d759f",
+    "size_bytes": 40193,
+    "chars": 33193,
+    "admission_implementation_still_pending": true
+  },
+  "main_actual_response": {
+    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "requests": [
+      {
+        "id": "HC-SCOPE-WP01",
+        "owner": "main",
+        "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      },
+      {
+        "id": "HC-SCOPE-WP02",
+        "owner": "main",
+        "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      {
+        "id": "HC-SCOPE-WP03",
+        "owner": "main",
+        "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      }
+    ],
+    "source_path": "worklines/main/SHARED_COORDINATION.json#/current_shared_scope_request_queue",
+    "scope": "actual current deferredWP02/03 dispositions only; no new main hook/API/repair/run approval, r31/r32 receipt unknown"
+  },
+  "boundary_contracts": [
+    {
+      "id": "OBS-MAIN-CLOSED",
+      "purpose": "路径、终点、防御返回、揭示/落位及本主行动已承诺死亡后续闭合；尚未进入正常结束效果。",
+      "source_candidates": [
+        "game.applyAuthoritativeMove 两条正常/弹回路径→finishDirectDeaths→finishAfterPlayerAction",
+        "在本批普通来源中，完成qualifyRiverArrival/generateGhosts等已承诺主行动后续，进入finishFormalTurn之前的候选控制点；位置仍由主线审定"
+      ],
+      "required_predicates": [
+        "确属本批可信房间/完整组合及原请求的权威执行，非预检/模拟副本日志",
+        "本次实际行动/弹回/落位/死亡闭合且未有待续子原子；不得用phase字段自行证明全部闭合",
+        "原正式结束尚未发生；关联请求成功与否由返回envelope后来核定，不能要求该内部点processedActions已经入账"
+      ],
+      "not_equivalent": [
+        "recordAction中的formal_main_action早于路径与终点处理",
+        "closeMainActionAtom只推进阶段，不含通用观察事件或全部后续保证",
+        "普通submitRemoteMove返回可已有对方begin/房间起钟，不能整份当本点"
+      ],
+      "terminal_or_special": "direct-death/rain/child/forced分支另标来源分支和截断，不合成普通main/end；本12不期待雨夜解锁/H10/H11/第三英雄，实际出现则停止该回放诊断。",
+      "field_focus": [
+        "FM01/03/04/06真实位置/明暗/路径死亡/终点与返回",
+        "FM07护盾耗尽与已占名额；在此不混入正常end持续衰减",
+        "FM12/13原opportunity/阶段/截止；FM02后台同本体绑定；其余按原checkpoint字段组"
+      ],
+      "current_status": "CANDIDATE_BOUNDARY_MAIN_REVIEW_REQUIRED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OBS-END-CLOSED",
+      "purpose": "本次正常正式结束的适用效果及死亡后续完成，尚未转到下一正式begin或起钟。",
+      "source_candidates": [
+        "settlement.finishFormalTurn正常尾返回，或其调用点紧接返回且未advanceToFormalTurn",
+        "该函数有两个closeDirectDeaths提前返回，不能只在函数末行增加单一捕获就声称覆盖所有出口"
+      ],
+      "required_predicates": [
+        "确认本次finishFormalTurn实际执行，未走finished/forcedDefense/nonformal/重复turn_end等no-op早退",
+        "计数+1与本次side/number一致，不能仅用已记录lastCompletedFormalTurn宣称结束效果完成",
+        "正常尾路径完成护盾/崩坏等适用作用，之后尚未next begin；源终局早退另分类，不承诺执行被跳过余项"
+      ],
+      "not_equivalent": [
+        "formal_turn_end在计数+1后、护盾减层和崩坏消灭前",
+        "after_normal_end_effects并不等于当前下一个turnLifecycle",
+        "终局早退记录不替代原正常结束checkpoint的未观察义务"
+      ],
+      "terminal_or_special": "保留no-op、第一死亡闭合早退、第二死亡闭合早退及正常尾四种路径标签；当前不为未到达路径制造数据。",
+      "field_focus": [
+        "FM07实际护盾enemyTurnsRemaining/删除与历史名额",
+        "FM10崩坏原截止及到期实际死亡，FM04/05操作级死亡证据",
+        "FM12旧侧完成计数/原number与FM13时钟身份；不补正常begin"
+      ],
+      "current_status": "CANDIDATE_NORMAL_END_BOUNDARY_MAIN_REVIEW_REQUIRED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "OBS-D01-ACCEPTED",
+      "purpose": "合法D01非占步请求完整同步返回后的实际结果，且未来driver后tick尚未发生。",
+      "source_candidates": [
+        "remote.submitRemoteHeroAbility正常返回，包含applyHeroAbility公共尾部closeDirectDeaths、processedActions及原房间后续",
+        "原6个预期成功请求来自原行动数据，不运行其分支"
+      ],
+      "required_predicates": [
+        "原模式/组合/窗口/次数/安全/施放者等全部条件真实合法；观察不能代替EI02/EI03修复",
+        "按真实返回区分committed/duplicate/terminal，不仅凭duplicate=false判断技能已提交；expiredFormalAction也可能直接返回timeout",
+        "用请求前、返回的state/secret及opportunity/deadline核正常主行动保持；若终局则不要求继续主行动"
+      ],
+      "not_equivalent": [
+        "前后终态相同不能证明六步内部顺序",
+        "无六步阶段事件，不能编造现有hook",
+        "不能把普通H06回溯/H05扭曲调用混入D01，或把tick后结果记作同步返回"
+      ],
+      "field_focus": [
+        "FM08实际现身集合、同本体锚点后台证据",
+        "FM09沙漏次数、FM10污染/崩坏、FM11存活现身龙弹药/名额",
+        "FM12/13正常机会与原截止、FM15提交归属、FM20终局标记"
+      ],
+      "current_status": "SOURCE_RETURN_READER_EXISTS_BUT_ADMISSION_AND_SAFETY_BLOCKED_UNRUN"
+    },
+    {
+      "id": "OBS-D01-REFUSED",
+      "purpose": "原4个设计拒绝请求的合法性拒绝前后，证明未发生真实回归/净化/装填/扣次或投弹副作用。",
+      "source_candidates": [
+        "受限来源适配器在原房间调用之前和原返回/抛错之后捕获真实持有权威房间",
+        "如未来安全预检使用副本，副本轨迹仅诊断，不计真实提交/死亡历史"
+      ],
+      "required_predicates": [
+        "在原有效截止、正确成员/窗口且无其他终局分支的来源guard内；先辨认拒绝原因，不把超时终局当无副作用拒绝",
+        "原3个沙漏安全拒绝与1个投弹受将拒绝仍依EI02/EI03实现，当前不能得到已确认拒绝结果",
+        "比较原棋盘/秘密映射/绑定/资源/污染/原崩坏截止/名额/opportunity/deadline；墙钟经过不要求剩余毫秒相同",
+        "保留原RuleError与真实返回形态；未核产品错误序列化，不虚构错误码或优先级"
+      ],
+      "not_equivalent": [
+        "先提交副作用后退款不是原确认的整次拒绝",
+        "DS01-02 R4第二次是相同不安全状态下新请求，不是原命令重传",
+        "旧研究actor/payload冲突码不等于产品协议去重保证"
+      ],
+      "field_focus": [
+        "FM01/08/09/10/11来源权威前后不变量",
+        "FM12/13机会/截止保持、FM15请求及错误归属、FM22完整结果"
+      ],
+      "current_status": "EXPECTED_REFUSAL_ONLY_IMPLEMENTATION_BLOCKED_UNRUN"
+    }
+  ],
+  "auxiliary_boundaries": [
+    {
+      "id": "OBS-REQUEST-PRE",
+      "role": "原房间调用前复制受控权威与同一声明now/actionId/actor，不能触发begin、RNG或预先消灭。请求边界读不授予能力。"
+    },
+    {
+      "id": "OBS-REQUEST-RETURN",
+      "role": "实际房间同步返回/抛错后且driver tick之前。保留实际returned object、异常和commit/duplicate/timeout/terminal分流；普通返回可能含下一回合状态，不能替代MAIN/END。"
+    },
+    {
+      "id": "OBS-TICK-AFTER",
+      "role": "如原driver明确安排tick，这是单独状态操作，不属于被动观察；记录其前后，不为采样擅自增加。"
+    },
+    {
+      "id": "OBS-TERMINAL",
+      "role": "实际来源终局/自动终结前后单独受控记录并关联原请求/server自动actionId；其余正常checkpoint标截断/缺证，不补正常end。"
+    }
+  ],
+  "checkpoint_groups": [
+    {
+      "boundary_id": "OBS-MAIN-CLOSED",
+      "original_semantic_boundary": "after_main_atom",
+      "checkpoint_ids": [
+        "MA-PD01:R1:main:closed",
+        "MA-PD01:B1:main:closed",
+        "MA-PD01:R2:main:closed",
+        "MA-PD01:B2:main:closed",
+        "MA-PD01:R3:main:closed",
+        "MA-PD02:R1:main:closed",
+        "MA-PD02:B1:main:closed",
+        "MA-PD02:R2:main:closed",
+        "MA-PD02:B2:main:closed",
+        "MA-PD02:R3:main:closed",
+        "MA-PD02:B3:main:closed",
+        "MA-PD02:R4:main:closed",
+        "MA-PD02:B4:main:closed",
+        "MA-PD02:R5:main:closed",
+        "MA-PD03:R1:main:closed",
+        "MA-PD03:B1:main:closed",
+        "MA-PD03:R2:main:closed",
+        "MA-PD03:B2:main:closed",
+        "MA-PD03:R3:main:closed",
+        "MA-PD03:B3:main:closed",
+        "MA-PD03:R4:main:closed",
+        "MA-PD03:B4:main:closed",
+        "MA-PD03:R5:main:closed",
+        "MA-PD03:B5:main:closed",
+        "MA-PD03:R6:main:closed",
+        "MA-PD03:B6:main:closed",
+        "MA-PD03:R7:main:closed",
+        "MA-PD04:R1:main:closed",
+        "MA-PD04:B1:main:closed",
+        "MA-PD04:R2:main:closed",
+        "MA-PD04:B2:main:closed",
+        "MA-PD04:R3:main:closed",
+        "MA-PD04:B3:main:closed",
+        "MA-PD04:R4:main:closed",
+        "MA-PD04:B4:main:closed",
+        "MA-PD04:R5:main:closed",
+        "MA-PD04:B5:main:closed",
+        "MA-PD05-A:R1:main:closed",
+        "MA-PD05-A:B1:main:closed",
+        "MA-PD05-A:R2:main:closed",
+        "MA-PD05-A:B2:main:closed",
+        "MA-PD05-A:R3:main:closed",
+        "MA-PD05-A:B3:main:closed",
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-B:R1:main:closed",
+        "MA-PD05-B:B1:main:closed",
+        "MA-PD05-B:R2:main:closed",
+        "MA-PD05-B:B2:main:closed",
+        "MA-PD05-B:R3:main:closed",
+        "MA-PD05-B:B3:main:closed",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD06-A:R1:main:closed",
+        "MA-PD06-A:B1:main:closed",
+        "MA-PD06-A:R2:main:closed",
+        "MA-PD06-A:B2:main:closed",
+        "MA-PD06-A:R3:main:closed",
+        "MA-PD06-A:B3:main:closed",
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-B:R1:main:closed",
+        "MA-PD06-B:B1:main:closed",
+        "MA-PD06-B:R2:main:closed",
+        "MA-PD06-B:B2:main:closed",
+        "MA-PD06-B:R3:main:closed",
+        "MA-PD06-B:B3:main:closed",
+        "MA-PD06-B:R4:main:closed",
+        "MA-DS01-02:R1:main:closed",
+        "MA-DS01-02:B1:main:closed",
+        "MA-DS01-02:R2:main:closed",
+        "MA-DS01-02:B2:main:closed",
+        "MA-DS01-02:R3:main:closed",
+        "MA-DS01-02:B3:main:closed",
+        "MA-DS01-02:R4:main:closed",
+        "MA-DS03:R1:main:closed",
+        "MA-DS03:B1:main:closed",
+        "MA-DS03:R2:main:closed",
+        "MA-DS03:B2:main:closed",
+        "MA-DS03:R3:main:closed",
+        "MA-DS03:B3:main:closed",
+        "MA-DS03:R4:main:closed",
+        "MA-DS04:R1:main:closed",
+        "MA-DS04:B1:main:closed",
+        "MA-DS04:R2:main:closed",
+        "MA-DS04:B2:main:closed",
+        "MA-DS04:R3:main:closed",
+        "MA-DS04:B3:main:closed",
+        "MA-DS04:R4:main:closed",
+        "MA-DS04:B4:main:closed",
+        "MA-DS05:R1:main:closed",
+        "MA-DS05:B1:main:closed",
+        "MA-DS05:R2:main:closed",
+        "MA-DS05:B2:main:closed",
+        "MA-DS05:R3:main:closed",
+        "MA-DS05:B3:main:closed",
+        "MA-DS05:R4:main:closed",
+        "MA-DS05:B4:main:closed",
+        "MA-DS05:R5:main:closed",
+        "MA-DS05:B5:main:closed",
+        "MA-DS05:R6:main:closed",
+        "MA-DS05:B6:main:closed",
+        "MA-DS05:R7:main:closed"
+      ],
+      "checkpoint_count": 100,
+      "field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM04",
+        "FM05",
+        "FM06",
+        "FM07",
+        "FM08",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM15",
+        "FM16",
+        "FM17",
+        "FM18",
+        "FM19",
+        "FM20",
+        "FM21",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG04",
+        "OG06",
+        "OG07"
+      ],
+      "status": "DECLARED_UNRUN_NOT_CAPTURED",
+      "original_source": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json#/checkpoint_bindings"
+    },
+    {
+      "boundary_id": "OBS-END-CLOSED",
+      "original_semantic_boundary": "after_normal_end_effects",
+      "checkpoint_ids": [
+        "MA-PD01:R1:normal-end",
+        "MA-PD01:B1:normal-end",
+        "MA-PD01:R2:normal-end",
+        "MA-PD01:B2:normal-end",
+        "MA-PD01:R3:normal-end",
+        "MA-PD02:R1:normal-end",
+        "MA-PD02:B1:normal-end",
+        "MA-PD02:R2:normal-end",
+        "MA-PD02:B2:normal-end",
+        "MA-PD02:R3:normal-end",
+        "MA-PD02:B3:normal-end",
+        "MA-PD02:R4:normal-end",
+        "MA-PD02:B4:normal-end",
+        "MA-PD02:R5:normal-end",
+        "MA-PD03:R1:normal-end",
+        "MA-PD03:B1:normal-end",
+        "MA-PD03:R2:normal-end",
+        "MA-PD03:B2:normal-end",
+        "MA-PD03:R3:normal-end",
+        "MA-PD03:B3:normal-end",
+        "MA-PD03:R4:normal-end",
+        "MA-PD03:B4:normal-end",
+        "MA-PD03:R5:normal-end",
+        "MA-PD03:B5:normal-end",
+        "MA-PD03:R6:normal-end",
+        "MA-PD03:B6:normal-end",
+        "MA-PD03:R7:normal-end",
+        "MA-PD04:R1:normal-end",
+        "MA-PD04:B1:normal-end",
+        "MA-PD04:R2:normal-end",
+        "MA-PD04:B2:normal-end",
+        "MA-PD04:R3:normal-end",
+        "MA-PD04:B3:normal-end",
+        "MA-PD04:R4:normal-end",
+        "MA-PD04:B4:normal-end",
+        "MA-PD04:R5:normal-end",
+        "MA-PD04:B5:normal-end",
+        "MA-PD05-A:R1:normal-end",
+        "MA-PD05-A:B1:normal-end",
+        "MA-PD05-A:R2:normal-end",
+        "MA-PD05-A:B2:normal-end",
+        "MA-PD05-A:R3:normal-end",
+        "MA-PD05-A:B3:normal-end",
+        "MA-PD05-A:R4:normal-end",
+        "MA-PD05-B:R1:normal-end",
+        "MA-PD05-B:B1:normal-end",
+        "MA-PD05-B:R2:normal-end",
+        "MA-PD05-B:B2:normal-end",
+        "MA-PD05-B:R3:normal-end",
+        "MA-PD05-B:B3:normal-end",
+        "MA-PD05-B:R4:normal-end",
+        "MA-PD06-A:R1:normal-end",
+        "MA-PD06-A:B1:normal-end",
+        "MA-PD06-A:R2:normal-end",
+        "MA-PD06-A:B2:normal-end",
+        "MA-PD06-A:R3:normal-end",
+        "MA-PD06-A:B3:normal-end",
+        "MA-PD06-A:R4:normal-end",
+        "MA-PD06-B:R1:normal-end",
+        "MA-PD06-B:B1:normal-end",
+        "MA-PD06-B:R2:normal-end",
+        "MA-PD06-B:B2:normal-end",
+        "MA-PD06-B:R3:normal-end",
+        "MA-PD06-B:B3:normal-end",
+        "MA-PD06-B:R4:normal-end",
+        "MA-DS01-02:R1:normal-end",
+        "MA-DS01-02:B1:normal-end",
+        "MA-DS01-02:R2:normal-end",
+        "MA-DS01-02:B2:normal-end",
+        "MA-DS01-02:R3:normal-end",
+        "MA-DS01-02:B3:normal-end",
+        "MA-DS01-02:R4:normal-end",
+        "MA-DS03:R1:normal-end",
+        "MA-DS03:B1:normal-end",
+        "MA-DS03:R2:normal-end",
+        "MA-DS03:B2:normal-end",
+        "MA-DS03:R3:normal-end",
+        "MA-DS03:B3:normal-end",
+        "MA-DS03:R4:normal-end",
+        "MA-DS04:R1:normal-end",
+        "MA-DS04:B1:normal-end",
+        "MA-DS04:R2:normal-end",
+        "MA-DS04:B2:normal-end",
+        "MA-DS04:R3:normal-end",
+        "MA-DS04:B3:normal-end",
+        "MA-DS04:R4:normal-end",
+        "MA-DS04:B4:normal-end",
+        "MA-DS05:R1:normal-end",
+        "MA-DS05:B1:normal-end",
+        "MA-DS05:R2:normal-end",
+        "MA-DS05:B2:normal-end",
+        "MA-DS05:R3:normal-end",
+        "MA-DS05:B3:normal-end",
+        "MA-DS05:R4:normal-end",
+        "MA-DS05:B4:normal-end",
+        "MA-DS05:R5:normal-end",
+        "MA-DS05:B5:normal-end",
+        "MA-DS05:R6:normal-end",
+        "MA-DS05:B6:normal-end",
+        "MA-DS05:R7:normal-end"
+      ],
+      "checkpoint_count": 100,
+      "field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM04",
+        "FM05",
+        "FM06",
+        "FM07",
+        "FM08",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM15",
+        "FM16",
+        "FM17",
+        "FM18",
+        "FM19",
+        "FM20",
+        "FM21",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG04",
+        "OG06",
+        "OG07"
+      ],
+      "status": "DECLARED_UNRUN_NOT_CAPTURED",
+      "original_source": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json#/checkpoint_bindings"
+    },
+    {
+      "boundary_id": "OBS-D01-ACCEPTED",
+      "original_semantic_boundary": "after_accepted_non_main_request",
+      "checkpoint_ids": [
+        "MA-DS01-02:B2:pre-1:observation",
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:B3:pre-1:observation",
+        "MA-DS04:B4:pre-1:observation",
+        "MA-DS05:B5:pre-1:observation",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "checkpoint_count": 6,
+      "field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM04",
+        "FM05",
+        "FM08",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM15",
+        "FM16",
+        "FM17",
+        "FM18",
+        "FM19",
+        "FM20",
+        "FM21",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG03",
+        "OG04",
+        "OG05",
+        "OG06",
+        "OG07"
+      ],
+      "status": "DECLARED_UNRUN_NOT_CAPTURED",
+      "original_source": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json#/checkpoint_bindings"
+    },
+    {
+      "boundary_id": "OBS-D01-REFUSED",
+      "original_semantic_boundary": "after_rejected_non_main_request",
+      "checkpoint_ids": [
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:pre-2:observation",
+        "MA-DS03:R4:pre-1:observation",
+        "MA-DS04:B3:pre-1:observation"
+      ],
+      "checkpoint_count": 4,
+      "field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM04",
+        "FM08",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM15",
+        "FM16",
+        "FM17",
+        "FM18",
+        "FM19",
+        "FM20",
+        "FM21",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG03",
+        "OG05",
+        "OG06",
+        "OG07"
+      ],
+      "status": "DECLARED_UNRUN_NOT_CAPTURED",
+      "original_source": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json#/checkpoint_bindings"
+    }
+  ],
+  "original_spec_routes": [
+    {
+      "spec_id": "DS-S01",
+      "original_matrix_row": 0,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM08",
+        "FM16"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG06"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S02",
+      "original_matrix_row": 1,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 3,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM04",
+        "FM06",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S03",
+      "original_matrix_row": 2,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM08",
+        "FM09",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S04",
+      "original_matrix_row": 3,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM08",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S05",
+      "original_matrix_row": 4,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED",
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 4,
+      "original_field_group_ids": [
+        "FM01",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S06",
+      "original_matrix_row": 5,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM05",
+        "FM08",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03",
+        "OG04"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S07",
+      "original_matrix_row": 6,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM08",
+        "FM09",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S08",
+      "original_matrix_row": 7,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM08",
+        "FM09",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S09",
+      "original_matrix_row": 8,
+      "boundary_contract_ids": [
+        "OBS-D01-ACCEPTED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S10",
+      "original_matrix_row": 9,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM09",
+        "FM12",
+        "FM13",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S11",
+      "original_matrix_row": 10,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED",
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 3,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM10",
+        "FM12",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S12",
+      "original_matrix_row": 11,
+      "boundary_contract_ids": [
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM14",
+        "FM15",
+        "FM17",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG03",
+        "OG05",
+        "OG06",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S13",
+      "original_matrix_row": 12,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 4,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM08",
+        "FM20",
+        "FM21"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S14",
+      "original_matrix_row": 13,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM08",
+        "FM09",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S15",
+      "original_matrix_row": 14,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM08",
+        "FM09",
+        "FM12",
+        "FM13",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S16",
+      "original_matrix_row": 15,
+      "boundary_contract_ids": [
+        "OBS-D01-ACCEPTED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 5,
+      "original_field_group_ids": [
+        "FM01",
+        "FM08",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG03"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S17",
+      "original_matrix_row": 16,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 3,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM08",
+        "FM11",
+        "FM20",
+        "FM21"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S18",
+      "original_matrix_row": 17,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM08",
+        "FM10",
+        "FM11",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S19",
+      "original_matrix_row": 18,
+      "boundary_contract_ids": [
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S20",
+      "original_matrix_row": 19,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 3,
+      "original_field_group_ids": [
+        "FM01",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S21",
+      "original_matrix_row": 20,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-D01-ACCEPTED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 4,
+      "original_field_group_ids": [
+        "FM01",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM13",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S22",
+      "original_matrix_row": 21,
+      "boundary_contract_ids": [
+        "OBS-D01-ACCEPTED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 3,
+      "original_field_group_ids": [
+        "FM08",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG03"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S23",
+      "original_matrix_row": 22,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM04",
+        "FM08",
+        "FM11"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S24",
+      "original_matrix_row": 23,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED",
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 4,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM08",
+        "FM10",
+        "FM11",
+        "FM12",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG03",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S25",
+      "original_matrix_row": 24,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED",
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 3,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM04",
+        "FM05",
+        "FM08",
+        "FM20",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG03",
+        "OG04"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S26",
+      "original_matrix_row": 25,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED",
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 5,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM04",
+        "FM05",
+        "FM08",
+        "FM09",
+        "FM10",
+        "FM11",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG03",
+        "OG04"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S27",
+      "original_matrix_row": 26,
+      "boundary_contract_ids": [
+        "OBS-D01-ACCEPTED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM08",
+        "FM16",
+        "FM17",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG03",
+        "OG06"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S28",
+      "original_matrix_row": 27,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED",
+        "OBS-D01-ACCEPTED",
+        "OBS-D01-REFUSED"
+      ],
+      "direct_checkpoint_count": 80,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM12",
+        "FM13",
+        "FM16",
+        "FM17",
+        "FM20",
+        "FM21",
+        "FM22"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG03",
+        "OG06",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI02",
+        "EI03"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S01",
+      "original_matrix_row": 28,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM07",
+        "FM12"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S02",
+      "original_matrix_row": 29,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM06"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S03",
+      "original_matrix_row": 30,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM04",
+        "FM06"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S04",
+      "original_matrix_row": 31,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06",
+        "FM07",
+        "FM12",
+        "FM13"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S05",
+      "original_matrix_row": 32,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM06",
+        "FM12",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S06",
+      "original_matrix_row": 33,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM04",
+        "FM06",
+        "FM12"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S07",
+      "original_matrix_row": 34,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06",
+        "FM07",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S08",
+      "original_matrix_row": 35,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM05",
+        "FM06"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG04"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S09",
+      "original_matrix_row": 36,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM06",
+        "FM07"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S10",
+      "original_matrix_row": 37,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 3,
+      "original_field_group_ids": [
+        "FM07",
+        "FM12",
+        "FM13"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S11",
+      "original_matrix_row": 38,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM06",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S12",
+      "original_matrix_row": 39,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05",
+        "EI07"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S13",
+      "original_matrix_row": 40,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 4,
+      "original_field_group_ids": [
+        "FM01",
+        "FM07",
+        "FM12"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S14",
+      "original_matrix_row": 41,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM06",
+        "FM07"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S15",
+      "original_matrix_row": 42,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 4,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM06",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S16",
+      "original_matrix_row": 43,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM04",
+        "FM06"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S17",
+      "original_matrix_row": 44,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM06",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S18",
+      "original_matrix_row": 45,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 3,
+      "original_field_group_ids": [
+        "FM01",
+        "FM07",
+        "FM12"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S19",
+      "original_matrix_row": 46,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 1,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM06",
+        "FM07"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S20",
+      "original_matrix_row": 47,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S21",
+      "original_matrix_row": 48,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 6,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM04",
+        "FM06"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S22",
+      "original_matrix_row": 49,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM06"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S23",
+      "original_matrix_row": 50,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 4,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06",
+        "FM07",
+        "FM12",
+        "FM13"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S24",
+      "original_matrix_row": 51,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 28,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM06",
+        "FM16",
+        "FM17"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG06"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S25",
+      "original_matrix_row": 52,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 4,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM06",
+        "FM12"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S26",
+      "original_matrix_row": 53,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 6,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06",
+        "FM07",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S27",
+      "original_matrix_row": 54,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM04",
+        "FM06"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S28",
+      "original_matrix_row": 55,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM03",
+        "FM04",
+        "FM06",
+        "FM07"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S29",
+      "original_matrix_row": 56,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 28,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM06",
+        "FM16",
+        "FM17"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG06"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S30",
+      "original_matrix_row": 57,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 2,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06",
+        "FM20"
+      ],
+      "original_gap_ids": [
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S31",
+      "original_matrix_row": 58,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 12,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06",
+        "FM12",
+        "FM13"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S32",
+      "original_matrix_row": 59,
+      "boundary_contract_ids": [],
+      "direct_checkpoint_count": 0,
+      "original_field_group_ids": [
+        "FM01",
+        "FM06"
+      ],
+      "original_gap_ids": [],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S33",
+      "original_matrix_row": 60,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 130,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM07",
+        "FM21"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S34",
+      "original_matrix_row": 61,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 11,
+      "original_field_group_ids": [
+        "FM06",
+        "FM12"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI06"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S35",
+      "original_matrix_row": 62,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED"
+      ],
+      "direct_checkpoint_count": 8,
+      "original_field_group_ids": [
+        "FM01",
+        "FM02",
+        "FM03",
+        "FM04",
+        "FM06",
+        "FM14",
+        "FM15",
+        "FM16",
+        "FM17"
+      ],
+      "original_gap_ids": [
+        "OG02",
+        "OG05",
+        "OG06"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S36",
+      "original_matrix_row": 63,
+      "boundary_contract_ids": [
+        "OBS-MAIN-CLOSED",
+        "OBS-END-CLOSED"
+      ],
+      "direct_checkpoint_count": 18,
+      "original_field_group_ids": [
+        "FM01",
+        "FM04",
+        "FM06",
+        "FM12",
+        "FM13",
+        "FM20",
+        "FM21"
+      ],
+      "original_gap_ids": [
+        "OG01",
+        "OG02",
+        "OG07"
+      ],
+      "original_static_findings": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "missing_obligations_kept_in_original_matrix": true,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    }
+  ],
+  "early_exit_catalog": [
+    {
+      "id": "OBS-X01",
+      "condition": "入口RuleError或stale/wrong-turn/非法phase",
+      "required_handling": "只记录真实调用前后和原错误；拒绝不算已承诺main；无关联早事件能证明提交",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X02",
+      "condition": "已处理actionId返回duplicate",
+      "required_handling": "无新主行动/end/技能效果义务；实际重传刺激原数据尚缺，不制造旧结果缓存保证",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X03",
+      "condition": "expiredFormalAction→timeout返回",
+      "required_handling": "记录真实timeout状态与是否该命令入账；duplicate=false不自动意味技能成功；不把合法超时状态变化当拒绝副作用",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X04",
+      "condition": "finishDirectDeaths返回true",
+      "required_handling": "保留实际直接死亡终局、原lastMove与操作证据，不调用finishFormalTurn补观察",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X05",
+      "condition": "雨夜提前终局",
+      "required_handling": "本批H04未到15完整回合，不期待此分支；若真实出现保留并停，不能关雨夜或伪造正常end",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X06",
+      "condition": "forcedDefense/child/flow/descend等待续原子",
+      "required_handling": "代码路径保留；本批无相应第三来源。未知闭合不计完整checkpoint，不以额外调用完成假原子",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X07",
+      "condition": "finishFormalTurn未实际执行/no-op早退",
+      "required_handling": "没有完成本次正常end，不能按函数被调用或相位名称统计+1",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X08",
+      "condition": "finishFormalTurn第一次closeDirectDeaths早退",
+      "required_handling": "标明已发生阶段和终局，源代码跳过的后段不伪称已执行或可正常继续",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X09",
+      "condition": "finishFormalTurn第二次closeDirectDeaths早退",
+      "required_handling": "保留精确返回点与已闭合实际结果；尾部陷阱衰减/雨夜清除未到达，不补执行",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X10",
+      "condition": "advanceToFormalTurn产生execution/finished或新begin",
+      "required_handling": "区分END以前、下一个begin与正式自动终结；不把probe状态或终结动作误记为原主行动快照",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X11",
+      "condition": "观察容器或日志失败/溢出",
+      "required_handling": "未来不能中断已承诺游戏原子或改原业务异常；证据标invalid/incomplete，原请求按源完成后driver停；隔离错误策略待主线",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X12",
+      "condition": "captureMechanismEvents中operation抛错",
+      "required_handling": "当前finally移除capture但异常分支没有返回events；不能假称已经取回抛错前轨迹。若需要保留，先由主线核定新诊断envelope，不改原异常",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    },
+    {
+      "id": "OBS-X13",
+      "condition": "PolicySession捕获后记录拒绝/显式tick",
+      "required_handling": "当前rejected source_events被置空且submit返回前tick；日志不能补六步或精确拒绝内部轨迹。保持旧P0来源限定，不直接拓旧runner",
+      "coverage_status": "SOURCE_BRANCH_CLASSIFIED_NOT_NEW_STIMULUS_OR_EXECUTED_CASE"
+    }
+  ],
+  "d01_stage_evidence_option": {
+    "status": "OPTIONAL_DOCUMENT_PROPOSAL_NOT_EXISTING_EVENTS_NOT_AUTHORIZED_FOR_CODE",
+    "why": "原终态可比较净化/回锚/弹药结果，但不能证明候选在净化前冻结或同时回归等顺序。只有待验义务实际需要时才考虑阶段诊断。",
+    "stages": [
+      {
+        "id": "D01-CANDIDATES",
+        "meaning": "发动瞬间已现身候选锁定，死亡现身与从未现身分开"
+      },
+      {
+        "id": "D01-ANCHORS",
+        "meaning": "按发动瞬间占据/污染判本次锚点，不使用净化后结果补入"
+      },
+      {
+        "id": "D01-RETURNS",
+        "meaning": "原候选集合的群体回归/复活提交；逐棋循环实现不应凭名称证明设计同时性"
+      },
+      {
+        "id": "D01-LANDINGS",
+        "meaning": "来源要求的落位及已承诺死亡后续闭合；不是追加玩家动作"
+      },
+      {
+        "id": "D01-CLEANSE",
+        "meaning": "真实净化与相关崩坏解除；不把模拟净化写入权威"
+      },
+      {
+        "id": "D01-RELOAD",
+        "meaning": "实际仍活且已现身龙补至1，再由公共尾部闭合结果确认"
+      }
+    ],
+    "binding": "每阶段关联原requestId/固定源/实际权威或preflight-clone来源；诊断stage不是产品字段/事件API，不额外调用游戏回调。若安全拒绝，预检轨迹不得计作真实回归/历史消灭。",
+    "blockers": "EI01/EI04准入及EI02/EI03安全仍未解决；完整共享源序/独立终局仍待主线，阶段清单不批准它们。"
+  },
+  "evidence_envelope_proposal": {
+    "status": "OFFLINE_RESEARCH_METADATA_ONLY_NOT_PRODUCTION_SCHEMA",
+    "identity": [
+      "固定engine commit/相关blob和手头未审差分",
+      "replay/world/tuple原数据身份、真实room/actor side与request声明",
+      "实际actionId/expectedRevision/接收now和请求前正式side/number/mainId",
+      "capture来源authoritative/preflight-clone/probe，不把克隆轨迹当已承诺历史"
+    ],
+    "boundary": [
+      "候选边界ID/真实源函数出口/同请求局部序号",
+      "正常/拒绝/duplicate/timeout/terminal/exception分流",
+      "原始state/secret受控副本、可用字段/缺失或截断原因",
+      "闭合前processedActions可能尚未写入；以实际返回证据关联提交，非改写旧捕获内容"
+    ],
+    "outputs": "只从实际持有room取红黑各自playerRoomView和真实receipt/message/error。内部主行动快照不能伪装成真实已发玩家输出；派生投影若另做，仅标模型计算，客户端/传输未核仍缺证。",
+    "history": "按原请求保留captured/automaticEvents/deathRecord/destructionBatches与同本体开局映射；后续复活移除captured不抹去已保存操作证据。该离线证据不等于主线不可回退裁判历史/重复键实现。",
+    "error": "保留原业务异常与其真实可见载荷；RuleError源码字段不是产品传输封装验收。捕获失败只标证据失效，不能把业务失败转换成功或伪造事件。",
+    "availability": "一个候选边界或数据字段缺失就对该义务保留UNRUN/未观察；无运行原始证据则不填实际结果。"
+  },
+  "passivity_contract": {
+    "inactive": "默认关闭时不得克隆/冻结/读墙钟/读私密快照/耗游戏RNG或更改原上下文；当前observer确有inactive return，新增点未实现。",
+    "active": "仅同步复制并冻结隔离数据，无权威对象别名、用户回调或修改secret/队列/阶段/时钟。离线字段不授玩家新信息；不调用begin/end/tick/验证或随机来补快照。",
+    "failure_isolation": "当前structuredClone/freeze失败可能抛出，capture抛错时也不会返回events；未来隔离与有限缓存策略必须由主线审定。先让原游戏请求按原控制流闭合，再因证据不完整停止driver；不在原子中为日志抛错强行中断。",
+    "future_noninterference_checks": [
+      "同固定合法初始化/请求/接收时刻/真实随机流，观察开关两路state/secret/processedActions/返回与原异常一致（排除独立日志）",
+      "随机domain/value/消费次数、原deadline与正式side/number/main/end/start保持相同",
+      "正常/实际拒绝/duplicate/timeout/终局路径分别核；原数据未声明的重传/冲突等不得冒充已覆盖",
+      "模拟/预检与真实提交身份区分，截图/复制不制造新游戏调用",
+      "收集器失败/容量与清理单独核，恢复原控制流；仅未来具体代码/运行授权内验证"
+    ],
+    "current_validation": "ALL_PROPOSED_UNRUN_NO_SWITCH_EXPERIMENTS_OR_ENGINE_CALLS"
+  },
+  "alternative_without_new_hooks": {
+    "status": "RETAINED_CONDITIONAL_NOT_PROVEN",
+    "scope": "仅原请求前后和既有事件；如要解释某字段在缺失边界的值，须按固定源和精确区间列全部可写路径及不变性证明。",
+    "limits": "不能整体把phase/count/护盾/崩坏/下一begin视为不变；未证明字段继续未观察。不变性可缩小个别断言，不能因此声称完整210点或64规格验收。"
+  },
+  "shared_owner_questions": [
+    {
+      "id": "HC-OBS-Q01",
+      "owner": "main",
+      "decision_needed": "确定本三种组合中主行动已承诺后续完全闭合、正常end前的权威观察位置；核路径/弹回两个分支及特殊/终局分流，不能只用closeMainActionAtom或早main事件。",
+      "status": "DOCUMENT_PROPOSAL_PENDING_SHARED_REVIEW_NOT_IMPLEMENTATION_APPROVAL"
+    },
+    {
+      "id": "HC-OBS-Q02",
+      "owner": "main",
+      "decision_needed": "核定finishFormalTurn实际执行/正常尾/两个终局早退/no-op的捕获归属与一次性标识，保留源返回及下次begin顺序，不补结束效果。",
+      "status": "DOCUMENT_PROPOSAL_PENDING_SHARED_REVIEW_NOT_IMPLEMENTATION_APPROVAL"
+    },
+    {
+      "id": "HC-OBS-Q03",
+      "owner": "main",
+      "decision_needed": "如需D01顺序证据，审定六阶段受控诊断点与预检副本/真实提交来源标签；前后状态仅供结果比较，不把文档阶段ID变成产品事件。",
+      "status": "DOCUMENT_PROPOSAL_PENDING_SHARED_REVIEW_NOT_IMPLEMENTATION_APPROVAL"
+    },
+    {
+      "id": "HC-OBS-Q04",
+      "owner": "main",
+      "decision_needed": "审定同步collector在抛错、克隆冻结失败、嵌套捕获或有限日志耗尽时的隔离/清理/原异常保留方案；当前source未保证这些新要求，不擅自改控制流。",
+      "status": "DOCUMENT_PROPOSAL_PENDING_SHARED_REVIEW_NOT_IMPLEMENTATION_APPROVAL"
+    },
+    {
+      "id": "HC-OBS-Q05",
+      "owner": "main",
+      "decision_needed": "核定权威内部快照与实际房间返回/玩家raw view/可见回执的对应边界；不把内部副本装成房间对象来冒充真实递送，不扩旧P0掩码。",
+      "status": "DOCUMENT_PROPOSAL_PENDING_SHARED_REVIEW_NOT_IMPLEMENTATION_APPROVAL"
+    }
+  ],
+  "remaining": {
+    "unchanged_static_findings": [
+      "EI01",
+      "EI02",
+      "EI03",
+      "EI04",
+      "EI05",
+      "EI06",
+      "EI07"
+    ],
+    "unchanged_observation_gaps": [
+      "OG01",
+      "OG02",
+      "OG03",
+      "OG04",
+      "OG05",
+      "OG06",
+      "OG07"
+    ],
+    "explicit_missing_original_cases": [
+      "PD-S31",
+      "PD-S32",
+      "DS-S16",
+      "DS-S22"
+    ],
+    "stimulus_limits_reference": "ASSERTION_EVIDENCE_MATRIX.json#/rows; existing PD-S02/12/17/35 and DS-S01/06/12/20 omissions preserved",
+    "outside_complete_claims": [
+      "完整技能应将/终局/共享层级与源序",
+      "主线不可回退裁判历史/完整重复键/压力/正式采样",
+      "客户端按钮/提示/网络错误与全部隐私通道",
+      "H02/H21/H15/普通H06/H10/M07/陷阱/飞行等不在本12的来源"
+    ]
+  },
+  "stop_conditions": [
+    "未获可信准入/必要安全实现/具体代码运行授权时不执行任何回放",
+    "源提交/请求/世界/tuple不符、前缀拒绝/过期/提前终局时保留原输入输出并停，不跳步或注入",
+    "主行动/正常end精确控制点未知，保留缺证，不用早事件/新begin/tick重命名替代",
+    "观察改变RNG/时钟/原子/异常或泄密时标证据失效并停止后续，保持原承诺结果",
+    "需要完整搜索/独立终局/共享源序才能下结论时回主线；无依赖文档仍可继续"
+  ],
+  "verification": {
+    "existing_game_specs": 64,
+    "declared_checkpoints": 210,
+    "checkpoint_counts": {
+      "OBS-MAIN-CLOSED": 100,
+      "OBS-END-CLOSED": 100,
+      "OBS-D01-ACCEPTED": 6,
+      "OBS-D01-REFUSED": 4
+    },
+    "ready_replays": 0,
+    "all64": "UNRUN",
+    "new_game_specs": 0,
+    "new_user_rule_confirmations": 0,
+    "new_shared_gameplay_confirmation_consumption": 0,
+    "business_code_changes": 0,
+    "engine_imports": 0,
+    "engine_runs": 0,
+    "client_runs": 0,
+    "commands_created_or_sent": 0,
+    "hook_implementation": false,
+    "independent_review": false,
+    "document_checks": "OFFLINE_JSON_REFERENCE_AND_SOURCE_ANCHOR_CHECKS_COMPLETED_NOT_GAMEPLAY_TESTS",
+    "offline_checks": {
+      "210_original_checkpoint_ids_partitioned_100_100_6_4": true,
+      "64_original_spec_ids_and_boundary_routes_valid": true,
+      "PD_S32_kept_without_natural_checkpoint": true,
+      "original6_data_and_scope_confirmation_wp01_unchanged": true,
+      "no_game_assertion_evaluated": true,
+      "all64_UNRUN": true
+    }
+  },
+  "limitation_audit": {
+    "audit_trigger": "被动观察合同可能成为共享实现和验收证据依据",
+    "risk_level": "high_future_fact_source_reversible_document_only",
+    "known_facts": [
+      "固定14b源中main事件早于路径/终点，end事件早于结束效果",
+      "当前capture对抛错没有events返回；PolicySession拒绝事件列表为空且submit后有tick",
+      "主线WP02/03仍仅接收待复核；已确认12范围不是代码/运行授权"
+    ],
+    "user_statements": [
+      "继续当前对话，本次沿用原文档阶段；既有明确确认只覆盖原三组/12验证范围"
+    ],
+    "claim_register": [
+      {
+        "claim": "现有两个早事件不能证明完整语义闭合",
+        "type": "document_fact",
+        "source": "turns.recordAction/settlement.finishFormalTurn完整函数",
+        "verification": "V2源码顺序核对，未运行"
+      },
+      {
+        "claim": "五项共享问题及精确边界候选可作未来复核入口",
+        "type": "ai_inference",
+        "source": "原矩阵和本轮函数对照",
+        "verification": "V1同一AI建议，非独立或用户技术批准"
+      },
+      {
+        "claim": "210点分100+100+6+4仍全部未观察",
+        "type": "document_fact",
+        "source": "原REPLAY_ACTION_DATA/OBSERVATION_FIELD_MAPPING不变对象",
+        "verification": "V2输入身份及离线引用检查"
+      }
+    ],
+    "ai_interpretations": [
+      "原内部快照、真实房间输出和后tick必须分开标证据",
+      "将终局/拒绝/collector失败分流可以防止虚构完整覆盖"
+    ],
+    "assumptions": [
+      "主线未来能在不改源语义的前提下选定受控捕获实现，当前未保证"
+    ],
+    "unknowns": [
+      "最终精确hook位置/错误隔离/授权能力接口",
+      "完整共享源序/王安全/终局搜索",
+      "真实运行和玩家端协议映射"
+    ],
+    "competing_explanations": [
+      "特定字段可能可用源级不变性桥接较晚返回，本文不假定已证明",
+      "未来新固定源码可能已经补充闭合接口，届时应复核而非盲改14b"
+    ],
+    "falsification_conditions": [
+      "候选点仍有该原子未完成后续或已执行next begin",
+      "误把模拟事件/异常前轨迹当真实提交证据",
+      "旧义务/缺刺激被删或UNRUN变PASS"
+    ],
+    "verification_status": "partial_V2_sources_V1_contract_no_independent_or_runtime_verification",
+    "action_boundary": "仅本线固定交接文档；不改业务/导入运行/加hook/绕门禁",
+    "failure_conditions": [
+      "写成已批准hook/准入/实现",
+      "对无自然例或无实际数据的义务填通过",
+      "覆盖并发成果或替其他线填回执"
+    ],
+    "residual_risk": "同一AI的函数阅读与候选位置可能共享误解；源顺序和JSON引用不证明真实行为或全部隐私",
+    "next_validation_action": "主线审HC-OBS-Q01—05；本线按下一文档任务细化已确认安全修复边界，不运行引擎"
+  },
+  "concurrent_standard_metadata_only": {
+    "commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
+    "path": "worklines/standard/rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+    "git_blob_sha": "2d8a3094005f17a87f26d38a16a3bde73e0c9495",
+    "id": "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+    "read_scope": "original record ID/keys metadata only; full policy not adopted here",
+    "effect_on_12": "no H02/H21 in these unchanged12; no new game rule adoption this stage"
+  },
+  "next_task": {
+    "id": "NEXT-HC-SAFETY-REPAIR-CONTRACT-REFINEMENT",
+    "status": "NOT_STARTED_DOCUMENT_ONLY",
+    "action": "在最新主线实际回复与原D01/PD确认下，细化WP03沙漏完整安全预检、投弹受将拒绝、实际原子王安全的有限修复/证据文档合同；区分已确认行为、实现缺口和共享未决。只读源码/文档，不改业务、不导入运行、不绕门禁。"
+  }
+}

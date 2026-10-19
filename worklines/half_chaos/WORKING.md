@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261018-r31
-date_local: 2026-10-18
+revision: HC-DESIGN-03-20261019-r32
+date_local: 2026-10-19
 timezone: Asia/Shanghai
 primary_reader: AI
-status: session_closed_after_scope_confirmation_unrun
+status: passive_observation_contract_document_prepared_unrun
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -19,15 +19,11 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 
 ## 0. 当前入口与接续
 
-本对话已于2026-10-18T23:28:46+08:00按用户要求收束（HC-SESSION-CLOSEOUT-20261018-r4）。用户明确同意刚澄清的三组组合/原12条后续验证范围方案，确认见CONFIRMATIONS.r31_validation_scope_plan_confirmation及§8.55；只确认本批范围，不批准代码/运行/门禁或整份技术合同。r31已真实发布于fa781b5538f1760b0f408e02b64183261c239063。下一WP02文档任务尚未启动，待用户继续后接续；其他线不停止。
+用户2026-10-19T08:37:06+08:00明确“现在还在这个对话里继续吧”，当前会话已恢复，前r4收束只属历史；不要求换对话或重批原12范围。当前HC-DESIGN-03-20261019-r32，完成WP02被动观察契约文档，详§8.56及PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json。基准bdaa67d94d0e789b2b36af8aceab482a5ad62257，主线WP02/03仍待共享复核，未批准hook/修复/实现/运行。
 
-当前HC-DESIGN-03-20261018-r31；完成WP01限定准入/适配文档合同，见§8.54与ADMISSION_CONTRACT_PROPOSAL.json。实际基准3a38dec64327dcff63d596809debe7a8810ae616，接续已发布r30，不重复旧r29任务；本轮只文档及本线阶段写回。
+现有210声明观察点按100主行动/100结束/6成功非占步/4拒绝分组，原64义务逐项引用，均未运行。原三组/12验证范围确认及WP01契约、全部原始数据/有效确认保持。代码、引擎导入/运行、hook、门禁改动0；全部64UNRUN，可运行0，评分冻结、NET暂停。
 
-原三种候选完整组合/12绑定、10环调用链、12类拒绝边界已具体化，均未批准实施或启用。主线已实际限定接收r30且准许文档细化，其接口/修复/观察选择仍待核。r31接收采用未知，不代填回执。前次r3收束是历史会话记录，不停其他线。
-
-原6输入、64规格、110请求、210观察声明及全部有效确认保持；全部UNRUN、可运行0、业务修改/引擎导入运行0，评分冻结、NET暂停。旧吞机会推荐保持撤下；M04沿三线原文案，不新增玩法确认。
-
-下一NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT：细化WP02精确闭合/早退/被动证据的文档合同，仍不加hook、不运行、不绕门禁。读取顺序及实际范围见本线START_HERE、READ_RECEIPTS和SOURCE_INDEX。
+下一NEXT-HC-SAFETY-REPAIR-CONTRACT-REFINEMENT，仅准备WP03有限安全修复/证据文档；共享接口由主线处理，不能把继续或本阶段完成当技术候选批准。主线r31/r32接收采用未知；其他线独立继续。
 
 ## 1. 确认恢复与保护
 
@@ -2516,6 +2512,24 @@ PD-S32仍无自然冲突正例，PD-S31额外落位、DS-S16同窗先安全后�
 先保护本地r31并核远端，当前HEAD为fa781b5538f1760b0f408e02b64183261c239063，9个本线文件对象与已发布清单逐一匹配，无比较范围内未回传差分。r31入口/契约实际复读，完整记录与历史源仍可从固定路径访问；发布和接收采用分开。本次收束提交在成功后从Git历史解析，不预填未来SHA。
 
 下一仍为NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT，NOT_STARTED_DOCUMENT_ONLY：新对话先保护未回传成果、读取最新固定入口与主线真实回复，准备WP02主行动/结束/D01闭合、早退与被动证据文档。继承本次12条范围确认，不要求用户重批；不据此转入代码/运行或越过共享门禁。
+
+### 8.56 WP02精确被动观察契约与早退证据（r32）
+
+本阶段完成NEXT-HC-PASSIVE-OBSERVATION-CONTRACT-REFINEMENT。先保护r31/r4已发布10文件并核对象一致，未发现比较范围内未回传差分；最新远端仅新增普通H02＋M04路径龙鳞确认等16路径，本线未改。只读取该新记录ID/结构元数据，未采用未读完整政策；原12无H02/H21。业务分支仍14b，PR7仍open/draft；只核本PR元数据，9份相关源按完整函数/声明和记录范围读取，不称全源码/PR差分/CI审计。
+
+PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json是本阶段单一详细建议源；原字段映射/矩阵仍控制具体义务，旧文件不改。四类候选合同保留原210点：主行动闭合100、正常结束效果闭合100、成功D01返回6、拒绝D01返回4。原64ID按已有直接观察点引用合同，PD-S32仍无自然正例；分类不是新增规格/事件/已取快照。十三类提前出口/异常只读分类，不为其添加自然刺激。
+
+主行动：recordAction事件发生在路径/终点处理前；closeMainActionAtom仅推进phase。正常与弹回先经finishDirectDeaths，之后finishAfterPlayerAction仍可处理资源、雨夜/子窗口和正式end。建议本三组合在已承诺主行动后续完成、进入finishFormalTurn前找受控权威点，具体位置交主线；直接死亡/特殊窗口/提前终局另标，不能用phase独自保证完整闭合，也不能要求内部点已写processedActions。
+
+正常结束：formal_turn_end在计数+1后先发，护盾减层、崩坏消灭及后续仍未执行。finishFormalTurn有no-op与两次closeDirectDeaths提前出口，单个末行hook不足以覆盖；实际正常尾返回且下一advance/begin未发生才可作为正常结束候选。终局早退记录实际执行阶段，不伪称被跳过后段已完成；正常checkpoint欠证继续保留，不能为采样补end/改控制流。
+
+D01：同步原房间返回/抛错与driver后tick分开。前后比较可以说明真实资源/棋盘/机会结果，不能证明候选/判锚/同时回归/落位/净化/装填内部顺序。若实际义务需要，未来再由主线核定六阶段受控诊断；预检副本/probe不得计真实回归或死亡。原3沙漏/1投弹拒绝仍依EI02/EI03，观察文档不实现安全预检；duplicate=false也不能把原expiredFormalAction的timeout返回当技能成功。
+
+证据：每份捕获关联固定源/原回放与世界/真实房间actor/请求/side-number/实际语义边界、源出口和结果分流。内部权威复制与实际房间raw player view分开，不能把内部副本塞入构造room来假称真实玩家递送；消息、错误、客户端通道仍未核。DS05操作级死亡记录在同本体复活前受控保留，当前captured不代历史，不据此实现完整裁判键。
+
+被动要求：默认关闭不读钟/耗RNG/复制私密；开启同步复制冻结，无权威别名和玩家泄漏，不增begin/end/tick或重做合法性。新观察开关等价检查仍未运行。当前capture在operation抛错时finally清理但无events返回，structuredClone/freeze失败亦可能抛出；旧PolicySession把拒绝source_events置空且submit返回前tick。未来收集器错误/容量/异常保留/嵌套的隔离方案交主线，不能因日志错误中断已承诺原子或更换业务结果。备选仍为原前后＋具体字段/可写路径不变性证明，本轮未完成此证明，不整体桥接phase/计数/护盾/崩坏。
+
+HC-OBS-Q01—05经本线RETURN回主线，分别为主行动点、end出口、D01来源阶段、收集器异常隔离、真实输出对应。全部是文档建议，未批准hook/API/代码或新玩法。原6输入、12范围确认、WP01与全部旧确认原字节保留；评分冻结、NET暂停。源码对应V2、合同推理V1，无独立或运行验证。下一NEXT-HC-SAFETY-REPAIR-CONTRACT-REFINEMENT只细化WP03已确认安全修复边界文档，不改业务、不运行、不绕门禁。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
