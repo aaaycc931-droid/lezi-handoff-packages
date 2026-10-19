@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261019-r32
+revision: HC-DESIGN-03-20261019-r33
 date_local: 2026-10-19
 timezone: Asia/Shanghai
 primary_reader: AI
-status: passive_observation_contract_document_prepared_unrun
+status: safety_repair_contract_document_prepared_unrun
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -19,11 +19,13 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 
 ## 0. 当前入口与接续
 
-用户2026-10-19T08:37:06+08:00明确“现在还在这个对话里继续吧”，当前会话已恢复，前r4收束只属历史；不要求换对话或重批原12范围。当前HC-DESIGN-03-20261019-r32，完成WP02被动观察契约文档，详§8.56及PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json。基准bdaa67d94d0e789b2b36af8aceab482a5ad62257，主线WP02/03仍待共享复核，未批准hook/修复/实现/运行。
+当前HC-DESIGN-03-20261019-r33。用户2026-10-19T22:39:53+08:00“同意进行下一步”，只接续已明确WP03文档细化/本线阶段写回；当前对话继续，r4收束为历史。完成有限安全修复契约建议，详§8.57及SAFETY_REPAIR_CONTRACT_PROPOSAL.json。来源基准4eb9c9b224c400b7d3aee3e6b345ebe6c061a109，mainWP03仍待共享复核，没有实现/运行/门禁批准。
 
-现有210声明观察点按100主行动/100结束/6成功非占步/4拒绝分组，原64义务逐项引用，均未运行。原三组/12验证范围确认及WP01契约、全部原始数据/有效确认保持。代码、引擎导入/运行、hook、门禁改动0；全部64UNRUN，可运行0，评分冻结、NET暂停。
+四项合同对应EI02沙漏完整安全、EI03受将拒投、EI05实际路径/防御闭合王安全、EI07铁马合法马腿路线。新文档提出真实消灭批次上下文证明、隔离副作用/一次提交、七类拒绝不变量；关联原34义务、10技能声明和5安全场景，全是原预期，未运行。克隆state不能证明原WeakMap批次已闭合，铁马公式差异不等于PD03已复现失败。
 
-下一NEXT-HC-SAFETY-REPAIR-CONTRACT-REFINEMENT，仅准备WP03有限安全修复/证据文档；共享接口由主线处理，不能把继续或本阶段完成当技术候选批准。主线r31/r32接收采用未知；其他线独立继续。
+原三组/12后续验证范围确认无需重批；原6数据、CONFIRMATIONS、WP01/WP02字节保持。全部64UNRUN，可运行0，代码/引擎导入运行/hook/门禁改动0，评分冻结、NET暂停。主线r31/r32/r33接收采用未知，不代填回执。
+
+下一NEXT-HC-DELIVERY-EVIDENCE-CONTRACT-REFINEMENT，仅WP04死亡/玩家输出/递送证据文档，不添加新刺激。共享冲突交主线，其余独立文档继续，不把本阶段完成或继续当作技术候选批准。
 
 ## 1. 确认恢复与保护
 
@@ -2530,6 +2532,29 @@ D01：同步原房间返回/抛错与driver后tick分开。前后比较可以说
 被动要求：默认关闭不读钟/耗RNG/复制私密；开启同步复制冻结，无权威别名和玩家泄漏，不增begin/end/tick或重做合法性。新观察开关等价检查仍未运行。当前capture在operation抛错时finally清理但无events返回，structuredClone/freeze失败亦可能抛出；旧PolicySession把拒绝source_events置空且submit返回前tick。未来收集器错误/容量/异常保留/嵌套的隔离方案交主线，不能因日志错误中断已承诺原子或更换业务结果。备选仍为原前后＋具体字段/可写路径不变性证明，本轮未完成此证明，不整体桥接phase/计数/护盾/崩坏。
 
 HC-OBS-Q01—05经本线RETURN回主线，分别为主行动点、end出口、D01来源阶段、收集器异常隔离、真实输出对应。全部是文档建议，未批准hook/API/代码或新玩法。原6输入、12范围确认、WP01与全部旧确认原字节保留；评分冻结、NET暂停。源码对应V2、合同推理V1，无独立或运行验证。下一NEXT-HC-SAFETY-REPAIR-CONTRACT-REFINEMENT只细化WP03已确认安全修复边界文档，不改业务、不运行、不绕门禁。
+
+### 8.57 WP03有限安全修复、隔离计划与拒绝不变量（r33）
+
+用户“同意进行下一步”接续WP03文档，非批准业务实现/运行或共享技术方案。独立完整正文为SAFETY_REPAIR_CONTRACT_PROPOSAL.json；继承原沙漏王安全与投弹受将两项完整确认，规则新增0。基准r32实际提交4eb9c9b224c400b7d3aee3e6b345ebe6c061a109；main真实WP03答复仍接收待复核。
+
+| 合同 | 原发现/义务 | 有限要求与证据边界 |
+|---|---|---|
+| HC-SAFE-01 | EI02，17条DS关联 | 按原六步及已承诺后续完整闭合结果判安全；限双真王仍活/无独立终局guard，不安全整次不提交，合法只提交一次；DS01/05解将、DS02/03拒绝仍UNRUN |
+| HC-SAFE-02 | EI03，11条DS关联 | 当前受将禁止投弹且资源/污染/名额/原截止保持；普通应将不重开旧窗口，DS04 B4新窗再核原资格；无行动后重投刺激 |
+| HC-SAFE-03 | EI05，10条PD关联 | 简化simulatePublicMove不包含实际路径/防御返回/落位死亡，不能单独证明王安全；共享计划/闭合/提交边界待主线，不用deferTurnEnd伪造普通边界 |
+| HC-SAFE-04 | EI07，PD-S12 | 横腿完步(x+2dx,y±1)，纵腿(x±1,y+2dy)，再核完整合法路线；静态公式差异，原PD03可能同判，最小自然差异证据仍缺 |
+
+以上关联有交叠，合计34项原义务，不是34个新增测试。原10技能声明按6预期接受/4预期拒绝原样引用，全部UNRUN；DS01-02 R4第二次是同一不安全状态的新请求，不是同ID重传。原场景的同本体锚点、污染/崩坏期限、普通机会均保留，非勇士与死龙不因沙漏恢复。
+
+隔离计划/一次提交只是候选合同，不是现有API。真实权威必须先证明无开放消灭批次；settlement-context的WeakMap不在state序列化里，克隆上的检查通过不能反证原批次闭合。完整闭合还可能触发训练随机/死亡资源等外部依赖；本三组无H15也不能证明通用执行器可重跑。主线须核副作用隔离及计划与实际源/请求/版本/窗口绑定，不能预检跑一次再提交重跑一次。未知/未闭合/独立终局不能作安全或无应对结论；具体产品拒绝/错误政策不由本线新增。
+
+七类拒绝不变量分别覆盖棋盘/秘密本体、次数弹药名额、污染崩坏截止、效果死亡历史、正常机会计时、提交错误身份、私密及外部副作用。真实超时须按room原分流区分，不能把其合法终局变化当作受将拒绝副作用；墙钟经过不要求remainingMs不变。WP02四个边界/210点继续只是观察候选，没有加hook。
+
+HC-SAFE-Q01—05在RETURN_TO_MAIN中交主线核共用闭合、批次/RNG、有限安全与搜索、投弹/错误顺序、路径/马腿差异证据。旧准入、层级、OG01—07、自然/负例缺口全部保留；不消费未完整核对的新H02政策，不恢复H15旧吞机会方案。原6数据与CONFIRMATIONS/WP01/WP02字节不变，历史§1—8.56及§9以后保留。
+
+提交前并发：普通线bc7e4239935a760b12c75d5f8e910086bfc34e19新增H02发动步终点单龙鳞限定A原确认；本线只读其入口/原确认ID结构与shared03完整新增段差分，未读shared02完整guard及原确认policy，不作规则消费。shared03既有M01/M04普通路径安全与D01相关正文逐字未变；原12无H02/H21，文档范围不扩。以该实际新HEAD树和同parent写本线，保留其17项并发载荷，不改共享文件。
+
+本轮仅离线JSON身份/引用/源码函数顺序核对，V2有限来源事实＋V1同一AI契约建议，无独立审计或运行。全部64UNRUN，可运行0；评分冻结、NET暂停。下一WP04实际死亡/复活前证据、真实红黑输出与重传/冲突证据文档，未开始；不添加命令、不改业务/导入运行、不绕门禁。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 

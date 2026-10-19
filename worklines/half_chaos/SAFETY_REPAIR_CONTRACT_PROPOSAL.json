@@ -1,0 +1,1640 @@
+{
+  "schema": "lezi.hc_safety_repair_contract_proposal.v1",
+  "revision": "HC-DESIGN-03-20261019-r33",
+  "task_completed": "NEXT-HC-SAFETY-REPAIR-CONTRACT-REFINEMENT",
+  "work_package": "WP03",
+  "date_local": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "status": "DOCUMENT_PROPOSAL_PREPARED_NOT_IMPLEMENTED_OR_TECHNICALLY_APPROVED",
+  "handoff_source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+  "authorization": {
+    "user_quote": "同意进行下一步",
+    "user_at_local": "2026-10-19T22:39:53+08:00",
+    "adopted_scope": "接续前一明确的WP03文档细化并按既有授权写本线交接；不扩大为批准全部技术候选",
+    "document_preparation": true,
+    "own_stage_writeback": true,
+    "business_code": false,
+    "engine_import_or_run": false,
+    "hook_or_gate_changes": false,
+    "new_gameplay_rules": false
+  },
+  "scope_confirmation": {
+    "id": "CONF-HC-VALIDATION-SCOPE-THREE-TUPLES-20261018",
+    "path": "worklines/half_chaos/CONFIRMATIONS.json",
+    "section": "r31_validation_scope_plan_confirmation",
+    "git_blob_sha": "760386e6735dcd90f1f244ee1e2ffbe6ca620e60",
+    "sha256": "3279350089538ed12e5fd52f074f8aff211881bb93f07ab92749f6a53e11ed8e",
+    "size_bytes": 116790,
+    "chars": 108568,
+    "meaning": "原3tuple/12未来验证范围保持；不是全游戏组合限制，也不批准实现/运行/共享接口"
+  },
+  "main_actual_response": {
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "path": "worklines/main/SHARED_COORDINATION.json#/current_shared_scope_request_queue",
+    "requests": [
+      {
+        "id": "HC-SCOPE-WP01",
+        "owner": "main",
+        "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      },
+      {
+        "id": "HC-SCOPE-WP02",
+        "owner": "main",
+        "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      {
+        "id": "HC-SCOPE-WP03",
+        "owner": "main",
+        "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
+        "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      }
+    ],
+    "r31_r32_r33_reception_or_adoption": null,
+    "scope": "只记录本线真实读取；main仍deferredWP03，无本轮实施/运行批准，不代填其回执"
+  },
+  "engine_source": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "branch": "codex/half-chaos-h11-b-clock-20261012",
+    "read_scope": "7份固定blob文本的注明函数；静态对照非运行、全库/PR/CI或独立审计"
+  },
+  "source_files": [
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/rules.ts",
+      "git_blob_sha": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+      "sha256": "a19b0cc9d5b14a5c9fe01fdeabeab75f798b99f3747d62094158d3245fc99d1f",
+      "size_bytes": 20254,
+      "chars": 19342,
+      "actual_read_scope": "完整canRevealedPieceAttack/isSquareAttacked/isGeneralInCheck/simulatePublicMove/validatePublicMove及所需目标/走法相邻段；不称完整王安全/全应将搜索审计"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/game.ts",
+      "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+      "sha256": "51c5fcb331d4389c755e4180fb658064514db253d26906c90ddd4ba8166d0dd4",
+      "size_bytes": 44628,
+      "chars": 43116,
+      "actual_read_scope": "完整finishDirectDeaths/finishAfterPlayerAction/applyAuthoritativeMove及正常/防御返回路径；其他英雄/强迫来源非本轮完整审计"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/hero-actions.ts",
+      "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+      "sha256": "57a59973a33109553a83d615849fe9bb2ccb75af589fd80eaa3bccda51e6b57d",
+      "size_bytes": 23032,
+      "chars": 21576,
+      "actual_read_scope": "applyHeroAbility入口、完整hourglass/bomb分支与公共尾部；其他switch分支不采用"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/settlement.ts",
+      "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+      "sha256": "248a380ae11410f3990b13e6b9fd4033a576c4b4ea9244019b67329a2a18fd94",
+      "size_bytes": 30579,
+      "chars": 28699,
+      "actual_read_scope": "沿用r32完整settleLandings/closeDirectDeaths/beginFormalTurn/advanceToFormalTurn/finishFormalTurn的同blob阅读；本轮重核closeDirectDeaths与全局随机调用，不声称全文件审计"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/settlement-context.ts",
+      "git_blob_sha": "58052bee1c08392f887fbf1e7f1ec7501c2d8cf4",
+      "sha256": "b09b0631910845f78e8a9c40fc72177e05484e8e167dc51145b50a94d96355c4",
+      "size_bytes": 557,
+      "chars": 449,
+      "actual_read_scope": "完整文件：外部WeakMap与requireClosedDestructionBatch"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/hero-progress.ts",
+      "git_blob_sha": "5edea5f9c620b1eb35127ff7b146b1f84662f6dc",
+      "sha256": "282b08429b2b5b1fb18497efd35439c7f19d04d004b88ac4e3f625465209769c",
+      "size_bytes": 5980,
+      "chars": 5804,
+      "actual_read_scope": "selectTraining/settleTrainingDeaths/settleHeroDeathResources/advanceTraining等完整相关函数；只核副作用来源，不采用H15旧成本策略"
+    },
+    {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "path": "src/remote-room.ts",
+      "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+      "sha256": "8801cc07ddf3943c05e0a69f8f0a32ec065915ff58aecccffd0299e53b87e05c",
+      "size_bytes": 58791,
+      "chars": 57411,
+      "actual_read_scope": "沿用r32同blob完整expiredFormalAction/submitRemoteHeroAbility/submitRemoteMove及请求返回分流；本轮重核D01外层，不声称客户端或协议全通道审计"
+    }
+  ],
+  "original_confirmations": [
+    {
+      "id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+      "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+      "commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+      "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+      "sha256": "c3af07c48977a345d5900f6d8745940e4fdf3ae6151a368612f3155c92bfdac4",
+      "size_bytes": 4312,
+      "chars": 4104,
+      "read_scope": "完整原确认及原问题/用户答复/限制；继承有效确认，不是本轮新增批准"
+    },
+    {
+      "id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+      "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+      "commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+      "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+      "sha256": "d44c4e338061faa407164a55c09ffdf95932f4be67998bb4c7b6a779940bdad5",
+      "size_bytes": 3683,
+      "chars": 3515,
+      "read_scope": "完整原确认及原问题/用户答复/限制；继承有效确认，不是本轮新增批准"
+    }
+  ],
+  "current_shared_source": {
+    "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+    "commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "git_blob_sha": "ae5e1b0ef17c57b71fac4c73a634a89ce57b34b3",
+    "sha256": "e4b9aed93dc9db0c53f4746e8514954a43e97cd1f6ea9847e74fc70c891bdc7e",
+    "size_bytes": 28466,
+    "chars": 11474,
+    "adopted_read_scope": "M01/M04既有路径安全段与D01核心六步/王安全/受将投弹相关段；H02新章仅存在元数据，不消费其全文政策，无H02/H21加入原12"
+  },
+  "immutable_inputs": [
+    {
+      "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+      "sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
+      "size_bytes": 238908,
+      "chars": 234774
+    },
+    {
+      "path": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
+      "git_blob_sha": "322e5aef2fcee3d2614fa4dd515c159c794e428b",
+      "sha256": "62a8a8980da8fdf47d196173fd59a5b23d1b345d9d77501f41c79c6b8dabe99b",
+      "size_bytes": 106044,
+      "chars": 101884
+    },
+    {
+      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836",
+      "size_bytes": 86249,
+      "chars": 86247
+    },
+    {
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68",
+      "size_bytes": 292775,
+      "chars": 292707
+    },
+    {
+      "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+      "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
+      "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda",
+      "size_bytes": 265062,
+      "chars": 264580
+    },
+    {
+      "path": "worklines/half_chaos/ENGINE_SOURCE_INVENTORY.json",
+      "git_blob_sha": "0a7cd559ba0feb1b6c788fa389384eb174eec599",
+      "sha256": "dcb15a75f8a535860a565aabf92c0223acc9c6cd11ce9f6dd67e8d2d3856822d",
+      "size_bytes": 43479,
+      "chars": 43137
+    }
+  ],
+  "preserved_prior_contracts": [
+    {
+      "path": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
+      "git_blob_sha": "a29a20e303d3fd255ee338feaa9b60ae129e0c0a",
+      "sha256": "7f35aa95ca2b8ff60811db6d85868098a2a92564d69075babc985443501d759f",
+      "size_bytes": 40193,
+      "chars": 33193
+    },
+    {
+      "path": "worklines/half_chaos/PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json",
+      "git_blob_sha": "28fcbb8aa53f9b99779429730fe399945fac82da",
+      "sha256": "9b3b2515b27374b5c4bd6400b0e9c4d249ad816839b619f9b77248c47f71257b",
+      "size_bytes": 83623,
+      "chars": 74929
+    }
+  ],
+  "repair_contracts": [
+    {
+      "id": "HC-SAFE-01",
+      "finding": "EI02",
+      "title": "沙漏完整结果安全预检与一次提交",
+      "original_confirmation_ids": [
+        "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016"
+      ],
+      "authority_guard": "只在原D01合法可用、正确成员/side/未过期正式回合主行动前、尚有次数且尚未正式终局下；本安全结论限双方真将帅在完整闭合结果仍存活、无独立终局来源的已确认分支。普通受将不自动禁止沙漏进入预检。",
+      "current_source_fact": "applyHeroAbility复制state/secret后，hourglass分支先扣次数，处理候选/锚点/回归/落位/净化/装填，公共尾部闭合；该分支及尾部未见按完整结果判己方普通合法受将的条件。静态来源缺口，不是已运行失败。",
+      "required_behavior": [
+        "发动瞬间锁定所有已现身勇士，含已死现身者，不从秘密池补入未现身者；发动瞬间检查原锚点占据/污染。",
+        "按原六步群体回归/复活、适用落位后续、净化污染及关联未结算崩坏、仍存活已现身龙补至1，完成本次已承诺后续后才判安全。六步不是本文新定义的实现API。",
+        "本次闭合结果必须解除全部己方合法受将；原本安全也不能被回归暴露。不能仅验中间步骤，不能依靠下次沙漏或普通主行动补救。",
+        "不安全则丢弃全部候选结果，不在实际权威扣次或提交回归/复活/净化/装填/历史变化，不改原机会与原截止。不是先实写再退款。",
+        "安全且其余原资格通过时，只实际承诺一次完整结果并花1次；非终局时正常主行动与原截止保持。同窗口下一次自愿使用重新基于实际新状态独立校验。"
+      ],
+      "implementation_boundary": "用下述隔离计划/实际提交候选合同交主线核定；不能简单调用现引擎一次预检再重跑一次提交，也不能把公共isGeneralInCheck单次结果提升为完整终局搜索保证。",
+      "not_ratified_by_this_contract": "现源码对每个eligible勇士整份覆盖effectsByPieceId的实现细节，不因本安全建议而整体获批；原死亡勇士不继承临时状态与存活对象状态保留须仍按来源核对，非本轮擅定新修复。",
+      "evidence": "原DS01/DS05预期由沙漏自身解将；DS02原两次新请求及DS03原安全局面暴露预期整次拒绝。前后结果不足以证明内部六步顺序，阶段诊断沿WP02候选待主线。",
+      "affected_original_spec_ids": [
+        "DS-S03",
+        "DS-S04",
+        "DS-S05",
+        "DS-S06",
+        "DS-S07",
+        "DS-S08",
+        "DS-S09",
+        "DS-S10",
+        "DS-S12",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16",
+        "DS-S22",
+        "DS-S25",
+        "DS-S26",
+        "DS-S27",
+        "DS-S28"
+      ],
+      "status": "SOURCE_LINKED_DOCUMENT_REPAIR_SCOPE_NOT_IMPLEMENTED_OR_TECHNICALLY_APPROVED",
+      "runtime_status": "UNRUN"
+    },
+    {
+      "id": "HC-SAFE-02",
+      "finding": "EI03",
+      "title": "当前受将时拒投弹并保持原窗口",
+      "original_confirmation_ids": [
+        "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016"
+      ],
+      "authority_guard": "原D01/姆诺兹多本方正式主行动前窗口；当前普通合法将军按原规则判定。射程、目标、施放者、控制、现身、弹药和全军每己回合1枚等全部原条件保持。",
+      "current_source_fact": "bomb分支核施放者/弹药/原窗口/全军名额/射程/目标后写弹药与污染并处理落位；在本分支未见当前受将禁止条件。静态缺口，不是已运行失败。",
+      "required_behavior": [
+        "当前正受普通合法将军时整次资格拒绝，不扣弹药、不占全军名额、不生成污染/崩坏、不改原截止；不能先投再靠主行动解将。",
+        "先完成普通合法应将会关闭本回合主行动前投弹窗；未使用名额不重开窗口。B4新的实际窗口仍重核全部原条件。",
+        "当前不受将不代表自动获准投弹；合法投弹仍保留正常主行动与原时钟。污染不成为实体阻挡/炮架/护罩，崩坏不是投弹立即命中死亡。",
+        "不把本门槛移植为禁止沙漏自身完整解将，不搬用H06普通回溯。"
+      ],
+      "implementation_boundary": "前置在实际副作用提交之前；确切与原参数/版本/超时/身份错误的顺序由主线核，不发明错误码或错误优先级。",
+      "evidence": "DS04 B3原请求其他资格满足而因当前受将预期拒绝，普通应将后直到B4新窗口正向投弹；原数据没有主行动后重投命令，不能声称该拒绝已覆盖。",
+      "affected_original_spec_ids": [
+        "DS-S05",
+        "DS-S09",
+        "DS-S11",
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22",
+        "DS-S24",
+        "DS-S28"
+      ],
+      "status": "SOURCE_LINKED_DOCUMENT_REPAIR_SCOPE_NOT_IMPLEMENTED_OR_TECHNICALLY_APPROVED",
+      "runtime_status": "UNRUN"
+    },
+    {
+      "id": "HC-SAFE-03",
+      "finding": "EI05",
+      "title": "路径与防御实际闭合结果的王安全一致性",
+      "original_confirmation_ids": [],
+      "authority_guard": "原红H04/黑H03与单一M01或M04、原合法自然前缀/原动作；保留来源独立路径碾碎、终点普通进攻/普通防御及已承诺落位死亡语义。",
+      "current_source_fact": "validatePublicMove使用simulatePublicMove后查己王；该模拟在目标龙鳞时返回原state，否则简单移动/移除终点，未包含M01/M04路径碾碎、普通防御返回、落位/死亡全部后续。applyAuthoritativeMove随后才做真实路径、拦截返回/正常落位和finishDirectDeaths/finishAfterPlayerAction。",
+      "required_behavior": [
+        "未来预检/安全判断与本动作实际路径碾碎→终点拦截/消灭→来源落位或返回→揭示/落位与已承诺死亡后续一致；不能用简化移动结果单独作证明。",
+        "壁垒弹回不撤销已完成路径消灭；原终点无效、免疫、控制与来源资格不能被预检绕过。主线选共用规则计划/闭合接口，避免另抄一份执行器产生漂移。",
+        "不能用deferTurnEnd=true把普通主行动伪造成子/技能派生动作来取得观察边界或规避安全；该参数改变来源分类和begin/end路径。",
+        "本批明确应将与实际原子结果只用于对应原义务；不外推完整将死搜索或独立终局。M04双方真王同原子死亡/仅可两败俱伤的有效将军条件仍按原权威来源另核，不从D01存活guard抹掉。"
+      ],
+      "implementation_boundary": "共享纯计划/一次提交和公共威胁查询的具体拆分待主线；不批准整体替换simulatePublicMove或放宽allowIntermediateCheck。",
+      "evidence": "原10项PD义务关联与WP02 OBS-MAIN-CLOSED来源证据；原PD-S31额外返回落位与PD-S32自然冲突正例仍缺，不能靠本合同填通过。",
+      "affected_original_spec_ids": [
+        "PD-S05",
+        "PD-S07",
+        "PD-S11",
+        "PD-S12",
+        "PD-S15",
+        "PD-S17",
+        "PD-S20",
+        "PD-S26",
+        "PD-S30",
+        "PD-S36"
+      ],
+      "status": "SOURCE_LINKED_DOCUMENT_REPAIR_SCOPE_NOT_IMPLEMENTED_OR_TECHNICALLY_APPROVED",
+      "runtime_status": "UNRUN"
+    },
+    {
+      "id": "HC-SAFE-04",
+      "finding": "EI07",
+      "title": "铁马马腿威胁按合法完步路线枚举",
+      "original_confirmation_ids": [],
+      "authority_guard": "适用原M01真实合法马步/公开威胁来源；马腿为相邻地面格，仍核可完成日字落点、棋盘、目标、控制及来源限制。暗身份不新增探查。",
+      "current_source_fact": "canRevealedPieceAttack在将帅位于马腿时，横腿枚举(x+dx,y±2)，纵腿枚举(x±2,y+dy)；与经过该腿的日字完步坐标方向不同。",
+      "required_behavior": [
+        "令源马在(x,y)，横向相邻腿偏移(dx,0)且dx=±1时，完步候选为(x+2dx,y−1)/(x+2dx,y+1)；纵腿(0,dy),dy=±1时为(x−1,y+2dy)/(x+1,y+2dy)。",
+        "坐标枚举后继续核合法完步路线与落点约束；不得由越界、不可进攻目标或无法完成路线虚造马腿将军，也不能仅换公式即宣称完整威胁求解完成。",
+        "保留对终点将帅的原威胁规则，路径碾碎来源免疫/地面限定按原文；不先清状态绕过限制。"
+      ],
+      "implementation_boundary": "主线先核最小合法差异证据及与实际移动共享的资格路径；本轮不新增数据/测试/引擎请求。",
+      "evidence": "PD-S12关联的原PD03位置在新旧公式下可能偶然同判，未声明替代马请求。现仅静态公式差异，没有自然差异局面已构造或故障已复现的结论。",
+      "affected_original_spec_ids": [
+        "PD-S12"
+      ],
+      "status": "SOURCE_LINKED_DOCUMENT_REPAIR_SCOPE_NOT_IMPLEMENTED_OR_TECHNICALLY_APPROVED",
+      "runtime_status": "UNRUN"
+    }
+  ],
+  "isolated_plan_and_single_commit_candidate": {
+    "status": "CONCEPTUAL_CONTRACT_NOT_EXISTING_API_OR_SELECTED_IMPLEMENTATION",
+    "entry": "经真实房间/成员/side/模式/可信完整tuple/版本/原窗口与截止验证；保持现有产品/P0门禁。原正常begin已闭合的请求前状态是比较基点，不为预检调用begin/end/tick。",
+    "external_context_guard": "必须在真实权威控制点证明无未闭合消灭批次。settlement-context.openDestructionBatches是WeakMap，克隆/序列化GameState丢失该外部关联；副本requireClosedDestructionBatch不抛错不能反证原批次已闭合。主线核可用证明/上下文接口，不跳过原检查。",
+    "isolated_evaluation": "隔离authority和secret及必要上下文，在副本处理完整来源指定原子。预检结果不写房间、历史、玩家输出或生产observer；无私密提示、真实随机消耗、时钟重启或外部回调副作用。仅深拷贝state/secret不足以证明所有依赖纯。",
+    "random_and_resource_limit": "closeDirectDeaths可调用settleTrainingDeaths及Math.random包装，hero-progress可重选训练并处理死亡资源；本三tuple无H15不等于通用闭合可安全重跑。完整闭合所需的随机/资源/批次上下文由主线核定，未证明就保留阻断，不擅自替换RNG。",
+    "safety_result": "只有原确认guard内完整已闭合结果可判断该次沙漏安全。未知/未覆盖、未闭合、独立终局或王消失分支不得写作安全或无合法应对，留主线共享核定；这不是新增产品统一拒绝/错误政策。",
+    "discard": "安全不通过时不提交候选state/secret/事件/资源；原有效请求前权威及下述适用不变量保持，预检轨迹明确标副本不能当真实死亡/回归。",
+    "single_commit": "安全且其余原条件全通过后，只承诺同一请求完整结果一次。共享接口可采用何种计划/提交结构由主线选择；不可直接用现执行器预检一遍又重跑一遍，消耗两次随机/资源/回调。",
+    "binding_at_commit": "计划须绑定实际源版本/authority与secret身份、房间、请求actor/side/actionId/payload、expectedRevision及正式窗口/原截止。承诺时来源/版本/上下文已变则不得静默复用；原冲突/过期处置及任何再计划策略交主线，不自创自动重试。",
+    "repeated_skill": "同一窗口下次主动沙漏用新请求和最新实际状态独立重检；原相同不安全局面的第二新请求不等于同ID重传。原样重传/同ID异actor/payload仍需真实协议证据，不能由本合同保证。",
+    "source_preservation": "原公共尾部/room超时/去重/正常机会/截止等路径保持，由主线核计划和提交如何共用完整闭合；不通过直接函数、假房间、额外tick或deferTurnEnd绕原入口。"
+  },
+  "refusal_invariant_groups": [
+    {
+      "id": "SAFE-INV01",
+      "scope": "实际棋盘与本体/秘密",
+      "must_preserve": "拒绝时位置/明暗/控制/存亡、开局同本体身份映射与锚点、destiny现身集合不发生技能引起的写回；副本不得别名修改authority/secret。"
+    },
+    {
+      "id": "SAFE-INV02",
+      "scope": "次数/弹药/全军名额",
+      "must_preserve": "沙漏拒绝不扣次不装填；投弹受将拒绝不扣弹不占名额；不存在先扣/生成后退款的真实承诺。"
+    },
+    {
+      "id": "SAFE-INV03",
+      "scope": "污染/崩坏与原截止",
+      "must_preserve": "不净化/生成污染，不解除/附加/延后timeCollapse；DS02 U原R4-end到期身份保持，随后普通应将及原结束按来源继续。"
+    },
+    {
+      "id": "SAFE-INV04",
+      "scope": "效果/真实死亡及操作历史",
+      "must_preserve": "拒绝不提交复活、路径/落位死亡、captured变更、资源回调、自动事件/消灭批次；真实已发生历史不被模拟轨迹覆盖。外部失败审计日志是否新增不是本合同既定产品字段。"
+    },
+    {
+      "id": "SAFE-INV05",
+      "scope": "正常机会与计时",
+      "must_preserve": "本side/正式number/阶段/主行动机会、已完成计数及原deadline不因拒绝/预检刷新，不补begin/main/end/tick。墙钟自然经过不要求remainingMs字节相同。"
+    },
+    {
+      "id": "SAFE-INV06",
+      "scope": "提交身份与错误",
+      "must_preserve": "拒绝不得被登记为成功提交/已处理技能；实际RuleError或返回分流保留，不虚构码或优先级。失败ID缓存/载荷绑定/错误封装是否存在仍交主线；不宣称所有外部日志逐字不变。"
+    },
+    {
+      "id": "SAFE-INV07",
+      "scope": "私密与副作用",
+      "must_preserve": "预检不授玩家隐藏候选/锚点/身份或新安全探查提示，不消耗生产RNG/外部回调或改时钟。实际玩家可见错误/输出需WP04真实通道证据，内部快照不足以判隐私通过。"
+    }
+  ],
+  "original_skill_request_bindings": [
+    {
+      "declaration_id": "MA-DS01-02:B2:pre-1",
+      "replay_id": "MA-DS01-02",
+      "turn_label": "B2",
+      "kind": "dragon_bomb",
+      "expected_disposition": "accepted",
+      "original_checkpoint_id": "MA-DS01-02:B2:pre-1:observation",
+      "observation_contract": "OBS-D01-ACCEPTED",
+      "repair_contract": "HC-SAFE-02",
+      "original_expected_observation": "D ammunition1→0; pollution0,5; black is not in check; army quota used1; main/deadline retained",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS01-02:R3:pre-1",
+      "replay_id": "MA-DS01-02",
+      "turn_label": "R3",
+      "kind": "hourglass",
+      "expected_disposition": "accepted",
+      "original_checkpoint_id": "MA-DS01-02:R3:pre-1:observation",
+      "observation_contract": "OBS-D01-ACCEPTED",
+      "repair_contract": "HC-SAFE-01",
+      "original_expected_observation": "full six-step atom relieves check; uses5→4; cleanse0,5; live appeared D0→1; red horse remains dead; red main retained",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS01-02:B3:pre-1",
+      "replay_id": "MA-DS01-02",
+      "turn_label": "B3",
+      "kind": "dragon_bomb",
+      "expected_disposition": "accepted",
+      "original_checkpoint_id": "MA-DS01-02:B3:pre-1:observation",
+      "observation_contract": "OBS-D01-ACCEPTED",
+      "repair_contract": "HC-SAFE-02",
+      "original_expected_observation": "D1→0; repollute cleansed square; U acquires collapse with R4-end deadline; current black not in check; quota used1",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS01-02:R4:pre-1",
+      "replay_id": "MA-DS01-02",
+      "turn_label": "R4",
+      "kind": "hourglass",
+      "expected_disposition": "rejected",
+      "original_checkpoint_id": "MA-DS01-02:R4:pre-1:observation",
+      "observation_contract": "OBS-D01-REFUSED",
+      "repair_contract": "HC-SAFE-01",
+      "original_expected_observation": "W dead/anchor occupied; returning U0,5→0,6 cannot block check; entire use refused: uses4, U0,5/pollution/collapse deadline/Dammo0 unchanged; no partial writeback",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS01-02:R4:pre-2",
+      "replay_id": "MA-DS01-02",
+      "turn_label": "R4",
+      "kind": "hourglass",
+      "expected_disposition": "rejected",
+      "original_checkpoint_id": "MA-DS01-02:R4:pre-2:observation",
+      "observation_contract": "OBS-D01-REFUSED",
+      "repair_contract": "HC-SAFE-01",
+      "original_expected_observation": "new semantic request in same unchanged unsafe state remains rejected with same authority invariants; not a transport retry or new safety result",
+      "request_relation": "fresh semantic request at unchanged unsafe state, not retransmission",
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS03:R4:pre-1",
+      "replay_id": "MA-DS03",
+      "turn_label": "R4",
+      "kind": "hourglass",
+      "expected_disposition": "rejected",
+      "original_checkpoint_id": "MA-DS03:R4:pre-1:observation",
+      "observation_contract": "OBS-D01-REFUSED",
+      "repair_contract": "HC-SAFE-01",
+      "original_expected_observation": "currently safe; moving W3,7→7,7 would expose rook1,7→royal4,7; entire refusal uses5 unchanged and W screen retained; ordinary main/deadline retained",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS04:B3:pre-1",
+      "replay_id": "MA-DS04",
+      "turn_label": "B3",
+      "kind": "dragon_bomb",
+      "expected_disposition": "rejected",
+      "original_checkpoint_id": "MA-DS04:B3:pre-1:observation",
+      "observation_contract": "OBS-D01-REFUSED",
+      "repair_contract": "HC-SAFE-02",
+      "original_expected_observation": "current check alone rejects despite appeared live black-controlled D/ammo1/range1/clean target/army quota0; all unchanged; no pollution/collapse; main retained",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS04:B4:pre-1",
+      "replay_id": "MA-DS04",
+      "turn_label": "B4",
+      "kind": "dragon_bomb",
+      "expected_disposition": "accepted",
+      "original_checkpoint_id": "MA-DS04:B4:pre-1:observation",
+      "observation_contract": "OBS-D01-ACCEPTED",
+      "repair_contract": "HC-SAFE-02",
+      "original_expected_observation": "genuine new black pre-main window; not in check; other original conditions satisfied; D1→0, quota0→1, pollution4,2; no deadline reset; normal main retained",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS05:B5:pre-1",
+      "replay_id": "MA-DS05",
+      "turn_label": "B5",
+      "kind": "dragon_bomb",
+      "expected_disposition": "accepted",
+      "original_checkpoint_id": "MA-DS05:B5:pre-1:observation",
+      "observation_contract": "OBS-D01-ACCEPTED",
+      "repair_contract": "HC-SAFE-02",
+      "original_expected_observation": "distance3; living appeared D1→0, quota used1; W acquires collapse with R6-end deadline",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "declaration_id": "MA-DS05:R7:pre-1",
+      "replay_id": "MA-DS05",
+      "turn_label": "R7",
+      "kind": "hourglass",
+      "expected_disposition": "accepted",
+      "original_checkpoint_id": "MA-DS05:R7:pre-1:observation",
+      "observation_contract": "OBS-D01-ACCEPTED",
+      "repair_contract": "HC-SAFE-01",
+      "original_expected_observation": "full atom: dead appeared W revives revealed at own actual anchor3,9 and screens; three living appeared warriors return; uses5→4; cleanse4,8; live D0→1; dead black central dragon/red horse/red elephant remain dead; unappeared central red warrior excluded; main retained",
+      "request_relation": null,
+      "actual_disposition": null,
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    }
+  ],
+  "original_safety_case_expectations": [
+    {
+      "id": "SAFE-CASE-DS01",
+      "request": "MA-DS01-02:R3:pre-1",
+      "source": "WORKING.md§8.40原DS01；REPLAY_ACTION_DATA原同局",
+      "expected_only": "当前黑明车将军，存活现身W回自己实际开局锚(3,9)阻线；完整结算5→4、净化(0,5)、存活现身龙0→1，红马仍死；沙漏本身解将且主行动保持。",
+      "status": "ORIGINAL_EXPECTATION_NOT_ACTUAL_RESULT_UNRUN"
+    },
+    {
+      "id": "SAFE-CASE-DS02",
+      "request": [
+        "MA-DS01-02:R4:pre-1",
+        "MA-DS01-02:R4:pre-2"
+      ],
+      "source": "WORKING.md§8.40原DS02，必须承接DS01同局",
+      "expected_only": "W已死且锚被黑车占，U从(0,5)回(0,6)不能解将，两次独立新不安全请求均整次拒绝；次数4、U(0,5)、污染/原R4-end崩坏及龙弹0保持。随后普通王应将，U按原结束到期死亡。第二次不是重传。",
+      "status": "ORIGINAL_EXPECTATION_NOT_ACTUAL_RESULT_UNRUN"
+    },
+    {
+      "id": "SAFE-CASE-DS03",
+      "request": "MA-DS03:R4:pre-1",
+      "source": "WORKING.md§8.40原DS03",
+      "expected_only": "发动前W(3,7)挡黑车(1,7)对红王(4,7)线，回(7,7)会暴露；整次拒绝，次数5与原屏障保持，普通兵主行动仍可按原数据进行。",
+      "status": "ORIGINAL_EXPECTATION_NOT_ACTUAL_RESULT_UNRUN"
+    },
+    {
+      "id": "SAFE-CASE-DS04",
+      "request": [
+        "MA-DS04:B3:pre-1",
+        "MA-DS04:B4:pre-1"
+      ],
+      "source": "WORKING.md§8.40原DS04",
+      "expected_only": "B3当前被红明车将军，D(4,1)对(4,2)距离1、其他原资格均合但仅因受将拒投，所有相关状态保持。黑普通车吃将军车应将，数据无行动后重投；红R4安静手后B4新窗再合法投弹。",
+      "status": "ORIGINAL_EXPECTATION_NOT_ACTUAL_RESULT_UNRUN"
+    },
+    {
+      "id": "SAFE-CASE-DS05",
+      "request": "MA-DS05:R7:pre-1",
+      "source": "WORKING.md§8.40原DS05",
+      "expected_only": "已死现身W以同开局本体在(3,9)明置复活阻线，另三存活现身勇士回锚；完整5→4、净化(4,8)、活龙装填，死黑龙与红马/象不复活，未现身中央勇士不补入。先前死亡操作证据外置保留，不因当前captured移除而抹除。",
+      "status": "ORIGINAL_EXPECTATION_NOT_ACTUAL_RESULT_UNRUN"
+    }
+  ],
+  "original_spec_routes": [
+    {
+      "spec_id": "DS-S03",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B2:main:closed",
+        "MA-DS01-02:R3:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S04",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:R3:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S05",
+      "repair_contract_ids": [
+        "HC-SAFE-01",
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B2:pre-1:observation",
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:R3:main:closed",
+        "MA-DS01-02:R3:normal-end"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S06",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B2:main:closed",
+        "MA-DS01-02:R3:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [
+        "Alternate ordinary rook evasion is source reasoning; main actually chosen is different."
+      ],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S07",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B3:main:closed",
+        "MA-DS01-02:R4:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S08",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B3:main:closed",
+        "MA-DS01-02:R4:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S09",
+      "repair_contract_ids": [
+        "HC-SAFE-01",
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B3:pre-1:observation",
+        "MA-DS01-02:R4:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S10",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S11",
+      "repair_contract_ids": [
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B3:pre-1:observation",
+        "MA-DS01-02:R4:main:closed",
+        "MA-DS01-02:R4:normal-end"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S12",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:pre-2:observation"
+      ],
+      "remaining_obligations": [
+        "fresh identical-state request vs same-command retransmission needs actual protocol/identity/error and dedup entrypoint mapping"
+      ],
+      "missing_stimuli_or_natural_cases": [
+        "No same-command transport retransmission or actor/payload conflict stimulus."
+      ],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S14",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS03:B3:main:closed",
+        "MA-DS03:R4:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S15",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS03:R4:pre-1:observation",
+        "MA-DS03:R4:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S16",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:pre-2:observation",
+        "MA-DS03:R4:pre-1:observation",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "remaining_obligations": [
+        "same-window first-safe second-unsafe natural fixture missing; full source closure beyond shown branches not covered"
+      ],
+      "missing_stimuli_or_natural_cases": [
+        "No natural safe-first unsafe-second hourglass pair in one window; all six internal steps not individually observable."
+      ],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S17",
+      "repair_contract_ids": [
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS04:B2:main:closed",
+        "MA-DS04:R3:main:closed",
+        "MA-DS04:B3:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S18",
+      "repair_contract_ids": [
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS04:R3:main:closed",
+        "MA-DS04:B3:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S19",
+      "repair_contract_ids": [
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS04:B3:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S20",
+      "repair_contract_ids": [
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS04:B3:pre-1:observation",
+        "MA-DS04:B3:main:closed",
+        "MA-DS04:B3:normal-end"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [
+        "No post-main bomb resubmission stimulus to exercise refusal after window closure."
+      ],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S21",
+      "repair_contract_ids": [
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS04:B3:pre-1:observation",
+        "MA-DS04:R4:main:closed",
+        "MA-DS04:B4:pre-1:observation",
+        "MA-DS04:B4:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S22",
+      "repair_contract_ids": [
+        "HC-SAFE-01",
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS04:B3:pre-1:observation",
+        "MA-DS04:B4:pre-1:observation"
+      ],
+      "remaining_obligations": [
+        "all invalid caster/target/range/ammo/teamquota negative branches not supplied by these positive-other-gates fixtures"
+      ],
+      "missing_stimuli_or_natural_cases": [
+        "No complete invalid caster/target/range/ammo/quota negative branch set."
+      ],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S24",
+      "repair_contract_ids": [
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS05:B5:pre-1:observation",
+        "MA-DS05:B5:main:closed",
+        "MA-DS05:R6:main:closed",
+        "MA-DS05:R6:normal-end"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S25",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS05:R6:normal-end",
+        "MA-DS05:B6:main:closed",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S26",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS05:B2:main:closed",
+        "MA-DS05:B5:main:closed",
+        "MA-DS05:R6:normal-end",
+        "MA-DS05:B6:main:closed",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S27",
+      "repair_contract_ids": [
+        "HC-SAFE-01"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "remaining_obligations": [
+        "two player projections and comparison normalization require actual source mapping; no mask approved by this plan"
+      ],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "DS-S28",
+      "repair_contract_ids": [
+        "HC-SAFE-01",
+        "HC-SAFE-02"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI02",
+        "EI03"
+      ],
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R1:main:closed",
+        "MA-DS01-02:R1:normal-end",
+        "MA-DS01-02:B1:main:closed",
+        "MA-DS01-02:B1:normal-end",
+        "MA-DS01-02:R2:main:closed",
+        "MA-DS01-02:R2:normal-end",
+        "MA-DS01-02:B2:main:closed",
+        "MA-DS01-02:B2:normal-end",
+        "MA-DS01-02:B2:pre-1:observation",
+        "MA-DS01-02:R3:main:closed",
+        "MA-DS01-02:R3:normal-end",
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:B3:main:closed",
+        "MA-DS01-02:B3:normal-end",
+        "MA-DS01-02:B3:pre-1:observation",
+        "MA-DS01-02:R4:main:closed",
+        "MA-DS01-02:R4:normal-end",
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:pre-2:observation",
+        "MA-DS03:R1:main:closed",
+        "MA-DS03:R1:normal-end",
+        "MA-DS03:B1:main:closed",
+        "MA-DS03:B1:normal-end",
+        "MA-DS03:R2:main:closed",
+        "MA-DS03:R2:normal-end",
+        "MA-DS03:B2:main:closed",
+        "MA-DS03:B2:normal-end",
+        "MA-DS03:R3:main:closed",
+        "MA-DS03:R3:normal-end",
+        "MA-DS03:B3:main:closed",
+        "MA-DS03:B3:normal-end",
+        "MA-DS03:R4:main:closed",
+        "MA-DS03:R4:normal-end",
+        "MA-DS03:R4:pre-1:observation",
+        "MA-DS04:R1:main:closed",
+        "MA-DS04:R1:normal-end",
+        "MA-DS04:B1:main:closed",
+        "MA-DS04:B1:normal-end",
+        "MA-DS04:R2:main:closed",
+        "MA-DS04:R2:normal-end",
+        "MA-DS04:B2:main:closed",
+        "MA-DS04:B2:normal-end",
+        "MA-DS04:R3:main:closed",
+        "MA-DS04:R3:normal-end",
+        "MA-DS04:B3:main:closed",
+        "MA-DS04:B3:normal-end",
+        "MA-DS04:B3:pre-1:observation",
+        "MA-DS04:R4:main:closed",
+        "MA-DS04:R4:normal-end",
+        "MA-DS04:B4:main:closed",
+        "MA-DS04:B4:normal-end",
+        "MA-DS04:B4:pre-1:observation",
+        "MA-DS05:R1:main:closed",
+        "MA-DS05:R1:normal-end",
+        "MA-DS05:B1:main:closed",
+        "MA-DS05:B1:normal-end",
+        "MA-DS05:R2:main:closed",
+        "MA-DS05:R2:normal-end",
+        "MA-DS05:B2:main:closed",
+        "MA-DS05:B2:normal-end",
+        "MA-DS05:R3:main:closed",
+        "MA-DS05:R3:normal-end",
+        "MA-DS05:B3:main:closed",
+        "MA-DS05:B3:normal-end",
+        "MA-DS05:R4:main:closed",
+        "MA-DS05:R4:normal-end",
+        "MA-DS05:B4:main:closed",
+        "MA-DS05:B4:normal-end",
+        "MA-DS05:R5:main:closed",
+        "MA-DS05:R5:normal-end",
+        "MA-DS05:B5:main:closed",
+        "MA-DS05:B5:normal-end",
+        "MA-DS05:B5:pre-1:observation",
+        "MA-DS05:R6:main:closed",
+        "MA-DS05:R6:normal-end",
+        "MA-DS05:B6:main:closed",
+        "MA-DS05:B6:normal-end",
+        "MA-DS05:R7:main:closed",
+        "MA-DS05:R7:normal-end",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "remaining_obligations": [
+        "full royal-response/terminal/clock/privacy/adjudication sampling and whole-mode acceptance not established"
+      ],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S05",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD01:R3:normal-end"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S07",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD02:R4:main:closed",
+        "MA-PD02:B4:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S11",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD03:R5:main:closed",
+        "MA-PD03:B5:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S12",
+      "repair_contract_ids": [
+        "HC-SAFE-03",
+        "HC-SAFE-04"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05",
+        "EI07"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD03:R6:main:closed",
+        "MA-PD03:B6:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [
+        "Royal-leg threat is source reasoning, not a declared alternate horse request."
+      ],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S15",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD03:R5:main:closed",
+        "MA-PD03:B5:main:closed",
+        "MA-PD03:R6:main:closed",
+        "MA-PD03:B6:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S17",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD04:R1:main:closed",
+        "MA-PD04:R2:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [
+        "Forbidden premature royal-threat query/command is not a declared negative stimulus."
+      ],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S20",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD04:R5:main:closed",
+        "MA-PD04:B5:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S26",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD06-A:B1:main:closed",
+        "MA-PD06-A:B2:main:closed",
+        "MA-PD06-A:B3:main:closed",
+        "MA-PD06-B:B1:main:closed",
+        "MA-PD06-B:B2:main:closed",
+        "MA-PD06-B:B3:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S30",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-B:R4:main:closed"
+      ],
+      "remaining_obligations": [],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    },
+    {
+      "spec_id": "PD-S36",
+      "repair_contract_ids": [
+        "HC-SAFE-03"
+      ],
+      "original_static_finding_ids": [
+        "EI01",
+        "EI04",
+        "EI05"
+      ],
+      "original_checkpoint_ids": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD01:R3:normal-end",
+        "MA-PD02:R5:main:closed",
+        "MA-PD02:R5:normal-end",
+        "MA-PD03:B5:main:closed",
+        "MA-PD03:B6:main:closed",
+        "MA-PD03:R7:main:closed",
+        "MA-PD03:R7:normal-end",
+        "MA-PD04:R5:main:closed",
+        "MA-PD04:B5:main:closed",
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-A:R4:normal-end",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD05-B:R4:normal-end",
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-A:R4:normal-end",
+        "MA-PD06-B:R4:main:closed",
+        "MA-PD06-B:R4:normal-end"
+      ],
+      "remaining_obligations": [
+        "complete royal-response/terminal search and full-mode implementation are outside this minimum"
+      ],
+      "missing_stimuli_or_natural_cases": [],
+      "runtime_status": "UNRUN",
+      "actual_evidence": []
+    }
+  ],
+  "observation_reuse": {
+    "source": "worklines/half_chaos/PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json",
+    "boundary_ids": [
+      "OBS-MAIN-CLOSED",
+      "OBS-END-CLOSED",
+      "OBS-D01-ACCEPTED",
+      "OBS-D01-REFUSED"
+    ],
+    "declared_checkpoint_count": 210,
+    "group_counts": [
+      100,
+      100,
+      6,
+      4
+    ],
+    "hooks_created": 0,
+    "evidence_rule": "所有边界仍候选；不把preflight副本事件当实际提交或玩家输出。拒绝在原真实请求前/同步结果后、driver显式tick前比较；超时可能实际改终局，须先按原分流认定，不能当受将拒绝副作用。"
+  },
+  "shared_owner_questions": [
+    {
+      "id": "HC-SAFE-Q01",
+      "owner": "main",
+      "decision_needed": "核WP03共用来源计划/完整闭合/一次承诺边界及与实际move/hero/room路径的关系；不选第二规则执行器，不用deferTurnEnd替代普通主行动。",
+      "status": "DOCUMENT_QUESTION_PENDING_SHARED_REVIEW_NO_IMPLEMENTATION_APPROVAL"
+    },
+    {
+      "id": "HC-SAFE-Q02",
+      "owner": "main",
+      "decision_needed": "核真实权威消灭批次闭合证明与WeakMap外部上下文，以及预检随机/死亡资源/观察/时钟副作用隔离；克隆通过检查不证明原上下文闭合，不批准通用重跑。",
+      "status": "DOCUMENT_QUESTION_PENDING_SHARED_REVIEW_NO_IMPLEMENTATION_APPROVAL"
+    },
+    {
+      "id": "HC-SAFE-Q03",
+      "owner": "main",
+      "decision_needed": "核原确认存活双王/无独立终局guard的可用安全判定、未知分支和完整搜索归属；不以未知作安全或无应对，不批准关闭安全检查。",
+      "status": "DOCUMENT_QUESTION_PENDING_SHARED_REVIEW_NO_IMPLEMENTATION_APPROVAL"
+    },
+    {
+      "id": "HC-SAFE-Q04",
+      "owner": "main",
+      "decision_needed": "核受将拒投与原成员/版本/窗口/超时/去重检查顺序、原错误形态及失败ID处理；不要由本线发明码、优先级或原样重传保障。",
+      "status": "DOCUMENT_QUESTION_PENDING_SHARED_REVIEW_NO_IMPLEMENTATION_APPROVAL"
+    },
+    {
+      "id": "HC-SAFE-Q05",
+      "owner": "main",
+      "decision_needed": "核M01/M04实际路径/防御返回/落位结果的安全oracle与马腿合法路线共享条件；M01通用修复结论仍须合法最小差异证据，原PD03不能单例证明。",
+      "status": "DOCUMENT_QUESTION_PENDING_SHARED_REVIEW_NO_IMPLEMENTATION_APPROVAL"
+    }
+  ],
+  "remaining": {
+    "all_original_game_specs": "UNRUN",
+    "ready_replays": 0,
+    "executed_replays": 0,
+    "unchanged_blockers": [
+      "EI01",
+      "EI04",
+      "EI06",
+      "OG01",
+      "OG02",
+      "OG03",
+      "OG04",
+      "OG05",
+      "OG06",
+      "OG07"
+    ],
+    "explicit_natural_or_negative_gaps": [
+      "PD-S31",
+      "PD-S32",
+      "DS-S16",
+      "DS-S22"
+    ],
+    "other_undeclared_stimuli": {
+      "PD-S02": [
+        "No separate empty-target/two-path negative command; existing positive geometry alone does not execute those branches."
+      ],
+      "PD-S12": [
+        "Royal-leg threat is source reasoning, not a declared alternate horse request."
+      ],
+      "PD-S17": [
+        "Forbidden premature royal-threat query/command is not a declared negative stimulus."
+      ],
+      "PD-S35": [
+        "No explicit duplicate transport or conflicting actor/payload stimulus."
+      ],
+      "DS-S01": [
+        "No preparation-time player-view checkpoint before first move."
+      ],
+      "DS-S06": [
+        "Alternate ordinary rook evasion is source reasoning; main actually chosen is different."
+      ],
+      "DS-S12": [
+        "No same-command transport retransmission or actor/payload conflict stimulus."
+      ],
+      "DS-S20": [
+        "No post-main bomb resubmission stimulus to exercise refusal after window closure."
+      ]
+    },
+    "exclusions": [
+      "不新增第三英雄/第二畸变/中盘注入/秘密提示或新回放刺激",
+      "不批准完整将死搜索、独立终局、源序、层级、压力/正式采样/重复键或通用回溯恢复",
+      "不恢复H15旧吞机会推荐；非安全差异仍按当前有效确认，不借本合同背书现有整分支",
+      "客户端/传输/全可见通道、协议原样重传与同ID冲突仍缺真实证据"
+    ]
+  },
+  "stop_conditions": [
+    "源HEAD/相关blob、原确认或数据变化时先保护增量并复核，不盲套旧源",
+    "来源guard/真实批次闭合或副作用隔离未知，保留对应阻断交主线；其余独立文档继续",
+    "未来实际拒绝/终局/版本冲突或结果偏差按原请求停，不跳动作或注入状态补前缀",
+    "未到语义边界或只有模拟/内部证据不记实际完整覆盖",
+    "写回仅本线，其他线并发对象完整保留，不代填接收回执"
+  ],
+  "verification": {
+    "status": "OFFLINE_DOCUMENT_IDENTITY_REFERENCE_AND_SOURCE_ORDER_CHECKS_ONLY",
+    "checks": {
+      "original6_identity_and_bytes_match_remote_tree": true,
+      "confirmations_wp01_wp02_unchanged": true,
+      "four_findings_exact_original_spec_routes": true,
+      "ten_skill_declarations_exact_and_all_UNRUN": true,
+      "expected_only_six_accepted_four_refused": true,
+      "no_new_game_spec_or_request": true,
+      "historical_working_sections_preserved": true,
+      "all64_UNRUN": true
+    },
+    "source_findings": {
+      "EI02": 17,
+      "EI03": 11,
+      "EI05": 10,
+      "EI07": 1
+    },
+    "union_original_specs": 34,
+    "skill_requests": 10,
+    "expected_accepted": 6,
+    "expected_refused": 4,
+    "new_game_specs": 0,
+    "business_code_changes": 0,
+    "business_repo_writes": 0,
+    "engine_imports": 0,
+    "engine_runs": 0,
+    "new_hooks": 0,
+    "all64": "UNRUN",
+    "independent_review": false,
+    "runtime_passed_specs": 0
+  },
+  "limitation_audit": {
+    "risk_level": "high_future_fact_source_reversible_document_only",
+    "known_facts": [
+      "原两项确认已明确完整安全/受将拒投语义与有限guard",
+      "固定源D01未见上述相应门槛，简化move模拟缺实际路径/防御后续；静态核对而非运行失败",
+      "开放消灭批次使用外部WeakMap，状态克隆不能证明原批次闭合",
+      "mainWP03仍待复核，用户下一步仅本阶段文档接续"
+    ],
+    "claim_register": [
+      {
+        "claim": "固定源码的缺口、WeakMap与潜在随机调用位置",
+        "type": "document_fact",
+        "verification": "V2注明函数/原确认文本对照，未运行"
+      },
+      {
+        "claim": "隔离计划/一次提交与七类不变量可作共享复核入口",
+        "type": "ai_inference",
+        "verification": "V1同一AI合同建议，非已选实现或独立证明"
+      },
+      {
+        "claim": "34原义务关联及10原技能声明保持预期/未运行",
+        "type": "document_fact",
+        "verification": "V2固定JSON引用/身份机械核对，不评估游戏断言"
+      }
+    ],
+    "assumptions": [
+      "主线未来能提供共用闭合与副作用隔离边界；当前无保证"
+    ],
+    "unknowns": [
+      "可用权威批次证明/随机资源上下文接口",
+      "完整威胁/终局搜索、错误/超时/去重的共享顺序",
+      "M01最小自然差异证据与真实玩家可见协议"
+    ],
+    "competing_explanations": [
+      "固定后续源码可能已修复，实际新源优先",
+      "原PD03两公式可同判，不能从公式差异直接断言该例失败"
+    ],
+    "falsification_conditions": [
+      "安全结果仍遗漏已承诺后续或使用不合法落点",
+      "预检改实际state/secret/RNG/clock或克隆绕外部批次检查",
+      "二次跑执行器与所审计划结果不一致",
+      "既有义务/缺刺激被删除或UNRUN无证改PASS"
+    ],
+    "verification_status": "partial_V2_sources_V1_contract_no_runtime_or_independent_verification",
+    "action_boundary": "只写本线文档；不改业务/运行/加hook/门禁",
+    "residual_risk": "同一AI的来源阅读与推理可能共享误解；文本引用和公式不能证明运行安全或完整隐私",
+    "next_validation_action": "主线核HC-SAFE-Q01—05；本线下一步WP04证据文档细化"
+  },
+  "scoring_frozen": true,
+  "NET": "paused",
+  "next_task": {
+    "id": "NEXT-HC-DELIVERY-EVIDENCE-CONTRACT-REFINEMENT",
+    "status": "NOT_STARTED_DOCUMENT_ONLY",
+    "action": "结合最新主线实际回复，细化WP04实际死亡与复活前历史、红黑真实玩家输出、同状态新请求/原样重传/同ID冲突的证据文档合同；保留原缺刺激与客户端/传输未核边界，不添加回放命令、不改业务、不导入运行、不绕门禁。"
+  },
+  "prepublication_concurrent_standard": {
+    "source_baseline": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "publication_parent": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
+    "changed_paths": [
+      "worklines/standard/CONFIRMATION_REGISTER.json",
+      "worklines/standard/CURRENT_STATE.json",
+      "worklines/standard/NEXT_ACTIONS.json",
+      "worklines/standard/PENDING_DECISION.json",
+      "worklines/standard/PENDING_ITEMS.json",
+      "worklines/standard/PUBLISHED_FILES.json",
+      "worklines/standard/READ_RECEIPTS.json",
+      "worklines/standard/RETURN_TO_MAIN.json",
+      "worklines/standard/SOURCE_PRIORITY.json",
+      "worklines/standard/START_HERE.txt",
+      "worklines/standard/modes/standard/CURRENT_RULES.md",
+      "worklines/standard/modes/standard/CURRENT_STATE.json",
+      "worklines/standard/reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+      "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+      "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md"
+    ],
+    "own_targets_unchanged": true,
+    "main_reply_and_collaboration_unchanged": true,
+    "current_shared03_blob": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+    "current_shared02_blob": "fad0dcf16e35014cb64ca14ee14d30a8616049a3",
+    "new_confirmation": {
+      "path": "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "git_blob_sha": "376361b461387f5e9fdf62657575e210e53eabf4",
+      "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019"
+    },
+    "actual_reading": "standard最新入口顶部状态、原确认ID/结构元数据，shared03完整新增H02段差分；未读shared02新增完整guard及原确认完整policy，不作政策消费",
+    "source_comparison": "shared03相对来源基准仅增加H02发动步终点单龙鳞段；本轮采用的既有M01/M04普通路径安全段与D01相关正文逐字未变。shared02只核容器blob变化，不声称全文读取。",
+    "effect_on_original12": "no H02/H21; no new gameplay approval consumption or data changes; existing safety contracts unchanged",
+    "other_line_blobs_preserved": true
+  }
+}

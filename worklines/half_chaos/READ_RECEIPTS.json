@@ -678,11 +678,11 @@
     }
   },
   "own_line_continuation": {
-    "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
-    "prior_closeout": "c87afd94384322663dbf6cb9a0f4823ed5992e98",
-    "current_stage": "HC-DESIGN-03-20261019-r32",
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "current_stage": "HC-DESIGN-03-20261019-r33",
     "unreturned_local_work_found": false,
-    "resume": "same dialogue after explicit2026-10-19 user request"
+    "scope": "r32 staged published files and immutable references checked against actual remote; new r33 staged separately",
+    "new_instruction": "同意进行下一步，仅WP03文档接续"
   },
   "main_receipt_recheck": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -2136,6 +2136,156 @@
     "shared_body_and_main_reply_unchanged": true,
     "actual_reading": "standard current entry header only; latest endpoint candidate metadata pending, no full candidate/review/source adoption",
     "effect_on_original12": "none: no H02/H21; no new shared gameplay adoption",
+    "other_line_blobs_preserved": true
+  },
+  "r33_safety_repair_contract_source_review": {
+    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "original_confirmations": [
+      {
+        "id": "CONF-THREE-MODE-D01-HOURGLASS-CHECK-SAFETY-20261016",
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "sha256": "c3af07c48977a345d5900f6d8745940e4fdf3ae6151a368612f3155c92bfdac4",
+        "size_bytes": 4312,
+        "chars": 4104,
+        "read_scope": "完整原确认及原问题/用户答复/限制；继承有效确认，不是本轮新增批准"
+      },
+      {
+        "id": "CONF-THREE-MODE-D01-BOMB-IN-CHECK-GATE-20261016",
+        "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+        "commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+        "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+        "sha256": "d44c4e338061faa407164a55c09ffdf95932f4be67998bb4c7b6a779940bdad5",
+        "size_bytes": 3683,
+        "chars": 3515,
+        "read_scope": "完整原确认及原问题/用户答复/限制；继承有效确认，不是本轮新增批准"
+      }
+    ],
+    "engine_sources": [
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "path": "src/rules.ts",
+        "git_blob_sha": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+        "sha256": "a19b0cc9d5b14a5c9fe01fdeabeab75f798b99f3747d62094158d3245fc99d1f",
+        "size_bytes": 20254,
+        "chars": 19342,
+        "actual_read_scope": "完整canRevealedPieceAttack/isSquareAttacked/isGeneralInCheck/simulatePublicMove/validatePublicMove及所需目标/走法相邻段；不称完整王安全/全应将搜索审计"
+      },
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "path": "src/game.ts",
+        "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+        "sha256": "51c5fcb331d4389c755e4180fb658064514db253d26906c90ddd4ba8166d0dd4",
+        "size_bytes": 44628,
+        "chars": 43116,
+        "actual_read_scope": "完整finishDirectDeaths/finishAfterPlayerAction/applyAuthoritativeMove及正常/防御返回路径；其他英雄/强迫来源非本轮完整审计"
+      },
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "path": "src/hero-actions.ts",
+        "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+        "sha256": "57a59973a33109553a83d615849fe9bb2ccb75af589fd80eaa3bccda51e6b57d",
+        "size_bytes": 23032,
+        "chars": 21576,
+        "actual_read_scope": "applyHeroAbility入口、完整hourglass/bomb分支与公共尾部；其他switch分支不采用"
+      },
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "path": "src/settlement.ts",
+        "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+        "sha256": "248a380ae11410f3990b13e6b9fd4033a576c4b4ea9244019b67329a2a18fd94",
+        "size_bytes": 30579,
+        "chars": 28699,
+        "actual_read_scope": "沿用r32完整settleLandings/closeDirectDeaths/beginFormalTurn/advanceToFormalTurn/finishFormalTurn的同blob阅读；本轮重核closeDirectDeaths与全局随机调用，不声称全文件审计"
+      },
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "path": "src/settlement-context.ts",
+        "git_blob_sha": "58052bee1c08392f887fbf1e7f1ec7501c2d8cf4",
+        "sha256": "b09b0631910845f78e8a9c40fc72177e05484e8e167dc51145b50a94d96355c4",
+        "size_bytes": 557,
+        "chars": 449,
+        "actual_read_scope": "完整文件：外部WeakMap与requireClosedDestructionBatch"
+      },
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "path": "src/hero-progress.ts",
+        "git_blob_sha": "5edea5f9c620b1eb35127ff7b146b1f84662f6dc",
+        "sha256": "282b08429b2b5b1fb18497efd35439c7f19d04d004b88ac4e3f625465209769c",
+        "size_bytes": 5980,
+        "chars": 5804,
+        "actual_read_scope": "selectTraining/settleTrainingDeaths/settleHeroDeathResources/advanceTraining等完整相关函数；只核副作用来源，不采用H15旧成本策略"
+      },
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "path": "src/remote-room.ts",
+        "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+        "sha256": "8801cc07ddf3943c05e0a69f8f0a32ec065915ff58aecccffd0299e53b87e05c",
+        "size_bytes": 58791,
+        "chars": 57411,
+        "actual_read_scope": "沿用r32同blob完整expiredFormalAction/submitRemoteHeroAbility/submitRemoteMove及请求返回分流；本轮重核D01外层，不声称客户端或协议全通道审计"
+      }
+    ],
+    "shared_source": {
+      "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+      "commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+      "git_blob_sha": "ae5e1b0ef17c57b71fac4c73a634a89ce57b34b3",
+      "sha256": "e4b9aed93dc9db0c53f4746e8514954a43e97cd1f6ea9847e74fc70c891bdc7e",
+      "size_bytes": 28466,
+      "chars": 11474,
+      "adopted_read_scope": "M01/M04既有路径安全段与D01核心六步/王安全/受将投弹相关段；H02新章仅存在元数据，不消费其全文政策，无H02/H21加入原12"
+    },
+    "read_scope": [
+      "本线r32完整WP02合同/§0/8.56、WP03原工作包与§8.40/8.42相关全文、有效范围确认",
+      "主线current_shared_scope_request_queue实际3对象及当前入口状态，未重审整份main正文",
+      "协作v0.13适用完整模块及原本线工作约定沿用；未消费新H02政策",
+      "原10技能声明、34安全相关矩阵路由机械核对；非新增全前缀证明"
+    ],
+    "new_gameplay_confirmation_consumption": 0,
+    "other_receiver_receipts_written": false
+  },
+  "r33_prepublication_concurrent_standard": {
+    "source_baseline": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "publication_parent": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
+    "changed_paths": [
+      "worklines/standard/CONFIRMATION_REGISTER.json",
+      "worklines/standard/CURRENT_STATE.json",
+      "worklines/standard/NEXT_ACTIONS.json",
+      "worklines/standard/PENDING_DECISION.json",
+      "worklines/standard/PENDING_ITEMS.json",
+      "worklines/standard/PUBLISHED_FILES.json",
+      "worklines/standard/READ_RECEIPTS.json",
+      "worklines/standard/RETURN_TO_MAIN.json",
+      "worklines/standard/SOURCE_PRIORITY.json",
+      "worklines/standard/START_HERE.txt",
+      "worklines/standard/modes/standard/CURRENT_RULES.md",
+      "worklines/standard/modes/standard/CURRENT_STATE.json",
+      "worklines/standard/reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+      "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+      "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md"
+    ],
+    "own_targets_unchanged": true,
+    "main_reply_and_collaboration_unchanged": true,
+    "current_shared03_blob": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+    "current_shared02_blob": "fad0dcf16e35014cb64ca14ee14d30a8616049a3",
+    "new_confirmation": {
+      "path": "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "git_blob_sha": "376361b461387f5e9fdf62657575e210e53eabf4",
+      "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019"
+    },
+    "actual_reading": "standard最新入口顶部状态、原确认ID/结构元数据，shared03完整新增H02段差分；未读shared02新增完整guard及原确认完整policy，不作政策消费",
+    "source_comparison": "shared03相对来源基准仅增加H02发动步终点单龙鳞段；本轮采用的既有M01/M04普通路径安全段与D01相关正文逐字未变。shared02只核容器blob变化，不声称全文读取。",
+    "effect_on_original12": "no H02/H21; no new gameplay approval consumption or data changes; existing safety contracts unchanged",
     "other_line_blobs_preserved": true
   }
 }

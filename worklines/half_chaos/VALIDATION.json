@@ -1,8 +1,8 @@
 {
-  "revision": "HC-DESIGN-03-20261019-r32",
-  "source_commit": "bdaa67d94d0e789b2b36af8aceab482a5ad62257",
-  "publication_parent_commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
-  "scope": "r32 passive-observation contract/reference and unchanged input identities; no gameplay assertion",
+  "revision": "HC-DESIGN-03-20261019-r33",
+  "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+  "publication_parent_commit": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
+  "scope": "r33 safety-repair source/identity/reference and unchanged inputs; no gameplay assertion",
   "matrix_file": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
   "data_sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b",
   "summary": {
@@ -204,7 +204,7 @@
     "publication_parent_commit": "fcb5ff7740206da6b56ac3436b9591a943cffd7b",
     "scope": "finite64 obligation evidence matrix / external scoped confirmation; documentation-only"
   },
-  "limitation_audit_reference": "PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json#/limitation_audit",
+  "limitation_audit_reference": "SAFETY_REPAIR_CONTRACT_PROPOSAL.json#/limitation_audit",
   "previous_matrix_limitation_audit": {
     "audit_trigger": "finite source/data evidence matrix and scoped shared confirmation maintenance",
     "risk_level": "high",
@@ -417,6 +417,89 @@
     "shared_body_and_main_reply_unchanged": true,
     "actual_reading": "standard current entry header only; latest endpoint candidate metadata pending, no full candidate/review/source adoption",
     "effect_on_original12": "none: no H02/H21; no new shared gameplay adoption",
+    "other_line_blobs_preserved": true
+  },
+  "r33_safety_contract_checks": {
+    "status": "OFFLINE_DOCUMENT_CHECKS_COMPLETED",
+    "proposal": {
+      "path": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+      "task_completed": "NEXT-HC-SAFETY-REPAIR-CONTRACT-REFINEMENT",
+      "status": "DOCUMENT_PROPOSAL_PREPARED_NOT_IMPLEMENTED_OR_TECHNICALLY_APPROVED",
+      "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+      "working_section": "8.57",
+      "git_blob_sha": "f00098fa47f066cd29c64e1bb62f206dfc6acd76",
+      "sha256": "1b8936ff63494fa8669e5a451d5d80e4beedd527bcdd974e39c4923bc897227f",
+      "size_bytes": 67506,
+      "chars": 56945
+    },
+    "checks": {
+      "original6_identity_and_bytes_match_remote_tree": true,
+      "confirmations_wp01_wp02_unchanged": true,
+      "four_findings_exact_original_spec_routes": true,
+      "ten_skill_declarations_exact_and_all_UNRUN": true,
+      "expected_only_six_accepted_four_refused": true,
+      "no_new_game_spec_or_request": true,
+      "historical_working_sections_preserved": true,
+      "all64_UNRUN": true
+    },
+    "static_finding_counts": {
+      "EI02": 17,
+      "EI03": 11,
+      "EI05": 10,
+      "EI07": 1
+    },
+    "union_original_specs": 34,
+    "skill_requests": 10,
+    "expected_accepted": 6,
+    "expected_refused": 4,
+    "new_game_commands": 0,
+    "engine_imports": 0,
+    "engine_runs": 0,
+    "business_repo_writes": 0,
+    "new_hooks": 0,
+    "all64": "UNRUN",
+    "independent_review": false,
+    "fresh_parent_protection": {
+      "actual_parent": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
+      "own_targets_unchanged": true,
+      "shared03_relevant_sections_unchanged": true,
+      "all_other_line_blobs_retained_from_parent_tree": true
+    }
+  },
+  "r33_prepublication_concurrent_standard": {
+    "source_baseline": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "publication_parent": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
+    "changed_paths": [
+      "worklines/standard/CONFIRMATION_REGISTER.json",
+      "worklines/standard/CURRENT_STATE.json",
+      "worklines/standard/NEXT_ACTIONS.json",
+      "worklines/standard/PENDING_DECISION.json",
+      "worklines/standard/PENDING_ITEMS.json",
+      "worklines/standard/PUBLISHED_FILES.json",
+      "worklines/standard/READ_RECEIPTS.json",
+      "worklines/standard/RETURN_TO_MAIN.json",
+      "worklines/standard/SOURCE_PRIORITY.json",
+      "worklines/standard/START_HERE.txt",
+      "worklines/standard/modes/standard/CURRENT_RULES.md",
+      "worklines/standard/modes/standard/CURRENT_STATE.json",
+      "worklines/standard/reviews/H02_M04_ENDPOINT_DRAGON_SCALE_SOURCE_REVIEW_20261019.md",
+      "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+      "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+      "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md"
+    ],
+    "own_targets_unchanged": true,
+    "main_reply_and_collaboration_unchanged": true,
+    "current_shared03_blob": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+    "current_shared02_blob": "fad0dcf16e35014cb64ca14ee14d30a8616049a3",
+    "new_confirmation": {
+      "path": "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "git_blob_sha": "376361b461387f5e9fdf62657575e210e53eabf4",
+      "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019"
+    },
+    "actual_reading": "standard最新入口顶部状态、原确认ID/结构元数据，shared03完整新增H02段差分；未读shared02新增完整guard及原确认完整policy，不作政策消费",
+    "source_comparison": "shared03相对来源基准仅增加H02发动步终点单龙鳞段；本轮采用的既有M01/M04普通路径安全段与D01相关正文逐字未变。shared02只核容器blob变化，不声称全文读取。",
+    "effect_on_original12": "no H02/H21; no new gameplay approval consumption or data changes; existing safety contracts unchanged",
     "other_line_blobs_preserved": true
   }
 }
