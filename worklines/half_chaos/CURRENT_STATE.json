@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-DESIGN-03-20261020-r34",
+  "revision": "HC-DESIGN-03-20261020-r35",
   "workline": "half_chaos",
   "date_local": "2026-10-20",
   "timezone": "Asia/Shanghai",
-  "status": "wp04_delivery_evidence_document_prepared_all64_unrun",
+  "status": "wp05_document_complete_all64_unrun",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -128,9 +128,9 @@
     "full_chat_export_recovered": false
   },
   "completed_this_round": [
-    "实际读取根/本线入口、current/main/collaboration适用源与最新HEAD；保护r33、r5和其他线成果",
-    "完成WP04三份证据边界的一份独立文档合同，原OG04/05/06共13关联去重11个既有规格",
-    "原三组/12、原64UNRUN及全部旧合同/确认不改；下一WP05缺证文档"
+    "从r34与GitHub实际最新HEAD保护普通线并发成果，定位原WP05/矩阵和主线受理范围",
+    "完成WP05四项自然或完整负例缺口、八项未声明刺激及五类共享待核合同；旧64规格/12回放/210点未改",
+    "五个工作包文档均已形成，但无产品实现/运行/独立验收；下一工程就绪核查仍仅文档"
   ],
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": 0,
@@ -177,7 +177,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT（WP05）：细化PD-S31/32、DS-S16/22及原未声明刺激/共享搜索与终局缺口，仅文档；不新增命令、代码、hook、运行或门禁。",
+  "next_action": "NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW：先等主线实际核收WP01—05技术边界、未决共享和执行前置；仅文档/源核查，未授权代码/引擎/门禁。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -2322,5 +2322,33 @@
     "runtime": false,
     "main_received": null,
     "main_adopted": null
-  }
+  },
+  "wp05": {
+    "revision": "HC-DESIGN-03-20261020-r35",
+    "proposal": "RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json",
+    "major_missing": [
+      "PD-S31",
+      "PD-S32",
+      "DS-S16",
+      "DS-S22"
+    ],
+    "additional_missing_stimuli": [
+      "PD-S02",
+      "PD-S12",
+      "PD-S17",
+      "PD-S35",
+      "DS-S01",
+      "DS-S06",
+      "DS-S12",
+      "DS-S20"
+    ],
+    "design_packages_documented": 5,
+    "original_specs": 64,
+    "ready_replays": 0,
+    "executed_replays": 0,
+    "technology_approval": false,
+    "main_received": null,
+    "main_adopted": null
+  },
+  "completion_estimate_boundary": "Five document packages prepared is not gameplay completion percentage. 64/64 UNRUN, 12/12 unexecuted and seven execution gate categories pending. No reliable delivery date; depends on main approvals, actual engineering/test runs and failures."
 }
