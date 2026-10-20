@@ -1,0 +1,284 @@
+{
+  "schema": "lezi.hc.engineering_readiness_review.v1",
+  "revision": "HC-DESIGN-03-20261020-r36",
+  "task": "NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW",
+  "result": "DOCUMENT_REVIEW_COMPLETE_TECHNICAL_SCOPE_NOT_AUTHORIZED",
+  "source_head_at_read": "063bc1c371878bce7ff1d2a866cbfec1996c3ed2",
+  "date_local": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "user_scope": "用户说‘怎么样都可以，反正一步一步做吧，原本的计划是怎么做呢？我觉得没关系，做吧，做吧’，继承本线既有同范围设计、只读来源、交接写回授权。本轮未把泛化继续解释为新规则/跨模式共享接口、代码变更、运行或门禁解除的确定授权。",
+  "baseline": {
+    "game_rules": "原半混乱及明确适用的共享确认原封保留",
+    "work_packages": [
+      "WP01限定准入文档完成",
+      "WP02被动观察文档完成",
+      "WP03原确认安全修复合同完成",
+      "WP04证据分层文档完成",
+      "WP05自然/负例缺口文档完成"
+    ],
+    "validation": {
+      "existing_specs": 64,
+      "planned_replays": 12,
+      "planned_first_pilots": [
+        "MA-PD01",
+        "MA-DS03",
+        "MA-DS04"
+      ],
+      "executed": 0,
+      "passed_specs": 0,
+      "run_ready": 0,
+      "existing_declared_checkpoints": 210
+    },
+    "freeze": {
+      "scoring": true,
+      "NET": "paused",
+      "featuresReady": false
+    },
+    "source_review": {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "pinned_branch": "codex/half-chaos-h11-b-clock-20261012",
+      "pinned_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "not_product_default": true
+    }
+  },
+  "actual_git_source_differences": {
+    "review_date": "2026-10-20",
+    "pinned_branch_verified_blobs": [
+      {
+        "path": "src/modes.ts",
+        "sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc"
+      },
+      {
+        "path": "src/research-source-context.ts",
+        "sha": "01aa06251a9d76dca075a8899a3530ab0f47d0f2"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "sha": "c67b12dd0222d96ef685278c5fbfae32428909d5"
+      },
+      {
+        "path": "src/mechanism-observer.ts",
+        "sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81"
+      },
+      {
+        "path": "src/rules.ts",
+        "sha": "bf2fc6448b161458de03891e140cad9f76d3e03f"
+      }
+    ],
+    "default_branch_observed": [
+      {
+        "path": "src/modes.ts",
+        "observation": "404/not found using repository default; not proof never existed"
+      },
+      {
+        "path": "src/research-source-context.ts",
+        "observation": "404/not found using repository default"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "sha": "5c1ae0f8ed3afe01516b95e2ab1a757c90886c3e",
+        "differs_from_review_branch": true
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "observation": "404/not found using repository default"
+      },
+      {
+        "path": "src/mechanism-observer.ts",
+        "observation": "404/not found using repository default"
+      },
+      {
+        "path": "src/rules.ts",
+        "sha": "f5a48a65a9365b085398ebec7912dccb9067d169",
+        "differs_from_review_branch": true
+      }
+    ],
+    "open_engine_pr_metadata": [
+      {
+        "number": 6,
+        "title": "普通象棋与半混乱揭棋限定接入及独立模式验收",
+        "state": "open_draft",
+        "last_updated": "2026-10-11"
+      },
+      {
+        "number": 7,
+        "title": "半混乱 H11-B：选择窗口倒计时与正式计数验收",
+        "state": "open_draft",
+        "last_updated": "2026-10-12"
+      }
+    ],
+    "not_verified": [
+      "全PR diff和依赖PR merge base没有本轮完整阅读",
+      "默认分支缺文件不能以为相关设计不存在",
+      "本轮核对六个代表性路径的blob，没有开展全库/CI/产品构建核验"
+    ]
+  },
+  "owner_and_adoption": {
+    "main_source": {
+      "path": "worklines/main/SHARED_COORDINATION.json",
+      "blob_sha": "029c63b7a4c7331e1ec80c1b852a4ad37836e630"
+    },
+    "main_actual_receipt": "r30有限五包提案及WP01—03源范围 received_deferred，未授权代码/准入/观察/运行",
+    "later_wp01_wp05_main_adoption": "UNKNOWN_NOT_EVIDENCED",
+    "rule_pending": [
+      {
+        "topic": "EI06 特殊路径与H16/H05技能层级",
+        "owner": "main",
+        "stop": "不把已有代码tier2当玩法确认"
+      },
+      {
+        "topic": "完整应将、独立终局、实际原子顺序",
+        "owner": "main",
+        "stop": "不能只靠简化simulatePublicMove宣称完整合法"
+      },
+      {
+        "topic": "完整重复键/压力/时钟正式采样",
+        "owner": "main",
+        "stop": "离线证据不是生产裁判历史"
+      },
+      {
+        "topic": "H15/H06毕业跨越与奖励",
+        "owner": "main",
+        "stop": "原12不含该分支；保留原先有限确认"
+      },
+      {
+        "topic": "真实客户端输出/错误封装/隐私",
+        "owner": "main/ui",
+        "stop": "原始roomView不当作客户端通道全验"
+      }
+    ]
+  },
+  "three_confirmed_scope_tuples": [
+    {
+      "id": "HC-ADM-PD-M04",
+      "mode": "half_chaos",
+      "red": "H04",
+      "black": "H03",
+      "mutation": "M04",
+      "engine_red": "qin_long",
+      "engine_black": "warrior",
+      "engine_mutation": "war_chariot",
+      "status": "CONFIRMED_VALIDATION_PLAN_ONLY_NOT_ADMITTED"
+    },
+    {
+      "id": "HC-ADM-PD-M01",
+      "mode": "half_chaos",
+      "red": "H04",
+      "black": "H03",
+      "mutation": "M01",
+      "engine_red": "qin_long",
+      "engine_black": "warrior",
+      "engine_mutation": "iron_steed",
+      "status": "CONFIRMED_VALIDATION_PLAN_ONLY_NOT_ADMITTED"
+    },
+    {
+      "id": "HC-ADM-DS-D01",
+      "mode": "half_chaos",
+      "red": "H06",
+      "black": "H05",
+      "mutation": "D01",
+      "engine_red": "nozdormu",
+      "engine_black": "murozond",
+      "engine_mutation": "end_time",
+      "status": "CONFIRMED_VALIDATION_PLAN_ONLY_NOT_ADMITTED"
+    }
+  ],
+  "recommended_order": [
+    {
+      "id": "ENG-00",
+      "action": "固定review分支/PR6+PR7/源码树与业务依赖",
+      "owner": "half_chaos can prepare source diff only",
+      "ready_for": "DOCUMENT_SOURCE_REVIEW",
+      "safety": "不改默认分支、不合并、不迁移源码；读取真实PR变更、基础源码和相关差异，形成最小差分映射"
+    },
+    {
+      "id": "ENG-01",
+      "action": "限定研究准入与严格three-tuple actor/room/version/source capability",
+      "owner": "main shared + half_chaos adapter",
+      "ready_for": "DOCUMENT_REVIEW_ONLY",
+      "safety": "保留产品featuresReady=false与既有非本批模式拒绝、真实房间/双方身份、自然合法初始化、原抽样；不得直接扩白名单"
+    },
+    {
+      "id": "ENG-02",
+      "action": "已确认安全修复的共用闭合计划及拒绝副作用",
+      "owner": "main shared source",
+      "ready_for": "REQUIRES_TECHNICAL_APPROVAL",
+      "safety": "D01沙漏六步完整闭合后核王安全；受将投弹拒绝；M01/M04真实路径与王安全/M01马腿差异；不批完整终局重写"
+    },
+    {
+      "id": "ENG-03",
+      "action": "受控只读被动观察、死亡证据、双玩家可见通道与协议误差分类",
+      "owner": "main+half_chaos+UI actual output",
+      "ready_for": "REQUIRES_TECHNICAL_APPROVAL",
+      "safety": "不读时钟或随机推进，不能把旧formal_main/end事件冒充闭合语义，也不回传secret给玩家"
+    },
+    {
+      "id": "ENG-04",
+      "action": "合法完整开局的三条pilot：MA-PD01、MA-DS03、MA-DS04",
+      "owner": "half_chaos within main-admitted scope",
+      "ready_for": "NOT_RUN_NOT_AUTHORIZED",
+      "safety": "前缀拒绝/意外终局/源变更立即停，不跳步、中盘注入、暂关王安全"
+    },
+    {
+      "id": "ENG-05",
+      "action": "其余9回放、64原规格逐义务验证/缺例与隐私回归",
+      "owner": "half_chaos+main",
+      "ready_for": "NOT_RUN_NOT_AUTHORIZED",
+      "safety": "不以12回放数替代64义务完成率，PD-S31/32、DS-S16/22等真实缺例保留未覆盖"
+    }
+  ],
+  "execution_gates": [
+    {
+      "id": "G-CODE",
+      "state": "SOURCE_PINNED_EXECUTION_NOT_ESTABLISHED"
+    },
+    {
+      "id": "G-INIT",
+      "state": "DATA_PREPARED_RUNTIME_UNRUN"
+    },
+    {
+      "id": "G-ACTION",
+      "state": "MODE_ADMISSION_BLOCKED"
+    },
+    {
+      "id": "G-STATE",
+      "state": "SOURCE_FIELDS_ONLY"
+    },
+    {
+      "id": "G-VIEW",
+      "state": "RAW_VIEWS_LOCATED_CLIENT_UNRUN"
+    },
+    {
+      "id": "G-PHASE",
+      "state": "SOURCE_ENTRIES_ONLY_CLOCK_RETRY_UNRUN"
+    },
+    {
+      "id": "G-EVIDENCE",
+      "state": "PROPOSED_HOOKS_NO_RUNTIME"
+    }
+  ],
+  "current_action_boundary": {
+    "code_changes": 0,
+    "engine_runs": 0,
+    "replay_commands_added": 0,
+    "mode_gates_changed": false,
+    "other_worklines_changed": false,
+    "main_receipt_fabricated": false,
+    "requires_bounded_code_scope_before_implementation": true
+  },
+  "next": {
+    "id": "NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE",
+    "status": "NOT_STARTED_SOURCE_REVIEW_ONLY",
+    "action": "对比已锁定开发分支14b、PR6/7及默认分支相关文件，确认依赖、版本/合并基础、最小ENG-01/02/03代码差分建议和回归入口；不改业务、不导入运行、不打开模式门禁。若需实施，先明确具体路径、验证、授权范围与主线归属。"
+  },
+  "limitations": {
+    "sources": "current GitHub meta/blob scoped V2 + existing WP01—05 source inventory",
+    "proposal": "V1 independent not audited",
+    "engine_runtime": "UNRUN",
+    "confidence_in_timeline": "NO_RELIABLE_DELIVERY_DATE"
+  }
+}
