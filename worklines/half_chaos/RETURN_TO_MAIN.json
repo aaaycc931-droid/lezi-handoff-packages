@@ -2,19 +2,19 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "063bc1c371878bce7ff1d2a866cbfec1996c3ed2",
-  "revision": "HC-DESIGN-03-20261020-r36",
-  "phase": "engineering_readiness_review_document_only",
+  "base_commit": "045d772ce802f38ef7740d114f446dd55d5e3f72",
+  "revision": "HC-DESIGN-03-20261020-r37",
+  "phase": "r37_pr_stack_and_minimal_engine_scope_document_only",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "r36工程/共享前置清单完成，开发分支与默认分支来源不等；原五包文档就绪，下一ENG-00固定源码/PR差分只读审查",
+  "current_breakpoint": "r37从真实PR4→5→6→7依赖链和PR6 24/PR7 7份patch识别原测试阻断，形成SLICE-01/02/03具体候选及非侵入回归；待主线限技术边界/授权，不改engine",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
   "changes": [
-    "ENG-00—05工程顺序与G-CODE/INIT/ACTION/STATE/VIEW/PHASE/EVIDENCE门禁真实状态归位",
-    "半混乱14b分支的六份源码Git blob核对，与默认分支缺项/文件差异记录；PR6/7 open/draft仍未完整差分审查",
-    "WP01—05详细合同未见主线技术采用，原确认/原64/12/评分冻结不改，业务与引擎运行0"
+    "PR4→PR5→PR6→PR7经GitHub PR实际base/head SHA逐级确定；PR6/PR7分别1个提交，24/7文件，两PR草稿；默认分支不等于14b",
+    "现半混乱research只支持shuffler且mutation false，三组待验研究tuple目前未合法接入，不能直接复用旧HC H11 runner",
+    "拟定准入、安全修复、观察三个最小候选slice，主线代码/协议/隐私与共享冲突不由本线伪批准；64UNRUN，12未执行，评分/NET冻结"
   ],
   "source_and_confirmation_scope": "Existing D01 five original approvals/H03 half-chaos/H04 retained within exact guards; no new consumption. r30 exact1.61 H15 remains unchanged; withdrawn proposals remain withdrawn; M04 original three-line wording retained.",
   "actual_validation": {
@@ -44,7 +44,11 @@
     "main_adoption": null,
     "source_blob_checks": 6,
     "source_default_drift_observed": true,
-    "scope": "Git identity/checkpoint and limited source comparison only"
+    "scope": "Git identity/checkpoint and limited source comparison only",
+    "PR6_changed_file_patches": 24,
+    "PR7_changed_file_patches": 7,
+    "source_scope": "PR metadata/full PR6+7 changed file patches and bounded actual 14b source; main compare first300, not complete tree full audit",
+    "runtime": false
   },
   "unrun": [
     "all12 planned replays and64 existing specs",
@@ -106,8 +110,8 @@
     }
   ],
   "next_independent_task": {
-    "id": "NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE",
-    "status": "NOT_STARTED_SOURCE_REVIEW_ONLY"
+    "id": "NEXT-HC-FIRST-IMPLEMENTATION-AUTHORIZATION-AND-SOURCE-RECONCILIATION",
+    "status": "PENDING_SPECIFIC_TECHNICAL_SCOPE_MAIN_OWNER"
   },
   "scoring_frozen": true,
   "NET": "paused",
@@ -947,7 +951,7 @@
       "runtime_reproduced": false
     }
   ],
-  "last_completed_design_revision": "HC-DESIGN-03-20261020-r36",
+  "last_completed_design_revision": "HC-DESIGN-03-20261020-r37",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "next_task_status": "WP05_NOT_STARTED_DOCUMENT_ONLY",
   "last_completed_design_commit_note": "本r34提交号从Git历史查询；不在内容预填未来自身提交",
@@ -1892,5 +1896,49 @@
       "ENG-03 passive observation/history/player channels",
       "shared tier/search/termination/repetition/clock decisions"
     ]
-  }
+  },
+  "r37_branch_diff_report": {
+    "path": "worklines/half_chaos/ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json",
+    "revision": "HC-DESIGN-03-20261020-r37",
+    "engine_head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "chain": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "pr6_patches": 24,
+    "pr7_patches": 7,
+    "proposed_slices": [
+      "SLICE-01",
+      "SLICE-02",
+      "SLICE-03"
+    ],
+    "engine_changes": 0,
+    "engine_runs": 0,
+    "main_receipt": null,
+    "main_adopted": null
+  },
+  "main_technical_scope_requests_r37": [
+    {
+      "id": "HC-ENG-R37-01",
+      "owner": "main",
+      "request": "审定只能绑定原3条two-hero+mutation tuple、真实房间/actor/side/随机开局的可信研究准入；产品featuresReady维持false。"
+    },
+    {
+      "id": "HC-ENG-R37-02",
+      "owner": "main",
+      "request": "已确认D01沙漏闭合安全拒绝、受将禁投、M01/M04路径/王安全/马腿仅限原确认的具体代码修复文件与回归。"
+    },
+    {
+      "id": "HC-ENG-R37-03",
+      "owner": "main+UI真实渠道",
+      "request": "WP02/04实际后闭合被动取证、双玩家可见和异常/重传错误通道，只读不泄密。"
+    },
+    {
+      "id": "HC-ENG-R37-04",
+      "owner": "main",
+      "request": "核PR4→5→6→7固定14b受控实现源归属、可写引擎分支/文件和真实回归范围；不要直接merge PR7或无审查迁到main。"
+    }
+  ]
 }
