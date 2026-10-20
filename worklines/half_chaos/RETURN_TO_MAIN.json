@@ -3,11 +3,11 @@
   "from_workline": "half_chaos",
   "to_workline": "main",
   "base_commit": "045d772ce802f38ef7740d114f446dd55d5e3f72",
-  "revision": "HC-RETURN-20261020-r38",
-  "phase": "r38_formal_main_engine_scope_handoff_published_waiting_actual_receipt",
+  "revision": "HC-RECEIPT-20261020-r39",
+  "phase": "r39_main_r38_actual_receipt_confirmed_implementation_separately_pending",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "r38已正式将PR4→7源码/半混乱三组受控准入及SLICE-01/02/03技术审查请求发布到本线固定交接；主线尚无真实r38接收采用回执，未授权代码/引擎/门禁",
+  "current_breakpoint": "主线r38源依赖与SLICE-01/02/03方案已真实接收、审核、采用为工程计划，源主线提交4dfeb732；非业务修复已实施。首补丁R38-SAFE-BOMB具体授权后由主线在固定14b隔离源码推进。",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
@@ -110,9 +110,8 @@
     }
   ],
   "next_independent_task": {
-    "id": "NEXT-HC-CHECK-MAIN-R38-ENGINE-SCOPE-RECEIPT",
-    "status": "PENDING_MAIN_ACTUAL_READ_AND_DECISION",
-    "action": "下次先核主线固定HEAD与READ_RECEIPTS/SHARED_COORDINATION是否实际接收r38及范围决定；无回执保持未知。主线审查前仅独立只读来源/文档，不修改引擎或运行；无需用户搬运资料。"
+    "id": "NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION",
+    "status": "MAIN_ENGINE_CODE_AND_RUN_AUTHORIZATION_PENDING"
   },
   "scoring_frozen": true,
   "NET": "paused",
@@ -1965,5 +1964,22 @@
     "original64": "UNRUN",
     "original12_executed": 0,
     "source_pr7_head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510"
+  },
+  "r39_received_main_r38_resolution": {
+    "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+    "main_source_commit": "4dfeb73211a5f25e75a55fdc5e2bc4d623e1959b",
+    "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "review_git_blob_sha": "ecf0a97ff953b4141e20e4eb536ea6f533bbd5a0",
+    "receiver_read_confirmed": true,
+    "adopted_plan": true,
+    "implementation_approved": false,
+    "engine_changes": 0,
+    "engine_runs": 0,
+    "product_gate_change": false,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "first_future_patch": "R38-SAFE-BOMB",
+    "not_a_new_game_rule": true,
+    "scope_limit": "source review+engineering coordination only; does not imply now-available legal three tuples or game PASS"
   }
 }
