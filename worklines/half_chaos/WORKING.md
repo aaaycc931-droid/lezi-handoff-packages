@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261020-r35
+revision: HC-DESIGN-03-20261020-r36
 date_local: 2026-10-20
 timezone: Asia/Shanghai
 primary_reader: AI
-status: wp05_document_complete_all64_unrun
+status: engineering_readiness_review_complete_runtime_blocked
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -18,6 +18,8 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 # 半混乱揭棋：时序、权限、合法前缀与剩余适配
 
 ## 0. 当前入口与接续
+
+2026-10-20 接续完成r36工程准入/分支核查，详见WORKING§8.61与ENGINEERING_READINESS_REVIEW.json；下一ENG-00具体源码差分，源码与主线共享审核分离，64项全UNRUN。
 
 2026-10-20 本轮继r34后完成r35 WP05缺证合同，见§8.60及RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json；五份WP文档均已准备，全部64UNRUN、可执行回放0。旧r34/r5是历史来源，不视为当前下一任务。当前下一项为主线依赖与实现准入文档核查，未获代码/引擎/门禁授权。
 
@@ -2609,6 +2611,20 @@ HC-EVID-Q01—04交主线核不可回退历史与稳定本体、请求payload绑
 当前五个工作包WP01—WP05均**仅完成文档设计**；实际业务代码更改0，计划12回放已执行0，原64规格全UNRUN、可执行0，七类G-CODE/INIT/ACTION/STATE/VIEW/PHASE/EVIDENCE技术准入尚未全部满足，评分冻结、NET暂停。源事实为固定对象V2与同一AI规则整理V1，没有新鲜完整代码审查、独立验收、真实引擎/客户端/传输运行。
 
 完工评估边界：五包资料完成不等于项目完成百分比。实现与验收需主线明确技术界限，建立合法实际初始化与可信准入、有限安全修复和被动观察，未来从MA-PD01/MA-DS03/MA-DS04三个pilot开始，随后其余9个原回放及64项各义务真实分项核验，并处理缺自然例/终局/隐私/版本/回归；当前无法根据文档阶段推准确日历。下一`NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW`，限定主线依赖与准入文档审查，NOT_STARTED_DOCUMENT_ONLY_MAIN_COORDINATION_REQUIRED，未开启代码实施/运行。
+
+### 8.61 原计划工程准入与源码分支核对（r36）
+
+用户“怎么样都可以……一步一步做吧……做吧”要求顺原计划继续；本阶段核定为原指定主线依赖/实施就绪的有限只读核对，并将行动边界写入`ENGINEERING_READINESS_REVIEW.json`。此前WP01—WP05五份文档准备完成，不能把计划文档比例当游戏完工率。本次无任何新游戏规则、代码、运行、hook、门禁、正式评分或NET恢复批准。
+
+按既有原计划的顺序：ENG-00固定源码/PR差异与唯一实施基线→ENG-01可信三组组合准入与合法完整房间调用→ENG-02原确认沙漏/投弹/路径与王安全对齐→ENG-03被动观察及红黑真实输出/请求证据→ENG-04三条原pilot（MA-PD01、MA-DS03、MA-DS04）→ENG-05其余九条原回放和64义务、隐私及缺自然例逐项验收。代码阶段前必须有主线共享接口/限范围技术授权与来源/依赖/回归核对，不凭继续自动扩门禁。产品featuresReady仍false；评分冻结、NET暂停。
+
+本轮直接取GitHub代表性源码：固定半混乱分支`codex/half-chaos-h11-b-clock-20261012`中modes/research-source-context/remote-room/hero-actions/mechanism-observer/rules 6个Git blob均与固定14b来源记录一致；同次默认分支读取modes/research-source-context/hero-actions/mechanism-observer返回404，remote-room与rules存在但blob不同。该结果仅说明两条来源路径当前不同，不是全PR或代码语义审计，也不能从404推断历史无实现。PR6、PR7仍open/draft；本轮未完整核差分和CI，不可直接拿默认分支当半混乱实施基线并覆盖PR成果。
+
+主线现有SHARED_COORDINATION仅实际受理旧r30五包摘要及WP01—03限定源待审；WP01—05新增详细合同的完整主线读取、技术批准、接收与采用仍未知。EI06技能层级、完整将死/终局、真实原子关闭/重复键/时钟、H15/H06毕业跨越及产品客户端/协议共同条件由主线/对应线处理；本线可独立继续ENG-00只读差分、原三组映射、最小回归计划，不用等待所有共享问题才读代码。
+
+验收门槛仍G-CODE/G-INIT/G-ACTION/G-STATE/G-VIEW/G-PHASE/G-EVIDENCE；本次只读发现不改变任何一项实际runtime状态。已有64项UNRUN、12原回放0已执行、可运行0，确认/原6数据/前五包原内容不改。检查级别V2有限Git对象/状态＋V1方案推演，没有实际引擎/客户端运行或独立审计。
+
+下一独立工作`NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE`：逐项读取固定14b及PR6/7实际差分，指出最小ENG-01/02/03可改文件、受影响旧代码与回归入口及需要的技术范围确认；先只读/文档，非代码授权。完成后向主线交付可复核的实施边界，而非再写宏观计划。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
