@@ -678,11 +678,13 @@
     }
   },
   "own_line_continuation": {
-    "source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+    "source_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
     "current_stage": "HC-DESIGN-03-20261019-r33",
     "unreturned_local_work_found": false,
     "scope": "r32 staged published files and immutable references checked against actual remote; new r33 staged separately",
-    "new_instruction": "同意进行下一步，仅WP03文档接续"
+    "new_instruction": "同意进行下一步，仅WP03文档接续",
+    "latest_revision": "HC-DESIGN-03-20261020-r34",
+    "current_task": "WP04 evidence documents complete"
   },
   "main_receipt_recheck": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -2320,5 +2322,57 @@
     },
     "all9_match_latest": true,
     "other_receiver_receipts_written": false
+  },
+  "r34_wp04_evidence_source_review": {
+    "source_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
+    "scope": "half_chaos own working r33/r5 and WP01/02/03 relevant contracts; original observation mapping OG04/05/06, matrix actual 64 rows filtered gap linkage, implementation scope WP04; collaboration v0.13 selected full modules, current main queue read, not full engine/client/transport audit",
+    "read_paths": [
+      "START_HERE.md",
+      "worklines/half_chaos/START_HERE.txt",
+      "docs/WORKFLOW.md",
+      "collaboration/CURRENT.json",
+      "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
+      "worklines/half_chaos/PROJECT_WORK_AGREEMENT.md",
+      "worklines/half_chaos/CURRENT_STATE.json",
+      "worklines/half_chaos/WORKING.md",
+      "worklines/half_chaos/NEXT_ACTIONS.json",
+      "worklines/half_chaos/RETURN_TO_MAIN.json",
+      "worklines/half_chaos/READ_RECEIPTS.json",
+      "worklines/half_chaos/IMPLEMENTATION_SCOPE_PROPOSAL.json",
+      "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+      "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
+      "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
+      "worklines/half_chaos/PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json",
+      "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+      "worklines/main/CURRENT_STATE.json",
+      "worklines/main/READ_RECEIPTS.json"
+    ],
+    "read_limits": "一些大JSON仅读结构/特定字段或工作节摘要；未全量独立逐条语义审计。fixed 14b engine source依既有静态映射复用；本轮未重新读取或运行全部engine源码。",
+    "adopted_scope": "只沿原本线已有授权推进WP04文档和固定交接；原游戏确认/技术/运行/共享主线仍独立",
+    "og_routes": {
+      "OG04": [
+        "DS-S06",
+        "DS-S25",
+        "DS-S26",
+        "PD-S08"
+      ],
+      "OG05": [
+        "DS-S12",
+        "PD-S35"
+      ],
+      "OG06": [
+        "DS-S01",
+        "DS-S12",
+        "DS-S27",
+        "DS-S28",
+        "PD-S24",
+        "PD-S29",
+        "PD-S35"
+      ]
+    },
+    "new_rule_approvals": 0,
+    "main_receiver_read_or_adopted": null,
+    "all64": "UNRUN"
   }
 }
