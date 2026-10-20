@@ -2,19 +2,19 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "251f43507337747d0f7b21a0b19ca7909ca7baf7",
-  "revision": "HC-SESSION-CLOSEOUT-20261019-r5",
-  "phase": "conversation_closeout_after_r33_documents",
+  "base_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
+  "revision": "HC-DESIGN-03-20261020-r34",
+  "phase": "wp04_delivery_evidence_document_complete_waiting_main_review",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "r33 WP03文档已写回；本对话按用户请求收束，WP04未开始",
+  "current_breakpoint": "r34 WP04证据合同已写回；WP05缺证文档未开始；所有64UNRUN",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
   "changes": [
-    "关闭当前半混乱对话并保存r33实际提交及原文档/确认身份",
-    "保留WP01/02/03共享待核与全部UNRUN/缺证；下一WP04未开始",
-    "只维护本线收束与真实读取记录，其他线最新载荷原样保留"
+    "WP04三份证据合同覆盖OG04真实死亡历史、OG06红黑玩家输出、OG05同状态新请求/重传/ID冲突分型",
+    "原64、12原回放、原三组范围与WP01/02/03合同、确认文件和原6数据保持不变",
+    "只写半混乱固定交接，不代替主线接收采用或其他线回执"
   ],
   "source_and_confirmation_scope": "Existing D01 five original approvals/H03 half-chaos/H04 retained within exact guards; no new consumption. r30 exact1.61 H15 remains unchanged; withdrawn proposals remain withdrawn; M04 original three-line wording retained.",
   "actual_validation": {
@@ -26,7 +26,16 @@
     "new_rule_scope_or_technical_approvals": 0,
     "engine_runs": 0,
     "all64": "UNRUN",
-    "other_receiver_receipts_written": false
+    "other_receiver_receipts_written": false,
+    "wp04_document_reference_checked": true,
+    "og_routes": {
+      "OG04": 4,
+      "OG05": 2,
+      "OG06": 7,
+      "unique_original_spec_ids": 11
+    },
+    "new_replay_commands": 0,
+    "main_receiver_adoption": null
   },
   "unrun": [
     "all12 planned replays and64 existing specs",
@@ -88,9 +97,8 @@
     }
   ],
   "next_independent_task": {
-    "id": "NEXT-HC-DELIVERY-EVIDENCE-CONTRACT-REFINEMENT",
-    "status": "NOT_STARTED_DOCUMENT_ONLY",
-    "action": "结合最新主线实际回复，细化WP04实际死亡与复活前历史、红黑真实玩家输出、同状态新请求/原样重传/同ID冲突的证据文档合同；保留原缺刺激与客户端/传输未核边界，不添加回放命令、不改业务、不导入运行、不绕门禁。"
+    "id": "NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT",
+    "status": "NOT_STARTED_DOCUMENT_ONLY"
   },
   "scoring_frozen": true,
   "NET": "paused",
@@ -930,10 +938,10 @@
       "runtime_reproduced": false
     }
   ],
-  "last_completed_design_revision": "HC-DESIGN-03-20261019-r33",
+  "last_completed_design_revision": "HC-DESIGN-03-20261020-r34",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
-  "next_task_status": "NOT_STARTED_DOCUMENT_ONLY",
-  "last_completed_design_commit_note": "Actual r33 design result; closeout is status-only.",
+  "next_task_status": "WP05_NOT_STARTED_DOCUMENT_ONLY",
+  "last_completed_design_commit_note": "本r34提交号从Git历史查询；不在内容预填未来自身提交",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
     "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
@@ -1768,5 +1776,44 @@
     },
     "containing_commit": null,
     "containing_commit_note": "Resolve actual closeout commit from Git history after publication; no future self SHA."
-  }
+  },
+  "delivery_evidence_contract_proposal": {
+    "path": "worklines/half_chaos/DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json",
+    "revision": "HC-DESIGN-03-20261020-r34",
+    "contract_ids": [
+      "HC-EVID-01",
+      "HC-EVID-02",
+      "HC-EVID-03"
+    ],
+    "source_gaps": [
+      "OG04",
+      "OG05",
+      "OG06"
+    ],
+    "source_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
+    "review_status": "half_chaos_document_ready_main_not_confirmed",
+    "code_or_runtime_approval": false
+  },
+  "wp04_shared_requests": [
+    {
+      "id": "HC-EVID-Q01",
+      "owner": "main",
+      "scope": "实际死亡历史与稳定本体映射"
+    },
+    {
+      "id": "HC-EVID-Q02",
+      "owner": "main",
+      "scope": "真实协议actionId/actor/payload与响应顺序"
+    },
+    {
+      "id": "HC-EVID-Q03",
+      "owner": "main+ui",
+      "scope": "双方raw view/事件/客户端/错误完整可见通道"
+    },
+    {
+      "id": "HC-EVID-Q04",
+      "owner": "main",
+      "scope": "WP02被动阶段采样且无副作用的可实现性"
+    }
+  ]
 }
