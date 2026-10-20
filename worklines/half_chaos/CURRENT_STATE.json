@@ -1,14 +1,14 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-SESSION-CLOSEOUT-20261019-r5",
+  "revision": "HC-DESIGN-03-20261020-r34",
   "workline": "half_chaos",
-  "date_local": "2026-10-19",
+  "date_local": "2026-10-20",
   "timezone": "Asia/Shanghai",
-  "status": "conversation_closed_after_r33_documents_all64_unrun",
-  "baseline_commit": "251f43507337747d0f7b21a0b19ca7909ca7baf7",
+  "status": "wp04_delivery_evidence_document_prepared_all64_unrun",
+  "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
-  "authorization": "用户明确收束本轮对话，沿现行本线交接维护授权保存必要状态；不启动下一阶段，不批准新玩法/技术候选/代码/运行/门禁。",
+  "authorization": "用户2026-10-20要求继续半混乱工作线，继承本线文档准备/阶段增量写回授权；未授权代码、引擎运行、hook、门禁或新规则候选。",
   "collaboration": {
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-17.v0.13",
@@ -128,9 +128,9 @@
     "full_chat_export_recovered": false
   },
   "completed_this_round": [
-    "按用户请求收束本对话，核对r33已发布全部9项和保护对象",
-    "保存全部确认、WP01/02/03文档、共享未决和WP04未开始断点",
-    "按当前HEAD只写本线，保留普通线最新收束11项载荷"
+    "实际读取根/本线入口、current/main/collaboration适用源与最新HEAD；保护r33、r5和其他线成果",
+    "完成WP04三份证据边界的一份独立文档合同，原OG04/05/06共13关联去重11个既有规格",
+    "原三组/12、原64UNRUN及全部旧合同/确认不改；下一WP05缺证文档"
   ],
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": 0,
@@ -177,7 +177,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "结合最新主线实际回复，细化WP04实际死亡与复活前历史、红黑真实玩家输出、同状态新请求/原样重传/同ID冲突的证据文档合同；保留原缺刺激与客户端/传输未核边界，不添加回放命令、不改业务、不导入运行、不绕门禁。",
+  "next_action": "NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT（WP05）：细化PD-S31/32、DS-S16/22及原未声明刺激/共享搜索与终局缺口，仅文档；不新增命令、代码、hook、运行或门禁。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -204,7 +204,7 @@
   },
   "NET": "paused",
   "limitation_audit_status": "partial",
-  "verification_level": "V2 limited source/identity/reference checks; V1 repair contract; no gameplay/runtime/independent validation",
+  "verification_level": "V2 fixed source/matrix/identity checks + V1 document proposal; all64 UNRUN, no runtime/client/transport audit",
   "publication_scope": "current_half_chaos_design_bodies_and_source_references; not_full_private_archive_migration",
   "source_index": "SOURCE_INDEX.json",
   "return_record": "RETURN_TO_MAIN.json",
@@ -2300,5 +2300,27 @@
     "containing_commit": null,
     "containing_commit_note": "Resolve actual closeout commit from Git history after publication; no future self SHA."
   },
-  "next_action_start_condition": "用户在本对话或新对话明确继续，并核最新远端状态后开始"
+  "next_action_start_condition": "用户在本对话或新对话明确继续，并核最新远端状态后开始",
+  "wp04": {
+    "revision": "HC-DESIGN-03-20261020-r34",
+    "proposal": "DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json",
+    "contracts": [
+      "HC-EVID-01",
+      "HC-EVID-02",
+      "HC-EVID-03"
+    ],
+    "related_gaps": [
+      "OG04",
+      "OG05",
+      "OG06"
+    ],
+    "unique_original_specs": 11,
+    "relation_count": 13,
+    "source_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
+    "document_complete": true,
+    "technical_approval": false,
+    "runtime": false,
+    "main_received": null,
+    "main_adopted": null
+  }
 }
