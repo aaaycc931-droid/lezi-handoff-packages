@@ -3,11 +3,11 @@
   "from_workline": "half_chaos",
   "to_workline": "main",
   "base_commit": "045d772ce802f38ef7740d114f446dd55d5e3f72",
-  "revision": "HC-DESIGN-03-20261020-r37",
-  "phase": "r37_pr_stack_and_minimal_engine_scope_document_only",
+  "revision": "HC-RETURN-20261020-r38",
+  "phase": "r38_formal_main_engine_scope_handoff_published_waiting_actual_receipt",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "r37从真实PR4→5→6→7依赖链和PR6 24/PR7 7份patch识别原测试阻断，形成SLICE-01/02/03具体候选及非侵入回归；待主线限技术边界/授权，不改engine",
+  "current_breakpoint": "r38已正式将PR4→7源码/半混乱三组受控准入及SLICE-01/02/03技术审查请求发布到本线固定交接；主线尚无真实r38接收采用回执，未授权代码/引擎/门禁",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
@@ -110,8 +110,9 @@
     }
   ],
   "next_independent_task": {
-    "id": "NEXT-HC-FIRST-IMPLEMENTATION-AUTHORIZATION-AND-SOURCE-RECONCILIATION",
-    "status": "PENDING_SPECIFIC_TECHNICAL_SCOPE_MAIN_OWNER"
+    "id": "NEXT-HC-CHECK-MAIN-R38-ENGINE-SCOPE-RECEIPT",
+    "status": "PENDING_MAIN_ACTUAL_READ_AND_DECISION",
+    "action": "下次先核主线固定HEAD与READ_RECEIPTS/SHARED_COORDINATION是否实际接收r38及范围决定；无回执保持未知。主线审查前仅独立只读来源/文档，不修改引擎或运行；无需用户搬运资料。"
   },
   "scoring_frozen": true,
   "NET": "paused",
@@ -1940,5 +1941,29 @@
       "owner": "main",
       "request": "核PR4→5→6→7固定14b受控实现源归属、可写引擎分支/文件和真实回归范围；不要直接merge PR7或无审查迁到main。"
     }
-  ]
+  ],
+  "main_engine_scope_handoff_r38": {
+    "id": "HC-MAIN-ENG-SCOPE-REQUEST-R38",
+    "path": "worklines/half_chaos/MAIN_ENGINE_IMPLEMENTATION_REVIEW_REQUEST.json",
+    "previous_source_report": "worklines/half_chaos/ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json",
+    "source_revision": "HC-DESIGN-03-20261020-r37",
+    "publication_status": "SOURCE_LINE_PUBLISHED",
+    "recipient": "main",
+    "main_actual_read": null,
+    "main_received": null,
+    "main_adopted": null,
+    "technical_approval": null,
+    "requests": [
+      "MAIN-HC-R38-01",
+      "MAIN-HC-R38-02",
+      "MAIN-HC-R38-03",
+      "MAIN-HC-R38-04",
+      "MAIN-HC-R38-05"
+    ],
+    "no_manual_user_file_transfer_needed": true,
+    "no_engine_code_or_test_changes": true,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "source_pr7_head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510"
+  }
 }
