@@ -28,7 +28,7 @@
     "workflow_section": "GITHUB_HANDOFF_WORKFLOW"
   },
   "previous_index_updated_at_local": "2026-10-15T15:18:11+08:00",
-  "updated_on_local": "2026-10-17",
+  "updated_on_local": "2026-10-20",
   "main_recovery": {
     "date_local": "2026-10-17",
     "entry": "worklines/main/START_HERE.txt",
@@ -69,7 +69,25 @@
     "withdrawn_prestart_candidate_note": "Old cancel-training-plus-spent-use proposal remains withdrawn; corrected minimal restore-unused proposal now explicitly confirmed.",
     "H15_H06_prestart_unused_restore_confirmed": true,
     "historical_prestart_original_approval_scope_gap_preserved": true,
-    "round_closeout_summary": "worklines/main/ROUND_CLOSEOUT.md"
+    "round_closeout_summary": "worklines/main/ROUND_CLOSEOUT.md",
+    "latest_engineering_priority": {
+      "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+      "date_local": "2026-10-20",
+      "source_workline": "half_chaos",
+      "source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "source_revision": "HC-RETURN-20261020-r38",
+      "read_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+      "status": "actually_received_source_dependencies_verified_bounded_scope_adopted_as_plan",
+      "implementation_authorized": false,
+      "engine_execution_authorized": false,
+      "engine_code_changes": 0,
+      "engine_runs": 0,
+      "all64": "UNRUN",
+      "original12_executed": 0,
+      "other_workline_adoption": "unknown_no_receiver_receipt_written"
+    },
+    "current_main_next": "NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION"
   },
   "historical_archive_migration_incomplete": [
     "main",
@@ -174,7 +192,24 @@
     "main": "Graduation sources reviewed, policy unresolved;55 confirmed rules unchanged",
     "standard": "Own conversation closed preserving pending H02/M04 candidate; wording-only update adopted",
     "ui": "B8 approved, own session closed, B9 not created; metadata only",
-    "half_chaos": "Final r30 document proposal and own round closeout received; next WP01 contract refinement documents only, all64UNRUN"
+    "half_chaos": "Final r30 document proposal and own round closeout received; next WP01 contract refinement documents only, all64UNRUN",
+    "r38_engineering_review": {
+      "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+      "date_local": "2026-10-20",
+      "source_workline": "half_chaos",
+      "source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "source_revision": "HC-RETURN-20261020-r38",
+      "read_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+      "status": "actually_received_source_dependencies_verified_bounded_scope_adopted_as_plan",
+      "implementation_authorized": false,
+      "engine_execution_authorized": false,
+      "engine_code_changes": 0,
+      "engine_runs": 0,
+      "all64": "UNRUN",
+      "original12_executed": 0,
+      "other_workline_adoption": "unknown_no_receiver_receipt_written"
+    }
   },
   "current_project_round_closeout": {
     "revision": "LEZI-PROJECT-ROUND-CLOSEOUT-20261017",
@@ -223,6 +258,7 @@
       "standard r2",
       "half_chaos r3 afterr30",
       "UI afterB8"
-    ]
+    ],
+    "historical_note": "The 2026-10-17 closeout remains a historical scoped record. Main resumed for r38 engineering review on2026-10-20; use latest_engineering_priority and per-line current entries, not these old per-line snapshots."
   }
 }

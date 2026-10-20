@@ -1,0 +1,626 @@
+{
+  "schema": "lezi.main.half_chaos_r38_engineering_review.v1",
+  "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+  "date_local": "2026-10-20",
+  "workline": "main",
+  "status": "ACTUALLY_RECEIVED_SOURCE_REVIEW_COMPLETE_BOUNDED_TECHNICAL_PLAN_NOT_IMPLEMENTED",
+  "user_instruction": "继续主线工作，优先读取并处理半混乱模式最新 r38 工程交接，核对源码依赖与技术修复范围。保留各工作线现有成果。",
+  "handoff": {
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+    "source_publication_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+    "source_request_path": "worklines/half_chaos/MAIN_ENGINE_IMPLEMENTATION_REVIEW_REQUEST.json",
+    "source_request_blob": "3c32d2b1cc9a8036083d1c7be7b03d8b5d6cc10f",
+    "r37_source_commit": "3fd8d3b10a55f529a50fc386c360ae6f32dc384a",
+    "r37_report_blob": "80729d0454b50f988996e670f0a345c23f9ad630"
+  },
+  "read_scope": {
+    "r38_request": "full",
+    "r37_report": "full",
+    "contracts": [
+      {
+        "path": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
+        "git_blob_sha": "a29a20e303d3fd255ee338feaa9b60ae129e0c0a",
+        "read_sections": [
+          "exact_tuple_candidates",
+          "trusted_capability_proposal",
+          "call_chain_contract",
+          "random_binding_proposal",
+          "adapter_contract",
+          "negative_boundary_proposals",
+          "shared_owner_questions",
+          "validation_scope_plan_confirmation"
+        ]
+      },
+      {
+        "path": "worklines/half_chaos/PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json",
+        "git_blob_sha": "28fcbb8aa53f9b99779429730fe399945fac82da",
+        "read_sections": [
+          "boundary_contracts",
+          "auxiliary_boundaries",
+          "early_exit_catalog",
+          "d01_stage_evidence_option",
+          "evidence_envelope_proposal",
+          "passivity_contract",
+          "shared_owner_questions",
+          "remaining"
+        ]
+      },
+      {
+        "path": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+        "git_blob_sha": "f00098fa47f066cd29c64e1bb62f206dfc6acd76",
+        "read_sections": [
+          "original_confirmations",
+          "repair_contracts",
+          "isolated_plan_and_single_commit_candidate",
+          "refusal_invariant_groups",
+          "original_safety_case_expectations",
+          "shared_owner_questions",
+          "remaining"
+        ]
+      },
+      {
+        "path": "worklines/half_chaos/DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json",
+        "git_blob_sha": "9afe3a724b141d46893da14f7dff1678c877fcea",
+        "read_sections": [
+          "full"
+        ]
+      },
+      {
+        "path": "worklines/half_chaos/RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json",
+        "git_blob_sha": "2e1131d48f6f97adbab25d8bfe07b828109760f7",
+        "read_sections": [
+          "full"
+        ]
+      },
+      {
+        "path": "worklines/half_chaos/IMPLEMENTATION_SCOPE_PROPOSAL.json",
+        "git_blob_sha": "e198b5953a66053562f8419275d0fceb5f78d37c",
+        "read_sections": [
+          "work_packages",
+          "later_run_proposal",
+          "exclusions"
+        ]
+      }
+    ],
+    "original_confirmation": "CONFIRMATIONS.json#/r31_validation_scope_plan_confirmation only; exact three tuple/12 future scope, excludes code/run/capability",
+    "original_D01_confirmations": [
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "scope": "full original question/answer, guard and policy"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+        "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+        "scope": "full original question/answer, guard and policy"
+      }
+    ],
+    "not_read_or_claimed": [
+      "WP01/02/03完整逐条规格路由、210声明点和原6数据全文本轮未重审",
+      "不声称全PR4—7补丁重审；继承r37完整PR6/7报告，独立核metadata/parent/完整树与下列关键源码",
+      "不声称完整主线55规则或普通/UI最新语义已重新审计，保留其全部对象"
+    ]
+  },
+  "source_baseline": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "fixed_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "default_branch": "main",
+    "default_head": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "stacked_pr_chain": [
+      {
+        "pr": 4,
+        "base": "codex/ui-android-apk-20261001",
+        "head": "codex/score-mechanism-20261010",
+        "head_sha": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+        "base_sha": "a3704459e8dbb08e1bb6fb9bcb1b169319a6d1bc",
+        "state": "open",
+        "draft": true
+      },
+      {
+        "pr": 5,
+        "base": "codex/score-mechanism-20261010",
+        "head": "codex/score-policy-adapter-20261011",
+        "head_sha": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+        "base_sha": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+        "state": "open",
+        "draft": true
+      },
+      {
+        "pr": 6,
+        "base": "codex/score-policy-adapter-20261011",
+        "head": "codex/score-mode-bridge-20261011",
+        "head_sha": "f1c01585ade8b4e17618399901d7283f37271459",
+        "base_sha": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+        "state": "open",
+        "draft": true
+      },
+      {
+        "pr": 7,
+        "base": "codex/score-mode-bridge-20261011",
+        "head": "codex/half-chaos-h11-b-clock-20261012",
+        "head_sha": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "base_sha": "f1c01585ade8b4e17618399901d7283f37271459",
+        "state": "open",
+        "draft": true
+      }
+    ],
+    "direct_parent_checks": {
+      "PR5": "parent=PR4 head",
+      "PR6": "parent=PR5 head",
+      "PR7": "parent=PR6 head",
+      "PR4": "parent ad735385929d61fa10def6f3e3bf877ef68299b1; not asserted single-commit child of moving UI base"
+    },
+    "recursive_tree_inventory": {
+      "truncated": false,
+      "default_blob_count": 66,
+      "development_blob_count": 526,
+      "added_paths": 460,
+      "modified_paths": 47,
+      "deleted_paths": 0,
+      "scope": "complete blob identity inventory at the two pinned commits; not semantic audit/mergeability/CI proof"
+    },
+    "critical_files": [
+      {
+        "path": "src/modes.ts",
+        "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+        "read_scope": "full"
+      },
+      {
+        "path": "src/research-source-context.ts",
+        "git_blob_sha": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+        "read_scope": "full"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+        "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+        "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+      },
+      {
+        "path": "src/game.ts",
+        "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+        "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+      },
+      {
+        "path": "src/rules.ts",
+        "git_blob_sha": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+        "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+      },
+      {
+        "path": "src/settlement.ts",
+        "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+        "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+      },
+      {
+        "path": "src/settlement-context.ts",
+        "git_blob_sha": "58052bee1c08392f887fbf1e7f1ec7501c2d8cf4",
+        "read_scope": "full"
+      },
+      {
+        "path": "src/turns.ts",
+        "git_blob_sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612",
+        "read_scope": "full"
+      },
+      {
+        "path": "src/mechanism-observer.ts",
+        "git_blob_sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81",
+        "read_scope": "full"
+      },
+      {
+        "path": "scripts/scoring/policy-session.ts",
+        "git_blob_sha": "3aa254a0a442bdb12cf3f8a9d26fde039d7c646d",
+        "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+      },
+      {
+        "path": "scripts/scoring/policy-observation.ts",
+        "git_blob_sha": "63cedb68e1e28c0ce120f048d106371a8fd0113d",
+        "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+      },
+      {
+        "path": "package.json",
+        "git_blob_sha": "34b26233ab157051caeae779771ddc0fceb24465",
+        "read_scope": "full runtime/test scripts"
+      }
+    ],
+    "direct_dependencies": [
+      {
+        "path": "src/room.ts",
+        "git_blob_sha": "093a1732eed4ee48a6d3487ce938d3c1d17a58c2",
+        "read_scope": "full"
+      },
+      {
+        "path": "src/setup.ts",
+        "git_blob_sha": "15df513e8204d48464c097453c7bf9b83748c9f5",
+        "read_scope": "full"
+      },
+      {
+        "path": "src/mutations.ts",
+        "git_blob_sha": "a433d6f562686a3e654dd9d003db562a4e30a424",
+        "read_scope": "full"
+      },
+      {
+        "path": "src/hero-forms.ts",
+        "git_blob_sha": "e42cb0854bd71dfaf4004268ec79e11c115c692d",
+        "read_scope": "feature lock/preparation and death RNG relevant sections"
+      },
+      {
+        "path": "src/hero-progress.ts",
+        "git_blob_sha": "5edea5f9c620b1eb35127ff7b146b1f84662f6dc",
+        "read_scope": "feature lock/preparation and death RNG relevant sections"
+      },
+      {
+        "path": "scripts/scoring/mode-fixture-loader.ts",
+        "git_blob_sha": "f6dfb963bfbae035740003955f094824f661aea8",
+        "read_scope": "full"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "MAIN-R38-F01",
+      "level": "V2_source_checked",
+      "source": [
+        "src/modes.ts#requireModeFeatureAdaptation",
+        "src/research-source-context.ts#modeResearchPermits/withResearchSources/researchSources",
+        "src/remote-room.ts#normalizeModeConfig/createGameAfterSetup"
+      ],
+      "finding": "half_chaos.featuresReady=false；研究仅shuffler、显式拒绝mutation。建房roomId字符串检查、规则检查的英雄值集合，不能证明新三tuple的真实房间实例/actor/side绑定；createGameAfterSetup还要求新模式mutation为undefined。只加英雄枚举会留下多处阻断并扩大错误组合。",
+      "disposition": "接受保留产品门禁、另设精确研究合同的范围；现有拒绝是有效保护，不作待删除缺陷。"
+    },
+    {
+      "id": "MAIN-R38-F02",
+      "level": "V2_source_checked",
+      "source": [
+        "src/hero-actions.ts#applyHeroAbility/hourglass",
+        "src/settlement.ts#closeDirectDeaths",
+        "src/settlement-context.ts#openDestructionBatches"
+      ],
+      "finding": "沙漏在副本扣次/回归/净化/装填，公共尾部closeDirectDeaths；未见完整结果的己王普通合法受将拒绝。副本不等于无外部副作用；WeakMap批次上下文不随structuredClone复制，closeDirectDeaths还可调用训练死亡与Math.random包装。",
+      "disposition": "采用原双方王存活、无独立终局guard的完整结果安全要求；选定同一候选只提交一次，不准预检后重跑现执行器；未核上下文/RNG路径前不得称可安全实施。"
+    },
+    {
+      "id": "MAIN-R38-F03",
+      "level": "V2_source_checked",
+      "source": [
+        "src/hero-actions.ts#bomb",
+        "src/remote-room.ts#submitRemoteHeroAbility/expiredFormalAction"
+      ],
+      "finding": "bomb具备施放者/弹药/名额/目标资格，但写入ammo/warps前未见当前受将拒绝。真实房间先检查phase、保留server actionId、expiry、actor/turn，再进技能。",
+      "disposition": "作为最小首修范围：保留外层错误/超时顺序，在现有bomb基本资格及目标合法检查之后、首次技能资源/污染写入之前加入当前合法受将拒绝；不套到沙漏，不重开主行动后窗口。确切错误形态随补丁核既有RuleError约定，不在此发明协议码。"
+    },
+    {
+      "id": "MAIN-R38-F04",
+      "level": "V2_source_checked",
+      "source": [
+        "src/rules.ts#simulatePublicMove/validatePublicMove",
+        "src/game.ts#pathPiecesForSpecialMove/applyAuthoritativeMove/finishDirectDeaths/finishAfterPlayerAction"
+      ],
+      "finding": "公共预检只简单移动/移除终点，dragonScale时甚至返回原state；真实执行还先路径消灭，再壁垒/龙鳞返回或落位，随后死亡与结束。两条执行分支和公共模拟语义不等价。",
+      "disposition": "纳入同源完整动作计划/单次提交设计；暂不批准替换全局simulatePublicMove、allowIntermediateCheck或完整终局搜索。"
+    },
+    {
+      "id": "MAIN-R38-F05",
+      "level": "V2_source_checked_plus_V1_geometry",
+      "source": [
+        "src/rules.ts#canRevealedPieceAttack",
+        "src/game.ts#pathPiecesForSpecialMove"
+      ],
+      "finding": "铁马横腿威胁旧候选(x+dx,y±2)对应的是纵腿；正确经过横腿的日字终点为(x+2dx,y±1)，纵腿为(x±1,y+2dy)。离线几何例：马(4,4)、腿(5,4)，旧(5,2)/(5,6)经过(4,3)/(4,5)，应为(6,3)/(6,5)。",
+      "disposition": "几何差异确认，未来补四方向/边界/合法落点及来源限制回归；不是引擎复现，不把原PD03或此例当PD-S12自然回放通过。"
+    },
+    {
+      "id": "MAIN-R38-F06",
+      "level": "V2_source_checked",
+      "source": [
+        "src/turns.ts#recordAction/closeMainActionAtom",
+        "src/settlement.ts#finishFormalTurn",
+        "src/game.ts#finishAfterPlayerAction",
+        "src/mechanism-observer.ts#captureMechanismEvents"
+      ],
+      "finding": "formal_main_action在路径处理前发出；formal_turn_end在结束效果前发出。closeMainActionAtom仅推进phase。collector默认关闭不克隆，但启用后克隆/冻结可抛错，operation抛错时events不会返回。",
+      "disposition": "采用WP02四类语义边界与早退分类；新观察点须在真实闭合控制点，保留旧事件含义。异常证据容器和失败隔离未实现，不得伪造内部快照。"
+    },
+    {
+      "id": "MAIN-R38-F07",
+      "level": "V2_source_checked",
+      "source": [
+        "src/remote-room.ts#playerRoomView/publicRemoteRoom/submitRemoteHeroAbility",
+        "src/hero-actions.ts#hourglass",
+        "scripts/scoring/policy-session.ts#submit"
+      ],
+      "finding": "复活会从当前captured过滤勇士；此库存不是不可回退死亡史。玩家视图有真实专用入口，但本轮未核客户端/传输。processedActions按actionId去重，不足证明actor/payload绑定；旧PolicySession拒绝时清source_events并在返回前tick。",
+      "disposition": "采用WP04外置真实动作证据与红黑通道分离；新请求、原样重传和同ID冲突分开。当前无端到端隐私/幂等验收。"
+    }
+  ],
+  "request_dispositions": [
+    {
+      "id": "MAIN-HC-R38-01",
+      "status": "SOURCE_DEPENDENCY_REVIEW_COMPLETE_BASE_DESIGN_SELECTED",
+      "owner": "main",
+      "decision": "采用固定PR7完整源树作为隔离工程基准，保留PR4→5→6→7全部依赖；不合并任何PR、不向默认main零散搬文件。",
+      "next_branch": {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "name": "codex/hc-r38-bounded-repairs-20261020",
+        "from_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+        "designation": "后续隔离实现分支的技术选择",
+        "exists_or_created_this_round": false,
+        "write_or_run_authorized_by_this_review": false
+      }
+    },
+    {
+      "id": "MAIN-HC-R38-02",
+      "status": "SLICE_01_SCOPE_ACCEPTED_FOR_ENGINEERING_PLAN_NOT_ACTIVATED",
+      "owner": "main shared gate; half_chaos finite adapter",
+      "decision": "只采用WP01三tuple的精确边界；保留旧MODE_RESEARCH_SOURCES和P0合同，新的准入走独立可信同步分支，不把旧允许英雄列表扩成笛卡尔积。",
+      "exact_tuples": [
+        [
+          "half_chaos",
+          "red:qin_long:front",
+          "black:warrior:front",
+          "iron_steed"
+        ],
+        [
+          "half_chaos",
+          "red:qin_long:front",
+          "black:warrior:front",
+          "war_chariot"
+        ],
+        [
+          "half_chaos",
+          "red:nozdormu:front",
+          "black:murozond:front",
+          "end_time"
+        ]
+      ],
+      "files": [
+        "src/research-source-context.ts",
+        "src/modes.ts",
+        "src/remote-room.ts",
+        "scripts/scoring/policy-session.ts",
+        "scripts/scoring/mode-qualification-cases.ts",
+        "scripts/scoring/mode-fixture-loader.ts"
+      ],
+      "direct_dependencies_read_only": [
+        "src/room.ts",
+        "src/setup.ts",
+        "src/mutations.ts",
+        "src/hero-forms.ts"
+      ],
+      "required_design": [
+        "能力只由受控研究调用方发行；不能从client/room JSON获得。绑定固定source/data身份、两个不同actor、真实权威房间关联和生命周期；immutable room返回须可信继承关联，单独同roomId或复制JSON不足。",
+        "建房只授有限准备资格；选择→真实RPS→最终side/full package→本方15池合法开局→真实mutation/D01触发→一次feature lock依序核验；最终缺字段拒绝，不能undefined跳过。",
+        "每次move/skill再核实际authority/actor/side/tuple/revision；不跨await、不嵌套，finally撤销临时能力。",
+        "沿原28次身份见证，再独立校验mutation抽取domain/value/消费完毕。14b静态兼容候选M01=(8,0)、M04=(8,3)、D01=(8,3)再(3,2)来源一致；仅认可候选路径，不视作已运行或批准生产概率。",
+        "featuresReady继续false；原产品、旧揭棋P0、普通和H11研究行为保持，scope/data/source变更即停。"
+      ],
+      "blockers": [
+        "尚无真实房间实例/返回继承与共同初始化/API补丁",
+        "未做旧门禁/三tuple/非法组合/旧源回归",
+        "安全与精确观察未实现，不能只开放准入就运行原12"
+      ]
+    },
+    {
+      "id": "MAIN-HC-R38-03",
+      "status": "SLICE_02_SPLIT_INTO_FOUR_BOUNDED_REPAIR_PACKAGES",
+      "owner": "main engine safety/closure",
+      "decision": "原D01确认直接继承，无新玩法投票；代码实施权限与安全依赖单列。优先bomb门槛，马腿几何独立局部修复；沙漏和路径完整结果共用闭合计划，不能捆绑成全局安全重写。",
+      "packages": [
+        {
+          "id": "R38-SAFE-BOMB",
+          "files": [
+            "src/hero-actions.ts"
+          ],
+          "dependency_checks": [
+            "src/remote-room.ts",
+            "src/rules.ts"
+          ],
+          "boundary": "按F03的副作用前受将门槛；拒绝不耗ammo/quota/warps/collapse/deadline；保留其他资格、沙漏自身解将和B4新窗口。",
+          "next": "具体受控代码实施与针对性回归；目前未写入。"
+        },
+        {
+          "id": "R38-SAFE-LEG",
+          "files": [
+            "src/rules.ts"
+          ],
+          "dependency_checks": [
+            "src/game.ts"
+          ],
+          "boundary": "四方向正确日字终点及board/landing/controller/ground/immunity/source限制；不以纯几何代替合法威胁完成性。",
+          "next": "最小合法正/负差异fixture与单元回归，不能记作原自然回放。"
+        },
+        {
+          "id": "R38-SAFE-HOURGLASS",
+          "files": [
+            "src/hero-actions.ts",
+            "src/settlement.ts",
+            "src/settlement-context.ts"
+          ],
+          "dependency_checks": [
+            "src/hero-progress.ts",
+            "src/rules.ts",
+            "src/remote-room.ts"
+          ],
+          "boundary": "原authority批次闭合证明→隔离计划→原六步及已承诺后续→完整安全→同一候选一次提交；拒绝无实际提交、资源/历史/RNG/时钟副作用。",
+          "blocker": "仍需具体闭合/外部上下文/RNG接口与存活对象effects保留源核；不批准重复执行整个技能或全分支背书。"
+        },
+        {
+          "id": "R38-SAFE-PATH",
+          "files": [
+            "src/game.ts",
+            "src/rules.ts",
+            "src/settlement.ts"
+          ],
+          "dependency_checks": [
+            "src/remote-room.ts"
+          ],
+          "boundary": "M01/M04路径→终点普通防御/返回→落位死亡同源计划；不得deferTurnEnd偷换普通来源或用未知作为安全。",
+          "blocker": "共用闭合计划及guard需具体补丁审查；完整将死/独立终局/层级继续未决。"
+        }
+      ]
+    },
+    {
+      "id": "MAIN-HC-R38-04",
+      "status": "SLICE_03_SEMANTIC_BOUNDARIES_ADOPTED_IMPLEMENTATION_AND_CLIENT_EVIDENCE_PENDING",
+      "owner": "main semantic observer; half_chaos evidence adapter; UI actual client channels",
+      "decision": "采用WP02的MAIN-CLOSED、END-CLOSED、D01-ACCEPTED/REFUSED文档语义与WP04/05缺证分类；不改旧事件语义，未实作hook。",
+      "files": [
+        "src/game.ts",
+        "src/settlement.ts",
+        "src/mechanism-observer.ts",
+        "src/remote-room.ts",
+        "scripts/scoring/policy-observation.ts"
+      ],
+      "read_only_dependencies": [
+        "src/turns.ts",
+        "scripts/scoring/policy-session.ts"
+      ],
+      "technical_boundary": [
+        "MAIN正常/弹回均在真实路径/落位/死亡与qualifyRiverArrival/generateGhosts后、finishFormalTurn前；child/forced/direct-death/rain另分类，不造正常点。",
+        "END在finishFormalTurn适用结束效果全闭合后且下一begin/clock前；no-op及两个closeDirectDeaths终局早退各自记录，未走阶段明确缺失。",
+        "D01记录真实房间请求前及同步返回/抛错后、driver tick前；同一state新请求与duplicate/timeout/terminal分别处理。",
+        "collector默认关闭；开/关authority/secret/RNG/原deadline与业务返回等价；收集失败须隔离于原业务控制流并标证据无效，不吞业务异常。",
+        "真实死亡动作证据外置受控；红黑playerRoomView、public messages/events、实际协议/客户端分别列证据；不公开私密trace，不把raw view当UI验收。"
+      ],
+      "deferred": [
+        "D01六阶段诊断点仅当原义务确需顺序证据再具体审查，不自动加全套事件",
+        "客户端提示/按钮/错误封装和真实wire重传/冲突未经本轮审计，UI未代填回执",
+        "完整重复键、不可回退裁判史、H15毕业跨越、H16/H05层级和完整搜索均不由本范围解决"
+      ]
+    },
+    {
+      "id": "MAIN-HC-R38-05",
+      "status": "REVIEW_AND_HANDOFF_AUTHORIZED_ENGINE_IMPLEMENTATION_AND_EXECUTION_NOT_GRANTED",
+      "owner": "main",
+      "decision": "本轮用户明确要求主线读取处理r38和核对技术范围；已完成工程审查与主线文档采用。既有主线工作约定无源码实施/运行授权，本次核对指令未明确将范围扩大到代码或引擎执行。以上是可审查的具体技术方案，不是AI自行给自己授予能力。",
+      "implementation": false,
+      "run": false,
+      "merge": false,
+      "gate_change": false,
+      "next": "在后续明确实施范围内，从指定14b隔离分支先做R38-SAFE-BOMB和局部门禁回归；再按依赖落实SLICE-01、马腿/闭合安全及SLICE-03。原pilot运行须另核实际代码/执行许可与全部先决。"
+    }
+  ],
+  "adopted_scope": [
+    "r38作为真实主线待办正式受理，r37固定源依赖/分支错位结论",
+    "原3tuple/12范围确认，不重复要求玩法批准",
+    "SLICE-01精确准入保护边界、SLICE-02四个补丁分拆及SLICE-03精确观察/渠道分类，作为主线工程计划",
+    "缺自然正例/缺刺激和未核通道逐项保留"
+  ],
+  "not_adopted": [
+    "未批准现有整分支代码、PR合并、全模式准入、产品发布或评分解冻",
+    "没有代码补丁、能力发行、featuresReady改动、引擎导入/运行或新测试执行",
+    "不把本报告变成其他工作线读取/采用回执"
+  ],
+  "validation_plan": {
+    "status": "PLANNED_NOT_EXECUTED",
+    "runtime": "Node >=24 from package.json; actual engine/test environment not initialized",
+    "order": [
+      "核目标分支固定基准与干净差分；只写批准路径",
+      "先小补丁针对性回归：bomb受将/原不受将资格/资源机会截止不变，马腿四方向/边界/合法落点；合成单元fixture不冒充自然12回放",
+      "准入正向仅三tuple，负向无能力/伪造/错room实例/actor/side/package/mutation/source/异步/嵌套/过期；原产品/旧P0/普通/H11门禁回归",
+      "闭合安全候选与实际提交一致，拒绝无权威/secret/资源/随机/批次/回调/截止副作用；各终局/未决分支只按来源处理",
+      "观察开关及日志失败隔离；先窄回归，再npm test全套引擎测试；不运行test:scoring来解冻评分",
+      "实际准入、安全、观察及运行许可均具备才执行MA-PD01→MA-DS03→MA-DS04；首个不符停止；其余9条及缺例另按原义务推进"
+    ],
+    "relevant_existing_tests": [
+      "tests/game-modes.test.ts",
+      "tests/hero-forms.test.ts",
+      "tests/remote-room.test.ts",
+      "tests/action-turn-contracts.test.ts",
+      "tests/time-line-contracts.test.ts",
+      "tests/mutation.test.ts",
+      "tests/hero-cross-settlement.test.ts",
+      "tests/scoring-mode-bridge.test.ts",
+      "tests/scoring-policy-adapter.test.ts",
+      "tests/scoring-mechanism.test.ts"
+    ],
+    "missing_natural_or_complete_cases": [
+      "PD-S31",
+      "PD-S32",
+      "DS-S16",
+      "DS-S22"
+    ],
+    "missing_stimuli": [
+      "PD-S02",
+      "PD-S12",
+      "PD-S17",
+      "PD-S35",
+      "DS-S01",
+      "DS-S06",
+      "DS-S12",
+      "DS-S20"
+    ]
+  },
+  "verification": {
+    "source_review": "V2 selected actual primary sources and immutable identities",
+    "geometry_reasoning": "V1 offline coordinate comparison; no engine",
+    "independent_review": "not performed",
+    "engine_imports": 0,
+    "engine_runs": 0,
+    "engine_code_writes": 0,
+    "engine_branch_created": false,
+    "PR_merges": 0,
+    "product_gate_changes": 0,
+    "old64": "UNRUN",
+    "old12_ready": 0,
+    "old12_executed": 0,
+    "document_validation": {
+      "nine_json_files_parse": true,
+      "eleven_changed_paths_bounded": true,
+      "thirteen_local_engine_snapshot_blobs_match_remote": true,
+      "original_ui_standard_state_and_main_gameplay_version_preserved": true,
+      "contract_pointer_paths_exist": true,
+      "remote_publication_readback": "pending_after_commit; use actual tool receipt and Git history"
+    }
+  },
+  "limitation_audit": {
+    "audit_trigger": "shared source/authorization/technical boundary and persistent main state update",
+    "risk_level": "high_shared_game_semantics; document action reversible",
+    "known_facts": "Pinned PR metadata/parents, complete tree identities and selected actual source paths above",
+    "user_statements": "Current read/process/source-dependency/scope instruction; prior exact scope and D01 confirmations",
+    "claim_register": "findings F01—F07 with per-claim grade/source; scopes are main AI engineering judgements, not new user gameplay confirmations",
+    "ai_interpretations": "Separate gate protection, local confirmed repair and broader closure/search work; review instruction permits source/doc work",
+    "assumptions": "Chosen14b stays available; later implementation must recheck live PR heads/source/data before writing",
+    "unknowns": [
+      "live behavior and all64 results",
+      "complete closure plan/RNG/WeakMap isolation",
+      "actual client/wire/error visibility and full terminal/search contracts"
+    ],
+    "competing_explanations": [
+      "branch gap is unmerged dependency chain, not evidence code was deleted",
+      "effective research gate deliberately rejects unsupported tuples",
+      "source missing guards are not runtime failure reproductions"
+    ],
+    "falsification_conditions": [
+      "changed PR heads/parents/blob identities",
+      "earlier valid code/run authorization recovered",
+      "actual runtime/source contract contradicts stated behavior"
+    ],
+    "verification_status": "partial overall; completed current source/scope review only",
+    "action_boundary": "bounded main/root coordination documents only; no game implementation/run/merge/gate permission",
+    "failure_conditions": [
+      "out-of-scope path changed",
+      "raw secret trace published",
+      "unknown branch marked PASS",
+      "other-line receipt fabricated"
+    ],
+    "residual_risk": "Static review cannot prove executable behavior, safe simulation purity or completeness of implementation",
+    "next_validation_action": "bounded first patch + focused regressions once explicit implementation/test scope exists; verify source again then"
+  },
+  "next": {
+    "id": "NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION",
+    "status": "CONCRETE_SCOPE_READY_IMPLEMENTATION_AND_ENGINE_EXECUTION_PENDING",
+    "first_patch": "R38-SAFE-BOMB",
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+    "gameplay_policy_delta": 0
+  },
+  "scoring_frozen": true,
+  "NET": "paused",
+  "containing_commit": null,
+  "containing_commit_note": "Resolve actual publication commit from Git history; no future self SHA"
+}

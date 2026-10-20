@@ -1,11 +1,11 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "round_closed_graduation_source_review_complete_policy_unresolved",
-  "resume_date_local": "2026-10-17",
+  "status": "main_resumed_r38_engineering_review_complete_implementation_pending",
+  "resume_date_local": "2026-10-20",
   "timezone": "Asia/Shanghai",
-  "base_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-  "user_authorization": "Current user requests main/four-line continuation, latest increments since1.53 and existing account recovery; continued quota recovery is not candidate approval. Same-scope main maintenance and GitHub incremental handoff inherited.",
+  "base_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+  "user_authorization": "继续主线工作，优先读取并处理半混乱模式最新 r38 工程交接，核对源码依赖与技术修复范围。保留各工作线现有成果。 本轮采用源核/技术范围与主线增量回传；未将核对指令记作业务实现或引擎执行许可。",
   "current_adjudication_record": "ADJUDICATION.json",
   "adjudication_version": "1.62",
   "design_stage": "S1.44",
@@ -35,8 +35,8 @@
   },
   "worklines": {
     "main": {
-      "next": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
-      "status": "this_round_closed_resume_from_fixed_entry_policy_unresolved"
+      "next": "NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION",
+      "status": "engineering_review_complete_next_bounded_implementation_scope"
     },
     "standard": {
       "next": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
@@ -112,12 +112,12 @@
       }
     },
     "half_chaos": {
-      "next": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
-      "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+      "next": "NEXT-HC-CHECK-MAIN-R38-ENGINE-SCOPE-RECEIPT",
+      "source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
       "new_current_return_found": true,
-      "actual_live_dialogue_progress": "r30 concrete document proposal completed; five packages and future3+9 replay suggestion, ready0/all64UNRUN. Three shared scope requests received; exact main1.61 prestart confirmation adopted per actual receipt. Own r30 round closed; next WP01 contract refinement documents only.",
-      "session_scope": "current_half_chaos_round_only_closed_after_r30",
-      "next_task_status": "NOT_STARTED_DOCUMENT_ONLY",
+      "actual_live_dialogue_progress": "Latest source-line published r38 engineering request actually read by this main conversation; main bounded plan available in R38_ENGINEERING_REVIEW. Source-line live dialogue or adoption unknown.",
+      "session_scope": "Source-line former r30 closeout below is historical; no current source conversation status inferred.",
+      "next_task_status": "MAIN_RESPONSE_PUBLISHED_ON_SUCCESS_SOURCE_RECEIVER_NOT_YET_OBSERVED",
       "session_closeout": {
         "revision": "HC-SESSION-CLOSEOUT-20261017-r3",
         "request_at_local": "2026-10-17T23:33:24+08:00",
@@ -155,7 +155,30 @@
         "main_receiving_r30": "unknown; no receiver receipt written by this line",
         "containing_closeout_commit": "Resolve from Git history after actual publication; no future self SHA."
       },
-      "unreturned_dialogue_progress": "unknown"
+      "unreturned_dialogue_progress": "unknown",
+      "previous_main_observation_r30": {
+        "next": "NEXT-HC-ADMISSION-CONTRACT-REFINEMENT",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "actual_live_dialogue_progress": "r30 concrete document proposal completed; five packages and future3+9 replay suggestion, ready0/all64UNRUN. Three shared scope requests received; exact main1.61 prestart confirmation adopted per actual receipt. Own r30 round closed; next WP01 contract refinement documents only.",
+        "session_scope": "current_half_chaos_round_only_closed_after_r30"
+      },
+      "latest_engineering_handoff_r38": {
+        "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+        "date_local": "2026-10-20",
+        "source_workline": "half_chaos",
+        "source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+        "source_revision": "HC-RETURN-20261020-r38",
+        "read_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+        "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+        "status": "actually_received_source_dependencies_verified_bounded_scope_adopted_as_plan",
+        "implementation_authorized": false,
+        "engine_execution_authorized": false,
+        "engine_code_changes": 0,
+        "engine_runs": 0,
+        "all64": "UNRUN",
+        "original12_executed": 0,
+        "other_workline_adoption": "unknown_no_receiver_receipt_written"
+      }
     },
     "ui": {
       "next": "B9 蓝牙权限永久拒绝，前往系统设置",
@@ -235,7 +258,9 @@
     "root_index_updated": true,
     "half_chaos_scope_note": "Current complete working body/state/source map published; deep private/historical archives not fully migrated.",
     "concurrent_standard_commit_preserved": "c109dc039ebee4e30add48b6a9a04059ac7aeb1b",
-    "concurrent_half_chaos_commit_preserved": "fef0e8e764d240a63353a11f451db3b56dd08c91"
+    "concurrent_half_chaos_commit_preserved": "fef0e8e764d240a63353a11f451db3b56dd08c91",
+    "r38_source_snapshot": "9e32933534858a54f7b5877130d36aed694f2806",
+    "r38_other_line_paths_untouched": true
   },
   "verification": {
     "record_and_candidate_source_equivalence_checked": true,
@@ -249,7 +274,9 @@
     "received_other_line_confirmed_designs": 0,
     "shared_rule_confirmation_from_mode_returns": 0,
     "current_phase_candidate_count": 0,
-    "current_phase_engine_runs": 0
+    "current_phase_engine_runs": 0,
+    "r38_source_review": "completed_V2_scoped",
+    "r38_implementation": false
   },
   "scoring": {
     "frozen": true,
@@ -262,9 +289,14 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
+  "next_action": "NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION: 从14b隔离分支的R38-SAFE-BOMB最小补丁接续，按本报告核定后续准入/安全/观察范围；具体实现与引擎执行授权仍单列，不因源核完成自授权限。",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
-  "limitation_audit_status": "partial; VALIDATION.json limitation_audit; source and document checks only, no independent/runtime verification",
+  "limitation_audit_status": {
+    "status": "partial_overall_current_source_review_completed",
+    "gate": "L3",
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/limitation_audit",
+    "runtime": "UNRUN"
+  },
   "last_confirmed_decision": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
   "confirmed_at_local": "2026-10-17T20:56:40+08:00",
   "resume_after_quota_at_local": "2026-10-16T15:23:28+08:00",
@@ -275,14 +307,14 @@
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
   "current_phase": {
-    "user_instruction": "额度已恢复，继续推进本轮工作，之后收束项目",
-    "at_local": "2026-10-17T23:33:59+08:00",
-    "candidate_approved": false,
-    "main_direct_new_confirmations": 0,
-    "external_shared_gameplay_received": 0,
-    "shared_wording_sources_received": 1,
+    "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+    "user_instruction": "继续主线工作，优先读取并处理半混乱模式最新 r38 工程交接，核对源码依赖与技术修复范围。保留各工作线现有成果。",
+    "date_local": "2026-10-20",
+    "scope": "main r38 source dependency and concrete technical repair boundary review",
+    "gameplay_policy_delta": 0,
     "game_code_changes": 0,
-    "engine_runs": 0
+    "engine_runs": 0,
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json"
   },
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
@@ -655,27 +687,80 @@
       "owner": "main",
       "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已源核精确三tuple与真实room/actor/side/完整随机/feature锁准入范围；保留产品及旧P0门禁，具体补丁与能力发行未实施。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     },
     {
       "id": "HC-SCOPE-WP02",
       "owner": "main",
       "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已源核并采用四类闭合观察、早退/异常/通道边界作为工程计划；新hook/开关等价与客户端证据未实现或验收。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     },
     {
       "id": "HC-SCOPE-WP03",
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已核原D01明确确认及四项源差异，拆为bomb/马腿/沙漏/路径四个有限补丁；完整闭合/终局/层级未决保留，无代码/运行授权。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     }
-  ]
+  ],
+  "previous_phase_before_r38": {
+    "user_instruction": "额度已恢复，继续推进本轮工作，之后收束项目",
+    "at_local": "2026-10-17T23:33:59+08:00",
+    "candidate_approved": false,
+    "main_direct_new_confirmations": 0,
+    "external_shared_gameplay_received": 0,
+    "shared_wording_sources_received": 1,
+    "game_code_changes": 0,
+    "engine_runs": 0
+  },
+  "deferred_gameplay_next": {
+    "id": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+    "task": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
+    "status": "preserved_priority_deferred_not_cancelled_or_approved"
+  },
+  "r38_engineering_review": {
+    "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+    "date_local": "2026-10-20",
+    "source_workline": "half_chaos",
+    "source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+    "source_revision": "HC-RETURN-20261020-r38",
+    "read_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "status": "actually_received_source_dependencies_verified_bounded_scope_adopted_as_plan",
+    "implementation_authorized": false,
+    "engine_execution_authorized": false,
+    "engine_code_changes": 0,
+    "engine_runs": 0,
+    "all64": "UNRUN",
+    "original12_executed": 0,
+    "other_workline_adoption": "unknown_no_receiver_receipt_written"
+  }
 }

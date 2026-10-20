@@ -1,17 +1,20 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "round_closed_no_active_main_candidate_graduation_policy_gap",
+  "status": "r38_technical_scope_review_complete_no_new_gameplay_candidate",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
-    "status": "not_started_after_round_closeout_no_candidate_selected",
-    "task": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
-    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/graduation_crossing_review",
-    "is_new_user_candidate": false
+    "id": "NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION",
+    "status": "CONCRETE_SCOPE_READY_IMPLEMENTATION_AND_ENGINE_EXECUTION_PENDING",
+    "first_patch": "R38-SAFE-BOMB",
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+    "gameplay_policy_delta": 0,
+    "task": "NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION: 从14b隔离分支的R38-SAFE-BOMB最小补丁接续，按本报告核定后续准入/安全/观察范围；具体实现与引擎执行授权仍单列，不因源核完成自授权限。",
+    "is_new_user_gameplay_candidate": false
   },
   "unresolved_questions": [
     "毕业跨越来源已核对；最小存活5/6→6/6后回溯的同次训练再达阈值与奖励撤销处理仍待明确，复工先形成准确提案。",
@@ -263,9 +266,9 @@
   ],
   "round_closeout": "LEZI-PROJECT-ROUND-CLOSEOUT-20261017",
   "last_user_instruction": {
-    "quote": "额度已恢复，继续推进本轮工作，之后收束项目",
-    "at_local": "2026-10-17T23:33:59+08:00",
-    "scope": "bounded work then round closeout, no candidate approval"
+    "quote": "继续主线工作，优先读取并处理半混乱模式最新 r38 工程交接，核对源码依赖与技术修复范围。保留各工作线现有成果。",
+    "date_local": "2026-10-20",
+    "scope": "main r38 read/process/source dependency and technical scope review; no new gameplay approval"
   },
   "shared_source_contract_review_queue": [
     {
@@ -273,27 +276,62 @@
       "owner": "main",
       "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已源核精确三tuple与真实room/actor/side/完整随机/feature锁准入范围；保留产品及旧P0门禁，具体补丁与能力发行未实施。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     },
     {
       "id": "HC-SCOPE-WP02",
       "owner": "main",
       "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已源核并采用四类闭合观察、早退/异常/通道边界作为工程计划；新hook/开关等价与客户端证据未实现或验收。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     },
     {
       "id": "HC-SCOPE-WP03",
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已核原D01明确确认及四项源差异，拆为bomb/马腿/沙漏/路径四个有限补丁；完整闭合/终局/层级未决保留，无代码/运行授权。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     }
-  ]
+  ],
+  "deferred_gameplay_work_item": {
+    "id": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+    "status": "not_started_after_round_closeout_no_candidate_selected",
+    "task": "恢复本复核和既有55确认，先以最小存活毕业分支形成准确的快照/同次训练再达阈值处理提案，明确收益是否被撤销及是否存在永久抹去成果；查到原明确确认则先按来源恢复，不重问。不得把本轮继续或收束视为选择。",
+    "source": "REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/graduation_crossing_review",
+    "is_new_user_candidate": false
+  },
+  "r38_technical_scope_plan": {
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "status": "reviewed_plan_not_implementation_permission",
+    "current_user_gameplay_candidate": null,
+    "engine_code_authorization": false,
+    "engine_run_authorization": false
+  }
 }

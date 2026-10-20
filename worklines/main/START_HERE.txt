@@ -1,3 +1,12 @@
+《乐子象棋》主线当前优先入口｜2026-10-20 r38工程交接处理
+
+已实际接收半混乱 HC-RETURN-20261020-r38，来源 f1402a9e687e00902222ca6f3e666774af2edca1；核对快照 9e32933534858a54f7b5877130d36aed694f2806。先读 CURRENT_STATE.json → R38_ENGINEERING_REVIEW.json → READ_RECEIPTS.json#/latest_by_source/half_chaos/latest_engineering_handoff_r38 → SHARED_COORDINATION.json#/half_chaos_engineering_r38，通用协作仍从 ../../collaboration/CURRENT.json 解析。
+源码PR4→5→6→7依赖与固定14b基准已核；后续隔离实现分支指定方案codex/hc-r38-bounded-repairs-20261020，尚未创建。SLICE-01精确三tuple研究准入、SLICE-02四项安全补丁分拆、SLICE-03闭合观察/通道边界已采用为主线工程计划，实际代码/运行/能力发行未获本次源核指令授权、均未实施；不得直接merge或放开featuresReady。
+下一 NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION：首个具体补丁R38-SAFE-BOMB，后续依完整计划与明确实施/执行范围推进。不重批原3tuple/12验证范围或原D01规则。64全部UNRUN、12已执行0；评分冻结、NET暂停。
+只改主线与根协调入口，半混乱/普通/UI原文件及素材保留；其他对话是否读取本报告未知，不代填回执。原主线55项确认和H15/H06毕业跨越未决保留，下一旧玩法任务只是按用户本轮优先级后移。
+
+以下为2026-10-17上一轮收束的历史接续正文，其r30/旧待批元数据不覆盖本次实际接收和各线最新入口：
+
 《乐子象棋》主线固定入口
 
 1. 本轮项目收束完成。主线1.62（S1.44），55项游戏确认保持。先读最新HEAD、../../START_HERE.md、根CURRENT_HANDOFF.json、本线CURRENT_STATE.json、ROUND_CLOSEOUT.md及PROJECT_WORK_AGREEMENT.md；通用协作从../../collaboration/CURRENT.json解析。保护当前对话未回传成果，不从旧文件名重复工作。

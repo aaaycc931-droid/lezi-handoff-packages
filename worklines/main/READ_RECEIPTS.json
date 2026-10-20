@@ -153,7 +153,7 @@
     "external_original_shared_received": 0
   },
   "other_workline_receipts_written": false,
-  "latest_coordination_base_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+  "latest_coordination_base_commit": "9e32933534858a54f7b5877130d36aed694f2806",
   "latest_by_source": {
     "half_chaos": {
       "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
@@ -593,7 +593,281 @@
         "new_local_user_approval": false,
         "implementation": false,
         "effect_on_original12": "none: no H15 or ordinaryH06; all original data unchanged"
-      }
+      },
+      "latest_engineering_handoff_r38": {
+        "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+        "date_local": "2026-10-20",
+        "source_workline": "half_chaos",
+        "source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+        "source_revision": "HC-RETURN-20261020-r38",
+        "read_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+        "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+        "status": "actually_received_source_dependencies_verified_bounded_scope_adopted_as_plan",
+        "implementation_authorized": false,
+        "engine_execution_authorized": false,
+        "engine_code_changes": 0,
+        "engine_runs": 0,
+        "all64": "UNRUN",
+        "original12_executed": 0,
+        "other_workline_adoption": "unknown_no_receiver_receipt_written",
+        "actual_read_files_and_sections": [
+          {
+            "path": "worklines/half_chaos/MAIN_ENGINE_IMPLEMENTATION_REVIEW_REQUEST.json",
+            "git_blob_sha": "3c32d2b1cc9a8036083d1c7be7b03d8b5d6cc10f",
+            "read_scope": "full; immutable original f140 rechecked"
+          },
+          {
+            "path": "worklines/half_chaos/ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json",
+            "git_blob_sha": "80729d0454b50f988996e670f0a345c23f9ad630",
+            "read_scope": "full; immutable r37 3fd8 rechecked"
+          },
+          {
+            "path": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
+            "git_blob_sha": "a29a20e303d3fd255ee338feaa9b60ae129e0c0a",
+            "read_sections": [
+              "exact_tuple_candidates",
+              "trusted_capability_proposal",
+              "call_chain_contract",
+              "random_binding_proposal",
+              "adapter_contract",
+              "negative_boundary_proposals",
+              "shared_owner_questions",
+              "validation_scope_plan_confirmation"
+            ]
+          },
+          {
+            "path": "worklines/half_chaos/PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json",
+            "git_blob_sha": "28fcbb8aa53f9b99779429730fe399945fac82da",
+            "read_sections": [
+              "boundary_contracts",
+              "auxiliary_boundaries",
+              "early_exit_catalog",
+              "d01_stage_evidence_option",
+              "evidence_envelope_proposal",
+              "passivity_contract",
+              "shared_owner_questions",
+              "remaining"
+            ]
+          },
+          {
+            "path": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+            "git_blob_sha": "f00098fa47f066cd29c64e1bb62f206dfc6acd76",
+            "read_sections": [
+              "original_confirmations",
+              "repair_contracts",
+              "isolated_plan_and_single_commit_candidate",
+              "refusal_invariant_groups",
+              "original_safety_case_expectations",
+              "shared_owner_questions",
+              "remaining"
+            ]
+          },
+          {
+            "path": "worklines/half_chaos/DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json",
+            "git_blob_sha": "9afe3a724b141d46893da14f7dff1678c877fcea",
+            "read_sections": [
+              "full"
+            ]
+          },
+          {
+            "path": "worklines/half_chaos/RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json",
+            "git_blob_sha": "2e1131d48f6f97adbab25d8bfe07b828109760f7",
+            "read_sections": [
+              "full"
+            ]
+          },
+          {
+            "path": "worklines/half_chaos/IMPLEMENTATION_SCOPE_PROPOSAL.json",
+            "git_blob_sha": "e198b5953a66053562f8419275d0fceb5f78d37c",
+            "read_sections": [
+              "work_packages",
+              "later_run_proposal",
+              "exclusions"
+            ]
+          },
+          {
+            "path": "worklines/half_chaos/CONFIRMATIONS.json",
+            "git_blob_sha": "760386e6735dcd90f1f244ee1e2ffbe6ca620e60",
+            "read_scope": "r31_validation_scope_plan_confirmation full object only"
+          }
+        ],
+        "actual_engine_source_reads": {
+          "repository": "aaaycc931-droid/jieqi-engine",
+          "fixed_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "default_branch": "main",
+          "default_head": "c25749d4f21d394c3d94486cfba1d786864083b6",
+          "stacked_pr_chain": [
+            {
+              "pr": 4,
+              "base": "codex/ui-android-apk-20261001",
+              "head": "codex/score-mechanism-20261010",
+              "head_sha": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+              "base_sha": "a3704459e8dbb08e1bb6fb9bcb1b169319a6d1bc",
+              "state": "open",
+              "draft": true
+            },
+            {
+              "pr": 5,
+              "base": "codex/score-mechanism-20261010",
+              "head": "codex/score-policy-adapter-20261011",
+              "head_sha": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+              "base_sha": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+              "state": "open",
+              "draft": true
+            },
+            {
+              "pr": 6,
+              "base": "codex/score-policy-adapter-20261011",
+              "head": "codex/score-mode-bridge-20261011",
+              "head_sha": "f1c01585ade8b4e17618399901d7283f37271459",
+              "base_sha": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+              "state": "open",
+              "draft": true
+            },
+            {
+              "pr": 7,
+              "base": "codex/score-mode-bridge-20261011",
+              "head": "codex/half-chaos-h11-b-clock-20261012",
+              "head_sha": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+              "base_sha": "f1c01585ade8b4e17618399901d7283f37271459",
+              "state": "open",
+              "draft": true
+            }
+          ],
+          "direct_parent_checks": {
+            "PR5": "parent=PR4 head",
+            "PR6": "parent=PR5 head",
+            "PR7": "parent=PR6 head",
+            "PR4": "parent ad735385929d61fa10def6f3e3bf877ef68299b1; not asserted single-commit child of moving UI base"
+          },
+          "recursive_tree_inventory": {
+            "truncated": false,
+            "default_blob_count": 66,
+            "development_blob_count": 526,
+            "added_paths": 460,
+            "modified_paths": 47,
+            "deleted_paths": 0,
+            "scope": "complete blob identity inventory at the two pinned commits; not semantic audit/mergeability/CI proof"
+          },
+          "critical_files": [
+            {
+              "path": "src/modes.ts",
+              "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+              "read_scope": "full"
+            },
+            {
+              "path": "src/research-source-context.ts",
+              "git_blob_sha": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+              "read_scope": "full"
+            },
+            {
+              "path": "src/remote-room.ts",
+              "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+              "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+            },
+            {
+              "path": "src/hero-actions.ts",
+              "git_blob_sha": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+              "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+            },
+            {
+              "path": "src/game.ts",
+              "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e",
+              "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+            },
+            {
+              "path": "src/rules.ts",
+              "git_blob_sha": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+              "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+            },
+            {
+              "path": "src/settlement.ts",
+              "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446",
+              "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+            },
+            {
+              "path": "src/settlement-context.ts",
+              "git_blob_sha": "58052bee1c08392f887fbf1e7f1ec7501c2d8cf4",
+              "read_scope": "full"
+            },
+            {
+              "path": "src/turns.ts",
+              "git_blob_sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612",
+              "read_scope": "full"
+            },
+            {
+              "path": "src/mechanism-observer.ts",
+              "git_blob_sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81",
+              "read_scope": "full"
+            },
+            {
+              "path": "scripts/scoring/policy-session.ts",
+              "git_blob_sha": "3aa254a0a442bdb12cf3f8a9d26fde039d7c646d",
+              "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+            },
+            {
+              "path": "scripts/scoring/policy-observation.ts",
+              "git_blob_sha": "63cedb68e1e28c0ce120f048d106371a8fd0113d",
+              "read_scope": "named functions/branches in findings; no complete-file semantic audit"
+            },
+            {
+              "path": "package.json",
+              "git_blob_sha": "34b26233ab157051caeae779771ddc0fceb24465",
+              "read_scope": "full runtime/test scripts"
+            }
+          ],
+          "direct_dependencies": [
+            {
+              "path": "src/room.ts",
+              "git_blob_sha": "093a1732eed4ee48a6d3487ce938d3c1d17a58c2",
+              "read_scope": "full"
+            },
+            {
+              "path": "src/setup.ts",
+              "git_blob_sha": "15df513e8204d48464c097453c7bf9b83748c9f5",
+              "read_scope": "full"
+            },
+            {
+              "path": "src/mutations.ts",
+              "git_blob_sha": "a433d6f562686a3e654dd9d003db562a4e30a424",
+              "read_scope": "full"
+            },
+            {
+              "path": "src/hero-forms.ts",
+              "git_blob_sha": "e42cb0854bd71dfaf4004268ec79e11c115c692d",
+              "read_scope": "feature lock/preparation and death RNG relevant sections"
+            },
+            {
+              "path": "src/hero-progress.ts",
+              "git_blob_sha": "5edea5f9c620b1eb35127ff7b146b1f84662f6dc",
+              "read_scope": "feature lock/preparation and death RNG relevant sections"
+            },
+            {
+              "path": "scripts/scoring/mode-fixture-loader.ts",
+              "git_blob_sha": "f6dfb963bfbae035740003955f094824f661aea8",
+              "read_scope": "full"
+            }
+          ]
+        },
+        "received_scope": "r38 five requests and r37 branch/source facts; WP01—05 named critical complete objects, not all routed64 data or full private history",
+        "adopted_scope": [
+          "r38作为真实主线待办正式受理，r37固定源依赖/分支错位结论",
+          "原3tuple/12范围确认，不重复要求玩法批准",
+          "SLICE-01精确准入保护边界、SLICE-02四个补丁分拆及SLICE-03精确观察/渠道分类，作为主线工程计划",
+          "缺自然正例/缺刺激和未核通道逐项保留"
+        ],
+        "not_adopted": [
+          "未批准现有整分支代码、PR合并、全模式准入、产品发布或评分解冻",
+          "没有代码补丁、能力发行、featuresReady改动、引擎导入/运行或新测试执行",
+          "不把本报告变成其他工作线读取/采用回执"
+        ],
+        "technical_disposition_reference": "worklines/main/R38_ENGINEERING_REVIEW.json#/request_dispositions",
+        "full_gameplay_corpus_reaudit": false,
+        "other_receiver_receipts_written": false
+      },
+      "latest_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "latest_revision": "HC-RETURN-20261020-r38",
+      "historical_summary_note": "Original root source_commit/revision and stage_report remain scoped historical receipts; current r38 engineering receipt is latest_engineering_handoff_r38, not a retraction or full-corpus audit."
     },
     "standard": {
       "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
@@ -1366,27 +1640,71 @@
       "owner": "main",
       "request": "Review lawful exact tuple/room/actor trusted research admission and source adapter boundary; retain product/P0 gates. No implementation approval inferred.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/0",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已源核精确三tuple与真实room/actor/side/完整随机/feature锁准入范围；保留产品及旧P0门禁，具体补丁与能力发行未实施。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP01可继续整理精确房间/模式/双方身份/组合/可信能力与真实调用链的文档契约；主线本轮未批准新准入、更改门禁或启用任何组合。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     },
     {
       "id": "HC-SCOPE-WP02",
       "owner": "main",
       "request": "Review precise post-committed-main and post-end-before-next-begin passive capture points, early exits and D01 stage evidence; retain existing event semantics.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/1",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已源核并采用四类闭合观察、早退/异常/通道边界作为工程计划；新hook/开关等价与客户端证据未实现或验收。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     },
     {
       "id": "HC-SCOPE-WP03",
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
-      "main_receipt_source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-      "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+      "disposition": "已核原D01明确确认及四项源差异，拆为bomb/马腿/沙漏/路径四个有限补丁；完整闭合/终局/层级未决保留，无代码/运行授权。",
+      "previous_disposition": {
+        "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
+        "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+        "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
+      },
+      "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
     }
-  ]
+  ],
+  "current_phase_source_reads_r38": {
+    "commit": "9e32933534858a54f7b5877130d36aed694f2806",
+    "collaboration_revision": "2026-10-17.v0.13",
+    "collaboration_blob": "54e800ebd02a83ded24a4c076c759c8193767fd5",
+    "modules": [
+      "INTEGRATED_START",
+      "TASK_ROUTES",
+      "PART-3_PROTOCOL",
+      "PROJECT_WORK_AGREEMENT",
+      "GITHUB_HANDOFF_WORKFLOW",
+      "AUTHORIZATION_AND_ADOPTION",
+      "BASELINE_DELTA_CHECK",
+      "MANDATORY_PRECHECK",
+      "TEMPORAL_OPPORTUNITY_CHECK",
+      "AI_LIMITATION_CONTROL",
+      "PART-6_CURRENT_STATE",
+      "CONFLICT_RESOLUTION",
+      "VERSION_POLICY",
+      "RELEASE_CHECK"
+    ],
+    "main_scope": "current state/entry/work agreement; previous closeout/receipts/coordination/source/return/pending/validation current fields and necessary scopes only; old historical narratives not fully audited",
+    "source_read_reference": "worklines/main/R38_ENGINEERING_REVIEW.json#/read_scope"
+  }
 }

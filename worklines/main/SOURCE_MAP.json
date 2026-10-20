@@ -288,7 +288,7 @@
     }
   ],
   "current_record_version": "1.62",
-  "latest_maintenance_base_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
+  "latest_maintenance_base_commit": "9e32933534858a54f7b5877130d36aed694f2806",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
@@ -593,11 +593,27 @@
     }
   },
   "current_collaboration_read": {
-    "commit": "76a4279586ca40db88198e40d371de32c3766b11",
+    "commit": "9e32933534858a54f7b5877130d36aed694f2806",
     "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
     "working_revision": "2026-10-17.v0.13",
     "git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
-    "read_scope": "complete v0.13 MANDATORY_PRECHECK and AI_LIMITATION_CONTROL; full v0.12-to-v0.13 diff; unchanged authorization/handoff/maintenance modules reused"
+    "read_scope": [
+      "INTEGRATED_START",
+      "TASK_ROUTES",
+      "PART-3_PROTOCOL",
+      "PROJECT_WORK_AGREEMENT",
+      "GITHUB_HANDOFF_WORKFLOW",
+      "AUTHORIZATION_AND_ADOPTION",
+      "BASELINE_DELTA_CHECK",
+      "MANDATORY_PRECHECK",
+      "TEMPORAL_OPPORTUNITY_CHECK",
+      "AI_LIMITATION_CONTROL",
+      "PART-6_CURRENT_STATE",
+      "CONFLICT_RESOLUTION",
+      "VERSION_POLICY",
+      "RELEASE_CHECK"
+    ],
+    "formal_baseline": "1.8.0"
   },
   "latest_ui_metadata_read": {
     "source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
@@ -961,5 +977,38 @@
     "git_blob_sha": "19c1c932353c404c9635cef9ca3974ab1de0c07c",
     "read_scope": "Full exact wording-only original selection and three-workline scope clarification."
   },
-  "round_closeout_summary": "ROUND_CLOSEOUT.md"
+  "round_closeout_summary": "ROUND_CLOSEOUT.md",
+  "r38_engineering_review_sources": {
+    "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+    "date_local": "2026-10-20",
+    "source_workline": "half_chaos",
+    "source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+    "source_revision": "HC-RETURN-20261020-r38",
+    "read_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "status": "actually_received_source_dependencies_verified_bounded_scope_adopted_as_plan",
+    "implementation_authorized": false,
+    "engine_execution_authorized": false,
+    "engine_code_changes": 0,
+    "engine_runs": 0,
+    "all64": "UNRUN",
+    "original12_executed": 0,
+    "other_workline_adoption": "unknown_no_receiver_receipt_written",
+    "source_request_blob": "3c32d2b1cc9a8036083d1c7be7b03d8b5d6cc10f",
+    "source_report_blob": "80729d0454b50f988996e670f0a345c23f9ad630",
+    "read_scope": "worklines/main/R38_ENGINEERING_REVIEW.json#/read_scope",
+    "engine_source": "worklines/main/R38_ENGINEERING_REVIEW.json#/source_baseline",
+    "original_confirmations": [
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "scope": "full original question/answer, guard and policy"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_BOMB_IN_CHECK_CONFIRMATION_20261016.json",
+        "git_blob_sha": "5963a1d59b2885eccc5771e201e652b3bcb19329",
+        "scope": "full original question/answer, guard and policy"
+      }
+    ]
+  }
 }

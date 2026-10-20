@@ -1,5 +1,7 @@
 # 乐子象棋交接仓库
 
+2026-10-20主线优先处理半混乱最新r38工程交接，已实际接收并核对PR4→5→6→7依赖及固定14b源码。[工程审查与具体范围](worklines/main/R38_ENGINEERING_REVIEW.json)和[主线实际回执](worklines/main/READ_RECEIPTS.json)已写入本次增量；采用的是受控准入/四项安全补丁/被动观察的工程计划，代码、引擎运行、门禁放开和PR合并均未实施或据此授权。64项仍UNRUN、12回放执行0。各线原成果保留，后文旧收束摘要按历史范围使用；当前任务以各线固定入口/实际状态为准。
+
 当前工作入口：[主线](worklines/main/START_HERE.txt) · [半混乱](worklines/half_chaos/START_HERE.txt) · [UI](worklines/ui/START_HERE.txt) · [普通象棋](worklines/standard/START_HERE.txt)。本账号负责主线/半混乱，另一个账号负责UI/普通。主线业务源码仍在jieqi-engine仓库；此处管理交接和素材。
 
 当前资料只放固定工作目录，素材只存唯一内容，旧轮次按[历史索引](archive/INDEX.json)查固定提交。更新按[连接器流程](docs/WORKFLOW.md)执行。
