@@ -2670,6 +2670,14 @@ HC-EVID-Q01—04交主线核不可回退历史与稳定本体、请求payload绑
 
 既有7个直接原规格全部仍UNRUN；同原来源其它DS-S05/09/11/24只是回归旁证，不可拿单个中盘合成fixture冒充原MA-DS04自然可达完整回放。原DS-S20缺“完成主行动后重投”的独立指令、DS-S22缺完整非法施放者/目标/距离/弹药/名额负例仍明确缺证。本轮不增加输入、不改原64/12/210/初始见证、无游戏新确认。静态/V2来源检查与V1取证路由并非真实测试；后续代码/实际回放全部需单独技术授权。下一断点仍NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION；首次补丁主线责任，不替主线填回执。
 
+### 8.66 r41 本轮对话收束（保护r40新增成果）
+
+用户2026-10-20 23:11（北京时间）指示“收束本轮对话”。实际复核最新远端HEAD `29c76e03912bca50130cc0f04be43461108a31ba`，发现本线已更新至r40：`R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json`将原MA-DS04 B3受将禁投、正常应将、B4新窗口合法投弹与原DS-S17—22/28静态证据对应起来。此为已有成果，须保留，不能当成运行通过或本轮新代码提交。
+
+本次对话此前r37查明PR4→5→6→7叠加基线，r38经`MAIN_ENGINE_IMPLEMENTATION_REVIEW_REQUEST.json`正式向主线交接，r39核主线真实提交`4dfeb73211a5f25e75a55fdc5e2bc4d623e1959b`及`worklines/main/R38_ENGINEERING_REVIEW.json`：主线已接收并采用SLICE-01三精确tuple研究准入、SLICE-02有限安全补丁、SLICE-03观察合同为工程实施计划，尚未批准或执行游戏代码/测试/合并/模式功能放行。
+
+对话收束不增加玩法确认或工程授权，不停止主线/普通/UI任务。原CONFIRMATIONS、ASSERTION_EVIDENCE_MATRIX、ACCEPTANCE_SCOPE和REPLAY_ACTION_DATA保持原blob；64全部UNRUN，12回放执行0，210检查点仍为待观察；featuresReady仍false，评分冻结、NET暂停。本线不代填主线接收r41的回执。下一`NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION`：下次从最新GitHub HEAD和固定入口恢复，先核主线具体代码/运行权限、隔离分支与R38-SAFE-BOMB实际补丁及回归；有真实证据再按r40原B3/B4静态清单独立核验，无则仅来源/文档工作，不重复向主线发r38。
+
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
 | ID | 责任 | 需要协调的精确问题 | 本线已做 |
