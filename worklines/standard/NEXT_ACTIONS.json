@@ -3,7 +3,7 @@
     "id": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE",
     "subject": "H21无敌随机授鳞抽数及抽样可复现性来源追溯",
     "action": "阅读H21完整早期权威规则及可访问的实现/测试原件，判断“随机选择最多4枚”实际如何选数量、候选池与概率、是否存在可重放证据；只读，不运行引擎、不改代码；复验NP合同如有真实来源支持，实质合法结果分歧才给共享候选审批。",
-    "status": "ready_not_started",
+    "status": "ready_not_started_paused_until_user_continuation",
     "implementation_authorized": false
   },
   "preserve": "当前对话已收束；普通31/本线直接共享13，本对话两项共同确认及原候选/原话/来源、ES限定复核、全部历史成果保留。收束不新增批准；下一来源顺序复核尚未开始，待用户明确继续后接续。评分冻结、NET暂停，全部旧未运行规格保持UNRUN。",
@@ -19,7 +19,7 @@
     "new_ordinary_confirmations": 0,
     "verification": "V2 approval; AS/ES and all prior specs UNRUN"
   },
-  "status": "active_np_contract_complete_next_rng_provenance",
+  "status": "closed_current_dialogue_20261020_next_rng_provenance_pending",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261019-r1",
     "status": "closed_current_conversation",
@@ -155,5 +155,16 @@
     "new_confirmations": 0,
     "ordinary_confirmations": 31,
     "direct_shared_confirmations": 13
+  },
+  "session_closeout_20261020": {
+    "id": "STD-SESSION-CLOSEOUT-20261020-NP-RNG",
+    "review": "reviews/STD_SESSION_CLOSEOUT_20261020_NP_RNG_HANDOFF.md",
+    "scope": "current_dialogue_only",
+    "next": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE",
+    "next_started": false,
+    "approvals_delta": 0,
+    "formal_tests": "UNRUN",
+    "scoring": "frozen",
+    "NET": "paused"
   }
 }
