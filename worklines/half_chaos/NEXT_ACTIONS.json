@@ -1,9 +1,9 @@
 {
-  "revision": "HC-RETURN-20261020-r38",
+  "revision": "HC-RECEIPT-20261020-r39",
   "next_independent_task": {
-    "id": "NEXT-HC-CHECK-MAIN-R38-ENGINE-SCOPE-RECEIPT",
-    "status": "PENDING_MAIN_ACTUAL_READ_AND_DECISION",
-    "action": "从主线最新HEAD和主线真实READ_RECEIPTS核r38是否已读/采用、具体代码源和准入/安全/观察技术授权，未证实不擅自进行代码与引擎工作；原主线可独立处理此协调。"
+    "id": "NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION",
+    "status": "MAIN_ENGINE_CODE_AND_RUN_AUTHORIZATION_PENDING",
+    "action": "不重复请求主线接收r38；等待主线在明确代码许可下实施R38-SAFE-BOMB（固定14b隔离源码）并产生可信提交/回归证据。本线可核原64/12和三组合固定映射等只读准备，主线真实更新到来后再按回执接入。没有授权不可擅改代码或运行。"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1326,5 +1326,46 @@
     "requests": 5,
     "engine_code_changes": 0,
     "engine_runs": 0
+  },
+  "r39_main_r38_receipt": {
+    "revision": "HC-RECEIPT-20261020-r39",
+    "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+    "source_review_commit": "4dfeb73211a5f25e75a55fdc5e2bc4d623e1959b",
+    "main_report_path": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "main_report_blob": "ecf0a97ff953b4141e20e4eb536ea6f533bbd5a0",
+    "main_receipt_path": "worklines/main/READ_RECEIPTS.json",
+    "main_receipt_blob": "db31cf3c699cb0dcfafdce2c81077b92d15873eb",
+    "main_shared_path": "worklines/main/SHARED_COORDINATION.json",
+    "main_shared_blob": "8ec11ce05ee527b9bf9dea60681641c819b61f27",
+    "source_sender_revision": "HC-RETURN-20261020-r38",
+    "main_actual_read": true,
+    "main_received": true,
+    "main_plan_adopted": true,
+    "main_implementation_authorized": false,
+    "engine_execution_authorized": false,
+    "engine_code_changes": 0,
+    "engine_runs": 0,
+    "mode_featuresReady": false,
+    "gameplay_approvals_added": 0,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "engine_pr7_head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "approved_only_for_planning": [
+      "pin_PR4_to_PR7_chain",
+      "future_isolated_branch_choice_not_created",
+      "SLICE_01_three_exact_tuple_research_admission_plan",
+      "SLICE_02_four_bounded_repairs",
+      "SLICE_03_passive_evidence_contract"
+    ],
+    "first_main_future_patch": "R38-SAFE-BOMB",
+    "report_status": "ACTUALLY_RECEIVED_SOURCE_REVIEW_COMPLETE_BOUNDED_TECHNICAL_PLAN_NOT_IMPLEMENTED",
+    "not_claimed": [
+      "engine_build",
+      "code_patch",
+      "actual_replay",
+      "main_line_self_granted_authorization",
+      "new_gameplay_rule",
+      "full_mode_acceptance"
+    ]
   }
 }
