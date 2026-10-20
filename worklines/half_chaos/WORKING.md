@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261020-r34
+revision: HC-DESIGN-03-20261020-r35
 date_local: 2026-10-20
 timezone: Asia/Shanghai
 primary_reader: AI
-status: wp04_evidence_document_prepared_all64_unrun
+status: wp05_document_complete_all64_unrun
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -18,6 +18,8 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 # 半混乱揭棋：时序、权限、合法前缀与剩余适配
 
 ## 0. 当前入口与接续
+
+2026-10-20 本轮继r34后完成r35 WP05缺证合同，见§8.60及RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json；五份WP文档均已准备，全部64UNRUN、可执行回放0。旧r34/r5是历史来源，不视为当前下一任务。当前下一项为主线依赖与实现准入文档核查，未获代码/引擎/门禁授权。
 
 2026-10-20 用户“进行象棋混乱模式推进”，按固定半混乱入口从r33/r5恢复，完成r34 WP04文档合同 `DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json`；本轮只推进原授权文档，不视为新玩法/技术实现/运行批准。实际新增证据类HC-EVID-01/02/03对应OG04/06/05，原64全部UNRUN；本轮下一WP05缺证边界，仍文档限定。此前r5收束是上一会话状态，原文保留如下作为历史。
 
@@ -2589,6 +2591,24 @@ HC-SAFE-Q01—05在RETURN_TO_MAIN中交主线核共用闭合、批次/RNG、有�
 HC-EVID-Q01—04交主线核不可回退历史与稳定本体、请求payload绑定和错误优先级、真实UI/客户端输出通道，以及WP02被动采样可行性；不是新共享裁决确认。PD-S31/32、DS-S16/22和其余自然/负例缺口归WP05保留；原三组/12回放/210检查点完全不变。
 
 验证：JSON引用及原矩阵OG04/05/06各4/2/7映射、既有文档身份与合同语义静态核对；V2有限源事实＋V1同一AI建议，独立审查/引擎/网络/UI/真实运行均未完成。全部64UNRUN，评分冻结、NET暂停，业务改动0。下一`NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT`（WP05）未开始，仍只限文档；前次r5收束未被撤销或重写为本轮批准。
+
+### 8.60 WP05缺自然例、未声明刺激与共享边界的限定整理（r35）
+
+用户2026-10-20继续同意进行下一步，准入仅为此前指定的WP05文档推进，没有代码、运行、接口、评分或新玩法批准。单一详细源：`RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json`，延续`IMPLEMENTATION_SCOPE_PROPOSAL` WP05、`ASSERTION_EVIDENCE_MATRIX` 64项、`ACCEPTANCE_SCOPE`、`REPLAY_ACTION_DATA`、WP01—04合同。已有三组合法two-hero/one-mutation、12回放、210点与原6输入不改。
+
+本次完整保留四类主要待补：
+- PD-S31：原返回额外落位效果缺完整合法自然正例；
+- PD-S32：来源返格冲突缺自然正例，也是现有唯一无直接自然检查点的原规格；
+- DS-S16：同一窗口先成功安全、后另次请求不安全的真实沙漏合法连续前缀缺失，内部六步也未实际观察；
+- DS-S22：投弹无效施放者/目标/距离/弹药/全队名额等负例集合未声明完整实操。
+
+矩阵原八项附加未声明刺激逐项保留：PD-S02/12/17/35与DS-S01/06/12/20。特别DS-S12原同不安全局面两次新请求不等于同一产品命令重传；DS-S20缺主行动后旧窗口重投实际刺激；PD-S35与DS-S12缺真实冲突ID及客户端回包证据。不得为凑覆盖新增中盘注入、第三英雄、第二畸变、研究冲突码或自创产品错误码。所有已声明断言的反事实说明不记为已执行。
+
+主线保留未决：EI06特殊路径tier2与H16/H05技能层级、完整应将/将死与独立终局、真实原子顺序、裁判正式时钟/压力/重复键、H15/H06毕业跨越来源以及WP01—04具体准入/采样/修复/产品协议选型。旧成功启动前恢复和死亡失败两条确认依自身guard继承，不能把毕业跨越结论从其推导，也不能恢复旧吞机会建议。本文不代填主线对r34/35接收采用。
+
+当前五个工作包WP01—WP05均**仅完成文档设计**；实际业务代码更改0，计划12回放已执行0，原64规格全UNRUN、可执行0，七类G-CODE/INIT/ACTION/STATE/VIEW/PHASE/EVIDENCE技术准入尚未全部满足，评分冻结、NET暂停。源事实为固定对象V2与同一AI规则整理V1，没有新鲜完整代码审查、独立验收、真实引擎/客户端/传输运行。
+
+完工评估边界：五包资料完成不等于项目完成百分比。实现与验收需主线明确技术界限，建立合法实际初始化与可信准入、有限安全修复和被动观察，未来从MA-PD01/MA-DS03/MA-DS04三个pilot开始，随后其余9个原回放及64项各义务真实分项核验，并处理缺自然例/终局/隐私/版本/回归；当前无法根据文档阶段推准确日历。下一`NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW`，限定主线依赖与准入文档审查，NOT_STARTED_DOCUMENT_ONLY_MAIN_COORDINATION_REQUIRED，未开启代码实施/运行。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
