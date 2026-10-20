@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-RETURN-20261020-r38",
+  "revision": "HC-RECEIPT-20261020-r39",
   "workline": "half_chaos",
   "date_local": "2026-10-20",
   "timezone": "Asia/Shanghai",
-  "status": "main_engine_scope_handoff_published_awaiting_receiver",
+  "status": "main_r38_receipt_verified_plan_adopted_engine_implementation_pending",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -177,7 +177,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "NEXT-HC-CHECK-MAIN-R38-ENGINE-SCOPE-RECEIPT：主线实际读取回执与SLICE-01/02/03授权范围核查；未出现主线真实采用不能进入游戏引擎修改或运行，仍保持64UNRUN。",
+  "next_action": "NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION：主线r38已真实接收与限定方案采用，首补丁R38-SAFE-BOMB由主线引擎责任线在具体授权后推进。本线保留原64全部UNRUN/12已执行0与三组合证据；后续按主线真实补丁/回执同步验收，不重开源分支问题、不代办共享代码修改。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -2397,5 +2397,46 @@
     "engine_runs": 0,
     "engine_edits": 0,
     "rule_changes": 0
+  },
+  "main_r38_receipt_reconciled": {
+    "revision": "HC-RECEIPT-20261020-r39",
+    "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+    "source_review_commit": "4dfeb73211a5f25e75a55fdc5e2bc4d623e1959b",
+    "main_report_path": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "main_report_blob": "ecf0a97ff953b4141e20e4eb536ea6f533bbd5a0",
+    "main_receipt_path": "worklines/main/READ_RECEIPTS.json",
+    "main_receipt_blob": "db31cf3c699cb0dcfafdce2c81077b92d15873eb",
+    "main_shared_path": "worklines/main/SHARED_COORDINATION.json",
+    "main_shared_blob": "8ec11ce05ee527b9bf9dea60681641c819b61f27",
+    "source_sender_revision": "HC-RETURN-20261020-r38",
+    "main_actual_read": true,
+    "main_received": true,
+    "main_plan_adopted": true,
+    "main_implementation_authorized": false,
+    "engine_execution_authorized": false,
+    "engine_code_changes": 0,
+    "engine_runs": 0,
+    "mode_featuresReady": false,
+    "gameplay_approvals_added": 0,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "engine_pr7_head": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "approved_only_for_planning": [
+      "pin_PR4_to_PR7_chain",
+      "future_isolated_branch_choice_not_created",
+      "SLICE_01_three_exact_tuple_research_admission_plan",
+      "SLICE_02_four_bounded_repairs",
+      "SLICE_03_passive_evidence_contract"
+    ],
+    "first_main_future_patch": "R38-SAFE-BOMB",
+    "report_status": "ACTUALLY_RECEIVED_SOURCE_REVIEW_COMPLETE_BOUNDED_TECHNICAL_PLAN_NOT_IMPLEMENTED",
+    "not_claimed": [
+      "engine_build",
+      "code_patch",
+      "actual_replay",
+      "main_line_self_granted_authorization",
+      "new_gameplay_rule",
+      "full_mode_acceptance"
+    ]
   }
 }
