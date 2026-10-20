@@ -1,0 +1,269 @@
+{
+  "schema": "lezi.hc.wp04.delivery_evidence_contract_proposal.v1",
+  "revision": "HC-DESIGN-03-20261020-r34",
+  "task_completed": "NEXT-HC-DELIVERY-EVIDENCE-CONTRACT-REFINEMENT",
+  "date_local": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "work_package": "WP04",
+  "status": "DOCUMENT_CONTRACT_PREPARED_NOT_TECHNICAL_APPROVAL_OR_RUNTIME",
+  "handoff_source_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
+  "scope": {
+    "authority": "继承半混乱固定约定：原已确认三组合法组合与12条回放、64既有规格；本轮继续仅批准文件设计/源核对/原本线增量写回。",
+    "constraints": [
+      "不新增或改变游戏规则、技能、请求、产品消息协议、客户端提示与错误码",
+      "不写业务代码、不导入或运行引擎、不开门禁、不改其他线或主线共享规则",
+      "历史是外置受控证据，不冒充权威不可回退裁判历史/重复键实现",
+      "真实玩家输出与仅服务端可看的秘密状态必须分通道保存，默认不外泄",
+      "WP01/02/03仅完成文档候选，具体接口/修复/运行均待主线；所有64规格UNRUN"
+    ],
+    "new_rule_confirmations": 0,
+    "new_specifications": 0,
+    "new_replay_commands": 0,
+    "implemented_hooks": 0,
+    "engine_runs": 0
+  },
+  "source_evidence": {
+    "matrix": {
+      "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce"
+    },
+    "mapping": {
+      "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+      "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4"
+    },
+    "actions": {
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027"
+    },
+    "implementation_scope": {
+      "path": "worklines/half_chaos/IMPLEMENTATION_SCOPE_PROPOSAL.json",
+      "git_blob_sha": "e198b5953a66053562f8419275d0fceb5f78d37c"
+    },
+    "wp02": {
+      "path": "worklines/half_chaos/PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json",
+      "git_blob_sha": "28fcbb8aa53f9b99779429730fe399945fac82da"
+    },
+    "wp03": {
+      "path": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+      "git_blob_sha": "f00098fa47f066cd29c64e1bb62f206dfc6acd76"
+    },
+    "engine_source": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "branch": "codex/half-chaos-h11-b-clock-20261012",
+      "fixed_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "read_scope": "继承WP02/03静态来源函数及哈希，非本轮全业务代码审计、独立检查或运行"
+    }
+  },
+  "gap_routes": [
+    {
+      "id": "OG04",
+      "title": "死亡后复活导致当前captured集合不能证明历史",
+      "original_spec_ids": [
+        "DS-S06",
+        "DS-S25",
+        "DS-S26",
+        "PD-S08"
+      ],
+      "source": "src/hero-actions.ts hourglass captured filter",
+      "runtime_reproduced": false
+    },
+    {
+      "id": "OG05",
+      "title": "产品重传、冲突ID、错误封装与payload绑定未完整证实",
+      "original_spec_ids": [
+        "DS-S12",
+        "PD-S35"
+      ],
+      "source": "src/remote-room.ts expiredFormalAction/processedActions/duplicate/RuleError",
+      "runtime_reproduced": false
+    },
+    {
+      "id": "OG06",
+      "title": "双方真实玩家输出、事件与客户端通道绑定未核",
+      "original_spec_ids": [
+        "DS-S01",
+        "DS-S12",
+        "DS-S27",
+        "DS-S28",
+        "PD-S24",
+        "PD-S29",
+        "PD-S35"
+      ],
+      "source": "src/remote-room.ts playerRoomView",
+      "runtime_reproduced": false
+    }
+  ],
+  "contracts": [
+    {
+      "id": "HC-EVID-01",
+      "name": "死亡—复活前史的独立证据链",
+      "original_gap": "OG04",
+      "scope": "仅合法实际自然前缀和现有动作；DS05复活同一受训/已现身勇士的相关证据，与非勇士、龙等独立损失并列比对",
+      "proposed_evidence": [
+        "在死亡动作被权威成功提交的真实时间点，外置受控保存不可被后续当前列表清除的原始动作/消灭批次/自动事件证据及其顺序与来源；不更改产品state以凑历史",
+        "建立本次运行局内稳定本体映射的证据：死亡前存在、实际死亡、当前captured变化、复活前与复活后锚点/本体对应；只见相同pieceId字符串不自动证明同一开局本体",
+        "区分真实死亡记录、当前死者库存、死亡资源效果与最后结果；沙漏复活后当前captured不再有该棋，不能删掉独立死亡事实",
+        "保留非勇士、已死龙、历史崩坏/污染及原时限的前后对照；外部证据仅用于检验该自然前缀，不升级成全局正式裁判历史、重复键或永久审计API"
+      ],
+      "accepted_only_if": "将来取得实际合法原始前缀、可信动作级真实死亡与复活相关证据、正确同本体及剩余损失字段可逐项核；当前无运行，不标通过",
+      "refused_inference": [
+        "复活后captured无该棋⇒该棋从未死过",
+        "离线日志保存⇒主线历史不可回退或完整重复键已落地",
+        "抽象bodyId值⇒现引擎已正确持久化开局本体"
+      ]
+    },
+    {
+      "id": "HC-EVID-02",
+      "name": "双方玩家真实可见输出的通道证明",
+      "original_gap": "OG06",
+      "scope": "原PD05/PD06的公开请求相同但秘密身份不同的成对变体；以及与原既有规格有关的玩家输出",
+      "proposed_evidence": [
+        "对每个实际请求关联受控权威状态与secret，分别原样留取红玩家playerRoomView、黑玩家playerRoomView、其实际可见公开事件与实际消息/结果；不得把authority或secret作为任何玩家回包",
+        "客户端按钮、选择器、提示、公开时间、错误可见文本及传输序列化分别列渠道；未追到客户端/网络证据就保留'未核'，raw view检查不能代替",
+        "逐字段说明公开许可、可见方与变化原因；只允许在已证明不承载信息的随机句柄/墙钟差异上作受控归一，其他未知字段不得添加旧P0白名单或直接遮蔽",
+        "成对公开输入比较要同时审查红、黑两端的原始可见差异；正确差异和禁止泄漏的差异须按已有原规则/现行作用域分开，不用简单JSON等价替代语义许可",
+        "禁止借证据采集把秘密暗身份/开局真种/内部ID发至客户端或正式公开机制事件"
+      ],
+      "accepted_only_if": "将来能对应真实运行的红黑raw视图+全部相关可见传输/客户端通道，获规则支持的逐字段差异许可并完成对照；当前缺客户端/协议源检查",
+      "refused_inference": [
+        "服务端raw view未见secret⇒客户端不会显示泄漏",
+        "两组归一后字符串一致⇒秘密视图安全",
+        "旧P0投影过滤字段⇒这些真实字段无须核"
+      ]
+    },
+    {
+      "id": "HC-EVID-03",
+      "name": "新请求、相同命令重传与ID载荷冲突分型",
+      "original_gap": "OG05",
+      "proposed_cases": [
+        {
+          "kind": "FRESH_SAME_STATE",
+          "definition": "在实际仍不安全的状态上发起另一个新请求（新actionId或独立合法身份），例如原DS01→DS02 R4的两次；应按当次真实资格判定",
+          "not_equivalent_to": "相同命令原样重传"
+        },
+        {
+          "kind": "EXACT_RETRANSMISSION",
+          "definition": "同一已发送请求的actor/room/version/actionId/payload原样再次送达产品真实入口；先核产品对相同消息如何识别，再观察是否重执行/返回缓存/拒绝",
+          "stimulus_in_original12": false
+        },
+        {
+          "kind": "SAME_ID_CONFLICT",
+          "definition": "复用相同actionId但改变actor或payload或关联版本之一；必须走原真实协议入口来核冲突及副作用",
+          "stimulus_in_original12": false
+        }
+      ],
+      "proposed_evidence": [
+        "只在未来获准执行的真实协议入口，记录收到的actor/room/turn或revision/actionId/原样请求字节或受控哈希、服务器可核payload绑定身份、实际权威处理链与原样返回/抛错及客户端错误封装",
+        "处理前/后只比较实际权威可见不变量和合法发生的时钟/回合变化；实际超时分支另算，不能把墙钟变化说成副作用违例",
+        "同时记录合法新请求是否真正投递到处理器，区分被前置权限/版本/去重/超时挡下，不把未触达资格判定的请求登记为技能拒绝已测",
+        "不把旧研究RESEARCH_ACTION_ID_CONFLICT、研究指令注册表或其结果码当作生产协议保证；不因看到processedActions字段就宣称端到端幂等/载荷绑定",
+        "原12没声明两种重传/冲突刺激；本轮不补指令、不伪造送达、不创造错误码或产品优先级"
+      ],
+      "accepted_only_if": "未来在真实产品入口上存在被明确授权的三类真实请求刺激和对应原始投递/返回/权威证据，且共享协议所有者确认解释；目前为未覆盖",
+      "refused_inference": [
+        "DS01→DS02两次R4新请求⇒同ID重传已核",
+        "研究框架冲突编码⇒产品正式冲突响应已保证",
+        "authority前后相等⇒客户端错误与重传绑定已验证"
+      ]
+    }
+  ],
+  "evidence_envelope_proposal": {
+    "status": "DOCUMENT_SCHEMA_ONLY_NO_RUNTIME_RECORDS",
+    "required_identifiers": [
+      "固定源码提交/模式/合法英雄与单畸变组合",
+      "原计划replayID、specID、完整开局见证引用、原始请求序号与其实际来源",
+      "实际room/revision/turn/window与真实actor对应",
+      "受控权威、秘密、公开红黑输出的严格分域索引",
+      "原始事件语义边界：action-commit、complete-main、complete-end、D01-before/returned/error，未达标标缺失",
+      "每个原始产物可验证身份（内容哈希及存放位置）与实际工具/运行凭据",
+      "未取样/早退/缺渠道/未声明刺激与原义务的差分列表"
+    ],
+    "restrictions": [
+      "抽象字段是未来证据描述，不宣称现有API字段都存在",
+      "不以读取证据触发新正式游戏事件、随机消耗、时钟调用或客户端消息",
+      "缺少同步/真实边界不合成完整闭合快照，仍按WP02候选未实现",
+      "敏感权威与secret仅在受控内部证据，不公开至玩家或不必要公开仓库"
+    ]
+  },
+  "original_scope_reconciliation": {
+    "original_specs": 64,
+    "planned_replays": 12,
+    "declared_checkpoints": 210,
+    "still_all_unrun": true,
+    "wp04_direct_unique_spec_ids": [
+      "DS-S01",
+      "DS-S06",
+      "DS-S12",
+      "DS-S25",
+      "DS-S26",
+      "DS-S27",
+      "DS-S28",
+      "PD-S08",
+      "PD-S24",
+      "PD-S29",
+      "PD-S35"
+    ],
+    "note": "gap_routes共4+2+7=13个关系，去重11个原ID；不能把关联当新规格或通过。其他义务/OG01-03/07依旧由原矩阵和WP02管理。",
+    "unmet_positive_or_stimulus": [
+      "PD-S32自然冲突正例缺失",
+      "PD-S31额外返回落位",
+      "DS-S16同窗口先安全后不安全沙漏",
+      "DS-S22完整非法投弹集合",
+      "DS-S12与PD-S35未声明产品原样重传和同ID冲突输入",
+      "准备阶段/客户端频道等原未声明刺激和联动源缺口"
+    ],
+    "actual_executed_specs": 0,
+    "passes": 0
+  },
+  "main_owner_questions": [
+    {
+      "id": "HC-EVID-Q01",
+      "owner": "main",
+      "question": "是否已有可核的不可回退真实死亡/裁判历史与本体映射，怎样与当前captured区分？没有时只支持外部按动作的证据，不作产品实现断言。"
+    },
+    {
+      "id": "HC-EVID-Q02",
+      "owner": "main",
+      "question": "产品真实submit入口如何绑定actionId、actor、room、revision和payload；exact retry/conflict按现有协议如何区分？错误包装/超时先后有哪些已确认来源？"
+    },
+    {
+      "id": "HC-EVID-Q03",
+      "owner": "main+UI",
+      "question": "真实红黑playerRoomView之外，公开事件、消息、客户端按钮/提示/错误以及序列化有哪些渠道、责任源和已确认许可？"
+    },
+    {
+      "id": "HC-EVID-Q04",
+      "owner": "main",
+      "question": "能否在WP02指定的受控被动边界采集动作级死亡与请求结果证据而不泄漏秘密、不改authority/RNG/时钟？不批准新增hook。"
+    }
+  ],
+  "next_task": {
+    "id": "NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT",
+    "status": "NOT_STARTED_DOCUMENT_ONLY",
+    "scope": "WP05缺刺激/自然正例及共享未决条件逐项归位；先核主线真实反馈；不生成新回放命令或运行。"
+  },
+  "limitation_audit": {
+    "gate": "L3",
+    "risk": "high_game_semantics_low_reversibility_document_only",
+    "evidence_grades": {
+      "source_facts": "V2 limited fixed blob/source notes",
+      "document_proposal": "V1 same-assistant",
+      "independent_review": "NOT_DONE",
+      "runtime": "UNRUN"
+    },
+    "alternative_explanations": [
+      "当前captured变化是库存语义而非真实历史丢失的唯一证据",
+      "processedActions可用于局部去重但不足证明完整外部协议绑定",
+      "playerRoomView可能已具备局部保护，但无法替代UI/网络实际通道核查"
+    ],
+    "falsifiers": [
+      "真实来源显示不同死亡证据语义",
+      "原产品协议有经过确认的actor/payload冲突绑定和可见消息映射",
+      "完整合法运行暴露本文拒绝/接受判断与原确认冲突"
+    ],
+    "verification": "本轮仅相关源/数据对象与映射引用的文档核对，未做全源码新鲜度审计、请求试验、客户端检验或独立审查",
+    "next_validation": "主线确认共享源和实施/运行准入后才准备实际证据采集；在此前所有原规格UNRUN"
+  },
+  "scoring_frozen": true,
+  "NET": "paused"
+}
