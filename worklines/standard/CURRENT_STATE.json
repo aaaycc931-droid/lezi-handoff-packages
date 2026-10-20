@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "active_20261020_natural_prefix_static_candidates_prepared_no_rule_approval",
+  "status": "active_20261020_np_contract_and_atomic_gates_complete_h21_rng_count_provenance_open",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -44,9 +44,9 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-NP-CONTRACT-AND-ATOMIC-GATES",
-    "subject": "AS/AP/ES最小可复现棋谱验证合同与原子门禁来源逐项走查",
-    "action": "保留静态前缀，核对H21随机集合与标识、H02窗口/无形、M04路径来源、原子末态与合法性日志所需字段；准备不执行引擎的精确验证合同。发现确切现行规则缺口才给候选，不能把静态前缀当独立引擎PASS。",
+    "id": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE",
+    "subject": "H21无敌随机授鳞数量与抽样可复现性来源追溯",
+    "action": "只读核对原始H21规则与实际实现线索（若可访问）确认最多4枚的抽数、分布与能否重放；将NP条件合同转为有真实可达证据的用例。无真实来源则保留阻断，若有明确合法分歧才提交共享候选给主线/用户；不改代码、不运行引擎。",
     "status": "ready_not_started",
     "implementation_authorized": false
   },
@@ -685,5 +685,34 @@
     "review": "reviews/H02_M04_H21_NATURAL_PREFIX_STATIC_REVIEW_20261020.md",
     "new_confirmations": 0,
     "pending_candidate": null
+  },
+  "np_contract_review_20261020": {
+    "id": "STD-H02-M04-H21-NP-CONTRACT-AND-ATOMIC-GATES-20261020",
+    "user_quote": "批准进行下一步",
+    "execution_scope": "existing next static contract and source gate only; no new policy approved",
+    "report": "reviews/H02_M04_H21_NP_CONTRACT_AND_ATOMIC_GATES_REVIEW_20261020.md",
+    "logical_fixture": "specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+    "replayed_geometry": "standalone simplified JS; 32-piece start, R1-R5/B1-B5 and AS/AP/ES board endings, pass in scoped checker only",
+    "evidence": "V2 confirmed source text, V1 stand-alone geometry only; no H21 draw-count or RNG probability evidence",
+    "confirmed_source_results": [
+      "AS activation failed on endpoint scale",
+      "AP post-activation path scale survives and later endpoint dies",
+      "ES later endpoint scale consumes opportunity and preserves target"
+    ],
+    "new_rule_delta": 0,
+    "new_confirmations": 0,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "active_user_rule_candidate": false,
+    "RNG_COUNT": "OPEN_unknown_max4_selection_count",
+    "RNG_distribution": "OPEN_not_established",
+    "RNG_replay": "OPEN_not_established",
+    "prior_nonzero_probability_claim": "downgraded_to_conditional_assumption; needs RNG provenance",
+    "all_formal_specs": "UNRUN",
+    "game_engine_runs": 0,
+    "game_code_changes": 0,
+    "independent_QA": false,
+    "NET": "paused",
+    "scoring": "frozen"
   }
 }
