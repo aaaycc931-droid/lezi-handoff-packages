@@ -1,0 +1,92 @@
+{
+  "schema": "lezi.half_chaos.to_main.engine_scope_request.v1",
+  "id": "HC-MAIN-ENG-SCOPE-REQUEST-R38",
+  "revision": "HC-RETURN-20261020-r38",
+  "source_workline": "half_chaos",
+  "recipient_workline": "main",
+  "reason": "用户要求把半混乱分支/研究准入问题正式回报主线；不要求用户手动转交。",
+  "handoff_status": "PUBLISHED_IN_SOURCE_LINE_AWAITING_MAIN_ACTUAL_READ",
+  "receiver_status": "UNREAD_OR_UNKNOWN_NOT_ASSUMED",
+  "receiver_adoption": "UNKNOWN_NO_TECHNICAL_APPROVAL",
+  "source_report": {
+    "path": "worklines/half_chaos/ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json",
+    "revision": "HC-DESIGN-03-20261020-r37",
+    "git_blob": "80729d0454b50f988996e670f0a345c23f9ad630"
+  },
+  "supporting": {
+    "scope_plan": "worklines/half_chaos/IMPLEMENTATION_SCOPE_PROPOSAL.json",
+    "wp01": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
+    "wp02": "worklines/half_chaos/PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json",
+    "wp03": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+    "wp04": "worklines/half_chaos/DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json",
+    "wp05": "worklines/half_chaos/RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json",
+    "original64": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+    "old12": "worklines/half_chaos/REPLAY_ACTION_DATA.json"
+  },
+  "actual_technical_facts": [
+    "PR4→PR5→PR6→PR7为真实层层叠加的open/draft源链；PR6= f1c01585ade8b4e17618399901d7283f37271459，PR7=14b306fe1cf9f459ef54e22d9ffa4ce2e83db510；PR6/7已分别阅读完整24/7文件patch，不能直接在main上拼接PR7几个文件。",
+    "固定PR7里GAME_MODES.half_chaos.featuresReady=false；research half_chaos白名单仅shuffler，且会拒绝mutation；旧P0 runner不支持所需的H04/H03+M01、H04/H03+M04、H06/H05+D01三组合合法完整开局。",
+    "EI02/03/05/07安全源差异仍为源阅读层面结论，不等于引擎复现；WP02被动观察及WP04私有历史/双方客户端输出/请求重传仍未实际取证。",
+    "主线SHARED_COORDINATION此前仅对早期五包摘要及WP01—03作限定收到待复核；没有已读或批准r31—r37完整合同的证据。"
+  ],
+  "requested_receiver_actions": [
+    {
+      "id": "MAIN-HC-R38-01",
+      "priority": "first",
+      "request": "先实际读取r37详细报告和WP01—05合同关键完整范围，核PR4/5/6/7实际固定HEAD及PR依赖，指定合法后续工程工作分支；不要直接合并PR7或覆盖其他线。",
+      "response_needed": "main read receipt: actual source revisions/paths and consumed vs pending; source baseline and ownership judgement"
+    },
+    {
+      "id": "MAIN-HC-R38-02",
+      "priority": "first",
+      "request": "审定仅原三组严格room/actor/side/完整随机开局对应的受控研究准入最小源码范围SLICE-01；保留产品featuresReady=false，禁止客户端越权与跨模式白名单扩张。",
+      "response_needed": "approve/reject/defer explicit technical scope, exact files/guards/regression and responsible line; not gameplay rule approval"
+    },
+    {
+      "id": "MAIN-HC-R38-03",
+      "priority": "second",
+      "request": "限定共用安全修复SLICE-02：D01沙漏完整闭合安全拒绝、被将禁投、M01/M04实际路径/王安全/马腿；未经确认的完整终局/技能层级继续阻断。",
+      "response_needed": "named source owner and exact approved safety patch/test boundary or precise blocker"
+    },
+    {
+      "id": "MAIN-HC-R38-04",
+      "priority": "second",
+      "request": "限定被动观察SLICE-03与红黑玩家/客户端/协议输出证据来源，不伪造历史或已闭合快照；涉及UI通道由UI线真实核。",
+      "response_needed": "approved or deferred observer boundary and source responsibility; privacy/transport evidence gap classification"
+    },
+    {
+      "id": "MAIN-HC-R38-05",
+      "priority": "after_scope",
+      "request": "主线若可明确批准引擎实施，给出实际可写分支、限定路径、审查/CI与兼容旧门禁的回归范围；引擎执行另核对应许可。",
+      "response_needed": "specific technical scope and implementation/run authorization status kept separate; no silent product release"
+    }
+  ],
+  "scope_and_preservation": {
+    "design_wp_documents": "5/5 written, not implementation",
+    "original_specs": {
+      "total": 64,
+      "status": "UNRUN"
+    },
+    "existing_replay_plans": {
+      "total": 12,
+      "ready": 0,
+      "executed": 0,
+      "pilot": [
+        "MA-PD01",
+        "MA-DS03",
+        "MA-DS04"
+      ]
+    },
+    "no_new_gameplay_confirmation": true,
+    "no_engine_change": true,
+    "no_engine_run": true,
+    "no_pr_merge": true,
+    "no_gate_change": true,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "privacy": "do_not_publish_private_raw_traces"
+  },
+  "main_receipt_policy": "Receiving main conversation may mark actually read/acknowledged/adopted only after it reads this exact source and relevant full bodies; source-side publication is not automatic delivery to a running conversation, permission to code, approval or gameplay PASS.",
+  "source_line_posting_note": "Existing docs/WORKFLOW.md already prescribes fixed RETURN_TO_MAIN path and independent main-side READ_RECEIPTS; do not alter main/READ_RECEIPTS.json or shared coordination on the sender's behalf.",
+  "next_source_workline_step": "After main actual reply, check main HEAD and precise receipt; if specific scope authorized, prepare bounded implementation without expanding user-confirmed game rules; until then independent read-only source and documents."
+}
