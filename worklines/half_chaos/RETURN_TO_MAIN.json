@@ -2,19 +2,19 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "bcf470447ed8bf86de380e6037c73e0154ff17aa",
-  "revision": "HC-DESIGN-03-20261020-r35",
-  "phase": "wp05_document_completed_main_technical_review_needed",
+  "base_commit": "063bc1c371878bce7ff1d2a866cbfec1996c3ed2",
+  "revision": "HC-DESIGN-03-20261020-r36",
+  "phase": "engineering_readiness_review_document_only",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "r35 WP05残余缺证范围完成；WP01—05文档均备妥，七类实施门禁仍不满足，64UNRUN；下一主线依赖/工程准入核查仅文档",
+  "current_breakpoint": "r36工程/共享前置清单完成，开发分支与默认分支来源不等；原五包文档就绪，下一ENG-00固定源码/PR差分只读审查",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
   "changes": [
-    "WP05四类原自然/负例缺失及八项未声明额外刺激进行有限分型与来源索引",
-    "保留共享EI06层级、完整应将终局、真实重复键/正式时序、WP01—04实施/客户端协议待主线",
-    "只更新半混乱固定工作目录，不添加原回放/规格或运行、接收回执"
+    "ENG-00—05工程顺序与G-CODE/INIT/ACTION/STATE/VIEW/PHASE/EVIDENCE门禁真实状态归位",
+    "半混乱14b分支的六份源码Git blob核对，与默认分支缺项/文件差异记录；PR6/7 open/draft仍未完整差分审查",
+    "WP01—05详细合同未见主线技术采用，原确认/原64/12/评分冻结不改，业务与引擎运行0"
   ],
   "source_and_confirmation_scope": "Existing D01 five original approvals/H03 half-chaos/H04 retained within exact guards; no new consumption. r30 exact1.61 H15 remains unchanged; withdrawn proposals remain withdrawn; M04 original three-line wording retained.",
   "actual_validation": {
@@ -41,7 +41,10 @@
     "original_replays": 12,
     "ready_replays": 0,
     "executed_replays": 0,
-    "main_adoption": null
+    "main_adoption": null,
+    "source_blob_checks": 6,
+    "source_default_drift_observed": true,
+    "scope": "Git identity/checkpoint and limited source comparison only"
   },
   "unrun": [
     "all12 planned replays and64 existing specs",
@@ -103,8 +106,8 @@
     }
   ],
   "next_independent_task": {
-    "id": "NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW",
-    "status": "NOT_STARTED_DOCUMENT_ONLY_MAIN_COORDINATION_REQUIRED"
+    "id": "NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE",
+    "status": "NOT_STARTED_SOURCE_REVIEW_ONLY"
   },
   "scoring_frozen": true,
   "NET": "paused",
@@ -944,7 +947,7 @@
       "runtime_reproduced": false
     }
   ],
-  "last_completed_design_revision": "HC-DESIGN-03-20261020-r35",
+  "last_completed_design_revision": "HC-DESIGN-03-20261020-r36",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "next_task_status": "WP05_NOT_STARTED_DOCUMENT_ONLY",
   "last_completed_design_commit_note": "本r34提交号从Git历史查询；不在内容预填未来自身提交",
@@ -1873,5 +1876,21 @@
       "owner": "main",
       "request": "WP01—05文档回执、共享接口/实施/运行可行性审查"
     }
-  ]
+  ],
+  "engineering_readiness_review": {
+    "path": "worklines/half_chaos/ENGINEERING_READINESS_REVIEW.json",
+    "revision": "HC-DESIGN-03-20261020-r36",
+    "source_head_at_read": "063bc1c371878bce7ff1d2a866cbfec1996c3ed2",
+    "pinned_engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_code_edits": 0,
+    "engine_runs": 0,
+    "all64": "UNRUN",
+    "main_receiver_adoption": null,
+    "main_owner_review_requests": [
+      "ENG-01 trusted exact tuple/room/actor admission",
+      "ENG-02 existing D01 and M01/M04 safety alignment",
+      "ENG-03 passive observation/history/player channels",
+      "shared tier/search/termination/repetition/clock decisions"
+    ]
+  }
 }
