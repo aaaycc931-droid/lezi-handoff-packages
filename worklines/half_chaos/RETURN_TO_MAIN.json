@@ -2,19 +2,19 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
-  "revision": "HC-DESIGN-03-20261020-r34",
-  "phase": "wp04_delivery_evidence_document_complete_waiting_main_review",
+  "base_commit": "bcf470447ed8bf86de380e6037c73e0154ff17aa",
+  "revision": "HC-DESIGN-03-20261020-r35",
+  "phase": "wp05_document_completed_main_technical_review_needed",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "r34 WP04证据合同已写回；WP05缺证文档未开始；所有64UNRUN",
+  "current_breakpoint": "r35 WP05残余缺证范围完成；WP01—05文档均备妥，七类实施门禁仍不满足，64UNRUN；下一主线依赖/工程准入核查仅文档",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
   "changes": [
-    "WP04三份证据合同覆盖OG04真实死亡历史、OG06红黑玩家输出、OG05同状态新请求/重传/ID冲突分型",
-    "原64、12原回放、原三组范围与WP01/02/03合同、确认文件和原6数据保持不变",
-    "只写半混乱固定交接，不代替主线接收采用或其他线回执"
+    "WP05四类原自然/负例缺失及八项未声明额外刺激进行有限分型与来源索引",
+    "保留共享EI06层级、完整应将终局、真实重复键/正式时序、WP01—04实施/客户端协议待主线",
+    "只更新半混乱固定工作目录，不添加原回放/规格或运行、接收回执"
   ],
   "source_and_confirmation_scope": "Existing D01 five original approvals/H03 half-chaos/H04 retained within exact guards; no new consumption. r30 exact1.61 H15 remains unchanged; withdrawn proposals remain withdrawn; M04 original three-line wording retained.",
   "actual_validation": {
@@ -35,7 +35,13 @@
       "unique_original_spec_ids": 11
     },
     "new_replay_commands": 0,
-    "main_receiver_adoption": null
+    "main_receiver_adoption": null,
+    "wp05_document_ready": true,
+    "original_specs": 64,
+    "original_replays": 12,
+    "ready_replays": 0,
+    "executed_replays": 0,
+    "main_adoption": null
   },
   "unrun": [
     "all12 planned replays and64 existing specs",
@@ -97,8 +103,8 @@
     }
   ],
   "next_independent_task": {
-    "id": "NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT",
-    "status": "NOT_STARTED_DOCUMENT_ONLY"
+    "id": "NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW",
+    "status": "NOT_STARTED_DOCUMENT_ONLY_MAIN_COORDINATION_REQUIRED"
   },
   "scoring_frozen": true,
   "NET": "paused",
@@ -938,7 +944,7 @@
       "runtime_reproduced": false
     }
   ],
-  "last_completed_design_revision": "HC-DESIGN-03-20261020-r34",
+  "last_completed_design_revision": "HC-DESIGN-03-20261020-r35",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "next_task_status": "WP05_NOT_STARTED_DOCUMENT_ONLY",
   "last_completed_design_commit_note": "本r34提交号从Git历史查询；不在内容预填未来自身提交",
@@ -1814,6 +1820,58 @@
       "id": "HC-EVID-Q04",
       "owner": "main",
       "scope": "WP02被动阶段采样且无副作用的可实现性"
+    }
+  ],
+  "residual_evidence_gap_contract_proposal": {
+    "path": "worklines/half_chaos/RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json",
+    "revision": "HC-DESIGN-03-20261020-r35",
+    "source_head_at_read": "bcf470447ed8bf86de380e6037c73e0154ff17aa",
+    "main_adoption": null,
+    "major_missing": [
+      "PD-S31",
+      "PD-S32",
+      "DS-S16",
+      "DS-S22"
+    ],
+    "missing_declarations": [
+      "PD-S02",
+      "PD-S12",
+      "PD-S17",
+      "PD-S35",
+      "DS-S01",
+      "DS-S06",
+      "DS-S12",
+      "DS-S20"
+    ],
+    "no_new_game_rule": true,
+    "engine_runs": 0,
+    "all64": "UNRUN"
+  },
+  "wp05_shared_requests": [
+    {
+      "id": "HC-RES-SHARED-01",
+      "owner": "main",
+      "request": "H16/H05共享层级与EI06特殊路径tier2不能作正式批准"
+    },
+    {
+      "id": "HC-RES-SHARED-02",
+      "owner": "main",
+      "request": "王安全/完整应将搜索、死亡原子先后和独立终局"
+    },
+    {
+      "id": "HC-RES-SHARED-03",
+      "owner": "main",
+      "request": "正式采样、压力/重复键与证据归属"
+    },
+    {
+      "id": "HC-RES-SHARED-04",
+      "owner": "main",
+      "request": "H15/H06毕业跨越来源不同于初次启动前恢复和死亡失败"
+    },
+    {
+      "id": "HC-RES-SHARED-05",
+      "owner": "main",
+      "request": "WP01—05文档回执、共享接口/实施/运行可行性审查"
     }
   ]
 }
