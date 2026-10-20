@@ -1,3 +1,12 @@
+《乐子象棋》主线当前优先入口｜2026-10-20首项共用引擎补丁完成
+
+用户23:12明确同意前述首项修复及相关测试，已实施R38-SAFE-BOMB。源码仓库jieqi-engine，独立分支codex/hc-r38-bounded-repairs-20261020，提交ea3b35cdb38bd6c65ff0142d341d765c36a7382a，草稿PR8：https://github.com/aaaycc931-droid/jieqi-engine/pull/8（未合并）。业务代码仅新增一行投弹受将守卫；错误优先级、超时、费用/名额/污染/时钟与旧门禁保持。
+先读CURRENT_STATE.json → R38_ENGINEERING_REVIEW.json#/latest_implementation → RETURN_TO_MAIN.json；授权具体范围见PROJECT_WORK_AGREEMENT.md末节。新测试在14b上出现两项预期失败，补丁后投弹8项及40文件519相关回归全部通过。为组件/合成房间测试，原半混乱MA-DS04自然开局/12回放与64验收仍未运行；产品featuresReady=false，评分冻结、NET暂停。
+半混乱r40原证据预检已读，其自然B3/B4与缺刺激要求保留；源线会话自身已收束的最新状态仅元数据获知，不由主线恢复或代填新代码采用。UI/普通/半混乱全部原文件及素材保留。
+下一NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE：基于新补丁后继源恢复铁马马腿四方向与合法完步的最小差异案例，明确下一项代码/测试范围；本次同意没有自动执行下一补丁。原H15毕业跨越未决继续保留，55玩法确认不变。
+
+以下是首项实施前的r38审查接续历史；“代码尚未实施/未获授权”只描述当时阶段，不覆盖上述明确授权及真实结果：
+
 《乐子象棋》主线当前优先入口｜2026-10-20 r38工程交接处理
 
 已实际接收半混乱 HC-RETURN-20261020-r38，来源 f1402a9e687e00902222ca6f3e666774af2edca1；核对快照 9e32933534858a54f7b5877130d36aed694f2806。先读 CURRENT_STATE.json → R38_ENGINEERING_REVIEW.json → READ_RECEIPTS.json#/latest_by_source/half_chaos/latest_engineering_handoff_r38 → SHARED_COORDINATION.json#/half_chaos_engineering_r38，通用协作仍从 ../../collaboration/CURRENT.json 解析。

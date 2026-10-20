@@ -1,5 +1,7 @@
 # 乐子象棋交接仓库
 
+2026-10-20主线已按明确授权完成首项共用引擎修复：D01受将时拒绝投弹，费用/名额/污染与原时限不发生技能写回。独立[草稿PR8](https://github.com/aaaycc931-droid/jieqi-engine/pull/8)、提交ea3b35cdb38bd6c65ff0142d341d765c36a7382a；投弹8项和40文件519相关回归通过，尚未合并。[实际实现、测试和范围](worklines/main/R38_ENGINEERING_REVIEW.json)。原半混乱12自然回放执行0、64项仍UNRUN；其他修复/准入/观察未实施，各线成果与评分冻结/NET暂停保持。以下r38审查和旧收束摘要按各自历史阶段阅读。
+
 2026-10-20主线优先处理半混乱最新r38工程交接，已实际接收并核对PR4→5→6→7依赖及固定14b源码。[工程审查与具体范围](worklines/main/R38_ENGINEERING_REVIEW.json)和[主线实际回执](worklines/main/READ_RECEIPTS.json)已写入本次增量；采用的是受控准入/四项安全补丁/被动观察的工程计划，代码、引擎运行、门禁放开和PR合并均未实施或据此授权。64项仍UNRUN、12回放执行0。各线原成果保留，后文旧收束摘要按历史范围使用；当前任务以各线固定入口/实际状态为准。
 
 当前工作入口：[主线](worklines/main/START_HERE.txt) · [半混乱](worklines/half_chaos/START_HERE.txt) · [UI](worklines/ui/START_HERE.txt) · [普通象棋](worklines/standard/START_HERE.txt)。本账号负责主线/半混乱，另一个账号负责UI/普通。主线业务源码仍在jieqi-engine仓库；此处管理交接和素材。

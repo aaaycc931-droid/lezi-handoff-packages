@@ -153,7 +153,7 @@
     "external_original_shared_received": 0
   },
   "other_workline_receipts_written": false,
-  "latest_coordination_base_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+  "latest_coordination_base_commit": "2e02a863358827d32f767c3e43fc676246c302ac",
   "latest_by_source": {
     "half_chaos": {
       "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
@@ -863,11 +863,71 @@
         ],
         "technical_disposition_reference": "worklines/main/R38_ENGINEERING_REVIEW.json#/request_dispositions",
         "full_gameplay_corpus_reaudit": false,
-        "other_receiver_receipts_written": false
+        "other_receiver_receipts_written": false,
+        "followup_specific_user_authorization": {
+          "at_local": "2026-10-20T23:12:32+08:00",
+          "user_quote": "我同意进行",
+          "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
+          "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/authorization",
+          "other_slices_or_natural_replays_authorized": false
+        },
+        "followup_implementation": {
+          "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
+          "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+          "owner": "main shared engine",
+          "engine_repository": "aaaycc931-droid/jieqi-engine",
+          "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
+          "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+          "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
+          "pull_request_number": 8,
+          "files_changed": 2,
+          "business_code_lines_added": 1,
+          "focused_tests_passed": 8,
+          "related_tests_passed": 519,
+          "related_test_files": 40,
+          "original64": "UNRUN",
+          "original12_executed": 0,
+          "product_gate_changed": false,
+          "scoring_frozen": true,
+          "NET": "paused",
+          "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
+        }
       },
       "latest_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
       "latest_revision": "HC-RETURN-20261020-r38",
-      "historical_summary_note": "Original root source_commit/revision and stage_report remain scoped historical receipts; current r38 engineering receipt is latest_engineering_handoff_r38, not a retraction or full-corpus audit."
+      "historical_summary_note": "Original root source_commit/revision and stage_report remain scoped historical receipts; current r38 engineering receipt is latest_engineering_handoff_r38, not a retraction or full-corpus audit.",
+      "latest_r40_bomb_evidence_precheck": {
+        "source_snapshot": "29c76e03912bca50130cc0f04be43461108a31ba",
+        "read_at_parent": "2e02a863358827d32f767c3e43fc676246c302ac",
+        "path": "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
+        "git_blob_sha": "2666389826e1a72d374261ad792a524373f56794",
+        "actual_read": "full report; latest source-line status/next/closure metadata only",
+        "adopted": "Original natural B3/B4 evidence requirements and missing-stimulus boundaries; not a new test/code authorization or completed acceptance",
+        "main_response": {
+          "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
+          "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+          "owner": "main shared engine",
+          "engine_repository": "aaaycc931-droid/jieqi-engine",
+          "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+          "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
+          "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+          "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
+          "pull_request_number": 8,
+          "files_changed": 2,
+          "business_code_lines_added": 1,
+          "focused_tests_passed": 8,
+          "related_tests_passed": 519,
+          "related_test_files": 40,
+          "original64": "UNRUN",
+          "original12_executed": 0,
+          "product_gate_changed": false,
+          "scoring_frozen": true,
+          "NET": "paused",
+          "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
+        },
+        "source_line_new_code_adoption": "unknown"
+      }
     },
     "standard": {
       "source_commit": "bf36f79303455bc154c697a20a9cb5ecdfda3560",
@@ -1706,5 +1766,31 @@
     ],
     "main_scope": "current state/entry/work agreement; previous closeout/receipts/coordination/source/return/pending/validation current fields and necessary scopes only; old historical narratives not fully audited",
     "source_read_reference": "worklines/main/R38_ENGINEERING_REVIEW.json#/read_scope"
+  },
+  "current_phase_explicit_authorization": {
+    "at_local": "2026-10-20T23:12:32+08:00",
+    "user_quote": "我同意进行",
+    "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/authorization",
+    "other_slices_or_natural_replays_authorized": false
+  },
+  "engine_source_readback": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
+    "paths": [
+      {
+        "path": "src/hero-actions.ts",
+        "git_blob_sha": "e84821c9b1b7b48b786834fb6a8f8b53d40a71c5",
+        "actual_read": "full new remote bytes match tested local content"
+      },
+      {
+        "path": "tests/bomb-target-boundaries.test.ts",
+        "git_blob_sha": "e7432180d7bf66f1daacdd93195e1b5dcf878535",
+        "actual_read": "full new remote bytes match tested local content"
+      }
+    ],
+    "baseline": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "own_test_evidence": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/execution"
   }
 }

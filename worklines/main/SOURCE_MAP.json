@@ -288,7 +288,7 @@
     }
   ],
   "current_record_version": "1.62",
-  "latest_maintenance_base_commit": "9e32933534858a54f7b5877130d36aed694f2806",
+  "latest_maintenance_base_commit": "2e02a863358827d32f767c3e43fc676246c302ac",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
@@ -1010,5 +1010,42 @@
         "scope": "full original question/answer, guard and policy"
       }
     ]
+  },
+  "latest_bounded_implementation_source": {
+    "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
+    "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+    "owner": "main shared engine",
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
+    "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
+    "pull_request_number": 8,
+    "files_changed": 2,
+    "business_code_lines_added": 1,
+    "focused_tests_passed": 8,
+    "related_tests_passed": 519,
+    "related_test_files": 40,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "product_gate_changed": false,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "source_line_receiver_adoption": "unknown_until_own_actual_receipt",
+    "authorization": {
+      "at_local": "2026-10-20T23:12:32+08:00",
+      "user_quote": "我同意进行",
+      "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
+      "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/authorization",
+      "other_slices_or_natural_replays_authorized": false
+    },
+    "old_source_review": "R38_ENGINEERING_REVIEW.json#/source_baseline",
+    "new_verified_source": "R38_ENGINEERING_REVIEW.json#/latest_implementation/source_integrity",
+    "runtime_evidence": "R38_ENGINEERING_REVIEW.json#/latest_implementation/execution",
+    "source_r40_report": {
+      "path": "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
+      "git_blob_sha": "2666389826e1a72d374261ad792a524373f56794",
+      "read_snapshot": "29c76e03912bca50130cc0f04be43461108a31ba"
+    }
   }
 }

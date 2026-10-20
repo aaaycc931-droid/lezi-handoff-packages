@@ -3,7 +3,7 @@
   "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
   "date_local": "2026-10-20",
   "workline": "main",
-  "status": "ACTUALLY_RECEIVED_SOURCE_REVIEW_COMPLETE_BOUNDED_TECHNICAL_PLAN_NOT_IMPLEMENTED",
+  "status": "FIRST_BOUNDED_BOMB_PATCH_IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_OTHER_SLICES_PENDING",
   "user_instruction": "继续主线工作，优先读取并处理半混乱模式最新 r38 工程交接，核对源码依赖与技术修复范围。保留各工作线现有成果。",
   "handoff": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -291,7 +291,12 @@
         "src/remote-room.ts#submitRemoteHeroAbility/expiredFormalAction"
       ],
       "finding": "bomb具备施放者/弹药/名额/目标资格，但写入ammo/warps前未见当前受将拒绝。真实房间先检查phase、保留server actionId、expiry、actor/turn，再进技能。",
-      "disposition": "作为最小首修范围：保留外层错误/超时顺序，在现有bomb基本资格及目标合法检查之后、首次技能资源/污染写入之前加入当前合法受将拒绝；不套到沙漏，不重开主行动后窗口。确切错误形态随补丁核既有RuleError约定，不在此发明协议码。"
+      "disposition": "作为最小首修范围：保留外层错误/超时顺序，在现有bomb基本资格及目标合法检查之后、首次技能资源/污染写入之前加入当前合法受将拒绝；不套到沙漏，不重开主行动后窗口。确切错误形态随补丁核既有RuleError约定，不在此发明协议码。",
+      "followup_resolution": {
+        "commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+        "status": "fixed_and_component_regressions_passed",
+        "natural_half_chaos_validation": "pending"
+      }
     },
     {
       "id": "MAIN-R38-F04",
@@ -348,8 +353,10 @@
         "name": "codex/hc-r38-bounded-repairs-20261020",
         "from_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
         "designation": "后续隔离实现分支的技术选择",
-        "exists_or_created_this_round": false,
-        "write_or_run_authorized_by_this_review": false
+        "exists_or_created_this_round": true,
+        "write_or_run_authorized_by_this_review": false,
+        "current_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+        "later_specific_authorization": "2026-10-20T23:12:32+08:00"
       }
     },
     {
@@ -406,7 +413,7 @@
     },
     {
       "id": "MAIN-HC-R38-03",
-      "status": "SLICE_02_SPLIT_INTO_FOUR_BOUNDED_REPAIR_PACKAGES",
+      "status": "BOMB_PATCH_IMPLEMENTED_OTHER_THREE_PATCHES_PENDING",
       "owner": "main engine safety/closure",
       "decision": "原D01确认直接继承，无新玩法投票；代码实施权限与安全依赖单列。优先bomb门槛，马腿几何独立局部修复；沙漏和路径完整结果共用闭合计划，不能捆绑成全局安全重写。",
       "packages": [
@@ -420,7 +427,9 @@
             "src/rules.ts"
           ],
           "boundary": "按F03的副作用前受将门槛；拒绝不耗ammo/quota/warps/collapse/deadline；保留其他资格、沙漏自身解将和B4新窗口。",
-          "next": "具体受控代码实施与针对性回归；目前未写入。"
+          "next": "原半混乱自然案例仍由源线在准入/观察具备且实际获准后核验，不从组件测试推出原64通过。",
+          "status": "IMPLEMENTED_TESTED_DRAFT_PR_UNMERGED",
+          "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a"
         },
         {
           "id": "R38-SAFE-LEG",
@@ -494,14 +503,18 @@
     },
     {
       "id": "MAIN-HC-R38-05",
-      "status": "REVIEW_AND_HANDOFF_AUTHORIZED_ENGINE_IMPLEMENTATION_AND_EXECUTION_NOT_GRANTED",
+      "status": "LATER_EXPLICIT_APPROVAL_BOMB_ONLY_IMPLEMENTED_AND_COMPONENT_TESTED",
       "owner": "main",
-      "decision": "本轮用户明确要求主线读取处理r38和核对技术范围；已完成工程审查与主线文档采用。既有主线工作约定无源码实施/运行授权，本次核对指令未明确将范围扩大到代码或引擎执行。以上是可审查的具体技术方案，不是AI自行给自己授予能力。",
-      "implementation": false,
-      "run": false,
+      "decision": "用户23:12明确同意前述首项代码修复与相关测试，主线已按限定实施并回传；其他切片/准入/观察和自然回放不自动获准。",
+      "implementation": "R38-SAFE-BOMB only",
+      "run": "bounded local component/regression commands only",
       "merge": false,
       "gate_change": false,
-      "next": "在后续明确实施范围内，从指定14b隔离分支先做R38-SAFE-BOMB和局部门禁回归；再按依赖落实SLICE-01、马腿/闭合安全及SLICE-03。原pilot运行须另核实际代码/执行许可与全部先决。"
+      "next": "NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE",
+      "original_review_disposition_preserved": {
+        "status": "REVIEW_AND_HANDOFF_AUTHORIZED_ENGINE_IMPLEMENTATION_AND_EXECUTION_NOT_GRANTED",
+        "decision": "本轮用户明确要求主线读取处理r38和核对技术范围；已完成工程审查与主线文档采用。既有主线工作约定无源码实施/运行授权，本次核对指令未明确将范围扩大到代码或引擎执行。以上是可审查的具体技术方案，不是AI自行给自己授予能力。"
+      }
     }
   ],
   "adopted_scope": [
@@ -512,11 +525,11 @@
   ],
   "not_adopted": [
     "未批准现有整分支代码、PR合并、全模式准入、产品发布或评分解冻",
-    "没有代码补丁、能力发行、featuresReady改动、引擎导入/运行或新测试执行",
-    "不把本报告变成其他工作线读取/采用回执"
+    "不把本报告变成其他工作线读取/采用回执",
+    "本次只完成R38-SAFE-BOMB与组件回归，其余代码/能力发行/原自然回放不由此授权或判通过。"
   ],
   "validation_plan": {
-    "status": "PLANNED_NOT_EXECUTED",
+    "status": "PARTIALLY_EXECUTED_BOMB_COMPONENT_SCOPE_ONLY_OTHER_PLANS_PENDING",
     "runtime": "Node >=24 from package.json; actual engine/test environment not initialized",
     "order": [
       "核目标分支固定基准与干净差分；只写批准路径",
@@ -558,24 +571,28 @@
   "verification": {
     "source_review": "V2 selected actual primary sources and immutable identities",
     "geometry_reasoning": "V1 offline coordinate comparison; no engine",
-    "independent_review": "not performed",
-    "engine_imports": 0,
-    "engine_runs": 0,
-    "engine_code_writes": 0,
-    "engine_branch_created": false,
+    "independent_review": "not performed; PR8 remains draft",
+    "engine_imports": "performed by local Node tests; import count not measured",
+    "engine_runs": 4,
+    "engine_code_writes": 2,
+    "engine_branch_created": true,
     "PR_merges": 0,
     "product_gate_changes": 0,
     "old64": "UNRUN",
     "old12_ready": 0,
     "old12_executed": 0,
     "document_validation": {
-      "nine_json_files_parse": true,
-      "eleven_changed_paths_bounded": true,
-      "thirteen_local_engine_snapshot_blobs_match_remote": true,
-      "original_ui_standard_state_and_main_gameplay_version_preserved": true,
-      "contract_pointer_paths_exist": true,
-      "remote_publication_readback": "pending_after_commit; use actual tool receipt and Git history"
-    }
+      "json_files": 9,
+      "changed_handoff_paths": 12,
+      "structure_source_pointers_and_protected_state": "PASS: 9 JSON parse;12 bounded paths; main1.62/null candidate and other-line states retained",
+      "remote_readback": "must follow actual publication",
+      "prior_r38_review_validation": "original nineJSON/eleven-path check applies to4dfeb732 only"
+    },
+    "engine_runs_scope": "local component/regression test command invocations; original natural replay executions remain0",
+    "business_code_files_changed": 1,
+    "test_files_changed": 1,
+    "new_local_component_tests": 4,
+    "component_tests_passed": 519
   },
   "limitation_audit": {
     "audit_trigger": "shared source/authorization/technical boundary and persistent main state update",
@@ -600,27 +617,272 @@
       "earlier valid code/run authorization recovered",
       "actual runtime/source contract contradicts stated behavior"
     ],
-    "verification_status": "partial overall; completed current source/scope review only",
-    "action_boundary": "bounded main/root coordination documents only; no game implementation/run/merge/gate permission",
+    "verification_status": "completed_current_bomb_implementation_and_component_regressions; partial overall engineering/mode acceptance",
+    "action_boundary": "explicitly approved bomb-only code/tests and branch publication executed; other gates/hooks/pilots remain outside current action",
     "failure_conditions": [
       "out-of-scope path changed",
       "raw secret trace published",
       "unknown branch marked PASS",
       "other-line receipt fabricated"
     ],
-    "residual_risk": "Static review cannot prove executable behavior, safe simulation purity or completeness of implementation",
-    "next_validation_action": "bounded first patch + focused regressions once explicit implementation/test scope exists; verify source again then"
+    "residual_risk": "Known simple-check component cases and related old suite pass. Current isGeneralInCheck inherits unresolved full threat/search dependencies; original half-chaos natural initialization and UI/wire remain unverified.",
+    "next_validation_action": "source-line actual receipt and lawful natural-case evidence after admission/observation readiness; next main step scoped iron-steed case review"
   },
   "next": {
-    "id": "NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION",
-    "status": "CONCRETE_SCOPE_READY_IMPLEMENTATION_AND_ENGINE_EXECUTION_PENDING",
-    "first_patch": "R38-SAFE-BOMB",
-    "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "id": "NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE",
+    "status": "NOT_STARTED_SOURCE_CASE_AND_EXACT_PATCH_SCOPE_REVIEW",
+    "action": "基于已发布ea3b35c后继源恢复铁马四方向马腿与合法完步落点的最小差异案例，核定下一补丁与测试范围；本次同意只实施投弹，未自动执行下一修复。",
+    "previous_first_patch": "R38-SAFE-BOMB completed on PR8",
     "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
     "gameplay_policy_delta": 0
   },
   "scoring_frozen": true,
   "NET": "paused",
   "containing_commit": null,
-  "containing_commit_note": "Resolve actual publication commit from Git history; no future self SHA"
+  "containing_commit_note": "Resolve actual publication commit from Git history; no future self SHA",
+  "review_stage_status_before_first_patch": "ACTUALLY_RECEIVED_SOURCE_REVIEW_COMPLETE_BOUNDED_TECHNICAL_PLAN_NOT_IMPLEMENTED",
+  "latest_implementation": {
+    "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
+    "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+    "owner": "main shared engine",
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
+    "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
+    "pull_request_number": 8,
+    "files_changed": 2,
+    "business_code_lines_added": 1,
+    "focused_tests_passed": 8,
+    "related_tests_passed": 519,
+    "related_test_files": 40,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "product_gate_changed": false,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "source_line_receiver_adoption": "unknown_until_own_actual_receipt",
+    "authorization": {
+      "kind": "explicit_current_user_approval_of_preceding_bounded_implementation_and_tests",
+      "at_local": "2026-10-20T23:12:32+08:00",
+      "user_quote": "我同意进行",
+      "preceding_scope": [
+        "主线负责共用引擎投弹受将修复",
+        "在独立开发分支补上受将检查",
+        "验证拒绝不扣弹药/名额、不生成污染、不刷新截止，合法新窗口仍可投弹",
+        "运行相关回归并增量写回结果"
+      ],
+      "applies_to": [
+        "R38-SAFE-BOMB source patch",
+        "tests/bomb-target-boundaries.test.ts focused regression plus related existing tests",
+        "isolated development branch publication and draft review",
+        "main handoff/authorization state persistence"
+      ],
+      "not_granted": [
+        "other safety patches or research admission/observer implementation",
+        "half-chaos natural12/64 acceptance runs",
+        "mode/product gate opening",
+        "PR merge, main game branch modification, APK/deployment, scoring thaw, NET resume"
+      ]
+    },
+    "handoff_read_baseline": "29c76e03912bca50130cc0f04be43461108a31ba",
+    "handoff_publication_parent": "2e02a863358827d32f767c3e43fc676246c302ac",
+    "source_change": {
+      "path": "src/hero-actions.ts",
+      "old_blob": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+      "new_blob": "e84821c9b1b7b48b786834fb6a8f8b53d40a71c5",
+      "added_line": "requireRule(!isGeneralInCheck(s, side), \"IN_CHECK\", \"被将军时不能投弹\");",
+      "location": "after existing bomber/quota/target validation and before ammo/warps/quota writes",
+      "existing_error_code_reused": "IN_CHECK",
+      "gameplay_rule_delta": 0,
+      "meaning": "落实原三模式投弹受将确认；保留沙漏独立解将资格和现有错误/超时顺序"
+    },
+    "test_change": {
+      "path": "tests/bomb-target-boundaries.test.ts",
+      "old_blob": "9f7990e63222886e5f23c50339bea6b02feab15d",
+      "new_blob": "e7432180d7bf66f1daacdd93195e1b5dcf878535",
+      "new_tests": [
+        "R38-BOMB-CHECK-01: red/black refusal, unchanged whole room/state/secret and no RNG draw",
+        "R38-BOMB-CHECK-02: ordinary evasion, closed old window, later safe bomb and normal main/deadline",
+        "R38-BOMB-CHECK-03: actor/revision/ammo/quota/target error precedence",
+        "R38-BOMB-CHECK-04: existing timeout path precedes bomb gate"
+      ],
+      "fixture_type": "synthetic jieqi-mode component/room transaction fixtures, not original half-chaos full natural initialization",
+      "acceptance_boundary": "可证明上述组件条件下修复有效；不标MA-DS04/原64通过"
+    },
+    "source_integrity": {
+      "pinned_source_test_dependency_blobs_verified": 116,
+      "original_remote_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "workspace_kind": "verified pinned source/test mirror, not claimed full checkout; remote publication tree preserves complete source",
+      "base_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "tree": "eb8007b5f8abb05a4895a476611e354ad47fb011",
+      "changed_paths": [
+        "src/hero-actions.ts",
+        "tests/bomb-target-boundaries.test.ts"
+      ],
+      "unchanged_other_blobs": 524,
+      "deleted_paths": [],
+      "product_and_research_gates_unchanged": true,
+      "published_two_file_content_readback_matches_tested_bytes": true,
+      "default_game_main_head_preserved": "c25749d4f21d394c3d94486cfba1d786864083b6"
+    },
+    "execution": {
+      "environment": {
+        "node": "v24.19.0",
+        "package_requirement": ">=24",
+        "OS": "Linux",
+        "network_product_session_used": false
+      },
+      "commands": [
+        {
+          "stage": "old relevant baseline",
+          "argv": [
+            "node",
+            "--test",
+            "--test-reporter=spec",
+            "tests/bomb-target-boundaries.test.ts",
+            "tests/confirmed-runtime.test.ts",
+            "tests/time-line-contracts.test.ts",
+            "tests/current-control.test.ts",
+            "tests/remote-room.test.ts"
+          ],
+          "exit_code": 0,
+          "tests": 96,
+          "pass": 96,
+          "fail": 0
+        },
+        {
+          "stage": "new focused tests before code patch",
+          "argv": [
+            "node",
+            "--test",
+            "--test-reporter=spec",
+            "tests/bomb-target-boundaries.test.ts"
+          ],
+          "exit_code": 1,
+          "tests": 8,
+          "pass": 6,
+          "fail": 2,
+          "expected_failures": [
+            "R38-BOMB-CHECK-01 Missing expected exception",
+            "R38-BOMB-CHECK-02 Missing expected exception"
+          ]
+        },
+        {
+          "stage": "focused after patch",
+          "argv": [
+            "node",
+            "--test",
+            "--test-reporter=spec",
+            "tests/bomb-target-boundaries.test.ts"
+          ],
+          "exit_code": 0,
+          "tests": 8,
+          "pass": 8,
+          "fail": 0,
+          "stdout_tail": [
+            "✔ R38-BOMB-CHECK-04 an expired room request still follows the existing timeout path before the bomb gate (2.013238ms)",
+            "ℹ tests 8",
+            "ℹ suites 0",
+            "ℹ pass 8",
+            "ℹ fail 0",
+            "ℹ cancelled 0",
+            "ℹ skipped 0",
+            "ℹ todo 0",
+            "ℹ duration_ms 424.049489"
+          ]
+        },
+        {
+          "stage": "related engine/room/P0 regression after patch",
+          "argv": [
+            "node",
+            "--test",
+            "--test-reporter=spec",
+            "tests/action-turn-contracts.test.ts",
+            "tests/assassination.test.ts",
+            "tests/bluetooth-disconnect.test.ts",
+            "tests/bluetooth-host-room.test.ts",
+            "tests/bluetooth-private-contracts.test.ts",
+            "tests/bluetooth-protocol.test.ts",
+            "tests/bomb-target-boundaries.test.ts",
+            "tests/check-end-network.test.ts",
+            "tests/confirmed-runtime.test.ts",
+            "tests/cross-rule-contracts.test.ts",
+            "tests/current-control.test.ts",
+            "tests/dark-identity.test.ts",
+            "tests/design-gap-runtime.test.ts",
+            "tests/destruction-batch.test.ts",
+            "tests/exception-contracts.test.ts",
+            "tests/flight-turn-boundaries.test.ts",
+            "tests/flow-contracts.test.ts",
+            "tests/game-modes.test.ts",
+            "tests/ghost-objects.test.ts",
+            "tests/hero-child-boundaries.test.ts",
+            "tests/hero-cross-settlement.test.ts",
+            "tests/hero-descent-atom.test.ts",
+            "tests/hero-descent-boundaries.test.ts",
+            "tests/hero-forms.test.ts",
+            "tests/hero-transfer-r5.test.ts",
+            "tests/movement.test.ts",
+            "tests/mutation-rarity.test.ts",
+            "tests/mutation.test.ts",
+            "tests/proposal-review.test.ts",
+            "tests/public-target-contracts.test.ts",
+            "tests/remote-room.test.ts",
+            "tests/rewind-action-contracts.test.ts",
+            "tests/river-space.test.ts",
+            "tests/scoring-mechanism.test.ts",
+            "tests/scoring-mode-bridge.test.ts",
+            "tests/scoring-policy-adapter.test.ts",
+            "tests/setup-rps.test.ts",
+            "tests/snapshot-resource-contracts.test.ts",
+            "tests/time-line-contracts.test.ts",
+            "tests/warrior.test.ts"
+          ],
+          "exit_code": 0,
+          "files": 40,
+          "tests": 519,
+          "pass": 519,
+          "fail": 0,
+          "duration_ms": 32778.090322,
+          "stdout_tail": [
+            "✔ WARRIOR-06 普通防御被消耗只移除壁垒，不会误删棋子上的骑兵效果 (2.158099ms)",
+            "ℹ tests 519",
+            "ℹ suites 0",
+            "ℹ pass 519",
+            "ℹ fail 0",
+            "ℹ cancelled 0",
+            "ℹ skipped 0",
+            "ℹ todo 0",
+            "ℹ duration_ms 32778.090322"
+          ]
+        }
+      ],
+      "engine_test_command_invocations": 4,
+      "git_diff_check": "PASS",
+      "runtime_grade": "V4_reality_validated only for these component/regression conditions; no independent reviewer",
+      "remote_CI": "not inspected or claimed; no manual workflow dispatch; verify.yml targets main while this draft targets PR7 branch",
+      "excluded_test_files": [
+        "tests/android-shell.test.ts",
+        "tests/web-layout.test.ts",
+        "tests/web-gameplay-v4.test.ts",
+        "tests/web-messages.test.ts"
+      ],
+      "exclusion_reason": "UI/Android assets and visual surface unchanged; this bounded engine patch runs relevant40 tests, not a claim of npm test full UI/APK suite"
+    },
+    "half_chaos_r40_received": {
+      "source_snapshot": "29c76e03912bca50130cc0f04be43461108a31ba",
+      "path": "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
+      "git_blob_sha": "2666389826e1a72d374261ad792a524373f56794",
+      "read_scope": "full evidence precheck; latest half_chaos CURRENT_STATE status/next/closure metadata at publication parent only, not whole working corpus",
+      "disposition": "已采用B3拒绝不变量及后续B4正向窗口作为自然验证要求；本次组件fixture只是原语义的局部回归，不能冒充原MA-DS04自然前缀或闭合证据。r40当前缺独立负例/客户端渠道保持。"
+    },
+    "remaining": [
+      "SLICE-01合法半混乱三tuple准入仍未实施，featuresReady=false",
+      "原12回放执行0，64全UNRUN，MA-DS04自然B3/B4和精确观察证据未取",
+      "沙漏完整安全、铁马马腿/路径完整结果、SLICE-03观察仍未实施",
+      "产品客户端/真实传输/同ID载荷冲突未验",
+      "PR8草稿未合并，PR4—7原叠加链保持"
+    ]
+  }
 }
