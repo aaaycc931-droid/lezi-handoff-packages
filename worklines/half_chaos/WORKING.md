@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-DESIGN-03-20261020-r36
+revision: HC-DESIGN-03-20261020-r37
 date_local: 2026-10-20
 timezone: Asia/Shanghai
 primary_reader: AI
-status: engineering_readiness_review_complete_runtime_blocked
+status: pr_branch_lineage_and_minimal_implementation_scope_documented_runtime_blocked
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -18,6 +18,8 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 # 半混乱揭棋：时序、权限、合法前缀与剩余适配
 
 ## 0. 当前入口与接续
+
+2026-10-20 r37经真实PR差分明确PR4→PR5→PR6→PR7叠加依赖，三研究tuple仍被合法阻断，已形成分文件SLICE-00/01/02/03最小候选；见§8.62及ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json。后续依主线具体实施授权/源码归并核查，不直接合并PR；全部64UNRUN。
 
 2026-10-20 接续完成r36工程准入/分支核查，详见WORKING§8.61与ENGINEERING_READINESS_REVIEW.json；下一ENG-00具体源码差分，源码与主线共享审核分离，64项全UNRUN。
 
@@ -2625,6 +2627,24 @@ HC-EVID-Q01—04交主线核不可回退历史与稳定本体、请求payload绑
 验收门槛仍G-CODE/G-INIT/G-ACTION/G-STATE/G-VIEW/G-PHASE/G-EVIDENCE；本次只读发现不改变任何一项实际runtime状态。已有64项UNRUN、12原回放0已执行、可运行0，确认/原6数据/前五包原内容不改。检查级别V2有限Git对象/状态＋V1方案推演，没有实际引擎/客户端运行或独立审计。
 
 下一独立工作`NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE`：逐项读取固定14b及PR6/7实际差分，指出最小ENG-01/02/03可改文件、受影响旧代码与回归入口及需要的技术范围确认；先只读/文档，非代码授权。完成后向主线交付可复核的实施边界，而非再写宏观计划。
+
+### 8.62 PR4→PR7叠加分支溯源与首批最小实施边界（r37）
+
+用户指示“先解决那个问题吧”，按r36明确的`NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE`先解决**默认分支与半混乱固定源码不一致、PR6/7依赖和测试前置**的来源问题。结果见唯一新文件`ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json`。本阶段只读真实GitHub PR元数据、PR6完整24文件与PR7完整7文件patch、关键源码段，及主线当前队列，**没有业务源码更改、引擎导入运行或技术方案批准**。
+
+确定无误的实际提交链为PR4`785431e1`→PR5`ac8c25c4`→PR6`f1c01585`→PR7`14b306fe`；PR4/5/6/7均为叠加草稿未合并的成果。PR6 base为PR5固定SHA且自身独立前进1 commit/24文件；PR7 base为PR6固定SHA、自身前进1 commit/7文件。PR6负责半混乱H11和普通限定产品来源/真实房间入口、Fisher-Yates见证、观察；PR7只补半混乱H11-B独立起钟、成功计数、截止/重传，以及对应限定诊断。根据真实与main的compare，固定PR7比main ahead121、behind0且返回300文件，上限/全树差分仍有不完整风险。禁止直接用main缺少或不同的单文件覆盖PR7，不能把PR7当独立可合并PR，也不在本轮改变合并/目标分支。
+
+现行`src/modes.ts`仍设half_chaos.featuresReady=false；`src/research-source-context.ts`半混乱研究白名单仅shuffler并拒绝mutation，`scripts/scoring/policy-session.ts`v0.3只支持无mutation的普通/hc旧研究来源；所以原三组确认的**验证范围**（H04/H03＋M04，H04/H03＋M01，H06/H05＋D01）虽已设计，但12原回放仍被合法门禁拒绝，绝非已实现。旧PR6文案573和PR7文案111测试是该旧提交当时记录，不是本轮复跑，也不等于当前完整12或64通过。
+
+首批代码**候选边界**按既定顺序：
+- SLICE-00（本线文档已完成）：来源提交、真实房间/双actor/模式、六类关键源码身份、PR依赖、基本调用路径映射。
+- SLICE-01（须主线技术审核）：为**恰好三组原确认研究tuple**构造可信同步、同room/actor/side与合法开局绑定的受控准入；候选modes/research-source-context/remote-room/policy-session/mode-qualification-cases；产品featuresReady维持false、普通P0门禁和非本批组合均拒绝，不用客户端构造能力、inject世界、硬开全局白名单。
+- SLICE-02（须主线共享源码责任）：D01沙漏提交结果王安全整体拒绝、受将投弹拒绝、M01/M04完整真实路径王安全与马腿对齐，只限此前确认及来源；hero-actions/game/rules/settlement/remote-room涉及共用引擎，不顺手扩通用终局或技能层级。EI02/03/05/07是限定静态可疑差异，尚未引擎复现。
+- SLICE-03（须主线/客户端联核）：正式main/event与实际原子闭合分开采集、真实死亡历史、红黑双方玩家可见/客户端请求及错误、相同新请求vs重传；turns/mechanism-observer/remote-room/settlement/policy-session/observation受控被动记录，观察开启与关闭authority/RNG相同。
+
+回归次序只可将来获准后执行：固定代码/依赖→旧P0与产品拒绝门禁→仅原三tuple正向和其他组合拒绝→观察/隐私/时钟/重试一致性→MA-PD01、MA-DS03、MA-DS04三pilot→剩余9原回放/64逐义务及缺自然例。PR4/PR5原始评分本体不得误认为可评分已就绪，q/H/I/B/J继续冻结、NET暂停。若实际前缀、审查授权、共享来源或PR HEAD改变先停止/复核，不静默换基线。
+
+剩余：本线r31-r37完整合同的主线真正接收/采用仍未知；主线队列对旧WP01—03只有范围接收待技术复核，H16/H05层级、完整搜索/终局/重复键/毕业跨越仍需主线。当前所有64 UNRUN、12回放executed0、可执行0。未新确认玩法、未合并或运行、未动其他线、未变原6数据/原确认。下一`NEXT-HC-FIRST-IMPLEMENTATION-AUTHORIZATION-AND-SOURCE-RECONCILIATION`：把本报告交主线审核**具体源码基线/可写文件/回归和授权边界**，保持独立文档/只读来源工作，不自动取得实施批准。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
