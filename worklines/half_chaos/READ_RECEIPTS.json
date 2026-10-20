@@ -2452,5 +2452,54 @@
     "new_gameplay_approvals": 0,
     "engine_runs": 0,
     "all64": "UNRUN"
+  },
+  "r37_source_diff_read": {
+    "source_head_at_read": "045d772ce802f38ef7740d114f446dd55d5e3f72",
+    "github_repos": {
+      "handoff": "aaaycc931-droid/lezi-handoff-packages",
+      "engine": "aaaycc931-droid/jieqi-engine"
+    },
+    "engine_scope": {
+      "PR4": "metadata actual base/head; no full PR4 patch audit",
+      "PR5": "metadata actual base/head; no full PR5 patch audit",
+      "PR6": "metadata + full 24 changed filename list and all 24 per-file patches",
+      "PR7": "metadata + full 7 changed filename list and all 7 per-file patches",
+      "source_fixed_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "actual_source_file_reads": [
+        "src/modes.ts",
+        "src/research-source-context.ts",
+        "src/hero-actions.ts",
+        "src/remote-room.ts",
+        "src/turns.ts",
+        "src/mechanism-observer.ts",
+        "src/game.ts",
+        "src/rules.ts",
+        "src/settlement.ts",
+        "scripts/scoring/policy-session.ts",
+        "scripts/scoring/mode-qualification-cases.ts"
+      ],
+      "default_compare": "main...14b 121 commits ahead, zero behind, 300 files in response (possibly clipped); no complete repo/PR4/5 audit nor independent tests"
+    },
+    "handoff_read_paths": [
+      "worklines/half_chaos/START_HERE.txt",
+      "worklines/half_chaos/CURRENT_STATE.json",
+      "worklines/half_chaos/NEXT_ACTIONS.json",
+      "worklines/half_chaos/ENGINEERING_READINESS_REVIEW.json",
+      "worklines/half_chaos/PROJECT_WORK_AGREEMENT.md",
+      "worklines/main/SHARED_COORDINATION.json",
+      "collaboration/CURRENT.json"
+    ],
+    "scope": "actual PR source shape & exact gate/action/observer evidence mapping; not main receiver/adoption or code authorization",
+    "source_level": "V2 Git metadata and parsed code patch, V1 proposed restricted diffs",
+    "not_done": [
+      "engine import or execution",
+      "independent CI/code audit",
+      "merge/PR actions",
+      "main shared code approval",
+      "full client/network audit"
+    ],
+    "original64": "UNRUN",
+    "original12": "UNRUN",
+    "main_receipt_authority": false
   }
 }
