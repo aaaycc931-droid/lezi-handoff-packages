@@ -6,10 +6,10 @@
   "source_commit": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
   "base_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "approval_context_source_commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
-  "phase": "current_conversation_closeout_no_new_rule",
+  "phase": "2026-10-20 H02 bounded return/source exit source review completed, not gameplay approval",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "Current conversation closed with both exact shared approvals and complete prior work retained; ordinary31/shared13. No active candidate. Return/source-exit reachability review awaits explicit continuation.",
+  "current_breakpoint": "NEXT-STD-H02-M04-NATURAL-PREFIX-AND-FINAL-KING-SAFETY-REVIEW",
   "confirmed_delta": [],
   "new_user_rule_confirmations": 0,
   "preserved_confirmations": {
@@ -1069,12 +1069,9 @@
     }
   },
   "next_task": {
-    "id": "NEXT-STD-H02-M04-RETURN-SOURCE-EXIT-ORDER-REVIEW",
-    "subject": "返位与H02来源退出顺序的来源覆盖及可达性复核",
-    "action": "先核对后续刺杀返位与来源无形退出先后是否存在合法可达的观察者/触发分支；守一畸变与双方英雄限制，不叠第三英雄或第二畸变。再按现行原来源覆盖确定结果，有明确来源直接沿用；缺口才准备具体候选，真正共享冲突回主线，不改业务代码或运行引擎。",
-    "status": "deferred_until_user_continuation_source_review_not_started",
-    "requires_continuation_before_work": true,
-    "implementation_authorized": false
+    "id": "NEXT-STD-H02-M04-NATURAL-PREFIX-AND-FINAL-KING-SAFETY-REVIEW",
+    "status": "ready_not_started",
+    "scope": "Static natural-prefix/royal-safety evidence, no engine/code."
   },
   "terminology": {
     "M04_charge_word": "Existing descriptive wording in prior M04 text; not a new global keyword",
@@ -1380,5 +1377,19 @@
     "direct_shared": 13,
     "same_conversation_new_shared_confirmations": 2,
     "engine_runs": 0
+  },
+  "return_source_exit_review_20261020": {
+    "path": "reviews/H02_M04_RETURN_SOURCE_EXIT_ORDER_REVIEW_20261020.md",
+    "rule_delta": 0,
+    "ordinary": 31,
+    "direct_shared": 13,
+    "source_review": "complete guarded",
+    "new_user_approvals": 0,
+    "complete_prefix_proven": false,
+    "engine_runs": 0,
+    "all_specs": "UNRUN",
+    "main_receipt_verified": null,
+    "main_adoption_verified": null,
+    "other_mode_adoption_verified": null
   }
 }
