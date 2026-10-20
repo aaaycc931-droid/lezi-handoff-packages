@@ -2654,6 +2654,14 @@ HC-EVID-Q01—04交主线核不可回退历史与稳定本体、请求payload绑
 
 只在`RETURN_TO_MAIN`与本线状态/下步记录交接已发布，不写主线回执、不修改主线工作正文、通用collaboration规则或其他模式。不自动唤醒主线聊天，也不宣称 GitHub 创建文件就是实时通知。用户以后在主线说“继续，处理半混乱最新回传”即可使主线按固定入口读取，无需附ZIP。当前引擎0写改/0运行、12回放0已执行、64UNRUN，评分冻结、NET暂停。下一本线检查`NEXT-HC-CHECK-MAIN-R38-ENGINE-SCOPE-RECEIPT`：依实际最新远程主线回执才更新接受/实施状态。
 
+### 8.64 r39接收主线真实r38技术审查结果（不等于引擎修复）
+
+用户告知“主线回复已经完成本问题解决”。本线实际核对远端主线HEAD `4dfeb73211a5f25e75a55fdc5e2bc4d623e1959b`、主线`START_HERE.txt`、`R38_ENGINEERING_REVIEW.json`完整正文、`READ_RECEIPTS.json#/latest_by_source/half_chaos/latest_engineering_handoff_r38`、`SHARED_COORDINATION.json#/half_chaos_engineering_r38`、`CURRENT_STATE.r38_engineering_review`与`RETURN_TO_MAIN`真实收束范围，并核`jieqi-engine`PR7仍固定14b、engine main未新提交。原半混乱发件时主线未读字段是当时真实历史状态；当前通过r39的新接收字段更新最新状态，不能篡改历史为“发件时已读”。
+
+主线确实完整读了r38请求、r37源报告及WP01—05相应合同，形成真实工程结论并在本身工作线存回执。主线采用PR4→5→6→7固定14b作为后续隔离工作树的计划基线（`codex/hc-r38-bounded-repairs-20261020`未创建），SLICE-01只三组精确受控研究tuple、SLICE-02按bomb/腿/沙漏/完整路径拆4个有限补丁、SLICE-03精确闭合和双通道取证语义计划。技术请求1—4为有条件工程范围采用；请求5明确**仅源审查和交接获授权，本次代码修改、引擎执行、能力发行、merge均未批准/未实施**。旧原D01确认不重问，原产品门禁不解除。
+
+因此“主线解决了问题”的精确含义是**接收、归属、源码基线和最小修复计划的跨线协调已解决**，不是运行能力阻断已修复、原12可运行或64 PASS。当前64UNRUN、12执行0、引擎写改0、运行0、评分冻结、NET暂停；用户可继续向主线具体授权受控实施R38-SAFE-BOMB，但本线不代主线开启共享代码。本线新断点`NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION`按主线真实新工程证据续验。
+
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
 | ID | 责任 | 需要协调的精确问题 | 本线已做 |
