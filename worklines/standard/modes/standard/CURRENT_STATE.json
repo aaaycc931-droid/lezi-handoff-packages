@@ -1,5 +1,5 @@
 {
-  "status": "active_natural_prefix_static_review_complete_no_new_rule",
+  "status": "active_np_repro_contract_prepared_rng_provenance_next",
   "workline": "standard",
   "received_at_local": "2026-10-15T10:58:18+08:00",
   "source_state": "CURRENT_STATE.json",
@@ -8,7 +8,7 @@
   "source_confirmation_index": "CONFIRMATION_REGISTER.json",
   "main_document_adopted": true,
   "other_live_dialogue_updated": false,
-  "next_action": "NEXT-STD-NP-CONTRACT-AND-ATOMIC-GATES (not started; document/static only)",
+  "next_action": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE (not started, read-only)",
   "new_engine_tests": 0,
   "implementation_verified": false,
   "full_mode_verified": false,
@@ -292,5 +292,21 @@
     "delta": 0,
     "user_approval_new_rule": false,
     "formal_specs": "UNRUN"
+  },
+  "np_contract_20261020": {
+    "review": "reviews/H02_M04_H21_NP_CONTRACT_AND_ATOMIC_GATES_REVIEW_20261020.md",
+    "fixture": "specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+    "branches": [
+      "AS",
+      "AP",
+      "ES"
+    ],
+    "standalone_geometry_spot_check": "limited pass, not game-engine pass",
+    "H21_selection_count_and_probability": "unknown; prior nonzero-probability claim not verified",
+    "formal_tests": "UNRUN",
+    "engine_run": false,
+    "game_code_changes": 0,
+    "user_confirmed_new_rule": false,
+    "delta": 0
   }
 }
