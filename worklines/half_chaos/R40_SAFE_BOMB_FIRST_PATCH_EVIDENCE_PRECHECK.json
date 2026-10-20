@@ -1,0 +1,401 @@
+{
+  "schema": "lezi.hc_r40_first_bomb_patch_evidence_precheck.v1",
+  "revision": "HC-PREP-20261020-r40",
+  "workline": "half_chaos",
+  "completed_task": "R40-HC-R38-SAFE-BOMB-SOURCE-LINKED-REGRESSION-READINESS",
+  "date_local": "2026-10-20",
+  "status": "SOURCE_LINKED_BOMB_REGRESSION_PRECHECK_READY_NOT_A_TEST_OR_CODE_AUTHORIZATION",
+  "baseline": {
+    "handoff_head_at_read": "350f41aa3cb886063dd03b2606c1f0e91981a09b",
+    "main_report_path": "worklines/main/R38_ENGINEERING_REVIEW.json",
+    "main_report_id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
+    "main_review_status": "ACTUALLY_RECEIVED_SOURCE_REVIEW_COMPLETE_BOUNDED_TECHNICAL_PLAN_NOT_IMPLEMENTED",
+    "main_receipt": "ACTUALLY_RECEIVED_BOUNDED_PLAN_ONLY",
+    "engine": "aaaycc931-droid/jieqi-engine",
+    "pin": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "branch": "codex/half-chaos-h11-b-clock-20261012",
+    "proposed_isolated_branch": "codex/hc-r38-bounded-repairs-20261020",
+    "proposed_branch_exists": false,
+    "proposed_branch_source": null,
+    "engine_change_detected": false
+  },
+  "owner_and_permitted_activity": {
+    "main_owns_patch": "src/hero-actions.ts",
+    "dependencies_read_only": [
+      "src/remote-room.ts",
+      "src/rules.ts"
+    ],
+    "implementation_authorized": false,
+    "engine_execution_authorized": false,
+    "product_gate_remains_false": true,
+    "half_chaos_action": "按原数据做好后续取证契约和验收条件，不发明玩法/请求或签发main许可"
+  },
+  "scope": {
+    "exactly_original_stimulus_replay": "MA-DS04",
+    "replay_world": "IW-61790bfc01eccf12",
+    "legality": "三英雄? 否，原恰好二英雄+一畸变 D01",
+    "red_hero": "H06 nozdormu",
+    "black_hero": "H05 murozond",
+    "mutation": "D01 end_time",
+    "original_input_bytes_modified": false,
+    "original_specification_count": 64,
+    "original_replay_plan_count": 12,
+    "original_210_checkpoint_count": 210,
+    "matching_declared_original_spec_rows": [
+      {
+        "original_spec_id": "DS-S17",
+        "original_obligation": "DS04黑暗士位揭真兵D、已现身且有1弹；当前敌明车普通将军，不能使用被替换的普通H05技能规避",
+        "source_checkpoint_ids": [
+          "MA-DS04:B2:main:closed",
+          "MA-DS04:R3:main:closed",
+          "MA-DS04:B3:pre-1:observation"
+        ],
+        "missing_other_stimulus": [],
+        "acceptance_status": "UNRUN",
+        "covered_by_regression_without_engine": "NO"
+      },
+      {
+        "original_spec_id": "DS-S18",
+        "original_obligation": "DS04目标(4,2)距D1且非自身/非污染，其他条件通过，单独因当前受将拒绝，不错归射程/弹药失败",
+        "source_checkpoint_ids": [
+          "MA-DS04:R3:main:closed",
+          "MA-DS04:B3:pre-1:observation"
+        ],
+        "missing_other_stimulus": [],
+        "acceptance_status": "UNRUN",
+        "covered_by_regression_without_engine": "NO"
+      },
+      {
+        "original_spec_id": "DS-S19",
+        "original_obligation": "DS04 B3拒绝D弹仍1、全军名额仍0、不生污染/崩坏、不改原截止；不是实际投弹后的退款",
+        "source_checkpoint_ids": [
+          "MA-DS04:B3:pre-1:observation"
+        ],
+        "missing_other_stimulus": [],
+        "acceptance_status": "UNRUN",
+        "covered_by_regression_without_engine": "NO"
+      },
+      {
+        "original_spec_id": "DS-S20",
+        "original_obligation": "DS04黑暗车普通捕获将军车能合法应将，完成主行动后不能因名额未用而重开投弹窗口",
+        "source_checkpoint_ids": [
+          "MA-DS04:B3:pre-1:observation",
+          "MA-DS04:B3:main:closed",
+          "MA-DS04:B3:normal-end"
+        ],
+        "missing_other_stimulus": [
+          "No post-main bomb resubmission stimulus to exercise refusal after window closure."
+        ],
+        "acceptance_status": "UNRUN",
+        "covered_by_regression_without_engine": "NO"
+      },
+      {
+        "original_spec_id": "DS-S21",
+        "original_obligation": "DS04 B4真实新正式回合未受将且条件通过才可投，弹1→0/全军用1，随后正常车步保持；拒绝不产生延期额外窗口",
+        "source_checkpoint_ids": [
+          "MA-DS04:B3:pre-1:observation",
+          "MA-DS04:R4:main:closed",
+          "MA-DS04:B4:pre-1:observation",
+          "MA-DS04:B4:main:closed"
+        ],
+        "missing_other_stimulus": [],
+        "acceptance_status": "UNRUN",
+        "covered_by_regression_without_engine": "NO"
+      },
+      {
+        "original_spec_id": "DS-S22",
+        "original_obligation": "沙漏可完整解将的许可不外推投弹；未受将亦不自动放行非法施放者/目标/范围/弹药/名额；现有ET源合同保持",
+        "source_checkpoint_ids": [
+          "MA-DS01-02:R3:pre-1:observation",
+          "MA-DS04:B3:pre-1:observation",
+          "MA-DS04:B4:pre-1:observation"
+        ],
+        "missing_other_stimulus": [
+          "No complete invalid caster/target/range/ammo/quota negative branch set."
+        ],
+        "acceptance_status": "UNRUN",
+        "covered_by_regression_without_engine": "NO"
+      },
+      {
+        "original_spec_id": "DS-S28",
+        "original_obligation": "DS01—05均两英雄单D01/截止内、无已正式终局翻案；文件/手推不等于完整应将搜索、运行隐私或裁判采样通过",
+        "source_checkpoint_ids": [
+          "MA-DS01-02:R1:main:closed",
+          "MA-DS01-02:R1:normal-end",
+          "MA-DS01-02:B1:main:closed",
+          "MA-DS01-02:B1:normal-end",
+          "MA-DS01-02:R2:main:closed",
+          "MA-DS01-02:R2:normal-end",
+          "MA-DS01-02:B2:main:closed",
+          "MA-DS01-02:B2:normal-end",
+          "MA-DS01-02:B2:pre-1:observation",
+          "MA-DS01-02:R3:main:closed",
+          "MA-DS01-02:R3:normal-end",
+          "MA-DS01-02:R3:pre-1:observation",
+          "MA-DS01-02:B3:main:closed",
+          "MA-DS01-02:B3:normal-end",
+          "MA-DS01-02:B3:pre-1:observation",
+          "MA-DS01-02:R4:main:closed",
+          "MA-DS01-02:R4:normal-end",
+          "MA-DS01-02:R4:pre-1:observation",
+          "MA-DS01-02:R4:pre-2:observation",
+          "MA-DS03:R1:main:closed",
+          "MA-DS03:R1:normal-end",
+          "MA-DS03:B1:main:closed",
+          "MA-DS03:B1:normal-end",
+          "MA-DS03:R2:main:closed",
+          "MA-DS03:R2:normal-end",
+          "MA-DS03:B2:main:closed",
+          "MA-DS03:B2:normal-end",
+          "MA-DS03:R3:main:closed",
+          "MA-DS03:R3:normal-end",
+          "MA-DS03:B3:main:closed",
+          "MA-DS03:B3:normal-end",
+          "MA-DS03:R4:main:closed",
+          "MA-DS03:R4:normal-end",
+          "MA-DS03:R4:pre-1:observation",
+          "MA-DS04:R1:main:closed",
+          "MA-DS04:R1:normal-end",
+          "MA-DS04:B1:main:closed",
+          "MA-DS04:B1:normal-end",
+          "MA-DS04:R2:main:closed",
+          "MA-DS04:R2:normal-end",
+          "MA-DS04:B2:main:closed",
+          "MA-DS04:B2:normal-end",
+          "MA-DS04:R3:main:closed",
+          "MA-DS04:R3:normal-end",
+          "MA-DS04:B3:main:closed",
+          "MA-DS04:B3:normal-end",
+          "MA-DS04:B3:pre-1:observation",
+          "MA-DS04:R4:main:closed",
+          "MA-DS04:R4:normal-end",
+          "MA-DS04:B4:main:closed",
+          "MA-DS04:B4:normal-end",
+          "MA-DS04:B4:pre-1:observation",
+          "MA-DS05:R1:main:closed",
+          "MA-DS05:R1:normal-end",
+          "MA-DS05:B1:main:closed",
+          "MA-DS05:B1:normal-end",
+          "MA-DS05:R2:main:closed",
+          "MA-DS05:R2:normal-end",
+          "MA-DS05:B2:main:closed",
+          "MA-DS05:B2:normal-end",
+          "MA-DS05:R3:main:closed",
+          "MA-DS05:R3:normal-end",
+          "MA-DS05:B3:main:closed",
+          "MA-DS05:B3:normal-end",
+          "MA-DS05:R4:main:closed",
+          "MA-DS05:R4:normal-end",
+          "MA-DS05:B4:main:closed",
+          "MA-DS05:B4:normal-end",
+          "MA-DS05:R5:main:closed",
+          "MA-DS05:R5:normal-end",
+          "MA-DS05:B5:main:closed",
+          "MA-DS05:B5:normal-end",
+          "MA-DS05:B5:pre-1:observation",
+          "MA-DS05:R6:main:closed",
+          "MA-DS05:R6:normal-end",
+          "MA-DS05:B6:main:closed",
+          "MA-DS05:B6:normal-end",
+          "MA-DS05:R7:main:closed",
+          "MA-DS05:R7:normal-end",
+          "MA-DS05:R7:pre-1:observation"
+        ],
+        "missing_other_stimulus": [],
+        "acceptance_status": "UNRUN",
+        "covered_by_regression_without_engine": "NO"
+      }
+    ],
+    "collateral_related_prior_spec_ids": [
+      "DS-S05",
+      "DS-S09",
+      "DS-S11",
+      "DS-S24"
+    ],
+    "existing_negative_branch_set_not_declared": [
+      "invalid caster",
+      "invalid target",
+      "invalid range",
+      "invalid ammo",
+      "team quota",
+      "post-main bomb retransmission"
+    ],
+    "note": "这些缺刺激/负例若将来需要新数据，必须独立提出并获准，不用本清单作为隐含输入扩容"
+  },
+  "existing_MA_DS04_stimulus": {
+    "source_statement": {
+      "commit": "2f663252f0d1b5ab8eea7f780502f287bb7dd595",
+      "path": "worklines/half_chaos/WORKING.md",
+      "section": "8.40.5",
+      "git_blob_sha": "007fdba76089c849937f1e464cf161a1318e3ff9"
+    },
+    "initialization_status": "UNRUN, NO_REAL_INITIALIZATION",
+    "positive_world_declaration": "black shown dragon D at advisor former position (4,1), original body covered-03",
+    "key_sequence": [
+      "R1",
+      "B1",
+      "R2",
+      "B2",
+      "R3",
+      "B3",
+      "R4",
+      "B4"
+    ],
+    "rejected_B3": {
+      "request_id": "MA-DS04:B3:pre-1",
+      "checkpoint": "MA-DS04:B3:pre-1:observation",
+      "actor": "black",
+      "skill": "dragon_bomb",
+      "caster": [
+        4,
+        1
+      ],
+      "target": [
+        4,
+        2
+      ],
+      "expected": "rejected",
+      "real_game_reason": "red rook checked black general after R3 while other bomb preconditions are source-declared eligible",
+      "expected_observation": "current check alone rejects despite appeared live black-controlled D/ammo1/range1/clean target/army quota0; all unchanged; no pollution/collapse; main retained",
+      "following_normal_main": {
+        "semantic_actor": "black",
+        "semantic_from": [
+          0,
+          0
+        ],
+        "semantic_to": [
+          1,
+          0
+        ]
+      },
+      "observability": "actual source-request return, pre-request authority and distinct later tick evidence all required"
+    },
+    "later_B4": {
+      "request_id": "MA-DS04:B4:pre-1",
+      "checkpoint": "MA-DS04:B4:pre-1:observation",
+      "actor": "black",
+      "skill": "dragon_bomb",
+      "caster": [
+        4,
+        1
+      ],
+      "target": [
+        4,
+        2
+      ],
+      "expected": "accepted",
+      "expected_observation": "genuine new black pre-main window; not in check; other original conditions satisfied; D1→0, quota0→1, pollution4,2; no deadline reset; normal main retained",
+      "intervening_turns": [
+        "B3 ordinary rook capture checking rook",
+        "R4 normal pawn move"
+      ],
+      "following_normal_main": {
+        "semantic_actor": "black",
+        "semantic_from": [
+          1,
+          0
+        ],
+        "semantic_to": [
+          2,
+          0
+        ]
+      }
+    }
+  },
+  "acceptance_matrix": [
+    {
+      "id": "R40-REQ-01",
+      "classification": "BLOCKING_CURRENT_CHECK",
+      "expected": "同一合法B3前缀、当前受普通合法将军且其它投弹条件本应通过，拒绝投弹；错误类别/先后由main核原产品源，不自创错误码",
+      "required_evidence": [
+        "actual accepted source prefix",
+        "actual isGeneralInCheck authority result before request",
+        "synchronous actual rejected hero-ability return"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "R40-REQ-02",
+      "classification": "ATOMIC_REFUSAL_SIDE_EFFECTS",
+      "expected": "拒绝前后弹药仍1，全军同正式回合投弹名额仍0，(4,2)无新污染/崩坏、没有额外死亡/落位/新turn-end/新begin；原正式截止不更新；不是执行后退款",
+      "required_evidence": [
+        "before and immediate after authoritative state+secret",
+        "deadline/turn/phase, revision, processedActions and quota state",
+        "accepted/request rejected evidence separated from driver tick"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "R40-REQ-03",
+      "classification": "NORMAL_EVASION_WINDOW",
+      "expected": "B3拒绝后普通车捕获将军车，正常合法应将；同一旧主行动前窗口不因名额剩余而自动重新打开（原缺独立重投刺激）",
+      "required_evidence": [
+        "B3 legal ordinary main",
+        "B3 closed/main/end"
+      ],
+      "status": "NOT_RUN_PARTIAL_DECLARATION"
+    },
+    {
+      "id": "R40-REQ-04",
+      "classification": "NEW_B4_BOMB_POSITIVE",
+      "expected": "实际新B4主行动前窗口且不受将，合法施放D1→0名额0→1，(4,2)生成污染但不应虚造立即杀棋；正常车步仍在",
+      "required_evidence": [
+        "R4 ordinary main from declared prefix",
+        "B4 synchronous successful skill return",
+        "B4 follow-up rook move main"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "R40-REQ-05",
+      "classification": "SOURCE_AND_REGRESSION_GUARD",
+      "expected": "原沙漏可解将的独立资格不受拒投补丁误伤，其他非受将/错误施放者/原有范围/限额/回放请求检查顺序不被静默改变；只改已批准路径",
+      "required_evidence": [
+        "main code review only after authorization",
+        "existing old PR7/H11-B and jieqi/standard P0 regression",
+        "D01 sandbox traces no user-private data in Git"
+      ],
+      "status": "NOT_RUN"
+    }
+  ],
+  "release_guard": {
+    "after_patch_requirements": [
+      "main new branch/commit/own source diff",
+      "specific technical code and engine-run authorization",
+      "regression result tied to actual commit and environment",
+      "actual B3/B4 reproduction at original fully legal world",
+      "no semantic gameplay rule changes"
+    ],
+    "insufficient": [
+      "unit test on fabricated midgame only",
+      "main plan adopted but code not committed",
+      "source document JSON valid",
+      "console screenshot without actual authority+secret trace",
+      "negative B3 alone without B4 same natural prefix"
+    ],
+    "future_pilot": "MA-DS04 is among remaining9 after three pilot order (MA-PD01/MA-DS03/MA-DS04 as pilot; actually MA-DS04 is also pilot), do not execute prematurely",
+    "strict_pilot_list": [
+      "MA-PD01",
+      "MA-DS03",
+      "MA-DS04"
+    ]
+  },
+  "limitations": {
+    "real_engine_imports": 0,
+    "engine_runs": 0,
+    "new_test_commands": 0,
+    "code_edits": 0,
+    "main_approval_not_claimed": true,
+    "unknowns": [
+      "actual source code implementation outcome",
+      "actual client/wire errors",
+      "formal closure at runtime",
+      "complete invalid bomber cases",
+      "post-main bomb resubmission"
+    ],
+    "V2": "Original 64 matrix, source exact MA-DS04, main report and existing fixed14b branch",
+    "V1": "Evidence/checklist only, no new rule inference",
+    "verdict": "not yet runnable, no completed acceptance"
+  },
+  "next": "保持主线NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION；本线见到真实带授权代码提交/回归报告后再复核。"
+}

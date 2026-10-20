@@ -1,8 +1,8 @@
 {
-  "revision": "HC-RECEIPT-20261020-r39",
+  "revision": "HC-PREP-20261020-r40",
   "next_independent_task": {
     "id": "NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION",
-    "status": "MAIN_ENGINE_CODE_AND_RUN_AUTHORIZATION_PENDING",
+    "status": "MAIN_ENGINE_CODE_AND_RUN_AUTHORIZATION_PENDING_LOCAL_EVIDENCE_PREPARED",
     "action": "不重复请求主线接收r38；等待主线在明确代码许可下实施R38-SAFE-BOMB（固定14b隔离源码）并产生可信提交/回归证据。本线可核原64/12和三组合固定映射等只读准备，主线真实更新到来后再按回执接入。没有授权不可擅改代码或运行。"
   },
   "subsequent_tasks": [
@@ -1367,5 +1367,25 @@
       "new_gameplay_rule",
       "full_mode_acceptance"
     ]
+  },
+  "r40_bomb_prepatch_evidence": {
+    "path": "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
+    "revision": "HC-PREP-20261020-r40",
+    "source_head": "350f41aa3cb886063dd03b2606c1f0e91981a09b",
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "main_r38_received": true,
+    "main_plan_adopted": true,
+    "code_or_run_authorization": false,
+    "source_original_specs": [
+      "DS-S17",
+      "DS-S18",
+      "DS-S19",
+      "DS-S20",
+      "DS-S21",
+      "DS-S22",
+      "DS-S28"
+    ],
+    "replay": "MA-DS04",
+    "engine_runs": 0
   }
 }

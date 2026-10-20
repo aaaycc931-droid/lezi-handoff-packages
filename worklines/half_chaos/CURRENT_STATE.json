@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-RECEIPT-20261020-r39",
+  "revision": "HC-PREP-20261020-r40",
   "workline": "half_chaos",
   "date_local": "2026-10-20",
   "timezone": "Asia/Shanghai",
-  "status": "main_r38_receipt_verified_plan_adopted_engine_implementation_pending",
+  "status": "r40_bomb_prepatch_evidence_route_documented_main_implementation_pending",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -177,7 +177,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION：主线r38已真实接收与限定方案采用，首补丁R38-SAFE-BOMB由主线引擎责任线在具体授权后推进。本线保留原64全部UNRUN/12已执行0与三组合证据；后续按主线真实补丁/回执同步验收，不重开源分支问题、不代办共享代码修改。",
+  "next_action": "不重复请求主线接收r38；等待主线在明确代码许可下实施R38-SAFE-BOMB（固定14b隔离源码）并产生可信提交/回归证据。本线可核原64/12和三组合固定映射等只读准备，主线真实更新到来后再按回执接入。没有授权不可擅改代码或运行。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -1519,7 +1519,7 @@
     "game_runs": 0,
     "next": "NEXT-HC-INITIALIZATION-WITNESS-DATA"
   },
-  "last_completed_design_revision": "HC-DESIGN-03-20261019-r33",
+  "last_completed_design_revision": "HC-PREP-20261020-r40",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "next_action_status": "NOT_STARTED_DOCUMENT_ONLY",
   "initialization_witness_data": {
@@ -2438,5 +2438,25 @@
       "new_gameplay_rule",
       "full_mode_acceptance"
     ]
+  },
+  "prepatch_evidence_r40": {
+    "path": "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
+    "revision": "HC-PREP-20261020-r40",
+    "source_head": "350f41aa3cb886063dd03b2606c1f0e91981a09b",
+    "engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "main_r38_received": true,
+    "main_plan_adopted": true,
+    "code_or_run_authorization": false,
+    "source_original_specs": [
+      "DS-S17",
+      "DS-S18",
+      "DS-S19",
+      "DS-S20",
+      "DS-S21",
+      "DS-S22",
+      "DS-S28"
+    ],
+    "replay": "MA-DS04",
+    "engine_runs": 0
   }
 }
