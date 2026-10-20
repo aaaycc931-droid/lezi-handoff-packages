@@ -1,15 +1,15 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "active_no_user_candidate_after_20261020_review",
+  "status": "active_no_rule_candidate_natural_prefix_static_review_complete",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
     "candidate_id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
     "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json"
   },
   "next_work_item": {
-    "id": "NEXT-STD-H02-M04-NATURAL-PREFIX-AND-FINAL-KING-SAFETY-REVIEW",
-    "subject": "完整合法自然前缀与末态王安全静态核查",
-    "action": "从已批准AP/AS及原ES条件例补足真实完整前缀，先核原来源；出现合法可观察缺口再给具体候选，不改代码、不运行引擎。",
+    "id": "NEXT-STD-NP-CONTRACT-AND-ATOMIC-GATES",
+    "subject": "AS/AP/ES静态可复验合同与原子门禁来源复核",
+    "action": "核对H21抽选/授鳞、H02窗口、M04路径、原子末态/王安全、可复现事件字段；不运行引擎。",
     "status": "ready_not_started",
     "implementation_authorized": false
   },
@@ -163,9 +163,9 @@
     "approved": false
   },
   "local_next": {
-    "id": "NEXT-STD-H02-M04-NATURAL-PREFIX-AND-FINAL-KING-SAFETY-REVIEW",
-    "subject": "完整合法自然前缀与末态王安全静态核查",
-    "action": "从已批准AP/AS及原ES条件例补足真实完整前缀，先核原来源；出现合法可观察缺口再给具体候选，不改代码、不运行引擎。",
+    "id": "NEXT-STD-NP-CONTRACT-AND-ATOMIC-GATES",
+    "subject": "AS/AP/ES静态可复验合同与原子门禁来源复核",
+    "action": "核对H21抽选/授鳞、H02窗口、M04路径、原子末态/王安全、可复现事件字段；不运行引擎。",
     "status": "ready_not_started",
     "implementation_authorized": false
   },
@@ -281,5 +281,13 @@
     "path": "reviews/H02_M04_RETURN_SOURCE_EXIT_ORDER_REVIEW_20261020.md",
     "rule_delta": 0,
     "no_new_candidate": true
+  },
+  "natural_prefix_static_review_20261020": {
+    "path": "reviews/H02_M04_H21_NATURAL_PREFIX_STATIC_REVIEW_20261020.md",
+    "decision": "no newly proposed gameplay policy",
+    "approved_legacy_scopes_preserved": true,
+    "new_user_rule_approvals": 0,
+    "rule_delta": 0,
+    "verification": "V1 static only, all formal specs UNRUN"
   }
 }
