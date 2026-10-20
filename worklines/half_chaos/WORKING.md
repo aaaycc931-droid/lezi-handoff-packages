@@ -3,11 +3,11 @@ document_type: half_chaos_design_working_increment
 project: 乐子象棋
 workline: half_chaos
 task: NEXT-HC-DESIGN-03
-revision: HC-SESSION-CLOSEOUT-20261019-r5
-date_local: 2026-10-19
+revision: HC-DESIGN-03-20261020-r34
+date_local: 2026-10-20
 timezone: Asia/Shanghai
 primary_reader: AI
-status: conversation_closed_after_r33_documents_unrun
+status: wp04_evidence_document_prepared_all64_unrun
 new_user_rule_confirmations_this_round: 0
 collaboration_current_index: ../../collaboration/CURRENT.json
 formal_collaboration_baseline: 1.8.0
@@ -18,6 +18,8 @@ shared_rule_supplement: H10_20261014_plus_main_1_52_H15_first_tick_and_prior_rep
 # 半混乱揭棋：时序、权限、合法前缀与剩余适配
 
 ## 0. 当前入口与接续
+
+2026-10-20 用户“进行象棋混乱模式推进”，按固定半混乱入口从r33/r5恢复，完成r34 WP04文档合同 `DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json`；本轮只推进原授权文档，不视为新玩法/技术实现/运行批准。实际新增证据类HC-EVID-01/02/03对应OG04/06/05，原64全部UNRUN；本轮下一WP05缺证边界，仍文档限定。此前r5收束是上一会话状态，原文保留如下作为历史。
 
 用户2026-10-19T22:55:43+08:00明确“收束本轮对话”，当前HC-SESSION-CLOSEOUT-20261019-r5，仅关闭本半混乱对话；不停止项目或其他工作线。最后完成设计为HC-DESIGN-03-20261019-r33，实际提交8b13766fa4fa38eea70d9adbfdeb5e699fa75385。完整设计正文仍见§8.56/8.57及PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json、SAFETY_REPAIR_CONTRACT_PROPOSAL.json；本次收束见§8.58与CURRENT_STATE.session_closeout。
 
@@ -2569,6 +2571,24 @@ HC-SAFE-Q01—05在RETURN_TO_MAIN中交主线核共用闭合、批次/RNG、有�
 下一步固定为NEXT-HC-DELIVERY-EVIDENCE-CONTRACT-REFINEMENT（WP04），NOT_STARTED_DOCUMENT_ONLY：原死亡/复活前历史、真实红黑玩家输出、同状态新请求/原样重传/同ID冲突的证据文档，保留缺刺激与客户端/传输未核边界，不添加命令、不写业务、不导入运行、不绕门禁。用户明确继续后读实际最新入口再做，无需重批原12范围。
 
 收束新增玩法/范围/技术确认0；原64全部UNRUN，可运行/已运行0，评分冻结、NET暂停。完整状态及原话在CURRENT_STATE.session_closeout；本次局限审查在VALIDATION.closeout_r5_limitation_audit，V2有限源与身份核对、同一AI维护，无独立游戏运行或未来接续效果证明。
+
+### 8.59 WP04真实死亡、玩家输出和请求递送证据合同（r34）
+
+用户本轮要求推进混乱模式；依当前半混乱固定入口r5后续WP04开展，仅源/文档准备。详细唯一合同文件为`DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json`，源追溯为原IMPLEMENTATION_SCOPE_PROPOSAL WP04及OBSERVATION_FIELD_MAPPING OG04/05/06，原64条矩阵不重写。
+
+| 合同 | 原缺口 | 限定结论 |
+|---|---|---|
+| HC-EVID-01 | OG04（4个关联原ID） | DS05相关死亡动作在复活前保留外置证据；当前captured经复活清除不等于无死亡史；同一开局本体与非勇士/龙损失需独立证明，不建新产品历史 |
+| HC-EVID-02 | OG06（7个关联原ID） | 原样分别取红黑playerRoomView、公开事件和实际客户端/消息/错误渠道，secret仅受控保存；逐字段给出公开理由，未核客户端不认定无泄漏 |
+| HC-EVID-03 | OG05（2个关联原ID） | 区分同不安全状态两次新请求、原样重传、同ID不同actor/payload冲突；原12只声明第一类部分请求，后两类缺刺激，不创研究命令或产品错误码 |
+
+合计13个缺口-规格关联、去重11个既有ID，非新增11条规格、非13次运行。当前`captured`删除、`expiredFormalAction/processedActions`、`playerRoomView`定位来自固定14b源码静态映射，无真实请求、协议与客户端运行证据。WP01—03仍为待主线共享核定的文档合同；本文件不批准hook/接口/修复，不填主线回执。
+
+证据包仅建议未来采用严格三通道区分：受控权威及秘密、红黑各自原始可见响应、实际请求处理/错误封装；记录原合法前缀和源提交、消息身份、语义时点、原始凭据与缺失段，不能以归一掩盖未知信息差。若缺实际死亡批次、稳定本体对应、客户端传输或原样重传/冲突刺激，均继续未观察和UNRUN。
+
+HC-EVID-Q01—04交主线核不可回退历史与稳定本体、请求payload绑定和错误优先级、真实UI/客户端输出通道，以及WP02被动采样可行性；不是新共享裁决确认。PD-S31/32、DS-S16/22和其余自然/负例缺口归WP05保留；原三组/12回放/210检查点完全不变。
+
+验证：JSON引用及原矩阵OG04/05/06各4/2/7映射、既有文档身份与合同语义静态核对；V2有限源事实＋V1同一AI建议，独立审查/引擎/网络/UI/真实运行均未完成。全部64UNRUN，评分冻结、NET暂停，业务改动0。下一`NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT`（WP05）未开始，仍只限文档；前次r5收束未被撤销或重写为本轮批准。
 
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
