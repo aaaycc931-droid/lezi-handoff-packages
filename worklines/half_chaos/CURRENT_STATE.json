@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-DESIGN-03-20261020-r36",
+  "revision": "HC-DESIGN-03-20261020-r37",
   "workline": "half_chaos",
   "date_local": "2026-10-20",
   "timezone": "Asia/Shanghai",
-  "status": "engineering_readiness_document_complete_source_diff_next",
+  "status": "pr_stacked_lineage_resolved_code_scope_pending_main",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -128,9 +128,9 @@
     "full_chat_export_recovered": false
   },
   "completed_this_round": [
-    "从r35最新半混乱入口和实际远程HEAD保护其他线并发成果；查主线WP01—03真实旧回执未升级为五合同技术采用",
-    "读取开发分支固定14b六类关键业务代码的当前blob，与默认分支代表性文件比较，发现缺文件及同名差异；仍未做全PR/CI代码审计",
-    "整理ENG-00—05原计划实施次序、三合法研究组合、七类运行门禁与12回放/64原义务之间的真实依赖；无业务写改和运行"
+    "真实PR4/5/6/7 metadata/固定提交链核查，PR6实际24文件patch、PR7实际7文件patch读取；确定叠加式草稿代码并非默认分支缺漏可直接补单文件",
+    "固定14b的模式门禁/研究来源/动作与时钟、玩家观察关键源码核查：现行只准half_chaos shuffler且mutation被阻断，原三研究tuple尚未法律准入",
+    "形成SLICE-01精准研究准入、SLICE-02已有确认安全差分、SLICE-03被动观察的最小文件与否定回归计划；未代码写改/未运行/未修改其他模式"
   ],
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": 0,
@@ -177,7 +177,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE：只读PR6/7及固定14b与默认分支依赖差异，准备最小ENG-01/02/03建议与回归矩阵；主线共享接口/代码/运行仍需具体授权。",
+  "next_action": "NEXT-HC-FIRST-IMPLEMENTATION-AUTHORIZATION-AND-SOURCE-RECONCILIATION：主线限范围核共享ENG-01/02/03、实际engine PR4→7基线和具体可写路径与回归授权；获准前独立做来源/文档工作，不自动实施、运行或合并。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -2363,5 +2363,26 @@
     "implementation": false,
     "run": false,
     "fully_accepted": false
+  },
+  "r37_branch_diff": {
+    "revision": "HC-DESIGN-03-20261020-r37",
+    "report": "ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json",
+    "engine_prs": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "pinned_engine_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "chain_verified": true,
+    "pr6_file_patches": 24,
+    "pr7_file_patches": 7,
+    "default_branch_equivalent": false,
+    "feature_gate": false,
+    "three_research_tuples_admitted": false,
+    "technical_approval": false,
+    "engine_changed": false,
+    "engine_run": false,
+    "main_adopted": null
   }
 }
