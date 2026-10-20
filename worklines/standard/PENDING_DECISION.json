@@ -1,17 +1,15 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "active_no_rule_candidate_natural_prefix_static_review_complete",
+  "status": "active_no_gameplay_candidate_rng_evidence_gap_tracked",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019",
     "candidate_id": "SHARED-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE",
     "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json"
   },
   "next_work_item": {
-    "id": "NEXT-STD-NP-CONTRACT-AND-ATOMIC-GATES",
-    "subject": "AS/AP/ES静态可复验合同与原子门禁来源复核",
-    "action": "核对H21抽选/授鳞、H02窗口、M04路径、原子末态/王安全、可复现事件字段；不运行引擎。",
+    "id": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE",
     "status": "ready_not_started",
-    "implementation_authorized": false
+    "action": "Read-only verify source for H21 number of Invincible grant targets and RNG/replay; report true semantics gap without prescribing unapproved policy."
   },
   "unresolved_questions": [
     "Latest main1.61 H15/H06 graduation source review next; no active user candidate reported. Newer H15 sources not fully read/adopted here.",
@@ -163,11 +161,9 @@
     "approved": false
   },
   "local_next": {
-    "id": "NEXT-STD-NP-CONTRACT-AND-ATOMIC-GATES",
-    "subject": "AS/AP/ES静态可复验合同与原子门禁来源复核",
-    "action": "核对H21抽选/授鳞、H02窗口、M04路径、原子末态/王安全、可复现事件字段；不运行引擎。",
+    "id": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE",
     "status": "ready_not_started",
-    "implementation_authorized": false
+    "action": "Read-only verify source for H21 number of Invincible grant targets and RNG/replay; report true semantics gap without prescribing unapproved policy."
   },
   "main_latest_reported_confirmation_id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
   "last_confirmed_scope_note": "Existing last_confirmed/confirmation fields retain previously fully adopted H15 display source, not a claim that newer reported confirmation is adopted.",
@@ -289,5 +285,13 @@
     "new_user_rule_approvals": 0,
     "rule_delta": 0,
     "verification": "V1 static only, all formal specs UNRUN"
+  },
+  "np_contract_20261020": {
+    "status": "design_only_contract_written",
+    "path": "specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+    "report": "reviews/H02_M04_H21_NP_CONTRACT_AND_ATOMIC_GATES_REVIEW_20261020.md",
+    "rule_delta": 0,
+    "confirmations_delta": 0,
+    "random_count_policy": "unresolved not a confirmed candidate; provenance check next"
   }
 }
