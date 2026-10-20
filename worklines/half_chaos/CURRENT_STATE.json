@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-DESIGN-03-20261020-r37",
+  "revision": "HC-RETURN-20261020-r38",
   "workline": "half_chaos",
   "date_local": "2026-10-20",
   "timezone": "Asia/Shanghai",
-  "status": "pr_stacked_lineage_resolved_code_scope_pending_main",
+  "status": "main_engine_scope_handoff_published_awaiting_receiver",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -177,7 +177,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "NEXT-HC-FIRST-IMPLEMENTATION-AUTHORIZATION-AND-SOURCE-RECONCILIATION：主线限范围核共享ENG-01/02/03、实际engine PR4→7基线和具体可写路径与回归授权；获准前独立做来源/文档工作，不自动实施、运行或合并。",
+  "next_action": "NEXT-HC-CHECK-MAIN-R38-ENGINE-SCOPE-RECEIPT：主线实际读取回执与SLICE-01/02/03授权范围核查；未出现主线真实采用不能进入游戏引擎修改或运行，仍保持64UNRUN。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -2384,5 +2384,18 @@
     "engine_changed": false,
     "engine_run": false,
     "main_adopted": null
+  },
+  "main_engine_scope_handoff_r38": {
+    "report": "MAIN_ENGINE_IMPLEMENTATION_REVIEW_REQUEST.json",
+    "receiver": "main",
+    "publication": "PUBLISHED_FIXED_SOURCE_DIRECTORY",
+    "main_read": null,
+    "main_received": null,
+    "main_adopted": null,
+    "technical_approval": null,
+    "preserved_source_report": "ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json",
+    "engine_runs": 0,
+    "engine_edits": 0,
+    "rule_changes": 0
   }
 }
