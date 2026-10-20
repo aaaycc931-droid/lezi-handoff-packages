@@ -1,9 +1,9 @@
 {
-  "revision": "HC-DESIGN-03-20261020-r36",
+  "revision": "HC-DESIGN-03-20261020-r37",
   "next_independent_task": {
-    "id": "NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE",
-    "status": "NOT_STARTED_SOURCE_REVIEW_ONLY",
-    "action": "核固定14b与PR6/7实际代码差分和默认分支之不同，整理最小准入/沙漏安全/被动观察实施文件与回归入口；不改业务、不跑引擎、不开门禁。共享改动应归主线审查。"
+    "id": "NEXT-HC-FIRST-IMPLEMENTATION-AUTHORIZATION-AND-SOURCE-RECONCILIATION",
+    "status": "PENDING_SPECIFIC_TECHNICAL_SCOPE_MAIN_OWNER",
+    "action": "从r37固定PR7=14b与PR4→5→6→7叠加链向主线提交精确SLICE-01/02/03源码归属、研究三组tuple和保护门禁的有限授权边界；未核获具体实现/测试授权前继续只读来源/文档，不写游戏引擎、不导入运行、不合并PR。"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -28,9 +28,9 @@
   "scoring_frozen": true,
   "NET": "paused",
   "previous_completed_task": {
-    "id": "NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW",
-    "revision": "HC-DESIGN-03-20261020-r36",
-    "status": "DOCUMENT_REVIEW_COMPLETE_NO_IMPLEMENTATION_AUTHORIZATION"
+    "id": "NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE",
+    "revision": "HC-DESIGN-03-20261020-r37",
+    "status": "SCOPED_PR6_PR7_DIFF_AND_SOURCE_REVIEW_COMPLETE_NO_CODE_OR_RUN"
   },
   "shared_pending_references": [
     "STD-D01-EDGES remaining end-phase/search/order/clock interfaces"
@@ -1299,5 +1299,24 @@
     "original64": "UNRUN",
     "executed12": 0,
     "technical_authorization": false
+  },
+  "r37_branch_diff": {
+    "report": "ENGINE_BRANCH_DIFF_AND_MINIMAL_SCOPE.json",
+    "review_prs": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "full_changed_file_patches_reviewed": {
+      "pr6": 24,
+      "pr7": 7
+    },
+    "engine_review_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "engine_code_changes": 0,
+    "engine_runs": 0,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "main_technical_adoption": null
   }
 }
