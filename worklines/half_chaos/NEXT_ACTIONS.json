@@ -1,9 +1,9 @@
 {
-  "revision": "HC-DESIGN-03-20261020-r35",
+  "revision": "HC-DESIGN-03-20261020-r36",
   "next_independent_task": {
-    "id": "NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW",
-    "status": "NOT_STARTED_DOCUMENT_ONLY_MAIN_COORDINATION_REQUIRED",
-    "action": "核主线实际读取/采用WP01—05和共享边界回复；在原授权内整理工程准入、固定源码、12回放pilot及64规格覆盖的依赖表；没有新代码/运行授权不得导入引擎/改变门禁或运行。"
+    "id": "NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE",
+    "status": "NOT_STARTED_SOURCE_REVIEW_ONLY",
+    "action": "核固定14b与PR6/7实际代码差分和默认分支之不同，整理最小准入/沙漏安全/被动观察实施文件与回归入口；不改业务、不跑引擎、不开门禁。共享改动应归主线审查。"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -28,9 +28,9 @@
   "scoring_frozen": true,
   "NET": "paused",
   "previous_completed_task": {
-    "id": "NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT",
-    "revision": "HC-DESIGN-03-20261020-r35",
-    "status": "DOCUMENT_COMPLETE_NOT_IMPLEMENTATION_RUN_AUTHORIZATION"
+    "id": "NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW",
+    "revision": "HC-DESIGN-03-20261020-r36",
+    "status": "DOCUMENT_REVIEW_COMPLETE_NO_IMPLEMENTATION_AUTHORIZATION"
   },
   "shared_pending_references": [
     "STD-D01-EDGES remaining end-phase/search/order/clock interfaces"
@@ -1284,5 +1284,20 @@
     "original64": "UNRUN",
     "original12_executed": 0,
     "technical_approval": false
+  },
+  "engineering_readiness_review": {
+    "revision": "HC-DESIGN-03-20261020-r36",
+    "path": "ENGINEERING_READINESS_REVIEW.json",
+    "current_readiness": "SOURCE_ONLY_7_EXECUTION_GATES_UNMET",
+    "engine_prs": [
+      6,
+      7
+    ],
+    "pinned_branch": "codex/half-chaos-h11-b-clock-20261012",
+    "pinned_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "default_branch_differs_from_pinned": true,
+    "original64": "UNRUN",
+    "executed12": 0,
+    "technical_authorization": false
   }
 }
