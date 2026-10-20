@@ -1,9 +1,9 @@
 {
-  "revision": "HC-PREP-20261020-r40",
+  "revision": "HC-SESSION-CLOSEOUT-20261020-r41",
   "next_independent_task": {
     "id": "NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION",
     "status": "MAIN_ENGINE_CODE_AND_RUN_AUTHORIZATION_PENDING_LOCAL_EVIDENCE_PREPARED",
-    "action": "不重复请求主线接收r38；等待主线在明确代码许可下实施R38-SAFE-BOMB（固定14b隔离源码）并产生可信提交/回归证据。本线可核原64/12和三组合固定映射等只读准备，主线真实更新到来后再按回执接入。没有授权不可擅改代码或运行。"
+    "action": "本对话已收束。下次先核最新GitHub HEAD及主线是否实际获得代码/运行授权、隔离分支与R38-SAFE-BOMB补丁/回归；有真实证据才按原MA-DS04 B3/B4复核，否则独立进行只读来源/文档工作，不重走r38交接、不放开featuresReady、评分或NET。"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1387,5 +1387,18 @@
     ],
     "replay": "MA-DS04",
     "engine_runs": 0
+  },
+  "closeout_r41": {
+    "user_instruction": "收束本轮对话",
+    "source_stage": "HC-PREP-20261020-r40",
+    "source_commit": "29c76e03912bca50130cc0f04be43461108a31ba",
+    "main_r38_actual_receipt_commit": "4dfeb73211a5f25e75a55fdc5e2bc4d623e1959b",
+    "R40_bomb_prepatch": "R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
+    "engine_code_changes": 0,
+    "engine_runs": 0,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "other_workline_effect": "NONE",
+    "main_receiver_of_this_closeout": null
   }
 }
