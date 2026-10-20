@@ -1,0 +1,324 @@
+{
+  "schema": "lezi.hc.engine_branch_diff_minimum_scope.v1",
+  "revision": "HC-DESIGN-03-20261020-r37",
+  "task": "NEXT-HC-ENGINE-BRANCH-DIFF-AND-MINIMAL-IMPLEMENTATION-SCOPE",
+  "result": "SOURCE_DIFF_REVIEW_COMPLETE_NOT_CODE_OR_RUNTIME_APPROVAL",
+  "source_head_at_read": "045d772ce802f38ef7740d114f446dd55d5e3f72",
+  "engine_repository": "aaaycc931-droid/jieqi-engine",
+  "date_local": "2026-10-20",
+  "workflow_authorization": {
+    "user_instruction": "先解决那个问题吧",
+    "scope_interpretation": "延续r36下一任务的实际PR6/PR7/14b来源差分和最小ENG-01/02/03实施范围，仅源读取与文档阶段增量回传",
+    "reasons_not_engine_editing": "当前本线PROJECT_WORK_AGREEMENT把代码/引擎运行列为需要另先确定具体授权范围；主线WP01—05技术共享依赖仍未实际接收/采用；两个新模式featuresReady=false",
+    "no_new_rules": true,
+    "no_new_run": true,
+    "no_feature_gate_change": true
+  },
+  "verified_stacked_pr_chain": [
+    {
+      "pr": 4,
+      "base": "codex/ui-android-apk-20261001",
+      "head": "codex/score-mechanism-20261010",
+      "head_sha": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+      "status": "open/draft",
+      "scope": "评分机制底座（非正式解冻）"
+    },
+    {
+      "pr": 5,
+      "base": "codex/score-mechanism-20261010",
+      "base_sha": "785431e1e2e8d6c1c0491d3f11c6ad4fc8b89646",
+      "head": "codex/score-policy-adapter-20261011",
+      "head_sha": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+      "status": "open/draft",
+      "scope": "原揭棋P0隔离策略适配器；无半混乱的三组英雄畸变资格"
+    },
+    {
+      "pr": 6,
+      "base": "codex/score-policy-adapter-20261011",
+      "base_sha": "ac8c25c4adddf429bcd73c99129793efb6f96f7d",
+      "head": "codex/score-mode-bridge-20261011",
+      "head_sha": "f1c01585ade8b4e17618399901d7283f37271459",
+      "status": "open/draft",
+      "compare": "one_commit_ahead_zero_behind",
+      "changed_files": 24,
+      "additions": 3588,
+      "deletions": 44,
+      "scope": "mode_scoped_P0_v0.2 半混乱H11无畸变、普通部分来源、合法固定随机见证、来源局部研究、主行动观察"
+    },
+    {
+      "pr": 7,
+      "base": "codex/score-mode-bridge-20261011",
+      "base_sha": "f1c01585ade8b4e17618399901d7283f37271459",
+      "head": "codex/half-chaos-h11-b-clock-20261012",
+      "head_sha": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "status": "open/draft",
+      "compare": "one_commit_ahead_zero_behind",
+      "changed_files": 7,
+      "additions": 138,
+      "deletions": 19,
+      "scope": "mode_scoped_P0_v0.3半混乱H11-B实际窗口开始计时、计数、超时、重传限定验证"
+    }
+  ],
+  "actual_pr6_file_groups": {
+    "research_admission_and_room": [
+      "src/modes.ts",
+      "src/research-source-context.ts",
+      "src/remote-room.ts"
+    ],
+    "policy_and_evidence": [
+      "scripts/scoring/policy-session.ts",
+      "scripts/scoring/policy-observation.ts",
+      "scripts/scoring/mode-qualification-cases.ts",
+      "scripts/scoring/research-log.ts",
+      "scripts/scoring/run-mode-qualification.ts",
+      "scripts/scoring/MODE_BRIDGE_README.md"
+    ],
+    "legal_fixture": [
+      "scripts/scoring/mode-fixture-loader.ts",
+      "scripts/scoring/fixtures/mode-bridge/HC_N01_AUTHORITY_PERMUTATION_WITNESSES.json",
+      "scripts/scoring/fixtures/mode-bridge/HC_N01_LEGAL_PREFIXES.json",
+      "scripts/scoring/fixtures/mode-bridge/HC_N02_H11_FIELD_ORACLES.json"
+    ],
+    "observation_and_existing_rules": [
+      "src/turns.ts",
+      "src/mechanism-observer.ts",
+      "src/hero-shuffle.ts"
+    ],
+    "regression": [
+      "tests/scoring-mode-bridge.test.ts"
+    ],
+    "note": "PR6完整 changed filenames/patch 24份已读取；未更改游戏产品许可状态"
+  },
+  "actual_pr7_files": [
+    "docs/HALF_CHAOS_H11_B_COUNT_CLOCK_2026-10-12.md",
+    "scripts/scoring/MODE_BRIDGE_README.md",
+    "scripts/scoring/mode-qualification-cases.ts",
+    "scripts/scoring/policy-session.ts",
+    "src/hero-actions.ts",
+    "src/mechanism-observer.ts",
+    "tests/fixtures/scoring/CONFIRMATION_HC_H11_B_COUNT_CLOCK.json"
+  ],
+  "source_commit_and_default_gap": {
+    "default_branch": "main",
+    "pinned_future_review_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+    "default_not_equivalent_to_branch": true,
+    "branch_vs_main_compare": {
+      "ahead": 121,
+      "behind": 0,
+      "merge_base": "c25749d4f21d394c3d94486cfba1d786864083b6",
+      "returned_files_count": 300,
+      "note": "compare returned first300 files and cannot be treated as exhaustive cross-tree file audit; not evidence of merge/no conflict"
+    },
+    "representative_actual_blobs": [
+      {
+        "path": "src/modes.ts",
+        "pr7": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+        "default": "not_found"
+      },
+      {
+        "path": "src/research-source-context.ts",
+        "pr7": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+        "default": "not_found"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "pr7": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301",
+        "default": "5c1ae0f8ed3afe01516b95e2ab1a757c90886c3e"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "pr7": "c67b12dd0222d96ef685278c5fbfae32428909d5",
+        "default": "not_found"
+      },
+      {
+        "path": "src/mechanism-observer.ts",
+        "pr7": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81",
+        "default": "not_found"
+      },
+      {
+        "path": "src/rules.ts",
+        "pr7": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+        "default": "f5a48a65a9365b085398ebec7912dccb9067d169"
+      }
+    ],
+    "conclusion": "branch mismatch is the deliberate stacked-unmerged PR4→5→6→7 source line; do not cherry-pick scattered files to main or merge PR7 alone. 121 commits ahead and possible 300-file compare truncation make direct merge an explicitly separate review."
+  },
+  "confirmed_validation_scope_only": [
+    {
+      "id": "HC-ADM-PD-M04",
+      "mode": "half_chaos",
+      "red": "H04 qin_long",
+      "black": "H03 warrior",
+      "mutation": "M04 war_chariot",
+      "existing_replays": 4
+    },
+    {
+      "id": "HC-ADM-PD-M01",
+      "mode": "half_chaos",
+      "red": "H04 qin_long",
+      "black": "H03 warrior",
+      "mutation": "M01 iron_steed",
+      "existing_replays": 4
+    },
+    {
+      "id": "HC-ADM-DS-D01",
+      "mode": "half_chaos",
+      "red": "H06 nozdormu",
+      "black": "H05 murozond",
+      "mutation": "D01 end_time",
+      "existing_replays": 4
+    }
+  ],
+  "observed_v03_specific_technical_blockers": [
+    {
+      "id": "BL-01",
+      "location": "src/modes.ts + src/research-source-context.ts",
+      "facts": "GAME_MODES.half_chaos.featuresReady=false; MODE_RESEARCH_SOURCES.half_chaos only shuffler; modeResearchPermits explicitly rejects any mutation; researchSources requires new modes mutationsEnabled=false",
+      "result": "all three proposed two-hero/one-mutation tuples are currently correctly rejected by product/research admission. Not a code failure; gate is not an approval to bypass."
+    },
+    {
+      "id": "BL-02",
+      "location": "scripts/scoring/policy-session.ts + src/remote-room.ts",
+      "facts": "v0.3 modeQualification accepts only hunter/rogue/shuffler and no-mutation preparation; session implements real room join/selection/RPS/remote entry but not PD or D01 tuple adapter",
+      "result": "cannot treat legacy halfH11 runner, false mutation or different hero as real MA-PD/MA-DS run"
+    },
+    {
+      "id": "BL-03",
+      "location": "src/hero-actions.ts (D01)",
+      "facts": "hourglass path consumes copy resources, queues returns and calls settleLandings; inspected branch does not separately check final own-general safety for all-or-nothing rejection; bomb branch contains identity/ammo/quota/target gates but lacks explicit current-check refusal on inspected path",
+      "result": "only source-based EI02/EI03 suspects, not reproduced runtime failures; exact bounded patch main-owned"
+    },
+    {
+      "id": "BL-04",
+      "location": "src/game.ts/src/rules.ts/src/settlement.ts",
+      "facts": "special path and M01 threat use sources/geometric checks; simulatePublicMove is not guaranteed to resolve full destruction/returns/terminal chain; actual commit source has bounded previously recorded EI05/EI07",
+      "result": "do not globally replace royal-safety/terminal policy or declare all search solved"
+    },
+    {
+      "id": "BL-05",
+      "location": "src/turns.ts + src/mechanism-observer.ts + scripts/scoring/policy-session.ts",
+      "facts": "PR6 formal_main_action observation fires at recordAction, PR7 shuffle_window_clock_start added; both are real event locations but main/end exact post-closure observation is still not present as a verified contract for PD/D01",
+      "result": "WP02/04 requires exact passive snapshots at semantic closure and separate red/black views, immutable death history, retry/wire disposition"
+    }
+  ],
+  "minimal_engineering_slice_proposed_not_applied": [
+    {
+      "id": "SLICE-00",
+      "owner": "half_chaos source review",
+      "candidate_files": [
+        "src/modes.ts",
+        "src/research-source-context.ts",
+        "src/remote-room.ts",
+        "scripts/scoring/policy-session.ts",
+        "scripts/scoring/mode-fixture-loader.ts"
+      ],
+      "deliverable": "source identity, precise actor/mode/room/side mapping and legal product flow; verify PR lineage and prevent stale implementation base",
+      "code_status": "SOURCE_MAPPED_NO_EDIT"
+    },
+    {
+      "id": "SLICE-01",
+      "owner": "main shared gate with half_chaos adapter",
+      "candidate_files": [
+        "src/modes.ts",
+        "src/research-source-context.ts",
+        "src/remote-room.ts",
+        "scripts/scoring/policy-session.ts",
+        "scripts/scoring/mode-qualification-cases.ts"
+      ],
+      "deliverable": "trusted synchronous non-product scope allows only three exact world and selection tuples after documented main approval, uses actual draw and original player room routes",
+      "negative_checks": [
+        "client cannot create research capability",
+        "no mutations outside actual three tuples",
+        "no third hero or second mutation",
+        "wrong room, swapped sides, duplicated actor, old source hash or changed backend blocked",
+        "normal product mode remains featuresReady=false",
+        "non-target P0/ordinary/jieqi unchanged"
+      ],
+      "code_status": "WAIT_SHARED_DESIGN_AND_EXPLICIT_CODE_SCOPE"
+    },
+    {
+      "id": "SLICE-02",
+      "owner": "main shared safety/turn closure",
+      "candidate_files": [
+        "src/hero-actions.ts",
+        "src/game.ts",
+        "src/rules.ts",
+        "src/settlement.ts",
+        "src/remote-room.ts"
+      ],
+      "deliverable": "D01 hourglass closed-result self-check and atomic rollback; bomb-in-check refuse; M01/M04 path exact actual-source king safety/horse leg corrected within prior confirmed outcomes",
+      "negative_checks": [
+        "failed ability does not spend hourglass/ammo or progress clock",
+        "cannot create a legal move from incomplete public simulation",
+        "reject on correct original trigger and preserve other mode branches",
+        "no global new terminal/search policy"
+      ],
+      "code_status": "WAIT_SHARED_TECHNICAL_SCOPE"
+    },
+    {
+      "id": "SLICE-03",
+      "owner": "main observer + half_chaos evidence + UI/client actual sources",
+      "candidate_files": [
+        "src/turns.ts",
+        "src/mechanism-observer.ts",
+        "src/remote-room.ts",
+        "src/settlement.ts",
+        "scripts/scoring/policy-session.ts",
+        "scripts/scoring/policy-observation.ts"
+      ],
+      "deliverable": "separate pre/post legitimate semantic atom snapshots, out-of-state death record, real red/black views and delivered error/duplicate identities",
+      "negative_checks": [
+        "observer off/on authoritative state and RNG equivalence",
+        "no false late clock read or fabricated early post-main event",
+        "secret not leaked into player channel",
+        "same-state fresh request not confused with exact-wire retry"
+      ],
+      "code_status": "WAIT_MAIN_OBSERVATION_SOURCE_SCOPE"
+    }
+  ],
+  "run_and_regression_plan": {
+    "not_executed": true,
+    "pr6_historical_report": "19 bounded checks plus complete573 historical report at PR6 commit; no fresh validation on PR7",
+    "pr7_historical_report": "22 bounded checks plus111 historical subset report at PR7 commit; not complete573 rerun/independent V3",
+    "first_gate_checks": [
+      "source identity pin & PR dependency/compile check",
+      "old product P0 admission and no-new-mode rejection regression",
+      "positive only three exact admission tuples from legal complete initial world",
+      "negative mode/actor/room/body/mutation/capability/secret equivalence",
+      "observer off/on and clock/retry transactional invariants"
+    ],
+    "planned_pilot": [
+      "MA-PD01",
+      "MA-DS03",
+      "MA-DS04"
+    ],
+    "planned_other_replays": 9,
+    "existing_specs": 64,
+    "existing_declared_checkpoints": 210,
+    "obligation_notes": "PD-S31/32,DS-S16/22 no lawful full natural positive/negative set; additional eight undeclared stimuli remain unrun, no 64/64 blanket pass",
+    "stop_on": [
+      "unclean or changed source/merge base",
+      "incorrect world/tuple, illegal early terminal, real request refusal mismatch",
+      "observer side effect/privacy leak",
+      "new shared-rule conflict or approval out-of-scope"
+    ]
+  },
+  "status": {
+    "document_source_review": "COMPLETE_SCOPED_PR6_PR7_PATCH_AND_KEY_SOURCE",
+    "main_shared_approval": "NOT_OBSERVED_FOR_WP01_05",
+    "engine_edit": "NOT_STARTED",
+    "engine_run": "NOT_STARTED",
+    "valid_original_replays": 0,
+    "original64": "UNRUN",
+    "mode_complete": false,
+    "product_release": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "main_receiver_receipt": null
+  },
+  "next": {
+    "id": "NEXT-HC-FIRST_IMPLEMENTATION_AUTHORIZATION_AND_SOURCE_RECONCILIATION",
+    "status": "PENDING_SPECIFIC_TECHNICAL_SCOPE_MAIN_OWNER",
+    "action": "将本r37最小差分和三组合准入/安全修复/被动观察责任归主线审核；明确具体可写引擎分支、路径、审查及回归限制。获得授权前可继续独立查 source facts, 不实施、运行、绕门禁或合并PR；主线可以串行处理共享争议，独立准备不中断。"
+  }
+}
