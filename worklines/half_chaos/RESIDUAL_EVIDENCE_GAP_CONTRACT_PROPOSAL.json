@@ -1,0 +1,294 @@
+{
+  "schema": "lezi.hc.wp05.residual_evidence_gap_boundary.v1",
+  "revision": "HC-DESIGN-03-20261020-r35",
+  "status": "DOCUMENT_SCOPE_COMPLETE_NO_ENGINE_OR_RULE_APPROVAL",
+  "task_completed": "NEXT-HC-RESIDUAL-EVIDENCE-GAP-BOUNDARY-REFINEMENT",
+  "date_local": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "workline": "half_chaos",
+  "work_package": "WP05",
+  "source_head_at_read": "bcf470447ed8bf86de380e6037c73e0154ff17aa",
+  "inherited_scope": {
+    "existing_specifications": 64,
+    "PD": 36,
+    "DS": 28,
+    "planned_replays": 12,
+    "already_declared_checkpoint_count": 210,
+    "declared_direct_checkpoint_specs": 63,
+    "ready_replays": 0,
+    "executed_replays": 0,
+    "runtime_passes": 0,
+    "original_game_rule_confirmations_unchanged": true,
+    "existing_three_tuple_scope_and_two_heroes_one_mutation_unchanged": true,
+    "original_six_inputs_and_confirmation_records_unchanged": true,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "featuresReady": false,
+    "this_round_new_commands": 0,
+    "this_round_engine_runs": 0,
+    "this_round_game_code_changes": 0,
+    "no_new_scope_or_technical_approval": true
+  },
+  "source_refs": [
+    {
+      "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+      "use": "64条原义务与缺刺激/依赖"
+    },
+    {
+      "path": "worklines/half_chaos/ACCEPTANCE_SCOPE.json",
+      "git_blob_sha": "322e5aef2fcee3d2614fa4dd515c159c794e428b",
+      "use": "12计划、七类实施门禁、原缺例"
+    },
+    {
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "use": "当前合法前缀、动作声明与不允许伪造的刺激"
+    },
+    {
+      "path": "worklines/half_chaos/IMPLEMENTATION_SCOPE_PROPOSAL.json",
+      "git_blob_sha": "e198b5953a66053562f8419275d0fceb5f78d37c",
+      "use": "WP05原始提案、pilot三条与实施先决"
+    },
+    {
+      "path": "worklines/half_chaos/DELIVERY_EVIDENCE_CONTRACT_PROPOSAL.json",
+      "git_blob_sha": "9afe3a724b141d46893da14f7dff1678c877fcea",
+      "use": "WP04真实死亡/隐私/递送证据未实施"
+    },
+    {
+      "path": "worklines/main/SHARED_COORDINATION.json",
+      "git_blob_sha": "029c63b7a4c7331e1ec80c1b852a4ad37836e630",
+      "use": "主线WP01-03仅接收待复核"
+    }
+  ],
+  "missing_natural_or_complete_negative_cases": [
+    {
+      "id": "HC-RES-01",
+      "spec_id": "PD-S31",
+      "kind": "NATURAL_POSITIVE_MISSING",
+      "description": "现有路径/防御弹回为空来源格，缺一例实际合法的额外返回落位效果",
+      "what_counts": "两英雄一畸变完整自然开局、来源特定合法移动/返回、额外落位效果于真实闭合结果实际发生，关联动作和闭合证据",
+      "not_a_substitute": [
+        "抽象占格状态注入",
+        "单独模拟落位",
+        "借用另一模式的特殊移动"
+      ],
+      "owner": "half_chaos fixture research; main shared ordering only if required",
+      "current": "NOT_CONSTRUCTED_UNRUN"
+    },
+    {
+      "id": "HC-RES-02",
+      "spec_id": "PD-S32",
+      "kind": "NATURAL_POSITIVE_MISSING",
+      "description": "来源返格冲突窒息只在抽象规则推演，缺自然到达并可证明的完整前缀",
+      "what_counts": "完整合法初始世界、逐步真实请求、返格冲突产生的权威结果，逐项核真实本体/谁占格/原子先后和王安全",
+      "not_a_substitute": [
+        "中盘占格注入",
+        "第三英雄或第二畸变",
+        "旧手动示意直接写成PASS"
+      ],
+      "owner": "half_chaos natural prefix; main source ambiguity if exposed",
+      "current": "NO_NATURAL_POSITIVE_NO_DIRECT_CHECKPOINT_UNRUN"
+    },
+    {
+      "id": "HC-RES-03",
+      "spec_id": "DS-S16",
+      "kind": "NATURAL_PAIR_MISSING",
+      "description": "同窗口先安全后不安全的连续沙漏两次新请求正/拒对照未找到，自然例不能由现有独立例拼成",
+      "what_counts": "同一真实未过期合法D01窗口，先一次真实成功完整安全提交、仍有合法新机会再有完整闭合结果不安全且整次拒绝；包含精确窗口/资源/主体/王安全等原语义",
+      "not_a_substitute": [
+        "把不同对局的DS01和DS03合并",
+        "把两次新请求说成相同命令重传",
+        "仅看末态而缺六步内部阶段证据"
+      ],
+      "owner": "half_chaos legal natural source; main safe-plan and observation closure",
+      "current": "NOT_CONSTRUCTED_UNRUN"
+    },
+    {
+      "id": "HC-RES-04",
+      "spec_id": "DS-S22",
+      "kind": "COMPLETE_NEGATIVE_BRANCH_SET_MISSING",
+      "description": "现有材料聚焦当前受将拒投；施法者/目标/距离/弹药/全军额度等原有非法分支未逐个声明完整真实刺激",
+      "what_counts": "分别单项真实合法前缀达到原产品请求入口，记录准确原门槛、拒绝与无非法副作用、真实错误封装；不可把单一受将拒绝当所有拒绝",
+      "not_a_substitute": [
+        "抽象人为构造无弹药中盘",
+        "直接复制原代码判断推定产品行为",
+        "新错误码或私自改变错误优先级"
+      ],
+      "owner": "half_chaos stimulus planning; main product gate/error policy",
+      "current": "NEGATIVE_SET_NOT_DECLARED_UNRUN"
+    }
+  ],
+  "missing_declared_stimuli": [
+    {
+      "id": "PD-S02",
+      "missing": "独立空终点/两路径否定操作",
+      "boundary": "现有M04正向路径不能证明未给出的负向分支"
+    },
+    {
+      "id": "PD-S12",
+      "missing": "铁马替代马步/马腿真实威胁请求",
+      "boundary": "静态推理不等于独立马请求或完整来源一致"
+    },
+    {
+      "id": "PD-S17",
+      "missing": "禁止提前王威胁的独立负向查询/请求",
+      "boundary": "既有两枚阻挡路径示例不证明额外否定操作"
+    },
+    {
+      "id": "PD-S35",
+      "missing": "产品同命令重传和同ID异actor/payload冲突",
+      "boundary": "按WP04区分真实wire行为；不以研究冲突码冒充产品协议"
+    },
+    {
+      "id": "DS-S01",
+      "missing": "准备阶段、首走棋前真实双方玩家视图检查点",
+      "boundary": "R2后的当前观察不能代替开局准备视图"
+    },
+    {
+      "id": "DS-S06",
+      "missing": "第二种普通车解将分支实际选择",
+      "boundary": "当前合法主动作不同，反事实不作为已执行"
+    },
+    {
+      "id": "DS-S12",
+      "missing": "真实产品原命令重传及actor/payload冲突",
+      "boundary": "同不安全状态两次新请求与重传严格不同"
+    },
+    {
+      "id": "DS-S20",
+      "missing": "正常主行动后在旧窗口再次尝试投弹的真实请求",
+      "boundary": "下一合法B4窗口投弹不能证明旧窗口拒绝"
+    }
+  ],
+  "shared_and_outside_scope": [
+    {
+      "id": "HC-RES-SHARED-01",
+      "scope": "H16/H05来源层级与EI06",
+      "owner": "main",
+      "detail": "特殊路径源代码tier2不能作为允许Ⅰ/Ⅱ级技能的确认；PD-S34仅记录受影响共享依赖，不能以本文件修改技术层级"
+    },
+    {
+      "id": "HC-RES-SHARED-02",
+      "scope": "完整王应将/将死/独立终局/真实落位与死亡先后",
+      "owner": "main",
+      "detail": "现有部分来源论证不满足全游戏搜索闭合，尤其PD-S36/DS-S16/DS-S28；遇共享未知停止相关结论"
+    },
+    {
+      "id": "HC-RES-SHARED-03",
+      "scope": "资源/计数/时间正式采样、压力与完整重复键",
+      "owner": "main",
+      "detail": "观察与外置证据不等于不可回退正式裁判状态或公开/秘密键全部实现"
+    },
+    {
+      "id": "HC-RES-SHARED-04",
+      "scope": "H15/H06启动前、死亡失败、毕业跨越来源",
+      "owner": "main",
+      "detail": "既有H15/H06首次启动前恢复原确认和死亡失败特例仅在原guard有效；毕业后快照/奖励仍未决，原12不含H15/H06，不擅自扩本批"
+    },
+    {
+      "id": "HC-RES-SHARED-05",
+      "scope": "主线对WP01—WP04具体接口和安全修复的技术复核",
+      "owner": "main",
+      "detail": "主线只实际收悉旧WP01—03有限文档范围，WP04和本WP05尚未证实采用；本轮不代填主线回执"
+    }
+  ],
+  "action_plan_document_only": {
+    "independent": [
+      "以64条原矩阵的每个spec_id为唯一事实索引，区分已声明、缺刺激、共享不确定、外部渠道缺证；本文件不重排原64或更改既有12动作",
+      "保留PD-S31/32、DS-S16/22四类自然/完整负例的合法可达性条件与最小未来证据，而不人工中盘注入",
+      "准备未来仅在主线同意实施/实际授权后按3条pilot→其余9条逐步执行的证据路由，任一前缀不符先停止"
+    ],
+    "blocked_until_main": [
+      "合法可信测试准入/组合/adapter及原产品门禁G-ACTION和G-INIT",
+      "WP02完整闭合观察及WP03已有确认的安全修复方案技术落点",
+      "共享层级、完整搜索与终局/稳定本体、协议和玩家通道等所依赖主线接口"
+    ],
+    "future_pilot_order": [
+      "MA-PD01",
+      "MA-DS03",
+      "MA-DS04"
+    ],
+    "future_pilot_run_status": "NOT_AUTHORIZED_NOT_EXECUTED",
+    "after_pilot": "需按实际原64义务判断剩余9条和缺刺激是否可补；不得由3条pilot推出全部通过"
+  },
+  "seven_gates_summary": [
+    {
+      "id": "G-CODE",
+      "status": "NOT_ESTABLISHED",
+      "need": "固定可执行源/干净差分/代码和运行范围授权/CI"
+    },
+    {
+      "id": "G-INIT",
+      "status": "UNRUN",
+      "need": "真实合法开局和稳定本体映射"
+    },
+    {
+      "id": "G-ACTION",
+      "status": "BLOCKED",
+      "need": "可信准入和完整合法动作adapter及安全差分"
+    },
+    {
+      "id": "G-STATE",
+      "status": "PARTIAL_SOURCE_ONLY",
+      "need": "闭合结果、死亡历史与本体字段证据"
+    },
+    {
+      "id": "G-VIEW",
+      "status": "NOT_RUN",
+      "need": "红黑raw view加真实客户端/传输通道"
+    },
+    {
+      "id": "G-PHASE",
+      "status": "NOT_RUN",
+      "need": "真实时钟/请求去重/超时与正式采样"
+    },
+    {
+      "id": "G-EVIDENCE",
+      "status": "NOT_RUN",
+      "need": "被动精确捕获、外部证据与观察开关副作用等价"
+    }
+  ],
+  "completion_outlook": {
+    "evidence_based_current": "WP01—05均完成文档后，仅设计工作包资料有完整闭环；不是总体游戏完成度。",
+    "no_calendar_date_supported": true,
+    "cannot_infer": "不能由剩1/5文档推断项目还剩20%；0/64引擎验证、0/12回放、7实施门禁与主线未决使完工时长不可从现有速度线性外推。",
+    "indicative_effort_if_future_approved": "预计至少数次代码—验证迭代，包含可信准入、适配器/安全修复/观察、3个pilot、剩余9回放与缺例/隐私/正式裁判核查；具体日历取决于授权、工程投入、主线共享反馈与实际运行失败数量。",
+    "milestones": [
+      "主线判定WP01-05证据范围并确认具体实施边界",
+      "固定引擎/测试环境与受控研究准入及已确认安全差异实现",
+      "WP02/04的精确观测和隐私隔离/递送通道核证",
+      "合法3条pilot执行并记录真实差分",
+      "原12回放及64条各独立义务逐项覆盖或保留受限；共享未决与缺自然例审清",
+      "独立回归、稳定性/用户体验和上线策略确认"
+    ],
+    "all_performance_or_release_claims_unproven": true
+  },
+  "verification": {
+    "document": "V2 fixed source IDs and 64-row matrix mapping + V1 same-assistant boundary proposal",
+    "live_engine": "NOT_RUN",
+    "client_transport": "NOT_RUN",
+    "independent_review": "NOT_DONE",
+    "project_code_changed": false,
+    "test_commands_created": 0,
+    "new_gameplay_approvals": 0,
+    "source_gaps_kept": [
+      "PD-S31",
+      "PD-S32",
+      "DS-S16",
+      "DS-S22"
+    ],
+    "fail_conditions": [
+      "任意第3英雄或第2畸变",
+      "中盘状态人工注入而冒充原合法前缀",
+      "把矩阵缺刺激当已实际执行",
+      "将旧tier2/局部模拟升级成正式全王安全",
+      "把文档或Git SHA验证当成引擎通过"
+    ]
+  },
+  "next_task": {
+    "id": "NEXT-HC-MAIN-DEPENDENCY-AND-IMPLEMENTATION-READINESS-REVIEW",
+    "status": "NOT_STARTED_DOCUMENT_ONLY_MAIN_COORDINATION_REQUIRED",
+    "action": "先接收主线对WP01—05技术边界、共享来源与验收/运行准入的真实答复；在没有实际代码/运行授权及可执行源门禁前，只整理依赖闭合和未来最小工程方案。"
+  }
+}
