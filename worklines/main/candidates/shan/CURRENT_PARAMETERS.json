@@ -1,0 +1,129 @@
+{
+  "schema": "lezi.shan.current_candidate_parameters.v1",
+  "revision": "SHAN-6-2-4-P10-80-20261021",
+  "date_local": "2026-10-21",
+  "status": "candidate_parameters_confirmed_for_current_design_iteration_not_formal_pool_or_engine_approval",
+  "latest_user_quote": "8回合改为6回合、2次死后特殊应将、4次有效将军。",
+  "preceding_user_quote": "先按这个概率，死亡后的特殊应将改为两次",
+  "parameters": {
+    "death_countdown_own_turns": 6,
+    "post_death_special_evasions": 2,
+    "post_death_effective_checks_for_execution": 4,
+    "normal_checkmate_wins_immediately": true,
+    "gamble_death_probability_by_current_pressure": [
+      {
+        "pressure_min": 1,
+        "pressure_max": 1,
+        "probability": 0.1
+      },
+      {
+        "pressure_min": 2,
+        "pressure_max": 2,
+        "probability": 0.2
+      },
+      {
+        "pressure_min": 3,
+        "pressure_max": 3,
+        "probability": 0.35
+      },
+      {
+        "pressure_min": 4,
+        "pressure_max": 4,
+        "probability": 0.5
+      },
+      {
+        "pressure_min": 5,
+        "pressure_max": 5,
+        "probability": 0.65
+      },
+      {
+        "pressure_min": 6,
+        "pressure_max": null,
+        "probability": 0.8
+      }
+    ],
+    "probability_basis": "conditional death risk of this gamble while the true general is alive, indexed by pressure, not cumulative mortality or number of gambles alone",
+    "pressure_is_not_reset_by_guard_sacrifice": true,
+    "pressure_policy": {
+      "new_effective_check": "increase",
+      "unchanged_persistent_threat": "hold",
+      "enemy_action_ends_without_check": "gradually_decrease"
+    },
+    "general_cannot_move": true,
+    "special_evasion_grants": "one ordinary action by another own piece; the general may remain threatened at its end; reassess next own action",
+    "post_death_limit_rule": "After the two post-death special evasions have been used, a later check that cannot be normally answered causes defeat immediately; the countdown is not an additional guaranteed protection.",
+    "guard_rule_carried_as_evaluation_hypothesis": {
+      "status": "previous_candidate_evaluated_no_new_full_rule_approval_inferred_from_probability_or_count_change",
+      "safe_sacrifice_global_quota": 1,
+      "piece": "own advisor immediately adjacent to general, including diagonal",
+      "shared_before_after_death": true,
+      "death_does_not_refresh": true,
+      "post_death_use_still_spends_special_evasion": true,
+      "screenshot_sacrifice_grade_column_adopted": false
+    }
+  },
+  "source": {
+    "image": {
+      "uploaded_filename": "1000029283.jpg",
+      "sha256": "b23ba9f948f8b97130f5dc8b04fc0d1c7f51d999de9d6ec64bb0cbcd9634d648",
+      "dimensions": [
+        930,
+        2048
+      ],
+      "read_method": "actual local image visual inspection; exact supplied path rechecked and successfully opened",
+      "transcribed_column": "赌命死亡率",
+      "source_contains_old_sacrifice_grades": true,
+      "image_bytes_uploaded_to_public_repo": false
+    },
+    "probability_adoption": "User explicitly selected the image probabilities; only that column is adopted. Do not revive the older low/medium/high sacrifice grade scheme.",
+    "count_change": "Latest user message supersedes the earlier 8-own-turn countdown and 5-check execution threshold; 2 post-death special evasions retained.",
+    "repository_base": "2dbdc04832278c109a57c7d69d0c7fbc11c5c0fd"
+  },
+  "timing_assumptions_carried_forward_not_newly_confirmed": {
+    "death_triggering_action_not_charged_to_post_death_quota": true,
+    "countdown_starts_with_following_own_turn": true,
+    "death_triggering_action_check_not_retroactively_counted_for_execution": true,
+    "win_during_last_countdown_turn_resolves_before_timeout": true
+  },
+  "known_open_boundaries": [
+    "precise effective-check deduplication",
+    "death-triggering action and last-turn settlement order",
+    "advisor eligibility under hidden pieces, temporary control and revival",
+    "interaction with other heroes, mutations, special elimination and forced displacement"
+  ],
+  "calculation_checks": {
+    "independent_gambles_at_consecutively_increasing_pressure_1_to_4_survival": 0.234,
+    "independent_gambles_at_consecutively_increasing_pressure_1_to_6_survival": 0.01638,
+    "survival_checks_do_not_include_guard_use_or_pressure_recovery": true,
+    "survival_is_not_victory_probability": true,
+    "maximum_nonchecking_own_turns_if_execution_progress_starts_at_zero": 2,
+    "third_required_special_evasion_after_death_fails_if_no_normal_evasion": true
+  },
+  "evaluation": {
+    "new_score": null,
+    "status": "new_parameter_configuration_not_yet_rated",
+    "previous_reports": [
+      {
+        "path": "worklines/main/candidates/shan/PAPER_RATING.md",
+        "configuration": "8/3/5, probability table previously unavailable",
+        "historical_only_for_new_configuration": true
+      },
+      {
+        "path": "worklines/main/candidates/shan/GUARD_PAPER_RATING.md",
+        "configuration": "one-guard hypothesis, 8/3/5, probability table previously unavailable",
+        "historical_only_for_new_configuration": true
+      }
+    ],
+    "target_score": 53,
+    "target_is_not_a_measured_result": true
+  },
+  "protection": {
+    "formal_score_ledger_changed": false,
+    "formal_adjudication_changed": false,
+    "engine_code_changed": false,
+    "engine_runs": 0,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown"
+  }
+}
