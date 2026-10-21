@@ -1,6 +1,6 @@
 # 乐子象棋交接仓库
 
-2026-10-21主线完成铁马马腿威胁终点坐标的有限纠错，继承投弹PR8的[草稿PR9](https://github.com/aaaycc931-droid/jieqi-engine/pull/9)已发布、未合并。10项差异原代码失败，修后30项针对性及40文件529项相关回归通过；原12自然回放执行0、64项仍UNRUN。下一核沙漏完整闭合/隔离计划，未放开任何模式门禁。[实际代码、作用域与测试](worklines/main/R38_ENGINEERING_REVIEW.json)及主线固定入口为当前依据；旧版本事实按各自语境保留。各线成果、协作v0.14并发同步、评分冻结和NET暂停均保留。
+2026-10-21主线完成[沙漏完整闭合/隔离具体设计](worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md)：原authority复制前批次检查、六步/落位/死亡后续、零抽样与候选事件隔离、同一结果一次提交及12组待运行验证已具体到函数。本轮无代码/引擎运行；投弹/铁马草稿PR8/9及此前529项组件回归保留，不能计为沙漏通过。下一准备独立限定补丁；原自然12执行0、64项UNRUN，模式门禁、各线成果、协作v0.14、评分冻结与NET暂停均保持。当前依据见[主线入口](worklines/main/START_HERE.txt)和[R38报告](worklines/main/R38_ENGINEERING_REVIEW.json)，历史阶段按固定提交查回。
 
 当前工作入口：[主线](worklines/main/START_HERE.txt) · [半混乱](worklines/half_chaos/START_HERE.txt) · [UI](worklines/ui/START_HERE.txt) · [普通象棋](worklines/standard/START_HERE.txt)。本账号负责主线/半混乱，另一个账号负责UI/普通。主线业务源码仍在jieqi-engine仓库；此处管理交接和素材。
 
@@ -10,3 +10,4 @@
 
 
 主线1.62完成本轮项目收束（[汇总与接续](worklines/main/ROUND_CLOSEOUT.md)），保留55项游戏确认。H15毕业跨越来源已核对，具体快照/奖励处理仍未决定；原1.61启动前恢复未使用与1.57死亡失败例外保持。普通新H02＋M04路径龙鳞候选待批，三模式M04现行说明统一“战车隔一枚地面棋的【进攻】”，只改文案。UI B8已批准、B9未创建；半混乱已完成r30文档范围方案并收束，下一步WP01准入契约细化仍仅文档，64项UNRUN。复工读最新固定入口及各线真实状态，不把收束当规则批准、完整验收或其他会话状态变更。评分冻结、NET暂停。
+

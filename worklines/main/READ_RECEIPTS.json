@@ -2,7 +2,7 @@
   "schema": "lezi.receiver_read_receipts.v1",
   "receiver_workline": "main",
   "source_commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
-  "date_local": "2026-10-17",
+  "date_local": "2026-10-21",
   "reads": [
     {
       "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -951,6 +951,49 @@
         "product_gate_changed": false,
         "scoring_frozen": true,
         "NET": "paused"
+      },
+      "latest_main_hourglass_design": {
+        "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
+        "source_request_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
+        "current_contract_snapshot": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": [
+          {
+            "path": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+            "git_blob_sha": "f00098fa47f066cd29c64e1bb62f206dfc6acd76",
+            "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+            "actual_read": "HC-SAFE-01, isolated_plan_and_single_commit_candidate, refusal_invariant_groups, shared_owner_questions, remaining"
+          },
+          {
+            "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+            "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+            "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+            "actual_read": "full"
+          },
+          {
+            "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+            "git_blob_sha": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+            "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+            "actual_read": "complete D01; other mutation policies not re-audited"
+          },
+          {
+            "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+            "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
+            "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+            "actual_read": "full"
+          },
+          {
+            "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+            "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
+            "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+            "actual_read": "full"
+          }
+        ],
+        "adopted_scope": "main concrete plan in worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+        "not_claimed": [
+          "source line has read/adopted plan",
+          "new gameplay confirmation",
+          "hourglass implementation or original64 acceptance"
+        ]
       }
     },
     "standard": {
@@ -1756,9 +1799,9 @@
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "PARTIAL_BOMB_AND_LEG_GEOMETRY_IMPLEMENTED_HOURGLASS_AND_PATH_PENDING",
+      "status": "BOMB_LEG_IMPLEMENTED_HOURGLASS_CONCRETE_DESIGN_READY_PATH_PENDING",
       "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
-      "disposition": "已实施投弹受将与铁马终点坐标纠错，组件回归529通过；沙漏/路径闭合、安全搜索/终局、原自然12和64验收仍待，不扩大准入。",
+      "disposition": "投弹/铁马补丁保留；本轮完成沙漏闭合/隔离/一次提交的具体设计，代码及12组新回归均未执行。原自然12/64、路径/全搜索/终局和产品门禁不变。",
       "previous_disposition": {
         "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
         "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
@@ -1767,7 +1810,8 @@
       "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
       "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
       "previous_status_before_bounded_repairs": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
-      "latest_implementation": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
+      "latest_implementation": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation",
+      "latest_hourglass_plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md"
     }
   ],
   "current_phase_source_reads_r38": {
@@ -1815,47 +1859,18 @@
   "current_phase_authorization": {
     "user_quote": "进行下一步",
     "date_local": "2026-10-21",
-    "basis": "current next-step instruction in the previously explained main repair sequence: bomb, then iron-steed leg",
-    "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
-    "earlier_scope_preserved": "2026-10-20只实施投弹的限定属于上一轮；本轮是新的下一项推进，不把上一轮授权扩大为全部切片批准。",
+    "basis": "本对话上轮已说明的下一项：主线核沙漏完整闭合/隔离并形成具体设计；本轮推进该步骤。",
+    "scope_interpretation": "本轮读取/设计/主线增量交接；没有把本条记成新玩法批准或沙漏源码实施/运行完成。",
     "allowed_executed": [
-      "read-only source/guard review",
-      "two endpoint-formula corrections in src/rules.ts",
-      "10 public component regressions in tests/mutation.test.ts",
-      "related existing 40-file local regression and child draft branch publication",
-      "main incremental writeback"
+      "read current fixed handoff and pinned PR9 source",
+      "form concrete hourglass closure/isolation/single-result design",
+      "main incremental GitHub publication and readback"
     ],
-    "not_included": [
-      "whole king-safety/search/terminal rewrite",
-      "hourglass/route-closure architecture",
-      "mode research admission/hook/capability changes",
-      "original half-chaos natural12/64 acceptance",
-      "PR merge/APK/deployment/scoring thaw/NET resume"
-    ],
-    "actual_result": {
-      "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
-      "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
-      "owner": "main shared engine",
-      "engine_repository": "aaaycc931-droid/jieqi-engine",
-      "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-      "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
-      "engine_branch": "codex/r38-iron-steed-leg-20261021",
-      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
-      "pull_request_number": 9,
-      "upstream_bomb_PR": 8,
-      "business_code_formulas_changed": 2,
-      "files_changed": 2,
-      "new_component_cases": 10,
-      "focused_checks_passed": 30,
-      "related_tests_passed": 529,
-      "related_test_files": 40,
-      "original64": "UNRUN",
-      "original12_executed": 0,
-      "other_source_line_adoption": "unknown",
-      "product_gate_changed": false,
-      "scoring_frozen": true,
-      "NET": "paused"
-    }
+    "not_executed": [
+      "game code changes or engine imports/runs",
+      "research gate/capability or original12 replay",
+      "PR merge,APK,deployment,scoring thaw,NET resume"
+    ]
   },
   "current_engine_readback": {
     "repository": "aaaycc931-droid/jieqi-engine",
@@ -1890,5 +1905,116 @@
     "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
     "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/authorization",
     "other_slices_or_natural_replays_authorized": false
+  },
+  "current_hourglass_source_read": {
+    "main_snapshot": "13dcdad643008263c3663df1702e5f0926e4082e",
+    "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "source_identities": [
+      {
+        "path": "src/ghosts.ts",
+        "git_blob_sha": "a24ef4bf971cb89825c442e9f51e29e2359f8ec1"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "git_blob_sha": "e84821c9b1b7b48b786834fb6a8f8b53d40a71c5"
+      },
+      {
+        "path": "src/hero-descent.ts",
+        "git_blob_sha": "090f8cad3508b9e8d8a7c8e6d0b58f6890798866"
+      },
+      {
+        "path": "src/hero-forms.ts",
+        "git_blob_sha": "e42cb0854bd71dfaf4004268ec79e11c115c692d"
+      },
+      {
+        "path": "src/hero-progress.ts",
+        "git_blob_sha": "5edea5f9c620b1eb35127ff7b146b1f84662f6dc"
+      },
+      {
+        "path": "src/hero-shuffle.ts",
+        "git_blob_sha": "8b6ea3c3c370b305b92177546b7b93018289567f"
+      },
+      {
+        "path": "src/mechanism-observer.ts",
+        "git_blob_sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81"
+      },
+      {
+        "path": "src/modes.ts",
+        "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301"
+      },
+      {
+        "path": "src/rules.ts",
+        "git_blob_sha": "2aa4deb68cec2f9330eadd8f41097d7b1c615721"
+      },
+      {
+        "path": "src/settlement-context.ts",
+        "git_blob_sha": "58052bee1c08392f887fbf1e7f1ec7501c2d8cf4"
+      },
+      {
+        "path": "src/settlement.ts",
+        "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446"
+      },
+      {
+        "path": "src/spaces.ts",
+        "git_blob_sha": "cc4db990fe5683a44b6a95ba50620370a242f49d"
+      },
+      {
+        "path": "src/turns.ts",
+        "git_blob_sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612"
+      }
+    ],
+    "scope": "Full settlement-context, mechanism-observer, hero-progress/turns and named direct entry, hourglass, initialization/begin/closure/landing/royal-threat functions plus required hero/space/ghost dependencies; not whole engine, all PRs, full terminal or all historical rules audit.",
+    "identity_check": {
+      "source_and_test_blobs_compared": 86,
+      "all_equal_pinned_PR9": true,
+      "game_code_writes_this_phase": 0,
+      "engine_imports_this_phase": 0,
+      "engine_runs_this_phase": 0,
+      "new_test_groups_planned": 12,
+      "new_tests_run": 0,
+      "original12_executed": 0,
+      "original64": "UNRUN"
+    }
+  },
+  "current_phase_source_reads_hourglass": {
+    "main_entry": "START_HERE.txt and current state/report/pending/work agreement/return relevant current scopes",
+    "repository_instructions": "AGENTS.md and docs/WORKFLOW.md full",
+    "D01_confirmations": [
+      {
+        "path": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+        "git_blob_sha": "f00098fa47f066cd29c64e1bb62f206dfc6acd76",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "HC-SAFE-01, isolated_plan_and_single_commit_candidate, refusal_invariant_groups, shared_owner_questions, remaining"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      },
+      {
+        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+        "git_blob_sha": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "complete D01; other mutation policies not re-audited"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+        "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      }
+    ],
+    "collaboration": "current index v0.14 body hash unchanged; inherit prior actual-read scoped modules; no fresh whole-body read claimed"
   }
 }

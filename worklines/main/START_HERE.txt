@@ -1,11 +1,9 @@
-《乐子象棋》主线当前入口｜2026-10-21铁马马腿有限修复完成
+《乐子象棋》主线当前入口｜2026-10-21沙漏完整闭合具体设计完成
 
-本轮“进行下一步”按先投弹、再铁马的已说明顺序推进；恢复来源/10组差异后实施M01两处终点公式纠错，既有落点资格循环不改。独立分支codex/r38-iron-steed-leg-20261021，提交74edf370acf76a377b3f74e69f252d0b7de2169d，[草稿PR9](https://github.com/aaaycc931-droid/jieqi-engine/pull/9)继承PR8的ea3b35c；两PR均未合并。
+先读 CURRENT_STATE.json → R38_HOURGLASS_CLOSURE_PLAN.md → R38_ENGINEERING_REVIEW.json#/latest_plan → RETURN_TO_MAIN.json；通用协作从 ../../collaboration/CURRENT.json 解析，当前v0.14身份未变，继承已实际读取的适用模块。
 
-先读CURRENT_STATE.json → R38_ENGINEERING_REVIEW.json#/latest_implementation → RETURN_TO_MAIN.json；具体作用域见PROJECT_WORK_AGREEMENT.md末节。10项新差异原代码全失败，修后铁马/投弹30项针对性及40文件529项相关回归通过。原投弹PR8的完整记录留59e2ad6固定提交，不因后继修复反复重建；529是当前合成组件/相关回归，原半混乱12自然回放执行0、64仍UNRUN。全威胁/应将/终局并未验收。
+本轮“进行下一步”完成源核和具体方案，未改业务源码、未导入/运行引擎。确认远端gameWithPrivateTraps先复制导致原WeakMap屏障必须前移；死亡尾部还直接用Math.random。选定原对象复制前检查、同一隔离候选执行六步/落位/死亡一次、闭合后判断、通过直接返回同一结果；活棋/死棋状态、零抽样、observer缓冲和12组NOT_RUN验证均见方案。
 
-并发协作工作稿2026-10-21.v0.14已实际读取完整版本差分、SOURCE_ACTIVATION及MAINTENANCE_LOOP并在本线限定采用，正式基线仍1.8.0。新协作正文及索引、各子线原文件/资产和主线55玩法确认保留；接收新代码未知，不代填。
+投弹PR8 ea3b35c、铁马草稿PR9 74edf37保持未合并；529是此前相关组件回归，不是沙漏通过。完整普通威胁、特殊空间、独立终局/客户端通道未决保留；原自然12执行0、64仍UNRUN，不放开模式门禁。
 
-下一NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN：核沙漏六步/后续闭合、原authority批次WeakMap、RNG/资源/观察隔离和一次提交，先完成具体设计；不得预检重跑旧执行器或把未知当安全。H15毕业跨越等原未决保留。产品featuresReady=false，评分冻结、NET暂停。
-
-较早阶段入口按Git历史查回；有效确认以ADJUDICATION.json与各原确认正文为准，本入口不重复嵌入已结束阶段状态。
+下一 NEXT-MAIN-R38-HOURGLASS-BOUNDED-PATCH：从复核匹配的PR9继承独立补丁，先隔离批次/候选/RNG/observer及明确分支差异，再接完整闭合王安全；不预检重跑、不把未知当安全。H15毕业跨越等原待决、各线文件/资产、主线55确认均保留。评分冻结、NET暂停；不代填其他线接收采用。

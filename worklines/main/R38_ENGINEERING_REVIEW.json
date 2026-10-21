@@ -3,7 +3,7 @@
   "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
   "date_local": "2026-10-20",
   "workline": "main",
-  "status": "BOMB_AND_LEG_GEOMETRY_PATCHES_IMPLEMENTED_COMPONENT_TESTS_PASS_OTHER_ENGINEERING_PENDING",
+  "status": "BOMB_LEG_IMPLEMENTED_HOURGLASS_CONCRETE_PLAN_COMPLETE_PATH_PENDING",
   "user_instruction": "继续主线工作，优先读取并处理半混乱模式最新 r38 工程交接，核对源码依赖与技术修复范围。保留各工作线现有成果。",
   "handoff": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -281,7 +281,13 @@
         "src/settlement-context.ts#openDestructionBatches"
       ],
       "finding": "沙漏在副本扣次/回归/净化/装填，公共尾部closeDirectDeaths；未见完整结果的己王普通合法受将拒绝。副本不等于无外部副作用；WeakMap批次上下文不随structuredClone复制，closeDirectDeaths还可调用训练死亡与Math.random包装。",
-      "disposition": "采用原双方王存活、无独立终局guard的完整结果安全要求；选定同一候选只提交一次，不准预检后重跑现执行器；未核上下文/RNG路径前不得称可安全实施。"
+      "disposition": "采用原双方王存活、无独立终局guard的完整结果安全要求；选定同一候选只提交一次，不准预检后重跑现执行器；未核上下文/RNG路径前不得称可安全实施。",
+      "followup_plan": {
+        "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
+        "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+        "status": "CONCRETE_DESIGN_COMPLETE_NOT_IMPLEMENTED",
+        "source_handoff": "13dcdad643008263c3663df1702e5f0926e4082e"
+      }
     },
     {
       "id": "MAIN-R38-F03",
@@ -424,7 +430,7 @@
     },
     {
       "id": "MAIN-HC-R38-03",
-      "status": "BOMB_AND_LEG_GEOMETRY_IMPLEMENTED_HOURGLASS_AND_PATH_PENDING",
+      "status": "BOMB_LEG_IMPLEMENTED_HOURGLASS_DESIGN_COMPLETE_PATH_PENDING",
       "owner": "main engine safety/closure",
       "decision": "原D01确认直接继承，无新玩法投票；代码实施权限与安全依赖单列。优先bomb门槛，马腿几何独立局部修复；沙漏和路径完整结果共用闭合计划，不能捆绑成全局安全重写。",
       "packages": [
@@ -459,8 +465,9 @@
           "id": "R38-SAFE-HOURGLASS",
           "files": [
             "src/hero-actions.ts",
+            "src/remote-room.ts",
             "src/settlement.ts",
-            "src/settlement-context.ts"
+            "src/mechanism-observer.ts"
           ],
           "dependency_checks": [
             "src/hero-progress.ts",
@@ -468,7 +475,19 @@
             "src/remote-room.ts"
           ],
           "boundary": "原authority批次闭合证明→隔离计划→原六步及已承诺后续→完整安全→同一候选一次提交；拒绝无实际提交、资源/历史/RNG/时钟副作用。",
-          "blocker": "仍需具体闭合/外部上下文/RNG接口与存活对象effects保留源核；不批准重复执行整个技能或全分支背书。"
+          "blocker": "实际补丁/隔离回归未执行；特殊空间/完整威胁/独立终局来源仍分支限定，不从设计发布推定运行通过。",
+          "status": "CONCRETE_PLAN_SELECTED_NOT_IMPLEMENTED_OR_RUN",
+          "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+          "read_only_dependencies": [
+            "src/settlement-context.ts",
+            "src/hero-progress.ts",
+            "src/rules.ts",
+            "src/turns.ts",
+            "src/hero-forms.ts",
+            "src/ghosts.ts",
+            "src/spaces.ts",
+            "src/modes.ts"
+          ]
         },
         {
           "id": "R38-SAFE-PATH",
@@ -540,7 +559,7 @@
   "not_adopted": [
     "未批准现有整分支代码、PR合并、全模式准入、产品发布或评分解冻",
     "不把本报告变成其他工作线读取/采用回执",
-    "本次只完成R38-SAFE-BOMB与组件回归，其余代码/能力发行/原自然回放不由此授权或判通过。"
+    "已完成投弹/铁马有限补丁；本轮只完成沙漏具体设计，未实施沙漏、能力发行或原自然回放。"
   ],
   "validation_plan": {
     "status": "PARTIALLY_EXECUTED_BOMB_AND_LEG_COMPONENT_SCOPE_ONLY_OTHER_PLANS_PENDING",
@@ -601,7 +620,15 @@
     "test_files_changed": 2,
     "new_local_component_tests": 14,
     "component_tests_passed": 529,
-    "current_leg_test_commands": 3
+    "current_leg_test_commands": 3,
+    "current_phase": {
+      "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
+      "source_identity_matches": 86,
+      "new_game_code_writes": 0,
+      "new_engine_runs": 0,
+      "new_test_results": 0,
+      "new_gameplay_approvals": 0
+    }
   },
   "limitation_audit": {
     "audit_trigger": "shared source/authorization/technical boundary and persistent main state update",
@@ -635,15 +662,16 @@
       "other-line receipt fabricated"
     ],
     "residual_risk": "Known simple-check component cases and related old suite pass. Current isGeneralInCheck inherits unresolved full threat/search dependencies; original half-chaos natural initialization and UI/wire remain unverified.",
-    "next_validation_action": "恢复沙漏完整六步/已承诺后续的隔离计划与一次提交边界，核原authority消灭批次WeakMap、随机/死亡资源/观察副作用，先形成具体可验证实现设计；不通过重复执行器预检再提交，不放开研究准入，不把未知分支当安全。"
+    "next_validation_action": "按R38_HOURGLASS_CLOSURE_PLAN.md从PR9固定源继承独立补丁；先完成原authority批次/候选/RNG/observer隔离和明确普通分支差异，再接完整闭合王安全。未知/特殊空间/独立终局缺来源只阻断依赖分支，不自定新政策或开放原12/64。"
   },
   "next": {
-    "id": "NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN",
-    "status": "NOT_STARTED_SOURCE_AND_CONCRETE_DESIGN_REVIEW",
-    "action": "恢复沙漏完整六步/已承诺后续的隔离计划与一次提交边界，核原authority消灭批次WeakMap、随机/死亡资源/观察副作用，先形成具体可验证实现设计；不通过重复执行器预检再提交，不放开研究准入，不把未知分支当安全。",
+    "id": "NEXT-MAIN-R38-HOURGLASS-BOUNDED-PATCH",
+    "status": "NOT_STARTED_CONCRETE_DESIGN_AVAILABLE",
+    "action": "按R38_HOURGLASS_CLOSURE_PLAN.md从PR9固定源继承独立补丁；先完成原authority批次/候选/RNG/observer隔离和明确普通分支差异，再接完整闭合王安全。未知/特殊空间/独立终局缺来源只阻断依赖分支，不自定新政策或开放原12/64。",
+    "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
     "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
-    "original12_execution": 0,
-    "gameplay_policy_delta": 0
+    "gameplay_policy_delta": 0,
+    "original12_execution": 0
   },
   "scoring_frozen": true,
   "NET": "paused",
@@ -1496,5 +1524,164 @@
     "actual_read": "Complete v0.13→v0.14 diff; current SOURCE_ACTIVATION and MAINTENANCE_LOOP complete; unchanged authorization/baseline/limitation/completion/handoff modules inherited from actual v0.13 reads this task",
     "adoption_scope": "current facts/versions and maintenance exit in main; not formal release or other-account adoption",
     "actual_application": "source refs + exact runtime bytes fresh; old14b/bomb519 retained with original scope; leg529 is current tested descendant; no repeated reminders/deletion/automation"
+  },
+  "latest_plan": {
+    "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
+    "status": "CONCRETE_ENGINEERING_PLAN_COMPLETE_NOT_IMPLEMENTED_OR_RUN",
+    "owner": "main shared engine",
+    "date_local": "2026-10-21",
+    "source_handoff": "13dcdad643008263c3663df1702e5f0926e4082e",
+    "engine_base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+    "selected_design": "原authority复制前批次屏障；同一隔离候选完整执行一次；六步/死亡后续闭合后分支判定；通过则直接返回同一结果，拒绝丢弃。",
+    "new_source_findings": [
+      "remote gameWithPrivateTraps copies authority before skill API; need guard at both original-object boundaries",
+      "closeDirectDeaths ignores supplied skill RNG and uses Math.random for training death reselection",
+      "hourglass resets effects for living as well as revived; landing origin/controller need separate source-preserving handling",
+      "candidate begin can emit into outer collector, so buffering/failure isolation is required"
+    ],
+    "verification": {
+      "source_and_test_blobs_compared": 86,
+      "all_equal_pinned_PR9": true,
+      "game_code_writes_this_phase": 0,
+      "engine_imports_this_phase": 0,
+      "engine_runs_this_phase": 0,
+      "new_test_groups_planned": 12,
+      "new_tests_run": 0,
+      "original12_executed": 0,
+      "original64": "UNRUN"
+    },
+    "remaining": [
+      "actual implementation and runtime proof",
+      "ordinary lawful-threat completeness and special-space coverage",
+      "independent terminal/source cases",
+      "actual client/wire and other-line adoption"
+    ],
+    "other_source_line_adoption": "unknown",
+    "gameplay_policy_delta": 0,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "authorization": {
+      "user_quote": "进行下一步",
+      "date_local": "2026-10-21",
+      "basis": "本对话上轮已说明的下一项：主线核沙漏完整闭合/隔离并形成具体设计；本轮推进该步骤。",
+      "scope_interpretation": "本轮读取/设计/主线增量交接；没有把本条记成新玩法批准或沙漏源码实施/运行完成。",
+      "allowed_executed": [
+        "read current fixed handoff and pinned PR9 source",
+        "form concrete hourglass closure/isolation/single-result design",
+        "main incremental GitHub publication and readback"
+      ],
+      "not_executed": [
+        "game code changes or engine imports/runs",
+        "research gate/capability or original12 replay",
+        "PR merge,APK,deployment,scoring thaw,NET resume"
+      ]
+    },
+    "actual_read_sources": [
+      {
+        "path": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+        "git_blob_sha": "f00098fa47f066cd29c64e1bb62f206dfc6acd76",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "HC-SAFE-01, isolated_plan_and_single_commit_candidate, refusal_invariant_groups, shared_owner_questions, remaining"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      },
+      {
+        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+        "git_blob_sha": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "complete D01; other mutation policies not re-audited"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+        "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      }
+    ],
+    "engine_source_identities": [
+      {
+        "path": "src/ghosts.ts",
+        "git_blob_sha": "a24ef4bf971cb89825c442e9f51e29e2359f8ec1"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "git_blob_sha": "e84821c9b1b7b48b786834fb6a8f8b53d40a71c5"
+      },
+      {
+        "path": "src/hero-descent.ts",
+        "git_blob_sha": "090f8cad3508b9e8d8a7c8e6d0b58f6890798866"
+      },
+      {
+        "path": "src/hero-forms.ts",
+        "git_blob_sha": "e42cb0854bd71dfaf4004268ec79e11c115c692d"
+      },
+      {
+        "path": "src/hero-progress.ts",
+        "git_blob_sha": "5edea5f9c620b1eb35127ff7b146b1f84662f6dc"
+      },
+      {
+        "path": "src/hero-shuffle.ts",
+        "git_blob_sha": "8b6ea3c3c370b305b92177546b7b93018289567f"
+      },
+      {
+        "path": "src/mechanism-observer.ts",
+        "git_blob_sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81"
+      },
+      {
+        "path": "src/modes.ts",
+        "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301"
+      },
+      {
+        "path": "src/rules.ts",
+        "git_blob_sha": "2aa4deb68cec2f9330eadd8f41097d7b1c615721"
+      },
+      {
+        "path": "src/settlement-context.ts",
+        "git_blob_sha": "58052bee1c08392f887fbf1e7f1ec7501c2d8cf4"
+      },
+      {
+        "path": "src/settlement.ts",
+        "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446"
+      },
+      {
+        "path": "src/spaces.ts",
+        "git_blob_sha": "cc4db990fe5683a44b6a95ba50620370a242f49d"
+      },
+      {
+        "path": "src/turns.ts",
+        "git_blob_sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612"
+      }
+    ],
+    "source_read_scope": "Full settlement-context, mechanism-observer, hero-progress/turns and named direct entry, hourglass, initialization/begin/closure/landing/royal-threat functions plus required hero/space/ghost dependencies; not whole engine, all PRs, full terminal or all historical rules audit.",
+    "limitation_audit": {
+      "level": "L3 shared engine source/semantics; document-only action",
+      "facts": "Pinned source bytes and original D01 confirmations actually read; concrete duplicate-execution/WeakMap/RNG/collector hazards source-linked.",
+      "ai_interpretation": "Single-result candidate architecture, zero-draw guarded scope and living-state minimal preservation are main engineering choices, not new user gameplay confirmations.",
+      "unknowns": [
+        "actual implementation and runtime proof",
+        "ordinary lawful-threat completeness and special-space coverage",
+        "independent terminal/source cases",
+        "actual client/wire and other-line adoption"
+      ],
+      "risk": "A plan and static source identity checks cannot prove runtime isolation or full royal safety.",
+      "falsification": "Changed head/source; an actually legal D01 source requires random draw or unreviewed terminal/special state; failed refusal/collector/RNG invariants.",
+      "stop": "Do not mark unknown safe, bypass product/research gates, rerun executor, invent receiver adoption, or overwrite source-line work.",
+      "next_validation_action": "按R38_HOURGLASS_CLOSURE_PLAN.md从PR9固定源继承独立补丁；先完成原authority批次/候选/RNG/observer隔离和明确普通分支差异，再接完整闭合王安全。未知/特殊空间/独立终局缺来源只阻断依赖分支，不自定新政策或开放原12/64。"
+    }
   }
 }

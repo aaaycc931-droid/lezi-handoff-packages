@@ -109,9 +109,46 @@
         "product_gate_changed": false,
         "scoring_frozen": true,
         "NET": "paused"
+      },
+      "latest_plan": {
+        "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
+        "status": "CONCRETE_ENGINEERING_PLAN_COMPLETE_NOT_IMPLEMENTED_OR_RUN",
+        "owner": "main shared engine",
+        "date_local": "2026-10-21",
+        "source_handoff": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "engine_base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+        "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+        "selected_design": "原authority复制前批次屏障；同一隔离候选完整执行一次；六步/死亡后续闭合后分支判定；通过则直接返回同一结果，拒绝丢弃。",
+        "new_source_findings": [
+          "remote gameWithPrivateTraps copies authority before skill API; need guard at both original-object boundaries",
+          "closeDirectDeaths ignores supplied skill RNG and uses Math.random for training death reselection",
+          "hourglass resets effects for living as well as revived; landing origin/controller need separate source-preserving handling",
+          "candidate begin can emit into outer collector, so buffering/failure isolation is required"
+        ],
+        "verification": {
+          "source_and_test_blobs_compared": 86,
+          "all_equal_pinned_PR9": true,
+          "game_code_writes_this_phase": 0,
+          "engine_imports_this_phase": 0,
+          "engine_runs_this_phase": 0,
+          "new_test_groups_planned": 12,
+          "new_tests_run": 0,
+          "original12_executed": 0,
+          "original64": "UNRUN"
+        },
+        "remaining": [
+          "actual implementation and runtime proof",
+          "ordinary lawful-threat completeness and special-space coverage",
+          "independent terminal/source cases",
+          "actual client/wire and other-line adoption"
+        ],
+        "other_source_line_adoption": "unknown",
+        "gameplay_policy_delta": 0,
+        "scoring_frozen": true,
+        "NET": "paused"
       }
     },
-    "current_main_next": "NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN",
+    "current_main_next": "NEXT-MAIN-R38-HOURGLASS-BOUNDED-PATCH",
     "latest_bounded_implementation": {
       "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
       "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
@@ -157,6 +194,43 @@
       "scoring_frozen": true,
       "NET": "paused",
       "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
+    },
+    "latest_hourglass_plan": {
+      "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
+      "status": "CONCRETE_ENGINEERING_PLAN_COMPLETE_NOT_IMPLEMENTED_OR_RUN",
+      "owner": "main shared engine",
+      "date_local": "2026-10-21",
+      "source_handoff": "13dcdad643008263c3663df1702e5f0926e4082e",
+      "engine_base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+      "selected_design": "原authority复制前批次屏障；同一隔离候选完整执行一次；六步/死亡后续闭合后分支判定；通过则直接返回同一结果，拒绝丢弃。",
+      "new_source_findings": [
+        "remote gameWithPrivateTraps copies authority before skill API; need guard at both original-object boundaries",
+        "closeDirectDeaths ignores supplied skill RNG and uses Math.random for training death reselection",
+        "hourglass resets effects for living as well as revived; landing origin/controller need separate source-preserving handling",
+        "candidate begin can emit into outer collector, so buffering/failure isolation is required"
+      ],
+      "verification": {
+        "source_and_test_blobs_compared": 86,
+        "all_equal_pinned_PR9": true,
+        "game_code_writes_this_phase": 0,
+        "engine_imports_this_phase": 0,
+        "engine_runs_this_phase": 0,
+        "new_test_groups_planned": 12,
+        "new_tests_run": 0,
+        "original12_executed": 0,
+        "original64": "UNRUN"
+      },
+      "remaining": [
+        "actual implementation and runtime proof",
+        "ordinary lawful-threat completeness and special-space coverage",
+        "independent terminal/source cases",
+        "actual client/wire and other-line adoption"
+      ],
+      "other_source_line_adoption": "unknown",
+      "gameplay_policy_delta": 0,
+      "scoring_frozen": true,
+      "NET": "paused"
     }
   },
   "historical_archive_migration_incomplete": [

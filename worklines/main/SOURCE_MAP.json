@@ -288,7 +288,7 @@
     }
   ],
   "current_record_version": "1.62",
-  "latest_maintenance_base_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+  "latest_maintenance_base_commit": "13dcdad643008263c3663df1702e5f0926e4082e",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
@@ -1046,5 +1046,103 @@
       "git_blob_sha": "f1355ee129febb3a39caec4fefca73c9687bae9b",
       "scope": "M01 complete current entry; other policies not read/adopted"
     }
+  },
+  "latest_hourglass_closure_plan_sources": {
+    "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
+    "handoff": "13dcdad643008263c3663df1702e5f0926e4082e",
+    "engine": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "documents": [
+      {
+        "path": "worklines/half_chaos/SAFETY_REPAIR_CONTRACT_PROPOSAL.json",
+        "git_blob_sha": "f00098fa47f066cd29c64e1bb62f206dfc6acd76",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "HC-SAFE-01, isolated_plan_and_single_commit_candidate, refusal_invariant_groups, shared_owner_questions, remaining"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CHECK_SAFETY_CONFIRMATION_20261016.json",
+        "git_blob_sha": "7a76e944a24559a79e53339ddf1e94d62e802d1d",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      },
+      {
+        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+        "git_blob_sha": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "complete D01; other mutation policies not re-audited"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_CORE_CONFIRMATION_20261016.json",
+        "git_blob_sha": "cfa8db35a23ad8ec998c84b7705bca25a2c19189",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/D01_HOURGLASS_ZERO_APPEARED_CONFIRMATION_20261016.json",
+        "git_blob_sha": "66517d5680c4b4570a733a91b1181edf0f58c65e",
+        "commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+        "actual_read": "full"
+      }
+    ],
+    "engine_files": [
+      {
+        "path": "src/ghosts.ts",
+        "git_blob_sha": "a24ef4bf971cb89825c442e9f51e29e2359f8ec1"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "git_blob_sha": "e84821c9b1b7b48b786834fb6a8f8b53d40a71c5"
+      },
+      {
+        "path": "src/hero-descent.ts",
+        "git_blob_sha": "090f8cad3508b9e8d8a7c8e6d0b58f6890798866"
+      },
+      {
+        "path": "src/hero-forms.ts",
+        "git_blob_sha": "e42cb0854bd71dfaf4004268ec79e11c115c692d"
+      },
+      {
+        "path": "src/hero-progress.ts",
+        "git_blob_sha": "5edea5f9c620b1eb35127ff7b146b1f84662f6dc"
+      },
+      {
+        "path": "src/hero-shuffle.ts",
+        "git_blob_sha": "8b6ea3c3c370b305b92177546b7b93018289567f"
+      },
+      {
+        "path": "src/mechanism-observer.ts",
+        "git_blob_sha": "eda380e0eb72dbff407dd14ff0a94f13e8d9cb81"
+      },
+      {
+        "path": "src/modes.ts",
+        "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "git_blob_sha": "e20fb25ce41e08a0adf02fb7a6ef70a92cc00301"
+      },
+      {
+        "path": "src/rules.ts",
+        "git_blob_sha": "2aa4deb68cec2f9330eadd8f41097d7b1c615721"
+      },
+      {
+        "path": "src/settlement-context.ts",
+        "git_blob_sha": "58052bee1c08392f887fbf1e7f1ec7501c2d8cf4"
+      },
+      {
+        "path": "src/settlement.ts",
+        "git_blob_sha": "18f2b0e25e0de7513e12d7e5edbec7918180a446"
+      },
+      {
+        "path": "src/spaces.ts",
+        "git_blob_sha": "cc4db990fe5683a44b6a95ba50620370a242f49d"
+      },
+      {
+        "path": "src/turns.ts",
+        "git_blob_sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612"
+      }
+    ],
+    "source_read_scope": "Full settlement-context, mechanism-observer, hero-progress/turns and named direct entry, hourglass, initialization/begin/closure/landing/royal-threat functions plus required hero/space/ghost dependencies; not whole engine, all PRs, full terminal or all historical rules audit.",
+    "identity_scope": "86 source/test blobs; exact identity, not 86-file semantic review",
+    "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md"
   }
 }

@@ -7,12 +7,13 @@
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN",
-    "status": "NOT_STARTED_SOURCE_AND_CONCRETE_DESIGN_REVIEW",
-    "action": "恢复沙漏完整六步/已承诺后续的隔离计划与一次提交边界，核原authority消灭批次WeakMap、随机/死亡资源/观察副作用，先形成具体可验证实现设计；不通过重复执行器预检再提交，不放开研究准入，不把未知分支当安全。",
+    "id": "NEXT-MAIN-R38-HOURGLASS-BOUNDED-PATCH",
+    "status": "NOT_STARTED_CONCRETE_DESIGN_AVAILABLE",
+    "action": "按R38_HOURGLASS_CLOSURE_PLAN.md从PR9固定源继承独立补丁；先完成原authority批次/候选/RNG/observer隔离和明确普通分支差异，再接完整闭合王安全。未知/特殊空间/独立终局缺来源只阻断依赖分支，不自定新政策或开放原12/64。",
+    "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
     "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
-    "original12_execution": 0,
     "gameplay_policy_delta": 0,
+    "original12_execution": 0,
     "is_new_user_gameplay_candidate": false
   },
   "unresolved_questions": [
@@ -265,9 +266,20 @@
   ],
   "round_closeout": "LEZI-PROJECT-ROUND-CLOSEOUT-20261017",
   "last_user_instruction": {
-    "quote": "进行下一步",
+    "user_quote": "进行下一步",
     "date_local": "2026-10-21",
-    "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。"
+    "basis": "本对话上轮已说明的下一项：主线核沙漏完整闭合/隔离并形成具体设计；本轮推进该步骤。",
+    "scope_interpretation": "本轮读取/设计/主线增量交接；没有把本条记成新玩法批准或沙漏源码实施/运行完成。",
+    "allowed_executed": [
+      "read current fixed handoff and pinned PR9 source",
+      "form concrete hourglass closure/isolation/single-result design",
+      "main incremental GitHub publication and readback"
+    ],
+    "not_executed": [
+      "game code changes or engine imports/runs",
+      "research gate/capability or original12 replay",
+      "PR merge,APK,deployment,scoring thaw,NET resume"
+    ]
   },
   "shared_source_contract_review_queue": [
     {
@@ -307,9 +319,9 @@
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "PARTIAL_BOMB_AND_LEG_GEOMETRY_IMPLEMENTED_HOURGLASS_AND_PATH_PENDING",
+      "status": "BOMB_LEG_IMPLEMENTED_HOURGLASS_CONCRETE_DESIGN_READY_PATH_PENDING",
       "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
-      "disposition": "已实施投弹受将与铁马终点坐标纠错，组件回归529通过；沙漏/路径闭合、安全搜索/终局、原自然12和64验收仍待，不扩大准入。",
+      "disposition": "投弹/铁马补丁保留；本轮完成沙漏闭合/隔离/一次提交的具体设计，代码及12组新回归均未执行。原自然12/64、路径/全搜索/终局和产品门禁不变。",
       "previous_disposition": {
         "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
         "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
@@ -318,7 +330,8 @@
       "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
       "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
       "previous_status_before_bounded_repairs": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
-      "latest_implementation": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
+      "latest_implementation": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation",
+      "latest_hourglass_plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md"
     }
   ],
   "deferred_gameplay_work_item": {
@@ -357,6 +370,44 @@
       "product_gate_changed": false,
       "scoring_frozen": true,
       "NET": "paused"
-    }
+    },
+    "latest_plan": {
+      "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
+      "status": "CONCRETE_ENGINEERING_PLAN_COMPLETE_NOT_IMPLEMENTED_OR_RUN",
+      "owner": "main shared engine",
+      "date_local": "2026-10-21",
+      "source_handoff": "13dcdad643008263c3663df1702e5f0926e4082e",
+      "engine_base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+      "selected_design": "原authority复制前批次屏障；同一隔离候选完整执行一次；六步/死亡后续闭合后分支判定；通过则直接返回同一结果，拒绝丢弃。",
+      "new_source_findings": [
+        "remote gameWithPrivateTraps copies authority before skill API; need guard at both original-object boundaries",
+        "closeDirectDeaths ignores supplied skill RNG and uses Math.random for training death reselection",
+        "hourglass resets effects for living as well as revived; landing origin/controller need separate source-preserving handling",
+        "candidate begin can emit into outer collector, so buffering/failure isolation is required"
+      ],
+      "verification": {
+        "source_and_test_blobs_compared": 86,
+        "all_equal_pinned_PR9": true,
+        "game_code_writes_this_phase": 0,
+        "engine_imports_this_phase": 0,
+        "engine_runs_this_phase": 0,
+        "new_test_groups_planned": 12,
+        "new_tests_run": 0,
+        "original12_executed": 0,
+        "original64": "UNRUN"
+      },
+      "remaining": [
+        "actual implementation and runtime proof",
+        "ordinary lawful-threat completeness and special-space coverage",
+        "independent terminal/source cases",
+        "actual client/wire and other-line adoption"
+      ],
+      "other_source_line_adoption": "unknown",
+      "gameplay_policy_delta": 0,
+      "scoring_frozen": true,
+      "NET": "paused"
+    },
+    "current_phase_scope": "concrete hourglass design, not code/run or new gameplay approval"
   }
 }
