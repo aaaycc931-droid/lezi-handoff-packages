@@ -42,3 +42,9 @@
 完整候选只执行一次、闭合落位/死亡后检查己王；拒绝不提交资源/历史/事件或刷新截止。原authority复制前屏障、零生产抽样、活死状态区分、观察缓冲及错误分流已实施。31项新组件，最终61针对性/41文件560相关检查通过；实际代码提交和结果见R38_ENGINEERING_REVIEW.json#/latest_implementation。
 
 内部HourglassCoverageError只报告不覆盖，不定产品新拒绝政策；source-terminal不计沙漏普通安全通过；完整威胁/特殊空间/终局仍未验收。capture.evidenceValid=false仅完成底层API，现有研究适配器接收/失效处理与新D01语义观察点继续待办。原自然12执行0、64UNRUN。投弹/铁马、55确认、各线成果、协作v0.14、评分冻结、NET暂停保持。
+
+## 2026-10-21 山第一阶段限定实施与验证
+
+用户明确“开始实施吧”，指向本对话已发布并入库的candidates/shan/IMPLEMENTATION_PLAN.md第一阶段：独立模块src/shan-core.ts和tests/shan-core.test.ts，以及12组组件验证。本轮依此实施并运行，不需要再次确认该相同范围；不延伸为后续普通对局接入、英雄注册／模式入池、产品门禁更改或完整联动实现。
+
+固定PR10源7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9派生独立分支，a27833955e6f1b8d70dca9b8c15aad193c6c3479与草稿PR11已发布、未合并。仅新增两文件，27项合成事实组件测试通过，生产入口未引用模块；真实棋盘适配、完整棋谱、实际wire保密与完整TypeScript编译未验收。具体身份、命令、保护和下一步见candidates/shan/FIRST_STAGE_IMPLEMENTATION.md。既有工程断点、各线成果、评分冻结及NET暂停保留。

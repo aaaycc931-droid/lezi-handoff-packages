@@ -1359,7 +1359,7 @@
     "lethal_level_term": "致命等级",
     "current_revision_rerated": false,
     "prior_score_role": "historical_paper_reference_not_new_v1_1_assessment",
-    "next_shan_action": "implement first-stage standalone module and component verification on a source-rechecked isolated branch when instructed against this concrete plan; product integration separate"
+    "next_shan_action": "prepare exact stage-2 authority adapter and ordinary move/terminal patch proposal, preserve existing engineering next; no product integration performed"
   },
   "shan_current_rating": {
     "id": "SHAN-PAPER-RATING-6-2-4-20261021",
@@ -1575,7 +1575,7 @@
     "id": "SHAN-IMPLEMENTATION-PLAN-20261021",
     "date_local": "2026-10-21",
     "user_quote": "开始下一步",
-    "status": "source_reviewed_concrete_plan_complete_not_implemented",
+    "status": "first_stage_implemented_27_components_pass_later_stages_not_started",
     "report": "worklines/main/candidates/shan/IMPLEMENTATION_PLAN.md",
     "design_version": "SHAN-v1.2-6-2-4",
     "handoff_base": "c323a5bd965d60ba5f8b19e44ecc0628e91ea8f5",
@@ -1652,21 +1652,89 @@
         "tests/shan-core.test.ts"
       ],
       "planned_check_groups": 12,
-      "status": "NOT_STARTED_NOT_RUN",
+      "status": "STANDALONE_COMPONENT_IMPLEMENTED_27_TESTS_PASS_DRAFT_UNMERGED",
       "product_entry_changes": 0,
       "hero_registration_or_pool_changes": 0,
-      "mode_admission_changes": 0
+      "mode_admission_changes": 0,
+      "actual_implementation": "worklines/main/candidates/shan/FIRST_STAGE_IMPLEMENTATION.md",
+      "actual_component_tests": 27
     },
     "later_stages": [
       "ordinary authoritative-move and terminal integration",
       "owner UI and actual serialized privacy contracts"
     ],
-    "engine_code_changes": 0,
+    "engine_code_changes": 2,
     "engine_runs": 0,
-    "tests_run": 0,
-    "branch_or_PR_created": false,
+    "tests_run": 27,
+    "branch_or_PR_created": true,
     "new_score": null,
-    "next": "implement first-stage standalone module and component verification on a source-rechecked isolated branch when instructed against this concrete plan; product integration separate",
+    "next": "prepare exact stage-2 authority adapter and ordinary move/terminal patch proposal, preserve existing engineering next; no product integration performed",
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown",
+    "original_plan_phase_status": "source_reviewed_concrete_plan_complete_not_implemented"
+  },
+  "shan_first_stage_implementation": {
+    "id": "SHAN-FIRST-STAGE-IMPLEMENTATION-20261021",
+    "date_local": "2026-10-21",
+    "user_quote": "开始实施吧",
+    "authorization_scope": "published concrete first-stage plan: isolated shan-core.ts + component test; no product integration",
+    "status": "STANDALONE_COMPONENT_IMPLEMENTED_27_TESTS_PASS_DRAFT_UNMERGED",
+    "design_version": "SHAN-v1.2-6-2-4",
+    "plan": "worklines/main/candidates/shan/IMPLEMENTATION_PLAN.md",
+    "report": "worklines/main/candidates/shan/FIRST_STAGE_IMPLEMENTATION.md",
+    "handoff_base": "6378dbac701b67220d618fa03c0dc383a1b92d8b",
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_base": "7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9",
+    "engine_commit": "a27833955e6f1b8d70dca9b8c15aad193c6c3479",
+    "engine_branch": "codex/shan-core-20261021",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/11",
+    "pull_request_number": 11,
+    "upstream_pr": 10,
+    "files": [
+      {
+        "path": "src/shan-core.ts",
+        "git_blob_sha": "9c7a82ff1ef04334fe3a0e29a0b25dfe885598fc"
+      },
+      {
+        "path": "tests/shan-core.test.ts",
+        "git_blob_sha": "530a20e3dc2a303df87905835f7eee611b110691"
+      }
+    ],
+    "source_files_added": 1,
+    "test_files_added": 1,
+    "existing_blobs_preserved": 527,
+    "verification": {
+      "node_version": "v24.19.0",
+      "command": "node --test --test-reporter=tap tests/shan-core.test.ts",
+      "planned_groups": 12,
+      "tests": 27,
+      "passed": 27,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "test_commands_run": 2,
+      "production_engine_imports": 0,
+      "production_engine_runs": 0,
+      "natural_legal_game_replays": 0,
+      "full_typescript_typecheck": "not_run_tsc_unavailable",
+      "standalone_module_runtime_imports": 0,
+      "remote_two_file_readback_exact": true,
+      "pr_diff_exact_two_files": true
+    },
+    "not_done": [
+      "hero registration or random pool admission",
+      "real board legality and checking-source adapter",
+      "ordinary authoritative move/terminal integration",
+      "actual room and Bluetooth serialization privacy",
+      "UI assets or playable hero",
+      "special hero/mutation/timeline adaptation"
+    ],
+    "new_score": null,
+    "formal_ledger_changed": false,
+    "mode_gate_changed": false,
+    "merged": false,
+    "next": "prepare exact stage-2 authority adapter and ordinary move/terminal patch proposal, preserve existing engineering next; no product integration performed",
     "scoring_frozen": true,
     "NET": "paused",
     "other_dialogue_adoption": "unknown"

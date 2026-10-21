@@ -118,3 +118,6 @@
 |[src/hero-forms.ts](https://github.com/aaaycc931-droid/jieqi-engine/blob/7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9/src/hero-forms.ts)|e42cb0854bd71dfaf4004268ec79e11c115c692d|
 |[src/room.ts](https://github.com/aaaycc931-droid/jieqi-engine/blob/7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9/src/room.ts)|093a1732eed4ee48a6d3487ce938d3c1d17a58c2|
 |[src/research-source-context.ts](https://github.com/aaaycc931-droid/jieqi-engine/blob/7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9/src/research-source-context.ts)|01aa06251a9d76dca075a8899a3530ab0f47d0f2|
+
+## 后续第一阶段实际执行（2026-10-21）
+用户随后明确“开始实施吧”，现已完成第一阶段两个文件：独立规则模块与27项组件检查，草稿PR11／a27833955e6f1b8d70dca9b8c15aad193c6c3479已发布、未合并。实际结果与限制见[FIRST_STAGE_IMPLEMENTATION.md](FIRST_STAGE_IMPLEMENTATION.md)。上文NOT_RUN／未开始是原方案形成时的状态；第一阶段12组已执行并细化为27项通过，第二／三阶段仍未实施，实际棋盘与wire验证不据组件结果通过。下一先形成第二阶段具体权威接入方案。
