@@ -100,6 +100,7 @@
     "terminology_migration": "pressure fields replaced by lethal_level fields in v1.1; same mechanic identity, original image/source terms preserved in history"
   },
   "known_open_boundaries": [
+    "ordinary same-checking-rook relocation along unchanged checking ray: W09 proposal pending",
     "precise source attribution under multi-stage, autonomous or extra-action effects",
     "hidden/temporary-control/revived advisor eligibility",
     "cross-hero/mutation/terminal/forced-displacement interactions"
@@ -277,5 +278,43 @@
     ],
     "enemy_receives_no_secret_death_or_post_death_progress_ui": true,
     "actual_ui_artwork_approved": false
+  },
+  "validation_walkthrough": {
+    "id": "SHAN-ORDINARY-POSITION-WALKTHROUGH-20261021",
+    "date_local": "2026-10-21",
+    "source_commit": "476f9ca9714a8c4627a40ad21252824266f6a306",
+    "user_quote": "那就进行下一步吧。",
+    "status": "manual_local_walkthrough_complete_one_ordinary_ambiguity_pending",
+    "report": "worklines/main/candidates/shan/POSITION_WALKTHROUGH.md",
+    "design_version": "SHAN-v1.1-6-2-4",
+    "manual_cases": 10,
+    "current_rules_consistent_cases": [
+      "W01",
+      "W02",
+      "W03",
+      "W04",
+      "W05",
+      "W06",
+      "W07",
+      "W08"
+    ],
+    "existing_common_source_case": "W10",
+    "pending_case": "W09",
+    "pending_proposal": "同一枚棋子沿原将军线路移动，只要该威胁一直没有解除，就不重复计数；解除后再将，或这着棋真正新增另一条将军威胁，才计一次，同一着仍至多一次。",
+    "proposal_approved": false,
+    "verification": {
+      "local_move_geometry": "same_AI_manual_check_only",
+      "legal_initial_to_position_histories": 0,
+      "automated_gameplay_tests": 0,
+      "engine_runs": 0,
+      "independent_review": false,
+      "game_code_changes": 0,
+      "new_score": null
+    },
+    "shared_source_scope": "01_CURRENT_RULES basic no-normal-general-capture and sections2.3-2.4 only; historical header not adopted as current authority",
+    "next": "review W09 exact proposal, then incorporate only on approval; implementation remains separate",
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown"
   }
 }
