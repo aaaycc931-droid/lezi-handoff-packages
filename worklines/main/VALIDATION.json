@@ -160,53 +160,72 @@
     }
   },
   "latest_bounded_engine_validation": {
-    "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-    "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+    "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+    "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
     "owner": "main shared engine",
     "engine_repository": "aaaycc931-droid/jieqi-engine",
-    "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-    "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
-    "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
-    "pull_request_number": 8,
+    "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "engine_branch": "codex/r38-iron-steed-leg-20261021",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+    "pull_request_number": 9,
+    "upstream_bomb_PR": 8,
+    "business_code_formulas_changed": 2,
     "files_changed": 2,
-    "business_code_lines_added": 1,
-    "focused_tests_passed": 8,
-    "related_tests_passed": 519,
+    "new_component_cases": 10,
+    "focused_checks_passed": 30,
+    "related_tests_passed": 529,
     "related_test_files": 40,
     "original64": "UNRUN",
     "original12_executed": 0,
+    "other_source_line_adoption": "unknown",
     "product_gate_changed": false,
     "scoring_frozen": true,
     "NET": "paused",
-    "source_line_receiver_adoption": "unknown_until_own_actual_receipt",
-    "authorization": {
-      "at_local": "2026-10-20T23:12:32+08:00",
-      "user_quote": "我同意进行",
-      "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
-      "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/authorization",
-      "other_slices_or_natural_replays_authorized": false
-    },
-    "actual_commands": "R38_ENGINEERING_REVIEW.json#/latest_implementation/execution/commands",
-    "prepatch_red_tests": 2,
-    "postpatch_focused_passed": 8,
-    "related_regressions_passed": 519,
-    "related_files": 40,
-    "source_tree_protection": {
-      "base_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "tree": "eb8007b5f8abb05a4895a476611e354ad47fb011",
-      "changed_paths": [
-        "src/hero-actions.ts",
-        "tests/bomb-target-boundaries.test.ts"
+    "authority_basis": {
+      "user_quote": "进行下一步",
+      "date_local": "2026-10-21",
+      "basis": "current next-step instruction in the previously explained main repair sequence: bomb, then iron-steed leg",
+      "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
+      "earlier_scope_preserved": "2026-10-20只实施投弹的限定属于上一轮；本轮是新的下一项推进，不把上一轮授权扩大为全部切片批准。",
+      "allowed_executed": [
+        "read-only source/guard review",
+        "two endpoint-formula corrections in src/rules.ts",
+        "10 public component regressions in tests/mutation.test.ts",
+        "related existing 40-file local regression and child draft branch publication",
+        "main incremental writeback"
       ],
-      "unchanged_other_blobs": 524,
-      "deleted_paths": [],
-      "product_and_research_gates_unchanged": true
+      "not_included": [
+        "whole king-safety/search/terminal rewrite",
+        "hourglass/route-closure architecture",
+        "mode research admission/hook/capability changes",
+        "original half-chaos natural12/64 acceptance",
+        "PR merge/APK/deployment/scoring thaw/NET resume"
+      ]
     },
-    "new_source_remote_readback": true,
+    "actual_commands": "R38_ENGINEERING_REVIEW.json#/latest_implementation/execution",
+    "prepatch_red": 10,
+    "postpatch_focused_pass": 30,
+    "source_protection": {
+      "parent": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "tree": "c9a219337af7eb76301ef2c1ee979158800819cf",
+      "changed_paths": [
+        "src/rules.ts",
+        "tests/mutation.test.ts"
+      ],
+      "other_524_blobs_unchanged": true,
+      "bomb_patch_blobs_preserved": true,
+      "default_and_research_gates_preserved": true,
+      "removed_paths": 0
+    },
+    "code_readback_equal": true,
     "original64_passes": 0,
     "remote_CI_pass_claimed": false,
-    "full_UI_APK_suite_run": false,
-    "main_handoff_tree_and_remote_readback": "must verify in actual publication tools; no future commit SHA prefilled"
+    "concurrent_v014_preserved_source": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+    "document_and_remote_readback": "actual prepublish/postpublish tool results required; no future self SHA"
+  },
+  "previous_bomb_validation_source": {
+    "commit": "59e2ad624f6195a5c10ee46f918f7f9d8b0cec99",
+    "path": "worklines/main/VALIDATION.json#/latest_bounded_engine_validation"
   }
 }

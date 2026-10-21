@@ -7,10 +7,10 @@
     "standard",
     "ui"
   ],
-  "base_commit": "2e02a863358827d32f767c3e43fc676246c302ac",
-  "phase": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-  "current_breakpoint": "NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE",
-  "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+  "base_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+  "phase": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+  "current_breakpoint": "NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN",
+  "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
   "confirmed_delta_this_session": [
     {
       "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -140,7 +140,7 @@
     "r23-r25 twelve replay plans covering64 old PD/DS specs are allUNRUN per source report; main did not read full prefixes or run engine"
   ],
   "shared_blocks": "SHARED_COORDINATION.json",
-  "next": "基于已发布ea3b35c后继源恢复铁马四方向马腿与合法完步落点的最小差异案例，核定下一补丁与测试范围；本次同意只实施投弹，未自动执行下一修复。",
+  "next": "恢复沙漏完整六步/已承诺后续的隔离计划与一次提交边界，核原authority消灭批次WeakMap、随机/死亡资源/观察副作用，先形成具体可验证实现设计；不通过重复执行器预检再提交，不放开研究准入，不把未知分支当安全。",
   "messages_sent": false,
   "other_lines_adoption_verified": "Earlier exact scopes only, no new1.57 receipts.",
   "scoring_frozen": true,
@@ -161,10 +161,10 @@
   "unread_concurrent_returns": [],
   "new_rule_confirmations_this_phase": 0,
   "current_phase_changes": [
-    "按本轮明确同意实施R38-SAFE-BOMB；业务代码只加一行副作用前受将守卫",
-    "原代码新回归两项预期失败；补丁后投弹8项及40文件519相关回归全通过",
-    "独立源码分支ea3b35c/草稿PR8发布并复读，与测试字节一致",
-    "记录R40自然证据要求、授权及未验边界，保留所有其他线与门禁"
+    "恢复M01完整原条款、PR8后继源码及10组四方向/顶边界差异",
+    "两处公式纠错；10项新检查原代码全失败、修后30针对性与40文件529相关检查全通过",
+    "在PR8之后独立发布代码/草稿PR9，原投弹和所有门禁对象保留",
+    "读并采用并发v0.14适用性/维护退出条款，接最新tree/parent回传，不覆盖源线"
   ],
   "external_shared_confirmations_received_this_phase": 0,
   "increment_since_1_53": {
@@ -1028,16 +1028,18 @@
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "status": "PARTIAL_BOMB_AND_LEG_GEOMETRY_IMPLEMENTED_HOURGLASS_AND_PATH_PENDING",
       "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
-      "disposition": "已核原D01明确确认及四项源差异，拆为bomb/马腿/沙漏/路径四个有限补丁；完整闭合/终局/层级未决保留，无代码/运行授权。",
+      "disposition": "已实施投弹受将与铁马终点坐标纠错，组件回归529通过；沙漏/路径闭合、安全搜索/终局、原自然12和64验收仍待，不扩大准入。",
       "previous_disposition": {
         "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
         "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
         "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
       },
       "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
-      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
+      "previous_status_before_bounded_repairs": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "latest_implementation": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
     }
   ],
   "previous_phase_before_r38": {
@@ -1065,16 +1067,16 @@
   },
   "r38_authorization_status": {
     "review_and_main_handoff": true,
-    "engine_code": "R38-SAFE-BOMB only",
-    "engine_run": "4 local component/regression commands only",
+    "engine_code": "bomb + current next-step leg geometry only",
+    "engine_run": "bounded local tests only; original natural12 not run",
     "original_half_chaos_natural_replays": false,
     "capability_issue": false,
     "PR_merge": false
   },
   "r38_validation_status": {
-    "source": "V2 fixed bytes",
-    "component": "V4 519 bounded/existing regressions PASS",
-    "focused": "after patch8/8 PASS; before patch6 PASS and2 expected FAIL",
+    "source": "V2 fixed ea3 parent and published descendant",
+    "component": "V4 529/529 related checks PASS",
+    "focused": "30/30 mutation+bomb checks PASS; original leg formula fails10 new cases",
     "original64": "UNRUN",
     "original12_executed": 0,
     "client_wire": "not tested",
@@ -1082,6 +1084,30 @@
     "other_line_adoption": "unknown"
   },
   "latest_implementation": {
+    "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+    "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+    "owner": "main shared engine",
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "engine_branch": "codex/r38-iron-steed-leg-20261021",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+    "pull_request_number": 9,
+    "upstream_bomb_PR": 8,
+    "business_code_formulas_changed": 2,
+    "files_changed": 2,
+    "new_component_cases": 10,
+    "focused_checks_passed": 30,
+    "related_tests_passed": 529,
+    "related_test_files": 40,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "other_source_line_adoption": "unknown",
+    "product_gate_changed": false,
+    "scoring_frozen": true,
+    "NET": "paused"
+  },
+  "previous_implementation_summary": {
     "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
     "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
     "owner": "main shared engine",
@@ -1102,5 +1128,26 @@
     "scoring_frozen": true,
     "NET": "paused",
     "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
+  },
+  "current_phase_authorization": {
+    "user_quote": "进行下一步",
+    "date_local": "2026-10-21",
+    "basis": "current next-step instruction in the previously explained main repair sequence: bomb, then iron-steed leg",
+    "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
+    "earlier_scope_preserved": "2026-10-20只实施投弹的限定属于上一轮；本轮是新的下一项推进，不把上一轮授权扩大为全部切片批准。",
+    "allowed_executed": [
+      "read-only source/guard review",
+      "two endpoint-formula corrections in src/rules.ts",
+      "10 public component regressions in tests/mutation.test.ts",
+      "related existing 40-file local regression and child draft branch publication",
+      "main incremental writeback"
+    ],
+    "not_included": [
+      "whole king-safety/search/terminal rewrite",
+      "hourglass/route-closure architecture",
+      "mode research admission/hook/capability changes",
+      "original half-chaos natural12/64 acceptance",
+      "PR merge/APK/deployment/scoring thaw/NET resume"
+    ]
   }
 }

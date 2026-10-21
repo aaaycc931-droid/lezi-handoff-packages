@@ -3,7 +3,7 @@
   "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
   "date_local": "2026-10-20",
   "workline": "main",
-  "status": "FIRST_BOUNDED_BOMB_PATCH_IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_OTHER_SLICES_PENDING",
+  "status": "BOMB_AND_LEG_GEOMETRY_PATCHES_IMPLEMENTED_COMPONENT_TESTS_PASS_OTHER_ENGINEERING_PENDING",
   "user_instruction": "继续主线工作，优先读取并处理半混乱模式最新 r38 工程交接，核对源码依赖与技术修复范围。保留各工作线现有成果。",
   "handoff": {
     "repository": "aaaycc931-droid/lezi-handoff-packages",
@@ -316,7 +316,12 @@
         "src/game.ts#pathPiecesForSpecialMove"
       ],
       "finding": "铁马横腿威胁旧候选(x+dx,y±2)对应的是纵腿；正确经过横腿的日字终点为(x+2dx,y±1)，纵腿为(x±1,y+2dy)。离线几何例：马(4,4)、腿(5,4)，旧(5,2)/(5,6)经过(4,3)/(4,5)，应为(6,3)/(6,5)。",
-      "disposition": "几何差异确认，未来补四方向/边界/合法落点及来源限制回归；不是引擎复现，不把原PD03或此例当PD-S12自然回放通过。"
+      "disposition": "几何差异确认，未来补四方向/边界/合法落点及来源限制回归；不是引擎复现，不把原PD03或此例当PD-S12自然回放通过。",
+      "followup_resolution": {
+        "commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+        "status": "two endpoint formulas corrected;10 differential components and529 related tests pass",
+        "full_legal_threat_and_natural_PD12": "not claimed"
+      }
     },
     {
       "id": "MAIN-R38-F06",
@@ -357,6 +362,12 @@
         "write_or_run_authorized_by_this_review": false,
         "current_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
         "later_specific_authorization": "2026-10-20T23:12:32+08:00"
+      },
+      "latest_child_branch": {
+        "branch": "codex/r38-iron-steed-leg-20261021",
+        "from": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+        "commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+        "PR": 9
       }
     },
     {
@@ -413,7 +424,7 @@
     },
     {
       "id": "MAIN-HC-R38-03",
-      "status": "BOMB_PATCH_IMPLEMENTED_OTHER_THREE_PATCHES_PENDING",
+      "status": "BOMB_AND_LEG_GEOMETRY_IMPLEMENTED_HOURGLASS_AND_PATH_PENDING",
       "owner": "main engine safety/closure",
       "decision": "原D01确认直接继承，无新玩法投票；代码实施权限与安全依赖单列。优先bomb门槛，马腿几何独立局部修复；沙漏和路径完整结果共用闭合计划，不能捆绑成全局安全重写。",
       "packages": [
@@ -440,7 +451,9 @@
             "src/game.ts"
           ],
           "boundary": "四方向正确日字终点及board/landing/controller/ground/immunity/source限制；不以纯几何代替合法威胁完成性。",
-          "next": "最小合法正/负差异fixture与单元回归，不能记作原自然回放。"
+          "next": "Full source eligibility/search remains separate; original PD03/PD-S12 natural acceptance not run.",
+          "status": "ENDPOINT_GEOMETRY_IMPLEMENTED_COMPONENT_REGRESSION_PASSED",
+          "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d"
         },
         {
           "id": "R38-SAFE-HOURGLASS",
@@ -503,18 +516,19 @@
     },
     {
       "id": "MAIN-HC-R38-05",
-      "status": "LATER_EXPLICIT_APPROVAL_BOMB_ONLY_IMPLEMENTED_AND_COMPONENT_TESTED",
+      "status": "BOMB_THEN_LEG_NEXT_STEP_INSTRUCTIONS_EXECUTED_BOUNDED_TESTS_ONLY",
       "owner": "main",
-      "decision": "用户23:12明确同意前述首项代码修复与相关测试，主线已按限定实施并回传；其他切片/准入/观察和自然回放不自动获准。",
-      "implementation": "R38-SAFE-BOMB only",
+      "decision": "上一轮完成明确同意的投弹修复；本轮按新的下一步指令及既定先投弹再铁马顺序，完成M01坐标纠错和必要回归。不是任何新玩法候选确认或全部工程授权。",
+      "implementation": "bomb + leg endpoint geometry only",
       "run": "bounded local component/regression commands only",
       "merge": false,
       "gate_change": false,
-      "next": "NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE",
+      "next": "NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN",
       "original_review_disposition_preserved": {
         "status": "REVIEW_AND_HANDOFF_AUTHORIZED_ENGINE_IMPLEMENTATION_AND_EXECUTION_NOT_GRANTED",
         "decision": "本轮用户明确要求主线读取处理r38和核对技术范围；已完成工程审查与主线文档采用。既有主线工作约定无源码实施/运行授权，本次核对指令未明确将范围扩大到代码或引擎执行。以上是可审查的具体技术方案，不是AI自行给自己授予能力。"
-      }
+      },
+      "previous_bomb_only_stage_source": "59e2ad624f6195a5c10ee46f918f7f9d8b0cec99"
     }
   ],
   "adopted_scope": [
@@ -529,7 +543,7 @@
     "本次只完成R38-SAFE-BOMB与组件回归，其余代码/能力发行/原自然回放不由此授权或判通过。"
   ],
   "validation_plan": {
-    "status": "PARTIALLY_EXECUTED_BOMB_COMPONENT_SCOPE_ONLY_OTHER_PLANS_PENDING",
+    "status": "PARTIALLY_EXECUTED_BOMB_AND_LEG_COMPONENT_SCOPE_ONLY_OTHER_PLANS_PENDING",
     "runtime": "Node >=24 from package.json; actual engine/test environment not initialized",
     "order": [
       "核目标分支固定基准与干净差分；只写批准路径",
@@ -573,26 +587,21 @@
     "geometry_reasoning": "V1 offline coordinate comparison; no engine",
     "independent_review": "not performed; PR8 remains draft",
     "engine_imports": "performed by local Node tests; import count not measured",
-    "engine_runs": 4,
-    "engine_code_writes": 2,
+    "engine_runs": 7,
+    "engine_code_writes": 4,
     "engine_branch_created": true,
     "PR_merges": 0,
     "product_gate_changes": 0,
     "old64": "UNRUN",
     "old12_ready": 0,
     "old12_executed": 0,
-    "document_validation": {
-      "json_files": 9,
-      "changed_handoff_paths": 12,
-      "structure_source_pointers_and_protected_state": "PASS: 9 JSON parse;12 bounded paths; main1.62/null candidate and other-line states retained",
-      "remote_readback": "must follow actual publication",
-      "prior_r38_review_validation": "original nineJSON/eleven-path check applies to4dfeb732 only"
-    },
-    "engine_runs_scope": "local component/regression test command invocations; original natural replay executions remain0",
-    "business_code_files_changed": 1,
-    "test_files_changed": 1,
-    "new_local_component_tests": 4,
-    "component_tests_passed": 519
+    "document_validation": "prepublication9JSON/12-path/protected-source checks plus actual remote readback required",
+    "engine_runs_scope": "cumulative4 bomb +3 leg local test command invocations; original natural12 executions0",
+    "business_code_files_changed": 2,
+    "test_files_changed": 2,
+    "new_local_component_tests": 14,
+    "component_tests_passed": 529,
+    "current_leg_test_commands": 3
   },
   "limitation_audit": {
     "audit_trigger": "shared source/authorization/technical boundary and persistent main state update",
@@ -617,7 +626,7 @@
       "earlier valid code/run authorization recovered",
       "actual runtime/source contract contradicts stated behavior"
     ],
-    "verification_status": "completed_current_bomb_implementation_and_component_regressions; partial overall engineering/mode acceptance",
+    "verification_status": "completed_current_leg_bounded_implementation_and_scoped_v0.14_adoption; partial overall mode engineering",
     "action_boundary": "explicitly approved bomb-only code/tests and branch publication executed; other gates/hooks/pilots remain outside current action",
     "failure_conditions": [
       "out-of-scope path changed",
@@ -626,14 +635,14 @@
       "other-line receipt fabricated"
     ],
     "residual_risk": "Known simple-check component cases and related old suite pass. Current isGeneralInCheck inherits unresolved full threat/search dependencies; original half-chaos natural initialization and UI/wire remain unverified.",
-    "next_validation_action": "source-line actual receipt and lawful natural-case evidence after admission/observation readiness; next main step scoped iron-steed case review"
+    "next_validation_action": "恢复沙漏完整六步/已承诺后续的隔离计划与一次提交边界，核原authority消灭批次WeakMap、随机/死亡资源/观察副作用，先形成具体可验证实现设计；不通过重复执行器预检再提交，不放开研究准入，不把未知分支当安全。"
   },
   "next": {
-    "id": "NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE",
-    "status": "NOT_STARTED_SOURCE_CASE_AND_EXACT_PATCH_SCOPE_REVIEW",
-    "action": "基于已发布ea3b35c后继源恢复铁马四方向马腿与合法完步落点的最小差异案例，核定下一补丁与测试范围；本次同意只实施投弹，未自动执行下一修复。",
-    "previous_first_patch": "R38-SAFE-BOMB completed on PR8",
+    "id": "NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN",
+    "status": "NOT_STARTED_SOURCE_AND_CONCRETE_DESIGN_REVIEW",
+    "action": "恢复沙漏完整六步/已承诺后续的隔离计划与一次提交边界，核原authority消灭批次WeakMap、随机/死亡资源/观察副作用，先形成具体可验证实现设计；不通过重复执行器预检再提交，不放开研究准入，不把未知分支当安全。",
     "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+    "original12_execution": 0,
     "gameplay_policy_delta": 0
   },
   "scoring_frozen": true,
@@ -642,247 +651,850 @@
   "containing_commit_note": "Resolve actual publication commit from Git history; no future self SHA",
   "review_stage_status_before_first_patch": "ACTUALLY_RECEIVED_SOURCE_REVIEW_COMPLETE_BOUNDED_TECHNICAL_PLAN_NOT_IMPLEMENTED",
   "latest_implementation": {
-    "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-    "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+    "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+    "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
     "owner": "main shared engine",
     "engine_repository": "aaaycc931-droid/jieqi-engine",
-    "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-    "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
-    "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
-    "pull_request_number": 8,
+    "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "engine_branch": "codex/r38-iron-steed-leg-20261021",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+    "pull_request_number": 9,
+    "upstream_bomb_PR": 8,
+    "business_code_formulas_changed": 2,
     "files_changed": 2,
-    "business_code_lines_added": 1,
-    "focused_tests_passed": 8,
-    "related_tests_passed": 519,
+    "new_component_cases": 10,
+    "focused_checks_passed": 30,
+    "related_tests_passed": 529,
     "related_test_files": 40,
     "original64": "UNRUN",
     "original12_executed": 0,
+    "other_source_line_adoption": "unknown",
     "product_gate_changed": false,
     "scoring_frozen": true,
     "NET": "paused",
-    "source_line_receiver_adoption": "unknown_until_own_actual_receipt",
     "authorization": {
-      "kind": "explicit_current_user_approval_of_preceding_bounded_implementation_and_tests",
-      "at_local": "2026-10-20T23:12:32+08:00",
-      "user_quote": "我同意进行",
-      "preceding_scope": [
-        "主线负责共用引擎投弹受将修复",
-        "在独立开发分支补上受将检查",
-        "验证拒绝不扣弹药/名额、不生成污染、不刷新截止，合法新窗口仍可投弹",
-        "运行相关回归并增量写回结果"
+      "user_quote": "进行下一步",
+      "date_local": "2026-10-21",
+      "basis": "current next-step instruction in the previously explained main repair sequence: bomb, then iron-steed leg",
+      "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
+      "earlier_scope_preserved": "2026-10-20只实施投弹的限定属于上一轮；本轮是新的下一项推进，不把上一轮授权扩大为全部切片批准。",
+      "allowed_executed": [
+        "read-only source/guard review",
+        "two endpoint-formula corrections in src/rules.ts",
+        "10 public component regressions in tests/mutation.test.ts",
+        "related existing 40-file local regression and child draft branch publication",
+        "main incremental writeback"
       ],
-      "applies_to": [
-        "R38-SAFE-BOMB source patch",
-        "tests/bomb-target-boundaries.test.ts focused regression plus related existing tests",
-        "isolated development branch publication and draft review",
-        "main handoff/authorization state persistence"
-      ],
-      "not_granted": [
-        "other safety patches or research admission/observer implementation",
-        "half-chaos natural12/64 acceptance runs",
-        "mode/product gate opening",
-        "PR merge, main game branch modification, APK/deployment, scoring thaw, NET resume"
+      "not_included": [
+        "whole king-safety/search/terminal rewrite",
+        "hourglass/route-closure architecture",
+        "mode research admission/hook/capability changes",
+        "original half-chaos natural12/64 acceptance",
+        "PR merge/APK/deployment/scoring thaw/NET resume"
       ]
     },
-    "handoff_read_baseline": "29c76e03912bca50130cc0f04be43461108a31ba",
-    "handoff_publication_parent": "2e02a863358827d32f767c3e43fc676246c302ac",
-    "source_change": {
-      "path": "src/hero-actions.ts",
-      "old_blob": "c67b12dd0222d96ef685278c5fbfae32428909d5",
-      "new_blob": "e84821c9b1b7b48b786834fb6a8f8b53d40a71c5",
-      "added_line": "requireRule(!isGeneralInCheck(s, side), \"IN_CHECK\", \"被将军时不能投弹\");",
-      "location": "after existing bomber/quota/target validation and before ammo/warps/quota writes",
-      "existing_error_code_reused": "IN_CHECK",
-      "gameplay_rule_delta": 0,
-      "meaning": "落实原三模式投弹受将确认；保留沙漏独立解将资格和现有错误/超时顺序"
-    },
-    "test_change": {
-      "path": "tests/bomb-target-boundaries.test.ts",
-      "old_blob": "9f7990e63222886e5f23c50339bea6b02feab15d",
-      "new_blob": "e7432180d7bf66f1daacdd93195e1b5dcf878535",
-      "new_tests": [
-        "R38-BOMB-CHECK-01: red/black refusal, unchanged whole room/state/secret and no RNG draw",
-        "R38-BOMB-CHECK-02: ordinary evasion, closed old window, later safe bomb and normal main/deadline",
-        "R38-BOMB-CHECK-03: actor/revision/ammo/quota/target error precedence",
-        "R38-BOMB-CHECK-04: existing timeout path precedes bomb gate"
+    "initial_handoff_source": "59e2ad624f6195a5c10ee46f918f7f9d8b0cec99",
+    "publication_parent": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+    "scope": "R38-SAFE-LEG endpoint geometry only; existing landing eligibility and source guards kept",
+    "source_review": {
+      "fixed_parent": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "checked_on_local_date": "2026-10-21",
+      "read_functions": [
+        "rules.canRevealedPieceAttack + movementGeometryLegal/targetEligible/getLegalMoves/simulatePublicMove",
+        "game.pathPiecesForSpecialMove + self-crush qualification",
+        "spaces.isGround/isRiver + slots.current identity",
+        "shared03 complete M01 entry",
+        "existing tests MUT04/05/07/08/10 and actual new differential fixtures"
       ],
-      "fixture_type": "synthetic jieqi-mode component/room transaction fixtures, not original half-chaos full natural initialization",
-      "acceptance_boundary": "可证明上述组件条件下修复有效；不标MA-DS04/原64通过"
-    },
-    "source_integrity": {
-      "pinned_source_test_dependency_blobs_verified": 116,
-      "original_remote_source_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "workspace_kind": "verified pinned source/test mirror, not claimed full checkout; remote publication tree preserves complete source",
-      "base_commit": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "tree": "eb8007b5f8abb05a4895a476611e354ad47fb011",
-      "changed_paths": [
-        "src/hero-actions.ts",
-        "tests/bomb-target-boundaries.test.ts"
-      ],
-      "unchanged_other_blobs": 524,
-      "deleted_paths": [],
-      "product_and_research_gates_unchanged": true,
-      "published_two_file_content_readback_matches_tested_bytes": true,
-      "default_game_main_head_preserved": "c25749d4f21d394c3d94486cfba1d786864083b6"
-    },
-    "execution": {
-      "environment": {
-        "node": "v24.19.0",
-        "package_requirement": ">=24",
-        "OS": "Linux",
-        "network_product_session_used": false
-      },
-      "commands": [
+      "files": [
         {
-          "stage": "old relevant baseline",
-          "argv": [
-            "node",
-            "--test",
-            "--test-reporter=spec",
-            "tests/bomb-target-boundaries.test.ts",
-            "tests/confirmed-runtime.test.ts",
-            "tests/time-line-contracts.test.ts",
-            "tests/current-control.test.ts",
-            "tests/remote-room.test.ts"
-          ],
-          "exit_code": 0,
-          "tests": 96,
-          "pass": 96,
-          "fail": 0
+          "path": "src/rules.ts",
+          "git_blob_sha": "bf2fc6448b161458de03891e140cad9f76d3e03f"
         },
         {
-          "stage": "new focused tests before code patch",
-          "argv": [
-            "node",
-            "--test",
-            "--test-reporter=spec",
-            "tests/bomb-target-boundaries.test.ts"
-          ],
-          "exit_code": 1,
-          "tests": 8,
-          "pass": 6,
-          "fail": 2,
-          "expected_failures": [
-            "R38-BOMB-CHECK-01 Missing expected exception",
-            "R38-BOMB-CHECK-02 Missing expected exception"
-          ]
+          "path": "src/game.ts",
+          "git_blob_sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e"
         },
         {
-          "stage": "focused after patch",
-          "argv": [
-            "node",
-            "--test",
-            "--test-reporter=spec",
-            "tests/bomb-target-boundaries.test.ts"
-          ],
-          "exit_code": 0,
-          "tests": 8,
-          "pass": 8,
-          "fail": 0,
-          "stdout_tail": [
-            "✔ R38-BOMB-CHECK-04 an expired room request still follows the existing timeout path before the bomb gate (2.013238ms)",
-            "ℹ tests 8",
-            "ℹ suites 0",
-            "ℹ pass 8",
-            "ℹ fail 0",
-            "ℹ cancelled 0",
-            "ℹ skipped 0",
-            "ℹ todo 0",
-            "ℹ duration_ms 424.049489"
-          ]
+          "path": "src/slots.ts",
+          "git_blob_sha": "84971b8e5f52f6ea1e20ee4ddbe2e4c8b736f911"
         },
         {
-          "stage": "related engine/room/P0 regression after patch",
-          "argv": [
-            "node",
-            "--test",
-            "--test-reporter=spec",
-            "tests/action-turn-contracts.test.ts",
-            "tests/assassination.test.ts",
-            "tests/bluetooth-disconnect.test.ts",
-            "tests/bluetooth-host-room.test.ts",
-            "tests/bluetooth-private-contracts.test.ts",
-            "tests/bluetooth-protocol.test.ts",
-            "tests/bomb-target-boundaries.test.ts",
-            "tests/check-end-network.test.ts",
-            "tests/confirmed-runtime.test.ts",
-            "tests/cross-rule-contracts.test.ts",
-            "tests/current-control.test.ts",
-            "tests/dark-identity.test.ts",
-            "tests/design-gap-runtime.test.ts",
-            "tests/destruction-batch.test.ts",
-            "tests/exception-contracts.test.ts",
-            "tests/flight-turn-boundaries.test.ts",
-            "tests/flow-contracts.test.ts",
-            "tests/game-modes.test.ts",
-            "tests/ghost-objects.test.ts",
-            "tests/hero-child-boundaries.test.ts",
-            "tests/hero-cross-settlement.test.ts",
-            "tests/hero-descent-atom.test.ts",
-            "tests/hero-descent-boundaries.test.ts",
-            "tests/hero-forms.test.ts",
-            "tests/hero-transfer-r5.test.ts",
-            "tests/movement.test.ts",
-            "tests/mutation-rarity.test.ts",
-            "tests/mutation.test.ts",
-            "tests/proposal-review.test.ts",
-            "tests/public-target-contracts.test.ts",
-            "tests/remote-room.test.ts",
-            "tests/rewind-action-contracts.test.ts",
-            "tests/river-space.test.ts",
-            "tests/scoring-mechanism.test.ts",
-            "tests/scoring-mode-bridge.test.ts",
-            "tests/scoring-policy-adapter.test.ts",
-            "tests/setup-rps.test.ts",
-            "tests/snapshot-resource-contracts.test.ts",
-            "tests/time-line-contracts.test.ts",
-            "tests/warrior.test.ts"
-          ],
-          "exit_code": 0,
-          "files": 40,
-          "tests": 519,
-          "pass": 519,
-          "fail": 0,
-          "duration_ms": 32778.090322,
-          "stdout_tail": [
-            "✔ WARRIOR-06 普通防御被消耗只移除壁垒，不会误删棋子上的骑兵效果 (2.158099ms)",
-            "ℹ tests 519",
-            "ℹ suites 0",
-            "ℹ pass 519",
-            "ℹ fail 0",
-            "ℹ cancelled 0",
-            "ℹ skipped 0",
-            "ℹ todo 0",
-            "ℹ duration_ms 32778.090322"
-          ]
+          "path": "src/spaces.ts",
+          "git_blob_sha": "cc4db990fe5683a44b6a95ba50620370a242f49d"
+        },
+        {
+          "path": "src/hero-forms.ts",
+          "git_blob_sha": "e42cb0854bd71dfaf4004268ec79e11c115c692d"
+        },
+        {
+          "path": "src/modes.ts",
+          "git_blob_sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc"
+        },
+        {
+          "path": "tests/mutation.test.ts",
+          "git_blob_sha": "f4f9653b58392e59f36972452bb67aca065c4b16"
         }
       ],
-      "engine_test_command_invocations": 4,
-      "git_diff_check": "PASS",
-      "runtime_grade": "V4_reality_validated only for these component/regression conditions; no independent reviewer",
-      "remote_CI": "not inspected or claimed; no manual workflow dispatch; verify.yml targets main while this draft targets PR7 branch",
-      "excluded_test_files": [
-        "tests/android-shell.test.ts",
-        "tests/web-layout.test.ts",
-        "tests/web-gameplay-v4.test.ts",
-        "tests/web-messages.test.ts"
+      "M01_rule_source": {
+        "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+        "git_blob_sha": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+        "read_scope": "M01 complete current entry only; no other new mode rule adoption"
+      },
+      "local_existing_bomb_patch": "e84821c9b1b7b48b786834fb6a8f8b53d40a71c5 + e7432180d7bf66f1daacdd93195e1b5dcf878535 unchanged"
+    },
+    "change": {
+      "source_path": "src/rules.ts",
+      "old_blob": "bf2fc6448b161458de03891e140cad9f76d3e03f",
+      "new_blob": "2aa4deb68cec2f9330eadd8f41097d7b1c615721",
+      "test_path": "tests/mutation.test.ts",
+      "old_test_blob": "f4f9653b58392e59f36972452bb67aca065c4b16",
+      "new_test_blob": "4eb8934044a2fed61b87e561babbbc6a972b82f0",
+      "old_horizontal": "(x+dx,y±2)",
+      "new_horizontal": "(x+2dx,y±1)",
+      "old_vertical": "(x±2,y+dy)",
+      "new_vertical": "(x±1,y+2dy)",
+      "unchanged": "same source branch and endpoint board/target/controller/stealth qualification loop; no new validator/helper or secret read",
+      "gameplay_rule_delta": 0
+    },
+    "differential_cases": [
+      {
+        "id": "LEG-E-FALSE_POSITIVE",
+        "horse_red_revealed": [
+          3,
+          1
+        ],
+        "black_royal": [
+          4,
+          1
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "old_endpoints": [
+          [
+            4,
+            -1
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "old_formula_prediction": true,
+        "expected_route_threat": false,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-E-false-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-E-FALSE_NEGATIVE",
+        "horse_red_revealed": [
+          3,
+          1
+        ],
+        "black_royal": [
+          4,
+          1
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            4,
+            3
+          ]
+        ],
+        "old_endpoints": [
+          [
+            4,
+            -1
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "old_formula_prediction": false,
+        "expected_route_threat": true,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-E-missed-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-W-FALSE_POSITIVE",
+        "horse_red_revealed": [
+          5,
+          1
+        ],
+        "black_royal": [
+          4,
+          1
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "old_endpoints": [
+          [
+            4,
+            -1
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "old_formula_prediction": true,
+        "expected_route_threat": false,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-W-false-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-W-FALSE_NEGATIVE",
+        "horse_red_revealed": [
+          5,
+          1
+        ],
+        "black_royal": [
+          4,
+          1
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            4,
+            3
+          ]
+        ],
+        "old_endpoints": [
+          [
+            4,
+            -1
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "old_formula_prediction": false,
+        "expected_route_threat": true,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-W-missed-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-S-FALSE_POSITIVE",
+        "horse_red_revealed": [
+          4,
+          0
+        ],
+        "black_royal": [
+          4,
+          1
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "old_endpoints": [
+          [
+            2,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "old_formula_prediction": true,
+        "expected_route_threat": false,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-S-false-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-S-FALSE_NEGATIVE",
+        "horse_red_revealed": [
+          4,
+          0
+        ],
+        "black_royal": [
+          4,
+          1
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            2,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "old_endpoints": [
+          [
+            2,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "old_formula_prediction": false,
+        "expected_route_threat": true,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-S-missed-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-N-FALSE_POSITIVE",
+        "horse_red_revealed": [
+          4,
+          2
+        ],
+        "black_royal": [
+          4,
+          1
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            3,
+            0
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "old_endpoints": [
+          [
+            2,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            3,
+            0
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "old_formula_prediction": true,
+        "expected_route_threat": false,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-N-false-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-N-FALSE_NEGATIVE",
+        "horse_red_revealed": [
+          4,
+          2
+        ],
+        "black_royal": [
+          4,
+          1
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            2,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "old_endpoints": [
+          [
+            2,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            3,
+            0
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "old_formula_prediction": false,
+        "expected_route_threat": true,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-N-missed-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-TOP-EDGE-E-FALSE_POSITIVE",
+        "horse_red_revealed": [
+          3,
+          0
+        ],
+        "black_royal": [
+          4,
+          0
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            5,
+            1
+          ]
+        ],
+        "old_endpoints": [
+          [
+            4,
+            -2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            5,
+            -1
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "old_formula_prediction": true,
+        "expected_route_threat": false,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-TOP-EDGE-E-false-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      },
+      {
+        "id": "LEG-TOP-EDGE-E-FALSE_NEGATIVE",
+        "horse_red_revealed": [
+          3,
+          0
+        ],
+        "black_royal": [
+          4,
+          0
+        ],
+        "red_royal": [
+          4,
+          9
+        ],
+        "facing_general_blocker_red_pawn": [
+          4,
+          5
+        ],
+        "other_red_revealed_pawn_endpoint_blockers": [
+          [
+            4,
+            2
+          ]
+        ],
+        "old_endpoints": [
+          [
+            4,
+            -2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "correct_endpoints": [
+          [
+            5,
+            -1
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "old_formula_prediction": false,
+        "expected_route_threat": true,
+        "scope": "synthetic public component candidate only; no full natural prefix or engine execution",
+        "implemented_test_id": "R38-LEG-TOP-EDGE-E-missed-check",
+        "runtime_result": "PASS under shared synthetic component/room-state guards; original half-chaos natural prefix not run"
+      }
+    ],
+    "static_geometry": {
+      "source_cells": 90,
+      "in_board_adjacent_leg_pairs": 322,
+      "correct_candidate_pairs": 644,
+      "in_board_correct_finish_routes": 508,
+      "old_candidate_routes_through_requested_leg": 0,
+      "method": "pure Python coordinate enumeration; no engine import, no patch, no game requests"
+    },
+    "execution": {
+      "node": "v24.19.0",
+      "before_patch": {
+        "file": "tests/mutation.test.ts",
+        "tests": 22,
+        "pass": 12,
+        "fail": 10
+      },
+      "focused_after": {
+        "tests": 30,
+        "pass": 30,
+        "fail": 0,
+        "files": [
+          "tests/mutation.test.ts",
+          "tests/bomb-target-boundaries.test.ts"
+        ],
+        "stdout_tail": [
+          "✔ R38-LEG-TOP-EDGE-E-missed-check uses a completable route through the royal leg (0.171568ms)",
+          "ℹ tests 30",
+          "ℹ suites 0",
+          "ℹ pass 30",
+          "ℹ fail 0",
+          "ℹ cancelled 0",
+          "ℹ skipped 0",
+          "ℹ todo 0",
+          "ℹ duration_ms 272.090506"
+        ]
+      },
+      "broad_command": [
+        "node",
+        "--test",
+        "--test-reporter=spec",
+        "tests/action-turn-contracts.test.ts",
+        "tests/assassination.test.ts",
+        "tests/bluetooth-disconnect.test.ts",
+        "tests/bluetooth-host-room.test.ts",
+        "tests/bluetooth-private-contracts.test.ts",
+        "tests/bluetooth-protocol.test.ts",
+        "tests/bomb-target-boundaries.test.ts",
+        "tests/check-end-network.test.ts",
+        "tests/confirmed-runtime.test.ts",
+        "tests/cross-rule-contracts.test.ts",
+        "tests/current-control.test.ts",
+        "tests/dark-identity.test.ts",
+        "tests/design-gap-runtime.test.ts",
+        "tests/destruction-batch.test.ts",
+        "tests/exception-contracts.test.ts",
+        "tests/flight-turn-boundaries.test.ts",
+        "tests/flow-contracts.test.ts",
+        "tests/game-modes.test.ts",
+        "tests/ghost-objects.test.ts",
+        "tests/hero-child-boundaries.test.ts",
+        "tests/hero-cross-settlement.test.ts",
+        "tests/hero-descent-atom.test.ts",
+        "tests/hero-descent-boundaries.test.ts",
+        "tests/hero-forms.test.ts",
+        "tests/hero-transfer-r5.test.ts",
+        "tests/movement.test.ts",
+        "tests/mutation-rarity.test.ts",
+        "tests/mutation.test.ts",
+        "tests/proposal-review.test.ts",
+        "tests/public-target-contracts.test.ts",
+        "tests/remote-room.test.ts",
+        "tests/rewind-action-contracts.test.ts",
+        "tests/river-space.test.ts",
+        "tests/scoring-mechanism.test.ts",
+        "tests/scoring-mode-bridge.test.ts",
+        "tests/scoring-policy-adapter.test.ts",
+        "tests/setup-rps.test.ts",
+        "tests/snapshot-resource-contracts.test.ts",
+        "tests/time-line-contracts.test.ts",
+        "tests/warrior.test.ts"
       ],
-      "exclusion_reason": "UI/Android assets and visual surface unchanged; this bounded engine patch runs relevant40 tests, not a claim of npm test full UI/APK suite"
+      "broad_summary": [
+        "✔ WARRIOR-06 普通防御被消耗只移除壁垒，不会误删棋子上的骑兵效果 (1.568227ms)",
+        "ℹ tests 529",
+        "ℹ suites 0",
+        "ℹ pass 529",
+        "ℹ fail 0",
+        "ℹ cancelled 0",
+        "ℹ skipped 0",
+        "ℹ todo 0",
+        "ℹ duration_ms 17179.803275"
+      ],
+      "added_cases": 10,
+      "component_test_commands_this_step": 3,
+      "original64": "UNRUN",
+      "original12_executed": 0,
+      "focused_after_patch_argv": [
+        "node",
+        "--test",
+        "--test-reporter=spec",
+        "tests/mutation.test.ts",
+        "tests/bomb-target-boundaries.test.ts"
+      ],
+      "before_patch_argv": [
+        "node",
+        "--test",
+        "--test-reporter=spec",
+        "tests/mutation.test.ts"
+      ],
+      "broad_pass": 529,
+      "broad_fail": 0,
+      "broad_files": 40,
+      "broad_duration_ms": 17179.803275,
+      "git_diff_check": "PASS",
+      "manual_routes_and_legality_crosscheck": "Manual completion squares checked using existing getLegalMoves on a mover-turn copy; separate isGeneralInCheck query on defender state. Both kings stay in their palaces, with a public file blocker. Original state deep-equal after public queries.",
+      "before_patch_failures": "all ten new queries disagree with established legal completion routes on fixed PR8; existing12 mutation tests pass",
+      "evidence_level": "V4 actual component/regression runs; V2 source; no independent reviewer",
+      "excluded_UI_APK_tests": "same four unaffected UI/Android test files excluded as prior bomb round; not a full npm test/build/APK result",
+      "remote_CI": "not inspected or claimed; no manual workflow dispatch"
     },
-    "half_chaos_r40_received": {
-      "source_snapshot": "29c76e03912bca50130cc0f04be43461108a31ba",
-      "path": "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
-      "git_blob_sha": "2666389826e1a72d374261ad792a524373f56794",
-      "read_scope": "full evidence precheck; latest half_chaos CURRENT_STATE status/next/closure metadata at publication parent only, not whole working corpus",
-      "disposition": "已采用B3拒绝不变量及后续B4正向窗口作为自然验证要求；本次组件fixture只是原语义的局部回归，不能冒充原MA-DS04自然前缀或闭合证据。r40当前缺独立负例/客户端渠道保持。"
+    "integrity": {
+      "parent": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "tree": "c9a219337af7eb76301ef2c1ee979158800819cf",
+      "changed_paths": [
+        "src/rules.ts",
+        "tests/mutation.test.ts"
+      ],
+      "other_524_blobs_unchanged": true,
+      "bomb_patch_blobs_preserved": true,
+      "default_and_research_gates_preserved": true,
+      "removed_paths": 0,
+      "local_116_file_mirror_scope": "relative to published ea3b35c only rules.ts/mutation.test.ts changed; other114 dependencies unchanged",
+      "remote_code_readback_matches_tested_bytes": true
     },
-    "remaining": [
-      "SLICE-01合法半混乱三tuple准入仍未实施，featuresReady=false",
-      "原12回放执行0，64全UNRUN，MA-DS04自然B3/B4和精确观察证据未取",
-      "沙漏完整安全、铁马马腿/路径完整结果、SLICE-03观察仍未实施",
-      "产品客户端/真实传输/同ID载荷冲突未验",
-      "PR8草稿未合并，PR4—7原叠加链保持"
-    ]
+    "protection": {
+      "original_bomb_patch_and_PR8": "preserved at ea3b35c",
+      "main_game_branch": "not modified",
+      "half_chaos_original_sources": "not written",
+      "mode_and_research_gates": "unchanged",
+      "original64": "UNRUN",
+      "original12_executed": 0
+    },
+    "limitation_audit": {
+      "audit_trigger": "shared threat-query source correction and persistent handoff",
+      "risk_level": "high shared semantics; bounded reversible child branch",
+      "known_facts": "wrong endpoint pair traversed another leg; new10 component examples all red on parent and green after two-formula fix;529 related checks pass",
+      "user_statement": "进行下一步",
+      "claim_register": [
+        {
+          "type": "document_fact",
+          "claim": "shared M01 requires a completable route through the royal leg",
+          "source": "M01 full current entry + game.pathPiecesForSpecialMove",
+          "grade": "V2"
+        },
+        {
+          "type": "ai_inference",
+          "claim": "manual four-direction and edge coordinates distinguish old/wanted query",
+          "source": "10 declared synthetic cases",
+          "grade": "V1 then V4 actual test"
+        }
+      ],
+      "assumptions": "Existing movement/landing guards remain authoritative within scoped synthetic states; no new full-search guarantee",
+      "unknowns": [
+        "full natural PD03/PD-S12 prefix execution",
+        "full royal-response search/independent terminal",
+        "all hero/immune/defense-return interactions beyond existing regression"
+      ],
+      "competing_explanations": [
+        "Old MUT10 passes both formulas because all endpoints are empty, so it alone cannot reveal the bug",
+        "a synthetic route/threat regression is not a lawful full initialized mode replay"
+      ],
+      "falsification_conditions": [
+        "new cases fail mover legality before threat assertion",
+        "PR source/old bomb hashes drift",
+        "new contradictory confirmed rule or shared legality branch"
+      ],
+      "verification_status": "completed bounded geometry repair; partial overall mode/legality coverage",
+      "action_boundary": [
+        "read-only source/guard review",
+        "two endpoint-formula corrections in src/rules.ts",
+        "10 public component regressions in tests/mutation.test.ts",
+        "related existing 40-file local regression and child draft branch publication",
+        "main incremental writeback"
+      ],
+      "failure_conditions": [
+        "product gate/hook/other-line edits",
+        "treating10 components as original64 PASS",
+        "calling public threat query a complete safety solver"
+      ],
+      "residual_risk": "The unchanged threat solver still has broader source/search/closure dependencies; limited PASS must not be promoted",
+      "next_validation_action": "source review and concrete safe-plan design for hourglass closure; natural cases remain with source-line readiness"
+    }
+  },
+  "previous_implementation_records": [
+    {
+      "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
+      "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
+      "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+      "main_source_commit": "59e2ad624f6195a5c10ee46f918f7f9d8b0cec99",
+      "full_record": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation",
+      "note": "Immutable59e2ad6 record preserves exact bomb authorization, commands, original519 component results and source identities; not reinterpreted as a natural replay."
+    }
+  ],
+  "collaboration_adoption_current": {
+    "source_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+    "index": "collaboration/CURRENT.json",
+    "revision": "2026-10-21.v0.14",
+    "body_git_blob": "2f922f996c74eff67f4e68baf1ea2c639fa68ff6",
+    "actual_read": "Complete v0.13→v0.14 diff; current SOURCE_ACTIVATION and MAINTENANCE_LOOP complete; unchanged authorization/baseline/limitation/completion/handoff modules inherited from actual v0.13 reads this task",
+    "adoption_scope": "current facts/versions and maintenance exit in main; not formal release or other-account adoption",
+    "actual_application": "source refs + exact runtime bytes fresh; old14b/bomb519 retained with original scope; leg529 is current tested descendant; no repeated reminders/deletion/automation"
   }
 }

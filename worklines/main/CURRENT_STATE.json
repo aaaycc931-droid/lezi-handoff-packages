@@ -1,11 +1,31 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "r38_first_bomb_patch_implemented_related_regressions_passed_unmerged",
-  "resume_date_local": "2026-10-20",
+  "status": "r38_bomb_and_leg_geometry_patches_implemented_529_related_regressions_passed_unmerged",
+  "resume_date_local": "2026-10-21",
   "timezone": "Asia/Shanghai",
-  "base_commit": "2e02a863358827d32f767c3e43fc676246c302ac",
-  "user_authorization": "用户2026-10-20T23:12:32+08:00明确“我同意进行”，指向此前首项投弹受将共用引擎修复、独立分支、相关回归及回传；不是新玩法批准，也不扩大到其他切片。",
+  "base_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+  "user_authorization": {
+    "user_quote": "进行下一步",
+    "date_local": "2026-10-21",
+    "basis": "current next-step instruction in the previously explained main repair sequence: bomb, then iron-steed leg",
+    "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
+    "earlier_scope_preserved": "2026-10-20只实施投弹的限定属于上一轮；本轮是新的下一项推进，不把上一轮授权扩大为全部切片批准。",
+    "allowed_executed": [
+      "read-only source/guard review",
+      "two endpoint-formula corrections in src/rules.ts",
+      "10 public component regressions in tests/mutation.test.ts",
+      "related existing 40-file local regression and child draft branch publication",
+      "main incremental writeback"
+    ],
+    "not_included": [
+      "whole king-safety/search/terminal rewrite",
+      "hourglass/route-closure architecture",
+      "mode research admission/hook/capability changes",
+      "original half-chaos natural12/64 acceptance",
+      "PR merge/APK/deployment/scoring thaw/NET resume"
+    ]
+  },
   "current_adjudication_record": "ADJUDICATION.json",
   "adjudication_version": "1.62",
   "design_stage": "S1.44",
@@ -16,7 +36,7 @@
   "project_work_agreement": "PROJECT_WORK_AGREEMENT.md",
   "collaboration": {
     "current_index": "../../collaboration/CURRENT.json",
-    "actually_read_revision": "2026-10-17.v0.13",
+    "actually_read_revision": "2026-10-21.v0.14",
     "formal_baseline": "1.8.0",
     "gate": "L3_current_user_display_confirmation_source_contract",
     "actual_modules": "SOURCE_MAP.json current_collaboration_read"
@@ -35,8 +55,8 @@
   },
   "worklines": {
     "main": {
-      "next": "NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE",
-      "status": "bounded_bomb_patch_complete_next_leg_case_and_scope_review"
+      "next": "NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN",
+      "status": "leg_geometry_complete_next_hourglass_closure_plan"
     },
     "standard": {
       "next": "SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION",
@@ -180,26 +200,28 @@
         "other_workline_adoption": "unknown_no_receiver_receipt_written"
       },
       "latest_engineering_implementation_available": {
-        "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-        "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+        "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+        "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
         "owner": "main shared engine",
         "engine_repository": "aaaycc931-droid/jieqi-engine",
-        "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-        "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
-        "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-        "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
-        "pull_request_number": 8,
+        "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+        "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+        "engine_branch": "codex/r38-iron-steed-leg-20261021",
+        "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+        "pull_request_number": 9,
+        "upstream_bomb_PR": 8,
+        "business_code_formulas_changed": 2,
         "files_changed": 2,
-        "business_code_lines_added": 1,
-        "focused_tests_passed": 8,
-        "related_tests_passed": 519,
+        "new_component_cases": 10,
+        "focused_checks_passed": 30,
+        "related_tests_passed": 529,
         "related_test_files": 40,
         "original64": "UNRUN",
         "original12_executed": 0,
+        "other_source_line_adoption": "unknown",
         "product_gate_changed": false,
         "scoring_frozen": true,
-        "NET": "paused",
-        "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
+        "NET": "paused"
       },
       "latest_source_status_observed": {
         "source_commit": "2e02a863358827d32f767c3e43fc676246c302ac",
@@ -290,29 +312,30 @@
     "r38_source_snapshot": "9e32933534858a54f7b5877130d36aed694f2806",
     "r38_other_line_paths_untouched": true,
     "engine_branch_published": true,
-    "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-    "engine_PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
+    "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "engine_PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
     "game_main_unchanged": true,
     "other_workline_paths_untouched": true,
-    "publication_parent": "2e02a863358827d32f767c3e43fc676246c302ac"
+    "publication_parent": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+    "preserved_concurrent_collaboration_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561"
   },
   "verification": {
     "record_and_candidate_source_equivalence_checked": true,
     "document_and_pointer_checks": "VALIDATION.json",
     "new_rule_confirmations": 0,
     "new_game_code_changes": 1,
-    "new_engine_tests": 4,
-    "runtime_acceptance": "component/regression scope only",
-    "implementation": "R38-SAFE-BOMB only, source branch PR8",
+    "new_engine_tests": 10,
+    "runtime_acceptance": "bounded component/regression conditions only",
+    "implementation": "bomb + iron-steed leg endpoint geometry on unmerged PR8/PR9",
     "old_evidence": "inherited original scope only; not rerun",
     "received_other_line_confirmed_designs": 0,
     "shared_rule_confirmation_from_mode_returns": 0,
     "current_phase_candidate_count": 0,
-    "current_phase_engine_runs": 4,
+    "current_phase_engine_runs": 3,
     "r38_source_review": "completed_V2_scoped",
     "r38_implementation": false,
     "current_phase_natural_replay_runs": 0,
-    "component_regressions_passed": 519,
+    "component_regressions_passed": 529,
     "main_gameplay_adjudication_unchanged": true
   },
   "scoring": {
@@ -326,13 +349,12 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "基于已发布ea3b35c后继源恢复铁马四方向马腿与合法完步落点的最小差异案例，核定下一补丁与测试范围；本次同意只实施投弹，未自动执行下一修复。",
+  "next_action": "恢复沙漏完整六步/已承诺后续的隔离计划与一次提交边界，核原authority消灭批次WeakMap、随机/死亡资源/观察副作用，先形成具体可验证实现设计；不通过重复执行器预检再提交，不放开研究准入，不把未知分支当安全。",
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
     "gate": "L3",
-    "status": "completed_bounded_component_repair_partial_overall",
-    "evidence": "V4 component run results only; V2 source; no independent review",
-    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
+    "status": "completed_current_bounded_repair_partial_whole_mode",
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/limitation_audit"
   },
   "last_confirmed_decision": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
   "confirmed_at_local": "2026-10-17T20:56:40+08:00",
@@ -344,38 +366,16 @@
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
   "current_phase": {
-    "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-    "date_local": "2026-10-20",
-    "authorization": {
-      "kind": "explicit_current_user_approval_of_preceding_bounded_implementation_and_tests",
-      "at_local": "2026-10-20T23:12:32+08:00",
-      "user_quote": "我同意进行",
-      "preceding_scope": [
-        "主线负责共用引擎投弹受将修复",
-        "在独立开发分支补上受将检查",
-        "验证拒绝不扣弹药/名额、不生成污染、不刷新截止，合法新窗口仍可投弹",
-        "运行相关回归并增量写回结果"
-      ],
-      "applies_to": [
-        "R38-SAFE-BOMB source patch",
-        "tests/bomb-target-boundaries.test.ts focused regression plus related existing tests",
-        "isolated development branch publication and draft review",
-        "main handoff/authorization state persistence"
-      ],
-      "not_granted": [
-        "other safety patches or research admission/observer implementation",
-        "half-chaos natural12/64 acceptance runs",
-        "mode/product gate opening",
-        "PR merge, main game branch modification, APK/deployment, scoring thaw, NET resume"
-      ]
-    },
+    "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+    "user_instruction": "进行下一步",
+    "date_local": "2026-10-21",
+    "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
     "gameplay_policy_delta": 0,
-    "game_code_files_changed": 1,
+    "business_code_files_changed": 1,
     "test_files_changed": 1,
-    "engine_test_commands": 4,
-    "component_tests_passed": 519,
-    "natural_replays_executed": 0,
-    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
+    "engine_test_commands": 3,
+    "component_tests_passed": 529,
+    "natural_replays_executed": 0
   },
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
@@ -780,16 +780,18 @@
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "status": "PARTIAL_BOMB_AND_LEG_GEOMETRY_IMPLEMENTED_HOURGLASS_AND_PATH_PENDING",
       "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
-      "disposition": "已核原D01明确确认及四项源差异，拆为bomb/马腿/沙漏/路径四个有限补丁；完整闭合/终局/层级未决保留，无代码/运行授权。",
+      "disposition": "已实施投弹受将与铁马终点坐标纠错，组件回归529通过；沙漏/路径闭合、安全搜索/终局、原自然12和64验收仍待，不扩大准入。",
       "previous_disposition": {
         "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
         "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
         "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
       },
       "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
-      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
+      "previous_status_before_bounded_repairs": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "latest_implementation": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
     }
   ],
   "previous_phase_before_r38": {
@@ -824,28 +826,30 @@
     "original12_executed": 0,
     "other_workline_adoption": "unknown_no_receiver_receipt_written",
     "latest_implementation": {
-      "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-      "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+      "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+      "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
       "owner": "main shared engine",
       "engine_repository": "aaaycc931-droid/jieqi-engine",
-      "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
-      "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
-      "pull_request_number": 8,
+      "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "engine_branch": "codex/r38-iron-steed-leg-20261021",
+      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+      "pull_request_number": 9,
+      "upstream_bomb_PR": 8,
+      "business_code_formulas_changed": 2,
       "files_changed": 2,
-      "business_code_lines_added": 1,
-      "focused_tests_passed": 8,
-      "related_tests_passed": 519,
+      "new_component_cases": 10,
+      "focused_checks_passed": 30,
+      "related_tests_passed": 529,
       "related_test_files": 40,
       "original64": "UNRUN",
       "original12_executed": 0,
+      "other_source_line_adoption": "unknown",
       "product_gate_changed": false,
       "scoring_frozen": true,
-      "NET": "paused",
-      "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
+      "NET": "paused"
     },
-    "authorization_scope": "R38-SAFE-BOMB only; local component/regression tests only; latest_implementation and agreement addendum control"
+    "authorization_scope": "bomb prior approval + current next-step iron-steed geometry repair and necessary local tests; no full engineering/mode authorization"
   },
   "previous_phase_before_bomb_implementation": {
     "id": "MAIN-HC-R38-ENGINEERING-REVIEW-20261020",
@@ -858,6 +862,64 @@
     "report": "worklines/main/R38_ENGINEERING_REVIEW.json"
   },
   "latest_implementation": {
+    "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+    "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+    "owner": "main shared engine",
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "engine_branch": "codex/r38-iron-steed-leg-20261021",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+    "pull_request_number": 9,
+    "upstream_bomb_PR": 8,
+    "business_code_formulas_changed": 2,
+    "files_changed": 2,
+    "new_component_cases": 10,
+    "focused_checks_passed": 30,
+    "related_tests_passed": 529,
+    "related_test_files": 40,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "other_source_line_adoption": "unknown",
+    "product_gate_changed": false,
+    "scoring_frozen": true,
+    "NET": "paused"
+  },
+  "previous_phase_before_leg": {
+    "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
+    "date_local": "2026-10-20",
+    "authorization": {
+      "kind": "explicit_current_user_approval_of_preceding_bounded_implementation_and_tests",
+      "at_local": "2026-10-20T23:12:32+08:00",
+      "user_quote": "我同意进行",
+      "preceding_scope": [
+        "主线负责共用引擎投弹受将修复",
+        "在独立开发分支补上受将检查",
+        "验证拒绝不扣弹药/名额、不生成污染、不刷新截止，合法新窗口仍可投弹",
+        "运行相关回归并增量写回结果"
+      ],
+      "applies_to": [
+        "R38-SAFE-BOMB source patch",
+        "tests/bomb-target-boundaries.test.ts focused regression plus related existing tests",
+        "isolated development branch publication and draft review",
+        "main handoff/authorization state persistence"
+      ],
+      "not_granted": [
+        "other safety patches or research admission/observer implementation",
+        "half-chaos natural12/64 acceptance runs",
+        "mode/product gate opening",
+        "PR merge, main game branch modification, APK/deployment, scoring thaw, NET resume"
+      ]
+    },
+    "gameplay_policy_delta": 0,
+    "game_code_files_changed": 1,
+    "test_files_changed": 1,
+    "engine_test_commands": 4,
+    "component_tests_passed": 519,
+    "natural_replays_executed": 0,
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
+  },
+  "previous_implementation_summary": {
     "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
     "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
     "owner": "main shared engine",

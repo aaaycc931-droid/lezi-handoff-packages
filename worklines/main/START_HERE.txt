@@ -1,29 +1,11 @@
-《乐子象棋》主线当前优先入口｜2026-10-20首项共用引擎补丁完成
+《乐子象棋》主线当前入口｜2026-10-21铁马马腿有限修复完成
 
-用户23:12明确同意前述首项修复及相关测试，已实施R38-SAFE-BOMB。源码仓库jieqi-engine，独立分支codex/hc-r38-bounded-repairs-20261020，提交ea3b35cdb38bd6c65ff0142d341d765c36a7382a，草稿PR8：https://github.com/aaaycc931-droid/jieqi-engine/pull/8（未合并）。业务代码仅新增一行投弹受将守卫；错误优先级、超时、费用/名额/污染/时钟与旧门禁保持。
-先读CURRENT_STATE.json → R38_ENGINEERING_REVIEW.json#/latest_implementation → RETURN_TO_MAIN.json；授权具体范围见PROJECT_WORK_AGREEMENT.md末节。新测试在14b上出现两项预期失败，补丁后投弹8项及40文件519相关回归全部通过。为组件/合成房间测试，原半混乱MA-DS04自然开局/12回放与64验收仍未运行；产品featuresReady=false，评分冻结、NET暂停。
-半混乱r40原证据预检已读，其自然B3/B4与缺刺激要求保留；源线会话自身已收束的最新状态仅元数据获知，不由主线恢复或代填新代码采用。UI/普通/半混乱全部原文件及素材保留。
-下一NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE：基于新补丁后继源恢复铁马马腿四方向与合法完步的最小差异案例，明确下一项代码/测试范围；本次同意没有自动执行下一补丁。原H15毕业跨越未决继续保留，55玩法确认不变。
+本轮“进行下一步”按先投弹、再铁马的已说明顺序推进；恢复来源/10组差异后实施M01两处终点公式纠错，既有落点资格循环不改。独立分支codex/r38-iron-steed-leg-20261021，提交74edf370acf76a377b3f74e69f252d0b7de2169d，[草稿PR9](https://github.com/aaaycc931-droid/jieqi-engine/pull/9)继承PR8的ea3b35c；两PR均未合并。
 
-以下是首项实施前的r38审查接续历史；“代码尚未实施/未获授权”只描述当时阶段，不覆盖上述明确授权及真实结果：
+先读CURRENT_STATE.json → R38_ENGINEERING_REVIEW.json#/latest_implementation → RETURN_TO_MAIN.json；具体作用域见PROJECT_WORK_AGREEMENT.md末节。10项新差异原代码全失败，修后铁马/投弹30项针对性及40文件529项相关回归通过。原投弹PR8的完整记录留59e2ad6固定提交，不因后继修复反复重建；529是当前合成组件/相关回归，原半混乱12自然回放执行0、64仍UNRUN。全威胁/应将/终局并未验收。
 
-《乐子象棋》主线当前优先入口｜2026-10-20 r38工程交接处理
+并发协作工作稿2026-10-21.v0.14已实际读取完整版本差分、SOURCE_ACTIVATION及MAINTENANCE_LOOP并在本线限定采用，正式基线仍1.8.0。新协作正文及索引、各子线原文件/资产和主线55玩法确认保留；接收新代码未知，不代填。
 
-已实际接收半混乱 HC-RETURN-20261020-r38，来源 f1402a9e687e00902222ca6f3e666774af2edca1；核对快照 9e32933534858a54f7b5877130d36aed694f2806。先读 CURRENT_STATE.json → R38_ENGINEERING_REVIEW.json → READ_RECEIPTS.json#/latest_by_source/half_chaos/latest_engineering_handoff_r38 → SHARED_COORDINATION.json#/half_chaos_engineering_r38，通用协作仍从 ../../collaboration/CURRENT.json 解析。
-源码PR4→5→6→7依赖与固定14b基准已核；后续隔离实现分支指定方案codex/hc-r38-bounded-repairs-20261020，尚未创建。SLICE-01精确三tuple研究准入、SLICE-02四项安全补丁分拆、SLICE-03闭合观察/通道边界已采用为主线工程计划，实际代码/运行/能力发行未获本次源核指令授权、均未实施；不得直接merge或放开featuresReady。
-下一 NEXT-MAIN-HC-R38-BOUNDED-IMPLEMENTATION：首个具体补丁R38-SAFE-BOMB，后续依完整计划与明确实施/执行范围推进。不重批原3tuple/12验证范围或原D01规则。64全部UNRUN、12已执行0；评分冻结、NET暂停。
-只改主线与根协调入口，半混乱/普通/UI原文件及素材保留；其他对话是否读取本报告未知，不代填回执。原主线55项确认和H15/H06毕业跨越未决保留，下一旧玩法任务只是按用户本轮优先级后移。
+下一NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN：核沙漏六步/后续闭合、原authority批次WeakMap、RNG/资源/观察隔离和一次提交，先完成具体设计；不得预检重跑旧执行器或把未知当安全。H15毕业跨越等原未决保留。产品featuresReady=false，评分冻结、NET暂停。
 
-以下为2026-10-17上一轮收束的历史接续正文，其r30/旧待批元数据不覆盖本次实际接收和各线最新入口：
-
-《乐子象棋》主线固定入口
-
-1. 本轮项目收束完成。主线1.62（S1.44），55项游戏确认保持。先读最新HEAD、../../START_HERE.md、根CURRENT_HANDOFF.json、本线CURRENT_STATE.json、ROUND_CLOSEOUT.md及PROJECT_WORK_AGREEMENT.md；通用协作从../../collaboration/CURRENT.json解析。保护当前对话未回传成果，不从旧文件名重复工作。
-2. H15/H06毕业跨越来源核对已完成，详见REPETITION_PUBLIC_FIELDMAP.json#/H15_H06_source_review/graduation_crossing_review。条件时间线可跨5/6→6/6；局部几何人工推演，不是完整自然前缀或引擎证明。9.14快照恢复与后续“不得重新获得毕业奖励”的精确范围仍未定，不能用H11/普通复活或1.57失败规则直接决定。
-3. 下一断点NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL：恢复55项确认，以最小存活已毕业分支明确同次训练再达阈值与奖励撤销处理；先查原明确确认，确需新选择再呈具体提案。当前无待批主线候选，继续和收束均不代表新规则批准。
-4. 原1.61当前存活未失败未毕业、首次启动前快照恢复无训练/未使用机会的确认保持；原1.57毕业前死亡失败分支不重开训练、机会已用的确认保持；旧吞技能推荐仍撤下。
-5. 普通待批SHARED-H02-M04-PATH-DRAGON-SCALE-CONTINUATION完整候选已读但未批准。三模式M04现行说明统一“战车隔一枚地面棋的【进攻】”，只改文案，历史引文/ID和H16技能名不变。标准来源复核是限定报告，不是本轮运行通过。
-6. UI已批准B8-v1并收束该会话，B9永久拒绝权限/前往系统设置图未创建；主线元数据接收，无视觉/源层/运行验收。半混乱并发完成r30范围方案并收束，下一项NEXT-HC-ADMISSION-CONTRACT-REFINEMENT仅文档；64规格UNRUN、可运行回放0；五包文档、WP01—03共享请求已接收但未批准准入/实现/观察hook/运行。
-7. 真实回执范围见READ_RECEIPTS/SHARED_COORDINATION：普通1.61只有元数据获知，较新H15完整政策未采用；最新完整限定采用仍1.56。半混乱r30真实回执已限定采用1.61启动前恢复确认，未代表整份裁决或运行验收。本轮收束不代填回执、不改对方会话状态、不发送消息或自动恢复。
-
-评分冻结、NET暂停。设计、文档、实现、运行、发布、接收和采用分开；无游戏代码、引擎运行、APK或部署。
+较早阶段入口按Git历史查回；有效确认以ADJUDICATION.json与各原确认正文为准，本入口不重复嵌入已结束阶段状态。

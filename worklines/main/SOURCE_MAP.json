@@ -288,7 +288,7 @@
     }
   ],
   "current_record_version": "1.62",
-  "latest_maintenance_base_commit": "2e02a863358827d32f767c3e43fc676246c302ac",
+  "latest_maintenance_base_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
@@ -593,26 +593,11 @@
     }
   },
   "current_collaboration_read": {
-    "commit": "9e32933534858a54f7b5877130d36aed694f2806",
+    "commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
     "path": "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
-    "working_revision": "2026-10-17.v0.13",
-    "git_blob_sha": "54e800ebd02a83ded24a4c076c759c8193767fd5",
-    "read_scope": [
-      "INTEGRATED_START",
-      "TASK_ROUTES",
-      "PART-3_PROTOCOL",
-      "PROJECT_WORK_AGREEMENT",
-      "GITHUB_HANDOFF_WORKFLOW",
-      "AUTHORIZATION_AND_ADOPTION",
-      "BASELINE_DELTA_CHECK",
-      "MANDATORY_PRECHECK",
-      "TEMPORAL_OPPORTUNITY_CHECK",
-      "AI_LIMITATION_CONTROL",
-      "PART-6_CURRENT_STATE",
-      "CONFLICT_RESOLUTION",
-      "VERSION_POLICY",
-      "RELEASE_CHECK"
-    ],
+    "working_revision": "2026-10-21.v0.14",
+    "git_blob_sha": "2f922f996c74eff67f4e68baf1ea2c639fa68ff6",
+    "read_scope": "Complete v0.13→v0.14 diff; current SOURCE_ACTIVATION and MAINTENANCE_LOOP complete; unchanged authorization/baseline/limitation/completion/handoff modules inherited from actual v0.13 reads this task",
     "formal_baseline": "1.8.0"
   },
   "latest_ui_metadata_read": {
@@ -1012,40 +997,54 @@
     ]
   },
   "latest_bounded_implementation_source": {
-    "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-    "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+    "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+    "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
     "owner": "main shared engine",
     "engine_repository": "aaaycc931-droid/jieqi-engine",
-    "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-    "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
-    "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
-    "pull_request_number": 8,
+    "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "engine_branch": "codex/r38-iron-steed-leg-20261021",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+    "pull_request_number": 9,
+    "upstream_bomb_PR": 8,
+    "business_code_formulas_changed": 2,
     "files_changed": 2,
-    "business_code_lines_added": 1,
-    "focused_tests_passed": 8,
-    "related_tests_passed": 519,
+    "new_component_cases": 10,
+    "focused_checks_passed": 30,
+    "related_tests_passed": 529,
     "related_test_files": 40,
     "original64": "UNRUN",
     "original12_executed": 0,
+    "other_source_line_adoption": "unknown",
     "product_gate_changed": false,
     "scoring_frozen": true,
     "NET": "paused",
-    "source_line_receiver_adoption": "unknown_until_own_actual_receipt",
     "authorization": {
-      "at_local": "2026-10-20T23:12:32+08:00",
-      "user_quote": "我同意进行",
-      "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
-      "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/authorization",
-      "other_slices_or_natural_replays_authorized": false
+      "user_quote": "进行下一步",
+      "date_local": "2026-10-21",
+      "basis": "current next-step instruction in the previously explained main repair sequence: bomb, then iron-steed leg",
+      "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
+      "earlier_scope_preserved": "2026-10-20只实施投弹的限定属于上一轮；本轮是新的下一项推进，不把上一轮授权扩大为全部切片批准。",
+      "allowed_executed": [
+        "read-only source/guard review",
+        "two endpoint-formula corrections in src/rules.ts",
+        "10 public component regressions in tests/mutation.test.ts",
+        "related existing 40-file local regression and child draft branch publication",
+        "main incremental writeback"
+      ],
+      "not_included": [
+        "whole king-safety/search/terminal rewrite",
+        "hourglass/route-closure architecture",
+        "mode research admission/hook/capability changes",
+        "original half-chaos natural12/64 acceptance",
+        "PR merge/APK/deployment/scoring thaw/NET resume"
+      ]
     },
-    "old_source_review": "R38_ENGINEERING_REVIEW.json#/source_baseline",
-    "new_verified_source": "R38_ENGINEERING_REVIEW.json#/latest_implementation/source_integrity",
-    "runtime_evidence": "R38_ENGINEERING_REVIEW.json#/latest_implementation/execution",
-    "source_r40_report": {
-      "path": "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
-      "git_blob_sha": "2666389826e1a72d374261ad792a524373f56794",
-      "read_snapshot": "29c76e03912bca50130cc0f04be43461108a31ba"
+    "exact_code_and_tests": "R38_ENGINEERING_REVIEW.json#/latest_implementation",
+    "source_M01": {
+      "path": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+      "git_blob_sha": "f1355ee129febb3a39caec4fefca73c9687bae9b",
+      "scope": "M01 complete current entry; other policies not read/adopted"
     }
   }
 }

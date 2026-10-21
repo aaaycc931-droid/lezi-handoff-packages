@@ -153,7 +153,7 @@
     "external_original_shared_received": 0
   },
   "other_workline_receipts_written": false,
-  "latest_coordination_base_commit": "2e02a863358827d32f767c3e43fc676246c302ac",
+  "latest_coordination_base_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
   "latest_by_source": {
     "half_chaos": {
       "source_commit": "7c2f6f34bd8bd2176a5ecb4987cc977c530e9df7",
@@ -927,6 +927,30 @@
           "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
         },
         "source_line_new_code_adoption": "unknown"
+      },
+      "latest_main_leg_response": {
+        "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+        "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+        "owner": "main shared engine",
+        "engine_repository": "aaaycc931-droid/jieqi-engine",
+        "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+        "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+        "engine_branch": "codex/r38-iron-steed-leg-20261021",
+        "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+        "pull_request_number": 9,
+        "upstream_bomb_PR": 8,
+        "business_code_formulas_changed": 2,
+        "files_changed": 2,
+        "new_component_cases": 10,
+        "focused_checks_passed": 30,
+        "related_tests_passed": 529,
+        "related_test_files": 40,
+        "original64": "UNRUN",
+        "original12_executed": 0,
+        "other_source_line_adoption": "unknown",
+        "product_gate_changed": false,
+        "scoring_frozen": true,
+        "NET": "paused"
       }
     },
     "standard": {
@@ -1732,16 +1756,18 @@
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "status": "PARTIAL_BOMB_AND_LEG_GEOMETRY_IMPLEMENTED_HOURGLASS_AND_PATH_PENDING",
       "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
-      "disposition": "已核原D01明确确认及四项源差异，拆为bomb/马腿/沙漏/路径四个有限补丁；完整闭合/终局/层级未决保留，无代码/运行授权。",
+      "disposition": "已实施投弹受将与铁马终点坐标纠错，组件回归529通过；沙漏/路径闭合、安全搜索/终局、原自然12和64验收仍待，不扩大准入。",
       "previous_disposition": {
         "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
         "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
         "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
       },
       "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
-      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
+      "previous_status_before_bounded_repairs": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "latest_implementation": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
     }
   ],
   "current_phase_source_reads_r38": {
@@ -1767,13 +1793,6 @@
     "main_scope": "current state/entry/work agreement; previous closeout/receipts/coordination/source/return/pending/validation current fields and necessary scopes only; old historical narratives not fully audited",
     "source_read_reference": "worklines/main/R38_ENGINEERING_REVIEW.json#/read_scope"
   },
-  "current_phase_explicit_authorization": {
-    "at_local": "2026-10-20T23:12:32+08:00",
-    "user_quote": "我同意进行",
-    "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
-    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/authorization",
-    "other_slices_or_natural_replays_authorized": false
-  },
   "engine_source_readback": {
     "repository": "aaaycc931-droid/jieqi-engine",
     "commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
@@ -1792,5 +1811,84 @@
     ],
     "baseline": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
     "own_test_evidence": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/execution"
+  },
+  "current_phase_authorization": {
+    "user_quote": "进行下一步",
+    "date_local": "2026-10-21",
+    "basis": "current next-step instruction in the previously explained main repair sequence: bomb, then iron-steed leg",
+    "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
+    "earlier_scope_preserved": "2026-10-20只实施投弹的限定属于上一轮；本轮是新的下一项推进，不把上一轮授权扩大为全部切片批准。",
+    "allowed_executed": [
+      "read-only source/guard review",
+      "two endpoint-formula corrections in src/rules.ts",
+      "10 public component regressions in tests/mutation.test.ts",
+      "related existing 40-file local regression and child draft branch publication",
+      "main incremental writeback"
+    ],
+    "not_included": [
+      "whole king-safety/search/terminal rewrite",
+      "hourglass/route-closure architecture",
+      "mode research admission/hook/capability changes",
+      "original half-chaos natural12/64 acceptance",
+      "PR merge/APK/deployment/scoring thaw/NET resume"
+    ],
+    "actual_result": {
+      "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+      "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+      "owner": "main shared engine",
+      "engine_repository": "aaaycc931-droid/jieqi-engine",
+      "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "engine_branch": "codex/r38-iron-steed-leg-20261021",
+      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+      "pull_request_number": 9,
+      "upstream_bomb_PR": 8,
+      "business_code_formulas_changed": 2,
+      "files_changed": 2,
+      "new_component_cases": 10,
+      "focused_checks_passed": 30,
+      "related_tests_passed": 529,
+      "related_test_files": 40,
+      "original64": "UNRUN",
+      "original12_executed": 0,
+      "other_source_line_adoption": "unknown",
+      "product_gate_changed": false,
+      "scoring_frozen": true,
+      "NET": "paused"
+    }
+  },
+  "current_engine_readback": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "paths": [
+      {
+        "path": "src/rules.ts",
+        "git_blob_sha": "2aa4deb68cec2f9330eadd8f41097d7b1c615721",
+        "actual_read": "full published bytes equal tested local content"
+      },
+      {
+        "path": "tests/mutation.test.ts",
+        "git_blob_sha": "4eb8934044a2fed61b87e561babbbc6a972b82f0",
+        "actual_read": "full published bytes equal tested local content"
+      }
+    ],
+    "prior_bomb_preserved": true
+  },
+  "collaboration_v014_scoped_adoption": {
+    "source_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+    "index": "collaboration/CURRENT.json",
+    "revision": "2026-10-21.v0.14",
+    "body_git_blob": "2f922f996c74eff67f4e68baf1ea2c639fa68ff6",
+    "actual_read": "Complete v0.13→v0.14 diff; current SOURCE_ACTIVATION and MAINTENANCE_LOOP complete; unchanged authorization/baseline/limitation/completion/handoff modules inherited from actual v0.13 reads this task",
+    "adoption_scope": "current facts/versions and maintenance exit in main; not formal release or other-account adoption",
+    "actual_application": "source refs + exact runtime bytes fresh; old14b/bomb519 retained with original scope; leg529 is current tested descendant; no repeated reminders/deletion/automation"
+  },
+  "prior_explicit_bomb_authorization": {
+    "at_local": "2026-10-20T23:12:32+08:00",
+    "user_quote": "我同意进行",
+    "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
+    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/authorization",
+    "other_slices_or_natural_replays_authorized": false
   }
 }

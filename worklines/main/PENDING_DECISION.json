@@ -1,17 +1,17 @@
 {
   "schema": "lezi.main.decision_index.v2",
-  "status": "first_bomb_implementation_done_no_new_gameplay_candidate",
+  "status": "bomb_and_leg_geometry_implemented_no_new_gameplay_candidate",
   "last_confirmed": {
     "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "candidate_id": "DECISION-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
     "source": "ADJUDICATION.json#/project_specific_confirmations"
   },
   "next_work_item": {
-    "id": "NEXT-MAIN-R38-SAFE-LEG-BOUNDED-SCOPE",
-    "status": "NOT_STARTED_SOURCE_CASE_AND_EXACT_PATCH_SCOPE_REVIEW",
-    "action": "基于已发布ea3b35c后继源恢复铁马四方向马腿与合法完步落点的最小差异案例，核定下一补丁与测试范围；本次同意只实施投弹，未自动执行下一修复。",
-    "previous_first_patch": "R38-SAFE-BOMB completed on PR8",
+    "id": "NEXT-MAIN-R38-HOURGLASS-CLOSURE-PLAN",
+    "status": "NOT_STARTED_SOURCE_AND_CONCRETE_DESIGN_REVIEW",
+    "action": "恢复沙漏完整六步/已承诺后续的隔离计划与一次提交边界，核原authority消灭批次WeakMap、随机/死亡资源/观察副作用，先形成具体可验证实现设计；不通过重复执行器预检再提交，不放开研究准入，不把未知分支当安全。",
     "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+    "original12_execution": 0,
     "gameplay_policy_delta": 0,
     "is_new_user_gameplay_candidate": false
   },
@@ -265,9 +265,9 @@
   ],
   "round_closeout": "LEZI-PROJECT-ROUND-CLOSEOUT-20261017",
   "last_user_instruction": {
-    "quote": "我同意进行",
-    "at_local": "2026-10-20T23:12:32+08:00",
-    "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback"
+    "quote": "进行下一步",
+    "date_local": "2026-10-21",
+    "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。"
   },
   "shared_source_contract_review_queue": [
     {
@@ -307,16 +307,18 @@
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "status": "PARTIAL_BOMB_AND_LEG_GEOMETRY_IMPLEMENTED_HOURGLASS_AND_PATH_PENDING",
       "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
-      "disposition": "已核原D01明确确认及四项源差异，拆为bomb/马腿/沙漏/路径四个有限补丁；完整闭合/终局/层级未决保留，无代码/运行授权。",
+      "disposition": "已实施投弹受将与铁马终点坐标纠错，组件回归529通过；沙漏/路径闭合、安全搜索/终局、原自然12和64验收仍待，不扩大准入。",
       "previous_disposition": {
         "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
         "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
         "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
       },
       "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
-      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
+      "previous_status_before_bounded_repairs": "reviewed_bounded_scope_adopted_as_plan_no_code_or_run_authorization",
+      "latest_implementation": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
     }
   ],
   "deferred_gameplay_work_item": {
@@ -330,29 +332,31 @@
     "report": "worklines/main/R38_ENGINEERING_REVIEW.json",
     "status": "reviewed_plan_not_implementation_permission",
     "current_user_gameplay_candidate": null,
-    "engine_code_authorization": "R38-SAFE-BOMB only",
+    "engine_code_authorization": "bomb prior step + current next-step leg geometry only",
     "engine_run_authorization": "bounded component/regression tests only",
     "latest_implementation": {
-      "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-      "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+      "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
+      "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
       "owner": "main shared engine",
       "engine_repository": "aaaycc931-droid/jieqi-engine",
-      "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
-      "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
-      "pull_request_number": 8,
+      "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "engine_branch": "codex/r38-iron-steed-leg-20261021",
+      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
+      "pull_request_number": 9,
+      "upstream_bomb_PR": 8,
+      "business_code_formulas_changed": 2,
       "files_changed": 2,
-      "business_code_lines_added": 1,
-      "focused_tests_passed": 8,
-      "related_tests_passed": 519,
+      "new_component_cases": 10,
+      "focused_checks_passed": 30,
+      "related_tests_passed": 529,
       "related_test_files": 40,
       "original64": "UNRUN",
       "original12_executed": 0,
+      "other_source_line_adoption": "unknown",
       "product_gate_changed": false,
       "scoring_frozen": true,
-      "NET": "paused",
-      "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
+      "NET": "paused"
     }
   }
 }
