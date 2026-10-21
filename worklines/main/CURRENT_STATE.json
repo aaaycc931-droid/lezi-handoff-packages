@@ -1024,5 +1024,56 @@
     "gameplay_policy_delta": 0,
     "scoring_frozen": true,
     "NET": "paused"
+  },
+  "scoring_source_recovery": {
+    "id": "SCORING-SOURCE-ROUTING-REPAIR-20261021",
+    "date_local": "2026-10-21",
+    "base_commit": "61da8e81a29d78ab6ee864d19654d8fdd868befc",
+    "status": "source_recovered_navigation_repaired_no_new_score",
+    "report": "worklines/main/SCORING_SOURCE_RECOVERY.md",
+    "method_entry": "worklines/standard/rules/shared/07_DESIGN_SCORING.md",
+    "ledger_entry": "worklines/standard/rules/shared/08_SCORE_LEDGER.md",
+    "method_source": {
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/handoff/current/07_DESIGN_SCORING.md",
+      "git_blob_sha": "a1def9b7ab60626096a4bf18a01d318deb1f1c81",
+      "version": "v2.9-clean",
+      "read_scope": "complete_method"
+    },
+    "ledger_source": {
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/handoff/current/08_SCORE_LEDGER.md",
+      "git_blob_sha": "53f9a64721003a91702b0954b98f07559deb7cd4",
+      "version": "v2.9 / 2026-10-07-r3",
+      "read_scope": "header_frozen_result_table_result_notes_not_full_hero_reaudit"
+    },
+    "scale": {
+      "raw_max": 80,
+      "standard_max": 100,
+      "formula": "S = min(100, R * 1.25)",
+      "dimensions": [
+        25,
+        20,
+        15,
+        10,
+        10
+      ]
+    },
+    "original_source_missing": false,
+    "previous_short_reference_unresolvable": true,
+    "formal_scores_changed": false,
+    "temporary_ten_point_scores": "withdrawn_not_inputs_or_targets",
+    "shan_discussion_checkpoint": {
+      "status": "conversation_candidate_not_formal_game_rules",
+      "death_countdown_own_turns": 8,
+      "post_death_special_evasions": 3,
+      "post_death_checks_for_execution": 5,
+      "full_probability_and_sacrifice_tables_available": false,
+      "new_standard_score": null
+    },
+    "gameplay_policy_changes": 0,
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_line_adoption": "unknown_no_receiver_receipt_written"
   }
 }
