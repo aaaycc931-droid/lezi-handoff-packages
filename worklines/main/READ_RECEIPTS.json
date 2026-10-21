@@ -994,6 +994,32 @@
           "new gameplay confirmation",
           "hourglass implementation or original64 acceptance"
         ]
+      },
+      "latest_main_hourglass_response": {
+        "id": "MAIN-R38-SAFE-HOURGLASS-IMPLEMENTATION-20261021",
+        "status": "BOUNDED_HOURGLASS_PATCH_IMPLEMENTED_560_RELATED_CHECKS_PASS_DRAFT_UNMERGED",
+        "owner": "main shared engine",
+        "engine_repository": "aaaycc931-droid/jieqi-engine",
+        "engine_base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+        "engine_commit": "7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9",
+        "engine_branch": "codex/r38-hourglass-safety-20261021",
+        "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/10",
+        "pull_request_number": 10,
+        "upstream_PR": 9,
+        "source_files_changed": 4,
+        "test_files_changed": 1,
+        "files_changed": 5,
+        "new_component_tests": 31,
+        "focused_tests_passed": 61,
+        "related_tests_passed": 560,
+        "related_test_files": 41,
+        "original64": "UNRUN",
+        "original12_executed": 0,
+        "other_source_line_adoption": "unknown",
+        "product_gate_changed": false,
+        "gameplay_policy_delta": 0,
+        "scoring_frozen": true,
+        "NET": "paused"
       }
     },
     "standard": {
@@ -1792,16 +1818,17 @@
         "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
       },
       "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
-      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
+      "hourglass_dependency_note": "WP03新增候选事件隔离及capture.evidenceValid=false；现有研究适配器尚未消费失效信号，新D01闭合观察点和完整WP02仍未实施/验收。"
     },
     {
       "id": "HC-SCOPE-WP03",
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "BOMB_LEG_IMPLEMENTED_HOURGLASS_CONCRETE_DESIGN_READY_PATH_PENDING",
+      "status": "BOMB_LEG_HOURGLASS_BOUNDED_PATCHES_IMPLEMENTED_PATH_PENDING",
       "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
-      "disposition": "投弹/铁马补丁保留；本轮完成沙漏闭合/隔离/一次提交的具体设计，代码及12组新回归均未执行。原自然12/64、路径/全搜索/终局和产品门禁不变。",
+      "disposition": "PR8/9保留；沙漏按已发布具体方案实施独立PR10：完整候选一次结算后王安全、原批次/RNG/observer隔离，31项新组件及560项相关回归通过。路径、完整威胁/终局、原自然12/64仍待，不开放准入。",
       "previous_disposition": {
         "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
         "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
@@ -1859,36 +1886,55 @@
   "current_phase_authorization": {
     "user_quote": "进行下一步",
     "date_local": "2026-10-21",
-    "basis": "本对话上轮已说明的下一项：主线核沙漏完整闭合/隔离并形成具体设计；本轮推进该步骤。",
-    "scope_interpretation": "本轮读取/设计/主线增量交接；没有把本条记成新玩法批准或沙漏源码实施/运行完成。",
+    "basis": "紧接本对话已发布的沙漏具体方案及“下一步实施独立补丁与针对性回归”；按当前指令执行该具体范围。",
+    "scope_interpretation": "同一候选完整闭合/一次提交、原批次及RNG/observer隔离的限定补丁、必要回归、独立草稿和主线交接；不记成新玩法候选批准或全部模式工程授权。",
+    "source_plan_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
+    "source_plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
     "allowed_executed": [
-      "read current fixed handoff and pinned PR9 source",
-      "form concrete hourglass closure/isolation/single-result design",
-      "main incremental GitHub publication and readback"
+      "four source files and one public component test file",
+      "bounded local component/regression tests",
+      "child draft PR10 on fixed PR9 source",
+      "main incremental writeback and readback"
     ],
-    "not_executed": [
-      "game code changes or engine imports/runs",
-      "research gate/capability or original12 replay",
-      "PR merge,APK,deployment,scoring thaw,NET resume"
+    "not_included": [
+      "mode admission/capability or new D01 semantic hooks",
+      "original half-chaos12 natural replay/64 acceptance",
+      "full threat/search or independent-terminal policy",
+      "PR merge/APK/deployment/scoring thaw/NET resume"
     ]
   },
   "current_engine_readback": {
     "repository": "aaaycc931-droid/jieqi-engine",
-    "commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
-    "base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+    "commit": "7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9",
+    "base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
     "paths": [
       {
-        "path": "src/rules.ts",
-        "git_blob_sha": "2aa4deb68cec2f9330eadd8f41097d7b1c615721",
-        "actual_read": "full published bytes equal tested local content"
+        "path": "src/hero-actions.ts",
+        "git_blob_sha": "0f862528ae09f3b6ea72cf693b17f159e0a13c52",
+        "actual_read": "full published bytes equal final tested local content"
       },
       {
-        "path": "tests/mutation.test.ts",
-        "git_blob_sha": "4eb8934044a2fed61b87e561babbbc6a972b82f0",
-        "actual_read": "full published bytes equal tested local content"
+        "path": "src/mechanism-observer.ts",
+        "git_blob_sha": "62d5837bd2ec1fd0a7bd6dbc1075d617d3c48f78",
+        "actual_read": "full published bytes equal final tested local content"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "git_blob_sha": "97b60f7c1ab9a79bf85388a9fc824690f7115451",
+        "actual_read": "full published bytes equal final tested local content"
+      },
+      {
+        "path": "src/settlement.ts",
+        "git_blob_sha": "bf479ce7e5ecaef93fd4e9a51f1110a79e6a2373",
+        "actual_read": "full published bytes equal final tested local content"
+      },
+      {
+        "path": "tests/hourglass-safety-boundaries.test.ts",
+        "git_blob_sha": "86a56489b8679a7dd66e4b69b337881f0d71f0e1",
+        "actual_read": "full published bytes equal final tested local content"
       }
     ],
-    "prior_bomb_preserved": true
+    "prior_bomb_and_leg_preserved": true
   },
   "collaboration_v014_scoped_adoption": {
     "source_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
@@ -2016,5 +2062,17 @@
       }
     ],
     "collaboration": "current index v0.14 body hash unchanged; inherit prior actual-read scoped modules; no fresh whole-body read claimed"
+  },
+  "current_phase_source_reads_hourglass_implementation": {
+    "source_plan_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
+    "source_plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+    "source_guard_confirmations": "same original D01 confirmations actually read previous turn; exact plan/source identities unchanged",
+    "engine_base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "checked_dependencies": 116,
+    "changed_existing": 4,
+    "unchanged_existing": 112,
+    "published_new_test": 1,
+    "scope": "changed functions/direct dependency slices and exact final published5file bytes; not whole engine historical corpus",
+    "collaboration": "v0.14 index/body identities inherited unchanged; no fresh whole-body read claim"
   }
 }

@@ -1,6 +1,6 @@
 # 乐子象棋交接仓库
 
-2026-10-21主线完成[沙漏完整闭合/隔离具体设计](worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md)：原authority复制前批次检查、六步/落位/死亡后续、零抽样与候选事件隔离、同一结果一次提交及12组待运行验证已具体到函数。本轮无代码/引擎运行；投弹/铁马草稿PR8/9及此前529项组件回归保留，不能计为沙漏通过。下一准备独立限定补丁；原自然12执行0、64项UNRUN，模式门禁、各线成果、协作v0.14、评分冻结与NET暂停均保持。当前依据见[主线入口](worklines/main/START_HERE.txt)和[R38报告](worklines/main/R38_ENGINEERING_REVIEW.json)，历史阶段按固定提交查回。
+2026-10-21主线完成沙漏限定修复：[草稿PR10](https://github.com/aaaycc931-droid/jieqi-engine/pull/10)继承投弹/铁马PR8/9，未合并。完整候选一次结算后检查己王，补原批次/RNG/观察隔离及活死状态区分；31项新组件、61针对性与41文件560相关检查通过。底层证据失效信号已实现，研究适配器接收与完整观察仍待；原自然12执行0、64UNRUN，模式门禁不变。下一核M01/M04路径完整结果方案。各线成果、55确认、协作v0.14、评分冻结和NET暂停保持。当前依据见[主线入口](worklines/main/START_HERE.txt)与[实际实现/测试](worklines/main/R38_ENGINEERING_REVIEW.json)。
 
 当前工作入口：[主线](worklines/main/START_HERE.txt) · [半混乱](worklines/half_chaos/START_HERE.txt) · [UI](worklines/ui/START_HERE.txt) · [普通象棋](worklines/standard/START_HERE.txt)。本账号负责主线/半混乱，另一个账号负责UI/普通。主线业务源码仍在jieqi-engine仓库；此处管理交接和素材。
 

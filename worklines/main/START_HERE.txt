@@ -1,9 +1,9 @@
-《乐子象棋》主线当前入口｜2026-10-21沙漏完整闭合具体设计完成
+《乐子象棋》主线当前入口｜2026-10-21沙漏限定补丁完成
 
-先读 CURRENT_STATE.json → R38_HOURGLASS_CLOSURE_PLAN.md → R38_ENGINEERING_REVIEW.json#/latest_plan → RETURN_TO_MAIN.json；通用协作从 ../../collaboration/CURRENT.json 解析，当前v0.14身份未变，继承已实际读取的适用模块。
+先读 CURRENT_STATE.json → R38_ENGINEERING_REVIEW.json#/latest_implementation → R38_HOURGLASS_CLOSURE_PLAN.md → RETURN_TO_MAIN.json；通用协作从 ../../collaboration/CURRENT.json 解析，v0.14已读模块与身份保留。
 
-本轮“进行下一步”完成源核和具体方案，未改业务源码、未导入/运行引擎。确认远端gameWithPrivateTraps先复制导致原WeakMap屏障必须前移；死亡尾部还直接用Math.random。选定原对象复制前检查、同一隔离候选执行六步/落位/死亡一次、闭合后判断、通过直接返回同一结果；活棋/死棋状态、零抽样、observer缓冲和12组NOT_RUN验证均见方案。
+本轮“进行下一步”落实上一轮已具体发布的沙漏补丁。继承PR9固定74edf37，独立分支codex/r38-hourglass-safety-20261021，提交7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9，草稿PR10未合并。4源码/1新测试：复制前原批次屏障、同一候选完整六步/死亡一次闭合后己王检查、活死状态/落位上下文区分、零抽样和候选事件隔离；拒绝整份丢弃，不刷新原截止。
 
-投弹PR8 ea3b35c、铁马草稿PR9 74edf37保持未合并；529是此前相关组件回归，不是沙漏通过。完整普通威胁、特殊空间、独立终局/客户端通道未决保留；原自然12执行0、64仍UNRUN，不放开模式门禁。
+新增31项公开合成组件；原22基线11项暴露差异，最终61针对性和41文件560项相关检查通过。完整威胁/特殊空间/独立终局未验收；底层capture.evidenceValid=false已实现，但研究适配器尚未消费失效信号，新D01观察点仍待。原自然12执行0、64UNRUN，不放开准入或产品门禁。
 
-下一 NEXT-MAIN-R38-HOURGLASS-BOUNDED-PATCH：从复核匹配的PR9继承独立补丁，先隔离批次/候选/RNG/observer及明确分支差异，再接完整闭合王安全；不预检重跑、不把未知当安全。H15毕业跨越等原待决、各线文件/资产、主线55确认均保留。评分冻结、NET暂停；不代填其他线接收采用。
+下一 NEXT-MAIN-R38-PATH-CLOSURE-PLAN：核M01/M04路径→终点防御返回→落位死亡的同源完整结果，先形成具体方案，不以deferTurnEnd偷换来源或把未知当安全。PR8/9、各线文件/素材、55确认、H15毕业跨越待决及协作v0.14保留；不代填接收采用。评分冻结、NET暂停。

@@ -160,69 +160,90 @@
     }
   },
   "latest_bounded_engine_validation": {
-    "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
-    "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
+    "id": "MAIN-R38-SAFE-HOURGLASS-IMPLEMENTATION-20261021",
+    "status": "BOUNDED_HOURGLASS_PATCH_IMPLEMENTED_560_RELATED_CHECKS_PASS_DRAFT_UNMERGED",
     "owner": "main shared engine",
     "engine_repository": "aaaycc931-droid/jieqi-engine",
-    "engine_base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-    "engine_commit": "74edf370acf76a377b3f74e69f252d0b7de2169d",
-    "engine_branch": "codex/r38-iron-steed-leg-20261021",
-    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
-    "pull_request_number": 9,
-    "upstream_bomb_PR": 8,
-    "business_code_formulas_changed": 2,
-    "files_changed": 2,
-    "new_component_cases": 10,
-    "focused_checks_passed": 30,
-    "related_tests_passed": 529,
-    "related_test_files": 40,
+    "engine_base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+    "engine_commit": "7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9",
+    "engine_branch": "codex/r38-hourglass-safety-20261021",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/10",
+    "pull_request_number": 10,
+    "upstream_PR": 9,
+    "source_files_changed": 4,
+    "test_files_changed": 1,
+    "files_changed": 5,
+    "new_component_tests": 31,
+    "focused_tests_passed": 61,
+    "related_tests_passed": 560,
+    "related_test_files": 41,
     "original64": "UNRUN",
     "original12_executed": 0,
     "other_source_line_adoption": "unknown",
     "product_gate_changed": false,
+    "gameplay_policy_delta": 0,
     "scoring_frozen": true,
     "NET": "paused",
     "authority_basis": {
       "user_quote": "进行下一步",
       "date_local": "2026-10-21",
-      "basis": "current next-step instruction in the previously explained main repair sequence: bomb, then iron-steed leg",
-      "scope_interpretation": "主线先恢复下一项来源/10组差异与最小范围，再在同一次推进中实施既有M01规则的坐标纠错及必要回归；这是AI对当前工作指令的有限执行范围解释，不登记成用户批准新玩法候选。",
-      "earlier_scope_preserved": "2026-10-20只实施投弹的限定属于上一轮；本轮是新的下一项推进，不把上一轮授权扩大为全部切片批准。",
+      "basis": "紧接本对话已发布的沙漏具体方案及“下一步实施独立补丁与针对性回归”；按当前指令执行该具体范围。",
+      "scope_interpretation": "同一候选完整闭合/一次提交、原批次及RNG/observer隔离的限定补丁、必要回归、独立草稿和主线交接；不记成新玩法候选批准或全部模式工程授权。",
+      "source_plan_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
+      "source_plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
       "allowed_executed": [
-        "read-only source/guard review",
-        "two endpoint-formula corrections in src/rules.ts",
-        "10 public component regressions in tests/mutation.test.ts",
-        "related existing 40-file local regression and child draft branch publication",
-        "main incremental writeback"
+        "four source files and one public component test file",
+        "bounded local component/regression tests",
+        "child draft PR10 on fixed PR9 source",
+        "main incremental writeback and readback"
       ],
       "not_included": [
-        "whole king-safety/search/terminal rewrite",
-        "hourglass/route-closure architecture",
-        "mode research admission/hook/capability changes",
-        "original half-chaos natural12/64 acceptance",
+        "mode admission/capability or new D01 semantic hooks",
+        "original half-chaos12 natural replay/64 acceptance",
+        "full threat/search or independent-terminal policy",
         "PR merge/APK/deployment/scoring thaw/NET resume"
       ]
     },
-    "actual_commands": "R38_ENGINEERING_REVIEW.json#/latest_implementation/execution",
-    "prepatch_red": 10,
-    "postpatch_focused_pass": 30,
-    "source_protection": {
-      "parent": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-      "tree": "c9a219337af7eb76301ef2c1ee979158800819cf",
-      "changed_paths": [
-        "src/rules.ts",
-        "tests/mutation.test.ts"
-      ],
-      "other_524_blobs_unchanged": true,
-      "bomb_patch_blobs_preserved": true,
-      "default_and_research_gates_preserved": true,
-      "removed_paths": 0
+    "actual_commands": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/execution",
+    "final_focused": {
+      "exit_code": 0,
+      "counts": {
+        "tests": 61,
+        "pass": 61,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "summary_complete": true
+    },
+    "final_related": {
+      "exit_code": 0,
+      "files": 41,
+      "counts": {
+        "tests": 560,
+        "pass": 560,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "summary_complete": true
     },
     "code_readback_equal": true,
+    "source_protection": {
+      "base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "tree": "aaad65c9f3a2a9fe0fe6d8e9a0be1b1f242de6eb",
+      "other_522_engine_blobs_unchanged": true,
+      "all116_existing_local_source_dependency_blobs_compared": true,
+      "unchanged_local_blobs": 112,
+      "PR8_bomb_guard_and_tests_retained": true,
+      "PR9_rules_and_mutation_tests_unchanged": true,
+      "removed_paths": 0,
+      "product_and_research_gates_unchanged": true
+    },
     "original64_passes": 0,
     "remote_CI_pass_claimed": false,
-    "concurrent_v014_preserved_source": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
-    "document_and_remote_readback": "actual prepublish/postpublish tool results required; no future self SHA"
+    "observer_adapter_signal_consumption": "pending",
+    "document_and_remote_readback": "local scoped checks required before publication; actual remote readback after commit, no future self SHA"
   },
   "previous_bomb_validation_source": {
     "commit": "59e2ad624f6195a5c10ee46f918f7f9d8b0cec99",
@@ -254,6 +275,34 @@
       "all86_source_test_blobs_equal_PR9": true,
       "other_workline_metadata_and_collab_fields_unchanged": true,
       "prior_implementation_records_unchanged": true
+    }
+  },
+  "previous_leg_validation_source": {
+    "commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
+    "path": "worklines/main/VALIDATION.json#/latest_bounded_engine_validation"
+  },
+  "hourglass_implementation_phase": {
+    "id": "MAIN-R38-SAFE-HOURGLASS-IMPLEMENTATION-20261021",
+    "source_handoff": "564924478f64250ecd1e65a3d153f49d1a0f944e",
+    "all55_confirmations_unchanged": true,
+    "other_workline_paths_modified": false,
+    "asset_or_collaboration_paths_modified": false,
+    "natural12_executed": 0,
+    "mode_gates_changed": false,
+    "new_gameplay_approvals": 0,
+    "messages_sent": false,
+    "PR_merges": 0,
+    "current_expected_document_paths": 13,
+    "prepublication_checks": {
+      "status": "PASSED",
+      "valid_json_files": 9,
+      "scoped_main_paths": 13,
+      "other_line_fields_collab_and55_confirmations_preserved": true,
+      "engine_code_readback_files": 5,
+      "engine_readback_exact_tested_bytes": true,
+      "prior_bomb_guard_leg_files_and_evidence_preserved": true,
+      "original12_executed": 0,
+      "original64": "UNRUN"
     }
   }
 }

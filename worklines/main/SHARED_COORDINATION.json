@@ -1,6 +1,6 @@
 {
   "schema": "lezi.main.shared_coordination.v1",
-  "base_commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+  "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
   "status": "r38_bomb_and_leg_geometry_repairs_tested_draft_PR8_PR9_unmerged",
   "shared_confirmations": {
     "already_document_adopted": 7,
@@ -477,8 +477,8 @@
   },
   "scoring_frozen": true,
   "NET": "paused",
-  "new_game_code_changes": 0,
-  "new_engine_tests": 0,
+  "new_game_code_changes": 4,
+  "new_engine_tests": 31,
   "receiver_receipts_observed": {
     "half_chaos": {
       "receipt_source_commit": "115350d1f8264143a1381aae61e9837492067a04",
@@ -803,7 +803,7 @@
     "policy": "ADJUDICATION.json#/shared_hero_design_updates/H15_public_training_display",
     "implementation": false
   },
-  "publication_parent_commit": "13dcdad643008263c3663df1702e5f0926e4082e",
+  "publication_parent_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
   "unread_concurrent_returns": [],
   "current_phase_new_confirmations": 0,
   "current_phase_ordinary_confirmation_received": null,
@@ -1747,16 +1747,17 @@
         "disposition": "WP02/03请求已按原确认及观察语义排入主线共享复核；本轮未选择新hook、修复方案或实现/运行范围，未核底层代码，不把文档推演当执行证明。"
       },
       "actual_review_snapshot_commit": "9e32933534858a54f7b5877130d36aed694f2806",
-      "review": "worklines/main/R38_ENGINEERING_REVIEW.json"
+      "review": "worklines/main/R38_ENGINEERING_REVIEW.json",
+      "hourglass_dependency_note": "WP03新增候选事件隔离及capture.evidenceValid=false；现有研究适配器尚未消费失效信号，新D01闭合观察点和完整WP02仍未实施/验收。"
     },
     {
       "id": "HC-SCOPE-WP03",
       "owner": "main",
       "request": "Coordinate exact confirmed D01 safety/bomb repairs plus actual-result safety/M01 threat alignment; unresolved tier/full search/terminal remains main-owned.",
       "reference": "IMPLEMENTATION_SCOPE_PROPOSAL.json#/work_packages/2",
-      "status": "BOMB_LEG_IMPLEMENTED_HOURGLASS_CONCRETE_DESIGN_READY_PATH_PENDING",
+      "status": "BOMB_LEG_HOURGLASS_BOUNDED_PATCHES_IMPLEMENTED_PATH_PENDING",
       "main_receipt_source_commit": "f1402a9e687e00902222ca6f3e666774af2edca1",
-      "disposition": "投弹/铁马补丁保留；本轮完成沙漏闭合/隔离/一次提交的具体设计，代码及12组新回归均未执行。原自然12/64、路径/全搜索/终局和产品门禁不变。",
+      "disposition": "PR8/9保留；沙漏按已发布具体方案实施独立PR10：完整候选一次结算后王安全、原批次/RNG/observer隔离，31项新组件及560项相关回归通过。路径、完整威胁/终局、原自然12/64仍待，不开放准入。",
       "previous_disposition": {
         "status": "received_deferred_shared_source_contract_review_no_code_run_or_gate_approval",
         "source_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
@@ -1780,8 +1781,8 @@
     "status": "actually_received_source_dependencies_verified_bounded_scope_adopted_as_plan",
     "implementation_authorized": true,
     "engine_execution_authorized": true,
-    "engine_code_changes": 0,
-    "engine_runs": 0,
+    "engine_code_changes": 4,
+    "engine_runs": 9,
     "all64": "UNRUN",
     "original12_executed": 0,
     "other_workline_adoption": "unknown_no_receiver_receipt_written",
@@ -1800,9 +1801,9 @@
       },
       {
         "id": "MAIN-HC-R38-03",
-        "status": "BOMB_LEG_IMPLEMENTED_HOURGLASS_DESIGN_COMPLETE_PATH_PENDING",
+        "status": "BOMB_LEG_HOURGLASS_BOUNDED_PATCHES_IMPLEMENTED_PATH_PENDING",
         "owner": "main engine safety/closure",
-        "detail": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md"
+        "detail": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
       },
       {
         "id": "MAIN-HC-R38-04",
@@ -1812,13 +1813,57 @@
       },
       {
         "id": "MAIN-HC-R38-05",
-        "status": "NEXT_STEP_LEG_CORRECTION_EXECUTED_LOCAL_COMPONENT_TESTS_ONLY",
+        "status": "CURRENT_NEXT_STEP_HOURGLASS_IMPLEMENTED_BOUNDED_TESTS_ONLY",
         "owner": "main",
         "detail": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
       }
     ],
     "active_source_line_files_unchanged": true,
     "latest_implementation": {
+      "id": "MAIN-R38-SAFE-HOURGLASS-IMPLEMENTATION-20261021",
+      "status": "BOUNDED_HOURGLASS_PATCH_IMPLEMENTED_560_RELATED_CHECKS_PASS_DRAFT_UNMERGED",
+      "owner": "main shared engine",
+      "engine_repository": "aaaycc931-droid/jieqi-engine",
+      "engine_base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "engine_commit": "7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9",
+      "engine_branch": "codex/r38-hourglass-safety-20261021",
+      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/10",
+      "pull_request_number": 10,
+      "upstream_PR": 9,
+      "source_files_changed": 4,
+      "test_files_changed": 1,
+      "files_changed": 5,
+      "new_component_tests": 31,
+      "focused_tests_passed": 61,
+      "related_tests_passed": 560,
+      "related_test_files": 41,
+      "original64": "UNRUN",
+      "original12_executed": 0,
+      "other_source_line_adoption": "unknown",
+      "product_gate_changed": false,
+      "gameplay_policy_delta": 0,
+      "scoring_frozen": true,
+      "NET": "paused"
+    },
+    "authorization": {
+      "at_local": "2026-10-20T23:12:32+08:00",
+      "user_quote": "我同意进行",
+      "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
+      "report": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/59e2ad624f6195a5c10ee46f918f7f9d8b0cec99/worklines/main/R38_ENGINEERING_REVIEW.json#latest_implementation",
+      "other_slices_or_natural_replays_authorized": false
+    },
+    "original_natural_acceptance_unchanged": true,
+    "next_main": {
+      "id": "NEXT-MAIN-R38-PATH-CLOSURE-PLAN",
+      "status": "NOT_STARTED_SOURCE_AND_CONCRETE_DESIGN_REVIEW",
+      "action": "核M01/M04路径消灭、终点壁垒/龙鳞返回与落位死亡的同源完整结果，形成路径王安全具体方案；区分原公开简化模拟与实际执行，不用deferTurnEnd伪造普通来源，不替完整终局/应将搜索定案。保留D01证据无效信号在研究适配器的待接收项。",
+      "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
+      "original12_execution": 0,
+      "gameplay_policy_delta": 0
+    },
+    "recipient_actual_new_code_adoption": "unknown",
+    "authorization_scope": "current next-step hourglass concrete plan only; no mode admission,semantic-stage hooks,natural12,merge or release",
+    "previous_implementation_summary": {
       "id": "MAIN-R38-SAFE-LEG-IMPLEMENTATION-20261021",
       "status": "GEOMETRY_PATCH_IMPLEMENTED_529_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
       "owner": "main shared engine",
@@ -1841,47 +1886,6 @@
       "product_gate_changed": false,
       "scoring_frozen": true,
       "NET": "paused"
-    },
-    "authorization": {
-      "at_local": "2026-10-20T23:12:32+08:00",
-      "user_quote": "我同意进行",
-      "scope": "R38-SAFE-BOMB independent branch/source test patch and related local regressions + writeback",
-      "report": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/59e2ad624f6195a5c10ee46f918f7f9d8b0cec99/worklines/main/R38_ENGINEERING_REVIEW.json#latest_implementation",
-      "other_slices_or_natural_replays_authorized": false
-    },
-    "original_natural_acceptance_unchanged": true,
-    "next_main": {
-      "id": "NEXT-MAIN-R38-HOURGLASS-BOUNDED-PATCH",
-      "status": "NOT_STARTED_CONCRETE_DESIGN_AVAILABLE",
-      "action": "按R38_HOURGLASS_CLOSURE_PLAN.md从PR9固定源继承独立补丁；先完成原authority批次/候选/RNG/observer隔离和明确普通分支差异，再接完整闭合王安全。未知/特殊空间/独立终局缺来源只阻断依赖分支，不自定新政策或开放原12/64。",
-      "plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
-      "other_main_gameplay_task_preserved": "NEXT-MAIN-H15-H06-GRADUATION-EXPLICIT-PROPOSAL",
-      "gameplay_policy_delta": 0,
-      "original12_execution": 0
-    },
-    "recipient_actual_new_code_adoption": "unknown",
-    "authorization_scope": "Prior bomb/leg repair scopes are historical executed facts; this phase only hourglass concrete design/writeback.",
-    "previous_implementation_summary": {
-      "id": "MAIN-R38-SAFE-BOMB-IMPLEMENTATION-20261020",
-      "status": "IMPLEMENTED_COMPONENT_REGRESSIONS_PASSED_DRAFT_PR_UNMERGED",
-      "owner": "main shared engine",
-      "engine_repository": "aaaycc931-droid/jieqi-engine",
-      "engine_base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
-      "engine_branch": "codex/hc-r38-bounded-repairs-20261020",
-      "engine_commit": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
-      "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/8",
-      "pull_request_number": 8,
-      "files_changed": 2,
-      "business_code_lines_added": 1,
-      "focused_tests_passed": 8,
-      "related_tests_passed": 519,
-      "related_test_files": 40,
-      "original64": "UNRUN",
-      "original12_executed": 0,
-      "product_gate_changed": false,
-      "scoring_frozen": true,
-      "NET": "paused",
-      "source_line_receiver_adoption": "unknown_until_own_actual_receipt"
     },
     "latest_plan": {
       "id": "MAIN-R38-HOURGLASS-CLOSURE-PLAN-20261021",
@@ -1919,6 +1923,27 @@
       "gameplay_policy_delta": 0,
       "scoring_frozen": true,
       "NET": "paused"
-    }
+    },
+    "current_phase_authorization": {
+      "user_quote": "进行下一步",
+      "date_local": "2026-10-21",
+      "basis": "紧接本对话已发布的沙漏具体方案及“下一步实施独立补丁与针对性回归”；按当前指令执行该具体范围。",
+      "scope_interpretation": "同一候选完整闭合/一次提交、原批次及RNG/observer隔离的限定补丁、必要回归、独立草稿和主线交接；不记成新玩法候选批准或全部模式工程授权。",
+      "source_plan_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
+      "source_plan": "worklines/main/R38_HOURGLASS_CLOSURE_PLAN.md",
+      "allowed_executed": [
+        "four source files and one public component test file",
+        "bounded local component/regression tests",
+        "child draft PR10 on fixed PR9 source",
+        "main incremental writeback and readback"
+      ],
+      "not_included": [
+        "mode admission/capability or new D01 semantic hooks",
+        "original half-chaos12 natural replay/64 acceptance",
+        "full threat/search or independent-terminal policy",
+        "PR merge/APK/deployment/scoring thaw/NET resume"
+      ]
+    },
+    "statistics_scope": "current bounded hourglass phase:4 source files,1 new test,9 local test command invocations; complete scopes/results in latest_implementation"
   }
 }
