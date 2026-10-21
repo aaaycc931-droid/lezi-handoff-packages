@@ -1207,7 +1207,7 @@
     "lethal_level_term": "致命等级",
     "current_revision_rerated": false,
     "prior_score_role": "historical_paper_reference_not_new_v1_1_assessment",
-    "next_shan_action": "prepare bounded Shan implementation plan and validation scope; prior engineering next unchanged"
+    "next_shan_action": "implement first-stage standalone module and component verification on a source-rechecked isolated branch when instructed against this concrete plan; product integration separate"
   },
   "shan_current_rating": {
     "id": "SHAN-PAPER-RATING-6-2-4-20261021",
@@ -1415,6 +1415,106 @@
     "numerics_changed": false,
     "new_score": null,
     "engine_runs": 0,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown"
+  },
+  "shan_implementation_plan": {
+    "id": "SHAN-IMPLEMENTATION-PLAN-20261021",
+    "date_local": "2026-10-21",
+    "user_quote": "开始下一步",
+    "status": "source_reviewed_concrete_plan_complete_not_implemented",
+    "report": "worklines/main/candidates/shan/IMPLEMENTATION_PLAN.md",
+    "design_version": "SHAN-v1.2-6-2-4",
+    "handoff_base": "c323a5bd965d60ba5f8b19e44ecc0628e91ea8f5",
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "observed_engine_main": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "pinned_engine_source": "7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9",
+    "pinned_source_pr": 10,
+    "pinned_source_pr_open_unmerged": true,
+    "source_files_read": [
+      {
+        "path": "src/types.ts",
+        "sha": "a837ca049d3d0a7fd8cc38c3b0a9552f7d24105e"
+      },
+      {
+        "path": "src/rules.ts",
+        "sha": "2aa4deb68cec2f9330eadd8f41097d7b1c615721"
+      },
+      {
+        "path": "src/game.ts",
+        "sha": "989f2a77d03a7762cd8acbcffe3a349d8ee6520e"
+      },
+      {
+        "path": "src/turns.ts",
+        "sha": "325eea5b12ad36ec7b1fc8bdd50c1a56833f0612"
+      },
+      {
+        "path": "src/settlement.ts",
+        "sha": "bf479ce7e5ecaef93fd4e9a51f1110a79e6a2373"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "sha": "0f862528ae09f3b6ea72cf693b17f159e0a13c52"
+      },
+      {
+        "path": "src/heroes.ts",
+        "sha": "0958d1e16103de4b808a96d4fb825bf446a45e59"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "sha": "97b60f7c1ab9a79bf85388a9fc824690f7115451"
+      },
+      {
+        "path": "src/modes.ts",
+        "sha": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc"
+      },
+      {
+        "path": "tests/hourglass-safety-boundaries.test.ts",
+        "sha": "86a56489b8679a7dd66e4b69b337881f0d71f0e1"
+      },
+      {
+        "path": "tests/bluetooth-private-contracts.test.ts",
+        "sha": "22552654313c59a1833d39b97c6b884fb8981e2c"
+      },
+      {
+        "path": "package.json",
+        "sha": "34b26233ab157051caeae779771ddc0fceb24465"
+      },
+      {
+        "path": "src/hero-forms.ts",
+        "sha": "e42cb0854bd71dfaf4004268ec79e11c115c692d"
+      },
+      {
+        "path": "src/room.ts",
+        "sha": "093a1732eed4ee48a6d3487ce938d3c1d17a58c2"
+      },
+      {
+        "path": "src/research-source-context.ts",
+        "sha": "01aa06251a9d76dca075a8899a3530ab0f47d0f2"
+      }
+    ],
+    "first_stage": {
+      "proposed_files": [
+        "src/shan-core.ts",
+        "tests/shan-core.test.ts"
+      ],
+      "planned_check_groups": 12,
+      "status": "NOT_STARTED_NOT_RUN",
+      "product_entry_changes": 0,
+      "hero_registration_or_pool_changes": 0,
+      "mode_admission_changes": 0
+    },
+    "later_stages": [
+      "ordinary authoritative-move and terminal integration",
+      "owner UI and actual serialized privacy contracts"
+    ],
+    "engine_code_changes": 0,
+    "engine_runs": 0,
+    "tests_run": 0,
+    "branch_or_PR_created": false,
+    "new_score": null,
+    "next": "implement first-stage standalone module and component verification on a source-rechecked isolated branch when instructed against this concrete plan; product integration separate",
     "scoring_frozen": true,
     "NET": "paused",
     "other_dialogue_adoption": "unknown"
