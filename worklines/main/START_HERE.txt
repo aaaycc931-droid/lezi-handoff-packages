@@ -29,3 +29,5 @@
 山v1.2具体实现方案（2026-10-21）：见 candidates/shan/IMPLEMENTATION_PLAN.md。实际核对engine main c25749d与仍未合并的PR10固定7ece1fd，按后者设计，不用旧main覆盖新修复。分三阶段：独立规则模块／普通权威应将与终局／本方UI和实际wire保密。首阶段拟仅新增shan-core.ts与对应测试，12组NOT_RUN，不注册英雄、不入随机池、不改模式门禁。已指出纸面坐标到引擎y＝9－纸面行号、将死抢先裁决、公开GameState深拷贝及恢复秘密状态等接入风险。本轮仅源码阅读与方案，代码／引擎运行／测试／分支PR均0。下一按具体方案先实施首阶段；原工程断点保持。
 
 山第一阶段已实施（2026-10-21）：用户“开始实施吧”指向已发布的两个文件／12组具体方案。独立模块与测试已发布jieqi-engine a27833955e6f1b8d70dca9b8c15aad193c6c3479，分支codex/shan-core-20261021、草稿PR11未合并，继承固定PR10。12组落为27项组件检查，最终27通过；Node24，tsc不可用，无完整类型检查。两新文件外527旧blob不变，HeroId／池／门禁／走棋／终局／风未改。详情candidates/shan/FIRST_STAGE_IMPLEMENTATION.md；第一阶段是独立事实模型，不是实际棋盘或wire保密验证。下一准备第二阶段真实权威接入具体方案；上文“未开始实施”属于原方案阶段历史。原工程断点、评分冻结、NET暂停保持。
+
+山本轮对话已收束（2026-10-21最新）：先读 candidates/shan/SESSION_CLOSEOUT.md → SECOND_STAGE_PLAN.md → FIRST_STAGE_IMPLEMENTATION.md。山v1.2／致命等级／6-2-4及W09确认均保留，PR11固定a278339仍草稿未合并，旧27项仅为第一阶段组件证据。第二阶段2A／2B方案已具体到真实棋盘事实、亲卫候选和终局接入；本轮代码／运行／新测试0，2A十二组NOT_RUN。下次先SHAN-2A-BOARD-FACTS，拟两个文件shan-board.ts及测试，按真实新指令与源版本实施；不回到已确认设计或重评，不自动开放模式。仅关闭当前对话，原主线工程断点及其他工作线继续保留，评分冻结、NET暂停。

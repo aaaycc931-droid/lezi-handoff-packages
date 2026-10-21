@@ -121,3 +121,6 @@
 
 ## 后续第一阶段实际执行（2026-10-21）
 用户随后明确“开始实施吧”，现已完成第一阶段两个文件：独立规则模块与27项组件检查，草稿PR11／a27833955e6f1b8d70dca9b8c15aad193c6c3479已发布、未合并。实际结果与限制见[FIRST_STAGE_IMPLEMENTATION.md](FIRST_STAGE_IMPLEMENTATION.md)。上文NOT_RUN／未开始是原方案形成时的状态；第一阶段12组已执行并细化为27项通过，第二／三阶段仍未实施，实际棋盘与wire验证不据组件结果通过。下一先形成第二阶段具体权威接入方案。
+
+## 第二阶段方案与本轮收束（2026-10-21）
+第一阶段真实结果见FIRST_STAGE_IMPLEMENTATION.md，27项组件通过仍有效。后续具体接入按[SECOND_STAGE_PLAN.md](SECOND_STAGE_PLAN.md)：先2A真实棋盘事实与应对查询，再2B同一权威行动／终局接入。本轮只完成方案，无第二阶段代码或测试。当前对话已收束，下一入口见[SESSION_CLOSEOUT.md](SESSION_CLOSEOUT.md)；原三阶段边界、模式准入及保密验收要求保留。
