@@ -1375,7 +1375,12 @@
     "design_status": "user_finalized_core_design_and_parameters_not_implemented",
     "final_design": "worklines/main/candidates/shan/FINAL_DESIGN.md",
     "finalization_confirmation": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021",
-    "explicit_design_finalization": true
+    "explicit_design_finalization": true,
+    "design_version": "SHAN-v1.1-6-2-4",
+    "lethal_level_term": "致命等级",
+    "current_revision_rerated": false,
+    "prior_score_role": "historical_paper_reference_not_new_v1_1_assessment",
+    "next_shan_action": "ordinary legal-position walkthrough for shared check counting, lethal-level decay and death timing; special interactions separate"
   },
   "shan_current_rating": {
     "id": "SHAN-PAPER-RATING-6-2-4-20261021",
@@ -1450,5 +1455,61 @@
     "engine_runs": 0,
     "scoring_frozen": true,
     "NET": "paused"
+  },
+  "shan_design_clarification": {
+    "id": "CONF-SHAN-LETHAL-LEVEL-AND-READABILITY-20261021",
+    "version": "SHAN-v1.1-6-2-4",
+    "date_local": "2026-10-21",
+    "user_quote": "ok，同意该方案",
+    "preceding_user_quote": "压力能不能换个名词，换成一个致命等级？",
+    "source_base_commit": "f81c9e8fbf42a2d1f4809e9dc58dcadceea59390",
+    "status": "confirmed_design_clarification_not_implemented",
+    "scope": "visible player-readability proposal with lethal-level terminology substitution; core 6/2/4 and probability values retained",
+    "canonical_design": "worklines/main/candidates/shan/FINAL_DESIGN.md",
+    "confirmed_rules": {
+      "term": "致命等级",
+      "old_term": "压力",
+      "one_effective_check_per_action": true,
+      "double_check_counts": 1,
+      "unchanged_persistent_check_counts_again": false,
+      "cleared_then_recreated_check_counts_again": true,
+      "shared_definition_for_lethal_level_and_execution": true,
+      "new_effective_check_level_increment": 1,
+      "enemy_action_ends_without_check_level_decrement": 1,
+      "minimum_level": 0,
+      "first_effective_check_level": 1,
+      "guard_sacrifice_reduces_level": false,
+      "death_triggering_action_consumes_post_death_quota": false,
+      "countdown_starts_following_own_turn": true,
+      "death_triggering_action_check_counts_for_execution": false,
+      "last_turn_resolves_victory_before_timeout": true
+    },
+    "ui_requirements": {
+      "check_choices": [
+        "正常解将",
+        "赌命行动",
+        "亲卫护主"
+      ],
+      "show_current_lethal_level_and_actual_gamble_death_probability": true,
+      "highlight_eligible_advisor_and_explain_unavailability": true,
+      "own_post_death_counters": [
+        "剩余行动回合",
+        "特殊应将",
+        "有效将军／4"
+      ],
+      "enemy_receives_no_secret_death_or_post_death_progress_ui": true,
+      "actual_ui_artwork_approved": false
+    },
+    "remaining_open_boundaries": [
+      "precise source attribution under multi-stage, autonomous or extra-action effects",
+      "hidden/temporary-control/revived advisor eligibility",
+      "cross-hero/mutation/terminal/forced-displacement interactions"
+    ],
+    "new_score": null,
+    "engine_runs": 0,
+    "mode_pool_admission_changed": false,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown"
   }
 }

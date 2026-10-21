@@ -1,6 +1,6 @@
 {
   "schema": "lezi.shan.current_candidate_parameters.v1",
-  "revision": "SHAN-6-2-4-P10-80-20261021",
+  "revision": "SHAN-v1.1-6-2-4-LETHAL-20261021",
   "date_local": "2026-10-21",
   "status": "user_finalized_core_design_and_parameters_not_implemented",
   "latest_user_quote": "8回合改为6回合、2次死后特殊应将、4次有效将军。",
@@ -10,45 +10,7 @@
     "post_death_special_evasions": 2,
     "post_death_effective_checks_for_execution": 4,
     "normal_checkmate_wins_immediately": true,
-    "gamble_death_probability_by_current_pressure": [
-      {
-        "pressure_min": 1,
-        "pressure_max": 1,
-        "probability": 0.1
-      },
-      {
-        "pressure_min": 2,
-        "pressure_max": 2,
-        "probability": 0.2
-      },
-      {
-        "pressure_min": 3,
-        "pressure_max": 3,
-        "probability": 0.35
-      },
-      {
-        "pressure_min": 4,
-        "pressure_max": 4,
-        "probability": 0.5
-      },
-      {
-        "pressure_min": 5,
-        "pressure_max": 5,
-        "probability": 0.65
-      },
-      {
-        "pressure_min": 6,
-        "pressure_max": null,
-        "probability": 0.8
-      }
-    ],
-    "probability_basis": "conditional death risk of this gamble while the true general is alive, indexed by pressure, not cumulative mortality or number of gambles alone",
-    "pressure_is_not_reset_by_guard_sacrifice": true,
-    "pressure_policy": {
-      "new_effective_check": "increase",
-      "unchanged_persistent_threat": "hold",
-      "enemy_action_ends_without_check": "gradually_decrease"
-    },
+    "probability_basis": "conditional death risk of this living-general gamble indexed by current lethal level (致命等级); neither cumulative mortality nor gamble count",
     "general_cannot_move": true,
     "special_evasion_grants": "one ordinary action by another own piece; the general may remain threatened at its end; reassess next own action",
     "post_death_limit_rule": "After the two post-death special evasions have been used, a later check that cannot be normally answered causes defeat immediately; the countdown is not an additional guaranteed protection.",
@@ -61,6 +23,57 @@
       "post_death_use_still_spends_special_evasion": true,
       "screenshot_sacrifice_grade_column_adopted": false,
       "confirmation_id": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021"
+    },
+    "gamble_death_probability_by_lethal_level": [
+      {
+        "level_min": 1,
+        "level_max": 1,
+        "probability": 0.1
+      },
+      {
+        "level_min": 2,
+        "level_max": 2,
+        "probability": 0.2
+      },
+      {
+        "level_min": 3,
+        "level_max": 3,
+        "probability": 0.35
+      },
+      {
+        "level_min": 4,
+        "level_max": 4,
+        "probability": 0.5
+      },
+      {
+        "level_min": 5,
+        "level_max": 5,
+        "probability": 0.65
+      },
+      {
+        "level_min": 6,
+        "level_max": null,
+        "probability": 0.8
+      }
+    ],
+    "guard_sacrifice_reduces_lethal_level": false,
+    "lethal_level_policy": {
+      "display_term": "致命等级",
+      "initial_level": 0,
+      "first_effective_check_level": 1,
+      "new_effective_check_increment": 1,
+      "unchanged_persistent_threat": "hold",
+      "enemy_action_ends_without_check_decrement": 1,
+      "minimum_level": 0,
+      "probability_at_level_at_least_6": 0.8
+    },
+    "effective_check_counting": {
+      "max_per_action": 1,
+      "double_check_counts": 1,
+      "new_check_created_by_action_counts": true,
+      "unchanged_persistent_threat_counts_again": false,
+      "cleared_then_recreated_check_counts_again": true,
+      "shared_for_lethal_level_and_post_death_execution": true
     }
   },
   "source": {
@@ -83,20 +96,13 @@
       "user_quote": "现在定稿吧",
       "base_commit": "ee9a2dd0c06d1d1f164a706e58497e8fb335b36b",
       "canonical_design": "worklines/main/candidates/shan/FINAL_DESIGN.md"
-    }
-  },
-  "timing_assumptions_carried_forward_not_newly_confirmed": {
-    "death_triggering_action_not_charged_to_post_death_quota": true,
-    "countdown_starts_with_following_own_turn": true,
-    "death_triggering_action_check_not_retroactively_counted_for_execution": true,
-    "win_during_last_countdown_turn_resolves_before_timeout": true
+    },
+    "terminology_migration": "pressure fields replaced by lethal_level fields in v1.1; same mechanic identity, original image/source terms preserved in history"
   },
   "known_open_boundaries": [
-    "precise effective-check deduplication",
-    "death-triggering action and last-turn settlement order",
-    "advisor eligibility under hidden pieces, temporary control and revival",
-    "interaction with other heroes, mutations, special elimination and forced displacement",
-    "precise pressure recovery amount, floor and initial sampling"
+    "precise source attribution under multi-stage, autonomous or extra-action effects",
+    "hidden/temporary-control/revived advisor eligibility",
+    "cross-hero/mutation/terminal/forced-displacement interactions"
   ],
   "calculation_checks": {
     "independent_gambles_at_consecutively_increasing_pressure_1_to_4_survival": 0.234,
@@ -136,7 +142,11 @@
     "confidence": "low",
     "formal_score": null,
     "probability_weighted_state_tree_complete": false,
-    "target_used_as_calibration": false
+    "target_used_as_calibration": false,
+    "assessed_configuration_revision": "SHAN-6-2-4-P10-80-20261021",
+    "current_v1_1_clarifications_rerated": false,
+    "current_revision_score": null,
+    "prior_paper_reference_only_for_current_revision": true
   },
   "protection": {
     "formal_score_ledger_changed": false,
@@ -148,7 +158,7 @@
     "other_dialogue_adoption": "unknown",
     "formal_adjudication_change_scope": "Shan standalone design finalization recorded; existing H10 and 55 historical confirmations unchanged; no pool admission"
   },
-  "design_version": "SHAN-v1.0-6-2-4",
+  "design_version": "SHAN-v1.1-6-2-4",
   "finalization": {
     "id": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021",
     "hero_name": "山",
@@ -189,5 +199,83 @@
     "engine_runs": 0,
     "scoring_frozen": true,
     "NET": "paused"
+  },
+  "clarification_confirmation": {
+    "id": "CONF-SHAN-LETHAL-LEVEL-AND-READABILITY-20261021",
+    "version": "SHAN-v1.1-6-2-4",
+    "date_local": "2026-10-21",
+    "user_quote": "ok，同意该方案",
+    "preceding_user_quote": "压力能不能换个名词，换成一个致命等级？",
+    "source_base_commit": "f81c9e8fbf42a2d1f4809e9dc58dcadceea59390",
+    "status": "confirmed_design_clarification_not_implemented",
+    "scope": "visible player-readability proposal with lethal-level terminology substitution; core 6/2/4 and probability values retained",
+    "canonical_design": "worklines/main/candidates/shan/FINAL_DESIGN.md",
+    "confirmed_rules": {
+      "term": "致命等级",
+      "old_term": "压力",
+      "one_effective_check_per_action": true,
+      "double_check_counts": 1,
+      "unchanged_persistent_check_counts_again": false,
+      "cleared_then_recreated_check_counts_again": true,
+      "shared_definition_for_lethal_level_and_execution": true,
+      "new_effective_check_level_increment": 1,
+      "enemy_action_ends_without_check_level_decrement": 1,
+      "minimum_level": 0,
+      "first_effective_check_level": 1,
+      "guard_sacrifice_reduces_level": false,
+      "death_triggering_action_consumes_post_death_quota": false,
+      "countdown_starts_following_own_turn": true,
+      "death_triggering_action_check_counts_for_execution": false,
+      "last_turn_resolves_victory_before_timeout": true
+    },
+    "ui_requirements": {
+      "check_choices": [
+        "正常解将",
+        "赌命行动",
+        "亲卫护主"
+      ],
+      "show_current_lethal_level_and_actual_gamble_death_probability": true,
+      "highlight_eligible_advisor_and_explain_unavailability": true,
+      "own_post_death_counters": [
+        "剩余行动回合",
+        "特殊应将",
+        "有效将军／4"
+      ],
+      "enemy_receives_no_secret_death_or_post_death_progress_ui": true,
+      "actual_ui_artwork_approved": false
+    },
+    "remaining_open_boundaries": [
+      "precise source attribution under multi-stage, autonomous or extra-action effects",
+      "hidden/temporary-control/revived advisor eligibility",
+      "cross-hero/mutation/terminal/forced-displacement interactions"
+    ],
+    "new_score": null,
+    "engine_runs": 0,
+    "mode_pool_admission_changed": false,
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown"
+  },
+  "confirmed_timing": {
+    "death_triggering_action_not_charged_to_post_death_quota": true,
+    "countdown_starts_with_following_own_turn": true,
+    "death_triggering_action_check_not_retroactively_counted_for_execution": true,
+    "win_during_last_countdown_turn_resolves_before_timeout": true
+  },
+  "player_facing_requirements": {
+    "check_choices": [
+      "正常解将",
+      "赌命行动",
+      "亲卫护主"
+    ],
+    "show_current_lethal_level_and_actual_gamble_death_probability": true,
+    "highlight_eligible_advisor_and_explain_unavailability": true,
+    "own_post_death_counters": [
+      "剩余行动回合",
+      "特殊应将",
+      "有效将军／4"
+    ],
+    "enemy_receives_no_secret_death_or_post_death_progress_ui": true,
+    "actual_ui_artwork_approved": false
   }
 }
