@@ -1,6 +1,6 @@
 # 通用协作规则｜公开固定入口
 
-本入口可独立用于任何项目，不自动启动象棋工作。[当前完整协作正文](collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md)为2026-10-21.v0.14工作稿，正式基线仍为v1.8.0。
+本入口可独立用于任何项目，不自动启动象棋工作。[当前完整协作正文](collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md)为2026-10-21.v0.15工作稿，正式基线仍为v1.8.0。
 
 用户于2026-10-15同意将协作规则正文和独立入口公开，个人项目资料继续私有。v0.9按用户本次更新要求写入GitHub与所有对话交接机制，并将正文公开分类与已授权范围对齐。原P3分类及v0.8原字节保留在Git历史；公开授权仍只适用于CURRENT.json指明的当前协作正文，不扩大到它引用的其他私密文件。范围见[公开说明](collaboration/PUBLICATION_SCOPE.md)。
 
