@@ -1376,11 +1376,11 @@
     "final_design": "worklines/main/candidates/shan/FINAL_DESIGN.md",
     "finalization_confirmation": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021",
     "explicit_design_finalization": true,
-    "design_version": "SHAN-v1.1-6-2-4",
+    "design_version": "SHAN-v1.2-6-2-4",
     "lethal_level_term": "致命等级",
     "current_revision_rerated": false,
     "prior_score_role": "historical_paper_reference_not_new_v1_1_assessment",
-    "next_shan_action": "review W09 same-rook continuous-ray proposal; keep finalized values; no engine or new score"
+    "next_shan_action": "prepare bounded Shan implementation plan and validation scope; prior engineering next unchanged"
   },
   "shan_current_rating": {
     "id": "SHAN-PAPER-RATING-6-2-4-20261021",
@@ -1517,7 +1517,7 @@
     "date_local": "2026-10-21",
     "source_commit": "476f9ca9714a8c4627a40ad21252824266f6a306",
     "user_quote": "那就进行下一步吧。",
-    "status": "manual_local_walkthrough_complete_one_ordinary_ambiguity_pending",
+    "status": "manual_local_walkthrough_complete_W09_proposal_now_confirmed_not_runtime_verified",
     "report": "worklines/main/candidates/shan/POSITION_WALKTHROUGH.md",
     "design_version": "SHAN-v1.1-6-2-4",
     "manual_cases": 10,
@@ -1534,7 +1534,7 @@
     "existing_common_source_case": "W10",
     "pending_case": "W09",
     "pending_proposal": "同一枚棋子沿原将军线路移动，只要该威胁一直没有解除，就不重复计数；解除后再将，或这着棋真正新增另一条将军威胁，才计一次，同一着仍至多一次。",
-    "proposal_approved": false,
+    "proposal_approved": true,
     "verification": {
       "local_move_geometry": "same_AI_manual_check_only",
       "legal_initial_to_position_histories": 0,
@@ -1545,7 +1545,49 @@
       "new_score": null
     },
     "shared_source_scope": "01_CURRENT_RULES basic no-normal-general-capture and sections2.3-2.4 only; historical header not adopted as current authority",
-    "next": "review W09 exact proposal, then incorporate only on approval; implementation remains separate",
+    "next": "prepare bounded implementation plan and verification scope; no automatic mode admission or implementation",
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown",
+    "approval": {
+      "id": "CONF-SHAN-SAME-ROOK-RAY-CHECK-DEDUP-20261021",
+      "date_local": "2026-10-21",
+      "version": "SHAN-v1.2-6-2-4",
+      "user_quote": "合理",
+      "source_base_commit": "0ad88fec447202c202ff99b9249b491f328be754",
+      "proposal_source": "worklines/main/candidates/shan/POSITION_WALKTHROUGH.md#W09",
+      "status": "confirmed_design_not_implemented",
+      "policy": "同一枚车沿原将军线路移动，只要威胁没有解除，就不重复计数；解除后重新将军，或这着棋真正新增另一条将军威胁，才计一次，同一着仍至多一次。",
+      "applies_to": [
+        "致命等级升高",
+        "死后累计四次有效将军"
+      ],
+      "scope": "ordinary same-rook unchanged checking-ray deduplication; no automatic generalization to cannon screens, autonomous or multi-stage effects",
+      "numerics_changed": false,
+      "new_score": null,
+      "engine_runs": 0,
+      "scoring_frozen": true,
+      "NET": "paused",
+      "other_dialogue_adoption": "unknown"
+    }
+  },
+  "shan_same_ray_confirmation": {
+    "id": "CONF-SHAN-SAME-ROOK-RAY-CHECK-DEDUP-20261021",
+    "date_local": "2026-10-21",
+    "version": "SHAN-v1.2-6-2-4",
+    "user_quote": "合理",
+    "source_base_commit": "0ad88fec447202c202ff99b9249b491f328be754",
+    "proposal_source": "worklines/main/candidates/shan/POSITION_WALKTHROUGH.md#W09",
+    "status": "confirmed_design_not_implemented",
+    "policy": "同一枚车沿原将军线路移动，只要威胁没有解除，就不重复计数；解除后重新将军，或这着棋真正新增另一条将军威胁，才计一次，同一着仍至多一次。",
+    "applies_to": [
+      "致命等级升高",
+      "死后累计四次有效将军"
+    ],
+    "scope": "ordinary same-rook unchanged checking-ray deduplication; no automatic generalization to cannon screens, autonomous or multi-stage effects",
+    "numerics_changed": false,
+    "new_score": null,
+    "engine_runs": 0,
     "scoring_frozen": true,
     "NET": "paused",
     "other_dialogue_adoption": "unknown"

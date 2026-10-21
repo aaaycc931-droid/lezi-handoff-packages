@@ -1,6 +1,6 @@
 {
   "record_type": "adjudication_reference_selection",
-  "record_version": "1.64",
+  "record_version": "1.65",
   "project": "乐子象棋",
   "decision_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
@@ -6517,6 +6517,29 @@
       "new_score": null,
       "engine_runs": 0,
       "mode_pool_admission_changed": false,
+      "scoring_frozen": true,
+      "NET": "paused",
+      "other_dialogue_adoption": "unknown"
+    }
+  },
+  "standalone_hero_design_supplements": {
+    "shan_same_rook_ray": {
+      "id": "CONF-SHAN-SAME-ROOK-RAY-CHECK-DEDUP-20261021",
+      "date_local": "2026-10-21",
+      "version": "SHAN-v1.2-6-2-4",
+      "user_quote": "合理",
+      "source_base_commit": "0ad88fec447202c202ff99b9249b491f328be754",
+      "proposal_source": "worklines/main/candidates/shan/POSITION_WALKTHROUGH.md#W09",
+      "status": "confirmed_design_not_implemented",
+      "policy": "同一枚车沿原将军线路移动，只要威胁没有解除，就不重复计数；解除后重新将军，或这着棋真正新增另一条将军威胁，才计一次，同一着仍至多一次。",
+      "applies_to": [
+        "致命等级升高",
+        "死后累计四次有效将军"
+      ],
+      "scope": "ordinary same-rook unchanged checking-ray deduplication; no automatic generalization to cannon screens, autonomous or multi-stage effects",
+      "numerics_changed": false,
+      "new_score": null,
+      "engine_runs": 0,
       "scoring_frozen": true,
       "NET": "paused",
       "other_dialogue_adoption": "unknown"

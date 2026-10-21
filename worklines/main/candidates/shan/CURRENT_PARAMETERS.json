@@ -1,6 +1,6 @@
 {
   "schema": "lezi.shan.current_candidate_parameters.v1",
-  "revision": "SHAN-v1.1-6-2-4-LETHAL-20261021",
+  "revision": "SHAN-v1.2-6-2-4-SAME-RAY-20261021",
   "date_local": "2026-10-21",
   "status": "user_finalized_core_design_and_parameters_not_implemented",
   "latest_user_quote": "8回合改为6回合、2次死后特殊应将、4次有效将军。",
@@ -73,7 +73,9 @@
       "new_check_created_by_action_counts": true,
       "unchanged_persistent_threat_counts_again": false,
       "cleared_then_recreated_check_counts_again": true,
-      "shared_for_lethal_level_and_post_death_execution": true
+      "shared_for_lethal_level_and_post_death_execution": true,
+      "same_rook_moving_along_original_uninterrupted_checking_ray_counts_again": false,
+      "same_ray_confirmation_id": "CONF-SHAN-SAME-ROOK-RAY-CHECK-DEDUP-20261021"
     }
   },
   "source": {
@@ -100,7 +102,6 @@
     "terminology_migration": "pressure fields replaced by lethal_level fields in v1.1; same mechanic identity, original image/source terms preserved in history"
   },
   "known_open_boundaries": [
-    "ordinary same-checking-rook relocation along unchanged checking ray: W09 proposal pending",
     "precise source attribution under multi-stage, autonomous or extra-action effects",
     "hidden/temporary-control/revived advisor eligibility",
     "cross-hero/mutation/terminal/forced-displacement interactions"
@@ -147,7 +148,9 @@
     "assessed_configuration_revision": "SHAN-6-2-4-P10-80-20261021",
     "current_v1_1_clarifications_rerated": false,
     "current_revision_score": null,
-    "prior_paper_reference_only_for_current_revision": true
+    "prior_paper_reference_only_for_current_revision": true,
+    "current_design_revision_rerated": false,
+    "current_design_revision": "SHAN-v1.2-6-2-4"
   },
   "protection": {
     "formal_score_ledger_changed": false,
@@ -159,7 +162,7 @@
     "other_dialogue_adoption": "unknown",
     "formal_adjudication_change_scope": "Shan standalone design finalization recorded; existing H10 and 55 historical confirmations unchanged; no pool admission"
   },
-  "design_version": "SHAN-v1.1-6-2-4",
+  "design_version": "SHAN-v1.2-6-2-4",
   "finalization": {
     "id": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021",
     "hero_name": "山",
@@ -284,7 +287,7 @@
     "date_local": "2026-10-21",
     "source_commit": "476f9ca9714a8c4627a40ad21252824266f6a306",
     "user_quote": "那就进行下一步吧。",
-    "status": "manual_local_walkthrough_complete_one_ordinary_ambiguity_pending",
+    "status": "manual_local_walkthrough_complete_W09_proposal_now_confirmed_not_runtime_verified",
     "report": "worklines/main/candidates/shan/POSITION_WALKTHROUGH.md",
     "design_version": "SHAN-v1.1-6-2-4",
     "manual_cases": 10,
@@ -301,7 +304,7 @@
     "existing_common_source_case": "W10",
     "pending_case": "W09",
     "pending_proposal": "同一枚棋子沿原将军线路移动，只要该威胁一直没有解除，就不重复计数；解除后再将，或这着棋真正新增另一条将军威胁，才计一次，同一着仍至多一次。",
-    "proposal_approved": false,
+    "proposal_approved": true,
     "verification": {
       "local_move_geometry": "same_AI_manual_check_only",
       "legal_initial_to_position_histories": 0,
@@ -312,7 +315,49 @@
       "new_score": null
     },
     "shared_source_scope": "01_CURRENT_RULES basic no-normal-general-capture and sections2.3-2.4 only; historical header not adopted as current authority",
-    "next": "review W09 exact proposal, then incorporate only on approval; implementation remains separate",
+    "next": "prepare bounded implementation plan and verification scope; no automatic mode admission or implementation",
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown",
+    "approval": {
+      "id": "CONF-SHAN-SAME-ROOK-RAY-CHECK-DEDUP-20261021",
+      "date_local": "2026-10-21",
+      "version": "SHAN-v1.2-6-2-4",
+      "user_quote": "合理",
+      "source_base_commit": "0ad88fec447202c202ff99b9249b491f328be754",
+      "proposal_source": "worklines/main/candidates/shan/POSITION_WALKTHROUGH.md#W09",
+      "status": "confirmed_design_not_implemented",
+      "policy": "同一枚车沿原将军线路移动，只要威胁没有解除，就不重复计数；解除后重新将军，或这着棋真正新增另一条将军威胁，才计一次，同一着仍至多一次。",
+      "applies_to": [
+        "致命等级升高",
+        "死后累计四次有效将军"
+      ],
+      "scope": "ordinary same-rook unchanged checking-ray deduplication; no automatic generalization to cannon screens, autonomous or multi-stage effects",
+      "numerics_changed": false,
+      "new_score": null,
+      "engine_runs": 0,
+      "scoring_frozen": true,
+      "NET": "paused",
+      "other_dialogue_adoption": "unknown"
+    }
+  },
+  "same_ray_confirmation": {
+    "id": "CONF-SHAN-SAME-ROOK-RAY-CHECK-DEDUP-20261021",
+    "date_local": "2026-10-21",
+    "version": "SHAN-v1.2-6-2-4",
+    "user_quote": "合理",
+    "source_base_commit": "0ad88fec447202c202ff99b9249b491f328be754",
+    "proposal_source": "worklines/main/candidates/shan/POSITION_WALKTHROUGH.md#W09",
+    "status": "confirmed_design_not_implemented",
+    "policy": "同一枚车沿原将军线路移动，只要威胁没有解除，就不重复计数；解除后重新将军，或这着棋真正新增另一条将军威胁，才计一次，同一着仍至多一次。",
+    "applies_to": [
+      "致命等级升高",
+      "死后累计四次有效将军"
+    ],
+    "scope": "ordinary same-rook unchanged checking-ray deduplication; no automatic generalization to cannon screens, autonomous or multi-stage effects",
+    "numerics_changed": false,
+    "new_score": null,
+    "engine_runs": 0,
     "scoring_frozen": true,
     "NET": "paused",
     "other_dialogue_adoption": "unknown"
