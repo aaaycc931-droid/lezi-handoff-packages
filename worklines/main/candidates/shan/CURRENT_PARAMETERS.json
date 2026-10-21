@@ -2,7 +2,7 @@
   "schema": "lezi.shan.current_candidate_parameters.v1",
   "revision": "SHAN-6-2-4-P10-80-20261021",
   "date_local": "2026-10-21",
-  "status": "candidate_parameters_confirmed_for_current_design_iteration_not_formal_pool_or_engine_approval",
+  "status": "user_finalized_core_design_and_parameters_not_implemented",
   "latest_user_quote": "8回合改为6回合、2次死后特殊应将、4次有效将军。",
   "preceding_user_quote": "先按这个概率，死亡后的特殊应将改为两次",
   "parameters": {
@@ -52,14 +52,15 @@
     "general_cannot_move": true,
     "special_evasion_grants": "one ordinary action by another own piece; the general may remain threatened at its end; reassess next own action",
     "post_death_limit_rule": "After the two post-death special evasions have been used, a later check that cannot be normally answered causes defeat immediately; the countdown is not an additional guaranteed protection.",
-    "guard_rule_carried_as_evaluation_hypothesis": {
-      "status": "previous_candidate_evaluated_no_new_full_rule_approval_inferred_from_probability_or_count_change",
+    "guard_rule": {
+      "status": "confirmed_in_current_design_finalization",
       "safe_sacrifice_global_quota": 1,
       "piece": "own advisor immediately adjacent to general, including diagonal",
       "shared_before_after_death": true,
       "death_does_not_refresh": true,
       "post_death_use_still_spends_special_evasion": true,
-      "screenshot_sacrifice_grade_column_adopted": false
+      "screenshot_sacrifice_grade_column_adopted": false,
+      "confirmation_id": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021"
     }
   },
   "source": {
@@ -77,7 +78,12 @@
     },
     "probability_adoption": "User explicitly selected the image probabilities; only that column is adopted. Do not revive the older low/medium/high sacrifice grade scheme.",
     "count_change": "Latest user message supersedes the earlier 8-own-turn countdown and 5-check execution threshold; 2 post-death special evasions retained.",
-    "repository_base": "2dbdc04832278c109a57c7d69d0c7fbc11c5c0fd"
+    "repository_base": "2dbdc04832278c109a57c7d69d0c7fbc11c5c0fd",
+    "finalization": {
+      "user_quote": "现在定稿吧",
+      "base_commit": "ee9a2dd0c06d1d1f164a706e58497e8fb335b36b",
+      "canonical_design": "worklines/main/candidates/shan/FINAL_DESIGN.md"
+    }
   },
   "timing_assumptions_carried_forward_not_newly_confirmed": {
     "death_triggering_action_not_charged_to_post_death_quota": true,
@@ -89,7 +95,8 @@
     "precise effective-check deduplication",
     "death-triggering action and last-turn settlement order",
     "advisor eligibility under hidden pieces, temporary control and revival",
-    "interaction with other heroes, mutations, special elimination and forced displacement"
+    "interaction with other heroes, mutations, special elimination and forced displacement",
+    "precise pressure recovery amount, floor and initial sampling"
   ],
   "calculation_checks": {
     "independent_gambles_at_consecutively_increasing_pressure_1_to_4_survival": 0.234,
@@ -133,11 +140,54 @@
   },
   "protection": {
     "formal_score_ledger_changed": false,
-    "formal_adjudication_changed": false,
+    "formal_adjudication_changed": true,
     "engine_code_changed": false,
     "engine_runs": 0,
     "scoring_frozen": true,
     "NET": "paused",
-    "other_dialogue_adoption": "unknown"
+    "other_dialogue_adoption": "unknown",
+    "formal_adjudication_change_scope": "Shan standalone design finalization recorded; existing H10 and 55 historical confirmations unchanged; no pool admission"
+  },
+  "design_version": "SHAN-v1.0-6-2-4",
+  "finalization": {
+    "id": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021",
+    "hero_name": "山",
+    "version": "SHAN-v1.0-6-2-4",
+    "date_local": "2026-10-21",
+    "user_quote": "现在定稿吧",
+    "source_base_commit": "ee9a2dd0c06d1d1f164a706e58497e8fb335b36b",
+    "reviewed_configuration": "6 own turns / 2 post-death special evasions / 4 effective checks; one adjacent-advisor guard and pressure death probabilities",
+    "status": "user_finalized_core_design_and_parameters_not_implemented",
+    "canonical_design": "worklines/main/candidates/shan/FINAL_DESIGN.md",
+    "parameter_file": "worklines/main/candidates/shan/CURRENT_PARAMETERS.json",
+    "approval_scope": [
+      "current Shan core design and numeric parameters",
+      "one globally shared adjacent-own-advisor sacrifice without refresh at death",
+      "adopted pressure-based probability column only"
+    ],
+    "open_boundaries_not_silently_approved": [
+      "effective-check deduplication",
+      "pressure recovery amount and floor",
+      "death-action and last-turn timing assumptions",
+      "hidden/temporary-control/revived advisor eligibility",
+      "cross-hero/mutation/terminal/displacement interactions"
+    ],
+    "not_inferred": [
+      "hero ID assignment or replacement of H10 Wind",
+      "mode pool admission",
+      "engine implementation or runtime acceptance",
+      "formal score ledger change or scoring thaw"
+    ],
+    "reference_score": {
+      "raw": 43,
+      "standard": 53.75,
+      "approximate": 54,
+      "kind": "low_confidence_paper_reference_not_measured",
+      "report": "worklines/main/candidates/shan/RATING_6_2_4.md"
+    },
+    "other_dialogue_adoption": "unknown",
+    "engine_runs": 0,
+    "scoring_frozen": true,
+    "NET": "paused"
   }
 }

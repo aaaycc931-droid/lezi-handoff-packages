@@ -287,7 +287,7 @@
       "proof": "Original main archive bytes matched existing remote tree blob SHA; only these listed paths checked, not the whole historical tree."
     }
   ],
-  "current_record_version": "1.62",
+  "current_record_version": "1.63",
   "latest_maintenance_base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
   "latest_confirmation_source": {
     "id": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
@@ -1350,7 +1350,11 @@
     "score_status": "conditional_paper_assessment_complete_not_formal_score",
     "formal_score_ledger_changed": false,
     "formal_gameplay_approval_inferred": false,
-    "rating_report": "worklines/main/candidates/shan/RATING_6_2_4.md"
+    "rating_report": "worklines/main/candidates/shan/RATING_6_2_4.md",
+    "design_status": "user_finalized_core_design_and_parameters_not_implemented",
+    "final_design": "worklines/main/candidates/shan/FINAL_DESIGN.md",
+    "finalization_confirmation": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021",
+    "explicit_design_finalization": true
   },
   "shan_current_rating": {
     "id": "SHAN-PAPER-RATING-6-2-4-20261021",
@@ -1384,5 +1388,46 @@
     "scoring_frozen": true,
     "NET": "paused",
     "other_dialogue_adoption": "unknown"
+  },
+  "shan_design_finalization": {
+    "id": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021",
+    "hero_name": "山",
+    "version": "SHAN-v1.0-6-2-4",
+    "date_local": "2026-10-21",
+    "user_quote": "现在定稿吧",
+    "source_base_commit": "ee9a2dd0c06d1d1f164a706e58497e8fb335b36b",
+    "reviewed_configuration": "6 own turns / 2 post-death special evasions / 4 effective checks; one adjacent-advisor guard and pressure death probabilities",
+    "status": "user_finalized_core_design_and_parameters_not_implemented",
+    "canonical_design": "worklines/main/candidates/shan/FINAL_DESIGN.md",
+    "parameter_file": "worklines/main/candidates/shan/CURRENT_PARAMETERS.json",
+    "approval_scope": [
+      "current Shan core design and numeric parameters",
+      "one globally shared adjacent-own-advisor sacrifice without refresh at death",
+      "adopted pressure-based probability column only"
+    ],
+    "open_boundaries_not_silently_approved": [
+      "effective-check deduplication",
+      "pressure recovery amount and floor",
+      "death-action and last-turn timing assumptions",
+      "hidden/temporary-control/revived advisor eligibility",
+      "cross-hero/mutation/terminal/displacement interactions"
+    ],
+    "not_inferred": [
+      "hero ID assignment or replacement of H10 Wind",
+      "mode pool admission",
+      "engine implementation or runtime acceptance",
+      "formal score ledger change or scoring thaw"
+    ],
+    "reference_score": {
+      "raw": 43,
+      "standard": 53.75,
+      "approximate": 54,
+      "kind": "low_confidence_paper_reference_not_measured",
+      "report": "worklines/main/candidates/shan/RATING_6_2_4.md"
+    },
+    "other_dialogue_adoption": "unknown",
+    "engine_runs": 0,
+    "scoring_frozen": true,
+    "NET": "paused"
   }
 }

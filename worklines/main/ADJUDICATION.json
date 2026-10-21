@@ -1,6 +1,6 @@
 {
   "record_type": "adjudication_reference_selection",
-  "record_version": "1.62",
+  "record_version": "1.63",
   "project": "乐子象棋",
   "decision_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
@@ -62,7 +62,7 @@
     "empirical_n": 0,
     "ui_approval": "per_image_explicit_approval"
   },
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-21",
   "tencent_screenshot_evidence": {
     "source_type": "user_supplied_in_game_rule_screenshots",
     "received_at": "2026-10-12T17:04:05+08:00",
@@ -6420,5 +6420,48 @@
     "commit": "d715147e7e952f6a40d5bb567ea4ea087c819bd5",
     "path": "worklines/main/ADJUDICATION.json#/current_session_closure",
     "role": "Previous closure provenance remains in Git; current round supersedes active session routing only."
+  },
+  "standalone_hero_design_finalizations": {
+    "shan": {
+      "id": "CONF-SHAN-DESIGN-FINAL-6-2-4-20261021",
+      "hero_name": "山",
+      "version": "SHAN-v1.0-6-2-4",
+      "date_local": "2026-10-21",
+      "user_quote": "现在定稿吧",
+      "source_base_commit": "ee9a2dd0c06d1d1f164a706e58497e8fb335b36b",
+      "reviewed_configuration": "6 own turns / 2 post-death special evasions / 4 effective checks; one adjacent-advisor guard and pressure death probabilities",
+      "status": "user_finalized_core_design_and_parameters_not_implemented",
+      "canonical_design": "worklines/main/candidates/shan/FINAL_DESIGN.md",
+      "parameter_file": "worklines/main/candidates/shan/CURRENT_PARAMETERS.json",
+      "approval_scope": [
+        "current Shan core design and numeric parameters",
+        "one globally shared adjacent-own-advisor sacrifice without refresh at death",
+        "adopted pressure-based probability column only"
+      ],
+      "open_boundaries_not_silently_approved": [
+        "effective-check deduplication",
+        "pressure recovery amount and floor",
+        "death-action and last-turn timing assumptions",
+        "hidden/temporary-control/revived advisor eligibility",
+        "cross-hero/mutation/terminal/displacement interactions"
+      ],
+      "not_inferred": [
+        "hero ID assignment or replacement of H10 Wind",
+        "mode pool admission",
+        "engine implementation or runtime acceptance",
+        "formal score ledger change or scoring thaw"
+      ],
+      "reference_score": {
+        "raw": 43,
+        "standard": 53.75,
+        "approximate": 54,
+        "kind": "low_confidence_paper_reference_not_measured",
+        "report": "worklines/main/candidates/shan/RATING_6_2_4.md"
+      },
+      "other_dialogue_adoption": "unknown",
+      "engine_runs": 0,
+      "scoring_frozen": true,
+      "NET": "paused"
+    }
   }
 }
