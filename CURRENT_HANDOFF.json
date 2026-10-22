@@ -555,7 +555,7 @@
       "NET": "paused",
       "other_dialogue_adoption": "unknown"
     },
-    "next": "WIND-OPENING-POSITION-WALKTHROUGH-AND-RERATING",
+    "next": "Split: conversation mode for hero experience, Work mode for scoring optimization; read per-route handoffs",
     "rating_review": {
       "id": "WIND-PAPER-RATING-REVIEW-20261022",
       "date_local": "2026-10-22",
@@ -582,7 +582,69 @@
       "rule_changes": 0,
       "engine_runs": 0,
       "next": "WIND-OPENING-POSITION-WALKTHROUGH-AND-RERATING"
+    },
+    "session_closeout": {
+      "id": "HERO-DESIGN-SCORING-SPLIT-CLOSEOUT-20261022",
+      "entry": "worklines/main/candidates/wind/SESSION_CLOSEOUT.md",
+      "status": "current_dialogue_closed",
+      "next_by_route": {
+        "hero_design": "worklines/main/candidates/wind/SESSION_CLOSEOUT.md",
+        "scoring_optimization": "worklines/main/scoring/OPTIMIZATION_HANDOFF.md"
+      }
     }
   },
-  "hero_design_exploration": "风林火山阴霆为可放弃的主题，不承诺完成数量；水新增为创意候选，具体流转未定。风机动／单刃进攻方向已确认；不自动改现有单刃或旧H10。"
+  "hero_design_exploration": "风林火山阴霆为可放弃的主题，不承诺完成数量；水新增为创意候选，具体流转未定。风机动／单刃进攻方向已确认；不自动改现有单刃或旧H10。",
+  "hero_design_scoring_split_closeout": {
+    "id": "HERO-DESIGN-SCORING-SPLIT-CLOSEOUT-20261022",
+    "date_local": "2026-10-22",
+    "scope": "this dialogue only; original main engineering and other dialogues preserved",
+    "user_quote": "现在看来，评分系统的确应该优化。那么现在我们这个对话需要分成两个路径执行，一个是英雄设计，一个是规则优化，一条我要交给对话模式探讨，另一条规则优化，我要交给工作模式，本轮对话可以进行收束",
+    "status": "closed_with_two_separate_continuation_handoffs",
+    "source_base": "7d98e5b0ca01b2384fbd06cace81413a462c06d7",
+    "routes": {
+      "hero_design": {
+        "environment": "conversation mode",
+        "entry": "worklines/main/candidates/wind/SESSION_CLOSEOUT.md",
+        "status": "ready_for_user_to_resume_in_new_dialogue",
+        "next": "wind concrete opening experience, preserve confirmed mechanics; other hero exploration as directed",
+        "writes": "design discussion and clearly sourced candidate increments; no scoring-method or engine changes"
+      },
+      "scoring_optimization": {
+        "environment": "work mode",
+        "entry": "worklines/main/scoring/OPTIMIZATION_HANDOFF.md",
+        "status": "NOT_STARTED_HANDOFF_PREPARED",
+        "authorization": "user explicitly requested scoring-system optimization in separate Work dialogue; candidate diagnosis/method/validation/writeback, no presumption of specific unpresented weights adopted",
+        "next": "read complete original method/ledger and Wind correction; execute candidate-method improvement and cross-type validation",
+        "writes": "separate scoring candidates and actual progress; frozen original method/ledger preserved"
+      }
+    },
+    "wind": {
+      "design": "WIND-DESIGN-5T-2USES-v1",
+      "confirmed_mechanic_unchanged": true,
+      "current_numeric_rating": null,
+      "previous_25": "withdrawn_not_current_strength_conclusion",
+      "not_replaced_old_H10": true
+    },
+    "preserved": {
+      "shan_design": "v1.2 6/2/4",
+      "shan_engine": "PR12 478d798657524e18662683d053b5246b3c76419b draft unmerged; 34+27 checks; next 2B separate",
+      "other_heroes": "no gameplay changes",
+      "main_engineering": "existing path/endpoint safety task not overwritten",
+      "scoring_frozen": true,
+      "NET": "paused"
+    },
+    "other_dialogue_actual_reading_and_adoption": "unknown; no receiver receipt or automatic wakeup",
+    "this_closeout": {
+      "new_gameplay_rules": 0,
+      "new_scores": 0,
+      "scoring_method_revisions": 0,
+      "engine_code_changes": 0,
+      "engine_runs": 0,
+      "automatic_messages_sent": 0
+    }
+  },
+  "hero_and_scoring_routes": {
+    "hero_design": "worklines/main/candidates/wind/SESSION_CLOSEOUT.md",
+    "scoring_optimization": "worklines/main/scoring/OPTIMIZATION_HANDOFF.md"
+  }
 }
