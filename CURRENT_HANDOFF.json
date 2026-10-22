@@ -28,7 +28,7 @@
     "workflow_section": "GITHUB_HANDOFF_WORKFLOW"
   },
   "previous_index_updated_at_local": "2026-10-15T15:18:11+08:00",
-  "updated_on_local": "2026-10-21",
+  "updated_on_local": "2026-10-22",
   "main_recovery": {
     "date_local": "2026-10-17",
     "entry": "worklines/main/START_HERE.txt",
@@ -436,5 +436,69 @@
       "UI afterB8"
     ],
     "historical_note": "The 2026-10-17 closeout remains a historical scoped record. Main resumed for r38 engineering review on2026-10-20; use latest_engineering_priority and per-line current entries, not these old per-line snapshots."
+  },
+  "shan_second_stage_2a_implementation": {
+    "id": "SHAN-2A-BOARD-FACTS-20261022",
+    "date_local": "2026-10-22",
+    "user_quote": "继续《乐子象棋》山英雄工作，读取主线固定入口，按山的最新收束记录接续，从第二阶段2A真实棋盘适配与测试开始，继承已确认设计。",
+    "status": "BOARD_QUERY_ADAPTER_IMPLEMENTED_34_NEW_PLUS_27_CORE_PASS_DRAFT_UNMERGED",
+    "handoff_base": "cd0c9d9284beebbee5f599fe79f7e2d0061a4f67",
+    "design_version": "SHAN-v1.2-6-2-4",
+    "report": "worklines/main/candidates/shan/SECOND_STAGE_2A_IMPLEMENTATION.md",
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_base": "a27833955e6f1b8d70dca9b8c15aad193c6c3479",
+    "engine_commit": "478d798657524e18662683d053b5246b3c76419b",
+    "engine_branch": "codex/shan-board-20261022",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/12",
+    "pull_request_number": 12,
+    "upstream_pr": 11,
+    "files": [
+      {
+        "path": "src/shan-board.ts",
+        "git_blob_sha": "0a3d0767f3040a84fef643762cc58b1e5d0dacdc"
+      },
+      {
+        "path": "tests/shan-board.test.ts",
+        "git_blob_sha": "5d90c2b1b1cfcd418f826f1a90296a07a0a0cea5"
+      }
+    ],
+    "verification": {
+      "node_version": "v24.19.0",
+      "command": "node --test --test-reporter=tap tests/shan-board.test.ts tests/shan-core.test.ts",
+      "planned_board_groups": 12,
+      "new_board_tests": 34,
+      "unchanged_core_tests": 27,
+      "total_tests": 61,
+      "passed": 61,
+      "failed": 0,
+      "skipped": 0,
+      "test_commands_run": 4,
+      "remote_code_readback_exact": true,
+      "existing_remote_blobs_preserved": 529,
+      "formal_game_entry_runs": 0,
+      "natural_game_replays": 0,
+      "full_typescript_typecheck": "NOT_RUN_tsc_unavailable"
+    },
+    "scope": "ordinary revealed-ground xiangqi queries and occupancy candidates; trusted internal provenance and closure, not client fields or authority authentication",
+    "unknown_coverage": [
+      "cannon movement or changed ray occupancy",
+      "special/hidden/control/revival/hero/mutation effects and spaces",
+      "unattested or open atomic state"
+    ],
+    "not_done": [
+      "2B formal move/event/captured/resource/secret atomic transaction and early terminal routing",
+      "hero registration or mode admission",
+      "actual UI/authenticated wire and Bluetooth privacy",
+      "complete natural game or balance acceptance"
+    ],
+    "mode_gate_changed": false,
+    "merged": false,
+    "new_score": null,
+    "formal_ledger_changed": false,
+    "next": "SHAN-2B-AUTHORITATIVE-INTEGRATION",
+    "next_details": "落实原SECOND_STAGE_PLAN.md的同候选权威事务、提前将死分流与末回合先胜后超时；先处理影响完整终局的unknown覆盖，不把组件unknown当产品新拒绝政策。",
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_adoption": "unknown"
   }
 }

@@ -48,3 +48,7 @@
 用户明确“开始实施吧”，指向本对话已发布并入库的candidates/shan/IMPLEMENTATION_PLAN.md第一阶段：独立模块src/shan-core.ts和tests/shan-core.test.ts，以及12组组件验证。本轮依此实施并运行，不需要再次确认该相同范围；不延伸为后续普通对局接入、英雄注册／模式入池、产品门禁更改或完整联动实现。
 
 固定PR10源7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9派生独立分支，a27833955e6f1b8d70dca9b8c15aad193c6c3479与草稿PR11已发布、未合并。仅新增两文件，27项合成事实组件测试通过，生产入口未引用模块；真实棋盘适配、完整棋谱、实际wire保密与完整TypeScript编译未验收。具体身份、命令、保护和下一步见candidates/shan/FIRST_STAGE_IMPLEMENTATION.md。既有工程断点、各线成果、评分冻结及NET暂停保留。
+
+## 2026-10-22 山第二阶段2A限定实施
+
+用户本轮明确从第二阶段2A真实棋盘适配与测试开始，继承已确认设计。目标对应新增src/shan-board.ts及测试，以既有真实规则查询生成组件事实、隔离亲卫候选和穷举应对；复用走法而不另写象棋引擎，先在新增文件定位错误，不扩成正式事务或准入。已在固定PR11源上发布草稿PR12，34新＋27旧检查通过；实际版本、差分、unknown覆盖、暂缓理由／影响／恢复条件与下一2B见candidates/shan/SECOND_STAGE_2A_IMPLEMENTATION.md。当前协作按v0.16所需模块采用，非全文审查或长期效果验收。保护各线与原工程断点，不合并、部署、注册入池、修改UI／wire、重评或恢复NET。
