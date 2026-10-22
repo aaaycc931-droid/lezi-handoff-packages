@@ -1897,5 +1897,70 @@
     "scoring_frozen": true,
     "NET": "paused",
     "other_dialogue_adoption": "unknown"
+  },
+  "wind_redesign": {
+    "id": "WIND-DESIGN-5T-2USES-v1",
+    "date_local": "2026-10-22",
+    "status": "user_confirmed_base_mechanic_parameters_conditionally_paper_rated_not_implemented",
+    "confirmation": {
+      "user_quote": "固定，然后就可以开始评分了吧，也没有什么别的规则要限制",
+      "preceding_user_quote": "我们把这个机制定为前5个己方回合允许使用两次技能。怎么样",
+      "scope": "current displayed two-distinct-nonroyal ordinary-move mechanic, two uses in own first five formal turns, once per turn and expiry; no new restrictions or complete product admission"
+    },
+    "design": "worklines/main/candidates/wind/DESIGN.md",
+    "notes": "worklines/main/candidates/wind/RECONSTRUCTION_NOTES.md",
+    "rating_report": "worklines/main/candidates/wind/PAPER_RATING.md",
+    "parameters": {
+      "own_formal_turn_window": [
+        1,
+        5
+      ],
+      "total_uses": 2,
+      "max_uses_per_formal_turn": 1,
+      "distinct_nonroyal_pieces_per_use": 2,
+      "ordinary_moves_per_piece": 1,
+      "skill_moves_can_capture": false,
+      "first_step_can_check": false,
+      "second_step_can_check": true,
+      "each_step_requires_own_royal_safety": true,
+      "uses_normal_main_action": true,
+      "unused_uses_expire_at_own_turn_5_end": true
+    },
+    "evaluation": {
+      "raw": 20,
+      "standard": 25,
+      "approximate": 25,
+      "dimensions": [
+        3,
+        3,
+        8,
+        6,
+        0
+      ],
+      "confidence": "low",
+      "kind": "conditional_paper_reference_not_measured",
+      "scope": "ordinary revealed-ground base without mutation or extra effect sources",
+      "probability_weighted_tree_complete": false,
+      "not_win_rate": true,
+      "formal_ledger_changed": false,
+      "engine_runs": 0,
+      "legal_game_replays": 0
+    },
+    "source_base": "d68756a33da2c801d7a4d50aabf5e0db4ae9d9bf",
+    "scoring_method": {
+      "revision": "v2.9-clean",
+      "path": "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/pinned_repo/handoff/current/07_DESIGN_SCORING.md",
+      "git_blob_sha": "a1def9b7ab60626096a4bf18a01d318deb1f1c81"
+    },
+    "protection": {
+      "old_H10_rules_code_not_replaced": true,
+      "shan_unchanged": true,
+      "hero_registration_mode_pool_changes": 0,
+      "code_changes": 0,
+      "scoring_frozen": true,
+      "NET": "paused",
+      "other_dialogue_adoption": "unknown"
+    },
+    "next": "WIND-OPENING-POSITION-WALKTHROUGH: compare two-use deployment, attack opportunity cost, first/second-player differences; no automatic redesign or implementation"
   }
 }
