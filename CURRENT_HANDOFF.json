@@ -504,7 +504,7 @@
   "wind_redesign": {
     "id": "WIND-DESIGN-5T-2USES-v1",
     "date_local": "2026-10-22",
-    "status": "user_confirmed_base_mechanic_parameters_conditionally_paper_rated_not_implemented",
+    "status": "user_confirmed_mechanic_numeric_rating_withdrawn_pending_position_reassessment",
     "confirmation": {
       "user_quote": "固定，然后就可以开始评分了吧，也没有什么别的规则要限制",
       "preceding_user_quote": "我们把这个机制定为前5个己方回合允许使用两次技能。怎么样",
@@ -530,20 +530,11 @@
       "unused_uses_expire_at_own_turn_5_end": true
     },
     "evaluation": {
-      "raw": 20,
-      "standard": 25,
-      "approximate": 25,
-      "dimensions": [
-        3,
-        3,
-        8,
-        6,
-        0
-      ],
-      "confidence": "low",
-      "kind": "conditional_paper_reference_not_measured",
+      "raw": null,
+      "standard": null,
+      "approximate": null,
+      "status": "withdrawn_25_reference_pending_reassessment",
       "scope": "ordinary revealed-ground base without mutation or extra effect sources",
-      "probability_weighted_tree_complete": false,
       "not_win_rate": true,
       "formal_ledger_changed": false,
       "engine_runs": 0,
@@ -564,7 +555,34 @@
       "NET": "paused",
       "other_dialogue_adoption": "unknown"
     },
-    "next": "WIND-OPENING-POSITION-WALKTHROUGH: compare two-use deployment, attack opportunity cost, first/second-player differences; no automatic redesign or implementation"
+    "next": "WIND-OPENING-POSITION-WALKTHROUGH-AND-RERATING",
+    "rating_review": {
+      "id": "WIND-PAPER-RATING-REVIEW-20261022",
+      "date_local": "2026-10-22",
+      "user_quotes": [
+        "这不对吧，为什么分数如此之低，这跟没有技能差别不大了",
+        "如果英雄评分真的如此之低，也许我们低估了象棋中机动性带来的优势"
+      ],
+      "status": "numeric_reference_withdrawn_pending_position_based_reassessment",
+      "withdrawn_reference": {
+        "raw": 20,
+        "standard": 25,
+        "dimensions": [
+          3,
+          3,
+          8,
+          6,
+          0
+        ],
+        "source_commit": "4ec74e63e8ccfb8096cf3b716e35938966505554"
+      },
+      "root_cause": "unsupported dimension allocations; absence of direct capture/terminal permission does not establish low indirect impact; timing, reduced opponent intervention and later conversion were described but not grounded in positions",
+      "mobility_undervaluation": "plausible hypothesis, magnitude not established; no automatic score increase or global method change",
+      "new_numeric_score": null,
+      "rule_changes": 0,
+      "engine_runs": 0,
+      "next": "WIND-OPENING-POSITION-WALKTHROUGH-AND-RERATING"
+    }
   },
   "hero_design_exploration": "风林火山阴霆为可放弃的主题，不承诺完成数量；水新增为创意候选，具体流转未定。风机动／单刃进攻方向已确认；不自动改现有单刃或旧H10。"
 }
