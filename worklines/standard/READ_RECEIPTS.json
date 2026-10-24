@@ -1,7 +1,7 @@
 {
   "schema": "lezi.workline_read_receipts.v1",
   "receiver_workline": "standard",
-  "recorded_at_local": "2026-10-19T22:53:36+08:00",
+  "recorded_at_local": "2026-10-24",
   "by_source_workline": {
     "main": {
       "source_commit": "eaf6ad333a5519dc94dd233eeaae746609e5896e",
@@ -1632,5 +1632,41 @@
     "direct_shared": 13,
     "same_conversation_new_shared_confirmations": 2,
     "engine_runs": 0
+  },
+  "std_rng_01_20261024": {
+    "task_id": "STD-RNG-01",
+    "receiver": "standard",
+    "received_main_task": true,
+    "read_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
+    "read_paths": [
+      "START_STANDARD.txt",
+      "worklines/standard/START_HERE.txt",
+      "worklines/standard/CURRENT_STATE.json",
+      "worklines/standard/NEXT_ACTIONS.json",
+      "worklines/standard/TASK_FROM_MAIN.json",
+      "worklines/main/MODE_DISPATCH.json",
+      "worklines/main/MAIN_FOUNDATION_REPORT.json",
+      "worklines/standard/SOURCE_PRIORITY.json",
+      "worklines/standard/PROJECT_WORK_AGREEMENT.md",
+      "START_COLLABORATION.md",
+      "collaboration/CURRENT.json",
+      "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md (task-specific sections)",
+      "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H21",
+      "worklines/standard/sources/standard/LEZI_STD_DESIGN_03_WORKING_20261014.md#H21",
+      "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+      "worklines/standard/reviews/H02_M04_H21_NP_CONTRACT_AND_ATOMIC_GATES_REVIEW_20261020.md",
+      "worklines/standard/RETURN_TO_MAIN.json",
+      "worklines/standard/READ_RECEIPTS.json",
+      "aaaycc931-droid/jieqi-engine@3f98bc9:src/hero-descent.ts,src/settlement.ts,src/setup.ts,src/hero-actions.ts,src/spaces.ts,src/slots.ts,src/types.ts"
+    ],
+    "task_adopted_for_document_scope": true,
+    "PR13_merged": false,
+    "PR13_product_adoption_not_claimed": true,
+    "previous_confirmations_preserved": true,
+    "new_rule_approvals": 0,
+    "other_workline_receiver_claims": [],
+    "source_trace": "reviews/H21_RNG_SOURCE_TRACE.md",
+    "verification": "V2 text/source; V1 analytical conditional deductions; not engine runtime",
+    "next": "NEXT-STD-H21-RNG-CONTRACT-AND-REPLAY-EVIDENCE"
   }
 }

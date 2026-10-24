@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "closed_dialogue_20261020_np_contract_complete_rng_provenance_not_started",
+  "status": "active_20261024_STD_RNG_01_source_trace_completed_document_only",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -44,10 +44,10 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE",
-    "subject": "H21无敌随机授鳞数量与抽样可复现性来源追溯",
-    "action": "只读核对原始H21规则与实际实现线索（若可访问）确认最多4枚的抽数、分布与能否重放；将NP条件合同转为有真实可达证据的用例。无真实来源则保留阻断，若有明确合法分歧才提交共享候选给主线/用户；不改代码、不运行引擎。",
-    "status": "ready_not_started_paused_until_user_continuation",
+    "id": "NEXT-STD-H21-RNG-CONTRACT-AND-REPLAY-EVIDENCE",
+    "subject": "将真实授鳞函数的条件可达性转为复验门禁，补随机重放证据缺口",
+    "action": "基于已核到的 choose/RandomInt 源码，准备分模式且不碰业务代码的N=0/1/3/4/15抽数、无放回、混合池、全支持抽签、AS/AP/ES条件集合的复验契约；向主线明确RandomInt调用来源与合法记录/复播所需观测接口。未获代码/引擎许可不运行，不以拟定均匀概率或测试注入自动改批准玩法；若原批准文本与实现确有不同合法结果，另形成精确共享候选由用户决定。",
+    "status": "ready_after_trace_not_started",
     "implementation_authorized": false
   },
   "external_delivery": {
@@ -200,11 +200,7 @@
   "M04_confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
   "M05_status": "confirmed_design_not_implemented_or_tested",
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
-  "latest_user_instruction": {
-    "quote": "收束本轮对话",
-    "at_local": "2026-10-19T22:51:34+08:00",
-    "scope": "Close current conversation only; preserve all work/approvals/limits, no next source-review stage started."
-  },
+  "latest_user_instruction": "继续普通模式象棋推进",
   "new_rule_confirmations_since_dispatch": 10,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
   "M06_status": "confirmed_design_not_implemented_or_tested",
@@ -783,6 +779,51 @@
     "main_receive_verified": null,
     "main_adoption_verified": null,
     "other_mode_adoption_verified": null,
-    "resume_entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt"
+    "resume_entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt",
+    "historical_only": true,
+    "not_reopened_as_approval": true
+  },
+  "standard_rng_source_trace_20261024": {
+    "id": "STD-RNG-01-20261024",
+    "task_from_main": "worklines/standard/TASK_FROM_MAIN.json",
+    "receipt_source_head": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
+    "code_source_repo": "aaaycc931-droid/jieqi-engine",
+    "code_source_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "code_is_draft_PR13_not_merged": true,
+    "report": "worklines/standard/reviews/H21_RNG_SOURCE_TRACE.md",
+    "result": "CODE_FIXED_COUNT_MIN_4_WITHOUT_REPLACEMENT; RULE_WORDING_MAX_4_ONLY",
+    "source_verified": [
+      "rule: rules/shared/02_CURRENT_HEROES.md#H21",
+      "confirmed: work/LEZI_STD_DESIGN_03_WORKING_20261014.md#H21-invincible",
+      "engine: src/hero-descent.ts 11-14,20-36",
+      "engine: src/settlement.ts 301-337",
+      "engine: src/setup.ts 36-47",
+      "engine: src/hero-actions.ts 83-110"
+    ],
+    "eligible_pool": "current on-board controlled non-general; real-time; river excluded, air included; under NP B5 black has 15",
+    "count_model_in_code": "min(4,N) for all N>=0",
+    "draws_in_code": "sequential index draw over remaining pool, splice each chosen ID, no replacement",
+    "default_random": "Math.random based defaults in settlement/hero-actions; secureRandomInt exists in setup but not proven for this call path",
+    "replay_status": "injected RandomInt may reproduce with identical state,pool/order,and choices; natural draw recording/seed/authority replay not proven",
+    "conditional_example_probability": "1 / C(15,4) = 1/1365 for each exact four-piece set IF each remaining-pool draw uniform, not an observed game frequency",
+    "np_branches": [
+      "AS",
+      "AP",
+      "ES"
+    ],
+    "np_selection_reachability": "source-code-conditional under full-support random index draws; not live engine replay",
+    "formal_specs": "UNRUN",
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "independent_QA": false,
+    "rule_delta": 0,
+    "new_ordinary_confirmations": 0,
+    "new_shared_confirmations": 0,
+    "ordinary_confirmations_retained": 31,
+    "direct_shared_confirmations_retained": 13,
+    "action_boundary": "document-only; current rule 'max 4' not silently replaced with code-mandated 'always 4'",
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_adoption": "unknown; receiver must verify"
   }
 }

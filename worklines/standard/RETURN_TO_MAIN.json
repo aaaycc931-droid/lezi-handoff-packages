@@ -6,10 +6,10 @@
   "source_commit": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
   "base_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "approval_context_source_commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
-  "phase": "2026-10-20 standard dialogue closed; NP contract published, H21 RNG provenance pending",
+  "phase": "STD_RNG_01_SOURCE_TRACE_COMPLETED",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE",
+  "current_breakpoint": "NEXT-STD-H21-RNG-CONTRACT-AND-REPLAY-EVIDENCE",
   "confirmed_delta": [],
   "new_user_rule_confirmations": 0,
   "preserved_confirmations": {
@@ -371,7 +371,7 @@
     "force": false,
     "other_workline_adoption_inferred": false
   },
-  "implementation_status": "session_closeout_only_no_new_design_implementation_or_game_engine_run",
+  "implementation_status": "documented static source trace only; engine and formal NP specs UNRUN",
   "scoring": {
     "frozen": true,
     "q": null,
@@ -1069,9 +1069,11 @@
     }
   },
   "next_task": {
-    "id": "NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE",
-    "status": "ready_not_started_paused_until_explicit_continuation",
-    "scope": "Read-only source trace H21 random up to four and test reproducibility; new policy only after concrete confirmed gap and user approval"
+    "id": "NEXT-STD-H21-RNG-CONTRACT-AND-REPLAY-EVIDENCE",
+    "subject": "将真实授鳞函数的条件可达性转为复验门禁，补随机重放证据缺口",
+    "action": "基于已核到的 choose/RandomInt 源码，准备分模式且不碰业务代码的N=0/1/3/4/15抽数、无放回、混合池、全支持抽签、AS/AP/ES条件集合的复验契约；向主线明确RandomInt调用来源与合法记录/复播所需观测接口。未获代码/引擎许可不运行，不以拟定均匀概率或测试注入自动改批准玩法；若原批准文本与实现确有不同合法结果，另形成精确共享候选由用户决定。",
+    "status": "ready_after_trace_not_started",
+    "implementation_authorized": false
   },
   "terminology": {
     "M04_charge_word": "Existing descriptive wording in prior M04 text; not a new global keyword",
@@ -1446,5 +1448,54 @@
     "other_modes_adoption_verified": null,
     "NET": "paused",
     "scoring": "frozen"
+  },
+  "h21_rng_source_trace_20261024": {
+    "id": "STD-RNG-01-20261024",
+    "task_from_main": "worklines/standard/TASK_FROM_MAIN.json",
+    "receipt_source_head": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
+    "code_source_repo": "aaaycc931-droid/jieqi-engine",
+    "code_source_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "code_is_draft_PR13_not_merged": true,
+    "report": "worklines/standard/reviews/H21_RNG_SOURCE_TRACE.md",
+    "result": "CODE_FIXED_COUNT_MIN_4_WITHOUT_REPLACEMENT; RULE_WORDING_MAX_4_ONLY",
+    "source_verified": [
+      "rule: rules/shared/02_CURRENT_HEROES.md#H21",
+      "confirmed: work/LEZI_STD_DESIGN_03_WORKING_20261014.md#H21-invincible",
+      "engine: src/hero-descent.ts 11-14,20-36",
+      "engine: src/settlement.ts 301-337",
+      "engine: src/setup.ts 36-47",
+      "engine: src/hero-actions.ts 83-110"
+    ],
+    "eligible_pool": "current on-board controlled non-general; real-time; river excluded, air included; under NP B5 black has 15",
+    "count_model_in_code": "min(4,N) for all N>=0",
+    "draws_in_code": "sequential index draw over remaining pool, splice each chosen ID, no replacement",
+    "default_random": "Math.random based defaults in settlement/hero-actions; secureRandomInt exists in setup but not proven for this call path",
+    "replay_status": "injected RandomInt may reproduce with identical state,pool/order,and choices; natural draw recording/seed/authority replay not proven",
+    "conditional_example_probability": "1 / C(15,4) = 1/1365 for each exact four-piece set IF each remaining-pool draw uniform, not an observed game frequency",
+    "np_branches": [
+      "AS",
+      "AP",
+      "ES"
+    ],
+    "np_selection_reachability": "source-code-conditional under full-support random index draws; not live engine replay",
+    "formal_specs": "UNRUN",
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "independent_QA": false,
+    "rule_delta": 0,
+    "new_ordinary_confirmations": 0,
+    "new_shared_confirmations": 0,
+    "ordinary_confirmations_retained": 31,
+    "direct_shared_confirmations_retained": 13,
+    "action_boundary": "document-only; current rule 'max 4' not silently replaced with code-mandated 'always 4'",
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_adoption": "unknown; receiver must verify",
+    "technical_dispatch_to_main": [
+      "Code behavior at PR13 (unmerged): min(4,N), no replacement.",
+      "Confirm approved wording permits / intends fixed count; do not infer new gameplay approval.",
+      "Default RNG Math.random has no located persisted draw tape; replay proof needs deterministic input and private authoritative evidence, and engine verification remains pending."
+    ],
+    "user_rule_decision_requested_now": false
   }
 }
