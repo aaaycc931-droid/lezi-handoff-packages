@@ -1668,5 +1668,36 @@
     "source_trace": "reviews/H21_RNG_SOURCE_TRACE.md",
     "verification": "V2 text/source; V1 analytical conditional deductions; not engine runtime",
     "next": "NEXT-STD-H21-RNG-CONTRACT-AND-REPLAY-EVIDENCE"
+  },
+  "h21_rng_contract_20261024": {
+    "source_commit": "3aafee91830173aa89bfc5e60bd5179d7fe4de7f",
+    "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "self_workline": "standard",
+    "actual_scoped_reads": [
+      "worklines/standard/NEXT_ACTIONS.json#first",
+      "worklines/standard/CURRENT_STATE.json#standard_rng_source_trace_20261024",
+      "worklines/standard/reviews/H21_RNG_SOURCE_TRACE.md",
+      "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+      "worklines/main/MODE_DISPATCH.json",
+      "jieqi-engine/src/hero-descent.ts (full)",
+      "jieqi-engine/src/setup.ts (full)",
+      "jieqi-engine/src/slots.ts 1-65",
+      "jieqi-engine/src/game.ts 420-525",
+      "jieqi-engine/src/settlement.ts relevant begin source",
+      "jieqi-engine/src/remote-room.ts RNG/clock/hero call sections",
+      "jieqi-engine/src/hero-actions.ts RNG/clock sections",
+      "jieqi-engine/src/modes.ts 1-110",
+      "jieqi-engine/tests/hero-transfer-r5.test.ts R5-H21 sections",
+      "jieqi-engine/tests/hero-descent-boundaries.test.ts",
+      "jieqi-engine/tests/hero-descent-atom.test.ts",
+      "jieqi-engine/tests/game-modes.test.ts mode gate"
+    ],
+    "authored_spec": "specs/H21_RNG_REPLAY_CONTRACT_20261024.json",
+    "authored_review": "reviews/H21_RNG_REPLAY_CONTRACT_REVIEW_20261024.md",
+    "scope": "document contract only; not test execution or product adoption",
+    "engine_runs": 0,
+    "independent_qa": false,
+    "main_readback_by_another_dialogue": null,
+    "other_modes_receipts_written": false
   }
 }

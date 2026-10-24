@@ -1,23 +1,59 @@
 {
   "first": {
-    "id": "NEXT-STD-H21-RNG-CONTRACT-AND-REPLAY-EVIDENCE",
-    "subject": "将真实授鳞函数的条件可达性转为复验门禁，补随机重放证据缺口",
-    "action": "基于已核到的 choose/RandomInt 源码，准备分模式且不碰业务代码的N=0/1/3/4/15抽数、无放回、混合池、全支持抽签、AS/AP/ES条件集合的复验契约；向主线明确RandomInt调用来源与合法记录/复播所需观测接口。未获代码/引擎许可不运行，不以拟定均匀概率或测试注入自动改批准玩法；若原批准文本与实现确有不同合法结果，另形成精确共享候选由用户决定。",
-    "status": "ready_after_trace_not_started",
-    "implementation_authorized": false
+    "id": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
+    "subject": "NP完整自然前缀与H21随机授鳞的真实身份/原子入口静态接口核验",
+    "action": "只读核已存在游戏代码里的普通32棋R1-B5 ID变换、H21 beginFormalTurn、H02/M04 AS/AP/ES动作入口和已确认王安全/原子逻辑的实际差异；用本次设计合同列出真实模式准入、事件字段、RNG防护及正式运行前提。禁用普通模式门禁不得绕过，不运行引擎、不提交共享业务代码、不擅自确认规则。共享引擎/RNG重放/模式qualification由主线负责，等待其实际接收和授权时再进行真实回放。",
+    "status": "ready_not_started_after_document_stage",
+    "implementation_authorized": false,
+    "main_dependency": "MAIN-H21-RNG-INSTRUMENTATION-DECISION remains unreceived/undecided; independent source-only preflight may continue"
   },
   "preserve": "当前对话已收束；普通31/本线直接共享13，本对话两项共同确认及原候选/原话/来源、ES限定复核、全部历史成果保留。收束不新增批准；下一来源顺序复核尚未开始，待用户明确继续后接续。评分冻结、NET暂停，全部旧未运行规格保持UNRUN。",
   "main_owned_pending": "Latest main1.62 metadata only: no active user candidate; H15/H06 graduation-source review complete with policy unresolved; no new H15 policy adopted here.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "STD-RNG-01",
-    "status": "source_trace_complete_document_only",
-    "report": "reviews/H21_RNG_SOURCE_TRACE.md",
-    "gameplay_delta": 0,
-    "source_engine_ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7"
+    "id": "STD-H21-RNG-REPLAY-CONTRACT-20261024",
+    "task": "NEXT-STD-H21-RNG-CONTRACT-AND-REPLAY-EVIDENCE",
+    "user_instruction": "进行下一步",
+    "base_handoff_commit": "3aafee91830173aa89bfc5e60bd5179d7fe4de7f",
+    "engine_ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "report": "reviews/H21_RNG_REPLAY_CONTRACT_REVIEW_20261024.md",
+    "spec": "specs/H21_RNG_REPLAY_CONTRACT_20261024.json",
+    "completed": "source_checked_design_only",
+    "NP_ID_conversion": "black_horse_1 covered-01; black_pawn_0 covered-10; black_elephant_2 covered-02; black_advisor_3 covered-03; black_rook_8 covered-07",
+    "endpoint_tape": [
+      1,
+      1,
+      1,
+      4
+    ],
+    "path_tape": [
+      10,
+      2,
+      2,
+      5
+    ],
+    "covered_counts": [
+      0,
+      1,
+      3,
+      4,
+      15
+    ],
+    "tests_run": 0,
+    "full_mode_open": false,
+    "issue": "current choose unguarded invalid RandomInt indices may misselect or fail to terminate; source-level risk no runtime reproduction",
+    "default_random_source": "some real entry paths can fall back to Math.random; not proven universal secure RNG/real tape",
+    "main_tech_owner": "main: RNG wrapper validation, authority-only trace, mode entry, QA and gameplay conformance decision",
+    "old_contract_preserved": true,
+    "standard_confirmations": 31,
+    "shared_direct_confirmations": 13,
+    "new_rule_confirmations": 0,
+    "net": "paused",
+    "scoring": "frozen",
+    "kind": "DESIGN_ONLY_UNEXECUTED"
   },
-  "status": "active_20261024_trace_completed_next_contract_ready",
+  "status": "active_h21_rng_contract_prepared_engine_and_main_dependencies_pending",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261019-r1",
     "status": "closed_current_conversation",

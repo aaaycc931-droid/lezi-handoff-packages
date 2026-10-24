@@ -1,3 +1,5 @@
+【2026-10-24本线最新推进：H21随机合同】已在普通线完成 `specs/H21_RNG_REPLAY_CONTRACT_20261024.json` 与 `reviews/H21_RNG_REPLAY_CONTRACT_REVIEW_20261024.md` 文档设计，见 CURRENT_STATE.h21_rng_replay_contract_20261024 / RETURN_TO_MAIN.h21_rng_replay_contract_20261024。已定位0/1/3/4/15抽数、NP对应真实ID与两条随机索引序列；正式测试与自然重放仍UNRUN，普通模式门禁未开放。已发现旧choose随机索引无范围校验的潜在不终止风险，主线拥有共享源码与隐私日志接口；不将现有实现强制min(4,N)升级为新已批玩法。下一断点 NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT 为只读静态接口复核。下方2026-10-20旧收束与2026-10-24旧主线分发提示保留来源历史，不得覆盖当前状态。评分冻结，NET暂停，普通31/本线共享13，规则Δ0。
+
 【2026-10-24主线任务分发】
 主线已发布 STD-RNG-01，先读取本目录TASK_FROM_MAIN.json及../main/MODE_DISPATCH.json，再按下方真实本线状态接续。主线新补丁已发布PR13（继承PR8—12），详见../main/MAIN_FOUNDATION_REPORT.json；本提示仅发布任务，不登记本对话已接收/采用/运行。原工作稿、确认、未运行规格和本线收束记录保留；评分冻结、NET暂停。
 
