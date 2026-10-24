@@ -5,14 +5,15 @@
   "to": "main",
   "date_local": "2026-10-24",
   "dispatch_id": "MAIN-THREE-MODE-20261024",
-  "task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
-  "source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "status": "CH01_SCOPED_DOCUMENT_REVIEW_DONE_ENGINE_UNRUN",
+  "task_id": "CH-02-CREATE-LEGAL-JIEQI-H11-H15-WITNESSES",
+  "source_commit": "5de988c225bfb84d9c72170a86b81fb5486a2bd9",
+  "status": "CH02_DETERMINISTIC_WITNESS_STATIC_READY_RUNTIME_UNRUN",
   "entry": "worklines/chaos/START_HERE.txt",
   "changed_paths": [
-    "worklines/chaos/SOURCE_REVIEW.md",
+    "worklines/chaos/START_HERE.txt",
+    "worklines/chaos/CH02_JIEQI_WITNESSES.json",
+    "worklines/chaos/CH02_VALIDATION.md",
     "worklines/chaos/CURRENT_STATE.json",
-    "worklines/chaos/READ_RECEIPTS.json",
     "worklines/chaos/RETURN_TO_MAIN.json"
   ],
   "facts_confirmed": [
@@ -34,27 +35,18 @@
     "worklines/standard/sources/standard/inherited_dispatch/baseline/audit/integrity/evidence/historical/2026-10-05/09_CONFIRMED_DESIGN_SKY_GENERAL.md sections9.14/9.17"
   ],
   "evidence": {
-    "handoff_head": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-    "engine_pr13_head": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-    "engine_main_head_observed": "c25749d4f21d394c3d94486cfba1d786864083b6",
-    "scope": "scoped static source inspection",
+    "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "identity_reproducibility": "STATIC_PURE_GENERATOR_CHECKED",
     "engine_runs": 0,
     "natural_replays": 0,
     "legal_witnesses_built": 0,
+    "static_witnesses": 2,
     "acceptance": "NOT_RUN"
   },
   "next": {
-    "id": "CH-02-CREATE-LEGAL-JIEQI-H11-H15-WITNESSES",
-    "scope": "Prepare valid seeded jieqi authority state and atomic post-shuffle/pre-next-begin witness for active-rebind and failed-before-shuffle branches; validate against exact original sources. No shared code edits until main selects bounded implementation scope.",
-    "specific_cases": [
-      "CH-T01",
-      "CH-T02",
-      "CH-T03",
-      "CH-T04",
-      "CH-T05",
-      "CH-T06"
-    ],
-    "status": "PROPOSED"
+    "id": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
+    "scope": "main receives seeded fixture and owns bounded shared runtime/legal input and atomic observer; chaos builds legal event histories and confirms original jieqi semantics",
+    "status": "PENDING_MAIN_READ_AND_RUNTIME_SCOPE"
   },
   "protected": {
     "gameplay_delta": 0,
@@ -64,6 +56,22 @@
     "other_modes_untouched": true,
     "old_work_preserved": true
   },
-  "receiver_adoption": "actual chaos receiver wrote scope-specific receipt; main has not read this future commit",
-  "self_commit": "resolve from Git history after actual publication; no future SHA fabricated"
+  "receiver_adoption": "not asserted for main",
+  "self_commit": "resolve from Git history after actual successful publication",
+  "concrete_witness": {
+    "opening_seed": 19,
+    "h11_seed": 12,
+    "train_select_seed": 1,
+    "old_red_cannon": [
+      "covered-03",
+      "covered-08"
+    ],
+    "new_red_cannon": [
+      "covered-17",
+      "covered-28"
+    ],
+    "logical_before_red_begin_progress": 1,
+    "after_actual_red_begin_progress": 2,
+    "accepted_engine_prefix": false
+  }
 }
