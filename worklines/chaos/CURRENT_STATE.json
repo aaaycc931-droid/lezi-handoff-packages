@@ -11,7 +11,7 @@
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
   "state": "ch02_seeded_identity_static_witness_ready_unrun",
   "actual_receiver_read": true,
-  "actual_receiver_adoption": "CH-01 scoped source review and documentation only; no new gameplay or shared engine changes",
+  "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
     "fixed root/chaos entry and current protocol activated",
     "original jieqi and H11/H15 current+historical source scopes reconciled",
@@ -46,5 +46,35 @@
     "candidate_prefix": "geometry_only",
     "authoritative_prefix": "UNRUN",
     "engine_runs": 0
+  },
+  "session_closure": {
+    "date_local": "2026-10-24",
+    "state": "CLOSED_READY_FOR_NEW_DIALOGUE",
+    "closure_reason": "user_requested_end_of_round_and_possible_chat_switch",
+    "last_delivered_task": "CH-02-CREATE-LEGAL-JIEQI-H11-H15-WITNESSES",
+    "last_delivered_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
+    "source_at_closure": "6991e6c8bd373e0ce52d4ea604a9f8f6e0055537",
+    "document_paths": [
+      "worklines/chaos/SOURCE_REVIEW.md",
+      "worklines/chaos/CH02_JIEQI_WITNESSES.json",
+      "worklines/chaos/CH02_VALIDATION.md",
+      "worklines/chaos/RETURN_TO_MAIN.json"
+    ],
+    "actual_verification": "after_CH02_commit_HEAD_and_blob_SHAs_readback_passed",
+    "next_task": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
+    "next_task_condition": "check_newest_main_DISPATCH_and_chaos_state_first; main_owns_shared_runtime; only actual main receipt is adoption",
+    "limits": {
+      "engine_runs": 0,
+      "game_code_changes": 0,
+      "legal_prefixes_engine_accepted": 0,
+      "natural_games": 0,
+      "full_mode_verified": false
+    },
+    "protected": {
+      "three_modes_concurrent_data": true,
+      "heroes_and_UI": true,
+      "scoring": "frozen",
+      "NET": "paused"
+    }
   }
 }
