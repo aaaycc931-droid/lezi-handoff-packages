@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-42-SOURCE-RECEPTION-20261024-r42",
+  "revision": "HC-43-STATIC-PILOT-PREFLIGHT-20261024-r43",
   "workline": "half_chaos",
   "date_local": "2026-10-24",
   "timezone": "Asia/Shanghai",
-  "status": "main_patch_source_received_original_3tuple_research_admission_blocked_unrun",
+  "status": "r43_pilot_original_document_integrity_14of14_no_natural_execution",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -186,7 +186,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "After main publishes source-pinned exact three-tuple research admission, passive checkpoint observation and restricted driver, recheck gate/negative cases and the 3 pilot original replay prerequisites; run nothing until legal authority, source context and real executable command are demonstrated. Continue independent source docs without shifting shared gameplay.",
+  "next_action": "From latest GitHub HEAD, inspect real main 3-tuple admission + passive checkpoints + source-pinned restricted driver and approvals; only then test original pilots; meanwhile independent source prep may continue.",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -1530,7 +1530,7 @@
   },
   "last_completed_design_revision": "HC-PREP-20261020-r40",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
-  "next_action_status": "BLOCKED_ON_MAIN_ADMISSION_OBSERVATION_AND_RUNNABLE_DRIVER",
+  "next_action_status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
     "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
@@ -2510,6 +2510,29 @@
       "id": "NEXT-HC-VERIFY-EXACT-TUPLE-ADMISSION-AND-PILOT-READINESS",
       "status": "BLOCKED_ON_MAIN_ADMISSION_OBSERVATION_AND_RUNNABLE_DRIVER",
       "action": "After main publishes source-pinned exact three-tuple research admission, passive checkpoint observation and restricted driver, recheck gate/negative cases and the 3 pilot original replay prerequisites; run nothing until legal authority, source context and real executable command are demonstrated. Continue independent source docs without shifting shared gameplay."
+    }
+  },
+  "r43_pilot_static_preflight": {
+    "source_handoff_head": "2061024a14f42423c34ad56056dce4a9beb111ab",
+    "report": "worklines/half_chaos/HC43_STATIC_PILOT_PREFLIGHT.json",
+    "integrity": "14/14 DOCUMENT_ONLY",
+    "pilots": [
+      "MA-PD01",
+      "MA-DS03",
+      "MA-DS04"
+    ],
+    "original_request_count": 23,
+    "checkpoints": 43,
+    "original12_executed": 0,
+    "original64": "UNRUN",
+    "original210_observed": 0,
+    "main_admission": "BLOCKED",
+    "main_receipt_for_r42": null,
+    "local_engine_runs": 0,
+    "next": {
+      "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+      "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
+      "action": "From latest GitHub HEAD, inspect real main 3-tuple admission + passive checkpoints + source-pinned restricted driver and approvals; only then test original pilots; meanwhile independent source prep may continue."
     }
   }
 }

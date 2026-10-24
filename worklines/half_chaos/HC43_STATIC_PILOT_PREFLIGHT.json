@@ -1,0 +1,264 @@
+{
+  "schema": "lezi.half_chaos.static_pilot_preflight.v1",
+  "id": "HC-43-STATIC-PILOT-PREFLIGHT-20261024-r43",
+  "date_local": "2026-10-24",
+  "workline": "half_chaos",
+  "task": "NEXT-HC-VERIFY-EXACT-TUPLE-ADMISSION-AND-PILOT-READINESS",
+  "authority": "2026-10-24 user: 进行下一步; independent source/document validation only; main owns shared engine",
+  "source_handoff_head": "2061024a14f42423c34ad56056dce4a9beb111ab",
+  "engine_source_ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "proof_files": [
+    {
+      "name": "REPLAY_ACTION_DATA.json",
+      "sha": "d8453df0104ffdef95fd22f705cf355d53b8d027"
+    },
+    {
+      "name": "INITIALIZATION_WITNESS_DATA.json",
+      "sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965"
+    },
+    {
+      "name": "ASSERTION_EVIDENCE_MATRIX.json",
+      "sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce"
+    },
+    {
+      "name": "ADMISSION_CONTRACT_PROPOSAL.json",
+      "sha": "a29a20e303d3fd255ee338feaa9b60ae129e0c0a"
+    },
+    {
+      "name": "ACCEPTANCE_SCOPE.json",
+      "sha": "322e5aef2fcee3d2614fa4dd515c159c794e428b"
+    },
+    {
+      "name": "OBSERVATION_FIELD_MAPPING.json",
+      "sha": "be63d62bf94e029042e49089455af41b2b81b5a4"
+    }
+  ],
+  "actual_static_checks": {
+    "result": "14/14 PASS, DOCUMENT_LINKS_ONLY",
+    "methods": [
+      "parse current original JSON from GitHub",
+      "count unique 12 replay IDs and 10 world IDs",
+      "count distinct 64 spec IDs and 210 observation IDs",
+      "check observation references match index",
+      "check all 12 world and spec references resolve",
+      "confirm all existing execution rows UNRUN/0 passed",
+      "count 100 ordinary and 10 before-main declared source requests",
+      "check 10×28 Fisher–Yates witness draw bounds and ordered calls",
+      "check pilot world/action/scope references",
+      "check all pilot checkpoint IDs in existing 210",
+      "check all 110 source declaration IDs unique",
+      "match pilot exact original hero/mutation tuple"
+    ],
+    "limits": "Not engine execution, natural game-state legality, random initialization proof, clock/transport acceptance or independent QA."
+  },
+  "inventory": {
+    "original_worlds": 10,
+    "replays": 12,
+    "source_main_requests": 100,
+    "source_before_main_requests": 10,
+    "total_requests": 110,
+    "original_specs": 64,
+    "checkpoints": 210,
+    "natural_executions": 0,
+    "passed_original_specs": 0
+  },
+  "pilot_contracts": [
+    {
+      "id": "MA-PD01",
+      "world": "IW-0eaace9ad2c1699d",
+      "tuple": "HC-ADM-PD-M04",
+      "heroes": "H04/qin_long red + H03/warrior black",
+      "mutation": "M04/war_chariot",
+      "turns": [
+        "R1",
+        "B1",
+        "R2",
+        "B2",
+        "R3"
+      ],
+      "main": 5,
+      "pre_main": 0,
+      "total_requests": 5,
+      "checkpoints": 10,
+      "original_spec_ids": [
+        "PD-S01",
+        "PD-S02",
+        "PD-S03",
+        "PD-S04",
+        "PD-S05",
+        "PD-S31",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "target": "R3 path death revealed and return ordinary defense; complete atom/royal safety not proven",
+      "special_limits": [
+        "PD-S31 no natural additional return-landing-effect positive",
+        "PD-S35 no declared transport duplicate or conflicting actor/payload"
+      ],
+      "status": "BLOCKED_UNRUN"
+    },
+    {
+      "id": "MA-DS03",
+      "world": "IW-bdcfe63226360aaa",
+      "tuple": "HC-ADM-DS-D01",
+      "heroes": "H06/nozdormu red + H05/murozond black",
+      "mutation": "D01/end_time",
+      "turns": [
+        "R1",
+        "B1",
+        "R2",
+        "B2",
+        "R3",
+        "B3",
+        "R4"
+      ],
+      "main": 7,
+      "pre_main": 1,
+      "total_requests": 8,
+      "checkpoints": 15,
+      "original_spec_ids": [
+        "DS-S13",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16",
+        "DS-S28"
+      ],
+      "target": "R4 source-prescribed hourglass refused, original normal main remains",
+      "special_limits": [
+        "DS-S16 no safe-first-unsafe-second natural pair in same window",
+        "six internal hourglass steps not individually observed"
+      ],
+      "status": "BLOCKED_UNRUN"
+    },
+    {
+      "id": "MA-DS04",
+      "world": "IW-61790bfc01eccf12",
+      "tuple": "HC-ADM-DS-D01",
+      "heroes": "H06/nozdormu red + H05/murozond black",
+      "mutation": "D01/end_time",
+      "turns": [
+        "R1",
+        "B1",
+        "R2",
+        "B2",
+        "R3",
+        "B3",
+        "R4",
+        "B4"
+      ],
+      "main": 8,
+      "pre_main": 2,
+      "total_requests": 10,
+      "checkpoints": 18,
+      "original_spec_ids": [
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22",
+        "DS-S28"
+      ],
+      "target": "B3 black bomb IN_CHECK refusal, ordinary rook evasion, B4 new safe bomb with ammo/quota/warp/deadline unchanged on refusal",
+      "special_limits": [
+        "DS-S20 no post-main bomb reattempt stimulus",
+        "DS-S22 no complete invalid caster/range/target/ammo/quota negative set"
+      ],
+      "status": "BLOCKED_UNRUN"
+    }
+  ],
+  "pilots_total": {
+    "total_source_requests": 23,
+    "ordinary": 20,
+    "non_main": 3,
+    "declared_checkpoints": 43,
+    "original_spec_references": 22,
+    "original_spec_runtime_passes": 0
+  },
+  "admission_status": {
+    "status": "CURRENT_ENGINE_SOURCE_BLOCKED",
+    "source": [
+      "src/modes.ts mode half_chaos featuresReady=false",
+      "src/research-source-context.ts half_chaos allowlist shuffler only; modeResearchPermits forbids any mutation",
+      "src/remote-room.ts source-qualified room+mutation path does not admit current original 3 tuples"
+    ],
+    "original_three_tuples": [
+      "H04+H03+M01",
+      "H04+H03+M04",
+      "H06+H05+D01"
+    ],
+    "no_verified_original_executable_command": true,
+    "run_command": null,
+    "warning": "Do not use generic mode qualification, direct engine move or fabricated fixture as an original natural replay"
+  },
+  "main_engine_dependencies": [
+    {
+      "order": 1,
+      "scope": "Trusted three exact-tuple room/actor/side/source-bound research admission with negative boundaries, product featuresReady remains false"
+    },
+    {
+      "order": 2,
+      "scope": "Original 15+15 identity/mutation draw, exact saved 28 RNG witness calls per world, room lifecycle and restricted original action driver; source mismatch fails closed"
+    },
+    {
+      "order": 3,
+      "scope": "Exact after-main atom and after-normal-end passive authority checkpoints plus before/returned-or-rejected skill requests; observer invalidation and privacy isolation"
+    },
+    {
+      "order": 4,
+      "scope": "M01/M04 full-result path/landing/rebound and royal threat closure for PD01, with bounded regression; D01 actual six-step closure/terminal safety for DS03/DS04"
+    },
+    {
+      "order": 5,
+      "scope": "Publish tested version-pinned executable driver command/environment and source identity; only then actual pilots MA-PD01/MA-DS03/MA-DS04, trace actual evidence and classify per original obligation"
+    }
+  ],
+  "stop_and_qualification": {
+    "precondition": "all actual authorization/source/lawful setup/negative admission/observability/driver checks true",
+    "missing": "BLOCKED_UNRUN",
+    "invalid_observer": "INVALID_EXECUTION not acceptance",
+    "incomplete_original_spec": "keep original UNRUN; new evidence may say PARTIAL without altering old ledger",
+    "new_stimulus": "not allowed by this phase; original missing negatives remain open",
+    "no_mutation_or_gate_bypass": true,
+    "no_merge": true
+  },
+  "unchanged": {
+    "original12_executed": 0,
+    "original64": "UNRUN",
+    "observed_original_210": 0,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "engine_code_edits": 0,
+    "engine_runs": 0,
+    "new_rules": 0,
+    "other_lines_modified": false,
+    "main_receiver_adoption": null
+  },
+  "validation": {
+    "grade": "V2 original source-reference check + V1 future runtime contract",
+    "engine_tests_this_round": 0,
+    "independent_QA": false,
+    "record_status": "partial"
+  },
+  "limitations": {
+    "risk": "high multi-workline engine / obligation state",
+    "known": "14 structural checks pass, engine research admission still source-blocked",
+    "alternative": "even consistent documents may fail on actual legality and clock paths",
+    "unknown": "full current path/safety/terminal and actual 3tuple executor",
+    "failure_conditions": [
+      "unapproved combination admitted",
+      "run claimed without executable command",
+      "unrun specs marked passed",
+      "other lines overwritten"
+    ],
+    "action_boundary": "own-line report and status only"
+  },
+  "next": {
+    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
+    "action": "From latest GitHub HEAD, inspect real main 3-tuple admission + passive checkpoints + source-pinned restricted driver and approvals; only then test original pilots; meanwhile independent source prep may continue."
+  }
+}
