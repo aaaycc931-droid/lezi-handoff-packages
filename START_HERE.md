@@ -1,13 +1,11 @@
-# 乐子象棋交接仓库
+# 乐子象棋项目入口
 
-2026-10-21主线完成沙漏限定修复：[草稿PR10](https://github.com/aaaycc931-droid/jieqi-engine/pull/10)继承投弹/铁马PR8/9，未合并。完整候选一次结算后检查己王，补原批次/RNG/观察隔离及活死状态区分；31项新组件、61针对性与41文件560相关检查通过。底层证据失效信号已实现，研究适配器接收与完整观察仍待；原自然12执行0、64UNRUN，模式门禁不变。下一核M01/M04路径完整结果方案。各线成果、55确认、协作v0.14、评分冻结和NET暂停保持。当前依据见[主线入口](worklines/main/START_HERE.txt)与[实际实现/测试](worklines/main/R38_ENGINEERING_REVIEW.json)。
+2026-10-24主线：完成共用研究证据失效处理，草稿[PR13](https://github.com/aaaycc931-droid/jieqi-engine/pull/13)，继承PR8—12；6项新边界/99针对性/43文件612相关检查通过，未合并。游戏真实执行与证据资格分开：采集失效不能判验收通过。详见[主线报告](worklines/main/MAIN_FOUNDATION_REPORT.json)。
 
-当前工作入口：[主线](worklines/main/START_HERE.txt) · [半混乱](worklines/half_chaos/START_HERE.txt) · [UI](worklines/ui/START_HERE.txt) · [普通象棋](worklines/standard/START_HERE.txt)。本账号负责主线/半混乱，另一个账号负责UI/普通。主线业务源码仍在jieqi-engine仓库；此处管理交接和素材。
+已分发三模式独立任务：[混乱模式（原揭棋/jieqi）](worklines/chaos/START_HERE.txt)、[普通象棋/xiangqi](worklines/standard/START_HERE.txt)、[半混乱/half_chaos](worklines/half_chaos/START_HERE.txt)。先读[统一任务](worklines/main/MODE_DISPATCH.json)及各线TASK_FROM_MAIN.json，再按各线当前状态接续。任务发布不等于接收对话已读/已执行；真实回执由接收者维护。
 
-当前资料只放固定工作目录，素材只存唯一内容，旧轮次按[历史索引](archive/INDEX.json)查固定提交。更新按[连接器流程](docs/WORKFLOW.md)执行。
+[主线入口](worklines/main/START_HERE.txt)负责共享源码与跨线整合；下一核M01/M04路径完整结果的差异与闭合检查点，具体方案已发布、路径代码尚未修改。[UI](worklines/ui/START_HERE.txt)保持独立，B8已批准、B9未制作，不属于三模式支线。
 
-全线默认使用GitHub连接器双向交接：各线写回固定目录，主线直接读取，实际接收方记录阅读/采用回执。用户无需往返转交阶段包。主线恢复入口已发布必要裁决正文、待确认方案、状态及[共享协调](worklines/main/SHARED_COORDINATION.json)；半混乱当前完整工作正文、确认、状态及必要来源映射也已发布；两线的完整深层历史与私有原档不等于全量迁移。主线重复统计历史与公开本体等价均已明确确认；当前已补充局部公开资源/权利字段来源映射，完整重复键继续待核；主线H15首次培养计数点已获三模式确认，后续共享差分按各自原确认接收；H15本版共同显示口径现已明确获三模式确认（选种/机会已用公开，实际进度及即时失败不显示），成功启动成本按独立原确认接收，普通公开空池仅普通有效，不将接续或局部确认写成候选批准、完整键或运行验收。另一账号能力、实际进度与采用情况以真实成果/回执为准。
+既有玩法原确认、山2B与风设计路线、批准图稿全部保留。评分冻结、评分优化本轮不恢复、NET暂停。半混乱原自然12执行0/64UNRUN；mode featuresReady与研究准入不变，未做完整对局或产品验收。
 
-
-主线1.62完成本轮项目收束（[汇总与接续](worklines/main/ROUND_CLOSEOUT.md)），保留55项游戏确认。H15毕业跨越来源已核对，具体快照/奖励处理仍未决定；原1.61启动前恢复未使用与1.57死亡失败例外保持。普通新H02＋M04路径龙鳞候选待批，三模式M04现行说明统一“战车隔一枚地面棋的【进攻】”，只改文案。UI B8已批准、B9未创建；半混乱已完成r30文档范围方案并收束，下一步WP01准入契约细化仍仅文档，64项UNRUN。复工读最新固定入口及各线真实状态，不把收束当规则批准、完整验收或其他会话状态变更。评分冻结、NET暂停。
-
+当前索引[CURRENT_HANDOFF.json](CURRENT_HANDOFF.json)，通用协作版本由[collaboration/CURRENT.json](collaboration/CURRENT.json)解析；写回按[docs/WORKFLOW.md](docs/WORKFLOW.md)。只在固定工作目录增量更新，复用资产/来源，普通非强制提交与发布后复读。旧轮次从[archive/INDEX.json](archive/INDEX.json)按固定提交恢复。

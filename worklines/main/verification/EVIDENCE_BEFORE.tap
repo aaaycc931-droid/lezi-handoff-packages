@@ -1,0 +1,774 @@
+✖ EVID01 fixture initialization failure blocks verification despite retained authority state (20.381431ms)
+✖ EVID02 invalid fixture events cannot become zero-valued evidence or a completed archive (24.081785ms)
+✖ EVID03 policy initialization evidence failure cannot qualify a prefix (11.80718ms)
+✖ EVID04 policy retains a committed receipt and RNG while invalidating the research archive (31.595254ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 254.147843
+
+✖ failing tests:
+
+test at tests/research-evidence-validity.test.ts:37:1
+✖ EVID01 fixture initialization failure blocks verification despite retained authority state (20.381431ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/6062e6e6ec8b/jieqi-engine/tests/research-evidence-validity.test.ts:42:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /mechanism evidence/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/research-evidence-validity.test.ts:45:1
+✖ EVID02 invalid fixture events cannot become zero-valued evidence or a completed archive (24.081785ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   {
+  +     details: {
+  +       action: {
+  +         actingSide: 'red',
+  +         actionId: 'evidence-submit:command:1',
+  +         countsAsFormalTurn: true,
+  +         from: {
+  +           x: 1,
+  +           y: 9
+  +         },
+  +         keywords: [
+  +           '移动'
+  +         ],
+  +         opportunity: 'main',
+  +         pieceId: 'covered-16',
+  +         source: 'ordinary',
+  +         tier: 1,
+  +         to: {
+  +           x: 2,
+  +           y: 7
+  +         }
+  +       },
+  +       number: 1,
+  +       side: 'red'
+  +     },
+  +     kind: 'formal_main_action',
+  +     secret: undefined,
+  +     state: {
+  +       actionRecords: [
+  +         {
+  +           actingSide: 'red',
+  +           actionId: 'evidence-submit:command:1',
+  +           countsAsFormalTurn: true,
+  +           from: {
+  +             x: 1,
+  +             y: 9
+  +           },
+  +           keywords: [
+  +             '移动'
+  +           ],
+  +           opportunity: 'main',
+  +           pieceId: 'covered-16',
+  +           source: 'ordinary',
+  +           tier: 1,
+  +           to: {
+  +             x: 2,
+  +             y: 7
+  +           }
+  +         }
+  +       ],
+  +       assassination: {
+  +         black: {
+  +           heroChargeAvailable: false,
+  +           mutationChargeAvailable: false
+  +         },
+  +         red: {
+  +           heroChargeAvailable: false,
+  +           mutationChargeAvailable: false
+  +         }
+  +       },
+  +       automaticEvents: [],
+  +       captured: [],
+  +       destructionBatches: [],
+  +       effectsByPieceId: {},
+  +       featureRules: {
+  +         heroSelections: {
+  +           black: {
+  +             form: 'front',
+  +             heroId: 'shuffler',
+  +             packageId: 'shuffler:front:v1'
+  +           },
+  +           red: {
+  +             form: 'front',
+  +             heroId: 'night',
+  +             packageId: 'night:front:v1'
+  +           }
+  +         },
+  +         heroes: {
+  +           black: 'shuffler',
+  +           red: 'night'
+  +         },
+  +         mutation: 'jian_xie'
+  +       },
+  +       formalClock: {
+  +         number: 1,
+  +         side: 'red'
+  +       },
+  +       formalTurns: {
+  +         black: 0,
+  +         red: 0
+  +       },
+  +       heroFormLock: {
+  +         black: {
+  +           form: 'front',
+  +           heroId: 'shuffler',
+  +           packageId: 'shuffler:front:v1'
+  +         },
+  +         red: {
+  +           form: 'front',
+  +           heroId: 'night',
+  +           packageId: 'night:front:v1'
+  +         }
+  +       },
+  +       heroRuntime: {
+  +         black: {
+  +           invokeCount: 0,
+  +           used: false
+  +         },
+  +         red: {
+  +           insightCount: 0,
+  +           invokeCount: 0,
+  +           pupil: 0,
+  +           used: false
+  +         }
+  +       },
+  +       landingEvents: [],
+  +       pieces: [
+  +         {
+  +           color: 'black',
+  +           faceDown: false,
+  +           id: 'black-general',
+  +           type: 'general',
+  +           x: 4,
+  +           y: 0
+  +         },
+  +         {
+  +           color: 'red',
+  +           faceDown: false,
+  +           id: 'red-general',
+  +           type: 'general',
+  +           x: 4,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-00',
+  +           x: 0,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-01',
+  +           x: 1,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-02',
+  +           x: 2,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-03',
+  +           x: 3,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-04',
+  +           x: 5,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-05',
+  +           x: 6,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-06',
+  +           x: 7,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-07',
+  +           x: 8,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-08',
+  +           x: 1,
+  +           y: 2
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-09',
+  +           x: 7,
+  +           y: 2
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-10',
+  +           x: 0,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-11',
+  +           x: 2,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-12',
+  +           x: 4,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-13',
+  +           x: 6,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-14',
+  +           x: 8,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-15',
+  +           x: 0,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-16',
+  +           x: 1,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-17',
+  +           x: 2,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-18',
+  +           x: 3,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-19',
+  +           x: 5,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-20',
+  +           x: 6,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-21',
+  +           x: 7,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-22',
+  +           x: 8,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-23',
+  +           x: 1,
+  +           y: 7
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-24',
+  +           x: 7,
+  +           y: 7
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-25',
+  +           x: 0,
+  +           y: 6
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-26',
+  +           x: 2,
+  +           y: 6
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-27',
+  +           x: 4,
+  +           y: 6
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-28',
+  +           x: 6,
+  +           y: 6
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-29',
+  +           x: 8,
+  +           y: 6
+  +         }
+  +       ],
+  +       revision: 0,
+  +       status: 'playing',
+  +       turn: 'red',
+  +       turnDeadlineAt: 61008,
+  +       turnLifecycle: {
+  +         mainActionId: 'evidence-submit:command:1',
+  +         mainPieceId: 'covered-16',
+  +         number: 1,
+  +         phase: 'main_action',
+  +         phases: [
+  +           'turn_start',
+  +           'before_main',
+  +           'main_action'
+  +         ],
+  +         side: 'red'
+  +       },
+  +       turnStartedAt: 1008,
+  +       warrior: undefined
+  +     }
+  +   }
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/6062e6e6ec8b/jieqi-engine/tests/research-evidence-validity.test.ts:53:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { kind: 'formal_main_action', state: [Object], secret: undefined, details: [Object] } ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/research-evidence-validity.test.ts:68:1
+✖ EVID03 policy initialization evidence failure cannot qualify a prefix (11.80718ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   reason: 'controlled_flow_prefix_limit',
+  -   reason: 'mechanism_evidence_invalid',
+      result: null,
+  +   status: 'censored'
+  -   status: 'invalid_execution'
+    }
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/6062e6e6ec8b/jieqi-engine/tests/research-evidence-validity.test.ts:72:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { status: 'censored', reason: 'controlled_flow_prefix_limit', result: null },
+    expected: { status: 'invalid_execution', reason: 'mechanism_evidence_invalid', result: null },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/research-evidence-validity.test.ts:77:1
+✖ EVID04 policy retains a committed receipt and RNG while invalidating the research archive (31.595254ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + [
+  +   {
+  +     details: {
+  +       action: {
+  +         actingSide: 'red',
+  +         actionId: 'evidence-move',
+  +         countsAsFormalTurn: true,
+  +         from: {
+  +           x: 1,
+  +           y: 9
+  +         },
+  +         keywords: [
+  +           '移动'
+  +         ],
+  +         opportunity: 'main',
+  +         pieceId: 'covered-16',
+  +         source: 'ordinary',
+  +         tier: 1,
+  +         to: {
+  +           x: 2,
+  +           y: 7
+  +         }
+  +       },
+  +       number: 1,
+  +       side: 'red'
+  +     },
+  +     kind: 'formal_main_action',
+  +     secret: undefined,
+  +     state: {
+  +       actionRecords: [
+  +         {
+  +           actingSide: 'red',
+  +           actionId: 'evidence-move',
+  +           countsAsFormalTurn: true,
+  +           from: {
+  +             x: 1,
+  +             y: 9
+  +           },
+  +           keywords: [
+  +             '移动'
+  +           ],
+  +           opportunity: 'main',
+  +           pieceId: 'covered-16',
+  +           source: 'ordinary',
+  +           tier: 1,
+  +           to: {
+  +             x: 2,
+  +             y: 7
+  +           }
+  +         }
+  +       ],
+  +       assassination: {
+  +         black: {
+  +           heroChargeAvailable: false,
+  +           mutationChargeAvailable: false
+  +         },
+  +         red: {
+  +           heroChargeAvailable: false,
+  +           mutationChargeAvailable: false
+  +         }
+  +       },
+  +       automaticEvents: [],
+  +       captured: [],
+  +       destructionBatches: [],
+  +       effectsByPieceId: {},
+  +       featureRules: {
+  +         heroSelections: {
+  +           black: {
+  +             form: 'front',
+  +             heroId: 'shuffler',
+  +             packageId: 'shuffler:front:v1'
+  +           },
+  +           red: {
+  +             form: 'front',
+  +             heroId: 'night',
+  +             packageId: 'night:front:v1'
+  +           }
+  +         },
+  +         heroes: {
+  +           black: 'shuffler',
+  +           red: 'night'
+  +         },
+  +         mutation: 'jian_xie'
+  +       },
+  +       formalClock: {
+  +         number: 1,
+  +         side: 'red'
+  +       },
+  +       formalTurns: {
+  +         black: 0,
+  +         red: 0
+  +       },
+  +       heroFormLock: {
+  +         black: {
+  +           form: 'front',
+  +           heroId: 'shuffler',
+  +           packageId: 'shuffler:front:v1'
+  +         },
+  +         red: {
+  +           form: 'front',
+  +           heroId: 'night',
+  +           packageId: 'night:front:v1'
+  +         }
+  +       },
+  +       heroRuntime: {
+  +         black: {
+  +           invokeCount: 0,
+  +           used: false
+  +         },
+  +         red: {
+  +           insightCount: 0,
+  +           invokeCount: 0,
+  +           pupil: 0,
+  +           used: false
+  +         }
+  +       },
+  +       landingEvents: [],
+  +       pieces: [
+  +         {
+  +           color: 'black',
+  +           faceDown: false,
+  +           id: 'black-general',
+  +           type: 'general',
+  +           x: 4,
+  +           y: 0
+  +         },
+  +         {
+  +           color: 'red',
+  +           faceDown: false,
+  +           id: 'red-general',
+  +           type: 'general',
+  +           x: 4,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-00',
+  +           x: 0,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-01',
+  +           x: 1,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-02',
+  +           x: 2,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-03',
+  +           x: 3,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-04',
+  +           x: 5,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-05',
+  +           x: 6,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-06',
+  +           x: 7,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-07',
+  +           x: 8,
+  +           y: 0
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-08',
+  +           x: 1,
+  +           y: 2
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-09',
+  +           x: 7,
+  +           y: 2
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-10',
+  +           x: 0,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-11',
+  +           x: 2,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-12',
+  +           x: 4,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-13',
+  +           x: 6,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-14',
+  +           x: 8,
+  +           y: 3
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-15',
+  +           x: 0,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-16',
+  +           x: 1,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-17',
+  +           x: 2,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-18',
+  +           x: 3,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-19',
+  +           x: 5,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-20',
+  +           x: 6,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-21',
+  +           x: 7,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-22',
+  +           x: 8,
+  +           y: 9
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-23',
+  +           x: 1,
+  +           y: 7
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-24',
+  +           x: 7,
+  +           y: 7
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-25',
+  +           x: 0,
+  +           y: 6
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-26',
+  +           x: 2,
+  +           y: 6
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-27',
+  +           x: 4,
+  +           y: 6
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-28',
+  +           x: 6,
+  +           y: 6
+  +         },
+  +         {
+  +           faceDown: true,
+  +           id: 'covered-29',
+  +           x: 8,
+  +           y: 6
+  +         }
+  +       ],
+  +       revision: 0,
+  +       status: 'playing',
+  +       turn: 'red',
+  +       turnDeadlineAt: 61008,
+  +       turnLifecycle: {
+  +         mainActionId: 'evidence-move',
+  +         mainPieceId: 'covered-16',
+  +         number: 1,
+  +         phase: 'main_action',
+  +         phases: [
+  +           'turn_start',
+  +           'before_main',
+  +           'main_action'
+  +         ],
+  +         side: 'red'
+  +       },
+  +       turnStartedAt: 1008,
+  +       warrior: undefined
+  +     }
+  +   }
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/6062e6e6ec8b/jieqi-engine/tests/research-evidence-validity.test.ts:88:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { kind: 'formal_main_action', state: [Object], secret: undefined, details: [Object] } ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

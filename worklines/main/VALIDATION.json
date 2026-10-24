@@ -304,5 +304,84 @@
       "original12_executed": 0,
       "original64": "UNRUN"
     }
-  }
+  },
+  "main_foundation_20261024": {
+    "runtime": "Node v24.22.1",
+    "logs": {
+      "baseline": {
+        "sha256": "1a0359fcc0ddb7d6db7cd900c20ff8086381eca4e808f83ad10c133ff6296b30",
+        "bytes": 5125,
+        "tests": 62,
+        "pass": 62,
+        "fail": 0
+      },
+      "evidence-before": {
+        "sha256": "c907e2ebc84acd701b8ad27ce29de0d00334902f25b82f81bd9caedd9000ce4e",
+        "bytes": 20125,
+        "tests": 4,
+        "pass": 0,
+        "fail": 4
+      },
+      "focused": {
+        "sha256": "b736866598635ad4c62a455af4e7fbe8a33865b2cbf406c896cfea05b543b2ed",
+        "bytes": 9046,
+        "tests": 99,
+        "pass": 99,
+        "fail": 0
+      },
+      "related-final": {
+        "sha256": "1a1370a0d59f798f3352e6f2bdcc24598cac61cf736f6840e32ed3dd2b8c565f",
+        "bytes": 58965,
+        "tests": 612,
+        "pass": 612,
+        "fail": 0
+      }
+    },
+    "new_cases": 6,
+    "differential_before_cases": 4,
+    "before_result": "4 fail for missing propagation after correcting initial undefined-fixture test setup; the first setup-error run is not differential evidence",
+    "focused": {
+      "files": 5,
+      "checks": 99,
+      "pass": 99
+    },
+    "final_related": {
+      "files": 43,
+      "checks": 612,
+      "pass": 612,
+      "fail": 0,
+      "command": "node --test --test-concurrency=1 <43 engine/research test files; excludes android-shell,web-layout,web-gameplay-v4,web-messages,current-control>",
+      "source_bytes": "91 pinned src/test fixtures verified; unchanged scoring dependencies restored byte-exact before final612 run"
+    },
+    "design_independence": "same AI designed implementation and tests; not independent QA",
+    "remote_readback": {
+      "all7_published_files_exact": true,
+      "complete_tree_compared": true
+    },
+    "protection": {
+      "base_blobs": 531,
+      "unchanged": 526,
+      "changed": [
+        "scripts/scoring/fixture-runner.ts",
+        "scripts/scoring/policy-session.ts",
+        "scripts/scoring/research-log.ts",
+        "scripts/scoring/run-acceptance.ts",
+        "scripts/scoring/run-mode-qualification.ts"
+      ],
+      "added": [
+        "scripts/scoring/mechanism-evidence.ts",
+        "tests/research-evidence-validity.test.ts"
+      ],
+      "deleted": 0
+    }
+  },
+  "remaining_20261024": [
+    "full TypeScript typecheck",
+    "five UI/Android/web-linked test files",
+    "complete UI/APK/build/deployment",
+    "standalone acceptance/qualification CLI runs requiring real git metadata",
+    "new M01/M04 safety implementation or natural path tests",
+    "original half-chaos12/64 and precise D01 semantic hooks",
+    "full legal-threat/checkmate search or actual full-match QA"
+  ]
 }

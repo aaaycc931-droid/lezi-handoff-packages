@@ -1,0 +1,51 @@
+{
+  "schema": "lezi.main_mode_task.v1",
+  "dispatch_id": "MAIN-THREE-MODE-20261024",
+  "issued_by": "main",
+  "date_local": "2026-10-24",
+  "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
+  "source_engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/13",
+  "state": "issued_pending_receiver",
+  "receiver_read": false,
+  "receiver_adopted": false,
+  "gameplay_delta": 0,
+  "scoring": "frozen",
+  "NET": "paused",
+  "return_policy": "固定工作目录增量写回RETURN_TO_MAIN.json；实际接收者自行更新READ_RECEIPTS.json，主线实际读后才写主线回执；共享业务源码修改归主线串行整合。",
+  "workline": "chaos",
+  "mode_id": "jieqi",
+  "task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
+  "subject": "恢复混乱模式（原揭棋）独立来源并核H11×H15差分",
+  "entry": "worklines/chaos/START_HERE.txt",
+  "inputs": [
+    "worklines/main/MODE_DISPATCH.json",
+    "worklines/main/CURRENT_STATE.json",
+    "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
+    "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/original_jieqi/CURRENT_RULES.md",
+    "worklines/main/ADJUDICATION.json",
+    "worklines/main/SHARED_COORDINATION.json"
+  ],
+  "source_rule": "旧原揭棋入口是导航及历史边界，不是最新全部规则；沿主线ADJUDICATION/SOURCE_MAP查现行完整H11/H15/H06来源，再追实现。不能把普通宿主选择或半混乱本体锚定移植到jieqi。",
+  "actions": [
+    "核固定HEAD/协作CURRENT/原确认与实际引擎来源，区分用户所称混乱与half_chaos；发现独立较新成果先保护、合并接续，不能从本新目录推断此前无工作。",
+    "在SOURCE_REVIEW.md形成原揭棋现行来源表、H11复原/倒戈/重新绑定与H15一次训练/死亡失败/回溯不退款的已确认、未决、实现、未验差分。",
+    "为下一最小原揭棋专属验证列真实前提和合法输入；共享争议列明具体来源回主线，其余继续。"
+  ],
+  "outputs": [
+    "worklines/chaos/SOURCE_REVIEW.md",
+    "worklines/chaos/CURRENT_STATE.json",
+    "worklines/chaos/RETURN_TO_MAIN.json",
+    "worklines/chaos/READ_RECEIPTS.json"
+  ],
+  "acceptance": [
+    "所有决定性结论有固定提交/路径/原文作用域；当前已确认与旧待办不互相覆盖。",
+    "提供一个有输入/预期/来源/未验项的具体下一任务；缺自然正例或实现时明确标注。"
+  ],
+  "allowed": "只读规则/源码及本线文档增量写回；不改共享源码、规则、入池或研究/产品门禁。",
+  "not_claimed": [
+    "本线旧完整历史已全量恢复",
+    "游戏已适配完毕",
+    "任何自然回放或完整对局通过"
+  ]
+}

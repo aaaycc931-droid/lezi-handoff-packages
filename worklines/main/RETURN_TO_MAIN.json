@@ -8,9 +8,9 @@
     "ui"
   ],
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
-  "phase": "MAIN-R38-SAFE-HOURGLASS-IMPLEMENTATION-20261021",
-  "current_breakpoint": "NEXT-MAIN-R38-PATH-CLOSURE-PLAN",
-  "status": "BOUNDED_HOURGLASS_PATCH_IMPLEMENTED_560_RELATED_CHECKS_PASS_DRAFT_UNMERGED",
+  "phase": "MAIN-FOUNDATION-20261024",
+  "current_breakpoint": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
+  "status": "bounded_foundation_implemented_dispatch_issued_receiver_pending",
   "confirmed_delta_this_session": [
     {
       "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -142,7 +142,11 @@
     "r23-r25 twelve replay plans covering64 old PD/DS specs are allUNRUN per source report; main did not read full prefixes or run engine"
   ],
   "shared_blocks": "SHARED_COORDINATION.json",
-  "next": "核M01/M04路径消灭、终点壁垒/龙鳞返回与落位死亡的同源完整结果，形成路径王安全具体方案；区分原公开简化模拟与实际执行，不用deferTurnEnd伪造普通来源，不替完整终局/应将搜索定案。保留D01证据无效信号在研究适配器的待接收项。",
+  "next": {
+    "id": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
+    "plan": "worklines/main/R38_PATH_CLOSURE_PLAN.md",
+    "action": "先建立路径/返回/落位差异用例并定位原子闭合后、下一begin前的安全检查点，然后最小共享补丁；三线专属回传不阻塞独立主线工作。"
+  },
   "messages_sent": false,
   "other_lines_adoption_verified": "Earlier exact scopes only, no new1.57 receipts.",
   "scoring_frozen": true,
@@ -159,7 +163,7 @@
     "CONF-STD-M07-POOL-EXCLUSION-20261016"
   ],
   "ordinary_scoped_confirmations_received_this_phase": [],
-  "publication_parent_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
+  "publication_parent_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
   "unread_concurrent_returns": [],
   "new_rule_confirmations_this_phase": 0,
   "current_phase_changes": [
@@ -2059,5 +2063,24 @@
       "engine_runs": 0,
       "automatic_messages_sent": 0
     }
+  },
+  "main_foundation_20261024": {
+    "report": "worklines/main/MAIN_FOUNDATION_REPORT.json",
+    "dispatch": "worklines/main/MODE_DISPATCH.json",
+    "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/13",
+    "path_plan_only": "worklines/main/R38_PATH_CLOSURE_PLAN.md",
+    "actual_validation": "6 new /99 focused/612 final related; same-author tests",
+    "not_run": [
+      "full TypeScript typecheck",
+      "five UI/Android/web-linked test files",
+      "complete UI/APK/build/deployment",
+      "standalone acceptance/qualification CLI runs requiring real git metadata",
+      "new M01/M04 safety implementation or natural path tests",
+      "original half-chaos12/64 and precise D01 semantic hooks",
+      "full legal-threat/checkmate search or actual full-match QA"
+    ],
+    "rule_delta": 0,
+    "other_line_receipts_written": false
   }
 }

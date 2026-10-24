@@ -1,0 +1,194 @@
+{
+  "schema": "lezi.main_foundation_report.v1",
+  "id": "MAIN-FOUNDATION-20261024",
+  "date_local": "2026-10-24",
+  "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
+  "phase": "bounded_evidence_infrastructure_implemented_and_three_mode_tasks_issued",
+  "authorization": {
+    "user_quote": "继续推进乐子象棋项目，你作为主线对三条支线进行统一任务执行与三线通用核心内容推进，完善游戏基建，同时分发三模式三条支线",
+    "interpretation": "主线推进既有共用技术修复和统一任务分发；具体任务是技术分工，不登记成新玩法批准、合并或其他对话接收。"
+  },
+  "collaboration": {
+    "working_revision": "2026-10-23.v0.18",
+    "formal_baseline": "1.8.0",
+    "level": "L3 shared research infrastructure",
+    "modules": [
+      "INTEGRATED_START",
+      "PROJECT_WORK_AGREEMENT",
+      "GITHUB_HANDOFF_WORKFLOW",
+      "AUTHORIZATION_AND_ADOPTION",
+      "BASELINE_DELTA_CHECK",
+      "MANDATORY_PRECHECK",
+      "AI_LIMITATION_CONTROL",
+      "VERIFICATION_LEVELS",
+      "PART-6_CURRENT_STATE",
+      "MAINTENANCE_LOOP"
+    ]
+  },
+  "implementation": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "base_commit": "478d798657524e18662683d053b5246b3c76419b",
+    "commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "branch": "codex/main-evidence-validity-20261024",
+    "PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/13",
+    "draft": true,
+    "merged": false,
+    "paths": [
+      "scripts/scoring/mechanism-evidence.ts",
+      "scripts/scoring/fixture-runner.ts",
+      "scripts/scoring/research-log.ts",
+      "scripts/scoring/policy-session.ts",
+      "scripts/scoring/run-acceptance.ts",
+      "scripts/scoring/run-mode-qualification.ts",
+      "tests/research-evidence-validity.test.ts"
+    ],
+    "behavior": [
+      "消费真实capture.evidenceValid=false，失效状态整条研究轨迹保持，后续正常采集/超时/调用者metadata不能洗回有效。",
+      "合法游戏结果/receipt/状态/时钟/随机保持；失效事件与派生数值不作证据，字段null_reason明确失效。",
+      "Fixture验证、正式额外验收及模式qualification入口检查有效性；Policy分类/归档invalid_execution。",
+      "证据标记仅研究authority日志/manifest，不进入玩家输入或产品状态。"
+    ]
+  },
+  "verification": {
+    "runtime": "Node v24.22.1",
+    "logs": {
+      "baseline": {
+        "sha256": "1a0359fcc0ddb7d6db7cd900c20ff8086381eca4e808f83ad10c133ff6296b30",
+        "bytes": 5125,
+        "tests": 62,
+        "pass": 62,
+        "fail": 0
+      },
+      "evidence-before": {
+        "sha256": "c907e2ebc84acd701b8ad27ce29de0d00334902f25b82f81bd9caedd9000ce4e",
+        "bytes": 20125,
+        "tests": 4,
+        "pass": 0,
+        "fail": 4
+      },
+      "focused": {
+        "sha256": "b736866598635ad4c62a455af4e7fbe8a33865b2cbf406c896cfea05b543b2ed",
+        "bytes": 9046,
+        "tests": 99,
+        "pass": 99,
+        "fail": 0
+      },
+      "related-final": {
+        "sha256": "1a1370a0d59f798f3352e6f2bdcc24598cac61cf736f6840e32ed3dd2b8c565f",
+        "bytes": 58965,
+        "tests": 612,
+        "pass": 612,
+        "fail": 0
+      }
+    },
+    "new_cases": 6,
+    "differential_before_cases": 4,
+    "before_result": "4 fail for missing propagation after correcting initial undefined-fixture test setup; the first setup-error run is not differential evidence",
+    "focused": {
+      "files": 5,
+      "checks": 99,
+      "pass": 99
+    },
+    "final_related": {
+      "files": 43,
+      "checks": 612,
+      "pass": 612,
+      "fail": 0,
+      "command": "node --test --test-concurrency=1 <43 engine/research test files; excludes android-shell,web-layout,web-gameplay-v4,web-messages,current-control>",
+      "source_bytes": "91 pinned src/test fixtures verified; unchanged scoring dependencies restored byte-exact before final612 run"
+    },
+    "design_independence": "same AI designed implementation and tests; not independent QA",
+    "remote_readback": {
+      "all7_published_files_exact": true,
+      "complete_tree_compared": true
+    },
+    "protection": {
+      "base_blobs": 531,
+      "unchanged": 526,
+      "changed": [
+        "scripts/scoring/fixture-runner.ts",
+        "scripts/scoring/policy-session.ts",
+        "scripts/scoring/research-log.ts",
+        "scripts/scoring/run-acceptance.ts",
+        "scripts/scoring/run-mode-qualification.ts"
+      ],
+      "added": [
+        "scripts/scoring/mechanism-evidence.ts",
+        "tests/research-evidence-validity.test.ts"
+      ],
+      "deleted": 0
+    }
+  },
+  "path_safety": {
+    "status": "source_checked_concrete_plan_only",
+    "plan": "worklines/main/R38_PATH_CLOSURE_PLAN.md",
+    "source": "HC-SAFE-03/R38-F04 plus pinned rules.ts/game.ts/settlement.ts",
+    "implementation_this_phase": false,
+    "planned_groups": 10,
+    "groups_run": 0
+  },
+  "dispatch": "worklines/main/MODE_DISPATCH.json",
+  "receiver_status": "all three issued; actual receiver reading/adoption unknown",
+  "not_run": [
+    "full TypeScript typecheck",
+    "five UI/Android/web-linked test files",
+    "complete UI/APK/build/deployment",
+    "standalone acceptance/qualification CLI runs requiring real git metadata",
+    "new M01/M04 safety implementation or natural path tests",
+    "original half-chaos12/64 and precise D01 semantic hooks",
+    "full legal-threat/checkmate search or actual full-match QA"
+  ],
+  "limitation_audit": {
+    "audit_trigger": "跨模式共享基础与来源冲突/外推",
+    "risk_level": "medium; isolated draft research-only code, no production rule mutation",
+    "known_facts": [
+      "PR12 latest head verified; prior chain retained",
+      "four real adapter integration differences before patch; final612 related pass",
+      "seven remote files equal tested bytes,526 existing blobs unchanged"
+    ],
+    "user_statements": [
+      "继续推进乐子象棋项目，你作为主线对三条支线进行统一任务执行与三线通用核心内容推进，完善游戏基建，同时分发三模式三条支线"
+    ],
+    "claim_register": [
+      {
+        "claim": "观察失效可能被旧adapter当正常证据",
+        "type": "document_fact and executed_component_difference",
+        "verification": "原4红/现6绿，真实隔离观察失败注入"
+      }
+    ],
+    "ai_interpretations": [
+      "本轮推进授权覆盖共用证据基础修复与三线任务编制，不扩大为玩法/门禁/合并"
+    ],
+    "assumptions": [
+      "既有capture失效信号含义保持"
+    ],
+    "unknowns": [
+      "所有实际产品/自然来源与独立QA",
+      "另一对话的真实执行/采用",
+      "全局查询与原子安全搜索完整性"
+    ],
+    "competing_explanations": [
+      "单纯事件为空可能是合法无事件；只在明确evidenceValid=false时失效，未把空数组等同失败"
+    ],
+    "falsification_conditions": [
+      "合法执行状态/随机因观察不同而变化",
+      "失效归档可被qualification判通过",
+      "公开/对手输入出现authority证据字段"
+    ],
+    "verification_status": "partial; bounded runtime and source evidence, independent/full validation not claimed",
+    "action_boundary": "七文件独立草稿PR；三模式源码共享/受限文档分工",
+    "failure_conditions": [
+      "源HEAD变动未合并",
+      "未闭合来源或新玩法冲突"
+    ],
+    "residual_risk": "测试预期仍可能继承设计漏项；未跑自然准入与真实客户端",
+    "next_validation_action": "先建立路径/返回/落位差异用例并定位原子闭合后、下一begin前的安全检查点，然后最小共享补丁；三线专属回传不阻塞独立主线工作。"
+  },
+  "next": {
+    "id": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
+    "plan": "worklines/main/R38_PATH_CLOSURE_PLAN.md",
+    "action": "先建立路径/返回/落位差异用例并定位原子闭合后、下一begin前的安全检查点，然后最小共享补丁；三线专属回传不阻塞独立主线工作。"
+  },
+  "scoring": "frozen",
+  "NET": "paused"
+}

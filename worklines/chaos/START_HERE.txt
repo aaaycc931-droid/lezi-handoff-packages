@@ -1,0 +1,9 @@
+《乐子象棋》混乱模式（原揭棋）工作线
+
+2026-10-24主线按用户三模式分发指令建立独立路由。引擎ID jieqi，旧资料称原揭棋/现有揭棋；这不是新增第四种玩法，也不证明此前无独立成果。
+
+先核最新HEAD，读取 ../../collaboration/CURRENT.json 和 ../main/MODE_DISPATCH.json，再读本目录CURRENT_STATE.json、PROJECT_WORK_AGREEMENT.md、TASK_FROM_MAIN.json及任务完整依赖。当前CH-01：恢复现行来源、核H11×H15原揭棋差分。
+
+旧入口 ../standard/sources/standard/inherited_dispatch/baseline/modes/original_jieqi/CURRENT_RULES.md 仅为导航和历史边界，现行完整确认按 ../main/ADJUDICATION.json 与SOURCE_MAP.json恢复。不要从旧快照复活待批状态，不移植普通/半混乱专属规则。
+
+任务已发布，接收对话尚未登记实际读取/执行。接收者读后自己维护READ_RECEIPTS.json；阶段成果写回本目录及RETURN_TO_MAIN.json，不要求用户转发包。共享代码由主线串行整合。评分冻结、NET暂停；不合并、部署、变门禁或登记未运行通过。

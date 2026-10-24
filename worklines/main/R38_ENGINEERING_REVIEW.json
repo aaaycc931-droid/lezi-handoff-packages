@@ -292,7 +292,7 @@
         "commit": "7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9",
         "status": "bounded_hourglass_candidate_closure_and_royal_guard_implemented_component_checks_pass",
         "natural_and_full_safety_acceptance": "not claimed",
-        "observer_adapter_signal_consumption": "pending"
+        "observer_adapter_signal_consumption": "implemented in draftPR13; precise semantic stages/natural verification pending"
       }
     },
     {
@@ -1144,5 +1144,19 @@
       "PR": 10,
       "detail": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation"
     }
+  },
+  "main_foundation_20261024": {
+    "report": "worklines/main/MAIN_FOUNDATION_REPORT.json",
+    "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/13",
+    "observer_adapter_signal_consumption": "implemented in both adapters and archive/qualification paths;6 new/612 related checks",
+    "D01_semantic_hooks": "still pending",
+    "natural12": 0,
+    "original64": "UNRUN"
+  },
+  "latest_path_plan": {
+    "id": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
+    "plan": "worklines/main/R38_PATH_CLOSURE_PLAN.md",
+    "action": "先建立路径/返回/落位差异用例并定位原子闭合后、下一begin前的安全检查点，然后最小共享补丁；三线专属回传不阻塞独立主线工作。"
   }
 }
