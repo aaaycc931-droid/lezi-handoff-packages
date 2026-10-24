@@ -3,11 +3,11 @@
   "from_workline": "half_chaos",
   "to_workline": "main",
   "base_commit": "045d772ce802f38ef7740d114f446dd55d5e3f72",
-  "revision": "HC-43-STATIC-PILOT-PREFLIGHT-20261024-r43",
-  "phase": "r43_static_pilot_data_integrity_complete_main_admission_and_runner_blocked",
+  "revision": "HC-SESSION-CLOSEOUT-20261024-r44",
+  "phase": "r44_conversation_closed_after_r43_preflight_no_runtime",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "14/14 original document checks pass; three pilots 23 requests and 43 checkpoints; 12 natural UNRUN and 64 original UNRUN; PR13 cannot run approved three tuples.",
+  "current_breakpoint": "r43 14/14 static data-link checks passed, source original pilots 23 requests /43 checkpoints; main exact tuple admission and driver blocked. User closed this conversation only. 12/64 remain unrun.",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
@@ -2100,6 +2100,33 @@
       "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
       "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
       "action": "From latest GitHub HEAD, inspect real main 3-tuple admission + passive checkpoints + source-pinned restricted driver and approvals; only then test original pilots; meanwhile independent source prep may continue."
+    }
+  },
+  "r44_closeout_to_main": {
+    "id": "HC-SESSION-CLOSEOUT-20261024-r44",
+    "date_local": "2026-10-24",
+    "report": "worklines/half_chaos/HC44_SESSION_CLOSEOUT.json",
+    "prior_r43_commit": "f121c8085cd20d152658abdec86a9f478089feef",
+    "previous_r43_report": "worklines/half_chaos/HC43_STATIC_PILOT_PREFLIGHT.json",
+    "executed_original12": 0,
+    "original64": "UNRUN",
+    "pilot_input_integrity": "14/14 DOCUMENT_ONLY",
+    "main_technical_dependencies": [
+      "Trusted original three-tuple authority room/source admission with negative tests, without opening featuresReady",
+      "Valid original world RNG, heroes and mutation binding plus trusted restricted replay driver; no invented requests",
+      "Exact passive after-main atom and after-normal-end and skill-request observations with invalid-evidence handling and secret isolation",
+      "M01/M04 path/rebound/landing/royal safety and D01 six-step source closure against original records",
+      "Published actual source-pinned executable pilot command and legal scoped authorization"
+    ],
+    "main_actual_reception": null,
+    "main_adoption": null,
+    "code_changes": 0,
+    "gameplay_approvals": 0,
+    "other_lines_stopped": false,
+    "next": {
+      "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+      "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
+      "instructions": "On any future new chat read fixed root START_HERE.md, current remote HEAD, collaboration/CURRENT.json, worklines/half_chaos/START_HERE.txt, TASK_FROM_MAIN.json, CURRENT_STATE.json, latest r44 closeout, r43 preflight report, original input/spec/checkpoint bodies and latest main engine report/real code. Protect concurrent changes and previous user approvals. Verify new main source admission/observability/replay driver before any authorized natural pilot execution; otherwise independent source checks only, and update RETURN_TO_MAIN without inventing main adoption."
     }
   }
 }

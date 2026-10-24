@@ -2698,6 +2698,14 @@ HC-EVID-Q01—04交主线核不可回退历史与稳定本体、请求payload绑
 
 主线须先提供真实三tuple受控准入/否定回归、15+15原身份与畸变随机、准确after-main/after-normal-end被动观察与观察失效隔离、原请求受控driver及可执行版本固定命令；原模式featuresReady仍false。主线READ_RECEIPTS未查到接收r42的实际记录，本轮写回也不替main登记。原12自然执行0/64UNRUN/210未真实采集，评分冻结、NET暂停；无本线引擎运行/代码修改。下一NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS。
 
+### 8.69 r44 2026-10-24 本对话收束及跨会话恢复
+
+用户明确“先收束本轮对话，我可能会更换对话”，**只结束本半混乱工作线的当前对话**，不停止主线、普通/混乱/UI或其它并发路线。本次先核仓库最新HEAD `2648aa0e0fce241d8abbdc9977d77e074600afc0`；r43提交 `f121c8085cd20d152658abdec86a9f478089feef` 仍在历史且至今2个后续提交完全未触及本目录；其中其它路线有新的主线评分候选成果，本线不消费为半混乱模式分数或引擎准入。
+
+本轮有效最新成果为r42真实主线补丁/原DS04静态对照，以及r43 14/14原始JSON引用结构检查：原12自然回放0次，64全UNRUN，10世界/110请求/210观察点文件引用一致；先导MA-PD01、MA-DS03、MA-DS04声明23请求、43点，未执行。这些是**静态**检查，不是棋局、技术、产品验收。原三two-hero+mutation准入、精确被动观察、原数据受控driver、路径原子/王安全仍待main合法发布，featuresReady=false；不造缺失原正/负刺激，评分在本线冻结，NET暂停。主线READ_RECEIPTS没有本线r42/r43接收确认；本次回传不代填主线接受。
+
+收束工件`HC44_SESSION_CLOSEOUT.json`、CURRENT_STATE.session_closeout_r44、READ_RECEIPTS.r44_closeout_read和RETURN_TO_MAIN.r44_closeout_to_main；固定入口顶部更新后，可在新对话按入口/HEAD/协作当前版本/主线真实补丁恢复`NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS`。关闭对话不是执行授权、规则批准、代码合并、门禁开启或自然回放资格；阶段成功写回须以提交与复读核对为准。
+
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
 | ID | 责任 | 需要协调的精确问题 | 本线已做 |

@@ -1,0 +1,151 @@
+{
+  "schema": "lezi.half_chaos.session_closeout.v1",
+  "id": "HC-SESSION-CLOSEOUT-20261024-r44",
+  "date_local": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "user_request": "先收束本轮对话，我可能会更换对话",
+  "scope": "close this half_chaos chat only; not stop project/other modes/main",
+  "source": {
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "handoff_head_at_precloseout": "2648aa0e0fce241d8abbdc9977d77e074600afc0",
+    "precloseout_r43_commit": "f121c8085cd20d152658abdec86a9f478089feef",
+    "r43_report": "worklines/half_chaos/HC43_STATIC_PILOT_PREFLIGHT.json",
+    "r42_report": "worklines/half_chaos/HC42_PATCH_RECEPTION_DS04_SOURCE_REVIEW.json",
+    "main_receipt_path": "worklines/main/READ_RECEIPTS.json",
+    "main_receipt_blob_at_check": "b3323e7fd2feaa0607d3f7dd70ab397b99a86846",
+    "engine_source_last_actually_inspected": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7"
+  },
+  "protection": {
+    "concurrent_commits_since_r43": 3,
+    "concurrent_changed_paths": [
+      "CURRENT_HANDOFF.json",
+      "START_HERE.md",
+      "worklines/chaos/CH02_JIEQI_WITNESSES.json",
+      "worklines/chaos/CH02_VALIDATION.md",
+      "worklines/chaos/CURRENT_STATE.json",
+      "worklines/chaos/RETURN_TO_MAIN.json",
+      "worklines/chaos/START_HERE.txt",
+      "worklines/main/CURRENT_STATE.json",
+      "worklines/main/PROJECT_WORK_AGREEMENT.md",
+      "worklines/main/READ_RECEIPTS.json",
+      "worklines/main/RETURN_TO_MAIN.json",
+      "worklines/main/SOURCE_MAP.json",
+      "worklines/main/START_HERE.txt",
+      "worklines/main/VALIDATION.json",
+      "worklines/main/scoring/CALIBRATION_PILOT.md",
+      "worklines/main/scoring/CANDIDATE_METHOD.md",
+      "worklines/main/scoring/EXECUTION_STATE.json",
+      "worklines/main/scoring/LEGACY_AUDIT_RESULTS.json",
+      "worklines/main/scoring/OPTIMIZATION_HANDOFF.md",
+      "worklines/main/scoring/REVIEW_REPORT.md",
+      "worklines/main/scoring/SOURCE_MANIFEST.json",
+      "worklines/main/scoring/VALIDATION_LOG.txt",
+      "worklines/main/scoring/VALIDATION_RESULTS.json",
+      "worklines/main/scoring/audit_legacy.py",
+      "worklines/main/scoring/candidate_model.py",
+      "worklines/main/scoring/test_candidate_model.py",
+      "worklines/main/scoring/validate_candidate.py",
+      "worklines/main/scoring/validation_cases.py"
+    ],
+    "concurrent_half_chaos_paths": [],
+    "historical_state_and_origins_retained": true,
+    "shared_engine_code_changed": false,
+    "main_score_route_touched": false,
+    "main_score_note": "Other main scoring candidate route has new separate work at current HEAD; half-chaos closeout does not update main scoring adoption or its freeze rules."
+  },
+  "completed": [
+    "r42 read main HC-42 task and real PR8/9/10/13 patch/source boundaries; DS04 natural B3/B4 still UNRUN",
+    "r43 read original JSON and complete 14/14 document-structure checks (world/replay/request/spec/checkpoint exact ID references, not runtime legality)",
+    "r43 mapped 3 original pilots MA-PD01/MA-DS03/MA-DS04 to 23 original requests and 43 direct checkpoints with original input unchanged",
+    "r43 published own-line source preflight and exact main-owned admission/observer/driver/path safety dependencies, followed by 6-file published readback",
+    "r44 closes this conversation and persists resumable breakpoint without any new gameplay approvals or game code"
+  ],
+  "canonical_counts": {
+    "original_worlds": 10,
+    "original_replays": 12,
+    "source_declared_actions": 110,
+    "original_specs": 64,
+    "original_checkpoints": 210,
+    "source_check_passes": 14,
+    "original_natural_executions": 0,
+    "original_passed_specs": 0,
+    "observed_natural_checkpoints": 0,
+    "three_pilot_source_requests": 23,
+    "three_pilot_checkpoints": 43
+  },
+  "next_pilots": [
+    "MA-PD01",
+    "MA-DS03",
+    "MA-DS04"
+  ],
+  "exactly_preserved_tuples": [
+    {
+      "red": "H04",
+      "black": "H03",
+      "mutation": "M01"
+    },
+    {
+      "red": "H04",
+      "black": "H03",
+      "mutation": "M04"
+    },
+    {
+      "red": "H06",
+      "black": "H05",
+      "mutation": "D01"
+    }
+  ],
+  "main_owned_blockers": [
+    "Trusted original three-tuple authority room/source admission with negative tests, without opening featuresReady",
+    "Valid original world RNG, heroes and mutation binding plus trusted restricted replay driver; no invented requests",
+    "Exact passive after-main atom and after-normal-end and skill-request observations with invalid-evidence handling and secret isolation",
+    "M01/M04 path/rebound/landing/royal safety and D01 six-step source closure against original records",
+    "Published actual source-pinned executable pilot command and legal scoped authorization"
+  ],
+  "missing_original_evidence": [
+    "PD-S31 original extra return-landing positive",
+    "PD-S35 transport duplicate/actor collision",
+    "DS-S16 safe-then-unsafe same-window pair",
+    "DS-S20 post-main bomb reattempt",
+    "DS-S22 full invalid caster/target/range/ammo/team quota negative set"
+  ],
+  "main_receiver": {
+    "r42": "UNKNOWN_NO_VERIFIED_MAIN_READ",
+    "r43": "UNKNOWN_NO_VERIFIED_MAIN_READ",
+    "this_closeout": "PUBLISHED_BY_SENDER_ONLY; not equal to main adoption"
+  },
+  "gates": {
+    "featuresReady": false,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "scoring": "FROZEN_IN_HALF_CHAOS_SCOPE",
+    "NET": "PAUSED",
+    "merged_engine_PR13": false,
+    "no_gameplay_rule_change": true,
+    "no_engine_execution": true
+  },
+  "acceptance": "source link checks do not establish natural gameplay or overall mode readiness",
+  "verification": {
+    "precloseout_r43_commit_ancestor": true,
+    "concurrent_changed_hc": 0,
+    "scope": "GitHub published r43 readback and this closeout documentation; no runtime/QA",
+    "independent_QA": false,
+    "main_adoption_unknown": true
+  },
+  "next": {
+    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
+    "instructions": "On any future new chat read fixed root START_HERE.md, current remote HEAD, collaboration/CURRENT.json, worklines/half_chaos/START_HERE.txt, TASK_FROM_MAIN.json, CURRENT_STATE.json, latest r44 closeout, r43 preflight report, original input/spec/checkpoint bodies and latest main engine report/real code. Protect concurrent changes and previous user approvals. Verify new main source admission/observability/replay driver before any authorized natural pilot execution; otherwise independent source checks only, and update RETURN_TO_MAIN without inventing main adoption."
+  },
+  "writeback": {
+    "note": "Sender closeout artifacts only, commit resolved from Git history after publication. Do not write future SHA into source body."
+  },
+  "limitation_audit": {
+    "classification": "L3 cross mode checkpoint and source authority handoff",
+    "known": "r43 14/14 static checks only and actual main receiver absent from receipts",
+    "uncertainties": "actual main future implementation, independent runtime evidence, original source legal opening",
+    "alternative": "real source may still reject planned actions despite valid JSON linkage",
+    "failure_condition": "treat closeout or pilot static integrity as engine readiness",
+    "conservative_boundary": "preserve blocking gates, historic approvals and newer concurrent work"
+  }
+}
