@@ -3,7 +3,7 @@
     "id": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
     "subject": "NP完整自然前缀与H21随机授鳞的真实身份/原子入口静态接口核验",
     "action": "只读核已存在游戏代码里的普通32棋R1-B5 ID变换、H21 beginFormalTurn、H02/M04 AS/AP/ES动作入口和已确认王安全/原子逻辑的实际差异；用本次设计合同列出真实模式准入、事件字段、RNG防护及正式运行前提。禁用普通模式门禁不得绕过，不运行引擎、不提交共享业务代码、不擅自确认规则。共享引擎/RNG重放/模式qualification由主线负责，等待其实际接收和授权时再进行真实回放。",
-    "status": "ready_not_started_after_document_stage",
+    "status": "ready_not_started_paused_until_user_continuation",
     "implementation_authorized": false,
     "main_dependency": "MAIN-H21-RNG-INSTRUMENTATION-DECISION remains unreceived/undecided; independent source-only preflight may continue"
   },
@@ -53,7 +53,7 @@
     "scoring": "frozen",
     "kind": "DESIGN_ONLY_UNEXECUTED"
   },
-  "status": "active_h21_rng_contract_prepared_engine_and_main_dependencies_pending",
+  "status": "closed_20261024_h21_rng_contract_next_paused",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261019-r1",
     "status": "closed_current_conversation",
@@ -200,5 +200,13 @@
     "formal_tests": "UNRUN",
     "scoring": "frozen",
     "NET": "paused"
+  },
+  "session_closeout_20261024": {
+    "id": "STD-SESSION-CLOSEOUT-20261024-H21-RNG-REPLAY-CONTRACT",
+    "report": "worklines/standard/reviews/STD_SESSION_CLOSEOUT_20261024_H21_RNG_REPLAY_CONTRACT.md",
+    "next": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
+    "started": false,
+    "formal_tests": "UNRUN",
+    "no_new_confirmations": true
   }
 }

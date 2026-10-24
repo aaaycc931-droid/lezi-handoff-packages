@@ -6,7 +6,7 @@
   "source_commit": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
   "base_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "approval_context_source_commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
-  "phase": "H21_RNG_REPLAY_CONTRACT_DOCUMENT_PREPARED",
+  "phase": "closed_dialogue_20261024",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_breakpoint": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
@@ -1072,7 +1072,7 @@
     "id": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
     "subject": "NP完整自然前缀与H21随机授鳞的真实身份/原子入口静态接口核验",
     "action": "只读核已存在游戏代码里的普通32棋R1-B5 ID变换、H21 beginFormalTurn、H02/M04 AS/AP/ES动作入口和已确认王安全/原子逻辑的实际差异；用本次设计合同列出真实模式准入、事件字段、RNG防护及正式运行前提。禁用普通模式门禁不得绕过，不运行引擎、不提交共享业务代码、不擅自确认规则。共享引擎/RNG重放/模式qualification由主线负责，等待其实际接收和授权时再进行真实回放。",
-    "status": "ready_not_started_after_document_stage",
+    "status": "ready_not_started_paused_until_user_continuation",
     "implementation_authorized": false,
     "main_dependency": "MAIN-H21-RNG-INSTRUMENTATION-DECISION remains unreceived/undecided; independent source-only preflight may continue"
   },
@@ -1558,5 +1558,53 @@
       "worklines/standard/RETURN_TO_MAIN.json",
       "worklines/standard/READ_RECEIPTS.json"
     ]
+  },
+  "session_closeout_20261024": {
+    "id": "STD-SESSION-CLOSEOUT-20261024-H21-RNG-REPLAY-CONTRACT",
+    "date_local": "2026-10-24",
+    "user_quote": "先收束本轮对话，我可能会更换对话",
+    "scope": "this_standard_dialogue_only",
+    "status": "closed",
+    "other_worklines_stopped": false,
+    "standard_mode_complete": false,
+    "source_commit_before_closeout": "948085463bf19e88eddd7de76c7e27f4a48f01bb",
+    "previous_standard_commit": "2061024a14f42423c34ad56056dce4a9beb111ab",
+    "concurrent_commits_preserved": 5,
+    "concurrent_standard_path_changes": 0,
+    "completed": [
+      {
+        "id": "STD-RNG-01",
+        "file": "reviews/H21_RNG_SOURCE_TRACE.md",
+        "result": "source trace only"
+      },
+      {
+        "id": "STD-H21-RNG-REPLAY-CONTRACT-20261024",
+        "file": "specs/H21_RNG_REPLAY_CONTRACT_20261024.json",
+        "review": "reviews/H21_RNG_REPLAY_CONTRACT_REVIEW_20261024.md",
+        "result": "design only; candidates 0/1/3/4/15, AS/ES [1,1,1,4], AP [10,2,2,5]"
+      }
+    ],
+    "next_task": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
+    "next_started": false,
+    "next_approval": false,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "rule_delta": 0,
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "independent_QA": false,
+    "formal_specs": "UNRUN",
+    "score": "frozen in standard line; main concurrent scoring work untouched",
+    "NET": "paused",
+    "mode_gate": "xiangqi.featuresReady=false",
+    "main_read_receipt_verified": null,
+    "main_adoption_verified": null,
+    "report": "worklines/standard/reviews/STD_SESSION_CLOSEOUT_20261024_H21_RNG_REPLAY_CONTRACT.md",
+    "resume_text": "继续《乐子象棋》普通象棋工作线。先核对最新远端HEAD与并发成果；读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt ，以 worklines/standard/CURRENT_STATE.json#latest_session_closeout 和 NEXT_ACTIONS.json#first 为准。已完成H21授鳞随机来源追溯及N=0/1/3/4/15、AS/AP/ES条件性索引的复验合同。下一任务 NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT（只读静态接口预检）尚未启动。正式NP/AS/AP/ES/RE与真实引擎测试/自然回放仍UNRUN；普通模式门禁不绕过。确认普通31/直接共享13/规则Δ0，评分冻结、NET暂停；保护新旧成果、增量写回并复读，不代填主线接收采用回执。"
+  },
+  "main_receipt_pending_20261024": {
+    "contract": "specs/H21_RNG_REPLAY_CONTRACT_20261024.json",
+    "read_verified": null,
+    "adopted_verified": null
   }
 }
