@@ -2678,6 +2678,18 @@ HC-EVID-Q01—04交主线核不可回退历史与稳定本体、请求payload绑
 
 对话收束不增加玩法确认或工程授权，不停止主线/普通/UI任务。原CONFIRMATIONS、ASSERTION_EVIDENCE_MATRIX、ACCEPTANCE_SCOPE和REPLAY_ACTION_DATA保持原blob；64全部UNRUN，12回放执行0，210检查点仍为待观察；featuresReady仍false，评分冻结、NET暂停。本线不代填主线接收r41的回执。下一`NEXT-HC-AWAIT-MAIN-R38-FIRST-BOUNDED-IMPLEMENTATION`：下次从最新GitHub HEAD和固定入口恢复，先核主线具体代码/运行权限、隔离分支与R38-SAFE-BOMB实际补丁及回归；有真实证据再按r40原B3/B4静态清单独立核验，无则仅来源/文档工作，不重复向主线发r38。
 
+### 8.67 r42 接收主线有限补丁并复核原DS04 B3/B4（源码检查，非自然执行）
+
+2026-10-24用户指示“继续半混乱模式推进”，按主线新下发的 `HC-42-RECEIVE-PATCHES-AND-DS04` 工作。核hand-off HEAD `5de988c225bfb84d9c72170a86b81fb5486a2bd9`、协作工作稿v0.18和主线`MODE_DISPATCH`/任务/基础报告、PR8—13真实状态与固定源。本线只更新自身读源回执、状态、回传、报告和入口，未改共享业务代码。
+
+主线三项有限技术补丁已经真实存在而非仍待制作：PR8 `ea3b35c` 在D01投弹原射程/名额校验后、弹药/污染更新前拒绝已受将王；其合成房间测试覆盖拒投→正常应将→新安全窗口合法投弹及重放/错误优先次序。PR9 `74edf37` 修铁马马腿威胁两终点公式。PR10 `7ece1fd` 提供沙漏单候选隔离闭合及王安全/拒绝恢复。PR13 `3f98bc9` 传播观察证据无效信号。PR11/12为山的独立草稿，保留但本线未审其代码。以上PR均仍open/draft、未合并；主线分别报告519/529/560/612项相关检查通过，本对话不重复执行测试，不冒充独立QA。
+
+对照旧`MA-DS04`：B3黑方暗士位已揭真无限龙位(4,1)，红车普通将军，声明请求`MA-DS04:B3:pre-1`向(4,2)投弹应拒，弹1/名额0/原正式截止和未污染均不变，再以普通黑车应将；R4后B4`MA-DS04:B4:pre-1`应在真正新安全窗口投弹成功（弹1→0，名额0→1，(4,2)污染，正常主行动仍可执行）。PR8合成组件测试是有价值的类比，但不是原15+15暗棋身份世界、固定R1—B4自然初始和连续执行，更未独立证明死亡/时钟/玩家投影。原`DS-S17—22/28`仍各为UNRUN；特别DS-S20缺原明示主行动后再投刺激、DS-S22缺全套非法分支，不能新增刺激或给PASS。
+
+当前`src/modes.ts`仍`half_chaos.featuresReady=false`；PR13固定源码`src/research-source-context.ts`半混乱白名单只有shuffler并拒mutation，`src/remote-room.ts`研究有mutation抽取受阻。因此原三精确tuple（H04/H03+M01、H04/H03+M04、H06/H05+D01）研究准入与来源限定driver/精准被动观察仍缺，12原自然计划全部BLOCKED_UNRUN，210检查点无自然采集。旧`ADMISSION_CONTRACT_PROPOSAL`已有三tuple、110旧请求、10世界见证、210检查点、三先导`MA-PD01/MA-DS03/MA-DS04`的提案；当前不存在经核验可用的12自然回放CLI命令，不把`run-mode-qualification`当原回放，不发明命令。
+
+本线报告 `HC42_PATCH_RECEPTION_DS04_SOURCE_REVIEW.json` 记录源提交、源码片段、逐义务类比/差距、主线最小依赖和L3局限。完成的是V2有限实际源检查＋V1映射；主线测试统计为其报告而非本轮复测。未动用户确认、老输入/规格、模式门禁、评分和NET；主线是否实际读/采纳本r42回传仍未知。下一 `NEXT-HC-VERIFY-EXACT-TUPLE-ADMISSION-AND-PILOT-READINESS`：仅在main真实提交合法三tuple准入、准确观察点、受控适配器并提供实际可用命令和权限后，再核三先导完整世界/否定回归并决定能否实际执行原回放。
+
 ## 9. 2026-10-14阶段历史状态（当前覆盖见§0、§8.28—8.46与根状态）
 
 | ID | 责任 | 需要协调的精确问题 | 本线已做 |

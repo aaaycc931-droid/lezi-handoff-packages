@@ -1,0 +1,367 @@
+{
+  "schema": "lezi.half_chaos.patch_reception_source_review.v1",
+  "id": "HC-42-SOURCE-RECEPTION-20261024-r42",
+  "workline": "half_chaos",
+  "task_id": "HC-42-RECEIVE-PATCHES-AND-DS04",
+  "date_local": "2026-10-24",
+  "user_instruction": "继续半混乱模式推进",
+  "review_basis": {
+    "handoff_repository": "aaaycc931-droid/lezi-handoff-packages",
+    "handoff_head": "5de988c225bfb84d9c72170a86b81fb5486a2bd9",
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_latest_stacked_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "main_dispatch": "worklines/main/MODE_DISPATCH.json",
+    "main_task": "worklines/half_chaos/TASK_FROM_MAIN.json",
+    "main_foundation": "worklines/main/MAIN_FOUNDATION_REPORT.json",
+    "current_collaboration_working_revision": "2026-10-23.v0.18",
+    "formal_collaboration_baseline": "1.8.0",
+    "original_replay_source": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+    "original_spec_source": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+    "precheck": "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
+    "admission_contract": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json"
+  },
+  "receiver_read": true,
+  "receiver_adopted_scope": "Recognize main's published bounded code patches and evidence validity fix as versioned technical artifacts for half-chaos source planning. Does not mean main adopted this receipt, gameplay approval, acceptance, code merge or pilot run.",
+  "engine_stack": [
+    {
+      "pr": 8,
+      "sha": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "base": "14b306fe1cf9f459ef54e22d9ffa4ce2e83db510",
+      "status": "open_draft_unmerged",
+      "scope": "bomb in-check refusal",
+      "changed_paths": [
+        "src/hero-actions.ts",
+        "tests/bomb-target-boundaries.test.ts"
+      ],
+      "reported_related_pass": 519
+    },
+    {
+      "pr": 9,
+      "sha": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "base": "ea3b35cdb38bd6c65ff0142d341d765c36a7382a",
+      "status": "open_draft_unmerged",
+      "scope": "iron steed leg endpoint correction",
+      "changed_paths": [
+        "src/rules.ts",
+        "tests/mutation.test.ts"
+      ],
+      "reported_related_pass": 529
+    },
+    {
+      "pr": 10,
+      "sha": "7ece1fdda7837d4f14433f3f74c6f6be8eef4cc9",
+      "base": "74edf370acf76a377b3f74e69f252d0b7de2169d",
+      "status": "open_draft_unmerged",
+      "scope": "hourglass isolated candidate and safety closure",
+      "changed_paths": [
+        "src/hero-actions.ts",
+        "src/mechanism-observer.ts",
+        "src/remote-room.ts",
+        "src/settlement.ts",
+        "tests/hourglass-safety-boundaries.test.ts"
+      ],
+      "reported_related_pass": 560
+    },
+    {
+      "pr": 11,
+      "sha": "a27833955e6f1b8d70dca9b8c15aad193c6c3479",
+      "status": "open_draft_unmerged",
+      "scope": "Shan stage1 unrelated hero prototype; metadata only, retained"
+    },
+    {
+      "pr": 12,
+      "sha": "478d798657524e18662683d053b5246b3c76419b",
+      "status": "open_draft_unmerged",
+      "scope": "Shan stage2A board adapter; metadata only, retained"
+    },
+    {
+      "pr": 13,
+      "sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+      "base": "478d798657524e18662683d053b5246b3c76419b",
+      "status": "open_draft_unmerged",
+      "scope": "research observation evidence validity propagated",
+      "reported_related_pass": 612
+    }
+  ],
+  "actual_source_read": [
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+      "path": "src/hero-actions.ts",
+      "blob": "0f862528ae09f3b6ea72cf693b17f159e0a13c52",
+      "scope": "B3 source guard and hourglass settlement branches, selected lines"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+      "path": "src/research-source-context.ts",
+      "blob": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+      "scope": "complete 59-line source"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+      "path": "src/modes.ts",
+      "blob": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+      "scope": "complete mode gate source"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+      "path": "src/remote-room.ts",
+      "blob": "97b60f7c1ab9a79bf85388a9fc824690f7115451",
+      "scope": "mode creation and research mutation gates, hourglass entry selected"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+      "path": "scripts/scoring/mechanism-evidence.ts",
+      "blob": "e1f0a845b2b5e7bb4ddf6cc7a2a9de8bdefe40b2",
+      "scope": "full sticky validity helper"
+    }
+  ],
+  "patch_reviewed": [
+    {
+      "pr": 8,
+      "files": [
+        "src/hero-actions.ts",
+        "tests/bomb-target-boundaries.test.ts"
+      ],
+      "finding": "guard isGeneralInCheck after original caster/quota/target validation, before ammo/warp/team quota mutation; public synthetic B3 refusal/evasion/new safe window and rejection precedence tests explicitly marked non-natural"
+    },
+    {
+      "pr": 9,
+      "files": [
+        "src/rules.ts"
+      ],
+      "finding": "two endpoint expressions changed to (x+2dx,y±1) or (x±1,y+2dy); original component PR evidence is not PD natural execution"
+    },
+    {
+      "pr": 10,
+      "files": [
+        "src/hero-actions.ts",
+        "src/remote-room.ts"
+      ],
+      "finding": "preclone destruction-batch requirement and candidate-only full closure safety with unknown context throw; not full path/terminal source completeness"
+    },
+    {
+      "pr": 13,
+      "files": [
+        "scripts/scoring/fixture-runner.ts",
+        "scripts/scoring/run-mode-qualification.ts"
+      ],
+      "finding": "evidenceValid=false sticky propagates to fixture checks and qualification; source validity fix does not admit the 3 original half-chaos tuples"
+    }
+  ],
+  "ds04_reconciliation": {
+    "replay": "MA-DS04",
+    "world": "IW-61790bfc01eccf12",
+    "tuple": {
+      "mode": "half_chaos",
+      "heroes": {
+        "red": "H06 / nozdormu",
+        "black": "H05 / murozond"
+      },
+      "mutation": "D01 / end_time"
+    },
+    "original_B3": {
+      "request": "MA-DS04:B3:pre-1",
+      "actor": "black",
+      "caster": [
+        4,
+        1
+      ],
+      "target": [
+        4,
+        2
+      ],
+      "condition": "red rook gives actual check, other bomb prerequisites originally declared eligible",
+      "expected": "refusal leaves ammo1, team usage0, no new warp or elapsed deadline reset; black ordinary rook captures checking rook",
+      "component_analogy": "PR8 synthetic checked room tests guard/evasion; NOT this original initialized world",
+      "natural_status": "UNRUN"
+    },
+    "original_B4": {
+      "request": "MA-DS04:B4:pre-1",
+      "condition": "after black normal evasion and red ordinary pawn move, truly new black pre-main window without check",
+      "expected": "bomb allowed, ammo1->0, team0->1, warp(4,2), deadline unchanged; normal rook move remains possible",
+      "component_analogy": "PR8 synthetic new-turn bomb test, not original source-prescribed opening",
+      "natural_status": "UNRUN"
+    },
+    "original_spec_ids": [
+      "DS-S17",
+      "DS-S18",
+      "DS-S19",
+      "DS-S20",
+      "DS-S21",
+      "DS-S22",
+      "DS-S28"
+    ],
+    "partial_component_mapping": {
+      "DS-S17": "checked-royal restriction is source-covered in synthetic fixture; dark advisor-position reveal and natural initialization NOT covered",
+      "DS-S18": "B3 check refusal branch is code-covered; exact original target/legality is NOT naturally executed",
+      "DS-S19": "PR8 synthetic asserts unchanged room/resources/opportunity/deadline; source-natural pre/post observations absent",
+      "DS-S20": "synthetic ordinary evasion and old wrong-turn tested; no declared original post-main resubmission stimulus",
+      "DS-S21": "synthetic legal new-turn bomb and later rook main tested; original R1–B4 replay unrun",
+      "DS-S22": "hourglass distinct safety has PR10 component scope only; unlisted invalid cases and real world context unrun",
+      "DS-S28": "cross-family full legal engine/clock/terminal/player evidence absent"
+    },
+    "statuses": {
+      "DS-S17": "UNRUN",
+      "DS-S18": "UNRUN",
+      "DS-S19": "UNRUN",
+      "DS-S20": "UNRUN",
+      "DS-S21": "UNRUN",
+      "DS-S22": "UNRUN",
+      "DS-S28": "UNRUN"
+    }
+  },
+  "admission_block": {
+    "status": "BLOCKED_CONFIRMED_BY_LATEST_SOURCE",
+    "reason": [
+      "src/modes.ts keeps half_chaos.featuresReady=false and requires explicit trusted research permit",
+      "src/research-source-context.ts half_chaos allowlist is shuffler only and modeResearchPermits rejects ANY mutation",
+      "src/remote-room.ts requires admission before enabled room setup and research-mode mutation expectation is undefined; source cannot legally start original two-hero + one-mutation DS04"
+    ],
+    "precise_existing_tuples": [
+      {
+        "id": "HC-ADM-PD-M01",
+        "heroes": {
+          "red": "qin_long",
+          "black": "warrior"
+        },
+        "mutation": "iron_steed"
+      },
+      {
+        "id": "HC-ADM-PD-M04",
+        "heroes": {
+          "red": "qin_long",
+          "black": "warrior"
+        },
+        "mutation": "war_chariot"
+      },
+      {
+        "id": "HC-ADM-DS-D01",
+        "heroes": {
+          "red": "nozdormu",
+          "black": "murozond"
+        },
+        "mutation": "end_time"
+      }
+    ],
+    "main_owns_minimum": [
+      "Implement trustworthy room/actor/source-bound exact tuple research admission for only three originally approved scope-plan tuples; keep existing mode/product admission unchanged",
+      "Handle actual half-chaos 15+15 pool initialization and source-prescribed mutation draw without overriding probability, RNG or secret authority",
+      "Expose true closed after-main and after-normal-end checkpoints and before-request / synchronous-result authority evidence; isolated observation failures invalidate research evidence",
+      "Provide source-matched restricted runner mapping existing 110 requests and 210 declared checkpoints, with real revision, clock, lawful forced move/skill sequences and two-player separated views; no invented stimuli",
+      "Preserve source-closed king/atomic/path/terminal questions and stop on UNKNOWN or mismatch; do not upgrade incomplete cases"
+    ],
+    "existing_pilot_order": [
+      "MA-PD01",
+      "MA-DS03",
+      "MA-DS04"
+    ],
+    "exact_execution_contract": {
+      "existing_input": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "existing_witness": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+      "existing_checkpoints": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "existing_admission_design": "worklines/half_chaos/ADMISSION_CONTRACT_PROPOSAL.json",
+      "currently_verified_executable_command": null,
+      "reason_no_command": "Original natural replay adapter / exact tuple trusted harness does not exist on checked PR13; generic run-mode-qualification or synthetic tests cannot legally execute these original 12 half-chaos plans. Do not invent command or use direct-engine fallback.",
+      "allowed_future_command": "Only the actual main-provided version-pinned restricted adapter invocation, after admission and observation code/tests/authorization exist; arguments must use the already declared replay ID, witness and source-prescribed action data."
+    }
+  },
+  "unchanged_guardrails": {
+    "new_gameplay_confirmations": 0,
+    "new_original_replay_stimuli": 0,
+    "new_game_specs": 0,
+    "new_shared_source_code_changes": 0,
+    "local_engine_runs": 0,
+    "local_runtime_tests": 0,
+    "original_replays_executed": 0,
+    "original_specs": "64/64 UNRUN",
+    "original_checkpoints": "210 declared, none naturally observed",
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "merge_authorized": false,
+    "independent_QA": false,
+    "client_or_product_acceptance": false
+  },
+  "verification": {
+    "grade": "V2 selected source and PR metadata; V1 mapping/interpretation; main-reported unit results not independently reproduced",
+    "source_read": "pinned PR metadata/diffs and selected current source bytes plus original DS04 stimulus and prior matrix",
+    "command_runtime": "none executed in this dialogue",
+    "main_reported_checks": "PR8 519 / PR9 529 / PR10 560 / PR13 612 related checks are author/main report claims, not a half-chaos replay result"
+  },
+  "limitation_audit": {
+    "audit_trigger": "long-lived multi-workline technical project state and engine eligibility",
+    "risk_level": "high shared game state and historical acceptance ledger",
+    "known_facts": [
+      "real PR8–13 refs remain draft and unmerged",
+      "current engine source has B3 guard",
+      "current engine research admission disallows original half-chaos tuples",
+      "original DS04 and 64 matrix still unrun"
+    ],
+    "user_statements": [
+      "2026-10-24 继续半混乱模式推进"
+    ],
+    "claim_register": [
+      {
+        "claim": "bomb in-check guard exists",
+        "kind": "source_fact",
+        "level": "V2"
+      },
+      {
+        "claim": "original DS04 now passes",
+        "kind": "NOT_CLAIMED",
+        "level": "UNRUN"
+      },
+      {
+        "claim": "exact tuples currently prohibited",
+        "kind": "source_fact",
+        "level": "V2"
+      },
+      {
+        "claim": "reported component pass counts",
+        "kind": "main_report_claim",
+        "level": "not independently rerun"
+      }
+    ],
+    "ai_interpretations": [
+      "synthetic test covers analogous but not natural B3/B4 sequence"
+    ],
+    "assumptions": [
+      "PR13 head is current stacked source, without independent runtime QA"
+    ],
+    "unknowns": [
+      "full execution adapter",
+      "exact post-close observation hooks",
+      "legal natural initialization and 110 request replay results",
+      "complete king-threat search and product UI/wire"
+    ],
+    "competing_explanations": [
+      "A code-level guard and passing synthetic test can coexist with invalid initial world or inaccessible natural replay; neither confirms original accepted sequence"
+    ],
+    "falsification_conditions": [
+      "different current PR heads or source bytes",
+      "legal approved 3tuple adapter found in another unreviewed source",
+      "actual original replay contradicts component expectation"
+    ],
+    "verification_status": "partial",
+    "action_boundary": "local half-chaos source review/docs only; main owns shared business source and runner",
+    "failure_conditions": [
+      "fake original execution or PASS",
+      "admit unapproved tuples",
+      "copy secrets to player output",
+      "override main or other line",
+      "merge draft or unfreeze scoring"
+    ],
+    "residual_risk": "same-author tests are not independent, limited selected semantic source audit, broader terminal/path behavior unresolved",
+    "next_validation_action": "main must deliver original-3tuple restricted admission and exact checkpoint runner; half-chaos then review bounded tests and pilot natural MA-PD01/MA-DS03/MA-DS04 before changing individual 64 obligation statuses"
+  },
+  "next": {
+    "id": "NEXT-HC-VERIFY-EXACT-TUPLE-ADMISSION-AND-PILOT-READINESS",
+    "status": "BLOCKED_ON_MAIN_ADMISSION_OBSERVATION_AND_RUNNABLE_DRIVER",
+    "action": "After main publishes source-pinned exact three-tuple research admission, passive checkpoint observation and restricted driver, recheck gate/negative cases and the 3 pilot original replay prerequisites; run nothing until legal authority, source context and real executable command are demonstrated. Continue independent source docs without shifting shared gameplay."
+  }
+}
