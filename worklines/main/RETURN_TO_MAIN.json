@@ -8,9 +8,9 @@
     "ui"
   ],
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
-  "phase": "MAIN-FOUNDATION-20261024",
-  "current_breakpoint": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
-  "status": "bounded_foundation_implemented_dispatch_issued_receiver_pending",
+  "phase": "SCORING-OPTIMIZATION-20261024",
+  "current_breakpoint": "SCORE-CALIBRATION-01-SOURCE-BOUND-PILOT",
+  "status": "scoring_candidate_and_validation_published_on_success_not_formal_adoption",
   "confirmed_delta_this_session": [
     {
       "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -143,9 +143,10 @@
   ],
   "shared_blocks": "SHARED_COORDINATION.json",
   "next": {
-    "id": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
-    "plan": "worklines/main/R38_PATH_CLOSURE_PLAN.md",
-    "action": "先建立路径/返回/落位差异用例并定位原子闭合后、下一begin前的安全检查点，然后最小共享补丁；三线专属回传不阻塞独立主线工作。"
+    "id": "SCORE-CALIBRATION-01-SOURCE-BOUND-PILOT",
+    "contract": "worklines/main/scoring/CALIBRATION_PILOT.md",
+    "status": "ready_not_run",
+    "action": "将H03单一保护分支试点合同绑定到真实合法来源/准入和最小技术范围，再准备真实校准；不足时保持定性/局部数字，不用更多假设树冒充全局分。"
   },
   "messages_sent": false,
   "other_lines_adoption_verified": "Earlier exact scopes only, no new1.57 receipts.",
@@ -163,7 +164,7 @@
     "CONF-STD-M07-POOL-EXCLUSION-20261016"
   ],
   "ordinary_scoped_confirmations_received_this_phase": [],
-  "publication_parent_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
+  "publication_parent_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
   "unread_concurrent_returns": [],
   "new_rule_confirmations_this_phase": 0,
   "current_phase_changes": [
@@ -2082,5 +2083,314 @@
     ],
     "rule_delta": 0,
     "other_line_receipts_written": false
+  },
+  "scoring_optimization": {
+    "id": "SCORING-OPTIMIZATION-20261024",
+    "date_local": "2026-10-24",
+    "status": "candidate_method_implemented_and_conditionally_validated_not_adopted",
+    "authorization": {
+      "user_quote": "请实际执行上述《乐子象棋》评分系统优化任务书。先保护未回传成果、核对最新HEAD，完整读取原评分方法、冻结账本和新风评分复核。完成问题诊断、候选方法改进与跨类型验证，重点处理数值标尺、机动与先手的间接价值、重复计分及证据不足时的评分发布条件。不得以53分为目标，不修改英雄机制或直接覆盖旧账本。阶段完成增量写回并复读核对，保护另一条英雄设计路线的成果。",
+      "supersedes_prior_pause": "恢复评分独立路线的候选诊断/方法/计算验证；不解冻正式账本，不改英雄或引擎/模式门禁。"
+    },
+    "read_base_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
+    "publication_parent_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
+    "method": "worklines/main/scoring/CANDIDATE_METHOD.md",
+    "review": "worklines/main/scoring/REVIEW_REPORT.md",
+    "validation": "worklines/main/scoring/VALIDATION_RESULTS.json",
+    "sources": "worklines/main/scoring/SOURCE_MANIFEST.json",
+    "candidate_version": "CF-OUTCOME-v0.1",
+    "method_adopted": false,
+    "formal_replacement": false,
+    "actual_validation": {
+      "unit_tests": 30,
+      "failures": 0,
+      "conditional_cases": 13,
+      "types": [
+        "mobility",
+        "protection",
+        "information",
+        "direct_destruction",
+        "terminal"
+      ],
+      "additional": "historical Wind4/3/2-turn milestone schedule;25/30/35 sensitivity;21-row frozen-ledger audit",
+      "evidence_level": "V2 original sources plus same-author program execution on conditional cases; not independent or empirical",
+      "game_engine_runs": 0,
+      "full_game_replays": 0,
+      "new_hero_global_scores": 0
+    },
+    "current_wind_score": null,
+    "wind_version_scope": "old5T/2USE snapshot audit only; visible V3.1 design continuation not overwritten; full newer source pending",
+    "legacy_original_method_and_ledger_changed": false,
+    "hero_mechanisms_changed": false,
+    "next_action": {
+      "id": "SCORE-CALIBRATION-01-SOURCE-BOUND-PILOT",
+      "contract": "worklines/main/scoring/CALIBRATION_PILOT.md",
+      "status": "ready_not_run",
+      "action": "将H03单一保护分支试点合同绑定到真实合法来源/准入和最小技术范围，再准备真实校准；不足时保持定性/局部数字，不用更多假设树冒充全局分。"
+    },
+    "preserved_main_engineering_next": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
+    "scoring_frozen": true,
+    "NET": "paused",
+    "other_dialogue_design_adoption": "unknown",
+    "concurrent_source_line_returns": "metadata observed and preserved by latest parent; not content-received/adopted in this scoring phase",
+    "limitation_audit": {
+      "audit_trigger": "source conflict, model semantics and unsupported precision",
+      "risk_level": "medium; candidate-only reversible evaluation method",
+      "known_facts": [
+        "full original07/08 actually read",
+        "source-linked wind numerical withdrawal",
+        "30 deterministic checks/13 conditional problems executed"
+      ],
+      "user_statements": [
+        "请实际执行上述《乐子象棋》评分系统优化任务书。先保护未回传成果、核对最新HEAD，完整读取原评分方法、冻结账本和新风评分复核。完成问题诊断、候选方法改进与跨类型验证，重点处理数值标尺、机动与先手的间接价值、重复计分及证据不足时的评分发布条件。不得以53分为目标，不修改英雄机制或直接覆盖旧账本。阶段完成增量写回并复读核对，保护另一条英雄设计路线的成果。"
+      ],
+      "claim_register": [
+        {
+          "claim": "old Wind25 lacks traceable allocation/calibration",
+          "type": "document_fact",
+          "source": "PAPER_RATING.md full correction"
+        },
+        {
+          "claim": "candidate conserves consequence totals and information order in finite problems",
+          "type": "executed_component_evidence",
+          "source": "VALIDATION_RESULTS.json"
+        }
+      ],
+      "ai_interpretations": [
+        "common outcome utility with explanatory dimensions is the preferred candidate, not an adopted method"
+      ],
+      "assumptions": [
+        "toy action sets/probabilities are declared conditional, not observed games"
+      ],
+      "unknowns": [
+        "actual state frequencies",
+        "latest full WindV3.1 rule body",
+        "calibrated outcome predictor",
+        "independent and held-out actual games"
+      ],
+      "competing_explanations": [
+        "compressed old scores may reflect design population or subjective similarity; anchoring is not causally proven"
+      ],
+      "falsification_conditions": [
+        "finite model violates optional-action inclusion",
+        "information leaks into baseline policy",
+        "same consequence creates extra total",
+        "toy cases pass global-publication gate"
+      ],
+      "verification_status": "partial:bounded source and conditional program evidence; no empirical strength validation",
+      "action_boundary": "independent scoring candidate files and scoped shared state, no gameplay/engine writes",
+      "failure_conditions": [
+        "source version mismatch",
+        "concurrent shared-file conflict",
+        "formal score released without evidence/adoption"
+      ],
+      "residual_risk": "same-author tests may share specification errors; exact math cannot manufacture a valid chess value oracle",
+      "next_validation_action": "将H03单一保护分支试点合同绑定到真实合法来源/准入和最小技术范围，再准备真实校准；不足时保持定性/局部数字，不用更多假设树冒充全局分。"
+    },
+    "concurrent_protection": {
+      "new_parent": "9c9af3e5c0155f27206a10921680d53275e3ec07",
+      "commits": [
+        "5de988c225bfb84d9c72170a86b81fb5486a2bd9",
+        "b8adc2e4553d5460a54aaca932e4244e7715b9f2",
+        "3aafee91830173aa89bfc5e60bd5179d7fe4de7f",
+        "2061024a14f42423c34ad56056dce4a9beb111ab",
+        "f121c8085cd20d152658abdec86a9f478089feef",
+        "9c9af3e5c0155f27206a10921680d53275e3ec07"
+      ],
+      "changed_paths": [
+        {
+          "path": "worklines/chaos/CURRENT_STATE.json",
+          "git_blob_sha": "cf27d281ee02a3b9b28f74a264a5b965f2ac2ab8"
+        },
+        {
+          "path": "worklines/chaos/READ_RECEIPTS.json",
+          "git_blob_sha": "58f4cef2e953ba47734af25e82fd4aa768aa003b"
+        },
+        {
+          "path": "worklines/chaos/RETURN_TO_MAIN.json",
+          "git_blob_sha": "0accc0b87652256e10c804670b8ad4a0f61f800e"
+        },
+        {
+          "path": "worklines/chaos/SOURCE_REVIEW.md",
+          "git_blob_sha": "66f21265690634f6daf139faab1072f6b46d631b"
+        },
+        {
+          "path": "worklines/half_chaos/CURRENT_STATE.json",
+          "git_blob_sha": "7904d76e1d325410e91b99d8dd09bd89f4fcc42e"
+        },
+        {
+          "path": "worklines/half_chaos/HC42_PATCH_RECEPTION_DS04_SOURCE_REVIEW.json",
+          "git_blob_sha": "409645c54093ab4c569ccd8fe7868b3553884e20"
+        },
+        {
+          "path": "worklines/half_chaos/READ_RECEIPTS.json",
+          "git_blob_sha": "7134a84ecaa64520d3791a64b1e533b4fcbfa1a4"
+        },
+        {
+          "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+          "git_blob_sha": "b28a83b026b90e527540f119ee1adc975ab60458"
+        },
+        {
+          "path": "worklines/half_chaos/START_HERE.txt",
+          "git_blob_sha": "565fd4da94afcbdd51a689b23fa2f8f7681cc4be"
+        },
+        {
+          "path": "worklines/half_chaos/WORKING.md",
+          "git_blob_sha": "73cfb1c75d74eace76327d198d82be142a1bbad6"
+        },
+        {
+          "path": "worklines/standard/CURRENT_STATE.json",
+          "git_blob_sha": "4331f6c20a30ae28baf0d5aef40aa030cab482e5"
+        },
+        {
+          "path": "worklines/standard/NEXT_ACTIONS.json",
+          "git_blob_sha": "a6ae67b4fbb2d690aee31ba72da978cb5bcca3de"
+        },
+        {
+          "path": "worklines/standard/READ_RECEIPTS.json",
+          "git_blob_sha": "c5f087c9fba0bc46e08636f79596e42d46e994ea"
+        },
+        {
+          "path": "worklines/standard/RETURN_TO_MAIN.json",
+          "git_blob_sha": "3431222640fc59eb655a97fd4cba8012a7b5aeed"
+        },
+        {
+          "path": "worklines/standard/reviews/H21_RNG_SOURCE_TRACE.md",
+          "git_blob_sha": "cbf39340ec8183dca5c15db72ac7d233464b952d"
+        },
+        {
+          "path": "worklines/half_chaos/HC43_STATIC_PILOT_PREFLIGHT.json",
+          "git_blob_sha": "d777b63d38dc20e60b76d24e686fac541cb147c0"
+        },
+        {
+          "path": "worklines/standard/START_HERE.txt",
+          "git_blob_sha": "96b771db3b2a1351ad311f2e980b121c97144d9a"
+        },
+        {
+          "path": "worklines/standard/reviews/H21_RNG_REPLAY_CONTRACT_REVIEW_20261024.md",
+          "git_blob_sha": "3b9725076dd2ac741eab55ce6862e667112a6d85"
+        },
+        {
+          "path": "worklines/standard/specs/H21_RNG_REPLAY_CONTRACT_20261024.json",
+          "git_blob_sha": "4be095dd7d9799062b1f23f4fb3421f5231c2133"
+        },
+        {
+          "path": "worklines/chaos/CH02_JIEQI_WITNESSES.json",
+          "git_blob_sha": "4f2ba7e39a0bc9bc275058df783338c39bb4e0c3"
+        },
+        {
+          "path": "worklines/chaos/CH02_VALIDATION.md",
+          "git_blob_sha": "a296f7168651784b5375c4d93409113a46083874"
+        },
+        {
+          "path": "worklines/chaos/START_HERE.txt",
+          "git_blob_sha": "c4e636fc3cf88937e1da8bfb060c9b6e157a9a06"
+        }
+      ],
+      "review_scope": "changed path/object identities only; no content reception or adoption asserted"
+    }
+  },
+  "preserved_main_core_next": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
+  "unread_concurrent_returns_scoring_phase": {
+    "new_parent": "9c9af3e5c0155f27206a10921680d53275e3ec07",
+    "commits": [
+      "5de988c225bfb84d9c72170a86b81fb5486a2bd9",
+      "b8adc2e4553d5460a54aaca932e4244e7715b9f2",
+      "3aafee91830173aa89bfc5e60bd5179d7fe4de7f",
+      "2061024a14f42423c34ad56056dce4a9beb111ab",
+      "f121c8085cd20d152658abdec86a9f478089feef",
+      "9c9af3e5c0155f27206a10921680d53275e3ec07"
+    ],
+    "changed_paths": [
+      {
+        "path": "worklines/chaos/CURRENT_STATE.json",
+        "git_blob_sha": "cf27d281ee02a3b9b28f74a264a5b965f2ac2ab8"
+      },
+      {
+        "path": "worklines/chaos/READ_RECEIPTS.json",
+        "git_blob_sha": "58f4cef2e953ba47734af25e82fd4aa768aa003b"
+      },
+      {
+        "path": "worklines/chaos/RETURN_TO_MAIN.json",
+        "git_blob_sha": "0accc0b87652256e10c804670b8ad4a0f61f800e"
+      },
+      {
+        "path": "worklines/chaos/SOURCE_REVIEW.md",
+        "git_blob_sha": "66f21265690634f6daf139faab1072f6b46d631b"
+      },
+      {
+        "path": "worklines/half_chaos/CURRENT_STATE.json",
+        "git_blob_sha": "7904d76e1d325410e91b99d8dd09bd89f4fcc42e"
+      },
+      {
+        "path": "worklines/half_chaos/HC42_PATCH_RECEPTION_DS04_SOURCE_REVIEW.json",
+        "git_blob_sha": "409645c54093ab4c569ccd8fe7868b3553884e20"
+      },
+      {
+        "path": "worklines/half_chaos/READ_RECEIPTS.json",
+        "git_blob_sha": "7134a84ecaa64520d3791a64b1e533b4fcbfa1a4"
+      },
+      {
+        "path": "worklines/half_chaos/RETURN_TO_MAIN.json",
+        "git_blob_sha": "b28a83b026b90e527540f119ee1adc975ab60458"
+      },
+      {
+        "path": "worklines/half_chaos/START_HERE.txt",
+        "git_blob_sha": "565fd4da94afcbdd51a689b23fa2f8f7681cc4be"
+      },
+      {
+        "path": "worklines/half_chaos/WORKING.md",
+        "git_blob_sha": "73cfb1c75d74eace76327d198d82be142a1bbad6"
+      },
+      {
+        "path": "worklines/standard/CURRENT_STATE.json",
+        "git_blob_sha": "4331f6c20a30ae28baf0d5aef40aa030cab482e5"
+      },
+      {
+        "path": "worklines/standard/NEXT_ACTIONS.json",
+        "git_blob_sha": "a6ae67b4fbb2d690aee31ba72da978cb5bcca3de"
+      },
+      {
+        "path": "worklines/standard/READ_RECEIPTS.json",
+        "git_blob_sha": "c5f087c9fba0bc46e08636f79596e42d46e994ea"
+      },
+      {
+        "path": "worklines/standard/RETURN_TO_MAIN.json",
+        "git_blob_sha": "3431222640fc59eb655a97fd4cba8012a7b5aeed"
+      },
+      {
+        "path": "worklines/standard/reviews/H21_RNG_SOURCE_TRACE.md",
+        "git_blob_sha": "cbf39340ec8183dca5c15db72ac7d233464b952d"
+      },
+      {
+        "path": "worklines/half_chaos/HC43_STATIC_PILOT_PREFLIGHT.json",
+        "git_blob_sha": "d777b63d38dc20e60b76d24e686fac541cb147c0"
+      },
+      {
+        "path": "worklines/standard/START_HERE.txt",
+        "git_blob_sha": "96b771db3b2a1351ad311f2e980b121c97144d9a"
+      },
+      {
+        "path": "worklines/standard/reviews/H21_RNG_REPLAY_CONTRACT_REVIEW_20261024.md",
+        "git_blob_sha": "3b9725076dd2ac741eab55ce6862e667112a6d85"
+      },
+      {
+        "path": "worklines/standard/specs/H21_RNG_REPLAY_CONTRACT_20261024.json",
+        "git_blob_sha": "4be095dd7d9799062b1f23f4fb3421f5231c2133"
+      },
+      {
+        "path": "worklines/chaos/CH02_JIEQI_WITNESSES.json",
+        "git_blob_sha": "4f2ba7e39a0bc9bc275058df783338c39bb4e0c3"
+      },
+      {
+        "path": "worklines/chaos/CH02_VALIDATION.md",
+        "git_blob_sha": "a296f7168651784b5375c4d93409113a46083874"
+      },
+      {
+        "path": "worklines/chaos/START_HERE.txt",
+        "git_blob_sha": "c4e636fc3cf88937e1da8bfb060c9b6e157a9a06"
+      }
+    ],
+    "review_scope": "changed path/object identities only; no content reception or adoption asserted"
   }
 }

@@ -1,3 +1,5 @@
+> 2026-10-24评分路线更新：已实际完成[候选方法](worklines/main/scoring/CANDIDATE_METHOD.md)、[诊断/迁移与验证说明](worklines/main/scoring/REVIEW_REPORT.md)及30项检查/13个条件问题。正式方法尚未替换，原账本和英雄机制保持，全局新分数未发布；本轮明确执行覆盖此前评分路线停止。[当前评分状态](worklines/main/scoring/EXECUTION_STATE.json)。下方主线工程和三线任务信息属于前阶段记录，当前各线结果读自身固定状态；本评分阶段仅核对并发回传路径/身份，未做内容采用。
+
 # 乐子象棋项目入口
 
 2026-10-24主线：完成共用研究证据失效处理，草稿[PR13](https://github.com/aaaycc931-droid/jieqi-engine/pull/13)，继承PR8—12；6项新边界/99针对性/43文件612相关检查通过，未合并。游戏真实执行与证据资格分开：采集失效不能判验收通过。详见[主线报告](worklines/main/MAIN_FOUNDATION_REPORT.json)。

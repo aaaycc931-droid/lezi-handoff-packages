@@ -1,0 +1,1353 @@
+{
+  "schema": "lezi.scoring_candidate_validation.v1",
+  "candidate": "CF-OUTCOME-v0.1",
+  "python": "3.12.14",
+  "unit_tests": 30,
+  "failures": 0,
+  "errors": 0,
+  "conditional_cases": 13,
+  "cross_types": [
+    "mobility",
+    "protection",
+    "information",
+    "direct_destruction",
+    "terminal"
+  ],
+  "cases": [
+    {
+      "id": "WIND-INTERRUPTION",
+      "type": "mobility",
+      "rule_snapshot": "historical_5T_2USES_oracle",
+      "without": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "normal_prepare",
+            "node": {
+              "kind": "min",
+              "branches": [
+                {
+                  "action": "interrupt_left",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 0
+                  }
+                },
+                {
+                  "action": "interrupt_right",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "with": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "ordinary",
+            "node": {
+              "kind": "max",
+              "branches": [
+                {
+                  "action": "normal_prepare",
+                  "node": {
+                    "kind": "min",
+                    "branches": [
+                      {
+                        "action": "interrupt_left",
+                        "node": {
+                          "kind": "leaf",
+                          "metric": "material_proxy",
+                          "value": 0
+                        }
+                      },
+                      {
+                        "action": "interrupt_right",
+                        "node": {
+                          "kind": "leaf",
+                          "metric": "material_proxy",
+                          "value": 0
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "action": "paired_prepare",
+            "node": {
+              "kind": "min",
+              "branches": [
+                {
+                  "action": "defend_left",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 4
+                  }
+                },
+                {
+                  "action": "defend_right",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 4
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected_delta": "4",
+      "scope": "Synthetic preparation/interruption game: later normal capture is the only payoff; no legal Xiangqi fork is asserted.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "0",
+        "with": "4",
+        "delta": "4",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "WIND-LATE",
+      "type": "mobility",
+      "rule_snapshot": "historical_5T_2USES_oracle",
+      "without": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "normal_prepare",
+            "node": {
+              "kind": "min",
+              "branches": [
+                {
+                  "action": "interrupt_left",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 0
+                  }
+                },
+                {
+                  "action": "interrupt_right",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "with": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "ordinary",
+            "node": {
+              "kind": "max",
+              "branches": [
+                {
+                  "action": "normal_prepare",
+                  "node": {
+                    "kind": "min",
+                    "branches": [
+                      {
+                        "action": "interrupt_left",
+                        "node": {
+                          "kind": "leaf",
+                          "metric": "material_proxy",
+                          "value": 0
+                        }
+                      },
+                      {
+                        "action": "interrupt_right",
+                        "node": {
+                          "kind": "leaf",
+                          "metric": "material_proxy",
+                          "value": 0
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "action": "late_prepare",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "expected_delta": "0",
+      "scope": "Same move count after the opponent has removed the opportunity; timing is in the response tree, not a per-move price.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "0",
+        "with": "0",
+        "delta": "0",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "H03-BARRIER",
+      "type": "protection",
+      "rule_snapshot": "H03_precondition_barrier_alive",
+      "without": {
+        "kind": "min",
+        "branches": [
+          {
+            "action": "capture",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": -9
+            }
+          },
+          {
+            "action": "wait",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "with": {
+        "kind": "min",
+        "branches": [
+          {
+            "action": "bounce",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 0
+            }
+          },
+          {
+            "action": "wait",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "expected_delta": "9",
+      "scope": "Conditional exposed rook, active barrier, ordinary direct attack, no bypass or landing death. Local saved material only.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "-9",
+        "with": "0",
+        "delta": "9",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "H03-EXPIRED",
+      "type": "protection",
+      "rule_snapshot": "H03_after_three_enemy_formal_turns",
+      "without": {
+        "kind": "min",
+        "branches": [
+          {
+            "action": "capture",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": -9
+            }
+          },
+          {
+            "action": "wait",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "with": {
+        "kind": "min",
+        "branches": [
+          {
+            "action": "capture",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": -9
+            }
+          },
+          {
+            "action": "wait",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "expected_delta": "0",
+      "scope": "No persistent insurance after expiry; avoided loss in the prior horizon is not promised as whole-game gain.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "-9",
+        "with": "-9",
+        "delta": "0",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "H14-INFORMATION",
+      "type": "information",
+      "rule_snapshot": "H14_affordable_first_ordinary_insight",
+      "without": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "select_left",
+            "node": {
+              "kind": "chance",
+              "branches": [
+                {
+                  "p": "1/2",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 9
+                  }
+                },
+                {
+                  "p": "1/2",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 1
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "action": "select_right",
+            "node": {
+              "kind": "chance",
+              "branches": [
+                {
+                  "p": "1/2",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 1
+                  }
+                },
+                {
+                  "p": "1/2",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 9
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "with": {
+        "kind": "chance",
+        "branches": [
+          {
+            "p": "1/2",
+            "node": {
+              "kind": "max",
+              "branches": [
+                {
+                  "action": "select_left",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 9
+                  }
+                },
+                {
+                  "action": "select_right",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 1
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "p": "1/2",
+            "node": {
+              "kind": "max",
+              "branches": [
+                {
+                  "action": "select_left",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 1
+                  }
+                },
+                {
+                  "action": "select_right",
+                  "node": {
+                    "kind": "leaf",
+                    "metric": "material_proxy",
+                    "value": 9
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected_delta": "4",
+      "scope": "Conditional two-world 9/1 pool with assumed equal weights, two legal actions, no intervening response. Resource cost4 is not four material points.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "5",
+        "with": "9",
+        "delta": "4",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "H14-NO-DECISION-CHANGE",
+      "type": "information",
+      "rule_snapshot": "H14_information_without_action_change",
+      "without": {
+        "kind": "leaf",
+        "metric": "material_proxy",
+        "value": 5
+      },
+      "with": {
+        "kind": "chance",
+        "branches": [
+          {
+            "p": "1/2",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 5
+            }
+          },
+          {
+            "p": "1/2",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 5
+            }
+          }
+        ]
+      },
+      "expected_delta": "0",
+      "scope": "Learning a fact has zero local decision value when it cannot change the available action/result.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "5",
+        "with": "5",
+        "delta": "0",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "H12-FLAME",
+      "type": "direct_destruction",
+      "rule_snapshot": "H12_tier3_center_no_royals",
+      "without": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "ordinary_cannon",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": "9/2"
+            }
+          },
+          {
+            "action": "quiet",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "with": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "ordinary_cannon",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": "9/2"
+            }
+          },
+          {
+            "action": "flame",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": "17/2"
+            }
+          }
+        ]
+      },
+      "expected_delta": "4",
+      "scope": "Own horse4+own pawn1 lost, enemy rook9+cannon4.5 removed =>8.5; subtract available ordinary cannon capture4.5. Restricted menu, not a solved complete board.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "9/2",
+        "with": "17/2",
+        "delta": "4",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "H12-BAD-OPTION",
+      "type": "direct_destruction",
+      "rule_snapshot": "H12_unfavorable_optional_flame",
+      "without": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "ordinary",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 1
+            }
+          }
+        ]
+      },
+      "with": {
+        "kind": "max",
+        "branches": [
+          {
+            "action": "ordinary",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 1
+            }
+          },
+          {
+            "action": "bad_flame",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": -4
+            }
+          }
+        ]
+      },
+      "expected_delta": "0",
+      "scope": "A bad optional use is declined. Mandatory hero costs would need a different baseline.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "1",
+        "with": "1",
+        "delta": "0",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "TERMINAL-ALREADY-WON",
+      "type": "terminal",
+      "rule_snapshot": "H04_rain_night_conditional_anchor",
+      "without": {
+        "kind": "leaf",
+        "metric": "outcome",
+        "value": 1
+      },
+      "with": {
+        "kind": "leaf",
+        "metric": "outcome",
+        "value": 1
+      },
+      "expected_delta": "0",
+      "scope": "Oracle says the baseline also wins: direct victory is not additional strength.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "outcome",
+        "without": "1",
+        "with": "1",
+        "delta": "0",
+        "conditional_impact_index": "0",
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "TERMINAL-RESCUE",
+      "type": "terminal",
+      "rule_snapshot": "terminal_mathematical_anchor",
+      "without": {
+        "kind": "leaf",
+        "metric": "outcome",
+        "value": 0
+      },
+      "with": {
+        "kind": "leaf",
+        "metric": "outcome",
+        "value": 1
+      },
+      "expected_delta": "1",
+      "scope": "Exact loss-to-win conditional anchor, not a probability of reaching this state.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "outcome",
+        "without": "0",
+        "with": "1",
+        "delta": "1",
+        "conditional_impact_index": "100",
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "TERMINAL-DRAW",
+      "type": "terminal",
+      "rule_snapshot": "terminal_mathematical_anchor",
+      "without": {
+        "kind": "leaf",
+        "metric": "outcome",
+        "value": 0
+      },
+      "with": {
+        "kind": "leaf",
+        "metric": "outcome",
+        "value": "1/2"
+      },
+      "expected_delta": "1/2",
+      "scope": "Exact loss-to-draw conditional anchor. No material term added.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "outcome",
+        "without": "0",
+        "with": "1/2",
+        "delta": "1/2",
+        "conditional_impact_index": "50",
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "PRESSURE-EXCLUSIVE",
+      "type": "pressure",
+      "rule_snapshot": "conditional_assumed_branch_law",
+      "without": {
+        "kind": "leaf",
+        "metric": "material_proxy",
+        "value": 0
+      },
+      "with": {
+        "kind": "chance",
+        "branches": [
+          {
+            "p": "1/4",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 9
+            }
+          },
+          {
+            "p": "3/4",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 2
+            }
+          }
+        ]
+      },
+      "expected_delta": "15/4",
+      "scope": "Direct realization and costly avoidance are exclusive branches;9+2 is not the expected gain.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "0",
+        "with": "15/4",
+        "delta": "15/4",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    },
+    {
+      "id": "STOP-BEFORE-WINDOW",
+      "type": "lifecycle",
+      "rule_snapshot": "conditional_survival_gate",
+      "without": {
+        "kind": "leaf",
+        "metric": "material_proxy",
+        "value": 0
+      },
+      "with": {
+        "kind": "chance",
+        "branches": [
+          {
+            "p": "1/2",
+            "node": {
+              "kind": "max",
+              "branches": [
+                {
+                  "action": "ordinary",
+                  "node": {
+                    "kind": "max",
+                    "branches": [
+                      {
+                        "action": "normal_prepare",
+                        "node": {
+                          "kind": "min",
+                          "branches": [
+                            {
+                              "action": "interrupt_left",
+                              "node": {
+                                "kind": "leaf",
+                                "metric": "material_proxy",
+                                "value": 0
+                              }
+                            },
+                            {
+                              "action": "interrupt_right",
+                              "node": {
+                                "kind": "leaf",
+                                "metric": "material_proxy",
+                                "value": 0
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "action": "paired_prepare",
+                  "node": {
+                    "kind": "min",
+                    "branches": [
+                      {
+                        "action": "defend_left",
+                        "node": {
+                          "kind": "leaf",
+                          "metric": "material_proxy",
+                          "value": 4
+                        }
+                      },
+                      {
+                        "action": "defend_right",
+                        "node": {
+                          "kind": "leaf",
+                          "metric": "material_proxy",
+                          "value": 4
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "p": "1/2",
+            "node": {
+              "kind": "leaf",
+              "metric": "material_proxy",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "expected_delta": "2",
+      "scope": "Half the toy histories end before the opportunity; no benefits after terminal.",
+      "evidence_kind": "source_linked_conditional_problem_not_game_replay",
+      "global_hero_score": null,
+      "computed": {
+        "metric": "material_proxy",
+        "without": "0",
+        "with": "2",
+        "delta": "2",
+        "conditional_impact_index": null,
+        "whole_hero_score": null
+      },
+      "publication_gate": {
+        "global_numeric_publishable": false,
+        "formal_numeric_publishable": false,
+        "missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position"
+        ],
+        "formal_missing": [
+          "current_rule_snapshot",
+          "source_complete",
+          "paired_comparator",
+          "population_and_opponents_defined",
+          "policy_and_information_fair",
+          "full_trajectory_outcomes",
+          "replay_and_evidence_valid",
+          "uncertainty_estimated",
+          "heldout_validation",
+          "precision_justified",
+          "not_a_toy_or_partial_position",
+          "method_adopted",
+          "release_reviewed"
+        ],
+        "current_level": "conditional_or_qualitative_only"
+      }
+    }
+  ],
+  "sensitivity_25_30_35": [
+    {
+      "complete_rounds": 25,
+      "historical_wind_max_uses": 2,
+      "H14_ordinary_resource_only_ceiling": 5,
+      "H14_remaining_pupil": 12,
+      "H12_max_uses": 1,
+      "real_target_availability": "unknown",
+      "whole_game_value": null,
+      "H04_trigger_at_least_once_conditional_on_all_opportunities": "8224006099551/10240000000000",
+      "H04_trigger_probability_is_not_win_probability": true
+    },
+    {
+      "complete_rounds": 30,
+      "historical_wind_max_uses": 2,
+      "H14_ordinary_resource_only_ceiling": 6,
+      "H14_remaining_pupil": 6,
+      "H12_max_uses": 1,
+      "real_target_availability": "unknown",
+      "whole_game_value": null,
+      "H04_trigger_at_least_once_conditional_on_all_opportunities": "29905576948490184207/32768000000000000000",
+      "H04_trigger_probability_is_not_win_probability": true
+    },
+    {
+      "complete_rounds": 35,
+      "historical_wind_max_uses": 2,
+      "H14_ordinary_resource_only_ceiling": 6,
+      "H14_remaining_pupil": 18,
+      "H12_max_uses": 1,
+      "real_target_availability": "unknown",
+      "whole_game_value": null,
+      "H04_trigger_at_least_once_conditional_on_all_opportunities": "100793368593352427477598399/104857600000000000000000000",
+      "H04_trigger_probability_is_not_win_probability": true
+    }
+  ],
+  "wind_opening_schedule": [
+    {
+      "milestones": [
+        "left_horse_b0_c2",
+        "right_cannon_h2_e2",
+        "right_horse_h0_g2",
+        "right_rook_i0_h0"
+      ],
+      "uses_available": 0,
+      "minimum_own_formal_turns_in_restricted_schedule": 4,
+      "opponent_interference": "excluded only in this schedule witness; original scripted opponent moves do not touch these squares",
+      "board_legality": "source manual ordinary-opening check, not engine/full-history verification",
+      "global_hero_score": null
+    },
+    {
+      "milestones": [
+        "left_horse_b0_c2",
+        "right_cannon_h2_e2",
+        "right_horse_h0_g2",
+        "right_rook_i0_h0"
+      ],
+      "uses_available": 1,
+      "minimum_own_formal_turns_in_restricted_schedule": 3,
+      "opponent_interference": "excluded only in this schedule witness; original scripted opponent moves do not touch these squares",
+      "board_legality": "source manual ordinary-opening check, not engine/full-history verification",
+      "global_hero_score": null
+    },
+    {
+      "milestones": [
+        "left_horse_b0_c2",
+        "right_cannon_h2_e2",
+        "right_horse_h0_g2",
+        "right_rook_i0_h0"
+      ],
+      "uses_available": 2,
+      "minimum_own_formal_turns_in_restricted_schedule": 2,
+      "opponent_interference": "excluded only in this schedule witness; original scripted opponent moves do not touch these squares",
+      "board_legality": "source manual ordinary-opening check, not engine/full-history verification",
+      "global_hero_score": null
+    }
+  ],
+  "source_sha256": {
+    "candidate_model.py": "22d329df74e9f0b20549e95a4ae69479364f38a7147d46fc5f7114a6347e0d40",
+    "validation_cases.py": "0f350bb35be4f47821206c0ad9d9a1679eed91a28ec77e7c1df5f2f008b6f85e",
+    "audit_legacy.py": "dc2abc9401c48ad6a94764e2b98c6cc6721e4e7e94c98d8bba3608fdc6f543c5",
+    "validate_candidate.py": "ca7856d2321623588a26fa651b1ae782932b6a0ffc0d0ba0ea8da1989ea79afc",
+    "test_candidate_model.py": "31100ea9e7e981553cc0fca4e49af1e703bde3473ee1d2adce386955e0c317f7"
+  },
+  "full_game_replays": 0,
+  "game_engine_runs": 0,
+  "hero_scores_published": 0,
+  "verification_independence": "same author, deterministic arithmetic/property execution; not independent QA or empirical calibration",
+  "empirical_probability_inputs": 0,
+  "source_probability_status": "local assumed laws or explicit rule rates only",
+  "scoring_frozen": true,
+  "NET": "paused"
+}
