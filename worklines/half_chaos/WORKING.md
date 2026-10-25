@@ -3082,3 +3082,9 @@ verification_status=partial，文件来源V2＋同一AI语义推演V1；未做�
 
 - 2026-10-17本会话收束：93127575c60469d08069a3a6743f3c2a34493deb为最后完成r25源；12固定文件再次与远端匹配。下次NEXT-HC-INITIALIZATION-WITNESS-DATA未启动，不停止其他线，不新增规则/运行批准。
 
+
+## 8.70 r45 主线精确三tuple及受限先导driver源核（2026-10-25）
+
+基准HEAD `a0c617910821583f4dc52df4f357b715c5aca48e`；引擎PR13 `3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7`，草稿未合并。实际读取与对照本线原12回放、10 world、64旧规格、210 checkpoints及三个先导；13项源/结构不变量全部成立，MA-PD01／MA-DS03／MA-DS04仍为23原请求43观察点。`src/modes.ts`原half_chaos featuresReady=false；`src/research-source-context.ts` research只准shuffler且拒mutation，无法合法准入H04+H03+M01/M04及H06+H05+D01。现有`fixture-runner.ts`只服务jieqi night/shuffler+jian_xie，不能冒充原12的有效driver；原动作的wire映射仍未确认为可运行协议。PR13研究失效证据处理≠自然游戏成功。
+
+主线需要：可信精确来源/room/actor两英雄＋畸变准入及否定测试；原15+15世界/28随机抽数；原子闭合后与正常正式结束后精确被动观察及隐私；M01/M04完整路径返回落位与D01六步；具体版本钉住的受限命令及授权。在这些未满足前，本线不运行引擎、不绕门禁、不变更原资料或共享源码。r45只读13项V2非独立QA，原12执行0／64UNRUN／210真实观察0，主线接收r43/r44仍未知。详`HC45_EXACT_TUPLE_RUNNER_GATE_RECHECK.json`，正式下一仍为`NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS`。

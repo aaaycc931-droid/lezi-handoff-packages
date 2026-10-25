@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-SESSION-CLOSEOUT-20261024-r44",
+  "revision": "HC-45-EXACT-TUPLE-RUNNER-GATE-20261025-r45",
   "workline": "half_chaos",
-  "date_local": "2026-10-24",
+  "date_local": "2026-10-25",
   "timezone": "Asia/Shanghai",
-  "status": "r44_session_closed_r43_preflight_published_original_runtime_blocked",
+  "status": "r45_exact_tuple_runner_source_recheck_blocked",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -2567,6 +2567,24 @@
       "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
       "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
       "instructions": "On any future new chat read fixed root START_HERE.md, current remote HEAD, collaboration/CURRENT.json, worklines/half_chaos/START_HERE.txt, TASK_FROM_MAIN.json, CURRENT_STATE.json, latest r44 closeout, r43 preflight report, original input/spec/checkpoint bodies and latest main engine report/real code. Protect concurrent changes and previous user approvals. Verify new main source admission/observability/replay driver before any authorized natural pilot execution; otherwise independent source checks only, and update RETURN_TO_MAIN without inventing main adoption."
+    }
+  },
+  "r45_source_gate_recheck": {
+    "source_head": "a0c617910821583f4dc52df4f357b715c5aca48e",
+    "report": "worklines/half_chaos/HC45_EXACT_TUPLE_RUNNER_GATE_RECHECK.json",
+    "checks": "13/13 V2 source only",
+    "engine_pin": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "main_receiver": "NOT_FOUND_IN_CHECKED_MAIN_RECEIPT",
+    "original12": 0,
+    "original64": "UNRUN",
+    "observed210": 0,
+    "featuresReady": false,
+    "engine_runs": 0,
+    "gameplay_changes": 0,
+    "next": {
+      "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+      "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
+      "action": "Re-read latest main source and receiver receipts; continue independent source checks only until lawful exact admission/observer/driver published."
     }
   }
 }

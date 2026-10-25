@@ -1,0 +1,169 @@
+{
+  "schema": "lezi.hc.source_gate_recheck.v1",
+  "revision": "HC-45-EXACT-TUPLE-RUNNER-GATE-20261025-r45",
+  "date_local": "2026-10-25",
+  "workline": "half_chaos",
+  "parent_head": "a0c617910821583f4dc52df4f357b715c5aca48e",
+  "engine_pin": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "engine_PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/13",
+  "engine_PR_status": "OPEN_DRAFT_UNMERGED",
+  "authorization": "Continue r44; independent source evidence and own-line documentation, not engine code/run/gate approval",
+  "source_blobs": {
+    "replay": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+    "world": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+    "spec": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+    "main_receipt": "b3323e7fd2feaa0607d3f7dd70ab397b99a86846",
+    "engine_research": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+    "engine_modes": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+    "engine_fixture": "d5b49a6d40eca3ffdaf06b7ea3a6e8ae419315d8"
+  },
+  "checks": {
+    "method": "13 Boolean source/structure checks V2, not new engine test",
+    "count": 13,
+    "all_pass": true,
+    "items": {
+      "original12": true,
+      "original10worlds": true,
+      "original64": true,
+      "original210": true,
+      "pilots_identical": true,
+      "pilots_requests23": true,
+      "pilots_checkpoints43": true,
+      "original64UNRUN": true,
+      "original12unexecuted": true,
+      "featuresReadyFalse": true,
+      "researchHalfShufflerOnly": true,
+      "mutationGateRejects": true,
+      "existingFixtureIsJieqi": true
+    }
+  },
+  "pilots": [
+    {
+      "id": "MA-PD01",
+      "expected_world": "IW-0eaace9ad2c1699d",
+      "actual_world": "IW-0eaace9ad2c1699d",
+      "expected_tuple": [
+        "H04",
+        "H03",
+        "M04"
+      ],
+      "actual_tuple": [
+        "H04",
+        "H03",
+        "M04"
+      ],
+      "expected_requests": 5,
+      "actual_requests": 5,
+      "expected_checkpoints": 10,
+      "actual_checkpoints": 10
+    },
+    {
+      "id": "MA-DS03",
+      "expected_world": "IW-bdcfe63226360aaa",
+      "actual_world": "IW-bdcfe63226360aaa",
+      "expected_tuple": [
+        "H06",
+        "H05",
+        "D01"
+      ],
+      "actual_tuple": [
+        "H06",
+        "H05",
+        "D01"
+      ],
+      "expected_requests": 8,
+      "actual_requests": 8,
+      "expected_checkpoints": 15,
+      "actual_checkpoints": 15
+    },
+    {
+      "id": "MA-DS04",
+      "expected_world": "IW-61790bfc01eccf12",
+      "actual_world": "IW-61790bfc01eccf12",
+      "expected_tuple": [
+        "H06",
+        "H05",
+        "D01"
+      ],
+      "actual_tuple": [
+        "H06",
+        "H05",
+        "D01"
+      ],
+      "expected_requests": 10,
+      "actual_requests": 10,
+      "expected_checkpoints": 18,
+      "actual_checkpoints": 18
+    }
+  ],
+  "engine_findings": [
+    "src/modes.ts: half_chaos.featuresReady=false",
+    "src/research-source-context.ts: half_chaos research source allowlist only shuffler; mutation is explicitly rejected; no exact original 3 tuple contract",
+    "scripts/scoring/fixture-runner.ts: jieqi night/shuffler and jian_xie synthetic research fixture, not the original half-chaos 12 replay/3 pilot driver",
+    "PR13 addresses observer evidence-validity propagation, not exact tuple admission; existing old components do not count as original natural validation"
+  ],
+  "main_receipt_for_r43_r44": "NOT_FOUND_IN_CHECKED_MAIN_RECEIPT",
+  "main_receiver_adoption": "UNKNOWN",
+  "blockers": [
+    "Main must publish trusted original three-tuple room/actor/side/source admission and negative guards while featuresReady=false",
+    "Main must prove 15+15 original identity pools, 28 Fisher-Yates draws/world, hero/mutation and original source-side authority",
+    "Main must publish exact passive after-main-atom and after-normal-end/skill request checkpoints with invalid evidence, secret isolation",
+    "Main must close original M01/M04 path/return/landing/royal-safety and D01 six-step effects against original input",
+    "Main must provide version-pinned restricted original pilot driver, real command and scoped legal execution authorization"
+  ],
+  "originals": {
+    "worlds": 10,
+    "replays": 12,
+    "requests": 110,
+    "specs": 64,
+    "checkpoints": 210,
+    "three_pilot_requests": 23,
+    "three_pilot_checkpoints": 43,
+    "executed_replays": 0,
+    "passed_original_specs": 0,
+    "observed_checkpoints": 0,
+    "source_semantic_request_wire_schema": "UNRESOLVED_NOT_AN_API_SCHEMA",
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED"
+  },
+  "scope": {
+    "engine_code_edits": 0,
+    "engine_runs": 0,
+    "gameplay_rule_changes": 0,
+    "source_input_edits": 0,
+    "other_lines_modified": false,
+    "new_approvals": 0
+  },
+  "verification": {
+    "level": "V2_SOURCE_CHECK",
+    "runtime": "BLOCKED_UNRUN",
+    "independent_QA": false,
+    "no_complete_gameplay_acceptance": true
+  },
+  "limitation_audit": {
+    "audit_trigger": "cross-mode authority and original evidence qualification",
+    "risk_level": "high for falsely declaring natural acceptance",
+    "known_facts": "pinned 13 source checks pass and real code disallows tuples/mutation",
+    "unknowns": "future main PR, original source driver and real natural legality",
+    "competing_explanations": "unpublished or external driver may exist but was not published/verified",
+    "falsification_conditions": [
+      "different actual published pinned source allows exact combinations with negative controls",
+      "real legal pilot command becomes available"
+    ],
+    "verification_status": "partial",
+    "action_boundary": "only own-line documents and status",
+    "failure_conditions": [
+      "original tests marked pass without execution",
+      "source gate bypass",
+      "other lines overwritten"
+    ],
+    "residual_risk": "source-reference agreement is not runtime legality",
+    "next_validation_action": "main evidence first then recheck pilots, no engine command this phase"
+  },
+  "next": {
+    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
+    "action": "Re-read latest main source and receiver receipts; continue independent source checks only until lawful exact admission/observer/driver published."
+  }
+}
