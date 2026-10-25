@@ -2278,5 +2278,39 @@
     "original_full_ledger_read": true,
     "other_line_receipts_written": false,
     "latest_parent": "9c9af3e5c0155f27206a10921680d53275e3ec07"
+  },
+  "scoring_h03_preparation_20261025": {
+    "source_commit": "a0c617910821583f4dc52df4f357b715c5aca48e",
+    "source_manifest": "worklines/main/scoring/H03_SOURCE_BINDING.json",
+    "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "read_scope": "H03 full source section; ordinary turn/return rules scoped; H03 direct source functions, negative admission guards, source-tree file identities; main indices and source authorization route",
+    "source_facts_adopted_for_preparation": "H03 source semantics and unchanged admission/evidence boundaries; candidate requests are not runtime/adoption evidence",
+    "other_workline_closeouts_received": [
+      {
+        "path": "worklines/chaos/RETURN_TO_MAIN.json",
+        "scope": "full CH02 return and session_closure; source summaries recognized, no runtime/adoption"
+      },
+      {
+        "path": "worklines/half_chaos/HC44_SESSION_CLOSEOUT.json",
+        "scope": "full closeout, main blockers preserved; r43 source body not received this phase"
+      },
+      {
+        "path": "worklines/standard/reviews/STD_SESSION_CLOSEOUT_20261024_H21_RNG_REPLAY_CONTRACT.md",
+        "scope": "full closeout only; contract/source bodies not newly received"
+      }
+    ],
+    "closeout_source_commit": "a0c617910821583f4dc52df4f357b715c5aca48e",
+    "closeout_adopted_scope": "conversation closure and UNRUN/next/blocker metadata only; no gameplay confirmation or full source-body/runtime adoption",
+    "newer_concurrent_returns": {
+      "read_scope": "changed paths and blob identities only",
+      "commits": [
+        "5d83538d6dedc3cb72335202fa54ac93bd83befa",
+        "60a5de5f7c9d4a3718d9f985efed14a9961493fd",
+        "d2589d5eefaf3cf98151713c995d6bfc28d8d52b"
+      ],
+      "full_body_received": false,
+      "adopted": false
+    },
+    "other_line_receipts_written": false
   }
 }

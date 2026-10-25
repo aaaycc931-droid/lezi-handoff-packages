@@ -1,0 +1,62 @@
+{
+  "schema": "lezi.h03_guard_probe_plan.v1",
+  "date_local": "2026-10-25",
+  "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "status": "PLANNED_RUNTIME_UNRUN",
+  "probes": [
+    {
+      "id": "H03-S01",
+      "purpose": "Compare public capture simulation with actual barrier bounce while responding to check",
+      "scope": "synthetic restored component snapshot only; NOT a naturally generated game, pair, or scoring sample",
+      "initial_state": {
+        "status": "playing",
+        "turn": "red",
+        "revision": 0,
+        "pieces": [
+          {"id": "red-general", "faceDown": false, "color": "red", "type": "general", "x": 5, "y": 9},
+          {"id": "black-general", "faceDown": false, "color": "black", "type": "general", "x": 3, "y": 0},
+          {"id": "guard", "faceDown": false, "color": "red", "type": "rook", "x": 2, "y": 6},
+          {"id": "attacker", "faceDown": false, "color": "black", "type": "rook", "x": 4, "y": 6}
+        ],
+        "captured": []
+      },
+      "initialization": {"api": "initializeFeatureGameState", "heroes": {"red": "warrior"}},
+      "explicit_synthetic_restoration_after_initialization": {
+        "effectsByPieceId": {"guard": {"barrier": {"owner": "red", "enemyTurnsRemaining": 1}}},
+        "warrior.red.barrierPieceIds": ["guard"]
+      },
+      "secret_fixture": {"identities": {}, "processedActions": {}},
+      "requests": [
+        {"side": "red", "command": {"actionId": "H03-S01:give-check", "expectedRevision": 0, "pieceId": "guard", "from": {"x": 2, "y": 6}, "to": {"x": 3, "y": 6}}},
+        {"side": "black", "command": {"actionId": "H03-S01:try-capture", "expectedRevision": 1, "pieceId": "attacker", "from": {"x": 4, "y": 6}, "to": {"x": 3, "y": 6}}}
+      ],
+      "required_observations": [
+        "After red move: whether game advances to black normally or incorrectly declares checkmate; black is in check from guard",
+        "Pre-black request: validatePublicMove and getLegalMoves results retained separately from actual authority result",
+        "If black request commits and bounces: guard remains at(3,6), attacker at(4,6), black king still in check",
+        "A committed post-bounce state leaving acting black king in check is a source safety gap, never a legal scoring action",
+        "Premature checkmate or absence of the black window is also a source-query discrepancy to preserve; do not force status/turn to continue"
+      ],
+      "expected_contract": "Authoritative black ordinary action must not commit a final board that leaves its king illegally in check. Rejection should preserve original input/resources; exact current behavior UNRUN.",
+      "actual": null,
+      "global_score": null
+    },
+    {
+      "id": "H03-S02",
+      "scope": "unchanged product admission negative test",
+      "call": "initializeFeatureGameState(createInitialGame(noUnexpectedRandom, 'xiangqi').state, {red:'warrior'})",
+      "expected_error": "MODE_ADAPTATION_PENDING",
+      "must_not_change": ["featuresReady", "MODE_RESEARCH_SOURCES", "initial input state"],
+      "actual": null
+    },
+    {
+      "id": "H03-S03",
+      "scope": "runtime malformed research-capability rejection; malformed object only in the negative test, never a positive admission workaround",
+      "call": "withResearchSources({roomId:'H03-negative', mode:'xiangqi', actors:{A:{hero:'warrior',enabled:true},B:{hero:'hunter',enabled:true}}}, noOp)",
+      "expected_error": "RESEARCH_SCOPE_INVALID",
+      "actual": null
+    }
+  ],
+  "engine_runs": 0,
+  "source_legality_or_strength_claim": false
+}

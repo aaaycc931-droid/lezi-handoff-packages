@@ -221,13 +221,12 @@
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
   "current_phase": {
-    "id": "SCORING-OPTIMIZATION-20261024",
-    "date_local": "2026-10-24",
-    "scope": "separate scoring candidate, not gameplay or engine work",
-    "new_gameplay_confirmations": 0,
-    "new_global_hero_scores": 0,
-    "candidate_tests": 30,
-    "conditional_cases": 13
+    "id": "SCORE-H03-PREP-01",
+    "date_local": "2026-10-25",
+    "scope": "scoring H03 source binding and paired-input preparation only",
+    "engine_runs": 0,
+    "new_scores": 0,
+    "review": "worklines/main/scoring/H03_SOURCE_REVIEW.md"
   },
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
@@ -1791,10 +1790,11 @@
     "legacy_original_method_and_ledger_changed": false,
     "hero_mechanisms_changed": false,
     "next_action": {
-      "id": "SCORE-CALIBRATION-01-SOURCE-BOUND-PILOT",
-      "contract": "worklines/main/scoring/CALIBRATION_PILOT.md",
-      "status": "ready_not_run",
-      "action": "将H03单一保护分支试点合同绑定到真实合法来源/准入和最小技术范围，再准备真实校准；不足时保持定性/局部数字，不用更多假设树冒充全局分。"
+      "id": "SCORE-H03-02-BOUNDED-RUNNER-AND-SAFETY-PROBE",
+      "status": "concrete_component_plan_ready_unimplemented_not_run",
+      "plan": "worklines/main/scoring/H03_EXECUTION_PLAN.md",
+      "action": "先以固定源码实现限定组件回放和安全/准入负例，再复验四类合法前缀；发现共享安全缺口先存证并交回对应工程范围；当前不作全局校准或正式发布。",
+      "authorization": "本轮仅落实已宣布的第1、2项准备；实际引擎实施/运行按已有同范围真实授权或后续具体指令，不扩大原切片授权。"
     },
     "preserved_main_engineering_next": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
     "scoring_frozen": true,
@@ -1956,6 +1956,61 @@
         }
       ],
       "review_scope": "changed path/object identities only; no content reception or adoption asserted"
+    },
+    "latest_preparation": {
+      "id": "SCORE-H03-PREP-01",
+      "date_local": "2026-10-25",
+      "status": "source_bound_paired_inputs_and_execution_plan_prepared_runtime_unrun",
+      "read_base_commit": "a0c617910821583f4dc52df4f357b715c5aca48e",
+      "publication_parent_commit": "d2589d5eefaf3cf98151713c995d6bfc28d8d52b",
+      "user_instruction": "开始吧",
+      "scope_interpretation": "接续上一回复第1、2项：真实源码绑定和公平配对准备；不记录为引擎运行或新机制采用。",
+      "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+      "review": "worklines/main/scoring/H03_SOURCE_REVIEW.md",
+      "source_binding": "worklines/main/scoring/H03_SOURCE_BINDING.json",
+      "inputs": [
+        "worklines/main/scoring/H03_OPENING_WITNESS.json",
+        "worklines/main/scoring/H03_PAIRED_CASES.json"
+      ],
+      "guard_probes": "worklines/main/scoring/H03_GUARD_PROBES.json",
+      "validation": "worklines/main/scoring/H03_STATIC_VALIDATION.json",
+      "engine_blob_identities_matched": 19,
+      "initial_draws_verified": 29,
+      "opening_pieces": 32,
+      "paired_behavior_specs": 4,
+      "planned_requests_across_both_arms": 72,
+      "negative_integrity_checks_passed": 9,
+      "planned_unrun_runtime_guard_probes": 3,
+      "engine_imports": 0,
+      "engine_runs": 0,
+      "natural_replays": 0,
+      "new_global_scores": 0,
+      "legal_prefix_proven": false,
+      "source_families": 1,
+      "independent_samples": 0,
+      "heldout_families": 0,
+      "findings": [
+        "现有普通研究能力不含H03，不修改模式门禁；具体输入选真实jieqi开局与权威组件入口，非房间/普通全明适配。",
+        "合法性模拟删除H03保护目标，实际提交会弹回；存在己王安全试算差异，具体合成反例尚未运行。",
+        "formal_main_action、formal_turn_end和下一begin不能冒充新增原子闭合后观察点。"
+      ],
+      "candidate_method_changed": false,
+      "method_adopted": false,
+      "publication_gate": false,
+      "original_method_and_ledger_changed": false,
+      "hero_design_changed": false,
+      "engine_changed": false,
+      "product_gates_changed": false,
+      "preserved_shared_engineering_next": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
+      "next_action": {
+        "id": "SCORE-H03-02-BOUNDED-RUNNER-AND-SAFETY-PROBE",
+        "status": "concrete_component_plan_ready_unimplemented_not_run",
+        "plan": "worklines/main/scoring/H03_EXECUTION_PLAN.md",
+        "action": "先以固定源码实现限定组件回放和安全/准入负例，再复验四类合法前缀；发现共享安全缺口先存证并交回对应工程范围；当前不作全局校准或正式发布。",
+        "authorization": "本轮仅落实已宣布的第1、2项准备；实际引擎实施/运行按已有同范围真实授权或后续具体指令，不扩大原切片授权。"
+      },
+      "limitations": "静态库存/来源/配对输入验证，不实现棋规、不证明每手合法、无真实终局或独立QA；同源分支不当独立样本。",
+      "concurrent_new_returns": "latest mode-path/blob changes preserved; only older a0c6179 closeout bodies read in scoped receiver receipt"
     }
   },
   "selected_route_this_phase": "scoring_optimization",

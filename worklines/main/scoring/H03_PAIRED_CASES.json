@@ -1,0 +1,2117 @@
+{
+  "schema": "lezi.h03_paired_source_spec.v1",
+  "id": "SCORE-H03-PREP-01",
+  "date_local": "2026-10-25",
+  "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "opening_file": "H03_OPENING_WITNESS.json",
+  "arms_share_opening_and_random_tape": true,
+  "post_initialization_state_overrides": [],
+  "cases": [
+    {
+      "id": "H03-P01",
+      "category": "immediate_attack",
+      "source_family": "H03-OPENING-FAMILY-01",
+      "split": "development_only",
+      "scope": "initial-game authoritative component API; not room/wire or mode acceptance",
+      "status": "STATIC_SPEC_NOT_RUN",
+      "engine_legality": "UNVERIFIED",
+      "with": {
+        "initialization": {
+          "api": "initializeFeatureGameState",
+          "heroes": {
+            "red": "warrior"
+          },
+          "mutation": null
+        },
+        "requests": [
+          {
+            "side": "red",
+            "piece_id": "covered-27",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:with:a01",
+              "expectedRevision": 0,
+              "pieceId": "covered-27",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              1,
+              2
+            ],
+            "to_xy": [
+              3,
+              2
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:with:a02",
+              "expectedRevision": 1,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 2
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              1,
+              7
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:with:a03",
+              "expectedRevision": 2,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 1,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              2
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:with:a04",
+              "expectedRevision": 3,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:with:a05",
+              "expectedRevision": 4,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              6
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:with:a06",
+              "expectedRevision": 5,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          }
+        ]
+      },
+      "without": {
+        "initialization": {
+          "api": "initializeFeatureGameState",
+          "heroes": null,
+          "mutation": null
+        },
+        "requests": [
+          {
+            "side": "red",
+            "piece_id": "covered-27",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:without:a01",
+              "expectedRevision": 0,
+              "pieceId": "covered-27",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              1,
+              2
+            ],
+            "to_xy": [
+              3,
+              2
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:without:a02",
+              "expectedRevision": 1,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 2
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              1,
+              7
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:without:a03",
+              "expectedRevision": 2,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 1,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              2
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:without:a04",
+              "expectedRevision": 3,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:without:a05",
+              "expectedRevision": 4,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              6
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P01:without:a06",
+              "expectedRevision": 5,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          }
+        ]
+      },
+      "paired_policy": {
+        "kind": "predeclared_fixed_prefix",
+        "rule": "same requests under both arms; unexpected rejection/terminal stops pair",
+        "reads_private_identities": false
+      },
+      "expected_not_observed": {
+        "prediction": "barrier arm bounces; baseline loses red rook; no terminal prediction",
+        "short_material_delta_prediction": 9,
+        "barrier_arm_remaining": null,
+        "unique_consequence": "red rook survives this attack"
+      },
+      "observation": {
+        "engine_receipts": null,
+        "evidence_valid": null,
+        "material_delta": null,
+        "outcome_delta": null,
+        "global_hero_score": null
+      },
+      "stop": {
+        "budget": 6,
+        "nonterminal_classification": "censored",
+        "reason": "predeclared_prefix_budget"
+      }
+    },
+    {
+      "id": "H03-P02",
+      "category": "wait_until_expiry",
+      "source_family": "H03-OPENING-FAMILY-01",
+      "split": "development_only",
+      "scope": "initial-game authoritative component API; not room/wire or mode acceptance",
+      "status": "STATIC_SPEC_NOT_RUN",
+      "engine_legality": "UNVERIFIED",
+      "with": {
+        "initialization": {
+          "api": "initializeFeatureGameState",
+          "heroes": {
+            "red": "warrior"
+          },
+          "mutation": null
+        },
+        "requests": [
+          {
+            "side": "red",
+            "piece_id": "covered-27",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a01",
+              "expectedRevision": 0,
+              "pieceId": "covered-27",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              1,
+              2
+            ],
+            "to_xy": [
+              3,
+              2
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a02",
+              "expectedRevision": 1,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 2
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              1,
+              7
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a03",
+              "expectedRevision": 2,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 1,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              2
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a04",
+              "expectedRevision": 3,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a05",
+              "expectedRevision": 4,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-10",
+            "from_xy": [
+              0,
+              3
+            ],
+            "to_xy": [
+              0,
+              4
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a06",
+              "expectedRevision": 5,
+              "pieceId": "covered-10",
+              "from": {
+                "x": 0,
+                "y": 3
+              },
+              "to": {
+                "x": 0,
+                "y": 4
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              1,
+              9
+            ],
+            "to_xy": [
+              2,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a07",
+              "expectedRevision": 6,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 1,
+                "y": 9
+              },
+              "to": {
+                "x": 2,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-10",
+            "from_xy": [
+              0,
+              4
+            ],
+            "to_xy": [
+              0,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a08",
+              "expectedRevision": 7,
+              "pieceId": "covered-10",
+              "from": {
+                "x": 0,
+                "y": 4
+              },
+              "to": {
+                "x": 0,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              2,
+              7
+            ],
+            "to_xy": [
+              1,
+              9
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a09",
+              "expectedRevision": 8,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 2,
+                "y": 7
+              },
+              "to": {
+                "x": 1,
+                "y": 9
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-10",
+            "from_xy": [
+              0,
+              5
+            ],
+            "to_xy": [
+              1,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a10",
+              "expectedRevision": 9,
+              "pieceId": "covered-10",
+              "from": {
+                "x": 0,
+                "y": 5
+              },
+              "to": {
+                "x": 1,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              1,
+              9
+            ],
+            "to_xy": [
+              2,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a11",
+              "expectedRevision": 10,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 1,
+                "y": 9
+              },
+              "to": {
+                "x": 2,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              6
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:with:a12",
+              "expectedRevision": 11,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          }
+        ]
+      },
+      "without": {
+        "initialization": {
+          "api": "initializeFeatureGameState",
+          "heroes": null,
+          "mutation": null
+        },
+        "requests": [
+          {
+            "side": "red",
+            "piece_id": "covered-27",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a01",
+              "expectedRevision": 0,
+              "pieceId": "covered-27",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              1,
+              2
+            ],
+            "to_xy": [
+              3,
+              2
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a02",
+              "expectedRevision": 1,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 2
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              1,
+              7
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a03",
+              "expectedRevision": 2,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 1,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              2
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a04",
+              "expectedRevision": 3,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a05",
+              "expectedRevision": 4,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-10",
+            "from_xy": [
+              0,
+              3
+            ],
+            "to_xy": [
+              0,
+              4
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a06",
+              "expectedRevision": 5,
+              "pieceId": "covered-10",
+              "from": {
+                "x": 0,
+                "y": 3
+              },
+              "to": {
+                "x": 0,
+                "y": 4
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              1,
+              9
+            ],
+            "to_xy": [
+              2,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a07",
+              "expectedRevision": 6,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 1,
+                "y": 9
+              },
+              "to": {
+                "x": 2,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-10",
+            "from_xy": [
+              0,
+              4
+            ],
+            "to_xy": [
+              0,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a08",
+              "expectedRevision": 7,
+              "pieceId": "covered-10",
+              "from": {
+                "x": 0,
+                "y": 4
+              },
+              "to": {
+                "x": 0,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              2,
+              7
+            ],
+            "to_xy": [
+              1,
+              9
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a09",
+              "expectedRevision": 8,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 2,
+                "y": 7
+              },
+              "to": {
+                "x": 1,
+                "y": 9
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-10",
+            "from_xy": [
+              0,
+              5
+            ],
+            "to_xy": [
+              1,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a10",
+              "expectedRevision": 9,
+              "pieceId": "covered-10",
+              "from": {
+                "x": 0,
+                "y": 5
+              },
+              "to": {
+                "x": 1,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              1,
+              9
+            ],
+            "to_xy": [
+              2,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a11",
+              "expectedRevision": 10,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 1,
+                "y": 9
+              },
+              "to": {
+                "x": 2,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              6
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P02:without:a12",
+              "expectedRevision": 11,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          }
+        ]
+      },
+      "paired_policy": {
+        "kind": "predeclared_fixed_prefix",
+        "rule": "same requests under both arms; unexpected rejection/terminal stops pair",
+        "reads_private_identities": false
+      },
+      "expected_not_observed": {
+        "prediction": "three completed enemy formal turns expire barrier; fourth enemy turn captures in both arms",
+        "short_material_delta_prediction": 0,
+        "barrier_arm_remaining_at_black_turns_3_4_5": [
+          2,
+          1,
+          0
+        ],
+        "unique_consequence": "no surviving barrier at attempted attack"
+      },
+      "observation": {
+        "engine_receipts": null,
+        "evidence_valid": null,
+        "material_delta": null,
+        "outcome_delta": null,
+        "global_hero_score": null
+      },
+      "stop": {
+        "budget": 12,
+        "nonterminal_classification": "censored",
+        "reason": "predeclared_prefix_budget"
+      }
+    },
+    {
+      "id": "H03-P03",
+      "category": "alternative_target_and_reentry",
+      "source_family": "H03-OPENING-FAMILY-01",
+      "split": "development_only",
+      "scope": "initial-game authoritative component API; not room/wire or mode acceptance",
+      "status": "STATIC_SPEC_NOT_RUN",
+      "engine_legality": "UNVERIFIED",
+      "with": {
+        "initialization": {
+          "api": "initializeFeatureGameState",
+          "heroes": {
+            "red": "warrior"
+          },
+          "mutation": null
+        },
+        "requests": [
+          {
+            "side": "red",
+            "piece_id": "covered-27",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a01",
+              "expectedRevision": 0,
+              "pieceId": "covered-27",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              1,
+              2
+            ],
+            "to_xy": [
+              3,
+              2
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a02",
+              "expectedRevision": 1,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 2
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              1,
+              7
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a03",
+              "expectedRevision": 2,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 1,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              2
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a04",
+              "expectedRevision": 3,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a05",
+              "expectedRevision": 4,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              6
+            ],
+            "to_xy": [
+              2,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a06",
+              "expectedRevision": 5,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 6
+              },
+              "to": {
+                "x": 2,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a07",
+              "expectedRevision": 6,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              2,
+              6
+            ],
+            "to_xy": [
+              2,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a08",
+              "expectedRevision": 7,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 2,
+                "y": 6
+              },
+              "to": {
+                "x": 2,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:with:a09",
+              "expectedRevision": 8,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          }
+        ]
+      },
+      "without": {
+        "initialization": {
+          "api": "initializeFeatureGameState",
+          "heroes": null,
+          "mutation": null
+        },
+        "requests": [
+          {
+            "side": "red",
+            "piece_id": "covered-27",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a01",
+              "expectedRevision": 0,
+              "pieceId": "covered-27",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              1,
+              2
+            ],
+            "to_xy": [
+              3,
+              2
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a02",
+              "expectedRevision": 1,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 2
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              1,
+              7
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a03",
+              "expectedRevision": 2,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 1,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              2
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a04",
+              "expectedRevision": 3,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a05",
+              "expectedRevision": 4,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              6
+            ],
+            "to_xy": [
+              2,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a06",
+              "expectedRevision": 5,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 6
+              },
+              "to": {
+                "x": 2,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a07",
+              "expectedRevision": 6,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              2,
+              6
+            ],
+            "to_xy": [
+              2,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a08",
+              "expectedRevision": 7,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 2,
+                "y": 6
+              },
+              "to": {
+                "x": 2,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P03:without:a09",
+              "expectedRevision": 8,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          }
+        ]
+      },
+      "paired_policy": {
+        "kind": "predeclared_fixed_prefix",
+        "rule": "same requests under both arms; unexpected rejection/terminal stops pair",
+        "reads_private_identities": false
+      },
+      "expected_not_observed": {
+        "prediction": "both lose the same covered red pawn; original rook retains only its unexpired first barrier, no new quota/refill",
+        "short_material_delta_prediction": 0,
+        "barrier_arm_remaining": 1,
+        "barrier_piece_ids": [
+          "covered-23"
+        ],
+        "unique_consequence": "alternative target loss occurs in both arms and cancels in paired delta"
+      },
+      "observation": {
+        "engine_receipts": null,
+        "evidence_valid": null,
+        "material_delta": null,
+        "outcome_delta": null,
+        "global_hero_score": null
+      },
+      "stop": {
+        "budget": 9,
+        "nonterminal_classification": "censored",
+        "reason": "predeclared_prefix_budget"
+      }
+    },
+    {
+      "id": "H03-P04",
+      "category": "public_adaptive_exchange",
+      "source_family": "H03-OPENING-FAMILY-01",
+      "split": "development_only",
+      "scope": "initial-game authoritative component API; not room/wire or mode acceptance",
+      "status": "STATIC_SPEC_NOT_RUN",
+      "engine_legality": "UNVERIFIED",
+      "with": {
+        "initialization": {
+          "api": "initializeFeatureGameState",
+          "heroes": {
+            "red": "warrior"
+          },
+          "mutation": null
+        },
+        "requests": [
+          {
+            "side": "red",
+            "piece_id": "covered-27",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:with:a01",
+              "expectedRevision": 0,
+              "pieceId": "covered-27",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              1,
+              2
+            ],
+            "to_xy": [
+              3,
+              2
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:with:a02",
+              "expectedRevision": 1,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 2
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              1,
+              7
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:with:a03",
+              "expectedRevision": 2,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 1,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              2
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:with:a04",
+              "expectedRevision": 3,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              1,
+              9
+            ],
+            "to_xy": [
+              2,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:with:a05",
+              "expectedRevision": 4,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 1,
+                "y": 9
+              },
+              "to": {
+                "x": 2,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-10",
+            "from_xy": [
+              0,
+              3
+            ],
+            "to_xy": [
+              0,
+              4
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:with:a06",
+              "expectedRevision": 5,
+              "pieceId": "covered-10",
+              "from": {
+                "x": 0,
+                "y": 3
+              },
+              "to": {
+                "x": 0,
+                "y": 4
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:with:a07",
+              "expectedRevision": 6,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              6
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:with:a08",
+              "expectedRevision": 7,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "policy_branch": "own_rook_present",
+            "command": {
+              "actionId": "H03-P04:with:a09",
+              "expectedRevision": 8,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          }
+        ]
+      },
+      "without": {
+        "initialization": {
+          "api": "initializeFeatureGameState",
+          "heroes": null,
+          "mutation": null
+        },
+        "requests": [
+          {
+            "side": "red",
+            "piece_id": "covered-27",
+            "from_xy": [
+              4,
+              6
+            ],
+            "to_xy": [
+              4,
+              5
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:without:a01",
+              "expectedRevision": 0,
+              "pieceId": "covered-27",
+              "from": {
+                "x": 4,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              1,
+              2
+            ],
+            "to_xy": [
+              3,
+              2
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:without:a02",
+              "expectedRevision": 1,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 2
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              1,
+              7
+            ],
+            "to_xy": [
+              4,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:without:a03",
+              "expectedRevision": 2,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 1,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              2
+            ],
+            "to_xy": [
+              3,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:without:a04",
+              "expectedRevision": 3,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              1,
+              9
+            ],
+            "to_xy": [
+              2,
+              7
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:without:a05",
+              "expectedRevision": 4,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 1,
+                "y": 9
+              },
+              "to": {
+                "x": 2,
+                "y": 7
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-10",
+            "from_xy": [
+              0,
+              3
+            ],
+            "to_xy": [
+              0,
+              4
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:without:a06",
+              "expectedRevision": 5,
+              "pieceId": "covered-10",
+              "from": {
+                "x": 0,
+                "y": 3
+              },
+              "to": {
+                "x": 0,
+                "y": 4
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-23",
+            "from_xy": [
+              4,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:without:a07",
+              "expectedRevision": 6,
+              "pieceId": "covered-23",
+              "from": {
+                "x": 4,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "black",
+            "piece_id": "covered-08",
+            "from_xy": [
+              3,
+              6
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "command": {
+              "actionId": "H03-P04:without:a08",
+              "expectedRevision": 7,
+              "pieceId": "covered-08",
+              "from": {
+                "x": 3,
+                "y": 6
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          },
+          {
+            "side": "red",
+            "piece_id": "covered-16",
+            "from_xy": [
+              2,
+              7
+            ],
+            "to_xy": [
+              4,
+              6
+            ],
+            "kind": "ordinary_move",
+            "policy_branch": "own_rook_absent",
+            "command": {
+              "actionId": "H03-P04:without:a09",
+              "expectedRevision": 8,
+              "pieceId": "covered-16",
+              "from": {
+                "x": 2,
+                "y": 7
+              },
+              "to": {
+                "x": 4,
+                "y": 6
+              }
+            }
+          }
+        ]
+      },
+      "paired_policy": {
+        "kind": "public_state_rule",
+        "rule": "if own revealed rook covered-23 exists and can legally capture attacker, use it; otherwise own horse covered-16 captures attacker; any unavailable branch invalidates the planned suffix",
+        "reads_private_identities": false
+      },
+      "expected_not_observed": {
+        "prediction": "both arms can capture the enemy rook next; only baseline already lost its own rook",
+        "short_material_delta_prediction": 9,
+        "unique_consequence": "own rook retention; common enemy rook capture cancels, do not add another 9"
+      },
+      "observation": {
+        "engine_receipts": null,
+        "evidence_valid": null,
+        "material_delta": null,
+        "outcome_delta": null,
+        "global_hero_score": null
+      },
+      "stop": {
+        "budget": 9,
+        "nonterminal_classification": "censored",
+        "reason": "predeclared_prefix_budget"
+      }
+    }
+  ],
+  "heldout_source_families": [],
+  "independent_samples": 0,
+  "release": {
+    "global_candidate": false,
+    "formal_adoption": false,
+    "new_hero_score": null
+  },
+  "not_covered": [
+    "three distinct lifetime quota saturation",
+    "death/revival quota persistence",
+    "iron armor",
+    "landing death or return occupancy conflict",
+    "other heroes/mutations/spaces",
+    "black H03 balance",
+    "natural room opening/clock/wire",
+    "full game outcomes",
+    "independent source family or holdout"
+  ]
+}
