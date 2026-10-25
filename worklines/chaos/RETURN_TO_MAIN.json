@@ -5,13 +5,13 @@
   "to": "main",
   "date_local": "2026-10-25",
   "dispatch_id": "MAIN-THREE-MODE-20261024",
-  "task_id": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
-  "source_commit": "a0c617910821583f4dc52df4f357b715c5aca48e",
-  "status": "CH03_MODE_CONTRACT_READY_MAIN_RUNTIME_BLOCKED_UNRUN",
+  "task_id": "CH-04-H06-H15-STATIC-LEGAL-HISTORY-CANDIDATES",
+  "source_commit": "84dc5b072c93aec168183b27d76cf24290a7376d",
+  "status": "CH04_H06_H15_THREE_SOURCE_LEVEL_PATHS_READY_STATIC_ONLY_RUNTIME_UNRUN",
   "entry": "worklines/chaos/START_HERE.txt",
   "changed_paths": [
-    "worklines/chaos/CH03_PREFIX_OBSERVATION_CONTRACT.json",
-    "worklines/chaos/CH03_OBSERVATION.md",
+    "worklines/chaos/CH04_H06_H15_ROUTES.json",
+    "worklines/chaos/CH04_H06_H15_ROUTES.md",
     "worklines/chaos/START_HERE.txt",
     "worklines/chaos/CURRENT_STATE.json",
     "worklines/chaos/READ_RECEIPTS.json",
@@ -45,12 +45,13 @@
     "acceptance": "NOT_RUN",
     "accepted_prefixes": 0,
     "formal_test_passes": 0,
-    "ch03_contract": "PUBLISHED_SOURCE_PINNED"
+    "ch03_contract": "PUBLISHED_SOURCE_PINNED",
+    "ch04_source_topology": "THREE_CANDIDATES_PURE_SIMULATION_STATIC_CHECK_ONLY"
   },
   "next": {
-    "id": "CH03_MAIN_SHARED_RUNTIME_ADMISSION_AND_LEGAL_PREFIX_TEST",
-    "scope": "Main to supply source-compatible original jieqi legal two-move prefix, H11-A remaining deadline, S4 internal original-side H15 rebind witness and public projections. Chaos may separately derive real CH-T02/T06 histories.",
-    "status": "MAIN_SHARED_RUNTIME_DEPENDENCY_PENDING"
+    "id": "MAIN-ACCEPT-CH04-H06-H15-LEGAL-PREFIX-AND-GUARDS",
+    "status": "PENDING_REAL_RUNTIME",
+    "scope": "Main authoritative run of 3 seeded H06xH15 timelines (source topological only) and 1.57/1.61/9.14 state+projection. Chaos independently audits CH-T02 H11-A/B death reachability."
   },
   "protected": {
     "gameplay_delta": 0,
@@ -122,5 +123,29 @@
     ],
     "independent_chaos_followup": "construct lawful death and H06 histories without forged flags",
     "main_receiver_receipt": "UNKNOWN"
+  },
+  "ch04": {
+    "artifacts": [
+      "worklines/chaos/CH04_H06_H15_ROUTES.json",
+      "worklines/chaos/CH04_H06_H15_ROUTES.md"
+    ],
+    "hero_pair": "red nozdormu, black sky_admiral",
+    "routes": [
+      "CH-R01_PRESTART",
+      "CH-R02_CONTINUOUS",
+      "CH-R03_DEATH_FAILURE"
+    ],
+    "death_target": "covered-15 originally black cannon, under public-red dark slot",
+    "death_actor": "covered-10 original black pawn",
+    "strict_history": "CH-R03 has twelve source-level movements; actual legal preflight UNRUN",
+    "issues": [
+      "No in-game H06+H11+H15 triple combination in normal two-hero roster",
+      "CH-T02 remains missing because H11 B is pre-black2, CH04 death is black6"
+    ],
+    "engine_runs": 0,
+    "accepted_prefixes": 0,
+    "main_receiver_receipt": "UNKNOWN",
+    "scoring": "frozen",
+    "NET": "paused"
   }
 }

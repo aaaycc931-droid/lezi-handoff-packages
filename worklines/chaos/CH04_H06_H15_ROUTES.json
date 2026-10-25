@@ -1,0 +1,418 @@
+{
+  "schema": "lezi.chaos.ch04.h06_h15_candidate_routes.v1",
+  "date_local": "2026-10-25",
+  "mode_id": "jieqi",
+  "workline": "chaos",
+  "hand_off_base_head": "84dc5b072c93aec168183b27d76cf24290a7376d",
+  "original_opening_seed": 19,
+  "original_identity_source": "worklines/chaos/CH02_JIEQI_WITNESSES.json#/opening",
+  "source_pinned_engine": "aaaycc931-droid/jieqi-engine@3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7 (PR13 draft only, unmerged)",
+  "active_hero_pair": {
+    "red": "nozdormu",
+    "black": "sky_admiral"
+  },
+  "hero_pair_exclusivity": "H06/H15 can coexist with red nozdormu and black sky_admiral. H11/shuffler is a third hero and cannot occur in the same standard two-player two-hero game. The H11 epoch barrier must be a separate H11-only/H11+H15 source suite, NOT claimed as an in-fixture H06+H15 event.",
+  "truth_witness": {
+    "seed1_recruit_index": 0,
+    "selected_black_true_cannon_id": "covered-15",
+    "other_black_true_cannon_id": "covered-17",
+    "trainee_public_control_before_reveal": "red",
+    "trainee_public_slot": "rook at (0,9)",
+    "black_advance_pawn": "covered-10 original true black pawn starts (0,3)",
+    "red_advance_pawn": "covered-25 original true red pawn starts (0,6)"
+  },
+  "strict_source": {
+    "H06": "hero-actions.js rewind currently previousFormalAction(k,side), remainingMs history, <10s and not checked, same-piece nonattack/noncheck replay. These are source-level preconditions; PR13 does not implement the later H15 exceptions.",
+    "H15": "current shared confirmed: opening or after normal own begin, success once, progress only at later own normal begin, no auto retrain on pregraduate death",
+    "H15_H06_1_57": "ADJUDICATION.json shared_hero_design_updates/H15_H06_pregraduation_death_failure strict guard",
+    "H15_H06_1_61": "ADJUDICATION.json shared_hero_design_updates/H15_H06_prestart_snapshot_unused_restore strict guard",
+    "historical": "H15 October 5 §9.14 continuous live trainee original snapshot"
+  },
+  "routes": {
+    "CH-R01_PRESTART": {
+      "fixture_heroes": {
+        "red": "nozdormu",
+        "black": "sky_admiral"
+      },
+      "start_h15": "after black1 normal begin and before black1 main move",
+      "trained_type": "cannon",
+      "recruit_seed": 1,
+      "moves": [
+        {
+          "side": "red",
+          "piece_id": "covered-25",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            5
+          ],
+          "comment": "red original true pawn, reveals red"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            3
+          ],
+          "to": [
+            0,
+            4
+          ],
+          "comment": "black original true pawn, reveals black"
+        }
+      ],
+      "rewind": "red2 before main, target last red normal red1 preaction snapshot S before first successful H15 training start",
+      "expected_before_rewind": "H15 already started, selected covered-15, still alive and ungraduated, progress 0/6 if no black2 normal begin",
+      "expected_after_rewind": "H15 not started, opportunity unused, no active binding or progress; old start event stays in player memory only",
+      "replay": "red same covered-25 (0,6)->(0,5), ordinary no attack or check, under authoritative preflight",
+      "guard": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
+      "static_geometry_check": {
+        "result": "PASSED_BOUNDED_PURE_BOARD_TOPOLOGY_ONLY",
+        "actors_controls_confirmed": true,
+        "plain_pawn_and_general_geometry_checked": true,
+        "unexpected_same_public_control_capture": false,
+        "captures": [],
+        "authoritative_legal_validation": "UNRUN",
+        "king_safety": "UNRUN",
+        "skill_window": "UNRUN",
+        "real_action_commit": "UNRUN"
+      }
+    },
+    "CH-R02_CONTINUOUS": {
+      "fixture_heroes": {
+        "red": "nozdormu",
+        "black": "sky_admiral"
+      },
+      "start_h15": "legal opening before first red begin",
+      "trained_type": "cannon",
+      "recruit_seed": 1,
+      "moves": [
+        {
+          "side": "red",
+          "piece_id": "covered-25",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            5
+          ],
+          "comment": "red original true pawn, reveals red"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            3
+          ],
+          "to": [
+            0,
+            4
+          ],
+          "comment": "black original true pawn, reveals black"
+        },
+        {
+          "side": "red",
+          "piece_id": "red-general",
+          "from": [
+            4,
+            9
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "comment": "revealed general, y6 center pawn still seals same-file general exposure"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            4
+          ],
+          "to": [
+            0,
+            5
+          ],
+          "comment": "captures covered-25 after red pawn reveals red"
+        }
+      ],
+      "rewind": "red3 before main, target red2 normal general action snapshot after black1 begin",
+      "expected_before_rewind": "H15 cannon covered-15 alive and ungraduated, progress 2/6 after black2 begin; captured pawn is not trainee",
+      "expected_after_rewind": "same trainee covered-15 still alive, progress returns to snapshot 1/6, opportunity still used, no new RNG",
+      "replay": "red same red-general (4,9)->(4,8) no attack/check after authorized rewind",
+      "guard": "2026-10-05 original H15§9.14 continuous active snapshot only",
+      "static_geometry_check": {
+        "result": "PASSED_BOUNDED_PURE_BOARD_TOPOLOGY_ONLY",
+        "actors_controls_confirmed": true,
+        "plain_pawn_and_general_geometry_checked": true,
+        "unexpected_same_public_control_capture": false,
+        "captures": [
+          {
+            "action": 4,
+            "id": "covered-25",
+            "original_identity": {
+              "color": "red",
+              "type": "pawn"
+            }
+          }
+        ],
+        "authoritative_legal_validation": "UNRUN",
+        "king_safety": "UNRUN",
+        "skill_window": "UNRUN",
+        "real_action_commit": "UNRUN"
+      }
+    },
+    "CH-R03_DEATH_FAILURE": {
+      "fixture_heroes": {
+        "red": "nozdormu",
+        "black": "sky_admiral"
+      },
+      "start_h15": "after black5 normal begin and before its black5 pawn main move; previous black1-4 leave H15 unused",
+      "trained_type": "cannon",
+      "recruit_seed": 1,
+      "moves": [
+        {
+          "side": "red",
+          "piece_id": "covered-25",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            5
+          ],
+          "comment": "red original true pawn, reveals red"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            3
+          ],
+          "to": [
+            0,
+            4
+          ],
+          "comment": "black original true pawn, reveals black"
+        },
+        {
+          "side": "red",
+          "piece_id": "red-general",
+          "from": [
+            4,
+            9
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "comment": "revealed general, y6 center pawn still seals same-file general exposure"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            4
+          ],
+          "to": [
+            0,
+            5
+          ],
+          "comment": "captures covered-25 after red pawn reveals red"
+        },
+        {
+          "side": "red",
+          "piece_id": "red-general",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            4,
+            9
+          ],
+          "comment": "revealed general"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            0,
+            6
+          ],
+          "comment": "advance after pawn capture"
+        },
+        {
+          "side": "red",
+          "piece_id": "red-general",
+          "from": [
+            4,
+            9
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "comment": "revealed general, y6 center pawn still seals same-file general exposure"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            7
+          ],
+          "comment": "advance"
+        },
+        {
+          "side": "red",
+          "piece_id": "red-general",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            4,
+            9
+          ],
+          "comment": "revealed general"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            0,
+            8
+          ],
+          "comment": "advance"
+        },
+        {
+          "side": "red",
+          "piece_id": "red-general",
+          "from": [
+            4,
+            9
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "comment": "revealed general, y6 center pawn still seals same-file general exposure"
+        },
+        {
+          "side": "black",
+          "piece_id": "covered-10",
+          "from": [
+            0,
+            8
+          ],
+          "to": [
+            0,
+            9
+          ],
+          "comment": "attacks covered-15, face-down public-red rook slot, originally true black cannon (trainee)"
+        }
+      ],
+      "rewind": "red7 before main, target red6 normal general action snapshot after black5 successful H15 start and before black6 trainee death",
+      "expected_before_rewind": "black5 start progress 0/6, black6 normal begin progresses to 1/6, then black6 real attack destroys bound covered-15, death failure persists and opportunity used",
+      "expected_after_rewind": "board restoration may restore covered-15 but H15 still failed; no active training, no progress reactivation, no new draw, chance used",
+      "replay": "red same red-general (4,9)->(4,8) without attack/check if authorized rewind restores red6 snapshot",
+      "guard": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
+      "static_geometry_check": {
+        "result": "PASSED_BOUNDED_PURE_BOARD_TOPOLOGY_ONLY",
+        "actors_controls_confirmed": true,
+        "plain_pawn_and_general_geometry_checked": true,
+        "unexpected_same_public_control_capture": false,
+        "captures": [
+          {
+            "action": 4,
+            "id": "covered-25",
+            "original_identity": {
+              "color": "red",
+              "type": "pawn"
+            }
+          },
+          {
+            "action": 12,
+            "id": "covered-15",
+            "original_identity": {
+              "color": "black",
+              "type": "cannon"
+            }
+          }
+        ],
+        "authoritative_legal_validation": "UNRUN",
+        "king_safety": "UNRUN",
+        "skill_window": "UNRUN",
+        "real_action_commit": "UNRUN"
+      }
+    }
+  },
+  "timeline_witnesses": {
+    "CH-R01_PRESTART": [
+      "S=before red1 move (H15 unused)",
+      "red1 original move",
+      "black1 own normal begin",
+      "black1 H15 starts type cannon then black1 original move",
+      "red2 legally rewinds red1 S then same red pawn replay"
+    ],
+    "CH-R02_CONTINUOUS": [
+      "black H15 successfully starts in legal opening",
+      "black1 begin +1",
+      "S=before red2 general move with progress1/6",
+      "black2 own normal begin +1",
+      "black2 captures red pawn (not trainee)",
+      "red3 rewinds red2 S, progress1/6, replay same red general"
+    ],
+    "CH-R03_DEATH_FAILURE": [
+      "black1-4 no H15 start",
+      "black5 begin then legal start H15 cannon (progress0/6)",
+      "S=before red6 normal general move, bound covered15 alive",
+      "black6 normal begin +1",
+      "black6 pawn (0,8)->(0,9) captures bound covered15",
+      "red7 rewinds red6 S; death failure sticky under 1.57, even if board revives piece"
+    ]
+  },
+  "not_claimed": [
+    "getLegalMoves acceptance",
+    "applyAuthoritativeMove success",
+    "H06 legal replay/check/clock and revision",
+    "actual H15 black5 free start exists in PR13",
+    "full engine/room/private projection integration",
+    "any mode qualifications, natural games, or H11 H15 death case"
+  ],
+  "unresolved": {
+    "CH-T06": "three mode-unique topology candidates ready for main authoritative legality/preflight, still UNRUN",
+    "CH-T02": "NOT SOLVED. H11 A is after black1 and B before black2, cannot reuse six-black-turn CH-R03 death path. Need separate early-reachability search or source-confirmed H11 opportunity. Do not label H11+H15 death witness completed.",
+    "cross_shuffle_barrier": "not in H06+H15 fixture due hero roster; check code/history epoch independently under main"
+  },
+  "actual_engine_calls": 0,
+  "accepted_prefixes": 0,
+  "formal_case_passes": 0,
+  "natural_games": 0,
+  "mode_gates_changed": false,
+  "shared_code_changed": false
+}

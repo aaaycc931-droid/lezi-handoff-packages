@@ -9,7 +9,7 @@
   "received_dispatch_id": "MAIN-THREE-MODE-20261024",
   "received_task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "ch03_prefix_and_observation_contract_published_runtime_unrun",
+  "state": "ch04_h06_h15_static_source_routes_ready_runtime_unrun",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
@@ -18,10 +18,11 @@
     "PR13 pinned engine module static inspection",
     "SOURCE_REVIEW.md and CH-02 bounded next-test matrix recorded",
     "receiver-owned receipt and return prepared",
-    "CH-03 source-pinned move prefix and H11xH15 privacy/clock checkpoint contract published (not executed)"
+    "CH-03 source-pinned move prefix and H11xH15 privacy/clock checkpoint contract published (not executed)",
+    "CH-04 three seed19 H06xH15 event route candidates assembled; 12-step death route pure board topology checked; runtime UNRUN; triple hero H06+H11+H15 route flagged impossible in two-hero fixture"
   ],
-  "next_action": "CH-03-MAIN-RUNTIME-ADMISSION-AND-AUTHORITATIVE-LEGAL-PREFIX; CHAOS-INDEPENDENT-CH-T02-T06-LAWFUL-HISTORY-SEARCH",
-  "next_action_status": "MAIN_SHARED_RUNTIME_DEPENDENCY_PENDING_AND_INDEPENDENT_HISTORY_SCOPE_OPEN",
+  "next_action": "CH-05-CH-T02-H11-A-B-EARLY-DEATH-REACHABILITY-AUDIT; MAIN-RUNTIME-CH04-H06-H15",
+  "next_action_status": "INDEPENDENT_CH_T02_EARLY_REACHABILITY_OPEN_MAIN_RUNTIME_DEPENDENCY_PENDING",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -36,12 +37,14 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "CH-03-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT (contract preparation only)",
+  "last_completed_task": "CH-04-H06-H15-THREE-STATIC-LAWFUL-ROUTE-CANDIDATES (static source-level only)",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
     "CH03_PREFIX_OBSERVATION_CONTRACT.json",
-    "CH03_OBSERVATION.md"
+    "CH03_OBSERVATION.md",
+    "CH04_H06_H15_ROUTES.json",
+    "CH04_H06_H15_ROUTES.md"
   ],
   "validation": {
     "static_seed_pool": "checked",
@@ -52,7 +55,13 @@
     "ch03_contract": "PREPARED_SOURCE_PINNED",
     "authoritative_prefix_count": 0,
     "actual_engine_test_cases_passed": 0,
-    "public_privacy_acceptance": "UNRUN"
+    "public_privacy_acceptance": "UNRUN",
+    "ch04_source_routes": "3_SOURCE_LEVEL_STATIC_GEOMETRY_CANDIDATES",
+    "ch04_candidate_actual_engine_calls": 0,
+    "ch04_authoritative_legal_histories": "UNRUN",
+    "ch02_identity_source_used": true,
+    "CH_T02": "LAWFUL_HISTORY_MISSING",
+    "CH_T06": "THREE_SOURCE_LEVEL_STATIC_CANDIDATES_RUNTIME_UNRUN"
   },
   "session_closure": {
     "date_local": "2026-10-24",
@@ -103,5 +112,21 @@
     "main_receipt": "NOT_CLAIMED",
     "all_runtime_tests": "UNRUN",
     "previous_session_closure_retained": "session_closure is the 2026-10-24 historical closure, not a claim this current conversation closed"
+  },
+  "ch04": {
+    "handoff_base_head": "84dc5b072c93aec168183b27d76cf24290a7376d",
+    "mode": "jieqi",
+    "hero_pair": "red nozdormu (H06); black sky_admiral (H15)",
+    "routes": [
+      "CH-R01_PRESTART",
+      "CH-R02_CONTINUOUS",
+      "CH-R03_DEATH_FAILURE"
+    ],
+    "physical_death_candidate": "covered-10 black pawn captures covered-15 original black cannon while publicly red controlled at (0,9) on black6",
+    "verified": "static control, pawn/general geometry, collision and identity only",
+    "not_verified": "engine, royal check, timer, replay, actual training free-start, privacy",
+    "important_feasibility": "H06,H15,H11 cannot all be in one standard two-hero match",
+    "main_receipt": "NOT_CLAIMED",
+    "next": "CH-T02 actual H11 A/B before-black2 death reachability separate"
   }
 }
