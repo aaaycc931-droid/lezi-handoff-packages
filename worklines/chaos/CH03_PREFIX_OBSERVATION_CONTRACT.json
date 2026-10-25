@@ -1,0 +1,222 @@
+{
+  "schema": "lezi.chaos.ch03.runtime_observation_contract.v1",
+  "date_local": "2026-10-25",
+  "workline": "chaos",
+  "mode_id": "jieqi",
+  "handoff_base_head": "a0c617910821583f4dc52df4f357b715c5aca48e",
+  "engine_source": {
+    "repo": "aaaycc931-droid/jieqi-engine",
+    "pinned_pr13_head": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "engine_main_observed": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "pr13": "draft_unmerged",
+    "runtime_run": false,
+    "not_transferable_to_unreviewed_refs": true
+  },
+  "fixture_source": "worklines/chaos/CH02_JIEQI_WITNESSES.json",
+  "prerequisite": {
+    "initialize": "createInitialGame(seededRandomInt(19), 'jieqi') then initializeFeatureGameState with red=sky_admiral/front black=shuffler/front, no mutation; use separate RNG streams for opening, recruitment(seed1), H11 shuffle(seed12) and H15 rebind(seed1)",
+    "note": "CH02 identities and RNG tapes are pure static witnesses; no state injection, forged processedActions, fake captures or direct secret.training.failed writes count as legal history",
+    "training": "H15 legitimate opening start only if authoritative current-version action accepts it; current PR13 legacy configureHeroPreparation is preparation-only and cannot certify later free-start rule",
+    "moves": [
+      {
+        "actor": "red",
+        "piece_id": "covered-25",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ],
+        "expected_slot": "pawn",
+        "true_identity": "red pawn",
+        "run": "UNRUN"
+      },
+      {
+        "actor": "black",
+        "piece_id": "covered-10",
+        "from": [
+          0,
+          3
+        ],
+        "to": [
+          0,
+          4
+        ],
+        "expected_slot": "pawn",
+        "true_identity": "black pawn",
+        "run": "UNRUN"
+      }
+    ],
+    "actual_legal_gate": "Each action must pass actual getLegalMoves/validatePublicMove and applyAuthoritativeMove in a nonterminal authoritative room under correct turn, revision and feature modes; verify before H11-A; geometry alone not accepted.",
+    "clocks": {
+      "black_first_turn_started_at_ms": 10000,
+      "deadline_at_ms": 70000,
+      "black_first_action_completed_at_ms": 30000,
+      "remaining_at_window_ms": 40000,
+      "pre_deadline_ms": 69999,
+      "at_deadline_ms": 70000,
+      "all": "NORMATIVE_EXPECTATION_UNRUN"
+    }
+  },
+  "checkpoints": [
+    {
+      "id": "S0",
+      "when": "after authoritative setup+legal H15 opening start, before red first normal begin",
+      "expects": {
+        "selected_type": "cannon",
+        "secret_training_id": "covered-03",
+        "training_progress": 0,
+        "used_opportunity": true
+      },
+      "requires": "legal start, seeded recruit and private-only binding"
+    },
+    {
+      "id": "S1",
+      "when": "after actual red first normal begin, before red first main move",
+      "expects": {
+        "training_progress": 1
+      },
+      "requires": "actual normal begin exactly once"
+    },
+    {
+      "id": "S2",
+      "when": "after red first main move fully settled",
+      "expects": {
+        "red_formal_turns": 1
+      },
+      "requires": "accepted original-jieqi move, no terminal"
+    },
+    {
+      "id": "S3",
+      "when": "after black first main move and entire atom closure, before H11-A decision",
+      "expects": {
+        "black_formal_turns": 1,
+        "pending_shuffle_window": "A",
+        "retained_deadline_ms": 70000
+      },
+      "requires": "nonterminal and source-legal A window, no deadline reset"
+    },
+    {
+      "id": "S4",
+      "when": "H11 shuffle identities rebuilt and H15 rebind settled, BEFORE next red begin",
+      "expects": {
+        "new_training_id_if_valid": "covered-17",
+        "training_progress": 1,
+        "used_opportunity": true,
+        "identity_true_side": "red",
+        "training_type": "cannon"
+      },
+      "requires": "main-owned secure internal observer at a real atom checkpoint; NOT an existing public return boundary"
+    },
+    {
+      "id": "S5",
+      "when": "after H11-A action returns AND any actual next red normal begin has settled",
+      "expects": {
+        "training_progress_if_red_begin_occurs": 2,
+        "secret_training_id_if_valid": "covered-17",
+        "red_turn": "only when status playing"
+      },
+      "requires": "do not treat normal begin +1 as shuffle tick; no fabricated intermediate state"
+    }
+  ],
+  "projection": {
+    "scope": "red player public room, black player public room, spectator where available, ordinary events and actual client-facing projection",
+    "common_allowed": [
+      "chosen training type",
+      "successfully started fact",
+      "one-time opportunity consumed",
+      "ordinary public board/reveal/flight effects when legally visible"
+    ],
+    "never_leak_before_lawful_reveal": [
+      "secret training piece ID and coordinate",
+      "actual training progress, remaining rounds or live failed status",
+      "internal H11 remapped identities",
+      "secret rebind RNG index",
+      "opponent's hidden true identity"
+    ],
+    "compare": "For paired states with identical lawful public history but different hidden bound piece, projections/automatic events must not reveal the secret difference. serializePublicRoom alone is not full client evidence; audit all outgoing representations.",
+    "caveat": "public inevitability deductions from public facts need not be prevented"
+  },
+  "cases": {
+    "CH-T01": {
+      "ready": "CONTRACT_PREPARED_RUNTIME_BLOCKED",
+      "expect": "valid red original-side cannon rebind after full global30 shuffle, 1->2 only with normal red begin",
+      "blocking": [
+        "main-owned source-compatible free-start and H11/H15 rebind",
+        "internal S4 authority checkpoint",
+        "accepted prefix and public projection"
+      ],
+      "run": "UNRUN"
+    },
+    "CH-T02": {
+      "ready": "LAWFUL_HISTORY_MISSING",
+      "expect": "pre-graduation death actually committed before H11 then no restarted training or refunded chance",
+      "blocking": [
+        "legal secret trainee destruction history, no direct failed injection",
+        "main H15 failure implementation"
+      ],
+      "run": "UNRUN"
+    },
+    "CH-T03": {
+      "ready": "BASE_WORLD_PREPARED",
+      "expect": "without any legal H15 start, H11 does not auto-start or spend opportunity",
+      "blocking": [
+        "legal prefix and actual H11 window"
+      ],
+      "run": "UNRUN"
+    },
+    "CH-T04": {
+      "ready": "NUMERIC_DEADLINE_PREPARED",
+      "expect": "H11-A reuses 70000ms deadline; before expiry valid; expiry auto-skip retains B without action timeout loss",
+      "blocking": [
+        "authoritative clock propagation/expiry event",
+        "legal prefix"
+      ],
+      "run": "UNRUN"
+    },
+    "CH-T05": {
+      "ready": "STATIC_CROSS_CONTROL_PREPARED",
+      "expect": "red recruits original true red cannons 03/08 even if both are under black public control; no private binding leak",
+      "blocking": [
+        "lawful H15 start/recruit selection",
+        "both-side public projection test"
+      ],
+      "run": "UNRUN"
+    },
+    "CH-T06": {
+      "ready": "THREE_REAL_H06_HISTORIES_MISSING",
+      "expect": "active snapshot progress, dead-pregraduation sticky failure, guarded pre-first-start restore as unused are distinct guards, no crossing H11 epoch",
+      "blocking": [
+        "three actual H06 source-legal histories and same-piece non-attack/non-check replay preflight",
+        "main cross-hero runtime"
+      ],
+      "run": "UNRUN"
+    }
+  },
+  "rejection_conditions": [
+    "If either proposed red1 or black1 move fails authoritative legality, label that seed/prefix BLOCKED and seek a different actual legal prefix rather than mutate secret or assume PASS",
+    "If black1 leads to termination or A is never opened, do not inject pendingShuffle",
+    "If S4 not observable at legitimate internal seam, require main-owned instrument, not a mutation that changes timing",
+    "If timer source absent or PR13 old implementation differs, mark EXPECTED_FAIL/NOT_ADAPTED rather than fake new current compliance",
+    "If public output hides a key only in serializePublicRoom but exposes it elsewhere, privacy NOT_VERIFIED",
+    "No H06 rollback across H11 epoch barrier"
+  ],
+  "runtime_acceptance": {
+    "accepted_prefixes": 0,
+    "engine_calls": 0,
+    "real_room_runs": 0,
+    "formal_case_passes": 0,
+    "natural_games": 0,
+    "privacy_acceptance": false,
+    "mode_admission_changed": false,
+    "shared_code_changes": 0
+  },
+  "owner_split": {
+    "chaos": "mode-specific identity source, sealed RNG witness, explicit legality and observation contract, later lawful death/H06 histories",
+    "main": "shared clock, current H15 free start/death policy, H11 rebind/atomic seam and evidence observer, runtime execution and crossline source merge"
+  },
+  "main_receipt": "NOT_CLAIMED",
+  "shared_blocker": "MAIN_SHARED_RUNTIME_DEPENDENCY_PENDING"
+}

@@ -3,17 +3,18 @@
   "workline": "chaos",
   "from": "chaos",
   "to": "main",
-  "date_local": "2026-10-24",
+  "date_local": "2026-10-25",
   "dispatch_id": "MAIN-THREE-MODE-20261024",
-  "task_id": "CH-02-CREATE-LEGAL-JIEQI-H11-H15-WITNESSES",
-  "source_commit": "5de988c225bfb84d9c72170a86b81fb5486a2bd9",
-  "status": "CH02_DETERMINISTIC_WITNESS_STATIC_READY_RUNTIME_UNRUN",
+  "task_id": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
+  "source_commit": "a0c617910821583f4dc52df4f357b715c5aca48e",
+  "status": "CH03_MODE_CONTRACT_READY_MAIN_RUNTIME_BLOCKED_UNRUN",
   "entry": "worklines/chaos/START_HERE.txt",
   "changed_paths": [
+    "worklines/chaos/CH03_PREFIX_OBSERVATION_CONTRACT.json",
+    "worklines/chaos/CH03_OBSERVATION.md",
     "worklines/chaos/START_HERE.txt",
-    "worklines/chaos/CH02_JIEQI_WITNESSES.json",
-    "worklines/chaos/CH02_VALIDATION.md",
     "worklines/chaos/CURRENT_STATE.json",
+    "worklines/chaos/READ_RECEIPTS.json",
     "worklines/chaos/RETURN_TO_MAIN.json"
   ],
   "facts_confirmed": [
@@ -41,12 +42,15 @@
     "natural_replays": 0,
     "legal_witnesses_built": 0,
     "static_witnesses": 2,
-    "acceptance": "NOT_RUN"
+    "acceptance": "NOT_RUN",
+    "accepted_prefixes": 0,
+    "formal_test_passes": 0,
+    "ch03_contract": "PUBLISHED_SOURCE_PINNED"
   },
   "next": {
-    "id": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
-    "scope": "main receives seeded fixture and owns bounded shared runtime/legal input and atomic observer; chaos builds legal event histories and confirms original jieqi semantics",
-    "status": "PENDING_MAIN_READ_AND_RUNTIME_SCOPE"
+    "id": "CH03_MAIN_SHARED_RUNTIME_ADMISSION_AND_LEGAL_PREFIX_TEST",
+    "scope": "Main to supply source-compatible original jieqi legal two-move prefix, H11-A remaining deadline, S4 internal original-side H15 rebind witness and public projections. Chaos may separately derive real CH-T02/T06 histories.",
+    "status": "MAIN_SHARED_RUNTIME_DEPENDENCY_PENDING"
   },
   "protected": {
     "gameplay_delta": 0,
@@ -57,7 +61,7 @@
     "old_work_preserved": true
   },
   "receiver_adoption": "not asserted for main",
-  "self_commit": "resolve from Git history after actual successful publication",
+  "self_commit": "resolve from actual Git history after successful publication",
   "concrete_witness": {
     "opening_seed": 19,
     "h11_seed": 12,
@@ -82,5 +86,41 @@
     "next": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
     "main_receipt": "not_claimed",
     "user_requested_conversation_closure": true
+  },
+  "ch03": {
+    "documents": [
+      "worklines/chaos/CH03_PREFIX_OBSERVATION_CONTRACT.json",
+      "worklines/chaos/CH03_OBSERVATION.md"
+    ],
+    "expected_first_moves": [
+      "covered-25 red (0,6)->(0,5)",
+      "covered-10 black (0,3)->(0,4)"
+    ],
+    "current_runtime_state": "UNRUN",
+    "case_states": {
+      "CH-T01": "UNRUN",
+      "CH-T02": "UNRUN",
+      "CH-T03": "UNRUN",
+      "CH-T04": "UNRUN",
+      "CH-T05": "UNRUN",
+      "CH-T06": "UNRUN"
+    },
+    "checkpoints": [
+      "S0",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ],
+    "main_owned": [
+      "clock/deadline and auto-skip",
+      "H15 current free-start/death/rebind",
+      "secure atom-before-red-begin observer",
+      "runtime evidence and private/public projection check",
+      "original-jieqi flown-graduate and empty candidate handling"
+    ],
+    "independent_chaos_followup": "construct lawful death and H06 histories without forged flags",
+    "main_receiver_receipt": "UNKNOWN"
   }
 }

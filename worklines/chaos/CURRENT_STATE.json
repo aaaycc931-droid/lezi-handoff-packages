@@ -2,14 +2,14 @@
   "schema": "lezi.workline_state.v1",
   "workline": "chaos",
   "mode_id": "jieqi",
-  "date_local": "2026-10-24",
+  "date_local": "2026-10-25",
   "entry": "START_HERE.txt",
   "task": "TASK_FROM_MAIN.json",
   "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
   "received_dispatch_id": "MAIN-THREE-MODE-20261024",
   "received_task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "ch02_seeded_identity_static_witness_ready_unrun",
+  "state": "ch03_prefix_and_observation_contract_published_runtime_unrun",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
@@ -17,10 +17,11 @@
     "original jieqi and H11/H15 current+historical source scopes reconciled",
     "PR13 pinned engine module static inspection",
     "SOURCE_REVIEW.md and CH-02 bounded next-test matrix recorded",
-    "receiver-owned receipt and return prepared"
+    "receiver-owned receipt and return prepared",
+    "CH-03 source-pinned move prefix and H11xH15 privacy/clock checkpoint contract published (not executed)"
   ],
-  "next_action": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
-  "next_action_status": "MAIN_SHARED_RUNTIME_DEPENDENCY_PENDING",
+  "next_action": "CH-03-MAIN-RUNTIME-ADMISSION-AND-AUTHORITATIVE-LEGAL-PREFIX; CHAOS-INDEPENDENT-CH-T02-T06-LAWFUL-HISTORY-SEARCH",
+  "next_action_status": "MAIN_SHARED_RUNTIME_DEPENDENCY_PENDING_AND_INDEPENDENT_HISTORY_SCOPE_OPEN",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -35,17 +36,23 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "CH-02-CREATE-LEGAL-JIEQI-H11-H15-WITNESSES",
+  "last_completed_task": "CH-03-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT (contract preparation only)",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
-    "CH02_VALIDATION.md"
+    "CH02_VALIDATION.md",
+    "CH03_PREFIX_OBSERVATION_CONTRACT.json",
+    "CH03_OBSERVATION.md"
   ],
   "validation": {
     "static_seed_pool": "checked",
     "static_identity_count": "checked",
     "candidate_prefix": "geometry_only",
     "authoritative_prefix": "UNRUN",
-    "engine_runs": 0
+    "engine_runs": 0,
+    "ch03_contract": "PREPARED_SOURCE_PINNED",
+    "authoritative_prefix_count": 0,
+    "actual_engine_test_cases_passed": 0,
+    "public_privacy_acceptance": "UNRUN"
   },
   "session_closure": {
     "date_local": "2026-10-24",
@@ -76,5 +83,25 @@
       "scoring": "frozen",
       "NET": "paused"
     }
+  },
+  "ch03": {
+    "handoff_base_head": "a0c617910821583f4dc52df4f357b715c5aca48e",
+    "engine_pin": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "scope": "only chaos docs; shared code main-owned",
+    "static_outputs": [
+      "CH03_PREFIX_OBSERVATION_CONTRACT.json",
+      "CH03_OBSERVATION.md"
+    ],
+    "statuses": {
+      "CH-T01": "CONTRACT_READY_RUNTIME_UNRUN",
+      "CH-T02": "LAWFUL_HISTORY_MISSING",
+      "CH-T03": "CONTRACT_READY_RUNTIME_UNRUN",
+      "CH-T04": "CONTRACT_READY_RUNTIME_UNRUN",
+      "CH-T05": "CONTRACT_READY_RUNTIME_UNRUN",
+      "CH-T06": "THREE_LAWFUL_HISTORIES_MISSING"
+    },
+    "main_receipt": "NOT_CLAIMED",
+    "all_runtime_tests": "UNRUN",
+    "previous_session_closure_retained": "session_closure is the 2026-10-24 historical closure, not a claim this current conversation closed"
   }
 }
