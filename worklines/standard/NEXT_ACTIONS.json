@@ -1,48 +1,63 @@
 {
   "first": {
-    "id": "NEXT-STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX",
-    "subject": "NP AS/AP/ES 已确认限定条件的最小观测字段、反例与王安全静态门禁矩阵",
-    "action": "基于2026-10-25静态接口预检报告与已确认来源，整理AS/AP/ES三个分支的输入/身份/路径/原子/末态可观察字段，列出真实模式门禁、祈求占步计数、H02来源不退款区分、王安全与RNG有序池的反例。只读本线文档准备；不得运行引擎或更改共享源码。共享P0修复/qualification/权威抽签与正式测试交主线处理。",
-    "status": "ready_not_started_requires_explicit_continuation",
+    "id": "NEXT-STD-NP-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES",
+    "subject": "M04路径碾碎改变王线的静态符号反例与合法前缀来源守卫",
+    "action": "只读构造最小的M04路径碾碎后前后王安全差异符号盘面，记录起点/路径/终点/双方将帅/是否王线阻挡、是否已被现有规则接受及能否从32棋开局合法到达；把符号反例与自然对局和实际引擎运行严格区分。完成文档与主线回传，不写代码、不跑引擎、不绕过xiangqi门禁。",
+    "status": "ready_not_started_requires_explicit_user_continuation",
     "implementation_authorized": false,
-    "report_dependency": "worklines/standard/reviews/NP_H21_RNG_STATIC_INTEGRATION_PREFLIGHT_20261025.md",
-    "main_dependency": "P0 H21 invoke formal-turn counting and AS H02 source consumption; xiangqi qualification and RNG attestation remain main-owned"
+    "report_dependency": "worklines/standard/reviews/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_REVIEW_20261025.md",
+    "main_dependency": "P0 H21 invoke and AS H02 charge fixes and mode qualification remain main-owned"
   },
   "preserve": "当前对话已收束；普通31/本线直接共享13，本对话两项共同确认及原候选/原话/来源、ES限定复核、全部历史成果保留。收束不新增批准；下一来源顺序复核尚未开始，待用户明确继续后接续。评分冻结、NET暂停，全部旧未运行规格保持UNRUN。",
   "main_owned_pending": "Latest main1.62 metadata only: no active user candidate; H15/H06 graduation-source review complete with policy unresolved; no new H15 policy adopted here.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT-20261025",
+    "id": "STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX-20261025",
     "date_local": "2026-10-25",
-    "source_handoff_commit": "a0c617910821583f4dc52df4f357b715c5aca48e",
-    "source_engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-    "engine_pr13_merged": false,
-    "report": "worklines/standard/reviews/NP_H21_RNG_STATIC_INTEGRATION_PREFLIGHT_20261025.md",
-    "completion": "V2 source/static design only; no engine run",
-    "findings": [
-      "P0-H21-invoke-classified-before_main-formal-count-skipped",
-      "P0-AS-H02-hero-charge-spent-before-dragon-scale-bounce-and-stealth-may-be-created",
-      "P1-M04-path-crush-not-modeled-in-precheck-royal-safety",
-      "P1-RNG-tape-and-integer-validation-missing"
+    "task": "NEXT-STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX",
+    "source_handoff_head": "bab2ac020ff508d4e33accf9178a21a2d355d45b",
+    "pinned_engine_sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "spec": "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+    "review": "worklines/standard/reviews/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_REVIEW_20261025.md",
+    "branches": [
+      "AS",
+      "AP",
+      "ES"
     ],
-    "ordinary_confirmations_retained": 31,
-    "direct_shared_confirmations_retained": 13,
-    "rule_delta": 0,
-    "feature_mode_gate": "xiangqi.featuresReady=false",
-    "formal_specs": "UNRUN",
-    "game_code_changes": 0,
-    "engine_runs": 0,
+    "negative_cases": 15,
+    "observed_field_categories": [
+      "existing_public",
+      "existing_authoritative_private",
+      "derived_oracle_not_single_field",
+      "proposed_not_implemented"
+    ],
+    "source_confirmations": [
+      "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "worklines/standard/rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+      "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
+    ],
+    "findings": [
+      "AS hero-source retention differs from AP/ES spent later opportunity",
+      "H21 invoke main-action counting P0 unresolved",
+      "M04 path-crush post-atom king safety not proven",
+      "Natural authoritative RNG tape not available"
+    ],
+    "verification": "V2 source review + V1 guarded observations; self-consistency validation only",
+    "formal_tests": "UNRUN",
+    "game_engine_runs": 0,
     "independent_QA": false,
+    "rule_delta": 0,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "mode_gate": "xiangqi.featuresReady=false",
     "scoring": "frozen",
     "NET": "paused",
-    "main_received_verified": null,
-    "main_adopted_verified": null,
-    "other_modes_changes": 0,
-    "actual_user_continuation": "继续《乐子象棋》普通象棋工作线；按最新NEXT_ACTIONS.json推进",
-    "next_started": false
+    "shared_code_modified": false,
+    "main_receiver_actual_read": null,
+    "main_receiver_adoption": null
   },
-  "status": "static_preflight_complete_next_observation_matrix_not_started",
+  "status": "np_observation_matrix_complete_next_symbolic_witnesses_unstarted",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261019-r1",
     "status": "closed_current_conversation",

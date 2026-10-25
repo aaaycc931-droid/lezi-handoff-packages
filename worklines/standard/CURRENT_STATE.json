@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "standard_np_h21_static_integration_preflight_completed_main_p0_blockers_unrun",
+  "status": "standard_np_observation_guard_matrix_complete_unrun_main_blockers",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -44,13 +44,13 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX",
-    "subject": "NP AS/AP/ES 已确认限定条件的最小观测字段、反例与王安全静态门禁矩阵",
-    "action": "基于2026-10-25静态接口预检报告与已确认来源，整理AS/AP/ES三个分支的输入/身份/路径/原子/末态可观察字段，列出真实模式门禁、祈求占步计数、H02来源不退款区分、王安全与RNG有序池的反例。只读本线文档准备；不得运行引擎或更改共享源码。共享P0修复/qualification/权威抽签与正式测试交主线处理。",
-    "status": "ready_not_started_requires_explicit_continuation",
+    "id": "NEXT-STD-NP-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES",
+    "subject": "M04路径碾碎改变王线的静态符号反例与合法前缀来源守卫",
+    "action": "只读构造最小的M04路径碾碎后前后王安全差异符号盘面，记录起点/路径/终点/双方将帅/是否王线阻挡、是否已被现有规则接受及能否从32棋开局合法到达；把符号反例与自然对局和实际引擎运行严格区分。完成文档与主线回传，不写代码、不跑引擎、不绕过xiangqi门禁。",
+    "status": "ready_not_started_requires_explicit_user_continuation",
     "implementation_authorized": false,
-    "report_dependency": "worklines/standard/reviews/NP_H21_RNG_STATIC_INTEGRATION_PREFLIGHT_20261025.md",
-    "main_dependency": "P0 H21 invoke formal-turn counting and AS H02 source consumption; xiangqi qualification and RNG attestation remain main-owned"
+    "report_dependency": "worklines/standard/reviews/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_REVIEW_20261025.md",
+    "main_dependency": "P0 H21 invoke and AS H02 charge fixes and mode qualification remain main-owned"
   },
   "external_delivery": {
     "prepared_here": true,
@@ -957,31 +957,93 @@
     "resume_text": "继续《乐子象棋》普通象棋工作线。先核对最新远端HEAD与并发成果；读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt ，以 worklines/standard/CURRENT_STATE.json#latest_session_closeout 和 NEXT_ACTIONS.json#first 为准。已完成H21授鳞随机来源追溯及N=0/1/3/4/15、AS/AP/ES条件性索引的复验合同。下一任务 NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT（只读静态接口预检）尚未启动。正式NP/AS/AP/ES/RE与真实引擎测试/自然回放仍UNRUN；普通模式门禁不绕过。确认普通31/直接共享13/规则Δ0，评分冻结、NET暂停；保护新旧成果、增量写回并复读，不代填主线接收采用回执。"
   },
   "latest_task_completed": {
-    "id": "STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT-20261025",
+    "id": "STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX-20261025",
     "date_local": "2026-10-25",
-    "source_handoff_commit": "a0c617910821583f4dc52df4f357b715c5aca48e",
-    "source_engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-    "engine_pr13_merged": false,
-    "report": "worklines/standard/reviews/NP_H21_RNG_STATIC_INTEGRATION_PREFLIGHT_20261025.md",
-    "completion": "V2 source/static design only; no engine run",
-    "findings": [
-      "P0-H21-invoke-classified-before_main-formal-count-skipped",
-      "P0-AS-H02-hero-charge-spent-before-dragon-scale-bounce-and-stealth-may-be-created",
-      "P1-M04-path-crush-not-modeled-in-precheck-royal-safety",
-      "P1-RNG-tape-and-integer-validation-missing"
+    "task": "NEXT-STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX",
+    "source_handoff_head": "bab2ac020ff508d4e33accf9178a21a2d355d45b",
+    "pinned_engine_sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "spec": "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+    "review": "worklines/standard/reviews/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_REVIEW_20261025.md",
+    "branches": [
+      "AS",
+      "AP",
+      "ES"
     ],
-    "ordinary_confirmations_retained": 31,
-    "direct_shared_confirmations_retained": 13,
-    "rule_delta": 0,
-    "feature_mode_gate": "xiangqi.featuresReady=false",
-    "formal_specs": "UNRUN",
-    "game_code_changes": 0,
-    "engine_runs": 0,
+    "negative_cases": 15,
+    "observed_field_categories": [
+      "existing_public",
+      "existing_authoritative_private",
+      "derived_oracle_not_single_field",
+      "proposed_not_implemented"
+    ],
+    "source_confirmations": [
+      "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "worklines/standard/rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+      "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
+    ],
+    "findings": [
+      "AS hero-source retention differs from AP/ES spent later opportunity",
+      "H21 invoke main-action counting P0 unresolved",
+      "M04 path-crush post-atom king safety not proven",
+      "Natural authoritative RNG tape not available"
+    ],
+    "verification": "V2 source review + V1 guarded observations; self-consistency validation only",
+    "formal_tests": "UNRUN",
+    "game_engine_runs": 0,
     "independent_QA": false,
+    "rule_delta": 0,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "mode_gate": "xiangqi.featuresReady=false",
     "scoring": "frozen",
     "NET": "paused",
-    "main_received_verified": null,
-    "main_adopted_verified": null,
-    "other_modes_changes": 0
+    "shared_code_modified": false,
+    "main_receiver_actual_read": null,
+    "main_receiver_adoption": null
+  },
+  "np_as_ap_es_observation_guard_matrix_20261025": {
+    "id": "STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX-20261025",
+    "date_local": "2026-10-25",
+    "task": "NEXT-STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX",
+    "source_handoff_head": "bab2ac020ff508d4e33accf9178a21a2d355d45b",
+    "pinned_engine_sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "spec": "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+    "review": "worklines/standard/reviews/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_REVIEW_20261025.md",
+    "branches": [
+      "AS",
+      "AP",
+      "ES"
+    ],
+    "negative_cases": 15,
+    "observed_field_categories": [
+      "existing_public",
+      "existing_authoritative_private",
+      "derived_oracle_not_single_field",
+      "proposed_not_implemented"
+    ],
+    "source_confirmations": [
+      "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "worklines/standard/rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+      "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
+    ],
+    "findings": [
+      "AS hero-source retention differs from AP/ES spent later opportunity",
+      "H21 invoke main-action counting P0 unresolved",
+      "M04 path-crush post-atom king safety not proven",
+      "Natural authoritative RNG tape not available"
+    ],
+    "verification": "V2 source review + V1 guarded observations; self-consistency validation only",
+    "formal_tests": "UNRUN",
+    "game_engine_runs": 0,
+    "independent_QA": false,
+    "rule_delta": 0,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "mode_gate": "xiangqi.featuresReady=false",
+    "scoring": "frozen",
+    "NET": "paused",
+    "shared_code_modified": false,
+    "main_receiver_actual_read": null,
+    "main_receiver_adoption": null
   }
 }
