@@ -3088,3 +3088,9 @@ verification_status=partial，文件来源V2＋同一AI语义推演V1；未做�
 基准HEAD `a0c617910821583f4dc52df4f357b715c5aca48e`；引擎PR13 `3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7`，草稿未合并。实际读取与对照本线原12回放、10 world、64旧规格、210 checkpoints及三个先导；13项源/结构不变量全部成立，MA-PD01／MA-DS03／MA-DS04仍为23原请求43观察点。`src/modes.ts`原half_chaos featuresReady=false；`src/research-source-context.ts` research只准shuffler且拒mutation，无法合法准入H04+H03+M01/M04及H06+H05+D01。现有`fixture-runner.ts`只服务jieqi night/shuffler+jian_xie，不能冒充原12的有效driver；原动作的wire映射仍未确认为可运行协议。PR13研究失效证据处理≠自然游戏成功。
 
 主线需要：可信精确来源/room/actor两英雄＋畸变准入及否定测试；原15+15世界/28随机抽数；原子闭合后与正常正式结束后精确被动观察及隐私；M01/M04完整路径返回落位与D01六步；具体版本钉住的受限命令及授权。在这些未满足前，本线不运行引擎、不绕门禁、不变更原资料或共享源码。r45只读13项V2非独立QA，原12执行0／64UNRUN／210真实观察0，主线接收r43/r44仍未知。详`HC45_EXACT_TUPLE_RUNNER_GATE_RECHECK.json`，正式下一仍为`NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS`。
+
+## 8.71 r46 真实主线回执与并发成果核对（2026-10-25）
+
+从r45固定提交`60a5de5f7c9d4a3718d9f985efed14a9961493fd`对比最新HEAD`bab2ac020ff508d4e33accf9178a21a2d355d45b`，中间新增主线评分H03静态先导准备及普通模式独立记录，未改本线半混乱文件。真实主线`READ_RECEIPTS.json#scoring_h03_preparation_20261025`记录其已读`HC44_SESSION_CLOSEOUT.json`**全文**，采用仅对话关闭、UNRUN、阻断与下一任务元数据；并明确本次未读r43源正文，新r45技术全报告也仅有新提交路径/身份观察，不算完整接收。此前r45当时未找到r44回执是带时间边界的事实，现据最新发布更新为r44已读、有限元数据采用；不代填主线其他范围。
+
+PR13仍open/draft/unmerged，半混乱研究half_chaos只允许shuffler且mutation被拒，原三tuple先导自然运行仍阻断；评分H03 pilot来源绑定/4组配对资料仅静态准备，与原12自然回放无等价性。保留12执行0、64UNRUN、210观察0、featuresReady=false、评分冻结及NET暂停；本轮没有引擎代码、测试、门禁、玩法改变。完整状态见`HC46_MAIN_RECEIPT_RECONCILIATION.json`。

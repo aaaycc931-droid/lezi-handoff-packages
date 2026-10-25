@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-45-EXACT-TUPLE-RUNNER-GATE-20261025-r45",
+  "revision": "HC-46-MAIN-RECEIPT-RECONCILIATION-20261025-r46",
   "workline": "half_chaos",
   "date_local": "2026-10-25",
   "timezone": "Asia/Shanghai",
-  "status": "r45_exact_tuple_runner_source_recheck_blocked",
+  "status": "r46_main_r44_receipt_reconciled_original_pilots_still_blocked",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -2585,6 +2585,24 @@
       "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
       "status": "BLOCKED_MAIN_ACTUAL_ADMISSION_AND_RUNNER",
       "action": "Re-read latest main source and receiver receipts; continue independent source checks only until lawful exact admission/observer/driver published."
+    }
+  },
+  "r46_main_receipt_reconciliation": {
+    "source_head": "bab2ac020ff508d4e33accf9178a21a2d355d45b",
+    "report": "worklines/half_chaos/HC46_MAIN_RECEIPT_RECONCILIATION.json",
+    "main_record": "worklines/main/READ_RECEIPTS.json#/scoring_h03_preparation_20261025",
+    "main_r44_received": true,
+    "main_r44_adopted": "closure_metadata_only",
+    "main_r43_raw_received": false,
+    "main_r45_source_report_received": false,
+    "engine_runs": 0,
+    "original12": 0,
+    "original64": "UNRUN",
+    "featuresReady": false,
+    "next": {
+      "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+      "status": "BLOCKED_MAIN_TRUSTED_ADMISSION_OBSERVER_DRIVER",
+      "priority": "Main shared engineering must publish 3 precise tuples, exact passive checkpoints, original seed-bound driver, M01/M04/D01 closure and executable legal authorization; half-chaos can do only independent source/docs checks until then"
     }
   }
 }

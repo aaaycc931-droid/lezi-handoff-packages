@@ -1,0 +1,70 @@
+{
+  "schema": "lezi.hc.main_receiver_reconciliation.v1",
+  "revision": "HC-46-MAIN-RECEIPT-RECONCILIATION-20261025-r46",
+  "date_local": "2026-10-25",
+  "source_handoff_head": "bab2ac020ff508d4e33accf9178a21a2d355d45b",
+  "prior_half_r45_commit": "60a5de5f7c9d4a3718d9f985efed14a9961493fd",
+  "main_receipt_blob": "fc47c23470b025b8b5fbf55b3ba986a3f8f084b6",
+  "main_actual_read": {
+    "record": "worklines/main/READ_RECEIPTS.json#/scoring_h03_preparation_20261025",
+    "main_receipt_source_commit": "a0c617910821583f4dc52df4f357b715c5aca48e",
+    "actually_read": "worklines/half_chaos/HC44_SESSION_CLOSEOUT.json full",
+    "received_scope": "r44 chat closure + original UNRUN and next/blocker metadata",
+    "adopted_scope": "closure and source-metadata only",
+    "not_read_or_not_adopted": [
+      "r43 complete raw source evidence",
+      "r45 full source-gate report and code review",
+      "original natural pilots",
+      "actual 3-tuple execution authorization",
+      "full business or release acceptance"
+    ],
+    "meaning": "Prior r45 statement no r43/r44 main receipt is superseded for r44 closeout ONLY; r43 raw source and r45 exact report remain unadopted."
+  },
+  "concurrent_protection": {
+    "ahead_from_prior_r45_commit": 2,
+    "changed_workline_categories": [
+      "main/scoring",
+      "standard"
+    ],
+    "half_chaos_changed_since_r45": false,
+    "score_candidate_20261025": "H03 pilot source + static paired preparation only; no engine test/score release",
+    "engine_PR13": "open/draft/unmerged",
+    "engine_source_pin": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7"
+  },
+  "unchanged_gates": {
+    "featuresReady": false,
+    "original12_executed": 0,
+    "original64": "UNRUN",
+    "original210_observed": 0,
+    "three_tuple_admission": "BLOCKED",
+    "restricted_runner": "UNAVAILABLE",
+    "scoring": "FROZEN",
+    "NET": "PAUSED"
+  },
+  "new_gameplay_approvals": 0,
+  "source_run_during_recheck": false,
+  "engine_code_modifications": 0,
+  "other_lines_edited": false,
+  "verification": {
+    "grade": "V2 receiver-owned documented read and GitHub HEAD/PR metadata",
+    "scope": "remote main receipt object and path difference read; no engine runtime",
+    "independent_QA": false
+  },
+  "limitation_audit": {
+    "risk_level": "medium; inter-workline adoption claims",
+    "known": "Main actually read r44 full closeout and adopted only UNRUN/next metadata",
+    "unknown": "main adoption of r45 after current receipt; upcoming main implementation",
+    "alternative": "new main/scoring work may be mistaken for gameplay driver; source explicitly says it is static H03 preparation",
+    "failure_conditions": [
+      "claim r43 or r45 adopted because r44 was read",
+      "attempt original replay with current research gate",
+      "override newer scoring or standard work"
+    ],
+    "next_validation": "Check new actual main exact tuple/observer/driver branch evidence and source/authorization before replay"
+  },
+  "next": {
+    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "status": "BLOCKED_MAIN_TRUSTED_ADMISSION_OBSERVER_DRIVER",
+    "priority": "Main shared engineering must publish 3 precise tuples, exact passive checkpoints, original seed-bound driver, M01/M04/D01 closure and executable legal authorization; half-chaos can do only independent source/docs checks until then"
+  }
+}
