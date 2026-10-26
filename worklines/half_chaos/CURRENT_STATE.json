@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-49-ALL-REPLAYS-API-BINDING-20261026-r49",
+  "revision": "HC-50-210-EVIDENCE-PRIVACY-BOUNDARY-20261026-r50",
   "workline": "half_chaos",
   "date_local": "2026-10-26",
   "timezone": "Asia/Shanghai",
-  "status": "r49_all_12_natural_replays_110_source_requests_and_210_checkpoints_typed_bound_static_only",
+  "status": "r50_210_source_evidence_boundary_privacy_and_gap_audit_complete_runtime_unrun",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -2689,5 +2689,54 @@
       "blocked_main_separate": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS"
     },
     "main_engine_blocked_task": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS"
+  },
+  "r50_independent_210_evidence_audit": {
+    "source_head": "ae5f92104a8bf26e77dbb56d5ea637ca8015c19b",
+    "report": "worklines/half_chaos/HC50_ORIGINAL_210_EVIDENCE_PRIVACY_AUDIT.json",
+    "source_checkpoint_rows": 210,
+    "cross_checks": "11/11 GLOBAL +210/210 INDIVIDUAL SOURCE JOINS",
+    "boundary_count": {
+      "after_main": 100,
+      "after_normal_end": 100,
+      "skill_expected_accepted": 6,
+      "skill_expected_rejected": 4
+    },
+    "spec_checkpoint_references": 454,
+    "unique_bound_checkpoints": 210,
+    "unlinked_checkpoints": 0,
+    "abstract_only_spec": "PD-S32",
+    "known_missing_stimuli": 8,
+    "source_gaps": {
+      "OG01": 100,
+      "OG02": 100,
+      "OG03": 10,
+      "OG04": 28,
+      "OG05": 10,
+      "OG06": 210,
+      "OG07": 210
+    },
+    "public_sequences_pair_checked": [
+      "PD05",
+      "PD06"
+    ],
+    "observed_red_black_views": 0,
+    "original12_executed": 0,
+    "original64": "UNRUN",
+    "actual210_observed": 0,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "engine_runs": 0,
+    "new_game_rules": 0,
+    "main_blocked": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "next_independent": {
+      "id": "NEXT-HC-INDEPENDENT-PAIR-VIEW-AND-MISSING-STIMULUS-CONTRACT",
+      "status": "READY_SOURCE_DOCUMENT_ONLY",
+      "action": "逐项补原已公开PD05/PD06成对回放所需红黑原样视图/消息错误通道比较字段与许可差异合同，另将8项缺自然刺激分类为待主线或候选仅文档问题，不新增对局动作或修改原64验收。",
+      "authorization": "SOURCE_AND_DOCUMENT_ONLY",
+      "owner": "half_chaos",
+      "main_work_quota_required": false,
+      "requires_engine_run": false
+    }
   }
 }

@@ -2839,5 +2839,26 @@
     ],
     "other_receivers_untouched": true,
     "engine_runs": 0
+  },
+  "r50_actual_210_checkpoint_evidence_review": {
+    "source_head": "ae5f92104a8bf26e77dbb56d5ea637ca8015c19b",
+    "date_local": "2026-10-26",
+    "read_files": [
+      "HC49_ALL_REPLAYS_API_BINDING.json full declared 110 request bindings",
+      "REPLAY_ACTION_DATA.json all 210 observation checkpoints, expected requested main/skill, two source pairs",
+      "OBSERVATION_FIELD_MAPPING.json all 22 field groups, 7 gaps, 210 bindings and 110 request correspondences",
+      "ASSERTION_EVIDENCE_MATRIX.json all 64 specifications, original checkpoint reference index and UNRUN claims",
+      "PASSIVE_OBSERVATION_CONTRACT_PROPOSAL.json boundary contracts and all 210 checkpoint groups",
+      "RESIDUAL_EVIDENCE_GAP_CONTRACT_PROPOSAL.json 8 missing declared stimulus entries",
+      "HC47 original observation data source pin for O since r49 does not duplicate its blob identity"
+    ],
+    "actual_joins": 210,
+    "global_static_checks": "11/11",
+    "prior_evidence_adopted": "source-only field and privacy partition, no new rules",
+    "scope_not_read": "No other workline unpublished body, no actual client/channel/simulation and no PR13 runtime tests",
+    "status": "V2_SOURCE_ONLY",
+    "engine_runs": 0,
+    "receiver_note": "sender-owned r50 receipt, does not imply main has read/adopted",
+    "other_workline_receipts_written": false
   }
 }

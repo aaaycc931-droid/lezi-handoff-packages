@@ -1,12 +1,13 @@
 {
-  "revision": "HC-49-ALL-REPLAYS-API-BINDING-20261026-r49",
+  "revision": "HC-50-210-EVIDENCE-PRIVACY-BOUNDARY-20261026-r50",
   "next_independent_task": {
-    "id": "NEXT-HC-INDEPENDENT-210-BOUNDARY-AND-EVIDENCE-READINESS",
-    "status": "READY_DOCUMENT_ONLY",
-    "action": "在保留来源不变的情况下，按原210观察点对权威/公开红黑视图、技能拒绝不变量、时间边界、配对比较、证据无效/不完整和未涵盖刺激分类做来源缺口与交付边界核查。仅本线静态审查/文档，不加测试、不过原运行门禁。",
-    "authorization": "INDEPENDENT_SOURCE_AND_DOCUMENT_ONLY",
+    "id": "NEXT-HC-INDEPENDENT-PAIR-VIEW-AND-MISSING-STIMULUS-CONTRACT",
+    "status": "READY_SOURCE_DOCUMENT_ONLY",
+    "action": "逐项补原已公开PD05/PD06成对回放所需红黑原样视图/消息错误通道比较字段与许可差异合同，另将8项缺自然刺激分类为待主线或候选仅文档问题，不新增对局动作或修改原64验收。",
+    "authorization": "SOURCE_AND_DOCUMENT_ONLY",
     "owner": "half_chaos",
-    "blocked_main_separate": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS"
+    "main_work_quota_required": false,
+    "requires_engine_run": false
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1412,14 +1413,13 @@
   ],
   "last_verified_head_at_preparation": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
   "latest_completed_stage": {
-    "revision": "HC-49-ALL-REPLAYS-API-BINDING-20261026-r49",
-    "report": "worklines/half_chaos/HC49_ALL_REPLAYS_API_BINDING.json",
-    "main_requests": 100,
-    "skill_requests": 10,
-    "checkpoints": 210,
-    "static_checks": "257/257 V2",
-    "source_runs": 0,
-    "original64": "UNRUN"
+    "revision": "HC-50-210-EVIDENCE-PRIVACY-BOUNDARY-20261026-r50",
+    "report": "worklines/half_chaos/HC50_ORIGINAL_210_EVIDENCE_PRIVACY_AUDIT.json",
+    "joined_checkpoint_rows": 210,
+    "global_source_checks": "11/11",
+    "runtime": "UNRUN",
+    "checkpoint_authenticity": "source row only, not engine witness",
+    "privacy_raw_player_views": "UNOBSERVED"
   },
   "stale_index_repair": {
     "prior_revision": "HC-SESSION-CLOSEOUT-20261020-r41",
@@ -1430,20 +1430,19 @@
   },
   "blocked_main_task": {
     "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
-    "status": "WAITING_MAIN_WORK_QUOTA_AND_TRUSTED_CODE_DELIVERY",
-    "resume_condition": "Concrete main-owned trusted tuple admission, exact passive observer, original driver and future natural-run authorization; HC only rechecks after actual new source",
-    "not_required_for_independent_next": true
+    "status": "BLOCKED_MAIN_TRUSTED_ADMISSION_EXACT_PASSIVE_BOUNDARIES_DRIVER_AND_AUTHORIZATION",
+    "resume_condition": "Actual main published trusted original 3-tuple source/room/actor/RNG, exact MAIN/END/passive refusal boundaries, complete M01/M04/D01 source safety, restricted original driver and specific engine-run authorization."
   },
   "available_without_main_quota": [
     {
-      "id": "NEXT-HC-INDEPENDENT-210-BOUNDARY-AND-EVIDENCE-READINESS",
-      "category": "SOURCE_ONLY_OBSERVATION_EVIDENCE_GAP_AUDIT",
+      "id": "NEXT-HC-INDEPENDENT-PAIR-VIEW-AND-MISSING-STIMULUS-CONTRACT",
+      "category": "PAIR_PUBLIC_VS_SECRET_COMPARATOR_AND_EIGHT_MISSING_STIMULI",
       "depends_on_main_work": false,
       "requires_game_engine": false
     },
     {
-      "id": "NEXT-HC-INDEPENDENT-PAIR_PRIVACY_SCOPE_REVIEW",
-      "category": "SOURCE_ONLY_PUBLIC_PRIVATE_COMPARE",
+      "id": "NEXT-HC-INDEPENDENT-ORIGINAL_SPEC_SCOPE_LEDGER",
+      "category": "FULL_64_SOURCE_STIMULUS_AND_ASSERTION_COVERAGE_BOUNDARY",
       "depends_on_main_work": false,
       "requires_game_engine": false
     }
