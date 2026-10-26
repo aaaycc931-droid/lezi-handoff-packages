@@ -204,7 +204,13 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "next_action": "继续共享依赖第二阶段：原始受限回放/准入、H15现行培养与隐私、精确AS来源保留和随机证据；按实际来源分片实施，已发布PR14第一阶段不等于全线解锁。",
+  "next_action": {
+    "id": "MAIN-SHARED-RUNTIME-STAGE3",
+    "action": [
+      "Implement exact-tuple trusted half-chaos research runner; replay original source requests without changing world or action input.",
+      "Record per-request actual results/checkpoints/privacy evidence and stop on unexpected prefix failure; keep unproven acceptance obligations UNRUN."
+    ]
+  },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
     "gate": "L3",
@@ -220,12 +226,7 @@
   "publication_parent_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-  "current_phase": {
-    "id": "MAIN-SHARED-RUNTIME-20261027",
-    "date_local": "2026-10-27",
-    "status": "STAGE1_IMPLEMENTED_VERIFIED_PUBLISHED_DRAFT_STAGE2_ACTIVE",
-    "entry": "worklines/main/SHARED_RUNTIME_PROGRESS.json"
-  },
+  "current_phase": "MAIN_SHARED_RUNTIME_STAGE3_TRUSTED_ORIGINAL_REPLAY",
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -2119,7 +2120,7 @@
     "schema": "lezi.main_shared_runtime.progress.v1",
     "id": "MAIN-SHARED-RUNTIME-20261027",
     "date_local": "2026-10-27",
-    "status": "STAGE1_IMPLEMENTED_VERIFIED_PUBLISHED_DRAFT_STAGE2_ACTIVE",
+    "status": "STAGE2_IMPLEMENTED_VERIFIED_PUBLISHED_DRAFT_STAGE3_ACTIVE",
     "authorization": {
       "user_instruction": "主线要做很多工作了，现在三条支线继续正常推进都依赖于你继续进行的工作，我需要你本轮工作尽可能地多推进主线内容",
       "scope": "Continue shared technical dependencies under existing rules; no new gameplay candidate, mode release, merge or score adoption."
@@ -2181,6 +2182,8 @@
       "half_chaos": "current RETURN r50/r51 metadata; prior HC43/45/46 and original admission selected sections read before pause, not entire HC51",
       "standard": "full M04 symbolic-witness review and H21 erratum; current return metadata; guide/catalog not adopted"
     },
-    "publication_note": "Stage checkpoint; not completion of the user's broader main task. Subsequent stages will append actual evidence in ordinary commits."
+    "publication_note": "Stage checkpoint; not completion of the user's broader main task. Subsequent stages will append actual evidence in ordinary commits.",
+    "engine_stage2_commit": "b28535780a7c7427c0d715b46b0362d35a696d8f",
+    "related_checks": 689
   }
 }
