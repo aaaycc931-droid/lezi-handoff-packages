@@ -57,3 +57,9 @@
 **自检**：结构化合同已按三个分支、15个负例、原确认来源、真实字段与拟议字段区别作同一AI一致性检查；验证等级V2来源及V1构造，**无任何项目测试执行证据**。保留2026-10-24随机合同与2026-10-25静态预检原字节。无新增H02/H21/M04机制、无正式评分、无NET恢复、无跨工作线回执。
 
 **独立下一断点**：`NEXT-STD-NP-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES`，仅准备能使M04路径碾碎前后王线出现变化的最小**符号反例**及其守卫（区分假设摆盘和合法自然开局）；主线负责引擎修复和运行验证。该下一项本轮未开始。
+
+---
+
+## 2026-10-26重要更正｜撤回H21「祈求不占步」源码P0判断（后续补录，优先于上方旧结论）
+
+本报告此前称`src/hero-actions.ts:104-129`的`isMain`遗漏`invoke`，从而得出祈求`before_main/countsAsFormalTurn:false`。**复读同一引擎commit `3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7`，`src/hero-actions.ts:108-115`实际把`invoke`写在`isMain`列表中**；生成的是`opportunity:main/countsAsFormalTurn:true`。原“P0-H21-invoke-classified-before_main-formal-count-skipped”作为**错误的静态诊断已撤回**，不能再作为主线已证阻断。这里是源事实纠正而非程序变更，历史旧段仅供错误链追溯；B1—B5从未做引擎实测，仍UNRUN。AS首次发动H02来源过早消耗的另一个独立P0未撤回。后续以`worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md`及最新CURRENT_STATE / RETURN_TO_MAIN纠正记录为准。

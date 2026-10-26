@@ -763,7 +763,7 @@
   ],
   "phase_required_order": [
     "official adaptation qualification by main before any real ordinary hero+M04 match",
-    "main implementation review of H21 invoke countsAsFormalTurn and AS H02 charge retention",
+    "main verification of B1–B5 formal counting as UNRUN (old claimed static P0 corrected), and AS H02 charge retention implementation",
     "main RNG validation/instrumentation and authorized controlled test entry if approved",
     "actual full NP prefix replay from initial public 32 pieces including checks and turn counters",
     "fix/source evidence for atomic M04 path, endpoint response, return, public-private trace and final king safety",
@@ -802,5 +802,13 @@
     "research bypass qualifies ordinary mode",
     "this publication means another dialogue has read or adopted it",
     "new H02/H21/M04 gameplay rules approved"
-  ]
+  ],
+  "source_erratum_20261026": {
+    "applies_to": "previous preflight P0 H21 invoke misread",
+    "supersedes": "P0-H21-invoke-classified-before_main-formal-count-skipped",
+    "actual_pinned_code": "src/hero-actions.ts:108-115 includes invoke in isMain",
+    "status": "WITHDRAWN_NOT_AN_ENGINE_FAILURE",
+    "formal_tests": "UNRUN",
+    "report": "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md"
+  }
 }

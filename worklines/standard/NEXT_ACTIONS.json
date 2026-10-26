@@ -1,63 +1,52 @@
 {
   "first": {
-    "id": "NEXT-STD-NP-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES",
-    "subject": "M04路径碾碎改变王线的静态符号反例与合法前缀来源守卫",
-    "action": "只读构造最小的M04路径碾碎后前后王安全差异符号盘面，记录起点/路径/终点/双方将帅/是否王线阻挡、是否已被现有规则接受及能否从32棋开局合法到达；把符号反例与自然对局和实际引擎运行严格区分。完成文档与主线回传，不写代码、不跑引擎、不绕过xiangqi门禁。",
-    "status": "ready_not_started_requires_explicit_user_continuation",
+    "id": "NEXT-STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE",
+    "subject": "主线接收/工程改正及普通模式资格化证据回读",
+    "action": "核对最新主线真实回执/HEAD、引擎PR与实际差异、普通模式featuresReady资格化、H02 AS来源消耗修复、M04路径碾碎完整原子王安全与权威RNG接口。H21旧P0为撤回的诊断，不得再次列已证阻断；只检查实际B1—B5运行证据。若工程仍缺失，形成精准主线阻断/责任与证据表并把运行NP/AS/AP/ES继续标UNRUN，普通线不改共享源码、不绕过模式门禁。",
+    "status": "ready_not_started_requires_explicit_continuation",
     "implementation_authorized": false,
-    "report_dependency": "worklines/standard/reviews/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_REVIEW_20261025.md",
-    "main_dependency": "P0 H21 invoke and AS H02 charge fixes and mode qualification remain main-owned"
+    "dependency_report": "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md",
+    "main_owner": "main implementation, official mode qualification, authoritative RNG and formal engine QA"
   },
   "preserve": "当前对话已收束；普通31/本线直接共享13，本对话两项共同确认及原候选/原话/来源、ES限定复核、全部历史成果保留。收束不新增批准；下一来源顺序复核尚未开始，待用户明确继续后接续。评分冻结、NET暂停，全部旧未运行规格保持UNRUN。",
   "main_owned_pending": "Latest main1.62 metadata only: no active user candidate; H15/H06 graduation-source review complete with policy unresolved; no new H15 policy adopted here.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX-20261025",
-    "date_local": "2026-10-25",
-    "task": "NEXT-STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX",
-    "source_handoff_head": "bab2ac020ff508d4e33accf9178a21a2d355d45b",
+    "id": "STD-NP-M04-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES-20261026",
+    "task": "NEXT-STD-NP-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES",
+    "date_local": "2026-10-26",
+    "source_handoff_head": "9799365314aeac83963d0124b56f9b590bcb5dc3",
     "pinned_engine_sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-    "spec": "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
-    "review": "worklines/standard/reviews/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_REVIEW_20261025.md",
-    "branches": [
-      "AS",
-      "AP",
-      "ES"
-    ],
-    "negative_cases": 15,
-    "observed_field_categories": [
-      "existing_public",
-      "existing_authoritative_private",
-      "derived_oracle_not_single_field",
-      "proposed_not_implemented"
-    ],
-    "source_confirmations": [
-      "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
-      "worklines/standard/rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-      "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json"
-    ],
-    "findings": [
-      "AS hero-source retention differs from AP/ES spent later opportunity",
-      "H21 invoke main-action counting P0 unresolved",
-      "M04 path-crush post-atom king safety not proven",
-      "Natural authoritative RNG tape not available"
-    ],
-    "verification": "V2 source review + V1 guarded observations; self-consistency validation only",
-    "formal_tests": "UNRUN",
-    "game_engine_runs": 0,
-    "independent_QA": false,
-    "rule_delta": 0,
+    "spec": "worklines/standard/specs/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.json",
+    "review": "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md",
+    "witnesses": 4,
+    "negative_cases": 11,
+    "selfcheck": "4 of 4 independent symbolic coordinate arithmetic only",
+    "error_chain": {
+      "old_id": "P0-H21-invoke-classified-before_main-formal-count-skipped",
+      "status": "RETRACTED_source_read_error",
+      "verified": "src/hero-actions.ts includes invoke as main",
+      "engine_run_validation": "UNRUN",
+      "different_p0_as_charge": "still needs main"
+    },
+    "verification_level": "V2 scoped source read + V1 symbol self-check; engine UNRUN",
+    "np_reachability": "not_established",
+    "rules_delta": 0,
     "ordinary_confirmations": 31,
     "direct_shared_confirmations": 13,
-    "mode_gate": "xiangqi.featuresReady=false",
+    "game_code_changes": 0,
+    "engine_runs": 0,
+    "formal_tests": "UNRUN",
+    "independent_qa": false,
     "scoring": "frozen",
     "NET": "paused",
-    "shared_code_modified": false,
-    "main_receiver_actual_read": null,
-    "main_receiver_adoption": null
+    "mode_gate": "xiangqi.featuresReady=false",
+    "main_actual_received": null,
+    "main_actual_adopted": null,
+    "concurrent_work_preserved": true
   },
-  "status": "np_observation_matrix_complete_next_symbolic_witnesses_unstarted",
+  "status": "symbolic_royal_safety_complete_next_main_engine_readback_gate",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261019-r1",
     "status": "closed_current_conversation",

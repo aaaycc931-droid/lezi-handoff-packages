@@ -54,3 +54,9 @@ AS原确认 `rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATI
 **普通线本次已完成**：静态映射与接口差异报告，以上P0/P1被登记为需主线检查的**工程候选问题**；未擅改英雄/畸变规则或共享引擎。**未完成**：真实 NP 自然开局、H21祈求修正、AS实现修正、权威重放、正式AS/AP/ES/NP/RE规格、独立QA。以上统一 **UNRUN**；不写PASS、不替主线填写已收到或已采用回执。
 
 **独立下一断点**：`NEXT-STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX`；在不运行引擎、不改共享代码的条件下，把AS/AP/ES已批准guard映射为最小字段/负例观察矩阵。共享修复/正式测试依赖主线对本报告**实际读取并作技术分配**；本次GitHub发布≠主线接收。
+
+---
+
+## 2026-10-26重要更正｜撤回H21「祈求不占步」源码P0判断（后续补录，优先于上方旧结论）
+
+本报告此前称`src/hero-actions.ts:104-129`的`isMain`遗漏`invoke`，从而得出祈求`before_main/countsAsFormalTurn:false`。**复读同一引擎commit `3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7`，`src/hero-actions.ts:108-115`实际把`invoke`写在`isMain`列表中**；生成的是`opportunity:main/countsAsFormalTurn:true`。原“P0-H21-invoke-classified-before_main-formal-count-skipped”作为**错误的静态诊断已撤回**，不能再作为主线已证阻断。这里是源事实纠正而非程序变更，历史旧段仅供错误链追溯；B1—B5从未做引擎实测，仍UNRUN。AS首次发动H02来源过早消耗的另一个独立P0未撤回。后续以`worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md`及最新CURRENT_STATE / RETURN_TO_MAIN纠正记录为准。

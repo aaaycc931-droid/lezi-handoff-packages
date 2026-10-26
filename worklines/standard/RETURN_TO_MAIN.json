@@ -1672,5 +1672,39 @@
     "main_read_verified": null,
     "main_adopted_verified": null,
     "next": "NEXT-STD-NP-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES"
+  },
+  "m04_path_crush_royal_safety_symbolic_witnesses_20261026": {
+    "task": "STD-NP-M04-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES-20261026",
+    "source_handoff_head": "9799365314aeac83963d0124b56f9b590bcb5dc3",
+    "pinned_engine_sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "files": [
+      "worklines/standard/specs/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.json",
+      "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md"
+    ],
+    "deliverables": {
+      "self_check_witnesses": 4,
+      "negative_guard_cases": 11,
+      "fully_legal_NP_replay": false
+    },
+    "urgent_correction": {
+      "withdraw": "P0-H21-invoke-classified-before_main-formal-count-skipped",
+      "readback": "src/hero-actions.ts:108-115 includes invoke",
+      "effect": "not proven code defect; formal B1-B5 tests still UNRUN"
+    },
+    "outstanding_technical_dependencies": [
+      "AS H02 charge premature consumption on endpoint scale",
+      "M04 path crushing not simulated in SELF_CHECK, symbolically divergent",
+      "official xiangqi featuresReady=false",
+      "RNG authorized trace and invalid-index guards",
+      "independent real-engine NP/replay qualification"
+    ],
+    "requested_main_action": "Review and explicitly acknowledge source correction + symbolic examples, re-evaluate P0/P1 against actual current engine and execute only within approved code authority",
+    "scope": "source_only_docs_no_code_no_engine",
+    "main_received": null,
+    "main_adopted": null,
+    "scoring": "frozen",
+    "NET": "paused",
+    "rule_delta": 0,
+    "next": "NEXT-STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE"
   }
 }
