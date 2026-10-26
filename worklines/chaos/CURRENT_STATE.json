@@ -9,7 +9,7 @@
   "received_dispatch_id": "MAIN-THREE-MODE-20261024",
   "received_task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "ch06_h11_A_predeath_seed476_static_ready_runtime_unrun",
+  "state": "ch07_independent_static_and_privacy_handoff_complete_wait_main_runtime",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
@@ -21,10 +21,11 @@
     "CH-03 source-pinned move prefix and H11xH15 privacy/clock checkpoint contract published (not executed)",
     "CH-04 three seed19 H06xH15 event route candidates assembled; 12-step death route pure board topology checked; runtime UNRUN; triple hero H06+H11+H15 route flagged impossible in two-hero fixture",
     "CH-05: source-equivalent seed92 30 identity/tape, red H15 cannon covered-08 recruitment seed1, legal-geometry red1-black1-red2 rook capture before H11-B constructed; H11-A still unproven and all real execution UNRUN",
-    "CH-06 seed476: own-public-side hidden trainee cannon covered-25 can be captured by red covered-15 rook on red1; black1 pawn and subsequent H11-A or A skip -> B static candidates; engine/clock/privacy tests UNRUN"
+    "CH-06 seed476: own-public-side hidden trainee cannon covered-25 can be captured by red covered-15 rook on red1; black1 pawn and subsequent H11-A or A skip -> B static candidates; engine/clock/privacy tests UNRUN",
+    "CH-07: two pairwise independent legal recruitment-seed public-identical/private-contrast fixtures; 18 full-GitHub-fixture pure reference checks passed; 13 runtime negative-control cases ready; main-only runtime/projection fixes pending"
   ],
-  "next_action": "CH-07-A_B-H15-PRIVATE_PUBLIC-OBSERVATION_AND_NEGATIVE_CONTROLS; MAIN_RUNTIME_CH06_A_AND_CH05_B",
-  "next_action_status": "A_AND_B_STATIC_FIXTURES_READY_MAIN_SHARED_RUNTIME_PENDING",
+  "next_action": "WAIT_MAIN_ORIGINAL_JIEQI_RUNTIME_RUN_CH06_A_CH05_B_AND_PRIVACY_PROJECTION; REOPEN_CHAOS_ONLY_ON_MODE_SPECIFIC_RESULT",
+  "next_action_status": "MAIN_RUNTIME_DEPENDENCY_ONLY__CHAOS_INDEPENDENT_SCOPE_CURRENTLY_CLOSED",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -39,7 +40,7 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "CH-06-H11-A-EARLIEST-SAME_SIDE_DARK_TRAINEE_DEATH_FIXTURE_STATIC_ONLY",
+  "last_completed_task": "CH-07-A_B_H15_PRIVATE_PUBLIC_NEGATIVE_ORACLE_AND_MAIN_HANDOFF",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
@@ -50,7 +51,10 @@
     "CH05_H11_H15_EARLY_DEATH_WITNESS.json",
     "CH05_EARLY_DEATH_VALIDATION.md",
     "CH06_H11_A_PREDEATH_WITNESS.json",
-    "CH06_H11_A_PREDEATH_VALIDATION.md"
+    "CH06_H11_A_PREDEATH_VALIDATION.md",
+    "CH07_STATIC_ORACLE.mjs",
+    "CH07_PRIVACY_NEGATIVE_MATRIX.json",
+    "CH07_CLOSEOUT.md"
   ],
   "validation": {
     "static_seed_pool": "checked",
@@ -74,7 +78,14 @@
     "ch05_authoritative_legal_moves": 0,
     "ch06_seed476_algorithm": "CROSS_CHECKED_CH02_SEED19_AND_CH05_SEED92",
     "ch06_same_side_dark_target": "SOURCE_ELIGIBLE_PURE_STATIC_GEOMETRY",
-    "ch06_engine_runs": 0
+    "ch06_engine_runs": 0,
+    "ch07_reference_tests": 18,
+    "ch07_reference_passes": 18,
+    "ch07_reference_scope": "PURE_REFERENCE_JS_NOT_ENGINE",
+    "ch07_runtime_matrix_cases": 13,
+    "ch07_runtime_matrix_run": 0,
+    "ch07_authoritative_legal_runs": 0,
+    "ch07_true_projection_checks": 0
   },
   "session_closure": {
     "date_local": "2026-10-24",
@@ -176,5 +187,28 @@
     "CH05_B": "seed92 later post-A-death B candidate preserved",
     "actual_engine_runs": 0,
     "main_receipt": "NOT_CLAIMED"
+  },
+  "ch07": {
+    "source_base_head": "f453db4bd37936ee611669baf8711b4a49668e74",
+    "fixtures": [
+      "CH06 seed476 A seed0 failed vs seed1 active",
+      "CH05 seed92 B seed1 failed vs seed0 active"
+    ],
+    "oracle": "CH07_STATIC_ORACLE.mjs",
+    "oracle_result": "18/18 PURE_STATIC_REFERENCE",
+    "matrix": "CH07_PRIVACY_NEGATIVE_MATRIX.json",
+    "negative_cases": 13,
+    "external_engine_runs": 0,
+    "main_receipt": "NOT_CLAIMED",
+    "code_shared_modified": false,
+    "independent_workline_next": "WAIT_MAIN_RUNTIME",
+    "resumption_guard": "on concrete main runtime result, version/source changes or new mode-specific failure only"
+  },
+  "phase_closeout": {
+    "date_local": "2026-10-26",
+    "scope": "CH07 independent task only, not user-requested chat/session closure",
+    "conclusion": "NO_ADDITIONAL_READY_INDEPENDENT_CH_TASK_THIS_DISPATCH",
+    "external_dependency": "main needs to actually run/adapt engine and projections",
+    "protected_other_lines": true
   }
 }

@@ -1,0 +1,382 @@
+{
+  "schema": "lezi.chaos.ch07.privacy_failure_negative_matrix.v1",
+  "date_local": "2026-10-26",
+  "workline": "chaos",
+  "mode_id": "jieqi",
+  "source_head": "f453db4bd37936ee611669baf8711b4a49668e74",
+  "source_engine": "aaaycc931-droid/jieqi-engine@3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "fixture_paths": [
+    "worklines/chaos/CH05_H11_H15_EARLY_DEATH_WITNESS.json",
+    "worklines/chaos/CH06_H11_A_PREDEATH_WITNESS.json"
+  ],
+  "fixtures": [
+    {
+      "id": "A",
+      "seed": 476,
+      "opening_recruitment_seeds": {
+        "failed": 0,
+        "live_control": 1
+      },
+      "secret_trainee_ids": {
+        "failed": "covered-25",
+        "live_control": "covered-00"
+      },
+      "visible_capture": {
+        "actor": "red",
+        "source": "covered-15",
+        "from": [
+          0,
+          9
+        ],
+        "to": [
+          0,
+          6
+        ],
+        "destroyed": "covered-25",
+        "captured_true": {
+          "color": "red",
+          "type": "cannon"
+        }
+      },
+      "h11_window": "A after black1",
+      "order": "successful opening H15 -> red1 normal begin -> red1 capture -> black1 main -> A"
+    },
+    {
+      "id": "B",
+      "seed": 92,
+      "opening_recruitment_seeds": {
+        "failed": 1,
+        "live_control": 0
+      },
+      "secret_trainee_ids": {
+        "failed": "covered-08",
+        "live_control": "covered-13"
+      },
+      "visible_capture": {
+        "actor": "red",
+        "source": "covered-23",
+        "from": [
+          1,
+          4
+        ],
+        "to": [
+          1,
+          2
+        ],
+        "destroyed": "covered-08",
+        "captured_true": {
+          "color": "red",
+          "type": "cannon"
+        }
+      },
+      "h11_window": "B pre black2 begin",
+      "order": "successful opening H15 -> red1 -> black1 -> A legal skip -> red2 normal begin -> red2 capture -> B"
+    }
+  ],
+  "authoritative_semantics": {
+    "public_captured_truth": "PR13 settlement.js#destroyPiece records capture with real identity in public state.captured for these non-mutation fixtures; do not blanket-remove normal reveal",
+    "published_training": "after valid start selected_type=cannon and chance_used=true; shared success event preserved",
+    "secret_training": "original exact bound ID, effective progress, failed/living status, recruit seed must not be shown by training UI/event/repetition metadata",
+    "status_after_actual_trainee_death": "failed and chance remains used, even if H11 rebuilds original piece",
+    "normal_only_progress": "actual eligible red normal begin; no tick on H11 action/skip/duplicate",
+    "same_public_two_secret_worlds": "identical opening seed/hero setup/type/public moves; only legally supplied separate recruitment RNG seed differs; compare training-derived public metadata and ordinary events at equal pre-shuffle checkpoint",
+    "post_shuffle_comparison_boundary": "rebind can legitimately consume RNG/alter future board; do not require all subsequent public board states identical; compare authorized training disclosure only",
+    "no_start_guard": "unused stays unused if no successful start; current rule cannot be reinterpreted as new start window"
+  },
+  "cases": [
+    {
+      "id": "PR01_A_SAME_PUBLIC_DIFFERENT_SECRET",
+      "fixture": "A",
+      "checkpoint": "after real red1 capture before black1",
+      "expected": [
+        "failure under recruit0, active under recruit1",
+        "ordinary captured red cannon and red rook appear in both public rooms",
+        "public H15 only cannon/used/shared start; no status distinction"
+      ],
+      "forbidden": [
+        "binding/progress/failed tooltip or event"
+      ],
+      "priority": "P0",
+      "requires": [
+        "authoritative legal prefix",
+        "main corrected H15 lifecycle",
+        "both red/black projection adapters"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR02_B_SAME_PUBLIC_DIFFERENT_SECRET",
+      "fixture": "B",
+      "checkpoint": "after real red2 capture, before B",
+      "expected": [
+        "failure under recruit1, active under recruit0",
+        "same normal captured red cannon event and board after matching actions",
+        "no derived live/failed difference in training public metadata"
+      ],
+      "forbidden": [
+        "trainee ID/progress/failure/hidden recruitment seed"
+      ],
+      "priority": "P0",
+      "requires": [
+        "authoritative legal prefix",
+        "main corrected H15 lifecycle",
+        "both red/black projection adapters"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR03_A_ON_SHUFFLE_FAILED_PERSISTS",
+      "fixture": "A",
+      "checkpoint": "A activation atom finished",
+      "expected": [
+        "failed lineage remains failed, unique training use remains consumed",
+        "board may revive original slot, not a second training",
+        "no hidden failure display"
+      ],
+      "forbidden": [
+        "random rebind to new cannon",
+        "training restarted or fee refunded",
+        "automatic training tick from shuffle"
+      ],
+      "priority": "P0",
+      "requires": [
+        "PR01 A real death",
+        "H11 A clock/atom implemented",
+        "main H15 once-only failure repair"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR04_B_ON_SHUFFLE_FAILED_PERSISTS",
+      "fixture": "B",
+      "checkpoint": "B activation atom finished",
+      "expected": [
+        "failed H15 stays failed and used",
+        "no active binding/recruitment/tick"
+      ],
+      "forbidden": [
+        "random recruit after revival",
+        "status leak"
+      ],
+      "priority": "P0",
+      "requires": [
+        "PR02 B real death",
+        "H11 B admission",
+        "main H15 repair"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR05_A_SKIP_THEN_B_FAILED_PERSISTS",
+      "fixture": "A",
+      "checkpoint": "A skipped -> actual red2 normal begin -> B activation",
+      "expected": [
+        "failed state does not tick during A skip/red2 begin/B itself",
+        "B remains legally available after skip"
+      ],
+      "forbidden": [
+        "duplicate training tick",
+        "A skip consumes B",
+        "B refunds start"
+      ],
+      "priority": "P0",
+      "requires": [
+        "PR01 A real death",
+        "H11 A timing and B scheduling"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR06_A_SOURCE_CLOCK_AT_DEADLINE",
+      "fixture": "A",
+      "checkpoint": "black1 t10000-70000; black1 action accepted at t30000",
+      "expected": [
+        "A retains deadline 70000 and 40000 ms remaining",
+        "A before deadline accepted, at/after deadline rejected or auto-declined without black1 timeout"
+      ],
+      "forbidden": [
+        "new A 60000ms timer",
+        "reset by failure/duplicate",
+        "B lost on A auto-skip"
+      ],
+      "priority": "P0",
+      "requires": [
+        "main shared H11 clock implementation"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR07_A_NOSTART_NONCONSUMPTION",
+      "fixture": "A",
+      "checkpoint": "H15 not started, H11 A activate",
+      "expected": [
+        "no binding/progress",
+        "training opportunity unused unless original legal start later succeeds"
+      ],
+      "forbidden": [
+        "H11 automatically starts H15",
+        "public success event invented"
+      ],
+      "priority": "P1",
+      "requires": [
+        "legal non-start scenario"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR08_ACTIVE_REBIND_DISTINCT",
+      "fixture": "A",
+      "checkpoint": "recruit1 live control, A shuffle",
+      "expected": [
+        "if eligible original true red cannons remain, same-type source-authorized secret rebind, preserve progress",
+        "no failed-state guard applied to live branch",
+        "no public bound ID"
+      ],
+      "forbidden": [
+        "accidental fail from captured unbound cannon",
+        "non-source rebind based on public control"
+      ],
+      "priority": "P1",
+      "requires": [
+        "main internal atomic observation checkpoint before next normal begin"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR09_NO_FAKE_LEAKED_FIELDS",
+      "fixture": "both",
+      "checkpoint": "red / black / spectator / websocket / event / UI / repeat projection",
+      "expected": [
+        "normal captured identity is allowed",
+        "public H15 shows selected type, used chance, prior shared success",
+        "authorized graduation effects may become visible"
+      ],
+      "forbidden": [
+        "training pieceId, actual progress, real-time failed/live, arbitrary extra tooltip",
+        "secret RNG seed or mapping"
+      ],
+      "priority": "P0",
+      "requires": [
+        "real projection and clients",
+        "same-public-paired-worlds"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR10_DUPLICATE_ACTION_IDEMPOTENCE",
+      "fixture": "both",
+      "checkpoint": "repeat committed red capture / A skip / A activation / B activation",
+      "expected": [
+        "no duplicated death, payment, progress, shuffle, timestamp change"
+      ],
+      "forbidden": [
+        "new recruitment",
+        "second time increment",
+        "private status race"
+      ],
+      "priority": "P1",
+      "requires": [
+        "room duplicate action entry and revision"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR11_A_B_BRANCH_EXCLUSIVE",
+      "fixture": "A",
+      "checkpoint": "activate A vs skip A -> B",
+      "expected": [
+        "branch A activation excludes future B",
+        "A skip preserves one valid B only"
+      ],
+      "forbidden": [
+        "simultaneous A+B valid",
+        "B extra main action"
+      ],
+      "priority": "P1",
+      "requires": [
+        "H11 actual windows"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR12_ORDINARY_REVEAL_NOT_LEAK",
+      "fixture": "both",
+      "checkpoint": "ordinary capture of covered original red cannon",
+      "expected": [
+        "captured piece ID and true color/type may be public under fixture mutation=null",
+        "cannot infer hidden H15-binding as direct UI/server field"
+      ],
+      "forbidden": [
+        "blanket ban on normal captured identity",
+        "training binding reveal caused only by hero status"
+      ],
+      "priority": "P0",
+      "requires": [
+        "room state.captured and lastMove and events"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    },
+    {
+      "id": "PR13_OLD_DRAFT_EXPECTED_NONCOMPLIANCE",
+      "fixture": "both",
+      "checkpoint": "PR13 pinned hero-progress.js at death settlement",
+      "expected": [
+        "source static: currently selectTraining called on pregraduate trainee death",
+        "main must patch/source-pin upgraded build then real test"
+      ],
+      "forbidden": [
+        "claim original PR13 already complies",
+        "count old behavior as verified rule"
+      ],
+      "priority": "P0",
+      "requires": [
+        "main shared implementation"
+      ],
+      "result": "UNRUN_MAIN_RUNTIME"
+    }
+  ],
+  "source_diff": [
+    {
+      "path": "hero-progress.js#settleTrainingDeaths",
+      "effect": "if trainee absent it calls selectTraining (old reroll)",
+      "severity": "BLOCKS_FAITHFUL_CURRENT_RULE_RUNTIME"
+    },
+    {
+      "path": "hero-shuffle.js#openShuffleA",
+      "effect": "deletes turnStartedAt, turnDeadlineAt, formalClock",
+      "severity": "BLOCKS_A_CLOCK_ACCEPTANCE"
+    },
+    {
+      "path": "hero-shuffle.js#applyShuffleAction",
+      "effect": "board rebuilt, red advanced within same call, secret rebind S4 seam not exposed",
+      "severity": "BLOCKS_ATOMIC_REBIND_OBSERVATION"
+    },
+    {
+      "path": "room.js#serializePublicRoom",
+      "effect": "JSON.stringify(players+state) omits secret; insufficient alone to attest websocket/side/player client metadata",
+      "severity": "FULL_PROJECTION_AUDIT_UNRUN"
+    }
+  ],
+  "verification": {
+    "completed_derived_reference_oracle_checks": 18,
+    "reference_oracle_result": "PASS_STATIC_REFERENCE",
+    "full_fixture_source_consistency": "CHECKED",
+    "repo_node_oracle_path": "worklines/chaos/CH07_STATIC_ORACLE.mjs",
+    "tested_local_code_with_schema_compatible_minimal_fixture": "NODE_SYNTAX_AND_18_CHECKS_PASSED",
+    "full_gh_fixture_reference_checks": "18_CHECKS_PASSED_IN_ISOLATED_JS",
+    "authoritative_engine_runs": 0,
+    "legal_moves_accepted": 0,
+    "actual_room_projection_checks": 0,
+    "formal_privacy_acceptances": 0,
+    "natural_games": 0,
+    "matrix_runtime_cases_total": 13,
+    "matrix_runtime_cases_run": 0
+  },
+  "independent_scope_closeout": {
+    "independent_preparatory_task_complete": true,
+    "unresolved_prerequisites_owned_by": "main",
+    "pause_reason": "current workline has sufficient reproducible early A/B fixtures and negative controls; next useful task is real main runtime with source-compatible repair",
+    "automatic_main_adoption": false,
+    "reopen_chaos_if": "main reports concrete mode-specific failure, requests new legal fixture, or supplies new independently testable runtime seam"
+  }
+}

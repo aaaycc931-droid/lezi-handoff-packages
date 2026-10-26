@@ -5,13 +5,14 @@
   "to": "main",
   "date_local": "2026-10-26",
   "dispatch_id": "MAIN-THREE-MODE-20261024",
-  "task_id": "CH-06-CH-T02-H11-A-AND-B-EARLY_DEATH_STATIC_WITNESSES",
-  "source_commit": "b00d119381b7a45db8a309b8c9de2eaec5a1e255",
-  "status": "CH06_A_STATIC_DEATH_SEED476_READY_AND_CH05_B_STATIC_READY_RUNTIME_UNRUN",
+  "task_id": "CH-07-ORIGINAL_JIEQI-H11_H15-NEGATIVE_ORACLE_AND_CLOSEOUT",
+  "source_commit": "f453db4bd37936ee611669baf8711b4a49668e74",
+  "status": "CH07_PRIVACY_NEGATIVE_MATRIX_AND_PURE_ORACLE_READY_MAIN_ACTUAL_RUN_PENDING",
   "entry": "worklines/chaos/START_HERE.txt",
   "changed_paths": [
-    "worklines/chaos/CH06_H11_A_PREDEATH_WITNESS.json",
-    "worklines/chaos/CH06_H11_A_PREDEATH_VALIDATION.md",
+    "worklines/chaos/CH07_STATIC_ORACLE.mjs",
+    "worklines/chaos/CH07_PRIVACY_NEGATIVE_MATRIX.json",
+    "worklines/chaos/CH07_CLOSEOUT.md",
     "worklines/chaos/START_HERE.txt",
     "worklines/chaos/CURRENT_STATE.json",
     "worklines/chaos/READ_RECEIPTS.json",
@@ -51,12 +52,15 @@
     "ch05_A": "NO_POSITIVE_WITNESS_YET",
     "ch06_A_seed476": "STATIC_SOURCE_MATCHED",
     "CH_T02_A": "SOURCE_LEVEL_CANDIDATE",
-    "CH_T02_B": "SOURCE_LEVEL_CANDIDATE"
+    "CH_T02_B": "SOURCE_LEVEL_CANDIDATE",
+    "ch07_reference_oracle": "18/18_PURE_REFERENCE_CHECKS_ONLY",
+    "ch07_privacy_matrix_cases": 13,
+    "ch07_actual_view_checks": 0
   },
   "next": {
-    "id": "MAIN-CH06-A-AND-CH05-B-ORIGINAL_JIEQI_REAL_ACTION_ACCEPTANCE_AND_H15_STICKY_FAILURE",
-    "status": "MAIN_NOT_YET_READ_OR_RUN",
-    "scope": "Main must run real seed476 original jieqi R1 self-public dark trainee capture, B1 then H11-A; separate A skip/red2/B and CH05 seed92 delayed B, check death no reroll, A-clock, private failure/public nonleak."
+    "id": "MAIN-AUTHORITATIVE-CH06_A-CH05_B_NEGATIVE_ORACLE_REAL_PROJECTION",
+    "status": "MAIN_MUST_REALLY_READ_AND_RUN",
+    "scope": "Run source-compatible red H15/black H11 seed476 A death and live-control two seeds, seed92 B death and live-control two seeds, compare ordinary public capture and secret status, fix reroll/time and inspect every public/client channel. Chaos independent workline waiting for concrete feedback."
   },
   "protected": {
     "gameplay_delta": 0,
@@ -67,7 +71,7 @@
     "old_work_preserved": true
   },
   "receiver_adoption": "not asserted for main",
-  "self_commit": "resolve Git history after publication",
+  "self_commit": "resolve from Git history after publishing",
   "concrete_witness": {
     "opening_seed": 19,
     "h11_seed": 12,
@@ -189,5 +193,33 @@
     "authority": "STATIC_ONLY",
     "engine_runs": 0,
     "main_receiver_receipt": "NOT_CLAIMED"
+  },
+  "ch07": {
+    "artifacts": [
+      "worklines/chaos/CH07_STATIC_ORACLE.mjs",
+      "worklines/chaos/CH07_PRIVACY_NEGATIVE_MATRIX.json",
+      "worklines/chaos/CH07_CLOSEOUT.md"
+    ],
+    "paired_worlds": [
+      {
+        "id": "A",
+        "opening_seed": 476,
+        "failed_recruit_seed": 0,
+        "alive_control_seed": 1
+      },
+      {
+        "id": "B",
+        "opening_seed": 92,
+        "failed_recruit_seed": 1,
+        "alive_control_seed": 0
+      }
+    ],
+    "static_reference_checks": 18,
+    "static_checks_pass": 18,
+    "runtime_cases": 13,
+    "runtime_run": 0,
+    "public_projection_tests_run": 0,
+    "main_receiver_receipt": "NOT_CLAIMED",
+    "independent_scope": "WAIT_MAIN_RUNTIME"
   }
 }
