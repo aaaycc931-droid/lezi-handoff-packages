@@ -1,7 +1,7 @@
 {
   "schema": "lezi.read_receipts.v1",
   "workline": "chaos",
-  "date_local": "2026-10-25",
+  "date_local": "2026-10-26",
   "actual_receiver": "this chaos-workline dialogue",
   "origin_workline": "main",
   "source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
@@ -150,5 +150,38 @@
     "main_adoption": "UNKNOWN",
     "no_original_rules_changed": true,
     "engine_runs": 0
+  },
+  "current_ch05_session": {
+    "read_head": "139ddc155ecf45d79857862a1df0f9f79d67e754",
+    "complete_read": [
+      "worklines/chaos/START_HERE.txt",
+      "worklines/chaos/CURRENT_STATE.json",
+      "worklines/chaos/RETURN_TO_MAIN.json",
+      "worklines/chaos/READ_RECEIPTS.json",
+      "worklines/chaos/PROJECT_WORK_AGREEMENT.md",
+      "worklines/chaos/CH02_JIEQI_WITNESSES.json",
+      "worklines/chaos/CH04_H06_H15_ROUTES.md",
+      "docs/WORKFLOW.md",
+      "collaboration/CURRENT.json",
+      "worklines/main/MODE_DISPATCH.json"
+    ],
+    "source_windows": [
+      "worklines/standard/rules/shared/02_CURRENT_HEROES.md H11 section",
+      "jieqi-engine@3f98bc9 slots.js initial covered slots",
+      "jieqi-engine@3f98bc9 setup.js pool/Fisher-Yates",
+      "jieqi-engine@3f98bc9 hero-progress.js training selection+old death reroll",
+      "jieqi-engine@3f98bc9 rules.js movementGeometryLegal+targetEligible",
+      "jieqi-engine@3f98bc9 hero-shuffle.js A/B and shuffle action",
+      "jieqi-engine@3f98bc9 game.js ordinary move/capture and settlement.js death settlement"
+    ],
+    "adopted": "CH05 original jieqi H11-B preblack2 static death seed92 witness only, no runtime legality or scoring",
+    "not_adopted": [
+      "H11-A impossibility claim",
+      "shared H11/H15 implementations",
+      "any real full-game acceptance",
+      "main dialogue read or adoption"
+    ],
+    "engine_calls": 0,
+    "external_main_receipt": "NOT_CLAIMED"
   }
 }

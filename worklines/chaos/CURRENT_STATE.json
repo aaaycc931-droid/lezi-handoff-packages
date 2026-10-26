@@ -2,14 +2,14 @@
   "schema": "lezi.workline_state.v1",
   "workline": "chaos",
   "mode_id": "jieqi",
-  "date_local": "2026-10-25",
+  "date_local": "2026-10-26",
   "entry": "START_HERE.txt",
   "task": "TASK_FROM_MAIN.json",
   "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
   "received_dispatch_id": "MAIN-THREE-MODE-20261024",
   "received_task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "ch04_h06_h15_static_source_routes_ready_runtime_unrun",
+  "state": "ch05_h11_B_predeath_seed92_static_witness_ready_engine_unrun",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
@@ -19,10 +19,11 @@
     "SOURCE_REVIEW.md and CH-02 bounded next-test matrix recorded",
     "receiver-owned receipt and return prepared",
     "CH-03 source-pinned move prefix and H11xH15 privacy/clock checkpoint contract published (not executed)",
-    "CH-04 three seed19 H06xH15 event route candidates assembled; 12-step death route pure board topology checked; runtime UNRUN; triple hero H06+H11+H15 route flagged impossible in two-hero fixture"
+    "CH-04 three seed19 H06xH15 event route candidates assembled; 12-step death route pure board topology checked; runtime UNRUN; triple hero H06+H11+H15 route flagged impossible in two-hero fixture",
+    "CH-05: source-equivalent seed92 30 identity/tape, red H15 cannon covered-08 recruitment seed1, legal-geometry red1-black1-red2 rook capture before H11-B constructed; H11-A still unproven and all real execution UNRUN"
   ],
-  "next_action": "CH-05-CH-T02-H11-A-B-EARLY-DEATH-REACHABILITY-AUDIT; MAIN-RUNTIME-CH04-H06-H15",
-  "next_action_status": "INDEPENDENT_CH_T02_EARLY_REACHABILITY_OPEN_MAIN_RUNTIME_DEPENDENCY_PENDING",
+  "next_action": "CH-06-CH-T02-H11-A-EARLIEST-DEATH-BOUNDED-REACHABILITY-AND-MAIN-CH05-B-RUNTIME-HANDOFF",
+  "next_action_status": "H11_B_STATIC_INPUT_READY_MAIN_RUNTIME_PENDING__H11_A_POSITIVE_UNRESOLVED",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -37,14 +38,16 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "CH-04-H06-H15-THREE-STATIC-LAWFUL-ROUTE-CANDIDATES (static source-level only)",
+  "last_completed_task": "CH-05-CH-T02-H11-B-BEFORE-BLACK2-TRAINEE-DEATH-SEEDED_STATIC_WITNESS",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
     "CH03_PREFIX_OBSERVATION_CONTRACT.json",
     "CH03_OBSERVATION.md",
     "CH04_H06_H15_ROUTES.json",
-    "CH04_H06_H15_ROUTES.md"
+    "CH04_H06_H15_ROUTES.md",
+    "CH05_H11_H15_EARLY_DEATH_WITNESS.json",
+    "CH05_EARLY_DEATH_VALIDATION.md"
   ],
   "validation": {
     "static_seed_pool": "checked",
@@ -60,8 +63,12 @@
     "ch04_candidate_actual_engine_calls": 0,
     "ch04_authoritative_legal_histories": "UNRUN",
     "ch02_identity_source_used": true,
-    "CH_T02": "LAWFUL_HISTORY_MISSING",
-    "CH_T06": "THREE_SOURCE_LEVEL_STATIC_CANDIDATES_RUNTIME_UNRUN"
+    "CH_T02": "H11_B_STATIC_DEATH_PREFIX_READY_ENGINE_UNRUN__H11_A_NO_POSITIVE",
+    "CH_T06": "THREE_SOURCE_LEVEL_STATIC_CANDIDATES_RUNTIME_UNRUN",
+    "ch05_seed92_rng": "CHECKED_CH02_SEED19_BASELINE_EQUAL",
+    "ch05_static_three_moves": "CHECKED_SOURCE_GEOMETRY",
+    "ch05_engine_calls": 0,
+    "ch05_authoritative_legal_moves": 0
   },
   "session_closure": {
     "date_local": "2026-10-24",
@@ -128,5 +135,26 @@
     "important_feasibility": "H06,H15,H11 cannot all be in one standard two-hero match",
     "main_receipt": "NOT_CLAIMED",
     "next": "CH-T02 actual H11 A/B before-black2 death reachability separate"
+  },
+  "ch05": {
+    "opening_seed": 92,
+    "h11_shuffle_seed": 12,
+    "h15_recruit_seed": 1,
+    "red_trainee": "covered-08 true red cannon publicly black-controlled",
+    "captured_by": "covered-23 true red rook, red2 (1,4)->(1,2)",
+    "first_three_formal_actions": [
+      "R1 covered-23 (1,7)->(1,4)",
+      "B1 covered-10 (0,3)->(0,4)",
+      "R2 covered-23 (1,4)->(1,2) capture covered-08"
+    ],
+    "scope": "B preblack2 static candidate; NOT A positive",
+    "main_receiver_adoption": "UNKNOWN",
+    "original_engine_ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "engine_runs": 0,
+    "formal_passes": 0,
+    "remaining": [
+      "H11-A bounded source reachability",
+      "main authoritative B prefix and clock/failed state/projection"
+    ]
   }
 }

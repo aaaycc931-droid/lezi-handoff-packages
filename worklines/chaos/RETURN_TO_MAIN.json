@@ -3,19 +3,19 @@
   "workline": "chaos",
   "from": "chaos",
   "to": "main",
-  "date_local": "2026-10-25",
+  "date_local": "2026-10-26",
   "dispatch_id": "MAIN-THREE-MODE-20261024",
-  "task_id": "CH-04-H06-H15-STATIC-LEGAL-HISTORY-CANDIDATES",
-  "source_commit": "84dc5b072c93aec168183b27d76cf24290a7376d",
-  "status": "CH04_H06_H15_THREE_SOURCE_LEVEL_PATHS_READY_STATIC_ONLY_RUNTIME_UNRUN",
+  "task_id": "CH-05-CH-T02-H11-B-EARLY-TRAINEE-DEATH-REACHABILITY",
+  "source_commit": "139ddc155ecf45d79857862a1df0f9f79d67e754",
+  "status": "CH05_B_SEEDED_DEATH_STATIC_WITNESS_READY__H11_A_UNKNOWN__RUNTIME_UNRUN",
   "entry": "worklines/chaos/START_HERE.txt",
   "changed_paths": [
-    "worklines/chaos/CH04_H06_H15_ROUTES.json",
-    "worklines/chaos/CH04_H06_H15_ROUTES.md",
-    "worklines/chaos/START_HERE.txt",
+    "worklines/chaos/CH05_H11_H15_EARLY_DEATH_WITNESS.json",
+    "worklines/chaos/CH05_EARLY_DEATH_VALIDATION.md",
     "worklines/chaos/CURRENT_STATE.json",
     "worklines/chaos/READ_RECEIPTS.json",
-    "worklines/chaos/RETURN_TO_MAIN.json"
+    "worklines/chaos/RETURN_TO_MAIN.json",
+    "worklines/chaos/START_HERE.txt"
   ],
   "facts_confirmed": [
     "Original jieqi standard current rule uses 30 globally shuffled nonroyal identities, reveal may change control; not half_chaos",
@@ -46,12 +46,14 @@
     "accepted_prefixes": 0,
     "formal_test_passes": 0,
     "ch03_contract": "PUBLISHED_SOURCE_PINNED",
-    "ch04_source_topology": "THREE_CANDIDATES_PURE_SIMULATION_STATIC_CHECK_ONLY"
+    "ch04_source_topology": "THREE_CANDIDATES_PURE_SIMULATION_STATIC_CHECK_ONLY",
+    "ch05_B_seed92": "STATIC_SOURCE_EQUIVALENT_COMPLETE_3_MOVE_CANDIDATE",
+    "ch05_A": "NO_POSITIVE_WITNESS_YET"
   },
   "next": {
-    "id": "MAIN-ACCEPT-CH04-H06-H15-LEGAL-PREFIX-AND-GUARDS",
-    "status": "PENDING_REAL_RUNTIME",
-    "scope": "Main authoritative run of 3 seeded H06xH15 timelines (source topological only) and 1.57/1.61/9.14 state+projection. Chaos independently audits CH-T02 H11-A/B death reachability."
+    "id": "MAIN-CH05-B-AUTHORITATIVE-ORIGINAL-JIEQI-PREFIX-AND-DEATH-STATE-OBSERVATION",
+    "status": "PENDING_MAIN_REAL_READ_AND_RUN",
+    "scope": "main genuinely runs opening seed92, red H15 recruit seed1, R1-B1-H11A_skip-R2-rook_captures_trainee and H11B shuffle; tests sticky death/used, clocks, projection. Chaos separately studies bounded H11A reachability."
   },
   "protected": {
     "gameplay_delta": 0,
@@ -62,7 +64,7 @@
     "old_work_preserved": true
   },
   "receiver_adoption": "not asserted for main",
-  "self_commit": "resolve from actual Git history after successful publication",
+  "self_commit": "resolve from actual Git history after publication",
   "concrete_witness": {
     "opening_seed": 19,
     "h11_seed": 12,
@@ -147,5 +149,22 @@
     "main_receiver_receipt": "UNKNOWN",
     "scoring": "frozen",
     "NET": "paused"
+  },
+  "ch05": {
+    "files": [
+      "worklines/chaos/CH05_H11_H15_EARLY_DEATH_WITNESS.json",
+      "worklines/chaos/CH05_EARLY_DEATH_VALIDATION.md"
+    ],
+    "hero_pair": "red sky_admiral / black shuffler",
+    "opening_seed": 92,
+    "h15_recruit_seed": 1,
+    "trainee_true_red_cannon": "covered-08",
+    "capture": "red2 covered-23 red rook (1,4)->(1,2) destroys covered-08",
+    "H11_B": "pre black2 window when A skipped",
+    "H11_A": "NOT_ESTABLISHED",
+    "stage": "SOURCE_EQUIVALENT_STATIC_PROOF_NOT_RUNTIME",
+    "engine_runs": 0,
+    "formal_tests_passed": 0,
+    "actual_main_receipt": "NOT_CLAIMED"
   }
 }

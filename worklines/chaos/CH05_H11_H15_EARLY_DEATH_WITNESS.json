@@ -1,0 +1,721 @@
+{
+  "schema": "lezi.chaos.ch05.H11_H15_B_early_death_static_witness.v1",
+  "date_local": "2026-10-26",
+  "workline": "chaos",
+  "mode_id": "jieqi",
+  "source_handoff_commit": "139ddc155ecf45d79857862a1df0f9f79d67e754",
+  "original_engine_ref": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "main_shared_runtime_owner": "main",
+  "objective": "CH-T02: actual trainee destruction after red2 main action and before black2 H11-B, not between black1 and H11-A.",
+  "status": "DETERMINISTIC_SEEDED_B_WINDOW_STATIC_TOPOLOGY_READY_ENGINE_UNRUN",
+  "algorithm": {
+    "source": "jieqi-engine PR13 tests/helpers.ts#seededRandomInt, setup.js#createIdentityPool/shuffleIdentities, slots.js#COVERED_SLOTS",
+    "opening_seed": 92,
+    "lcg": "value = (Math.imul(value,1664525) + 1013904223) >>> 0; return value % maxExclusive",
+    "fisher_yates": "from i=29 to 1 draw(i+1), swap(i,j)",
+    "validated_against_previous_seed19_identity_and_rng_tape": true,
+    "random_streams_separate": {
+      "opening": 92,
+      "h15_first_recruitment": 1,
+      "h11_B_shuffle": 12
+    }
+  },
+  "opening": {
+    "covered_identity_table": [
+      {
+        "id": "covered-00",
+        "xy": [
+          0,
+          0
+        ],
+        "public_control": "black",
+        "public_slot": "rook",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-01",
+        "xy": [
+          1,
+          0
+        ],
+        "public_control": "black",
+        "public_slot": "horse",
+        "original_true_identity": {
+          "color": "black",
+          "type": "rook"
+        }
+      },
+      {
+        "id": "covered-02",
+        "xy": [
+          2,
+          0
+        ],
+        "public_control": "black",
+        "public_slot": "elephant",
+        "original_true_identity": {
+          "color": "red",
+          "type": "rook"
+        }
+      },
+      {
+        "id": "covered-03",
+        "xy": [
+          3,
+          0
+        ],
+        "public_control": "black",
+        "public_slot": "advisor",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-04",
+        "xy": [
+          5,
+          0
+        ],
+        "public_control": "black",
+        "public_slot": "advisor",
+        "original_true_identity": {
+          "color": "red",
+          "type": "horse"
+        }
+      },
+      {
+        "id": "covered-05",
+        "xy": [
+          6,
+          0
+        ],
+        "public_control": "black",
+        "public_slot": "elephant",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-06",
+        "xy": [
+          7,
+          0
+        ],
+        "public_control": "black",
+        "public_slot": "horse",
+        "original_true_identity": {
+          "color": "red",
+          "type": "advisor"
+        }
+      },
+      {
+        "id": "covered-07",
+        "xy": [
+          8,
+          0
+        ],
+        "public_control": "black",
+        "public_slot": "rook",
+        "original_true_identity": {
+          "color": "black",
+          "type": "elephant"
+        }
+      },
+      {
+        "id": "covered-08",
+        "xy": [
+          1,
+          2
+        ],
+        "public_control": "black",
+        "public_slot": "cannon",
+        "original_true_identity": {
+          "color": "red",
+          "type": "cannon"
+        }
+      },
+      {
+        "id": "covered-09",
+        "xy": [
+          7,
+          2
+        ],
+        "public_control": "black",
+        "public_slot": "cannon",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-10",
+        "xy": [
+          0,
+          3
+        ],
+        "public_control": "black",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-11",
+        "xy": [
+          2,
+          3
+        ],
+        "public_control": "black",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "cannon"
+        }
+      },
+      {
+        "id": "covered-12",
+        "xy": [
+          4,
+          3
+        ],
+        "public_control": "black",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "elephant"
+        }
+      },
+      {
+        "id": "covered-13",
+        "xy": [
+          6,
+          3
+        ],
+        "public_control": "black",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "cannon"
+        }
+      },
+      {
+        "id": "covered-14",
+        "xy": [
+          8,
+          3
+        ],
+        "public_control": "black",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "advisor"
+        }
+      },
+      {
+        "id": "covered-15",
+        "xy": [
+          0,
+          9
+        ],
+        "public_control": "red",
+        "public_slot": "rook",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-16",
+        "xy": [
+          1,
+          9
+        ],
+        "public_control": "red",
+        "public_slot": "horse",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-17",
+        "xy": [
+          2,
+          9
+        ],
+        "public_control": "red",
+        "public_slot": "elephant",
+        "original_true_identity": {
+          "color": "black",
+          "type": "rook"
+        }
+      },
+      {
+        "id": "covered-18",
+        "xy": [
+          3,
+          9
+        ],
+        "public_control": "red",
+        "public_slot": "advisor",
+        "original_true_identity": {
+          "color": "black",
+          "type": "horse"
+        }
+      },
+      {
+        "id": "covered-19",
+        "xy": [
+          5,
+          9
+        ],
+        "public_control": "red",
+        "public_slot": "advisor",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-20",
+        "xy": [
+          6,
+          9
+        ],
+        "public_control": "red",
+        "public_slot": "elephant",
+        "original_true_identity": {
+          "color": "black",
+          "type": "horse"
+        }
+      },
+      {
+        "id": "covered-21",
+        "xy": [
+          7,
+          9
+        ],
+        "public_control": "red",
+        "public_slot": "horse",
+        "original_true_identity": {
+          "color": "black",
+          "type": "advisor"
+        }
+      },
+      {
+        "id": "covered-22",
+        "xy": [
+          8,
+          9
+        ],
+        "public_control": "red",
+        "public_slot": "rook",
+        "original_true_identity": {
+          "color": "red",
+          "type": "horse"
+        }
+      },
+      {
+        "id": "covered-23",
+        "xy": [
+          1,
+          7
+        ],
+        "public_control": "red",
+        "public_slot": "cannon",
+        "original_true_identity": {
+          "color": "red",
+          "type": "rook"
+        }
+      },
+      {
+        "id": "covered-24",
+        "xy": [
+          7,
+          7
+        ],
+        "public_control": "red",
+        "public_slot": "cannon",
+        "original_true_identity": {
+          "color": "red",
+          "type": "elephant"
+        }
+      },
+      {
+        "id": "covered-25",
+        "xy": [
+          0,
+          6
+        ],
+        "public_control": "red",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "advisor"
+        }
+      },
+      {
+        "id": "covered-26",
+        "xy": [
+          2,
+          6
+        ],
+        "public_control": "red",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-27",
+        "xy": [
+          4,
+          6
+        ],
+        "public_control": "red",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-28",
+        "xy": [
+          6,
+          6
+        ],
+        "public_control": "red",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "elephant"
+        }
+      },
+      {
+        "id": "covered-29",
+        "xy": [
+          8,
+          6
+        ],
+        "public_control": "red",
+        "public_slot": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "cannon"
+        }
+      }
+    ],
+    "fisher_yates_draw_tape": [
+      [
+        30,
+        23
+      ],
+      [
+        29,
+        20
+      ],
+      [
+        28,
+        13
+      ],
+      [
+        27,
+        11
+      ],
+      [
+        26,
+        21
+      ],
+      [
+        25,
+        5
+      ],
+      [
+        24,
+        1
+      ],
+      [
+        23,
+        3
+      ],
+      [
+        22,
+        3
+      ],
+      [
+        21,
+        17
+      ],
+      [
+        20,
+        17
+      ],
+      [
+        19,
+        18
+      ],
+      [
+        18,
+        15
+      ],
+      [
+        17,
+        3
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        15,
+        6
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        12,
+        5
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        10,
+        5
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "opening_positions_unique": true,
+    "total_covered": 30,
+    "royals": [
+      {
+        "id": "red-general",
+        "xy": [
+          4,
+          9
+        ]
+      },
+      {
+        "id": "black-general",
+        "xy": [
+          4,
+          0
+        ]
+      }
+    ]
+  },
+  "heroes": {
+    "red": "sky_admiral/front (H15)",
+    "black": "shuffler/front (H11)",
+    "mutation": null,
+    "no_other_heroes": true
+  },
+  "training": {
+    "lawful_start": "red H15 opening legal start, choose cannon, success must be acknowledged by authoritative entry",
+    "first_recruitment_rng_seed": 1,
+    "original_red_cannon_candidate_ids": [
+      "covered-08",
+      "covered-13"
+    ],
+    "draw_index": 0,
+    "chosen_secret_id": "covered-08",
+    "chosen_type": "cannon",
+    "progress_before_red1_begin": 0,
+    "red1_begin_expected": 1,
+    "red2_begin_expected": 2,
+    "cost": 6,
+    "used": true,
+    "graduation_before_death": false
+  },
+  "moves": [
+    {
+      "step": "R1",
+      "actor": "red",
+      "id": "covered-23",
+      "from": [
+        1,
+        7
+      ],
+      "to": [
+        1,
+        4
+      ],
+      "source_public_type": "cannon",
+      "source_true_identity": {
+        "color": "red",
+        "type": "rook"
+      },
+      "path_blockers": [],
+      "captured": null,
+      "note": "revealed red rook, H15 trainee still dark at covered-08"
+    },
+    {
+      "step": "B1",
+      "actor": "black",
+      "id": "covered-10",
+      "from": [
+        0,
+        3
+      ],
+      "to": [
+        0,
+        4
+      ],
+      "source_public_type": "pawn",
+      "source_true_identity": {
+        "color": "black",
+        "type": "pawn"
+      },
+      "path_blockers": [],
+      "captured": null,
+      "note": "revealed black pawn; if accepted and not terminal then H11 A window"
+    },
+    {
+      "step": "R2",
+      "actor": "red",
+      "id": "covered-23",
+      "from": [
+        1,
+        4
+      ],
+      "to": [
+        1,
+        2
+      ],
+      "source_public_type": "rook",
+      "source_true_identity": {
+        "color": "red",
+        "type": "rook"
+      },
+      "path_blockers": [],
+      "captured": {
+        "id": "covered-08",
+        "public_control": "black",
+        "original_true_identity": {
+          "color": "red",
+          "type": "cannon"
+        },
+        "face_down": true
+      },
+      "note": "rook captures still-covered trainee covered-08 before H11 B"
+    }
+  ],
+  "turn_windows": [
+    {
+      "id": "R1",
+      "expected": "red formal turn1 committed, red H15 progress 1/6"
+    },
+    {
+      "id": "B1",
+      "expected": "black formal turn1 committed, no terminal; open H11-A"
+    },
+    {
+      "id": "A_SKIP",
+      "expected": "H11 A legally skips BEFORE original deadline, B opportunity preserved; A skip consumes no extra normal turn or training tick"
+    },
+    {
+      "id": "R2",
+      "expected": "after actual red2 begin training 2/6, rook move really destroys secret trainee covered-08, H15 becomes failed and training opportunity stays used"
+    },
+    {
+      "id": "B_ENTRY",
+      "expected": "before any black2 normal begin settlement, H11-B window exists because A skipped"
+    },
+    {
+      "id": "B_ACTIVATE",
+      "expected": "H11 B resets opening board/reshuffles 30, but H15 remains failed+used; no fresh training binding, new progress tick, or secret leak; B itself is not black2 normal action"
+    }
+  ],
+  "public_private_semantics": {
+    "capture_reason": "public black-controlled face-down covered-08 is legitimately capturable by red rook although its secret original identity is red cannon",
+    "revealed_attacker": "red rook",
+    "destroyed_secret": "original red cannon; after real destruction authoritative H15 sticky failure expected",
+    "both_players_public": "selected cannon, prior successful training launch/used count, normal visible reveal/capture events; not bound ID/progress/real-time failure before lawful revelation"
+  },
+  "A_window": {
+    "status": "NO_SOURCE_EQUIVALENT_POSITIVE_DEATH_WITNESS_IN_THIS_ROUND",
+    "reason": "A follows only red1+black1. The B candidate depends on red2 rook capture and cannot be claimed for A; do not infer global impossibility without bounded exhaustive rule search."
+  },
+  "prerequisites": [
+    "Genuine H15 legal opening start (not synthetic training state)",
+    "Black1 completion and actual H11-A window with retained original time; timely skip without timeout loss",
+    "Red2 normal begin and accepted red rook move with correct revision/turn/king safety",
+    "True original identity on capture, authoritative death settlement and failed training without old re-draw",
+    "Automatic B entry before black2 begin and legal H11-B activation",
+    "After B reset verify authoritative private state and both public projections; allow normal public reveal not premature failed disclosure"
+  ],
+  "blockers": [
+    "PR13 hero-progress.js still reselects after trainee death; current shared H15 sticky failure not implemented/validated",
+    "PR13 H11 clock fields still deleted in A; cannot assert live timer correctness",
+    "No real getLegalMoves/applyAuthoritativeMove/room/test runner or UI privacy verification performed",
+    "H11-B after death cannot be claimed if unexpected terminal/forced resolution prevents window"
+  ],
+  "checks": {
+    "identity_pool_matches_30_pieces": true,
+    "seed19_prior_regression": "MATCHED_FULL_IDENTITY_AND_29_DRAW_TAPE",
+    "seed92_29_draws": true,
+    "red_cannons_ordered": [
+      "covered-08",
+      "covered-13"
+    ],
+    "h15_pick_seed1_index": 0,
+    "source_origins_and_public_controllers": "CHECKED_PURE_STATIC",
+    "three_moves_source_based_geometry": "CHECKED_PURE_STATIC",
+    "attack_target_public_controller": "black",
+    "destroyed_true_identity": {
+      "color": "red",
+      "type": "cannon"
+    },
+    "engine_runs": 0,
+    "authoritative_prefix_accepted": 0,
+    "formal_tests_passed": 0,
+    "natural_games": 0,
+    "full_mode_verified": false
+  }
+}
