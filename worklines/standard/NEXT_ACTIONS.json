@@ -1,85 +1,35 @@
 {
   "first": {
-    "id": "NEXT-STD-NP-MAIN-FIX-DELTA-RECEPTION-ON-EVIDENCE",
-    "status": "BLOCKED_EXTERNAL_MAIN_EVIDENCE",
-    "requires_external_trigger": true,
+    "id": "NEXT-STD-INDEPENDENT-PLAYER-RULES-V1",
+    "status": "ready_not_started_independent",
+    "main_dependent": false,
     "implementation_authorized": false,
-    "source_gate": "G00/G01/G02/G03/G05 and actual qualifying runs",
-    "action": "Once main actually writes a new receipt/engine commit/qualification/RNG evidence, diff exact pinned sections, update independent NP/AS/AP/ES eligibility and only claim tests actually run. Otherwise leave blocked and refrain from repeating same readback."
+    "subject": "普通模式玩家向简明规则与可选项说明",
+    "action": "仅在现行31项普通确认及13项共享确认范围内，整理玩家易懂的普通模式说明：32棋固定全明开局、H14和M07普通池排除、H03越河与无铁甲、M04/M05/M06/M08、D01合法触发、H15公开空池、占步/额外/受将和秘密边界；附原文来源并标明未决，不改玩法代码/共享源码/正式评分或UI实现。"
   },
   "preserve": "当前对话已收束；普通31/本线直接共享13，本对话两项共同确认及原候选/原话/来源、ES限定复核、全部历史成果保留。收束不新增批准；下一来源顺序复核尚未开始，待用户明确继续后接续。评分冻结、NET暂停，全部旧未运行规格保持UNRUN。",
   "main_owned_pending": "Latest main1.62 metadata only: no active user candidate; H15/H06 graduation-source review complete with policy unresolved; no new H15 policy adopted here.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE-20261026",
+    "id": "STD-INDEPENDENT-ORDINARY-RULE-COMPLETENESS-AUDIT-20261026",
     "date_local": "2026-10-26",
-    "source_handoff_head": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
-    "engine_main_sha": "c25749d4f21d394c3d94486cfba1d786864083b6",
-    "engine_pr13_head": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-    "engine_pr13_merged": false,
-    "report": "worklines/standard/reviews/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.md",
-    "matrix": "worklines/standard/specs/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.json",
-    "blockers": [
-      {
-        "id": "G00_MAIN_READ_RECEIPT",
-        "status": "UNVERIFIED_NOT_ASSERTED",
-        "owner": "main"
-      },
-      {
-        "id": "G01_MODE_ADMISSION",
-        "status": "BLOCKED_SOURCE_FLAG_FALSE",
-        "owner": "main"
-      },
-      {
-        "id": "G02_H02_AS_SOURCE",
-        "status": "OPEN_V2_SOURCE_RULE_DIVERGENCE",
-        "owner": "main"
-      },
-      {
-        "id": "G03_M04_ROYAL_SAFETY",
-        "status": "OPEN_V2_SIMULATION_GAP_V1_SYMBOLIC_WITNESSES",
-        "owner": "main"
-      },
-      {
-        "id": "G04_H21_PRAYER",
-        "status": "STATIC_CLASSIFICATION_CORRECT_RUNTIME_UNRUN",
-        "owner": "main"
-      },
-      {
-        "id": "G05_H21_RANDOM",
-        "status": "RNG_PROVENANCE_AND_SAFE_VALIDATION_NOT_EVIDENCED",
-        "owner": "main"
-      },
-      {
-        "id": "G06_FORMAL_NP_RUNS",
-        "status": "UNRUN_NO_EXECUTION_PROOF",
-        "owner": "main"
-      },
-      {
-        "id": "G07_ENGINE_PUBLICATION",
-        "status": "PR_OPEN_MAIN_OLD_NO_NEW_PATCH",
-        "owner": "main"
-      }
-    ],
-    "true_engine_runs": 0,
-    "formal_specs": "UNRUN",
-    "independent_QA": false,
-    "main_source_receipt_verified": null,
-    "main_source_adoption_verified": null,
-    "observed_exact_receiver_source_marker_found": false,
-    "verified_old_h21_p0_retracted": true,
-    "rules_delta": 0,
-    "ordinary_confirmations": 31,
-    "direct_shared_confirmations": 13,
-    "shared_code_changed": 0,
-    "other_workline_modified": false,
-    "score": "frozen",
+    "read_head": "f453db4bd37936ee611669baf8711b4a49668e74",
+    "report": "worklines/standard/reviews/STD_ORDINARY_RULE_COMPLETENESS_AUDIT_20261026.md",
+    "matrix": "worklines/standard/specs/STD_ORDINARY_RULE_COMPLETENESS_MATRIX_20261026.json",
+    "ordinary_confirmed": 31,
+    "ordinary_source_headings": 31,
+    "direct_shared_confirmed": 13,
+    "updated_mode_entry": "worklines/standard/modes/standard/CURRENT_RULES.md",
+    "new_rules": 0,
+    "engine_runs": 0,
+    "formal_tests": "UNRUN",
+    "scoring": "frozen",
     "NET": "paused",
-    "mode_gate": "xiangqi.featuresReady=false",
-    "next_requires_evidence_change": true
+    "main_read": null,
+    "main_adoption": null
   },
-  "status": "np_engine_readback_complete_external_main_evidence_required",
+  "status": "independent_player_doc_ready_main_engine_still_blocked",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261019-r1",
     "status": "closed_current_conversation",
@@ -234,5 +184,13 @@
     "started": false,
     "formal_tests": "UNRUN",
     "no_new_confirmations": true
+  },
+  "blocked_external_main_gate_20261026": {
+    "id": "NEXT-STD-NP-MAIN-FIX-DELTA-RECEPTION-ON-EVIDENCE",
+    "status": "BLOCKED_EXTERNAL_MAIN_EVIDENCE",
+    "requires_external_trigger": true,
+    "implementation_authorized": false,
+    "source_gate": "G00/G01/G02/G03/G05 and actual qualifying runs",
+    "action": "Once main actually writes a new receipt/engine commit/qualification/RNG evidence, diff exact pinned sections, update independent NP/AS/AP/ES eligibility and only claim tests actually run. Otherwise leave blocked and refrain from repeating same readback."
   }
 }
