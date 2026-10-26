@@ -3100,3 +3100,9 @@ PR13仍open/draft/unmerged，半混乱研究half_chaos只允许shuffler且mutati
 固定源HEAD 9799365314aeac83963d0124b56f9b590bcb5dc3、引擎PR13固定3f98bc9。读取原始REPLAY_ACTION_DATA/INITIALIZATION_WITNESS_DATA/ASSERTION_EVIDENCE_MATRIX与WP01/WP02相关合同，依src/remote-room.ts、src/types.ts、src/setup.ts、src/hero-actions.ts编排**仅供主线审查的请求接口契约**。MA-PD01 5请求/10观察点、MA-DS03 8/15、MA-DS04 10/18：合计原始23声明，其中普通主行动20与正式主行动前技能3，源记录与对应43个观察点18/18静态不变量核对为真。每次普通走棋映射MoveCommand字段from/to，前技能hourglass/bomb映射HeroAbilityCommand；原数据不写入actionId/playerId/expectedRevision等虚构运行值，须从主线许可真实room/side与权威状态取，投弹caster以运行当时已公开棋子核准，不从authority-only身份别名生成用户 payload。
 
 注意：返回的room已经可能包含正常正式终结、陷阱和下个回合起钟；不是申请的精确after-main atom/after-normal-end断点。half_chaos研究仅准shuffler且禁止mutation，原三tuple不能执行；研究source、RNG、被动观察、M01/M04与D01闭合、可执行受限driver和技术授权均归主线，不允许借旧jieqi fixture、伪造复位/随机、改原64UNRUN。23条逐条绑定及拒绝/暂停条件见HC47_ORIGINAL_PILOT_API_BOUNDARY.json。此为文件+源码V2检查，不是engine test、独立QA、游戏实测，也不构成技能新确认或主线实际采用。
+
+## 8.73 r48 原先导来源反向探针与活跃索引纠偏（2026-10-26）
+
+来源固定于3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26，引擎固定3f98bc9。核原12回放/210检查点、10世界×28合法抽数见证、64 UNRUN 规格以及r47三先导23语义请求/43源观察点，正例静态一致。随后不修改任何仓库来源，在隔离JSON拷贝内对16类错误分别注入并运行同一来源校验逻辑，16/16可检出：目标、行动者、次序、重复ID、沙漏能力、投弹坐标、公私身份误用、检查点丢失、假PASS、抽取越界、错世界、假可执行和假运行、源blob及实时版本。测试时修正核验程序自身对来源哈希键（短文件名）与正常end检查点（无主行动ID）两处错误假设；原始数据无改动。结果详HC48_ORIGINAL_PILOT_NEGATIVE_GUARD.json。核验为V2来源检查，脚本未作为持久代码发布，也不表明执行器已具备能力。
+
+发现NEXT_ACTIONS.json仍停在r41的首个safe-bomb工程等待任务，真实主线PR8已经实施、r42来源已接收、r47完成原请求映射。已把该文件的活跃下一任务更新为NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS，附CURRENT_STATE真实状态指针，保留旧信息作为历史。修复为流程索引维护，不解冻评分/NET，不修改其他模式/共享源码，不自动授权执行原12/64。下一应有主线实际新代码和具体权限才升级验证；否则仅继续独立文档或发回主线阻断项。

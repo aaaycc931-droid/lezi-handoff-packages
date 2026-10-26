@@ -1,3 +1,6 @@
+【2026-10-26 半混乱r48来源防回归与续接索引修复】
+完成r47原3先导23请求/43观察点的来源正例检查，并在隔离内存副本注入16项错误（错误移动、错技能/投弹、公私施放者ID混淆、观察点错连、抽取越界、假PASS/假执行等），16/16均被检测。全部仅V2静态，不是引擎测试。发现NEXT_ACTIONS活跃任务滞留r41（等待主线首个投弹补丁），实际PR8及r42-r47已覆盖；已将活跃指针纠偏至本r48而保留历史。完整记录HC48_ORIGINAL_PILOT_NEGATIVE_GUARD.json、CURRENT_STATE.r48_negative_static_guard、WORKING§8.73。原12自然执行0、64UNRUN、210实测观察0；PR13仍草稿且无原3tuple受控准入和runner，featuresReady=false，评分冻结、NET暂停。下一核主线新的可信工程和具体授权，不重复旧静态任务。以下r47等为历史。
+
 【2026-10-26半混乱r47原先导接口逐条绑定】
 新增HC47_ORIGINAL_PILOT_API_BOUNDARY.json：沿原数据不改23请求（20走棋/3前置技能），将MA-PD01/DS03/DS04每个声明对照真实src/remote-room.ts与src/types.ts接口、字段、回合前后顺序及原43个观察点；18/18条静态检查成立，仅V2来源/结构映射，不是已可发送wire payload或合法运行。尤其原B3拒投与B4新窗口投弹需当时公开施放者ID、实际playerId/revision/clock/RNG，观察点缺源实现不能补造。PR13三tuple研究准入仍阻断；原12自然执行0、64UNRUN、210点实际观察0、featuresReady=false、评分冻结、NET暂停。详WORKING§8.72、CURRENT_STATE.r47_original_pilot_api_binding及RETURN_TO_MAIN.r47_to_main。仅本线文档增量，其他工作线不动；发布不代表主线读取。下一仍是NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS，先看主线真实代码/授权，再进行任何自然回放。以下r46及更早为历史。
 

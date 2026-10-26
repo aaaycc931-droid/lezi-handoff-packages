@@ -1,0 +1,205 @@
+{
+  "schema": "lezi.hc.source_static_regression.v1",
+  "revision": "HC-48-ORIGINAL-PILOT-NEGATIVE-GUARD-20261026-r48",
+  "date_local": "2026-10-26",
+  "source_head": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
+  "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "original_source_blobs": {
+    "HC47_ORIGINAL_PILOT_API_BOUNDARY.json": "aa4c60b9a8a547e1062b0aa4876b594de80c5ac7",
+    "REPLAY_ACTION_DATA.json": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+    "INITIALIZATION_WITNESS_DATA.json": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+    "ASSERTION_EVIDENCE_MATRIX.json": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce"
+  },
+  "validation_scope": "Executed source-only positive structural checks and adversarial negative mutations on isolated JSON clones. These mutation fixtures are NOT natural game inputs. Never change original assets to make checks pass.",
+  "positive": {
+    "passed": true,
+    "full_baseline_errors": [],
+    "source_declared_replays": 12,
+    "worlds": 10,
+    "world_28_draws_per_world": true,
+    "original_checkpoints": 210,
+    "original_specs": 64,
+    "original_pilots": 3,
+    "original_pilot_requests": 23,
+    "main": 20,
+    "before_main": 3,
+    "pilot_checkpoints": 43,
+    "status": "V2_SOURCE_ONLY"
+  },
+  "negative": {
+    "total": 16,
+    "detected": 16,
+    "all_detected": true,
+    "probes": [
+      {
+        "id": "N01_wrong_destination",
+        "expected_error_prefix": "MAIN_FIELDS",
+        "detected": true,
+        "first_errors": [
+          "MAIN_FIELDS_MA-PD01_R1_1"
+        ]
+      },
+      {
+        "id": "N02_wrong_actor",
+        "expected_error_prefix": "REQ_COMMON",
+        "detected": true,
+        "first_errors": [
+          "REQ_COMMON_MA-PD01_B1_1"
+        ]
+      },
+      {
+        "id": "N03_reordered_turn_requests",
+        "expected_error_prefix": "MANIFEST_ORDER",
+        "detected": true,
+        "first_errors": [
+          "MANIFEST_ORDER",
+          "REQ_COMMON_MA-PD01_R1_1",
+          "MAIN_FIELDS_MA-PD01_R1_1"
+        ]
+      },
+      {
+        "id": "N04_duplicate_id",
+        "expected_error_prefix": "MANIFEST_COUNTS",
+        "detected": true,
+        "first_errors": [
+          "MANIFEST_COUNTS",
+          "MANIFEST_ORDER",
+          "REQ_COMMON_MA-PD01_B1_1"
+        ]
+      },
+      {
+        "id": "N05_wrong_hourglass_ability",
+        "expected_error_prefix": "SKILL_FIELDS",
+        "detected": true,
+        "first_errors": [
+          "SKILL_FIELDS_MA-DS03_R4_1"
+        ]
+      },
+      {
+        "id": "N06_wrong_bomb_target",
+        "expected_error_prefix": "SKILL_CAST",
+        "detected": true,
+        "first_errors": [
+          "SKILL_CAST_MA-DS04_B3_1"
+        ]
+      },
+      {
+        "id": "N07_private_id_masquerading_public_caster",
+        "expected_error_prefix": "SKILL_CAST",
+        "detected": true,
+        "first_errors": [
+          "SKILL_CAST_MA-DS04_B3_1"
+        ]
+      },
+      {
+        "id": "N08_missing_main_checkpoint",
+        "expected_error_prefix": "MAIN_CHECKPOINT",
+        "detected": true,
+        "first_errors": [
+          "MAIN_CHECKPOINT_MA-PD01_R1_1"
+        ]
+      },
+      {
+        "id": "N09_source_checkpoint_removed",
+        "expected_error_prefix": "MAIN_CHECKPOINT",
+        "detected": true,
+        "first_errors": [
+          "TOTALS",
+          "UNIQUE_SOURCE",
+          "PILOT_COUNT_MA-PD01"
+        ]
+      },
+      {
+        "id": "N10_original64_forged_pass",
+        "expected_error_prefix": "SOURCE_UNRUN",
+        "detected": true,
+        "first_errors": [
+          "SOURCE_UNRUN"
+        ]
+      },
+      {
+        "id": "N11_rng_draw_outside_range",
+        "expected_error_prefix": "WORLD_28_DRAWS",
+        "detected": true,
+        "first_errors": [
+          "WORLD_28_DRAWS_MA-PD01"
+        ]
+      },
+      {
+        "id": "N12_wrong_original_world",
+        "expected_error_prefix": "PILOT_WORLD",
+        "detected": true,
+        "first_errors": [
+          "PILOT_WORLD_MA-PD01",
+          "REQ_COMMON_MA-PD01_R1_1",
+          "REQ_COMMON_MA-PD01_B1_1"
+        ]
+      },
+      {
+        "id": "N13_forged_production_ready",
+        "expected_error_prefix": "REQ_COMMON",
+        "detected": true,
+        "first_errors": [
+          "REQ_COMMON_MA-PD01_R1_1"
+        ]
+      },
+      {
+        "id": "N14_forged_actual_execution",
+        "expected_error_prefix": "SOURCE_UNRUN",
+        "detected": true,
+        "first_errors": [
+          "SOURCE_UNRUN"
+        ]
+      },
+      {
+        "id": "N15_changed_source_blob",
+        "expected_error_prefix": "PIN_",
+        "detected": true,
+        "first_errors": [
+          "PIN_REPLAY_ACTION_DATA.json"
+        ]
+      },
+      {
+        "id": "N16_literal_revision_instead_of_authority",
+        "expected_error_prefix": "REQ_PLACEHOLDERS",
+        "detected": true,
+        "first_errors": [
+          "REQ_PLACEHOLDERS_MA-PD01_R1_1"
+        ]
+      }
+    ]
+  },
+  "repair_needed": {
+    "path": "worklines/half_chaos/NEXT_ACTIONS.json",
+    "prior_revision": "HC-SESSION-CLOSEOUT-20261020-r41",
+    "current_state_before": "HC-47-ORIGINAL-PILOT-API-BOUNDARY-20261026-r47",
+    "risk": "Outdated r41 next task still points to initial safe-bomb implementation, despite actual PR8 and subsequent r47 evidence; potential stale reconnection drift.",
+    "fix": "Replace only active next pointer, add state-first authority and historical supersession; preserve older task history."
+  },
+  "invariants": {
+    "engine_run_count": 0,
+    "original_12_natural_executed": 0,
+    "original_64": "UNRUN",
+    "original_210_actual_observed": 0,
+    "featuresReady": false,
+    "score": "FROZEN",
+    "NET": "PAUSED",
+    "engine_code_edits": 0,
+    "other_worklines_edited": false,
+    "runtime_admission": "BLOCKED_MAIN_TRUSTED_TUPLE",
+    "main_readback_of_this_report": "UNKNOWN",
+    "no_new_gameplay_confirmation": true
+  },
+  "next": {
+    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "status": "BLOCKED_MAIN_ADMISSION_OBSERVER_DRIVER",
+    "action": "Main to supply exact tuple trusted source/room/side admission, seed-bound draw, true passive checkpoints, M01/M04/D01 closures and restricted driver/authorization. HC audits actual changes, not repeat r45-r48 source checks."
+  },
+  "limits": {
+    "no_persisted_executable_validator": "The isolated live checks are executed in the connected GitHub/source review environment and summarized in this JSON. This does not claim a persistent engine-independent regression executable in the repository.",
+    "grade": "V2 source-only, not authoritative engine QA",
+    "negative_mutations_are_in_memory": true,
+    "unknown_future_driver": true,
+    "authorization": "source/document work only"
+  }
+}

@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-47-ORIGINAL-PILOT-API-BOUNDARY-20261026-r47",
+  "revision": "HC-48-ORIGINAL-PILOT-NEGATIVE-GUARD-20261026-r48",
   "workline": "half_chaos",
   "date_local": "2026-10-26",
   "timezone": "Asia/Shanghai",
-  "status": "r47_23_original_pilot_requests_typed_api_binding_prepared_runtime_still_blocked",
+  "status": "r48_16_negative_probes_detected_stale_next_actions_repaired",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -2631,6 +2631,31 @@
       "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
       "status": "BLOCKED_MAIN_ADMISSION_OBSERVER_AND_DRIVER",
       "action": "Main implement credible exact tuple admission/observer/real driver; independent HC recheck then execute only within later legal authorization."
+    }
+  },
+  "r48_negative_static_guard": {
+    "source_head": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
+    "report": "worklines/half_chaos/HC48_ORIGINAL_PILOT_NEGATIVE_GUARD.json",
+    "positive_check": "PASS V2_ONLY",
+    "negative_mutations_detected": "16/16",
+    "original_pilot_requests": 23,
+    "source_checkpoints": 43,
+    "original_replays_executed": 0,
+    "original64": "UNRUN",
+    "observed210": 0,
+    "engine_runs": 0,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "next_actions_previous_revision": "HC-SESSION-CLOSEOUT-20261020-r41",
+    "next_actions_current_revision": "HC-48-ORIGINAL-PILOT-NEGATIVE-GUARD-20261026-r48",
+    "next": {
+      "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+      "status": "BLOCKED_MAIN_ADMISSION_OBSERVER_DRIVER",
+      "action": "先核主线真实发布的3精确两英雄+畸变tuple可信room/side/source准入、随机见证、精准被动观察、路径王安全闭合、受限原回放driver与具体执行授权；若缺仍可推进半混乱来源与文档，不可假装游戏引擎已运行或恢复旧r41断点。",
+      "owner": "main shared engine / half-chaos independent source",
+      "authorization": "DOCUMENT_ONLY; original natural replay engine runs NOT authorized",
+      "source_of_truth": "worklines/half_chaos/CURRENT_STATE.json#/r48_negative_static_guard"
     }
   }
 }

@@ -2798,5 +2798,24 @@
     ],
     "check": "18/18 structural/source checks V2, 0 natural execution",
     "other_receiver_receipts_written": false
+  },
+  "r48_actual_source_negative_validation": {
+    "date_local": "2026-10-26",
+    "source_head": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
+    "source_pin": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "source_read_scope": [
+      "r47 source binding full 23 requests and 43 checkpoint references",
+      "REPLAY_ACTION_DATA all 12 original replays/210 checkpoints",
+      "INITIALIZATION_WITNESS_DATA all 10 worlds including 28 identity draws",
+      "ASSERTION_EVIDENCE_MATRIX all original 64 specification statuses",
+      "latest main actual receipt, half-chaos next-actions and PR13 metadata"
+    ],
+    "positive": "PASS source-only",
+    "negative": "16/16 detected on isolated in-memory clones",
+    "no_source_asset_edits": true,
+    "engine_runs": 0,
+    "record": "worklines/half_chaos/HC48_ORIGINAL_PILOT_NEGATIVE_GUARD.json",
+    "main_adoption": "UNKNOWN — sender-owned only",
+    "other_line_receipts_untouched": true
   }
 }
