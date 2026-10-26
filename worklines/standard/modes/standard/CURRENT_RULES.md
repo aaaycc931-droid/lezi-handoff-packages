@@ -1,5 +1,7 @@
 # 当前模式设计入口
 
+**玩家向规则阅读入口（2026-10-26）：** [普通象棋玩家规则简明说明 V1](../../guides/ORDINARY_CHESS_PLAYER_RULES_V1_20261026.md)。这是对已确认普通31项和本线共享13项的通俗导航，包含21个英雄设计条目、8个畸变设计条目与隐藏宿命；H14夜/M07混乱普通暂不入池，不等于普通模式当前已可正式游玩。完整合法性仍按下方普通差分与原确认／共享正文，正式测试UNRUN。
+
 ## 2026-10-26｜普通模式有效规则导航（只是索引，不改变玩法）
 
 读取顺序：`START_STANDARD.txt` → `START_HERE.txt` → 工作线根`CURRENT_STATE.json`及`NEXT_ACTIONS.json` → 本模式已确认原件和登记册（`CONFIRMATION_REGISTER.json`/ `work/LEZI_STD_DESIGN_03_WORKING_20261014.md`）→ 未被普通专属确认覆盖的共享规则01/02/03/09 → 较早历史快照。本轮证据：`reviews/STD_ORDINARY_RULE_COMPLETENESS_AUDIT_20261026.md`与`specs/STD_ORDINARY_RULE_COMPLETENESS_MATRIX_20261026.json`（相对普通工作线根目录）。

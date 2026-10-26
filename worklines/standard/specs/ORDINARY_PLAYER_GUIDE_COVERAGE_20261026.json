@@ -1,0 +1,351 @@
+{
+  "schema": "lezi.standard.ordinary_player_guide_source_qa.v1",
+  "id": "STD-INDEPENDENT-PLAYER-RULES-V1-20261026",
+  "task": "NEXT-STD-INDEPENDENT-PLAYER-RULES-V1",
+  "source_handoff_head": "a5875f79e19159a3ba567fcb80cf83ad3475d9ce",
+  "date_local": "2026-10-26",
+  "guide": "worklines/standard/guides/ORDINARY_CHESS_PLAYER_RULES_V1_20261026.md",
+  "source_chain": [
+    "worklines/standard/CONFIRMATION_REGISTER.json",
+    "worklines/standard/modes/standard/CURRENT_RULES.md",
+    "worklines/standard/specs/STD_ORDINARY_RULE_COMPLETENESS_MATRIX_20261026.json",
+    "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+    "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+    "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md",
+    "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
+    "worklines/standard/PENDING_ITEMS.json"
+  ],
+  "hero_entries": [
+    {
+      "id": "H01",
+      "name": "猎人",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "inherited_current_shared_subject_to_mode_gate"
+    },
+    {
+      "id": "H02",
+      "name": "潜行者",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "inherited_current_shared_subject_to_mode_gate"
+    },
+    {
+      "id": "H03",
+      "name": "战士",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H04",
+      "name": "秦龙",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "inherited_current_shared_subject_to_mode_gate"
+    },
+    {
+      "id": "H05",
+      "name": "姆诺兹多",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "inherited_current_shared_subject_to_mode_gate"
+    },
+    {
+      "id": "H06",
+      "name": "诺兹多姆",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "inherited_current_shared_subject_to_mode_gate"
+    },
+    {
+      "id": "H07",
+      "name": "姆诺兹多的爪牙",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "inherited_current_shared_subject_to_mode_gate"
+    },
+    {
+      "id": "H08",
+      "name": "太子",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "inherited_current_shared_subject_to_mode_gate"
+    },
+    {
+      "id": "H09",
+      "name": "死亡之翼",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "inherited_current_shared_subject_to_mode_gate"
+    },
+    {
+      "id": "H10",
+      "name": "风",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H11",
+      "name": "代号1",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H12",
+      "name": "术士",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H13",
+      "name": "单刃",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H14",
+      "name": "夜",
+      "covered": true,
+      "mode_pool_status": "confirmed_excluded_ordinary",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H15",
+      "name": "天空上将",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H16",
+      "name": "狂战",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H17",
+      "name": "江鹤",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H18",
+      "name": "里·江鹤",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H19",
+      "name": "死亡骑士",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H20",
+      "name": "里·死亡骑士",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    },
+    {
+      "id": "H21",
+      "name": "虔信狂徒",
+      "covered": true,
+      "mode_pool_status": "current_design_description_not_engine_selection_verified",
+      "primary_source": "rules/shared/02_CURRENT_HEROES.md",
+      "ordinary_approval": "ordinary_approved_overlay_or_shared_confirmation"
+    }
+  ],
+  "mutation_entries": [
+    {
+      "id": "M01",
+      "name": "铁马",
+      "covered": true,
+      "mode_pool_status": "ordinary_design_approved_runtime_unrun",
+      "primary_source": "rules/shared/03_CURRENT_MUTATIONS.md"
+    },
+    {
+      "id": "M02",
+      "name": "堡垒",
+      "covered": true,
+      "mode_pool_status": "ordinary_design_approved_runtime_unrun",
+      "primary_source": "rules/shared/03_CURRENT_MUTATIONS.md"
+    },
+    {
+      "id": "M03",
+      "name": "暗影之舞",
+      "covered": true,
+      "mode_pool_status": "ordinary_design_approved_runtime_unrun",
+      "primary_source": "rules/shared/03_CURRENT_MUTATIONS.md"
+    },
+    {
+      "id": "M04",
+      "name": "战车",
+      "covered": true,
+      "mode_pool_status": "ordinary_design_approved_runtime_unrun",
+      "primary_source": "rules/shared/03_CURRENT_MUTATIONS.md"
+    },
+    {
+      "id": "M05",
+      "name": "亲征",
+      "covered": true,
+      "mode_pool_status": "ordinary_design_approved_runtime_unrun",
+      "primary_source": "rules/shared/03_CURRENT_MUTATIONS.md"
+    },
+    {
+      "id": "M06",
+      "name": "骑兵",
+      "covered": true,
+      "mode_pool_status": "ordinary_design_approved_runtime_unrun",
+      "primary_source": "rules/shared/03_CURRENT_MUTATIONS.md"
+    },
+    {
+      "id": "M07",
+      "name": "混乱",
+      "covered": true,
+      "mode_pool_status": "confirmed_excluded_ordinary",
+      "primary_source": "rules/shared/03_CURRENT_MUTATIONS.md"
+    },
+    {
+      "id": "M08",
+      "name": "尖斜",
+      "covered": true,
+      "mode_pool_status": "ordinary_design_approved_runtime_unrun",
+      "primary_source": "rules/shared/03_CURRENT_MUTATIONS.md"
+    }
+  ],
+  "destiny": {
+    "id": "D01",
+    "covered": true,
+    "trigger": "Nozdormu+Murozond hero pair plus actually selected hidden destiny",
+    "ordinary_open_start_confirmed": true,
+    "source": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md"
+  },
+  "guard_checks": [
+    {
+      "id": "P01",
+      "oracle": "ordinary 32 public; shared original jieqi 30-covered setup not transplanted",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P02",
+      "oracle": "H14 night ordinary excluded and H14 shared content remains other modes",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P03",
+      "oracle": "M07 chaos ordinary excluded even though shared list has chaos",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P04",
+      "oracle": "H03 ordinary crossing defense and no armor; successful grant then same-atom death retains quota",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P05",
+      "oracle": "M06 original 2 initial horses; preserve normal horse leg movement; no free second move",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P06",
+      "oracle": "M08 current half based on origin; no before crossing diagonal",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P07",
+      "oracle": "H15 success doesn't consume normal action; publicly provable empty pool conditional failure doesn't consume unique opportunity; secret feedback not generalized",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P08",
+      "oracle": "H21 invoke formal main; omen after fourth and delayed descent; no fifth prayer",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P09",
+      "oracle": "M04 only legal real target one ground path; path/endpoint effects independent; H02 activation and later charge distinct",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P10",
+      "oracle": "D01 only conditional hidden destiny, no false guaranteed 75-second game; hourglass zero return still spends charge",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P11",
+      "oracle": "invisibility still ground obstacle, flying loses ground and cannot attack",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P12",
+      "oracle": "action/move/attack/interim check are different from end-game event",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P13",
+      "oracle": "historical pending is not current approved policy; source precedence honored",
+      "status": "SOURCE_CHECK"
+    },
+    {
+      "id": "P14",
+      "oracle": "formal runs and production UI not claimed; frozen scoring NET",
+      "status": "SOURCE_CHECK"
+    }
+  ],
+  "validations": {
+    "hero_count": 21,
+    "excluded_hero_count": 1,
+    "mutation_count": 8,
+    "excluded_mutation_count": 1,
+    "confirmed_ordinary_entries_from_prior_audit": 31,
+    "confirmed_shared_from_prior_audit": 13,
+    "new_user_approvals": 0,
+    "rule_delta": 0,
+    "actual_game_engine_runs": 0,
+    "formal_tests": "UNRUN",
+    "independent_QA": false,
+    "mode_gate": "xiangqi.featuresReady=false",
+    "scoring": "frozen",
+    "NET": "paused",
+    "scope": "V2 sourced documentation + selective human-friendly paraphrase; not exhaustive formal semantic proof"
+  },
+  "pending_note": "Current ordinary eligible pool is a design-level description, not live engine/UI picklist; no confirmed exact sampling weights",
+  "next_independent": {
+    "id": "NEXT-STD-INDEPENDENT-ACCEPTANCE-SCENARIO-CATALOG",
+    "subject": "普通已确认规则的非引擎验收场景目录与来源去重",
+    "status": "ready_not_started_independent",
+    "main_dependent": false,
+    "implementation_authorized": false,
+    "action": "从31项普通确认、13项本线共享确认与当前玩家指南出发，整理独立且不重复已有NP/AS/AP/ES的验收场景索引：每个场景注明具体已批准来源、前提与正负例、可公开字段、未决/达不到的自然可达性门槛；不运行引擎、不改共享代码、不将条件例冒充正式PASS。将可自主开展的文档校验与主线工程运行门禁分开。"
+  }
+}

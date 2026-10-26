@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "standard_independent_rule_audit_done_main_gate_blocked",
+  "status": "standard_independent_player_guide_v1_complete_main_gate_separate_blocked",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -44,12 +44,12 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-INDEPENDENT-PLAYER-RULES-V1",
+    "id": "NEXT-STD-INDEPENDENT-ACCEPTANCE-SCENARIO-CATALOG",
+    "subject": "普通已确认规则的非引擎验收场景目录与来源去重",
     "status": "ready_not_started_independent",
     "main_dependent": false,
     "implementation_authorized": false,
-    "subject": "普通模式玩家向简明规则与可选项说明",
-    "action": "仅在现行31项普通确认及13项共享确认范围内，整理玩家易懂的普通模式说明：32棋固定全明开局、H14和M07普通池排除、H03越河与无铁甲、M04/M05/M06/M08、D01合法触发、H15公开空池、占步/额外/受将和秘密边界；附原文来源并标明未决，不改玩法代码/共享源码/正式评分或UI实现。"
+    "action": "从31项普通确认、13项本线共享确认与当前玩家指南出发，整理独立且不重复已有NP/AS/AP/ES的验收场景索引：每个场景注明具体已批准来源、前提与正负例、可公开字段、未决/达不到的自然可达性门槛；不运行引擎、不改共享代码、不将条件例冒充正式PASS。将可自主开展的文档校验与主线工程运行门禁分开。"
   },
   "external_delivery": {
     "prepared_here": true,
@@ -956,22 +956,28 @@
     "resume_text": "继续《乐子象棋》普通象棋工作线。先核对最新远端HEAD与并发成果；读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt ，以 worklines/standard/CURRENT_STATE.json#latest_session_closeout 和 NEXT_ACTIONS.json#first 为准。已完成H21授鳞随机来源追溯及N=0/1/3/4/15、AS/AP/ES条件性索引的复验合同。下一任务 NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT（只读静态接口预检）尚未启动。正式NP/AS/AP/ES/RE与真实引擎测试/自然回放仍UNRUN；普通模式门禁不绕过。确认普通31/直接共享13/规则Δ0，评分冻结、NET暂停；保护新旧成果、增量写回并复读，不代填主线接收采用回执。"
   },
   "latest_task_completed": {
-    "id": "STD-INDEPENDENT-ORDINARY-RULE-COMPLETENESS-AUDIT-20261026",
+    "id": "STD-INDEPENDENT-PLAYER-RULES-V1-20261026",
     "date_local": "2026-10-26",
-    "read_head": "f453db4bd37936ee611669baf8711b4a49668e74",
-    "report": "worklines/standard/reviews/STD_ORDINARY_RULE_COMPLETENESS_AUDIT_20261026.md",
-    "matrix": "worklines/standard/specs/STD_ORDINARY_RULE_COMPLETENESS_MATRIX_20261026.json",
-    "ordinary_confirmed": 31,
-    "ordinary_source_headings": 31,
-    "direct_shared_confirmed": 13,
-    "updated_mode_entry": "worklines/standard/modes/standard/CURRENT_RULES.md",
-    "new_rules": 0,
+    "source_head": "a5875f79e19159a3ba567fcb80cf83ad3475d9ce",
+    "guide": "worklines/standard/guides/ORDINARY_CHESS_PLAYER_RULES_V1_20261026.md",
+    "source_review": "worklines/standard/reviews/ORDINARY_PLAYER_GUIDE_SOURCE_REVIEW_20261026.md",
+    "coverage_matrix": "worklines/standard/specs/ORDINARY_PLAYER_GUIDE_COVERAGE_20261026.json",
+    "hero_design_entries": 21,
+    "mutation_design_entries": 8,
+    "hidden_destiny": "D01",
+    "source_guard_checks": 14,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "new_confirmations": 0,
+    "rule_delta": 0,
     "engine_runs": 0,
     "formal_tests": "UNRUN",
-    "scoring": "frozen",
+    "score": "frozen",
     "NET": "paused",
-    "main_read": null,
-    "main_adoption": null
+    "mode_gate": "xiangqi.featuresReady=false",
+    "main_actual_read": null,
+    "main_actual_adoption": null,
+    "next_independent": "NEXT-STD-INDEPENDENT-ACCEPTANCE-SCENARIO-CATALOG"
   },
   "np_as_ap_es_observation_guard_matrix_20261025": {
     "id": "STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX-20261025",
@@ -1125,6 +1131,50 @@
       "action": "仅在现行31项普通确认及13项共享确认范围内，整理玩家易懂的普通模式说明：32棋固定全明开局、H14和M07普通池排除、H03越河与无铁甲、M04/M05/M06/M08、D01合法触发、H15公开空池、占步/额外/受将和秘密边界；附原文来源并标明未决，不改玩法代码/共享源码/正式评分或UI实现。"
     },
     "external_main_gate": {
+      "id": "NEXT-STD-NP-MAIN-FIX-DELTA-RECEPTION-ON-EVIDENCE",
+      "status": "BLOCKED_EXTERNAL_MAIN_EVIDENCE",
+      "requires_external_trigger": true,
+      "implementation_authorized": false,
+      "source_gate": "G00/G01/G02/G03/G05 and actual qualifying runs",
+      "action": "Once main actually writes a new receipt/engine commit/qualification/RNG evidence, diff exact pinned sections, update independent NP/AS/AP/ES eligibility and only claim tests actually run. Otherwise leave blocked and refrain from repeating same readback."
+    }
+  },
+  "independent_player_guide_20261026": {
+    "done": {
+      "id": "STD-INDEPENDENT-PLAYER-RULES-V1-20261026",
+      "date_local": "2026-10-26",
+      "source_head": "a5875f79e19159a3ba567fcb80cf83ad3475d9ce",
+      "guide": "worklines/standard/guides/ORDINARY_CHESS_PLAYER_RULES_V1_20261026.md",
+      "source_review": "worklines/standard/reviews/ORDINARY_PLAYER_GUIDE_SOURCE_REVIEW_20261026.md",
+      "coverage_matrix": "worklines/standard/specs/ORDINARY_PLAYER_GUIDE_COVERAGE_20261026.json",
+      "hero_design_entries": 21,
+      "mutation_design_entries": 8,
+      "hidden_destiny": "D01",
+      "source_guard_checks": 14,
+      "ordinary_confirmations": 31,
+      "direct_shared_confirmations": 13,
+      "new_confirmations": 0,
+      "rule_delta": 0,
+      "engine_runs": 0,
+      "formal_tests": "UNRUN",
+      "score": "frozen",
+      "NET": "paused",
+      "mode_gate": "xiangqi.featuresReady=false",
+      "main_actual_read": null,
+      "main_actual_adoption": null,
+      "next_independent": "NEXT-STD-INDEPENDENT-ACCEPTANCE-SCENARIO-CATALOG"
+    },
+    "source_guards": 14,
+    "player_guide": "worklines/standard/guides/ORDINARY_CHESS_PLAYER_RULES_V1_20261026.md",
+    "next": {
+      "id": "NEXT-STD-INDEPENDENT-ACCEPTANCE-SCENARIO-CATALOG",
+      "subject": "普通已确认规则的非引擎验收场景目录与来源去重",
+      "status": "ready_not_started_independent",
+      "main_dependent": false,
+      "implementation_authorized": false,
+      "action": "从31项普通确认、13项本线共享确认与当前玩家指南出发，整理独立且不重复已有NP/AS/AP/ES的验收场景索引：每个场景注明具体已批准来源、前提与正负例、可公开字段、未决/达不到的自然可达性门槛；不运行引擎、不改共享代码、不将条件例冒充正式PASS。将可自主开展的文档校验与主线工程运行门禁分开。"
+    },
+    "blocked_main": {
       "id": "NEXT-STD-NP-MAIN-FIX-DELTA-RECEPTION-ON-EVIDENCE",
       "status": "BLOCKED_EXTERNAL_MAIN_EVIDENCE",
       "requires_external_trigger": true,
