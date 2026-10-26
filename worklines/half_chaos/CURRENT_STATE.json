@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-48-ORIGINAL-PILOT-NEGATIVE-GUARD-20261026-r48",
+  "revision": "HC-49-ALL-REPLAYS-API-BINDING-20261026-r49",
   "workline": "half_chaos",
   "date_local": "2026-10-26",
   "timezone": "Asia/Shanghai",
-  "status": "r48_16_negative_probes_detected_stale_next_actions_repaired",
+  "status": "r49_all_12_natural_replays_110_source_requests_and_210_checkpoints_typed_bound_static_only",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -2657,5 +2657,37 @@
       "authorization": "DOCUMENT_ONLY; original natural replay engine runs NOT authorized",
       "source_of_truth": "worklines/half_chaos/CURRENT_STATE.json#/r48_negative_static_guard"
     }
+  },
+  "r49_all_replays_api_binding": {
+    "source_head": "8bac3345ed96e09fdf64f17203828dd5d6575840",
+    "report": "worklines/half_chaos/HC49_ALL_REPLAYS_API_BINDING.json",
+    "replay_count": 12,
+    "world_count": 10,
+    "normal_main": 100,
+    "pre_main_skill": 10,
+    "total_request_bindings": 110,
+    "source_observation_checkpoints": 210,
+    "previous_r47_requests": 23,
+    "newly_mapped_requests": 87,
+    "previous_r47_checkpoints": 43,
+    "newly_mapped_checkpoints": 167,
+    "source_static_checks": "257/257",
+    "prior_r47_exact_matches": true,
+    "original64": "UNRUN",
+    "original12_executed": 0,
+    "observed210_actual": 0,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "engine_runs": 0,
+    "next_independent": {
+      "id": "NEXT-HC-INDEPENDENT-210-BOUNDARY-AND-EVIDENCE-READINESS",
+      "status": "READY_DOCUMENT_ONLY",
+      "action": "在保留来源不变的情况下，按原210观察点对权威/公开红黑视图、技能拒绝不变量、时间边界、配对比较、证据无效/不完整和未涵盖刺激分类做来源缺口与交付边界核查。仅本线静态审查/文档，不加测试、不过原运行门禁。",
+      "authorization": "INDEPENDENT_SOURCE_AND_DOCUMENT_ONLY",
+      "owner": "half_chaos",
+      "blocked_main_separate": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS"
+    },
+    "main_engine_blocked_task": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS"
   }
 }

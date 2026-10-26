@@ -1,12 +1,12 @@
 {
-  "revision": "HC-48-ORIGINAL-PILOT-NEGATIVE-GUARD-20261026-r48",
+  "revision": "HC-49-ALL-REPLAYS-API-BINDING-20261026-r49",
   "next_independent_task": {
-    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
-    "status": "BLOCKED_MAIN_ADMISSION_OBSERVER_DRIVER",
-    "action": "先核主线真实发布的3精确两英雄+畸变tuple可信room/side/source准入、随机见证、精准被动观察、路径王安全闭合、受限原回放driver与具体执行授权；若缺仍可推进半混乱来源与文档，不可假装游戏引擎已运行或恢复旧r41断点。",
-    "owner": "main shared engine / half-chaos independent source",
-    "authorization": "DOCUMENT_ONLY; original natural replay engine runs NOT authorized",
-    "source_of_truth": "worklines/half_chaos/CURRENT_STATE.json#/r48_negative_static_guard"
+    "id": "NEXT-HC-INDEPENDENT-210-BOUNDARY-AND-EVIDENCE-READINESS",
+    "status": "READY_DOCUMENT_ONLY",
+    "action": "在保留来源不变的情况下，按原210观察点对权威/公开红黑视图、技能拒绝不变量、时间边界、配对比较、证据无效/不完整和未涵盖刺激分类做来源缺口与交付边界核查。仅本线静态审查/文档，不加测试、不过原运行门禁。",
+    "authorization": "INDEPENDENT_SOURCE_AND_DOCUMENT_ONLY",
+    "owner": "half_chaos",
+    "blocked_main_separate": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1412,11 +1412,14 @@
   ],
   "last_verified_head_at_preparation": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
   "latest_completed_stage": {
-    "revision": "HC-48-ORIGINAL-PILOT-NEGATIVE-GUARD-20261026-r48",
-    "report": "worklines/half_chaos/HC48_ORIGINAL_PILOT_NEGATIVE_GUARD.json",
-    "positive": "PASS",
-    "negative_detected": "16/16",
-    "runtime": "UNRUN"
+    "revision": "HC-49-ALL-REPLAYS-API-BINDING-20261026-r49",
+    "report": "worklines/half_chaos/HC49_ALL_REPLAYS_API_BINDING.json",
+    "main_requests": 100,
+    "skill_requests": 10,
+    "checkpoints": 210,
+    "static_checks": "257/257 V2",
+    "source_runs": 0,
+    "original64": "UNRUN"
   },
   "stale_index_repair": {
     "prior_revision": "HC-SESSION-CLOSEOUT-20261020-r41",
@@ -1424,5 +1427,25 @@
     "prior_task_status": "HISTORICAL_OBSOLETE_AFTER_PR8_REAL_CODE_AND_R42_SOURCE_READ",
     "current_task_id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
     "previous_history_preserved": true
-  }
+  },
+  "blocked_main_task": {
+    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "status": "WAITING_MAIN_WORK_QUOTA_AND_TRUSTED_CODE_DELIVERY",
+    "resume_condition": "Concrete main-owned trusted tuple admission, exact passive observer, original driver and future natural-run authorization; HC only rechecks after actual new source",
+    "not_required_for_independent_next": true
+  },
+  "available_without_main_quota": [
+    {
+      "id": "NEXT-HC-INDEPENDENT-210-BOUNDARY-AND-EVIDENCE-READINESS",
+      "category": "SOURCE_ONLY_OBSERVATION_EVIDENCE_GAP_AUDIT",
+      "depends_on_main_work": false,
+      "requires_game_engine": false
+    },
+    {
+      "id": "NEXT-HC-INDEPENDENT-PAIR_PRIVACY_SCOPE_REVIEW",
+      "category": "SOURCE_ONLY_PUBLIC_PRIVATE_COMPARE",
+      "depends_on_main_work": false,
+      "requires_game_engine": false
+    }
+  ]
 }

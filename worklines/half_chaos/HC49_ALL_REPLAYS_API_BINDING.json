@@ -1,0 +1,4562 @@
+{
+  "schema": "lezi.hc.original_all_12_api_binding_manifest.v1",
+  "revision": "HC-49-ALL-REPLAYS-API-BINDING-20261026-r49",
+  "date_local": "2026-10-26",
+  "workline": "half_chaos",
+  "source_handoff_head": "8bac3345ed96e09fdf64f17203828dd5d6575840",
+  "engine_pin": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "purpose": "Source-only expansion of r47 from 3 pilots/23 requests/43 checkpoints to all 12 original natural replay declarations/110 requests/210 checkpoints. No new replay, rule, or runtime authorization.",
+  "source_blobs": {
+    "REPLAY_ACTION_DATA.json": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+    "INITIALIZATION_WITNESS_DATA.json": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+    "ASSERTION_EVIDENCE_MATRIX.json": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+    "HC47_ORIGINAL_PILOT_API_BOUNDARY.json": "aa4c60b9a8a547e1062b0aa4876b594de80c5ac7",
+    "HC48_ORIGINAL_PILOT_NEGATIVE_GUARD.json": "842738b8046ff355f136c895765651d0f3e16686"
+  },
+  "prior_pilot_ids": [
+    "MA-PD01",
+    "MA-DS03",
+    "MA-DS04"
+  ],
+  "validation": {
+    "level": "V2_SOURCE_ONLY",
+    "all_passed": true,
+    "check_count": 257,
+    "passed": 257,
+    "checks": {
+      "SOURCE_PIN_R47": true,
+      "SOURCE_PIN_R48": true,
+      "ORIGINAL_COUNTS": true,
+      "ORIGINAL_STATUSES": true,
+      "SOURCE_UNIQUE_IDS": true,
+      "ACTUAL_SRC_COUNTS": true,
+      "REPLAY_LINK_MA-PD01": true,
+      "MAIN_RAW_UNRUN_MA-PD01:R1:main": true,
+      "MAIN_BOUNDARIES_MA-PD01:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD01:B1:main": true,
+      "MAIN_BOUNDARIES_MA-PD01:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD01:R2:main": true,
+      "MAIN_BOUNDARIES_MA-PD01:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD01:B2:main": true,
+      "MAIN_BOUNDARIES_MA-PD01:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD01:R3:main": true,
+      "MAIN_BOUNDARIES_MA-PD01:R3:main": true,
+      "COUNT_MA-PD01": true,
+      "REPLAY_LINK_MA-PD02": true,
+      "MAIN_RAW_UNRUN_MA-PD02:R1:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD02:B1:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD02:R2:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD02:B2:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD02:R3:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD02:B3:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD02:R4:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:R4:main": true,
+      "MAIN_RAW_UNRUN_MA-PD02:B4:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:B4:main": true,
+      "MAIN_RAW_UNRUN_MA-PD02:R5:main": true,
+      "MAIN_BOUNDARIES_MA-PD02:R5:main": true,
+      "COUNT_MA-PD02": true,
+      "REPLAY_LINK_MA-PD03": true,
+      "MAIN_RAW_UNRUN_MA-PD03:R1:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:B1:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:R2:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:B2:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:R3:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:B3:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:R4:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:R4:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:B4:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:B4:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:R5:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:R5:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:B5:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:B5:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:R6:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:R6:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:B6:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:B6:main": true,
+      "MAIN_RAW_UNRUN_MA-PD03:R7:main": true,
+      "MAIN_BOUNDARIES_MA-PD03:R7:main": true,
+      "COUNT_MA-PD03": true,
+      "REPLAY_LINK_MA-PD04": true,
+      "MAIN_RAW_UNRUN_MA-PD04:R1:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:B1:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:R2:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:B2:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:R3:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:B3:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:R4:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:R4:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:B4:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:B4:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:R5:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:R5:main": true,
+      "MAIN_RAW_UNRUN_MA-PD04:B5:main": true,
+      "MAIN_BOUNDARIES_MA-PD04:B5:main": true,
+      "COUNT_MA-PD04": true,
+      "REPLAY_LINK_MA-PD05-A": true,
+      "MAIN_RAW_UNRUN_MA-PD05-A:R1:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-A:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-A:B1:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-A:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-A:R2:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-A:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-A:B2:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-A:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-A:R3:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-A:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-A:B3:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-A:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-A:R4:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-A:R4:main": true,
+      "COUNT_MA-PD05-A": true,
+      "REPLAY_LINK_MA-PD05-B": true,
+      "MAIN_RAW_UNRUN_MA-PD05-B:R1:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-B:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-B:B1:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-B:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-B:R2:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-B:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-B:B2:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-B:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-B:R3:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-B:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-B:B3:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-B:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD05-B:R4:main": true,
+      "MAIN_BOUNDARIES_MA-PD05-B:R4:main": true,
+      "COUNT_MA-PD05-B": true,
+      "REPLAY_LINK_MA-PD06-A": true,
+      "MAIN_RAW_UNRUN_MA-PD06-A:R1:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-A:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-A:B1:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-A:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-A:R2:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-A:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-A:B2:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-A:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-A:R3:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-A:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-A:B3:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-A:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-A:R4:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-A:R4:main": true,
+      "COUNT_MA-PD06-A": true,
+      "REPLAY_LINK_MA-PD06-B": true,
+      "MAIN_RAW_UNRUN_MA-PD06-B:R1:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-B:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-B:B1:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-B:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-B:R2:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-B:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-B:B2:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-B:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-B:R3:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-B:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-B:B3:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-B:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-PD06-B:R4:main": true,
+      "MAIN_BOUNDARIES_MA-PD06-B:R4:main": true,
+      "COUNT_MA-PD06-B": true,
+      "REPLAY_LINK_MA-DS01-02": true,
+      "MAIN_RAW_UNRUN_MA-DS01-02:R1:main": true,
+      "MAIN_BOUNDARIES_MA-DS01-02:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-DS01-02:B1:main": true,
+      "MAIN_BOUNDARIES_MA-DS01-02:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-DS01-02:R2:main": true,
+      "MAIN_BOUNDARIES_MA-DS01-02:R2:main": true,
+      "SKILL_KNOWN_MA-DS01-02:B2:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS01-02:B2:pre-1": true,
+      "MAIN_RAW_UNRUN_MA-DS01-02:B2:main": true,
+      "MAIN_BOUNDARIES_MA-DS01-02:B2:main": true,
+      "SKILL_KNOWN_MA-DS01-02:R3:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS01-02:R3:pre-1": true,
+      "MAIN_RAW_UNRUN_MA-DS01-02:R3:main": true,
+      "MAIN_BOUNDARIES_MA-DS01-02:R3:main": true,
+      "SKILL_KNOWN_MA-DS01-02:B3:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS01-02:B3:pre-1": true,
+      "MAIN_RAW_UNRUN_MA-DS01-02:B3:main": true,
+      "MAIN_BOUNDARIES_MA-DS01-02:B3:main": true,
+      "SKILL_KNOWN_MA-DS01-02:R4:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS01-02:R4:pre-1": true,
+      "SKILL_KNOWN_MA-DS01-02:R4:pre-2": true,
+      "SKILL_CHECKPOINT_MA-DS01-02:R4:pre-2": true,
+      "MAIN_RAW_UNRUN_MA-DS01-02:R4:main": true,
+      "MAIN_BOUNDARIES_MA-DS01-02:R4:main": true,
+      "COUNT_MA-DS01-02": true,
+      "REPLAY_LINK_MA-DS03": true,
+      "MAIN_RAW_UNRUN_MA-DS03:R1:main": true,
+      "MAIN_BOUNDARIES_MA-DS03:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-DS03:B1:main": true,
+      "MAIN_BOUNDARIES_MA-DS03:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-DS03:R2:main": true,
+      "MAIN_BOUNDARIES_MA-DS03:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-DS03:B2:main": true,
+      "MAIN_BOUNDARIES_MA-DS03:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-DS03:R3:main": true,
+      "MAIN_BOUNDARIES_MA-DS03:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-DS03:B3:main": true,
+      "MAIN_BOUNDARIES_MA-DS03:B3:main": true,
+      "SKILL_KNOWN_MA-DS03:R4:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS03:R4:pre-1": true,
+      "MAIN_RAW_UNRUN_MA-DS03:R4:main": true,
+      "MAIN_BOUNDARIES_MA-DS03:R4:main": true,
+      "COUNT_MA-DS03": true,
+      "REPLAY_LINK_MA-DS04": true,
+      "MAIN_RAW_UNRUN_MA-DS04:R1:main": true,
+      "MAIN_BOUNDARIES_MA-DS04:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-DS04:B1:main": true,
+      "MAIN_BOUNDARIES_MA-DS04:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-DS04:R2:main": true,
+      "MAIN_BOUNDARIES_MA-DS04:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-DS04:B2:main": true,
+      "MAIN_BOUNDARIES_MA-DS04:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-DS04:R3:main": true,
+      "MAIN_BOUNDARIES_MA-DS04:R3:main": true,
+      "SKILL_KNOWN_MA-DS04:B3:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS04:B3:pre-1": true,
+      "MAIN_RAW_UNRUN_MA-DS04:B3:main": true,
+      "MAIN_BOUNDARIES_MA-DS04:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-DS04:R4:main": true,
+      "MAIN_BOUNDARIES_MA-DS04:R4:main": true,
+      "SKILL_KNOWN_MA-DS04:B4:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS04:B4:pre-1": true,
+      "MAIN_RAW_UNRUN_MA-DS04:B4:main": true,
+      "MAIN_BOUNDARIES_MA-DS04:B4:main": true,
+      "COUNT_MA-DS04": true,
+      "REPLAY_LINK_MA-DS05": true,
+      "MAIN_RAW_UNRUN_MA-DS05:R1:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:R1:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:B1:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:B1:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:R2:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:R2:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:B2:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:B2:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:R3:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:R3:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:B3:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:B3:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:R4:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:R4:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:B4:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:B4:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:R5:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:R5:main": true,
+      "SKILL_KNOWN_MA-DS05:B5:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS05:B5:pre-1": true,
+      "MAIN_RAW_UNRUN_MA-DS05:B5:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:B5:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:R6:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:R6:main": true,
+      "MAIN_RAW_UNRUN_MA-DS05:B6:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:B6:main": true,
+      "SKILL_KNOWN_MA-DS05:R7:pre-1": true,
+      "SKILL_CHECKPOINT_MA-DS05:R7:pre-1": true,
+      "MAIN_RAW_UNRUN_MA-DS05:R7:main": true,
+      "MAIN_BOUNDARIES_MA-DS05:R7:main": true,
+      "COUNT_MA-DS05": true,
+      "ALL_110_EXACT": true,
+      "ALL_210_BOUND": true,
+      "ALL_ID_UNIQUE": true,
+      "TEN_SKILLS_6_ACCEPTED_4_REFUSED": true,
+      "WORLD_28_FISHER_YATES": true,
+      "R47_THREE_PILOTS_MATCH_EXACT": true,
+      "12_REPLAY_INDEX": true
+    },
+    "executed_in_this_phase": "Cross-object structural and typed-proposal construction only",
+    "engine_runs": 0,
+    "source_modified": false,
+    "privileged_engine_tests": false
+  },
+  "coverage": {
+    "original_replays": 12,
+    "original_worlds": 10,
+    "original_specs": 64,
+    "original_main_requests": 100,
+    "original_pre_main_abilities": 10,
+    "ability_accepted_expected": 6,
+    "ability_rejected_expected": 4,
+    "source_observation_checkpoints": 210,
+    "previous_pilot_requests": 23,
+    "additional_requests_mapped": 87,
+    "previous_pilot_checkpoints": 43,
+    "additional_checkpoints_referenced": 167,
+    "actual_evidence_snapshots": 0
+  },
+  "sequence_constraints": [
+    "Each replay starts a separate original new room/opening even if worlds reused; DS01/DS02 is one continuous replay.",
+    "Within each formal turn, all original pre_main_requests in declared order before normal_main.",
+    "Two refusals on DS01/02 R4 are separate semantic attempts under unchanged unsafe state, not transport retries.",
+    "Hero and mutation tuple binds after real RPS, using the true player/side assignment; initial source witness is not runtime secret identity injection.",
+    "Matched-pair semantics come from original sources and require independent source/authority proof; the table alone cannot create a paired observed comparison."
+  ],
+  "api_boundary": {
+    "typed_only": "MoveCommand and HeroAbilityCommand mapping proposals, not accepted wire payloads. Source stored 'UNRESOLVED_NOT_AN_API_SCHEMA' for normal main.",
+    "main": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+    "skill": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+    "actor_binding": "trusted room/game.players from actual RPS; do not infer playerId from semantic actor side",
+    "revision_action": "current authority revision and driver unique actionId, never static placeholder submission",
+    "caster": "bomb pieceId must be visible and actually controlled at that moment, never authority_only_expected_caster_initial_id copied into player payload",
+    "observer": "actual return can include normal close/tick; cannot be advertised as after-full-main-atom checkpoint",
+    "secret": "trusted authority-only initial IDs do not become client information"
+  },
+  "world_randomness": "10 source identity worlds each contain 28 black then red 15-piece Fisher–Yates draw declarations; mutation draw/legal setup remains main-owned and UNRUN.",
+  "readiness": {
+    "original_12_actual_executed": 0,
+    "original_64": "UNRUN",
+    "actual_210_observations": 0,
+    "source_worlds_applied_to_engine": 0,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "main_receiver_readback": "NO_NEW_R49_RECEIPT",
+    "exact_tuple_gate": "BLOCKED_MAIN",
+    "trusted_driver": "NOT_PUBLISHED",
+    "passive_observer": "NOT_READY",
+    "new_gameplay_confirmation": false,
+    "engineering_edits": 0,
+    "other_worklines_edited": false
+  },
+  "replay_index": [
+    {
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 5,
+      "before_main_skill_requests": 0,
+      "all_requests": 5,
+      "original_checkpoints": 10,
+      "source_spec_ids": [
+        "PD-S01",
+        "PD-S02",
+        "PD-S03",
+        "PD-S04",
+        "PD-S05",
+        "PD-S31",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M01",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 9,
+      "before_main_skill_requests": 0,
+      "all_requests": 9,
+      "original_checkpoints": 18,
+      "source_spec_ids": [
+        "PD-S06",
+        "PD-S07",
+        "PD-S08",
+        "PD-S09",
+        "PD-S10",
+        "PD-S31",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M01",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 13,
+      "before_main_skill_requests": 0,
+      "all_requests": 13,
+      "original_checkpoints": 26,
+      "source_spec_ids": [
+        "PD-S11",
+        "PD-S12",
+        "PD-S13",
+        "PD-S14",
+        "PD-S15",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 10,
+      "before_main_skill_requests": 0,
+      "all_requests": 10,
+      "original_checkpoints": 20,
+      "source_spec_ids": [
+        "PD-S16",
+        "PD-S17",
+        "PD-S18",
+        "PD-S19",
+        "PD-S20",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 7,
+      "before_main_skill_requests": 0,
+      "all_requests": 7,
+      "original_checkpoints": 14,
+      "source_spec_ids": [
+        "PD-S21",
+        "PD-S22",
+        "PD-S23",
+        "PD-S24",
+        "PD-S25",
+        "PD-S31",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 7,
+      "before_main_skill_requests": 0,
+      "all_requests": 7,
+      "original_checkpoints": 14,
+      "source_spec_ids": [
+        "PD-S21",
+        "PD-S22",
+        "PD-S23",
+        "PD-S24",
+        "PD-S25",
+        "PD-S31",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M01",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 7,
+      "before_main_skill_requests": 0,
+      "all_requests": 7,
+      "original_checkpoints": 14,
+      "source_spec_ids": [
+        "PD-S26",
+        "PD-S27",
+        "PD-S28",
+        "PD-S29",
+        "PD-S30",
+        "PD-S31",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M01",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 7,
+      "before_main_skill_requests": 0,
+      "all_requests": 7,
+      "original_checkpoints": 14,
+      "source_spec_ids": [
+        "PD-S26",
+        "PD-S27",
+        "PD-S28",
+        "PD-S29",
+        "PD-S30",
+        "PD-S31",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "continuity": "DS02 continues actual accepted DS01 history in this single replay",
+      "normal_main_requests": 7,
+      "before_main_skill_requests": 5,
+      "all_requests": 12,
+      "original_checkpoints": 19,
+      "source_spec_ids": [
+        "DS-S01",
+        "DS-S02",
+        "DS-S03",
+        "DS-S04",
+        "DS-S05",
+        "DS-S06",
+        "DS-S07",
+        "DS-S08",
+        "DS-S09",
+        "DS-S10",
+        "DS-S11",
+        "DS-S12",
+        "DS-S16",
+        "DS-S22",
+        "DS-S28"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 7,
+      "before_main_skill_requests": 1,
+      "all_requests": 8,
+      "original_checkpoints": 15,
+      "source_spec_ids": [
+        "DS-S13",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16",
+        "DS-S28"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 8,
+      "before_main_skill_requests": 2,
+      "all_requests": 10,
+      "original_checkpoints": 18,
+      "source_spec_ids": [
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22",
+        "DS-S28"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    },
+    {
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "continuity": "independent fresh opening even when identity world is shared",
+      "normal_main_requests": 13,
+      "before_main_skill_requests": 2,
+      "all_requests": 15,
+      "original_checkpoints": 28,
+      "source_spec_ids": [
+        "DS-S16",
+        "DS-S23",
+        "DS-S24",
+        "DS-S25",
+        "DS-S26",
+        "DS-S27",
+        "DS-S28"
+      ],
+      "pilot_status": "UNRUN",
+      "source_legality": "NOT_PROVEN",
+      "signed_random_witness": "source declarative witness only; real draw binding not executed"
+    }
+  ],
+  "paired_scope_notes": [
+    {
+      "group": "PD05",
+      "left": "MA-PD05-A",
+      "right": "MA-PD05-B",
+      "point": "public-or-secret controlled paired inspection; do not claim matched public sequence without source verification"
+    },
+    {
+      "group": "PD06",
+      "left": "MA-PD06-A",
+      "right": "MA-PD06-B",
+      "point": "separate worlds and expected paired controls; no runtime proof"
+    },
+    {
+      "group": "DS01_to_DS02",
+      "left": "MA-DS01-02",
+      "right": "MA-DS01-02",
+      "point": "single continuous original history; no new independent room or reset between DS01 and DS02"
+    }
+  ],
+  "requests": [
+    {
+      "id": "MA-PD01:R1:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 7
+        },
+        "to": {
+          "x": 1,
+          "y": 6
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:R1:main:closed",
+      "checkpoint_end": "MA-PD01:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD01:B1:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:B1:main:closed",
+      "checkpoint_end": "MA-PD01:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD01:R2:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:R2:main:closed",
+      "checkpoint_end": "MA-PD01:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD01:B2:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 1,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:B2:main:closed",
+      "checkpoint_end": "MA-PD01:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD01:R3:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 6
+        },
+        "to": {
+          "x": 1,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:R3:main:closed",
+      "checkpoint_end": "MA-PD01:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:R1:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 9
+        },
+        "to": {
+          "x": 2,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:R1:main:closed",
+      "checkpoint_end": "MA-PD02:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:B1:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 2
+        },
+        "to": {
+          "x": 3,
+          "y": 2
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:B1:main:closed",
+      "checkpoint_end": "MA-PD02:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:R2:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 7
+        },
+        "to": {
+          "x": 3,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:R2:main:closed",
+      "checkpoint_end": "MA-PD02:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:B2:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 8,
+          "y": 3
+        },
+        "to": {
+          "x": 8,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:B2:main:closed",
+      "checkpoint_end": "MA-PD02:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:R3:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 5
+        },
+        "to": {
+          "x": 5,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:R3:main:closed",
+      "checkpoint_end": "MA-PD02:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:B3:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:B3:main:closed",
+      "checkpoint_end": "MA-PD02:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:R4:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 5,
+          "y": 4
+        },
+        "to": {
+          "x": 4,
+          "y": 2
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:R4:main:closed",
+      "checkpoint_end": "MA-PD02:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:B4:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B4",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 2,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:B4:main:closed",
+      "checkpoint_end": "MA-PD02:B4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD02:R5:main",
+      "replay_id": "MA-PD02",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R5",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 2
+        },
+        "to": {
+          "x": 2,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD02:R5:main:closed",
+      "checkpoint_end": "MA-PD02:R5:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:R1:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 9
+        },
+        "to": {
+          "x": 2,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:R1:main:closed",
+      "checkpoint_end": "MA-PD03:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:B1:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 2
+        },
+        "to": {
+          "x": 3,
+          "y": 2
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:B1:main:closed",
+      "checkpoint_end": "MA-PD03:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:R2:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 7
+        },
+        "to": {
+          "x": 3,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:R2:main:closed",
+      "checkpoint_end": "MA-PD03:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:B2:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 8,
+          "y": 3
+        },
+        "to": {
+          "x": 8,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:B2:main:closed",
+      "checkpoint_end": "MA-PD03:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:R3:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 5
+        },
+        "to": {
+          "x": 5,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:R3:main:closed",
+      "checkpoint_end": "MA-PD03:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:B3:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:B3:main:closed",
+      "checkpoint_end": "MA-PD03:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:R4:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 5,
+          "y": 4
+        },
+        "to": {
+          "x": 3,
+          "y": 3
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:R4:main:closed",
+      "checkpoint_end": "MA-PD03:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:B4:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B4",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 2,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:B4:main:closed",
+      "checkpoint_end": "MA-PD03:B4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:R5:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R5",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 3
+        },
+        "to": {
+          "x": 5,
+          "y": 2
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:R5:main:closed",
+      "checkpoint_end": "MA-PD03:R5:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:B5:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B5",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:B5:main:closed",
+      "checkpoint_end": "MA-PD03:B5:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:R6:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R6",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 5,
+          "y": 2
+        },
+        "to": {
+          "x": 3,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:R6:main:closed",
+      "checkpoint_end": "MA-PD03:R6:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:B6:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B6",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 4,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:B6:main:closed",
+      "checkpoint_end": "MA-PD03:B6:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD03:R7:main",
+      "replay_id": "MA-PD03",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R7",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 1
+        },
+        "to": {
+          "x": 1,
+          "y": 2
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD03:R7:main:closed",
+      "checkpoint_end": "MA-PD03:R7:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:R1:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 7
+        },
+        "to": {
+          "x": 1,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:R1:main:closed",
+      "checkpoint_end": "MA-PD04:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:B1:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 8,
+          "y": 3
+        },
+        "to": {
+          "x": 8,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:B1:main:closed",
+      "checkpoint_end": "MA-PD04:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:R2:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 0
+        },
+        "to": {
+          "x": 0,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:R2:main:closed",
+      "checkpoint_end": "MA-PD04:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:B2:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 5,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:B2:main:closed",
+      "checkpoint_end": "MA-PD04:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:R3:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "x": 0,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:R3:main:closed",
+      "checkpoint_end": "MA-PD04:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:B3:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 2,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:B3:main:closed",
+      "checkpoint_end": "MA-PD04:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:R4:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:R4:main:closed",
+      "checkpoint_end": "MA-PD04:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:B4:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "B4",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:B4:main:closed",
+      "checkpoint_end": "MA-PD04:B4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:R5:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "R5",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 1
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:R5:main:closed",
+      "checkpoint_end": "MA-PD04:R5:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD04:B5:main",
+      "replay_id": "MA-PD04",
+      "world_id": "IW-4fb3ac123360c7d4",
+      "turn": "B5",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 0
+        },
+        "to": {
+          "x": 5,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD04:B5:main:closed",
+      "checkpoint_end": "MA-PD04:B5:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-A:R1:main",
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-A:R1:main:closed",
+      "checkpoint_end": "MA-PD05-A:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-A:B1:main",
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-A:B1:main:closed",
+      "checkpoint_end": "MA-PD05-A:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-A:R2:main",
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 5
+        },
+        "to": {
+          "x": 0,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-A:R2:main:closed",
+      "checkpoint_end": "MA-PD05-A:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-A:B2:main",
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 0,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-A:B2:main:closed",
+      "checkpoint_end": "MA-PD05-A:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-A:R3:main",
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 4
+        },
+        "to": {
+          "x": 0,
+          "y": 3
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-A:R3:main:closed",
+      "checkpoint_end": "MA-PD05-A:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-A:B3:main",
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 8,
+          "y": 3
+        },
+        "to": {
+          "x": 8,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-A:B3:main:closed",
+      "checkpoint_end": "MA-PD05-A:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-A:R4:main",
+      "replay_id": "MA-PD05-A",
+      "world_id": "IW-b069ebc9db68ef3e",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 9
+        },
+        "to": {
+          "x": 0,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-A:R4:main:closed",
+      "checkpoint_end": "MA-PD05-A:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-B:R1:main",
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-B:R1:main:closed",
+      "checkpoint_end": "MA-PD05-B:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-B:B1:main",
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-B:B1:main:closed",
+      "checkpoint_end": "MA-PD05-B:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-B:R2:main",
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 5
+        },
+        "to": {
+          "x": 0,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-B:R2:main:closed",
+      "checkpoint_end": "MA-PD05-B:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-B:B2:main",
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 0,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-B:B2:main:closed",
+      "checkpoint_end": "MA-PD05-B:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-B:R3:main",
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 4
+        },
+        "to": {
+          "x": 0,
+          "y": 3
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-B:R3:main:closed",
+      "checkpoint_end": "MA-PD05-B:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-B:B3:main",
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 8,
+          "y": 3
+        },
+        "to": {
+          "x": 8,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-B:B3:main:closed",
+      "checkpoint_end": "MA-PD05-B:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD05-B:R4:main",
+      "replay_id": "MA-PD05-B",
+      "world_id": "IW-40b431632b89dc78",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 9
+        },
+        "to": {
+          "x": 0,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD05-B:R4:main:closed",
+      "checkpoint_end": "MA-PD05-B:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-A:R1:main",
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-A:R1:main:closed",
+      "checkpoint_end": "MA-PD06-A:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-A:B1:main",
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 5,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-A:B1:main:closed",
+      "checkpoint_end": "MA-PD06-A:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-A:R2:main",
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 6
+        },
+        "to": {
+          "x": 2,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-A:R2:main:closed",
+      "checkpoint_end": "MA-PD06-A:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-A:B2:main",
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 3,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-A:B2:main:closed",
+      "checkpoint_end": "MA-PD06-A:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-A:R3:main",
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 6,
+          "y": 6
+        },
+        "to": {
+          "x": 6,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-A:R3:main:closed",
+      "checkpoint_end": "MA-PD06-A:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-A:B3:main",
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 1
+        },
+        "to": {
+          "x": 3,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-A:B3:main:closed",
+      "checkpoint_end": "MA-PD06-A:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-A:R4:main",
+      "replay_id": "MA-PD06-A",
+      "world_id": "IW-168cb617da30889f",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 9
+        },
+        "to": {
+          "x": 3,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-A:R4:main:closed",
+      "checkpoint_end": "MA-PD06-A:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-B:R1:main",
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-B:R1:main:closed",
+      "checkpoint_end": "MA-PD06-B:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-B:B1:main",
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 5,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-B:B1:main:closed",
+      "checkpoint_end": "MA-PD06-B:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-B:R2:main",
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 6
+        },
+        "to": {
+          "x": 2,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-B:R2:main:closed",
+      "checkpoint_end": "MA-PD06-B:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-B:B2:main",
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 3,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-B:B2:main:closed",
+      "checkpoint_end": "MA-PD06-B:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-B:R3:main",
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 6,
+          "y": 6
+        },
+        "to": {
+          "x": 6,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-B:R3:main:closed",
+      "checkpoint_end": "MA-PD06-B:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-B:B3:main",
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 1
+        },
+        "to": {
+          "x": 3,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-B:B3:main:closed",
+      "checkpoint_end": "MA-PD06-B:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-PD06-B:R4:main",
+      "replay_id": "MA-PD06-B",
+      "world_id": "IW-d158bccabffc5f23",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 9
+        },
+        "to": {
+          "x": 3,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD06-B:R4:main:closed",
+      "checkpoint_end": "MA-PD06-B:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:R1:main",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 9
+        },
+        "to": {
+          "x": 0,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS01-02:R1:main:closed",
+      "checkpoint_end": "MA-DS01-02:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:B1:main",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 3
+        },
+        "to": {
+          "x": 0,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS01-02:B1:main:closed",
+      "checkpoint_end": "MA-DS01-02:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:R2:main",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 9
+        },
+        "to": {
+          "x": 4,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS01-02:R2:main:closed",
+      "checkpoint_end": "MA-DS01-02:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:B2:pre-1",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "dragon_bomb",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "bomb",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>",
+        "pieceId": "<currently public visible caster id at source-declared x/y; bind live authority not secret alias>",
+        "to": {
+          "x": 0,
+          "y": 5
+        }
+      },
+      "semantic_caster_position": [
+        0,
+        4
+      ],
+      "source_initial_caster_reference": "covered-10",
+      "expected_disposition": "accepted",
+      "original_evidence_checkpoint": "MA-DS01-02:B2:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "public caster identity binding, never trust authority_only initial_id as a player command"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:B2:main",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 2
+        },
+        "to": {
+          "x": 1,
+          "y": 9
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS01-02:B2:main:closed",
+      "checkpoint_end": "MA-DS01-02:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:R3:pre-1",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "hourglass",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "hourglass",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>"
+      },
+      "semantic_caster_position": null,
+      "source_initial_caster_reference": null,
+      "expected_disposition": "accepted",
+      "original_evidence_checkpoint": "MA-DS01-02:R3:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "whole six-step hourglass safety closure before acceptance"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:R3:main",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS01-02:R3:main:closed",
+      "checkpoint_end": "MA-DS01-02:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:B3:pre-1",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "dragon_bomb",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "bomb",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>",
+        "pieceId": "<currently public visible caster id at source-declared x/y; bind live authority not secret alias>",
+        "to": {
+          "x": 0,
+          "y": 5
+        }
+      },
+      "semantic_caster_position": [
+        0,
+        4
+      ],
+      "source_initial_caster_reference": "covered-10",
+      "expected_disposition": "accepted",
+      "original_evidence_checkpoint": "MA-DS01-02:B3:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "public caster identity binding, never trust authority_only initial_id as a player command"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:B3:main",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 9
+        },
+        "to": {
+          "x": 3,
+          "y": 9
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS01-02:B3:main:closed",
+      "checkpoint_end": "MA-DS01-02:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:R4:pre-1",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "hourglass",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "hourglass",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>"
+      },
+      "semantic_caster_position": null,
+      "source_initial_caster_reference": null,
+      "expected_disposition": "rejected",
+      "original_evidence_checkpoint": "MA-DS01-02:R4:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "whole six-step hourglass safety closure before acceptance"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:R4:pre-2",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 2,
+      "type": "before_main_skill",
+      "source_kind": "hourglass",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "hourglass",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>"
+      },
+      "semantic_caster_position": null,
+      "source_initial_caster_reference": null,
+      "expected_disposition": "rejected",
+      "original_evidence_checkpoint": "MA-DS01-02:R4:pre-2:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "whole six-step hourglass safety closure before acceptance"
+      ]
+    },
+    {
+      "id": "MA-DS01-02:R4:main",
+      "replay_id": "MA-DS01-02",
+      "world_id": "IW-b66071aa72ba8a72",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 3,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 9
+        },
+        "to": {
+          "x": 4,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS01-02:R4:main:closed",
+      "checkpoint_end": "MA-DS01-02:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS03:R1:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 7,
+          "y": 7
+        },
+        "to": {
+          "x": 3,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:R1:main:closed",
+      "checkpoint_end": "MA-DS03:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS03:B1:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 2
+        },
+        "to": {
+          "x": 1,
+          "y": 3
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:B1:main:closed",
+      "checkpoint_end": "MA-DS03:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS03:R2:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 9
+        },
+        "to": {
+          "x": 4,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:R2:main:closed",
+      "checkpoint_end": "MA-DS03:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS03:B2:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 3
+        },
+        "to": {
+          "x": 1,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:B2:main:closed",
+      "checkpoint_end": "MA-DS03:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS03:R3:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 8
+        },
+        "to": {
+          "x": 4,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:R3:main:closed",
+      "checkpoint_end": "MA-DS03:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS03:B3:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 3
+        },
+        "to": {
+          "x": 0,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:B3:main:closed",
+      "checkpoint_end": "MA-DS03:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS03:R4:pre-1",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "hourglass",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "hourglass",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>"
+      },
+      "semantic_caster_position": null,
+      "source_initial_caster_reference": null,
+      "expected_disposition": "rejected",
+      "original_evidence_checkpoint": "MA-DS03:R4:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "whole six-step hourglass safety closure before acceptance"
+      ]
+    },
+    {
+      "id": "MA-DS03:R4:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:R4:main:closed",
+      "checkpoint_end": "MA-DS03:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS04:R1:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:R1:main:closed",
+      "checkpoint_end": "MA-DS04:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS04:B1:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 0
+        },
+        "to": {
+          "x": 0,
+          "y": 2
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:B1:main:closed",
+      "checkpoint_end": "MA-DS04:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS04:R2:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 6
+        },
+        "to": {
+          "x": 2,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:R2:main:closed",
+      "checkpoint_end": "MA-DS04:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS04:B2:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:B2:main:closed",
+      "checkpoint_end": "MA-DS04:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS04:R3:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 7
+        },
+        "to": {
+          "x": 1,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:R3:main:closed",
+      "checkpoint_end": "MA-DS04:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS04:B3:pre-1",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "dragon_bomb",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "bomb",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>",
+        "pieceId": "<currently public visible caster id at source-declared x/y; bind live authority not secret alias>",
+        "to": {
+          "x": 4,
+          "y": 2
+        }
+      },
+      "semantic_caster_position": [
+        4,
+        1
+      ],
+      "source_initial_caster_reference": "covered-03",
+      "expected_disposition": "rejected",
+      "original_evidence_checkpoint": "MA-DS04:B3:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "public caster identity binding, never trust authority_only initial_id as a player command"
+      ]
+    },
+    {
+      "id": "MA-DS04:B3:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "x": 1,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:B3:main:closed",
+      "checkpoint_end": "MA-DS04:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS04:R4:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 6,
+          "y": 6
+        },
+        "to": {
+          "x": 6,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:R4:main:closed",
+      "checkpoint_end": "MA-DS04:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS04:B4:pre-1",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B4",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "dragon_bomb",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "bomb",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>",
+        "pieceId": "<currently public visible caster id at source-declared x/y; bind live authority not secret alias>",
+        "to": {
+          "x": 4,
+          "y": 2
+        }
+      },
+      "semantic_caster_position": [
+        4,
+        1
+      ],
+      "source_initial_caster_reference": "covered-03",
+      "expected_disposition": "accepted",
+      "original_evidence_checkpoint": "MA-DS04:B4:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "public caster identity binding, never trust authority_only initial_id as a player command"
+      ]
+    },
+    {
+      "id": "MA-DS04:B4:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B4",
+      "actor_side": "black",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 0
+        },
+        "to": {
+          "x": 2,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:B4:main:closed",
+      "checkpoint_end": "MA-DS04:B4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:R1:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 9
+        },
+        "to": {
+          "x": 0,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:R1:main:closed",
+      "checkpoint_end": "MA-DS05:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:B1:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 7,
+          "y": 2
+        },
+        "to": {
+          "x": 4,
+          "y": 2
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:B1:main:closed",
+      "checkpoint_end": "MA-DS05:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:R2:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 9
+        },
+        "to": {
+          "x": 4,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:R2:main:closed",
+      "checkpoint_end": "MA-DS05:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:B2:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 2
+        },
+        "to": {
+          "x": 4,
+          "y": 3
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:B2:main:closed",
+      "checkpoint_end": "MA-DS05:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:R3:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:R3:main:closed",
+      "checkpoint_end": "MA-DS05:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:B3:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 3
+        },
+        "to": {
+          "x": 4,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:B3:main:closed",
+      "checkpoint_end": "MA-DS05:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:R4:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 6
+        },
+        "to": {
+          "x": 2,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:R4:main:closed",
+      "checkpoint_end": "MA-DS05:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:B4:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "B4",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 4
+        },
+        "to": {
+          "x": 4,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:B4:main:closed",
+      "checkpoint_end": "MA-DS05:B4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:R5:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "R5",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 6,
+          "y": 6
+        },
+        "to": {
+          "x": 6,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:R5:main:closed",
+      "checkpoint_end": "MA-DS05:R5:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:B5:pre-1",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "B5",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "dragon_bomb",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "bomb",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>",
+        "pieceId": "<currently public visible caster id at source-declared x/y; bind live authority not secret alias>",
+        "to": {
+          "x": 4,
+          "y": 8
+        }
+      },
+      "semantic_caster_position": [
+        4,
+        5
+      ],
+      "source_initial_caster_reference": "covered-09",
+      "expected_disposition": "accepted",
+      "original_evidence_checkpoint": "MA-DS05:B5:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "public caster identity binding, never trust authority_only initial_id as a player command"
+      ]
+    },
+    {
+      "id": "MA-DS05:B5:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "B5",
+      "actor_side": "black",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 2
+        },
+        "to": {
+          "x": 1,
+          "y": 9
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:B5:main:closed",
+      "checkpoint_end": "MA-DS05:B5:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:R6:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "R6",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 7
+        },
+        "to": {
+          "x": 2,
+          "y": 9
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:R6:main:closed",
+      "checkpoint_end": "MA-DS05:R6:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:B6:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "B6",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 9
+        },
+        "to": {
+          "x": 2,
+          "y": 9
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:B6:main:closed",
+      "checkpoint_end": "MA-DS05:B6:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    },
+    {
+      "id": "MA-DS05:R7:pre-1",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "R7",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "hourglass",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "hourglass",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>"
+      },
+      "semantic_caster_position": null,
+      "source_initial_caster_reference": null,
+      "expected_disposition": "accepted",
+      "original_evidence_checkpoint": "MA-DS05:R7:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteHeroAbility(room,playerId,HeroAbilityCommand,now,randomInt?)",
+      "adapter_constraints": [
+        "live source identity and actual room/player/side/clock",
+        "pre-main request before formal main, no reset after refusal",
+        "actual exception/return and evidence need separate source-accurate observer",
+        "whole six-step hourglass safety closure before acceptance"
+      ]
+    },
+    {
+      "id": "MA-DS05:R7:main",
+      "replay_id": "MA-DS05",
+      "world_id": "IW-95b0bb66f0ced10a",
+      "turn": "R7",
+      "actor_side": "red",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS05:R7:main:closed",
+      "checkpoint_end": "MA-DS05:R7:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE",
+      "source_api_reference": "src/remote-room.ts:submitRemoteMove(room,playerId,MoveCommand,now)",
+      "adapter_constraints": [
+        "real room player identity from resolved RPS",
+        "live authority revision and unique server-compliant actionId",
+        "no fake after-main atom snapshot from post-return remote room",
+        "no submit until true source-rules pilot admission"
+      ]
+    }
+  ],
+  "next": {
+    "id": "NEXT-HC-INDEPENDENT-210-BOUNDARY-AND-EVIDENCE-READINESS",
+    "owner": "half_chaos source-only",
+    "scope": "Review 210 checkpoint fields and evidence privacy/refusal/paired controls independently; do not manufacture positive game run or new natural stimulus.",
+    "dependency_blocked_next": {
+      "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+      "status": "AWAIT_MAIN_ADMISSION_OBSERVER_DRIVER_AND_RUN_AUTHORIZATION"
+    }
+  }
+}
