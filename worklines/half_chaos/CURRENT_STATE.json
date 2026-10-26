@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-50-210-EVIDENCE-PRIVACY-BOUNDARY-20261026-r50",
+  "revision": "HC-51-PAIR-VIEW-MISSING-STIMULUS-20261027-r51",
   "workline": "half_chaos",
-  "date_local": "2026-10-26",
+  "date_local": "2026-10-27",
   "timezone": "Asia/Shanghai",
-  "status": "r50_210_source_evidence_boundary_privacy_and_gap_audit_complete_runtime_unrun",
+  "status": "r51_pairs_56_slots_and_eight_missing_original_stimuli_scoped_source_only",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -2737,6 +2737,42 @@
       "owner": "half_chaos",
       "main_work_quota_required": false,
       "requires_engine_run": false
+    }
+  },
+  "r51_pair_view_missing_stimuli": {
+    "source_head": "ea70da1e001f0262409facc9dbb9e98303c22687",
+    "report": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json",
+    "source_validation": "25/25 V2",
+    "original_pairs": [
+      "PAIR-PD05",
+      "PAIR-PD06"
+    ],
+    "original_ordinary_requests_per_pair_world": 7,
+    "comparison_slots": 56,
+    "original_per_world_view_snapshots_required": 112,
+    "observed_raw_player_snapshots": 0,
+    "source_difference_true_kind_slots_per_pair": 2,
+    "source_missing_stimulus_items": 8,
+    "dedup_shared_family_still_two_spec_ids": [
+      "PD-S35",
+      "DS-S12"
+    ],
+    "abstract_PD_S32_separate": "UNRUN_NO_DIRECT_CHECKPOINT",
+    "original12_executed": 0,
+    "original64": "UNRUN",
+    "actual210_observed": 0,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "engine_runs": 0,
+    "main_blocked_task": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "next_independent": {
+      "id": "NEXT-HC-INDEPENDENT-SPEC-64-COMPLETENESS-AND-DEFERRED-OBLIGATION-TRIAGE",
+      "status": "READY_SOURCE_DOCUMENT_ONLY",
+      "action": "按原64规格全量逐项核已声明动作、210证据引用、预期正负分支、未覆盖八项与抽象PD-S32，区分仅需资料、需真实原刺激、需主线裁判/观察器和独立授权的义务。不修改原数据、不添加游戏动作、不标PASS。",
+      "owner": "half_chaos",
+      "authorization": "SOURCE_DOCUMENT_ONLY",
+      "work_quota_dependency": "NONE"
     }
   }
 }

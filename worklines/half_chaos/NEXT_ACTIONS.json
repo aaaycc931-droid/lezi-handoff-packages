@@ -1,13 +1,12 @@
 {
-  "revision": "HC-50-210-EVIDENCE-PRIVACY-BOUNDARY-20261026-r50",
+  "revision": "HC-51-PAIR-VIEW-MISSING-STIMULUS-20261027-r51",
   "next_independent_task": {
-    "id": "NEXT-HC-INDEPENDENT-PAIR-VIEW-AND-MISSING-STIMULUS-CONTRACT",
+    "id": "NEXT-HC-INDEPENDENT-SPEC-64-COMPLETENESS-AND-DEFERRED-OBLIGATION-TRIAGE",
     "status": "READY_SOURCE_DOCUMENT_ONLY",
-    "action": "逐项补原已公开PD05/PD06成对回放所需红黑原样视图/消息错误通道比较字段与许可差异合同，另将8项缺自然刺激分类为待主线或候选仅文档问题，不新增对局动作或修改原64验收。",
-    "authorization": "SOURCE_AND_DOCUMENT_ONLY",
+    "action": "按原64规格全量逐项核已声明动作、210证据引用、预期正负分支、未覆盖八项与抽象PD-S32，区分仅需资料、需真实原刺激、需主线裁判/观察器和独立授权的义务。不修改原数据、不添加游戏动作、不标PASS。",
     "owner": "half_chaos",
-    "main_work_quota_required": false,
-    "requires_engine_run": false
+    "authorization": "SOURCE_DOCUMENT_ONLY",
+    "work_quota_dependency": "NONE"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1413,13 +1412,13 @@
   ],
   "last_verified_head_at_preparation": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
   "latest_completed_stage": {
-    "revision": "HC-50-210-EVIDENCE-PRIVACY-BOUNDARY-20261026-r50",
-    "report": "worklines/half_chaos/HC50_ORIGINAL_210_EVIDENCE_PRIVACY_AUDIT.json",
-    "joined_checkpoint_rows": 210,
-    "global_source_checks": "11/11",
-    "runtime": "UNRUN",
-    "checkpoint_authenticity": "source row only, not engine witness",
-    "privacy_raw_player_views": "UNOBSERVED"
+    "revision": "HC-51-PAIR-VIEW-MISSING-STIMULUS-20261027-r51",
+    "report": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json",
+    "source_checks": "25/25",
+    "pair_future_slots": 56,
+    "source_missing_original": 8,
+    "raw_views_observed": 0,
+    "original64": "UNRUN"
   },
   "stale_index_repair": {
     "prior_revision": "HC-SESSION-CLOSEOUT-20261020-r41",
@@ -1431,18 +1430,18 @@
   "blocked_main_task": {
     "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
     "status": "BLOCKED_MAIN_TRUSTED_ADMISSION_EXACT_PASSIVE_BOUNDARIES_DRIVER_AND_AUTHORIZATION",
-    "resume_condition": "Actual main published trusted original 3-tuple source/room/actor/RNG, exact MAIN/END/passive refusal boundaries, complete M01/M04/D01 source safety, restricted original driver and specific engine-run authorization."
+    "resume_condition": "Main must actually provide trusted original two-hero+mutation tuples, real source room/actor/seed, complete M01/M04/D01 safety, passive exact checkpoints, original restricted driver, and specific execution authorization."
   },
   "available_without_main_quota": [
     {
-      "id": "NEXT-HC-INDEPENDENT-PAIR-VIEW-AND-MISSING-STIMULUS-CONTRACT",
-      "category": "PAIR_PUBLIC_VS_SECRET_COMPARATOR_AND_EIGHT_MISSING_STIMULI",
+      "id": "NEXT-HC-INDEPENDENT-SPEC-64-COMPLETENESS-AND-DEFERRED-OBLIGATION-TRIAGE",
+      "category": "ORIGINAL_64_SPEC_FULL_SOURCE_COVERAGE",
       "depends_on_main_work": false,
       "requires_game_engine": false
     },
     {
-      "id": "NEXT-HC-INDEPENDENT-ORIGINAL_SPEC_SCOPE_LEDGER",
-      "category": "FULL_64_SOURCE_STIMULUS_AND_ASSERTION_COVERAGE_BOUNDARY",
+      "id": "NEXT-HC-INDEPENDENT-PLAYER_PRIVACY_LABEL_REVIEW",
+      "category": "SOURCE_ONLY_PLAYER_OUTPUT_FIELD_SEMANTICS",
       "depends_on_main_work": false,
       "requires_game_engine": false
     }
