@@ -1,0 +1,702 @@
+{
+  "schema": "lezi.chaos.ch06.A_early_death_static_witness.v1",
+  "date_local": "2026-10-26",
+  "line": "chaos",
+  "mode": "jieqi",
+  "source_head": "b00d119381b7a45db8a309b8c9de2eaec5a1e255",
+  "pinned_engine": "aaaycc931-droid/jieqi-engine@3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7 PR13 draft",
+  "hero_pair": {
+    "red": "sky_admiral (H15)",
+    "black": "shuffler (H11)"
+  },
+  "opening": {
+    "seed": 476,
+    "algorithm": "LCG (Math.imul(seed,1664525)+1013904223)>>>0; red and black each 15 non-general identities; Fisher-Yates from 29 to1; public slot order black back/cannon/pawn then red back/cannon/pawn",
+    "identity_table": [
+      {
+        "id": "covered-00",
+        "xy": [
+          0,
+          0
+        ],
+        "public_side": "black",
+        "public_type": "rook",
+        "original_true_identity": {
+          "color": "red",
+          "type": "cannon"
+        }
+      },
+      {
+        "id": "covered-01",
+        "xy": [
+          1,
+          0
+        ],
+        "public_side": "black",
+        "public_type": "horse",
+        "original_true_identity": {
+          "color": "red",
+          "type": "elephant"
+        }
+      },
+      {
+        "id": "covered-02",
+        "xy": [
+          2,
+          0
+        ],
+        "public_side": "black",
+        "public_type": "elephant",
+        "original_true_identity": {
+          "color": "red",
+          "type": "rook"
+        }
+      },
+      {
+        "id": "covered-03",
+        "xy": [
+          3,
+          0
+        ],
+        "public_side": "black",
+        "public_type": "advisor",
+        "original_true_identity": {
+          "color": "red",
+          "type": "advisor"
+        }
+      },
+      {
+        "id": "covered-04",
+        "xy": [
+          5,
+          0
+        ],
+        "public_side": "black",
+        "public_type": "advisor",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-05",
+        "xy": [
+          6,
+          0
+        ],
+        "public_side": "black",
+        "public_type": "elephant",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-06",
+        "xy": [
+          7,
+          0
+        ],
+        "public_side": "black",
+        "public_type": "horse",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-07",
+        "xy": [
+          8,
+          0
+        ],
+        "public_side": "black",
+        "public_type": "rook",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-08",
+        "xy": [
+          1,
+          2
+        ],
+        "public_side": "black",
+        "public_type": "cannon",
+        "original_true_identity": {
+          "color": "red",
+          "type": "horse"
+        }
+      },
+      {
+        "id": "covered-09",
+        "xy": [
+          7,
+          2
+        ],
+        "public_side": "black",
+        "public_type": "cannon",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-10",
+        "xy": [
+          0,
+          3
+        ],
+        "public_side": "black",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-11",
+        "xy": [
+          2,
+          3
+        ],
+        "public_side": "black",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-12",
+        "xy": [
+          4,
+          3
+        ],
+        "public_side": "black",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "rook"
+        }
+      },
+      {
+        "id": "covered-13",
+        "xy": [
+          6,
+          3
+        ],
+        "public_side": "black",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "elephant"
+        }
+      },
+      {
+        "id": "covered-14",
+        "xy": [
+          8,
+          3
+        ],
+        "public_side": "black",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "horse"
+        }
+      },
+      {
+        "id": "covered-15",
+        "xy": [
+          0,
+          9
+        ],
+        "public_side": "red",
+        "public_type": "rook",
+        "original_true_identity": {
+          "color": "red",
+          "type": "rook"
+        }
+      },
+      {
+        "id": "covered-16",
+        "xy": [
+          1,
+          9
+        ],
+        "public_side": "red",
+        "public_type": "horse",
+        "original_true_identity": {
+          "color": "black",
+          "type": "rook"
+        }
+      },
+      {
+        "id": "covered-17",
+        "xy": [
+          2,
+          9
+        ],
+        "public_side": "red",
+        "public_type": "elephant",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-18",
+        "xy": [
+          3,
+          9
+        ],
+        "public_side": "red",
+        "public_type": "advisor",
+        "original_true_identity": {
+          "color": "black",
+          "type": "elephant"
+        }
+      },
+      {
+        "id": "covered-19",
+        "xy": [
+          5,
+          9
+        ],
+        "public_side": "red",
+        "public_type": "advisor",
+        "original_true_identity": {
+          "color": "black",
+          "type": "cannon"
+        }
+      },
+      {
+        "id": "covered-20",
+        "xy": [
+          6,
+          9
+        ],
+        "public_side": "red",
+        "public_type": "elephant",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-21",
+        "xy": [
+          7,
+          9
+        ],
+        "public_side": "red",
+        "public_type": "horse",
+        "original_true_identity": {
+          "color": "black",
+          "type": "advisor"
+        }
+      },
+      {
+        "id": "covered-22",
+        "xy": [
+          8,
+          9
+        ],
+        "public_side": "red",
+        "public_type": "rook",
+        "original_true_identity": {
+          "color": "red",
+          "type": "advisor"
+        }
+      },
+      {
+        "id": "covered-23",
+        "xy": [
+          1,
+          7
+        ],
+        "public_side": "red",
+        "public_type": "cannon",
+        "original_true_identity": {
+          "color": "black",
+          "type": "pawn"
+        }
+      },
+      {
+        "id": "covered-24",
+        "xy": [
+          7,
+          7
+        ],
+        "public_side": "red",
+        "public_type": "cannon",
+        "original_true_identity": {
+          "color": "black",
+          "type": "horse"
+        }
+      },
+      {
+        "id": "covered-25",
+        "xy": [
+          0,
+          6
+        ],
+        "public_side": "red",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "cannon"
+        }
+      },
+      {
+        "id": "covered-26",
+        "xy": [
+          2,
+          6
+        ],
+        "public_side": "red",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "advisor"
+        }
+      },
+      {
+        "id": "covered-27",
+        "xy": [
+          4,
+          6
+        ],
+        "public_side": "red",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "elephant"
+        }
+      },
+      {
+        "id": "covered-28",
+        "xy": [
+          6,
+          6
+        ],
+        "public_side": "red",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "red",
+          "type": "horse"
+        }
+      },
+      {
+        "id": "covered-29",
+        "xy": [
+          8,
+          6
+        ],
+        "public_side": "red",
+        "public_type": "pawn",
+        "original_true_identity": {
+          "color": "black",
+          "type": "cannon"
+        }
+      }
+    ],
+    "fisher_yates_draws": [
+      [
+        30,
+        23
+      ],
+      [
+        29,
+        3
+      ],
+      [
+        28,
+        5
+      ],
+      [
+        27,
+        21
+      ],
+      [
+        26,
+        9
+      ],
+      [
+        25,
+        17
+      ],
+      [
+        24,
+        9
+      ],
+      [
+        23,
+        7
+      ],
+      [
+        22,
+        7
+      ],
+      [
+        21,
+        7
+      ],
+      [
+        20,
+        17
+      ],
+      [
+        19,
+        7
+      ],
+      [
+        18,
+        9
+      ],
+      [
+        17,
+        16
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        15,
+        7
+      ],
+      [
+        14,
+        9
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "regression": {
+      "CH02_seed19_all30_and29draws": true,
+      "CH05_seed92_all30_and29draws": true
+    },
+    "seed_search": {
+      "range": [
+        0,
+        476
+      ],
+      "predicate": "covered-15 true red rook, covered-25 true red cannon, covered-10 true black pawn",
+      "first_matching_seed": 476,
+      "limitation": "Only this strong predicate in bounded scan; no global minimality claim"
+    }
+  },
+  "H15": {
+    "success_window": "red lawful opening preparation",
+    "choice": "cannon",
+    "independent_rng_seed": 0,
+    "candidates_ordered": [
+      "covered-00",
+      "covered-25"
+    ],
+    "selected_index": 1,
+    "selected_secret_id": "covered-25",
+    "first_red_own_normal_begin_progress": "1/6 (if legal opening start)",
+    "on_pregraduation_real_death": "failed and once-used sticky under current approved H15; no new recruit/restart",
+    "failed_status_publicly_disclosed": false
+  },
+  "moves": [
+    {
+      "turn": "red1",
+      "actor": "red",
+      "piece_id": "covered-15",
+      "from": [
+        0,
+        9
+      ],
+      "to": [
+        0,
+        6
+      ],
+      "source_public_type": "rook",
+      "source_true_identity": {
+        "color": "red",
+        "type": "rook"
+      },
+      "blockers": [],
+      "target": {
+        "id": "covered-25",
+        "face_down": true,
+        "public_side": "red",
+        "original_true_identity": {
+          "color": "red",
+          "type": "cannon"
+        }
+      },
+      "geometry_checked": true
+    },
+    {
+      "turn": "black1",
+      "actor": "black",
+      "piece_id": "covered-10",
+      "from": [
+        0,
+        3
+      ],
+      "to": [
+        0,
+        4
+      ],
+      "source_public_type": "pawn",
+      "source_true_identity": {
+        "color": "black",
+        "type": "pawn"
+      },
+      "blockers": [],
+      "target": null,
+      "geometry_checked": true
+    },
+    {
+      "turn": "red2_if_A_skipped",
+      "actor": "red",
+      "piece_id": "red-general",
+      "from": [
+        4,
+        9
+      ],
+      "to": [
+        4,
+        8
+      ],
+      "source_public_type": "general",
+      "source_true_identity": {
+        "color": "red",
+        "type": "general"
+      },
+      "blockers": [],
+      "target": null,
+      "geometry_checked": true
+    }
+  ],
+  "branches": {
+    "CH06-A": {
+      "precondition": "red H15 success and red1 normal begin",
+      "steps": [
+        "red1 dark red public rook covered-15 (0,9)->(0,6) directly captures publicly red dark pawn covered-25, genuinely red cannon trained",
+        "black1 covered-10 (0,3)->(0,4) committed nonterminal",
+        "H11-A after black1 before red2; actual activation shuffles initial dark board"
+      ],
+      "expectation": "After A shuffle true training failed and opportunity used; no new secret binding or training progress; no private failure leak",
+      "runtime": "UNRUN"
+    },
+    "CH06-B-after-A-skip": {
+      "steps": [
+        "red1 death, black1 normal move, manually A decline within original deadline",
+        "red2 normal begin must not tick failed training; red2 red-general (4,9)->(4,8)",
+        "H11 B before black2 normal begin; B activation"
+      ],
+      "expectation": "H15 remains failed and used after B; early death before A not reactivated",
+      "runtime": "UNRUN"
+    },
+    "CH05-B-after-A-death": {
+      "fixture": "CH05 seed92 recruit seed1",
+      "step_difference": "A skipped, red2 revealed rook then kills selected covered-08 before B",
+      "status": "STATIC_INDEPENDENT_CASE_RETAINED_UNRUN"
+    }
+  },
+  "implementation_differential": [
+    {
+      "path": "rules.js#targetEligible",
+      "source": "if(target.faceDown) return true including publicly same-side dark target",
+      "intent": "source-confirmed existing original-jieqi rule, no change"
+    },
+    {
+      "path": "game.js#applyAuthoritativeMove",
+      "source": "destroyPiece target before source face-down reveal",
+      "intent": "genuine ordinary capture, no special forged state"
+    },
+    {
+      "path": "hero-progress.js#settleTrainingDeaths",
+      "source": "old PR13 reselects trainee after death",
+      "intent": "current H15 once-only sticky death-failure needed, MAIN-owned"
+    },
+    {
+      "path": "hero-shuffle.js#openShuffleA",
+      "source": "PR13 deletes original action time fields",
+      "intent": "confirmed A deadline inherits black1 remaining clock, MAIN-owned"
+    },
+    {
+      "path": "hero-shuffle.js#applyShuffleAction",
+      "source": "resets opening and revives original pieces, private H15 failed/used must not reset",
+      "intent": "MAIN-owned authoritative private-state+projection gate"
+    }
+  ],
+  "hard_gates": {
+    "opening_H15_success_via_legal_API": true,
+    "actual_room_submission": "UNRUN",
+    "getLegalMoves_red1": "UNRUN",
+    "getLegalMoves_black1": "UNRUN",
+    "king_safety": "UNRUN",
+    "A_and_B_clock": "UNRUN",
+    "complete_death_closed": "UNRUN",
+    "training_failed_post_death": "UNRUN",
+    "training_failed_post_shuffle": "UNRUN",
+    "both_players_private_public_projections": "UNRUN",
+    "engine_runs": 0,
+    "accepted_prefixes": 0,
+    "formal_passes": 0,
+    "natural_games": 0
+  },
+  "change_scope": {
+    "shared_source_edits": 0,
+    "hero_rule_changes": 0,
+    "other_modes_changed": false,
+    "NET": "paused",
+    "scoring": "frozen"
+  }
+}

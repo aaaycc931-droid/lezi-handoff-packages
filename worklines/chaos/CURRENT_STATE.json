@@ -9,7 +9,7 @@
   "received_dispatch_id": "MAIN-THREE-MODE-20261024",
   "received_task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "ch05_h11_B_predeath_seed92_static_witness_ready_engine_unrun",
+  "state": "ch06_h11_A_predeath_seed476_static_ready_runtime_unrun",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
@@ -20,10 +20,11 @@
     "receiver-owned receipt and return prepared",
     "CH-03 source-pinned move prefix and H11xH15 privacy/clock checkpoint contract published (not executed)",
     "CH-04 three seed19 H06xH15 event route candidates assembled; 12-step death route pure board topology checked; runtime UNRUN; triple hero H06+H11+H15 route flagged impossible in two-hero fixture",
-    "CH-05: source-equivalent seed92 30 identity/tape, red H15 cannon covered-08 recruitment seed1, legal-geometry red1-black1-red2 rook capture before H11-B constructed; H11-A still unproven and all real execution UNRUN"
+    "CH-05: source-equivalent seed92 30 identity/tape, red H15 cannon covered-08 recruitment seed1, legal-geometry red1-black1-red2 rook capture before H11-B constructed; H11-A still unproven and all real execution UNRUN",
+    "CH-06 seed476: own-public-side hidden trainee cannon covered-25 can be captured by red covered-15 rook on red1; black1 pawn and subsequent H11-A or A skip -> B static candidates; engine/clock/privacy tests UNRUN"
   ],
-  "next_action": "CH-06-CH-T02-H11-A-EARLIEST-DEATH-BOUNDED-REACHABILITY-AND-MAIN-CH05-B-RUNTIME-HANDOFF",
-  "next_action_status": "H11_B_STATIC_INPUT_READY_MAIN_RUNTIME_PENDING__H11_A_POSITIVE_UNRESOLVED",
+  "next_action": "CH-07-A_B-H15-PRIVATE_PUBLIC-OBSERVATION_AND_NEGATIVE_CONTROLS; MAIN_RUNTIME_CH06_A_AND_CH05_B",
+  "next_action_status": "A_AND_B_STATIC_FIXTURES_READY_MAIN_SHARED_RUNTIME_PENDING",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -38,7 +39,7 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "CH-05-CH-T02-H11-B-BEFORE-BLACK2-TRAINEE-DEATH-SEEDED_STATIC_WITNESS",
+  "last_completed_task": "CH-06-H11-A-EARLIEST-SAME_SIDE_DARK_TRAINEE_DEATH_FIXTURE_STATIC_ONLY",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
@@ -47,7 +48,9 @@
     "CH04_H06_H15_ROUTES.json",
     "CH04_H06_H15_ROUTES.md",
     "CH05_H11_H15_EARLY_DEATH_WITNESS.json",
-    "CH05_EARLY_DEATH_VALIDATION.md"
+    "CH05_EARLY_DEATH_VALIDATION.md",
+    "CH06_H11_A_PREDEATH_WITNESS.json",
+    "CH06_H11_A_PREDEATH_VALIDATION.md"
   ],
   "validation": {
     "static_seed_pool": "checked",
@@ -63,12 +66,15 @@
     "ch04_candidate_actual_engine_calls": 0,
     "ch04_authoritative_legal_histories": "UNRUN",
     "ch02_identity_source_used": true,
-    "CH_T02": "H11_B_STATIC_DEATH_PREFIX_READY_ENGINE_UNRUN__H11_A_NO_POSITIVE",
+    "CH_T02": "H11_A_SEED476_STATIC_AND_B_SEED92_STATIC_WITNESSES_ENGINE_UNRUN",
     "CH_T06": "THREE_SOURCE_LEVEL_STATIC_CANDIDATES_RUNTIME_UNRUN",
     "ch05_seed92_rng": "CHECKED_CH02_SEED19_BASELINE_EQUAL",
     "ch05_static_three_moves": "CHECKED_SOURCE_GEOMETRY",
     "ch05_engine_calls": 0,
-    "ch05_authoritative_legal_moves": 0
+    "ch05_authoritative_legal_moves": 0,
+    "ch06_seed476_algorithm": "CROSS_CHECKED_CH02_SEED19_AND_CH05_SEED92",
+    "ch06_same_side_dark_target": "SOURCE_ELIGIBLE_PURE_STATIC_GEOMETRY",
+    "ch06_engine_runs": 0
   },
   "session_closure": {
     "date_local": "2026-10-24",
@@ -156,5 +162,19 @@
       "H11-A bounded source reachability",
       "main authoritative B prefix and clock/failed state/projection"
     ]
+  },
+  "ch06": {
+    "base_commit": "b00d119381b7a45db8a309b8c9de2eaec5a1e255",
+    "opening_seed": 476,
+    "recruitment_seed": 0,
+    "trained_piece": "covered-25 original true red cannon publicly red dark pawn",
+    "captor": "covered-15 original true red rook",
+    "red1": "(0,9)->(0,6) captures covered-25",
+    "black1": "covered-10 (0,3)->(0,4)",
+    "A": "prior-death fixed seed source-static candidate",
+    "B": "optional A skip -> red2 general(4,9)->(4,8) -> before black2",
+    "CH05_B": "seed92 later post-A-death B candidate preserved",
+    "actual_engine_runs": 0,
+    "main_receipt": "NOT_CLAIMED"
   }
 }
