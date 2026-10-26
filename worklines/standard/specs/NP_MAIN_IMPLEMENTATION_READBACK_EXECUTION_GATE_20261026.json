@@ -1,0 +1,205 @@
+{
+  "schema": "lezi.standard.np.engine_readback_execution_gate.v1",
+  "id": "STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE-20261026",
+  "task": "NEXT-STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE",
+  "date_local": "2026-10-26",
+  "source_handoff_head": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
+  "engine": {
+    "repo": "aaaycc931-droid/jieqi-engine",
+    "main_sha": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "pr_number": 13,
+    "pr_head_sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "pr_open": true,
+    "pr_merged": false
+  },
+  "collaboration": {
+    "working": "2026-10-23.v0.18",
+    "formal": "1.8.0"
+  },
+  "workline_state": {
+    "mode": "xiangqi",
+    "hero_rule_confirmations_ordinary": 31,
+    "direct_shared_from_standard": 13,
+    "rule_delta": 0,
+    "scoring": "frozen",
+    "NET": "paused",
+    "code_changes": 0,
+    "engine_runs": 0,
+    "formal_NP_AS_AP_ES_RE": "UNRUN",
+    "independent_qa": false
+  },
+  "levels": {
+    "V2": "source match to pinned public GitHub code/rule and actual receipt texts",
+    "V1": "document static inference/symbolic oracle",
+    "V4": "not attained for NP/AS/AP/ES/RE"
+  },
+  "source_receipt_note": "No exact matching main recorded scoped adoption/read found by searching main CURRENT_STATE, READ_RECEIPTS, RETURN_TO_MAIN; not a claim main personnel have not read",
+  "blocker_matrix": [
+    {
+      "id": "G00_MAIN_READ_RECEIPT",
+      "status": "UNVERIFIED_NOT_ASSERTED",
+      "severity": "dependency",
+      "owner": "main",
+      "code_refs": [],
+      "handoff_refs": [
+        "worklines/main/READ_RECEIPTS.json",
+        "worklines/main/RETURN_TO_MAIN.json",
+        "worklines/main/CURRENT_STATE.json"
+      ],
+      "actual": "Live main receipts, returns, state do not include exact latest standard return task IDs, erratum marker or 139ddc155ecf commit; absence of record is NOT proof of human non-reading.",
+      "required": "Main performs its own actual read of source reports and records a scoped receiver receipt; no standard-line proxy receipt",
+      "test_status": "NOT_APPLICABLE"
+    },
+    {
+      "id": "G01_MODE_ADMISSION",
+      "status": "BLOCKED_SOURCE_FLAG_FALSE",
+      "severity": "P0_GATE",
+      "owner": "main",
+      "code_refs": [
+        "src/modes.ts:5-30"
+      ],
+      "handoff_refs": [
+        "worklines/main/MAIN_FOUNDATION_REPORT.json"
+      ],
+      "actual": "PR13 still draft/open, xiangqi.featuresReady=false, standard official hero+M04 feature entry denied unless research exception; research is not formal mode qualification.",
+      "required": "Explicit authorized mode qualification + proof of supported hero/mutation compatibility + ordinary-mode allowed admission without research bypass; preserve other mode gates",
+      "test_status": "UNRUN"
+    },
+    {
+      "id": "G02_H02_AS_SOURCE",
+      "status": "OPEN_V2_SOURCE_RULE_DIVERGENCE",
+      "severity": "P0",
+      "owner": "main",
+      "code_refs": [
+        "src/game.ts:670-672",
+        "src/game.ts:709-724"
+      ],
+      "handoff_refs": [
+        "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json"
+      ],
+      "actual": "For initial H02 activation path, consumeAssassinationCharge before endpoint consumeDragonScale; can create stealth after endpoint returns. Confirmed AS A wants hero charge retained and no new stealth/strong-strike opportunity under exact guard.",
+      "required": "Source-level patch bound to AS guard with action consumed, M04 independent path death, scale spent, rook bounced, H02 hero source retained and no stealth; show AP/ES no extra refunds",
+      "test_status": "UNRUN"
+    },
+    {
+      "id": "G03_M04_ROYAL_SAFETY",
+      "status": "OPEN_V2_SIMULATION_GAP_V1_SYMBOLIC_WITNESSES",
+      "severity": "P1",
+      "owner": "main",
+      "code_refs": [
+        "src/rules.ts:310-334",
+        "src/rules.ts:400-403",
+        "src/game.ts:435-463",
+        "src/game.ts:635-646"
+      ],
+      "handoff_refs": [
+        "worklines/standard/specs/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.json"
+      ],
+      "actual": "simulatePublicMove does not remove M04 path-crushed pieces, and for endpoint dragonScale returns old board; source execution crushes path before endpoint; standard line provides 4 minimal symbolic threat witnesses, NOT natural legal 32-piece positions.",
+      "required": "Use fully closed path+endpoint+return/landing/death chain as threat/legal consistency oracle; prove reachable fixture or state clearly hypothetical; acceptance and rejection controls; protect special M04 own-general mutual-destruction guard",
+      "test_status": "UNRUN"
+    },
+    {
+      "id": "G04_H21_PRAYER",
+      "status": "STATIC_CLASSIFICATION_CORRECT_RUNTIME_UNRUN",
+      "severity": "TEST_ONLY_NO_P0",
+      "owner": "main",
+      "code_refs": [
+        "src/hero-actions.ts:108-115",
+        "src/hero-actions.ts:318-330",
+        "src/settlement.ts:369-383"
+      ],
+      "handoff_refs": [
+        "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md"
+      ],
+      "actual": "invoke IS in isMain, main/countsAsFormalTurn=true; old P0-H21 claim was a factual error and has been retracted. This does not prove B1-B5 actual turn lifecycle.",
+      "required": "Do not reissue old false P0. Once real mode admission/authorized isolated tests exist, provide B1-B4 count/omen, R5 full response, B5 descent timing and idempotent no-duplicate draw actual execution evidence",
+      "test_status": "UNRUN"
+    },
+    {
+      "id": "G05_H21_RANDOM",
+      "status": "RNG_PROVENANCE_AND_SAFE_VALIDATION_NOT_EVIDENCED",
+      "severity": "P1",
+      "owner": "main",
+      "code_refs": [
+        "src/hero-descent.ts:11-14",
+        "src/hero-descent.ts:20-36",
+        "src/settlement.ts:301-334",
+        "src/room.ts:22-60"
+      ],
+      "handoff_refs": [
+        "worklines/standard/specs/H21_RNG_REPLAY_CONTRACT_20261024.json"
+      ],
+      "actual": "choose(pool,4,random) lacks validated integer-index guard; default turn-start random may use Math.random, authority draw tape with candidate order/bounds/picked IDs not evidenced by these sources. Fixed RNG index sequences are conditional fixtures not real draw.",
+      "required": "Validate random index before splice; provide authorized trustworthy ordered pool+bound+index+chosen ID trace, replay identity/version and disclosure safety, including N=0/1/3/4/15",
+      "test_status": "UNRUN"
+    },
+    {
+      "id": "G06_FORMAL_NP_RUNS",
+      "status": "UNRUN_NO_EXECUTION_PROOF",
+      "severity": "P0_TEST_ADMISSION",
+      "owner": "main",
+      "code_refs": [],
+      "handoff_refs": [
+        "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+        "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json"
+      ],
+      "actual": "No authoritative in-engine complete natural 32-piece NP B1-B5→R6/R7 AS/AP/ES, no corresponding independent QA. Main foundation earlier focused tests must not be mistaken for these specific formal fixtures.",
+      "required": "After code repair, official mode gate/qualification, source-reachable exact setups, recorded random evidence and independent reviewer, execute appropriate actual engine tests with version, action traces and negative cases",
+      "test_status": "UNRUN"
+    },
+    {
+      "id": "G07_ENGINE_PUBLICATION",
+      "status": "PR_OPEN_MAIN_OLD_NO_NEW_PATCH",
+      "severity": "dependency",
+      "owner": "main",
+      "code_refs": [
+        "jieqi-engine PR13 head 3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+        "jieqi-engine main c25749d4f21d394c3d94486cfba1d786864083b6"
+      ],
+      "handoff_refs": [],
+      "actual": "Engine main same prior sha; PR13 open/unmerged and pinned head unchanged; no verified new M04/H02/qualification changes on main or PR13.",
+      "required": "Main supplies specific post-fix engine commit/PR path diff, accepted ownership and actual runtime evidence; publication != merge or production launch",
+      "test_status": "UNRUN"
+    }
+  ],
+  "critical_path": [
+    "G00_MAIN_READ_RECEIPT",
+    "G02_H02_AS_SOURCE",
+    "G03_M04_ROYAL_SAFETY",
+    "G05_H21_RANDOM",
+    "G01_MODE_ADMISSION",
+    "G04_H21_PRAYER",
+    "G06_FORMAL_NP_RUNS"
+  ],
+  "no_op_repeat_policy": {
+    "on_same_engine_sha_and_main_receipt_sha": "Do not claim this is progress; keep waiting gate, no repeated full matrix unless new evidence or explicit user changes scope.",
+    "triggers": [
+      "main receiver verifies scoped read/adoption in its own read receipt",
+      "new shared engine commit actually changes one relevant source section",
+      "ordinary adaptation qualification status and proof changes",
+      "authoritative H21 RNG trace & B1-B5 test evidence appears",
+      "legally reachable full NP test/QA supplied"
+    ],
+    "if_no_trigger": "Keep engineering handoff blocked and do unrelated independently authorized standard tasks if registered; otherwise do not manufacture a next implementation authority",
+    "reopen_owner": "main"
+  },
+  "next": {
+    "id": "NEXT-STD-NP-MAIN-FIX-DELTA-RECEPTION-ON-EVIDENCE",
+    "status": "BLOCKED_EXTERNAL_MAIN_EVIDENCE",
+    "requires_external_trigger": true,
+    "implementation_authorized": false,
+    "source_gate": "G00/G01/G02/G03/G05 and actual qualifying runs",
+    "action": "Once main actually writes a new receipt/engine commit/qualification/RNG evidence, diff exact pinned sections, update independent NP/AS/AP/ES eligibility and only claim tests actually run. Otherwise leave blocked and refrain from repeating same readback."
+  },
+  "not_claimed": [
+    "main has not read any ordinary work in private",
+    "M04 symbolic boards represent legitimate natural games",
+    "unit/focused test counts prove this NP suite",
+    "PR13 is merged",
+    "research exceptions constitute official qualification",
+    "the retracted H21 P0 remains a current blocker",
+    "frozen scoring or NET are restarted",
+    "no other fixes can possibly exist beyond inspected source"
+  ]
+}

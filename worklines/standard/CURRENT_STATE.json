@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "standard_m04_royal_safety_symbolic_witnesses_complete_main_gate_unrun",
+  "status": "standard_np_engine_readback_gate_complete_engine_blocked_external",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -44,13 +44,12 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE",
-    "subject": "主线接收/工程改正及普通模式资格化证据回读",
-    "action": "核对最新主线真实回执/HEAD、引擎PR与实际差异、普通模式featuresReady资格化、H02 AS来源消耗修复、M04路径碾碎完整原子王安全与权威RNG接口。H21旧P0为撤回的诊断，不得再次列已证阻断；只检查实际B1—B5运行证据。若工程仍缺失，形成精准主线阻断/责任与证据表并把运行NP/AS/AP/ES继续标UNRUN，普通线不改共享源码、不绕过模式门禁。",
-    "status": "ready_not_started_requires_explicit_continuation",
+    "id": "NEXT-STD-NP-MAIN-FIX-DELTA-RECEPTION-ON-EVIDENCE",
+    "status": "BLOCKED_EXTERNAL_MAIN_EVIDENCE",
+    "requires_external_trigger": true,
     "implementation_authorized": false,
-    "dependency_report": "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md",
-    "main_owner": "main implementation, official mode qualification, authoritative RNG and formal engine QA"
+    "source_gate": "G00/G01/G02/G03/G05 and actual qualifying runs",
+    "action": "Once main actually writes a new receipt/engine commit/qualification/RNG evidence, diff exact pinned sections, update independent NP/AS/AP/ES eligibility and only claim tests actually run. Otherwise leave blocked and refrain from repeating same readback."
   },
   "external_delivery": {
     "prepared_here": true,
@@ -957,38 +956,72 @@
     "resume_text": "继续《乐子象棋》普通象棋工作线。先核对最新远端HEAD与并发成果；读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt ，以 worklines/standard/CURRENT_STATE.json#latest_session_closeout 和 NEXT_ACTIONS.json#first 为准。已完成H21授鳞随机来源追溯及N=0/1/3/4/15、AS/AP/ES条件性索引的复验合同。下一任务 NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT（只读静态接口预检）尚未启动。正式NP/AS/AP/ES/RE与真实引擎测试/自然回放仍UNRUN；普通模式门禁不绕过。确认普通31/直接共享13/规则Δ0，评分冻结、NET暂停；保护新旧成果、增量写回并复读，不代填主线接收采用回执。"
   },
   "latest_task_completed": {
-    "id": "STD-NP-M04-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES-20261026",
-    "task": "NEXT-STD-NP-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES",
+    "id": "STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE-20261026",
     "date_local": "2026-10-26",
-    "source_handoff_head": "9799365314aeac83963d0124b56f9b590bcb5dc3",
-    "pinned_engine_sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-    "spec": "worklines/standard/specs/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.json",
-    "review": "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md",
-    "witnesses": 4,
-    "negative_cases": 11,
-    "selfcheck": "4 of 4 independent symbolic coordinate arithmetic only",
-    "error_chain": {
-      "old_id": "P0-H21-invoke-classified-before_main-formal-count-skipped",
-      "status": "RETRACTED_source_read_error",
-      "verified": "src/hero-actions.ts includes invoke as main",
-      "engine_run_validation": "UNRUN",
-      "different_p0_as_charge": "still needs main"
-    },
-    "verification_level": "V2 scoped source read + V1 symbol self-check; engine UNRUN",
-    "np_reachability": "not_established",
+    "source_handoff_head": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
+    "engine_main_sha": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "engine_pr13_head": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "engine_pr13_merged": false,
+    "report": "worklines/standard/reviews/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.md",
+    "matrix": "worklines/standard/specs/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.json",
+    "blockers": [
+      {
+        "id": "G00_MAIN_READ_RECEIPT",
+        "status": "UNVERIFIED_NOT_ASSERTED",
+        "owner": "main"
+      },
+      {
+        "id": "G01_MODE_ADMISSION",
+        "status": "BLOCKED_SOURCE_FLAG_FALSE",
+        "owner": "main"
+      },
+      {
+        "id": "G02_H02_AS_SOURCE",
+        "status": "OPEN_V2_SOURCE_RULE_DIVERGENCE",
+        "owner": "main"
+      },
+      {
+        "id": "G03_M04_ROYAL_SAFETY",
+        "status": "OPEN_V2_SIMULATION_GAP_V1_SYMBOLIC_WITNESSES",
+        "owner": "main"
+      },
+      {
+        "id": "G04_H21_PRAYER",
+        "status": "STATIC_CLASSIFICATION_CORRECT_RUNTIME_UNRUN",
+        "owner": "main"
+      },
+      {
+        "id": "G05_H21_RANDOM",
+        "status": "RNG_PROVENANCE_AND_SAFE_VALIDATION_NOT_EVIDENCED",
+        "owner": "main"
+      },
+      {
+        "id": "G06_FORMAL_NP_RUNS",
+        "status": "UNRUN_NO_EXECUTION_PROOF",
+        "owner": "main"
+      },
+      {
+        "id": "G07_ENGINE_PUBLICATION",
+        "status": "PR_OPEN_MAIN_OLD_NO_NEW_PATCH",
+        "owner": "main"
+      }
+    ],
+    "true_engine_runs": 0,
+    "formal_specs": "UNRUN",
+    "independent_QA": false,
+    "main_source_receipt_verified": null,
+    "main_source_adoption_verified": null,
+    "observed_exact_receiver_source_marker_found": false,
+    "verified_old_h21_p0_retracted": true,
     "rules_delta": 0,
     "ordinary_confirmations": 31,
     "direct_shared_confirmations": 13,
-    "game_code_changes": 0,
-    "engine_runs": 0,
-    "formal_tests": "UNRUN",
-    "independent_qa": false,
-    "scoring": "frozen",
+    "shared_code_changed": 0,
+    "other_workline_modified": false,
+    "score": "frozen",
     "NET": "paused",
     "mode_gate": "xiangqi.featuresReady=false",
-    "main_actual_received": null,
-    "main_actual_adopted": null,
-    "concurrent_work_preserved": true
+    "next_requires_evidence_change": true
   },
   "np_as_ap_es_observation_guard_matrix_20261025": {
     "id": "STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX-20261025",
@@ -1045,5 +1078,73 @@
     "tests": "UNRUN",
     "no_gameplay_rule_delta": true,
     "report": "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md"
+  },
+  "np_main_implementation_gate_20261026": {
+    "id": "STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE-20261026",
+    "date_local": "2026-10-26",
+    "source_handoff_head": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
+    "engine_main_sha": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "engine_pr13_head": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "engine_pr13_merged": false,
+    "report": "worklines/standard/reviews/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.md",
+    "matrix": "worklines/standard/specs/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.json",
+    "blockers": [
+      {
+        "id": "G00_MAIN_READ_RECEIPT",
+        "status": "UNVERIFIED_NOT_ASSERTED",
+        "owner": "main"
+      },
+      {
+        "id": "G01_MODE_ADMISSION",
+        "status": "BLOCKED_SOURCE_FLAG_FALSE",
+        "owner": "main"
+      },
+      {
+        "id": "G02_H02_AS_SOURCE",
+        "status": "OPEN_V2_SOURCE_RULE_DIVERGENCE",
+        "owner": "main"
+      },
+      {
+        "id": "G03_M04_ROYAL_SAFETY",
+        "status": "OPEN_V2_SIMULATION_GAP_V1_SYMBOLIC_WITNESSES",
+        "owner": "main"
+      },
+      {
+        "id": "G04_H21_PRAYER",
+        "status": "STATIC_CLASSIFICATION_CORRECT_RUNTIME_UNRUN",
+        "owner": "main"
+      },
+      {
+        "id": "G05_H21_RANDOM",
+        "status": "RNG_PROVENANCE_AND_SAFE_VALIDATION_NOT_EVIDENCED",
+        "owner": "main"
+      },
+      {
+        "id": "G06_FORMAL_NP_RUNS",
+        "status": "UNRUN_NO_EXECUTION_PROOF",
+        "owner": "main"
+      },
+      {
+        "id": "G07_ENGINE_PUBLICATION",
+        "status": "PR_OPEN_MAIN_OLD_NO_NEW_PATCH",
+        "owner": "main"
+      }
+    ],
+    "true_engine_runs": 0,
+    "formal_specs": "UNRUN",
+    "independent_QA": false,
+    "main_source_receipt_verified": null,
+    "main_source_adoption_verified": null,
+    "observed_exact_receiver_source_marker_found": false,
+    "verified_old_h21_p0_retracted": true,
+    "rules_delta": 0,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "shared_code_changed": 0,
+    "other_workline_modified": false,
+    "score": "frozen",
+    "NET": "paused",
+    "mode_gate": "xiangqi.featuresReady=false",
+    "next_requires_evidence_change": true
   }
 }

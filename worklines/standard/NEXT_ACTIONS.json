@@ -1,52 +1,85 @@
 {
   "first": {
-    "id": "NEXT-STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE",
-    "subject": "主线接收/工程改正及普通模式资格化证据回读",
-    "action": "核对最新主线真实回执/HEAD、引擎PR与实际差异、普通模式featuresReady资格化、H02 AS来源消耗修复、M04路径碾碎完整原子王安全与权威RNG接口。H21旧P0为撤回的诊断，不得再次列已证阻断；只检查实际B1—B5运行证据。若工程仍缺失，形成精准主线阻断/责任与证据表并把运行NP/AS/AP/ES继续标UNRUN，普通线不改共享源码、不绕过模式门禁。",
-    "status": "ready_not_started_requires_explicit_continuation",
+    "id": "NEXT-STD-NP-MAIN-FIX-DELTA-RECEPTION-ON-EVIDENCE",
+    "status": "BLOCKED_EXTERNAL_MAIN_EVIDENCE",
+    "requires_external_trigger": true,
     "implementation_authorized": false,
-    "dependency_report": "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md",
-    "main_owner": "main implementation, official mode qualification, authoritative RNG and formal engine QA"
+    "source_gate": "G00/G01/G02/G03/G05 and actual qualifying runs",
+    "action": "Once main actually writes a new receipt/engine commit/qualification/RNG evidence, diff exact pinned sections, update independent NP/AS/AP/ES eligibility and only claim tests actually run. Otherwise leave blocked and refrain from repeating same readback."
   },
   "preserve": "当前对话已收束；普通31/本线直接共享13，本对话两项共同确认及原候选/原话/来源、ES限定复核、全部历史成果保留。收束不新增批准；下一来源顺序复核尚未开始，待用户明确继续后接续。评分冻结、NET暂停，全部旧未运行规格保持UNRUN。",
   "main_owned_pending": "Latest main1.62 metadata only: no active user candidate; H15/H06 graduation-source review complete with policy unresolved; no new H15 policy adopted here.",
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "STD-NP-M04-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES-20261026",
-    "task": "NEXT-STD-NP-PATH-CRUSH-ROYAL-SAFETY-SYMBOLIC-WITNESSES",
+    "id": "STD-NP-MAIN-IMPLEMENTATION-READBACK-AND-EXECUTION-GATE-20261026",
     "date_local": "2026-10-26",
-    "source_handoff_head": "9799365314aeac83963d0124b56f9b590bcb5dc3",
-    "pinned_engine_sha": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-    "spec": "worklines/standard/specs/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.json",
-    "review": "worklines/standard/reviews/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.md",
-    "witnesses": 4,
-    "negative_cases": 11,
-    "selfcheck": "4 of 4 independent symbolic coordinate arithmetic only",
-    "error_chain": {
-      "old_id": "P0-H21-invoke-classified-before_main-formal-count-skipped",
-      "status": "RETRACTED_source_read_error",
-      "verified": "src/hero-actions.ts includes invoke as main",
-      "engine_run_validation": "UNRUN",
-      "different_p0_as_charge": "still needs main"
-    },
-    "verification_level": "V2 scoped source read + V1 symbol self-check; engine UNRUN",
-    "np_reachability": "not_established",
+    "source_handoff_head": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
+    "engine_main_sha": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "engine_pr13_head": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "engine_pr13_merged": false,
+    "report": "worklines/standard/reviews/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.md",
+    "matrix": "worklines/standard/specs/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.json",
+    "blockers": [
+      {
+        "id": "G00_MAIN_READ_RECEIPT",
+        "status": "UNVERIFIED_NOT_ASSERTED",
+        "owner": "main"
+      },
+      {
+        "id": "G01_MODE_ADMISSION",
+        "status": "BLOCKED_SOURCE_FLAG_FALSE",
+        "owner": "main"
+      },
+      {
+        "id": "G02_H02_AS_SOURCE",
+        "status": "OPEN_V2_SOURCE_RULE_DIVERGENCE",
+        "owner": "main"
+      },
+      {
+        "id": "G03_M04_ROYAL_SAFETY",
+        "status": "OPEN_V2_SIMULATION_GAP_V1_SYMBOLIC_WITNESSES",
+        "owner": "main"
+      },
+      {
+        "id": "G04_H21_PRAYER",
+        "status": "STATIC_CLASSIFICATION_CORRECT_RUNTIME_UNRUN",
+        "owner": "main"
+      },
+      {
+        "id": "G05_H21_RANDOM",
+        "status": "RNG_PROVENANCE_AND_SAFE_VALIDATION_NOT_EVIDENCED",
+        "owner": "main"
+      },
+      {
+        "id": "G06_FORMAL_NP_RUNS",
+        "status": "UNRUN_NO_EXECUTION_PROOF",
+        "owner": "main"
+      },
+      {
+        "id": "G07_ENGINE_PUBLICATION",
+        "status": "PR_OPEN_MAIN_OLD_NO_NEW_PATCH",
+        "owner": "main"
+      }
+    ],
+    "true_engine_runs": 0,
+    "formal_specs": "UNRUN",
+    "independent_QA": false,
+    "main_source_receipt_verified": null,
+    "main_source_adoption_verified": null,
+    "observed_exact_receiver_source_marker_found": false,
+    "verified_old_h21_p0_retracted": true,
     "rules_delta": 0,
     "ordinary_confirmations": 31,
     "direct_shared_confirmations": 13,
-    "game_code_changes": 0,
-    "engine_runs": 0,
-    "formal_tests": "UNRUN",
-    "independent_qa": false,
-    "scoring": "frozen",
+    "shared_code_changed": 0,
+    "other_workline_modified": false,
+    "score": "frozen",
     "NET": "paused",
     "mode_gate": "xiangqi.featuresReady=false",
-    "main_actual_received": null,
-    "main_actual_adopted": null,
-    "concurrent_work_preserved": true
+    "next_requires_evidence_change": true
   },
-  "status": "symbolic_royal_safety_complete_next_main_engine_readback_gate",
+  "status": "np_engine_readback_complete_external_main_evidence_required",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261019-r1",
     "status": "closed_current_conversation",
