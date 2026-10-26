@@ -1,0 +1,843 @@
+{
+  "schema": "lezi.hc.original_pilot_api_binding_manifest.v1",
+  "id": "HC-47-ORIGINAL-PILOT-API-BOUNDARY-20261026-r47",
+  "date_local": "2026-10-26",
+  "workline": "half_chaos",
+  "authority": "User: 进行下一步. Existing independent source/document-only authorization inherited. No engine-run or shared-code permission.",
+  "handoff_head_at_read": "9799365314aeac83963d0124b56f9b590bcb5dc3",
+  "engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "source_blobs": {
+    "REPLAY_ACTION_DATA.json": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+    "INITIALIZATION_WITNESS_DATA.json": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+    "ASSERTION_EVIDENCE_MATRIX.json": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+    "OBSERVATION_FIELD_MAPPING.json": "be63d62bf94e029042e49089455af41b2b81b5a4",
+    "ADMISSION_CONTRACT_PROPOSAL.json": "a29a20e303d3fd255ee338feaa9b60ae129e0c0a"
+  },
+  "source_api_blobs": {
+    "src/remote-room.ts": "97b60f7c1ab9a79bf85388a9fc824690f7115451",
+    "src/types.ts": "a837ca049d3d0a7fd8cc38c3b0a9552f7d24105e",
+    "src/hero-actions.ts": "0f862528ae09f3b6ea72cf693b17f159e0a13c52",
+    "src/research-source-context.ts": "01aa06251a9d76dca075a8899a3530ab0f47d0f2",
+    "src/modes.ts": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+    "src/setup.ts": "15df513e8204d48464c097453c7bf9b83748c9f5"
+  },
+  "claim_limit": "Typed field bindings are a DOCUMENT PROPOSAL derived from existing types/functions and original semantic requests, not executable fixture payloads, official API schema, legality proof, or authorized source admission.",
+  "api_binding_principles": [
+    "room creation requires credible internal synchronized source capability; cannot use a client-supplied roomId/hero/mutation to unlock unsupported combinations",
+    "original stable red/black identities are resolved after real RPS from room.game.players; actor_side is not a playerId or evidence of host seat",
+    "each original main move proposes {from:{x,y},to:{x,y},expectedRevision,actionId}; revision from live authority immediately before each request, not turn number or script index",
+    "before-main hourglass proposes {kind:'hero_ability',ability:'hourglass',expectedRevision,actionId}; no coordinates",
+    "before-main dragon_bomb proposes {kind:'hero_ability',ability:'bomb',pieceId:<actual public/revealed ID>,to:{x,y},expectedRevision,actionId}; authority_only_expected_caster_initial_id never blindly becomes a player payload",
+    "only exact original request sequence per turn: before-main skill attempt(s) first, main afterwards; rejected before-main must not consume its original normal main opportunity",
+    "time supplied by permitted driver according to real deadline/state; no synthetic zero-time or observer-introduced tick; successful returned room is not an exact after-main-before-end checkpoint",
+    "random witness: two independent 15-piece pools/28 identity draws per world then relevant mutation draw(s); verify consumed draw sequence, do not mutate runtime identities or game state",
+    "actual source errors/duplicates/timeout/end/mismatch are captured distinctly; no fabricated result, and driver stops on unexpected outcomes and invalid/incomplete observers"
+  ],
+  "source_code_specificity": {
+    "move_entry": "src/remote-room.ts submitRemoteMove(room, playerId, command:MoveCommand,now); private traps/timeout/actionId/transaction/error pathways remain in source",
+    "ability_entry": "src/remote-room.ts submitRemoteHeroAbility(room,playerId,command:HeroAbilityCommand,now,randomInt?)",
+    "types": "src/types.ts MoveCommand/ HeroAbilityCommand: expectedRevision/actionId required; ability 'hourglass'/'bomb' valid; bomb uses pieceId and to",
+    "initialization": "src/remote-room.ts createGameAfterSetup calls createInitialGame→drawRuntimeMutation→researchSources→initializeFeatureSecret; source explicitly rejects mutation when research.mode set",
+    "research_reject": "src/research-source-context.ts MODE_RESEARCH_SOURCES.half_chaos=['shuffler'], modeResearchPermits rejects any rules.mutation; mode featuresReady false",
+    "observation_limit": "submitRemoteMove returns post room/trap/terminal effects; submitRemoteHeroAbility may start next formal clock. Neither gives precise after-full-main-atom-before-normal-end or after-normal-end-before-next-begin snapshots.",
+    "B3_guard": "src/hero-actions.ts bomb branch validates caster, quota, target then IN_CHECK before decrementing ammo/adding warp; real preconditions still need original replay execution",
+    "hourglass_guard": "src/hero-actions.ts isolated candidate and full closure have specialized guard; no original natural DS03 evidence",
+    "existing_scoring_fixture": "jieqi night/shuffler+jian_xie, not an original half_chaos driver"
+  },
+  "pilots": [
+    {
+      "id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "heroes": {
+        "red": "H04",
+        "black": "H03"
+      },
+      "mutation": "M04",
+      "original_turn_count": 5,
+      "requests": 5,
+      "main": 5,
+      "before_main": 0,
+      "original_checkpoints": 10,
+      "original_spec_ids": [
+        "PD-S01",
+        "PD-S02",
+        "PD-S03",
+        "PD-S04",
+        "PD-S05",
+        "PD-S31",
+        "PD-S33",
+        "PD-S34",
+        "PD-S35",
+        "PD-S36"
+      ],
+      "pilot_evidence_status": "UNRUN",
+      "source_binding": "exact original declaration IDs; no requests synthesized"
+    },
+    {
+      "id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "original_turn_count": 7,
+      "requests": 8,
+      "main": 7,
+      "before_main": 1,
+      "original_checkpoints": 15,
+      "original_spec_ids": [
+        "DS-S13",
+        "DS-S14",
+        "DS-S15",
+        "DS-S16",
+        "DS-S28"
+      ],
+      "pilot_evidence_status": "UNRUN",
+      "source_binding": "exact original declaration IDs; no requests synthesized"
+    },
+    {
+      "id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "heroes": {
+        "red": "H06",
+        "black": "H05"
+      },
+      "mutation": "D01",
+      "original_turn_count": 8,
+      "requests": 10,
+      "main": 8,
+      "before_main": 2,
+      "original_checkpoints": 18,
+      "original_spec_ids": [
+        "DS-S17",
+        "DS-S18",
+        "DS-S19",
+        "DS-S20",
+        "DS-S21",
+        "DS-S22",
+        "DS-S28"
+      ],
+      "pilot_evidence_status": "UNRUN",
+      "source_binding": "exact original declaration IDs; no requests synthesized"
+    }
+  ],
+  "requests": [
+    {
+      "id": "MA-PD01:R1:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 7
+        },
+        "to": {
+          "x": 1,
+          "y": 6
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:R1:main:closed",
+      "checkpoint_end": "MA-PD01:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-PD01:B1:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:B1:main:closed",
+      "checkpoint_end": "MA-PD01:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-PD01:R2:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:R2:main:closed",
+      "checkpoint_end": "MA-PD01:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-PD01:B2:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 1
+        },
+        "to": {
+          "x": 1,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:B2:main:closed",
+      "checkpoint_end": "MA-PD01:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-PD01:R3:main",
+      "replay_id": "MA-PD01",
+      "world_id": "IW-0eaace9ad2c1699d",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 6
+        },
+        "to": {
+          "x": 1,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-PD01:R3:main:closed",
+      "checkpoint_end": "MA-PD01:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS03:R1:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 7,
+          "y": 7
+        },
+        "to": {
+          "x": 3,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:R1:main:closed",
+      "checkpoint_end": "MA-DS03:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS03:B1:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 2
+        },
+        "to": {
+          "x": 1,
+          "y": 3
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:B1:main:closed",
+      "checkpoint_end": "MA-DS03:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS03:R2:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 9
+        },
+        "to": {
+          "x": 4,
+          "y": 8
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:R2:main:closed",
+      "checkpoint_end": "MA-DS03:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS03:B2:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 3
+        },
+        "to": {
+          "x": 1,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:B2:main:closed",
+      "checkpoint_end": "MA-DS03:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS03:R3:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 4,
+          "y": 8
+        },
+        "to": {
+          "x": 4,
+          "y": 7
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:R3:main:closed",
+      "checkpoint_end": "MA-DS03:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS03:B3:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 3
+        },
+        "to": {
+          "x": 0,
+          "y": 4
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:B3:main:closed",
+      "checkpoint_end": "MA-DS03:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS03:R4:pre-1",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "hourglass",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "hourglass",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>"
+      },
+      "semantic_caster_position": null,
+      "source_initial_caster_reference": null,
+      "expected_disposition": "rejected",
+      "original_evidence_checkpoint": "MA-DS03:R4:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS03:R4:main",
+      "replay_id": "MA-DS03",
+      "world_id": "IW-bdcfe63226360aaa",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS03:R4:main:closed",
+      "checkpoint_end": "MA-DS03:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:R1:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "R1",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 6
+        },
+        "to": {
+          "x": 0,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:R1:main:closed",
+      "checkpoint_end": "MA-DS04:R1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:B1:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B1",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 0
+        },
+        "to": {
+          "x": 0,
+          "y": 2
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:B1:main:closed",
+      "checkpoint_end": "MA-DS04:B1:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:R2:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "R2",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 2,
+          "y": 6
+        },
+        "to": {
+          "x": 2,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:R2:main:closed",
+      "checkpoint_end": "MA-DS04:R2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:B2:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B2",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 3,
+          "y": 0
+        },
+        "to": {
+          "x": 4,
+          "y": 1
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:B2:main:closed",
+      "checkpoint_end": "MA-DS04:B2:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:R3:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "R3",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 7
+        },
+        "to": {
+          "x": 1,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:R3:main:closed",
+      "checkpoint_end": "MA-DS04:R3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:B3:pre-1",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "dragon_bomb",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "bomb",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>",
+        "pieceId": "<currently public visible caster id at source-declared x/y; bind live authority not secret alias>",
+        "to": {
+          "x": 4,
+          "y": 2
+        }
+      },
+      "semantic_caster_position": [
+        4,
+        1
+      ],
+      "source_initial_caster_reference": "covered-03",
+      "expected_disposition": "rejected",
+      "original_evidence_checkpoint": "MA-DS04:B3:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:B3:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B3",
+      "actor_side": "black",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "x": 1,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:B3:main:closed",
+      "checkpoint_end": "MA-DS04:B3:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:R4:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "R4",
+      "actor_side": "red",
+      "within_turn_order": 1,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 6,
+          "y": 6
+        },
+        "to": {
+          "x": 6,
+          "y": 5
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:R4:main:closed",
+      "checkpoint_end": "MA-DS04:R4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:B4:pre-1",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B4",
+      "actor_side": "black",
+      "within_turn_order": 1,
+      "type": "before_main_skill",
+      "source_kind": "dragon_bomb",
+      "proposed_api": "submitRemoteHeroAbility",
+      "proposed_command": {
+        "kind": "hero_ability",
+        "ability": "bomb",
+        "actionId": "<trusted_driver_fresh_unique_action_id>",
+        "expectedRevision": "<current_authority_revision>",
+        "pieceId": "<currently public visible caster id at source-declared x/y; bind live authority not secret alias>",
+        "to": {
+          "x": 4,
+          "y": 2
+        }
+      },
+      "semantic_caster_position": [
+        4,
+        1
+      ],
+      "source_initial_caster_reference": "covered-03",
+      "expected_disposition": "accepted",
+      "original_evidence_checkpoint": "MA-DS04:B4:pre-1:observation",
+      "pre_main_observation_actual": "UNRUN",
+      "trace_source": "REPLAY_ACTION_DATA.json",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    },
+    {
+      "id": "MA-DS04:B4:main",
+      "replay_id": "MA-DS04",
+      "world_id": "IW-61790bfc01eccf12",
+      "turn": "B4",
+      "actor_side": "black",
+      "within_turn_order": 2,
+      "type": "ordinary_main",
+      "source_kind": "semantic_from_to",
+      "proposed_api": "submitRemoteMove",
+      "proposed_command": {
+        "from": {
+          "x": 1,
+          "y": 0
+        },
+        "to": {
+          "x": 2,
+          "y": 0
+        },
+        "expectedRevision": "<current_authority_revision>",
+        "actionId": "<trusted_driver_fresh_unique_action_id>"
+      },
+      "source_expected_main_committed": true,
+      "checkpoint_main": "MA-DS04:B4:main:closed",
+      "checkpoint_end": "MA-DS04:B4:normal-end",
+      "raw_wire_status": "UNRESOLVED_NOT_AN_API_SCHEMA",
+      "payload_status": "SCHEMA_FIELD_MAPPING_PROPOSAL_ONLY_NOT_EXECUTABLE"
+    }
+  ],
+  "checks": {
+    "count": 18,
+    "passed": 18,
+    "type": "V2 SOURCE_AND_SCHEMA_CONSISTENCY_ONLY",
+    "items": {
+      "three_original_pilots": true,
+      "original_world_bindings": true,
+      "request_count_23": true,
+      "main_count_20": true,
+      "pre_main_count_3": true,
+      "unique_ids_23": true,
+      "scoped_actor_original": true,
+      "main_checkpoint_present": true,
+      "end_checkpoint_present": true,
+      "pre_skill_checkpoint_present": true,
+      "total_pilot_checkpoints_43": true,
+      "expected_5_8_10": true,
+      "exact_h04h03m04": true,
+      "exact_h06h05d01": true,
+      "original_specs_64_still_unrun": true,
+      "original_replays_12_zero": true,
+      "supported_skill_names": true,
+      "source_replay_identity_unmodified": true
+    }
+  },
+  "unresolved_before_execution": [
+    "No legally issued exact tuple-specific room/source/actor research capability for any original H04/H03/M01, H04/H03/M04, H06/H05/D01 tuple",
+    "No proven trusted original world RNG/mutation sequence binding, no source-verified executable original 12 replay driver or actual command",
+    "No precise passive observation before normal formal end/after its closure or skill request invalidation/privacy envelope",
+    "M01/M04 original path/return/landing/royal-safety closure; D01 six-step closure; remaining natural stimulus gaps",
+    "No approved engine natural execution scope; score frozen, NET paused, featuresReady false"
+  ],
+  "stop_conditions": [
+    "wrong exact tuple or world, side assignment mismatch, source capability missing/mismatch",
+    "generated action IDs reused, stale expectedRevision, actor/phase/real deadline mismatch, wrong public caster at requested position",
+    "Fisher–Yates or mutation draw bound/value/number mismatch, secret data entering player projection",
+    "actual rejection differs from original expected source disposition; fallback would require invented action",
+    "no exact observation event/evidence invalid, source semantics missing, unexpected terminal or check/royal safety exception",
+    "any proposed test tries to reclassify original64 UNRUN without lawful real execution"
+  ],
+  "update_scope": {
+    "original_data_edits": 0,
+    "original_spec_edits": 0,
+    "engine_runs": 0,
+    "engine_code_edits": 0,
+    "gameplay_rule_adoptions": 0,
+    "other_workline_changes": 0,
+    "new_observed_checkpoints": 0
+  },
+  "validation": {
+    "level": "V2_SOURCE_CHECKED",
+    "independent_QA": false,
+    "static_checks": 18,
+    "all_pass": true,
+    "real_replay_execution": false
+  },
+  "limits": {
+    "risk": "High risk of synthetic wire mapping mistaken for actually executable original run",
+    "alternative": "An isolated harness may later expose compatible typed entry, but the current research scope denies tuples/mutation",
+    "unknown": "approved main admission/observer/real pilot driver and source legal openings",
+    "failure": "Using proposed placeholders as raw commands or PASS evidence",
+    "next": "Main must implement source-pinned admission and exact passive observer then inspect this 23-row binding manifest, only after legal run authority execute original pilots"
+  },
+  "next": {
+    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+    "status": "BLOCKED_MAIN_ADMISSION_OBSERVER_AND_DRIVER",
+    "action": "Main to validate/implement exact trusted original entry bindings and passive evidence; half_chaos rechecks new main evidence/negative cases before any authorized natural run."
+  }
+}

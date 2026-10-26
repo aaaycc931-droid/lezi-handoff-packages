@@ -1,3 +1,6 @@
+【2026-10-26半混乱r47原先导接口逐条绑定】
+新增HC47_ORIGINAL_PILOT_API_BOUNDARY.json：沿原数据不改23请求（20走棋/3前置技能），将MA-PD01/DS03/DS04每个声明对照真实src/remote-room.ts与src/types.ts接口、字段、回合前后顺序及原43个观察点；18/18条静态检查成立，仅V2来源/结构映射，不是已可发送wire payload或合法运行。尤其原B3拒投与B4新窗口投弹需当时公开施放者ID、实际playerId/revision/clock/RNG，观察点缺源实现不能补造。PR13三tuple研究准入仍阻断；原12自然执行0、64UNRUN、210点实际观察0、featuresReady=false、评分冻结、NET暂停。详WORKING§8.72、CURRENT_STATE.r47_original_pilot_api_binding及RETURN_TO_MAIN.r47_to_main。仅本线文档增量，其他工作线不动；发布不代表主线读取。下一仍是NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS，先看主线真实代码/授权，再进行任何自然回放。以下r46及更早为历史。
+
 【2026-10-25半混乱r46主线实际回执核对】
 已核最新主线READ_RECEIPTS.scoring_h03_preparation_20261025：主线确实实际读取r44完整收束报告，并仅采用对话关闭/阻断项/原UNRUN/下一任务元数据；r43完整原始证据与r45全报告未实际接收/采用。校正此前r45在当时HEAD未找到r44回执的时点判断，不修改历史证据。主线新增H03评分先导仅静态准备，不是半混乱研究准入或自然runner；引擎PR13仍草稿。半混乱原12自然回放0、64UNRUN、210真实观察0、featuresReady=false，评分冻结、NET暂停。详HC46_MAIN_RECEIPT_RECONCILIATION.json、CURRENT_STATE.r46_main_receipt_reconciliation及WORKING§8.71。本轮只更新本线接收/状态，未运行引擎、未改代码或其他工作线。下一继续等主线精确三tuple/被动观察/可信driver与授权；以下r45及以前是历史。
 

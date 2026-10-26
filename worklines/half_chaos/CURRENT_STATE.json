@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-46-MAIN-RECEIPT-RECONCILIATION-20261025-r46",
+  "revision": "HC-47-ORIGINAL-PILOT-API-BOUNDARY-20261026-r47",
   "workline": "half_chaos",
-  "date_local": "2026-10-25",
+  "date_local": "2026-10-26",
   "timezone": "Asia/Shanghai",
-  "status": "r46_main_r44_receipt_reconciled_original_pilots_still_blocked",
+  "status": "r47_23_original_pilot_requests_typed_api_binding_prepared_runtime_still_blocked",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -2603,6 +2603,34 @@
       "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
       "status": "BLOCKED_MAIN_TRUSTED_ADMISSION_OBSERVER_DRIVER",
       "priority": "Main shared engineering must publish 3 precise tuples, exact passive checkpoints, original seed-bound driver, M01/M04/D01 closure and executable legal authorization; half-chaos can do only independent source/docs checks until then"
+    }
+  },
+  "r47_original_pilot_api_binding": {
+    "source_head": "9799365314aeac83963d0124b56f9b590bcb5dc3",
+    "source_engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+    "report": "worklines/half_chaos/HC47_ORIGINAL_PILOT_API_BOUNDARY.json",
+    "three_pilots": [
+      "MA-PD01",
+      "MA-DS03",
+      "MA-DS04"
+    ],
+    "request_bindings": 23,
+    "normal_main": 20,
+    "before_main_skill": 3,
+    "original_checkpoints": 43,
+    "static_checks": "18/18 V2_ONLY",
+    "actual_executions": 0,
+    "original64": "UNRUN",
+    "observation210_actual": 0,
+    "featuresReady": false,
+    "score": "FROZEN",
+    "NET": "PAUSED",
+    "engine_pr13_status": "DRAFT_UNMERGED",
+    "main_actual_adoption": "UNKNOWN_THIS_R47_SENDER_ONLY",
+    "next": {
+      "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
+      "status": "BLOCKED_MAIN_ADMISSION_OBSERVER_AND_DRIVER",
+      "action": "Main implement credible exact tuple admission/observer/real driver; independent HC recheck then execute only within later legal authorization."
     }
   }
 }

@@ -3094,3 +3094,9 @@ verification_status=partial，文件来源V2＋同一AI语义推演V1；未做�
 从r45固定提交`60a5de5f7c9d4a3718d9f985efed14a9961493fd`对比最新HEAD`bab2ac020ff508d4e33accf9178a21a2d355d45b`，中间新增主线评分H03静态先导准备及普通模式独立记录，未改本线半混乱文件。真实主线`READ_RECEIPTS.json#scoring_h03_preparation_20261025`记录其已读`HC44_SESSION_CLOSEOUT.json`**全文**，采用仅对话关闭、UNRUN、阻断与下一任务元数据；并明确本次未读r43源正文，新r45技术全报告也仅有新提交路径/身份观察，不算完整接收。此前r45当时未找到r44回执是带时间边界的事实，现据最新发布更新为r44已读、有限元数据采用；不代填主线其他范围。
 
 PR13仍open/draft/unmerged，半混乱研究half_chaos只允许shuffler且mutation被拒，原三tuple先导自然运行仍阻断；评分H03 pilot来源绑定/4组配对资料仅静态准备，与原12自然回放无等价性。保留12执行0、64UNRUN、210观察0、featuresReady=false、评分冻结及NET暂停；本轮没有引擎代码、测试、门禁、玩法改变。完整状态见`HC46_MAIN_RECEIPT_RECONCILIATION.json`。
+
+## 8.72 r47 三个原先导逐条映射真实引擎接口（2026-10-26）
+
+固定源HEAD 9799365314aeac83963d0124b56f9b590bcb5dc3、引擎PR13固定3f98bc9。读取原始REPLAY_ACTION_DATA/INITIALIZATION_WITNESS_DATA/ASSERTION_EVIDENCE_MATRIX与WP01/WP02相关合同，依src/remote-room.ts、src/types.ts、src/setup.ts、src/hero-actions.ts编排**仅供主线审查的请求接口契约**。MA-PD01 5请求/10观察点、MA-DS03 8/15、MA-DS04 10/18：合计原始23声明，其中普通主行动20与正式主行动前技能3，源记录与对应43个观察点18/18静态不变量核对为真。每次普通走棋映射MoveCommand字段from/to，前技能hourglass/bomb映射HeroAbilityCommand；原数据不写入actionId/playerId/expectedRevision等虚构运行值，须从主线许可真实room/side与权威状态取，投弹caster以运行当时已公开棋子核准，不从authority-only身份别名生成用户 payload。
+
+注意：返回的room已经可能包含正常正式终结、陷阱和下个回合起钟；不是申请的精确after-main atom/after-normal-end断点。half_chaos研究仅准shuffler且禁止mutation，原三tuple不能执行；研究source、RNG、被动观察、M01/M04与D01闭合、可执行受限driver和技术授权均归主线，不允许借旧jieqi fixture、伪造复位/随机、改原64UNRUN。23条逐条绑定及拒绝/暂停条件见HC47_ORIGINAL_PILOT_API_BOUNDARY.json。此为文件+源码V2检查，不是engine test、独立QA、游戏实测，也不构成技能新确认或主线实际采用。
