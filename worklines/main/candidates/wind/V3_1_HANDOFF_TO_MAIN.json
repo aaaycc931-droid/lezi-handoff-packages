@@ -1,0 +1,64 @@
+{
+  "schema": "lezi.wind.design_handoff.v1",
+  "handoff_id": "WIND-V3_1-DESIGN-HANDOFF-20261027",
+  "date_local": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "repository": "aaaycc931-droid/lezi-handoff-packages",
+  "sending_context": "wind hero design dialogue (independent discussion; not engineering/scoring receiver)",
+  "recipient_workline": "main",
+  "recipient_scope": [
+    "hero candidate source reception",
+    "scoring method workline access to current Wind candidate"
+  ],
+  "publication_status": "source_published_receiver_read_and_adoption_unverified",
+  "sender_intent": "user explicitly requested handoff and subsequent session closeout",
+  "preflight_head": "c40de8c60b9c8eff89fe0206783d8659a401612e",
+  "design_source": {
+    "path": "worklines/main/candidates/wind/V3_1_CANDIDATE.md",
+    "publication_commit": "a9e0c74dd0345e8efa236ceeecff93c37759282f",
+    "blob_sha": "6e66d82b0825e915c9b67eabc51906d91a4b2dc5",
+    "title": "风 V3.1｜其疾如风，后发而先至",
+    "version": "WIND-V3.1-CANDIDATE",
+    "status": "complete_candidate_not_final"
+  },
+  "related_source": {
+    "scoring_gap": "worklines/main/scoring/DESIGN_PHASE_PREDICTION_GAP_INTAKE.md",
+    "prior_history_design": "worklines/main/candidates/wind/DESIGN.md",
+    "prior_history_session_closeout": "worklines/main/candidates/wind/SESSION_CLOSEOUT.md",
+    "scoring_execution_state": "worklines/main/scoring/EXECUTION_STATE.json",
+    "main_entry": "worklines/main/START_HERE.txt"
+  },
+  "confirmed_deltas": [
+    "enemy first move by each of six piece classes unlocks one shared stored sprint chance for that class",
+    "one matching own piece performs exactly two normal moves in one formal turn, not two different pieces",
+    "both submoves cannot capture/check including indirect check and must preserve king safety after each",
+    "strict A1: after each landing the moving piece cannot itself legally capture an enemy on its next move; other own pieces may acquire a non-checking capture threat",
+    "two-move sequence may not end at the starting square",
+    "unspent unlocks do not expire after opening window"
+  ],
+  "not_approved_or_excluded": [
+    "not final hero sign-off",
+    "A2 final-landing-only no-attack is only sensitivity comparison and not adopted",
+    "old 5T/2USES is historical, not current Wind V3.1",
+    "no 25-point reissue or 53-point target",
+    "no scoring-system method adoption, formal global score or ledger rewrite",
+    "no engine implementation, mode admission, NET, deployment or changes to other heroes"
+  ],
+  "actual_validation": {
+    "design_conversation_review": true,
+    "source_document_readback": true,
+    "prior_board_cases": "manual illustrative analysis only; not verified by authoritative engine",
+    "engine_runs": 0,
+    "full_games": 0,
+    "formal_score": null
+  },
+  "recipient_actions": [
+    "read V3_1_CANDIDATE.md full body and compare with old DESIGN.md to prevent version mismatch",
+    "read design-phase prediction gap intake together with V3.1, preserve the CF-OUTCOME candidate and H03 independent preparation",
+    "record actual reception/adoption in receiver-owned READ_RECEIPTS or scoring intake once reviewed; do not infer from publication",
+    "do not modify candidate, engine or scores without separate scope and authorization"
+  ],
+  "receiver_read_verified": false,
+  "receiver_adoption_verified": false,
+  "session_closure": "worklines/main/candidates/wind/V3_1_SESSION_CLOSEOUT.md"
+}
