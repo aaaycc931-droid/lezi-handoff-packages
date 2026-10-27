@@ -1,51 +1,49 @@
 {
   "schema": "lezi.main_mode_task.v1",
-  "dispatch_id": "MAIN-THREE-MODE-20261024",
+  "dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261027",
   "issued_by": "main",
-  "date_local": "2026-10-24",
-  "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
-  "source_engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/13",
-  "state": "issued_pending_receiver",
+  "date_local": "2026-10-27",
+  "previous_task": {
+    "id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
+    "path": "worklines/chaos/TASK_FROM_MAIN.json",
+    "source_commit": "bc75bb78a4b1720f4f196c602b4dcd844625367e"
+  },
+  "workline": "chaos",
+  "mode_id": "jieqi",
+  "task_id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
+  "subject": "接收H15/H11/H06真实房间与隐私证据，对照CH07逐项核缺口",
+  "state": "issued_pending_receiver_review",
   "receiver_read": false,
   "receiver_adopted": false,
+  "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/14",
+  "source_handoff_parent": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
+  "inputs": [
+    "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+    "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+    "engine:docs/SHARED_RUNTIME_RESEARCH_20261027.md",
+    "engine:review/shared-runtime/RESULTS_20261027.json",
+    "worklines/chaos/CURRENT_STATE.json",
+    "worklines/chaos/RETURN_TO_MAIN.json"
+  ],
+  "actions": [
+    "固定代码570fdf1和原确认，读取H15当前运行时测试、H11-A时钟测试、hero-actions/hero-progress/remote-room/web投影变更。",
+    "对照CH07原矩阵，把本轮真实A/B死亡、洗牌及H06三例与仍未覆盖的毕业/控制/空间分支分别记账；不重复准备已执行输入。",
+    "接收者自行写READ_RECEIPTS与RETURN_TO_MAIN，发现共享代码问题以具体source/action/view差分回主线。"
+  ],
+  "allowed": "沿本线已有授权读完整来源/代码/实际测试结果并增量核证；共享业务代码仍归主线。不自动扩张本线引擎执行、产品门禁或规则批准。",
+  "acceptance": [
+    "本轮19项H15针对性及相关回归不是所有CH07字段独立验收。",
+    "每项结论绑定固定来源和实际证据；不足不写PASS；由实际接收者自己登记回执。"
+  ],
+  "outputs": [
+    "worklines/chaos/READ_RECEIPTS.json",
+    "worklines/chaos/RETURN_TO_MAIN.json",
+    "worklines/chaos/CURRENT_STATE.json"
+  ],
+  "return_policy": "固定工作目录增量写回RETURN_TO_MAIN.json；实际接收者自行更新READ_RECEIPTS.json，主线实际读后才写主线回执；共享业务源码修改归主线串行整合。",
   "gameplay_delta": 0,
   "scoring": "frozen",
   "NET": "paused",
-  "return_policy": "固定工作目录增量写回RETURN_TO_MAIN.json；实际接收者自行更新READ_RECEIPTS.json，主线实际读后才写主线回执；共享业务源码修改归主线串行整合。",
-  "workline": "chaos",
-  "mode_id": "jieqi",
-  "task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
-  "subject": "恢复混乱模式（原揭棋）独立来源并核H11×H15差分",
-  "entry": "worklines/chaos/START_HERE.txt",
-  "inputs": [
-    "worklines/main/MODE_DISPATCH.json",
-    "worklines/main/CURRENT_STATE.json",
-    "worklines/standard/rules/shared/09_CURRENT_GAME_MODES.md",
-    "worklines/standard/sources/standard/inherited_dispatch/baseline/modes/original_jieqi/CURRENT_RULES.md",
-    "worklines/main/ADJUDICATION.json",
-    "worklines/main/SHARED_COORDINATION.json"
-  ],
-  "source_rule": "旧原揭棋入口是导航及历史边界，不是最新全部规则；沿主线ADJUDICATION/SOURCE_MAP查现行完整H11/H15/H06来源，再追实现。不能把普通宿主选择或半混乱本体锚定移植到jieqi。",
-  "actions": [
-    "核固定HEAD/协作CURRENT/原确认与实际引擎来源，区分用户所称混乱与half_chaos；发现独立较新成果先保护、合并接续，不能从本新目录推断此前无工作。",
-    "在SOURCE_REVIEW.md形成原揭棋现行来源表、H11复原/倒戈/重新绑定与H15一次训练/死亡失败/回溯不退款的已确认、未决、实现、未验差分。",
-    "为下一最小原揭棋专属验证列真实前提和合法输入；共享争议列明具体来源回主线，其余继续。"
-  ],
-  "outputs": [
-    "worklines/chaos/SOURCE_REVIEW.md",
-    "worklines/chaos/CURRENT_STATE.json",
-    "worklines/chaos/RETURN_TO_MAIN.json",
-    "worklines/chaos/READ_RECEIPTS.json"
-  ],
-  "acceptance": [
-    "所有决定性结论有固定提交/路径/原文作用域；当前已确认与旧待办不互相覆盖。",
-    "提供一个有输入/预期/来源/未验项的具体下一任务；缺自然正例或实现时明确标注。"
-  ],
-  "allowed": "只读规则/源码及本线文档增量写回；不改共享源码、规则、入池或研究/产品门禁。",
-  "not_claimed": [
-    "本线旧完整历史已全量恢复",
-    "游戏已适配完毕",
-    "任何自然回放或完整对局通过"
-  ]
+  "wakeup_or_receiver_adoption_claimed": false
 }

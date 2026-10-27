@@ -1,51 +1,49 @@
 {
   "schema": "lezi.main_mode_task.v1",
-  "dispatch_id": "MAIN-THREE-MODE-20261024",
+  "dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261027",
   "issued_by": "main",
-  "date_local": "2026-10-24",
-  "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
-  "source_engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/13",
-  "state": "issued_pending_receiver",
+  "date_local": "2026-10-27",
+  "previous_task": {
+    "id": "STD-RNG-01",
+    "path": "worklines/standard/TASK_FROM_MAIN.json",
+    "source_commit": "bc75bb78a4b1720f4f196c602b4dcd844625367e"
+  },
+  "workline": "standard",
+  "mode_id": "xiangqi",
+  "task_id": "STD-RECEIVE-AS-RNG-RUNTIME-20261027",
+  "subject": "接收限定AS来源保留与H21真实抽取证据，核普通NP完整前提缺口",
+  "state": "issued_pending_receiver_review",
   "receiver_read": false,
   "receiver_adopted": false,
+  "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/14",
+  "source_handoff_parent": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
+  "inputs": [
+    "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+    "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+    "engine:docs/SHARED_RUNTIME_RESEARCH_20261027.md",
+    "engine:review/shared-runtime/RESULTS_20261027.json",
+    "worklines/standard/CURRENT_STATE.json",
+    "worklines/standard/RETURN_TO_MAIN.json"
+  ],
+  "actions": [
+    "读取精确AS guard与AP/ES负向保护、H21非法索引拒绝/候选池顺序/稳定ID/观测失效被动性真实测试。",
+    "按现行AS/AP/ES、H21 RNG和观察guard原合同核已证范围；不把指定四子或组件fixture视为完整普通NP32。",
+    "回传普通完整自然前缀/真实房间准入仍缺的最小输入与观察义务；概率和强度无数据保持未知，不恢复已勘误的invoke遗漏诊断。"
+  ],
+  "allowed": "沿本线已有授权读完整来源/代码/实际测试结果并增量核证；共享业务代码仍归主线。不自动扩张本线引擎执行、产品门禁或规则批准。",
+  "acceptance": [
+    "普通NP32完整回放未运行；H21真实分布/全局强度未证明。",
+    "每项结论绑定固定来源和实际证据；不足不写PASS；由实际接收者自己登记回执。"
+  ],
+  "outputs": [
+    "worklines/standard/READ_RECEIPTS.json",
+    "worklines/standard/RETURN_TO_MAIN.json",
+    "worklines/standard/CURRENT_STATE.json"
+  ],
+  "return_policy": "固定工作目录增量写回RETURN_TO_MAIN.json；实际接收者自行更新READ_RECEIPTS.json，主线实际读后才写主线回执；共享业务源码修改归主线串行整合。",
   "gameplay_delta": 0,
   "scoring": "frozen",
   "NET": "paused",
-  "return_policy": "固定工作目录增量写回RETURN_TO_MAIN.json；实际接收者自行更新READ_RECEIPTS.json，主线实际读后才写主线回执；共享业务源码修改归主线串行整合。",
-  "workline": "standard",
-  "mode_id": "xiangqi",
-  "task_id": "STD-RNG-01",
-  "subject": "接续H21授鳞抽数、分布及随机可复验来源追溯",
-  "entry": "worklines/standard/START_HERE.txt",
-  "inputs": [
-    "worklines/main/MODE_DISPATCH.json",
-    "worklines/standard/CURRENT_STATE.json",
-    "worklines/standard/RETURN_TO_MAIN.json",
-    "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
-    "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-    "worklines/standard/rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
-    "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json"
-  ],
-  "actions": [
-    "从NEXT-STD-H21-RNG-COUNT-PROVENANCE-TRACE继续只读核原规则“最多4枚”的原确认、当前真实函数、RandomInt调用与抽样数量；分开产品既有实现事实与玩法批准。",
-    "核空池/少于4/多于4、抽数、顺序、无放回及可重放所需前提；未获明确来源不自定概率或用指定四子fixture替代抽样。",
-    "回传NP的AS/AP/ES各分支哪些前提已证、哪些仍条件成立；仅遇真实规则歧义提交具体候选，不能重复审批已确认限定A。"
-  ],
-  "outputs": [
-    "worklines/standard/reviews/H21_RNG_SOURCE_TRACE.md",
-    "worklines/standard/CURRENT_STATE.json",
-    "worklines/standard/RETURN_TO_MAIN.json",
-    "worklines/standard/READ_RECEIPTS.json"
-  ],
-  "acceptance": [
-    "固定源码/原规则来源可定位，抽数与分布若未知须保留未知。",
-    "普通31/直接共享13及已有AS/AP限定确认保持；NP/旧规格未运行不得改PASS。"
-  ],
-  "allowed": "只读追溯和本线文档写回；沿原任务不改游戏代码、不运行引擎。",
-  "not_claimed": [
-    "四子集合非零概率已证",
-    "NP自然回放已执行",
-    "该支线接收新补丁或恢复完整对话"
-  ]
+  "wakeup_or_receiver_adoption_claimed": false
 }

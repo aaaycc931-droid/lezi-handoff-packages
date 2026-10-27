@@ -1,10 +1,10 @@
 {
   "schema": "lezi.main_three_mode_dispatch.v1",
-  "id": "MAIN-THREE-MODE-20261024",
-  "date_local": "2026-10-24",
+  "id": "MAIN-THREE-MODE-RUNTIME-20261027",
+  "date_local": "2026-10-27",
   "owner": "main",
-  "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
-  "source_engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
+  "source_handoff_commit": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
+  "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
   "authorization": {
     "user_quote": "继续推进乐子象棋项目，你作为主线对三条支线进行统一任务执行与三线通用核心内容推进，完善游戏基建，同时分发三模式三条支线",
     "interpretation": "主线推进既有共用技术修复和统一任务分发；具体任务是技术分工，不登记成新玩法批准、合并或其他对话接收。"
@@ -17,31 +17,31 @@
   "mode_lines": [
     {
       "workline": "chaos",
-      "task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
+      "task_id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
       "mode_id": "jieqi",
-      "subject": "恢复混乱模式（原揭棋）独立来源并核H11×H15差分",
+      "subject": "接收H15/H11/H06真实房间与隐私证据，对照CH07逐项核缺口",
       "task_file": "worklines/chaos/TASK_FROM_MAIN.json",
-      "status": "issued_pending_receiver",
+      "status": "issued_pending_receiver_review",
       "receiver_read": false,
       "receiver_adopted": false
     },
     {
       "workline": "standard",
-      "task_id": "STD-RNG-01",
+      "task_id": "STD-RECEIVE-AS-RNG-RUNTIME-20261027",
       "mode_id": "xiangqi",
-      "subject": "接续H21授鳞抽数、分布及随机可复验来源追溯",
+      "subject": "接收限定AS来源保留与H21真实抽取证据，核普通NP完整前提缺口",
       "task_file": "worklines/standard/TASK_FROM_MAIN.json",
-      "status": "issued_pending_receiver",
+      "status": "issued_pending_receiver_review",
       "receiver_read": false,
       "receiver_adopted": false
     },
     {
       "workline": "half_chaos",
-      "task_id": "HC-42-RECEIVE-PATCHES-AND-DS04",
+      "task_id": "HC-RECEIVE-ORIGINAL12-EVIDENCE-20261027",
       "mode_id": "half_chaos",
-      "subject": "实际接收PR8—10/13并对照原DS04 B3/B4证据",
+      "subject": "接收三组受限准入和原12真实前缀，逐项核原64/210证据义务",
       "task_file": "worklines/half_chaos/TASK_FROM_MAIN.json",
-      "status": "issued_pending_receiver",
+      "status": "issued_pending_receiver_review",
       "receiver_read": false,
       "receiver_adopted": false
     }
@@ -59,22 +59,33 @@
     "return": "各自RETURN_TO_MAIN.json，实际接收者自己写READ_RECEIPTS.json；阶段完成或共享阻断时增量发布及复读。",
     "conflict": "只阻断依赖该争议部分，其他独立工作继续；涉及新玩法实义先形成具体候选交用户。",
     "publication_is_not_wakeup": true,
-    "other_dialogue_execution_or_adoption": "unknown"
+    "other_dialogue_execution_or_adoption": "unknown",
+    "current_increment": "Actual code/evidence available; fixed mode TASK_FROM_MAIN updated; receiver receipts remain receiver-owned."
   },
   "main_next": {
-    "id": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
-    "plan": "worklines/main/R38_PATH_CLOSURE_PLAN.md",
-    "action": "先建立路径/返回/落位差异用例并定位原子闭合后、下一begin前的安全检查点，然后最小共享补丁；三线专属回传不阻塞独立主线工作。"
+    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "actions": [
+      "MAIN-HC-EVIDENCE-ACCOUNTING: map actual request/atom/end evidence to original64/210 obligations, separate missing stimuli and independent QA; do not auto-promote specifications.",
+      "MAIN-STD-NP32: source-bound ordinary room admission and full AS/AP/ES prefix/RNG replay; main owns shared code.",
+      "MAIN-SAFETY-QUERY: migrate public legal-move/threat/terminal queries and qualify remaining rosters, later QinLong rain, children/spaces.",
+      "Scoring separate: preserve H03 source-bound pilot and intake SCORE-DESIGN-PREDICTION-GAP-20261026; no formal score/ledger change."
+    ]
   },
   "protected": {
     "scoring": "frozen",
     "scoring_optimization": "用户2026-10-22停止该轮；本次不恢复",
     "NET": "paused",
-    "natural12_executed": 0,
+    "natural12_executed": 12,
     "half_chaos64": "UNRUN",
     "mode_gates_changed": false,
     "gameplay_rules_changed": false,
     "merge_or_release_authorized_by_this_dispatch": false,
-    "shan_2B_and_wind_design": "separate preserved routes"
-  }
+    "shan_2B_and_wind_design": "separate preserved routes",
+    "original_requests_executed": 110
+  },
+  "previous_dispatch_reference": {
+    "commit": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
+    "id": "MAIN-THREE-MODE-20261024"
+  },
+  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/14"
 }

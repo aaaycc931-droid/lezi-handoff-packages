@@ -1,51 +1,49 @@
 {
   "schema": "lezi.main_mode_task.v1",
-  "dispatch_id": "MAIN-THREE-MODE-20261024",
+  "dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261027",
   "issued_by": "main",
-  "date_local": "2026-10-24",
-  "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
-  "source_engine_commit": "3f98bc9fb89a2a209209c424c4bf1bbd2cf6aca7",
-  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/13",
-  "state": "issued_pending_receiver",
-  "receiver_read": false,
-  "receiver_adopted": false,
-  "gameplay_delta": 0,
-  "scoring": "frozen",
-  "NET": "paused",
-  "return_policy": "固定工作目录增量写回RETURN_TO_MAIN.json；实际接收者自行更新READ_RECEIPTS.json，主线实际读后才写主线回执；共享业务源码修改归主线串行整合。",
+  "date_local": "2026-10-27",
+  "previous_task": {
+    "id": "HC-42-RECEIVE-PATCHES-AND-DS04",
+    "path": "worklines/half_chaos/TASK_FROM_MAIN.json",
+    "source_commit": "bc75bb78a4b1720f4f196c602b4dcd844625367e"
+  },
   "workline": "half_chaos",
   "mode_id": "half_chaos",
-  "task_id": "HC-42-RECEIVE-PATCHES-AND-DS04",
-  "subject": "实际接收PR8—10/13并对照原DS04 B3/B4证据",
-  "entry": "worklines/half_chaos/START_HERE.txt",
+  "task_id": "HC-RECEIVE-ORIGINAL12-EVIDENCE-20261027",
+  "subject": "接收三组受限准入和原12真实前缀，逐项核原64/210证据义务",
+  "state": "issued_pending_receiver_review",
+  "receiver_read": false,
+  "receiver_adopted": false,
+  "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/14",
+  "source_handoff_parent": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
   "inputs": [
-    "worklines/main/MODE_DISPATCH.json",
-    "worklines/main/R38_ENGINEERING_REVIEW.json",
-    "worklines/main/MAIN_FOUNDATION_REPORT.json",
+    "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+    "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+    "engine:docs/SHARED_RUNTIME_RESEARCH_20261027.md",
+    "engine:review/shared-runtime/RESULTS_20261027.json",
     "worklines/half_chaos/CURRENT_STATE.json",
-    "worklines/half_chaos/R40_SAFE_BOMB_FIRST_PATCH_EVIDENCE_PRECHECK.json",
-    "worklines/half_chaos/REPLAY_ACTION_DATA.json",
-    "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json"
+    "worklines/half_chaos/RETURN_TO_MAIN.json"
   ],
   "actions": [
-    "从r41断点实际读取主线补丁、针对性测试和未验范围，复核原投弹ea3b35c、铁马74edf37、沙漏7ece1fd以及证据处理PR13的可访问字节；本线自行记真实阅读/采用回执。",
-    "逐项对照原MA-DS04 B3受将拒投→普通应将→B4新窗口合法投弹的输入、前后资源/名额/污染/原截止，区分组件证据与原自然回放。",
-    "原3tuple研究准入未实现、精确被动观察点/随机或源刺激不足时保留BLOCKED；列主线最小实现依赖及后续自然执行的准确命令/前提合同，不增造刺激。"
+    "读取研究能力/room-owning driver/原始输入hash/21项测试与公开统计；核真实房间/RPS/畸变/私密映射、入口拒绝和观察时点。",
+    "原12源序列110请求已执行，不再写原12执行0；核MA-DS03拒绝保留费用/截止，MA-DS04 B3拒绝→应将→B4新窗口投弹实际证据。",
+    "对64规格及210字段逐项写已满足/证据不足/缺刺激/需独立QA，保留原历史文本；HC51剩余刺激不得编造。"
+  ],
+  "allowed": "沿本线已有授权读完整来源/代码/实际测试结果并增量核证；共享业务代码仍归主线。不自动扩张本线引擎执行、产品门禁或规则批准。",
+  "acceptance": [
+    "12前缀完成不等于64通过；主线本轮未逐项独立验收64/210。",
+    "每项结论绑定固定来源和实际证据；不足不写PASS；由实际接收者自己登记回执。"
   ],
   "outputs": [
     "worklines/half_chaos/READ_RECEIPTS.json",
     "worklines/half_chaos/RETURN_TO_MAIN.json",
-    "worklines/half_chaos/CURRENT_STATE.json",
-    "worklines/half_chaos/WORKING.md"
+    "worklines/half_chaos/CURRENT_STATE.json"
   ],
-  "acceptance": [
-    "不再将真实已发布主线补丁记为尚未制作；代码实现与自然验证分别判断。",
-    "64仍UNRUN、原自然12执行0；仅有真实合法准入和执行证据后，才允许逐项改对应义务状态。"
-  ],
-  "allowed": "实际独立源码/测试证据核对及本线文档写回；本分发不启动原12/64引擎回放，不开门禁，不改共享代码。",
-  "not_claimed": [
-    "主线组件=DS04通过",
-    "技术准入已完成",
-    "接收或独立QA已发生"
-  ]
+  "return_policy": "固定工作目录增量写回RETURN_TO_MAIN.json；实际接收者自行更新READ_RECEIPTS.json，主线实际读后才写主线回执；共享业务源码修改归主线串行整合。",
+  "gameplay_delta": 0,
+  "scoring": "frozen",
+  "NET": "paused",
+  "wakeup_or_receiver_adoption_claimed": false
 }
