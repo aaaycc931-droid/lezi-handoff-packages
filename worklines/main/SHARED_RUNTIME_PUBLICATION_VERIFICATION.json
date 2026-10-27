@@ -1,0 +1,68 @@
+{
+  "schema": "lezi.main_shared_runtime.publication_verification.v1",
+  "date_local": "2026-10-27",
+  "verified_handoff_commit": "ea4eab894156287d073da01068495d1ee5b341da",
+  "handoff_parent": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
+  "handoff_actual_content_readback": {
+    "matched": 13,
+    "mismatched": 0,
+    "paths": [
+      "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+      "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+      "worklines/main/CURRENT_STATE.json",
+      "worklines/main/READ_RECEIPTS.json",
+      "worklines/main/START_HERE.txt",
+      "worklines/main/MODE_DISPATCH.json",
+      "worklines/chaos/TASK_FROM_MAIN.json",
+      "worklines/half_chaos/TASK_FROM_MAIN.json",
+      "worklines/standard/TASK_FROM_MAIN.json",
+      "worklines/main/RETURN_TO_MAIN.json",
+      "worklines/main/VALIDATION.json",
+      "worklines/main/SOURCE_MAP.json",
+      "CURRENT_HANDOFF.json"
+    ]
+  },
+  "handoff_diff_scope": "Only main-owned state/report/dispatch/receipt/source fields, root index and three main-owned TASK_FROM_MAIN files; mode-owned state/receipts, designs, frozen scoring originals, assets unchanged.",
+  "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+  "engine_actual_content_readback": {
+    "matched": 10,
+    "mismatched": 0,
+    "paths": [
+      "src/research-source-context.ts",
+      "src/game.ts",
+      "src/remote-room.ts",
+      "tests/original-half-chaos-research.test.ts",
+      "tests/fixtures/half-chaos-original/REPLAY_ACTION_DATA.json",
+      "tests/fixtures/half-chaos-original/INITIALIZATION_WITNESS_DATA.json",
+      "scripts/research/original-half-chaos.ts",
+      "docs/SHARED_RUNTIME_RESEARCH_20261027.md",
+      "review/shared-runtime/RESULTS_20261027.json",
+      "review/shared-runtime/stage3-related-final.tap"
+    ]
+  },
+  "engine_stage3_unchanged_blobs": 535,
+  "deleted_paths": 0,
+  "validation": {
+    "related_files": 50,
+    "passed": 710,
+    "failed": 0,
+    "original_prefixes": 12,
+    "requests": 110,
+    "normal_mains": 100,
+    "pre_main": 10,
+    "atom_closed": 100,
+    "formal_settled": 100,
+    "paired_view_comparisons": 42
+  },
+  "qa": {
+    "independent": false,
+    "original64_individually_accepted": 0,
+    "full_typecheck": "NOT_RUN",
+    "full_UI_build": "NOT_RUN"
+  },
+  "receiver_read_or_adoption": "unknown",
+  "merged": false,
+  "score": "frozen",
+  "NET": "paused",
+  "note": "This post-publication record reports actual prior-commit content readback, not its own future verification."
+}
