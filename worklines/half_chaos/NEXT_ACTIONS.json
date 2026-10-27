@@ -1,12 +1,11 @@
 {
-  "revision": "HC-51-PAIR-VIEW-MISSING-STIMULUS-20261027-r51",
+  "revision": "HC-SESSION-CLOSEOUT-20261027-r51c",
   "next_independent_task": {
-    "id": "NEXT-HC-INDEPENDENT-SPEC-64-COMPLETENESS-AND-DEFERRED-OBLIGATION-TRIAGE",
-    "status": "READY_SOURCE_DOCUMENT_ONLY",
-    "action": "按原64规格全量逐项核已声明动作、210证据引用、预期正负分支、未覆盖八项与抽象PD-S32，区分仅需资料、需真实原刺激、需主线裁判/观察器和独立授权的义务。不修改原数据、不添加游戏动作、不标PASS。",
-    "owner": "half_chaos",
-    "authorization": "SOURCE_DOCUMENT_ONLY",
-    "work_quota_dependency": "NONE"
+    "id": "NEXT-HC-RECEIVE-MAIN-PR14-EVIDENCE-ACCOUNT-ORIGINAL64-210",
+    "status": "READY_READ_ONLY_SOURCE_ACCOUNTING",
+    "action": "先读最新主线TASK_FROM_MAIN和PR14完整运行结果/可信原12前缀，逐项映射原64规格、210观察点为有实证/缺实证/缺原自然刺激/独立QA待做。主线报告12前缀110请求已跑，但不自动给原64标PASS；r51的56配对比较槽不等于主线42报告比较。",
+    "authorization": "SOURCE_AND_DOCUMENT_ONLY; NO_ENGINE_RUN",
+    "depends_on_new_main_work": false
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1428,9 +1427,9 @@
     "previous_history_preserved": true
   },
   "blocked_main_task": {
-    "id": "NEXT-HC-VERIFY-MAIN-EXACT-TUPLE-RUNNER-AND-PILOTS",
-    "status": "BLOCKED_MAIN_TRUSTED_ADMISSION_EXACT_PASSIVE_BOUNDARIES_DRIVER_AND_AUTHORIZATION",
-    "resume_condition": "Main must actually provide trusted original two-hero+mutation tuples, real source room/actor/seed, complete M01/M04/D01 safety, passive exact checkpoints, original restricted driver, and specific execution authorization."
+    "id": "MAIN-PR14-FULL_QA_AND_MORE_SHARED_CODE",
+    "status": "DRAFT_UNMERGED; SOURCE_RESULTS_PUBLISHED_NOT_FULLY_INDEPENDENTLY_ACCEPTED",
+    "resume_condition": "new shared engine edits, product release and independent QA remain main-owned; not required for half-chaos source accounting"
   },
   "available_without_main_quota": [
     {
@@ -1445,5 +1444,6 @@
       "depends_on_main_work": false,
       "requires_game_engine": false
     }
-  ]
+  ],
+  "session_closeout_reference": "worklines/half_chaos/HC51_SESSION_CLOSEOUT_20261027.json"
 }
