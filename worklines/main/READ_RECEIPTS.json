@@ -2371,5 +2371,38 @@
       "read_scope": "full body read during this continued main phase",
       "disposition": "registered separate follow-up, not implemented, no design/scoring adoption"
     }
+  },
+  "main_closeout_20261027": {
+    "source_handoff_commit": "1b3ccdff861219e8e73c3e32b4cad0f11e53967a",
+    "scope": "main current state/report/progress, source-line closeout bodies and Wind handoff metadata; preserves concurrent source bodies",
+    "source_line_reads": [
+      {
+        "path": "worklines/half_chaos/HC51_SESSION_CLOSEOUT_20261027.json",
+        "scope": "full closeout body; original64/210 detailed source/code QA not newly performed"
+      },
+      {
+        "path": "worklines/standard/reviews/STD_SESSION_CLOSEOUT_20261027_INDEPENDENT_AND_MAIN_RECEIPT.md",
+        "scope": "full closeout body; source confirms main task available, detailed AS/RNG reception still pending"
+      },
+      {
+        "path": "worklines/main/candidates/wind/V3_1_HANDOFF_TO_MAIN.json",
+        "scope": "full handoff metadata only; candidate full body not adopted"
+      }
+    ],
+    "code_and_apk_metadata": {
+      "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+      "pr14_draft_unmerged": true,
+      "apk_commit": "80c2ceea7f7c7bb09f77aa5bbfaf05cf393c6eee",
+      "CI_run": 40470588695,
+      "CI_result": "success",
+      "apk_branch_diff": "only build workflow added"
+    },
+    "not_claimed": [
+      "full Wind candidate review/adoption",
+      "independent detailed source-line QA",
+      "all64/210 obligations accepted",
+      "true-device APK acceptance"
+    ],
+    "other_workline_receipts_written": false
   }
 }

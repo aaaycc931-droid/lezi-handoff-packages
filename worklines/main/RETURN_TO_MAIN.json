@@ -9,8 +9,8 @@
   ],
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
   "phase": "MAIN_SHARED_RUNTIME_20261027",
-  "current_breakpoint": "stage3 original12 actual prefixes complete;64/210 accounting next",
-  "status": "implemented_validated_draft_published_pending_individual_acceptance",
+  "current_breakpoint": "Shared runtime stage3 delivered; requested APK delivered; original64/210 accounting next.",
+  "status": "session_closed_shared_runtime_and_debug_apk_delivered",
   "confirmed_delta_this_session": [
     {
       "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -142,12 +142,18 @@
     "r23-r25 twelve replay plans covering64 old PD/DS specs are allUNRUN per source report; main did not read full prefixes or run engine"
   ],
   "shared_blocks": "SHARED_COORDINATION.json",
-  "next": [
-    "MAIN-HC-EVIDENCE-ACCOUNTING: map actual request/atom/end evidence to original64/210 obligations, separate missing stimuli and independent QA; do not auto-promote specifications.",
-    "MAIN-STD-NP32: source-bound ordinary room admission and full AS/AP/ES prefix/RNG replay; main owns shared code.",
-    "MAIN-SAFETY-QUERY: migrate public legal-move/threat/terminal queries and qualify remaining rosters, later QinLong rain, children/spaces.",
-    "Scoring separate: preserve H03 source-bound pilot and intake SCORE-DESIGN-PREDICTION-GAP-20261026; no formal score/ledger change."
-  ],
+  "next": {
+    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "action": "核最新HEAD、主线session_closure和三线最新回传，先把已执行的原12序列/110请求及100+100观察点逐项映射到半混沌原64规格和210观察义务，区分已证、部分、缺刺激和独立QA。",
+    "secondary": [
+      "随后补普通NP32真实房间限定准入与AS/AP/ES完整自然前缀。",
+      "继续更广公开合法走法/威胁/终局查询及雨夜后期、其他英雄/子行动/空间安全覆盖。"
+    ],
+    "separate_routes": [
+      "H03评分试点保留UNRUN，评分候选未正式采用；SCORE-DESIGN-PREDICTION-GAP-20261026仍需独立推进。",
+      "新风V3.1完整候选已发布；本次仅读其交接元数据，完整候选与旧稿对照、接收/采用核验尚待执行。"
+    ]
+  },
   "messages_sent": false,
   "other_lines_adoption_verified": "Earlier exact scopes only, no new1.57 receipts.",
   "scoring_frozen": true,
@@ -2508,5 +2514,22 @@
       }
     },
     "receiver_read_or_adoption": "unknown"
+  },
+  "session_closure": {
+    "id": "MAIN-SESSION-CLOSEOUT-20261027",
+    "date_local": "2026-10-27",
+    "status": "current_dialogue_closed_project_continues",
+    "entry": "worklines/main/SESSION_CLOSEOUT.json",
+    "next_action": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "apk_record": "worklines/main/APK_BUILD_RECORD.json",
+    "resume_prompt": "继续《乐子象棋》主线。读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt ，核对最新HEAD，按CURRENT_STATE.json中的session_closure及SESSION_CLOSEOUT.json接续。从MAIN-HC-EVIDENCE-ACCOUNTING-20261027开始，继承已有授权与确认，保护三线及英雄设计并发成果。PR14已有710项相关检查和原12序列110请求实测，先逐项核原64/210证据义务；不能把前缀执行当全面验收。已交付570fdf1代码对应的安卓调试APK，不重复打包；真机/蓝牙验证仍未知。评分冻结、NET暂停，阶段完成增量写回并复读。"
+  },
+  "requested_apk": {
+    "record": "worklines/main/APK_BUILD_RECORD.json",
+    "source": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "build": "80c2ceea7f7c7bb09f77aa5bbfaf05cf393c6eee",
+    "run": 40470588695,
+    "status": "built_delivered_not_phone_accepted"
   }
 }

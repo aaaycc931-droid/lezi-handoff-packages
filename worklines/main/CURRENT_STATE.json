@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "scoring_candidate_phase_completed_formal_scoring_frozen",
+  "status": "session_closed_shared_runtime_and_requested_apk_delivered",
   "resume_date_local": "2026-10-21",
   "timezone": "Asia/Shanghai",
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
@@ -206,11 +206,14 @@
   "NET": "paused",
   "next_action": {
     "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
-    "actions": [
-      "MAIN-HC-EVIDENCE-ACCOUNTING: map actual request/atom/end evidence to original64/210 obligations, separate missing stimuli and independent QA; do not auto-promote specifications.",
-      "MAIN-STD-NP32: source-bound ordinary room admission and full AS/AP/ES prefix/RNG replay; main owns shared code.",
-      "MAIN-SAFETY-QUERY: migrate public legal-move/threat/terminal queries and qualify remaining rosters, later QinLong rain, children/spaces.",
-      "Scoring separate: preserve H03 source-bound pilot and intake SCORE-DESIGN-PREDICTION-GAP-20261026; no formal score/ledger change."
+    "action": "核最新HEAD、主线session_closure和三线最新回传，先把已执行的原12序列/110请求及100+100观察点逐项映射到半混沌原64规格和210观察义务，区分已证、部分、缺刺激和独立QA。",
+    "secondary": [
+      "随后补普通NP32真实房间限定准入与AS/AP/ES完整自然前缀。",
+      "继续更广公开合法走法/威胁/终局查询及雨夜后期、其他英雄/子行动/空间安全覆盖。"
+    ],
+    "separate_routes": [
+      "H03评分试点保留UNRUN，评分候选未正式采用；SCORE-DESIGN-PREDICTION-GAP-20261026仍需独立推进。",
+      "新风V3.1完整候选已发布；本次仅读其交接元数据，完整候选与旧稿对照、接收/采用核验尚待执行。"
     ]
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
@@ -228,7 +231,7 @@
   "publication_parent_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-  "current_phase": "MAIN_SHARED_RUNTIME_STAGE3_COMPLETE_EVIDENCE_ACCOUNTING_NEXT",
+  "current_phase": "MAIN_SESSION_CLOSED_20261027_EVIDENCE_ACCOUNTING_NEXT",
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -2194,5 +2197,15 @@
     "report": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
     "progress": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
     "receiver_adoption": "unknown"
+  },
+  "session_closure": {
+    "id": "MAIN-SESSION-CLOSEOUT-20261027",
+    "date_local": "2026-10-27",
+    "status": "current_dialogue_closed_project_continues",
+    "entry": "worklines/main/SESSION_CLOSEOUT.json",
+    "next_action": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "apk_record": "worklines/main/APK_BUILD_RECORD.json",
+    "resume_prompt": "继续《乐子象棋》主线。读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt ，核对最新HEAD，按CURRENT_STATE.json中的session_closure及SESSION_CLOSEOUT.json接续。从MAIN-HC-EVIDENCE-ACCOUNTING-20261027开始，继承已有授权与确认，保护三线及英雄设计并发成果。PR14已有710项相关检查和原12序列110请求实测，先逐项核原64/210证据义务；不能把前缀执行当全面验收。已交付570fdf1代码对应的安卓调试APK，不重复打包；真机/蓝牙验证仍未知。评分冻结、NET暂停，阶段完成增量写回并复读。"
   }
 }

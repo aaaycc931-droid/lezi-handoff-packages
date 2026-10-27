@@ -1,0 +1,126 @@
+{
+  "schema": "lezi.main.session_closeout.v1",
+  "id": "MAIN-SESSION-CLOSEOUT-20261027",
+  "date_local": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "user_request": "收束本轮对话，我要更换对话继续进行",
+  "status": "current_dialogue_closed_project_continues",
+  "source_handoff_head": "1b3ccdff861219e8e73c3e32b4cad0f11e53967a",
+  "completed": {
+    "shared_runtime": {
+      "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+      "pr": 14,
+      "draft": true,
+      "merged": false,
+      "report": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+      "progress": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+      "publication_verification": "worklines/main/SHARED_RUNTIME_PUBLICATION_VERIFICATION.json",
+      "related_test_files": 50,
+      "related_tests_passed": 710,
+      "related_tests_failed": 0,
+      "tests_rerun_during_closeout": 0,
+      "original_prefixes_executed": 12,
+      "original_requests": 110,
+      "main_atom_checkpoints": 100,
+      "formal_settled_checkpoints": 100,
+      "paired_view_comparisons": 42,
+      "original64_individually_accepted": 0
+    },
+    "three_mode_dispatch": {
+      "entry": "worklines/main/MODE_DISPATCH.json",
+      "tasks": [
+        "worklines/chaos/TASK_FROM_MAIN.json",
+        "worklines/half_chaos/TASK_FROM_MAIN.json",
+        "worklines/standard/TASK_FROM_MAIN.json"
+      ],
+      "receiver_adoption": "not assumed; source-line latest receipts control"
+    },
+    "requested_apk": {
+      "record": "worklines/main/APK_BUILD_RECORD.json",
+      "build_commit": "80c2ceea7f7c7bb09f77aa5bbfaf05cf393c6eee",
+      "run_id": 40470588695,
+      "result": "debug APK built and delivered; actual phone acceptance unverified"
+    }
+  },
+  "next": {
+    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "action": "核最新HEAD、主线session_closure和三线最新回传，先把已执行的原12序列/110请求及100+100观察点逐项映射到半混沌原64规格和210观察义务，区分已证、部分、缺刺激和独立QA。",
+    "secondary": [
+      "随后补普通NP32真实房间限定准入与AS/AP/ES完整自然前缀。",
+      "继续更广公开合法走法/威胁/终局查询及雨夜后期、其他英雄/子行动/空间安全覆盖。"
+    ],
+    "separate_routes": [
+      "H03评分试点保留UNRUN，评分候选未正式采用；SCORE-DESIGN-PREDICTION-GAP-20261026仍需独立推进。",
+      "新风V3.1完整候选已发布；本次仅读其交接元数据，完整候选与旧稿对照、接收/采用核验尚待执行。"
+    ]
+  },
+  "concurrent_protection": {
+    "base_of_previous_main_publication": "c40de8c60b9c8eff89fe0206783d8659a401612e",
+    "new_head": "1b3ccdff861219e8e73c3e32b4cad0f11e53967a",
+    "commits_since_previous_main_publication": 6,
+    "paths": [
+      "worklines/half_chaos/CURRENT_STATE.json",
+      "worklines/half_chaos/HC51_SESSION_CLOSEOUT_20261027.json",
+      "worklines/half_chaos/NEXT_ACTIONS.json",
+      "worklines/half_chaos/READ_RECEIPTS.json",
+      "worklines/half_chaos/RETURN_TO_MAIN.json",
+      "worklines/half_chaos/START_HERE.txt",
+      "worklines/main/START_HERE.txt",
+      "worklines/main/candidates/wind/V3_1_CANDIDATE.md",
+      "worklines/main/candidates/wind/V3_1_HANDOFF_TO_MAIN.json",
+      "worklines/main/candidates/wind/V3_1_SESSION_CLOSEOUT.md",
+      "worklines/standard/CURRENT_STATE.json",
+      "worklines/standard/NEXT_ACTIONS.json",
+      "worklines/standard/READ_RECEIPTS.json",
+      "worklines/standard/RETURN_TO_MAIN.json",
+      "worklines/standard/START_HERE.txt",
+      "worklines/standard/reviews/STD_SESSION_CLOSEOUT_20261027_INDEPENDENT_AND_MAIN_RECEIPT.md"
+    ],
+    "preserve_all": true,
+    "scoped_reads": [
+      {
+        "path": "worklines/half_chaos/HC51_SESSION_CLOSEOUT_20261027.json",
+        "scope": "full closeout body; original64/210 detailed source/code QA not newly performed"
+      },
+      {
+        "path": "worklines/standard/reviews/STD_SESSION_CLOSEOUT_20261027_INDEPENDENT_AND_MAIN_RECEIPT.md",
+        "scope": "full closeout body; source confirms main task available, detailed AS/RNG reception still pending"
+      },
+      {
+        "path": "worklines/main/candidates/wind/V3_1_HANDOFF_TO_MAIN.json",
+        "scope": "full handoff metadata only; candidate full body not adopted"
+      }
+    ],
+    "receiver_progress": "Half-chaos read main summaries and records its detailed QA pending. Standard registered new main input, detailed reception pending. These do not constitute independent acceptance."
+  },
+  "protected": {
+    "frozen_original_scores_and_ledger": true,
+    "hero_design_unchanged": true,
+    "UI_assets_unchanged": true,
+    "H03_pilot_preserved_unrun": true,
+    "mode_featuresReady_unchanged": true,
+    "NET": "paused",
+    "engine_main_not_merged": true,
+    "no_new_gameplay_confirmation": true
+  },
+  "limits": [
+    "710 related checks are prior actual scoped evidence, not a fresh closeout run or complete game acceptance.",
+    "Original64/210 obligations, missing natural stimuli, ordinary NP32, broader threat/checkmate and independent QA remain open.",
+    "APK build and asset compilation pass do not establish true-device installation, UI fidelity or physical Bluetooth acceptance.",
+    "Full TypeScript typecheck remains NOT_RUN; APK web build is transpilation/asset packaging."
+  ],
+  "resume_prompt": "继续《乐子象棋》主线。读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt ，核对最新HEAD，按CURRENT_STATE.json中的session_closure及SESSION_CLOSEOUT.json接续。从MAIN-HC-EVIDENCE-ACCOUNTING-20261027开始，继承已有授权与确认，保护三线及英雄设计并发成果。PR14已有710项相关检查和原12序列110请求实测，先逐项核原64/210证据义务；不能把前缀执行当全面验收。已交付570fdf1代码对应的安卓调试APK，不重复打包；真机/蓝牙验证仍未知。评分冻结、NET暂停，阶段完成增量写回并复读。",
+  "publication": "ordinary incremental commit, expected_sha/no force; actual content readback follows publication",
+  "closeout_prepublication_checks": {
+    "unique_paths": true,
+    "json_parseable": true,
+    "closeout_points_to_current_engine": true,
+    "apk_build_game_base": true,
+    "code_source_has_not_changed": true,
+    "mode_or_hero_files_not_written": true,
+    "referenced_closeout_and_apk_files": true,
+    "local_existing_files_checked": 373,
+    "local_existing_files_changed": 0,
+    "remote_head_rechecked": "1b3ccdff861219e8e73c3e32b4cad0f11e53967a"
+  }
+}

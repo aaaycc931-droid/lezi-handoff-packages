@@ -1,0 +1,71 @@
+{
+  "schema": "lezi.main.apk_build_record.v1",
+  "date_local": "2026-10-27",
+  "authorization": {
+    "user_quote": "把当前游戏代码的安装包生成并发给我",
+    "scope": "Build and deliver one current Android debug APK; no merge, mode release or NET resume implied."
+  },
+  "game_source": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "branch": "codex/main-shared-runtime-20261027",
+    "pr": 14,
+    "draft": true,
+    "merged": false
+  },
+  "build_source": {
+    "commit": "80c2ceea7f7c7bb09f77aa5bbfaf05cf393c6eee",
+    "branch": "codex/requested-apk-20261027",
+    "only_difference_from_game_source": ".github/workflows/build-user-apk-20261027.yml added",
+    "workflow": "Build requested Android test APK",
+    "workflow_path": ".github/workflows/build-user-apk-20261027.yml",
+    "run_id": 40470588695,
+    "run_url": "https://github.com/aaaycc931-droid/jieqi-engine/actions/runs/40470588695",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "artifact": {
+    "id": 12718178590,
+    "name": "lezi-current-debug-apk",
+    "filename_in_archive": "app-debug.apk",
+    "archive_sha256": "b46b254820e8c0b32f2c59c6e5305f651e5a727a15e975f1b92a3ef0c57e33f7",
+    "expires_at": "2026-11-03T08:02:11Z"
+  },
+  "delivered_apk": {
+    "filename": "lezi-chess-debug-20261027.apk",
+    "bytes": 10429467,
+    "sha256": "d6bc4da01f889b0afdf326f4f36ad4635ab2e7642c7d2186c3c509309a922c4a",
+    "owner_saved_copy": true,
+    "delivery": "download link supplied in this dialogue; resolve this exact filename in owner's files if needed after CI artifact expiry",
+    "minimum_android_api": 26,
+    "minimum_android_version": "8.0",
+    "build_type": "debug"
+  },
+  "verified": {
+    "remote_branch_and_run_rechecked": true,
+    "apk_branch_diff_only_build_workflow": true,
+    "web_build_and_android_asset_sync": "CI_PASS",
+    "android_assemble_debug": "CI_PASS",
+    "archive_extraction": true,
+    "apk_zip_integrity": true,
+    "manifest_present": true,
+    "dex_present": true,
+    "bundled_web_present": true,
+    "current_runtime_markers": [
+      "guardedActivationScale",
+      "authority_random_draw",
+      "issueOriginalHalfChaosTuple",
+      "trainingTypeLabel"
+    ]
+  },
+  "not_verified": [
+    "actual phone installation",
+    "WebView visual/interaction acceptance",
+    "two-phone physical Bluetooth link",
+    "independent security/signature audit",
+    "product mode acceptance"
+  ],
+  "score": "frozen",
+  "NET": "paused",
+  "next_build_policy": "This request resumes the one requested debug build only; no automatic recurring packaging or formal release."
+}
