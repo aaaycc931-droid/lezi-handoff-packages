@@ -1,11 +1,213 @@
 {
   "schema": "lezi.main.hc_accounting_publication_verification.v1",
-  "status": "PREPARED_ACTUAL_PUBLICATION_AND_READBACK_PENDING",
+  "status": "PUBLISHED_AND_ACTUAL_READBACK_VERIFIED",
   "date_local": "2026-10-28",
-  "base_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
-  "target_branch": "main",
-  "expected_sha_required": true,
-  "force": false,
-  "actual_changed_files_read_back": 0,
-  "other_line_adoption_claimed": false
+  "source_base_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
+  "published_accounting_commit": "b19c8029ab168e0adb8eb43aa292305acb5de33a",
+  "published_accounting_tree": "f47c85d20af2827f708a9d300a624e8d96a35798",
+  "ref_update": {
+    "expected_sha": "4af533233920a6ebbc818c466365673aa21a18ee",
+    "force": false,
+    "success": true
+  },
+  "actual_file_readback": {
+    "files": 18,
+    "all_contents_equal": true,
+    "all_git_blobs_equal": true,
+    "rows": [
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "git_blob_sha": "3626dd05e7952b25186d683b14fc966d4648878a",
+        "expected_git_blob_sha": "3626dd05e7952b25186d683b14fc966d4648878a",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "git_blob_sha": "d4d0c1977bce8a1ebab563160c176828bb60ec85",
+        "expected_git_blob_sha": "d4d0c1977bce8a1ebab563160c176828bb60ec85",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/HC_EVIDENCE_210.json",
+        "git_blob_sha": "9a1dbf48d6d75f1459783494a6e80a4d4b30c07d",
+        "expected_git_blob_sha": "9a1dbf48d6d75f1459783494a6e80a4d4b30c07d",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/HC_EVIDENCE_64.json",
+        "git_blob_sha": "6e2d206c93f6c1ddc815703d446e87ad4c40d0b9",
+        "expected_git_blob_sha": "6e2d206c93f6c1ddc815703d446e87ad4c40d0b9",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/HC_EVIDENCE_ACCOUNTING.json",
+        "git_blob_sha": "a002b01ccb57c0ebc22f5a8c632d31a4e59d7d2d",
+        "expected_git_blob_sha": "a002b01ccb57c0ebc22f5a8c632d31a4e59d7d2d",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/HC_EVIDENCE_PAIRS.json",
+        "git_blob_sha": "a0b6d290f3216354f167725d39e2174dee709fff",
+        "expected_git_blob_sha": "a0b6d290f3216354f167725d39e2174dee709fff",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/HC_EVIDENCE_PUBLICATION_VERIFICATION.json",
+        "git_blob_sha": "159633bd137c66d06ee08d896c95b45c5931c1a7",
+        "expected_git_blob_sha": "159633bd137c66d06ee08d896c95b45c5931c1a7",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/HC_EVIDENCE_REPORT.md",
+        "git_blob_sha": "6521950ad18d6642b7457d087eabf0ce14ca4071",
+        "expected_git_blob_sha": "6521950ad18d6642b7457d087eabf0ce14ca4071",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/HC_EVIDENCE_VALIDATION.json",
+        "git_blob_sha": "0a7dd99d136178df8f31ab499641384df61860e0",
+        "expected_git_blob_sha": "0a7dd99d136178df8f31ab499641384df61860e0",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "git_blob_sha": "546b7fcd2d92b0f0835426f4ac059b4ad0308ada",
+        "expected_git_blob_sha": "546b7fcd2d92b0f0835426f4ac059b4ad0308ada",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "git_blob_sha": "0efbbcc282a89029aa6e1a050558a477ee8987d5",
+        "expected_git_blob_sha": "0efbbcc282a89029aa6e1a050558a477ee8987d5",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "git_blob_sha": "9e426beb58c2e1d28a8c52c4ced90555c14af6ad",
+        "expected_git_blob_sha": "9e426beb58c2e1d28a8c52c4ced90555c14af6ad",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "git_blob_sha": "db5cb26b54c22bdee3cbbbc05242e32a507f5c96",
+        "expected_git_blob_sha": "db5cb26b54c22bdee3cbbbc05242e32a507f5c96",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "git_blob_sha": "7223d29cb9ea2db96488abee44e97217f6e26515",
+        "expected_git_blob_sha": "7223d29cb9ea2db96488abee44e97217f6e26515",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "git_blob_sha": "8fa24f177e403534198263ce3f4659df7361c866",
+        "expected_git_blob_sha": "8fa24f177e403534198263ce3f4659df7361c866",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "git_blob_sha": "1679e4dd0aac3ea086cef908ae8a26be012060fa",
+        "expected_git_blob_sha": "1679e4dd0aac3ea086cef908ae8a26be012060fa",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "git_blob_sha": "6dac028b4c2ed8a9d00b2470992660fddfbb979a",
+        "expected_git_blob_sha": "6dac028b4c2ed8a9d00b2470992660fddfbb979a",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      },
+      {
+        "path": "worklines/main/audits/hc_evidence_accounting.py",
+        "git_blob_sha": "5fb7050a41b4d50cad821a4328c762cc6fe80872",
+        "expected_git_blob_sha": "5fb7050a41b4d50cad821a4328c762cc6fe80872",
+        "bytes_equal": true,
+        "sha_equal": true,
+        "isError": false
+      }
+    ]
+  },
+  "full_tree_comparison": {
+    "truncated": false,
+    "unchanged_existing_blobs": 730,
+    "altered_outside_selected_paths": [],
+    "unexpected_new_paths": [],
+    "protected_groups": {
+      "worklines/chaos/": {
+        "existing_blobs": 20,
+        "all_unchanged": true
+      },
+      "worklines/half_chaos/": {
+        "existing_blobs": 43,
+        "all_unchanged": true
+      },
+      "worklines/standard/": {
+        "existing_blobs": 341,
+        "all_unchanged": true
+      },
+      "worklines/ui/": {
+        "existing_blobs": 60,
+        "all_unchanged": true
+      },
+      "assets/": {
+        "existing_blobs": 179,
+        "all_unchanged": true
+      },
+      "worklines/main/candidates/": {
+        "existing_blobs": 18,
+        "all_unchanged": true
+      },
+      "worklines/main/scoring/": {
+        "existing_blobs": 23,
+        "all_unchanged": true
+      }
+    }
+  },
+  "current_entry_rechecked_at_branch_head": "b19c8029ab168e0adb8eb43aa292305acb5de33a",
+  "next_action": "MAIN-STD-NP32-20261028",
+  "runtime_scope": {
+    "new_engine_runs": 0,
+    "related710_rerun": false,
+    "new_APK_builds": 0,
+    "independent_QA": false,
+    "formal_original64_accepted": 0
+  },
+  "scoring": "frozen",
+  "NET": "paused",
+  "receiver_adoption": "not asserted",
+  "note": "This follow-up evidence record verifies the immutable accounting commit above; its own publication is checked after the ref update."
 }
