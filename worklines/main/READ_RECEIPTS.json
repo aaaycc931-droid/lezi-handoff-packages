@@ -1408,6 +1408,11 @@
       "source_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
       "receipt": "worklines/main/READ_RECEIPTS.json#hc_evidence_accounting_20261028",
       "scope": "all64/210 source rows and56 exact-stage slot accounting; detailed source-line QA not asserted"
+    },
+    "standard_np32_20261028": {
+      "source_commit": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
+      "receipt": "worklines/main/READ_RECEIPTS.json#standard_np32_20261028",
+      "scope": "Original NP32 contracts and exact AS/AP sources; actual source-bound main execution; not source-line adoption"
     }
   },
   "this_session_user_confirmation": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
@@ -2534,5 +2539,80 @@
       "receiver_adoption": "not asserted; each source line records its own actual detailed QA",
       "next_action": "MAIN-STD-NP32-20261028"
     }
+  },
+  "standard_np32_20261028": {
+    "source_commit": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
+    "date_local": "2026-10-28",
+    "source_workline": "standard",
+    "task": "MAIN-STD-NP32-20261028",
+    "actual_source_reads": [
+      {
+        "path": "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+        "scope": "complete32 initial contract, original full prefix and AS/AP/ES branches/oracles, negative requirements and explicit gaps"
+      },
+      {
+        "path": "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+        "scope": "exact scope/shared guards/fields/B1-B5 timeline, all3 branch guards/oracles,15 negative guards and phase/admission limits"
+      },
+      {
+        "path": "worklines/standard/specs/H21_RNG_REPLAY_CONTRACT_20261024.json",
+        "scope": "algorithm/rule distinction, actual ID adapter, original endpoint/path tapes, N pools/replay and disclosure limitations"
+      },
+      {
+        "path": "worklines/standard/specs/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.json",
+        "scope": "G00-G07 complete blocker matrix and supersession of false invoke-omission diagnosis"
+      },
+      {
+        "path": "worklines/standard/specs/M04_PATH_CRUSH_ROYAL_SAFETY_SYMBOLIC_WITNESSES_20261026.json",
+        "scope": "all4 source witnesses and original negative/qualification limits; synthetic vs natural explicitly separate"
+      },
+      {
+        "path": "worklines/standard/reviews/H02_M04_H21_NATURAL_PREFIX_STATIC_REVIEW_20261020.md",
+        "scope": "complete full-opening source walkthrough; later RNG/guard contracts supersede its old nonzero-probability assertion"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+        "scope": "current exact H02/M04 geometry confirmation"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+        "scope": "full exact AP confirmation, original guards/policy/exclusions"
+      },
+      {
+        "path": "worklines/standard/rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+        "scope": "full exact AS confirmation, original guards/policy/exclusions"
+      }
+    ],
+    "actual_engine_source_reads": {
+      "parent": "570fdf189867ec93355f0eca66362deb72cca53c",
+      "paths": [
+        "src/research-source-context.ts exact admission/scope/room/actors/mode/package controls",
+        "src/game.ts directly related ordinary/assassination candidate, path, H02 state, closure and next-turn chain",
+        "src/room.ts normal/assassination transaction interfaces",
+        "src/remote-room.ts modified selection, move/assassination, setup/RPS/clock/source calls",
+        "src/setup.ts full fixed ordinary setup and random initialization",
+        "src/hero-forms.ts complete package/lock validation",
+        "src/hero-descent.ts selection, actual draw receipts and descent timing",
+        "src/rules.ts geometry vs royal simulation and query boundaries",
+        "src/settlement.ts relevant begin/end/advance/feature initialization",
+        "directly relevant tests and original source fixtures"
+      ]
+    },
+    "received_scope": "Original ordinary NP32/AS/AP/ES contracts and exact existing confirmations; actual main-owned implementation evidence recorded separately.",
+    "adopted_scope": [
+      "Keep original branch/guard boundaries and do not adopt an independent H21 draw-count policy.",
+      "Source-conditional full-opening research runs, product qualification and independentQA are distinct.",
+      "Keep old public-query mismatch and uncovered negative guards open."
+    ],
+    "not_adopted": [
+      "formal ordinary mode opening",
+      "all old specs PASS",
+      "production RNG distribution",
+      "another dialogue reading/adoption",
+      "new hero or scoring method"
+    ],
+    "new_gameplay_confirmations": 0,
+    "own_engine_publication": "680966fff6484b418c25c9afb8b6759b7a44b594",
+    "own_engine_actual_readback": "worklines/main/NP32_PUBLICATION_VERIFICATION.json"
   }
 }

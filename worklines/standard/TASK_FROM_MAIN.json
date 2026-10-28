@@ -1,40 +1,45 @@
 {
   "schema": "lezi.main_mode_task.v1",
-  "dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261027",
+  "dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
   "issued_by": "main",
-  "date_local": "2026-10-27",
-  "previous_task": {
-    "id": "STD-RNG-01",
-    "path": "worklines/standard/TASK_FROM_MAIN.json",
-    "source_commit": "bc75bb78a4b1720f4f196c602b4dcd844625367e"
-  },
+  "date_local": "2026-10-28",
   "workline": "standard",
   "mode_id": "xiangqi",
-  "task_id": "STD-RECEIVE-AS-RNG-RUNTIME-20261027",
-  "subject": "接收限定AS来源保留与H21真实抽取证据，核普通NP完整前提缺口",
+  "task_id": "STD-RECEIVE-NP32-RUNTIME-20261028",
+  "subject": "接收普通NP32真实32棋条件前缀、完整AS/AP/ES结果及限定王安全差异",
   "state": "issued_pending_receiver_review",
   "receiver_read": false,
   "receiver_adopted": false,
-  "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
-  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/14",
-  "source_handoff_parent": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
+  "source_engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594",
+  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/15",
+  "source_handoff_parent": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
+  "previous_task": {
+    "id": "STD-RECEIVE-AS-RNG-RUNTIME-20261027",
+    "path": "worklines/standard/TASK_FROM_MAIN.json",
+    "source_commit": "f631bad61b11f06070f5631a8a0ded7ea660bab1"
+  },
   "inputs": [
-    "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
-    "worklines/main/SHARED_RUNTIME_PROGRESS.json",
-    "engine:docs/SHARED_RUNTIME_RESEARCH_20261027.md",
-    "engine:review/shared-runtime/RESULTS_20261027.json",
-    "worklines/standard/CURRENT_STATE.json",
-    "worklines/standard/RETURN_TO_MAIN.json"
+    "worklines/main/MAIN_NP32_REPORT.md",
+    "worklines/main/NP32_PROGRESS.json",
+    "engine:docs/STANDARD_NP32_RESEARCH_20261028.md",
+    "engine:review/standard-np32/RESULTS_20261028.json",
+    "engine:tests/standard-np32-research.test.ts",
+    "engine:scripts/research/standard-np32.ts",
+    "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+    "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+    "worklines/standard/specs/H21_RNG_REPLAY_CONTRACT_20261024.json"
   ],
   "actions": [
-    "读取精确AS guard与AP/ES负向保护、H21非法索引拒绝/候选池顺序/稳定ID/观测失效被动性真实测试。",
-    "按现行AS/AP/ES、H21 RNG和观察guard原合同核已证范围；不把指定四子或组件fixture视为完整普通NP32。",
-    "回传普通完整自然前缀/真实房间准入仍缺的最小输入与观察义务；概率和强度无数据保持未知，不恢复已勘误的invoke遗漏诊断。"
+    "读取新PR15与实际测试/结果，按原合同逐条接收3个真实普通32棋条件前缀（AS11/AP13/ES13）及37原子/37结束观察和12H21抽取receipt；不再把这三个研究前缀统称未运行。",
+    "区分源合同条件索引流与生产自然随机采样、受限研究准入与正式产品资格化、符号安全组件与自然32棋前缀。",
+    "核原15负例矩阵逐项状态与旧公开查询/新权威仍不一致的边界；保留R8完整自然窗口、特殊防护/控制/空间、正式资格化和独立QA缺口。",
+    "由本线实际写READ_RECEIPTS/RETURN_TO_MAIN/状态，只采用确实读过并核实的范围；具体共享代码问题回主线。"
   ],
-  "allowed": "沿本线已有授权读完整来源/代码/实际测试结果并增量核证；共享业务代码仍归主线。不自动扩张本线引擎执行、产品门禁或规则批准。",
+  "allowed": "沿本线已有授权读完整来源/代码/实际结果及增量核证；不自动扩张本线引擎执行或产品门禁权限，共享业务代码由主线串行整合。",
   "acceptance": [
-    "普通NP32完整回放未运行；H21真实分布/全局强度未证明。",
-    "每项结论绑定固定来源和实际证据；不足不写PASS；由实际接收者自己登记回执。"
+    "真实研究前缀已执行不等于正式普通模式通过；xiangqi.featuresReady仍false。",
+    "同作者测试与749相关通过不冒充独立QA、完整负例覆盖或H21概率证明。",
+    "原31确认/13直接共享、既有独立信息可见性任务和工作稿不被改写。"
   ],
   "outputs": [
     "worklines/standard/READ_RECEIPTS.json",

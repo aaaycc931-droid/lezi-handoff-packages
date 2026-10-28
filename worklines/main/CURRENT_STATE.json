@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "hc_evidence_accounting_completed_shared_engineering_continues",
+  "status": "np32_bounded_runtime_published_shared_query_consistency_next",
   "resume_date_local": "2026-10-28",
   "timezone": "Asia/Shanghai",
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
@@ -54,17 +54,18 @@
   },
   "worklines": {
     "main": {
-      "next": "MAIN-STD-NP32-20261028",
-      "status": "evidence_accounting_done_ordinary_np32_next"
+      "next": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+      "status": "np32_conditional_source_runs_done_query_consistency_next"
     },
     "standard": {
-      "next": "STD-RNG-01",
-      "status": "main_task_issued_receiver_pending",
+      "next": "STD-RECEIVE-NP32-RUNTIME-20261028",
+      "status": "new_main_np32_task_issued_receiver_pending",
       "mode_id": "xiangqi",
       "task_file": "worklines/standard/TASK_FROM_MAIN.json",
       "latest_source_snapshot": "d41fd46fdd6a405f84d13fad75762803f9163496",
       "actual_live_dialogue_progress": "unknown; source-line closure retained, no automatic wakeup",
-      "source_line_working_and_current_state_preserved": true
+      "source_line_working_and_current_state_preserved": true,
+      "source_engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594"
     },
     "half_chaos": {
       "next": "HC-42-RECEIVE-PATCHES-AND-DS04",
@@ -170,25 +171,23 @@
     "engine_PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
     "game_main_unchanged": true,
     "other_workline_paths_untouched": true,
-    "publication_parent": "4af533233920a6ebbc818c466365673aa21a18ee",
+    "publication_parent": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
     "preserved_concurrent_collaboration_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561"
   },
   "verification": {
-    "stage": "HC_EVIDENCE_ACCOUNTING_20261028",
-    "method": "existing owner evidence offline audit",
-    "source_replays_reconciled": 12,
-    "source_requests_reconciled": 110,
-    "authority_checkpoints_reconciled": 210,
-    "specifications_accounted": 64,
-    "new_game_code_changes": 0,
-    "new_engine_runs": 0,
-    "offline_request_checks": 1404,
-    "explicit_bounded_spec_assertions": 61,
-    "failures": 0,
+    "stage": "MAIN-STD-NP32-20261028",
+    "engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594",
+    "shared_source_files_changed": 4,
+    "new_tests": 39,
+    "related_files": 51,
+    "related_passed": 749,
+    "related_failed": 0,
+    "actual_original_NP_prefixes": 3,
+    "actual_NP_requests": 37,
     "independent_QA": false,
-    "formal_specs_accepted": 0,
-    "all_gameplay_adjudication_unchanged": true,
-    "details": "HC_EVIDENCE_VALIDATION.json"
+    "formal_ordinary_qualification": false,
+    "engine_remote_readback_paths": 14,
+    "details": "NP32_PROGRESS.json"
   },
   "scoring": {
     "frozen": true,
@@ -202,20 +201,22 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-STD-NP32-20261028",
-    "action": "在固定PR14源上读取普通NP32/AS/AP/ES及H21原合同与当前守卫；实现真实普通房间、完整32棋来源和限定准入，随后按原自然前缀采集并复验；不能把半混乱准入或AS组件证据外推为普通准入。",
-    "source_contracts": [
-      "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
-      "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
-      "worklines/standard/specs/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.json",
-      "worklines/standard/specs/H21_RNG_REPLAY_CONTRACT_20261024.json"
+    "id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+    "action": "核最新HEAD及PR15源，先对齐限定来源的公开合法走法／威胁／将死困毙查询与完整闭合权威：使用已实测的旧查询误拒绝解将、误接受暴露己王差异，设计无副作用的查询闭合路径，再实施最小补丁和差异验证。",
+    "basis": "NP32 source tests show six unsafe old-game components now reject and six real checker-removal components succeed while old public query still reports SELF_CHECK; public/search layer has not migrated.",
+    "requirements": [
+      "查询不得消耗真实RNG、修改原权威、历史、资源、时钟或观察语义。",
+      "保持已确认M01/M04、H02来源、自己将帅路径死亡及终局规则；完整来源未知只阻断对应分支。",
+      "先限定有真实证据的来源，再扩至雨夜后期、其他英雄／子行动／空间；不把局部成功写全模式完成。"
     ],
-    "parallel_backlog_not_auto_completed": [
-      "HC exact-stage player projections/client delivery and original missing stimuli; see HC_EVIDENCE_REPORT.md.",
-      "Broader legal-move/threat/terminal queries, late QinLong rain, other heroes/child actions/spaces.",
-      "H03 source-bound pilot stays UNRUN; wind V3.1/design-prediction gap remains a separate route."
+    "secondary": [
+      "半混乱原56精确时点玩家视图、客户端通道与缺自然刺激仍待补证；原64正式验收0保持。",
+      "普通原15负例矩阵仍有未覆盖分支、R8完整自然窗口及正式资格化／独立QA。"
     ],
-    "authorization": "Inherit existing main shared engineering authorization; no new gameplay, product release, merge, score adoption or NET resume."
+    "separate_routes": [
+      "H03评分试点仍UNRUN，正式方法和原账本冻结。",
+      "新风V3.1、山2B与设计期预测缺口保持独立路线，无新采用或评分。"
+    ]
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -229,10 +230,10 @@
   "resume_after_quota_is_new_candidate_approval": false,
   "decision_index": "PENDING_DECISION.json",
   "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
-  "publication_parent_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
+  "publication_parent_commit": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
-  "current_phase": "MAIN_HC_EVIDENCE_ACCOUNTED_20261028_NP32_NEXT",
+  "current_phase": "MAIN_STD_NP32_RUNTIME_COMPLETED_20261028",
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -2200,15 +2201,15 @@
     "receiver_adoption": "unknown"
   },
   "session_closure": {
-    "id": "MAIN-STAGE-CHECKPOINT-20261028-HC-ACCOUNTING",
+    "id": "MAIN-STAGE-CHECKPOINT-20261028-NP32",
     "date_local": "2026-10-28",
     "status": "stage_completed_project_continues_current_dialogue_not_closed",
-    "entry": "worklines/main/SESSION_CLOSEOUT.json#continuation_20261028",
-    "previous_dialogue_closure_id": "MAIN-SESSION-CLOSEOUT-20261027",
-    "next_action": "MAIN-STD-NP32-20261028",
-    "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "entry": "worklines/main/SESSION_CLOSEOUT.json#continuation_np32_20261028",
+    "previous_checkpoint": "MAIN-STAGE-CHECKPOINT-20261028-HC-ACCOUNTING",
+    "next_action": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+    "engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594",
     "apk_record": "worklines/main/APK_BUILD_RECORD.json",
-    "resume_prompt": "继续《乐子象棋》主线。先核最新HEAD并读CURRENT_STATE.json#evidence_accounting、SESSION_CLOSEOUT.json#continuation_20261028和HC_EVIDENCE_REPORT.md。MAIN-HC-EVIDENCE-ACCOUNTING-20261027已完成离线逐项核算：64规格/210权威快照已对应，45项既有请求事实核对、11项缺刺激、7项语义或证据缺口、1项无自然正例；正式验收仍0。42项请求返回视图比较不等于56个精确时点视图槽位。下一MAIN-STD-NP32-20261028，先读所列普通原合同再接续共享工程。固定引擎570fdf1/PR14草稿，710为原相关回归，本阶段无新引擎运行。原APK已交付不重复打包。保护三线、UI、山/风与H03，评分冻结、NET暂停，阶段完成增量写回并复读。"
+    "resume_prompt": "继续《乐子象棋》主线。先核最新HEAD，读CURRENT_STATE.json#standard_np32、NP32_PROGRESS.json和MAIN_NP32_REPORT.md。PR15草稿680966f基于PR14，原普通32棋AS/AP/ES三个条件索引流前缀已真实执行37请求，37闭合+37正常结束后观察、12H21抽取receipt；39新增/51文件749项相关检查通过，14路径远端复读、541旧blob保持。owner-only原始轨迹已保存，按精确文件名lezi-main-np32-evidence-20261028.zip恢复；不是生产随机采样或正式普通模式资格化。下一MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028，对齐限定公开合法走法/威胁/终局查询与已闭合权威，隔离真实RNG和状态副作用。普通线新接收任务已发布，实际采用仍待其线。半混乱原64/210及56视图缺口、三线/山风/UI/H03都保留，评分冻结、NET暂停；不重复APK、不合并，阶段完成增量写回并复读。"
   },
   "evidence_accounting": {
     "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
@@ -2247,10 +2248,237 @@
     "next_action": "MAIN-STD-NP32-20261028"
   },
   "current_phase_authorization": {
+    "current_user_instructions": [
+      "现在你先推进主线工作",
+      "继续这段聊天"
+    ],
+    "inherited_basis": "PROJECT_WORK_AGREEMENT.md 2026-10-27 shared-main continuation and2026-10-28 source-bound next action",
+    "scope": "Existing shared engineering, bounded actual tests, independent child draft, owner-only raw evidence saving and incremental main/issued-task writeback; no gameplay/merge/deploy/score/NET approval."
+  },
+  "standard_np32": {
+    "id": "MAIN-STD-NP32-20261028",
     "date_local": "2026-10-28",
-    "scope": "Existing main continuation; offline accounting of original source/owner evidence and main-only incremental writeback. No new gameplay confirmation.",
-    "new_engine_runs_this_phase": 0,
-    "new_gameplay_confirmations": 0,
-    "user_instruction_summary": "继续《乐子象棋》主线。读取固定入口，核对最新HEAD，按CURRENT_STATE.json中的session_closure接续，从MAIN-HC-EVIDENCE-ACCOUNTING-20261027开始。继承已有授权与确认，保护三线及英雄设计成果；评分冻结、NET暂停，阶段完成增量写回并复读核对。"
+    "status": "BOUNDED_ENGINE_IMPLEMENTED_TESTED_PUBLISHED_DRAFT_FORMAL_MODE_ACCEPTANCE_OPEN",
+    "read_handoff_head": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
+    "engine_parent": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594",
+    "engine_branch": "codex/main-std-np32-20261028",
+    "draft_PR": 15,
+    "PR_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/15",
+    "merged": false,
+    "report": "worklines/main/MAIN_NP32_REPORT.md",
+    "progress": "worklines/main/NP32_PROGRESS.json",
+    "validation": "worklines/main/NP32_VALIDATION.json",
+    "publication_verification": "worklines/main/NP32_PUBLICATION_VERIFICATION.json",
+    "engine_report": "docs/STANDARD_NP32_RESEARCH_20261028.md",
+    "engine_results": "review/standard-np32/RESULTS_20261028.json",
+    "original_conditional_prefixes_executed": 3,
+    "original_requests_executed": 37,
+    "requests_by_branch": {
+      "AS": 11,
+      "AP": 13,
+      "ES": 13
+    },
+    "main_atom_checkpoints": 37,
+    "formal_settled_checkpoints": 37,
+    "actual_H21_draw_receipts": 12,
+    "new_tests": 39,
+    "related_files": 51,
+    "related_passed": 749,
+    "related_failed": 0,
+    "engine_paths_changed": 14,
+    "shared_source_files_changed": 4,
+    "engine_paths_actually_read_back": 14,
+    "existing_engine_blobs_unchanged": 541,
+    "source_baseline_unsafe_components_accepted": 6,
+    "current_unsafe_components_rejected": 6,
+    "baseline_experiment": "Original game/rules/settlement bytes with current research admission context shim only; synthetic, not a natural 32 baseline.",
+    "source_conditional_tapes": true,
+    "production_random_sampling": false,
+    "formal_ordinary_qualification": false,
+    "independent_QA": false,
+    "full_typecheck": "NOT_RUN",
+    "UI_build_or_true_device": "NOT_RUN",
+    "owner_evidence": {
+      "filename": "lezi-main-np32-evidence-20261028.zip",
+      "archive_sha256": "6c7a121979f927588aef9d38019ae4f023674f18e458faa13a89bf47eacc8245",
+      "archive_bytes": 828462,
+      "raw_sha256": "d32a7ec3c7622ddb6b937e27c37aa6e90b335df8046c238ba861c66c076e3c33",
+      "raw_bytes": 31192909,
+      "owner_saved_copy": true,
+      "public_raw_published": false,
+      "retrieval": "Resolve this exact filename in owner files; raw trace excluded from public GitHub."
+    },
+    "receiver_adoption": "not asserted; ordinary receiver records its own actual reading/QA/adoption",
+    "protected": {
+      "scoring": "frozen",
+      "NET": "paused",
+      "ordinary_featuresReady": false,
+      "half_chaos_featuresReady": false,
+      "hero_design": "unchanged",
+      "H03_pilot": "preserved_unrun",
+      "APK_rebuilt": false,
+      "new_gameplay_confirmations": 0
+    },
+    "next_action": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+    "authorization": {
+      "current_user_instructions": [
+        "现在你先推进主线工作",
+        "继续这段聊天"
+      ],
+      "inherited_basis": "PROJECT_WORK_AGREEMENT.md 2026-10-27 shared-main continuation and2026-10-28 source-bound next action",
+      "scope": "Existing shared engineering, bounded actual tests, independent child draft, owner-only raw evidence saving and incremental main/issued-task writeback; no gameplay/merge/deploy/score/NET approval."
+    },
+    "current_blocker_dispositions": {
+      "G00_MAIN_READ_RECEIPT": "Actual source/confirmation reads, current receipt written in main handoff.",
+      "G01_MODE_ADMISSION": "Research-only exact tuple implemented; formal product qualification remains CLOSED.",
+      "G02_H02_AS_SOURCE": "PR14 retained bounded patch; this phase original AS prefix actually executed and source retention/no stealth verified.",
+      "G03_M04_ROYAL_SAFETY": "Bounded ordinary+H02 authority closure fixed; public queries, full rosters/search still OPEN.",
+      "G04_H21_PRAYER": "B1-B4/R5/B5 actual timing/counters verified for three prefixes; old invoke-omission allegation stays withdrawn.",
+      "G05_H21_RANDOM": "Actual ordered-pool draw receipts and deterministic original-tape replay; production law/quality and count-policy adoption remain UNKNOWN.",
+      "G06_FORMAL_NP_RUNS": "Three original full-opening conditional-tape research prefixes executed; formal product/independent QA acceptance remains OPEN.",
+      "G07_ENGINE_PUBLICATION": "Independent child draft on PR14; not merged or deployed."
+    },
+    "negative_matrix": [
+      {
+        "id": "NG-01",
+        "status": "BOUNDED_COMPONENT_VERIFIED",
+        "evidence_and_limits": "Synthetic checked H21 prayer refuses with no source/counter mutation; not a natural checked-NP history."
+      },
+      {
+        "id": "NG-02",
+        "status": "ACTUAL_PREFIX_VERIFIED",
+        "evidence_and_limits": "All three actual B4 prayers create omen, no descent or selection RNG in B4."
+      },
+      {
+        "id": "NG-03",
+        "status": "PARTIAL_ACTUAL_TIMEOUT_ROUTE",
+        "evidence_and_limits": "Real 32-piece prefix to R5 then timeout: no B5 descent/draw. Other terminal mechanisms not exhaustively covered."
+      },
+      {
+        "id": "NG-04",
+        "status": "ACTUAL_DUPLICATE_AND_COMPONENT_VERIFIED",
+        "evidence_and_limits": "Actual R5 duplicate preserves room/revision/clock/draws; existing RNG01 descent idempotence regression reused."
+      },
+      {
+        "id": "NG-05",
+        "status": "PARTIAL_RUNTIME_AND_COMPONENT_VERIFIED",
+        "evidence_and_limits": "Actual R5 injected RNG exception rolls back candidate; existing malformed-index guards pass; source pool order verified but arbitrary changed-order natural probes not supplied."
+      },
+      {
+        "id": "NG-06",
+        "status": "BOUNDED_EXISTING_COMPONENTS_VERIFIED",
+        "evidence_and_limits": "Existing RNG01 N=0/1/3/4/15 plus RNG04 mixed air/river/covered/current-controller tests rerun successfully; not new natural samples."
+      },
+      {
+        "id": "NG-07",
+        "status": "PARTIAL_INHERITED_GEOMETRY_COMPONENTS",
+        "evidence_and_limits": "Existing assassination/mutation geometry tests rerun; full natural NP negative request families remain separate."
+      },
+      {
+        "id": "NG-08",
+        "status": "PARTIAL_INHERITED_STAGE_GUARDS",
+        "evidence_and_limits": "Original AS/AP/ES use distinct actual activation/later commands; inherited source-stage guards rerun, not every natural wrong-stage sequence."
+      },
+      {
+        "id": "NG-09",
+        "status": "BOUNDED_EXISTING_AS_COMPONENT",
+        "evidence_and_limits": "Existing AS02 protected-path case retains its original outside-AS-guard interpretation; no general failed-activation refund policy."
+      },
+      {
+        "id": "NG-10",
+        "status": "PARTIAL_DISTINCT_BRANCH_ORACLES",
+        "evidence_and_limits": "Three original conditional branches independently matched exact shield/oracle states; no claim of all altered endpoint histories."
+      },
+      {
+        "id": "NG-11",
+        "status": "OUT_OF_SCOPE_UNRUN",
+        "evidence_and_limits": "H10, multiple defenses, return-space conflicts, other control/air/river/history combinations not qualified by NP32."
+      },
+      {
+        "id": "NG-12",
+        "status": "PARTIAL_FIRST_WINDOW_ACTUAL",
+        "evidence_and_limits": "AP/ES R7 actual first subsequent window consumed; full natural R8 second-window/expiry branch not newly executed."
+      },
+      {
+        "id": "NG-13",
+        "status": "BOUNDED_AUTHORITY_FIXED_QUERIES_OPEN",
+        "evidence_and_limits": "Six formerly unsafe synthetic ordinary/activation/continuing cases reject; six direct-check evasion controls succeed; public legal/search query migration still open."
+      },
+      {
+        "id": "NG-14",
+        "status": "ACTUAL_PREFIX_AND_COMPONENT_VERIFIED",
+        "evidence_and_limits": "37 exact atom/end snapshots and path-vs-endpoint death oracles; survival control does not invent path death; source-terminal component keeps original outcome."
+      },
+      {
+        "id": "NG-15",
+        "status": "PARTIAL_ACTUAL_CLOCK_AND_DUPLICATE",
+        "evidence_and_limits": "37 main/end/begin/clock identities, actual duplicate and timeout checked; unrelated child/forced-defense sources remain outside this slice."
+      }
+    ],
+    "limitation_audit": {
+      "audit_trigger": "Shared authority safety/admission and long-lived main continuation state.",
+      "risk_level": "medium, isolated draft and reversible scoped code; product gates closed.",
+      "known_facts": [
+        "Original NP32 contracts and exact AS/AP confirmations exist at pinned source.",
+        "Three original 32-piece conditional prefixes executed37 actual requests; exact atom/end/draw evidence saved.",
+        "749 current related checks pass;14 remote paths actually read back."
+      ],
+      "user_statements": [
+        "现在你先推进主线工作",
+        "继续这段聊天"
+      ],
+      "claim_register": [
+        {
+          "claim": "AS/AP/ES original full-opening conditional-tape research executed",
+          "type": "document_fact_and_observed_program_result",
+          "source": "engine RESULTS_20261028 + owner raw checksum",
+          "validation": "actual source execution, bounded cases only"
+        },
+        {
+          "claim": "limited closed-authority safety corrects two directions of old query mismatch",
+          "type": "observed_program_result",
+          "source": "39 new checks and old/new synthetic game-source differential",
+          "validation": "source family only; natural reachability of symbolic cases unproved"
+        },
+        {
+          "claim": "formal ordinary mode is qualified",
+          "type": "not_claimed",
+          "source": "featuresReady remains false; independentQA false",
+          "validation": "not attained"
+        }
+      ],
+      "ai_interpretations": [
+        "Source contracts set the tested branches; a research capability does not itself confer formal product admission."
+      ],
+      "assumptions": [
+        "Pinned contracts remain current within their exact scope; no new gameplay approval is inferred."
+      ],
+      "unknowns": [
+        "Full public/search query consistency",
+        "Production RNG law/quality and formal count policy",
+        "Uncovered negative branches, privacy/client delivery and independentQA"
+      ],
+      "competing_explanations": [
+        "A symbolic fixture may be naturally unreachable; therefore old/new synthetic evidence is kept separate from the three actual full-opening runs."
+      ],
+      "falsification_conditions": [
+        "Actual pool/ID/package/source mismatch",
+        "Any request differs from original prefix",
+        "No real R5 counter-turn before descent",
+        "Unsafe closed state commits",
+        "Private raw trace appears in player/public output"
+      ],
+      "verification_status": "partial overall; bounded implementation/runs/readback completed, formal mode/independentQA not completed",
+      "action_boundary": "Independent child draft plus main-owned metadata/issued task only; no source-line working draft/rules/design/score writes.",
+      "failure_conditions": [
+        "Concurrent target change",
+        "Raw checksum mismatch",
+        "Product gate accidentally opens",
+        "Shared regression failure"
+      ],
+      "residual_risk": "Same-author test design can share omissions; bounded traces cannot establish all-source search, privacy or gameplay completeness.",
+      "next_validation_action": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028"
+    }
   }
 }

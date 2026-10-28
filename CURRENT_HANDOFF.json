@@ -957,10 +957,10 @@
   },
   "main_session_closure": {
     "date_local": "2026-10-28",
-    "status": "accounting_stage_completed_current_dialogue_not_closed",
-    "entry": "worklines/main/SESSION_CLOSEOUT.json#continuation_20261028",
+    "status": "np32_stage_completed_current_dialogue_not_closed",
+    "entry": "worklines/main/SESSION_CLOSEOUT.json#continuation_np32_20261028",
     "state": "worklines/main/CURRENT_STATE.json#session_closure",
-    "next": "MAIN-STD-NP32-20261028",
+    "next": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
     "requested_apk_record": "worklines/main/APK_BUILD_RECORD.json",
     "project_continues": true
   },
@@ -999,5 +999,231 @@
     "independent_QA": false,
     "receiver_adoption": "not asserted; each source line records its own actual detailed QA",
     "next_action": "MAIN-STD-NP32-20261028"
+  },
+  "main_standard_np32": {
+    "id": "MAIN-STD-NP32-20261028",
+    "date_local": "2026-10-28",
+    "status": "BOUNDED_ENGINE_IMPLEMENTED_TESTED_PUBLISHED_DRAFT_FORMAL_MODE_ACCEPTANCE_OPEN",
+    "read_handoff_head": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
+    "engine_parent": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594",
+    "engine_branch": "codex/main-std-np32-20261028",
+    "draft_PR": 15,
+    "PR_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/15",
+    "merged": false,
+    "report": "worklines/main/MAIN_NP32_REPORT.md",
+    "progress": "worklines/main/NP32_PROGRESS.json",
+    "validation": "worklines/main/NP32_VALIDATION.json",
+    "publication_verification": "worklines/main/NP32_PUBLICATION_VERIFICATION.json",
+    "engine_report": "docs/STANDARD_NP32_RESEARCH_20261028.md",
+    "engine_results": "review/standard-np32/RESULTS_20261028.json",
+    "original_conditional_prefixes_executed": 3,
+    "original_requests_executed": 37,
+    "requests_by_branch": {
+      "AS": 11,
+      "AP": 13,
+      "ES": 13
+    },
+    "main_atom_checkpoints": 37,
+    "formal_settled_checkpoints": 37,
+    "actual_H21_draw_receipts": 12,
+    "new_tests": 39,
+    "related_files": 51,
+    "related_passed": 749,
+    "related_failed": 0,
+    "engine_paths_changed": 14,
+    "shared_source_files_changed": 4,
+    "engine_paths_actually_read_back": 14,
+    "existing_engine_blobs_unchanged": 541,
+    "source_baseline_unsafe_components_accepted": 6,
+    "current_unsafe_components_rejected": 6,
+    "baseline_experiment": "Original game/rules/settlement bytes with current research admission context shim only; synthetic, not a natural 32 baseline.",
+    "source_conditional_tapes": true,
+    "production_random_sampling": false,
+    "formal_ordinary_qualification": false,
+    "independent_QA": false,
+    "full_typecheck": "NOT_RUN",
+    "UI_build_or_true_device": "NOT_RUN",
+    "owner_evidence": {
+      "filename": "lezi-main-np32-evidence-20261028.zip",
+      "archive_sha256": "6c7a121979f927588aef9d38019ae4f023674f18e458faa13a89bf47eacc8245",
+      "archive_bytes": 828462,
+      "raw_sha256": "d32a7ec3c7622ddb6b937e27c37aa6e90b335df8046c238ba861c66c076e3c33",
+      "raw_bytes": 31192909,
+      "owner_saved_copy": true,
+      "public_raw_published": false,
+      "retrieval": "Resolve this exact filename in owner files; raw trace excluded from public GitHub."
+    },
+    "receiver_adoption": "not asserted; ordinary receiver records its own actual reading/QA/adoption",
+    "protected": {
+      "scoring": "frozen",
+      "NET": "paused",
+      "ordinary_featuresReady": false,
+      "half_chaos_featuresReady": false,
+      "hero_design": "unchanged",
+      "H03_pilot": "preserved_unrun",
+      "APK_rebuilt": false,
+      "new_gameplay_confirmations": 0
+    },
+    "next_action": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+    "authorization": {
+      "current_user_instructions": [
+        "现在你先推进主线工作",
+        "继续这段聊天"
+      ],
+      "inherited_basis": "PROJECT_WORK_AGREEMENT.md 2026-10-27 shared-main continuation and2026-10-28 source-bound next action",
+      "scope": "Existing shared engineering, bounded actual tests, independent child draft, owner-only raw evidence saving and incremental main/issued-task writeback; no gameplay/merge/deploy/score/NET approval."
+    },
+    "current_blocker_dispositions": {
+      "G00_MAIN_READ_RECEIPT": "Actual source/confirmation reads, current receipt written in main handoff.",
+      "G01_MODE_ADMISSION": "Research-only exact tuple implemented; formal product qualification remains CLOSED.",
+      "G02_H02_AS_SOURCE": "PR14 retained bounded patch; this phase original AS prefix actually executed and source retention/no stealth verified.",
+      "G03_M04_ROYAL_SAFETY": "Bounded ordinary+H02 authority closure fixed; public queries, full rosters/search still OPEN.",
+      "G04_H21_PRAYER": "B1-B4/R5/B5 actual timing/counters verified for three prefixes; old invoke-omission allegation stays withdrawn.",
+      "G05_H21_RANDOM": "Actual ordered-pool draw receipts and deterministic original-tape replay; production law/quality and count-policy adoption remain UNKNOWN.",
+      "G06_FORMAL_NP_RUNS": "Three original full-opening conditional-tape research prefixes executed; formal product/independent QA acceptance remains OPEN.",
+      "G07_ENGINE_PUBLICATION": "Independent child draft on PR14; not merged or deployed."
+    },
+    "negative_matrix": [
+      {
+        "id": "NG-01",
+        "status": "BOUNDED_COMPONENT_VERIFIED",
+        "evidence_and_limits": "Synthetic checked H21 prayer refuses with no source/counter mutation; not a natural checked-NP history."
+      },
+      {
+        "id": "NG-02",
+        "status": "ACTUAL_PREFIX_VERIFIED",
+        "evidence_and_limits": "All three actual B4 prayers create omen, no descent or selection RNG in B4."
+      },
+      {
+        "id": "NG-03",
+        "status": "PARTIAL_ACTUAL_TIMEOUT_ROUTE",
+        "evidence_and_limits": "Real 32-piece prefix to R5 then timeout: no B5 descent/draw. Other terminal mechanisms not exhaustively covered."
+      },
+      {
+        "id": "NG-04",
+        "status": "ACTUAL_DUPLICATE_AND_COMPONENT_VERIFIED",
+        "evidence_and_limits": "Actual R5 duplicate preserves room/revision/clock/draws; existing RNG01 descent idempotence regression reused."
+      },
+      {
+        "id": "NG-05",
+        "status": "PARTIAL_RUNTIME_AND_COMPONENT_VERIFIED",
+        "evidence_and_limits": "Actual R5 injected RNG exception rolls back candidate; existing malformed-index guards pass; source pool order verified but arbitrary changed-order natural probes not supplied."
+      },
+      {
+        "id": "NG-06",
+        "status": "BOUNDED_EXISTING_COMPONENTS_VERIFIED",
+        "evidence_and_limits": "Existing RNG01 N=0/1/3/4/15 plus RNG04 mixed air/river/covered/current-controller tests rerun successfully; not new natural samples."
+      },
+      {
+        "id": "NG-07",
+        "status": "PARTIAL_INHERITED_GEOMETRY_COMPONENTS",
+        "evidence_and_limits": "Existing assassination/mutation geometry tests rerun; full natural NP negative request families remain separate."
+      },
+      {
+        "id": "NG-08",
+        "status": "PARTIAL_INHERITED_STAGE_GUARDS",
+        "evidence_and_limits": "Original AS/AP/ES use distinct actual activation/later commands; inherited source-stage guards rerun, not every natural wrong-stage sequence."
+      },
+      {
+        "id": "NG-09",
+        "status": "BOUNDED_EXISTING_AS_COMPONENT",
+        "evidence_and_limits": "Existing AS02 protected-path case retains its original outside-AS-guard interpretation; no general failed-activation refund policy."
+      },
+      {
+        "id": "NG-10",
+        "status": "PARTIAL_DISTINCT_BRANCH_ORACLES",
+        "evidence_and_limits": "Three original conditional branches independently matched exact shield/oracle states; no claim of all altered endpoint histories."
+      },
+      {
+        "id": "NG-11",
+        "status": "OUT_OF_SCOPE_UNRUN",
+        "evidence_and_limits": "H10, multiple defenses, return-space conflicts, other control/air/river/history combinations not qualified by NP32."
+      },
+      {
+        "id": "NG-12",
+        "status": "PARTIAL_FIRST_WINDOW_ACTUAL",
+        "evidence_and_limits": "AP/ES R7 actual first subsequent window consumed; full natural R8 second-window/expiry branch not newly executed."
+      },
+      {
+        "id": "NG-13",
+        "status": "BOUNDED_AUTHORITY_FIXED_QUERIES_OPEN",
+        "evidence_and_limits": "Six formerly unsafe synthetic ordinary/activation/continuing cases reject; six direct-check evasion controls succeed; public legal/search query migration still open."
+      },
+      {
+        "id": "NG-14",
+        "status": "ACTUAL_PREFIX_AND_COMPONENT_VERIFIED",
+        "evidence_and_limits": "37 exact atom/end snapshots and path-vs-endpoint death oracles; survival control does not invent path death; source-terminal component keeps original outcome."
+      },
+      {
+        "id": "NG-15",
+        "status": "PARTIAL_ACTUAL_CLOCK_AND_DUPLICATE",
+        "evidence_and_limits": "37 main/end/begin/clock identities, actual duplicate and timeout checked; unrelated child/forced-defense sources remain outside this slice."
+      }
+    ],
+    "limitation_audit": {
+      "audit_trigger": "Shared authority safety/admission and long-lived main continuation state.",
+      "risk_level": "medium, isolated draft and reversible scoped code; product gates closed.",
+      "known_facts": [
+        "Original NP32 contracts and exact AS/AP confirmations exist at pinned source.",
+        "Three original 32-piece conditional prefixes executed37 actual requests; exact atom/end/draw evidence saved.",
+        "749 current related checks pass;14 remote paths actually read back."
+      ],
+      "user_statements": [
+        "现在你先推进主线工作",
+        "继续这段聊天"
+      ],
+      "claim_register": [
+        {
+          "claim": "AS/AP/ES original full-opening conditional-tape research executed",
+          "type": "document_fact_and_observed_program_result",
+          "source": "engine RESULTS_20261028 + owner raw checksum",
+          "validation": "actual source execution, bounded cases only"
+        },
+        {
+          "claim": "limited closed-authority safety corrects two directions of old query mismatch",
+          "type": "observed_program_result",
+          "source": "39 new checks and old/new synthetic game-source differential",
+          "validation": "source family only; natural reachability of symbolic cases unproved"
+        },
+        {
+          "claim": "formal ordinary mode is qualified",
+          "type": "not_claimed",
+          "source": "featuresReady remains false; independentQA false",
+          "validation": "not attained"
+        }
+      ],
+      "ai_interpretations": [
+        "Source contracts set the tested branches; a research capability does not itself confer formal product admission."
+      ],
+      "assumptions": [
+        "Pinned contracts remain current within their exact scope; no new gameplay approval is inferred."
+      ],
+      "unknowns": [
+        "Full public/search query consistency",
+        "Production RNG law/quality and formal count policy",
+        "Uncovered negative branches, privacy/client delivery and independentQA"
+      ],
+      "competing_explanations": [
+        "A symbolic fixture may be naturally unreachable; therefore old/new synthetic evidence is kept separate from the three actual full-opening runs."
+      ],
+      "falsification_conditions": [
+        "Actual pool/ID/package/source mismatch",
+        "Any request differs from original prefix",
+        "No real R5 counter-turn before descent",
+        "Unsafe closed state commits",
+        "Private raw trace appears in player/public output"
+      ],
+      "verification_status": "partial overall; bounded implementation/runs/readback completed, formal mode/independentQA not completed",
+      "action_boundary": "Independent child draft plus main-owned metadata/issued task only; no source-line working draft/rules/design/score writes.",
+      "failure_conditions": [
+        "Concurrent target change",
+        "Raw checksum mismatch",
+        "Product gate accidentally opens",
+        "Shared regression failure"
+      ],
+      "residual_risk": "Same-author test design can share omissions; bounded traces cannot establish all-source search, privacy or gameplay completeness.",
+      "next_validation_action": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028"
+    }
   }
 }
