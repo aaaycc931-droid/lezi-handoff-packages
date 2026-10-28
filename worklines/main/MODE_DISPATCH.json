@@ -3,8 +3,8 @@
   "id": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
   "date_local": "2026-10-28",
   "owner": "main",
-  "source_handoff_commit": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
-  "source_engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594",
+  "source_handoff_commit": "72dc9b59b961529c60200e37e0538a80d3312e3d",
+  "source_engine_commit": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
   "authorization": {
     "user_quote": "继续推进乐子象棋项目，你作为主线对三条支线进行统一任务执行与三线通用核心内容推进，完善游戏基建，同时分发三模式三条支线",
     "interpretation": "主线推进既有共用技术修复和统一任务分发；具体任务是技术分工，不登记成新玩法批准、合并或其他对话接收。"
@@ -24,7 +24,15 @@
       "status": "issued_pending_receiver_review",
       "receiver_read": false,
       "receiver_adopted": false,
-      "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c"
+      "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+      "main_shared_query_increment": {
+        "id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+        "engine_commit": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+        "draft_PR": 16,
+        "task_field": "TASK_FROM_MAIN.json#main_shared_query_increment",
+        "read_or_adoption": "unknown",
+        "new_mode_qualification": false
+      }
     },
     {
       "workline": "standard",
@@ -41,7 +49,15 @@
         "detailed_acceptance": false
       },
       "source_engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594",
-      "new_task_detailed_adoption": "unknown"
+      "new_task_detailed_adoption": "unknown",
+      "main_shared_query_increment": {
+        "id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+        "engine_commit": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+        "draft_PR": 16,
+        "task_field": "TASK_FROM_MAIN.json#main_shared_query_increment",
+        "read_or_adoption": "unknown",
+        "new_mode_qualification": false
+      }
     },
     {
       "workline": "half_chaos",
@@ -57,7 +73,15 @@
         "scope": "source closeout reports registration/summary reading of main PR14; detailed QA/adoption still pending",
         "detailed_acceptance": false
       },
-      "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c"
+      "source_engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+      "main_shared_query_increment": {
+        "id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+        "engine_commit": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+        "draft_PR": 16,
+        "task_field": "TASK_FROM_MAIN.json#main_shared_query_increment",
+        "read_or_adoption": "unknown",
+        "new_mode_qualification": false
+      }
     }
   ],
   "UI": {
@@ -78,11 +102,21 @@
     "latest_main_accounting": "HC_EVIDENCE_REPORT.md remains valid; new ordinary runtime evidence is MAIN_NP32_REPORT.md. Receiver-owned receipts still required."
   },
   "main_next": {
-    "id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
-    "actions": [
-      "核最新HEAD及PR15源，先对齐限定来源的公开合法走法／威胁／将死困毙查询与完整闭合权威：使用已实测的旧查询误拒绝解将、误接受暴露己王差异，设计无副作用的查询闭合路径，再实施最小补丁和差异验证。",
-      "半混乱原56精确时点玩家视图、客户端通道与缺自然刺激仍待补证；原64正式验收0保持。",
-      "普通原15负例矩阵仍有未覆盖分支、R8完整自然窗口及正式资格化／独立QA。"
+    "id": "MAIN-PUBLIC-PATH-COVERAGE-20261028",
+    "action": "先核M01/M04触及未知公开身份时的原可见性／裁判来源，逐项界定新闭合投影与旧查询的覆盖缺口；准备可显式区分未覆盖与非法的最小查询资格设计，再按已有来源实施可验证部分。",
+    "basis": "本轮18个公开符号组件、3个终局板及37原请求已对齐；隐藏路径／终点、其他效果／空间与后期来源仍无新投影，不能以旧布尔值冒充已资格化。",
+    "requirements": [
+      "不构造暗子secret，不将未知身份默认为某兵种／阵营，不自行新增产品拒绝规则。",
+      "保留同动作闭合、零真实抽样／墙钟、原对象批次屏障与外层观察隔离；需要私密资格时回原裁判来源。",
+      "按具体来源扩展，未知只阻断对应依赖；其他英雄、晚期雨夜、子行动、飞行／河道不从本轮继承PASS。"
+    ],
+    "secondary": [
+      "普通原NG11组合、R8完整自然第二窗口／到期、正式资格化和独立QA仍开放。",
+      "半混乱原64正式验收0及56个精确阶段视图／客户端槽位、缺自然刺激继续保留。"
+    ],
+    "separate_routes": [
+      "H03评分试点仍UNRUN，正式方法及账本冻结。",
+      "山2B、新风V3.1、UI及设计期预测缺口仍走既有独立路线；NET暂停。"
     ]
   },
   "protected": {
@@ -101,7 +135,7 @@
     "commit": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
     "id": "MAIN-THREE-MODE-RUNTIME-20261027"
   },
-  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/14",
+  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/16",
   "evidence_accounting_20261028": {
     "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
     "completed_on_local": "2026-10-28",
@@ -362,6 +396,152 @@
       ],
       "residual_risk": "Same-author test design can share omissions; bounded traces cannot establish all-source search, privacy or gameplay completeness.",
       "next_validation_action": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028"
+    }
+  },
+  "public_path_query_20261028": {
+    "id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+    "date_local": "2026-10-28",
+    "status": "BOUNDED_PUBLIC_QUERY_IMPLEMENTED_TESTED_PUBLISHED_DRAFT_COVERAGE_EXPANSION_NEXT",
+    "read_handoff_head": "72dc9b59b961529c60200e37e0538a80d3312e3d",
+    "engine_parent": "680966fff6484b418c25c9afb8b6759b7a44b594",
+    "engine_commit": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+    "engine_tree": "47e500d68ae61b98e67968f037c82ce4f2bbe531",
+    "engine_branch": "codex/main-public-path-query-20261028",
+    "draft_PR": 16,
+    "PR_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/16",
+    "merged": false,
+    "report": "worklines/main/MAIN_PUBLIC_PATH_QUERY_REPORT.md",
+    "progress": "worklines/main/PUBLIC_PATH_QUERY_PROGRESS.json",
+    "validation": "worklines/main/PUBLIC_PATH_QUERY_VALIDATION.json",
+    "publication_verification": "worklines/main/PUBLIC_PATH_QUERY_PUBLICATION_VERIFICATION.json",
+    "engine_report": "docs/PUBLIC_PATH_QUERY_RESEARCH_20261028.md",
+    "engine_results": "review/public-path-query/RESULTS_20261028.json",
+    "shared_source_files_changed": 3,
+    "engine_paths_changed": 14,
+    "engine_paths_actually_read_back": 14,
+    "existing_engine_blobs_unchanged": 550,
+    "new_tests": 33,
+    "targeted_passed": 88,
+    "related_files": 52,
+    "related_passed": 782,
+    "related_failed": 0,
+    "baseline_source_and_fixture_blobs_verified": 39,
+    "symbolic_components": 18,
+    "baseline_query_authority_mismatches": 12,
+    "current_query_authority_mismatches": 0,
+    "unsafe_cases_removed": 6,
+    "safe_evasions_restored": 6,
+    "legal_controls_preserved": 6,
+    "symbolic_terminal_boards": 3,
+    "original_full_opening_requests_compared_old_new": 37,
+    "original_requests_with_interleaved_query_comparison": 37,
+    "authority_events_views_and_RNG_equal": true,
+    "query_real_RNG_calls": 0,
+    "query_wall_clock_calls": 0,
+    "query_events_or_outer_invalidations": 0,
+    "raw_authority_bodies_published": false,
+    "coverage": [
+      "Original early H04/H03 M01/M04 revealed ground mover with public touched identities",
+      "Original ordinary NP32 H02/H21 invincible M04 before actor completed turn8 and max counter8",
+      "Ordinary and H02 activation/continuing markers plus bounded move-existence/checkmate/stalemate",
+      "Public royal threat direct terminal projection, preserving own-general source terminal authority"
+    ],
+    "uncovered": [
+      "Hidden path or endpoint identities; original queries retained without fabricated secrets",
+      "Other hero rosters, pending child/descent/shuffle, forced defense/flow, special spaces and unrelated effects",
+      "Late rain and broader search/full mode qualification",
+      "Ordinary NG11 combinations and R8 full natural second opportunity/expiry",
+      "HC64 formal acceptance, exact56 view/client slots and independentQA"
+    ],
+    "natural_reachability_of_symbolic_boards": "UNPROVED",
+    "production_random_sampling": false,
+    "formal_ordinary_qualification": false,
+    "independent_QA": false,
+    "full_typecheck": "NOT_RUN",
+    "UI_build_device_bluetooth": "NOT_RUN",
+    "owner_evidence": {
+      "previous_np32_artifact": "lezi-main-np32-evidence-20261028.zip",
+      "previous_archive_sha256": "d5953667a5010679947b7324c907146639c74884ccf7fbe2b7d26062c9017985",
+      "previous_raw_identity_preserved": true,
+      "new_raw_room_archive_created": false,
+      "this_phase_public_differential": "engine:review/public-path-query/DIFFERENTIAL_20261028.json",
+      "raw_comparison": "Executed in memory, only summaries/hashes published; old archive is not relabeled as current run."
+    },
+    "receiver_adoption": "unknown; three main-owned TASK_FROM_MAIN append this shared input only, receiver records actual reading/adoption",
+    "protected": {
+      "scoring": "frozen",
+      "NET": "paused",
+      "mode_gates_changed": false,
+      "new_gameplay_confirmations": 0,
+      "hero_design": "unchanged",
+      "APK_rebuilt": false,
+      "source_line_working_drafts_and_receipts_changed": false
+    },
+    "next_action": "MAIN-PUBLIC-PATH-COVERAGE-20261028",
+    "authorization": {
+      "current_user_instruction": "进行主线下一步",
+      "inherited_scope": "PROJECT_WORK_AGREEMENT.md shared-main continuation and persisted MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028; implementation/tests/independent draft and incremental main-owned handoff",
+      "new_gameplay_approval_inferred": false
+    },
+    "limitation_audit": {
+      "audit_trigger": "Shared legality/terminal queries and persistent main continuation state.",
+      "risk_level": "medium; bounded independent draft, reversible code, product gates closed",
+      "known_facts": [
+        "Pinned PR15 source and original NP32 contracts exist.",
+        "39 base source/input bytes verified; 18 symbolic components and3 terminal boards compared.",
+        "782 actual related checks and14 remote engine readbacks passed; original37 request bodies/RNG equal in memory."
+      ],
+      "user_statements": [
+        "进行主线下一步"
+      ],
+      "claim_register": [
+        {
+          "claim": "Bounded public query/authority mismatches12 to0",
+          "type": "observed_program_result",
+          "source": "engine DIFFERENTIAL_20261028 +33 new tests",
+          "validation": "18 exact synthetic components; not full mode or natural reachability"
+        },
+        {
+          "claim": "Original37 research requests retain authority/events/views/RNG",
+          "type": "observed_program_result",
+          "source": "Pinned old/new replay comparison and interleaved-query tests",
+          "validation": "Real room controlled original tapes, no probability/general sampling claim"
+        },
+        {
+          "claim": "All public search or ordinary product qualification completed",
+          "type": "not_claimed",
+          "source": "Coverage guard and RESULTS unrun/limits",
+          "validation": "not attained"
+        }
+      ],
+      "ai_interpretations": [
+        "Reuse of one candidate closure improves agreement inside its public source guard; unchanged legacy routes are not newly qualified."
+      ],
+      "assumptions": [
+        "Canonical exact source states have no secret from an unrelated hero/mutation; unsupported public effects/identities are excluded."
+      ],
+      "unknowns": [
+        "Hidden touched identity queries and explicit coverage reporting",
+        "Other rosters/effects/spaces/children, late rain, R8 complete natural window",
+        "Full product/UI/wire/device and independentQA"
+      ],
+      "competing_explanations": [
+        "Synthetic terminal boards can be naturally unreachable; they are component evidence independent of37 genuine full-opening requests."
+      ],
+      "falsification_conditions": [
+        "Any exact source query disagrees with the same closed authority",
+        "Query consumes real RNG/clock, mutates original, crosses original batch barrier, or changes outer observer",
+        "Any37 request output/draw differs from pinned parent or raw private body is published"
+      ],
+      "verification_status": "partial overall; bounded implementation, actual regression/differential and engine remote readback completed",
+      "action_boundary": "Independent child draft plus main/root and main-owned issued-task additions only; no score/NET/mode/design/merge/deploy/APK change.",
+      "failure_conditions": [
+        "Concurrent target advance",
+        "Unexpected blob difference",
+        "Regression failure or unbounded query recursion"
+      ],
+      "residual_risk": "Same-author expectations can share omissions; complete search and public/private semantics need further source-bound evidence.",
+      "next_validation_action": "MAIN-PUBLIC-PATH-COVERAGE-20261028"
     }
   }
 }
