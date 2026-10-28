@@ -1,11 +1,11 @@
 {
   "schema": "lezi.main.np32.publication_verification.v1",
   "date_local": "2026-10-28",
-  "status": "ENGINE_REMOTE_READBACK_AND_OWNER_SAVE_VERIFIED_MAIN_PUBLICATION_PENDING",
+  "status": "ENGINE_AND_MAIN_REMOTE_READBACK_AND_OWNER_SAVE_VERIFIED",
   "handoff_base_commit": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
   "engine": {
     "engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594",
-    "engine_tree": "680966fff6484b418c25c9afb8b6759b7a44b594",
+    "engine_tree": "ff65cb113561c8a312a739a5fda90cfcee127485",
     "base": "570fdf189867ec93355f0eca66362deb72cca53c",
     "files": [
       {
@@ -116,8 +116,139 @@
     "force": false
   },
   "owner_evidence_saved": true,
-  "owner_archive_sha256": "6c7a121979f927588aef9d38019ae4f023674f18e458faa13a89bf47eacc8245",
-  "main_actual_readback_files": 0,
+  "owner_archive_sha256": "d5953667a5010679947b7324c907146639c74884ccf7fbe2b7d26062c9017985",
+  "main_actual_readback_files": 15,
   "force": false,
-  "receiver_adoption_claimed": false
+  "receiver_adoption_claimed": false,
+  "main": {
+    "commit": "e37aa5ce8fb62e5725c3570f111c0e10e16375e3",
+    "base": "f631bad61b11f06070f5631a8a0ded7ea660bab1",
+    "tree": "02854143dc68ce8da0616cff22f2c9df204ebee1",
+    "files": [
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "expected_sha": "c3855ec202d37c02e765eafc8527d4c18794846b",
+        "actual_sha": "c3855ec202d37c02e765eafc8527d4c18794846b",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "expected_sha": "d729f88e923c20dc6c1a64c293f3665bf6c394ed",
+        "actual_sha": "d729f88e923c20dc6c1a64c293f3665bf6c394ed",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "expected_sha": "325e8a4857478ce0bb673c2fdafb2e0252076841",
+        "actual_sha": "325e8a4857478ce0bb673c2fdafb2e0252076841",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "expected_sha": "a39a9a75b51eaaa60d90188280d2909d0337b29e",
+        "actual_sha": "a39a9a75b51eaaa60d90188280d2909d0337b29e",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "expected_sha": "0ac9260059d6fe1a38a4190ba0259247fc273590",
+        "actual_sha": "0ac9260059d6fe1a38a4190ba0259247fc273590",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "expected_sha": "33feb4ddf69fa19f2fdd8293d5f0730a2c4c9edf",
+        "actual_sha": "33feb4ddf69fa19f2fdd8293d5f0730a2c4c9edf",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "expected_sha": "a9c261b69b7c85339ce1baefeecc0236c3848567",
+        "actual_sha": "a9c261b69b7c85339ce1baefeecc0236c3848567",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "expected_sha": "a3664a7292fb40e349b96ef2e8215c6198a389fd",
+        "actual_sha": "a3664a7292fb40e349b96ef2e8215c6198a389fd",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "expected_sha": "bed7b6d5b81fc10213e7fd45aca9aa4a94933792",
+        "actual_sha": "bed7b6d5b81fc10213e7fd45aca9aa4a94933792",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "expected_sha": "e0f7e9e57c68f109a98a3a1441db7e7fcf82a551",
+        "actual_sha": "e0f7e9e57c68f109a98a3a1441db7e7fcf82a551",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/NP32_PROGRESS.json",
+        "expected_sha": "71553dd9c159f735efdb1fc232ad1fa6e62a7391",
+        "actual_sha": "71553dd9c159f735efdb1fc232ad1fa6e62a7391",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_NP32_REPORT.md",
+        "expected_sha": "0804dc3648888945e42b56c0d26828b0a97e2c69",
+        "actual_sha": "0804dc3648888945e42b56c0d26828b0a97e2c69",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/NP32_PUBLICATION_VERIFICATION.json",
+        "expected_sha": "5d9d830936b3cadf5aac4c358dbaf911a7ab9d98",
+        "actual_sha": "5d9d830936b3cadf5aac4c358dbaf911a7ab9d98",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/main/NP32_VALIDATION.json",
+        "expected_sha": "c67cffbe984931c5c1ce2b9f5e265361700b4b53",
+        "actual_sha": "c67cffbe984931c5c1ce2b9f5e265361700b4b53",
+        "sha_equal": true,
+        "bytes_equal": true
+      },
+      {
+        "path": "worklines/standard/TASK_FROM_MAIN.json",
+        "expected_sha": "4640328ed177ce42c59688513c6c5de7281e1e2a",
+        "actual_sha": "4640328ed177ce42c59688513c6c5de7281e1e2a",
+        "sha_equal": true,
+        "bytes_equal": true
+      }
+    ],
+    "readback_files": 15,
+    "unchanged_existing_blobs": 737,
+    "altered_outside_selected_paths": [],
+    "source_line_working_receipts_rules_and_hero_objects_unchanged": true,
+    "standard_task_main_owned_coordination_only": true,
+    "force": false
+  },
+  "owner_archive_bytes": 912334,
+  "owner_archive_version": 1,
+  "metadata_correction": {
+    "correction": "engine_tree records the Git tree SHA from the immutable commit object; the earlier value was the commit SHA used as the tree API selector",
+    "earlier_engine_tree_field": "680966fff6484b418c25c9afb8b6759b7a44b594",
+    "corrected_engine_tree": "ff65cb113561c8a312a739a5fda90cfcee127485",
+    "main_tree": "02854143dc68ce8da0616cff22f2c9df204ebee1",
+    "archive_previous_sha256": "6c7a121979f927588aef9d38019ae4f023674f18e458faa13a89bf47eacc8245",
+    "archive_current_sha256": "d5953667a5010679947b7324c907146639c74884ccf7fbe2b7d26062c9017985",
+    "raw_authority_bytes_unchanged": true,
+    "raw_authority_sha256": "d32a7ec3c7622ddb6b937e27c37aa6e90b335df8046c238ba861c66c076e3c33"
+  },
+  "verification_scope": "The 15 main-file rows verify immutable stage commit e37aa5ce8fb62e5725c3570f111c0e10e16375e3. This additive follow-up records those actual readbacks and corrects archive metadata references; it does not claim advance verification of its own future commit."
 }

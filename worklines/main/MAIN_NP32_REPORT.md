@@ -34,7 +34,7 @@
 
 ## 已保存与交接
 
-完整原始轨迹已按owner-only持久保存为 `lezi-main-np32-evidence-20261028.zip`，可由所有者按精确文件名恢复。压缩包828,462字节，SHA-256 `6c7a121979f927588aef9d38019ae4f023674f18e458faa13a89bf47eacc8245`；其中原始JSON 31,192,909字节，SHA-256 `d32a7ec3c7622ddb6b937e27c37aa6e90b335df8046c238ba861c66c076e3c33`。原始秘密／权威／传输／RNG内容不进入公开GitHub或玩家输出。执行环境曾短暂失联，恢复后核原文件和归档完整性再继续保存，未盲重放已成功的提交／游戏执行。
+完整原始轨迹已按owner-only持久保存为 `lezi-main-np32-evidence-20261028.zip`，可由所有者按精确文件名恢复。压缩包912,334字节，SHA-256 `d5953667a5010679947b7324c907146639c74884ccf7fbe2b7d26062c9017985`；其中原始JSON 31,192,909字节，SHA-256 `d32a7ec3c7622ddb6b937e27c37aa6e90b335df8046c238ba861c66c076e3c33`。原始秘密／权威／传输／RNG内容不进入公开GitHub或玩家输出。执行环境曾短暂失联，恢复后核原文件和归档完整性再继续保存，未盲重放已成功的提交／游戏执行。
 
 当前来源、授权、验证、原负例和局限审查见 [NP32_PROGRESS.json](NP32_PROGRESS.json)，本阶段文件／保护核对见 [NP32_VALIDATION.json](NP32_VALIDATION.json)，代码及主线实际发布复读凭据见 [NP32_PUBLICATION_VERIFICATION.json](NP32_PUBLICATION_VERIFICATION.json)。引擎[完整实现说明](https://github.com/aaaycc931-droid/jieqi-engine/blob/680966fff6484b418c25c9afb8b6759b7a44b594/docs/STANDARD_NP32_RESEARCH_20261028.md)、原输入、回放器、测试、命令及真实TAP均已发布。
 
