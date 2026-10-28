@@ -33,7 +33,12 @@
       "task_file": "worklines/standard/TASK_FROM_MAIN.json",
       "status": "issued_pending_receiver_review",
       "receiver_read": false,
-      "receiver_adopted": false
+      "receiver_adopted": false,
+      "latest_source_closeout_observed": {
+        "source_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
+        "scope": "source closeout reports registration/summary reading of main PR14; detailed QA/adoption still pending",
+        "detailed_acceptance": false
+      }
     },
     {
       "workline": "half_chaos",
@@ -43,7 +48,12 @@
       "task_file": "worklines/half_chaos/TASK_FROM_MAIN.json",
       "status": "issued_pending_receiver_review",
       "receiver_read": false,
-      "receiver_adopted": false
+      "receiver_adopted": false,
+      "latest_source_closeout_observed": {
+        "source_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
+        "scope": "source closeout reports registration/summary reading of main PR14; detailed QA/adoption still pending",
+        "detailed_acceptance": false
+      }
     }
   ],
   "UI": {
@@ -60,15 +70,16 @@
     "conflict": "只阻断依赖该争议部分，其他独立工作继续；涉及新玩法实义先形成具体候选交用户。",
     "publication_is_not_wakeup": true,
     "other_dialogue_execution_or_adoption": "unknown",
-    "current_increment": "Actual code/evidence available; fixed mode TASK_FROM_MAIN updated; receiver receipts remain receiver-owned."
+    "current_increment": "Actual code/evidence available; fixed mode TASK_FROM_MAIN updated; receiver receipts remain receiver-owned.",
+    "latest_main_accounting": "worklines/main/HC_EVIDENCE_REPORT.md; this is main-owned evidence reconciliation, no source-line detailed adoption is filled."
   },
   "main_next": {
-    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "id": "MAIN-STD-NP32-20261028",
     "actions": [
-      "MAIN-HC-EVIDENCE-ACCOUNTING: map actual request/atom/end evidence to original64/210 obligations, separate missing stimuli and independent QA; do not auto-promote specifications.",
-      "MAIN-STD-NP32: source-bound ordinary room admission and full AS/AP/ES prefix/RNG replay; main owns shared code.",
-      "MAIN-SAFETY-QUERY: migrate public legal-move/threat/terminal queries and qualify remaining rosters, later QinLong rain, children/spaces.",
-      "Scoring separate: preserve H03 source-bound pilot and intake SCORE-DESIGN-PREDICTION-GAP-20261026; no formal score/ledger change."
+      "在固定PR14源上读取普通NP32/AS/AP/ES及H21原合同与当前守卫；实现真实普通房间、完整32棋来源和限定准入，随后按原自然前缀采集并复验；不能把半混乱准入或AS组件证据外推为普通准入。",
+      "HC exact-stage player projections/client delivery and original missing stimuli; see HC_EVIDENCE_REPORT.md.",
+      "Broader legal-move/threat/terminal queries, late QinLong rain, other heroes/child actions/spaces.",
+      "H03 source-bound pilot stays UNRUN; wind V3.1/design-prediction gap remains a separate route."
     ]
   },
   "protected": {
@@ -87,5 +98,41 @@
     "commit": "bc75bb78a4b1720f4f196c602b4dcd844625367e",
     "id": "MAIN-THREE-MODE-20261024"
   },
-  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/14"
+  "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/14",
+  "evidence_accounting_20261028": {
+    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "completed_on_local": "2026-10-28",
+    "status": "ACCOUNTING_COMPLETED_FORMAL_ACCEPTANCE_AND_MISSING_EVIDENCE_OPEN",
+    "read_handoff_head": "4af533233920a6ebbc818c466365673aa21a18ee",
+    "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "report": "worklines/main/HC_EVIDENCE_REPORT.md",
+    "accounting": "worklines/main/HC_EVIDENCE_ACCOUNTING.json",
+    "specifications": "worklines/main/HC_EVIDENCE_64.json",
+    "observations": "worklines/main/HC_EVIDENCE_210.json",
+    "pairs": "worklines/main/HC_EVIDENCE_PAIRS.json",
+    "audit_program": "worklines/main/audits/hc_evidence_accounting.py",
+    "validation": "worklines/main/HC_EVIDENCE_VALIDATION.json",
+    "publication_verification": "worklines/main/HC_EVIDENCE_PUBLICATION_VERIFICATION.json",
+    "authority_raw_sha256": "ccea6579108af5f2547d8b4f8bc1179239967784411de135028e85277cc59259",
+    "original_replays_reconciled": 12,
+    "original_requests_reconciled": 110,
+    "authority_snapshots_mapped": 210,
+    "original_specs_accounted": 64,
+    "bounded_trace_rows": 45,
+    "partial_missing_stimulus_rows": 11,
+    "partial_semantic_or_evidence_rows": 7,
+    "no_natural_positive_rows": 1,
+    "formal_original_specs_accepted": 0,
+    "fully_discharged_observation_rows": 0,
+    "offline_request_checks": 1404,
+    "explicit_bounded_assertions": 61,
+    "failures": 0,
+    "returned_view_comparisons_rechecked": 42,
+    "exact_stage_player_view_slots_discharged": 0,
+    "new_engine_runs": 0,
+    "new_gameplay_confirmations": 0,
+    "independent_QA": false,
+    "receiver_adoption": "not asserted; each source line records its own actual detailed QA",
+    "next_action": "MAIN-STD-NP32-20261028"
+  }
 }

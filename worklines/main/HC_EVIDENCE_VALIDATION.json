@@ -1,0 +1,152 @@
+{
+  "schema": "lezi.main.hc_accounting_validation.v1",
+  "date_local": "2026-10-28",
+  "status": "PASS_OFFLINE_ACCOUNTING_VALIDATION_NOT_GAME_ACCEPTANCE",
+  "checks": [
+    {
+      "check": "exact64unique_spec_ids",
+      "passed": true
+    },
+    {
+      "check": "exact210unique_checkpoint_ids",
+      "passed": true
+    },
+    {
+      "check": "original_obligations_and_missing_conditions_retained",
+      "passed": true
+    },
+    {
+      "check": "454_spec_links_and_all_checkpoints_covered",
+      "passed": true
+    },
+    {
+      "check": "bidirectional_spec_checkpoint_links",
+      "passed": true
+    },
+    {
+      "check": "100_100_6_4_actual_semantic_boundaries",
+      "passed": true
+    },
+    {
+      "check": "every_original_field_group_retained_with_policy",
+      "passed": true
+    },
+    {
+      "check": "exact_event_pointers_never_post_return_substitutes",
+      "passed": true
+    },
+    {
+      "check": "nonmain_after_pointers_actual_returned_views_only",
+      "passed": true
+    },
+    {
+      "check": "42_returned_comparisons_56_distinct_exact_slots",
+      "passed": true
+    },
+    {
+      "check": "42_not_miscounted_as_exact_stage",
+      "passed": true
+    },
+    {
+      "check": "full_acceptance_not_inferred",
+      "passed": true
+    },
+    {
+      "check": "45_11_7_1_partition",
+      "passed": true
+    },
+    {
+      "check": "offline_assertion_results",
+      "passed": true
+    },
+    {
+      "check": "no_new_runtime_or_QA_claim",
+      "passed": true
+    },
+    {
+      "check": "protected_main_subtrees_equal_baseline",
+      "passed": true
+    },
+    {
+      "check": "three_line_states_and_UI_metadata_equal_baseline",
+      "passed": true
+    },
+    {
+      "check": "all_current_resume_routes_point_to_np32",
+      "passed": true
+    },
+    {
+      "check": "current_verification_does_not_reuse_old_run_count",
+      "passed": true
+    },
+    {
+      "check": "frozen_and_paused",
+      "passed": true
+    },
+    {
+      "check": "changed_paths_whitelist_only",
+      "passed": true
+    },
+    {
+      "check": "no_game_hero_scoring_UI_or_source_line_paths_written",
+      "passed": true
+    },
+    {
+      "check": "source_contract_files_untouched",
+      "passed": true
+    },
+    {
+      "check": "no_raw_authority_payload_in_outputs",
+      "passed": true
+    }
+  ],
+  "checks_passed": 24,
+  "checks_failed": 0,
+  "source_files_in_local_snapshot_unchanged": 23,
+  "changed_paths": [
+    "CURRENT_HANDOFF.json",
+    "worklines/main/CURRENT_STATE.json",
+    "worklines/main/HC_EVIDENCE_210.json",
+    "worklines/main/HC_EVIDENCE_64.json",
+    "worklines/main/HC_EVIDENCE_ACCOUNTING.json",
+    "worklines/main/HC_EVIDENCE_PAIRS.json",
+    "worklines/main/HC_EVIDENCE_PUBLICATION_VERIFICATION.json",
+    "worklines/main/HC_EVIDENCE_REPORT.md",
+    "worklines/main/HC_EVIDENCE_VALIDATION.json",
+    "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+    "worklines/main/MODE_DISPATCH.json",
+    "worklines/main/PROJECT_WORK_AGREEMENT.md",
+    "worklines/main/READ_RECEIPTS.json",
+    "worklines/main/RETURN_TO_MAIN.json",
+    "worklines/main/SESSION_CLOSEOUT.json",
+    "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+    "worklines/main/START_HERE.txt",
+    "worklines/main/audits/hc_evidence_accounting.py"
+  ],
+  "protected_main_subtrees": [
+    "scoring",
+    "NET",
+    "scoring_optimization",
+    "wind_redesign",
+    "shan_current_parameters",
+    "shan_design_finalization",
+    "shan_second_stage_2a_implementation",
+    "pending_decision",
+    "pending_decision_approved",
+    "adjudication_version",
+    "current_adjudication_record"
+  ],
+  "independent_QA": false,
+  "engine_runs": 0,
+  "related710_rerun": false,
+  "actual_remote_publication_readback": "HC_EVIDENCE_PUBLICATION_VERIFICATION.json",
+  "audit_selector_corrections": [
+    "PD05 grant is B2 rather than B3",
+    "PD04 shield source resolved from actual declared body, not the old ID"
+  ],
+  "limitations": [
+    "Structural/self review is not independent gameplay QA.",
+    "1404+61 are offline trace checks, not new engine tests.",
+    "Full64 and210 observation obligation acceptance remains open."
+  ]
+}

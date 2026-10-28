@@ -7,50 +7,11 @@
     "standard",
     "ui"
   ],
-  "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
-  "phase": "MAIN_SHARED_RUNTIME_20261027",
-  "current_breakpoint": "Shared runtime stage3 delivered; requested APK delivered; original64/210 accounting next.",
-  "status": "session_closed_shared_runtime_and_debug_apk_delivered",
-  "confirmed_delta_this_session": [
-    {
-      "id": "CONF-THREE-MODE-H15-H06-FAILED-TRAINING-PERSISTS-20261017",
-      "candidate_id": "DECISION-H15-H06-FAILED-TRAINING-RESTORE-20261017",
-      "confirmed_at_local": "2026-10-17T15:30:17+08:00",
-      "user_quote": "我同意",
-      "reconfirmed_at_local": "2026-10-17T17:57:09+08:00",
-      "reconfirmation_quote": "我同意",
-      "counted_as_one_rule_confirmation": true,
-      "source_type": "direct_current_user_confirmation_of_immediately_preceding_explicit_three_mode_failed_training_H06_question",
-      "reviewed_candidate": {
-        "commit": "338acdf7c359b18e8a246a92354712b899e0f996",
-        "path": "candidates/h15-h06-failed-training-restore/v1.json",
-        "git_blob_sha": "456669cc763a582d970eb0bee43734c8593a2e8d"
-      },
-      "immediately_preceding_question": "是否同意这一限定方案适用于三个模式？",
-      "presented_clauses": [
-        "同一次训练未失败、未毕业时，合法回溯按原来源恢复原受训棋及快照进度，不重新随机，已用机会不返还。",
-        "已因毕业前受训棋死亡而失败的训练：合法回溯可恢复棋子，但不恢复这次已失败训练。",
-        "例：快照炮3/6、后来死亡失败，回溯后炮可存活但不继续培养；启动前快照、已毕业奖励等其他交叉另核。"
-      ],
-      "mode_ids": [
-        "original_jieqi",
-        "standard_xiangqi",
-        "half_chaos"
-      ],
-      "availability_guard": "Originally legal H06 in an already allowed H06/H15 match; H06 preflight/window/current-not-in-check/same-body nonattack noncheck replay and all existing source guards pass. H15 training actually failed from pre-graduation trainee destruction after the target snapshot; snapshot contains that earlier same active training. No new hero pool or cross-shuffle-barrier restoration.",
-      "scope": "Only pre-graduation trainee-death failure crossed by an otherwise legal H06 restore to its earlier active-training snapshot; no expansion to prestart, graduation, other failures or other time skills.",
-      "confirmed_policy_source": "ADJUDICATION.json#/shared_hero_design_updates/H15_H06_pregraduation_death_failure",
-      "not_confirmed": [
-        "snapshot before original training start",
-        "graduation/completed flight/reward/history crossings beyond this pre-graduation-failure branch",
-        "other failure kinds, start legality/empty-pool feedback or new windows/check permissions",
-        "M07 same-begin or other-mode H11 spatial rules",
-        "full phase/key/terminal/clock implementation or runtime/scoring/NET"
-      ],
-      "implementation_status": "confirmed_design_not_implemented",
-      "engine_runs": 0
-    }
-  ],
+  "base_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
+  "phase": "MAIN_HC_EVIDENCE_ACCOUNTING_20261028",
+  "current_breakpoint": "原64/210逐项核算完成，实际缺口未抹平；下一普通NP32真实房间限定准入与完整自然前缀。",
+  "status": "ACCOUNTING_COMPLETED_FORMAL_ACCEPTANCE_AND_MISSING_EVIDENCE_OPEN",
+  "confirmed_delta_this_session": [],
   "pending_delta": [
     "毕业跨越来源已核对；最小存活5/6→6/6后回溯的同次训练再达阈值与奖励撤销处理仍待明确，复工先形成准确提案。",
     "complete remaining hero/mutation public effects, resource and relation map",
@@ -62,26 +23,24 @@
     "D01 end-settlement/skipped/cancelled/history boundaries and exact source-order/search/clock interfaces"
   ],
   "files": [
-    "../../candidates/h15-first-cultivation-tick/v1.json",
-    "../../candidates/h15-public-training-display/v1.json",
-    "../../candidates/repetition-public-body-equivalence/v1.json",
-    "ADJUDICATION.json",
-    "CURRENT_STATE.json",
-    "PENDING_DECISION.json",
-    "PROJECT_WORK_AGREEMENT.md",
-    "READ_RECEIPTS.json",
-    "RECOVERY_REPORT.md",
-    "REPETITION_PUBLIC_FIELDMAP.json",
-    "SHARED_COORDINATION.json",
-    "SOURCE_MAP.json",
-    "START_HERE.txt",
-    "VALIDATION.json",
-    "../../candidates/h15-h06-failed-training-restore/v1.json",
-    "../../candidates/h15-h06-prestart-training-restore/v1.json",
-    "../../candidates/h15-h06-prestart-snapshot-restore/v1.json",
-    "ROUND_CLOSEOUT.md",
-    "R38_HOURGLASS_CLOSURE_PLAN.md",
-    "R38_ENGINEERING_REVIEW.json"
+    "CURRENT_HANDOFF.json",
+    "worklines/main/START_HERE.txt",
+    "worklines/main/CURRENT_STATE.json",
+    "worklines/main/SESSION_CLOSEOUT.json",
+    "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+    "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+    "worklines/main/MODE_DISPATCH.json",
+    "worklines/main/PROJECT_WORK_AGREEMENT.md",
+    "worklines/main/READ_RECEIPTS.json",
+    "worklines/main/RETURN_TO_MAIN.json",
+    "worklines/main/HC_EVIDENCE_REPORT.md",
+    "worklines/main/HC_EVIDENCE_ACCOUNTING.json",
+    "worklines/main/HC_EVIDENCE_64.json",
+    "worklines/main/HC_EVIDENCE_210.json",
+    "worklines/main/HC_EVIDENCE_PAIRS.json",
+    "worklines/main/HC_EVIDENCE_VALIDATION.json",
+    "worklines/main/HC_EVIDENCE_PUBLICATION_VERIFICATION.json",
+    "worklines/main/audits/hc_evidence_accounting.py"
   ],
   "approval_sources": [
     {
@@ -123,39 +82,46 @@
       "engine_runs": 0
     }
   ],
-  "verification": "Document/source and remote publication checks only; no engine run",
+  "verification": {
+    "type": "offline reconciliation of existing owner artifact",
+    "offline_request_checks": 1404,
+    "explicit_bounded_assertions": 61,
+    "failures": 0,
+    "new_engine_runs": 0,
+    "independent_QA": false,
+    "details": "worklines/main/HC_EVIDENCE_VALIDATION.json"
+  },
   "unrun": [
-    "concrete RH01-RH06 reachable fixtures",
-    "engine implementation and runtime acceptance",
-    "full public key/pressure eligibility and all-source ordering",
-    "all new H14/H16 specs and prefixes",
-    "ordinary WC/EX/CA/CH/JX specs; source design approval is not runtime acceptance",
-    "all28 r19 H19/H20 specifications and every new manual prefix",
-    "H15 first-tick candidate example timelines are abstract, not engine fixtures",
-    "ordinary D01 ET01-ET14 and HG01-HG10; HG prefix/spec body not fully read",
-    "H15 confirmed first-tick abstract timelines",
-    "all new D01 SC/ZA/CK/BG specifications; no new engine runs in main",
-    "all36 r20 H21 specs; full H21 working-body/specs not read this main phase",
-    "all new TC/DW/NH/RP source specifications; no engine run by main",
-    "H15 public-display abstract information-pair analysis; not legal fixture/client reproduction",
-    "r22 D01 safety five prefix families and28 specs reported unrun; full body not inspected",
-    "r23-r25 twelve replay plans covering64 old PD/DS specs are allUNRUN per source report; main did not read full prefixes or run engine"
+    "formal original64 complete acceptance",
+    "original56 exact-stage player-view slots and actual client delivery",
+    "original missing stimuli and additional natural branches",
+    "ordinary NP32 exact admission/full prefixes",
+    "full threat/terminal and broader source scope",
+    "independent QA; true-device/physical Bluetooth validation not reported"
   ],
-  "shared_blocks": "SHARED_COORDINATION.json",
+  "shared_blocks": [
+    "HC exact-stage room/player view and client error/message capture",
+    "missing source stimuli and product dedup/conflict protocol evidence",
+    "broader legal-response/terminal and lifetime-source proof"
+  ],
   "next": {
-    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
-    "action": "核最新HEAD、主线session_closure和三线最新回传，先把已执行的原12序列/110请求及100+100观察点逐项映射到半混沌原64规格和210观察义务，区分已证、部分、缺刺激和独立QA。",
-    "secondary": [
-      "随后补普通NP32真实房间限定准入与AS/AP/ES完整自然前缀。",
-      "继续更广公开合法走法/威胁/终局查询及雨夜后期、其他英雄/子行动/空间安全覆盖。"
+    "id": "MAIN-STD-NP32-20261028",
+    "action": "在固定PR14源上读取普通NP32/AS/AP/ES及H21原合同与当前守卫；实现真实普通房间、完整32棋来源和限定准入，随后按原自然前缀采集并复验；不能把半混乱准入或AS组件证据外推为普通准入。",
+    "source_contracts": [
+      "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+      "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+      "worklines/standard/specs/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.json",
+      "worklines/standard/specs/H21_RNG_REPLAY_CONTRACT_20261024.json"
     ],
-    "separate_routes": [
-      "H03评分试点保留UNRUN，评分候选未正式采用；SCORE-DESIGN-PREDICTION-GAP-20261026仍需独立推进。",
-      "新风V3.1完整候选已发布；本次仅读其交接元数据，完整候选与旧稿对照、接收/采用核验尚待执行。"
-    ]
+    "parallel_backlog_not_auto_completed": [
+      "HC exact-stage player projections/client delivery and original missing stimuli; see HC_EVIDENCE_REPORT.md.",
+      "Broader legal-move/threat/terminal queries, late QinLong rain, other heroes/child actions/spaces.",
+      "H03 source-bound pilot stays UNRUN; wind V3.1/design-prediction gap remains a separate route."
+    ],
+    "authorization": "Inherit existing main shared engineering authorization; no new gameplay, product release, merge, score adoption or NET resume."
   },
   "messages_sent": false,
-  "other_lines_adoption_verified": "Earlier exact scopes only, no new1.57 receipts.",
+  "other_lines_adoption_verified": false,
   "scoring_frozen": true,
   "NET": "paused",
   "source_return_commits": {
@@ -170,14 +136,13 @@
     "CONF-STD-M07-POOL-EXCLUSION-20261016"
   ],
   "ordinary_scoped_confirmations_received_this_phase": [],
-  "publication_parent_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
+  "publication_parent_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
   "unread_concurrent_returns": [],
   "new_rule_confirmations_this_phase": 0,
   "current_phase_changes": [
-    "按固定沙漏方案实施独立PR10，完整候选一次结算/原批次屏障/零抽样/观察缓冲/活死状态分离",
-    "31项新公开组件；修前22项中的11项差异失败，修后61针对性及41文件560相关检查通过",
-    "补核开放批次与版本/phase/特殊窗口冲突错误顺序；默认死亡RNG和source-terminal原行为保留",
-    "5个发布文件与测试字节复读相等；投弹/铁马和其他线成果保持；适配器尚未消费evidenceValid=false，原12/64未验收"
+    "Original owner archive/raw hash matched and reused, no rerun.",
+    "64 per-spec/210 per-observation/56 pair-slot reconciliation published as separate main-owned evidence.",
+    "Current entry/resume/progress/receipts updated; original design/rules/source-line work unchanged."
   ],
   "external_shared_confirmations_received_this_phase": 0,
   "increment_since_1_53": {
@@ -2531,5 +2496,41 @@
     "build": "80c2ceea7f7c7bb09f77aa5bbfaf05cf393c6eee",
     "run": 40470588695,
     "status": "built_delivered_not_phone_accepted"
+  },
+  "evidence_accounting_20261028": {
+    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "completed_on_local": "2026-10-28",
+    "status": "ACCOUNTING_COMPLETED_FORMAL_ACCEPTANCE_AND_MISSING_EVIDENCE_OPEN",
+    "read_handoff_head": "4af533233920a6ebbc818c466365673aa21a18ee",
+    "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "report": "worklines/main/HC_EVIDENCE_REPORT.md",
+    "accounting": "worklines/main/HC_EVIDENCE_ACCOUNTING.json",
+    "specifications": "worklines/main/HC_EVIDENCE_64.json",
+    "observations": "worklines/main/HC_EVIDENCE_210.json",
+    "pairs": "worklines/main/HC_EVIDENCE_PAIRS.json",
+    "audit_program": "worklines/main/audits/hc_evidence_accounting.py",
+    "validation": "worklines/main/HC_EVIDENCE_VALIDATION.json",
+    "publication_verification": "worklines/main/HC_EVIDENCE_PUBLICATION_VERIFICATION.json",
+    "authority_raw_sha256": "ccea6579108af5f2547d8b4f8bc1179239967784411de135028e85277cc59259",
+    "original_replays_reconciled": 12,
+    "original_requests_reconciled": 110,
+    "authority_snapshots_mapped": 210,
+    "original_specs_accounted": 64,
+    "bounded_trace_rows": 45,
+    "partial_missing_stimulus_rows": 11,
+    "partial_semantic_or_evidence_rows": 7,
+    "no_natural_positive_rows": 1,
+    "formal_original_specs_accepted": 0,
+    "fully_discharged_observation_rows": 0,
+    "offline_request_checks": 1404,
+    "explicit_bounded_assertions": 61,
+    "failures": 0,
+    "returned_view_comparisons_rechecked": 42,
+    "exact_stage_player_view_slots_discharged": 0,
+    "new_engine_runs": 0,
+    "new_gameplay_confirmations": 0,
+    "independent_QA": false,
+    "receiver_adoption": "not asserted; each source line records its own actual detailed QA",
+    "next_action": "MAIN-STD-NP32-20261028"
   }
 }

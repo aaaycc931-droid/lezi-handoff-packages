@@ -1,0 +1,93 @@
+{
+  "schema": "lezi.main.hc_evidence_accounting.v1",
+  "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+  "date_local": "2026-10-28",
+  "read_handoff_head": "4af533233920a6ebbc818c466365673aa21a18ee",
+  "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+  "method": "OFFLINE_RECONCILIATION_OF_EXISTING_OWNER_AUTHORITY_ARTIFACT_NO_ENGINE_IMPORT_OR_RUN",
+  "authority_raw_sha256": "ccea6579108af5f2547d8b4f8bc1179239967784411de135028e85277cc59259",
+  "authority_bytes": 84861363,
+  "authority_visibility": "Owner-only artifact; no raw state/secret/view payload published by this audit.",
+  "source_files": [
+    {
+      "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
+      "git_blob_sha": "83b1e80eea254d17d3c3f9fee1e978c4aa284965",
+      "sha256": "ba8f0a40e19230176df732e267d14b6070778d74886f4c007ea0ff1be4084836"
+    },
+    {
+      "path": "worklines/half_chaos/REPLAY_ACTION_DATA.json",
+      "git_blob_sha": "d8453df0104ffdef95fd22f705cf355d53b8d027",
+      "sha256": "1e213fe2c6db48ab54d15a599023f57ab50f1ecda50e30601ae555fbf88fda68"
+    },
+    {
+      "path": "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json",
+      "git_blob_sha": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+      "sha256": "3c3da34ef64de3adb9c7dc5cae4094cccfb32fd5df32cd8eae62a07d5199180b"
+    },
+    {
+      "path": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json",
+      "git_blob_sha": "be63d62bf94e029042e49089455af41b2b81b5a4",
+      "sha256": "53b8c0f9de6fd60f3c9985f944f422ffe5e83b0696c3020898eecd6570318cda"
+    },
+    {
+      "path": "worklines/half_chaos/HC49_ALL_REPLAYS_API_BINDING.json",
+      "git_blob_sha": "9f91119b17354d91c94ac443cbbe2733902d9002",
+      "sha256": "c5227b3fb15e89949970284411538a3b9483837c998870cadd270bef238df271"
+    },
+    {
+      "path": "worklines/half_chaos/HC50_ORIGINAL_210_EVIDENCE_PRIVACY_AUDIT.json",
+      "git_blob_sha": "d801ef23325beea568b6d2f9e5074cfcfada8320",
+      "sha256": "8437c5a859f6c6cc073de8748c52e7c8e58dd32dc26dba2f101ee93cf584f642"
+    },
+    {
+      "path": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json",
+      "git_blob_sha": "22abe23c22ab0032aa014e6a4afbf6f3f128b66f",
+      "sha256": "5080e34bb93a640827acefb79d60a57f58049eef630d1e918b6ba3836c1388f0"
+    }
+  ],
+  "replays": 12,
+  "requests": 110,
+  "authority_checkpoints": 210,
+  "boundary_counts": {
+    "after_main_atom": 100,
+    "after_normal_end_effects": 100,
+    "after_accepted_non_main_request": 6,
+    "after_rejected_non_main_request": 4
+  },
+  "offline_request_checks": 1404,
+  "offline_request_check_failures": 0,
+  "explicit_spec_assertions": 61,
+  "explicit_spec_assertion_failures": 0,
+  "original_specs": 64,
+  "spec_status_counts": {
+    "PARTIAL_MISSING_ORIGINAL_STIMULUS": 11,
+    "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN": 45,
+    "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY": 7,
+    "MISSING_NATURAL_POSITIVE_NO_DIRECT_CHECKPOINT": 1
+  },
+  "formal_specs_accepted": 0,
+  "fully_discharged_observation_rows": 0,
+  "returned_view_pair_comparisons": 42,
+  "returned_view_pair_equal": 42,
+  "original_exact_stage_player_view_slots": 56,
+  "original_exact_stage_player_view_slots_discharged": 0,
+  "new_engine_runs": 0,
+  "engine_code_changes": 0,
+  "new_gameplay_confirmations": 0,
+  "independent_QA": false,
+  "failures": [],
+  "explicit_failures": [],
+  "outputs": {
+    "checkpoints": "HC_EVIDENCE_210.json",
+    "specifications": "HC_EVIDENCE_64.json",
+    "pairs": "HC_EVIDENCE_PAIRS.json"
+  },
+  "protected": {
+    "scoring": "frozen",
+    "NET": "paused",
+    "featuresReady": false,
+    "hero_design_unchanged": true,
+    "H03_pilot": "preserved_unrun",
+    "receiver_adoption": "not asserted"
+  }
+}

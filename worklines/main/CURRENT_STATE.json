@@ -1,8 +1,8 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "session_closed_shared_runtime_and_requested_apk_delivered",
-  "resume_date_local": "2026-10-21",
+  "status": "hc_evidence_accounting_completed_shared_engineering_continues",
+  "resume_date_local": "2026-10-28",
   "timezone": "Asia/Shanghai",
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
   "user_authorization": {
@@ -54,8 +54,8 @@
   },
   "worklines": {
     "main": {
-      "next": "NEXT-MAIN-R38-PATH-DIFFERENTIAL-AND-CHECKPOINT",
-      "status": "evidence_infrastructure_done_next_path_checkpoint"
+      "next": "MAIN-STD-NP32-20261028",
+      "status": "evidence_accounting_done_ordinary_np32_next"
     },
     "standard": {
       "next": "STD-RNG-01",
@@ -170,28 +170,25 @@
     "engine_PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/9",
     "game_main_unchanged": true,
     "other_workline_paths_untouched": true,
-    "publication_parent": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561",
+    "publication_parent": "4af533233920a6ebbc818c466365673aa21a18ee",
     "preserved_concurrent_collaboration_commit": "a6e5fc4e0e720d683a7aa8cd4e5a7c63748a9561"
   },
   "verification": {
-    "record_and_candidate_source_equivalence_checked": true,
-    "document_and_pointer_checks": "VALIDATION.json",
-    "new_rule_confirmations": 0,
-    "new_game_code_changes": 4,
-    "new_engine_tests": 31,
-    "runtime_acceptance": "bounded hourglass/legacy component evidence61/560 only; full mode/terminal/client not verified",
-    "implementation": "PR8/9 retained; PR10 bounded hourglass on PR9",
-    "old_evidence": "inherited original scope only; not rerun",
-    "received_other_line_confirmed_designs": 0,
-    "shared_rule_confirmation_from_mode_returns": 0,
-    "current_phase_candidate_count": 0,
-    "current_phase_engine_runs": 9,
-    "r38_source_review": "completed_V2_scoped",
-    "r38_implementation": "three bounded repairs, not complete mode",
-    "current_phase_natural_replay_runs": 0,
-    "component_regressions_passed": 560,
-    "main_gameplay_adjudication_unchanged": true,
-    "current_phase_design_only": false
+    "stage": "HC_EVIDENCE_ACCOUNTING_20261028",
+    "method": "existing owner evidence offline audit",
+    "source_replays_reconciled": 12,
+    "source_requests_reconciled": 110,
+    "authority_checkpoints_reconciled": 210,
+    "specifications_accounted": 64,
+    "new_game_code_changes": 0,
+    "new_engine_runs": 0,
+    "offline_request_checks": 1404,
+    "explicit_bounded_spec_assertions": 61,
+    "failures": 0,
+    "independent_QA": false,
+    "formal_specs_accepted": 0,
+    "all_gameplay_adjudication_unchanged": true,
+    "details": "HC_EVIDENCE_VALIDATION.json"
   },
   "scoring": {
     "frozen": true,
@@ -205,16 +202,20 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
-    "action": "核最新HEAD、主线session_closure和三线最新回传，先把已执行的原12序列/110请求及100+100观察点逐项映射到半混沌原64规格和210观察义务，区分已证、部分、缺刺激和独立QA。",
-    "secondary": [
-      "随后补普通NP32真实房间限定准入与AS/AP/ES完整自然前缀。",
-      "继续更广公开合法走法/威胁/终局查询及雨夜后期、其他英雄/子行动/空间安全覆盖。"
+    "id": "MAIN-STD-NP32-20261028",
+    "action": "在固定PR14源上读取普通NP32/AS/AP/ES及H21原合同与当前守卫；实现真实普通房间、完整32棋来源和限定准入，随后按原自然前缀采集并复验；不能把半混乱准入或AS组件证据外推为普通准入。",
+    "source_contracts": [
+      "worklines/standard/specs/NP_H02_M04_H21_AS_AP_ES_CONTRACT_20261020.json",
+      "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+      "worklines/standard/specs/NP_MAIN_IMPLEMENTATION_READBACK_EXECUTION_GATE_20261026.json",
+      "worklines/standard/specs/H21_RNG_REPLAY_CONTRACT_20261024.json"
     ],
-    "separate_routes": [
-      "H03评分试点保留UNRUN，评分候选未正式采用；SCORE-DESIGN-PREDICTION-GAP-20261026仍需独立推进。",
-      "新风V3.1完整候选已发布；本次仅读其交接元数据，完整候选与旧稿对照、接收/采用核验尚待执行。"
-    ]
+    "parallel_backlog_not_auto_completed": [
+      "HC exact-stage player projections/client delivery and original missing stimuli; see HC_EVIDENCE_REPORT.md.",
+      "Broader legal-move/threat/terminal queries, late QinLong rain, other heroes/child actions/spaces.",
+      "H03 source-bound pilot stays UNRUN; wind V3.1/design-prediction gap remains a separate route."
+    ],
+    "authorization": "Inherit existing main shared engineering authorization; no new gameplay, product release, merge, score adoption or NET resume."
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -228,10 +229,10 @@
   "resume_after_quota_is_new_candidate_approval": false,
   "decision_index": "PENDING_DECISION.json",
   "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
-  "publication_parent_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
+  "publication_parent_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
   "unread_concurrent_returns": [],
-  "latest_return_observation_commit": "5320a273afb6d549b0517cff8c19bfebebb1efdd",
-  "current_phase": "MAIN_SESSION_CLOSED_20261027_EVIDENCE_ACCOUNTING_NEXT",
+  "latest_return_observation_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
+  "current_phase": "MAIN_HC_EVIDENCE_ACCOUNTED_20261028_NP32_NEXT",
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -2199,13 +2200,57 @@
     "receiver_adoption": "unknown"
   },
   "session_closure": {
-    "id": "MAIN-SESSION-CLOSEOUT-20261027",
-    "date_local": "2026-10-27",
-    "status": "current_dialogue_closed_project_continues",
-    "entry": "worklines/main/SESSION_CLOSEOUT.json",
-    "next_action": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "id": "MAIN-STAGE-CHECKPOINT-20261028-HC-ACCOUNTING",
+    "date_local": "2026-10-28",
+    "status": "stage_completed_project_continues_current_dialogue_not_closed",
+    "entry": "worklines/main/SESSION_CLOSEOUT.json#continuation_20261028",
+    "previous_dialogue_closure_id": "MAIN-SESSION-CLOSEOUT-20261027",
+    "next_action": "MAIN-STD-NP32-20261028",
     "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
     "apk_record": "worklines/main/APK_BUILD_RECORD.json",
-    "resume_prompt": "继续《乐子象棋》主线。读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt ，核对最新HEAD，按CURRENT_STATE.json中的session_closure及SESSION_CLOSEOUT.json接续。从MAIN-HC-EVIDENCE-ACCOUNTING-20261027开始，继承已有授权与确认，保护三线及英雄设计并发成果。PR14已有710项相关检查和原12序列110请求实测，先逐项核原64/210证据义务；不能把前缀执行当全面验收。已交付570fdf1代码对应的安卓调试APK，不重复打包；真机/蓝牙验证仍未知。评分冻结、NET暂停，阶段完成增量写回并复读。"
+    "resume_prompt": "继续《乐子象棋》主线。先核最新HEAD并读CURRENT_STATE.json#evidence_accounting、SESSION_CLOSEOUT.json#continuation_20261028和HC_EVIDENCE_REPORT.md。MAIN-HC-EVIDENCE-ACCOUNTING-20261027已完成离线逐项核算：64规格/210权威快照已对应，45项既有请求事实核对、11项缺刺激、7项语义或证据缺口、1项无自然正例；正式验收仍0。42项请求返回视图比较不等于56个精确时点视图槽位。下一MAIN-STD-NP32-20261028，先读所列普通原合同再接续共享工程。固定引擎570fdf1/PR14草稿，710为原相关回归，本阶段无新引擎运行。原APK已交付不重复打包。保护三线、UI、山/风与H03，评分冻结、NET暂停，阶段完成增量写回并复读。"
+  },
+  "evidence_accounting": {
+    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
+    "completed_on_local": "2026-10-28",
+    "status": "ACCOUNTING_COMPLETED_FORMAL_ACCEPTANCE_AND_MISSING_EVIDENCE_OPEN",
+    "read_handoff_head": "4af533233920a6ebbc818c466365673aa21a18ee",
+    "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "report": "worklines/main/HC_EVIDENCE_REPORT.md",
+    "accounting": "worklines/main/HC_EVIDENCE_ACCOUNTING.json",
+    "specifications": "worklines/main/HC_EVIDENCE_64.json",
+    "observations": "worklines/main/HC_EVIDENCE_210.json",
+    "pairs": "worklines/main/HC_EVIDENCE_PAIRS.json",
+    "audit_program": "worklines/main/audits/hc_evidence_accounting.py",
+    "validation": "worklines/main/HC_EVIDENCE_VALIDATION.json",
+    "publication_verification": "worklines/main/HC_EVIDENCE_PUBLICATION_VERIFICATION.json",
+    "authority_raw_sha256": "ccea6579108af5f2547d8b4f8bc1179239967784411de135028e85277cc59259",
+    "original_replays_reconciled": 12,
+    "original_requests_reconciled": 110,
+    "authority_snapshots_mapped": 210,
+    "original_specs_accounted": 64,
+    "bounded_trace_rows": 45,
+    "partial_missing_stimulus_rows": 11,
+    "partial_semantic_or_evidence_rows": 7,
+    "no_natural_positive_rows": 1,
+    "formal_original_specs_accepted": 0,
+    "fully_discharged_observation_rows": 0,
+    "offline_request_checks": 1404,
+    "explicit_bounded_assertions": 61,
+    "failures": 0,
+    "returned_view_comparisons_rechecked": 42,
+    "exact_stage_player_view_slots_discharged": 0,
+    "new_engine_runs": 0,
+    "new_gameplay_confirmations": 0,
+    "independent_QA": false,
+    "receiver_adoption": "not asserted; each source line records its own actual detailed QA",
+    "next_action": "MAIN-STD-NP32-20261028"
+  },
+  "current_phase_authorization": {
+    "date_local": "2026-10-28",
+    "scope": "Existing main continuation; offline accounting of original source/owner evidence and main-only incremental writeback. No new gameplay confirmation.",
+    "new_engine_runs_this_phase": 0,
+    "new_gameplay_confirmations": 0,
+    "user_instruction_summary": "继续《乐子象棋》主线。读取固定入口，核对最新HEAD，按CURRENT_STATE.json中的session_closure接续，从MAIN-HC-EVIDENCE-ACCOUNTING-20261027开始。继承已有授权与确认，保护三线及英雄设计成果；评分冻结、NET暂停，阶段完成增量写回并复读核对。"
   }
 }
