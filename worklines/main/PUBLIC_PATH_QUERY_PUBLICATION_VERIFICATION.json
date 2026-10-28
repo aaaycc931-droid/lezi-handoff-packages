@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.public_path_query.publication_verification.v1",
   "date_local": "2026-10-28",
-  "status": "ENGINE_REMOTE_READBACK_VERIFIED_MAIN_PUBLICATION_PENDING",
+  "status": "ENGINE_AND_MAIN_ACTUAL_REMOTE_READBACK_VERIFIED",
   "handoff_base_commit": "72dc9b59b961529c60200e37e0538a80d3312e3d",
   "engine": {
     "engine_commit": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
@@ -115,8 +115,194 @@
     "merged": false,
     "force": false
   },
-  "main_actual_readback_files": 0,
+  "main_actual_readback_files": 17,
   "force": false,
   "receiver_adoption_claimed": false,
-  "raw_authority_bodies_published": false
+  "raw_authority_bodies_published": false,
+  "main": {
+    "commit": "58879834dd0d0ff11f81b74abac659fd3ab71efe",
+    "tree": "38e0fb37ebb8361290269b34c0d555fef2b2cddb",
+    "base": "72dc9b59b961529c60200e37e0538a80d3312e3d",
+    "files": [
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "expected_sha": "43eb7e6466d9af904353ce99148757ffd1d86dd5",
+        "actual_sha": "43eb7e6466d9af904353ce99148757ffd1d86dd5",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "expected_sha": "875922bbf62cc7fe0d018f39702070a0fffe09ef",
+        "actual_sha": "875922bbf62cc7fe0d018f39702070a0fffe09ef",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "expected_sha": "77066c152a864430f736b83163e1d3a7f495e0de",
+        "actual_sha": "77066c152a864430f736b83163e1d3a7f495e0de",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "expected_sha": "d0fdcc6c762b53857d1512237756ca247f0776fb",
+        "actual_sha": "d0fdcc6c762b53857d1512237756ca247f0776fb",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "expected_sha": "b0f793dd5a43bcde5e396e793c9ab88c8ebbc3c6",
+        "actual_sha": "b0f793dd5a43bcde5e396e793c9ab88c8ebbc3c6",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "expected_sha": "d0ec9ac0c700336769a3d1fb6bdfc2b8b91facd5",
+        "actual_sha": "d0ec9ac0c700336769a3d1fb6bdfc2b8b91facd5",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "expected_sha": "c9f1fce5140ecc1be1dcff4d2cfcb8c6f3c5ef3b",
+        "actual_sha": "c9f1fce5140ecc1be1dcff4d2cfcb8c6f3c5ef3b",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "expected_sha": "7d17c818573c8004f1fb2774b3cf170a5aee153a",
+        "actual_sha": "7d17c818573c8004f1fb2774b3cf170a5aee153a",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "expected_sha": "9e5d94a890f9c58093e0038a3dc969c939889296",
+        "actual_sha": "9e5d94a890f9c58093e0038a3dc969c939889296",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "expected_sha": "c4ebcabd35f532443cfb0fc5da187ca3245b21e6",
+        "actual_sha": "c4ebcabd35f532443cfb0fc5da187ca3245b21e6",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/PUBLIC_PATH_QUERY_PROGRESS.json",
+        "expected_sha": "241a2656812dba209eabd8def2830c86417dbe47",
+        "actual_sha": "241a2656812dba209eabd8def2830c86417dbe47",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_PUBLIC_PATH_QUERY_REPORT.md",
+        "expected_sha": "3e148810af11cd4f2e9abb78f6b51090154390dd",
+        "actual_sha": "3e148810af11cd4f2e9abb78f6b51090154390dd",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/PUBLIC_PATH_QUERY_PUBLICATION_VERIFICATION.json",
+        "expected_sha": "a329d9ecd7d00d92aa2e37c8f57aeee125fadc2e",
+        "actual_sha": "a329d9ecd7d00d92aa2e37c8f57aeee125fadc2e",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/standard/TASK_FROM_MAIN.json",
+        "expected_sha": "e8e0de6c452691804a4bae63d252101e6b13f2dd",
+        "actual_sha": "e8e0de6c452691804a4bae63d252101e6b13f2dd",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json",
+        "expected_sha": "f1d9f3d049e28b9bacf891f14f77b339c9f81d74",
+        "actual_sha": "f1d9f3d049e28b9bacf891f14f77b339c9f81d74",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/chaos/TASK_FROM_MAIN.json",
+        "expected_sha": "39a858ac267dba6fc4efc752315bfe164b7eabc8",
+        "actual_sha": "39a858ac267dba6fc4efc752315bfe164b7eabc8",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/PUBLIC_PATH_QUERY_VALIDATION.json",
+        "expected_sha": "1052fb6757b8d95c897d8d5ef9a9cea3dda58145",
+        "actual_sha": "1052fb6757b8d95c897d8d5ef9a9cea3dda58145",
+        "bytes_equal": true,
+        "sha_equal": true
+      }
+    ],
+    "readback_files": 17,
+    "unchanged_existing_blobs": 739,
+    "altered_outside_selected_paths": [],
+    "source_line_working_drafts_receipts_rules_and_hero_objects_unchanged": true,
+    "three_TASK_FROM_MAIN_main_owned_input_append_only": true,
+    "force": false
+  },
+  "verification_scope": "The17 main rows verify immutable stage commit58879834dd0d0ff11f81b74abac659fd3ab71efe. This additive receipt records actual completed readbacks; it does not pre-claim verification of its own future commit.",
+  "main_tree_build": {
+    "strategy": "Five smaller tree-object increments, one ordinary stage commit and one guarded branch update",
+    "successful_tree_objects": [
+      {
+        "batch": 1,
+        "tree": "3efa6f10cbfc0bf7e138fe9af79ecfa5e8fa3a86",
+        "paths": [
+          "worklines/main/CURRENT_STATE.json"
+        ]
+      },
+      {
+        "batch": 2,
+        "tree": "91673dc92f476fc689e1e1f82bcdf75f43131394",
+        "paths": [
+          "CURRENT_HANDOFF.json",
+          "worklines/main/START_HERE.txt",
+          "worklines/main/MODE_DISPATCH.json",
+          "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+          "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+          "worklines/main/PROJECT_WORK_AGREEMENT.md"
+        ]
+      },
+      {
+        "batch": 3,
+        "tree": "3b6d6beafc4348a98b33bb9be121a4ade14623f3",
+        "paths": [
+          "worklines/main/READ_RECEIPTS.json"
+        ]
+      },
+      {
+        "batch": 4,
+        "tree": "77dd39b6317af06016b9e6d30ad38446c107af82",
+        "paths": [
+          "worklines/main/RETURN_TO_MAIN.json"
+        ]
+      },
+      {
+        "batch": 5,
+        "tree": "38e0fb37ebb8361290269b34c0d555fef2b2cddb",
+        "paths": [
+          "worklines/main/SESSION_CLOSEOUT.json",
+          "worklines/main/PUBLIC_PATH_QUERY_PROGRESS.json",
+          "worklines/main/MAIN_PUBLIC_PATH_QUERY_REPORT.md",
+          "worklines/main/PUBLIC_PATH_QUERY_PUBLICATION_VERIFICATION.json",
+          "worklines/standard/TASK_FROM_MAIN.json",
+          "worklines/half_chaos/TASK_FROM_MAIN.json",
+          "worklines/chaos/TASK_FROM_MAIN.json",
+          "worklines/main/PUBLIC_PATH_QUERY_VALIDATION.json"
+        ]
+      }
+    ],
+    "initial_combined_tree_request": "API422 tree input timeout; no stage commit/ref update made from the failed result"
+  }
 }
