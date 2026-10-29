@@ -3139,3 +3139,8 @@ PD05-A/B与PD06-A/B两组分别7条公开主行动，声明及静态逐步走棋
 ### 8.78 半混乱r53精确阶段服务器投影与完整客户端证据缺口（2026-10-29）
 实际执行原NEXT-HC-EXACT-STAGE-56-CLIENT-EVIDENCE-TRIAGE。以HC51原56槽位和主线PR19 RESULTS逐项核对：PD05/PD06每组28，红/黑28/28，main:closed和normal-end各28，左/右精确checkpoint与时序0错配。主线报告原12回放110请求、200精确棋局时点、200公共JSON/400玩家JSON，原56槽位的112底层玩家JSON和56对公开可见字段窄ID映射后相同；本线未独立打开owner-only原始轨迹、未运行引擎或独立QA。服务器游戏态是下一begin前原事件时点，但房间消息和updatedAt来自实际请求入口，非中途已提交房间包；故完整56验收与真实客户端送达仍0。
 本线新增HC53_EXACT_STAGE56_CLIENT_CHANNEL_TRIAGE_20261029.json全56项映射、源证据摘要及8类未完成输出：真正房间/消息外壳、成功动作返回、原四次IN_CHECK拒绝的客户端错误、重传和同ID冲突、UI按钮与时钟显示及独立隐私QA。原PD-S35/DS-S12缺自然刺激不由不同请求替代。PR18普通R8只接收共享时钟/幂等边界，不推断半混乱自然案例。READ_RECEIPTS已登记本线实际接收/限定采用，RETURN_TO_MAIN已提出主线输出通道跟进；后续本线只做source-only客户端真实调用链合同审查。共享游戏代码/测试/NET/UI/评分/英雄及其他工作线均不动。
+
+
+### 8.79 半混乱r54｜FM15–17/OG05–06真实房间输出与客户端源码调用链（2026-10-29）
+本线依最新任务审查固定PR19源码。逐项定位实际submitRemoteMove/submitRemoteHeroAbility返回与withActionHistory消息、publicRemoteRoom/serializePublicRemoteRoom/playerRoomView验证、蓝牙房间host/guest视图、web/app.ts操作/快照/错误/渲染以及Android WebView到RFCOMM消息调用。静态断言12/12，详细12项来源、级别和5项主线请求见HC54_ROOM_CLIENT_OUTPUT_CALLER_AUDIT_20261029.json。
+关键边界：BluetoothHostRoom构造只接受jieqi，half_chaos门禁未开；host处理move/hero_ability取返回room、丢失duplicate标记，现有BluetoothRoomViews没有独立duplicate回执；web端访客错误payload仅{message}、未返回RuleError.code；访客pendingAction由任意已收到的snapshot或error清除，snapshot ID来自updatedAt/phase而非确定绑定原actionId。上述是来源级证据/未验风险，未运行或复现实际故障。原110请求中4次预期IN_CHECK拒绝与原FM15/OG05对应，但不能视为客户端已经看到错误；原PD-S35/DS-S12真实重传/同ID冲突未解决。阶段投影56对有PR19服务器证据，完整原56验收仍0；客户端实际半混乱送达0，独立QA未进行。保留半混乱/混乱/普通各线成果、主线共享源码、产品门禁、山风/UI和NET暂停。下一个本线独立文档任务只按110原请求与FM15/16/17组织输出oracle，真实新运行及客户端证据由主线MAIN-ROOM-COMMITTED-OUTPUT-CHANNEL负责。
