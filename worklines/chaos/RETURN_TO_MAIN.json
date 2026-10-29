@@ -221,5 +221,142 @@
     "public_projection_tests_run": 0,
     "main_receiver_receipt": "NOT_CLAIMED",
     "independent_scope": "WAIT_MAIN_RUNTIME"
-  }
+  },
+  "latest_receiver_phase": {
+    "id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
+    "date_local": "2026-10-29",
+    "new_increments": [
+      "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+      "MAIN-PUBLIC-PATH-COVERAGE-20261028"
+    ],
+    "read_base_head": "bcc68ed3498c550570ea833944389adff7dd5473",
+    "task_blob_sha": "2bf9715ddd2312524fec12c3abb2db9a21be8144",
+    "source_engine_commits": {
+      "PR14": "570fdf189867ec93355f0eca66362deb72cca53c",
+      "PR16": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+      "PR17": "1bda5bc9f7840d0d601a85fb0faeda842753a199"
+    },
+    "source_test_blobs": {
+      "H15": "70692bf6f4db1cd2cfcd0fe0376ad7c3c02eab7c3",
+      "H11A": "486ccf8406e10fa793ff0869968d28adf343d27f"
+    },
+    "actual_receiver_read": true,
+    "actual_receiver_adopted": "BOUNDARIES_AND_EVIDENCE_RECONCILIATION_ONLY",
+    "case_evidence_map": [
+      {
+        "id": "PR01_A_SAME_PUBLIC_DIFFERENT_SECRET",
+        "classification": "BOUNDED_REAL_ROOM_PAIR",
+        "evidence": "H15-01/02 seed476 recruit0/1, red1 death vs live, public/red/black room views match; websocket/device not exhaustive"
+      },
+      {
+        "id": "PR02_B_SAME_PUBLIC_DIFFERENT_SECRET",
+        "classification": "BOUNDED_REAL_ROOM_PAIR",
+        "evidence": "H15-06 seed92 recruit1/0, red1-black1-skipA-red2 death vs live, both views match"
+      },
+      {
+        "id": "PR03_A_ON_SHUFFLE_FAILED_PERSISTS",
+        "classification": "BOUNDED_REAL_ROOM",
+        "evidence": "H15-03 actual A shuffle fails sticky, 29 RNG draws, used=true no reroll"
+      },
+      {
+        "id": "PR04_B_ON_SHUFFLE_FAILED_PERSISTS",
+        "classification": "BOUNDED_REAL_ROOM",
+        "evidence": "H15-06 actual B shuffle after trainee capture, failed stays true"
+      },
+      {
+        "id": "PR05_A_SKIP_THEN_B_FAILED_PERSISTS",
+        "classification": "PARTIAL",
+        "evidence": "H15-06 has real A skip then B, but no exact seed476 failed A->red2->B full cross-fixture"
+      },
+      {
+        "id": "PR06_A_SOURCE_CLOCK_AT_DEADLINE",
+        "classification": "BOUNDED_SEPARATE_CLOCK_REAL_ROOM",
+        "evidence": "H11A01-09 actual room inherited deadline 10000..70000, 69999 accept, 70000 decline, duplicate/pause and45s; separate qin_long H11 not combined H15 failure"
+      },
+      {
+        "id": "PR07_A_NOSTART_NONCONSUMPTION",
+        "classification": "BOUNDED_REAL_ROOM",
+        "evidence": "H15-05 opening no start, H11 A retains unused; H15-07 separate later start"
+      },
+      {
+        "id": "PR08_ACTIVE_REBIND_DISTINCT",
+        "classification": "BOUNDED_REAL_ROOM",
+        "evidence": "H15-04 live A source rebind preserves progress at reset and only increments on real next red begin"
+      },
+      {
+        "id": "PR09_NO_FAKE_LEAKED_FIELDS",
+        "classification": "PARTIAL_CHANNEL_PROJECTIONS",
+        "evidence": "H15-02/06 public/red/black view comparison; H15-11 web hero-control component, but full websocket/device/other UI not verified"
+      },
+      {
+        "id": "PR10_DUPLICATE_ACTION_IDEMPOTENCE",
+        "classification": "PARTIAL",
+        "evidence": "H15-08 duplicate shuffle and H11A07 duplicate black1; all capture/skip/B retransmission paths not complete"
+      },
+      {
+        "id": "PR11_A_B_BRANCH_EXCLUSIVE",
+        "classification": "PARTIAL",
+        "evidence": "H11A03/04/05 A decline leaves B; H15-06 uses B; not full mixed-branch multi-request matrix"
+      },
+      {
+        "id": "PR12_ORDINARY_REVEAL_NOT_LEAK",
+        "classification": "BOUNDED_REAL_ROOM",
+        "evidence": "H15-01 true red cannon in captured, H15-02/06 room view comparison; ordinary reveal preserved"
+      },
+      {
+        "id": "PR13_OLD_DRAFT_EXPECTED_NONCOMPLIANCE",
+        "classification": "SUPERSEDED_BOUNDED_SOURCE_FIX",
+        "evidence": "PR13 original reroll bug fixed by PR14 hero-progress sticky failure; H15-09 no replacement RNG"
+      }
+    ],
+    "H06_real_room_evidence": {
+      "prestart": "H15-12 real pre-start rewind preserves unused; second valid training begins",
+      "continuous": "H15-13 real live rewind restores prior bound original body and progress",
+      "early_death": "H15-14 capture then rewind returns public body while private failure and used remain",
+      "exclusions": "three representative routes do not cover every control/space/graduation/landing/empty-pool branch"
+    },
+    "public_query": {
+      "PR16": "52 related test files 782 reported pass, source guard only revealed ground H04/H03 M01/M04 or ordinary NP32 H02/H21; no covered original-jieqi source qualification",
+      "PR17": "53 related test files 821 reported pass; legal/illegal/uncovered public-only API; 18 synthetic sources 1620 landing combos, 5 old true hidden examples explicitly uncovered",
+      "new_gameplay_approval": false,
+      "downstream_consumers_migrated": false,
+      "covered_reveal_defection_and_true_death_qualified": false
+    },
+    "validation": {
+      "own_engine_executions": 0,
+      "own_independent_QA": false,
+      "source_reported_H15_named_cases": 14,
+      "source_reported_H15_invalid_RNG_variants": 5,
+      "source_reported_PR14_related_passes": 710,
+      "original_CH07_total": 13,
+      "original_CH07_formal_cases_accepted": 0,
+      "original_chaos_natural_complete_games": 0,
+      "source_code_and_report_readback": true,
+      "limitation": "Prior CH07 matrix remains historical UNRUN_MAIN_RUNTIME as-of 2026-10-26; this newer receiver evidence is added separately, not retroactive blanket PASS."
+    },
+    "open_main_owned": [
+      "Original jieqi 30 global covered identities: real covered mover/path/endpoint reveal/defection and death-record public authority",
+      "H15 graduation, live control/side changes, empty pool, space and special effects and H06/H11 cross-branches",
+      "Real websocket/client/repeated snapshot/terminal consumers and PR17 three-state uncovered handling",
+      "Full original CH07 formal privacy acceptance, natural complete games, product gate, independent QA"
+    ],
+    "next_action": "MAIN_COVERED_SOURCE_AND_CONSUMER_PROJECTION_EVIDENCE_REQUIRED; CHAOS_REOPEN_ONLY_ON_CONCRETE_MODE_SPECIFIC_NEW_EVIDENCE_OR_FAILURE",
+    "preserved": {
+      "other_modes": true,
+      "hero_design": true,
+      "scoring": "frozen",
+      "NET": "paused",
+      "shared_engine_modified": false,
+      "gameplay_delta": 0,
+      "main_receipt": "NOT_CLAIMED"
+    }
+  },
+  "latest_phase_status": "NEW_MAIN_EVIDENCE_RECEIVED_AND_CH07_BOUNDED_RECONCILED_FULL_MODE_UNACCEPTED",
+  "latest_phase_changed_paths": [
+    "worklines/chaos/READ_RECEIPTS.json",
+    "worklines/chaos/RETURN_TO_MAIN.json",
+    "worklines/chaos/CURRENT_STATE.json"
+  ],
+  "latest_phase_external_handoff_receiver": "MAIN_HAS_NOT_YET_CLAIMED_RECEIPT",
+  "latest_phase_preserves_original_CH07_matrix": true
 }
