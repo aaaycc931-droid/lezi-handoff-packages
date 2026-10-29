@@ -9,7 +9,7 @@
   "received_dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
   "received_task_id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "main_evidence_receiver_review_completed_bounded_CH07_reconciliation",
+  "state": "pr18_pr19_received_output_channel_source_gap_returned",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
@@ -23,10 +23,11 @@
     "CH-05: source-equivalent seed92 30 identity/tape, red H15 cannon covered-08 recruitment seed1, legal-geometry red1-black1-red2 rook capture before H11-B constructed; H11-A still unproven and all real execution UNRUN",
     "CH-06 seed476: own-public-side hidden trainee cannon covered-25 can be captured by red covered-15 rook on red1; black1 pawn and subsequent H11-A or A skip -> B static candidates; engine/clock/privacy tests UNRUN",
     "CH-07: two pairwise independent legal recruitment-seed public-identical/private-contrast fixtures; 18 full-GitHub-fixture pure reference checks passed; 13 runtime negative-control cases ready; main-only runtime/projection fixes pending",
-    "2026-10-29 bounded actual main PR14/PR16/PR17 source/test evidence read + CH07 13-case account; no independent engine test or full acceptance"
+    "2026-10-29 bounded actual main PR14/PR16/PR17 source/test evidence read + CH07 13-case account; no independent engine test or full acceptance",
+    "2026-10-29 actual scoped PR18/19 read and specific original-jieqi H15 room/transport source chain audit; main source/action/view gaps returned; no engine run"
   ],
-  "next_action": "MAIN_COVERED_SOURCE_AND_CONSUMER_PROJECTION_EVIDENCE_REQUIRED; CHAOS_REOPEN_ONLY_ON_CONCRETE_MODE_SPECIFIC_NEW_EVIDENCE_OR_FAILURE",
-  "next_action_status": "OLD_WAIT_MAIN_RUNTIME_REPLACED_BY_ACTUAL_EVIDENCE_READ; NEW_MODE_SOURCE_AND_CONSUMER_GAPS_MAIN_OWNED",
+  "next_action": "WAIT_MAIN_ORIGINAL_JIEQI_COMMITTED_OUTPUT_AND_COVERED_SOURCE_PROOFS; CHAOS_REOPEN_ON_SOURCE_MATCHING_RUNTIME_OR_CLIENT_RESULT",
+  "next_action_status": "NO_NEW_READY_STANDALONE_ENGINE_TASK_OR_REPEAT_STATIC_CH08; SOURCE_CHAIN_AUDIT_AND_MAIN_RETURN_COMPLETE",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -41,7 +42,7 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "CH-RECEIVE-MAIN-RUNTIME-20261027__PR16_PR17_INCREMENTS",
+  "last_completed_task": "CH-MAIN-PR18-PR19-OUTPUT-CHANNEL-SCOPE-20261029",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
@@ -98,6 +99,15 @@
       "original_chaos_natural_complete_games": 0,
       "source_code_and_report_readback": true,
       "limitation": "Prior CH07 matrix remains historical UNRUN_MAIN_RUNTIME as-of 2026-10-26; this newer receiver evidence is added separately, not retroactive blanket PASS."
+    },
+    "pr18_pr19_receiver_20261029": {
+      "engine_runs": 0,
+      "PR18_external_tests": 848,
+      "PR19_external_tests": 873,
+      "source_only_review": true,
+      "complete_ch07_acceptance": 0,
+      "real_client_delivery": "UNRUN",
+      "independentQA": false
     }
   },
   "session_closure": {
@@ -242,5 +252,57 @@
     ],
     "main_receiver_not_asserted": true
   },
-  "previous_wait_main_status_superseded_by": "main PR14 actual room evidence + PR16/PR17 additive public-query material received, 2026-10-29"
+  "previous_wait_main_status_superseded_by": "main PR14 actual room evidence + PR16/PR17 additive public-query material received, 2026-10-29",
+  "pr18_pr19_receiver_20261029": {
+    "source_base_head": "eead074430e6049486be23a20408c9bba314b69e",
+    "latest_resume_head": "f70c570090f08c37a74b787c72db79c0f7986942",
+    "actual_read": true,
+    "adoption": "ONLY_SCOPED_CROSS_MODE_INFRASTRUCTURE_AND_JIEQI_SOURCE_OUTPUT_GAP_ANALYSIS",
+    "source_engine": {
+      "PR18": "099eca44dbaab39bdedb02a9986f7d54e9761121",
+      "PR19": "760caf57d454af0db3be92d5b52ffc3cc9078d06"
+    },
+    "upstream_evidence": {
+      "PR18": {
+        "source": "standard ordinary full32 H02/H21/M04 only",
+        "six_declared_variants": 6,
+        "accepted_mains": 92,
+        "duplicates": 16,
+        "rejections": 18,
+        "external_related_passes": 848,
+        "chaos_engine_runs_established": 0,
+        "adopted": "time/idempotence test design only"
+      },
+      "PR19": {
+        "source": "half_chaos original12/110 only",
+        "server_stage_checkpoints": 200,
+        "server_pair_view_comparisons": 56,
+        "full56_accepted": 0,
+        "client_deliveries": 0,
+        "external_related_passes": 873,
+        "chaos_engine_runs_established": 0,
+        "adopted": "observer isolation and exact game vs committed-room distinction only"
+      }
+    },
+    "source_audit": {
+      "source_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+      "input_and_action": "src/remote-room.ts:1252 submitRemoteMove / 1539 submitRemoteHeroAbility; 293 withActionHistory and legal captured reveal in actionHistoryText",
+      "public_view": "src/remote-room.ts:1470 publicRemoteRoom / 1494 serializePublicRemoteRoom use src/game.ts:1140 publicStateSnapshot(GameState); H15 SecretState not used in public serializer",
+      "player_view": "src/remote-room.ts:1498 playerRoomView includes src/hero-actions.ts:347 ownerHeroSecrets, which returns wind/insights but not H15 bound trainee/progress/failure",
+      "public_training_message": "src/remote-room.ts:1559-1562 and1578-1584 public share hero selected piece type/used/successful start, not bound piece ID",
+      "bluetooth_transport": "src/bluetooth-host-room.ts views -> playerRoomView(host,guest), handle accepts remote action; web/app.ts:1252-1261 snapshots guest through createBluetoothSnapshot/encodeBluetoothEnvelope (src/bluetooth-protocol.ts), guest via applyBluetoothView",
+      "client_local_state": "web/app.ts:985 applyBluetoothView clears local gameSecret; :3843 H15 renderer reads public heroRuntime trainingType/used",
+      "observer": "src/mechanism-observer.ts:43-57 projectCheckpoint research-only, not product packet; actual committed room outer message/time constructed at request end",
+      "bounded_conclusion": "Inspected source path omits H15 bound/progress/live-failed secrets but does NOT prove actual Bluetooth/wire/client delivery or all error/duplicate cases."
+    },
+    "open_main_tests": [
+      "CH-OUT01",
+      "CH-OUT02",
+      "CH-OUT03",
+      "CH-OUT04"
+    ],
+    "full_CH07_cases_accepted": 0,
+    "own_engine_runs": 0,
+    "main_receiver_not_claimed": true
+  }
 }
