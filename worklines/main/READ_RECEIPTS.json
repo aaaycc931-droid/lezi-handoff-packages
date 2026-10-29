@@ -3598,5 +3598,572 @@
     },
     "other_workline_receipts_written": false,
     "new_other_line_adoption_claimed": false
+  },
+  "committed_output_channel_20261029": {
+    "source_handoff_read": "825dcb42aab686096e3a7111b9e4ac7c72f1d9b9",
+    "publication_base": "41b0934be67a09fe39ed14253c1d82d34381d4f4",
+    "actual_source_reads": {
+      "schema": "lezi.main.committed_output.source_audit.v1",
+      "source_handoff_commit": "825dcb42aab686096e3a7111b9e4ac7c72f1d9b9",
+      "engine_parent": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+      "actual_receiver_source_scopes": [
+        {
+          "workline": "half_chaos",
+          "path": "worklines/half_chaos/HC54_ROOM_CLIENT_OUTPUT_CALLER_AUDIT_20261029.json",
+          "git_blob_sha": "f4fe6bec578578ec800e76fbecd9636831a4c119",
+          "main_read_scope": "complete findings/owner_requests/acceptance boundary; selected r53/r54 return objects; source-only summary, no independent device QA"
+        },
+        {
+          "workline": "chaos",
+          "path": "worklines/chaos/CH_OUTPUT_CHANNEL_TIMEOUT_REJECTION_TRIAGE_20261029.json",
+          "git_blob_sha": "ed35f009df4b0345aab58e5a22a4899ebe5b0a3b",
+          "main_read_scope": "complete source-qualified seed476 H15/H11 urgent probe and private-pair oracle; adopted as reproduction plan"
+        },
+        {
+          "workline": "standard",
+          "path": "worklines/standard/reviews/STD_PR18_R8_WINDOW_RECEIVER_REVIEW_20261029.md",
+          "git_blob_sha": "6e72102fb61c1fd385cda10bb856c85d1072f8ce",
+          "main_read_scope": "complete PR18 receiver review, selected current receipt objects; separate observability map read only as return summary, full map not adopted"
+        }
+      ],
+      "adopted_technical_inputs": [
+        "HC54 actual committed output, four IN_CHECK, dedup ACK and mode-gate limits",
+        "CH urgent A expiry/rejection stale-peer hypothesis and original seed476 private pair",
+        "STD bounded PR18 receipt and internal H02 carrier command route caution; full observability map not newly adopted"
+      ],
+      "confirmed_defect": {
+        "source": "CH-CHANNEL-01-A-EXPIRE-REJECT-NO-PUSH",
+        "environment": "actual BluetoothHostRoom plus actual production WebView channel functions; recording native/renderer endpoints",
+        "original_seed": 476,
+        "recruitment_seeds": [
+          0,
+          1
+        ],
+        "actual_inherited_A_deadline": 65000,
+        "deadline_provenance": "red1 executed at5000 starts black clock, +60000; black1 at10000 retains it. Do not copy separate H11 example70000.",
+        "parent_at_or_after_deadline": "authority red/noA, error-only output, applied view still black/A",
+        "current": "same authority/events/RNG, error message then current sanitized snapshot; both recording sinks red/noA",
+        "product_scope": "publish latest committed state after an action attempt, not intermediate atomic state; existing v2 payload unchanged",
+        "separate_failure": "Synchronous publication/encoding or throwing endpoint failure no longer recast as rule refusal. Actual native IO catches IOException and emits transport-error; no device failure test claimed."
+      },
+      "original_half_server_evidence": {
+        "requests": 110,
+        "public_json": 110,
+        "player_json": 220,
+        "normal_action_messages": 100,
+        "source_in_check_refusals": 4,
+        "refused_ids": [
+          "MA-DS01-02:R4:pre-1",
+          "MA-DS01-02:R4:pre-2",
+          "MA-DS03:R4:pre-1",
+          "MA-DS04:B3:pre-1"
+        ],
+        "new_exact_payload_server_retries": 106,
+        "new_same_payload_refusal_controls": 4,
+        "derived_probes_are_original110": false,
+        "client_error_receipts_observed": 0
+      },
+      "caller_limits": [
+        "BluetoothHostRoom only admits jieqi; half_chaos/xiangqi MODE_TRANSPORT_PENDING retained",
+        "Class returns views without duplicate ACK; errors serialize message only in actual web path, no code invented",
+        "views()/handle advance time; caller output is not passive mid-stage observation",
+        "Native bridge/receiver functions source reviewed; real Android/radio/DOM not executed",
+        "Actual published online transport remains disabled in app source; no fabricated WebSocket/cloud adapter"
+      ],
+      "validation": {
+        "new_tests": 20,
+        "related_files": 58,
+        "related_passed": 895,
+        "failed": 0,
+        "separate_web_static_files": 2,
+        "separate_web_static_passed": 50,
+        "unchanged_binary_asset_tests_NOT_RUN": 4,
+        "production_code_modules_compiled": 37,
+        "full_asset_build": false,
+        "full_TypeScript_check": false,
+        "independent_QA": false
+      },
+      "boundary": {
+        "complete_original56_discharged": 0,
+        "formal_original64_accepted": 0,
+        "real_device_delivery": false,
+        "gameplay_delta": 0,
+        "protocol_schema_delta": 0,
+        "UI_assets_changed": false,
+        "mode_gate_changed": false,
+        "scoring": "frozen",
+        "NET": "paused"
+      },
+      "private_raw_sha256": "df0d02bcba9282dd5e19fa435ecad280d68d9d5d9ccf05b062946ba7cd90d606"
+    },
+    "concurrent_receiver_sources": {
+      "source_handoff_commit": "825dcb42aab686096e3a7111b9e4ac7c72f1d9b9",
+      "half_chaos": {
+        "path": "worklines/half_chaos/HC54_ROOM_CLIENT_OUTPUT_CALLER_AUDIT_20261029.json",
+        "sha": "f4fe6bec578578ec800e76fbecd9636831a4c119",
+        "scope": "complete findings/owner_requests/acceptance boundary; selected r53/r54 return objects; source-only summary, no independent device QA",
+        "finding": {
+          "schema": "lezi.hc.client_output_caller_source_audit.v1",
+          "id": "HC54-CLIENT-OUTPUT-CALLERS-20261029",
+          "date_local": "2026-10-29",
+          "handoff_HEAD_at_audit": "728145c4c37e021e8190601e899a29445ca6fd3c",
+          "task": "NEXT-HC-SOURCE-AUDIT-ACTUAL-ROOM-CLIENT-OUTPUT-CALLERS",
+          "pinned_engine_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+          "source_blobs": {
+            "src/remote-room.ts": "37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+            "src/bluetooth-host-room.ts": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+            "src/bluetooth-protocol.ts": "d3d665f53588d30dc1b6e3a31fd3f300043cd7cd",
+            "web/app.ts": "0ffd81fb73cf8e62eb4faaff4aa1751f9338557e",
+            "android/app/src/main/java/com/jieqi/bluetooth/GameWebBridge.java": "dacdffd64365f1ef4859c0f4a24293a2eb6dc86c",
+            "android/app/src/main/java/com/jieqi/bluetooth/BluetoothGameSession.java": "067f11abbccbc694901231458a1ba1c447c587b4"
+          },
+          "sources_accepted": [
+            "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json FM15/FM16/FM17 OG05/OG06",
+            "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json original 56",
+            "worklines/half_chaos/HC53_EXACT_STAGE56_CLIENT_CHANNEL_TRIAGE_20261029.json",
+            "engine PR19 current source code only"
+          ],
+          "static_source_assertions": {
+            "checks": 12,
+            "passed": 12,
+            "failed": []
+          },
+          "original_four_rejected_ids": [
+            "MA-DS01-02:R4:pre-1",
+            "MA-DS01-02:R4:pre-2",
+            "MA-DS03:R4:pre-1",
+            "MA-DS04:B3:pre-1"
+          ],
+          "findings": [
+            {
+              "id": "HC54-01",
+              "topic": "authority_accept/duplicate",
+              "source": "src/remote-room.ts 1252-1309",
+              "observation": "submitRemoteMove accepted final room passes withActionHistory; duplicate branch returns {room,duplicate:true}; no client delivery proof",
+              "related": "FM15/FM17",
+              "qualification": "SOURCE_CONFIRMED_SERVER_BOUNDARY"
+            },
+            {
+              "id": "HC54-02",
+              "topic": "hero_ability_result",
+              "source": "src/remote-room.ts 1539-1571",
+              "observation": "submitRemoteHeroAbility returns room/duplicate; training/shadow and other hero ability paths differ; no uniform move-history append",
+              "related": "FM15/FM17",
+              "qualification": "SOURCE_CONFIRMED_SEMANTIC_DISTINCTION"
+            },
+            {
+              "id": "HC54-03",
+              "topic": "authorized_output",
+              "source": "src/remote-room.ts 1475-1537",
+              "observation": "publicRemoteRoom and playerRoomView produce public and authenticated own-hero views; serializer is callable but not transport proof",
+              "related": "FM16/OG06",
+              "qualification": "SOURCE_CONFIRMED_SERVER_VIEW_ONLY"
+            },
+            {
+              "id": "HC54-04",
+              "topic": "half_chaos_transport_gate",
+              "source": "src/bluetooth-host-room.ts 68-82",
+              "observation": "BluetoothHostRoom constructor rejects baseMode other than jieqi with MODE_TRANSPORT_PENDING; half_chaos not admitted",
+              "related": "OG06",
+              "qualification": "CONFIRMED_GATE"
+            },
+            {
+              "id": "HC54-05",
+              "topic": "host_dedup_ack_loss",
+              "source": "src/bluetooth-host-room.ts 94-145",
+              "observation": "Host handler selects returned .room only for move, assassination, hero ability, and does not preserve RemoteActionResult.duplicate in BluetoothRoomViews; views() advances time",
+              "related": "FM15/OG05",
+              "qualification": "SOURCE_CONFIRMED_RETURN_SURFACE_LIMIT_NOT_RUNTIME_BUG"
+            },
+            {
+              "id": "HC54-06",
+              "topic": "guest_snapshot_path",
+              "source": "web/app.ts 1246-1263",
+              "observation": "Host publishes own view and sends guest snapshot when connected, with snapshot identity derived from updatedAt/phase rather than original actionId",
+              "related": "FM16/OG06",
+              "qualification": "CALL_PATH_EXISTS_NOT_HALF_CHAOS_DELIVERY"
+            },
+            {
+              "id": "HC54-07",
+              "topic": "error_message_only",
+              "source": "web/app.ts 1265-1313",
+              "observation": "Host sees RuleError.message via toast; guest rejection error envelope payload {message} not code; guest toast uses message",
+              "related": "FM15/FM17/OG05",
+              "qualification": "CALL_PATH_CONFIRMED_CODE_NOT_SHOWN"
+            },
+            {
+              "id": "HC54-08",
+              "topic": "pending_ack_correlation",
+              "source": "web/app.ts 986-992,1278-1307",
+              "observation": "Guest marks pendingAction on sending action; any applyBluetoothView snapshot clears it and error clears it; no verified per-command duplicate/id-correlation receipt",
+              "related": "FM15/OG05",
+              "qualification": "RISK_NEEDS_REAL_TEST_NOT_PROVEN_DEFECT"
+            },
+            {
+              "id": "HC54-09",
+              "topic": "protocol_structural_not_source",
+              "source": "src/bluetooth-protocol.ts 3-68",
+              "observation": "Versioned v2 action/snapshot/error envelope, 48KB guard and snapshot wrapper assume prior view sanitization; no mode qualification",
+              "related": "FM16/FM17",
+              "qualification": "SOURCE_CONFIRMED_BOUNDARY"
+            },
+            {
+              "id": "HC54-10",
+              "topic": "native_bridge",
+              "source": "android/app/src/main/java/com/jieqi/bluetooth/GameWebBridge.java 98-103,163-180; BluetoothGameSession.java 179-220",
+              "observation": "WebView JSON send and native inbound event forwarding exist; no actual two-device half-chaos proof",
+              "related": "OG06",
+              "qualification": "STATIC_CHAIN_ONLY"
+            },
+            {
+              "id": "HC54-11",
+              "topic": "client_render",
+              "source": "web/app.ts 579-619,986-1009",
+              "observation": "message view renders supplied messages, updates local state and clears local gameSecret; no observed half-chaos UI buttons/hints/clock or per-player delivery",
+              "related": "FM16/FM17",
+              "qualification": "SOURCE_RENDER_PRESENT_UNVALIDATED_MODE"
+            },
+            {
+              "id": "HC54-12",
+              "topic": "original_rejection_stimulus",
+              "source": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json FM15 OG05",
+              "observation": "Original 110 include four IN_CHECK rejects. PD-S35 / DS-S12 true same-ID retransmit/conflict and actor-client serialization still lack natural verified stimuli",
+              "related": "FM15/OG05",
+              "qualification": "MISSING_RUNTIME_CLIENT_EVIDENCE"
+            }
+          ],
+          "owner_requests": [
+            {
+              "id": "HC54-M01",
+              "owner": "main",
+              "request": "Trace original success postcommit room with messages/updatedAt, serial public/red/black and deadline at each true caller, not mid-action project"
+            },
+            {
+              "id": "HC54-M02",
+              "owner": "main",
+              "request": "Verify four original IN_CHECK actor-visible error message/code through actual eligible caller; differentiate RuleError from error envelope"
+            },
+            {
+              "id": "HC54-M03",
+              "owner": "main",
+              "request": "Preserve actual duplicate:true in server evidence; identify or prove caller acknowledgement and same-ID conflict policy from original permissible stimuli, no invention"
+            },
+            {
+              "id": "HC54-M04",
+              "owner": "main",
+              "request": "Guard MODE_TRANSPORT_PENDING; only authorize bounded offline caller tests separately from mode/client release and NET"
+            },
+            {
+              "id": "HC54-M05",
+              "owner": "UI/QA",
+              "request": "Client displays, buttons, legal hints, clocks, out-of-order snapshots and privacy need actual authorized device/transport evidence"
+            }
+          ],
+          "acceptance_boundary": {
+            "server_precise_game_components": "56 original slots documented via PR19, not reexecuted here",
+            "committed_mid_action_room_packets": 0,
+            "actual_half_chaos_bluetooth_deliveries": 0,
+            "actual_actor_error_payloads_observed": 0,
+            "actual_duplicate_or_conflicting_id_client_receipts_observed": 0,
+            "fully_discharged_original56": 0,
+            "formally_accepted_original64": 0,
+            "independent_QA": false
+          },
+          "preservation": {
+            "scoring": "FROZEN",
+            "NET": "PAUSED",
+            "featuresReady": false,
+            "no_engine_runs": true,
+            "no_shared_code_or_other_line_changes": true,
+            "source_raw_secret_not_published": true,
+            "hero_rules_unchanged": true
+          },
+          "next_independent": {
+            "id": "NEXT-HC-CLIENT-OUTPUT-ORACLE-TRACE-MATRIX",
+            "status": "READY_SOURCE_ONLY",
+            "action": "Reconcile original110 source requests, including four IN_CHECK and exact after-action server outputs into per-request success/error/duplicate/transport/UI proof table; no new runtime, no invented product responses."
+          },
+          "main_receipt_for_this_return": "UNKNOWN"
+        }
+      },
+      "chaos": {
+        "path": "worklines/chaos/CH_OUTPUT_CHANNEL_TIMEOUT_REJECTION_TRIAGE_20261029.json",
+        "sha": "ed35f009df4b0345aab58e5a22a4899ebe5b0a3b",
+        "scope": "complete source-qualified seed476 H15/H11 urgent probe and private-pair oracle; adopted as reproduction plan",
+        "finding": {
+          "schema": "lezi.chaos.channel_rejection_source_triage.v1",
+          "id": "CH-CHANNEL-H11A-EXPIRE-REJECT-20261029",
+          "mode_id": "jieqi",
+          "date_local": "2026-10-29",
+          "head_at_source_review": "728145c4c37e021e8190601e899a29445ca6fd3c",
+          "purpose": "Specific main-owned observable delivery gap at H11 A deadline when action processing advances room time before a rejected action; not a new CH07 static oracle, runtime pass or duplicate fixture.",
+          "source_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+          "source_reads": [
+            {
+              "file": "jieqi-engine/src/bluetooth-host-room.ts",
+              "blob": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+              "scope": "complete",
+              "observation": "BluetoothHostRoom.handle first assigns advanceRemoteRoomTime to this.room, then switch on action; no rollback on thrown RuleError; views() invokes time advance again"
+            },
+            {
+              "file": "jieqi-engine/src/remote-room.ts",
+              "blob": "37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+              "scope": "selected 1038-1128,1234-1312,1458-1585",
+              "observation": "At now>=pending H11 A deadline, advanceRemoteRoomTime applies server auto-skip then reopens formal clock; late action rejected or routed after that new authority"
+            },
+            {
+              "file": "jieqi-engine/web/app.ts",
+              "blob": "0ffd81fb73cf8e62eb4faaff4aa1751f9338557e",
+              "scope": "selected 985-1014,1246-1312,2452-2559,3843-3897",
+              "observation": "On accepted action, publishBluetoothViews sends guest snapshot. On rejected guest action, catch sends error envelope but does not itself call publishBluetoothViews. Battle timer interval updates visual countdown only; timeout comment explicitly leaves auto lose/switch unresolved."
+            },
+            {
+              "file": "jieqi-engine/src/bluetooth-protocol.ts",
+              "blob": "d3d665f53588d30dc1b6e3a31fd3f300043cd7cd",
+              "scope": "complete",
+              "observation": "createBluetoothSnapshot wraps already-sanitized player view and encode validates protocol envelope/size; protocol API alone does not prove physical delivery."
+            },
+            {
+              "file": "jieqi-engine/tests/h15-current-runtime.test.ts",
+              "blob": "70692bf6f4db1cd2cfcd0fe0376ad7c3c02eab7c3",
+              "scope": "complete",
+              "observation": "H15 actual source fixtures seed476 A and seed92 B; existing tests compare public/red/black after equal public capture but not H11 deadline rejected Bluetooth transport after internal advance."
+            },
+            {
+              "file": "worklines/standard/reviews/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_REVIEW_20261029.md",
+              "blob": "83378395d25e69571d014f611da11cd5b6e26220",
+              "scope": "complete",
+              "observation": "Authority, skill owner and opponent remain separate: H15 exact recruited target, progress and failure unavailable to both players; static review not proof of chaos client acceptance"
+            },
+            {
+              "file": "worklines/standard/specs/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_MAP_20261029.json",
+              "blob": "c071c0a7ef5b1e86869470a12a22b6b2a7d83818",
+              "scope": "selected H15 OV-05..08, NL-03..05",
+              "observation": "Ordinary fixed32 empty-pool result cannot be imported as original-jieqi concealed30 source"
+            }
+          ],
+          "replay_preconditions": {
+            "exact_original_chaos_fixture": "PR14 tests/h15-current-runtime.test.ts helper prepared(seed=476,recruit0/1) with createRemoteRoom/join/hero intro/selection/RPS/prep, red move (0,9)->(0,6) at 5000, black move (0,3)->(0,4) at 10000 gives pending H11 A",
+            "expected_original_A_deadline": "70000 from independent PR14 H11-A pinned example when original black1 starts at 10000; verify actual local deadline from returned source room, do not hardcode in runtime driver",
+            "paired_secret_control": "seed476 recruit0 causes trainee covered-25 death on red1; recruit1 leaves covered-00 alive; same public captured true red cannon permitted",
+            "not_source_equivalent": "PR18 ordinary R8/H02 or PR19 half-chaos server stage are NOT this original H11/H15 room fixture"
+          },
+          "urgent_probe": {
+            "id": "CH-CHANNEL-01-A-EXPIRE-REJECT-NO-PUSH",
+            "arrange": "Two authenticated Bluetooth host/guest views from source-qualified original jieqi H11/H15 room. Immediately after actual black1 H11 A opens, publish both snapshots and capture exact deadline/revision.",
+            "act": [
+              "Control: submit valid H11-A decision at observed deadline-1; require expected accepted return and published new guest view",
+              "Boundary: in fresh identical source room at observed deadline, deliver guest's old A command with current-at-open action/revision through host.handle",
+              "Record host stored authoritative room after advanceRemoteRoomTime even if thrown, host/guest views before/after, error envelope ID/message, actual guest snapshot sends, next legal red request, and any scheduled tick; use fixed test clocks",
+              "Repeat deadline+1 and identical actionId duplicate controls; distinguish H11 A auto-decline + reopened red turn from black1 timeout; do not assume errno before engine actual call"
+            ],
+            "source_path_hypothesis": "Potential stale guest view: host advances and auto-skips A, then stale A request throws; web/app.ts guest-error catch sends error only, not the newly committed room snapshot. UI battle timer alone does not force host refresh at 0 in examined path.",
+            "expected_if_broadcast_consistent": "After any host authoritative time-driven transition, guest must eventually observe source-correct committed authority and H15 privacy, with explicit evidenced sync/broadcast path and bounded timing.",
+            "possible_differential": "Host now red formal turn while guest still shows black H11 A, pending next valid request/explicit snapshot, causing action rejection or stale clock; also confirm neither error nor newly emitted snapshot leaks training target or failure.",
+            "requires_main_actual_run": true,
+            "defect_confirmed": false,
+            "actual_wire_client_observed": false
+          },
+          "paired_privacy_probe": {
+            "id": "CH-CHANNEL-02-H15-SAME-PUBLIC-WIRE",
+            "arrange": "Run source-exact seed476 recruit0 and recruit1 through captured red1 and black1 pending A, plus seed92 recruit1 vs recruit0 through A skip and red2 capture.",
+            "compare": [
+              "Actual committed room public serializer, authenticated host and guest playerRoomView, encoded snapshot payload and displayed client view for same public checkpoint",
+              "Exact messages (including allowed chosen cannon and successful start), error texts, revisions, update times, lawful captured piece true type, formal clock",
+              "No bound pieceId, current progress, real-time failed/live or secret RNG disclosure even in owning player's private view or hidden interface strings",
+              "At or after H11 shuffle rebind, only compare source-required derived secrecy fields and same public prefixes; do NOT demand unconditional byte equality across legitimately diverging public boards"
+            ],
+            "checkpoints": [
+              "after red1 capture",
+              "after black1 opens A",
+              "before/at A deadline",
+              "after true A accept or server auto-decline",
+              "after duplicated stale action"
+            ],
+            "requires_main_actual_run": true,
+            "current_CH07_case_full_acceptance": 0
+          },
+          "scoped_conclusion": {
+            "new_finding": "Specific unverified H11 A expiry/rejection guest-snapshot divergence is now source-linked; it is a testable failure hypothesis, not established bug.",
+            "existing_evidence": "PR14 covers bounded H15 pairs and H11 room time separately; PR19 only half-chaos exact game stage and not transport delivery.",
+            "receiver_engine_runs": 0,
+            "real_bluetooth_device_runs": 0,
+            "main_actual_read_or_adoption": "UNKNOWN",
+            "accepted_formal_CH07_cases": 0,
+            "gameplay_delta": 0,
+            "next_owner": "main shared committed room output / transport consumer proof",
+            "next_chaos_action": "only after source-qualified failure/verified output arrives, reconcile actual result and CH07 mapping"
+          },
+          "protections": {
+            "other_worklines": true,
+            "shared_engine_unchanged": true,
+            "heroes_UI_unchanged": true,
+            "scoring": "frozen",
+            "NET": "paused",
+            "no_merge_deploy_APK": true
+          }
+        }
+      },
+      "standard": {
+        "path": "worklines/standard/reviews/STD_PR18_R8_WINDOW_RECEIVER_REVIEW_20261029.md",
+        "sha": "6e72102fb61c1fd385cda10bb856c85d1072f8ce",
+        "scope": "complete PR18 receiver review, selected current receipt objects; separate observability map read only as return summary, full map not adopted",
+        "receipt": {
+          "id": "STD-MAIN-PR18-R8-WINDOW-RECEIVER-20261029",
+          "source": "TASK_FROM_MAIN.json#main_standard_r8_window_increment",
+          "source_handoff_HEAD": "728145c4c37e021e8190601e899a29445ca6fd3c",
+          "source_engine_commit": "099eca44dbaab39bdedb02a9986f7d54e9761121",
+          "report": "worklines/standard/reviews/STD_PR18_R8_WINDOW_RECEIVER_REVIEW_20261029.md",
+          "matrix": "worklines/standard/specs/STD_PR18_R8_WINDOW_SCOPE_MATRIX_20261029.json",
+          "receiver_read": true,
+          "receiver_adopted_bounded_evidence": true,
+          "gameplay_or_release_adopted": false,
+          "main_read_this_return": null,
+          "main_adopted_this_return": null,
+          "ordinary": 31,
+          "shared_originated_here": 13,
+          "delta_rules": 0,
+          "engine_tests_ran_locally": 0,
+          "validation_scope": {
+            "six_declared_AP_ES_variants_actual": true,
+            "original_parent_AS_AP_ES_37_pairs_equal": true,
+            "extended_92_observer_pairs_equal": true,
+            "author_848_related_tests_passed": true,
+            "duplicate_and_reject_probe_count": [
+              16,
+              18
+            ],
+            "full_NG12": false,
+            "NG11": false,
+            "formal_ordinary": false,
+            "independent_QA": false,
+            "client_UI_integration": false
+          },
+          "technical_handoff": "H02_later_carrier_move uses kind assassination without strong strike/source in research driver; check downstream command classification/consumer mapping, not proven defect",
+          "main_next": "MAIN-HC56-EXACT-STAGE-VIEW-20261029",
+          "ordinary_next": "NEXT-STD-MAIN-HC56-SHARED-OBSERVATION-RECEPTION-20261029",
+          "other_mode_receipts_untouched": true,
+          "scoring": "frozen",
+          "NET": "paused"
+        }
+      }
+    },
+    "engine_publication_readback": {
+      "commit": "8161c348abeba3a99fa5a5b514252e69218f28fd",
+      "tree": "a2549022b726f2830d9a417294ca827a9eac78c6",
+      "parent": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+      "PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/20",
+      "PR_number": 20,
+      "draft": true,
+      "merged": false,
+      "remote_content_and_sha_readbacks": [
+        {
+          "path": "web/app.ts",
+          "sha": "cf472df631893eb7d630e8ddd339de4313d683f8",
+          "content_equal": true
+        },
+        {
+          "path": "scripts/research/committed-output-channel.ts",
+          "sha": "2f83344b18fd20bc0d8bfbedafbe895916e0d869",
+          "content_equal": true
+        },
+        {
+          "path": "scripts/research/committed-output-research.ts",
+          "sha": "c212abea3251d7b81054a80d92fee1ea9adb4ed3",
+          "content_equal": true
+        },
+        {
+          "path": "tests/committed-output-channel.test.ts",
+          "sha": "464de3fc86c2bfc80e6fb8228930660d8f876c67",
+          "content_equal": true
+        },
+        {
+          "path": "tests/committed-room-serialization.test.ts",
+          "sha": "637866a1036217e2f5fc8a527636d103f9dffaf0",
+          "content_equal": true
+        },
+        {
+          "path": "tests/fixtures/committed-output/PR19_WEB_CHANNEL.txt",
+          "sha": "3b1c2e70dd2154fc811e78242dcca56a18fb9a6c",
+          "content_equal": true
+        },
+        {
+          "path": "docs/COMMITTED_OUTPUT_CHANNEL_20261029.md",
+          "sha": "10497ea4a8517732c9bf4d287a66fe54576e351d",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/BASELINE_INTEGRITY_20261029.json",
+          "sha": "9eabb3fd64d384d72fd9418e2d1cd16a6bbfa18b",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/CODE_COMPILE_20261029.json",
+          "sha": "59d0a6d32c6f218e56d57f136a2e2689033c4786",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/COMMAND_20261029.json",
+          "sha": "365572895a84951e605213e56133d1da2d8bdcc2",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/OWNER_ARTIFACT_20261029.json",
+          "sha": "cc39329387a19ca9f42fd5d960cbf51d3eb73d55",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/PREPATCH_SOURCE_20261029.json",
+          "sha": "ab3331242a4385a7e45f32686d94e66d3cd90c08",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/RESULTS_20261029.json",
+          "sha": "ec77edafd56490b9d85ce026a9bcf5ddc841ec6b",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/SOURCE_AUDIT_20261029.json",
+          "sha": "5ce67582d161447839db8dd40d12b57d775e686c",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/WEB_STATIC_COMMAND_20261029.json",
+          "sha": "0769c908804dad1f9d32edd5b850889cd2ee5d49",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/related-final-20261029.tap",
+          "sha": "afaf146763b0355e8b797d4a579e495ccdb365da",
+          "content_equal": true
+        },
+        {
+          "path": "review/committed-output-channel/web-static-20261029.tap",
+          "sha": "5236884ee777a4e14349fdce76f6b8b162a0be65",
+          "content_equal": true
+        }
+      ],
+      "protected_old_blobs": 595,
+      "product_changed_paths": [
+        "web/app.ts"
+      ],
+      "gameplay_or_protocol_schema_delta": 0
+    },
+    "owner_artifact": {
+      "file_name": "lezi-main-output-channel-evidence-20261029.zip",
+      "bytes": 73906,
+      "sha256": "0749c43939d82774e08d913ddf4eb7b766843b06fa807679651b364726d35eb6",
+      "source_raw_bytes": 3847646,
+      "source_raw_sha256": "df0d02bcba9282dd5e19fa435ecad280d68d9d5d9ccf05b062946ba7cd90d606",
+      "zip_readback_verified": true,
+      "owner_only": true,
+      "prior_owner_archives_unchanged": true,
+      "library_file_id": "libfile_4a1e0b2482c881919d463fd63342a58b",
+      "version": 0,
+      "link": "https://chatgpt.com/library?file_id=libfile_4a1e0b2482c881919d463fd63342a58b&account_id=personal"
+    },
+    "adopted": "Bounded output findings, CH source-qualified probe and minimal confirmed consumer correction; STD PR18 bounded receipt only. Full standard observability map and real device/half client not newly adopted.",
+    "other_workline_receipts_written": false,
+    "new_PR20_source_receiving": "unknown"
   }
 }
