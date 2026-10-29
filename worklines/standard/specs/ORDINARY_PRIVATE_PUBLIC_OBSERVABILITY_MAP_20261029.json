@@ -1,0 +1,426 @@
+{
+  "schema": "lezi.standard.ordinary_observability_static_map.v1",
+  "id": "STD-INDEPENDENT-PRIVATE-PUBLIC-OBSERVABILITY-MAP-20261029",
+  "date_local": "2026-10-29",
+  "source_handoff_head": "dc1f3c679fd9977222420da8c52d19d0373378d2",
+  "kind": "source-grounded static three-view data authorization/design; no product behavior claim",
+  "views": [
+    "authority",
+    "skill_owner",
+    "opponent"
+  ],
+  "shared_view": "Only original source-defined public facts duplicated into player views; ordinary full-piece board is public, hero private data is not.",
+  "source_roots": {
+    "H10": "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H10 风｜影 → 流 → 流·舞",
+    "H15": "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H15 天空上将｜征兵 / 飞行",
+    "D01": "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md#D01 宿命：时光之末",
+    "H21": "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H21 虔信狂徒｜祈求迦拉克隆",
+    "SECRET": "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】",
+    "POOL": "worklines/standard/modes/standard/CURRENT_RULES.md#2026-10-26｜普通模式有效规则导航",
+    "H15_EMPTY": "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+    "NP": "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+    "PR17": "worklines/standard/reviews/STD_MAIN_PR15_PR17_EVIDENCE_RECEIPT_20261029.md"
+  },
+  "scopes": [
+    "H10 first/second shadow",
+    "H15 secret cultivation / ordinary public-empty pool",
+    "D01 ordinary triggered anchor",
+    "H21 form lock/entry/prayer/descent",
+    "ordinary H14 and M07 pool exclusion",
+    "cross-player secret isolation"
+  ],
+  "rows": [
+    {
+      "id": "OV-01",
+      "feature": "H10",
+      "phase": "preparation_before_first_shadow",
+      "subject": "First three exact eligible candidates and owner selection",
+      "view_summary": "authority: exact pool and bound host / owner: temporary candidate and chosen marker / opponent: neither candidate nor host",
+      "static_guard": "Allow owner-only temporary locator; remove after first success, no persistent public mark",
+      "anti_leak_risks": [
+        "host_location_to_opponent",
+        "enemy_selection_ui",
+        "candidate_probe"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H10 风｜影 → 流 → 流·舞",
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-02",
+      "feature": "H10",
+      "phase": "shadow_active",
+      "subject": "Public shadow and underlying true general host",
+      "view_summary": "authority: actual secret host and public decoy / owner: own host and eligible secret state / opponent: public decoy and public piece body only",
+      "static_guard": "Use carrier public type/control for target legality; no host-derived rejection/highlight",
+      "anti_leak_risks": [
+        "public_valid_move_or_target_side_channel",
+        "owner_secret_shared_view"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H10 风｜影 → 流 → 流·舞",
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-03",
+      "feature": "H10",
+      "phase": "second_attempt_T8_or_later",
+      "subject": "Second successful random host or empty-pool rejection",
+      "view_summary": "authority: candidate pool, draw, host and counters / owner: source-defined secret use/candidate detail only / opponent: no use-count, cooldown, host or empty-pool feedback",
+      "static_guard": "No opponent-facing success/failure animation, cooldown or empty-pool query oracle; later objectively public effects can be shown without reverse-count disclosure",
+      "anti_leak_risks": [
+        "secret_success_count",
+        "timing_clock_leak",
+        "empty_pool_feedback_to_opponent"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H10 风｜影 → 流 → 流·舞",
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-04",
+      "feature": "H10",
+      "phase": "flow_after_public_shadow_lethal_event",
+      "subject": "Shadow disappearance and legal resultant position",
+      "view_summary": "authority: one actual carrier death and source / owner: source-authorized secret detail / opponent: only outcome legally public at that point",
+      "static_guard": "Do not leak earlier host/skill-use history merely because a resulting true-general board state becomes public",
+      "anti_leak_risks": [
+        "backfill_hidden_history",
+        "duplicate_death_log"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H10 风｜影 → 流 → 流·舞",
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-05",
+      "feature": "H15",
+      "phase": "before_successful_start",
+      "subject": "Training requested selected troop type and eligible candidate",
+      "view_summary": "authority: exact qualified pool and RNG / owner: troop type/own legal request only, not chosen exact target / opponent: no target binding",
+      "static_guard": "No one except authority gets selected body or position; source-defined public selected type only after successful start",
+      "anti_leak_risks": [
+        "owner_training_target_leak",
+        "opponent_training_target_leak"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H15 天空上将｜征兵 / 飞行"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-06",
+      "feature": "H15",
+      "phase": "success_training_pending",
+      "subject": "Successful start; training object, progress and failure",
+      "view_summary": "authority: actual target, progress, failure, unique chance / owner: only shared success, chosen type and used-once fact / opponent: same shared facts",
+      "static_guard": "Do not show actual progress, remaining cultivation time, live failure, victim identity or UI-dependent changes betraying target; prevent last-known progress stop hint",
+      "anti_leak_risks": [
+        "owner_progress_leak",
+        "opponent_failure_popup",
+        "button_color_side_channel"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H15 天空上将｜征兵 / 飞行",
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-07",
+      "feature": "H15",
+      "phase": "publicly_proven_empty_pool_standard_only",
+      "subject": "Ordinary publicly verifiable zero candidate set",
+      "view_summary": "authority: validates exact zero / owner and opponent: only independently already-public candidate facts; no secret list",
+      "static_guard": "Reject before start with opportunity and main-action untouched; do not turn uncertain/hidden pools into an exact-zero oracle",
+      "anti_leak_risks": [
+        "unknown_pool_treated_zero",
+        "candidate_identity_list",
+        "unearned_refund"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/confirmed/STD_H15_PUBLIC_EMPTY_POOL_CONFIRMATION_20261017.json",
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H15 天空上将｜征兵 / 飞行"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-08",
+      "feature": "H15",
+      "phase": "success_graduation_or_death",
+      "subject": "Flying promotion or pregraduation death",
+      "view_summary": "authority: target and actual fail/graduation / owner: public flying result when genuinely appeared / opponent: same public consequence",
+      "static_guard": "A known public flying result may be visible; a pregraduation victim death must not trigger special failed-training notice",
+      "anti_leak_risks": [
+        "failure_timing_popup",
+        "dead_target_binding_inference"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H15 天空上将｜征兵 / 飞行"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-09",
+      "feature": "D01",
+      "phase": "hero_selection_and_fate_not_yet_triggered",
+      "subject": "Rare hidden fate candidate vs actual result",
+      "view_summary": "authority: actual rare draw and active fate / owner: no pre-result preview beyond known public rules / opponent: same",
+      "static_guard": "Do not treat mutually eligible two heroes as proof D01 activated, or expose internal rare-candidate draw",
+      "anti_leak_risks": [
+        "premature_fate_reveal",
+        "candidate_rarity_probe"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md#D01 宿命：时光之末",
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-10",
+      "feature": "D01",
+      "phase": "triggered_ordinary_fixed_opening",
+      "subject": "Five ordinary original openly deployed warriors and anchors, plus five opposite faction bodies",
+      "view_summary": "authority: fixed 32 identity/anchor map / owner and opponent: original ordinary public five pawns and fixed anchor positions",
+      "static_guard": "Unlike dark modes, ordinary all-public identity and original fixed squares mean D01 ordinary initial anchors are public; do not hide them as dark-mode-only secret anchors",
+      "anti_leak_risks": [
+        "wrong_dark_mode_anchor_policy",
+        "false_hidden_pawn_object"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md#D01 宿命：时光之末",
+        "worklines/standard/modes/standard/CURRENT_RULES.md#2026-10-26｜普通模式有效规则导航"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-11",
+      "feature": "D01",
+      "phase": "active_hourglass_and_bomb",
+      "subject": "Hourglass expenditure, public restored pieces, bombs and resulting effect",
+      "view_summary": "authority: complete six-step transition, eligibility, ammo / owner and opponent: effects disclosed under valid public board/resource rules",
+      "static_guard": "Zero return still consumes one of five, but no unrevealed hidden identity inferred from success/invalid preflight; do not leak candidate list in exceptions",
+      "anti_leak_risks": [
+        "failed_preflight_secret_oracle",
+        "unsupported_safety_claim",
+        "intermediate_actor_leak"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md#D01 宿命：时光之末",
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-12",
+      "feature": "H21",
+      "phase": "selection_before_entry",
+      "subject": "Five-form hero selection/lock",
+      "view_summary": "authority: chosen locked form / owner: own form choice / opponent: not chosen form before hero entry",
+      "static_guard": "Do not expose form through opponent pre-entry roster display, network payload or early UI",
+      "anti_leak_risks": [
+        "form_lock_leak",
+        "preentry_selection_metadata"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H21 虔信狂徒｜祈求迦拉克隆",
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-13",
+      "feature": "H21",
+      "phase": "hero_entry",
+      "subject": "Form becomes publicly announced on hero entry",
+      "view_summary": "authority: locked form and entry status / owner and opponent: hero and form explicitly public",
+      "static_guard": "Public form only from defined entry milestone; later re-hiding or pre-entry premature disclosure contradicts source",
+      "anti_leak_risks": [
+        "early_reveal",
+        "postentry_missing_public"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H21 虔信狂徒｜祈求迦拉克隆"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-14",
+      "feature": "H21",
+      "phase": "prayers_omen_counter_turn",
+      "subject": "4 main-action prayers, public omen and counterturn",
+      "view_summary": "authority: counts/formal turn, open omen, no descent draw at B4 / owner and opponent: rule-defined public omen; no future RNG pool",
+      "static_guard": "Fourth prayer produces public omen; opponent receives full formal response; do not show descent/draw before own next valid begin",
+      "anti_leak_risks": [
+        "premature_selected_ids",
+        "prayer_vs_descent_timing",
+        "counterturn_absence"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H21 虔信狂徒｜祈求迦拉克隆",
+        "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-15",
+      "feature": "H21",
+      "phase": "invincible_descent_actual",
+      "subject": "Random up-to-4 lawful targets get dragon claw/scale",
+      "view_summary": "authority: actual ordered pool/draw indices/selection secret receipt / owner and opponent: only lawfully manifested piece effects after descent; no authority RNG trace",
+      "static_guard": "Do not send raw RNG pool/indices/secret state in red/black/public views; fixed tape tests are not production probability or complete privacy QA",
+      "anti_leak_risks": [
+        "private_rng_receipt_leak",
+        "unborn_effect_preview"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H21 虔信狂徒｜祈求迦拉克隆",
+        "worklines/standard/specs/NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json",
+        "worklines/standard/reviews/STD_MAIN_PR15_PR17_EVIDENCE_RECEIPT_20261029.md"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-16",
+      "feature": "H14",
+      "phase": "standard_hero_pool",
+      "subject": "H14 Night observation target selection",
+      "view_summary": "authority: original shared H14 design preserved, standard policy excluded / owner and opponent: no H14 selectable in ordinary",
+      "static_guard": "No ordinary hero selection or insight ability; cannot use H14 to view H10 host/H01 trap even in other mode",
+      "anti_leak_risks": [
+        "invalid_pool_membership",
+        "unauthorized_insight"
+      ],
+      "source_refs": [
+        "worklines/standard/modes/standard/CURRENT_RULES.md#2026-10-26｜普通模式有效规则导航",
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md#H10 风｜影 → 流 → 流·舞"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-17",
+      "feature": "M07",
+      "phase": "standard_mutation_pool",
+      "subject": "M07 Chaos mutation random flip effects",
+      "view_summary": "authority: shared M07 design preserved; ordinary policy excluded / owner and opponent: no ordinary M07 selectable or drawable",
+      "static_guard": "Do not expose M07 internal hidden-faction states as ordinary gameplay, since ordinary M07 not admitted",
+      "anti_leak_risks": [
+        "unauthorized_mutation_pool",
+        "mode_cross_contamination"
+      ],
+      "source_refs": [
+        "worklines/standard/modes/standard/CURRENT_RULES.md#2026-10-26｜普通模式有效规则导航"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    },
+    {
+      "id": "OV-18",
+      "feature": "ALL",
+      "phase": "transport_local_turnover_and_public_query",
+      "subject": "Secret-bearing view isolation & public qualification",
+      "view_summary": "authority: may hold private canonical state / owner: only own assigned permissions / opponent: public+own private only",
+      "static_guard": "Device handover must mask previous user's private fields; public legal hints cannot probe carrier or hidden identities; PR17 uncovered is never public legal or illegal verdict",
+      "anti_leak_risks": [
+        "cross_player_state_reuse",
+        "network_secret_payload",
+        "legal_move_query_oracle"
+      ],
+      "source_refs": [
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md#八、通用机制【秘密】",
+        "worklines/standard/reviews/STD_MAIN_PR15_PR17_EVIDENCE_RECEIPT_20261029.md"
+      ],
+      "verification": "SOURCE_BOUNDED_STATIC_NOT_EXECUTED"
+    }
+  ],
+  "source_count": {
+    "ordinary_confirmations_preserved": 31,
+    "direct_shared_confirmations_preserved": 13,
+    "new_gameplay_confirmations": 0,
+    "gameplay_delta": 0
+  },
+  "negative_checklist": [
+    {
+      "id": "NL-01",
+      "condition": "opponent uses H10 public move / target hint to distinguish true host",
+      "expected": "no extra oracle; public identity legality only"
+    },
+    {
+      "id": "NL-02",
+      "condition": "opponent UI H10 remaining uses or success animation varies",
+      "expected": "no unauthorized secret-derived difference"
+    },
+    {
+      "id": "NL-03",
+      "condition": "H15 owner gets chosen exact training piece in legal success output",
+      "expected": "not disclosed; owner not automatically authority"
+    },
+    {
+      "id": "NL-04",
+      "condition": "H15 pregraduation death triggers public failure signal",
+      "expected": "no real-time training-failure exposure"
+    },
+    {
+      "id": "NL-05",
+      "condition": "H15 unknown candidate enumeration is rejected as definitely zero",
+      "expected": "unknown not treated as publicly proven empty"
+    },
+    {
+      "id": "NL-06",
+      "condition": "D01 ordinary opening anchors presented as dark-mode-hidden",
+      "expected": "ordinary five-pawn fixed anchoring publicly derivable"
+    },
+    {
+      "id": "NL-07",
+      "condition": "D01 eligible hero pair displayed as guaranteed fate",
+      "expected": "candidate not actual chosen fate"
+    },
+    {
+      "id": "NL-08",
+      "condition": "H21 form or selected H21 RNG indices sent before entry/descent",
+      "expected": "no pre-entry form or pre-descent RNG exposure"
+    },
+    {
+      "id": "NL-09",
+      "condition": "H21 B4 omen treated as immediate B4 descent",
+      "expected": "must pass opponent full turn then own next begin"
+    },
+    {
+      "id": "NL-10",
+      "condition": "H14 or M07 exposed as ordinary selectable item",
+      "expected": "not in ordinary pool"
+    },
+    {
+      "id": "NL-11",
+      "condition": "handover to next player retains previous private markers",
+      "expected": "mask/clear former player's private view"
+    },
+    {
+      "id": "NL-12",
+      "condition": "PR17 uncovered treated as proven legal/illegal",
+      "expected": "uncovered remains no final decision"
+    }
+  ],
+  "dedupe": {
+    "h21_rng_and_np_timing": "Reference existing H21_RNG_REPLAY_CONTRACT_20261024.json and NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json; do not duplicate stochastic sample/replay requirements",
+    "pr15_pr17": "Evidence receipt is test/code source only, not formal ordinary privacy acceptance"
+  },
+  "engine_runs": 0,
+  "formal_suite": "UNRUN",
+  "independent_QA": false,
+  "full_UI_or_wire_privacy_QA": "UNRUN",
+  "scoring": "frozen",
+  "NET": "paused",
+  "mode_featuresReady": false,
+  "allowed_modifications": "ordinary handoff documentation/indices only",
+  "main_new_R8_notice": "R8 new PR18 issued in TASK_FROM_MAIN; separate receiver review still not done in this task",
+  "main_HC56_notice": "Shared HC56 stage view issued; ordinary impact scoped to isolation only and not ordinary acceptance"
+}
