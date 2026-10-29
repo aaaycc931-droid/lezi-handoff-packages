@@ -1936,5 +1936,52 @@
     "task_execution_not_started": true,
     "recipient_adoption": false,
     "report": "worklines/standard/reviews/STD_SESSION_CLOSEOUT_20261027_INDEPENDENT_AND_MAIN_RECEIPT.md"
+  },
+  "receiver_verification_20261029": {
+    "id": "STD-RECEIVE-NP32-PUBLIC-QUERY-QUALIFICATION-20261029",
+    "verified_at_local": "2026-10-29",
+    "source_handoff_head_at_start": "96e78d142fe15fac87289a704f6aba89861da18d",
+    "source_task_id": "STD-RECEIVE-NP32-RUNTIME-20261028",
+    "increments": [
+      "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+      "MAIN-PUBLIC-PATH-COVERAGE-20261028"
+    ],
+    "source_engine_commits": {
+      "PR15": "680966fff6484b418c25c9afb8b6759b7a44b594",
+      "PR16": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+      "PR17": "1bda5bc9f7840d0d601a85fb0faeda842753a199"
+    },
+    "receiver_read": true,
+    "receiver_adopted": true,
+    "adoption_scope": "bounded source/test evidence and documented unresolved exclusions only; no gameplay implementation, mode acceptance or downstream consumer adoption",
+    "actual_read_scope_report": "worklines/standard/reviews/STD_MAIN_PR15_PR17_EVIDENCE_RECEIPT_20261029.md",
+    "source_contract_git_blobs_equal": true,
+    "source_guard_15_ids_matched": true,
+    "main_reported_actual_requests": {
+      "AS": 11,
+      "AP": 13,
+      "ES": 13,
+      "total": 37
+    },
+    "main_reported_H21_draw_receipts": 12,
+    "main_reported_related_passes": {
+      "PR15": 749,
+      "PR16": 782,
+      "PR17": 821
+    },
+    "local_engine_rerun": false,
+    "independent_QA": false,
+    "owner_private_trace_read": false,
+    "formal_mode_acceptance": false,
+    "featuresReady": false,
+    "original_ordinary_confirmations": 31,
+    "original_direct_shared": 13,
+    "gameplay_delta": 0,
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_received_this_receipt_verified": null,
+    "main_adopted_this_receipt_verified": null,
+    "other_line_receipts_filled": false,
+    "prior_PR14_receipt": "scoped inherited source/metadata inspected, not exhaustive standalone PR14 QA"
   }
 }
