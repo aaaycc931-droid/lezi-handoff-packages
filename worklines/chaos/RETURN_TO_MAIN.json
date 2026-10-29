@@ -340,7 +340,7 @@
       "Real websocket/client/repeated snapshot/terminal consumers and PR17 three-state uncovered handling",
       "Full original CH07 formal privacy acceptance, natural complete games, product gate, independent QA"
     ],
-    "next_action": "MAIN_COVERED_SOURCE_AND_CONSUMER_PROJECTION_EVIDENCE_REQUIRED; CHAOS_REOPEN_ONLY_ON_CONCRETE_MODE_SPECIFIC_NEW_EVIDENCE_OR_FAILURE",
+    "next_action": "WAIT_MAIN_ORIGINAL_JIEQI_COMMITTED_OUTPUT_AND_COVERED_SOURCE_PROOFS",
     "preserved": {
       "other_modes": true,
       "hero_design": true,
@@ -349,10 +349,104 @@
       "shared_engine_modified": false,
       "gameplay_delta": 0,
       "main_receipt": "NOT_CLAIMED"
+    },
+    "pr18_pr19_followup": {
+      "id": "CH-MAIN-PR18-PR19-OUTPUT-CHANNEL-SCOPE-20261029",
+      "date_local": "2026-10-29",
+      "read_base_head": "eead074430e6049486be23a20408c9bba314b69e",
+      "resumed_after_concurrent_half_chaos_head": "f70c570090f08c37a74b787c72db79c0f7986942",
+      "receiver": "chaos",
+      "adopted": "ONLY_SCOPED_CROSS_MODE_INFRASTRUCTURE_AND_JIEQI_SOURCE_OUTPUT_GAP_ANALYSIS",
+      "source_engine": {
+        "PR18": "099eca44dbaab39bdedb02a9986f7d54e9761121",
+        "PR19": "760caf57d454af0db3be92d5b52ffc3cc9078d06"
+      },
+      "actual_reads": "READ_RECEIPTS.json#current_main_pr18_pr19_20261029",
+      "upstream": {
+        "PR18": {
+          "source": "standard ordinary full32 H02/H21/M04 only",
+          "six_declared_variants": 6,
+          "accepted_mains": 92,
+          "duplicates": 16,
+          "rejections": 18,
+          "external_related_passes": 848,
+          "chaos_engine_runs_established": 0,
+          "adopted": "time/idempotence test design only"
+        },
+        "PR19": {
+          "source": "half_chaos original12/110 only",
+          "server_stage_checkpoints": 200,
+          "server_pair_view_comparisons": 56,
+          "full56_accepted": 0,
+          "client_deliveries": 0,
+          "external_related_passes": 873,
+          "chaos_engine_runs_established": 0,
+          "adopted": "observer isolation and exact game vs committed-room distinction only"
+        }
+      },
+      "source_audit": {
+        "source_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+        "input_and_action": "src/remote-room.ts:1252 submitRemoteMove / 1539 submitRemoteHeroAbility; 293 withActionHistory and legal captured reveal in actionHistoryText",
+        "public_view": "src/remote-room.ts:1470 publicRemoteRoom / 1494 serializePublicRemoteRoom use src/game.ts:1140 publicStateSnapshot(GameState); H15 SecretState not used in public serializer",
+        "player_view": "src/remote-room.ts:1498 playerRoomView includes src/hero-actions.ts:347 ownerHeroSecrets, which returns wind/insights but not H15 bound trainee/progress/failure",
+        "public_training_message": "src/remote-room.ts:1559-1562 and1578-1584 public share hero selected piece type/used/successful start, not bound piece ID",
+        "bluetooth_transport": "src/bluetooth-host-room.ts views -> playerRoomView(host,guest), handle accepts remote action; web/app.ts:1252-1261 snapshots guest through createBluetoothSnapshot/encodeBluetoothEnvelope (src/bluetooth-protocol.ts), guest via applyBluetoothView",
+        "client_local_state": "web/app.ts:985 applyBluetoothView clears local gameSecret; :3843 H15 renderer reads public heroRuntime trainingType/used",
+        "observer": "src/mechanism-observer.ts:43-57 projectCheckpoint research-only, not product packet; actual committed room outer message/time constructed at request end",
+        "bounded_conclusion": "Inspected source path omits H15 bound/progress/live-failed secrets but does NOT prove actual Bluetooth/wire/client delivery or all error/duplicate cases."
+      },
+      "main_requested_action_view_tests": [
+        {
+          "id": "CH-OUT01",
+          "fixture": "CH07 seed476 A secret recruit0/1; seed92 B recruit1/0",
+          "action": "Actual original-jieqi covered capture and H11 A/B through committed room",
+          "view": "Compare serialized public/host/guest/messages/updatedAt/history and actual client surfaces, normal captured identity allowed; forbid H15 bound ID/progress/failure/seed",
+          "status": "UNRUN_THIS_LINE"
+        },
+        {
+          "id": "CH-OUT02",
+          "fixture": "CH07 PR10 H15-08/H11A07",
+          "action": "Duplicate training/capture/A activation/A skip/B activation and reject invalid/late attempts",
+          "view": "No double resource/RNG/action history/revision; distinguish legitimate BluetoothHostRoom.views time advance from duplicated action; sanitize error message",
+          "status": "PARTIAL_EXISTING_SOURCE_TESTS_NO_FULL_CHANNEL"
+        },
+        {
+          "id": "CH-OUT03",
+          "fixture": "Original jieqi all30 globally randomized nonroyal identities (not half_chaos15x2)",
+          "action": "Covered mover/contact action and actual reveal/defection/path death",
+          "view": "PR17 status uncovered is not illegal, no private identity fallback or invented death; qualify only source-authorized public data",
+          "status": "UNQUALIFIED"
+        },
+        {
+          "id": "CH-OUT04",
+          "fixture": "PR19 exact game checkpoint research-only",
+          "action": "Trace actual returned committed original-jieqi room and message/error/duplicate paths",
+          "view": "No claim of published mid-action packet or client receipt absent real wire evidence",
+          "status": "MAIN_SHARED_CHANNEL_DEPENDENCY"
+        }
+      ],
+      "remaining": [
+        "H15 graduation/control/empty pool/space and H06/H11 mixed real branches",
+        "Actual original-jieqi Bluetooth/websocket/spectator/repeated snapshot/terminal client delivery",
+        "Covered identity legal source and true reveal/death/defection public consumers",
+        "Full CH07 13 formal acceptance remains zero and independent QA unrun"
+      ],
+      "own_engine_runs": 0,
+      "new_chaos_formal_acceptances": 0,
+      "protected": {
+        "score": "frozen",
+        "NET": "paused",
+        "new_gameplay_approval": false,
+        "shared_code_changes": false,
+        "other_worklines_untouched": true,
+        "engine_merge": false,
+        "main_receiver": "UNKNOWN"
+      }
     }
   },
-  "latest_phase_status": "NEW_MAIN_EVIDENCE_RECEIVED_AND_CH07_BOUNDED_RECONCILED_FULL_MODE_UNACCEPTED",
+  "latest_phase_status": "BOUNDED_PR14_17_RECEPTION_RETAINED; NEW_PR18_19_SCOPED_AND_JIEQI_OUTPUT_CHANNEL_SOURCE_GAPS_RETURNED",
   "latest_phase_changed_paths": [
+    "worklines/chaos/START_HERE.txt",
     "worklines/chaos/READ_RECEIPTS.json",
     "worklines/chaos/RETURN_TO_MAIN.json",
     "worklines/chaos/CURRENT_STATE.json"
