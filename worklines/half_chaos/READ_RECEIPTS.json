@@ -709,6 +709,23 @@
       "adoption_scope": "legal/illegal/uncovered source qualification within guarded public context only",
       "gameplay_delta": 0,
       "mode_or_product_adopted": false
+    },
+    "main_hc56_stage_component_r53": {
+      "id": "MAIN-HC56-EXACT-STAGE-VIEW-20261029",
+      "source_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+      "receiver_read": true,
+      "receiver_adopted": true,
+      "scope": "bounded server game-stage component only",
+      "full56_accepted": 0,
+      "independentQA": false
+    },
+    "main_standard_r8_shared_boundary_r53": {
+      "id": "MAIN-STD-R8-NATURAL-WINDOW-20261028",
+      "source_commit": "099eca44dbaab39bdedb02a9986f7d54e9761121",
+      "receiver_read": true,
+      "receiver_adopted": true,
+      "scope": "shared clock/idempotence boundary only; no half-chaos R8 natural run",
+      "full_mode_accepted": false
     }
   },
   "own_line_continuation": {
@@ -2983,5 +3000,50 @@
     "engine_run_by_this_line": 0,
     "received_by_main": "UNKNOWN",
     "not_on_behalf_of_other_lines": true
+  },
+  "r53_actual_main_hc56_and_standard_r8_source_reception": {
+    "date_local": "2026-10-29",
+    "receiver_workline": "half_chaos",
+    "main_HC56": {
+      "task_id": "MAIN-HC56-EXACT-STAGE-VIEW-20261029",
+      "source_engine_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+      "PR": 19,
+      "receiver_read": true,
+      "receiver_adopted": true,
+      "adopted_scope": "Pinned published 200 exact game-stage server projections and 56 original pair slot game-view comparisons, independently joined to original HC51 source IDs and boundaries.",
+      "not_adopted": [
+        "client delivery",
+        "committed intermediate room packet",
+        "client success/error/duplicate serialization",
+        "raw owner-only artifact re-computation",
+        "formal original56 PASS",
+        "formal64 PASS",
+        "independentQA",
+        "production modes or privacy policies"
+      ],
+      "actual_source_join": {
+        "original_exact_slots": 56,
+        "pair_families": 2,
+        "matched_checkpoints": 112,
+        "projected_game_checkpoints": 200,
+        "mismatches": 0,
+        "complete_slots": 0,
+        "client_deliveries": 0
+      }
+    },
+    "main_standard_R8": {
+      "task_id": "MAIN-STD-R8-NATURAL-WINDOW-20261028",
+      "source_engine_commit": "099eca44dbaab39bdedb02a9986f7d54e9761121",
+      "PR": 18,
+      "receiver_read": true,
+      "receiver_adopted": true,
+      "adopted_scope": "Shared source-qualified clock/once-per-turn/duplicate refusal evidence and nontransferability boundary only. Ordinary32 H02/R8 simulations are NOT half-chaos natural replay evidence.",
+      "new_half_chaos_natural_cases_claimed": 0
+    },
+    "report": "worklines/half_chaos/HC53_EXACT_STAGE56_CLIENT_CHANNEL_TRIAGE_20261029.json",
+    "actual_private_owner_archive_access": false,
+    "engine_runs_this_workline": 0,
+    "other_receivers_adoption_not_asserted": true,
+    "main_read_of_this_return": "UNKNOWN"
   }
 }
