@@ -2,7 +2,7 @@
   "schema": "lezi.main.committed_output.validation.v1",
   "date_local": "2026-10-29",
   "handoff_base": "41b0934be67a09fe39ed14253c1d82d34381d4f4",
-  "status": "LOCAL_SCOPE_CHECKS_PASS_REMOTE_HANDOFF_READBACK_PENDING",
+  "status": "LOCAL_SCOPE_CHECKS_PASS_AND_IMMUTABLE_STAGE_REMOTE_READBACK_COMPLETE",
   "checks": [
     {
       "name": "state preserved scoring",
@@ -113,5 +113,8 @@
   "failed": 0,
   "expected_main_paths": 17,
   "formal_mode_acceptance": false,
-  "independent_QA": false
+  "independent_QA": false,
+  "actual_stage_commit": "fd08596190cd24cbeb1f4ffa7ce5f1d3c40d74bb",
+  "actual_stage_readbacks": 17,
+  "actual_protected_existing_blobs": 769
 }

@@ -1,8 +1,7 @@
 {
   "schema": "lezi.main.committed_output.publication.v1",
   "date_local": "2026-10-29",
-  "status": "ENGINE_REMOTE_READBACK_COMPLETE_MAIN_PUBLICATION_PENDING",
-  "handoff_base": "41b0934be67a09fe39ed14253c1d82d34381d4f4",
+  "status": "ENGINE_AND_17_FILE_STAGE_REMOTE_READBACK_COMPLETE",
   "engine": {
     "commit": "8161c348abeba3a99fa5a5b514252e69218f28fd",
     "tree": "a2549022b726f2830d9a417294ca827a9eac78c6",
@@ -104,6 +103,101 @@
     ],
     "gameplay_or_protocol_schema_delta": 0
   },
+  "handoff_stage": {
+    "commit": "fd08596190cd24cbeb1f4ffa7ce5f1d3c40d74bb",
+    "tree": "ac7d03cbab614c436f7a3b22e6d5ddc2451f9238",
+    "parent": "41b0934be67a09fe39ed14253c1d82d34381d4f4",
+    "remote_content_and_sha_readbacks": [
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "sha": "acf12837ec3cb7c04bd62fb6ff0373ba2ce630c0",
+        "content_equal": true
+      },
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "sha": "e0b226451b7495d6e0f0e5062efae5c9962bd149",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "sha": "5dba451265f1a35032718f03bd76770555cc5bfa",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "sha": "53f11abd0fa86ff221970a7636f402075952dbcc",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "sha": "d0aa2eb3218c1e33dc35bd5617a38c8c07a26816",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "sha": "2c8079d9091c271eafc893da5f167b3e16c292d8",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "sha": "18a8ccbac83f3eeda0394b68858e69812a7406ca",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "sha": "cdd2f25de9edd74dd69d139180e1682de4d11b3f",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "sha": "e6e49b9b2b37f00436136808210b98f60ea36229",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "sha": "86ed5c6ad57dd1beaff8f3c76bb4973330c80e18",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/COMMITTED_OUTPUT_PROGRESS.json",
+        "sha": "43d2ada92a86c4a445f29b2269a4ac424bab3cd2",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_COMMITTED_OUTPUT_REPORT.md",
+        "sha": "a8d9c2c4e835d0a1e39aa0a3d51051eca56ffb0c",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/COMMITTED_OUTPUT_PUBLICATION_VERIFICATION.json",
+        "sha": "0ca8d8a193a60766a813a75f13285d873c67678c",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/standard/TASK_FROM_MAIN.json",
+        "sha": "4481d12d18b352422566eeb4aa5d815aba98f882",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json",
+        "sha": "e7cd2803e6f9dfcc4b6769af84014afe00a023fc",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/chaos/TASK_FROM_MAIN.json",
+        "sha": "4c90a147b914b12f7b9a7c39f05223f16b394b0e",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/COMMITTED_OUTPUT_VALIDATION.json",
+        "sha": "00686567f112711740c4cd049a84894f939d466f",
+        "content_equal": true
+      }
+    ],
+    "protected_old_blobs": 769,
+    "main_head_at_read": "fd08596190cd24cbeb1f4ffa7ce5f1d3c40d74bb",
+    "force": false
+  },
   "owner_artifact_saved": {
     "file_name": "lezi-main-output-channel-evidence-20261029.zip",
     "bytes": 73906,
@@ -117,7 +211,11 @@
     "version": 0,
     "link": "https://chatgpt.com/library?file_id=libfile_4a1e0b2482c881919d463fd63342a58b&account_id=personal"
   },
-  "main_actual_readback_files": 0,
+  "actual_main_stage_files": 17,
+  "stage_fixed_entry": "worklines/main/START_HERE.txt",
+  "stage_next_action": "MAIN-BLUETOOTH-RECEIPT-CORRELATION-20261029",
+  "complete56_discharged": 0,
   "force": false,
-  "raw_authority_published": false
+  "raw_authority_published": false,
+  "receipt_scope": "Records completed immutable engine and stage readbacks; followup itself verified after publication, no future self hash asserted."
 }
