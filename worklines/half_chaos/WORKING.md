@@ -3134,3 +3134,8 @@ PD05-A/B与PD06-A/B两组分别7条公开主行动，声明及静态逐步走棋
 
 ### 8.77 半混乱r52主线PR14/16/17源证据接收（2026-10-29）
 从实际TASK_FROM_MAIN接续主线三增量，本线独立核主线HC_EVIDENCE_64与原ASSERTION_EVIDENCE_MATRIX 64项规格原文/直接点，以及HC_EVIDENCE_210与原OBSERVATION_FIELD_MAPPING 210项ID/阶段；引擎PR14公开12回放110命令与源序列亦逐项吻合，均0不一致。见HC52_MAIN_EVIDENCE_AND_PUBLIC_QUERY_RECEPTION_20261029.json逐项索引；本线未取得owner-only 84MB权威原始轨迹，不把主线离线1404条件/61有界规格断言记作本线重跑。主线原12已实际运行，64类45已有有界事实、11缺刺激、7证据边界未闭合、1缺自然正例，正式通过0。210已有权威阶段快照，完整观察义务解除0；原56精确阶段红/黑视图未采集，主线42返回后红/黑/公开比较不可回填。PR16只限早期H04/H03 M01/M04公开明置接触查询，PR17三态legal/illegal/uncovered不将暗置真身和旧布尔true自动视为合法，同一公开来源的合法性也不意味着room/UI/terminal消费者已迁移。三PR均open draft。READ_RECEIPTS/RETURN_TO_MAIN记本线实际读与限定采用；原规则、三个模式、英雄设计、评分、NET、产品门禁不动，下一独立规划56精确时点/客户端采集证据需求，真实QA/新runner归主线。
+
+
+### 8.78 半混乱r53精确阶段服务器投影与完整客户端证据缺口（2026-10-29）
+实际执行原NEXT-HC-EXACT-STAGE-56-CLIENT-EVIDENCE-TRIAGE。以HC51原56槽位和主线PR19 RESULTS逐项核对：PD05/PD06每组28，红/黑28/28，main:closed和normal-end各28，左/右精确checkpoint与时序0错配。主线报告原12回放110请求、200精确棋局时点、200公共JSON/400玩家JSON，原56槽位的112底层玩家JSON和56对公开可见字段窄ID映射后相同；本线未独立打开owner-only原始轨迹、未运行引擎或独立QA。服务器游戏态是下一begin前原事件时点，但房间消息和updatedAt来自实际请求入口，非中途已提交房间包；故完整56验收与真实客户端送达仍0。
+本线新增HC53_EXACT_STAGE56_CLIENT_CHANNEL_TRIAGE_20261029.json全56项映射、源证据摘要及8类未完成输出：真正房间/消息外壳、成功动作返回、原四次IN_CHECK拒绝的客户端错误、重传和同ID冲突、UI按钮与时钟显示及独立隐私QA。原PD-S35/DS-S12缺自然刺激不由不同请求替代。PR18普通R8只接收共享时钟/幂等边界，不推断半混乱自然案例。READ_RECEIPTS已登记本线实际接收/限定采用，RETURN_TO_MAIN已提出主线输出通道跟进；后续本线只做source-only客户端真实调用链合同审查。共享游戏代码/测试/NET/UI/评分/英雄及其他工作线均不动。
