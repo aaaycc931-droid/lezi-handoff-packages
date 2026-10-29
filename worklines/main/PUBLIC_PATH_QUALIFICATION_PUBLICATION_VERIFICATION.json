@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.public_path_qualification.publication_verification.v1",
   "date_local": "2026-10-29",
-  "status": "ENGINE_REMOTE_READBACK_VERIFIED_MAIN_PUBLICATION_PENDING",
+  "status": "ENGINE_AND_MAIN_ACTUAL_REMOTE_READBACK_VERIFIED",
   "handoff_base_commit": "c1ce9268f2b45feb8f834436ff6850cba08bd97d",
   "engine": {
     "engine_commit": "1bda5bc9f7840d0d601a85fb0faeda842753a199",
@@ -101,8 +101,197 @@
     "merged": false,
     "force": false
   },
-  "main_actual_readback_files": 0,
+  "main_actual_readback_files": 17,
   "force": false,
   "receiver_adoption_claimed": false,
-  "raw_authority_bodies_published": false
+  "raw_authority_bodies_published": false,
+  "main": {
+    "date_local": "2026-10-29",
+    "commit": "807bc23bba959cc29f1c8e5076c44482c11f3a61",
+    "tree": "5444ceca2a75591bf50579f987ec17d44c12d8c0",
+    "base": "c1ce9268f2b45feb8f834436ff6850cba08bd97d",
+    "files": [
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "expected_sha": "0ac434570550b85bc45877e5efa7a95f5154f9ee",
+        "actual_sha": "0ac434570550b85bc45877e5efa7a95f5154f9ee",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "expected_sha": "0c460c94934bc5182731e978ec96d9aa1920a16e",
+        "actual_sha": "0c460c94934bc5182731e978ec96d9aa1920a16e",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "expected_sha": "cff33c446f05080170746c00370aa8a5a03f7e22",
+        "actual_sha": "cff33c446f05080170746c00370aa8a5a03f7e22",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "expected_sha": "ad6d5b3a30ee3ac557b44050c0ed04f296e40a72",
+        "actual_sha": "ad6d5b3a30ee3ac557b44050c0ed04f296e40a72",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "expected_sha": "37015b794fb2ec493aca64135aa0fc8ab2cdbf1e",
+        "actual_sha": "37015b794fb2ec493aca64135aa0fc8ab2cdbf1e",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "expected_sha": "66df15c002590ad1a85b0e3e965aab53b6895497",
+        "actual_sha": "66df15c002590ad1a85b0e3e965aab53b6895497",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "expected_sha": "f78d09c6990757fa920bb5b98d21609e190adb10",
+        "actual_sha": "f78d09c6990757fa920bb5b98d21609e190adb10",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "expected_sha": "16a2c683be32ef369f4860b596aee8981f5ec10e",
+        "actual_sha": "16a2c683be32ef369f4860b596aee8981f5ec10e",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "expected_sha": "97b36e31a75664b62519f035a7e335bed7c7048e",
+        "actual_sha": "97b36e31a75664b62519f035a7e335bed7c7048e",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "expected_sha": "03857b35d801c9d6211dfa3feac9b0bc8c33e5b5",
+        "actual_sha": "03857b35d801c9d6211dfa3feac9b0bc8c33e5b5",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/PUBLIC_PATH_QUALIFICATION_PROGRESS.json",
+        "expected_sha": "0fbf5a88a71f456e32ac8e84ffe303b2dbaee420",
+        "actual_sha": "0fbf5a88a71f456e32ac8e84ffe303b2dbaee420",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_PUBLIC_PATH_QUALIFICATION_REPORT.md",
+        "expected_sha": "824d62a09c9436c330768fd10121a39ad820f590",
+        "actual_sha": "824d62a09c9436c330768fd10121a39ad820f590",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/PUBLIC_PATH_QUALIFICATION_PUBLICATION_VERIFICATION.json",
+        "expected_sha": "7022e5834467094773737b7f00f3e3ad025321c9",
+        "actual_sha": "7022e5834467094773737b7f00f3e3ad025321c9",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/standard/TASK_FROM_MAIN.json",
+        "expected_sha": "85017aa0471b76a6b8cf937cabd0092470da9f96",
+        "actual_sha": "85017aa0471b76a6b8cf937cabd0092470da9f96",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json",
+        "expected_sha": "e02f39eed20b0e04ee0433f5d77826b17f7a9cc7",
+        "actual_sha": "e02f39eed20b0e04ee0433f5d77826b17f7a9cc7",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/chaos/TASK_FROM_MAIN.json",
+        "expected_sha": "2bf9715ddd2312524fec12c3abb2db9a21be8144",
+        "actual_sha": "2bf9715ddd2312524fec12c3abb2db9a21be8144",
+        "bytes_equal": true,
+        "sha_equal": true
+      },
+      {
+        "path": "worklines/main/PUBLIC_PATH_QUALIFICATION_VALIDATION.json",
+        "expected_sha": "57c9075c3a00df231426927e9d3ad392588ca8ef",
+        "actual_sha": "57c9075c3a00df231426927e9d3ad392588ca8ef",
+        "bytes_equal": true,
+        "sha_equal": true
+      }
+    ],
+    "readback_files": 17,
+    "unchanged_existing_blobs": 743,
+    "altered_outside_selected_paths": [],
+    "source_line_working_drafts_receipts_rules_and_hero_objects_unchanged": true,
+    "three_TASK_FROM_MAIN_main_owned_input_append_only": true,
+    "force": false
+  },
+  "engine_actual_readback_date_local": "2026-10-28",
+  "engine_immutable_readback_reused": true,
+  "engine_PR17_head_draft_and_unmerged_reverified_on_local": "2026-10-29",
+  "verification_scope": "The17 main-file rows verify immutable stage commit807bc23bba959cc29f1c8e5076c44482c11f3a61. This additive receipt records completed actual readbacks and does not pre-claim verification of its own future commit.",
+  "main_tree_build": {
+    "strategy": "Five smaller tree-object increments followed by one ordinary commit and one expected_sha guarded branch update",
+    "successful_tree_objects": [
+      {
+        "batch": 1,
+        "tree": "19e541f6f61f251fb024fa1edcc6b9d5f90129e2",
+        "paths": [
+          "worklines/main/CURRENT_STATE.json"
+        ]
+      },
+      {
+        "batch": 2,
+        "tree": "ec0fbb34030e11da38a1881157e729d84d2443dd",
+        "paths": [
+          "CURRENT_HANDOFF.json",
+          "worklines/main/START_HERE.txt",
+          "worklines/main/MODE_DISPATCH.json",
+          "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+          "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md"
+        ]
+      },
+      {
+        "batch": 3,
+        "tree": "e3826265d5917ad1f660796bb0b3b91544d5b398",
+        "paths": [
+          "worklines/main/PROJECT_WORK_AGREEMENT.md",
+          "worklines/main/READ_RECEIPTS.json"
+        ]
+      },
+      {
+        "batch": 4,
+        "tree": "ea74b4a9e9004a4fd1e7498dbd297e0c1d9e9092",
+        "paths": [
+          "worklines/main/RETURN_TO_MAIN.json"
+        ]
+      },
+      {
+        "batch": 5,
+        "tree": "5444ceca2a75591bf50579f987ec17d44c12d8c0",
+        "paths": [
+          "worklines/main/SESSION_CLOSEOUT.json",
+          "worklines/main/PUBLIC_PATH_QUALIFICATION_PROGRESS.json",
+          "worklines/main/MAIN_PUBLIC_PATH_QUALIFICATION_REPORT.md",
+          "worklines/main/PUBLIC_PATH_QUALIFICATION_PUBLICATION_VERIFICATION.json",
+          "worklines/standard/TASK_FROM_MAIN.json",
+          "worklines/half_chaos/TASK_FROM_MAIN.json",
+          "worklines/chaos/TASK_FROM_MAIN.json",
+          "worklines/main/PUBLIC_PATH_QUALIFICATION_VALIDATION.json"
+        ]
+      }
+    ]
+  }
 }
