@@ -1,3 +1,6 @@
+【2026-10-29 半混乱 r54 原FM15/16/17房间输出/客户端调用链核查】
+已执行NEXT-HC-SOURCE-AUDIT-ACTUAL-ROOM-CLIENT-OUTPUT-CALLERS；固定PR19源码审查12个静态断言全吻合，完整12项来源分类/5条主线请求见HC54_ROOM_CLIENT_OUTPUT_CALLER_AUDIT_20261029.json。确认原有submitRemoteMove/submitRemoteHeroAbility、publicRemoteRoom/playerRoomView、BluetoothHostRoom、web/app.ts与Android桥接调用链存在。BluetoothHostRoom仅允许jieqi，half_chaos仍被MODE_TRANSPORT_PENDING拒绝；BluetoothHostRoom处理move/hero_ability时取.result.room而不传duplicate标记，Web端访客error envelope为{message}未带RuleError.code；这是现存源码边界，非本线复现的实际半混乱客户端缺陷。原4个IN_CHECK拒绝请求可定位，未验证真实客户端消息；PD-S35/DS-S12真实重传/冲突仍缺。原56精确服务器组成部分按PR19源有56/56，但完整原56义务0，原64正式验收0，真实半混乱客户端送达0。READ_RECEIPTS登记本线独立阅读和限定采用，RETURN_TO_MAIN回传主线输出通道行动项；不代填主线采用。下一独立NEXT-HC-CLIENT-OUTPUT-ORACLE-TRACE-MATRIX仅按原110请求逐项分类输出证据缺口，不运行引擎或放开门禁；评分冻结、NET暂停、featuresReady=false。旧段落按历史断面保留。
+
 【2026-10-29半混乱r53精确56槽位｜PR19服务器组成部分接收】
 已读取TASK_FROM_MAIN的HC56新任务、PR19实际服务器投影和原HC51 56槽合同，逐一核对56 ID/左右checkpoint/语义阶段/红黑身份及200主原子/结束阶段，0错配。主线报告200精确游戏时点、200公共及400玩家JSON、56组服务器双世界比较/112玩家帧在限定编号映射后相同；本线未独立读取owner-only私密原始包。房间消息/updatedAt是请求入口外壳，不是已提交中途房间包；真实客户端送达和成功/拒绝/重传回执仍无证据。故56服务器组成部分有据、原56完整通过0，原64正式PASS0。PR18普通R8仅共通期限/幂等边界，不外推为半混乱执行。详细HC53_EXACT_STAGE56_CLIENT_CHANNEL_TRIAGE_20261029.json；本线READ_RECEIPTS和RETURN_TO_MAIN已填限定接收与回传，主线实际读后再由主线登记。下一独立只核实际房间/客户端调用链原合同；共享代码与实际运行归主线MAIN-ROOM-COMMITTED-OUTPUT-CHANNEL。评分冻结、NET暂停、featuresReady=false，原r51/r52结论只作历史时间断面。
 
