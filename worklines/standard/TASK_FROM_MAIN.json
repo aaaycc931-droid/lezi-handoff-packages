@@ -181,5 +181,72 @@
     "scoring": "frozen",
     "NET": "paused",
     "wakeup_claimed": false
+  },
+  "main_hc56_stage_view_increment": {
+    "id": "MAIN-HC56-EXACT-STAGE-VIEW-20261029",
+    "date_local": "2026-10-29",
+    "source_engine_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+    "engine_PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/19",
+    "state": "issued_pending_receiver_review",
+    "receiver_read": false,
+    "receiver_adopted": false,
+    "inputs": [
+      "worklines/main/MAIN_HC56_STAGE_VIEW_REPORT.md",
+      "worklines/main/HC56_STAGE_VIEW_PROGRESS.json",
+      "engine:docs/HALF_CHAOS_EXACT_STAGE_VIEWS_20261029.md",
+      "engine:review/half-chaos-stage-views/RESULTS_20261029.json",
+      "engine:review/half-chaos-stage-views/SOURCE_AUDIT_20261029.json"
+    ],
+    "scope": "Original half-chaos12/110 exact game-stage server projection component only; no full room packet/client delivery, no broader mode qualification.",
+    "actions": [
+      "半混乱按原56槽位核200精确游戏时点和112底层玩家JSON，区分服务器组成部分已观察与完整消息/错误/客户端义务0；不把全部56或64标PASS。",
+      "普通/混乱只核共享观察失败隔离和边界，不把本次半混乱来源当成本线新自然前缀或暗子完整资格。",
+      "本线自行记录实际阅读/采用，owner私密包未取得不声称独立复算；共享输出通道问题带具体来源回主线。"
+    ],
+    "evidence": {
+      "original_replays": 12,
+      "original_requests": 110,
+      "main_atoms": 100,
+      "formal_settlements": 100,
+      "exact_game_stage_checkpoints": 200,
+      "serialized_public_json": 200,
+      "serialized_player_json": 400,
+      "original_pair_slots_with_server_component": 56,
+      "underlying_paired_player_json": 112,
+      "visible_fields_equal_after_narrow_ID_mapping": 56,
+      "semantic_actor_from_to_bindings_checked": 112,
+      "hidden_initial_slots_differing_per_pair": 2,
+      "complete_original56_slots_discharged": 0,
+      "client_deliveries_observed": 0,
+      "formal_original64_specs_accepted": 0
+    },
+    "validation_reported": {
+      "new_tests": 25,
+      "focused_passed": 52,
+      "related_files": 55,
+      "related_passed": 873,
+      "failed": 0,
+      "parent_default_projection_off_no_observation_request_pairs_each": 110,
+      "ambient_random_calls": 0,
+      "ambient_wall_clock_calls": 0,
+      "remote_engine_path_readbacks": 14,
+      "protected_existing_engine_blobs": 582,
+      "materialized_parent_blobs_verified": 170,
+      "independent_QA": false
+    },
+    "boundary": {
+      "game_state_secret": "Real immutable checkpoint, projected synchronously at emission before next begin/request return",
+      "room_envelope": "Actual request-entry metadata and message history, NOT a committed intermediate room packet",
+      "public_normalization": "Only exact issued IDs at enumerated context fields/player dictionary keys; no clock/revision/deadline/text/piece/effect omitted",
+      "wire_or_state_properties_added": false,
+      "product_intermediate_stage_publishing": false
+    },
+    "main_next": "MAIN-ROOM-COMMITTED-OUTPUT-CHANNEL-20261029",
+    "previous_task_body_preserved": true,
+    "new_gameplay_approval": false,
+    "new_mode_qualification": false,
+    "scoring": "frozen",
+    "NET": "paused",
+    "wakeup_claimed": false
   }
 }
