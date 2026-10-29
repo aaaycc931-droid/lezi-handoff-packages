@@ -340,5 +340,39 @@
     "actual_read": true,
     "source_review_completed": true,
     "main_receiver_adoption": "NOT_CLAIMED; main must independently read this new return"
+  },
+  "chaos_channel_timeout_triage_20261029": {
+    "id": "CH-CHANNEL-H11A-EXPIRE-REJECT-20261029",
+    "date_local": "2026-10-29",
+    "source_handoff_HEAD": "728145c4c37e021e8190601e899a29445ca6fd3c",
+    "actual_receiver": "current chaos dialogue",
+    "actually_read_complete": [
+      "jieqi-engine@760caf5/src/bluetooth-host-room.ts",
+      "jieqi-engine@760caf5/src/bluetooth-protocol.ts",
+      "jieqi-engine@760caf5/tests/h15-current-runtime.test.ts",
+      "worklines/standard/reviews/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_REVIEW_20261029.md",
+      "worklines/chaos/CH07_CLOSEOUT.md",
+      "worklines/chaos/CH07_PRIVACY_NEGATIVE_MATRIX.json"
+    ],
+    "actually_read_selected": [
+      "jieqi-engine@760caf5/src/remote-room.ts H11-A advance/expiry and action/public/private view (1038-1128,1234-1312,1458-1585)",
+      "jieqi-engine@760caf5/web/app.ts bluetooth send/receive, timer and UI (985-1014,1246-1312,2425-2589,3837-3943)",
+      "worklines/standard/specs/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_MAP_20261029.json H15 rows OV-05..08, NL-03..05",
+      "worklines/chaos/CH03_PREFIX_OBSERVATION_CONTRACT.json key sources/conditions",
+      "worklines/chaos/CH04_H06_H15_ROUTES.json key sources",
+      "worklines/chaos/CH05_H11_H15_EARLY_DEATH_WITNESS.json key metadata",
+      "worklines/chaos/CH06_H11_A_PREDEATH_WITNESS.json key metadata"
+    ],
+    "reviewed_contract": "worklines/chaos/CH_OUTPUT_CHANNEL_TIMEOUT_REJECTION_TRIAGE_20261029.json",
+    "adopted": "source-derived deadline/error/snapshot delivery gap and precise main action/view probe only",
+    "not_adopted": [
+      "ordinary public-empty-pool case for original hidden30",
+      "full device or shared runtime acceptance",
+      "proof of rejected guest stale snapshot in real app",
+      "any other workline actual receipt"
+    ],
+    "run_count": 0,
+    "independentQA": false,
+    "main_receiver": "UNVERIFIED"
   }
 }
