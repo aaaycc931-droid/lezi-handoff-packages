@@ -1,8 +1,7 @@
 {
   "schema": "lezi.main.hc56_stage_views.publication.v1",
   "date_local": "2026-10-29",
-  "status": "ENGINE_REMOTE_READBACK_COMPLETE_MAIN_PUBLICATION_PENDING",
-  "handoff_base": "3828d0fbf2930ef4247589bf0f9324261767f05f",
+  "status": "ENGINE_AND_17_FILE_STAGE_REMOTE_READBACK_COMPLETE",
   "engine": {
     "commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
     "tree": "89c22a968f6aa82b5c58c91b5a578c77f4fee9f7",
@@ -87,6 +86,101 @@
     "gameplay_source_delta": 0,
     "new_observer_instrumentation": true
   },
+  "handoff_stage": {
+    "commit": "50016d400d4662a02d0d6376d3ce4a0ff4e8ef51",
+    "tree": "0639289a20abf0a3375f4107b0f88365918f48d3",
+    "parent": "3828d0fbf2930ef4247589bf0f9324261767f05f",
+    "remote_content_and_sha_readbacks": [
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "sha": "155807a98e1e8cdc10f9863bdcc3e326660b9256",
+        "content_equal": true
+      },
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "sha": "794b5506aaa56f0717fe56673f2c0b63765c98ac",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "sha": "0dbcc872b9d0661c0a3e9738fa7ab8f55f6f5d3b",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "sha": "7ed0388c50ca5da90f33e2fcdd8b9a23d3a70245",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "sha": "73c08d9ac22a317c4d60b0462118e99a2a65692a",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "sha": "260ac1d1535926b15c771478e0f106bb3447bbd2",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "sha": "4d0032a1908805c33b53e19c8987a6a384deddf2",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "sha": "d2f7e3e8d2485e4439ccb64cebcf7e9104e87f35",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "sha": "96bf399d3d84506eafe02a375d6eb6d533c6c2e8",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "sha": "f6b174c0f424245e6bdd1feb2d1b0722c1b5051b",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/HC56_STAGE_VIEW_PROGRESS.json",
+        "sha": "9720c57375f77f9bfc4617b68af384221eaecd42",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_HC56_STAGE_VIEW_REPORT.md",
+        "sha": "29812cfdb897f2f73b282c115b680d7f4259915f",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/HC56_STAGE_VIEW_PUBLICATION_VERIFICATION.json",
+        "sha": "091da21e0f79afc2bf4737fb78e6697710b8f577",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/standard/TASK_FROM_MAIN.json",
+        "sha": "3e94423df642545835383ba818112de199ffe6fb",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json",
+        "sha": "e7383359e820c9ba945ba4bfa13071c7cc31e034",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/chaos/TASK_FROM_MAIN.json",
+        "sha": "6262652cd2cedbdcb9de7eb1a08fc7b4e347c8d7",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/HC56_STAGE_VIEW_VALIDATION.json",
+        "sha": "2f637f4e2194dbb2db26621160130afeb3a01287",
+        "content_equal": true
+      }
+    ],
+    "protected_old_blobs": 753,
+    "main_head_at_read": "50016d400d4662a02d0d6376d3ce4a0ff4e8ef51",
+    "force": false
+  },
   "owner_artifact_saved": {
     "bytes": 303333,
     "sha256": "d27699139cd98cf06134b694a06dc63c94dff21b1531f07eabf0f1dca12f484d",
@@ -102,7 +196,11 @@
     "link": "https://chatgpt.com/library?file_id=libfile_c3612951e6e481918e24b683b408f86c&account_id=personal",
     "old_owner_archives_preserved": true
   },
-  "main_actual_readback_files": 0,
+  "actual_main_stage_files": 17,
+  "stage_fixed_entry": "worklines/main/START_HERE.txt",
+  "stage_next_action": "MAIN-ROOM-COMMITTED-OUTPUT-CHANNEL-20261029",
+  "full56_discharged": 0,
   "force": false,
-  "raw_authority_published": false
+  "raw_authority_published": false,
+  "receipt_scope": "Records already completed immutable engine/stage readbacks. This followup must itself be verified after publication; no future self hash claimed."
 }
