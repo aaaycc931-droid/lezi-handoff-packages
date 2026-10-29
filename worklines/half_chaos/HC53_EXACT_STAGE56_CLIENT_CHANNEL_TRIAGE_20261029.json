@@ -1,0 +1,4788 @@
+{
+  "schema": "lezi.hc.exact_stage56_client_channel_triage.v1",
+  "id": "HC-53-EXACT-STAGE56-CHANNEL-TRIAGE-20261029",
+  "date_local": "2026-10-29",
+  "source_handoff_head": "dc1f3c679fd9977222420da8c52d19d0373378d2",
+  "task": "NEXT-HC-EXACT-STAGE-56-CLIENT-EVIDENCE-TRIAGE",
+  "new_main_dispatch": "MAIN-HC56-EXACT-STAGE-VIEW-20261029",
+  "engine_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+  "engine_PR19": {
+    "draft": true,
+    "state": "open",
+    "merged": false,
+    "head_sha": "760caf57d454af0db3be92d5b52ffc3cc9078d06"
+  },
+  "source_blobs": {
+    "original_contract": "22abe23c22ab0032aa014e6a4afbf6f3f128b66f",
+    "main_previous_pairs": "a0b6d290f3216354f167725d39e2174dee709fff",
+    "pr19_public_results": "a3ec52fd163f2fd43688e84ea83996e74247abdb",
+    "main_task": "e7383359e820c9ba945ba4bfa13071c7cc31e034"
+  },
+  "verification": {
+    "scope": "independent static crosscheck original slot contract vs PR19 published source/result stage metadata; no private raw archival proof or new engine runs",
+    "errors": 0,
+    "counts": {
+      "slots": 56,
+      "source_pairs": {
+        "PAIR-PD05": 28,
+        "PAIR-PD06": 28
+      },
+      "stages": {
+        "main:closed": 28,
+        "normal-end": 28
+      },
+      "viewers": {
+        "red": 28,
+        "black": 28
+      },
+      "checkpoint_count": 200,
+      "requests": 110,
+      "engine_normalized_equal": 56,
+      "committed_room_slots": 0,
+      "client_delivered_slots": 0,
+      "complete_slots": 0,
+      "distinct_declared_normalization_paths": 22
+    },
+    "full_owner_raw_13m_jsonl_independently_recomputed": false,
+    "actual_main_author_25_tests_55files_873pass_reported_not_reexecuted": true
+  },
+  "exact_stage_synthesis": "PR19 reported and independently source-index-crosschecked 56 server-only precise game-state/player-view components; NOT 56 completed room+client+error duties.",
+  "requirement_matrix": [
+    {
+      "id": "CH53-01",
+      "layer": "exact_game_stage",
+      "expected": "actual main_action_atom_closed/formal_turn_settled immutable before next begin",
+      "verified": "PR19 published 200 event records + original 56 crossmatch",
+      "status": "BOUNDED_SERVER_COMPONENT_PRESENT_NOT_INDEPENDENT_RAW_QA",
+      "owner": "main engine; this line source review"
+    },
+    {
+      "id": "CH53-02",
+      "layer": "server_public_and_player_json",
+      "expected": "both authenticated red/black player JSON and public serialization at exact stage, preserving clocks/messages/effects",
+      "verified": "PR19 reports 200 public/400 player JSON, 112 paired player JSON and 56 normalized no-visible-difference under narrow issued ID mapping",
+      "status": "BOUNDED_COMPONENT_PRESENT_NOT_COMPLETE_CLIENT_OR_PRIVACY_QA",
+      "owner": "main existing observer"
+    },
+    {
+      "id": "CH53-03",
+      "layer": "committed_room_envelope_and_history",
+      "expected": "separate true post-commit room.updatedAt, message history, full public/player room packet vs synthetic request-entry envelope",
+      "verified": "PR19 explicit request-entry metadata only; withActionHistory appends success message after full action, not each stage",
+      "status": "MISSING_EXACT_STAGE_COMMITTED_PACKET;PRODUCT_INTERMEDIATE_SEND_NOT_AUTHORIZED",
+      "owner": "main output-channel research"
+    },
+    {
+      "id": "CH53-04",
+      "layer": "successful_command_receipt",
+      "expected": "actual post-action returned room and authorized serialized public/player views and action history, including clock/deadline",
+      "verified": "existing submitRemoteMove/submitRemoteHeroAbility and serializePublicRemoteRoom/playerRoomView source located, no consumer/channel evidence here",
+      "status": "MISSING_CALLER_SERIALIZATION_AND_DELIVERY_WITNESS",
+      "owner": "main owner; client/wire follow-up"
+    },
+    {
+      "id": "CH53-05",
+      "layer": "rejected_command_error",
+      "expected": "four original IN_CHECK rejections show actor-visible RuleError.code/message and unchanged room/clock through real caller error path",
+      "verified": "engine original 4 rejected and public stage count0; real client error payload not observed",
+      "status": "MISSING_ACTUAL_ERROR_SERIALIZER_TRANSPORT",
+      "owner": "main owner"
+    },
+    {
+      "id": "CH53-06",
+      "layer": "duplicate_and_actionId_conflict",
+      "expected": "prove exact same actionId retransmission, conflicting body and fresh new request separately with true receipts",
+      "verified": "original 110 source requests are not retransmissions; PD-S35 DS-S12 remain missing natural product stimuli",
+      "status": "MISSING_NATURAL_STIMULUS_AND_CLIENT_RECEIPTS",
+      "owner": "main source-bound contract / independentQA"
+    },
+    {
+      "id": "CH53-07",
+      "layer": "client_ui_behavior",
+      "expected": "red/black actual rendered messages, legal hints/buttons, clock, out-of-order/duplicate behavior",
+      "verified": "none observed; NET paused",
+      "status": "UNRUN_PRODUCT_AND_DEVICE_QA",
+      "owner": "main+UI after scoped authorization"
+    },
+    {
+      "id": "CH53-08",
+      "layer": "secret_and_privacy",
+      "expected": "private authority sealed, legitimate reveal differences judged source-locally, no hidden identity leak",
+      "verified": "PR19 56 component equal with narrow mapping, private key checks; raw owner-only not re-reviewed",
+      "status": "LIMITED_TWO_PAIR_NEGATIVE_EVIDENCE_NOT_GENERAL_PRIVACY_CERTIFICATION",
+      "owner": "main owner and independentQA"
+    }
+  ],
+  "original_missing_eight_preserved": [
+    "PD-S02",
+    "PD-S12",
+    "PD-S17",
+    "PD-S35",
+    "DS-S01",
+    "DS-S06",
+    "DS-S12",
+    "DS-S20"
+  ],
+  "client_witness_next_contract": {
+    "id": "HC-MAIN-ROOM-CLIENT-SOURCE-REQUEST-20261029",
+    "main_dependency": "MAIN-ROOM-COMMITTED-OUTPUT-CHANNEL-20261029",
+    "actions": [
+      "Read pinned PR19 remote-room withActionHistory, submitRemoteMove/submitRemoteHeroAbility, serializePublicRemoteRoom, playerRoomView and actual callers for success/duplicate/rejection",
+      "Differentiate after-action committed room responses from before-next-begin game-only stage projections; do not change production disclosure",
+      "Generate exact source-bound actor-visible public/player JSON + messages/error receipts for the original accepted and 4 rejected commands, and explicit fresh-vs-duplicate/conflict research source where valid",
+      "Track actual app/network delivery as separate optional stage; NET paused means no fabricated on-device/browser evidence",
+      "Keep owner raw state/secret and player packets out of public GitHub; publish only IDs, hashes and allowed summaries"
+    ],
+    "proposed_acceptance": "Full56 acceptance remains 0 until its full declared surfaces, client delivery and independent QA actually verified; game-stage component may be marked observed separately",
+    "no_new_enginerun_or_sharedcode_in_this_line": true
+  },
+  "slots": [
+    {
+      "comparison_id": "PAIR-PD05:R1:main:closed:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R1:main:closed",
+        "right": "MA-PD05-B:R1:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "30bafa47555cc9522601bb80cb2309a4a3846b82c00662266f51e98b54db39bd",
+        "sha256_right": "0633e60307412ef2163dd1931896eb96b5adc038269f16ed97f2d7eb3a8b68a4",
+        "bytes_left": 5168,
+        "bytes_right": 5168,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/0",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/0"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R1:main:closed:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R1:main:closed",
+        "right": "MA-PD05-B:R1:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "076d88060235d6f606bedfcff7347299928e3c9637a8fdc6e3df3a0c4eb15aac",
+        "sha256_right": "fe48e2d4716023263c34c89040d355a5e0bd97dfa39147a7f0427272ded01dc2",
+        "bytes_left": 5167,
+        "bytes_right": 5167,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/1",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/1"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R1:normal-end:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R1:normal-end",
+        "right": "MA-PD05-B:R1:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "e33f96b9cec90cc05b63ec6905a96ccbefff599f8cfcd2f6fc017aa3c5be66c3",
+        "sha256_right": "8f5e0d88bfb6d3ddceb3af70c6068cc65264be1cea40e1a092bcd5039f1c3343",
+        "bytes_left": 5429,
+        "bytes_right": 5429,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/2",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/2"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R1:normal-end:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R1:normal-end",
+        "right": "MA-PD05-B:R1:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "a6c8f1449401cf95a976bf1d9bb5d4e8d4c11b754656cc096c08d095dc6af5a9",
+        "sha256_right": "7248fc483691b6f8ec30a5c02ff9c07e83f58f6dbd4b6b8bf3026dc77c02a788",
+        "bytes_left": 5428,
+        "bytes_right": 5428,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/3",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/3"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B1:main:closed:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          3,
+          0
+        ],
+        "to": [
+          4,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B1:main:closed",
+        "right": "MA-PD05-B:B1:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "4bc4dfd8639e011305ddb49c1b8c2c19cc6f79d278b32287fc334e20fc30d340",
+        "sha256_right": "cf963047d4d57d097a02394f62a58ca4e66576e85c166f3c847accbbd32927b9",
+        "bytes_left": 5622,
+        "bytes_right": 5622,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/4",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/4"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B1:main:closed:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          3,
+          0
+        ],
+        "to": [
+          4,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B1:main:closed",
+        "right": "MA-PD05-B:B1:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "1ba4c8420d9b7f635fccc0924b620c6c5f03e417f62f4f1dbfabbf11518807e8",
+        "sha256_right": "78efe4c560f88b6b8af33759b88614097be723a4c623ec3c7eea96f2520fefb4",
+        "bytes_left": 5621,
+        "bytes_right": 5621,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/5",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/5"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B1:normal-end:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          3,
+          0
+        ],
+        "to": [
+          4,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B1:normal-end",
+        "right": "MA-PD05-B:B1:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "159db61592b4eed108374b5c93547d77fa4711106877e5ae0e350f6b0fe586af",
+        "sha256_right": "51938db508f09a313a57f319f0801226525c2137d37a6541bf89270000d22684",
+        "bytes_left": 5650,
+        "bytes_right": 5650,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/6",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/6"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B1:normal-end:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          3,
+          0
+        ],
+        "to": [
+          4,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B1:normal-end",
+        "right": "MA-PD05-B:B1:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "c89af92ad5866ddcef8adad6499043283bed44ff60f8a74142d241ac41258d4a",
+        "sha256_right": "393214835aacad084c0707eab98af03f8464fd2cb984f0c144fac1956f8ec8f8",
+        "bytes_left": 5649,
+        "bytes_right": 5649,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/7",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/7"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R2:main:closed:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          5
+        ],
+        "to": [
+          0,
+          4
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R2:main:closed",
+        "right": "MA-PD05-B:R2:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "e1a53519c020d5b9c70a2fad2b27caa6db36dd701feaab2d120832e89655e128",
+        "sha256_right": "cf306bd28a610edd2f7a3f88a7904e1c76764356ad96c52d1d3de81277a3487d",
+        "bytes_left": 5746,
+        "bytes_right": 5746,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/8",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/8"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R2:main:closed:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          5
+        ],
+        "to": [
+          0,
+          4
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R2:main:closed",
+        "right": "MA-PD05-B:R2:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "c1c9f5033b8fb81f4aa8ccb68f5a352986f4d16cbb008b479bf9164d205c24a8",
+        "sha256_right": "8e17343fb1fdc127387055932b5e1bcd374f46ea9fd6505f4f491d45bac46f7e",
+        "bytes_left": 5745,
+        "bytes_right": 5745,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/9",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/9"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R2:normal-end:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          5
+        ],
+        "to": [
+          0,
+          4
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R2:normal-end",
+        "right": "MA-PD05-B:R2:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "0aa6e4ba4901e49e2dd011b681dee5c1fe726f4ef4fc34a795f5f1f179c4e4b3",
+        "sha256_right": "93e9f91af866516a3e0df1abd3b94d786be9a0c7491dfc8631afc43b295dc657",
+        "bytes_left": 5751,
+        "bytes_right": 5751,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/10",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/10"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R2:normal-end:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          5
+        ],
+        "to": [
+          0,
+          4
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R2:normal-end",
+        "right": "MA-PD05-B:R2:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "21f5176ae49202dc42508f5cdf3dd2182f98cfef26d36fb7582909acef88aef0",
+        "sha256_right": "8e11c5954c971fb039602c765b32e785b190c77cd326cc8fb995f40ba4c7fd95",
+        "bytes_left": 5750,
+        "bytes_right": 5750,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/11",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/11"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B2:main:closed:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          4,
+          1
+        ],
+        "to": [
+          0,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B2:main:closed",
+        "right": "MA-PD05-B:B2:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "207f3b66b238f63be33835cd7bd6e3b47adb9955836d8cc5720aa29e9f72b590",
+        "sha256_right": "b754cbc0ee80a08501a5b8af56936af5adc5fd0ce9164672a4d70e8b5ed832cd",
+        "bytes_left": 5970,
+        "bytes_right": 5970,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/12",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/12"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B2:main:closed:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          4,
+          1
+        ],
+        "to": [
+          0,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B2:main:closed",
+        "right": "MA-PD05-B:B2:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "b8561efd19201a331c4f7d8fd8e9b300b4c1bb3887748769b98a54cad89c5f51",
+        "sha256_right": "47405927ca085825335792cbee89fb46544748b5f4144bda139b2398c95d6b94",
+        "bytes_left": 5969,
+        "bytes_right": 5969,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/13",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/13"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B2:normal-end:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          4,
+          1
+        ],
+        "to": [
+          0,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B2:normal-end",
+        "right": "MA-PD05-B:B2:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "fabd65cdbcfa777deef5aea3edc5d431c440d85c98cbad9790a3dec69836608c",
+        "sha256_right": "c197aef507bce7e76ab0d19f6502a6ad4785ca0ad0af2e5d9321bc9cddba9c6e",
+        "bytes_left": 5979,
+        "bytes_right": 5979,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/14",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/14"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B2:normal-end:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          4,
+          1
+        ],
+        "to": [
+          0,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B2:normal-end",
+        "right": "MA-PD05-B:B2:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "a01d794f2be1a9f6056bd7f012b4d90d407ab1a983a22d402cd82a8cbbe60679",
+        "sha256_right": "2c5dfcc5216765408ecb79ddd37b36d8f82ce06c810da2131252b7471fcc6eab",
+        "bytes_left": 5978,
+        "bytes_right": 5978,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/15",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/15"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R3:main:closed:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          4
+        ],
+        "to": [
+          0,
+          3
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R3:main:closed",
+        "right": "MA-PD05-B:R3:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "21909b55bb7d2f183eceb36f07ee80149273a7e2126d67784ca49c335bfbfccc",
+        "sha256_right": "08456b1d0d15003caefe8858e7a3d1a993fbb27eea41c12f042373848a3b950c",
+        "bytes_left": 6610,
+        "bytes_right": 6610,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/16",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/16"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R3:main:closed:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          4
+        ],
+        "to": [
+          0,
+          3
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R3:main:closed",
+        "right": "MA-PD05-B:R3:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "4aa9a4f6ca037a987e5e8667f9cc8f7f72e3990d384569b4551ebf4e2103ab6f",
+        "sha256_right": "1f0f439a3447c8da16c17ae120b54f6fe43da26d8bdb3bdc7be7c54169a52214",
+        "bytes_left": 6609,
+        "bytes_right": 6609,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/17",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/17"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R3:normal-end:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          4
+        ],
+        "to": [
+          0,
+          3
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R3:normal-end",
+        "right": "MA-PD05-B:R3:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "ca64c20f35bb0235a142bd828bf52d8011605f224ee3d50aaca33fd10cb279ec",
+        "sha256_right": "35dd08d0f55ca7ad76b33ef6617b65146b94c97bd968ae1dd3719b621a2d73dd",
+        "bytes_left": 6615,
+        "bytes_right": 6615,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/18",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/18"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R3:normal-end:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          4
+        ],
+        "to": [
+          0,
+          3
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R3:normal-end",
+        "right": "MA-PD05-B:R3:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "e748908273306f270186535b299a083e43bfc1766757027813168818f391fc0b",
+        "sha256_right": "7d81284f275bf9546c355e610d9e65f6fef3699922b558edd79c69af485c6572",
+        "bytes_left": 6614,
+        "bytes_right": 6614,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/19",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/19"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B3:main:closed:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          8,
+          3
+        ],
+        "to": [
+          8,
+          4
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B3:main:closed",
+        "right": "MA-PD05-B:B3:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "6ae4719c36ab0a27ce4d7a233315e60a4334a6df907ec68bd44f64f59d9594ad",
+        "sha256_right": "06d738acc70edaa1c4b27baceb5aa098bebb8c2eb7c980ab6c316e8ed8c5558d",
+        "bytes_left": 6412,
+        "bytes_right": 6412,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/20",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/20"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B3:main:closed:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          8,
+          3
+        ],
+        "to": [
+          8,
+          4
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B3:main:closed",
+        "right": "MA-PD05-B:B3:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "a5198592acaac84aa5532f6b103635da36bf4e05e8eff96c20c4f0900c8e5ea9",
+        "sha256_right": "bbac7bf69c9c2f9230668c1eaa6c9ee4c227a1fa16cd0414952c1fe79c509a0d",
+        "bytes_left": 6411,
+        "bytes_right": 6411,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/21",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/21"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B3:normal-end:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          8,
+          3
+        ],
+        "to": [
+          8,
+          4
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B3:normal-end",
+        "right": "MA-PD05-B:B3:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "16e9197eef4dd168bde30e3914a5cb8556be261f814eb8f1740234eef5a2c158",
+        "sha256_right": "dec95947fbd823556b6f4421fbea7a77f457d74408f89a803e4911644c8fc0f7",
+        "bytes_left": 6421,
+        "bytes_right": 6421,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/22",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/22"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:B3:normal-end:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          8,
+          3
+        ],
+        "to": [
+          8,
+          4
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:B3:normal-end",
+        "right": "MA-PD05-B:B3:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "ed5ddcbcfbd503bc8ab323b95800b4004284d352ee7f89875030b70e1f4dce8c",
+        "sha256_right": "3e79dbbf6fd6417b4648cb485adb87f792ce250fe5a10012e133a10a358151cc",
+        "bytes_left": 6420,
+        "bytes_right": 6420,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/23",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/23"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R4:main:closed:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          9
+        ],
+        "to": [
+          0,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R4:main:closed",
+        "right": "MA-PD05-B:R4:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "6fbdd794a8365caa08a4df731b3491cb211769d46df8b70677d1b2b97be467f6",
+        "sha256_right": "c2ba5b15695652b46401602744b89b2d1474dd357a1bb463256a6d9bcb984c2c",
+        "bytes_left": 6948,
+        "bytes_right": 6948,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/24",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/24"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R4:main:closed:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          9
+        ],
+        "to": [
+          0,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R4:main:closed",
+        "right": "MA-PD05-B:R4:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "1645af63170bb42d6b77a768b54505a4f1d724080198f4c485b2e380b0251b2e",
+        "sha256_right": "bcf5984ec724a3612b40bd2729129e2099a73cf57d0ee25fe6a2409194a6450c",
+        "bytes_left": 6947,
+        "bytes_right": 6947,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/25",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/25"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R4:normal-end:red",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          9
+        ],
+        "to": [
+          0,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R4:normal-end",
+        "right": "MA-PD05-B:R4:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "75958b1cdb0ec1039db2187818ee558d2259816a56eee550f36ec734b208ef60",
+        "sha256_right": "e15344489e4d0c6d32624796b04c42a3697680cad3e5bccff170c941280d3b2f",
+        "bytes_left": 6953,
+        "bytes_right": 6953,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/26",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/26"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD05:R4:normal-end:black",
+      "pair_id": "PAIR-PD05",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          9
+        ],
+        "to": [
+          0,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD05-A:R4:normal-end",
+        "right": "MA-PD05-B:R4:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "4d49d876706a8062cda6aa72bc73ff2f490a89adce285bc6af6d72d94fedd932",
+        "sha256_right": "415e2742f776299526cb99b272628987903397a944cdfbee208abf69f6fb89e4",
+        "bytes_left": 6952,
+        "bytes_right": 6952,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/27",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/27"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R1:main:closed:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R1:main:closed",
+        "right": "MA-PD06-B:R1:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "4ba5e28203b67cc763fe77eae285af9c524c7012686446b04bb9ee883e6e5865",
+        "sha256_right": "5f61b95b027d4adfc620a2da0cffb86a9dfb47597819d4513296f81ab8efc829",
+        "bytes_left": 5161,
+        "bytes_right": 5161,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/28",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/28"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R1:main:closed:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R1:main:closed",
+        "right": "MA-PD06-B:R1:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "a7dc0f3afb72452b2c031e603cc26de92b9d89eb74ba454a248dc317ea45faaf",
+        "sha256_right": "3a7f1b41313c3328bcd31207dde37060cad8f83920ea90ba8e920cd451770f74",
+        "bytes_left": 5160,
+        "bytes_right": 5160,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/29",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/29"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R1:normal-end:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R1:normal-end",
+        "right": "MA-PD06-B:R1:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "0e2949f40abbd34ecfc1430ff049a74ed2b7d05cc41fc41bb14e9aac31da29af",
+        "sha256_right": "49a4a31c170a1a608ba13a667577838cb13e954f1639734ab30efc5136b1ea0b",
+        "bytes_left": 5422,
+        "bytes_right": 5422,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/30",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/30"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R1:normal-end:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          0,
+          6
+        ],
+        "to": [
+          0,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R1:normal-end",
+        "right": "MA-PD06-B:R1:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "bfccf53a6e6ff0241ba68c232b44c542fbc324c30580f3a89676e6b9be668b1b",
+        "sha256_right": "89f8c5bee7cbb2634a96e8cb16dd6627cfa31fd9f2f567eddb2537b7fcdc7029",
+        "bytes_left": 5421,
+        "bytes_right": 5421,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/31",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/31"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B1:main:closed:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          5,
+          0
+        ],
+        "to": [
+          4,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B1:main:closed",
+        "right": "MA-PD06-B:B1:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "84a211c9512bb9ac9c9a1c7b7fab098b3360a9d02e92972a4d79c4cd64f71fab",
+        "sha256_right": "583fda9e8c86f0291ae843a6fd9d8c75d7419e3293a297f44cd746223119d737",
+        "bytes_left": 5615,
+        "bytes_right": 5615,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/32",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/32"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B1:main:closed:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          5,
+          0
+        ],
+        "to": [
+          4,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B1:main:closed",
+        "right": "MA-PD06-B:B1:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "2facc3dd71e7738e290e68b3419b6c81bd67335694a47cc9bd71844d1873b4f2",
+        "sha256_right": "886e9794c5439756c298c5b721ccde0410c8032decb2af0b2c832cd86819e465",
+        "bytes_left": 5614,
+        "bytes_right": 5614,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/33",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/33"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B1:normal-end:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          5,
+          0
+        ],
+        "to": [
+          4,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B1:normal-end",
+        "right": "MA-PD06-B:B1:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "24c09f08c6a213c61893504a6ac3d2580e7e4124290d7e8b6cb6c622c6a40581",
+        "sha256_right": "289819624b9a6b959c67cf1f46d12805ec0f92b7a386e577c565c4325bad1938",
+        "bytes_left": 5643,
+        "bytes_right": 5643,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/34",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/34"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B1:normal-end:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          5,
+          0
+        ],
+        "to": [
+          4,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B1:normal-end",
+        "right": "MA-PD06-B:B1:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "21e4efcb6c533f2505116c3dcc725564e1fbbd73f1cf1d3b83cdfe3b088ed0d4",
+        "sha256_right": "053222a6175d785ff444637caad3ea3259dcc5d322c193f66fa8b608d96ef75a",
+        "bytes_left": 5642,
+        "bytes_right": 5642,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/35",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/35"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R2:main:closed:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          2,
+          6
+        ],
+        "to": [
+          2,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R2:main:closed",
+        "right": "MA-PD06-B:R2:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "2b77868a43cb71dd8a4f80a931a1fc1e1fa9fca5ff387d2e19a4d85401a9f9f2",
+        "sha256_right": "8c5c0ca9402041a9785b252e288db9e88d1702025e06cd07f5c67e8708dc255b",
+        "bytes_left": 5809,
+        "bytes_right": 5809,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/36",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/36"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R2:main:closed:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          2,
+          6
+        ],
+        "to": [
+          2,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R2:main:closed",
+        "right": "MA-PD06-B:R2:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "803a899aa227f15f64ceb8f121dd693b0e9cc011a561c2d60e596d73b36bfdf6",
+        "sha256_right": "784e39693e8b486f63bbc3aa3742e894b38175f4576f0d4aa534aa23caa39fa0",
+        "bytes_left": 5808,
+        "bytes_right": 5808,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/37",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/37"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R2:normal-end:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          2,
+          6
+        ],
+        "to": [
+          2,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R2:normal-end",
+        "right": "MA-PD06-B:R2:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "cb9ff1da5bb77c47b55a21b262d9fe5948760361ca6be8387c828aa0838896e0",
+        "sha256_right": "a09bd3f8dd52ea96aa96239dab5652437b4830b0742858538faeb89ea2348261",
+        "bytes_left": 5814,
+        "bytes_right": 5814,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/38",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/38"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R2:normal-end:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          2,
+          6
+        ],
+        "to": [
+          2,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R2:normal-end",
+        "right": "MA-PD06-B:R2:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "817fbdc6767360f584cbced140923d5e0a9c55e2c10e3021529b5774c7180f3d",
+        "sha256_right": "4eb48f85a4d5e27df752c007cffc1c689812d112813da57c41e9adf229edd13c",
+        "bytes_left": 5813,
+        "bytes_right": 5813,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/39",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/39"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B2:main:closed:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          4,
+          1
+        ],
+        "to": [
+          3,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B2:main:closed",
+        "right": "MA-PD06-B:B2:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "55606c196e8ff0c6ceebdf2a774a2aa7422c01d22543dfc15e8a0db5612898ab",
+        "sha256_right": "ebbdb98cfd3fed0e2ae0e560105cce9166795e0c59120f07ec652982fa691528",
+        "bytes_left": 5932,
+        "bytes_right": 5932,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/40",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/40"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B2:main:closed:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          4,
+          1
+        ],
+        "to": [
+          3,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B2:main:closed",
+        "right": "MA-PD06-B:B2:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "5ae5503e21deb8a81bcb947689b4e63af482a5e6149649806a311f3346ffaa5d",
+        "sha256_right": "3e23e62df3ae37695b81ba9a77b6e0e01f2078d41c550926d0d92052a8da16c9",
+        "bytes_left": 5931,
+        "bytes_right": 5931,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/41",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/41"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B2:normal-end:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          4,
+          1
+        ],
+        "to": [
+          3,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B2:normal-end",
+        "right": "MA-PD06-B:B2:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "c381324a9098aea0a6004ffb246b652c7fe18a52cda42944b81ae72a9affc2da",
+        "sha256_right": "6c1ef357cc0c40df96af9ec153f74f06bc445579f18028c5f8ec0c9c6f10b59a",
+        "bytes_left": 5941,
+        "bytes_right": 5941,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/42",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/42"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B2:normal-end:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          4,
+          1
+        ],
+        "to": [
+          3,
+          1
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B2:normal-end",
+        "right": "MA-PD06-B:B2:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "7cf6d7a6d01430ee568dad2552ea7efdf5903adc5fd65a727b63ccc0ea6f5ae4",
+        "sha256_right": "254308b4cc375a8e010e888b83471c284640b1c5ce1ea9629b2927438d64e3aa",
+        "bytes_left": 5940,
+        "bytes_right": 5940,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/43",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/43"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R3:main:closed:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          6,
+          6
+        ],
+        "to": [
+          6,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R3:main:closed",
+        "right": "MA-PD06-B:R3:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "ce6661593ee7417ec9476c4e72865ea89362c4627b138571efd4cf3eab0e30f1",
+        "sha256_right": "1d6f0e37e1718d18f5ac77c5b54f7bc1d9d45de92d21220ce28543e71e306b84",
+        "bytes_left": 6132,
+        "bytes_right": 6132,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/44",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/44"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R3:main:closed:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          6,
+          6
+        ],
+        "to": [
+          6,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R3:main:closed",
+        "right": "MA-PD06-B:R3:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "f5f085a48ea02b4a497bfbde7f593a2acc88b7db983752a7f0d67e53cc83355c",
+        "sha256_right": "ea81550a19e2a4733efad4a1158e169c4dc56021e5fba4b9462a833378c20afa",
+        "bytes_left": 6131,
+        "bytes_right": 6131,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/45",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/45"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R3:normal-end:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          6,
+          6
+        ],
+        "to": [
+          6,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R3:normal-end",
+        "right": "MA-PD06-B:R3:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "8de0df4ddd71192ef9f36ea63e15a01c8a0a7cf8bb36e97be1c2da60b6330074",
+        "sha256_right": "55afb2e5933ce48c5eee6970077817839b989c07347930c055677c826d1db614",
+        "bytes_left": 6137,
+        "bytes_right": 6137,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/46",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/46"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R3:normal-end:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          6,
+          6
+        ],
+        "to": [
+          6,
+          5
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R3:normal-end",
+        "right": "MA-PD06-B:R3:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "33d2832c692df26be019a248eeebc035bae5138efebb0cd231075efa4561035e",
+        "sha256_right": "fd9d4ca9301fc2793a73a0ea924d4239789db48543504a57889582ebfb629df3",
+        "bytes_left": 6136,
+        "bytes_right": 6136,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/47",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/47"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B3:main:closed:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          8
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B3:main:closed",
+        "right": "MA-PD06-B:B3:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "a4f257f55f08bd4054c932987b28747872d9d743279a5cadf78c7c2932362efe",
+        "sha256_right": "6d054b7a1decc891e4e0336d8d1f9ef64b69eeb0368f38093892ac4b9c76e8bf",
+        "bytes_left": 6333,
+        "bytes_right": 6333,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/48",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/48"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B3:main:closed:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          8
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B3:main:closed",
+        "right": "MA-PD06-B:B3:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "e1baf5a46ea45437d4e285c5270cf3127d05ce4d575985cc7b92f7b170a4d9a5",
+        "sha256_right": "46e95835bd94f48fdf76152d7be3035a74a2b90c803aaa76c7b6b51a0ab3147a",
+        "bytes_left": 6332,
+        "bytes_right": 6332,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/49",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/49"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B3:normal-end:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          8
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B3:normal-end",
+        "right": "MA-PD06-B:B3:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "20e005cd2bb690e46075b151e74388af37cf8e1d485b6b99cac59bf8c78e5a00",
+        "sha256_right": "761f57589f9a6c0e6083c8eb53ee1a22207458336cc67c8249c890ab7d6e10a6",
+        "bytes_left": 6342,
+        "bytes_right": 6342,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/50",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/50"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:B3:normal-end:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "black",
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          8
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:B3:normal-end",
+        "right": "MA-PD06-B:B3:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "5a9ff7164ed95aa78d59c4b019c55234540985c85a2ad1f125700223dc1addb2",
+        "sha256_right": "52f517445baa18184601d6fd239457752e9ac093bab57fb364aaf10d3fb3794c",
+        "bytes_left": 6341,
+        "bytes_right": 6341,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/51",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/51"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R4:main:closed:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          3,
+          8
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R4:main:closed",
+        "right": "MA-PD06-B:R4:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "468ae965f5654921f08853638b1476b0035e43d625c959c8bea27f74a4d4f5b0",
+        "sha256_right": "98a5e34ca429f2f7bf6659f74ce1080f1297f7da4df2c196fca4bcb0a43bab17",
+        "bytes_left": 6933,
+        "bytes_right": 6933,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/52",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/52"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R4:main:closed:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "main:closed",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          3,
+          8
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R4:main:closed",
+        "right": "MA-PD06-B:R4:main:closed"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "37a698f664db18cf6965e8a19d8addb24121675396bc9ad66eb8904b4798e67e",
+        "sha256_right": "2b5b1d918b33eaa4923573967d4b118557b2ecca84060721214550e0e2599fc6",
+        "bytes_left": 6932,
+        "bytes_right": 6932,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/53",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/53"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R4:normal-end:red",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "red",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          3,
+          8
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R4:normal-end",
+        "right": "MA-PD06-B:R4:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "d949d2b0ec70c9db357578e4dd1b2253c927f3fc0988eb08474502fa547b755a",
+        "sha256_right": "bddad6e090024d8c3b8cd7e62872dfe70c863d4474e7a0d212fb29e9c2c00e23",
+        "bytes_left": 6938,
+        "bytes_right": 6938,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/54",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/54"
+      }
+    },
+    {
+      "comparison_id": "PAIR-PD06:R4:normal-end:black",
+      "pair_id": "PAIR-PD06",
+      "viewer_side": "black",
+      "stage": "normal-end",
+      "source_semantic_move": {
+        "actor": "red",
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          3,
+          8
+        ]
+      },
+      "matched_checkpoints": {
+        "left": "MA-PD06-A:R4:normal-end",
+        "right": "MA-PD06-B:R4:normal-end"
+      },
+      "precise_projection": {
+        "both_before_next_begin": true,
+        "server_authenticated_view_component": true,
+        "sha256_left": "b324b52c9945d115739f8cd80cf57a63a568c1485d04faae7428c670b69c0187",
+        "sha256_right": "68f10f4fecebaacc0186bae3eaca36969bafb120cff39cc769093e9a898e001e",
+        "bytes_left": 6937,
+        "bytes_right": 6937,
+        "normalized_visible_equal": true,
+        "permitted_context_mapping_left": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ],
+        "permitted_context_mapping_right": [
+          "/disconnects/players/<issued-player-key>",
+          "/messages/1/id",
+          "/messages/2/id",
+          "/messages/3/id",
+          "/messages/4/id",
+          "/messages/5/id",
+          "/messages/6/id",
+          "/roomId",
+          "/rps/assignments/black",
+          "/rps/assignments/red",
+          "/rps/lastResult/choices/<issued-player-key>",
+          "/rps/lastResult/loser",
+          "/rps/lastResult/winner",
+          "/rps/players/0",
+          "/rps/players/1",
+          "/rps/submitted/<issued-player-key>",
+          "/seats/guest/playerId",
+          "/seats/host/playerId",
+          "/state/actionRecords/0/actionId",
+          "/state/lastCompletedFormalTurn/mainActionId",
+          "/state/lastMove/actionId",
+          "/state/turnLifecycle/mainActionId"
+        ]
+      },
+      "residual_requirements": {
+        "committed_room_packet_and_history": "NOT_OBSERVED_AT_EXACT_STAGE",
+        "actual_success_or_refusal_or_duplicate_client_receipt": "NOT_OBSERVED",
+        "client_delivery_and_rendered_feedback": "NOT_OBSERVED",
+        "independent_QA": "NOT_RUN",
+        "complete_original_slot": "OPEN"
+      },
+      "source_pointers": {
+        "original": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json#/pair_source_readiness/comparison_slots/55",
+        "engine": "engine:review/half-chaos-stage-views/RESULTS_20261029.json#/comparisons/55"
+      }
+    }
+  ],
+  "formal64_pass": 0,
+  "complete_original56_pass": 0,
+  "NET": "PAUSED",
+  "scoring": "FROZEN",
+  "featuresReady": false,
+  "main_receipt_for_this_line": "UNKNOWN",
+  "other_modes_touched": false
+}
