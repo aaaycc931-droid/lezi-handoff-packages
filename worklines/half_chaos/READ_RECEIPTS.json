@@ -726,6 +726,14 @@
       "receiver_adopted": true,
       "scope": "shared clock/idempotence boundary only; no half-chaos R8 natural run",
       "full_mode_accepted": false
+    },
+    "half_chaos_client_output_r54": {
+      "source_engine_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+      "receiver_read": true,
+      "receiver_adopted": "static_caller_scope_only",
+      "report": "worklines/half_chaos/HC54_ROOM_CLIENT_OUTPUT_CALLER_AUDIT_20261029.json",
+      "engine_test_claims": "NONE_BY_RECEIVER",
+      "formal_acceptance": false
     }
   },
   "own_line_continuation": {
@@ -3045,5 +3053,33 @@
     "engine_runs_this_workline": 0,
     "other_receivers_adoption_not_asserted": true,
     "main_read_of_this_return": "UNKNOWN"
+  },
+  "r54_actual_client_output_caller_review": {
+    "date_local": "2026-10-29",
+    "report": "worklines/half_chaos/HC54_ROOM_CLIENT_OUTPUT_CALLER_AUDIT_20261029.json",
+    "actual_read": true,
+    "adopted_source_boundary_only": true,
+    "source_engine_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+    "original_contract": "FM15/FM16/FM17 OG05/OG06 plus PR19/HC53 stage scope",
+    "source_assertions_passed": 12,
+    "source_assertions_failed": 0,
+    "source_findings": 12,
+    "actionable_main_requests": 5,
+    "positive_evidence": [
+      "Existing post-action server room/public/own-player source functions",
+      "Existing Bluetooth jieqi-only host/player view and error message call paths",
+      "Actual source gate MODE_TRANSPORT_PENDING for other modes"
+    ],
+    "not_adopted": [
+      "half-chaos bluetooth mode approval or client delivery",
+      "actor-visible IN_CHECK code or message delivered",
+      "same-ID retransmission/conflict product behavior PASS",
+      "full56 privacy/client acceptance",
+      "normal UI/clock and hints delivered",
+      "independent QA or shared runtime fix"
+    ],
+    "engine_runs_this_line": 0,
+    "other_line_receiver_claims": false,
+    "main_has_read_this_new_return": "UNKNOWN"
   }
 }
