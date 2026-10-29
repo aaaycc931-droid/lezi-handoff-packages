@@ -4,7 +4,7 @@
   "workline": "standard",
   "prepared_at_local": "2026-10-15T11:23:21+08:00",
   "source_baseline": "LEZI-FOUR-WORKLINES-CLOSEOUT-2026-10-15-r1",
-  "status": "active_bounded_main_evidence_received_next_independent_ready",
+  "status": "active_independent_three_view_map_complete_next_main_R8_receipt_ready",
   "user_instruction": "现在开始进行分发工作",
   "authorization": "The user authorized scoped dispatch continuation after the receiver reads the fixed repository entry. Routine ZIP relay is not required; no pending rule approval is inferred.",
   "collaboration": {
@@ -1014,29 +1014,28 @@
     "resume_text": "继续《乐子象棋》普通象棋工作线。先核对最新远端HEAD与并发成果；读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt ，以 worklines/standard/CURRENT_STATE.json#latest_session_closeout 和 NEXT_ACTIONS.json#first 为准。已完成H21授鳞随机来源追溯及N=0/1/3/4/15、AS/AP/ES条件性索引的复验合同。下一任务 NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT（只读静态接口预检）尚未启动。正式NP/AS/AP/ES/RE与真实引擎测试/自然回放仍UNRUN；普通模式门禁不绕过。确认普通31/直接共享13/规则Δ0，评分冻结、NET暂停；保护新旧成果、增量写回并复读，不代填主线接收采用回执。"
   },
   "latest_task_completed": {
-    "id": "STD-RECEIVE-NP32-PUBLIC-QUERY-QUALIFICATION-20261029",
+    "id": "STD-INDEPENDENT-PRIVATE-PUBLIC-OBSERVABILITY-MAP-20261029",
     "date_local": "2026-10-29",
-    "report": "worklines/standard/reviews/STD_MAIN_PR15_PR17_EVIDENCE_RECEIPT_20261029.md",
-    "receipt": "worklines/standard/READ_RECEIPTS.json#receiver_verification_20261029",
-    "return_field": "worklines/standard/RETURN_TO_MAIN.json#main_pr15_pr17_receipt_20261029",
-    "source_dispatch": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
-    "received": true,
-    "adopted_as_bounded_evidence_only": true,
-    "original_contract_blob_equality_confirmed": true,
-    "original_negative_15_ids_matched": true,
-    "main_engine_actual_research_requests": 37,
-    "main_engine_H21_draw_receipts": 12,
-    "local_engine_runs": 0,
-    "formal_ordinary_acceptance": "UNRUN",
-    "independent_QA": "UNRUN",
-    "mode_featuresReady": false,
+    "source_head": "dc1f3c679fd9977222420da8c52d19d0373378d2",
+    "report": "worklines/standard/reviews/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_REVIEW_20261029.md",
+    "matrix": "worklines/standard/specs/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_MAP_20261029.json",
+    "source_verification": "original authorized ordinary/shared rules + published main engineering metadata, scoped static",
+    "view_roles": 3,
+    "rows": 18,
+    "negative_cases": 12,
+    "privacy_UI_wire_QA": "UNRUN",
+    "engine_runs_this_stage": 0,
+    "game_code_modified": false,
+    "engine_formal_ordinary_tests": "UNRUN",
     "ordinary_confirmations": 31,
     "direct_shared_confirmations": 13,
-    "gameplay_delta": 0,
+    "new_gameplay_confirmations": 0,
+    "rule_delta": 0,
     "scoring": "frozen",
     "NET": "paused",
-    "main_read_receipt_of_this_return": null,
-    "main_adoption_of_this_return": null
+    "featuresReady": false,
+    "actual_main_receiver_of_this_result": null,
+    "main_adoption_verified": null
   },
   "np_as_ap_es_observation_guard_matrix_20261025": {
     "id": "STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX-20261025",
@@ -1384,12 +1383,23 @@
     "source_head": "9e2a83b6613129c370cb9fe1872ef05a5e12fa82"
   },
   "next_priority_task": {
-    "id": "NEXT-STD-INDEPENDENT-PRIVATE-PUBLIC-OBSERVABILITY-MAP",
-    "subject": "普通模式玩家/对手/权威信息边界静态图",
-    "status": "READY_NOT_STARTED_INDEPENDENT",
-    "main_dependent": false,
-    "implementation_authorized": false,
-    "action": "限定对照H10首次候选/秘密宿主与二次使用、H15秘密培养和普通公开空池失败、D01公开条件触发与锚点、H21形态锁定至入场公开及H14/M07普通模式池资格的权威/本人/对手三个视图；引用已有H21/NP观察矩阵避免重写；只准备静态合法展示及反泄露文本，不改引擎、UI或共享代码，不声称动态测试通过。"
+    "id": "NEXT-STD-MAIN-R8-PR18-RECEIPT-20261029",
+    "subject": "普通线独立接收主线PR18的H02 R7保留／R8使用及到期实测",
+    "status": "READY_MAIN_NEW_EVIDENCE_ISSUED_NOT_RECEIVED",
+    "main_owned_shared_code": true,
+    "receiver_review_main_quota_required": false,
+    "source": "worklines/standard/TASK_FROM_MAIN.json#main_standard_r8_window_increment",
+    "main_handoff_report": "worklines/main/MAIN_STD_R8_WINDOW_REPORT.md",
+    "main_progress": "worklines/main/STD_R8_WINDOW_PROGRESS.json",
+    "engine_commit": "099eca44dbaab39bdedb02a9986f7d54e9761121",
+    "engine_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/18",
+    "action": "Actually read pinned PR18 code/fixtures/test results and compare 6 declared full32 extensions (R7 retained, R8 use/expiry, carrier ordinary move exit) with original H02 source and PR15 37 parent prefix; separate 92 accepted requests/16 duplicates/18 rejected probes from formal acceptance; independently fill only actual receiving/reading proof. No code, new rules or formal release.",
+    "constraints": [
+      "Do not automatically mark complete NG12 or NG11",
+      "Research tapes and 6 sequences are not production random sampling or independent QA",
+      "Keep H14/M07 pool exclusions, H10/H15/D01/H21 secret-view map and 31/13 confirmations unchanged",
+      "Score frozen, NET paused, product featuresReady false"
+    ]
   },
   "current_session_resume_20261029": {
     "status": "active",
@@ -1410,7 +1420,13 @@
     "NET": "paused",
     "next": "NEXT-STD-INDEPENDENT-PRIVATE-PUBLIC-OBSERVABILITY-MAP",
     "main_received_this_return_verified": null,
-    "main_adopted_this_return_verified": null
+    "main_adopted_this_return_verified": null,
+    "last_completed": "STD-INDEPENDENT-PRIVATE-PUBLIC-OBSERVABILITY-MAP-20261029",
+    "source_head_latest_at_stage_start": "dc1f3c679fd9977222420da8c52d19d0373378d2",
+    "concurrent_other_lines_preserved": true,
+    "new_next": "NEXT-STD-MAIN-R8-PR18-RECEIPT-20261029",
+    "pr18_receiver_verified": false,
+    "HC56_receiver_verified": false
   },
   "old_main_evidence_gate_20261029": {
     "G00": "Source contract and actual new code/results read in standard; no main receipt for this new return",
@@ -1423,5 +1439,19 @@
     "G07": "PR14-17 draft unmerged; featuresReady false",
     "new_public_query": "PR16 bounded public query evidence received",
     "new_qualification": "PR17 additive three-state API received; consumers not migrated"
+  },
+  "independent_observability_map_20261029": {
+    "id": "STD-INDEPENDENT-PRIVATE-PUBLIC-OBSERVABILITY-MAP-20261029",
+    "previous_next": "NEXT-STD-INDEPENDENT-PRIVATE-PUBLIC-OBSERVABILITY-MAP",
+    "status": "STATIC_SOURCE_MAP_DONE_NO_RUNTIME_QA",
+    "source_report": "worklines/standard/reviews/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_REVIEW_20261029.md",
+    "structured_matrix": "worklines/standard/specs/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_MAP_20261029.json",
+    "actual_read_receipt": "worklines/standard/READ_RECEIPTS.json#independent_observability_20261029",
+    "return_to_main": "worklines/standard/RETURN_TO_MAIN.json#independent_observability_map_20261029",
+    "notes": "H15 owner cannot view authority-bound training target; D01 ordinary public anchors distinct from dark modes; H10 secret locator/usage and H21 form timing limited; H14/M07 ordinary pool excluded",
+    "main_R8_new_evidence": "MAIN-STD-R8-NATURAL-WINDOW-20261028 issued but not actually independently reviewed or adopted here",
+    "HC56_new_evidence": "half-chaos phase-view delivered; not ordinary proof",
+    "main_read_of_this_return": null,
+    "main_adoption_of_this_return": null
   }
 }
