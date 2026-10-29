@@ -259,6 +259,13 @@
     "failure_root_cause": "unverified; no score source/budget changes",
     "native_command": "python scripts/research/native_send_jvm.py --parent-source-root=/immutable/engine-at-96fa739 --output=review/native-send-accounting/JVM_RESULTS_20261030.json"
   },
-  "actual_main_readback": "pending publication",
+  "actual_main_readback": {
+    "status": "IMMUTABLE_STAGE_17_CONTENT_AND_SHA_VERIFIED",
+    "stage_commit": "a2b1a06e666beb4fb3445c0c062675b46d9bf5e3",
+    "readback_files": 17,
+    "protected_existing_blobs": 777,
+    "total_blobs": 794,
+    "force": false
+  },
   "unselected_handoff_blobs": "must actually compare immutable remote tree; not infer from partial local materialization"
 }

@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.native_send.publication.v1",
   "date_local": "2026-10-30",
-  "status": "ENGINE_REMOTE_READBACK_COMPLETE_MAIN_PUBLICATION_PENDING",
+  "status": "ENGINE_AND_IMMUTABLE_MAIN_STAGE_READBACK_COMPLETE",
   "handoff_base": "562c41dadbbbef67ba0612b1b32791321d5c8c38",
   "engine": {
     "commit": "71145df45ad17215a3731e53150b6728e079e375",
@@ -114,8 +114,106 @@
     "force": false,
     "client_date": "2026-10-30"
   },
-  "main_actual_readback_files": 0,
+  "main_actual_readback_files": 17,
   "force": false,
   "raw_authority_published": false,
-  "owner_archives_modified": false
+  "owner_archives_modified": false,
+  "main_immutable_stage": {
+    "commit": "a2b1a06e666beb4fb3445c0c062675b46d9bf5e3",
+    "tree": "5c7de817cf0c0216c91d68e409116066efd4d31c",
+    "parent": "562c41dadbbbef67ba0612b1b32791321d5c8c38",
+    "remote_content_and_sha_readbacks": [
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "sha": "f4e4b38a93d2c5643b93eae47d57c3e7152948f7",
+        "content_equal": true
+      },
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "sha": "54e4a3689370722c4904941fb08c93d73a0bc652",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "sha": "375bb08b420541ab72b691e175ec4bd86dbe5f7a",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "sha": "26433689a10d38ff514753e0d59e68c707e830cd",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "sha": "2180df1e70696ef8b92864caa0cba5f114759fd5",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "sha": "16b10d8bda2529df3d0e7d954ac725e684335875",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "sha": "474ddae7568f8be6a0db8e1f0d29de565754f62d",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "sha": "b4d233186b4bfc999fc03b98c3cc12c5ceaf8739",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "sha": "b278c614e3a3e869914c155f2be1661acb960c15",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "sha": "fc6c1397e867825a80de97600a178c9180d5cc36",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/NATIVE_SEND_PROGRESS.json",
+        "sha": "f4e140209f376ef20be84a67cc8da874b284be01",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_NATIVE_SEND_REPORT.md",
+        "sha": "abeb4d002c7eb9e5da3c5bcd7b3b5930acf6b9fe",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/NATIVE_SEND_PUBLICATION_VERIFICATION.json",
+        "sha": "6995f6f0901ba4be20674ab098023db75b41fbda",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/standard/TASK_FROM_MAIN.json",
+        "sha": "12ef0b8109adca397231cb09c8129df541eb5040",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json",
+        "sha": "102e68ddd9a8bbcbaf9c0367a13118bea9770af0",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/chaos/TASK_FROM_MAIN.json",
+        "sha": "de0f996693ec3ad958626f27b54735acf7148435",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/NATIVE_SEND_VALIDATION.json",
+        "sha": "65dd7eeb5dfa8a3ca4f84cd4f3ae3386f2606385",
+        "content_equal": true
+      }
+    ],
+    "protected_old_blobs": 777,
+    "total_final_blobs": 794,
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "force": false,
+    "client_date": "2026-10-30"
+  },
+  "main_readback_completed_before_this_followup": true
 }
