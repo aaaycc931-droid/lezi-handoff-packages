@@ -134,7 +134,8 @@
     "originals_changed": false,
     "archive_payload_hashes_checked": 230,
     "dispatch_payload_hashes_checked": 216,
-    "full_chat_export_recovered": false
+    "full_chat_export_recovered": false,
+    "latest_session_closure": "worklines/half_chaos/HC55_SESSION_CLOSEOUT_20261029.json"
   },
   "completed_this_round": [
     "真实PR4/5/6/7 metadata/固定提交链核查，PR6实际24文件patch、PR7实际7文件patch读取；确定叠加式草稿代码并非默认分支缺漏可直接补单文件",
@@ -2776,24 +2777,32 @@
     }
   },
   "session_closure": {
-    "id": "HC-SESSION-CLOSEOUT-20261027-r51c",
-    "date_local": "2026-10-27",
-    "report": "worklines/half_chaos/HC51_SESSION_CLOSEOUT_20261027.json",
-    "main_new_task": "HC-RECEIVE-ORIGINAL12-EVIDENCE-20261027",
-    "new_engine_pr": 14,
-    "main_reported_12_executed": 12,
-    "main_reported_requests": 110,
-    "main_reported_atom_end": [
-      100,
-      100
-    ],
-    "main_reported_pair_view_comparisons": 42,
-    "independent_original64_acceptance": 0,
-    "actual_engine_full_results_read_by_this_chat": false,
+    "id": "HC-SESSION-CLOSEOUT-20261029-r55",
+    "date_local": "2026-10-29",
+    "report": "worklines/half_chaos/HC55_SESSION_CLOSEOUT_20261029.json",
+    "last_completed_revision": "HC-55-ORIGINAL110-CLIENT-OUTPUT-ORACLE-MATRIX-20261029",
+    "last_output_matrix": "worklines/half_chaos/HC55_ORIGINAL110_CLIENT_OUTPUT_ORACLE_MATRIX_20261029.json",
+    "actual_original_source_matches": {
+      "requests": 110,
+      "observation_checkpoints": 210,
+      "game_stage_server_projections": 200,
+      "mismatches": 0
+    },
+    "complete_original56_accepted": 0,
+    "formal_original64_accepted": 0,
+    "actual_half_chaos_client_deliveries": 0,
+    "independent_QA": false,
+    "owner_raw_not_independently_recomputed": true,
+    "main_read_and_adoption_of_return": "UNKNOWN",
+    "new_engine_runs_this_closeout": 0,
+    "game_code_modified_this_closeout": false,
+    "other_line_files_modified_this_closeout": false,
     "featuresReady": false,
     "scoring": "FROZEN",
     "NET": "PAUSED",
-    "next_id": "NEXT-HC-RECEIVE-MAIN-PR14-EVIDENCE-ACCOUNT-ORIGINAL64-210"
+    "next_id": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+    "next_status": "READY_SOURCE_DOCUMENT_ONLY",
+    "next_hand_off": "Check latest remote HEAD and TASK_FROM_MAIN.json before applying next; source-only, no engine or NET."
   },
   "r52_main_evidence_reception": {
     "report": "worklines/half_chaos/HC52_MAIN_EVIDENCE_AND_PUBLIC_QUERY_RECEPTION_20261029.json",
