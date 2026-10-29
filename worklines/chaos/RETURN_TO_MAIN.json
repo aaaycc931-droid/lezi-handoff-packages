@@ -442,9 +442,30 @@
         "engine_merge": false,
         "main_receiver": "UNKNOWN"
       }
+    },
+    "channel_deadline_triage_20261029": {
+      "id": "CH-CHANNEL-H11A-EXPIRE-REJECT-20261029",
+      "source_head": "728145c4c37e021e8190601e899a29445ca6fd3c",
+      "artifact": "worklines/chaos/CH_OUTPUT_CHANNEL_TIMEOUT_REJECTION_TRIAGE_20261029.json",
+      "source_pin": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+      "source_finding": "Potential host authority H11 A deadline auto-decline followed by rejected guest action without a new guest snapshot, based on actual source control flow; exact effect not runtime-proven",
+      "source_paths": [
+        "jieqi-engine/src/bluetooth-host-room.ts 80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+        "jieqi-engine/src/remote-room.ts 37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+        "jieqi-engine/web/app.ts 0ffd81fb73cf8e62eb4faaff4aa1751f9338557e"
+      ],
+      "main_probe_ids": [
+        "CH-CHANNEL-01-A-EXPIRE-REJECT-NO-PUSH",
+        "CH-CHANNEL-02-H15-SAME-PUBLIC-WIRE"
+      ],
+      "actual_receiver_source_read": true,
+      "actual_engine_execution": 0,
+      "formal_CH07_cases_new": 0,
+      "main_read_adoption": "UNKNOWN",
+      "next": "Main run source-qualified H11 A exact deadline and error/snapshot replay; return actual committed-output traces, then chaos reconciles"
     }
   },
-  "latest_phase_status": "BOUNDED_PR14_17_RECEPTION_RETAINED; NEW_PR18_19_SCOPED_AND_JIEQI_OUTPUT_CHANNEL_SOURCE_GAPS_RETURNED",
+  "latest_phase_status": "CHAOS_H11A_DEADLINE_REJECTION_CHANNEL_TRIAGE_SOURCE_RECORDED_NOT_EXECUTED",
   "latest_phase_changed_paths": [
     "worklines/chaos/START_HERE.txt",
     "worklines/chaos/READ_RECEIPTS.json",
