@@ -1,5 +1,7 @@
 # 当前模式设计入口
 
+**2026-10-29普通三视图静态审查新增入口：** [权威／拥有者／对手可见性审查](../../reviews/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_REVIEW_20261029.md)，[18条可见性守卫和12个反泄露负例（机读）](../../specs/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_MAP_20261029.json)。H10宿主、H15真实受训棋、D01普通公开锚点、H21形态时点及H14/M07普通池排除均逐源核对；不改已有确认、没有UI/网络/引擎隐私验收。10月27旧“引擎未实跑”的段落是当时历史：主线此后已在PR15—18发布**条件式受限普通32棋研究执行**，正式模式资格仍未通过；PR18仍待本线完整接收核证。
+
 **2026-10-27验收场景来源目录：** [普通31项确认的非运行正反守卫目录](../../reviews/ORDINARY_ACCEPTANCE_SCENARIO_CATALOG_REVIEW_20261027.md)，可机读`specs/ORDINARY_ACCEPTANCE_SCENARIO_CATALOG_20261027.json`。H21-common、H21-invincible、M04三项已有专项合同，仅链接不重造NP棋谱；普通全明自然棋谱与引擎测试均尚未完成。
 
 **玩家向规则阅读入口（2026-10-26）：** [普通象棋玩家规则简明说明 V1](../../guides/ORDINARY_CHESS_PLAYER_RULES_V1_20261026.md)。这是对已确认普通31项和本线共享13项的通俗导航，包含21个英雄设计条目、8个畸变设计条目与隐藏宿命；H14夜/M07混乱普通暂不入池，不等于普通模式当前已可正式游玩。完整合法性仍按下方普通差分与原确认／共享正文，正式测试UNRUN。
