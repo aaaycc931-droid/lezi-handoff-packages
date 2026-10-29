@@ -1,8 +1,7 @@
 {
   "schema": "lezi.main.standard_r8_window.publication.v1",
   "date_local": "2026-10-29",
-  "status": "ENGINE_REMOTE_READBACK_COMPLETE_MAIN_PUBLICATION_PENDING",
-  "handoff_base": "a851f62dd206807b6d65e4400e655aa76c578f75",
+  "status": "ENGINE_AND_17_FILE_STAGE_REMOTE_READBACK_COMPLETE",
   "engine": {
     "commit": "099eca44dbaab39bdedb02a9986f7d54e9761121",
     "tree": "f3d2370c9ed0636a2df4dd852072e9ad3858dab8",
@@ -71,7 +70,106 @@
     "protected_old_blobs": 573,
     "all_old_src_blobs_unchanged": true
   },
-  "main_actual_readback_files": 0,
+  "handoff_stage": {
+    "commit": "b1e06c17c47ea1d7760e3661c1d084c6a72907e3",
+    "tree": "1a5be36025e311153f4110c4754488080ee6422a",
+    "parent": "a851f62dd206807b6d65e4400e655aa76c578f75",
+    "remote_content_and_sha_readbacks": [
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "sha": "5627ec4b600dfdfb31dc364b3b973d1c3215940b",
+        "content_equal": true
+      },
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "sha": "0c22ef446edb43a7c4979417dff67022d44ba163",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "sha": "b03ffcce1fa73afd3b8141aa928606d70ef7b089",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "sha": "7f80f190e8bf31283f2f1d255251282eb1f0f0f1",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "sha": "9909ade127208c16e6b67a58d32bb7dfbaf398f9",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "sha": "fac1d05ec3f4bb47c9a1a4767fe9d171b1ffbb31",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "sha": "fcca82cfe3bc5e4fc946b9a751741cb06b3884a4",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "sha": "620db16a276a32c46da828d20d25b642607440ab",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "sha": "2f6979c9721cefea30a953cba514cf44ee0c3f1e",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "sha": "15dbcf521544956a338f8f9d2e640a7a0d74202c",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/STD_R8_WINDOW_PROGRESS.json",
+        "sha": "0903b96cc7d2495943ce651c7c0dd3e6289bc5c8",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_STD_R8_WINDOW_REPORT.md",
+        "sha": "37bf989b7959850050311e961118d8956f5af3e8",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/STD_R8_WINDOW_PUBLICATION_VERIFICATION.json",
+        "sha": "146f7631353d598f3e81baf579a5b7c1a177e7df",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/standard/TASK_FROM_MAIN.json",
+        "sha": "d5ad28e9921c3942fb42ec06760c3a5cd9aa18ae",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json",
+        "sha": "494f5be4125952236c19a9b8c57cb76b1fdf2bd6",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/chaos/TASK_FROM_MAIN.json",
+        "sha": "7aabb8c7e789897f9a914535adaa0d1b8a6eed17",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/STD_R8_WINDOW_VALIDATION.json",
+        "sha": "5ad6a732410600ecc1a9e387395b8b41858466e6",
+        "content_equal": true
+      }
+    ],
+    "protected_other_existing_blobs": 749,
+    "main_head_at_read": "b1e06c17c47ea1d7760e3661c1d084c6a72907e3",
+    "force": false
+  },
+  "actual_main_stage_files": 17,
+  "stage_fixed_entry": "worklines/main/START_HERE.txt",
+  "stage_next_action": "MAIN-HC56-EXACT-STAGE-VIEW-20261029",
+  "stage_protected_old_blobs": 749,
   "force": false,
-  "raw_authority_published": false
+  "raw_authority_published": false,
+  "receipt_scope": "Records already completed immutable engine and handoff-stage readbacks. Receipt followup must itself be verified after publication; no future self hash asserted."
 }
