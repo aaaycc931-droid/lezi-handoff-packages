@@ -314,5 +314,64 @@
     "scoring": "frozen",
     "NET": "paused",
     "wakeup_claimed": false
+  },
+  "main_bluetooth_receipt_increment": {
+    "id": "MAIN-BLUETOOTH-RECEIPT-CORRELATION-20261029",
+    "date_local": "2026-10-30",
+    "source_engine_commit": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
+    "engine_PR": "https://github.com/aaaycc931-droid/jieqi-engine/pull/21",
+    "state": "issued_pending_receiver_review",
+    "receiver_read_or_adopted": "unknown",
+    "inputs": [
+      "worklines/main/MAIN_BLUETOOTH_RECEIPT_REPORT.md",
+      "worklines/main/BLUETOOTH_RECEIPT_PROGRESS.json",
+      "engine:docs/BLUETOOTH_RECEIPT_CORRELATION_20261030.md",
+      "engine:review/bluetooth-receipt-correlation/RESULTS_20261030.json",
+      "engine:review/bluetooth-receipt-correlation/SOURCE_AUDIT_20261030.json"
+    ],
+    "scope": "Eligible jieqi actual caller FIFO schedules with recorded native/render endpoints. Current-id v2 ping/pong wait correlation; no acceptance/duplicate ACK, actual Java/radio/device or half/ordinary client evidence.",
+    "actions": [
+      "核HC54-08真实提前解锁及按编号等待的限定修复；两种新FIFO调度和旧/重复帧控制不可混作原110。",
+      "保留PR20错误后最新已提交快照，区分正常有序控制pong与规则接受/去重ACK；吞错发送故障对照明确仍有缺口。",
+      "本线自行维护实际读取/采用与更具体来源，不据主线jieqi离线结果宣称半混乱/普通客户端、56/64或真机验收。"
+    ],
+    "validation_reported": {
+      "new_tests": 19,
+      "final_related_files": 59,
+      "final_related_passed": 914,
+      "final_failed": 0,
+      "final_concurrency": 1,
+      "separate_web_static_passed": 50,
+      "binary_asset_checks_NOT_RUN": 4,
+      "compiled_code_modules": 37,
+      "full_asset_package_typecheck_APK_radio_DOM_independent_QA": false,
+      "initial_attempt": {
+        "exit_code": 1,
+        "tests": 914,
+        "passed": 913,
+        "failed": 1,
+        "failure": "unchanged scoring policy Q28/Q30/Q33-Q35 invalid_policy_execution under concurrency4; exact cause not independently verified"
+      },
+      "initial_failure_source_unchanged": true,
+      "failure_cause": "unconfirmed; isolation process has a finite timeout. Serial rerun passed; do not assert a measured root cause.",
+      "no_scoring_source_or_scores_changed": true,
+      "research_totals": {
+        "naturalFifoParentCurrentSchedules": 4,
+        "H15H11ParentCurrentComparisons": 6,
+        "complete56Discharged": 0,
+        "formal64Accepted": 0,
+        "actualDevices": 0
+      },
+      "remote_engine_path_readbacks": 15,
+      "protected_existing_engine_blobs": 611,
+      "verified_parent_local_files": 207
+    },
+    "next_main": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
+    "previous_task_body_preserved": true,
+    "new_gameplay_approval": false,
+    "new_mode_qualification": false,
+    "scoring": "frozen",
+    "NET": "paused",
+    "wakeup_claimed": false
   }
 }

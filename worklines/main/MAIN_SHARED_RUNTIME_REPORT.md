@@ -1,3 +1,5 @@
+【2026-10-30最新增量】PR21草稿96fa739修复旧快照/无关聊天错误提前解除来宾等待，复用原v2编号ping/pong，不能当裁定接受ACK。19新/914串行及另50静态通过，15代码路径复读、611旧blob保持；真实Java/radio/DOM仍未验，下一原生发送吞错与未知结果核算。详见[MAIN_BLUETOOTH_RECEIPT_REPORT.md](MAIN_BLUETOOTH_RECEIPT_REPORT.md)，以下保留历史范围。
+
 【2026-10-29最新增量】PR20草稿8161c34修复H11 A到期/拒绝后的已提交房间未同步，真实WebView控制器和房间的离线桥接对照通过，未改玩法/门禁/v2格式。20新/895相关和另50静态通过；半混乱110提交序列化/106重传控制另记，原56/64完整验收及真机仍未解。详见[MAIN_COMMITTED_OUTPUT_REPORT.md](MAIN_COMMITTED_OUTPUT_REPORT.md)，以下保留历史范围。
 
 【2026-10-29最新增量】PR19草稿760caf5补原200精确棋局时点投影、56组双世界玩家服务器投影对照；外层房间包/客户端送达未验，完整56和原64正式验收仍0。25新/55文件873项通过，父版/启用/关闭对照一致。完整边界及下一提交包通道见[MAIN_HC56_STAGE_VIEW_REPORT.md](MAIN_HC56_STAGE_VIEW_REPORT.md)。以下保留历史适用范围。

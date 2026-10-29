@@ -424,7 +424,7 @@
     },
     "resume_prompt": "继续《乐子象棋》主线。先核最新HEAD，读CURRENT_STATE.json#standard_np32、NP32_PROGRESS.json和MAIN_NP32_REPORT.md。PR15草稿680966f基于PR14，原普通32棋AS/AP/ES三个条件索引流前缀已真实执行37请求，37闭合+37正常结束后观察、12H21抽取receipt；39新增/51文件749项相关检查通过，14路径远端复读、541旧blob保持。owner-only原始轨迹已保存，按精确文件名lezi-main-np32-evidence-20261028.zip恢复；不是生产随机采样或正式普通模式资格化。下一MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028，对齐限定公开合法走法/威胁/终局查询与已闭合权威，隔离真实RNG和状态副作用。普通线新接收任务已发布，实际采用仍待其线。半混乱原64/210及56视图缺口、三线/山风/UI/H03都保留，评分冻结、NET暂停；不重复APK、不合并，阶段完成增量写回并复读。"
   },
-  "latest_continuation": "continuation_committed_output_20261029",
+  "latest_continuation": "continuation_bluetooth_receipt_20261030",
   "continuation_public_query_20261028": {
     "date_local": "2026-10-28",
     "source_handoff_head": "72dc9b59b961529c60200e37e0538a80d3312e3d",
@@ -1222,5 +1222,182 @@
       ]
     },
     "resume_prompt": "继续《乐子象棋》主线。核最新HEAD，读CURRENT_STATE.json#committed_output_channel、MAIN_COMMITTED_OUTPUT_REPORT.md和COMMITTED_OUTPUT_PROGRESS.json。PR20草稿8161c34基于PR19：按混乱线原seed476 H15/H11来源，在真实BluetoothHostRoom及生产WebView函数中复现A到期后权威已红方但旧错误路径不推新房间；现拒绝后error→最新已提交snapshot，房主本地拒绝也同步，发送失败不伪装规则拒绝。观测A截止65000而非套独立70000例。6对旧新权威/事件/RNG一致，3私密世界wire对照一致；原半混乱110完整提交输出及106精确载荷重传/4重复拒绝为新服务端探针。20新/58文件895项、另50 Web静态通过，37代码模块转换通过；4旧素材检查/全资产包/真机/完整DOM/全类型检查/独立QA未验。17引擎路径复读、595旧blob保持，新owner包独立保存。half/ordinary蓝牙门禁不改，原56/64完整验收仍0，非真实radio。已按注明范围读取三线当日回传，其PR20采用待其线。下一MAIN-BLUETOOTH-RECEIPT-CORRELATION-20261029，核等待态/请求编号/重复延迟快照关联，保留v2与公开权限。评分冻结、NET暂停，三线/英雄/UI素材/H03保护，不合并/部署/重复APK，阶段增量写回并复读。"
+  },
+  "continuation_bluetooth_receipt_20261030": {
+    "date_local": "2026-10-30",
+    "source_handoff_head": "6a21f16103c582079ee63b267413597770f80551",
+    "user_instruction": "继续这段聊天",
+    "stage_checkpoint_only": true,
+    "current_dialogue_automatically_closed": false,
+    "completed": {
+      "id": "MAIN-BLUETOOTH-RECEIPT-CORRELATION-20261029",
+      "date_local": "2026-10-30",
+      "status": "BOUNDED_REQUEST_WAIT_CORRELATION_FIXED_PUBLISHED_DRAFT_NATIVE_FAILURE_ACK_OPEN",
+      "owner": "main shared runtime consumer",
+      "source_handoff_read": "6a21f16103c582079ee63b267413597770f80551",
+      "engine_parent": "8161c348abeba3a99fa5a5b514252e69218f28fd",
+      "engine_commit": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
+      "engine_tree": "05a77b0efe9d8d19a4ddc7a2dc8b5dbe50d0f51b",
+      "draft_PR": 21,
+      "PR_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/21",
+      "merged": false,
+      "report": "worklines/main/MAIN_BLUETOOTH_RECEIPT_REPORT.md",
+      "progress": "worklines/main/BLUETOOTH_RECEIPT_PROGRESS.json",
+      "validation": "worklines/main/BLUETOOTH_RECEIPT_VALIDATION.json",
+      "publication_verification": "worklines/main/BLUETOOTH_RECEIPT_PUBLICATION_VERIFICATION.json",
+      "engine_report": "docs/BLUETOOTH_RECEIPT_CORRELATION_20261030.md",
+      "engine_results": "review/bluetooth-receipt-correlation/RESULTS_20261030.json",
+      "engine_source_audit": "review/bluetooth-receipt-correlation/SOURCE_AUDIT_20261030.json",
+      "authorization": {
+        "user_instruction": "继续这段聊天",
+        "inherited": "Persisted next task and shared technical implementation/draft/incremental handoff scope; scoring frozen, NET paused",
+        "actual_delta": "web/app.ts guest wait identity + existing v2 ping/pong ordering and lifecycle ID clearing; research/tests/evidence elsewhere",
+        "new_gameplay_or_protocol_schema_approval": 0
+      },
+      "confirmed_defects": [
+        {
+          "source": "HC54-08",
+          "trigger": "host periodic snapshot created before guest action, FIFO delayed until guest waits; host has not handled action",
+          "parent": "actual applyBluetoothView prematurely clears pendingAction",
+          "current": "keeps pending until current-id pong"
+        },
+        {
+          "source": "actual production sendBluetoothChat + real server CHAT_COOLDOWN",
+          "trigger": "two locally valid chat calls at10000/12001 delivered FIFO to host20001; game action follows but is not yet delivered",
+          "parent": "unrelated chat error / snapshots clear game wait",
+          "current": "keep current wait; original chat error silence preserved"
+        }
+      ],
+      "implementation": {
+        "guest": "action then same-ID existing ping; only matching pong clears pending and refreshes controls",
+        "snapshots_errors": "original authorized views/messages/IDs unchanged; no longer clear wait",
+        "host": "original ping echo and PR20 current committed snapshot synchronization retained",
+        "lifecycle": "clear pendingActionId along existing connect/disconnect/error boolean reset",
+        "retry": "no automatic uncertain-action retry",
+        "protocol_schema_delta": 0
+      },
+      "compatibility": {
+        "actual_recording_endpoint_cases": [
+          "new guest/new host",
+          "new guest/PR20 host",
+          "PR20 guest/new host"
+        ],
+        "legacy_host_error_snapshot_bug": "not retroactively fixed",
+        "pong_meaning": "processing order on the inspected intact ordered link, not acceptance/duplicate ACK"
+      },
+      "actual_evidence": {
+        "naturalFifoParentCurrentSchedules": 4,
+        "H15H11ParentCurrentComparisons": 6,
+        "complete56Discharged": 0,
+        "formal64Accepted": 0,
+        "actualDevices": 0,
+        "parent_current_authority_RNG_and_original_output_bytes_equal": 6,
+        "new_eligible_FIFO_schedules": 2,
+        "old_duplicate_frames": "explicit derived controls, not original natural replay",
+        "true_acceptance_or_duplicate_wire_ACK_added": 0
+      },
+      "known_failure": {
+        "kind": "EXPLICIT_FAULT_INJECTION_NOT_NATURAL_SOURCE_REPLAY",
+        "injected": "recording bridge silently drops action but sends ping, modeling native swallowed send failure only",
+        "pendingCleared": true,
+        "actionReachedAuthority": false,
+        "pongIsAcceptanceAck": false,
+        "actualNativeErrorCallbackExecuted": false
+      },
+      "validation_actual": {
+        "new_tests": 19,
+        "final_related_files": 59,
+        "final_related_passed": 914,
+        "final_failed": 0,
+        "final_concurrency": 1,
+        "separate_web_static_passed": 50,
+        "binary_asset_checks_NOT_RUN": 4,
+        "compiled_code_modules": 37,
+        "full_asset_package_typecheck_APK_radio_DOM_independent_QA": false,
+        "initial_attempt": {
+          "exit_code": 1,
+          "tests": 914,
+          "passed": 913,
+          "failed": 1,
+          "failure": "unchanged scoring policy Q28/Q30/Q33-Q35 invalid_policy_execution under concurrency4; exact cause not independently verified"
+        },
+        "initial_failure_source_unchanged": true,
+        "failure_cause": "unconfirmed; isolation process has a finite timeout. Serial rerun passed; do not assert a measured root cause.",
+        "no_scoring_source_or_scores_changed": true,
+        "research_totals": {
+          "naturalFifoParentCurrentSchedules": 4,
+          "H15H11ParentCurrentComparisons": 6,
+          "complete56Discharged": 0,
+          "formal64Accepted": 0,
+          "actualDevices": 0
+        },
+        "remote_engine_path_readbacks": 15,
+        "protected_existing_engine_blobs": 611,
+        "verified_parent_local_files": 207
+      },
+      "source_read": {
+        "handoff_commit": "6a21f16103c582079ee63b267413597770f80551",
+        "path": "worklines/half_chaos/HC54_ROOM_CLIENT_OUTPUT_CALLER_AUDIT_20261029.json",
+        "blob": "f4fe6bec578578ec800e76fbecd9636831a4c119",
+        "actual_scope": "complete caller audit including HC54-05/08/10 and owner requests/boundaries; pinned old engine findings reconciled against actual PR20 six immutable files, complete byte identity but targeted function review",
+        "adopted_scope": "pending correlation findings and native failure boundary as bounded technical inputs",
+        "other_source_lines_latest_receiving_read_this_round": false
+      },
+      "limits": [
+        "Actual complete production applyBluetoothView runs with final DOM renderers recorded; native send is a FIFO recording endpoint, not Java/radio runtime.",
+        "Java swallowed send error or partial frame can defeat inference from pong; no complete action ACK, retransmission policy or cross-connection guarantee.",
+        "Original110 is not redefined. New eligible caller schedules and original-source six comparisons do not discharge original56/64/client obligations.",
+        "Four binary asset checks/full assets/typecheck/APK/device/fullDOM/independentQA unverified. Initial parallel scoring-process failure passed serially; root cause unverified."
+      ],
+      "owner_artifacts": "No new raw authority artifact or ZIP; prior owner packages/identity untouched. Public evidence contains schedule/metadata/hashes only.",
+      "next_action": {
+        "id": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
+        "action": "沿真实Java send吞错及异步transport-error核发送结果与等待恢复；先形成兼容的已送/未知结果方案和离线故障证据，不把pong当规则接受。",
+        "basis": "本轮明确故障注入证明：action在记录桥端被吞弃而ping成功时，pong仍会解除等待，但权威从未接受行动。Java发送失败没有返回成功结果，异步错误与当前请求无关联。",
+        "requirements": [
+          "恢复真实桥接/发送/回调/连接生命周期的来源与可达时序，分开同步throw、异步IOException、部分写入、断连及未知提交结果。",
+          "先做现有已准入jieqi离线真实调用链。若需要改变原生返回/消息语义，明确兼容方案、旧端降级与真实差分；不伪称完整ACK或静默扩大v2。",
+          "保留PR20错误后最新已提交视图、本轮按请求编号的等待控制、原消息公开权限与模式门禁；未知行动不自动重放或补交。",
+          "不构建APK、不恢复NET；真实Java/radio/完整DOM/设备/独立QA未验，半混乱/普通客户端及原56/64完整验收保持。"
+        ],
+        "secondary": [
+          "普通NG11、暗子完整来源、三态消费者和其他游戏分支保持开放。"
+        ],
+        "separate_routes": [
+          "三线工作稿/确认/实际采用、山风/UI/H03/旧owner原始包保护。",
+          "评分与原账本冻结，NET暂停，不合并/部署/重复APK。"
+        ]
+      },
+      "protected": {
+        "three_lines": true,
+        "heroes_UI_assets_H03": true,
+        "scoring": "frozen",
+        "NET": "paused",
+        "src_gameplay_delta": 0,
+        "mode_gates_changed": false,
+        "protocol_schema_delta": 0,
+        "merged": false,
+        "APK_rebuilt": false
+      }
+    },
+    "next_action": {
+      "id": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
+      "action": "沿真实Java send吞错及异步transport-error核发送结果与等待恢复；先形成兼容的已送/未知结果方案和离线故障证据，不把pong当规则接受。",
+      "basis": "本轮明确故障注入证明：action在记录桥端被吞弃而ping成功时，pong仍会解除等待，但权威从未接受行动。Java发送失败没有返回成功结果，异步错误与当前请求无关联。",
+      "requirements": [
+        "恢复真实桥接/发送/回调/连接生命周期的来源与可达时序，分开同步throw、异步IOException、部分写入、断连及未知提交结果。",
+        "先做现有已准入jieqi离线真实调用链。若需要改变原生返回/消息语义，明确兼容方案、旧端降级与真实差分；不伪称完整ACK或静默扩大v2。",
+        "保留PR20错误后最新已提交视图、本轮按请求编号的等待控制、原消息公开权限与模式门禁；未知行动不自动重放或补交。",
+        "不构建APK、不恢复NET；真实Java/radio/完整DOM/设备/独立QA未验，半混乱/普通客户端及原56/64完整验收保持。"
+      ],
+      "secondary": [
+        "普通NG11、暗子完整来源、三态消费者和其他游戏分支保持开放。"
+      ],
+      "separate_routes": [
+        "三线工作稿/确认/实际采用、山风/UI/H03/旧owner原始包保护。",
+        "评分与原账本冻结，NET暂停，不合并/部署/重复APK。"
+      ]
+    },
+    "resume_prompt": "继续《乐子象棋》主线。核固定入口最新HEAD，读CURRENT_STATE.json#bluetooth_receipt_correlation、MAIN_BLUETOOTH_RECEIPT_REPORT.md和BLUETOOTH_RECEIPT_PROGRESS.json。PR21草稿96fa739基于PR20：真实生产applyBluetoothView/聊天/消息函数与实际房间复现FIFO旧快照及无关聊天错误提前清等待，改为action后同编号ping、只在相应pong后解锁；新旧v2互通，原snapshot/error字节和六组权威/RNG保持。19新/59文件914串行及另50静态通过，37代码模块转换；首轮旧评分进程1失败串行复核通过，根因未知。15引擎路径复读、611旧blob保护。pong不是接受/duplicate ACK；吞错action但ping成功的故障注入证明未知结果仍有缺口，下一MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030。真机/完整DOM/Java/radio/独立QA及原56/64完整验收未解。三线/英雄/UI/H03/旧包保护，评分冻结、NET暂停，不合并/部署/重复APK，阶段完成增量写回复读，不自动关闭对话。"
   }
 }
