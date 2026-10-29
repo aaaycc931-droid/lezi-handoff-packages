@@ -1,0 +1,3081 @@
+{
+  "schema": "lezi.half_chaos.main_increment_evidence_reception.v1",
+  "id": "HC52-20261029",
+  "date_local": "2026-10-29",
+  "source_handoff_commit": "96e78d142fe15fac87289a704f6aba89861da18d",
+  "task_source": "worklines/half_chaos/TASK_FROM_MAIN.json",
+  "actual_read_in_this_chat": [
+    "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+    "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+    "worklines/main/HC_EVIDENCE_REPORT.md",
+    "worklines/main/HC_EVIDENCE_ACCOUNTING.json",
+    "worklines/main/HC_EVIDENCE_64.json",
+    "worklines/main/HC_EVIDENCE_210.json",
+    "worklines/main/HC_EVIDENCE_PAIRS.json",
+    "worklines/main/MAIN_PUBLIC_PATH_QUERY_REPORT.md",
+    "worklines/main/PUBLIC_PATH_QUERY_PROGRESS.json",
+    "worklines/main/MAIN_PUBLIC_PATH_QUALIFICATION_REPORT.md",
+    "worklines/main/PUBLIC_PATH_QUALIFICATION_PROGRESS.json",
+    "engine:docs/SHARED_RUNTIME_RESEARCH_20261027.md",
+    "engine:review/shared-runtime/RESULTS_20261027.json",
+    "engine:scripts/research/original-half-chaos.ts",
+    "engine:docs/PUBLIC_PATH_QUERY_RESEARCH_20261028.md",
+    "engine:review/public-path-query/RESULTS_20261028.json",
+    "engine:review/public-path-query/DIFFERENTIAL_20261028.json",
+    "engine:docs/PUBLIC_PATH_QUALIFICATION_RESEARCH_20261028.md",
+    "engine:review/public-path-qualification/RESULTS_20261028.json",
+    "engine:review/public-path-qualification/SOURCE_AUDIT_20261028.json",
+    "engine:src/public-path-qualification.ts",
+    "engine:tests/public-path-qualification.test.ts"
+  ],
+  "source_blobs": {
+    "worklines/main/HC_EVIDENCE_64.json": "6e2d206c93f6c1ddc815703d446e87ad4c40d0b9",
+    "worklines/main/HC_EVIDENCE_210.json": "9a1dbf48d6d75f1459783494a6e80a4d4b30c07d",
+    "worklines/half_chaos/ASSERTION_EVIDENCE_MATRIX.json": "e46a29f3e69cc2b005dd7633a60c888a5882b8ce",
+    "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json": "be63d62bf94e029042e49089455af41b2b81b5a4"
+  },
+  "independent_public_source_crosschecks": {
+    "source_spec_rows": 64,
+    "evidence_spec_rows": 64,
+    "original_spec_text_and_checkpoint_links_equal": 64,
+    "source_observation_rows": 210,
+    "evidence_checkpoint_rows": 210,
+    "observation_ID_boundary_matches": 210,
+    "failures": 0,
+    "engine_result_vs_original_request_ID_order_and_expected_disposition": 110,
+    "engine_result_crosscheck_failures": 0
+  },
+  "inherited_main_engine_runtime": {
+    "PR": 14,
+    "commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "status": "open_draft_unmerged",
+    "original_replays": 12,
+    "request_count": 110,
+    "normal_mains": 100,
+    "before_main_attempts": 10,
+    "accepted_before_main": 6,
+    "rejected_before_main": 4,
+    "main_atom": 100,
+    "formal_settled": 100,
+    "returned_view_comparisons": 42
+  },
+  "inherited_main_offline_evidence": {
+    "owner_only_raw_trace_not_recomputed_here": true,
+    "raw_sha256": "ccea6579108af5f2547d8b4f8bc1179239967784411de135028e85277cc59259",
+    "owner_offline_checks_reported": 1404,
+    "owner_bounded_spec_assertions_reported": 61,
+    "owner_archive_not_in_public_repo": true
+  },
+  "spec_status_counts": {
+    "PARTIAL_MISSING_ORIGINAL_STIMULUS": 11,
+    "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN": 45,
+    "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY": 7,
+    "MISSING_NATURAL_POSITIVE_NO_DIRECT_CHECKPOINT": 1
+  },
+  "formal_original_specs_accepted": 0,
+  "complete_observation_obligations_discharged": 0,
+  "exact_stage_views_expected": 56,
+  "exact_stage_views_discharged": 0,
+  "actual_received_and_bounded_adopted": [
+    {
+      "id": "HC-RECEIVE-ORIGINAL12-EVIDENCE-20261027",
+      "received": true,
+      "adopted": "published runtime facts and bounded per-ID source classifications only",
+      "not_adopted": "full 64 spec acceptance, raw replay independent QA"
+    },
+    {
+      "id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+      "PR": 16,
+      "commit": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+      "received": true,
+      "adopted": "early H04/H03 revealed-ground M01/M04 public-contact guarded query evidence",
+      "not_adopted": "complete dark source/terminal coverage, client integration"
+    },
+    {
+      "id": "MAIN-PUBLIC-PATH-COVERAGE-20261028",
+      "PR": 17,
+      "commit": "1bda5bc9f7840d0d601a85fb0faeda842753a199",
+      "received": true,
+      "adopted": "legal/illegal/uncovered qualification semantics in guarded source",
+      "not_adopted": "legacy-true complete legality, secret inference or room/UI/terminal consumer migration"
+    }
+  ],
+  "missing_original_eight": [
+    "PD-S02",
+    "PD-S12",
+    "PD-S17",
+    "PD-S35",
+    "DS-S01",
+    "DS-S06",
+    "DS-S12",
+    "DS-S20"
+  ],
+  "other_natural_open": [
+    "PD-S31",
+    "PD-S32",
+    "DS-S16",
+    "DS-S22"
+  ],
+  "remaining_limits": [
+    "42 post-request red/black/public comparisons are not the original 56 exact-stage pre-next-begin red/black views",
+    "Owner-only 84MB raw authority not available to this receiver for independent recomputation",
+    "200 main/end exact-stage room view captures and actual client delivery remain missing",
+    "Uncovered dark movers/contacts and special/late effects are not implicitly rejected or accepted by new API",
+    "Independent QA, full typecheck, full mode and product rollout not done"
+  ],
+  "next_source_only": "NEXT-HC-EXACT-STAGE-56-CLIENT-EVIDENCE-TRIAGE",
+  "specification_rows": [
+    {
+      "id": "DS-S01",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-DS01-02:R2:main:closed"
+      ],
+      "missing_source_stimuli": [
+        "No preparation-time player-view checkpoint before first move."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/0"
+    },
+    {
+      "id": "DS-S02",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:R1:main:closed",
+        "MA-DS01-02:R2:main:closed",
+        "MA-DS01-02:B2:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/1"
+    },
+    {
+      "id": "DS-S03",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:B2:main:closed",
+        "MA-DS01-02:R3:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/2"
+    },
+    {
+      "id": "DS-S04",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:R3:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/3"
+    },
+    {
+      "id": "DS-S05",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:B2:pre-1:observation",
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:R3:main:closed",
+        "MA-DS01-02:R3:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/4"
+    },
+    {
+      "id": "DS-S06",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-DS01-02:B2:main:closed",
+        "MA-DS01-02:R3:pre-1:observation"
+      ],
+      "missing_source_stimuli": [
+        "Alternate ordinary rook evasion is source reasoning; main actually chosen is different."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/5"
+    },
+    {
+      "id": "DS-S07",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:B3:main:closed",
+        "MA-DS01-02:R4:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/6"
+    },
+    {
+      "id": "DS-S08",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:B3:main:closed",
+        "MA-DS01-02:R4:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/7"
+    },
+    {
+      "id": "DS-S09",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:B3:pre-1:observation",
+        "MA-DS01-02:R4:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/8"
+    },
+    {
+      "id": "DS-S10",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/9"
+    },
+    {
+      "id": "DS-S11",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS01-02:B3:pre-1:observation",
+        "MA-DS01-02:R4:main:closed",
+        "MA-DS01-02:R4:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/10"
+    },
+    {
+      "id": "DS-S12",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:pre-2:observation"
+      ],
+      "missing_source_stimuli": [
+        "No same-command transport retransmission or actor/payload conflict stimulus."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/11"
+    },
+    {
+      "id": "DS-S13",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS03:R1:main:closed",
+        "MA-DS03:R2:main:closed",
+        "MA-DS03:R3:main:closed",
+        "MA-DS03:B3:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/12"
+    },
+    {
+      "id": "DS-S14",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS03:B3:main:closed",
+        "MA-DS03:R4:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/13"
+    },
+    {
+      "id": "DS-S15",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS03:R4:pre-1:observation",
+        "MA-DS03:R4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/14"
+    },
+    {
+      "id": "DS-S16",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:pre-2:observation",
+        "MA-DS03:R4:pre-1:observation",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "missing_source_stimuli": [
+        "No natural safe-first unsafe-second hourglass pair in one window; all six internal steps not individually observable."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/15"
+    },
+    {
+      "id": "DS-S17",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS04:B2:main:closed",
+        "MA-DS04:R3:main:closed",
+        "MA-DS04:B3:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/16"
+    },
+    {
+      "id": "DS-S18",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS04:R3:main:closed",
+        "MA-DS04:B3:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/17"
+    },
+    {
+      "id": "DS-S19",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS04:B3:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/18"
+    },
+    {
+      "id": "DS-S20",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-DS04:B3:pre-1:observation",
+        "MA-DS04:B3:main:closed",
+        "MA-DS04:B3:normal-end"
+      ],
+      "missing_source_stimuli": [
+        "No post-main bomb resubmission stimulus to exercise refusal after window closure."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/19"
+    },
+    {
+      "id": "DS-S21",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS04:B3:pre-1:observation",
+        "MA-DS04:R4:main:closed",
+        "MA-DS04:B4:pre-1:observation",
+        "MA-DS04:B4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/20"
+    },
+    {
+      "id": "DS-S22",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS04:B3:pre-1:observation",
+        "MA-DS04:B4:pre-1:observation"
+      ],
+      "missing_source_stimuli": [
+        "No complete invalid caster/target/range/ammo/quota negative branch set."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/21"
+    },
+    {
+      "id": "DS-S23",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS05:B1:main:closed",
+        "MA-DS05:B2:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/22"
+    },
+    {
+      "id": "DS-S24",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS05:B5:pre-1:observation",
+        "MA-DS05:B5:main:closed",
+        "MA-DS05:R6:main:closed",
+        "MA-DS05:R6:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/23"
+    },
+    {
+      "id": "DS-S25",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS05:R6:normal-end",
+        "MA-DS05:B6:main:closed",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/24"
+    },
+    {
+      "id": "DS-S26",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-DS05:B2:main:closed",
+        "MA-DS05:B5:main:closed",
+        "MA-DS05:R6:normal-end",
+        "MA-DS05:B6:main:closed",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/25"
+    },
+    {
+      "id": "DS-S27",
+      "classification": "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY",
+      "source_checkpoints": [
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/26"
+    },
+    {
+      "id": "DS-S28",
+      "classification": "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY",
+      "source_checkpoints": [
+        "MA-DS01-02:R1:main:closed",
+        "MA-DS01-02:R1:normal-end",
+        "MA-DS01-02:B1:main:closed",
+        "MA-DS01-02:B1:normal-end",
+        "MA-DS01-02:R2:main:closed",
+        "MA-DS01-02:R2:normal-end",
+        "MA-DS01-02:B2:main:closed",
+        "MA-DS01-02:B2:normal-end",
+        "MA-DS01-02:B2:pre-1:observation",
+        "MA-DS01-02:R3:main:closed",
+        "MA-DS01-02:R3:normal-end",
+        "MA-DS01-02:R3:pre-1:observation",
+        "MA-DS01-02:B3:main:closed",
+        "MA-DS01-02:B3:normal-end",
+        "MA-DS01-02:B3:pre-1:observation",
+        "MA-DS01-02:R4:main:closed",
+        "MA-DS01-02:R4:normal-end",
+        "MA-DS01-02:R4:pre-1:observation",
+        "MA-DS01-02:R4:pre-2:observation",
+        "MA-DS03:R1:main:closed",
+        "MA-DS03:R1:normal-end",
+        "MA-DS03:B1:main:closed",
+        "MA-DS03:B1:normal-end",
+        "MA-DS03:R2:main:closed",
+        "MA-DS03:R2:normal-end",
+        "MA-DS03:B2:main:closed",
+        "MA-DS03:B2:normal-end",
+        "MA-DS03:R3:main:closed",
+        "MA-DS03:R3:normal-end",
+        "MA-DS03:B3:main:closed",
+        "MA-DS03:B3:normal-end",
+        "MA-DS03:R4:main:closed",
+        "MA-DS03:R4:normal-end",
+        "MA-DS03:R4:pre-1:observation",
+        "MA-DS04:R1:main:closed",
+        "MA-DS04:R1:normal-end",
+        "MA-DS04:B1:main:closed",
+        "MA-DS04:B1:normal-end",
+        "MA-DS04:R2:main:closed",
+        "MA-DS04:R2:normal-end",
+        "MA-DS04:B2:main:closed",
+        "MA-DS04:B2:normal-end",
+        "MA-DS04:R3:main:closed",
+        "MA-DS04:R3:normal-end",
+        "MA-DS04:B3:main:closed",
+        "MA-DS04:B3:normal-end",
+        "MA-DS04:B3:pre-1:observation",
+        "MA-DS04:R4:main:closed",
+        "MA-DS04:R4:normal-end",
+        "MA-DS04:B4:main:closed",
+        "MA-DS04:B4:normal-end",
+        "MA-DS04:B4:pre-1:observation",
+        "MA-DS05:R1:main:closed",
+        "MA-DS05:R1:normal-end",
+        "MA-DS05:B1:main:closed",
+        "MA-DS05:B1:normal-end",
+        "MA-DS05:R2:main:closed",
+        "MA-DS05:R2:normal-end",
+        "MA-DS05:B2:main:closed",
+        "MA-DS05:B2:normal-end",
+        "MA-DS05:R3:main:closed",
+        "MA-DS05:R3:normal-end",
+        "MA-DS05:B3:main:closed",
+        "MA-DS05:B3:normal-end",
+        "MA-DS05:R4:main:closed",
+        "MA-DS05:R4:normal-end",
+        "MA-DS05:B4:main:closed",
+        "MA-DS05:B4:normal-end",
+        "MA-DS05:R5:main:closed",
+        "MA-DS05:R5:normal-end",
+        "MA-DS05:B5:main:closed",
+        "MA-DS05:B5:normal-end",
+        "MA-DS05:B5:pre-1:observation",
+        "MA-DS05:R6:main:closed",
+        "MA-DS05:R6:normal-end",
+        "MA-DS05:B6:main:closed",
+        "MA-DS05:B6:normal-end",
+        "MA-DS05:R7:main:closed",
+        "MA-DS05:R7:normal-end",
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/27"
+    },
+    {
+      "id": "PD-S01",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD01:B1:main:closed",
+        "MA-PD01:B2:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/28"
+    },
+    {
+      "id": "PD-S02",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-PD01:B2:main:closed",
+        "MA-PD01:R3:main:closed"
+      ],
+      "missing_source_stimuli": [
+        "No separate empty-target/two-path negative command; existing positive geometry alone does not execute those branches."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/29"
+    },
+    {
+      "id": "PD-S03",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD01:R3:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/30"
+    },
+    {
+      "id": "PD-S04",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD01:R3:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/31"
+    },
+    {
+      "id": "PD-S05",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD01:R3:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/32"
+    },
+    {
+      "id": "PD-S06",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD02:R2:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/33"
+    },
+    {
+      "id": "PD-S07",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD02:R4:main:closed",
+        "MA-PD02:B4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/34"
+    },
+    {
+      "id": "PD-S08",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD02:R2:main:closed",
+        "MA-PD02:R5:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/35"
+    },
+    {
+      "id": "PD-S09",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD02:R5:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/36"
+    },
+    {
+      "id": "PD-S10",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD02:B4:main:closed",
+        "MA-PD02:R5:main:closed",
+        "MA-PD02:R5:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/37"
+    },
+    {
+      "id": "PD-S11",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD03:R5:main:closed",
+        "MA-PD03:B5:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/38"
+    },
+    {
+      "id": "PD-S12",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-PD03:R6:main:closed",
+        "MA-PD03:B6:main:closed"
+      ],
+      "missing_source_stimuli": [
+        "Royal-leg threat is source reasoning, not a declared alternate horse request."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/39"
+    },
+    {
+      "id": "PD-S13",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD03:B4:main:closed",
+        "MA-PD03:R5:normal-end",
+        "MA-PD03:R6:normal-end",
+        "MA-PD03:R7:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/40"
+    },
+    {
+      "id": "PD-S14",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD03:R7:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/41"
+    },
+    {
+      "id": "PD-S15",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD03:R5:main:closed",
+        "MA-PD03:B5:main:closed",
+        "MA-PD03:R6:main:closed",
+        "MA-PD03:B6:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/42"
+    },
+    {
+      "id": "PD-S16",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD04:R1:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/43"
+    },
+    {
+      "id": "PD-S17",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-PD04:R1:main:closed",
+        "MA-PD04:R2:main:closed"
+      ],
+      "missing_source_stimuli": [
+        "Forbidden premature royal-threat query/command is not a declared negative stimulus."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/44"
+    },
+    {
+      "id": "PD-S18",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD04:B3:main:closed",
+        "MA-PD04:R4:normal-end",
+        "MA-PD04:B4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/45"
+    },
+    {
+      "id": "PD-S19",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD04:R5:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/46"
+    },
+    {
+      "id": "PD-S20",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD04:R5:main:closed",
+        "MA-PD04:B5:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/47"
+    },
+    {
+      "id": "PD-S21",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD05-A:R1:main:closed",
+        "MA-PD05-A:R2:main:closed",
+        "MA-PD05-A:R3:main:closed",
+        "MA-PD05-B:R1:main:closed",
+        "MA-PD05-B:R2:main:closed",
+        "MA-PD05-B:R3:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/48"
+    },
+    {
+      "id": "PD-S22",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-B:R4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/49"
+    },
+    {
+      "id": "PD-S23",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-A:R4:normal-end",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD05-B:R4:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/50"
+    },
+    {
+      "id": "PD-S24",
+      "classification": "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY",
+      "source_checkpoints": [
+        "MA-PD05-A:R1:main:closed",
+        "MA-PD05-A:R1:normal-end",
+        "MA-PD05-A:B1:main:closed",
+        "MA-PD05-A:B1:normal-end",
+        "MA-PD05-A:R2:main:closed",
+        "MA-PD05-A:R2:normal-end",
+        "MA-PD05-A:B2:main:closed",
+        "MA-PD05-A:B2:normal-end",
+        "MA-PD05-A:R3:main:closed",
+        "MA-PD05-A:R3:normal-end",
+        "MA-PD05-A:B3:main:closed",
+        "MA-PD05-A:B3:normal-end",
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-A:R4:normal-end",
+        "MA-PD05-B:R1:main:closed",
+        "MA-PD05-B:R1:normal-end",
+        "MA-PD05-B:B1:main:closed",
+        "MA-PD05-B:B1:normal-end",
+        "MA-PD05-B:R2:main:closed",
+        "MA-PD05-B:R2:normal-end",
+        "MA-PD05-B:B2:main:closed",
+        "MA-PD05-B:B2:normal-end",
+        "MA-PD05-B:R3:main:closed",
+        "MA-PD05-B:R3:normal-end",
+        "MA-PD05-B:B3:main:closed",
+        "MA-PD05-B:B3:normal-end",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD05-B:R4:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/51"
+    },
+    {
+      "id": "PD-S25",
+      "classification": "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY",
+      "source_checkpoints": [
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-A:R4:normal-end",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD05-B:R4:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/52"
+    },
+    {
+      "id": "PD-S26",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD06-A:B1:main:closed",
+        "MA-PD06-A:B2:main:closed",
+        "MA-PD06-A:B3:main:closed",
+        "MA-PD06-B:B1:main:closed",
+        "MA-PD06-B:B2:main:closed",
+        "MA-PD06-B:B3:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/53"
+    },
+    {
+      "id": "PD-S27",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-B:R4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/54"
+    },
+    {
+      "id": "PD-S28",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-B:R4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/55"
+    },
+    {
+      "id": "PD-S29",
+      "classification": "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY",
+      "source_checkpoints": [
+        "MA-PD06-A:R1:main:closed",
+        "MA-PD06-A:R1:normal-end",
+        "MA-PD06-A:B1:main:closed",
+        "MA-PD06-A:B1:normal-end",
+        "MA-PD06-A:R2:main:closed",
+        "MA-PD06-A:R2:normal-end",
+        "MA-PD06-A:B2:main:closed",
+        "MA-PD06-A:B2:normal-end",
+        "MA-PD06-A:R3:main:closed",
+        "MA-PD06-A:R3:normal-end",
+        "MA-PD06-A:B3:main:closed",
+        "MA-PD06-A:B3:normal-end",
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-A:R4:normal-end",
+        "MA-PD06-B:R1:main:closed",
+        "MA-PD06-B:R1:normal-end",
+        "MA-PD06-B:B1:main:closed",
+        "MA-PD06-B:B1:normal-end",
+        "MA-PD06-B:R2:main:closed",
+        "MA-PD06-B:R2:normal-end",
+        "MA-PD06-B:B2:main:closed",
+        "MA-PD06-B:B2:normal-end",
+        "MA-PD06-B:R3:main:closed",
+        "MA-PD06-B:R3:normal-end",
+        "MA-PD06-B:B3:main:closed",
+        "MA-PD06-B:B3:normal-end",
+        "MA-PD06-B:R4:main:closed",
+        "MA-PD06-B:R4:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/56"
+    },
+    {
+      "id": "PD-S30",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-B:R4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/57"
+    },
+    {
+      "id": "PD-S31",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD01:R3:normal-end",
+        "MA-PD02:R5:main:closed",
+        "MA-PD02:R5:normal-end",
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-A:R4:normal-end",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD05-B:R4:normal-end",
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-A:R4:normal-end",
+        "MA-PD06-B:R4:main:closed",
+        "MA-PD06-B:R4:normal-end"
+      ],
+      "missing_source_stimuli": [
+        "No natural positive extra return-landing effect."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/58"
+    },
+    {
+      "id": "PD-S32",
+      "classification": "MISSING_NATURAL_POSITIVE_NO_DIRECT_CHECKPOINT",
+      "source_checkpoints": [],
+      "missing_source_stimuli": [
+        "No natural positive occupied/conflicting source return."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/59"
+    },
+    {
+      "id": "PD-S33",
+      "classification": "BOUNDED_TRACE_ASSERTIONS_RECONCILED_FULL_SPEC_OPEN",
+      "source_checkpoints": [
+        "MA-PD01:R1:main:closed",
+        "MA-PD01:R1:normal-end",
+        "MA-PD01:B1:main:closed",
+        "MA-PD01:B1:normal-end",
+        "MA-PD01:R2:main:closed",
+        "MA-PD01:R2:normal-end",
+        "MA-PD01:B2:main:closed",
+        "MA-PD01:B2:normal-end",
+        "MA-PD01:R3:main:closed",
+        "MA-PD01:R3:normal-end",
+        "MA-PD02:R1:main:closed",
+        "MA-PD02:R1:normal-end",
+        "MA-PD02:B1:main:closed",
+        "MA-PD02:B1:normal-end",
+        "MA-PD02:R2:main:closed",
+        "MA-PD02:R2:normal-end",
+        "MA-PD02:B2:main:closed",
+        "MA-PD02:B2:normal-end",
+        "MA-PD02:R3:main:closed",
+        "MA-PD02:R3:normal-end",
+        "MA-PD02:B3:main:closed",
+        "MA-PD02:B3:normal-end",
+        "MA-PD02:R4:main:closed",
+        "MA-PD02:R4:normal-end",
+        "MA-PD02:B4:main:closed",
+        "MA-PD02:B4:normal-end",
+        "MA-PD02:R5:main:closed",
+        "MA-PD02:R5:normal-end",
+        "MA-PD03:R1:main:closed",
+        "MA-PD03:R1:normal-end",
+        "MA-PD03:B1:main:closed",
+        "MA-PD03:B1:normal-end",
+        "MA-PD03:R2:main:closed",
+        "MA-PD03:R2:normal-end",
+        "MA-PD03:B2:main:closed",
+        "MA-PD03:B2:normal-end",
+        "MA-PD03:R3:main:closed",
+        "MA-PD03:R3:normal-end",
+        "MA-PD03:B3:main:closed",
+        "MA-PD03:B3:normal-end",
+        "MA-PD03:R4:main:closed",
+        "MA-PD03:R4:normal-end",
+        "MA-PD03:B4:main:closed",
+        "MA-PD03:B4:normal-end",
+        "MA-PD03:R5:main:closed",
+        "MA-PD03:R5:normal-end",
+        "MA-PD03:B5:main:closed",
+        "MA-PD03:B5:normal-end",
+        "MA-PD03:R6:main:closed",
+        "MA-PD03:R6:normal-end",
+        "MA-PD03:B6:main:closed",
+        "MA-PD03:B6:normal-end",
+        "MA-PD03:R7:main:closed",
+        "MA-PD03:R7:normal-end",
+        "MA-PD04:R1:main:closed",
+        "MA-PD04:R1:normal-end",
+        "MA-PD04:B1:main:closed",
+        "MA-PD04:B1:normal-end",
+        "MA-PD04:R2:main:closed",
+        "MA-PD04:R2:normal-end",
+        "MA-PD04:B2:main:closed",
+        "MA-PD04:B2:normal-end",
+        "MA-PD04:R3:main:closed",
+        "MA-PD04:R3:normal-end",
+        "MA-PD04:B3:main:closed",
+        "MA-PD04:B3:normal-end",
+        "MA-PD04:R4:main:closed",
+        "MA-PD04:R4:normal-end",
+        "MA-PD04:B4:main:closed",
+        "MA-PD04:B4:normal-end",
+        "MA-PD04:R5:main:closed",
+        "MA-PD04:R5:normal-end",
+        "MA-PD04:B5:main:closed",
+        "MA-PD04:B5:normal-end",
+        "MA-PD05-A:R1:main:closed",
+        "MA-PD05-A:R1:normal-end",
+        "MA-PD05-A:B1:main:closed",
+        "MA-PD05-A:B1:normal-end",
+        "MA-PD05-A:R2:main:closed",
+        "MA-PD05-A:R2:normal-end",
+        "MA-PD05-A:B2:main:closed",
+        "MA-PD05-A:B2:normal-end",
+        "MA-PD05-A:R3:main:closed",
+        "MA-PD05-A:R3:normal-end",
+        "MA-PD05-A:B3:main:closed",
+        "MA-PD05-A:B3:normal-end",
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-A:R4:normal-end",
+        "MA-PD05-B:R1:main:closed",
+        "MA-PD05-B:R1:normal-end",
+        "MA-PD05-B:B1:main:closed",
+        "MA-PD05-B:B1:normal-end",
+        "MA-PD05-B:R2:main:closed",
+        "MA-PD05-B:R2:normal-end",
+        "MA-PD05-B:B2:main:closed",
+        "MA-PD05-B:B2:normal-end",
+        "MA-PD05-B:R3:main:closed",
+        "MA-PD05-B:R3:normal-end",
+        "MA-PD05-B:B3:main:closed",
+        "MA-PD05-B:B3:normal-end",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD05-B:R4:normal-end",
+        "MA-PD06-A:R1:main:closed",
+        "MA-PD06-A:R1:normal-end",
+        "MA-PD06-A:B1:main:closed",
+        "MA-PD06-A:B1:normal-end",
+        "MA-PD06-A:R2:main:closed",
+        "MA-PD06-A:R2:normal-end",
+        "MA-PD06-A:B2:main:closed",
+        "MA-PD06-A:B2:normal-end",
+        "MA-PD06-A:R3:main:closed",
+        "MA-PD06-A:R3:normal-end",
+        "MA-PD06-A:B3:main:closed",
+        "MA-PD06-A:B3:normal-end",
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-A:R4:normal-end",
+        "MA-PD06-B:R1:main:closed",
+        "MA-PD06-B:R1:normal-end",
+        "MA-PD06-B:B1:main:closed",
+        "MA-PD06-B:B1:normal-end",
+        "MA-PD06-B:R2:main:closed",
+        "MA-PD06-B:R2:normal-end",
+        "MA-PD06-B:B2:main:closed",
+        "MA-PD06-B:B2:normal-end",
+        "MA-PD06-B:R3:main:closed",
+        "MA-PD06-B:R3:normal-end",
+        "MA-PD06-B:B3:main:closed",
+        "MA-PD06-B:B3:normal-end",
+        "MA-PD06-B:R4:main:closed",
+        "MA-PD06-B:R4:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/60"
+    },
+    {
+      "id": "PD-S34",
+      "classification": "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY",
+      "source_checkpoints": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD02:R2:main:closed",
+        "MA-PD02:R5:main:closed",
+        "MA-PD03:R2:main:closed",
+        "MA-PD03:R5:main:closed",
+        "MA-PD03:R7:main:closed",
+        "MA-PD04:R5:main:closed",
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-B:R4:main:closed"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/61"
+    },
+    {
+      "id": "PD-S35",
+      "classification": "PARTIAL_MISSING_ORIGINAL_STIMULUS",
+      "source_checkpoints": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD02:R5:main:closed",
+        "MA-PD03:R7:main:closed",
+        "MA-PD04:R5:main:closed",
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-B:R4:main:closed"
+      ],
+      "missing_source_stimuli": [
+        "No explicit duplicate transport or conflicting actor/payload stimulus."
+      ],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/62"
+    },
+    {
+      "id": "PD-S36",
+      "classification": "PARTIAL_SEMANTIC_OR_EVIDENCE_BOUNDARY",
+      "source_checkpoints": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD01:R3:normal-end",
+        "MA-PD02:R5:main:closed",
+        "MA-PD02:R5:normal-end",
+        "MA-PD03:B5:main:closed",
+        "MA-PD03:B6:main:closed",
+        "MA-PD03:R7:main:closed",
+        "MA-PD03:R7:normal-end",
+        "MA-PD04:R5:main:closed",
+        "MA-PD04:B5:main:closed",
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-A:R4:normal-end",
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD05-B:R4:normal-end",
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-A:R4:normal-end",
+        "MA-PD06-B:R4:main:closed",
+        "MA-PD06-B:R4:normal-end"
+      ],
+      "missing_source_stimuli": [],
+      "formal_pass": false,
+      "main_pointer": "HC_EVIDENCE_64.json#/rows/63"
+    }
+  ],
+  "observation_rows": [
+    {
+      "id": "MA-PD01:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/0"
+    },
+    {
+      "id": "MA-PD01:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/1"
+    },
+    {
+      "id": "MA-PD01:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/2"
+    },
+    {
+      "id": "MA-PD01:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/3"
+    },
+    {
+      "id": "MA-PD01:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/4"
+    },
+    {
+      "id": "MA-PD01:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/5"
+    },
+    {
+      "id": "MA-PD01:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/6"
+    },
+    {
+      "id": "MA-PD01:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/7"
+    },
+    {
+      "id": "MA-PD01:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/8"
+    },
+    {
+      "id": "MA-PD01:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/9"
+    },
+    {
+      "id": "MA-PD02:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/10"
+    },
+    {
+      "id": "MA-PD02:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/11"
+    },
+    {
+      "id": "MA-PD02:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/12"
+    },
+    {
+      "id": "MA-PD02:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/13"
+    },
+    {
+      "id": "MA-PD02:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/14"
+    },
+    {
+      "id": "MA-PD02:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/15"
+    },
+    {
+      "id": "MA-PD02:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/16"
+    },
+    {
+      "id": "MA-PD02:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/17"
+    },
+    {
+      "id": "MA-PD02:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/18"
+    },
+    {
+      "id": "MA-PD02:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/19"
+    },
+    {
+      "id": "MA-PD02:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/20"
+    },
+    {
+      "id": "MA-PD02:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/21"
+    },
+    {
+      "id": "MA-PD02:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/22"
+    },
+    {
+      "id": "MA-PD02:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/23"
+    },
+    {
+      "id": "MA-PD02:B4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/24"
+    },
+    {
+      "id": "MA-PD02:B4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/25"
+    },
+    {
+      "id": "MA-PD02:R5:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/26"
+    },
+    {
+      "id": "MA-PD02:R5:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/27"
+    },
+    {
+      "id": "MA-PD03:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/28"
+    },
+    {
+      "id": "MA-PD03:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/29"
+    },
+    {
+      "id": "MA-PD03:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/30"
+    },
+    {
+      "id": "MA-PD03:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/31"
+    },
+    {
+      "id": "MA-PD03:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/32"
+    },
+    {
+      "id": "MA-PD03:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/33"
+    },
+    {
+      "id": "MA-PD03:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/34"
+    },
+    {
+      "id": "MA-PD03:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/35"
+    },
+    {
+      "id": "MA-PD03:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/36"
+    },
+    {
+      "id": "MA-PD03:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/37"
+    },
+    {
+      "id": "MA-PD03:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/38"
+    },
+    {
+      "id": "MA-PD03:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/39"
+    },
+    {
+      "id": "MA-PD03:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/40"
+    },
+    {
+      "id": "MA-PD03:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/41"
+    },
+    {
+      "id": "MA-PD03:B4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/42"
+    },
+    {
+      "id": "MA-PD03:B4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/43"
+    },
+    {
+      "id": "MA-PD03:R5:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/44"
+    },
+    {
+      "id": "MA-PD03:R5:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/45"
+    },
+    {
+      "id": "MA-PD03:B5:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/46"
+    },
+    {
+      "id": "MA-PD03:B5:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/47"
+    },
+    {
+      "id": "MA-PD03:R6:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/48"
+    },
+    {
+      "id": "MA-PD03:R6:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/49"
+    },
+    {
+      "id": "MA-PD03:B6:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/50"
+    },
+    {
+      "id": "MA-PD03:B6:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/51"
+    },
+    {
+      "id": "MA-PD03:R7:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/52"
+    },
+    {
+      "id": "MA-PD03:R7:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/53"
+    },
+    {
+      "id": "MA-PD04:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/54"
+    },
+    {
+      "id": "MA-PD04:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/55"
+    },
+    {
+      "id": "MA-PD04:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/56"
+    },
+    {
+      "id": "MA-PD04:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/57"
+    },
+    {
+      "id": "MA-PD04:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/58"
+    },
+    {
+      "id": "MA-PD04:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/59"
+    },
+    {
+      "id": "MA-PD04:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/60"
+    },
+    {
+      "id": "MA-PD04:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/61"
+    },
+    {
+      "id": "MA-PD04:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/62"
+    },
+    {
+      "id": "MA-PD04:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/63"
+    },
+    {
+      "id": "MA-PD04:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/64"
+    },
+    {
+      "id": "MA-PD04:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/65"
+    },
+    {
+      "id": "MA-PD04:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/66"
+    },
+    {
+      "id": "MA-PD04:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/67"
+    },
+    {
+      "id": "MA-PD04:B4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/68"
+    },
+    {
+      "id": "MA-PD04:B4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/69"
+    },
+    {
+      "id": "MA-PD04:R5:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/70"
+    },
+    {
+      "id": "MA-PD04:R5:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/71"
+    },
+    {
+      "id": "MA-PD04:B5:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/72"
+    },
+    {
+      "id": "MA-PD04:B5:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/73"
+    },
+    {
+      "id": "MA-PD05-A:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/74"
+    },
+    {
+      "id": "MA-PD05-A:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/75"
+    },
+    {
+      "id": "MA-PD05-A:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/76"
+    },
+    {
+      "id": "MA-PD05-A:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/77"
+    },
+    {
+      "id": "MA-PD05-A:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/78"
+    },
+    {
+      "id": "MA-PD05-A:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/79"
+    },
+    {
+      "id": "MA-PD05-A:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/80"
+    },
+    {
+      "id": "MA-PD05-A:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/81"
+    },
+    {
+      "id": "MA-PD05-A:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/82"
+    },
+    {
+      "id": "MA-PD05-A:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/83"
+    },
+    {
+      "id": "MA-PD05-A:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/84"
+    },
+    {
+      "id": "MA-PD05-A:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/85"
+    },
+    {
+      "id": "MA-PD05-A:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/86"
+    },
+    {
+      "id": "MA-PD05-A:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/87"
+    },
+    {
+      "id": "MA-PD05-B:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/88"
+    },
+    {
+      "id": "MA-PD05-B:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/89"
+    },
+    {
+      "id": "MA-PD05-B:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/90"
+    },
+    {
+      "id": "MA-PD05-B:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/91"
+    },
+    {
+      "id": "MA-PD05-B:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/92"
+    },
+    {
+      "id": "MA-PD05-B:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/93"
+    },
+    {
+      "id": "MA-PD05-B:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/94"
+    },
+    {
+      "id": "MA-PD05-B:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/95"
+    },
+    {
+      "id": "MA-PD05-B:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/96"
+    },
+    {
+      "id": "MA-PD05-B:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/97"
+    },
+    {
+      "id": "MA-PD05-B:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/98"
+    },
+    {
+      "id": "MA-PD05-B:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/99"
+    },
+    {
+      "id": "MA-PD05-B:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/100"
+    },
+    {
+      "id": "MA-PD05-B:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/101"
+    },
+    {
+      "id": "MA-PD06-A:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/102"
+    },
+    {
+      "id": "MA-PD06-A:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/103"
+    },
+    {
+      "id": "MA-PD06-A:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/104"
+    },
+    {
+      "id": "MA-PD06-A:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/105"
+    },
+    {
+      "id": "MA-PD06-A:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/106"
+    },
+    {
+      "id": "MA-PD06-A:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/107"
+    },
+    {
+      "id": "MA-PD06-A:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/108"
+    },
+    {
+      "id": "MA-PD06-A:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/109"
+    },
+    {
+      "id": "MA-PD06-A:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/110"
+    },
+    {
+      "id": "MA-PD06-A:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/111"
+    },
+    {
+      "id": "MA-PD06-A:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/112"
+    },
+    {
+      "id": "MA-PD06-A:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/113"
+    },
+    {
+      "id": "MA-PD06-A:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/114"
+    },
+    {
+      "id": "MA-PD06-A:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/115"
+    },
+    {
+      "id": "MA-PD06-B:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/116"
+    },
+    {
+      "id": "MA-PD06-B:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/117"
+    },
+    {
+      "id": "MA-PD06-B:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/118"
+    },
+    {
+      "id": "MA-PD06-B:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/119"
+    },
+    {
+      "id": "MA-PD06-B:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/120"
+    },
+    {
+      "id": "MA-PD06-B:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/121"
+    },
+    {
+      "id": "MA-PD06-B:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/122"
+    },
+    {
+      "id": "MA-PD06-B:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/123"
+    },
+    {
+      "id": "MA-PD06-B:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/124"
+    },
+    {
+      "id": "MA-PD06-B:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/125"
+    },
+    {
+      "id": "MA-PD06-B:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/126"
+    },
+    {
+      "id": "MA-PD06-B:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/127"
+    },
+    {
+      "id": "MA-PD06-B:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/128"
+    },
+    {
+      "id": "MA-PD06-B:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/129"
+    },
+    {
+      "id": "MA-DS01-02:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/130"
+    },
+    {
+      "id": "MA-DS01-02:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/131"
+    },
+    {
+      "id": "MA-DS01-02:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/132"
+    },
+    {
+      "id": "MA-DS01-02:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/133"
+    },
+    {
+      "id": "MA-DS01-02:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/134"
+    },
+    {
+      "id": "MA-DS01-02:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/135"
+    },
+    {
+      "id": "MA-DS01-02:B2:pre-1:observation",
+      "boundary": "after_accepted_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/136"
+    },
+    {
+      "id": "MA-DS01-02:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/137"
+    },
+    {
+      "id": "MA-DS01-02:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/138"
+    },
+    {
+      "id": "MA-DS01-02:R3:pre-1:observation",
+      "boundary": "after_accepted_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/139"
+    },
+    {
+      "id": "MA-DS01-02:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/140"
+    },
+    {
+      "id": "MA-DS01-02:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/141"
+    },
+    {
+      "id": "MA-DS01-02:B3:pre-1:observation",
+      "boundary": "after_accepted_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/142"
+    },
+    {
+      "id": "MA-DS01-02:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/143"
+    },
+    {
+      "id": "MA-DS01-02:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/144"
+    },
+    {
+      "id": "MA-DS01-02:R4:pre-1:observation",
+      "boundary": "after_rejected_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/145"
+    },
+    {
+      "id": "MA-DS01-02:R4:pre-2:observation",
+      "boundary": "after_rejected_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/146"
+    },
+    {
+      "id": "MA-DS01-02:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/147"
+    },
+    {
+      "id": "MA-DS01-02:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/148"
+    },
+    {
+      "id": "MA-DS03:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/149"
+    },
+    {
+      "id": "MA-DS03:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/150"
+    },
+    {
+      "id": "MA-DS03:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/151"
+    },
+    {
+      "id": "MA-DS03:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/152"
+    },
+    {
+      "id": "MA-DS03:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/153"
+    },
+    {
+      "id": "MA-DS03:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/154"
+    },
+    {
+      "id": "MA-DS03:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/155"
+    },
+    {
+      "id": "MA-DS03:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/156"
+    },
+    {
+      "id": "MA-DS03:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/157"
+    },
+    {
+      "id": "MA-DS03:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/158"
+    },
+    {
+      "id": "MA-DS03:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/159"
+    },
+    {
+      "id": "MA-DS03:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/160"
+    },
+    {
+      "id": "MA-DS03:R4:pre-1:observation",
+      "boundary": "after_rejected_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/161"
+    },
+    {
+      "id": "MA-DS03:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/162"
+    },
+    {
+      "id": "MA-DS03:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/163"
+    },
+    {
+      "id": "MA-DS04:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/164"
+    },
+    {
+      "id": "MA-DS04:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/165"
+    },
+    {
+      "id": "MA-DS04:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/166"
+    },
+    {
+      "id": "MA-DS04:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/167"
+    },
+    {
+      "id": "MA-DS04:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/168"
+    },
+    {
+      "id": "MA-DS04:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/169"
+    },
+    {
+      "id": "MA-DS04:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/170"
+    },
+    {
+      "id": "MA-DS04:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/171"
+    },
+    {
+      "id": "MA-DS04:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/172"
+    },
+    {
+      "id": "MA-DS04:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/173"
+    },
+    {
+      "id": "MA-DS04:B3:pre-1:observation",
+      "boundary": "after_rejected_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/174"
+    },
+    {
+      "id": "MA-DS04:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/175"
+    },
+    {
+      "id": "MA-DS04:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/176"
+    },
+    {
+      "id": "MA-DS04:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/177"
+    },
+    {
+      "id": "MA-DS04:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/178"
+    },
+    {
+      "id": "MA-DS04:B4:pre-1:observation",
+      "boundary": "after_accepted_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/179"
+    },
+    {
+      "id": "MA-DS04:B4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/180"
+    },
+    {
+      "id": "MA-DS04:B4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/181"
+    },
+    {
+      "id": "MA-DS05:R1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/182"
+    },
+    {
+      "id": "MA-DS05:R1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/183"
+    },
+    {
+      "id": "MA-DS05:B1:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/184"
+    },
+    {
+      "id": "MA-DS05:B1:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/185"
+    },
+    {
+      "id": "MA-DS05:R2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/186"
+    },
+    {
+      "id": "MA-DS05:R2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/187"
+    },
+    {
+      "id": "MA-DS05:B2:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/188"
+    },
+    {
+      "id": "MA-DS05:B2:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/189"
+    },
+    {
+      "id": "MA-DS05:R3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/190"
+    },
+    {
+      "id": "MA-DS05:R3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/191"
+    },
+    {
+      "id": "MA-DS05:B3:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/192"
+    },
+    {
+      "id": "MA-DS05:B3:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/193"
+    },
+    {
+      "id": "MA-DS05:R4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/194"
+    },
+    {
+      "id": "MA-DS05:R4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/195"
+    },
+    {
+      "id": "MA-DS05:B4:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/196"
+    },
+    {
+      "id": "MA-DS05:B4:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/197"
+    },
+    {
+      "id": "MA-DS05:R5:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/198"
+    },
+    {
+      "id": "MA-DS05:R5:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/199"
+    },
+    {
+      "id": "MA-DS05:B5:pre-1:observation",
+      "boundary": "after_accepted_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/200"
+    },
+    {
+      "id": "MA-DS05:B5:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/201"
+    },
+    {
+      "id": "MA-DS05:B5:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/202"
+    },
+    {
+      "id": "MA-DS05:R6:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/203"
+    },
+    {
+      "id": "MA-DS05:R6:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/204"
+    },
+    {
+      "id": "MA-DS05:B6:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/205"
+    },
+    {
+      "id": "MA-DS05:B6:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/206"
+    },
+    {
+      "id": "MA-DS05:R7:pre-1:observation",
+      "boundary": "after_accepted_non_main_request",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "ACTUAL_RETURNED_PLAYER_AND_PUBLIC_VIEWS_CAPTURED",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/207"
+    },
+    {
+      "id": "MA-DS05:R7:main:closed",
+      "boundary": "after_main_atom",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/208"
+    },
+    {
+      "id": "MA-DS05:R7:normal-end",
+      "boundary": "after_normal_end_effects",
+      "authority": "CAPTURED_AND_RECONCILED",
+      "stage_view": "NOT_CAPTURED_AT_THIS_SEMANTIC_STAGE",
+      "client": "NOT_CAPTURED",
+      "full_pass": false,
+      "main_pointer": "HC_EVIDENCE_210.json#/rows/209"
+    }
+  ],
+  "this_line_engine_runs": 0,
+  "engine_code_edits": 0,
+  "featuresReady": false,
+  "scoring": "FROZEN",
+  "NET": "PAUSED",
+  "other_modes_changed": false,
+  "main_receiver_of_this_return": "UNKNOWN"
+}
