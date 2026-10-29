@@ -3144,3 +3144,8 @@ PD05-A/B与PD06-A/B两组分别7条公开主行动，声明及静态逐步走棋
 ### 8.79 半混乱r54｜FM15–17/OG05–06真实房间输出与客户端源码调用链（2026-10-29）
 本线依最新任务审查固定PR19源码。逐项定位实际submitRemoteMove/submitRemoteHeroAbility返回与withActionHistory消息、publicRemoteRoom/serializePublicRemoteRoom/playerRoomView验证、蓝牙房间host/guest视图、web/app.ts操作/快照/错误/渲染以及Android WebView到RFCOMM消息调用。静态断言12/12，详细12项来源、级别和5项主线请求见HC54_ROOM_CLIENT_OUTPUT_CALLER_AUDIT_20261029.json。
 关键边界：BluetoothHostRoom构造只接受jieqi，half_chaos门禁未开；host处理move/hero_ability取返回room、丢失duplicate标记，现有BluetoothRoomViews没有独立duplicate回执；web端访客错误payload仅{message}、未返回RuleError.code；访客pendingAction由任意已收到的snapshot或error清除，snapshot ID来自updatedAt/phase而非确定绑定原actionId。上述是来源级证据/未验风险，未运行或复现实际故障。原110请求中4次预期IN_CHECK拒绝与原FM15/OG05对应，但不能视为客户端已经看到错误；原PD-S35/DS-S12真实重传/同ID冲突未解决。阶段投影56对有PR19服务器证据，完整原56验收仍0；客户端实际半混乱送达0，独立QA未进行。保留半混乱/混乱/普通各线成果、主线共享源码、产品门禁、山风/UI和NET暂停。下一个本线独立文档任务只按110原请求与FM15/16/17组织输出oracle，真实新运行及客户端证据由主线MAIN-ROOM-COMMITTED-OUTPUT-CHANNEL负责。
+
+
+### 8.80 半混乱r55｜原110动作客户端输出证据Oracle与210观察点源对应（2026-10-29）
+已登记新报告HC55_ORIGINAL110_CLIENT_OUTPUT_ORACLE_MATRIX_20261029.json，独立对照原12回放、110原始请求、FM14 110来源调用路径、原210观察点和PR14/PR19公开结果。原100主行动都成功并分别映射200精确主原子/正式结束阶段游戏服务器视图；原10回合前英雄动作中6成功、4 IN_CHECK 拒绝，这10个源观察点未被PR19误算为正式动作阶段的玩家视图。110个请求源ID唯一，PR14实际disposition、PR19阶段数与源期望全部对应，200阶段哈希仅指主线公开PR19服务器精确游戏组件，不是原56完整消息或客户端送达。原normal-end checkpoints按回合关联，原数据并无request_declaration，保持其源类型历史值不修改。
+本线不读取或公开主线owner-only原始秘密/玩家字节，不重复运行引擎；返回后的研究view原始字节、真实客户端动作成功/拒绝回执、同ID重传/变化请求、真实提交房间消息/客户端时钟与提示、独立QA仍缺。R4:pre-2是新ID的同危险状态请求，不是重传；PD-S35/DS-S12原缺口仍在。完整原56证据义务0、正式64规格0，不因110个服务器结果自动升格。READ_RECEIPTS依据本线实际阅读填写，RETURN_TO_MAIN附回主线输出通道的真实缺口；下一独立优先排主线证据闭合需求，绝不越权修改共享runtime、开放半混乱门禁或恢复NET。主线当前受理本回传未知。
