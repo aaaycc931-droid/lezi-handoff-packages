@@ -1,0 +1,113 @@
+{
+  "schema": "lezi.chaos.channel_rejection_source_triage.v1",
+  "id": "CH-CHANNEL-H11A-EXPIRE-REJECT-20261029",
+  "mode_id": "jieqi",
+  "date_local": "2026-10-29",
+  "head_at_source_review": "728145c4c37e021e8190601e899a29445ca6fd3c",
+  "purpose": "Specific main-owned observable delivery gap at H11 A deadline when action processing advances room time before a rejected action; not a new CH07 static oracle, runtime pass or duplicate fixture.",
+  "source_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+  "source_reads": [
+    {
+      "file": "jieqi-engine/src/bluetooth-host-room.ts",
+      "blob": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+      "scope": "complete",
+      "observation": "BluetoothHostRoom.handle first assigns advanceRemoteRoomTime to this.room, then switch on action; no rollback on thrown RuleError; views() invokes time advance again"
+    },
+    {
+      "file": "jieqi-engine/src/remote-room.ts",
+      "blob": "37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+      "scope": "selected 1038-1128,1234-1312,1458-1585",
+      "observation": "At now>=pending H11 A deadline, advanceRemoteRoomTime applies server auto-skip then reopens formal clock; late action rejected or routed after that new authority"
+    },
+    {
+      "file": "jieqi-engine/web/app.ts",
+      "blob": "0ffd81fb73cf8e62eb4faaff4aa1751f9338557e",
+      "scope": "selected 985-1014,1246-1312,2452-2559,3843-3897",
+      "observation": "On accepted action, publishBluetoothViews sends guest snapshot. On rejected guest action, catch sends error envelope but does not itself call publishBluetoothViews. Battle timer interval updates visual countdown only; timeout comment explicitly leaves auto lose/switch unresolved."
+    },
+    {
+      "file": "jieqi-engine/src/bluetooth-protocol.ts",
+      "blob": "d3d665f53588d30dc1b6e3a31fd3f300043cd7cd",
+      "scope": "complete",
+      "observation": "createBluetoothSnapshot wraps already-sanitized player view and encode validates protocol envelope/size; protocol API alone does not prove physical delivery."
+    },
+    {
+      "file": "jieqi-engine/tests/h15-current-runtime.test.ts",
+      "blob": "70692bf6f4db1cd2cfcd0fe0376ad7c3c02eab7c3",
+      "scope": "complete",
+      "observation": "H15 actual source fixtures seed476 A and seed92 B; existing tests compare public/red/black after equal public capture but not H11 deadline rejected Bluetooth transport after internal advance."
+    },
+    {
+      "file": "worklines/standard/reviews/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_REVIEW_20261029.md",
+      "blob": "83378395d25e69571d014f611da11cd5b6e26220",
+      "scope": "complete",
+      "observation": "Authority, skill owner and opponent remain separate: H15 exact recruited target, progress and failure unavailable to both players; static review not proof of chaos client acceptance"
+    },
+    {
+      "file": "worklines/standard/specs/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_MAP_20261029.json",
+      "blob": "c071c0a7ef5b1e86869470a12a22b6b2a7d83818",
+      "scope": "selected H15 OV-05..08, NL-03..05",
+      "observation": "Ordinary fixed32 empty-pool result cannot be imported as original-jieqi concealed30 source"
+    }
+  ],
+  "replay_preconditions": {
+    "exact_original_chaos_fixture": "PR14 tests/h15-current-runtime.test.ts helper prepared(seed=476,recruit0/1) with createRemoteRoom/join/hero intro/selection/RPS/prep, red move (0,9)->(0,6) at 5000, black move (0,3)->(0,4) at 10000 gives pending H11 A",
+    "expected_original_A_deadline": "70000 from independent PR14 H11-A pinned example when original black1 starts at 10000; verify actual local deadline from returned source room, do not hardcode in runtime driver",
+    "paired_secret_control": "seed476 recruit0 causes trainee covered-25 death on red1; recruit1 leaves covered-00 alive; same public captured true red cannon permitted",
+    "not_source_equivalent": "PR18 ordinary R8/H02 or PR19 half-chaos server stage are NOT this original H11/H15 room fixture"
+  },
+  "urgent_probe": {
+    "id": "CH-CHANNEL-01-A-EXPIRE-REJECT-NO-PUSH",
+    "arrange": "Two authenticated Bluetooth host/guest views from source-qualified original jieqi H11/H15 room. Immediately after actual black1 H11 A opens, publish both snapshots and capture exact deadline/revision.",
+    "act": [
+      "Control: submit valid H11-A decision at observed deadline-1; require expected accepted return and published new guest view",
+      "Boundary: in fresh identical source room at observed deadline, deliver guest's old A command with current-at-open action/revision through host.handle",
+      "Record host stored authoritative room after advanceRemoteRoomTime even if thrown, host/guest views before/after, error envelope ID/message, actual guest snapshot sends, next legal red request, and any scheduled tick; use fixed test clocks",
+      "Repeat deadline+1 and identical actionId duplicate controls; distinguish H11 A auto-decline + reopened red turn from black1 timeout; do not assume errno before engine actual call"
+    ],
+    "source_path_hypothesis": "Potential stale guest view: host advances and auto-skips A, then stale A request throws; web/app.ts guest-error catch sends error only, not the newly committed room snapshot. UI battle timer alone does not force host refresh at 0 in examined path.",
+    "expected_if_broadcast_consistent": "After any host authoritative time-driven transition, guest must eventually observe source-correct committed authority and H15 privacy, with explicit evidenced sync/broadcast path and bounded timing.",
+    "possible_differential": "Host now red formal turn while guest still shows black H11 A, pending next valid request/explicit snapshot, causing action rejection or stale clock; also confirm neither error nor newly emitted snapshot leaks training target or failure.",
+    "requires_main_actual_run": true,
+    "defect_confirmed": false,
+    "actual_wire_client_observed": false
+  },
+  "paired_privacy_probe": {
+    "id": "CH-CHANNEL-02-H15-SAME-PUBLIC-WIRE",
+    "arrange": "Run source-exact seed476 recruit0 and recruit1 through captured red1 and black1 pending A, plus seed92 recruit1 vs recruit0 through A skip and red2 capture.",
+    "compare": [
+      "Actual committed room public serializer, authenticated host and guest playerRoomView, encoded snapshot payload and displayed client view for same public checkpoint",
+      "Exact messages (including allowed chosen cannon and successful start), error texts, revisions, update times, lawful captured piece true type, formal clock",
+      "No bound pieceId, current progress, real-time failed/live or secret RNG disclosure even in owning player's private view or hidden interface strings",
+      "At or after H11 shuffle rebind, only compare source-required derived secrecy fields and same public prefixes; do NOT demand unconditional byte equality across legitimately diverging public boards"
+    ],
+    "checkpoints": [
+      "after red1 capture",
+      "after black1 opens A",
+      "before/at A deadline",
+      "after true A accept or server auto-decline",
+      "after duplicated stale action"
+    ],
+    "requires_main_actual_run": true,
+    "current_CH07_case_full_acceptance": 0
+  },
+  "scoped_conclusion": {
+    "new_finding": "Specific unverified H11 A expiry/rejection guest-snapshot divergence is now source-linked; it is a testable failure hypothesis, not established bug.",
+    "existing_evidence": "PR14 covers bounded H15 pairs and H11 room time separately; PR19 only half-chaos exact game stage and not transport delivery.",
+    "receiver_engine_runs": 0,
+    "real_bluetooth_device_runs": 0,
+    "main_actual_read_or_adoption": "UNKNOWN",
+    "accepted_formal_CH07_cases": 0,
+    "gameplay_delta": 0,
+    "next_owner": "main shared committed room output / transport consumer proof",
+    "next_chaos_action": "only after source-qualified failure/verified output arrives, reconcile actual result and CH07 mapping"
+  },
+  "protections": {
+    "other_worklines": true,
+    "shared_engine_unchanged": true,
+    "heroes_UI_unchanged": true,
+    "scoring": "frozen",
+    "NET": "paused",
+    "no_merge_deploy_APK": true
+  }
+}
