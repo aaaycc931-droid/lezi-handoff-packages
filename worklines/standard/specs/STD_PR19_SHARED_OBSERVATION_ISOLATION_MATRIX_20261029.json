@@ -1,0 +1,197 @@
+{
+  "schema": "lezi.standard.pr19_shared_observation_reception.v1",
+  "id": "STD-MAIN-PR19-HC56-SHARED-OBSERVATION-RECEIVER-20261029",
+  "date_local": "2026-10-29",
+  "source_handoff_HEAD": "825dcb42aab686096e3a7111b9e4ac7c72f1d9b9",
+  "engine_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+  "engine_parent": "099eca44dbaab39bdedb02a9986f7d54e9761121",
+  "pr": 19,
+  "pr_state": "open_draft_not_merged",
+  "scope": "Shared observer technical failure-isolation only; source stimulation is half-chaos, not ordinary natural32",
+  "source_documents": [
+    "worklines/standard/TASK_FROM_MAIN.json#main_hc56_stage_view_increment",
+    "worklines/main/MAIN_HC56_STAGE_VIEW_REPORT.md",
+    "worklines/main/HC56_STAGE_VIEW_PROGRESS.json",
+    "engine:docs/HALF_CHAOS_EXACT_STAGE_VIEWS_20261029.md",
+    "engine:src/mechanism-observer.ts",
+    "engine:src/remote-room.ts",
+    "engine:src/game.ts",
+    "engine:scripts/research/original-half-chaos.ts",
+    "engine:scripts/research/half-chaos-stage-views.ts",
+    "engine:scripts/research/half-chaos-stage-differential.ts",
+    "engine:tests/half-chaos-stage-views.test.ts",
+    "engine:review/half-chaos-stage-views/RESULTS_20261029.json",
+    "engine:review/half-chaos-stage-views/DIFFERENTIAL_20261029.json",
+    "engine:review/half-chaos-stage-views/SOURCE_AUDIT_20261029.json",
+    "engine:review/half-chaos-stage-views/COMMAND_20261029.json",
+    "engine:review/half-chaos-stage-views/BASELINE_INTEGRITY_20261029.json",
+    "engine:review/half-chaos-stage-views/related-final-20261029.tap",
+    "worklines/standard/specs/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_MAP_20261029.json"
+  ],
+  "verification_method": "pinned GitHub connector read + source/test/result cross-reference; NO local engine rerun or owner-only evidence read",
+  "checks": [
+    {
+      "key": "SO-01",
+      "case_name": "observer opt-in inactive",
+      "expected": "Capture hook absent does not clone nor project",
+      "read_evidence": "engine source + tests",
+      "ordinary_reuse_limit": "shared observer technical interface, not ordinary runtime witness",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-02",
+      "case_name": "real committed source-action candidate",
+      "expected": "Capture synchronous immutable clone/freeze before projection",
+      "read_evidence": "observer source and tests",
+      "ordinary_reuse_limit": "general passive evidence mechanism; ordinary equivalent stimulus not executed",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-03",
+      "case_name": "failed or rejected source candidate",
+      "expected": "Isolated capture discards tentative events",
+      "read_evidence": "observer + half-chaos tests",
+      "ordinary_reuse_limit": "not proof of all ordinary failure paths",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-04",
+      "case_name": "projector throws or tries input mutation",
+      "expected": "Reject evidence and mark invalid, preserve successful source result",
+      "read_evidence": "observer + four failure tests",
+      "ordinary_reuse_limit": "ordinary negative UI/wire not exercised",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-05",
+      "case_name": "async/uncloneable projector result",
+      "expected": "Invalidation rather than attaching partial output",
+      "read_evidence": "observer + tests",
+      "ordinary_reuse_limit": "no async product hook authorization",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-06",
+      "case_name": "query suppression",
+      "expected": "withoutMechanismEvents prevents nested capture/projector",
+      "read_evidence": "observer + tests",
+      "ordinary_reuse_limit": "PR17 public tri-state consumer migration still not implemented",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-07",
+      "case_name": "projection recursive mechanism emissions",
+      "expected": "Recursive events suppressed while producing stage output",
+      "read_evidence": "observer + tests",
+      "ordinary_reuse_limit": "cannot infer all source-child/terminal edge coverage",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-08",
+      "case_name": "RNG and clock neutrality",
+      "expected": "110 half-chaos paired requests no ambient Math.random / Date.now calls; snapshot outputs unchanged",
+      "read_evidence": "main differential (110) + tests + TAP",
+      "ordinary_reuse_limit": "not independent ordinary 32-chess replay",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-09",
+      "case_name": "precise checkpoint ordering",
+      "expected": "200 half-chaos game snapshots before next formal begin and request return",
+      "read_evidence": "actual HC results and stage test",
+      "ordinary_reuse_limit": "room envelope still request-entry metadata; no committed intermediate packet",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-10",
+      "case_name": "dual-player server views",
+      "expected": "56 half-chaos paired slots have 112 player JSON bodies and no normalized visible differences",
+      "read_evidence": "actual result+source tests",
+      "ordinary_reuse_limit": "only two HC worlds, 0 complete original56 obligation, 0 actual client deliveries; no universal privacy proof",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-11",
+      "case_name": "private data and player authorization",
+      "expected": "Server playerRoomView authenticates playerId and scope checks key blacklist/faceDown identity within tested cases",
+      "read_evidence": "src/remote-room.ts + tests/half-chaos-stage-views.test.ts",
+      "ordinary_reuse_limit": "ordinary H10/H15/D01/H21 targeted privacy negative checks still UNRUN",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    },
+    {
+      "key": "SO-12",
+      "case_name": "serialization fields vs product state",
+      "expected": "checkpointProjection appears in opt-in research event, not game state / wire",
+      "read_evidence": "observer code + half-chaos stage tests",
+      "ordinary_reuse_limit": "no UI/room/terminal consumer migration demonstrated",
+      "verified_for": "shared test/source interface only",
+      "ordinary_dynamic_test": "UNRUN"
+    }
+  ],
+  "hc_only_actual": {
+    "original_replays": 12,
+    "requests": 110,
+    "accepted_requests": 106,
+    "rejected_requests": 4,
+    "main_atoms": 100,
+    "formal_settlements": 100,
+    "game_stage_checkpoints": 200,
+    "public_json": 200,
+    "player_json": 400,
+    "paired_slots": 56,
+    "paired_player_json": 112,
+    "normalized_equal": 56,
+    "original_complete_56_accepted": 0,
+    "client_deliveries": 0,
+    "formal_64_accepted": 0,
+    "related_tests_passed_by_main": 873,
+    "related_failures": 0,
+    "ambient_random_calls": 0,
+    "ambient_wall_clock_calls": 0,
+    "differential_parent_default_equal_pairs": 110,
+    "differential_projection_default_equal_pairs": 110,
+    "differential_without_observation_equal_pairs": 110
+  },
+  "ordinary_applicability": {
+    "scope": "static shared observer API requirements only; not HC scenario/mode acceptance",
+    "existing_ordinary_32_runtime_research": "PR15/PR18 bounded 37 original and 6 declared R8 extensions remain separate evidence; PR19 contributed none",
+    "ordinary_player_privacy_negative_cases": "18 static authority/owner/opponent rows, 12 anti-leak checks; full UI/wire tests UNRUN",
+    "uncovered": [
+      "H10 host confidentiality and target legality side channel",
+      "H15 owner-vs-authority target secrecy",
+      "D01 ordinary public anchors and legal results timing",
+      "H21 pre-entry locked form and descent RNG disclosure",
+      "H14/M07 ordinary pools",
+      "NG11 hard guard and multi-defense",
+      "ordinary real room/player packet failures and errors"
+    ],
+    "featuresReady": false,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "new_gameplay_rules": 0,
+    "independent_QA": false,
+    "NET": "paused",
+    "scoring": "frozen"
+  },
+  "engine_change_scope": {
+    "changed_files": 14,
+    "shared_src_modified": [
+      "src/mechanism-observer.ts"
+    ],
+    "gameplay_delta": 0,
+    "production_UI_or_wire_publication": false,
+    "merged": false
+  },
+  "future_task": "NEXT-STD-NG11-COMPLEX-GUARD-STIMULUS-SOURCE-AUDIT-20261029"
+}
