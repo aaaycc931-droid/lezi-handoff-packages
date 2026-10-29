@@ -1,3 +1,6 @@
+【2026-10-30 原生发送结果核算与失败流隔离｜PR22草稿】
+核最新HEAD，读CURRENT_STATE.json#native_send_accounting → MAIN_NATIVE_SEND_REPORT.md → NATIVE_SEND_PROGRESS.json。71145df/PR22基于PR21：新增可选本机sendChecked未发/已本地写入/未知三态，保留旧void及线上v2；失败当前流隔离，未知行动不回退/自动重试/发ping，也不被额外pong解锁。16JVM/3父版故障控制、21新Node/60文件最终935相关及另50静态通过，37代码模块转换；首轮未改评分隔离项1失败，孤立21及完整再跑通过，根因未证。19代码路径复读、622旧blob保护。完整Java类用明确Android/JSON/writer/UI替身执行并按原字节接生产Web/真实房间，不是Android SDK/JNI/radio/设备/完整DOM。written、pong、断连/重连不是旧行动接受ACK，下一MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030。旧桥缺发送结果仍是兼容边界，原56/64/模式门禁不解。三线实际采用待其线，英雄/UI/H03/旧包保护，评分冻结、NET暂停，不合并/部署/APK，本阶段不自动关闭对话，下文历史。
+
 【2026-10-30 来宾等待与请求编号关联已修｜PR21草稿】
 核最新HEAD，读CURRENT_STATE.json#bluetooth_receipt_correlation → MAIN_BLUETOOTH_RECEIPT_REPORT.md → BLUETOOTH_RECEIPT_PROGRESS.json。96fa739/PR21基于PR20：两种真实调用FIFO调度证明旧周期快照/无关聊天错误会提前解锁；复用既有v2 action→同编号ping/pong，只在对应pong后解等待，新旧端互通，snapshot/error原字节与6组原来源权威/RNG保持。19新/59文件914串行及另50静态通过，37代码模块转换；首轮未改评分隔离进程1失败，串行复核通过，根因未证。15引擎路径复读、611旧blob保护。pong只表处理顺序，不是接受/duplicate ACK；明确吞错action故障对照暴露原生发送结果缺口，下一MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030。Java/radio/真机/完整DOM/独立QA与原56/64完整验收未解，门禁/玩法/公开权限保持。三线实际PR21采用待其线；评分冻结、NET暂停，三线/英雄/UI/H03/旧包保护。本阶段不自动关闭对话，下文为历史。
 
