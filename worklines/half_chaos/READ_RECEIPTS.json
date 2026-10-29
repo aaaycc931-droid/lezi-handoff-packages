@@ -3081,5 +3081,37 @@
     "engine_runs_this_line": 0,
     "other_line_receiver_claims": false,
     "main_has_read_this_new_return": "UNKNOWN"
+  },
+  "r55_original110_source_output_oracle_reconciliation": {
+    "date_local": "2026-10-29",
+    "receiver_workline": "half_chaos",
+    "report": "worklines/half_chaos/HC55_ORIGINAL110_CLIENT_OUTPUT_ORACLE_MATRIX_20261029.json",
+    "source_engine_PR14": "570fdf189867ec93355f0eca66362deb72cca53c",
+    "source_engine_PR19": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+    "actually_read_original_replay_and_FM_request_checkpoint_mapping": true,
+    "actually_read_PR14_original_replays_results": true,
+    "actually_read_PR19_exact_stage_results": true,
+    "receiver_adopted": "SOURCE_RECONCILED_BOUNDED_SERVER_ENGINE_RECORD_ONLY",
+    "joined_original_requests": 110,
+    "joined_main_actions": 100,
+    "joined_pre_main": 10,
+    "joined_observations": 210,
+    "joined_PR19_stage_projections": 200,
+    "source_outcome_mismatches": 0,
+    "source_refusal_codes_IN_CHECK": 4,
+    "source_original_historical_UNRUN_kept_unmodified": true,
+    "owner_private_trace_and_actor_views_accessed": false,
+    "engine_runs_in_receiver": 0,
+    "explicitly_NOT_claimed": [
+      "real half-chaos client delivery",
+      "actor-visible error/success envelopes",
+      "product re-send/same-ID-conflict oracle",
+      "full56 acceptance",
+      "formal64 acceptance",
+      "independent QA",
+      "mode gate release"
+    ],
+    "other_worklines_adoption_not_filled": true,
+    "main_has_read_return": "UNKNOWN"
   }
 }
