@@ -1,11 +1,11 @@
 {
   "revision": "HC-SESSION-CLOSEOUT-20261027-r51c",
   "next_independent_task": {
-    "id": "NEXT-HC-RECEIVE-MAIN-PR14-EVIDENCE-ACCOUNT-ORIGINAL64-210",
-    "status": "READY_READ_ONLY_SOURCE_ACCOUNTING",
-    "action": "先读最新主线TASK_FROM_MAIN和PR14完整运行结果/可信原12前缀，逐项映射原64规格、210观察点为有实证/缺实证/缺原自然刺激/独立QA待做。主线报告12前缀110请求已跑，但不自动给原64标PASS；r51的56配对比较槽不等于主线42报告比较。",
+    "id": "NEXT-HC-EXACT-STAGE-56-CLIENT-EVIDENCE-TRIAGE",
+    "status": "READY_DOCUMENT_ONLY",
+    "depends_on_new_main_work": false,
     "authorization": "SOURCE_AND_DOCUMENT_ONLY; NO_ENGINE_RUN",
-    "depends_on_new_main_work": false
+    "action": "Map 56 exact-stage paired red/black view slots to required passive-observer and real client deliveries. Do not claim post-request42 as equivalent; prepare main-owned runtime request without invented secret, mode gate or action."
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1411,13 +1411,13 @@
   ],
   "last_verified_head_at_preparation": "3cd44406c87b7e7ff4d4e7f37dab69001f2bbc26",
   "latest_completed_stage": {
-    "revision": "HC-51-PAIR-VIEW-MISSING-STIMULUS-20261027-r51",
-    "report": "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json",
-    "source_checks": "25/25",
-    "pair_future_slots": 56,
-    "source_missing_original": 8,
-    "raw_views_observed": 0,
-    "original64": "UNRUN"
+    "revision": "HC-52-MAIN-EVIDENCE-RECEPTION-20261029",
+    "report": "worklines/half_chaos/HC52_MAIN_EVIDENCE_AND_PUBLIC_QUERY_RECEPTION_20261029.json",
+    "verified_source_specs": 64,
+    "verified_source_checkpoints": 210,
+    "verified_engine_public_request_order": 110,
+    "formal64_pass": 0,
+    "exact_stage_view_slots_pass": 0
   },
   "stale_index_repair": {
     "prior_revision": "HC-SESSION-CLOSEOUT-20261020-r41",
@@ -1445,5 +1445,10 @@
       "requires_game_engine": false
     }
   ],
-  "session_closeout_reference": "worklines/half_chaos/HC51_SESSION_CLOSEOUT_20261027.json"
+  "session_closeout_reference": "worklines/half_chaos/HC51_SESSION_CLOSEOUT_20261027.json",
+  "previous_completed_r52": {
+    "id": "NEXT-HC-RECEIVE-MAIN-PR14-EVIDENCE-ACCOUNT-ORIGINAL64-210",
+    "report": "worklines/half_chaos/HC52_MAIN_EVIDENCE_AND_PUBLIC_QUERY_RECEPTION_20261029.json",
+    "status": "COMPLETED_SOURCE_DOCUMENT_RECONCILIATION_NOT_INDEPENDENT_RAW_QA"
+  }
 }
