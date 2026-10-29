@@ -9,7 +9,7 @@
   "received_dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
   "received_task_id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "pr18_pr19_received_output_channel_source_gap_returned",
+  "state": "channel_deadline_rejection_hypothesis_source_audited_wait_main_actual_output",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
@@ -26,8 +26,8 @@
     "2026-10-29 bounded actual main PR14/PR16/PR17 source/test evidence read + CH07 13-case account; no independent engine test or full acceptance",
     "2026-10-29 actual scoped PR18/19 read and specific original-jieqi H15 room/transport source chain audit; main source/action/view gaps returned; no engine run"
   ],
-  "next_action": "WAIT_MAIN_ORIGINAL_JIEQI_COMMITTED_OUTPUT_AND_COVERED_SOURCE_PROOFS; CHAOS_REOPEN_ON_SOURCE_MATCHING_RUNTIME_OR_CLIENT_RESULT",
-  "next_action_status": "NO_NEW_READY_STANDALONE_ENGINE_TASK_OR_REPEAT_STATIC_CH08; SOURCE_CHAIN_AUDIT_AND_MAIN_RETURN_COMPLETE",
+  "next_action": "MAIN_ACTUAL_CH_CHANNEL_01_A_EXPIRE_REJECT_AND_CH_CHANNEL_02_H15_WIRE_REPLAY_REQUIRED; CHAOS_WAIT_FOR_MODE_SOURCE_MATCHED_RESULT",
+  "next_action_status": "INDEPENDENT_NEW_SOURCE_GAP_TRIAGE_COMPLETE_NO_FURTHER_STATIC_REPEAT",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -304,5 +304,22 @@
     "full_CH07_cases_accepted": 0,
     "own_engine_runs": 0,
     "main_receiver_not_claimed": true
+  },
+  "channel_triage_20261029": {
+    "id": "CH-CHANNEL-H11A-EXPIRE-REJECT-20261029",
+    "source_head": "728145c4c37e021e8190601e899a29445ca6fd3c",
+    "artifact": "worklines/chaos/CH_OUTPUT_CHANNEL_TIMEOUT_REJECTION_TRIAGE_20261029.json",
+    "source_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+    "source_finding": "Potential stale guest view: host advances and auto-skips A, then stale A request throws; web/app.ts guest-error catch sends error only, not the newly committed room snapshot. UI battle timer alone does not force host refresh at 0 in examined path.",
+    "status": "SOURCE_ONLY_UNVERIFIED",
+    "replay_probe_ids": [
+      "CH-CHANNEL-01-A-EXPIRE-REJECT-NO-PUSH",
+      "CH-CHANNEL-02-H15-SAME-PUBLIC-WIRE"
+    ],
+    "engine_runs": 0,
+    "device_runs": 0,
+    "new_CH07_passes": 0,
+    "source_authoritative": true,
+    "main_return_written": true
   }
 }
