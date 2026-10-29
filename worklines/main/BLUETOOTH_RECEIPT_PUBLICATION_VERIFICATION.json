@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.bluetooth_receipt.publication.v1",
   "date_local": "2026-10-30",
-  "status": "ENGINE_REMOTE_READBACK_COMPLETE_MAIN_PUBLICATION_PENDING",
+  "status": "ENGINE_AND_IMMUTABLE_MAIN_STAGE_READBACK_COMPLETE",
   "handoff_base": "6a21f16103c582079ee63b267413597770f80551",
   "engine": {
     "commit": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
@@ -96,8 +96,107 @@
     "force": false,
     "client_date": "2026-10-30"
   },
-  "main_actual_readback_files": 0,
+  "main_actual_readback_files": 17,
   "force": false,
   "raw_authority_published": false,
-  "owner_archives_modified": false
+  "owner_archives_modified": false,
+  "main_immutable_stage": {
+    "commit": "0d308add4be5f57355a4d0ada27a69e3d2053cbb",
+    "tree": "fa075b5c11dd971580061a29f161f41a486ea173",
+    "parent": "6a21f16103c582079ee63b267413597770f80551",
+    "remote_content_and_sha_readbacks": [
+      {
+        "path": "worklines/main/CURRENT_STATE.json",
+        "sha": "e0c60e97c54dbc582102c8840ea870d04ae25018",
+        "content_equal": true
+      },
+      {
+        "path": "CURRENT_HANDOFF.json",
+        "sha": "9c2ab4bb9859c7740ee7ec6778fc7537562a0905",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/START_HERE.txt",
+        "sha": "e267749e43cc49b7b9dd9d3d1189bd38d534d09c",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MODE_DISPATCH.json",
+        "sha": "aae65a26e8ea602c658aabe8522b08bf62968440",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+        "sha": "2e3170253aeb6c368dcf6d4f0a9dc133c72891da",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+        "sha": "dd519e4e4257b0100bbc8eadce4551f2a3c185c0",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "sha": "5cc98fcebf50a14b004c0c998d0d74dbd87bad9c",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/READ_RECEIPTS.json",
+        "sha": "02d5dd9fb753831a8e5e7ccdb357b36c9f758845",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/RETURN_TO_MAIN.json",
+        "sha": "ebfe97b28a64eaffab3f068b0fc206d9eb64095d",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/SESSION_CLOSEOUT.json",
+        "sha": "d07d41d0dbf8ce1db8d4f46793a8f576c5f69890",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/BLUETOOTH_RECEIPT_PROGRESS.json",
+        "sha": "3ffb8bfb7c5568a109880469327372beb256dfbd",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/MAIN_BLUETOOTH_RECEIPT_REPORT.md",
+        "sha": "95b8223e14308918b54c07bf771a056bcfd53425",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/BLUETOOTH_RECEIPT_PUBLICATION_VERIFICATION.json",
+        "sha": "f5c9a9af3166f7d5252965de5c60b038d6c34a47",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/standard/TASK_FROM_MAIN.json",
+        "sha": "0cc9a9588e1e0e533fb2bad2ced64d1bf5ec940c",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json",
+        "sha": "4cd0aba1f8c614337e786ff2dacf3b3a437f6954",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/chaos/TASK_FROM_MAIN.json",
+        "sha": "3b3acff587ec1c458cec6aede7ea7cd19e860d76",
+        "content_equal": true
+      },
+      {
+        "path": "worklines/main/BLUETOOTH_RECEIPT_VALIDATION.json",
+        "sha": "749d93f93d35903bec294e0a0254c779705f57e5",
+        "content_equal": true
+      }
+    ],
+    "protected_old_blobs": 773,
+    "total_final_blobs": 790,
+    "unselected_blobs_unchanged": true,
+    "engine_commit": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
+    "force": false,
+    "client_date": "2026-10-30"
+  },
+  "main_readback_completed_before_this_followup": true
 }
