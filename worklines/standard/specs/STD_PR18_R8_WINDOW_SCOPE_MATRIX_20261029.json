@@ -1,0 +1,274 @@
+{
+  "schema": "lezi.standard.pr18_ng12_receiver.v1",
+  "id": "STD-MAIN-PR18-R8-WINDOW-RECEIVER-20261029",
+  "date_local": "2026-10-29",
+  "start_handoff_HEAD": "728145c4c37e021e8190601e899a29445ca6fd3c",
+  "engine_commit": "099eca44dbaab39bdedb02a9986f7d54e9761121",
+  "engine_parent": "1bda5bc9f7840d0d601a85fb0faeda842753a199",
+  "pr": 18,
+  "pr_status": "open draft not merged",
+  "original_source_ids": [
+    "CONF-THREE-MODE-H02-M04-ASSASSINATION-CHARGE-GEOMETRY-20261017",
+    "CONF-THREE-MODE-H02-M04-PATH-DRAGON-SCALE-CONTINUATION-20261018",
+    "CONF-THREE-MODE-H02-M04-ACTIVATION-ENDPOINT-DRAGON-SCALE-20261019"
+  ],
+  "provenance": "6 declared extensions using exact original room/RPS/conditional tape prefix through B6; not original 3 AS/AP/ES source programs; no injected boards",
+  "original_prefix_unchanged": true,
+  "total": {
+    "sequences": 6,
+    "acceptedMainRequests": 92,
+    "duplicateRequests": 16,
+    "rejectedProbes": 18,
+    "mainAtoms": 92,
+    "formalSettlements": 92
+  },
+  "normalization": "Only declared room/player identifiers, including object keys. No game, clock, event, secret, RNG, history or source field omitted.",
+  "baseline_equal_original_requests": 37,
+  "observer_on_off_equal_extended_requests": 92,
+  "case_rows": [
+    {
+      "id": "NG12-AP-R8_USE",
+      "branch": "AP",
+      "variant": "R8_USE",
+      "provenance": "DECLARED_NATURAL_EXTENSION_NOT_ORIGINAL_AS_AP_ES_PREFIX",
+      "initial_public_32": true,
+      "original_requests_retained_through_B6": 12,
+      "main_requests": 16,
+      "duplicates": 3,
+      "rejected_probes": 4,
+      "r7_mechanism_route": "move",
+      "r7_carrier_not_strongstrike": null,
+      "r8_used_strongstrike": true,
+      "window_remaining_after_R6": 2,
+      "window_remaining_after_R7": 1,
+      "window_remaining_after_B7": 1,
+      "r8_atom_had_source": false,
+      "r8_settled_had_source": false,
+      "final_source_consumed": true,
+      "known_r8_outcome": "path dragon scale consumed, pawn remains; horse dead; rook lands (0,2)",
+      "rejected_codes": [
+        {
+          "probe": "empty-target",
+          "code": "STRONG_STRIKE_NEEDS_TARGET"
+        },
+        {
+          "probe": "king-target",
+          "code": "ILLEGAL_TARGET"
+        },
+        {
+          "probe": "other-carrier",
+          "code": "ASSASSINATION_ACTIVE"
+        },
+        {
+          "probe": "spent-opportunity",
+          "code": "MISSING_ASSASSINATION_SOURCE"
+        }
+      ],
+      "verified_scope": "reviewed existing author-authored code and result fields; NOT independent rerun"
+    },
+    {
+      "id": "NG12-AP-R8_EXPIRE",
+      "branch": "AP",
+      "variant": "R8_EXPIRE",
+      "provenance": "DECLARED_NATURAL_EXTENSION_NOT_ORIGINAL_AS_AP_ES_PREFIX",
+      "initial_public_32": true,
+      "original_requests_retained_through_B6": 12,
+      "main_requests": 16,
+      "duplicates": 3,
+      "rejected_probes": 4,
+      "r7_mechanism_route": "move",
+      "r7_carrier_not_strongstrike": null,
+      "r8_used_strongstrike": false,
+      "window_remaining_after_R6": 2,
+      "window_remaining_after_R7": 1,
+      "window_remaining_after_B7": 1,
+      "r8_atom_had_source": true,
+      "r8_settled_had_source": false,
+      "final_source_consumed": true,
+      "known_r8_outcome": "unused opportunity expires only at R8 formal settlement",
+      "rejected_codes": [
+        {
+          "probe": "empty-target",
+          "code": "STRONG_STRIKE_NEEDS_TARGET"
+        },
+        {
+          "probe": "king-target",
+          "code": "ILLEGAL_TARGET"
+        },
+        {
+          "probe": "other-carrier",
+          "code": "ASSASSINATION_ACTIVE"
+        },
+        {
+          "probe": "spent-opportunity",
+          "code": "MISSING_ASSASSINATION_SOURCE"
+        }
+      ],
+      "verified_scope": "reviewed existing author-authored code and result fields; NOT independent rerun"
+    },
+    {
+      "id": "NG12-AP-R7_CARRIER_MOVE",
+      "branch": "AP",
+      "variant": "R7_CARRIER_MOVE",
+      "provenance": "DECLARED_NATURAL_EXTENSION_NOT_ORIGINAL_AS_AP_ES_PREFIX",
+      "initial_public_32": true,
+      "original_requests_retained_through_B6": 12,
+      "main_requests": 14,
+      "duplicates": 2,
+      "rejected_probes": 1,
+      "r7_mechanism_route": "assassination",
+      "r7_carrier_not_strongstrike": true,
+      "r8_used_strongstrike": false,
+      "window_remaining_after_R6": 2,
+      "window_remaining_after_R7": 0,
+      "window_remaining_after_B7": 0,
+      "r8_atom_had_source": false,
+      "r8_settled_had_source": false,
+      "final_source_consumed": true,
+      "known_r8_outcome": "ordinary carrier movement ends source at R7 action-atom closure",
+      "rejected_codes": [
+        {
+          "probe": "spent-opportunity",
+          "code": "MISSING_ASSASSINATION_SOURCE"
+        }
+      ],
+      "verified_scope": "reviewed existing author-authored code and result fields; NOT independent rerun"
+    },
+    {
+      "id": "NG12-ES-R8_USE",
+      "branch": "ES",
+      "variant": "R8_USE",
+      "provenance": "DECLARED_NATURAL_EXTENSION_NOT_ORIGINAL_AS_AP_ES_PREFIX",
+      "initial_public_32": true,
+      "original_requests_retained_through_B6": 12,
+      "main_requests": 16,
+      "duplicates": 3,
+      "rejected_probes": 4,
+      "r7_mechanism_route": "move",
+      "r7_carrier_not_strongstrike": null,
+      "r8_used_strongstrike": true,
+      "window_remaining_after_R6": 2,
+      "window_remaining_after_R7": 1,
+      "window_remaining_after_B7": 1,
+      "r8_atom_had_source": false,
+      "r8_settled_had_source": false,
+      "final_source_consumed": true,
+      "known_r8_outcome": "path pawn crushed, horse scale consumed; rook returns (0,4)",
+      "rejected_codes": [
+        {
+          "probe": "empty-target",
+          "code": "STRONG_STRIKE_NEEDS_TARGET"
+        },
+        {
+          "probe": "king-target",
+          "code": "ILLEGAL_TARGET"
+        },
+        {
+          "probe": "other-carrier",
+          "code": "ASSASSINATION_ACTIVE"
+        },
+        {
+          "probe": "spent-opportunity",
+          "code": "MISSING_ASSASSINATION_SOURCE"
+        }
+      ],
+      "verified_scope": "reviewed existing author-authored code and result fields; NOT independent rerun"
+    },
+    {
+      "id": "NG12-ES-R8_EXPIRE",
+      "branch": "ES",
+      "variant": "R8_EXPIRE",
+      "provenance": "DECLARED_NATURAL_EXTENSION_NOT_ORIGINAL_AS_AP_ES_PREFIX",
+      "initial_public_32": true,
+      "original_requests_retained_through_B6": 12,
+      "main_requests": 16,
+      "duplicates": 3,
+      "rejected_probes": 4,
+      "r7_mechanism_route": "move",
+      "r7_carrier_not_strongstrike": null,
+      "r8_used_strongstrike": false,
+      "window_remaining_after_R6": 2,
+      "window_remaining_after_R7": 1,
+      "window_remaining_after_B7": 1,
+      "r8_atom_had_source": true,
+      "r8_settled_had_source": false,
+      "final_source_consumed": true,
+      "known_r8_outcome": "unused opportunity expires only at R8 formal settlement",
+      "rejected_codes": [
+        {
+          "probe": "empty-target",
+          "code": "STRONG_STRIKE_NEEDS_TARGET"
+        },
+        {
+          "probe": "king-target",
+          "code": "ILLEGAL_TARGET"
+        },
+        {
+          "probe": "other-carrier",
+          "code": "ASSASSINATION_ACTIVE"
+        },
+        {
+          "probe": "spent-opportunity",
+          "code": "MISSING_ASSASSINATION_SOURCE"
+        }
+      ],
+      "verified_scope": "reviewed existing author-authored code and result fields; NOT independent rerun"
+    },
+    {
+      "id": "NG12-ES-R7_CARRIER_MOVE",
+      "branch": "ES",
+      "variant": "R7_CARRIER_MOVE",
+      "provenance": "DECLARED_NATURAL_EXTENSION_NOT_ORIGINAL_AS_AP_ES_PREFIX",
+      "initial_public_32": true,
+      "original_requests_retained_through_B6": 12,
+      "main_requests": 14,
+      "duplicates": 2,
+      "rejected_probes": 1,
+      "r7_mechanism_route": "assassination",
+      "r7_carrier_not_strongstrike": true,
+      "r8_used_strongstrike": false,
+      "window_remaining_after_R6": 2,
+      "window_remaining_after_R7": 0,
+      "window_remaining_after_B7": 0,
+      "r8_atom_had_source": false,
+      "r8_settled_had_source": false,
+      "final_source_consumed": true,
+      "known_r8_outcome": "ordinary carrier movement ends source at R7 action-atom closure",
+      "rejected_codes": [
+        {
+          "probe": "spent-opportunity",
+          "code": "MISSING_ASSASSINATION_SOURCE"
+        }
+      ],
+      "verified_scope": "reviewed existing author-authored code and result fields; NOT independent rerun"
+    }
+  ],
+  "technical_boundary": {
+    "r7_carrier_plain_action_route": "runner constructs an assassination command without source or useStrongStrike for H02_later_carrier_move; behavioral classification ordinary non-strong carrier move. Consumer/API contract should check this route; not adjudicated as defect.",
+    "non_original_additions": "20 declared main request occurrences across 6 replays; 72 retained prefix occurrences; 92 total",
+    "src_changed_vs_parent": 0,
+    "pr18_engine_paths_changed": 11,
+    "tests_published": {
+      "related_files": 54,
+      "passed": 848,
+      "failed": 0,
+      "new_checks": 27,
+      "focused_checks": 66
+    },
+    "local_tests_rerun": false,
+    "independent_QA": false,
+    "mode_featuresReady": false,
+    "full_NG12_accepted": false,
+    "formal_ordinary_acceptance": false,
+    "scoring": "frozen",
+    "NET": "paused"
+  },
+  "open": [
+    "NG12 other rule/space/history/complex branches not discharged",
+    "NG11 special guards, multiple defense, H10/control/space/covered intersections",
+    "Production RNG sample and probability",
+    "PR17 three-state room/UI/terminal downstream consumer migration",
+    "Full typecheck, UI/device/Bluetooth, client/private projection and independent QA"
+  ],
+  "future_task": "STD-RECEIVE-HC56-SHARED-OBSERVATION-ISOLATION-20261029"
+}
