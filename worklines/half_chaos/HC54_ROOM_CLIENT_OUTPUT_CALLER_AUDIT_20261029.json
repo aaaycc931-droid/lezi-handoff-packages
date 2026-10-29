@@ -1,0 +1,183 @@
+{
+  "schema": "lezi.hc.client_output_caller_source_audit.v1",
+  "id": "HC54-CLIENT-OUTPUT-CALLERS-20261029",
+  "date_local": "2026-10-29",
+  "handoff_HEAD_at_audit": "728145c4c37e021e8190601e899a29445ca6fd3c",
+  "task": "NEXT-HC-SOURCE-AUDIT-ACTUAL-ROOM-CLIENT-OUTPUT-CALLERS",
+  "pinned_engine_commit": "760caf57d454af0db3be92d5b52ffc3cc9078d06",
+  "source_blobs": {
+    "src/remote-room.ts": "37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+    "src/bluetooth-host-room.ts": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+    "src/bluetooth-protocol.ts": "d3d665f53588d30dc1b6e3a31fd3f300043cd7cd",
+    "web/app.ts": "0ffd81fb73cf8e62eb4faaff4aa1751f9338557e",
+    "android/app/src/main/java/com/jieqi/bluetooth/GameWebBridge.java": "dacdffd64365f1ef4859c0f4a24293a2eb6dc86c",
+    "android/app/src/main/java/com/jieqi/bluetooth/BluetoothGameSession.java": "067f11abbccbc694901231458a1ba1c447c587b4"
+  },
+  "sources_accepted": [
+    "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json FM15/FM16/FM17 OG05/OG06",
+    "worklines/half_chaos/HC51_PAIR_VIEW_MISSING_STIMULUS_CONTRACT.json original 56",
+    "worklines/half_chaos/HC53_EXACT_STAGE56_CLIENT_CHANNEL_TRIAGE_20261029.json",
+    "engine PR19 current source code only"
+  ],
+  "static_source_assertions": {
+    "checks": 12,
+    "passed": 12,
+    "failed": []
+  },
+  "original_four_rejected_ids": [
+    "MA-DS01-02:R4:pre-1",
+    "MA-DS01-02:R4:pre-2",
+    "MA-DS03:R4:pre-1",
+    "MA-DS04:B3:pre-1"
+  ],
+  "findings": [
+    {
+      "id": "HC54-01",
+      "topic": "authority_accept/duplicate",
+      "source": "src/remote-room.ts 1252-1309",
+      "observation": "submitRemoteMove accepted final room passes withActionHistory; duplicate branch returns {room,duplicate:true}; no client delivery proof",
+      "related": "FM15/FM17",
+      "qualification": "SOURCE_CONFIRMED_SERVER_BOUNDARY"
+    },
+    {
+      "id": "HC54-02",
+      "topic": "hero_ability_result",
+      "source": "src/remote-room.ts 1539-1571",
+      "observation": "submitRemoteHeroAbility returns room/duplicate; training/shadow and other hero ability paths differ; no uniform move-history append",
+      "related": "FM15/FM17",
+      "qualification": "SOURCE_CONFIRMED_SEMANTIC_DISTINCTION"
+    },
+    {
+      "id": "HC54-03",
+      "topic": "authorized_output",
+      "source": "src/remote-room.ts 1475-1537",
+      "observation": "publicRemoteRoom and playerRoomView produce public and authenticated own-hero views; serializer is callable but not transport proof",
+      "related": "FM16/OG06",
+      "qualification": "SOURCE_CONFIRMED_SERVER_VIEW_ONLY"
+    },
+    {
+      "id": "HC54-04",
+      "topic": "half_chaos_transport_gate",
+      "source": "src/bluetooth-host-room.ts 68-82",
+      "observation": "BluetoothHostRoom constructor rejects baseMode other than jieqi with MODE_TRANSPORT_PENDING; half_chaos not admitted",
+      "related": "OG06",
+      "qualification": "CONFIRMED_GATE"
+    },
+    {
+      "id": "HC54-05",
+      "topic": "host_dedup_ack_loss",
+      "source": "src/bluetooth-host-room.ts 94-145",
+      "observation": "Host handler selects returned .room only for move, assassination, hero ability, and does not preserve RemoteActionResult.duplicate in BluetoothRoomViews; views() advances time",
+      "related": "FM15/OG05",
+      "qualification": "SOURCE_CONFIRMED_RETURN_SURFACE_LIMIT_NOT_RUNTIME_BUG"
+    },
+    {
+      "id": "HC54-06",
+      "topic": "guest_snapshot_path",
+      "source": "web/app.ts 1246-1263",
+      "observation": "Host publishes own view and sends guest snapshot when connected, with snapshot identity derived from updatedAt/phase rather than original actionId",
+      "related": "FM16/OG06",
+      "qualification": "CALL_PATH_EXISTS_NOT_HALF_CHAOS_DELIVERY"
+    },
+    {
+      "id": "HC54-07",
+      "topic": "error_message_only",
+      "source": "web/app.ts 1265-1313",
+      "observation": "Host sees RuleError.message via toast; guest rejection error envelope payload {message} not code; guest toast uses message",
+      "related": "FM15/FM17/OG05",
+      "qualification": "CALL_PATH_CONFIRMED_CODE_NOT_SHOWN"
+    },
+    {
+      "id": "HC54-08",
+      "topic": "pending_ack_correlation",
+      "source": "web/app.ts 986-992,1278-1307",
+      "observation": "Guest marks pendingAction on sending action; any applyBluetoothView snapshot clears it and error clears it; no verified per-command duplicate/id-correlation receipt",
+      "related": "FM15/OG05",
+      "qualification": "RISK_NEEDS_REAL_TEST_NOT_PROVEN_DEFECT"
+    },
+    {
+      "id": "HC54-09",
+      "topic": "protocol_structural_not_source",
+      "source": "src/bluetooth-protocol.ts 3-68",
+      "observation": "Versioned v2 action/snapshot/error envelope, 48KB guard and snapshot wrapper assume prior view sanitization; no mode qualification",
+      "related": "FM16/FM17",
+      "qualification": "SOURCE_CONFIRMED_BOUNDARY"
+    },
+    {
+      "id": "HC54-10",
+      "topic": "native_bridge",
+      "source": "android/app/src/main/java/com/jieqi/bluetooth/GameWebBridge.java 98-103,163-180; BluetoothGameSession.java 179-220",
+      "observation": "WebView JSON send and native inbound event forwarding exist; no actual two-device half-chaos proof",
+      "related": "OG06",
+      "qualification": "STATIC_CHAIN_ONLY"
+    },
+    {
+      "id": "HC54-11",
+      "topic": "client_render",
+      "source": "web/app.ts 579-619,986-1009",
+      "observation": "message view renders supplied messages, updates local state and clears local gameSecret; no observed half-chaos UI buttons/hints/clock or per-player delivery",
+      "related": "FM16/FM17",
+      "qualification": "SOURCE_RENDER_PRESENT_UNVALIDATED_MODE"
+    },
+    {
+      "id": "HC54-12",
+      "topic": "original_rejection_stimulus",
+      "source": "worklines/half_chaos/OBSERVATION_FIELD_MAPPING.json FM15 OG05",
+      "observation": "Original 110 include four IN_CHECK rejects. PD-S35 / DS-S12 true same-ID retransmit/conflict and actor-client serialization still lack natural verified stimuli",
+      "related": "FM15/OG05",
+      "qualification": "MISSING_RUNTIME_CLIENT_EVIDENCE"
+    }
+  ],
+  "owner_requests": [
+    {
+      "id": "HC54-M01",
+      "owner": "main",
+      "request": "Trace original success postcommit room with messages/updatedAt, serial public/red/black and deadline at each true caller, not mid-action project"
+    },
+    {
+      "id": "HC54-M02",
+      "owner": "main",
+      "request": "Verify four original IN_CHECK actor-visible error message/code through actual eligible caller; differentiate RuleError from error envelope"
+    },
+    {
+      "id": "HC54-M03",
+      "owner": "main",
+      "request": "Preserve actual duplicate:true in server evidence; identify or prove caller acknowledgement and same-ID conflict policy from original permissible stimuli, no invention"
+    },
+    {
+      "id": "HC54-M04",
+      "owner": "main",
+      "request": "Guard MODE_TRANSPORT_PENDING; only authorize bounded offline caller tests separately from mode/client release and NET"
+    },
+    {
+      "id": "HC54-M05",
+      "owner": "UI/QA",
+      "request": "Client displays, buttons, legal hints, clocks, out-of-order snapshots and privacy need actual authorized device/transport evidence"
+    }
+  ],
+  "acceptance_boundary": {
+    "server_precise_game_components": "56 original slots documented via PR19, not reexecuted here",
+    "committed_mid_action_room_packets": 0,
+    "actual_half_chaos_bluetooth_deliveries": 0,
+    "actual_actor_error_payloads_observed": 0,
+    "actual_duplicate_or_conflicting_id_client_receipts_observed": 0,
+    "fully_discharged_original56": 0,
+    "formally_accepted_original64": 0,
+    "independent_QA": false
+  },
+  "preservation": {
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "featuresReady": false,
+    "no_engine_runs": true,
+    "no_shared_code_or_other_line_changes": true,
+    "source_raw_secret_not_published": true,
+    "hero_rules_unchanged": true
+  },
+  "next_independent": {
+    "id": "NEXT-HC-CLIENT-OUTPUT-ORACLE-TRACE-MATRIX",
+    "status": "READY_SOURCE_ONLY",
+    "action": "Reconcile original110 source requests, including four IN_CHECK and exact after-action server outputs into per-request success/error/duplicate/transport/UI proof table; no new runtime, no invented product responses."
+  },
+  "main_receipt_for_this_return": "UNKNOWN"
+}
