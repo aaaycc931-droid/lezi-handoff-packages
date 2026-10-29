@@ -1,5 +1,7 @@
 # 当前模式设计入口
 
+**2026-10-29普通PR18两后续窗口研究接收（证据，不是新规则）：** [实际主线接收核验](../../reviews/STD_PR18_R8_WINDOW_RECEIVER_REVIEW_20261029.md)及[六支NG12限定证据矩阵](../../specs/STD_PR18_R8_WINDOW_SCOPE_MATRIX_20261029.json)确认：PR18草稿复用原H02/H21无敌/M04公开32棋条件式开局，AP/ES×R8使用/不用到期/R7载体移动6支新增声明延伸、92主请求及92原子/结束结算实证，主线同作者848项相关检查通过。旧页面“R8尚未运行”的描述仅为当时历史，不可覆盖此新结果；NG12只限对应分支部分验证，NG11、模式正式资格、独立QA、UI/三态消费者仍未通过。普通31、直接共享13、规则Δ0、`xiangqi.featuresReady=false`、评分冻结、NET暂停保持。
+
 **2026-10-29普通三视图静态审查新增入口：** [权威／拥有者／对手可见性审查](../../reviews/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_REVIEW_20261029.md)，[18条可见性守卫和12个反泄露负例（机读）](../../specs/ORDINARY_PRIVATE_PUBLIC_OBSERVABILITY_MAP_20261029.json)。H10宿主、H15真实受训棋、D01普通公开锚点、H21形态时点及H14/M07普通池排除均逐源核对；不改已有确认、没有UI/网络/引擎隐私验收。10月27旧“引擎未实跑”的段落是当时历史：主线此后已在PR15—18发布**条件式受限普通32棋研究执行**，正式模式资格仍未通过；PR18仍待本线完整接收核证。
 
 **2026-10-27验收场景来源目录：** [普通31项确认的非运行正反守卫目录](../../reviews/ORDINARY_ACCEPTANCE_SCENARIO_CATALOG_REVIEW_20261027.md)，可机读`specs/ORDINARY_ACCEPTANCE_SCENARIO_CATALOG_20261027.json`。H21-common、H21-invincible、M04三项已有专项合同，仅链接不重造NP棋谱；普通全明自然棋谱与引擎测试均尚未完成。
