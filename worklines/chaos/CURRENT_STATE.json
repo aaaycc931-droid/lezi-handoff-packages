@@ -2,14 +2,14 @@
   "schema": "lezi.workline_state.v1",
   "workline": "chaos",
   "mode_id": "jieqi",
-  "date_local": "2026-10-26",
+  "date_local": "2026-10-29",
   "entry": "START_HERE.txt",
   "task": "TASK_FROM_MAIN.json",
-  "source_handoff_commit": "d41fd46fdd6a405f84d13fad75762803f9163496",
-  "received_dispatch_id": "MAIN-THREE-MODE-20261024",
-  "received_task_id": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
+  "source_handoff_commit": "bcc68ed3498c550570ea833944389adff7dd5473",
+  "received_dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
+  "received_task_id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "ch07_independent_static_and_privacy_handoff_complete_wait_main_runtime",
+  "state": "main_evidence_receiver_review_completed_bounded_CH07_reconciliation",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
   "completed": [
@@ -22,10 +22,11 @@
     "CH-04 three seed19 H06xH15 event route candidates assembled; 12-step death route pure board topology checked; runtime UNRUN; triple hero H06+H11+H15 route flagged impossible in two-hero fixture",
     "CH-05: source-equivalent seed92 30 identity/tape, red H15 cannon covered-08 recruitment seed1, legal-geometry red1-black1-red2 rook capture before H11-B constructed; H11-A still unproven and all real execution UNRUN",
     "CH-06 seed476: own-public-side hidden trainee cannon covered-25 can be captured by red covered-15 rook on red1; black1 pawn and subsequent H11-A or A skip -> B static candidates; engine/clock/privacy tests UNRUN",
-    "CH-07: two pairwise independent legal recruitment-seed public-identical/private-contrast fixtures; 18 full-GitHub-fixture pure reference checks passed; 13 runtime negative-control cases ready; main-only runtime/projection fixes pending"
+    "CH-07: two pairwise independent legal recruitment-seed public-identical/private-contrast fixtures; 18 full-GitHub-fixture pure reference checks passed; 13 runtime negative-control cases ready; main-only runtime/projection fixes pending",
+    "2026-10-29 bounded actual main PR14/PR16/PR17 source/test evidence read + CH07 13-case account; no independent engine test or full acceptance"
   ],
-  "next_action": "WAIT_MAIN_ORIGINAL_JIEQI_RUNTIME_RUN_CH06_A_CH05_B_AND_PRIVACY_PROJECTION; REOPEN_CHAOS_ONLY_ON_MODE_SPECIFIC_RESULT",
-  "next_action_status": "MAIN_RUNTIME_DEPENDENCY_ONLY__CHAOS_INDEPENDENT_SCOPE_CURRENTLY_CLOSED",
+  "next_action": "MAIN_COVERED_SOURCE_AND_CONSUMER_PROJECTION_EVIDENCE_REQUIRED; CHAOS_REOPEN_ONLY_ON_CONCRETE_MODE_SPECIFIC_NEW_EVIDENCE_OR_FAILURE",
+  "next_action_status": "OLD_WAIT_MAIN_RUNTIME_REPLACED_BY_ACTUAL_EVIDENCE_READ; NEW_MODE_SOURCE_AND_CONSUMER_GAPS_MAIN_OWNED",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -40,7 +41,7 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "CH-07-A_B_H15_PRIVATE_PUBLIC_NEGATIVE_ORACLE_AND_MAIN_HANDOFF",
+  "last_completed_task": "CH-RECEIVE-MAIN-RUNTIME-20261027__PR16_PR17_INCREMENTS",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
@@ -85,7 +86,19 @@
     "ch07_runtime_matrix_cases": 13,
     "ch07_runtime_matrix_run": 0,
     "ch07_authoritative_legal_runs": 0,
-    "ch07_true_projection_checks": 0
+    "ch07_true_projection_checks": 0,
+    "receiver_20261029": {
+      "own_engine_executions": 0,
+      "own_independent_QA": false,
+      "source_reported_H15_named_cases": 14,
+      "source_reported_H15_invalid_RNG_variants": 5,
+      "source_reported_PR14_related_passes": 710,
+      "original_CH07_total": 13,
+      "original_CH07_formal_cases_accepted": 0,
+      "original_chaos_natural_complete_games": 0,
+      "source_code_and_report_readback": true,
+      "limitation": "Prior CH07 matrix remains historical UNRUN_MAIN_RUNTIME as-of 2026-10-26; this newer receiver evidence is added separately, not retroactive blanket PASS."
+    }
   },
   "session_closure": {
     "date_local": "2026-10-24",
@@ -210,5 +223,24 @@
     "conclusion": "NO_ADDITIONAL_READY_INDEPENDENT_CH_TASK_THIS_DISPATCH",
     "external_dependency": "main needs to actually run/adapt engine and projections",
     "protected_other_lines": true
-  }
+  },
+  "receiver_review_20261029": {
+    "source_handoff_HEAD": "bcc68ed3498c550570ea833944389adff7dd5473",
+    "workline_receiver_read": true,
+    "workline_receiver_adoption": "BOUNDED_EVIDENCE_ACCOUNTING",
+    "CH07_cases_mapped": 13,
+    "CH07_formally_accepted": 0,
+    "engine_runs_this_workline": 0,
+    "independent_QA": false,
+    "receipt_path": "worklines/chaos/READ_RECEIPTS.json#current_main_runtime_20261029",
+    "return_path": "worklines/chaos/RETURN_TO_MAIN.json#latest_receiver_phase",
+    "open_main_owned": [
+      "Original jieqi 30 global covered identities: real covered mover/path/endpoint reveal/defection and death-record public authority",
+      "H15 graduation, live control/side changes, empty pool, space and special effects and H06/H11 cross-branches",
+      "Real websocket/client/repeated snapshot/terminal consumers and PR17 three-state uncovered handling",
+      "Full original CH07 formal privacy acceptance, natural complete games, product gate, independent QA"
+    ],
+    "main_receiver_not_asserted": true
+  },
+  "previous_wait_main_status_superseded_by": "main PR14 actual room evidence + PR16/PR17 additive public-query material received, 2026-10-29"
 }
