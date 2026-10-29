@@ -1,3 +1,5 @@
+【2026-10-29最新增量】PR18草稿099eca4补普通H02真实32棋R7/R8窗口取证，src/门禁/规则不改；27新/54文件848项通过，原37请求与92观察开关对照一致。三线当日接收报告已由主线按精确范围读取。完整结果/限定及下一HC56精确视图见[MAIN_STD_R8_WINDOW_REPORT.md](MAIN_STD_R8_WINDOW_REPORT.md)。以下报告保留历史适用范围。
+
 【2026-10-29最新增量】公开路径合法／非法／未覆盖资格接口已发布PR17草稿1bda5bc，39新／53文件821项通过，旧行为及原37请求不变。完整来源、三态边界及R8下一项见[MAIN_PUBLIC_PATH_QUALIFICATION_REPORT.md](MAIN_PUBLIC_PATH_QUALIFICATION_REPORT.md)。以下阶段报告保留其历史适用范围。
 
 【2026-10-28最新增量】限定公开查询／终局搜索已发布PR16草稿765a6bc，33新／52文件782项通过；原37请求不变。当前完整范围、差异、未验项和下一身份覆盖任务见[MAIN_PUBLIC_PATH_QUERY_REPORT.md](MAIN_PUBLIC_PATH_QUERY_REPORT.md)。以下旧阶段报告保留其来源与范围。
