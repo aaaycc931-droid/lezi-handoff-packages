@@ -682,6 +682,33 @@
         "other_workline_changes_preserved": true,
         "publication_tree": "6ddca9e37c25edddc3f7c5df41faef9a2e071b80"
       }
+    },
+    "main_original12_r52": {
+      "task_id": "HC-RECEIVE-ORIGINAL12-EVIDENCE-20261027",
+      "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
+      "receiver_read": true,
+      "receiver_adopted": true,
+      "adoption_scope": "original12 published run facts and original64/210 bounded evidence accounting only",
+      "gameplay_delta": 0,
+      "mode_or_product_adopted": false
+    },
+    "main_public_path_query_r52": {
+      "task_id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+      "engine_commit": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+      "receiver_read": true,
+      "receiver_adopted": true,
+      "adoption_scope": "revealed-ground H04/H03 M01/M04 source-bounded public authority query only",
+      "gameplay_delta": 0,
+      "mode_or_product_adopted": false
+    },
+    "main_public_path_qualification_r52": {
+      "task_id": "MAIN-PUBLIC-PATH-COVERAGE-20261028",
+      "engine_commit": "1bda5bc9f7840d0d601a85fb0faeda842753a199",
+      "receiver_read": true,
+      "receiver_adopted": true,
+      "adoption_scope": "legal/illegal/uncovered source qualification within guarded public context only",
+      "gameplay_delta": 0,
+      "mode_or_product_adopted": false
     }
   },
   "own_line_continuation": {
@@ -2886,6 +2913,75 @@
     ],
     "engine_runs": 0,
     "other_workline_receipts_untouched": true
+  },
+  "r51_session_closure_actual_main_pr14_report_read": {
+    "date_local": "2026-10-27",
+    "source_head": "2fae856f958004c133ef996703608c8354fb74a0",
+    "main_source_task": "HC-RECEIVE-ORIGINAL12-EVIDENCE-20261027",
+    "actually_read": [
+      "worklines/half_chaos/TASK_FROM_MAIN.json",
+      "worklines/main/SHARED_RUNTIME_PROGRESS.json",
+      "worklines/main/MAIN_SHARED_RUNTIME_REPORT.md",
+      "worklines/main/SHARED_RUNTIME_PUBLICATION_VERIFICATION.json"
+    ],
+    "read_scope": "main published report and staged readback, not raw engine PR14 test sources/results",
+    "reported_main_source_execution": {
+      "prefixes": 12,
+      "requests": 110,
+      "main_and_formal_checkpoints": [
+        100,
+        100
+      ],
+      "paired_comparisons": 42
+    },
+    "adopted": "Use published PR14 artifacts as next evidence-review priority",
+    "not_adopted": [
+      "original64 individual PASS",
+      "original210 full coverage",
+      "client privacy and independent QA"
+    ],
+    "engine_runs_this_chat": 0,
+    "receiver_boundaries": "Own half-chaos receipt only; main sender/receiver adoption not implied"
+  },
+  "r52_actual_main_three_increment_reception": {
+    "date_local": "2026-10-29",
+    "receiver_read": true,
+    "receiver_adopted": true,
+    "actual_review_source": "worklines/half_chaos/HC52_MAIN_EVIDENCE_AND_PUBLIC_QUERY_RECEPTION_20261029.json",
+    "tasks": [
+      {
+        "id": "HC-RECEIVE-ORIGINAL12-EVIDENCE-20261027",
+        "engine": "570fdf189867ec93355f0eca66362deb72cca53c",
+        "adoption": "original12 published run facts and original64/210 bounded evidence accounting only"
+      },
+      {
+        "id": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
+        "engine": "765a6bc6799ac823c9ba6e1ed6b10fd0c0705608",
+        "adoption": "revealed-ground H04/H03 M01/M04 source-bounded public authority query only"
+      },
+      {
+        "id": "MAIN-PUBLIC-PATH-COVERAGE-20261028",
+        "engine": "1bda5bc9f7840d0d601a85fb0faeda842753a199",
+        "adoption": "legal/illegal/uncovered source qualification within guarded public context only"
+      }
+    ],
+    "actual_independent_public_source_join": {
+      "original_requests": 110,
+      "original_specs": 64,
+      "original_checkpoints": 210,
+      "ID_text_order_boundary_mismatches": 0
+    },
+    "not_adopted": [
+      "formal original64 PASS",
+      "210 full observation discharge",
+      "56 exact-stage view/real client certification",
+      "all hidden source public query",
+      "room/UI/terminal consumers migrated",
+      "independent QA or raw owner authority recomputation",
+      "merge/product gate/gameplay/rule/score"
+    ],
+    "engine_run_by_this_line": 0,
+    "received_by_main": "UNKNOWN",
+    "not_on_behalf_of_other_lines": true
   }
-  ,"r51_session_closure_actual_main_pr14_report_read": {"date_local":"2026-10-27","source_head":"2fae856f958004c133ef996703608c8354fb74a0","main_source_task":"HC-RECEIVE-ORIGINAL12-EVIDENCE-20261027","actually_read":["worklines/half_chaos/TASK_FROM_MAIN.json","worklines/main/SHARED_RUNTIME_PROGRESS.json","worklines/main/MAIN_SHARED_RUNTIME_REPORT.md","worklines/main/SHARED_RUNTIME_PUBLICATION_VERIFICATION.json"],"read_scope":"main published report and staged readback, not raw engine PR14 test sources/results","reported_main_source_execution":{"prefixes":12,"requests":110,"main_and_formal_checkpoints":[100,100],"paired_comparisons":42},"adopted":"Use published PR14 artifacts as next evidence-review priority","not_adopted":["original64 individual PASS","original210 full coverage","client privacy and independent QA"],"engine_runs_this_chat":0,"receiver_boundaries":"Own half-chaos receipt only; main sender/receiver adoption not implied"}
 }
