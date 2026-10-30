@@ -1,0 +1,78 @@
+{
+  "schema": "lezi.ui.static_layout.v1",
+  "version": "B9-v1",
+  "base_version": "B8-v1",
+  "canvas": {
+    "width": 852,
+    "height": 1846
+  },
+  "font": {
+    "family": "Long Cang",
+    "sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+    "modified": false
+  },
+  "background": {
+    "source": "B4-v1 frozen local base",
+    "sha256": "13a513a067abb972ab8e0c898faeba92eb17952a1ecc955248e418c73b429a8f",
+    "historical_B2_text_footprint_estimation_inherited": true
+  },
+  "lines": [
+    {
+      "id": "permission_status",
+      "text": "蓝牙权限已被永久拒绝",
+      "cx": 426,
+      "cy": 514,
+      "maxWidth": 565,
+      "maxHeight": 48,
+      "fill": "#12120f"
+    },
+    {
+      "id": "permission_reason_1",
+      "text": "请在系统设置中开启附近设备权限，",
+      "cx": 426,
+      "cy": 577,
+      "maxWidth": 560,
+      "maxHeight": 34,
+      "fill": "#12120f"
+    },
+    {
+      "id": "permission_reason_2",
+      "text": "返回游戏后重新进入蓝牙对局。",
+      "cx": 426,
+      "cy": 627,
+      "maxWidth": 560,
+      "maxHeight": 34,
+      "fill": "#12120f"
+    },
+    {
+      "id": "open_app_settings",
+      "text": "前往系统设置",
+      "cx": 426,
+      "cy": 793,
+      "maxWidth": 460,
+      "maxHeight": 108,
+      "fill": "#123754"
+    }
+  ],
+  "fixture": {
+    "platform": "Android native bridge",
+    "bluetooth_available": true,
+    "bluetooth_enabled": true,
+    "permission_granted": false,
+    "permanently_denied": true,
+    "session": null,
+    "device_names_displayed": false
+  },
+  "action": "bluetooth-app-settings-button (separate native event; actual click/return untested)",
+  "top_back": "inherit approved upper-left arrow; no active session",
+  "approved_comparison": {
+    "version": "B8-v1",
+    "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4"
+  },
+  "local_preview_sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+  "allowed_diff": "B8 and B9 text alpha union; regions x135-717 y477-662, x160-692 y730-862; approved top, decorative, footer pixels remain unchanged",
+  "user_approval": "pending",
+  "runtime": "not_run",
+  "NET": "paused",
+  "scoring": "frozen"
+}
