@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.current_work.v1",
-  "revision": "UI-SESSION-CLOSEOUT-20261017",
-  "updated_at_local": "2026-10-17T23:28:59+08:00",
+  "revision": "UI-B9-CANDIDATE-PENDING-20261030",
+  "updated_at_local": "2026-10-30",
   "known_UI_source": "2026-10-14-v1",
   "source_commit": "52002b3762bd948a134c67cfbc99427035790eba",
   "approved_versions": [
@@ -26,9 +26,12 @@
   "next_task": {
     "id": "B9",
     "subject": "蓝牙权限永久拒绝，前往系统设置",
-    "candidate_created": false,
+    "candidate_created": true,
     "candidate_approved": false,
-    "next_action": "用户明确恢复UI工作后，从B9「蓝牙权限永久拒绝，前往系统设置」继续；先读取固定入口与最新HEAD，恢复批准源层，一次展示一张实际候选。"
+    "preview_sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+    "preview_published_to_github": false,
+    "source_text_published_to_github": true,
+    "next_action": "用户具体审核已呈现的B9-v1静态图；如要求修改则只改批准差分；未获批准不得更新APPROVAL_REGISTER.json批准指针。"
   },
   "current_approval_authority": "APPROVAL_REGISTER.json",
   "asset_library": "../../assets/ui/INDEX.json",
@@ -91,9 +94,9 @@
     "user_statement": "审批通过"
   },
   "approval_changes": 0,
-  "status": "current_conversation_closed_by_user",
-  "paused_by_user": true,
-  "pause_scope": "current_UI_conversation_only",
+  "status": "UI_B9_candidate_pending_user_approval",
+  "paused_by_user": false,
+  "pause_scope": null,
   "automatic_resume_scheduled": false,
   "session_closeout": {
     "status": "closed_by_user",
@@ -148,5 +151,32 @@
     "formal_scoring_status": "frozen",
     "NET": "paused"
   },
-  "new_candidate_created_this_closeout": false
+  "new_candidate_created_this_closeout": false,
+  "current_candidate": {
+    "id": "B9-v1",
+    "status": "pending_user_review",
+    "source_folder": "worklines/ui/candidates/B9/v1",
+    "approved_comparison": "B8-v1",
+    "visual_candidate_created": true,
+    "visual_candidate_presented_in_current_conversation": true,
+    "local_preview_sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+    "github_preview_png_uploaded": false,
+    "github_reconstruction_source_available": true,
+    "source_verification": {
+      "base_sha256_matched": true,
+      "font_sha256_matched": true,
+      "protected_pixel_changes": 0,
+      "dimensions": [
+        852,
+        1846
+      ],
+      "actual_visual_inspected": true
+    },
+    "approval": "pending",
+    "runtime": "not_run",
+    "real_permission_and_settings_interaction": "not_run",
+    "game_code_changes": 0,
+    "scoring_frozen": true,
+    "NET": "paused"
+  }
 }
