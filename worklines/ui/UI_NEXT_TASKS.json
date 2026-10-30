@@ -12,12 +12,12 @@
     },
     {
       "id": "UI-002",
-      "status": "active_candidate_pending_user_review",
+      "status": "active_B9_approved_next_item_planned",
       "work": "优先未完成非棋盘页面：设置页、蓝牙大厅，再英雄选择/猜拳",
       "deliverable": "逐屏可审阅方案或原型，含实际状态、返回与适配",
       "acceptance": "已有候选实现先对照；功能/文案保留，新增方案待用户审阅",
-      "current_item": "B9-v1 static candidate prepared, user approval pending",
-      "resume_point": "B9-v1候选已制作并于2026-10-30展示，参数与可重建代码已回传GitHub；PNG预览尚未回传GitHub。下一动作是取得具体审批或修订，批准前不覆盖APPROVAL_REGISTER。",
+      "current_item": "B9-v1 static UI user_approved; PNG preview has not been uploaded to GitHub",
+      "resume_point": "B9-v1 approved 2026-10-30 (quote: 通过这一份), SHA d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0. Next: source-check and create a distinct B10 Bluetooth-success/replay candidate, without changing prior approved artwork.",
       "accepted_static_versions": [
         "B1-v2",
         "B2-v4",
@@ -27,9 +27,10 @@
         "B5-v1",
         "B6-v1",
         "B7-v1",
-        "B8-v1"
+        "B8-v1",
+        "B9-v1"
       ],
-      "qualified_static_version": "B1/B2/S1/B3/B4/B5/B6/B7/B8通过；首页/V4原版例外保留。",
+      "qualified_static_version": "B1/B2/S1/B3/B4/B5/B6/B7/B8/B9 仅静态图已通过；首页/V4原版例外保留。",
       "runtime_acceptance": "not_run",
       "global_typography_rollout_remaining": [
         "其余未展示蓝牙状态",
@@ -68,9 +69,9 @@
   "first_task": "UI-002",
   "independent_work_can_continue_when_shared_interface_blocked": true,
   "planned_tasks_are_not_completed_designs": true,
-  "snapshot_date": "2026-10-17",
+  "snapshot_date": "2026-10-30",
   "paused_by_user": false,
-  "resume_item": "UI002-BLUETOOTH-B9-v1 pending_user_review",
+  "resume_item": "UI002-BLUETOOTH-B10-planned",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
   "handoff_requested": true,
@@ -94,13 +95,16 @@
     {
       "item": "B9-v1",
       "state": "蓝牙权限永久拒绝，前往系统设置",
-      "status": "candidate_created_pending_user_review",
-      "preview_github_published": false
+      "status": "user_approved",
+      "preview_github_published": false,
+      "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0"
     },
     {
       "item": "future Bluetooth states",
       "state": "连接成功短暂提示/再战；设备列表展开及多设备/长名",
-      "status": "not_designed_or_not_approved"
+      "status": "next_candidates_not_started",
+      "suggested_first_id": "B10",
+      "next_action": "先核对成功短暂提示/再战对应的权限、会话与返回条件，再制作单张候选。"
     },
     {
       "item": "hero selection and rps",
@@ -108,7 +112,7 @@
       "status": "not_started_in_this_round"
     }
   ],
-  "pause_scope": "current_UI_conversation_only",
+  "pause_scope": null,
   "session_closeout": {
     "closed_at": "2026-10-17T23:28:59+08:00",
     "user_statement": "收束本轮对话",
