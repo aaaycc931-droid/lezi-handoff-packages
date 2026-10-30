@@ -1,11 +1,11 @@
 {
   "schema": "lezi.main.session_closeout.v1",
-  "id": "MAIN-SESSION-CLOSEOUT-20261027",
-  "date_local": "2026-10-27",
+  "id": "MAIN-SESSION-CLOSEOUT-20261030",
+  "date_local": "2026-10-30",
   "timezone": "Asia/Shanghai",
-  "user_request": "收束本轮对话，我要更换对话继续进行",
+  "user_request": "收束本对话",
   "status": "current_dialogue_closed_project_continues",
-  "source_handoff_head": "1b3ccdff861219e8e73c3e32b4cad0f11e53967a",
+  "source_handoff_head": "28e1c48428e227ed9cc624fb1fb2b86e7cb0cee0",
   "completed": {
     "shared_runtime": {
       "engine_commit": "570fdf189867ec93355f0eca66362deb72cca53c",
@@ -40,18 +40,53 @@
       "build_commit": "80c2ceea7f7c7bb09f77aa5bbfaf05cf393c6eee",
       "run_id": 40470588695,
       "result": "debug APK built and delivered; actual phone acceptance unverified"
+    },
+    "main_continuation_20261028_30": {
+      "latest_engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "draft_PR": 22,
+      "phase_references": {
+        "evidence_accounting": "worklines/main/CURRENT_STATE.json#evidence_accounting",
+        "standard_np32": "worklines/main/CURRENT_STATE.json#standard_np32",
+        "public_path_query": "worklines/main/CURRENT_STATE.json#public_path_query",
+        "public_path_qualification": "worklines/main/CURRENT_STATE.json#public_path_qualification",
+        "standard_r8_window": "worklines/main/CURRENT_STATE.json#standard_r8_window",
+        "hc56_stage_views": "worklines/main/CURRENT_STATE.json#hc56_stage_views",
+        "committed_output_channel": "worklines/main/CURRENT_STATE.json#committed_output_channel",
+        "bluetooth_receipt_correlation": "worklines/main/CURRENT_STATE.json#bluetooth_receipt_correlation",
+        "native_send_accounting": "worklines/main/CURRENT_STATE.json#native_send_accounting"
+      },
+      "latest_saved_validation": {
+        "new_Node_checks": 21,
+        "native_JVM_checks": 16,
+        "parent_native_fault_controls": 3,
+        "final_related_passed": 935,
+        "separate_web_static_passed": 50,
+        "production_code_transform_modules": 37,
+        "initial_frozen_policy_failure_record_retained": true,
+        "engine_remote_readbacks": 19,
+        "stage_handoff_readbacks": 17,
+        "acceptance_scope": "historical bounded offline results, not rerun or promoted during closeout"
+      },
+      "current_dialogue_scope_note": "Prior completed shared runtime/dispatch/APK entries remain historical; latest code and current next action are above."
     }
   },
   "next": {
-    "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
-    "action": "核最新HEAD、主线session_closure和三线最新回传，先把已执行的原12序列/110请求及100+100观察点逐项映射到半混沌原64规格和210观察义务，区分已证、部分、缺刺激和独立QA。",
+    "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "action": "核未知行动跨断连/重连的真实来源与可达时序、各动作幂等和冲突政策，再形成兼容的当前请求正式结果核对方案。",
+    "basis": "本轮真实JVM完整帧/flush故障可产生权威已接受而本机unknown；首写/半行则未接受。既有断连/重连会清UI等待，但不是旧行动接受/拒绝/duplicate凭据。",
+    "requirements": [
+      "先恢复单I/O执行器、原生/主线程回调、Web连接状态及真实动作来源，区分自然可达与仅反射能构造的竞态。",
+      "核不同动作已有actionId/去重/拒绝/冲突和来源，不能套用走棋去重覆盖无ID的其他动作；未知行动不自动重放/补交。",
+      "明确新旧桥/新旧v2端兼容与降级；如需消息/回执语义变化先给明确方案和真实差分，不静默把pong、written、重连或新snapshot当接受ACK。",
+      "保留PR20最新已提交视图、PR21等待关联和本轮流隔离/checked未知防重试。继续只做已准入jieqi离线源与真实函数，Android/radio/完整DOM/设备和独立QA仍未验。"
+    ],
     "secondary": [
-      "随后补普通NP32真实房间限定准入与AS/AP/ES完整自然前缀。",
-      "继续更广公开合法走法/威胁/终局查询及雨夜后期、其他英雄/子行动/空间安全覆盖。"
+      "半混乱/普通产品门禁、原56完整义务与64正式验收仍0或未验。普通NG11、暗子来源、三态消费者和其他分支保持。",
+      "评分隔离检查本轮首轮1失败、孤立21/最终935通过；根因未证，评分源/预算不改，不自动恢复评分优化。"
     ],
     "separate_routes": [
-      "H03评分试点保留UNRUN，评分候选未正式采用；SCORE-DESIGN-PREDICTION-GAP-20261026仍需独立推进。",
-      "新风V3.1完整候选已发布；本次仅读其交接元数据，完整候选与旧稿对照、接收/采用核验尚待执行。"
+      "三线工作稿/确认/实际采用、山风/UI/H03/旧owner包保护。",
+      "评分及原账本冻结、NET暂停，不合并/部署/重复APK。"
     ]
   },
   "concurrent_protection": {
@@ -109,19 +144,15 @@
     "APK build and asset compilation pass do not establish true-device installation, UI fidelity or physical Bluetooth acceptance.",
     "Full TypeScript typecheck remains NOT_RUN; APK web build is transpilation/asset packaging."
   ],
-  "resume_prompt": "继续《乐子象棋》主线。读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt ，核对最新HEAD，按CURRENT_STATE.json中的session_closure及SESSION_CLOSEOUT.json接续。从MAIN-HC-EVIDENCE-ACCOUNTING-20261027开始，继承已有授权与确认，保护三线及英雄设计并发成果。PR14已有710项相关检查和原12序列110请求实测，先逐项核原64/210证据义务；不能把前缀执行当全面验收。已交付570fdf1代码对应的安卓调试APK，不重复打包；真机/蓝牙验证仍未知。评分冻结、NET暂停，阶段完成增量写回并复读。",
-  "publication": "ordinary incremental commit, expected_sha/no force; actual content readback follows publication",
+  "resume_prompt": "继续《乐子象棋》主线。读取固定入口https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt，先核最新HEAD，按CURRENT_STATE.json#session_closure和SESSION_CLOSEOUT.json#session_closeout_20261030接续。下一MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030：核真实可达时序、不同动作幂等/冲突及新旧端兼容正式结果核对，不自动重放未知行动。继承既有授权/确认，保留PR22草稿71145df及前序工程，不重复已完成步骤或APK。评分/原账本冻结、NET暂停，三线/英雄/UI/H03/旧owner包保护；阶段完成增量写回并复读。",
+  "publication": "Ordinary incremental closeout commit with expected_sha/no force. Its immutable identity is obtained from Git history; actual postpublication content readback is performed in this closing turn.",
   "closeout_prepublication_checks": {
-    "unique_paths": true,
-    "json_parseable": true,
-    "closeout_points_to_current_engine": true,
-    "apk_build_game_base": true,
-    "code_source_has_not_changed": true,
-    "mode_or_hero_files_not_written": true,
-    "referenced_closeout_and_apk_files": true,
-    "local_existing_files_checked": 373,
-    "local_existing_files_changed": 0,
-    "remote_head_rechecked": "1b3ccdff861219e8e73c3e32b4cad0f11e53967a"
+    "source_HEAD_verified": "28e1c48428e227ed9cc624fb1fb2b86e7cb0cee0",
+    "PR22_metadata_rechecked": true,
+    "no_new_engineering_or_test_execution": true,
+    "next_action_unchanged": true,
+    "three_lines_not_stopped": true,
+    "historical_phase_and_owner_evidence_preserved": true
   },
   "continuation_20261028": {
     "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
@@ -424,7 +455,7 @@
     },
     "resume_prompt": "继续《乐子象棋》主线。先核最新HEAD，读CURRENT_STATE.json#standard_np32、NP32_PROGRESS.json和MAIN_NP32_REPORT.md。PR15草稿680966f基于PR14，原普通32棋AS/AP/ES三个条件索引流前缀已真实执行37请求，37闭合+37正常结束后观察、12H21抽取receipt；39新增/51文件749项相关检查通过，14路径远端复读、541旧blob保持。owner-only原始轨迹已保存，按精确文件名lezi-main-np32-evidence-20261028.zip恢复；不是生产随机采样或正式普通模式资格化。下一MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028，对齐限定公开合法走法/威胁/终局查询与已闭合权威，隔离真实RNG和状态副作用。普通线新接收任务已发布，实际采用仍待其线。半混乱原64/210及56视图缺口、三线/山风/UI/H03都保留，评分冻结、NET暂停；不重复APK、不合并，阶段完成增量写回并复读。"
   },
-  "latest_continuation": "continuation_native_send_20261030",
+  "latest_continuation": "session_closeout_20261030",
   "continuation_public_query_20261028": {
     "date_local": "2026-10-28",
     "source_handoff_head": "72dc9b59b961529c60200e37e0538a80d3312e3d",
@@ -1569,5 +1600,83 @@
       ]
     },
     "resume_prompt": "继续《乐子象棋》主线。核最新HEAD，读CURRENT_STATE.json#native_send_accounting → MAIN_NATIVE_SEND_REPORT.md → NATIVE_SEND_PROGRESS.json。PR22草稿71145df基于PR21：本机sendChecked三态、失败当前流隔离，未知行动不回退/自动重试/发ping；保留v2和旧void。21新Node/最终935相关/另50静态、16JVM和3父版故障控制通过，37代码模块转换；首轮评分隔离1失败，孤立21及完整再跑通过，根因未证，评分源/预算不改。19代码路径复读、622旧blob保护。完整生产Java类以明确Android/JSON/writer/UI替身执行，Web按原字节/结果接合，不是Android/JNI/radio/真机/完整DOM。written/pong/重连都不是接受ACK，下一MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030，核可达时序/不同动作幂等与兼容正式结果对账，不自动补交未知行动。三线/英雄/UI/H03/旧包保护，评分冻结、NET暂停，不合并/部署/APK，阶段完成增量写回并复读，不自动关闭对话。"
+  },
+  "session_closeout_20261030": {
+    "id": "MAIN-SESSION-CLOSEOUT-20261030",
+    "date_local": "2026-10-30",
+    "timezone": "Asia/Shanghai",
+    "status": "current_dialogue_closed_project_continues",
+    "scope": "this_conversation_only",
+    "user_request": "收束本对话",
+    "project_or_other_worklines_stopped": false,
+    "entry": "worklines/main/SESSION_CLOSEOUT.json#session_closeout_20261030",
+    "source_handoff_head": "28e1c48428e227ed9cc624fb1fb2b86e7cb0cee0",
+    "latest_engineering_phase": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "draft_PR": 22,
+    "PR_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/22",
+    "PR_state_rechecked": "open_draft_unmerged_at_closeout",
+    "merged": false,
+    "completed_phase_references": {
+      "evidence_accounting": "worklines/main/CURRENT_STATE.json#evidence_accounting",
+      "standard_np32": "worklines/main/CURRENT_STATE.json#standard_np32",
+      "public_path_query": "worklines/main/CURRENT_STATE.json#public_path_query",
+      "public_path_qualification": "worklines/main/CURRENT_STATE.json#public_path_qualification",
+      "standard_r8_window": "worklines/main/CURRENT_STATE.json#standard_r8_window",
+      "hc56_stage_views": "worklines/main/CURRENT_STATE.json#hc56_stage_views",
+      "committed_output_channel": "worklines/main/CURRENT_STATE.json#committed_output_channel",
+      "bluetooth_receipt_correlation": "worklines/main/CURRENT_STATE.json#bluetooth_receipt_correlation",
+      "native_send_accounting": "worklines/main/CURRENT_STATE.json#native_send_accounting"
+    },
+    "latest_saved_validation": {
+      "new_Node_checks": 21,
+      "native_JVM_checks": 16,
+      "parent_native_fault_controls": 3,
+      "final_related_passed": 935,
+      "separate_web_static_passed": 50,
+      "production_code_transform_modules": 37,
+      "initial_frozen_policy_failure_record_retained": true,
+      "engine_remote_readbacks": 19,
+      "stage_handoff_readbacks": 17,
+      "acceptance_scope": "historical bounded offline results, not rerun or promoted during closeout"
+    },
+    "engineering_advanced_during_closeout": false,
+    "tests_reexecuted_during_closeout": false,
+    "new_gameplay_confirmations": 0,
+    "next_action": {
+      "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+      "action": "核未知行动跨断连/重连的真实来源与可达时序、各动作幂等和冲突政策，再形成兼容的当前请求正式结果核对方案。",
+      "basis": "本轮真实JVM完整帧/flush故障可产生权威已接受而本机unknown；首写/半行则未接受。既有断连/重连会清UI等待，但不是旧行动接受/拒绝/duplicate凭据。",
+      "requirements": [
+        "先恢复单I/O执行器、原生/主线程回调、Web连接状态及真实动作来源，区分自然可达与仅反射能构造的竞态。",
+        "核不同动作已有actionId/去重/拒绝/冲突和来源，不能套用走棋去重覆盖无ID的其他动作；未知行动不自动重放/补交。",
+        "明确新旧桥/新旧v2端兼容与降级；如需消息/回执语义变化先给明确方案和真实差分，不静默把pong、written、重连或新snapshot当接受ACK。",
+        "保留PR20最新已提交视图、PR21等待关联和本轮流隔离/checked未知防重试。继续只做已准入jieqi离线源与真实函数，Android/radio/完整DOM/设备和独立QA仍未验。"
+      ],
+      "secondary": [
+        "半混乱/普通产品门禁、原56完整义务与64正式验收仍0或未验。普通NG11、暗子来源、三态消费者和其他分支保持。",
+        "评分隔离检查本轮首轮1失败、孤立21/最终935通过；根因未证，评分源/预算不改，不自动恢复评分优化。"
+      ],
+      "separate_routes": [
+        "三线工作稿/确认/实际采用、山风/UI/H03/旧owner包保护。",
+        "评分及原账本冻结、NET暂停，不合并/部署/重复APK。"
+      ]
+    },
+    "resume_prompt": "继续《乐子象棋》主线。读取固定入口https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt，先核最新HEAD，按CURRENT_STATE.json#session_closure和SESSION_CLOSEOUT.json#session_closeout_20261030接续。下一MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030：核真实可达时序、不同动作幂等/冲突及新旧端兼容正式结果核对，不自动重放未知行动。继承既有授权/确认，保留PR22草稿71145df及前序工程，不重复已完成步骤或APK。评分/原账本冻结、NET暂停，三线/英雄/UI/H03/旧owner包保护；阶段完成增量写回并复读。",
+    "limits": [
+      "True acceptance/rejection/duplicate reconciliation remains open; written/pong/reconnect/new snapshot are not acceptance evidence.",
+      "JVM native classes ran with Android/JSON/writer/UI substitutes; real Android SDK/JNI/radio/device/full DOM/independent QA not verified.",
+      "Original56 complete obligations/64 formal acceptance and half/ordinary product transport gates unchanged.",
+      "Initial frozen scoring isolation failure passed isolated21 and full935 reruns, root cause unverified; no scoring source/budget change."
+    ],
+    "protected": {
+      "three_lines_and_receiver_owned_adoption": true,
+      "heroes_shan_wind_UI_H03": true,
+      "scoring_and_original_ledger": "frozen",
+      "NET": "paused",
+      "owner_artifacts": "unchanged",
+      "game_rules_or_mode_gates_changed": false,
+      "new_APK_merge_deployment": false
+    }
   }
 }

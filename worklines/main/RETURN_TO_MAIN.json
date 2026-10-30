@@ -7,10 +7,10 @@
     "standard",
     "ui"
   ],
-  "base_commit": "562c41dadbbbef67ba0612b1b32791321d5c8c38",
-  "phase": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
+  "base_commit": "28e1c48428e227ed9cc624fb1fb2b86e7cb0cee0",
+  "phase": "MAIN-SESSION-CLOSEOUT-20261030",
   "current_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
-  "status": "CHECKED_NATIVE_WRITE_ACCOUNTING_AND_CURRENT_STREAM_QUARANTINE_PUBLISHED_DRAFT_UNKNOWN_RESULT_RECONCILIATION_OPEN",
+  "status": "current_dialogue_closed_project_continues",
   "confirmed_delta_this_session": [],
   "pending_delta": [
     "毕业跨越来源已核对；最小存活5/6→6/6后回溯的同次训练再达阈值与奖励撤销处理仍待明确，复工先形成准确提案。",
@@ -137,7 +137,7 @@
     "CONF-STD-M07-POOL-EXCLUSION-20261016"
   ],
   "ordinary_scoped_confirmations_received_this_phase": [],
-  "publication_parent_commit": "562c41dadbbbef67ba0612b1b32791321d5c8c38",
+  "publication_parent_commit": "28e1c48428e227ed9cc624fb1fb2b86e7cb0cee0",
   "unread_concurrent_returns": [],
   "new_rule_confirmations_this_phase": 0,
   "current_phase_changes": [
@@ -2483,14 +2483,82 @@
     "receiver_read_or_adoption": "unknown"
   },
   "session_closure": {
-    "id": "MAIN-STAGE-CHECKPOINT-20261030-NATIVE-SEND",
+    "id": "MAIN-SESSION-CLOSEOUT-20261030",
     "date_local": "2026-10-30",
-    "status": "stage_completed_project_continues_current_dialogue_not_closed",
-    "entry": "worklines/main/SESSION_CLOSEOUT.json#continuation_native_send_20261030",
-    "previous_checkpoint": "MAIN-STAGE-CHECKPOINT-20261030-BLUETOOTH-RECEIPT",
-    "next_action": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "timezone": "Asia/Shanghai",
+    "status": "current_dialogue_closed_project_continues",
+    "scope": "this_conversation_only",
+    "user_request": "收束本对话",
+    "project_or_other_worklines_stopped": false,
+    "entry": "worklines/main/SESSION_CLOSEOUT.json#session_closeout_20261030",
+    "source_handoff_head": "28e1c48428e227ed9cc624fb1fb2b86e7cb0cee0",
+    "latest_engineering_phase": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
     "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
-    "resume_prompt": "继续《乐子象棋》主线。核最新HEAD，读CURRENT_STATE.json#native_send_accounting → MAIN_NATIVE_SEND_REPORT.md → NATIVE_SEND_PROGRESS.json。PR22草稿71145df基于PR21：本机sendChecked三态、失败当前流隔离，未知行动不回退/自动重试/发ping；保留v2和旧void。21新Node/最终935相关/另50静态、16JVM和3父版故障控制通过，37代码模块转换；首轮评分隔离1失败，孤立21及完整再跑通过，根因未证，评分源/预算不改。19代码路径复读、622旧blob保护。完整生产Java类以明确Android/JSON/writer/UI替身执行，Web按原字节/结果接合，不是Android/JNI/radio/真机/完整DOM。written/pong/重连都不是接受ACK，下一MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030，核可达时序/不同动作幂等与兼容正式结果对账，不自动补交未知行动。三线/英雄/UI/H03/旧包保护，评分冻结、NET暂停，不合并/部署/APK，阶段完成增量写回并复读，不自动关闭对话。"
+    "draft_PR": 22,
+    "PR_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/22",
+    "PR_state_rechecked": "open_draft_unmerged_at_closeout",
+    "merged": false,
+    "completed_phase_references": {
+      "evidence_accounting": "worklines/main/CURRENT_STATE.json#evidence_accounting",
+      "standard_np32": "worklines/main/CURRENT_STATE.json#standard_np32",
+      "public_path_query": "worklines/main/CURRENT_STATE.json#public_path_query",
+      "public_path_qualification": "worklines/main/CURRENT_STATE.json#public_path_qualification",
+      "standard_r8_window": "worklines/main/CURRENT_STATE.json#standard_r8_window",
+      "hc56_stage_views": "worklines/main/CURRENT_STATE.json#hc56_stage_views",
+      "committed_output_channel": "worklines/main/CURRENT_STATE.json#committed_output_channel",
+      "bluetooth_receipt_correlation": "worklines/main/CURRENT_STATE.json#bluetooth_receipt_correlation",
+      "native_send_accounting": "worklines/main/CURRENT_STATE.json#native_send_accounting"
+    },
+    "latest_saved_validation": {
+      "new_Node_checks": 21,
+      "native_JVM_checks": 16,
+      "parent_native_fault_controls": 3,
+      "final_related_passed": 935,
+      "separate_web_static_passed": 50,
+      "production_code_transform_modules": 37,
+      "initial_frozen_policy_failure_record_retained": true,
+      "engine_remote_readbacks": 19,
+      "stage_handoff_readbacks": 17,
+      "acceptance_scope": "historical bounded offline results, not rerun or promoted during closeout"
+    },
+    "engineering_advanced_during_closeout": false,
+    "tests_reexecuted_during_closeout": false,
+    "new_gameplay_confirmations": 0,
+    "next_action": {
+      "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+      "action": "核未知行动跨断连/重连的真实来源与可达时序、各动作幂等和冲突政策，再形成兼容的当前请求正式结果核对方案。",
+      "basis": "本轮真实JVM完整帧/flush故障可产生权威已接受而本机unknown；首写/半行则未接受。既有断连/重连会清UI等待，但不是旧行动接受/拒绝/duplicate凭据。",
+      "requirements": [
+        "先恢复单I/O执行器、原生/主线程回调、Web连接状态及真实动作来源，区分自然可达与仅反射能构造的竞态。",
+        "核不同动作已有actionId/去重/拒绝/冲突和来源，不能套用走棋去重覆盖无ID的其他动作；未知行动不自动重放/补交。",
+        "明确新旧桥/新旧v2端兼容与降级；如需消息/回执语义变化先给明确方案和真实差分，不静默把pong、written、重连或新snapshot当接受ACK。",
+        "保留PR20最新已提交视图、PR21等待关联和本轮流隔离/checked未知防重试。继续只做已准入jieqi离线源与真实函数，Android/radio/完整DOM/设备和独立QA仍未验。"
+      ],
+      "secondary": [
+        "半混乱/普通产品门禁、原56完整义务与64正式验收仍0或未验。普通NG11、暗子来源、三态消费者和其他分支保持。",
+        "评分隔离检查本轮首轮1失败、孤立21/最终935通过；根因未证，评分源/预算不改，不自动恢复评分优化。"
+      ],
+      "separate_routes": [
+        "三线工作稿/确认/实际采用、山风/UI/H03/旧owner包保护。",
+        "评分及原账本冻结、NET暂停，不合并/部署/重复APK。"
+      ]
+    },
+    "resume_prompt": "继续《乐子象棋》主线。读取固定入口https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt，先核最新HEAD，按CURRENT_STATE.json#session_closure和SESSION_CLOSEOUT.json#session_closeout_20261030接续。下一MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030：核真实可达时序、不同动作幂等/冲突及新旧端兼容正式结果核对，不自动重放未知行动。继承既有授权/确认，保留PR22草稿71145df及前序工程，不重复已完成步骤或APK。评分/原账本冻结、NET暂停，三线/英雄/UI/H03/旧owner包保护；阶段完成增量写回并复读。",
+    "limits": [
+      "True acceptance/rejection/duplicate reconciliation remains open; written/pong/reconnect/new snapshot are not acceptance evidence.",
+      "JVM native classes ran with Android/JSON/writer/UI substitutes; real Android SDK/JNI/radio/device/full DOM/independent QA not verified.",
+      "Original56 complete obligations/64 formal acceptance and half/ordinary product transport gates unchanged.",
+      "Initial frozen scoring isolation failure passed isolated21 and full935 reruns, root cause unverified; no scoring source/budget change."
+    ],
+    "protected": {
+      "three_lines_and_receiver_owned_adoption": true,
+      "heroes_shan_wind_UI_H03": true,
+      "scoring_and_original_ledger": "frozen",
+      "NET": "paused",
+      "owner_artifacts": "unchanged",
+      "game_rules_or_mode_gates_changed": false,
+      "new_APK_merge_deployment": false
+    }
   },
   "requested_apk": {
     "record": "worklines/main/APK_BUILD_RECORD.json",
@@ -3051,7 +3119,7 @@
     },
     "handoff_publication_date_local": "2026-10-29"
   },
-  "latest_phase_scope_note": "Local checked write accounting and current failed-stream quarantine; no authoritative accept/duplicate receipt or real Android/device proof.",
+  "latest_phase_scope_note": "User explicitly closes only this conversation. Published engineering and validation stay at their original scope; project/other worklines continue.",
   "standard_r8_window_20261029": {
     "id": "MAIN-STD-R8-NATURAL-WINDOW-20261028",
     "date_local": "2026-10-29",
@@ -3719,6 +3787,85 @@
       "v2_wire_schema_delta": 0,
       "merged": false,
       "APK_rebuilt": false
+    }
+  },
+  "latest_engineering_phase": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
+  "session_closeout_20261030": {
+    "id": "MAIN-SESSION-CLOSEOUT-20261030",
+    "date_local": "2026-10-30",
+    "timezone": "Asia/Shanghai",
+    "status": "current_dialogue_closed_project_continues",
+    "scope": "this_conversation_only",
+    "user_request": "收束本对话",
+    "project_or_other_worklines_stopped": false,
+    "entry": "worklines/main/SESSION_CLOSEOUT.json#session_closeout_20261030",
+    "source_handoff_head": "28e1c48428e227ed9cc624fb1fb2b86e7cb0cee0",
+    "latest_engineering_phase": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "draft_PR": 22,
+    "PR_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/22",
+    "PR_state_rechecked": "open_draft_unmerged_at_closeout",
+    "merged": false,
+    "completed_phase_references": {
+      "evidence_accounting": "worklines/main/CURRENT_STATE.json#evidence_accounting",
+      "standard_np32": "worklines/main/CURRENT_STATE.json#standard_np32",
+      "public_path_query": "worklines/main/CURRENT_STATE.json#public_path_query",
+      "public_path_qualification": "worklines/main/CURRENT_STATE.json#public_path_qualification",
+      "standard_r8_window": "worklines/main/CURRENT_STATE.json#standard_r8_window",
+      "hc56_stage_views": "worklines/main/CURRENT_STATE.json#hc56_stage_views",
+      "committed_output_channel": "worklines/main/CURRENT_STATE.json#committed_output_channel",
+      "bluetooth_receipt_correlation": "worklines/main/CURRENT_STATE.json#bluetooth_receipt_correlation",
+      "native_send_accounting": "worklines/main/CURRENT_STATE.json#native_send_accounting"
+    },
+    "latest_saved_validation": {
+      "new_Node_checks": 21,
+      "native_JVM_checks": 16,
+      "parent_native_fault_controls": 3,
+      "final_related_passed": 935,
+      "separate_web_static_passed": 50,
+      "production_code_transform_modules": 37,
+      "initial_frozen_policy_failure_record_retained": true,
+      "engine_remote_readbacks": 19,
+      "stage_handoff_readbacks": 17,
+      "acceptance_scope": "historical bounded offline results, not rerun or promoted during closeout"
+    },
+    "engineering_advanced_during_closeout": false,
+    "tests_reexecuted_during_closeout": false,
+    "new_gameplay_confirmations": 0,
+    "next_action": {
+      "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+      "action": "核未知行动跨断连/重连的真实来源与可达时序、各动作幂等和冲突政策，再形成兼容的当前请求正式结果核对方案。",
+      "basis": "本轮真实JVM完整帧/flush故障可产生权威已接受而本机unknown；首写/半行则未接受。既有断连/重连会清UI等待，但不是旧行动接受/拒绝/duplicate凭据。",
+      "requirements": [
+        "先恢复单I/O执行器、原生/主线程回调、Web连接状态及真实动作来源，区分自然可达与仅反射能构造的竞态。",
+        "核不同动作已有actionId/去重/拒绝/冲突和来源，不能套用走棋去重覆盖无ID的其他动作；未知行动不自动重放/补交。",
+        "明确新旧桥/新旧v2端兼容与降级；如需消息/回执语义变化先给明确方案和真实差分，不静默把pong、written、重连或新snapshot当接受ACK。",
+        "保留PR20最新已提交视图、PR21等待关联和本轮流隔离/checked未知防重试。继续只做已准入jieqi离线源与真实函数，Android/radio/完整DOM/设备和独立QA仍未验。"
+      ],
+      "secondary": [
+        "半混乱/普通产品门禁、原56完整义务与64正式验收仍0或未验。普通NG11、暗子来源、三态消费者和其他分支保持。",
+        "评分隔离检查本轮首轮1失败、孤立21/最终935通过；根因未证，评分源/预算不改，不自动恢复评分优化。"
+      ],
+      "separate_routes": [
+        "三线工作稿/确认/实际采用、山风/UI/H03/旧owner包保护。",
+        "评分及原账本冻结、NET暂停，不合并/部署/重复APK。"
+      ]
+    },
+    "resume_prompt": "继续《乐子象棋》主线。读取固定入口https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt，先核最新HEAD，按CURRENT_STATE.json#session_closure和SESSION_CLOSEOUT.json#session_closeout_20261030接续。下一MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030：核真实可达时序、不同动作幂等/冲突及新旧端兼容正式结果核对，不自动重放未知行动。继承既有授权/确认，保留PR22草稿71145df及前序工程，不重复已完成步骤或APK。评分/原账本冻结、NET暂停，三线/英雄/UI/H03/旧owner包保护；阶段完成增量写回并复读。",
+    "limits": [
+      "True acceptance/rejection/duplicate reconciliation remains open; written/pong/reconnect/new snapshot are not acceptance evidence.",
+      "JVM native classes ran with Android/JSON/writer/UI substitutes; real Android SDK/JNI/radio/device/full DOM/independent QA not verified.",
+      "Original56 complete obligations/64 formal acceptance and half/ordinary product transport gates unchanged.",
+      "Initial frozen scoring isolation failure passed isolated21 and full935 reruns, root cause unverified; no scoring source/budget change."
+    ],
+    "protected": {
+      "three_lines_and_receiver_owned_adoption": true,
+      "heroes_shan_wind_UI_H03": true,
+      "scoring_and_original_ledger": "frozen",
+      "NET": "paused",
+      "owner_artifacts": "unchanged",
+      "game_rules_or_mode_gates_changed": false,
+      "new_APK_merge_deployment": false
     }
   }
 }
