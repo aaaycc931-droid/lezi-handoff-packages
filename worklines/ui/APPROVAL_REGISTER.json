@@ -2,7 +2,7 @@
   "schema": "lezi.ui_approval_register.v1",
   "workline_id": "UI-DESIGN-001",
   "primary_reader": "project_main_dialogue_AI",
-  "updated_at": "2026-10-17T23:28:59+08:00",
+  "updated_at": "2026-10-30T20:40+08:00",
   "actors": {
     "user": "图稿最终审批者",
     "ui_workline": "候选设计、版本与证据记录者",
@@ -304,6 +304,40 @@
         "reviewed_version": "B8-v1",
         "reviewed_sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
         "displayed_source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51"
+      }
+    },
+    {
+      "item_id": "UI002-BLUETOOTH-B9",
+      "version": "B9-v1",
+      "status": "user_approved",
+      "approved_at": "2026-10-30T20:40+08:00",
+      "user_statement": "通过这一份",
+      "file_name": "lezi-bluetooth-B9-v1.png",
+      "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+      "source_folder": "worklines/ui/candidates/B9/v1",
+      "github_preview_png_uploaded": false,
+      "github_reconstruction_source_available": true,
+      "approval_scope": [
+        "蓝牙附近设备权限永久拒绝状态的静态画面及解释文字",
+        "前往系统设置按钮的静态呈现与原返回入口保留",
+        "852×1846固定山水/纸纹/墨框/原字形，B8/B9文字alpha并集之外0像素变化"
+      ],
+      "approval_does_not_include": [
+        "实际系统设置跳转或返回后的权限重检",
+        "双机交互、响应式适配与真实设备运行",
+        "游戏源码接入、APK、部署或主线合并"
+      ],
+      "runtime_acceptance": "not_run",
+      "production_source_status": "not_implemented",
+      "approved_baseline_preservation": "固定本次审阅图像sha256与源层、参数、已批准原底层；未经明确差分不得重画",
+      "approval_evidence": {
+        "source": "current_conversation_direct_user_statement",
+        "quote": "通过这一份",
+        "time": "2026-10-30T20:40+08:00",
+        "reviewed_version": "B9-v1",
+        "reviewed_sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+        "reviewed_image": "lezi-bluetooth-B9-v1.png",
+        "source_commit_prior_to_approval": "ff61fb2d0bc96b6ad706d39e7a6e371d229542ff"
       }
     }
   ],
@@ -861,6 +895,15 @@
       "user_approval_statement": "审批通过，下一步生成交接包",
       "library_file_id": "libfile_af118bbbd69881918dc254497e97c642",
       "source_package_library_file_id": "libfile_6db4efe7f28881919505f06390a2d03e"
+    },
+    {
+      "version": "B9-v1",
+      "status": "user_approved",
+      "user_statement": "通过这一份",
+      "approved_at": "2026-10-30T20:40+08:00",
+      "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+      "source_folder": "worklines/ui/candidates/B9/v1",
+      "github_preview_png_uploaded": false
     }
   ],
   "motion_requirement": {
@@ -872,7 +915,7 @@
     "outer_size": "开启与关闭使用同一外圈大小；状态变化仅填墨/消散，外圈不随状态缩放。旋转机制继续沿用。"
   },
   "other_approved_baselines": "首页批准原图与V4棋盘继续沿用；本记录未修改其范围或像素。",
-  "next_authorized_item": "After explicit UI resume only: B9 planned static candidate, not created",
+  "next_authorized_item": "B9-v1 approved. Next planned UI-002 item: new Bluetooth status (success/replay), not yet designed or approved; follow fixed UI route and shared limits.",
   "rules_delta": 0,
   "formal_scoring_status": "frozen",
   "product_code_changed_by_this_approval": false,
@@ -3007,6 +3050,50 @@
       "reviewed_version": "B8-v1",
       "reviewed_sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
       "displayed_source_commit": "a9443530e70868aafd5124fed2b63ea83a694e51"
+    }
+  },
+  "bluetooth_permission_permanent_denial_candidate": {
+    "version": "B9-v1",
+    "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+    "source_folder": "worklines/ui/candidates/B9/v1",
+    "status": "user_approved",
+    "approved_at": "2026-10-30T20:40+08:00",
+    "runtime": "not_run",
+    "protected_pixels_changed": 0,
+    "preview_github_published": false
+  },
+  "current_approved_bluetooth_permission_permanent_denial": {
+    "item_id": "UI002-BLUETOOTH-B9",
+    "version": "B9-v1",
+    "status": "user_approved",
+    "approved_at": "2026-10-30T20:40+08:00",
+    "user_statement": "通过这一份",
+    "file_name": "lezi-bluetooth-B9-v1.png",
+    "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+    "source_folder": "worklines/ui/candidates/B9/v1",
+    "github_preview_png_uploaded": false,
+    "github_reconstruction_source_available": true,
+    "approval_scope": [
+      "蓝牙附近设备权限永久拒绝状态的静态画面及解释文字",
+      "前往系统设置按钮的静态呈现与原返回入口保留",
+      "852×1846固定山水/纸纹/墨框/原字形，B8/B9文字alpha并集之外0像素变化"
+    ],
+    "approval_does_not_include": [
+      "实际系统设置跳转或返回后的权限重检",
+      "双机交互、响应式适配与真实设备运行",
+      "游戏源码接入、APK、部署或主线合并"
+    ],
+    "runtime_acceptance": "not_run",
+    "production_source_status": "not_implemented",
+    "approved_baseline_preservation": "固定本次审阅图像sha256与源层、参数、已批准原底层；未经明确差分不得重画",
+    "approval_evidence": {
+      "source": "current_conversation_direct_user_statement",
+      "quote": "通过这一份",
+      "time": "2026-10-30T20:40+08:00",
+      "reviewed_version": "B9-v1",
+      "reviewed_sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+      "reviewed_image": "lezi-bluetooth-B9-v1.png",
+      "source_commit_prior_to_approval": "ff61fb2d0bc96b6ad706d39e7a6e371d229542ff"
     }
   }
 }
