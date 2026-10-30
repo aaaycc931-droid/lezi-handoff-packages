@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.current_work.v1",
-  "revision": "UI-B9-CANDIDATE-PENDING-20261030",
-  "updated_at_local": "2026-10-30",
+  "revision": "UI-B9-APPROVAL-20261030",
+  "updated_at_local": "2026-10-30T20:40+08:00",
   "known_UI_source": "2026-10-14-v1",
   "source_commit": "52002b3762bd948a134c67cfbc99427035790eba",
   "approved_versions": [
@@ -13,7 +13,8 @@
     "B5-v1",
     "B6-v1",
     "B7-v1",
-    "B8-v1"
+    "B8-v1",
+    "B9-v1"
   ],
   "typography_exceptions": [
     "home",
@@ -24,14 +25,11 @@
     "V4-T1-v1"
   ],
   "next_task": {
-    "id": "B9",
-    "subject": "蓝牙权限永久拒绝，前往系统设置",
-    "candidate_created": true,
+    "id": "B10_planned",
+    "subject": "蓝牙连接成功短暂提示/再战（根据已有队列，尚未设计）",
+    "candidate_created": false,
     "candidate_approved": false,
-    "preview_sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
-    "preview_published_to_github": false,
-    "source_text_published_to_github": true,
-    "next_action": "用户具体审核已呈现的B9-v1静态图；如要求修改则只改批准差分；未获批准不得更新APPROVAL_REGISTER.json批准指针。"
+    "next_action": "先核对蓝牙相关权威状态和已批准B1—B9画面，制作下一张独立静态候选；不得把审批视为蓝牙运行验收。"
   },
   "current_approval_authority": "APPROVAL_REGISTER.json",
   "asset_library": "../../assets/ui/INDEX.json",
@@ -88,13 +86,14 @@
     "other-dialogue reading/adoption"
   ],
   "last_approval": {
-    "version": "B8-v1",
-    "sha256": "e80257f45ec3532558d8531449b508359ecd8c16fd47b3ac6d9c65f7824580f4",
-    "approved_at": "2026-10-17T21:44:49+08:00",
-    "user_statement": "审批通过"
+    "version": "B9-v1",
+    "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+    "approved_at": "2026-10-30T20:40+08:00",
+    "user_statement": "通过这一份",
+    "preview_github_published": false
   },
-  "approval_changes": 0,
-  "status": "UI_B9_candidate_pending_user_approval",
+  "approval_changes": 1,
+  "status": "UI_B9_user_approved_next_pending",
   "paused_by_user": false,
   "pause_scope": null,
   "automatic_resume_scheduled": false,
@@ -154,7 +153,7 @@
   "new_candidate_created_this_closeout": false,
   "current_candidate": {
     "id": "B9-v1",
-    "status": "pending_user_review",
+    "status": "user_approved",
     "source_folder": "worklines/ui/candidates/B9/v1",
     "approved_comparison": "B8-v1",
     "visual_candidate_created": true,
@@ -172,11 +171,22 @@
       ],
       "actual_visual_inspected": true
     },
-    "approval": "pending",
+    "approval": "user_approved",
     "runtime": "not_run",
     "real_permission_and_settings_interaction": "not_run",
     "game_code_changes": 0,
     "scoring_frozen": true,
-    "NET": "paused"
+    "NET": "paused",
+    "approved_at": "2026-10-30T20:40+08:00",
+    "approval_quote": "通过这一份"
+  },
+  "latest_approval": {
+    "kind": "static_ui_only",
+    "version": "B9-v1",
+    "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+    "source_folder": "candidates/B9/v1",
+    "source_of_truth": "APPROVAL_REGISTER.json",
+    "preview_saved_in_conversation": true,
+    "github_preview_png_uploaded": false
   }
 }
