@@ -1,27 +1,12 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-B9-APPROVAL-20261030",
-  "previous_record_id": "UI-SESSION-CLOSEOUT-20261017",
-  "base_commit": "ff61fb2d0bc96b6ad706d39e7a6e371d229542ff",
+  "record_id": "UI-B10-CANDIDATE-20261031",
+  "previous_record_id": "UI-B9-APPROVAL-20261030",
   "from_workline": "ui",
   "to_workline": "main",
-  "updated_at_local": "2026-10-30T20:40+08:00",
-  "scope": "User approval of one B9-v1 static Bluetooth permission-denied UI candidate; no runtime implementation",
-  "user_confirmation_quote_time_scope": {
-    "quote": "通过这一份",
-    "time": "2026-10-30T20:40+08:00",
-    "scope": "B9-v1 displayed static image only"
-  },
-  "approved_candidate": {
-    "id": "B9-v1",
-    "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
-    "source_folder": "candidates/B9/v1",
-    "status": "user_approved",
-    "source_available_in_github": true,
-    "preview_png_in_github": false,
-    "preview_available_in_conversation": true
-  },
-  "preserved_approved": [
+  "updated_at_local": "2026-10-31",
+  "scope": "New one-screen static connection-success UI candidate; no product/runtime change",
+  "approved_versions": [
     "B1-v2",
     "B2-v4",
     "S1-v3.2",
@@ -30,29 +15,54 @@
     "B5-v1",
     "B6-v1",
     "B7-v1",
-    "B8-v1"
+    "B8-v1",
+    "B9-v1"
   ],
-  "approval_authority": "APPROVAL_REGISTER.json",
-  "readback_required": true,
-  "source_notes": "B9 PNG not uploaded into GitHub; recompose from unchanged source using build.py, compare SHA-256 before claiming identical original",
-  "validation": {
-    "source_background_sha256_matched": true,
-    "font_sha256_matched": true,
-    "protected_pixel_changes": 0,
-    "real_bluetooth_runtime": "not_run",
-    "real_settings_return": "not_run",
-    "production_source": "not_implemented",
-    "APK": "not_generated",
-    "NET": "paused",
-    "scoring": "frozen"
+  "last_approval": {
+    "version": "B9-v1",
+    "user_quote": "通过这一份",
+    "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0"
   },
-  "next_action": "Next queued UI002 independent candidate: B10 Bluetooth connected/success message or replay status; not yet created; check live source and preserve approved baselines",
-  "prior_historical_closeout": {
-    "record_id": "UI-SESSION-CLOSEOUT-20261017",
-    "source_commit": "ff61fb2d0bc96b6ad706d39e7a6e371d229542ff",
-    "original_event_date": "2026-10-17",
-    "previous_approved": "B8-v1"
+  "candidate": {
+    "id": "B10-v1",
+    "status": "pending_user_review",
+    "source_folder": "worklines/ui/candidates/B10/v1",
+    "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95",
+    "preview_png_in_github": false,
+    "source_text_in_github": true,
+    "shown_to_user_in_current_dialogue": true,
+    "host_role_only": true
   },
-  "receiver_adoption": "unknown",
-  "publication_status": "published by commit containing this return file"
+  "actual_validation": {
+    "approved_B9_recomposition_changed_pixels": 0,
+    "B10_changed_pixels_from_B9": 35272,
+    "protected_pixels_changed": 0,
+    "canvas": [
+      852,
+      1846
+    ],
+    "source_git_readback": true,
+    "product_main_current_integration": "not_verified",
+    "actual_bluetooth": "not_run",
+    "responsive": "not_run"
+  },
+  "behavior_scope": {
+    "source_repository": "aaaycc931-droid/jieqi-engine",
+    "source_branch": "codex/ui-design-20261011",
+    "source_commit": "1f6c1635ad756eefc871f2075883bf26b82176ea",
+    "source_status": "historical UI branch; not a current main product runtime guarantee",
+    "first_connection": true,
+    "rematch": false
+  },
+  "source_unchanged": true,
+  "game_code_changes": 0,
+  "NET": "paused",
+  "scoring": "frozen",
+  "handoff_limitations": [
+    "B9 and B10 original PNG currently only in conversation artifacts; GitHub has reconstructive text source",
+    "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
+    "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification"
+  ],
+  "next_action": "User approve or request local change to B10-v1 static UI; next independent B11 rematch invitation after separate behavior read",
+  "receiver_read_adopted": "unknown"
 }
