@@ -1,0 +1,111 @@
+{
+  "schema": "lezi.ui.static_layout.v1",
+  "version": "B10-v1",
+  "status": "candidate_pending_user_approval",
+  "canvas": {
+    "width": 852,
+    "height": 1846
+  },
+  "approved_predecessor": {
+    "version": "B9-v1",
+    "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+    "approved_at": "2026-10-30T20:40+08:00"
+  },
+  "background_sha256": "13a513a067abb972ab8e0c898faeba92eb17952a1ecc955248e418c73b429a8f",
+  "font_sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+  "font_family": "Long Cang",
+  "source_behavior": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "branch": "codex/ui-design-20261011",
+    "source_commit": "1f6c1635ad756eefc871f2075883bf26b82176ea",
+    "web_app_blob": "9bb69d7e10d0ca0401a8aed88dae63b36beb079a",
+    "event": "transport-state CONNECTED and !wasEstablished",
+    "kicker": "蓝牙房间",
+    "title": "连接成功",
+    "detail": "正在同步房间，即将进入英雄选择。",
+    "cancel": false,
+    "device_name": "omitted for host role",
+    "transition": "after Bluetooth room snapshot, hero selection rendered by app state; not a timed or clickable navigation",
+    "scope_caveat": "historical UI design branch, not verified on current main runtime"
+  },
+  "fixture": {
+    "platform": "Android",
+    "bluetooth_available": true,
+    "bluetooth_enabled": true,
+    "permission_granted": true,
+    "role": "host",
+    "ever_connected_before_event": false,
+    "transport_state": "CONNECTED",
+    "room_snapshot": "syncing",
+    "rematch": null
+  },
+  "lines": [
+    {
+      "id": "connection_status",
+      "text": "连接成功",
+      "cx": 426,
+      "cy": 514,
+      "maxWidth": 500,
+      "maxHeight": 58,
+      "fill": "#12120f"
+    },
+    {
+      "id": "connection_reason_1",
+      "text": "蓝牙已连接，正在同步房间。",
+      "cx": 426,
+      "cy": 577,
+      "maxWidth": 562,
+      "maxHeight": 34,
+      "fill": "#12120f"
+    },
+    {
+      "id": "connection_reason_2",
+      "text": "即将进入英雄选择，请稍候。",
+      "cx": 426,
+      "cy": 627,
+      "maxWidth": 562,
+      "maxHeight": 34,
+      "fill": "#12120f"
+    },
+    {
+      "id": "sync_status",
+      "text": "正在同步房间",
+      "cx": 426,
+      "cy": 793,
+      "maxWidth": 460,
+      "maxHeight": 108,
+      "fill": "#123754"
+    }
+  ],
+  "regions": [
+    {
+      "id": "central_status_text",
+      "x": 135,
+      "y": 470,
+      "width": 582,
+      "height": 195
+    },
+    {
+      "id": "ink_frame_status_text",
+      "x": 160,
+      "y": 730,
+      "width": 532,
+      "height": 132
+    }
+  ],
+  "non_interactive": [
+    "sync_status"
+  ],
+  "not_in_scope": [
+    "rematch invitation",
+    "Android real runtime",
+    "Bluetooth dual-phone transport test",
+    "APK integration",
+    "responsive layout",
+    "mode rules",
+    "scoring",
+    "NET"
+  ],
+  "local_preview_sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95",
+  "github_preview_png_uploaded": false
+}
