@@ -1,10 +1,10 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-B10-CANDIDATE-20261031",
-  "previous_record_id": "UI-B9-APPROVAL-20261030",
+  "record_id": "UI-VISUAL-STYLE-DIRECTION-20261101",
+  "previous_record_id": "UI-B10-CANDIDATE-20261031",
   "from_workline": "ui",
   "to_workline": "main",
-  "updated_at_local": "2026-10-31",
+  "updated_at_local": "2026-11-01",
   "scope": "New one-screen static connection-success UI candidate; no product/runtime change",
   "approved_versions": [
     "B1-v2",
@@ -63,6 +63,18 @@
     "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification"
   ],
-  "next_action": "User approve or request local change to B10-v1 static UI; next independent B11 rematch invitation after separate behavior read",
-  "receiver_read_adopted": "unknown"
+  "next_action": "Mainline read and independently decide adoption/priority of worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md; historical B10-v1 approval remains pending unless separately changed.",
+  "receiver_read_adopted": "unknown",
+  "visual_style_handoff_20261101": {
+    "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
+    "status": "discussion_closed_handoff_published",
+    "scope": "visual direction and partial scene/costume decisions; NOT formal global redesign approval",
+    "current_implementation": "not_started",
+    "main_receiver_read": "pending_actual_read",
+    "main_receiver_adoption": "pending_actual_decision",
+    "instruction": "Mainline owns cross-workline coordination; do not overwrite existing approved UI or auto-approve B10.",
+    "visual_line_next_action": "Wait for mainline's scoped design request; support comparison studies and approval documentation only.",
+    "historical_B10_queue_retained": true
+  },
+  "previous_next_action_B10": "User approve or request local change to B10-v1 static UI; next independent B11 rematch invitation after separate behavior read"
 }
