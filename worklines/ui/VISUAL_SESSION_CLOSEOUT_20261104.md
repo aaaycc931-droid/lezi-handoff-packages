@@ -28,7 +28,7 @@
 | 原泼墨第二张（历史正向参考） | `LEZI_UI_INK_SPLASH_ORIGINAL_02_20261104.png` | 1086×1448 | `961cfcb3ad30355cb3d91dd5f5b763799b204dc3a6cbd29e31fc0ea70d31def9` | 旧参考，非新母版 |
 | 早期暂定风格样例 | `LEZI_UI_INK_SPLASH_TENTATIVE_20261104.png` | 1671×941 | `f7acb968a972bbecc77562e5120b18749984da4b61d4387bef0b0903cd79b430` | 保留历史来源 |
 | **本阶段已选择的第3张 / 新修改母版** | `LEZI_UI_20261104_SELECTED_STYLE_THIRD.png` | **1024×1536** | `b68fb8c0fe2ede5658e407f9e979760ce5fff727663323ebf0c8defb5d6195c9` | **用户选择的风格/工作母版** |
-| 手与珠串第一轮局部候选 v1 | `LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png` | 1024×1536 | `402643627a2f0ed8782723dc714d00be5196b23e829c8b1192c0ac4b1d358a` | 中间版，未审批，供溯源 |
+| 手与珠串第一轮局部候选 v1 | `LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png` | 1024×1536 | `402643627a2f0ed8782723dc76d29cd4022568661daef5685eb8376fcd5df6f2` | 中间版，未审批，供溯源 |
 | **当前保留手与珠串局部候选 v2** | `LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png` | **1024×1536** | `3683a3c01250ca86faa3462b50485d23ffd5cd14a34fd9a9191721d5de637339` | **保留待审，不可当已批准稿** |
 
 **访问局限，不得省略**：上述原始 PNG 现在保存于**当前 ChatGPT 账号的 Library**，GitHub 本次记录的是**精确文件身份、内容哈希及读取地址说明**，**未实际将 PNG 原字节上传 GitHub**。因此不能说新对话只要读 GitHub 文本就能得到完整高清图；同账号新对话须通过 Files Library 路径实际列出/读取或按需物化原件，并验证 SHA-256；其他账号可能无权访问，需通过另行授权的可达来源迁移真实二进制。若文件无法取得，先报资产阻断，不用截图或模型重新生成件冒充同一原图。未创建可编辑分层源，不能宣称可精确拆分和重合成。
