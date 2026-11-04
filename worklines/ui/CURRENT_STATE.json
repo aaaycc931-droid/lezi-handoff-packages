@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.current_work.v1",
   "revision": "UI-B10-STATIC-CANDIDATE-PENDING-20261031",
-  "updated_at_local": "2026-11-01",
+  "updated_at_local": "2026-11-04",
   "known_UI_source": "2026-10-14-v1",
   "source_commit": "52002b3762bd948a134c67cfbc99427035790eba",
   "approved_versions": [
@@ -301,7 +301,7 @@
   },
   "ui_fidelity_incident_20261104": {
     "id": "UI-FIDELITY-INCIDENT-20261104-01",
-    "status": "confirmed_execution_nonconformance_unresolved",
+    "status": "execution_nonconformance_confirmed_partial_local_edit_verified_root_cause_open",
     "date_local": "2026-11-04",
     "user_authorization": "同意记录本问题",
     "report_path": "worklines/ui/UI_FIDELITY_INCIDENT_20261104.md",
@@ -314,7 +314,7 @@
     "actual_local_edit_verified": false,
     "main_receiver_read": "unknown",
     "main_receiver_adoption": "unknown",
-    "next_action": "Recover exact selected target base and original four face references, test masked local face edit and pixel-preserved composite; if unsupported stop and report limitation. No whole-image redraw.",
+    "next_action": "Preserve latest v2 as candidate and evaluate against selected source; preserve off-face/off-hand content; incident root cause remains unverified.",
     "latest_face_only_test": {
       "date_local": "2026-11-04",
       "base_image": "红梅雪岭墨影剑客.png",
@@ -338,6 +338,88 @@
       "user_approval": "not_requested",
       "repo_images_published": false,
       "next_action": "Replace facial rendering with real controlled painting/masked face layer, preserving all off-face pixels; do not promote tonal experiment to approved artwork."
+    },
+    "latest_hand_beads_test": {
+      "actual_compared_image_bytes": true,
+      "changed_pixels": 16481,
+      "changed_bbox_xyxy": [
+        457,
+        645,
+        607,
+        933
+      ],
+      "outside_bbox_changed_pixels": 0,
+      "semantic_visual_approval": "pending",
+      "minor_seam_artifact": "suspected"
     }
+  },
+  "visual_session_closeout_20261104": {
+    "id": "UI-VISUAL-CLOSEOUT-20261104-2302",
+    "user_intent": "先保留当前手部珠串候选，更新GitHub项目资料和协作规则，收束对话，更换新对话继续",
+    "report_path": "worklines/ui/VISUAL_SESSION_CLOSEOUT_20261104.md",
+    "source_head": "e2d8cfe47be291de5875868978875c336cf790d1",
+    "selected_style_base": {
+      "user_quote": "第3张不错，就定这个风格吧",
+      "status": "selected_visual_style_and_working_source_not_formal_ui_approval",
+      "sha256": "b68fb8c0fe2ede5658e407f9e979760ce5fff727663323ebf0c8defb5d6195c9",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "library_path": "/Lezi_Chess/UI_Style_References/LEZI_UI_20261104_SELECTED_STYLE_THIRD.png",
+      "github_png_published": false
+    },
+    "hand_beads_candidate_v1": {
+      "status": "historical_unapproved_trial",
+      "sha256": "402643627a2f0ed8782723dc714d00be5196b23e829c8b1192c0ac4b1d358a",
+      "library_path": "/Lezi_Chess/UI_Style_References/LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png",
+      "github_png_published": false
+    },
+    "hand_beads_candidate_v2": {
+      "user_quote": "你等一下，这个先保留",
+      "status": "retained_pending_user_visual_review_not_approved",
+      "sha256": "3683a3c01250ca86faa3462b50485d23ffd5cd14a34fd9a9191721d5de637339",
+      "library_path": "/Lezi_Chess/UI_Style_References/LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png",
+      "github_png_published": false,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    "v2_pixel_validation": {
+      "actual_compared_image_bytes": true,
+      "changed_pixels": 16481,
+      "changed_bbox_xyxy": [
+        457,
+        645,
+        607,
+        933
+      ],
+      "outside_bbox_changed_pixels": 0,
+      "semantic_visual_approval": "pending",
+      "minor_seam_artifact": "suspected"
+    },
+    "methodology_update": {
+      "status": "user_confirmed_ui_specific",
+      "agreement_file": "worklines/ui/UI_WORK_AGREEMENT.md",
+      "fidelity_file": "worklines/ui/UI_FIDELITY_POLICY.md",
+      "method": "multiple clearly distinct visual options -> user selection/combination -> lock selected base -> limited variations with original asset and off-area pixels preserved -> user approval gates"
+    },
+    "image_persistence": {
+      "location": "Current ChatGPT Library /Lezi_Chess/UI_Style_References/",
+      "source_png_in_github": false,
+      "cross_account_image_access": "unverified",
+      "same_account_access": "Library files saved; future actual read must verify"
+    },
+    "preserved": {
+      "approved_B1_to_B9": true,
+      "B10_pending_user_review": true,
+      "scoring_frozen": true,
+      "NET_paused": true,
+      "game_code_unchanged": true
+    },
+    "main_receiver_read": "unknown",
+    "main_receiver_adoption": "unknown",
+    "next_action": "In a new dialogue verify selected style source and v2 PNG identities; review hand grip, bead hanging/connection and seams; await explicit choice or specific local revisions. Do not promote to approved automatically."
   }
 }

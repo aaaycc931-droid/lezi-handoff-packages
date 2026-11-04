@@ -1,11 +1,11 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-FIDELITY-INCIDENT-20261104-01",
-  "previous_record_id": "UI-VISUAL-INK-TENTATIVE-20261104",
+  "record_id": "UI-VISUAL-CLOSEOUT-20261104-2302",
+  "previous_record_id": "UI-FIDELITY-INCIDENT-20261104-01",
   "from_workline": "ui",
   "to_workline": "main",
   "updated_at_local": "2026-11-04",
-  "scope": "Incident-only UI fidelity rule execution failure report and handoff, no art approvals or product changes",
+  "scope": "Visual style choice + hand/beads retained candidate + user-approved scoped exploratory workflow rules + conversation closeout; no formal UI image approval or code changes",
   "approved_versions": [
     "B1-v2",
     "B2-v4",
@@ -63,7 +63,7 @@
     "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification"
   ],
-  "next_action": "Mainline read UI fidelity incident report and independently verify remediation/action adoption. UI visual line must recover exact chosen target/reference PNG identities and use actual local face-only edit with protected pixel checks, or stop with tool-limit disclosure. B10 pending unchanged.",
+  "next_action": "Mainline: read UI visual closeout and user-confirmed image comparison rules; verify actual reading/adoption separately. UI next dialogue: retrieve selected 3rd image and hand/beads v2 from Library, compare and await user visual approval or requested local correction. B10 remains pending, no game code changes.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -116,5 +116,22 @@
     "approved": false,
     "live_image_sources": "current_conversation_only_not_github",
     "report_path": "worklines/ui/UI_FIDELITY_INCIDENT_20261104.md"
+  },
+  "visual_session_closeout_20261104": {
+    "report_path": "worklines/ui/VISUAL_SESSION_CLOSEOUT_20261104.md",
+    "source_head": "e2d8cfe47be291de5875868978875c336cf790d1",
+    "method_updates": [
+      "worklines/ui/UI_WORK_AGREEMENT.md",
+      "worklines/ui/UI_FIDELITY_POLICY.md"
+    ],
+    "style_base_sha256": "b68fb8c0fe2ede5658e407f9e979760ce5fff727663323ebf0c8defb5d6195c9",
+    "hand_beads_v1_sha256": "402643627a2f0ed8782723dc714d00be5196b23e829c8b1192c0ac4b1d358a",
+    "hand_beads_v2_sha256": "3683a3c01250ca86faa3462b50485d23ffd5cd14a34fd9a9191721d5de637339",
+    "latest_candidate_status": "retained_pending_user_visual_review_not_approved",
+    "verification": "1024x1536 both, 16481 pixels changed, all in x457..607 y645..933",
+    "actual_source_images_accessible": "current ChatGPT Library, not GitHub",
+    "main_receiver_read": "unknown",
+    "main_receiver_adoption": "unknown",
+    "next_action": "Read source and v2 images from Library and inspect hand+beads; no promotion of approval; main coordinates deployment scope"
   }
 }
