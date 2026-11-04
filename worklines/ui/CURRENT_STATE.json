@@ -314,6 +314,30 @@
     "actual_local_edit_verified": false,
     "main_receiver_read": "unknown",
     "main_receiver_adoption": "unknown",
-    "next_action": "Recover exact selected target base and original four face references, test masked local face edit and pixel-preserved composite; if unsupported stop and report limitation. No whole-image redraw."
+    "next_action": "Recover exact selected target base and original four face references, test masked local face edit and pixel-preserved composite; if unsupported stop and report limitation. No whole-image redraw.",
+    "latest_face_only_test": {
+      "date_local": "2026-11-04",
+      "base_image": "红梅雪岭墨影剑客.png",
+      "base_sha256": "08ddac373a244ad918537c0245fe3f852c3157e9b5ec76ee4d6098903273dc2a",
+      "output_image": "剑客_脸部局部笔墨试验_v1.png",
+      "output_sha256": "8c1e673610fc43dda71badd79c11acfd0b09acf1a2e52614804ad0d3f6d47439",
+      "size": [
+        1024,
+        1536
+      ],
+      "changed_pixels": 7499,
+      "changed_bbox": [
+        623,
+        406,
+        713,
+        528
+      ],
+      "outside_face_mask_changed_pixels": 0,
+      "technical_region_preservation": "passed",
+      "visual_ink_style_integration": "not_passed",
+      "user_approval": "not_requested",
+      "repo_images_published": false,
+      "next_action": "Replace facial rendering with real controlled painting/masked face layer, preserving all off-face pixels; do not promote tonal experiment to approved artwork."
+    }
   }
 }
