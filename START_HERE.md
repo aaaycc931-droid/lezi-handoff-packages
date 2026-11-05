@@ -1,3 +1,5 @@
+【项目级临时公告（2026-11-05｜当前生效）】**主线因 Work 另有任务，暂停接收新的支线交接/正式采用**；各支线保留所有待主线/Work 的任务，在自身已授权职责范围内持续推进独立工作。**任何新对话是否担任主线必须由用户明确任命**；收到交接、读取主线入口、Work 模式或 GitHub 写权限均不代表获得主线身份，禁止擅自执行主线职责/填主线回执。解除暂停也须用户明确指示。完整公告：`PROJECT_NOTICE_MAINLINE_INTAKE_PAUSE_20261105.md`；Issue #1：https://github.com/aaaycc931-droid/lezi-handoff-packages/issues/1。现有批准、冻结、暂停和各线已有工作成果不变。
+
 > 2026-10-24评分路线更新：已实际完成[候选方法](worklines/main/scoring/CANDIDATE_METHOD.md)、[诊断/迁移与验证说明](worklines/main/scoring/REVIEW_REPORT.md)及30项检查/13个条件问题。正式方法尚未替换，原账本和英雄机制保持，全局新分数未发布；本轮明确执行覆盖此前评分路线停止。[当前评分状态](worklines/main/scoring/EXECUTION_STATE.json)。下方主线工程和三线任务信息属于前阶段记录，当前各线结果读自身固定状态；本评分阶段仅核对并发回传路径/身份，未做内容采用。
 
 # 乐子象棋项目入口

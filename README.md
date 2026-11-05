@@ -1,3 +1,5 @@
+> **当前项目公告（2026-11-05）**：主线暂缓接收新交接；各支线保留待主线事项并继续本线；主线身份须用户明确任命。见 [完整通知](PROJECT_NOTICE_MAINLINE_INTAKE_PAUSE_20261105.md) 和 [Issue #1](https://github.com/aaaycc931-droid/lezi-handoff-packages/issues/1)。原有审批、暂停与工程边界保持不变。
+
 # 乐子象棋工作与交接
 
 | 位置 | 用途 |

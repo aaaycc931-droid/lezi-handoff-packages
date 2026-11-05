@@ -1,5 +1,9 @@
 # Repository instructions
 
+## 2026-11-05 temporary project-level intake/role notice
+
+Read `PROJECT_NOTICE_MAINLINE_INTAKE_PAUSE_20261105.md` before acting as mainline or processing a cross-line handoff. Mainline intake is temporarily deferred by user instruction; each independent workline continues within its own authorized scope, preserving mainline/Work dependencies. **Only explicit user appointment grants an individual conversation mainline authority**; handoff receipt, Work-mode availability, GitHub access, historical account routing and reading `worklines/main/START_HERE.txt` are not appointment. Do not claim another session's receipt/adoption or resume intake without explicit user direction. This is not game-mechanics, scoring, NET, or approval authorization.
+
 This repository manages Lezi handoffs and UI assets. Game implementation lives in jieqi-engine.
 
 - Read CURRENT_HANDOFF.json and the selected workline CURRENT_STATE before editing.
