@@ -3,7 +3,7 @@
 > 问题 ID：`UI-ASSET-PERSISTENCE-20261105-01`  
 > 记录日期：2026-11-05（Asia/Shanghai）  
 > 优先级：**高（H）**。项目可继续只读与文字讨论，但**依赖缺失 PNG 原件的跨账号接续、保真编辑和完整项目级归档不得判完成**。  
-> 状态：**已确认资产缺口，长期修复未实施，上传链路根因未验证**。  
+> 状态：**仍开放：三张原始 PNG 本地取回校验通过，最小 GitHub 二进制读回通过；真实原件远端上传及跨账号恢复未完成**。  
 > 用户授权范围：用户明确要求「这的确是个比较大的问题，那么我们现在就记录这个问题吧」。这是**记录问题并回传**的授权，不等于批准公有仓库上传所有图片、改写通用协作正文、重画素材或发布 UI。
 
 ## 1. 问题是什么：已确认事实
@@ -46,3 +46,27 @@
 - 原图选择状态、手/珠串 v2 **保留待审**、B1—B9 静态批准、B10 待审批、首页/V4 字体例外、评分冻结与 NET 暂停保持不变。
 - 既有 `UI-FIDELITY-INCIDENT-20261104-01`（局部修图保真失效）与本项有关联，但**是两个不同问题**：即使局部像素不变，也不能证明跨会话原图已保存；即使 GitHub 图片上传，也不能证明美术结果审美过关。
 - 下一步优先做**最小可靠 PNG 上传→远端读回→字节校验的可行性测试**，再实施关键图像入库；对仍需实际图像的新对话，先从 Library 真实取回图像并比对 SHA。主线的阅读/采用保持 unknown，接收方实际读取后自行记录。
+
+## 8. 2026-11-05 当前对话实际验证记录（增量；问题仍开放）
+
+> 本节是事件后的执行进展，不改写本报告第1—7节的历史时点。用户本轮已明确授权调查二进制存储方案、恢复源文件、最小试验及在适用权限内修复 UI 项目流程。
+
+### 原始三图：从 Library 实际取回并核对（已通过）
+- `LEZI_UI_20261104_SELECTED_STYLE_THIRD.png`：**3,044,638 字节**，**1024×1536 RGB PNG**，重算 SHA-256 为 `b68fb8c0fe2ede5658e407f9e979760ce5fff727663323ebf0c8defb5d6195c9`，与原记录一致。
+- `LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png`：**2,846,140 字节**，**1024×1536 RGB PNG**，重算 SHA-256 为 `402643627a2f0ed8782723dc76d29cd4022568661daef5685eb8376fcd5df6f2`，一致。
+- `LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png`：**2,847,194 字节**，**1024×1536 RGB PNG**，重算 SHA-256 为 `3683a3c01250ca86faa3462b50485d23ffd5cd14a34fd9a9191721d5de637339`，一致。v2 仍保留待审。
+- 本轮使用 Files Library `files__list` 获取真实文件 ID，再以 `files__materialize(raw_file)` 恢复到受控本地容器；由 Python 读取完整文件、Pillow 检查 PNG 及 SHA-256 比对，**未重编码、重生成或覆盖原件**。
+
+### GitHub 小样与真实工具缺口（已实测）
+- 仓库 `aaaycc931-droid/lezi-handoff-packages` **公开且 GitHub 连接器有 push 权限**。已对 70 字节最小 PNG 进行 GitHub `create_blob(encoding=base64)`，返回 Git blob `dd466effe55c2bb6c7da6268ac6b032bd0a0fc68`；小样 SHA-256 为 `d8aeb7b31114535bbf9035568464d5eb3dadfabaa70525a487d2c04571203426`。
+- 在**未发布到 main**的独立测试提交 `eb8b33ef87f8692c0735cff14b12e1256458ecfd` 中，测试路径 `assets/ui/_asset_io_probe/one_pixel.png` 可经 `fetch_file(encoding=base64,ref=测试提交)` 读取，**回传 Base64 与输入逐字符一致**。因此“GitHub 不接受二进制 PNG”是错误解释；小样写入/读回路径成立。此测试提交不代表 main 已存任何关键图片。
+- GitHub `fetch_blob` 对 PNG 直接 UTF-8 解码报 `UnicodeDecodeError`；通用 `fetch` 对 Git blob 请求报 `400 GitHub Fetch only accepts UTF-8 text`。正确远端验收读法已确认：用 `fetch_file(encoding=base64)` 通过仓库路径/提交读回，再重算 SHA-256。
+- **阻断点**：本次 Files 工具提供 Library → 本地容器原始文件，但向代码编排环境的 `files__read(image_file)` 只给图片 asset pointer，不给原始字节流；GitHub `create_blob` 接口要求调用参数里有完整 Base64 字符串，未提供文件 ID / 本地路径 / 流传输参数；本地容器向 `github.com` 发起 `git ls-remote` 失败（DNS 无法解析），且没有配置 GH_TOKEN、GITHUB_TOKEN、GIT_ASKPASS 或 SSH_AUTH_SOCK。**本轮可用工具之间尚无经验证的三张大 PNG 的无损直接传输桥梁**。不能违背通用正文要求，通过模型文本回显数百万字符 Base64 再人工拼装。以上是当前环境观测，**不证明上一轮会话同一根因**。
+- **另一权限门槛**：此仓库当前为 public，现有历史记录没有将全部新图原件公开发布的单独确认。尽管用户已授权在合适资产库中处理持久化问题，仍不得因能 push 就静默放大公众可见性；优先确定被允许的公开或私有保存位置。
+
+### 完成状态、替代交付与后续
+- 已生成原字节不变的离线恢复包 `LEZI_UI_CRITICAL_PNG_ORIGINALS_20261105.zip`，包含三 PNG、`manifest.json`、`SHA256SUMS.txt` 和 `README.md`。ZIP 大小 **8,741,876 字节**，SHA-256 `3b600dd9ab0d4b2bfef0b6855a6581b10711fed2b620328c50a3082bfe4d1e5f`；已实际解压读回包内三 PNG 并重算等值。ZIP 只在本会话可供用户下载，**没有上传到 GitHub/跨账号共享库**，不等于永久备份。
+- 仍未完成：三张 PNG 的 GitHub/其他独立远端原字节上传、远端读取并对文件逐个重算 SHA-256、接收账号的独立恢复验证。旧两张历史参考和 B9/B10 图稿缺口须另行清点；不能把它们算成已归档。
+- **此问题继续为 high/open，交接状态 `partial_handoff_with_asset_blocker`**。推荐目标路径为 `assets/ui/<原始SHA-256>.png`，但这是**尚未发布的规划路径**，严禁将路径字符串当作已经存在的 GitHub 资产。
+- 下次采用支持本地文件字节→GitHub 的真正二进制桥梁、或用户把无损文件包保存并用明确授权的 GitHub/私有库上传渠道。之后从远端**独立下载并比较尺寸/哈希**，验证目标接收账号的访问权，最后才向 `assets/ui/INDEX.json` 登记成功对象及更新关闭条件。未通过前必须保留该阻断。
+- **流程修复**：已就地更新 `UI_WORK_AGREEMENT.md` 的资产交接验收状态与阻断出口；通用协作正文及 `UI_FIDELITY_POLICY.md` 已有正确约束，本次未重复加同义条款或修改独立作者源。实际长期有效性尚须未来一次真上传及跨账号恢复任务检验。

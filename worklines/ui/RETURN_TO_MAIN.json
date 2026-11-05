@@ -1,11 +1,11 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-ASSET-PERSISTENCE-20261105-01",
-  "previous_record_id": "UI-VISUAL-CLOSEOUT-20261104-2302",
+  "record_id": "UI-ASSET-TRANSFER-20261105-PARTIAL-01",
+  "previous_record_id": "UI-ASSET-PERSISTENCE-20261105-01",
   "from_workline": "ui",
   "to_workline": "main",
   "updated_at_local": "2026-11-05",
-  "scope": "High-priority UI binary-asset persistence failure registration and mainline notification only; no new art, upload, or workflow rule adoption.",
+  "scope": "UI original PNG local recovery and byte/hash verification passed, 70-byte GitHub binary transfer probe passed; full binary repository archival still blocked; UI-only execution checkpoint and workflow gate repair.",
   "approved_versions": [
     "B1-v2",
     "B2-v4",
@@ -63,7 +63,7 @@
     "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification"
   ],
-  "next_action": "Mainline: read UI_ASSET_PERSISTENCE_INCIDENT_20261105.md and assess project-level PNG persistence/transfer capability and privacy scope. UI: keep selected style and hand-beads v2 retained/unapproved; only use actual verified Library originals for edits. B10 still pending.",
+  "next_action": "Mainline: review high/open incident evidence at worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md section 8; coordinate an authorized native binary upload pathway and independent recipient test. UI: preserve verified originals, selected 3rd style, v2 retained pending review, B10 pending; do not mark GitHub binary archival complete.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -137,7 +137,7 @@
   "ui_asset_persistence_incident_20261105": {
     "id": "UI-ASSET-PERSISTENCE-20261105-01",
     "priority": "high",
-    "status": "registered_open",
+    "status": "partial_handoff_with_asset_blocker",
     "report_path": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md",
     "source_head": "7005f4ca4c8ffe4eb45168d09985c988b90c85be",
     "verified_issue": "Three core PNG images are in same-account ChatGPT Library but not GitHub as binary objects.",
@@ -147,6 +147,18 @@
     "transfer_end_to_end_test_done": false,
     "main_receiver_read": "unknown",
     "main_receiver_adoption": "unknown",
-    "next_action": "Evaluate safe direct binary path and SHA readback; restore source images from Library before further edits."
+    "next_action": "Acquire authorized raw-file binary upload channel/publication scope; upload then verify SHA-256 from remote and receiving account; only then mark complete.",
+    "issue": "UI-ASSET-PERSISTENCE-20261105-01",
+    "local_pngs_recovered_and_sha256_matched": 3,
+    "minimal_github_png_probe_binary_roundtrip": "passed_unpublished_commit",
+    "github_png_originals_uploaded": 0,
+    "remote_png_sha256_verified": 0,
+    "recipient_account_access_verified": false,
+    "risk": "GitHub connector cannot directly accept local file path/raw file id and container has no GitHub network auth.",
+    "local_offline_bundle": "LEZI_UI_CRITICAL_PNG_ORIGINALS_20261105.zip (conversation-only, not in GitHub)",
+    "bundle_sha256": "3b600dd9ab0d4b2bfef0b6855a6581b10711fed2b620328c50a3082bfe4d1e5f",
+    "workflow_patch": "worklines/ui/UI_WORK_AGREEMENT.md",
+    "incident_report": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md",
+    "source_permissions": "Existing GitHub repo public; unapproved external-public binary disclosure must not be inferred"
   }
 }

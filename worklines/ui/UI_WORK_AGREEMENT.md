@@ -22,6 +22,8 @@
 
 上传只形成一次范围明确的提交；更新分支时带已读取HEAD的乐观锁，发生并发变化先重读，不强制覆盖。逐项记录上传结果和最终提交，提交后核对路径/身份和实际入口；发布不等于接收对话已读或已采用。
 
+**关键二进制资产交接完成闸门（2026-11-05 执行补强）**：只在现有资产/交接记录中逐项列出 `source_present`、`source_sha256_verified`、`remote_uploaded`、`remote_readback_verified`、`recipient_access_verified` 及对应实际证据；状态字段是执行结果，不是凭文件名推断。对要求跨账号交付的关键 PNG，缺任何远端原字节及读回证据即标 `partial_handoff_with_asset_blocker`，不得以 GitHub 文本提交或同账号 Library 保存宣告完整交接。先测二进制桥梁再提交大图；无法传输时保留原件、交付经哈希校验的离线包并记录手工/受权替代渠道与待验证动作，包本身不能冒充远端归档。隐私与公开范围在实际发布前单独核对。此处落实既有 `GITHUB_HANDOFF_WORKFLOW`，不重复另建通用规则。
+
 ## 维护和交接
 
 固定worklines/ui为唯一当前工作目录；assets/ui为唯一共用素材体，旧轮次留Git历史固定提交索引，不继续堆日期版累计目录。新候选及新增源层放candidates/<任务ID>/<版本>，明确candidate/approved/withdrawn；未批准不覆盖定稿。只在需审批/交接时保留有价值证据，临时导出不提交。

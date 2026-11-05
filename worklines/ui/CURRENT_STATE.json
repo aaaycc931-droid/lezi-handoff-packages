@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.current_work.v1",
   "revision": "UI-B10-STATIC-CANDIDATE-PENDING-20261031",
-  "updated_at_local": "2026-11-04",
+  "updated_at_local": "2026-11-05",
   "known_UI_source": "2026-10-14-v1",
   "source_commit": "52002b3762bd948a134c67cfbc99427035790eba",
   "approved_versions": [
@@ -446,5 +446,72 @@
     "main_reader_received": "unknown",
     "main_adopted": "unknown",
     "next_action": "Prove reliable source PNG from Library to authorized GitHub object transfer and remote byte-level SHA-256 verification on noncritical sample, then upload selected style and v2 and test independent recovery; if blocked keep partial_handoff status."
+  },
+  "ui_asset_persistence_20261105": {
+    "id": "UI-ASSET-PERSISTENCE-20261105-01",
+    "status": "partial_handoff_with_asset_blocker",
+    "severity": "high",
+    "report": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md",
+    "source_library_dir": "/Lezi_Chess/UI_Style_References/",
+    "source_present": true,
+    "source_sha256_verified": true,
+    "remote_uploaded": false,
+    "remote_readback_verified": false,
+    "recipient_access_verified": false,
+    "main_receiver_read": "unknown",
+    "main_receiver_adoption": "unknown",
+    "art_selection_changed": false,
+    "v2_retained_pending_review": true,
+    "github_probe": {
+      "kind": "70-byte PNG",
+      "remote_blob_sha": "dd466effe55c2bb6c7da6268ac6b032bd0a0fc68",
+      "unpublished_test_commit": "eb8b33ef87f8692c0735cff14b12e1256458ecfd",
+      "roundtrip_base64_exact": true,
+      "main_modified_by_probe": false
+    },
+    "source_files": [
+      {
+        "name": "LEZI_UI_20261104_SELECTED_STYLE_THIRD.png",
+        "bytes": 3044638,
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "sha256": "b68fb8c0fe2ede5658e407f9e979760ce5fff727663323ebf0c8defb5d6195c9",
+        "role": "selected_style_working_master",
+        "remote_status": "not_uploaded"
+      },
+      {
+        "name": "LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png",
+        "bytes": 2846140,
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "sha256": "402643627a2f0ed8782723dc76d29cd4022568661daef5685eb8376fcd5df6f2",
+        "role": "unapproved_intermediate",
+        "remote_status": "not_uploaded"
+      },
+      {
+        "name": "LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png",
+        "bytes": 2847194,
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "sha256": "3683a3c01250ca86faa3462b50485d23ffd5cd14a34fd9a9191721d5de637339",
+        "role": "retained_pending_user_review",
+        "remote_status": "not_uploaded"
+      }
+    ],
+    "local_offline_bundle": {
+      "name": "LEZI_UI_CRITICAL_PNG_ORIGINALS_20261105.zip",
+      "bytes": 8741876,
+      "sha256": "3b600dd9ab0d4b2bfef0b6855a6581b10711fed2b620328c50a3082bfe4d1e5f",
+      "contents_verified": true,
+      "external_backup_persisted": false
+    },
+    "blocker": "No verified raw_file-to-GitHub connector binary path; local GitHub DNS and credentials unavailable. Public repository disclosure scope must also be confirmed before publishing originals.",
+    "next_action": "Use an authorized binary-capable upload channel without model text Base64 transport; remote PNG readback SHA-256/size; verify independent recipient-account download; only then index assets/ui and close incident. Keep B10 and v2 pending."
   }
 }
