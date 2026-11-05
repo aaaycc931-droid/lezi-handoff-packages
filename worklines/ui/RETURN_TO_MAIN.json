@@ -1,11 +1,11 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-VISUAL-CLOSEOUT-20261104-2302",
-  "previous_record_id": "UI-FIDELITY-INCIDENT-20261104-01",
+  "record_id": "UI-ASSET-PERSISTENCE-20261105-01",
+  "previous_record_id": "UI-VISUAL-CLOSEOUT-20261104-2302",
   "from_workline": "ui",
   "to_workline": "main",
-  "updated_at_local": "2026-11-04",
-  "scope": "Visual style choice + hand/beads retained candidate + user-approved scoped exploratory workflow rules + conversation closeout; no formal UI image approval or code changes",
+  "updated_at_local": "2026-11-05",
+  "scope": "High-priority UI binary-asset persistence failure registration and mainline notification only; no new art, upload, or workflow rule adoption.",
   "approved_versions": [
     "B1-v2",
     "B2-v4",
@@ -63,7 +63,7 @@
     "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification"
   ],
-  "next_action": "Mainline: read UI visual closeout and user-confirmed image comparison rules; verify actual reading/adoption separately. UI next dialogue: retrieve selected 3rd image and hand/beads v2 from Library, compare and await user visual approval or requested local correction. B10 remains pending, no game code changes.",
+  "next_action": "Mainline: read UI_ASSET_PERSISTENCE_INCIDENT_20261105.md and assess project-level PNG persistence/transfer capability and privacy scope. UI: keep selected style and hand-beads v2 retained/unapproved; only use actual verified Library originals for edits. B10 still pending.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -133,5 +133,20 @@
     "main_receiver_read": "unknown",
     "main_receiver_adoption": "unknown",
     "next_action": "Read source and v2 images from Library and inspect hand+beads; no promotion of approval; main coordinates deployment scope"
+  },
+  "ui_asset_persistence_incident_20261105": {
+    "id": "UI-ASSET-PERSISTENCE-20261105-01",
+    "priority": "high",
+    "status": "registered_open",
+    "report_path": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md",
+    "source_head": "7005f4ca4c8ffe4eb45168d09985c988b90c85be",
+    "verified_issue": "Three core PNG images are in same-account ChatGPT Library but not GitHub as binary objects.",
+    "status_of_style_and_v2": "style selected, v2 retained pending user visual review",
+    "fix_proposal_not_adopted": true,
+    "github_png_upload_done": false,
+    "transfer_end_to_end_test_done": false,
+    "main_receiver_read": "unknown",
+    "main_receiver_adoption": "unknown",
+    "next_action": "Evaluate safe direct binary path and SHA readback; restore source images from Library before further edits."
   }
 }

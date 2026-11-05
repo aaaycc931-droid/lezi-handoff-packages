@@ -421,5 +421,30 @@
     "main_receiver_read": "unknown",
     "main_receiver_adoption": "unknown",
     "next_action": "In a new dialogue verify selected style source and v2 PNG identities; review hand grip, bead hanging/connection and seams; await explicit choice or specific local revisions. Do not promote to approved automatically."
+  },
+  "ui_asset_persistence_incident_20261105": {
+    "id": "UI-ASSET-PERSISTENCE-20261105-01",
+    "date_local": "2026-11-05",
+    "priority": "high",
+    "status": "confirmed_remote_asset_missing_root_cause_open",
+    "record_only": true,
+    "report_path": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md",
+    "user_instruction": "这的确是个比较大的问题，那么我们现在就记录这个问题吧",
+    "source_commit": "7005f4ca4c8ffe4eb45168d09985c988b90c85be",
+    "physical_asset_persistence": "ChatGPT Library present; GitHub metadata only",
+    "github_original_png_uploaded": false,
+    "risk": "Cross-account and independent long-term recoverability unverified; incomplete binary asset handoff",
+    "image_count_critical": 3,
+    "required_for_accurate_resume": [
+      "LEZI_UI_20261104_SELECTED_STYLE_THIRD.png",
+      "LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png"
+    ],
+    "binary_transfer_feasibility": "not_tested_end_to_end",
+    "code_changes": false,
+    "artwork_approval_changes": false,
+    "candidate_v2_status": "retained_pending_user_visual_review_not_approved",
+    "main_reader_received": "unknown",
+    "main_adopted": "unknown",
+    "next_action": "Prove reliable source PNG from Library to authorized GitHub object transfer and remote byte-level SHA-256 verification on noncritical sample, then upload selected style and v2 and test independent recovery; if blocked keep partial_handoff status."
   }
 }
