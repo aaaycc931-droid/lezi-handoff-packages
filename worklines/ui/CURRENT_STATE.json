@@ -524,7 +524,7 @@
       "external_backup_persisted": false
     },
     "blocker": "Only 3 of current 65 UI-related PNG SHA groups are demonstrably in private GitHub; 62 others have no verified GitHub original bytes. Historical 94 records and 170 JPEG metadata not reconciled; current Chat has no proven direct large-file binary transfer from Library to GitHub. Work/mainline receiver suspended.",
-    "next_action": "Expand the same incident to all UI images; reconcile read-only historic 94-item list with 65 SHA-verified current related PNGs; decide archival need and safely transfer missing priority originals; Work-only final independent readback and receiver test deferred.",
+    "next_action": "Reconcile historic 94-source list, review 62 unmatched current-Git original PNGs; 50 P0/P1 are now in SHA256 roundtrip-verified same-account Library ZIPs but NOT GitHub; Work-only independent raw readback and receiving-account recovery deferred.",
     "execution_origin": {
       "mode": "ChatGPT regular Chat conversation",
       "work_mode_used": false,
@@ -604,7 +604,7 @@
       "JPEG_UI_relevance_not_reconciled": true,
       "retrospective_GitHub_asset_source_mapping_incomplete": true,
       "private_inventory_repository": "aaaycc931-droid/lezi-ui-asset-staging",
-      "private_inventory_commit": "3c2fb708f3791bda99a2697b8fb52667add816f8",
+      "private_inventory_commit": "63ef5e76130874457ae094d74307989d35a5d79f",
       "private_inventory_path": "inventory/UI_IMAGE_INVENTORY_20261105.json",
       "pending_archives_manifest": "inventory/ARCHIVE_BUNDLE_MANIFEST_20261105.json",
       "pending_portable_ZIP_batches": 3,
@@ -618,7 +618,25 @@
       "main_receiver_read": "unknown",
       "main_receiver_adoption": "unknown",
       "report_section": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md#13",
-      "next_action": "Reconcile old UI dialogue 94 raw records and other image sources; prioritize selected/tentative and comparison originals; stage exact new binaries in private GitHub only by verified transport; defer Work-only independent restore/audit until user resumes mainline."
+      "next_action": "Reconcile old UI dialogue 94 raw records and other image sources; prioritize selected/tentative and comparison originals; stage exact new binaries in private GitHub only by verified transport; defer Work-only independent restore/audit until user resumes mainline.",
+      "library_ZIP_archives_20261105": {
+        "status": "saved_and_independently_readback_sha256_verified_same_account_only",
+        "library_folder": "/Lezi_Chess/UI_Asset_Audit",
+        "images_in_archives": 50,
+        "batches": 3,
+        "split": "P0 16 + P1 19 + P1 15",
+        "each_ZIP_and_each_member_SHA256_after_Library_materialization": true,
+        "GitHub_uploaded": false,
+        "cross_account_recovery_verified": false,
+        "remaining_P2_not_ZIP_archived": 12
+      },
+      "git_object_identity_crosswalk": {
+        "UI_PNG_SHA1_computed_from_65_originals": true,
+        "public_repo_HEAD": "9b3e7ebecad7bd020fc9b74f65255cfe980238b0",
+        "private_repo_HEAD": "3c2fb708f3791bda99a2697b8fb52667add816f8",
+        "matched": 3,
+        "unmatched": 62
+      }
     }
   },
   "ui_continuation_without_Work_20261105": {
