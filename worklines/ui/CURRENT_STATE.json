@@ -455,7 +455,7 @@
     "source_library_dir": "/Lezi_Chess/UI_Style_References/",
     "source_present": true,
     "source_sha256_verified": true,
-    "remote_uploaded": false,
+    "remote_uploaded": true,
     "remote_readback_verified": false,
     "recipient_access_verified": false,
     "main_receiver_read": "unknown",
@@ -479,7 +479,11 @@
         ],
         "sha256": "b68fb8c0fe2ede5658e407f9e979760ce5fff727663323ebf0c8defb5d6195c9",
         "role": "selected_style_working_master",
-        "remote_status": "not_uploaded"
+        "remote_status": "private_staging_blob_identity_verified_pending_work_raw_sha256",
+        "private_repo": "aaaycc931-droid/lezi-ui-asset-staging",
+        "private_repo_path": "originals/LEZI_UI_20261104_SELECTED_STYLE_THIRD.png",
+        "private_git_blob_sha1": "82e5291fe660bc3351a399e98cfb8bd377069509",
+        "private_upload_verified_bytes": 3044638
       },
       {
         "name": "LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png",
@@ -490,7 +494,11 @@
         ],
         "sha256": "402643627a2f0ed8782723dc76d29cd4022568661daef5685eb8376fcd5df6f2",
         "role": "unapproved_intermediate",
-        "remote_status": "not_uploaded"
+        "remote_status": "private_staging_blob_identity_verified_pending_work_raw_sha256",
+        "private_repo": "aaaycc931-droid/lezi-ui-asset-staging",
+        "private_repo_path": "originals/LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png",
+        "private_git_blob_sha1": "25dc07ffd26699262d60b0376dc9fc73ee15ea58",
+        "private_upload_verified_bytes": 2846140
       },
       {
         "name": "LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png",
@@ -501,7 +509,11 @@
         ],
         "sha256": "3683a3c01250ca86faa3462b50485d23ffd5cd14a34fd9a9191721d5de637339",
         "role": "retained_pending_user_review",
-        "remote_status": "not_uploaded"
+        "remote_status": "private_staging_blob_identity_verified_pending_work_raw_sha256",
+        "private_repo": "aaaycc931-droid/lezi-ui-asset-staging",
+        "private_repo_path": "originals/LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png",
+        "private_git_blob_sha1": "ff5b7603ccba65ebd88ff36cc8e739239a94ac4d",
+        "private_upload_verified_bytes": 2847194
       }
     ],
     "local_offline_bundle": {
@@ -511,8 +523,8 @@
       "contents_verified": true,
       "external_backup_persisted": false
     },
-    "blocker": "No verified raw_file-to-GitHub connector binary path; local GitHub DNS and credentials unavailable. Public repository disclosure scope must also be confirmed before publishing originals.",
-    "next_action": "Use an authorized binary-capable upload channel without model text Base64 transport; remote PNG readback SHA-256/size; verify independent recipient-account download; only then index assets/ui and close incident. Keep B10 and v2 pending.",
+    "blocker": "Original PNGs now stored as three blobs in separate PRIVATE staging GitHub repo with Git blob SHA-1 identity independently matched; remote raw SHA-256 download, recipient access, and Work independent workflow revalidation still pending.",
+    "next_action": "Mainline-coordinated Work: access private aaaycc931-droid/lezi-ui-asset-staging at commit 0bb1e07a53e2b80326812c9fb01cb39ea5072a9b, independently download all three originals and SHA-256-check them; verify recipient access and re-evaluate Chat workflow patch before closing.",
     "execution_origin": {
       "mode": "ChatGPT regular Chat conversation",
       "work_mode_used": false,
@@ -551,6 +563,25 @@
       "later_official_revalidation_owner": "Work coordinated by mainline",
       "further_workflow_changes_in_Chat": false,
       "evidence_report": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md#11"
+    },
+    "private_staging_20261105": {
+      "status": "originals_git_blob_identity_verified_remote_raw_sha256_pending",
+      "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+      "visibility": "private",
+      "commit": "0bb1e07a53e2b80326812c9fb01cb39ea5072a9b",
+      "originals_count": 3,
+      "uploaded_by": "user via GitHub web UI",
+      "organized_by": "Chat via Git tree path-only moves",
+      "sha1_comparison": "local source bytes independent Git blob SHA-1 = GitHub tree SHA for all 3",
+      "remote_original_raw_download_sha256_verified": false,
+      "cross_account_retrieval_verified": false,
+      "work_mode_independent_review_verified": false,
+      "main_receiver_read": "unknown",
+      "main_receiver_adoption": "unknown",
+      "manifest": "STAGING_MANIFEST.json",
+      "handoff": "HANDOFF_TO_MAIN.md",
+      "incident_section": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md#12",
+      "historical_sections_note": "Earlier reports of zero remote originals were true before user uploaded them; current separate private repo has all three."
     }
   }
 }

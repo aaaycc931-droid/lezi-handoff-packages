@@ -63,7 +63,7 @@
     "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification"
   ],
-  "next_action": "Mainline-coordinated Work: independently verify raw PNG transfer from Library or local file through authorized binary channel, determine public/private scope, use raw API to retrieve >1MB files and SHA-256-verify originals from remote and another account, then audit the Chat-written workflow patch. Chat one-off synthetic transfer trial complete; original PNG remote upload still 0.",
+  "next_action": "Mainline Work: confirm new private UI originals repository aaaycc931-droid/lezi-ui-asset-staging, independent remote SHA-256/cross-account recovery and Chat workflow patch audit. UI approvals, scoring freeze and NET pause unchanged.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -140,26 +140,26 @@
     "status": "partial_handoff_with_asset_blocker",
     "report_path": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md",
     "source_head": "7005f4ca4c8ffe4eb45168d09985c988b90c85be",
-    "verified_issue": "Three core PNG images are in same-account ChatGPT Library but not GitHub as binary objects.",
+    "verified_issue": "Updated 2026-11-05: all three original PNGs are in a separate private GitHub staging repo; remote Git blob SHA-1 and sizes match independent local source calculations. Full raw file download SHA-256, cross-account recovery, and Work review are still pending.",
     "status_of_style_and_v2": "style selected, v2 retained pending user visual review",
     "fix_proposal_not_adopted": true,
-    "github_png_upload_done": false,
+    "github_png_upload_done": true,
     "transfer_end_to_end_test_done": false,
     "main_receiver_read": "unknown",
     "main_receiver_adoption": "unknown",
-    "next_action": "Acquire authorized raw-file binary upload channel/publication scope; upload then verify SHA-256 from remote and receiving account; only then mark complete.",
+    "next_action": "Mainline Work must access aaaycc931-droid/lezi-ui-asset-staging commit 0bb1e07a53e2b80326812c9fb01cb39ea5072a9b, download+SHA256 verify each original, verify authorized recipient account recovery, review Chat-authored workflow repairs, and only then close.",
     "issue": "UI-ASSET-PERSISTENCE-20261105-01",
     "local_pngs_recovered_and_sha256_matched": 3,
     "minimal_github_png_probe_binary_roundtrip": "passed_unpublished_commit",
-    "github_png_originals_uploaded": 0,
+    "github_png_originals_uploaded": 3,
     "remote_png_sha256_verified": 0,
     "recipient_account_access_verified": false,
-    "risk": "GitHub connector cannot directly accept local file path/raw file id and container has no GitHub network auth.",
+    "risk": "Raw byte SHA-256 readback of large files, Work receiver access, and independent workflow repair revalidation remain pending; keep private repository private.",
     "local_offline_bundle": "LEZI_UI_CRITICAL_PNG_ORIGINALS_20261105.zip (conversation-only, not in GitHub)",
     "bundle_sha256": "3b600dd9ab0d4b2bfef0b6855a6581b10711fed2b620328c50a3082bfe4d1e5f",
     "workflow_patch": "worklines/ui/UI_WORK_AGREEMENT.md",
     "incident_report": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md",
-    "source_permissions": "Existing GitHub repo public; unapproved external-public binary disclosure must not be inferred",
+    "source_permissions": "New original images saved to separate private repo; original lezi-handoff-packages remains public and must not receive originals absent disclosure authorization.",
     "execution_origin": {
       "mode": "ChatGPT regular Chat conversation",
       "work_mode_used": false,
@@ -216,6 +216,25 @@
       "report_section": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md#11",
       "main_receiver_read": "unknown",
       "main_receiver_adoption": "unknown"
+    },
+    "private_staging_20261105": {
+      "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+      "private": true,
+      "commit": "0bb1e07a53e2b80326812c9fb01cb39ea5072a9b",
+      "original_pngs_uploaded": 3,
+      "git_tree_sha1_and_size_match_all_three": true,
+      "file_paths": [
+        "originals/LEZI_UI_20261104_SELECTED_STYLE_THIRD.png",
+        "originals/LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png",
+        "originals/LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png"
+      ],
+      "remote_raw_sha256_readback_verified": false,
+      "independent_work_receiver_access_verified": false,
+      "authoritative_manifest": "STAGING_MANIFEST.json",
+      "receiving_main_read": "unknown",
+      "receiving_main_adoption": "unknown",
+      "issue_status": "partial_handoff_with_asset_blocker",
+      "incident_report_section": "12"
     }
   }
 }

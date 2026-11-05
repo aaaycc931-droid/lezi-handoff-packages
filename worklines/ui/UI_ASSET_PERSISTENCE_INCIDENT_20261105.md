@@ -115,3 +115,28 @@
 - **已经区分两个独立问题**：其一，当前 Chat 本地 PNG 文件字节尚无经验证的安全直接传输桥梁可送至 GitHub 连接器；其二，当前连接器的 `fetch_file` 对大文件不提供内容，尚未实现远端独立逐字节恢复/校验接口。合成图成功上传仅证明大文件**由代码执行环境内产生时**的传输能力，不证明 Library 原件能送达 GitHub。
 - 用户要求的“本轮 Chat 试上传验证”已按可用权限完成；“真实原件永久归档完成”**未达成**，`partial_handoff_with_asset_blocker`、high/open 继续有效。
 - **后续 Work 模式**应从这两个明确缺口分别检查本地/Library 原字节→目标仓库上传渠道，以及大文件 raw 下载→实际 SHA-256→跨账号取回，并独立复核此前 Chat 对 UI 工作协议的机制补丁。须同时检查公开/私有资产发布授权。不得把 Git blob SHA-1 匹配、元信息可读或合成测试成功当作整项真实图片恢复验收完成。
+
+## 12. 私有暂存仓库真实原件入库与 Git 身份比对（2026-11-05，最新状态）
+
+**与前面第8、11节历史时点不同：三张原始 PNG 现在已经上传到了新的私有 GitHub 仓库** `aaaycc931-droid/lezi-ui-asset-staging`。前面“原件远端上传 0”的结论是**之前时点**的测试记录，不能再当作当前事实。新仓库链接：https://github.com/aaaycc931-droid/lezi-ui-asset-staging 。
+
+### 实际执行、可核验证据
+- 用户亲自在私有仓库网页上传三张原始 PNG；普通 Chat 在接到“上传完成”后通过 GitHub 连接器检查 `main` 提交 `51cb1fabb711dde5cda2c92dd9a6866822c832a5` 的真实 Git tree，对文件的路径、文件大小及 SHA-1 Git Blob 身份逐个取得证据。
+- Chat 当前本地环境保有三张原图原始字节，使用 `SHA-1("blob "+字节数+"\\0"+原字节)` **独立计算**每张 Git Blob SHA-1，与远端 Git tree 各自的 blob SHA 对照，**三张全部一致**。本地原件 SHA-256 与 Library/历史记录相符。见下表。
+
+| 当前仓库路径 | 字节数 | 本地原图 SHA-256 | Git Blob SHA-1：本地计算 = 远端树 |
+|---|---:|---|---|
+| `originals/LEZI_UI_20261104_SELECTED_STYLE_THIRD.png` | 3044638 | `b68fb8c0fe2ede5658e407f9e979760ce5fff727663323ebf0c8defb5d6195c9` | `82e5291fe660bc3351a399e98cfb8bd377069509` |
+| `originals/LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V1.png` | 2846140 | `402643627a2f0ed8782723dc76d29cd4022568661daef5685eb8376fcd5df6f2` | `25dc07ffd26699262d60b0376dc9fc73ee15ea58` |
+| `originals/LEZI_UI_20261104_HAND_BEADS_CANDIDATE_V2_RETAINED.png` | 2847194 | `3683a3c01250ca86faa3462b50485d23ffd5cd14a34fd9a9191721d5de637339` | `ff5b7603ccba65ebd88ff36cc8e739239a94ac4d` |
+
+- 网页上传时母版文件名自动出现 ` (1)`。本轮将三图通过 Git tree **仅改变路径**，统一存放在 `originals/` 并恢复母版原名，Git Blob SHA-1 原样复用，没有改动图像内容、像素和原始对象字节。私有仓库整理后的 `main` 提交：`0bb1e07a53e2b80326812c9fb01cb39ea5072a9b`，含 `README.md`、`STAGING_MANIFEST.json`、`SHA256SUMS.txt`、`HANDOFF_TO_MAIN.md`。整理后已通过远端 HEAD、Git 树路径/大小/Blob SHA、清单回读核验。
+- 私有仓库是**临时原始资产存储**，不代表已迁移到原项目公开仓库；无授权不得公开披露。之前的 ZIP 仍不在新仓库，因三张原件已分别作为 Git Blob 文件保存，该 ZIP 当前不是入库必需品。
+
+### 仍未通过的验收 / Work 责任不变
+1. 尚未通过**独立远端原始文件全字节下载→重算 SHA-256**。Git Blob 身份独立比对很强，但不冒充已实际下载的 SHA-256 结果。
+2. 尚未测试**另一获授权账号/Work 环境能否实际访问和恢复原件**；私有仓库权限须在接收环境核验。
+3. 之前由 Chat 编写的流程修复仍须由主线协调 **Work 模式**独立回查，并对关键资产完整收束规则进行真实案例验证；Chat 不能替代最终验收/结案，主线接收和采纳仍为 unknown。
+4. 本报告问题仍为 **high/open**、`partial_handoff_with_asset_blocker`（现存阻断仅限**完整恢复验证、跨账号接收及流程复核**；原来的“未上传任何远端原件”阻断已解除）。后续应以最新状态为准，正式关闭必须满足第10节的独立核验门槛。
+
+已确认美术与项目边界不变：第三张水墨风格已选、手/珠串 V1 未批准、V2 保留待审、B1—B9 确认、B10 待审，评分冻结、NET 暂停；不更改游戏代码。
