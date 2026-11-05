@@ -63,7 +63,7 @@
     "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification"
   ],
-  "next_action": "Mainline: route UI-ASSET-PERSISTENCE-20261105-01 to capable Work mode for independent revalidation of both original-PNG archival/recovery and prior Chat-mode workflow patch; ordinary Chat must not execute or close the repair. Read incident report section 10. All PNG uploads/receiver access unverified; UI design approvals and pause boundaries unchanged.",
+  "next_action": "Mainline-coordinated Work: independently verify raw PNG transfer from Library or local file through authorized binary channel, determine public/private scope, use raw API to retrieve >1MB files and SHA-256-verify originals from remote and another account, then audit the Chat-written workflow patch. Chat one-off synthetic transfer trial complete; original PNG remote upload still 0.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -187,6 +187,35 @@
       "main_receiver_read": "unknown",
       "main_receiver_adoption": "unknown",
       "report_section": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md#10"
+    },
+    "chat_trial_20261105": {
+      "user_authorization": "One round of Chat-based GitHub trial upload and runtime verification; future workflow and official repair remain Work-owned",
+      "limited_exception_to_prior_boundary": true,
+      "trial_type": "synthetic 3MB PNG (no original artwork published)",
+      "first_probe": "3MB synthetic payload staged; source mini PNG found not reliably decodable, so not treated as valid image test",
+      "valid_png_probe": {
+        "binary_bytes": 3044638,
+        "png_decoder_checked": "Pillow PNG 1x1 RGB passed locally",
+        "sha256": "dd6b404d7330f263d6ec484113e836c02fa6e625d29228d87725dd5218bde751",
+        "git_blob_sha": "deaaefd1970dd1272fb55c6b4f3e99c811529db4",
+        "local_independent_git_blob_sha_match": true,
+        "unpublished_commit": "d85cd00b91671e7dcf22f6238acaa19b6bd495c3",
+        "test_path": "assets/ui/_asset_io_probe/valid_synthetic_png_3044638_bytes.png",
+        "github_file_readback_content_length": 0,
+        "remote_sha256_by_raw_download": "not_verified",
+        "main_branch_published": false
+      },
+      "actual_target_originals_uploaded": 0,
+      "remote_original_retrieval_verified": false,
+      "key_blockers": [
+        "files Library raw_file to GitHub connector direct binary bridge unavailable in this Chat runtime",
+        "GitHub connector fetch_file on 3MB asset gives empty content; requires independently verified raw GitHub readback",
+        "public repository publication consent for original project PNGs not separately established"
+      ],
+      "future_formal_owner": "mainline-coordinated Work",
+      "report_section": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md#11",
+      "main_receiver_read": "unknown",
+      "main_receiver_adoption": "unknown"
     }
   }
 }
