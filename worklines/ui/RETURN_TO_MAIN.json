@@ -350,5 +350,45 @@
     "project_mainline_receiver_adoption": "unknown",
     "work_independent_validation_deferred": true,
     "notes": "User authorized a new UI conversation to continue workline assets. The old UI dialogue is done; first self-search one old-only complete image, then ask user to transfer exact PNG if necessary. Mainline appointment is not inferred."
+  },
+  "ui_asset_continuation_20261105": {
+    "task": "UI-ASSET-PERSISTENCE-20261105-01",
+    "sending_workline": "ui",
+    "writer_role": "UI asset inventory and scoped GitHub write; NOT mainline",
+    "status": "high_open_partial_handoff_with_asset_blocker",
+    "this_dialogue_scope": "source tracing + targeted original bytes checks + private inventory/public report/status stage writes; NO PNG editing, NO final Work acceptance",
+    "checkpoint_private": "aaaycc931-droid/lezi-ui-asset-staging/inventory/UI_ASSET_CONTINUATION_CHECKPOINT_20261105.md",
+    "report_public": "worklines/ui/UI_ASSET_PERSISTENCE_INCIDENT_20261105.md#16",
+    "new_findings": {
+      "missing_full_png": "雪岭红梅剑影.png",
+      "missing_original_raw_bytes": true,
+      "SHA256_expected": "05b27a0e939194a5c72f440964df460348422c97c2556c317803f36c65520aaf",
+      "size_bytes": 3249643,
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "current_library_png_names_checked": 116,
+      "four_reference_screenshots_recovered_and_SHA256_verified": true,
+      "P2_extra_seven_recovered_and_SHA256_verified": true,
+      "P2_one_this_session_source_not_found": "a_highly_detailed_traditional_chinese_ink_wash_sty.png",
+      "previous_crosswalk_63_vs_65": "complete_inherited_not_recomputed",
+      "prior_3_ZIP_50_unchanged_same_account_Library": "present_and_sizes_checked_not_current_turn_zip_SHA256_recomputed",
+      "actual_this_session_GitHub_binary_originals_uploaded": 0
+    },
+    "content_checks": "scope-limited real source reads and 11 file SHA256 checks; no final independent receiver recovery",
+    "mainline_new_intake": "paused_until_user_explicitly_resumes",
+    "receiver_mainline_read": "unknown",
+    "receiver_mainline_adoption": "unknown",
+    "Work_queued_not_run": [
+      "independent raw GitHub binary SHA256 retrieval of archived originals and any newly ingested assets",
+      "independent authorized cross-account receiver recovery",
+      "independent audit of prior Chat authored asset workflow repair and official case closure"
+    ],
+    "UI_approvals": "B1-B9 unchanged; B10 pending; visual style working master only; v2 retained pending visual approval",
+    "game_code_changes": 0,
+    "scoring": "frozen",
+    "NET": "paused",
+    "current_queued_next": "Exact original source retrieval from old UI design conversation only if file still available; preserve blocker otherwise; then use a verified private GitHub binary direct transfer channel for the 50 ZIP-backed original PNGs. No mainline receipt requested while paused."
   }
 }
