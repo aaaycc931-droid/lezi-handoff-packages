@@ -13,14 +13,14 @@
 
 | 文件 | GitHub 路径（点击查看） | 用途／状态 |
 |---|---|---|
-| H01 当前最新核心收束 | [`worklines/hero-design/h01/H01_HUNTER_CORE_DESIGN_CLOSEOUT_20261105.md`](../../h01/H01_HUNTER_CORE_DESIGN_CLOSEOUT_20261105.md) | 最新讨论确认与仍未决定的边界；不以早期稿覆盖 |
-| H02 当前最新刺杀方向收束 | [`worklines/hero-design/h02/H02_ASSASSINATION_STEALTH_DIRECTION_CLOSEOUT_20261105.md`](../../h02/H02_ASSASSINATION_STEALTH_DIRECTION_CLOSEOUT_20261105.md) | 突袭定位、信息 C 仅倾向、暗影步 A/B 继续保留 |
-| H03 当前战斧／怒气设计收束 | [`worklines/hero-design/h03/H03_WARRIOR_DESIGN_PRESERVATION_20261105.md`](../../h03/H03_WARRIOR_DESIGN_PRESERVATION_20261105.md) | 四点几何纠错、重伤/怒气与未决 |
-| 11-03 初始完整交接原件 | [`worklines/hero-design/source-archive/ORIGINAL_HERO_DESIGN_CLOSEOUT_20261103.md`](../../source-archive/ORIGINAL_HERO_DESIGN_CLOSEOUT_20261103.md) | 历史原件，保留最初英雄跨主题材料 |
-| H01 两轮设计完整原件 | [`worklines/hero-design/source-archive/H01_HUNTER_TWO_ROUND_CLOSEOUT_20261105.md`](../../source-archive/H01_HUNTER_TWO_ROUND_CLOSEOUT_20261105.md) | 历史原件，旧待决/数值如被新确认覆盖则不适用 |
-| 三英雄合并原件 | [`worklines/hero-design/source-archive/H01_H02_H03_COMBINED_CLOSEOUT_20261105.md`](../../source-archive/H01_H02_H03_COMBINED_CLOSEOUT_20261105.md) | 早期合并索引，保真保存；非最近确认的替代 |
-| H02 旧设计保真原件 | [`worklines/hero-design/source-archive/H02_ASSASSIN_DESIGN_PRESERVATION_20261105.md`](../../source-archive/H02_ASSASSIN_DESIGN_PRESERVATION_20261105.md) | 暗影步 A/B 的历史原文 |
-| H01 既有协作问题报告 | [`worklines/main/audits/H01_HUNTER_CHARGE_DIALOGUE_CONSISTENCY_INCIDENT_20261105.md`](../../) | 之前已入库的历史报告；主线接收状态按当前公告暂缓 |
+| H01 当前最新核心收束 | [`worklines/hero-design/h01/H01_HUNTER_CORE_DESIGN_CLOSEOUT_20261105.md`](h01/H01_HUNTER_CORE_DESIGN_CLOSEOUT_20261105.md) | 最新讨论确认与仍未决定的边界；不以早期稿覆盖 |
+| H02 当前最新刺杀方向收束 | [`worklines/hero-design/h02/H02_ASSASSINATION_STEALTH_DIRECTION_CLOSEOUT_20261105.md`](h02/H02_ASSASSINATION_STEALTH_DIRECTION_CLOSEOUT_20261105.md) | 突袭定位、信息 C 仅倾向、暗影步 A/B 继续保留 |
+| H03 当前战斧／怒气设计收束 | [`worklines/hero-design/h03/H03_WARRIOR_DESIGN_PRESERVATION_20261105.md`](h03/H03_WARRIOR_DESIGN_PRESERVATION_20261105.md) | 四点几何纠错、重伤/怒气与未决 |
+| 11-03 初始完整交接原件 | [`worklines/hero-design/source-archive/ORIGINAL_HERO_DESIGN_CLOSEOUT_20261103.md`](source-archive/ORIGINAL_HERO_DESIGN_CLOSEOUT_20261103.md) | 历史原件，保留最初英雄跨主题材料 |
+| H01 两轮设计完整原件 | [`worklines/hero-design/source-archive/H01_HUNTER_TWO_ROUND_CLOSEOUT_20261105.md`](source-archive/H01_HUNTER_TWO_ROUND_CLOSEOUT_20261105.md) | 历史原件，旧待决/数值如被新确认覆盖则不适用 |
+| 三英雄合并原件 | [`worklines/hero-design/source-archive/H01_H02_H03_COMBINED_CLOSEOUT_20261105.md`](source-archive/H01_H02_H03_COMBINED_CLOSEOUT_20261105.md) | 早期合并索引，保真保存；非最近确认的替代 |
+| H02 旧设计保真原件 | [`worklines/hero-design/source-archive/H02_ASSASSIN_DESIGN_PRESERVATION_20261105.md`](source-archive/H02_ASSASSIN_DESIGN_PRESERVATION_20261105.md) | 暗影步 A/B 的历史原文 |
+| H01 既有协作问题报告 | [`worklines/main/audits/H01_HUNTER_CHARGE_DIALOGUE_CONSISTENCY_INCIDENT_20261105.md`](../main/audits/H01_HUNTER_CHARGE_DIALOGUE_CONSISTENCY_INCIDENT_20261105.md) | 之前已入库的历史报告；主线接收状态按当前公告暂缓 |
 
 **路径读取说明**：上表第二列应以以下逐项原路径字符串为权威定位，勿因为相对链接变更而猜文件位置：
 
