@@ -215,3 +215,16 @@
 - 私有 GitHub 同一事件附档（均为**文本证据而非原 PNG 二进制**）：`aaaycc931-droid/lezi-ui-asset-staging/inventory/old_dialog_20261105/RECOVERY_SPOTCHECK_ADDENDUM_20261105.md` 与 `RECOVERED_SHA_ALIAS_INDEX_20261105.json`；历史 `CROSSWALK_OLD63_VS_CURRENT65_20261105.json` 保留原始快照不篡改。
 
 **后续实际工作**：不再索取旧对话两图；先解决50份优先图／其余确需保存图的无损二进制入私有GitHub及远端读回渠道；必要时只针对具体争议图取旧对话证据。主线仍暂停接收；UI资产工作线不冒称主线已读或独立Work验收合格。事件保持 `high/open`。
+
+
+## 18. 2026-11-06 用户报告已上传50图后的目标仓库复核与UI资产支线收束
+
+**用户指示**：`我已上传完毕，现在先收束本轮对话，我会更换新的对话继续项目`。该用户陈述作为**上传已执行的报告**保留，不自动充当 GitHub 50图实际入库和验收凭证。
+
+本支线关闭前实际 GitHub 核对：
+- 用户上次收到的 50张原始 PNG GitHub网页上传附件之前由 Library 三 ZIP 按 SHA-256 和原图逐张验证；既有原63、当前65、49/14/16以及联合79种身份不变，源图有效，不因上传目标未出现而重做全量清点。
+- **指定私有目标** `aaaycc931-droid/lezi-ui-asset-staging` `main` 查询快照为 `35294ad35d46be418277b87303daaf76be053b62`。查询 GitHub 分支列表仅 main；递归 Git Tree 无截断、共22对象；`originals/` 只有先前3个PNG。对照50个预期图片SHA对应Git Blob SHA-1和bytes，**0/50**在所查私库 `main` 树中命中；项目仓库当时 main 未匹配到相应`UI-IMG-NNN_*`。此事实**不能外推为用户未上传**，可能有不同目标仓库/目录或提交未落到所查分支；不能作为新50图Github二进制完成的依据。
+- 私库可追溯逐图记录 `inventory/POST_UPLOAD_TREE_CHECK_50_20261106.json`（对照树快照、50条预期SHA/blob/size和not found）；本次会话收束 `inventory/UI_ASSET_SESSION_CLOSEOUT_20261106.md`；项目UI接续单 `worklines/ui/UI_ASSET_SESSION_CLOSEOUT_20261106.md`。
+- 当前唯一明确的入库事实仍是私库**原三张水墨人物相关PNG已存Git Blob**；50张新图在指定私库主分支**尚未得到实际保存证据**。即使后续验证Blob匹配，也不等于已实际远端下载原始字节并重算完整SHA-256，更不代表独立接收环境恢复和用户审美审批。
+- 新对话先核最新 HEAD；若50仍不见，优先确认用户实际上传到的 GitHub 仓库、目录、分支与是否按`Commit changes`完成提交；有证据后按已有清单定向复查，不反复要求重复原图压缩包、旧报告和63↔65全量盘点。
+- **任务 `UI-ASSET-PERSISTENCE-20261105-01` 仍 high/open；本轮对话已按用户要求收束，不是正式事件结案**。主线暂停接收、Work-only独立验收／最终关闭等待主线明确协调；V2保留待审，B1–B9已批准、B10待审、评分冻结、NET暂停均不变。
