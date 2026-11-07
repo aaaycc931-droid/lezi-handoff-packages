@@ -1194,5 +1194,66 @@
     "Work_independent_asset_persistence_validation": "pending",
     "event_status": "UI-ASSET-PERSISTENCE-20261105-01 high/open unchanged",
     "next_UI_action": "User to choose whether prioritize V2 bead mounting/gravity or sword-grip mechanics for narrowly masked revision; no edit/approval before concrete direction"
+  },
+  "ui_hand_only_generation_failure_20261107": {
+    "incident_id": "UI-HAND-ONLY-GENERATION-FAILURE-20261107",
+    "scope": "User explicitly requested only hand modification with other pixels fixed; new AI full-image regeneration violates scope",
+    "audit_report_repo": "aaaycc931-droid/lezi-ui-asset-staging",
+    "audit_report_path": "inventory/UI_HAND_ONLY_GENERATION_FAILURE_REVIEW_20261107.md",
+    "audit_report_commit": "bc8a2fa43fd75bbb500c79264b8983724d2ca01f",
+    "original_working_master_sha256": "b68fb8c0fe2ede5658e407f9e979760ce5fff727663323ebf0c8defb5d6195c9",
+    "rejected_candidate_filename": "赤梅墨韵_剑锋前刺.png",
+    "rejected_candidate_sha256": "353c1d37d67e4d2783399f6d87749d83b2b9d0a68950da3cc06665f593819241",
+    "rejected_status": "rejected_technical_and_visual",
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "candidate_dimensions": [
+      1024,
+      1536
+    ],
+    "all_image_changed_pixels": 1538227,
+    "pixel_count": 1572864,
+    "change_ratio": 0.9779783884684244,
+    "bbox_inclusive": [
+      0,
+      0,
+      1023,
+      1535
+    ],
+    "sample_hand_box_half_open": [
+      445,
+      655,
+      600,
+      815
+    ],
+    "sample_box_outside_changed_pixels": 1513450,
+    "unchanged_area_requirement": "failed",
+    "visual_grip": "finger curled but reliable thumb/grip around weapon hilt unclear; guard and beads regenerated without authorization",
+    "approved_grip_pose_source_asset_ids": [
+      "UI-IMG-030",
+      "UI-IMG-029",
+      "UI-IMG-024",
+      "UI-IMG-023",
+      "UI-IMG-035"
+    ],
+    "old_V1_V2_status": "historical_unapproved; user said prior hand direction was wrong; no resumption",
+    "selected_working_master_modified": false,
+    "user_approved_new_candidate": false,
+    "UI_IMG_021_style_exploration": "shelved",
+    "mainline_intake": "paused",
+    "Work_independent_PNG_acceptance": "pending",
+    "B1_B9": "approved_unchanged",
+    "B10": "pending_unchanged",
+    "scoring": "frozen",
+    "NET": "paused",
+    "error_classes": [
+      "method_fit_failure",
+      "execution_failure",
+      "baseline_failure",
+      "completion_claim_failure"
+    ],
+    "next_action": "Stop generating. For any future hand-only task require constrained local mask/composition plus exact 0 outside pixels; do not substitute generative full-image redraw."
   }
 }
