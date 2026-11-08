@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-VISUAL-STYLE-DIRECTION-20261101",
-  "previous_record_id": "UI-B10-CANDIDATE-20261031",
+  "record_id": "UI-HISTORICAL-VISUAL-SESSION-CLOSEOUT-20261108",
+  "previous_record_id": "UI-VISUAL-STYLE-DIRECTION-20261101",
   "from_workline": "ui",
   "to_workline": "main",
   "updated_at_local": "2026-11-01",
@@ -58,12 +58,8 @@
   "game_code_changes": 0,
   "NET": "paused",
   "scoring": "frozen",
-  "handoff_limitations": [
-    "B9 and B10 original PNG currently only in conversation artifacts; GitHub has reconstructive text source",
-    "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
-    "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification"
-  ],
-  "next_action": "Mainline read and independently decide adoption/priority of worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md; historical B10-v1 approval remains pending unless separately changed.",
+  "handoff_limitations": "B9 and B10 original PNG currently only in conversation artifacts; GitHub has reconstructive text source,root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative,GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification | 2026-11-08 source single PNG is NOT committed as native GitHub .png; only GitHub reversible Base64 x10 and exact Library PNG. Receiver-independent rebuild/adoption not verified. All later UI designs isolated from historical baseline.",
+  "next_action": "Sender closeout complete, no automatic intake. Receiver should read full 2026-11-08 closeout and verify selected asset provenance before deciding any adoption. Await user instruction for new UI visual work.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -105,5 +101,48 @@
     "mainline_adoption": "not_claimed",
     "scoring": "frozen",
     "NET": "paused"
+  },
+  "ui_historical_visual_session_closeout_20261108": {
+    "record_id": "UI-HISTORICAL-VISUAL-SESSION-CLOSEOUT-20261108",
+    "closeout_date": "2026-11-08",
+    "scope": "entire conversation / independent UI historical visual workline, not game mainline",
+    "status": "sender_closeout_uploaded_and_verified; recipient_unverified",
+    "branch": "ui/restart-asof-20261104-1119",
+    "old_baseline_sha": "16bed702b31ccc0564ca8449d77276cee9f4dad6",
+    "cutoff_local": "2026-11-04T11:19:00+08:00",
+    "closeout_md": "worklines/ui/UI_HISTORICAL_VISUAL_SESSION_CLOSEOUT_20261108.md",
+    "closeout_receipt_json": "worklines/ui/UI_HISTORICAL_VISUAL_SESSION_RECEIPT_20261108.json",
+    "style_selected_reference": "worklines/ui/SELECTED_TRIPTYCH_STYLE_REFERENCE_20261108.md",
+    "style_selected_artwork": "first of six, ONE original horizontal triptych, user approved its drawing style only",
+    "artwork_sha256": "144363946dbd825bf8ee9d44c38387c34005a2ded510baa48c47ca5e29948472",
+    "artwork_original_size_bytes": 3293462,
+    "artwork_size_px": [
+      1774,
+      887
+    ],
+    "png_exact_library_path": "/Lezi_Chess/UI_Style_References/LEZI_UI_20261108_SELECTED_TRIPTYCH_STYLE_REFERENCE.png",
+    "archival_private_repo": "aaaycc931-droid/lezi-ui-asset-staging",
+    "archival_private_branch": "ui/visual-session-20261108-assets",
+    "archival_private_commit": "9d480cdb9df328bfd683abbc44ee42605e2f0074",
+    "archival_private_path": "visual_sessions/20261108_selected_triptych",
+    "binary_github_upload": "lossless Base64 chunks x10 + rebuild script, NOT native single PNG",
+    "generated_in_hero_trial": 6,
+    "user_retained": 1,
+    "rejected": 5,
+    "official_characters_approved": false,
+    "UI_approval_changed": false,
+    "static_approved_B1_B9": "unchanged",
+    "B10": "pending_unchanged",
+    "game_code_changed": false,
+    "score": "frozen",
+    "NET": "paused",
+    "parent_mainline_writes": false,
+    "receiver_adopted": false,
+    "next_step": "new user instructions required; next can test one independent hero image in selected artwork style, without extra retries, subject to user approval"
+  },
+  "historical_return_record_lineage": {
+    "prior_record_id": "UI-VISUAL-STYLE-DIRECTION-20261101",
+    "prior_prior_record_id": "UI-B10-CANDIDATE-20261031",
+    "preserved": true
   }
 }
