@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
-  "previous_record_id": "UI-H01-VISUAL-STAGE-CLOSEOUT-20261109",
+  "record_id": "UI-WORLD-LORE-CONVERSATION-HANDOFF-20261109",
+  "previous_record_id": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
   "from_workline": "ui",
   "to_workline": "main",
   "updated_at_local": "2026-11-09",
@@ -64,7 +64,7 @@
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification",
     "2026-11-08: selected artwork exact PNG is preserved in Library; private GitHub stores 10 lossless Base64 segments and rebuild script, not native single PNG. Receiver-independent GitHub reconstruction and mainline adoption remain unverified."
   ],
-  "next_action": "Main receiver (if authorized) actually read and determine adoption of WORLD_LORE_CANON_20261109.md and the full session closeout. Sender may continue world lore on user instruction; no mainline rules/engine/UI art edits.",
+  "next_action": "New dialogue recheck HEAD and read UI_WORLD_LORE_NEW_CONVERSATION_HANDOFF_20261109.md and full canon + 28 decisions + 24 heroes; continue worldbuilding only on user instruction.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -218,5 +218,26 @@
     "scoring_frozen": true,
     "NET_paused": true,
     "verified_initial_stage_commit": "b98bc0fb6829ed525414ffa505d2f6585753540b"
+  },
+  "ui_world_lore_new_conversation_handoff_20261109": {
+    "record_id": "UI-WORLD-LORE-CONVERSATION-HANDOFF-20261109",
+    "sender_branch": "ui/restart-asof-20261104-1119",
+    "source_head_before_write": "19dd7ff07ff0b45b168dc0fa68cc92b812913e3b",
+    "path": "worklines/ui/UI_WORLD_LORE_NEW_CONVERSATION_HANDOFF_20261109.md",
+    "scope": "user explicitly requested next-conversation handoff; no new lore content, no game rule changes",
+    "hero_origins_source": "worklines/ui/HERO_WORLD_ORIGIN_GROUPS_20261109.md",
+    "unique_hero_count": 24,
+    "source_world_counts": {
+      "A": 10,
+      "B": 9,
+      "C": 4,
+      "D": 1
+    },
+    "h11": "弦／拨乱命运",
+    "full_world_lore_path": "worklines/ui/WORLD_LORE_CANON_20261109.md",
+    "all_decisions_path": "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261109.md",
+    "sender_status": "published_pending_remote_readback",
+    "main_receiver_read": false,
+    "main_receiver_adopted": false
   }
 }

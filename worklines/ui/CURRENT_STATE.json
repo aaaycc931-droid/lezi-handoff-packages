@@ -312,22 +312,25 @@
     "temp_transfer_file_status": "moved_to_library_trash"
   },
   "session_closure": {
-    "record_id": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
+    "record_id": "UI-WORLD-LORE-CONVERSATION-HANDOFF-20261109",
     "date_local": "2026-11-09",
-    "status": "sender_published_remote_readback_verified",
-    "phase_type": "stage_checkpoint_not_mainline_handoff_acceptance",
-    "previous_session_closure": "UI-H01-VISUAL-STAGE-CLOSEOUT-20261109",
-    "full_closeout_path": "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261109.md",
+    "status": "published_pending_remote_readback",
+    "phase_type": "new_conversation_handoff",
+    "source_previous_session_closure": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
+    "source_verified_commit": "19dd7ff07ff0b45b168dc0fa68cc92b812913e3b",
+    "main_handoff_path": "worklines/ui/UI_WORLD_LORE_NEW_CONVERSATION_HANDOFF_20261109.md",
     "world_canon_path": "worklines/ui/WORLD_LORE_CANON_20261109.md",
-    "source_branch_base_commit": "4bb230d200a4ed831865834459c9b55ed5c7dd9e",
-    "excluded_latest_h01_image": true,
-    "game_rules_modified": false,
+    "world_decisions_path": "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261109.md",
+    "world_hero_origins_path": "worklines/ui/HERO_WORLD_ORIGIN_GROUPS_20261109.md",
+    "h11_naming_path": "worklines/ui/H11_XIAN_NAMING_20261109.md",
+    "scope": "finish current dialogue after complete full-world-lore checkpoint and explicit confirmation all 24 hero names/sources are recorded",
     "mainline_adoption": "not_verified",
-    "source_recap": "user asked full conversation stage checkpoint to avoid omission",
-    "verified_initial_stage_commit": "b98bc0fb6829ed525414ffa505d2f6585753540b"
+    "game_code_changed": false,
+    "game_rules_changed": false,
+    "h01_excluded_image_remains_excluded": true
   },
-  "ui_visual_branch_status": "world_lore_stage_checkpoint_remote_verified",
-  "ui_visual_branch_next_action": "Continue only on user instruction: choose unconfirmed world lore details (乐子的根本规则/参赛通知/被选中者空间). Preserve H11 弦/拨乱命运 and older UI/hero records; mainline independently review any adoption.",
+  "ui_visual_branch_status": "user_requested_new_conversation_handoff",
+  "ui_visual_branch_next_action": "New conversation: read current UI branch head, fixed entry, full lore canon and 28-decision closeout, 24-hero source group and H11 naming; resume only unconfirmed worldbuilding, no formal rule/mainline changes.",
   "previous_ui_session_closure": {
     "record_id": "UI-HISTORICAL-VISUAL-SESSION-CLOSEOUT-20261108",
     "closeout_md": "worklines/ui/UI_HISTORICAL_VISUAL_SESSION_CLOSEOUT_20261108.md",
@@ -496,5 +499,20 @@
     "old_historical_commit": "16bed702b31ccc0564ca8449d77276cee9f4dad6",
     "source_branch_base_commit": "3a2c4fd8806139ccf2dc01ca9040cbd75d9e5edb",
     "initial_stage_publication_commit": "0f253feffefe24c2cee46d3eba10866b82d47640"
+  },
+  "previous_world_lore_session_closure_20261109": {
+    "record_id": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
+    "date_local": "2026-11-09",
+    "status": "sender_published_remote_readback_verified",
+    "phase_type": "stage_checkpoint_not_mainline_handoff_acceptance",
+    "previous_session_closure": "UI-H01-VISUAL-STAGE-CLOSEOUT-20261109",
+    "full_closeout_path": "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261109.md",
+    "world_canon_path": "worklines/ui/WORLD_LORE_CANON_20261109.md",
+    "source_branch_base_commit": "4bb230d200a4ed831865834459c9b55ed5c7dd9e",
+    "excluded_latest_h01_image": true,
+    "game_rules_modified": false,
+    "mainline_adoption": "not_verified",
+    "source_recap": "user asked full conversation stage checkpoint to avoid omission",
+    "verified_initial_stage_commit": "b98bc0fb6829ed525414ffa505d2f6585753540b"
   }
 }
