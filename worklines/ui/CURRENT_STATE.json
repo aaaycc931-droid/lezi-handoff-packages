@@ -314,7 +314,7 @@
   "session_closure": {
     "record_id": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
     "date_local": "2026-11-09",
-    "status": "stage_record_written_readback_pending",
+    "status": "sender_published_remote_readback_verified",
     "phase_type": "stage_checkpoint_not_mainline_handoff_acceptance",
     "previous_session_closure": "UI-H01-VISUAL-STAGE-CLOSEOUT-20261109",
     "full_closeout_path": "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261109.md",
@@ -323,9 +323,10 @@
     "excluded_latest_h01_image": true,
     "game_rules_modified": false,
     "mainline_adoption": "not_verified",
-    "source_recap": "user asked full conversation stage checkpoint to avoid omission"
+    "source_recap": "user asked full conversation stage checkpoint to avoid omission",
+    "verified_initial_stage_commit": "b98bc0fb6829ed525414ffa505d2f6585753540b"
   },
-  "ui_visual_branch_status": "world_lore_stage_checkpoint_written_readback_pending",
+  "ui_visual_branch_status": "world_lore_stage_checkpoint_remote_verified",
   "ui_visual_branch_next_action": "Continue only on user instruction: choose unconfirmed world lore details (乐子的根本规则/参赛通知/被选中者空间). Preserve H11 弦/拨乱命运 and older UI/hero records; mainline independently review any adoption.",
   "previous_ui_session_closure": {
     "record_id": "UI-HISTORICAL-VISUAL-SESSION-CLOSEOUT-20261108",
@@ -457,13 +458,22 @@
     "confirmed": "28 sequential decisions/corrections, including host personality C, force-selection opt-in and commander gameplay interpretation",
     "highest_creator": "never aware, never observable, created world from incidental 象棋 word",
     "host": "乐子; self-named rule-embodiment, universe-scale power, root duties binding, free-form personality",
-    "status": "sender_content_prepared_commit_pending_readback",
+    "status": "sender_publication_and_six_file_remote_readback_verified",
     "mainline_read": false,
     "mainline_adopted": false,
     "gameplay_changed": false,
     "artwork_approval_changed": false,
     "hero_original_source_preserved": true,
-    "h01_excluded_art_preserved": true
+    "h01_excluded_art_preserved": true,
+    "initial_verified_commit": "b98bc0fb6829ed525414ffa505d2f6585753540b",
+    "readback_paths": [
+      "worklines/ui/WORLD_LORE_CANON_20261109.md",
+      "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261109.md",
+      "worklines/ui/START_HERE.txt",
+      "worklines/ui/MULTIWORLD_OVERLAP_SETTING_20261109.md",
+      "worklines/ui/CURRENT_STATE.json",
+      "worklines/ui/RETURN_TO_MAIN.json"
+    ]
   },
   "prior_session_closure_20261109_h01": {
     "record_id": "UI-H01-VISUAL-STAGE-CLOSEOUT-20261109",
