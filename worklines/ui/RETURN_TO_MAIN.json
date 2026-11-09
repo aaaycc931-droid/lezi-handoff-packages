@@ -1,11 +1,11 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-H01-VISUAL-STAGE-CLOSEOUT-20261109",
-  "previous_record_id": "UI-HISTORICAL-VISUAL-SESSION-CLOSEOUT-20261108",
+  "record_id": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
+  "previous_record_id": "UI-H01-VISUAL-STAGE-CLOSEOUT-20261109",
   "from_workline": "ui",
   "to_workline": "main",
-  "updated_at_local": "2026-11-01",
-  "scope": "New one-screen static connection-success UI candidate; no product/runtime change",
+  "updated_at_local": "2026-11-09",
+  "scope": "Whole 2026-11-09 worldbuilding conversation stage archive; UI narrative only. Historical B10 details retained as previous state, not changed.",
   "approved_versions": [
     "B1-v2",
     "B2-v4",
@@ -64,7 +64,7 @@
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification",
     "2026-11-08: selected artwork exact PNG is preserved in Library; private GitHub stores 10 lossless Base64 segments and rebuild script, not native single PNG. Receiver-independent GitHub reconstruction and mainline adoption remain unverified."
   ],
-  "next_action": "Sender closeout complete, no automatic intake. Receiver should read full 2026-11-08 closeout and verify selected asset provenance before deciding any adoption. Await user instruction for new UI visual work.",
+  "next_action": "Main receiver (if authorized) actually read and determine adoption of WORLD_LORE_CANON_20261109.md and the full session closeout. Sender may continue world lore on user instruction; no mainline rules/engine/UI art edits.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -201,5 +201,21 @@
     "h11_previous_skill_display_name": "玩弄命运",
     "superseded_naming_file": "worklines/ui/H11_XUAN_NAMING_20261109.md",
     "verified_commit": "3fb861ef924142fa038674757f920343f841843a"
+  },
+  "ui_world_lore_stage_20261109": {
+    "record_id": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
+    "sender_branch": "ui/restart-asof-20261104-1119",
+    "source_parent": "4bb230d200a4ed831865834459c9b55ed5c7dd9e",
+    "canon_path": "worklines/ui/WORLD_LORE_CANON_20261109.md",
+    "closeout_path": "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261109.md",
+    "sender_status": "written_pending_readback",
+    "main_receiver_read": false,
+    "main_receiver_adopted": false,
+    "user_confirmed_latest_host_personality": "C 自由多变型",
+    "previous_ui_sources_preserved": true,
+    "game_rules_unchanged": true,
+    "h01_generated_image_excluded": true,
+    "scoring_frozen": true,
+    "NET_paused": true
   }
 }
