@@ -1,11 +1,11 @@
 {
   "schema": "lezi.ui.phase_return.v1",
-  "record_id": "UI-WORLD-LORE-CONVERSATION-HANDOFF-20261109",
-  "previous_record_id": "UI-WORLD-LORE-STAGE-CLOSEOUT-20261109",
+  "record_id": "UI-WORLD-LORE-CONVERSATION-HANDOFF-20261111",
+  "previous_record_id": "UI-WORLD-LORE-CONVERSATION-HANDOFF-20261109",
   "from_workline": "ui",
   "to_workline": "main",
-  "updated_at_local": "2026-11-09",
-  "scope": "Whole 2026-11-09 worldbuilding conversation stage archive; UI narrative only. Historical B10 details retained as previous state, not changed.",
+  "updated_at_local": "2026-11-11",
+  "scope": "Whole new world-lore dialogue continuation, 33-item coverage and 2026-11-11 session closure; UI branch only",
   "approved_versions": [
     "B1-v2",
     "B2-v4",
@@ -64,7 +64,7 @@
     "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification",
     "2026-11-08: selected artwork exact PNG is preserved in Library; private GitHub stores 10 lossless Base64 segments and rebuild script, not native single PNG. Receiver-independent GitHub reconstruction and mainline adoption remain unverified."
   ],
-  "next_action": "New dialogue recheck HEAD and read UI_WORLD_LORE_NEW_CONVERSATION_HANDOFF_20261109.md and full canon + 28 decisions + 24 heroes; continue worldbuilding only on user instruction.",
+  "next_action": "New dialogue recheck HEAD, read 20261111 handoff + increment + full 20261109 canon and 24 heroes; discuss selected-participant space visual environment. Champions competition mechanics and reward still deferred.",
   "receiver_read_adopted": "unknown",
   "visual_style_handoff_20261101": {
     "path": "worklines/ui/VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md",
@@ -241,5 +241,29 @@
     "main_receiver_adopted": false,
     "verified_publication_commit": "50078cc5e91ea115549a25b1a17feba145deb8e9",
     "canonical_world_and_hero_files_unchanged": true
+  },
+  "ui_world_lore_continuation_20261111": {
+    "record_id": "UI-WORLD-LORE-CONVERSATION-HANDOFF-20261111",
+    "source_branch": "ui/restart-asof-20261104-1119",
+    "source_head_before_write": "7aff6b75f5e491cafc40a9070891067222cd1540",
+    "extension_path": "worklines/ui/WORLD_LORE_CONFIRMED_EXTENSION_20261111.md",
+    "closeout_path": "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261111.md",
+    "handoff_path": "worklines/ui/UI_WORLD_LORE_NEW_CONVERSATION_HANDOFF_20261111.md",
+    "prior_canon": "worklines/ui/WORLD_LORE_CANON_20261109.md",
+    "prior_decisions_28": "worklines/ui/WORLD_LORE_SESSION_CLOSEOUT_20261109.md",
+    "this_turn_items": 33,
+    "old_hero_origins_unchanged": true,
+    "h11_unchanged": true,
+    "champion_lane": "provisional",
+    "champion_exact_rules": "deferred",
+    "reward_final": "deferred",
+    "sender_status": "created_subject_to_postpublish_verification",
+    "main_receiver_read": false,
+    "main_receiver_adopted": false,
+    "game_code_changed": false,
+    "game_rules_changed": false,
+    "approved_UI_images_changed": false,
+    "scoring_frozen": true,
+    "NET_paused": true
   }
 }
