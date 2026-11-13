@@ -1,0 +1,64 @@
+{
+  "status": "PASS_LOCAL_MODEL_ONLY",
+  "checks": 8,
+  "cases": [
+    "failed-candidate-restores-current-board-not-historical-anchor",
+    "normal-red8-and-following-black8-have-legal-concrete-moves",
+    "normal-begin-and-end-occur-once-after-original-sample",
+    "failure-spends-attempt-but-not-use-or-occupancy",
+    "accepted-h21-descent-is-not-rearmed-at-next-begin",
+    "formal-draw-at-original-sample-prevents-all-later-game-phases",
+    "duplicate-begin-and-premature-begin-mutants-are-detectable",
+    "hypothetical-timer-counters-are-not-installed-as-extra-hero-effects"
+  ],
+  "runtime": "v24.22.1",
+  "inheritedFixtureChecksRerun": 10,
+  "normalTrace": [
+    "failure-restores-current-old-line",
+    "original-handoff-sample",
+    "red8-normal-begin",
+    "red8-main-closed",
+    "red8-normal-end",
+    "black8-normal-begin",
+    "black8-main-closed"
+  ],
+  "terminalTrace": [
+    "failure-restores-current-old-line",
+    "original-handoff-sample"
+  ],
+  "ordinaryMoves": [
+    {
+      "side": "red8",
+      "from": [
+        7,
+        5
+      ],
+      "to": [
+        7,
+        6
+      ]
+    },
+    {
+      "side": "black8",
+      "from": [
+        3,
+        8
+      ],
+      "to": [
+        2,
+        10
+      ]
+    }
+  ],
+  "finalPieces": 27,
+  "sourceEngineRuns": 0,
+  "independentQA": false,
+  "scope": "H21 source-conditioned old failure fixture plus local phase adapter; terminal verdict supplied externally",
+  "notVerified": [
+    "actual source-specific timer/cooldown callbacks",
+    "H05 wall-clock window and failure deadline binding",
+    "reachable fifth-repeat terminal fixture",
+    "production H05 transaction and mode admission",
+    "network retries or independent QA"
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "schema": "lezi.workline.return_to_main.v1",
-  "id": "HERO-POST-ACTION-DEATH-SOURCE-20261113",
+  "id": "HERO-FAILED-NORMAL-RESUMPTION-20261113",
   "from": "hero-design",
   "to": "main",
-  "source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
+  "source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
   "followup_source_commit": "747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a",
   "updated_on_local": "2026-11-13",
   "status": "phase_increment_ready_for_receiver_review",
@@ -12,27 +12,27 @@
     "MAIN-COORD-FOLLOWUP-20261113-hero-design"
   ],
   "authorization": "User explicitly: 我长期批准本英雄设计支线，将更新内容提交到main。 Existing hero-design scope retained.",
-  "report": "worklines/hero-design/H05_POST_ACTION_DEATH_SOURCE_REVIEW.md",
+  "report": "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
   "changes": [
-    "Constructed source-conditioned H19 infection death of another piece after old/replayed black5 ordinary main",
-    "Verified local third infection resolution precedes ghost expiry; original controlled horse survives",
-    "Recorded H01 ownership, D01 disabling and H17 unverified action-grade exclusions without inventing compatible powers"
+    "Extended fixed H21 failed-replay fixture with legal ordinary red8 pawn move and black8 horse move",
+    "Qualified failure resumption with original-line sampling terminal gate; no begin after formal draw",
+    "Separated phase callbacks, formal opportunity counting and unresolved H05 wall-clock binding; preserved consumed H21 premonition"
   ],
   "validation": {
     "local_model_checks": 8,
+    "inherited_fixture_checks_rerun": 10,
     "result": "PASS_LOCAL_MODEL_ONLY",
     "source_engine_runs": 0,
     "independent_QA": false,
-    "results": "worklines/hero-design/research/H05_POST_ACTION_INFECTION_RESULTS.json",
-    "scope": "9 ordinary opportunities plus locally modeled H19 callbacks; post-main other-piece death only",
+    "results": "worklines/hero-design/research/H05_FAILED_NORMAL_RESUMPTION_RESULTS.json",
+    "scope": "ordinary geometry continuation plus modeled lifecycle; terminal verdict supplied as oracle, no production timer callbacks",
     "not_covered": [
+      "source-specific cooldown/duration callbacks",
+      "H05 pre-window/failure wall-clock binding",
+      "reachable fifth-repeat fixture",
+      "production H05 transaction/mode admission",
       "controlled actor post-action death",
-      "hidden post-action death",
-      "full normal turn following failure",
-      "production ghost footprint and hero runtime",
-      "actual mode admission",
-      "H05 production transaction",
-      "reset multiplicity"
+      "independent QA"
     ]
   },
   "rule_delta": "0; source-conditioned research only",
@@ -44,8 +44,10 @@
     "H21_whisper_batch": "same source atom confirmed; explicit simultaneous batch not established",
     "changed_contributor_equivalence": "UNRESOLVED",
     "post_action_adverse_death": "CONTROLLED_ACTOR_CONCRETE_SOURCE_FIXTURE_PENDING",
-    "normal_turn_after_failure": "NOT_SIMULATED",
-    "post_action_other_piece_death": "SOURCE_CONDITIONED_LOCAL_FIXTURE_ONLY"
+    "normal_turn_after_failure": "LOCAL_GEOMETRY_AND_PHASE_ADAPTER_ONLY",
+    "post_action_other_piece_death": "SOURCE_CONDITIONED_LOCAL_FIXTURE_ONLY",
+    "normal_turn_source_timers": "ACTUAL_CALLBACKS_UNVERIFIED",
+    "H05_wall_clock_binding": "CURRENT_READ_SOURCES_INCOMPLETE"
   },
   "shared_blockers": [
     "full H05 transaction and source-stable samples",
@@ -53,14 +55,14 @@
     "production randomness, hidden-information and delivery/ACK validation",
     "mode admission and independent QA"
   ],
-  "next_action": "继续核失败H05返回原线后，正常采样与begin的计时/状态边界；先核窗口优先B下判和则不进入begin。原行动棋后续死亡仍缺具体来源，H19仅证明条件模型中的他棋死亡；不拼接英雄。H17动作层级待来源核验。同因果A/B、Q-RS2与批次重置未决。",
+  "next_action": "读取H02唯一正式正文，构造H05×H02暗影步资格获得/使用/回合末过期的具体棋局，分别核重演替换与失败保留；不先定共享预算恢复。H05秒表绑定、原行动棋后续死亡、同因果A/B、Q-RS2与批次重置保持未决。",
   "receiver_read": "UNKNOWN",
   "receiver_adoption": "UNKNOWN",
   "historical_main_design_intake": "limited prior scope documented in main/H02_H05_INTEGRATION_REVIEW.md; not this new return",
   "changed_paths": [
-    "worklines/hero-design/H05_POST_ACTION_DEATH_SOURCE_REVIEW.md",
-    "worklines/hero-design/research/H05_POST_ACTION_INFECTION_PROBES.js",
-    "worklines/hero-design/research/H05_POST_ACTION_INFECTION_RESULTS.json",
+    "worklines/hero-design/research/H05_FAILED_NORMAL_RESUMPTION_PROBES.js",
+    "worklines/hero-design/research/H05_FAILED_NORMAL_RESUMPTION_RESULTS.json",
+    "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
     "worklines/hero-design/CURRENT_STATE.json",
     "worklines/hero-design/RETURN_TO_MAIN.json",
     "worklines/hero-design/START_HERE.md",
@@ -77,9 +79,9 @@
   "publication": {
     "destination_branch": "main",
     "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
-    "research_source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
-    "publication_parent": "fee354a6f4b9db270973b427ee20cb13fbd45d1e",
-    "delivery": "long-term authorized hero-design increment; expected_sha and force=false, readback required"
+    "research_source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+    "publication_parent": "811c93e75915f759b5dea558767d2a3830c0076f",
+    "delivery": "authorized hero-design increment; latest parent, expected_sha, force=false; readback required"
   },
   "publication_history": [
     {
@@ -122,10 +124,18 @@
       "research_source_commit": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
       "publication_parent": "fc70084ee982d5eba3412d383ab7c392094a3849",
       "delivery": "long-term authorized hero-design increment; expected_sha and force=false, readback required"
+    },
+    {
+      "destination_branch": "main",
+      "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
+      "research_source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
+      "publication_parent": "fee354a6f4b9db270973b427ee20cb13fbd45d1e",
+      "delivery": "long-term authorized hero-design increment; expected_sha and force=false, readback required"
     }
   ],
-  "previous_return_id": "HERO-FAILED-REPLAY-LEDGER-20261113",
-  "previous_source_commit": "83b6d6fdf7ae48846f1f8b8e78054905703ed7b0",
-  "previous_report": "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
-  "previous_phase_source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b"
+  "previous_return_id": "HERO-POST-ACTION-DEATH-SOURCE-20261113",
+  "previous_source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
+  "previous_report": "worklines/hero-design/H05_POST_ACTION_DEATH_SOURCE_REVIEW.md",
+  "previous_phase_source_commit": "7d86ae477b044f83bf268fbbb97bfaa66003d3da",
+  "report_section": "7"
 }
