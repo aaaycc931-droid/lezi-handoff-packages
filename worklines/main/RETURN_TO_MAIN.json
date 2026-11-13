@@ -4121,17 +4121,18 @@
     }
   },
   "next_action": {
-    "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
-    "owner": "main",
-    "action": "沿已接收C4原请求保留、C5及PR28显式null修复、PR26默认关闭host adapter，核同一原请求与可信本机代次/房主内部结果的最小接合。先定精确消息/动作覆盖和失效边界，再在已有授权内做隔离实现；不默改线上wire/协商或远端actor连续性。",
-    "inputs": [
-      "PR26/e88a5a6bce6732a29e887b10636c827cd3f2eab5",
-      "C5/4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c + PR28/58cc324ddc616d14234d0a8b1ad34696393fb280",
-      "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
-      "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
-    ],
-    "parallel": "普通PR27新增具体复核输入已发布；其接收/执行待本线实际回执，不要求用户启动主线工程。",
-    "retained": "原56/64、客户端/真机/独立QA、UI历史修复及设计整合缺口保留；unknown不自动补交。",
-    "constraints": "评分原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/模式开放。"
+    "id": "MAIN-PROJECT-CONTINUATION-ADOPTION-20261113",
+    "source_ref": "worklines/main/CURRENT_STATE.json#/next_action"
+  },
+  "project_continuation_20261113": {
+    "id": "MAIN-PROJECT-CONTINUATION-20261113",
+    "source_handoff_head": "4c93812a5e357e5c14e4b2831a46b146d6f4a9ba",
+    "report": "worklines/main/PROJECT_CONTINUATION_REVIEW_20261113.md",
+    "state_ref": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113",
+    "scope": "workflow and installable instructions; no game code or new frontend deployment",
+    "frontend_installation": "NOT_VERIFIED",
+    "new_chat_trial": "NOT_RUN",
+    "recipient_adoption": "UNKNOWN",
+    "next_action_ref": "worklines/main/CURRENT_STATE.json#/next_action"
   }
 }

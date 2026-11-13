@@ -6,7 +6,8 @@
     "main": "worklines/main/START_HERE.txt",
     "half_chaos": "worklines/half_chaos/START_HERE.txt",
     "chaos": "worklines/chaos/START_HERE.txt",
-    "hero_pilot": "worklines/hero-pilot/START_HERE.md"
+    "hero_pilot": "worklines/hero-pilot/START_HERE.md",
+    "hero_design": "worklines/hero-design/START_HERE.md"
   },
   "assets": "assets/ui/INDEX.json",
   "history": "archive/INDEX.json",
@@ -2521,12 +2522,18 @@
     "resumed_by_current_main": true
   },
   "latest_main_phase": {
-    "id": "MAIN-H10-FORWARD-AND-RETURN-INTAKE-20261113",
-    "state": "worklines/main/CURRENT_STATE.json#h10_forward_and_return_intake_20261113",
-    "report": "worklines/main/H10_FORWARD_AND_RETURN_INTAKE_20261113.md",
-    "engine_PR27": "f8ef0ca4850dc001f44e17a75fcd587a407f5ea7",
-    "engine_PR28": "58cc324ddc616d14234d0a8b1ad34696393fb280",
-    "next": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
-    "status": "active_stage_saved"
+    "id": "MAIN-PROJECT-CONTINUATION-20261113",
+    "state": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113",
+    "report": "worklines/main/PROJECT_CONTINUATION_REVIEW_20261113.md",
+    "next_action_ref": "worklines/main/CURRENT_STATE.json#/next_action",
+    "status": "repository_stage_saved_frontend_unverified_not_session_closed"
+  },
+  "main_continuation": "worklines/main/CURRENT_STATE.json#/continuation",
+  "project_continuation": {
+    "workflow": "docs/WORKFLOW.md#项目内新对话接续与收束",
+    "configuration": "docs/COORDINATION_SETUP.md",
+    "installation_status": "new_revision_not_verified_in_frontend",
+    "ui_design_branch": "ui/restart-asof-20261104-1119",
+    "ui_track_note": "UI图片与世界观/英雄视觉文字分别定位；根worklines.UI属于main历史资产入口，不能替代独立设计分支。"
   }
 }

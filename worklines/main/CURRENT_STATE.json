@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "active_main_stage_saved",
+  "status": "active_main_workflow_stage_saved_frontend_adoption_unverified",
   "resume_date_local": "2026-10-30",
   "timezone": "Asia/Shanghai",
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
@@ -54,8 +54,8 @@
   },
   "worklines": {
     "main": {
-      "next": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
-      "status": "active_owner_stage_saved"
+      "next": "MAIN-PROJECT-CONTINUATION-ADOPTION-20261113",
+      "status": "workflow_stage_saved_engineering_breakpoint_retained"
     },
     "standard": {
       "next": "MAIN-STD-H10-FORWARD-REVIEW-20261113",
@@ -201,18 +201,13 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
+    "id": "MAIN-PROJECT-CONTINUATION-ADOPTION-20261113",
     "owner": "main",
-    "action": "沿已接收C4原请求保留、C5及PR28显式null修复、PR26默认关闭host adapter，核同一原请求与可信本机代次/房主内部结果的最小接合。先定精确消息/动作覆盖和失效边界，再在已有授权内做隔离实现；不默改线上wire/协商或远端actor连续性。",
-    "inputs": [
-      "PR26/e88a5a6bce6732a29e887b10636c827cd3f2eab5",
-      "C5/4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c + PR28/58cc324ddc616d14234d0a8b1ad34696393fb280",
-      "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
-      "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
-    ],
-    "parallel": "普通PR27新增具体复核输入已发布；其接收/执行待本线实际回执，不要求用户启动主线工程。",
-    "retained": "原56/64、客户端/真机/独立QA、UI历史修复及设计整合缺口保留；unknown不自动补交。",
-    "constraints": "评分原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/模式开放。"
+    "action": "交付一次配置说明；按用户实际采用反馈或下一次项目内新对话验证固定身份、最新断点和无需转贴。前端未实际操作或新对话未发生就保留未验，不重复全量审计；用户确认恢复工程时沿保留的蓝牙断点继续。",
+    "status": "repository_stage_complete_frontend_adoption_or_owner_direction_pending",
+    "configuration": "docs/COORDINATION_SETUP.md",
+    "retained_engineering_ref": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113/engineering_breakpoint",
+    "constraints": "本阶段不启动蓝牙下一实现，不改各线未回传成果/UI分支，不宣布前端安装或未来主线任命已生效。既有评分/NET/审批边界保持。"
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -229,7 +224,7 @@
   "publication_parent_commit": "562c41dadbbbef67ba0612b1b32791321d5c8c38",
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "2b521ba0cfde1c6cf3aa0fc1b2168fe8d0e37c21",
-  "current_phase": "MAIN-H10-FORWARD-AND-RETURN-INTAKE-20261113",
+  "current_phase": "MAIN-PROJECT-CONTINUATION-20261113",
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -2225,7 +2220,8 @@
     "resume_prompt": "继续《乐子象棋》主线。我任命本对话接任项目主线，继承既有授权与接收恢复安排；评分冻结、NET暂停及其他审批边界保持。先核最新GitHub HEAD并读取固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt 。按CURRENT_STATE.json#session_closure与SESSION_CLOSEOUT.json#session_closeout_20261113恢复本轮收束。下一由主线推进MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113；普通线工程转派已撤回，不要求我去普通对话启动主线工作。可按任务需要直接使用子代理，并核待接收的C5、半混乱、司衡修复及H02/H05新来源。保护未回传成果与独立UI分支，先读已有材料，不重复已完成工程/APK；阶段保存GitHub并读回核对。",
     "resumed_on_local": "2026-11-13",
     "current_stage_pointer": "H10_FORWARD_PROGRESS.json",
-    "historical_next_completed": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113"
+    "historical_next_completed": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+    "current_resume_ref": "worklines/main/CURRENT_STATE.json#/continuation"
   },
   "evidence_accounting": {
     "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
@@ -3453,7 +3449,7 @@
       "APK_rebuilt": false
     }
   },
-  "current_dialogue_status": "active_mainline_coordination",
+  "current_dialogue_status": "active_mainline_workflow_review_not_closed",
   "coordination_20261113": {
     "id": "MAIN-COORDINATION-RESUME-20261113",
     "date_local": "2026-11-13",
@@ -4176,5 +4172,59 @@
       "other_lines_unreturned": "UNKNOWN_PRESERVED",
       "independent_UI": "UNTOUCHED"
     }
+  },
+  "project_continuation_20261113": {
+    "id": "MAIN-PROJECT-CONTINUATION-20261113",
+    "status": "repository_protocol_and_installable_templates_prepared_frontend_unverified",
+    "updated_at_local": "2026-11-13T20:39:59.802123+08:00",
+    "source_handoff_head": "4c93812a5e357e5c14e4b2831a46b146d6f4a9ba",
+    "owner_request_summary": "用户暂缓下一工程阶段，要求核个人系统固定项目入口与云端接续的实际做法，减少收束后新对话和跨线交接的复制粘贴。此为意图概括，不冒充原话。",
+    "report": "worklines/main/PROJECT_CONTINUATION_REVIEW_20261113.md",
+    "workflow": "docs/WORKFLOW.md#项目内新对话接续与收束",
+    "configuration": "docs/COORDINATION_SETUP.md",
+    "personal_reference": {
+      "repository": "aaaycc931-droid/personal-collaboration",
+      "commit": "5712644430ded5ddc4ffbf98c66f7926ce740749",
+      "scope": "fixed-entry instructions, current next-action reference and closeout routing only; no private business body copied"
+    },
+    "frontend": {
+      "existing_entry_links": "OWNER_REPORTED_INSTALLED_SOME_ENTRIES",
+      "exact_project_layout": "NOT_INDEPENDENTLY_VERIFIED",
+      "new_templates_installed": "NOT_VERIFIED",
+      "fresh_chat_continue": "NOT_RUN",
+      "main_conditional_appointment": "TEMPLATE_ONLY_REQUIRES_OWNER_ACTUAL_PROJECT_INSTRUCTION_ADOPTION"
+    },
+    "engineering_breakpoint": {
+      "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
+      "owner": "main",
+      "action": "沿已接收C4原请求保留、C5及PR28显式null修复、PR26默认关闭host adapter，核同一原请求与可信本机代次/房主内部结果的最小接合。先定精确消息/动作覆盖和失效边界，再在已有授权内做隔离实现；不默改线上wire/协商或远端actor连续性。",
+      "inputs": [
+        "PR26/e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+        "C5/4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c + PR28/58cc324ddc616d14234d0a8b1ad34696393fb280",
+        "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
+        "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
+      ],
+      "parallel": "普通PR27新增具体复核输入已发布；其接收/执行待本线实际回执，不要求用户启动主线工程。",
+      "retained": "原56/64、客户端/真机/独立QA、UI历史修复及设计整合缺口保留；unknown不自动补交。",
+      "constraints": "评分原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/模式开放。"
+    },
+    "engineering_started_in_this_stage": false,
+    "session_closed": false,
+    "other_line_states_or_receipts_modified": false,
+    "independent_ui_branch_written": false,
+    "receiver_adoption": "UNKNOWN",
+    "runtime_tests_run": 0,
+    "source_and_route_checks": "See report; document-only, not frontend or product acceptance"
+  },
+  "continuation": {
+    "workline": "main",
+    "session_status": "active_current_dialogue_not_closed",
+    "workflow_ref": "docs/WORKFLOW.md#项目内新对话接续与收束",
+    "latest_stage_ref": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113",
+    "next_action_ref": "worklines/main/CURRENT_STATE.json#/next_action",
+    "latest_historical_closeout_ref": "worklines/main/SESSION_CLOSEOUT.json#/session_closeout_20261113",
+    "retained_engineering_ref": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113/engineering_breakpoint",
+    "priority": "Resolve current state and newer task/confirmation sources first; historical closeout does not restart completed G4/G5.",
+    "ownership": "Current dialogue explicitly appointed by user. Future project template is not an appointment unless actually adopted by owner and present as instructions for that dialogue."
   }
 }
