@@ -1,0 +1,123 @@
+{
+  "schema": "lezi.standard.ng11.source_stimuli.v1",
+  "id": "STD-NG11-SOURCE-AUDIT-20261113",
+  "source_commit": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+  "original_identity": "NP_AS_AP_ES_OBSERVATION_GUARD_MATRIX_20261025.json#NG-11",
+  "scope": "静态来源审查与未运行刺激设计，不是合法自然棋局或测试PASS",
+  "cases": [
+    {
+      "id": "NG11-01",
+      "category": "第三英雄双防护",
+      "setup": "H02/H21无敌＋唯一M04原AS/AP/ES",
+      "stimulus": "向终点再添加H03普通防御，或向路径添加H10宿主",
+      "classification": "INVALID_SOURCE_COMBINATION",
+      "oracle_boundary": "拒绝把此拼接fixture当合法正例；不裁定两防护先后。",
+      "missing": "三英雄来源非法；除非提供不同且已批准的完整来源链。",
+      "source": "rules/confirmed/H02_M04_ACTIVATION_ENDPOINT_DRAGON_SCALE_CONFIRMATION_20261019.json",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    },
+    {
+      "id": "NG11-02",
+      "category": "路径与终点各一鳞",
+      "setup": "H02/H21无敌＋唯一M04；合法降临抽样同时命中两个目标",
+      "stimulus": "原AP一路径耗鳞条件同时给终点一鳞",
+      "classification": "SEPARATE_CONTRACT_REQUIRED",
+      "oracle_boundary": "不能直接复用AP无防护终点死亡/落位oracle，也不能套AS未用来源退款；终点鳞单独规则保留。",
+      "missing": "需要真实随机来源记录、完整前缀及两鳞联合原子/窗口核对；不是同棋双盾。",
+      "source": "rules/confirmed/H02_M04_PATH_DRAGON_SCALE_CONTINUATION_CONFIRMATION_20261018.json",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    },
+    {
+      "id": "NG11-03",
+      "category": "H10秘密宿主路径",
+      "setup": "另建H02对H10＋唯一M04，不携H21龙鳞",
+      "stimulus": "唯一路径明非将帅棋是秘密宿主；终点为无防护合法敌棋",
+      "classification": "CONDITIONAL_SOURCE_ONLY",
+      "oracle_boundary": "公开目标权限不因秘密宿主改变；实际宿主被独立消灭时真帅随死；保留已承诺原子收尾。不得据此声称H02完整交叉已批准。",
+      "missing": "H10合法准备三选一、完整32棋前缀、H02窗口和最终王安全均未证明。",
+      "source": "reviews/M04_H10_ATOMIC_DAMAGE_SOURCE_REVIEW_20261017.md",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    },
+    {
+      "id": "NG11-04",
+      "category": "H10影武者路径",
+      "setup": "先以普通M04进攻建立参照；H10宿主在路径及终点之外",
+      "stimulus": "影武者为唯一路径棋，终点无防护非将帅；比较普通进攻与后续H02刺杀",
+      "classification": "CONDITIONAL_REFERENCE_NOT_H02_PASS",
+      "oracle_boundary": "普通M04条件参照为实际宿主单一承伤、真帅回路径格、无重复碾碎、无裁决舞；H02变体独立保留未覆盖。",
+      "missing": "完整合法准备/前缀未提供；不可用参照覆盖H02与H10联合来源。",
+      "source": "rules/shared/02_CURRENT_HEROES.md#H10",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    },
+    {
+      "id": "NG11-05",
+      "category": "影武者终点",
+      "setup": "普通M04或旧H02刺杀的公开目标门禁",
+      "stimulus": "把公开影武者直接设为进攻终点",
+      "classification": "SOURCE_PERMISSION_NEGATIVE",
+      "oracle_boundary": "不得因秘密宿主另在他处而放行公开将帅终点。",
+      "missing": "运行负例UNRUN；门禁来源已明确，非新玩法候选。",
+      "source": "rules/shared/03_CURRENT_MUTATIONS.md#M04",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    },
+    {
+      "id": "NG11-06",
+      "category": "返回占格/陷阱",
+      "setup": "原H02/H21/M04限制内返回起点由本车腾空",
+      "stimulus": "声称强制返回前有另一地面棋进入起点，或加入第三英雄陷阱",
+      "classification": "MISSING_CAUSAL_SOURCE",
+      "oracle_boundary": "先要求逐事件占格/陷阱来源；不凭注入棋子证明自然可达，不修改通用返回窒息规则。",
+      "missing": "本次核查限定来源未提供中途移入者；不是全游戏不可达证明。",
+      "source": "reviews/H02_M04_RETURN_SOURCE_EXIT_ORDER_REVIEW_20261020.md",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    },
+    {
+      "id": "NG11-07",
+      "category": "飞行/河道/暗置",
+      "setup": "原确认限定正常控制明置真实地面车与明地面目标",
+      "stimulus": "把行动车改飞行，或路径/终点改河道/暗置",
+      "classification": "OUTSIDE_GUARD",
+      "oracle_boundary": "拒绝沿原AS/AP/ES oracle判PASS；飞行不能借M04获得进攻，空中/河道不计地面路径；分别追来源。",
+      "missing": "不能把修改state当来源证明；全明开局不证明对局中所有信息均公开。",
+      "source": "rules/confirmed/H02_M04_ASSASSINATION_GEOMETRY_CONFIRMATION_20261017.json",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    },
+    {
+      "id": "NG11-08",
+      "category": "控制/第二畸变",
+      "setup": "普通池暂不含M07；原NP唯一畸变M04",
+      "stimulus": "同时启用M04与M07并以随机变色解释控制变化",
+      "classification": "INVALID_MODE_AND_MUTATION_COMBINATION",
+      "oracle_boundary": "排除该fixture；其他合法英雄控制来源另查，不能据此判所有控制变化不可达。",
+      "missing": "模式政策与一畸变守门；控制专项正式测试UNRUN。",
+      "source": "modes/standard/CURRENT_RULES.md",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    },
+    {
+      "id": "NG11-09",
+      "category": "旧刺杀与新暗影步混用",
+      "setup": "旧NG11绑定10月刺杀合同；11月暗影步为独立已确认设计",
+      "stimulus": "借暗影步资格/全队三次额度补旧刺杀返回、窗口或额外行动",
+      "classification": "VERSION_SCOPE_MISMATCH",
+      "oracle_boundary": "不叠加两形态；保持旧合同/已接收证据。跨形态兼容与共享采用由其责任线处理。",
+      "missing": "新正文明确不覆盖旧刺杀；主线H02/H05影响映射未完成，非撤销新设计。",
+      "source": "../hero-design/formal/H02_SHADOW_STEP_RULE_INTEGRATION_20261109.md",
+      "execution": "UNRUN",
+      "natural_prefix": "NOT_ESTABLISHED_THIS_AUDIT"
+    }
+  ],
+  "engine_runs": 0,
+  "independent_QA": false,
+  "NG11": "OPEN",
+  "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
+  "featuresReady": false,
+  "gameplay_delta": 0
+}
