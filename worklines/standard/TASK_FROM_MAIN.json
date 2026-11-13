@@ -58,7 +58,7 @@
     "receiver_read": "UNKNOWN_FOR_THIS_DISPATCH",
     "receiver_execution": "NOT_APPLICABLE_UNTIL_CONCRETE_TRIGGER"
   },
-  "active_main_dispatch": "h10_forward_implementation_20261113",
+  "active_main_dispatch": "h10_forward_dispatch_withdrawal_20261113",
   "h10_implementation_scope_20261113": {
     "id": "MAIN-STD-H10-SCOPE-PREPARED-20261113",
     "report": "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md",
@@ -111,7 +111,7 @@
     "id": "MAIN-STD-H10-FORWARD-IMPLEMENTATION-20261113",
     "owner": "standard",
     "issued_by": "main",
-    "status": "READY_BOUNDED_ISOLATED_IMPLEMENTATION",
+    "status": "WITHDRAWN_BY_MAIN_DO_NOT_START_OR_CONTINUE",
     "date_local": "2026-11-13",
     "source_handoff_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
     "objective": "普通线直接承接原主线G4/G5的有界工程：精确H02旧刺杀/H10现行影/M04普通32棋的研究准入与王安全适配，再执行原8手及R5同批验证。交付真实草稿代码与证据，无需先等主线实现。",
@@ -207,7 +207,34 @@
       "executor_execution": "UNKNOWN",
       "effect": "NOT_YET_OBSERVED"
     },
-    "report": "worklines/main/STANDARD_FORWARD_IMPLEMENTATION_DISPATCH_20261113.md"
+    "report": "worklines/main/STANDARD_FORWARD_IMPLEMENTATION_DISPATCH_20261113.md",
+    "withdrawal": "h10_forward_dispatch_withdrawal_20261113",
+    "effective_implementation_authorization": false
   },
-  "previous_active_before_h10_forward_20261113": "h10_t0_implementation_review_20261113"
+  "previous_active_before_h10_forward_20261113": "h10_t0_implementation_review_20261113",
+  "h10_forward_dispatch_withdrawal_20261113": {
+    "id": "MAIN-STD-FORWARD-DISPATCH-WITHDRAWAL-20261113",
+    "date_local": "2026-11-13",
+    "status": "WITHDRAWN_BY_MAIN",
+    "issued_by": "main",
+    "withdrawn_task": "MAIN-STD-H10-FORWARD-IMPLEMENTATION-20261113",
+    "basis": "用户质疑为何把主线待办下放后再要求其启动普通对话；主线纠正本次不合适的任务转移，并使仓库与此前‘无需发继续’的回复一致。不是新增游戏规则决定。",
+    "effective_instruction": "撤回本次普通G4/G5工程委派。未开始则不要启动S1/S2；若已经读取或本地工作，先保全当前增量及来源，暂停该新增委派的继续实施，不删除、不重置、不强推。无需为收到撤回再制作等价报告。",
+    "implementation_owner": "main",
+    "ordinary_continuation": "已完成的17项T0及旧成果保留；普通现有本包无新独立任务，等主线具体实现或真正的新相关来源后再定向复核，不反复继续/轮询。",
+    "verified": {
+      "handoff_head": "2ea548689a14814db5c517a475f97633f451122c",
+      "new_branch": "codex/std-h10-forward-draft-20261113",
+      "new_branch_head": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+      "original_research_head": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+      "published_forward_engine_delta_found": false,
+      "forward_executor_receipt_found": false,
+      "local_unreturned_work": "UNKNOWN_NOT_TOUCHED"
+    },
+    "scope": "只纠正这次普通委派；其他工作线已有授权及未回传成果不撤销。分支仅保留为记录，不删除或改指向。",
+    "executor_read": "UNKNOWN",
+    "executor_stopped": "UNKNOWN",
+    "new_engine_changes": 0,
+    "new_tests": 0
+  }
 }

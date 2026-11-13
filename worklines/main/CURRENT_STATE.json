@@ -201,16 +201,19 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-RESULT-AND-PARALLEL-RETURNS-INTAKE-20261113",
+    "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
     "owner": "main",
-    "action": "普通G4/G5隔离实施已正式委派标准线，主线不重复编码。下一核混乱C5、半混乱PR26审查及司衡修复等最新回传正文与源码；按实际来源形成最小结果接入依赖/差分，保留H02/H05独立设计边界。",
-    "standard": {
-      "id": "MAIN-STD-H10-FORWARD-IMPLEMENTATION-20261113",
-      "task": "worklines/standard/TASK_FROM_MAIN.json#h10_forward_implementation_20261113",
-      "dependency": "实现由普通自行S1→S2；主线正式采用/集成待实际候选回传。"
+    "action": "撤回不合适的普通工程转派后，由主线承担原H02/H10/M04真实本体映射、精确准入、真帅安全和原子资格工作。需要临时并行时由主线直接管理子代理；先核未回传/并发写入避免重复，不要求用户通过普通对话启动主线工程。",
+    "parallel": {
+      "chaos": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+      "half_chaos": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+      "hero_pilot": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113"
     },
     "retained_engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
-    "constraints": "不把新提交元信息当已接收正文，不自动批准线上wire/actor政策、合并部署、模式开放或评分/NET解冻。"
+    "result_followup": "PR26已实际接入默认关闭的host内部接口；C5与半混乱新回传到达后核最小Web原请求/可信本机上下文结合。线上协商与actor连续性未完成，未自动批准新wire。",
+    "standard_status": "17项T0包完成；本次新增S1/S2委派撤回，无新独立任务，不安排空转。",
+    "parallel_returns": "混乱C5、半混乱PR26审查、司衡修复和英雄设计新回传仍需主线按来源接收，不因本次纠正撤销。",
+    "dispatch_correction": "MAIN-STD-FORWARD-DISPATCH-WITHDRAWAL-20261113"
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -3979,10 +3982,10 @@
   "standard_forward_dispatch_20261113": {
     "id": "MAIN-STD-H10-FORWARD-IMPLEMENTATION-20261113",
     "date_local": "2026-11-13",
-    "status": "ISSUED_IN_THIS_COMMIT",
+    "status": "WITHDRAWN_BY_MAIN",
     "report": "worklines/main/STANDARD_FORWARD_IMPLEMENTATION_DISPATCH_20261113.md",
     "task": "worklines/standard/TASK_FROM_MAIN.json#h10_forward_implementation_20261113",
-    "implementation_owner": "standard",
+    "implementation_owner": "main",
     "review_and_integration_owner": "main",
     "branch": "codex/std-h10-forward-draft-20261113",
     "branch_base": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
@@ -3996,7 +3999,8 @@
     "frontend_configuration": "existing project/entry reused; no new setup required",
     "scoring": "frozen",
     "NET": "paused",
-    "mode_opened": false
+    "mode_opened": false,
+    "withdrawal": "MAIN-STD-FORWARD-DISPATCH-WITHDRAWAL-20261113"
   },
   "previous_next_before_standard_delegation_20261113": {
     "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
@@ -4009,5 +4013,30 @@
     },
     "retained_engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
     "result_followup": "PR26已实际接入默认关闭的host内部接口；C5与半混乱新回传到达后核最小Web原请求/可信本机上下文结合。线上协商与actor连续性未完成，未自动批准新wire。"
+  },
+  "standard_forward_dispatch_withdrawal_20261113": {
+    "id": "MAIN-STD-FORWARD-DISPATCH-WITHDRAWAL-20261113",
+    "date_local": "2026-11-13",
+    "status": "WITHDRAWN_BY_MAIN",
+    "issued_by": "main",
+    "withdrawn_task": "MAIN-STD-H10-FORWARD-IMPLEMENTATION-20261113",
+    "basis": "用户质疑为何把主线待办下放后再要求其启动普通对话；主线纠正本次不合适的任务转移，并使仓库与此前‘无需发继续’的回复一致。不是新增游戏规则决定。",
+    "effective_instruction": "撤回本次普通G4/G5工程委派。未开始则不要启动S1/S2；若已经读取或本地工作，先保全当前增量及来源，暂停该新增委派的继续实施，不删除、不重置、不强推。无需为收到撤回再制作等价报告。",
+    "implementation_owner": "main",
+    "ordinary_continuation": "已完成的17项T0及旧成果保留；普通现有本包无新独立任务，等主线具体实现或真正的新相关来源后再定向复核，不反复继续/轮询。",
+    "verified": {
+      "handoff_head": "2ea548689a14814db5c517a475f97633f451122c",
+      "new_branch": "codex/std-h10-forward-draft-20261113",
+      "new_branch_head": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+      "original_research_head": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+      "published_forward_engine_delta_found": false,
+      "forward_executor_receipt_found": false,
+      "local_unreturned_work": "UNKNOWN_NOT_TOUCHED"
+    },
+    "scope": "只纠正这次普通委派；其他工作线已有授权及未回传成果不撤销。分支仅保留为记录，不删除或改指向。",
+    "executor_read": "UNKNOWN",
+    "executor_stopped": "UNKNOWN",
+    "new_engine_changes": 0,
+    "new_tests": 0
   }
 }
