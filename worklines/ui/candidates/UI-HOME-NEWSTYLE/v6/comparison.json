@@ -4,7 +4,7 @@
   "date_local": "2026-11-13",
   "source_branch": "ui/restart-asof-20261104-1119",
   "source_commit": "a8f9430b83483f0cda0fc0e693a64a32a06f552e",
-  "status": "four_candidates_pending_user_preference",
+  "status": "user_selected_member_4",
   "subject": "同一首页四个明显不同的排布与字体方向",
   "user_workflow_request": {
     "record_id": "UI-HOME-MULTI-VARIANT-PREFERENCE-20261113",
@@ -99,7 +99,7 @@
       "id": "UI-HOME-NEWSTYLE-v6-1",
       "number": 1,
       "name": "舒展留白",
-      "status": "candidate_created_pending_user_preference",
+      "status": "not_selected_for_current_homepage_retained",
       "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-1.txt",
       "result": {
         "number": 1,
@@ -126,13 +126,14 @@
         "observed": "标题与菜单字更纤细，字距明显放松，短淡底线，居中疏朗，四张中视觉最轻。",
         "tradeoff": "空气感强；文字存在感与醒目程度较低。"
       },
-      "user_approved": false
+      "user_approved": false,
+      "active_for_current_dialogue": false
     },
     {
       "id": "UI-HOME-NEWSTYLE-v6-2",
       "number": 2,
       "name": "紧凑聚焦",
-      "status": "candidate_created_pending_user_preference",
+      "status": "not_selected_for_current_homepage_retained",
       "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-2.txt",
       "result": {
         "number": 2,
@@ -159,13 +160,14 @@
         "observed": "标题和菜单偏左；四项菜单紧凑成组，说明入口也左对齐；菜单未压到深色岩石或客栈。",
         "tradeoff": "操作区集中，布局变化最大；全页左右视觉重量需由用户判断。"
       },
-      "user_approved": false
+      "user_approved": false,
+      "active_for_current_dialogue": false
     },
     {
       "id": "UI-HOME-NEWSTYLE-v6-3",
       "number": 3,
       "name": "画中题字",
-      "status": "candidate_created_pending_user_preference",
+      "status": "not_selected_for_current_homepage_retained",
       "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-3.txt",
       "result": {
         "number": 3,
@@ -192,13 +194,14 @@
         "observed": "标题长收笔明显，菜单书写感更强，底线呈自然弧势和干笔，整体最有笔势。",
         "tradeoff": "书写个性强；标题和墨线更抢眼，是否过于飘逸由用户判断。"
       },
-      "user_approved": false
+      "user_approved": false,
+      "active_for_current_dialogue": false
     },
     {
       "id": "UI-HOME-NEWSTYLE-v6-4",
       "number": 4,
       "name": "清晰易用",
-      "status": "candidate_created_pending_user_preference",
+      "status": "user_selected_current_homepage_visual_baseline",
       "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-4.txt",
       "result": {
         "number": 4,
@@ -225,7 +228,10 @@
         "observed": "标题与菜单字更大、更端正且较浓，底线较清楚；四张中墨色重量最大。",
         "tradeoff": "辨认更直接；画面更重，可能不如轻细版本符合用户口味。"
       },
-      "user_approved": false
+      "user_approved": true,
+      "active_for_current_dialogue": true,
+      "approval_scope": "user_selected_static_homepage_visual",
+      "selection_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json"
     }
   ],
   "display_order": [
@@ -250,8 +256,8 @@
     "UI-HOME-NEWSTYLE-v5"
   ],
   "previous_v5_rejected": false,
-  "selected_version": null,
-  "formal_page_approved": false,
+  "selected_version": "UI-HOME-NEWSTYLE-v6-4",
+  "formal_page_approved": true,
   "persistence": {
     "github_png_uploaded": false,
     "generated_images_platform_autosave": "handled_by_platform_at_turn_commit",
@@ -264,6 +270,64 @@
   "runtime": "not_run",
   "scoring": "frozen",
   "NET": "paused",
-  "next_action": "用户比较本轮1舒展留白、2紧凑聚焦、3画中题字、4清晰易用四张首页，选择、排序或组合偏好；保留v4阶段基准及v5原图，四张新候选均未批准，后续按用户偏好继续同页探索。",
-  "publication_base_commit": "6cdb152ee3ddfd4d8d685deba5edb987a5943c9b"
+  "next_action": "首页本轮已选定第4张UI-HOME-NEWSTYLE-v6-4，后续视觉工作以它为当前首页基准；用户要求继续时，先核下一页的具体既有UI内容再接续，不重问本轮选择，不自动生成首页替代稿。",
+  "publication_base_commit": "6cdb152ee3ddfd4d8d685deba5edb987a5943c9b",
+  "user_selection": {
+    "schema": "lezi.ui.explicit_image_selection.v1",
+    "record_id": "UI-HOME-V6-4-USER-SELECTED-20261113",
+    "date_local": "2026-11-13",
+    "source_branch": "ui/restart-asof-20261104-1119",
+    "source_commit": "95c8c7b15642dc71bfa8ff7057ad6acf8e0f569f",
+    "user_quote": "我选择第四张",
+    "comparison_id": "UI-HOME-NEWSTYLE-v6-comparison",
+    "comparison_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/comparison.json",
+    "selected_version": "UI-HOME-NEWSTYLE-v6-4",
+    "display_number": 4,
+    "name": "清晰易用",
+    "result": {
+      "number": 4,
+      "filename": "exec-75e9b702-5c8a-406a-af12-d6d1d7498a8f.png",
+      "bytes": 2135376,
+      "sha256": "72ece9c2f8ef2738699d3351980fb72891fd8dd1eebdee746e31c9fcb75c9adc",
+      "width": 982,
+      "height": 1602,
+      "mode": "RGB",
+      "format": "PNG"
+    },
+    "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-4.txt",
+    "status": "user_selected_current_homepage_visual_baseline",
+    "approval_scope": "user_selected_static_homepage_visual",
+    "selection_complete": true,
+    "repeat_selection_confirmation_required": false,
+    "current_homepage_visual_selected": true,
+    "production_code_or_runtime_approved": false,
+    "interpretation": "用户从已展示的四张完整首页中明确选择第四张，将其作为当前首页视觉方案。不是仅收到模糊偏好，也不是要求重新审一次；不据此声称代码、交互、设备适配或字体资产已经验收。",
+    "preserved_requirements": [
+      "已认可雪山红梅背景画风",
+      "无封闭按钮外壳",
+      "每项独立淡墨底线",
+      "无作者署名",
+      "五段现行文案",
+      "设置入口",
+      "联机灰显"
+    ],
+    "visual_character": "较大、端正、清楚的字体；墨色较有分量；菜单无封闭外壳，每项有淡墨底线；作者署名删除；联机灰显。",
+    "previous_baseline": {
+      "version": "UI-HOME-NEWSTYLE-v4",
+      "status": "historical_stage_baseline_retained_superseded_by_selected_v6_4"
+    },
+    "other_candidates_retained": true,
+    "other_candidates_deleted": false,
+    "generation_in_this_selection_step": 0,
+    "game_code_changed": false,
+    "runtime": "not_run",
+    "image_persistence": {
+      "github_png_uploaded": false,
+      "generated_images_platform_autosave": "handled_by_platform_at_turn_commit",
+      "source_prompts_and_metadata_in_repository": true,
+      "editable_layered_source_created": false
+    },
+    "next_action": "首页本轮已选定第4张UI-HOME-NEWSTYLE-v6-4，后续视觉工作以它为当前首页基准；用户要求继续时，先核下一页的具体既有UI内容再接续，不重问本轮选择，不自动生成首页替代稿。"
+  },
+  "formal_page_approval_scope": "static_homepage_visual_selection_only; no_code_or_runtime_acceptance"
 }

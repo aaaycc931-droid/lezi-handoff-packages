@@ -3,12 +3,12 @@
   "tasks": [
     {
       "id": "UI-STYLE-001",
-      "status": "four_candidates_pending_user_preference",
-      "work": "同时比较四个明显不同的首页方向",
-      "current_item": "UI-HOME-NEWSTYLE-v6-comparison",
-      "deliverable": "1舒展留白、2紧凑聚焦、3画中题字、4清晰易用四张完整首页",
-      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/comparison.json",
-      "acceptance": "用户选择/排序/组合偏好；多版本比较获授权，原有画风和功能约束保留。"
+      "status": "homepage_visual_selection_completed",
+      "work": "首页第四张已选定，后续按此视觉基准接续具体页面",
+      "current_item": "UI-HOME-NEWSTYLE-v6-4",
+      "deliverable": "已选定的首页视觉方案第4张「清晰易用」",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json",
+      "acceptance": "本轮选图已完成，不再重问；下一页先核具体既有内容，保持当前已确认视觉要求。"
     },
     {
       "id": "UI-001",
@@ -81,18 +81,28 @@
   "planned_tasks_are_not_completed_designs": true,
   "snapshot_date": "2026-11-13",
   "paused_by_user": false,
-  "resume_item": "UI-HOME-NEWSTYLE-v6-comparison",
+  "resume_item": "UI-HOME-NEWSTYLE-v6-4",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
   "handoff_requested": true,
   "automatic_resume_scheduled": false,
   "next_queue": [
     {
+      "item": "UI-HOME-NEWSTYLE-v6-4",
+      "state": "当前首页视觉方案，第4张「清晰易用」",
+      "status": "user_selected_current_homepage_visual_baseline",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json",
+      "scope": "user_selected_static_homepage_visual"
+    },
+    {
       "item": "UI-HOME-NEWSTYLE-v6-comparison",
       "state": "同一首页四个明显不同的排布与字体方向",
-      "status": "four_candidates_pending_user_preference",
+      "status": "user_selected_member_4",
       "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/comparison.json",
-      "scope": "比较字的大小、疏密、笔势、墨色及菜单布局；同一页面与功能，不是新增四个页面。"
+      "scope": "比较字的大小、疏密、笔势、墨色及菜单布局；同一页面与功能，不是新增四个页面。",
+      "selected_version": "UI-HOME-NEWSTYLE-v6-4",
+      "selection_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json",
+      "active_for_current_dialogue": false
     },
     {
       "item": "UI-HOME-NEWSTYLE-v5",
@@ -240,33 +250,11 @@
     "correction_record": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113"
   },
   "active_ui_image_task": {
-    "id": "UI-HOME-NEWSTYLE-v6-comparison",
-    "status": "four_candidates_pending_user_preference",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/comparison.json",
-    "members": [
-      {
-        "id": "UI-HOME-NEWSTYLE-v6-1",
-        "number": 1,
-        "name": "舒展留白"
-      },
-      {
-        "id": "UI-HOME-NEWSTYLE-v6-2",
-        "number": 2,
-        "name": "紧凑聚焦"
-      },
-      {
-        "id": "UI-HOME-NEWSTYLE-v6-3",
-        "number": 3,
-        "name": "画中题字"
-      },
-      {
-        "id": "UI-HOME-NEWSTYLE-v6-4",
-        "number": 4,
-        "name": "清晰易用"
-      }
-    ],
-    "retained_comparison_baseline": "UI-HOME-NEWSTYLE-v4",
-    "next_action": "用户比较本轮1舒展留白、2紧凑聚焦、3画中题字、4清晰易用四张首页，选择、排序或组合偏好；保留v4阶段基准及v5原图，四张新候选均未批准，后续按用户偏好继续同页探索。"
+    "id": "UI-HOME-NEWSTYLE-v6-4",
+    "status": "user_selected_current_homepage_visual_baseline",
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json",
+    "comparison_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/comparison.json",
+    "next_action": "首页本轮已选定第4张UI-HOME-NEWSTYLE-v6-4，后续视觉工作以它为当前首页基准；用户要求继续时，先核下一页的具体既有UI内容再接续，不重问本轮选择，不自动生成首页替代稿。"
   },
   "image_review_workflow_preference": {
     "record_id": "UI-HOME-MULTI-VARIANT-PREFERENCE-20261113",
