@@ -3,7 +3,7 @@
   "owner": "hero-design",
   "updated_on_local": "2026-11-13",
   "status": "active_phase_checkpoint",
-  "source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
+  "source_commit": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc",
   "followup_source_commit": "747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a",
   "current_task_ids": [
     "MAIN-COORD-20261113-hero-design",
@@ -20,15 +20,18 @@
     "H21 Invincible source-conditioned four-prayer same-capture fixture with changed declared fatal contributors",
     "H12 explicit three-victim batch fixture and exclusion from eligible H05 previous history",
     "Joint lethal settlement/shield and batch barrier contracts with synthetic scope retained",
-    "A/B conditional observable comparison without claiming a reachable Q-RS2 early sample"
+    "A/B conditional observable comparison without claiming a reachable Q-RS2 early sample",
+    "Added unrelated H21 buff-change control against whole-state equality",
+    "Separated matching observations from approved causal equivalence and reset policy",
+    "Completed cross-version source/identity/phase review checklist with explicit unknowns"
   ],
   "validation": {
-    "local_model_checks": 24,
-    "result": "PASS_LOCAL_MODEL_ONLY",
+    "local_model_checks": 8,
+    "result": "PASS_LOCAL_RESEARCH_ONLY",
     "source_engine_runs": 0,
     "independent_QA": false,
-    "results": "worklines/hero-design/research/H05_BATCH_AND_JOINT_CAUSE_RESULTS.json",
-    "prior_19_checks": "previous phase result retained at research/H05_CAPTURE_CAUSAL_BOUNDARY_RESULTS.json; not newly counted or rerun"
+    "results": "worklines/hero-design/research/H05_CAPTURE_MATCHING_RESULTS.json",
+    "scope": "4 source-conditioned geometry/projection checks + 4 classifier guards; prior 19/24 not rerun or accumulated"
   },
   "unresolved": {
     "capture_semantic_policy": "A/B_UNCONFIRMED",
@@ -38,7 +41,7 @@
     "H21_whisper_batch": "same source atom confirmed; explicit simultaneous batch not established",
     "changed_contributor_equivalence": "UNRESOLVED"
   },
-  "next_action": "分开来源确实相同与龙爪来源集合改变两类重演，整理跨版本捕获匹配的必要条件和反例；A/B及共同致死分组仍不代定。Q-RS2继续先找真实合法早采样来源，不用合成插入冒充可达。",
+  "next_action": "同因果匹配核对项阶段已完成；下一核H05失败候选中的新死亡不得污染外置账本，对照合法提交后的不利死亡不能退款，补具体来源与承诺边界。A/B、批次倍数、Q-RS2继续保留未决，不增加同构断言。",
   "confirmed_design_source": "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
   "preserved_confirmations": [
     "长将B",
@@ -64,10 +67,10 @@
   "continuity_note": "No prior hero-design CURRENT_STATE/READ_RECEIPTS/RETURN_TO_MAIN existed in initial recursive tree; created for this real phase, not backfilled historical adoption.",
   "publication": {
     "destination_branch": "main",
-    "authorization_source": "worklines/hero-design/CURRENT_STATE.json#main_write_authorization_20261113",
-    "research_source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
-    "delivery": "latest parent tree + expected_sha + force=false; actual commit/readback evidence external to this file; receiver adoption unknown",
-    "publication_parent": "db9dbf2967d64ad0d38b5e35074b19e61e9f4a5e"
+    "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
+    "source_pending_commit": "d47856fcd8b9058658f30e9703e77f07d404bdce",
+    "publication_parent": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+    "delivery": "publish prior reviewed seven-file increment plus explicit long-term authorization; success requires ref update and readback"
   },
   "publication_history": [
     {
@@ -83,6 +86,19 @@
       "source_draft_commit": "5d819517558c6ecc1097a80b2d385dc89c724b70",
       "publication_parent": "79007976849db7dc364f3cc8b099964b9e08de7b",
       "delivery": "本轮按项目负责人明确授权提交main；实际成功以Git提交与远端复读为准，主线接收采用仍由其回执证明"
+    },
+    {
+      "destination_branch": "main",
+      "authorization_source": "worklines/hero-design/CURRENT_STATE.json#main_write_authorization_20261113",
+      "research_source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
+      "delivery": "latest parent tree + expected_sha + force=false; actual commit/readback evidence external to this file; receiver adoption unknown",
+      "publication_parent": "db9dbf2967d64ad0d38b5e35074b19e61e9f4a5e"
+    },
+    {
+      "commit": "d47856fcd8b9058658f30e9703e77f07d404bdce",
+      "main_update": "BLOCKED_BY_AUTOMATIC_APPROVAL_REVIEW",
+      "reason": "automatic review did not recognize prior authorization for default branch mutation",
+      "resolution": "user now explicitly confirms long-term permission; this publication supersedes pending delivery, not gameplay policy"
     }
   ],
   "main_write_authorization_20261113": {
@@ -97,9 +113,18 @@
       "preserve other worklines and main-owned coordination",
       "not mainline appointment or receiver adoption",
       "no new gameplay approval, engine merge, deployment, APK, scoring thaw or NET resume"
-    ]
+    ],
+    "long_term_confirmation": {
+      "confirmed_on_local": "2026-11-13",
+      "user_quote": "我长期批准本英雄设计支线，将更新内容提交到main。",
+      "source": "current hero-design conversation, explicit user message",
+      "validity": "长期有效，直至用户修改或撤销；同范围接续继承，无须逐轮重复申请",
+      "scope": "本英雄设计支线职责内的研究、设计、导航、状态与回传更新，提交至 aaaycc931-droid/lezi-handoff-packages main",
+      "concurrency": "最新父树、expected_sha、force=false；保留其他支线并发成果",
+      "limits": "仅写入权限；不等于待决玩法批准、主线任命、工程合并部署或模式放行"
+    }
   },
-  "previous_phase_source_commit": "83b6d6fdf7ae48846f1f8b8e78054905703ed7b0",
+  "previous_phase_source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
   "previous_report": "worklines/hero-design/H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md",
   "current_scope_note": "用户明确将自主英雄实验交给主线，本对话继续旧hero-design；不进入hero-pilot。",
   "source_correction": {
@@ -107,5 +132,6 @@
     "scope": "H21 same atom is not proof of explicit same batch",
     "gameplay_delta": 0,
     "prior_geometry_evidence_retained": true
-  }
+  },
+  "report_section": "8"
 }

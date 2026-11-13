@@ -1,0 +1,476 @@
+{
+  "status": "PASS_LOCAL_RESEARCH_ONLY",
+  "checks": 8,
+  "cases": [
+    "all-three-pools-are-four-friendly-nonkings",
+    "three-variants-share-geometric-capture-and-safe-30-piece-board",
+    "unrelated-buff-change-breaks-global-state-equality",
+    "actor-claw-change-breaks-capture-source-projection",
+    "matching-projection-is-not-causal-equivalence-approval",
+    "changed-source-does-not-automatically-approve-extra-reset",
+    "missing-source-is-unknown-not-same",
+    "new-execution-label-alone-does-not-prove-new-cause"
+  ],
+  "runtime": "v24.22.1",
+  "variants": {
+    "old": {
+      "buffs": [
+        "b-R-1",
+        "b-A-4",
+        "b-A-6",
+        "b-R-9"
+      ],
+      "board": [
+        [
+          "1,1",
+          "r-R-1"
+        ],
+        [
+          "1,10",
+          "b-R-1"
+        ],
+        [
+          "1,4",
+          "r-P-1"
+        ],
+        [
+          "1,7",
+          "b-P-1"
+        ],
+        [
+          "2,1",
+          "r-H-2"
+        ],
+        [
+          "2,3",
+          "r-C-2"
+        ],
+        [
+          "2,8",
+          "b-C-2"
+        ],
+        [
+          "3,1",
+          "r-E-3"
+        ],
+        [
+          "3,10",
+          "b-E-3"
+        ],
+        [
+          "3,8",
+          "b-H-2"
+        ],
+        [
+          "4,1",
+          "r-A-4"
+        ],
+        [
+          "4,10",
+          "b-A-4"
+        ],
+        [
+          "5,1",
+          "r-K-5"
+        ],
+        [
+          "5,10",
+          "b-K-5"
+        ],
+        [
+          "5,4",
+          "r-P-5"
+        ],
+        [
+          "5,7",
+          "b-P-5"
+        ],
+        [
+          "6,1",
+          "r-A-6"
+        ],
+        [
+          "6,10",
+          "b-A-6"
+        ],
+        [
+          "7,1",
+          "r-E-7"
+        ],
+        [
+          "7,10",
+          "b-E-7"
+        ],
+        [
+          "7,5",
+          "r-P-7"
+        ],
+        [
+          "7,7",
+          "b-P-7"
+        ],
+        [
+          "8,1",
+          "r-H-8"
+        ],
+        [
+          "8,10",
+          "b-H-8"
+        ],
+        [
+          "8,3",
+          "r-C-8"
+        ],
+        [
+          "8,8",
+          "b-C-8"
+        ],
+        [
+          "9,1",
+          "r-R-9"
+        ],
+        [
+          "9,10",
+          "b-R-9"
+        ],
+        [
+          "9,4",
+          "r-P-9"
+        ],
+        [
+          "9,7",
+          "b-P-9"
+        ]
+      ],
+      "projection": {
+        "opportunity": "black5",
+        "actor": "b-H-2",
+        "victim": "r-P-3",
+        "phase": "main",
+        "action": "ordinary-I-attack",
+        "from": [
+          2,
+          10
+        ],
+        "to": [
+          3,
+          8
+        ],
+        "declaredSources": [
+          "ordinary-endpoint"
+        ]
+      },
+      "safe": true
+    },
+    "unrelated": {
+      "buffs": [
+        "b-R-1",
+        "b-A-4",
+        "b-A-6",
+        "b-H-8"
+      ],
+      "board": [
+        [
+          "1,1",
+          "r-R-1"
+        ],
+        [
+          "1,10",
+          "b-R-1"
+        ],
+        [
+          "1,4",
+          "r-P-1"
+        ],
+        [
+          "1,7",
+          "b-P-1"
+        ],
+        [
+          "2,1",
+          "r-H-2"
+        ],
+        [
+          "2,3",
+          "r-C-2"
+        ],
+        [
+          "2,8",
+          "b-C-2"
+        ],
+        [
+          "3,1",
+          "r-E-3"
+        ],
+        [
+          "3,10",
+          "b-E-3"
+        ],
+        [
+          "3,8",
+          "b-H-2"
+        ],
+        [
+          "4,1",
+          "r-A-4"
+        ],
+        [
+          "4,10",
+          "b-A-4"
+        ],
+        [
+          "5,1",
+          "r-K-5"
+        ],
+        [
+          "5,10",
+          "b-K-5"
+        ],
+        [
+          "5,4",
+          "r-P-5"
+        ],
+        [
+          "5,7",
+          "b-P-5"
+        ],
+        [
+          "6,1",
+          "r-A-6"
+        ],
+        [
+          "6,10",
+          "b-A-6"
+        ],
+        [
+          "7,1",
+          "r-E-7"
+        ],
+        [
+          "7,10",
+          "b-E-7"
+        ],
+        [
+          "7,5",
+          "r-P-7"
+        ],
+        [
+          "7,7",
+          "b-P-7"
+        ],
+        [
+          "8,1",
+          "r-H-8"
+        ],
+        [
+          "8,10",
+          "b-H-8"
+        ],
+        [
+          "8,3",
+          "r-C-8"
+        ],
+        [
+          "8,8",
+          "b-C-8"
+        ],
+        [
+          "9,1",
+          "r-R-9"
+        ],
+        [
+          "9,10",
+          "b-R-9"
+        ],
+        [
+          "9,4",
+          "r-P-9"
+        ],
+        [
+          "9,7",
+          "b-P-9"
+        ]
+      ],
+      "projection": {
+        "opportunity": "black5",
+        "actor": "b-H-2",
+        "victim": "r-P-3",
+        "phase": "main",
+        "action": "ordinary-I-attack",
+        "from": [
+          2,
+          10
+        ],
+        "to": [
+          3,
+          8
+        ],
+        "declaredSources": [
+          "ordinary-endpoint"
+        ]
+      },
+      "safe": true
+    },
+    "claw": {
+      "buffs": [
+        "b-R-1",
+        "b-A-4",
+        "b-A-6",
+        "b-H-2"
+      ],
+      "board": [
+        [
+          "1,1",
+          "r-R-1"
+        ],
+        [
+          "1,10",
+          "b-R-1"
+        ],
+        [
+          "1,4",
+          "r-P-1"
+        ],
+        [
+          "1,7",
+          "b-P-1"
+        ],
+        [
+          "2,1",
+          "r-H-2"
+        ],
+        [
+          "2,3",
+          "r-C-2"
+        ],
+        [
+          "2,8",
+          "b-C-2"
+        ],
+        [
+          "3,1",
+          "r-E-3"
+        ],
+        [
+          "3,10",
+          "b-E-3"
+        ],
+        [
+          "3,8",
+          "b-H-2"
+        ],
+        [
+          "4,1",
+          "r-A-4"
+        ],
+        [
+          "4,10",
+          "b-A-4"
+        ],
+        [
+          "5,1",
+          "r-K-5"
+        ],
+        [
+          "5,10",
+          "b-K-5"
+        ],
+        [
+          "5,4",
+          "r-P-5"
+        ],
+        [
+          "5,7",
+          "b-P-5"
+        ],
+        [
+          "6,1",
+          "r-A-6"
+        ],
+        [
+          "6,10",
+          "b-A-6"
+        ],
+        [
+          "7,1",
+          "r-E-7"
+        ],
+        [
+          "7,10",
+          "b-E-7"
+        ],
+        [
+          "7,5",
+          "r-P-7"
+        ],
+        [
+          "7,7",
+          "b-P-7"
+        ],
+        [
+          "8,1",
+          "r-H-8"
+        ],
+        [
+          "8,10",
+          "b-H-8"
+        ],
+        [
+          "8,3",
+          "r-C-8"
+        ],
+        [
+          "8,8",
+          "b-C-8"
+        ],
+        [
+          "9,1",
+          "r-R-9"
+        ],
+        [
+          "9,10",
+          "b-R-9"
+        ],
+        [
+          "9,4",
+          "r-P-9"
+        ],
+        [
+          "9,7",
+          "b-P-9"
+        ]
+      ],
+      "projection": {
+        "opportunity": "black5",
+        "actor": "b-H-2",
+        "victim": "r-P-3",
+        "phase": "main",
+        "action": "ordinary-I-attack",
+        "from": [
+          2,
+          10
+        ],
+        "to": [
+          3,
+          8
+        ],
+        "declaredSources": [
+          "ordinary-endpoint",
+          "dragon-claw"
+        ]
+      },
+      "safe": true
+    }
+  },
+  "sourceEngineRuns": 0,
+  "independentQA": false,
+  "limits": [
+    "prayer/descent source-modeled",
+    "no full causal equivalence key",
+    "no actual RNG",
+    "no mode admission",
+    "no reset multiplicity policy",
+    "no legal Q-RS2 early sample"
+  ],
+  "A_B": "UNCONFIRMED"
+}
