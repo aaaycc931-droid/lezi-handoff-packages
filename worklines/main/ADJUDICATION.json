@@ -5273,7 +5273,7 @@
         "CONF-THREE-MODE-H10-LOCATOR-20261014",
         "CONF-H10-FIRST-UNIFORM-THREE-20261113"
       ],
-      "status": "confirmed_design_not_implemented",
+      "status": "confirmed_design_partial_T0_research_implementation_not_full_adaptation",
       "modes": [
         "original_jieqi",
         "standard_xiangqi",
@@ -5299,7 +5299,15 @@
         "user_quote": "1",
         "policy": "uniformly sample three distinct eligible stable bodies without replacement",
         "implementation_scope": "ordinary H02 old assassination / H10 / M04 only, >=3 eligible candidates, timely choice, no other hero preparation interaction",
-        "status": "confirmed_not_implemented"
+        "status": "confirmed_ge3_T0_implementation_published_not_product_acceptance"
+      },
+      "implementation_20261113": {
+        "engine_commit": "4ae702ea33bfaf728cc7ea78f092975bdc68b342",
+        "pr": 25,
+        "report": "worklines/main/H10_PREPARATION_IMPLEMENTATION_20261113.md",
+        "scope": "only ordinary H02 old assassination / H10 / M04 T0 preparation, >=3 eligible bodies, timely choice",
+        "not_implemented": "formal prefix/R5 qualification, whole H10 adaptation, product UI/wire and unresolved failure policies",
+        "tests": 102
       }
     },
     "H05_M07": {

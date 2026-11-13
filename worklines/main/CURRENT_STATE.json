@@ -202,8 +202,14 @@
   "NET": "paused",
   "next_action": {
     "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
-    "action": "依据PR24把有证据的命令提交/记账边界形成可选内部生产适配草稿，先不接新线上消息；处理代次/协商/actor连续性具体差分。普通H10待首次采样选择后按范围推进；不冻结其他主线/支线。",
-    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030"
+    "owner": "main",
+    "action": "接入C4原请求保存的已报边界，核半混乱PR24新反例回传（如已发布），在现有授权内形成可选内部权威提交/结果记录适配草稿；新wire/native代次/协商仍按实际范围另定，不自动批准。",
+    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "independent_H10_next": {
+      "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+      "action": "普通线独立复核PR25 T0。主线另核原8手与H02/H10/M04的真帅安全/闭合family及O0—O9资格，先保留R1/R2静态风险层级，不伪造宿主或以T0通过代R5。",
+      "does_not_block_standard_T0_review": true
+    }
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -220,7 +226,7 @@
   "publication_parent_commit": "562c41dadbbbef67ba0612b1b32791321d5c8c38",
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
-  "current_phase": "MAIN-BLUETOOTH-SEND-FAILURE-ACCOUNTING-20261030",
+  "current_phase": "MAIN-H10-T0-CHECKPOINT-AND-RESULT-BOUNDARY-20261113",
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -3803,5 +3809,84 @@
     "engine_commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
     "full_source_review": false,
     "adopted_into_main": false
+  },
+  "h10_preparation_implementation_20261113": {
+    "id": "MAIN-H10-T0-IMPLEMENTATION-20261113",
+    "date_local": "2026-11-13",
+    "source_head": "732ce2c6b0fd17f928303f22e544d92d532ffd33",
+    "confirmation": "CONF-H10-FIRST-UNIFORM-THREE-20261113",
+    "user_quote": "1",
+    "status": "BOUNDED_T0_IMPLEMENTED_PUBLISHED_READBACK_NOT_MODE_ACCEPTANCE",
+    "report": "worklines/main/H10_PREPARATION_IMPLEMENTATION_20261113.md",
+    "engine": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "commit": "4ae702ea33bfaf728cc7ea78f092975bdc68b342",
+      "branch": "codex/main-h10-first-preparation-20261113",
+      "draft_pr": 25
+    },
+    "verification": {
+      "tests": 102,
+      "passed": 102,
+      "failed": 0,
+      "new_H10": 14,
+      "existing_NP32": 39,
+      "existing_room_forms_BT": 49,
+      "readback_files": 13,
+      "independent_QA": false,
+      "UI_or_wire": false,
+      "original_R1_R5": false
+    },
+    "gaps": {
+      "G1": "REAL_ROOM_T0_SUCCESS_PATH",
+      "G2": "UNIFORM_DISTINCT_GE3_IMPLEMENTED_SHORTAGE_POLICIES_OPEN",
+      "G3": "SERVER_THREE_PROJECTIONS_AND_CLEARING_ONLY_UI_DELIVERY_UNRUN",
+      "G4": "SOURCE_BOUND_T0_ONLY_FORMAL_PREFIX_NOT_ADMITTED",
+      "G5": "OPEN_TRUE_ROYAL_AND_R5_ATOMIC_UNRUN"
+    },
+    "standard_dispatch": "MAIN-STD-H10-T0-IMPLEMENTATION-REVIEW-20261113",
+    "main_next": {
+      "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+      "owner": "main",
+      "action": "接入C4原请求保存的已报边界，核半混乱PR24新反例回传（如已发布），在现有授权内形成可选内部权威提交/结果记录适配草稿；新wire/native代次/协商仍按实际范围另定，不自动批准。",
+      "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+      "independent_H10_next": {
+        "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+        "action": "普通线独立复核PR25 T0。主线另核原8手与H02/H10/M04的真帅安全/闭合family及O0—O9资格，先保留R1/R2静态风险层级，不伪造宿主或以T0通过代R5。",
+        "does_not_block_standard_T0_review": true
+      }
+    },
+    "protects": "评分原账本冻结/NET暂停/featuresReady=false；未合并、部署、APK或采用整套风V3.1/新H02"
+  },
+  "previous_next_before_h10_preparation_20261113": {
+    "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+    "action": "依据PR24把有证据的命令提交/记账边界形成可选内部生产适配草稿，先不接新线上消息；处理代次/协商/actor连续性具体差分。普通H10待首次采样选择后按范围推进；不冻结其他主线/支线。",
+    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030"
+  },
+  "chaos_c4_report_intake_20261113": {
+    "id": "MAIN-CH-C4-REPORT-INTAKE-20261113",
+    "source_commit": "811c93e75915f759b5dea558767d2a3830c0076f",
+    "engine_commit": "5cb3df526e1d41d60332b2b1f5c946f41126a720",
+    "read_scope": [
+      "CH_PENDING_REQUEST_PRESERVATION_20261113.md全文",
+      "RETURN_TO_MAIN.latest_receiver_phase.c4_pending_request_20261113完整对象",
+      "提交差分文件名"
+    ],
+    "adopted": [
+      "C4已报完成的阶段状态与16/16支线自测报告层级",
+      "原请求内存与UI清理分离、缺scope仍unknown、不得自动重发、严格raw绑定和FIFO边界作为后续主线设计输入"
+    ],
+    "not_adopted": [
+      "本轮未读完/重跑C4代码测试原始证据，不能冒充主线独立实证或正式QA",
+      "生产接入、持久化、可信代次/跨重连身份、JSON跨语言规范化已完成"
+    ],
+    "reported_tests": 16,
+    "main_reruns": 0,
+    "next": "C4本包已完成，无需重交/重跑；主线推进真实接入，未来具体新源再派发。"
+  },
+  "concurrent_H05_observation_20261113": {
+    "commit": "732ce2c6b0fd17f928303f22e544d92d532ffd33",
+    "scope": "commit/file-list only; new H05 body/probes not semantically received this stage",
+    "status": "PRESERVED_NOT_OVERRIDDEN_PENDING_TARGETED_INTAKE"
   }
 }

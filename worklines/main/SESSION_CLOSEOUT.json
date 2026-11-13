@@ -71,23 +71,15 @@
     }
   },
   "next": {
-    "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
-    "action": "核未知行动跨断连/重连的真实来源与可达时序、各动作幂等和冲突政策，再形成兼容的当前请求正式结果核对方案。",
-    "basis": "本轮真实JVM完整帧/flush故障可产生权威已接受而本机unknown；首写/半行则未接受。既有断连/重连会清UI等待，但不是旧行动接受/拒绝/duplicate凭据。",
-    "requirements": [
-      "先恢复单I/O执行器、原生/主线程回调、Web连接状态及真实动作来源，区分自然可达与仅反射能构造的竞态。",
-      "核不同动作已有actionId/去重/拒绝/冲突和来源，不能套用走棋去重覆盖无ID的其他动作；未知行动不自动重放/补交。",
-      "明确新旧桥/新旧v2端兼容与降级；如需消息/回执语义变化先给明确方案和真实差分，不静默把pong、written、重连或新snapshot当接受ACK。",
-      "保留PR20最新已提交视图、PR21等待关联和本轮流隔离/checked未知防重试。继续只做已准入jieqi离线源与真实函数，Android/radio/完整DOM/设备和独立QA仍未验。"
-    ],
-    "secondary": [
-      "半混乱/普通产品门禁、原56完整义务与64正式验收仍0或未验。普通NG11、暗子来源、三态消费者和其他分支保持。",
-      "评分隔离检查本轮首轮1失败、孤立21/最终935通过；根因未证，评分源/预算不改，不自动恢复评分优化。"
-    ],
-    "separate_routes": [
-      "三线工作稿/确认/实际采用、山风/UI/H03/旧owner包保护。",
-      "评分及原账本冻结、NET暂停，不合并/部署/重复APK。"
-    ]
+    "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+    "owner": "main",
+    "action": "接入C4原请求保存的已报边界，核半混乱PR24新反例回传（如已发布），在现有授权内形成可选内部权威提交/结果记录适配草稿；新wire/native代次/协商仍按实际范围另定，不自动批准。",
+    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "independent_H10_next": {
+      "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+      "action": "普通线独立复核PR25 T0。主线另核原8手与H02/H10/M04的真帅安全/闭合family及O0—O9资格，先保留R1/R2静态风险层级，不伪造宿主或以T0通过代R5。",
+      "does_not_block_standard_T0_review": true
+    }
   },
   "concurrent_protection": {
     "base_of_previous_main_publication": "c40de8c60b9c8eff89fe0206783d8659a401612e",
@@ -455,7 +447,7 @@
     },
     "resume_prompt": "继续《乐子象棋》主线。先核最新HEAD，读CURRENT_STATE.json#standard_np32、NP32_PROGRESS.json和MAIN_NP32_REPORT.md。PR15草稿680966f基于PR14，原普通32棋AS/AP/ES三个条件索引流前缀已真实执行37请求，37闭合+37正常结束后观察、12H21抽取receipt；39新增/51文件749项相关检查通过，14路径远端复读、541旧blob保持。owner-only原始轨迹已保存，按精确文件名lezi-main-np32-evidence-20261028.zip恢复；不是生产随机采样或正式普通模式资格化。下一MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028，对齐限定公开合法走法/威胁/终局查询与已闭合权威，隔离真实RNG和状态副作用。普通线新接收任务已发布，实际采用仍待其线。半混乱原64/210及56视图缺口、三线/山风/UI/H03都保留，评分冻结、NET暂停；不重复APK、不合并，阶段完成增量写回并复读。"
   },
-  "latest_continuation": "session_closeout_20261030",
+  "latest_continuation": "h10_preparation_implementation_20261113",
   "continuation_public_query_20261028": {
     "date_local": "2026-10-28",
     "source_handoff_head": "72dc9b59b961529c60200e37e0538a80d3312e3d",
@@ -1886,5 +1878,73 @@
       "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030"
     },
     "session_status": "CHECKPOINT_NOT_AUTOMATIC_CLOSE"
+  },
+  "h10_preparation_implementation_20261113": {
+    "id": "MAIN-H10-T0-IMPLEMENTATION-20261113",
+    "date_local": "2026-11-13",
+    "source_head": "732ce2c6b0fd17f928303f22e544d92d532ffd33",
+    "confirmation": "CONF-H10-FIRST-UNIFORM-THREE-20261113",
+    "user_quote": "1",
+    "status": "BOUNDED_T0_IMPLEMENTED_PUBLISHED_READBACK_NOT_MODE_ACCEPTANCE",
+    "report": "worklines/main/H10_PREPARATION_IMPLEMENTATION_20261113.md",
+    "engine": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "commit": "4ae702ea33bfaf728cc7ea78f092975bdc68b342",
+      "branch": "codex/main-h10-first-preparation-20261113",
+      "draft_pr": 25
+    },
+    "verification": {
+      "tests": 102,
+      "passed": 102,
+      "failed": 0,
+      "new_H10": 14,
+      "existing_NP32": 39,
+      "existing_room_forms_BT": 49,
+      "readback_files": 13,
+      "independent_QA": false,
+      "UI_or_wire": false,
+      "original_R1_R5": false
+    },
+    "gaps": {
+      "G1": "REAL_ROOM_T0_SUCCESS_PATH",
+      "G2": "UNIFORM_DISTINCT_GE3_IMPLEMENTED_SHORTAGE_POLICIES_OPEN",
+      "G3": "SERVER_THREE_PROJECTIONS_AND_CLEARING_ONLY_UI_DELIVERY_UNRUN",
+      "G4": "SOURCE_BOUND_T0_ONLY_FORMAL_PREFIX_NOT_ADMITTED",
+      "G5": "OPEN_TRUE_ROYAL_AND_R5_ATOMIC_UNRUN"
+    },
+    "standard_dispatch": "MAIN-STD-H10-T0-IMPLEMENTATION-REVIEW-20261113",
+    "main_next": {
+      "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+      "owner": "main",
+      "action": "接入C4原请求保存的已报边界，核半混乱PR24新反例回传（如已发布），在现有授权内形成可选内部权威提交/结果记录适配草稿；新wire/native代次/协商仍按实际范围另定，不自动批准。",
+      "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+      "independent_H10_next": {
+        "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+        "action": "普通线独立复核PR25 T0。主线另核原8手与H02/H10/M04的真帅安全/闭合family及O0—O9资格，先保留R1/R2静态风险层级，不伪造宿主或以T0通过代R5。",
+        "does_not_block_standard_T0_review": true
+      }
+    },
+    "protects": "评分原账本冻结/NET暂停/featuresReady=false；未合并、部署、APK或采用整套风V3.1/新H02",
+    "session_status": "STAGE_CHECKPOINT_NOT_AUTO_CLOSE"
+  },
+  "previous_next_before_h10_preparation_20261113": {
+    "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "action": "核未知行动跨断连/重连的真实来源与可达时序、各动作幂等和冲突政策，再形成兼容的当前请求正式结果核对方案。",
+    "basis": "本轮真实JVM完整帧/flush故障可产生权威已接受而本机unknown；首写/半行则未接受。既有断连/重连会清UI等待，但不是旧行动接受/拒绝/duplicate凭据。",
+    "requirements": [
+      "先恢复单I/O执行器、原生/主线程回调、Web连接状态及真实动作来源，区分自然可达与仅反射能构造的竞态。",
+      "核不同动作已有actionId/去重/拒绝/冲突和来源，不能套用走棋去重覆盖无ID的其他动作；未知行动不自动重放/补交。",
+      "明确新旧桥/新旧v2端兼容与降级；如需消息/回执语义变化先给明确方案和真实差分，不静默把pong、written、重连或新snapshot当接受ACK。",
+      "保留PR20最新已提交视图、PR21等待关联和本轮流隔离/checked未知防重试。继续只做已准入jieqi离线源与真实函数，Android/radio/完整DOM/设备和独立QA仍未验。"
+    ],
+    "secondary": [
+      "半混乱/普通产品门禁、原56完整义务与64正式验收仍0或未验。普通NG11、暗子来源、三态消费者和其他分支保持。",
+      "评分隔离检查本轮首轮1失败、孤立21/最终935通过；根因未证，评分源/预算不改，不自动恢复评分优化。"
+    ],
+    "separate_routes": [
+      "三线工作稿/确认/实际采用、山风/UI/H03/旧owner包保护。",
+      "评分及原账本冻结、NET暂停，不合并/部署/重复APK。"
+    ]
   }
 }

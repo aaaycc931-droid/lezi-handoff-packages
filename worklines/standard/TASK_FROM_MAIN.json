@@ -58,7 +58,7 @@
     "receiver_read": "UNKNOWN_FOR_THIS_DISPATCH",
     "receiver_execution": "NOT_APPLICABLE_UNTIL_CONCRETE_TRIGGER"
   },
-  "active_main_dispatch": "unblock_coordination_20261113",
+  "active_main_dispatch": "h10_t0_implementation_review_20261113",
   "h10_implementation_scope_20261113": {
     "id": "MAIN-STD-H10-SCOPE-PREPARED-20261113",
     "report": "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md",
@@ -66,5 +66,44 @@
     "implementation_delivered": false,
     "action": "本轮只形成具体实施范围并回核主线原确认not_decided；没有新普通源码或运行授权，不触发等价接收报告。保留现有等待实际差分的断点。",
     "receiver_read": "UNKNOWN"
+  },
+  "h10_t0_implementation_review_20261113": {
+    "id": "MAIN-STD-H10-T0-IMPLEMENTATION-REVIEW-20261113",
+    "owner": "standard",
+    "issued_by": "main",
+    "status": "READY_CONCRETE_CODE_AND_BOUNDED_EXECUTION_SCOPE",
+    "source_handoff_head": "732ce2c6b0fd17f928303f22e544d92d532ffd33",
+    "engine": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "commit": "4ae702ea33bfaf728cc7ea78f092975bdc68b342",
+      "branch": "codex/main-h10-first-preparation-20261113",
+      "draft_pr": 25
+    },
+    "inputs": [
+      "worklines/main/H10_PREPARATION_IMPLEMENTATION_20261113.md",
+      "worklines/main/confirmations/H10_FIRST_UNIFORM_THREE_20261113.json",
+      "本线既有G1—G5调用链/8手前缀/O0—O9合同（复用，不重交）",
+      "引擎固定PR25的review/standard-h10-preparation/README.md、MANIFEST.json、ACTUAL_T0.json、TESTS.tap与实际差分"
+    ],
+    "steps": [
+      "先保存尚未回传成果，核最新HEAD及PR25；对实际新差分逐项核G1、G2>=3成功路径、G3三投影、G4仅T0的准确范围。核确认原件，旧sampling pending不再有效。",
+      "允许在固定PR25本地副本运行tests/standard-h10-preparation.test.ts这14项和真实T0 driver；用本线执行记录区分主线102项报告与本线实际结果，不必重跑NP32/旧102全套或重建APK。",
+      "需要新增反例时仅新增自己的研究测试/脚本，优先候选本体/拒绝副作用/投影清除/范围逃逸；禁止改主线生产源码或为运行八手前缀扩大能力。",
+      "逐项回传已核/未核及具体冲突。G3实际界面/送达、G4正式前缀资格、G5王安全和R5原子仍开放；不把C0/C1当原A/B。没有新风险完成一次有界复核即回传，不循环自审。"
+    ],
+    "authorization": "本任务明确授权上述离线真实T0运行与自身研究测试。属于主线已获准技术实施/协调范围，不是普通模式开放、共享规则新采用、线上协议、合并或部署许可。",
+    "write_scope": {
+      "handoff": "仅worklines/standard/本线增量与实际回执；不回写主线接收或其他线状态",
+      "engine": "可从固定PR25建立codex/std-h10-preparation-review-20261113；只新增tests/research/std-h10-*、scripts/research/std-h10-*、review/std-h10-preparation/*，保留已有分支成果；不修改src/web/android/模式门禁"
+    },
+    "dependence": "本任务可立即独立执行，不等主线结果协议、C4接收或G5完成；研究环境缺失则先做来源与投影核对，明确真实阻断。",
+    "protected": [
+      "原31/直接共享13口径不自行改算；本次首次采样新增确认另列",
+      "旧H02刺杀与新暗影步、现行H10与风V3.1分层",
+      "不足/超时/失格政策未定；评分原账本冻结；NET暂停；featuresReady=false"
+    ],
+    "receiver_read": "UNKNOWN",
+    "receiver_execution": "UNKNOWN"
   }
 }
