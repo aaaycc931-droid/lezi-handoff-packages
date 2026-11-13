@@ -123,5 +123,50 @@
     "独立UI分支worklines/ui/START_HERE.txt、WORLD_LORE_CANON_20261109.md、HERO_WORLD_ORIGIN_GROUPS_20261109.md、HERO_VISUAL_STYLE_INDEPENDENCE_RULE_20261109.md及与新世界直接相关的新确认",
     "worklines/main/scoring/DESIGN_PHASE_PREDICTION_GAP_INTAKE.md（参考问题与证据方法，不采用新评分或解冻）",
     "engine固定分支的package.json、types/heroes/modes、实际将修改的权威动作/生命周期/投影/试玩入口及相关测试；读源码后决定实现，不凭交接摘要写代码"
-  ]
+  ],
+  "main_visual_repair_20261113": {
+    "schema": "lezi.hero_pilot.proposed_followup.v1",
+    "id": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113",
+    "status": "READY_OWN_BRANCH_REPAIR",
+    "owner": "hero-pilot",
+    "basis": "MAIN-AUTONOMOUS-HERO-01-20261113 existing delegated hero-local engineering authority",
+    "source_engine_commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
+    "depends_on_main_result_protocol": false,
+    "depends_on_real_browser_environment": false,
+    "target": "Correct the real production DOM's wrong (0,0) last-action mark after siheng relay swap; show truthful two-piece displacement feedback.",
+    "required_startup": [
+      "Read latest hero-pilot entry, current state, task and return; preserve unpublished local work.",
+      "Verify latest own engine branch and PR23; read mainline intake report and DOM_MARKER_PROBE.json.",
+      "Reproduce on actual own branch before fixing; if already fixed, cite the actual later commit and verify rather than duplicate work."
+    ],
+    "allowed_writes": [
+      "worklines/hero-pilot/ in handoff main with latest-parent concurrency safety",
+      "own codex/autonomous-hero-01-20261113 engine branch, smallest hero UI/metadata/test delta"
+    ],
+    "acceptance": [
+      "Successful swap does not mark unrelated (0,0); actual endpoints and two-piece action are clear.",
+      "Do not encode the skill as an ordinary one-piece move or change action II/whole-turn semantics for UI convenience.",
+      "Preserve deterministic landing order and IDs, H05 exclusion and H06 snapshot behavior, mode gate and default hero pool.",
+      "Actual production DOM assertions cover success, invalid/no-op and duplicate action feedback as applicable, plus ordinary move marker preservation.",
+      "Run only relevant regression after fix; do not rerun all 1025 or create APK without a new reason.",
+      "Save exact commit, source delta, real pass/fail/unrun and return. Keep browser/human balance/final art/full independent QA distinct."
+    ],
+    "optional_next_independent_stage": "修复后可按原单英雄自主授权完成司衡最终立绘与小尺寸资产；先实际只读核独立UI最新入口/风格规则，保留全局UI新旧风格范围与旧英雄。此阶段不是等待用户逐题审批的理由；如果缺工具，明确缺口并继续已有可独立验证。",
+    "forbidden": [
+      "merge",
+      "deploy",
+      "APK release",
+      "NET unpause",
+      "score ledger change",
+      "write other branches",
+      "mark executor read or executed before it actually occurs"
+    ],
+    "executor_read": "UNKNOWN",
+    "executor_execution": "NOT_CLAIMED",
+    "issued_by": "main",
+    "report": "worklines/main/reviews/hero-pilot/INTAKE_REPORT.md",
+    "evidence": "worklines/main/reviews/hero-pilot/DOM_MARKER_PROBE.json",
+    "reproducer": "worklines/main/reviews/hero-pilot/main-review-dom-probe.ts"
+  },
+  "active_main_dispatch": "main_visual_repair_20261113"
 }

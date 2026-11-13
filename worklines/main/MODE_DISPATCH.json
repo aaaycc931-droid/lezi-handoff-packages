@@ -300,15 +300,16 @@
     "latest_main_accounting": "HC_EVIDENCE_REPORT.md remains valid; new ordinary runtime evidence is MAIN_NP32_REPORT.md. Receiver-owned receipts still required."
   },
   "main_next": {
-    "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+    "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
     "owner": "main",
-    "action": "接入C4原请求保存的已报边界，核半混乱PR24新反例回传（如已发布），在现有授权内形成可选内部权威提交/结果记录适配草稿；新wire/native代次/协商仍按实际范围另定，不自动批准。",
-    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
-    "independent_H10_next": {
-      "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
-      "action": "普通线独立复核PR25 T0。主线另核原8手与H02/H10/M04的真帅安全/闭合family及O0—O9资格，先保留R1/R2静态风险层级，不伪造宿主或以T0通过代R5。",
-      "does_not_block_standard_T0_review": true
-    }
+    "action": "接收普通17项T0增量后，核原8手的真实本体映射、H02/H10/M04王安全及闭合family来源，形成最小真实前缀/原子资格差分；不以T0通过替代G5，不注入宿主，不提前运行R5。",
+    "parallel": {
+      "chaos": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+      "half_chaos": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+      "hero_pilot": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113"
+    },
+    "retained_engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "result_followup": "PR26已实际接入默认关闭的host内部接口；C5与半混乱新回传到达后核最小Web原请求/可信本机上下文结合。线上协商与actor连续性未完成，未自动批准新wire。"
   },
   "protected": {
     "scoring": "frozen",
@@ -2115,6 +2116,76 @@
         "与主线authority/match/actor接入的必要依赖（不能声称已解决）"
       ],
       "source_review": "worklines/main/CH_C5_LOCAL_CONNECTION_GENERATION_DISPATCH_20261113.md"
+    }
+  },
+  "parallel_implementation_intake_20261113": {
+    "id": "MAIN-PARALLEL-ADAPTER-AND-HERO-INTAKE-20261113",
+    "date_local": "2026-11-13",
+    "status": "CODE_AND_DISPATCH_PUBLISHED_BOUNDED_INTAKE_NOT_RELEASE",
+    "report": "worklines/main/PARALLEL_IMPLEMENTATION_AND_INTAKE_20261113.md",
+    "fixed_PR24": {
+      "commit": "6ba35636ecf5c69203225149a7b746893299b39b",
+      "tests": 32,
+      "readback_files": 4
+    },
+    "actual_host_adapter": {
+      "pr": 26,
+      "commit": "e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+      "tests": 34,
+      "new_tests": 26,
+      "old_host_tests": 8,
+      "readback_files": 8,
+      "default_enabled": false,
+      "wire_integrated": false
+    },
+    "dispatches": {
+      "chaos": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+      "half_chaos": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+      "hero_pilot": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113"
+    },
+    "standard": {
+      "source": "4e416b0a116473cb7411033774c00c26bbc942f7",
+      "reported_tests": 17,
+      "main_reruns_of_new_three": 0,
+      "next_owner": "main G5 qualification"
+    },
+    "hero_pilot": {
+      "source_PR23": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
+      "receipt": "worklines/main/reviews/hero-pilot/INTAKE_RECEIPT.json",
+      "design": "delegated_designer_finalized",
+      "engineering": "received_candidate_with_reproducible_UI_feedback_defect",
+      "global_balance": "NOT_PROVEN",
+      "real_browser": "UNVERIFIED"
+    },
+    "main_next": {
+      "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+      "owner": "main",
+      "action": "接收普通17项T0增量后，核原8手的真实本体映射、H02/H10/M04王安全及闭合family来源，形成最小真实前缀/原子资格差分；不以T0通过替代G5，不注入宿主，不提前运行R5。",
+      "parallel": {
+        "chaos": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+        "half_chaos": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+        "hero_pilot": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113"
+      },
+      "retained_engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+      "result_followup": "PR26已实际接入默认关闭的host内部接口；C5与半混乱新回传到达后核最小Web原请求/可信本机上下文结合。线上协商与actor连续性未完成，未自动批准新wire。"
+    },
+    "protected": "scoring frozen / NET paused / draft only / no merge-deploy-APK-mode opening"
+  },
+  "host_adapter_review_20261113": {
+    "half_chaos_task": "worklines/half_chaos/TASK_FROM_MAIN.json#host_adapter_review_20261113",
+    "hero_pilot_task": "worklines/hero-pilot/TASK_FROM_MAIN.json#main_visual_repair_20261113",
+    "executor_read": "UNKNOWN",
+    "executor_execution": "UNKNOWN"
+  },
+  "previous_main_next_before_host_adapter_20261113": {
+    "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+    "owner": "main",
+    "action": "接入C4原请求保存的已报边界，核半混乱PR24新反例回传（如已发布），在现有授权内形成可选内部权威提交/结果记录适配草稿；新wire/native代次/协商仍按实际范围另定，不自动批准。",
+    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "independent_H10_next": {
+      "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+      "action": "普通线独立复核PR25 T0。主线另核原8手与H02/H10/M04的真帅安全/闭合family及O0—O9资格，先保留R1/R2静态风险层级，不伪造宿主或以T0通过代R5。",
+      "does_not_block_standard_T0_review": true
     }
   }
 }

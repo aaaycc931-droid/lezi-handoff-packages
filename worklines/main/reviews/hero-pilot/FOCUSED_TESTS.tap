@@ -1,0 +1,214 @@
+TAP version 13
+# Subtest: pilot excluded from product pool and rejects default/mode/form access
+ok 1 - pilot excluded from product pool and rejects default/mode/form access
+  ---
+  duration_ms: 6.144629
+  type: 'test'
+  ...
+# Subtest: swap red: two endpoints, one main turn, public resource, original unchanged
+ok 2 - swap red: two endpoints, one main turn, public resource, original unchanged
+  ---
+  duration_ms: 13.734272
+  type: 'test'
+  ...
+# Subtest: swap black: two endpoints, one main turn, public resource, original unchanged
+ok 3 - swap black: two endpoints, one main turn, public resource, original unchanged
+  ---
+  duration_ms: 4.646354
+  type: 'test'
+  ...
+# Subtest: swap is displacement, not movement/path attack: iron_steed
+ok 4 - swap is displacement, not movement/path attack: iron_steed
+  ---
+  duration_ms: 8.203298
+  type: 'test'
+  ...
+# Subtest: swap is displacement, not movement/path attack: war_chariot
+ok 5 - swap is displacement, not movement/path attack: war_chariot
+  ---
+  duration_ms: 7.117533
+  type: 'test'
+  ...
+# Subtest: swap is displacement, not movement/path attack: iron_wall
+ok 6 - swap is displacement, not movement/path attack: iron_wall
+  ---
+  duration_ms: 1.859608
+  type: 'test'
+  ...
+# Subtest: swap is displacement, not movement/path attack: shadow_dance
+ok 7 - swap is displacement, not movement/path attack: shadow_dance
+  ---
+  duration_ms: 1.433032
+  type: 'test'
+  ...
+# Subtest: swap is displacement, not movement/path attack: expedition
+ok 8 - swap is displacement, not movement/path attack: expedition
+  ---
+  duration_ms: 3.002258
+  type: 'test'
+  ...
+# Subtest: swap is displacement, not movement/path attack: cavalry
+ok 9 - swap is displacement, not movement/path attack: cavalry
+  ---
+  duration_ms: 1.416281
+  type: 'test'
+  ...
+# Subtest: swap is displacement, not movement/path attack: chaos
+ok 10 - swap is displacement, not movement/path attack: chaos
+  ---
+  duration_ms: 1.735596
+  type: 'test'
+  ...
+# Subtest: swap is displacement, not movement/path attack: jian_xie
+ok 11 - swap is displacement, not movement/path attack: jian_xie
+  ---
+  duration_ms: 1.502812
+  type: 'test'
+  ...
+# Subtest: range boundary 4 accepted; 5 rejected
+ok 12 - range boundary 4 accepted; 5 rejected
+  ---
+  duration_ms: 0.862669
+  type: 'test'
+  ...
+# Subtest: reject target same, no consumption
+ok 13 - reject target same, no consumption
+  ---
+  duration_ms: 1.110851
+  type: 'test'
+  ...
+# Subtest: reject target enemy, no consumption
+ok 14 - reject target enemy, no consumption
+  ---
+  duration_ms: 0.507075
+  type: 'test'
+  ...
+# Subtest: reject target king, no consumption
+ok 15 - reject target king, no consumption
+  ---
+  duration_ms: 0.587936
+  type: 'test'
+  ...
+# Subtest: reject target covered, no consumption
+ok 16 - reject target covered, no consumption
+  ---
+  duration_ms: 0.721275
+  type: 'test'
+  ...
+# Subtest: reject target air, no consumption
+ok 17 - reject target air, no consumption
+  ---
+  duration_ms: 0.731925
+  type: 'test'
+  ...
+# Subtest: reject target river, no consumption
+ok 18 - reject target river, no consumption
+  ---
+  duration_ms: 0.635675
+  type: 'test'
+  ...
+# Subtest: reject target intangible, no consumption
+ok 19 - reject target intangible, no consumption
+  ---
+  duration_ms: 0.563892
+  type: 'test'
+  ...
+# Subtest: reject target stealth, no consumption
+ok 20 - reject target stealth, no consumption
+  ---
+  duration_ms: 0.609346
+  type: 'test'
+  ...
+# Subtest: reject target missing, no consumption
+ok 21 - reject target missing, no consumption
+  ---
+  duration_ms: 0.528937
+  type: 'test'
+  ...
+# Subtest: check forbids activation and cannot masquerade as checkmate escape
+ok 22 - check forbids activation and cannot masquerade as checkmate escape
+  ---
+  duration_ms: 0.883488
+  type: 'test'
+  ...
+# Subtest: swap can give check; opponent retains a legal response
+ok 23 - swap can give check; opponent retains a legal response
+  ---
+  duration_ms: 5.081617
+  type: 'test'
+  ...
+# Subtest: iron wall outside-to-inside cannot be bypassed by occupied endpoints
+ok 24 - iron wall outside-to-inside cannot be bypassed by occupied endpoints
+  ---
+  duration_ms: 0.734018
+  type: 'test'
+  ...
+# Subtest: finite resource cannot be refreshed by a new command; duplicate remains idempotent
+ok 25 - finite resource cannot be refreshed by a new command; duplicate remains idempotent
+  ---
+  duration_ms: 2.188551
+  type: 'test'
+  ...
+# Subtest: stale revision and terminal requests are atomic rejections
+ok 26 - stale revision and terminal requests are atomic rejections
+  ---
+  duration_ms: 0.392642
+  type: 'test'
+  ...
+# Subtest: trap risk commits both placements and spends the charge, with no secret oracle
+ok 27 - trap risk commits both placements and spends the charge, with no secret oracle
+  ---
+  duration_ms: 2.766228
+  type: 'test'
+  ...
+# Subtest: canonical endpoints preserve landing order under reversed command
+ok 28 - canonical endpoints preserve landing order under reversed command
+  ---
+  duration_ms: 2.302043
+  type: 'test'
+  ...
+# Subtest: infection rechecks each arrival and effects follow identity without refresh
+ok 29 - infection rechecks each arrival and effects follow identity without refresh
+  ---
+  duration_ms: 2.163895
+  type: 'test'
+  ...
+# Subtest: availability includes swap when ordinary pieces cannot move
+ok 30 - availability includes swap when ordinary pieces cannot move
+  ---
+  duration_ms: 1.143032
+  type: 'test'
+  ...
+# Subtest: private identities and clock unchanged on illegal request; duplicate no extra tick
+ok 31 - private identities and clock unchanged on illegal request; duplicate no extra tick
+  ---
+  duration_ms: 2.944811
+  type: 'test'
+  ...
+# Subtest: two actual alternating turns exhaust swaps; returning positions cannot create an infinite loop
+ok 32 - two actual alternating turns exhaust swaps; returning positions cannot create an infinite loop
+  ---
+  duration_ms: 6.933981
+  type: 'test'
+  ...
+# Subtest: opponent H06 rewinds positions and swap cost through the existing full snapshot
+ok 33 - opponent H06 rewinds positions and swap cost through the existing full snapshot
+  ---
+  duration_ms: 5.547725
+  type: 'test'
+  ...
+# Subtest: H05 cannot reinterpret this tier II two-piece displacement as a historical ordinary piece move
+ok 34 - H05 cannot reinterpret this tier II two-piece displacement as a historical ordinary piece move
+  ---
+  duration_ms: 3.00838
+  type: 'test'
+  ...
+1..34
+# tests 34
+# suites 0
+# pass 34
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 470.049236

@@ -83,7 +83,7 @@
       "output": "同一候选报告追加反例检查及待主线取舍"
     }
   },
-  "active_main_dispatch": "main_result_increment_20261113",
+  "active_main_dispatch": "host_adapter_review_20261113",
   "evidence_queue_20261113": {
     "schema": "lezi.main.delegated_validation.v1",
     "date_local": "2026-11-13",
@@ -182,5 +182,34 @@
     "main_receipt": "worklines/main/READ_RECEIPTS.json#half_chaos_offline_results_20261113",
     "execution_scope": "沿既有测试研究授权，只在本线研究分支新增hc-result-*研究/测试/回传。需要执行PR24时在本地单独固定检出f30f1f5作只读依赖，再叠本线测试；记录依赖SHA，不复制改写主线实现、不合并它线分支、不改生产文件。",
     "deliverable": "给主线具体可复现缺陷/适用边界和最小建议；没有新缺陷也据实结束，不循环自审。此为同项目不同执行者复核，不自动算正式独立QA。"
+  },
+  "host_adapter_review_20261113": {
+    "id": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "owner": "half_chaos",
+    "issued_by": "main",
+    "status": "READY_TWO_CONCRETE_NEW_SOURCES",
+    "previous_completed": "MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113",
+    "source_handoff_head": "101b179862eaadbe0143c523a5db5e850c607bd6",
+    "sources": {
+      "r59_engine": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+      "fixed_PR24": "6ba35636ecf5c69203225149a7b746893299b39b",
+      "new_PR26": "e88a5a6bce6732a29e887b10636c827cd3f2eab5"
+    },
+    "phases": [
+      {
+        "id": "HC-F1-FIX-RECEPTION",
+        "action": "读主线MAIN_RESULT_SCOPE_FIX_20261113.md和实际6ba356差分，用原两种缺字段＋完整正例定向核修复，缺query.scope需invalid；只新增修复后对照，保留r59旧证据，不把修复后结果回填原4例。"
+      },
+      {
+        "id": "HC-ACTUAL-HOST-ADAPTER-REVIEW",
+        "dependency": "第一段后可直接进行，无需等主线回执",
+        "action": "审PR26真实BluetoothHostRoom单owner接入、默认关闭/legacy差异、两次时钟、命令提交与输出、生命周期退休及原scope历史查询、actor/内容/FIFO绑定；仅具体新风险补最小实验。不重复原13/29/32/34/935或旧110/56矩阵来凑数。"
+      }
+    ],
+    "authorization": "延续本线已授予离线研究/新测试权限。固定外部代码作只读依赖，自己的codex/hc-result-evidence-20261113最新父树增量增加hc-result-*研究/回传；不改主线src/research实现、协议或他线。",
+    "scope": "接受新内存结果记录不代表跨重连身份、线上协商或半混乱客户端验收；本机C5与权威scope分别核，不混成远端认证。",
+    "stop": "两项有意义有界复核完成即回传；新发现给实际来源/最小反例，不循环自审。保存未回传成果优先。",
+    "executor_read": "UNKNOWN",
+    "executor_execution": "UNKNOWN"
   }
 }

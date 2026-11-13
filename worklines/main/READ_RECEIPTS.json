@@ -5211,5 +5211,162 @@
     "reported_tests": 16,
     "main_reruns": 0,
     "next": "C4本包已完成，无需重交/重跑；主线推进真实接入，未来具体新源再派发。"
+  },
+  "chaos_c4_code_followup_20261113": {
+    "source_engine": "5cb3df526e1d41d60332b2b1f5c946f41126a720",
+    "read_scope": "完整ch-lifecycle-pending.ts / 16项test源码 / PENDING_RESULTS / 回传报告；两个源码SHA匹配结果记录",
+    "adopted": "原请求绑定、missing scope保留unknown、单次发送和FIFO边界作为C5与适配约束；限定报告自测16",
+    "not_adopted": "没有主线重跑16、生产接入/可信远端身份/持久化或wire已验",
+    "next": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113"
+  },
+  "half_chaos_r59_f1_20261113": {
+    "source_handoff": "6fb9a01ab58cdf92c8fa297c7ebbcc606a7db5f0",
+    "source_engine": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+    "actual_read": "HC_PR24_BOUNDED_REVIEW全文、最小driver全文、结果JSON全文、固定原型全文",
+    "adopted": "1个缺scope运行时校验问题、2变体及报告边界；主线实际复现两变体并修复",
+    "not_adopted": "远程攻击、全动作/真实设备/完整独立QA",
+    "fix": "6ba35636ecf5c69203225149a7b746893299b39b",
+    "main_validation": {
+      "tests": 32,
+      "passed": 32,
+      "failed": 0
+    },
+    "new_task": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113"
+  },
+  "standard_pr25_t0_return_20261113": {
+    "source_handoff": "4e416b0a116473cb7411033774c00c26bbc942f7",
+    "source_engine": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+    "read_scope": "STD_PR25_H10_T0_RECEPTION_20261113.md全文；未完整复读新六研究文件或重跑新3项",
+    "adopted": "17通过与另行真实T0 driver按支线执行报告层级接收；G1/G2>=3/G3服务端/G4T0范围",
+    "not_adopted": "G3实际UI、正式8手/G5/R5、全模式/独立人类QA",
+    "main_new_reruns": 0,
+    "next_owner": "main"
+  },
+  "hero_pilot_siheng_candidate_20261113": {
+    "schema": "lezi.hero_pilot.main_intake_review.v1",
+    "date": "2026-11-13",
+    "reviewer": "mainline_delegated_read_only_receiver",
+    "scope": "EXP-HERO-001_SIHENG_V1",
+    "handoff_read_head": "6fb9a01ab58cdf92c8fa297c7ebbcc606a7db5f0",
+    "handoff_end_observed_head": "101b179862eaadbe0143c523a5db5e850c607bd6",
+    "handoff_hero_pilot_changed_between_heads": false,
+    "engine_repository": "aaaycc931-droid/jieqi-engine",
+    "engine_branch": "codex/autonomous-hero-01-20261113",
+    "engine_head": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
+    "engine_base": "71145df45ad17215a3731e53150b6728e079e375",
+    "pull_request": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23",
+    "pr_state_at_final_check": "OPEN_DRAFT_UNMERGED",
+    "design_status": "DELEGATED_DESIGNER_FINALIZED_V1_NOT_USER_ITEM_BY_ITEM_CONFIRMATION",
+    "candidate_status": "RECEIVED_WITH_REPRODUCED_UI_FEEDBACK_DEFECT_AND_REMAINING_ACCEPTANCE_GAPS",
+    "read_full_handoff_paths": [
+      "worklines/hero-pilot/START_HERE.md",
+      "worklines/hero-pilot/TASK_FROM_MAIN.json",
+      "worklines/hero-pilot/DESIGNER_BRIEF.md",
+      "worklines/hero-pilot/CURRENT_STATE.json",
+      "worklines/hero-pilot/RETURN_TO_MAIN.json",
+      "worklines/hero-pilot/DESIGN.md",
+      "worklines/hero-pilot/IMPLEMENTATION.md",
+      "worklines/hero-pilot/BALANCE.md",
+      "worklines/hero-pilot/VALIDATION.json",
+      "worklines/hero-pilot/SESSION_CLOSEOUT.json",
+      "worklines/hero-pilot/READ_RECEIPTS.json"
+    ],
+    "observed_delivery": {
+      "real_engine_implementation": true,
+      "isolated_jieqi_opt_in": true,
+      "default_hero_pool_count_unchanged": 19,
+      "pr_diff_paths": 21,
+      "prior_setup_only_paths": 1,
+      "production_code_paths": 9,
+      "world": "E 悬衡界; D preserved for H15",
+      "formal_H_number": "UNASSIGNED"
+    },
+    "branch_reported_not_rerun_here": {
+      "full_regression": 1025,
+      "playouts": 18,
+      "build": "PASS",
+      "global_balance": "NOT_PROVEN"
+    },
+    "receiver_executed": {
+      "git_blob_matches": "43/43",
+      "published_sha256_matches": "13/13",
+      "existing_focused_tests": {
+        "pass": 34,
+        "fail": 0
+      },
+      "new_synthetic_royal_probes": {
+        "pass": 3,
+        "fail": 0
+      },
+      "existing_DOM_checks": {
+        "pass": 4,
+        "fail": 0
+      },
+      "new_DOM_marker_observation": "REPRODUCED_WRONG_0_0_MARKER",
+      "full_independent_QA": false,
+      "real_browser": "NOT_RUN"
+    },
+    "confirmed_issue": {
+      "id": "HERO-PILOT-SWAP-LAST-MOVE-MARKER-20261113",
+      "actual_swap_endpoints": [
+        [
+          0,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "rendered_last_from_to": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "source": [
+        "src/hero-actions.ts generic main-skill lastMove",
+        "web/app.ts renderBoard"
+      ],
+      "evidence": "DOM_MARKER_PROBE.json",
+      "fix_owner": "hero-pilot own engine branch",
+      "blocks_independent_progress": false,
+      "requires_user_design_approval": false,
+      "requires_main_shared_protocol": false
+    },
+    "not_adopted_or_not_completed": [
+      "merge or deployment",
+      "all modes or NET or native/Bluetooth acceptance",
+      "official scoring adoption or frozen ledger changes",
+      "global balance proof or human adversarial play",
+      "real browser visual and touch validation",
+      "final portrait and animation",
+      "full independent QA",
+      "formal hero ID assignment or global world canon integration"
+    ],
+    "remote_write_performed_by_reviewer": false,
+    "product_source_modified_by_reviewer": false,
+    "pilot_has_read_new_followup": "UNKNOWN_NOT_PREFILLED",
+    "report": "worklines/main/reviews/hero-pilot/INTAKE_REPORT.md",
+    "publication_owner": "main",
+    "evidence_directory": "worklines/main/reviews/hero-pilot/",
+    "new_task": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113",
+    "root_read_scope": "委派报告/receipt/next-task和DOM证据全文；原设计/代码/验证全文审查与实际34+3+4执行由明确子代理完成，不冒充root独自复跑"
+  },
+  "actual_host_adapter_20261113": {
+    "source_parent": "6ba35636ecf5c69203225149a7b746893299b39b",
+    "commit": "e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+    "pr": 26,
+    "review": "主线全文核新ledger、改后host、README、RESULTS/MANIFEST；发现tracking advance入口保护缺口，回核原blob纠正时钟假设后补guard及2项测试",
+    "tests": 34,
+    "passed": 34,
+    "executor": "main delegated implementation agent",
+    "root_readback_files": 8,
+    "production_default": "disabled",
+    "not_claimed": "wire/app integrated, peer auth, independent QA, release"
   }
 }
