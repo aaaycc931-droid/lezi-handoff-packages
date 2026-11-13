@@ -1,3 +1,6 @@
+【2026-11-13 后续推进：未知结果逐动作来源已核】
+已在PR22固定代码核H15开局无ID准备与局内带ID培养、H11 A/B发动/跳过、普通吃子的不同去重/阶段入口，及传输编号≠游戏动作编号。完整限定结论与主线待核项见RETURN_TO_MAIN.json#latest_receiver_phase.unknown_result_action_source_20261113，源码身份见READ_RECEIPTS.json同名对象。只读源码审查，引擎运行0、正式CH07新增验收0；不能把重复拒绝、内部duplicate或重连清等待当旧请求结果ACK。下一为主线未知结果核对提供具体动作来源，待具体结果/失败再增量核证，不重复静态CH08、不自动重发。下方PR20—22限定接收继续有效。
+
 【2026-11-13 混乱支线已启动并接收PR20—22限定证据】
 本对话为chaos支线，不是主线。已按MAIN-COORD-20261113-chaos核源提交7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5。详见CURRENT_STATE.json#pr20_pr22_receiver_20261113、READ_RECEIPTS.json#current_pr20_pr22_20261113及RETURN_TO_MAIN.json#latest_receiver_phase.pr20_pr22_20261113。
 CH-CHANNEL-01已由主线PR20真实控制器复现并修复，本线已核公开结果和原fixture源码：seed476征募0/1、红1@5000/黑1@10000，A截止65000，6组父版/新版对照；不再要求从零重做。PR21按编号等待、PR22本机三态证据限定接收；written/pong/重连不是规则接受ACK。PR22行动边界是英雄选择，不代表全部H15/H11/吃子/跳过动作幂等已验。

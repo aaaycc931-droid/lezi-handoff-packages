@@ -478,5 +478,63 @@
         "test execution"
       ]
     }
+  },
+  "unknown_result_action_source_20261113": {
+    "id": "CH-UNKNOWN-RESULT-ACTION-SOURCE-AUDIT-20261113",
+    "source_handoff_head": "31afa683bc4440c741d5059e379b3eea0e55ee88",
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "sources": [
+      {
+        "path": "src/bluetooth-host-room.ts",
+        "blob": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+        "scope": "complete 1-163"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "blob": "37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+        "scope": "807-915,1234-1287,1539-1587"
+      },
+      {
+        "path": "web/app.ts",
+        "blob": "3e5db425a6104b207070330b6709305bc678431a",
+        "scope": "1230-1407,3250-3288,3915-3964; nextActionId/bluetoothActionId/runTransferredHeroCommand anchors; CONNECTED/DISCONNECTED reset snippets"
+      },
+      {
+        "path": "src/game.ts",
+        "blob": "fe86e6adce83aca4171d38c75321bf3e178a4245",
+        "scope": "490-548 only; other branches not audited"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "blob": "2de406812dd1737ff0b861655cf6dcce1a474fb7",
+        "scope": "50-126,320-345"
+      },
+      {
+        "path": "src/room.ts",
+        "blob": "687ce619fb798224e0b80c593c955a25b38b32f0",
+        "scope": "1-88"
+      },
+      {
+        "path": "src/hero-progress.ts",
+        "blob": "4a2fa1742283cf14781b51f6e43169aa37ec856e",
+        "scope": "21-94"
+      },
+      {
+        "path": "src/hero-shuffle.ts",
+        "blob": "316973714c38e642d68f188ec978fd9c46fb754d",
+        "scope": "complete"
+      }
+    ],
+    "adopted": "Source-level action identity/guard/de-duplication boundary map only",
+    "not_adopted": [
+      "Runtime failure proof",
+      "automatic retries",
+      "new protocol or acceptance ACK",
+      "shared implementation",
+      "main receipt"
+    ],
+    "own_engine_runs": 0,
+    "coordination_body": "v0.18 unchanged; reuse prior actual workflow/authorization/precheck reads",
+    "handoff_read_scope": "Current chaos entry/task/state and prior PR20-22 return/receipt object; main current next_action/coordination and receipt coordination object only; not complete main history"
   }
 }

@@ -7,13 +7,13 @@
   "dispatch_id": "MAIN-THREE-MODE-20261024",
   "task_id": "CH-07-ORIGINAL_JIEQI-H11_H15-NEGATIVE_ORACLE_AND_CLOSEOUT",
   "source_commit": "f453db4bd37936ee611669baf8711b4a49668e74",
-  "status": "PR20_PR22_BOUNDED_RECEIVER_RECONCILIATION_PUBLISHED",
+  "status": "ACTION_SPECIFIC_UNKNOWN_RESULT_SOURCE_AUDIT_RETURNED",
   "entry": "worklines/chaos/START_HERE.txt",
   "changed_paths": [
     "worklines/chaos/CURRENT_STATE.json",
-    "worklines/chaos/RETURN_TO_MAIN.json",
     "worklines/chaos/READ_RECEIPTS.json",
-    "worklines/chaos/START_HERE.txt"
+    "worklines/chaos/START_HERE.txt",
+    "worklines/chaos/RETURN_TO_MAIN.json"
   ],
   "facts_confirmed": [
     "Original jieqi standard current rule uses 30 globally shuffled nonroyal identities, reveal may change control; not half_chaos",
@@ -54,7 +54,7 @@
     "ch07_privacy_matrix_cases": 13,
     "ch07_actual_view_checks": 0
   },
-  "next": "ON_CONCRETE_MAIN_RESULT_OR_MODE_FAILURE_RECONCILE_CH07_AND_PER_ACTION_UNKNOWN_RESULT_SCOPE; do not repeat CH08 or PR20 reproduction",
+  "next": "Main-owned unknown-result reconciliation uses this action-specific source map; chaos reopens on concrete result/failure or requested source gap. No repeated CH08/static fixture.",
   "protected": {
     "gameplay_delta": 0,
     "scoring": "frozen",
@@ -528,14 +528,151 @@
         "NET": "paused",
         "merge_deploy_APK": false
       }
+    },
+    "unknown_result_action_source_20261113": {
+      "id": "CH-UNKNOWN-RESULT-ACTION-SOURCE-AUDIT-20261113",
+      "date_local": "2026-11-13",
+      "source_handoff_head": "31afa683bc4440c741d5059e379b3eea0e55ee88",
+      "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "authority": "Existing chaos source/code review and documentation return only; shared implementation/runtime remains main-owned.",
+      "status": "SOURCE_REVIEW_COMPLETE_RUNTIME_NOT_EXECUTED",
+      "reason": "Follow up concrete PR22 hero-selection-only action boundary; distinguish original jieqi H15/H11/capture command semantics without repeating fixtures.",
+      "sources": [
+        {
+          "path": "src/bluetooth-host-room.ts",
+          "blob": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+          "scope": "complete 1-163"
+        },
+        {
+          "path": "src/remote-room.ts",
+          "blob": "37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+          "scope": "807-915,1234-1287,1539-1587"
+        },
+        {
+          "path": "web/app.ts",
+          "blob": "3e5db425a6104b207070330b6709305bc678431a",
+          "scope": "1230-1407,3250-3288,3915-3964; nextActionId/bluetoothActionId/runTransferredHeroCommand anchors; CONNECTED/DISCONNECTED reset snippets"
+        },
+        {
+          "path": "src/game.ts",
+          "blob": "fe86e6adce83aca4171d38c75321bf3e178a4245",
+          "scope": "490-548 only; other branches not audited"
+        },
+        {
+          "path": "src/hero-actions.ts",
+          "blob": "2de406812dd1737ff0b861655cf6dcce1a474fb7",
+          "scope": "50-126,320-345"
+        },
+        {
+          "path": "src/room.ts",
+          "blob": "687ce619fb798224e0b80c593c955a25b38b32f0",
+          "scope": "1-88"
+        },
+        {
+          "path": "src/hero-progress.ts",
+          "blob": "4a2fa1742283cf14781b51f6e43169aa37ec856e",
+          "scope": "21-94"
+        },
+        {
+          "path": "src/hero-shuffle.ts",
+          "blob": "316973714c38e642d68f188ec978fd9c46fb754d",
+          "scope": "complete"
+        }
+      ],
+      "actions": [
+        {
+          "action": "hero selection (PR22 boundary control)",
+          "input": "hero, no payload actionId/revision",
+          "source": "BluetoothRoomAction; submitRemoteHeroSelection 874-915",
+          "repeat": "Within hero_selection an already locked choice throws HERO_ALREADY_LOCKED; phase guard runs first. This is not an action-ID duplicate receipt.",
+          "status": "SOURCE_ONLY"
+        },
+        {
+          "action": "H15 opening training",
+          "input": "hero_preparation_choice trainingType, no payload actionId/revision",
+          "source": "web/app 3915-3926; remote-room 1578-1587; hero-progress startTraining/configureHeroPreparation",
+          "repeat": "phase/ready guards run first; otherwise startTraining sees used/type/secret.training and throws SKILL_USED before selecting another body. No request outcome ledger or duplicate return in this route.",
+          "limit": "A rejection on retry cannot by itself establish the previous request outcome. No new empty-pool policy.",
+          "status": "SOURCE_ONLY"
+        },
+        {
+          "action": "H15 later training",
+          "input": "hero_ability training with command.actionId/expectedRevision",
+          "source": "web/app3954; remote-room1539-1571; hero-actions87-126,343",
+          "repeat": "while outer phase checks permit entry, processedActions lookup precedes hero ability revision/window execution; successful training records command ID. Old room phase/clock can still affect outer entry.",
+          "status": "SOURCE_ONLY"
+        },
+        {
+          "action": "H11 A/B activate or skip",
+          "input": "hero_ability shuffle; skip true for decline; command.actionId/expectedRevision",
+          "source": "web/app3932-3933; hero-actions87-94; hero-shuffle complete; remote-room1539-1558",
+          "repeat": "common processedActions lookup before pendingShuffle route; successful activate and skip both record ID after revision increment. New ID is a fresh request, not same-ID retry.",
+          "limit": "At handle entry room time advances first; A-expiry can change authority before old request validation. No full B/skip unknown-result runtime coverage claimed.",
+          "status": "SOURCE_ONLY"
+        },
+        {
+          "action": "ordinary move/capture",
+          "input": "move command.actionId/expectedRevision",
+          "source": "web/app3264-3281; remote-room1252-1270; room33-55; game499-548",
+          "repeat": "player membership checked; known processed ID bypasses turn check in applyRoomMove, normal authority path returns duplicate before revision check. FlowDance delegates earlier and was not audited.",
+          "limit": "remote ensurePhase playing precedes dedup; a move that finishes a game can no longer rely on reaching this playing-phase lookup. This is a source-derived reconciliation requirement, not a runtime-proven bug.",
+          "status": "SOURCE_ONLY"
+        }
+      ],
+      "crosscutting": [
+        "web handleBluetoothAction allocates envelope requestId independently of payload command.actionId; host passes payload to hostRoom.handle without an envelope-ID outcome lookup. Error echoes envelope ID; snapshot ID derives updatedAt/phase; pong echoes ping ID.",
+        "BluetoothHostRoom consumes RemoteActionResult.room and returns views, so internal duplicate boolean is not exposed as a result ACK.",
+        "CONNECTED and established DISCONNECTED/ERROR reset pendingActionId/pendingActionWriteUnknown; reset is UI lifecycle, not proof of prior request outcome.",
+        "Inspected processedActions lookup is ID-presence based, not a stored request-result or payload comparison at these gates. Do not infer full same-ID/different-payload conflict handling.",
+        "All claims are pinned source review; no automatic replay or protocol/result policy selected."
+      ],
+      "requested_main_checks": [
+        {
+          "priority": 1,
+          "scope": "H15 opening vs later training",
+          "needed": "Separate no-ID preparation command from ID-bearing in-game training; observe actual command/phase, first outcome, retry rejection and random draws without leaking private training fields."
+        },
+        {
+          "priority": 1,
+          "scope": "H11 A/B activate and skip",
+          "needed": "Preserve exact command and original request association; distinguish same-ID replay, new user action, deadline auto-decline and phase change. Extend only missing original-source cases; reuse PR20 six comparisons."
+        },
+        {
+          "priority": 1,
+          "scope": "capture followed by terminal phase",
+          "needed": "Verify source-reachable accepted-then-unknown path across finished room guard before dedup; define compatible result lookup separately from automatic replay."
+        },
+        {
+          "priority": 2,
+          "scope": "identity and reconnect",
+          "needed": "Bind transport ID, payload command identity, actor and connection lifecycle when main designs reconciliation; current snapshot/pong/written/reconnect alone is insufficient. No new wire schema approved here."
+        }
+      ],
+      "verification": {
+        "engine_runs": 0,
+        "JVM_runs": 0,
+        "device_runs": 0,
+        "formal_CH07_new_acceptances": 0,
+        "independent_QA": false,
+        "tests": "not run; source-only review",
+        "shared_code_changes": 0
+      },
+      "next": "Main-owned unknown-result reconciliation uses this action-specific source map; chaos reopens on concrete result/failure or requested source gap. No repeated CH08/static fixture.",
+      "main_receipt": "UNKNOWN_UNTIL_MAIN_READS",
+      "protected": {
+        "scoring": "frozen",
+        "NET": "paused",
+        "other_lines": true,
+        "no_merge_deploy_APK": true
+      }
     }
   },
-  "latest_phase_status": "PR20_PR22_BOUNDED_RECEIVER_RECONCILIATION_PUBLISHED",
+  "latest_phase_status": "ACTION_SPECIFIC_UNKNOWN_RESULT_SOURCE_AUDIT_RETURNED",
   "latest_phase_changed_paths": [
     "worklines/chaos/CURRENT_STATE.json",
-    "worklines/chaos/RETURN_TO_MAIN.json",
     "worklines/chaos/READ_RECEIPTS.json",
-    "worklines/chaos/START_HERE.txt"
+    "worklines/chaos/START_HERE.txt",
+    "worklines/chaos/RETURN_TO_MAIN.json"
   ],
   "latest_phase_external_handoff_receiver": "UNKNOWN_UNTIL_MAIN_READS_THIS_RETURN",
   "latest_phase_preserves_original_CH07_matrix": true
