@@ -4596,5 +4596,119 @@
     },
     "prior_validation_reexecuted": false,
     "new_other_line_adoption_claimed": false
+  },
+  "coordination_20261113": {
+    "id": "MAIN-COORDINATION-RESUME-20261113",
+    "date_local": "2026-11-13",
+    "source_main": "26827b26c9a076a8a2b5bd085835bf83bc1132e3",
+    "source_ui": "004866a109f80624f918e883152840abb5957e35",
+    "status": "P0_COORDINATION_RECEIVED_AND_ROUTED_NOT_FULL_PROJECT_ACCEPTANCE",
+    "authority": "本轮用户明确任命本对话主线并解除11-05新交接接收暂停；其他边界保持",
+    "adopted": [
+      "接收与跨线协调恢复",
+      "源版本、分支及完成层级纠偏",
+      "本轮项目入口与主线派发安排"
+    ],
+    "not_adopted": [
+      "H02/H05共享玩法整合、引擎实现或验证",
+      "风V3.1最终定稿、A2",
+      "评分正式方法、原账本解冻",
+      "UI图稿审批/资产结案",
+      "合并/部署/模式开放/NET"
+    ],
+    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "engine": {
+      "head": "71145df45ad17215a3731e53150b6728e079e375",
+      "PR": 22,
+      "state": "open_draft_unmerged_rechecked"
+    },
+    "asset_check": {
+      "private_head": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+      "matched_git_blob_and_bytes": 51,
+      "raw_sha256": "NOT_RUN",
+      "cross_environment_restore": "NOT_RUN",
+      "historical_diff_review": "PENDING"
+    },
+    "frontend_configured": "UNKNOWN",
+    "other_executors_read": "UNKNOWN",
+    "effectiveness": "current-main source correction demonstrated; other executor/front-end trial pending",
+    "actual_read_scope": [
+      {
+        "commit": "26827b26c9a076a8a2b5bd085835bf83bc1132e3",
+        "paths": [
+          "worklines/main/START_HERE.txt",
+          "PROJECT_NOTICE_MAINLINE_INTAKE_PAUSE_20261105.md"
+        ],
+        "scope": "全文"
+      },
+      {
+        "commit": "26827b26c9a076a8a2b5bd085835bf83bc1132e3",
+        "paths": [
+          "worklines/main/CURRENT_STATE.json",
+          "worklines/main/SESSION_CLOSEOUT.json",
+          "worklines/main/SHARED_COORDINATION.json",
+          "worklines/main/MODE_DISPATCH.json"
+        ],
+        "scope": "当前导航、最新收束/工程/授权对象及历史依赖；未声明全部历史字段逐项审计"
+      },
+      {
+        "commit": "26827b26c9a076a8a2b5bd085835bf83bc1132e3",
+        "paths": [
+          "worklines/standard/reviews/STD_SESSION_CLOSEOUT_20261029_PR15_PR19_AND_NG11_NEXT.md",
+          "worklines/half_chaos/HC55_SESSION_CLOSEOUT_20261029.json",
+          "worklines/chaos/RETURN_TO_MAIN.json"
+        ],
+        "scope": "普通/半混乱最新收束全文；混乱latest_receiver_phase及channel_deadline_triage；各线入口/状态/回传按当前对象读取，非全历史包复核"
+      },
+      {
+        "commit": "26827b26c9a076a8a2b5bd085835bf83bc1132e3",
+        "paths": [
+          "worklines/hero-design/START_HERE.md",
+          "worklines/hero-design/formal/H02_SHADOW_STEP_RULE_INTEGRATION_20261109.md",
+          "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
+          "worklines/hero-design/H05_PUBLIC_RIGHTS_A_CAPTURE_EVENT_DEDUP_REVIEW_20261113.md"
+        ],
+        "scope": "当前设计与§11—16后续确认、去重未决；原设计对话完整逐字原文未独立核验"
+      },
+      {
+        "commit": "26827b26c9a076a8a2b5bd085835bf83bc1132e3",
+        "paths": [
+          "worklines/main/candidates/shan/SESSION_CLOSEOUT.md",
+          "worklines/main/candidates/wind/V3_1_CANDIDATE.md",
+          "worklines/main/candidates/wind/V3_1_HANDOFF_TO_MAIN.json",
+          "worklines/main/candidates/wind/V3_1_SESSION_CLOSEOUT.md",
+          "worklines/main/scoring/EXECUTION_STATE.json",
+          "worklines/main/scoring/DESIGN_PHASE_PREDICTION_GAP_INTAKE.md"
+        ],
+        "scope": "山收束/2A更新提示，风当前候选和交接全文，评分最新准备对象与缺口全文；未运行"
+      },
+      {
+        "commit": "004866a109f80624f918e883152840abb5957e35",
+        "paths": [
+          "worklines/ui/START_HERE.txt",
+          "worklines/ui/WORLD_LORE_SELECTED_SPACE_VISUAL_CONFIRMED_20261113.md",
+          "worklines/ui/WORLD_LORE_VISUAL_SESSION_CLOSEOUT_20261113.md",
+          "worklines/ui/WORLD_LORE_CANON_20261109.md",
+          "worklines/ui/WORLD_LORE_CONFIRMED_EXTENSION_20261111.md",
+          "worklines/ui/HERO_WORLD_ORIGIN_GROUPS_20261109.md"
+        ],
+        "scope": "当前叙事/视觉来源与收束，引用采用；不是图稿/产品采用"
+      },
+      {
+        "commit": "26827b26c9a076a8a2b5bd085835bf83bc1132e3",
+        "paths": [
+          "worklines/ui/CHAT_REPAIR_REVIEW_INDEX_20261105.md",
+          "worklines/ui/UI_ASSET_SESSION_CLOSEOUT_20261106.md",
+          "worklines/ui/CURRENT_STATE.json",
+          "worklines/ui/RETURN_TO_MAIN.json"
+        ],
+        "scope": "回查索引及旧收束、后续51对象/11-07状态增量；原始Git差分审计仍待完成"
+      }
+    ],
+    "method_alignment": {
+      "private_source_commit": "047656a2cac71cfe3960551fc30b7bc8bc4f079a",
+      "public_scope": "仅象棋适用方法；未复制私有业务正文",
+      "sections": "AI_TASK_ROUTING、CROSS_MODULE_WORKFLOW_REVIEW及DIET_PROJECT_INSTRUCTIONS入口/跨模块安排"
+    }
   }
 }

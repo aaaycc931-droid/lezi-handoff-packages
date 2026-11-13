@@ -1,3 +1,5 @@
+【2026-11-13 主线接收恢复】用户已明确任命本轮对话为主线并解除11-05公告的暂停接收限制；其他冻结、暂停、审批和支线所有权保持。现行协调见worklines/main/COORDINATION_RESULT.md与docs/COORDINATION_SETUP.md。下方旧暂停文字仅为历史状态，不覆盖本条；各线实际采用仍由各自回执证明。
+
 # Repository instructions
 
 ## 2026-11-05 temporary project-level intake/role notice

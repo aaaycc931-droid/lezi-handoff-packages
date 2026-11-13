@@ -201,23 +201,9 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
-    "action": "核未知行动跨断连/重连的真实来源与可达时序、各动作幂等和冲突政策，再形成兼容的当前请求正式结果核对方案。",
-    "basis": "本轮真实JVM完整帧/flush故障可产生权威已接受而本机unknown；首写/半行则未接受。既有断连/重连会清UI等待，但不是旧行动接受/拒绝/duplicate凭据。",
-    "requirements": [
-      "先恢复单I/O执行器、原生/主线程回调、Web连接状态及真实动作来源，区分自然可达与仅反射能构造的竞态。",
-      "核不同动作已有actionId/去重/拒绝/冲突和来源，不能套用走棋去重覆盖无ID的其他动作；未知行动不自动重放/补交。",
-      "明确新旧桥/新旧v2端兼容与降级；如需消息/回执语义变化先给明确方案和真实差分，不静默把pong、written、重连或新snapshot当接受ACK。",
-      "保留PR20最新已提交视图、PR21等待关联和本轮流隔离/checked未知防重试。继续只做已准入jieqi离线源与真实函数，Android/radio/完整DOM/设备和独立QA仍未验。"
-    ],
-    "secondary": [
-      "半混乱/普通产品门禁、原56完整义务与64正式验收仍0或未验。普通NG11、暗子来源、三态消费者和其他分支保持。",
-      "评分隔离检查本轮首轮1失败、孤立21/最终935通过；根因未证，评分源/预算不改，不自动恢复评分优化。"
-    ],
-    "separate_routes": [
-      "三线工作稿/确认/实际采用、山风/UI/H03/旧owner包保护。",
-      "评分及原账本冻结、NET暂停，不合并/部署/重复APK。"
-    ]
+    "id": "MAIN-COORDINATION-FOLLOWTHROUGH-20261113",
+    "action": "核各线真实回执，继续H02/H05共享影响映射与UI历史修复/原件恢复专项复核，再排原工程断点。",
+    "report": "worklines/main/COORDINATION_RESULT.md"
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -3505,5 +3491,60 @@
       "APK_rebuilt": false
     }
   },
-  "current_dialogue_status": "closed_by_user_20261030"
+  "current_dialogue_status": "active_mainline_coordination",
+  "coordination_20261113": {
+    "id": "MAIN-COORDINATION-RESUME-20261113",
+    "date_local": "2026-11-13",
+    "source_main": "26827b26c9a076a8a2b5bd085835bf83bc1132e3",
+    "source_ui": "004866a109f80624f918e883152840abb5957e35",
+    "status": "P0_COORDINATION_RECEIVED_AND_ROUTED_NOT_FULL_PROJECT_ACCEPTANCE",
+    "authority": "本轮用户明确任命本对话主线并解除11-05新交接接收暂停；其他边界保持",
+    "adopted": [
+      "接收与跨线协调恢复",
+      "源版本、分支及完成层级纠偏",
+      "本轮项目入口与主线派发安排"
+    ],
+    "not_adopted": [
+      "H02/H05共享玩法整合、引擎实现或验证",
+      "风V3.1最终定稿、A2",
+      "评分正式方法、原账本解冻",
+      "UI图稿审批/资产结案",
+      "合并/部署/模式开放/NET"
+    ],
+    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "engine": {
+      "head": "71145df45ad17215a3731e53150b6728e079e375",
+      "PR": 22,
+      "state": "open_draft_unmerged_rechecked"
+    },
+    "asset_check": {
+      "private_head": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+      "matched_git_blob_and_bytes": 51,
+      "raw_sha256": "NOT_RUN",
+      "cross_environment_restore": "NOT_RUN",
+      "historical_diff_review": "PENDING"
+    },
+    "frontend_configured": "UNKNOWN",
+    "other_executors_read": "UNKNOWN",
+    "effectiveness": "current-main source correction demonstrated; other executor/front-end trial pending"
+  },
+  "prior_engineering_next_action": {
+    "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "action": "核未知行动跨断连/重连的真实来源与可达时序、各动作幂等和冲突政策，再形成兼容的当前请求正式结果核对方案。",
+    "basis": "本轮真实JVM完整帧/flush故障可产生权威已接受而本机unknown；首写/半行则未接受。既有断连/重连会清UI等待，但不是旧行动接受/拒绝/duplicate凭据。",
+    "requirements": [
+      "先恢复单I/O执行器、原生/主线程回调、Web连接状态及真实动作来源，区分自然可达与仅反射能构造的竞态。",
+      "核不同动作已有actionId/去重/拒绝/冲突和来源，不能套用走棋去重覆盖无ID的其他动作；未知行动不自动重放/补交。",
+      "明确新旧桥/新旧v2端兼容与降级；如需消息/回执语义变化先给明确方案和真实差分，不静默把pong、written、重连或新snapshot当接受ACK。",
+      "保留PR20最新已提交视图、PR21等待关联和本轮流隔离/checked未知防重试。继续只做已准入jieqi离线源与真实函数，Android/radio/完整DOM/设备和独立QA仍未验。"
+    ],
+    "secondary": [
+      "半混乱/普通产品门禁、原56完整义务与64正式验收仍0或未验。普通NG11、暗子来源、三态消费者和其他分支保持。",
+      "评分隔离检查本轮首轮1失败、孤立21/最终935通过；根因未证，评分源/预算不改，不自动恢复评分优化。"
+    ],
+    "separate_routes": [
+      "三线工作稿/确认/实际采用、山风/UI/H03/旧owner包保护。",
+      "评分及原账本冻结、NET暂停，不合并/部署/重复APK。"
+    ]
+  }
 }
