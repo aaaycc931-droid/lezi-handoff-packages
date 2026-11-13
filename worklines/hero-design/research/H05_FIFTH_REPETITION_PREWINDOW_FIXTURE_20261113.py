@@ -1,4 +1,4 @@
-"""H05 repetition-5 pre-window geometry fixture, not official Lezi engine.
+"""HISTORICAL geometry-only H05 repetition-5 probe; NOT official Lezi engine.\n\nCORRECTION 2026-11-13: This 16-ply fixture only compares board+side, not\nsource-eligible decision phase or public hero rights. Its P5 is NOT proven\nvalid official repetition and MUST NOT be used as a repetition draw case.\nUse H05_FIFTH_REPETITION_PHASE_AWARE_20261113.py for the newer conditional\n20-ply source-phase model. Even that does NOT verify full Lezi public keys.
 
 Run beside H05_SIX_CHECK_FIXTURE_20261112.py:
     python H05_FIFTH_REPETITION_PREWINDOW_FIXTURE_20261113.py
