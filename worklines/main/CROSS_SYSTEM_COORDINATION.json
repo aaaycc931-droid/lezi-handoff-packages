@@ -1,0 +1,53 @@
+{
+  "schema": "lezi.main.cross_system_coordination.v1",
+  "role": "chess_mainline_sender_and_own_report_receipt;not_a_new_authorization_ledger",
+  "date_local": "2026-11-13",
+  "authorization": {
+    "current_user_request": "请接收并读取《mainline_authorization_coordination_report_20261113.txt》，据此协调各项目说明。",
+    "additional_user_quote": "我允许本对话执行所有更新与写入操作",
+    "scope": "current project-instruction coordination and direct source delivery;inherit existing authority;retain privacy and release boundaries",
+    "facts": "Original per-workline agreements, tasks, states and confirmations remain authoritative."
+  },
+  "current_stage": {
+    "id": "MAIN-AUTHORIZATION-COORDINATION-20261113",
+    "report": "worklines/main/AUTHORIZATION_COORDINATION_20261113.md",
+    "text_version": "2026-11-13.AUTH-1",
+    "main_text_commit": "bf48b0a76dc7993e50a131bce09d8d2f21037aa5",
+    "ui_instruction_commit": "7615fc61fd66d84929f0569ff9429a46f1344b7e",
+    "frontend": "NEW_VERSION_NOT_CONFIRMED_INSTALLED;old_main_success_retained",
+    "engineering_next": "PR29 bounded real-browser verification;unchanged",
+    "session_closed": false
+  },
+  "main_received_report": {
+    "filename": "mainline_authorization_coordination_report_20261113.txt",
+    "actual_read": "full 156 lines",
+    "adopted": "same-scope authorization continuity;visible operation evidence;rejection classification;complete frontend texts",
+    "original_report_is_new_authorization": false,
+    "receiver": "this chess mainline only"
+  },
+  "outgoing": {
+    "items": [
+      {
+        "id": "XFLOW-AUTH-CONTINUITY-20261113",
+        "version": "2026-11-13.AUTH-1",
+        "target": "personal_system_mainline",
+        "source_commit": "bf48b0a76dc7993e50a131bce09d8d2f21037aa5",
+        "source_path": "worklines/main/AUTHORIZATION_COORDINATION_20261113.md",
+        "live_workflow": "docs/WORKFLOW.md#跨系统共用改进的直接交接",
+        "delivered_to_existing_private_entry": true,
+        "recipient_read": "UNKNOWN",
+        "recipient_adopted": "UNKNOWN",
+        "recipient_route": "own START_HERE.md -> docs/WORKFLOW_DIRECTION_AND_HANDOFF.md#跨系统共用改进",
+        "recipient_response": "receiver records actual receipt/adoption in its own source;chess reads when next active"
+      }
+    ]
+  },
+  "publication_boundary": {
+    "cumulative_historical_metadata_rewritten": false,
+    "unrelated_workline_state_or_assets_modified": false,
+    "independent_ui_changed": "PROJECT_INSTRUCTIONS.txt only",
+    "original_workflow_and_authorization_sources_preserved": true,
+    "background_polling_or_chat_wakeup_configured": false
+  },
+  "verification": "worklines/main/AUTHORIZATION_PUBLICATION_VERIFICATION_20261113.json"
+}
