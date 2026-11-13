@@ -335,6 +335,66 @@
           "mode admission/network/independent QA"
         ]
       }
+    },
+    {
+      "source_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
+      "actual_read_scope": [
+        "current project instructions, collaboration index, hero entry/state/task/return/own receipts",
+        "H05 consolidated formal source and Q-H05-CLOCK-01 saved candidate; direct user a confirmation",
+        "H02 formal current navigation; earlier unchanged closeout and collaboration modules reused",
+        "shared 01_CURRENT_RULES normal60sec/source exceptions",
+        "original capture-event decision §4; causal Q-RS2 section and batch report §6 evidence limits"
+      ],
+      "adopted_for_branch": [
+        "Confirmed user choice a for Q-H05-CLOCK-01; appended formal H05 section17 shared budget and failure remainder",
+        "Updated H02 navigation to H05 section17 without changing H02 gameplay",
+        "Ran nine local clock contract checks; retained production timing and concurrency limits",
+        "Prepared original unresolved same-cause capture reset choice with explicit lack of demonstrated outcome difference"
+      ],
+      "not_adopted": [
+        "capture reset A/B from clock a",
+        "shared engine or mode acceptance",
+        "full causal equivalence key",
+        "claimed A/B outcome difference without reachable sample"
+      ],
+      "confirmation": {
+        "id": "Q-H05-CLOCK-01",
+        "status": "CONFIRMED_A_DESIGN_ONLY",
+        "report": "worklines/hero-design/H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md",
+        "section": "6",
+        "question": "H05前置技能尝试与失败后的普通行动，是否共用当前正式回合原有时间预算？",
+        "recommended": "A",
+        "options": {
+          "A": "前置选择、H05己方操作、失败/放弃后正常行动共用D；失败不刷新；必要原阵营操作暂停",
+          "B": "独立技能阶段D；放弃或未成功承诺而失败/到期后，原线未终局则正常行动另获D；可能最多两份D"
+        },
+        "example": "D=60秒，自己已用35秒后失败：A剩25秒，B再获60秒。原阵营独立操作暂停H05表，两案均不重复扣时。",
+        "formal_rule_changed": true,
+        "confirmation_source": "current hero-design conversation; direct reply to preceding Q-H05-CLOCK-01 A/B question",
+        "selected": "A",
+        "confirmation_id": "CONF-H05-CLOCK-A-20261113",
+        "user_quote": "a",
+        "candidate_commit": "508be3f7a1375abc76f44b1daa329a6ffff5e8aa",
+        "formal_path": "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
+        "formal_section": 17,
+        "shared_rule_or_engine_adoption": false
+      },
+      "validation": {
+        "local_model_checks": 9,
+        "result": "PASS_LOCAL_CONTRACT_MODEL_ONLY",
+        "source_engine_runs": 0,
+        "independent_QA": false,
+        "results": "worklines/hero-design/research/H05_SHARED_CLOCK_RESULTS.json",
+        "scope": "confirmed shared-clock budget arithmetic and local transition model; no production clock",
+        "not_covered": [
+          "source-specific game callbacks",
+          "network identity/conflicts/reconnect",
+          "simultaneous deadline-request-terminal priority",
+          "actual commit gate",
+          "complete time-source interactions",
+          "mode/independent QA"
+        ]
+      }
     }
   ]
 }

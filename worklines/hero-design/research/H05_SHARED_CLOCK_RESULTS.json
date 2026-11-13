@@ -1,0 +1,33 @@
+{
+  "status": "PASS_LOCAL_CONTRACT_MODEL_ONLY",
+  "checks": 9,
+  "cases": [
+    "sixty-second-budget-failure-after35-leaves25",
+    "decline-keeps-only-original-remainder",
+    "opponent-twenty-second-window-does-not-charge-H05",
+    "multiple-source-windows-sum-only-real-pauses",
+    "duplicate-delivery-does-not-repeat-pause-or-refresh-budget",
+    "source-duration-is-an-input-not-forced-to60",
+    "exhausted-budget-does-not-give-new-normal-window",
+    "original-sample-terminal-stops-normal-flow",
+    "successful-occupancy-does-not-open-normal-action-budget"
+  ],
+  "runtime": "v24.22.1",
+  "confirmedPolicy": "Q-H05-CLOCK-01=A",
+  "sourceEngineRuns": 0,
+  "independentQA": false,
+  "examples": {
+    "failure35of60RemainingSeconds": 25,
+    "opponentPauseSeconds": 20,
+    "elapsed55WithPause20RemainingSeconds": 25
+  },
+  "notVerified": [
+    "production monotonic clock and pause ownership",
+    "game begin/end and resource callbacks",
+    "network identity/conflicting payloads/reconnect",
+    "simultaneous terminal-deadline-request priority",
+    "commit-gate placement and committed atom completion",
+    "complete time-source interactions",
+    "mode admission or independent QA"
+  ]
+}
