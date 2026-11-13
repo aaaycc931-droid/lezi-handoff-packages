@@ -5270,7 +5270,8 @@
         "CONF-THREE-MODE-H10-REDESIGN-SCOPE-20261014",
         "CONF-THREE-MODE-H10-PREP-COOLDOWN-20261014",
         "CONF-THREE-MODE-H10-SECOND-EMPTY-20261014",
-        "CONF-THREE-MODE-H10-LOCATOR-20261014"
+        "CONF-THREE-MODE-H10-LOCATOR-20261014",
+        "CONF-H10-FIRST-UNIFORM-THREE-20261113"
       ],
       "status": "confirmed_design_not_implemented",
       "modes": [
@@ -5286,12 +5287,20 @@
       "locator": "first candidate/body location markers private to wind player only; disappear after choice and successful first activation; no persistent host marker, no secret type/faction label",
       "retained": "max2 successful uses; flow and death-source rules otherwise retained; first already flowed does not itself remove second eligibility",
       "not_decided": [
-        "preparation decline/timeout/failure and candidate shortage/sampling details",
+        "preparation decline/timeout/failure, candidate shortage and invalidation; first >=3 uniform sampling confirmed 20261113",
         "all same-preparation hero ordering",
         "secret-pool and feedback isolation",
         "H06/H11 history/cooldown metadata interactions",
         "second-result new visibility permissions"
-      ]
+      ],
+      "first_sampling_20261113": {
+        "id": "CONF-H10-FIRST-UNIFORM-THREE-20261113",
+        "source": "worklines/main/confirmations/H10_FIRST_UNIFORM_THREE_20261113.json",
+        "user_quote": "1",
+        "policy": "uniformly sample three distinct eligible stable bodies without replacement",
+        "implementation_scope": "ordinary H02 old assassination / H10 / M04 only, >=3 eligible candidates, timely choice, no other hero preparation interaction",
+        "status": "confirmed_not_implemented"
+      }
     },
     "H05_M07": {
       "confirmation_id": "CONF-SHARED-H05-M07-CURRENT-ENEMY-TARGET-20261014",
