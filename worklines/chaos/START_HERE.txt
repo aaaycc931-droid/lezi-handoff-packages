@@ -1,3 +1,6 @@
+【2026-11-13 离线队列实际完成｜优先于下方待执行状态】
+MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113 的 C1/C2/C3 均已完成限定离线运行：7 JVM、8 Web／真实房间用例通过。见 CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md；引擎研究提交 09af8bf1dae274e180d123370b86d444aafad4c9，6 文件已读回，生产源未改。完整无换行 JSON+EOF 可进入权威房间；旧写晚于新连接仅在明确流替身条件下证明；UI 清等待仍非结果 ACK。真实 Android/JNI/无线/W3 自然时序未验，CH07 正式验收不增加。本次有界队列耗尽，下一依具体主线方案／生产差分或真实环境任务，不重复旧套件；本次结果的主线接收 UNKNOWN，上一来源报告已被主线接收。
+
 【2026-11-13 新主线明确委派：有界离线验证队列】
 此前文档/后续复核两步主线已实际接收，当前优先TASK_FROM_MAIN.json#evidence_queue_20261113（MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113），覆盖下方“所有后续只能等主线”的旧状态。仅该新任务允许固定PR22生产源的受控离线测试，写自己的引擎研究分支codex/ch-lifecycle-verification-20261113和本线文档；不改生产代码/协议/模式/评分/NET。每段交付后可直接推进下一无依赖段；缺环境如实记阻断，全部有价值阶段耗尽即停止，不保证无限跑。主线接收范围见../main/RESULT_RECONCILIATION_REVIEW.md；本线实际新任务已读/执行由本线自己填。先保护未回传成果与并发最新HEAD。
 

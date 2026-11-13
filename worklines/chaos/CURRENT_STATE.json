@@ -9,9 +9,9 @@
   "received_dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
   "received_task_id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "LIFECYCLE_SOURCE_REVIEW_AND_FOLLOW_ON_COMPLETE",
+  "state": "C1_C2_C3_BOUNDED_OFFLINE_COMPLETE",
   "actual_receiver_read": true,
-  "actual_receiver_adoption": "BOUNDED_PUBLISHED_EVIDENCE_RECONCILIATION_NOT_INDEPENDENT_RUNTIME_ACCEPTANCE",
+  "actual_receiver_adoption": "DELEGATED_BOUNDED_OFFLINE_VALIDATION_COMPLETED_NOT_INDEPENDENT_QA",
   "completed": [
     "fixed root/chaos entry and current protocol activated",
     "original jieqi and H11/H15 current+historical source scopes reconciled",
@@ -27,14 +27,15 @@
     "2026-10-29 actual scoped PR18/19 read and specific original-jieqi H15 room/transport source chain audit; main source/action/view gaps returned; no engine run",
     "2026-11-13 received PR20-22 pinned published evidence; corrected CH-CHANNEL-01 waiting state and seed476 deadline to65000; no own runtime or formal CH07 acceptance",
     "2026-11-13 pinned PR22 action-specific source review: H15 opening vs later training, H11 A/B activation/skip and ordinary capture; envelope/payload IDs, outer phase and lifecycle boundaries returned without engine execution.",
-    "2026-11-13 completed delegated native connection lifecycle source review and three minimal missing-timing witness specs; EOF relay coverage gap identified, no runtime executed."
+    "2026-11-13 completed delegated native connection lifecycle source review and three minimal missing-timing witness specs; EOF relay coverage gap identified, no runtime executed.",
+    "2026-11-13 C1/C2/C3: 7 JVM and 8 actual Web/room bounded offline cases; no production edits."
   ],
-  "next_action": "MAIN_REVIEW_LIFECYCLE_AND_RESULT_CONTRACT; chaos follow-on exhausted, resume on specific evidence/conflict/new authorized task",
-  "next_action_status": "PREASSIGNED_TWO_STEP_PACKAGE_COMPLETE_RUNTIME_AND_ADOPTION_PENDING",
+  "next_action": "BOUNDED_QUEUE_EXHAUSTED; await concrete main implementation/decision or real-environment task; do not repeat prior suites",
+  "next_action_status": "WAIT_CONCRETE_MAIN_IMPLEMENTATION_OR_REAL_ENVIRONMENT",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
-  "engine_runs": 0,
+  "engine_runs": 1,
   "full_mode_verified": false,
   "limitation_audit_status": "bounded_current_source_and_pinned_PR13_static_review_completed_no_runtime",
   "source_review": "SOURCE_REVIEW.md",
@@ -45,7 +46,7 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "MAIN-DELEGATE-CH-LIFECYCLE-20261113",
+  "last_completed_task": "MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
@@ -61,7 +62,8 @@
     "CH07_PRIVACY_NEGATIVE_MATRIX.json",
     "CH07_CLOSEOUT.md",
     "CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW_20261113.md",
-    "NEXT_ACTIONS.json"
+    "NEXT_ACTIONS.json",
+    "CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md"
   ],
   "validation": {
     "static_seed_pool": "checked",
@@ -113,6 +115,18 @@
       "complete_ch07_acceptance": 0,
       "real_client_delivery": "UNRUN",
       "independentQA": false
+    },
+    "offline_lifecycle_validation_20261113": {
+      "JVM_cases_passed": 7,
+      "Web_cases_passed": 8,
+      "final_failed": 0,
+      "Node_driver_runs": 1,
+      "successful_Java_driver_runs": 1,
+      "initial_compile_failure": 1,
+      "initial_failure": "Compiler exit1; initial stderr not printed. Research server socket close throws declaration corrected and diagnostics exposed; exact initial diagnostic not retained.",
+      "Android_JNI_radio_runs": 0,
+      "formal_CH07_new_acceptances": 0,
+      "independent_QA": false
     }
   },
   "session_closure": {
@@ -463,5 +477,65 @@
     "publication": "最新父树 + expected_sha + force=false；并发冲突先重读合并，发布后复读。",
     "boundary": "本授权是本线文件更新main授权；不据此扩大共享代码所有权、引擎运行、合并部署、APK、模式开放或候选规则采用。",
     "agreement": "worklines/chaos/PROJECT_WORK_AGREEMENT.md"
+  },
+  "latest_received_task_id": "MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113",
+  "latest_received_at_source_commit": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+  "engine_runs_scope": "One new Node research driver execution containing 8 actual Web/room cases; 7 JVM cases separately recorded. Historical nested counts retain their original scope.",
+  "offline_lifecycle_validation_20261113": {
+    "id": "MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113",
+    "date_local": "2026-11-13",
+    "source_handoff_head": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+    "status": "C1_C2_C3_BOUNDED_OFFLINE_COMPLETE",
+    "engine": {
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "branch": "codex/ch-lifecycle-verification-20261113",
+      "commit": "09af8bf1dae274e180d123370b86d444aafad4c9",
+      "readback_files": 6,
+      "production_changes": 0,
+      "existing_files_verified": 641
+    },
+    "report": "worklines/chaos/CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md",
+    "phases": [
+      {
+        "id": "C1-EOF-RECEIVER",
+        "status": "PASS_BOUNDED_PRODUCTION_PATH_WITH_SHIMS",
+        "cases": 5,
+        "result": "Full JSON EOF and full newline yield message; same bytes IOException, partial EOF and invalid version yield none."
+      },
+      {
+        "id": "C2-QUEUE-AND-LOCK",
+        "status": "PASS_CONDITIONAL_STREAM_MODEL_NOT_ANDROID_NATURAL_PROOF",
+        "cases": 2,
+        "result": "Actual join/single executor/BufferedWriter: old write exception before or after new attach; replacement remains CONNECTED. Socket close releases input but not pending output."
+      },
+      {
+        "id": "C3-WEB-BOUNDARY",
+        "status": "PASS_RECORDED_NATIVE_CALLBACKS_ACTUAL_WEB_AND_ROOM",
+        "cases": 8,
+        "result": "EOF/no-newline and full newline select shuffler; IOException/partial do not. Both cross-end replay orders send one action, no ping/retry; disconnect clears transient pending/unknown/id."
+      }
+    ],
+    "verification": {
+      "JVM_cases_passed": 7,
+      "Web_cases_passed": 8,
+      "final_failed": 0,
+      "Node_driver_runs": 1,
+      "successful_Java_driver_runs": 1,
+      "initial_compile_failure": 1,
+      "initial_failure": "Compiler exit1; initial stderr not printed. Research server socket close throws declaration corrected and diagnostics exposed; exact initial diagnostic not retained.",
+      "Android_JNI_radio_runs": 0,
+      "formal_CH07_new_acceptances": 0,
+      "independent_QA": false
+    },
+    "limits": [
+      "Narrow existing org.json shim, not full Android parser; Node production parser verifies valid fixture.",
+      "Virtual delayed runnable, explicit FIFO and always-queued MainActivity shim, not Android timing.",
+      "C2 output latch deliberately independent of socket close; real Bluetooth close/JNI semantics unverified.",
+      "C3 conditional two-end recording replay, only public hero-selection fixture; no all-action/terminal coverage.",
+      "No new result API, ledger, protocol, mode admission, scoring or NET changes."
+    ],
+    "previous_source_report_main_receipt": "RECEIVED_AS_DESIGN_CONSTRAINTS at d5d05f9 worklines/main/RESULT_RECONCILIATION_REVIEW.md",
+    "this_execution_main_receipt": "UNKNOWN",
+    "next": "BOUNDED_QUEUE_EXHAUSTED; await concrete main implementation/decision or real-environment task; do not repeat prior suites"
   }
 }

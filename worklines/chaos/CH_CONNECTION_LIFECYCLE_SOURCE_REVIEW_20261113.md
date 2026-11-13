@@ -137,3 +137,8 @@ J的flush记录保留完整JSON及换行，sendChecked返回unknown；R.channelC
 本任务源码审查与follow_on三规格均已完成；引擎/JVM/设备运行0，CH07新增正式验收0。源报告足以让主线避免把单io误作全局串行、把newline控制当生产未送达、把反射竞态当自然故障；实际readLoop/Handler/WebView时序仍需以上限定验证。
 
 主线可按到达增量采用本报告并结合半混乱候选形成最小兼容方案；本线不替主线实施、定协议或运行验证。后续只接具体新证据/冲突或新增授权任务。评分冻结、NET暂停、模式门禁、原资产与其他支线成果保持。
+
+## 9. 后续有源增量：离线执行（2026-11-13）
+
+以上 NOT_RUN/运行0 描述保留本来源审查交付时的历史范围。主线在 d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf 新委派受控离线包，本线已完成 C1/C2/C3；详见 [离线验证回传](CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md) 和固定引擎提交 [09af8bf](https://github.com/aaaycc931-droid/jieqi-engine/commit/09af8bf1dae274e180d123370b86d444aafad4c9)。
+7 JVM 与 8 Web 用例通过：完整无换行 EOF 经生产 readLoop 可投递并使真实房间选择 shuffler；同字节 IOException/partial EOF 不产生该选择。W2 仅在明示流关闭语义下通过生产入口形成旧发送晚于新 attach，非 Android 自然竞态证明；W3 仍仅回放，未证明真实陈旧回调越过新 CONNECTED。旧结果不撤销，完整设备验证和 CH07 验收不增加。

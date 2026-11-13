@@ -669,5 +669,71 @@
     "concurrent_commits": 2,
     "chaos_paths_changed": false,
     "other_line_changes": "Preserved in latest base tree; not claimed read/adopted"
+  },
+  "offline_lifecycle_validation_20261113": {
+    "id": "MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113",
+    "date_local": "2026-11-13",
+    "source_handoff_head": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+    "status": "C1_C2_C3_BOUNDED_OFFLINE_COMPLETE",
+    "engine": {
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "branch": "codex/ch-lifecycle-verification-20261113",
+      "commit": "09af8bf1dae274e180d123370b86d444aafad4c9",
+      "readback_files": 6,
+      "production_changes": 0,
+      "existing_files_verified": 641
+    },
+    "report": "worklines/chaos/CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md",
+    "phases": [
+      {
+        "id": "C1-EOF-RECEIVER",
+        "status": "PASS_BOUNDED_PRODUCTION_PATH_WITH_SHIMS",
+        "cases": 5,
+        "result": "Full JSON EOF and full newline yield message; same bytes IOException, partial EOF and invalid version yield none."
+      },
+      {
+        "id": "C2-QUEUE-AND-LOCK",
+        "status": "PASS_CONDITIONAL_STREAM_MODEL_NOT_ANDROID_NATURAL_PROOF",
+        "cases": 2,
+        "result": "Actual join/single executor/BufferedWriter: old write exception before or after new attach; replacement remains CONNECTED. Socket close releases input but not pending output."
+      },
+      {
+        "id": "C3-WEB-BOUNDARY",
+        "status": "PASS_RECORDED_NATIVE_CALLBACKS_ACTUAL_WEB_AND_ROOM",
+        "cases": 8,
+        "result": "EOF/no-newline and full newline select shuffler; IOException/partial do not. Both cross-end replay orders send one action, no ping/retry; disconnect clears transient pending/unknown/id."
+      }
+    ],
+    "verification": {
+      "JVM_cases_passed": 7,
+      "Web_cases_passed": 8,
+      "final_failed": 0,
+      "Node_driver_runs": 1,
+      "successful_Java_driver_runs": 1,
+      "initial_compile_failure": 1,
+      "initial_failure": "Compiler exit1; initial stderr not printed. Research server socket close throws declaration corrected and diagnostics exposed; exact initial diagnostic not retained.",
+      "Android_JNI_radio_runs": 0,
+      "formal_CH07_new_acceptances": 0,
+      "independent_QA": false
+    },
+    "limits": [
+      "Narrow existing org.json shim, not full Android parser; Node production parser verifies valid fixture.",
+      "Virtual delayed runnable, explicit FIFO and always-queued MainActivity shim, not Android timing.",
+      "C2 output latch deliberately independent of socket close; real Bluetooth close/JNI semantics unverified.",
+      "C3 conditional two-end recording replay, only public hero-selection fixture; no all-action/terminal coverage.",
+      "No new result API, ledger, protocol, mode admission, scoring or NET changes."
+    ],
+    "previous_source_report_main_receipt": "RECEIVED_AS_DESIGN_CONSTRAINTS at d5d05f9 worklines/main/RESULT_RECONCILIATION_REVIEW.md",
+    "this_execution_main_receipt": "UNKNOWN",
+    "next": "BOUNDED_QUEUE_EXHAUSTED; await concrete main implementation/decision or real-environment task; do not repeat prior suites",
+    "read_scope": [
+      "chaos entry/task/evidence_queue, state/next and prior return/receipt; current collaboration index unchanged; workflow and work agreement",
+      "main RESULT_RECONCILIATION_REVIEW and MODE_DISPATCH.evidence_queue",
+      "own lifecycle report complete; half-chaos contract identity/compatibility/failure scope",
+      "fixed native session/bridge and three research drivers complete; web event segment and extracted actual function source used by existing driver"
+    ],
+    "adopted": "New bounded execution authority and existing evidence constraints; no candidate protocol adoption",
+    "publication_base": "8736f240c44f6a6838ab57473e85bb14224d8777",
+    "concurrent_changes": "Hero-design and hero-pilot paths only; preserved, not claimed adopted"
   }
 }
