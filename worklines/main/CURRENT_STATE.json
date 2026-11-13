@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "active_mainline_local_result_integration",
+  "status": "active_mainline_local_result_draft_saved_browser_verification_next",
   "resume_date_local": "2026-10-30",
   "timezone": "Asia/Shanghai",
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
@@ -201,26 +201,16 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
+    "id": "MAIN-LOCAL-RESULT-BROWSER-VERIFY-20261113",
     "owner": "main",
-    "action": "主线在PR28父版隔离组合PR26的默认关闭host adapter，限定同一原请求、本机连接代次及原owner结果；明确动作覆盖/失效/预算并运行针对性验证。无远端身份或新wire保证，完成后阶段保存读回。",
-    "inputs": [
-      "PR26/e88a5a6bce6732a29e887b10636c827cd3f2eab5",
-      "C5/4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c + PR28/58cc324ddc616d14234d0a8b1ad34696393fb280",
-      "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
-      "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
-    ],
-    "parallel": "普通PR27新增具体复核输入已发布；其接收/执行待本线实际回执，不要求用户启动主线工程。",
-    "retained": "原56/64、客户端/真机/独立QA、UI历史修复及设计整合缺口保留；unknown不自动补交。",
-    "constraints": "评分原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/模式开放。",
-    "status": "IN_PROGRESS_ISOLATED_LOCAL_COMPOSITION"
+    "status": "READY_WITHIN_EXISTING_SCOPE",
+    "action": "在真实浏览器内对PR29的实际Web入口做有限验证：模块加载、发送前原文留存、断连历史标记、连接时排队消息与默认关闭的host路径；用明确本机桥替身，不冒充Android/无线。按具体新回传核受影响边界，不重复G4/G5或旧C1—C5。",
+    "engine_commit": "38d40fc2494ce5464af8f91405249f8511524bbf",
+    "draft_pr": 29,
+    "limits": "来宾权威结果/远端actor连续性与新wire尚无完整合同；本步不放开这些边界、不自动补交未知操作。评分原账本冻结、NET暂停、featuresReady=false；不合并/部署/APK/模式开放。"
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
-  "limitation_audit_status": {
-    "gate": "L3",
-    "status": "completed_current_bounded_implementation_partial_whole_mode",
-    "report": "worklines/main/R38_ENGINEERING_REVIEW.json#/latest_implementation/limitation_audit"
-  },
+  "limitation_audit_status": "partial: source and actual Node/VM/JVM model checks; no browser/device/independent QA; audit in worklines/main/BLUETOOTH_LOCAL_RESULT_INTEGRATION_20261113.md",
   "last_confirmed_decision": "CONF-THREE-MODE-H15-H06-PRESTART-RESTORE-UNUSED-20261017",
   "confirmed_at_local": "2026-10-17T20:56:40+08:00",
   "resume_after_quota_at_local": "2026-10-16T15:23:28+08:00",
@@ -2250,9 +2240,10 @@
     "next_action": "MAIN-STD-NP32-20261028"
   },
   "current_phase_authorization": {
-    "user_instruction": "进行下一步",
-    "inherited": "Persisted native send accounting task + shared technical implementation/draft/incremental handoff scope; existing freezes remain",
-    "actual_delta": "optional local sendChecked API, same v2 wire, current failed-stream quarantine and guarded Web unknown action handling; research/tests/evidence",
+    "user_instruction": "继续",
+    "appointment": "current user project instructions explicitly appoint this successor after prior session closeout",
+    "inherited": "same-scope main shared technical implementation, independent draft and GitHub maintenance; PROJECT_WORK_AGREEMENT and retained engineering breakpoint",
+    "actual_delta": "PR28-based isolated composition of PR26 optional host results with C5 native contexts and actual Web request retention; bounded tests and handoff",
     "new_gameplay_or_wire_schema_approval": 0
   },
   "standard_np32": {
@@ -3439,7 +3430,7 @@
       "APK_rebuilt": false
     }
   },
-  "current_dialogue_status": "active_main_successor_20261113_local_result_session",
+  "current_dialogue_status": "active_stage_saved_not_closed",
   "coordination_20261113": {
     "id": "MAIN-COORDINATION-RESUME-20261113",
     "date_local": "2026-11-13",
@@ -4181,7 +4172,7 @@
       "existing_entry_links": "OWNER_REPORTED_INSTALLED_SOME_ENTRIES",
       "exact_project_layout": "NOT_INDEPENDENTLY_VERIFIED",
       "new_templates_installed": "MAIN_OWNER_CONFIRMED_AND_EFFECTIVE_PROJECT_INSTRUCTIONS_OBSERVED_OTHER_PROJECTS_UNVERIFIED",
-      "fresh_chat_continue": "OBSERVED_THIS_FRESH_PROJECT_CHAT_SOURCE_RECOVERY_COMPLETE",
+      "fresh_chat_continue": "OBSERVED_ONE_SUCCESSFUL_NATURAL_NEW_PROJECT_CHAT",
       "main_conditional_appointment": "OWNER_ADOPTED_APPLIES_ONLY_WHEN_NEXT_DIALOGUE_RECEIVES_EFFECTIVE_INSTRUCTION_AND_CONTINUE_AFTER_CLOSEOUT",
       "main_project_instructions": {
         "owner_quote": "已更新，收束",
@@ -4211,16 +4202,17 @@
     "session_closed": true,
     "other_line_states_or_receipts_modified": false,
     "independent_ui_branch_written": false,
-    "receiver_adoption": "UNKNOWN",
+    "receiver_adoption": "THIS_SUCCESSOR_ACTUALLY_READ_AND_USED_ROUTING",
     "runtime_tests_run": 0,
     "source_and_route_checks": "See report; document-only, not frontend or product acceptance",
-    "closeout_ref": "worklines/main/SESSION_CLOSEOUT.json#/session_closeout_20261113_project_continuation"
+    "closeout_ref": "worklines/main/SESSION_CLOSEOUT.json#/session_closeout_20261113_project_continuation",
+    "fresh_chat_trial_ref": "worklines/main/CURRENT_STATE.json#/continuation_trial_20261113"
   },
   "continuation": {
     "workline": "main",
-    "session_status": "active_current_dialogue_main_local_result_session",
+    "session_status": "active_current_dialogue_stage_saved_not_closed",
     "workflow_ref": "docs/WORKFLOW.md#项目内新对话接续与收束",
-    "latest_stage_ref": "worklines/main/CURRENT_STATE.json#/continuation_trial_20261113",
+    "latest_stage_ref": "worklines/main/CURRENT_STATE.json#/local_result_integration_20261113",
     "next_action_ref": "worklines/main/CURRENT_STATE.json#/next_action",
     "latest_historical_closeout_ref": "worklines/main/SESSION_CLOSEOUT.json#/session_closeout_20261113",
     "retained_engineering_ref": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113/engineering_breakpoint",
@@ -4238,6 +4230,74 @@
     "scope": "one natural new-project-chat continuation; no frontend settings UI or other chats tested",
     "current_engineering_branch": "codex/main-local-result-session-20261113",
     "completed_item_repeated": false,
-    "other_workline_receipts_written": false
+    "other_workline_receipts_written": false,
+    "status": "COMPLETED_ONE_NATURAL_CONTINUATION",
+    "followed_engineering_breakpoint": true,
+    "report": "worklines/main/BLUETOOTH_LOCAL_RESULT_INTEGRATION_20261113.md"
+  },
+  "local_result_integration_20261113": {
+    "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
+    "date_local": "2026-11-13",
+    "status": "ISOLATED_IMPLEMENTATION_PUBLISHED_READBACK_BROWSER_PENDING",
+    "source_handoff_head": "06dedf4798e6150bcd7c57b0831ff7c332af91d7",
+    "successor_claim": "32b071e67d0eef50ec011b96189095c2925c5ed4",
+    "publication_parent": "4c1083b718995f78ffbe9d8cf34b6907d32dd9aa",
+    "report": "worklines/main/BLUETOOTH_LOCAL_RESULT_INTEGRATION_20261113.md",
+    "engine": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "parent": "58cc324ddc616d14234d0a8b1ad34696393fb280",
+      "adapter_source": "e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+      "commit": "38d40fc2494ce5464af8f91405249f8511524bbf",
+      "branch": "codex/main-local-result-session-20261113",
+      "draft_pr": 29,
+      "url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/29",
+      "merged": false
+    },
+    "implemented": [
+      "actual Web pre-send exact raw request retention, bounded FIFO and scoped native write evidence",
+      "optional original-host hero/resign result companion connected to final C5 event listener",
+      "CONNECTED event watermark preserves queued later messages; original owner/scope/generation bindings",
+      "retirement preserves local history while legacy gameplay continues; no guest authority inference or retry"
+    ],
+    "verification": {
+      "new_tests": 28,
+      "applicable_tests": 137,
+      "passed": 137,
+      "failed": 0,
+      "old_affected": 109,
+      "expected_mutant_failures": 2,
+      "expanded_run": {
+        "passed": 130,
+        "failed": 22,
+        "reason": "historical pre-C5 native source-hash guard"
+      },
+      "clean_PR28_parent": {
+        "passed": 0,
+        "failed": 22,
+        "same_hash_pair": true
+      },
+      "build": "PASS Node strip transpiler; not full TypeScript type check",
+      "engine_remote_readback": 19,
+      "unchanged_existing_paths_verified": 657,
+      "real_browser": false,
+      "Android_JNI_radio": false,
+      "independent_QA": false,
+      "full_suite_clean": false
+    },
+    "frontend_continuation": "one actual new project chat successfully resumed from the user's single 继续; not a settings UI or cross-account test",
+    "protected": {
+      "default_host_tracking": false,
+      "wire_version": 2,
+      "automatic_retry": false,
+      "guest_authoritative_result": false,
+      "new_gameplay_rules": 0,
+      "scoring": "frozen",
+      "NET": "paused",
+      "featuresReady": false,
+      "merge_deploy_APK": false,
+      "independent_UI_branch": "unmodified",
+      "other_workline_receipts": "not written"
+    },
+    "next_action_ref": "worklines/main/CURRENT_STATE.json#/next_action"
   }
 }

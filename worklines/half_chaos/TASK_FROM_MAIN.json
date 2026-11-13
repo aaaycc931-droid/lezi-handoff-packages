@@ -83,7 +83,7 @@
       "output": "同一候选报告追加反例检查及待主线取舍"
     }
   },
-  "active_main_dispatch": "host_adapter_review_20261113",
+  "active_main_dispatch": "local_result_integration_review_20261113",
   "evidence_queue_20261113": {
     "schema": "lezi.main.delegated_validation.v1",
     "date_local": "2026-11-13",
@@ -219,5 +219,26 @@
     "receiver_read_of_new_main_record": "UNKNOWN",
     "new_implementation_dispatched": false
   },
-  "latest_main_intake": "r60_main_intake_20261113"
+  "latest_main_intake": "r60_main_intake_20261113",
+  "local_result_integration_review_20261113": {
+    "id": "MAIN-HC-LOCAL-RESULT-OWNER-REVIEW-20261113",
+    "issued_by": "main",
+    "date_local": "2026-11-13",
+    "status": "NEW_CONCRETE_REVIEW_INPUT_AVAILABLE",
+    "main_report": "worklines/main/BLUETOOTH_LOCAL_RESULT_INTEGRATION_20261113.md",
+    "engine_commit": "38d40fc2494ce5464af8f91405249f8511524bbf",
+    "draft_pr": 29,
+    "base": "58cc324ddc616d14234d0a8b1ad34696393fb280",
+    "scope": "仅复核新增原owner/actor/scope/native事件绑定、hero/resign结果及失效/淘汰；PR26 ledger和原测试字节复用，勿重跑r60旧包凑数。",
+    "actions": [
+      "实际读PR29新增差分和报告，区分137当前通过与22父版已有旧证据绑定阻断",
+      "只有具体新缺陷假设再做最小反例；无新缺陷如实返回有界源审查，不扩样或声称全验",
+      "用本线原RETURN/自己的READ_RECEIPTS回传；不改共享生产，不替主线实施浏览器工作"
+    ],
+    "constraints": "继承评分/原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/新wire/自动重发",
+    "receiver_read": "UNKNOWN",
+    "receiver_adopted": "UNKNOWN",
+    "main_implementation_owner": "main",
+    "user_manual_wakeup_required_for_main_work": false
+  }
 }

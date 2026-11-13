@@ -5889,5 +5889,179 @@
       "新的游戏运行"
     ],
     "other_workline_receipts_written": false
+  },
+  "local_result_integration_20261113": {
+    "source_handoff_commit": "06dedf4798e6150bcd7c57b0831ff7c332af91d7",
+    "date_local": "2026-11-13",
+    "receiver_workline": "main",
+    "gate": "L3",
+    "collaboration_working_revision": "2026-10-23.v0.18",
+    "formal_baseline": "1.8.0",
+    "read_scope": [
+      "START_HERE.txt, AGENTS.md, docs/WORKFLOW.md full",
+      "CURRENT_STATE current continuation/next/stage/closure; SESSION_CLOSEOUT latest project-continuation object; CURRENT_HANDOFF current routes; RETURN and receipts relevant phase fields only, not full historical audit",
+      "PROJECT_WORK_AGREEMENT introduction and current 2026-11-13 scope; PROJECT_CONTINUATION_REVIEW and H10_FORWARD_AND_RETURN_INTAKE full",
+      "collaboration CURRENT full; integrated start/task routes, work-agreement startup/save, Github handoff, authorization, baseline protection, source/gate, limitations/verification/action resilience, continuity/completion sections",
+      "C5 CH_LOCAL_CONNECTION_GENERATION and HC_F1_FIX_AND_HOST_ADAPTER_REVIEW full; their earlier execution counts remain source-reported except explicitly rerun affected checks",
+      "PR26 host/ledger/test, PR28 Web send/final listener/C5 helpers/protocol and affected legacy host tests actual source review"
+    ],
+    "adopted_scope": "one genuine project continuation plus bounded original-owner local composition; no remote acceptance proof or gameplay migration",
+    "engine": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "parent": "58cc324ddc616d14234d0a8b1ad34696393fb280",
+      "adapter_source": "e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+      "commit": "38d40fc2494ce5464af8f91405249f8511524bbf",
+      "branch": "codex/main-local-result-session-20261113",
+      "draft_pr": 29,
+      "url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/29",
+      "merged": false
+    },
+    "engine_readback": [
+      {
+        "path": "src/bluetooth-host-room.ts",
+        "exact": true,
+        "sha": "c7cf305f7b509d03faf44c183f327056e272e62e"
+      },
+      {
+        "path": "src/host-result-ledger.ts",
+        "exact": true,
+        "sha": "e0612e8f2e4c6977517f729c9800b068ff957143"
+      },
+      {
+        "path": "src/bluetooth-local-results.ts",
+        "exact": true,
+        "sha": "54b6c7db048131af2ecd32bfccf7a754ed1f53b7"
+      },
+      {
+        "path": "web/app.ts",
+        "exact": true,
+        "sha": "c0a267e106120b81c335e1da930cee304a36fc70"
+      },
+      {
+        "path": "tests/host-result-adapter.test.ts",
+        "exact": true,
+        "sha": "7913a0f4800118d0d489d6c1414bd1bcbcd7f9b6"
+      },
+      {
+        "path": "tests/bluetooth-local-results.test.ts",
+        "exact": true,
+        "sha": "920684e33343a4e2951fa81b423e7dae3896ec2d"
+      },
+      {
+        "path": "scripts/research/bluetooth-receipt-channel.ts",
+        "exact": true,
+        "sha": "7d2a546da8a02fd3a58f841cea9c2aafdadc403f"
+      },
+      {
+        "path": "scripts/research/ch-generation-channel.ts",
+        "exact": true,
+        "sha": "ecae8f591e0ed019cd7f21cacd5956a1dfcecd77"
+      },
+      {
+        "path": "scripts/research/committed-output-channel.ts",
+        "exact": true,
+        "sha": "95ebb00fc75e295841eae87bcc49f31333c84e8e"
+      },
+      {
+        "path": "scripts/research/local-result-fault-controls.py",
+        "exact": true,
+        "sha": "60e73ad3acbb906f4330e17114456b8f75f563b4"
+      },
+      {
+        "path": "review/main-local-results/BASELINE.json",
+        "exact": true,
+        "sha": "1566506f5fd166014f414416e087184c38913c13"
+      },
+      {
+        "path": "review/main-local-results/BASELINE_STALE_EVIDENCE.tap",
+        "exact": true,
+        "sha": "0f9227aa5fa3581cdf88bf01963f33024db8ee62"
+      },
+      {
+        "path": "review/main-local-results/BUILD.txt",
+        "exact": true,
+        "sha": "7816bb9751ba22bffa75a61b8caf19d7f5563fb8"
+      },
+      {
+        "path": "review/main-local-results/EXPANDED_INITIAL.tap",
+        "exact": true,
+        "sha": "b232d381a64cfecbcda272040d169758e486ccd7"
+      },
+      {
+        "path": "review/main-local-results/FAULT_CONTROLS.json",
+        "exact": true,
+        "sha": "1f8103ea1acc96d2c7663a6443bf24a2b9588e65"
+      },
+      {
+        "path": "review/main-local-results/README.md",
+        "exact": true,
+        "sha": "5879e2ad7fe3003b257d94794078df9dbcb3921a"
+      },
+      {
+        "path": "review/main-local-results/RESULTS.json",
+        "exact": true,
+        "sha": "69525a1cef2748688a1191f65248c3f834d7e51e"
+      },
+      {
+        "path": "review/main-local-results/TESTS.tap",
+        "exact": true,
+        "sha": "e3160ad37915f784e3a9bb63fa3182489321e2a2"
+      },
+      {
+        "path": "review/main-local-results/MANIFEST.json",
+        "exact": true,
+        "sha": "d5fc38c1f5dfa6112801ecb3d275ac0bd17d22a2"
+      }
+    ],
+    "new_runtime": {
+      "new_tests": 28,
+      "applicable_tests": 137,
+      "passed": 137,
+      "failed": 0,
+      "old_affected": 109,
+      "expected_mutant_failures": 2,
+      "expanded_run": {
+        "passed": 130,
+        "failed": 22,
+        "reason": "historical pre-C5 native source-hash guard"
+      },
+      "clean_PR28_parent": {
+        "passed": 0,
+        "failed": 22,
+        "same_hash_pair": true
+      },
+      "build": "PASS Node strip transpiler; not full TypeScript type check",
+      "engine_remote_readback": 19,
+      "unchanged_existing_paths_verified": 657,
+      "real_browser": false,
+      "Android_JNI_radio": false,
+      "independent_QA": false,
+      "full_suite_clean": false
+    },
+    "return_freshness": {
+      "commit_queries_at": "06dedf4798e6150bcd7c57b0831ff7c332af91d7",
+      "result": "standard/chaos/half_chaos/hero_pilot/hero_design RETURN files unchanged since previous received phases; no new implementation package found"
+    },
+    "UI": {
+      "branch": "ui/restart-asof-20261104-1119",
+      "commit": "82785937c284720e1f770ad7dadd9c0b1c41b87b",
+      "read_scope": "START_HERE lines1-65",
+      "observed": "homepage v6-4 selection and H01 presentation options are current navigation; not old v4 task",
+      "adoption": "navigation/protection only; no art/body/code approval"
+    },
+    "concurrent_hero_pilot_closeout": {
+      "commit": "4c1083b718995f78ffbe9d8cf34b6907d32dd9aa",
+      "read": "worklines/hero-pilot/CONTEXT_LIMIT_CLOSEOUT_20261113.md full; diff paths of three closeout files",
+      "adopted": "emergency closeout and unverified artwork recovery gap; preserve source branch and unknown original-session work",
+      "qualification": "side session could not verify main reception of 5ab688c; main already received its bounded repair source in H10_FORWARD_AND_RETURN_INTAKE at 4c93812. This receipt adds no new runtime or art acceptance."
+    },
+    "not_claimed": [
+      "other projects or accounts successfully continued",
+      "real browser/Android/radio/independent QA",
+      "fresh successful old native source-hash suite",
+      "other workline reading/adoption or automatic wakeup",
+      "new wire/identity contract, mode opening, merge/deployment/APK"
+    ],
+    "other_workline_receipts_written": false
   }
 }

@@ -1,7 +1,7 @@
 《乐子象棋》主线固定入口
 
 先核本仓库main最新HEAD，再按以下当前路由读取；入口只维护导航，不累计每阶段摘要。
-1. 身份与授权：AGENTS.md、worklines/main/PROJECT_WORK_AGREEMENT.md。仅有明确用户任命的对话担任主线；本轮已受任命主线现已按用户要求收束。用户已确认采用主线项目说明，后续新对话须核其实际收到的条件任命、旧主线收束及并发状态；仓库模板本身不是任命。评分原账本冻结、NET暂停及原审批边界保持。
+1. 身份与授权：AGENTS.md、worklines/main/PROJECT_WORK_AGREEMENT.md。仅有明确用户任命的对话担任主线；上一主线已收束，本次新对话实际收到条件任命并以“继续”接任，已记录一次自然接续。当前主线仍在施工，阶段保存不代表收束；并发对话不得自动抢占，仓库模板本身不是任命。评分原账本冻结、NET暂停及原审批边界保持。
 2. 当前断点：worklines/main/CURRENT_STATE.json#/continuation → #/next_action；阶段来源见该continuation.latest_stage_ref。当前状态优先于旧session_closure中已完成的下一步。暂停工程时保留的工程断点也在continuation中。
 3. 换对话与增量保存：docs/WORKFLOW.md“项目内新对话接续与收束”；一次配置见docs/COORDINATION_SETUP.md。只结束当前对话，不影响其他线；阶段保存不等于收束。旧对话收束原件仍在CURRENT_STATE.session_closure所指向的位置，按作用域读取，不从旧启动词重做已完成工程。
 4. 本线来源与接收：CURRENT_HANDOFF.json、worklines/main/RETURN_TO_MAIN.json、worklines/main/READ_RECEIPTS.json；再按当前任务读取相关原正文、代码HEAD、各线TASK/RETURN及授权。只记实际读取/采用，不替其他对话写回执，不要求用户例行转贴入库材料。
@@ -10,7 +10,7 @@
 7. 独立UI设计来源：另核ui/restart-asof-20261104-1119最新HEAD及worklines/ui/START_HERE.txt。图片和世界观/英雄文字按各自track读取；main同路径不能替代设计分支，禁止整树覆盖。
 8. 发布：最新父树＋expected_sha＋force=false，冲突重读合并，阶段完成读回；新对话读取、采用、前端配置与效果分别验证。
 
-2026-11-13用户回复“已更新，收束”：主线项目说明已由用户确认更新，当前对话实际收到对应指令；本对话现已结束，其他线不暂停。最新收束从CURRENT_STATE.session_closure定位；同一主线项目的新对话只需“继续”，实际核新来源并验证接续，再沿当前路由处理保留工程。全新对话效果尚未实测，不能把历史G4/G5重新列为待做。
+2026-11-13新对话已实际用“继续”恢复主线并完成一次自然接续验证。当前阶段见CURRENT_STATE.local_result_integration_20261113：蓝牙原请求留存与可选房主本机结果接合已发布独立草稿PR29，下一按next_action进行真实浏览器有限验证。本轮仅阶段保存，当前对话未收束；上一对话收束保留为历史，其他工作线不暂停。历史G4/G5及C5旧包不重做。
 
 整理前入口及阶段历史：
 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/4c93812a5e357e5c14e4b2831a46b146d6f4a9ba/worklines/main/START_HERE.txt
