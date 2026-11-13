@@ -3,12 +3,12 @@
   "tasks": [
     {
       "id": "UI-STYLE-001",
-      "status": "candidate_created_pending_user_review",
-      "work": "以已获认可的新画风制作具体游戏页面，一次一张审阅",
-      "current_item": "UI-HOME-NEWSTYLE-v1",
-      "deliverable": "一张游戏首页／主菜单完整UI初稿",
-      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json",
-      "acceptance": "用户评价具体页面的标题、字体、按钮、布局与背景搭配；画风认可不等于完整页面批准。"
+      "status": "three_candidates_pending_user_direction_selection",
+      "work": "首页字体与按钮的三方向对比，等待用户偏好",
+      "current_item": "UI-HOME-NEWSTYLE-v2-comparison",
+      "deliverable": "A轻墨行楷、B清雅书卷、C融景笔意三张完整首页比较稿",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v2/comparison.json",
+      "acceptance": "用户选择更合口味的字体/按钮方向或提出组合；不是任何候选自动批准。"
     },
     {
       "id": "UI-001",
@@ -81,18 +81,27 @@
   "planned_tasks_are_not_completed_designs": true,
   "snapshot_date": "2026-11-13",
   "paused_by_user": false,
-  "resume_item": "UI-HOME-NEWSTYLE-v1",
+  "resume_item": "UI-HOME-NEWSTYLE-v2-comparison",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
   "handoff_requested": true,
   "automatic_resume_scheduled": false,
   "next_queue": [
     {
+      "item": "UI-HOME-NEWSTYLE-v2-comparison",
+      "state": "首页字体与按钮融合背景的三方向对比",
+      "status": "three_candidates_pending_user_direction_selection",
+      "scope": "同一首页、相同功能与主要构图，只探索文字和按钮的视觉融合",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v2/comparison.json"
+    },
+    {
       "item": "UI-HOME-NEWSTYLE-v1",
       "state": "乐子象棋首页／主菜单：新画风完整初稿",
-      "status": "candidate_created_pending_user_review",
+      "status": "revision_requested_buttons_and_typography",
       "scope": "new_style_homepage_full_UI_mockup",
-      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json"
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json",
+      "active_for_current_dialogue": false,
+      "followup_comparison": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v2/comparison.json"
     },
     {
       "item": "UI-STYLE-WINTER-BG-v1",
@@ -193,9 +202,26 @@
     "correction_record": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113"
   },
   "active_ui_image_task": {
-    "id": "UI-HOME-NEWSTYLE-v1",
-    "status": "candidate_created_pending_user_review",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json",
-    "next_action": "用户审阅这一张新画风首页完整初稿，反馈标题、按钮样式、布局和背景搭配；根据具体反馈一次一图迭代，页面尚未批准，不自动推进其它页面。"
+    "id": "UI-HOME-NEWSTYLE-v2-comparison",
+    "status": "three_candidates_pending_user_direction_selection",
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v2/comparison.json",
+    "members": [
+      {
+        "id": "UI-HOME-NEWSTYLE-v2A",
+        "label": "A",
+        "name": "轻墨行楷"
+      },
+      {
+        "id": "UI-HOME-NEWSTYLE-v2B",
+        "label": "B",
+        "name": "清雅书卷"
+      },
+      {
+        "id": "UI-HOME-NEWSTYLE-v2C",
+        "label": "C",
+        "name": "融景笔意"
+      }
+    ],
+    "next_action": "用户比较首页A轻墨行楷、B清雅书卷、C融景笔意，选择更喜欢的字体/按钮方向或提出组合反馈；三个候选均未批准，选定后继续细化这一页。"
   }
 }
