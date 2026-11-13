@@ -1,5 +1,7 @@
 # H05｜2026-11-13 已确认重复采样 B 后：历史累计、事件去重与采样机会数
 
+> **2026-11-13 阶段等价性勘误（保留历史原文）**：本文件 §5 的标准开局16手「P5」只在**普通棋盘+下一行动方**简化键下成立；初始红方普通开局与后续红方H05 begin前专属窗口不能无证视为同一个来源合法采样阶段，故**不证明正式重复判和的第五次有效出现**。本文件 §4 所述「两个机会A/B待选」也已由用户后续选择**A（各自合法稳定点分别采样、每机会至多一次）**。最新设计见 [H05 整合规则 §§13—14](formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md)，更强的20手阶段感知条件反例及12项合成账本见 [专项复核](H05_TWO_SAMPLE_PHASE_TERMINAL_AND_DEDUP_20261113.md)。**旧实验原始过程保留为历史取证，不得沿用其无相位限定的判和推论。**
+
 - **归属**：独立英雄设计支线（研究及用户确认的设计条文）。主线接收暂停、评分冻结、NET暂停保留；**不属于**共享裁判/引擎验收或正式代码实现。
 - **读取基准**：开始 `main` HEAD `21bfd1a444e488894d864fad7296c6c84d87c5fb`；本线 H05 当前完整设计文件 `formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md`、上一专项 `H05_CAPTURE_REWRITE_AND_REPETITION_SAMPLING_20261113.md`；`worklines/main/ADJUDICATION.json` 对应 `unified_adjudication_core.repetition_*`、`time_skill_formal_adjudication_samples`、正式终局优先与历史消灭重置条款。
 - **本轮用户原话**：「选择 B：H05 专属 begin 前窗口先于该交接点尚未完成的重复局面采样与判和；合法成功后按新历史采样，放弃或失败则按原历史正常采样。继续检查历史累计和去重。」此 B 已作为**新确认**追加 H05 正式英雄设计正文 **§13**。
