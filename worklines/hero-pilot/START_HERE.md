@@ -1,3 +1,6 @@
+【2026-11-13 执行者已完成换轨反馈修复】
+专属分支5ab688c已发布并逐一读回14个变更文件，原PR23已更新。真实双端显示、重复/失败与普通走子反馈已核：155项相关回归、10项DOM、3项王安全探针复跑及构建通过。见[VISUAL_REPAIR](VISUAL_REPAIR.md)与最新回传；下方为本轮派发来源，不代表修复仍未执行。下一可独立进行司衡美术，真实浏览器/真人强度/全面QA仍保留。
+
 【2026-11-13 主线已接收司衡候选｜直接修换轨反馈】
 先读TASK_FROM_MAIN.json#main_visual_repair_20261113及../main/reviews/hero-pilot/INTAKE_REPORT.md。主线子代理另行复跑34专项、3有界王安全探针、原4 DOM检查，并复现换轨真实端点(0,6)/(2,6)却把(0,0)标为上一手起终点。此为合成fixture上真实页面模块反馈错误，不是设计被否决。按既有单英雄自主设计/工程授权在自己的PR23分支做最小修复及实际DOM断言，不等用户逐项批准、主线结果协议或浏览器环境。保留尚未回传成果；若已修先查较新commit再核验，避免重做。修后仍可自主推进本英雄最终美术等独立事项，真实浏览器/真人强度/独立QA分别保留；不合并部署。实际新任务已读/执行由本线回执，不由主线预填。
 
@@ -21,4 +24,4 @@
 
 固定产物：DESIGN.md、IMPLEMENTATION.md、BALANCE.md、VALIDATION.json及上述状态/回执。尚未生成的产物不要用空文件冒充完成。阶段保存源版本、真实运行命令/结果和剩余限制；发布后读回，主线自行接收。工程draft PR保持仅本英雄增量，无合并部署/APK授权。
 
-**当前真实状态（2026-11-13执行者回传）：司衡／世界E悬衡界已自主定稿，真实引擎代码及局部证据已发布至专属分支，draft PR #23；全回归1025项、最终专项34项、18局演练及4项DOM交互通过。真实浏览器/触摸、最终立绘、真人强度与独立QA尚未完成；未合并部署。** 详见[DESIGN](DESIGN.md)、[IMPLEMENTATION](IMPLEMENTATION.md)、[BALANCE](BALANCE.md)、[VALIDATION](VALIDATION.json)及[RETURN_TO_MAIN](RETURN_TO_MAIN.json)。主线接收/采用仍UNKNOWN。
+**当前真实状态（2026-11-13执行者回传）：司衡／世界E悬衡界已自主定稿，真实引擎代码及局部证据已发布至专属分支，draft PR #23；全回归1025项、最终专项34项、18局演练及4项DOM交互通过。真实浏览器/触摸、最终立绘、真人强度与独立QA尚未完成；未合并部署。** 详见[DESIGN](DESIGN.md)、[IMPLEMENTATION](IMPLEMENTATION.md)、[BALANCE](BALANCE.md)、[VALIDATION](VALIDATION.json)及[RETURN_TO_MAIN](RETURN_TO_MAIN.json)。v1主线有限接收已见INTAKE_REPORT；本轮新修复接收仍UNKNOWN。

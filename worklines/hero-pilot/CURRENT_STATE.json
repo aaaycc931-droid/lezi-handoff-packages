@@ -2,7 +2,7 @@
   "schema": "lezi.hero_pilot.state.v1",
   "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
   "updated_by": "hero_pilot_executor",
-  "status": "ENGINEERING_CANDIDATE_WITH_BROWSER_QA_GAP",
+  "status": "VISUAL_REPAIR_DELIVERED_BROWSER_QA_GAP",
   "task": "TASK_FROM_MAIN.json",
   "designer_brief": "DESIGNER_BRIEF.md",
   "count": 1,
@@ -17,11 +17,12 @@
     "note": "不从较旧main重新造现有工程；不合并整条PR链；draft PR优先对固定开发基线展示本英雄增量，基线后移先核差分。",
     "setup_commit": "7f47b740b01b9a1e6ef126fc9e2628682b603e6d",
     "setup_verification": "one entry-only file read back exact; no hero code/tests delivered",
-    "delivery_commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
+    "delivery_commit": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
     "draft_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23",
     "published": true,
-    "readback": "20 files exact blob match",
-    "base_latest_recheck": "71145df45ad17215a3731e53150b6728e079e375"
+    "readback": "14 followup files exact blob match",
+    "base_latest_recheck": "71145df45ad17215a3731e53150b6728e079e375",
+    "previous_delivery_commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3"
   },
   "world": {
     "work_id": "EXP-HERO-001",
@@ -47,9 +48,12 @@
     "global_balance_accepted": false,
     "independent_QA": false,
     "deployed": false,
-    "portrait": "TEXT_DESIGN_ONLY_EXISTING_PLACEHOLDER"
+    "portrait": "TEXT_DESIGN_ONLY_EXISTING_PLACEHOLDER",
+    "swap_feedback_repaired": true,
+    "latest_dom_checks": 10,
+    "latest_targeted_regression_pass": 155
   },
-  "next_action": "主线定向审查PR23增量与证据；下一执行环境可运行浏览器时补真实画面/触摸试玩，再安排有对手主动反制的真人换边实战。英雄创意/参数已自主定稿，不等待用户逐项审批。未合并、未部署。",
+  "next_action": "本线可独立推进司衡最终立绘与小尺寸资产：先读独立UI最新入口及英雄风格规则，再按受托设计权制作和验证；主线并行定向接收本次反馈修复。真实浏览器/触摸、真人强度与完整独立QA分开保留。",
   "protected": {
     "other_worklines": true,
     "score_ledger": "frozen",
@@ -64,6 +68,21 @@
     "VALIDATION.json",
     "READ_RECEIPTS.json",
     "RETURN_TO_MAIN.json",
-    "SESSION_CLOSEOUT.json"
-  ]
+    "SESSION_CLOSEOUT.json",
+    "VISUAL_REPAIR.md"
+  ],
+  "active_dispatch": {
+    "id": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113",
+    "read": true,
+    "executed": true,
+    "status": "IMPLEMENTED_AND_VERIFIED",
+    "source": "04ae7489b0577f93fa074ae3854f8caf823253ee",
+    "report": "VISUAL_REPAIR.md"
+  },
+  "main_v1_intake": {
+    "source": "04ae7489b0577f93fa074ae3854f8caf823253ee",
+    "report": "worklines/main/reviews/hero-pilot/INTAKE_REPORT.md",
+    "received": true,
+    "full_independent_QA": false
+  }
 }

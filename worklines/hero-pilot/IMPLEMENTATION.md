@@ -1,3 +1,7 @@
+# 最新追加：换轨反馈修复
+
+当前代码已推进至 `5ab688c96f4960aad70467e7e4c15c21dc55a2e1`，见[VISUAL_REPAIR.md](VISUAL_REPAIR.md)。双端标记与公开动作元数据修复不改变技能规则；本轮155项定向回归、10项DOM检查、3项王安全探针及构建通过。下文1025项/34项与18局为v1历史验证，未在本轮全部重跑。试玩入口和运行方式保持。
+
 # 司衡 v1｜工程与试玩
 
 专属分支：`aaaycc931-droid/jieqi-engine` → `codex/autonomous-hero-01-20261113`。固定开发基线为 PR22 的 `71145df45ad17215a3731e53150b6728e079e375`，入口初始化为 `7f47b740b01b9a1e6ef126fc9e2628682b603e6d`。交付 SHA 和 draft PR 以 CURRENT_STATE.json / RETURN_TO_MAIN.json 的实际发布记录为准。
