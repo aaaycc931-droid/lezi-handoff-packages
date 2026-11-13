@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "current_dialogue_closed_main_project_instructions_confirmed_new_chat_trial_pending",
+  "status": "active_mainline_local_result_integration",
   "resume_date_local": "2026-10-30",
   "timezone": "Asia/Shanghai",
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
@@ -201,19 +201,19 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-PROJECT-CONTINUE-TRIAL-20261113",
-    "owner": "next_main_dialogue",
-    "action": "在同一已配置主线项目的新对话收到“继续”后，核最新main HEAD、固定入口、本次收束及较新相关回传；核实际生效的条件任命与旧主线已收束，记录一次真实接续结果，再沿保留的蓝牙最小接合断点继续同范围已授权工作。不要重做G4/G5、C5或另起全系统流程审计，也不要求用户转贴长交接词或再启动支线来执行主线工程。",
-    "status": "WAIT_NEXT_PROJECT_CHAT_CONTINUE",
-    "entry": "worklines/main/START_HERE.txt",
-    "closeout_ref": "worklines/main/SESSION_CLOSEOUT.json#/session_closeout_20261113_project_continuation",
-    "retained_engineering_ref": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113/engineering_breakpoint",
-    "acceptance": [
-      "新对话实际收到主线固定身份和条件任命，且没有另一仍在施工的主线被抢占",
-      "实际读取最新GitHub来源，恢复当前断点并区分历史已完成项",
-      "不要求用户搬运已入库报告；只登记接手者自己的实际读取与采用"
+    "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
+    "owner": "main",
+    "action": "主线在PR28父版隔离组合PR26的默认关闭host adapter，限定同一原请求、本机连接代次及原owner结果；明确动作覆盖/失效/预算并运行针对性验证。无远端身份或新wire保证，完成后阶段保存读回。",
+    "inputs": [
+      "PR26/e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+      "C5/4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c + PR28/58cc324ddc616d14234d0a8b1ad34696393fb280",
+      "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
+      "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
     ],
-    "constraints": "本轮只收束，不启动下一工程；新对话“继续”沿既有授权接续，不批准合并、部署、APK、模式开放、新玩法或NET恢复。若下一实际指令有变，按当时用户指令执行。"
+    "parallel": "普通PR27新增具体复核输入已发布；其接收/执行待本线实际回执，不要求用户启动主线工程。",
+    "retained": "原56/64、客户端/真机/独立QA、UI历史修复及设计整合缺口保留；unknown不自动补交。",
+    "constraints": "评分原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/模式开放。",
+    "status": "IN_PROGRESS_ISOLATED_LOCAL_COMPOSITION"
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -230,7 +230,7 @@
   "publication_parent_commit": "562c41dadbbbef67ba0612b1b32791321d5c8c38",
   "unread_concurrent_returns": [],
   "latest_return_observation_commit": "2b521ba0cfde1c6cf3aa0fc1b2168fe8d0e37c21",
-  "current_phase": "MAIN-PROJECT-CONTINUATION-20261113",
+  "current_phase": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -3439,7 +3439,7 @@
       "APK_rebuilt": false
     }
   },
-  "current_dialogue_status": "active_mainline_workflow_review_not_closed",
+  "current_dialogue_status": "active_main_successor_20261113_local_result_session",
   "coordination_20261113": {
     "id": "MAIN-COORDINATION-RESUME-20261113",
     "date_local": "2026-11-13",
@@ -4181,7 +4181,7 @@
       "existing_entry_links": "OWNER_REPORTED_INSTALLED_SOME_ENTRIES",
       "exact_project_layout": "NOT_INDEPENDENTLY_VERIFIED",
       "new_templates_installed": "MAIN_OWNER_CONFIRMED_AND_EFFECTIVE_PROJECT_INSTRUCTIONS_OBSERVED_OTHER_PROJECTS_UNVERIFIED",
-      "fresh_chat_continue": "NOT_RUN",
+      "fresh_chat_continue": "OBSERVED_THIS_FRESH_PROJECT_CHAT_SOURCE_RECOVERY_COMPLETE",
       "main_conditional_appointment": "OWNER_ADOPTED_APPLIES_ONLY_WHEN_NEXT_DIALOGUE_RECEIVES_EFFECTIVE_INSTRUCTION_AND_CONTINUE_AFTER_CLOSEOUT",
       "main_project_instructions": {
         "owner_quote": "已更新，收束",
@@ -4218,14 +4218,26 @@
   },
   "continuation": {
     "workline": "main",
-    "session_status": "closed_this_dialogue_only_wait_next_project_chat_continue",
+    "session_status": "active_current_dialogue_main_local_result_session",
     "workflow_ref": "docs/WORKFLOW.md#项目内新对话接续与收束",
-    "latest_stage_ref": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113",
+    "latest_stage_ref": "worklines/main/CURRENT_STATE.json#/continuation_trial_20261113",
     "next_action_ref": "worklines/main/CURRENT_STATE.json#/next_action",
     "latest_historical_closeout_ref": "worklines/main/SESSION_CLOSEOUT.json#/session_closeout_20261113",
     "retained_engineering_ref": "worklines/main/CURRENT_STATE.json#/project_continuation_20261113/engineering_breakpoint",
     "priority": "Resolve current state and newer task/confirmation sources first; historical closeout does not restart completed G4/G5.",
     "ownership": "用户已实际采用主线条件任命文字；仅对在该项目内收到该有效指令、旧主线已收束后由用户说“继续”启动的新对话生效。仓库模板本身不是任命；既有支线不改主线，不抢占并发主线。",
     "latest_closeout_ref": "worklines/main/SESSION_CLOSEOUT.json#/session_closeout_20261113_project_continuation"
+  },
+  "continuation_trial_20261113": {
+    "id": "MAIN-PROJECT-CONTINUE-TRIAL-20261113",
+    "source_commit": "06dedf4798e6150bcd7c57b0831ff7c332af91d7",
+    "user_quote": "继续",
+    "effective_conditional_appointment_observed": true,
+    "previous_session_closed": true,
+    "concurrent_active_main_claim_found": false,
+    "scope": "one natural new-project-chat continuation; no frontend settings UI or other chats tested",
+    "current_engineering_branch": "codex/main-local-result-session-20261113",
+    "completed_item_repeated": false,
+    "other_workline_receipts_written": false
   }
 }
