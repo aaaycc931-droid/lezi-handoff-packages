@@ -2,9 +2,9 @@
   "schema": "lezi.workline_return.v1",
   "from_workline": "half_chaos",
   "to_workline": "main",
-  "base_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
-  "revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
-  "phase": "F1_FIX_RECEIVED_AND_PR26_BOUNDED_SOURCE_REVIEW_COMPLETE",
+  "base_commit": "a2d2ddf9562d098be10400480e113af15d8d61fd",
+  "revision": "HC-SESSION-CLOSEOUT-20261113-r61",
+  "phase": "USER_REQUESTED_SESSION_CLOSEOUT",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
   "current_breakpoint": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
@@ -12,29 +12,13 @@
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
   "changes": [
-    "F1原缺字段修复4项通过；r59旧证据保留",
-    "真实host适配7方面源码核对，无新增确认缺陷；主线34通过未由本线重跑"
+    "用户要求本对话收束；保存r58/r59/r60实际成果、授权、未验范围和新对话入口"
   ],
   "source_and_confirmation_scope": "Existing D01 five original approvals/H03 half-chaos/H04 retained within exact guards; no new consumption. r30 exact1.61 H15 remains unchanged; withdrawn proposals remain withdrawn; M04 original three-line wording retained.",
   "actual_validation": {
-    "new_repair_controls": 4,
-    "passed": 4,
-    "failed": 0,
-    "original_missing_variants_rejected": 2,
-    "PR26_runtime_tests_run_here": 0,
-    "PR26_main_reported_passes": 34,
-    "new_confirmed_PR26_defects": 0,
-    "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
-    "engine_readback_files": 3,
-    "engine_readback_match": true,
-    "old_suites_rerun": false,
-    "production_changes": 0,
-    "PR24_PR26_implementation_changes": 0,
-    "formal56_complete": 0,
-    "formal64_pass": 0,
-    "actual_half_chaos_client_deliveries": 0,
-    "independent_QA": false,
-    "device_runs": 0
+    "closeout_source_and_json_checks": "completed",
+    "new_engine_runs": 0,
+    "prior_r60_validation": "preserved in r60_to_main and closeout record"
   },
   "unrun": [
     "半混乱实际客户端原110刺激/56完整/64正式验收",
@@ -339,7 +323,7 @@
       }
     }
   },
-  "publication_parent_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
+  "publication_parent_commit": "796fa76f9110ed999545956212a7abaf814aedc4",
   "previous_r21_return": {
     "commit": "3f686030bf7ab18b442d72d4cb5e6afa0c46da02",
     "phase": "M01_M08_D01_coverage_audit",
@@ -2891,5 +2875,186 @@
       "owner": "half_chaos targeted review; main shared implementation",
       "action": "两段已完成；下一只接主线具体host/wire/调用合同/生命周期差分或可复现新问题，核受影响边界。不重复旧矩阵、不循环自审或自动轮询。"
     }
+  },
+  "r61_previous_navigation": {
+    "revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "phase": "F1_FIX_RECEIVED_AND_PR26_BOUNDED_SOURCE_REVIEW_COMPLETE",
+    "current_breakpoint": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
+    "changes": [
+      "F1原缺字段修复4项通过；r59旧证据保留",
+      "真实host适配7方面源码核对，无新增确认缺陷；主线34通过未由本线重跑"
+    ],
+    "actual_validation": {
+      "new_repair_controls": 4,
+      "passed": 4,
+      "failed": 0,
+      "original_missing_variants_rejected": 2,
+      "PR26_runtime_tests_run_here": 0,
+      "PR26_main_reported_passes": 34,
+      "new_confirmed_PR26_defects": 0,
+      "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+      "engine_readback_files": 3,
+      "engine_readback_match": true,
+      "old_suites_rerun": false,
+      "production_changes": 0,
+      "PR24_PR26_implementation_changes": 0,
+      "formal56_complete": 0,
+      "formal64_pass": 0,
+      "actual_half_chaos_client_deliveries": 0,
+      "independent_QA": false,
+      "device_runs": 0
+    },
+    "base_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
+    "publication_parent_commit": "6530871c3042fd21c55e0742602f42d662a3935e"
+  },
+  "session_closure": {
+    "id": "HC-SESSION-CLOSEOUT-20261113-r61",
+    "date_local": "2026-11-13",
+    "timezone": "Asia/Shanghai",
+    "user_request": "收束本对话，我会在新对话中继续",
+    "scope": "close this half_chaos conversation only; not project or other lines",
+    "source_handoff_head": "a2d2ddf9562d098be10400480e113af15d8d61fd",
+    "last_completed_revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "last_completed_handoff_commit": "bad545df81d878d4da3eab9c2e3a5d0759b995cb",
+    "engine_branch": "codex/hc-result-evidence-20261113",
+    "latest_engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+    "preserved_stages": [
+      {
+        "revision": "r58",
+        "handoff_commit": "fee354a6f4b9db270973b427ee20cb13fbd45d1e",
+        "engine_commit": "9f0b14ccb02308fd3579e3cf58cde063aca11cf6",
+        "result": "H1/H2/H3 offline package 13/13; scope limits remain in original report"
+      },
+      {
+        "revision": "r59",
+        "handoff_commit": "6fb9a01ab58cdf92c8fa297c7ebbcc606a7db5f0",
+        "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+        "result": "4 observation controls; 1 F1 guard gap in 2 variants, not 4 product acceptance passes"
+      },
+      {
+        "revision": "r60",
+        "handoff_commit": "bad545df81d878d4da3eab9c2e3a5d0759b995cb",
+        "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+        "result": "4 new F1 repair controls passed on fixed PR24; PR26 source review completed without a new confirmed defect"
+      }
+    ],
+    "fixed_dependencies": {
+      "PR24": "6ba35636ecf5c69203225149a7b746893299b39b",
+      "PR26": "e88a5a6bce6732a29e887b10636c827cd3f2eab5"
+    },
+    "r60_report": "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md",
+    "PR26_main_reported_tests": 34,
+    "PR26_tests_run_by_this_line": 0,
+    "main_receipt": {
+      "r59": "verified in main half_chaos_r59_f1_20261113",
+      "r60": "主线a2d2ddf的session_closeout_navigation_20261113已实际读取RETURN_TO_MAIN.r60段，仅用于收束导航；完整报告/源码及独立代码复核仍待主线。",
+      "this_closeout": "UNKNOWN"
+    },
+    "authorization": "既有本线离线研究/回传授权与用户本对话较大状态文件上传授权保留；用户本轮仅要求收束，不启动新任务。授权来源见PROJECT_WORK_AGREEMENT及TASK_FROM_MAIN.host_adapter_review_20261113。",
+    "preserved_boundaries": {
+      "featuresReady": false,
+      "scoring": "FROZEN",
+      "NET": "PAUSED",
+      "formal56_complete": 0,
+      "formal64_pass": 0,
+      "actual_half_chaos_client_deliveries": 0,
+      "independent_QA": false,
+      "wire_authentication_and_cross_reconnect": "NOT_COMPLETE",
+      "merge_deploy_APK": "NOT_PERFORMED_OR_NEWLY_AUTHORIZED"
+    },
+    "closeout_actions": {
+      "new_engine_runs": 0,
+      "new_game_code_changes": 0,
+      "other_line_modifications": 0,
+      "new_task_started": false,
+      "automatic_messages_sent": false,
+      "prior_results_preserved": true
+    },
+    "unreturned_work": "本会话r58/r59/r60有意义成果已发布并读回；旧本地检出保留，不清理删除。本收束的实际提交以Git历史和发布后读回为准，不预填未来SHA。",
+    "next": {
+      "id": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
+      "status": "WAIT_CONCRETE_NEW_SOURCE_AFTER_USER_RESUME",
+      "action": "新对话核最新main、入口、当前收束、TASK和主线实际回执；已有两段任务完成，不因派发表仍READY/UNKNOWN而重复运行。只有具体新host/wire/调用合同/生命周期差分或可复现问题才定向接续；无新输入如实说明依赖，不循环自审/轮询。",
+      "owner": "half_chaos scoped reception; main shared implementation",
+      "entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/half_chaos/START_HERE.txt"
+    },
+    "concurrency": "本线文件和任务未改；并发a2d2ddf为主线收束，已读其新增READ_RECEIPTS和入口头部并保留。普通委派撤回仅其范围，英雄设计并发成果保留，不做业务采用。",
+    "limitation_audit_status": "completed_for_closeout_source_and_preservation_checks; runtime_and_product_limits_unchanged",
+    "report": "worklines/half_chaos/HC61_SESSION_CLOSEOUT_20261113.json"
+  },
+  "r61_closeout_to_main": {
+    "id": "HC-SESSION-CLOSEOUT-20261113-r61",
+    "date_local": "2026-11-13",
+    "timezone": "Asia/Shanghai",
+    "user_request": "收束本对话，我会在新对话中继续",
+    "scope": "close this half_chaos conversation only; not project or other lines",
+    "source_handoff_head": "a2d2ddf9562d098be10400480e113af15d8d61fd",
+    "last_completed_revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "last_completed_handoff_commit": "bad545df81d878d4da3eab9c2e3a5d0759b995cb",
+    "engine_branch": "codex/hc-result-evidence-20261113",
+    "latest_engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+    "preserved_stages": [
+      {
+        "revision": "r58",
+        "handoff_commit": "fee354a6f4b9db270973b427ee20cb13fbd45d1e",
+        "engine_commit": "9f0b14ccb02308fd3579e3cf58cde063aca11cf6",
+        "result": "H1/H2/H3 offline package 13/13; scope limits remain in original report"
+      },
+      {
+        "revision": "r59",
+        "handoff_commit": "6fb9a01ab58cdf92c8fa297c7ebbcc606a7db5f0",
+        "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+        "result": "4 observation controls; 1 F1 guard gap in 2 variants, not 4 product acceptance passes"
+      },
+      {
+        "revision": "r60",
+        "handoff_commit": "bad545df81d878d4da3eab9c2e3a5d0759b995cb",
+        "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+        "result": "4 new F1 repair controls passed on fixed PR24; PR26 source review completed without a new confirmed defect"
+      }
+    ],
+    "fixed_dependencies": {
+      "PR24": "6ba35636ecf5c69203225149a7b746893299b39b",
+      "PR26": "e88a5a6bce6732a29e887b10636c827cd3f2eab5"
+    },
+    "r60_report": "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md",
+    "PR26_main_reported_tests": 34,
+    "PR26_tests_run_by_this_line": 0,
+    "main_receipt": {
+      "r59": "verified in main half_chaos_r59_f1_20261113",
+      "r60": "主线a2d2ddf的session_closeout_navigation_20261113已实际读取RETURN_TO_MAIN.r60段，仅用于收束导航；完整报告/源码及独立代码复核仍待主线。",
+      "this_closeout": "UNKNOWN"
+    },
+    "authorization": "既有本线离线研究/回传授权与用户本对话较大状态文件上传授权保留；用户本轮仅要求收束，不启动新任务。授权来源见PROJECT_WORK_AGREEMENT及TASK_FROM_MAIN.host_adapter_review_20261113。",
+    "preserved_boundaries": {
+      "featuresReady": false,
+      "scoring": "FROZEN",
+      "NET": "PAUSED",
+      "formal56_complete": 0,
+      "formal64_pass": 0,
+      "actual_half_chaos_client_deliveries": 0,
+      "independent_QA": false,
+      "wire_authentication_and_cross_reconnect": "NOT_COMPLETE",
+      "merge_deploy_APK": "NOT_PERFORMED_OR_NEWLY_AUTHORIZED"
+    },
+    "closeout_actions": {
+      "new_engine_runs": 0,
+      "new_game_code_changes": 0,
+      "other_line_modifications": 0,
+      "new_task_started": false,
+      "automatic_messages_sent": false,
+      "prior_results_preserved": true
+    },
+    "unreturned_work": "本会话r58/r59/r60有意义成果已发布并读回；旧本地检出保留，不清理删除。本收束的实际提交以Git历史和发布后读回为准，不预填未来SHA。",
+    "next": {
+      "id": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
+      "status": "WAIT_CONCRETE_NEW_SOURCE_AFTER_USER_RESUME",
+      "action": "新对话核最新main、入口、当前收束、TASK和主线实际回执；已有两段任务完成，不因派发表仍READY/UNKNOWN而重复运行。只有具体新host/wire/调用合同/生命周期差分或可复现问题才定向接续；无新输入如实说明依赖，不循环自审/轮询。",
+      "owner": "half_chaos scoped reception; main shared implementation",
+      "entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/half_chaos/START_HERE.txt"
+    },
+    "concurrency": "本线文件和任务未改；并发a2d2ddf为主线收束，已读其新增READ_RECEIPTS和入口头部并保留。普通委派撤回仅其范围，英雄设计并发成果保留，不做业务采用。",
+    "limitation_audit_status": "completed_for_closeout_source_and_preservation_checks; runtime_and_product_limits_unchanged",
+    "report": "worklines/half_chaos/HC61_SESSION_CLOSEOUT_20261113.json"
   }
 }

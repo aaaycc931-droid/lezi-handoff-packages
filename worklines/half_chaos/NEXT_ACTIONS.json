@@ -1,10 +1,11 @@
 {
-  "revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+  "revision": "HC-SESSION-CLOSEOUT-20261113-r61",
   "next_independent_task": {
     "id": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
-    "status": "BOUNDED_TWO_PHASE_REVIEW_COMPLETE_WAIT_CONCRETE_DELTA",
-    "owner": "half_chaos targeted review; main shared implementation",
-    "action": "两段已完成；下一只接主线具体host/wire/调用合同/生命周期差分或可复现新问题，核受影响边界。不重复旧矩阵、不循环自审或自动轮询。"
+    "status": "WAIT_CONCRETE_NEW_SOURCE_AFTER_USER_RESUME",
+    "action": "新对话核最新main、入口、当前收束、TASK和主线实际回执；已有两段任务完成，不因派发表仍READY/UNKNOWN而重复运行。只有具体新host/wire/调用合同/生命周期差分或可复现问题才定向接续；无新输入如实说明依赖，不循环自审/轮询。",
+    "owner": "half_chaos scoped reception; main shared implementation",
+    "entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/half_chaos/START_HERE.txt"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1498,32 +1499,79 @@
     "client_delivery": 0
   },
   "session_closure": {
-    "id": "HC-SESSION-CLOSEOUT-20261029-r55",
-    "date_local": "2026-10-29",
-    "report": "worklines/half_chaos/HC55_SESSION_CLOSEOUT_20261029.json",
-    "last_completed_revision": "HC-55-ORIGINAL110-CLIENT-OUTPUT-ORACLE-MATRIX-20261029",
-    "last_output_matrix": "worklines/half_chaos/HC55_ORIGINAL110_CLIENT_OUTPUT_ORACLE_MATRIX_20261029.json",
-    "actual_original_source_matches": {
-      "requests": 110,
-      "observation_checkpoints": 210,
-      "game_stage_server_projections": 200,
-      "mismatches": 0
+    "id": "HC-SESSION-CLOSEOUT-20261113-r61",
+    "date_local": "2026-11-13",
+    "timezone": "Asia/Shanghai",
+    "user_request": "收束本对话，我会在新对话中继续",
+    "scope": "close this half_chaos conversation only; not project or other lines",
+    "source_handoff_head": "a2d2ddf9562d098be10400480e113af15d8d61fd",
+    "last_completed_revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "last_completed_handoff_commit": "bad545df81d878d4da3eab9c2e3a5d0759b995cb",
+    "engine_branch": "codex/hc-result-evidence-20261113",
+    "latest_engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+    "preserved_stages": [
+      {
+        "revision": "r58",
+        "handoff_commit": "fee354a6f4b9db270973b427ee20cb13fbd45d1e",
+        "engine_commit": "9f0b14ccb02308fd3579e3cf58cde063aca11cf6",
+        "result": "H1/H2/H3 offline package 13/13; scope limits remain in original report"
+      },
+      {
+        "revision": "r59",
+        "handoff_commit": "6fb9a01ab58cdf92c8fa297c7ebbcc606a7db5f0",
+        "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+        "result": "4 observation controls; 1 F1 guard gap in 2 variants, not 4 product acceptance passes"
+      },
+      {
+        "revision": "r60",
+        "handoff_commit": "bad545df81d878d4da3eab9c2e3a5d0759b995cb",
+        "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+        "result": "4 new F1 repair controls passed on fixed PR24; PR26 source review completed without a new confirmed defect"
+      }
+    ],
+    "fixed_dependencies": {
+      "PR24": "6ba35636ecf5c69203225149a7b746893299b39b",
+      "PR26": "e88a5a6bce6732a29e887b10636c827cd3f2eab5"
     },
-    "complete_original56_accepted": 0,
-    "formal_original64_accepted": 0,
-    "actual_half_chaos_client_deliveries": 0,
-    "independent_QA": false,
-    "owner_raw_not_independently_recomputed": true,
-    "main_read_and_adoption_of_return": "UNKNOWN",
-    "new_engine_runs_this_closeout": 0,
-    "game_code_modified_this_closeout": false,
-    "other_line_files_modified_this_closeout": false,
-    "featuresReady": false,
-    "scoring": "FROZEN",
-    "NET": "PAUSED",
-    "next_id": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
-    "next_status": "READY_SOURCE_DOCUMENT_ONLY",
-    "next_hand_off": "Check latest remote HEAD and TASK_FROM_MAIN.json before applying next; source-only, no engine or NET."
+    "r60_report": "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md",
+    "PR26_main_reported_tests": 34,
+    "PR26_tests_run_by_this_line": 0,
+    "main_receipt": {
+      "r59": "verified in main half_chaos_r59_f1_20261113",
+      "r60": "主线a2d2ddf的session_closeout_navigation_20261113已实际读取RETURN_TO_MAIN.r60段，仅用于收束导航；完整报告/源码及独立代码复核仍待主线。",
+      "this_closeout": "UNKNOWN"
+    },
+    "authorization": "既有本线离线研究/回传授权与用户本对话较大状态文件上传授权保留；用户本轮仅要求收束，不启动新任务。授权来源见PROJECT_WORK_AGREEMENT及TASK_FROM_MAIN.host_adapter_review_20261113。",
+    "preserved_boundaries": {
+      "featuresReady": false,
+      "scoring": "FROZEN",
+      "NET": "PAUSED",
+      "formal56_complete": 0,
+      "formal64_pass": 0,
+      "actual_half_chaos_client_deliveries": 0,
+      "independent_QA": false,
+      "wire_authentication_and_cross_reconnect": "NOT_COMPLETE",
+      "merge_deploy_APK": "NOT_PERFORMED_OR_NEWLY_AUTHORIZED"
+    },
+    "closeout_actions": {
+      "new_engine_runs": 0,
+      "new_game_code_changes": 0,
+      "other_line_modifications": 0,
+      "new_task_started": false,
+      "automatic_messages_sent": false,
+      "prior_results_preserved": true
+    },
+    "unreturned_work": "本会话r58/r59/r60有意义成果已发布并读回；旧本地检出保留，不清理删除。本收束的实际提交以Git历史和发布后读回为准，不预填未来SHA。",
+    "next": {
+      "id": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
+      "status": "WAIT_CONCRETE_NEW_SOURCE_AFTER_USER_RESUME",
+      "action": "新对话核最新main、入口、当前收束、TASK和主线实际回执；已有两段任务完成，不因派发表仍READY/UNKNOWN而重复运行。只有具体新host/wire/调用合同/生命周期差分或可复现问题才定向接续；无新输入如实说明依赖，不循环自审/轮询。",
+      "owner": "half_chaos scoped reception; main shared implementation",
+      "entry": "https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/half_chaos/START_HERE.txt"
+    },
+    "concurrency": "本线文件和任务未改；并发a2d2ddf为主线收束，已读其新增READ_RECEIPTS和入口头部并保留。普通委派撤回仅其范围，英雄设计并发成果保留，不做业务采用。",
+    "limitation_audit_status": "completed_for_closeout_source_and_preservation_checks; runtime_and_product_limits_unchanged",
+    "report": "worklines/half_chaos/HC61_SESSION_CLOSEOUT_20261113.json"
   },
   "r56_prior_navigation": {
     "revision": "HC-SESSION-CLOSEOUT-20261027-r51c",
@@ -1745,5 +1793,42 @@
     },
     "runtime_scope": "只执行PR24固定只读依赖的4项新scope控制；旧13/29不重跑；未改生产源",
     "last_verified_head_at_preparation": "93411f461fc80de3c7639149c2161115e189fbec"
+  },
+  "r61_previous_navigation": {
+    "revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "session_closure": {
+      "id": "HC-SESSION-CLOSEOUT-20261029-r55",
+      "date_local": "2026-10-29",
+      "report": "worklines/half_chaos/HC55_SESSION_CLOSEOUT_20261029.json",
+      "last_completed_revision": "HC-55-ORIGINAL110-CLIENT-OUTPUT-ORACLE-MATRIX-20261029",
+      "last_output_matrix": "worklines/half_chaos/HC55_ORIGINAL110_CLIENT_OUTPUT_ORACLE_MATRIX_20261029.json",
+      "actual_original_source_matches": {
+        "requests": 110,
+        "observation_checkpoints": 210,
+        "game_stage_server_projections": 200,
+        "mismatches": 0
+      },
+      "complete_original56_accepted": 0,
+      "formal_original64_accepted": 0,
+      "actual_half_chaos_client_deliveries": 0,
+      "independent_QA": false,
+      "owner_raw_not_independently_recomputed": true,
+      "main_read_and_adoption_of_return": "UNKNOWN",
+      "new_engine_runs_this_closeout": 0,
+      "game_code_modified_this_closeout": false,
+      "other_line_files_modified_this_closeout": false,
+      "featuresReady": false,
+      "scoring": "FROZEN",
+      "NET": "PAUSED",
+      "next_id": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+      "next_status": "READY_SOURCE_DOCUMENT_ONLY",
+      "next_hand_off": "Check latest remote HEAD and TASK_FROM_MAIN.json before applying next; source-only, no engine or NET."
+    },
+    "next_independent_task": {
+      "id": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
+      "status": "BOUNDED_TWO_PHASE_REVIEW_COMPLETE_WAIT_CONCRETE_DELTA",
+      "owner": "half_chaos targeted review; main shared implementation",
+      "action": "两段已完成；下一只接主线具体host/wire/调用合同/生命周期差分或可复现新问题，核受影响边界。不重复旧矩阵、不循环自审或自动轮询。"
+    }
   }
 }

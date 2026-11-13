@@ -3541,5 +3541,30 @@
       "risk": "medium engineering evidence; reversible isolated probes",
       "report_boundary": "4本地通过、PR26源审、主线34报告分开"
     }
+  },
+  "r61_closeout_20261113": {
+    "source_commit": "a2d2ddf9562d098be10400480e113af15d8d61fd",
+    "actual_read_scope": [
+      "最新Git main及bad545df之后路径差分",
+      "本线TASK.host_adapter_review、CURRENT_STATE/r60和session_closure、NEXT/RETURN当前导航；r60同会话实际读源与验证复用",
+      "main READ_RECEIPTS新增差分；整份JSON仅检索r60/bad545d引用，未宣称全文语义重审",
+      "发布前并发a2d2ddf：主线新收束入口头部及READ_RECEIPTS.session_closeout_navigation_20261113完整对象"
+    ],
+    "adopted": "本线两段已完成；主线已读r60回传段用于导航，完整正文/源码接收仍待；旧派发表非新任务",
+    "not_adopted": [
+      "普通委派撤回或英雄新规则为本线新业务决定",
+      "无回执等于主线未读",
+      "关闭本对话等于项目停止"
+    ],
+    "new_engine_runs": 0,
+    "new_task_started": false,
+    "source_rules": "同会话已核AGENTS、modes、collaboration v0.18及docs/WORKFLOW继续适用；本次相关文件未变化",
+    "prior_publish_readbacks": {
+      "r59_handoff": 8,
+      "r60_engine": 3,
+      "r60_handoff": 7
+    },
+    "concurrent_changes_preserved": true,
+    "report": "worklines/half_chaos/HC61_SESSION_CLOSEOUT_20261113.json"
   }
 }
