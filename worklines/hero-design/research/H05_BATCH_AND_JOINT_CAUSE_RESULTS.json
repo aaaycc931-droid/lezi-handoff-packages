@@ -1,0 +1,277 @@
+{
+  "status": "PASS_LOCAL_MODEL_ONLY",
+  "sourceCommit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
+  "runtime": "v24.22.1",
+  "checks": 24,
+  "cases": [
+    {
+      "id": "F1-prefix-four-prayers-response-and-31-pieces",
+      "category": "conditional-geometry"
+    },
+    {
+      "id": "F1-two-distinct-four-piece-friendly-nonking-pools",
+      "category": "conditional-geometry"
+    },
+    {
+      "id": "F1-horse-claw-status-changes-with-random-pool",
+      "category": "conditional-geometry"
+    },
+    {
+      "id": "F1-identical-horse-route-victim-and-board",
+      "category": "conditional-geometry"
+    },
+    {
+      "id": "F1-one-actual-victim-per-version-not-two-for-claw",
+      "category": "conditional-geometry"
+    },
+    {
+      "id": "F1-both-kings-safe-in-both-local-final-boards",
+      "category": "conditional-geometry"
+    },
+    {
+      "id": "F1-same-action-key-collides-despite-declared-source-difference",
+      "category": "source-projection"
+    },
+    {
+      "id": "F2-horse-center-locks-rook-horse-elephant",
+      "category": "conditional-geometry"
+    },
+    {
+      "id": "F2-three-deaths-one-explicit-batch-no-intermediate-sample",
+      "category": "batch-contract"
+    },
+    {
+      "id": "F2-both-kings-safe-after-flame",
+      "category": "conditional-geometry"
+    },
+    {
+      "id": "F2-all-locked-deaths-finish-before-after-close-observer",
+      "category": "batch-contract"
+    },
+    {
+      "id": "F2-synthetic-post-close-arrival-is-not-rescanned",
+      "category": "synthetic-contract"
+    },
+    {
+      "id": "F2-premature-trigger-mutant-is-detected",
+      "category": "negative-control"
+    },
+    {
+      "id": "F2-H12-occupancy-not-eligible-H05-history",
+      "category": "source-eligibility"
+    },
+    {
+      "id": "F1-H21-same-atom-alone-does-not-certify-same-batch",
+      "category": "source-eligibility"
+    },
+    {
+      "id": "F3-two-contributors-one-live-to-dead-transition",
+      "category": "synthetic-contract"
+    },
+    {
+      "id": "F3-one-scale-blocks-explicitly-joint-lethal-settlement",
+      "category": "synthetic-contract"
+    },
+    {
+      "id": "F3-no-new-death-from-already-dead-body",
+      "category": "synthetic-contract"
+    },
+    {
+      "id": "F3-unknown-settlement-grouping-remains-unknown",
+      "category": "synthetic-contract"
+    },
+    {
+      "id": "F3-contributor-enumeration-order-is-not-second-death",
+      "category": "synthetic-contract"
+    },
+    {
+      "id": "F3-two-versions-can-share-body-with-distinct-execution-records",
+      "category": "synthetic-contract"
+    },
+    {
+      "id": "F4-no-interposed-sample-A-B-same-first-count",
+      "category": "synthetic-policy-comparison"
+    },
+    {
+      "id": "F4-hypothetical-interposed-sample-exposes-difference",
+      "category": "synthetic-policy-comparison"
+    },
+    {
+      "id": "F4-distinct-new-victim-never-suppressed-by-shared-turn",
+      "category": "synthetic-contract"
+    }
+  ],
+  "geometryDependency": {
+    "file": "H05_TWO_DIFFERENT_CAPTURES_FIXTURE_20261113.js",
+    "sha256": "d4352a7290396375812925fa70faed21c399b9cb6885169dd73d9f63dbe9077e"
+  },
+  "invincibleFixture": {
+    "prefix": [
+      {
+        "opportunity": "red1",
+        "kind": "ordinary-I",
+        "from": [
+          3,
+          4
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "victim": null
+      },
+      {
+        "opportunity": "black1",
+        "kind": "source-modeled-prayer"
+      },
+      {
+        "opportunity": "red2",
+        "kind": "ordinary-I",
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          6
+        ],
+        "victim": null
+      },
+      {
+        "opportunity": "black2",
+        "kind": "source-modeled-prayer"
+      },
+      {
+        "opportunity": "red3",
+        "kind": "ordinary-I",
+        "from": [
+          3,
+          6
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "victim": "b-P-3"
+      },
+      {
+        "opportunity": "black3",
+        "kind": "source-modeled-prayer"
+      },
+      {
+        "opportunity": "red4",
+        "kind": "ordinary-I",
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          3,
+          8
+        ],
+        "victim": null
+      },
+      {
+        "opportunity": "black4",
+        "kind": "source-modeled-prayer"
+      },
+      {
+        "opportunity": "red5",
+        "kind": "ordinary-I",
+        "from": [
+          7,
+          4
+        ],
+        "to": [
+          7,
+          5
+        ],
+        "victim": null
+      }
+    ],
+    "preBeginPieces": 31,
+    "oldBuffs": [
+      "b-R-1",
+      "b-A-4",
+      "b-A-6",
+      "b-R-9"
+    ],
+    "newBuffs": [
+      "b-R-1",
+      "b-A-4",
+      "b-A-6",
+      "b-H-2"
+    ],
+    "oldDeclaredSources": [
+      "ordinary-endpoint"
+    ],
+    "newDeclaredSources": [
+      "ordinary-endpoint",
+      "H21-dragon-claw-crush"
+    ],
+    "actor": "b-H-2",
+    "victim": "r-P-3",
+    "from": [
+      2,
+      10
+    ],
+    "to": [
+      3,
+      8
+    ],
+    "finalPieces": 30,
+    "identicalBoardGeometry": true,
+    "fullPublicStateIdentical": false,
+    "actualContributorGrouping": "UNVERIFIED"
+  },
+  "flameFixture": {
+    "redFirstMove": [
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ]
+    ],
+    "center": [
+      2,
+      10
+    ],
+    "locked": [
+      {
+        "p": "1,10",
+        "id": "b-R-1"
+      },
+      {
+        "p": "2,10",
+        "id": "b-H-2"
+      },
+      {
+        "p": "3,10",
+        "id": "b-E-3"
+      }
+    ],
+    "finalPieces": 29,
+    "eligibleH05History": false,
+    "resetMultiplicity": "UNRESOLVED"
+  },
+  "pending": {
+    "sameCausePolicy": "A/B_UNCONFIRMED",
+    "Q_RS2": "NO_LEGAL_EARLY_SAMPLE_ESTABLISHED",
+    "H21WhisperBatch": "SAME_SOURCE_ATOM_CONFIRMED_BATCH_UNRESOLVED",
+    "changedContributorEquivalence": "UNRESOLVED"
+  },
+  "sourceEngineRuns": 0,
+  "independentQA": false,
+  "notVerified": [
+    "production hero phases or complete H05 transaction",
+    "mode admission",
+    "actual RNG sampling/probabilities",
+    "complete causal identity and reset multiplicity",
+    "synthetic shield/arrival reachability",
+    "source-stable early repetition sample",
+    "full adjudication, network or independent QA"
+  ]
+}

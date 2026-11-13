@@ -1,9 +1,9 @@
 {
   "schema": "lezi.workline.return_to_main.v1",
-  "id": "HERO-CAPTURE-CAUSAL-BOUNDARY-20261113",
+  "id": "HERO-BATCH-JOINT-CAUSE-20261113",
   "from": "hero-design",
   "to": "main",
-  "source_commit": "83b6d6fdf7ae48846f1f8b8e78054905703ed7b0",
+  "source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
   "followup_source_commit": "747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a",
   "updated_on_local": "2026-11-13",
   "status": "phase_increment_ready_for_receiver_review",
@@ -11,27 +11,31 @@
     "MAIN-COORD-20261113-hero-design",
     "MAIN-COORD-FOLLOWUP-20261113-hero-design"
   ],
-  "authorization": "current user start/advance within existing scope; docs/project-instructions/heroes.txt; TASK_FROM_MAIN original and followup; 11-09 authorized branch design save and workflow inheritance",
-  "report": "worklines/hero-design/H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md",
+  "authorization": "current user explicitly resumes original hero-design; existing main-write authorization in CURRENT_STATE; existing TASK_FROM_MAIN scope unchanged",
+  "report": "worklines/hero-design/H05_BATCH_AND_JOINT_CAUSE_REVIEW.md",
   "changes": [
-    "H02 current H05 references corrected to consolidated design including sections 9-16; obsolete begin wording corrected",
-    "H21 source-conditioned four-prayer prefix and same-main-capture/different-begin-deaths local probe",
-    "Q-RS2 scoped to same rewritten opportunity with another previously accepted source-stable sample; no concrete early sample established",
-    "incremental shared adjudication dependency mapping"
+    "H21 same-source-atom versus explicitly simultaneous batch source correction; previous geometry findings retained",
+    "H21 Invincible source-conditioned four-prayer same-capture fixture with changed declared fatal contributors",
+    "H12 explicit three-victim batch fixture and exclusion from eligible H05 previous history",
+    "Joint lethal settlement/shield and batch barrier contracts with synthetic scope retained",
+    "A/B conditional observable comparison without claiming a reachable Q-RS2 early sample"
   ],
   "validation": {
-    "local_model_checks": 19,
+    "local_model_checks": 24,
     "result": "PASS_LOCAL_MODEL_ONLY",
     "source_engine_runs": 0,
     "independent_QA": false,
-    "results": "worklines/hero-design/research/H05_CAPTURE_CAUSAL_BOUNDARY_RESULTS.json"
+    "results": "worklines/hero-design/research/H05_BATCH_AND_JOINT_CAUSE_RESULTS.json",
+    "prior_19_checks": "previous phase result retained at research/H05_CAPTURE_CAUSAL_BOUNDARY_RESULTS.json; not newly counted or rerun"
   },
-  "rule_delta": "no new gameplay approval; H02 navigation and obsolete begin wording reconciled to already confirmed H05 source",
+  "rule_delta": "0 gameplay changes; one previous research inference corrected (H21 atom does not prove explicit batch)",
   "pending": {
     "capture_semantic_policy": "A/B_UNCONFIRMED",
     "Q_RS2": "SOURCE_REACHABILITY_AND_POLICY_UNRESOLVED",
     "same_cause_complete_key": "UNDEFINED",
-    "batch_reset_multiplicity": "UNRESOLVED"
+    "batch_reset_multiplicity": "UNRESOLVED",
+    "H21_whisper_batch": "same source atom confirmed; explicit simultaneous batch not established",
+    "changed_contributor_equivalence": "UNRESOLVED"
   },
   "shared_blockers": [
     "full H05 transaction and source-stable samples",
@@ -39,14 +43,14 @@
     "production randomness, hidden-information and delivery/ACK validation",
     "mode admission and independent QA"
   ],
-  "next_action": "继续共同主捕获与新增begin消灭的逐源去重边界；核同批/共同致死，Q-RS2先补合法早采样来源。新候选不得视为批准。",
+  "next_action": "分开来源确实相同与龙爪来源集合改变两类重演，整理跨版本捕获匹配的必要条件和反例；A/B及共同致死分组仍不代定。Q-RS2继续先找真实合法早采样来源，不用合成插入冒充可达。",
   "receiver_read": "UNKNOWN",
   "receiver_adoption": "UNKNOWN",
   "historical_main_design_intake": "limited prior scope documented in main/H02_H05_INTEGRATION_REVIEW.md; not this new return",
   "changed_paths": [
-    "worklines/hero-design/formal/H02_SHADOW_STEP_RULE_INTEGRATION_20261109.md",
-    "worklines/hero-design/research/H05_CAPTURE_CAUSAL_BOUNDARY_PROBES.js",
-    "worklines/hero-design/research/H05_CAPTURE_CAUSAL_BOUNDARY_RESULTS.json",
+    "worklines/hero-design/H05_BATCH_AND_JOINT_CAUSE_REVIEW.md",
+    "worklines/hero-design/research/H05_BATCH_AND_JOINT_CAUSE_PROBES.js",
+    "worklines/hero-design/research/H05_BATCH_AND_JOINT_CAUSE_RESULTS.json",
     "worklines/hero-design/H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md",
     "worklines/hero-design/START_HERE.md",
     "worklines/hero-design/CURRENT_STATE.json",
@@ -64,10 +68,9 @@
   "publication": {
     "destination_branch": "main",
     "authorization_source": "worklines/hero-design/CURRENT_STATE.json#main_write_authorization_20261113",
-    "source_draft_pr": "https://github.com/aaaycc931-droid/lezi-handoff-packages/pull/2",
-    "source_draft_commit": "5d819517558c6ecc1097a80b2d385dc89c724b70",
-    "publication_parent": "79007976849db7dc364f3cc8b099964b9e08de7b",
-    "delivery": "本轮按项目负责人明确授权提交main；实际成功以Git提交与远端复读为准，主线接收采用仍由其回执证明"
+    "research_source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
+    "delivery": "latest parent tree + expected_sha + force=false; actual commit/readback evidence external to this file; receiver adoption unknown",
+    "publication_parent": "db9dbf2967d64ad0d38b5e35074b19e61e9f4a5e"
   },
   "publication_history": [
     {
@@ -75,6 +78,17 @@
       "main_update": "BLOCKED_BY_AUTOMATIC_APPROVAL_REVIEW",
       "reason": "default main branch update not explicitly authorized under this branch-scoped request",
       "delivery": "independent branch and draft PR; not merged, no mainline receiver receipt"
+    },
+    {
+      "destination_branch": "main",
+      "authorization_source": "worklines/hero-design/CURRENT_STATE.json#main_write_authorization_20261113",
+      "source_draft_pr": "https://github.com/aaaycc931-droid/lezi-handoff-packages/pull/2",
+      "source_draft_commit": "5d819517558c6ecc1097a80b2d385dc89c724b70",
+      "publication_parent": "79007976849db7dc364f3cc8b099964b9e08de7b",
+      "delivery": "本轮按项目负责人明确授权提交main；实际成功以Git提交与远端复读为准，主线接收采用仍由其回执证明"
     }
-  ]
+  ],
+  "previous_return_id": "HERO-CAPTURE-CAUSAL-BOUNDARY-20261113",
+  "previous_source_commit": "83b6d6fdf7ae48846f1f8b8e78054905703ed7b0",
+  "previous_report": "worklines/hero-design/H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md"
 }
