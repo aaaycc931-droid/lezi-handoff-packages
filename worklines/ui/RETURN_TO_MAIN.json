@@ -412,7 +412,7 @@
     "game_code_changed": false,
     "official_game_rules_changed": false
   },
-  "world_lore_next_action": "本对话已按用户要求收束；新对话核最新HEAD并读六批收束索引后，按用户继续指令自主完成第七批十项，避开暂缓内容；不恢复逐项审批或接管UI图片线。",
+  "world_lore_next_action": "展示第七批M01—M10及整体结果，接收反馈或下一批指令；不自动开始第八批。",
   "new_style_ui_resume_20261113": {
     "record_id": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113",
     "source_commit": "896fd5d6e3e27e7098e772854f179d1b4324494d",
@@ -723,5 +723,33 @@
     "official_rules_changed": false,
     "UI_approvals_changed": false,
     "artwork_generated": false
+  },
+  "world_lore_lezi_personality_batch10_20261113": {
+    "record_id": "UI-WORLD-LORE-LEZI-PERSONALITY-BATCH10-20261113",
+    "date_local": "2026-11-13",
+    "source_head_before_write": "9adc336a7a85da184d4ad742b64f095f305c9563",
+    "source": "worklines/ui/WORLD_LORE_LEZI_PERSONALITY_DELEGATED_BATCH10_20261113.md",
+    "batch": 7,
+    "decision_ids": "M01-M10",
+    "decision_count": 10,
+    "cumulative_delegated_decisions": 70,
+    "status": "TEN_NARRATIVE_DECISIONS_COMPLETED_UNDER_DELEGATION",
+    "user_authorization_quote": "接续第七批，继续每批十项由你自主确定，我看完整结果。",
+    "scope": "Lezi_personal_interests_emotions_and_relationships_only",
+    "user_individual_approval_required": false,
+    "user_result_feedback": "NOT_YET_OBSERVED",
+    "deferred": [
+      "乐子面容",
+      "乐子体态",
+      "冠军具体机制",
+      "最终奖励"
+    ],
+    "artwork_generated": false,
+    "game_ui_impact": "NONE",
+    "game_code_changed": false,
+    "official_rules_changed": false,
+    "main_receiver_read": "UNKNOWN",
+    "main_receiver_adoption": "UNKNOWN",
+    "next_action": "展示第七批M01—M10及整体结果，接收反馈或下一批指令；不自动开始第八批。"
   }
 }
