@@ -463,32 +463,15 @@
     "generation_completed": true,
     "actual_generated_count": 1,
     "source_head_before_write": "bd8ab26995421f5963f27b504571a33ffea18a25",
-    "next_action": "用户比较首页A轻墨行楷、B清雅书卷、C融景笔意，选择更喜欢的字体/按钮方向或提出组合反馈；三个候选均未批准，选定后继续细化这一页。",
+    "next_action": "用户评价UI-HOME-NEWSTYLE-v3：以A的轻细字形为暂定起点，去除四项菜单底板、框线和底线，查看文字与背景是否更协调；这张完整首页仍待审，不自动推进其它页面。",
     "followup_record": "UI-HOME-NEWSTYLE-FIRST-PAGE-20261113",
     "winter_background_style_accepted": true
   },
   "active_ui_image_task": {
-    "id": "UI-HOME-NEWSTYLE-v2-comparison",
-    "status": "three_candidates_pending_user_direction_selection",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v2/comparison.json",
-    "members": [
-      {
-        "id": "UI-HOME-NEWSTYLE-v2A",
-        "label": "A",
-        "name": "轻墨行楷"
-      },
-      {
-        "id": "UI-HOME-NEWSTYLE-v2B",
-        "label": "B",
-        "name": "清雅书卷"
-      },
-      {
-        "id": "UI-HOME-NEWSTYLE-v2C",
-        "label": "C",
-        "name": "融景笔意"
-      }
-    ],
-    "next_action": "用户比较首页A轻墨行楷、B清雅书卷、C融景笔意，选择更喜欢的字体/按钮方向或提出组合反馈；三个候选均未批准，选定后继续细化这一页。"
+    "id": "UI-HOME-NEWSTYLE-v3",
+    "status": "candidate_created_pending_user_review",
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v3/candidate.json",
+    "next_action": "用户评价UI-HOME-NEWSTYLE-v3：以A的轻细字形为暂定起点，去除四项菜单底板、框线和底线，查看文字与背景是否更协调；这张完整首页仍待审，不自动推进其它页面。"
   },
   "world_lore_daily_life_batch10_20261113": {
     "record_id": "UI-WORLD-LORE-DAILY-LIFE-BATCH10-20261113",
@@ -544,7 +527,7 @@
     "narrative_scope_preserved": true,
     "arena_concept": false,
     "game_code_changed": false,
-    "next_action": "用户比较首页A轻墨行楷、B清雅书卷、C融景笔意，选择更喜欢的字体/按钮方向或提出组合反馈；三个候选均未批准，选定后继续细化这一页。",
+    "next_action": "用户评价UI-HOME-NEWSTYLE-v3：以A的轻细字形为暂定起点，去除四项菜单底板、框线和底线，查看文字与背景是否更协调；这张完整首页仍待审，不自动推进其它页面。",
     "main_receiver_read": "UNKNOWN",
     "main_receiver_adoption": "UNKNOWN",
     "latest_user_feedback": {
@@ -578,11 +561,54 @@
     "comparison": "UI-HOME-NEWSTYLE-v2-comparison",
     "comparison_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v2/comparison.json",
     "actual_generated_count": 3,
-    "status": "three_candidates_pending_user_direction_selection",
+    "status": "user_preference_received_followup_candidate_created",
     "approval": "none",
-    "next_action": "用户比较首页A轻墨行楷、B清雅书卷、C融景笔意，选择更喜欢的字体/按钮方向或提出组合反馈；三个候选均未批准，选定后继续细化这一页。",
+    "next_action": "用户评价UI-HOME-NEWSTYLE-v3：以A的轻细字形为暂定起点，去除四项菜单底板、框线和底线，查看文字与背景是否更协调；这张完整首页仍待审，不自动推进其它页面。",
     "game_code_changed": false,
     "narrative_scope_preserved": true,
+    "main_receiver_read": "UNKNOWN",
+    "main_receiver_adoption": "UNKNOWN",
+    "latest_preference": {
+      "record_id": "UI-HOME-SHARED-PAINTING-LANGUAGE-20261113",
+      "date_local": "2026-11-13",
+      "user_quote": "我更喜欢A，因为它去掉了这个什么按钮后，反而变得好看了，加上按钮就是很丑，因为那个按钮风格跟背景的风格就是不统一的，他们不是用了同一种绘画技法，也不是用了同一种表现手法，反正就是画的不一样，看起来不一样",
+      "user_named_preference": "A",
+      "explicit_visual_feedback": "用户认为按钮和背景使用不同绘画技法/表现手法，外观割裂；去掉按钮外壳更好看。",
+      "guidance": "本首页文字与控件应协调笔触、墨色、边缘和纸面质感；仅给通用按钮加水墨纹理不足。",
+      "reference_label_caveat": "上一轮A实际仍有浅框，C才是开放墨线；原话按A偏好记录，不擅自改记为选C，也不把A现有框线视为获批。",
+      "assistant_interpretation": "暂以A轻细字形作为起点，去掉全部菜单底板、边框和底线，用一张无框文字入口稿验证其具体视觉意图。",
+      "font_individually_approved": false,
+      "entire_A_page_approved": false,
+      "frameless_rule_scope": "当前首页的探索方向；不代表所有页面永远禁用可见按钮，不删除交互功能。",
+      "background_style_acceptance_retained": true
+    }
+  },
+  "homepage_frameless_validation_20261113": {
+    "record_id": "UI-HOME-SHARED-PAINTING-LANGUAGE-20261113",
+    "source_commit": "ed791447f817ce6974a63a13991c62ddb09e14fd",
+    "date_local": "2026-11-13",
+    "preference": {
+      "record_id": "UI-HOME-SHARED-PAINTING-LANGUAGE-20261113",
+      "date_local": "2026-11-13",
+      "user_quote": "我更喜欢A，因为它去掉了这个什么按钮后，反而变得好看了，加上按钮就是很丑，因为那个按钮风格跟背景的风格就是不统一的，他们不是用了同一种绘画技法，也不是用了同一种表现手法，反正就是画的不一样，看起来不一样",
+      "user_named_preference": "A",
+      "explicit_visual_feedback": "用户认为按钮和背景使用不同绘画技法/表现手法，外观割裂；去掉按钮外壳更好看。",
+      "guidance": "本首页文字与控件应协调笔触、墨色、边缘和纸面质感；仅给通用按钮加水墨纹理不足。",
+      "reference_label_caveat": "上一轮A实际仍有浅框，C才是开放墨线；原话按A偏好记录，不擅自改记为选C，也不把A现有框线视为获批。",
+      "assistant_interpretation": "暂以A轻细字形作为起点，去掉全部菜单底板、边框和底线，用一张无框文字入口稿验证其具体视觉意图。",
+      "font_individually_approved": false,
+      "entire_A_page_approved": false,
+      "frameless_rule_scope": "当前首页的探索方向；不代表所有页面永远禁用可见按钮，不删除交互功能。",
+      "background_style_acceptance_retained": true
+    },
+    "candidate": "UI-HOME-NEWSTYLE-v3",
+    "candidate_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v3/candidate.json",
+    "status": "candidate_created_pending_user_review",
+    "actual_generated_count": 1,
+    "full_page_approved": false,
+    "next_action": "用户评价UI-HOME-NEWSTYLE-v3：以A的轻细字形为暂定起点，去除四项菜单底板、框线和底线，查看文字与背景是否更协调；这张完整首页仍待审，不自动推进其它页面。",
+    "narrative_scope_preserved": true,
+    "game_code_changed": false,
     "main_receiver_read": "UNKNOWN",
     "main_receiver_adoption": "UNKNOWN"
   }

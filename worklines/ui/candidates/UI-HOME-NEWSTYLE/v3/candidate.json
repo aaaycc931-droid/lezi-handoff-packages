@@ -1,0 +1,142 @@
+{
+  "schema": "lezi.ui.new_style_page_candidate.v1",
+  "id": "UI-HOME-NEWSTYLE-v3",
+  "date_local": "2026-11-13",
+  "status": "candidate_created_pending_user_review",
+  "scope": "homepage_frameless_menu_visual_validation",
+  "subject": "首页无框文字菜单验证稿",
+  "source_branch": "ui/restart-asof-20261104-1119",
+  "source_commit": "ed791447f817ce6974a63a13991c62ddb09e14fd",
+  "user_preference": {
+    "record_id": "UI-HOME-SHARED-PAINTING-LANGUAGE-20261113",
+    "date_local": "2026-11-13",
+    "user_quote": "我更喜欢A，因为它去掉了这个什么按钮后，反而变得好看了，加上按钮就是很丑，因为那个按钮风格跟背景的风格就是不统一的，他们不是用了同一种绘画技法，也不是用了同一种表现手法，反正就是画的不一样，看起来不一样",
+    "user_named_preference": "A",
+    "explicit_visual_feedback": "用户认为按钮和背景使用不同绘画技法/表现手法，外观割裂；去掉按钮外壳更好看。",
+    "guidance": "本首页文字与控件应协调笔触、墨色、边缘和纸面质感；仅给通用按钮加水墨纹理不足。",
+    "reference_label_caveat": "上一轮A实际仍有浅框，C才是开放墨线；原话按A偏好记录，不擅自改记为选C，也不把A现有框线视为获批。",
+    "assistant_interpretation": "暂以A轻细字形作为起点，去掉全部菜单底板、边框和底线，用一张无框文字入口稿验证其具体视觉意图。",
+    "font_individually_approved": false,
+    "entire_A_page_approved": false,
+    "frameless_rule_scope": "当前首页的探索方向；不代表所有页面永远禁用可见按钮，不删除交互功能。",
+    "background_style_acceptance_retained": true
+  },
+  "edit_target": {
+    "id": "UI-HOME-NEWSTYLE-v2A",
+    "comparison_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v2/comparison.json",
+    "result": {
+      "label": "A",
+      "filename": "exec-f565dc07-c4d7-4936-a5e8-cb445cbe78eb.png",
+      "bytes": 2226308,
+      "sha256": "8802de57ee96caeb179a961f7167796e89289a6714599b351461b8521c4a316e",
+      "width": 981,
+      "height": 1602,
+      "mode": "RGB",
+      "format": "PNG"
+    },
+    "actual_visually_inspected": true
+  },
+  "source_content": [
+    {
+      "role": "title",
+      "text": "乐子象棋"
+    },
+    {
+      "role": "author",
+      "text": "作者：流风舞影"
+    },
+    {
+      "role": "primary_button",
+      "text": "本机双人",
+      "state": "available"
+    },
+    {
+      "role": "secondary_button",
+      "text": "蓝牙对局",
+      "state": "available"
+    },
+    {
+      "role": "button",
+      "text": "联机对战",
+      "state": "unavailable_gray"
+    },
+    {
+      "role": "auxiliary_button",
+      "text": "玩法说明",
+      "state": "available"
+    },
+    {
+      "role": "settings",
+      "presentation": "top_right_gear_icon",
+      "state": "available"
+    }
+  ],
+  "accepted_background_style": {
+    "record_id": "UI-WINTER-STYLE-ACCEPTANCE-20261113",
+    "date_local": "2026-11-13",
+    "candidate": "UI-STYLE-WINTER-BG-v1",
+    "candidate_record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+    "sha256": "bb060649d872cdf94ce80f1ec4b5988e0516bcfaadc6d268ec54da82caa37509",
+    "user_quote": "画风可以，我认为下一步我们应该确定一个游戏里面具体的UI内容了，我们先确定一个页面，然后生成基本我来看有什么问题，满不满意",
+    "accepted_scope": "visual_style_only",
+    "full_page_approved": false,
+    "production_background_locked": false,
+    "next_authorized_scope": "选择一个具体游戏页面并生成一张完整基础UI初稿供用户评价"
+  },
+  "changes": [
+    "去除本机双人、蓝牙对局、联机对战、玩法说明的所有底板与框线。",
+    "没有用底线、阴影、墨块或新的容器替代原按钮外壳。",
+    "暂保留A的轻细字形、位置、顺序及主要构图，用于隔离按钮外壳造成的割裂。"
+  ],
+  "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v3/prompt.txt",
+  "generation": {
+    "tool": "image_gen",
+    "actual_tool_calls": 1,
+    "actual_images": 1,
+    "transparent_background": false,
+    "reference_mode": "edit_A_existing_homepage"
+  },
+  "result": {
+    "filename": "exec-e7397df0-61e7-4da6-950e-7546ede8a42d.png",
+    "bytes": 2107441,
+    "sha256": "e529ebe28dc2110e58ee84f624e46dfc4ef807f5491131e72fccefff80bed569",
+    "width": 982,
+    "height": 1602,
+    "mode": "RGB",
+    "format": "PNG"
+  },
+  "presentation": "image_generation_result_displayed_in_this_conversation",
+  "visual_review": {
+    "actual_result_inspected": true,
+    "all_six_texts_accurate": true,
+    "menu_entries": 4,
+    "settings_present": true,
+    "menu_frames": 0,
+    "menu_backplates": 0,
+    "menu_underlines": 0,
+    "online_entry_gray": true,
+    "background_composition_visually_preserved": true,
+    "background_pixel_identity_verified": false,
+    "no_added_features": true,
+    "arena": false,
+    "observation": "菜单文字直接置于雪景留白，四项周围无矩形框、局部底板或墨线；A字形/层级基本延续，背景主要构图保留。",
+    "secondary_readonly_audit": "文案、四项菜单、设置和联机灰显齐全；无框、无底板、无底线；未发现功能越界。",
+    "user_page_approval": "pending",
+    "dimensions_note": "本次生成原图982×1602；为视觉验证稿，尚非生产画布/字体/设备适配验收。"
+  },
+  "persistence": {
+    "github_png_uploaded": false,
+    "generated_image_platform_autosave": "handled_by_platform_at_turn_commit",
+    "source_prompt_and_metadata_in_repository": true,
+    "editable_layered_source_created": false
+  },
+  "approval_scope": "none_for_this_page; A_named_preference_and_painting_consistency_feedback_recorded_separately",
+  "legacy_B1_B9_approvals_preserved": true,
+  "legacy_B10_pending_on_hold": true,
+  "old_home_exception_preserved": true,
+  "game_code_changed": false,
+  "runtime": "not_run",
+  "scoring": "frozen",
+  "NET": "paused",
+  "next_action": "用户评价UI-HOME-NEWSTYLE-v3：以A的轻细字形为暂定起点，去除四项菜单底板、框线和底线，查看文字与背景是否更协调；这张完整首页仍待审，不自动推进其它页面。"
+}
