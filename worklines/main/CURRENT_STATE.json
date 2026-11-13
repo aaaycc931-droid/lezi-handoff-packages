@@ -3888,5 +3888,26 @@
     "commit": "732ce2c6b0fd17f928303f22e544d92d532ffd33",
     "scope": "commit/file-list only; new H05 body/probes not semantically received this stage",
     "status": "PRESERVED_NOT_OVERRIDDEN_PENDING_TARGETED_INTAKE"
+  },
+  "c5_local_generation_dispatch_20261113": {
+    "id": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+    "status": "READY_BOUNDED_ISOLATED_IMPLEMENTATION",
+    "task": "worklines/chaos/TASK_FROM_MAIN.json#local_connection_generation_20261113",
+    "engine_branch": "codex/ch-local-generation-draft-20261113",
+    "base": "5cb3df526e1d41d60332b2b1f5c946f41126a720",
+    "report": "worklines/main/CH_C5_LOCAL_CONNECTION_GENERATION_DISPATCH_20261113.md",
+    "receiver_read": "UNKNOWN",
+    "receiver_execution": "UNKNOWN",
+    "main_parallel": "临时子代理在隔离本地实现src房主结果适配；主线修PR24 F1；另核英雄试点，互不抢写。"
+  },
+  "parallel_subagents_20261113": {
+    "user_authorization": "你可以开启子代理并行工作，来提高推进的速度。",
+    "roles": [
+      "result_adapter:src host可选结果适配",
+      "connection_dispatch:只读来源与C5任务准备，已完成由主线采用",
+      "hero_pilot_intake:PR23实际来源/定向验证接收"
+    ],
+    "publication_owner": "main",
+    "status": "STAGE_IN_PROGRESS_RESULTS_TO_FOLLOW"
   }
 }

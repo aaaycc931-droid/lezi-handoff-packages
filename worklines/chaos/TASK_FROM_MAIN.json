@@ -527,7 +527,7 @@
       "output": "同一报告追加最小验证规格，避免另起重复包"
     }
   },
-  "active_main_dispatch": "main_result_increment_20261113",
+  "active_main_dispatch": "local_connection_generation_20261113",
   "evidence_queue_20261113": {
     "schema": "lezi.main.delegated_validation.v1",
     "date_local": "2026-11-13",
@@ -638,5 +638,95 @@
     "stop": "完成这一个原型与有效反例即回传；剩余生产接入/可信代次由主线，不循环自审。",
     "receiver_read": "UNKNOWN",
     "receiver_execution": "NOT_STARTED_FOR_THIS_NEW_TASK"
+  },
+  "local_connection_generation_20261113": {
+    "schema": "lezi.main.workline_task.v1",
+    "id": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+    "owner": "chaos",
+    "issued_by": "main",
+    "status": "READY_BOUNDED_ISOLATED_IMPLEMENTATION",
+    "source_handoff_commit": "4e416b0a116473cb7411033774c00c26bbc942f7",
+    "source_engine": {
+      "production_baseline": "71145df45ad17215a3731e53150b6728e079e375",
+      "prior_workline_commit": "5cb3df526e1d41d60332b2b1f5c946f41126a720",
+      "prior_workline_branch": "codex/ch-lifecycle-verification-20261113"
+    },
+    "objective": "把现有无代次native回调与本地send结果改成可核的本机连接代次来源；在隔离草稿中验证旧回调/旧send不会被当作新连接事实。此任务不等待主线权威结果adapter或半混乱PR24审查。",
+    "why_new": "C4仅保存原请求，lifecycle明确no_trusted_native_generation。C5首次修改隔离分支的实际native/bridge/Web入口；不是再做内存账本、重复C1-C4或另写泛泛规格。",
+    "branch": {
+      "proposed": "codex/ch-local-generation-draft-20261113",
+      "base": "5cb3df526e1d41d60332b2b1f5c946f41126a720",
+      "rule": "本专属分支已由主线从5cb3df5创建。执行前核它与原研究分支最新HEAD，保全未回传成果并在本新分支增量提交；若有新差分先按来源对账，不重置或强推，不合并其他线。需要写集之外改动先回传该子项，其他独立步骤继续。",
+      "created_by_main": true,
+      "published_start": "5cb3df526e1d41d60332b2b1f5c946f41126a720"
+    },
+    "authority_boundary": "主线现明确委派本任务列出的隔离native/bridge/Web局部代码草稿与离线测试。两阶段可直接接续，无须用户逐项批准或等待主线接收。保留旧Listener/旧桥/v2 wire与单次发送；发布草稿不是生产采用。未授权新线上结果/hello协议、远端身份规则、模式开放、评分/NET、APK、合并或部署。",
+    "selected_local_contract": {
+      "local_identity": "每个native会话/bridge实例生成不可复用本机instance标识；本机generation在新的host/join/自动重连attempt及明确失效时递增/更新。捕获它所属的socket/attempt，晚到旧任务不能按执行时当前上下文重新贴标签。编码使用字符串，避免Java long至JS number精度问题。",
+      "identity_nonclaims": "本机instance/generation只用于本机因果隔离，不证明远端是谁、不证明跨重连actor连续、不等于authorityId/matchEpoch，不是acceptance ACK。C4旧帧缺失scope继续null/unknown，禁止补造。",
+      "callbacks": "在事件产生/资源归属点捕获不可变role、instance、generation与本机顺序号；Listener→GameWebBridge→最终evaluateJavascript投递均传同一快照。严禁在已排队lambda里读取当前role/current generation来冒充旧事件来源。跨代事件在有能力的新路径中不能改新局UI/hostRoom或解析旧message为新局action。",
+      "native_snapshot": "提供明确版本的只读本机能力/上下文接口（名称可用localTransportContext，v=1）；读取不发消息、不启动连接、不推进游戏。Web只从真实本机bridge取上下文，不接受peer payload自报本机代次。",
+      "scoped_send": "新增可选compare-and-send入口（可用sendCheckedScoped(raw, expectedInstance, expectedGeneration)）。在同一实际writer捕获边界验证期望上下文，写入绑定该writer及上下文；代次不匹配时not_sent且0输出，不自动改投新writer。旧写晚返回仍报告捕获的旧上下文，不使用返回时最新代次。status仍仅not_sent/written/unknown。具体返回要区分attemptedContext=null与实际绑定；不得伪造权威结果。",
+      "compatibility": "旧send/sendChecked/status以及既有wire v2、消息type、payload和解析规则保持兼容；新能力可选，旧桥缺字段时继续原路径并标未覆盖，不能凭CONNECTED/sendChecked补可信代次。未知/坏能力数据不触发自动重发；新路径需要的条件不满足就保持unknown。",
+      "final_delivery": "native提交给WebView不等于JS已执行。需在最终Web消费处核本机当前上下文及已消费顺序；仅第一次native队列检查不算最终隔离。不得用最新native事件序号简单丢弃同代所有尚未消费合法消息；明确区分跨代失效与同代有序消息。",
+      "lifecycle": "取消、重新host/join、旧accept/connect结束、旧readLoop/finally、旧延迟reconnect runnable不得关闭/安装/改变新代资源。保留PR22失败writer身份保护，不为通过测试反射置换生产writer/直接调用attach。相同代的合法EOF尾帧处理不能因加代次被偷偷改写。",
+      "listener_compatibility": "保持原Listener方法签名可用；可新增独立GenerationListener/扩展回调。实际每个native事件只能走一条通知路径：有新接口就传不可变上下文一次，否则走旧listener一次并标未覆盖，不能同时发两份造成重复。GameWebBridge新实现可带上下文，旧实现/旧Web缺能力时不得生成假代次。",
+      "send_selection_point": "在该原请求的首次发送边界，通过真实bridge只读能力和context固定本次期望上下文，再调用同一次sendCheckedScoped比较写入。仅有sendChecked/CONNECTED或出现任意同名方法不构成可信能力。中途切代返回not_sent或unknown，绝不自动刷新context重发或降级再发；缺新能力的旧桥按原sendChecked/send一次旧路径，原请求仍无可信代次。已选择新路径后异常或坏返回保持unknown，不跨路径尝试第二次。"
+    },
+    "write_allowlist": [
+      "android/app/src/main/java/com/jieqi/bluetooth/BluetoothGameSession.java",
+      "android/app/src/main/java/com/jieqi/bluetooth/GameWebBridge.java",
+      "android/app/src/main/java/com/jieqi/bluetooth/LocalTransportContext.java (optional new narrow helper)",
+      "web/app.ts (only BluetoothNativeBridge/event types, optional scoped send selection, native callback admission; no game/UI design changes)",
+      "web/bluetooth-local-generation.ts (optional pure helper)",
+      "scripts/research/ch-generation-*",
+      "tests/research/ch-generation-*",
+      "review/ch-local-generation/*",
+      "worklines/chaos/ own documentation and actual receipts"
+    ],
+    "do_not_write": [
+      "src/bluetooth-host-room.ts and other src rule/result files (main adapter worktree owner)",
+      "src/bluetooth-protocol.ts wire schema",
+      "other lines, UI independent branch, scoring, APK/build assets",
+      "old C1-C4 evidence files or recorded results"
+    ],
+    "phase_1": {
+      "id": "C5A-NATIVE-ORIGIN-AND-SCOPED-SEND",
+      "action": "基于实际三文件来源实现最小native/bridge草稿；可复用C1/C2编译和真实JDK流驱动，新增ch-generation脚本，不复制旧报告冒充新证据。MainActivity生产类不需修改；其队列行为由明确测试模型分开覆盖。",
+      "tests": [
+        "host/join/重连从实际入口产生新上下文；旧排队任务不能安装/关闭新socket，role与事件上下文在延迟执行时仍等于产生时。",
+        "取消后旧accept/connect完成、旧延迟自动reconnect runnable、旧readLoop/finally均仅处理自身资源；不依赖反射替换资源制造PASS。",
+        "scoped-send在代次匹配时实际写一次；错instance/generation或未连接时0写且not_sent。旧写在新attach后返回unknown时仍携带旧上下文且新writer保留。",
+        "同代完整无换行EOF与IOException保持原生产差异；只跑受新增差分影响的正/负控制，不重跑原整套15/16。",
+        "旧无能力调用的v2输出内容保持；桥重建同数字generation不与旧instance混同。"
+      ],
+      "deliverable": "实际代码差分、测试命令/原始trace/模型边界和源码hash；标清native来源捕获点与两个队列投递点。"
+    },
+    "phase_2": {
+      "id": "C5B-FINAL-CONSUMER-ISOLATION",
+      "dependency": "仅依赖本线C5A完成，不等待主线回执；两阶段获同一有界任务授权。",
+      "action": "接入可选Web上下文门禁与scoped send；复用真实Web函数/事件listener离线执行，验证旧事件不能影响新连接的当前状态。C4 PendingMemory只作独立保存回归输入，不接主线新结果adapter、不实现线上查询/hello协商。",
+      "tests": [
+        "保留真实native callback输入和本端因果顺序，分别记录Handler FIFO与MainActivity直执行/排队模型；若注入跨队列乱序必须标adversarial模型，不能称Android自然复现。",
+        "旧DISCONNECTED/ERROR/CONNECTED/message在新代后到达，不清新pending、不触发新hostRoom重连/断连/创建、旧action不送入新权威实例；同代合法事件继续。",
+        "必须覆盖native已检查但JS尚未执行期间切代的窗口；只有在最终Web消费者挡住才算本用例闭合。",
+        "旧send响应晚回不更新新attempt；C4原请求unknown仍保留，不因UI解锁、CONNECTED、pong或本机generation变成accepted。",
+        "旧桥、新桥但缺/坏context、Web重建/native重建、重复/倒序本机事件与合法同代消息各有明确降级；不添加自动重发。"
+      ],
+      "deliverable": "一份实际合成调用链的限制明确的结果与发布commit；明确尚无Android/JNI/无线/真实浏览器/远端actor连续性或正式QA。"
+    },
+    "completion": "两阶段各自有源控制通过并读回后，回传主线采用评审。遇必须改变wire、远端身份认证、规则/一般断线政策或写集外共享文件才停该子项，继续不依赖它的部分。不要为了持续运行扩样本；完成这个有限实施包即停。",
+    "independent_execution_receipts": {
+      "executor_read": "UNKNOWN",
+      "executor_adoption": "UNKNOWN",
+      "executor_run": "UNKNOWN"
+    },
+    "return_to_main": [
+      "实际基线/源hash/分支/提交/变更写集",
+      "本机代次定义与何处捕获/失效/过滤",
+      "两阶段实际通过/未覆盖和原始证据",
+      "与主线authority/match/actor接入的必要依赖（不能声称已解决）"
+    ],
+    "source_review": "worklines/main/CH_C5_LOCAL_CONNECTION_GENERATION_DISPATCH_20261113.md"
   }
 }
