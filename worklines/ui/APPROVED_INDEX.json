@@ -126,11 +126,12 @@
     }
   ],
   "current_pending_candidate": {
-    "version": "UI-HOME-NEWSTYLE-v4",
-    "status": "candidate_created_pending_user_review",
-    "scope": "homepage_ink_underlines_without_author_credit",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
-    "sha256": "73c6b69cf8ef01b665c5ea27a360054f02b7712eda0d084c0f9b9767b5c811fa"
+    "version": "UI-HOME-NEWSTYLE-v5",
+    "status": "candidate_created_pending_comparison_with_retained_v4",
+    "scope": "one_targeted_homepage_visual_refinement",
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v5/candidate.json",
+    "sha256": "267999379d6a3f8500d7e254732fe773e170533b31791110db73c5f6023acf87",
+    "compared_with": "UI-HOME-NEWSTYLE-v4"
   },
   "source_status_authority": "APPROVAL_REGISTER.json",
   "index_reconciled_on": "2026-11-13",
@@ -236,5 +237,31 @@
     "exact_generated_page_approved": false,
     "game_code_change_authorized_by_this_record": false,
     "authority": "latest_explicit_user_direction"
+  },
+  "current_homepage_stage_baseline": {
+    "record_id": "UI-HOME-V4-STAGE-RETENTION-20261113",
+    "date_local": "2026-11-13",
+    "version": "UI-HOME-NEWSTYLE-v4",
+    "candidate_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
+    "sha256": "73c6b69cf8ef01b665c5ea27a360054f02b7712eda0d084c0f9b9767b5c811fa",
+    "user_quote": "可以的，进行下一步吧",
+    "agreement_context": "用户上一条表示v4看起来还可以并询问是否继续生成；助手建议先保留v4作阶段基准，再最多生成一张针对字号、底线笔触和墨色的小幅精修对照，用户同意。",
+    "accepted_scope": "retain_v4_as_stage_baseline_and_make_one_targeted_refinement",
+    "stage_retention_approved": true,
+    "final_page_approved": false,
+    "production_asset_approved": false,
+    "refinement_scope": [
+      "菜单字号略收",
+      "淡墨底线笔触更自然",
+      "标题与菜单墨色协调"
+    ],
+    "invariants": [
+      "雪山红梅画风",
+      "无封闭按钮外壳",
+      "四项菜单淡墨底线",
+      "删除作者署名",
+      "五段现行文字及设置",
+      "联机灰显"
+    ]
   }
 }

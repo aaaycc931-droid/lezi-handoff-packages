@@ -1,0 +1,153 @@
+{
+  "schema": "lezi.ui.new_style_page_candidate.v1",
+  "id": "UI-HOME-NEWSTYLE-v5",
+  "date_local": "2026-11-13",
+  "status": "candidate_created_pending_comparison_with_retained_v4",
+  "scope": "one_targeted_homepage_visual_refinement",
+  "subject": "首页v4的小幅精修对照：字号、底线笔触与墨色",
+  "source_branch": "ui/restart-asof-20261104-1119",
+  "source_commit": "ea487f8fa2d2a0109fc3cd5229a75a630cbc172d",
+  "user_agreement": {
+    "record_id": "UI-HOME-V4-STAGE-RETENTION-20261113",
+    "date_local": "2026-11-13",
+    "version": "UI-HOME-NEWSTYLE-v4",
+    "candidate_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
+    "sha256": "73c6b69cf8ef01b665c5ea27a360054f02b7712eda0d084c0f9b9767b5c811fa",
+    "user_quote": "可以的，进行下一步吧",
+    "agreement_context": "用户上一条表示v4看起来还可以并询问是否继续生成；助手建议先保留v4作阶段基准，再最多生成一张针对字号、底线笔触和墨色的小幅精修对照，用户同意。",
+    "accepted_scope": "retain_v4_as_stage_baseline_and_make_one_targeted_refinement",
+    "stage_retention_approved": true,
+    "final_page_approved": false,
+    "production_asset_approved": false,
+    "refinement_scope": [
+      "菜单字号略收",
+      "淡墨底线笔触更自然",
+      "标题与菜单墨色协调"
+    ],
+    "invariants": [
+      "雪山红梅画风",
+      "无封闭按钮外壳",
+      "四项菜单淡墨底线",
+      "删除作者署名",
+      "五段现行文字及设置",
+      "联机灰显"
+    ]
+  },
+  "edit_target": {
+    "id": "UI-HOME-NEWSTYLE-v4",
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
+    "result": {
+      "filename": "exec-a1abf118-9200-4069-a2f9-f3ce6d6b50a7.png",
+      "bytes": 2104119,
+      "sha256": "73c6b69cf8ef01b665c5ea27a360054f02b7712eda0d084c0f9b9767b5c811fa",
+      "width": 982,
+      "height": 1602,
+      "mode": "RGB",
+      "format": "PNG"
+    },
+    "actual_visually_inspected": true
+  },
+  "source_content": [
+    {
+      "role": "title",
+      "text": "乐子象棋"
+    },
+    {
+      "role": "primary_button",
+      "text": "本机双人",
+      "state": "available"
+    },
+    {
+      "role": "secondary_button",
+      "text": "蓝牙对局",
+      "state": "available"
+    },
+    {
+      "role": "button",
+      "text": "联机对战",
+      "state": "unavailable_gray"
+    },
+    {
+      "role": "auxiliary_button",
+      "text": "玩法说明",
+      "state": "available"
+    },
+    {
+      "role": "settings",
+      "presentation": "top_right_gear_icon",
+      "state": "available"
+    }
+  ],
+  "accepted_background_style": {
+    "record_id": "UI-WINTER-STYLE-ACCEPTANCE-20261113",
+    "date_local": "2026-11-13",
+    "candidate": "UI-STYLE-WINTER-BG-v1",
+    "candidate_record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+    "sha256": "bb060649d872cdf94ce80f1ec4b5988e0516bcfaadc6d268ec54da82caa37509",
+    "user_quote": "画风可以，我认为下一步我们应该确定一个游戏里面具体的UI内容了，我们先确定一个页面，然后生成基本我来看有什么问题，满不满意",
+    "accepted_scope": "visual_style_only",
+    "full_page_approved": false,
+    "production_background_locked": false,
+    "next_authorized_scope": "选择一个具体游戏页面并生成一张完整基础UI初稿供用户评价"
+  },
+  "author_credit_requirement": "deleted_by_explicit_user_instruction; do_not_restore",
+  "intended_changes": [
+    "三个主入口文字约缩小8%；玩法说明约缩小3%，中心与顺序保留。百分比为生成目标，不宣称已经测量精确达到。",
+    "底线仍各一条，细淡开放；增加自然干笔和浓淡起收。",
+    "标题墨色略柔和，可用菜单保持深墨灰，联机仍更浅。"
+  ],
+  "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v5/prompt.txt",
+  "generation": {
+    "tool": "image_gen",
+    "actual_tool_calls": 1,
+    "actual_images": 1,
+    "transparent_background": false,
+    "reference_mode": "edit_retained_v4"
+  },
+  "result": {
+    "filename": "exec-276fb582-5b8a-454e-87cc-07bd53beff76.png",
+    "bytes": 2046477,
+    "sha256": "267999379d6a3f8500d7e254732fe773e170533b31791110db73c5f6023acf87",
+    "width": 982,
+    "height": 1602,
+    "mode": "RGB",
+    "format": "PNG"
+  },
+  "presentation": "image_generation_result_displayed_in_this_conversation",
+  "visual_review": {
+    "actual_result_inspected": true,
+    "all_five_required_texts_accurate": true,
+    "menu_entries": 4,
+    "settings_present": true,
+    "online_entry_gray": true,
+    "menu_underlines": 4,
+    "menu_frames": 0,
+    "menu_backplates": 0,
+    "author_label_absent": true,
+    "author_name_absent": true,
+    "main_background_composition_visually_preserved": true,
+    "background_pixel_identity_verified": false,
+    "no_added_features": true,
+    "arena": false,
+    "observed_changes": "三个主菜单字较v4略小、视觉重量减轻；底线更淡、更纤细；标题仍突出，原布局和主要景物关系延续。",
+    "actual_typographic_scale_measured": false,
+    "comparison_tradeoff": "v4菜单更醒目；v5更轻、留白更松。尚不能替用户认定v5更好。",
+    "user_preference_between_v4_and_v5": "pending",
+    "secondary_readonly_audit": "五段文案、四菜单、设置、联机灰显均正确；无框无底板无署名、有四条淡墨底线；字号小幅收小仍清楚、构图和层级延续。"
+  },
+  "persistence": {
+    "github_png_uploaded": false,
+    "generated_image_platform_autosave": "handled_by_platform_at_turn_commit",
+    "source_prompt_and_metadata_in_repository": true,
+    "editable_layered_source_created": false
+  },
+  "approval_scope": "v5_not_approved; v4_retained_as_stage_baseline_only",
+  "replaces_v4": false,
+  "legacy_B1_B9_approvals_preserved": true,
+  "legacy_B10_pending_on_hold": true,
+  "game_code_changed": false,
+  "runtime": "not_run",
+  "scoring": "frozen",
+  "NET": "paused",
+  "next_action": "对照阶段保留的首页v4与一张精修候选v5，用户选择更满意的一版或指出局部问题；v5未自动取代v4，不再自动批量生成，完整页面最终审批仍待确认。"
+}

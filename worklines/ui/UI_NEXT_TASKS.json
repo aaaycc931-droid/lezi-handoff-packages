@@ -3,12 +3,12 @@
   "tasks": [
     {
       "id": "UI-STYLE-001",
-      "status": "candidate_created_pending_user_review",
-      "work": "审阅首页淡墨底线菜单及删除作者署名后的完整稿",
-      "current_item": "UI-HOME-NEWSTYLE-v4",
-      "deliverable": "无封闭外壳、四项墨线入口、无作者署名的首页候选",
-      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
-      "acceptance": "核对用户最新底线与署名删除要求；页面整体是否满意仍由用户评价。"
+      "status": "candidate_created_pending_comparison_with_retained_v4",
+      "work": "对照阶段保留v4与单张小幅精修v5",
+      "current_item": "UI-HOME-NEWSTYLE-v5",
+      "deliverable": "字号略收、淡墨底线和墨色微调的一张首页",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v5/candidate.json",
+      "acceptance": "用户比较实际观感；若无明确改善，继续保留v4；不自动把新生成版本视为更优或批准。"
     },
     {
       "id": "UI-001",
@@ -81,18 +81,28 @@
   "planned_tasks_are_not_completed_designs": true,
   "snapshot_date": "2026-11-13",
   "paused_by_user": false,
-  "resume_item": "UI-HOME-NEWSTYLE-v4",
+  "resume_item": "UI-HOME-NEWSTYLE-v5",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
   "handoff_requested": true,
   "automatic_resume_scheduled": false,
   "next_queue": [
     {
+      "item": "UI-HOME-NEWSTYLE-v5",
+      "state": "首页v4的小幅精修对照：字号、底线笔触与墨色",
+      "status": "candidate_created_pending_comparison_with_retained_v4",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v5/candidate.json",
+      "scope": "one_targeted_homepage_visual_refinement"
+    },
+    {
       "item": "UI-HOME-NEWSTYLE-v4",
       "state": "首页淡墨底线菜单、删除作者署名",
-      "status": "candidate_created_pending_user_review",
+      "status": "retained_as_stage_baseline_not_final_approved",
       "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
-      "scope": "homepage_ink_underlines_without_author_credit"
+      "scope": "homepage_ink_underlines_without_author_credit",
+      "active_for_current_dialogue": false,
+      "retained_as_comparison_baseline": true,
+      "followup_candidate_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v5/candidate.json"
     },
     {
       "item": "UI-HOME-NEWSTYLE-v3",
@@ -220,9 +230,10 @@
     "correction_record": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113"
   },
   "active_ui_image_task": {
-    "id": "UI-HOME-NEWSTYLE-v4",
-    "status": "candidate_created_pending_user_review",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
-    "next_action": "用户审阅UI-HOME-NEWSTYLE-v4：无封闭外壳，四项菜单保留淡墨底线，作者署名已整行删除；根据具体反馈继续细化这一页，完整页面仍待审。"
+    "id": "UI-HOME-NEWSTYLE-v5",
+    "status": "candidate_created_pending_comparison_with_retained_v4",
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v5/candidate.json",
+    "retained_comparison_baseline": "UI-HOME-NEWSTYLE-v4",
+    "next_action": "对照阶段保留的首页v4与一张精修候选v5，用户选择更满意的一版或指出局部问题；v5未自动取代v4，不再自动批量生成，完整页面最终审批仍待确认。"
   }
 }
