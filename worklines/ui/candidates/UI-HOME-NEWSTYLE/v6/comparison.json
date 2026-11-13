@@ -1,0 +1,269 @@
+{
+  "schema": "lezi.ui.page_style_comparison.v1",
+  "id": "UI-HOME-NEWSTYLE-v6-comparison",
+  "date_local": "2026-11-13",
+  "source_branch": "ui/restart-asof-20261104-1119",
+  "source_commit": "a8f9430b83483f0cda0fc0e693a64a32a06f552e",
+  "status": "four_candidates_pending_user_preference",
+  "subject": "同一首页四个明显不同的排布与字体方向",
+  "user_workflow_request": {
+    "record_id": "UI-HOME-MULTI-VARIANT-PREFERENCE-20261113",
+    "date_local": "2026-11-13",
+    "user_quote": "你可以给我同时生成多张不同的对照，多个不同的版本来让我做对比，如果只有一张的话，我可能你可以给我同时生成多张不同的对照，多个不同的版本来让我做对比，如果只有一张的话，我可能不是很好说这两张哪个好，也许还有别的更好的。",
+    "scope": "current_homepage_visual_exploration",
+    "user_preference": "用户希望同时看多张有明显差异的完整版本，单张或细微两版比较不足以判断喜好，并希望继续探索可能更好的方案。",
+    "authorization": "本轮制作多个同一首页的完整对照；助手具体选择四张。",
+    "supersedes": "上一轮最多一张精修、之后不再批量的助手建议，不再作为阻止本轮多版本比较的限制。",
+    "future_review_preference": "当需要比较视觉方向时，优先提供一组差异清楚的版本；不要求每次固定四张，也不扩展至其他页面或无限自动生成。",
+    "formal_page_approval": false,
+    "retained_stage_baseline": "UI-HOME-NEWSTYLE-v4",
+    "invariants": [
+      "已认可雪山红梅背景画风",
+      "无封闭按钮外壳",
+      "每项独立淡墨底线",
+      "无作者署名",
+      "五段现行文案",
+      "设置入口",
+      "联机灰显"
+    ]
+  },
+  "edit_target": {
+    "id": "UI-HOME-NEWSTYLE-v4",
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
+    "result": {
+      "filename": "exec-a1abf118-9200-4069-a2f9-f3ce6d6b50a7.png",
+      "bytes": 2104119,
+      "sha256": "73c6b69cf8ef01b665c5ea27a360054f02b7712eda0d084c0f9b9767b5c811fa",
+      "width": 982,
+      "height": 1602,
+      "mode": "RGB",
+      "format": "PNG"
+    },
+    "actual_visually_inspected": true,
+    "stage_retained": true,
+    "final_approval": false
+  },
+  "source_content": [
+    {
+      "role": "title",
+      "text": "乐子象棋"
+    },
+    {
+      "role": "primary_button",
+      "text": "本机双人",
+      "state": "available"
+    },
+    {
+      "role": "secondary_button",
+      "text": "蓝牙对局",
+      "state": "available"
+    },
+    {
+      "role": "button",
+      "text": "联机对战",
+      "state": "unavailable_gray"
+    },
+    {
+      "role": "auxiliary_button",
+      "text": "玩法说明",
+      "state": "available"
+    },
+    {
+      "role": "settings",
+      "presentation": "top_right_gear_icon",
+      "state": "available"
+    }
+  ],
+  "accepted_background_style": {
+    "record_id": "UI-WINTER-STYLE-ACCEPTANCE-20261113",
+    "date_local": "2026-11-13",
+    "candidate": "UI-STYLE-WINTER-BG-v1",
+    "candidate_record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+    "sha256": "bb060649d872cdf94ce80f1ec4b5988e0516bcfaadc6d268ec54da82caa37509",
+    "user_quote": "画风可以，我认为下一步我们应该确定一个游戏里面具体的UI内容了，我们先确定一个页面，然后生成基本我来看有什么问题，满不满意",
+    "accepted_scope": "visual_style_only",
+    "full_page_approved": false,
+    "production_background_locked": false,
+    "next_authorized_scope": "选择一个具体游戏页面并生成一张完整基础UI初稿供用户评价"
+  },
+  "generation": {
+    "tool": "image_gen",
+    "actual_tool_calls": 4,
+    "actual_images": 4,
+    "each_variant_generated_once": true,
+    "execution": "parallel independent edits of same v4 reference",
+    "transparent_background": false
+  },
+  "members": [
+    {
+      "id": "UI-HOME-NEWSTYLE-v6-1",
+      "number": 1,
+      "name": "舒展留白",
+      "status": "candidate_created_pending_user_preference",
+      "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-1.txt",
+      "result": {
+        "number": 1,
+        "filename": "exec-0fed376a-81af-4fc1-89c7-5c4e2dc6f043.png",
+        "bytes": 2023859,
+        "sha256": "093c85d242a230a07092360305cba9a91be94a978ca581a7764ed2512c9dc033",
+        "width": 982,
+        "height": 1602,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "visual_review": {
+        "actual_result_inspected": true,
+        "all_five_texts_accurate": true,
+        "menu_entries": 4,
+        "settings_present": true,
+        "online_entry_gray": true,
+        "menu_underlines": 4,
+        "menu_frames": 0,
+        "menu_backplates": 0,
+        "author_credit_absent": true,
+        "unrequested_feature_entries": false,
+        "arena": false,
+        "observed": "标题与菜单字更纤细，字距明显放松，短淡底线，居中疏朗，四张中视觉最轻。",
+        "tradeoff": "空气感强；文字存在感与醒目程度较低。"
+      },
+      "user_approved": false
+    },
+    {
+      "id": "UI-HOME-NEWSTYLE-v6-2",
+      "number": 2,
+      "name": "紧凑聚焦",
+      "status": "candidate_created_pending_user_preference",
+      "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-2.txt",
+      "result": {
+        "number": 2,
+        "filename": "exec-0608eeb2-276b-429b-844d-36b34d70ffaa.png",
+        "bytes": 2072985,
+        "sha256": "62ec7bd55bbf411b1c51ec3b429dc0a9aa438996fbae5186a3611fea5f21cf44",
+        "width": 982,
+        "height": 1602,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "visual_review": {
+        "actual_result_inspected": true,
+        "all_five_texts_accurate": true,
+        "menu_entries": 4,
+        "settings_present": true,
+        "online_entry_gray": true,
+        "menu_underlines": 4,
+        "menu_frames": 0,
+        "menu_backplates": 0,
+        "author_credit_absent": true,
+        "unrequested_feature_entries": false,
+        "arena": false,
+        "observed": "标题和菜单偏左；四项菜单紧凑成组，说明入口也左对齐；菜单未压到深色岩石或客栈。",
+        "tradeoff": "操作区集中，布局变化最大；全页左右视觉重量需由用户判断。"
+      },
+      "user_approved": false
+    },
+    {
+      "id": "UI-HOME-NEWSTYLE-v6-3",
+      "number": 3,
+      "name": "画中题字",
+      "status": "candidate_created_pending_user_preference",
+      "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-3.txt",
+      "result": {
+        "number": 3,
+        "filename": "exec-31b75ee5-fe75-4ec0-944a-a85a080b8daa.png",
+        "bytes": 2093629,
+        "sha256": "b962e8b80e13dbc8421e2bdbf3e73a79c637edcbfd297ee77ca74cb4959c38f5",
+        "width": 982,
+        "height": 1602,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "visual_review": {
+        "actual_result_inspected": true,
+        "all_five_texts_accurate": true,
+        "menu_entries": 4,
+        "settings_present": true,
+        "online_entry_gray": true,
+        "menu_underlines": 4,
+        "menu_frames": 0,
+        "menu_backplates": 0,
+        "author_credit_absent": true,
+        "unrequested_feature_entries": false,
+        "arena": false,
+        "observed": "标题长收笔明显，菜单书写感更强，底线呈自然弧势和干笔，整体最有笔势。",
+        "tradeoff": "书写个性强；标题和墨线更抢眼，是否过于飘逸由用户判断。"
+      },
+      "user_approved": false
+    },
+    {
+      "id": "UI-HOME-NEWSTYLE-v6-4",
+      "number": 4,
+      "name": "清晰易用",
+      "status": "candidate_created_pending_user_preference",
+      "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/prompt-4.txt",
+      "result": {
+        "number": 4,
+        "filename": "exec-75e9b702-5c8a-406a-af12-d6d1d7498a8f.png",
+        "bytes": 2135376,
+        "sha256": "72ece9c2f8ef2738699d3351980fb72891fd8dd1eebdee746e31c9fcb75c9adc",
+        "width": 982,
+        "height": 1602,
+        "mode": "RGB",
+        "format": "PNG"
+      },
+      "visual_review": {
+        "actual_result_inspected": true,
+        "all_five_texts_accurate": true,
+        "menu_entries": 4,
+        "settings_present": true,
+        "online_entry_gray": true,
+        "menu_underlines": 4,
+        "menu_frames": 0,
+        "menu_backplates": 0,
+        "author_credit_absent": true,
+        "unrequested_feature_entries": false,
+        "arena": false,
+        "observed": "标题与菜单字更大、更端正且较浓，底线较清楚；四张中墨色重量最大。",
+        "tradeoff": "辨认更直接；画面更重，可能不如轻细版本符合用户口味。"
+      },
+      "user_approved": false
+    }
+  ],
+  "display_order": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "review_scope": "比较字的大小、疏密、笔势、墨色及菜单布局；同一页面与功能，不是新增四个页面。",
+  "visual_check": {
+    "actual_result_inspected": true,
+    "directions_visually_distinct": true,
+    "all_author_credit_absent": true,
+    "all_online_entries_gray": true,
+    "background_main_composition_visually_preserved": true,
+    "background_pixel_identity_verified": false,
+    "readability_scope": "visual_review_only_not_device_or_runtime_acceptance",
+    "secondary_readonly_audit": "四张五段文案、四菜单和设置均齐全；联机灰显、无署名、无封闭框/底板、每项有底线；1最轻疏、2左移紧凑、3笔势明显、4字号墨色最强，差异清楚。"
+  },
+  "retained_prior_versions": [
+    "UI-HOME-NEWSTYLE-v4",
+    "UI-HOME-NEWSTYLE-v5"
+  ],
+  "previous_v5_rejected": false,
+  "selected_version": null,
+  "formal_page_approved": false,
+  "persistence": {
+    "github_png_uploaded": false,
+    "generated_images_platform_autosave": "handled_by_platform_at_turn_commit",
+    "source_prompts_and_metadata_in_repository": true,
+    "editable_layered_source_created": false
+  },
+  "legacy_B1_B9_approvals_preserved": true,
+  "legacy_B10_pending_on_hold": true,
+  "game_code_changed": false,
+  "runtime": "not_run",
+  "scoring": "frozen",
+  "NET": "paused",
+  "next_action": "用户比较本轮1舒展留白、2紧凑聚焦、3画中题字、4清晰易用四张首页，选择、排序或组合偏好；保留v4阶段基准及v5原图，四张新候选均未批准，后续按用户偏好继续同页探索。",
+  "publication_base_commit": "6cdb152ee3ddfd4d8d685deba5edb987a5943c9b"
+}
