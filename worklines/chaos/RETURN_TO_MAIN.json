@@ -771,19 +771,56 @@
       "previous_source_report_main_receipt": "RECEIVED_AS_DESIGN_CONSTRAINTS at d5d05f9 worklines/main/RESULT_RECONCILIATION_REVIEW.md",
       "this_execution_main_receipt": "UNKNOWN",
       "next": "BOUNDED_QUEUE_EXHAUSTED; await concrete main implementation/decision or real-environment task; do not repeat prior suites"
+    },
+    "c4_pending_request_20261113": {
+      "id": "MAIN-CH-PENDING-REQUEST-PRESERVATION-PROTOTYPE-20261113",
+      "status": "C4_MEMORY_PROTOTYPE_COMPLETE_BOUNDED",
+      "source_handoff_head": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+      "date_local": "2026-11-13",
+      "engine_commit": "5cb3df526e1d41d60332b2b1f5c946f41126a720",
+      "engine_branch": "codex/ch-lifecycle-verification-20261113",
+      "parent": "09af8bf1dae274e180d123370b86d444aafad4c9",
+      "semantic_reference": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+      "report": "worklines/chaos/CH_PENDING_REQUEST_PRESERVATION_20261113.md",
+      "verification": {
+        "passed": 16,
+        "failed": 0,
+        "command": "node --test --test-reporter=tap tests/research/ch-lifecycle-pending.test.ts",
+        "old_suites_rerun": false,
+        "production_changes": 0,
+        "wire_changes": 0,
+        "engine_readback_files": 4,
+        "independentQA": false,
+        "formal_CH07_increment": 0
+      },
+      "findings": [
+        "Two recorded C3 outcomes both clear UI while memory retains exact original raw/id/local unknown; one action and no resend.",
+        "Wrong actor/authority/room/match/content cannot bind result; untagged lifecycle callback cannot resolve new attempt.",
+        "Local not_sent/written/unknown independent of fixture authority outcomes; contradictory evidence stays unknown/conflict.",
+        "FIFO eviction or memory rebuild (including recapture) cannot restore original local instance token."
+      ],
+      "limits": [
+        "Research send wrapper only, not production persistence.",
+        "Scope missing from original wire is null/unknown; fixture scope/answer explicitly synthetic, no PR24 connection or authentication claim.",
+        "Exact raw-string binding, not canonical cross-language JSON.",
+        "Count bounded 256, no byte/heap bound, durable restoration or trusted native generation.",
+        "Actual production UI still clears its transient fields; prototype does not fix UI or wire."
+      ],
+      "previous_main_receipt": "C1-C3 received per RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
+      "this_main_receipt": "UNKNOWN",
+      "next": "C4_SCOPE_COMPLETE; wait concrete production integration/trusted generation or new bounded task."
     }
   },
-  "latest_phase_status": "C1_C2_C3_BOUNDED_OFFLINE_COMPLETE",
+  "latest_phase_status": "C4_MEMORY_PROTOTYPE_COMPLETE_BOUNDED",
   "latest_phase_changed_paths": [
-    "worklines/chaos/CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md",
+    "worklines/chaos/CH_PENDING_REQUEST_PRESERVATION_20261113.md",
     "worklines/chaos/CURRENT_STATE.json",
     "worklines/chaos/NEXT_ACTIONS.json",
     "worklines/chaos/READ_RECEIPTS.json",
     "worklines/chaos/RETURN_TO_MAIN.json",
-    "worklines/chaos/START_HERE.txt",
-    "worklines/chaos/CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW_20261113.md"
+    "worklines/chaos/START_HERE.txt"
   ],
-  "latest_phase_external_handoff_receiver": "UNKNOWN_FOR_NEW_OFFLINE_RESULTS",
+  "latest_phase_external_handoff_receiver": "UNKNOWN_FOR_C4_C1_C3_RECEIVED",
   "latest_phase_preserves_original_CH07_matrix": true,
   "main_write_authorization_20261113": {
     "date_local": "2026-11-13",
