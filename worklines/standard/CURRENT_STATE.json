@@ -44,13 +44,14 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-H10-FORWARD-QUALIFICATION-DELTA-RECEPTION",
-    "status": "WAIT_CONCRETE_FORWARD_SOURCE_OR_NEW_TASK",
-    "action": "收到主线H02/H10/M04正式前缀/真帅安全/同批资格实际差分及其授权后，接续G4正式行动、G5与O0—O9；当前T0复核已完成，不用T0能力跑8手或R5、不循环自审。直接相关新实证或新独立任务也可触发。",
-    "implementation_authorized": false,
-    "engine_execution_authorized_for_forward_prefix": false,
-    "completed_T0_execution_authorization": "TASK_FROM_MAIN.h10_t0_implementation_review_20261113，已按范围完成",
-    "main_dependency": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113"
+    "id": "MAIN-STD-H10-FORWARD-IMPLEMENTATION-20261113",
+    "status": "READY_BY_MAIN_DISPATCH_EXECUTOR_NOT_YET_READ",
+    "action": "先读TASK_FROM_MAIN.h10_forward_implementation_20261113，进入自己的新分支实施S1精确准入/真帅安全，前置检查通过后直接S2原8手/R5验证；不等主线先写实现或确认收到。",
+    "implementation_authorized": "仅新任务列明专属分支/写集和既有确认内技术实现",
+    "engine_execution_authorized": "仅该新专用能力及限定研究；旧T0能力不变",
+    "main_dependency": "本包启动无主线代码前置；新规则争议/正式采用与集成仍归主线",
+    "executor_read": "UNKNOWN",
+    "executor_run": "UNKNOWN"
   },
   "external_delivery": {
     "prepared_here": true,
@@ -1518,5 +1519,37 @@
     "NET": "paused",
     "main_read_current_return": "UNKNOWN",
     "main_adoption_current_return": "UNKNOWN"
-  }
+  },
+  "main_dispatch_h10_forward_20261113": {
+    "id": "MAIN-STD-H10-FORWARD-IMPLEMENTATION-20261113",
+    "date_local": "2026-11-13",
+    "status": "ISSUED_BY_MAIN_NOT_EXECUTOR_ACCEPTANCE",
+    "report": "worklines/main/STANDARD_FORWARD_IMPLEMENTATION_DISPATCH_20261113.md",
+    "task": "worklines/standard/TASK_FROM_MAIN.json#h10_forward_implementation_20261113",
+    "implementation_owner": "standard",
+    "review_and_integration_owner": "main",
+    "branch": "codex/std-h10-forward-draft-20261113",
+    "branch_base": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+    "branch_created_and_ref_verified": true,
+    "executor_read": "UNKNOWN",
+    "executor_execution": "UNKNOWN",
+    "new_engine_changes": 0,
+    "new_tests": 0,
+    "previous_T0": "17 passed per standard return; completed, not rerun",
+    "G4_G5_R5": "UNIMPLEMENTED_IN_NEW_TASK_NOT_ACCEPTED",
+    "frontend_configuration": "existing project/entry reused; no new setup required",
+    "scoring": "frozen",
+    "NET": "paused",
+    "mode_opened": false,
+    "prior_wait": {
+      "id": "NEXT-STD-H10-FORWARD-QUALIFICATION-DELTA-RECEPTION",
+      "status": "WAIT_CONCRETE_FORWARD_SOURCE_OR_NEW_TASK",
+      "action": "收到主线H02/H10/M04正式前缀/真帅安全/同批资格实际差分及其授权后，接续G4正式行动、G5与O0—O9；当前T0复核已完成，不用T0能力跑8手或R5、不循环自审。直接相关新实证或新独立任务也可触发。",
+      "implementation_authorized": false,
+      "engine_execution_authorized_for_forward_prefix": false,
+      "completed_T0_execution_authorization": "TASK_FROM_MAIN.h10_t0_implementation_review_20261113，已按范围完成",
+      "main_dependency": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113"
+    }
+  },
+  "operational_scope_note_h10_forward_20261113": "历史scope/code_or_deploy_authorized/旧next只描述已完成任务；本次专属分支限定实施以新TASK为准，未改变正式模式/部署权限，也未声称本线已读取执行。"
 }

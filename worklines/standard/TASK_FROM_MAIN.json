@@ -58,7 +58,7 @@
     "receiver_read": "UNKNOWN_FOR_THIS_DISPATCH",
     "receiver_execution": "NOT_APPLICABLE_UNTIL_CONCRETE_TRIGGER"
   },
-  "active_main_dispatch": "h10_t0_implementation_review_20261113",
+  "active_main_dispatch": "h10_forward_implementation_20261113",
   "h10_implementation_scope_20261113": {
     "id": "MAIN-STD-H10-SCOPE-PREPARED-20261113",
     "report": "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md",
@@ -105,5 +105,109 @@
     ],
     "receiver_read": "UNKNOWN",
     "receiver_execution": "UNKNOWN"
-  }
+  },
+  "h10_forward_implementation_20261113": {
+    "schema": "lezi.main.workline_task.v1",
+    "id": "MAIN-STD-H10-FORWARD-IMPLEMENTATION-20261113",
+    "owner": "standard",
+    "issued_by": "main",
+    "status": "READY_BOUNDED_ISOLATED_IMPLEMENTATION",
+    "date_local": "2026-11-13",
+    "source_handoff_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
+    "objective": "普通线直接承接原主线G4/G5的有界工程：精确H02旧刺杀/H10现行影/M04普通32棋的研究准入与王安全适配，再执行原8手及R5同批验证。交付真实草稿代码与证据，无需先等主线实现。",
+    "reassignment": {
+      "previous_owner_task": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+      "implementation_owner": "standard",
+      "review_and_integration_owner": "main",
+      "scope": "仅本包列明代码与离线研究。共享规则/正式采用/模式开放/线上协议和其他工程所有权不迁移。",
+      "supersedes": "本包内旧‘普通仅静态/T0、必须等待主线前缀实现’限制由本次明确技术委派取代；旧任务记录保留历史，未列事项仍不获授权。"
+    },
+    "engine": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "branch": "codex/std-h10-forward-draft-20261113",
+      "base": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+      "parent_research_branch": "codex/std-h10-preparation-review-20261113",
+      "PR25": "4ae702ea33bfaf728cc7ea78f092975bdc68b342",
+      "created_and_ref_verified_by_main": true,
+      "branch_rule": "启动先核专属分支、原研究分支和PR25最新HEAD。保护本地/未回传成果，增量提交，不重置/强推。自己的后续同任务差分直接接续；他方同写集新增变化按来源对账，不能整支覆盖。"
+    },
+    "inputs": [
+      "本线既有reviews/STD_PR25_H10_T0_RECEPTION_20261113.md及引擎review/std-h10-preparation/*（复用17项已完成证据，不重交）",
+      "worklines/standard/specs/STD_H10_M04_PREFIX_CONTRACT_20261113.json（原8手和A/B条件来源，不是已证自然棋谱）",
+      "worklines/standard/specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json（O0—O9及R1/R2）",
+      "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md及H10_PREPARATION_IMPLEMENTATION_20261113.md",
+      "worklines/main/confirmations/H10_FIRST_UNIFORM_THREE_20261113.json；main/ADJUDICATION相关H10/死亡闭合原确认与本线H02/M04原确认，执行前定向核原文和作用域",
+      "引擎src/research-source-context.ts、wind-preparation.ts、remote-room.ts、game.ts及相关rules/settlement真实调用链"
+    ],
+    "authority": "承接用户要求主线推进必要工程、分发和并行的既有授权，主线现明确委派下列独立草稿实施及离线真实运行。不是新增玩法批准。两阶段无须再等主线收到阶段一；阶段二须先通过自身真实资格/安全前置检查。现有T0能力本身仍不得冒用为正式前缀能力。",
+    "phase_1": {
+      "id": "S1-EXACT-ADMISSION-AND-ROYAL-SAFETY",
+      "action": "从本线已完成T0真实建房、锁包、RPS、准备来源继续，新增单独的源绑定正式前缀研究能力，最小适配精确H02/H10/M04的真实权威路径和王安全闭合。保留旧T0能力只到T0，不全局解除其保护。",
+      "requirements": [
+        "将原black_pawn_0/black_pawn_2/black_horse_7等角色别名逐个映射到真实普通32棋稳定ID、原位和公开身份，保留映射证据；不能凭covered-*名字当暗棋，也不能将旧C0/C1当原A/B。",
+        "使用真实准备采样/选择得到原三候选与A/B宿主，按当前稳定池顺序推导条件索引并记录每抽bound/result/对应本体。明确这是条件输入重放；不声称随机概率实测，不注入hostId/secret/棋盘或替换真实room返回。",
+        "新能力绑定原合同与采样确认、精确tuple、真实房间/双方/已发行对象以及声明前缀范围，不能被JSON复制、错房间/玩家/组合或异步逃逸借用；未带能力产品路径仍拒绝，featuresReady仍false。",
+        "区分权威真帅安全与公开资格查询；不得只把wind添到旧public coveredPathMove族便宣称已解。秘密宿主不能进入玩家按钮/可走目标/公开投影；公开资料不足时保留明确未覆盖，不伪造秘密或把未覆盖作非法。",
+        "先核实际现行H10真帅/影武者/宿主语义和M04独立死亡闭合来源。新增最小实际代码与正负控制，已确认规则内的技术修复可做；组合的条件预言不是新正式玩法确认。",
+        "改动通用函数时，以受影响旧NP32/半混乱/默认路径对照证明不外溢；只跑与改动有因果关联的既有测试，不为凑数量反复跑全套。"
+      ]
+    },
+    "phase_2": {
+      "id": "S2-REAL-PREFIX-AND-ATOMIC-EVIDENCE",
+      "depends_only_on": "S1具体准入/真帅安全前置检查实际通过；无需主线阶段回执。",
+      "action": "在新专用能力内从完整真实准备重放原8手和R5，按O0—O9记录实际满足/缺口。若原合同任一步在现行确认下不合法，记录首个真实拒绝与来源，不改棋谱、宿主或规则凑通过。",
+      "requirements": [
+        "R1—B4→R5全部走真实房间/权威入口，带真实actionId/revision/来源；只运行已声明有限序列及必要负例，不扩大到T8二次影、其他英雄/突变或无限棋谱。",
+        "A/B分别核路径消灭、真帅/宿主死亡、终点和落位闭合、H02来源收尾、正式终结后停止；不得预填A/B胜负或在终局后加end/begin凑观察点。",
+        "R1先实际复现后才修在已确认范围内的H02清理/早返回问题；R2按pieceId/cause/位置串联表示差异，不先宣称泄漏、重复死亡或统一不同语义的type字段。",
+        "复用已有同步观察隔离；观察开/关或观察失败不改权威结果/RNG。已提交后的事件不能冒充缺失的精确中间时点；若需要写集外观察器改动，回传该缺口，其他可执行验证继续。",
+        "O9只在真实房间API可支持范围做相同请求重放/版本拒绝；实际蓝牙客户端、wire送达、真实设备及完整隐私/独立QA仍未覆盖，不为本包开放普通蓝牙。"
+      ]
+    },
+    "write_allowlist": [
+      "src/research-source-context.ts（新增专用有限研究能力；保留旧T0）",
+      "src/remote-room.ts（仅精确研究准入、已有准备/真实行动衔接；无产品/连接改变）",
+      "src/wind-preparation.ts（仅复用既有首次成功逻辑所需窄适配，不另定失败政策）",
+      "src/game.ts、src/rules.ts、src/public-path-qualification.ts、src/settlement.ts、src/settlement-context.ts（仅本组合王安全、完整原子与明确未覆盖边界的必要差分）",
+      "src/hero-actions.ts、src/hero-progress.ts、src/types.ts（仅已确认H10/H02语义必需的最小适配，有实际来源/负例；不迁移新H02/风V3.1）",
+      "scripts/research/std-h10-forward-*、tests/research/std-h10-forward-*、tests/fixtures/std-h10-forward/*、review/std-h10-forward/*",
+      "handoff仓库仅worklines/standard/自身结果、状态、RETURN_TO_MAIN和实际READ_RECEIPTS"
+    ],
+    "do_not_write": [
+      "src/bluetooth-host-room.ts、src/host-result-ledger.ts、src/bluetooth-protocol.ts、web/、android/（主线/混乱其他工程写集）",
+      "src/modes.ts、全局英雄池/默认功能开关、评分/NET、旧原始合同及旧17/102等结果",
+      "其他工作线、独立UI分支、司衡PR23或其英雄实现；不合并PR25或整个分支回main"
+    ],
+    "stop_or_continue": {
+      "no_extra_approval": "常规代码方案、必要研究测试和隔离草稿发布在范围内直接推进，无需逐项请用户审批或等主线确认收到。",
+      "stop_only_dependent_part": "原确认冲突/缺失，必须新增H10失败/空池/超时/二次政策、一般王安全玩法/秘密公开政策，或必须写本包之外共享文件时，回传精确来源与少数选项；保留可独立完成部分，不擅自扩围。",
+      "completion": "完成有限两阶段或取得决定性阻断后保存并交回，不承诺永远有任务，不循环自审/重复报告。"
+    },
+    "deliverables": [
+      "实际分支/提交、父基线与文件差分、来源hash；新草稿PR可选，禁止合并",
+      "真实别名→本体映射、候选索引推导、T0及8手/R5记录；条件输入与自然概率分开",
+      "G4/G5/O0—O9逐项实际结果，R1/R2复现/修复范围、测试命令/原始结果与未验事项",
+      "提交后读回核对并更新本线固定入口/状态/RETURN_TO_MAIN；主线接收与正式采用保持未知直到主线自己的回执"
+    ],
+    "protected": {
+      "old_H02": "旧刺杀与新暗影步分开",
+      "H10": "现行共享确认与风V3.1候选分开",
+      "counts": "普通31/直接共享13及新首次采样确认单列",
+      "scoring": "frozen",
+      "NET": "paused",
+      "featuresReady": false,
+      "merge": false,
+      "deployment": false,
+      "APK": false
+    },
+    "receipts": {
+      "project_instructions_changed": false,
+      "repository_dispatch": "ISSUED_IN_THIS_COMMIT_NOT_EXECUTOR_READ",
+      "executor_read": "UNKNOWN",
+      "executor_execution": "UNKNOWN",
+      "effect": "NOT_YET_OBSERVED"
+    },
+    "report": "worklines/main/STANDARD_FORWARD_IMPLEMENTATION_DISPATCH_20261113.md"
+  },
+  "previous_active_before_h10_forward_20261113": "h10_t0_implementation_review_20261113"
 }
