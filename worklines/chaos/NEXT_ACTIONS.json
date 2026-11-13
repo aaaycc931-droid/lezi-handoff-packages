@@ -10,7 +10,7 @@
   ],
   "report": "worklines/chaos/CH_PENDING_REQUEST_PRESERVATION_20261113.md",
   "ready_independent_follow_on": [],
-  "next_action": "C4_SCOPE_COMPLETE; wait concrete production integration/trusted generation or new bounded task.",
+  "next_action": "No new chaos task; C4 package complete. Resume only on concrete production integration/trusted generation source or new bounded dispatch.",
   "main_owned_pending": [
     "Select/implement scoped result and identity contract",
     "Provide actual Android/JNI/socket scheduling conditions for remaining natural-order questions"
@@ -37,7 +37,7 @@
   ],
   "no_automatic_replay": true,
   "engine_execution_authorized": true,
-  "main_receipt": "C1_C3_RECEIVED_C4_UNKNOWN",
+  "main_receipt": "C1_C3_AND_C4_REPORT_RECEIVED_NOT_PRODUCTION_ADOPTION",
   "engine_execution_scope": "TASK.main_result_increment_20261113 research memory helper/tests only, now complete.",
   "c4": {
     "id": "MAIN-CH-PENDING-REQUEST-PRESERVATION-PROTOTYPE-20261113",
@@ -74,7 +74,16 @@
       "Actual production UI still clears its transient fields; prototype does not fix UI or wire."
     ],
     "previous_main_receipt": "C1-C3 received per RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
-    "this_main_receipt": "UNKNOWN",
+    "this_main_receipt": "RECEIVED_REPORT_AND_SELF_TEST_STATUS_NOT_MAIN_REVALIDATION",
     "next": "C4_SCOPE_COMPLETE; wait concrete production integration/trusted generation or new bounded task."
+  },
+  "c4_main_receipt_reconciled_20261113": {
+    "source_commit": "a29d40304d97c3bb98fcfed8894ea44a83c47b5f",
+    "source": "worklines/main/READ_RECEIPTS.json#chaos_c4_report_intake_20261113",
+    "scope": "Main received report and 16/16 branch self-test status as design input; did not fully review/rerun raw implementation evidence.",
+    "main_reruns": 0,
+    "production_adopted": false,
+    "next": "No new chaos task; C4 package complete. Resume only on concrete production integration/trusted generation source or new bounded dispatch.",
+    "own_new_runs": 0
   }
 }

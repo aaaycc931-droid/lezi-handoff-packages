@@ -807,20 +807,19 @@
         "Actual production UI still clears its transient fields; prototype does not fix UI or wire."
       ],
       "previous_main_receipt": "C1-C3 received per RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
-      "this_main_receipt": "UNKNOWN",
+      "this_main_receipt": "RECEIVED_REPORT_AND_SELF_TEST_STATUS_NOT_MAIN_REVALIDATION",
       "next": "C4_SCOPE_COMPLETE; wait concrete production integration/trusted generation or new bounded task."
     }
   },
   "latest_phase_status": "C4_MEMORY_PROTOTYPE_COMPLETE_BOUNDED",
   "latest_phase_changed_paths": [
-    "worklines/chaos/CH_PENDING_REQUEST_PRESERVATION_20261113.md",
     "worklines/chaos/CURRENT_STATE.json",
     "worklines/chaos/NEXT_ACTIONS.json",
     "worklines/chaos/READ_RECEIPTS.json",
     "worklines/chaos/RETURN_TO_MAIN.json",
     "worklines/chaos/START_HERE.txt"
   ],
-  "latest_phase_external_handoff_receiver": "UNKNOWN_FOR_C4_C1_C3_RECEIVED",
+  "latest_phase_external_handoff_receiver": "MAIN_RECEIVED_C4_REPORT_AND_REPORTED_TEST_STATUS",
   "latest_phase_preserves_original_CH07_matrix": true,
   "main_write_authorization_20261113": {
     "date_local": "2026-11-13",
@@ -831,5 +830,14 @@
     "publication": "最新父树 + expected_sha + force=false；并发冲突先重读合并，发布后复读。",
     "boundary": "本授权是本线文件更新main授权；不据此扩大共享代码所有权、引擎运行、合并部署、APK、模式开放或候选规则采用。",
     "agreement": "worklines/chaos/PROJECT_WORK_AGREEMENT.md"
+  },
+  "c4_main_receipt_reconciled_20261113": {
+    "source_commit": "a29d40304d97c3bb98fcfed8894ea44a83c47b5f",
+    "source": "worklines/main/READ_RECEIPTS.json#chaos_c4_report_intake_20261113",
+    "scope": "Main received report and 16/16 branch self-test status as design input; did not fully review/rerun raw implementation evidence.",
+    "main_reruns": 0,
+    "production_adopted": false,
+    "next": "No new chaos task; C4 package complete. Resume only on concrete production integration/trusted generation source or new bounded dispatch.",
+    "own_new_runs": 0
   }
 }
