@@ -4,11 +4,11 @@
     {
       "id": "UI-STYLE-001",
       "status": "candidate_created_pending_user_review",
-      "work": "统一首页文字与背景的绘画表现，审阅一张无框文字菜单验证稿",
-      "current_item": "UI-HOME-NEWSTYLE-v3",
-      "deliverable": "A轻细字形基础的无底板/无边框/无底线首页",
-      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v3/candidate.json",
-      "acceptance": "用户判断去掉按钮外壳后是否更协调；不得把A偏好等同全页批准或永久禁止所有页面按钮。"
+      "work": "审阅首页淡墨底线菜单及删除作者署名后的完整稿",
+      "current_item": "UI-HOME-NEWSTYLE-v4",
+      "deliverable": "无封闭外壳、四项墨线入口、无作者署名的首页候选",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
+      "acceptance": "核对用户最新底线与署名删除要求；页面整体是否满意仍由用户评价。"
     },
     {
       "id": "UI-001",
@@ -81,18 +81,27 @@
   "planned_tasks_are_not_completed_designs": true,
   "snapshot_date": "2026-11-13",
   "paused_by_user": false,
-  "resume_item": "UI-HOME-NEWSTYLE-v3",
+  "resume_item": "UI-HOME-NEWSTYLE-v4",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
   "handoff_requested": true,
   "automatic_resume_scheduled": false,
   "next_queue": [
     {
+      "item": "UI-HOME-NEWSTYLE-v4",
+      "state": "首页淡墨底线菜单、删除作者署名",
+      "status": "candidate_created_pending_user_review",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
+      "scope": "homepage_ink_underlines_without_author_credit"
+    },
+    {
       "item": "UI-HOME-NEWSTYLE-v3",
       "state": "首页无框文字菜单验证稿",
-      "status": "candidate_created_pending_user_review",
+      "status": "revision_requested_restore_underlines_remove_author",
       "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v3/candidate.json",
-      "scope": "homepage_frameless_menu_visual_validation"
+      "scope": "homepage_frameless_menu_visual_validation",
+      "active_for_current_dialogue": false,
+      "followup_candidate_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json"
     },
     {
       "item": "UI-HOME-NEWSTYLE-v2-comparison",
@@ -211,9 +220,9 @@
     "correction_record": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113"
   },
   "active_ui_image_task": {
-    "id": "UI-HOME-NEWSTYLE-v3",
+    "id": "UI-HOME-NEWSTYLE-v4",
     "status": "candidate_created_pending_user_review",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v3/candidate.json",
-    "next_action": "用户评价UI-HOME-NEWSTYLE-v3：以A的轻细字形为暂定起点，去除四项菜单底板、框线和底线，查看文字与背景是否更协调；这张完整首页仍待审，不自动推进其它页面。"
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json",
+    "next_action": "用户审阅UI-HOME-NEWSTYLE-v4：无封闭外壳，四项菜单保留淡墨底线，作者署名已整行删除；根据具体反馈继续细化这一页，完整页面仍待审。"
   }
 }

@@ -2,7 +2,7 @@
   "schema": "lezi.ui.new_style_page_candidate.v1",
   "id": "UI-HOME-NEWSTYLE-v3",
   "date_local": "2026-11-13",
-  "status": "candidate_created_pending_user_review",
+  "status": "revision_requested_restore_underlines_remove_author",
   "scope": "homepage_frameless_menu_visual_validation",
   "subject": "首页无框文字菜单验证稿",
   "source_branch": "ui/restart-asof-20261104-1119",
@@ -138,5 +138,32 @@
   "runtime": "not_run",
   "scoring": "frozen",
   "NET": "paused",
-  "next_action": "用户评价UI-HOME-NEWSTYLE-v3：以A的轻细字形为暂定起点，去除四项菜单底板、框线和底线，查看文字与背景是否更协调；这张完整首页仍待审，不自动推进其它页面。"
+  "next_action": "用户审阅UI-HOME-NEWSTYLE-v4：无封闭外壳，四项菜单保留淡墨底线，作者署名已整行删除；根据具体反馈继续细化这一页，完整页面仍待审。",
+  "latest_user_direction": {
+    "record_id": "UI-HOME-UNDERLINES-NO-AUTHOR-20261113",
+    "date_local": "2026-11-13",
+    "user_quote": "去掉外壳，没有刚刚那一条，底下有根线好看，只有字体太空了，这个作者以及名字这一行字可以删掉了，没有留着的要求了",
+    "scope": "current_new_style_homepage_image_design",
+    "explicit_decisions": [
+      "保留去除按钮外壳的方向；纯文字显得太空，恢复此前文字下方的淡墨线。",
+      "删除“作者：流风舞影”整行；作者与姓名不再是当前首页必须保留的内容。"
+    ],
+    "overrides": [
+      "v3的无底线处理被最新反馈修正，不继续作为要求。",
+      "历史首页内容核对中的作者署名保留约束，不再约束当前新风格首页；历史批准原图继续保留。"
+    ],
+    "retained": [
+      "游戏标题“乐子象棋”",
+      "本机双人",
+      "蓝牙对局",
+      "灰显联机对战",
+      "玩法说明",
+      "右上设置入口",
+      "雪山红梅背景与统一绘画表现"
+    ],
+    "exact_generated_page_approved": false,
+    "game_code_change_authorized_by_this_record": false,
+    "authority": "latest_explicit_user_direction"
+  },
+  "followup_candidate_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v4/candidate.json"
 }
