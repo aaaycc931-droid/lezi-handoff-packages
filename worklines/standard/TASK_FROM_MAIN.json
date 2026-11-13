@@ -58,7 +58,7 @@
     "receiver_read": "UNKNOWN_FOR_THIS_DISPATCH",
     "receiver_execution": "NOT_APPLICABLE_UNTIL_CONCRETE_TRIGGER"
   },
-  "active_main_dispatch": "h10_forward_dispatch_withdrawal_20261113",
+  "active_main_dispatch": "h10_forward_review_20261113",
   "h10_implementation_scope_20261113": {
     "id": "MAIN-STD-H10-SCOPE-PREPARED-20261113",
     "report": "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md",
@@ -236,5 +236,28 @@
     "executor_stopped": "UNKNOWN",
     "new_engine_changes": 0,
     "new_tests": 0
+  },
+  "h10_forward_review_20261113": {
+    "id": "MAIN-STD-H10-FORWARD-REVIEW-20261113",
+    "status": "CONCRETE_NEW_CODE_AVAILABLE_REVIEW_RECEIPT_PENDING",
+    "source_engine": "f8ef0ca4850dc001f44e17a75fcd587a407f5ea7",
+    "PR": 27,
+    "source_parent": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+    "task": "读取PR27实际差分和主线报告，按本线原O0—O9复核来源、准入、真帅/公开将军边界、A终局清理与B重复。仅针对新疑点/未覆盖反例作有限验证；不重复T0包、98/244套件凑进度，不把主线15当本线QA。",
+    "allowed": [
+      "只读新正文/源码与已有原合同",
+      "专属review分支上的有限测试和回传",
+      "记录真实已读/采用层级与仍缺的UI/wire/精确中间时点"
+    ],
+    "not_allowed": [
+      "恢复已撤回的主线工程转派",
+      "修改共享游戏源码/准入或其他线成果",
+      "开放模式/评分/NET/合并部署/APK",
+      "注入宿主并冒充自然前缀"
+    ],
+    "main_work_continues_independently": true,
+    "user_relay_required": false,
+    "receiver_read": "UNKNOWN",
+    "receiver_execution": "UNKNOWN"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema": "lezi.main.current_state.v1",
   "workline": "main",
-  "status": "current_dialogue_closed_project_continues",
+  "status": "active_main_stage_saved",
   "resume_date_local": "2026-10-30",
   "timezone": "Asia/Shanghai",
   "base_commit": "564924478f64250ecd1e65a3d153f49d1a0f944e",
@@ -54,22 +54,22 @@
   },
   "worklines": {
     "main": {
-      "next": "MAIN-SAFETY-QUERY-CLOSED-AUTHORITY-20261028",
-      "status": "np32_conditional_source_runs_done_query_consistency_next"
+      "next": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
+      "status": "active_owner_stage_saved"
     },
     "standard": {
-      "next": "STD-RECEIVE-NP32-RUNTIME-20261028",
-      "status": "new_main_np32_task_issued_receiver_pending",
+      "next": "MAIN-STD-H10-FORWARD-REVIEW-20261113",
+      "status": "concrete_PR27_review_input_available_receiver_unknown",
       "mode_id": "xiangqi",
       "task_file": "worklines/standard/TASK_FROM_MAIN.json",
       "latest_source_snapshot": "d41fd46fdd6a405f84d13fad75762803f9163496",
       "actual_live_dialogue_progress": "unknown; source-line closure retained, no automatic wakeup",
       "source_line_working_and_current_state_preserved": true,
-      "source_engine_commit": "680966fff6484b418c25c9afb8b6759b7a44b594"
+      "source_engine_commit": "f8ef0ca4850dc001f44e17a75fcd587a407f5ea7"
     },
     "half_chaos": {
       "next": "HC-42-RECEIVE-PATCHES-AND-DS04",
-      "status": "main_task_issued_receiver_pending",
+      "status": "r60_received_old_review_complete",
       "mode_id": "half_chaos",
       "task_file": "worklines/half_chaos/TASK_FROM_MAIN.json",
       "latest_source_snapshot": "d41fd46fdd6a405f84d13fad75762803f9163496",
@@ -147,7 +147,7 @@
     },
     "chaos": {
       "next": "CH-01-SOURCE-AND-H11-H15-BOUNDARIES",
-      "status": "main_task_issued_receiver_pending",
+      "status": "C5_received_main_F1_repair_published_no_old_task_restart",
       "mode_id": "jieqi",
       "task_file": "worklines/chaos/TASK_FROM_MAIN.json",
       "latest_source_snapshot": "d41fd46fdd6a405f84d13fad75762803f9163496",
@@ -201,20 +201,18 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113",
+    "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
     "owner": "main",
-    "action": "主线接续精确普通旧H02刺杀/H10现行影/M04：核原8手真实本体映射，补齐专用正式前缀准入、真帅安全与原子资格；在实际前置检查通过后做同源有限验证。普通17项T0已完成，不重跑凑进度、不注入宿主、不把T0当R5通过。",
-    "execution": "主线直接执行；必要时使用已获用户授权的临时子代理，明确写集/分支并核并发。普通工程转派已撤回，不重新要求用户发继续来启动这项主线工程。",
-    "source_entry": "worklines/main/SESSION_CLOSEOUT.json#session_closeout_20261113",
-    "required_dependencies": [
-      "PR25/4ae702e + 普通bfc7847已有T0",
-      "原STD_H10_M04_PREFIX_CONTRACT及ATOMIC_OBSERVATION_CONTRACT，首次采样确认",
-      "现行shared规则原件/受限源码；旧H02与新暗影步、现行H10与风V3.1区分"
+    "action": "沿已接收C4原请求保留、C5及PR28显式null修复、PR26默认关闭host adapter，核同一原请求与可信本机代次/房主内部结果的最小接合。先定精确消息/动作覆盖和失效边界，再在已有授权内做隔离实现；不默改线上wire/协商或远端actor连续性。",
+    "inputs": [
+      "PR26/e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+      "C5/4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c + PR28/58cc324ddc616d14234d0a8b1ad34696393fb280",
+      "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
+      "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
     ],
-    "parallel_intake": "主线并行按实际来源接收C5、HC r60、司衡反馈修复与H02/H05新设计；它们已报告本包完成，不能继续把旧派发视为未执行新任务。收束只读取回传当前段/元信息，未完成新源码验收。",
-    "retained_engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
-    "result_followup": "PR26默认关闭的真实host adapter已发布；C5/HC完整接收后再核最小Web/原请求/本机代次接入，线上协商/远端actor连续性仍未决定或未完成，不自动实施新wire。",
-    "constraints": "评分/原账本冻结，NET暂停，featuresReady=false；不合并、部署、APK、模式开放或自动采用候选规则。"
+    "parallel": "普通PR27新增具体复核输入已发布；其接收/执行待本线实际回执，不要求用户启动主线工程。",
+    "retained": "原56/64、客户端/真机/独立QA、UI历史修复及设计整合缺口保留；unknown不自动补交。",
+    "constraints": "评分原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/模式开放。"
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -230,8 +228,8 @@
   "public_fieldmap": "REPETITION_PUBLIC_FIELDMAP.json",
   "publication_parent_commit": "562c41dadbbbef67ba0612b1b32791321d5c8c38",
   "unread_concurrent_returns": [],
-  "latest_return_observation_commit": "4af533233920a6ebbc818c466365673aa21a18ee",
-  "current_phase": "MAIN-PARALLEL-ADAPTER-AND-HERO-INTAKE-20261113",
+  "latest_return_observation_commit": "2b521ba0cfde1c6cf3aa0fc1b2168fe8d0e37c21",
+  "current_phase": "MAIN-H10-FORWARD-AND-RETURN-INTAKE-20261113",
   "latest_external_shared_confirmation": "CONF-THREE-MODE-M04-PATH-DRAGON-SCALE-CONTINUATION-20261017",
   "increment_since_1_53": {
     "observed_at_commit": "93127575c60469d08069a3a6743f3c2a34493deb",
@@ -2202,7 +2200,7 @@
     "id": "MAIN-SESSION-CLOSEOUT-20261113",
     "date_local": "2026-11-13",
     "timezone": "Asia/Shanghai",
-    "status": "current_dialogue_closed_project_continues",
+    "status": "historical_closeout_resumed_by_explicit_main_appointment",
     "scope": "this_conversation_only",
     "entry": "worklines/main/SESSION_CLOSEOUT.json#session_closeout_20261113",
     "source_handoff_head": "a6f1f21a56e93154922452149bcb4b8f1b8a2690",
@@ -2224,7 +2222,10 @@
     },
     "project_or_other_worklines_stopped": false,
     "dispatch_correction": "普通临时工程委派已于1bf77c4撤回；无需升级审批或暂停项目；主线负责G4/G5，不让用户通过普通对话启动主线工作。",
-    "resume_prompt": "继续《乐子象棋》主线。我任命本对话接任项目主线，继承既有授权与接收恢复安排；评分冻结、NET暂停及其他审批边界保持。先核最新GitHub HEAD并读取固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt 。按CURRENT_STATE.json#session_closure与SESSION_CLOSEOUT.json#session_closeout_20261113恢复本轮收束。下一由主线推进MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113；普通线工程转派已撤回，不要求我去普通对话启动主线工作。可按任务需要直接使用子代理，并核待接收的C5、半混乱、司衡修复及H02/H05新来源。保护未回传成果与独立UI分支，先读已有材料，不重复已完成工程/APK；阶段保存GitHub并读回核对。"
+    "resume_prompt": "继续《乐子象棋》主线。我任命本对话接任项目主线，继承既有授权与接收恢复安排；评分冻结、NET暂停及其他审批边界保持。先核最新GitHub HEAD并读取固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/START_HERE.txt 。按CURRENT_STATE.json#session_closure与SESSION_CLOSEOUT.json#session_closeout_20261113恢复本轮收束。下一由主线推进MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113；普通线工程转派已撤回，不要求我去普通对话启动主线工作。可按任务需要直接使用子代理，并核待接收的C5、半混乱、司衡修复及H02/H05新来源。保护未回传成果与独立UI分支，先读已有材料，不重复已完成工程/APK；阶段保存GitHub并读回核对。",
+    "resumed_on_local": "2026-11-13",
+    "current_stage_pointer": "H10_FORWARD_PROGRESS.json",
+    "historical_next_completed": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113"
   },
   "evidence_accounting": {
     "id": "MAIN-HC-EVIDENCE-ACCOUNTING-20261027",
@@ -4079,5 +4080,101 @@
     ],
     "newer_hero_design": "H05 A确认已回传，原件与共享作用域待接收",
     "independent_ui_head": "0bc27c61df0a9bfeca3dbecf9c87c0b117199b1e"
+  },
+  "h10_forward_and_return_intake_20261113": {
+    "id": "MAIN-H10-FORWARD-AND-RETURN-INTAKE-20261113",
+    "date_local": "2026-11-13",
+    "status": "STAGE_PUBLISHED_SOURCE_READBACK_COMPLETE_NOT_MODE_ACCEPTANCE",
+    "source_handoff": "2b521ba0cfde1c6cf3aa0fc1b2168fe8d0e37c21",
+    "main_appointment": "本轮用户明确任命本对话接任主线并继承已有授权，普通工程转派保持撤回；已授权按需临时子代理。",
+    "report": "worklines/main/H10_FORWARD_AND_RETURN_INTAKE_20261113.md",
+    "ordinary": {
+      "engine": "f8ef0ca4850dc001f44e17a75fcd587a407f5ea7",
+      "branch": "codex/main-h10-forward-qualification-20261113",
+      "base": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+      "draft_pr": 27,
+      "scope": "真实标准32棋映射、独立source-bound原8手/R5能力、及时/同源限制、限定闭合和存活公开将帅安全",
+      "original_requests": 18,
+      "actual_offer_attempts": 23,
+      "actual_crypto_draws": 69,
+      "sampling": "最多512次真实准备中显式筛选同时包含covered-10/covered-11的offer；第三棋不强制，不是无条件生产分布",
+      "R1": "实际前修复轨迹证实A终局H02残留；限定continuing在终局及atom快照前清理",
+      "R2": "同一covered-10的pawn/general表示差异保留；ID/cause/position对齐，仅一次消灭",
+      "verification": {
+        "new_groups": 15,
+        "targeted": 98,
+        "shared_regression": 244,
+        "suites_overlap": true,
+        "fault_controls_expected_fail": 2,
+        "remote_readback_files": 10
+      },
+      "A": "红胜/两真实消灭/落位0,2；计数4/4，无下一end/begin；重复请求INVALID_PHASE且无变更",
+      "B": "继续playing/宿主存活/计数5/4；R5重复duplicate=true且无变更",
+      "limits": [
+        "public H10 query/search未扩",
+        "无独立路径死亡/候选终局中间checkpoint",
+        "实际UI/wire/Android/radio/独立QA未验",
+        "非全模式资格/原56/64验收",
+        "完整TypeScript类型检查未运行"
+      ],
+      "owner_evidence": {
+        "filename": "lezi-main-h10-forward-evidence-20261113.zip",
+        "sha256": "2d79dea3f2966da8398416fcd9d5d18233ad05693c95e1adc4b057236e5948cd",
+        "raw_authority_public": false
+      }
+    },
+    "transport_fix": {
+      "finding": "C5-F1：Java null删字段，Web把确定未发误记unknown",
+      "engine": "58cc324ddc616d14234d0a8b1ad34696393fb280",
+      "branch": "codex/main-c5-null-context-fix-20261113",
+      "base": "4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c",
+      "draft_pr": 28,
+      "production_delta": "GameWebBridge一处JSONObject.NULL；Web校验和wire不改",
+      "verification": {
+        "new": 6,
+        "affected_existing_Web": 19,
+        "total": 25,
+        "failed": 0,
+        "parent_zero_write_omission_controls": 4,
+        "remote_readback_files": 7
+      },
+      "limits": "JVM/VM明确替身；非Android/JNI/radio/WebView/独立QA；原native16不冒充重跑"
+    },
+    "intake": {
+      "chaos": "C5完整报告/三生产文件源码差分及调用已接收；新F1已由主线隔离修复，不重复派旧C5",
+      "half_chaos": "r60完整报告、F1四对照证据、PR26源码/7项manifest已接收；未重跑源线4或主线34",
+      "hero_pilot": "5ab688c修复完整差分及证据已接收，7源hash一致，无新确认缺陷；源线155/10/3保持原层级，未再跑",
+      "hero_design": "H05§17计时A、§18严格同因果吃子重置A原件/确认已接收，主线旧摘要已纠正；设计与共享/工程采用分层，新H02与旧刺杀分开",
+      "ui": {
+        "branch": "ui/restart-asof-20261104-1119",
+        "head": "961892dab11b2e1a9bc9728caffdd32a244921d0",
+        "read_scope": "入口前60行：第七批十项及首页v4/底线/删作者等最新声明；未审世界观全文或图稿",
+        "adoption": "仅更新导航/保护，不批准图稿，不整树覆盖main"
+      }
+    },
+    "next_action": {
+      "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
+      "owner": "main",
+      "action": "沿已接收C4原请求保留、C5及PR28显式null修复、PR26默认关闭host adapter，核同一原请求与可信本机代次/房主内部结果的最小接合。先定精确消息/动作覆盖和失效边界，再在已有授权内做隔离实现；不默改线上wire/协商或远端actor连续性。",
+      "inputs": [
+        "PR26/e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+        "C5/4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c + PR28/58cc324ddc616d14234d0a8b1ad34696393fb280",
+        "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
+        "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
+      ],
+      "parallel": "普通PR27新增具体复核输入已发布；其接收/执行待本线实际回执，不要求用户启动主线工程。",
+      "retained": "原56/64、客户端/真机/独立QA、UI历史修复及设计整合缺口保留；unknown不自动补交。",
+      "constraints": "评分原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/模式开放。"
+    },
+    "protected": {
+      "scoring": "frozen",
+      "NET": "paused",
+      "featuresReady": false,
+      "merge": false,
+      "deployment": false,
+      "APK": false,
+      "other_lines_unreturned": "UNKNOWN_PRESERVED",
+      "independent_UI": "UNTOUCHED"
+    }
   }
 }

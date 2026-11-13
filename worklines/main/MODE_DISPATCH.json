@@ -2289,6 +2289,35 @@
     "UI": "own independent branch; world lore and image dialogues separate",
     "rule": "建议用户给支线发继续前，核最新TASK/RETURN是否有未完成且可立即执行的具体任务。已完成、等待主线、待用户设计决定分别说明；主线工程临时并行由主线自行管理子代理，不靠转派给空闲支线让用户调度。",
     "new_branch_tasks_issued": 0,
-    "other_worklines_stopped": false
+    "other_worklines_stopped": false,
+    "latest_override": "h10_forward_and_return_intake_20261113"
+  },
+  "h10_forward_and_return_intake_20261113": {
+    "main_phase": "MAIN-H10-FORWARD-AND-RETURN-INTAKE-20261113",
+    "ordinary": "PR27具体复核输入已提供；不是工程转派；实际执行待接收方",
+    "chaos": "旧C5已完成且主线源码已接收；PR28主线修复作为新输入，旧任务不重复",
+    "half_chaos": "r60已接收，旧F1/PR26审查不重复",
+    "hero_pilot": "5ab688c修复已接收，原自主授权保持，不重复派反馈修复",
+    "hero_design": "H05两项A已接收，真实因果/计时缺口保留，不重复问选择",
+    "UI": {
+      "branch": "ui/restart-asof-20261104-1119",
+      "head": "961892dab11b2e1a9bc9728caffdd32a244921d0",
+      "read_scope": "入口前60行：第七批十项及首页v4/底线/删作者等最新声明；未审世界观全文或图稿",
+      "adoption": "仅更新导航/保护，不批准图稿，不整树覆盖main"
+    },
+    "main_next": {
+      "id": "MAIN-BLUETOOTH-LOCAL-RESULT-INTEGRATION-20261113",
+      "owner": "main",
+      "action": "沿已接收C4原请求保留、C5及PR28显式null修复、PR26默认关闭host adapter，核同一原请求与可信本机代次/房主内部结果的最小接合。先定精确消息/动作覆盖和失效边界，再在已有授权内做隔离实现；不默改线上wire/协商或远端actor连续性。",
+      "inputs": [
+        "PR26/e88a5a6bce6732a29e887b10636c827cd3f2eab5",
+        "C5/4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c + PR28/58cc324ddc616d14234d0a8b1ad34696393fb280",
+        "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
+        "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
+      ],
+      "parallel": "普通PR27新增具体复核输入已发布；其接收/执行待本线实际回执，不要求用户启动主线工程。",
+      "retained": "原56/64、客户端/真机/独立QA、UI历史修复及设计整合缺口保留；unknown不自动补交。",
+      "constraints": "评分原账本冻结、NET暂停、featuresReady=false；无合并/部署/APK/模式开放。"
+    }
   }
 }
