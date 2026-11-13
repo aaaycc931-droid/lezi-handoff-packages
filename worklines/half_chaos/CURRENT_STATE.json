@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
+  "revision": "HC-57-RESULT-RECONCILIATION-CONTRACT-PROPOSAL-20261113",
   "workline": "half_chaos",
   "date_local": "2026-11-13",
   "timezone": "Asia/Shanghai",
-  "status": "r56_source_priority_mapping_complete_waiting_new_main_result_evidence",
+  "status": "r57_delegated_contract_and_failure_review_complete_candidate_pending_main",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -187,7 +187,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
+  "next_action": "两步候选与失败复核已交付。下一核主线A/B与账本实施范围取舍、混乱生命周期增量或实际相关差分；据具体新证据修订身份/提交/兼容边界。不重复原110/56联表、不改生产协议或运行引擎。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -214,7 +214,7 @@
   },
   "NET": "paused",
   "limitation_audit_status": "partial",
-  "verification_level": "V2 public source/index checks + V1 document triage; formal64/complete56 both0; no new engine/client run",
+  "verification_level": "V2 fixed source and 3 original index matches; V1 candidate/18 failure-case review; no runtime or independentQA",
   "publication_scope": "current_half_chaos_design_bodies_and_source_references; not_full_private_archive_migration",
   "source_index": "SOURCE_INDEX.json",
   "return_record": "RETURN_TO_MAIN.json",
@@ -1531,7 +1531,7 @@
   },
   "last_completed_design_revision": "HC-PREP-20261020-r40",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
-  "next_action_status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
+  "next_action_status": "WAIT_CONCRETE_MAIN_DECISION_OR_NEW_SOURCE",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
     "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
@@ -2941,5 +2941,60 @@
     "this_dialogue_started": true,
     "frontend_project_configuration_independently_verified": false,
     "main_identity": false
+  },
+  "r57_previous_navigation": {
+    "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
+    "status": "r56_source_priority_mapping_complete_waiting_new_main_result_evidence",
+    "next_action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
+    "next_action_status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH"
+  },
+  "r57_result_contract_proposal": {
+    "id": "HC-57-RESULT-RECONCILIATION-CONTRACT-PROPOSAL-20261113",
+    "date_local": "2026-11-13",
+    "task": "MAIN-DELEGATE-HC-RESULT-CONTRACT-20261113",
+    "follow_on": "HC-RESULT-CONTRACT-FAILURE-REVIEW",
+    "status": "BOTH_SOURCE_DOCUMENT_DELIVERIES_COMPLETE_CANDIDATE_UNADOPTED",
+    "source_handoff_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "publication_parent": "b48e06001307fe38774c5395b67a242b12a279c1",
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "report": "worklines/half_chaos/HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md",
+    "candidate_count": 2,
+    "representative_original_requests": 3,
+    "representative_source_checks": [
+      {
+        "id": "MA-PD01:R1:main",
+        "matched": true
+      },
+      {
+        "id": "MA-DS01-02:B2:pre-1",
+        "matched": true
+      },
+      {
+        "id": "MA-DS04:B3:pre-1",
+        "matched": true
+      }
+    ],
+    "failure_case_count": 18,
+    "engine_runs": 0,
+    "android_runs": 0,
+    "network_runs": 0,
+    "independent_QA": false,
+    "production_code_changes": 0,
+    "protocol_approved": false,
+    "main_read": "UNKNOWN",
+    "main_adoption": "UNKNOWN",
+    "next": {
+      "id": "NEXT-HC-RESULT-CONTRACT-INTEGRATION-DELTA",
+      "status": "WAIT_CONCRETE_MAIN_DECISION_OR_NEW_SOURCE",
+      "action": "两步候选与失败复核已交付。下一核主线A/B与账本实施范围取舍、混乱生命周期增量或实际相关差分；据具体新证据修订身份/提交/兼容边界。不重复原110/56联表、不改生产协议或运行引擎。",
+      "owner": "half_chaos candidate/source delta; main shared adoption",
+      "acceptance": "具体取舍/来源变化可定位到本文条款与实际差分；unknown不被虚构为正式结果。"
+    }
+  },
+  "main_hc56_reception_20261113": {
+    "source_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "report": "worklines/main/MODE_STARTUP_RECEPTION_20261113.md",
+    "status": "LIMITED_MAIN_RECEPTION_VERIFIED",
+    "scope": "HC56优先级/联表报告；主线未重算全部原始包，9项仍属原执行者检查"
   }
 }

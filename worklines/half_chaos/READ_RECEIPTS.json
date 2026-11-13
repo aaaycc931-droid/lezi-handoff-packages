@@ -3206,5 +3206,129 @@
     "report": "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json",
     "main_read_of_this_return": "UNKNOWN",
     "engine_runs": 0
+  },
+  "parallel_execution_20261113": {
+    "id": "HC-57-RESULT-RECONCILIATION-CONTRACT-PROPOSAL-20261113",
+    "date_local": "2026-11-13",
+    "task": "MAIN-DELEGATE-HC-RESULT-CONTRACT-20261113",
+    "follow_on": "HC-RESULT-CONTRACT-FAILURE-REVIEW",
+    "status": "BOTH_SOURCE_DOCUMENT_DELIVERIES_COMPLETE_CANDIDATE_UNADOPTED",
+    "source_handoff_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "publication_parent": "b48e06001307fe38774c5395b67a242b12a279c1",
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "report": "worklines/half_chaos/HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md",
+    "candidate_count": 2,
+    "representative_original_requests": 3,
+    "representative_source_checks": [
+      {
+        "id": "MA-PD01:R1:main",
+        "matched": true
+      },
+      {
+        "id": "MA-DS01-02:B2:pre-1",
+        "matched": true
+      },
+      {
+        "id": "MA-DS04:B3:pre-1",
+        "matched": true
+      }
+    ],
+    "failure_case_count": 18,
+    "engine_runs": 0,
+    "android_runs": 0,
+    "network_runs": 0,
+    "independent_QA": false,
+    "production_code_changes": 0,
+    "protocol_approved": false,
+    "main_read": "UNKNOWN",
+    "main_adoption": "UNKNOWN",
+    "receiver_workline": "half_chaos",
+    "receiver_read": true,
+    "receiver_execution": "SOURCE_REVIEW_CANDIDATE_AND_FOLLOW_ON_COMPLETED",
+    "main_dispatch_read": [
+      "worklines/main/MODE_DISPATCH.json#parallel_execution_20261113",
+      "worklines/main/SHARED_COORDINATION.json#parallel_execution_20261113",
+      "worklines/half_chaos/TASK_FROM_MAIN.json#parallel_execution_20261113"
+    ],
+    "source_scope": {
+      "handoff": [
+        "本线当前状态/导航/既有回执",
+        "HC56 requirements",
+        "HC55三个代表请求索引",
+        "混乱RETURN_TO_MAIN.latest_receiver_phase.unknown_result_action_source_20261113",
+        "主线MODE_STARTUP_RECEPTION全文/H02_H05_INTEGRATION_REVIEW全文/MAIN_NATIVE_SEND_REPORT全文"
+      ],
+      "engine": [
+        {
+          "path": "src/bluetooth-protocol.ts",
+          "scope": "全文",
+          "blob": "d3d665f53588d30dc1b6e3a31fd3f300043cd7cd"
+        },
+        {
+          "path": "src/bluetooth-host-room.ts",
+          "scope": "全文",
+          "blob": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c"
+        },
+        {
+          "path": "src/remote-room.ts",
+          "scope": "247-250,373-390,807-850,874-936,982-1017,1145-1287,1530-1587",
+          "blob": "37194aac340d8fed5d6ac02e0001bf4bfd65784b"
+        },
+        {
+          "path": "src/room.ts",
+          "scope": "全文",
+          "blob": "687ce619fb798224e0b80c593c955a25b38b32f0"
+        },
+        {
+          "path": "src/game.ts",
+          "scope": "490-548",
+          "blob": "fe86e6adce83aca4171d38c75321bf3e178a4245"
+        },
+        {
+          "path": "src/hero-actions.ts",
+          "scope": "50-128",
+          "blob": "2de406812dd1737ff0b861655cf6dcce1a474fb7"
+        },
+        {
+          "path": "web/app.ts",
+          "scope": "353-377,1248-1407,3640-3760及动作ID定义锚点",
+          "blob": "3e5db425a6104b207070330b6709305bc678431a"
+        },
+        {
+          "path": "android/app/src/main/java/com/jieqi/bluetooth/BluetoothGameSession.java",
+          "scope": "185-250,309-334及执行器/回调锚点",
+          "blob": "48e02db86e4f1dce1f6cc42e10da3b329b4f22c5"
+        },
+        {
+          "path": "android/app/src/main/java/com/jieqi/bluetooth/GameWebBridge.java",
+          "scope": "33-55,97-125,184-202",
+          "blob": "fddf464605fd2ce3d017eb705069afcde0da5101"
+        }
+      ],
+      "legacy_PR21": {
+        "commit": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
+        "scope": "protocol白名单，Java validateEnvelope/bridge send/status锚点，Web接收1308-1339；不是全部历史APK"
+      }
+    },
+    "adopted": "本线接收预派只读任务；完成候选合同/兼容矩阵/失败复核。不采用候选为现行协议。",
+    "not_adopted": [
+      "新协议/玩法或代码批准",
+      "引擎/Android/NET运行",
+      "半混乱门禁",
+      "原56/64正式验收",
+      "独立QA"
+    ],
+    "collaboration": {
+      "level": "L3 bounded design/source review",
+      "working_revision": "2026-10-23.v0.18",
+      "formal_baseline": "1.8.0",
+      "scope": "继承可见本轮已读授权/仓库/局限机制；规则未修改"
+    }
+  },
+  "coordination_followup_20261113": {
+    "source_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "receiver_read": true,
+    "receiver_adopted": "确认HC56限定主线接收；H02/H05设计与旧已准入来源边界保留；由较新parallel_execution取代等待",
+    "new_gameplay_approval": false
   }
 }

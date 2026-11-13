@@ -3,11 +3,11 @@
   "from_workline": "half_chaos",
   "to_workline": "main",
   "base_commit": "045d772ce802f38ef7740d114f446dd55d5e3f72",
-  "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
+  "revision": "HC-57-RESULT-RECONCILIATION-CONTRACT-PROPOSAL-20261113",
   "phase": "ORIGINAL110_SOURCE_JOIN_COMPLETE_CLIENT_CHANNEL_ACCEPTANCE_STILL_OPEN",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+  "current_breakpoint": "NEXT-HC-RESULT-CONTRACT-INTEGRATION-DELTA",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
@@ -111,7 +111,7 @@
       ]
     }
   ],
-  "next_independent_task": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+  "next_independent_task": "NEXT-HC-RESULT-CONTRACT-INTEGRATION-DELTA",
   "scoring_frozen": true,
   "NET": "paused",
   "implementation_status": "MAIN_DRAFT_COMPONENT_PATCHES_VERIFIED_AS_CODE_EXISTENCE_LOCAL_DOCUMENT_ONLY_NO_NATURAL_ACCEPTANCE",
@@ -952,7 +952,7 @@
   ],
   "last_completed_design_revision": "HC-DESIGN-03-20261020-r37",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
-  "next_task_status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
+  "next_task_status": "WAIT_CONCRETE_MAIN_DECISION_OR_NEW_SOURCE",
   "last_completed_design_commit_note": "本r34提交号从Git历史查询；不在内容预填未来自身提交",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
@@ -2533,5 +2533,73 @@
     "current_breakpoint": "Original110 action ID/outcome/210 checkpoint and PR19 200 stage component joins all match; no half-chaos product client outputs or same-ID retry/conflict tested. Main owns output channel/transport.",
     "next_independent_task": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
     "next_task_status": "WP05_NOT_STARTED_DOCUMENT_ONLY"
+  },
+  "r57_previous_navigation": {
+    "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
+    "current_breakpoint": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+    "next_independent_task": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+    "next_task_status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH"
+  },
+  "r57_to_main": {
+    "id": "HC-57-RESULT-RECONCILIATION-CONTRACT-PROPOSAL-20261113",
+    "date_local": "2026-11-13",
+    "task": "MAIN-DELEGATE-HC-RESULT-CONTRACT-20261113",
+    "follow_on": "HC-RESULT-CONTRACT-FAILURE-REVIEW",
+    "status": "BOTH_SOURCE_DOCUMENT_DELIVERIES_COMPLETE_CANDIDATE_UNADOPTED",
+    "source_handoff_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "publication_parent": "b48e06001307fe38774c5395b67a242b12a279c1",
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "report": "worklines/half_chaos/HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md",
+    "candidate_count": 2,
+    "representative_original_requests": 3,
+    "representative_source_checks": [
+      {
+        "id": "MA-PD01:R1:main",
+        "matched": true
+      },
+      {
+        "id": "MA-DS01-02:B2:pre-1",
+        "matched": true
+      },
+      {
+        "id": "MA-DS04:B3:pre-1",
+        "matched": true
+      }
+    ],
+    "failure_case_count": 18,
+    "engine_runs": 0,
+    "android_runs": 0,
+    "network_runs": 0,
+    "independent_QA": false,
+    "production_code_changes": 0,
+    "protocol_approved": false,
+    "main_read": "UNKNOWN",
+    "main_adoption": "UNKNOWN",
+    "decisive_findings": [
+      "return/duplicate=false不能统一表示accepted，超时分支可能只推进房间",
+      "查询不可经过handle/views/advance；记账须在权威提交/规则拒绝边界，而非整个handle的catch",
+      "旧Web及Java拒绝未知type/v；hello旧类型可承载经协商候选A；B需双桥v3能力",
+      "再战沿用roomId，需要局次身份；旧processedActions不能证明actor与载荷",
+      "A较小但仍协议语义变更，B需原生升级；本线没有自动选定"
+    ],
+    "main_choices": [
+      "A/B协议方案及能力协商",
+      "动作专属结果边界与账本原子性/覆盖",
+      "actor/局次/连接生命周期并接混乱报告",
+      "内存保留/淘汰/跨重启范围",
+      "schema规范化和冲突查询/隐私"
+    ],
+    "next": {
+      "id": "NEXT-HC-RESULT-CONTRACT-INTEGRATION-DELTA",
+      "status": "WAIT_CONCRETE_MAIN_DECISION_OR_NEW_SOURCE",
+      "action": "两步候选与失败复核已交付。下一核主线A/B与账本实施范围取舍、混乱生命周期增量或实际相关差分；据具体新证据修订身份/提交/兼容边界。不重复原110/56联表、不改生产协议或运行引擎。",
+      "owner": "half_chaos candidate/source delta; main shared adoption",
+      "acceptance": "具体取舍/来源变化可定位到本文条款与实际差分；unknown不被虚构为正式结果。"
+    },
+    "formal56_complete": 0,
+    "formal64_pass": 0,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED"
   }
 }

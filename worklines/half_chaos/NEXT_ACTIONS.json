@@ -1,11 +1,11 @@
 {
-  "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
+  "revision": "HC-57-RESULT-RECONCILIATION-CONTRACT-PROPOSAL-20261113",
   "next_independent_task": {
-    "id": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
-    "status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
-    "owner": "half_chaos source reception; main shared implementation",
-    "action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
-    "acceptance": "新的有源结果可逐项判定已接收/仍缺；written、pong、重连和快照均不得单独核销旧行动。"
+    "id": "NEXT-HC-RESULT-CONTRACT-INTEGRATION-DELTA",
+    "status": "WAIT_CONCRETE_MAIN_DECISION_OR_NEW_SOURCE",
+    "action": "两步候选与失败复核已交付。下一核主线A/B与账本实施范围取舍、混乱生命周期增量或实际相关差分；据具体新证据修订身份/提交/兼容边界。不重复原110/56联表、不改生产协议或运行引擎。",
+    "owner": "half_chaos candidate/source delta; main shared adoption",
+    "acceptance": "具体取舍/来源变化可定位到本文条款与实际差分；unknown不被虚构为正式结果。"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -1411,29 +1411,40 @@
   ],
   "last_verified_head_at_preparation": "93411f461fc80de3c7639149c2161115e189fbec",
   "latest_completed_stage": {
+    "id": "HC-57-RESULT-RECONCILIATION-CONTRACT-PROPOSAL-20261113",
     "date_local": "2026-11-13",
-    "report": "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json",
-    "source_commit": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
-    "task_completed": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
-    "joined_original_requests": 110,
-    "linked_original_checkpoint_ids": 210,
-    "linked_pair_slots": 56,
-    "checks": "9/9 public-index checks; no engine execution",
-    "server_committed_output": "PR20 public results indexed; raw packets not independently reread",
-    "original56_complete": 0,
-    "original64_formal": 0,
-    "client_delivery": 0,
+    "task": "MAIN-DELEGATE-HC-RESULT-CONTRACT-20261113",
+    "follow_on": "HC-RESULT-CONTRACT-FAILURE-REVIEW",
+    "status": "BOTH_SOURCE_DOCUMENT_DELIVERIES_COMPLETE_CANDIDATE_UNADOPTED",
+    "source_handoff_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "publication_parent": "b48e06001307fe38774c5395b67a242b12a279c1",
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "report": "worklines/half_chaos/HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md",
+    "candidate_count": 2,
+    "representative_original_requests": 3,
+    "representative_source_checks": [
+      {
+        "id": "MA-PD01:R1:main",
+        "matched": true
+      },
+      {
+        "id": "MA-DS01-02:B2:pre-1",
+        "matched": true
+      },
+      {
+        "id": "MA-DS04:B3:pre-1",
+        "matched": true
+      }
+    ],
+    "failure_case_count": 18,
+    "engine_runs": 0,
+    "android_runs": 0,
+    "network_runs": 0,
     "independent_QA": false,
-    "featuresReady": false,
-    "scoring": "FROZEN",
-    "NET": "PAUSED",
-    "next": {
-      "id": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
-      "status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
-      "owner": "half_chaos source reception; main shared implementation",
-      "action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
-      "acceptance": "新的有源结果可逐项判定已接收/仍缺；written、pong、重连和快照均不得单独核销旧行动。"
-    }
+    "production_code_changes": 0,
+    "protocol_approved": false,
+    "main_read": "UNKNOWN",
+    "main_adoption": "UNKNOWN"
   },
   "stale_index_repair": {
     "prior_revision": "HC-SESSION-CLOSEOUT-20261020-r41",
@@ -1528,5 +1539,15 @@
       "action": "Using HC55 original 110 request oracle and HC53 original56 exact stage report, prioritize main-required evidence at component-vs-committed-vs-client levels, define falsifiable closure conditions and blocked/independent scopes without claiming run or acceptance."
     },
     "runtime_scope": "NOT_STARTED; all64 UNRUN, no code/import/run/gate changes"
+  },
+  "r57_previous_navigation": {
+    "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
+    "next_independent_task": {
+      "id": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+      "status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
+      "owner": "half_chaos source reception; main shared implementation",
+      "action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
+      "acceptance": "新的有源结果可逐项判定已接收/仍缺；written、pong、重连和快照均不得单独核销旧行动。"
+    }
   }
 }
