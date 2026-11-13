@@ -1,0 +1,217 @@
+{
+  "status": "PASS_LOCAL_MODEL_ONLY",
+  "checks": 8,
+  "cases": [
+    "nine-ordinary-opportunities-reach-black5-begin",
+    "ghost-born-under-attacker-does-not-grant-entry-infection",
+    "two-black-ends-produce-two-infection-and-one-remaining-resolution",
+    "old-main-completes-before-infection-death",
+    "changed-replay-main-also-completes-before-end-death",
+    "controlled-actor-survives-do-not-claim-actor-death",
+    "expiry-before-third-infection-mutant-misses-required-death",
+    "same-victim-two-execution-audits-not-two-formal-opportunities"
+  ],
+  "runtime": "v24.22.1",
+  "prefix": [
+    {
+      "opportunity": 1,
+      "side": "r",
+      "from": [
+        3,
+        4
+      ],
+      "to": [
+        3,
+        5
+      ],
+      "victim": null,
+      "infection": 0,
+      "ghostRemaining": 0
+    },
+    {
+      "opportunity": 2,
+      "side": "b",
+      "from": [
+        8,
+        10
+      ],
+      "to": [
+        7,
+        8
+      ],
+      "victim": null,
+      "infection": 0,
+      "ghostRemaining": 0
+    },
+    {
+      "opportunity": 3,
+      "side": "r",
+      "from": [
+        3,
+        5
+      ],
+      "to": [
+        3,
+        6
+      ],
+      "victim": null,
+      "infection": 0,
+      "ghostRemaining": 0
+    },
+    {
+      "opportunity": 4,
+      "side": "b",
+      "from": [
+        7,
+        8
+      ],
+      "to": [
+        8,
+        10
+      ],
+      "victim": null,
+      "infection": 0,
+      "ghostRemaining": 0
+    },
+    {
+      "opportunity": 5,
+      "side": "r",
+      "from": [
+        3,
+        6
+      ],
+      "to": [
+        3,
+        7
+      ],
+      "victim": "b-P-3",
+      "infection": 0,
+      "ghostRemaining": 3
+    },
+    {
+      "opportunity": 6,
+      "side": "b",
+      "from": [
+        8,
+        10
+      ],
+      "to": [
+        7,
+        8
+      ],
+      "victim": null,
+      "infection": 1,
+      "ghostRemaining": 2
+    },
+    {
+      "opportunity": 7,
+      "side": "r",
+      "from": [
+        7,
+        4
+      ],
+      "to": [
+        7,
+        5
+      ],
+      "victim": null,
+      "infection": 1,
+      "ghostRemaining": 2
+    },
+    {
+      "opportunity": 8,
+      "side": "b",
+      "from": [
+        7,
+        8
+      ],
+      "to": [
+        8,
+        10
+      ],
+      "victim": null,
+      "infection": 2,
+      "ghostRemaining": 1
+    },
+    {
+      "opportunity": 9,
+      "side": "r",
+      "from": [
+        7,
+        5
+      ],
+      "to": [
+        7,
+        6
+      ],
+      "victim": null,
+      "infection": 2,
+      "ghostRemaining": 1
+    }
+  ],
+  "oldDestination": [
+    3,
+    8
+  ],
+  "replayDestination": [
+    1,
+    8
+  ],
+  "oldTrace": [
+    {
+      "event": "ordinary-main-complete",
+      "actor": "b-H-2"
+    },
+    {
+      "event": "H19-end-infection",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "event": "actual-destruction",
+      "victim": "r-P-3",
+      "source": "H19-infection"
+    },
+    {
+      "event": "ghost-third-resolution-finished",
+      "remaining": 0
+    }
+  ],
+  "replayTrace": [
+    {
+      "event": "ordinary-main-complete",
+      "actor": "b-H-2"
+    },
+    {
+      "event": "H19-end-infection",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "event": "actual-destruction",
+      "victim": "r-P-3",
+      "source": "H19-infection"
+    },
+    {
+      "event": "ghost-third-resolution-finished",
+      "remaining": 0
+    }
+  ],
+  "oldFinalPieces": 30,
+  "replayFinalPieces": 30,
+  "sourceEngineRuns": 0,
+  "independentQA": false,
+  "controlledActorDeathProved": false,
+  "assumptions": [
+    "normal ghost affects its own death square",
+    "ordinary all-revealed geometry, no extra hero or mutation",
+    "H19 callbacks locally modeled"
+  ],
+  "unresolved": [
+    "H05 mode admission and production transaction",
+    "exact duplicate reset policy",
+    "controlled actor post-action death",
+    "secret post-action death",
+    "independent QA"
+  ]
+}

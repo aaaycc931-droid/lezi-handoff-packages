@@ -3,14 +3,14 @@
   "owner": "hero-design",
   "updated_on_local": "2026-11-13",
   "status": "active_phase_checkpoint",
-  "source_commit": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
+  "source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
   "followup_source_commit": "747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a",
   "current_task_ids": [
     "MAIN-COORD-20261113-hero-design",
     "MAIN-COORD-FOLLOWUP-20261113-hero-design"
   ],
   "entry": "worklines/hero-design/START_HERE.md",
-  "report": "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
+  "report": "worklines/hero-design/H05_POST_ACTION_DEATH_SOURCE_REVIEW.md",
   "completed": [
     "H02 current H05 references corrected to consolidated design including sections 9-16; obsolete begin wording corrected",
     "H21 source-conditioned four-prayer prefix and same-main-capture/different-begin-deaths local probe",
@@ -26,20 +26,25 @@
     "Completed cross-version source/identity/phase review checklist with explicit unknowns",
     "Constructed H21 whisper replay that removes a red pawn screen and leaves original black horse no legal king-safe action",
     "Constructed adverse red-rook-loss replay that remains geometrically legal",
-    "Specified failed-candidate isolation while preserving accepted audit, attempt flag and RNG lock"
+    "Specified failed-candidate isolation while preserving accepted audit, attempt flag and RNG lock",
+    "Constructed source-conditioned H19 infection death of another piece after old/replayed black5 ordinary main",
+    "Verified local third infection resolution precedes ghost expiry; original controlled horse survives",
+    "Recorded H01 ownership, D01 disabling and H17 unverified action-grade exclusions without inventing compatible powers"
   ],
   "validation": {
-    "local_model_checks": 10,
+    "local_model_checks": 8,
     "result": "PASS_LOCAL_MODEL_ONLY",
     "source_engine_runs": 0,
     "independent_QA": false,
-    "results": "worklines/hero-design/research/H05_FAILED_REPLAY_LEDGER_RESULTS.json",
-    "scope": "13-opportunity source-conditioned prefix, 90 original-horse destinations, adverse begin result and synthetic ledger isolation; no production transaction",
+    "results": "worklines/hero-design/research/H05_POST_ACTION_INFECTION_RESULTS.json",
+    "scope": "9 ordinary opportunities plus locally modeled H19 callbacks; post-main other-piece death only",
     "not_covered": [
-      "death after controlled action",
+      "controlled actor post-action death",
+      "hidden post-action death",
       "full normal turn following failure",
+      "production ghost footprint and hero runtime",
       "actual mode admission",
-      "actual RNG/hidden permissions",
+      "H05 production transaction",
       "reset multiplicity"
     ]
   },
@@ -50,10 +55,11 @@
     "batch_reset_multiplicity": "UNRESOLVED",
     "H21_whisper_batch": "same source atom confirmed; explicit simultaneous batch not established",
     "changed_contributor_equivalence": "UNRESOLVED",
-    "post_action_adverse_death": "CONCRETE_SOURCE_FIXTURE_PENDING",
-    "normal_turn_after_failure": "NOT_SIMULATED"
+    "post_action_adverse_death": "CONTROLLED_ACTOR_CONCRETE_SOURCE_FIXTURE_PENDING",
+    "normal_turn_after_failure": "NOT_SIMULATED",
+    "post_action_other_piece_death": "SOURCE_CONDITIONED_LOCAL_FIXTURE_ONLY"
   },
-  "next_action": "核原行动棋完成操控后才因后续效果死亡的具体来源与棋局；不拼接不兼容英雄。失败后正常begin的计时/状态推进另保留。同因果A/B、Q-RS2与批次重置倍数未决。",
+  "next_action": "继续核失败H05返回原线后，正常采样与begin的计时/状态边界；先核窗口优先B下判和则不进入begin。原行动棋后续死亡仍缺具体来源，H19仅证明条件模型中的他棋死亡；不拼接英雄。H17动作层级待来源核验。同因果A/B、Q-RS2与批次重置未决。",
   "confirmed_design_source": "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
   "preserved_confirmations": [
     "长将B",
@@ -80,8 +86,8 @@
   "publication": {
     "destination_branch": "main",
     "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
-    "research_source_commit": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
-    "publication_parent": "fc70084ee982d5eba3412d383ab7c392094a3849",
+    "research_source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
+    "publication_parent": "fee354a6f4b9db270973b427ee20cb13fbd45d1e",
     "delivery": "long-term authorized hero-design increment; expected_sha and force=false, readback required"
   },
   "publication_history": [
@@ -118,6 +124,13 @@
       "source_pending_commit": "d47856fcd8b9058658f30e9703e77f07d404bdce",
       "publication_parent": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
       "delivery": "publish prior reviewed seven-file increment plus explicit long-term authorization; success requires ref update and readback"
+    },
+    {
+      "destination_branch": "main",
+      "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
+      "research_source_commit": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
+      "publication_parent": "fc70084ee982d5eba3412d383ab7c392094a3849",
+      "delivery": "long-term authorized hero-design increment; expected_sha and force=false, readback required"
     }
   ],
   "main_write_authorization_20261113": {
@@ -143,8 +156,8 @@
       "limits": "仅写入权限；不等于待决玩法批准、主线任命、工程合并部署或模式放行"
     }
   },
-  "previous_phase_source_commit": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc",
-  "previous_report": "worklines/hero-design/H05_BATCH_AND_JOINT_CAUSE_REVIEW.md",
+  "previous_phase_source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
+  "previous_report": "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
   "current_scope_note": "用户明确将自主英雄实验交给主线，本对话继续旧hero-design；不进入hero-pilot。",
   "source_correction": {
     "path": "worklines/hero-design/H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md",
