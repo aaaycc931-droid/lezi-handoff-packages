@@ -1,3 +1,6 @@
+【2026-11-13 H10准备调用链溯源完成｜实现及准入缺口已定位】
+实际准备队列、选择载荷和权威配置未接入wind三选一；旧shadow在正式回合手选明棋，不能作T0；普通精确研究仅H02/H21/M04，不含H10。详见reviews/STD_H10_PREPARATION_CALLER_TRACE_20261113.md及同名specs机读附件，共5项缺口与明确证据要求。当前断点以NEXT_ACTIONS.first为准：收到具体新实现/研究证据或主线新任务再定向接续，未发生引擎运行或共享代码修改。原31/13、NG11 OPEN、NG12局部证据、featuresReady=false、评分冻结NET暂停保持，主线接收未知。下方旧下一动作均属历史。
+
 【2026-11-13 H10/M04原子观察合同完成｜仍为静态未运行】
 已保存10项证据义务、8项未运行反例与两项源码风险：终局提前返回可能跳过H02清理；宿主死亡记录表示需按稳定身份核对。详见reviews/STD_H10_M04_ATOMIC_OBSERVATION_REVIEW_20261113.md及specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json。风险未复现，NG11仍OPEN；主线已读前阶段前缀报告的限定范围，本轮接收未知。下一NEXT_ACTIONS.first为H10准备期调用链只读溯源，可独立继续。原31/13、评分冻结、NET暂停及模式门禁保持。
 

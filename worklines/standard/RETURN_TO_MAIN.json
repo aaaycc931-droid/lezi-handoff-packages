@@ -6,10 +6,10 @@
   "source_commit": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
   "base_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "approval_context_source_commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
-  "phase": "closed_dialogue_20261024",
+  "phase": "H10_PREPARATION_SOURCE_TRACE_COMPLETE",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
+  "current_breakpoint": "NEXT-STD-H10-PREPARATION-DELTA-RECEPTION-ON-EVIDENCE",
   "confirmed_delta": [],
   "new_user_rule_confirmations": 0,
   "preserved_confirmations": {
@@ -45,17 +45,13 @@
     "Update only current line documents, actual own closeout receipt, return and integrity manifest."
   ],
   "changed_paths": [
-    "CURRENT_STATE.json",
-    "NEXT_ACTIONS.json",
-    "PENDING_DECISION.json",
-    "PENDING_ITEMS.json",
-    "CONFIRMATION_REGISTER.json",
-    "modes/standard/CURRENT_STATE.json",
-    "READ_RECEIPTS.json",
-    "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-    "START_HERE.txt",
-    "RETURN_TO_MAIN.json",
-    "PUBLISHED_FILES.json"
+    "worklines/standard/CURRENT_STATE.json",
+    "worklines/standard/NEXT_ACTIONS.json",
+    "worklines/standard/READ_RECEIPTS.json",
+    "worklines/standard/RETURN_TO_MAIN.json",
+    "worklines/standard/START_HERE.txt",
+    "worklines/standard/reviews/STD_H10_PREPARATION_CALLER_TRACE_20261113.md",
+    "worklines/standard/specs/STD_H10_PREPARATION_CALLER_TRACE_20261113.json"
   ],
   "file_identities": [
     {
@@ -1069,12 +1065,17 @@
     }
   },
   "next_task": {
-    "id": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
-    "subject": "NP完整自然前缀与H21随机授鳞的真实身份/原子入口静态接口核验",
-    "action": "只读核已存在游戏代码里的普通32棋R1-B5 ID变换、H21 beginFormalTurn、H02/M04 AS/AP/ES动作入口和已确认王安全/原子逻辑的实际差异；用本次设计合同列出真实模式准入、事件字段、RNG防护及正式运行前提。禁用普通模式门禁不得绕过，不运行引擎、不提交共享业务代码、不擅自确认规则。共享引擎/RNG重放/模式qualification由主线负责，等待其实际接收和授权时再进行真实回放。",
-    "status": "ready_not_started_paused_until_user_continuation",
+    "id": "NEXT-STD-H10-PREPARATION-DELTA-RECEPTION-ON-EVIDENCE",
+    "status": "WAIT_CONCRETE_MAIN_IMPLEMENTATION_OR_NEW_TASK",
+    "action": "实际新H10准备接口/候选抽样/私密投影/限定研究准入证据到达后定向比对G1—G5与O0—O9；或接主线新的独立任务。无新证据不重做此溯源，不注入hostId、不运行引擎、不改共享代码。",
     "implementation_authorized": false,
-    "main_dependency": "MAIN-H21-RNG-INSTRUMENTATION-DECISION remains unreceived/undecided; independent source-only preflight may continue"
+    "engine_execution_authorized": false,
+    "dependency_scope": "仅当前H10准备链，不冻结整个普通模式",
+    "trigger": [
+      "new relevant engine commit or interface evidence",
+      "new bounded H02/H10/M04 research admission evidence",
+      "new authorized main task"
+    ]
   },
   "terminology": {
     "M04_charge_word": "Existing descriptive wording in prior M04 text; not a new global keyword",
@@ -2145,6 +2146,118 @@
         "bytes": 8859,
         "sha256": "2276b2678a252b2d5dcbdd4b58f8ba34b0a0a3409b6fab65ec7fdc45411b6212"
       }
+    ]
+  },
+  "h10_preparation_caller_trace_20261113": {
+    "id": "STD-H10-PREPARATION-CALLER-TRACE-20261113",
+    "date_local": "2026-11-13",
+    "source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
+    "engine_source_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "PR22": "open_draft_rechecked",
+    "report": "worklines/standard/reviews/STD_H10_PREPARATION_CALLER_TRACE_20261113.md",
+    "contract": "worklines/standard/specs/STD_H10_PREPARATION_CALLER_TRACE_20261113.json",
+    "completed": "实际准备/选择/私密投影/模式准入调用链静态溯源；5项缺口分类与接续证据",
+    "status": "SOURCE_TRACE_COMPLETE_IMPLEMENTATION_AND_EVIDENCE_GAPS",
+    "engine_runs": 0,
+    "gameplay_delta": 0,
+    "production_code_changes": 0,
+    "independent_QA": false,
+    "NG11": "OPEN",
+    "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
+    "featuresReady": false,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_read_current_return": "UNKNOWN",
+    "main_adoption_current_return": "UNKNOWN",
+    "artifacts": [
+      {
+        "path": "worklines/standard/reviews/STD_H10_PREPARATION_CALLER_TRACE_20261113.md",
+        "bytes": 9477,
+        "sha256": "30a93b326b2bad7c832d5f3840e73adf425282aa80e89da8a88fcba4c8857901"
+      },
+      {
+        "path": "worklines/standard/specs/STD_H10_PREPARATION_CALLER_TRACE_20261113.json",
+        "bytes": 5539,
+        "sha256": "3cf725a6f34482ccafc12da3cf4bbb61857d263e47fabc4a7e3fd090462164f7"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "G1",
+        "class": "IMPLEMENTATION_AND_INTERFACE",
+        "finding": "准备队列不含wind；配置函数和载荷无H10三选一",
+        "required_evidence": "真实准备入口完成候选选择及T0成功，uses=1且己正式回合数=0",
+        "status": "OPEN"
+      },
+      {
+        "id": "G2",
+        "class": "SAMPLING_IMPLEMENTATION_AND_UNRESOLVED_POLICY",
+        "finding": "明棋helper返回合法全池；无三候选抽样与绑定；算法/不足三枚未补充批准",
+        "required_evidence": "候选稳定本体和权威来源；明确既有资格、采样政策及未覆盖边界",
+        "status": "OPEN"
+      },
+      {
+        "id": "G3",
+        "class": "PROJECTION_AND_CLIENT_EVIDENCE",
+        "finding": "本人wind私有路径存在；三候选UI及完成清除未验证；不以hostId字段推定泄露",
+        "required_evidence": "本人/对手/公共三投影及真实界面完成后清除；不扩二次结果可见性",
+        "status": "UNRUN"
+      },
+      {
+        "id": "G4",
+        "class": "RESEARCH_ADMISSION",
+        "finding": "普通精确tuple仅H02/H21-invincible/M04；其他研究族也不含wind/M04",
+        "required_evidence": "主线提供限定H02/H10/M04真实准入及错组合/错房间/能力逃逸拒绝证据",
+        "status": "OPEN"
+      },
+      {
+        "id": "G5",
+        "class": "DOWNSTREAM_PATH_AND_ATOMIC_EVIDENCE",
+        "finding": "闭合公共路径查询普通族不含H10；原子合同与两风险仍未运行/未复现",
+        "required_evidence": "新来源定向映射后执行前轮O0—O9；不把T0成功当R5PASS",
+        "status": "UNRUN"
+      }
+    ],
+    "next_action": {
+      "id": "NEXT-STD-H10-PREPARATION-DELTA-RECEPTION-ON-EVIDENCE",
+      "status": "WAIT_CONCRETE_MAIN_IMPLEMENTATION_OR_NEW_TASK",
+      "action": "实际新H10准备接口/候选抽样/私密投影/限定研究准入证据到达后定向比对G1—G5与O0—O9；或接主线新的独立任务。无新证据不重做此溯源，不注入hostId、不运行引擎、不改共享代码。",
+      "implementation_authorized": false,
+      "engine_execution_authorized": false,
+      "dependency_scope": "仅当前H10准备链，不冻结整个普通模式",
+      "trigger": [
+        "new relevant engine commit or interface evidence",
+        "new bounded H02/H10/M04 research admission evidence",
+        "new authorized main task"
+      ]
+    },
+    "main_attention": "先补准备成功路径及受限研究准入；旧正式回合shadow命令不替代T0。研究放行不自动证明闭合路径或R5原子PASS。"
+  },
+  "operational_header_before_h10_trace_20261113": {
+    "phase": "closed_dialogue_20261024",
+    "current_breakpoint": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
+    "next_task": {
+      "id": "NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT",
+      "subject": "NP完整自然前缀与H21随机授鳞的真实身份/原子入口静态接口核验",
+      "action": "只读核已存在游戏代码里的普通32棋R1-B5 ID变换、H21 beginFormalTurn、H02/M04 AS/AP/ES动作入口和已确认王安全/原子逻辑的实际差异；用本次设计合同列出真实模式准入、事件字段、RNG防护及正式运行前提。禁用普通模式门禁不得绕过，不运行引擎、不提交共享业务代码、不擅自确认规则。共享引擎/RNG重放/模式qualification由主线负责，等待其实际接收和授权时再进行真实回放。",
+      "status": "ready_not_started_paused_until_user_continuation",
+      "implementation_authorized": false,
+      "main_dependency": "MAIN-H21-RNG-INSTRUMENTATION-DECISION remains unreceived/undecided; independent source-only preflight may continue"
+    },
+    "changed_paths": [
+      "CURRENT_STATE.json",
+      "NEXT_ACTIONS.json",
+      "PENDING_DECISION.json",
+      "PENDING_ITEMS.json",
+      "CONFIRMATION_REGISTER.json",
+      "modes/standard/CURRENT_STATE.json",
+      "READ_RECEIPTS.json",
+      "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
+      "START_HERE.txt",
+      "RETURN_TO_MAIN.json",
+      "PUBLISHED_FILES.json"
     ]
   }
 }

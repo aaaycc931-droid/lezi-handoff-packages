@@ -1,0 +1,137 @@
+{
+  "schema": "lezi.standard.h10_preparation_caller_trace.v1",
+  "id": "STD-H10-PREPARATION-CALLER-TRACE-20261113",
+  "date_local": "2026-11-13",
+  "source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
+  "engine_source_commit": "71145df45ad17215a3731e53150b6728e079e375",
+  "PR22": "open_draft_rechecked",
+  "report": "worklines/standard/reviews/STD_H10_PREPARATION_CALLER_TRACE_20261113.md",
+  "contract": "worklines/standard/specs/STD_H10_PREPARATION_CALLER_TRACE_20261113.json",
+  "completed": "实际准备/选择/私密投影/模式准入调用链静态溯源；5项缺口分类与接续证据",
+  "status": "SOURCE_TRACE_COMPLETE_IMPLEMENTATION_AND_EVIDENCE_GAPS",
+  "engine_runs": 0,
+  "gameplay_delta": 0,
+  "production_code_changes": 0,
+  "independent_QA": false,
+  "NG11": "OPEN",
+  "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
+  "featuresReady": false,
+  "ordinary_confirmations": 31,
+  "direct_shared_confirmations": 13,
+  "scoring": "frozen",
+  "NET": "paused",
+  "main_read_current_return": "UNKNOWN",
+  "main_adoption_current_return": "UNKNOWN",
+  "sources": [
+    {
+      "path": "src/research-source-context.ts",
+      "blob": "b7bf2f759f4422729abec1eb84bbbc6c956d6858",
+      "read_scope": "全文1—183"
+    },
+    {
+      "path": "src/modes.ts",
+      "blob": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+      "read_scope": "全文1—30"
+    },
+    {
+      "path": "src/hero-progress.ts",
+      "blob": "4a2fa1742283cf14781b51f6e43169aa37ec856e",
+      "read_scope": "1—100，准备配置重点77—88"
+    },
+    {
+      "path": "src/hero-actions.ts",
+      "blob": "2de406812dd1737ff0b861655cf6dcce1a474fb7",
+      "read_scope": "38—41、95—130、308—349"
+    },
+    {
+      "path": "src/remote-room.ts",
+      "blob": "37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+      "read_scope": "615—683、895—936、982—1023、1470—1526、1539—1585"
+    },
+    {
+      "path": "src/settlement.ts",
+      "blob": "6655e6c0a3b319992bc23e0d216a502bf252702d",
+      "read_scope": "45—95"
+    },
+    {
+      "path": "src/types.ts",
+      "blob": "75e987b74186440d3d2b2f20addb43a5fcbf43e5",
+      "read_scope": "wind/命令类型定位行325/345，仅搜索锚点"
+    },
+    {
+      "path": "src/bluetooth-host-room.ts",
+      "blob": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+      "read_scope": "36—46、68—112"
+    },
+    {
+      "path": "src/game.ts",
+      "blob": "fe86e6adce83aca4171d38c75321bf3e178a4245",
+      "read_scope": "59—82、397—429"
+    },
+    {
+      "path": "web/app.ts",
+      "blob": "3e5db425a6104b207070330b6709305bc678431a",
+      "read_scope": "2367—2424、3839—3865、3902—3929"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G1",
+      "class": "IMPLEMENTATION_AND_INTERFACE",
+      "finding": "准备队列不含wind；配置函数和载荷无H10三选一",
+      "required_evidence": "真实准备入口完成候选选择及T0成功，uses=1且己正式回合数=0",
+      "status": "OPEN"
+    },
+    {
+      "id": "G2",
+      "class": "SAMPLING_IMPLEMENTATION_AND_UNRESOLVED_POLICY",
+      "finding": "明棋helper返回合法全池；无三候选抽样与绑定；算法/不足三枚未补充批准",
+      "required_evidence": "候选稳定本体和权威来源；明确既有资格、采样政策及未覆盖边界",
+      "status": "OPEN"
+    },
+    {
+      "id": "G3",
+      "class": "PROJECTION_AND_CLIENT_EVIDENCE",
+      "finding": "本人wind私有路径存在；三候选UI及完成清除未验证；不以hostId字段推定泄露",
+      "required_evidence": "本人/对手/公共三投影及真实界面完成后清除；不扩二次结果可见性",
+      "status": "UNRUN"
+    },
+    {
+      "id": "G4",
+      "class": "RESEARCH_ADMISSION",
+      "finding": "普通精确tuple仅H02/H21-invincible/M04；其他研究族也不含wind/M04",
+      "required_evidence": "主线提供限定H02/H10/M04真实准入及错组合/错房间/能力逃逸拒绝证据",
+      "status": "OPEN"
+    },
+    {
+      "id": "G5",
+      "class": "DOWNSTREAM_PATH_AND_ATOMIC_EVIDENCE",
+      "finding": "闭合公共路径查询普通族不含H10；原子合同与两风险仍未运行/未复现",
+      "required_evidence": "新来源定向映射后执行前轮O0—O9；不把T0成功当R5PASS",
+      "status": "UNRUN"
+    }
+  ],
+  "preparation_prefix_status": "CONDITIONAL_NOT_NATURALLY_REACHED",
+  "negative_prohibitions": [
+    "No hostId/state injection",
+    "No old before_main shadow call presented as T0 preparation",
+    "No exact H21 tuple capability reused for H10",
+    "No featuresReady or transport gate change",
+    "No probabilities or sampling algorithm claimed",
+    "No owner hostId field treated as proved opponent leak",
+    "No UI/transport receipt inferred from server JSON"
+  ],
+  "next_action": {
+    "id": "NEXT-STD-H10-PREPARATION-DELTA-RECEPTION-ON-EVIDENCE",
+    "status": "WAIT_CONCRETE_MAIN_IMPLEMENTATION_OR_NEW_TASK",
+    "action": "实际新H10准备接口/候选抽样/私密投影/限定研究准入证据到达后定向比对G1—G5与O0—O9；或接主线新的独立任务。无新证据不重做此溯源，不注入hostId、不运行引擎、不改共享代码。",
+    "implementation_authorized": false,
+    "engine_execution_authorized": false,
+    "dependency_scope": "仅当前H10准备链，不冻结整个普通模式",
+    "trigger": [
+      "new relevant engine commit or interface evidence",
+      "new bounded H02/H10/M04 research admission evidence",
+      "new authorized main task"
+    ]
+  }
+}

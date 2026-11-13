@@ -2262,5 +2262,97 @@
       "read": "前缀报告全文与NEXT元数据/变更清单",
       "not_read_or_run": "全部合同/几何重跑未由主线完成"
     }
+  },
+  "h10_preparation_caller_trace_20261113": {
+    "id": "STD-H10-PREPARATION-CALLER-TRACE-20261113",
+    "date_local": "2026-11-13",
+    "source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
+    "engine_source_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "PR22": "open_draft_rechecked",
+    "report": "worklines/standard/reviews/STD_H10_PREPARATION_CALLER_TRACE_20261113.md",
+    "contract": "worklines/standard/specs/STD_H10_PREPARATION_CALLER_TRACE_20261113.json",
+    "completed": "实际准备/选择/私密投影/模式准入调用链静态溯源；5项缺口分类与接续证据",
+    "status": "SOURCE_TRACE_COMPLETE_IMPLEMENTATION_AND_EVIDENCE_GAPS",
+    "engine_runs": 0,
+    "gameplay_delta": 0,
+    "production_code_changes": 0,
+    "independent_QA": false,
+    "NG11": "OPEN",
+    "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
+    "featuresReady": false,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_read_current_return": "UNKNOWN",
+    "main_adoption_current_return": "UNKNOWN",
+    "receiver": "standard",
+    "sources": [
+      {
+        "path": "src/research-source-context.ts",
+        "blob": "b7bf2f759f4422729abec1eb84bbbc6c956d6858",
+        "read_scope": "全文1—183"
+      },
+      {
+        "path": "src/modes.ts",
+        "blob": "cb05c2fcfb0c617b6310e08ef8593e1d12ad95cc",
+        "read_scope": "全文1—30"
+      },
+      {
+        "path": "src/hero-progress.ts",
+        "blob": "4a2fa1742283cf14781b51f6e43169aa37ec856e",
+        "read_scope": "1—100，准备配置重点77—88"
+      },
+      {
+        "path": "src/hero-actions.ts",
+        "blob": "2de406812dd1737ff0b861655cf6dcce1a474fb7",
+        "read_scope": "38—41、95—130、308—349"
+      },
+      {
+        "path": "src/remote-room.ts",
+        "blob": "37194aac340d8fed5d6ac02e0001bf4bfd65784b",
+        "read_scope": "615—683、895—936、982—1023、1470—1526、1539—1585"
+      },
+      {
+        "path": "src/settlement.ts",
+        "blob": "6655e6c0a3b319992bc23e0d216a502bf252702d",
+        "read_scope": "45—95"
+      },
+      {
+        "path": "src/types.ts",
+        "blob": "75e987b74186440d3d2b2f20addb43a5fcbf43e5",
+        "read_scope": "wind/命令类型定位行325/345，仅搜索锚点"
+      },
+      {
+        "path": "src/bluetooth-host-room.ts",
+        "blob": "80659ebf86c6bfbe678f67cd7aff9f01a8fa151c",
+        "read_scope": "36—46、68—112"
+      },
+      {
+        "path": "src/game.ts",
+        "blob": "fe86e6adce83aca4171d38c75321bf3e178a4245",
+        "read_scope": "59—82、397—429"
+      },
+      {
+        "path": "web/app.ts",
+        "blob": "3e5db425a6104b207070330b6709305bc678431a",
+        "read_scope": "2367—2424、3839—3865、3902—3929"
+      }
+    ],
+    "handoff_read_scope": "固定入口/任务/下一动作和当前记录；同对话未变来源复用；main自b48至f2f0并行安排差分读取；其他线正文未采用",
+    "rule_read_scope": "工作稿394—465行H10准备期/冷却/二次空池/定位定向复读；原确认同对话已读复用",
+    "adopted": "固定版本调用链和缺口分类，不作为产品故障复现或正式模式验收",
+    "not_adopted": [
+      "其他新英雄试点授权不移植本线",
+      "无新采样/超时/失败政策",
+      "无独立QA/端到端证明"
+    ],
+    "publication_preflight": {
+      "latest_parent": "a262f744ed256b0dfad1f64e7b5df4cef0c9fe58",
+      "base_tree": "4651e4080ec0f436798dd59b627c85d0eef8ddc0",
+      "since_read_head": "chaos-only 7 paths; standard unchanged",
+      "other_work_preserved": true,
+      "other_line_new_report_adopted": false
+    }
   }
 }
