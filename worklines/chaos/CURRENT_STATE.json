@@ -32,8 +32,8 @@
     "2026-11-13 C4 memory-only original request preservation prototype: 16 bounded checks passed; production unchanged.",
     "2026-11-13 C5A/C5B isolated implementation complete: 16 native +19 Web, source strip and remote readback."
   ],
-  "next_action": "C5_FINITE_PACKAGE_COMPLETE; main reviews isolated draft and integrates concrete result/identity contract. Await specific new source or bounded task.",
-  "next_action_status": "C5_COMPLETE_WAIT_MAIN_ADOPTION_REVIEW",
+  "next_action": "核最新main与C5专属分支HEAD，读本收束及当前TASK/状态/主线接收意见；仅对新增具体任务、审查问题或差分推进。若无新增输入，保持C5完成/待主线审查，不重跑C1—C5或制造重复报告。",
+  "next_action_status": "SESSION_CLOSED_RESUME_FROM_CURRENT_REMOTE_STATE",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 3,
@@ -134,33 +134,36 @@
     }
   },
   "session_closure": {
-    "date_local": "2026-10-24",
+    "date_local": "2026-11-13",
+    "timezone": "Asia/Shanghai",
     "state": "CLOSED_READY_FOR_NEW_DIALOGUE",
-    "closure_reason": "user_requested_end_of_round_and_possible_chat_switch",
-    "last_delivered_task": "CH-02-CREATE-LEGAL-JIEQI-H11-H15-WITNESSES",
-    "last_delivered_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
-    "source_at_closure": "6991e6c8bd373e0ce52d4ea604a9f8f6e0055537",
-    "document_paths": [
-      "worklines/chaos/SOURCE_REVIEW.md",
-      "worklines/chaos/CH02_JIEQI_WITNESSES.json",
-      "worklines/chaos/CH02_VALIDATION.md",
-      "worklines/chaos/RETURN_TO_MAIN.json"
+    "user_request": "收束本对话，我会在新对话中继续",
+    "scope": "This chaos dialogue only; project and other worklines remain active.",
+    "source_at_closure": "a6f1f21a56e93154922452149bcb4b8f1b8a2690",
+    "summary": "worklines/chaos/SESSION_CLOSEOUT.md",
+    "last_delivered_task": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+    "last_delivered_handoff": "6530871c3042fd21c55e0742602f42d662a3935e",
+    "engine_branch": "codex/ch-local-generation-draft-20261113",
+    "engine_head": "4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c",
+    "engine_head_rechecked": true,
+    "completion": "C5A/C5B isolated draft done, 16 native /19 Web passed;10 engine and6 handoff paths read back at delivery.",
+    "main_c5_receipt": "UNKNOWN_AT_CHECKED_SOURCE; main C4 report/code bounded intake exists, not C5 adoption.",
+    "resume_action": "核最新main与C5专属分支HEAD，读本收束及当前TASK/状态/主线接收意见；仅对新增具体任务、审查问题或差分推进。若无新增输入，保持C5完成/待主线审查，不重跑C1—C5或制造重复报告。",
+    "standing_authority": "PROJECT_WORK_AGREEMENT.md + CURRENT_STATE.main_write_authorization_20261113；保留用户原话与本线长期main文件更新作用域。C5隔离代码授权见TASK.local_connection_generation_20261113。",
+    "no_new_runs_on_closeout": true,
+    "pending": [
+      "Main review/adoption of C5 isolated draft",
+      "Remote actor continuity, authority/match and result adapter integration",
+      "Actual Android/JNI/WebView/radio timing, browser and independent QA",
+      "No cross-runtime atomicity guarantee after final context query through JS completion; Web rebuild does not restore prior room/UI"
     ],
-    "actual_verification": "after_CH02_commit_HEAD_and_blob_SHAs_readback_passed",
-    "next_task": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
-    "next_task_condition": "check_newest_main_DISPATCH_and_chaos_state_first; main_owns_shared_runtime; only actual main receipt is adoption",
-    "limits": {
-      "engine_runs": 0,
-      "game_code_changes": 0,
-      "legal_prefixes_engine_accepted": 0,
-      "natural_games": 0,
-      "full_mode_verified": false
-    },
     "protected": {
-      "three_modes_concurrent_data": true,
-      "heroes_and_UI": true,
       "scoring": "frozen",
-      "NET": "paused"
+      "NET": "paused",
+      "mode_gates": true,
+      "other_lines": true,
+      "no_merge_deploy_APK": true,
+      "prior_evidence": true
     }
   },
   "ch03": {
@@ -629,5 +632,36 @@
     "main_receipt": "UNKNOWN",
     "next": "C5_FINITE_PACKAGE_COMPLETE; main reviews isolated draft and integrates concrete result/identity contract. Await specific new source or bounded task."
   },
-  "game_code_changes_scope": "C5 isolated draft only: native session/bridge and Web Bluetooth paths; not merged/adopted production."
+  "game_code_changes_scope": "C5 isolated draft only: native session/bridge and Web Bluetooth paths; not merged/adopted production.",
+  "previous_session_closure_20261024": {
+    "date_local": "2026-10-24",
+    "state": "CLOSED_READY_FOR_NEW_DIALOGUE",
+    "closure_reason": "user_requested_end_of_round_and_possible_chat_switch",
+    "last_delivered_task": "CH-02-CREATE-LEGAL-JIEQI-H11-H15-WITNESSES",
+    "last_delivered_commit": "9c9af3e5c0155f27206a10921680d53275e3ec07",
+    "source_at_closure": "6991e6c8bd373e0ce52d4ea604a9f8f6e0055537",
+    "document_paths": [
+      "worklines/chaos/SOURCE_REVIEW.md",
+      "worklines/chaos/CH02_JIEQI_WITNESSES.json",
+      "worklines/chaos/CH02_VALIDATION.md",
+      "worklines/chaos/RETURN_TO_MAIN.json"
+    ],
+    "actual_verification": "after_CH02_commit_HEAD_and_blob_SHAs_readback_passed",
+    "next_task": "CH-03-JIEQI-LEGAL-PREFIX-AND-H11-H15-OBSERVATION_CONTRACT",
+    "next_task_condition": "check_newest_main_DISPATCH_and_chaos_state_first; main_owns_shared_runtime; only actual main receipt is adoption",
+    "limits": {
+      "engine_runs": 0,
+      "game_code_changes": 0,
+      "legal_prefixes_engine_accepted": 0,
+      "natural_games": 0,
+      "full_mode_verified": false
+    },
+    "protected": {
+      "three_modes_concurrent_data": true,
+      "heroes_and_UI": true,
+      "scoring": "frozen",
+      "NET": "paused"
+    }
+  },
+  "session_summary": "worklines/chaos/SESSION_CLOSEOUT.md"
 }
