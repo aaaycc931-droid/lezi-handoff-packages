@@ -1,8 +1,8 @@
 {
   "schema": "lezi.hero_pilot.state.v1",
   "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-  "updated_by": "side_conversation_recovery_closeout",
-  "status": "VISUAL_REPAIR_DELIVERED_BROWSER_QA_GAP",
+  "updated_by": "hero_pilot_recovery_executor",
+  "status": "ORIGINAL_CODE_ASSETS_LOGS_RECOVERED_VERIFIED_PUBLICATION_BLOCKED",
   "task": "TASK_FROM_MAIN.json",
   "designer_brief": "DESIGNER_BRIEF.md",
   "count": 1,
@@ -48,12 +48,14 @@
     "global_balance_accepted": false,
     "independent_QA": false,
     "deployed": false,
-    "portrait": "SOURCE_PNGS_RECOVERED_INTEGRATION_REPORTED_UNVERIFIED",
+    "portrait": "ORIGINAL_ART_INTEGRATION_RECOVERED_LOCALLY_VERIFIED_PUBLICATION_BLOCKED",
     "swap_feedback_repaired": true,
     "latest_dom_checks": 10,
-    "latest_targeted_regression_pass": 155
+    "latest_targeted_regression_pass": 155,
+    "latest_art_dom_checks": 14,
+    "art_published": false
   },
-  "next_action": "先读ART_RECOVERY_CLOSEOUT_20261113.md，按精确原文件名查找并取回两张原图；优先恢复原美术接入差分、4个运行时导出及14项检查日志。无法恢复时在最新专属分支基于已有原图最小补建并验证。不要重新生成人物，不重做已发布换轨修复。",
+  "next_action": "恢复工作已完成，不重找/重画/重建。先读取ART_RESTORE_STATUS_20261113.md及私有恢复包siheng-art-recovery-20261113.zip；待图片公开GitHub披露授权明确后，复核最新专属分支与清单，只发布31个增量文件、保持draft且不合并部署，再读回更新本线。未有新差分不重跑56/14/HTTP验证。",
   "protected": {
     "other_worklines": true,
     "score_ledger": "frozen",
@@ -70,7 +72,8 @@
     "RETURN_TO_MAIN.json",
     "SESSION_CLOSEOUT.json",
     "VISUAL_REPAIR.md",
-    "ART_RECOVERY_CLOSEOUT_20261113.md"
+    "ART_RECOVERY_CLOSEOUT_20261113.md",
+    "ART_RESTORE_STATUS_20261113.md"
   ],
   "active_dispatch": {
     "id": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113",
@@ -88,59 +91,51 @@
   },
   "art_recovery": {
     "date": "2026-11-13",
-    "updated_by": "side_conversation_recovery_closeout",
-    "report": "ART_RECOVERY_CLOSEOUT_20261113.md",
-    "status": "SOURCE_PNGS_RECOVERED_INTEGRATION_REPORTED_UNVERIFIED",
-    "sources_verified": [
-      {
-        "role": "portrait_avatar_source",
-        "file_name": "沉稳深青夹克肖像-2.png",
-        "width": 1254,
-        "height": 1254,
-        "format": "PNG",
-        "mode": "RGBA",
-        "size_bytes": 2975891,
-        "alpha_extrema": [
-          255,
-          255
-        ],
-        "transparent_pixels": 0
-      },
-      {
-        "role": "full_body_source",
-        "file_name": "西衡透明背景全身立绘-1.png",
-        "width": 1024,
-        "height": 1536,
-        "format": "PNG",
-        "mode": "RGBA",
-        "size_bytes": 1224560,
-        "alpha_extrema": [
-          0,
-          254
-        ],
-        "transparent_pixels": 1064170
-      }
-    ],
-    "reported_parent_progress": {
-      "code_files_edited": 7,
-      "runtime_image_files": 4,
-      "runtime_total_kib_approx": 143,
-      "dom_checks": 14,
-      "thumbnail_sizes": [
+    "updated_by": "hero_pilot_recovery_executor",
+    "report": "ART_RESTORE_STATUS_20261113.md",
+    "status": "ORIGINAL_CODE_ASSETS_LOGS_RECOVERED_VERIFIED_PUBLICATION_BLOCKED",
+    "recovered": {
+      "implementation_files": 7,
+      "original_generation_pngs": 2,
+      "runtime_webp": 4,
+      "runtime_bytes": 145958,
+      "original_raw_logs": 3,
+      "code_and_export_bytes_unchanged": true,
+      "character_regenerated": false,
+      "reimplementation": false
+    },
+    "validation": {
+      "web_tests": 56,
+      "production_dom_checks": 14,
+      "build": "PASS",
+      "manifest_files": 6,
+      "http_200_mime_hash_checks": 4,
+      "small_sizes_visual_review": [
         48,
         64,
         96
       ],
-      "evidence_status": "USER_PASTED_PARENT_PROGRESS_AND_OPERATION_LABELS_ONLY",
-      "not_rerun_here": true
+      "real_browser": false
     },
-    "verified_engine_head": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
-    "engine_art_commit_confirmed": false,
-    "missing": [
-      "original code delta or unpublished art commit",
-      "four runtime exports and filenames",
-      "DOM/build/server/thumbnail verification logs"
-    ],
-    "recovery_scope": "source-image verification and remote handoff only"
+    "source_comparison": "用户上传头像与原工作树母版RGBA一致；立绘alpha完全一致但RGB原字节有差异。共同底色上合成前浮点RGB差异小于一个8位色阶；保留原生成母版与四个导出，不误写字节一致。用户上传原件另保留。",
+    "evidence": "engine/review/hero-pilot/ART_RECOVERY.json inside private recovery package; not yet a GitHub artifact",
+    "durable_recovery_package": "siheng-art-recovery-20261113.zip",
+    "package_contents": "完整engine源码快照、31个增量文件清单、两张用户重新上传PNG原件；排除.git、dist和外部依赖；ZIP CRC与增量哈希实核",
+    "publication": {
+      "engine_head": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
+      "art_commit_published": false,
+      "pr": 23,
+      "draft": true,
+      "merged": false,
+      "blocker": "Automatic approval review rejected the image-blob upload: repository/payload disclosure authorization not established. Repository subsequently verified public and writable; no bypass or retry of blocked image upload. Further explicit public-art disclosure approval requested."
+    },
+    "missing": [],
+    "remaining": [
+      "公开GitHub图片披露授权及整批工程发布/读回",
+      "真实浏览器画面/触摸",
+      "真人强度",
+      "全面独立QA",
+      "动画"
+    ]
   }
 }

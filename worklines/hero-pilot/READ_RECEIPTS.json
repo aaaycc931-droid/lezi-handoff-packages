@@ -130,6 +130,38 @@
       ],
       "actual_scope": "新派发、主线有限接收与具体DOM缺陷；执行自身源上复现后修复",
       "adopted": "完成双端动作反馈；没有推翻设计、不依赖NET协议或浏览器；新增接收由主线后续回执"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "fa2c03d6ee9de5ae4c0441e42100c0ea07519f05",
+      "paths": [
+        "AGENTS.md",
+        "CURRENT_HANDOFF.json (entry and related routing)",
+        "docs/WORKFLOW.md",
+        "collaboration/CURRENT.json",
+        "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md (INTEGRATED_START, TASK_ROUTES, GITHUB_HANDOFF_WORKFLOW, AUTHORIZATION_AND_ADOPTION, MANDATORY_PRECHECK; local body exact SHA match)",
+        "worklines/hero-pilot/START_HERE.md",
+        "worklines/hero-pilot/ART_RECOVERY_CLOSEOUT_20261113.md",
+        "worklines/hero-pilot/TASK_FROM_MAIN.json",
+        "worklines/hero-pilot/DESIGNER_BRIEF.md",
+        "worklines/hero-pilot/PROJECT_INSTRUCTIONS.txt",
+        "worklines/hero-pilot/CURRENT_STATE.json",
+        "worklines/hero-pilot/SESSION_CLOSEOUT.json",
+        "worklines/hero-pilot/RETURN_TO_MAIN.json",
+        "worklines/hero-pilot/READ_RECEIPTS.json"
+      ],
+      "actual_scope": "恢复授权、当前断点、原图身份及原工程/日志。无玩法变更；旧玩法阅读证据按scope保留。",
+      "adopted": "在隔离副本恢复，不更改原工作树；只复核本次美术，拒绝上传后不绕过，先持久保全。"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "82785937c284720e1f770ad7dadd9c0b1c41b87b",
+      "paths": [
+        "worklines/ui/START_HERE.txt",
+        "worklines/ui/HERO_VISUAL_STYLE_INDEPENDENCE_RULE_20261109.md"
+      ],
+      "actual_scope": "最新独立UI路由和完整角色风格独立正文",
+      "adopted": "保留当前司衡厚涂；不套首页风格，不接管H01或其他UI。"
     }
   ],
   "private_personal_sources_published": false,
@@ -154,5 +186,54 @@
     "sha": "508be3f7a1375abc76f44b1daa329a6ffff5e8aa",
     "owned_prefix_changed_by_others": false,
     "other_worklines_preserved": true
+  },
+  "art_recovery": {
+    "date": "2026-11-13",
+    "updated_by": "hero_pilot_recovery_executor",
+    "report": "ART_RESTORE_STATUS_20261113.md",
+    "status": "ORIGINAL_CODE_ASSETS_LOGS_RECOVERED_VERIFIED_PUBLICATION_BLOCKED",
+    "recovered": {
+      "implementation_files": 7,
+      "original_generation_pngs": 2,
+      "runtime_webp": 4,
+      "runtime_bytes": 145958,
+      "original_raw_logs": 3,
+      "code_and_export_bytes_unchanged": true,
+      "character_regenerated": false,
+      "reimplementation": false
+    },
+    "validation": {
+      "web_tests": 56,
+      "production_dom_checks": 14,
+      "build": "PASS",
+      "manifest_files": 6,
+      "http_200_mime_hash_checks": 4,
+      "small_sizes_visual_review": [
+        48,
+        64,
+        96
+      ],
+      "real_browser": false
+    },
+    "source_comparison": "用户上传头像与原工作树母版RGBA一致；立绘alpha完全一致但RGB原字节有差异。共同底色上合成前浮点RGB差异小于一个8位色阶；保留原生成母版与四个导出，不误写字节一致。用户上传原件另保留。",
+    "evidence": "engine/review/hero-pilot/ART_RECOVERY.json inside private recovery package; not yet a GitHub artifact",
+    "durable_recovery_package": "siheng-art-recovery-20261113.zip",
+    "package_contents": "完整engine源码快照、31个增量文件清单、两张用户重新上传PNG原件；排除.git、dist和外部依赖；ZIP CRC与增量哈希实核",
+    "publication": {
+      "engine_head": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
+      "art_commit_published": false,
+      "pr": 23,
+      "draft": true,
+      "merged": false,
+      "blocker": "Automatic approval review rejected the image-blob upload: repository/payload disclosure authorization not established. Repository subsequently verified public and writable; no bypass or retry of blocked image upload. Further explicit public-art disclosure approval requested."
+    },
+    "missing": [],
+    "remaining": [
+      "公开GitHub图片披露授权及整批工程发布/读回",
+      "真实浏览器画面/触摸",
+      "真人强度",
+      "全面独立QA",
+      "动画"
+    ]
   }
 }

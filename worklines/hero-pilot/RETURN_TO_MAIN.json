@@ -2,7 +2,7 @@
   "schema": "lezi.hero_pilot.return.v1",
   "created_by": "hero_pilot_executor",
   "task_id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-  "status": "VISUAL_REPAIR_DELIVERED_BROWSER_QA_GAP",
+  "status": "ORIGINAL_CODE_ASSETS_LOGS_RECOVERED_VERIFIED_PUBLICATION_BLOCKED",
   "entry": "worklines/hero-pilot/START_HERE.md",
   "design_decisions": [
     {
@@ -38,8 +38,8 @@
     "full_independent_QA": false
   },
   "necessary_main_actions": [
-    "定向核对5ab688c双端反馈与10项DOM证据，不重复派原(0,0)问题",
-    "保留真实浏览器/触摸与真人强度验收；未授权合并部署"
+    "查看本线ART_RESTORE_STATUS_20261113.md；恢复/验证完成，但engine/PR23仍为5ab688c，禁止按新美术已发布/已接收处理。",
+    "图片公开授权与后续发布另行补齐，真实浏览器/触摸、真人强度/独立QA继续保留。"
   ],
   "main_receipt_of_future_delivery": "V1_RECEIVED_AS_SOURCE_REPORT;_THIS_REPAIR_RECEIPT_UNKNOWN",
   "protected": {
@@ -55,7 +55,7 @@
     "all hero and mutation combinations",
     "global calibrated balance",
     "complete shared pressure/repetition/draw adjudication coverage",
-    "portrait sources recovered; runtime integration and exports unverified; animation not delivered",
+    "art code, masters, runtime exports and logs recovered and locally verified; public upload blocked; animation not delivered",
     "merge or deployment"
   ],
   "previous_engine_delivery": {
@@ -89,59 +89,51 @@
   },
   "art_recovery": {
     "date": "2026-11-13",
-    "updated_by": "side_conversation_recovery_closeout",
-    "report": "ART_RECOVERY_CLOSEOUT_20261113.md",
-    "status": "SOURCE_PNGS_RECOVERED_INTEGRATION_REPORTED_UNVERIFIED",
-    "sources_verified": [
-      {
-        "role": "portrait_avatar_source",
-        "file_name": "沉稳深青夹克肖像-2.png",
-        "width": 1254,
-        "height": 1254,
-        "format": "PNG",
-        "mode": "RGBA",
-        "size_bytes": 2975891,
-        "alpha_extrema": [
-          255,
-          255
-        ],
-        "transparent_pixels": 0
-      },
-      {
-        "role": "full_body_source",
-        "file_name": "西衡透明背景全身立绘-1.png",
-        "width": 1024,
-        "height": 1536,
-        "format": "PNG",
-        "mode": "RGBA",
-        "size_bytes": 1224560,
-        "alpha_extrema": [
-          0,
-          254
-        ],
-        "transparent_pixels": 1064170
-      }
-    ],
-    "reported_parent_progress": {
-      "code_files_edited": 7,
-      "runtime_image_files": 4,
-      "runtime_total_kib_approx": 143,
-      "dom_checks": 14,
-      "thumbnail_sizes": [
+    "updated_by": "hero_pilot_recovery_executor",
+    "report": "ART_RESTORE_STATUS_20261113.md",
+    "status": "ORIGINAL_CODE_ASSETS_LOGS_RECOVERED_VERIFIED_PUBLICATION_BLOCKED",
+    "recovered": {
+      "implementation_files": 7,
+      "original_generation_pngs": 2,
+      "runtime_webp": 4,
+      "runtime_bytes": 145958,
+      "original_raw_logs": 3,
+      "code_and_export_bytes_unchanged": true,
+      "character_regenerated": false,
+      "reimplementation": false
+    },
+    "validation": {
+      "web_tests": 56,
+      "production_dom_checks": 14,
+      "build": "PASS",
+      "manifest_files": 6,
+      "http_200_mime_hash_checks": 4,
+      "small_sizes_visual_review": [
         48,
         64,
         96
       ],
-      "evidence_status": "USER_PASTED_PARENT_PROGRESS_AND_OPERATION_LABELS_ONLY",
-      "not_rerun_here": true
+      "real_browser": false
     },
-    "verified_engine_head": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
-    "engine_art_commit_confirmed": false,
-    "missing": [
-      "original code delta or unpublished art commit",
-      "four runtime exports and filenames",
-      "DOM/build/server/thumbnail verification logs"
-    ],
-    "recovery_scope": "source-image verification and remote handoff only"
+    "source_comparison": "用户上传头像与原工作树母版RGBA一致；立绘alpha完全一致但RGB原字节有差异。共同底色上合成前浮点RGB差异小于一个8位色阶；保留原生成母版与四个导出，不误写字节一致。用户上传原件另保留。",
+    "evidence": "engine/review/hero-pilot/ART_RECOVERY.json inside private recovery package; not yet a GitHub artifact",
+    "durable_recovery_package": "siheng-art-recovery-20261113.zip",
+    "package_contents": "完整engine源码快照、31个增量文件清单、两张用户重新上传PNG原件；排除.git、dist和外部依赖；ZIP CRC与增量哈希实核",
+    "publication": {
+      "engine_head": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
+      "art_commit_published": false,
+      "pr": 23,
+      "draft": true,
+      "merged": false,
+      "blocker": "Automatic approval review rejected the image-blob upload: repository/payload disclosure authorization not established. Repository subsequently verified public and writable; no bypass or retry of blocked image upload. Further explicit public-art disclosure approval requested."
+    },
+    "missing": [],
+    "remaining": [
+      "公开GitHub图片披露授权及整批工程发布/读回",
+      "真实浏览器画面/触摸",
+      "真人强度",
+      "全面独立QA",
+      "动画"
+    ]
   }
 }
