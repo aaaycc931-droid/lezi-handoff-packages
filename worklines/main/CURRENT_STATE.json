@@ -201,11 +201,27 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-PARALLEL-INTEGRATION-20261113",
+    "id": "MAIN-RESULT-CONTRACT-COMPATIBILITY-DECISION-20261113",
+    "action": "优先整合两份已接收报告，收敛A/B兼容方案、权威结果产生/记账边界与最小实施范围；不以等全部新验证为前置，不再用UI审计替代解决本共享阻断。",
+    "review": "worklines/main/RESULT_RECONCILIATION_REVIEW.md",
     "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
-    "action": "原生命周期源审查已预派混乱，正式结果候选合同已预派半混乱；主线按可用增量接收、只核关键差分与争议，形成最小实施/兼容方案，不重复两条完整调查。等待真实回传期间可独立推进UI历史修复/原件复核。普通沿当前原子观察合同继续。",
-    "dispatch": "worklines/main/MODE_DISPATCH.json#parallel_execution_20261113",
-    "new_gameplay_or_protocol_approval": false
+    "dispatch": "worklines/main/MODE_DISPATCH.json#evidence_queue_20261113",
+    "wire_protocol_approved": false,
+    "standard_unblock": {
+      "id": "MAIN-H10-PREPARATION-SCOPED-IMPLEMENTATION-20261113",
+      "owner": "main",
+      "status": "SOURCE_AND_SCOPE_REVIEW_RECORDED_IMPLEMENTATION_NOT_STARTED",
+      "depends_on_result_protocol": false,
+      "first_step": "原确认与G1—G5已核；收敛已确认成功路径/精确研究能力/私密投影的最小补丁范围，将未确认采样和失败政策明确隔离，再按既有审批边界实现或提出具体选项。",
+      "not_wait_for": "不以C/H六段验证全部结束、未知结果协议批准、UI历史结案为此项前置",
+      "source": "worklines/main/RESULT_RECONCILIATION_REVIEW.md#普通线h10准备链由主线接手解除阻断",
+      "implementation_authorized_by_this_dispatch": false
+    },
+    "execution_order": [
+      "先交A/B明确兼容取舍与最小实施范围（无需等六段新验证）；遇范围外决定立即给具体选项，不以沉默等待阻断另一项。",
+      "随后落实H10已确认成功路径与精确研究准入的具体实施包；算法/放弃/超时/不足候选等未确认不得暗定。",
+      "新来源发布后直接更新普通TASK触发其定向核验；新结果源发布后直接给混乱/半混乱，不让用户搬运材料。"
+    ]
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -3663,5 +3679,37 @@
     "code_implemented": false,
     "scope_boundaries": "不扩到旧英雄、正式评分、NET、模式开放、合并部署；上线质量目标与发布动作分开",
     "related_existing_work": "旧hero-design的H02/H05继续；三模式既有并行任务继续；UI独立设计及主线历史审查均不取消。"
+  },
+  "evidence_queue_20261113": {
+    "id": "MAIN-PARALLEL-EVIDENCE-QUEUE-20261113",
+    "dispatch": "worklines/main/MODE_DISPATCH.json#evidence_queue_20261113",
+    "review": "worklines/main/RESULT_RECONCILIATION_REVIEW.md",
+    "receiver_read": "UNKNOWN",
+    "actual_runs": 0
+  },
+  "previous_next_before_evidence_queue_20261113": {
+    "id": "MAIN-PARALLEL-INTEGRATION-20261113",
+    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "action": "原生命周期源审查已预派混乱，正式结果候选合同已预派半混乱；主线按可用增量接收、只核关键差分与争议，形成最小实施/兼容方案，不重复两条完整调查。等待真实回传期间可独立推进UI历史修复/原件复核。普通沿当前原子观察合同继续。",
+    "dispatch": "worklines/main/MODE_DISPATCH.json#parallel_execution_20261113",
+    "new_gameplay_or_protocol_approval": false
+  },
+  "hero_pilot_user_start_report_20261113": {
+    "source": "用户本轮明确：已经发送并启动独立设计线",
+    "status": "USER_REPORTED_STARTED",
+    "executor_read": "NOT_CHECKED_THIS_TURN",
+    "design_or_engine_completion": "NOT_CLAIMED"
+  },
+  "standard_h10_unblock_20261113": {
+    "id": "MAIN-H10-PREPARATION-SCOPED-IMPLEMENTATION-20261113",
+    "owner": "main",
+    "status": "SOURCE_AND_SCOPE_REVIEW_RECORDED_IMPLEMENTATION_NOT_STARTED",
+    "depends_on_result_protocol": false,
+    "first_step": "原确认与G1—G5已核；收敛已确认成功路径/精确研究能力/私密投影的最小补丁范围，将未确认采样和失败政策明确隔离，再按既有审批边界实现或提出具体选项。",
+    "not_wait_for": "不以C/H六段验证全部结束、未知结果协议批准、UI历史结案为此项前置",
+    "source": "worklines/main/RESULT_RECONCILIATION_REVIEW.md#普通线h10准备链由主线接手解除阻断",
+    "implementation_authorized_by_this_dispatch": false,
+    "intake": "worklines/main/READ_RECEIPTS.json#standard_h10_intake_20261113",
+    "standard_executor_status": "WAIT_CONCRETE_IMPLEMENTATION_NOT_MAIN_ACK"
   }
 }

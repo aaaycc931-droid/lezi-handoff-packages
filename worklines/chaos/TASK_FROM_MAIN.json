@@ -527,5 +527,91 @@
       "output": "同一报告追加最小验证规格，避免另起重复包"
     }
   },
-  "active_main_dispatch": "parallel_execution_20261113"
+  "active_main_dispatch": "evidence_queue_20261113",
+  "evidence_queue_20261113": {
+    "schema": "lezi.main.delegated_validation.v1",
+    "date_local": "2026-11-13",
+    "issued_by": "main",
+    "source_handoff_head": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc",
+    "authority": {
+      "basis": "承接主线CURRENT_STATE.current_phase_authorization中既有shared technical implementation/draft/research/tests范围，以及prior_engineering_next_action的已准入jieqi离线真实函数来源；本次明确委派其中不改生产代码/协议的验证部分。",
+      "allowed": [
+        "固定PR22生产源的本地离线Node/JVM调用验证",
+        "新建测试、研究驱动、必要测试替身、公开脱敏结果及自身工作线交接",
+        "在自己的新引擎研究分支写这些产物；本线文档按既有授权写交接main",
+        "依据实测新证据修正本线报告，并继续包内未阻断阶段"
+      ],
+      "not_allowed": [
+        "修改src/、web/、android/生产源或package配置；遇生产缺陷报告具体差分需求",
+        "实现/采纳新的A/B协议、账本、线上字段或正式结果API",
+        "运行真实Android/JNI/无线/设备/NET、放开三模式门禁",
+        "评分源/账本/评分校准运行、合并、部署、APK",
+        "借其他支线对main文件写权推导共享代码无限权限"
+      ],
+      "supersedes": "仅对本任务包，覆盖上轮TASK.parallel_execution中的‘不运行引擎/JVM’限制；其余边界保留。不是候选协议批准，也不把主线身份授予执行者。"
+    },
+    "engine": {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "base_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "base_pr": 22,
+      "production_changes": 0,
+      "policy": "按任务给定专属分支；启动核分支HEAD。生产源哈希锁定；如PR22更新先分开固定旧源结果与新差分，不自动合并它线成果。",
+      "branch": "codex/ch-lifecycle-verification-20261113",
+      "allowed_new_paths": [
+        "tests/research/ch-lifecycle-*",
+        "scripts/research/ch-lifecycle-*",
+        "review/ch-lifecycle-validation/*",
+        "docs/research/CH_LIFECYCLE_VALIDATION.md"
+      ]
+    },
+    "handoff": {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "branch": "main",
+      "write_scope": "本线自有产物、CURRENT_STATE、NEXT_ACTIONS、READ_RECEIPTS、RETURN_TO_MAIN；不写main共同调度或另一线"
+    },
+    "execution_policy": {
+      "startup": "先保留未回传成果；读本新任务、两线最新报告及声明的实际调用源码；核本地Node>=24/JDK/Python和仓库读写能力。没有工具能力就报告具体失败，不用模型模拟执行冒充实跑。",
+      "progress": "各阶段有完整证据即可保存增量并直接做下一未阻断阶段，不等主线确认/不要求用户逐项审批；一阶段缺源或失败不阻止其他无依赖阶段。",
+      "no_duplication": "原16JVM/3父控制/8行动3ping、原110/56与935检查复用来源；只因改测试支持/新失败需要复跑直接相关项，不机械全量重跑。",
+      "claims": "真实生产函数＋替身边界、纯模型、源码静态、自然可达及故障注入分别记录；离线队列不证明Android真实调度，局部实验不是独立QA或全模式验收。",
+      "failure": "保留失败/超时/环境缺口，局部测试替身可自行修正；不靠改生产逻辑让测试过，不伪造自然前缀/强制队列逆序。",
+      "publication": "最新父树+expected_sha+force=false，发布后读回；不得覆盖其他分支。记录精确输入源、命令、输出摘要、源哈希、未验范围，公开报告不泄露私有权威包。",
+      "stop": "队列所有有意义阶段已完成、其余均需不可得环境/范围外决策/新生产实现时明确停止并回传。没有无限任务或常驻自动执行承诺。"
+    },
+    "receiver_read": "UNKNOWN",
+    "receiver_execution": "NOT_STARTED_FOR_THIS_PACKAGE",
+    "id": "MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113",
+    "executor": "chaos",
+    "inputs": [
+      "worklines/chaos/CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW_20261113.md全文/W1—W3",
+      "worklines/half_chaos/HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md相关身份/兼容段",
+      "engine:scripts/research/native_send_jvm.py（先核替身真实能力）",
+      "engine:scripts/research/native-send-channel.ts",
+      "engine:scripts/research/bluetooth-receipt-channel.ts",
+      "engine:android/app/src/main/java/com/jieqi/bluetooth/BluetoothGameSession.java",
+      "engine:android/app/src/main/java/com/jieqi/bluetooth/GameWebBridge.java"
+    ],
+    "phases": [
+      {
+        "id": "C1-EOF-RECEIVER",
+        "ready": true,
+        "action": "新增离线接收驱动，编译并调用未修改的生产session/readLoop实际路径，测已公开原newline完整JSON+EOF、同字节+IOException、partial+EOF、完整换行对照。保留真实BufferedReader，JSON/Android替身边界注明；先建立正负解析控制，不能沿用原尾段过滤器代替readLoop。输出实际onMessage提交/执行、断连/错误的因果轨迹。",
+        "success": "拿到实际接收路径结果，而非只再引API文档；若框架只能覆盖读行子层就明确降级且不宣布整条验证完成。"
+      },
+      {
+        "id": "C2-QUEUE-AND-LOCK",
+        "ready_without_main_receipt": true,
+        "action": "对W2补可复现的单io任务/真实锁边界离线排队实验：通过生产host/join/readLoop入口，控制底层流阻塞、EOF/异常与释放。不得反射换writer来当自然竞态；记录所选替身闭锁语义与真实BufferedWriter锁。验证哪些顺序在该模型下不可能、哪些仍待Android/JNI证据。",
+        "success": "支持/排除某个顺序均是有效结果；不能实现真实来源的条件记BLOCKED，不伪造队列越序，不挡C3。"
+      },
+      {
+        "id": "C3-WEB-BOUNDARY",
+        "ready_without_main_receipt": true,
+        "action": "将C1已证的生产接收回调/有效帧交到现有真实Web函数和jieqi房间驱动，核不自动重发、unknown与权威选择分离、原回调与UI清等待。队列只运行来源允许顺序，无法证明重连自然顺序就限定为记录回放。复用原公开hero选择fixture，不外推全部H15/H11/终局动作。",
+        "success": "区分生产接收修补后的新证据与旧N转接结果，列仍需真实设备的剩余问题；不实现新结果协议。"
+      }
+    ],
+    "follow_up": "有新实测失败可在以上三阶段内增加最小正负控制/修复测试驱动并复验；不得无限扩大随机组合。全部结束直接回传，后续需要新方案则等主线实质输入。",
+    "output": "worklines/chaos/CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md + 专属引擎分支源码/命令/结果索引；现有报告只加有源更正，历史结果不删除。"
+  }
 }

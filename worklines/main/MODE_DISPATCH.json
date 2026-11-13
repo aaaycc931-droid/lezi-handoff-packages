@@ -1706,5 +1706,86 @@
     "code_implemented": false,
     "scope_boundaries": "不扩到旧英雄、正式评分、NET、模式开放、合并部署；上线质量目标与发布动作分开",
     "related_existing_work": "旧hero-design的H02/H05继续；三模式既有并行任务继续；UI独立设计及主线历史审查均不取消。"
+  },
+  "evidence_queue_20261113": {
+    "id": "MAIN-PARALLEL-EVIDENCE-QUEUE-20261113",
+    "source_head": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc",
+    "status": "ISSUED_BOUNDED_EXECUTABLE_VALIDATION_NOT_INFINITE_WORK",
+    "purpose": "原文档队列已完成；将不依赖A/B选择的现有生产源验证交两线，避免再生成重复报告。",
+    "tasks": {
+      "chaos": {
+        "id": "MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113",
+        "path": "worklines/chaos/TASK_FROM_MAIN.json#evidence_queue_20261113",
+        "engine_branch": "codex/ch-lifecycle-verification-20261113",
+        "stages": [
+          "C1生产接收EOF",
+          "C2队列/锁",
+          "C3真实Web边界"
+        ],
+        "receiver_read": "UNKNOWN",
+        "runs": 0
+      },
+      "half_chaos": {
+        "id": "MAIN-HC-AUTHORITY-RESULT-EVIDENCE-20261113",
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json#evidence_queue_20261113",
+        "engine_branch": "codex/hc-result-evidence-20261113",
+        "stages": [
+          "H1正常返回不等于接受",
+          "H2终局/投影失败的提交证据",
+          "H3实测驱动候选修订"
+        ],
+        "receiver_read": "UNKNOWN",
+        "runs": 0
+      },
+      "standard": {
+        "id": "MAIN-STD-H10-UNBLOCK-RECEPTION-20261113",
+        "path": "worklines/standard/TASK_FROM_MAIN.json#unblock_coordination_20261113",
+        "status": "WAIT_CONCRETE_IMPLEMENTATION_NOT_RECEIPT",
+        "independent_queue": "NONE_IDENTIFIED_IN_CURRENT_H10_PACKAGE",
+        "receiver_read": "UNKNOWN",
+        "runs": 0
+      }
+    },
+    "main": {
+      "responsibility": "优先整合两份已接收报告，收敛A/B兼容方案、权威结果产生/记账边界与最小实施范围；不以等全部新验证为前置，不再用UI审计替代解决本共享阻断。",
+      "next_id": "MAIN-RESULT-CONTRACT-COMPATIBILITY-DECISION-20261113",
+      "needs_specific_review": [
+        "A hello命名空间与B v3的真实变更面；两者均不是已获批准的线上变化",
+        "先于views的权威结果分类/提交边界及未覆盖unknown",
+        "身份/代际、内容绑定、保留/重启/再战边界",
+        "在现有审批边界内给明确方案；需要范围外决定时提供具体选项"
+      ],
+      "review": "worklines/main/RESULT_RECONCILIATION_REVIEW.md",
+      "standard_unblock": {
+        "id": "MAIN-H10-PREPARATION-SCOPED-IMPLEMENTATION-20261113",
+        "owner": "main",
+        "status": "SOURCE_AND_SCOPE_REVIEW_RECORDED_IMPLEMENTATION_NOT_STARTED",
+        "depends_on_result_protocol": false,
+        "first_step": "原确认与G1—G5已核；收敛已确认成功路径/精确研究能力/私密投影的最小补丁范围，将未确认采样和失败政策明确隔离，再按既有审批边界实现或提出具体选项。",
+        "not_wait_for": "不以C/H六段验证全部结束、未知结果协议批准、UI历史结案为此项前置",
+        "source": "worklines/main/RESULT_RECONCILIATION_REVIEW.md#普通线h10准备链由主线接手解除阻断",
+        "implementation_authorized_by_this_dispatch": false
+      },
+      "execution_order": [
+        "先交A/B明确兼容取舍与最小实施范围（无需等六段新验证）；遇范围外决定立即给具体选项，不以沉默等待阻断另一项。",
+        "随后落实H10已确认成功路径与精确研究准入的具体实施包；算法/放弃/超时/不足候选等未确认不得暗定。",
+        "新来源发布后直接更新普通TASK触发其定向核验；新结果源发布后直接给混乱/半混乱，不让用户搬运材料。"
+      ]
+    },
+    "execution": "本轮主线明确分派继承的受控离线研究/测试范围；每线只写新测试分支及本线文档，生产源保持不变。每段保存即可继续下一无依赖段；不需要逐段等主线或用户审批。正常继续由已有对话接续，无后台常驻。",
+    "stop": "阶段全部完成或剩余均需范围外实现/真实环境时停止回传；绝不承诺无限运行，不制造重复检查。main写入授权不等于引擎无限权限。",
+    "other_lines": {
+      "standard": "本轮H10准备调用链及原子合同已接收；现有独立准备工作完成，WAIT_CONCRETE_IMPLEMENTATION，不再要求重复报告。主线承担H10准备成功路径与精确研究准入的实施范围收敛，普通线收到具体新来源后再接续。",
+      "hero_pilot": "用户报告已启动；保护其专属分支，不派本两线写其代码，不伪填试点执行回执",
+      "hero_design": "保持H02/H05新进展",
+      "visual": "独立分支保持",
+      "UI_history": "主线未完审查保留为次级，不称已结案"
+    },
+    "frozen": {
+      "scoring": true,
+      "NET": true,
+      "mode_gates": true,
+      "merge_deploy_APK_authorized": false
+    }
   }
 }

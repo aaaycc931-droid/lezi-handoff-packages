@@ -4920,5 +4920,64 @@
       "所有人格偏好已知",
       "其他支线新回传自动采用"
     ]
+  },
+  "evidence_queue_20261113": {
+    "id": "MAIN-PARALLEL-EVIDENCE-QUEUE-20261113",
+    "dispatch": "worklines/main/MODE_DISPATCH.json#evidence_queue_20261113",
+    "review": "worklines/main/RESULT_RECONCILIATION_REVIEW.md",
+    "receiver_read": "UNKNOWN",
+    "actual_runs": 0
+  },
+  "result_reconciliation_intake_20261113": {
+    "id": "MAIN-RESULT-RECONCILIATION-INTAKE-20261113",
+    "source_commit": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc",
+    "read_scope": [
+      "CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW_20261113.md全文",
+      "HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md全文（分段读取）",
+      "两线CURRENT_STATE当前next/本轮交付对象，主线current_phase_authorization/prior_engineering_next_action及现行派发",
+      "固定引擎71145df的native-send-channel.ts全文、bluetooth-host-room.ts全文、native_send_jvm.py开头替身/注入范围约前8500字符；未审完全部Java/JS/测试实现"
+    ],
+    "adopted": [
+      "两条线预派两步均已完成，不再以‘等待主线接收’为独立任务",
+      "生命周期来源约束与W1—W3未运行规格作为主线验证输入",
+      "结果契约的四层状态分离、当前结果证据缺口与A/B差分作为候选输入",
+      "旧newline转接器尾段丢弃与生产readLine可能不等价，需补有界实际接收验证",
+      "原生Handler替身postDelayed未执行，既有结果不能证明真实自动重连"
+    ],
+    "not_adopted": [
+      "A或B线上协议已批准",
+      "正式结果账本已实现",
+      "候选18例/W1—W3运行通过",
+      "Android/radio/真机/独立QA或全模式验收"
+    ],
+    "new_engine_runs_this_main_turn": 0,
+    "source_reviews_are_not_independent_QA": true
+  },
+  "standard_h10_intake_20261113": {
+    "id": "MAIN-STD-H10-SOURCE-INTAKE-20261113",
+    "source_commit": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc",
+    "engine_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "read_scope": [
+      "普通START_HERE最新头部/CURRENT_STATE最新完成与下一任务/RETURN_TO_MAIN三个11-13增量/NEXT_ACTIONS.first；未声称重读全部历史收束",
+      "reviews/STD_H10_PREPARATION_CALLER_TRACE_20261113.md与specs同名json全文",
+      "reviews/STD_H10_M04_ATOMIC_OBSERVATION_REVIEW_20261113.md与specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json全文",
+      "work/LEZI_STD_DESIGN_03_WORKING_20261014.md第394—465行原确认/原话和作用域；CONFIRMATION_REGISTER H10匹配记录",
+      "固定engine research-source-context.ts全文；hero-progress.ts 77—90；remote-room.ts 615—643/1578—1585；game.ts 397—429；PR22当前open/draft"
+    ],
+    "adopted": [
+      "准备队列/configure/载荷缺H10，现有精确普通tuple不含H02/H10/M04，受限闭合公共路径family亦不覆盖H10：已定向代码核实",
+      "T0准备期立即成功、首次三选一、T1—T7禁二次/T8起资格、开局定位本人可见且成功即清除：恢复原确认与范围，不重问、不偷换旧正式回合shadow",
+      "G1—G5及O0—O9作为主线实施/验证输入；R1/R2仅静态未复现风险，不记已证bug",
+      "普通该任务包已无未完成独立准备；不重复8手前缀/原子报告/调用链，不用新主线回执当实质解锁"
+    ],
+    "not_adopted": [
+      "未将H10三候选算法、不足/无候选、准备放弃/超时/候选失格设为已批准",
+      "未把风V3.1整体候选、新H02暗影步或其他独立设计迁入本旧刺杀来源",
+      "未扩大模式门禁、能力或生产源码；未把G4准入当产品开放",
+      "未运行G1—G5/O0—O9、未确认自然前缀/客户端交付或R1/R2故障；NG11仍OPEN"
+    ],
+    "execution": 0,
+    "production_changes": 0,
+    "branch_read_receipts_untouched": true
   }
 }

@@ -1,3 +1,6 @@
+【2026-11-13 新主线明确委派：有界离线验证队列】
+此前文档/后续复核两步主线已实际接收，当前优先TASK_FROM_MAIN.json#evidence_queue_20261113（MAIN-HC-AUTHORITY-RESULT-EVIDENCE-20261113），覆盖下方“所有后续只能等主线”的旧状态。仅该新任务允许固定PR22生产源的受控离线测试，写自己的引擎研究分支codex/hc-result-evidence-20261113和本线文档；不改生产代码/协议/模式/评分/NET。每段交付后可直接推进下一无依赖段；缺环境如实记阻断，全部有价值阶段耗尽即停止，不保证无限跑。主线接收范围见../main/RESULT_RECONCILIATION_REVIEW.md；本线实际新任务已读/执行由本线自己填。先保护未回传成果与并发最新HEAD。
+
 【2026-11-13 半混乱 r57｜预派结果合同与后续失败复核已交付】
 已实际接收MAIN-DELEGATE-HC-RESULT-CONTRACT-20261113并完成follow_on HC-RESULT-CONTRACT-FAILURE-REVIEW；详HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md。固定PR22 71145df仍open draft；只读源码提出A：v2 hello协商扩展，B：协商后v3专用消息；两者均候选未批准/未实现。记录actor/原传输与动作ID/载荷/权威实例/局次/连接身份，严格只查询不重执行；正常返回不一律accepted，旧ID表不证明完整结果，再战roomId复用，旧桥sendChecked不证明协议能力。3原请求索引对应、18失败案例静态复核完成；无新引擎/Android/NET运行或共享代码修改。主线HC56限定接收已核；r57主线是否已读/采用未知。下一核主线具体方案取舍/混乱生命周期增量/实际差分，针对性修订；不重复110/56矩阵。评分冻结、NET暂停、featuresReady=false、原56/64完整验收仍未完成。本轮阶段检查点，不自动关闭对话。下方派发及旧等待按历史保留。
 

@@ -83,5 +83,90 @@
       "output": "同一候选报告追加反例检查及待主线取舍"
     }
   },
-  "active_main_dispatch": "parallel_execution_20261113"
+  "active_main_dispatch": "evidence_queue_20261113",
+  "evidence_queue_20261113": {
+    "schema": "lezi.main.delegated_validation.v1",
+    "date_local": "2026-11-13",
+    "issued_by": "main",
+    "source_handoff_head": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc",
+    "authority": {
+      "basis": "承接主线CURRENT_STATE.current_phase_authorization中既有shared technical implementation/draft/research/tests范围，以及prior_engineering_next_action的已准入jieqi离线真实函数来源；本次明确委派其中不改生产代码/协议的验证部分。",
+      "allowed": [
+        "固定PR22生产源的本地离线Node/JVM调用验证",
+        "新建测试、研究驱动、必要测试替身、公开脱敏结果及自身工作线交接",
+        "在自己的新引擎研究分支写这些产物；本线文档按既有授权写交接main",
+        "依据实测新证据修正本线报告，并继续包内未阻断阶段"
+      ],
+      "not_allowed": [
+        "修改src/、web/、android/生产源或package配置；遇生产缺陷报告具体差分需求",
+        "实现/采纳新的A/B协议、账本、线上字段或正式结果API",
+        "运行真实Android/JNI/无线/设备/NET、放开三模式门禁",
+        "评分源/账本/评分校准运行、合并、部署、APK",
+        "借其他支线对main文件写权推导共享代码无限权限"
+      ],
+      "supersedes": "仅对本任务包，覆盖上轮TASK.parallel_execution中的‘不运行引擎/JVM’限制；其余边界保留。不是候选协议批准，也不把主线身份授予执行者。"
+    },
+    "engine": {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "base_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "base_pr": 22,
+      "production_changes": 0,
+      "policy": "按任务给定专属分支；启动核分支HEAD。生产源哈希锁定；如PR22更新先分开固定旧源结果与新差分，不自动合并它线成果。",
+      "branch": "codex/hc-result-evidence-20261113",
+      "allowed_new_paths": [
+        "tests/research/hc-result-*",
+        "scripts/research/hc-result-*",
+        "review/hc-result-evidence/*",
+        "docs/research/HC_RESULT_EVIDENCE.md"
+      ]
+    },
+    "handoff": {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "branch": "main",
+      "write_scope": "本线自有产物、CURRENT_STATE、NEXT_ACTIONS、READ_RECEIPTS、RETURN_TO_MAIN；不写main共同调度或另一线"
+    },
+    "execution_policy": {
+      "startup": "先保留未回传成果；读本新任务、两线最新报告及声明的实际调用源码；核本地Node>=24/JDK/Python和仓库读写能力。没有工具能力就报告具体失败，不用模型模拟执行冒充实跑。",
+      "progress": "各阶段有完整证据即可保存增量并直接做下一未阻断阶段，不等主线确认/不要求用户逐项审批；一阶段缺源或失败不阻止其他无依赖阶段。",
+      "no_duplication": "原16JVM/3父控制/8行动3ping、原110/56与935检查复用来源；只因改测试支持/新失败需要复跑直接相关项，不机械全量重跑。",
+      "claims": "真实生产函数＋替身边界、纯模型、源码静态、自然可达及故障注入分别记录；离线队列不证明Android真实调度，局部实验不是独立QA或全模式验收。",
+      "failure": "保留失败/超时/环境缺口，局部测试替身可自行修正；不靠改生产逻辑让测试过，不伪造自然前缀/强制队列逆序。",
+      "publication": "最新父树+expected_sha+force=false，发布后读回；不得覆盖其他分支。记录精确输入源、命令、输出摘要、源哈希、未验范围，公开报告不泄露私有权威包。",
+      "stop": "队列所有有意义阶段已完成、其余均需不可得环境/范围外决策/新生产实现时明确停止并回传。没有无限任务或常驻自动执行承诺。"
+    },
+    "receiver_read": "UNKNOWN",
+    "receiver_execution": "NOT_STARTED_FOR_THIS_PACKAGE",
+    "id": "MAIN-HC-AUTHORITY-RESULT-EVIDENCE-20261113",
+    "executor": "half_chaos",
+    "inputs": [
+      "worklines/half_chaos/HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md全文",
+      "worklines/chaos/CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW_20261113.md全文（本次已有新源，须实际核其对旧候选的影响）",
+      "engine:src/bluetooth-host-room.ts",
+      "engine:src/remote-room.ts",
+      "engine:scripts/research/bluetooth-receipt-channel.ts及已有公开fixture",
+      "engine:与所选动作相符的现有tests/来源；不得改半混乱/普通传输门禁"
+    ],
+    "phases": [
+      {
+        "id": "H1-NORMAL-RETURN-NOT-ACCEPTED",
+        "ready": true,
+        "action": "在现有jieqi真实房间/调用方路径补源码报告的‘正常返回但原命令未执行’实证：选择已有公开可达hero/RPS到期或准备已完成分支，锁定真实输入时钟/身份，比较期限前/到/后或首次/已完成调用。记录原命令效果、phase/revision/事件/RNG；不要用room changed/duplicate=false代替接受证明。",
+        "success": "至少形成有原始来源的正控制与反例；错误类型/分支据真实输出，不能发明新错误码。"
+      },
+      {
+        "id": "H2-COMMIT-THEN-TERMINAL-OR-VIEW",
+        "ready_without_main_receipt": true,
+        "action": "验证A/B共同依赖的提交边界：现有合法终局来源到finished后再次同ID请求、原提交成功而后续views/序列化故障的区分。优先用已有真实fixture；没有已证吃子终局前缀可先用现有合法resign/forfeit路线，但标动作类别不外推吃子。投影故障仅测试边界注入且单列，不声称自然生产故障；只允许测试驱动注入，生产源不改。",
+        "success": "分别给权威已提交事实、后续拒绝/同步失败、哪些结果目前无法由API可靠导出；新拒绝不能倒推旧行动结果。"
+      },
+      {
+        "id": "H3-CROSS-SOURCE-CONTRACT-DELTA",
+        "ready_without_main_receipt": true,
+        "action": "用混乱现有报告和H1/H2实测修订候选合同的可证明覆盖：连接代际/JSON EOF不保证/无动作ID/actor/再战，逐条标A与B共有、方案特有、必须保持unknown。C1—C3未回传也可先使用当前已读源，不假定其成功。将结果关联到HC56的P0/P1和三个公开代表请求的未来凭据要求，不重跑或伪造原半混乱客户端110刺激。",
+        "success": "交主线的是具体已证产生点/不可证点及最小改动需求，不重复18条静态自审；仍不选A/B、不实现账本或线上查询。"
+      }
+    ],
+    "follow_up": "针对测试暴露的具体新差分修候选/加最小对照即可；无新证据不重复自审。半混乱本包是主线委托共享jieqi源验证，绝不算半混乱产品准入或56/64验收。",
+    "output": "worklines/half_chaos/HC_AUTHORITY_RESULT_EVIDENCE_20261113.md + 专属引擎分支源码/命令/结果；修订候选时保留版本和状态。"
+  }
 }
