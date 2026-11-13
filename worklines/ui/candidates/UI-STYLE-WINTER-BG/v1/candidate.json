@@ -2,7 +2,7 @@
   "schema": "lezi.ui.new_style_candidate.v1",
   "id": "UI-STYLE-WINTER-BG-v1",
   "date_local": "2026-11-13",
-  "status": "candidate_created_pending_user_review",
+  "status": "visual_style_accepted_only",
   "scope": "new_style_background_exploration_only",
   "subject": "冬季雪山、红梅、小型荒野驿站的竖版UI背景风格样图",
   "selected_by": "assistant_for_this_turn_as_small_reviewable_sample",
@@ -48,7 +48,7 @@
     "arena": false,
     "dominant_palette": "black_white_cool_gray_with_red_plum",
     "observed": "连贯山石笔势，雪山远近层次，左侧红梅、右侧小驿站，明亮留白；图中未加入竞技场或世界观新设施。",
-    "user_aesthetic_approval": "pending"
+    "user_aesthetic_approval": "visual_style_accepted"
   },
   "persistence": {
     "github_png_uploaded": false,
@@ -56,12 +56,24 @@
     "library_file_id": "not_yet_returned",
     "source_prompt_and_metadata_in_repository": true
   },
-  "approval_scope": "none; exploratory candidate only",
+  "approval_scope": "visual_style_only; no_complete_page_or_production_background_approval",
   "replaces_legacy_approved_image": false,
   "legacy_UI_status": "retained_historical_baselines; active_static_progression_on_hold",
   "runtime": "not_run",
   "game_code_changed": false,
   "scoring": "frozen",
   "NET": "paused",
-  "next_action": "用户评价这一张新风格样图；按具体反馈继续一次一图，不自动回到B10或批量替换旧界面。"
+  "next_action": "已作为UI-HOME-NEWSTYLE-v1画风参考；下一步用户审阅完整首页初稿。",
+  "user_style_acceptance": {
+    "record_id": "UI-WINTER-STYLE-ACCEPTANCE-20261113",
+    "date_local": "2026-11-13",
+    "candidate": "UI-STYLE-WINTER-BG-v1",
+    "candidate_record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+    "sha256": "bb060649d872cdf94ce80f1ec4b5988e0516bcfaadc6d268ec54da82caa37509",
+    "user_quote": "画风可以，我认为下一步我们应该确定一个游戏里面具体的UI内容了，我们先确定一个页面，然后生成基本我来看有什么问题，满不满意",
+    "accepted_scope": "visual_style_only",
+    "full_page_approved": false,
+    "production_background_locked": false,
+    "next_authorized_scope": "选择一个具体游戏页面并生成一张完整基础UI初稿供用户评价"
+  }
 }

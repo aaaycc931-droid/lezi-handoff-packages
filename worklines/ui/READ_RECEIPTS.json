@@ -280,5 +280,56 @@
       ],
       "adoption": "仅核对其路由/并发字段以保留；不冒称本线看过新图或审核其画风。"
     }
+  },
+  "new_style_homepage_20261113": {
+    "record_id": "UI-HOME-NEWSTYLE-FIRST-PAGE-20261113",
+    "receiver": "UI_image_design_dialogue",
+    "date_local": "2026-11-13",
+    "source_commit": "75ae5b9c18778aa0d082d31cde82051adf712111",
+    "actual_read_sources": [
+      "START_HERE.txt",
+      "CURRENT_STATE.json",
+      "APPROVAL_REGISTER.json",
+      "APPROVED_INDEX.json",
+      "UI_NEXT_TASKS.json",
+      "RETURN_TO_MAIN.json",
+      "READ_RECEIPTS.json",
+      "NEW_STYLE_UI_RESUME.md",
+      "candidates/UI-STYLE-WINTER-BG/v1/candidate.json"
+    ],
+    "content_audit": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "ref": "1f6c1635ad756eefc871f2075883bf26b82176ea",
+      "paths": [
+        "web/index.html",
+        "web/home-menu.css",
+        "web/app.ts",
+        "web/assets/menu-original/README.md"
+      ],
+      "verification_scope": "历史首页内容和按钮行为映射，不声明当前主线运行验收。"
+    },
+    "actual_visual_reads": [
+      "UI-STYLE-WINTER-BG-v1 original",
+      "approved-home-original",
+      "UI-HOME-NEWSTYLE-v1 generated result"
+    ],
+    "adopted": [
+      "用户认可冬季样图画风，完整首页尚未审批。",
+      "由助手选择首页作首个具体页面，保留原有标题、作者署名、四菜单入口和右上设置；联机保持不可用。",
+      "本轮生成一张完整初稿，旧B1-B9/B10身份及旧首页原图/字体例外均保留。"
+    ],
+    "concurrent_preservation": {
+      "base_commit": "75ae5b9c18778aa0d082d31cde82051adf712111",
+      "protected_records": [
+        "world_lore_daily_life_batch10_20261113",
+        "world_lore_society_batch10_20261113",
+        "world_visual_delegated_batch10_20261113"
+      ],
+      "scope": "只核对字段保存，不把背景故事作为UI功能或图像需求。"
+    },
+    "actual_generated_count": 1,
+    "runtime": "not_run",
+    "main_receiver_read": "UNKNOWN",
+    "main_receiver_adoption": "UNKNOWN"
   }
 }

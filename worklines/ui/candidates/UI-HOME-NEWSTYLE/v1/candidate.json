@@ -1,0 +1,145 @@
+{
+  "schema": "lezi.ui.new_style_page_candidate.v1",
+  "id": "UI-HOME-NEWSTYLE-v1",
+  "date_local": "2026-11-13",
+  "status": "candidate_created_pending_user_review",
+  "scope": "new_style_homepage_full_UI_mockup",
+  "subject": "乐子象棋首页／主菜单：新画风完整初稿",
+  "source_branch": "ui/restart-asof-20261104-1119",
+  "source_commit": "75ae5b9c18778aa0d082d31cde82051adf712111",
+  "user_request": "画风可以，我认为下一步我们应该确定一个游戏里面具体的UI内容了，我们先确定一个页面，然后生成基本我来看有什么问题，满不满意",
+  "page_selection": {
+    "selected_by": "assistant_for_this_turn_as_first_concrete_screen",
+    "user_requested_one_concrete_page": true,
+    "specific_page_was_previously_user_approved": false,
+    "reason": "首页能同时检查标题、按钮、字体、背景及操作层级。"
+  },
+  "style_acceptance": {
+    "record_id": "UI-WINTER-STYLE-ACCEPTANCE-20261113",
+    "date_local": "2026-11-13",
+    "candidate": "UI-STYLE-WINTER-BG-v1",
+    "candidate_record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+    "sha256": "bb060649d872cdf94ce80f1ec4b5988e0516bcfaadc6d268ec54da82caa37509",
+    "user_quote": "画风可以，我认为下一步我们应该确定一个游戏里面具体的UI内容了，我们先确定一个页面，然后生成基本我来看有什么问题，满不满意",
+    "accepted_scope": "visual_style_only",
+    "full_page_approved": false,
+    "production_background_locked": false,
+    "next_authorized_scope": "选择一个具体游戏页面并生成一张完整基础UI初稿供用户评价"
+  },
+  "reference_image": {
+    "candidate": "UI-STYLE-WINTER-BG-v1",
+    "filename": "exec-2c297149-8569-40cb-a48b-46b6ff4b5fab.png",
+    "sha256": "bb060649d872cdf94ce80f1ec4b5988e0516bcfaadc6d268ec54da82caa37509",
+    "width": 941,
+    "height": 1672,
+    "actual_visually_inspected": true,
+    "usage": "保留新画风，允许为首页控件调整景物构图；不是对旧批准首页原图的覆盖。"
+  },
+  "historical_home_reference": {
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "ref": "75ae5b9c18778aa0d082d31cde82051adf712111",
+    "path": "assets/ui/5c0dae37bb4dd84054d566c5ae5da98545ca73f23544ded5090ec80f1fbe211e.png",
+    "sha256": "5c0dae37bb4dd84054d566c5ae5da98545ca73f23544ded5090ec80f1fbe211e",
+    "actual_visually_inspected": true,
+    "passed_to_image_generation": false,
+    "legacy_original_and_typography_exception_preserved": true
+  },
+  "content_source": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "ref": "1f6c1635ad756eefc871f2075883bf26b82176ea",
+    "paths": [
+      "web/index.html",
+      "web/home-menu.css",
+      "web/app.ts",
+      "web/assets/menu-original/README.md"
+    ],
+    "verification_scope": "历史首页内容和按钮行为映射，不声明当前主线运行验收。"
+  },
+  "contents": [
+    {
+      "role": "title",
+      "text": "乐子象棋"
+    },
+    {
+      "role": "author",
+      "text": "作者：流风舞影"
+    },
+    {
+      "role": "primary_button",
+      "text": "本机双人",
+      "state": "available"
+    },
+    {
+      "role": "secondary_button",
+      "text": "蓝牙对局",
+      "state": "available"
+    },
+    {
+      "role": "button",
+      "text": "联机对战",
+      "state": "unavailable_gray"
+    },
+    {
+      "role": "auxiliary_button",
+      "text": "玩法说明",
+      "state": "available"
+    },
+    {
+      "role": "settings",
+      "presentation": "top_right_gear_icon",
+      "state": "available"
+    }
+  ],
+  "prompt_path": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/prompt.txt",
+  "generation": {
+    "tool": "image_gen",
+    "image_count": 1,
+    "reference_mode": "reference_based_complete_UI_mockup",
+    "transparent_background": false
+  },
+  "result": {
+    "filename": "exec-aaf87eff-ff47-47e8-90c1-49eb1565b7f8.png",
+    "bytes": 2374491,
+    "sha256": "2534755da055423f1802241a87d2b0b2673c8247b688d41ce5650d93fcf22080",
+    "width": 981,
+    "height": 1602,
+    "mode": "RGB",
+    "format": "PNG"
+  },
+  "presentation": "image_generation_result_displayed_in_this_conversation",
+  "visual_review": {
+    "actual_result_inspected": true,
+    "exact_required_texts_present": true,
+    "menu_buttons_present": 4,
+    "settings_gear_present": true,
+    "online_battle_visibly_disabled": true,
+    "arena": false,
+    "characters": 0,
+    "unrequested_feature_entries": false,
+    "observed": "雪山红梅、右侧小客栈；大黑色行楷标题和小署名；主按钮黑底白字，次按钮浅底黑边，联机按钮灰显，说明按钮较小；标题较醒目且留有中部景物空间。",
+    "user_page_approval": "pending",
+    "canvas_note": "本轮生成原图981×1602，属于布局/风格审阅稿；未声明匹配历史941×1672生产画布或完成设备适配。",
+    "secondary_readonly_audit": {
+      "required_texts_verified": true,
+      "menu_and_settings_complete": true,
+      "online_disabled_verified": true,
+      "no_extra_feature_entries": true,
+      "reviewable_detail": "设置齿轮较规整、实心，可由用户评价是否需要更统一的毛笔边缘。"
+    }
+  },
+  "persistence": {
+    "github_png_uploaded": false,
+    "generated_image_platform_autosave": "handled_by_platform_at_turn_commit",
+    "library_file_id": "not_yet_returned",
+    "source_prompt_and_metadata_in_repository": true,
+    "editable_layered_source_created": false
+  },
+  "approval_scope": "none_for_this_complete_homepage; background_visual_style_accepted_separately",
+  "replaces_legacy_approved_image": false,
+  "game_code_changed": false,
+  "runtime": "not_run",
+  "legacy_UI_status": "B1-B9 historical approvals retained; B10 pending and on hold; not discarded",
+  "scoring": "frozen",
+  "NET": "paused",
+  "next_action": "用户审阅这一张新画风首页完整初稿，反馈标题、按钮样式、布局和背景搭配；根据具体反馈一次一图迭代，页面尚未批准，不自动推进其它页面。"
+}

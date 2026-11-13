@@ -116,7 +116,7 @@
     }
   },
   "approval_changes": 1,
-  "status": "NEW_STYLE_UI_BACKGROUND_CANDIDATE_PENDING_REVIEW",
+  "status": "NEW_STYLE_UI_HOME_CANDIDATE_PENDING_REVIEW",
   "paused_by_user": false,
   "pause_scope": null,
   "automatic_resume_scheduled": false,
@@ -759,10 +759,10 @@
   "world_lore_next_action": "展示第三批生活与往来十项结果，接收用户反馈或下一任务；本批不自动扩展第11项。",
   "status_scope": "original_game_UI_images; narrative fields retain their separate scope",
   "active_ui_image_task": {
-    "id": "UI-STYLE-WINTER-BG-v1",
+    "id": "UI-HOME-NEWSTYLE-v1",
     "status": "candidate_created_pending_user_review",
-    "record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
-    "next_action": "用户评价这一张新风格样图；按具体反馈继续一次一图，不自动回到B10或批量替换旧界面。"
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json",
+    "next_action": "用户审阅这一张新画风首页完整初稿，反馈标题、按钮样式、布局和背景搭配；根据具体反馈一次一图迭代，页面尚未批准，不自动推进其它页面。"
   },
   "new_style_ui_resume_20261113": {
     "record_id": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113",
@@ -813,7 +813,10 @@
     "candidate_record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
     "generation_completed": true,
     "actual_generated_count": 1,
-    "source_head_before_write": "bd8ab26995421f5963f27b504571a33ffea18a25"
+    "source_head_before_write": "bd8ab26995421f5963f27b504571a33ffea18a25",
+    "followup_record": "UI-HOME-NEWSTYLE-FIRST-PAGE-20261113",
+    "winter_background_style_accepted": true,
+    "next_action": "用户审阅这一张新画风首页完整初稿，反馈标题、按钮样式、布局和背景搭配；根据具体反馈一次一图迭代，页面尚未批准，不自动推进其它页面。"
   },
   "world_lore_daily_life_batch10_20261113": {
     "record_id": "UI-WORLD-LORE-DAILY-LIFE-BATCH10-20261113",
@@ -834,5 +837,43 @@
     "artwork_generated": false,
     "game_code_changed": false,
     "official_game_rules_changed": false
+  },
+  "new_style_homepage_20261113": {
+    "record_id": "UI-HOME-NEWSTYLE-FIRST-PAGE-20261113",
+    "date_local": "2026-11-13",
+    "source_commit": "75ae5b9c18778aa0d082d31cde82051adf712111",
+    "user_quote": "画风可以，我认为下一步我们应该确定一个游戏里面具体的UI内容了，我们先确定一个页面，然后生成基本我来看有什么问题，满不满意",
+    "style_acceptance": {
+      "record_id": "UI-WINTER-STYLE-ACCEPTANCE-20261113",
+      "date_local": "2026-11-13",
+      "candidate": "UI-STYLE-WINTER-BG-v1",
+      "candidate_record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+      "sha256": "bb060649d872cdf94ce80f1ec4b5988e0516bcfaadc6d268ec54da82caa37509",
+      "user_quote": "画风可以，我认为下一步我们应该确定一个游戏里面具体的UI内容了，我们先确定一个页面，然后生成基本我来看有什么问题，满不满意",
+      "accepted_scope": "visual_style_only",
+      "full_page_approved": false,
+      "production_background_locked": false,
+      "next_authorized_scope": "选择一个具体游戏页面并生成一张完整基础UI初稿供用户评价"
+    },
+    "page_selection": {
+      "selected_by": "assistant_for_this_turn_as_first_concrete_screen",
+      "user_requested_one_concrete_page": true,
+      "specific_page_was_previously_user_approved": false,
+      "reason": "首页能同时检查标题、按钮、字体、背景及操作层级。"
+    },
+    "candidate": "UI-HOME-NEWSTYLE-v1",
+    "candidate_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json",
+    "candidate_status": "candidate_created_pending_user_review",
+    "actual_generated_count": 1,
+    "full_page_user_approved": false,
+    "background_style_accepted": true,
+    "legacy_approvals_and_sources_preserved": true,
+    "old_home_exception_preserved": true,
+    "narrative_scope_preserved": true,
+    "arena_concept": false,
+    "game_code_changed": false,
+    "next_action": "用户审阅这一张新画风首页完整初稿，反馈标题、按钮样式、布局和背景搭配；根据具体反馈一次一图迭代，页面尚未批准，不自动推进其它页面。",
+    "main_receiver_read": "UNKNOWN",
+    "main_receiver_adoption": "UNKNOWN"
   }
 }

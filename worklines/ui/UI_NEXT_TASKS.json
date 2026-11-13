@@ -4,11 +4,11 @@
     {
       "id": "UI-STYLE-001",
       "status": "candidate_created_pending_user_review",
-      "work": "承接11-08选定新水墨画风，一次一张制作与审阅探索图",
-      "current_item": "UI-STYLE-WINTER-BG-v1",
-      "deliverable": "一张冬季UI背景风格样图",
-      "record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
-      "acceptance": "用户具体评价画风；不自动替换旧批准UI、不混入竞技场或正式英雄身份"
+      "work": "以已获认可的新画风制作具体游戏页面，一次一张审阅",
+      "current_item": "UI-HOME-NEWSTYLE-v1",
+      "deliverable": "一张游戏首页／主菜单完整UI初稿",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json",
+      "acceptance": "用户评价具体页面的标题、字体、按钮、布局与背景搭配；画风认可不等于完整页面批准。"
     },
     {
       "id": "UI-001",
@@ -81,18 +81,27 @@
   "planned_tasks_are_not_completed_designs": true,
   "snapshot_date": "2026-11-13",
   "paused_by_user": false,
-  "resume_item": "UI-STYLE-WINTER-BG-v1",
+  "resume_item": "UI-HOME-NEWSTYLE-v1",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
   "handoff_requested": true,
   "automatic_resume_scheduled": false,
   "next_queue": [
     {
+      "item": "UI-HOME-NEWSTYLE-v1",
+      "state": "乐子象棋首页／主菜单：新画风完整初稿",
+      "status": "candidate_created_pending_user_review",
+      "scope": "new_style_homepage_full_UI_mockup",
+      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json"
+    },
+    {
       "item": "UI-STYLE-WINTER-BG-v1",
       "state": "冬季雪山、红梅、小型荒野驿站的竖版UI背景风格样图",
-      "status": "candidate_created_pending_user_review",
+      "status": "visual_style_accepted_only",
       "scope": "new_style_background_exploration_only",
-      "record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json"
+      "record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+      "active_for_current_dialogue": false,
+      "next_action": "作为新首页画风参考，原图保留。"
     },
     {
       "item": "B6-v1",
@@ -184,9 +193,9 @@
     "correction_record": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113"
   },
   "active_ui_image_task": {
-    "id": "UI-STYLE-WINTER-BG-v1",
+    "id": "UI-HOME-NEWSTYLE-v1",
     "status": "candidate_created_pending_user_review",
-    "record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
-    "next_action": "用户评价这一张新风格样图；按具体反馈继续一次一图，不自动回到B10或批量替换旧界面。"
+    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v1/candidate.json",
+    "next_action": "用户审阅这一张新画风首页完整初稿，反馈标题、按钮样式、布局和背景搭配；根据具体反馈一次一图迭代，页面尚未批准，不自动推进其它页面。"
   }
 }
