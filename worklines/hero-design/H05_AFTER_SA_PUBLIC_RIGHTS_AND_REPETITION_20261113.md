@@ -1,5 +1,7 @@
 # H05｜2026-11-13 已确认 S-A 后：技能公开权、重复局面键与历史时点投影
 
+> **2026-11-13 后续确认说明**：本文件 §4 的 H05 公开权「历史时点 A / 提交后 B」原属当时**待选候选**，用户现已明确选择 **A**，正式英雄设计正文已追加 [§16](formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md)。本文件原候选文字保留作演化依据，不得继续说 A/B 未决；下一研究已转入 [双目标吃子及相同捕获事件去重](H05_PUBLIC_RIGHTS_A_CAPTURE_EVENT_DEDUP_REVIEW_20261113.md)。
+
 ## 定位和权限
 - **归属**：《乐子象棋》独立英雄设计支线，非主线、共享裁判、正式产品或引擎验收。H05 正式设计规则仍为 `formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md`；本研究的任何待选不得冒充用户确认。主线接收暂停、评分冻结、NET 暂停不改。
 - **本轮核对版本**：开始 HEAD `1a3bee96574837f88d20bdfeb9a5f14d64c1034a`；现行 `worklines/standard/rules/shared/01_CURRENT_RULES.md` §八【秘密】8.1/8.2，以及 `02_CURRENT_HEROES.md` H05；`worklines/main/ADJUDICATION.json` 的 `unified_adjudication_core.repetition_public_effective_state`、`repetition_public_body_equivalence`、`repetition_stable_formal_sampling`、`repetition_history_segments`、`terminal_priority`。
