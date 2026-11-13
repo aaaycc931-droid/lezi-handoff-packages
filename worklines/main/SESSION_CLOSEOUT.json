@@ -1711,8 +1711,51 @@
       "cross_environment_restore": "NOT_RUN",
       "historical_diff_review": "PENDING"
     },
-    "frontend_configured": "UNKNOWN",
-    "other_executors_read": "UNKNOWN",
-    "effectiveness": "current-main source correction demonstrated; other executor/front-end trial pending"
+    "frontend_configured": "THREE_MODE_DISPATCH_USER_REPORTED_CONFIGURATION_NOT_INDEPENDENTLY_VERIFIED",
+    "other_executors_read": "STANDARD_CHAOS_HALF_CHAOS_OWN_RECEIPTS_OBSERVED",
+    "effectiveness": "三模式真实启动—读源—跨线—保存链路已有回传；主线有限接收，前端配置/全量效果未独立验证",
+    "latest_receipt": "worklines/main/MODE_STARTUP_RECEPTION_20261113.md"
+  },
+  "mode_startup_reception_20261113": {
+    "id": "MAIN-RECEIVE-MODE-STARTUPS-20261113",
+    "source_main_head": "3436693a335f25ea051905821f77e410f6284114",
+    "report": "worklines/main/MODE_STARTUP_RECEPTION_20261113.md",
+    "hero_review": "worklines/main/H02_H05_INTEGRATION_REVIEW.md",
+    "actual_read_scope": "worklines/main/READ_RECEIPTS.json#/mode_startup_reception_20261113",
+    "status": "THREE_MODE_CURRENT_RETURNS_RECEIVED_BOUNDED_DOCUMENT_SCOPE",
+    "next_main": "MAIN-BLUETOOTH-UNKNOWN-RESULT-SOURCE-REVIEW-20261113",
+    "receiver_of_this_followup": "UNKNOWN",
+    "session_state": "STAGE_CHECKPOINT_NOT_AUTOMATIC_DIALOGUE_CLOSE",
+    "concurrent_chaos_source_followup": {
+      "commit": "83b6d6fdf7ae48846f1f8b8e78054905703ed7b0",
+      "received": "source map and main-owned checks only",
+      "receipt": "READ_RECEIPTS.json#/mode_startup_reception_20261113/actual_receipts/chaos/followup"
+    }
+  },
+  "hero_integration_review_20261113": {
+    "report": "worklines/main/H02_H05_INTEGRATION_REVIEW.md",
+    "status": "DESIGN_SOURCE_AND_IMPACT_MAP_RECEIVED_NO_SHARED_RULE_OR_ENGINE_MIGRATION",
+    "design_source_commit": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+    "engine_head": "71145df45ad17215a3731e53150b6728e079e375",
+    "actual_code_scope": [
+      "src/hero-actions.ts",
+      "src/turns.ts",
+      "src/types.ts",
+      "src/heroes.ts"
+    ],
+    "actual_rule_scope": "H02全文；H05整合正文含§9—16/捕获去重研究；共享英雄相关段与ADJUDICATION相关对象；原设计逐字对话未重取",
+    "adopted": [
+      "新旧设计/共享/实现的差异及依赖清单",
+      "H05六项既有确认不重问",
+      "旧H02刺杀证据不得升级为暗影步验证"
+    ],
+    "not_adopted": [
+      "共享正式玩法已切换",
+      "H02/H05引擎已实现",
+      "同因果捕获A/B候选已批准",
+      "Q-RS2已解决",
+      "模式正式验收"
+    ],
+    "engine_tests_run": 0
   }
 }
