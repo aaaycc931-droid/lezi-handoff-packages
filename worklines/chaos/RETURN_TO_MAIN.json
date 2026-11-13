@@ -3,20 +3,17 @@
   "workline": "chaos",
   "from": "chaos",
   "to": "main",
-  "date_local": "2026-10-26",
+  "date_local": "2026-11-13",
   "dispatch_id": "MAIN-THREE-MODE-20261024",
   "task_id": "CH-07-ORIGINAL_JIEQI-H11_H15-NEGATIVE_ORACLE_AND_CLOSEOUT",
   "source_commit": "f453db4bd37936ee611669baf8711b4a49668e74",
-  "status": "CH07_PRIVACY_NEGATIVE_MATRIX_AND_PURE_ORACLE_READY_MAIN_ACTUAL_RUN_PENDING",
+  "status": "PR20_PR22_BOUNDED_RECEIVER_RECONCILIATION_PUBLISHED",
   "entry": "worklines/chaos/START_HERE.txt",
   "changed_paths": [
-    "worklines/chaos/CH07_STATIC_ORACLE.mjs",
-    "worklines/chaos/CH07_PRIVACY_NEGATIVE_MATRIX.json",
-    "worklines/chaos/CH07_CLOSEOUT.md",
-    "worklines/chaos/START_HERE.txt",
     "worklines/chaos/CURRENT_STATE.json",
+    "worklines/chaos/RETURN_TO_MAIN.json",
     "worklines/chaos/READ_RECEIPTS.json",
-    "worklines/chaos/RETURN_TO_MAIN.json"
+    "worklines/chaos/START_HERE.txt"
   ],
   "facts_confirmed": [
     "Original jieqi standard current rule uses 30 globally shuffled nonroyal identities, reveal may change control; not half_chaos",
@@ -57,11 +54,7 @@
     "ch07_privacy_matrix_cases": 13,
     "ch07_actual_view_checks": 0
   },
-  "next": {
-    "id": "MAIN-AUTHORITATIVE-CH06_A-CH05_B_NEGATIVE_ORACLE_REAL_PROJECTION",
-    "status": "MAIN_MUST_REALLY_READ_AND_RUN",
-    "scope": "Run source-compatible red H15/black H11 seed476 A death and live-control two seeds, seed92 B death and live-control two seeds, compare ordinary public capture and secret status, fix reroll/time and inspect every public/client channel. Chaos independent workline waiting for concrete feedback."
-  },
+  "next": "ON_CONCRETE_MAIN_RESULT_OR_MODE_FAILURE_RECONCILE_CH07_AND_PER_ACTION_UNKNOWN_RESULT_SCOPE; do not repeat CH08 or PR20 reproduction",
   "protected": {
     "gameplay_delta": 0,
     "scoring": "frozen",
@@ -463,15 +456,87 @@
       "formal_CH07_cases_new": 0,
       "main_read_adoption": "UNKNOWN",
       "next": "Main run source-qualified H11 A exact deadline and error/snapshot replay; return actual committed-output traces, then chaos reconciles"
+    },
+    "pr20_pr22_20261113": {
+      "id": "CH-RECEIVE-PR20-PR22-20261113",
+      "date_local": "2026-11-13",
+      "source_handoff_head": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+      "task": "MAIN-COORD-20261113-chaos",
+      "actual_receiver": "this chaos workline dialogue",
+      "adoption": "BOUNDED_PUBLISHED_EVIDENCE_RECONCILIATION_NOT_INDEPENDENT_RUNTIME_ACCEPTANCE",
+      "engine_commits": {
+        "PR20": "8161c348abeba3a99fa5a5b514252e69218f28fd",
+        "PR21": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
+        "PR22": "71145df45ad17215a3731e53150b6728e079e375"
+      },
+      "findings": [
+        {
+          "id": "CH-CHANNEL-01",
+          "status": "MAIN_REPRODUCED_AND_FIXED_BOUNDED_CONTROLLER_EVIDENCE_RECEIVED",
+          "source": "PR20 RESULTS channelCases + SOURCE_AUDIT + scripts/research/committed-output-channel.ts",
+          "fixture": "original jieqi seed476; red H15/black H11; legal recruitment0/1; red1 at5000, black1 at10000",
+          "deadline": 65000,
+          "comparisons": 6,
+          "result": "deadline-1 snapshot; deadline/+1 old error-only/black-A becomes error then snapshot/red-noA; parent/current authority/events/RNG equal. Native/render endpoints recorded, not radio/fullDOM."
+        },
+        {
+          "id": "CH-CHANNEL-02",
+          "status": "PARTIAL_A_WIRE_EVIDENCE_ONLY",
+          "result": "PR20 three A deadline paired-world snapshot/error hash comparisons equal; ordinary captured red cannon remains public. Seed92 B full channel and full client surfaces not established by PR20-22."
+        },
+        {
+          "id": "PR21",
+          "status": "WAIT_CORRELATION_EVIDENCE_RECEIVED",
+          "result": "Six original seed476 cases retain authority/RNG/snapshot-error bytes; matching pong releases pending after error/snapshot. FIFO schedules are new source-qualified controls. Dropped action plus ping counterexample means pong is not acceptance ACK."
+        },
+        {
+          "id": "PR22",
+          "status": "LOCAL_WRITE_ACCOUNTING_EVIDENCE_RECEIVED",
+          "result": "Published 16 JVM checks/3 parent fault controls and 8 action/3 ping boundary records. not_sent is prewrite; written local only; unknown can include accepted flush-failure frame, no fallback/retry/action ping. Old bridge gap and cross-connection result reconciliation remain.",
+          "scope_caution": "Action boundary fixture is hero selection (authorityChoice shuffler), not all H15/H11/capture/skip actions. Do not extrapolate per-kind dedup or acceptance."
+        }
+      ],
+      "CH07_delta": {
+        "PR01_PR03_PR09_PR12": "bounded A controller/private-pair evidence increment only",
+        "PR06": "65000 belongs to actual CH06/PR14 red1@5000 fixture; historical PR06 70000/black1@30000 remains a separate schedule, not the same executed stimulus",
+        "PR10": "bounded same-payload A accept/reject repeats; not all capture/skip/B or unknown-result replay",
+        "PR02_PR04_PR05_PR07_PR08_PR11_PR13": "no new full acceptance from this review; previous PR14 scoped receipt retained",
+        "formal_cases_accepted": 0
+      },
+      "verification": {
+        "own_engine_runs": 0,
+        "own_JVM_runs": 0,
+        "independent_QA": false,
+        "private_owner_archive_recomputed": false,
+        "full_device_or_DOM": false,
+        "method": "read published pinned reports, selected result records, complete source audits and PR20 fixture source; no historical test rerun"
+      },
+      "open_main_owned": [
+        "Unknown action formal result reconciliation across disconnect/reconnect; distinguish each action kind and ID/duplicate support",
+        "Original jieqi hidden30 mover/contact/reveal/defection/death public authority and tri-state consumers",
+        "Seed92 B and remaining capture/skip/B duplicate/error full channel and actual client surfaces",
+        "H15 graduation/control/empty-pool/space and H06/H11 mixed branches",
+        "Full CH07 acceptance, natural complete games, device/DOM/independent QA"
+      ],
+      "next_action": "ON_CONCRETE_MAIN_RESULT_OR_MODE_FAILURE_RECONCILE_CH07_AND_PER_ACTION_UNKNOWN_RESULT_SCOPE; do not repeat CH08 or PR20 reproduction",
+      "main_receiver_read": "UNKNOWN_UNTIL_MAIN_READS_THIS_RETURN",
+      "protections": {
+        "shared_code_changes": 0,
+        "new_gameplay_approval": 0,
+        "formal_mode_release": false,
+        "scoring": "frozen",
+        "NET": "paused",
+        "merge_deploy_APK": false
+      }
     }
   },
-  "latest_phase_status": "CHAOS_H11A_DEADLINE_REJECTION_CHANNEL_TRIAGE_SOURCE_RECORDED_NOT_EXECUTED",
+  "latest_phase_status": "PR20_PR22_BOUNDED_RECEIVER_RECONCILIATION_PUBLISHED",
   "latest_phase_changed_paths": [
-    "worklines/chaos/START_HERE.txt",
-    "worklines/chaos/READ_RECEIPTS.json",
+    "worklines/chaos/CURRENT_STATE.json",
     "worklines/chaos/RETURN_TO_MAIN.json",
-    "worklines/chaos/CURRENT_STATE.json"
+    "worklines/chaos/READ_RECEIPTS.json",
+    "worklines/chaos/START_HERE.txt"
   ],
-  "latest_phase_external_handoff_receiver": "MAIN_HAS_NOT_YET_CLAIMED_RECEIPT",
+  "latest_phase_external_handoff_receiver": "UNKNOWN_UNTIL_MAIN_READS_THIS_RETURN",
   "latest_phase_preserves_original_CH07_matrix": true
 }

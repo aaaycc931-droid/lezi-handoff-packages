@@ -2,16 +2,16 @@
   "schema": "lezi.workline_state.v1",
   "workline": "chaos",
   "mode_id": "jieqi",
-  "date_local": "2026-10-29",
+  "date_local": "2026-11-13",
   "entry": "START_HERE.txt",
   "task": "TASK_FROM_MAIN.json",
   "source_handoff_commit": "bcc68ed3498c550570ea833944389adff7dd5473",
   "received_dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
   "received_task_id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "channel_deadline_rejection_hypothesis_source_audited_wait_main_actual_output",
+  "state": "PR20_PR22_BOUNDED_EVIDENCE_RECEIVED_WAIT_CONCRETE_MAIN_RESULT",
   "actual_receiver_read": true,
-  "actual_receiver_adoption": "CH-01 scoped source review plus CH-02 deterministic original-jieqi H11xH15 fixture contract, static only; no shared code, runtime, or rule change",
+  "actual_receiver_adoption": "BOUNDED_PUBLISHED_EVIDENCE_RECONCILIATION_NOT_INDEPENDENT_RUNTIME_ACCEPTANCE",
   "completed": [
     "fixed root/chaos entry and current protocol activated",
     "original jieqi and H11/H15 current+historical source scopes reconciled",
@@ -24,10 +24,11 @@
     "CH-06 seed476: own-public-side hidden trainee cannon covered-25 can be captured by red covered-15 rook on red1; black1 pawn and subsequent H11-A or A skip -> B static candidates; engine/clock/privacy tests UNRUN",
     "CH-07: two pairwise independent legal recruitment-seed public-identical/private-contrast fixtures; 18 full-GitHub-fixture pure reference checks passed; 13 runtime negative-control cases ready; main-only runtime/projection fixes pending",
     "2026-10-29 bounded actual main PR14/PR16/PR17 source/test evidence read + CH07 13-case account; no independent engine test or full acceptance",
-    "2026-10-29 actual scoped PR18/19 read and specific original-jieqi H15 room/transport source chain audit; main source/action/view gaps returned; no engine run"
+    "2026-10-29 actual scoped PR18/19 read and specific original-jieqi H15 room/transport source chain audit; main source/action/view gaps returned; no engine run",
+    "2026-11-13 received PR20-22 pinned published evidence; corrected CH-CHANNEL-01 waiting state and seed476 deadline to65000; no own runtime or formal CH07 acceptance"
   ],
-  "next_action": "MAIN_ACTUAL_CH_CHANNEL_01_A_EXPIRE_REJECT_AND_CH_CHANNEL_02_H15_WIRE_REPLAY_REQUIRED; CHAOS_WAIT_FOR_MODE_SOURCE_MATCHED_RESULT",
-  "next_action_status": "INDEPENDENT_NEW_SOURCE_GAP_TRIAGE_COMPLETE_NO_FURTHER_STATIC_REPEAT",
+  "next_action": "ON_CONCRETE_MAIN_RESULT_OR_MODE_FAILURE_RECONCILE_CH07_AND_PER_ACTION_UNKNOWN_RESULT_SCOPE; do not repeat CH08 or PR20 reproduction",
+  "next_action_status": "CURRENT_DISPATCH_RECONCILIATION_COMPLETE_SHARED_GAPS_RETAINED",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
   "game_code_changes": 0,
@@ -42,7 +43,7 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "CH-MAIN-PR18-PR19-OUTPUT-CHANNEL-SCOPE-20261029",
+  "last_completed_task": "CH-RECEIVE-PR20-PR22-20261113",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
@@ -321,5 +322,77 @@
     "new_CH07_passes": 0,
     "source_authoritative": true,
     "main_return_written": true
+  },
+  "pr20_pr22_receiver_20261113": {
+    "id": "CH-RECEIVE-PR20-PR22-20261113",
+    "date_local": "2026-11-13",
+    "source_handoff_head": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+    "task": "MAIN-COORD-20261113-chaos",
+    "actual_receiver": "this chaos workline dialogue",
+    "adoption": "BOUNDED_PUBLISHED_EVIDENCE_RECONCILIATION_NOT_INDEPENDENT_RUNTIME_ACCEPTANCE",
+    "engine_commits": {
+      "PR20": "8161c348abeba3a99fa5a5b514252e69218f28fd",
+      "PR21": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
+      "PR22": "71145df45ad17215a3731e53150b6728e079e375"
+    },
+    "findings": [
+      {
+        "id": "CH-CHANNEL-01",
+        "status": "MAIN_REPRODUCED_AND_FIXED_BOUNDED_CONTROLLER_EVIDENCE_RECEIVED",
+        "source": "PR20 RESULTS channelCases + SOURCE_AUDIT + scripts/research/committed-output-channel.ts",
+        "fixture": "original jieqi seed476; red H15/black H11; legal recruitment0/1; red1 at5000, black1 at10000",
+        "deadline": 65000,
+        "comparisons": 6,
+        "result": "deadline-1 snapshot; deadline/+1 old error-only/black-A becomes error then snapshot/red-noA; parent/current authority/events/RNG equal. Native/render endpoints recorded, not radio/fullDOM."
+      },
+      {
+        "id": "CH-CHANNEL-02",
+        "status": "PARTIAL_A_WIRE_EVIDENCE_ONLY",
+        "result": "PR20 three A deadline paired-world snapshot/error hash comparisons equal; ordinary captured red cannon remains public. Seed92 B full channel and full client surfaces not established by PR20-22."
+      },
+      {
+        "id": "PR21",
+        "status": "WAIT_CORRELATION_EVIDENCE_RECEIVED",
+        "result": "Six original seed476 cases retain authority/RNG/snapshot-error bytes; matching pong releases pending after error/snapshot. FIFO schedules are new source-qualified controls. Dropped action plus ping counterexample means pong is not acceptance ACK."
+      },
+      {
+        "id": "PR22",
+        "status": "LOCAL_WRITE_ACCOUNTING_EVIDENCE_RECEIVED",
+        "result": "Published 16 JVM checks/3 parent fault controls and 8 action/3 ping boundary records. not_sent is prewrite; written local only; unknown can include accepted flush-failure frame, no fallback/retry/action ping. Old bridge gap and cross-connection result reconciliation remain.",
+        "scope_caution": "Action boundary fixture is hero selection (authorityChoice shuffler), not all H15/H11/capture/skip actions. Do not extrapolate per-kind dedup or acceptance."
+      }
+    ],
+    "CH07_delta": {
+      "PR01_PR03_PR09_PR12": "bounded A controller/private-pair evidence increment only",
+      "PR06": "65000 belongs to actual CH06/PR14 red1@5000 fixture; historical PR06 70000/black1@30000 remains a separate schedule, not the same executed stimulus",
+      "PR10": "bounded same-payload A accept/reject repeats; not all capture/skip/B or unknown-result replay",
+      "PR02_PR04_PR05_PR07_PR08_PR11_PR13": "no new full acceptance from this review; previous PR14 scoped receipt retained",
+      "formal_cases_accepted": 0
+    },
+    "verification": {
+      "own_engine_runs": 0,
+      "own_JVM_runs": 0,
+      "independent_QA": false,
+      "private_owner_archive_recomputed": false,
+      "full_device_or_DOM": false,
+      "method": "read published pinned reports, selected result records, complete source audits and PR20 fixture source; no historical test rerun"
+    },
+    "open_main_owned": [
+      "Unknown action formal result reconciliation across disconnect/reconnect; distinguish each action kind and ID/duplicate support",
+      "Original jieqi hidden30 mover/contact/reveal/defection/death public authority and tri-state consumers",
+      "Seed92 B and remaining capture/skip/B duplicate/error full channel and actual client surfaces",
+      "H15 graduation/control/empty-pool/space and H06/H11 mixed branches",
+      "Full CH07 acceptance, natural complete games, device/DOM/independent QA"
+    ],
+    "next_action": "ON_CONCRETE_MAIN_RESULT_OR_MODE_FAILURE_RECONCILE_CH07_AND_PER_ACTION_UNKNOWN_RESULT_SCOPE; do not repeat CH08 or PR20 reproduction",
+    "main_receiver_read": "UNKNOWN_UNTIL_MAIN_READS_THIS_RETURN",
+    "protections": {
+      "shared_code_changes": 0,
+      "new_gameplay_approval": 0,
+      "formal_mode_release": false,
+      "scoring": "frozen",
+      "NET": "paused",
+      "merge_deploy_APK": false
+    }
   }
 }
