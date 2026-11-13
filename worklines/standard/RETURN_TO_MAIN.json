@@ -6,10 +6,10 @@
   "source_commit": "bc7e4239935a760b12c75d5f8e910086bfc34e19",
   "base_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
   "approval_context_source_commit": "cfa8fe8759d4893349a61142d6442e5539f76c58",
-  "phase": "H10_PREPARATION_SOURCE_TRACE_COMPLETE",
+  "phase": "PR25_H10_T0_REVIEW_COMPLETE",
   "entry": "worklines/standard/START_HERE.txt",
   "working_document": "worklines/standard/work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
-  "current_breakpoint": "NEXT-STD-H10-PREPARATION-DELTA-RECEPTION-ON-EVIDENCE",
+  "current_breakpoint": "NEXT-STD-H10-FORWARD-QUALIFICATION-DELTA-RECEPTION",
   "confirmed_delta": [],
   "new_user_rule_confirmations": 0,
   "preserved_confirmations": {
@@ -50,8 +50,7 @@
     "worklines/standard/READ_RECEIPTS.json",
     "worklines/standard/RETURN_TO_MAIN.json",
     "worklines/standard/START_HERE.txt",
-    "worklines/standard/reviews/STD_H10_PREPARATION_CALLER_TRACE_20261113.md",
-    "worklines/standard/specs/STD_H10_PREPARATION_CALLER_TRACE_20261113.json"
+    "worklines/standard/reviews/STD_PR25_H10_T0_RECEPTION_20261113.md"
   ],
   "file_identities": [
     {
@@ -1065,17 +1064,13 @@
     }
   },
   "next_task": {
-    "id": "NEXT-STD-H10-PREPARATION-DELTA-RECEPTION-ON-EVIDENCE",
-    "status": "WAIT_CONCRETE_MAIN_IMPLEMENTATION_OR_NEW_TASK",
-    "action": "实际新H10准备接口/候选抽样/私密投影/限定研究准入证据到达后定向比对G1—G5与O0—O9；或接主线新的独立任务。无新证据不重做此溯源，不注入hostId、不运行引擎、不改共享代码。",
+    "id": "NEXT-STD-H10-FORWARD-QUALIFICATION-DELTA-RECEPTION",
+    "status": "WAIT_CONCRETE_FORWARD_SOURCE_OR_NEW_TASK",
+    "action": "收到主线H02/H10/M04正式前缀/真帅安全/同批资格实际差分及其授权后，接续G4正式行动、G5与O0—O9；当前T0复核已完成，不用T0能力跑8手或R5、不循环自审。直接相关新实证或新独立任务也可触发。",
     "implementation_authorized": false,
-    "engine_execution_authorized": false,
-    "dependency_scope": "仅当前H10准备链，不冻结整个普通模式",
-    "trigger": [
-      "new relevant engine commit or interface evidence",
-      "new bounded H02/H10/M04 research admission evidence",
-      "new authorized main task"
-    ]
+    "engine_execution_authorized_for_forward_prefix": false,
+    "completed_T0_execution_authorization": "TASK_FROM_MAIN.h10_t0_implementation_review_20261113，已按范围完成",
+    "main_dependency": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113"
   },
   "terminology": {
     "M04_charge_word": "Existing descriptive wording in prior M04 text; not a new global keyword",
@@ -2258,6 +2253,80 @@
       "START_HERE.txt",
       "RETURN_TO_MAIN.json",
       "PUBLISHED_FILES.json"
+    ]
+  },
+  "pr25_h10_t0_receiver_20261113": {
+    "id": "STD-PR25-H10-T0-RECEIVER-20261113",
+    "task": "MAIN-STD-H10-T0-IMPLEMENTATION-REVIEW-20261113",
+    "date_local": "2026-11-13",
+    "timezone": "Asia/Shanghai",
+    "source_commit": "a29d40304d97c3bb98fcfed8894ea44a83c47b5f",
+    "engine_input": "4ae702ea33bfaf728cc7ea78f092975bdc68b342",
+    "PR25": "open_draft_rechecked",
+    "engine_review_commit": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+    "engine_review_branch": "codex/std-h10-preparation-review-20261113",
+    "engine_evidence": "review/std-h10-preparation/MANIFEST.json",
+    "engine_readback_files_exact": 6,
+    "report": "worklines/standard/reviews/STD_PR25_H10_T0_RECEPTION_20261113.md",
+    "status": "BOUNDED_T0_INDEPENDENT_EXECUTION_COMPLETE",
+    "actual_tests": {
+      "base_h10": 14,
+      "new_branch_checks": 3,
+      "passed": 17,
+      "failed": 0,
+      "skipped": 0,
+      "test_invocations": 2
+    },
+    "standalone_driver_runs": 1,
+    "upstream_102_rerun": false,
+    "production_code_changes": 0,
+    "own_research_test_files": 1,
+    "original_8_ply_and_R5": "UNRUN",
+    "client_UI": "UNRUN",
+    "independent_human_QA": false,
+    "formal_mode_acceptance": false,
+    "G1": "bounded_room_T0_reproduced_product_local_BT_open",
+    "G2": ">=3_sampling_confirmed_and_verified_unresolved_failure_policy_retained",
+    "G3": "server_projection_and_clear_verified_UI_delivery_open",
+    "G4": "T0_only_verified_formal_prefix_not_admitted",
+    "G5": "OPEN_NOT_RUN",
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "new_main_confirmation_adopted_separately": "CONF-H10-FIRST-UNIFORM-THREE-20261113",
+    "new_user_confirmations_in_this_dialogue": 0,
+    "NG11": "OPEN",
+    "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
+    "featuresReady": false,
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_read_current_return": "UNKNOWN",
+    "main_adoption_current_return": "UNKNOWN",
+    "next_action": {
+      "id": "NEXT-STD-H10-FORWARD-QUALIFICATION-DELTA-RECEPTION",
+      "status": "WAIT_CONCRETE_FORWARD_SOURCE_OR_NEW_TASK",
+      "action": "收到主线H02/H10/M04正式前缀/真帅安全/同批资格实际差分及其授权后，接续G4正式行动、G5与O0—O9；当前T0复核已完成，不用T0能力跑8手或R5、不循环自审。直接相关新实证或新独立任务也可触发。",
+      "implementation_authorized": false,
+      "engine_execution_authorized_for_forward_prefix": false,
+      "completed_T0_execution_authorization": "TASK_FROM_MAIN.h10_t0_implementation_review_20261113，已按范围完成",
+      "main_dependency": "MAIN-H10-FORWARD-PREFIX-QUALIFICATION-20261113"
+    },
+    "engine_files_added": 6,
+    "main_attention": [
+      "17项本线实际通过，与上游102项报告分开",
+      "G1/G2>=3/G3服务器/G4 T0受限接收",
+      "G3客户端、G4正式前缀及G5/R5仍开放，不继续借T0能力执行"
+    ],
+    "artifacts": [
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+        "path": "review/std-h10-preparation/README.md"
+      },
+      {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "commit": "bfc7847dd81d16ee82b81d4e1747a9729c84e77c",
+        "path": "review/std-h10-preparation/MANIFEST.json"
+      }
     ]
   }
 }
