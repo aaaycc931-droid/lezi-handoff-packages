@@ -2,15 +2,15 @@
   "schema": "lezi.hero_design.current_state.v1",
   "owner": "hero-design",
   "updated_on_local": "2026-11-13",
-  "status": "active_phase_checkpoint",
-  "source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+  "status": "waiting_for_user_design_decision",
+  "source_commit": "04ae7489b0577f93fa074ae3854f8caf823253ee",
   "followup_source_commit": "747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a",
   "current_task_ids": [
     "MAIN-COORD-20261113-hero-design",
     "MAIN-COORD-FOLLOWUP-20261113-hero-design"
   ],
   "entry": "worklines/hero-design/START_HERE.md",
-  "report": "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
+  "report": "worklines/hero-design/H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md",
   "completed": [
     "H02 current H05 references corrected to consolidated design including sections 9-16; obsolete begin wording corrected",
     "H21 source-conditioned four-prayer prefix and same-main-capture/different-begin-deaths local probe",
@@ -32,23 +32,26 @@
     "Recorded H01 ownership, D01 disabling and H17 unverified action-grade exclusions without inventing compatible powers",
     "Extended fixed H21 failed-replay fixture with legal ordinary red8 pawn move and black8 horse move",
     "Qualified failure resumption with original-line sampling terminal gate; no begin after formal draw",
-    "Separated phase callbacks, formal opportunity counting and unresolved H05 wall-clock binding; preserved consumed H21 premonition"
+    "Separated phase callbacks, formal opportunity counting and unresolved H05 wall-clock binding; preserved consumed H21 premonition",
+    "Built source-conditioned H02/H05 ordinary forward/backward replay and original-side expiry fixtures",
+    "Verified local special grade/use, free ordinary rook retreat, and earlier spent budget retained across later ordinary replay",
+    "Separated injected failure isolation from naturally forced failure; no third hero source invented",
+    "Prepared unapproved H05 clock budget alternatives after targeted source review; stopped for user decision"
   ],
   "validation": {
-    "local_model_checks": 8,
-    "inherited_fixture_checks_rerun": 10,
+    "local_model_checks": 11,
     "result": "PASS_LOCAL_MODEL_ONLY",
     "source_engine_runs": 0,
     "independent_QA": false,
-    "results": "worklines/hero-design/research/H05_FAILED_NORMAL_RESUMPTION_RESULTS.json",
-    "scope": "ordinary geometry continuation plus modeled lifecycle; terminal verdict supplied as oracle, no production timer callbacks",
+    "results": "worklines/hero-design/research/H02_H05_QUALIFICATION_RESULTS.json",
+    "scope": "ordinary geometry plus local H02 lifecycle; failure injected, timer alternatives not implemented",
     "not_covered": [
-      "source-specific cooldown/duration callbacks",
-      "H05 pre-window/failure wall-clock binding",
-      "reachable fifth-repeat fixture",
-      "production H05 transaction/mode admission",
-      "controlled actor post-action death",
-      "independent QA"
+      "production H02/H05 callbacks/transaction",
+      "natural forced failure in H02 pair",
+      "hidden/space/control/defense and extra-action sources",
+      "full special-threat algorithm",
+      "H05 clock implementation",
+      "mode admission/network/independent QA"
     ]
   },
   "unresolved": {
@@ -62,9 +65,12 @@
     "normal_turn_after_failure": "LOCAL_GEOMETRY_AND_PHASE_ADAPTER_ONLY",
     "post_action_other_piece_death": "SOURCE_CONDITIONED_LOCAL_FIXTURE_ONLY",
     "normal_turn_source_timers": "ACTUAL_CALLBACKS_UNVERIFIED",
-    "H05_wall_clock_binding": "CURRENT_READ_SOURCES_INCOMPLETE"
+    "H05_wall_clock_binding": "Q-H05-CLOCK-01_PENDING_USER_DECISION",
+    "H02_H05_qualification_lifecycle": "SOURCE_CONDITIONED_LOCAL_MODEL_ONLY",
+    "H02_H05_earlier_special_budget": "LIMITED_CONCRETE_PREFIX_RETAINS_SPENT_USE",
+    "H02_H05_failure_fixture": "INJECTED_ONLY_NO_FORCED_NATURAL_FAILURE"
   },
-  "next_action": "读取H02唯一正式正文，构造H05×H02暗影步资格获得/使用/回合末过期的具体棋局，分别核重演替换与失败保留；不先定共享预算恢复。H05秒表绑定、原行动棋后续死亡、同因果A/B、Q-RS2与批次重置保持未决。",
+  "next_action": "等待用户选择或修改Q-H05-CLOCK-01；确认后只按实际选择补本线H05正式设计与时间预算/失败衔接规格，不代主线实现或模式放行。",
   "confirmed_design_source": "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
   "preserved_confirmations": [
     "长将B",
@@ -91,9 +97,9 @@
   "publication": {
     "destination_branch": "main",
     "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
-    "research_source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
-    "publication_parent": "811c93e75915f759b5dea558767d2a3830c0076f",
-    "delivery": "authorized hero-design increment; latest parent, expected_sha, force=false; readback required"
+    "research_source_commit": "04ae7489b0577f93fa074ae3854f8caf823253ee",
+    "publication_parent": "04ae7489b0577f93fa074ae3854f8caf823253ee",
+    "delivery": "authorized workline research and pending decision; latest parent, expected_sha, force=false; readback required"
   },
   "publication_history": [
     {
@@ -143,6 +149,13 @@
       "research_source_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
       "publication_parent": "fee354a6f4b9db270973b427ee20cb13fbd45d1e",
       "delivery": "long-term authorized hero-design increment; expected_sha and force=false, readback required"
+    },
+    {
+      "destination_branch": "main",
+      "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
+      "research_source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+      "publication_parent": "811c93e75915f759b5dea558767d2a3830c0076f",
+      "delivery": "authorized hero-design increment; latest parent, expected_sha, force=false; readback required"
     }
   ],
   "main_write_authorization_20261113": {
@@ -168,8 +181,8 @@
       "limits": "仅写入权限；不等于待决玩法批准、主线任命、工程合并部署或模式放行"
     }
   },
-  "previous_phase_source_commit": "7d86ae477b044f83bf268fbbb97bfaa66003d3da",
-  "previous_report": "worklines/hero-design/H05_POST_ACTION_DEATH_SOURCE_REVIEW.md",
+  "previous_phase_source_commit": "732ce2c6b0fd17f928303f22e544d92d532ffd33",
+  "previous_report": "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
   "current_scope_note": "用户明确将自主英雄实验交给主线，本对话继续旧hero-design；不进入hero-pilot。",
   "source_correction": {
     "path": "worklines/hero-design/H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md",
@@ -177,5 +190,24 @@
     "gameplay_delta": 0,
     "prior_geometry_evidence_retained": true
   },
-  "report_section": "7"
+  "decision_required": {
+    "id": "Q-H05-CLOCK-01",
+    "status": "PENDING_USER_DECISION",
+    "report": "worklines/hero-design/H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md",
+    "section": "6",
+    "question": "H05前置技能尝试与失败后的普通行动，是否共用当前正式回合原有时间预算？",
+    "recommended": "A",
+    "options": {
+      "A": "前置选择、H05己方操作、失败/放弃后正常行动共用D；失败不刷新；必要原阵营操作暂停",
+      "B": "独立技能阶段D；放弃或未成功承诺而失败/到期后，原线未终局则正常行动另获D；可能最多两份D"
+    },
+    "example": "D=60秒，自己已用35秒后失败：A剩25秒，B再获60秒。原阵营独立操作暂停H05表，两案均不重复扣时。",
+    "formal_rule_changed": false,
+    "confirmation_source": null
+  },
+  "continuation_request": {
+    "user_quote": "持续进行推进，直到进行到需要我来介入的内容",
+    "progress": "independent qualification research completed; stopped at concrete unapproved time-budget alternatives",
+    "does_not_expand_gameplay_approval": true
+  }
 }

@@ -1,0 +1,128 @@
+{
+  "status": "PASS_LOCAL_MODEL_ONLY",
+  "checks": 11,
+  "cases": [
+    "five-ordinary-opportunities-build-qualification-expiring-at-black3",
+    "old-forward-refreshes-but-replayed-ordinary-backward-clears",
+    "same-forward-replay-refreshes-on-original-black3-not-selector-red4",
+    "unmoved-horse-expires-at-replayed-black3-end",
+    "red4-H05-occupancy-does-not-advance-black-expiry",
+    "black4-special-retreat-is-II-and-spends-one-team-use",
+    "same-special-retreat-is-not-an-eligible-H05-selected-grade-I-action",
+    "ordinary-rook-one-step-back-is-free-and-consumes-old-qualification",
+    "failed-candidate-isolation-restores-current-old-qualification-not-anchor",
+    "historical-special-II-turn-is-outside-H05-eligibility",
+    "earlier-special-use-remains-spent-when-next-ordinary-turn-is-replayed"
+  ],
+  "runtime": "v24.22.1",
+  "prefix": [
+    {
+      "type": "ordinary",
+      "side": "r",
+      "round": 1,
+      "actor": "r-P-1",
+      "from": [
+        1,
+        4
+      ],
+      "to": [
+        1,
+        5
+      ]
+    },
+    {
+      "type": "ordinary",
+      "side": "b",
+      "round": 1,
+      "actor": "b-P-5",
+      "from": [
+        5,
+        7
+      ],
+      "to": [
+        5,
+        6
+      ]
+    },
+    {
+      "type": "black-end",
+      "round": 1
+    },
+    {
+      "type": "ordinary",
+      "side": "r",
+      "round": 2,
+      "actor": "r-P-7",
+      "from": [
+        7,
+        4
+      ],
+      "to": [
+        7,
+        5
+      ]
+    },
+    {
+      "type": "ordinary",
+      "side": "b",
+      "round": 2,
+      "actor": "b-H-2",
+      "from": [
+        2,
+        10
+      ],
+      "to": [
+        3,
+        8
+      ]
+    },
+    {
+      "type": "black-end",
+      "round": 2
+    },
+    {
+      "type": "ordinary",
+      "side": "r",
+      "round": 3,
+      "actor": "r-P-9",
+      "from": [
+        9,
+        4
+      ],
+      "to": [
+        9,
+        5
+      ]
+    }
+  ],
+  "old": {
+    "horse": [
+      5,
+      7
+    ],
+    "expiry": 4,
+    "budget": 3
+  },
+  "rewrittenBackward": {
+    "horse": [
+      2,
+      10
+    ],
+    "qualification": false,
+    "budget": 3
+  },
+  "otherActorReplay": {
+    "expiredOriginalHorse": true,
+    "otherHorseExpiry": 4
+  },
+  "sourceEngineRuns": 0,
+  "independentQA": false,
+  "limits": [
+    "H02 callbacks and H05 transaction are local source models",
+    "failed branch is injected, not a naturally forced failure",
+    "no direct king targets, hidden/space/control/defense interactions",
+    "geometry helper only checks ordinary threats; no added shadow threat reaches either fixed king in these positions",
+    "no extra-action source or historical special-budget refund proved",
+    "no mode admission or network validation"
+  ]
+}
