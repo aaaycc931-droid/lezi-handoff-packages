@@ -15,8 +15,10 @@
     "main_text_commit": "bf48b0a76dc7993e50a131bce09d8d2f21037aa5",
     "ui_instruction_commit": "7615fc61fd66d84929f0569ff9429a46f1344b7e",
     "frontend": "NEW_VERSION_NOT_CONFIRMED_INSTALLED;old_main_success_retained",
-    "engineering_next": "PR29 bounded real-browser verification;unchanged",
-    "session_closed": false
+    "engineering_next": "PR29 bounded real-browser verification;unchanged;resume after source refresh",
+    "session_closed": true,
+    "latest_session_closeout_ref": "worklines/main/CROSS_SYSTEM_COORDINATION.json#/session_closeout",
+    "main_publication_commit": "b90b48a61d82ac7d1e474f90a0be418d78ccb15c"
   },
   "main_received_report": {
     "filename": "mainline_authorization_coordination_report_20261113.txt",
@@ -38,7 +40,10 @@
         "recipient_read": "UNKNOWN",
         "recipient_adopted": "UNKNOWN",
         "recipient_route": "own START_HERE.md -> docs/WORKFLOW_DIRECTION_AND_HANDOFF.md#跨系统共用改进",
-        "recipient_response": "receiver records actual receipt/adoption in its own source;chess reads when next active"
+        "recipient_response": "receiver records actual receipt/adoption in its own source;chess reads when next active",
+        "latest_source_commit": "b90b48a61d82ac7d1e474f90a0be418d78ccb15c",
+        "source_version_change": "no instruction-body change;session closeout appended in live source",
+        "recipient_receipt_observation": "During 2026-11-14 closeout, existing receiving entry and handoff section remained readable with no new receipt pointer there;receiver-wide read/adoption not inferred."
       }
     ]
   },
@@ -49,5 +54,86 @@
     "original_workflow_and_authorization_sources_preserved": true,
     "background_polling_or_chat_wakeup_configured": false
   },
-  "verification": "worklines/main/AUTHORIZATION_PUBLICATION_VERIFICATION_20261113.json"
+  "verification": "worklines/main/AUTHORIZATION_PUBLICATION_VERIFICATION_20261113.json",
+  "session_closeout": {
+    "id": "MAIN-AUTHORIZATION-COORDINATION-CLOSEOUT-20261114",
+    "date_local": "2026-11-14",
+    "timezone": "Asia/Shanghai",
+    "user_request": "现在本对话先进行一轮收束，我会更换对话继续",
+    "status": "CURRENT_DIALOGUE_CLOSED_PROJECT_CONTINUES",
+    "scope": "this_conversation_only",
+    "source_main_head": "b90b48a61d82ac7d1e474f90a0be418d78ccb15c",
+    "original_authorization_quote": "我允许本对话执行所有更新与写入操作",
+    "authorization_continuity": "继承同范围有效授权；本次收束不撤销已有授权，不扩大原公开、合并、部署、APK或玩法边界。",
+    "next_dialogue_role": "同一象棋主线项目的新对话，实际收到用户的条件任命、旧对话已收束且无并发身份冲突时，可由用户一句“继续”接任；仓库模板不自行任命。",
+    "this_dialogue_writes_released_after_publication": true,
+    "other_worklines_paused": false,
+    "project_paused": false,
+    "completed": {
+      "report_read": "mainline_authorization_coordination_report_20261113.txt;full 156 lines",
+      "main_instructions_and_workflow_commit": "b90b48a61d82ac7d1e474f90a0be418d78ccb15c",
+      "main_changed_paths": 22,
+      "ui_instruction_commit": "7615fc61fd66d84929f0569ff9429a46f1344b7e",
+      "ui_changed_paths": 1,
+      "private_delivery": "existing private destination;3 files published and read back;sender-only delivery",
+      "instruction_version": "2026-11-13.AUTH-1",
+      "complete_instruction_choices": 14,
+      "owner_deliverable_filename": "lezi_project_instructions_AUTH1_20261113.txt",
+      "owner_deliverable_saved": true,
+      "verification_ref": "worklines/main/AUTHORIZATION_PUBLICATION_VERIFICATION_20261113.json",
+      "owner_deliverable_bytes": 77848,
+      "owner_deliverable_sha256": "8d24e7e9ac6be78851be7f68bbdbb368427dbee3af488daa743eef712dc30a81"
+    },
+    "not_completed": [
+      "AUTH-1前端安装未确认；主线旧版已安装及一次自然接续不代表新版已采用。",
+      "个人系统主线接收与采用未知；本次只复核相关固定入口／交接段，未发现新增回执指针，不断言对方从未读取。",
+      "新版自然接续、跨系统实际采用与长期减少误拦截效果未验；无后台任务或自动唤醒。",
+      "司衡美术的公开上传历史阻断保持原来源；本对话未重试，未来按该线最新授权／状态核查。",
+      "PR29真实浏览器有限验证未在本轮执行；原完整类型／Android／无线／真机／独立QA等缺口不因文档更新消失。"
+    ],
+    "unpublished_work_in_this_scope": "NONE;all useful instruction bodies and coordination results persisted;rejected broader attempts were not applied",
+    "other_lines_unreturned_work": "UNKNOWN_PRESERVED",
+    "continuation": {
+      "entry": "worklines/main/START_HERE.txt",
+      "latest_session_ref": "worklines/main/CROSS_SYSTEM_COORDINATION.json#/session_closeout",
+      "engineering_state_ref": "worklines/main/CURRENT_STATE.json#/next_action",
+      "engineering_next_snapshot": {
+        "id": "MAIN-LOCAL-RESULT-BROWSER-VERIFY-20261113",
+        "owner": "main",
+        "status": "READY_WITHIN_EXISTING_SCOPE",
+        "action": "在真实浏览器内对PR29的实际Web入口做有限验证：模块加载、发送前原文留存、断连历史标记、连接时排队消息与默认关闭的host路径；用明确本机桥替身，不冒充Android/无线。按具体新回传核受影响边界，不重复G4/G5或旧C1—C5。",
+        "engine_commit": "38d40fc2494ce5464af8f91405249f8511524bbf",
+        "draft_pr": 29,
+        "limits": "来宾权威结果/远端actor连续性与新wire尚无完整合同；本步不放开这些边界、不自动补交未知操作。评分原账本冻结、NET暂停、featuresReady=false；不合并/部署/APK/模式开放。"
+      },
+      "first_action": "核最新main HEAD并实际读固定入口、本次收束、原授权及相关新回传；如无更新覆盖PR29断点，在已有范围内执行真实浏览器有限验证。",
+      "frontend_pending_does_not_block_engineering": true,
+      "current_dialogue_status_precedence": "本次明确收束覆盖旧累计continuation/current_dialogue_status中的施工中快照；工程next_action及其他领域状态不变。",
+      "recipient_receipt_owner": "receiver_only",
+      "resume_prompt": "继续"
+    },
+    "protected": [
+      "scoring_and_original_ledger_frozen",
+      "NET_paused",
+      "featuresReady_false",
+      "no_merge_deployment_APK_mode_opening_or_new_gameplay",
+      "independent_UI_design_and_assets",
+      "other_workline_drafts_and_receipts",
+      "private_source_contents_and_access_references"
+    ],
+    "publication_scope": {
+      "target_repository": "aaaycc931-droid/lezi-handoff-packages",
+      "branch": "main",
+      "visibility": "public",
+      "changed_paths": [
+        "worklines/main/START_HERE.txt",
+        "worklines/main/CROSS_SYSTEM_COORDINATION.json",
+        "worklines/main/AUTHORIZATION_COORDINATION_20261113.md"
+      ],
+      "payload": "only this session's public project documentation, status and navigation;no private artifact IDs/URLs or cumulative metadata bodies",
+      "concurrency": "latest parent tree and expected_sha;force=false;re-read and reconcile if moved",
+      "legacy_cumulative_files": "unchanged;latest closure and own phase return use the previously adopted minimal coordination record",
+      "post_publication_readback": "required;not pre-claimed here"
+    }
+  }
 }
