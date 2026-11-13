@@ -2159,7 +2159,9 @@
           "C3真实Web边界"
         ],
         "receiver_read": "UNKNOWN",
-        "runs": 0
+        "runs": 0,
+        "current_status": "C1_C2_C3_REPORTED_COMPLETE_MAIN_SCOPED_RECEIPT",
+        "next_task": "MAIN-CH-PENDING-REQUEST-PRESERVATION-PROTOTYPE-20261113"
       },
       "half_chaos": {
         "id": "MAIN-HC-AUTHORITY-RESULT-EVIDENCE-20261113",
@@ -2171,7 +2173,9 @@
           "H3实测驱动候选修订"
         ],
         "receiver_read": "UNKNOWN",
-        "runs": 0
+        "runs": 0,
+        "current_status": "H1_H2_H3_REPORTED_COMPLETE_MAIN_REPORT_SCOPE_RECEIPT",
+        "next_task": "MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113"
       },
       "standard": {
         "id": "MAIN-STD-H10-UNBLOCK-RECEPTION-20261113",
@@ -2222,6 +2226,133 @@
       "NET": true,
       "mode_gates": true,
       "merge_deploy_APK_authorized": false
+    }
+  },
+  "result_implementation_20261113": {
+    "id": "MAIN-RESULT-BOUNDARY-PROTOTYPE-20261113",
+    "status": "OFFLINE_IMPLEMENTED_AND_VALIDATED_NOT_PRODUCTION",
+    "source_head": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+    "engine": {
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "branch": "codex/main-result-ledger-prototype-20261113",
+      "commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+      "draft_pr": 24,
+      "new_files": 6,
+      "production_changes": 0,
+      "readback_exact": 6
+    },
+    "tests": {
+      "id": "MAIN-AUTHORITY-RESULT-PROTOTYPE-20261113",
+      "base_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "production_changed": 0,
+      "wire_changed": 0,
+      "coverage": [
+        "hero choice",
+        "resign"
+      ],
+      "node": "v24.22.1",
+      "command": "node --test --test-reporter=tap tests/main-authority-result-prototype.test.ts tests/bluetooth-host-room.test.ts",
+      "tests": 29,
+      "passed": 29,
+      "failed": 0,
+      "new_tests": 21,
+      "unchanged_host_tests": 8,
+      "initial_attempt": {
+        "tests": 19,
+        "passed": 3,
+        "failed": 16,
+        "cause": "Prototype required explicit jieqi, but production omits default mode; corrected adapter to use existing normalizeGameMode."
+      },
+      "source_identity_files": 36,
+      "claims": [
+        "offline real production function calls",
+        "new research owner and in-memory records",
+        "same-authority read-only queries",
+        "fault injection separately labeled"
+      ],
+      "not_claimed": [
+        "production integration",
+        "wire negotiation",
+        "trusted native generation",
+        "cross-reconnect actor continuity",
+        "all-action outcome classification",
+        "durability",
+        "ordinary/half mode admission",
+        "independent QA",
+        "Android/device/radio",
+        "full 935 or 56/64 acceptance"
+      ]
+    },
+    "decision": {
+      "direction": "A_v2_explicit_hello_negotiation_for_future_draft",
+      "B": "DEFERRED_NOT_IMPLEMENTED",
+      "wire_implemented": false,
+      "production_integrated": false
+    },
+    "report": "worklines/main/RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
+    "h10": {
+      "scope": "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md",
+      "sampling": "USER_CHOICE_PENDING",
+      "choices": [
+        "1:首次等概率不重复抽3，仅至少3候选及时选择成功路径研究",
+        "2:暂不定分布，只做声明候选条件式研究"
+      ],
+      "implementation": false,
+      "standard_unblocked": false
+    },
+    "main_next": {
+      "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+      "action": "依据PR24把有证据的命令提交/记账边界形成可选内部生产适配草稿，先不接新线上消息；处理代次/协商/actor连续性具体差分。普通H10待首次采样选择后按范围推进；不冻结其他主线/支线。",
+      "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030"
+    }
+  },
+  "result_implementation_dispatch_20261113": {
+    "chaos": {
+      "id": "MAIN-CH-PENDING-REQUEST-PRESERVATION-PROTOTYPE-20261113",
+      "status": "READY_BOUNDED_RESEARCH_AFTER_COMPLETED_C1_C2_C3",
+      "main_receipt": "worklines/main/READ_RECEIPTS.json#chaos_offline_results_20261113",
+      "source_engine": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+      "source_pr": 24,
+      "inputs": [
+        "worklines/main/RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
+        "本线09af8bf真实C3回调/出站输入及已发布脚本",
+        "PR24 scripts/research/main-authority-result-prototype.ts与结果说明"
+      ],
+      "action": "做一项新离线原型：把真实出站action的原ID/actor/authority/局次/完整内容与本机send状态独立保存，复用本线已证C3事件测试断连清UI时原尝试仍在。PR24只提供结果语义参照，不直接连到旧wire或冒充可信native代次。",
+      "required": [
+        "复用实际send边界输入并显式标研究包装保存点；不得宣称生产已在发送前持久保存。",
+        "精确内容/actor/局次错绑、旧回调对新请求、not_sent/written/unknown与权威结果独立、淘汰/重启unknown；不得自动再发action。",
+        "两种原权威结果都可清UI等待，保存未知事实不能变成accepted。没有可信代次的回调标未覆盖，不造天然顺序。",
+        "只验证新增存储与已证回调之间的关系，不重跑原15例/29例全套；若有具体失败仅跑相关对照。",
+        "原出站帧没有的authority/局次/可信连接代次不得补造为历史事实；研究fixture标签须显式标注，生产缺项保留unknown。只要求内存保留跨UI断连清理，重建/进程重启不承诺恢复。"
+      ],
+      "write_scope": "既有codex/ch-lifecycle-verification-20261113最新HEAD上的新tests/research/ch-lifecycle-*、scripts/research/ch-lifecycle-*、review/ch-lifecycle-validation/*及本线文档；保护09af8bf已有成果；不改生产src/web/android、其他线或主线原型。",
+      "authorization": "继承本线evidence_queue_20261113受控离线研究/测试，新增研究存储助手与测试属于该限定范围；不是新wire/native/模式/部署授权。",
+      "stop": "完成这一个原型与有效反例即回传；剩余生产接入/可信代次由主线，不循环自审。",
+      "receiver_read": "UNKNOWN",
+      "receiver_execution": "NOT_STARTED_FOR_THIS_NEW_TASK"
+    },
+    "half_chaos": {
+      "id": "MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113",
+      "status": "READY_NEW_SOURCE_REVIEW_AFTER_COMPLETED_H1_H2_H3",
+      "engine_commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+      "draft_pr": 24,
+      "report": "worklines/main/RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
+      "action": "H1/H2/H3已完成，不重做。以PR24/f30f1f5与本线13例新证据作一次有界反例审查：重点核hero期限处置/同结果不同来源、action种类不能共用duplicate结论、内容/actor/scope绑定、提交与投影分离。先读新代码，只有发现具体未覆盖风险才补最小新试验；无需为凑数重跑29或原13。",
+      "limits": "PR24不实现生产A，不证明跨重连actor/代次；研究新ID前提不是已批准生产去重策略，H15准备/H11/移动尚未覆盖。本线新成果优先保存，不因补充输入丢弃正在进行工作。",
+      "receiver_read": "UNKNOWN_FOR_NEW_PR24_TASK",
+      "receiver_adoption": "UNKNOWN",
+      "main_receipt": "worklines/main/READ_RECEIPTS.json#half_chaos_offline_results_20261113",
+      "execution_scope": "沿既有测试研究授权，只在本线研究分支新增hc-result-*研究/测试/回传。需要执行PR24时在本地单独固定检出f30f1f5作只读依赖，再叠本线测试；记录依赖SHA，不复制改写主线实现、不合并它线分支、不改生产文件。",
+      "deliverable": "给主线具体可复现缺陷/适用边界和最小建议；没有新缺陷也据实结束，不循环自审。此为同项目不同执行者复核，不自动算正式独立QA。"
+    },
+    "standard": {
+      "id": "MAIN-STD-H10-SCOPE-PREPARED-20261113",
+      "report": "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md",
+      "status": "IMPLEMENTATION_SCOPE_PREPARED_SAMPLING_CHOICE_PENDING",
+      "implementation_delivered": false,
+      "action": "本轮只形成具体实施范围并回核主线原确认not_decided；没有新普通源码或运行授权，不触发等价接收报告。保留现有等待实际差分的断点。",
+      "receiver_read": "UNKNOWN"
     }
   }
 }

@@ -3945,5 +3945,83 @@
       "模式正式验收"
     ],
     "engine_tests_run": 0
+  },
+  "result_implementation_20261113": {
+    "id": "MAIN-RESULT-BOUNDARY-PROTOTYPE-20261113",
+    "status": "OFFLINE_IMPLEMENTED_AND_VALIDATED_NOT_PRODUCTION",
+    "source_head": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+    "engine": {
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "branch": "codex/main-result-ledger-prototype-20261113",
+      "commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+      "draft_pr": 24,
+      "new_files": 6,
+      "production_changes": 0,
+      "readback_exact": 6
+    },
+    "tests": {
+      "id": "MAIN-AUTHORITY-RESULT-PROTOTYPE-20261113",
+      "base_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "production_changed": 0,
+      "wire_changed": 0,
+      "coverage": [
+        "hero choice",
+        "resign"
+      ],
+      "node": "v24.22.1",
+      "command": "node --test --test-reporter=tap tests/main-authority-result-prototype.test.ts tests/bluetooth-host-room.test.ts",
+      "tests": 29,
+      "passed": 29,
+      "failed": 0,
+      "new_tests": 21,
+      "unchanged_host_tests": 8,
+      "initial_attempt": {
+        "tests": 19,
+        "passed": 3,
+        "failed": 16,
+        "cause": "Prototype required explicit jieqi, but production omits default mode; corrected adapter to use existing normalizeGameMode."
+      },
+      "source_identity_files": 36,
+      "claims": [
+        "offline real production function calls",
+        "new research owner and in-memory records",
+        "same-authority read-only queries",
+        "fault injection separately labeled"
+      ],
+      "not_claimed": [
+        "production integration",
+        "wire negotiation",
+        "trusted native generation",
+        "cross-reconnect actor continuity",
+        "all-action outcome classification",
+        "durability",
+        "ordinary/half mode admission",
+        "independent QA",
+        "Android/device/radio",
+        "full 935 or 56/64 acceptance"
+      ]
+    },
+    "decision": {
+      "direction": "A_v2_explicit_hello_negotiation_for_future_draft",
+      "B": "DEFERRED_NOT_IMPLEMENTED",
+      "wire_implemented": false,
+      "production_integrated": false
+    },
+    "report": "worklines/main/RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
+    "h10": {
+      "scope": "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md",
+      "sampling": "USER_CHOICE_PENDING",
+      "choices": [
+        "1:首次等概率不重复抽3，仅至少3候选及时选择成功路径研究",
+        "2:暂不定分布，只做声明候选条件式研究"
+      ],
+      "implementation": false,
+      "standard_unblocked": false
+    },
+    "main_next": {
+      "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+      "action": "依据PR24把有证据的命令提交/记账边界形成可选内部生产适配草稿，先不接新线上消息；处理代次/协商/actor连续性具体差分。普通H10待首次采样选择后按范围推进；不冻结其他主线/支线。",
+      "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030"
+    }
   }
 }

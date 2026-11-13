@@ -527,7 +527,7 @@
       "output": "同一报告追加最小验证规格，避免另起重复包"
     }
   },
-  "active_main_dispatch": "evidence_queue_20261113",
+  "active_main_dispatch": "main_result_increment_20261113",
   "evidence_queue_20261113": {
     "schema": "lezi.main.delegated_validation.v1",
     "date_local": "2026-11-13",
@@ -613,5 +613,30 @@
     ],
     "follow_up": "有新实测失败可在以上三阶段内增加最小正负控制/修复测试驱动并复验；不得无限扩大随机组合。全部结束直接回传，后续需要新方案则等主线实质输入。",
     "output": "worklines/chaos/CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md + 专属引擎分支源码/命令/结果索引；现有报告只加有源更正，历史结果不删除。"
+  },
+  "main_result_increment_20261113": {
+    "id": "MAIN-CH-PENDING-REQUEST-PRESERVATION-PROTOTYPE-20261113",
+    "status": "READY_BOUNDED_RESEARCH_AFTER_COMPLETED_C1_C2_C3",
+    "main_receipt": "worklines/main/READ_RECEIPTS.json#chaos_offline_results_20261113",
+    "source_engine": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+    "source_pr": 24,
+    "inputs": [
+      "worklines/main/RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
+      "本线09af8bf真实C3回调/出站输入及已发布脚本",
+      "PR24 scripts/research/main-authority-result-prototype.ts与结果说明"
+    ],
+    "action": "做一项新离线原型：把真实出站action的原ID/actor/authority/局次/完整内容与本机send状态独立保存，复用本线已证C3事件测试断连清UI时原尝试仍在。PR24只提供结果语义参照，不直接连到旧wire或冒充可信native代次。",
+    "required": [
+      "复用实际send边界输入并显式标研究包装保存点；不得宣称生产已在发送前持久保存。",
+      "精确内容/actor/局次错绑、旧回调对新请求、not_sent/written/unknown与权威结果独立、淘汰/重启unknown；不得自动再发action。",
+      "两种原权威结果都可清UI等待，保存未知事实不能变成accepted。没有可信代次的回调标未覆盖，不造天然顺序。",
+      "只验证新增存储与已证回调之间的关系，不重跑原15例/29例全套；若有具体失败仅跑相关对照。",
+      "原出站帧没有的authority/局次/可信连接代次不得补造为历史事实；研究fixture标签须显式标注，生产缺项保留unknown。只要求内存保留跨UI断连清理，重建/进程重启不承诺恢复。"
+    ],
+    "write_scope": "既有codex/ch-lifecycle-verification-20261113最新HEAD上的新tests/research/ch-lifecycle-*、scripts/research/ch-lifecycle-*、review/ch-lifecycle-validation/*及本线文档；保护09af8bf已有成果；不改生产src/web/android、其他线或主线原型。",
+    "authorization": "继承本线evidence_queue_20261113受控离线研究/测试，新增研究存储助手与测试属于该限定范围；不是新wire/native/模式/部署授权。",
+    "stop": "完成这一个原型与有效反例即回传；剩余生产接入/可信代次由主线，不循环自审。",
+    "receiver_read": "UNKNOWN",
+    "receiver_execution": "NOT_STARTED_FOR_THIS_NEW_TASK"
   }
 }

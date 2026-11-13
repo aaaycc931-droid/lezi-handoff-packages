@@ -4979,5 +4979,195 @@
     "execution": 0,
     "production_changes": 0,
     "branch_read_receipts_untouched": true
+  },
+  "result_implementation_20261113": {
+    "id": "MAIN-RESULT-BOUNDARY-PROTOTYPE-20261113",
+    "status": "OFFLINE_IMPLEMENTED_AND_VALIDATED_NOT_PRODUCTION",
+    "source_head": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+    "engine": {
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "branch": "codex/main-result-ledger-prototype-20261113",
+      "commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+      "draft_pr": 24,
+      "new_files": 6,
+      "production_changes": 0,
+      "readback_exact": 6
+    },
+    "tests": {
+      "id": "MAIN-AUTHORITY-RESULT-PROTOTYPE-20261113",
+      "base_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "production_changed": 0,
+      "wire_changed": 0,
+      "coverage": [
+        "hero choice",
+        "resign"
+      ],
+      "node": "v24.22.1",
+      "command": "node --test --test-reporter=tap tests/main-authority-result-prototype.test.ts tests/bluetooth-host-room.test.ts",
+      "tests": 29,
+      "passed": 29,
+      "failed": 0,
+      "new_tests": 21,
+      "unchanged_host_tests": 8,
+      "initial_attempt": {
+        "tests": 19,
+        "passed": 3,
+        "failed": 16,
+        "cause": "Prototype required explicit jieqi, but production omits default mode; corrected adapter to use existing normalizeGameMode."
+      },
+      "source_identity_files": 36,
+      "claims": [
+        "offline real production function calls",
+        "new research owner and in-memory records",
+        "same-authority read-only queries",
+        "fault injection separately labeled"
+      ],
+      "not_claimed": [
+        "production integration",
+        "wire negotiation",
+        "trusted native generation",
+        "cross-reconnect actor continuity",
+        "all-action outcome classification",
+        "durability",
+        "ordinary/half mode admission",
+        "independent QA",
+        "Android/device/radio",
+        "full 935 or 56/64 acceptance"
+      ]
+    },
+    "decision": {
+      "direction": "A_v2_explicit_hello_negotiation_for_future_draft",
+      "B": "DEFERRED_NOT_IMPLEMENTED",
+      "wire_implemented": false,
+      "production_integrated": false
+    },
+    "report": "worklines/main/RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
+    "h10": {
+      "scope": "worklines/main/H10_PREPARATION_IMPLEMENTATION_SCOPE.md",
+      "sampling": "USER_CHOICE_PENDING",
+      "choices": [
+        "1:首次等概率不重复抽3，仅至少3候选及时选择成功路径研究",
+        "2:暂不定分布，只做声明候选条件式研究"
+      ],
+      "implementation": false,
+      "standard_unblocked": false
+    },
+    "main_next": {
+      "id": "MAIN-RESULT-PRODUCTION-BOUNDARY-20261113",
+      "action": "依据PR24把有证据的命令提交/记账边界形成可选内部生产适配草稿，先不接新线上消息；处理代次/协商/actor连续性具体差分。普通H10待首次采样选择后按范围推进；不冻结其他主线/支线。",
+      "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030"
+    }
+  },
+  "main_result_prototype_20261113": {
+    "id": "MAIN-RESULT-BOUNDARY-PROTOTYPE-20261113",
+    "source_engine": "71145df45ad17215a3731e53150b6728e079e375",
+    "actual_read": [
+      "PR22 host-room/protocol全文",
+      "remote-room hero选择/到期/移动/刺杀/认输/再战及room.resignRoomGame/game.applyResignation定向段",
+      "web/app.ts1248—1408、Java validateEnvelope/emit309—341、GameWebBridge184—226",
+      "main ADJUDICATION.H10与half clarification定向对象"
+    ],
+    "source_downloaded_not_all_semantically_read": 36,
+    "actual_implementation": {
+      "base": "71145df45ad17215a3731e53150b6728e079e375",
+      "branch": "codex/main-result-ledger-prototype-20261113",
+      "commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+      "draft_pr": 24,
+      "new_files": 6,
+      "production_changes": 0,
+      "readback_exact": 6
+    },
+    "actual_tests": {
+      "id": "MAIN-AUTHORITY-RESULT-PROTOTYPE-20261113",
+      "base_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "production_changed": 0,
+      "wire_changed": 0,
+      "coverage": [
+        "hero choice",
+        "resign"
+      ],
+      "node": "v24.22.1",
+      "command": "node --test --test-reporter=tap tests/main-authority-result-prototype.test.ts tests/bluetooth-host-room.test.ts",
+      "tests": 29,
+      "passed": 29,
+      "failed": 0,
+      "new_tests": 21,
+      "unchanged_host_tests": 8,
+      "initial_attempt": {
+        "tests": 19,
+        "passed": 3,
+        "failed": 16,
+        "cause": "Prototype required explicit jieqi, but production omits default mode; corrected adapter to use existing normalizeGameMode."
+      },
+      "source_identity_files": 36,
+      "claims": [
+        "offline real production function calls",
+        "new research owner and in-memory records",
+        "same-authority read-only queries",
+        "fault injection separately labeled"
+      ],
+      "not_claimed": [
+        "production integration",
+        "wire negotiation",
+        "trusted native generation",
+        "cross-reconnect actor continuity",
+        "all-action outcome classification",
+        "durability",
+        "ordinary/half mode admission",
+        "independent QA",
+        "Android/device/radio",
+        "full 935 or 56/64 acceptance"
+      ]
+    },
+    "not_claimed": "生产集成/线上A/Android/跨重连/全动作/普通准入/独立QA",
+    "concurrent_chaos": {
+      "source_handoff_commit": "fc70084ee982d5eba3412d383ab7c392094a3849",
+      "engine_commit": "09af8bf1dae274e180d123370b86d444aafad4c9",
+      "read": [
+        "CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md全文",
+        "engine CH_LIFECYCLE_VALIDATION.md及SOURCE_AUDIT.json全文",
+        "JVM_RESULTS 7例输入/状态/回调脚本与限制，未全读各线程trace",
+        "WEB_RESULTS 8例观察/最终结果/尝试类型/限制",
+        "RETURN_TO_MAIN.latest_receiver_phase.offline_lifecycle_validation_20261113"
+      ],
+      "adopted": "7JVM/8Web为支线自测、有界生产路径/替身证据；EOF可接受、清等待不等于结果、C2仅明确流模型。用于主线身份保留/结果方案，不独立重跑。",
+      "not_adopted": [
+        "W3真实Android自然时序已通过",
+        "全CH07/全部动作/设备验收",
+        "主线已全文审计两个研究驱动"
+      ],
+      "main_rerun": 0
+    }
+  },
+  "chaos_offline_results_20261113": {
+    "source_handoff_commit": "fc70084ee982d5eba3412d383ab7c392094a3849",
+    "engine_commit": "09af8bf1dae274e180d123370b86d444aafad4c9",
+    "read": [
+      "CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md全文",
+      "engine CH_LIFECYCLE_VALIDATION.md及SOURCE_AUDIT.json全文",
+      "JVM_RESULTS 7例输入/状态/回调脚本与限制，未全读各线程trace",
+      "WEB_RESULTS 8例观察/最终结果/尝试类型/限制",
+      "RETURN_TO_MAIN.latest_receiver_phase.offline_lifecycle_validation_20261113"
+    ],
+    "adopted": "7JVM/8Web为支线自测、有界生产路径/替身证据；EOF可接受、清等待不等于结果、C2仅明确流模型。用于主线身份保留/结果方案，不独立重跑。",
+    "not_adopted": [
+      "W3真实Android自然时序已通过",
+      "全CH07/全部动作/设备验收",
+      "主线已全文审计两个研究驱动"
+    ],
+    "main_rerun": 0
+  },
+  "half_chaos_offline_results_20261113": {
+    "source_handoff_commit": "7d86ae477b044f83bf268fbbb97bfaa66003d3da",
+    "engine_commit": "9f0b14ccb02308fd3579e3cf58cde063aca11cf6",
+    "read": [
+      "HC_AUTHORITY_RESULT_EVIDENCE_20261113.md全文（含§3.1混乱新结果接收）",
+      "engine docs/research/HC_RESULT_EVIDENCE.md全文",
+      "RESULTS_20261113.json基线/计数/limits元信息；SCOPE仅顶层键/基线，未声称完整驱动或逐例原JSON审计"
+    ],
+    "adopted": "13例为半混乱实际自测报告；直接函数/host时钟分支、相同选择不证明接受、认输/forfeit去重不同、提交后输出错误分层，作为主线内部适配约束。主线未独立重跑，旧H1/H2/H3已完成，不继续派相同内容。",
+    "reported_passed": 13,
+    "main_rerun": 0,
+    "production_integration": false
   }
 }

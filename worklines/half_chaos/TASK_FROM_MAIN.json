@@ -83,7 +83,7 @@
       "output": "同一候选报告追加反例检查及待主线取舍"
     }
   },
-  "active_main_dispatch": "evidence_queue_20261113",
+  "active_main_dispatch": "main_result_increment_20261113",
   "evidence_queue_20261113": {
     "schema": "lezi.main.delegated_validation.v1",
     "date_local": "2026-11-13",
@@ -168,5 +168,19 @@
     ],
     "follow_up": "针对测试暴露的具体新差分修候选/加最小对照即可；无新证据不重复自审。半混乱本包是主线委托共享jieqi源验证，绝不算半混乱产品准入或56/64验收。",
     "output": "worklines/half_chaos/HC_AUTHORITY_RESULT_EVIDENCE_20261113.md + 专属引擎分支源码/命令/结果；修订候选时保留版本和状态。"
+  },
+  "main_result_increment_20261113": {
+    "id": "MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113",
+    "status": "READY_NEW_SOURCE_REVIEW_AFTER_COMPLETED_H1_H2_H3",
+    "engine_commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+    "draft_pr": 24,
+    "report": "worklines/main/RESULT_RECONCILIATION_IMPLEMENTATION_20261113.md",
+    "action": "H1/H2/H3已完成，不重做。以PR24/f30f1f5与本线13例新证据作一次有界反例审查：重点核hero期限处置/同结果不同来源、action种类不能共用duplicate结论、内容/actor/scope绑定、提交与投影分离。先读新代码，只有发现具体未覆盖风险才补最小新试验；无需为凑数重跑29或原13。",
+    "limits": "PR24不实现生产A，不证明跨重连actor/代次；研究新ID前提不是已批准生产去重策略，H15准备/H11/移动尚未覆盖。本线新成果优先保存，不因补充输入丢弃正在进行工作。",
+    "receiver_read": "UNKNOWN_FOR_NEW_PR24_TASK",
+    "receiver_adoption": "UNKNOWN",
+    "main_receipt": "worklines/main/READ_RECEIPTS.json#half_chaos_offline_results_20261113",
+    "execution_scope": "沿既有测试研究授权，只在本线研究分支新增hc-result-*研究/测试/回传。需要执行PR24时在本地单独固定检出f30f1f5作只读依赖，再叠本线测试；记录依赖SHA，不复制改写主线实现、不合并它线分支、不改生产文件。",
+    "deliverable": "给主线具体可复现缺陷/适用边界和最小建议；没有新缺陷也据实结束，不循环自审。此为同项目不同执行者复核，不自动算正式独立QA。"
   }
 }
