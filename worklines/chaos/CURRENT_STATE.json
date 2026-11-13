@@ -9,7 +9,7 @@
   "received_dispatch_id": "MAIN-THREE-MODE-RUNTIME-20261028-NP32",
   "received_task_id": "CH-RECEIVE-MAIN-RUNTIME-20261027",
   "received_at_source_commit": "d07769e432d5a1b7a1102ab344c5e8701aa5d68b",
-  "state": "C4_MEMORY_PROTOTYPE_COMPLETE_BOUNDED",
+  "state": "C5A_C5B_ISOLATED_DRAFT_COMPLETE",
   "actual_receiver_read": true,
   "actual_receiver_adoption": "DELEGATED_BOUNDED_OFFLINE_VALIDATION_COMPLETED_NOT_INDEPENDENT_QA",
   "completed": [
@@ -29,13 +29,14 @@
     "2026-11-13 pinned PR22 action-specific source review: H15 opening vs later training, H11 A/B activation/skip and ordinary capture; envelope/payload IDs, outer phase and lifecycle boundaries returned without engine execution.",
     "2026-11-13 completed delegated native connection lifecycle source review and three minimal missing-timing witness specs; EOF relay coverage gap identified, no runtime executed.",
     "2026-11-13 C1/C2/C3: 7 JVM and 8 actual Web/room bounded offline cases; no production edits.",
-    "2026-11-13 C4 memory-only original request preservation prototype: 16 bounded checks passed; production unchanged."
+    "2026-11-13 C4 memory-only original request preservation prototype: 16 bounded checks passed; production unchanged.",
+    "2026-11-13 C5A/C5B isolated implementation complete: 16 native +19 Web, source strip and remote readback."
   ],
-  "next_action": "No new chaos task; C4 package complete. Resume only on concrete production integration/trusted generation source or new bounded dispatch.",
-  "next_action_status": "C4_COMPLETE_WAIT_CONCRETE_INPUT",
+  "next_action": "C5_FINITE_PACKAGE_COMPLETE; main reviews isolated draft and integrates concrete result/identity contract. Await specific new source or bounded task.",
+  "next_action_status": "C5_COMPLETE_WAIT_MAIN_ADOPTION_REVIEW",
   "existing_line_history": "Historical original-jieqi sources recovered for H11/H15 from inherited repo; not all earlier independent work/history conclusively recovered; any newer undispatched outcomes preserved",
   "new_gameplay_confirmations": 0,
-  "game_code_changes": 0,
+  "game_code_changes": 3,
   "engine_runs": 1,
   "full_mode_verified": false,
   "limitation_audit_status": "bounded_current_source_and_pinned_PR13_static_review_completed_no_runtime",
@@ -47,7 +48,7 @@
   "engine_main_runtime_scope": "not audited",
   "scoring": "frozen",
   "NET": "paused",
-  "last_completed_task": "MAIN-CH-PENDING-REQUEST-PRESERVATION-PROTOTYPE-20261113",
+  "last_completed_task": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
   "added_outputs": [
     "CH02_JIEQI_WITNESSES.json",
     "CH02_VALIDATION.md",
@@ -65,7 +66,8 @@
     "CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW_20261113.md",
     "NEXT_ACTIONS.json",
     "CH_OFFLINE_LIFECYCLE_VALIDATION_20261113.md",
-    "CH_PENDING_REQUEST_PRESERVATION_20261113.md"
+    "CH_PENDING_REQUEST_PRESERVATION_20261113.md",
+    "CH_LOCAL_CONNECTION_GENERATION_20261113.md"
   ],
   "validation": {
     "static_seed_pool": "checked",
@@ -480,8 +482,8 @@
     "boundary": "本授权是本线文件更新main授权；不据此扩大共享代码所有权、引擎运行、合并部署、APK、模式开放或候选规则采用。",
     "agreement": "worklines/chaos/PROJECT_WORK_AGREEMENT.md"
   },
-  "latest_received_task_id": "MAIN-CH-PENDING-REQUEST-PRESERVATION-PROTOTYPE-20261113",
-  "latest_received_at_source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+  "latest_received_task_id": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+  "latest_received_at_source_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
   "engine_runs_scope": "One new Node research driver execution containing 8 actual Web/room cases; 7 JVM cases separately recorded. Historical nested counts retain their original scope.",
   "offline_lifecycle_validation_20261113": {
     "id": "MAIN-CH-OFFLINE-LIFECYCLE-VALIDATION-20261113",
@@ -586,5 +588,46 @@
     "production_adopted": false,
     "next": "No new chaos task; C4 package complete. Resume only on concrete production integration/trusted generation source or new bounded dispatch.",
     "own_new_runs": 0
-  }
+  },
+  "c5_local_generation_20261113": {
+    "id": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+    "status": "C5A_C5B_ISOLATED_DRAFT_COMPLETE",
+    "date_local": "2026-11-13",
+    "source_handoff": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
+    "engine_base": "5cb3df526e1d41d60332b2b1f5c946f41126a720",
+    "engine_branch": "codex/ch-local-generation-draft-20261113",
+    "engine_commit": "4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c",
+    "report": "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
+    "verification": {
+      "native_cases": 16,
+      "web_tests": 19,
+      "final_failed": 0,
+      "full_app_strip": "PASS_NOT_FULL_TYPECHECK",
+      "diff_check": "PASS",
+      "remote_readbacks": 10,
+      "existing_production_files_changed": 3,
+      "protected_existing_files": 648,
+      "wire_changes": 0,
+      "Android_JNI_radio_browser": false,
+      "independent_QA": false,
+      "formal_CH07_increment": 0
+    },
+    "contract": [
+      "Native instance UUID and monotonic decimal-string generation/sequence; immutable role/context per emitted event.",
+      "Attempt-owned socket/server/writer; old connect/accept/readLoop/finally/reconnect cannot install or close new resources.",
+      "localTransportContext v1 read-only; sendCheckedScoped compares and captures actual writer under same session monitor, never retries a new writer.",
+      "Web final callback checks current local instance/generation and consumed sequence; initialization watermark rejects pre-document events.",
+      "Old scoped result/exception cannot mutate new pending; optional legacy path retained, malformed capability stays unknown."
+    ],
+    "limits": [
+      "Explicit socket/JSON/inline-or-queued UI models and VM functions, not real Android/WebView scheduling.",
+      "No cross-runtime atomicity guarantee from final synchronous context query through completion of JS processing if native changes again during that interval.",
+      "No actor continuity, authority/match binding, wire negotiation, result ledger or durable restoration.",
+      "Web rebuild watermark intentionally rejects pre-document events; restoring old room/UI is not implemented.",
+      "C4 independent unknown remains unknown; local generation is not authoritative acceptance."
+    ],
+    "main_receipt": "UNKNOWN",
+    "next": "C5_FINITE_PACKAGE_COMPLETE; main reviews isolated draft and integrates concrete result/identity contract. Await specific new source or bounded task."
+  },
+  "game_code_changes_scope": "C5 isolated draft only: native session/bridge and Web Bluetooth paths; not merged/adopted production."
 }

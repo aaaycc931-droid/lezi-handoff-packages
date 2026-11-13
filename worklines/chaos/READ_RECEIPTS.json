@@ -789,5 +789,53 @@
     "production_adopted": false,
     "next": "No new chaos task; C4 package complete. Resume only on concrete production integration/trusted generation source or new bounded dispatch.",
     "own_new_runs": 0
+  },
+  "c5_local_generation_20261113": {
+    "id": "MAIN-CH-C5-LOCAL-CONNECTION-GENERATION-20261113",
+    "status": "C5A_C5B_ISOLATED_DRAFT_COMPLETE",
+    "date_local": "2026-11-13",
+    "source_handoff": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
+    "engine_base": "5cb3df526e1d41d60332b2b1f5c946f41126a720",
+    "engine_branch": "codex/ch-local-generation-draft-20261113",
+    "engine_commit": "4bd8bf4ca79d4a1743d431a55fae2f43e6c37e3c",
+    "report": "worklines/chaos/CH_LOCAL_CONNECTION_GENERATION_20261113.md",
+    "verification": {
+      "native_cases": 16,
+      "web_tests": 19,
+      "final_failed": 0,
+      "full_app_strip": "PASS_NOT_FULL_TYPECHECK",
+      "diff_check": "PASS",
+      "remote_readbacks": 10,
+      "existing_production_files_changed": 3,
+      "protected_existing_files": 648,
+      "wire_changes": 0,
+      "Android_JNI_radio_browser": false,
+      "independent_QA": false,
+      "formal_CH07_increment": 0
+    },
+    "contract": [
+      "Native instance UUID and monotonic decimal-string generation/sequence; immutable role/context per emitted event.",
+      "Attempt-owned socket/server/writer; old connect/accept/readLoop/finally/reconnect cannot install or close new resources.",
+      "localTransportContext v1 read-only; sendCheckedScoped compares and captures actual writer under same session monitor, never retries a new writer.",
+      "Web final callback checks current local instance/generation and consumed sequence; initialization watermark rejects pre-document events.",
+      "Old scoped result/exception cannot mutate new pending; optional legacy path retained, malformed capability stays unknown."
+    ],
+    "limits": [
+      "Explicit socket/JSON/inline-or-queued UI models and VM functions, not real Android/WebView scheduling.",
+      "No cross-runtime atomicity guarantee from final synchronous context query through completion of JS processing if native changes again during that interval.",
+      "No actor continuity, authority/match binding, wire negotiation, result ledger or durable restoration.",
+      "Web rebuild watermark intentionally rejects pre-document events; restoring old room/UI is not implemented.",
+      "C4 independent unknown remains unknown; local generation is not authoritative acceptance."
+    ],
+    "main_receipt": "UNKNOWN",
+    "next": "C5_FINITE_PACKAGE_COMPLETE; main reviews isolated draft and integrates concrete result/identity contract. Await specific new source or bounded task.",
+    "read_scope": [
+      "chaos current entry/task/state/next/receipt/return; collaboration/CURRENT unchanged v0.18",
+      "main CH_C5_LOCAL_CONNECTION_GENERATION_DISPATCH_20261113.md complete",
+      "C5 branch/base and prior research branch HEADs reconciled at 5cb3df5",
+      "native session and bridge complete; Web Bluetooth types/send/action/native listener and nativeBluetooth function",
+      "C1/C2 and receipt channel drivers reused as declared shims; no duplicate old-suite runs"
+    ],
+    "adopted": "Explicit C5 isolated production-source draft authorization; local contract only, no production merge/remote protocol adoption."
   }
 }
