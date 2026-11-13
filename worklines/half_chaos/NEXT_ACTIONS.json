@@ -1,11 +1,10 @@
 {
-  "revision": "HC-58-AUTHORITY-RESULT-EVIDENCE-20261113",
+  "revision": "HC-59-PR24-BOUNDED-REVIEW-20261113",
   "next_independent_task": {
-    "id": "NEXT-HC-RESULT-IMPLEMENTATION-OR-LIFECYCLE-DELTA",
-    "status": "BOUNDED_QUEUE_COMPLETE_WAIT_CONCRETE_NEW_INPUT",
-    "action": "H1/H2/H3已完成；仅在主线实际协议/结果记录实施范围或补丁、混乱新的生产接收/自然队列证据到达时定向修订。不重复矩阵/18例、不扩大无依据样本、不自动轮询。",
-    "owner": "half_chaos scoped reception; main shared implementation",
-    "acceptance": "明确源提交及受影响合同；无真实记录继续unknown；不把新离线jieqi探针算原半混乱客户端验收。"
+    "id": "NEXT-HC-PR24-SCOPE-GUARD-FIX-REVIEW",
+    "status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
+    "action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
+    "owner": "main implementation; half_chaos scoped review"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -26,7 +25,7 @@
     "HC-MAIN-H21-REVEAL-CONTROL"
   ],
   "new_rule_requires_specific_confirmation": true,
-  "runtime_scope": "本包固定PR22离线jieqi研究完成13/13；未来运行依具体新包；原56/64和真实半混乱客户端未验",
+  "runtime_scope": "只执行PR24固定只读依赖的4项新scope控制；旧13/29不重跑；未改生产源",
   "scoring_frozen": true,
   "NET": "paused",
   "previous_completed_task": {
@@ -1411,85 +1410,38 @@
   ],
   "last_verified_head_at_preparation": "93411f461fc80de3c7639149c2161115e189fbec",
   "latest_completed_stage": {
-    "id": "HC-58-AUTHORITY-RESULT-EVIDENCE-20261113",
-    "date_local": "2026-11-13",
-    "task": "MAIN-HC-AUTHORITY-RESULT-EVIDENCE-20261113",
-    "source_handoff_commit": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
-    "publication_parent": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
-    "engine_base": "71145df45ad17215a3731e53150b6728e079e375",
-    "engine_commit": "9f0b14ccb02308fd3579e3cf58cde063aca11cf6",
-    "engine_branch": "codex/hc-result-evidence-20261113",
-    "report": "worklines/half_chaos/HC_AUTHORITY_RESULT_EVIDENCE_20261113.md",
-    "status": "H1_H2_H3_COMPLETE_BOUNDED_OFFLINE_EVIDENCE",
-    "actual_validation": {
-      "scope": "固定PR22真实jieqi房间及Web函数离线受控研究；非半混乱原请求/设备/独立QA",
-      "final_cases": 13,
-      "passed": 13,
-      "failed": 0,
-      "H1_cases": 7,
-      "H2_cases": 5,
-      "H3_support_cases": 1,
-      "node": "v24.22.1",
-      "java_runs": 0,
-      "android_runs": 0,
-      "NET_runs": 0,
-      "initial_failures": "preflight错误路径；初次11/13，2项测试期望错误已纠正，详engine RUN_LOG；生产源未改",
-      "production_code_changes": 0,
-      "engine_research_commit": "9f0b14ccb02308fd3579e3cf58cde063aca11cf6",
-      "engine_readback_files": 5,
+    "id": "HC-59-PR24-BOUNDED-REVIEW-20261113",
+    "task": "MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113",
+    "source_handoff_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+    "dependency_pr": 24,
+    "dependency_commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+    "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+    "report": "worklines/half_chaos/HC_PR24_BOUNDED_REVIEW_20261113.md",
+    "status": "BOUNDED_REVIEW_COMPLETE_ONE_RUNTIME_GUARD_GAP",
+    "validation": {
+      "new_cases_run": 4,
+      "observation_assertions_passed": 4,
+      "guard_gap_reproductions": 2,
+      "distinct_findings": 1,
+      "finding": "F1 missing authorityId or matchEpoch accepted under intentionally malformed offline scope",
+      "production_changes": 0,
+      "PR24_changes": 0,
+      "old13_29_rerun": false,
+      "independent_QA": false,
+      "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+      "engine_readback_files": 3,
       "engine_readback_match": true,
       "formal56_complete": 0,
-      "formal64_pass": 0,
-      "actual_half_chaos_client_deliveries": 0,
-      "independent_QA": false
+      "formal64_pass": 0
     },
-    "phases": {
-      "H1": "COMPLETED_7_CASES",
-      "H2": "COMPLETED_5_CASES_WITH_EXPLICIT_FAULT_INJECTION",
-      "H3": "COMPLETED_CONTRACT_DELTA_AND_1_REMATCH_CONTROL"
-    },
-    "protocol_approved": false,
-    "ledger_implemented": false,
-    "featuresReady": false,
-    "scoring": "FROZEN",
-    "NET": "PAUSED",
+    "scope_limit": "Trusted offline caller; malformed inputs intentionally violate static ResultScope; no network exploit or correctly typed input failure claimed",
     "main_read": "UNKNOWN",
     "main_adoption": "UNKNOWN",
     "next": {
-      "id": "NEXT-HC-RESULT-IMPLEMENTATION-OR-LIFECYCLE-DELTA",
-      "status": "BOUNDED_QUEUE_COMPLETE_WAIT_CONCRETE_NEW_INPUT",
-      "action": "H1/H2/H3已完成；仅在主线实际协议/结果记录实施范围或补丁、混乱新的生产接收/自然队列证据到达时定向修订。不重复矩阵/18例、不扩大无依据样本、不自动轮询。",
-      "owner": "half_chaos scoped reception; main shared implementation",
-      "acceptance": "明确源提交及受影响合同；无真实记录继续unknown；不把新离线jieqi探针算原半混乱客户端验收。"
-    },
-    "cross_source_increment": {
-      "source_handoff_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
-      "engine_commit": "09af8bf1dae274e180d123370b86d444aafad4c9",
-      "read_scope": [
-        "CH_OFFLINE_LIFECYCLE_VALIDATION全文",
-        "CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW新增§9",
-        "engine docs/research/CH_LIFECYCLE_VALIDATION全文",
-        "WEB_RESULTS全部8例",
-        "JVM_RESULTS inputs/events及关键trace（非全部脚本语义审计）",
-        "SOURCE_AUDIT全文"
-      ],
-      "source_checks": "8/8 Web rows matched JVM inputs/message counts/choice/UI; JVM result hash and 3 Java/Web source hashes matched",
-      "reported_passes": {
-        "JVM": 7,
-        "Web": 8
-      },
-      "reruns_here": 0,
-      "adopted": [
-        "限定模型下完整无换行EOF实际送达房间",
-        "不同权威结果均被UI断连重置清除瞬时ID/unknown",
-        "C2晚旧send只在明示流关闭模型下可达"
-      ],
-      "not_adopted": [
-        "真机/JNI自然调度",
-        "C3证明旧回调越过新CONNECTED",
-        "独立QA或全动作保证"
-      ],
-      "contract_delta": "未决请求身份必须独立于会被清除的UI状态；EOF与连接模型边界分别保留"
+      "id": "NEXT-HC-PR24-SCOPE-GUARD-FIX-REVIEW",
+      "status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
+      "action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
+      "owner": "main implementation; half_chaos scoped review"
     }
   },
   "stale_index_repair": {
@@ -1643,5 +1595,98 @@
       "main_read": "UNKNOWN",
       "main_adoption": "UNKNOWN"
     }
+  },
+  "r59_previous_navigation": {
+    "revision": "HC-58-AUTHORITY-RESULT-EVIDENCE-20261113",
+    "next_independent_task": {
+      "id": "NEXT-HC-RESULT-IMPLEMENTATION-OR-LIFECYCLE-DELTA",
+      "status": "BOUNDED_QUEUE_COMPLETE_WAIT_CONCRETE_NEW_INPUT",
+      "action": "H1/H2/H3已完成；仅在主线实际协议/结果记录实施范围或补丁、混乱新的生产接收/自然队列证据到达时定向修订。不重复矩阵/18例、不扩大无依据样本、不自动轮询。",
+      "owner": "half_chaos scoped reception; main shared implementation",
+      "acceptance": "明确源提交及受影响合同；无真实记录继续unknown；不把新离线jieqi探针算原半混乱客户端验收。"
+    },
+    "latest_completed_stage": {
+      "id": "HC-58-AUTHORITY-RESULT-EVIDENCE-20261113",
+      "date_local": "2026-11-13",
+      "task": "MAIN-HC-AUTHORITY-RESULT-EVIDENCE-20261113",
+      "source_handoff_commit": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+      "publication_parent": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
+      "engine_base": "71145df45ad17215a3731e53150b6728e079e375",
+      "engine_commit": "9f0b14ccb02308fd3579e3cf58cde063aca11cf6",
+      "engine_branch": "codex/hc-result-evidence-20261113",
+      "report": "worklines/half_chaos/HC_AUTHORITY_RESULT_EVIDENCE_20261113.md",
+      "status": "H1_H2_H3_COMPLETE_BOUNDED_OFFLINE_EVIDENCE",
+      "actual_validation": {
+        "scope": "固定PR22真实jieqi房间及Web函数离线受控研究；非半混乱原请求/设备/独立QA",
+        "final_cases": 13,
+        "passed": 13,
+        "failed": 0,
+        "H1_cases": 7,
+        "H2_cases": 5,
+        "H3_support_cases": 1,
+        "node": "v24.22.1",
+        "java_runs": 0,
+        "android_runs": 0,
+        "NET_runs": 0,
+        "initial_failures": "preflight错误路径；初次11/13，2项测试期望错误已纠正，详engine RUN_LOG；生产源未改",
+        "production_code_changes": 0,
+        "engine_research_commit": "9f0b14ccb02308fd3579e3cf58cde063aca11cf6",
+        "engine_readback_files": 5,
+        "engine_readback_match": true,
+        "formal56_complete": 0,
+        "formal64_pass": 0,
+        "actual_half_chaos_client_deliveries": 0,
+        "independent_QA": false
+      },
+      "phases": {
+        "H1": "COMPLETED_7_CASES",
+        "H2": "COMPLETED_5_CASES_WITH_EXPLICIT_FAULT_INJECTION",
+        "H3": "COMPLETED_CONTRACT_DELTA_AND_1_REMATCH_CONTROL"
+      },
+      "protocol_approved": false,
+      "ledger_implemented": false,
+      "featuresReady": false,
+      "scoring": "FROZEN",
+      "NET": "PAUSED",
+      "main_read": "UNKNOWN",
+      "main_adoption": "UNKNOWN",
+      "next": {
+        "id": "NEXT-HC-RESULT-IMPLEMENTATION-OR-LIFECYCLE-DELTA",
+        "status": "BOUNDED_QUEUE_COMPLETE_WAIT_CONCRETE_NEW_INPUT",
+        "action": "H1/H2/H3已完成；仅在主线实际协议/结果记录实施范围或补丁、混乱新的生产接收/自然队列证据到达时定向修订。不重复矩阵/18例、不扩大无依据样本、不自动轮询。",
+        "owner": "half_chaos scoped reception; main shared implementation",
+        "acceptance": "明确源提交及受影响合同；无真实记录继续unknown；不把新离线jieqi探针算原半混乱客户端验收。"
+      },
+      "cross_source_increment": {
+        "source_handoff_commit": "d47d1697f3f9dcb3d480ae2fbc7e61587c2c6a8b",
+        "engine_commit": "09af8bf1dae274e180d123370b86d444aafad4c9",
+        "read_scope": [
+          "CH_OFFLINE_LIFECYCLE_VALIDATION全文",
+          "CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW新增§9",
+          "engine docs/research/CH_LIFECYCLE_VALIDATION全文",
+          "WEB_RESULTS全部8例",
+          "JVM_RESULTS inputs/events及关键trace（非全部脚本语义审计）",
+          "SOURCE_AUDIT全文"
+        ],
+        "source_checks": "8/8 Web rows matched JVM inputs/message counts/choice/UI; JVM result hash and 3 Java/Web source hashes matched",
+        "reported_passes": {
+          "JVM": 7,
+          "Web": 8
+        },
+        "reruns_here": 0,
+        "adopted": [
+          "限定模型下完整无换行EOF实际送达房间",
+          "不同权威结果均被UI断连重置清除瞬时ID/unknown",
+          "C2晚旧send只在明示流关闭模型下可达"
+        ],
+        "not_adopted": [
+          "真机/JNI自然调度",
+          "C3证明旧回调越过新CONNECTED",
+          "独立QA或全动作保证"
+        ],
+        "contract_delta": "未决请求身份必须独立于会被清除的UI状态；EOF与连接模型边界分别保留"
+      }
+    },
+    "runtime_scope": "本包固定PR22离线jieqi研究完成13/13；未来运行依具体新包；原56/64和真实半混乱客户端未验"
   }
 }

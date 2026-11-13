@@ -1,14 +1,14 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-58-AUTHORITY-RESULT-EVIDENCE-20261113",
+  "revision": "HC-59-PR24-BOUNDED-REVIEW-20261113",
   "workline": "half_chaos",
   "date_local": "2026-11-13",
   "timezone": "Asia/Shanghai",
-  "status": "r58_bounded_offline_queue_complete_wait_concrete_new_input",
+  "status": "r59_PR24_review_complete_one_guard_gap",
   "baseline_commit": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
-  "authorization": "用户继续半混乱；主线TASK_FROM_MAIN.evidence_queue_20261113明确委派固定PR22受控离线Node/JVM测试，仅写专属研究分支及本线文档；不改生产源/协议/模式/评分/NET。旧文档限定只对该包被扩展。",
+  "authorization": "用户询问继续；按MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113执行有界源审查，只对具体新风险补本线研究试验；PR24单独固定只读依赖。",
   "collaboration": {
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-23.v0.18",
@@ -151,10 +151,9 @@
     "latest_session_closure": "worklines/half_chaos/HC55_SESSION_CLOSEOUT_20261029.json"
   },
   "completed_this_round": [
-    "完成H1真实处置正反控制7例",
-    "完成H2终局/投影/序列化边界5例",
-    "完成H3跨线源核与候选修订及再战对照1例",
-    "发布引擎专属研究提交并5文件读回一致"
+    "读取PR24原型/测试/说明全文，审四项关键边界",
+    "针对缺失scope字段新增4个最小对照，复现1个问题2变体",
+    "本线研究3文件发布读回，未改PR24或生产源"
   ],
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": 0,
@@ -201,7 +200,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "H1/H2/H3已完成；仅在主线实际协议/结果记录实施范围或补丁、混乱新的生产接收/自然队列证据到达时定向修订。不重复矩阵/18例、不扩大无依据样本、不自动轮询。",
+  "next_action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -213,7 +212,7 @@
     "knowledge_projection_alignment": "pending_main_implementation_source_review"
   },
   "new_game_code_changes": 0,
-  "new_game_engine_tests": 13,
+  "new_game_engine_tests": 4,
   "engine_tests_passed": true,
   "full_mode_verified": false,
   "scoring": {
@@ -228,7 +227,7 @@
   },
   "NET": "paused",
   "limitation_audit_status": "completed_for_bounded_queue; remaining_scope_partial",
-  "verification_level": "V4仅指定离线实验条件；V2来源；候选差分为AI建议，非独立QA/正式验收",
+  "verification_level": "限定离线malformed-input复现；4观察检查通过不等于产品验收；源码复核非正式独立QA",
   "publication_scope": "current_half_chaos_design_bodies_and_source_references; not_full_private_archive_migration",
   "source_index": "SOURCE_INDEX.json",
   "return_record": "RETURN_TO_MAIN.json",
@@ -1545,7 +1544,7 @@
   },
   "last_completed_design_revision": "HC-PREP-20261020-r40",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
-  "next_action_status": "BOUNDED_QUEUE_COMPLETE_WAIT_CONCRETE_NEW_INPUT",
+  "next_action_status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
     "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
@@ -3109,7 +3108,7 @@
       "contract_delta": "未决请求身份必须独立于会被清除的UI状态；EOF与连接模型边界分别保留"
     }
   },
-  "current_report": "worklines/half_chaos/HC_AUTHORITY_RESULT_EVIDENCE_20261113.md",
+  "current_report": "worklines/half_chaos/HC_PR24_BOUNDED_REVIEW_20261113.md",
   "main_r57_reception_20261113": {
     "source_commit": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
     "path": "worklines/main/READ_RECEIPTS.json#result_reconciliation_intake_20261113",
@@ -3120,5 +3119,67 @@
       "账本实现",
       "正式验收"
     ]
+  },
+  "r59_previous_active_metadata": {
+    "revision": "HC-58-AUTHORITY-RESULT-EVIDENCE-20261113",
+    "status": "r58_bounded_offline_queue_complete_wait_concrete_new_input",
+    "next_action": "H1/H2/H3已完成；仅在主线实际协议/结果记录实施范围或补丁、混乱新的生产接收/自然队列证据到达时定向修订。不重复矩阵/18例、不扩大无依据样本、不自动轮询。",
+    "next_action_status": "BOUNDED_QUEUE_COMPLETE_WAIT_CONCRETE_NEW_INPUT",
+    "current_report": "worklines/half_chaos/HC_AUTHORITY_RESULT_EVIDENCE_20261113.md",
+    "completed_this_round": [
+      "完成H1真实处置正反控制7例",
+      "完成H2终局/投影/序列化边界5例",
+      "完成H3跨线源核与候选修订及再战对照1例",
+      "发布引擎专属研究提交并5文件读回一致"
+    ],
+    "authorization": "用户继续半混乱；主线TASK_FROM_MAIN.evidence_queue_20261113明确委派固定PR22受控离线Node/JVM测试，仅写专属研究分支及本线文档；不改生产源/协议/模式/评分/NET。旧文档限定只对该包被扩展。",
+    "new_game_engine_tests": 13,
+    "engine_tests_passed": true,
+    "verification_level": "V4仅指定离线实验条件；V2来源；候选差分为AI建议，非独立QA/正式验收"
+  },
+  "r59_pr24_review": {
+    "id": "HC-59-PR24-BOUNDED-REVIEW-20261113",
+    "task": "MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113",
+    "source_handoff_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+    "dependency_pr": 24,
+    "dependency_commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+    "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+    "report": "worklines/half_chaos/HC_PR24_BOUNDED_REVIEW_20261113.md",
+    "status": "BOUNDED_REVIEW_COMPLETE_ONE_RUNTIME_GUARD_GAP",
+    "validation": {
+      "new_cases_run": 4,
+      "observation_assertions_passed": 4,
+      "guard_gap_reproductions": 2,
+      "distinct_findings": 1,
+      "finding": "F1 missing authorityId or matchEpoch accepted under intentionally malformed offline scope",
+      "production_changes": 0,
+      "PR24_changes": 0,
+      "old13_29_rerun": false,
+      "independent_QA": false,
+      "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+      "engine_readback_files": 3,
+      "engine_readback_match": true,
+      "formal56_complete": 0,
+      "formal64_pass": 0
+    },
+    "scope_limit": "Trusted offline caller; malformed inputs intentionally violate static ResultScope; no network exploit or correctly typed input failure claimed",
+    "main_read": "UNKNOWN",
+    "main_adoption": "UNKNOWN",
+    "next": {
+      "id": "NEXT-HC-PR24-SCOPE-GUARD-FIX-REVIEW",
+      "status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
+      "action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
+      "owner": "main implementation; half_chaos scoped review"
+    }
+  },
+  "main_r58_reception_verified": {
+    "source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+    "path": "worklines/main/READ_RECEIPTS.json#half_chaos_offline_results_20261113",
+    "adopted": "支线13例自测报告/设计约束，主线未重跑"
+  },
+  "r59_publication_authorization": {
+    "source": "PROJECT_WORK_AGREEMENT.md#2026-11-13 本对话较大状态文件与r59发布授权",
+    "destination": "aaaycc931-droid/lezi-handoff-packages/main",
+    "explicit_user_authorized": true
   }
 }

@@ -3428,5 +3428,55 @@
       ],
       "contract_delta": "未决请求身份必须独立于会被清除的UI状态；EOF与连接模型边界分别保留"
     }
+  },
+  "pr24_review_20261113": {
+    "id": "HC-59-PR24-BOUNDED-REVIEW-20261113",
+    "source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+    "read_scope": [
+      "半混乱最新入口/任务main_result_increment/当前r58状态回传回执及唯一next",
+      "主线RESULT_RECONCILIATION_IMPLEMENTATION全文及half_chaos_offline_results回执",
+      "PR24原型/21项测试源码/方法说明全文",
+      "当前collaboration/CURRENT及MANDATORY_PRECHECK、本线PROJECT_WORK_AGREEMENT；其他本对话已读适用模块在同blob上复用"
+    ],
+    "dependency_commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+    "adopted": [
+      "A为主线后续草稿方向/B暂缓，不宣称线上实施",
+      "r58主线限定接收",
+      "PR24具体原型作为有界审查输入",
+      "F1仅在malformed可信离线输入前提的运行时校验缺口"
+    ],
+    "not_adopted": [
+      "全模式或生产结果服务验收",
+      "网络认证漏洞/跨actor攻击已证",
+      "主线29项由本线重跑",
+      "修复建议已经实施"
+    ],
+    "executed": {
+      "new_cases_run": 4,
+      "observation_assertions_passed": 4,
+      "guard_gap_reproductions": 2,
+      "distinct_findings": 1,
+      "finding": "F1 missing authorityId or matchEpoch accepted under intentionally malformed offline scope",
+      "production_changes": 0,
+      "PR24_changes": 0,
+      "old13_29_rerun": false,
+      "independent_QA": false,
+      "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+      "engine_readback_files": 3,
+      "engine_readback_match": true,
+      "formal56_complete": 0,
+      "formal64_pass": 0
+    },
+    "main_receipt_written": false,
+    "publication_parent": "e423664abb01541e67a32c6f1399463997e0609e",
+    "concurrent_preservation": "Latest main adds hero-design and main/H10/standard coordination, followed by chaos C4 receipt reconciliation at e423664; half_chaos task/write targets unchanged. Preserved without claiming unrelated semantic adoption."
+  },
+  "r59_upload_authorization_20261113": {
+    "source": "current user message in this half_chaos dialogue",
+    "verbatim": "我授权本对话上传较大的项目状态文件。目标仓库已经经过本用户验证文件无敏感历史记录用户进行授权，允许将本轮回传发布到main。",
+    "destination": "aaaycc931-droid/lezi-handoff-packages/main",
+    "scope": "本轮较大项目状态文件和回传",
+    "prior_auto_review": "Denied before explicit user authorization; interrupted tree read returned 404 and no r59 main commit existed. Recovered from local deliverables, not blind replay.",
+    "main_receiver_read": "UNKNOWN"
   }
 }
