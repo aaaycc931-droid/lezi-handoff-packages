@@ -1,0 +1,37 @@
+{
+  "schema": "lezi.chaos.next_actions.v1",
+  "date_local": "2026-11-13",
+  "source_handoff_head": "6979552f76ec0a8866510306891eee9137b3ab7c",
+  "completed": [
+    "MAIN-DELEGATE-CH-LIFECYCLE-20261113",
+    "CH-LIFECYCLE-MINIMAL-WITNESS-SPEC"
+  ],
+  "report": "worklines/chaos/CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW_20261113.md",
+  "ready_independent_follow_on": [],
+  "next_action": "MAIN_REVIEW_LIFECYCLE_AND_RESULT_CONTRACT; chaos follow-on exhausted, resume on specific evidence/conflict/new authorized task",
+  "main_owned_pending": [
+    "Combine lifecycle review with half-chaos result-contract candidate",
+    "Choose compatible result/identity retention scope",
+    "Authorize and execute missing timing validation separately"
+  ],
+  "witnesses": [
+    {
+      "id": "W1",
+      "scope": "EOF vs IOException vs truncated JSON receive path",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W2",
+      "scope": "production executor/locks/writer replacement reachability",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W3",
+      "scope": "native/UI/JS queue ordering and unknown request identity across reconnect",
+      "status": "NOT_RUN"
+    }
+  ],
+  "no_automatic_replay": true,
+  "engine_execution_authorized": false,
+  "main_receipt": "UNKNOWN_FOR_THIS_REPORT"
+}
