@@ -4222,6 +4222,49 @@
       "main_engineering_next_unchanged": true,
       "configuration": "docs/COORDINATION_SETUP.md",
       "other_workline_receipts_written": false
+    },
+    "adaptive_task_followup": {
+      "id": "MAIN-ADAPTIVE-PROJECT-CONVERSATIONS-20261113",
+      "date_local": "2026-11-13",
+      "owner_request_excerpt": "有时候它是三个，有时候它是两个，这都是会根据具体情况变了",
+      "source_type": "current_user_request",
+      "status": "workflow_documented_frontend_adoption_and_natural_effect_pending",
+      "source_main_commit": "cef8418a5ffd67b390654b0d29a17ec7d1ce4eb9",
+      "ui_route_read_commit": "82785937c284720e1f770ad7dadd9c0b1c41b87b",
+      "workflow": "docs/WORKFLOW.md#同一项目内的任务拆分并行与归并",
+      "configuration": "docs/COORDINATION_SETUP.md",
+      "report": "worklines/main/PROJECT_CONTINUATION_REVIEW_20261113.md",
+      "templates": [
+        "docs/project-instructions/ui-image.txt",
+        "docs/project-instructions/visual.txt",
+        "docs/project-instructions/heroes.txt",
+        "docs/project-instructions/modes.txt"
+      ],
+      "scope": "stable_project_scope_and_dynamic_task_assignment;existing_state_and_receipt_reuse",
+      "verification": {
+        "kind": "source_document_scenarios_json_preservation_and_write_scope",
+        "scenarios": [
+          "one_dialogue_multiple_tasks",
+          "one_to_three",
+          "three_to_two",
+          "two_to_one",
+          "partial_transfer",
+          "ambiguous_continue",
+          "sole_task_still_owned",
+          "receipt_not_completed",
+          "single_hero_authorization_preserved"
+        ],
+        "runtime_or_frontend_test": false
+      },
+      "actual_task_assignments_changed": false,
+      "new_conversations_or_subagents_created": false,
+      "other_workline_states_or_receipts_written": false,
+      "independent_ui_branch_written": false,
+      "personal_system_text_handoff_uploaded": false,
+      "frontend_installation": "not_observed",
+      "natural_split_merge_effectiveness": "not_verified",
+      "main_engineering_next_unchanged": true,
+      "current_dialogue_closed": false
     }
   },
   "continuation": {
