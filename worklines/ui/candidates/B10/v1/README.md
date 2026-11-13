@@ -20,13 +20,20 @@
 
 ## 源资产和重建
 
-GitHub 已保留 parameters.json、build.py、evidence.json；原始 B10 PNG 是本轮对话附件，尚未作为二进制上传 GitHub。不要把 GitHub 的文字源冒充 PNG 原图已发布。
+原始制作时只回传了 parameters.json、build.py、evidence.json，PNG 当时留在对话。2026-11-13 已实际核得后续私库保存的原 PNG；上述历史“未上传”状态已被本次核验覆盖，原 parameters/evidence 作为制作快照保持不改。
+
+- 私库：`aaaycc931-droid/lezi-ui-asset-staging`，固定提交 `e2c51985eabc9fb17106ad166f9d4d405fb55a95`。
+- B10 原件：`UI-IMG-042_a7b314afe8d3.png`；Git blob `ccddf4d9011b26c917a5df011001c6456642c598`，2610870 字节。
+- B9 批准原件：`UI-IMG-043_d81a19895bef.png`；Git blob `60bb39f5595c02b3f42ff15aea73027bf6aba6d1`，2622399 字节。
+- 两张图均已实际取回，完整 SHA-256 与上列既有身份一致。原件留在私库，本公库只保存来源和恢复记录，不重复上传图片。
 
 构建命令（从已有固定资产本地调用）：
 
     python build.py --base /path/to/b4-fixed-local-base.png --font /path/to/LongCang-Regular.ttf --approved-b9 /path/to/lezi-bluetooth-B9-v1.png --out /path/to/lezi-bluetooth-B10-v1.png
 
-源程序核验来源摘要、批准 B9 精确重合成、画布尺寸、像素保护区和候选 PNG 的 SHA。源程序回传已复读；GitHub 上的程序尚未在独立机器重新执行，不能声称跨机器重现已验收。
+源程序核验来源摘要、批准 B9 精确重合成、画布尺寸、像素保护区和候选 PNG 的 SHA。2026-11-13 接收环境发现并修正一处参数读取笔误：`--approved-b9` 对应值原误写为 `a.approved_b8`，现为 `a.approved_b9`。没有改变字库、底层、布局参数或预期 SHA。
+
+修正后实际运行返回 0：B9 重合成差异 0；B10 与取回的私库原件逐字节一致、RGBA 差异 0；B10 对 B9 的变化仍为 35,272 像素，文字 alpha 并集和指定区域之外变化 0。B10 原图已实际看图，继续待用户具体审批。完整环境与范围见 `restoration-verification.json`；此结果只证明本张静态候选在本次接收环境可恢复。
 
 ## 范围边界
 

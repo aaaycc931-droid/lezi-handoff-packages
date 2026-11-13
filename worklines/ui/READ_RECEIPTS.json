@@ -1,6 +1,6 @@
 {
   "schema": "lezi.ui.read_receipts.v1",
-  "updated_at_local": "2026-10-17T17:43:23.181+08:00",
+  "updated_at_local": "2026-11-13",
   "source_commit": "338acdf7c359b18e8a246a92354712b899e0f996",
   "original_read_commit": "76a4279586ca40db88198e40d371de32c3766b11",
   "freshness": "Target UI files and collaboration body retained identical Git identities in current checked tree; root current handoff reread from publication base.",
@@ -129,5 +129,71 @@
     "scope": "核对本线写前HEAD和相关当前字段；同会话已读且未变的完整设计源与协作模块复用。main协调正文另作只读复查，不接管主线。",
     "primary_new_evidence": "当前对话逐项回复U01-U14及用户自主十项授权原话",
     "main_receiver_read": "UNKNOWN"
+  },
+  "original_ui_image_resume_20261113": {
+    "record_id": "UI-STATIC-B10-RESUME-20261113",
+    "receiver": "original_game_UI_image_dialogue",
+    "date_local": "2026-11-13",
+    "source_commit": "4e83c8a2f5df5ed83ff11e34fc95932cd121cfbe",
+    "main_coordination_source_commit": "7d86ae477b044f83bf268fbbb97bfaa66003d3da",
+    "private_asset_source_commit": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+    "actual_read_ui_sources": [
+      "START_HERE.txt",
+      "PROJECT_INSTRUCTIONS.txt",
+      "TASK_FROM_MAIN.json",
+      "CURRENT_STATE.json",
+      "APPROVAL_REGISTER.json (B1–B9 specific approvals; B10 absence)",
+      "APPROVED_INDEX.json",
+      "SOURCE_STATUS_OVERRIDES.json",
+      "UI_NEXT_TASKS.json",
+      "TASKS.json (B9/B10 absence check)",
+      "CANDIDATE_RESTORE.json (direct restoration availability)",
+      "UI_WORK_AGREEMENT.md",
+      "UI_FIDELITY_POLICY.md",
+      "HISTORICAL_RESTART_SCOPE_20261108.md",
+      "RETURN_TO_MAIN.json",
+      "READ_RECEIPTS.json",
+      "candidates/B10/v1/README.md",
+      "candidates/B10/v1/parameters.json",
+      "candidates/B10/v1/evidence.json",
+      "candidates/B10/v1/build.py"
+    ],
+    "actual_other_reads": [
+      "AGENTS.md",
+      "CURRENT_HANDOFF.json (workline, assets and workflow routing)",
+      "START_COLLABORATION.md",
+      "collaboration/CURRENT.json",
+      "docs/WORKFLOW.md",
+      "worklines/main/COORDINATION_RESULT.md at stated main commit",
+      "private repository tree and UI image inventory entries UI-IMG-042/UI-IMG-043"
+    ],
+    "collaboration": {
+      "level": "L2_DESIGN for fidelity/source restoration",
+      "working_revision": "2026-10-23.v0.18",
+      "formal_baseline": "1.8.0",
+      "sections": [
+        "INTEGRATED_START",
+        "TASK_ROUTES",
+        "PROJECT_WORK_AGREEMENT",
+        "GITHUB_HANDOFF_WORKFLOW",
+        "AUTHORIZATION_AND_ADOPTION",
+        "BASELINE_DELTA_CHECK",
+        "APPROVED_BASELINE_PRESERVATION",
+        "MANDATORY_PRECHECK",
+        "SOURCE_ACTIVATION"
+      ]
+    },
+    "adopted": [
+      "Original UI B1–B9 specific static approvals preserved; B10 pending.",
+      "Current user instruction limits this task to original game UI.",
+      "Private B9/B10 bytes verified; fixed baseline/font hashes verified; original B10 viewed; exact source restoration passed."
+    ],
+    "not_claimed": [
+      "No new image approval.",
+      "No narrative-to-UI redesign.",
+      "No production or Bluetooth runtime acceptance.",
+      "No mainline receipt/adoption of this increment."
+    ],
+    "validation": "worklines/ui/candidates/B10/v1/restoration-verification.json"
   }
 }

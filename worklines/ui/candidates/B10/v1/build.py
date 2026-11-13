@@ -14,7 +14,7 @@ cfg=json.loads((P/"parameters.json").read_text(encoding="utf-8"))
 ap=argparse.ArgumentParser()
 for name in ("base","font","approved-b9","out"): ap.add_argument("--"+name,required=True)
 a=ap.parse_args()
-base_path,font_path,old_path,out_path=map(Path,[a.base,a.font,a.approved_b8,a.out])
+base_path,font_path,old_path,out_path=map(Path,[a.base,a.font,a.approved_b9,a.out])
 digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert digest(base_path)==cfg["background_sha256"],"Approved background mismatch"
 assert digest(font_path)==cfg["font_sha256"],"Long Cang font mismatch"

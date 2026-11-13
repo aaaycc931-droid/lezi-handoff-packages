@@ -1,0 +1,84 @@
+{
+  "schema": "lezi.ui.static_restoration_verification.v1",
+  "record_id": "UI-STATIC-B10-RESUME-20261113",
+  "date_local": "2026-11-13",
+  "source_commit": "4e83c8a2f5df5ed83ff11e34fc95932cd121cfbe",
+  "candidate": "B10-v1",
+  "approval": "pending_user_review",
+  "original_png": {
+    "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+    "ref": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+    "path": "UI-IMG-042_a7b314afe8d3.png",
+    "git_blob_sha": "ccddf4d9011b26c917a5df011001c6456642c598",
+    "bytes": 2610870,
+    "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95"
+  },
+  "approved_b9_png": {
+    "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+    "ref": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+    "path": "UI-IMG-043_d81a19895bef.png",
+    "git_blob_sha": "60bb39f5595c02b3f42ff15aea73027bf6aba6d1",
+    "bytes": 2622399,
+    "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0"
+  },
+  "baseline": {
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "ref": "4e83c8a2f5df5ed83ff11e34fc95932cd121cfbe",
+    "path": "assets/ui/13a513a067abb972ab8e0c898faeba92eb17952a1ecc955248e418c73b429a8f.png",
+    "git_blob_sha": "9169d377df933164c77ab700a89588b4f447c75c",
+    "bytes": 2887743,
+    "sha256": "13a513a067abb972ab8e0c898faeba92eb17952a1ecc955248e418c73b429a8f"
+  },
+  "font": {
+    "repository": "aaaycc931-droid/lezi-handoff-packages",
+    "ref": "4e83c8a2f5df5ed83ff11e34fc95932cd121cfbe",
+    "path": "assets/ui/e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc.ttf",
+    "git_blob_sha": "363bb08696fe4d3827bd36d3d2fbc028d1205161",
+    "bytes": 5162508,
+    "sha256": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc"
+  },
+  "all_four_original_file_sha256_and_git_blob_verified": true,
+  "canvas": [
+    852,
+    1846
+  ],
+  "original_png_actual_visual_inspection": true,
+  "changed_pixels_B10_vs_B9": 35272,
+  "changes_outside_declared_regions": 0,
+  "source_repair": "build.py argparse option --approved-b9 was read as a.approved_b8; corrected to a.approved_b9 only. Layout parameters and expected hashes unchanged.",
+  "source_execution": {
+    "exit_code": 0,
+    "stderr": "",
+    "b9_recomposition_changed_pixels": 0,
+    "protected_pixel_changes_outside_text_alpha_union_and_regions": 0,
+    "B10_recomposed_sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95",
+    "byte_identical_to_private_original": true,
+    "decoded_pixel_differences": 0,
+    "environment": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "cairo": "1.18.4",
+      "packages": {
+        "CairoSVG": "2.9.1",
+        "cairocffi": "1.7.1",
+        "Pillow": "13.0.0",
+        "numpy": "2.3.5",
+        "fonttools": "4.61.1",
+        "cssselect2": "0.10.1",
+        "defusedxml": "0.7.1",
+        "tinycss2": "1.5.1",
+        "cffi": "2.1.1",
+        "pycparser": "3.12",
+        "webencodings": "0.6.1"
+      }
+    }
+  },
+  "original_png_baseline_font_and_parameters_unchanged": true,
+  "scope": "One static candidate restored and inspected in this receiving environment; no new artwork or approval, no product/runtime acceptance.",
+  "new_artwork": false,
+  "game_code_changed": false,
+  "runtime": "not_run",
+  "actual_bluetooth_device_tests": "not_run",
+  "scoring": "frozen",
+  "NET": "paused"
+}

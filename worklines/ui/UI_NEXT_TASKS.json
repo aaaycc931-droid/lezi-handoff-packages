@@ -17,7 +17,7 @@
       "deliverable": "逐屏可审阅方案或原型，含实际状态、返回与适配",
       "acceptance": "已有候选实现先对照；功能/文案保留，新增方案待用户审阅",
       "current_item": "B10-v1: first Bluetooth connected / room sync transient static image; pending specific user approval",
-      "resume_point": "B9 user-approved static baseline; B10-v1 candidate created at worklines/ui/candidates/B10/v1, SHA a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95; PNG available in producing conversation but not GitHub, source text readback verified; seek approval or local revision, not rematch",
+      "resume_point": "B9-v1 remains user-approved; original B10-v1 pending approval. Original B9/B10 PNGs recovered from private repository at e2c51985eabc9fb17106ad166f9d4d405fb55a95; SHA-256/Git blob matches and exact B10 source rerun passed on 2026-11-13. See candidates/B10/v1/README.md and restoration-verification.json. Display one original B10 candidate for approval or local revision.",
       "accepted_static_versions": [
         "B1-v2",
         "B2-v4",
@@ -96,16 +96,32 @@
       "item": "B9-v1",
       "state": "蓝牙权限永久拒绝，前往系统设置",
       "status": "user_approved",
-      "preview_github_published": false,
-      "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0"
+      "preview_github_published": true,
+      "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0",
+      "original_png": {
+        "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+        "ref": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+        "path": "UI-IMG-043_d81a19895bef.png",
+        "git_blob_sha": "60bb39f5595c02b3f42ff15aea73027bf6aba6d1",
+        "bytes": 2622399,
+        "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0"
+      }
     },
     {
       "item": "B10-v1",
       "state": "蓝牙首次连接成功，正在同步房间",
       "status": "candidate_created_pending_user_review",
       "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95",
-      "preview_github_published": false,
-      "source_folder": "candidates/B10/v1"
+      "preview_github_published": true,
+      "source_folder": "candidates/B10/v1",
+      "original_png": {
+        "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+        "ref": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+        "path": "UI-IMG-042_a7b314afe8d3.png",
+        "git_blob_sha": "ccddf4d9011b26c917a5df011001c6456642c598",
+        "bytes": 2610870,
+        "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95"
+      }
     },
     {
       "item": "B11 planned",
@@ -131,5 +147,13 @@
     "last_approved": "B8-v1",
     "next_task": "B9 not_created",
     "resume_point": "用户明确恢复UI工作后，从B9「蓝牙权限永久拒绝，前往系统设置」继续；先读取固定入口与最新HEAD，恢复批准源层，一次展示一张实际候选。"
+  },
+  "original_ui_image_resume_20261113": {
+    "scope": "original_game_UI_static_images_only",
+    "verification": "worklines/ui/candidates/B10/v1/restoration-verification.json",
+    "candidate": "B10-v1",
+    "approval": "pending_user_review",
+    "new_design": false,
+    "world_lore_does_not_redesign_game_ui": true
   }
 }

@@ -28,10 +28,18 @@
     "status": "pending_user_review",
     "source_folder": "worklines/ui/candidates/B10/v1",
     "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95",
-    "preview_png_in_github": false,
+    "preview_png_in_github": true,
     "source_text_in_github": true,
     "shown_to_user_in_current_dialogue": true,
-    "host_role_only": true
+    "host_role_only": true,
+    "original_png": {
+      "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+      "ref": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+      "path": "UI-IMG-042_a7b314afe8d3.png",
+      "git_blob_sha": "ccddf4d9011b26c917a5df011001c6456642c598",
+      "bytes": 2610870,
+      "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95"
+    }
   },
   "actual_validation": {
     "approved_B9_recomposition_changed_pixels": 0,
@@ -59,9 +67,9 @@
   "NET": "paused",
   "scoring": "frozen",
   "handoff_limitations": [
-    "B9 and B10 original PNG currently only in conversation artifacts; GitHub has reconstructive text source",
-    "root START_UI.txt and worklines/ui/START_HERE.txt still carry historical B9 pending language; current APPROVAL_REGISTER.json and CURRENT_STATE.json are authoritative",
-    "GitHub text source published; full independent generator rerun not yet recorded as GitHub runtime verification",
+    "Historical PNG unavailability superseded on 2026-11-13: original B9/B10 private GitHub PNGs downloaded and full SHA-256/Git blobs verified; exact locations in original_ui_image_resume_20261113.",
+    "Historical B9-pending wording remains only in retained historical entry text; the current scoped START_HERE preface and APPROVAL_REGISTER/CURRENT_STATE preserve B9 approved and B10 pending.",
+    "2026-11-13 receiving-environment static source rerun passed after one argparse field-name correction; B10 matches private original byte-for-byte. This is static restoration, not game runtime or Bluetooth acceptance.",
     "2026-11-08: selected artwork exact PNG is preserved in Library; private GitHub stores 10 lossless Base64 segments and rebuild script, not native single PNG. Receiver-independent GitHub reconstruction and mainline adoption remain unverified."
   ],
   "next_action": "展示本批十项与整体场景，接收用户整体反馈；本批不自动扩至第11项。",
@@ -333,5 +341,46 @@
     "code_changed": false,
     "main_read_of_this_increment": "UNKNOWN",
     "main_adoption_of_this_increment": "UNKNOWN"
-  }
+  },
+  "original_ui_image_resume_20261113": {
+    "record_id": "UI-STATIC-B10-RESUME-20261113",
+    "date_local": "2026-11-13",
+    "scope": "original_game_UI_static_images_only",
+    "source_branch": "ui/restart-asof-20261104-1119",
+    "source_commit": "4e83c8a2f5df5ed83ff11e34fc95932cd121cfbe",
+    "user_instruction": "继续《乐子象棋》原有 UI 图片设计；按原有画风、批准母版和实际未完成项，一次展示一张候选。背景故事与新竞技场设定不改变当前游戏 UI，不生成竞技场概念图，不据此重设计已有界面。",
+    "approved_B1_B9_preserved": true,
+    "candidate": "B10-v1",
+    "candidate_status": "pending_user_review",
+    "original_png": {
+      "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+      "ref": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+      "path": "UI-IMG-042_a7b314afe8d3.png",
+      "git_blob_sha": "ccddf4d9011b26c917a5df011001c6456642c598",
+      "bytes": 2610870,
+      "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95"
+    },
+    "approved_comparison_png": {
+      "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+      "ref": "e2c51985eabc9fb17106ad166f9d4d405fb55a95",
+      "path": "UI-IMG-043_d81a19895bef.png",
+      "git_blob_sha": "60bb39f5595c02b3f42ff15aea73027bf6aba6d1",
+      "bytes": 2622399,
+      "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0"
+    },
+    "actual_restoration": "Original B9/B10 downloaded; full SHA-256 and Git blob identities matched. Original B10 visually inspected. Corrected source regenerated B10 byte-identically.",
+    "verification": "worklines/ui/candidates/B10/v1/restoration-verification.json",
+    "source_repair": "build.py argparse option --approved-b9 was read as a.approved_b8; corrected to a.approved_b9 only. Layout parameters and expected hashes unchanged.",
+    "new_artwork": false,
+    "new_artwork_approval": false,
+    "next_action": "本轮只展示 B10-v1 原候选，等待用户对这张静态图的具体批准或局部修改意见；B11仍未开始。",
+    "narrative_scope_preserved": true,
+    "game_code_changed": false,
+    "runtime": "not_run",
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_receiver_read": "UNKNOWN",
+    "main_receiver_adoption": "UNKNOWN"
+  },
+  "source_unchanged_scope": "Original artwork, baseline, font and parameters are unchanged; the B10 build.py argparse repair is recorded in original_ui_image_resume_20261113."
 }
