@@ -1,7 +1,7 @@
 {
   "schema": "lezi.hero_pilot.state.v1",
   "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-  "updated_by": "hero_pilot_executor",
+  "updated_by": "side_conversation_recovery_closeout",
   "status": "VISUAL_REPAIR_DELIVERED_BROWSER_QA_GAP",
   "task": "TASK_FROM_MAIN.json",
   "designer_brief": "DESIGNER_BRIEF.md",
@@ -48,12 +48,12 @@
     "global_balance_accepted": false,
     "independent_QA": false,
     "deployed": false,
-    "portrait": "TEXT_DESIGN_ONLY_EXISTING_PLACEHOLDER",
+    "portrait": "SOURCE_PNGS_RECOVERED_INTEGRATION_REPORTED_UNVERIFIED",
     "swap_feedback_repaired": true,
     "latest_dom_checks": 10,
     "latest_targeted_regression_pass": 155
   },
-  "next_action": "本线可独立推进司衡最终立绘与小尺寸资产：先读独立UI最新入口及英雄风格规则，再按受托设计权制作和验证；主线并行定向接收本次反馈修复。真实浏览器/触摸、真人强度与完整独立QA分开保留。",
+  "next_action": "先读ART_RECOVERY_CLOSEOUT_20261113.md，按精确原文件名查找并取回两张原图；优先恢复原美术接入差分、4个运行时导出及14项检查日志。无法恢复时在最新专属分支基于已有原图最小补建并验证。不要重新生成人物，不重做已发布换轨修复。",
   "protected": {
     "other_worklines": true,
     "score_ledger": "frozen",
@@ -69,7 +69,8 @@
     "READ_RECEIPTS.json",
     "RETURN_TO_MAIN.json",
     "SESSION_CLOSEOUT.json",
-    "VISUAL_REPAIR.md"
+    "VISUAL_REPAIR.md",
+    "ART_RECOVERY_CLOSEOUT_20261113.md"
   ],
   "active_dispatch": {
     "id": "MAIN-HERO-PILOT-SWAP-VISUAL-REPAIR-20261113",
@@ -84,5 +85,62 @@
     "report": "worklines/main/reviews/hero-pilot/INTAKE_REPORT.md",
     "received": true,
     "full_independent_QA": false
+  },
+  "art_recovery": {
+    "date": "2026-11-13",
+    "updated_by": "side_conversation_recovery_closeout",
+    "report": "ART_RECOVERY_CLOSEOUT_20261113.md",
+    "status": "SOURCE_PNGS_RECOVERED_INTEGRATION_REPORTED_UNVERIFIED",
+    "sources_verified": [
+      {
+        "role": "portrait_avatar_source",
+        "file_name": "沉稳深青夹克肖像-2.png",
+        "width": 1254,
+        "height": 1254,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size_bytes": 2975891,
+        "alpha_extrema": [
+          255,
+          255
+        ],
+        "transparent_pixels": 0
+      },
+      {
+        "role": "full_body_source",
+        "file_name": "西衡透明背景全身立绘-1.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size_bytes": 1224560,
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "transparent_pixels": 1064170
+      }
+    ],
+    "reported_parent_progress": {
+      "code_files_edited": 7,
+      "runtime_image_files": 4,
+      "runtime_total_kib_approx": 143,
+      "dom_checks": 14,
+      "thumbnail_sizes": [
+        48,
+        64,
+        96
+      ],
+      "evidence_status": "USER_PASTED_PARENT_PROGRESS_AND_OPERATION_LABELS_ONLY",
+      "not_rerun_here": true
+    },
+    "verified_engine_head": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
+    "engine_art_commit_confirmed": false,
+    "missing": [
+      "original code delta or unpublished art commit",
+      "four runtime exports and filenames",
+      "DOM/build/server/thumbnail verification logs"
+    ],
+    "recovery_scope": "source-image verification and remote handoff only"
   }
 }

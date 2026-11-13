@@ -7,10 +7,10 @@
   "draft_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23",
   "design": "AUTONOMOUSLY_FINALIZED_UNDER_USER_DELEGATION",
   "scope": "one hero only",
-  "resume": "先读CONTEXT_LIMIT_CLOSEOUT_20261113.md并核最新HEAD；已发布工程断点保持5ab688c。原对话后续美术成果未核实，先检查有无可恢复原件，再由新执行会话按现行任务接续。原有续接说明：先核最新HEAD/任务；本轮(0,0)标记修复已在5ab688c发布且14文件读回。读取VISUAL_REPAIR.md与最新回传；不要从7a1dfbc重做。下一可独立推进本英雄美术，先读最新UI来源。",
+  "resume": "先读ART_RECOVERY_CLOSEOUT_20261113.md，按精确原文件名查找并取回两张原图；优先恢复原美术接入差分、4个运行时导出及14项检查日志。无法恢复时在最新专属分支基于已有原图最小补建并验证。不要重新生成人物，不重做已发布换轨修复。",
   "remaining": [
-    "本线可独立推进司衡最终立绘与小尺寸资产：先读独立UI最新入口及英雄风格规则，再按受托设计权制作和验证；主线并行定向接收本次反馈修复。真实浏览器/触摸、真人强度与完整独立QA分开保留。",
-    "真实浏览器、真人强度、全面独立QA未完成"
+    "先读ART_RECOVERY_CLOSEOUT_20261113.md，按精确原文件名查找并取回两张原图；优先恢复原美术接入差分、4个运行时导出及14项检查日志。无法恢复时在最新专属分支基于已有原图最小补建并验证。不要重新生成人物，不重做已发布换轨修复。",
+    "真实浏览器／触摸、真人强度、全面独立QA尚未完成；原14项美术DOM检查不替换已发布的10项修复DOM记录。"
   ],
   "not_waiting_for_user_approval": true,
   "dialogue_closed": true,
@@ -27,6 +27,65 @@
     "verified_engine_head": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
     "parent_unsaved_artifacts": "UNKNOWN_NOT_ACCESSIBLE_FROM_CURRENT_WORKSPACE",
     "current_workspace_recoverable_project_files": 0,
-    "new_tests_run": false
+    "new_tests_run": false,
+    "superseded_for_art_recovery_by": "ART_RECOVERY_CLOSEOUT_20261113.md"
+  },
+  "latest_closeout": "ART_RECOVERY_CLOSEOUT_20261113.md",
+  "art_recovery": {
+    "date": "2026-11-13",
+    "updated_by": "side_conversation_recovery_closeout",
+    "report": "ART_RECOVERY_CLOSEOUT_20261113.md",
+    "status": "SOURCE_PNGS_RECOVERED_INTEGRATION_REPORTED_UNVERIFIED",
+    "sources_verified": [
+      {
+        "role": "portrait_avatar_source",
+        "file_name": "沉稳深青夹克肖像-2.png",
+        "width": 1254,
+        "height": 1254,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size_bytes": 2975891,
+        "alpha_extrema": [
+          255,
+          255
+        ],
+        "transparent_pixels": 0
+      },
+      {
+        "role": "full_body_source",
+        "file_name": "西衡透明背景全身立绘-1.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size_bytes": 1224560,
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "transparent_pixels": 1064170
+      }
+    ],
+    "reported_parent_progress": {
+      "code_files_edited": 7,
+      "runtime_image_files": 4,
+      "runtime_total_kib_approx": 143,
+      "dom_checks": 14,
+      "thumbnail_sizes": [
+        48,
+        64,
+        96
+      ],
+      "evidence_status": "USER_PASTED_PARENT_PROGRESS_AND_OPERATION_LABELS_ONLY",
+      "not_rerun_here": true
+    },
+    "verified_engine_head": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
+    "engine_art_commit_confirmed": false,
+    "missing": [
+      "original code delta or unpublished art commit",
+      "four runtime exports and filenames",
+      "DOM/build/server/thumbnail verification logs"
+    ],
+    "recovery_scope": "source-image verification and remote handoff only"
   }
 }
