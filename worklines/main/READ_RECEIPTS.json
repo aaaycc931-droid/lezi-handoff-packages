@@ -5838,5 +5838,56 @@
     },
     "other_conversation_new_instruction_adoption": "UNKNOWN",
     "current_dialogue_frontend_settings_read": false
+  },
+  "session_closeout_20261113_project_continuation": {
+    "source_handoff_commit": "944af919e01d7345644366442e9c0780c5b7a2b9",
+    "date_local": "2026-11-13",
+    "receiver_workline": "main",
+    "read_scope": [
+      "worklines/main/START_HERE.txt、docs/WORKFLOW.md、AGENTS.md全文",
+      "CURRENT_HANDOFF.json当前路由；CURRENT_STATE.json continuation/next_action/project_continuation_20261113/session_closure；SESSION_CLOSEOUT.json最新收束和当前路由；RETURN_TO_MAIN.json当前流程阶段及下一步",
+      "PROJECT_CONTINUATION_REVIEW_20261113.md、docs/COORDINATION_SETUP.md、docs/project-instructions/main.txt全文；PROJECT_WORK_AGREEMENT.md本轮授权与固定入口段",
+      "H10_FORWARD_PROGRESS.json全文；READ_RECEIPTS.json既有project_continuation_20261113段",
+      "collaboration/CURRENT.json全文；工作稿INTEGRATED_START/TASK_ROUTES、PROJECT_WORK_AGREEMENT启动段、GITHUB_HANDOFF_WORKFLOW、AUTHORIZATION_AND_ADOPTION、MANDATORY_PRECHECK与PART-6_CURRENT_STATE"
+    ],
+    "adopted_scope": "按用户已生效项目说明和“已更新，收束”保存主线安装确认、关闭当前对话并指向下一自然接续；复用已发布工程进度，不重跑。",
+    "effective_current_project_instructions_observed": true,
+    "frontend_settings_ui_opened": false,
+    "independent_UI": {
+      "branch": "ui/restart-asof-20261104-1119",
+      "commit": "82785937c284720e1f770ad7dadd9c0b1c41b87b",
+      "read_scope": "ref metadata only",
+      "body_or_artwork_adoption": false
+    },
+    "engine_PR_metadata": {
+      "PR27": {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/27",
+        "branch": "codex/main-h10-forward-qualification-20261113",
+        "commit": "f8ef0ca4850dc001f44e17a75fcd587a407f5ea7",
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "read_scope": "metadata only during closeout; no new source review or runtime run"
+      },
+      "PR28": {
+        "repository": "aaaycc931-droid/jieqi-engine",
+        "url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/28",
+        "branch": "codex/main-c5-null-context-fix-20261113",
+        "commit": "58cc324ddc616d14234d0a8b1ad34696393fb280",
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "read_scope": "metadata only during closeout; no new source review or runtime run"
+      }
+    },
+    "not_claimed": [
+      "新对话已经读取/采用或测试成功",
+      "其他项目已更新",
+      "新的源码/图稿验收",
+      "其他工作线接收回执",
+      "新的游戏运行"
+    ],
+    "other_workline_receipts_written": false
   }
 }
