@@ -1,10 +1,10 @@
 {
-  "revision": "HC-59-PR24-BOUNDED-REVIEW-20261113",
+  "revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
   "next_independent_task": {
-    "id": "NEXT-HC-PR24-SCOPE-GUARD-FIX-REVIEW",
-    "status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
-    "action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
-    "owner": "main implementation; half_chaos scoped review"
+    "id": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
+    "status": "BOUNDED_TWO_PHASE_REVIEW_COMPLETE_WAIT_CONCRETE_DELTA",
+    "owner": "half_chaos targeted review; main shared implementation",
+    "action": "两段已完成；下一只接主线具体host/wire/调用合同/生命周期差分或可复现新问题，核受影响边界。不重复旧矩阵、不循环自审或自动轮询。"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -25,7 +25,7 @@
     "HC-MAIN-H21-REVEAL-CONTROL"
   ],
   "new_rule_requires_specific_confirmation": true,
-  "runtime_scope": "只执行PR24固定只读依赖的4项新scope控制；旧13/29不重跑；未改生产源",
+  "runtime_scope": "本轮仅4项修复控制；PR26只读审查，无新实验。新具体差分到达才按授权复核；旧套件/矩阵不重跑。",
   "scoring_frozen": true,
   "NET": "paused",
   "previous_completed_task": {
@@ -1408,40 +1408,51 @@
     "worklines/half_chaos/NEXT_ACTIONS.json",
     "worklines/half_chaos/RETURN_TO_MAIN.json"
   ],
-  "last_verified_head_at_preparation": "93411f461fc80de3c7639149c2161115e189fbec",
+  "last_verified_head_at_preparation": "6530871c3042fd21c55e0742602f42d662a3935e",
   "latest_completed_stage": {
-    "id": "HC-59-PR24-BOUNDED-REVIEW-20261113",
-    "task": "MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113",
-    "source_handoff_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
-    "dependency_pr": 24,
-    "dependency_commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
-    "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
-    "report": "worklines/half_chaos/HC_PR24_BOUNDED_REVIEW_20261113.md",
-    "status": "BOUNDED_REVIEW_COMPLETE_ONE_RUNTIME_GUARD_GAP",
+    "id": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "task": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "source_handoff_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
+    "publication_parent": "6530871c3042fd21c55e0742602f42d662a3935e",
+    "dependencies": {
+      "PR24_fixed": "6ba35636ecf5c69203225149a7b746893299b39b",
+      "PR26": "e88a5a6bce6732a29e887b10636c827cd3f2eab5"
+    },
+    "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+    "report": "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md",
+    "status": "BOTH_BOUNDED_PHASES_COMPLETE",
+    "F1": "fixed for original missing-field boundary; 4 new controls pass; r59 evidence unchanged",
+    "PR26": "bounded source review completed; no new confirmed defect; published 34 passes are mainline report only",
     "validation": {
-      "new_cases_run": 4,
-      "observation_assertions_passed": 4,
-      "guard_gap_reproductions": 2,
-      "distinct_findings": 1,
-      "finding": "F1 missing authorityId or matchEpoch accepted under intentionally malformed offline scope",
-      "production_changes": 0,
-      "PR24_changes": 0,
-      "old13_29_rerun": false,
-      "independent_QA": false,
-      "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+      "new_repair_controls": 4,
+      "passed": 4,
+      "failed": 0,
+      "original_missing_variants_rejected": 2,
+      "PR26_runtime_tests_run_here": 0,
+      "PR26_main_reported_passes": 34,
+      "new_confirmed_PR26_defects": 0,
+      "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
       "engine_readback_files": 3,
       "engine_readback_match": true,
+      "old_suites_rerun": false,
+      "production_changes": 0,
+      "PR24_PR26_implementation_changes": 0,
       "formal56_complete": 0,
-      "formal64_pass": 0
+      "formal64_pass": 0,
+      "actual_half_chaos_client_deliveries": 0,
+      "independent_QA": false,
+      "device_runs": 0
     },
-    "scope_limit": "Trusted offline caller; malformed inputs intentionally violate static ResultScope; no network exploit or correctly typed input failure claimed",
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
     "main_read": "UNKNOWN",
     "main_adoption": "UNKNOWN",
     "next": {
-      "id": "NEXT-HC-PR24-SCOPE-GUARD-FIX-REVIEW",
-      "status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
-      "action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
-      "owner": "main implementation; half_chaos scoped review"
+      "id": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
+      "status": "BOUNDED_TWO_PHASE_REVIEW_COMPLETE_WAIT_CONCRETE_DELTA",
+      "owner": "half_chaos targeted review; main shared implementation",
+      "action": "两段已完成；下一只接主线具体host/wire/调用合同/生命周期差分或可复现新问题，核受影响边界。不重复旧矩阵、不循环自审或自动轮询。"
     }
   },
   "stale_index_repair": {
@@ -1688,5 +1699,51 @@
       }
     },
     "runtime_scope": "本包固定PR22离线jieqi研究完成13/13；未来运行依具体新包；原56/64和真实半混乱客户端未验"
+  },
+  "r60_previous_navigation": {
+    "revision": "HC-59-PR24-BOUNDED-REVIEW-20261113",
+    "next_independent_task": {
+      "id": "NEXT-HC-PR24-SCOPE-GUARD-FIX-REVIEW",
+      "status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
+      "action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
+      "owner": "main implementation; half_chaos scoped review"
+    },
+    "latest_completed_stage": {
+      "id": "HC-59-PR24-BOUNDED-REVIEW-20261113",
+      "task": "MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113",
+      "source_handoff_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
+      "dependency_pr": 24,
+      "dependency_commit": "f30f1f5541fd84ebbf6aa298a4bcc3e446adeb80",
+      "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+      "report": "worklines/half_chaos/HC_PR24_BOUNDED_REVIEW_20261113.md",
+      "status": "BOUNDED_REVIEW_COMPLETE_ONE_RUNTIME_GUARD_GAP",
+      "validation": {
+        "new_cases_run": 4,
+        "observation_assertions_passed": 4,
+        "guard_gap_reproductions": 2,
+        "distinct_findings": 1,
+        "finding": "F1 missing authorityId or matchEpoch accepted under intentionally malformed offline scope",
+        "production_changes": 0,
+        "PR24_changes": 0,
+        "old13_29_rerun": false,
+        "independent_QA": false,
+        "engine_commit": "2204ef656c4d72684c0fce8f52789108796ed1f0",
+        "engine_readback_files": 3,
+        "engine_readback_match": true,
+        "formal56_complete": 0,
+        "formal64_pass": 0
+      },
+      "scope_limit": "Trusted offline caller; malformed inputs intentionally violate static ResultScope; no network exploit or correctly typed input failure claimed",
+      "main_read": "UNKNOWN",
+      "main_adoption": "UNKNOWN",
+      "next": {
+        "id": "NEXT-HC-PR24-SCOPE-GUARD-FIX-REVIEW",
+        "status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
+        "action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
+        "owner": "main implementation; half_chaos scoped review"
+      }
+    },
+    "runtime_scope": "只执行PR24固定只读依赖的4项新scope控制；旧13/29不重跑；未改生产源",
+    "last_verified_head_at_preparation": "93411f461fc80de3c7639149c2161115e189fbec"
   }
 }

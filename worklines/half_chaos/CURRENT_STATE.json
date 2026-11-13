@@ -1,14 +1,14 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-59-PR24-BOUNDED-REVIEW-20261113",
+  "revision": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
   "workline": "half_chaos",
   "date_local": "2026-11-13",
   "timezone": "Asia/Shanghai",
-  "status": "r59_PR24_review_complete_one_guard_gap",
+  "status": "r60_two_phase_review_complete_F1_fixed_PR26_source_received",
   "baseline_commit": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
-  "authorization": "用户询问继续；按MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113执行有界源审查，只对具体新风险补本线研究试验；PR24单独固定只读依赖。",
+  "authorization": "用户继续及本对话明确较大状态文件/main回传授权；TASK_FROM_MAIN.host_adapter_review_20261113明确两段离线研究/源复核，仅本线研究分支和回传。",
   "collaboration": {
     "current_index": "../../collaboration/CURRENT.json",
     "actually_read_revision": "2026-10-23.v0.18",
@@ -151,9 +151,10 @@
     "latest_session_closure": "worklines/half_chaos/HC55_SESSION_CLOSEOUT_20261029.json"
   },
   "completed_this_round": [
-    "读取PR24原型/测试/说明全文，审四项关键边界",
-    "针对缺失scope字段新增4个最小对照，复现1个问题2变体",
-    "本线研究3文件发布读回，未改PR24或生产源"
+    "核主线r59实际接收及F1修复来源",
+    "固定修复后PR24执行4个新定向控制全部通过，保留旧反例",
+    "完整读取PR26 host/ledger/test/说明并有界复核，无新确认缺陷",
+    "研究3文件已发布读回一致"
   ],
   "new_user_rule_confirmations_this_round": 0,
   "new_rule_candidates_adopted_this_round": 0,
@@ -200,7 +201,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
+  "next_action": "两段已完成；下一只接主线具体host/wire/调用合同/生命周期差分或可复现新问题，核受影响边界。不重复旧矩阵、不循环自审或自动轮询。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -226,14 +227,14 @@
     "featuresReady": false
   },
   "NET": "paused",
-  "limitation_audit_status": "completed_for_bounded_queue; remaining_scope_partial",
-  "verification_level": "限定离线malformed-input复现；4观察检查通过不等于产品验收；源码复核非正式独立QA",
+  "limitation_audit_status": "completed_for_two_bounded_reviews; product_acceptance_partial",
+  "verification_level": "V4仅四个离线修复对照；PR26本线V2源码核对，主线34项为报告层级；非完整独立QA",
   "publication_scope": "current_half_chaos_design_bodies_and_source_references; not_full_private_archive_migration",
   "source_index": "SOURCE_INDEX.json",
   "return_record": "RETURN_TO_MAIN.json",
   "read_receipts": "READ_RECEIPTS.json",
-  "publication_parent_commit": "251f43507337747d0f7b21a0b19ca7909ca7baf7",
-  "latest_main_source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109",
+  "publication_parent_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
+  "latest_main_source_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
   "concurrent_main_reading": "actual unchanged main1.62 WP01/02/03 deferred queue rechecked; no new main policy/implementation/run approval; r31/r32/r33 reception/adoption unknown",
   "previous_source_baseline_commit": "5bd663523054fdd380ce73b4227cb4904bf3ae7e",
   "completed_since_resume": [
@@ -1544,7 +1545,7 @@
   },
   "last_completed_design_revision": "HC-PREP-20261020-r40",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
-  "next_action_status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
+  "next_action_status": "BOUNDED_TWO_PHASE_REVIEW_COMPLETE_WAIT_CONCRETE_DELTA",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
     "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
@@ -3108,7 +3109,7 @@
       "contract_delta": "未决请求身份必须独立于会被清除的UI状态；EOF与连接模型边界分别保留"
     }
   },
-  "current_report": "worklines/half_chaos/HC_PR24_BOUNDED_REVIEW_20261113.md",
+  "current_report": "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md",
   "main_r57_reception_20261113": {
     "source_commit": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
     "path": "worklines/main/READ_RECEIPTS.json#result_reconciliation_intake_20261113",
@@ -3181,5 +3182,75 @@
     "source": "PROJECT_WORK_AGREEMENT.md#2026-11-13 本对话较大状态文件与r59发布授权",
     "destination": "aaaycc931-droid/lezi-handoff-packages/main",
     "explicit_user_authorized": true
+  },
+  "r60_previous_active_metadata": {
+    "revision": "HC-59-PR24-BOUNDED-REVIEW-20261113",
+    "status": "r59_PR24_review_complete_one_guard_gap",
+    "next_action": "本次PR24有界审查已完；收到F1必填scope校验修复或明确调用合同/实际差分后定向复验。无新增来源不循环自审或重跑原13/29。",
+    "next_action_status": "WAIT_MAIN_CONCRETE_FIX_OR_CALLER_CONTRACT",
+    "current_report": "worklines/half_chaos/HC_PR24_BOUNDED_REVIEW_20261113.md",
+    "completed_this_round": [
+      "读取PR24原型/测试/说明全文，审四项关键边界",
+      "针对缺失scope字段新增4个最小对照，复现1个问题2变体",
+      "本线研究3文件发布读回，未改PR24或生产源"
+    ],
+    "authorization": "用户询问继续；按MAIN-HC-PR24-ADVERSARIAL-REVIEW-20261113执行有界源审查，只对具体新风险补本线研究试验；PR24单独固定只读依赖。",
+    "new_game_engine_tests": 4,
+    "engine_tests_passed": true,
+    "verification_level": "限定离线malformed-input复现；4观察检查通过不等于产品验收；源码复核非正式独立QA",
+    "limitation_audit_status": "completed_for_bounded_queue; remaining_scope_partial",
+    "publication_parent_commit": "251f43507337747d0f7b21a0b19ca7909ca7baf7",
+    "latest_main_source_commit": "4eb9c9b224c400b7d3aee3e6b345ebe6c061a109"
+  },
+  "r60_f1_fix_and_host_review": {
+    "id": "HC-60-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "task": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "source_handoff_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
+    "publication_parent": "6530871c3042fd21c55e0742602f42d662a3935e",
+    "dependencies": {
+      "PR24_fixed": "6ba35636ecf5c69203225149a7b746893299b39b",
+      "PR26": "e88a5a6bce6732a29e887b10636c827cd3f2eab5"
+    },
+    "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+    "report": "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md",
+    "status": "BOTH_BOUNDED_PHASES_COMPLETE",
+    "F1": "fixed for original missing-field boundary; 4 new controls pass; r59 evidence unchanged",
+    "PR26": "bounded source review completed; no new confirmed defect; published 34 passes are mainline report only",
+    "validation": {
+      "new_repair_controls": 4,
+      "passed": 4,
+      "failed": 0,
+      "original_missing_variants_rejected": 2,
+      "PR26_runtime_tests_run_here": 0,
+      "PR26_main_reported_passes": 34,
+      "new_confirmed_PR26_defects": 0,
+      "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+      "engine_readback_files": 3,
+      "engine_readback_match": true,
+      "old_suites_rerun": false,
+      "production_changes": 0,
+      "PR24_PR26_implementation_changes": 0,
+      "formal56_complete": 0,
+      "formal64_pass": 0,
+      "actual_half_chaos_client_deliveries": 0,
+      "independent_QA": false,
+      "device_runs": 0
+    },
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "main_read": "UNKNOWN",
+    "main_adoption": "UNKNOWN",
+    "next": {
+      "id": "NEXT-HC-CONCRETE-HOST-CALLER-OR-LIFECYCLE-DELTA",
+      "status": "BOUNDED_TWO_PHASE_REVIEW_COMPLETE_WAIT_CONCRETE_DELTA",
+      "owner": "half_chaos targeted review; main shared implementation",
+      "action": "两段已完成；下一只接主线具体host/wire/调用合同/生命周期差分或可复现新问题，核受影响边界。不重复旧矩阵、不循环自审或自动轮询。"
+    }
+  },
+  "main_r59_reception_verified": {
+    "source_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
+    "receipt": "worklines/main/READ_RECEIPTS.json#half_chaos_r59_f1_20261113",
+    "adoption": "主线已读本线r59报告/driver/结果全文并复现修复F1两变体；不等于本线r60已被读取"
   }
 }

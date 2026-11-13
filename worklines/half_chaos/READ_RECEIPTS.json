@@ -3,11 +3,11 @@
   "receiver_workline": "half_chaos",
   "latest_by_source": {
     "main": {
-      "source_commit": "5de988c225bfb84d9c72170a86b81fb5486a2bd9",
-      "receiver_read": "2026-10-24 actual targeted dispatch/source read",
-      "record": "r42_actual_main_dispatch_and_patch_read",
-      "adopted_scope": "bounded technology artifact status not gameplay/acceptance",
-      "report": "worklines/half_chaos/HC42_PATCH_RECEPTION_DS04_SOURCE_REVIEW.json"
+      "source_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
+      "receiver_read": "2026-11-13 actual scoped read and fixed-dependency repair execution",
+      "record": "f1_fix_host_review_20261113",
+      "adopted_scope": "F1修复定向实证；PR26源码/主线报告分层接收",
+      "report": "worklines/half_chaos/HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md"
     },
     "standard_shared_D01": {
       "source_commit": "b07e444f80bddd3dc22e05a08ad7d24f2178214a",
@@ -3478,5 +3478,68 @@
     "scope": "本轮较大项目状态文件和回传",
     "prior_auto_review": "Denied before explicit user authorization; interrupted tree read returned 404 and no r59 main commit existed. Recovered from local deliverables, not blind replay.",
     "main_receiver_read": "UNKNOWN"
+  },
+  "r60_previous_latest_main": {
+    "source_commit": "5de988c225bfb84d9c72170a86b81fb5486a2bd9",
+    "receiver_read": "2026-10-24 actual targeted dispatch/source read",
+    "record": "r42_actual_main_dispatch_and_patch_read",
+    "adopted_scope": "bounded technology artifact status not gameplay/acceptance",
+    "report": "worklines/half_chaos/HC42_PATCH_RECEPTION_DS04_SOURCE_REVIEW.json"
+  },
+  "f1_fix_host_review_20261113": {
+    "source_commit": "4bd603113914ff8c4fd59cb8fc9c497f347fdb62",
+    "task": "MAIN-HC-F1-FIX-AND-HOST-ADAPTER-REVIEW-20261113",
+    "read_scope": [
+      "本线START最新入口、TASK host_adapter_review完整对象、CURRENT_STATE/NEXT/RETURN/READ当前r59及最新历史收束对象；未声称重读全部累计史",
+      "main PARALLEL_IMPLEMENTATION_AND_INTAKE_20261113全文；READ_RECEIPTS.half_chaos_r59_f1/actual_host_adapter完整对象",
+      "固定PR24修复实际差分、原型/新scope测试/修复报告全文；旧r59 driver与结果全文",
+      "固定PR26 host/ledger/26-test源/README/RESULTS/MANIFEST全文；remote-room hero/advance/resign/rematch/disconnect/reconnect相关函数",
+      "collaboration/CURRENT及v0.18适用项目约定/写回/授权/基线/门禁/局限/文件/连续性/维护章节；AGENTS与docs/WORKFLOW；CURRENT_HANDOFF路由和当前增量定位"
+    ],
+    "adopted": [
+      "主线确已接收并复现修复r59 F1",
+      "两段任务实际执行，4个新修复控制通过",
+      "PR26实际单owner默认关闭适配存在，完整实现/测试源核对；34通过仅主线报告"
+    ],
+    "not_adopted": [
+      "PR26本线重跑34",
+      "wire协商/可信跨重连actor/Android/半混乱客户端/正式56/64/独立QA完成",
+      "C5新增报告语义采用：仅见并发路径，保留给主线接合"
+    ],
+    "path_recovery": {
+      "task_short_filename": "MAIN_RESULT_SCOPE_FIX_20261113.md",
+      "actual": "jieqi-engine/docs/research/MAIN_RESULT_SCOPE_FIX_20261113.md",
+      "method": "handoff主线目录无该文件后，固定engine文件树查到并全文读取"
+    },
+    "validation": {
+      "new_repair_controls": 4,
+      "passed": 4,
+      "failed": 0,
+      "original_missing_variants_rejected": 2,
+      "PR26_runtime_tests_run_here": 0,
+      "PR26_main_reported_passes": 34,
+      "new_confirmed_PR26_defects": 0,
+      "engine_commit": "02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7",
+      "engine_readback_files": 3,
+      "engine_readback_match": true,
+      "old_suites_rerun": false,
+      "production_changes": 0,
+      "PR24_PR26_implementation_changes": 0,
+      "formal56_complete": 0,
+      "formal64_pass": 0,
+      "actual_half_chaos_client_deliveries": 0,
+      "independent_QA": false,
+      "device_runs": 0
+    },
+    "publication_parent": "6530871c3042fd21c55e0742602f42d662a3935e",
+    "concurrent_preservation": "6530871混乱C5六文件已保留；本线任务和写入目标未变，未把C5源当已完整审查",
+    "main_receipt_written": false,
+    "collaboration": {
+      "working_revision": "2026-10-23.v0.18",
+      "formal_baseline": "1.8.0",
+      "gate": "L3 bounded source/repair review",
+      "risk": "medium engineering evidence; reversible isolated probes",
+      "report_boundary": "4本地通过、PR26源审、主线34报告分开"
+    }
   }
 }

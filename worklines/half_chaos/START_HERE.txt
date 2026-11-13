@@ -1,3 +1,6 @@
+【2026-11-13 半混乱r60｜F1修复接收＋真实host审查完成】
+已执行TASK_FROM_MAIN.host_adapter_review_20261113两段。固定PR24修复6ba356，4项新定向检查全通过：缺authorityId/matchEpoch构造拒绝且查询invalid，完整scope accepted，缺query.scope invalid；r59旧证据保留。固定PR26/e88a5a6源码审查完成，无新确认缺陷；主线34通过仅报告层级，本线未重跑。研究02cbe7e0fc77af997799ebe98cb00ef31c1ba7c7三文件发布读回；详HC_F1_FIX_AND_HOST_ADAPTER_REVIEW_20261113.md。主线r59接收已核，r60已读未知。两段包完成，下一只接具体新调用/协议/生命周期差分；不轮询或重跑旧矩阵。原56/64/实际半混乱客户端仍未验，评分冻结NET暂停featuresReady=false；本条覆盖下方待修/待执行历史。
+
 【2026-11-13 r59已接收且F1已修｜新实际host适配可复核】
 r59缺scope问题主线已读并独立复现两变体，PR24修复6ba356（32通过）已发布。优先TASK_FROM_MAIN.json#host_adapter_review_20261113：先用原反例核修复，再读真实host接入PR26/e88a5a6，必要新风险才补最小试验；两段不用等主线回执。保留2204ef6及所有未回传成果，不重跑旧13/29/34/935或旧矩阵，不改主线src。修复/新代码到达已触发下一任务；本线自己登记实际接收/执行。
 
