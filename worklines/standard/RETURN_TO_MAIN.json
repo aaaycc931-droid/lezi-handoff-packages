@@ -2102,5 +2102,49 @@
     "adoption": "继续本次静态前缀准备；旧刺杀与新暗影步/新H05保持分层，无代码运行许可",
     "prior_ng11_main_received": true,
     "current_h10_main_received": "UNKNOWN"
+  },
+  "h10_m04_atomic_observation_20261113": {
+    "id": "STD-H10-M04-ATOMIC-OBSERVATION-20261113",
+    "source_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "engine_source_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "date_local": "2026-11-13",
+    "report": "worklines/standard/reviews/STD_H10_M04_ATOMIC_OBSERVATION_REVIEW_20261113.md",
+    "contract": "worklines/standard/specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json",
+    "completed": "10项原子证据义务＋8项UNRUN反例＋2项静态源码风险",
+    "engine_runs": 0,
+    "independent_QA": false,
+    "NG11": "OPEN",
+    "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
+    "featuresReady": false,
+    "gameplay_delta": 0,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_read_current_return": "UNKNOWN",
+    "main_adoption_current_return": "UNKNOWN",
+    "next_action": {
+      "id": "NEXT-STD-H10-PREPARATION-CALLER-SOURCE-TRACE",
+      "status": "READY_INDEPENDENT_READ_ONLY",
+      "action": "定向追踪H10准备期入口、候选三选一、私有选择及普通研究准入真实调用来源；区分代码/接口/证据缺口，不注入hostId、不跑引擎、不改共享代码。",
+      "implementation_authorized": false,
+      "engine_execution_authorized": false
+    },
+    "main_attention": [
+      "R1终局return先于endStealth及终局观察点的状态完整性，未复现",
+      "R2同一宿主死亡记录表示差异，先核稳定身份和来源"
+    ],
+    "artifacts": [
+      {
+        "path": "worklines/standard/reviews/STD_H10_M04_ATOMIC_OBSERVATION_REVIEW_20261113.md",
+        "bytes": 6214,
+        "sha256": "8e5271b0812ece73915abc4cbe3655d930c1bd0c1ee48bec728908f71a5f93db"
+      },
+      {
+        "path": "worklines/standard/specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json",
+        "bytes": 8859,
+        "sha256": "2276b2678a252b2d5dcbdd4b58f8ba34b0a0a3409b6fab65ec7fdc45411b6212"
+      }
+    ]
   }
 }

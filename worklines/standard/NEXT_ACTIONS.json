@@ -1,8 +1,8 @@
 {
   "first": {
-    "id": "NEXT-STD-H10-M04-ATOMIC-OBSERVATION-CONTRACT",
-    "status": "READY_STATIC_ONLY",
-    "action": "基于本条件R5双世界，映射路径死亡/候选终局/已承诺终点落位/正式终结的原来源与可观察证据；不推定新全局先后，不运行引擎。",
+    "id": "NEXT-STD-H10-PREPARATION-CALLER-SOURCE-TRACE",
+    "status": "READY_INDEPENDENT_READ_ONLY",
+    "action": "定向追踪H10准备期入口、候选三选一、私有选择及普通研究准入真实调用来源；区分代码/接口/证据缺口，不注入hostId、不跑引擎、不改共享代码。",
     "implementation_authorized": false,
     "engine_execution_authorized": false
   },
@@ -11,19 +11,15 @@
   "parallel_agent_authorization": false,
   "implementation_authorization": false,
   "completed_latest": {
-    "id": "STD-H10-M04-CONDITIONAL-PREFIX-20261113",
+    "id": "STD-H10-M04-ATOMIC-OBSERVATION-20261113",
+    "source_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "engine_source_commit": "71145df45ad17215a3731e53150b6728e079e375",
     "date_local": "2026-11-13",
-    "source_commit": "3436693a335f25ea051905821f77e410f6284114",
-    "report": "worklines/standard/reviews/STD_H10_M04_PREFIX_REVIEW_20261113.md",
-    "contract": "worklines/standard/specs/STD_H10_M04_PREFIX_CONTRACT_20261113.json",
-    "static_results": "worklines/standard/specs/STD_H10_M04_PREFIX_GEOMETRY_RESULTS_20261113.json",
-    "checker": "worklines/standard/research/h10_m04_prefix_geometry.py",
-    "status": "CONDITIONAL_PREFIX_PREPARATION_COMPLETE_NOT_FULL_REACHABILITY",
-    "static_prefix_plies": 8,
-    "negative_geometry_controls": 3,
+    "report": "worklines/standard/reviews/STD_H10_M04_ATOMIC_OBSERVATION_REVIEW_20261113.md",
+    "contract": "worklines/standard/specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json",
+    "completed": "10项原子证据义务＋8项UNRUN反例＋2项静态源码风险",
     "engine_runs": 0,
-    "H10_sampling": "UNRUN",
-    "R5_execution": "UNRUN",
+    "independent_QA": false,
     "NG11": "OPEN",
     "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
     "featuresReady": false,
@@ -32,10 +28,10 @@
     "direct_shared_confirmations": 13,
     "scoring": "frozen",
     "NET": "paused",
-    "main_read": "UNKNOWN",
-    "main_adoption": "UNKNOWN"
+    "main_read_current_return": "UNKNOWN",
+    "main_adoption_current_return": "UNKNOWN"
   },
-  "status": "H10_CONDITIONAL_PREFIX_STATIC_PREPARED_RUNTIME_GAPS_OPEN",
+  "status": "H10_ATOMIC_OBSERVATION_CONTRACT_READY_RUNTIME_UNRUN",
   "session_closeout": {
     "revision": "STD-SESSION-CLOSEOUT-20261019-r1",
     "status": "closed_current_conversation",
@@ -341,5 +337,26 @@
     "NET": "paused",
     "main_read": "UNKNOWN",
     "main_adoption": "UNKNOWN"
+  },
+  "h10_m04_atomic_observation_20261113": {
+    "id": "STD-H10-M04-ATOMIC-OBSERVATION-20261113",
+    "source_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "engine_source_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "date_local": "2026-11-13",
+    "report": "worklines/standard/reviews/STD_H10_M04_ATOMIC_OBSERVATION_REVIEW_20261113.md",
+    "contract": "worklines/standard/specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json",
+    "completed": "10项原子证据义务＋8项UNRUN反例＋2项静态源码风险",
+    "engine_runs": 0,
+    "independent_QA": false,
+    "NG11": "OPEN",
+    "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
+    "featuresReady": false,
+    "gameplay_delta": 0,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_read_current_return": "UNKNOWN",
+    "main_adoption_current_return": "UNKNOWN"
   }
 }

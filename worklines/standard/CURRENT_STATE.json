@@ -44,9 +44,9 @@
   "active_working_document": "work/LEZI_STD_DESIGN_03_WORKING_20261014.md",
   "current_adjudication_version": "1.56",
   "next_task": {
-    "id": "NEXT-STD-H10-M04-ATOMIC-OBSERVATION-CONTRACT",
-    "status": "READY_STATIC_ONLY",
-    "action": "基于本条件R5双世界，映射路径死亡/候选终局/已承诺终点落位/正式终结的原来源与可观察证据；不推定新全局先后，不运行引擎。",
+    "id": "NEXT-STD-H10-PREPARATION-CALLER-SOURCE-TRACE",
+    "status": "READY_INDEPENDENT_READ_ONLY",
+    "action": "定向追踪H10准备期入口、候选三选一、私有选择及普通研究准入真实调用来源；区分代码/接口/证据缺口，不注入hostId、不跑引擎、不改共享代码。",
     "implementation_authorized": false,
     "engine_execution_authorized": false
   },
@@ -200,7 +200,7 @@
   "M04_confirmation_id": "CONF-STD-M04-WAR-CHARIOT-GROUND-KEEP-20261016",
   "M05_status": "confirmed_design_not_implemented_or_tested",
   "limitation_audit": "RETURN_TO_MAIN.json#limitation_audit",
-  "latest_user_instruction": "进行下一步",
+  "latest_user_instruction": "继续",
   "new_rule_confirmations_since_dispatch": 10,
   "M05_confirmation_id": "CONF-STD-M05-EXPEDITION-KEEP-20261016",
   "M06_status": "confirmed_design_not_implemented_or_tested",
@@ -930,19 +930,15 @@
     "resume_text": "继续《乐子象棋》普通象棋工作线。先核对最新远端HEAD与并发成果；读取固定入口 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/START_STANDARD.txt ，以 worklines/standard/CURRENT_STATE.json#latest_session_closeout 和 NEXT_ACTIONS.json#first 为准。已完成H21授鳞随机来源追溯及N=0/1/3/4/15、AS/AP/ES条件性索引的复验合同。下一任务 NEXT-STD-NP-H21-RNG-STATIC-INTEGRATION-PREFLIGHT（只读静态接口预检）尚未启动。正式NP/AS/AP/ES/RE与真实引擎测试/自然回放仍UNRUN；普通模式门禁不绕过。确认普通31/直接共享13/规则Δ0，评分冻结、NET暂停；保护新旧成果、增量写回并复读，不代填主线接收采用回执。"
   },
   "latest_task_completed": {
-    "id": "STD-H10-M04-CONDITIONAL-PREFIX-20261113",
+    "id": "STD-H10-M04-ATOMIC-OBSERVATION-20261113",
+    "source_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "engine_source_commit": "71145df45ad17215a3731e53150b6728e079e375",
     "date_local": "2026-11-13",
-    "source_commit": "3436693a335f25ea051905821f77e410f6284114",
-    "report": "worklines/standard/reviews/STD_H10_M04_PREFIX_REVIEW_20261113.md",
-    "contract": "worklines/standard/specs/STD_H10_M04_PREFIX_CONTRACT_20261113.json",
-    "static_results": "worklines/standard/specs/STD_H10_M04_PREFIX_GEOMETRY_RESULTS_20261113.json",
-    "checker": "worklines/standard/research/h10_m04_prefix_geometry.py",
-    "status": "CONDITIONAL_PREFIX_PREPARATION_COMPLETE_NOT_FULL_REACHABILITY",
-    "static_prefix_plies": 8,
-    "negative_geometry_controls": 3,
+    "report": "worklines/standard/reviews/STD_H10_M04_ATOMIC_OBSERVATION_REVIEW_20261113.md",
+    "contract": "worklines/standard/specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json",
+    "completed": "10项原子证据义务＋8项UNRUN反例＋2项静态源码风险",
     "engine_runs": 0,
-    "H10_sampling": "UNRUN",
-    "R5_execution": "UNRUN",
+    "independent_QA": false,
     "NG11": "OPEN",
     "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
     "featuresReady": false,
@@ -951,8 +947,8 @@
     "direct_shared_confirmations": 13,
     "scoring": "frozen",
     "NET": "paused",
-    "main_read": "UNKNOWN",
-    "main_adoption": "UNKNOWN"
+    "main_read_current_return": "UNKNOWN",
+    "main_adoption_current_return": "UNKNOWN"
   },
   "np_as_ap_es_observation_guard_matrix_20261025": {
     "id": "STD-NP-AS-AP-ES-OBSERVATION-GUARD-MATRIX-20261025",
@@ -1226,9 +1222,9 @@
     "source_head": "9e2a83b6613129c370cb9fe1872ef05a5e12fa82"
   },
   "next_priority_task": {
-    "id": "NEXT-STD-H10-M04-ATOMIC-OBSERVATION-CONTRACT",
-    "status": "READY_STATIC_ONLY",
-    "action": "基于本条件R5双世界，映射路径死亡/候选终局/已承诺终点落位/正式终结的原来源与可观察证据；不推定新全局先后，不运行引擎。",
+    "id": "NEXT-STD-H10-PREPARATION-CALLER-SOURCE-TRACE",
+    "status": "READY_INDEPENDENT_READ_ONLY",
+    "action": "定向追踪H10准备期入口、候选三选一、私有选择及普通研究准入真实调用来源；区分代码/接口/证据缺口，不注入hostId、不跑引擎、不改共享代码。",
     "implementation_authorized": false,
     "engine_execution_authorized": false
   },
@@ -1391,5 +1387,26 @@
     "adoption": "继续本次静态前缀准备；旧刺杀与新暗影步/新H05保持分层，无代码运行许可",
     "prior_ng11_main_received": true,
     "current_h10_main_received": "UNKNOWN"
+  },
+  "h10_m04_atomic_observation_20261113": {
+    "id": "STD-H10-M04-ATOMIC-OBSERVATION-20261113",
+    "source_commit": "6979552f76ec0a8866510306891eee9137b3ab7c",
+    "engine_source_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "date_local": "2026-11-13",
+    "report": "worklines/standard/reviews/STD_H10_M04_ATOMIC_OBSERVATION_REVIEW_20261113.md",
+    "contract": "worklines/standard/specs/STD_H10_M04_ATOMIC_OBSERVATION_CONTRACT_20261113.json",
+    "completed": "10项原子证据义务＋8项UNRUN反例＋2项静态源码风险",
+    "engine_runs": 0,
+    "independent_QA": false,
+    "NG11": "OPEN",
+    "NG12": "PARTIAL_BOUNDED_RUNTIME_EVIDENCE_NOT_FORMAL_PASS",
+    "featuresReady": false,
+    "gameplay_delta": 0,
+    "ordinary_confirmations": 31,
+    "direct_shared_confirmations": 13,
+    "scoring": "frozen",
+    "NET": "paused",
+    "main_read_current_return": "UNKNOWN",
+    "main_adoption_current_return": "UNKNOWN"
   }
 }
