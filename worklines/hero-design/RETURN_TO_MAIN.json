@@ -1,9 +1,9 @@
 {
   "schema": "lezi.workline.return_to_main.v1",
-  "id": "HERO-CAPTURE-MATCHING-20261113",
+  "id": "HERO-FAILED-REPLAY-LEDGER-20261113",
   "from": "hero-design",
   "to": "main",
-  "source_commit": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc",
+  "source_commit": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
   "followup_source_commit": "747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a",
   "updated_on_local": "2026-11-13",
   "status": "phase_increment_ready_for_receiver_review",
@@ -12,28 +12,36 @@
     "MAIN-COORD-FOLLOWUP-20261113-hero-design"
   ],
   "authorization": "User explicitly: 我长期批准本英雄设计支线，将更新内容提交到main。 Existing hero-design scope retained.",
-  "report": "worklines/hero-design/H05_BATCH_AND_JOINT_CAUSE_REVIEW.md",
+  "report": "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
   "changes": [
-    "Added unrelated H21 buff-change control against whole-state equality",
-    "Separated matching observations from approved causal equivalence and reset policy",
-    "Completed cross-version source/identity/phase review checklist with explicit unknowns"
+    "Constructed H21 whisper replay that removes a red pawn screen and leaves original black horse no legal king-safe action",
+    "Constructed adverse red-rook-loss replay that remains geometrically legal",
+    "Specified failed-candidate isolation while preserving accepted audit, attempt flag and RNG lock"
   ],
   "validation": {
-    "local_model_checks": 8,
-    "result": "PASS_LOCAL_RESEARCH_ONLY",
+    "local_model_checks": 10,
+    "result": "PASS_LOCAL_MODEL_ONLY",
     "source_engine_runs": 0,
     "independent_QA": false,
-    "results": "worklines/hero-design/research/H05_CAPTURE_MATCHING_RESULTS.json",
-    "scope": "4 source-conditioned geometry/projection checks + 4 classifier guards; prior 19/24 not rerun or accumulated"
+    "results": "worklines/hero-design/research/H05_FAILED_REPLAY_LEDGER_RESULTS.json",
+    "scope": "13-opportunity source-conditioned prefix, 90 original-horse destinations, adverse begin result and synthetic ledger isolation; no production transaction",
+    "not_covered": [
+      "death after controlled action",
+      "full normal turn following failure",
+      "actual mode admission",
+      "actual RNG/hidden permissions",
+      "reset multiplicity"
+    ]
   },
-  "rule_delta": "0; research projections and necessary checks only",
+  "rule_delta": "0; source-conditioned research only",
   "pending": {
     "capture_semantic_policy": "A/B_UNCONFIRMED",
     "Q_RS2": "SOURCE_REACHABILITY_AND_POLICY_UNRESOLVED",
     "same_cause_complete_key": "UNDEFINED",
     "batch_reset_multiplicity": "UNRESOLVED",
     "H21_whisper_batch": "same source atom confirmed; explicit simultaneous batch not established",
-    "changed_contributor_equivalence": "UNRESOLVED"
+    "changed_contributor_equivalence": "UNRESOLVED",
+    "post_action_adverse_death": "CONCRETE_SOURCE_FIXTURE_PENDING"
   },
   "shared_blockers": [
     "full H05 transaction and source-stable samples",
@@ -41,18 +49,18 @@
     "production randomness, hidden-information and delivery/ACK validation",
     "mode admission and independent QA"
   ],
-  "next_action": "同因果匹配核对项阶段已完成；下一核H05失败候选中的新死亡不得污染外置账本，对照合法提交后的不利死亡不能退款，补具体来源与承诺边界。A/B、批次倍数、Q-RS2继续保留未决，不增加同构断言。",
+  "next_action": "核原行动棋完成操控后才因后续效果死亡的具体来源与棋局；不拼接不兼容英雄。失败后正常begin的计时/状态推进另保留。同因果A/B、Q-RS2与批次重置倍数未决。",
   "receiver_read": "UNKNOWN",
   "receiver_adoption": "UNKNOWN",
   "historical_main_design_intake": "limited prior scope documented in main/H02_H05_INTEGRATION_REVIEW.md; not this new return",
   "changed_paths": [
-    "worklines/hero-design/H05_BATCH_AND_JOINT_CAUSE_REVIEW.md",
+    "worklines/hero-design/H05_FAILED_REPLAY_LEDGER_REVIEW.md",
+    "worklines/hero-design/research/H05_FAILED_REPLAY_LEDGER_PROBES.js",
+    "worklines/hero-design/research/H05_FAILED_REPLAY_LEDGER_RESULTS.json",
     "worklines/hero-design/CURRENT_STATE.json",
     "worklines/hero-design/RETURN_TO_MAIN.json",
     "worklines/hero-design/START_HERE.md",
-    "worklines/hero-design/READ_RECEIPTS.json",
-    "worklines/hero-design/research/H05_CAPTURE_MATCHING_PROBES.js",
-    "worklines/hero-design/research/H05_CAPTURE_MATCHING_RESULTS.json"
+    "worklines/hero-design/READ_RECEIPTS.json"
   ],
   "protected": [
     "formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
@@ -65,9 +73,9 @@
   "publication": {
     "destination_branch": "main",
     "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
-    "source_pending_commit": "d47856fcd8b9058658f30e9703e77f07d404bdce",
-    "publication_parent": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
-    "delivery": "publish prior reviewed seven-file increment plus explicit long-term authorization; success requires ref update and readback"
+    "research_source_commit": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
+    "publication_parent": "fc70084ee982d5eba3412d383ab7c392094a3849",
+    "delivery": "long-term authorized hero-design increment; expected_sha and force=false, readback required"
   },
   "publication_history": [
     {
@@ -96,11 +104,17 @@
       "main_update": "BLOCKED_BY_AUTOMATIC_APPROVAL_REVIEW",
       "reason": "automatic review did not recognize prior authorization for default branch mutation",
       "resolution": "user now explicitly confirms long-term permission; this publication supersedes pending delivery, not gameplay policy"
+    },
+    {
+      "destination_branch": "main",
+      "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
+      "source_pending_commit": "d47856fcd8b9058658f30e9703e77f07d404bdce",
+      "publication_parent": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+      "delivery": "publish prior reviewed seven-file increment plus explicit long-term authorization; success requires ref update and readback"
     }
   ],
-  "previous_return_id": "HERO-BATCH-JOINT-CAUSE-20261113",
+  "previous_return_id": "HERO-CAPTURE-MATCHING-20261113",
   "previous_source_commit": "83b6d6fdf7ae48846f1f8b8e78054905703ed7b0",
-  "previous_report": "worklines/hero-design/H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md",
-  "previous_phase_source_commit": "f2f0f8914682b29466370f0aeedeb87c19add27f",
-  "report_section": "8"
+  "previous_report": "worklines/hero-design/H05_BATCH_AND_JOINT_CAUSE_REVIEW.md",
+  "previous_phase_source_commit": "e68046421b2b51fe3674d42dcd9cd2cf14d287cc"
 }

@@ -178,6 +178,39 @@
         "new gameplay policy or receiver adoption"
       ],
       "validation": "reuse prior 8 local checks; research/script/results unchanged; publication readback still required"
+    },
+    {
+      "source_commit": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
+      "actual_read_scope": [
+        "current hero project instructions, entry, CURRENT_STATE, TASK_FROM_MAIN, RETURN_TO_MAIN, own READ_RECEIPTS, collaboration CURRENT",
+        "same-session preserved source readings and 11-11 closeout reused; no source-rule change since prior phase",
+        "local targeted reread H05 sections9.1-9.3 and H21 prayer/premonition/whisper/time interaction"
+      ],
+      "adopted_for_branch": [
+        "Constructed H21 whisper replay that removes a red pawn screen and leaves original black horse no legal king-safe action",
+        "Constructed adverse red-rook-loss replay that remains geometrically legal",
+        "Specified failed-candidate isolation while preserving accepted audit, attempt flag and RNG lock"
+      ],
+      "not_adopted": [
+        "A/B or batch reset policy",
+        "engine/mode acceptance",
+        "unbuilt post-action hidden-death fixture"
+      ],
+      "validation": {
+        "local_model_checks": 10,
+        "result": "PASS_LOCAL_MODEL_ONLY",
+        "source_engine_runs": 0,
+        "independent_QA": false,
+        "results": "worklines/hero-design/research/H05_FAILED_REPLAY_LEDGER_RESULTS.json",
+        "scope": "13-opportunity source-conditioned prefix, 90 original-horse destinations, adverse begin result and synthetic ledger isolation; no production transaction",
+        "not_covered": [
+          "death after controlled action",
+          "full normal turn following failure",
+          "actual mode admission",
+          "actual RNG/hidden permissions",
+          "reset multiplicity"
+        ]
+      }
     }
   ]
 }
