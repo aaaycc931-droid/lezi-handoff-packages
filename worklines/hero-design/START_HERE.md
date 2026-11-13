@@ -1,3 +1,5 @@
+> 本轮新增成果暂存独立分支 `codex/hero-design-causal-boundary-20261113`，通过草稿PR交主线核验；默认main写入被自动审批拒绝，尚未合入main。以下回传状态仅指本分支的真实成果。
+
 ## 2026-11-13 本线启动与最新派发已执行
 - 当前检查点：[CURRENT_STATE.json](CURRENT_STATE.json)；本线真实读源范围：[READ_RECEIPTS.json](READ_RECEIPTS.json)；新增回传：[RETURN_TO_MAIN.json](RETURN_TO_MAIN.json)。
 - 已接收初始协调及主线 `747f1fe` 续派。本轮纠正H02当前H05引用与旧begin措辞，保留历史源；H05 §§9—16及全部已确认选择保持。
