@@ -201,17 +201,11 @@
   },
   "NET": "paused",
   "next_action": {
-    "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-SOURCE-REVIEW-20261113",
+    "id": "MAIN-PARALLEL-INTEGRATION-20261113",
     "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
-    "action": "三模式回传及混乱83b6d6f逐动作来源地图已接收；主线沿其地图核剩余原生/前端跨断连自然可达时序与结果凭据，形成新旧端兼容的限定方案，不重做已交付来源地图。H02/H05差异清单已成文；UI历史diff/原件恢复独立待复核。",
-    "report": "worklines/main/MODE_STARTUP_RECEPTION_20261113.md",
-    "requirements": [
-      "不重复PR20—22已完成工程、历史测试或APK；unknown不自动补交",
-      "协议/回执语义变化需具体方案及适用授权，不用written/pong/snapshot/重连替代正式结果",
-      "按各线当前源增量协调，不重做NG11九分类或HC56联表；不干扰尚未回传工作"
-    ],
-    "engine_head": "71145df45ad17215a3731e53150b6728e079e375",
-    "source_map": "worklines/chaos/RETURN_TO_MAIN.json#/latest_receiver_phase/unknown_result_action_source_20261113"
+    "action": "原生命周期源审查已预派混乱，正式结果候选合同已预派半混乱；主线按可用增量接收、只核关键差分与争议，形成最小实施/兼容方案，不重复两条完整调查。等待真实回传期间可独立推进UI历史修复/原件复核。普通沿当前原子观察合同继续。",
+    "dispatch": "worklines/main/MODE_DISPATCH.json#parallel_execution_20261113",
+    "new_gameplay_or_protocol_approval": false
   },
   "supersession": "Original historical closure/old collaboration status fields in ADJUDICATION.json remain provenance. This state controls the resumed session; root collaboration index controls current protocol.",
   "limitation_audit_status": {
@@ -3632,5 +3626,25 @@
     "id": "MAIN-COORDINATION-FOLLOWTHROUGH-20261113",
     "action": "核各线真实回执，继续H02/H05共享影响映射与UI历史修复/原件恢复专项复核，再排原工程断点。",
     "report": "worklines/main/COORDINATION_RESULT.md"
+  },
+  "parallel_execution_20261113": {
+    "id": "MAIN-PARALLEL-EXECUTION-20261113",
+    "dispatch": "worklines/main/MODE_DISPATCH.json#parallel_execution_20261113",
+    "status": "TWO_EXISTING_WORKLINE_PACKAGES_ISSUED_NOT_READ",
+    "score": "frozen",
+    "NET": "paused"
+  },
+  "previous_next_before_delegation_20261113": {
+    "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-SOURCE-REVIEW-20261113",
+    "engineering_breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "action": "三模式回传及混乱83b6d6f逐动作来源地图已接收；主线沿其地图核剩余原生/前端跨断连自然可达时序与结果凭据，形成新旧端兼容的限定方案，不重做已交付来源地图。H02/H05差异清单已成文；UI历史diff/原件恢复独立待复核。",
+    "report": "worklines/main/MODE_STARTUP_RECEPTION_20261113.md",
+    "requirements": [
+      "不重复PR20—22已完成工程、历史测试或APK；unknown不自动补交",
+      "协议/回执语义变化需具体方案及适用授权，不用written/pong/snapshot/重连替代正式结果",
+      "按各线当前源增量协调，不重做NG11九分类或HC56联表；不干扰尚未回传工作"
+    ],
+    "engine_head": "71145df45ad17215a3731e53150b6728e079e375",
+    "source_map": "worklines/chaos/RETURN_TO_MAIN.json#/latest_receiver_phase/unknown_result_action_source_20261113"
   }
 }

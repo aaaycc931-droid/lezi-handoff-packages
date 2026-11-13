@@ -24,5 +24,64 @@
     "receiver_read": "UNKNOWN_FOR_THIS_NEW_FOLLOWUP",
     "receiver_adopted": "UNKNOWN_FOR_THIS_NEW_FOLLOWUP",
     "limits": "本轮是协调/来源任务；不是新玩法、引擎运行、模式门禁、合并部署或评分/NET解冻授权。其他支线未回传成果保护。"
-  }
+  },
+  "parallel_execution_20261113": {
+    "date_local": "2026-11-13",
+    "source_handoff_head": "b05729a8c1ad4a31376bbd3642995e6da6d8ce15",
+    "engine_source": {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "PR": 22,
+      "head": "71145df45ad17215a3731e53150b6728e079e375",
+      "refresh": "开始核实际PR HEAD；变化则读相关差分，不套旧结论"
+    },
+    "authority": "本轮用户要求减少支线等待，主线依既有跨线协调与只读源审查/文档授权分配执行工作；共享规则采用和代码所有权仍属主线，既有冻结/审批不变。",
+    "status": "ISSUED_NOT_RECEIVER_READ",
+    "receiver_read": "UNKNOWN",
+    "receiver_execution": "UNKNOWN",
+    "limits": [
+      "只读共享代码/证据，输出本线来源报告与候选方案；不改生产代码、协议或正式规则",
+      "不运行项目引擎/Android/网络，不新增模式准入、合并、部署或APK",
+      "source-only与实际运行分别登记；同一主线委派审查不称独立QA",
+      "保护未回传成果；原已交付地图/联表不重做，候选未批准不伪称采用"
+    ],
+    "delivery": "阶段增量保存到本线指定产物，并更新本线CURRENT_STATE/NEXT_ACTIONS/READ_RECEIPTS/RETURN_TO_MAIN；引用任务ID与固定源。每次写前核新HEAD/同文件差分，expected_sha且force=false；主线自行接收，用户不搬运。",
+    "continue_policy": "本任务已预分配，无需抢占共享文件。第一交付完成即可沿同一任务包的follow_on继续，不必等主线回执；主线后续新冲突/变更到来时对照版本处理。缺源只阻断对应项，继续其余有源项；全部有意义任务耗尽时如实报告，不制造重复报告。",
+    "read_first": [
+      "worklines/main/MODE_DISPATCH.json#parallel_execution_20261113",
+      "worklines/main/SHARED_COORDINATION.json#parallel_execution_20261113",
+      "worklines/chaos/RETURN_TO_MAIN.json#latest_receiver_phase.unknown_result_action_source_20261113",
+      "worklines/main/MAIN_NATIVE_SEND_REPORT.md",
+      "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json#requirements"
+    ],
+    "id": "MAIN-DELEGATE-HC-RESULT-CONTRACT-20261113",
+    "executor": "half_chaos",
+    "main_owner": "main",
+    "purpose": "把共享正式结果核对的候选合同与兼容性设计交半混乱执行；HC56的P0/P1作为验收输入，不重做110/56联表。",
+    "inputs": [
+      "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json",
+      "worklines/chaos/RETURN_TO_MAIN.json#latest_receiver_phase.unknown_result_action_source_20261113",
+      "engine:src/bluetooth-protocol.ts",
+      "engine:src/bluetooth-host-room.ts",
+      "engine:src/remote-room.ts"
+    ],
+    "actions": [
+      "基于现有动作身份/外层phase门禁，提出‘只查询旧请求结果、不自动重执行’的最小候选合同：actor、传输ID/动作ID、连接/会话生命周期、请求内容绑定、accepted/rejected/duplicate/unknown的可证明条件。字段是候选而非已实现。",
+      "覆盖无动作ID的准备操作、有ID局内动作、接受后finished/phase变化、同ID异载荷、旧记录缺失/失效；无法确定时保持unknown，不能用新拒绝倒推旧结果。",
+      "比较沿用v2兼容扩展/独立版本能力协商等至多两个有实际差分意义的方案；核当前解码拒绝/忽略未知类型与旧桥能力来源，缺源标待核。输出新旧房主/客端/原生桥组合和降级边界，不自动选定或改协议。",
+      "从原110中选择最多3个代表性请求说明未来结果凭据如何对应验收；只用已公开必要字段，不复制私有权威包或编造真实wire结果。"
+    ],
+    "deliverable": "worklines/half_chaos/HC_RESULT_RECONCILIATION_CONTRACT_PROPOSAL_20261113.md",
+    "acceptance": [
+      "当前实现、候选设计、源待核、用户/主线待决定分别列明",
+      "可直接供主线比较和定实施范围，避免只有概念列表",
+      "不要求混乱先交完整报告；未证时序明确条件化，不把假设当事实"
+    ],
+    "follow_on": {
+      "id": "HC-RESULT-CONTRACT-FAILURE-REVIEW",
+      "ready_without_main_receipt": true,
+      "action": "对自己两个候选做失败案例复核：旧回复串新连接、actor混淆、同ID异载荷、缓存淘汰、accepted后终局、旧端无能力。逐项写必须拒绝/仍unknown/可正式核对的条件与所需来源；不新增玩法，不称运行通过。",
+      "output": "同一候选报告追加反例检查及待主线取舍"
+    }
+  },
+  "active_main_dispatch": "parallel_execution_20261113"
 }

@@ -2080,5 +2080,50 @@
       "模式正式验收"
     ],
     "engine_tests_run": 0
+  },
+  "parallel_execution_20261113": {
+    "id": "MAIN-PARALLEL-EXECUTION-20261113",
+    "source_head": "b05729a8c1ad4a31376bbd3642995e6da6d8ce15",
+    "user_goal": "支线完成后不要因全部共享工作集中主线而空等；将可拆主线工作交有余力执行者。",
+    "mode": "existing_workline_dialogues_preassigned_packages_no_background_scheduler",
+    "tasks": {
+      "chaos": {
+        "id": "MAIN-DELEGATE-CH-LIFECYCLE-20261113",
+        "path": "worklines/chaos/TASK_FROM_MAIN.json#parallel_execution_20261113",
+        "status": "ISSUED_RECEIPT_UNKNOWN"
+      },
+      "half_chaos": {
+        "id": "MAIN-DELEGATE-HC-RESULT-CONTRACT-20261113",
+        "path": "worklines/half_chaos/TASK_FROM_MAIN.json#parallel_execution_20261113",
+        "status": "ISSUED_RECEIPT_UNKNOWN"
+      },
+      "standard": {
+        "id": "NEXT-STD-H10-M04-ATOMIC-OBSERVATION-CONTRACT",
+        "status": "EXISTING_READY_STATIC_TASK_KEEP_OWNER",
+        "note": "b05729a最新条件前缀报告已读，不重复R1—B4几何/九分类；自然准备/真帅安全/引擎R5仍未证明"
+      }
+    },
+    "main": {
+      "retained": [
+        "单一协调/采用责任与审批边界",
+        "将两份有源候选汇成最小共享实施方案，核关键差分与争议，不机械重做全部来源报告",
+        "既有授权内的实施另按源和具体方案推进；新协议语义/玩法取舍不默认批准",
+        "UI历史修复/原件复核是独立工作，可在模式任务执行时推进"
+      ],
+      "breakpoint": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+      "receipt_policy": "到一个可用增量就接收一个，未完成项单列；不等三线全部齐，不把接收源报告当最终采用/QA。"
+    },
+    "scheduling": {
+      "first_then_follow_on": "每条预分配两步，第二步不依赖主线接收；当前执行结束后仍由用户在已有对话继续触发，不宣称自动唤醒",
+      "no_duplicate_workers": "本轮不再启动子代理重复这两题。短时交叉审查可另派明确不同题，不能抢同文件。",
+      "task_size": "每步一个可独立评审交付物，提前保存阻断/可用增量，不以填满时间为目的",
+      "write_ownership": "执行者只写本线产物/状态回执；main共同调度文件由主线写，主线不改执行者已读/已执行字段",
+      "real_dependencies": "缺外部证据/用户取舍的步骤如实等待，切换已授权且有意义的后续任务；无法保证所有工作永远无等待"
+    },
+    "receiver_states": {
+      "chaos": "UNKNOWN",
+      "half_chaos": "UNKNOWN"
+    },
+    "approvals_unchanged": true
   }
 }

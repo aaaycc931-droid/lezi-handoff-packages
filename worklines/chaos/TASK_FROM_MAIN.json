@@ -468,5 +468,64 @@
     "receiver_read": "UNKNOWN_FOR_THIS_NEW_FOLLOWUP",
     "receiver_adopted": "UNKNOWN_FOR_THIS_NEW_FOLLOWUP",
     "limits": "本轮是协调/来源任务；不是新玩法、引擎运行、模式门禁、合并部署或评分/NET解冻授权。其他支线未回传成果保护。"
-  }
+  },
+  "parallel_execution_20261113": {
+    "date_local": "2026-11-13",
+    "source_handoff_head": "b05729a8c1ad4a31376bbd3642995e6da6d8ce15",
+    "engine_source": {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "PR": 22,
+      "head": "71145df45ad17215a3731e53150b6728e079e375",
+      "refresh": "开始核实际PR HEAD；变化则读相关差分，不套旧结论"
+    },
+    "authority": "本轮用户要求减少支线等待，主线依既有跨线协调与只读源审查/文档授权分配执行工作；共享规则采用和代码所有权仍属主线，既有冻结/审批不变。",
+    "status": "ISSUED_NOT_RECEIVER_READ",
+    "receiver_read": "UNKNOWN",
+    "receiver_execution": "UNKNOWN",
+    "limits": [
+      "只读共享代码/证据，输出本线来源报告与候选方案；不改生产代码、协议或正式规则",
+      "不运行项目引擎/Android/网络，不新增模式准入、合并、部署或APK",
+      "source-only与实际运行分别登记；同一主线委派审查不称独立QA",
+      "保护未回传成果；原已交付地图/联表不重做，候选未批准不伪称采用"
+    ],
+    "delivery": "阶段增量保存到本线指定产物，并更新本线CURRENT_STATE/NEXT_ACTIONS/READ_RECEIPTS/RETURN_TO_MAIN；引用任务ID与固定源。每次写前核新HEAD/同文件差分，expected_sha且force=false；主线自行接收，用户不搬运。",
+    "continue_policy": "本任务已预分配，无需抢占共享文件。第一交付完成即可沿同一任务包的follow_on继续，不必等主线回执；主线后续新冲突/变更到来时对照版本处理。缺源只阻断对应项，继续其余有源项；全部有意义任务耗尽时如实报告，不制造重复报告。",
+    "read_first": [
+      "worklines/main/MODE_DISPATCH.json#parallel_execution_20261113",
+      "worklines/main/SHARED_COORDINATION.json#parallel_execution_20261113",
+      "worklines/chaos/RETURN_TO_MAIN.json#latest_receiver_phase.unknown_result_action_source_20261113",
+      "worklines/main/MAIN_NATIVE_SEND_REPORT.md",
+      "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json#requirements"
+    ],
+    "id": "MAIN-DELEGATE-CH-LIFECYCLE-20261113",
+    "executor": "chaos",
+    "main_owner": "main",
+    "purpose": "把主线未知结果断点中尚缺的自然连接生命周期来源审查交给混乱执行；复用83b6d6f逐动作地图，不重审全部动作。",
+    "inputs": [
+      "engine:android/app/src/main/java/com/jieqi/bluetooth/BluetoothGameSession.java",
+      "engine:android/app/src/main/java/com/jieqi/bluetooth/GameWebBridge.java",
+      "engine:web/app.ts",
+      "engine:docs/BLUETOOTH_SEND_ACCOUNTING_20261030.md",
+      "engine:review/native-send-accounting/JVM_RESULTS_20261030.json",
+      "engine:review/native-send-accounting/RESULTS_20261030.json"
+    ],
+    "actions": [
+      "追单I/O执行器、writer/socket替换与关闭、原生到Web回调、CONNECTED/DISCONNECTED/ERROR清等待及重连。逐边注明函数/线程/事件队列和证据来源，区分自然可达与仅反射构造。",
+      "分别描述完整帧已接受但本机unknown、未形成完整帧、断连后旧回调到达/新连接建立的可证顺序；未知顺序明确未证，不靠常识补事件。",
+      "给主线最少必须保留的原请求身份/连接代际/结果保留问题，技术方案仅候选，不自行定消息协议。"
+    ],
+    "deliverable": "worklines/chaos/CH_CONNECTION_LIFECYCLE_SOURCE_REVIEW_20261113.md",
+    "acceptance": [
+      "每个关键先后关系有固定源码或既有实验定位",
+      "现有16JVM/3父控制/8行动3ping证据按范围复用，不重运行或升级真机证明",
+      "明确哪些来源足以供主线决策，哪些必须另做运行验证"
+    ],
+    "follow_on": {
+      "id": "CH-LIFECYCLE-MINIMAL-WITNESS-SPEC",
+      "ready_without_main_receipt": true,
+      "action": "基于已证自然路径给最多3个最小缺失时序验证规格：初始状态、精确事件/可注入故障边界、观测结果和反证条件。只写规格，不执行生产引擎；复用原fixture，不重复已有PR22控制。与半混乱方案只共享已证事实，未返回部分标未验证。",
+      "output": "同一报告追加最小验证规格，避免另起重复包"
+    }
+  },
+  "active_main_dispatch": "parallel_execution_20261113"
 }
