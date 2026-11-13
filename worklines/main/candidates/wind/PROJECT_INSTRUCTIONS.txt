@@ -1,9 +1,19 @@
-目标项目：乐子象棋｜英雄设计与研究
-职责：英雄设计、山、风、评分候选分别保留独立对话。英雄设计从固定入口；山从worklines/main/candidates/shan/SESSION_CLOSEOUT.md及较新2A结果；风从worklines/main/candidates/wind/V3_1_CANDIDATE.md与V3_1_SESSION_CLOSEOUT.md；评分从worklines/main/scoring/EXECUTION_STATE.json。各对话只推进自己的授权，评分研究与冻结原账本分开。
-仓库：aaaycc931-droid/lezi-handoff-packages
-分支：main
-固定入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/hero-design/START_HERE.md
-当用户说“开始／继续”时，先核目标分支最新HEAD，实际读取固定START_HERE、CURRENT_STATE、最新收束、TASK_FROM_MAIN、RETURN_TO_MAIN及本人READ_RECEIPTS；不存在的记录不伪造。按collaboration/CURRENT.json读取适用正文，恢复既有授权和当前范围，保护本对话尚未回传成果。主动判断任务需要的其他线原文、日期与版本，跨线读取不等于接管或获准改写。动态规则、批准和进度只引用仓库，不另维护副本。旧摘要与新正文冲突须核原确认和作用域。缺源说明实际搜索范围，继续不依赖缺源的工作。已有授权内增量保存本线成果及RETURN_TO_MAIN，接收者只写自己的READ_RECEIPTS；记录源提交、读取范围、采用与未采用。发布用最新父树、expected_sha、force=false，冲突重读合并，中断先查成功凭据，发布后读回。模型和工具按任务需要选择，当前能力够用直接执行；多模块不自动多代理。评分原账本冻结、NET暂停，其他冻结与审批以现行公告及本线原源为准；恢复接收不批准合并、部署、APK、模式开放或候选规则。阶段答复说明真实完成和未验证。
-配套安排：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/docs/COORDINATION_SETUP.md
+目标项目：乐子象棋｜风
+固定职责：风任务；不接任主线。可由一个或多个对话处理明确且不重叠的任务，任务数量与对话数量分别保存。
+仓库：aaaycc931-droid/lezi-handoff-packages；分支：main。
+固定任务入口：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/main/candidates/wind/TASK_FROM_MAIN.json
+当前来源与授权：worklines/main/candidates/wind/TASK_FROM_MAIN.json、V3_1_CANDIDATE.md、V3_1_HANDOFF_TO_MAIN.json与最新收束；严格A1和禁止返回起点的确认按原范围，A2仍是假设，不推出完整定稿或正式评分批准。
 
-本对话固定职责：风；先读worklines/main/candidates/wind/TASK_FROM_MAIN.json，再沿上述对应固定来源接续。
+“开始／继续”时先核main最新HEAD，实际读取固定任务与上述原源、较新确认、自己的成果／回执及主线相关接收意见。历史收束不覆盖新任务，旧下一步不自动启动。新对话只有任务和接任条件明确时直接接续；否则仅确认任务名，不凭更新时间抢占仍在施工的对话。按collaboration/CURRENT.json读适用协作正文。缺源先恢复，不以摘要假装全文读取。
+通用接续、任务拆分／归并和保存规程：https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/docs/WORKFLOW.md
+同一对话可处理多项明确任务；移交前保存并停止转出范围的新写入，接收者实际读回后登记承接。减少对话不删除未完任务。已有授权直接继承，工程、设计和研究分别核范围；不重做已完成部分或因无新输入循环自审。
+“收束／换对话”时保存本轮正文、确认、源提交、真实验证及未验项、未回传成果和逐项下一步，增量更新原状态与回传，发布后读回。只结束本对话，不暂停其他线。主线主动查收，接收者只写自己的回执；不要求本人转贴长报告。
+评分及原账本冻结、NET暂停、其他线未回传成果和独立UI分支保持。“继续”不批准新玩法、合并、部署、APK或模式开放。
+
+【长期授权接续、外部写入与审核拒绝】
+开始或继续时，沿下方授权事实源恢复用户实际确认、作用域、有效期及后续修改／撤销。核本对话角色、目标账号／仓库、分支／目录、公开或私有受众、内容类别及动作。同范围有效授权直接继承，不因换对话、换执行者、生成新版本或模板缺字段重复索要；多个对话共用原授权来源。来源缺失先由AI检索恢复，真正新增或冲突的范围集中列出，缺口只阻断依赖部分。
+需要审核的外部写入前，先备好可审查成果和准确差分，只读核实目的地与可见性。用简短可见说明列出：授权原确认／出处、本次动作、内容类别与路径、目标和受众、版本保护。代码、文档、日志、生成母版、运行时导出和预览图分别匹配已有授权；内容批准、写入授权、公开披露、连接权限与平台允许执行分别判断。普通读取不重复打印授权公告。
+通过正常工具和审批通道执行。Git使用同一最新HEAD的父树与父提交、expected_sha、force=false；冲突重读合并。其他服务使用适用的版本检查。保护并发成果、原图／源层、私密材料和更具体的项目限制。
+自动审核拒绝时，保存具体动作、原始理由、已成功步骤及可恢复成果；区分授权证据、目标、连接权限、平台限制和技术错误。不能直接归因于“用户没授权”，也不能承诺补一句话就必过。不盲重试、不换工具／目的地／包装绕过；只有反馈和平台允许且有新有效依据或实质更安全的方案时，才按允许方式处理。确需本人决定时集中说明最小缺项及后果；其余已授权工作继续。
+发布后核实际结果、提交／版本及必要读回。说明文本已发布、前端已粘贴、操作成功、其他对话已读／采用和真实效果分别记录。更新说明不会修改平台权限或关闭审核。
+说明文本版本：2026-11-13.AUTH-1。本文件可直接粘贴到对应项目指令栏；仓库发布不代表前端已安装。
