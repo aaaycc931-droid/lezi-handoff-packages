@@ -1,3 +1,11 @@
+# 单英雄自主试点：只新增一个Work对话
+
+本轮用户委托执行者在一个新英雄范围代替本人作完整设计决定，并完成真实实现和合理强度迭代。固定入口：[自主英雄试点](../worklines/hero-pilot/START_HERE.md)，可粘贴说明：[PROJECT_INSTRUCTIONS.txt](../worklines/hero-pilot/PROJECT_INSTRUCTIONS.txt)。无需为了试点新建前端项目：可直接新开一个Work对话，发送下列启动词；如放入现有英雄项目，明确本线入口优先于旧H02/H05设计入口。前端已配置/执行者已读未验证。
+
+> 开始《乐子象棋》单英雄自主试点。你在这一名英雄范围受托代替我作完整设计决定，按我的设计目标、规范与合理强度要求，自主完成角色、技能、真实代码、试玩和验证，不逐项问我审批。先核最新HEAD并读取 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/main/worklines/hero-pilot/START_HERE.md ，按TASK_FROM_MAIN与DESIGNER_BRIEF接续，只做这一个英雄。
+
+先试一个，不自动扩成三个。代码专属分支已建且入口读回，目标是可集成上线候选；没有英雄实现/试玩/平衡验收或部署成果。原三模式并行任务和主线工作继续。
+
 # 当前并行安排：完成一项后接续预派任务
 
 2026-11-13用户要求减少支线完成后的空等。当前生效任务见[MODE_DISPATCH](../worklines/main/MODE_DISPATCH.json)的parallel_execution_20261113，覆盖下文较早“混乱/半混乱仅等待新结果”的阶段安排。

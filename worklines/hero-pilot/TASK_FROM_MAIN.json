@@ -1,0 +1,127 @@
+{
+  "schema": "lezi.autonomous_hero_pilot.task.v1",
+  "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
+  "owner": "main",
+  "executor": "one_new_Work_dialogue",
+  "count": 1,
+  "authority": {
+    "source": "本主线对话2026-11-13用户：先试一个；执行者独立完成英雄设计、人物特征和实现，风格自由，不参与逐项审批；后续明确必须符合乐子象棋正常玩法范围，不能过强/过弱，以实际可玩、可上线为目标。；随后用户进一步明确：执行者在这一名英雄制作中代替本人，拥有同等设计目标与规范，可参考本人已表达的性格思想爱好进行自主取舍。",
+    "delegated": [
+      "在EXP-HERO-001范围承担原由用户完成的需求理解、选题、创意比较、否决、参数取舍、自主定稿与反复改进；不要求用户继续逐题选择",
+      "自主决定本英雄姓名、性格、外观、新来源世界的局部设定",
+      "自主选择本英雄技能、成本、次数、时点、数值与平衡迭代，不逐项请用户审批",
+      "在指定独立引擎分支完成真实实现、必要局部接入、离线试玩入口、相关测试与局部平衡实验",
+      "在交接库main仅写本线文档/状态/回传；有冲突按最新HEAD合并；可创建限定代码差分的draft PR"
+    ],
+    "not_delegated": [
+      "修改旧英雄/已确认世界A—D的归属和正式规则",
+      "解除评分原账本/评分方法运行暂停、NET暂停或其他模式产品门禁",
+      "合并引擎PR、部署、发布APK或对外开放模式",
+      "把自主定稿标成用户逐条确认，或把本线自测标成独立QA"
+    ],
+    "priority": "本条用户的新明确授权在本试点范围优先于旧设计线‘不得写代码/只做文档’泛化限制；不扩展到其他英雄/工作线。",
+    "approval_behavior": "英雄内的创意/参数/工程修复自行决定，不不断问用户A/B。主线技术审查与集成由主线承担；在许可范围优先改进实现或选兼容机制。真正涉及范围外重大共享规则时带明确差分回主线，继续其他不依赖项。",
+    "design_role": "本英雄的受托自主设计负责人：承接用户的设计席位与本英雄最终创意取舍权，不仅执行用户预先给出的方案。"
+  },
+  "repositories": {
+    "handoff": {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "branch": "main",
+      "owned_prefix": "worklines/hero-pilot"
+    },
+    "engine": {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "branch": "codex/autonomous-hero-01-20261113",
+      "base_commit": "71145df45ad17215a3731e53150b6728e079e375",
+      "base_pr": 22,
+      "base_pr_state": "open_draft_unmerged_at_dispatch",
+      "base_ref": "codex/main-native-send-accounting-20261030",
+      "default_main_observed": "c25749d4f21d394c3d94486cfba1d786864083b6",
+      "note": "不从较旧main重新造现有工程；不合并整条PR链；draft PR优先对固定开发基线展示本英雄增量，基线后移先核差分。",
+      "setup_commit": "7f47b740b01b9a1e6ef126fc9e2628682b603e6d",
+      "setup_verification": "one entry-only file read back exact; no hero code/tests delivered"
+    },
+    "lore": {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "branch": "ui/restart-asof-20261104-1119",
+      "observed_head": "0b97417ef74b872b2277a1f8372f7a94c24c92c0",
+      "read_only": true
+    }
+  },
+  "identity": {
+    "work_id": "EXP-HERO-001",
+    "world_work_id": "WORLD-EXP-01",
+    "world_label": "试验世界E（临时代号，正式名由执行者设计）",
+    "reason": "现有世界D明确属于H15天空上将；用户要新增世界的意图以不覆盖D的方式实现。E是本试点新增设定，不伪称旧世界观已含此世界。",
+    "formal_H_number": "UNASSIGNED_DO_NOT_STEAL_EXISTING_OR_PENDING_IDS",
+    "name": "EXECUTOR_TO_DESIGN"
+  },
+  "design_contract": {
+    "goal": "在乐子象棋正常规则内，有鲜明玩法但强度适中的完整新英雄；独立实现的是本游戏扩展，不是另做一个简化小游戏或只有技能演示。",
+    "fiction": "背景和造型自由，新世界可有独特风格；宏大叙事不等于无边界对局能力。尊重已确认多世界/乐子基本设定，不因喜好重写原世界。",
+    "power": "拒绝无条件按按钮获胜、无代价无限行动/资源/控制/信息、对手无可应对的确定胜势；也拒绝在合理对局中几乎不可用、收益不足以抵消成本的装饰技能。不是禁止一切有条件强效果，而是必须解释代价、机会成本、触发条件、对手反制及极端上限。",
+    "reference": "至少选3名有可比功能的现有英雄，读取其当前正式规则和作用域；设计层新H02/H05与旧引擎分开，不混用历史分数或未采用候选。比较收益/成本/可用性/反制，不照抄或靠把旧英雄削弱达标。",
+    "definition": "写清行动等级/类型、占步与时点、资源、目标权限、王安全、公开/秘密字段、失败不消费/合法发动消费、生命周期、终局及适用模式；原规则有确定答案的复用，不自创相反通用裁判。",
+    "independence": "优先选择现有已实现机制可承载的玩法，不以H02/H05待整合、共享未知结果协议、评分新方法完成为前置；必要小接口在自己分支实现并说明，不修改它线在途分支。",
+    "designer_model": "先读DESIGNER_BRIEF.md，依据本轮用户明确目标和项目公开确认案例工作；有依据的偏好/单英雄专属选择/执行者推断分开。可以推测用户会如何取舍作为思考方法，不能把推测记作用户原话或凭空构造人格。作品有自己特色，不机械拼接已有技能。"
+  },
+  "implementation": {
+    "initial_release_scope": "首版适配混乱象棋jieqi的离线完整对局与试玩入口，选其已有英雄功能基线减少全模式依赖；不自动承诺三模式均已适配。若另有更合适首发来源需在本线说明依据，并守既有模式门禁。",
+    "real_engine": "真实类型/名录或隔离注册、技能权威执行、资源与时序、合法性和公私投影、界面说明/可选择入口必须连通。允许本英雄所需最小共享接入仅存在试点分支；不能只写旁路模拟器冒充引擎实现。",
+    "isolation": "默认现有产品池/现有对局行为保持；新英雄通过明确试验开关/来源限定入口可实际游玩，不硬改featuresReady或发布NET。试玩只为隔离新功能，不降低最终交付质量。",
+    "scope_progression": "先形成可用的最小纵向实现，尽早跑通真实对局；再补边界、可用性和强度调整。不能只积累设计文件而长期不写代码。",
+    "code_ownership": "新文件尽量置独立模块；必须修改types/heroes/hero-actions/settlement/web等共同文件时记录准确差分，在专属分支完成，主线最终仅移植审过的必要增量。"
+  },
+  "balance": {
+    "local_experiments_authorized": true,
+    "official_scoring_thawed": false,
+    "method": "现有评分设计期缺层可参考其场景/反事实/反制思想，作为本英雄局部工程实验，不安装/批准新评分方法、不运行或改冻结评分流程。不得以评分线未完成为理由停止。",
+    "required_evidence": [
+      "合理开中残局及双方颜色/先后，至少有对手主动反制场景；收益上限与代价下限各有案例",
+      "有技能/无技能或近邻参数的合法对照，无技能一方保留正常行动，不能人为让对方空过",
+      "极端组合/循环/终局/秘密信息/失败回滚/重复命令检查，区分已有来源允许与未适配",
+      "实际真实引擎运行结果、命令、seed/动作序列及失败记录；至少一局完整合法对局演练，并展示技能可用/可反制的真实过程；固定脚本不冒充真人对战",
+      "用验证发现的问题自行修正并复跑相关检查；定稿列有证据的强度判断、剩余风险及最有信息量的后续实战"
+    ],
+    "claims": "不设无依据50%胜率/统一分数目标；少量脚本或弱策略自博弈不能证明全局平衡。未测保留未测，不能因测试全绿就称上线平衡验收通过。"
+  },
+  "deliverables": [
+    "DESIGN.md：人物/外观/新世界局部设定、完整技能、当前自主定稿与变更理由",
+    "真实引擎分支提交和可审draft PR或等价精确差分",
+    "可运行、可选择英雄的本地试玩方式与实际运行验证，不止截图",
+    "BALANCE.md：对标、局部对照数据、反制/极端测试和自主迭代依据",
+    "IMPLEMENTATION.md：接入点、兼容范围、运行命令及已知限制",
+    "VALIDATION.json：实际通过/失败/未运行分开；SOURCE/commit与验证绑定",
+    "CURRENT_STATE、SESSION_CLOSEOUT、RETURN_TO_MAIN、本人READ_RECEIPTS真实更新"
+  ],
+  "completion": {
+    "design": "AUTONOMOUSLY_FINALIZED_UNDER_USER_DELEGATION，不标逐条USER_CONFIRMED",
+    "engineering": "真实引擎与试玩可用＋相关回归，未通过继续修",
+    "balance": "有界证据支持中等合理强度，并诚实列未证范围；若显著过强/过弱必须自主调整",
+    "release_candidate": "代码/文档/玩法/试玩/证据足够供主线集成评审，不能只交想法、孤立模拟或‘以后实现’",
+    "deployment": "NOT_AUTHORIZED；产品全模式/联网/真机/独立QA未验项独立列明，不冒称已上线"
+  },
+  "startup": [
+    "核交接main、独立UI、专属engine分支最新HEAD；读本入口和当前状态/任务/回传/收束/本人回执，保护未回传成果",
+    "读取DESIGNER_BRIEF.md：对齐用户在本项目的设计目标/规范及来源边界，自己作设计取舍；不把找不到更多个人档案当开工前置。",
+    "读collaboration/CURRENT和适用协作正文；读主线共享任务只取相关范围，避免重抄全历史",
+    "跨线必要原源自行读取；对新英雄以本试点授权为准，不领取旧英雄设计任务或接任主线",
+    "核Node>=24及仓库访问/本地代码与测试能力，实际检出准确源；连接有读权限不等于已能运行/写入，缺口有实据再报",
+    "选择3名参照英雄→设计首版→真实实现→运行/反制/平衡迭代→完整候选回传，不等待用户逐步选参数"
+  ],
+  "save": "仅写自有交接目录与专属engine分支；每次最新父树/expected_sha/force=false并读回，其他线成果不动；无需用户搬运材料。主线接收后自动协调技术修正，不把未完实现留给用户设计。",
+  "source_handoff_head": "b48e06001307fe38774c5395b67a242b12a279c1",
+  "receiver_read": "UNKNOWN",
+  "receiver_execution": "NOT_STARTED_AT_DISPATCH",
+  "required_sources": [
+    "collaboration/CURRENT.json及其适用协作正文",
+    "worklines/main/START_HERE.txt及CURRENT_STATE最新相关授权/来源",
+    "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+    "worklines/standard/rules/shared/02_CURRENT_HEROES.md（至少3名对标英雄完整段及直接关联）",
+    "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md（所选组合相关段）",
+    "worklines/main/ADJUDICATION.json（所用行动/安全/终局/公开信息/重复相关项）",
+    "独立UI分支worklines/ui/START_HERE.txt、WORLD_LORE_CANON_20261109.md、HERO_WORLD_ORIGIN_GROUPS_20261109.md、HERO_VISUAL_STYLE_INDEPENDENCE_RULE_20261109.md及与新世界直接相关的新确认",
+    "worklines/main/scoring/DESIGN_PHASE_PREDICTION_GAP_INTAKE.md（参考问题与证据方法，不采用新评分或解冻）",
+    "engine固定分支的package.json、types/heroes/modes、实际将修改的权威动作/生命周期/投影/试玩入口及相关测试；读源码后决定实现，不凭交接摘要写代码"
+  ]
+}

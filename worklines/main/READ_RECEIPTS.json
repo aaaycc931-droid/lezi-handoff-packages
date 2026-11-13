@@ -4885,5 +4885,40 @@
     ],
     "new_tasks": "worklines/main/MODE_DISPATCH.json#parallel_execution_20261113",
     "other_receiver_read": "UNKNOWN"
+  },
+  "autonomous_hero_pilot_20261113": {
+    "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
+    "entry": "worklines/hero-pilot/START_HERE.md",
+    "task": "worklines/hero-pilot/TASK_FROM_MAIN.json",
+    "designer_brief": "worklines/hero-pilot/DESIGNER_BRIEF.md",
+    "status": "ONE_HERO_AUTONOMOUS_DESIGN_IMPLEMENTATION_DISPATCH_READY",
+    "source_handoff_head": "b48e06001307fe38774c5395b67a242b12a279c1",
+    "engine_branch": "codex/autonomous-hero-01-20261113",
+    "engine_setup_commit": "7f47b740b01b9a1e6ef126fc9e2628682b603e6d",
+    "engine_entry_readback": true,
+    "user_authority": "本英雄全部设计决策委托，按用户同等目标/规范，自主强度迭代与真实实现；不逐项审批",
+    "world_scope": "新增试验E临时代号，D现有H15归属保留",
+    "executor_read": "UNKNOWN",
+    "code_implemented": false,
+    "scope_boundaries": "不扩到旧英雄、正式评分、NET、模式开放、合并部署；上线质量目标与发布动作分开",
+    "related_existing_work": "旧hero-design的H02/H05继续；三模式既有并行任务继续；UI独立设计及主线历史审查均不取消。",
+    "actual_read_scope": [
+      "独立UI固定HEAD 0b97417的HERO_WORLD_ORIGIN_GROUPS全文，D=H15",
+      "引擎71145df的heroes.ts/modes.ts/package.json全文、types.ts前5000字符及完整树路径（未发现AGENTS.md），非全部源码审计",
+      "交接AGENTS、CURRENT_HANDOFF、英雄项目说明、主线相关当前对象、英雄线最新RETURN next_action",
+      "评分DESIGN_PHASE_PREDICTION_GAP_INTAKE全文；共享英雄目录与已读相关来源复用，不冒称重审全部英雄确认",
+      "个人上下文检索未补得足以概括人格的额外资料；公开产物只使用本轮项目委托与公开源指引"
+    ],
+    "adopted": [
+      "本英雄新的自主设计/实现授权及合理强度目标",
+      "新世界临时代号避免覆盖现有D",
+      "固定最新开发链作隔离分支基线"
+    ],
+    "not_adopted": [
+      "新英雄尚未产生的设计、实现或测试",
+      "全项目评分/NET/模式冻结解除",
+      "所有人格偏好已知",
+      "其他支线新回传自动采用"
+    ]
   }
 }

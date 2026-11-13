@@ -1,0 +1,49 @@
+{
+  "schema": "lezi.hero_pilot.state.v1",
+  "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
+  "updated_by": "main_setup",
+  "status": "READY_FOR_ONE_NEW_WORK_DIALOGUE",
+  "task": "TASK_FROM_MAIN.json",
+  "designer_brief": "DESIGNER_BRIEF.md",
+  "count": 1,
+  "engine": {
+    "repo": "aaaycc931-droid/jieqi-engine",
+    "branch": "codex/autonomous-hero-01-20261113",
+    "base_commit": "71145df45ad17215a3731e53150b6728e079e375",
+    "base_pr": 22,
+    "base_pr_state": "open_draft_unmerged_at_dispatch",
+    "base_ref": "codex/main-native-send-accounting-20261030",
+    "default_main_observed": "c25749d4f21d394c3d94486cfba1d786864083b6",
+    "note": "不从较旧main重新造现有工程；不合并整条PR链；draft PR优先对固定开发基线展示本英雄增量，基线后移先核差分。",
+    "setup_commit": "7f47b740b01b9a1e6ef126fc9e2628682b603e6d",
+    "setup_verification": "one entry-only file read back exact; no hero code/tests delivered"
+  },
+  "world": {
+    "work_id": "EXP-HERO-001",
+    "world_work_id": "WORLD-EXP-01",
+    "world_label": "试验世界E（临时代号，正式名由执行者设计）",
+    "reason": "现有世界D明确属于H15天空上将；用户要新增世界的意图以不覆盖D的方式实现。E是本试点新增设定，不伪称旧世界观已含此世界。",
+    "formal_H_number": "UNASSIGNED_DO_NOT_STEAL_EXISTING_OR_PENDING_IDS",
+    "name": "EXECUTOR_TO_DESIGN"
+  },
+  "progress": {
+    "instructions_prepared": true,
+    "repo_publication": "IN_THIS_BOOTSTRAP_COMMIT_VERIFY_BY_GIT",
+    "frontend_project_configured": "UNKNOWN_NOT_REQUIRED_FOR_STANDALONE_DIALOGUE",
+    "executor_read": "UNKNOWN",
+    "design_finalized": false,
+    "code_implemented": false,
+    "engine_runs": 0,
+    "local_playable_verified": false,
+    "balance_evidence": false,
+    "independent_QA": false,
+    "deployed": false
+  },
+  "next_action": "执行者实际读源/核能力，按设计准则自主选定可落地英雄方向，尽早完成真实引擎纵向实现；不逐项问用户审批。",
+  "protected": {
+    "other_worklines": true,
+    "score_ledger": "frozen",
+    "NET": "paused",
+    "engine_merge": false
+  }
+}
