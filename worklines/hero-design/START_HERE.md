@@ -1,3 +1,11 @@
+> 2026-11-13 项目负责人已在本英雄设计对话明确授权本支线更新 `main`。本轮将 PR #2 的英雄设计增量纳入 main；此前默认分支自动审批阻断只留历史。授权范围与并发保护见 [CURRENT_STATE.json](CURRENT_STATE.json) 的 `main_write_authorization_20261113`。写入不等于主线已读取/采用，也不扩大玩法、工程或其他审批权限。
+
+## 2026-11-13 本线启动与最新派发已执行
+- 当前检查点：[CURRENT_STATE.json](CURRENT_STATE.json)；本线真实读源范围：[READ_RECEIPTS.json](READ_RECEIPTS.json)；新增回传：[RETURN_TO_MAIN.json](RETURN_TO_MAIN.json)。
+- 已接收初始协调及主线 `747f1fe` 续派。本轮纠正H02当前H05引用与旧begin措辞，保留历史源；H05 §§9—16及全部已确认选择保持。
+- [同因果吃子边界与Q-RS2研究](H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md)：H21四祈求来源条件前缀中同马同路吃同兵，begin随机死亡集合不同；19项局部模型检查通过，非引擎/模式验收。吃子语义去重A/B及Q-RS2特殊早采样仍未决。
+- 主线接收已于11-13恢复；下方旧暂停语句是历史。主线此前已限定读取H02/H05并采用差异清单，见 ../main/H02_H05_INTEGRATION_REVIEW.md；**本轮新报告的主线读取/采用仍待其真实回执**。评分冻结、NET暂停、其他审批边界保持。
+
 【2026-11-13 主线接收恢复】用户已明确任命本轮对话为主线并解除11-05公告的暂停接收限制；其他冻结、暂停、审批和支线所有权保持。现行协调见worklines/main/COORDINATION_RESULT.md与docs/COORDINATION_SETUP.md。下方旧暂停文字仅为历史状态，不覆盖本条；各线实际采用仍由各自回执证明。
 
 接续先读本线TASK_FROM_MAIN.json的coordination_20261113增量；保护未回传成果，按任务读源并自行记录回执。

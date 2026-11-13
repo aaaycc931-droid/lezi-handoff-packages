@@ -1,0 +1,142 @@
+{
+  "source_commit": "83b6d6fdf7ae48846f1f8b8e78054905703ed7b0",
+  "command": "node worklines/hero-design/research/H05_CAPTURE_CAUSAL_BOUNDARY_PROBES.js",
+  "runtime": "Node.js v24.22.1",
+  "result": {
+    "status": "PASS_LOCAL_MODEL_ONLY",
+    "checks": 19,
+    "cases": [
+      "source-modeled four prayers followed by one complete red response",
+      "H21 conditional begin: four distinct legal nonking targets per branch",
+      "same black horse and route still capture r-P-3 in both branches",
+      "both local final boards have 26 pieces and safe kings",
+      "same command does not imply same complete destruction set",
+      "turn+actor+main-victim collision cannot suppress changed begin deaths",
+      "same-main-capture question remains distinct from changed begin batch",
+      "exact casualty-set comparison ignores random enumeration order only",
+      "same scoped cause is only an A/B candidate, never automatic approval",
+      "same victim via begin skill vs main capture must not collide",
+      "same victim in a different formal opportunity must not collide",
+      "missing causal source cannot be guessed equivalent",
+      "same capture with H04 rain may have different terminal consequence, conditional only",
+      "identical committed event redelivery adds nothing",
+      "same delivery ID with changed payload is conflict, not benign retry",
+      "failed candidate contributes no accepted new event",
+      "illustrative random slot lock reuses same result across retry",
+      "random slots are not global per-turn deduplication",
+      "formal opportunities remain one rewritten opponent plus one H05 occupancy"
+    ],
+    "conditionalFixture": {
+      "prefix": [
+        {
+          "opportunity": "red1",
+          "type": "ordinary-I",
+          "from": [
+            3,
+            4
+          ],
+          "to": [
+            3,
+            5
+          ],
+          "victim": null
+        },
+        {
+          "opportunity": "black1",
+          "type": "prayer-occupancy"
+        },
+        {
+          "opportunity": "red2",
+          "type": "ordinary-I",
+          "from": [
+            3,
+            5
+          ],
+          "to": [
+            3,
+            6
+          ],
+          "victim": null
+        },
+        {
+          "opportunity": "black2",
+          "type": "prayer-occupancy"
+        },
+        {
+          "opportunity": "red3",
+          "type": "ordinary-I",
+          "from": [
+            3,
+            6
+          ],
+          "to": [
+            3,
+            7
+          ],
+          "victim": "b-P-3"
+        },
+        {
+          "opportunity": "black3",
+          "type": "prayer-occupancy"
+        },
+        {
+          "opportunity": "red4",
+          "type": "ordinary-I",
+          "from": [
+            3,
+            7
+          ],
+          "to": [
+            3,
+            8
+          ],
+          "victim": null
+        },
+        {
+          "opportunity": "black4",
+          "type": "prayer-occupancy"
+        },
+        {
+          "opportunity": "red5",
+          "type": "ordinary-I",
+          "from": [
+            7,
+            4
+          ],
+          "to": [
+            7,
+            5
+          ],
+          "victim": null
+        }
+      ],
+      "prefixFormalOpportunities": 9,
+      "ordinaryMoves": 5,
+      "prayers": 4,
+      "preBeginPieces": 31,
+      "oldBeginDeaths": [
+        "r-R-1",
+        "r-H-2",
+        "r-A-4",
+        "r-A-6"
+      ],
+      "newBeginDeaths": [
+        "r-R-1",
+        "r-H-2",
+        "r-A-4",
+        "r-H-8"
+      ],
+      "sameMainVictim": "r-P-3",
+      "finalPieces": 26
+    },
+    "notVerified": [
+      "production H21 prayer/descent and full H05 transaction",
+      "actual mode admission",
+      "H04 15 bilateral rounds and H05 terminal legality",
+      "production RNG or network",
+      "formal reset multiplicity or segment IDs",
+      "source engine or independent QA"
+    ],
+    "captureDedupPolicy": "A/B_UNCONFIRMED"
+  }
+}
