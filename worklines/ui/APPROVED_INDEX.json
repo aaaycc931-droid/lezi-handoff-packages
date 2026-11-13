@@ -126,6 +126,16 @@
     }
   ],
   "current_pending_candidate": {
+    "version": "UI-STYLE-WINTER-BG-v1",
+    "status": "candidate_created_pending_user_review",
+    "scope": "new_style_background_exploration_only",
+    "record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+    "sha256": "bb060649d872cdf94ce80f1ec4b5988e0516bcfaadc6d268ec54da82caa37509"
+  },
+  "source_status_authority": "APPROVAL_REGISTER.json",
+  "index_reconciled_on": "2026-11-13",
+  "index_reconciliation_note": "B9 added from existing specific approval; B10 remains pending. This index reconciliation grants no new approval. User subsequently corrected task priority: legacy UI is on hold, not discarded; the active pending image is a new-style background exploration, not B10.",
+  "legacy_pending_candidate": {
     "version": "B10-v1",
     "status": "pending_user_review",
     "source_folder": "candidates/B10/v1",
@@ -137,9 +147,24 @@
       "git_blob_sha": "ccddf4d9011b26c917a5df011001c6456642c598",
       "bytes": 2610870,
       "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95"
-    }
+    },
+    "track": "legacy_static_ui",
+    "work_status": "on_hold",
+    "active_for_current_dialogue": false,
+    "discarded": false
   },
-  "source_status_authority": "APPROVAL_REGISTER.json",
-  "index_reconciled_on": "2026-11-13",
-  "index_reconciliation_note": "B9 added from existing specific approval; B10 remains pending. This index reconciliation grants no new approval."
+  "active_style_reference": {
+    "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+    "ref": "9d480cdb9df328bfd683abbc44ee42605e2f0074",
+    "path": "visual_sessions/20261108_selected_triptych",
+    "filename": "LEZI_UI_20261108_SELECTED_TRIPTYCH_STYLE_REFERENCE.png",
+    "sha256": "144363946dbd825bf8ee9d44c38387c34005a2ded510baa48c47ca5e29948472",
+    "width": 1774,
+    "height": 887,
+    "bytes": 3293462,
+    "approval_scope": "visual_style_reference_only",
+    "original_recovered_from_all_10_parts": true,
+    "original_sha256_verified_in_this_turn": true,
+    "original_visually_inspected": true
+  }
 }

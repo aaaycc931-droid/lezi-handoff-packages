@@ -194,7 +194,8 @@
       "No production or Bluetooth runtime acceptance.",
       "No mainline receipt/adoption of this increment."
     ],
-    "validation": "worklines/ui/candidates/B10/v1/restoration-verification.json"
+    "validation": "worklines/ui/candidates/B10/v1/restoration-verification.json",
+    "routing_assessment": "Historical approval and asset checks valid; treating B10 as active task was incorrect and superseded by current user correction."
   },
   "world_lore_society_batch10_20261113": {
     "record_id": "UI-WORLD-LORE-SOCIETY-BATCH10-20261113",
@@ -210,5 +211,50 @@
     "new_evidence": "当前用户自主十项授权及此前背景不改变当前UI的明确纠偏",
     "scope": "narrative_receiver_only; original_ui_image_resume_20261113 retained",
     "verification": "same_assistant_semantic_check; no engine/images/runtime"
+  },
+  "new_style_ui_resume_20261113": {
+    "record_id": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113",
+    "date_local": "2026-11-13",
+    "receiver": "UI_image_style_dialogue",
+    "source_commit": "896fd5d6e3e27e7098e772854f179d1b4324494d",
+    "write_base_commit": "bd8ab26995421f5963f27b504571a33ffea18a25",
+    "actual_read_sources": [
+      "VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md sections 1–9",
+      "INK_TECHNIQUE_CONTROLLED_TEST_20261108.md",
+      "SELECTED_TRIPTYCH_STYLE_REFERENCE_20261108.md",
+      "UI_HISTORICAL_VISUAL_SESSION_CLOSEOUT_20261108.md sections 2.3–7",
+      "CURRENT_STATE visual-style and legacy task fields",
+      "START_HERE, RETURN_TO_MAIN, READ_RECEIPTS, UI_NEXT_TASKS, APPROVED_INDEX",
+      "Private selected-triptych manifest and all 10 Base64 parts"
+    ],
+    "recovered_reference": {
+      "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+      "ref": "9d480cdb9df328bfd683abbc44ee42605e2f0074",
+      "path": "visual_sessions/20261108_selected_triptych",
+      "filename": "LEZI_UI_20261108_SELECTED_TRIPTYCH_STYLE_REFERENCE.png",
+      "sha256": "144363946dbd825bf8ee9d44c38387c34005a2ded510baa48c47ca5e29948472",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3293462,
+      "approval_scope": "visual_style_reference_only",
+      "original_recovered_from_all_10_parts": true,
+      "original_sha256_verified_in_this_turn": true,
+      "original_visually_inspected": true
+    },
+    "adopted": [
+      "新画风图片探索是当前任务，旧B10审图暂搁但不废弃。",
+      "只采用11-08第一张三联图的画风参考资格，不把三个人物当正式英雄定稿。",
+      "本轮只有一张独立冬季背景新候选，未批准替换旧UI。"
+    ],
+    "error_corrected": "896fd5d6 misrouted legacy B10 as active task",
+    "concurrent_preservation": {
+      "commit": "bd8ab26995421f5963f27b504571a33ffea18a25",
+      "scope": "Only compared changed paths/fields for preservation; social-world decisions not adopted as UI content.",
+      "preserved_record": "world_lore_society_batch10_20261113"
+    },
+    "actual_generated_count": 1,
+    "main_receiver_read": "UNKNOWN",
+    "main_receiver_adoption": "UNKNOWN",
+    "runtime": "not_run"
   }
 }

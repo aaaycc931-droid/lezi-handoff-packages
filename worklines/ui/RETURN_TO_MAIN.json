@@ -39,7 +39,11 @@
       "git_blob_sha": "ccddf4d9011b26c917a5df011001c6456642c598",
       "bytes": 2610870,
       "sha256": "a7b314afe8d3dedf68f114b0442ee802a5853cedff2ae90893554e2ed8a99d95"
-    }
+    },
+    "track": "legacy_static_ui",
+    "work_status": "on_hold",
+    "active_for_current_dialogue": false,
+    "discarded": false
   },
   "actual_validation": {
     "approved_B9_recomposition_changed_pixels": 0,
@@ -373,14 +377,19 @@
     "source_repair": "build.py argparse option --approved-b9 was read as a.approved_b8; corrected to a.approved_b9 only. Layout parameters and expected hashes unchanged.",
     "new_artwork": false,
     "new_artwork_approval": false,
-    "next_action": "本轮只展示 B10-v1 原候选，等待用户对这张静态图的具体批准或局部修改意见；B11仍未开始。",
+    "next_action": "保留B9/B10原件、历史批准/待审与源恢复记录；旧逐屏审图暂搁，不自动要求用户审B10。当前转至 new_style_ui_resume_20261113。",
     "narrative_scope_preserved": true,
     "game_code_changed": false,
     "runtime": "not_run",
     "scoring": "frozen",
     "NET": "paused",
     "main_receiver_read": "UNKNOWN",
-    "main_receiver_adoption": "UNKNOWN"
+    "main_receiver_adoption": "UNKNOWN",
+    "routing_status": "superseded_by_user_correction",
+    "active_route": false,
+    "work_status": "legacy_static_ui_on_hold",
+    "discarded": false,
+    "correction_record": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113"
   },
   "source_unchanged_scope": "Original artwork, baseline, font and parameters are unchanged; the B10 build.py argparse repair is recorded in original_ui_image_resume_20261113.",
   "world_lore_society_batch10_20261113": {
@@ -403,5 +412,63 @@
     "game_code_changed": false,
     "official_game_rules_changed": false
   },
-  "world_lore_next_action": "展示第二批社会背景十项与整体结果，接收用户反馈或下一任务；不自动扩展第11项。"
+  "world_lore_next_action": "展示第二批社会背景十项与整体结果，接收用户反馈或下一任务；不自动扩展第11项。",
+  "new_style_ui_resume_20261113": {
+    "record_id": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113",
+    "source_commit": "896fd5d6e3e27e7098e772854f179d1b4324494d",
+    "date_local": "2026-11-13",
+    "user_quote": "最近的UI设计工作内容应该是新风格的是生成吧，生成新的风格的图片才是之前的断点，你现在进行的路线，他似乎已经被暂时搁置或者放弃了，就这些图片里面，它只能作为一个不确定的东西，他们不是被废弃了，而是未来会被更新新的风格。",
+    "cause": "Assistant incorrectly treated retained historical B1-B9 approval/B10 pending status as the current active task and wrote the B10 priority route in 896fd5d6.",
+    "historical_evidence": [
+      "VISUAL_STYLE_DIRECTION_HANDOFF_20261101.md section 6: historical approvals preserved; section 9: no automatic B10 restart, new style exploration active.",
+      "UI_HISTORICAL_VISUAL_SESSION_CLOSEOUT_20261108.md sections 2.3-2.5: later style corrections and sole selected first triptych supersede early ink-explosion tests.",
+      "SELECTED_TRIPTYCH_STYLE_REFERENCE_20261108.md: style approval only, not final UI or hero identities."
+    ],
+    "active_track": "new_style_image_exploration",
+    "legacy_track": "on_hold_for_future_new_style_update_not_discarded",
+    "historical_B1_B9_approvals_preserved": true,
+    "historical_B10_approval": "pending_not_approved_rejected_or_deleted",
+    "original_asset_recovery_and_source_fix_preserved": true,
+    "latest_style_reference": {
+      "repository": "aaaycc931-droid/lezi-ui-asset-staging",
+      "ref": "9d480cdb9df328bfd683abbc44ee42605e2f0074",
+      "path": "visual_sessions/20261108_selected_triptych",
+      "filename": "LEZI_UI_20261108_SELECTED_TRIPTYCH_STYLE_REFERENCE.png",
+      "sha256": "144363946dbd825bf8ee9d44c38387c34005a2ded510baa48c47ca5e29948472",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3293462,
+      "approval_scope": "visual_style_reference_only",
+      "original_recovered_from_all_10_parts": true,
+      "original_sha256_verified_in_this_turn": true,
+      "original_visually_inspected": true
+    },
+    "style_requirements": [
+      "黑白灰、明亮高反差",
+      "连贯长笔刷与大片有方向的墨带、飞白",
+      "克制散点、清冷干净、飘逸侠气",
+      "冬季雪山风雪、有限红梅强调",
+      "背景风格不自动强制套给每名英雄"
+    ],
+    "next_concrete_page_was_historically_selected": false,
+    "current_sample_choice": "本轮助手选择一张独立冬季 UI 背景风格样图，作为最小可审阅新候选；不是历史已选页面，不是旧B10改版。",
+    "per_turn_candidate_count": 1,
+    "arena_concept": false,
+    "world_lore_changes_game_ui": false,
+    "production_redesign_or_deployment_approved": false,
+    "main_receiver_read": "UNKNOWN",
+    "main_receiver_adoption": "UNKNOWN",
+    "actual_candidate": "UI-STYLE-WINTER-BG-v1",
+    "candidate_record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+    "generation_completed": true,
+    "actual_generated_count": 1,
+    "source_head_before_write": "bd8ab26995421f5963f27b504571a33ffea18a25",
+    "next_action": "用户评价这一张新风格样图；按具体反馈继续一次一图，不自动回到B10或批量替换旧界面。"
+  },
+  "active_ui_image_task": {
+    "id": "UI-STYLE-WINTER-BG-v1",
+    "status": "candidate_created_pending_user_review",
+    "record": "worklines/ui/candidates/UI-STYLE-WINTER-BG/v1/candidate.json",
+    "next_action": "用户评价这一张新风格样图；按具体反馈继续一次一图，不自动回到B10或批量替换旧界面。"
+  }
 }
