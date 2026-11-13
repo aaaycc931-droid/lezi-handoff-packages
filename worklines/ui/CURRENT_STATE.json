@@ -754,7 +754,7 @@
     "game_code_changed": false,
     "official_game_rules_changed": false
   },
-  "world_lore_next_action": "本对话已结束。用户将在聊天模式接续H01猎人视觉文字：先核对暂时确认的外观全文，整理已有规格并仅处理实际出图所需缺项；重点是角色专属画风/媒介、构图和呈现参数。已定面容、体态、服装、装备不重问；不自动恢复世界观第八批或生成图片。",
+  "world_lore_next_action": "世界观扩写继续暂停。H01已有外观沿用原暂时确认稿；本轮已提出A写实厚涂、B线描水彩、C形块插画及共同构图候选，等待用户选择画风。建议A；所有新呈现参数均未确认，不因继续指令自动生图。",
   "status_scope": "original_game_UI_images; narrative fields retain their separate scope",
   "active_ui_image_task": {
     "id": "UI-HOME-NEWSTYLE-v5",
@@ -1230,5 +1230,30 @@
     "official_rules_changed": false,
     "UI_approvals_changed": false,
     "artwork_generated": false
+  },
+  "active_hero_visual_task": {
+    "record_id": "UI-H01-PRESENTATION-OPTIONS-20261113",
+    "date_local": "2026-11-13",
+    "source_commit": "a8f9430b83483f0cda0fc0e693a64a32a06f552e",
+    "source_branch": "ui/restart-asof-20261104-1119",
+    "status": "PRESENTATION_OPTIONS_PROPOSED_AWAITING_USER_CHOICE",
+    "user_instruction": "按这份交接继续 H01 猎人视觉设计",
+    "scope": "H01角色专属画风及构图呈现参数；已有暂定外观保持",
+    "existing_appearance": "worklines/ui/H01_HUNTER_APPEARANCE_PROVISIONAL_20261109.md",
+    "proposal": "worklines/ui/H01_HUNTER_PRESENTATION_OPTIONS.md",
+    "options": {
+      "A": "有可见笔触的写实厚涂",
+      "B": "线描＋克制水彩设色",
+      "C": "形块概括的角色插画"
+    },
+    "assistant_recommendation": "A",
+    "user_selected_option": null,
+    "composition_status": "PROPOSED_NOT_CONFIRMED",
+    "new_user_design_confirmations": 0,
+    "artwork_generated": false,
+    "excluded_old_image_used": false,
+    "next_action": "世界观扩写继续暂停。H01已有外观沿用原暂时确认稿；本轮已提出A写实厚涂、B线描水彩、C形块插画及共同构图候选，等待用户选择画风。建议A；所有新呈现参数均未确认，不因继续指令自动生图。",
+    "main_receiver_read": "UNKNOWN",
+    "main_receiver_adoption": "UNKNOWN"
   }
 }
