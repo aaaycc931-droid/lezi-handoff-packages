@@ -1,6 +1,130 @@
 {
   "schema": "lezi.hero_pilot.receipts.v1",
-  "created_by": "main_setup",
-  "executor_receipts": [],
-  "note": "尚无试点执行者实际阅读回执；主线准备文件不算执行者已读。由执行者记录源提交、实际阅读范围和采用/未采用。"
+  "created_by": "hero_pilot_executor",
+  "date": "2026-11-13",
+  "collaboration_check": {
+    "level": "L2",
+    "working_revision": "2026-10-23.v0.18",
+    "formal_baseline": "1.8.0",
+    "body_sha256": "22d16fdf30563eddb19a23c651993b57ebdb1b3ac27a6edb54be187effa68ea1"
+  },
+  "executor_receipts": [
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "a262f744ed256b0dfad1f64e7b5df4cef0c9fe58",
+      "paths": [
+        "AGENTS.md",
+        "docs/WORKFLOW.md",
+        "worklines/hero-pilot/START_HERE.md",
+        "worklines/hero-pilot/TASK_FROM_MAIN.json",
+        "worklines/hero-pilot/DESIGNER_BRIEF.md",
+        "worklines/hero-pilot/PROJECT_INSTRUCTIONS.txt",
+        "worklines/hero-pilot/CURRENT_STATE.json",
+        "worklines/hero-pilot/READ_RECEIPTS.json",
+        "worklines/hero-pilot/RETURN_TO_MAIN.json",
+        "worklines/hero-pilot/SESSION_CLOSEOUT.json"
+      ],
+      "actual_scope": "入口、归属、授权、保存和初始空回传",
+      "adopted": "只写自有目录/独立引擎分支，自行设计；不扩线/合并/发布"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "a262f744ed256b0dfad1f64e7b5df4cef0c9fe58",
+      "paths": [
+        "collaboration/CURRENT.json",
+        "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md"
+      ],
+      "actual_scope": "CURRENT与适用INTEGRATED_START/TASK_ROUTES/MANDATORY_PRECHECK/GITHUB_HANDOFF_WORKFLOW/AI_LIMITATION_CONTROL及来源、时间、完成状态条款；非全历史通读",
+      "adopted": "L2；工作稿2026-10-23.v0.18，正式基线1.8.0；候选/自测/已确认分开"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "a262f744ed256b0dfad1f64e7b5df4cef0c9fe58",
+      "paths": [
+        "worklines/main/START_HERE.txt",
+        "worklines/main/CURRENT_STATE.json",
+        "worklines/main/ADJUDICATION.json",
+        "worklines/main/scoring/DESIGN_PHASE_PREDICTION_GAP_INTAKE.md"
+      ],
+      "actual_scope": "本英雄相关授权/并发、unified_adjudication_core与行动等级/王安全/公开秘密/时序/重复终局相关项；评分缺层的场景/反事实/反制思想",
+      "adopted": "继承适用裁判；未采用新评分或解冻；共享未实现不写成已验"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "a262f744ed256b0dfad1f64e7b5df4cef0c9fe58",
+      "paths": [
+        "worklines/standard/rules/shared/01_CURRENT_RULES.md",
+        "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
+        "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md"
+      ],
+      "actual_scope": "基础规则；H05/H06/H13/H17/H18完整段及关联；所测8种普通畸变的移动/落位/空间/无形相关段，非全英雄全畸变穷尽",
+      "adopted": "H05/H13/H17三名对标，H18补充形态；H06快照；移置不自动获得普通行动收益"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "0b97417ef74b872b2277a1f8372f7a94c24c92c0",
+      "paths": [
+        "worklines/ui/START_HERE.txt",
+        "worklines/ui/WORLD_LORE_CANON_20261109.md",
+        "worklines/ui/HERO_WORLD_ORIGIN_GROUPS_20261109.md",
+        "worklines/ui/HERO_VISUAL_STYLE_INDEPENDENCE_RULE_20261109.md",
+        "worklines/ui/WORLD_LORE_CONFIRMED_EXTENSION_20261111.md",
+        "worklines/ui/WORLD_LORE_SELECTED_SPACE_VISUAL_CONFIRMED_20261113.md"
+      ],
+      "actual_scope": "多世界、乐子/参赛者边界、D归属、风格独立及新世界直接相关确认；保留其他UI未决审美",
+      "adopted": "E为本试点新增；不移走H15、不重排旧归属，不代确认未决问题"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "7f47b740b01b9a1e6ef126fc9e2628682b603e6d",
+      "paths": [
+        "package.json",
+        "src/types.ts",
+        "src/heroes.ts",
+        "src/hero-forms.ts",
+        "src/modes.ts",
+        "src/game.ts",
+        "src/hero-actions.ts",
+        "src/rules.ts",
+        "src/settlement.ts",
+        "src/spaces.ts",
+        "src/setup.ts",
+        "web/app.ts",
+        "web/index.html",
+        "tests/helpers.ts",
+        "tests/hero-forms.test.ts",
+        "tests/hero-transfer-r5.test.ts",
+        "tests/confirmed-runtime.test.ts",
+        "tests/time-line-contracts.test.ts",
+        "tests/current-control.test.ts"
+      ],
+      "actual_scope": "待修改类型/登记/权威动作与前后调用、落位/陷阱/亡魂/历史/公私投影、模式与本机选将；相关测试读法",
+      "adopted": "按真实签名实现，独立模块与最小共享接入；不依赖新版H02/H05或NET结果协议"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "d5d05f92df1be0b3fef43b22245c0a0c5cc25fbf",
+      "paths": [
+        "worklines/hero-pilot",
+        "collaboration/CURRENT.json",
+        "worklines/main/START_HERE.txt",
+        "worklines/main/CURRENT_STATE.json"
+      ],
+      "actual_scope": "发布前HEAD差分；试点任务/协作正文与所用正式来源未变；其他线新增28文件保留",
+      "adopted": "主线报告试点启动，不冒认其已接收成果；保护并发"
+    }
+  ],
+  "private_personal_sources_published": false,
+  "preference_boundary": "采用用户明确本项目目标；人物性格与审美为本英雄受托决定，不构造个人画像。",
+  "engine_delivery_readback": {
+    "commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
+    "files": 20,
+    "exact_blob_equality": true
+  },
+  "main_read_delivery": "UNKNOWN",
+  "publication_parent_recheck": {
+    "head": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
+    "diff_from_previous": "7 files only under worklines/hero-design; owned prefix and task unchanged",
+    "preserved": true
+  }
 }

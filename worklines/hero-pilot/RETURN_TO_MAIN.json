@@ -1,12 +1,63 @@
 {
   "schema": "lezi.hero_pilot.return.v1",
-  "created_by": "main_setup",
+  "created_by": "hero_pilot_executor",
   "task_id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-  "status": "NO_EXECUTOR_DELIVERY_YET",
+  "status": "ENGINEERING_CANDIDATE_WITH_BROWSER_QA_GAP",
   "entry": "worklines/hero-pilot/START_HERE.md",
-  "design_decisions": [],
-  "engine_delivery": null,
-  "validation": null,
-  "main_receipt_of_future_delivery": "UNKNOWN",
-  "note": "仅建立固定回传位置，未预填设计完成、测试通过或主线采用。"
+  "design_decisions": [
+    {
+      "kind": "delegated_designer_decision",
+      "id": "EXP-HERO-001",
+      "name": "司衡",
+      "world": "WORLD-EXP-01 世界E：悬衡界",
+      "version": "v1",
+      "ability": "换轨：两次、距离4、两枚己方明置非将帅地面棋交换，II级占整手",
+      "rationale": "明示搭档、整手代价与次数上限，提供可反制的结构调度；详情DESIGN/BALANCE"
+    }
+  ],
+  "engine_delivery": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "branch": "codex/autonomous-hero-01-20261113",
+    "commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
+    "draft_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23",
+    "base": "71145df45ad17215a3731e53150b6728e079e375",
+    "files": 20,
+    "readback_exact": true,
+    "merge_or_deploy": false
+  },
+  "validation": {
+    "file": "VALIDATION.json",
+    "full_regression_pass": 1025,
+    "focused_final_pass": 34,
+    "new_tests_after_full_suite": 3,
+    "synthetic_or_opening_witnesses": 9,
+    "complete_playouts": 18,
+    "dom_checks": 4,
+    "build": "PASS",
+    "real_browser": "UNVERIFIED_ENVIRONMENT_BLOCK",
+    "independent_QA": false,
+    "global_balance": "NOT_PROVEN"
+  },
+  "necessary_main_actions": [
+    "审查PR23本英雄增量，保留现有开发链；未授权合并发布",
+    "在可运行真实浏览器的环境补画面/触摸验证；DOM证据已齐",
+    "用可见搭档拆除/逼应将的真人换边实战验证强度；无须重新问用户创意参数"
+  ],
+  "main_receipt_of_future_delivery": "UNKNOWN_NOT_CLAIMED",
+  "protected": {
+    "other_worklines": true,
+    "score_ledger": "frozen",
+    "NET": "paused",
+    "engine_merge": false
+  },
+  "limitations": [
+    "real browser visual/touch playtest",
+    "Android/native/Bluetooth/NET",
+    "independent QA or human adversarial play",
+    "all hero and mutation combinations",
+    "global calibrated balance",
+    "complete shared pressure/repetition/draw adjudication coverage",
+    "final portrait/animation",
+    "merge or deployment"
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "schema": "lezi.hero_pilot.state.v1",
   "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-  "updated_by": "main_setup",
-  "status": "READY_FOR_ONE_NEW_WORK_DIALOGUE",
+  "updated_by": "hero_pilot_executor",
+  "status": "ENGINEERING_CANDIDATE_WITH_BROWSER_QA_GAP",
   "task": "TASK_FROM_MAIN.json",
   "designer_brief": "DESIGNER_BRIEF.md",
   "count": 1,
@@ -16,34 +16,54 @@
     "default_main_observed": "c25749d4f21d394c3d94486cfba1d786864083b6",
     "note": "不从较旧main重新造现有工程；不合并整条PR链；draft PR优先对固定开发基线展示本英雄增量，基线后移先核差分。",
     "setup_commit": "7f47b740b01b9a1e6ef126fc9e2628682b603e6d",
-    "setup_verification": "one entry-only file read back exact; no hero code/tests delivered"
+    "setup_verification": "one entry-only file read back exact; no hero code/tests delivered",
+    "delivery_commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
+    "draft_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23",
+    "published": true,
+    "readback": "20 files exact blob match",
+    "base_latest_recheck": "71145df45ad17215a3731e53150b6728e079e375"
   },
   "world": {
     "work_id": "EXP-HERO-001",
     "world_work_id": "WORLD-EXP-01",
-    "world_label": "试验世界E（临时代号，正式名由执行者设计）",
+    "world_label": "世界E：悬衡界",
     "reason": "现有世界D明确属于H15天空上将；用户要新增世界的意图以不覆盖D的方式实现。E是本试点新增设定，不伪称旧世界观已含此世界。",
     "formal_H_number": "UNASSIGNED_DO_NOT_STEAL_EXISTING_OR_PENDING_IDS",
-    "name": "EXECUTOR_TO_DESIGN"
+    "name": "司衡",
+    "world_name": "悬衡界"
   },
   "progress": {
-    "instructions_prepared": true,
-    "repo_publication": "IN_THIS_BOOTSTRAP_COMMIT_VERIFY_BY_GIT",
-    "frontend_project_configured": "UNKNOWN_NOT_REQUIRED_FOR_STANDALONE_DIALOGUE",
-    "executor_read": "UNKNOWN",
-    "design_finalized": false,
-    "code_implemented": false,
-    "engine_runs": 0,
-    "local_playable_verified": false,
-    "balance_evidence": false,
+    "executor_read": true,
+    "design_finalized": true,
+    "design_authority": "AUTONOMOUSLY_FINALIZED_UNDER_USER_DELEGATION",
+    "code_implemented": true,
+    "engine_full_playouts": 18,
+    "natural_terminals": 16,
+    "budget_resignations": 2,
+    "local_playable_dom_verified": true,
+    "real_browser_playtest_verified": false,
+    "local_playable_verified": "ENGINE_AND_DOM_ONLY_BROWSER_GAP",
+    "balance_evidence": true,
+    "global_balance_accepted": false,
     "independent_QA": false,
-    "deployed": false
+    "deployed": false,
+    "portrait": "TEXT_DESIGN_ONLY_EXISTING_PLACEHOLDER"
   },
-  "next_action": "执行者实际读源/核能力，按设计准则自主选定可落地英雄方向，尽早完成真实引擎纵向实现；不逐项问用户审批。",
+  "next_action": "主线定向审查PR23增量与证据；下一执行环境可运行浏览器时补真实画面/触摸试玩，再安排有对手主动反制的真人换边实战。英雄创意/参数已自主定稿，不等待用户逐项审批。未合并、未部署。",
   "protected": {
     "other_worklines": true,
     "score_ledger": "frozen",
     "NET": "paused",
     "engine_merge": false
-  }
+  },
+  "updated_on": "2026-11-13",
+  "deliverables": [
+    "DESIGN.md",
+    "BALANCE.md",
+    "IMPLEMENTATION.md",
+    "VALIDATION.json",
+    "READ_RECEIPTS.json",
+    "RETURN_TO_MAIN.json",
+    "SESSION_CLOSEOUT.json"
+  ]
 }
