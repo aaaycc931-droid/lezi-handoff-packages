@@ -1,12 +1,12 @@
 {
   "schema": "lezi.workline.return_to_main.v1",
-  "id": "HERO-CLOCK-A-RESET-POLICY-GATE-20261113",
+  "id": "HERO-CAPTURE-RESET-A-SOURCE-GATE-20261113",
   "from": "hero-design",
   "to": "main",
-  "source_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
+  "source_commit": "2ea548689a14814db5c517a475f97633f451122c",
   "followup_source_commit": "747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a",
   "updated_on_local": "2026-11-13",
-  "status": "clock_A_confirmed_old_reset_policy_awaiting_user",
+  "status": "phase_increment_ready_for_source_owner_review",
   "task_ids": [
     "MAIN-COORD-20261113-hero-design",
     "MAIN-COORD-FOLLOWUP-20261113-hero-design"
@@ -14,30 +14,32 @@
   "authorization": "User explicitly: 我长期批准本英雄设计支线，将更新内容提交到main。 Existing hero-design scope retained.",
   "report": "worklines/hero-design/H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md",
   "changes": [
-    "Confirmed user choice a for Q-H05-CLOCK-01; appended formal H05 section17 shared budget and failure remainder",
-    "Updated H02 navigation to H05 section17 without changing H02 gameplay",
-    "Ran nine local clock contract checks; retained production timing and concurrency limits",
-    "Prepared original unresolved same-cause capture reset choice with explicit lack of demonstrated outcome difference"
+    "Confirmed strict same-cause capture reset A as H05 formal section18 with both execution audits retained",
+    "Separated approved policy from still-unproved causal equivalence in all existing counterexample categories",
+    "Updated current navigation and historical candidate notices without rewriting prior evidence",
+    "Re-ran eight existing matching projection checks with corrected policy/evidence status labels",
+    "Prepared specific source/implementation dependencies; no new unsupported user A/B question"
   ],
   "validation": {
-    "local_model_checks": 9,
-    "result": "PASS_LOCAL_CONTRACT_MODEL_ONLY",
+    "local_model_checks": 8,
+    "new_scenarios": 0,
+    "existing_checks_rerun": 8,
+    "result": "PASS_LOCAL_RESEARCH_ONLY",
     "source_engine_runs": 0,
     "independent_QA": false,
-    "results": "worklines/hero-design/research/H05_SHARED_CLOCK_RESULTS.json",
-    "scope": "confirmed shared-clock budget arithmetic and local transition model; no production clock",
+    "results": "worklines/hero-design/research/H05_CAPTURE_MATCHING_RESULTS.json",
+    "scope": "existing H21 source-conditioned geometry/projection checks rerun after policy-status labeling update; no causal key implementation",
     "not_covered": [
-      "source-specific game callbacks",
-      "network identity/conflicts/reconnect",
-      "simultaneous deadline-request-terminal priority",
-      "actual commit gate",
-      "complete time-source interactions",
-      "mode/independent QA"
+      "full causal equivalence",
+      "changed contributor grouping",
+      "batch multiplicity",
+      "Q-RS2 source-reachable early sample",
+      "production H05/clocks/transaction/mode/network",
+      "independent QA"
     ]
   },
-  "rule_delta": "H05 clock A confirmed and saved as design section17 only; no shared rules or engine",
+  "rule_delta": "strict same-cause capture reset A confirmed as H05 section18; no shared rule or engine adoption",
   "pending": {
-    "capture_semantic_policy": "A/B_UNCONFIRMED",
     "Q_RS2": "SOURCE_REACHABILITY_AND_POLICY_UNRESOLVED",
     "same_cause_complete_key": "UNDEFINED",
     "batch_reset_multiplicity": "UNRESOLVED",
@@ -58,16 +60,19 @@
     "production randomness, hidden-information and delivery/ACK validation",
     "mode admission and independent QA"
   ],
-  "next_action": "等待用户对旧待决Q-H05-CAPTURE-RESET-01选择A/B或明确暂缓；计时A已确认并写入H05§17，不得重问或误作吃子A批准。完整来源键、Q-RS2、批次倍数与工程另保留。",
+  "next_action": "收到新来源/实现证据或主线具体派发后，核完整因果对应、贡献变化、批次及Q-RS2的受影响部分；当前同因果A与计时A均已批准，不重问。没有新输入不再重复同构去重测试，不自行接管共享代码；其他英雄研究缺口仍保留。",
   "receiver_read": "UNKNOWN",
   "receiver_adoption": "UNKNOWN",
   "historical_main_design_intake": "limited prior scope documented in main/H02_H05_INTEGRATION_REVIEW.md; not this new return",
   "changed_paths": [
-    "worklines/hero-design/research/H05_SHARED_CLOCK_PROBES.js",
-    "worklines/hero-design/research/H05_SHARED_CLOCK_RESULTS.json",
     "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
     "worklines/hero-design/formal/H02_SHADOW_STEP_RULE_INTEGRATION_20261109.md",
     "worklines/hero-design/H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md",
+    "worklines/hero-design/H05_BATCH_AND_JOINT_CAUSE_REVIEW.md",
+    "worklines/hero-design/H05_CAPTURE_CAUSAL_BOUNDARY_REVIEW.md",
+    "worklines/hero-design/H05_PUBLIC_RIGHTS_A_CAPTURE_EVENT_DEDUP_REVIEW_20261113.md",
+    "worklines/hero-design/research/H05_CAPTURE_MATCHING_PROBES.js",
+    "worklines/hero-design/research/H05_CAPTURE_MATCHING_RESULTS.json",
     "worklines/hero-design/CURRENT_STATE.json",
     "worklines/hero-design/RETURN_TO_MAIN.json",
     "worklines/hero-design/READ_RECEIPTS.json",
@@ -84,9 +89,9 @@
   "publication": {
     "destination_branch": "main",
     "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
-    "research_source_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
-    "publication_parent": "c7efcbf23b7bbb62acbda8f8e071906add065819",
-    "delivery": "confirmed clock A design plus scoped model and old pending choice; latest parent, expected_sha, force=false, readback required"
+    "research_source_commit": "2ea548689a14814db5c517a475f97633f451122c",
+    "publication_parent": "1bf77c463a7cf8ced3c02e6650a1f3dfcca4576d",
+    "delivery": "authorized confirmed design and scoped evidence increment; expected_sha, force=false; readback required"
   },
   "publication_history": [
     {
@@ -150,37 +155,21 @@
       "research_source_commit": "04ae7489b0577f93fa074ae3854f8caf823253ee",
       "publication_parent": "04ae7489b0577f93fa074ae3854f8caf823253ee",
       "delivery": "authorized workline research and pending decision; latest parent, expected_sha, force=false; readback required"
+    },
+    {
+      "destination_branch": "main",
+      "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
+      "research_source_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
+      "publication_parent": "c7efcbf23b7bbb62acbda8f8e071906add065819",
+      "delivery": "confirmed clock A design plus scoped model and old pending choice; latest parent, expected_sha, force=false, readback required"
     }
   ],
-  "previous_return_id": "HERO-QUALIFICATION-CLOCK-DECISION-20261113",
+  "previous_return_id": "HERO-CLOCK-A-RESET-POLICY-GATE-20261113",
   "previous_source_commit": "e7a581d1208479e5ab48d67dd96a77bc969cc0a5",
   "previous_report": "worklines/hero-design/H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md",
-  "previous_phase_source_commit": "508be3f7a1375abc76f44b1daa329a6ffff5e8aa",
-  "decision_required": {
-    "id": "Q-H05-CAPTURE-RESET-01",
-    "status": "PENDING_USER_DECISION",
-    "report": "worklines/hero-design/H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md",
-    "section": 9,
-    "original_question_source": "worklines/hero-design/H05_PUBLIC_RIGHTS_A_CAPTURE_EVENT_DEDUP_REVIEW_20261113.md#4",
-    "question": "严格同因果、同一受害棋的H05重演吃子，作为一个语义重置原因还是两个执行重置原因？",
-    "recommended": "A",
-    "options": {
-      "A": "保留两次执行审计，严格同因果只算一个重置原因",
-      "B": "保留两次执行审计，两次执行各触发重置",
-      "defer": "暂缓原则；等待可观察玩法差异或更完整来源证据"
-    },
-    "evidence_limit": "同间隙无合法稳定样本时两案计数可以相同；Q-RS2可达早样本未证，不宣称胜负区别已验证",
-    "exclusions": [
-      "complete causal key",
-      "changed contributors equivalence",
-      "batch reset multiplicity",
-      "Q-RS2",
-      "mode/engine adoption"
-    ],
-    "formal_rule_changed": false,
-    "confirmation_source": null
-  },
-  "report_section": "8-9",
+  "previous_phase_source_commit": "2ea548689a14814db5c517a475f97633f451122c",
+  "decision_required": null,
+  "report_section": 10,
   "decision_history": [
     {
       "id": "Q-H05-CLOCK-01",
@@ -203,6 +192,71 @@
       "formal_path": "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
       "formal_section": 17,
       "shared_rule_or_engine_adoption": false
+    },
+    {
+      "id": "Q-H05-CAPTURE-RESET-01",
+      "status": "CONFIRMED_A_DESIGN_ONLY",
+      "report": "worklines/hero-design/H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md",
+      "section": 9,
+      "original_question_source": "worklines/hero-design/H05_PUBLIC_RIGHTS_A_CAPTURE_EVENT_DEDUP_REVIEW_20261113.md#4",
+      "question": "严格同因果、同一受害棋的H05重演吃子，作为一个语义重置原因还是两个执行重置原因？",
+      "recommended": "A",
+      "options": {
+        "A": "保留两次执行审计，严格同因果只算一个重置原因",
+        "B": "保留两次执行审计，两次执行各触发重置",
+        "defer": "暂缓原则；等待可观察玩法差异或更完整来源证据"
+      },
+      "evidence_limit": "同间隙无合法稳定样本时两案计数可以相同；Q-RS2可达早样本未证，不宣称胜负区别已验证",
+      "exclusions": [
+        "complete causal key",
+        "changed contributors equivalence",
+        "batch reset multiplicity",
+        "Q-RS2",
+        "mode/engine adoption"
+      ],
+      "formal_rule_changed": true,
+      "confirmation_source": "current hero-design conversation; direct reply to preceding same-cause capture reset A/B/defer question",
+      "selected": "A",
+      "confirmation_id": "CONF-H05-CAPTURE-RESET-A-20261113",
+      "user_quote": "a",
+      "candidate_commit": "2ea548689a14814db5c517a475f97633f451122c",
+      "formal_path": "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
+      "formal_section": 18,
+      "shared_rule_or_engine_adoption": false
     }
-  ]
+  ],
+  "previous_validation": {
+    "local_model_checks": 9,
+    "result": "PASS_LOCAL_CONTRACT_MODEL_ONLY",
+    "source_engine_runs": 0,
+    "independent_QA": false,
+    "results": "worklines/hero-design/research/H05_SHARED_CLOCK_RESULTS.json",
+    "scope": "confirmed shared-clock budget arithmetic and local transition model; no production clock",
+    "not_covered": [
+      "source-specific game callbacks",
+      "network identity/conflicts/reconnect",
+      "simultaneous deadline-request-terminal priority",
+      "actual commit gate",
+      "complete time-source interactions",
+      "mode/independent QA"
+    ]
+  },
+  "evidence_gate": {
+    "status": "WAITING_FOR_CONCRETE_SOURCE_OR_IMPLEMENTATION_INPUT",
+    "not_waiting_for_user_approval": true,
+    "scope": "remaining causal classification and shared adjudication integration, not every hero-design backlog item",
+    "needs": [
+      "complete source correspondence for old/replay capture",
+      "actual O/U and O/C contributor settlement evidence",
+      "source-legal early stable sample for Q-RS2, if any",
+      "main-owned production interface/implementation/test entry"
+    ],
+    "publication_does_not_assign_main_task": true,
+    "main_receipt": "UNKNOWN"
+  },
+  "confirmed_capture_semantic_policy": {
+    "selection": "A",
+    "confirmation_id": "CONF-H05-CAPTURE-RESET-A-20261113",
+    "scope": "strict same-cause capture only; complete classification remains unproved"
+  }
 }

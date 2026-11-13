@@ -1,3 +1,5 @@
+> **2026-11-13较新确认**：用户已另行选择严格同因果吃子重置A，见[H05正式稿§18](formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md)及[适用核对§10](H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md)。下文A/B未批准为历史状态；完整因果键、贡献变化、批次与Q-RS2未决不因此消失。历史测试范围保持。
+
 # H05 同批消灭、共同致死与跨时间线去重边界
 
 2026-11-13｜独立英雄设计支线增量研究。读源基线 `f2f0f8914682b29466370f0aeedeb87c19add27f`。

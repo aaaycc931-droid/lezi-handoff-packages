@@ -1,4 +1,4 @@
-/** Research projections only; no production equality key or A/B policy. */
+/** Research projections only. Reset policy A confirmed; full causal equivalence remains unproved. */
 const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const assert=require('node:assert/strict');
 const source=fs.readFileSync(path.join(__dirname,'H05_TWO_DIFFERENT_CAPTURES_FIXTURE_20261113.js'),'utf8');
@@ -43,27 +43,27 @@ test('actor-claw-change-breaks-capture-source-projection',()=>{
  assert.notDeepEqual(variants.old.projection,variants.claw.projection);
 });
 // This classifier only labels observed projections. It NEVER returns SAME_CAUSE,
-// never increments a reset counter, and never decides the unapproved A/B policy.
+// never increments a reset counter; confirmed A still requires independently established same cause.
 function compare(a,b){
  const fields=['opportunity','actor','victim','phase','action','from','to','declaredSources'];
  if(fields.some(k=>a[k]==null||b[k]==null))return 'INSUFFICIENT_EVIDENCE';
  return fields.every(k=>JSON.stringify(a[k])===JSON.stringify(b[k]))?
-  'MATCHING_PROJECTION_POLICY_PENDING':'DIFFERENT_OBSERVATIONS_POLICY_PENDING';
+  'MATCHING_PROJECTION_EQUIVALENCE_UNPROVED':'DIFFERENT_OBSERVATIONS_EQUIVALENCE_UNRESOLVED';
 }
 test('matching-projection-is-not-causal-equivalence-approval',()=>{
- assert.equal(compare(variants.old.projection,variants.unrelated.projection),'MATCHING_PROJECTION_POLICY_PENDING');
+ assert.equal(compare(variants.old.projection,variants.unrelated.projection),'MATCHING_PROJECTION_EQUIVALENCE_UNPROVED');
 });
 test('changed-source-does-not-automatically-approve-extra-reset',()=>{
- assert.equal(compare(variants.old.projection,variants.claw.projection),'DIFFERENT_OBSERVATIONS_POLICY_PENDING');
+ assert.equal(compare(variants.old.projection,variants.claw.projection),'DIFFERENT_OBSERVATIONS_EQUIVALENCE_UNRESOLVED');
 });
 test('missing-source-is-unknown-not-same',()=>{
  assert.equal(compare(variants.old.projection,{...variants.old.projection,declaredSources:null}),'INSUFFICIENT_EVIDENCE');
 });
 test('new-execution-label-alone-does-not-prove-new-cause',()=>{
- assert.equal(compare({...variants.old.projection,execution:'old'},{...variants.old.projection,execution:'replay'}),'MATCHING_PROJECTION_POLICY_PENDING');
+ assert.equal(compare({...variants.old.projection,execution:'old'},{...variants.old.projection,execution:'replay'}),'MATCHING_PROJECTION_EQUIVALENCE_UNPROVED');
 });
 console.log(JSON.stringify({status:'PASS_LOCAL_RESEARCH_ONLY',checks:findings.length,cases:findings,
  runtime:process.version,variants,sourceEngineRuns:0,independentQA:false,
  limits:['prayer/descent source-modeled','no full causal equivalence key','no actual RNG',
- 'no mode admission','no reset multiplicity policy','no legal Q-RS2 early sample'],
- A_B:'UNCONFIRMED'},null,2));
+ 'no mode admission','no batch multiplicity or changed-contributor equivalence','no legal Q-RS2 early sample'],
+ A_B:'A_CONFIRMED_DESIGN_ONLY',policyAppliesWhen:'same cause independently established; observed projections alone insufficient'},null,2));

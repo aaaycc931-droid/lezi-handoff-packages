@@ -71,7 +71,7 @@
 3. H05 只**代为选择原敌方棋子的一次合法Ⅰ级行动**；行动在规则上**仍归潜行者方及其被改写的原正式回合**。如果在新时间线这一枚潜行者棋合法向前【移动】或【进攻】，**正常获得/刷新暗影步资格**。旧“被 H05 操控绝不触发暗影步”以及“回退一律清零”是被明确取代的临时解释，不得复活。
 4. H05 被授权改写的主行动必须是Ⅰ级，故**不能直接用Ⅱ级特殊暗影步走法作为这次被控制的唯一Ⅰ级行动**；但允许普通Ⅰ级前进通过潜行者的被动获得资格。
 5. 若新时间线被动/来源给潜行者方合法额外行动，该行动**不交给 H05 继续选**；可选由原阵营玩家决定、强制按来源执行，若动作来源允许Ⅱ级及该动作种类，则**可以使用已取得的暗影步**。需要操作时依 H05 来源暂停其计时并开放原阵营独立窗口，不自动创建新的正式回合。
-6. H05 新历史随机、隐藏信息、现存倒戈棋不合格、重演前置倒戈导致无法操控、合法与不利结果区别、双方将帅安全、操控前终局失败/操控后终局成立、H05 自己 begin 前专属窗口、成功跳过自己 begin/end、失败本回合不得再试以及独立裁判历史等，以 H05 11-11 整合正式设计全文（含 11-13 增补 §11—§17）为准；这些**不是 H02 暗影步单独新增的例外**。
+6. H05 新历史随机、隐藏信息、现存倒戈棋不合格、重演前置倒戈导致无法操控、合法与不利结果区别、双方将帅安全、操控前终局失败/操控后终局成立、H05 自己 begin 前专属窗口、成功跳过自己 begin/end、失败本回合不得再试以及独立裁判历史等，以 H05 11-11 整合正式设计全文（含 11-13 增补 §11—§18）为准；这些**不是 H02 暗影步单独新增的例外**。
 
 ## 九、特殊将军与重要来源例外
 
@@ -105,7 +105,7 @@
 ## 十一、来源、版本与后续接续
 
 - **旧源（保留，不作第二规则权威）**：`worklines/hero-design/h02/H02_SHADOW_STEP_REFINEMENT_CLOSEOUT_20261108.md`（旧详细规则和未决列举）；`worklines/hero-design/h02/H02_DUAL_FORM_SHADOW_STEP_SESSION_CLOSEOUT_20261107.md`（旧时序与过渡候选）；`worklines/hero-design/h02/H02_ASSASSINATION_STEALTH_DIRECTION_CLOSEOUT_20261105.md`（刺杀风格、C 方案）；`worklines/hero-design/SESSION_CLOSEOUT_AND_FILE_COVERAGE_20261109.md`（本段全主题收束）。
-- **H05 最新用户确认规则**：[`H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md`](H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md)，含 2026-11-13 已确认 §11—§17。
+- **H05 最新用户确认规则**：[`H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md`](H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md)，含 2026-11-13 已确认 §11—§18。
 - **H05 旧历史源**：`worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_20261109.md` 原件保留，仅供追溯；其中“保留当前已完成 begin”已被新稿覆盖，不再作为当前交互导航。
 - **2026-11-13 导航更正**：依 `../TASK_FROM_MAIN.json#coordination_20261113` 替换本文件当前 H05 引用，并纠正第八节第6项的旧 begin 措辞。继承已有确认，不新增 H02/H05 规则。
 - **当前共享游戏正式规则尚未同步**：`worklines/standard/rules/shared/01_CURRENT_RULES.md`、`02_CURRENT_HEROES.md`、`worklines/main/ADJUDICATION.json`。项目暂停公告 `PROJECT_NOTICE_MAINLINE_INTAKE_PAUSE_20261105.md`；未获任命支线不签署主线接收回执、不改工程/代码/模式门禁。

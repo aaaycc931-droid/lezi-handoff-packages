@@ -1,3 +1,5 @@
+> **2026-11-13较新确认**：用户已另行选择严格同因果吃子重置A，见[H05正式稿§18](formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md)及[适用核对§10](H02_H05_QUALIFICATION_AND_TIMER_GATE_REVIEW.md)。下文A/B未批准为历史状态；完整因果键、贡献变化、批次与Q-RS2未决不因此消失。历史测试范围保持。
+
 # H05 同步动作与因果吃子边界研究
 日期：2026-11-13。独立英雄设计支线；本轮是阶段检查点，非关闭项目。
 初始来源：`83b6d6fdf7ae48846f1f8b8e78054905703ed7b0`；并发续派来源：`747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a`。
