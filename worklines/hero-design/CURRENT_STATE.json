@@ -2,7 +2,7 @@
   "schema": "lezi.hero_design.current_state.v1",
   "owner": "hero-design",
   "updated_on_local": "2026-11-13",
-  "status": "phase_delivered_pending_source_evidence",
+  "status": "session_closed_pending_source_evidence",
   "source_commit": "2ea548689a14814db5c517a475f97633f451122c",
   "followup_source_commit": "747f1fef5e0f9b52d3ae8409cd59dc674e2bea9a",
   "current_task_ids": [
@@ -80,7 +80,7 @@
     "H02_H05_failure_fixture": "INJECTED_ONLY_NO_FORCED_NATURAL_FAILURE",
     "H05_clock_runtime": "DESIGN_A_CONFIRMED_PRODUCTION_UNVERIFIED"
   },
-  "next_action": "收到新来源/实现证据或主线具体派发后，核完整因果对应、贡献变化、批次及Q-RS2的受影响部分；当前同因果A与计时A均已批准，不重问。没有新输入不再重复同构去重测试，不自行接管共享代码；其他英雄研究缺口仍保留。",
+  "next_action": "新对话先核最新HEAD、本线派发/状态/回传和主线实际接收；有具体新来源或任务再推进。当前两项A均已确认，无新输入则明确等待来源，不重复同构测试、不接管主线工程。详见11-13收束§5。",
   "confirmed_design_source": "worklines/hero-design/formal/H05_TWISTED_TIMELINE_RULE_CONSOLIDATED_20261111.md",
   "preserved_confirmations": [
     "长将B",
@@ -109,9 +109,9 @@
   "publication": {
     "destination_branch": "main",
     "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
-    "research_source_commit": "2ea548689a14814db5c517a475f97633f451122c",
-    "publication_parent": "1bf77c463a7cf8ced3c02e6650a1f3dfcca4576d",
-    "delivery": "authorized confirmed design and scoped evidence increment; expected_sha, force=false; readback required"
+    "research_source_commit": "a6f1f21a56e93154922452149bcb4b8f1b8a2690",
+    "publication_parent": "a2d2ddf9562d098be10400480e113af15d8d61fd",
+    "delivery": "user-requested session closeout; latest parent, expected_sha, force=false; readback required"
   },
   "publication_history": [
     {
@@ -182,6 +182,13 @@
       "research_source_commit": "6530871c3042fd21c55e0742602f42d662a3935e",
       "publication_parent": "c7efcbf23b7bbb62acbda8f8e071906add065819",
       "delivery": "confirmed clock A design plus scoped model and old pending choice; latest parent, expected_sha, force=false, readback required"
+    },
+    {
+      "destination_branch": "main",
+      "authorization_source": "CURRENT_STATE.json#main_write_authorization_20261113.long_term_confirmation",
+      "research_source_commit": "2ea548689a14814db5c517a475f97633f451122c",
+      "publication_parent": "1bf77c463a7cf8ced3c02e6650a1f3dfcca4576d",
+      "delivery": "authorized confirmed design and scoped evidence increment; expected_sha, force=false; readback required"
     }
   ],
   "main_write_authorization_20261113": {
@@ -311,5 +318,29 @@
     "selection": "A",
     "confirmation_id": "CONF-H05-CAPTURE-RESET-A-20261113",
     "scope": "strict same-cause capture only; complete classification remains unproved"
+  },
+  "session_closure": {
+    "status": "CLOSED_FOR_NEW_CONVERSATION",
+    "date_local": "2026-11-13",
+    "timezone": "Asia/Shanghai",
+    "user_quote": "收束本对话，我会在新对话中继续",
+    "source_commit": "a6f1f21a56e93154922452149bcb4b8f1b8a2690",
+    "report": "worklines/hero-design/SESSION_CLOSEOUT_AND_FILE_COVERAGE_20261113.md",
+    "previous_project_status": "phase_delivered_pending_source_evidence",
+    "project_continues": true,
+    "authorization_inherited": true,
+    "gameplay_delta": 0,
+    "source_engine_runs_this_closeout": 0,
+    "resume_requires_latest_head": true,
+    "publication_source_check": "a2d2ddf9562d098be10400480e113af15d8d61fd"
+  },
+  "latest_closeout": "worklines/hero-design/SESSION_CLOSEOUT_AND_FILE_COVERAGE_20261113.md",
+  "main_intake_observation_at_closeout": {
+    "source_commit": "a2d2ddf9562d098be10400480e113af15d8d61fd",
+    "receipt": "worklines/main/READ_RECEIPTS.json#session_closeout_navigation_20261113",
+    "read": "latest return changes/pending/next/confirmed policy fields",
+    "adoption": "reported phase navigation only",
+    "not_adopted": "full H02/H05 original confirmation review, shared rules or engine",
+    "this_new_closeout_read": "UNKNOWN"
   }
 }
