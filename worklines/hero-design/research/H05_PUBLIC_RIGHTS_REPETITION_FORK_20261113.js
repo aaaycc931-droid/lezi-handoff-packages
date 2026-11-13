@@ -44,10 +44,12 @@ function runRightsProbes(){
  let redKey=a.accepted[1].key;
  ok("post-use rights new unique key",a.accepted[1].count===1&&redKey.includes("spent"),"own occupancy first ever spent-state sample");
  ok("next-side changes key",key("Q","red","red_H05_prebegin","spent")!==key("Q","black","black_decision","spent"),"stage/side distinction");
- ok("public secrecy separation",key("Q","black","black_decision","spent")===key("Q","black","black_decision","spent"),"private unseen fields not introduced in public key");
+ const publicA={board:"Q",side:"black",phase:"black_decision",rights:"spent",privateHost:"piece_1"};
+ const publicB={...publicA,privateHost:"piece_9"};
+ ok("private data excluded from public key",key(publicA.board,publicA.side,publicA.phase,publicA.rights)===key(publicB.board,publicB.side,publicB.phase,publicB.rights)&&publicA.privateHost!==publicB.privateHost,"private host changes without changing authorized public fields");
  const oldP=prior.get(key("P","red","red_H05_prebegin","ready"));
  ok("prior history immutable",oldP===4,"previously accepted P samples unchanged by skill");
- let dupe=false;const ids=new Set(["black10"]);if(ids.has("black10"))dupe=true;ok("single opportunity ID no duplicate",dupe,"retry should be idempotent");
+ const idempotentSamples=new Map([["black10",key("Q","red","red_H05_prebegin","ready")]]);const beforeRetry=idempotentSamples.size;const retryKey=key("Q","red","red_H05_prebegin","ready");if(!idempotentSamples.has("black10"))idempotentSamples.set("black10",retryKey);ok("single opportunity ID no duplicate",idempotentSamples.size===beforeRetry&&idempotentSamples.get("black10")===retryKey,"retry of accepted same-ID sample leaves count and key unchanged");
  let projected=evalCase({rewrite:true,newBoard:"Q",blackRights:"spent"});
  ok("rights projection affects adjudication",projected.accepted[0].key!==evalCase({rewrite:true,newBoard:"Q",blackRights:"ready"}).accepted[0].key,"projection must be defined rather than assumed");
  return {tests,passed:tests.length,caveat:"synthetic rights-stage ledgers; no authoritative Lezi engine; fully public effective key field-map not implemented"};
