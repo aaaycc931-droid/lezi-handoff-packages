@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hc_current.v2",
-  "revision": "HC-55-ORIGINAL110-CLIENT-OUTPUT-ORACLE-MATRIX-20261029",
+  "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
   "workline": "half_chaos",
-  "date_local": "2026-10-29",
+  "date_local": "2026-11-13",
   "timezone": "Asia/Shanghai",
-  "status": "r55_original110_210_checkpoint_complete_source_crosscheck_client_output_open",
+  "status": "r56_source_priority_mapping_complete_waiting_new_main_result_evidence",
   "baseline_commit": "a5000a28de864df51f5c344eb58cc90f12c89361",
   "working_document": "WORKING.md",
   "latest_entry": "START_HERE.txt",
@@ -187,7 +187,7 @@
     "engine_prefix_and_information_validation"
   ],
   "pending_user_decision": null,
-  "next_action": "Classify 110 output oracles and original56 paired slots by main-owned closure requirements and evidence priority; do not run engine or reopen product mode/NET. Main remains shared runtime owner.",
+  "next_action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
   "H14": {
     "source_status": "reviewed",
     "new_rule_delta": 0,
@@ -214,7 +214,7 @@
   },
   "NET": "paused",
   "limitation_audit_status": "partial",
-  "verification_level": "V2 fixed source/matrix/identity checks + V1 document proposal; all64 UNRUN, no runtime/client/transport audit",
+  "verification_level": "V2 public source/index checks + V1 document triage; formal64/complete56 both0; no new engine/client run",
   "publication_scope": "current_half_chaos_design_bodies_and_source_references; not_full_private_archive_migration",
   "source_index": "SOURCE_INDEX.json",
   "return_record": "RETURN_TO_MAIN.json",
@@ -1531,7 +1531,7 @@
   },
   "last_completed_design_revision": "HC-PREP-20261020-r40",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
-  "next_action_status": "READY_SOURCE_ONLY",
+  "next_action_status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
     "status": "DATA_PREPARED_AND_OFFLINE_CHECKED_ENGINE_UNRUN",
@@ -1788,7 +1788,7 @@
     "path": "worklines/half_chaos/CURRENT_STATE.json#/session_closeout",
     "scope": "historical previous conversation closeout, superseded by current closeout record only"
   },
-  "session_status": "closed_after_r33_document_writeback",
+  "session_status": "active_resumed_20261113_stage_checkpoint_not_chat_closeout",
   "closeout_new_shared_confirmation_consumption": 0,
   "closeout_authorization": "本轮用户明确收束；仅本对话关闭，其他工作线/项目不由本线停止。",
   "previous_session_closeout": {
@@ -2898,5 +2898,48 @@
     "featuresReady": false,
     "scoring": "FROZEN",
     "NET": "PAUSED"
+  },
+  "r56_previous_active_metadata": {
+    "revision": "HC-55-ORIGINAL110-CLIENT-OUTPUT-ORACLE-MATRIX-20261029",
+    "date_local": "2026-10-29",
+    "status": "r55_original110_210_checkpoint_complete_source_crosscheck_client_output_open",
+    "session_status": "closed_after_r33_document_writeback",
+    "verification_level": "V2 fixed source/matrix/identity checks + V1 document proposal; all64 UNRUN, no runtime/client/transport audit",
+    "next_action": "Classify 110 output oracles and original56 paired slots by main-owned closure requirements and evidence priority; do not run engine or reopen product mode/NET. Main remains shared runtime owner.",
+    "next_action_status": "READY_SOURCE_ONLY"
+  },
+  "r56_requirement_closure_priority_mapping": {
+    "date_local": "2026-11-13",
+    "report": "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json",
+    "source_commit": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+    "task_completed": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+    "joined_original_requests": 110,
+    "linked_original_checkpoint_ids": 210,
+    "linked_pair_slots": 56,
+    "checks": "9/9 public-index checks; no engine execution",
+    "server_committed_output": "PR20 public results indexed; raw packets not independently reread",
+    "original56_complete": 0,
+    "original64_formal": 0,
+    "client_delivery": 0,
+    "independent_QA": false,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "next": {
+      "id": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+      "status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
+      "owner": "half_chaos source reception; main shared implementation",
+      "action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
+      "acceptance": "新的有源结果可逐项判定已接收/仍缺；written、pong、重连和快照均不得单独核销旧行动。"
+    }
+  },
+  "coordination_20261113": {
+    "task": "MAIN-COORD-20261113-half_chaos",
+    "receiver_read": true,
+    "receiver_adopted": "SOURCE_DOCUMENT_SCOPE_ONLY",
+    "read_receipt": "worklines/half_chaos/READ_RECEIPTS.json#/coordination_20261113",
+    "this_dialogue_started": true,
+    "frontend_project_configuration_independently_verified": false,
+    "main_identity": false
   }
 }

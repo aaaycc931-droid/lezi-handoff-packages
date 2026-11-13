@@ -1,11 +1,11 @@
 {
-  "revision": "HC-SESSION-CLOSEOUT-20261027-r51c",
+  "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
   "next_independent_task": {
-    "id": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
-    "status": "READY_SOURCE_DOCUMENT_ONLY",
-    "depends_on_new_main_work": false,
-    "authorization": "READ_SOURCE_PREPARE_DOCUMENT_NO_ENGINE_NO_NET",
-    "action": "Using HC55 original 110 request oracle and HC53 original56 exact stage report, prioritize main-required evidence at component-vs-committed-vs-client levels, define falsifiable closure conditions and blocked/independent scopes without claiming run or acceptance."
+    "id": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+    "status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
+    "owner": "half_chaos source reception; main shared implementation",
+    "action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
+    "acceptance": "新的有源结果可逐项判定已接收/仍缺；written、pong、重连和快照均不得单独核销旧行动。"
   },
   "subsequent_tasks": [
     "source-specific natural return-space/landing reachability when a legal two-hero/one-mutation source is identified",
@@ -26,7 +26,7 @@
     "HC-MAIN-H21-REVEAL-CONTROL"
   ],
   "new_rule_requires_specific_confirmation": true,
-  "runtime_scope": "NOT_STARTED; all64 UNRUN, no code/import/run/gate changes",
+  "runtime_scope": "SOURCE_DOCUMENT_ONLY; main original12/110 bounded evidence preserved; original64 formal0, complete56 zero; no local engine/client run",
   "scoring_frozen": true,
   "NET": "paused",
   "previous_completed_task": {
@@ -1411,13 +1411,29 @@
   ],
   "last_verified_head_at_preparation": "93411f461fc80de3c7639149c2161115e189fbec",
   "latest_completed_stage": {
-    "revision": "HC-55-ORIGINAL110-CLIENT-OUTPUT-ORACLE-MATRIX-20261029",
-    "report": "worklines/half_chaos/HC55_ORIGINAL110_CLIENT_OUTPUT_ORACLE_MATRIX_20261029.json",
-    "source_ids": 110,
-    "source_observations": 210,
-    "server_exact_stage_components": 200,
-    "client_deliveries": 0,
-    "formal64_pass": 0
+    "date_local": "2026-11-13",
+    "report": "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json",
+    "source_commit": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+    "task_completed": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+    "joined_original_requests": 110,
+    "linked_original_checkpoint_ids": 210,
+    "linked_pair_slots": 56,
+    "checks": "9/9 public-index checks; no engine execution",
+    "server_committed_output": "PR20 public results indexed; raw packets not independently reread",
+    "original56_complete": 0,
+    "original64_formal": 0,
+    "client_delivery": 0,
+    "independent_QA": false,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "next": {
+      "id": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+      "status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
+      "owner": "half_chaos source reception; main shared implementation",
+      "action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
+      "acceptance": "新的有源结果可逐项判定已接收/仍缺；written、pong、重连和快照均不得单独核销旧行动。"
+    }
   },
   "stale_index_repair": {
     "prior_revision": "HC-SESSION-CLOSEOUT-20261020-r41",
@@ -1427,9 +1443,9 @@
     "previous_history_preserved": true
   },
   "blocked_main_task": {
-    "id": "MAIN-ROOM-COMMITTED-OUTPUT-CHANNEL-20261029",
-    "status": "MAIN_OWNED_RUNTIME_AND_CLIENT_CHANNEL",
-    "resume_condition": "Main confirms source-based committed room/client/error/retry/independent-QA evidence, preserving half-chaos mode gate; no source-only upgrade."
+    "id": "MAIN-BLUETOOTH-UNKNOWN-RESULT-RECONCILIATION-20261030",
+    "status": "MAIN_OWNED_OPEN_NOT_EXECUTED_HERE",
+    "resume_condition": "主线发布有来源的正式结果核对与兼容证据后按HC56逐项接收；不重排主线当前协调任务"
   },
   "available_without_main_quota": [
     {
@@ -1501,5 +1517,16 @@
     "next_id": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
     "next_status": "READY_SOURCE_DOCUMENT_ONLY",
     "next_hand_off": "Check latest remote HEAD and TASK_FROM_MAIN.json before applying next; source-only, no engine or NET."
+  },
+  "r56_prior_navigation": {
+    "revision": "HC-SESSION-CLOSEOUT-20261027-r51c",
+    "next_independent_task": {
+      "id": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+      "status": "READY_SOURCE_DOCUMENT_ONLY",
+      "depends_on_new_main_work": false,
+      "authorization": "READ_SOURCE_PREPARE_DOCUMENT_NO_ENGINE_NO_NET",
+      "action": "Using HC55 original 110 request oracle and HC53 original56 exact stage report, prioritize main-required evidence at component-vs-committed-vs-client levels, define falsifiable closure conditions and blocked/independent scopes without claiming run or acceptance."
+    },
+    "runtime_scope": "NOT_STARTED; all64 UNRUN, no code/import/run/gate changes"
   }
 }

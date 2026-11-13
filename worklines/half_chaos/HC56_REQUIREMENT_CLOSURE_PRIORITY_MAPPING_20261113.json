@@ -1,0 +1,3786 @@
+{
+  "schema": "lezi.half_chaos.requirement_closure_priority_mapping.v1",
+  "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
+  "date_local": "2026-11-13",
+  "source_handoff_commit": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+  "task": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+  "dispatch": "TASK_FROM_MAIN.json#/coordination_20261113",
+  "scope": "本线文档和公开结果索引核对；无新引擎运行，未重新执行主线测试，未读取owner-only原始权威/玩家包；不是共享工程或独立QA。",
+  "source_paths": {
+    "HC55": "worklines/half_chaos/HC55_ORIGINAL110_CLIENT_OUTPUT_ORACLE_MATRIX_20261029.json",
+    "HC53": "worklines/half_chaos/HC53_EXACT_STAGE56_CLIENT_CHANNEL_TRIAGE_20261029.json",
+    "PR20": "jieqi-engine@8161c348abeba3a99fa5a5b514252e69218f28fd:review/committed-output-channel/RESULTS_20261029.json",
+    "PR21": "jieqi-engine@96fa7394f0371ab966b8b3572bf3f21b9bfe0da3:review/bluetooth-receipt-correlation/RESULTS_20261030.json",
+    "PR22": "jieqi-engine@71145df45ad17215a3731e53150b6728e079e375:review/native-send-accounting/RESULTS_20261030.json"
+  },
+  "version_check": [
+    {
+      "PR": 20,
+      "head": "8161c348abeba3a99fa5a5b514252e69218f28fd",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "PR": 21,
+      "head": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "PR": 22,
+      "head": "71145df45ad17215a3731e53150b6728e079e375",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    }
+  ],
+  "adopted_delta": [
+    "PR20原110请求完整提交后public/red/black输出索引与HC55逐项对应；100主行动历史消息与4个服务端IN_CHECK有公开结果记录。不再把提交后服务器序列化说成完全缺失。",
+    "PR19精确游戏时点与PR20完整提交后输出是两个时间层；后者不替代56槽左右精确时点的房间外壳、不授权公开中间包。",
+    "PR21的同编号pong只表有序链路控制回复；PR22的written只表本地写入返回，unknown可能已被接受，也可能未形成完整行动。断连清等待不是正式结果。",
+    "106同载荷服务端重传与4重复拒绝是新增研究对照；不计入原110客户端刺激，不核销PD-S35/DS-S12。",
+    "主线11-13已实际读取HC55收束（main READ_RECEIPTS同名对象）；本轮HC56回传是否读取/采用仍UNKNOWN。"
+  ],
+  "priority_policy": "下列P0—P3是本线证据依赖排序，不是替主线排工程日程；原主线当前协调和prior_engineering_next_action保留。",
+  "requirements": [
+    {
+      "id": "HC56-C0",
+      "priority": "COMPONENT_BASELINE_RETAINED",
+      "layer": "component",
+      "covers": "原210观察引用、PR19 200精确游戏阶段与56配对服务器组件",
+      "present": "已有限源核对；HC53/HC55保留",
+      "closure": "任何新结果须保持原checkpoint/阶段/视角绑定；owner原始包独立复核另计。",
+      "owner": "half_chaos来源核对/main证据",
+      "not_closed": "原56完整验收、原64正式验收"
+    },
+    {
+      "id": "HC56-P0",
+      "priority": "P0",
+      "layer": "committed_output_and_formal_result",
+      "covers": "原100主行动+6成功技能+4拒绝",
+      "present": "PR20原110完整提交输出有索引；4服务端IN_CHECK；PR21/22具限定等待/写入核算",
+      "missing": "实际请求正式接受/拒绝/重复/未知结果关联，新旧端降级及跨断连可达时序。",
+      "closure": "主线按原来源给请求身份、版本/连接生命周期、真实权威结果和调用方可用凭据；明确已接受但本机unknown与未送达；原4拒绝保持code与实际wire message的区别；禁止仅凭written/pong/snapshot/重连或UI解锁认定结果。若需协议变化须由主线按原审批边界提出方案。",
+      "failure": "快照更新或同编号pong即被记为旧行动接受；unknown自动补交；消息格式更改未说明。",
+      "owner": "main；half_chaos只复核原请求对应"
+    },
+    {
+      "id": "HC56-P1",
+      "priority": "P1",
+      "layer": "natural_duplicate_conflict_source",
+      "covers": [
+        "PD-S35",
+        "DS-S12"
+      ],
+      "present": "106新增服务端同载荷duplicate与4重复拒绝控制",
+      "missing": "获准原来源的同ID重传/冲突客户端刺激与结果；其他原缺刺激未核销",
+      "closure": "分别记录同ID同载荷、同ID不同载荷、新ID新请求及不同动作已有幂等语义；绑定原规格和真实调用来源。重复拒绝不自动等同去重；R4 pre-2仍是新请求。缺合法自然来源保留缺口，不改原棋谱凑覆盖。",
+      "failure": "将新增106探针算原客户端重试或用走棋去重套所有动作。",
+      "owner": "main来源/结果方案；half_chaos规格核对"
+    },
+    {
+      "id": "HC56-P2",
+      "priority": "P2",
+      "layer": "client_delivery_and_UI",
+      "covers": "原110请求及56槽位声明的实际可见表面",
+      "present": "共享jieqi函数限定控制，半混乱客户端证据仍0",
+      "missing": "获准半混乱适配、真实送达、错误/成功/重复反馈、红黑UI时钟/历史/提示按钮",
+      "closure": "在单独满足现行门禁和授权后，记录实际通道、客户端、接收/渲染时点、请求身份与授权视图。56精确游戏时点和提交后界面分开；不得为验收擅自发送中间阶段。",
+      "failure": "jieqi替身测试外推半混乱实际客户端、把服务器序列化当设备送达。",
+      "owner": "main/客户端责任方；NET和模式门禁保持"
+    },
+    {
+      "id": "HC56-P3",
+      "priority": "P3",
+      "layer": "independent_QA_and_privacy",
+      "covers": "56完整义务及64正式规格",
+      "present": "两配对世界限定比较与主线公开结果",
+      "missing": "独立审查owner-only证据、全部许可差异和原规格义务",
+      "closure": "独立复核实际源、原始证据和全义务；公开/红/黑各自权限与合法揭示差异按源判断；8缺刺激与PD-S32分别处理，未经逐项满足不标正式PASS。",
+      "failure": "同一AI索引核对或局部测试计数升级为独立QA/全局隐私证明。",
+      "owner": "获授权独立QA及main；本轮不代执行"
+    }
+  ],
+  "request_rows": [
+    {
+      "request_id": "MA-PD01:R1:main",
+      "source_row": 0,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD01:R1:main:closed",
+        "MA-PD01:R1:normal-end"
+      ],
+      "PR20_row": 0,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD01:B1:main",
+      "source_row": 1,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD01:B1:main:closed",
+        "MA-PD01:B1:normal-end"
+      ],
+      "PR20_row": 1,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD01:R2:main",
+      "source_row": 2,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD01:R2:main:closed",
+        "MA-PD01:R2:normal-end"
+      ],
+      "PR20_row": 2,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD01:B2:main",
+      "source_row": 3,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD01:B2:main:closed",
+        "MA-PD01:B2:normal-end"
+      ],
+      "PR20_row": 3,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD01:R3:main",
+      "source_row": 4,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD01:R3:main:closed",
+        "MA-PD01:R3:normal-end"
+      ],
+      "PR20_row": 4,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:R1:main",
+      "source_row": 5,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:R1:main:closed",
+        "MA-PD02:R1:normal-end"
+      ],
+      "PR20_row": 5,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:B1:main",
+      "source_row": 6,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:B1:main:closed",
+        "MA-PD02:B1:normal-end"
+      ],
+      "PR20_row": 6,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:R2:main",
+      "source_row": 7,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:R2:main:closed",
+        "MA-PD02:R2:normal-end"
+      ],
+      "PR20_row": 7,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:B2:main",
+      "source_row": 8,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:B2:main:closed",
+        "MA-PD02:B2:normal-end"
+      ],
+      "PR20_row": 8,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:R3:main",
+      "source_row": 9,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:R3:main:closed",
+        "MA-PD02:R3:normal-end"
+      ],
+      "PR20_row": 9,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:B3:main",
+      "source_row": 10,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:B3:main:closed",
+        "MA-PD02:B3:normal-end"
+      ],
+      "PR20_row": 10,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:R4:main",
+      "source_row": 11,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:R4:main:closed",
+        "MA-PD02:R4:normal-end"
+      ],
+      "PR20_row": 11,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:B4:main",
+      "source_row": 12,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:B4:main:closed",
+        "MA-PD02:B4:normal-end"
+      ],
+      "PR20_row": 12,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 18000,
+      "requestNow": 18000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD02:R5:main",
+      "source_row": 13,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD02:R5:main:closed",
+        "MA-PD02:R5:normal-end"
+      ],
+      "PR20_row": 13,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 19000,
+      "requestNow": 19000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:R1:main",
+      "source_row": 14,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:R1:main:closed",
+        "MA-PD03:R1:normal-end"
+      ],
+      "PR20_row": 14,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:B1:main",
+      "source_row": 15,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:B1:main:closed",
+        "MA-PD03:B1:normal-end"
+      ],
+      "PR20_row": 15,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:R2:main",
+      "source_row": 16,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:R2:main:closed",
+        "MA-PD03:R2:normal-end"
+      ],
+      "PR20_row": 16,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:B2:main",
+      "source_row": 17,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:B2:main:closed",
+        "MA-PD03:B2:normal-end"
+      ],
+      "PR20_row": 17,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:R3:main",
+      "source_row": 18,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:R3:main:closed",
+        "MA-PD03:R3:normal-end"
+      ],
+      "PR20_row": 18,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:B3:main",
+      "source_row": 19,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:B3:main:closed",
+        "MA-PD03:B3:normal-end"
+      ],
+      "PR20_row": 19,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:R4:main",
+      "source_row": 20,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:R4:main:closed",
+        "MA-PD03:R4:normal-end"
+      ],
+      "PR20_row": 20,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:B4:main",
+      "source_row": 21,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:B4:main:closed",
+        "MA-PD03:B4:normal-end"
+      ],
+      "PR20_row": 21,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 18000,
+      "requestNow": 18000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:R5:main",
+      "source_row": 22,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:R5:main:closed",
+        "MA-PD03:R5:normal-end"
+      ],
+      "PR20_row": 22,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 19000,
+      "requestNow": 19000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:B5:main",
+      "source_row": 23,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:B5:main:closed",
+        "MA-PD03:B5:normal-end"
+      ],
+      "PR20_row": 23,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 20000,
+      "requestNow": 20000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:R6:main",
+      "source_row": 24,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:R6:main:closed",
+        "MA-PD03:R6:normal-end"
+      ],
+      "PR20_row": 24,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 21000,
+      "requestNow": 21000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:B6:main",
+      "source_row": 25,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:B6:main:closed",
+        "MA-PD03:B6:normal-end"
+      ],
+      "PR20_row": 25,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 22000,
+      "requestNow": 22000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD03:R7:main",
+      "source_row": 26,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD03:R7:main:closed",
+        "MA-PD03:R7:normal-end"
+      ],
+      "PR20_row": 26,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 23000,
+      "requestNow": 23000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:R1:main",
+      "source_row": 27,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:R1:main:closed",
+        "MA-PD04:R1:normal-end"
+      ],
+      "PR20_row": 27,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:B1:main",
+      "source_row": 28,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:B1:main:closed",
+        "MA-PD04:B1:normal-end"
+      ],
+      "PR20_row": 28,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:R2:main",
+      "source_row": 29,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:R2:main:closed",
+        "MA-PD04:R2:normal-end"
+      ],
+      "PR20_row": 29,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:B2:main",
+      "source_row": 30,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:B2:main:closed",
+        "MA-PD04:B2:normal-end"
+      ],
+      "PR20_row": 30,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:R3:main",
+      "source_row": 31,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:R3:main:closed",
+        "MA-PD04:R3:normal-end"
+      ],
+      "PR20_row": 31,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:B3:main",
+      "source_row": 32,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:B3:main:closed",
+        "MA-PD04:B3:normal-end"
+      ],
+      "PR20_row": 32,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:R4:main",
+      "source_row": 33,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:R4:main:closed",
+        "MA-PD04:R4:normal-end"
+      ],
+      "PR20_row": 33,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:B4:main",
+      "source_row": 34,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:B4:main:closed",
+        "MA-PD04:B4:normal-end"
+      ],
+      "PR20_row": 34,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 18000,
+      "requestNow": 18000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:R5:main",
+      "source_row": 35,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:R5:main:closed",
+        "MA-PD04:R5:normal-end"
+      ],
+      "PR20_row": 35,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 19000,
+      "requestNow": 19000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD04:B5:main",
+      "source_row": 36,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD04:B5:main:closed",
+        "MA-PD04:B5:normal-end"
+      ],
+      "PR20_row": 36,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 20000,
+      "requestNow": 20000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-A:R1:main",
+      "source_row": 37,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-A:R1:main:closed",
+        "MA-PD05-A:R1:normal-end"
+      ],
+      "PR20_row": 37,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-A:B1:main",
+      "source_row": 38,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-A:B1:main:closed",
+        "MA-PD05-A:B1:normal-end"
+      ],
+      "PR20_row": 38,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-A:R2:main",
+      "source_row": 39,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-A:R2:main:closed",
+        "MA-PD05-A:R2:normal-end"
+      ],
+      "PR20_row": 39,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-A:B2:main",
+      "source_row": 40,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-A:B2:main:closed",
+        "MA-PD05-A:B2:normal-end"
+      ],
+      "PR20_row": 40,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-A:R3:main",
+      "source_row": 41,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-A:R3:main:closed",
+        "MA-PD05-A:R3:normal-end"
+      ],
+      "PR20_row": 41,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-A:B3:main",
+      "source_row": 42,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-A:B3:main:closed",
+        "MA-PD05-A:B3:normal-end"
+      ],
+      "PR20_row": 42,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-A:R4:main",
+      "source_row": 43,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-A:R4:main:closed",
+        "MA-PD05-A:R4:normal-end"
+      ],
+      "PR20_row": 43,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-B:R1:main",
+      "source_row": 44,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-B:R1:main:closed",
+        "MA-PD05-B:R1:normal-end"
+      ],
+      "PR20_row": 44,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-B:B1:main",
+      "source_row": 45,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-B:B1:main:closed",
+        "MA-PD05-B:B1:normal-end"
+      ],
+      "PR20_row": 45,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-B:R2:main",
+      "source_row": 46,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-B:R2:main:closed",
+        "MA-PD05-B:R2:normal-end"
+      ],
+      "PR20_row": 46,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-B:B2:main",
+      "source_row": 47,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-B:B2:main:closed",
+        "MA-PD05-B:B2:normal-end"
+      ],
+      "PR20_row": 47,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-B:R3:main",
+      "source_row": 48,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-B:R3:main:closed",
+        "MA-PD05-B:R3:normal-end"
+      ],
+      "PR20_row": 48,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-B:B3:main",
+      "source_row": 49,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-B:B3:main:closed",
+        "MA-PD05-B:B3:normal-end"
+      ],
+      "PR20_row": 49,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD05-B:R4:main",
+      "source_row": 50,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD05-B:R4:main:closed",
+        "MA-PD05-B:R4:normal-end"
+      ],
+      "PR20_row": 50,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-A:R1:main",
+      "source_row": 51,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-A:R1:main:closed",
+        "MA-PD06-A:R1:normal-end"
+      ],
+      "PR20_row": 51,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-A:B1:main",
+      "source_row": 52,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-A:B1:main:closed",
+        "MA-PD06-A:B1:normal-end"
+      ],
+      "PR20_row": 52,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-A:R2:main",
+      "source_row": 53,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-A:R2:main:closed",
+        "MA-PD06-A:R2:normal-end"
+      ],
+      "PR20_row": 53,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-A:B2:main",
+      "source_row": 54,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-A:B2:main:closed",
+        "MA-PD06-A:B2:normal-end"
+      ],
+      "PR20_row": 54,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-A:R3:main",
+      "source_row": 55,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-A:R3:main:closed",
+        "MA-PD06-A:R3:normal-end"
+      ],
+      "PR20_row": 55,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-A:B3:main",
+      "source_row": 56,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-A:B3:main:closed",
+        "MA-PD06-A:B3:normal-end"
+      ],
+      "PR20_row": 56,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-A:R4:main",
+      "source_row": 57,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-A:R4:main:closed",
+        "MA-PD06-A:R4:normal-end"
+      ],
+      "PR20_row": 57,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-B:R1:main",
+      "source_row": 58,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-B:R1:main:closed",
+        "MA-PD06-B:R1:normal-end"
+      ],
+      "PR20_row": 58,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-B:B1:main",
+      "source_row": 59,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-B:B1:main:closed",
+        "MA-PD06-B:B1:normal-end"
+      ],
+      "PR20_row": 59,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-B:R2:main",
+      "source_row": 60,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-B:R2:main:closed",
+        "MA-PD06-B:R2:normal-end"
+      ],
+      "PR20_row": 60,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-B:B2:main",
+      "source_row": 61,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-B:B2:main:closed",
+        "MA-PD06-B:B2:normal-end"
+      ],
+      "PR20_row": 61,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-B:R3:main",
+      "source_row": 62,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-B:R3:main:closed",
+        "MA-PD06-B:R3:normal-end"
+      ],
+      "PR20_row": 62,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-B:B3:main",
+      "source_row": 63,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-B:B3:main:closed",
+        "MA-PD06-B:B3:normal-end"
+      ],
+      "PR20_row": 63,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-PD06-B:R4:main",
+      "source_row": 64,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-PD06-B:R4:main:closed",
+        "MA-PD06-B:R4:normal-end"
+      ],
+      "PR20_row": 64,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:R1:main",
+      "source_row": 65,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R1:main:closed",
+        "MA-DS01-02:R1:normal-end"
+      ],
+      "PR20_row": 65,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:B1:main",
+      "source_row": 66,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B1:main:closed",
+        "MA-DS01-02:B1:normal-end"
+      ],
+      "PR20_row": 66,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:R2:main",
+      "source_row": 67,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R2:main:closed",
+        "MA-DS01-02:R2:normal-end"
+      ],
+      "PR20_row": 67,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:B2:pre-1",
+      "source_row": 68,
+      "category": "accepted_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B2:pre-1:observation"
+      ],
+      "PR20_row": 68,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:B2:main",
+      "source_row": 69,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B2:main:closed",
+        "MA-DS01-02:B2:normal-end"
+      ],
+      "PR20_row": 69,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:R3:pre-1",
+      "source_row": 70,
+      "category": "accepted_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R3:pre-1:observation"
+      ],
+      "PR20_row": 70,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:R3:main",
+      "source_row": 71,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R3:main:closed",
+        "MA-DS01-02:R3:normal-end"
+      ],
+      "PR20_row": 71,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:B3:pre-1",
+      "source_row": 72,
+      "category": "accepted_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B3:pre-1:observation"
+      ],
+      "PR20_row": 72,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 18000,
+      "requestNow": 18000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:B3:main",
+      "source_row": 73,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:B3:main:closed",
+        "MA-DS01-02:B3:normal-end"
+      ],
+      "PR20_row": 73,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 19000,
+      "requestNow": 19000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:R4:pre-1",
+      "source_row": 74,
+      "category": "rejected_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R4:pre-1:observation"
+      ],
+      "PR20_row": 74,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": "IN_CHECK",
+      "committed_updatedAt": 19000,
+      "requestNow": 20000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:R4:pre-2",
+      "source_row": 75,
+      "category": "rejected_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R4:pre-2:observation"
+      ],
+      "PR20_row": 75,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": "IN_CHECK",
+      "committed_updatedAt": 19000,
+      "requestNow": 21000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS01-02:R4:main",
+      "source_row": 76,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS01-02:R4:main:closed",
+        "MA-DS01-02:R4:normal-end"
+      ],
+      "PR20_row": 76,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 22000,
+      "requestNow": 22000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS03:R1:main",
+      "source_row": 77,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS03:R1:main:closed",
+        "MA-DS03:R1:normal-end"
+      ],
+      "PR20_row": 77,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS03:B1:main",
+      "source_row": 78,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS03:B1:main:closed",
+        "MA-DS03:B1:normal-end"
+      ],
+      "PR20_row": 78,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS03:R2:main",
+      "source_row": 79,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS03:R2:main:closed",
+        "MA-DS03:R2:normal-end"
+      ],
+      "PR20_row": 79,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS03:B2:main",
+      "source_row": 80,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS03:B2:main:closed",
+        "MA-DS03:B2:normal-end"
+      ],
+      "PR20_row": 80,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS03:R3:main",
+      "source_row": 81,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS03:R3:main:closed",
+        "MA-DS03:R3:normal-end"
+      ],
+      "PR20_row": 81,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS03:B3:main",
+      "source_row": 82,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS03:B3:main:closed",
+        "MA-DS03:B3:normal-end"
+      ],
+      "PR20_row": 82,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS03:R4:pre-1",
+      "source_row": 83,
+      "category": "rejected_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS03:R4:pre-1:observation"
+      ],
+      "PR20_row": 83,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": "IN_CHECK",
+      "committed_updatedAt": 16000,
+      "requestNow": 17000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS03:R4:main",
+      "source_row": 84,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS03:R4:main:closed",
+        "MA-DS03:R4:normal-end"
+      ],
+      "PR20_row": 84,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 18000,
+      "requestNow": 18000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:R1:main",
+      "source_row": 85,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:R1:main:closed",
+        "MA-DS04:R1:normal-end"
+      ],
+      "PR20_row": 85,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:B1:main",
+      "source_row": 86,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:B1:main:closed",
+        "MA-DS04:B1:normal-end"
+      ],
+      "PR20_row": 86,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:R2:main",
+      "source_row": 87,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:R2:main:closed",
+        "MA-DS04:R2:normal-end"
+      ],
+      "PR20_row": 87,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:B2:main",
+      "source_row": 88,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:B2:main:closed",
+        "MA-DS04:B2:normal-end"
+      ],
+      "PR20_row": 88,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:R3:main",
+      "source_row": 89,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:R3:main:closed",
+        "MA-DS04:R3:normal-end"
+      ],
+      "PR20_row": 89,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:B3:pre-1",
+      "source_row": 90,
+      "category": "rejected_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:B3:pre-1:observation"
+      ],
+      "PR20_row": 90,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": "IN_CHECK",
+      "committed_updatedAt": 15000,
+      "requestNow": 16000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:B3:main",
+      "source_row": 91,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:B3:main:closed",
+        "MA-DS04:B3:normal-end"
+      ],
+      "PR20_row": 91,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:R4:main",
+      "source_row": 92,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:R4:main:closed",
+        "MA-DS04:R4:normal-end"
+      ],
+      "PR20_row": 92,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 18000,
+      "requestNow": 18000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:B4:pre-1",
+      "source_row": 93,
+      "category": "accepted_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:B4:pre-1:observation"
+      ],
+      "PR20_row": 93,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 19000,
+      "requestNow": 19000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS04:B4:main",
+      "source_row": 94,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS04:B4:main:closed",
+        "MA-DS04:B4:normal-end"
+      ],
+      "PR20_row": 94,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 20000,
+      "requestNow": 20000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:R1:main",
+      "source_row": 95,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:R1:main:closed",
+        "MA-DS05:R1:normal-end"
+      ],
+      "PR20_row": 95,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 11000,
+      "requestNow": 11000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:B1:main",
+      "source_row": 96,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:B1:main:closed",
+        "MA-DS05:B1:normal-end"
+      ],
+      "PR20_row": 96,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 12000,
+      "requestNow": 12000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:R2:main",
+      "source_row": 97,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:R2:main:closed",
+        "MA-DS05:R2:normal-end"
+      ],
+      "PR20_row": 97,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 13000,
+      "requestNow": 13000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:B2:main",
+      "source_row": 98,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:B2:main:closed",
+        "MA-DS05:B2:normal-end"
+      ],
+      "PR20_row": 98,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 14000,
+      "requestNow": 14000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:R3:main",
+      "source_row": 99,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:R3:main:closed",
+        "MA-DS05:R3:normal-end"
+      ],
+      "PR20_row": 99,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 15000,
+      "requestNow": 15000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:B3:main",
+      "source_row": 100,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:B3:main:closed",
+        "MA-DS05:B3:normal-end"
+      ],
+      "PR20_row": 100,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 16000,
+      "requestNow": 16000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:R4:main",
+      "source_row": 101,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:R4:main:closed",
+        "MA-DS05:R4:normal-end"
+      ],
+      "PR20_row": 101,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 17000,
+      "requestNow": 17000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:B4:main",
+      "source_row": 102,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:B4:main:closed",
+        "MA-DS05:B4:normal-end"
+      ],
+      "PR20_row": 102,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 18000,
+      "requestNow": 18000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:R5:main",
+      "source_row": 103,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:R5:main:closed",
+        "MA-DS05:R5:normal-end"
+      ],
+      "PR20_row": 103,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 19000,
+      "requestNow": 19000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:B5:pre-1",
+      "source_row": 104,
+      "category": "accepted_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:B5:pre-1:observation"
+      ],
+      "PR20_row": 104,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 20000,
+      "requestNow": 20000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:B5:main",
+      "source_row": 105,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:B5:main:closed",
+        "MA-DS05:B5:normal-end"
+      ],
+      "PR20_row": 105,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 21000,
+      "requestNow": 21000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:R6:main",
+      "source_row": 106,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:R6:main:closed",
+        "MA-DS05:R6:normal-end"
+      ],
+      "PR20_row": 106,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 22000,
+      "requestNow": 22000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:B6:main",
+      "source_row": 107,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:B6:main:closed",
+        "MA-DS05:B6:normal-end"
+      ],
+      "PR20_row": 107,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 23000,
+      "requestNow": 23000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:R7:pre-1",
+      "source_row": 108,
+      "category": "accepted_pre_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:R7:pre-1:observation"
+      ],
+      "PR20_row": 108,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 24000,
+      "requestNow": 24000,
+      "history_message_present": false,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    },
+    {
+      "request_id": "MA-DS05:R7:main",
+      "source_row": 109,
+      "category": "accepted_main",
+      "original_checkpoint_ids": [
+        "MA-DS05:R7:main:closed",
+        "MA-DS05:R7:normal-end"
+      ],
+      "PR20_row": 109,
+      "server_output": "BOUNDED_PUBLIC_RESULT_INDEX_PRESENT_RAW_NOT_REVIEWED",
+      "server_error_code": null,
+      "committed_updatedAt": 25000,
+      "requestNow": 25000,
+      "history_message_present": true,
+      "required": [
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "client_delivery": "UNVERIFIED",
+      "formal_acceptance": false
+    }
+  ],
+  "paired_slots": [
+    {
+      "comparison_id": "PAIR-PD05:R1:main:closed:red",
+      "source_row": 0,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R1:main:closed",
+        "right": "MA-PD05-B:R1:main:closed"
+      },
+      "left_request": "MA-PD05-A:R1:main",
+      "right_request": "MA-PD05-B:R1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R1:main:closed:black",
+      "source_row": 1,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R1:main:closed",
+        "right": "MA-PD05-B:R1:main:closed"
+      },
+      "left_request": "MA-PD05-A:R1:main",
+      "right_request": "MA-PD05-B:R1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R1:normal-end:red",
+      "source_row": 2,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R1:normal-end",
+        "right": "MA-PD05-B:R1:normal-end"
+      },
+      "left_request": "MA-PD05-A:R1:main",
+      "right_request": "MA-PD05-B:R1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R1:normal-end:black",
+      "source_row": 3,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R1:normal-end",
+        "right": "MA-PD05-B:R1:normal-end"
+      },
+      "left_request": "MA-PD05-A:R1:main",
+      "right_request": "MA-PD05-B:R1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B1:main:closed:red",
+      "source_row": 4,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B1:main:closed",
+        "right": "MA-PD05-B:B1:main:closed"
+      },
+      "left_request": "MA-PD05-A:B1:main",
+      "right_request": "MA-PD05-B:B1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B1:main:closed:black",
+      "source_row": 5,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B1:main:closed",
+        "right": "MA-PD05-B:B1:main:closed"
+      },
+      "left_request": "MA-PD05-A:B1:main",
+      "right_request": "MA-PD05-B:B1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B1:normal-end:red",
+      "source_row": 6,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B1:normal-end",
+        "right": "MA-PD05-B:B1:normal-end"
+      },
+      "left_request": "MA-PD05-A:B1:main",
+      "right_request": "MA-PD05-B:B1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B1:normal-end:black",
+      "source_row": 7,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B1:normal-end",
+        "right": "MA-PD05-B:B1:normal-end"
+      },
+      "left_request": "MA-PD05-A:B1:main",
+      "right_request": "MA-PD05-B:B1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R2:main:closed:red",
+      "source_row": 8,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R2:main:closed",
+        "right": "MA-PD05-B:R2:main:closed"
+      },
+      "left_request": "MA-PD05-A:R2:main",
+      "right_request": "MA-PD05-B:R2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R2:main:closed:black",
+      "source_row": 9,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R2:main:closed",
+        "right": "MA-PD05-B:R2:main:closed"
+      },
+      "left_request": "MA-PD05-A:R2:main",
+      "right_request": "MA-PD05-B:R2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R2:normal-end:red",
+      "source_row": 10,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R2:normal-end",
+        "right": "MA-PD05-B:R2:normal-end"
+      },
+      "left_request": "MA-PD05-A:R2:main",
+      "right_request": "MA-PD05-B:R2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R2:normal-end:black",
+      "source_row": 11,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R2:normal-end",
+        "right": "MA-PD05-B:R2:normal-end"
+      },
+      "left_request": "MA-PD05-A:R2:main",
+      "right_request": "MA-PD05-B:R2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B2:main:closed:red",
+      "source_row": 12,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B2:main:closed",
+        "right": "MA-PD05-B:B2:main:closed"
+      },
+      "left_request": "MA-PD05-A:B2:main",
+      "right_request": "MA-PD05-B:B2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B2:main:closed:black",
+      "source_row": 13,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B2:main:closed",
+        "right": "MA-PD05-B:B2:main:closed"
+      },
+      "left_request": "MA-PD05-A:B2:main",
+      "right_request": "MA-PD05-B:B2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B2:normal-end:red",
+      "source_row": 14,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B2:normal-end",
+        "right": "MA-PD05-B:B2:normal-end"
+      },
+      "left_request": "MA-PD05-A:B2:main",
+      "right_request": "MA-PD05-B:B2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B2:normal-end:black",
+      "source_row": 15,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B2:normal-end",
+        "right": "MA-PD05-B:B2:normal-end"
+      },
+      "left_request": "MA-PD05-A:B2:main",
+      "right_request": "MA-PD05-B:B2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R3:main:closed:red",
+      "source_row": 16,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R3:main:closed",
+        "right": "MA-PD05-B:R3:main:closed"
+      },
+      "left_request": "MA-PD05-A:R3:main",
+      "right_request": "MA-PD05-B:R3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R3:main:closed:black",
+      "source_row": 17,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R3:main:closed",
+        "right": "MA-PD05-B:R3:main:closed"
+      },
+      "left_request": "MA-PD05-A:R3:main",
+      "right_request": "MA-PD05-B:R3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R3:normal-end:red",
+      "source_row": 18,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R3:normal-end",
+        "right": "MA-PD05-B:R3:normal-end"
+      },
+      "left_request": "MA-PD05-A:R3:main",
+      "right_request": "MA-PD05-B:R3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R3:normal-end:black",
+      "source_row": 19,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R3:normal-end",
+        "right": "MA-PD05-B:R3:normal-end"
+      },
+      "left_request": "MA-PD05-A:R3:main",
+      "right_request": "MA-PD05-B:R3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B3:main:closed:red",
+      "source_row": 20,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B3:main:closed",
+        "right": "MA-PD05-B:B3:main:closed"
+      },
+      "left_request": "MA-PD05-A:B3:main",
+      "right_request": "MA-PD05-B:B3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B3:main:closed:black",
+      "source_row": 21,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B3:main:closed",
+        "right": "MA-PD05-B:B3:main:closed"
+      },
+      "left_request": "MA-PD05-A:B3:main",
+      "right_request": "MA-PD05-B:B3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B3:normal-end:red",
+      "source_row": 22,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B3:normal-end",
+        "right": "MA-PD05-B:B3:normal-end"
+      },
+      "left_request": "MA-PD05-A:B3:main",
+      "right_request": "MA-PD05-B:B3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:B3:normal-end:black",
+      "source_row": 23,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:B3:normal-end",
+        "right": "MA-PD05-B:B3:normal-end"
+      },
+      "left_request": "MA-PD05-A:B3:main",
+      "right_request": "MA-PD05-B:B3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R4:main:closed:red",
+      "source_row": 24,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R4:main:closed",
+        "right": "MA-PD05-B:R4:main:closed"
+      },
+      "left_request": "MA-PD05-A:R4:main",
+      "right_request": "MA-PD05-B:R4:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R4:main:closed:black",
+      "source_row": 25,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R4:main:closed",
+        "right": "MA-PD05-B:R4:main:closed"
+      },
+      "left_request": "MA-PD05-A:R4:main",
+      "right_request": "MA-PD05-B:R4:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R4:normal-end:red",
+      "source_row": 26,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R4:normal-end",
+        "right": "MA-PD05-B:R4:normal-end"
+      },
+      "left_request": "MA-PD05-A:R4:main",
+      "right_request": "MA-PD05-B:R4:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD05:R4:normal-end:black",
+      "source_row": 27,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD05-A:R4:normal-end",
+        "right": "MA-PD05-B:R4:normal-end"
+      },
+      "left_request": "MA-PD05-A:R4:main",
+      "right_request": "MA-PD05-B:R4:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R1:main:closed:red",
+      "source_row": 28,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R1:main:closed",
+        "right": "MA-PD06-B:R1:main:closed"
+      },
+      "left_request": "MA-PD06-A:R1:main",
+      "right_request": "MA-PD06-B:R1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R1:main:closed:black",
+      "source_row": 29,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R1:main:closed",
+        "right": "MA-PD06-B:R1:main:closed"
+      },
+      "left_request": "MA-PD06-A:R1:main",
+      "right_request": "MA-PD06-B:R1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R1:normal-end:red",
+      "source_row": 30,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R1:normal-end",
+        "right": "MA-PD06-B:R1:normal-end"
+      },
+      "left_request": "MA-PD06-A:R1:main",
+      "right_request": "MA-PD06-B:R1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R1:normal-end:black",
+      "source_row": 31,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R1:normal-end",
+        "right": "MA-PD06-B:R1:normal-end"
+      },
+      "left_request": "MA-PD06-A:R1:main",
+      "right_request": "MA-PD06-B:R1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B1:main:closed:red",
+      "source_row": 32,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B1:main:closed",
+        "right": "MA-PD06-B:B1:main:closed"
+      },
+      "left_request": "MA-PD06-A:B1:main",
+      "right_request": "MA-PD06-B:B1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B1:main:closed:black",
+      "source_row": 33,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B1:main:closed",
+        "right": "MA-PD06-B:B1:main:closed"
+      },
+      "left_request": "MA-PD06-A:B1:main",
+      "right_request": "MA-PD06-B:B1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B1:normal-end:red",
+      "source_row": 34,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B1:normal-end",
+        "right": "MA-PD06-B:B1:normal-end"
+      },
+      "left_request": "MA-PD06-A:B1:main",
+      "right_request": "MA-PD06-B:B1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B1:normal-end:black",
+      "source_row": 35,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B1:normal-end",
+        "right": "MA-PD06-B:B1:normal-end"
+      },
+      "left_request": "MA-PD06-A:B1:main",
+      "right_request": "MA-PD06-B:B1:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R2:main:closed:red",
+      "source_row": 36,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R2:main:closed",
+        "right": "MA-PD06-B:R2:main:closed"
+      },
+      "left_request": "MA-PD06-A:R2:main",
+      "right_request": "MA-PD06-B:R2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R2:main:closed:black",
+      "source_row": 37,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R2:main:closed",
+        "right": "MA-PD06-B:R2:main:closed"
+      },
+      "left_request": "MA-PD06-A:R2:main",
+      "right_request": "MA-PD06-B:R2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R2:normal-end:red",
+      "source_row": 38,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R2:normal-end",
+        "right": "MA-PD06-B:R2:normal-end"
+      },
+      "left_request": "MA-PD06-A:R2:main",
+      "right_request": "MA-PD06-B:R2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R2:normal-end:black",
+      "source_row": 39,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R2:normal-end",
+        "right": "MA-PD06-B:R2:normal-end"
+      },
+      "left_request": "MA-PD06-A:R2:main",
+      "right_request": "MA-PD06-B:R2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B2:main:closed:red",
+      "source_row": 40,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B2:main:closed",
+        "right": "MA-PD06-B:B2:main:closed"
+      },
+      "left_request": "MA-PD06-A:B2:main",
+      "right_request": "MA-PD06-B:B2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B2:main:closed:black",
+      "source_row": 41,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B2:main:closed",
+        "right": "MA-PD06-B:B2:main:closed"
+      },
+      "left_request": "MA-PD06-A:B2:main",
+      "right_request": "MA-PD06-B:B2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B2:normal-end:red",
+      "source_row": 42,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B2:normal-end",
+        "right": "MA-PD06-B:B2:normal-end"
+      },
+      "left_request": "MA-PD06-A:B2:main",
+      "right_request": "MA-PD06-B:B2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B2:normal-end:black",
+      "source_row": 43,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B2:normal-end",
+        "right": "MA-PD06-B:B2:normal-end"
+      },
+      "left_request": "MA-PD06-A:B2:main",
+      "right_request": "MA-PD06-B:B2:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R3:main:closed:red",
+      "source_row": 44,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R3:main:closed",
+        "right": "MA-PD06-B:R3:main:closed"
+      },
+      "left_request": "MA-PD06-A:R3:main",
+      "right_request": "MA-PD06-B:R3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R3:main:closed:black",
+      "source_row": 45,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R3:main:closed",
+        "right": "MA-PD06-B:R3:main:closed"
+      },
+      "left_request": "MA-PD06-A:R3:main",
+      "right_request": "MA-PD06-B:R3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R3:normal-end:red",
+      "source_row": 46,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R3:normal-end",
+        "right": "MA-PD06-B:R3:normal-end"
+      },
+      "left_request": "MA-PD06-A:R3:main",
+      "right_request": "MA-PD06-B:R3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R3:normal-end:black",
+      "source_row": 47,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R3:normal-end",
+        "right": "MA-PD06-B:R3:normal-end"
+      },
+      "left_request": "MA-PD06-A:R3:main",
+      "right_request": "MA-PD06-B:R3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B3:main:closed:red",
+      "source_row": 48,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B3:main:closed",
+        "right": "MA-PD06-B:B3:main:closed"
+      },
+      "left_request": "MA-PD06-A:B3:main",
+      "right_request": "MA-PD06-B:B3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B3:main:closed:black",
+      "source_row": 49,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B3:main:closed",
+        "right": "MA-PD06-B:B3:main:closed"
+      },
+      "left_request": "MA-PD06-A:B3:main",
+      "right_request": "MA-PD06-B:B3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B3:normal-end:red",
+      "source_row": 50,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B3:normal-end",
+        "right": "MA-PD06-B:B3:normal-end"
+      },
+      "left_request": "MA-PD06-A:B3:main",
+      "right_request": "MA-PD06-B:B3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:B3:normal-end:black",
+      "source_row": 51,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:B3:normal-end",
+        "right": "MA-PD06-B:B3:normal-end"
+      },
+      "left_request": "MA-PD06-A:B3:main",
+      "right_request": "MA-PD06-B:B3:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R4:main:closed:red",
+      "source_row": 52,
+      "stage": "main:closed",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R4:main:closed",
+        "right": "MA-PD06-B:R4:main:closed"
+      },
+      "left_request": "MA-PD06-A:R4:main",
+      "right_request": "MA-PD06-B:R4:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R4:main:closed:black",
+      "source_row": 53,
+      "stage": "main:closed",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R4:main:closed",
+        "right": "MA-PD06-B:R4:main:closed"
+      },
+      "left_request": "MA-PD06-A:R4:main",
+      "right_request": "MA-PD06-B:R4:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R4:normal-end:red",
+      "source_row": 54,
+      "stage": "normal-end",
+      "viewer": "red",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R4:normal-end",
+        "right": "MA-PD06-B:R4:normal-end"
+      },
+      "left_request": "MA-PD06-A:R4:main",
+      "right_request": "MA-PD06-B:R4:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    },
+    {
+      "comparison_id": "PAIR-PD06:R4:normal-end:black",
+      "source_row": 55,
+      "stage": "normal-end",
+      "viewer": "black",
+      "checkpoint_ids": {
+        "left": "MA-PD06-A:R4:normal-end",
+        "right": "MA-PD06-B:R4:normal-end"
+      },
+      "left_request": "MA-PD06-A:R4:main",
+      "right_request": "MA-PD06-B:R4:main",
+      "server_component": "BOUNDED_PRESENT",
+      "PR20_substitution_for_exact_stage": false,
+      "required": [
+        "HC56-C0",
+        "HC56-P0",
+        "HC56-P2",
+        "HC56-P3"
+      ],
+      "complete": false
+    }
+  ],
+  "preserved_missing_stimuli": [
+    "PD-S02",
+    "PD-S12",
+    "PD-S17",
+    "PD-S35",
+    "DS-S01",
+    "DS-S06",
+    "DS-S12",
+    "DS-S20"
+  ],
+  "abstract_separate": "PD-S32：原抽象规格无直接自然正例，不能算第9个已列刺激或凭本矩阵核销。",
+  "validation": {
+    "level": "V2_PUBLIC_INDEX_SOURCE_JOIN_AND_V1_DOCUMENT_REVIEW",
+    "checks": [
+      {
+        "id": "original110_unique_ID_disposition_replay_join",
+        "passed": true,
+        "count": 110
+      },
+      {
+        "id": "original210_checkpoint_ID_unique",
+        "passed": true,
+        "count": 210
+      },
+      {
+        "id": "original56_slots_unique",
+        "passed": true,
+        "count": 56
+      },
+      {
+        "id": "original56_left_right_checkpoint_bound",
+        "passed": true,
+        "count": 112
+      },
+      {
+        "id": "PR20_original100_main_history",
+        "passed": true,
+        "count": 100
+      },
+      {
+        "id": "PR20_original4_rejections_IN_CHECK",
+        "passed": true,
+        "count": 4
+      },
+      {
+        "id": "PR20_committed_hashes_not_midstage_or_delivery",
+        "passed": true,
+        "count": 110
+      },
+      {
+        "id": "PR20_new106_exact_payload_probes_separate",
+        "passed": true,
+        "count": 106
+      },
+      {
+        "id": "PR20_new4_refusal_controls_separate",
+        "passed": true,
+        "count": 4
+      }
+    ],
+    "failed": 0,
+    "new_engine_runs": 0,
+    "independent_QA": false
+  },
+  "limits": {
+    "raw_owner_packets_read": false,
+    "current_production_code_full_audit": false,
+    "main_reported_tests_reexecuted": false,
+    "original56_complete": 0,
+    "original64_formal": 0,
+    "actual_half_chaos_client_delivery": 0,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "main_receiver": "UNKNOWN"
+  },
+  "next": {
+    "id": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+    "status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
+    "owner": "half_chaos source reception; main shared implementation",
+    "action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
+    "acceptance": "新的有源结果可逐项判定已接收/仍缺；written、pong、重连和快照均不得单独核销旧行动。"
+  },
+  "publication": {
+    "source_head": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+    "parent_head": "a4562f27b22bfc6ea88659a0c6a8ee3e97934a35",
+    "parent_tree": "5338ab57c208f5a69eb10ffb97a5a5c932140269",
+    "concurrent_changes_preserved": "a4562f2: four worklines/chaos files; five existing half_chaos targets unchanged by exact fetched-content comparison",
+    "intended_scope": "six half_chaos paths only"
+  }
+}

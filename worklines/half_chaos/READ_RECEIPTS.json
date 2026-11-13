@@ -3113,5 +3113,98 @@
     ],
     "other_worklines_adoption_not_filled": true,
     "main_has_read_return": "UNKNOWN"
+  },
+  "coordination_20261113": {
+    "date_local": "2026-11-13",
+    "receiver_workline": "half_chaos",
+    "source_handoff_commit": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+    "task": "MAIN-COORD-20261113-half_chaos",
+    "actual_scope": [
+      {
+        "paths": [
+          "docs/project-instructions/modes.txt",
+          "docs/COORDINATION_SETUP.md",
+          "PROJECT_NOTICE_MAINLINE_INTAKE_PAUSE_20261105.md",
+          "worklines/half_chaos/TASK_FROM_MAIN.json",
+          "worklines/half_chaos/HC55_SESSION_CLOSEOUT_20261029.json"
+        ],
+        "scope": "完整当前说明/任务/最新收束"
+      },
+      {
+        "paths": [
+          "worklines/half_chaos/START_HERE.txt",
+          "worklines/half_chaos/CURRENT_STATE.json",
+          "worklines/half_chaos/NEXT_ACTIONS.json",
+          "worklines/half_chaos/RETURN_TO_MAIN.json",
+          "worklines/half_chaos/READ_RECEIPTS.json"
+        ],
+        "scope": "当前导航、授权、r53-r55与下一任务字段；历史累计正文取回但不宣称全部语义审计"
+      },
+      {
+        "paths": [
+          "worklines/half_chaos/HC55_ORIGINAL110_CLIENT_OUTPUT_ORACLE_MATRIX_20261029.json",
+          "worklines/half_chaos/HC53_EXACT_STAGE56_CLIENT_CHANNEL_TRIAGE_20261029.json"
+        ],
+        "scope": "方法/边界/验收正文读取，110请求与56槽位全量程序联表；未重读所有原始历史棋谱或owner包"
+      },
+      {
+        "paths": [
+          "collaboration/CURRENT.json",
+          "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md"
+        ],
+        "scope": "v0.18入口/任务路由、项目工作约定、读源、权限、仓库发布、完成层级与局限模块；非全文历史审计"
+      },
+      {
+        "paths": [
+          "worklines/main/MAIN_COMMITTED_OUTPUT_REPORT.md",
+          "worklines/main/MAIN_BLUETOOTH_RECEIPT_REPORT.md",
+          "worklines/main/MAIN_NATIVE_SEND_REPORT.md"
+        ],
+        "scope": "全文；并读固定引擎PR20说明与PR20/21/22公开RESULTS，PR20全部halfRows/duplicate/refusal索引逐项核对，非主线运行复现"
+      },
+      {
+        "paths": [
+          "worklines/main/CURRENT_STATE.json",
+          "worklines/main/READ_RECEIPTS.json"
+        ],
+        "scope": "coordination_20261113和current/prior next_action；主线实际读HC55收束已证，本轮HC56未有主线回执"
+      }
+    ],
+    "engine_pins": [
+      {
+        "PR": 20,
+        "head": "8161c348abeba3a99fa5a5b514252e69218f28fd",
+        "state": "open",
+        "draft": true,
+        "merged": false
+      },
+      {
+        "PR": 21,
+        "head": "96fa7394f0371ab966b8b3572bf3f21b9bfe0da3",
+        "state": "open",
+        "draft": true,
+        "merged": false
+      },
+      {
+        "PR": 22,
+        "head": "71145df45ad17215a3731e53150b6728e079e375",
+        "state": "open",
+        "draft": true,
+        "merged": false
+      }
+    ],
+    "receiver_read": true,
+    "receiver_adopted": "限定采用PR20服务器提交后输出和PR21/22等待/本机发送证据边界；完成分层优先级文档任务",
+    "not_adopted": [
+      "产品门禁解除",
+      "新玩法或协议批准",
+      "正式56/64验收",
+      "真实客户端送达",
+      "owner原始包独立QA",
+      "共享工程所有权"
+    ],
+    "report": "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json",
+    "main_read_of_this_return": "UNKNOWN",
+    "engine_runs": 0
   }
 }

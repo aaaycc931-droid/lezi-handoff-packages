@@ -3,11 +3,11 @@
   "from_workline": "half_chaos",
   "to_workline": "main",
   "base_commit": "045d772ce802f38ef7740d114f446dd55d5e3f72",
-  "revision": "HC-55-ORIGINAL110-CLIENT-OUTPUT-ORACLE-MATRIX-20261029",
+  "revision": "HC-56-REQUIREMENT-CLOSURE-PRIORITY-MAPPING-20261113",
   "phase": "ORIGINAL110_SOURCE_JOIN_COMPLETE_CLIENT_CHANNEL_ACCEPTANCE_STILL_OPEN",
   "entry": "worklines/half_chaos/START_HERE.txt",
   "working_document": "worklines/half_chaos/WORKING.md",
-  "current_breakpoint": "Original110 action ID/outcome/210 checkpoint and PR19 200 stage component joins all match; no half-chaos product client outputs or same-ID retry/conflict tested. Main owns output channel/transport.",
+  "current_breakpoint": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
   "confirmed_delta": [],
   "new_rule_candidates_adopted": [],
   "preserved_confirmations": "CONFIRMATIONS.json; previous5 confirmations and H10 restoration retained; main adoption verified from original source commit",
@@ -111,7 +111,7 @@
       ]
     }
   ],
-  "next_independent_task": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+  "next_independent_task": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
   "scoring_frozen": true,
   "NET": "paused",
   "implementation_status": "MAIN_DRAFT_COMPONENT_PATCHES_VERIFIED_AS_CODE_EXISTENCE_LOCAL_DOCUMENT_ONLY_NO_NATURAL_ACCEPTANCE",
@@ -952,7 +952,7 @@
   ],
   "last_completed_design_revision": "HC-DESIGN-03-20261020-r37",
   "last_completed_design_commit": "8b13766fa4fa38eea70d9adbfdeb5e699fa75385",
-  "next_task_status": "WP05_NOT_STARTED_DOCUMENT_ONLY",
+  "next_task_status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
   "last_completed_design_commit_note": "本r34提交号从Git历史查询；不在内容预填未来自身提交",
   "initialization_witness_data": {
     "path": "worklines/half_chaos/INITIALIZATION_WITNESS_DATA.json",
@@ -2441,5 +2441,97 @@
     "scoring": "FROZEN",
     "NET": "PAUSED",
     "featuresReady": false
+  },
+  "r56_to_main": {
+    "date_local": "2026-11-13",
+    "report": "worklines/half_chaos/HC56_REQUIREMENT_CLOSURE_PRIORITY_MAPPING_20261113.json",
+    "source_commit": "7f608f8395ba0cac20ace0b3b28ed3b5631ec4f5",
+    "task_completed": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+    "joined_original_requests": 110,
+    "linked_original_checkpoint_ids": 210,
+    "linked_pair_slots": 56,
+    "checks": "9/9 public-index checks; no engine execution",
+    "server_committed_output": "PR20 public results indexed; raw packets not independently reread",
+    "original56_complete": 0,
+    "original64_formal": 0,
+    "client_delivery": 0,
+    "independent_QA": false,
+    "featuresReady": false,
+    "scoring": "FROZEN",
+    "NET": "PAUSED",
+    "next": {
+      "id": "NEXT-HC-RECEIVE-MAIN-RESULT-RECONCILIATION-EVIDENCE",
+      "status": "WAIT_FOR_NEW_SOURCE_OR_SCOPED_DISPATCH",
+      "owner": "half_chaos source reception; main shared implementation",
+      "action": "先核最新主线任务与实际结果核对方案；若有新证据，将本报告P0/P1逐项对到具体请求、正式结果和兼容边界。没有新源时不重复既有矩阵，不运行引擎、不改共享代码、不放开模式/NET。",
+      "acceptance": "新的有源结果可逐项判定已接收/仍缺；written、pong、重连和快照均不得单独核销旧行动。"
+    },
+    "source_task": "TASK_FROM_MAIN.json#/coordination_20261113",
+    "adopted_delta": [
+      "PR20原110请求完整提交后public/red/black输出索引与HC55逐项对应；100主行动历史消息与4个服务端IN_CHECK有公开结果记录。不再把提交后服务器序列化说成完全缺失。",
+      "PR19精确游戏时点与PR20完整提交后输出是两个时间层；后者不替代56槽左右精确时点的房间外壳、不授权公开中间包。",
+      "PR21的同编号pong只表有序链路控制回复；PR22的written只表本地写入返回，unknown可能已被接受，也可能未形成完整行动。断连清等待不是正式结果。",
+      "106同载荷服务端重传与4重复拒绝是新增研究对照；不计入原110客户端刺激，不核销PD-S35/DS-S12。",
+      "主线11-13已实际读取HC55收束（main READ_RECEIPTS同名对象）；本轮HC56回传是否读取/采用仍UNKNOWN。"
+    ],
+    "main_requests": [
+      {
+        "id": "HC56-P0",
+        "priority": "P0",
+        "layer": "committed_output_and_formal_result",
+        "covers": "原100主行动+6成功技能+4拒绝",
+        "present": "PR20原110完整提交输出有索引；4服务端IN_CHECK；PR21/22具限定等待/写入核算",
+        "missing": "实际请求正式接受/拒绝/重复/未知结果关联，新旧端降级及跨断连可达时序。",
+        "closure": "主线按原来源给请求身份、版本/连接生命周期、真实权威结果和调用方可用凭据；明确已接受但本机unknown与未送达；原4拒绝保持code与实际wire message的区别；禁止仅凭written/pong/snapshot/重连或UI解锁认定结果。若需协议变化须由主线按原审批边界提出方案。",
+        "failure": "快照更新或同编号pong即被记为旧行动接受；unknown自动补交；消息格式更改未说明。",
+        "owner": "main；half_chaos只复核原请求对应"
+      },
+      {
+        "id": "HC56-P1",
+        "priority": "P1",
+        "layer": "natural_duplicate_conflict_source",
+        "covers": [
+          "PD-S35",
+          "DS-S12"
+        ],
+        "present": "106新增服务端同载荷duplicate与4重复拒绝控制",
+        "missing": "获准原来源的同ID重传/冲突客户端刺激与结果；其他原缺刺激未核销",
+        "closure": "分别记录同ID同载荷、同ID不同载荷、新ID新请求及不同动作已有幂等语义；绑定原规格和真实调用来源。重复拒绝不自动等同去重；R4 pre-2仍是新请求。缺合法自然来源保留缺口，不改原棋谱凑覆盖。",
+        "failure": "将新增106探针算原客户端重试或用走棋去重套所有动作。",
+        "owner": "main来源/结果方案；half_chaos规格核对"
+      },
+      {
+        "id": "HC56-P2",
+        "priority": "P2",
+        "layer": "client_delivery_and_UI",
+        "covers": "原110请求及56槽位声明的实际可见表面",
+        "present": "共享jieqi函数限定控制，半混乱客户端证据仍0",
+        "missing": "获准半混乱适配、真实送达、错误/成功/重复反馈、红黑UI时钟/历史/提示按钮",
+        "closure": "在单独满足现行门禁和授权后，记录实际通道、客户端、接收/渲染时点、请求身份与授权视图。56精确游戏时点和提交后界面分开；不得为验收擅自发送中间阶段。",
+        "failure": "jieqi替身测试外推半混乱实际客户端、把服务器序列化当设备送达。",
+        "owner": "main/客户端责任方；NET和模式门禁保持"
+      },
+      {
+        "id": "HC56-P3",
+        "priority": "P3",
+        "layer": "independent_QA_and_privacy",
+        "covers": "56完整义务及64正式规格",
+        "present": "两配对世界限定比较与主线公开结果",
+        "missing": "独立审查owner-only证据、全部许可差异和原规格义务",
+        "closure": "独立复核实际源、原始证据和全义务；公开/红/黑各自权限与合法揭示差异按源判断；8缺刺激与PD-S32分别处理，未经逐项满足不标正式PASS。",
+        "failure": "同一AI索引核对或局部测试计数升级为独立QA/全局隐私证明。",
+        "owner": "获授权独立QA及main；本轮不代执行"
+      }
+    ],
+    "main_actual_read": "UNKNOWN",
+    "main_actual_adoption": "UNKNOWN",
+    "shared_code_edits": 0,
+    "other_line_files_edited": false
+  },
+  "r56_prior_navigation": {
+    "revision": "HC-55-ORIGINAL110-CLIENT-OUTPUT-ORACLE-MATRIX-20261029",
+    "current_breakpoint": "Original110 action ID/outcome/210 checkpoint and PR19 200 stage component joins all match; no half-chaos product client outputs or same-ID retry/conflict tested. Main owns output channel/transport.",
+    "next_independent_task": "NEXT-HC-REQUIREMENT-CLOSURE-PRIORITY-MAPPING",
+    "next_task_status": "WP05_NOT_STARTED_DOCUMENT_ONLY"
   }
 }
