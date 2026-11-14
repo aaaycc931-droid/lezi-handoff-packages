@@ -262,6 +262,224 @@
         ]
       },
       "next_observation": "Next real continuation verifies artifact discovery and lawful ownership; no synthetic success claim."
+    },
+    "module_recovery_rollout": {
+      "id": "FLOW-MODULE-RECOVERY-20261114",
+      "version": "2026-11-14.RECOVERY-1",
+      "scope": "non-main complete project instruction coverage and shared routing only",
+      "owner_source": "worklines/main/PROJECT_WORK_AGREEMENT.md#2026-11-14-各模块说明覆盖",
+      "source_base_commit": "5b9fcd6484bbc894a2086fd8ff9f8458346d38df",
+      "changed_instruction_count": 14,
+      "copyable_nonmain_options": 13,
+      "changed_instruction_paths": [
+        "docs/project-instructions/chaos.txt",
+        "docs/project-instructions/half_chaos.txt",
+        "docs/project-instructions/hero-design.txt",
+        "docs/project-instructions/hero-pilot.txt",
+        "docs/project-instructions/heroes.txt",
+        "docs/project-instructions/modes.txt",
+        "docs/project-instructions/standard.txt",
+        "docs/project-instructions/ui-image.txt",
+        "docs/project-instructions/visual.txt",
+        "docs/project-instructions/world-hero-text.txt",
+        "worklines/hero-pilot/PROJECT_INSTRUCTIONS.txt",
+        "worklines/main/candidates/shan/PROJECT_INSTRUCTIONS.txt",
+        "worklines/main/candidates/wind/PROJECT_INSTRUCTIONS.txt",
+        "worklines/main/scoring/PROJECT_INSTRUCTIONS.txt"
+      ],
+      "prior_main_template_unchanged": true,
+      "independent_ui": {
+        "branch": "ui/restart-asof-20261104-1119",
+        "observed_head": "e2c8d4f2799998f37fbfda25e3c9a5b0ca03525d",
+        "path": "worklines/ui/PROJECT_INSTRUCTIONS.txt",
+        "read": true,
+        "references_main_workflow": true,
+        "file_changed": false
+      },
+      "coverage": [
+        {
+          "path": "docs/project-instructions/chaos.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "chaos本线来源、适配和获准工程／验证；不接任主线",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "c97379b771b6fdac3007628ad5f29486ce6d745e",
+          "candidate_blob": "055270375530944786561b68114ac8b06c37558d",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/half_chaos.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "half_chaos本线来源、证据和获准复核；不接任主线",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "1e15b192f2b42c6242933d0327e6f4433338534b",
+          "candidate_blob": "3df4b08a128612b0a5eb37f1c1c9a818fd1fe641",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/hero-design.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "既有hero-design任务及确认；不接管主线工程",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "86ae941eea1c2c2cfaaceb06f54a03cd440e6613",
+          "candidate_blob": "d3b65cf0695e4969327b893e9ff9ae60daff3073",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/hero-pilot.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "仅已委托的一名英雄；TASK_FROM_MAIN与DESIGNER_BRIEF控制范围",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "10f9665c5725e5b3bf380504c77e9f8ee24216d0",
+          "candidate_blob": "3d834d403049847e0c0e7eae2ccec197e38e2881",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/heroes.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "按明确英雄／任务定位，单英雄委托不推广，评分研究与冻结原账本分开",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "4f1b9dfc7308f2bbdf01eb65176b75801fff7f91",
+          "candidate_blob": "5520905120e1d58ae74ccd7b82d9734434a0421f",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/modes.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "standard／chaos／half_chaos无默认线；多任务不猜，不接任主线",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "f3d289dce9fa3bea78508b8c2de8600b079efea9",
+          "candidate_blob": "f7546803ba09949d8a23877ca369f894613eb91f",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/standard.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "standard本线来源、适配与获准复核；已撤回的主线工程派发不恢复",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "c5b9ee3b75bec6a2eee902cb38d4a8cb0af31785",
+          "candidate_blob": "20f1060d0c75ca15c293f20f6c4932fbbd698d02",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/ui-image.txt",
+          "source_branch": "main",
+          "task_source_branch": "ui/restart-asof-20261104-1119",
+          "role": "独立UI设计任务；页面、英雄分别恢复，世界观暂停不自动解除",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "6f75559b153391d7fb307d75f7d497b591c30a39",
+          "candidate_blob": "cd0b66d0050f0d17514e9db3ddfabd4a19631d63",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/visual.txt",
+          "source_branch": "main",
+          "task_source_branch": "ui/restart-asof-20261104-1119",
+          "role": "页面UI、英雄视觉、世界观及相关文字按明确任务和各自授权恢复",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "f758656eaedc47134307a336f339b52f283fd30d",
+          "candidate_blob": "e499383b2f007f0407c44527153a9daea3aec0bb",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "docs/project-instructions/world-hero-text.txt",
+          "source_branch": "main",
+          "task_source_branch": "ui/restart-asof-20261104-1119",
+          "role": "文字路线按自身暂停／转向及角色原文恢复，不接管图片审批、代码或游戏UI",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "40eb5568af159e57bb349c6c3858e39253e03030",
+          "candidate_blob": "d152bac4073976dd25ab43f9bc1e8deadf09175e",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "worklines/hero-pilot/PROJECT_INSTRUCTIONS.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "已委托单英雄自主设计及实现；专属引擎分支与设计／参数自主委托保留",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "d6a85da088218778aa359611d842d0709f34e347",
+          "candidate_blob": "7f9e6d2bbf712807247f829d4f786fa82a86564d",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "worklines/main/candidates/shan/PROJECT_INSTRUCTIONS.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "山原任务范围；2A完成不代表2B或产品接入获准，不接任主线",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "5f73473e2a3bd9b12f2cab3c34d9d2598d343d0d",
+          "candidate_blob": "5f7cea3aec7ab347c7810317fa1580e07e7dc731",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "worklines/main/candidates/wind/PROJECT_INSTRUCTIONS.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "风原任务范围；既有确认、假设和正式批准分开，不接任主线",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "b95eae97178398abbe895902a34eb873dc1bc024",
+          "candidate_blob": "ecd820bd1d38d82e3483c051717cdd4a4eaa6abe",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "worklines/main/scoring/PROJECT_INSTRUCTIONS.txt",
+          "source_branch": "main",
+          "task_source_branch": "main",
+          "role": "仅候选研究；保留正式方法与原账本冻结，不接任主线",
+          "action": "ADD_SHORT_RECOVERY_ROUTE_AND_VERSION_ONLY",
+          "baseline_blob": "52521336b0bd2195e716730dbe3c36bf568e433c",
+          "candidate_blob": "853592346874f6892aed54134655b9c5b6abdb43",
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        },
+        {
+          "path": "worklines/ui/PROJECT_INSTRUCTIONS.txt",
+          "source_branch": "ui/restart-asof-20261104-1119",
+          "task_source_branch": "ui/restart-asof-20261104-1119",
+          "role": "世界观与视觉共用；共享规则读main，设计来源保留独立分支",
+          "action": "NO_CROSS_BRANCH_WRITE",
+          "baseline_blob": "1e66476b63a4e90b2231150d063cdf94fe33c457",
+          "candidate_blob": null,
+          "frontend_installation": "UNKNOWN",
+          "natural_continuation": "NOT_VERIFIED"
+        }
+      ],
+      "verification": {
+        "level": "L3;document_scope_only",
+        "working_revision": "2026-10-23.v0.18",
+        "formal_baseline": "1.8.0",
+        "source_bytes_match_git_blobs": true,
+        "reverse_route_and_version_restores_all_original_bytes": true,
+        "business_tests_rerun": false,
+        "engineering_states_changed": false,
+        "other_receipts_changed": false,
+        "frontend_installation_verified": false,
+        "natural_effectiveness_verified": false,
+        "publication_readback": {
+          "status": "pending",
+          "commit": null
+        }
+      },
+      "next_observation": "Receiving mainline/workline reads actual published scope during normal continuation; no forced new task or background wakeup."
     }
   }
 }
