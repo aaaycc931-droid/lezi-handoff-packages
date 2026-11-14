@@ -1,20 +1,21 @@
-【2026-11-14 新主线接任／本轮施工中】
-本对话实际收到用户项目条件任命及“继续下一步”，已核旧主线明确收束。当前认领见CROSS_SYSTEM_COORDINATION.json#/active_session，范围为PR29真实浏览器有限验证。下方session_closeout是前一对话历史收束，不能据此抢占当前范围；其他线继续。
+【最近登记的主线施工范围：PR29真实浏览器有限验证】
+当前归属先读CROSS_SYSTEM_COORDINATION.json#/active_session；该记录尚无对应本轮收束，文字不单独证明后台此刻仍在运行或已停止。下方session_closeout属于前一对话，不能覆盖较新的认领。遇中断／无最终回复先按docs/WORKFLOW.md“对话中断后的恢复”核实际成果、停止／接任依据及并发；本次入口维护不释放或接管原工程，其他线继续。
 
 《乐子象棋》主线固定入口
 
 先核本仓库main最新HEAD，再按以下当前路由读取；入口只维护导航，不累计每阶段摘要。
-1. 身份与授权：AGENTS.md、worklines/main/PROJECT_WORK_AGREEMENT.md。本对话已按用户2026-11-14明确要求收束；旧主线释放本轮施工范围，其他线不暂停。在同一主线项目中，实际收到用户条件任命、旧对话已收束且无并发身份冲突的新对话，可在用户说“继续”时接任并继承同范围授权。仓库模板本身不是任命，不把已有支线改成主线，不抢占仍在施工的其他对话。评分原账本冻结、NET暂停及原审批边界保持。
-2. 当前断点与本次收束：先读worklines/main/CROSS_SYSTEM_COORDINATION.json#/session_closeout，再读worklines/main/CURRENT_STATE.json#/next_action及#/local_result_integration_20261113。当前工程下一步仍是PR29真实浏览器有限验证。本次session_closeout覆盖旧累计continuation/current_dialogue_status中的“施工中”快照，仅改变本对话接续状态，不覆盖工程断点或其他领域较新进度。当前状态优先于旧session_closure中已完成的下一步。
+1. 身份与授权：AGENTS.md、worklines/main/PROJECT_WORK_AGREEMENT.md及CROSS_SYSTEM_COORDINATION.json#/active_session。同一主线项目的新对话须实际收到用户任命或条件任命；正常收束或已明确中断／停止且无同范围有效并发冲突时，按docs/WORKFLOW.md“对话中断后的恢复”接任。仓库模板本身不是任命，不把已有支线改成主线；旧历史收束只结束其对应执行。评分原账本冻结、NET暂停及原审批边界保持。
+2. 当前断点与收束：先核active_session，再按其来源读取相关session_closeout、worklines/main/CURRENT_STATE.json#/next_action及#/local_result_integration_20261113。原登记下一步是PR29真实浏览器有限验证；接续还须沿任务关联代码分支／PR核其后实际成果及未回传差分，不能只凭旧状态重做。以经核实的当前任务、较新有效成果和确认决定下一动作；工程保存、交接登记和对话收束分别判断。
 3. 换对话与增量保存：docs/WORKFLOW.md“项目内新对话接续与收束”；一次配置见docs/COORDINATION_SETUP.md。本轮沿已采用的最小协调记录保存收束及己方阶段回传，累计历史文件保持原字节；原SESSION_CLOSEOUT各历史段仍作来源。只结束当前对话，不暂停其他线；阶段保存本身不等于收束。
 4. 本线来源与接收：CURRENT_HANDOFF.json、worklines/main/RETURN_TO_MAIN.json、worklines/main/READ_RECEIPTS.json保留原工程与历史记录；本次说明协调、发件和收束见CROSS_SYSTEM_COORDINATION.json。再按当前任务读取相关原正文、代码HEAD、各线TASK/RETURN及授权。只记实际读取/采用，不替其他对话写回执，不要求用户例行转贴入库材料。
 5. 通用协作：collaboration/CURRENT.json → 所指正文。最新确认、范围和暂停须回原件，不用旧摘要覆盖新来源。
 6. 保护与执行：普通工程转派已撤回，主线工程由主线承担；可在已获用户许可的范围使用临时子代理，不要求用户去支线启动主线任务。未回传成果和独立UI分支保留；无新差分不重复已完成工程/测试/APK。引擎仓库jieqi-engine沿现行开发链，不以旧main覆盖。
 7. 独立UI设计来源：另核ui/restart-asof-20261104-1119最新HEAD及worklines/ui/START_HERE.txt。图片和世界观/英雄文字按各自track读取；main同路径不能替代设计分支，禁止整树覆盖。
 8. 授权与跨系统复用：本轮协调结果见AUTHORIZATION_COORDINATION_20261113.md；按docs/WORKFLOW.md末两节恢复原授权、呈现操作前证据和处理拒绝。象棋发件查CROSS_SYSTEM_COORDINATION.outgoing；正常接续时查个人系统私有固定入口的docs/WORKFLOW_DIRECTION_AND_HANDOFF.md“跨系统共用改进”，只记录自己真实接收，不要求用户逐次转贴。无新条目不重审，未有真实接收回执就保持未知。AUTH-1完整说明已交付，但前端粘贴未确认，不因此阻断已获授权的主线工程。
-9. 发布：本次收束发布读回凭据见worklines/main/SESSION_CLOSEOUT_READBACK.json。最新父树＋expected_sha＋force=false，冲突重读合并，阶段完成读回；新对话读取、采用、前端配置与效果分别验证。
+9. 发布：历史授权协调收束的读回凭据见worklines/main/SESSION_CLOSEOUT_READBACK.json，仅覆盖原提交。本次RECOVERY-1文档维护的实际发布／读回沿CROSS_SYSTEM_COORDINATION.json#/workflow_maintenance/interruption_recovery；不据此认定原工程已收束。最新父树＋expected_sha＋force=false，冲突重读合并，阶段完成读回；新对话读取、采用、前端配置与效果分别验证。
 
-2026-11-14本对话明确收束，项目及其他工作线继续。已保存本轮授权协调、14种完整说明选择和两主线直接交接入口；新版前端安装及另一主线实际采用仍待证据。下一主线恢复最新来源后，沿CURRENT_STATE.next_action执行PR29真实浏览器有限验证；历史G4/G5及C5旧包不重做。
+历史收束说明（仅对应CROSS_SYSTEM_COORDINATION.session_closeout中的授权协调对话，不覆盖较新的active_session）：
+2026-11-14该对话明确收束，项目及其他工作线继续。已保存本轮授权协调、14种完整说明选择和两主线直接交接入口；新版前端安装及另一主线实际采用仍待证据。下一主线恢复最新来源后，沿CURRENT_STATE.next_action执行PR29真实浏览器有限验证；历史G4/G5及C5旧包不重做。
 
 整理前入口及阶段历史：
 https://github.com/aaaycc931-droid/lezi-handoff-packages/blob/4c93812a5e357e5c14e4b2831a46b146d6f4a9ba/worklines/main/START_HERE.txt

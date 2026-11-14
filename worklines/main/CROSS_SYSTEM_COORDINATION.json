@@ -156,5 +156,63 @@
       "independent_UI_and_other_workline_drafts_and_receipts"
     ],
     "next_action_ref": "worklines/main/CURRENT_STATE.json#/next_action"
+  },
+  "workflow_maintenance": {
+    "interruption_recovery": {
+      "id": "FLOW-INTERRUPTION-RECOVERY-20261114",
+      "version": "2026-11-14.RECOVERY-1",
+      "scope": "shared continuation workflow and project instructions; not engineering takeover",
+      "owner_source": "worklines/main/PROJECT_WORK_AGREEMENT.md#2026-11-14-中断后继续的可复用流程",
+      "source_base_commit": "0c7d108dd74f06acdae9b8ab4ff7fe140ced67df",
+      "changed_paths": [
+        "docs/WORKFLOW.md",
+        "docs/project-instructions/main.txt",
+        "docs/COORDINATION_SETUP.md",
+        "worklines/main/PROJECT_WORK_AGREEMENT.md",
+        "worklines/main/START_HERE.txt",
+        "worklines/main/CROSS_SYSTEM_COORDINATION.json"
+      ],
+      "review": {
+        "level": "L3;V2_source_checked;document_scenarios_only",
+        "working_revision": "2026-10-23.v0.18",
+        "formal_baseline": "1.8.0",
+        "known_facts": [
+          "Existing shared body already covers lost-session recovery without old-session handoff.",
+          "PR30 03d33480cd68b09bfaa95005b4401b5cbb589026 is saved while main coordination still points at PR29."
+        ],
+        "risk": "Reversible documentation; incorrect ownership inference could cause concurrent writes.",
+        "changes": [
+          "Continue triggers bounded recovery including unknown action outcomes and unregistered branch/PR discovery.",
+          "Main conditional appointment includes confirmed interrupted/stopped predecessor without requiring successful closeout.",
+          "Unknown unpublished work stays unknown; existing claim recovery and authorization boundaries remain."
+        ],
+        "scenarios": [
+          "same conversation interruption",
+          "new conversation with effective conditional appointment",
+          "old owner activity unresolved",
+          "saved unregistered PR",
+          "write result unknown",
+          "only claim without recoverable artifact",
+          "environment capability unchanged",
+          "multiple possible tasks"
+        ],
+        "non_independent_review": true,
+        "frontend_installation_verified": false,
+        "natural_effectiveness_verified": false,
+        "failure_conditions": [
+          "latest related artifact missed",
+          "duplicate write or unnecessary rerun",
+          "old active wrongly treated as released",
+          "template publication misreported as frontend installation"
+        ],
+        "rollback": "Revert only this documentation delta in a normal commit, retaining later concurrent changes."
+      },
+      "engineering_active_session_changed": false,
+      "engineering_next_action_changed": false,
+      "publication_readback": {
+        "status": "pending"
+      },
+      "next_observation": "Next real continuation verifies artifact discovery and lawful ownership; no synthetic success claim."
+    }
   }
 }
