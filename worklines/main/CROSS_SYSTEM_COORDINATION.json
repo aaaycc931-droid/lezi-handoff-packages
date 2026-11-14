@@ -87,7 +87,8 @@
         "recipient_route": "own fixed entry -> existing cross-system intake;receiver records actual receipt",
         "background_wakeup": false,
         "frontend_installation_verified": false,
-        "publication_status": "actual_commit_and_readback_recorded_after_publication"
+        "publication_status": "published_and_exactly_read_back",
+        "source_commit": "98df5e559634c6aeaf7c2d35c43d0c8476dba3ee"
       }
     ]
   },
@@ -695,7 +696,7 @@
         ]
       },
       "workflow_effect": {
-        "method_body": "candidate prepared for ordinary publication;actual commit/readback recorded subsequently",
+        "method_body": "published_and_exactly_read_back",
         "original_hero_receipt": "UNKNOWN;receiver_only",
         "frontend_installation": "UNKNOWN",
         "future_proactive_checkpointing": "NOT_VERIFIED",
@@ -710,7 +711,30 @@
         "no_merge_deploy_APK": true
       },
       "next_action": "Original hero executor restores and publishes the preserved originals under its own authority,then returns actual evidence. Cross-system method maintenance verifies routing and records only its own publication/readback.",
-      "method_specific_delta": "Enumerate tracked edits,untracked additions and ignored valuable evidence;save actual phase artifacts before long calls;verify durable branch/file binding and readback before claiming checkpoint."
+      "method_specific_delta": "Enumerate tracked edits,untracked additions and ignored valuable evidence;save actual phase artifacts before long calls;verify durable branch/file binding and readback before claiming checkpoint.",
+      "publication": {
+        "commit": "98df5e559634c6aeaf7c2d35c43d0c8476dba3ee",
+        "observed_head": "98df5e559634c6aeaf7c2d35c43d0c8476dba3ee",
+        "observed_at": "2026-11-14T06:31:54.568Z",
+        "files": [
+          {
+            "path": "docs/AI_AUTONOMOUS_DESIGN.md",
+            "sha": "e49851a10b5af978b4ff9dd943e370d90f31e658",
+            "exact": true
+          },
+          {
+            "path": "docs/WORKFLOW.md",
+            "sha": "1e28ec30d1f7bf1add957fe4495910a74f894fe6",
+            "exact": true
+          },
+          {
+            "path": "worklines/main/CROSS_SYSTEM_COORDINATION.json",
+            "sha": "64268fde774e63d88c4fdabb1d0a7b8e45d940a2",
+            "exact": true
+          }
+        ],
+        "unrelated_blobs_preserved": 968
+      }
     }
   }
 }
