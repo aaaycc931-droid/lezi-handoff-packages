@@ -59,6 +59,21 @@
         "recipient_route": "own fixed entry -> existing cross-system intake;receiver records its actual receipt",
         "background_wakeup": false,
         "frontend_installation_verified": false
+      },
+      {
+        "id": "XFLOW-MODULE-RECOVERY-20261114",
+        "version": "2026-11-14.RECOVERY-1",
+        "target": "personal_system_mainline",
+        "source_commit": "3a79094615d2583fd91c5ff33afe99272b8975b7",
+        "source_path": "docs/COORDINATION_SETUP.md",
+        "source_section": "各模块说明覆盖｜2026-11-14.RECOVERY-1",
+        "sender_record": "worklines/main/CROSS_SYSTEM_COORDINATION.json#/workflow_maintenance/module_recovery_rollout",
+        "scope": "Reuse shared recovery through complete module-specific templates;preserve existing role/task/claim and separate publication,frontend adoption,natural operation.",
+        "recipient_read": "UNKNOWN",
+        "recipient_adopted": "UNKNOWN",
+        "recipient_route": "own fixed entry -> existing cross-system intake;receiver records actual receipt",
+        "background_wakeup": false,
+        "frontend_installation_verified": false
       }
     ]
   },
@@ -475,8 +490,97 @@
         "frontend_installation_verified": false,
         "natural_effectiveness_verified": false,
         "publication_readback": {
-          "status": "pending",
-          "commit": null
+          "status": "published_and_exactly_read_back",
+          "commit": "3a79094615d2583fd91c5ff33afe99272b8975b7",
+          "observed_at_utc": "2026-11-14 03:03:19 UTC",
+          "exact_files": [
+            {
+              "path": "docs/project-instructions/chaos.txt",
+              "blob_sha": "055270375530944786561b68114ac8b06c37558d",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/half_chaos.txt",
+              "blob_sha": "3df4b08a128612b0a5eb37f1c1c9a818fd1fe641",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/hero-design.txt",
+              "blob_sha": "d3b65cf0695e4969327b893e9ff9ae60daff3073",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/hero-pilot.txt",
+              "blob_sha": "3d834d403049847e0c0e7eae2ccec197e38e2881",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/heroes.txt",
+              "blob_sha": "5520905120e1d58ae74ccd7b82d9734434a0421f",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/modes.txt",
+              "blob_sha": "f7546803ba09949d8a23877ca369f894613eb91f",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/standard.txt",
+              "blob_sha": "20f1060d0c75ca15c293f20f6c4932fbbd698d02",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/ui-image.txt",
+              "blob_sha": "cd0b66d0050f0d17514e9db3ddfabd4a19631d63",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/visual.txt",
+              "blob_sha": "e499383b2f007f0407c44527153a9daea3aec0bb",
+              "exact": true
+            },
+            {
+              "path": "docs/project-instructions/world-hero-text.txt",
+              "blob_sha": "d152bac4073976dd25ab43f9bc1e8deadf09175e",
+              "exact": true
+            },
+            {
+              "path": "worklines/hero-pilot/PROJECT_INSTRUCTIONS.txt",
+              "blob_sha": "7f9e6d2bbf712807247f829d4f786fa82a86564d",
+              "exact": true
+            },
+            {
+              "path": "worklines/main/candidates/shan/PROJECT_INSTRUCTIONS.txt",
+              "blob_sha": "5f7cea3aec7ab347c7810317fa1580e07e7dc731",
+              "exact": true
+            },
+            {
+              "path": "worklines/main/candidates/wind/PROJECT_INSTRUCTIONS.txt",
+              "blob_sha": "ecd820bd1d38d82e3483c051717cdd4a4eaa6abe",
+              "exact": true
+            },
+            {
+              "path": "worklines/main/scoring/PROJECT_INSTRUCTIONS.txt",
+              "blob_sha": "853592346874f6892aed54134655b9c5b6abdb43",
+              "exact": true
+            },
+            {
+              "path": "docs/COORDINATION_SETUP.md",
+              "blob_sha": "2acf99a91446ce0fb8c47d568f664cd29294c384",
+              "exact": true
+            },
+            {
+              "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+              "blob_sha": "ad16ff68c99accfab9efc2bea9a8ffa29d93f485",
+              "exact": true
+            },
+            {
+              "path": "worklines/main/CROSS_SYSTEM_COORDINATION.json",
+              "blob_sha": "9045a24375f8f4fb4af666717e3e7c554b6c6424",
+              "exact": true
+            }
+          ],
+          "other_blob_count_unchanged": 944
         }
       },
       "next_observation": "Receiving mainline/workline reads actual published scope during normal continuation; no forced new task or background wakeup."
