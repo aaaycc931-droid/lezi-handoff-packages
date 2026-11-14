@@ -1,7 +1,7 @@
 {
   "schema": "lezi.ui.current_work.v1",
   "revision": "UI-B10-STATIC-CANDIDATE-PENDING-20261031",
-  "updated_at_local": "2026-11-13",
+  "updated_at_local": "2026-11-14T09:58:06+08:00",
   "known_UI_source": "2026-10-14-v1",
   "source_commit": "52002b3762bd948a134c67cfbc99427035790eba",
   "approved_versions": [
@@ -49,7 +49,7 @@
   "current_approval_authority": "APPROVAL_REGISTER.json",
   "asset_library": "../../assets/ui/INDEX.json",
   "unreceived_newer_UI_work": "B6 exact recovery and preserved approval reconciled; no further unreceived artwork known",
-  "artwork_changes": 0,
+  "artwork_changes": 3,
   "game_code_changes": 0,
   "engine_tests": 0,
   "scoring_frozen": true,
@@ -115,8 +115,8 @@
       "sha256": "d81a19895bef348709180a6a5ecf9ed82b06ad4822fef3f7709c9ea7874f0bf0"
     }
   },
-  "approval_changes": 1,
-  "status": "NEW_STYLE_UI_HOME_MEMBER_4_SELECTED",
+  "approval_changes": 0,
+  "status": "NEW_STYLE_SETTINGS_THREE_VARIANTS_PENDING_REVIEW",
   "paused_by_user": false,
   "pause_scope": null,
   "automatic_resume_scheduled": false,
@@ -757,11 +757,17 @@
   "world_lore_next_action": "世界观扩写继续暂停。H01已有外观沿用原暂时确认稿；本轮已提出A写实厚涂、B线描水彩、C形块插画及共同构图候选，等待用户选择画风。建议A；所有新呈现参数均未确认，不因继续指令自动生图。",
   "status_scope": "original_game_UI_images; narrative fields retain their separate scope",
   "active_ui_image_task": {
-    "id": "UI-HOME-NEWSTYLE-v6-4",
-    "status": "user_selected_current_homepage_visual_baseline",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json",
-    "comparison_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/comparison.json",
-    "next_action": "首页本轮已选定第4张UI-HOME-NEWSTYLE-v6-4，后续视觉工作以它为当前首页基准；用户要求继续时，先核下一页的具体既有UI内容再接续，不重问本轮选择，不自动生成首页替代稿。"
+    "id": "UI-SETTINGS-NEWSTYLE-v1-comparison",
+    "status": "three_candidates_generated_pending_user_review",
+    "record": "worklines/ui/candidates/UI-SETTINGS-NEWSTYLE/v1/comparison.json",
+    "page": "settings",
+    "candidate_versions": [
+      "UI-SETTINGS-NEWSTYLE-v1-1",
+      "UI-SETTINGS-NEWSTYLE-v1-2",
+      "UI-SETTINGS-NEWSTYLE-v1-3"
+    ],
+    "style_baseline": "UI-HOME-NEWSTYLE-v6-4",
+    "next_action": "查看本轮三张完整新风格设置页：1舒展横排、2居中题字、3紧凑分组，接收用户具体选择或组合反馈；未选择前不更新设置页批准指针，不自动再生成。首页v6-4继续作为已选视觉基准，旧S1-v3.2及B1—B9批准/B10待审保留。"
   },
   "new_style_ui_resume_20261113": {
     "record_id": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113",
@@ -815,7 +821,7 @@
     "source_head_before_write": "bd8ab26995421f5963f27b504571a33ffea18a25",
     "followup_record": "UI-HOME-NEWSTYLE-FIRST-PAGE-20261113",
     "winter_background_style_accepted": true,
-    "next_action": "首页本轮已选定第4张UI-HOME-NEWSTYLE-v6-4，后续视觉工作以它为当前首页基准；用户要求继续时，先核下一页的具体既有UI内容再接续，不重问本轮选择，不自动生成首页替代稿。"
+    "next_action": "查看本轮三张完整新风格设置页：1舒展横排、2居中题字、3紧凑分组，接收用户具体选择或组合反馈；未选择前不更新设置页批准指针，不自动再生成。首页v6-4继续作为已选视觉基准，旧S1-v3.2及B1—B9批准/B10待审保留。"
   },
   "world_lore_daily_life_batch10_20261113": {
     "record_id": "UI-WORLD-LORE-DAILY-LIFE-BATCH10-20261113",
@@ -1335,5 +1341,38 @@
     "date_local": "2026-11-13",
     "display_number": 4,
     "name": "清晰易用"
+  },
+  "settings_new_style_comparison_20261114": {
+    "record_id": "UI-SETTINGS-NEWSTYLE-COMPARISON-20261114",
+    "record": "worklines/ui/candidates/UI-SETTINGS-NEWSTYLE/v1/comparison.json",
+    "source_commit": "7615fc61fd66d84929f0569ff9429a46f1344b7e",
+    "scope": "new_style_settings_full_page_visual_exploration",
+    "candidates": [
+      {
+        "number": 1,
+        "version": "UI-SETTINGS-NEWSTYLE-v1-1",
+        "name": "舒展横排",
+        "sha256": "2c5d799fc0b43703a602a4baa27341240233273866559b413b1934d93cb37483",
+        "status": "candidate_pending_user_review"
+      },
+      {
+        "number": 2,
+        "version": "UI-SETTINGS-NEWSTYLE-v1-2",
+        "name": "居中题字",
+        "sha256": "12cd8da8519d2121a4cd4922da055de50cbd83f9da10e76199e6dc63aed02228",
+        "status": "candidate_pending_user_review"
+      },
+      {
+        "number": 3,
+        "version": "UI-SETTINGS-NEWSTYLE-v1-3",
+        "name": "紧凑分组",
+        "sha256": "b85f77d7c58c287843cb240da3b0d561c5918cf43f2d2883e72428c71422dd03",
+        "status": "candidate_pending_user_review"
+      }
+    ],
+    "approval": "pending_user_review",
+    "home_baseline": "UI-HOME-NEWSTYLE-v6-4",
+    "legacy_setting_baseline": "S1-v3.2",
+    "next_action": "查看本轮三张完整新风格设置页：1舒展横排、2居中题字、3紧凑分组，接收用户具体选择或组合反馈；未选择前不更新设置页批准指针，不自动再生成。首页v6-4继续作为已选视觉基准，旧S1-v3.2及B1—B9批准/B10待审保留。"
   }
 }

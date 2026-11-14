@@ -468,11 +468,17 @@
     "winter_background_style_accepted": true
   },
   "active_ui_image_task": {
-    "id": "UI-HOME-NEWSTYLE-v6-4",
-    "status": "user_selected_current_homepage_visual_baseline",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json",
-    "comparison_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/comparison.json",
-    "next_action": "首页本轮已选定第4张UI-HOME-NEWSTYLE-v6-4，后续视觉工作以它为当前首页基准；用户要求继续时，先核下一页的具体既有UI内容再接续，不重问本轮选择，不自动生成首页替代稿。"
+    "id": "UI-SETTINGS-NEWSTYLE-v1-comparison",
+    "status": "three_candidates_generated_pending_user_review",
+    "record": "worklines/ui/candidates/UI-SETTINGS-NEWSTYLE/v1/comparison.json",
+    "page": "settings",
+    "candidate_versions": [
+      "UI-SETTINGS-NEWSTYLE-v1-1",
+      "UI-SETTINGS-NEWSTYLE-v1-2",
+      "UI-SETTINGS-NEWSTYLE-v1-3"
+    ],
+    "style_baseline": "UI-HOME-NEWSTYLE-v6-4",
+    "next_action": "查看本轮三张完整新风格设置页：1舒展横排、2居中题字、3紧凑分组，接收用户具体选择或组合反馈；未选择前不更新设置页批准指针，不自动再生成。首页v6-4继续作为已选视觉基准，旧S1-v3.2及B1—B9批准/B10待审保留。"
   },
   "world_lore_daily_life_batch10_20261113": {
     "record_id": "UI-WORLD-LORE-DAILY-LIFE-BATCH10-20261113",
@@ -943,5 +949,45 @@
     "date_local": "2026-11-13",
     "display_number": 4,
     "name": "清晰易用"
+  },
+  "settings_new_style_comparison_20261114": {
+    "record_id": "UI-SETTINGS-NEWSTYLE-COMPARISON-20261114",
+    "date_local": "2026-11-14",
+    "source_commit": "7615fc61fd66d84929f0569ff9429a46f1344b7e",
+    "record": "worklines/ui/candidates/UI-SETTINGS-NEWSTYLE/v1/comparison.json",
+    "scope": "new_style_settings_full_page_visual_exploration",
+    "actual_new_candidates": 3,
+    "approval": "pending_user_review",
+    "home_baseline": "UI-HOME-NEWSTYLE-v6-4",
+    "legacy_setting_approval_preserved": "S1-v3.2",
+    "content": "设置、返回、三开关及开启/开启/关闭、模式收起态、现有揭棋、完整模式说明、查看基础开局、恢复默认",
+    "actual_validation": {
+      "dimensions_and_sha256_checked": true,
+      "all_three_dimensions": [
+        1003,
+        1569
+      ],
+      "requested_reference_dimensions": [
+        982,
+        1602
+      ],
+      "note": "生成实际尺寸为1003×1569，未裁剪/拉伸成指定尺寸；用于视觉比较，不声称生产适配。",
+      "text_visual_review": true,
+      "exact_shared_toggle_geometry": "not_measured_or_production_componentized",
+      "motion": "not_run",
+      "touch": "not_run",
+      "browser_or_android": "not_run",
+      "game_code_changed": false
+    },
+    "image_persistence": {
+      "generated_images_platform_autosave": "handled_by_platform_at_turn_commit",
+      "github_png_uploaded": false,
+      "github_contains": "prompts, exact image identities, source/approval checks and scoped current status",
+      "editable_layered_source_created": false
+    },
+    "game_code_changed": false,
+    "receiver_read": "UNKNOWN",
+    "receiver_adopted": "UNKNOWN",
+    "next_action": "查看本轮三张完整新风格设置页：1舒展横排、2居中题字、3紧凑分组，接收用户具体选择或组合反馈；未选择前不更新设置页批准指针，不自动再生成。首页v6-4继续作为已选视觉基准，旧S1-v3.2及B1—B9批准/B10待审保留。"
   }
 }

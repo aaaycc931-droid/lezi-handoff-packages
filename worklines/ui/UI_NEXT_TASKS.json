@@ -3,12 +3,12 @@
   "tasks": [
     {
       "id": "UI-STYLE-001",
-      "status": "homepage_visual_selection_completed",
-      "work": "首页第四张已选定，后续按此视觉基准接续具体页面",
-      "current_item": "UI-HOME-NEWSTYLE-v6-4",
-      "deliverable": "已选定的首页视觉方案第4张「清晰易用」",
-      "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json",
-      "acceptance": "本轮选图已完成，不再重问；下一页先核具体既有内容，保持当前已确认视觉要求。"
+      "status": "settings_variants_pending_user_review",
+      "work": "新风格设置页三版对照，沿用已选第4张首页画风",
+      "current_item": "UI-SETTINGS-NEWSTYLE-v1-comparison",
+      "deliverable": "1舒展横排、2居中题字、3紧凑分组三张完整设置页",
+      "record": "worklines/ui/candidates/UI-SETTINGS-NEWSTYLE/v1/comparison.json",
+      "acceptance": "接收具体选择或组合反馈；三版均待审，首页v6-4已选结论及旧S1-v3.2批准保留。"
     },
     {
       "id": "UI-001",
@@ -79,14 +79,27 @@
   "first_task": "UI-STYLE-001",
   "independent_work_can_continue_when_shared_interface_blocked": true,
   "planned_tasks_are_not_completed_designs": true,
-  "snapshot_date": "2026-11-13",
+  "snapshot_date": "2026-11-14",
   "paused_by_user": false,
-  "resume_item": "UI-HOME-NEWSTYLE-v6-4",
+  "resume_item": "UI-SETTINGS-NEWSTYLE-v1-comparison",
   "source_handoff_date": "2026-10-11",
   "long_term_rule": "rules/ui-fidelity-editing-policy.md",
   "handoff_requested": true,
   "automatic_resume_scheduled": false,
   "next_queue": [
+    {
+      "item": "UI-SETTINGS-NEWSTYLE-v1-comparison",
+      "state": "完整新风格设置页三版对照",
+      "status": "candidate_created_pending_user_review",
+      "record": "worklines/ui/candidates/UI-SETTINGS-NEWSTYLE/v1/comparison.json",
+      "versions": [
+        "UI-SETTINGS-NEWSTYLE-v1-1",
+        "UI-SETTINGS-NEWSTYLE-v1-2",
+        "UI-SETTINGS-NEWSTYLE-v1-3"
+      ],
+      "style_baseline": "UI-HOME-NEWSTYLE-v6-4",
+      "active_for_current_dialogue": true
+    },
     {
       "item": "UI-HOME-NEWSTYLE-v6-4",
       "state": "当前首页视觉方案，第4张「清晰易用」",
@@ -250,11 +263,17 @@
     "correction_record": "UI-NEW-STYLE-ROUTE-CORRECTION-20261113"
   },
   "active_ui_image_task": {
-    "id": "UI-HOME-NEWSTYLE-v6-4",
-    "status": "user_selected_current_homepage_visual_baseline",
-    "record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/selection.json",
-    "comparison_record": "worklines/ui/candidates/UI-HOME-NEWSTYLE/v6/comparison.json",
-    "next_action": "首页本轮已选定第4张UI-HOME-NEWSTYLE-v6-4，后续视觉工作以它为当前首页基准；用户要求继续时，先核下一页的具体既有UI内容再接续，不重问本轮选择，不自动生成首页替代稿。"
+    "id": "UI-SETTINGS-NEWSTYLE-v1-comparison",
+    "status": "three_candidates_generated_pending_user_review",
+    "record": "worklines/ui/candidates/UI-SETTINGS-NEWSTYLE/v1/comparison.json",
+    "page": "settings",
+    "candidate_versions": [
+      "UI-SETTINGS-NEWSTYLE-v1-1",
+      "UI-SETTINGS-NEWSTYLE-v1-2",
+      "UI-SETTINGS-NEWSTYLE-v1-3"
+    ],
+    "style_baseline": "UI-HOME-NEWSTYLE-v6-4",
+    "next_action": "查看本轮三张完整新风格设置页：1舒展横排、2居中题字、3紧凑分组，接收用户具体选择或组合反馈；未选择前不更新设置页批准指针，不自动再生成。首页v6-4继续作为已选视觉基准，旧S1-v3.2及B1—B9批准/B10待审保留。"
   },
   "image_review_workflow_preference": {
     "record_id": "UI-HOME-MULTI-VARIANT-PREFERENCE-20261113",
