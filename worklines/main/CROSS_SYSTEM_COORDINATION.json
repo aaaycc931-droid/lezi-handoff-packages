@@ -44,6 +44,21 @@
         "latest_source_commit": "b90b48a61d82ac7d1e474f90a0be418d78ccb15c",
         "source_version_change": "no instruction-body change;session closeout appended in live source",
         "recipient_receipt_observation": "During 2026-11-14 closeout, existing receiving entry and handoff section remained readable with no new receipt pointer there;receiver-wide read/adoption not inferred."
+      },
+      {
+        "id": "XFLOW-INTERRUPTION-RECOVERY-20261114",
+        "version": "2026-11-14.RECOVERY-1",
+        "target": "personal_system_mainline",
+        "source_commit": "35ce4a5760e6e387d11f26d46097d6f2a564c3d1",
+        "source_path": "docs/WORKFLOW.md",
+        "source_section": "对话中断后的恢复",
+        "sender_record": "worklines/main/CROSS_SYSTEM_COORDINATION.json#/workflow_maintenance/interruption_recovery",
+        "scope": "reuse existing interrupted-continuation checks and branch/PR discovery; local ownership remains authoritative",
+        "recipient_read": "UNKNOWN",
+        "recipient_adopted": "UNKNOWN",
+        "recipient_route": "own fixed entry -> existing cross-system intake;receiver records its actual receipt",
+        "background_wakeup": false,
+        "frontend_installation_verified": false
       }
     ]
   },
@@ -210,7 +225,41 @@
       "engineering_active_session_changed": false,
       "engineering_next_action_changed": false,
       "publication_readback": {
-        "status": "pending"
+        "status": "published_and_exactly_read_back",
+        "commit": "35ce4a5760e6e387d11f26d46097d6f2a564c3d1",
+        "observed_at_utc": "2026-11-14 02:35:40 UTC",
+        "files": [
+          {
+            "path": "docs/WORKFLOW.md",
+            "sha": "ff114f8becec070ba9453f3522ddd762998bac41",
+            "exact": true
+          },
+          {
+            "path": "docs/project-instructions/main.txt",
+            "sha": "58197bca33ad65e0c26acde14d5dec746d7ec6b5",
+            "exact": true
+          },
+          {
+            "path": "docs/COORDINATION_SETUP.md",
+            "sha": "85aadcd96f445a4d45787ab0094b640067101228",
+            "exact": true
+          },
+          {
+            "path": "worklines/main/PROJECT_WORK_AGREEMENT.md",
+            "sha": "8fbe9f54f28842cc1dc0370d858058bf25381e26",
+            "exact": true
+          },
+          {
+            "path": "worklines/main/START_HERE.txt",
+            "sha": "b55ecb01e650c2a63f0a190e0de708b40c063ecd",
+            "exact": true
+          },
+          {
+            "path": "worklines/main/CROSS_SYSTEM_COORDINATION.json",
+            "sha": "13e9e237a738d6c5aca345b369eeeb59e0a0f8d8",
+            "exact": true
+          }
+        ]
       },
       "next_observation": "Next real continuation verifies artifact discovery and lawful ownership; no synthetic success claim."
     }
