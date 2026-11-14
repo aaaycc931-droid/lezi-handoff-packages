@@ -1,0 +1,85 @@
+{
+  "schema": "lezi.hero_pilot_02.recovery_stage.v1",
+  "work_id": "EXP-HERO-002",
+  "date_local": "2026-11-14",
+  "stage_id": "EXP-HERO-002-RECOVERY-R2",
+  "status": "PREPARATION_SAVED_ENGINE_PUBLICATION_BLOCKED_BY_TRANSPORT",
+  "authority": "TASK_FROM_USER.json and owner-requested continuation of the interrupted publication",
+  "source_handoff_commit": "6053f61f5e95f75927de50bc8828cfe877a64184",
+  "claim_published_and_read_back": "dac1dd48fa63031a339bffd6f010bde423f9fee1",
+  "engine": {
+    "repository": "aaaycc931-droid/jieqi-engine",
+    "branch": "codex/autonomous-hero-02-20261114",
+    "observed_head": "71145df45ad17215a3731e53150b6728e079e375",
+    "expected_base": "71145df45ad17215a3731e53150b6728e079e375",
+    "published_code": false,
+    "draft_pr": null,
+    "associated_pr_query": "No PR found for this exact branch in the all-state query; no new PR created."
+  },
+  "original_recovery": {
+    "original_package_bytes": 12722717,
+    "original_package_sha256": "2ace4d651b35e0e6b8f8f2923632c07e8ead800c805e66e72ba7dad2d7d89ea5",
+    "all_original_files_size_sha256_git_blob_verified": 54,
+    "originals_modified": false,
+    "original_delta_files": 36,
+    "original_executable_source_bindings_verified": 16,
+    "original_evidence_bindings_verified": 4,
+    "business_tests_rerun": false,
+    "art_regenerated_or_reencoded": false
+  },
+  "prepared_payload": {
+    "filename": "cen-ying-publication-ready-20261114.zip",
+    "bytes": 5394577,
+    "sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
+    "zip_members": 44,
+    "engine_files": 38,
+    "publication_manifest_sha256": "46905b1e98dc3538f27f4ec271f668c13de4c7b9ca0932a04380dd200b5b4f16",
+    "owner_held_artifact_saved": true,
+    "saved_artifact_downloaded_and_byte_compared": true,
+    "public_repository_asset": false,
+    "original_files_byte_identical": 33,
+    "metadata_only_changed_original_files": ["art/hero-pilot-02/PROMPTS.json", "art/hero-pilot-02/ASSET_MANIFEST.json", "review/hero-pilot-02/VALIDATION.json"],
+    "metadata_changes": "Six original execution-location fields removed from public copies; asset-manifest hash reference updated and original identity retained. Prompt text, code, image bytes and original evidence files are unchanged.",
+    "new_candidate_documentation": ["docs/hero-pilot-02/AUTHORSHIP.json", "review/hero-pilot-02/RECOVERY_PUBLICATION.json"],
+    "private_source_locations_or_account_identifiers_published": false
+  },
+  "new_preparation_validation": {
+    "all_38_payload_file_hashes_and_zip_crc": "PASS",
+    "all_16_source_and_4_evidence_bindings_after_metadata_changes": "PASS",
+    "selected_masters_and_runtime_exports_byte_identical": 5,
+    "publication_helper_offline_tests": {"passed": 6, "failed": 0, "api": "fake API only; not live GitHub"},
+    "helper_controls": ["changed payload rejected", "changed initial branch rejected", "concurrent branch update stops without force", "remote-byte readback logic", "repeat run does not duplicate writes or PR", "uncertain successful ref update is detected before retry"],
+    "live_helper_execution": false,
+    "game_runtime_reexecution": false
+  },
+  "historical_evidence": {
+    "full_regression": {"passed": 1044, "total": 1044},
+    "dom_cases": 15,
+    "same_process_http_resources": 5,
+    "playout_games": 20,
+    "interpretation": "Preserved original results with matching source/evidence hashes; not new runs, independent QA, real-browser acceptance or global balance."
+  },
+  "authorship": {
+    "original_designer_model": null,
+    "original_designer_model_status": "UNKNOWN_PENDING_ORIGINAL_PLATFORM_EVIDENCE",
+    "recovery_contributor_label": "GPT-6 Astra Pro",
+    "label_evidence": "assistant self-report only; not independently verified platform telemetry",
+    "contribution": "original recovery verification, privacy-minimized metadata and publication preparation",
+    "original_creator_credit_claimed": false,
+    "frontend_label_installed": false
+  },
+  "blocker": {
+    "kind": "CURRENT_RUNTIME_TRANSPORT_CAPABILITY",
+    "detail": "The current runtime cannot resolve/connect directly to GitHub, has no authenticated GitHub CLI, and the exposed connector actions do not accept a local-file bulk-upload input. The text GitHub checkpoint path works, but the multi-megabyte original image/code payload was not transferred.",
+    "permission_missing_claimed": false,
+    "new_publication_review_denial": false,
+    "credential_requested_or_embedded": false,
+    "retry_same_environment_without_change": "Do not repeat the failed route; use an actually available authorized byte-transfer environment."
+  },
+  "next_action": "Restore current workline authority, retrieve the exact prepared payload through its owner-held artifact route, verify its hash and latest dedicated HEAD, publish the 38 candidate files with non-forced concurrency protection, read back, create/reuse the draft PR, then update this workline's return with actual commit and PR. Do not redo original design, art or unchanged game tests.",
+  "remaining_acceptance": ["real browser and touch", "human or stronger-policy balance", "independent QA", "full typecheck"],
+  "main_received": "UNKNOWN",
+  "other_worklines_modified": false,
+  "merge_deployment_APK_mode_opening": "NOT_PERFORMED_OUT_OF_SCOPE",
+  "stage_retrospective": "Recovery succeeded without the interrupted executor's final reply, but transport capability differs across runtimes. Artifact preservation, verified preparation, remote engineering publication, receipt and acceptance remain separate. This one recovery does not prove reliable future proactive checkpointing."
+}
