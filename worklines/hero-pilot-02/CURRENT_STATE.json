@@ -1,18 +1,43 @@
 {
   "schema": "lezi.hero_pilot_02.state.v1",
-  "updated_on": "2026-11-14",
+  "updated_on": "2026-11-15",
   "work_id": "EXP-HERO-002",
   "hero": "岑缨",
-  "status": "PREPARATION_SAVED_ENGINE_PUBLICATION_BLOCKED_BY_TRANSPORT",
+  "status": "RECOVERY_PUBLICATION_IN_PROGRESS",
   "authority": "TASK_FROM_USER.json",
-  "engine": {"branch": "codex/autonomous-hero-02-20261114", "base": "71145df45ad17215a3731e53150b6728e079e375", "observed_head": "71145df45ad17215a3731e53150b6728e079e375", "published_code": false, "draft_pr": null},
-  "progress": {"original_engine_candidate_recovered": true, "original_web_and_art_recovered": true, "original_source_and_evidence_bindings_verified": true, "publication_payload_saved_and_read_back": true, "full_validation": false, "independent_QA": false, "human_balance": false, "real_browser_and_touch": false},
-  "historical_implementation_checkpoint": {"lore_verified": true, "design_v1": true, "core_vertical_slice_local": true, "web_in_progress": true, "art_in_progress": true, "full_validation": false, "independent_QA": false, "human_balance": false, "note": "Original early checkpoint only; do not use these old in-progress flags to remake recovered work."},
-  "next_action": "按RECOVERY_PUBLICATION.json取回已保存的发布包；在具备实际字节上传能力的授权环境核最新HEAD后完成工程发布、逐文件读回和draft PR，再回传。无需重新设计、重画或重复未变的原测试。",
+  "engine": {
+    "branch": "codex/autonomous-hero-02-20261114",
+    "base": "71145df45ad17215a3731e53150b6728e079e375",
+    "observed_head": "71145df45ad17215a3731e53150b6728e079e375",
+    "published_code": false,
+    "draft_pr": null
+  },
+  "progress": {
+    "original_engine_candidate_recovered": true,
+    "original_web_and_art_recovered": true,
+    "original_source_and_evidence_bindings_verified": true,
+    "publication_payload_saved_and_read_back": true,
+    "full_validation": false,
+    "independent_QA": false,
+    "human_balance": false,
+    "real_browser_and_touch": false
+  },
+  "historical_implementation_checkpoint": {
+    "lore_verified": true,
+    "design_v1": true,
+    "core_vertical_slice_local": true,
+    "web_in_progress": true,
+    "art_in_progress": true,
+    "full_validation": false,
+    "independent_QA": false,
+    "human_balance": false,
+    "note": "Original early checkpoint only; do not use these old in-progress flags to remake recovered work."
+  },
+  "next_action": "本执行者按已核38文件清单通过已授权GitHub连接发布到原专属分支，逐文件读回后创建或复用draft PR，再更新本线回传；保留原验收缺口。",
   "main_receipt": "UNKNOWN",
   "other_worklines": "UNMODIFIED",
   "recovery_publication": {
-    "status": "PREPARATION_SAVED_UPLOAD_CAPABILITY_REQUIRED",
+    "status": "EXISTING_PAYLOAD_RECOVERED_PUBLICATION_IN_PROGRESS",
     "work_id": "EXP-HERO-002",
     "scope": "Preserved original hero candidate publication and this workline's own return only",
     "source_handoff_commit": "7b16e8def30989e790e5a7c7720c975e82ee88df",
@@ -25,6 +50,27 @@
     "art_regenerated": false,
     "publication_verified": false,
     "main_received": "UNKNOWN",
-    "continuation": {"id": "EXP-HERO-002-RECOVERY-R2", "status": "STAGE_SAVED_AWAITING_UPLOAD_CAPABILITY", "active_execution": false, "claim_published_and_read_back": "dac1dd48fa63031a339bffd6f010bde423f9fee1", "other_workline_ownership_changed": false}
+    "continuation": {
+      "id": "EXP-HERO-002-RECOVERY-R3",
+      "status": "CLAIMED_FOR_EXISTING_PAYLOAD_PUBLICATION",
+      "active_execution": true,
+      "date_local": "2026-11-15",
+      "owner": "current_owner_requested_publication_executor",
+      "authority": "Current explicit owner request to this conversation to complete the existing Cen Ying publication; TASK_FROM_USER.json inherited dedicated-branch and draft-PR scope.",
+      "scope": "Publish the verified existing 38-file candidate, read back, create or reuse its draft PR, and update only this workline's return.",
+      "prior_execution_stopped_evidence": "CURRENT_STATE.recovery_publication.continuation.active_execution=false and SESSION_CLOSEOUT.active_recovery_execution=false at c64d65c727dde47eb4c4f90387d19b6ce8fbf265",
+      "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
+      "prepared_payload_retrieved_and_hash_verified": true,
+      "engine_head_observed": "71145df45ad17215a3731e53150b6728e079e375",
+      "other_workline_ownership_changed": false,
+      "mainline_appointment": false
+    },
+    "previous_continuation": {
+      "id": "EXP-HERO-002-RECOVERY-R2",
+      "status": "STAGE_SAVED_AWAITING_UPLOAD_CAPABILITY",
+      "active_execution": false,
+      "claim_published_and_read_back": "dac1dd48fa63031a339bffd6f010bde423f9fee1",
+      "other_workline_ownership_changed": false
+    }
   }
 }
