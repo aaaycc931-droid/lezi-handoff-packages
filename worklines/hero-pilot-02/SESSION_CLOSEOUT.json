@@ -2,9 +2,9 @@
   "schema": "lezi.hero_pilot_02.checkpoint.v1",
   "date_local": "2026-11-15",
   "dialogue_closed": false,
-  "status": "EXISTING_PAYLOAD_PUBLICATION_RESUMED",
+  "status": "OWNER_DIRECTED_PUBLICATION_AND_ACCEPTANCE_RESUMED",
   "work_id": "EXP-HERO-002",
-  "resume": "本轮已由用户明确委托当前对话接续原候选发布。先核CURRENT_STATE中R3执行范围、专属分支实际HEAD与最近成功对象；发布前先读回本轮认领。未获得工程发布凭据前不预填成功。",
+  "resume": "本轮依据用户最新明确指令接续EXP-HERO-002；当前有效责任见CURRENT_STATE的R4。保留R3已保存成果及未知后台/未回传状态，遇较新发布先核差分复用，发布前核本轮认领与工程HEAD。",
   "latest_published_engine_commit": null,
   "observed_engine_base": "71145df45ad17215a3731e53150b6728e079e375",
   "prepared_payload": {
@@ -28,5 +28,12 @@
     "date_local": "2026-11-14",
     "status": "RECOVERY_STAGE_SAVED_TRANSPORT_BLOCKED",
     "active_recovery_execution": false
+  },
+  "previous_active_checkpoint": {
+    "source_commit": "60b8d2dbda6ebc7d3333d205d36528d065521ab0",
+    "status": "EXISTING_PAYLOAD_PUBLICATION_RESUMED",
+    "scope": "R3 saved checkpoint",
+    "actual_background_running_or_stopped": "UNKNOWN",
+    "successful_closeout_claimed": false
   }
 }
