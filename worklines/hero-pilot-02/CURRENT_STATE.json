@@ -3,7 +3,7 @@
   "updated_on": "2026-11-15",
   "work_id": "EXP-HERO-002",
   "hero": "岑缨",
-  "status": "OWNER_DELEGATED_REPOSITORY_UPLOAD_CLOSEOUT_IN_PROGRESS",
+  "status": "STAGED_UPLOAD_BATCH_1_IN_PROGRESS",
   "authority": "TASK_FROM_USER.json",
   "engine": {
     "branch": "codex/autonomous-hero-02-20261114",
@@ -33,7 +33,7 @@
     "human_balance": false,
     "note": "Original early checkpoint only; do not use these old in-progress flags to remake recovered work."
   },
-  "next_action": "本轮继续完成已有岑缨全部可公开产物上传：复用已存在Git对象，上传缺项，核原件及支持材料覆盖，非强制发布专属分支并逐项读回，创建或复用draft PR，更新本线真实收束。",
+  "next_action": "本轮只完成一个可核验上传批次并收束；核实际对象、发布专属分支、读回，记录余项供下轮续传。",
   "main_receipt": "UNKNOWN",
   "other_worklines": "UNMODIFIED",
   "recovery_publication": {
@@ -51,46 +51,36 @@
     "publication_verified": false,
     "main_received": "UNKNOWN",
     "continuation": {
-      "id": "EXP-HERO-002-RECOVERY-R7",
-      "status": "OWNER_DELEGATED_UPLOAD_CLOSEOUT_IN_PROGRESS",
+      "id": "EXP-HERO-002-RECOVERY-R8",
+      "status": "OWNER_DELEGATED_STAGED_UPLOAD_BATCH_1_IN_PROGRESS",
       "active_execution": true,
       "date_local": "2026-11-15",
-      "owner": "temporary_cen_ying_upload_executor_r7_20261115",
+      "owner": "temporary_cen_ying_staged_upload_executor_r8_20261115",
       "owner_instruction": {
         "kind": "current_visible_user_message",
-        "verbatim": "现在需要你暂时代为推进并收束岑缨英雄的全部内容上传仓库工作",
-        "date_local": "2026-11-15"
+        "verbatim": "现在需要你暂时代为推进并收束岑缨英雄的全部内容上传仓库工作，当前对话上下文长度极短。本次上传采用分阶段上传方式，不要求一个对话完成全部上传工作"
       },
-      "authority": "Current explicit temporary delegation and TASK_FROM_USER.json; existing EXP-HERO-002 only.",
-      "scope": "Publish existing verified hero code, selected art masters and exports, documentation and validation evidence to the dedicated engine branch; create/reuse a draft PR, read back and close out this upload stage in this workline.",
+      "authority": "Current explicit temporary delegation plus TASK_FROM_USER.json; existing EXP-HERO-002 only.",
+      "scope": "One verified publication batch of existing candidate and own handoff closeout. Remaining batches may continue in later conversations.",
       "prior_execution": {
-        "id": "EXP-HERO-002-RECOVERY-R6",
-        "source_commit": "8acb5d5de6b49af91065e8d1e3e1020bf0bae12e",
-        "execution_responsibility_superseded_by": "current explicit owner temporary delegation in this conversation",
+        "id": "EXP-HERO-002-RECOVERY-R7",
+        "source_commit": "1ad871e6fb9f8e59ffde02053740d994247d92d8",
+        "execution_responsibility_superseded_by": "current explicit owner temporary delegation",
         "actual_background_running_or_stopped": "UNKNOWN",
-        "unreturned_artifacts": "Preserve and reconcile newer same-hero outputs; no prior successful closeout claimed."
+        "unreturned_artifacts": "Preserve and reconcile newer same-hero outputs."
       },
-      "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
       "engine_head_observed": "71145df45ad17215a3731e53150b6728e079e375",
       "same_branch_PR_observed": null,
-      "publication_verified": false,
-      "mainline_appointment": false,
-      "other_workline_ownership_changed": false,
+      "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
       "protections": [
         "latest head plus expected_sha and force=false",
         "preserve newer artifacts and unrelated paths",
         "no merge,deployment,APK,mode or rule expansion",
         "no changes to Siheng,PR23,independent UI,scoring ledger or NET"
       ],
-      "prepared_payload_retrieved_and_hash_verified": true,
-      "original_recovery_payload_retrieved_and_hash_verified": true,
-      "local_candidate_verification": {
-        "prepared_files": 38,
-        "original_files": 54,
-        "supplement_files": 8,
-        "sha256_and_git_blob": "PASS",
-        "source": "Recovered unchanged existing package files; read-only independent checks."
-      }
+      "publication_verified": false,
+      "mainline_appointment": false,
+      "other_workline_ownership_changed": false
     },
     "previous_continuation": {
       "id": "EXP-HERO-002-RECOVERY-R3",
@@ -222,6 +212,49 @@
         "prepared_payload_retrieved_and_hash_verified": true,
         "original_recovery_payload_retrieved_and_hash_verified": true,
         "source_commit": "8acb5d5de6b49af91065e8d1e3e1020bf0bae12e"
+      },
+      {
+        "id": "EXP-HERO-002-RECOVERY-R7",
+        "status": "OWNER_DELEGATED_UPLOAD_CLOSEOUT_IN_PROGRESS",
+        "active_execution": true,
+        "date_local": "2026-11-15",
+        "owner": "temporary_cen_ying_upload_executor_r7_20261115",
+        "owner_instruction": {
+          "kind": "current_visible_user_message",
+          "verbatim": "现在需要你暂时代为推进并收束岑缨英雄的全部内容上传仓库工作",
+          "date_local": "2026-11-15"
+        },
+        "authority": "Current explicit temporary delegation and TASK_FROM_USER.json; existing EXP-HERO-002 only.",
+        "scope": "Publish existing verified hero code, selected art masters and exports, documentation and validation evidence to the dedicated engine branch; create/reuse a draft PR, read back and close out this upload stage in this workline.",
+        "prior_execution": {
+          "id": "EXP-HERO-002-RECOVERY-R6",
+          "source_commit": "8acb5d5de6b49af91065e8d1e3e1020bf0bae12e",
+          "execution_responsibility_superseded_by": "current explicit owner temporary delegation in this conversation",
+          "actual_background_running_or_stopped": "UNKNOWN",
+          "unreturned_artifacts": "Preserve and reconcile newer same-hero outputs; no prior successful closeout claimed."
+        },
+        "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
+        "engine_head_observed": "71145df45ad17215a3731e53150b6728e079e375",
+        "same_branch_PR_observed": null,
+        "publication_verified": false,
+        "mainline_appointment": false,
+        "other_workline_ownership_changed": false,
+        "protections": [
+          "latest head plus expected_sha and force=false",
+          "preserve newer artifacts and unrelated paths",
+          "no merge,deployment,APK,mode or rule expansion",
+          "no changes to Siheng,PR23,independent UI,scoring ledger or NET"
+        ],
+        "prepared_payload_retrieved_and_hash_verified": true,
+        "original_recovery_payload_retrieved_and_hash_verified": true,
+        "local_candidate_verification": {
+          "prepared_files": 38,
+          "original_files": 54,
+          "supplement_files": 8,
+          "sha256_and_git_blob": "PASS",
+          "source": "Recovered unchanged existing package files; read-only independent checks."
+        },
+        "source_commit": "1ad871e6fb9f8e59ffde02053740d994247d92d8"
       }
     ]
   }
