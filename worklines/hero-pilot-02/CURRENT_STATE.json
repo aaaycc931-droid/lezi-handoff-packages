@@ -3,7 +3,7 @@
   "updated_on": "2026-11-15",
   "work_id": "EXP-HERO-002",
   "hero": "岑缨",
-  "status": "OWNER_DIRECTED_PUBLICATION_AND_ACCEPTANCE_IN_PROGRESS",
+  "status": "OWNER_DELEGATED_REPOSITORY_UPLOAD_CLOSEOUT_IN_PROGRESS",
   "authority": "TASK_FROM_USER.json",
   "engine": {
     "branch": "codex/autonomous-hero-02-20261114",
@@ -33,7 +33,7 @@
     "human_balance": false,
     "note": "Original early checkpoint only; do not use these old in-progress flags to remake recovered work."
   },
-  "next_action": "当前用户指派本对话推进并收束岑缨：先发布已保全38文件候选并读回，创建或复用draft PR；只补本英雄可完成的验收及必要修复，按真实结果回传与阶段收束。",
+  "next_action": "本轮临时代行岑缨上传收束：发布已有候选、核全量原件覆盖与可公开日志、逐项远端读回、创建或复用draft PR，再更新本线回传和真实未验项。",
   "main_receipt": "UNKNOWN",
   "other_worklines": "UNMODIFIED",
   "recovery_publication": {
@@ -51,40 +51,36 @@
     "publication_verified": false,
     "main_received": "UNKNOWN",
     "continuation": {
-      "id": "EXP-HERO-002-RECOVERY-R4",
-      "status": "OWNER_DIRECTED_PUBLICATION_AND_BOUNDED_ACCEPTANCE_CLOSEOUT",
+      "id": "EXP-HERO-002-RECOVERY-R5",
+      "status": "OWNER_DELEGATED_UPLOAD_CLOSEOUT_IN_PROGRESS",
       "active_execution": true,
       "date_local": "2026-11-15",
-      "owner": "current_cross_system_dialogue_owner_directed_hero_executor",
+      "owner": "temporarily_delegated_cen_ying_publication_executor",
       "owner_instruction": {
         "kind": "current_visible_user_message",
-        "verbatim": "现在需要推进并收束这个英雄的工作",
-        "date_local": "2026-11-15",
-        "scope": "Continue and close out this existing Cen Ying hero work within its original task boundaries."
+        "verbatim": "现在需要你暂时代为推进并收束岑缨英雄的全部内容上传仓库工作",
+        "date_local": "2026-11-15"
       },
-      "authority": "Current explicit owner direction plus TASK_FROM_USER.json; same EXP-HERO-002, dedicated engine branch and own handoff prefix only.",
-      "scope": "Publish the verified existing candidate; complete feasible same-hero acceptance and necessary fixes; read back, create or reuse draft PR, and close out this execution stage with remaining validation stated.",
+      "authority": "Current explicit temporary delegation and TASK_FROM_USER.json; existing EXP-HERO-002 only.",
+      "scope": "Publish existing verified hero code, selected art masters and exports, documentation and validation evidence to the dedicated engine branch; create/reuse a draft PR, read back and close out this upload stage in this workline.",
       "prior_execution": {
-        "id": "EXP-HERO-002-RECOVERY-R3",
-        "source_commit": "60b8d2dbda6ebc7d3333d205d36528d065521ab0",
-        "superseded_execution_responsibility_by": "current explicit owner instruction",
+        "id": "EXP-HERO-002-RECOVERY-R4",
+        "source_commit": "a1802befc439989d350f6ef9aa3b1fa5b1177a8f",
+        "execution_responsibility_superseded_by": "current explicit owner temporary delegation",
         "actual_background_running_or_stopped": "UNKNOWN",
-        "unreturned_artifacts": "UNKNOWN; preserve and reconcile any newly observed work",
-        "successful_old_closeout_claimed": false
+        "unreturned_artifacts": "Preserve and reconcile any newer same-hero outputs; no old successful closeout claimed."
       },
       "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
-      "prepared_payload_bytes": 5394577,
-      "prepared_payload_retrieved_and_hash_verified": true,
       "engine_head_observed": "71145df45ad17215a3731e53150b6728e079e375",
       "same_branch_PR_observed": null,
       "publication_verified": false,
       "mainline_appointment": false,
       "other_workline_ownership_changed": false,
       "protections": [
-        "preserve any newer same-hero publication and reconcile before writing",
-        "no force updates",
-        "no merge,deployment,APK or other mode opening",
-        "no change to Siheng,PR23,UI,scoring ledger or NET"
+        "latest head plus expected_sha and force=false",
+        "preserve newer artifacts and unrelated paths",
+        "no merge,deployment,APK,mode or rule expansion",
+        "no changes to Siheng,PR23,independent UI,scoring ledger or NET"
       ]
     },
     "previous_continuation": {
@@ -109,6 +105,44 @@
         "active_execution": false,
         "claim_published_and_read_back": "dac1dd48fa63031a339bffd6f010bde423f9fee1",
         "other_workline_ownership_changed": false
+      },
+      {
+        "id": "EXP-HERO-002-RECOVERY-R4",
+        "status": "OWNER_DIRECTED_PUBLICATION_AND_BOUNDED_ACCEPTANCE_CLOSEOUT",
+        "active_execution": true,
+        "date_local": "2026-11-15",
+        "owner": "current_cross_system_dialogue_owner_directed_hero_executor",
+        "owner_instruction": {
+          "kind": "current_visible_user_message",
+          "verbatim": "现在需要推进并收束这个英雄的工作",
+          "date_local": "2026-11-15",
+          "scope": "Continue and close out this existing Cen Ying hero work within its original task boundaries."
+        },
+        "authority": "Current explicit owner direction plus TASK_FROM_USER.json; same EXP-HERO-002, dedicated engine branch and own handoff prefix only.",
+        "scope": "Publish the verified existing candidate; complete feasible same-hero acceptance and necessary fixes; read back, create or reuse draft PR, and close out this execution stage with remaining validation stated.",
+        "prior_execution": {
+          "id": "EXP-HERO-002-RECOVERY-R3",
+          "source_commit": "60b8d2dbda6ebc7d3333d205d36528d065521ab0",
+          "superseded_execution_responsibility_by": "current explicit owner instruction",
+          "actual_background_running_or_stopped": "UNKNOWN",
+          "unreturned_artifacts": "UNKNOWN; preserve and reconcile any newly observed work",
+          "successful_old_closeout_claimed": false
+        },
+        "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
+        "prepared_payload_bytes": 5394577,
+        "prepared_payload_retrieved_and_hash_verified": true,
+        "engine_head_observed": "71145df45ad17215a3731e53150b6728e079e375",
+        "same_branch_PR_observed": null,
+        "publication_verified": false,
+        "mainline_appointment": false,
+        "other_workline_ownership_changed": false,
+        "protections": [
+          "preserve any newer same-hero publication and reconcile before writing",
+          "no force updates",
+          "no merge,deployment,APK or other mode opening",
+          "no change to Siheng,PR23,UI,scoring ledger or NET"
+        ],
+        "source_commit": "a1802befc439989d350f6ef9aa3b1fa5b1177a8f"
       }
     ]
   }
