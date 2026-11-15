@@ -58,27 +58,35 @@
     "publication_verified": true,
     "main_received": "UNKNOWN",
     "continuation": {
-      "id": "EXP-HERO-002-RECOVERY-R9",
-      "status": "OWNER_DELEGATED_STAGED_UPLOAD_BATCH_2_IN_PROGRESS",
+      "id": "EXP-HERO-002-RECOVERY-R10",
+      "status": "OWNER_DELEGATED_STAGED_UPLOAD_BATCH_2_RESUMED",
       "active_execution": true,
       "date_local": "2026-11-15",
-      "owner": "temporary_cen_ying_staged_upload_executor_r9_20261115",
+      "owner": "temporary_cen_ying_staged_upload_executor_r10_20261115",
       "owner_instruction": {
         "kind": "current_visible_user_message",
-        "verbatim": "现在需要你暂时代为推进并收束岑缨英雄的全部内容上传仓库工作，当前对话上下文长度极短。本次上传采用分阶段上传方式，不要求一个对话完成全部上传工作\n继续岑缨分阶段上传，接续下一批。"
+        "verbatim": "现在需要你暂时代为推进并收束岑缨英雄的全部内容上传仓库工作，当前对话上下文长度极短。本次上传采用分阶段上传方式，不要求一个对话完成全部上传工作\n继续岑缨分阶段上传，接续下一批。” 从固定接续入口恢复后，会核最新分支、复用PR #31并续传余项。"
       },
-      "authority": "Current explicit temporary delegation plus TASK_FROM_USER.json; existing EXP-HERO-002 only.",
-      "scope": "Batch 2: two original PNG masters and own upload/return records; reuse PR31.",
+      "authority": "Current explicit temporary continuation delegation plus TASK_FROM_USER.json; same EXP-HERO-002 scope.",
+      "scope": "Resume finite batch 2: two original PNG masters, exact readback and own upload/return records; reuse draft PR31.",
       "prior_execution": {
-        "id": "EXP-HERO-002-RECOVERY-R8",
-        "source_commit": "814cdfaf1b3ae0064b6ac0d8dcbd6227c5c9682c",
-        "recorded_active_execution": false,
+        "id": "EXP-HERO-002-RECOVERY-R9",
+        "source_commit": "c591546ec67e0f3b972fda20308d29bb61bd9a7b",
+        "recorded_active_execution": true,
+        "execution_responsibility_superseded_by": "current explicit owner temporary continuation delegation",
         "actual_background_running_or_stopped": "UNKNOWN",
-        "unreturned_artifacts": "Preserve and reconcile newer same-hero outputs."
+        "successful_old_closeout_claimed": false,
+        "unreturned_artifacts": "Preserve and reconcile any newer same-hero outputs; prior batch2 outcome checked before writing."
       },
       "engine_head_observed": "101a970020fa7130c1367a04f67fdbb03dff5d3a",
       "same_branch_PR_observed": 31,
       "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
+      "resume_evidence": {
+        "engine_branch_unchanged_from_batch1": true,
+        "expected_master_blobs_fetch": "Both exact expected blob IDs returned NOT_FOUND before this batch; no successful original master object is assumed.",
+        "local_38_file_hash_verification": "PASS",
+        "last_successful_engine_commit": "101a970020fa7130c1367a04f67fdbb03dff5d3a"
+      },
       "protections": [
         "latest head plus expected_sha and force=false",
         "preserve newer artifacts and unrelated paths",
@@ -301,6 +309,43 @@
           "full_publication_verified": false,
           "published_candidate_files": 36,
           "remaining_candidate_files": 2,
+          "report": "STAGED_UPLOAD.json"
+        }
+      },
+      {
+        "source_commit": "c591546ec67e0f3b972fda20308d29bb61bd9a7b",
+        "record": {
+          "id": "EXP-HERO-002-RECOVERY-R9",
+          "status": "OWNER_DELEGATED_STAGED_UPLOAD_BATCH_2_IN_PROGRESS",
+          "active_execution": true,
+          "date_local": "2026-11-15",
+          "owner": "temporary_cen_ying_staged_upload_executor_r9_20261115",
+          "owner_instruction": {
+            "kind": "current_visible_user_message",
+            "verbatim": "现在需要你暂时代为推进并收束岑缨英雄的全部内容上传仓库工作，当前对话上下文长度极短。本次上传采用分阶段上传方式，不要求一个对话完成全部上传工作\n继续岑缨分阶段上传，接续下一批。"
+          },
+          "authority": "Current explicit temporary delegation plus TASK_FROM_USER.json; existing EXP-HERO-002 only.",
+          "scope": "Batch 2: two original PNG masters and own upload/return records; reuse PR31.",
+          "prior_execution": {
+            "id": "EXP-HERO-002-RECOVERY-R8",
+            "source_commit": "814cdfaf1b3ae0064b6ac0d8dcbd6227c5c9682c",
+            "recorded_active_execution": false,
+            "actual_background_running_or_stopped": "UNKNOWN",
+            "unreturned_artifacts": "Preserve and reconcile newer same-hero outputs."
+          },
+          "engine_head_observed": "101a970020fa7130c1367a04f67fdbb03dff5d3a",
+          "same_branch_PR_observed": 31,
+          "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
+          "protections": [
+            "latest head plus expected_sha and force=false",
+            "preserve newer artifacts and unrelated paths",
+            "no merge,deployment,APK,mode or rule expansion",
+            "no changes to Siheng,PR23,independent UI,scoring ledger or NET"
+          ],
+          "publication_verified": false,
+          "full_publication_verified": false,
+          "mainline_appointment": false,
+          "other_workline_ownership_changed": false,
           "report": "STAGED_UPLOAD.json"
         }
       }
