@@ -1,33 +1,29 @@
-【2026-11-13 原工程已完整恢复｜发布受自动审核阻断】
-先读[本轮恢复与发布断点](ART_RESTORE_STATUS_20261113.md)。原七个实现文件、两张生成母版、四个WebP（145958 bytes）、原测试日志均已找回；56项Web、14项DOM、构建及4图HTTP检查复核通过。未重画、未重建、未重新编码。完整私有恢复包`siheng-art-recovery-20261113.zip`已持久保存。图片上传公开GitHub被自动审核拒绝，待明确披露授权；PR23仍是5ab688c，不能当作美术已发布。下方“接入/日志尚未恢复”仅为历史状态。后续先发布与读回，不重复恢复或已完成验证。
+# 自主英雄试点｜EXP-HERO-001｜司衡
 
-【2026-11-13 原图已恢复｜最新会话收束】
-先读[原图恢复与准确断点](ART_RECOVERY_CLOSEOUT_20261113.md)。用户已提供司衡头像与透明全身立绘，两张PNG及尺寸／透明信息已实核；不要重画。原对话报告完成7文件接入、4图约143 KiB导出及14项页面检查，但代码、导出与日志尚未恢复，不能当作已发布。PR23仍为5ab688c、draft且未合并。新会话优先恢复原工程成果，缺失部分再依据已有原图最小补建。下方原工程记录保留历史来源，最新美术状态以本段及新收束为准。
+## 最新接续｜2026-11-16｜两次额度中断已核查，原件保全，整批美术上传尚未完成
 
-【2026-11-13 执行者已完成换轨反馈修复】
-专属分支5ab688c已发布并逐一读回14个变更文件，原PR23已更新。真实双端显示、重复/失败与普通走子反馈已核：155项相关回归、10项DOM、3项王安全探针复跑及构建通过。见[VISUAL_REPAIR](VISUAL_REPAIR.md)与最新回传；下方为本轮派发来源，不代表修复仍未执行。下一可独立进行司衡美术，真实浏览器/真人强度/全面QA仍保留。
+先读 [CURRENT_STATE](CURRENT_STATE.json)、[本轮中断与保存记录](ART_UPLOAD_INTERRUPTION_20261116.md)、[SESSION_CLOSEOUT](SESSION_CLOSEOUT.json) 和 [RETURN_TO_MAIN](RETURN_TO_MAIN.json)。用户本轮提供两段因Work额度中断的旧对话，要求核查并先保全。用户已经明确批准全部上传更新，且明确指定将包内司衡原图、导出资产及配套工程提交到公开 jieqi-engine 的 PR23 专属分支。**旧记录的“等待图片公开授权”已被后续确认更新，不重复索要同范围批准。** 平台工具审核仍须遵守。
 
-【2026-11-13 主线已接收司衡候选｜直接修换轨反馈】
-先读TASK_FROM_MAIN.json#main_visual_repair_20261113及../main/reviews/hero-pilot/INTAKE_REPORT.md。主线子代理另行复跑34专项、3有界王安全探针、原4 DOM检查，并复现换轨真实端点(0,6)/(2,6)却把(0,0)标为上一手起终点。此为合成fixture上真实页面模块反馈错误，不是设计被否决。按既有单英雄自主设计/工程授权在自己的PR23分支做最小修复及实际DOM断言，不等用户逐项批准、主线结果协议或浏览器环境。保留尚未回传成果；若已修先查较新commit再核验，避免重做。修后仍可自主推进本英雄最终美术等独立事项，真实浏览器/真人强度/独立QA分别保留；不合并部署。实际新任务已读/执行由本线回执，不由主线预填。
+### 已找回和保全
 
-# 自主英雄试点｜EXP-HERO-001 固定入口
+- 原私有恢复包 `siheng-art-recovery-20261113.zip`，35,899,664字节，687个文件成员；本轮ZIP CRC通过，31项发布清单的大小、SHA-256及Git blob全部匹配。包内另有两张用户上传PNG原件，仍完整私有保存，与生成母版不冒称字节相同。
+- 7个原实现文件、两张生成母版、4个WebP、检查板、提示词和原/复核日志都在。未重画、未重编码、未重建；本轮没有重跑游戏测试。
+- 初核PR23仍为 `5ab688c96f4960aad70467e7e4c15c21dc55a2e1`。但远端有3个未形成整批美术提交的原对象；本轮直接复用并保全到隔离暂存目录。它们是 PROMPTS、素材README、64px WebP，不能说此前完全未上传，也不能认定31项已上传。
+- PR23保全提交 **`3df63e0c8d100fe040a32de4e0f8246c3b046b06`** 已发布且核验记录已读回，`review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json` 记录全部边界。保全子树 `082468bbcda7fb6496d60f4ca79ec1411414be3c` 与本地原件计算一致。只改review下暂存与检查点，不改现行游戏逻辑和运行界面。
+- 最新私有接续包 `siheng-upload-resume-20261116.zip` 与可公开续传包 `siheng-art-remaining-upload-20261116.zip` 已保存Library。前者保留来源定位、原清单、完整源快照清单、核查记录及续传包；前者不是公开上传包。原35.9MB恢复ZIP也不要整包公开。
 
-用户先试**一个**新英雄；本线在这一英雄范围代替用户担任设计决策者并完成工程。用户不逐项审批，游戏规范与合理强度要求和既有英雄一致。准确委托见[TASK_FROM_MAIN](TASK_FROM_MAIN.json)；如何理解用户目标与偏好见[DESIGNER_BRIEF](DESIGNER_BRIEF.md)。
+### 唯一上传下一步
 
-## 开始／继续
+可公开续传包解压后为 **29个平铺文件：28项待转移或再核对象＋1份索引**。另3项已固定保存，后续直接复用，不重复传输。现已明确查到头像母版与ART_ASSET_MANIFEST两个对象未存在；其余26项没有逐一证明远端有或无，不能说28项全都缺失。
 
-1. 核本库main、专属引擎分支、独立UI分支的最新HEAD；保护本线未回传成果，读[CURRENT_STATE](CURRENT_STATE.json)、[SESSION_CLOSEOUT](SESSION_CLOSEOUT.json)、[RETURN_TO_MAIN](RETURN_TO_MAIN.json)、[READ_RECEIPTS](READ_RECEIPTS.json)及最新任务。
-2. 读[项目说明](PROJECT_INSTRUCTIONS.txt)、设计准则和任务required_sources。已读未变源可按scope复用，涉及的关键原规则必须真正读取。最新正文/原确认优先于旧摘要。
-3. 代码仓库`aaaycc931-droid/jieqi-engine`，分支`codex/autonomous-hero-01-20261113`，基线PR22 `71145df45ad17215a3731e53150b6728e079e375`；入口初始化提交`7f47b740b01b9a1e6ef126fc9e2628682b603e6d`仅文档。查最新分支再接续，不重置到初始提交。
-4. 世界观只读`ui/restart-asof-20261104-1119`的当前来源，不读main旧UI副本替代。既有D属于H15，本新增世界暂称E，不占现有H编号。
-5. 先理解3个对标英雄和棋规→自主设计→尽早真实引擎实现/可玩→测试/对手反制/平衡迭代→完整候选回传。无需让用户继续选择人物、技能或数值。
+目标仅为 `aaaycc931-droid/jieqi-engine` 的 `codex/autonomous-hero-01-20261113`，复用 [PR23](https://github.com/aaaycc931-droid/jieqi-engine/pull/23)。收到实际文件传输后，先核最新HEAD和索引，校验31项身份；完整归位到原清单路径后再删除已核实的临时路径，保留日志历史身份，更新本线与PR并读回。不覆盖较新并发成果；latest-parent、expected_sha、force=false。当前容器GitHub DNS失败，不能把连接器文本/Git对象写入成功说成已完成本地大图传输；这不是重新等待授权。
 
-## 范围与交付
+## 原任务、职责与未验项
 
-首版在现有混乱象棋jieqi基线上做离线完整可玩集成；既有模式门禁、NET、评分原账本保持。允许本分支为新英雄做所需最小接入，不允许只有旁路小游戏。目标是可集成上线的完整候选，不是现在部署或把少量自测冒称全局平衡。
+原委托仍为 [TASK_FROM_MAIN](TASK_FROM_MAIN.json)，设计目标见 [DESIGNER_BRIEF](DESIGNER_BRIEF.md)，项目说明见 [PROJECT_INSTRUCTIONS](PROJECT_INSTRUCTIONS.txt)，共同恢复规程见 `docs/WORKFLOW.md` 与 `collaboration/CURRENT.json`。本次只处理同一司衡任务的保全及上传接续，不任命业务主线，不重做设计，不写岑缨/PR31或独立UI。
 
-具体设计由本线自主定稿并记录为受托决定，不伪称用户逐条确认。与旧线遇到依赖时优先采用已有实现、在本分支解决可隔离问题或调整自己的机制；需要更改共同规则时带最小具体问题回主线，其余工作继续。
+专属工程基线仍为PR22 `71145df45ad17215a3731e53150b6728e079e375`，已完成换轨修复的运行版本仍为5ab688c；新保全提交不冒充完整美术集成发布。通过 `/web/?heroPilot=1` 的原门禁不变。独立UI分支本轮只核HEAD `e2c8d4f2799998f37fbfda25e3c9a5b0ca03525d`，未修改。
 
-固定产物：DESIGN.md、IMPLEMENTATION.md、BALANCE.md、VALIDATION.json及上述状态/回执。尚未生成的产物不要用空文件冒充完成。阶段保存源版本、真实运行命令/结果和剩余限制；发布后读回，主线自行接收。工程draft PR保持仅本英雄增量，无合并部署/APK授权。
+历史恢复与验证正文：[ART_RESTORE_STATUS_20261113](ART_RESTORE_STATUS_20261113.md)；更早原图恢复：[ART_RECOVERY_CLOSEOUT_20261113](ART_RECOVERY_CLOSEOUT_20261113.md)；换轨修复：[VISUAL_REPAIR](VISUAL_REPAIR.md)。旧授权等待文字只代表当时，不覆盖本轮较新确认。此前完整入口和状态保留于本仓库 `a835d6eff9d362933e3c5915487cc9f6c5490240`。
 
-**当前真实状态（2026-11-13执行者回传）：司衡／世界E悬衡界已自主定稿，真实引擎代码及局部证据已发布至专属分支，draft PR #23；全回归1025项、最终专项34项、18局演练及4项DOM交互通过。真实浏览器/触摸、真人强度与独立QA尚未完成；源立绘和头像已于本轮找回，运行时美术接入待恢复／核验；未合并部署。** 详见[DESIGN](DESIGN.md)、[IMPLEMENTATION](IMPLEMENTATION.md)、[BALANCE](BALANCE.md)、[VALIDATION](VALIDATION.json)及[RETURN_TO_MAIN](RETURN_TO_MAIN.json)。v1主线有限接收已见INTAKE_REPORT；本轮新修复接收仍UNKNOWN。
+56项Web、14项DOM、构建和4项HTTP等为原恢复包中的历史验证，不是本轮新运行。真实浏览器/触摸、真人对抗强度、全面独立QA、动画等仍未完成。已有V1有限接收保留；新美术接收UNKNOWN，接收方只写自己的回执。PR保持draft，不合并、部署、发布APK或开放模式；评分原账本与NET边界不变，不暂停其他线。
