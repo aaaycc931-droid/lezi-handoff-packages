@@ -1,184 +1,21 @@
 {
-  "schema": "lezi.hero_pilot_02.receipts.v1",
-  "receiver": "hero_pilot_02_executor",
-  "date_local": "2026-11-14",
-  "source_handoff": "3a79094615d2583fd91c5ff33afe99272b8975b7",
-  "reads": [
-    {
-      "paths": [
-        "AGENTS.md",
-        "collaboration/CURRENT.json",
-        "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md",
-        "docs/WORKFLOW.md"
-      ],
-      "scope": "角色/授权、项目工作约定、交接/中断恢复、来源激活与并发保存段；非整部协作正文"
-    },
-    {
-      "paths": [
-        "worklines/hero-pilot/START_HERE.md",
-        "worklines/hero-pilot/TASK_FROM_MAIN.json",
-        "worklines/hero-pilot/DESIGNER_BRIEF.md",
-        "worklines/hero-pilot/DESIGN.md",
-        "worklines/hero-pilot/CURRENT_STATE.json",
-        "worklines/hero-pilot/SESSION_CLOSEOUT.json",
-        "worklines/hero-pilot/RETURN_TO_MAIN.json"
-      ],
-      "scope": "第一英雄试点完整相关源；继承质量要求与悬衡界局部设定，不接管其待办"
-    },
-    {
-      "paths": [
-        "worklines/main/START_HERE.txt",
-        "worklines/main/CURRENT_STATE.json",
-        "CURRENT_HANDOFF.json"
-      ],
-      "scope": "当前路由、主线next_action/local_result_integration与相关工程基线，非累计登记全文"
-    },
-    {
-      "paths": [
-        "worklines/standard/rules/shared/01_CURRENT_RULES.md",
-        "worklines/standard/rules/shared/02_CURRENT_HEROES.md",
-        "worklines/standard/rules/shared/03_CURRENT_MUTATIONS.md"
-      ],
-      "scope": "行动、落位、公开/秘密、H03/H05/H06/H13、堡垒等相关完整规则；进一步裁判测试由子代理按实际读段补证"
-    },
-    {
-      "paths": [
-        "worklines/ui/WORLD_LORE_CANON_20261109.md",
-        "worklines/ui/WORLD_LORE_CONFIRMED_EXTENSION_20261111.md",
-        "worklines/ui/HERO_WORLD_ORIGIN_GROUPS_20261109.md",
-        "worklines/ui/HERO_VISUAL_STYLE_INDEPENDENCE_RULE_20261109.md"
-      ],
-      "commit": "e2c8d4f2799998f37fbfda25e3c9a5b0ca03525d",
-      "scope": "完整正文；后续六批世界观边界另由只读子代理核验"
-    }
+  "schema":"lezi.hero_pilot_02.receipts.v1",
+  "receiver":"hero_pilot_02_executor",
+  "date_local":"2026-11-16",
+  "source_handoff":"acee9f58e614880f015a321dbfa8eff0aeb32101",
+  "prior_complete_receipts":{"commit":"acee9f58e614880f015a321dbfa8eff0aeb32101","path":"worklines/hero-pilot-02/READ_RECEIPTS.json","blob_sha":"e672756319de6fc1242157dddf22ec2cbcfe3eff","preservation":"All original reads and R2-R8 recovery receipts remain unchanged in this immutable Git version; this is a new receipt, not their deletion or retroactive rewrite."},
+  "reads":[
+    {"repository":"personal-collaboration","commit":"8b5b7982b4942a8b36da5ea3f759622eafc34c28","paths":["docs/CROSS_SYSTEM_WORK_START_HERE.md"],"scope":"Cross-system role, actual-source recovery, delegated same-hero work and preservation boundaries; no personal business-mainline takeover"},
+    {"repository":"lezi-handoff-packages","commit":"acee9f58e614880f015a321dbfa8eff0aeb32101","paths":["AGENTS.md","collaboration/CURRENT.json","docs/WORKFLOW.md","CURRENT_HANDOFF.json"],"scope":"AGENTS and collaboration index; workflow recovery/ownership/publication sections and current handoff routing excerpt. Prior unchanged collaboration-body evidence reused, not a fresh complete-body review."},
+    {"repository":"lezi-handoff-packages","commit":"acee9f58e614880f015a321dbfa8eff0aeb32101","paths":["worklines/hero-pilot-02/START_HERE.md","worklines/hero-pilot-02/TASK_FROM_USER.json","worklines/hero-pilot-02/DESIGNER_BRIEF.md","worklines/hero-pilot-02/PROJECT_INSTRUCTIONS.txt","worklines/hero-pilot-02/CURRENT_STATE.json","worklines/hero-pilot-02/SESSION_CLOSEOUT.json","worklines/hero-pilot-02/RETURN_TO_MAIN.json","worklines/hero-pilot-02/READ_RECEIPTS.json"],"scope":"Own task, existing R10 continuation, authorization, previous uploads and return. No new lore or whole-game rule review claimed."},
+    {"repository":"jieqi-engine","commit":"0438c32ea3bc1e8b8b9620ad7a856eab87cf88c4","scope":"PR31 metadata, upload commit parent/tree, exact two PNG paths/sizes/blob IDs, existing authorship record"},
+    {"repository":"jieqi-engine","commit":"2c0256d582fa7ea815b47f78d5fb055b76d586cd","scope":"Read back canonical master directory, sizes/blob IDs and AUTHORSHIP; compare with101a970 confirms only master paths/authorship/CREDITS changes"},
+    {"repository":"jieqi-engine","commit":"85c87f87bd4e5c0919194a7b69e4c51277853b33","scope":"PR31 head/draft status and published STAGED_UPLOAD report actually read back"}
   ],
-  "adopted": "只在本英雄范围采用当前适用规则与用户新委托",
-  "other_receiver_status": "UNKNOWN_NOT_WRITTEN",
-  "recovery_receipts": [
-    {
-      "receiver": "EXP-HERO-002 recovery executor",
-      "date_local": "2026-11-14",
-      "source_commit": "7b16e8def30989e790e5a7c7720c975e82ee88df",
-      "paths": [
-        "AGENTS.md",
-        "docs/WORKFLOW.md",
-        "worklines/hero-pilot-02/START_HERE.md",
-        "worklines/hero-pilot-02/TASK_FROM_USER.json",
-        "worklines/hero-pilot-02/PROJECT_INSTRUCTIONS.txt",
-        "worklines/hero-pilot-02/DESIGN.md",
-        "worklines/hero-pilot-02/CURRENT_STATE.json",
-        "worklines/hero-pilot-02/SESSION_CLOSEOUT.json",
-        "worklines/hero-pilot-02/RETURN_TO_MAIN.json",
-        "worklines/hero-pilot-02/READ_RECEIPTS.json"
-      ],
-      "actual_scope": "Original hero task,authorization,source-preserving recovery,stage publication and workline-owned return.",
-      "adopted": "Recover and publish the original candidate within this workline;retain original authorship unknowns and unfinished validation.",
-      "other_receiver_status": "UNKNOWN_NOT_WRITTEN"
-    },
-    {
-      "receiver": "EXP-HERO-002-RECOVERY-R2",
-      "date_local": "2026-11-14",
-      "source_commit": "6053f61f5e95f75927de50bc8828cfe877a64184",
-      "claim_readback_commit": "dac1dd48fa63031a339bffd6f010bde423f9fee1",
-      "actual_scope": "AGENTS; collaboration index; WORKFLOW interruption/ownership/publication sections; CURRENT_HANDOFF lines 1-85 only; this workline TASK_FROM_USER, CURRENT_STATE and READ_RECEIPTS; SESSION_CLOSEOUT and RETURN_TO_MAIN reread at the claim commit. Original package instructions, original validation and evidence read and hashed locally. Unchanged prior entry evidence reused; no new full-game-rule, UI-lore or whole-collaboration-body review claimed.",
-      "adopted": "Same-task bounded recovery/preparation and accurate own return; no hero redesign, other-line takeover or mainline acceptance.",
-      "actual_result": "54 originals verified; 38-file privacy-minimized payload saved and downloaded for exact comparison; engineering transfer remains blocked by current runtime capability.",
-      "report": "RECOVERY_PUBLICATION.json",
-      "other_receiver_status": "UNKNOWN_NOT_WRITTEN"
-    },
-    {
-      "receiver": "EXP-HERO-002-RECOVERY-R3",
-      "date_local": "2026-11-15",
-      "source_commit": "c64d65c727dde47eb4c4f90387d19b6ce8fbf265",
-      "actual_scope": "This workline START_HERE, TASK_FROM_USER, DESIGNER_BRIEF, PROJECT_INSTRUCTIONS, CURRENT_STATE, RECOVERY_PUBLICATION, SESSION_CLOSEOUT, RETURN_TO_MAIN and READ_RECEIPTS; repository AGENTS; CURRENT_HANDOFF lines 1-90; current collaboration index and complete PROJECT_WORK_AGREEMENT, GITHUB_HANDOFF_WORKFLOW, AUTHORIZATION_AND_ADOPTION, MANDATORY_PRECHECK and RELEASE_CHECK sections; applicable WORKFLOW interruption, ownership and publication sections. Full prepared payload byte and source/evidence binding check delegated read-only.",
-      "adopted": "Owner-requested bounded continuation of the same EXP-HERO-002 publication. Prior execution is explicitly inactive; no mainline or other hero takeover.",
-      "gate": {
-        "level": "L1_CONTINUITY",
-        "working_revision": "2026-10-23.v0.18",
-        "formal_baseline": "1.8.0"
-      },
-      "package_verification": {
-        "files": 38,
-        "sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
-        "code_or_art_changed": false,
-        "business_tests_rerun": false
-      },
-      "other_receiver_status": "UNKNOWN_NOT_WRITTEN"
-    },
-    {
-      "receiver": "EXP-HERO-002-RECOVERY-R4",
-      "date_local": "2026-11-15",
-      "source_commit": "60b8d2dbda6ebc7d3333d205d36528d065521ab0",
-      "owner_instruction": {
-        "kind": "current_visible_user_message",
-        "verbatim": "现在需要推进并收束这个英雄的工作",
-        "date_local": "2026-11-15",
-        "scope": "Continue and close out this existing Cen Ying hero work within its original task boundaries."
-      },
-      "actual_scope": "Current AGENTS, CURRENT_HANDOFF lines 1-100, full WORKFLOW, this workline START_HERE/TASK_FROM_USER/DESIGNER_BRIEF/PROJECT_INSTRUCTIONS/DESIGN/CURRENT_STATE/RECOVERY_PUBLICATION/SESSION_CLOSEOUT/RETURN_TO_MAIN/READ_RECEIPTS. Current generic working body and relevant continuity,authorization,project-work and handoff sections reused from this conversation's actual reads. Prepared original publication ZIP retrieved, exact SHA256 and all ZIP CRC checked.",
-      "adopted": "Owner-directed same-hero continuation and stage closeout; no business-mainline role or third hero.",
-      "package": {
-        "bytes": 5394577,
-        "sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
-        "engine_files": 38,
-        "gameplay_or_art_changed": false
-      },
-      "prior_R3_background_state": "UNKNOWN; authority is the current owner direction,not fabricated prior shutdown",
-      "other_receiver_status": "UNKNOWN_NOT_WRITTEN"
-    },
-    {
-      "receiver": "EXP-HERO-002-RECOVERY-R5",
-      "date_local": "2026-11-15",
-      "source_commit": "a1802befc439989d350f6ef9aa3b1fa5b1177a8f",
-      "actual_scope": "Current AGENTS; CURRENT_HANDOFF lines 1-100; collaboration index and complete PROJECT_WORK_AGREEMENT,GITHUB_HANDOFF_WORKFLOW,AUTHORIZATION_AND_ADOPTION,MANDATORY_PRECHECK,RELEASE_CHECK sections; WORKFLOW recovery,ownership,publication and return rules; this workline START_HERE,TASK_FROM_USER,DESIGNER_BRIEF,PROJECT_INSTRUCTIONS,CURRENT_STATE,SESSION_CLOSEOUT,RETURN_TO_MAIN,READ_RECEIPTS,RECOVERY_PUBLICATION. Existing recovery and prepared payload manifests and local hashes checked read-only.",
-      "adopted": "Temporary owner-delegated same-hero repository upload and accurate stage closeout; preserve existing candidate and evidence, with no mainline appointment or other-line ownership.",
-      "gate": {
-        "level": "L1_CONTINUITY",
-        "working_revision": "2026-10-23.v0.18",
-        "formal_baseline": "1.8.0"
-      },
-      "other_receiver_status": "UNKNOWN_NOT_WRITTEN"
-    },
-    {
-      "receiver": "EXP-HERO-002-RECOVERY-R6",
-      "date_local": "2026-11-15",
-      "source_commit": "2c985330fa9acdb92155ea041665498392f9f5fa",
-      "actual_scope": "Cross-system entry and interruption protocol; current repository AGENTS and own workline START_HERE/TASK_FROM_USER/DESIGNER_BRIEF/PROJECT_INSTRUCTIONS/CURRENT_STATE/RECOVERY_PUBLICATION/RETURN_TO_MAIN/SESSION_CLOSEOUT/READ_RECEIPTS; CURRENT_HANDOFF routing; collaboration CURRENT and applicable PROJECT_WORK_AGREEMENT,GITHUB_HANDOFF_WORKFLOW,AUTHORIZATION_AND_ADOPTION,MANDATORY_PRECHECK,RELEASE_CHECK sections; WORKFLOW recovery/ownership/publication. Both original and prepared packages retrieved; whole ZIP SHA256 and CRC checked.",
-      "adopted": "Current user temporarily delegates all existing Cen Ying repository upload and stage closeout; no mainline appointment or other-line ownership.",
-      "gate": {
-        "level": "L1_CONTINUITY",
-        "working_revision": "2026-10-23.v0.18",
-        "formal_baseline": "1.8.0"
-      },
-      "other_receiver_status": "UNKNOWN_NOT_WRITTEN"
-    },
-    {
-      "receiver": "EXP-HERO-002-RECOVERY-R7",
-      "date_local": "2026-11-15",
-      "source_commit": "8acb5d5de6b49af91065e8d1e3e1020bf0bae12e",
-      "actual_scope": "Cross-system fixed entry and interruption protocol; current handoff AGENTS, CURRENT_HANDOFF routing, collaboration index and applicable PROJECT_WORK_AGREEMENT/GITHUB_HANDOFF_WORKFLOW/AUTHORIZATION_AND_ADOPTION/MANDATORY_PRECHECK/RELEASE_CHECK sections; WORKFLOW continuity/ownership/publication; own START_HERE,TASK_FROM_USER,DESIGNER_BRIEF,PROJECT_INSTRUCTIONS,CURRENT_STATE,RECOVERY_PUBLICATION,RETURN_TO_MAIN,SESSION_CLOSEOUT,READ_RECEIPTS. Latest dedicated engine branch and all-state same-branch PR query.",
-      "adopted": "Current owner temporarily delegates existing Cen Ying repository upload and stage closeout. Preserve original candidate and prior unknown outputs; no business-mainline appointment.",
-      "gate": {
-        "level": "L1_CONTINUITY",
-        "working_revision": "2026-10-23.v0.18",
-        "formal_baseline": "1.8.0"
-      },
-      "other_receiver_status": "UNKNOWN_NOT_WRITTEN"
-    },
-    {
-      "receiver": "EXP-HERO-002-RECOVERY-R8",
-      "date_local": "2026-11-15",
-      "source_commit": "1ad871e6fb9f8e59ffde02053740d994247d92d8",
-      "claim_readback_commit": "bb8e2bb7ae510a8d9a59f1cae090b87de89e123b",
-      "actual_scope": "Root actually read the current cross-system fixed entry, both repository main heads, own START_HERE/CURRENT_STATE/RECOVERY_PUBLICATION/SESSION_CLOSEOUT/RETURN_TO_MAIN/READ_RECEIPTS, dedicated engine branch and PRs, prepared package and manifest. Read-only delegate read TASK_FROM_USER/DESIGNER_BRIEF/PROJECT_INSTRUCTIONS, AGENTS, collaboration index and applicable body sections, WORKFLOW; separately verified all38 local hashes and PR31 scope. No new lore, whole-game rules or game-runtime test review claimed.",
-      "adopted": "Current user explicitly requested bounded staged uploads and this-stage closeout; own hero branch/return only.",
-      "gate": {
-        "level": "L1_CONTINUITY",
-        "working_revision": "2026-10-23.v0.18",
-        "formal_baseline": "1.8.0"
-      },
-      "actual_result": "36 candidate files published at 101a970020fa7130c1367a04f67fdbb03dff5d3a and downloaded for size/SHA256/Git-blob comparison; draft PR31 read back; two masters and original supplements remain.",
-      "other_receiver_status": "UNKNOWN_NOT_WRITTEN"
-    }
-  ]
+  "local_sources":{"original_archive_sha256":"2ace4d651b35e0e6b8f8f2923632c07e8ead800c805e66e72ba7dad2d7d89ea5","prepared_archive_sha256":"842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f","fresh_original_file_checks":54,"fresh_prepared_file_checks":38,"zip_crc":"PASS_BOTH"},
+  "adopted":"Owner's explicit same-hero final closeout and owner-confirmed GPT-6 Pro Chat credit; publish own final return and retain all unfinished acceptance/archive exceptions.",
+  "other_receiver_status":"UNKNOWN_NOT_WRITTEN",
+  "mainline_appointment":false,
+  "other_workline_ownership_changed":false,
+  "business_tests_rerun":false
 }

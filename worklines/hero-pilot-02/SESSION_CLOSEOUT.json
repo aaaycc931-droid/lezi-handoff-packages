@@ -1,73 +1,33 @@
 {
-  "schema": "lezi.hero_pilot_02.checkpoint.v1",
-  "date_local": "2026-11-15",
-  "dialogue_closed": true,
-  "status": "STAGED_UPLOAD_BATCH_1_PUBLISHED_AND_CLOSED",
-  "work_id": "EXP-HERO-002",
-  "resume": "按分阶段方式续传两张PNG母版，再核原件包补充材料映射并上传；先核最新专属HEAD和本线状态，复用PR31，不重传已核验36项。见STAGED_UPLOAD.json。",
-  "latest_published_engine_commit": "101a970020fa7130c1367a04f67fdbb03dff5d3a",
-  "observed_engine_base": "71145df45ad17215a3731e53150b6728e079e375",
-  "prepared_payload": {
-    "filename": "cen-ying-publication-ready-20261114.zip",
-    "sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
-    "owner_held_artifact_saved_and_read_back": true,
-    "engine_publication": false,
-    "engine_partial_publication": true,
-    "publication_note": "36 of 38 prepared candidate files published; complete ZIP/candidate publication remains false."
-  },
-  "not_waiting_for_parameter_approval": true,
-  "active_recovery_execution": false,
-  "this_is_stage_checkpoint_not_project_shutdown": true,
-  "other_worklines_paused": false,
-  "previous_checkpoint": {
-    "source_commit": "6053f61f5e95f75927de50bc8828cfe877a64184",
-    "status": "WORK_IN_PROGRESS_CHECKPOINT",
-    "dialogue_closed": false,
-    "note": "Historical incomplete checkpoint remains traceable; no successful old closeout is fabricated."
-  },
-  "previous_recovery_stage": {
-    "source_commit": "c64d65c727dde47eb4c4f90387d19b6ce8fbf265",
-    "date_local": "2026-11-14",
-    "status": "RECOVERY_STAGE_SAVED_TRANSPORT_BLOCKED",
-    "active_recovery_execution": false
-  },
-  "previous_active_checkpoint": {
-    "source_commit": "1ad871e6fb9f8e59ffde02053740d994247d92d8",
-    "scope": "R7",
-    "actual_background_running_or_stopped": "UNKNOWN",
-    "successful_closeout_claimed": false
-  },
-  "latest_draft_pr": 31,
-  "next_action": "按分阶段方式续传两张PNG母版，再核原件包补充材料映射并上传；先核最新专属HEAD和本线状态，复用PR31，不重传已核验36项。见STAGED_UPLOAD.json。",
-  "stage_report": "STAGED_UPLOAD.json",
-  "full_content_uploaded": false,
-  "published_candidate_files": 36,
-  "pending_candidate_files": [
-    "art/hero-pilot-02/masters/cen-ying-figure-v1.png",
-    "art/hero-pilot-02/masters/cen-ying-portrait-v1.png"
-  ],
-  "original_supplements": "Pending; R7 historical count8, mapping not rerun this stage",
-  "verification": {
-    "prepared_zip_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
-    "local_38_files_size_sha256_git_blob": "PASS",
-    "remote": {
-      "remote_files_byte_verified": 36,
-      "binary_files": 3,
-      "total_bytes": 1248742,
-      "status": "PASS"
-    },
-    "remote_readback_ref": "101a970020fa7130c1367a04f67fdbb03dff5d3a",
-    "remote_all_three_hashes": "size + SHA-256 + Git blob SHA",
-    "unrelated_parent_tree_files": "UNCHANGED",
-    "draft_pr_independently_read_back": true,
-    "business_tests_rerun": false,
-    "historical_evidence_not_claimed_as_new": true
-  },
-  "remaining_acceptance": [
-    "real browser/touch",
-    "human or stronger-policy balance",
-    "independent QA",
-    "full typecheck"
-  ],
-  "main_received": "UNKNOWN"
+  "schema":"lezi.hero_pilot_02.checkpoint.v1",
+  "date_local":"2026-11-16",
+  "work_id":"EXP-HERO-002",
+  "dialogue_closed":true,
+  "status":"OWNER_CLOSED_SELECTED_DELIVERY_COMPLETE_WITH_RECORDED_EXCEPTIONS",
+  "production_execution_closed":true,
+  "upload_execution_closed":true,
+  "active_recovery_execution":false,
+  "owner_instruction":{"kind":"current visible owner message after web upload","verbatim":"提交完毕，现在由你来进行该英雄的全部收束收尾，正式结束本英雄制作与上传，同时注明该英雄为chat模式GPT-6 Pro推理程度制作，不过你也可以用更规范的名称","scope":"End this hero production/upload execution and record its original production credit; no merge, deployment, APK or acceptance-pass authorization inferred."},
+  "latest_published_engine_commit":"85c87f87bd4e5c0919194a7b69e4c51277853b33",
+  "owner_png_upload_commit":"0438c32ea3bc1e8b8b9620ad7a856eab87cf88c4",
+  "canonical_paths_and_authorship_commit":"2c0256d582fa7ea815b47f78d5fb055b76d586cd",
+  "latest_draft_pr":31,
+  "published_candidate_files":38,
+  "total_candidate_files":38,
+  "pending_candidate_files":[],
+  "selected_candidate_upload_complete":true,
+  "full_content_uploaded":false,
+  "unpublished_original_supplements":{"count":8,"mapping_verified":true,"status":"PRESERVED_IN_OWNER_ARCHIVE_NOT_UPLOADED_TO_REPOSITORY","detail":"One unselected initial PNG, five original logs, tracked-changes.patch and source-git-status.txt. Preserved as explicit closeout exceptions, not waived or marked done.","public_report":"review/hero-pilot-02/ARCHIVE_DISPOSITION.json"},
+  "verification":{"fresh_original_archive_sha256":"2ace4d651b35e0e6b8f8f2923632c07e8ead800c805e66e72ba7dad2d7d89ea5","fresh_prepared_archive_sha256":"842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f","original_files_size_sha256_blob_verified":54,"prepared_files_size_sha256_blob_verified":38,"both_zip_crc":"PASS","canonical_remote_master_paths_sizes_blob_ids":"PASS","fresh_remote_png_byte_download_claimed":false,"engine_report_read_back_at":"85c87f87bd4e5c0919194a7b69e4c51277853b33","unchanged_business_tests_rerun":false},
+  "authorship":{"display":"GPT-6 Pro（Chat 对话模式）","confirmed_by":"project owner","raw_wording":"chat模式GPT-6 Pro推理程度制作","independent_platform_verification":false,"record":"jieqi-engine/docs/hero-pilot-02/AUTHORSHIP.json"},
+  "remaining_acceptance":["real browser/touch","human or stronger-policy balance","independent QA","full typecheck"],
+  "main_received":"UNKNOWN",
+  "next_action":"NONE_AUTOMATIC; owner ended this hero production/upload. Reopen only upon a new explicit task, preserving the archive and validation exceptions.",
+  "resume":"Read the closed state first; do not resume stale staged-upload batches or remake completed work.",
+  "other_worklines_paused":false,
+  "long_term_entry_disabled":false,
+  "merge_deployment_APK_mode_expansion":"NOT_PERFORMED",
+  "prior_background_state":"UNKNOWN",
+  "previous_closeout_source":{"commit":"acee9f58e614880f015a321dbfa8eff0aeb32101","path":"worklines/hero-pilot-02/SESSION_CLOSEOUT.json","blob_sha":"8f880c20775e514cf973cc737a484a1288fb03df"},
+  "full_current_body":"https://github.com/aaaycc931-droid/jieqi-engine/blob/85c87f87bd4e5c0919194a7b69e4c51277853b33/docs/hero-pilot-02/FINAL_CLOSEOUT.md"
 }

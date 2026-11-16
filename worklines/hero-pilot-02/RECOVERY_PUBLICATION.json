@@ -1,155 +1,21 @@
 {
-  "schema": "lezi.hero_pilot_02.recovery_stage.v1",
-  "work_id": "EXP-HERO-002",
-  "date_local": "2026-11-15",
-  "stage_id": "EXP-HERO-002-RECOVERY-R8-BATCH-1",
-  "status": "STAGED_UPLOAD_BATCH_1_PUBLISHED_FULL_UPLOAD_PENDING",
-  "authority": "TASK_FROM_USER.json and owner-requested continuation of the interrupted publication",
-  "source_handoff_commit": "6053f61f5e95f75927de50bc8828cfe877a64184",
-  "claim_published_and_read_back": "dac1dd48fa63031a339bffd6f010bde423f9fee1",
-  "engine": {
-    "repository": "aaaycc931-droid/jieqi-engine",
-    "branch": "codex/autonomous-hero-02-20261114",
-    "observed_head": "101a970020fa7130c1367a04f67fdbb03dff5d3a",
-    "expected_base": "71145df45ad17215a3731e53150b6728e079e375",
-    "published_code": true,
-    "draft_pr": 31,
-    "associated_pr_query": "No PR found for this exact branch in the all-state query; no new PR created.",
-    "base": "71145df45ad17215a3731e53150b6728e079e375",
-    "full_content_uploaded": false,
-    "pr_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/31",
-    "candidate_files_published": 36,
-    "candidate_files_total": 38,
-    "commit": "101a970020fa7130c1367a04f67fdbb03dff5d3a"
-  },
-  "original_recovery": {
-    "original_package_bytes": 12722717,
-    "original_package_sha256": "2ace4d651b35e0e6b8f8f2923632c07e8ead800c805e66e72ba7dad2d7d89ea5",
-    "all_original_files_size_sha256_git_blob_verified": 54,
-    "originals_modified": false,
-    "original_delta_files": 36,
-    "original_executable_source_bindings_verified": 16,
-    "original_evidence_bindings_verified": 4,
-    "business_tests_rerun": false,
-    "art_regenerated_or_reencoded": false,
-    "evidence_origin": "Historical recovery verification; original54-file archive not re-retrieved in R8."
-  },
-  "prepared_payload": {
-    "filename": "cen-ying-publication-ready-20261114.zip",
-    "bytes": 5394577,
-    "sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
-    "zip_members": 44,
-    "engine_files": 38,
-    "publication_manifest_sha256": "46905b1e98dc3538f27f4ec271f668c13de4c7b9ca0932a04380dd200b5b4f16",
-    "owner_held_artifact_saved": true,
-    "saved_artifact_downloaded_and_byte_compared": true,
-    "public_repository_asset": false,
-    "original_files_byte_identical": 33,
-    "metadata_only_changed_original_files": [
-      "art/hero-pilot-02/PROMPTS.json",
-      "art/hero-pilot-02/ASSET_MANIFEST.json",
-      "review/hero-pilot-02/VALIDATION.json"
-    ],
-    "metadata_changes": "Six original execution-location fields removed from public copies; asset-manifest hash reference updated and original identity retained. Prompt text, code, image bytes and original evidence files are unchanged.",
-    "new_candidate_documentation": [
-      "docs/hero-pilot-02/AUTHORSHIP.json",
-      "review/hero-pilot-02/RECOVERY_PUBLICATION.json"
-    ],
-    "private_source_locations_or_account_identifiers_published": false,
-    "published_candidate_files": 36,
-    "pending_candidate_files": 2,
-    "complete_publication": false
-  },
-  "new_preparation_validation": {
-    "all_38_payload_file_hashes_and_zip_crc": "PASS",
-    "all_16_source_and_4_evidence_bindings_after_metadata_changes": "PASS",
-    "selected_masters_and_runtime_exports_byte_identical": 5,
-    "publication_helper_offline_tests": {
-      "passed": 6,
-      "failed": 0,
-      "api": "fake API only; not live GitHub"
-    },
-    "helper_controls": [
-      "changed payload rejected",
-      "changed initial branch rejected",
-      "concurrent branch update stops without force",
-      "remote-byte readback logic",
-      "repeat run does not duplicate writes or PR",
-      "uncertain successful ref update is detected before retry"
-    ],
-    "live_helper_execution": false,
-    "game_runtime_reexecution": false,
-    "evidence_origin": "Historical R2 results; R8 fresh local38 and remote36 verification recorded separately."
-  },
-  "historical_evidence": {
-    "full_regression": {
-      "passed": 1044,
-      "total": 1044
-    },
-    "dom_cases": 15,
-    "same_process_http_resources": 5,
-    "playout_games": 20,
-    "interpretation": "Preserved original results with matching source/evidence hashes; not new runs, independent QA, real-browser acceptance or global balance."
-  },
-  "authorship": {
-    "original_designer_model": null,
-    "original_designer_model_status": "UNKNOWN_PENDING_ORIGINAL_PLATFORM_EVIDENCE",
-    "recovery_contributor_label": "GPT-6 Astra Pro",
-    "label_evidence": "assistant self-report only; not independently verified platform telemetry",
-    "contribution": "original recovery verification, privacy-minimized metadata and publication preparation",
-    "original_creator_credit_claimed": false,
-    "frontend_label_installed": false
-  },
-  "blocker": null,
-  "next_action": "按分阶段方式续传两张PNG母版，再核原件包补充材料映射并上传；先核最新专属HEAD和本线状态，复用PR31，不重传已核验36项。见STAGED_UPLOAD.json。",
-  "remaining_acceptance": [
-    "real browser and touch",
-    "human or stronger-policy balance",
-    "independent QA",
-    "full typecheck"
-  ],
-  "main_received": "UNKNOWN",
-  "other_worklines_modified": false,
-  "merge_deployment_APK_mode_opening": "NOT_PERFORMED_OUT_OF_SCOPE",
-  "stage_retrospective": "The first finite batch now has an actual engine commit and a byte-verified draft PR. Staged scope avoids repeating an all-or-nothing upload attempt; master images and original supplements remain explicit.",
-  "previous_stage": {
-    "stage_id": "EXP-HERO-002-RECOVERY-R2",
-    "status": "PREPARATION_SAVED_ENGINE_PUBLICATION_BLOCKED_BY_TRANSPORT",
-    "date_local": "2026-11-14",
-    "engine": {
-      "repository": "aaaycc931-droid/jieqi-engine",
-      "branch": "codex/autonomous-hero-02-20261114",
-      "observed_head": "71145df45ad17215a3731e53150b6728e079e375",
-      "expected_base": "71145df45ad17215a3731e53150b6728e079e375",
-      "published_code": false,
-      "draft_pr": null,
-      "associated_pr_query": "No PR found for this exact branch in the all-state query; no new PR created."
-    },
-    "blocker": {
-      "kind": "CURRENT_RUNTIME_TRANSPORT_CAPABILITY",
-      "detail": "The current runtime cannot resolve/connect directly to GitHub, has no authenticated GitHub CLI, and the exposed connector actions do not accept a local-file bulk-upload input. The text GitHub checkpoint path works, but the multi-megabyte original image/code payload was not transferred.",
-      "permission_missing_claimed": false,
-      "new_publication_review_denial": false,
-      "credential_requested_or_embedded": false,
-      "retry_same_environment_without_change": "Do not repeat the failed route; use an actually available authorized byte-transfer environment."
-    },
-    "next_action": "Restore current workline authority, retrieve the exact prepared payload through its owner-held artifact route, verify its hash and latest dedicated HEAD, publish the 38 candidate files with non-forced concurrency protection, read back, create/reuse the draft PR, then update this workline's return with actual commit and PR. Do not redo original design, art or unchanged game tests."
-  },
-  "latest_stage_report": "STAGED_UPLOAD.json",
-  "latest_stage_verification": {
-    "prepared_zip_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
-    "local_38_files_size_sha256_git_blob": "PASS",
-    "remote": {
-      "remote_files_byte_verified": 36,
-      "binary_files": 3,
-      "total_bytes": 1248742,
-      "status": "PASS"
-    },
-    "remote_readback_ref": "101a970020fa7130c1367a04f67fdbb03dff5d3a",
-    "remote_all_three_hashes": "size + SHA-256 + Git blob SHA",
-    "unrelated_parent_tree_files": "UNCHANGED",
-    "draft_pr_independently_read_back": true,
-    "business_tests_rerun": false,
-    "historical_evidence_not_claimed_as_new": true
-  }
+  "schema":"lezi.hero_pilot_02.recovery_stage.v1",
+  "work_id":"EXP-HERO-002",
+  "date_local":"2026-11-16",
+  "stage_id":"EXP-HERO-002-FINAL-CLOSEOUT-20261116",
+  "status":"OWNER_CLOSED_SELECTED_DELIVERY_COMPLETE_WITH_RECORDED_EXCEPTIONS",
+  "engine":{"repository":"aaaycc931-droid/jieqi-engine","branch":"codex/autonomous-hero-02-20261114","base":"71145df45ad17215a3731e53150b6728e079e375","observed_head":"85c87f87bd4e5c0919194a7b69e4c51277853b33","draft_pr":31,"published_code":true,"candidate_files_published":38,"candidate_files_total":38,"selected_candidate_upload_complete":true,"full_content_uploaded":false},
+  "original_recovery":{"original_package_filename":"cen-ying-recovery-20261114.zip","original_package_bytes":12722717,"original_package_sha256":"2ace4d651b35e0e6b8f8f2923632c07e8ead800c805e66e72ba7dad2d7d89ea5","owner_held_archive_preserved":true,"fresh_retrieval_and_crc":"PASS","fresh_original_files_size_sha256_git_blob_verified":54,"originals_modified":false,"art_regenerated_or_reencoded":false},
+  "prepared_payload":{"filename":"cen-ying-publication-ready-20261114.zip","bytes":5394577,"sha256":"842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f","fresh_file_identity_and_crc":"PASS","engine_files":38,"candidate_paths_published":38,"complete_original_archive_repository_upload":false},
+  "historical_evidence":{"full_regression":{"passed":1044,"total":1044},"dom_cases":15,"same_process_http_resources":5,"playout_games":20,"source_bindings":16,"evidence_bindings":4,"interpretation":"Preserved original evidence, not new runs, independent QA, real-browser acceptance or global balance."},
+  "authorship":{"original_designer_model":"GPT-6 Pro","execution_mode":"Chat","original_designer_model_status":"OWNER_CONFIRMED_20261116_NOT_PLATFORM_TELEMETRY","raw_owner_wording":"chat模式GPT-6 Pro推理程度制作","frontend_label_installed":false,"engine_record":"docs/hero-pilot-02/AUTHORSHIP.json"},
+  "archive_exceptions":{"supplements_not_uploaded":8,"mapping_verified":true,"original_archive_preserved":true,"owner_waiver_claimed":false,"report":"jieqi-engine/review/hero-pilot-02/ARCHIVE_DISPOSITION.json"},
+  "remaining_acceptance":["real browser and touch","human or stronger-policy balance","independent QA","full typecheck"],
+  "main_received":"UNKNOWN",
+  "other_worklines_modified":false,
+  "merge_deployment_APK_mode_opening":"NOT_PERFORMED_OUT_OF_SCOPE",
+  "active_execution":false,
+  "next_action":"None automatically: owner ended this hero production/upload execution, retaining explicit archive and validation exceptions.",
+  "latest_stage_report":"STAGED_UPLOAD.json",
+  "previous_full_recovery_record":{"commit":"acee9f58e614880f015a321dbfa8eff0aeb32101","path":"worklines/hero-pilot-02/RECOVERY_PUBLICATION.json","blob_sha":"65a5d5eda8966fb3e4866c8350dd8f11ef7d7780"}
 }

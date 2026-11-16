@@ -1,71 +1,21 @@
 {
-  "schema": "lezi.hero_pilot_02.return.v1",
-  "work_id": "EXP-HERO-002",
-  "source": "用户直接委托的第二英雄任务及本任务中断发布接续；非主线派发",
-  "status": "STAGED_UPLOAD_BATCH_1_PUBLISHED_FULL_UPLOAD_PENDING",
-  "entry": "worklines/hero-pilot-02/START_HERE.md",
-  "report": "worklines/hero-pilot-02/STAGED_UPLOAD.json",
-  "design": {
-    "name": "岑缨",
-    "world": "WORLD-EXP-01 悬衡界",
-    "ability": "引缆",
-    "decision": "delegated_designer_decision",
-    "stage": "original_engineering_candidate_recovered_not_redesigned"
-  },
-  "engine": {
-    "branch": "codex/autonomous-hero-02-20261114",
-    "base": "71145df45ad17215a3731e53150b6728e079e375",
-    "observed_head": "101a970020fa7130c1367a04f67fdbb03dff5d3a",
-    "published_code": true,
-    "draft_pr": 31,
-    "full_content_uploaded": false,
-    "pr_url": "https://github.com/aaaycc931-droid/jieqi-engine/pull/31",
-    "candidate_files_published": 36,
-    "candidate_files_total": 38
-  },
-  "actual_delivery": {
-    "54_original_files_verified": true,
-    "16_source_and_4_evidence_bindings_verified": true,
-    "prepared_payload_saved_and_read_back": true,
-    "prepared_payload_filename": "cen-ying-publication-ready-20261114.zip",
-    "prepared_payload_sha256": "842a2a45ce9ab9a3873b3fd7063b19ce33f70cee8598cb7d7edcb15cbea51a1f",
-    "candidate_files": 38,
-    "new_helper_offline_tests_passed": 6,
-    "business_tests_rerun": false,
-    "batch_1_engine_commit": "101a970020fa7130c1367a04f67fdbb03dff5d3a",
-    "batch_1_candidate_files": 36,
-    "batch_1_extra_stage_record": 1,
-    "remote_byte_verification": {
-      "remote_files_byte_verified": 36,
-      "binary_files": 3,
-      "total_bytes": 1248742,
-      "status": "PASS"
-    },
-    "draft_pr": 31,
-    "full_content_uploaded": false
-  },
-  "blocker": null,
-  "next_action": "按分阶段方式续传两张PNG母版，再核原件包补充材料映射并上传；先核最新专属HEAD和本线状态，复用PR31，不重传已核验36项。见STAGED_UPLOAD.json。",
-  "remaining_acceptance": [
-    "real browser/touch",
-    "human or stronger-policy balance",
-    "independent QA",
-    "full typecheck"
-  ],
-  "main_received": "UNKNOWN",
-  "receiver_action": "Mainline may receive this partial engineering publication report at PR31. Full upload and remaining acceptance are still pending; receiver writes only its own actual receipt.",
-  "protection": [
-    "司衡及PR23未改",
-    "独立UI分支未改",
-    "旧英雄、评分原账本、NET、其他模式门禁保持",
-    "未合并、部署或生成APK"
-  ],
-  "previous_blocker": "Current runtime lacks a working local-file-to-GitHub byte-transfer channel; text handoff updates are available. This is not a new permission request.",
-  "remaining_upload": {
-    "candidate_masters": [
-      "art/hero-pilot-02/masters/cen-ying-figure-v1.png",
-      "art/hero-pilot-02/masters/cen-ying-portrait-v1.png"
-    ],
-    "original_supplements": "Pending mapping and upload; historical8, not reverified this stage"
-  }
+  "schema":"lezi.hero_pilot_02.return.v1",
+  "work_id":"EXP-HERO-002",
+  "updated_on":"2026-11-16",
+  "source":"Owner direct second-hero task and explicit final closeout instruction; not an invented mainline dispatch",
+  "status":"OWNER_CLOSED_SELECTED_DELIVERY_COMPLETE_WITH_RECORDED_EXCEPTIONS",
+  "entry":"worklines/hero-pilot-02/START_HERE.md",
+  "report":"worklines/hero-pilot-02/SESSION_CLOSEOUT.json",
+  "design":{"name":"岑缨","world":"WORLD-EXP-01 悬衡界","ability":"引缆","decision":"delegated_designer_decision","stage":"original candidate preserved; production execution ended by owner"},
+  "engine":{"repository":"aaaycc931-droid/jieqi-engine","branch":"codex/autonomous-hero-02-20261114","base":"71145df45ad17215a3731e53150b6728e079e375","observed_head":"85c87f87bd4e5c0919194a7b69e4c51277853b33","published_code":true,"draft_pr":31,"pr_url":"https://github.com/aaaycc931-droid/jieqi-engine/pull/31","candidate_files_published":38,"candidate_files_total":38,"selected_candidate_upload_complete":true,"full_content_uploaded":false},
+  "actual_delta":{"owner_png_upload":"0438c32ea3bc1e8b8b9620ad7a856eab87cf88c4","canonical_masters_and_credit":"2c0256d582fa7ea815b47f78d5fb055b76d586cd","final_engine_records":"85c87f87bd4e5c0919194a7b69e4c51277853b33","master_paths":"art/hero-pilot-02/masters/","art_bytes_changed":false,"gameplay_or_executable_changes":false,"mainline_ownership_changed":false},
+  "authorship":{"display":"AI主创：GPT-6 Pro｜Chat 对话模式","evidence":"Owner explicitly confirmed on 2026-11-16","raw_wording":"chat模式GPT-6 Pro推理程度制作","platform_telemetry_verified":false,"record":"docs/hero-pilot-02/AUTHORSHIP.json","frontend_label_installed":false},
+  "verification":{"local_originals_verified":54,"local_prepared_candidates_verified":38,"zip_crc":"PASS_BOTH","new_remote_master_verification":"canonical path + byte size + Git blob SHA, matched to locally SHA256-verified originals","batch_1_remote_byte_readback":"Previously passed36 at101a970, still applicable to unchanged content","business_tests_rerun":false},
+  "archive_exception":{"unpublished_supplement_count":8,"mapping_verified":true,"originals_preserved":true,"all_originals_repository_upload_complete":false,"record":"review/hero-pilot-02/ARCHIVE_DISPOSITION.json","no_owner_waiver_inferred":true},
+  "remaining_acceptance":["real browser/touch","human or stronger-policy balance","independent QA","full typecheck"],
+  "main_received":"UNKNOWN",
+  "receiver_action":"When actually invoked, mainline may read this final selected-delivery return and write only its own receipt. Do not infer complete QA or all historical-original upload. No automatic new dispatch or merge.",
+  "next_action":"No automatic production/upload work; owner ended this hero execution. New explicit task required to reopen.",
+  "protection":["Siheng and PR23 unchanged","independent UI unchanged","no scoring ledger or NET changes","no merge/deployment/APK/mode expansion","other lines not paused"],
+  "previous_full_return":{"commit":"acee9f58e614880f015a321dbfa8eff0aeb32101","path":"worklines/hero-pilot-02/RETURN_TO_MAIN.json","blob_sha":"3412d832e26d5a431bdadd9c14553071cc422816"}
 }
