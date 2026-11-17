@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hero_pilot.return.v1",
-  "created_by": "cross_system_siheng_upload_completion",
+  "created_by": "cross_system_siheng_preservation_closeout",
   "task_id": "MAIN-AUTONOMOUS-HERO-01-20261113",
   "work_id": "EXP-HERO-001",
   "updated_on": "2026-11-17",
-  "status": "ART_UPLOAD_COMPLETE_31_CANONICAL_FILES_VERIFIED",
+  "status": "KNOWN_DELIVERABLES_PRESERVED_OWNER_REQUESTED_STAGE_CLOSED",
   "entry": "worklines/hero-pilot/START_HERE.md",
   "latest_report": "worklines/hero-pilot/SESSION_CLOSEOUT.json",
   "preservation_report": "worklines/hero-pilot/ART_UPLOAD_INTERRUPTION_20261116.md",
@@ -64,9 +64,9 @@
     "this_session": "31 source/canonical Git identities and sizes checked;16 text SHA256 rechecks; historical source bindings and static source review; actual Git publication/readback. No new game/build/DOM/browser tests."
   },
   "necessary_main_actions": [
-    "Read the actual31 canonical art files and completion checkpoint on PR23 at7f428c8; mainline writes its own art receipt when actually received.",
-    "The owner upload and canonical publication are complete; do not repeat the29-file upload request, old authorization prompt or character regeneration.",
-    "Keep real browser/touch, human adversarial balance, full independent QA and animation gaps separate from successful file publication."
+    "本线现有设计/工程/静态美术及已登记证据已完整保留，按用户要求结束本轮上传保全阶段；不再要求补传或重复本批。",
+    "主线实际读取7f428c8及本线新回传后，自行登记新美术接收；当前仍UNKNOWN，不代写其回执。",
+    "真实浏览器/触摸、真人强度、全面独立QA、动画等仍未完成；本次收束不启动它们、不合并部署/APK/开放模式，也不暂停其他线。"
   ],
   "main_receipt_of_future_delivery": "V1 limited intake retained; newly published art intake UNKNOWN until receiver actually reads/adopts.",
   "main_art_receipt": "UNKNOWN",
@@ -129,23 +129,26 @@
     "publication": "COMPLETE_31_CANONICAL_FILES_PUBLISHED_AND_READ_BACK"
   },
   "session_closeout": {
-    "kind": "PHASE_CHECKPOINT",
-    "owner_requested": false,
-    "dialogue_closed": false,
+    "owner_requested": true,
+    "kind": "OWNER_REQUESTED_STAGE_CLOSEOUT",
+    "dialogue_closed": true,
+    "scope_closed": "Current Siheng upload/preservation phase",
     "upload_status": "COMPLETE",
     "final_engine_head": "7f428c869b01f4f1310493d24f80e269d3ed7255",
     "full_body": "SESSION_CLOSEOUT.json#session_body",
-    "prior_closeout": {
-      "commit": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
+    "previous_phase_checkpoint": {
+      "commit": "682d69bb846f536479945d2539423598ed825bea",
       "path": "worklines/hero-pilot/SESSION_CLOSEOUT.json"
-    }
+    },
+    "task_cancelled": false,
+    "authorization_revoked": false
   },
   "active_execution": false,
-  "dialogue_closed": false,
+  "dialogue_closed": true,
   "other_worklines_paused": false,
   "long_term_entry_disabled": false,
   "previous_full_return": {
-    "commit": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
+    "commit": "682d69bb846f536479945d2539423598ed825bea",
     "path": "worklines/hero-pilot/RETURN_TO_MAIN.json"
   },
   "art_publication_report": "https://github.com/aaaycc931-droid/jieqi-engine/blob/7f428c869b01f4f1310493d24f80e269d3ed7255/review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json",
@@ -209,5 +212,34 @@
     ],
     "branch": "codex/autonomous-hero-01-20261113",
     "pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23"
+  },
+  "stage_closure": {
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "owner_requested": true,
+    "owner_instruction": "司衡的全部内容上传保留都结束了吗，工作成果已经完整了吗，你检查一下，如果结束了就暂时告一段落",
+    "status": "CURRENT_SIHENG_UPLOAD_PRESERVATION_STAGE_CLOSED",
+    "scope": "End this Siheng upload/preservation and closeout phase after verification. Do not cancel the original hero task, close PR23 or pause other lines.",
+    "active_execution": false,
+    "background_work_claimed": false,
+    "phase_complete": true,
+    "full_product_complete": false,
+    "original_task_cancelled": false,
+    "authorization_revoked": false,
+    "other_worklines_paused": false,
+    "long_term_entry_disabled": false,
+    "resume_policy": "Keep the same fixed entry and original task. Do not repeat completed uploads or verification without a new discrepancy. On a new explicit continuation, check current ownership, new mainline inputs and specific remaining work first.",
+    "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。"
+  },
+  "preservation_audit": {
+    "source": "worklines/hero-pilot/SESSION_CLOSEOUT.json#preservation_audit_20261117",
+    "status": "PASS_KNOWN_RECOVERED_DELIVERABLES_PRESERVED",
+    "archive_files": 687,
+    "inventory_matches": 687,
+    "engine_snapshot_remote_matches": 683,
+    "canonical_art_matches": 31,
+    "missing_known_materials": 0,
+    "full_product_acceptance": false,
+    "early_stdout_and_chat_limits": "Preserve recorded excerpts/hash/fulltext scope; not all historical raw stdout or full platform transcript recovered."
   }
 }

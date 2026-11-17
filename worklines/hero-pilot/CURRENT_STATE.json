@@ -1,9 +1,9 @@
 {
   "schema": "lezi.hero_pilot.state.v1",
   "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-  "updated_by": "cross_system_siheng_upload_completion",
+  "updated_by": "cross_system_siheng_preservation_closeout",
   "updated_on": "2026-11-17",
-  "status": "ART_UPLOAD_COMPLETE_CANONICAL_FILES_VERIFIED_AWAITING_MAIN_ART_INTAKE",
+  "status": "KNOWN_DELIVERABLES_PRESERVED_OWNER_REQUESTED_STAGE_CLOSED",
   "task": "TASK_FROM_MAIN.json",
   "designer_brief": "DESIGNER_BRIEF.md",
   "count": 1,
@@ -63,7 +63,7 @@
     "latest_art_dom_checks": 14,
     "art_published": true
   },
-  "next_action": "司衡本批美术上传、31项正式归位与暂存清理已完成并读回；不再要求用户上传。本线成果沿RETURN_TO_MAIN供主线实际读取接收。真实浏览器/触摸、真人强度、全面独立QA和动画仍按原任务独立待办；本次不把文件发布写成这些验收完成。",
+  "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。",
   "protected": {
     "other_worklines": true,
     "score_ledger": "frozen",
@@ -165,7 +165,7 @@
     "same_scope_authorization_inherited": true,
     "awaiting_authorization": false,
     "active_execution": false,
-    "phase": "ART_UPLOAD_COMPLETE_CANONICAL_PUBLICATION_VERIFIED",
+    "phase": "UPLOAD_COMPLETE_PRESERVATION_VERIFIED_STAGE_CLOSED",
     "prior_background_runtime": "UNKNOWN; owner reports both old conversations quota-interrupted; no platform runtime control claimed",
     "conflict_check": "User upload fae3dc6 only added29 staging files;31 targets unchanged from5ab688c. Canonical publish2ba4e01 and cleanup7f428c8 used expected_sha/force=false; final tree read back31 matches,0 staging,0 unexpected changes.",
     "source_state_commit": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
@@ -191,41 +191,43 @@
       "files": 29,
       "final_engine_head": "7f428c869b01f4f1310493d24f80e269d3ed7255"
     },
-    "completion_record": "art_upload_completion"
+    "completion_record": "art_upload_completion",
+    "owner_closeout_requested": true
   },
   "main_art_receipt": "UNKNOWN",
-  "dialogue_closed": false,
+  "dialogue_closed": true,
   "active_execution": false,
   "other_worklines_paused": false,
   "long_term_entry_disabled": false,
   "session_closeout": {
     "record": "SESSION_CLOSEOUT.json",
-    "owner_requested": false,
-    "kind": "PHASE_CHECKPOINT_AFTER_UPLOAD_COMPLETION",
-    "dialogue_closed": false,
+    "owner_requested": true,
+    "kind": "OWNER_REQUESTED_STAGE_CLOSEOUT",
+    "dialogue_closed": true,
+    "phase_closed": true,
     "task_cancelled": false,
     "authorization_revoked": false,
-    "previous_owner_requested_closeout": {
-      "commit": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
+    "previous_phase_checkpoint": {
+      "commit": "682d69bb846f536479945d2539423598ed825bea",
       "path": "worklines/hero-pilot/SESSION_CLOSEOUT.json"
     }
   },
   "previous_full_state": {
-    "commit": "937f855ee12c1549a11bc24cb2afd1607b2d2d30",
+    "commit": "682d69bb846f536479945d2539423598ed825bea",
     "path": "worklines/hero-pilot/CURRENT_STATE.json",
-    "note": "Execution checkpoint before canonical publication; prior16 November closeout remains at8ab6cd9."
+    "note": "Verified31-file publication phase before owner's additional full-preservation check and request to close this stage."
   },
   "current_execution": {
     "task_id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-    "executor": "cross_system_siheng_upload_completion",
+    "executor": "cross_system_siheng_preservation_closeout",
     "date": "2026-11-17",
     "scope": "Only existing Siheng art canonical publication, verified staging cleanup, PR23 metadata and own hero-pilot handoff records",
-    "owner_instruction": "我上传了，你来检查处理吧",
+    "owner_instruction": "司衡的全部内容上传保留都结束了吗，工作成果已经完整了吗，你检查一下，如果结束了就暂时告一段落",
     "prior_dialogue_stop_source": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
-    "stage": "COMPLETED_AND_READ_BACK",
+    "stage": "PRESERVATION_AUDIT_COMPLETE_OWNER_REQUESTED_STAGE_CLOSED",
     "active": false,
     "scope_complete": true,
-    "dialogue_closed": false
+    "dialogue_closed": true
   },
   "art_upload_completion": {
     "date": "2026-11-17",
@@ -275,5 +277,119 @@
     ],
     "branch": "codex/autonomous-hero-01-20261113",
     "pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23"
+  },
+  "stage_closure": {
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "owner_requested": true,
+    "owner_instruction": "司衡的全部内容上传保留都结束了吗，工作成果已经完整了吗，你检查一下，如果结束了就暂时告一段落",
+    "status": "CURRENT_SIHENG_UPLOAD_PRESERVATION_STAGE_CLOSED",
+    "scope": "End this Siheng upload/preservation and closeout phase after verification. Do not cancel the original hero task, close PR23 or pause other lines.",
+    "active_execution": false,
+    "background_work_claimed": false,
+    "phase_complete": true,
+    "full_product_complete": false,
+    "original_task_cancelled": false,
+    "authorization_revoked": false,
+    "other_worklines_paused": false,
+    "long_term_entry_disabled": false,
+    "resume_policy": "Keep the same fixed entry and original task. Do not repeat completed uploads or verification without a new discrepancy. On a new explicit continuation, check current ownership, new mainline inputs and specific remaining work first.",
+    "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。"
+  },
+  "preservation_audit_20261117": {
+    "schema": "lezi.hero_pilot.preservation_audit.v1",
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "status": "PASS_KNOWN_RECOVERED_DELIVERABLES_PRESERVED",
+    "scope": "Original task's enumerated design/engineering/balance/evidence/static-art deliverables plus all files in the preserved original recovery package; no claim of every lost platform character or unrecorded runtime output.",
+    "engine_commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "handoff_source_commit": "682d69bb846f536479945d2539423598ed825bea",
+    "public_canonical_art": {
+      "files": 31,
+      "git_blob_and_size_matches": 31,
+      "original_archive_manifest_matches": 31,
+      "source_index_blob": "d2e352c881878ab394fe6db2f4be9ad10b176eb1",
+      "remaining_staging_entries": 0,
+      "missing_items": 0
+    },
+    "original_engine": {
+      "original_runtime_commit": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
+      "previous_files_deleted": 0,
+      "existing_files_changed_by_art": 7,
+      "critical_original_paths_checked": 20,
+      "critical_original_paths_preserved_unchanged": 20,
+      "historical_playout_records": 18,
+      "historical_scenarios": 9,
+      "history_chain_retained": true
+    },
+    "handoff_deliverables": {
+      "paths": [
+        "DESIGN.md",
+        "BALANCE.md",
+        "IMPLEMENTATION.md",
+        "VALIDATION.json",
+        "CURRENT_STATE.json",
+        "SESSION_CLOSEOUT.json",
+        "RETURN_TO_MAIN.json",
+        "READ_RECEIPTS.json"
+      ],
+      "all_present": true,
+      "design_body_read": true,
+      "balance_body_read": true,
+      "scope_note": "Includes character/world/visual specification, full skill and choices; bounded balance evidence, runtime instructions, actual commits, failure/limit evidence and own-workline handoff."
+    },
+    "private_source_preservation": {
+      "archive_filename": "siheng-art-recovery-20261113.zip",
+      "archive_bytes": 35899664,
+      "archive_crc": "PASS",
+      "archive_files": 687,
+      "previous_inventory_size_sha256_git_blob_matches": 687,
+      "source_engine_snapshot_files": 683,
+      "source_engine_to_current_remote_blob_and_size_matches": 683,
+      "missing_or_changed_snapshot_files": 0,
+      "additional_owner_png_originals_preserved_privately": 2,
+      "package_readme_and_manifest_preserved": 2,
+      "resume_filename": "siheng-upload-resume-20261116.zip",
+      "resume_bytes": 4538467,
+      "resume_crc": "PASS",
+      "resume_member_files": 6,
+      "embedded_transfer_files": 29,
+      "embedded_transfer_crc": "PASS",
+      "embedded_transfer_identity_matches": true,
+      "note": "Both saved packages were retrieved and checked in this closing audit. Private Library identifiers, complete source inventory and private original hashes are not published."
+    },
+    "historical_boundaries": {
+      "original_art_log_fulltexts": 3,
+      "recovery_recheck_log_fulltexts": 4,
+      "early_v1_stdout": "Saved excerpts, recorded full-output hashes and reproducible commands; full early stdout not located in the preserved original package.",
+      "full_platform_transcript_preserved": false,
+      "new_game_tests_run": false,
+      "new_build_run": false,
+      "new_browser_test_run": false
+    },
+    "documentation_alignment": {
+      "paths": [
+        "DESIGN.md",
+        "IMPLEMENTATION.md",
+        "VALIDATION.json"
+      ],
+      "change": "Mark static art published at7f428c8; retain historical dates, source hashes and test outcomes; animation and browser acceptance remain open.",
+      "design_or_rules_changed": false
+    },
+    "completeness": {
+      "known_existing_recovered_materials_preserved": true,
+      "upload_and_canonical_publication_complete": true,
+      "complete_product_acceptance": false,
+      "animation_produced": false,
+      "new_art_main_receipt": "UNKNOWN"
+    },
+    "remaining": [
+      "real browser visual/touch playtest",
+      "human adversarial balance",
+      "full independent QA and unproved combinations/adjudication coverage",
+      "animation",
+      "receiver-owned mainline art intake"
+    ],
+    "merge_deploy_apk_mode_opening": "NOT_PERFORMED_NOT_AUTHORIZED_BY_CLOSEOUT"
   }
 }

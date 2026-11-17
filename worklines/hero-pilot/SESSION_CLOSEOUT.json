@@ -1,21 +1,21 @@
 {
   "schema": "lezi.hero_pilot.checkpoint.v1",
-  "created_by": "cross_system_siheng_upload_completion",
+  "created_by": "cross_system_siheng_preservation_closeout",
   "date": "2026-11-17",
   "timezone": "Asia/Shanghai",
-  "status": "ART_UPLOAD_COMPLETE_PHASE_CHECKPOINT",
+  "status": "OWNER_REQUESTED_STAGE_CLOSED_KNOWN_DELIVERABLES_PRESERVED",
   "work_id": "EXP-HERO-001",
   "original_task_id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-  "dialogue_closed": false,
+  "dialogue_closed": true,
   "active_execution": false,
   "background_work_claimed": false,
   "scope_complete": true,
   "task_cancelled": false,
   "same_scope_authorization_inherited": true,
   "owner_instruction": {
-    "verbatim": "我上传了，你来检查处理吧",
-    "meaning": "Check the owner's completed upload and finish the already-authorized canonical publication and workline return.",
-    "date": "2026-11-17"
+    "verbatim": "司衡的全部内容上传保留都结束了吗，工作成果已经完整了吗，你检查一下，如果结束了就暂时告一段落",
+    "date": "2026-11-17",
+    "meaning": "Check completeness of already-created/recovered material preservation, and close the current stage when complete."
   },
   "latest_successful_engine_commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
   "art_publication_commit": "2ba4e01c9d8e6ea896327b2c412c44a03bdc7d45",
@@ -31,7 +31,14 @@
     "以用户上传HEAD为父提交，直接复用31个已有blob原样归位，保留原索引和更新工程检查点；正式发布2ba4e01使用expected_sha、force=false，实际读回31/31正式文件身份/大小匹配，索引和检查点可读，非目标差分0。",
     "在正式路径已发布且读回后，普通提交7f428c8删除32个已核实暂存路径（31载荷源路径加索引）；再次实读最终树，31项仍匹配，暂存0残留，非目标差分0。原INDEX原样保存为review/hero-pilot/ART_UPLOAD_SOURCE_INDEX_20261116.json，历史准备状态明确保持历史身份；用户上传及保全提交仍可恢复，未重写历史。",
     "PR23说明已更新并返回最新HEAD7f428c8、open/draft/unmerged；31项包含2张生成PNG母版、4个运行时WebP、检查板、7个实现/脚本及提示词/验证/日志等。完整私有恢复ZIP和两张另存用户PNG变体不在公开增量中。没有重画、重编码、接管岑缨/独立UI或修改游戏规则。",
-    "本批上传、正式归位和暂存清理已完成；本线回传保留原V1有限接收，新美术实际接收UNKNOWN，由主线自行登记。56 Web、14 DOM、构建/4HTTP继续为2026-11-13历史证据；本轮未跑游戏/DOM/构建/浏览器。真实浏览器/触摸、真人强度、全面独立QA和动画仍未完成。本次阶段保存不关闭对话、不停用固定入口、不暂停其他线，也不批准合并、部署、APK或模式开放。"
+    "本批上传、正式归位和暂存清理已完成；本线回传保留原V1有限接收，新美术实际接收UNKNOWN，由主线自行登记。56 Web、14 DOM、构建/4HTTP继续为2026-11-13历史证据；本轮未跑游戏/DOM/构建/浏览器。真实浏览器/触摸、真人强度、全面独立QA和动画仍未完成。本次阶段保存不关闭对话、不停用固定入口、不暂停其他线，也不批准合并、部署、APK或模式开放。",
+    "用户随后明确询问司衡全部内容是否上传保留结束、工作成果是否完整，并要求检查，若结束则暂时告一段落。本次按原任务完成条件区分现有材料的完整保留与完整产品验收，不重做已完成上传或游戏测试。",
+    "重新核最新个人main6bc8c5e、交接main682d69b和PR23 head7f428c8，未发现后来改写。只读复核确认31项美术清单仍31/31匹配、暂存0残留；原5ab688c文件无删除，关键20项原代码/脚本/证据保持，18局记录和9项场景仍可读；历史分支父子链连续。",
+    "按原TASK列明交付要求核DESIGN/BALANCE/IMPLEMENTATION/VALIDATION及状态/回传等，设计人物经历、性格、外观、台词、悬衡界局部设定、完整技能与取舍、平衡分析及工程运行方式均已保存。发现DESIGN、IMPLEMENTATION、交接VALIDATION三处旧最终立绘未交付/旧提交导航，已做小范围当前状态澄清；不改原设计规则、测试日期、源码哈希与历史测试结果。",
+    "通过原持久文件身份重新取回siheng-art-recovery-20261113.zip和siheng-upload-resume-20261116.zip。原包35,899,664字节、687文件，CRC通过；687项大小/SHA256/Git blob全部匹配先前all_member_inventory。完整engine快照683文件与当前PR23的Git对象身份及大小683/683一致，无缺失或不同。两张另存用户PNG原件及根README/发布清单共4项保持在原私有包。原31项发布清单与现行索引31/31相同。",
+    "私有接续包4,538,467字节、6文件，CRC通过；其中29文件公开续传包CRC/大小/已存SHA256一致。原件有真实可恢复副本，未将私有总包、额外用户PNG或私有身份标识加入公开仓库。",
+    "保留范围限制：原美术3份完整原日志和4份复核日志均有原文；初期全回归等stdout为已保存摘录、全文哈希和重跑命令，未在恢复包找到全量早期stdout；full_platform_transcript_preserved仍false。因此结论限于已知、已找回、已登记的工作成果，不宣称所有历史聊天或临时输出逐字完整。",
+    "结论：现有成果上传/归位/保全核查完成，可以按用户要求暂告一段落。当前阶段执行结束，原单英雄任务、同范围授权及固定入口保留；不自动启动浏览器测试、真人强度/独立QA或动画，不关闭PR或暂停其他线。完整产品验收仍未完成，新美术接收由主线自行登记。"
   ],
   "completion": {
     "date": "2026-11-17",
@@ -90,10 +97,128 @@
     "commit": "937f855ee12c1549a11bc24cb2afd1607b2d2d30",
     "path": "worklines/hero-pilot/CURRENT_STATE.json"
   },
-  "next_action": "Mainline reads new art delivery and writes its own receipt when actually received. Remaining runtime/browser/human/animation work stays separate; no repeat upload.",
+  "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。",
   "full_platform_transcript_preserved": false,
   "main_art_receipt": "UNKNOWN",
   "publication_receipt_policy": "The enclosing actual Git commit and subsequent readback establish this handoff checkpoint; no self commit guessed.",
   "other_worklines_paused": false,
-  "long_term_entry_disabled": false
+  "long_term_entry_disabled": false,
+  "previous_phase_checkpoint": {
+    "commit": "682d69bb846f536479945d2539423598ed825bea",
+    "path": "worklines/hero-pilot/SESSION_CLOSEOUT.json"
+  },
+  "preservation_audit_20261117": {
+    "schema": "lezi.hero_pilot.preservation_audit.v1",
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "status": "PASS_KNOWN_RECOVERED_DELIVERABLES_PRESERVED",
+    "scope": "Original task's enumerated design/engineering/balance/evidence/static-art deliverables plus all files in the preserved original recovery package; no claim of every lost platform character or unrecorded runtime output.",
+    "engine_commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "handoff_source_commit": "682d69bb846f536479945d2539423598ed825bea",
+    "public_canonical_art": {
+      "files": 31,
+      "git_blob_and_size_matches": 31,
+      "original_archive_manifest_matches": 31,
+      "source_index_blob": "d2e352c881878ab394fe6db2f4be9ad10b176eb1",
+      "remaining_staging_entries": 0,
+      "missing_items": 0
+    },
+    "original_engine": {
+      "original_runtime_commit": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
+      "previous_files_deleted": 0,
+      "existing_files_changed_by_art": 7,
+      "critical_original_paths_checked": 20,
+      "critical_original_paths_preserved_unchanged": 20,
+      "historical_playout_records": 18,
+      "historical_scenarios": 9,
+      "history_chain_retained": true
+    },
+    "handoff_deliverables": {
+      "paths": [
+        "DESIGN.md",
+        "BALANCE.md",
+        "IMPLEMENTATION.md",
+        "VALIDATION.json",
+        "CURRENT_STATE.json",
+        "SESSION_CLOSEOUT.json",
+        "RETURN_TO_MAIN.json",
+        "READ_RECEIPTS.json"
+      ],
+      "all_present": true,
+      "design_body_read": true,
+      "balance_body_read": true,
+      "scope_note": "Includes character/world/visual specification, full skill and choices; bounded balance evidence, runtime instructions, actual commits, failure/limit evidence and own-workline handoff."
+    },
+    "private_source_preservation": {
+      "archive_filename": "siheng-art-recovery-20261113.zip",
+      "archive_bytes": 35899664,
+      "archive_crc": "PASS",
+      "archive_files": 687,
+      "previous_inventory_size_sha256_git_blob_matches": 687,
+      "source_engine_snapshot_files": 683,
+      "source_engine_to_current_remote_blob_and_size_matches": 683,
+      "missing_or_changed_snapshot_files": 0,
+      "additional_owner_png_originals_preserved_privately": 2,
+      "package_readme_and_manifest_preserved": 2,
+      "resume_filename": "siheng-upload-resume-20261116.zip",
+      "resume_bytes": 4538467,
+      "resume_crc": "PASS",
+      "resume_member_files": 6,
+      "embedded_transfer_files": 29,
+      "embedded_transfer_crc": "PASS",
+      "embedded_transfer_identity_matches": true,
+      "note": "Both saved packages were retrieved and checked in this closing audit. Private Library identifiers, complete source inventory and private original hashes are not published."
+    },
+    "historical_boundaries": {
+      "original_art_log_fulltexts": 3,
+      "recovery_recheck_log_fulltexts": 4,
+      "early_v1_stdout": "Saved excerpts, recorded full-output hashes and reproducible commands; full early stdout not located in the preserved original package.",
+      "full_platform_transcript_preserved": false,
+      "new_game_tests_run": false,
+      "new_build_run": false,
+      "new_browser_test_run": false
+    },
+    "documentation_alignment": {
+      "paths": [
+        "DESIGN.md",
+        "IMPLEMENTATION.md",
+        "VALIDATION.json"
+      ],
+      "change": "Mark static art published at7f428c8; retain historical dates, source hashes and test outcomes; animation and browser acceptance remain open.",
+      "design_or_rules_changed": false
+    },
+    "completeness": {
+      "known_existing_recovered_materials_preserved": true,
+      "upload_and_canonical_publication_complete": true,
+      "complete_product_acceptance": false,
+      "animation_produced": false,
+      "new_art_main_receipt": "UNKNOWN"
+    },
+    "remaining": [
+      "real browser visual/touch playtest",
+      "human adversarial balance",
+      "full independent QA and unproved combinations/adjudication coverage",
+      "animation",
+      "receiver-owned mainline art intake"
+    ],
+    "merge_deploy_apk_mode_opening": "NOT_PERFORMED_NOT_AUTHORIZED_BY_CLOSEOUT"
+  },
+  "stage_closure": {
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "owner_requested": true,
+    "owner_instruction": "司衡的全部内容上传保留都结束了吗，工作成果已经完整了吗，你检查一下，如果结束了就暂时告一段落",
+    "status": "CURRENT_SIHENG_UPLOAD_PRESERVATION_STAGE_CLOSED",
+    "scope": "End this Siheng upload/preservation and closeout phase after verification. Do not cancel the original hero task, close PR23 or pause other lines.",
+    "active_execution": false,
+    "background_work_claimed": false,
+    "phase_complete": true,
+    "full_product_complete": false,
+    "original_task_cancelled": false,
+    "authorization_revoked": false,
+    "other_worklines_paused": false,
+    "long_term_entry_disabled": false,
+    "resume_policy": "Keep the same fixed entry and original task. Do not repeat completed uploads or verification without a new discrepancy. On a new explicit continuation, check current ownership, new mainline inputs and specific remaining work first.",
+    "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。"
+  }
 }

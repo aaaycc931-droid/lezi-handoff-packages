@@ -213,6 +213,37 @@
       ],
       "actual_scope": "Final complete tree readback:31 payload identity/size matches,0 temporary blobs, index exact, checkpoint exact; PR open/draft/unmerged",
       "adopted": "Upload and canonical publication complete; main intake and runtime acceptance remain separate"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "682d69bb846f536479945d2539423598ed825bea",
+      "paths": [
+        "worklines/hero-pilot/TASK_FROM_MAIN.json (deliverables and completion, read-only subagent)",
+        "worklines/hero-pilot/DESIGN.md",
+        "worklines/hero-pilot/BALANCE.md (read-only subagent)",
+        "worklines/hero-pilot/IMPLEMENTATION.md",
+        "worklines/hero-pilot/VALIDATION.json",
+        "worklines/hero-pilot/START_HERE.md",
+        "worklines/hero-pilot/CURRENT_STATE.json",
+        "worklines/hero-pilot/SESSION_CLOSEOUT.json",
+        "worklines/hero-pilot/RETURN_TO_MAIN.json",
+        "worklines/hero-pilot/READ_RECEIPTS.json"
+      ],
+      "actual_scope": "Final preservation completeness audit versus original task; reused unchanged collaboration/authority, no new design scope",
+      "adopted": "Close current upload/preservation phase after owner request; correct3 stale static-art notices, retain historical runtime evidence"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+      "paths": [
+        "complete Git tree metadata",
+        "review/hero-pilot/ART_UPLOAD_SOURCE_INDEX_20261116.json",
+        "review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json",
+        "review/hero-pilot/RUN_LOG_EXCERPTS.txt (opening and record scope)",
+        "core implementation, PLAYOUTS and SCENARIOS (read-only subagent)"
+      ],
+      "actual_scope": "31 payload identities/sizes unchanged;683 original snapshot files exactly match remote tree; critical original code/evidence and historical commit chain retained",
+      "adopted": "Existing recovered materials preserved, full product acceptance incomplete; no new tests or gameplay edits"
     }
   ],
   "private_personal_sources_published": false,
@@ -289,7 +320,7 @@
     ],
     "record_scope": "HISTORICAL_20261113; old authorization/upload blocker superseded by later explicit approval and art_upload_completion_20261117 below. Original history preserved."
   },
-  "updated_by": "cross_system_siheng_upload_completion",
+  "updated_by": "cross_system_siheng_preservation_closeout",
   "art_upload_completion_20261117": {
     "date": "2026-11-17",
     "timezone": "Asia/Shanghai",
@@ -338,5 +369,33 @@
     ],
     "branch": "codex/autonomous-hero-01-20261113",
     "pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23"
+  },
+  "preservation_audit_20261117": {
+    "status": "PASS_KNOWN_RECOVERED_DELIVERABLES_PRESERVED",
+    "record": "SESSION_CLOSEOUT.json#preservation_audit_20261117",
+    "private_package_retrieved": true,
+    "crc_pass": true,
+    "inventory_match": 687,
+    "engine_snapshot_match": 683,
+    "publication_manifest_match": 31,
+    "full_product_acceptance": false
+  },
+  "stage_closure": {
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "owner_requested": true,
+    "owner_instruction": "司衡的全部内容上传保留都结束了吗，工作成果已经完整了吗，你检查一下，如果结束了就暂时告一段落",
+    "status": "CURRENT_SIHENG_UPLOAD_PRESERVATION_STAGE_CLOSED",
+    "scope": "End this Siheng upload/preservation and closeout phase after verification. Do not cancel the original hero task, close PR23 or pause other lines.",
+    "active_execution": false,
+    "background_work_claimed": false,
+    "phase_complete": true,
+    "full_product_complete": false,
+    "original_task_cancelled": false,
+    "authorization_revoked": false,
+    "other_worklines_paused": false,
+    "long_term_entry_disabled": false,
+    "resume_policy": "Keep the same fixed entry and original task. Do not repeat completed uploads or verification without a new discrepancy. On a new explicit continuation, check current ownership, new mainline inputs and specific remaining work first.",
+    "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。"
   }
 }
