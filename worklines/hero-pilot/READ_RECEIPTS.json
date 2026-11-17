@@ -1,12 +1,14 @@
 {
   "schema": "lezi.hero_pilot.receipts.v1",
   "created_by": "hero_pilot_executor",
-  "date": "2026-11-13",
+  "date": "2026-11-17",
   "collaboration_check": {
     "level": "L2",
     "working_revision": "2026-10-23.v0.18",
     "formal_baseline": "1.8.0",
-    "body_sha256": "22d16fdf30563eddb19a23c651993b57ebdb1b3ac27a6edb54be187effa68ea1"
+    "body_sha256": "22d16fdf30563eddb19a23c651993b57ebdb1b3ac27a6edb54be187effa68ea1",
+    "body_git_blob": "f46d36d244d8dfe49b6111efdd672f2595189aba",
+    "this_scope": "INTEGRATED_START/TASK_ROUTES/GITHUB_HANDOFF_WORKFLOW/AUTHORIZATION_AND_ADOPTION/MANDATORY_PRECHECK; original task and no new game/design scope"
   },
   "executor_receipts": [
     {
@@ -162,16 +164,66 @@
       ],
       "actual_scope": "最新独立UI路由和完整角色风格独立正文",
       "adopted": "保留当前司衡厚涂；不套首页风格，不接管H01或其他UI。"
+    },
+    {
+      "repo": "aaaycc931-droid/personal-collaboration",
+      "ref": "6bc8c5e6fd2d348ad7e31db3c3842de9b9a596a6",
+      "paths": [
+        "docs/CROSS_SYSTEM_WORK_START_HERE.md"
+      ],
+      "actual_scope": "Current cross-system entry and scope; personal source content not copied to public repository",
+      "adopted": "Continue only named original Siheng task; no business mainline appointment"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
+      "paths": [
+        "AGENTS.md",
+        "CURRENT_HANDOFF.json (routing)",
+        "worklines/hero-pilot/START_HERE.md",
+        "worklines/hero-pilot/CURRENT_STATE.json",
+        "worklines/hero-pilot/SESSION_CLOSEOUT.json",
+        "worklines/hero-pilot/RETURN_TO_MAIN.json",
+        "worklines/hero-pilot/READ_RECEIPTS.json",
+        "collaboration/X_Collaboration_Integrated_Candidate_2026-10-13.md (specified sections)"
+      ],
+      "actual_scope": "Current upload continuation, previous stop, source preservation and inherited authority; original same-task scope retained",
+      "adopted": "Read current upload before any retry; no reauthorization, redesign or other-line ownership"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "fae3dc6580deeebee0ef1a87a0c7a68b44354baf",
+      "paths": [
+        "review/hero-pilot/upload-staging/20261116/siheng-art-20261116-INDEX.json",
+        "review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json",
+        "ART_RECOVERY/ART_VALIDATION/ART_ASSET_MANIFEST in transfer",
+        "31 staged blob identity/size checks;7 implementation and7 log text reads by source-review subagent"
+      ],
+      "actual_scope": "Owner upload is complete and original31 canonical paths unchanged from5ab688c;16 text SHA256 recomputations and original evidence binding review",
+      "adopted": "Reuse exact source objects; interpret source index filenames under actually observed staging prefix; historical tests retain dates"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+      "paths": [
+        "31 canonical paths listed in ART_UPLOAD_SOURCE_INDEX_20261116.json",
+        "review/hero-pilot/ART_UPLOAD_SOURCE_INDEX_20261116.json",
+        "review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json",
+        "web/hero-art.ts"
+      ],
+      "actual_scope": "Final complete tree readback:31 payload identity/size matches,0 temporary blobs, index exact, checkpoint exact; PR open/draft/unmerged",
+      "adopted": "Upload and canonical publication complete; main intake and runtime acceptance remain separate"
     }
   ],
   "private_personal_sources_published": false,
   "preference_boundary": "采用用户明确本项目目标；人物性格与审美为本英雄受托决定，不构造个人画像。",
   "engine_delivery_readback": {
-    "commit": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
-    "files": 14,
-    "exact_blob_equality": true
+    "commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "files": 31,
+    "exact_blob_equality": true,
+    "exact_byte_sizes": true
   },
-  "main_read_delivery": "V1报告已读取；新修复主线未声称已读",
+  "main_read_delivery": "Original V1 limited intake retained; new art receipt UNKNOWN, no receiver-owned receipt written.",
   "publication_parent_recheck": {
     "head": "a907527590c57b8776c9fbfcf9d33aa3060eb676",
     "diff_from_previous": "7 files only under worklines/hero-design; owned prefix and task unchanged",
@@ -234,6 +286,57 @@
       "真人强度",
       "全面独立QA",
       "动画"
-    ]
+    ],
+    "record_scope": "HISTORICAL_20261113; old authorization/upload blocker superseded by later explicit approval and art_upload_completion_20261117 below. Original history preserved."
+  },
+  "updated_by": "cross_system_siheng_upload_completion",
+  "art_upload_completion_20261117": {
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "status": "COMPLETE_31_CANONICAL_FILES_VERIFIED",
+    "owner_upload_commit": "fae3dc6580deeebee0ef1a87a0c7a68b44354baf",
+    "canonical_publication_commit": "2ba4e01c9d8e6ea896327b2c412c44a03bdc7d45",
+    "final_engine_commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "canonical_files": 31,
+    "git_blob_and_size_matches": 31,
+    "payload_bytes": 4826661,
+    "source_index": {
+      "path": "review/hero-pilot/ART_UPLOAD_SOURCE_INDEX_20261116.json",
+      "git_blob": "d2e352c881878ab394fe6db2f4be9ad10b176eb1",
+      "historical_preparation_status_preserved": true
+    },
+    "fresh_text_sha256_matches": 16,
+    "historical_bindings": {
+      "code": 7,
+      "assets": 6,
+      "original_logs": 3,
+      "recheck_logs": 4
+    },
+    "retired_staging_paths": 32,
+    "remaining_staging_paths": 0,
+    "unexpected_tree_changes": 0,
+    "readback": {
+      "final_tree": true,
+      "all_31_file_identities": true,
+      "source_index": true,
+      "checkpoint_exact": true,
+      "pr_head": true,
+      "pr_body_updated": true,
+      "pr_draft": true,
+      "pr_merged": false
+    },
+    "checkpoint": "https://github.com/aaaycc931-droid/jieqi-engine/blob/7f428c869b01f4f1310493d24f80e269d3ed7255/review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json",
+    "history_preserved": true,
+    "new_game_tests_run": false,
+    "historical_validation_date": "2026-11-13",
+    "main_art_receipt": "UNKNOWN",
+    "remaining": [
+      "real browser/touch",
+      "human adversarial balance",
+      "full independent QA",
+      "animation"
+    ],
+    "branch": "codex/autonomous-hero-01-20261113",
+    "pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23"
   }
 }

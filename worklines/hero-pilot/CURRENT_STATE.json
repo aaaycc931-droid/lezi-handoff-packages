@@ -3,7 +3,7 @@
   "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
   "updated_by": "cross_system_siheng_upload_completion",
   "updated_on": "2026-11-17",
-  "status": "OWNER_UPLOAD_VERIFIED_CANONICAL_ART_PUBLICATION_IN_PROGRESS",
+  "status": "ART_UPLOAD_COMPLETE_CANONICAL_FILES_VERIFIED_AWAITING_MAIN_ART_INTAKE",
   "task": "TASK_FROM_MAIN.json",
   "designer_brief": "DESIGNER_BRIEF.md",
   "count": 1,
@@ -18,14 +18,19 @@
     "note": "Original isolated branch and base retained; do not reset to older main or merge the development chain.",
     "setup_commit": "7f47b740b01b9a1e6ef126fc9e2628682b603e6d",
     "setup_verification": "one entry-only file read back exact; no hero code/tests delivered",
-    "delivery_commit": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
-    "observed_head": "fae3dc6580deeebee0ef1a87a0c7a68b44354baf",
-    "checkpoint_commit": "3df63e0c8d100fe040a32de4e0f8246c3b046b06",
+    "delivery_commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "observed_head": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "checkpoint_commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
     "draft_pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23",
     "published": true,
-    "readback": "Historical14 followup files exact blob match; new checkpoint read back separately, not full art publication",
+    "readback": "Final31 canonical file Git blob identities and byte sizes match original transfer index; source index and checkpoint exact;32 staging paths retired with0 remaining; PR draft/unmerged.",
     "base_latest_recheck": "71145df45ad17215a3731e53150b6728e079e375",
-    "previous_delivery_commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3"
+    "previous_delivery_commit": "7a1dfbc92efa2a54bb85175cc251856bb2cdb4d3",
+    "previous_runtime_delivery_commit": "5ab688c96f4960aad70467e7e4c15c21dc55a2e1",
+    "preservation_checkpoint_commit": "3df63e0c8d100fe040a32de4e0f8246c3b046b06",
+    "art_publication_commit": "2ba4e01c9d8e6ea896327b2c412c44a03bdc7d45",
+    "owner_upload_commit": "fae3dc6580deeebee0ef1a87a0c7a68b44354baf",
+    "art_published": true
   },
   "world": {
     "work_id": "EXP-HERO-001",
@@ -51,14 +56,14 @@
     "global_balance_accepted": false,
     "independent_QA": false,
     "deployed": false,
-    "portrait": "ORIGINAL_ART_PRESERVED_COMPLETE_PUBLICATION_PENDING",
+    "portrait": "ORIGINAL_STATIC_ART_PUBLISHED_AND_INTEGRATED_ON_PR23",
     "swap_feedback_repaired": true,
     "latest_dom_checks": 10,
     "latest_targeted_regression_pass": 155,
     "latest_art_dom_checks": 14,
-    "art_published": false
+    "art_published": true
   },
-  "next_action": "本对话核到用户提交fae3dc6的29文件已齐，31项源Git对象身份/大小与索引匹配，正式目标自5ab688c未变。接续核历史证据绑定，复用现有blob归位31项，发布读回后只清理已核实暂存路径，更新PR23及本线回传。",
+  "next_action": "司衡本批美术上传、31项正式归位与暂存清理已完成并读回；不再要求用户上传。本线成果沿RETURN_TO_MAIN供主线实际读取接收。真实浏览器/触摸、真人强度、全面独立QA和动画仍按原任务独立待办；本次不把文件发布写成这些验收完成。",
   "protected": {
     "other_worklines": true,
     "score_ledger": "frozen",
@@ -98,8 +103,8 @@
     "date": "2026-11-13",
     "updated_by": "hero_pilot_recovery_executor",
     "report": "ART_RESTORE_STATUS_20261113.md",
-    "current_report": "ART_UPLOAD_INTERRUPTION_20261116.md",
-    "status": "ORIGINALS_VERIFIED_AND_PRESERVED_UPLOAD_PARTIAL",
+    "current_report": "https://github.com/aaaycc931-droid/jieqi-engine/blob/7f428c869b01f4f1310493d24f80e269d3ed7255/review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json",
+    "status": "ORIGINALS_PRESERVED_31_CANONICAL_FILES_PUBLISHED_AND_VERIFIED",
     "recovered": {
       "implementation_files": 7,
       "original_generation_pngs": 2,
@@ -126,22 +131,25 @@
       "rerun_this_session": false
     },
     "source_comparison": "Uploaded avatar and recovered master have identical RGBA but different PNG bytes; portrait alpha agrees but RGB bytes differ. Original generation masters and exports preserved; owner upload variants kept separately without asserting byte equality.",
-    "evidence": "engine/review/hero-pilot/ART_RECOVERY.json in preserved original package; complete art publication pending",
+    "evidence": "jieqi-engine@7f428c869b01f4f1310493d24f80e269d3ed7255: review/hero-pilot/ART_RECOVERY.json, ART_VALIDATION.json and ART_UPLOAD_CHECKPOINT_20261116.json",
     "durable_recovery_package": "siheng-art-recovery-20261113.zip",
     "package_contents": "Complete engine snapshot,31 publication files and2 owner-uploaded PNG variants;687 source members; original package remains private",
     "publication": {
-      "engine_head": "3df63e0c8d100fe040a32de4e0f8246c3b046b06",
-      "art_commit_published": false,
+      "engine_head": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+      "art_commit_published": true,
+      "art_publication_commit": "2ba4e01c9d8e6ea896327b2c412c44a03bdc7d45",
       "checkpoint_published": true,
       "retained_existing_objects": 3,
+      "all_source_objects_reused": 31,
+      "canonical_files": 31,
+      "readback_exact": true,
       "pr": 23,
       "draft": true,
       "merged": false,
-      "blocker": "File transfer and complete31-path publication/readback remain. Prior public-image-authorization request is superseded by explicit approval. Prior-stage DNS failure is historical environment evidence, not a permanent future capability conclusion; current owner request closes this dialogue before upload."
+      "blocker": null
     },
     "missing": [],
     "remaining": [
-      "28 remaining transfers or object checks; complete31-path publication/readback",
       "real browser/touch",
       "human adversarial balance",
       "full independent QA",
@@ -156,10 +164,10 @@
     "authority": "继承原司衡公开上传授权；用户于2026-11-17明确：我上传了，你来检查处理吧。原任务同范围接续。",
     "same_scope_authorization_inherited": true,
     "awaiting_authorization": false,
-    "active_execution": true,
-    "phase": "OWNER_UPLOAD_VERIFIED_CANONICAL_PUBLICATION_IN_PROGRESS",
+    "active_execution": false,
+    "phase": "ART_UPLOAD_COMPLETE_CANONICAL_PUBLICATION_VERIFIED",
     "prior_background_runtime": "UNKNOWN; owner reports both old conversations quota-interrupted; no platform runtime control claimed",
-    "conflict_check": "Latest handoff main 8ab6cd9 shows prior dialogue closed; PR23 user upload fae3dc6 is a child of 3df63e0, adds only29 staging files. All31 canonical targets unchanged from original runtime5ab688c. Unknown unrelated work preserved.",
+    "conflict_check": "User upload fae3dc6 only added29 staging files;31 targets unchanged from5ab688c. Canonical publish2ba4e01 and cleanup7f428c8 used expected_sha/force=false; final tree read back31 matches,0 staging,0 unexpected changes.",
     "source_state_commit": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
     "handoff_scope": "worklines/hero-pilot/ only",
     "private_resume_package": "siheng-upload-resume-20261116.zip",
@@ -178,33 +186,34 @@
       "device_bytes_independently_verified": false
     },
     "owner_batch_upload": {
-      "status": "OBSERVED_29_FILES_SOURCE_IDENTITIES_VERIFIED",
+      "status": "COMPLETED_AND_CANONICALIZED",
       "commit": "fae3dc6580deeebee0ef1a87a0c7a68b44354baf",
       "files": 29,
-      "source_items_checked": 31,
-      "git_blob_and_size_matches": 31,
-      "index_blob": "d2e352c881878ab394fe6db2f4be9ad10b176eb1",
-      "staging_root": "review/hero-pilot/upload-staging/20261116/",
-      "full_canonical_publication": false
-    }
+      "final_engine_head": "7f428c869b01f4f1310493d24f80e269d3ed7255"
+    },
+    "completion_record": "art_upload_completion"
   },
   "main_art_receipt": "UNKNOWN",
   "dialogue_closed": false,
-  "active_execution": true,
+  "active_execution": false,
   "other_worklines_paused": false,
   "long_term_entry_disabled": false,
   "session_closeout": {
     "record": "SESSION_CLOSEOUT.json",
-    "owner_requested": true,
+    "owner_requested": false,
+    "kind": "PHASE_CHECKPOINT_AFTER_UPLOAD_COMPLETION",
+    "dialogue_closed": false,
     "task_cancelled": false,
     "authorization_revoked": false,
-    "new_engine_or_art_upload_this_closeout": false,
-    "next_dialogue_resume": "继续司衡美术上传，按固定入口接续，复用PR23；29文件续传包已下载。"
+    "previous_owner_requested_closeout": {
+      "commit": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
+      "path": "worklines/hero-pilot/SESSION_CLOSEOUT.json"
+    }
   },
   "previous_full_state": {
-    "commit": "c797d81409d30b11193108473a6864b9a59fcf6c",
+    "commit": "937f855ee12c1549a11bc24cb2afd1607b2d2d30",
     "path": "worklines/hero-pilot/CURRENT_STATE.json",
-    "note": "Prior preservation state, full authorization history and earlier links remain immutable; this closeout changes dialogue/transfer scheduling only."
+    "note": "Execution checkpoint before canonical publication; prior16 November closeout remains at8ab6cd9."
   },
   "current_execution": {
     "task_id": "MAIN-AUTONOMOUS-HERO-01-20261113",
@@ -213,7 +222,58 @@
     "scope": "Only existing Siheng art canonical publication, verified staging cleanup, PR23 metadata and own hero-pilot handoff records",
     "owner_instruction": "我上传了，你来检查处理吧",
     "prior_dialogue_stop_source": "8ab6cd94d4f80e6c13390db7703ae08e23335d26",
-    "stage": "SOURCE_IDENTITIES_VERIFIED_PENDING_CANONICAL_PUBLICATION",
-    "active": true
+    "stage": "COMPLETED_AND_READ_BACK",
+    "active": false,
+    "scope_complete": true,
+    "dialogue_closed": false
+  },
+  "art_upload_completion": {
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "status": "COMPLETE_31_CANONICAL_FILES_VERIFIED",
+    "owner_upload_commit": "fae3dc6580deeebee0ef1a87a0c7a68b44354baf",
+    "canonical_publication_commit": "2ba4e01c9d8e6ea896327b2c412c44a03bdc7d45",
+    "final_engine_commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "canonical_files": 31,
+    "git_blob_and_size_matches": 31,
+    "payload_bytes": 4826661,
+    "source_index": {
+      "path": "review/hero-pilot/ART_UPLOAD_SOURCE_INDEX_20261116.json",
+      "git_blob": "d2e352c881878ab394fe6db2f4be9ad10b176eb1",
+      "historical_preparation_status_preserved": true
+    },
+    "fresh_text_sha256_matches": 16,
+    "historical_bindings": {
+      "code": 7,
+      "assets": 6,
+      "original_logs": 3,
+      "recheck_logs": 4
+    },
+    "retired_staging_paths": 32,
+    "remaining_staging_paths": 0,
+    "unexpected_tree_changes": 0,
+    "readback": {
+      "final_tree": true,
+      "all_31_file_identities": true,
+      "source_index": true,
+      "checkpoint_exact": true,
+      "pr_head": true,
+      "pr_body_updated": true,
+      "pr_draft": true,
+      "pr_merged": false
+    },
+    "checkpoint": "https://github.com/aaaycc931-droid/jieqi-engine/blob/7f428c869b01f4f1310493d24f80e269d3ed7255/review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json",
+    "history_preserved": true,
+    "new_game_tests_run": false,
+    "historical_validation_date": "2026-11-13",
+    "main_art_receipt": "UNKNOWN",
+    "remaining": [
+      "real browser/touch",
+      "human adversarial balance",
+      "full independent QA",
+      "animation"
+    ],
+    "branch": "codex/autonomous-hero-01-20261113",
+    "pr": "https://github.com/aaaycc931-droid/jieqi-engine/pull/23"
   }
 }
