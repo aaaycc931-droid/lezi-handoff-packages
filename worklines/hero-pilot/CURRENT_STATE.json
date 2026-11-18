@@ -1,9 +1,9 @@
 {
   "schema": "lezi.hero_pilot.state.v1",
   "id": "MAIN-AUTONOMOUS-HERO-01-20261113",
-  "updated_by": "cross_system_siheng_preservation_closeout",
-  "updated_on": "2026-11-17",
-  "status": "KNOWN_DELIVERABLES_PRESERVED_OWNER_REQUESTED_STAGE_CLOSED",
+  "updated_by": "cross_system_siheng_creator_provenance_final_closeout",
+  "updated_on": "2026-11-18",
+  "status": "MAIN_CREATOR_LABEL_RECORDED_FINAL_STAGE_CLOSED",
   "task": "TASK_FROM_MAIN.json",
   "designer_brief": "DESIGNER_BRIEF.md",
   "count": 1,
@@ -63,7 +63,7 @@
     "latest_art_dom_checks": 14,
     "art_published": true
   },
-  "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。",
+  "next_action": "司衡本工作阶段正式收束，无主动待执行事项。仅在用户之后明确继续、或原主线实际派发新的本英雄任务时，按固定入口核最新HEAD、有效负责人与未验项再接续；不得重复已完成上传/保全。主线实际接收新美术由主线自己登记。",
   "protected": {
     "other_worklines": true,
     "score_ledger": "frozen",
@@ -391,5 +391,73 @@
       "receiver-owned mainline art intake"
     ],
     "merge_deploy_apk_mode_opening": "NOT_PERFORMED_NOT_AUTHORIZED_BY_CLOSEOUT"
+  },
+  "model_provenance_20261118": {
+    "record_date": "2026-11-18",
+    "role": "PRIMARY_CREATOR_OF_ORIGINAL_HERO_DESIGN",
+    "display": "GPT-6 Astra（ChatGPT Work · High／高推理强度）",
+    "normalized_model_label": "GPT-6 Astra",
+    "environment": "ChatGPT Work",
+    "reasoning_effort": "High（高推理强度）",
+    "owner_original_label": "work模式gpt6-astra高推理强度",
+    "source_type": "USER_EXPLICIT_CONFIRMATION",
+    "source_date": "2026-11-18",
+    "scope": [
+      "司衡原始人物／性格／故事设计",
+      "世界E：悬衡界设定",
+      "换轨技能及原始机制选型和定稿"
+    ],
+    "design_version": "EXP-HERO-001／司衡 v1",
+    "design_source": "worklines/hero-pilot/DESIGN.md",
+    "engine_reference": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "pr": 23,
+      "head": "7f428c869b01f4f1310493d24f80e269d3ed7255"
+    },
+    "provenance_limits": {
+      "platform_model_telemetry_verified": false,
+      "exact_backend_build": "UNKNOWN",
+      "historical_same_model_continuity_verified": false,
+      "subsequent_implementation_repair_and_preservation_creators": "NOT_AUTOMATICALLY_ASSIGNED_TO_PRIMARY_CREATOR",
+      "image_generation_tool": "built-in image_gen.imagegen",
+      "image_backend_model": "UNKNOWN",
+      "specific_chat_art_direction_model": "NOT_SEPARATELY_VERIFIED"
+    },
+    "policy": "Primary creator refers to original delegated character, world, and mechanic design; later editing, image generation, checks and handoff are distinct contributions. User report is not silently promoted to platform-verified metadata."
+  },
+  "final_closeout_20261118": {
+    "date": "2026-11-18",
+    "owner_requested": true,
+    "status": "FINAL_CLOSEOUT_COMPLETE_NO_ACTIVE_EXECUTION",
+    "prior_preservation_report": "SESSION_CLOSEOUT.json#preservation_audit_20261117",
+    "previously_verified": {
+      "canonical_art_files": 31,
+      "art_matches": 31,
+      "original_archive_members": 687,
+      "archive_verified_members": 687,
+      "engine_snapshot_members": 683,
+      "snapshot_matches": 683,
+      "retired_staging_paths": 32,
+      "remaining_staging_paths": 0
+    },
+    "recheck_this_session": "Checked latest 2 repo main heads, own hero-pilot design/state/closeout/return/task and PR23 open/draft/unmerged at 7f428c8; inspected art prompt and source manifest. Previous full file/hash/archive audit remains its original 2026-11-17 evidence, not claimed rerun on 2026-11-18.",
+    "new_missing_deliverables_found": 0,
+    "incomplete_original_stdout_and_platform_chat": true,
+    "source_of_main_creator_label": "User explicitly confirmed on 2026-11-18, not platform model telemetry",
+    "outstanding_not_started": [
+      "real browser visual/touch",
+      "human competitive balance",
+      "full independent QA and combined rule coverage",
+      "animation",
+      "mainline receiver-owned new art acceptance"
+    ],
+    "main_art_receipt": "UNKNOWN",
+    "no_new_game_tests_run": true,
+    "no_code_or_art_modified": true,
+    "no_merge_deploy_apk_or_mode_opening": true,
+    "active_execution": false,
+    "other_worklines_paused": false,
+    "task_cancelled": false,
+    "long_term_entry_disabled": false
   }
 }

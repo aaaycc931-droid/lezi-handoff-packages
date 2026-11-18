@@ -1,7 +1,7 @@
 {
   "schema": "lezi.hero_pilot.receipts.v1",
   "created_by": "hero_pilot_executor",
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "collaboration_check": {
     "level": "L2",
     "working_revision": "2026-10-23.v0.18",
@@ -244,6 +244,33 @@
       ],
       "actual_scope": "31 payload identities/sizes unchanged;683 original snapshot files exactly match remote tree; critical original code/evidence and historical commit chain retained",
       "adopted": "Existing recovered materials preserved, full product acceptance incomplete; no new tests or gameplay edits"
+    },
+    {
+      "repo": "aaaycc931-droid/lezi-handoff-packages",
+      "ref": "f5cbdd836d77af7136897d375fe01cfc8e8a20ed",
+      "paths": [
+        "worklines/hero-pilot/START_HERE.md",
+        "worklines/hero-pilot/DESIGN.md",
+        "worklines/hero-pilot/CURRENT_STATE.json",
+        "worklines/hero-pilot/SESSION_CLOSEOUT.json",
+        "worklines/hero-pilot/RETURN_TO_MAIN.json",
+        "worklines/hero-pilot/TASK_FROM_MAIN.json",
+        "docs/AI_AUTONOMOUS_DESIGN.md#7"
+      ],
+      "actual_scope": "2026-11-18 latest main, hero task and prior completed audit, attribution requirements; no line takeover",
+      "adopted": "User-confirmed original creator label; preserve old source/test dates, no rework of published art or game"
+    },
+    {
+      "repo": "aaaycc931-droid/jieqi-engine",
+      "ref": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+      "paths": [
+        "art/hero-pilot/PROMPTS.json",
+        "review/hero-pilot/ART_ASSET_MANIFEST.json",
+        "review/hero-pilot/ART_UPLOAD_CHECKPOINT_20261116.json",
+        "PR23 metadata"
+      ],
+      "actual_scope": "Real image tool provenance, original31 publication and draft status",
+      "adopted": "Do not infer image backend or later executor model, keep PR23 draft and previous file identity checks"
     }
   ],
   "private_personal_sources_published": false,
@@ -397,5 +424,15 @@
     "long_term_entry_disabled": false,
     "resume_policy": "Keep the same fixed entry and original task. Do not repeat completed uploads or verification without a new discrepancy. On a new explicit continuation, check current ownership, new mainline inputs and specific remaining work first.",
     "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。"
+  },
+  "creator_label_record_20261118": {
+    "model": "GPT-6 Astra",
+    "environment": "ChatGPT Work",
+    "reasoning": "High（高推理强度）",
+    "source_type": "USER_EXPLICIT_CONFIRMATION",
+    "confirmed": "2026-11-18",
+    "attribution_scope": "original design: Siheng character, worldE, Swap Relay mechanic",
+    "platform_telemetry_verified": false,
+    "followup_credits_remain_separate": true
   }
 }

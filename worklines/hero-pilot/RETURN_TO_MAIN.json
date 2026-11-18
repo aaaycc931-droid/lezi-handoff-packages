@@ -1,10 +1,10 @@
 {
   "schema": "lezi.hero_pilot.return.v1",
-  "created_by": "cross_system_siheng_preservation_closeout",
+  "created_by": "cross_system_siheng_creator_provenance_final_closeout",
   "task_id": "MAIN-AUTONOMOUS-HERO-01-20261113",
   "work_id": "EXP-HERO-001",
-  "updated_on": "2026-11-17",
-  "status": "KNOWN_DELIVERABLES_PRESERVED_OWNER_REQUESTED_STAGE_CLOSED",
+  "updated_on": "2026-11-18",
+  "status": "MAIN_CREATOR_LABEL_RECORDED_FINAL_STAGE_CLOSED",
   "entry": "worklines/hero-pilot/START_HERE.md",
   "latest_report": "worklines/hero-pilot/SESSION_CLOSEOUT.json",
   "preservation_report": "worklines/hero-pilot/ART_UPLOAD_INTERRUPTION_20261116.md",
@@ -241,5 +241,50 @@
     "missing_known_materials": 0,
     "full_product_acceptance": false,
     "early_stdout_and_chat_limits": "Preserve recorded excerpts/hash/fulltext scope; not all historical raw stdout or full platform transcript recovered."
+  },
+  "model_provenance_20261118": {
+    "record_date": "2026-11-18",
+    "role": "PRIMARY_CREATOR_OF_ORIGINAL_HERO_DESIGN",
+    "display": "GPT-6 Astra（ChatGPT Work · High／高推理强度）",
+    "normalized_model_label": "GPT-6 Astra",
+    "environment": "ChatGPT Work",
+    "reasoning_effort": "High（高推理强度）",
+    "owner_original_label": "work模式gpt6-astra高推理强度",
+    "source_type": "USER_EXPLICIT_CONFIRMATION",
+    "source_date": "2026-11-18",
+    "scope": [
+      "司衡原始人物／性格／故事设计",
+      "世界E：悬衡界设定",
+      "换轨技能及原始机制选型和定稿"
+    ],
+    "design_version": "EXP-HERO-001／司衡 v1",
+    "design_source": "worklines/hero-pilot/DESIGN.md",
+    "engine_reference": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "pr": 23,
+      "head": "7f428c869b01f4f1310493d24f80e269d3ed7255"
+    },
+    "provenance_limits": {
+      "platform_model_telemetry_verified": false,
+      "exact_backend_build": "UNKNOWN",
+      "historical_same_model_continuity_verified": false,
+      "subsequent_implementation_repair_and_preservation_creators": "NOT_AUTOMATICALLY_ASSIGNED_TO_PRIMARY_CREATOR",
+      "image_generation_tool": "built-in image_gen.imagegen",
+      "image_backend_model": "UNKNOWN",
+      "specific_chat_art_direction_model": "NOT_SEPARATELY_VERIFIED"
+    },
+    "policy": "Primary creator refers to original delegated character, world, and mechanic design; later editing, image generation, checks and handoff are distinct contributions. User report is not silently promoted to platform-verified metadata.",
+    "readback_source": "worklines/hero-pilot/DESIGN.md#主创署名与来源2026-11-18-补记"
+  },
+  "final_closeout_20261118": {
+    "date": "2026-11-18",
+    "status": "FORMALLY_CLOSED",
+    "scope": "Hero-pilot own workline only",
+    "engine_sha": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "artifact_preservation": "2026-11-17 audit matched 31 canonical files, 683 engine snapshot members and 687 private archive members; no new missing known material in 2026-11-18 focused review",
+    "full_product_acceptance": false,
+    "unsaved_historical_raw_stdout_known_gap": true,
+    "main_art_receipt": "UNKNOWN",
+    "next_action": "司衡本工作阶段正式收束，无主动待执行事项。仅在用户之后明确继续、或原主线实际派发新的本英雄任务时，按固定入口核最新HEAD、有效负责人与未验项再接续；不得重复已完成上传/保全。主线实际接收新美术由主线自己登记。"
   }
 }

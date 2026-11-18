@@ -1,9 +1,9 @@
 {
   "schema": "lezi.hero_pilot.checkpoint.v1",
-  "created_by": "cross_system_siheng_preservation_closeout",
-  "date": "2026-11-17",
+  "created_by": "cross_system_siheng_creator_provenance_final_closeout",
+  "date": "2026-11-18",
   "timezone": "Asia/Shanghai",
-  "status": "OWNER_REQUESTED_STAGE_CLOSED_KNOWN_DELIVERABLES_PRESERVED",
+  "status": "FINAL_CLOSED_CREATOR_PROVENANCE_RECORDED",
   "work_id": "EXP-HERO-001",
   "original_task_id": "MAIN-AUTONOMOUS-HERO-01-20261113",
   "dialogue_closed": true,
@@ -13,9 +13,9 @@
   "task_cancelled": false,
   "same_scope_authorization_inherited": true,
   "owner_instruction": {
-    "verbatim": "司衡的全部内容上传保留都结束了吗，工作成果已经完整了吗，你检查一下，如果结束了就暂时告一段落",
-    "date": "2026-11-17",
-    "meaning": "Check completeness of already-created/recovered material preservation, and close the current stage when complete."
+    "verbatim": "这个英雄的主创模型标注了吗，得注明该英雄由work模式gpt6-astra高推理强度创作，这是我的叫法，你可以写入规范的名称；然后检查是否还有什么东西没有保存，然后正式收束本工作",
+    "date": "2026-11-18",
+    "meaning": "Register explicitly confirmed model as original hero creator, verify no new missing preserved results, and formally close this work phase."
   },
   "latest_successful_engine_commit": "7f428c869b01f4f1310493d24f80e269d3ed7255",
   "art_publication_commit": "2ba4e01c9d8e6ea896327b2c412c44a03bdc7d45",
@@ -38,7 +38,10 @@
     "通过原持久文件身份重新取回siheng-art-recovery-20261113.zip和siheng-upload-resume-20261116.zip。原包35,899,664字节、687文件，CRC通过；687项大小/SHA256/Git blob全部匹配先前all_member_inventory。完整engine快照683文件与当前PR23的Git对象身份及大小683/683一致，无缺失或不同。两张另存用户PNG原件及根README/发布清单共4项保持在原私有包。原31项发布清单与现行索引31/31相同。",
     "私有接续包4,538,467字节、6文件，CRC通过；其中29文件公开续传包CRC/大小/已存SHA256一致。原件有真实可恢复副本，未将私有总包、额外用户PNG或私有身份标识加入公开仓库。",
     "保留范围限制：原美术3份完整原日志和4份复核日志均有原文；初期全回归等stdout为已保存摘录、全文哈希和重跑命令，未在恢复包找到全量早期stdout；full_platform_transcript_preserved仍false。因此结论限于已知、已找回、已登记的工作成果，不宣称所有历史聊天或临时输出逐字完整。",
-    "结论：现有成果上传/归位/保全核查完成，可以按用户要求暂告一段落。当前阶段执行结束，原单英雄任务、同范围授权及固定入口保留；不自动启动浏览器测试、真人强度/独立QA或动画，不关闭PR或暂停其他线。完整产品验收仍未完成，新美术接收由主线自行登记。"
+    "结论：现有成果上传/归位/保全核查完成，可以按用户要求暂告一段落。当前阶段执行结束，原单英雄任务、同范围授权及固定入口保留；不自动启动浏览器测试、真人强度/独立QA或动画，不关闭PR或暂停其他线。完整产品验收仍未完成，新美术接收由主线自行登记。",
+    "2026-11-18用户补充主创模型署名：work模式gpt6-astra高推理强度。按原AI自主设计方法规范为GPT-6 Astra（ChatGPT Work · High／高推理强度），以USER_EXPLICIT_CONFIRMATION登记初始人物/世界E/机制设计；平台后台精确型号/同模型连续性未独立核实，后续实施和图片生成不自动归属主创。原PROMPTS记录built-in image_gen.imagegen，图像后台型号仍UNKNOWN。",
+    "本轮核最新个人main0c7425d、交接mainf5cbdd8、PR23 7f428c8 open/draft/unmerged；重新读本方入口、原TASK/BRIEF、DESIGN、原验证与阶段报告及图片PROMPTS/资源清单。2026-11-17完成的31项美术、687恢复包成员与683远端工程快照等完整校验继续有效，本轮不冒充重新运行全部哈希/测试。未发现新的上传缺项；早期完整stdout/聊天全量未找回、真实浏览器/真人强度/独立QA/动画及主线新美术接收仍属清晰未验。",
+    "用户要求正式收束本工作：补齐主创模型字段及DESIGN/START_HERE/CURRENT_STATE/RETURN_TO_MAIN/READ_RECEIPTS署名，原美术文件与PR23工程不修改；保留PR草稿、历史提交和原任务，主线接收只由主线记录。当前没有主动施工安排，其他工作线不暂停；本轮实际Git提交和读回为发布证明，不以预计提交号作为事实。"
   ],
   "completion": {
     "date": "2026-11-17",
@@ -97,7 +100,7 @@
     "commit": "937f855ee12c1549a11bc24cb2afd1607b2d2d30",
     "path": "worklines/hero-pilot/CURRENT_STATE.json"
   },
-  "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。",
+  "next_action": "司衡本工作阶段正式收束，无主动待执行事项。仅在用户之后明确继续、或原主线实际派发新的本英雄任务时，按固定入口核最新HEAD、有效负责人与未验项再接续；不得重复已完成上传/保全。主线实际接收新美术由主线自己登记。",
   "full_platform_transcript_preserved": false,
   "main_art_receipt": "UNKNOWN",
   "publication_receipt_policy": "The enclosing actual Git commit and subsequent readback establish this handoff checkpoint; no self commit guessed.",
@@ -220,5 +223,70 @@
     "long_term_entry_disabled": false,
     "resume_policy": "Keep the same fixed entry and original task. Do not repeat completed uploads or verification without a new discrepancy. On a new explicit continuation, check current ownership, new mainline inputs and specific remaining work first.",
     "next_action": "本阶段已按用户要求暂告一段落，当前无待上传/待归位项；保留原任务与未验项，待用户下一次明确继续或具体新输入后按固定入口恢复。主线可按自身流程实际读取本线回传并自行登记接收。"
+  },
+  "previous_owner_instruction": {
+    "verbatim": "司衡的全部内容上传保留都结束了吗，工作成果已经完整了吗，你检查一下，如果结束了就暂时告一段落",
+    "date": "2026-11-17",
+    "meaning": "Check completeness of already-created/recovered material preservation, and close the current stage when complete."
+  },
+  "model_provenance_20261118": {
+    "record_date": "2026-11-18",
+    "role": "PRIMARY_CREATOR_OF_ORIGINAL_HERO_DESIGN",
+    "display": "GPT-6 Astra（ChatGPT Work · High／高推理强度）",
+    "normalized_model_label": "GPT-6 Astra",
+    "environment": "ChatGPT Work",
+    "reasoning_effort": "High（高推理强度）",
+    "owner_original_label": "work模式gpt6-astra高推理强度",
+    "source_type": "USER_EXPLICIT_CONFIRMATION",
+    "source_date": "2026-11-18",
+    "scope": [
+      "司衡原始人物／性格／故事设计",
+      "世界E：悬衡界设定",
+      "换轨技能及原始机制选型和定稿"
+    ],
+    "design_version": "EXP-HERO-001／司衡 v1",
+    "design_source": "worklines/hero-pilot/DESIGN.md",
+    "engine_reference": {
+      "repository": "aaaycc931-droid/jieqi-engine",
+      "pr": 23,
+      "head": "7f428c869b01f4f1310493d24f80e269d3ed7255"
+    },
+    "provenance_limits": {
+      "platform_model_telemetry_verified": false,
+      "exact_backend_build": "UNKNOWN",
+      "historical_same_model_continuity_verified": false,
+      "subsequent_implementation_repair_and_preservation_creators": "NOT_AUTOMATICALLY_ASSIGNED_TO_PRIMARY_CREATOR",
+      "image_generation_tool": "built-in image_gen.imagegen",
+      "image_backend_model": "UNKNOWN",
+      "specific_chat_art_direction_model": "NOT_SEPARATELY_VERIFIED"
+    },
+    "policy": "Primary creator refers to original delegated character, world, and mechanic design; later editing, image generation, checks and handoff are distinct contributions. User report is not silently promoted to platform-verified metadata."
+  },
+  "final_closeout_20261118": {
+    "date": "2026-11-18",
+    "status": "FORMALLY_CLOSED_KNOWN_MATERIALS_PRESERVED",
+    "owner_requested": true,
+    "verification_reference": "CURRENT_STATE.json#final_closeout_20261118",
+    "last_verified_engine_sha": "7f428c869b01f4f1310493d24f80e269d3ed7255",
+    "prior_audit": "preservation_audit_20261117",
+    "no_new_unsaved_known_deliverables": true,
+    "full_early_stdout_preserved": false,
+    "full_platform_transcript_preserved": false,
+    "main_art_receipt": "UNKNOWN",
+    "not_completed": [
+      "real browser/touch acceptance",
+      "human balance",
+      "full independent QA",
+      "animation",
+      "mainline new art intake"
+    ],
+    "pr23": {
+      "open": true,
+      "draft": true,
+      "merged": false
+    },
+    "published_handoff_commit": "Established only by actual Git branch and readback; no guessed self-SHA.",
+    "active_execution": false,
+    "other_worklines_paused": false
   }
 }
